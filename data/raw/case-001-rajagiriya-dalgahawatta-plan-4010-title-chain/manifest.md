@@ -1,12 +1,12 @@
-# case-001-property-title-transfer-bundle
+# case-001-rajagiriya-dalgahawatta-plan-4010-title-chain
 
 ## Case Name
-Property Title Transfer Bundle
+Rajagiriya Dalgahawatta Plan 4010 Title Chain
 
 ## Description
-Single private legal-document case bundle containing conveyancing/title documents,
-municipal or assessment records, identity/supporting images, and related lawyer-prepared
-outputs.
+Single private legal-document case bundle centered on the Dalgahawatta property in
+Rajagiriya, Plan No. 4010, with conveyancing/title documents, municipal or assessment
+records, identity/supporting images, and related lawyer-prepared outputs.
 
 ## Folder Meaning
 - `inputs/`: source documents and supporting evidence.
