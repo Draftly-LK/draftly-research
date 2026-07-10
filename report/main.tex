@@ -1,0 +1,338 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{microtype}
+
+% ---------- Colours ----------
+\definecolor{accent}{RGB}{34,58,102}
+
+% ---------- Hyperlinks ----------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent
+}
+\urlstyle{same}
+
+% ---------- Section styling ----------
+\titleformat{\section}
+  {\color{accent}\large\bfseries}{\thesection.}{0.6em}{}
+\titlespacing*{\section}{0pt}{1.4em}{0.5em}
+\titleformat{\subsection}
+  {\color{accent}\normalsize\bfseries}{\thesubsection}{0.6em}{}
+\titlespacing*{\subsection}{0pt}{1.0em}{0.35em}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.25em,topsep=0.35em}
+
+\begin{document}
+
+% ---------- Header block ----------
+\begin{center}
+
+{\color{accent}\fontsize{36}{40}\selectfont\textbf{Draftly}}\\[0.55em]
+
+{\color{accent}\large\itshape
+A Lawyer-in-the-Loop Legal Document Drafting and \\[0.15em]
+Review Platform for Sri Lankan Legal Workflows
+}\\[1.0em]
+
+{\normalsize
+\textbf{Group 06}\\[0.3em]
+Dhanapala D.H.N., Dilshan A.D.L., De Silva B.K.P.
+}\\[0.1em]
+
+{\normalsize
+\textbf{Supervisor:} Dr. Nisansa de Silva\\
+\textbf{Teaching Assistant:} Ovindu Atukorala\\[1em]
+Department of Computer Science and Engineering\\
+University of Moratuwa, Sri Lanka
+}\\[0.8em]
+
+\end{center}
+
+\vspace{0.7em}
+{\color{accent}\rule{\linewidth}{1pt}}
+
+% =====================================================
+\section{Introduction}
+
+In Sri Lanka, many legal workflows still depend on repeated manual drafting and review.
+Lawyers and legal clerks prepare documents such as deeds, title reports, affidavits,
+petitions, legal notices, certificates and letters by reading supporting material,
+extracting the relevant facts, checking them, and then adapting previous drafts or
+templates. The difficult part is not only typing the final document; it is identifying
+the correct facts from client-specific records and ensuring that the draft is complete,
+consistent and ready for professional review.
+
+Over the last few years, several Sri Lankan legal platforms have appeared, such as
+LawLanka, AI Pazz, Paralegal.lk and
+LawCeylon~\cite{lawlanka,aipazz,paralegal,lawceylon}.
+These primarily support legal research,
+case law access and legislation retrieval, and they are widely used in practice.
+Draftly is designed to complement these tools rather than replace them: it focuses on
+client-specific legal document drafting and review, where the required content must be
+derived from the user's own uploaded documents and checked by a lawyer.
+
+For the first use case, we focus on conveyancing and title-documentation workflows.
+This is a suitable starting point because lawyers must derive outputs such as title
+reports, pedigrees, abstracts of title, ownership certificates and assessor letters from
+prior deeds, survey plans and related records. It also gives the project a clear data
+science component, because facts must be extracted and linked across documents before
+any draft can be generated.
+
+To confirm that this gap is real, we have conducted preliminary discussions with
+practicing Sri Lankan lawyers, notaries and legal academics specialising in
+conveyancing. Their feedback indicates that while legal research platforms are useful,
+there remains a practical gap in preparing repeated legal documents from
+client-specific records. This is the gap Draftly is built to explore.
+
+\vspace{0.3em}
+\noindent\emph{In short: Draftly is a lawyer-in-the-loop drafting and review platform
+that turns uploaded legal documents and verified facts into reviewable drafts. In the
+first use case, it applies this idea to conveyancing and title documentation.}
+
+% =====================================================
+\section{Proposed Solution}
+
+Draftly is a \emph{lawyer-in-the-loop} platform: the system proposes and the lawyer
+reviews, edits and approves. No output is ever treated as a final legal document on its
+own; every draft is presented for a qualified professional to check and sign off on.
+
+In a typical workflow, the lawyer or legal clerk creates a matter, uploads supporting
+documents, reviews the facts suggested by the system, corrects them where necessary and
+then generates an editable draft from an approved template. For the initial
+conveyancing use case, the supporting documents may include previous deeds, survey
+plans and assessment records, and the outputs may include a title report, pedigree,
+abstract of title, ownership certificate or assessor letter.
+
+\subsection{Research Novelty}
+The template is only the final output layer. The more important part is the earlier
+document-understanding workflow: reading uploaded material, extracting structured
+facts, linking related facts across documents, identifying missing or inconsistent
+information, and showing the lawyer where each fact came from.
+
+This makes Draftly different from a simple form-filling system. In a form-filling
+system, the user manually types all values into text boxes and the system places them in
+a document. In Draftly, the system attempts to derive candidate facts from uploaded
+documents, presents them with evidence, and lets the lawyer verify or correct them
+before a draft is produced. In the conveyancing use case, this includes tasks such as
+extracting deed numbers, parties, dates, plan numbers, lot numbers and extents, then
+using those facts to support title reports, pedigrees and related documents.
+
+\subsection{Key Features}
+\begin{itemize}[itemsep=0pt, topsep=0pt]
+  \item Upload and organise legal documents for a matter
+  \item Extract important facts from scanned and digital legal documents
+  \item Show extracted facts with source evidence for lawyer verification
+  \item Highlight missing or inconsistent information
+  \item Generate editable drafts from approved templates and verified facts
+  \item Support lawyer review, correction, approval and export
+\end{itemize}
+
+\subsection{Data Science Component}
+The data science component focuses on document understanding and fact extraction from
+Sri Lankan legal documents. For the first use case, this includes OCR for scanned deeds
+and forms, extraction of parties, deed numbers, dates, notaries, property details,
+registration references and survey-plan details, and linking those facts across a small
+document bundle. The project can compare suitable extraction approaches and evaluate
+them against annotated examples.
+
+The conveyancing use case also allows limited title reasoning. Once deed and property
+facts are extracted, the system can help arrange the ownership history, identify missing
+documents and flag possible inconsistencies such as name variations, plan-number
+mismatches or extent differences. These checks are presented as support for lawyer
+review, not as final legal conclusions.
+
+\subsection{Software Engineering Component}
+The software engineering component is the lawyer-facing workflow around the models:
+matter creation, document upload, fact review, draft generation, editing and export.
+The exact implementation choices can be decided later, but the project idea requires a
+usable prototype that demonstrates the end-to-end flow from uploaded documents to
+lawyer-reviewable drafts. Because legal documents are sensitive, privacy, access control
+and auditability will be considered from the design stage.
+
+\subsection{Evaluation and Objectives}
+The system will be evaluated using measurable criteria:
+\begin{itemize}[itemsep=0pt, topsep=0pt]
+  \item Accuracy of document classification and key-field extraction
+  \item Correctness of linked facts and simple title-chain support in the first use case
+  \item Quality of missing-field and inconsistency warnings
+  \item Lawyer assessment of generated drafts and source traceability
+  \item Time saved compared with fully manual preparation
+\end{itemize}
+
+% =====================================================
+\section{Datasets}
+
+There is no ready-made public dataset for Sri Lankan legal document drafting workflows,
+so building a small project dataset is part of the work. For the first use case, data
+sources include anonymised historical deeds, title reports, survey plans, assessor
+letters, ownership certificates and lawyer-approved drafting templates, collected with
+permission from supporting practitioners. For general legal reference material, we can
+refer to publicly available or subscription-based sources such as
+LawLanka~\cite{lawlanka}, where appropriate.
+
+On top of the raw documents, we will build a small annotated dataset that labels
+entities such as parties, dates, deed numbers, boundaries, extents and plan references,
+together with selected links between related documents. All documents will be anonymised
+before use and handled under clear consent from the professionals who share them.
+
+% =====================================================
+\section{Similar Projects}
+
+\noindent\textbf{Local.}
+LawLanka, AI Pazz, Paralegal.lk and
+LawCeylon~\cite{lawlanka,aipazz,paralegal,lawceylon}
+are among the closest Sri Lankan systems.
+Based on our preliminary review, these platforms mainly focus on legal search, case
+law, legislation access and related research support.
+
+\noindent\textbf{International.} Tools such as
+Harvey AI, Spellbook, Lexis+ AI and
+CoCounsel~\cite{harvey,spellbook,lexisai,cocounsel}
+show that AI-assisted legal drafting is both viable and commercially valuable.
+However, these are mostly built around other jurisdictions and legal workflows, so they
+do not directly address the needs of Sri Lankan document drafting and review.
+
+\noindent\textbf{Related research} Since Draftly is in the Sri Lankan
+legal NLP domain, we will also review the previous work carried out under the SigmaLaw
+project by Dr. Nisansa de Silva's research group~\cite{sigmalaw}. SigmaLaw has explored
+legal information extraction, legal party identification, named entity recognition,
+coreference resolution, semantic similarity, sentence embeddings, and legal information
+retrieval, which are directly relevant to Draftly's broader goal of understanding legal
+documents before drafting or review. The most relevant papers for our project include
+``Party Identification of Legal Documents using Co-reference Resolution and Named Entity
+Recognition''~\cite{sigmaparty}, ``Legal Party Extraction from Legal Opinion Texts
+Using Recurrent Deep Neural Networks''~\cite{sigmarnn}, ``Legal Party Extraction from
+Legal Opinion Text with Sequence to Sequence Learning''~\cite{sigmaseq2seq}, ``Context
+Sensitive Verb Similarity Dataset for Legal Information Extraction''~\cite{sigmaverbsim},
+``Learning Sentence Embeddings in the Legal Domain with Low Resource
+Settings''~\cite{sigmasentemb}, and ``Legal Document Retrieval using Document Vector
+Embeddings and Deep Learning''~\cite{sigmaretrieval}. We will use these works to
+understand existing approaches for legal entity extraction, party linking, legal
+semantic representation and information retrieval. Draftly differs by applying such
+legal NLP ideas inside a lawyer-in-the-loop drafting and review product: the system
+organises a client's uploaded legal documents, extracts and links facts with source
+evidence, highlights missing or inconsistent information, and generates editable drafts
+for professional review. Conveyancing and title documentation will be used as the first
+practical workflow to validate this broader idea.
+
+\noindent\textbf{How Draftly differs.} Draftly is positioned as a complementary system
+for client-specific legal document drafting and review. Instead of only retrieving legal
+sources, it helps organise uploaded matter documents, extract relevant facts, present
+them for lawyer verification and generate editable drafts. Conveyancing and title
+documentation are used as the first concrete workflow to prove this idea.
+
+% =====================================================
+\section{Scope and Team Responsibilities}
+
+The project is scoped so that both a data-science and a software-engineering
+contribution are clearly present and so that each team member owns a distinct part of
+the system:
+\begin{itemize}[itemsep=0pt, topsep=0pt]
+  \item \textbf{Document understanding (Data Science)}: OCR support, entity extraction
+        and comparison of extraction approaches.
+  \item \textbf{Fact linking and checking (Data Science)}: linking related facts across
+        documents and identifying missing or inconsistent information.
+  \item \textbf{Draft generation (Data Science / SE)}: producing reviewable drafts from
+        verified facts and approved templates.
+  \item \textbf{Review workflow (Software Engineering)}: matter management, document
+        upload, fact review, draft editing and export.
+\end{itemize}
+
+For the project idea, Draftly is broader than conveyancing, but the MVP is deliberately
+limited to conveyancing and title-documentation workflows such as title reports,
+pedigree generation, abstracts of title, ownership certificates and assessor letters.
+After this first workflow is proven, the same product direction can be extended to
+complaints, affidavits, petitions, legal notices and other Sri Lankan legal documents.
+
+\begin{thebibliography}{00}
+
+\bibitem{lawlanka}
+LawLanka, ``Sri Lanka Acts \& Case Laws.'' [Online]. Available:
+\url{https://www.lawlanka.com/}.
+
+\bibitem{aipazz}
+AI Pazz, ``AI-Powered Sri Lanka Legal Research Platform.'' [Online]. Available:
+\url{https://www.aipazz.com/}.
+
+\bibitem{paralegal}
+Paralegal.lk, ``A search engine for Sri Lankan law.'' [Online]. Available:
+\url{https://www.paralegal.lk/}.
+
+\bibitem{lawceylon}
+LawCeylon, ``Sri Lanka Acts, Laws \& Case Law Reports System.'' [Online].
+Available: \url{https://lawceylon.lk/}.
+
+\bibitem{harvey}
+Harvey, ``AI software for legal and professional services.'' [Online]. Available:
+\url{https://www.harvey.ai/}.
+
+\bibitem{spellbook}
+Spellbook, ``AI Contract Review \& Drafting.'' [Online]. Available:
+\url{https://spellbook.com/}.
+
+\bibitem{lexisai}
+LexisNexis, ``Lexis+ with Protege: Legal AI Solution for Drafting \& Research.''
+[Online]. Available:
+\url{https://www.lexisnexis.com/en-us/products/lexis-plus-protege.page}.
+
+\bibitem{cocounsel}
+Thomson Reuters, ``CoCounsel Legal: AI Legal Assistant.'' [Online]. Available:
+\url{https://legal.thomsonreuters.com/en/products/cocounsel-legal}.
+
+\bibitem{sigmalaw}
+Natural Language Processing Group, University of Moratuwa, ``SigmaLaw: Legal NLP
+Research Project.'' [Online]. Available:
+\url{https://nisansads.staff.uom.lk/Group/project-details.php?name=SigmaLaw}.
+
+\bibitem{sigmaparty}
+C. Samarawickrama, M. de Almeida, N. de Silva, G. Ratnayaka and A. S. Perera,
+``Party Identification of Legal Documents using Co-reference Resolution and Named Entity
+Recognition,'' in \emph{2020 IEEE 15th International Conference on Industrial and
+Information Systems (ICIIS)}, 2020, pp. 494--499.
+\url{https://doi.org/10.1109/ICIIS51140.2020.9342720}.
+
+\bibitem{sigmarnn}
+C. Samarawickrama, M. de Almeida, N. de Silva, G. Ratnayaka and A. S. Perera,
+``Legal Party Extraction from Legal Opinion Texts Using Recurrent Deep Neural Networks,''
+\emph{Journal of Data Intelligence}, vol. 3, no. 3, pp. 350--365, 2022.
+\url{https://doi.org/10.26421/JDI3.3-4}.
+
+\bibitem{sigmaseq2seq}
+M. de Almeida, C. Samarawickrama, N. de Silva, G. Ratnayaka and A. S. Perera,
+``Legal Party Extraction from Legal Opinion Text with Sequence to Sequence Learning,''
+in \emph{2020 20th International Conference on Advances in ICT for Emerging Regions
+(ICTer)}, 2020, pp. 143--148. \url{https://doi.org/10.1109/ICTer51097.2020.9325488}.
+
+\bibitem{sigmaverbsim}
+G. Ratnayaka, N. de Silva, A. S. Perera, G. Kavirathne, T. Ariyarathna and A. Wijesinghe,
+``Context Sensitive Verb Similarity Dataset for Legal Information Extraction,''
+\emph{Data}, vol. 7, no. 7, 2022. \url{https://doi.org/10.3390/data7070087}.
+
+\bibitem{sigmasentemb}
+S. Jayasinghe, L. Rambukkanage, A. Silva, N. de Silva, S. Perera and M. Perera,
+``Learning Sentence Embeddings in the Legal Domain with Low Resource Settings,'' in
+\emph{Proceedings of the 36th Pacific Asia Conference on Language, Information and
+Computation (PACLIC)}, 2022, pp. 494--502. [Online]. Available:
+\url{https://aclanthology.org/2022.paclic-1.55/}.
+
+\bibitem{sigmaretrieval}
+K. Sugathadasa, B. Ayesha, N. de Silva, A. S. Perera, V. Jayawardana, D. Lakmal and
+M. Perera, ``Legal Document Retrieval using Document Vector Embeddings and Deep
+Learning,'' in \emph{Science and Information Conference (SAI)}, 2018, pp. 160--175.
+\url{https://doi.org/10.1007/978-3-030-01177-2_12}.
+
+\end{thebibliography}
+
+\end{document}
