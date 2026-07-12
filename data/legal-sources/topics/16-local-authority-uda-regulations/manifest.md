@@ -18,4 +18,6 @@ planning clearances, and area-specific by-laws or gazettes.
 
 ## Status
 
-All sources in this topic still need official PDFs or gazettes.
+The UDA, Urban Councils, Municipal Councils, and Pradeshiya Sabhas sources are
+downloaded as public consolidated PDFs. Town and Country Planning plus
+area-specific by-laws and gazettes remain in the source backlog.

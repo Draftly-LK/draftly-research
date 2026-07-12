@@ -16,8 +16,7 @@ in conveyancing transactions.
 
 ## Status
 
-The base Ordinance and 2022/2024 amendments are downloaded. The 2013 amendment
-still needs an official PDF.
+The base Ordinance and the 2013, 2022, and 2024 amendments are downloaded.
 
 ## Note
 

@@ -22,4 +22,5 @@ encroachments.
 
 ## Status
 
-All sources in this topic still need official PDFs.
+The Land Development source is downloaded as a public consolidated PDF. The
+remaining state-land sources still need official PDFs.

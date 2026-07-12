@@ -22,12 +22,15 @@ Topic folders under `data/legal-sources/topics/` link back to those shared files
 
 ## Current Pass
 
-Batch 1 and part of Batch 2 have been started. Official PDFs have been downloaded
-from RGD, Parliament, IRD, documents.gov.lk, and the Department of the Registrar
-of Companies where available.
+The library currently contains 40 registry-tracked local sources. Official PDFs
+have been downloaded from RGD, Parliament, IRD, documents.gov.lk, and the
+Department of the Registrar of Companies where available.
 
-Some older ordinances are currently represented by discovery URLs or unresolved
-registry rows because an official public PDF was not found in the first pass.
+The remaining 26 source rows require an official or directly downloadable public
+copy, and one row remains under manual review. Several older consolidated statutes
+are publicly discoverable, but their archival download endpoint currently returns
+server-side source rather than a PDF; those files are deliberately not stored until
+a valid copy is available.
 
 ## Source Priority
 

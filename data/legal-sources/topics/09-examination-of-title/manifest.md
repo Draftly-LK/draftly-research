@@ -27,5 +27,6 @@ abstract of title.
 
 ## Status
 
-Land-restriction and company sources are downloaded. Most specialist title-check
-sources still need official PDFs.
+Land-restriction, company, Civil Procedure Code, Revocation of Irrevocable Deeds
+of Gift, reconstructed folios, UDA, and Urban Councils sources are downloaded.
+Most specialist title-check sources still need official PDFs.

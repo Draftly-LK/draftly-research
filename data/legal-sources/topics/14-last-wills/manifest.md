@@ -14,4 +14,6 @@ Last wills, codicils, testamentary disposition, drafting, and checklist work.
 
 ## Status
 
-All sources in this topic still need official PDFs.
+The consolidated Wills Ordinance, which incorporates the 1993 and 2022
+amendments, is downloaded. The 2022 amendment is also stored separately from
+the Department of Government Printing.

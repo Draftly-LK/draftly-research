@@ -16,5 +16,6 @@ modes of acquisition, pedigree charts, inheritance, and succession.
 
 ## Status
 
-Core amendments are downloaded. The base Prevention of Frauds Ordinance and
-Matrimonial Rights and Inheritance Ordinance still need official PDFs.
+The Prevention of Frauds Ordinance and its 2022/2024 amendments are downloaded.
+The Matrimonial Rights and Inheritance Ordinance still needs a reliable direct
+public PDF.

@@ -13,4 +13,4 @@ sangika, and pudgalika property.
 
 ## Status
 
-Official PDF still needed.
+The Buddhist Temporalities source is downloaded as a public consolidated PDF.

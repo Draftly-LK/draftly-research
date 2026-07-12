@@ -18,5 +18,5 @@ notices, certified copies, refusal, appeals, and civil liability.
 
 ## Status
 
-The 2011 and 2022 amendments plus RGD regulations are downloaded. The base
-Ordinance and older amendments still need official PDFs.
+The consolidated base Ordinance, 1990, 2011, 2013, and 2022 amendments, plus
+RGD regulations, are downloaded.

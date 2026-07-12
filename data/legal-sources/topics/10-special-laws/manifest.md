@@ -16,4 +16,5 @@ property and inheritance.
 
 ## Status
 
-All sources in this topic still need official PDFs.
+The Jaffna Matrimonial Rights and Inheritance source is downloaded. The
+Tesawalamai, Kandyan, and Muslim succession sources still need official PDFs.

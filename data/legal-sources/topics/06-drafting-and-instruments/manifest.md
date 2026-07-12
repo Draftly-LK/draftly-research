@@ -15,8 +15,8 @@ valid instruments.
 
 ## Status
 
-Notaries Ordinance is downloaded. Prevention of Frauds and Registration of
-Documents base sources still need official PDFs.
+The Notaries Ordinance, Prevention of Frauds, and Registration of Documents
+sources are downloaded.
 
 ## Note
 
