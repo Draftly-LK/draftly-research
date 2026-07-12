@@ -18,6 +18,8 @@ planning clearances, and area-specific by-laws or gazettes.
 
 ## Status
 
-The UDA, Urban Councils, Municipal Councils, and Pradeshiya Sabhas sources are
-downloaded as public consolidated PDFs. Town and Country Planning plus
-area-specific by-laws and gazettes remain in the source backlog.
+The UDA, Urban Councils, Municipal Councils, Pradeshiya Sabhas, and Town and
+Country Planning sources are available in the shared library. The local
+authority collection also contains official national model by-laws and the
+government gazette archive. Each case must still identify the property
+authority and confirm its adoption or modification notice.

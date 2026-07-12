@@ -18,5 +18,8 @@ liability.
 
 ## Status
 
-The Stamp Duty Act is downloaded from IRD. Province-specific financial statutes
-and gazettes still need collection.
+The Stamp Duty Act is downloaded from IRD. The Western Province Financial
+Statute is also downloaded from the official Western Province Department of
+Revenue, and the provincial collection manifest records its available
+amendments. For a real matter, select the statute, amendment, rate notice, and
+procedure that apply to the property's province and transaction date.

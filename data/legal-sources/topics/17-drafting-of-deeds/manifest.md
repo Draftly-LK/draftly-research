@@ -31,6 +31,5 @@ rectifications, and partitions.
 ## Status
 
 The notarial, powers-of-attorney, stamp-duty, registration-title, mortgage,
-and secondary apartment sources are downloaded. Several deed-type-specific
-sources, including partition, rent, and partnership law, remain in the
-official-source backlog.
+apartment, partition, rent, and partnership sources are downloaded. Use the
+partnership source only where the deed or party structure makes it relevant.

@@ -14,5 +14,7 @@ Sri Lanka Law Reports, and other accepted legal-report sources.
 
 ## Status
 
-Case-law sources need a separate acquisition strategy. Do not mix isolated case
+Public index manifests are available for both report series. Locate decisions
+by the legal issue in the matter, then save the selected full judgment with its
+report citation and source URL in the case folder. Do not mix isolated case
 summaries with official or accepted law-report text.

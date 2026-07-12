@@ -15,6 +15,8 @@ Topic folders under `data/legal-sources/topics/` link back to those shared files
 ## Status Values
 
 - `downloaded`: a usable local file has been collected.
+- `indexed-html`: a reliable public HTML source has been recorded locally, but
+  no clean standalone public PDF has been found yet.
 - `needs-official-source`: a source is identified, but an official PDF still needs to be found.
 - `needs-manual-review`: the source requirement is unclear or may be outside Draftly's scope.
 - `gated-or-not-public`: the source appears unavailable without access restrictions.
@@ -22,15 +24,19 @@ Topic folders under `data/legal-sources/topics/` link back to those shared files
 
 ## Current Pass
 
-The library currently contains 40 registry-tracked local sources. Official PDFs
-have been downloaded from RGD, Parliament, IRD, documents.gov.lk, and the
-Department of the Registrar of Companies where available.
+The registry currently records 80 source entries: 79 downloaded/indexed local
+entries and one public HTML-only entry. The downloaded rows resolve to 62 unique
+registry PDF paths, and the full library currently contains 70 readable PDF
+files. Multiple source rows can correctly point to the same consolidated statute
+or legislative volume. Official or institution PDFs have been collected from
+RGD, Parliament, IRD, documents.gov.lk, CBSL, the Department of the Registrar of
+Companies, the Western Province Department of Revenue, and the Ministry of
+Plantation Industries where available.
 
-The remaining 26 source rows require an official or directly downloadable public
-copy, and one row remains under manual review. Several older consolidated statutes
-are publicly discoverable, but their archival download endpoint currently returns
-server-side source rather than a PDF; those files are deliberately not stored until
-a valid copy is available.
+No registry entries are awaiting manual review. The local-authority collection
+contains official national model by-laws and the government gazette archive;
+each case must still record the property authority and verify its applicable
+adoption or modification notice.
 
 ## Source Priority
 
