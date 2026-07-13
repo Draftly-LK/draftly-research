@@ -24,9 +24,13 @@ abstract of title.
 | SRC043 | Survey Act. |
 | SRC044 | Bank of Ceylon Ordinance. |
 | SRC030 | Civil Procedure Code. |
+| SRC081 | RGD guides and forms for land/title/notary workflows. |
+| SRC082 | Conveyancing institution source pack. |
+| SRC090 | CRS curriculum reference. |
 
 ## Status
 
 Land-restriction, company, Civil Procedure Code, Revocation of Irrevocable Deeds
 of Gift, reconstructed folios, UDA, and Urban Councils sources are downloaded.
-Most specialist title-check sources still need official PDFs.
+Institution pages and available RGD forms are indexed. CRS remains an
+unresolved curriculum abbreviation until confirmed by a lecturer or lawyer.

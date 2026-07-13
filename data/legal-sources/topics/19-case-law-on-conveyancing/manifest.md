@@ -11,10 +11,12 @@ Sri Lanka Law Reports, and other accepted legal-report sources.
 | --- | --- |
 | SRC066 | New Law Reports. |
 | SRC067 | Sri Lanka Law Reports. |
+| SRC089 | Conveyancing case-law topic-index structure. |
 
 ## Status
 
 Public index manifests are available for both report series. Locate decisions
 by the legal issue in the matter, then save the selected full judgment with its
-report citation and source URL in the case folder. Do not mix isolated case
-summaries with official or accepted law-report text.
+report citation and source URL in the case folder. A topic-index structure and
+seed case references are now available, but individual cases must still be
+verified before use in lawyer-facing output.

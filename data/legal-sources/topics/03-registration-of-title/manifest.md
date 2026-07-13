@@ -10,7 +10,14 @@ transactions, transmission, rectification, strata title, and title certificates.
 | Source ID | Role |
 | --- | --- |
 | SRC011 | Main Registration of Title Act source. |
+| SRC083 | Registration of Title Gazette No. 1616/23. |
+| SRC084 | Registration of Title Gazette No. 1886/58. |
+| SRC085 | Registration of Title Gazette No. 1912/04. |
+| SRC086 | Registration of Title Gazette No. 2308/27. |
+| SRC087 | Registration of Title Gazette No. 1302/16 reference. |
 
 ## Status
 
-The main Act has been downloaded from RGD.
+The main Act and four related gazette PDFs have been downloaded. Gazette
+1302/16 is identified from the curriculum and audit references but still needs
+an official public PDF.
