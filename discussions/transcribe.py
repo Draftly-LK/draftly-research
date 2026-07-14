@@ -7,6 +7,7 @@ import json
 import os
 import re
 import sys
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -225,8 +226,11 @@ def transcribe_recording(
     operation = speech_client.batch_recognize(request=request)
     response = operation.result(timeout=settings.timeout_seconds)
 
-    result_uri = find_result_uri(response, gcs_audio_uri)
-    result_payload = download_json_from_gcs(storage_client, result_uri)
+    result_payload, result_uri = get_result_payload(
+        response=response,
+        storage_client=storage_client,
+        gcs_audio_uri=gcs_audio_uri,
+    )
     transcript_data = parse_transcript_result(result_payload)
 
     write_outputs(
@@ -245,28 +249,69 @@ def transcribe_recording(
     print(f"  wrote: {outputs.json}")
 
 
-def find_result_uri(response: cloud_speech.BatchRecognizeResponse, gcs_audio_uri: str) -> str:
+def get_result_payload(
+    *,
+    response: cloud_speech.BatchRecognizeResponse,
+    storage_client: storage.Client,
+    gcs_audio_uri: str,
+) -> tuple[dict, str]:
     response_dict = cloud_speech.BatchRecognizeResponse.to_dict(response)
     results = response_dict.get("results", {})
 
     if gcs_audio_uri in results:
-        uri = results[gcs_audio_uri].get("uri")
-        if uri:
-            return uri
+        payload = result_entry_payload(results[gcs_audio_uri], storage_client)
+        if payload is not None:
+            return payload
 
     for result in results.values():
-        uri = result.get("uri")
-        if uri:
-            return uri
+        payload = result_entry_payload(result, storage_client)
+        if payload is not None:
+            return payload
 
-    raise RuntimeError(f"Google batch response did not include a result URI: {response_dict}")
+    raise RuntimeError(
+        f"Google batch response did not include transcript data or a result URI: {response_dict}"
+    )
+
+
+def result_entry_payload(
+    result: dict,
+    storage_client: storage.Client,
+) -> tuple[dict, str] | None:
+    error = result.get("error")
+    if error:
+        raise RuntimeError(f"Google batch recognition failed for one file: {error}")
+
+    transcript = result.get("transcript")
+    if transcript:
+        return transcript, "inline:transcript"
+
+    inline_result = result.get("inlineResult", {})
+    inline_transcript = inline_result.get("transcript")
+    if inline_transcript:
+        return inline_transcript, "inline:inlineResult.transcript"
+
+    cloud_storage_result = result.get("cloudStorageResult", {})
+    uri = cloud_storage_result.get("uri") or result.get("uri")
+    if uri:
+        return download_json_from_gcs(storage_client, uri), uri
+
+    return None
 
 
 def download_json_from_gcs(storage_client: storage.Client, uri: str) -> dict:
     bucket_name, blob_name = split_gcs_uri(uri)
     blob = storage_client.bucket(bucket_name).blob(blob_name)
-    content = blob.download_as_text(encoding="utf-8")
-    return json.loads(content)
+    last_error: Exception | None = None
+    for attempt in range(1, 13):
+        try:
+            content = blob.download_as_text(encoding="utf-8")
+            return json.loads(content)
+        except Exception as exc:
+            last_error = exc
+            if attempt == 12:
+                break
+            time.sleep(5)
+    raise RuntimeError(f"Could not download Google STT result JSON at {uri}") from last_error
 
 
 def split_gcs_uri(uri: str) -> tuple[str, str]:
