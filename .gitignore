@@ -11,6 +11,11 @@ __pycache__/
 # Generated retrieval artifacts (rebuildable from the PDFs)
 data/legal-sources/derived/
 
+# Harvested case-law text (rebuildable via scripts/harvest_*_caselaw.py;
+# manifests under data/legal-sources/manifests/ ARE tracked)
+data/legal-sources/library/case-law/internet-archive/
+data/legal-sources/library/case-law/commonlii/
+
 # Private discussion recordings and generated transcripts
 discussions/recordings/*
 discussions/transcripts/*
@@ -27,3 +32,4 @@ report/*.synctex.gz
 AGENTS.md
 .agents/skills/README.md
 /.agents
+/.playwright-mcp
