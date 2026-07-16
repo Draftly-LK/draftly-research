@@ -19,6 +19,7 @@ see whether a skill already covers it.
 | --- | --- | --- | --- |
 | `avoid-ai-writing` | **[portable]** | `.agents/skills/avoid-ai-writing/SKILL.md` | Auditing/rewriting prose to remove AI-isms. Apply to READMEs, reports, proposals, emails, docs. |
 | `legal-source-lookup` | **[portable]** | `.agents/skills/legal-source-lookup/SKILL.md` | Answering a Sri Lankan conveyancing question from the `data/legal-sources/` corpus, with exact citations. |
+| `logbook-entry` | **[portable]** | `.agents/skills/logbook-entry/SKILL.md` | Generating CS3501/LMS individual project logbook entries from git history, current repo work, tools used, hours, and tags. |
 | `update-context` | **[portable]** | `.agents/skills/update-context/SKILL.md` | Capturing/transferring project context between Claude, Codex, and ChatGPT via `.agents/context/CONTEXT.md` and a copy-paste block. |
 
 ## Claude Code built-in skills (not portable)

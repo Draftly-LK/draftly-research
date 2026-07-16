@@ -70,15 +70,34 @@ processing pipeline, extracted-fact review UI, evidence/provenance viewer,
 pedigree viewer, red-flag dashboard, lawyer review/edit workspace, version
 history, audit trail, and DOCX/PDF export.
 
-## Data we have
+## What we've built so far
 
-- A curated corpus of ~67 Sri Lankan conveyancing **statutes** (with amendments),
-  organized into 20 curriculum topics.
-- **Case law** (New Law Reports and Sri Lanka Law Reports) — being collected now
-  from public sources and linked to the statutes and topics.
-- A domain mentor (a senior practising notary and Law College lecturer) providing
-  the curriculum, source materials, and validation, plus real anonymized deed
-  bundles as evaluation ground truth.
+Real, in-hand progress — not just a plan:
+
+- **Statutory corpus assembled.** ~85 Sri Lankan conveyancing sources (statutes,
+  amendments, gazettes, regulations) collected, extracted to text, and organized
+  into the **20 curriculum topics** — with a source registry and topic→statute
+  rule tables, cross-checked by an automated integrity audit.
+- **Case-law corpus assembled.** ~**5,100 conveyancing judgments + 33 historical
+  law-report volumes**, spanning **1839–2026**, gathered from free/official
+  primary sources: the Internet Archive (public-domain volumes), CommonLII
+  (reported New Law Reports / Sri Lanka Law Reports, pre-2012), and the official
+  Supreme Court + Court of Appeal sites (post-2012 judgments). Filtered to the
+  conveyancing subset. As far as we can tell, no comparable open Sri Lankan
+  conveyancing case-law dataset exists.
+- **A reproducible data pipeline.** Scripts + a Jupyter notebook that turn the raw
+  law into a structured, queryable dataset — a **case↔statute citation graph**
+  and topic→statute→case tables.
+- **Retrieval approach chosen and justified.** Rule-based and **citation-grounded**
+  over a structured index — deliberately *not* plain vector similarity, because in
+  law a loose or wrong match is a real error. Every answer traces to a cited
+  section or case.
+- **Domain validation.** Mentored by a practising senior notary and Law College
+  lecturer; the six-function workflow and curriculum are validated against real
+  practice. A real (anonymized) property matter is set aside as evaluation ground
+  truth.
+- **Team.** Three parallel workstreams — OCR/extraction, legal-data corpus,
+  output-document templates — around one shared verified-record contract.
 
 ## What's new
 
@@ -104,8 +123,22 @@ each fact with its source, builds the pedigree, flags a missing document, and
 generates a draft title report + AT form + assessor letter → the lawyer reviews
 and exports. That single flow shows the ML and the SE working together.
 
-## Status
+## Where we are, and what's next
 
-Corpus and domain groundwork are underway: statutes collected and topic-indexed,
-case-law collection running, retrieval design chosen. Next: the extraction +
-linking pipeline and a working demo on one real (anonymized) matter.
+**Now:** normalizing the whole corpus (statutes + case law) into one clean,
+processed store for the retrieval engine, and OCR-ing a small scanned backlog
+with open-source OCR. The statutory + case-law data and the citation graph are
+already in place.
+
+**Next:**
+
+1. Rule-based lookup engine — question/step → the governing statute sections +
+   the cases that cite them, with citations and in-force caveats.
+2. The document pipeline — OCR + field extraction on a real (anonymized) matter,
+   measured against our ground-truth record.
+3. The Streamlit demo — documents in → pedigree / title report / AT form /
+   assessor letter out, each grounded and lawyer-reviewable.
+
+**What we'd show at the symposium:** that single end-to-end flow on a real matter,
+plus the measurable metrics (extraction accuracy, chain-of-title reconstruction,
+defect detection, time saved).

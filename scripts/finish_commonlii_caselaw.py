@@ -106,6 +106,19 @@ def main() -> None:
         w.writeheader()
         w.writerows(conv)
     h.log(f"[conv] wrote {len(conv)} conveyancing rows -> {CONV_CSV}")
+
+    # CommonLII's year landing pages occasionally omit historical years that
+    # were harvested earlier. Recover those local judgments after every rebuild
+    # so the complete index remains a superset of the conveyancing manifest.
+    from repair_commonlii_index import repair
+
+    missing_before, missing_after, blank_metadata = repair()
+    h.log(
+        "[repair] locally harvested rows missing from year indexes: "
+        f"{missing_before} -> {missing_after}; blank metadata={blank_metadata}"
+    )
+    if missing_after or blank_metadata:
+        raise RuntimeError("CommonLII local-index repair did not reach full coverage")
     print(f"DONE-FINISH total_index={len(index)} conveyancing={len(conv)} new_files={new}")
 
 
