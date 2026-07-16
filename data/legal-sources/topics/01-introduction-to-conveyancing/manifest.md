@@ -1,3 +1,11 @@
+---
+topic_id: "01"
+slug: 01-introduction-to-conveyancing
+name: Introduction to Conveyancing
+source_ids: [SRC001, SRC002, SRC003, SRC004]
+keywords: [introduction to conveyancing, introductory, duties, immovable-property, modes, acquisition, pedigree, charts, inheritance, succession]
+---
+
 # Topic 01: Introduction to Conveyancing
 
 ## Purpose

@@ -1,3 +1,11 @@
+---
+topic_id: "16"
+slug: 16-local-authority-uda-regulations
+name: Local Authority, UDA, and Other Regulations
+source_ids: [SRC039, SRC041, SRC042, SRC061, SRC062, SRC063, SRC073, SRC075, SRC076, SRC082]
+keywords: [local authority, uda, and other regulations, authority, ownership, registration, survey-plan, approvals, planning, clearances, area-specific, by-laws]
+---
+
 # Topic 16: Local Authority, UDA, and Other Regulations
 
 ## Purpose
@@ -15,6 +23,9 @@ planning clearances, and area-specific by-laws or gazettes.
 | SRC061 | Municipal Councils Ordinance. |
 | SRC062 | Pradeshiya Sabha Act. |
 | SRC063 | Local authority by-laws and gazettes. |
+| SRC073 | Local Authorities Housing Act. |
+| SRC075 | National Housing Development Authority Act. |
+| SRC076 | National Housing Act. |
 | SRC082 | Conveyancing institution source pack. |
 
 ## Status

@@ -1,3 +1,11 @@
+---
+topic_id: "19"
+slug: 19-case-law-on-conveyancing
+name: Case Law on Conveyancing
+source_ids: [SRC066, SRC067, SRC089]
+keywords: [case law on conveyancing, topic-wise, case-law, index, tracking, reports, lanka, accepted, legal-report]
+---
+
 # Topic 19: Case Law on Conveyancing
 
 ## Purpose

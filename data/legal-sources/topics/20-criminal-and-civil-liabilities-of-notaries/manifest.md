@@ -1,3 +1,11 @@
+---
+topic_id: "20"
+slug: 20-criminal-and-civil-liabilities-of-notaries
+name: Criminal and Civil Liabilities of Notaries
+source_ids: [SRC011, SRC012, SRC014, SRC015, SRC016, SRC021, SRC022, SRC023, SRC033, SRC034, SRC035, SRC036, SRC049, SRC050, SRC068, SRC069]
+keywords: [criminal and civil liabilities of notaries, liability, provisions, affecting, across, stamp, duty, financial, statutes, apartment]
+---
+
 # Topic 20: Criminal and Civil Liabilities of Notaries
 
 ## Purpose
@@ -11,18 +19,22 @@ registration.
 
 | Source ID | Role |
 | --- | --- |
-| SRC034 | Stamp Duty Act. |
-| SRC036 | Provincial Financial Statutes. |
+| SRC011 | Registration of Title Act. |
 | SRC012 | Apartment Ownership Law. |
-| SRC049 | Buddhist Temporalities Ordinance. |
-| SRC023 | Fragmentation law. |
-| SRC033 | Land Reform Law. |
-| SRC021 | Land Restrictions on Alienation Act. |
-| SRC050 | Land Development Ordinance. |
 | SRC014 | Notaries Ordinance. |
 | SRC015 | Notaries 2022 amendment. |
 | SRC016 | Notaries 2024 amendment. |
-| SRC011 | Registration of Title Act. |
+| SRC021 | Land Restrictions on Alienation Act. |
+| SRC022 | Land (Restrictions on Alienation) (Amendment) Act. |
+| SRC023 | Fragmentation law. |
+| SRC033 | Land Reform Law. |
+| SRC034 | Stamp Duty Act. |
+| SRC035 | Western Province Financial Statute. |
+| SRC036 | Provincial Financial Statutes. |
+| SRC049 | Buddhist Temporalities Ordinance. |
+| SRC050 | Land Development Ordinance. |
+| SRC068 | Stamp Duty (Special Provisions) Act. |
+| SRC069 | Stamp Duty (Special Provisions) (Amendment) Act. |
 
 ## Status
 

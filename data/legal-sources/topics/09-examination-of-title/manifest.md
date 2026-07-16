@@ -1,3 +1,11 @@
+---
+topic_id: "09"
+slug: 09-examination-of-title
+name: Examination of Title
+source_ids: [SRC004, SRC021, SRC022, SRC023, SRC030, SRC031, SRC032, SRC037, SRC038, SRC039, SRC040, SRC041, SRC042, SRC043, SRC044, SRC071, SRC077, SRC078, SRC081, SRC082, SRC090]
+keywords: [examination of title, land, search, documents, examine, checklist, pedigree, report, abstract]
+---
+
 # Topic 09: Examination of Title
 
 ## Purpose
@@ -13,6 +21,7 @@ abstract of title.
 | SRC021 | Land Restrictions on Alienation Act. |
 | SRC022 | Land Restrictions on Alienation 2018 amendment. |
 | SRC023 | Fragmentation law. |
+| SRC030 | Civil Procedure Code. |
 | SRC031 | Companies Act. |
 | SRC032 | Companies Act amendments. |
 | SRC037 | Revocation of Irrevocable Deeds of Gift Act. |
@@ -23,7 +32,9 @@ abstract of title.
 | SRC042 | Urban Councils Ordinance. |
 | SRC043 | Survey Act. |
 | SRC044 | Bank of Ceylon Ordinance. |
-| SRC030 | Civil Procedure Code. |
+| SRC071 | Prescription Ordinance. |
+| SRC077 | Registration of Old Deeds and Instruments Ordinance. |
+| SRC078 | Sannases and Old Deeds Ordinance. |
 | SRC081 | RGD guides and forms for land/title/notary workflows. |
 | SRC082 | Conveyancing institution source pack. |
 | SRC090 | CRS curriculum reference. |

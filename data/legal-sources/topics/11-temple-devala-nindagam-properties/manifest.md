@@ -1,3 +1,11 @@
+---
+topic_id: "11"
+slug: 11-temple-devala-nindagam-properties
+name: Temple, Devala, Nindagam, Sangika, and Pudgalika Properties
+source_ids: [SRC049, SRC072]
+keywords: [temple, devala, nindagam, sangika, and pudgalika properties, temple, devala, nindagam, sangika, property, controls, special, rules, affecting]
+---
+
 # Topic 11: Temple, Devala, Nindagam, Sangika, and Pudgalika Properties
 
 ## Purpose
@@ -10,6 +18,7 @@ sangika, and pudgalika property.
 | Source ID | Role |
 | --- | --- |
 | SRC049 | Buddhist Temporalities Ordinance. |
+| SRC072 | Nindagama Lands Act. |
 
 ## Status
 

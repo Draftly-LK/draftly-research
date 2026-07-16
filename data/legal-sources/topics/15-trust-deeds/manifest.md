@@ -1,3 +1,11 @@
+---
+topic_id: "15"
+slug: 15-trust-deeds
+name: Trust Deeds
+source_ids: [SRC059, SRC060]
+keywords: [trust deeds, statutory, checks]
+---
+
 # Topic 15: Trust Deeds
 
 ## Purpose

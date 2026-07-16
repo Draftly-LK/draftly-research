@@ -1,3 +1,11 @@
+---
+topic_id: "08"
+slug: 08-duties-of-notary
+name: Duties of a Notary
+source_ids: [SRC014, SRC015, SRC016, SRC081]
+keywords: [duties of a notary, appointment, oaths, enrolment, annual, certificates, office, rules, delivery, duplicates]
+---
+
 # Topic 08: Duties of a Notary
 
 ## Purpose
@@ -13,6 +21,7 @@ liability.
 | SRC014 | Notaries Ordinance. |
 | SRC015 | Notaries 2022 amendment. |
 | SRC016 | Notaries 2024 amendment. |
+| SRC081 | Registrar General's Department guides and forms. |
 
 ## Status
 

@@ -1,3 +1,11 @@
+---
+topic_id: "04"
+slug: 04-condominium-property
+name: Condominium Property
+source_ids: [SRC012, SRC013]
+keywords: [condominium property, plans, registration, amendments, common, elements, unit, transfers, damage, destruction]
+---
+
 # Topic 04: Condominium Property
 
 ## Purpose

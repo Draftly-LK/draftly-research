@@ -1,3 +1,11 @@
+---
+topic_id: "10"
+slug: 10-special-laws
+name: Special Laws
+source_ids: [SRC045, SRC046, SRC047, SRC048]
+keywords: [special laws, thesawalamai, muslim, kandyan, succession, rules, affecting, property, inheritance]
+---
+
 # Topic 10: Special Laws
 
 ## Purpose

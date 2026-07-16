@@ -1,3 +1,11 @@
+---
+topic_id: "03"
+slug: 03-registration-of-title
+name: Registration of Title
+source_ids: [SRC011, SRC081, SRC083, SRC084, SRC085, SRC086, SRC087]
+keywords: [registration of title, initial, compilation, dispute, resolution, examination, transactions, transmission, rectification, strata]
+---
+
 # Topic 03: Registration of Title
 
 ## Purpose
@@ -10,6 +18,7 @@ transactions, transmission, rectification, strata title, and title certificates.
 | Source ID | Role |
 | --- | --- |
 | SRC011 | Main Registration of Title Act source. |
+| SRC081 | Registrar General's Department guides and forms. |
 | SRC083 | Registration of Title Gazette No. 1616/23. |
 | SRC084 | Registration of Title Gazette No. 1886/58. |
 | SRC085 | Registration of Title Gazette No. 1912/04. |
