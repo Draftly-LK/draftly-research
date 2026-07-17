@@ -1,0 +1,7 @@
+criterion_id,criterion,score_min,score_max,passing_rule,notes
+C1,Correct legal source retrieved,0,2,Score 2 only if the cited source resolves to the closed Draftly corpus,Applies to statutes amendments gazettes and cases
+C2,Correct section or rule,0,2,Score 2 only if the exact section or rule proposition is retrieved,Do not award full credit for nearby but wrong sections
+C3,Evidence support,0,2,Score 2 only if the quoted or linked passage supports the claim,Unsupported paraphrases fail this criterion
+C4,Authority handling,0,2,Score 2 only if court level and binding or persuasive status are labelled correctly,SC and CA authority must not be flattened
+C5,Temporal validity,0,2,Score 2 only if the applicable law version is correct for the matter date,Use not applicable when no date issue exists
+C6,Abstention or uncertainty,0,2,Score 2 if uncertain or missing authority is clearly marked instead of invented,Important for unverified case links

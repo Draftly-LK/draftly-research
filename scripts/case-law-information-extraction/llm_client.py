@@ -1,0 +1,94 @@
+"""Thin OpenAI-compatible client for NVIDIA NIM, with JSON parsing, retry/backoff,
+and cumulative token-usage tracking.
+
+Model-agnostic: point DRAFTLY_MODEL_CHEAP / _STRONG (or NVIDIA_BASE_URL) at any
+OpenAI-shaped endpoint (NVIDIA NIM by default; local Ollama's /v1 also works).
+"""
+
+from __future__ import annotations
+
+import json
+import re
+import time
+
+from openai import OpenAI
+
+import config
+
+_client = OpenAI(base_url=config.BASE_URL, api_key=config.API_KEY)
+
+# cumulative usage across a run, keyed by model id
+USAGE: dict[str, dict[str, int]] = {}
+
+
+def _record(model: str, usage) -> None:
+    u = USAGE.setdefault(model, {"prompt": 0, "completion": 0, "calls": 0})
+    u["calls"] += 1
+    if usage is not None:
+        u["prompt"] += getattr(usage, "prompt_tokens", 0) or 0
+        u["completion"] += getattr(usage, "completion_tokens", 0) or 0
+
+
+def _extract_json(text: str) -> dict | None:
+    """Pull the first JSON object out of a model reply (handles code fences / stray prose)."""
+    if not text:
+        return None
+    text = text.strip()
+    text = re.sub(r"^```(?:json)?|```$", "", text, flags=re.I | re.M).strip()
+    try:
+        return json.loads(text)
+    except Exception:
+        pass
+    # fall back to the first balanced {...}
+    start = text.find("{")
+    if start < 0:
+        return None
+    depth = 0
+    for i in range(start, len(text)):
+        if text[i] == "{":
+            depth += 1
+        elif text[i] == "}":
+            depth -= 1
+            if depth == 0:
+                try:
+                    return json.loads(text[start:i + 1])
+                except Exception:
+                    return None
+    return None
+
+
+def chat_json(system: str, user: str, model: str, *, temperature: float = 0.0,
+              max_tokens: int = None, tries: int = 4) -> dict | None:
+    """One chat call expecting a JSON object back. Returns parsed dict or None.
+
+    Retries with backoff on transient errors (429/5xx/network). Requests JSON
+    response format; falls back to plain if the model/endpoint rejects it.
+    """
+    max_tokens = max_tokens or config.MAX_TOKENS_OUT
+    msgs = [{"role": "system", "content": system}, {"role": "user", "content": user}]
+    for attempt in range(tries):
+        try:
+            kwargs = dict(model=model, messages=msgs, temperature=temperature,
+                          max_tokens=max_tokens)
+            try:
+                r = _client.chat.completions.create(
+                    response_format={"type": "json_object"}, **kwargs)
+            except Exception:
+                r = _client.chat.completions.create(**kwargs)  # endpoint without json mode
+            _record(model, getattr(r, "usage", None))
+            return _extract_json(r.choices[0].message.content or "")
+        except Exception as e:  # noqa: BLE001
+            wait = min(2 ** attempt, 20)
+            if attempt == tries - 1:
+                print(f"[llm] giving up on {model} after {tries} tries: {repr(e)[:160]}")
+                return None
+            time.sleep(wait)
+    return None
+
+
+def usage_summary() -> dict:
+    total_prompt = sum(u["prompt"] for u in USAGE.values())
+    total_comp = sum(u["completion"] for u in USAGE.values())
+    total_calls = sum(u["calls"] for u in USAGE.values())
+    return {"by_model": USAGE, "total_prompt_tokens": total_prompt,
+            "total_completion_tokens": total_comp, "total_calls": total_calls}
