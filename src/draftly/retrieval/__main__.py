@@ -2,10 +2,14 @@ from __future__ import annotations
 
 import argparse
 import json
+from pathlib import Path
 
+from .answering import answer
 from .evaluation import run_evaluation
 from .index import build_index
 from .models import StatuteQuery
+from .qa_evaluation import run_qa_evaluation
+from .question_analysis import parse_question_file
 from .search import search
 
 
@@ -23,7 +27,25 @@ def main() -> None:
     search_parser.add_argument("--source-id", help="Filter to one source ID, e.g. SRC001.")
     search_parser.add_argument("--limit", type=int, default=8)
 
+    ask_parser = subparsers.add_parser("ask", help="Generate a bounded, cited statutes-only answer.")
+    ask_parser.add_argument("query", help="Question, including a complete multi-part exam question if needed.")
+    ask_parser.add_argument("--limit", type=int, default=12)
+
     subparsers.add_parser("evaluate", help="Run development retrieval evaluation.")
+
+    questions_parser = subparsers.add_parser(
+        "evaluate-questions",
+        help="Run the questions.md robustness harness without claiming legal correctness.",
+    )
+    questions_parser.add_argument("--questions", default="src/questions.md")
+    questions_parser.add_argument("--output", default="evaluation/runs/statute-qa-v2")
+    questions_parser.add_argument("--with-answers", action="store_true")
+    questions_parser.add_argument("--resume", action="store_true", help="Resume from results.partial.jsonl.")
+    questions_parser.add_argument(
+        "--question-id",
+        action="append",
+        help="Evaluate only a matching question ID; repeat for multiple IDs.",
+    )
 
     args = parser.parse_args()
     if args.command == "build":
@@ -39,10 +61,30 @@ def main() -> None:
             )
         )
         print(json.dumps([hit.to_dict(include_text=False) for hit in hits], indent=2))
+    elif args.command == "ask":
+        response = answer(StatuteQuery(text=args.query, limit=args.limit))
+        print(json.dumps(response.to_dict(), indent=2, ensure_ascii=False))
     elif args.command == "evaluate":
         print(json.dumps(run_evaluation(), indent=2))
+    elif args.command == "evaluate-questions":
+        questions = parse_question_file(Path(args.questions))
+        if args.question_id:
+            selected_ids = set(args.question_id)
+            questions = tuple(question for question in questions if question.question_id in selected_ids)
+            missing_ids = selected_ids - {question.question_id for question in questions}
+            if missing_ids:
+                parser.error(f"Unknown question IDs: {', '.join(sorted(missing_ids))}")
+        metrics = run_qa_evaluation(
+            questions,
+            Path(args.output),
+            retrieve=lambda text: search(StatuteQuery(text=text, limit=10)),
+            answer=answer if args.with_answers else None,
+            mode="full_answer" if args.with_answers else "retrieval_only",
+            config={"corpus": "statutes-and-amendments-only", "gold_status": "unverified"},
+            resume=args.resume,
+        )
+        print(json.dumps(metrics, indent=2))
 
 
 if __name__ == "__main__":
     main()
-

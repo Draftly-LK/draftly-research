@@ -7,11 +7,12 @@ from pathlib import Path
 from typing import Any
 
 from .models import SectionNode
-from .paths import DOCS_CSV, SOURCE_REGISTRY_CSV, TOPIC_SOURCES_CSV, TOPICS_CSV
+from .paths import DOCS_CSV, REPO_ROOT, SOURCE_REGISTRY_CSV, TOPIC_SOURCES_CSV, TOPICS_CSV
 from .section_parser import parse_sections
 
 ALLOWED_KINDS = {"statute", "amendment"}
 EXPECTED_COUNTS = {"statute": 57, "amendment": 18}
+INDEX_INPUT_VERSION = "statutes-sections-v6"
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -51,17 +52,28 @@ def load_statute_documents() -> list[dict[str, Any]]:
 
 def corpus_fingerprint(documents: list[dict[str, Any]]) -> str:
     digest = hashlib.sha256()
+    digest.update(INDEX_INPUT_VERSION.encode("utf-8"))
+    for metadata_path in (SOURCE_REGISTRY_CSV, TOPICS_CSV, TOPIC_SOURCES_CSV):
+        digest.update(metadata_path.read_bytes())
     for row in sorted(documents, key=lambda item: item["source_id"]):
-        path = Path(row["text_path"])
+        path = resolve_repo_path(row["text_path"])
         digest.update(row["source_id"].encode("utf-8"))
         digest.update(row["kind"].encode("utf-8"))
+        digest.update(row["title"].encode("utf-8"))
         digest.update(row.get("sha256", "").encode("utf-8"))
         digest.update(str(path).encode("utf-8"))
+        stat = path.stat()
+        digest.update(f"{stat.st_size}:{stat.st_mtime_ns}".encode("ascii"))
     return digest.hexdigest()
 
 
-def build_section_nodes() -> tuple[list[SectionNode], dict[str, Any]]:
-    documents = load_statute_documents()
+def resolve_repo_path(value: str) -> Path:
+    path = Path(value)
+    return path if path.is_absolute() else REPO_ROOT / path
+
+
+def build_section_nodes(documents: list[dict[str, Any]] | None = None) -> tuple[list[SectionNode], dict[str, Any]]:
+    documents = documents or load_statute_documents()
     registry = load_registry()
     _, source_topics = load_topic_maps()
     nodes: list[SectionNode] = []
@@ -69,7 +81,7 @@ def build_section_nodes() -> tuple[list[SectionNode], dict[str, Any]]:
     for row in documents:
         source_id = row["source_id"]
         metadata = registry.get(source_id, {})
-        path = Path(row["text_path"])
+        path = resolve_repo_path(row["text_path"])
         text = path.read_text(encoding="utf-8", errors="replace")
         topics = source_topics.get(source_id) or tuple(
             topic.strip() for topic in metadata.get("topics", "").split(";") if topic.strip()
@@ -124,4 +136,3 @@ def sources_for_ui() -> list[dict[str, str]]:
             }
         )
     return result
-

@@ -11,6 +11,9 @@ TOPICS_CSV = DATA_PROCESSED / "topics.csv"
 TOPIC_SOURCES_CSV = DATA_PROCESSED / "topic-sources.csv"
 GOLD_CSV = DATA_PROCESSED / "retrieval_eval_gold.csv"
 INDEX_DIR = DATA_PROCESSED / "retrieval-indexes" / "statutes-bm25-v1"
-INDEX_DB = INDEX_DIR / "statutes.sqlite"
+INDEX_POINTER = INDEX_DIR / "active.json"
 EVAL_DIR = REPO_ROOT / "evaluation" / "runs" / "statutes-bm25-v1"
 
+
+def fingerprinted_index_db(fingerprint: str, generation: str) -> Path:
+    return INDEX_DIR / f"statutes-{fingerprint[:16]}-{generation}.sqlite"

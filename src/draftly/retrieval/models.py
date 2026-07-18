@@ -43,10 +43,14 @@ class StatuteHit:
     public_source_url: str
     extraction_confidence: str
     text: str = ""
+    matched_queries: tuple[str, ...] = ()
+    citation_note: str = ""
+    target_section: str = ""
 
     def to_dict(self, include_text: bool = True) -> dict[str, Any]:
         data = asdict(self)
         data["topics"] = list(self.topics)
+        data["matched_queries"] = list(self.matched_queries)
         if not include_text:
             data.pop("text", None)
         return data
@@ -56,9 +60,16 @@ class StatuteHit:
 class AnswerClaim:
     text: str
     citations: tuple[str, ...]
+    part: str = ""
+    verified: bool = False
 
     def to_dict(self) -> dict[str, Any]:
-        return {"text": self.text, "citations": list(self.citations)}
+        return {
+            "part": self.part,
+            "text": self.text,
+            "citations": list(self.citations),
+            "verified": self.verified,
+        }
 
 
 @dataclass(frozen=True)
@@ -72,22 +83,37 @@ class StatuteAnswer:
     model: str | None = None
     raw_response: str | None = None
     invalid_reason: str | None = None
+    outcome: str = "abstained"
+    missing_information: tuple[str, ...] = ()
+    retrieval_queries: tuple[str, ...] = ()
+    corpus_fingerprint: str | None = None
+    trace_id: str | None = None
+    verifier_model: str | None = None
 
     @property
     def is_generated(self) -> bool:
-        return bool(self.claims) and not self.fallback_reason and not self.invalid_reason
+        return bool(self.claims) and self.outcome in {"answered", "partial"} and not self.fallback_reason
 
-    def to_dict(self) -> dict[str, Any]:
-        return {
+    def to_dict(self, include_raw: bool = False) -> dict[str, Any]:
+        data = {
             "question": self.question,
+            "outcome": self.outcome,
             "abstained": self.abstained,
             "fallback_reason": self.fallback_reason,
             "invalid_reason": self.invalid_reason,
             "model": self.model,
             "claims": [claim.to_dict() for claim in self.claims],
             "limitations": list(self.limitations),
+            "missing_information": list(self.missing_information),
+            "retrieval_queries": list(self.retrieval_queries),
+            "corpus_fingerprint": self.corpus_fingerprint,
+            "trace_id": self.trace_id,
+            "verifier_model": self.verifier_model,
             "hits": [hit.to_dict(include_text=False) for hit in self.hits],
         }
+        if include_raw:
+            data["raw_response"] = self.raw_response
+        return data
 
 
 @dataclass(frozen=True)
@@ -106,4 +132,3 @@ class SectionNode:
     extraction_confidence: str
     source_sha256: str
     metadata: dict[str, Any] = field(default_factory=dict)
-

@@ -1,23 +1,40 @@
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
+from difflib import SequenceMatcher
 
 from .models import SectionNode
 
 
-MAX_SECTION_NUMBER = 300
-SECTION_START_RE = re.compile(r"^\s*(?P<num>\d{1,3}[A-Z]?)\.\s+(?P<body>.+?)\s*$")
+MAX_SECTION_NUMBER = 1500
+SECTION_START_RE = re.compile(r"^\s*(?P<num>\d{1,4}[A-Z]?)\.\s+(?P<body>.+?)\s*$")
 HEADING_THEN_SECTION_RE = re.compile(
-    r"^\s*(?P<head>[A-Z][A-Za-z0-9\s'\"().,/&;\[\]-]{2,140}?)\s+(?P<num>\d{1,3}[A-Z]?)\.\s*(?P<body>.*?)\s*$"
+    r"^\s*(?P<head>[A-Z][A-Za-z0-9\s'\"().,/&;\[\]-]{2,140}?)\s+(?P<num>\d{1,4}[A-Z]?)\.\s*(?P<body>.*?)\s*$"
 )
-SECTION_ONLY_RE = re.compile(r"^\s*(?P<num>\d{1,3}[A-Z]?)\.\s*$")
+SECTION_ONLY_RE = re.compile(r"^\s*(?P<num>\d{1,4}[A-Z]?)\.\s*$")
 SUBSECTION_PREFIX_RE = re.compile(
     r"^\(\s*[a-zivxlcdm]+\s*\)\s+[a-z]"
     r"|^\(\s*\d+\s*\)\s*[,;]"
     r"|^[a-z]\)"
 )
 NOISE_RE = re.compile(r"^(<!--.*-->|#+\s*.+|\d+|[IVXLCDM]+/\d+)$", re.IGNORECASE)
+CAP_HEADER_RE = re.compile(
+    r"(?im)^[^\n]{0,180}?(?:\bCap\.\s*(?P<left>\d{1,3})\s*\]|\[\s*Cap\.\s*(?P<right>\d{1,3})\b)[^\n]*$"
+)
+CHAPTER_HEADER_RE = re.compile(r"(?im)^\s*CHAPTER\s+(?P<number>\d{1,3})\b[^\n]*$")
+FALSE_BOUNDARY_RE = re.compile(
+    r"^\s*No\.\s*\d{1,3}[A-Z]?\."
+    r"|^\s*\d{1,3}[A-Z]?\.\s*(?:"
+    r"DR\.\s+[A-Z]"
+    r"|SRI\s+LANKA\s+LAW\s+REPORTS\b"
+    r"|NEW\s+LAW\s+REPORTS\b"
+    r"|(?:NLR|SLR|LKR)\b"
+    r"|\[\d{4}\]"
+    r"|VOL(?:UME)?\b"
+    r")",
+    re.IGNORECASE,
+)
 
 
 @dataclass(frozen=True)
@@ -75,7 +92,8 @@ def parse_sections(
         )
 
     if len(nodes) >= 2:
-        return apply_aliases(nodes, source_id=source_id, kind=kind, title=title)
+        aliased = apply_aliases(nodes, source_id=source_id, kind=kind, title=title)
+        return apply_source_quality_flags(aliased, source_id=source_id)
 
     fallback_text = normalize_text(focused)
     return [
@@ -97,13 +115,45 @@ def parse_sections(
     ]
 
 
+def apply_source_quality_flags(nodes: list[SectionNode], *, source_id: str) -> list[SectionNode]:
+    """Quarantine known parser defects instead of exposing them as clean evidence."""
+
+    if source_id != "SRC004":
+        return nodes
+
+    unreliable = {f"SRC004:s{number}" for number in range(23, 28)}
+    warning = (
+        "The source PDF uses interleaved columns in this range. The extracted text is not reliable "
+        "enough for inheritance-share calculations and requires a verified transcription."
+    )
+    return [
+        replace(
+            node,
+            extraction_confidence="interleaved_columns",
+            metadata={**node.metadata, "quality_warning": warning},
+        )
+        if node.section_id in unreliable
+        else node
+        for node in nodes
+    ]
+
+
 def apply_aliases(nodes: list[SectionNode], *, source_id: str, kind: str, title: str) -> list[SectionNode]:
     by_id = {node.section_id: node for node in nodes}
     if kind == "amendment":
         for node in nodes:
             for target in amendment_target_sections(node.text):
                 alias_id = f"{source_id}:s{target}"
-                by_id[alias_id] = clone_node(node, section_id=alias_id, heading=f"Amendment of section {target}")
+                by_id[alias_id] = clone_node(
+                    node,
+                    section_id=alias_id,
+                    heading=f"Amendment of section {target}",
+                    metadata={
+                        **node.metadata,
+                        "alias_kind": "principal_section_target",
+                        "target_section": target,
+                    },
+                )
 
     for node in nodes:
         for target, heading, text in parenthetical_rule_aliases(node.text, title):
@@ -156,7 +206,14 @@ def alias_should_replace(existing_heading: str, new_heading: str) -> bool:
     return False
 
 
-def clone_node(node: SectionNode, *, section_id: str, heading: str, text: str | None = None) -> SectionNode:
+def clone_node(
+    node: SectionNode,
+    *,
+    section_id: str,
+    heading: str,
+    text: str | None = None,
+    metadata: dict[str, object] | None = None,
+) -> SectionNode:
     return SectionNode(
         section_id=section_id,
         source_id=node.source_id,
@@ -171,7 +228,7 @@ def clone_node(node: SectionNode, *, section_id: str, heading: str, text: str | 
         public_source_url=node.public_source_url,
         extraction_confidence="parsed_alias",
         source_sha256=node.source_sha256,
-        metadata=node.metadata,
+        metadata=metadata if metadata is not None else node.metadata,
     )
 
 
@@ -179,20 +236,46 @@ def focus_document_text(text: str, title: str) -> str:
     if len(text) < 400_000:
         return text
 
+    headers = list(CAP_HEADER_RE.finditer(text))
+    distinct_caps = {header.group("left") or header.group("right") for header in headers}
+    if len(distinct_caps) < 3:
+        return text
+
     key = re.sub(r"\b(ordinance|act|law|code|statute)\b", "", title, flags=re.IGNORECASE).strip()
     key = re.sub(r"\s+", " ", key)
-    if len(key) < 5:
-        return text[:200_000]
+    if len(key) < 3:
+        return text
 
-    matches = [match.start() for match in re.finditer(re.escape(key), text, flags=re.IGNORECASE)]
-    for start in matches:
-        window = text[start : start + 1200]
-        if re.search(r"\b(AN ORDINANCE|AN ACT|A LAW|CHAPTER)\b", window, re.IGNORECASE):
-            return text[max(0, start - 1200) : start + 160_000]
-    if matches:
-        start = matches[-1]
-        return text[max(0, start - 1200) : start + 160_000]
-    return text[:200_000]
+    key_compact = "".join(re.findall(r"[a-z0-9]+", key.lower()))
+    scored_headers = []
+    for header in headers:
+        header_text = re.sub(r"\[?\s*Cap\.\s*\d{1,3}\s*\]?", "", header.group(0), flags=re.IGNORECASE)
+        header_compact = "".join(re.findall(r"[a-z0-9]+", header_text.lower()))
+        if not header_compact:
+            continue
+        similarity = SequenceMatcher(None, key_compact, header_compact).ratio()
+        if key_compact in header_compact:
+            similarity = max(similarity, len(key_compact) / len(header_compact))
+        scored_headers.append((similarity, -abs(len(header_compact) - len(key_compact)), -header.start(), header))
+    if not scored_headers:
+        return text
+    score, _, _, target = max(scored_headers, key=lambda item: item[:3])
+    if score < 0.72:
+        return text
+
+    target_cap = target.group("left") or target.group("right")
+    end_candidates = [
+        header.start()
+        for header in headers
+        if header.start() > target.start() and (header.group("left") or header.group("right")) != target_cap
+    ]
+    end_candidates.extend(
+        header.start()
+        for header in CHAPTER_HEADER_RE.finditer(text, target.end())
+        if header.group("number") != target_cap
+    )
+    end = min(end_candidates, default=len(text))
+    return text[target.start() : end]
 
 
 def find_boundaries(lines: list[str]) -> list[Boundary]:
@@ -206,7 +289,7 @@ def find_boundaries(lines: list[str]) -> list[Boundary]:
 
 def detect_boundary(line: str, lines: list[str], index: int) -> Boundary | None:
     stripped = line.strip()
-    if not stripped or is_noise(stripped):
+    if not stripped or is_noise(stripped) or FALSE_BOUNDARY_RE.match(stripped):
         return None
 
     match = HEADING_THEN_SECTION_RE.match(stripped)
@@ -232,7 +315,7 @@ def detect_boundary(line: str, lines: list[str], index: int) -> Boundary | None:
 
 
 def valid_section_number(value: str) -> bool:
-    number_match = re.match(r"(\d{1,3})", value)
+    number_match = re.match(r"(\d{1,4})", value)
     return bool(number_match and 0 < int(number_match.group(1)) <= MAX_SECTION_NUMBER)
 
 

@@ -75,7 +75,23 @@ class StreamlitAppSmokeTests(unittest.TestCase):
         self.assertFalse(app.exception)
         self.assertIn("Draftly Statute Q&A", app.title[0].value)
 
+    def test_streamlit_app_handles_known_corpus_gap(self) -> None:
+        try:
+            from streamlit.testing.v1 import AppTest
+        except Exception as exc:  # pragma: no cover
+            self.skipTest(f"Streamlit AppTest unavailable: {exc}")
+
+        app = AppTest.from_file("apps/statute-retrieval/app.py")
+        app.run(timeout=60)
+        app.text_area[0].input("Which authority approves development in the coastal zone?")
+        app.button[0].click().run(timeout=60)
+
+        self.assertFalse(app.exception)
+        rendered_warnings = " ".join(item.value for item in app.warning)
+        rendered_errors = " ".join(item.value for item in app.error)
+        self.assertIn("reliable cited answer", rendered_warnings)
+        self.assertIn("coastal-zone", rendered_errors)
+
 
 if __name__ == "__main__":
     unittest.main()
-

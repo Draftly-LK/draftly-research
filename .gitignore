@@ -8,6 +8,9 @@ tmp/
 __pycache__/
 *.pyc
 
+# Environment-specific agent skill links installed by `streamlit skills`
+.claude/skills/developing-with-streamlit/
+
 # Generated retrieval artifacts (rebuildable from the PDFs)
 data/legal-sources/derived/
 data/processed/

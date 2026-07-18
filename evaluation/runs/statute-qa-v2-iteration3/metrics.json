@@ -1,0 +1,38 @@
+{
+  "answer_calls": 9,
+  "answer_quality": {
+    "claims": 18,
+    "fallback_reasons": {
+      "invalid_generated_answer": 1
+    },
+    "outcomes": {
+      "evidence_only": 1,
+      "insufficient_authority": 2,
+      "partial": 6
+    },
+    "part_coverage": 0.5294117647058824,
+    "parts_requested": 34,
+    "parts_with_verified_claims": 18,
+    "scope": "Citation and execution checks only; this is not a legal-correctness score.",
+    "status": "machine_checks_only",
+    "verified_claims": 18
+  },
+  "gold_label_questions": 0,
+  "legal_correctness": {
+    "labelled_answers": 0,
+    "reason": "No explicit gold legal_correct labels were supplied; no legal correctness claim is made.",
+    "status": "not_evaluated"
+  },
+  "mode": "full_answer",
+  "questions": 9,
+  "questions_succeeded": 9,
+  "questions_with_errors": 0,
+  "retrieval_calls": 34,
+  "retrieval_relevance": {
+    "all_expected_retrieved_rate": null,
+    "mean_recall": null,
+    "scored_questions": 0,
+    "status": "not_scored"
+  },
+  "schema_version": 1
+}
