@@ -1,0 +1,201 @@
+{
+  "code_commit": "b2bd1c6",
+  "go_criteria": {
+    "strict_quote_grounding": 1.0,
+    "lawyer_legal_precision": 0.9,
+    "precision_ci95_lower_bound": 0.8,
+    "statute_link_accuracy": 0.9,
+    "critical_fabricated_or_misattributed_rules": 0
+  },
+  "arms": {
+    "A": {
+      "spec": {
+        "model": "meta/llama-3.1-8b-instruct",
+        "window": "naive_head_tail"
+      },
+      "n": 30,
+      "accept_rate": 0.833,
+      "verbatim_rate": 1.0,
+      "independent_grounding_rate": 1.0,
+      "cue_in_window_rate": 0.867,
+      "at_risk_cue_recovered": "10/12",
+      "abstained": 0,
+      "rejected": 5,
+      "llm_errors": 0
+    },
+    "B": {
+      "spec": {
+        "model": "meta/llama-3.1-8b-instruct",
+        "window": "cue_aware"
+      },
+      "n": 30,
+      "accept_rate": 0.733,
+      "verbatim_rate": 1.0,
+      "independent_grounding_rate": 1.0,
+      "cue_in_window_rate": 0.933,
+      "at_risk_cue_recovered": "12/12",
+      "abstained": 1,
+      "rejected": 7,
+      "llm_errors": 0
+    },
+    "C": {
+      "spec": {
+        "model": "meta/llama-3.1-8b-instruct",
+        "window": "full_text"
+      },
+      "n": 30,
+      "accept_rate": 0.633,
+      "verbatim_rate": 1.0,
+      "independent_grounding_rate": 1.0,
+      "cue_in_window_rate": 0.933,
+      "at_risk_cue_recovered": "12/12",
+      "abstained": 0,
+      "rejected": 11,
+      "llm_errors": 0
+    },
+    "D": {
+      "spec": {
+        "model": "meta/llama-3.3-70b-instruct",
+        "window": "full_text"
+      },
+      "n": 22,
+      "accept_rate": 0.545,
+      "verbatim_rate": 1.0,
+      "independent_grounding_rate": 1.0,
+      "cue_in_window_rate": 1.0,
+      "at_risk_cue_recovered": "12/12",
+      "abstained": 0,
+      "rejected": 10,
+      "llm_errors": 0
+    }
+  },
+  "best_method": {
+    "arm": "A",
+    "model": "meta/llama-3.1-8b-instruct",
+    "window": "naive_head_tail",
+    "ranking": [
+      {
+        "arm": "A",
+        "grounding_ok": true,
+        "accept_rate": 0.833
+      },
+      {
+        "arm": "B",
+        "grounding_ok": true,
+        "accept_rate": 0.733
+      },
+      {
+        "arm": "C",
+        "grounding_ok": true,
+        "accept_rate": 0.633
+      }
+    ]
+  },
+  "holdout": {
+    "n": 100,
+    "accept_rate": 0.74,
+    "independent_grounding_rate": 1.0,
+    "judge_proxy": {
+      "n_accepted": 74,
+      "n_judged": 13,
+      "statement_correct": {
+        "rate": 1.0,
+        "ci95_lower": 0.772,
+        "k": 13,
+        "n": 13
+      },
+      "quote_supports": {
+        "rate": 1.0,
+        "ci95_lower": 0.772,
+        "k": 13,
+        "n": 13
+      },
+      "is_ratio": {
+        "rate": 1.0,
+        "ci95_lower": 0.772,
+        "k": 13,
+        "n": 13
+      },
+      "qualifications_ok": {
+        "rate": 1.0,
+        "ci95_lower": 0.772,
+        "k": 13,
+        "n": 13
+      },
+      "statute_correct": {
+        "rate": 0.923,
+        "ci95_lower": 0.667,
+        "k": 12,
+        "n": 13
+      },
+      "usable": {
+        "rate": 1.0,
+        "ci95_lower": 0.772,
+        "k": 13,
+        "n": 13
+      }
+    },
+    "judge_note": "LLM-as-judge is a PROVISIONAL proxy only, and (due to 70B endpoint latency) is run on a disclosed seeded subset of at most max_rules accepted holdout rules. The human lawyer labels in lawyer-labels.csv are authoritative for the GO decision and cover ALL accepted rules.",
+    "judge_claude": {
+      "n": 74,
+      "model": "claude-opus-4-8 (subagent)",
+      "authoritative": false,
+      "statement_correct": {
+        "rate": 0.932,
+        "ci95_lower": 0.851,
+        "k": 69,
+        "n": 74
+      },
+      "quote_supports": {
+        "rate": 0.797,
+        "ci95_lower": 0.692,
+        "k": 59,
+        "n": 74
+      },
+      "is_ratio": {
+        "rate": 0.878,
+        "ci95_lower": 0.785,
+        "k": 65,
+        "n": 74
+      },
+      "qualifications_ok": {
+        "rate": 0.892,
+        "ci95_lower": 0.801,
+        "k": 66,
+        "n": 74
+      },
+      "statute_correct": {
+        "rate": 0.811,
+        "ci95_lower": 0.707,
+        "k": 60,
+        "n": 74
+      },
+      "usable": {
+        "rate": 0.581,
+        "ci95_lower": 0.467,
+        "k": 43,
+        "n": 74
+      }
+    },
+    "provisional_judge_source": "judge_claude"
+  },
+  "credits": {
+    "total_logical_calls": 225,
+    "logical_calls_by_model": {
+      "meta/llama-3.1-8b-instruct": 190,
+      "meta/llama-3.3-70b-instruct": 35
+    },
+    "note": "Counted from raw-responses.jsonl. Billable HTTP attempts (llm_client.HTTP_ATTEMPTS) were logged live per run and equal logical calls except when chat_json retried/fell back (rare here); they are not persisted per-row."
+  },
+  "provisional_verdict": {
+    "checks": {
+      "strict_quote_grounding": true,
+      "judge_usable>=90%": false,
+      "usable_ci95_lower>=80%": false,
+      "statute>=90%": false
+    },
+    "all_pass": false,
+    "authoritative": false,
+    "note": "PROVISIONAL \u2014 based on the LLM-judge proxy. The GO decision requires the human lawyer labels in lawyer-labels.csv."
+  }
+}

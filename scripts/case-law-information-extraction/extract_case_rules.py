@@ -35,17 +35,29 @@ from llm_client import chat_json, usage_summary
 SYS_EXTRACT = """You are extracting the legal RULE (ratio decidendi) from a Sri Lankan \
 conveyancing judgment, for a citation database. Rules:
 - Return ONLY a rule directly supported by a verbatim span you copy from the text into \
-"supporting_quote". Copy the quote EXACTLY as it appears.
-- "statement" is your one-sentence neutral paraphrase of that quote's rule.
+"supporting_quote". Copy the quote EXACTLY as it appears. The quote MUST be THIS court's own \
+statement of the rule — NOT a quotation of another case, NOT counsel's/party's submission, NOT a \
+reproduced lower-court passage. If the only support is such a borrowed passage, return {"rule": null}.
+- "statement" is your one-sentence neutral paraphrase of that quote's rule. Do not drop material \
+qualifications, conditions, or exceptions the court attached.
+- Only capture the RATIO (what the court actually decided). If the passage is obiter, a "semble", or \
+a hypothetical aside, return {"rule": null}.
 - If the judgment establishes no general conveyancing rule (purely fact-specific, procedural, \
 or you are unsure), return {"rule": null}. Abstaining is correct and expected for many cases.
-- "statute_section": ONLY if the rule construes a specific statute, choose from the CANDIDATE \
-STATUTES list by its source_id (e.g. "SRC001-s2"); else null. Never invent one.
+- STATUTE HANDLING (be strict — a WRONG statute tag is worse than none):
+  * "statute_citation_verbatim": if the court grounds this rule in a specific statute/section, copy \
+the statute name + section EXACTLY as written in the judgment (e.g. "section 2 of the Prevention of \
+Frauds Ordinance"); it must appear verbatim in the text. Otherwise null.
+  * "statute_section": resolve to a CANDIDATE source_id ONLY when that EXACT statute is in the \
+CANDIDATE STATUTES list (e.g. "SRC001-s2"). If the rule rests on common law / Roman-Dutch law / \
+equity, or on a statute NOT in the candidate list, set statute_section to null (still fill \
+statute_citation_verbatim). NEVER guess a source_id and NEVER guess a section number.
 - Do not use knowledge outside the provided text. Do not cite other cases.
 Output JSON only, no prose."""
 
 USER_EXTRACT = """CITATION: {citation}   COURT: {court}   YEAR: {year}
-CANDIDATE STATUTES (choose statute_section only from these source_ids):
+CANDIDATE STATUTES (resolve statute_section only to these source_ids; if the statute is not here, \
+leave statute_section null and record statute_citation_verbatim instead):
 {catalogue}
 STATUTES THIS CASE ALREADY CITES (strong prior):
 {linked}
@@ -54,9 +66,10 @@ JUDGMENT EXTRACT:
 \"\"\"{text}\"\"\"
 
 Return JSON exactly:
-{{"rule": {{"statement": "...", "supporting_quote": "<verbatim span from the extract>", \
-"statute_section": "SRCxxx-sN or null", "scope": "ratio|obiter|fact-specific", \
-"confidence": "high|medium|low"}}}}
+{{"rule": {{"statement": "...", "supporting_quote": "<verbatim span, THIS court's own words>", \
+"statute_citation_verbatim": "<statute+section copied verbatim from the text> or null", \
+"statute_section": "SRCxxx-sN (only if in candidate list) or null", \
+"scope": "ratio|obiter|fact-specific", "confidence": "high|medium|low"}}}}
 OR
 {{"rule": null}}"""
 
@@ -226,7 +239,8 @@ def process(case: dict, links_map, args, budget) -> dict:
 
 
 FIELDS = ["rule_id", "case_id", "citation", "court", "year", "statement",
-          "supporting_quote", "statute_section", "section_status", "match_type",
+          "supporting_quote", "statute_section", "section_status",
+          "statute_citation_verbatim", "statute_citation_grounded", "match_type",
           "scope", "confidence", "method", "status"]
 
 

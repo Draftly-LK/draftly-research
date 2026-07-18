@@ -19,6 +19,9 @@ _client = OpenAI(base_url=config.BASE_URL, api_key=config.API_KEY)
 
 # cumulative usage across a run, keyed by model id
 USAGE: dict[str, dict[str, int]] = {}
+# every HTTP request actually issued (incl. retries + json->plain fallback) — a
+# closer proxy for BILLABLE requests than the count of successful logical calls.
+HTTP_ATTEMPTS: dict[str, int] = {"count": 0}
 
 
 def _record(model: str, usage) -> None:
@@ -71,9 +74,11 @@ def chat_json(system: str, user: str, model: str, *, temperature: float = 0.0,
             kwargs = dict(model=model, messages=msgs, temperature=temperature,
                           max_tokens=max_tokens)
             try:
+                HTTP_ATTEMPTS["count"] += 1
                 r = _client.chat.completions.create(
                     response_format={"type": "json_object"}, **kwargs)
             except Exception:
+                HTTP_ATTEMPTS["count"] += 1
                 r = _client.chat.completions.create(**kwargs)  # endpoint without json mode
             _record(model, getattr(r, "usage", None))
             return _extract_json(r.choices[0].message.content or "")
@@ -91,4 +96,5 @@ def usage_summary() -> dict:
     total_comp = sum(u["completion"] for u in USAGE.values())
     total_calls = sum(u["calls"] for u in USAGE.values())
     return {"by_model": USAGE, "total_prompt_tokens": total_prompt,
-            "total_completion_tokens": total_comp, "total_calls": total_calls}
+            "total_completion_tokens": total_comp, "total_calls": total_calls,
+            "http_attempts": HTTP_ATTEMPTS["count"]}

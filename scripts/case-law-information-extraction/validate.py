@@ -72,11 +72,19 @@ def validate_rule(rule: dict, judgment_text: str, allow_fuzzy: bool = False) -> 
         return False, {}, "quote-not-found"
     sec_ref, sec_status = check_section(rule.get("statute_section"))
     confidence = "high" if match == "verbatim" else "medium"
+    # verbatim statute citation as written in the judgment (for out-of-catalogue statutes
+    # we haven't downloaded yet). Kept even when statute_section can't resolve.
+    scv_raw = rule.get("statute_citation_verbatim")
+    scv = (re.sub(r"\s+", " ", str(scv_raw)).strip()
+           if scv_raw and str(scv_raw).strip().lower() not in ("null", "none", "") else "")
+    scv_grounded = bool(scv) and quote_match(scv, judgment_text, min_len=10) is not None
     cleaned = {
         "statement": re.sub(r"\s+", " ", rule["statement"]).strip(),
         "supporting_quote": re.sub(r"\s+", " ", quote).strip(),
         "statute_section": sec_ref or "",
         "section_status": sec_status,
+        "statute_citation_verbatim": scv,
+        "statute_citation_grounded": scv_grounded,
         "match_type": match,
         "scope": rule.get("scope", "") if rule.get("scope") in ("ratio", "obiter", "fact-specific") else "",
         "confidence": confidence,

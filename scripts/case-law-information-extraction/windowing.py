@@ -13,10 +13,10 @@ import re
 import config
 
 _RULING_CUE = re.compile(
-    r"(I\s+(?:hold|am of (?:the )?view|am inclined|therefore hold)|"
-    r"it is (?:hereby )?(?:held|ordered|declared)|"
+    r"((?:we|I)\s+(?:hold|am of (?:the )?view|are of (?:the )?view|am inclined|therefore hold)|"
+    r"\bheld\s+that|it (?:is|was) (?:hereby )?(?:held|ordered|declared)|"
     r"the appeal is (?:allowed|dismissed)|"
-    r"I (?:set aside|affirm|allow|dismiss)|"
+    r"(?:we|I) (?:set aside|affirm|allow|dismiss)|"
     r"in (?:my|our) (?:view|opinion|judgment)|"
     r"the (?:learned )?(?:trial |district )?judge (?:erred|was (?:right|wrong)))",
     re.I)
