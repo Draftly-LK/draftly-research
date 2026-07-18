@@ -48,6 +48,17 @@ reasoning points.
    - temporal filtering
 6. Keep unverified labels out of production answers until reviewed.
 
+## BM25 Baseline Notebook
+
+Run `notebooks/01_bm25_retrieval_baseline.ipynb` from top to bottom for the
+first lexical retrieval baseline. It builds a persistent SQLite FTS5 BM25 index
+from `data/processed/`, executes the available gold questions, and writes
+predictions, per-question scores, aggregate metrics, and the run configuration
+under `evaluation/runs/bm25-v1/`.
+
+Set `DRAFTLY_RETRIEVAL_SMOKE=1` when executing the notebook to verify the
+pipeline against a small corpus sample without replacing the full-run outputs.
+
 ## Retrieval Gold Schema
 
 Each gold row should represent one answerable legal retrieval task.

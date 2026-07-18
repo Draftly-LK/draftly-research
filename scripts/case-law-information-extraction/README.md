@@ -56,11 +56,37 @@ python scripts/case-law-information-extraction/extract_case_rules.py \
 # Full run (all conveyancing cases), escalation on, generous credit cap
 python scripts/case-law-information-extraction/extract_case_rules.py \
     --track all --escalate --max-llm-calls 6000
+
+# Rebuild the CSVs from cache only (0 credits) — re-derives match_type/confidence
+python scripts/case-law-information-extraction/extract_case_rules.py --rebuild-only
+
+# Spend a fixed credit budget re-running only the hard tail on the strong model,
+# with full judgment text + fuzzy recovery (see "High-confidence recovery" below)
+python scripts/case-law-information-extraction/extract_case_rules.py \
+    --redo-status "llm-error,reject" --model-cheap meta/llama-3.3-70b-instruct \
+    --allow-fuzzy --full-text --track B --max-llm-calls 50
 ```
 
 Flags: `--track {A,B,all}`, `--source {commonlii,official-courts,all}`,
 `--limit N`, `--escalate`, `--normalize` (LLM-clean Track A headnotes),
-`--model-cheap/-strong`, `--max-llm-calls N` (0 = unlimited), `--force`.
+`--model-cheap/-strong`, `--max-llm-calls N` (0 = unlimited), `--force`,
+`--rebuild-only`, `--allow-fuzzy`, `--full-text`, `--redo-status "s1,s2"`.
+
+## High-confidence recovery (`--redo-status`)
+
+Confidence is **grounded, not model-reported**: a rule is `high` only if its
+`supporting_quote` is a *verbatim* substring of the judgment (or came from a
+reporter `Held:` headnote), `medium` if only a near-verbatim (fuzzy, ≥85%
+contiguous) span matches, else it is rejected. This is why `rules.csv` and the
+`rules_high_confidence.csv` subset can be trusted from a cheap model.
+
+`--redo-status` re-runs *only* the cached cases whose status matches (e.g. the
+`reject:quote-not-found` and `llm-error` tail), on the model you pass as
+`--model-cheap` (use the 70B here). Because NVIDIA free-tier credits are billed
+**per request, not per token**, `--full-text` sends the whole judgment for the
+same one credit, which materially improves recovery on the hard cases. The run
+is hard-capped by `--max-llm-calls` and resumes cleanly if interrupted (already
+recovered cases flip to `ok` and no longer match the redo filter).
 
 **Resumable:** re-running skips cached cases; CSVs are always rebuilt from the
 full cache. **Idempotent.** **Credit-guarded** via `--max-llm-calls`.

@@ -41,7 +41,11 @@ RUN_LOG = OUT / "run.log"
 CHARS_PER_TOKEN = 4          # rough
 WINDOW_HEAD_CHARS = 2400     # ~600 tokens of facts/issue
 WINDOW_TAIL_CHARS = 7200     # ~1800 tokens of reasoning/order
-WINDOW_MAX_CHARS = 12000     # hard cap on the extract sent to the model
+WINDOW_MAX_CHARS = 12000     # hard cap on the windowed extract sent to the model
+# Full-text mode (--full-text): free-tier credits are per-request, not per-token,
+# so on the hard tail we can send the whole judgment for the same 1 credit and let
+# the model find the ruling itself. Capped well under the 70B's 128K context.
+FULL_TEXT_MAX_CHARS = 110000  # ~30K tokens
 DELAY_S = 0.4                # politeness between API calls
 MAX_TOKENS_OUT = 700
 
