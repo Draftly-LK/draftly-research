@@ -4,7 +4,9 @@ Rewritten 19 July 2026 after the mentor sessions (see
 `discussions/meeting-notes/notes-jul-12.md` and `notes-jul-19.md`). The earlier
 three-workstream roadmap (OCR / corpus / templates) fed this plan; the corpus
 and retrieval work carries straight over. What changed: the product is now a
-single, sharply scoped app.
+single, sharply scoped app, and the interface follows the workspace patterns
+of mature legal-AI products (Harvey research in
+`docs/product-research/harvey/`).
 
 ## The product in one line
 
@@ -23,61 +25,66 @@ country migrates to it over the next 10–15 years. One app that satisfies
 window; the other three regimes (RDO folios, Apartment Ownership, Special
 Area) come later as modules on the same skeleton.
 
-## What the site does (page by page)
+## What the site does
 
-1. **Landing.** The four registration systems as the top-level choice — RDO,
-   RTA, Apartment Ownership, Special Area — with only RTA active in v0 (the
-   rest visibly "coming soon"; this matches how the mentor framed the market).
-   Language selector (Sinhala / English) top-right. One short AI-generated
-   looping hero video.
-2. **RTA workspace — function picker.** The notary's functions as cards:
-   *Examination of Title*, *Drafting*, *Execution*, *Attestation* (+ greyed
-   *Registration*). Clicking one opens its guided flow.
-3. **Guided function flow (the core screen).** Left: the ordered steps for the
-   function (e.g. examination of title: land search → current owner → local-authority documents → party
-   identification → recommend title). Center: the active step's instructions,
-   applicable rules (statute section + gazette form, cited), and the inputs the
-   step needs. Right: a grounded Q&A panel — ask anything mid-step; answers
-   cite section IDs and case-law rules. Every step can be read or **listened
-   to** (voice out), and deed particulars can be **dictated** (voice in) —
-   the mentor's "client sits opposite, lawyer turns the screen" scenario.
-4. **Document intake, not checklists.** The user uploads what they have
-   (deeds, title certificate, plans, extracts). The system tells them **what
-   is missing** ("these are missing, send them") and proceeds when supplied —
-   the mentor explicitly rejected a manual tick-box checklist.
-5. **Deed generation.** For drafting: collect the particulars (typed or
-   dictated), apply the prescribed gazette form for the transaction type
-   (transfer, gift, lease, mortgage), enforce the stamp-duty-valuation-first
-   ordering, and emit the draft deed + the attestation clause (including the
-   NIC-verification statement the law now requires). Export DOCX/PDF. A
-   draft-checker flags errors in a user-supplied draft.
-6. **FAQ + "frequently wrong questions".** Per function, a browsable bank of
-   practice questions (target ~100 per topic) with grounded answers — the
-   mentor's exam-paper-derived question bank plus case-law-derived cautionary
-   notes ("beware of these", including obiter warnings).
-7. **Practice-management extras (the retention hook).** Monthly-list
-   auto-generation from the deeds the app has seen, with a reminder before the
-   15th; annual licence-renewal reminder (March, High Court); jurisdiction
-   (bala pradeshaya) warnings when the execution location looks wrong.
-8. **Account/matter basics.** A matter = one property transaction: its
-   uploaded documents, extracted facts, step progress, generated drafts, and
-   an audit trail. The audit trail is the notary's due-diligence shield — the
-   record that every required step was followed.
+**The interface source of truth is
+`docs/product-research/harvey/draftly-interface-spec.md`** (a full
+screen-by-screen specification modeled on mature legal-AI workspaces — see the
+Harvey screenshots beside it). Direction: a **lawyer's operating workspace,
+not a chatbot** — matter-centric, workflow-first, evidence beside every
+output, verification as an explicit action, abstention as a designed state,
+bilingual by construction.
 
-### UI brief (paste into v0.dev or use as the design spec)
+The shell (persistent left sidebar: search, Home, Matters, Workflows, Legal
+sources, History) wraps these surfaces:
 
-> Professional legal-tech web app, desktop-first, for Sri Lankan notaries.
-> Clean serif/sans pairing, deep green + parchment palette, generous white
-> space. Screens: (1) landing with four registration-system cards (one active),
-> Sinhala/English toggle; (2) function picker with five cards; (3) a
-> three-panel guided workflow screen — step list with progress on the left,
-> step detail with cited rules and required inputs in the center, a chat-style
-> grounded Q&A panel with citation chips (e.g. "RTA s.38", "Gazette form TR-1")
-> on the right; microphone buttons on inputs, listen buttons on step text;
-> (4) a document-intake screen with upload dropzone and a "missing documents"
-> list; (5) a deed-preview screen with form-field sidebar and DOCX/PDF export.
-> Every AI answer shows its citations; unverifiable answers render as an
-> explicit "insufficient authority" state, never as prose without sources.
+1. **Home** — resume work in one click: recent matters with status and open
+   issues, upcoming obligations (monthly-list deadline, licence renewal). No
+   marketing hero, no generic prompt suggestions.
+2. **Create matter** — a short stepper: regime (RTA active; others labelled
+   future), transaction type (transfer/gift/lease/mortgage), privacy-safe
+   reference, optional documents. Under a minute.
+3. **Matter overview** — what is known, what is missing, what to do next:
+   function completion, document processing status, missing/conflicting
+   evidence, drafts and their review state, recent activity.
+4. **Document intake** — upload what exists; the system infers and lists
+   **missing documents** from the matter type (the mentor explicitly rejected
+   tick-box checklists). Three-pane review per document: pages / text layer /
+   extracted fields with confidence and pinpoint source.
+5. **Verified facts** — the lawyer-approved structured matter record, as a
+   review table with explicit states: *unreviewed → verified / corrected /
+   conflict / blocked*. Unverified facts can never silently enter a draft.
+6. **Guided RTA workflow** — the core screen, three panes: ordered steps with
+   blockers (left), the active step's plain-language objective + required
+   inputs + statutory anchors + automated checks + lawyer decision (center),
+   contextual grounded assistant scoped to the step (right, collapsible).
+   Listen controls on instructions, dictation on inputs. Blocked mandatory
+   steps require evidence or a recorded override that enters the audit trail.
+7. **Legal research** — matter-aware or standalone; scope chips (current step,
+   documents, statutes, gazettes, verified case rules, question bank);
+   per-part answers with pinpoint citation chips and an evidence pane;
+   explicit **insufficient-authority state**; binding vs persuasive vs
+   historical vs unverified-candidate authority always distinguished.
+8. **Checks and missing evidence** — findings grouped by class (missing
+   documents, identity conflicts, parcel/extent conflicts, chain-of-title
+   breaks, encumbrances, stamp-duty sequencing, execution/attestation,
+   jurisdiction), each with severity, evidence, authority, and
+   resolve/waive-with-reason actions.
+9. **Draft editor** — two panes: assistant + source facts left, paginated
+   editable draft right. Prescribed gazette forms as templates; every inserted
+   fact traceable to its source; version compare and restore; lawyer approval
+   required before DOCX/PDF export with an audit-safe version id.
+10. **Workflow library** — approved procedures (functions, draft templates,
+    question sets, worked examples) with version governance; no generic
+    AI-agent marketplace.
+11. **History vs audit trail** — history resumes work; the immutable matter
+    audit trail (uploads, fact changes, verifications, overrides, authorities
+    retrieved, approvals, exports) is the notary's due-diligence shield.
+
+Practice-management hooks (monthly-list auto-generation + before-the-15th
+reminder, licence renewal, jurisdiction warnings) surface on Home and in
+checks. Visual language, components, accessibility (WCAG 2.2 AA, Sinhala at
+200% zoom), and responsive rules are all specified in the interface spec.
 
 ## What the retrieval/answering engine must do
 
@@ -96,7 +103,9 @@ built (✓) or scoped:
   retrieval retry for unanswered parts.
 - ✓ **Case-law rule layer**: extracted, cleaned rules (headnote + LLM tracks,
   quality-judged; `rules_vetted.csv` pipeline) with verbatim quotes and case
-  citations — feeds the cautionary notes and validity Q&A.
+  citations — feeds the cautionary notes and validity Q&A. Authority tiers
+  (binding / persuasive / historical / unverified candidate) must surface in
+  the research UI.
 - **RTA deepening (the main v0 corpus work):** ingest the **three RTA
   gazettes** (prescribed forms and rules — one is 69 pages) as first-class
   sections; encode the prescribed forms as structured templates the deed
@@ -105,11 +114,16 @@ built (✓) or scoped:
 - **Step-aware retrieval:** each workflow step carries its statutory anchors
   and keywords, so the step context scopes retrieval (the Jul-12 "steps are
   the retrieval pattern" insight) — a step's Q&A defaults to its sections
-  before searching wide.
+  before searching wide. This powers the workflow screen's right-rail
+  assistant and its scope chips.
 - **Question-bank serving:** the mentor-curated question set (his answers,
   AI-augmented, mentor-verified) served verbatim when a user question matches,
   with the generative path as fallback — curated beats generated when
   available.
+- **Checks engine:** the finding classes on the checks screen (missing
+  documents, conflicts, chain breaks, sequencing, jurisdiction) are rule-based
+  evaluations over the verified-facts record — deterministic first, grounded
+  citations attached.
 - **Sinhala:** questions in Sinhala answered against the English corpus
   (translate-then-retrieve for v0), answers rendered in the UI language;
   voice in/out via the same STT (Chirp) and a TTS pass.
@@ -127,43 +141,54 @@ built (✓) or scoped:
   three gazettes, 20-topic Rules of Notaries, recorded Bim Saviya classes,
   SLR soft copies, question-set review weekly.
 - The processed corpus pipeline, citation graph (14,665 case→section links),
-  and the meeting-notes/context documentation.
+  the meeting-notes/context documentation, and the Harvey interface spec +
+  screenshot research.
 
 ## Build plan (order of attack)
 
+Sequenced by the interface spec's MVP tiers:
+
 1. **Contract first (this week).** Define the two schemas everything hangs on:
    the *step definition* (id, function, order, title, instruction, statutory
-   anchors, required inputs, outputs) and the *matter record* (documents,
-   extracted fields, step states, drafts). Content and engineering both build
+   anchors, required inputs, automated checks, outputs) and the *matter
+   record* (documents, extracted fields + verification states, step states,
+   findings, drafts, audit events). Content and engineering both build
    against these.
 2. **Content track (mentor loop, weekly).** Draft the examination-of-title
    question set → mentor answers → AI-augment → file as step definitions +
    Q&A bank. Then drafting, execution, attestation. Scan and ingest the
    gazettes the moment they arrive; encode the prescribed forms as templates.
 3. **Engine track.** Gazette ingestion; step-aware retrieval scoping; curated
-   question-bank serving; Sinhala translate-then-retrieve; finish the rule
-   vetting (judge fleet at 26/57 packs); wire the engine behind a FastAPI
-   endpoint the web app calls.
-4. **Web track.** Next.js app with the five screens above, calling the engine
-   API; document upload with missing-document inference (start rule-based:
-   required-set per transaction type); deed generation from gazette-form
-   templates + DOCX export; voice in/out; matter records + audit trail.
-5. **Evaluate and demo.** Input/output pairs from the mentor's real
+   question-bank serving; checks engine over verified facts; Sinhala
+   translate-then-retrieve; finish the rule vetting (judge fleet at 26/57
+   packs); wire the engine behind a FastAPI endpoint the web app calls.
+4. **Web track — P0 scope** (per the interface spec): auth + matter list;
+   create-RTA-matter stepper; document upload/processing with the three-pane
+   review; verified-facts table with verification states; guided
+   examination-of-title workflow (three-pane); step-aware grounded Q&A;
+   missing-document/conflict findings; one prescribed draft flow with
+   approval + DOCX/PDF export + audit trail; English/Sinhala switch on the
+   demo path.
+5. **P1 after the P0 demo:** drafting/execution/attestation workflows, voice
+   in/out, question bank + frequently-wrong-questions, template governance,
+   monthly-list and licence reminders, collaboration.
+6. **Evaluate and demo.** Input/output pairs from the mentor's real
    (anonymized) matters as the demo script: upload the bundle → missing-doc
-   prompt → guided steps → generated deed — "the system working correctly on
-   real matters," which is exactly the symposium demo.
+   prompt → verify facts → guided steps → generated deed — "the system
+   working correctly on real matters," which is exactly the symposium demo.
 
 Same three-way split as before, remapped: OCR/extraction work becomes document
-intake + deed generation; corpus/retrieval work becomes the engine track;
-templates work becomes gazette-form templates + exports. The junior law
-student (mentor's contact) owns case-law reading support.
+intake + fact verification; corpus/retrieval work becomes the engine track;
+templates work becomes gazette-form templates + the draft editor. The junior
+law student (mentor's contact) owns case-law reading support.
 
 ## Out of scope for v0 (deliberately)
 
 - Registration function (most complicated — mentor deferred it), RDO/folio
   OCR, Apartment Ownership and Special Area modules, litigation modules (the
   25-action programme), plaint drafting, government-integration plays, mobile
-  apps, payments/subscription plumbing. Name is a working title until the end.
+  apps, payments/subscription plumbing, external shared spaces, Word/DMS
+  integrations. Name is a working title until the end.
 
 ## Principle to hold
 

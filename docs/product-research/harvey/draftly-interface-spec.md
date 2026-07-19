@@ -7,9 +7,10 @@ included in this work.
 
 Draftly should use the calm, workspace-oriented character seen in mature legal
 AI products while remaining recognizably its own product. The first interface
-is the Registration of Title Act workbench described in `roadmap.md`. The shell
-should later support other conveyancing regimes and litigation without making
-those unfinished workflows visible as if they already work.
+is the Registration of Title Act workbench described in the
+[v0 implementation plan](../../../project%20Management/v0-implementation.md).
+The shell should later support other conveyancing regimes and litigation
+without making those unfinished workflows visible as if they already work.
 
 The experience should feel like a lawyer's operating workspace, not a chatbot,
 marketing page, or collection of dashboard cards. The matter, documents,
@@ -39,7 +40,8 @@ remain connected throughout the task.
 
 ```mermaid
 flowchart TD
-    A[Home] --> B[Matters]
+    Z[Registration regime entry] --> A[Home]
+    A --> B[Matters]
     A --> C[Workflow library]
     A --> D[Legal research]
     A --> E[History]
@@ -92,6 +94,27 @@ and last-updated time remain visible in the header. A single overflow menu holds
 rename, archive, permission, and matter-export actions.
 
 ## Screen specifications
+
+### 0. Entry and registration-regime selection
+
+Purpose: establish Draftly's product identity and let the notary select the
+registration system before entering the workbench.
+
+This is the only screen that may use an immersive hero treatment. It contains:
+
+- Draftly as the dominant first-viewport signal.
+- A short, relevant looping product video or real workflow imagery, with an
+  accessible static fallback and reduced-motion behavior.
+- Four registration-system choices: RDO, RTA, Apartment Ownership, and Special
+  Area.
+- RTA as the only active v0 choice; the other regimes are visibly labelled as
+  future and cannot enter unfinished flows.
+- A compact English/Sinhala selector at the top right.
+- A sign-in or continue action appropriate to the user's session state.
+
+The first viewport must show the RTA choice and a hint of the other regime
+options. Do not place the title or primary product statement inside a floating
+card.
 
 ### 1. Home
 
@@ -300,8 +323,10 @@ Required actions:
 - Require lawyer approval before final export.
 - Export DOCX and PDF with an audit-safe version identifier.
 
-The initial output set should follow `roadmap.md`; the shared deed schedule and
-prescribed RTA forms take priority over a general document generator.
+The initial output set should follow the
+[v0 implementation plan](../../../project%20Management/v0-implementation.md);
+the shared deed schedule and prescribed RTA forms take priority over a general
+document generator.
 
 ### 10. Workflow library
 
@@ -452,6 +477,7 @@ such as verify, approve, waive, request document, and complete step.
 ### P0: first demonstrable product
 
 - Authentication and role-aware matter list.
+- Registration-regime entry with RTA as the active v0 path.
 - Create an RTA matter.
 - Upload and process documents.
 - Review and verify extracted fields beside evidence.
