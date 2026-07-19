@@ -162,10 +162,24 @@ def track_A(case: dict, text: str, normalize: bool, model: str) -> dict:
             "catchwords": got.get("catchwords", ""), "rules": rules}
 
 
+def _naive_window(text: str) -> str:
+    """Head + tail, no cue selection. The extraction ablation (see
+    evaluation/runs/caselaw-ablation-v1/) showed this beats the cue-aware
+    window for the small model: accept 0.83 vs 0.73, at-risk 12/12 vs 9/12."""
+    if len(text) <= config.WINDOW_MAX_CHARS:
+        return text
+    return text[:config.WINDOW_HEAD_CHARS] + "\n\n[...]\n\n" + text[-config.WINDOW_TAIL_CHARS:]
+
+
 def track_B(case: dict, text: str, links: list[str], model_cheap: str,
             model_strong: str, escalate: bool, budget, allow_fuzzy: bool = False,
-            full_text: bool = False) -> dict:
-    window = text[:config.FULL_TEXT_MAX_CHARS] if full_text else windowing.build_window(text)
+            full_text: bool = False, window_strategy: str = "naive") -> dict:
+    if full_text:
+        window = text[:config.FULL_TEXT_MAX_CHARS]
+    elif window_strategy == "cue":
+        window = windowing.build_window(text)
+    else:
+        window = _naive_window(text)
     user = USER_EXTRACT.format(
         citation=case.get("citation", ""), court=case.get("court", ""),
         year=case.get("year", ""), catalogue=catalogue.catalogue_lines(),
@@ -220,7 +234,8 @@ def process(case: dict, links_map, args, budget) -> dict:
         result = track_B(case, text, links_map.get(case["case_id"], []),
                          args.model_cheap, args.model_strong, args.escalate, budget,
                          allow_fuzzy=getattr(args, "allow_fuzzy", False),
-                         full_text=getattr(args, "full_text", False))
+                         full_text=getattr(args, "full_text", False),
+                         window_strategy=getattr(args, "window", "naive"))
     if result is None:
         result = {"track": want, "status": "skipped"}
 
@@ -324,6 +339,10 @@ def main() -> None:
                     "per-request, so this costs the same and boosts recovery on hard cases")
     ap.add_argument("--redo-status", default="", help="comma statuses to re-run from cache "
                     "(e.g. 'llm-error,reject'); uses --model-cheap as the model")
+    ap.add_argument("--redo-track", default="", help="restrict redo mode to cached records "
+                    "whose track starts with this (e.g. 'B' = LLM-track only)")
+    ap.add_argument("--window", default="naive", choices=("naive", "cue"),
+                    help="track-B window strategy (ablation winner: naive)")
     ap.add_argument("--rebuild-only", action="store_true", help="just rebuild CSVs from cache")
     args = ap.parse_args()
 
@@ -353,8 +372,16 @@ def main() -> None:
             st = rec.get("status", "")
             if not any(st == w or st.startswith(w) for w in want):
                 continue
-            # skip cases already retried on this exact model (don't burn credits twice)
-            if rec.get("model", "") == args.model_cheap:
+            if args.redo_track and not str(rec.get("track", "")).startswith(args.redo_track):
+                continue
+            # resume marker: rules produced by the CURRENT prompt carry
+            # statute_citation_verbatim — don't redo those even under --force
+            if rec.get("rules") and "statute_citation_verbatim" in rec["rules"][0]:
+                already += 1
+                continue
+            # skip cases already retried on this exact model (don't burn credits twice);
+            # --force bypasses (used when re-running the SAME model with a new prompt)
+            if not args.force and rec.get("model", "") == args.model_cheap:
                 already += 1
                 continue
             worklist.append(cf.stem)

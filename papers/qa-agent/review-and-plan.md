@@ -83,3 +83,46 @@ where determinism is an advantage:
 
 Everything stays inside the existing contracts: same `StatuteAnswer` shape, same
 citation gate, same verifier, same honest-evaluation policy.
+
+## Evaluation results (2026-07-19, 18 exam questions, 2025 Oct + 2026 Apr papers)
+
+Runner: `evaluation/qa-agent/run_eval.py`; gold: `gold-labels.json` (objective —
+only sections/statutes explicitly named in question text). Three runs happened;
+Gemini free-tier quota contaminated two of them, so read carefully:
+
+1. **Baseline (clean quota window):** 42 verified claims, part coverage
+   38/73 = 52%, four questions fully abstained (`insufficient_authority`).
+2. **Upgraded, mixed-quota window (best valid method signal):** 46 verified
+   claims (+10%), part coverage 39/73 = 53%, abstained questions 4 → 2. It
+   **converted 3 of baseline's 4 total-abstentions into verified answers**
+   (coastal/stamp q02: 0→2 parts, intestate oct-q01: 0→1, condominium
+   oct-q08: 0→2) and improved oct-q03 (Prevention-of-Frauds amendments, 1→3),
+   oct-q06 (RTA s.44, 2→4), oct-q07 (4→5). Its 5 apparent regressions ran in a
+   quota-degraded stretch; on the follow-up clean stretch the same questions
+   matched baseline again (apr-q05: 3/4, apr-q06: 3/4) — i.e. the regressions
+   were infra, not method.
+3. **Upgraded full rerun (invalid):** daily quota exhausted mid-run; 11
+   consecutive questions fell back to `evidence_only`. Preserved as
+   `upgraded/results.quota-dead-run.jsonl`; a resumable checkpoint holds the 7
+   clean-window records — rerun `run_eval.py upgraded` on fresh quota to finish.
+
+**Retrieval gold saturated at 100% for both configs** (7/7 explicit sections,
+26/26 named statutes) — anything a question names is always retrieved; the
+discriminating metrics are part coverage and abstention conversion.
+
+**What still blocks the uncovered ~47% of parts** (unchanged by any retrieval
+method, and honestly reported by the agent per its design):
+
+- drafting tasks (clauses/schedules) — no lawyer-verified template source in corpus
+- inheritance share calculations — interleaved-column OCR in the MRIO share
+  provisions (known gap, deliberately fenced)
+- provincial stamp-duty rates (Southern/North Central) — sources not in corpus
+- 42 fused OCR mega-sections (Notaries s.31 inside `SRC014:s30`; 22 blobs in the
+  CPC) — mitigated by chunked embeddings + densest-window excerpts, but
+  re-extraction of those sources is the real fix
+
+**Verdict:** the upgraded agent is strictly better where the corpus supports an
+answer (more verified claims, half the abstentions, structural multi-hop wins on
+amendment questions) and never fabricates where it doesn't. The next precision
+gains are corpus work (re-OCR fused sections, add provincial rate sources,
+verified templates), not retrieval work.

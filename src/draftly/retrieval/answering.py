@@ -299,28 +299,43 @@ def generate_json(
     prompt: str,
     schema: dict[str, Any],
     system_instruction: str,
+    tries: int = 3,
 ) -> tuple[dict[str, Any], str, str | None]:
-    try:
-        from google import genai
-        from google.genai import types
+    """One structured-output call with retry.
 
-        timeout_ms = int(os.getenv("DRAFTLY_GEMINI_TIMEOUT_MS", str(DEFAULT_GEMINI_TIMEOUT_MS)))
-        client = genai.Client(api_key=api_key, http_options=types.HttpOptions(timeout=timeout_ms))
-        response = client.models.generate_content(
-            model=model,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                system_instruction=system_instruction,
-                response_mime_type="application/json",
-                response_json_schema=schema,
-            ),
-        )
-        raw = getattr(response, "text", "") or ""
-    except Exception as exc:  # pragma: no cover - network/API defensive path
-        return {}, "", str(exc)
+    Rate-limit errors (429 / RESOURCE_EXHAUSTED) get a long backoff — the
+    corrective loop multiplies call volume, and on the free tier a transient
+    quota dip must degrade to a delayed answer, not a lost one.
+    """
+    import time
 
-    parsed, parse_error = parse_model_json(raw)
-    return parsed, raw, parse_error
+    last_error = ""
+    for attempt in range(tries):
+        try:
+            from google import genai
+            from google.genai import types
+
+            timeout_ms = int(os.getenv("DRAFTLY_GEMINI_TIMEOUT_MS", str(DEFAULT_GEMINI_TIMEOUT_MS)))
+            client = genai.Client(api_key=api_key, http_options=types.HttpOptions(timeout=timeout_ms))
+            response = client.models.generate_content(
+                model=model,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction=system_instruction,
+                    response_mime_type="application/json",
+                    response_json_schema=schema,
+                ),
+            )
+            raw = getattr(response, "text", "") or ""
+            parsed, parse_error = parse_model_json(raw)
+            return parsed, raw, parse_error
+        except Exception as exc:  # pragma: no cover - network/API defensive path
+            last_error = str(exc)
+            if attempt == tries - 1:
+                break
+            quota_hit = "429" in last_error or "RESOURCE_EXHAUSTED" in last_error.upper()
+            time.sleep((30 * (attempt + 1)) if quota_hit else (5 * (attempt + 1)))
+    return {}, "", last_error
 
 
 def verify_claims(
