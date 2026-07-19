@@ -2,11 +2,14 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import re
 import sqlite3
 from dataclasses import replace
 
 from .corpus import sources_for_ui, topics_for_ui
+from .embeddings import dense_lookup
+from .graph import expand_seeds
 from .index import build_index, connect
 from .models import StatuteHit, StatuteQuery
 from .question_analysis import analyze_question
@@ -137,6 +140,13 @@ def search(query: StatuteQuery | str) -> list[StatuteHit]:
             )
             ranked_lists.append((subquery, direct_hits + lexical_hits, 1.0))
 
+            # dense channel: semantic top-k fused alongside BM25 (empty when
+            # embeddings are unavailable — search degrades to lexical-only)
+            if os.getenv("DRAFTLY_DISABLE_DENSE", "0") != "1":
+                dense_hits = hits_for_ids(conn, dense_lookup(subquery, limit=12), scoped)
+                if dense_hits:
+                    ranked_lists.append((subquery, dense_hits, 1.0))
+
             issue_text = subquery.split(" Context:", 1)[0]
             local_analysis = analyze_question(issue_text)
             local_hints = tuple(hint.source_id for hint in local_analysis.source_hints)
@@ -158,7 +168,39 @@ def search(query: StatuteQuery | str) -> list[StatuteHit]:
         if seeded:
             ranked_lists.append(("Curated statutory entry points", seeded, 1.8))
 
+        # graph expansion: walk the deterministic statute graph (cross-references,
+        # amendment targets, definitions) from the fused evidence, so structurally
+        # entangled sections surface even when no query token matches them.
+        if os.getenv("DRAFTLY_DISABLE_GRAPH", "0") == "1":
+            return fuse_rankings(ranked_lists, limit=query.limit, source_hints=set(global_hints))
+        preliminary = fuse_rankings(
+            ranked_lists, limit=max(query.limit, 10), source_hints=set(global_hints)
+        )
+        seeds = {hit.section_id: max(hit.score, 0.001) for hit in preliminary}
+        expansion = [
+            (section_id, score)
+            for section_id, score in expand_seeds(seeds, top_n=8)
+        ]
+        graph_hits = hits_for_ids(conn, expansion, query)
+        if graph_hits:
+            ranked_lists.append(("Statutory cross-reference graph", graph_hits, 0.9))
+
     return fuse_rankings(ranked_lists, limit=query.limit, source_hints=set(global_hints))
+
+
+def hits_for_ids(
+    conn: sqlite3.Connection,
+    scored_ids: list[tuple[str, float]],
+    query: StatuteQuery,
+) -> list[StatuteHit]:
+    hits: list[StatuteHit] = []
+    for section_id, score in scored_ids:
+        row = conn.execute(
+            "SELECT * FROM sections WHERE section_id = ?", (section_id,)
+        ).fetchone()
+        if row and row_allowed(row, query):
+            hits.append(row_to_hit(row, score=float(score), query_text=query.text))
+    return hits
 
 
 def seeded_source_hits(
@@ -370,15 +412,42 @@ def rerank_with_soft_topics(hits: list[StatuteHit], text: str) -> list[StatuteHi
 
 
 def make_excerpt(text: str, query_text: str, radius: int = 900) -> str:
+    """Query-centred excerpt using the DENSEST window, not the first match.
+
+    Some OCR'd sections are multi-thousand-char blobs holding several real
+    sections (e.g. the Notaries Ordinance duties list fused into one node); the
+    first token match is often marginal-note noise far from the operative text.
+    Score sliding windows by unique-query-token density and return the best.
+    """
     normalized = re.sub(r"\s+", " ", text).strip()
     if len(normalized) <= radius * 2:
         return normalized
-    tokens = [token.lower() for token in TOKEN_RE.findall(query_text) if token.lower() not in STOPWORDS]
+    tokens = {token.lower() for token in TOKEN_RE.findall(query_text) if token.lower() not in STOPWORDS}
     lowered = normalized.lower()
-    positions = [lowered.find(token) for token in tokens if lowered.find(token) >= 0]
-    center = min(positions) if positions else 0
-    start = max(0, center - radius)
-    end = min(len(normalized), center + radius)
+    positions: list[tuple[int, str]] = []
+    for token in tokens:
+        start = 0
+        while (found := lowered.find(token, start)) >= 0:
+            positions.append((found, token))
+            start = found + 1
+            if len(positions) > 400:
+                break
+    if not positions:
+        return f"{normalized[: radius * 2].strip()}..."
+    positions.sort()
+    window = radius * 2
+    best_center, best_score = positions[0][0], 0
+    left = 0
+    for right in range(len(positions)):
+        while positions[right][0] - positions[left][0] > window:
+            left += 1
+        span = positions[left : right + 1]
+        score = len({token for _, token in span})
+        if score > best_score:
+            best_score = score
+            best_center = (positions[left][0] + positions[right][0]) // 2
+    start = max(0, best_center - radius)
+    end = min(len(normalized), best_center + radius)
     prefix = "..." if start else ""
     suffix = "..." if end < len(normalized) else ""
     return f"{prefix}{normalized[start:end].strip()}{suffix}"

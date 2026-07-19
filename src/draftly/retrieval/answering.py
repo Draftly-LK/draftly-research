@@ -14,9 +14,29 @@ from .question_analysis import analyze_question, is_supported_domain_question, k
 from .search import search
 
 DEFAULT_MODEL = "gemini-3.5-flash"
-MAX_EVIDENCE_SECTIONS = 10
-MAX_EVIDENCE_CHARS = 30_000
+MAX_EVIDENCE_SECTIONS = 12
+MAX_EVIDENCE_CHARS = 34_000
 DEFAULT_GEMINI_TIMEOUT_MS = 90_000
+PER_PART_EVIDENCE_QUOTA = 2
+MAX_CORRECTIVE_PARTS = 3
+
+REWRITE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "rewrites": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "part": {"type": "string"},
+                    "queries": {"type": "array", "items": {"type": "string"}},
+                },
+                "required": ["part", "queries"],
+            },
+        }
+    },
+    "required": ["rewrites"],
+}
 
 ANSWER_SCHEMA = {
     "type": "object",
@@ -103,7 +123,8 @@ def answer(query: StatuteQuery | str) -> StatuteAnswer:
             retrieval_queries=retrieval_queries,
         )
 
-    prompt, prompt_citations = build_prompt(query.text, hits, retrieval_queries, known_gaps)
+    allocated_hits = allocate_evidence(hits, analysis)
+    prompt, prompt_citations = build_prompt(query.text, allocated_hits, retrieval_queries, known_gaps)
     parsed, raw, api_error = generate_json(
         api_key=api_key,
         model=model,
@@ -183,6 +204,32 @@ def answer(query: StatuteQuery | str) -> StatuteAnswer:
             fingerprint=stats.fingerprint,
             retrieval_queries=retrieval_queries,
         )
+
+    # Corrective retrieval (CRAG-style): a part that ended up with no verified
+    # claim gets ONE targeted retry — the model restates the part in statutory
+    # vocabulary, retrieval reruns on the restatements, and generation +
+    # verification rerun for the missing parts only. Bounded and gated by the
+    # same citation/verification pipeline as the first pass.
+    if (
+        valid_parts
+        and os.getenv("DRAFTLY_SKIP_CORRECTIVE", "0") != "1"
+        and (missing_part_numbers := sorted(valid_parts - {claim.part for claim in claims}, key=int))
+    ):
+        extra_claims, extra_hits, extra_queries, retry_notes = corrective_retry(
+            api_key=api_key,
+            model=model,
+            question=query.text,
+            analysis=analysis,
+            missing_parts=missing_part_numbers[:MAX_CORRECTIVE_PARTS],
+            known_hits=hits,
+        )
+        claims.extend(extra_claims)
+        limitations.extend(retry_notes)
+        if extra_hits:
+            seen_ids = {hit.section_id for hit in hits}
+            hits = hits + tuple(hit for hit in extra_hits if hit.section_id not in seen_ids)
+        if extra_queries:
+            retrieval_queries = tuple(dict.fromkeys(retrieval_queries + extra_queries))
 
     if valid_parts:
         covered_parts = {claim.part for claim in claims}
@@ -409,6 +456,162 @@ Question:
 Retrieved evidence:
 {evidence}
 """, included
+
+
+def allocate_evidence(hits: tuple[StatuteHit, ...], analysis) -> tuple[StatuteHit, ...]:
+    """Reorder hits so every question part gets evidence representation.
+
+    With a single global top-k, a 5-part question loses its later parts' evidence
+    to the dominant topic. Guarantee each part's best PER_PART_EVIDENCE_QUOTA
+    hits a slot (matched via the part's subquery), then fill remaining slots in
+    fused order.
+    """
+    if not analysis.subquestions or len(analysis.subquestions) < 2:
+        return hits
+    pairs = list(zip(analysis.subquestions, analysis.subqueries))
+    selected: list[StatuteHit] = []
+    chosen: set[str] = set()
+    for _, subquery in pairs:
+        quota = PER_PART_EVIDENCE_QUOTA
+        for hit in hits:
+            if quota <= 0:
+                break
+            if hit.section_id in chosen or subquery not in hit.matched_queries:
+                continue
+            selected.append(hit)
+            chosen.add(hit.section_id)
+            quota -= 1
+    for hit in hits:
+        if hit.section_id not in chosen:
+            selected.append(hit)
+            chosen.add(hit.section_id)
+    return tuple(selected)
+
+
+def corrective_retry(
+    *,
+    api_key: str,
+    model: str,
+    question: str,
+    analysis,
+    missing_parts: list[str],
+    known_hits: tuple[StatuteHit, ...],
+) -> tuple[list[AnswerClaim], list[StatuteHit], tuple[str, ...], list[str]]:
+    """One bounded retry for parts that produced no verified claim.
+
+    Mechanism (see papers/qa-agent/notes-*.md): restate the failed part in
+    statutory vocabulary (query rewriting bridges the fact-pattern-to-statute
+    gap), re-retrieve on the restatements, regenerate for the missing parts
+    only, then run the SAME citation gate + entailment verifier. Failure is
+    still an honest miss — never a relaxation of grounding.
+    """
+    parts_by_number = {str(part.number): part for part in analysis.subquestions}
+    targets = [(number, parts_by_number[number]) for number in missing_parts if number in parts_by_number]
+    if not targets:
+        return [], [], (), []
+
+    rewrite_prompt = (
+        "Restate each exam-question part as 2 short search queries over Sri Lankan "
+        "conveyancing statutes. Use statutory vocabulary (the words an Act would use: "
+        "'instrument', 'attestation', 'proviso', 'prescribed period') rather than the "
+        "narrative facts. Do not answer the question.\n\n"
+        + "\n\n".join(f"PART {number}:\n{part.text[:700]}" for number, part in targets)
+    )
+    parsed, _, error = generate_json(
+        api_key=api_key,
+        model=model,
+        prompt=rewrite_prompt,
+        schema=REWRITE_SCHEMA,
+        system_instruction="You rewrite legal exam questions into statute-search queries.",
+    )
+    if error or not isinstance(parsed.get("rewrites"), list):
+        return [], [], (), [f"Part {number}: corrective query rewrite failed." for number, _ in targets]
+
+    rewrites: dict[str, list[str]] = {}
+    for row in parsed["rewrites"]:
+        if isinstance(row, dict) and isinstance(row.get("queries"), list):
+            number = str(row.get("part", "")).strip()
+            rewrites[number] = [str(item).strip() for item in row["queries"] if str(item).strip()][:2]
+
+    new_hits: list[StatuteHit] = []
+    used_queries: list[str] = []
+    evidence_by_part: dict[str, list[StatuteHit]] = {}
+    known_ids = {hit.section_id for hit in known_hits}
+    for number, part in targets:
+        part_hits: list[StatuteHit] = []
+        for rewritten in rewrites.get(number, []):
+            used_queries.append(rewritten)
+            try:
+                found = search(StatuteQuery(text=rewritten, limit=6))
+            except Exception:
+                continue
+            for hit in found:
+                if hit.section_id not in {item.section_id for item in part_hits}:
+                    part_hits.append(hit)
+        evidence_by_part[number] = part_hits[:5]
+        for hit in part_hits[:5]:
+            if hit.section_id not in known_ids:
+                new_hits.append(hit)
+                known_ids.add(hit.section_id)
+
+    combined: dict[str, StatuteHit] = {hit.section_id: hit for hit in known_hits}
+    for hit in new_hits:
+        combined[hit.section_id] = hit
+    retry_evidence = tuple(
+        dict.fromkeys(
+            [hit for hits_ in evidence_by_part.values() for hit in hits_]
+            + list(known_hits)[:4]
+        )
+    )
+    if not retry_evidence:
+        return [], [], tuple(used_queries), [
+            f"Part {number}: corrective retrieval found no additional authority." for number, _ in targets
+        ]
+
+    parts_block = "\n\n".join(f"{number}. {part.text}" for number, part in targets)
+    focused_question = (
+        f"{question.split(chr(10), 1)[0][:600]}\n\n"
+        f"Answer ONLY these previously unanswered parts:\n{parts_block}"
+    )
+    prompt, prompt_citations = build_prompt(focused_question, retry_evidence, tuple(used_queries))
+    parsed, _, error = generate_json(
+        api_key=api_key,
+        model=model,
+        prompt=prompt,
+        schema=ANSWER_SCHEMA,
+        system_instruction=(
+            "You are a bounded Sri Lankan statutes-only research assistant. "
+            "Use only supplied evidence and facts stated in the question."
+        ),
+    )
+    if error:
+        return [], new_hits, tuple(used_queries), [
+            f"Part {number}: corrective generation failed." for number, _ in targets
+        ]
+    parsed, _ = sanitize_answer_payload(parsed, prompt_citations)
+    canonical = {hit.section_id.upper(): hit.section_id for hit in retry_evidence}
+    wanted = {number for number, _ in targets}
+    candidate_claims = [
+        AnswerClaim(
+            part=str(claim.get("part", "")).strip(),
+            text=str(claim["text"]).strip(),
+            citations=tuple(canonical[str(cite).upper()] for cite in claim["citations"]),
+        )
+        for claim in parsed.get("claims", [])
+        if str(claim.get("part", "")).strip() in wanted and claim.get("citations")
+    ]
+    if not candidate_claims:
+        return [], new_hits, tuple(used_queries), []
+    accepted, _, verifier_error = verify_claims(
+        api_key, model, question, candidate_claims, retry_evidence
+    )
+    if verifier_error:
+        return [], new_hits, tuple(used_queries), []
+    notes = [
+        f"Part {number}: answered on a corrective retrieval pass."
+        for number in sorted({claim.part for claim in accepted}, key=int)
+    ]
+    return accepted, new_hits, tuple(used_queries), notes
 
 
 def parse_model_json(raw: str) -> tuple[dict[str, Any], str | None]:

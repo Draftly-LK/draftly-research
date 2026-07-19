@@ -1,0 +1,88 @@
+{
+  "_policy": "Objective gold only: expected_sections lists section IDs EXPLICITLY cited in the question text (proxy noted where the corpus fused the section into a neighbour); expected_sources lists statutes the question names by title. No legal judgment is encoded. Scoring: a section counts if retrieved exactly; a source counts if ANY of its sections is retrieved.",
+  "2026-april-q01": {
+    "expected_sections": ["SRC004:s22", "SRC004:s23", "SRC004:s24", "SRC004:s25", "SRC004:s26"],
+    "expected_sources": ["SRC004", "SRC021", "SRC022"],
+    "named_in_question": "sections 22 to 26 of the Matrimonial Rights and Inheritance Ordinance; Land (Restrictions on Alienation) Act No. 38 of 2014; (Amendment) Act No. 21 of 2018"
+  },
+  "2026-april-q02": {
+    "expected_sections": [],
+    "expected_sources": ["SRC034"],
+    "named_in_question": "stamp duty on Deed of Transfer (Galle: Southern Province rates are a known corpus gap; coastal-zone law is a known gap)"
+  },
+  "2026-april-q03": {
+    "expected_sections": [],
+    "expected_sources": ["SRC050"],
+    "named_in_question": "Land Development Ordinance (mortgage approval, grant cancellation, Third Schedule successors)"
+  },
+  "2026-april-q05": {
+    "expected_sections": ["SRC014:s30"],
+    "expected_sources": ["SRC014"],
+    "named_in_question": "section 31 of the Notaries Ordinance (s31 text is fused into the SRC014:s30 node in this corpus extraction — s30 is the retrievable proxy)"
+  },
+  "2026-april-q06": {
+    "expected_sections": [],
+    "expected_sources": ["SRC011", "SRC005"],
+    "named_in_question": "Registration of Title Act No. 21 of 1998; Registration of Documents Ordinance"
+  },
+  "2026-april-q07": {
+    "expected_sections": [],
+    "expected_sources": ["SRC005"],
+    "named_in_question": "Registration of Documents Ordinance No. 23 of 1927"
+  },
+  "2026-april-q08": {
+    "expected_sections": [],
+    "expected_sources": ["SRC012"],
+    "named_in_question": "Apartment Ownership Law No. 11 of 1973, as amended"
+  },
+  "2026-april-q09": {
+    "expected_sections": [],
+    "expected_sources": ["SRC024", "SRC026", "SRC014"],
+    "named_in_question": "Wills Ordinance; Wills (Amendment) Act No. 29 of 2022; Notaries Ordinance attestation clause"
+  },
+  "2025-october-q01": {
+    "expected_sections": [],
+    "expected_sources": ["SRC004"],
+    "named_in_question": "intestate devolution/pedigree (Matrimonial Rights and Inheritance Ordinance governs; share calculation is a known OCR gap)"
+  },
+  "2025-october-q02": {
+    "expected_sections": [],
+    "expected_sources": ["SRC035"],
+    "named_in_question": "stamp duty on gift; Commissioner of Revenue, Western Province (Western Province Financial Statute)"
+  },
+  "2025-october-q03": {
+    "expected_sections": [],
+    "expected_sources": ["SRC001", "SRC005"],
+    "named_in_question": "latest amendments relating to the Prevention of Frauds Ordinance No. 7 of 1840; schedule per Registration of Documents Ordinance No. 23 of 1927"
+  },
+  "2025-october-q04": {
+    "expected_sections": [],
+    "expected_sources": ["SRC005"],
+    "named_in_question": "caveats under the Registration of Documents Ordinance, as amended"
+  },
+  "2025-october-q05": {
+    "expected_sections": [],
+    "expected_sources": ["SRC034", "SRC017"],
+    "named_in_question": "stamp duty on lease agreement; Special Power of Attorney execution in absence"
+  },
+  "2025-october-q06": {
+    "expected_sections": ["SRC011:s44"],
+    "expected_sources": ["SRC011", "SRC005"],
+    "named_in_question": "section 44 of the Registration of Title Act No. 21 of 1998; Registration of Documents Ordinance comparison"
+  },
+  "2025-october-q07": {
+    "expected_sections": [],
+    "expected_sources": ["SRC014"],
+    "named_in_question": "Notaries Ordinance, as amended (prohibited deeds, annual certificate, photographs, title check)"
+  },
+  "2025-october-q08": {
+    "expected_sections": [],
+    "expected_sources": ["SRC012"],
+    "named_in_question": "condominium topics (Apartment Ownership Law family)"
+  },
+  "2025-october-q09": {
+    "expected_sections": [],
+    "expected_sources": ["SRC024", "SRC026"],
+    "named_in_question": "Wills Ordinance latest amendments (age limit); executor/administrator conveyance"
+  }
+}
