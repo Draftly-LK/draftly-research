@@ -7,6 +7,153 @@ statute links, the disposition) from the 5,121 conveyancing judgments into
 This is **P4** of `retrieval-engine-plan.md`, made concrete: schema, prompts,
 script architecture, model choice, cost.
 
+**Status: the plan below has been executed.** Sections 0–7 are the original
+design (kept as written); the section right here records everything actually
+done, what the evidence showed, and what is still open — read this first.
+
+## Progress so far (as of 20 July 2026)
+
+### 1. Full extraction run — done
+
+Both tracks ran to completion over all 5,121 conveyancing judgments, with the
+resumable per-case cache exactly as designed
+(`scripts/case-law-information-extraction/`, outputs in its `output/` folder —
+not `data/processed/` as originally sketched):
+
+- **2,198 rules extracted, 2,193 high-confidence** (verbatim-quote-grounded),
+  plus `case_meta.csv` for all 5,121 cases and `extract-rejects.csv` (4,121
+  rows: abstentions, quote-not-found, no-headnote cases the budget skipped).
+- Grounding hard-stop held: **every stored rule carries a quote found verbatim
+  in its judgment**; anything else was rejected, never stored.
+- Model: NVIDIA NIM `meta/llama-3.1-8b-instruct` as planned, effectively $0
+  (free credits). A capped 50-credit budget of `llama-3.3-70b-instruct`
+  full-text calls was spent recovering hard rejects: 49 credits, 32/49
+  recovered (~65%).
+- Not yet reached: **3,179 reported cases without a clean headnote** and 225
+  still-rejected cases — deliberately parked pending the validation verdict
+  below.
+
+### 2. Windowing audit + pre-registered ablation — done, surprising result
+
+Before scaling further we *proved* the method instead of trusting it
+(`evaluation/runs/caselaw-ablation-v1/`, config and GO/NO-GO thresholds frozen
+before any results):
+
+- A window-recall audit with a defined denominator
+  (`audit_window_recall.py`): ruling-cue recall on at-risk cases is 88% at a
+  12K-char window, 94.5% at 16K → `WINDOW_MAX_CHARS = 16000`.
+- A 4-arm ablation (30 stratified cases × 4 methods): **naive head+tail on
+  the 8B won** — accept rate 0.833, vs cue-aware window 0.733, full text on
+  the 8B 0.633, full text on the 70B 0.545. All arms had 100% verbatim and
+  100% independently-checked grounding. Lesson: more context *hurts* the
+  small model; the cue-aware window we originally designed was
+  counterproductive and the pipeline now defaults to the naive window.
+
+### 3. 100-case holdout — provisional NO-GO for the 3,179-case tail
+
+A fresh, disjoint, stratified 100-case holdout run with the winning arm:
+
+- Accept rate 74%, independent grounding **100%** — the pipeline does not
+  fabricate quotes.
+- But an LLM judge (Claude, all 74 accepted rules, 6 dimensions) found only
+  **58% legally usable** (43/74; CI lower bound 0.467) and statute
+  attribution just **81% correct** — the worst dimension. Grounding is
+  necessary, not sufficient: the model reproduces real text that is
+  lower-court reasoning, counsel's argument, or obiter, and it guesses
+  section numbers it never saw.
+- Verdict against the pre-registered criteria (usable ≥ 0.90, CI lower
+  ≥ 0.80, statute ≥ 0.90): **NO-GO for running the 3,179 no-headnote cases**
+  until quality is fixed. The 74-row `lawyer-labels.csv` pack awaits the
+  mentor's blind labels as the authoritative gate — the LLM judge is a
+  disclosed proxy only.
+
+### 4. Quality pipeline — done; red flags 72% → 1%
+
+A scan of the v1 rules found 72% carried mechanical red flags (truncated
+statements, page-number tails, mojibake, mid-sentence fragments, corpus
+leaks). The rebuild, all resumable and audited:
+
+1. v1 outputs backed up to `output/v1-backup/`.
+2. **Prompt v2** (`extract_case_rules.py`): ratio-only, must be THIS court's
+   own words (not borrowed lower-court/counsel text), new
+   `statute_citation_verbatim` field (the statute reference copied verbatim
+   from the judgment, then grounded by substring check), `statute_section`
+   only from the candidate list, "NEVER guess a source_id and NEVER guess a
+   section number", common-law rules → null.
+3. **Normalize** (`clean_rules.py normalize`): ~1,065 raw headnote `Held:`
+   fragments rewritten into clean one-sentence statements by the 8B
+   (quotes untouched, grounding intact).
+4. **Re-extract** the whole LLM track with prompt v2 + naive window
+   (`--redo-track`, resume-marker so re-runs never double-spend).
+5. **Deterministic clean** (`clean_rules.py clean`): mojibake repair,
+   page-tail stripping, fragment drops, LLM meta-answer filter ("the court
+   did not provide…"), non-conveyancing leak filter, dedupe — every drop
+   logged in `clean-audit.csv` (191 actions).
+
+Result: 2,193 → 1,541 re-extracted → **1,413 cleaned rules**
+(`rules_cleaned.csv`), mechanical red-flag rate now ~1%.
+
+### 5. Judge-then-filter — in progress (49/57 packs)
+
+The cleaned rules are being judged one-by-one against their full judgments on
+the same 6 dimensions (statement correct, quote supports, is ratio,
+qualifications kept, statute correct, usable):
+
+- `judge_rules.py build` packed the 1,413 rules into 57 packs of ~25;
+  `launch_judges.sh` runs Codex GPT-5.5 (high reasoning) workers locally, 4
+  in parallel, resumable per pack. A Claude spot-check validated the judge's
+  verdicts before trusting it.
+- **49/57 packs done (~1,213 rules judged)**; fleet currently paused.
+  Remaining: finish 8 packs → `judge_rules.py merge` →
+  **`rules_vetted.csv`** (usable-only) + per-dimension rates + a stratified
+  100-rule lawyer pack.
+
+### 6. Statute-side infrastructure — done
+
+To attack the statute-attribution problem at its root:
+`data/legal-sources/manifests/source-registry.csv` (90 sources) now wires
+50/85 statutes to on-disk markdown, and
+`data/legal-sources/derived/statute-section-index.json` indexes **3,547
+sections** — the basis for deterministic (not model-guessed) section
+resolution.
+
+### 7. Open blockers
+
+Carried in `v0-implementation.md` § "Case-law extraction — plan and open
+blockers", with fix directions:
+
+1. **Section matching unreliable** — model sees titles, guesses section
+   numbers (~19% wrong in the holdout) → resolve deterministically against
+   the section index.
+2. **No temporal boundary** — a 1959 case can link to a 1970 statute →
+   add enacted/repealed years to the registry, reject anachronistic links.
+3. **Repealed-law corpus** — ~68% of judgments are pre-1950 and construe
+   predecessors not in the catalogue (Partition Ordinance 1863/1951,
+   Fiscal's Ordinance 1867, Courts Ordinance 1889, Public Trustee, Privy
+   Council appeals) → download, register, and tag rules with their
+   statutory regime.
+4. **Extraction correctness** — grounded ≠ usable (58%) → finish the judge
+   filter, then the lawyer sample as the final gate.
+
+Until then, every rule stays `status=unverified` / unverified-candidate
+authority tier, exactly as the plan's quality gate demands.
+
+### Artifact map
+
+| Artifact | Where |
+| --- | --- |
+| Extraction pipeline (orchestrator, LLM client, windowing, validation) | `scripts/case-law-information-extraction/` |
+| Current rules (grounded, cleaned) | `output/rules_cleaned.csv` (1,413) |
+| Pre-clean rules + rejects + case metadata | `output/rules_high_confidence.csv`, `output/extract-rejects.csv`, `output/case_meta.csv` |
+| v1 snapshot (before the quality rebuild) | `output/v1-backup/` |
+| Clean/normalize pipeline + audit | `clean_rules.py`, `output/clean-audit.csv` |
+| Judge pipeline (packs, verdicts, launcher) | `judge_rules.py`, `launch_judges.sh`, `output/judge/` |
+| Ablation + holdout study (config, samples, raw responses, metrics, lawyer pack) | `evaluation/runs/caselaw-ablation-v1/` |
+| Validation notebook (presentation, no API calls) | `notebooks/02_caselaw_extraction_validation.ipynb` |
+| Statute registry + section index | `data/legal-sources/manifests/source-registry.csv`, `data/legal-sources/derived/statute-section-index.json` |
+
+---
+
 ## 0. What we're extracting, and the grounded reality
 
 Per-case target (one `rules.csv` row per extracted rule; a case may yield 0–3):
