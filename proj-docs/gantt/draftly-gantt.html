@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Draftly — Project Gantt Chart</title>
+<style>
+  :root{
+    --teal:#2F6F5E; --teal-lt:#cfe8e2; --amber:#C08A2D; --grey:#3a3a3a;
+    --blue:#6ea8c7; --blue-lt:#d7e8f1; --line:#e2e6e3; --text:#1c211e;
+    --muted:#6b756f;
+  }
+  *{box-sizing:border-box;}
+  body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--text);
+       margin:0;padding:24px;background:#fff;font-size:12px;}
+  h1{font-size:20px;margin:0 0 2px;}
+  .sub{color:var(--muted);margin:0 0 16px;font-size:12px;}
+  .chart{border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+  table{border-collapse:collapse;width:100%;}
+  /* left label columns */
+  .lbl{width:300px;padding:5px 10px;border-right:1px solid var(--line);}
+  .num{width:52px;text-align:center;color:var(--muted);border-right:1px solid var(--line);font-variant-numeric:tabular-nums;}
+  .pct{width:44px;text-align:center;color:var(--muted);border-right:1px solid var(--line);}
+  thead th{background:#f5f7f6;border-bottom:1px solid var(--line);padding:6px 8px;
+           font-size:11px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);text-align:left;}
+  tbody tr{border-bottom:1px solid #f0f2f1;}
+  .group td{background:#fafbfa;font-weight:700;}
+  .task .lbl{padding-left:24px;color:#33403a;}
+  /* timeline cell */
+  .tl{position:relative;padding:0;vertical-align:middle;}
+  .tlwrap{position:relative;height:22px;}
+  .grid{position:absolute;top:0;bottom:0;width:1px;background:var(--line);}
+  .gridmonth{position:absolute;top:0;bottom:0;width:1px;background:#c9d0cc;}
+  .bar{position:absolute;height:13px;top:4px;border-radius:3px;overflow:hidden;}
+  .bar .fill{position:absolute;left:0;top:0;bottom:0;}
+  .bar.groupbar{height:8px;top:7px;background:var(--grey);border-radius:2px;}
+  .bar.taskbar{background:var(--teal-lt);}
+  .bar.taskbar .fill{background:var(--teal);}
+  .bar.exambar{background:var(--blue-lt);} .bar.exambar .fill{background:var(--blue);}
+  .bar.docbar{background:#f0dcc0;} .bar.docbar .fill{background:var(--amber);}
+  .barlabel{position:absolute;left:100%;margin-left:6px;top:2px;white-space:nowrap;
+            font-size:10px;color:#4a544e;}
+  .hdrmonth{position:absolute;top:2px;font-weight:700;color:#4a544e;font-size:11px;}
+  .hdrtick{position:absolute;top:20px;font-size:9px;color:var(--muted);}
+  .monthrow{height:34px;background:#f5f7f6;border-bottom:1px solid var(--line);}
+  .legend{margin-top:12px;font-size:11px;color:var(--muted);}
+  .legend span{display:inline-block;margin-right:16px;}
+  .chip{display:inline-block;width:22px;height:9px;border-radius:2px;vertical-align:middle;margin-right:5px;}
+  @media print{
+    @page{size:A4 landscape;margin:10mm;}
+    body{padding:0;font-size:10px;}
+    .sub{margin-bottom:8px;}
+  }
+</style>
+</head>
+<body>
+<h1>Draftly — Project Plan</h1>
+<p class="sub">A Lawyer-in-the-Loop Legal Workflow Platform for Sri Lankan Legal Practice · CS3501 · Group 06</p>
+<div class="chart" id="chart"></div>
+<div class="legend">
+  <span><i class="chip" style="background:#3a3a3a"></i>Phase (summary)</span>
+  <span><i class="chip" style="background:#2F6F5E"></i>Task (done)</span>
+  <span><i class="chip" style="background:#cfe8e2"></i>Task (planned)</span>
+  <span><i class="chip" style="background:#C08A2D"></i>Documentation</span>
+  <span><i class="chip" style="background:#6ea8c7"></i>Exams</span>
+</div>
+
+<script>
+/* =========================================================================
+   EDIT HERE — the whole chart is driven by this array.
+   Each group has: name, and tasks [name, start "YYYY-MM-DD", end, percent, kind].
+   kind: "task" | "doc" | "exam"  (controls the colour).
+   Dates below are a reasonable draft — adjust to your real CS3501 deadlines.
+   ========================================================================= */
+const PLAN = [
+  {name:"Documentation (module deliverables)", tasks:[
+    ["D1 Project Idea",                          "2026-07-01","2026-07-08",100,"doc"],
+    ["D2 Project Proposal",                      "2026-07-09","2026-07-15",100,"doc"],
+    ["D3 Feasibility Report",                    "2026-07-16","2026-07-23",100,"doc"],
+    ["D4 Project Schedule + Gantt",              "2026-07-24","2026-07-31", 60,"doc"],
+    ["D5 SRS",                                   "2026-07-27","2026-08-07",  0,"doc"],
+    ["D6 Software Architecture Doc",             "2026-08-03","2026-08-14",  0,"doc"],
+    ["D8 Progress-eval pack",                    "2026-08-31","2026-09-11",  0,"doc"],
+    ["D9 Test Plan",                             "2026-09-07","2026-09-18",  0,"doc"],
+    ["D10 Test Report",                          "2026-09-14","2026-09-25",  0,"doc"],
+    ["D12 Final slides, one-slider, video, code","2026-09-21","2026-10-02",  0,"doc"],
+    ["D11 Final Report (group)",                 "2026-09-28","2026-10-19",  0,"doc"],
+  ]},
+  {name:"Research side — Retrieval Engine", tasks:[
+    ["R1 Corpus hardening (OCR fixes + missing statutes)","2026-07-28","2026-08-14",10,"task"],
+    ["R2 Case-law rule layer completion (Track B)","2026-08-04","2026-08-28", 40,"task"],
+    ["R3 Benchmark construction (past-paper + lawyer + case-law + template Qs)","2026-08-11","2026-09-04",15,"task"],
+    ["R4 Gold labelling + inter-annotator agreement","2026-08-17","2026-09-11",0,"task"],
+    ["R5 Battle-testing & ablations (lawyer-verified headline)","2026-08-31","2026-09-25",10,"task"],
+    ["R6 External baselines (BM25 / dense / hybrid / LightRAG or HippoRAG)","2026-09-07","2026-09-25",0,"task"],
+    ["R7 Lawyer-labelled extraction dev set",    "2026-08-24","2026-09-11",  0,"task"],
+  ]},
+  {name:"SE side — Platform (parallel wiring per surface)", tasks:[
+    ["M2 Static UI clone (built)",               "2026-07-22","2026-07-31",100,"task"],
+    ["P1 Contracts & scaffold (M0)",             "2026-07-28","2026-08-14",  0,"task"],
+    ["P2 Wiring — Assistant + grounded research","2026-08-10","2026-09-04",  0,"task"],
+    ["P3 Wiring — matters, documents, facts",    "2026-08-17","2026-09-11",  0,"task"],
+    ["P4 Wiring — workflows, drafts, audit",     "2026-08-31","2026-09-18",  0,"task"],
+    ["P5 Checks engine + rule catalogue",        "2026-08-24","2026-09-18",  0,"task"],
+    ["P6 Form 8 + template library, export",     "2026-08-31","2026-09-18",  0,"task"],
+    ["P7 Agent memory (per-matter layer)",       "2026-08-17","2026-09-11",  0,"task"],
+    ["P8 Voice AI integration",                  "2026-09-07","2026-09-25",  0,"task"],
+    ["P9 Deployment & monitoring",               "2026-09-07","2026-09-27",  0,"task"],
+  ]},
+  {name:"SE side — Document Intake & Extraction", tasks:[
+    ["X1 Extraction schema + doc classification","2026-07-28","2026-08-21",  0,"task"],
+    ["X2 Document AI field extraction",          "2026-08-17","2026-09-18",  0,"task"],
+    ["X3 Intake wired into the platform",        "2026-09-07","2026-09-25",  0,"task"],
+  ]},
+  {name:"Integration, Evaluation & Demo", tasks:[
+    ["I1 P0 demo path end to end",               "2026-09-07","2026-09-25",  0,"task"],
+    ["I2 Alpha testing (all surfaces)",          "2026-09-14","2026-09-25",  0,"task"],
+    ["I3 Holdout eval + acceptance gates",       "2026-09-14","2026-09-27",  0,"task"],
+    ["I4 Demo rehearsal",                        "2026-09-21","2026-09-27",  0,"task"],
+    ["Progress Evaluation (module)",             "2026-09-06","2026-09-19",  0,"exam"],
+    ["Final Evaluations & Demos (module)",       "2026-09-28","2026-10-02",  0,"exam"],
+  ]},
+];
+
+/* ---------- rendering ---------- */
+const DAY_W = 6;                 // px per day
+const MS = 86400000;
+const d = s => { const [y,m,dd]=s.split("-").map(Number); return Date.UTC(y,m-1,dd); };
+const days = (a,b) => Math.round((b-a)/MS);
+const fmt = t => { const x=new Date(t); return (x.getUTCMonth()+1)+"/"+x.getUTCDate(); };
+
+let min=Infinity,max=-Infinity;
+PLAN.forEach(g=>g.tasks.forEach(t=>{min=Math.min(min,d(t[1]));max=Math.max(max,d(t[2]));}));
+// pad to whole months
+const pad = new Date(min); min = Date.UTC(pad.getUTCFullYear(),pad.getUTCMonth(),1);
+const pe = new Date(max); max = Date.UTC(pe.getUTCFullYear(),pe.getUTCMonth()+1,1);
+const totalDays = days(min,max);
+const W = totalDays*DAY_W;
+const x = t => days(min,t)*DAY_W;
+
+const MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function monthHeader(){
+  let cells="";
+  let t=min;
+  while(t<max){
+    const cur=new Date(t);
+    const next=Date.UTC(cur.getUTCFullYear(),cur.getUTCMonth()+1,1);
+    const left=x(t), w=(Math.min(next,max)-t)/MS*DAY_W;
+    cells+=`<div class="gridmonth" style="left:${left}px"></div>`;
+    cells+=`<div class="hdrmonth" style="left:${left+4}px">${MONTHS[cur.getUTCMonth()]} ${String(cur.getUTCFullYear()).slice(2)}</div>`;
+    // week ticks
+    for(let wd=t; wd<next && wd<max; wd+=7*MS){
+      cells+=`<div class="grid" style="left:${x(wd)}px;opacity:.5"></div>`;
+      cells+=`<div class="hdrtick" style="left:${x(wd)+2}px">${new Date(wd).getUTCDate()}</div>`;
+    }
+    t=next;
+  }
+  return `<div class="tlwrap" style="width:${W}px;height:34px">${cells}</div>`;
+}
+function gridLines(){
+  let g="";
+  let t=min;
+  while(t<max){
+    const cur=new Date(t);
+    const next=Date.UTC(cur.getUTCFullYear(),cur.getUTCMonth()+1,1);
+    g+=`<div class="gridmonth" style="left:${x(t)}px"></div>`;
+    for(let wd=t; wd<next && wd<max; wd+=7*MS)
+      g+=`<div class="grid" style="left:${x(wd)}px;opacity:.5"></div>`;
+    t=next;
+  }
+  return g;
+}
+function bar(t,cls,pct,label){
+  const left=x(d(t[1])), w=Math.max(4,(d(t[2])-d(t[1]))/MS*DAY_W);
+  const fill=`<div class="fill" style="width:${pct}%"></div>`;
+  const lab=label?`<div class="barlabel">${label}</div>`:"";
+  return `<div class="bar ${cls}" style="left:${left}px;width:${w}px">${fill}${lab}</div>`;
+}
+
+let rows="";
+PLAN.forEach(g=>{
+  const gs=Math.min(...g.tasks.map(t=>d(t[1])));
+  const ge=Math.max(...g.tasks.map(t=>d(t[2])));
+  const gl=x(gs), gw=Math.max(4,(ge-gs)/MS*DAY_W);
+  const gpct=Math.round(g.tasks.reduce((a,t)=>a+t[3],0)/g.tasks.length);
+  rows+=`<tr class="group">
+    <td class="lbl">${g.name}</td>
+    <td class="num">${fmt(gs)}</td><td class="num">${fmt(ge)}</td><td class="pct">${gpct}%</td>
+    <td class="tl"><div class="tlwrap" style="width:${W}px">${gridLines()}
+      <div class="bar groupbar" style="left:${gl}px;width:${gw}px"></div></div></td></tr>`;
+  g.tasks.forEach(t=>{
+    rows+=`<tr class="task">
+      <td class="lbl">${t[0]}</td>
+      <td class="num">${fmt(d(t[1]))}</td><td class="num">${fmt(d(t[2]))}</td><td class="pct">${t[3]}%</td>
+      <td class="tl"><div class="tlwrap" style="width:${W}px">${gridLines()}
+        ${bar(t,(t[4]||"task")+"bar",t[3],t[0])}</div></td></tr>`;
+  });
+});
+
+document.getElementById("chart").innerHTML=`
+  <table>
+    <thead><tr>
+      <th class="lbl">Task</th><th class="num">Start</th><th class="num">End</th><th class="pct">%</th>
+      <th class="tl"><div style="position:relative;width:${W}px">${monthHeader()}</div></th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+</script>
+</body>
+</html>
