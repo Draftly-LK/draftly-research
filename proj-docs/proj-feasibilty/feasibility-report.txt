@@ -1,0 +1,925 @@
+FEASIBILITY REPORT
+
+Please click the link below to enter the Google doc:
+https://docs.google.com/document/d/1FYZSPqT-JRfkg1NSz4DH2BCwb3VZGuOAZeFVbALOH3o/edit?usp=sharing
+
+Draftly: A Lawyer-in-the-Loop Legal Workflow Platform for Sri Lankan
+Conveyancing Practice
+
+Prepared for: Draftly project team and mentor, Dr. Nisansa de Silva
+Project team: Dhanapala D.H.N., Dilshan A.D.L., De Silva B.K.P.
+Report date: 25 July 2026
+Primary source: proj-docs/proj-feasibilty/feasibility-study.md (internal
+feasibility brief, dated 23 July 2026)
+Secondary source: the Draftly repository at its current commit, including
+src/draftly/retrieval, apps/statute-retrieval, data/legal-sources,
+evaluation/, and notebooks/
+
+This report expands the team's internal feasibility brief into a standalone
+document. Every claim is drawn from the brief, from the repository as it
+stands today, or is explicitly marked as an assumption where neither source
+speaks to it. Nothing below invents legal detail, cost figures, or technical
+capability beyond what the brief states or the code demonstrates.
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+
+1.  Executive Summary
+2.  Introduction and Background
+3.  Project Objectives and Scope
+4.  Technical Feasibility
+5.  Operational Feasibility
+6.  Economic and Financial Feasibility
+7.  Legal and Regulatory Feasibility
+8.  Schedule Feasibility
+9.  Risk Assessment
+10. Alternatives Considered
+11. Conclusion and Recommendation
+
+================================================================================
+1. EXECUTIVE SUMMARY
+================================================================================
+
+Draftly is a lawyer-in-the-loop workflow platform for Sri Lankan conveyancing
+practice. The first prototype targets matters under the title-registration
+regime (Registration of Title Act, No. 21 of 1998, the "Bim Saviya"
+programme), covering examination of title, drafting, execution, and
+attestation, with the Form 8 transfer as the first end-to-end instrument. A
+litigation workflow track is planned as a later extension of the same matter
+and workflow foundation but is out of scope for the initial build.
+
+The system takes an unstructured bundle of property and identity documents,
+extracts candidate facts through OCR and layout-aware field extraction,
+requires a qualified lawyer to verify or correct every fact before it is
+relied on, runs deterministic consistency checks across the verified record,
+answers legal questions with citations grounded in a curated statutory and
+case-law corpus, and generates draft instruments from prescribed forms
+populated only with verified facts. Every step is logged to an audit trail.
+
+This report assesses feasibility across seven dimensions: technical,
+operational, economic, legal and regulatory, schedule, risk, and
+alternatives. The finding in each case is that the project is feasible,
+provided two conditions the brief itself already anticipates are respected:
+that language-model use stays confined to bounded, citation-checked tasks
+with explicit abstention, and that no automated output reaches a client
+without a lawyer's verification and approval.
+
+The strongest evidence for technical feasibility is not the brief's
+description of the target architecture but the state of the repository
+itself. The retrieval engine, the highest-risk component, already exists as
+working code: a normalized statutory and case-law corpus, a BM25-based
+lexical retrieval index with a citation graph, a Streamlit demonstration
+application, and an evaluation harness with recorded metrics across several
+runs. The remainder of the platform, the Next.js matter workspace, the
+FastAPI service layer beyond the retrieval engine, the PostgreSQL persistence
+layer, and the Tiptap-based draft editor, is planned but not yet built in
+this codebase. That gap is normal for a project at this stage, but it means
+the majority of implementation effort still lies ahead, concentrated in the
+interface and integration tracks rather than in the corpus and retrieval work
+already validated.
+
+The recommendation is to proceed, with the staged plan the brief already
+lays out: freeze the shared matter-record contracts early, build the
+interface against mock data in parallel with engine hardening, and treat the
+first end-to-end path (intake through an approved, exported Form 8 draft) as
+the milestone that de-risks everything after it.
+
+================================================================================
+2. INTRODUCTION AND BACKGROUND
+================================================================================
+
+2.1 What Draftly is
+
+Draftly is a web-based platform intended for practising lawyers and notaries
+who handle land and title work, together with their supporting staff. It is
+built around a "matter": a single conveyancing transaction that accumulates
+documents, verified facts, consistency checks, legal question-and-answer
+sessions, and drafts as it moves toward completion. The platform supports two
+workflow tracks. Conveyancing is the first prototype. Litigation is described
+in the brief as a later extension of the same underlying matter and workflow
+model, not a parallel product.
+
+The defining design choice, stated directly in the brief, is what Draftly
+deliberately is not: it is not a form-filling PDF generator, and it is not a
+legal search engine. A prescribed statutory form is only the final output
+layer. Every draft the system produces has to be traceable back to a
+verified fact and to the document that fact came from.
+
+2.2 The problem it addresses
+
+Conveyancing practice in Sri Lanka is document-heavy and almost entirely
+manual. A single transfer matter can involve deeds, the current title
+certificate, cadastral and survey material, local-authority assessment
+records, and identity documents, often spanning decades and, per the brief,
+four coexisting registration regimes. Examination of title depends on every
+one of those documents agreeing on the same lot number, extent, boundary, and
+party names. A mismatch that goes unnoticed can invalidate an instrument or
+expose the practitioner to liability.
+
+The brief identifies five specific difficulties in the current process:
+
+  - Manual reconciliation of particulars across a document bundle, done by
+    eye, slow and error-prone, with the burden falling on junior staff.
+  - Fragmented sources of law: statutes, amendments, gazettes, prescribed
+    forms, and case law are scattered, and existing local research tools
+    support general search rather than guidance tied to a specific step of a
+    specific matter.
+  - Transcription risk when particulars are re-typed from source documents
+    into instruments, especially where prescribed statutory wording must be
+    reproduced exactly.
+  - No systematic record of what was verified, by whom, or against what
+    evidence, which weakens both internal quality control and the
+    defensibility of the finished work.
+  - The unreliability of general-purpose AI tools in this setting: fluent
+    answers with fabricated citations are a disqualifying failure mode in
+    legal work, not a minor defect.
+
+2.3 Value to a practice
+
+The brief frames the expected value as faster and more reliable title
+examination, fewer transcription and consistency errors, citation-grounded
+answers to legal questions, and a defensible record of who verified and
+approved each fact and document. None of this replaces professional
+judgment. Every consequential action, verification, approval, waiver, or
+export, stays with a qualified lawyer; the platform's job is to remove
+clerical burden, not decision-making authority.
+
+================================================================================
+3. PROJECT OBJECTIVES AND SCOPE
+================================================================================
+
+3.1 Objectives
+
+The brief sets nine objectives for the project:
+
+  1. Design and implement a web-based platform in which a matter progresses
+     from document intake to an approved, exportable draft under continuous
+     lawyer supervision.
+  2. Automate extraction of structured particulars from Sinhala and English
+     conveyancing documents using OCR, document classification, and
+     layout-aware field extraction, with every extracted value carrying its
+     source location.
+  3. Provide a verification workspace where extracted facts are reviewed
+     beside their source evidence and moved through explicit verification
+     states before use.
+  4. Implement deterministic consistency checks over the verified matter
+     record, including cross-matching the deed schedule, survey plan, and
+     municipal assessment records, producing missing-document checklists and
+     red flags.
+  5. Provide grounded legal question answering over a curated corpus of Sri
+     Lankan statutes, gazettes, and case law, where every claim carries a
+     citation and the system abstains when authority is insufficient.
+  6. Generate draft instruments from prescribed statutory forms, starting
+     with the Form 8 transfer, populated only from verified facts.
+  7. Maintain versioned drafts, approval gates, export to standard office
+     formats, and a complete audit trail.
+  8. Provide the interface in English and Sinhala on the demonstrated
+     workflow path.
+  9. Evaluate extraction, checking, retrieval, and drafting quality against a
+     lawyer-verified evaluation set before any capability is presented as
+     reliable.
+
+3.2 Scope
+
+The initial system is bounded to matters under the title-registration regime
+(Registration of Title Act, No. 21 of 1998), covering examination of title,
+drafting, execution, and attestation, with Form 8 as the first end-to-end
+instrument.
+
+The brief defines a single user role in detail, the lawyer or notary, who is
+able to create and manage matters, upload documents and monitor their
+processing state, review and verify or correct extracted facts, run and
+resolve consistency checks and red flags, follow guided workflow steps with
+visible statutory grounding, ask matter-aware legal questions and inspect
+claim-level evidence, generate and edit drafts from approved templates,
+compare and restore versions, approve drafts, export approved drafts, and
+inspect the full audit trail.
+
+Explicitly out of scope for the initial build:
+
+  - The registration function of notarial practice, historical title-chain
+    reconstruction, and pedigree analysis.
+  - Conveyancing regimes other than title registration. Deed registration,
+    condominium, and special-area regimes appear in the interface but are
+    marked as not yet supported.
+  - The litigation workflow track.
+  - Document forms and classes explicitly excluded from the initial
+    extraction pipeline.
+
+3.3 Deliverables
+
+The brief lists the following as the project's main outputs: the web
+application itself (matter management, intake, verification, checks, guided
+workflow, question answering, draft editing with version history, approval
+gates, export); the bilingual document-processing pipeline; the curated
+statutory and case-law corpus with its retrieval engine and citation graph;
+the Form 8 draft-generation module with locked prescribed wording and export
+to standard office formats; the bilingual interface on the demonstrated
+path; a lawyer-verified evaluation set with evaluation reports; and the
+supporting technical documentation, user documentation, testing reports,
+deployment instructions, and source code.
+
+================================================================================
+4. TECHNICAL FEASIBILITY
+================================================================================
+
+4.1 Proposed architecture
+
+The target architecture described in the brief has five parts: a Next.js
+(React, TypeScript) web application covering the matter workspace,
+verification interface, and draft editor; a FastAPI (Python) service layer
+exposing the document pipeline and retrieval engine over typed HTTP
+interfaces; a PostgreSQL store for matters, facts, drafts, versions, and
+audit records; a document-processing pipeline for OCR, classification, and
+field extraction with source spans; and a deterministic retrieval engine over
+a curated statutory and case-law corpus, with bounded, validated
+language-model passes for constrained enrichment tasks.
+
+4.2 Proposed stack, by layer
+
+  Frontend: Next.js with TypeScript, Tailwind CSS, an accessible component
+  library, and the Tiptap rich-text editor. Tiptap's schema validation is the
+  mechanism that locks prescribed statutory wording while leaving schedules
+  and particulars editable, and lets facts be embedded as typed nodes that
+  refuse unverified content.
+
+  Backend: FastAPI, chosen because the data-science components are already
+  Python, so a Python web framework serves the engine directly rather than
+  requiring a second runtime.
+
+  Database: PostgreSQL for matters, facts, documents, versions, and audit
+  records. SQLite full-text indexes handle the statutory corpus inside the
+  retrieval engine specifically.
+
+  Document processing: a tiered OCR strategy, local open-source engines for
+  routine material and a cloud document-understanding service for difficult
+  scans, with every result subject to manual verification. Self-hosted OCR
+  is the preferred route for real client documents on privacy grounds.
+
+  Retrieval: a deterministic, rule-based engine using BM25 lexical ranking,
+  a citation graph linking cases to statutory sections, and topic-partitioned
+  indexes. Bounded large-language-model passes are used only for constrained
+  tasks with validated outputs, following retrieval-augmented generation
+  principles with claim-level citation checking and explicit abstention.
+
+  Supporting tooling: Git and GitHub for version control and CI, Vercel for
+  frontend preview deployments, Playwright and axe-core for interface and
+  accessibility testing, Conventional Commits and code review for change
+  control.
+
+The brief is explicit that these selections may change as development
+proceeds; the architecture, not the specific vendor, is the commitment.
+
+4.3 Current implementation status (repository evidence)
+
+The distinction between the target architecture above and what the
+repository actually contains today is material to a feasibility judgment, so
+it is stated here directly rather than left implicit.
+
+What exists now is the research and retrieval track, not the full platform.
+The src/draftly/retrieval package (corpus.py, index.py, search.py,
+answering.py, graph.py, embeddings.py, section_parser.py, evaluation.py,
+qa_evaluation.py, question_analysis.py) implements the corpus, the BM25
+index, the citation graph, and a Gemini-backed answering module, exposed
+through a Streamlit demonstration at apps/statute-retrieval/app.py rather
+than through FastAPI and Next.js. pyproject.toml confirms the stack this
+code actually uses: docling and onnxruntime for document parsing and local
+model inference, google-genai for the bounded language-model passes,
+google-cloud-documentai for the cloud OCR tier, and streamlit for the demo
+interface. (google-cloud-speech and google-cloud-storage are also declared
+dependencies; their specific role was not evident from the code reviewed for
+this report and is worth confirming with the team.)
+
+The README describes the demo's current coverage precisely: 57 statutes and
+18 amendments indexed, no case law yet, Gemini answers limited to retrieved
+sections with each retained claim checked against its citations, and a
+retrieval evaluation running against ten unverified development labels. A
+larger question set exists (18 exam questions and 73 subquestions in
+src/questions.md) but the README states directly that it does not report
+legal correctness without lawyer gold labels.
+
+The data and evaluation layers back this up. data/legal-sources holds the
+normalized corpus (library, library-markdown, manifests, topics,
+curriculum). evaluation/ contains a gold-label file (retrieval-gold.csv), an
+answer-evaluation rubric, a qa-agent baseline/upgraded comparison with
+recorded metrics, and several named evaluation runs (for example
+caselaw-ablation-v1, statute-qa-v2, statute-qa-v2-final) each with its own
+config, metrics, and raw results. notebooks/ contains a BM25 baseline, a
+case-law extraction validation notebook, a corpus exploratory-analysis
+notebook, and a headnote rule-recovery notebook. The most recent commits on
+the repository (as of this report) add a draft retrieval evaluation gold
+set specifically for conveyancing information retrieval, which lines up
+with the brief's claim that the hardest components have already been
+validated through working prototypes.
+
+What is not yet present: the Next.js matter workspace, the FastAPI service
+layer for anything beyond the retrieval engine, PostgreSQL persistence for
+matters and facts, the Tiptap draft editor with schema-locked prescribed
+wording, the deterministic consistency-check engine over verified facts, and
+the Form 8 template itself. These map to stages 2 through 7 of the brief's
+own staged plan (section 8 below) and represent the larger share of
+remaining engineering work. This is not a sign of infeasibility; the brief's
+own logic, that the interface can be built against mock data without waiting
+for the backend, is precisely designed to absorb this gap without stalling
+the schedule. It is, however, the single fact a client or mentor reviewing
+this report should not miss: the corpus and retrieval work is validated, the
+product around it is still to be built.
+
+4.4 Integration points
+
+The system has five points where independently developed components meet,
+and each is a place where a contract has to be frozen and tested rather than
+assumed:
+
+  - Frontend to backend, over typed HTTP interfaces exposed by FastAPI.
+  - Backend to database, PostgreSQL for the matter record, SQLite FTS
+    specifically for the statutory corpus inside the retrieval engine.
+  - Backend to the document pipeline, where OCR and extraction results carry
+    source spans and confidence values into the fact-verification workspace.
+  - Backend to the retrieval engine, where a matter-aware question is
+    answered against the corpus and returned with citations that resolve
+    against it.
+  - Editor to backend, where the Tiptap schema enforces, structurally rather
+    than by convention, that no unverified fact can enter a draft.
+
+4.5 Technical risks
+
+Three risks are specific to this architecture rather than generic to
+software projects. Sinhala OCR quality on old, degraded scans is the least
+predictable element in the pipeline; the brief's answer is to route
+difficult documents through progressively stronger engines and fall back to
+manual entry through the same verification workflow when extraction fails,
+so the system degrades rather than breaks. Language-model reliability is a
+second risk that is disqualifying if unmanaged, since fabricated citations
+are unacceptable in legal work; the mitigation is architectural, models are
+confined to bounded tasks with closed choices and validated outputs, every
+claim must cite resolvable authority, and the system abstains when authority
+is insufficient. Third, components built in parallel by three developers
+(document processing, retrieval and corpus, interface and templates) can
+fail to integrate cleanly; the brief's mitigation is to freeze shared typed
+contracts first and build the interface against mock data shaped like the
+engine's real output before wiring the two together. Section 9 covers these
+and the remaining risk categories in full.
+
+4.6 Conclusion on technical feasibility
+
+Each core framework in the proposed stack, Next.js, FastAPI, PostgreSQL, and
+Tiptap, is mature and well documented, and the components interoperate over
+standard typed HTTP interfaces. More importantly, the highest-risk piece of
+the system, grounded retrieval over a Sri Lankan legal corpus, is not a
+paper design; it runs today, against a real corpus, with recorded evaluation
+metrics. On that basis, and taking the current repository state as evidence
+rather than the brief's description alone, the project is technically
+feasible, with the remaining work concentrated in the platform layer around
+the already-validated engine.
+
+================================================================================
+5. OPERATIONAL FEASIBILITY
+================================================================================
+
+5.1 Fit to real conveyancing practice
+
+The platform is designed around the profession's existing workflow rather
+than a generic document-management pattern. The four notarial functions it
+targets (examination of title, drafting, execution, attestation) are the
+actual stages of a title-registration matter, and the guided workflow steps
+are tied to the statutory provisions that govern each one. The brief states
+this design choice explicitly: the interface reports what is missing rather
+than imposing a generic checklist on the practitioner.
+
+5.2 The lawyer-in-the-loop workflow
+
+The operating principle running through every stage is that automation
+proposes and a lawyer disposes. OCR and field extraction produce candidate
+facts, not accepted ones; a fact only becomes usable once a lawyer verifies
+or corrects it against its source evidence. Consistency checks surface
+mismatches and missing documents but do not resolve them unilaterally.
+Legal question answering cites its evidence and abstains rather than
+guessing when the corpus does not support an answer. Draft generation pulls
+only from verified facts and locked prescribed wording, and a draft still
+requires lawyer approval before export. The audit trail records who did
+what, and when, across all of it.
+
+This is what separates Draftly from a form-filling tool or a legal search
+engine in practice, not just in description: at no point does the system's
+output become a client-facing instrument without a named, accountable
+professional having reviewed it.
+
+5.3 Adoption considerations
+
+The brief's own risk analysis names user adoption directly: practitioners
+may distrust automated assistance, or may find a new workflow more
+burdensome than the manual process it replaces, particularly given how much
+professional liability rides on title examination being right. The
+mitigations offered are that the workflow mirrors the profession's own
+process as described by the domain-expert mentor, that every automated
+output is traceable to evidence and requires explicit approval, and that a
+bilingual interface removes a language barrier that would otherwise limit
+who on a practice's staff can use the system.
+
+One point worth flagging for the team: the brief's evidence for workflow fit
+comes from a single domain-expert mentor, described as a senior practitioner
+and law lecturer, rather than from testing across multiple independent
+practices. That is a reasonable and common way to ground a capstone-scale
+project, but it means workflow validation with a second or third
+practitioner, outside the mentor relationship, would meaningfully strengthen
+the operational feasibility case before any claim of general practice fit is
+made. This is not stated as a gap in the brief; it is an assumption this
+report is flagging based on what the brief does and does not describe about
+its validation process.
+
+5.4 Operational fit summary
+
+Given that every consequential action remains with a qualified lawyer, that
+the workflow is built from and validated against actual notarial practice
+rather than assumed, and that the bilingual interface addresses a real
+adoption barrier rather than a hypothetical one, the platform is
+operationally feasible for the scope it targets. Its operational case is
+strongest for the mentor's own practice pattern and should be treated as
+provisional, not proven, for the broader profession until tested more
+widely.
+
+================================================================================
+6. ECONOMIC AND FINANCIAL FEASIBILITY
+================================================================================
+
+6.1 Development costs
+
+The brief's cost structure is dominated by free and open-source components.
+Development hardware is existing personal computers; no GPU is required
+because model inference runs as an external service and the retrieval core
+is deterministic. Next.js, FastAPI, PostgreSQL, Tiptap's core, Playwright,
+and the supporting toolchain are open source. Cloud OCR runs on a free-tier
+or trial allocation with a capped page budget, with local open-source OCR as
+the default route. Language-model usage runs on free developer tiers, and
+the client is provider-agnostic so a provider can be swapped without code
+changes. Frontend preview hosting and version control and CI both run on
+free tiers.
+
+6.2 Operational costs
+
+Operational costs during the project period stay within free tiers, per the
+brief. A production deployment beyond the project would introduce modest
+recurring costs, managed hosting and database services, document storage,
+and paid OCR or inference tiers if volume grows. The brief characterizes
+this as "the order of a small monthly subscription" without stating a
+figure. A domain name and TLS certificate are noted as minor optional costs.
+
+Assumption flagged for the team: no specific monthly or annual cost estimate
+is given anywhere in the source material for a post-project production
+deployment. "Small monthly subscription" is a qualitative claim, not a
+budget. Before any production rollout is costed for a real practice, this
+report recommends getting concrete quotes for managed PostgreSQL hosting,
+document storage at expected matter volumes, and paid-tier OCR and
+inference pricing, since these are the line items most likely to scale with
+adoption.
+
+6.3 Expected benefits
+
+The brief lists five categories of benefit: reduced professional time per
+matter for title examination, document reconciliation, and drafting; fewer
+transcription and consistency errors, which reduces rework and professional
+risk; faster location of governing provisions through grounded, step-aware
+retrieval; a defensible verification and audit record that improves quality
+control within a practice; and a reusable structured corpus and
+matter-record foundation that lets further regimes and the litigation track
+be added at marginal cost rather than from scratch.
+
+6.4 Conclusion on financial feasibility
+
+None of these benefits are quantified in the source material with a rupee
+figure or a time-saved estimate, so a formal cost-benefit ratio cannot be
+computed from what is available. What can be said with confidence is
+directional: development cost is close to zero because it draws on
+resources the team already has and free service tiers, while the process
+being addressed, title examination and drafting on billable professional
+time, is expensive by nature and carries real liability exposure when it
+goes wrong. On that basis the brief's conclusion, that the financial
+benefits justify the costs, holds. A quantified benefit estimate (hours
+saved per matter, error-rate reduction) would strengthen this section
+considerably and is recommended as a follow-up once the evaluation set
+produces real numbers.
+
+================================================================================
+7. LEGAL AND REGULATORY FEASIBILITY
+================================================================================
+
+7.1 Data protection
+
+The brief designs data handling for compliance with the Personal Data
+Protection Act, No. 9 of 2022: data minimisation, purpose limitation,
+role-restricted access, security safeguards, and retention controls. Real
+client data is kept out of development artefacts entirely. This aligns with
+the repository-level instruction (CLAUDE.md) that data/raw contains private
+legal documents that must not be published, copied into public docs, or
+represented in demo material with real names, NICs, or addresses without
+explicit anonymization approval. The four sample matter bundles currently
+present under data/raw exist for internal pipeline testing; this report does
+not reproduce their contents, consistent with that instruction.
+
+7.2 Confidentiality
+
+The brief addresses legal-practice confidentiality obligations through
+access control, audit trails, and a stated preference for self-hosted
+processing of real client documents rather than routing them through a
+third-party cloud OCR service by default.
+
+7.3 Sources of law
+
+The statutory corpus is assembled from official and public sources; case
+law comes from public records via official and publicly accessible
+repositories. The brief flags one specific limitation: editorial material
+from commercial law reports, headnotes in particular, carries third-party
+copyright and is used only internally for research, never republished. This
+matters directly for the corpus work already in the repository
+(notebooks/04_headnote_rule_recovery.ipynb), and the same restriction should
+apply to any headnote-derived content that reaches a public demo or an
+exported client draft.
+
+7.4 Prescribed forms and statutory wording
+
+Prescribed wording from the governing statute and gazetted forms is
+reproduced exactly and locked against editing in the platform's design. The
+brief is careful about what this does and does not mean legally: drafting
+legal wording in templates remains a human responsibility, and a generated
+draft is an instrument prepared for and approved by a qualified
+professional. On this basis the brief argues the system does not practise
+law or offer legal advice to the public, since no output reaches a client
+without that professional approval step.
+
+7.5 Licensing
+
+The brief states that all selected frameworks, libraries, and fonts carry
+permissive open-source licences compatible with the project's use. This
+report has not independently audited a dependency license file for every
+package in pyproject.toml or a future frontend package.json; before any
+public release, a dependency license scan is a reasonable, low-cost step to
+confirm this claim holds in practice rather than by design intent.
+
+7.6 Electronic documents
+
+Exported instruments follow existing conveyancing practice: printed,
+executed, and attested conventionally. Because of that, the brief notes the
+system does not need to resolve the electronic-execution questions that
+surround instruments excluded from the Electronic Transactions Act, No. 19
+of 2006; the platform's electronic records serve internal workflow and
+audit purposes rather than substituting for physical execution.
+
+7.7 Liability for accuracy
+
+The brief treats the verification architecture itself, evidence-side
+review, explicit verification states, deterministic checks, citation gates,
+abstention, and mandatory lawyer approval before export, as the mitigation
+for liability risk arising from inaccurate automated output. This is a
+reasonable design position: liability risk is addressed structurally rather
+than through a disclaimer.
+
+7.8 Gap flagged for the team
+
+The brief's legal-feasibility discussion is scoped to data protection,
+confidentiality, copyright in source material, and the standing of the
+generated draft. It does not address professional-conduct or regulatory
+requirements specific to notarial practice itself, such as any rules a
+notary's supervising body may impose on the use of software tools in
+preparing instruments for attestation. Nothing in the repository or the
+brief speaks to this, so this report does not assert a position on it. It is
+flagged here as a question worth putting directly to the mentor, given the
+mentor's standing as a senior practitioner, before the platform is used on
+any real matter.
+
+================================================================================
+8. SCHEDULE FEASIBILITY
+================================================================================
+
+8.1 Staged plan
+
+The brief organizes the project into seven ordered stages rather than a
+dated calendar:
+
+  1. Requirement gathering, domain study, and feasibility analysis. Marked
+     complete in the brief: mentor-guided domain model, corpus acquisition,
+     and interface specification.
+  2. Contracts and foundations: the shared matter-record and step-definition
+     contracts that all three workstreams build against.
+  3. Engine and content track: retrieval engine hardening, evaluation sets,
+     and the rule and check catalogue, run in parallel with the interface
+     track.
+  4. Interface track: the full workspace built against typed mock data,
+     matched to the approved interface specification.
+  5. Integration: the interface wired to the service layer, producing the
+     first end-to-end demonstrable path, matter creation through verified
+     facts, checks, grounded answers, and an approved exported draft.
+  6. Completion of remaining workflows, bilingual polish, evaluation
+     against lawyer-verified labels, and hardening.
+  7. Testing, user evaluation with the mentor, documentation, and final
+     reporting.
+
+8.2 Parallelism and risk buffering
+
+Three developers divide the work into three parallel workstreams: document
+processing and extraction; data, corpus, and retrieval engine; and
+templates, output, and the lawyer-facing interface. The brief's schedule
+logic rests on two structural choices: the interface can be built against
+mock data without waiting for the backend to be finished, and stage 5
+defines a minimal demonstrable product early, which protects the schedule
+against overruns in the later, harder stages (bilingual polish, full
+evaluation, hardening).
+
+8.3 Gap flagged for the team
+
+The source material gives ordering and parallelism but no calendar dates,
+durations, or an end date for any stage. This report does not invent one.
+Before this schedule can be tracked against an actual deadline (an academic
+term boundary, a mentor review date, or a submission date), the team should
+attach specific dates to each of the seven stages, ideally with the same
+granularity already used for stage 1 ("complete"). Given that the
+repository's own commit history shows active work on stage 3 (corpus
+normalization, citation graph, retrieval evaluation gold set) as of this
+report's date, stage 3 appears underway rather than pending, which is worth
+reconciling explicitly against the brief's stage descriptions.
+
+8.4 Conclusion on schedule feasibility
+
+The staged structure is sound: it front-loads the highest-uncertainty
+technical work (already partly done, per section 4.3), defines an early
+minimal demonstrable product, and uses parallel workstreams behind frozen
+contracts to avoid one team member blocking another. Whether the schedule
+fits an actual deadline cannot be assessed without the calendar detail
+flagged above.
+
+================================================================================
+9. RISK ASSESSMENT
+================================================================================
+
+The following table reproduces and organizes the ten risk categories the
+brief identifies, each with its stated mitigation.
+
+--------------------------------------------------------------------------------
+RISK CATEGORY       | DESCRIPTION                    | MITIGATION
+--------------------------------------------------------------------------------
+Requirements        | The legal-domain requirements   | Requirements grounded in
+                     | are intricate; misunderstanding | recorded mentor sessions
+                     | the notarial workflow or        | and primary sources; the
+                     | statutory requirements would    | interface specification is
+                     | produce an unusable system.     | reviewed with the mentor
+                     |                                  | before build; prototypes
+                     |                                  | validated at each
+                     |                                  | milestone; changes managed
+                     |                                  | through a controlled,
+                     |                                  | documented process.
+--------------------------------------------------------------------------------
+Schedule             | Development tasks, particularly | Staged milestones with an
+                     | document processing and the     | early minimal demonstrable
+                     | bilingual interface, may take    | product; essential features
+                     | longer than expected.            | prioritised; parallel
+                     |                                   | workstreams behind frozen
+                     |                                   | contracts; progress tracked
+                     |                                   | against the issue tracker;
+                     |                                   | time buffers on the highest
+                     |                                   | risk stages.
+--------------------------------------------------------------------------------
+Technical            | Components built in parallel     | Shared typed contracts
+integration           | (interface, service layer,       | frozen first; interface
+                     | pipeline, engine) may not         | built against mock data
+                     | integrate cleanly.                | shaped like real engine
+                     |                                    | output; integration
+                     |                                    | proceeds screen by screen,
+                     |                                    | starting from the
+                     |                                    | already-validated
+                     |                                    | component; checkpoints
+                     |                                    | tested end to end.
+--------------------------------------------------------------------------------
+Data quality         | Scanned Sinhala documents,        | Tiered OCR strategy with
+                     | legacy fonts, and degraded         | recorded per-document
+                     | source material may yield poor     | status; extraction
+                     | extraction; parts of the legal      | confidence surfaced to the
+                     | corpus may contain OCR artefacts.   | user; mandatory lawyer
+                     |                                      | verification before any
+                     |                                      | fact is used; manual-entry
+                     |                                      | fallback; known-defective
+                     |                                      | corpus segments quarantined
+                     |                                      | until re-extracted; data
+                     |                                      | quality checks in the
+                     |                                      | corpus build pipeline.
+--------------------------------------------------------------------------------
+Model reliability    | Language models may produce       | Models confined to bounded
+                     | plausible but incorrect output,    | tasks with closed choices
+                     | fabricated citations,               | and validated outputs;
+                     | misattributed statutes, or rules    | every claim must cite
+                     | out of context.                     | resolvable evidence; an
+                     |                                      | entailment-style verifier
+                     |                                      | checks claims against
+                     |                                      | cited evidence; explicit
+                     |                                      | abstention when authority
+                     |                                      | is insufficient; machine
+                     |                                      | generated links stay marked
+                     |                                      | unverified until lawyer
+                     |                                      | review; measured evaluation
+                     |                                      | gates any capability before
+                     |                                      | it is called reliable.
+--------------------------------------------------------------------------------
+Security             | Unauthorised access to matters    | Authentication with
+                     | and client documents.              | role-based access control;
+                     |                                     | protected document storage;
+                     |                                     | encryption in transit; audit
+                     |                                     | logging of consequential
+                     |                                     | actions; secure coding
+                     |                                     | practices and dependency
+                     |                                     | review; security testing
+                     |                                     | before deployment.
+--------------------------------------------------------------------------------
+Privacy              | Conveyancing bundles contain       | Real client material
+                     | sensitive personal data, whose      | confined to a restricted
+                     | exposure would be a serious          | research store, never
+                     | breach.                              | committed to shared repos
+                     |                                       | or demos; demonstration
+                     |                                       | and evaluation content is
+                     |                                       | synthetic or anonymised;
+                     |                                       | self-hosted processing
+                     |                                       | preferred for real client
+                     |                                       | documents; role-restricted
+                     |                                       | access; data minimisation
+                     |                                       | and retention rules aligned
+                     |                                       | to the PDPA.
+--------------------------------------------------------------------------------
+External service     | Hosted OCR and inference           | Inference client is
+                     | services may impose quota           | provider-agnostic behind a
+                     | limits, change pricing, or          | standard interface; local
+                     | become unavailable; free-tier        | open-source fallbacks exist
+                     | quotas have already been             | for OCR and can exist for
+                     | exhausted mid-task during             | inference; long-running jobs
+                     | the research phase.                   | are checkpointed and
+                     |                                        | resumable; cloud usage is
+                     |                                        | budgeted and metered against
+                     |                                        | a recorded ceiling; the
+                     |                                        | demonstration path runs
+                     |                                        | fully on local data.
+--------------------------------------------------------------------------------
+Performance          | Retrieval over a large corpus,    | Persistent precomputed
+                     | document processing, and dense     | retrieval indexes;
+                     | review screens may become slow      | asynchronous background
+                     | as data grows.                       | processing with visible
+                     |                                       | progress states; database
+                     |                                       | indexing and query review;
+                     |                                       | caching of static corpus
+                     |                                       | content; performance testing
+                     |                                       | on realistic matter sizes.
+--------------------------------------------------------------------------------
+User adoption        | Practitioners may distrust        | System designed around the
+                     | automated assistance or find       | profession's own workflow
+                     | a new workflow more burdensome      | as described by the domain
+                     | than established manual             | mentor; every automated
+                     | practice.                            | output traceable to
+                     |                                       | evidence and subject to
+                     |                                       | explicit lawyer approval;
+                     |                                       | interface reports what is
+                     |                                       | missing rather than
+                     |                                       | imposing checklists;
+                     |                                       | usability evaluation
+                     |                                       | conducted with the mentor;
+                     |                                       | bilingual interface removes
+                     |                                       | a language barrier.
+--------------------------------------------------------------------------------
+
+None of the ten risks carry a likelihood or severity rating in the source
+material; the table above is presented in the brief's own order, not ranked
+by this report. If the team wants a prioritized risk register (for example,
+to decide where to spend limited testing time first), that ranking would
+need to be assigned by the team and mentor rather than inferred here, since
+doing so would mean inventing a judgment the source material does not make.
+This report's own view, offered as a recommendation rather than a source
+claim, is that model reliability and data quality deserve the earliest
+attention, since both sit directly upstream of every other guarantee the
+system makes.
+
+================================================================================
+10. ALTERNATIVES CONSIDERED
+================================================================================
+
+10.1 Continue the manual process
+
+The default alternative is no system at all: continued manual reconciliation
+of document bundles and manual drafting. The brief's own needs analysis
+(section 2.3 of this report) argues against this on the grounds that manual
+reconciliation is slow and error-prone, sources of law are fragmented and
+hard to search step-by-step, transcription is a standing source of risk, and
+there is no systematic verification record. This alternative costs nothing
+to adopt and requires no feasibility discussion, but it also does not
+address any of the four problems the brief identifies.
+
+10.2 Existing Sri Lankan legal research platforms
+
+LawLanka and LawCeylon provide commercial access to Sri Lankan legislation
+and law reports; Paralegal.lk and AI PAZZ offer search-oriented assistance
+over local legal content. The brief's assessment is that these serve legal
+research, retrieval of legislation and case law by query, and do nothing
+else: they do not manage matters, extract or verify facts from client
+documents, check cross-document consistency, or generate instruments.
+Draftly's retrieval component covers similar ground to these tools, but as
+one piece inside a verified drafting workflow rather than as the product
+itself. Adopting one of these platforms instead of building Draftly would
+leave every other problem in section 2.3 unaddressed.
+
+10.3 International AI legal platforms
+
+Harvey is named in the brief as a prominent example of an AI-assisted legal
+workspace combining document analysis, drafting assistance, and workflow
+features for large law firms. The brief credits it with demonstrating that
+the calm, matter-centred professional workspace pattern works in practice,
+which is part of why Draftly's own interface follows a similar shape. Its
+limitation for this context is direct: it does not address Sri Lankan law,
+Sinhala-language documents, local registration regimes, or the prescribed
+forms that govern local notarial practice, and it is commercially positioned
+toward large international firms rather than local practitioners. Adapting
+or licensing a platform like this was not a viable alternative given that
+gap.
+
+10.4 General-purpose consumer language models
+
+Consumer chatbots built on large language models can summarise and draft
+text, but the brief is blunt about why this is not a workable alternative
+for this domain: they lack access to the governing local sources, provide no
+provenance for their claims, and hallucinate authority. They offer no matter
+record, no verification workflow, and no audit trail. Given that the brief
+treats fabricated citations as a disqualifying failure mode in legal work,
+this alternative was set aside rather than adopted in any form.
+
+10.5 Why the proposed approach was chosen
+
+The brief's own conclusion is that no existing system combines, for the Sri
+Lankan context, bilingual document extraction with lawyer verification,
+deterministic title-consistency checks, grounded question answering over
+local statutes and case law, and template-constrained generation of
+prescribed instruments. That combination, not any single piece of it, is
+what the alternatives above each fail to provide, and it is the gap Draftly
+is built to fill.
+
+================================================================================
+11. CONCLUSION AND RECOMMENDATION
+================================================================================
+
+Across the seven dimensions examined in this report, technical, operational,
+economic, legal and regulatory, schedule, risk, and alternatives, the
+project holds up as feasible. The technical case is unusually well
+supported for a project at this stage, since the hardest component,
+grounded legal retrieval over a Sri Lankan corpus, already runs as code with
+recorded evaluation metrics rather than existing only as a design on paper.
+The operational case rests on a workflow built from and validated against
+actual notarial practice, provided the current single-mentor validation is
+broadened before any general claim of practice fit is made. The economic
+case is directionally sound but not quantified: no cost-benefit figure
+exists yet, only a reasonable argument that near-zero development cost
+against an expensive, high-liability manual process should net favourably.
+The legal and regulatory case is well handled for data protection,
+confidentiality, and the standing of generated drafts, with one open
+question, notarial professional-conduct requirements, that the brief does
+not address and that this report recommends raising with the mentor
+directly. The schedule is structurally sound but lacks calendar dates. The
+risk register is thorough and each risk carries a concrete mitigation rather
+than a general reassurance.
+
+Recommendation: proceed with the project as scoped in the brief, following
+its own staged plan. Three actions would strengthen the case further before
+or during the next stage of work: attach calendar dates to the seven
+schedule stages so progress can be tracked against a real deadline; obtain
+concrete hosting, storage, and inference pricing to replace the current
+qualitative cost estimate before any production deployment is planned; and
+validate the workflow with a second practitioner outside the mentor
+relationship once the interface reaches a demonstrable state, to test
+whether the operational fit generalizes beyond the one practice it was
+designed against.
+
+None of these three actions block the next stage of work. They are
+refinements to an already sound plan, not preconditions for starting it.
+
+================================================================================
+GAPS AND ASSUMPTIONS TO CONFIRM WITH THE TEAM LEAD
+================================================================================
+
+  1. No calendar dates, durations, or deadline exist in the source brief for
+     any of the seven schedule stages beyond stage 1 being marked complete.
+     Section 8 flags this; a dated schedule is needed before schedule risk
+     can be tracked meaningfully.
+  2. No specific cost figure exists for post-project production hosting,
+     storage, or paid-tier OCR/inference. The brief's own language ("a small
+     monthly subscription") is qualitative. Section 6 recommends getting
+     real quotes before this is used in any funding or pricing discussion.
+  3. Workflow validation in the brief rests on one domain-expert mentor.
+     Section 5 flags that broader validation would strengthen, not replace,
+     this before claiming general fit across Sri Lankan conveyancing
+     practice.
+  4. The brief's legal-feasibility section does not address
+     professional-conduct or regulatory rules specific to notarial practice
+     (as distinct from data protection and copyright, which it does cover).
+     Section 7 recommends raising this directly with the mentor given their
+     standing as a senior practitioner.
+  5. The purpose of the google-cloud-speech and google-cloud-storage
+     dependencies in pyproject.toml was not evident from the code reviewed
+     for section 4.3; worth a quick confirmation with whoever added them.
+  6. Team index numbers are left as placeholders in the source brief and are
+     not reproduced here; they should be filled in before this report is
+     used in any formal submission.
+  7. This report was not able to independently verify the open-source
+     licence claim in section 7.5 against every dependency; a dependency
+     licence scan is recommended before any public release.
