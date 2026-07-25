@@ -1,0 +1,11415 @@
+# The Supreme Court Reports
+
+This is a digital copy of a book that was preserved for generations on library shelves before it was carefully scanned by Google as part of a project
+to make the world's books discoverable online.
+
+It has survived long enough for the copyright to expire and the book to enter the public domain. A public domain book is one that was never subject
+to copyright or whose legal copyright term has expired. Whether a book is in the public domain may vary country to country. Public domain books
+are our gateways to the past, representing a wealth of history, culture and knowledge that's often difficult to discover.
+
+Marks, notations and other marginalia present in the original volume will appear in this file - a reminder of this book's long journey from the
+publisher to a library and finally to you.
+
+Usage guidelines
+
+Google is proud to partner with libraries to digitize public domain materials and make them widely accessible. Public domain books belong to the
+public and we are merely their custodians. Nevertheless, this work is expensive, so in order to keep providing this resource, we have taken steps to
+prevent abuse by commercial parties, including placing technical restrictions on automated querying.
+
+We also ask that you:
+
++ Make non-commercial use of the files We designed Google Book Search for use by individuals, and we request that you use these files for
+personal, non-commercial purposes.
+
++ Refrain from automated querying Do not send automated queries of any sort to Google's system: If you are conducting research on machine
+translation, optical character recognition or other areas where access to a large amount of text is helpful, please contact us. We encourage the
+use of public domain materials for these purposes and may be able to help.
+
++ Maintain attribution The Google "watermark" you see on each file is essential for informing people about this project and helping them find
+additional materials through Google Book Search. Please do not remove it.
+
++ Keep it legal Whatever your use, remember that you are responsible for ensuring that what you are doing is legal. Do not assume that just
+because we believe a book is in the public domain for users in the United States, that the work is also in the public domain for users in other
+countries. Whether a book is still in copyright varies from country to country, and we can't offer guidance on whether any specific use of
+any specific book is allowed. Please do not assume that a book's appearance in Google Book Search means it can be used in any manner
+anywhere in the world. Copyright infringement liability can be quite severe.
+
+About Google Book Search
+
+Google's mission is to organize the world's information and to make it universally accessible and useful. Google Book Search helps readers
+discover the world's books while helping authors and publishers reach new audiences. You can search through the full text of this book on the web
+
+
+at |http : //books . google . com/
+
+
+HL anau e
+
+
+CEV
+
+
+HARVARD LAW LIBRARY
+
+
+Received J€^«^ ^ fH %
+
+
+k
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+THE
+
+
+SUPREME C0UllTHEP()HT8
+
+
+"Reports of @a$c$ 9cci6c^
+
+
+THE SUPREME COURT OF CEYLON .
+
+
+WITH A ^
+
+
+G^ DICIEST, 3Sa
+
+
+CDITBD BT
+
+
+CHAS. M. FERNANDO, HERMANN A. LOOS,
+
+AND
+
+H. A. JAYEWARDENE,
+o
+
+ADVOCATES.
+
+Volume II.-1893.
+
+Printkd at the ** Ceylon Independent" Press. -'- i
+
+
+1804.
+
+
+Digitized by VjOOQIC
+
+
+/, /fol
+
+
+Digitized by VjOOQIC
+
+
+DIGEST.
+
+
+VOLUME II.— (1893.)
+
+
+ABATEMENT OF RENT. Page
+
+Set Landlord and Tenant, i.
+ACTIO PERSONALIS MORITUR CUM PERSONA.
+
+See Tort.
+ADJUSTMENT OP DECREE.
+
+See Judgment, i.
+ADMINISTRATION.
+
+Administrator — Right to be Hued' hij creditor of deceased
+intestate — Cluipters XXXVIII and L F, Civil Procedure
+Code — Judicial settlement.
+
+The right of suing the administrator of a deceased intestate accrues
+to the creditors of the deceased immediately upon the grant of letters of
+administration.
+
+The Civil Procedure Code nowhere prohibits a creditor from suing an
+adiiiinis rator or execuior of a deceased, till one year has expired from the
+dac of probate or grant of Letters of Administration.
+
+Observations by WITHERS, J., upon the object and effect of the judicial
+settlement of an estate under Chapter LV of the Civil Procedure Code.
+
+D. C, Colombo, No. 3,085. Perera v. Fernando. . . 54
+ADMIRALTY.
+
+AdmxralUj — CoUision — Foreign vessel^ action against —
+Admiralty Jurisdiction of tlie Suj)re)ne Court of
+Ceylon — Vice- Ad mi rally Act of 1863 — Ordinance No. 2
+of 1891.
+
+The Supreme Court of Ceylon in its Admiralty Jurisdiction has the
+same powers as the High Court of England in its Admiralty Jurisdiction, and
+must have the same regard as that Court to international law and the
+comity of nations.
+
+Hence, the Supreme Court of Ceylon in its Admiralty Jurisdiction
+can entertain a claim for damages against a Foreign Vessel lying in the
+harbours of Ceylon for injuries caused by her to a British ship on the
+High Seas.
+
+The procedure to be followed in the exercise of such jurisdiction
+is the procedure enacted by the Vice-Admiralty Act of 1863.
+
+*'TheGelderland" ... ... — — ^3
+
+
+Digitized by VjOOQIC
+
+
+( a )
+
+
+Page
+
+
+AFFIDAVIT, MAKING FALSE STATEMENT IN.
+
+See Criminal Law, 4.
+AGREEMENT.
+
+Agreement by a rmtker to give lier daughter in marriage
+— How to he cmvttrued and hoivfar binding.
+
+Plaintiff in his libel averred that he proposed and ag^reed to and with
+defendant that he should marry defendant's daughter and that defendant's
+daughter being then a minor, defendant, who according to custom had
+control and authority over hfir to enable her to give her in marriage, agreed
+that her daughter should marry plaintiff within a reasonable time.
+
+Plaintiff further averred that the defendant failed to perform her part
+of the agreement in that she proposed that her daughter should marry another
+man*
+
+Hdd^ that the agreement on defendant's part amounted simply to one
+that plaintiff would have her consent to marry her daughter, and, as such, was
+a valid agreement for breach of which plaintiff was entitled to damages.
+
+//"W. further that the fact that defendant proposed that her daughter
+should mjirry another, did not constitute a breach by her of her _ part of
+the agreement.
+
+D. C, Batticaloa, No, 24,194. Pammodarampillai v,
+Pangaramuttupillai ... ... ... ... 53
+
+ALTERATION OF CHARGE.
+
+See Criminial Law, 5.
+AMENDMENT.
+
+Set Pleadings, i,
+APPEALABLE ORDER.
+
+i. — ApjmilOrble ord^r — Recognised Agent — Proxy — Cor-
+poration Aggregate — Seal--Rerogn iacd Agent— Civil
+Procedure Code, Sects, 765, 24, 27, and 470 — Ot^inancc
+No. 22 of 1866.
+
+The plaintiff compa-y having obtained an interim injunction against
+the defendant company, the latter purported to present a petition to the
+Court applying for a discharge of the injunction. The petition purported
+to be signed by F. L., proctor for the petitioning company, and one
+J. K. After argument the District Judge made order disallowing the
+apolication as made by F. L.. as proctor of the Company, on the ground
+that the Company hka no status to make such an application through F. L.
+
+. Held, (i) that this was an appealable order. (2) that as the appli-
+cation and proxy had not been taken off the Court's file, and the petition
+of appeal was signed by F. L., the requirements of section 755 of the
+Civil Procedure Code as to signing of the petition of appeal had been
+complied with.
+
+A Joint Stock Co. is a corporation aggregate, which cannot appear
+in an action, and is consequently outside the provisions of section 24 of
+the Civil Procedure Code.
+
+Except as provided by special enactment a corporation aggregate,
+can only appear to an action by an Attorney made under its seal, or by
+Attorney appointed in writing by an Agent, and empowered under the
+Company's seal to bring an action, or defend one (See O. B. C. r. Corbet,
+4 S. C. C, 158).
+
+D, C, Colombo, No. 3,762. The Sewing Machine Case ... 27
+
+
+Digitized by VjOOQIC
+
+
+2— Judgment— AppealalU Order— Civil Procedure Code^
+Sects. 508^ and 754 — Courts Ordituuice^ section 39.
+
+The plaintiff^ a Nindagama proprietor, sued the defendants -as
+para wen i tenants of the Nindagama for services alleged to be due but
+not performed by them. The defendants filed answer objecting, as a matter
+of law, that the plaint disclosed no cause of action. The District Judge
+upheld the claim, and decreed a sum of Rs. 121.25 ^^ ^^^ plaintiff, reserving
+for further adjudication the proportion payable by each. The defendants
+appealed.
+
+Ifeld, (WiTHEBS. J. dissenting) that the order was an appealable one.
+D. C, Kegalla, No. 224. Siatu v. Saduwa ... ..• 123
+
+S^See Revision.
+ARRACK.
+Arrack — Possession — Removal — "-4 gallon or thereahouts^^^
+Ordinance No. 10 of 1844, section 8S.
+
+Section 33 of Ordinance lo of 1844 enacts that **no spirit distilled
+from the produce of the cocoanut or other description of palm, or of the
+sugar cane, in any quantity exceeding two quarts, shall be removed
+without a permit accompanying the same "; —
+
+Helti, that, under this section, it. was not an offence to be in posses-
+sion of more than two quarts of arrack without a permit.
+
+The accused was charged with "having been in possession of one
+gallon of arrack or thereabouts without a permit.
+
+Held, that the charge was bod, inasmuch as a gallon or thereabouts
+may be less than two quarts.
+
+P. C, Kandy, No. 17,130. Dissanayekb v. Appuhami ... 151
+BOLTING HORSE, ACCIDENT CAUSED BY.
+
+See Negligence
+BONA FIDE BELIEF OF ACCUSED THAT THE PRO-
+PERTY IS HIS OWN.
+
+See Criminal Law, 6.
+BURDEN OF PROOF OF NEGLIGENCE.
+
+See Negligence.
+CHARGE.
+
+1—CJiarge — Warrant of Commitment — Jurisdiction of
+
+Police Court— Escape or rescue under sections 219 and
+220 of tlie Ceylmi Penal Code.
+
+The charge in a prosecution before a Police Court for escape or rescue
+under sections 219 and 220 of the Ceylon Penal Code must disclose the
+nature of the offence for which the prisoner escaping or rescued had been
+taken into custody, it being competent to a Police Magistrate to try such
+a charge where the escape or rescue was from custody in which the pri-
+soner was lawfully detained for an offence with which he was charged, or
+of which he had been conviced, only when such offence was itself cognis-
+able by a Police Court. ,. , . 1
+
+The warrant of commitment in the present case not disclosing the
+Maeistate's jurisdiction to ly the charge on which the prisoners had
+been convicted, the Supreme Court held that, even if warrants of coip-
+mitment were open to amendment, the present one could not be cured
+in consequence of the defective nature of the charge in the case.
+
+P. C, BaduUa, No. 10,944. Rambukpotha v. Menica ... 73
+
+
+Digitized by VjOOQIC
+
+
+( »▼ )
+
+
+ALTERATION OP.
+
+See Criminal Law, 5.
+CIVIL PROCEDURE CODE.
+Section 18.
+
+See Kandyan Law.
+Sections 24 and 37.
+
+Sec Appealable Okf)er, i.
+Section 55
+
+See Plaint, 2.
+Section 92.
+
+See Plaint, 2.
+Section 93.
+
+See Pleadings, i.
+Section 232.
+
+See Decree-holdek.
+Section 243.
+
+See DBCKEfci-HOLnEK.
+Sectiom 246 and 247,
+
+See Decree-holder.
+Section 247.
+
+See Minor.
+Section 298 and 306.
+
+See Writ Agaim.st Person.
+Section 326.
+
+See Execution of Decree.
+
+Section 337.
+
+See Decree.
+Section 345.
+
+See Cross-Decrees.
+Section 349.
+
+See Judgment, i.
+Section 352.
+
+See Decree-holder.
+Section 356.
+
+See Plaint, 2.
+Section 372.
+
+See Criminal Law, 4.
+Sections 406 and. 407.
+
+See Plaint.
+Section 470.
+
+See Appsalable Order, i.
+
+
+Digitized by VjOOQIC
+
+
+( V )
+
+Section 4S1.
+See Minor.
+
+Section 508.
+
+See Appealablf Order, 3.
+
+Section 682,
+See Minor.
+
+Seetion 764,
+
+See Appealable Order. 2.
+
+Seditm 766,
+See Plaint, 2.
+
+Section 797.
+
+See Criminal Law, 4.
+
+Section 800.
+
+See Exec ution of Decree.
+
+Chapters XXXVIII and LV.
+
+Hce Administrator.
+CLAIM BY MINOR TO PROPERTY SEIZED IN EXECUTION.
+
+See Minor.
+COLLISION.
+
+Set- Admiralty.
+CONTEMPT OF COURT.
+
+See Criminal Law, 2.
+
+—Criminal Law, 4.
+
+Execution ok Decree.
+
+CORPORATION AGGREGATE.
+
+See Appealable Order, i.
+COVENANT TO PAY RENT, BREACH OF.
+
+See Lease, i.
+COVENANT FOR QUIET POSSESSION, BREACH OF.
+
+See Lease, 2.
+CRIMINAL LAW.
+
+1. — Itinerating Police" Court - Ordinance No. 12 of 1890 —
+Evidence — Dislwnestly retaining stolen property.
+
+Ordinance No. 12 of 1890 enacts that a Police Court " lawfully
+established in any division shall be holden by and before the Police
+Magistrate appointed thereto, at any convenient spot, within the limits
+of such division ": — Memhh per Lawrie, a. c. j.. that it is desirable
+that, in the case of Police Courts held at different places, as
+permitted by this Ordinance, the Police Magistrate shou'd state, as a
+matter of record, that the place at which he holds his Court is within his
+division, and that it is at a convenient spot for the trial, and that he
+had given due notice that he would sit there.
+
+Observations on the inconvenience and hardships to which suitors
+and witnesses having to attend the Police Court, lo which the present
+case belongs, are exposed.
+
+On a charge, under section 394 of the Ceylon Penal Code,
+of dishonestly retaining stolen property, knowing or having reason 10
+believe the same to be stolen, it is necessary that the prosecution should
+prove facts from which it could reasonably be inferred that the possession
+by the accused was dishonest.
+
+Ad. P. C, Colombo, No. 472, Perera v, Harmanis ... 33
+
+
+Digitized by VjOOQIC
+
+
+2, — Contempt of Court — Jurisdiction — Penal Code,
+Sect, 223.
+
+Accused were convicted, by the Commissioner of the Court of
+Requests of Kurunegalle, of contempt of Court, in that they interrupted
+the business of the Court by conducting, close to it, a noisy procession.
+
+ffeldf that the conviction was wrong, inasmuch as the commissioner was
+not competent to try an alleged offence of contempt not committed in
+the presence qf his Court, and not committed in the course of any
+act or proceeding in his Court and declared by any law to be punishable
+as contempt of Court.
+
+If the conduct of accused amounted to an offence at all, it< was that de-
+scribed by Section 223 of the Penal Code, and triable only by another and
+competent, court. Moreover, the charge should have specified the judicial
+proceeding in which the Court was engaged when interrupted.
+
+1,646,
+
+C. R, Kurunegalle, No. In the matter of a charge
+
+1,492.
+of contempt of Court against Perera and others. ... 39
+
+S. — Oi'dinance No. 14 of 1878, Sections 5 and, 7 — Repeal —
+Weights and Measures — Striker — Pf^nal Code,
+Sect. 289.
+
+Section 5 of the Weights and Measures Ordinance No. 14 of 187^
+specially provides against the use of a measuring striker which is not
+round and straight and of the same diameter from end to end.
+
+Hffld, that this section has not been affected by the repeal of section
+7 of the same Ordinance, which makes the use of a striker not in con-
+formity with the terms of this section, an offence punishable with fine or
+mprisonment, and that the provision of this section now comes within
+the provision of section 289 of the Penal Code, which enacts as follows : —
+
+^•Whoever wilfully neglects or omits to perform any duty imposed
+upon him by, or wilfully disobeys or infringes, any provision of any
+Ordinance or statute heretofore or hereafter to be enacted, for which
+neglect, omission, disobedience or infringement, no punishment is or shall
+be, by this Code, or any other Ordinance or statute otherwise specially
+provided, shall be punished with a fine."
+
+P. C. Hatton, No. 12,940. Harman r. Muttiah and
+others. ... ... ... ... ... 44
+
+4 — Cfmfempt of Court — making of false statement in
+ajfldarit of servics of process — Penal Code, Sect.
+22s— Civil Procedure Code, Sects. S72 and 797.
+
+The making of a false statement of fact in an affidavit is not a
+contempt of Court, but the making of a false statement of fact by an
+Officer charged with the execution of process in his affidavit of service of
+process is an offence, which is punisnable. as contempt of Court, under
+Sect. 372 ol the Civil Procedure Code.
+
+D. C. Criminal, Negombo, No. 1,030. The Queen v.
+
+' Fern.\sdo ... ... ... ... ... 46
+
+
+Digitized by VjOOQIC
+
+
+( ^ )
+
+S. — Crimmal Trenpass^Charge — Misckief-^Peptal Gode^
+Sects. 457 and 408,
+
+Accused was charged with Criminal trespass in that he ''entered
+upon land in the possession of H. A. with intent to commit an offence/'
+
+Held^ that ' in such a charge it is essential that the offence intended
+to be committed by the accused after entry should be stated, and that
+the above charge was bad for want of such statement. The evidence^
+shewing that accused entered upon the land to intimidate, insult and
+annoy the Compiainani. The Supreme Court, however, altered the cbar^
+accordingly, and convicted accused thereupon.
+
+Ad. P, C. Colombo, No. 490. Andree i\ Coorav ... 49
+
+6.— Mischief— Petuil Code, Sect. 409— Bond fide belief of
+tJis (weii4^ that tlie property in Jus own.
+
+The accused really believing that they had a right of way over the
+prosecutor's land, cut down a portion of a fence which he had put up to
+prevent their entering his land in order to assert their supposed right of way.
+
+1/M, That the accused were not guilty of mischief, as no person can
+be convicted of mischief who deals injuriously with property in the bonA fide
+belief that it is his own.
+
+P. C, Panadura, No. 8,999. Fernando v. Bemappu .. 66
+
+7. — Resistance to arrest — Police — Penal Code^ Sects.
+156 and 219 — Cnminal Procedure Code^ Sect. 34.
+
+A Police officer has no power under Section 34 of the Criminal
+Procedure Code to arrest, withouta warrant, parties engaged in committing an
+aflfray, as defined in section 156 of the Penal Code.
+
+P. C. Panadure, No. 9,148, Jayen v. Alloesinno. ... 78
+
+8 — Offence punishable irith ifnprisonnfcnt or fine —
+Iniprisotunent in default of payment of such fine — Penal
+Code, Sects. 63 ami 454.
+
+Section 454 of the Penal Code enacts that "whoever commits forgery
+shall be punished with imprisonment of either description which may
+extend to five years, or with fine, or with both."
+
+Hcld^ that the offence being punishable with a fine alone, the term
+of imprisionment, in default of payment of such, fine, should be regulated
+by section 63 of the Penal Code.
+
+D. C, Criminal, Matara, No. 9,007. The Queen r. Babun 12S
+CRIMINAL PROCEDURE CODE.
+Section 34.
+
+Sir Ckimfnal Law. 7.
+Chapter V.
+
+8fe Gaming, 3.
+CRIMINAL TRESPASS.
+
+:Ste Criminal Law, 5.
+CROSS DECREES.
+
+
+Digitized by VjOOQIC
+
+
+( viii )
+
+Cross decrees set off— Civil Procfedure Code, Sect. 46.
+
+A decree obtained against the husband alone, cannot be set off against
+a decree obtained by the husband and wife against the decree holder.
+
+A decree obtained apfainst a person as administrator, cannot be set
+off against a decree obtained by him personally.
+
+D. C. Matara, No. 35,936. Missy Nona and her hus-
+band V. Jayasooria and another ... ... 79
+
+CROWN GRANT.
+
+Crown Grant —Presuiaptioh of title — Hebuttahle — Sect, 6
+
+of Ordinance No, 12 of 1840,
+
+The statutory presumption created hy sepion 6 of Ordinance 12 of
+1840, that all " C5henas and other lands which can only be cultivated after
+intervals of several years, shall be deemed to be forest or waste lands"
+and therefore the property of the Crown, is a rebuiuble presumption.
+
+Lewis t?. Kiri Apoo 5 S. C. C. 194 followed.
+
+Per Withers, J. — The presumption of title thus created attaches
+lo the land after it has passed from the Crown to a private subject.
+
+D. C. Matara, No. 230. Weeresekere v, Seelwvanka. 12
+
+DECREE.
+
+Decree — Execution for part of Debt — Waiver—Civil Procedure
+
+Code, Sect. 337.
+
+A judgment creditor may not issue execution for a part of the debt,
+unless he waives his right to recover the rest, and each of sicveral joint
+judgment creditors may not issue separate writs to recover a fractional
+share of the debt due to them jointly.
+
+D. C. Matara, No. 34,620. Ibrahim v. Tillekeratne. ... 67
+DECREE, EXECUTION OF.
+Execution of decree — Refusal to yield up ftoHsession—
+
+Contempt of Cou^t — Civil Procedure Cffde, Sects.
+
+326, afid 800.
+
+Refusal to yield possession of lands under a decree of Court does
+not amount to a contempt of Court.
+
+D. C. Criminal, Chilaw, No. 26,193. Fernando v.
+Fernando. ... ... ... ... 145
+
+DECREE-HOLDER, ACTION BY.
+
+Decree-holder — Sale in fxecution — Unsatisfied decree —
+Necessary averments in j)laint^Civil jfrocedure Code,
+Sfct. 247.
+
+In an action by the decree-holder under section 247 of the Civil
+Procedure Code, to nave it declared that certain properties are liable to be
+sold in satisfaction of the decree in his favour, it must be alleged and proved
+that at the date of the institution of the action the decree was unsatisfied.
+
+D. C. Kalutara, No. 640. Perera r. Aberan. ... 119
+
+Digitized by VjOOQIC
+
+
+( ix )
+DEPENDANT. AS PLAINTIFF'S WITNESS.
+Defendant as plaintiff's mtness^Tnferested jtarty —
+Adverse witness— 17 and 18 Vict. Cap, 125, Sect. 22.
+
+The evidence of a defendant called by the plaintiff as his witness, is
+not conclusive against the plaintiff.
+
+Such evidence is no more than the evidence of an interested party,
+which may be contradicted by the evidence of other witnesses.
+
+D. C, Galle, No. 1,178. Siman t\ Nando. ... ... 153
+
+DESTRUCTION OF THING LENT OR HIRED.
+
+See Loan.
+DISHONESTLY RETAINING STOLEN PROPERTY.
+
+See CriMINAF. l.AW. i.
+EJECTMENT.
+
+EjecUnent — Mortgage — Sale hg Mort^/a^jor — Svbsequent
+
+sale under Mortgage decree.
+
+A. mortgaged a land to W. and subsequently sold it to S, for the
+purpose of paying off some mortgages that had existed before that of \Vs.
+W. subsequently sold it urjer a mortgage decree, and having bought it
+himself obtained a Fiscal's conveyance.
+
+Hefd^ that W. had no right to ejects, as at the time of W.'s pur-
+chase A. had no right, title, or interest for the Fiscal to seize or convey.
+
+D. C, Galle, No. 676. Weeratne v. Silva. 24
+
+ENTRY IN CHECKROLL.
+
+See Labourer.
+EXCLUSION OF LIGHT AND AIR.
+
+See Mandatory Injunction.
+EXECUTION FOR PART OF DEBT.
+
+See Decree.
+EXEMPTION FROM PAYMENT OF TOLL.
+
+See Toll.
+FISHING.
+
+Fishing in tlie high seas — Disturbance ofHghtof-^Dam-
+ages.
+
+A party enclosing a shoal of fish within a net in the high seaa, al-
+though he has not actually captured them, has sufficient possession of them
+to entitle him to maintain trespass against one who forcibly prevents
+him from drawing his net and securing the said shoal of fish. .
+
+C. R., Trincomalie, No. 723. Arunakam v. Tampaiya. ... 57
+FRAUDULENT CONVEYANCE.
+
+FrauduleHf Conveyance — Deed Jwld void iti one suit —
+
+Validity.
+
+A deed held to be fraudulent in a suit does not iptto Jacto become void
+as against those who were no parties to the suit.
+
+D. C, Galle, No. 1,084. Francina v. Nicholas ... 85
+
+Digitized by VjOOQIC
+
+
+C X )
+
+GAMING.
+l.—Oaming— Ordinance No. 17 of 1889— Effect of Stake.
+
+The essence of the offence of ^[amingr, as defined by the Ordinance No.
+1 7 of 1889, is the existence of a stake, for which the parties game :
+the Ordinance does not prohibit an assemblage of people from playing games of
+chance, provided there be no stake.
+
+P. C, Anuradhapura, No. 15,032. Puhaitamby v. Carolis 62
+
+2.^0amm(j- Sfake^ Ordinance No. 17 of 1889.
+Under Ordinance No. 17 of 1889, the playing of games of chance is lawful,
+provided there be no stake.
+
+Obser\ations by Lawrie, .\.C.J., on the history of the gaming laws
+of Ceylon.
+
+P. C, Panadure, No. 8,816. Perera v. Sadirappu 75
+
+3.— Gaming— 'Ordinance No. 17 of 1889, sections 7, 8 and
+20— Criminal Procedvre Code. Chap. V.-^Instnimefits
+for gaming — Arrest of fcccused— Presumption under
+the Ordinance.
+
+If instruments for gaming are seized in a house, admittedly a private
+house, it is incumbent on the prosecuiion to prove that the house was
+a common gaming place.
+
+The discovery by Police witnesses of instruments for gaming inside
+the house, and the escape therefrom of persons seen therein, do not consti-
+tute a presumption under the Gaming Ordinance. Such presunaption can
+only arise when persons, or instruments for gaming, are found in a place
+visited by the Police Magistrate himself under section 8, by a Police Ofticer;
+under a warrant in terms of section 7.
+
+A Police Magistrate can visit a house or issue his warrant to a Police
+officer only in the circumstances mentioned in the 7th and 8th sections.
+
+Add, P. C, Colombo, No. 4,821. Jonklaas v. Perera 95
+
+GUARDIAN, MORTGAGE BY
+
+See Mortgage, i.
+GUARDIAN AD LITEM.
+
+See Minor.
+HEIRS, LIABILITY OF
+
+2. — Adiating an inheritance — Widotv and children of
+deceased debtor — Executor de son tort — Liability of lieirs.
+
+Observations on the alleganda ct probanda necessary to render an heir
+in possession of the deceased's estate liable for the debts of the deceased, and
+the extent of such liability.
+
+D. C, Kandy. No. 90,200, VI. S. C. C. 13. followed.
+
+D. C*, Chilaw, No. 472, Chetty ?•. Ettana ... .. no
+
+2. — Deceased debtor — Heirs in possession — Executor de son
+tort.
+
+Where on the death of the debtor, the next of kin enter into possession
+of his estate, and by active steps, take the benefit therefrom, they become
+liable for the debts of the deceased to the extent of the benefit.
+
+
+Digitized by VjOOQIC
+
+
+( xi )
+
+Per Browne, j.— An heir is liable to the extent of the property of the
+deceased which has come into his possession, and a decree could be entered
+against the estate of the deceased.
+
+D. C, Negombo, No. 559, Pulle i\ Pulle '... ... 105
+
+INJUNCTION.
+
+Stf Mandatorv Injinction.
+INTERRUPTION OF TENANT'S ENJOYMENT OF LEASED
+PREMISES.
+Set Landlord and Tenant 2.
+ITINERATING POLICE COURT.
+
+Stc Criminal Law, i.
+JOURNEYMAN ARTIFICER.
+
+Jfturnet/nian Artificer — Mdchine-mler — Ordinance
+No, 11 of l86o^ SWfitmn 3, 6, 7 am! 11— Chat^e^ Alter-
+ation of.
+
+A Machine-ruler, who has entered into a contract of monthly service,
+i*a "Journeyman Artificer"' within the meaning of Ordinance No. 1 1 of I?65.
+
+P. C, Colombo, No, 26,803. Cave i\ William... ... 157
+
+JUDGMENT.
+
+i. — Judgment — Reviral of— Adjustment — Certificate un-
+der section 349 Civil Procedure Code.
+
+Under section 349 of the Civil Procedure Code, " if any money payable
+under a decree is paid out of Court, or the decree is otherwise adjusted
+in whole or in part to the satisfaction of the decree-holder, he shall
+certify Such payment or adjustment to the Court whose duty it is to
+execute the decree. The judgment debtor may also by petition inform
+the Court of such payment or adjustment, and apply to the Court to
+issue a notice to the decree holder to show cause, on a day to be
+fixed by the Court, M*hy such payment or adjustment should not be
+recorded as certified."
+
+Held, that, notwithstanding the revival of judgment, the Court may
+record a< certified on the petition of the judgment debtor any adjustment
+or pa3rment made before such revival.
+
+D. C, Kalutara, No. 39,788. Silva v. Podisinno, ... 18
+
+See Appealable Ordep, 3.
+
+JUDGMENT BY DEFAULT.
+
+Judgtnent by default — Notice^ want of— Setting aside
+
+judgment— Claim in reconventirm.
+
+A jtid^ent by default, havine been set aside, the second defendant
+was allowed to defend the action on the grounds that he had no notice of the
+proceedings, and that he disclosed the substantial defence of pajrment.
+
+The second defendant pleaded payment, and also made a claim in
+reconvention for damages, accrued since issue of summons in plaintiffs
+action by reason of alleged illegal acts done by the plaintiff.
+
+Held, that the defence of payment and counter claim could not be
+pleaded together.
+
+D. C. Galle, No. 54,611. Cornelis v. De Silva. ... 83
+
+
+Digitized by VjOOQIC
+
+
+( xii )
+
+JUDICIAL SETTLEMENT.
+
+See Administration.
+KANDYAN LAW.
+
+Kandyan Law — Illegitimate children — Acquired property
+^ —Widow, riyht of— Civil Procedure God^, Sect. 18.
+
+According to the Kandyan Law, the illegitimate children of a deceased
+succeed to his acquired property provided there be no legitimate children,
+and no widow surviving.
+
+If there be both legitimate and illegitimate children, the acquired
+property is divided between them.
+
+D, C, Kandy, No. 6,473. Mahatmaya v. Banda. ... 142
+
+LABOURER.
+
+Labourer — Ordinance No. 11 of 1866, and No. IS of
+1889 — Entry in checkroll — Notice to quit.
+
+In a prosecution under section 1 1 of Ordinance No. 1 1 of I865, of a labourer »
+for quitting prosecutor's service without leave or reasonable cause or previous
+warning, although there was no evidence that the name of the accused
+had been entered in the check roll of the estate, there was evidence
+that he had received rice from the prosecutor, who was the Superinten-
+dent of the estate, and it appeared that the accused had given notice to rhe
+prosecutor that he would quit the prosecutor's service and leave the estate
+on the ground that his wages were due and unpaid for over sixty days from
+the expiration of the nionths, during which such wages hnd been earned.
+
+Held, that this was sufficient evidence of the fact that accused retjarded
+himself as a labourer on the estate within the meaning of the Ordinance.
+
+P, C, Nuwara Eliya, No, 7,563. Walker v. Palaniyandi, 63
+
+LACHES
+
+Sec Mandatory Injuncton.
+LANDLORD AND TENANT.
+
+1. — Landlorxl and tenant — Misdencription of property
+leased — AhcUement of Rent-^Roman-Dntch Law — Res-
+tituo in integrum — Notahlis Error.
+
+Per Lawrie. a. C. J.— -In the absence of fraud on the part of the
+lessor, when lands are leased, and there is no dispute as to the lessee
+having received the whole estate, which he meant to take on lease, he is
+not entitled to abate the rent from the price on account of a mere error
+in setting forth the property by way of description, and consisUng of so
+many acres, or yielding such an amount of rental.
+
+The remedy of rextituo In ««/<?<//•« wis available in all rases w here the
+contract can be shewn to have proceeded in total misconcepticni.
+
+P<fr Withers, j.— Where the lessor has made out the property to be
+much larger than it is actually found to be. i. ^., where the misdescription
+in regard to the quantity is a notable one, the lessee is entitled to have
+the rent reduced in proportion to the small extent of ground.
+
+D. C, Colombo, No. 2,533. Stork v. Orchard. (The
+Comillah Estate case.) ... ••• ••• ^
+
+
+Digitized by VjOOQIC
+
+
+( xi« )
+
+2,^ Landlord and Tenant — Liability of landlotrl to put
+tenant in jtossession of premises let — Inten^ipti^n by
+landlord or strangers of TenanVs enjoyrtient of the
+2)remises,
+
+Per WiTHEKS, J. — In an action for rent by landlord against tenant
+it is a good defence that the landlord did not implement the contract of
+letting by putting the tenant in possession of the property let, and if the
+tenant had advanced money iJjr-way of rent for the use of the premises
+of which the landlord had failed to put him in possession, he might recover
+ihe money so paid as money had and received by the landlord for the use
+of the tenant.
+
+Interruption by the landlord, or any one under him. of the tenant's
+enjoyment of the premises let, is no answer to a claim for rent due and
+payable before such interruption, but it is ground for a tenant's claim to
+nave the contract of lease cancelled and for recovery of damages consequent
+on the interruption.
+
+Interruption of a tenant by strangers after the tenant has been put in
+possession by the landlord is no answer to a claim for rent, unless such
+interruption was followed by eviction in due course of law, and it is then
+only an answer to a claim for rent that has become due after such in-
+terruption.
+
+Such interruption is no grounJ for a cbim to damages or cancelhi-
+ion of the lease, unless it was followed by eviction in law and due notice
+had been given to the landlord, in the proceedings terminating in execution,
+to warrant and defend the defendant's title.
+
+D. C, Chilaw, No. 433, Saibo v. Appuhami ... 126
+
+LAST WILL.
+
+Last } Vill — Incidental p roof—Incon venience — Probate.
+
+A Court may, in iis discretion, allow a Will to be proved incidentally
+in the course of an action; but it would be highly inconvenient to do so.
+
+Where a Will is sought to be so proved the Court would be well-
+advised if it adjourns the case, to enable the parties to prove the Will in
+independent proceedings.
+
+D. C, Negombo, No. 16,443. Fernando v. Fernando ... 150
+LEASE.
+
+i. — Lease— Covenant to pay rent^^Breach of ^Forfeiture
+
+afid Re-entry-^ Equitable relief.
+
+A Court has power, in the exercise of its equitable jurisdiction, to grant
+relief — where the circumstances warrant such relief—to a lessee against
+a clause of forfeiture and re-entry for breach of covenant to pay rent.
+
+The firms of nn indenture of lease can only be altered by an indepen-
+dent contract satisfying the statute of Frauds.
+
+Per Lawrie, a. c.j. — In equity the construction put on a clause of
+forfeiture of a lease on nonpayment of rent is that it is a mere security
+for the payment of rent, and as the breach of that covenant is capable of
+a just compensation, a Court of equity may award the compensation and
+abstain from enforcing the forfeiture.
+
+D. C, Kandy, No. 5,470. Sandford v. Don Peter ... 35 •
+
+Digitized by VjOOQIC
+
+
+( xiv )
+
+^, — Lease — Breach of coveymnt for quiet possession— Action
+against lessor — Damages.
+
+Plaintiffs, and 5th defendant, grot a lease from the first four defendants.
+At the date of lease, the land demised was under lease to lessees, of whom
+the 5th defendant was one. These lessees having refused to give up
+pofsession, the plaintiffs sued for damages consequent on the breach of
+covenant for quiet possession.
+
+Held^ (per BURNSIDE, c j. and Withers, j.) that some co tenants
+cannot sue a landlord for the breach of a covenant to let them into pre-
+mises at a day fixed under a demise for a term of years, when one of them
+has been let in, and enjoys the benefits of the lease made jointly to him
+and those whom he has tortiously excluded from the premises.
+
+Per Lawrie, j.— If under a lease the lessor impliedly contracts to give
+the lessee possession at the commencement of the term, and if he fails to
+do so by reason of a previous tenant wrongfully holding over, the lessee
+may recover damages, and is not driven to bring ejectment against the
+previous tenants.
+
+D. C, Matara, No. 240. Subehami v, Basnayeke . . 44
+
+LIABILITY OF LANDLORD TO PUT TENANT IN POS-
+SESSION OF PREMISES LET
+
+Sec Landlord and Tenant, 2.
+LOAN
+
+Loan — Hire — Destruction of thing lent or hired — Liability
+of bailee.
+
+Where a person borrows or hires a thing, he is bound to return it,
+unless he is prevented from doing so by something for which he was not
+responsible.
+
+In an action for damages for non-return of a bull loaned to the defend-
+ant, he pleaded that it was killed by a leopard while in his possession.
+
+Heldf a bad plea, unless it could be shown that the defendant had
+taken the utmost care of the animal, or that it was at ^e time of the ac*
+cident under the care of the plaintiff^s servant.
+
+C. R,, Chavakachcheri, No. 7,444. Velayadan v. Geddes 140
+MANDATORY INJUNCTION.
+
+Mandatory injunction — Erection of Wall — Exclusion of
+light and air — Prescription — Laches,
+
+In an action for an injunction restraining the defendant from erecting
+buildings, so as to prevent free access of light and air to plaintiff's house,
+and also for a mandatory injunction ordering: the defendant to remove a
+building already erected.
+
+/^(p'*^, that the plaintiff was entitled to an order restraining the defendant
+from constructing any further building so as to prevent free access of light
+and air to plaintiff's house.
+
+Held^ also, that the plaintiff was not entitled to a mandatory in-
+junction ordering the defendant to remove the building already constructed,
+she having been guilty of laches in having allowed 3 or 4 yean to elapse
+before applying for such remedy.
+
+D. C, Trincomalie, No. 197. Pillai v. Tambf ... 59
+
+
+Digitized by VjOOQIC
+
+
+( XV )
+
+MARRIAGE, AGREEMENT TO GIVE IN.
+
+See Agreement, i.
+
+MINOR.
+
+Minor — Ouardian ad litem — Claim to property seized in
+
+execution — Sects. 24 7^ 481 and 682 of tlie Civil Pntcednre
+
+Code.
+
+A claim to property seized by the Fiscal in execution of a decree
+was made. or. behalf of a minor, by his uncle, who however had not
+been appointed his guardian The claim was reported by the Fiscal to
+the Court, which after investigation, disallowed it.
+
+He1<t^ that the minor was not a party to such investigation, and was
+not entitled to institute an action under section 247 of the Civil Procedure
+Code to have the seizure released.
+
+Semble^ Per LaWRIE, a. C. J,— (i) Where the mother of a minor,
+without being appointed his guardian ad litems files a plaint on behalf
+of the minof, and is afterwards appointed such guardian, the date of such
+appointment is the date of the institution of *he case.
+
+(2.) The order of a District Judge allowing a party to sue as guardian
+ad litrm must disclose his jurisdiction to make such order.
+
+D. C, Kegalle, No. 160. Deen v. Pulle ... ... 81
+
+MISCHIEF.
+
+See Criminal Law, 6.
+MISDESCRIPTION OF PROPERTY.
+
+See Landlord and Tenant, i.
+MORTGAGE OF PROPERTY BY GUARDIAN.
+
+Mortgage by guardian — Liability o/gtui9^ian — Liability
+0/ Minors — Ratification — Knowledge and Acquiescence.
+
+The first defendant acting in good faith, but without authority, as
+guardian of the other defendants, who were minors, mortgaged with the
+plaintiff certain property belonging to the latter. The plaintiff claimed a
+money judgment against all the defendants and a mortgage decree against
+the immoveable property.
+
+Beld^ that plaintiffs action failed (<i) against the first defendant
+because he did not bind himtelf as principal and (h) against the other
+defendants because the first defendant was not authorized to incur debt on
+their behalf, and there was no proof that they ratified the mortgage when
+they came of age.
+
+D. C, Matara, No. 35,918. Bastian v. Andris ... 114
+
+MORTGAGED PROPERTY, SEIZURE OP
+Claim in Execution — Seizure of mortgaged property —
+
+Claimant's Lien—Ciml Procedure Code, Sects. 282,
+
+248, 246 and 852.
+
+The plaintiff against whom an order under Section 244 had been
+passed, brought his action as mortgagee of certain timber, without possess-
+ion, to have it declared that the said timber was not liable to seizure and sale
+under defendant's writ.
+
+It was argued on behalf of the plaintiff appellant that, as mortgagee
+of the timber he was entitled to his prayer. For the defendant it was
+
+
+Digitized by VjOOQIC
+
+
+( xm )
+
+contended that no binding contract or mort^af^c over the timber was made
+out, but taking that as proved, it was further contended that the right
+under the contract was not a right that could defeat execution under
+defendant's writ.
+
+flfld^ that it never was the law before the Civil Procedure Code that
+mortgaged property could not be seized and sold under a wiit o( p' fa
+for the lev}' of a money judgment, and that the law is still unaltered.
+
+f/eld^ also, that if a claimant has goods of the debtor under a writ of
+lien, the judgment creditor must first satisfy the lien before he takes the
+property m execution.
+
+//r///, also, that an unsuccessful claimant has no right, under the
+circumstances to bring an action under section 247.
+
+Observations by Browne, J. on the current of authorities.
+
+D. C, Ratnapura, No. 225. Wijewardene v, Maitland 90
+
+NEGLIGENCE.
+
+Negligence — Bolting Jujrse — Burden of proof— Evidence.
+
+The mere happening of an accident does not throw on the
+defendant the onus of disproving negligence, nor does the mere fact of a
+horse bolting raise a prima facie presumption of negligence.
+
+D. C, Galle, No. 1,391. Silva ik Pate ... .., 71
+
+NONSUMMARY CHARGE.
+See Preliminary Inquiry.
+OBSTRUCTION OF PERSON EXECUTING THE LAWFUL
+ORDER OF A PUBLIC SERVANT.
+
+Obstntction of person executing the Inwfvl order of a
+public se?%*ant — Penal God£^ Sect, 18S,
+
+In order to support a conviction under Sect. 183 of the Penal Code
+for obstructing a person executing the lawful order of a public ser\'ant,
+the order must be one which it was competent to the public servant to
+make.
+
+P. C, Chilaw, No. 5,225. Telesinghe v. Anthony ... 129
+ORDINANCES.
+No. 12 of 1840, Section 6.
+
+Sec Crown Grant.
+No. 10 of 1844, Section S3.
+
+See Arrack.
+.Vo. 11 of 1866, Sections 3, 6, 7 and 11.
+
+See Journeyman Artificer.
+No. 11 of 1865, Section 11.
+
+Sec Labodrer.
+No. 16 of 1865, Section 16.
+
+See Tom-tom.
+No. 22 of 1866,
+
+See Appealable Order, 1.
+No. 14 of 1867, Section 7,
+
+See Toll.
+
+
+Digitized by VjOOQIC
+
+
+( xvii )
+
+
+Xo. 14 of 187 S, Serf torn -5 and 7.
+
+Sff Criminfal Law, 3.
+No. 1 of 18H9, Sent ion 39.
+
+Sftf Appealable Order. 2.
+No. 2 of 1889.
+
+Sfe CrvrL Procedire Code.
+.Y/>. 13 of 1889.
+
+Sf*tt Labourer.
+.V/>, 12 of 1890.
+
+Str CRrMFNAL LaW, 1.
+
+Xo. 2 of 1891.
+
+f'ef Admfraltv.
+OVERHANGING BRANCHES.
+
+Sre SeRVITCDE.
+
+PENAL CODE.
+
+$Sprtion 63.
+
+*r Crfmlnal Law, 8.
+Section 166.
+
+Sri Criminal Law, 7.
+Sedion 183.
+
+8fe OBSTRnmoN.
+Section 219.
+
+Sfe Charge, f. Cri.mimal Law, 7.
+Section 220.
+
+Sfifi Charge, i.
+Section 223.
+
+See Criminal Law. 2. 4.
+Section 289.
+
+*Ser Criminal Law. 3.
+Section 294.
+
+See Criminal Law. i.
+Section 408.
+
+See Criminal Law. 5.
+Section 409.
+
+See Criminal Law, 6.
+Section 427.
+
+Sue Criminal Law, 5.
+Section 454.
+
+S?e Criminal Law, 8.
+Chapter IV.
+
+S-e Criminal Law, 3.
+
+PLAINT,
+
+
+Digitized by VjOOQIC
+
+
+( xviii )
+
+7. — Defect we plaint — Fresh action— Pe nod of prescript i(m
+and limitation — Civil Procedure Code^ Sects. 247^ 406
+and 407.
+
+On a plea of non-joinder an action under Seel. 247 of the Civil
+Procedure Code was withdrawn and a fresh action brought.
+
+Held, that Sect. 407 of the Civil Procedure Code applied, and that
+the plaintiff was bound by the period of limitation of fourteen days as
+recited in Sect. 247, as if the first action had not been brought.
+
+D. C.-, Chilaw, No. 215. Fernando i\ Jamel. . . 88
+
+2. — Plaint — Prolixity — St mi tnons — Issue and Service —
+
+Irregulctrity — Waiver — Civil Proredure Code^ Sections,
+
+55, 92, S56 and 756,
+
+Where a plaint is so prolix and embarrassing as to be oppressive, it
+is the duty of the defendant, who is summoned to answer it, to apply to
+the Court, at the earliest opportunity, to have the plaint taken off the file.
+
+Where the defendants appeared in obedience to summons and applied
+for, and obtained, 14 days' lime to file answer, and on the day before the
+answer was due moved to have the plaint taken off the file as embarrassing
+and unintelligible.
+
+J7eW, that the motion was made too la'.e, and that the defendants
+having obtained time to file answer must be considered 10 have waived
+all objections to the plaint and the summons.
+
+Per Withers and Browne, j.j. Issue of summons unauthorized by
+the Judge's signature and entry of date is irregular.
+
+Per Withers, j. — Where summons has not been duly served in ac-
+cordance with the provisions of section 55 of the Civil Procedure Code,
+the defendant is not bound to appear and no judgment by default can be
+entered against him. If he appears he cures the irregularity.
+
+Per Browne, j.— Notice of appeal under section 756 of the Civil
+Procedure Code must be served by the Fiscal.
+
+D. C, Negorabo, No. 1,195, Senanayeke v, Appu ... 135
+
+PLEADINGS, AMENDMENT OF.
+
+Pleadings — A mcndment — Notice — Postponement — Costs
+— Civil Procedure Code, section 93.
+
+On the day of trial the Court, in the presence of the parties, allowed
+the plaint to be amended by the addition of certain words. The amendment
+not being a material one in that it did not alter the issues in the case :—
+
+Held, that the defendant was not entitled to a postponement of the case.
+
+Per Withers, j. — An order allowing an amendment should direct the
+
+delivery of the amended pleading within a given time to the opposite party.
+
+D. C, Kegalla, 153. The Attorney-General v, Appuhamy 15
+POSSESSION OF ARRACK.
+
+See Arrack.
+PRELIMINARY INQUIRY.
+
+
+Digitized by VjOOQIC
+
+
+( xix )
+
+PreUminanj inquiry— Xon-itufNfnari/ rhart/r — Dinrharge
+by Police Magiatratr — ApperiL
+
+A Magistrate holding a preliminary inquiry into a non-sumraary charge
+has the discretion of deciding whether there are sufficient grounds for
+committing the accused for trial.
+
+It is the duty of the Magistrate in such a case to ascertain whether
+there are grounds for putting the accused to the ignominy and expense
+of a trial ; and the Magistrate would fail in his duty, if he send up a caae
+for trial where he considered the prosecution was utterly unreliable, and that
+there was no possibility of a conviction.
+
+P. C, Negombo. i6,ioi, Mendis /*. Appuhami ... 148
+
+PRESUMPTION OF TITLE.
+
+Ste Crow.n Grant.
+PROBATE.
+
+See Last Will.
+PROXY.
+
+Ste Al»FEALAULE ORDER, I.
+
+RATIFICATION BY MINOR.
+
+See Mortgage by Guardian.
+RECOGNISED AGENT.
+
+Si'e Apvealable Ordek, I.
+RE-ENTRY.
+
+Sm Lease, i.
+REFUSAL TO YIELD UP POSSESSION.
+
+Set Execution of Decree.
+REMOVAL OF ARRACK.
+
+See Arrack.
+RESTITUO IN INTEGRUM.
+
+See Landlord and Tenant, i.
+REVISION.
+
+Rcviaiim —Appealable onkr — Dcrrrv nigncd by Judge after
+lip has become ^^ fa net us ojficio,'''
+
+An order ending thus— *'It is ordered that the libel be rejected as it
+has not been amended as directed bv the Court. The plaintiff will pay
+the defendant his costs of the action ' — is an order con.plete in itself and
+not requiring to be followed by a formal order, and is a final order against
+which an appeal lies.
+
+A person, who has ceased to hold office as District Judge, has no power
+to sign the formal decree consequent on a judgment delivered by him when
+in office.
+
+As a gcnerAl rule, the Supreme Court will not, except in very ex-
+ceptional cases, review an order from which an appeal might have been,
+but has not been, taken.
+
+D. C, Kegalle, No. 335, Davidson r. Silva ... ... 10
+
+REVIVAL OF JUDGMENT.
+
+See Jhdgme.nt. I.
+
+
+Digitized by VjOOQIC
+
+
+( XX )
+
+SbRVITUDE.
+
+Servitude — OverhanginghranclteH^CO'Owners^Injunriion
+Damages.
+
+An owner of a land, over which a tree overhangs, has the right to a
+decree ordering such tree to be cut down, although such owner be tenant in
+commo with defendants of the lands supporting the tree.
+
+Semble, P^r Withers, j.— The joint owner of an oveihanging tree has
+no right to cut it down himself except with the consent of his co-owners.
+
+C. R., Trincomalie, 873, Malar v. Kirithatkandu ... 97
+
+SET- OFF.
+
+f^e Cross-Dfcreis.
+STAKE.
+
+See Gaming.
+STRIKER.
+
+See Criminal Law, 3.
+SUPREME COURT, ADMIRALTY JURISDICTION OF.
+
+See Admiralty.
+THESAWALAME.
+
+The Tlmawalame^ Contract of jnnrhase and sale —
+Cvstom — Formalities — Pffblication and Uduyar's
+Schedule — Pre-emption — Pleadings— 'Transfer in fraud
+of creditor.
+
+Publication and Udayar's schedules are not requisites essentiaUo the
+validity of a contract for the purchase or sale of land in the pro%nnce of
+Jaffna.
+
+//r///, \hat these formalities were designed to protect the right of
+third parties \o pre-emption.
+
+Htld also, that where plaintiff had not in his plaint questioned the
+
+validity of the form of execution of a deed, it was not necessary for
+defendant to prop up by averment each detail of due execution.
+
+C. R., Kayts, No. 1,015, Katte Kechu v. Narany ... 98
+TOLL.
+
+Ordinance No. 14 of 1867 — Exemption from payment of
+toll.
+
+A certificate signed by a District Kngineer ''that the accompanying
+conveyance of A B is employed this day (January 14.) and until December
+31, 1x93, in the service of the Public VVoiks Department, Chilaw, within
+10 miles of the toll station of .Madampe" is not a suflficieiii certificate of
+exemption from payment of toll under Seel. 7 of Ordinance 14 of 1867.
+
+P. C, Chilaw, No. 5,361, Murugasen r. Perera ... 79
+TOMTOM.
+
+Tom-tom^ Imitjng of—Attrgntions and proof— Licence —
+Ordiiifirice No. 16 of ISOo, .section 90.
+
+
+Digitized by VjOOQIC
+
+
+( xxi )
+
+tn a proscrulion under section Qo of Ordinance l6 of tJ^ftj, it is not
+incumbent on the complainant to allege and prove that bealinfir a tom-tom
+was calculated to fricfhtcn horses, or that it was done by night so as lo
+disturb the lepose of the inhabitants. It is enough to allege and prove
+that the accused, not beinp under Military Regulations, beat a tom-tom,
+within a town, without a licence.
+
+M. C, Colombo, No. 7,707, Van Houten v. Soota ... 160
+TORT.
+
+Torf —Actio jTPrsonah'fi moritur ntm persona — 3 and 4
+
+Will IV, C. 4i^ — Wrong done hy deceased — Liabilihj of
+
+legal rep reaen tat ire.
+
+Per Lawkie. J.— The law in Ceylon in regard to the liability of ihe
+lejjal representative of a deceased for any wrong committed by him in his
+life time is governed by the Act 3, Will l\\, C. 4^. The legal represent-
+ative must, however, under the Act be sued within six months of his liking
+upon himself the administration of the estate.
+
+D. C, Galle, No. 1,014, Weerasiri v, Sanchihamy ... 6
+
+UDAYAR S SCHEDULE.
+
+See Thesawalame.
+
+WAIVER OF IRREGULARITIES.
+
+See Plaint, 2.
+
+WARRANT OF COMMITMENT.
+
+See Charge, i.
+
+WEIGHTS AND MEASURES.
+
+See Criminal Law. 3.
+
+WRIT AGAINST PERSON.
+
+Writ againat pernon — Rupeefi ftro hundred — Partial
+
+remvery — Action for realisation of mortgage — Form of
+
+Wnt — More than one judgment debtor — Sejuirate Writ —
+
+Ciril PrtHTdure Code, SectiofiA 298 and 396.
+
+On the return to a Writ of Execution against property, in satisfaction
+of a decree awarding a sura of Ks. 2oo and over, that property of a judgment
+debtor has been levied as a part of the sum so decreed, and that the Fistal
+can find no further properly of the debtor out of which to levy the unsatisfied
+balance, the Court may issue a warrant for the arrest of ihcljud»<eraent-debtor.
+
+D. C, Colombo, 2,670, De Silva r. Sella Umma. 153
+
+
+Digitized by VjOOQIC
+
+
+TABLE OF CASES REPORTED.
+
+
+Andree v. Cooray.
+
+490, Ad. P. C, Colombo
+Arunakam v. Tampaiya.
+
+723, C. R., Trincomalie
+Attorney-General r. Appuhami.
+
+153, D. C, Kegalle
+Bastian v. Andris.
+
+35,918, D. C, Matara...
+Cave r. William. (Cave's case)
+
+26.803, P. C, Colombo
+Chetty V. Ettana.
+
+472, D. C, Chilaw
+Cornells v. De Silva.
+
+5^,611, D. C, Galle
+Davidson v. Silva.
+
+335, D. C, Kegalle ...
+Dcen V. Pulle.
+
+160, D. C, Kegalle
+De Silva i\ Sella Umma.
+
+2.670, D. C, Colombo
+Dissanayeke v. Appuhami.
+
+17,130, P. C, Kandy
+Fernando i-. Bemappu.
+
+8,999, P. C Panadure
+
+Fernando v. Fernando.
+
+26,193, D. C, Crim. Chilaw
+Fernando v. Fernando.
+
+16,443, D. C, Negombo
+Fernando v. Jamel.
+
+215, D. C, Chilaw
+
+Francina v. Nicholas.
+
+1,084, ^' C., Galle ...
+Harman v. Muttiah.
+
+12,940, P. C, Hatton
+Ibrahim r. Tillekeratne.
+
+34,620, D. C, Matara
+
+
+Page.
+
+49
+
+57
+15
+
+157
+III
+
+3«
+10
+81
+
+55
+
+151
+
+66
+
+145
+
+88
+
+«5
+44
+67
+
+
+Digitized by VjOOQIC
+
+
+( xxiii )
+
+In the matter of a charge of contempt of Court against Perera
+and others.
+1,646
+
+, r. R., Kurunegalle ... • ... ... 39
+
+1492
+
+J ay en v. Alloesinno.
+
+9,148, P. C, Panadure ... 78
+
+Jonklaas v, Perera.
+
+4,821, Add. P. C, Colombo ... ... 95
+
+Kattekachu v. Narany.
+
+1,015, C. R., K.iyts .. ... 9S
+
+Mahatmaya v Banda.
+
+6,473, D. C, Kandy, .. ... ... 142
+
+Mala- V. Kirithatkandu.
+
+873, C. R., Trincomalie ... 97
+
+Mend is r. Appuhami.
+
+16,101, P. C, Ne^oniho ... ... ... 14S
+
+Missy Nona v. Jayesooria.
+
+35'93^n ^- <-•> Matara... ... 79
+
+Murugasen v. Perera.
+
+5,361, P. C, Ohilaw ... ... ... 76
+
+Pammodarampillai v. Pangmuttupillai.
+
+24,194, D. C, Batticaloa ... 51
+
+Perera r. Aberan.
+
+640, D. C, Kalutara ... ... ... 119
+
+Perera r. Fernando.
+
+3,085, D. C, Colombo... ... 54
+
+Perera v. Harmanis.
+
+472, Add. P. C, Colombo ... ... ... 33
+
+Perera v. Sadirappu.
+
+8,816, P. C, Panadure ... 75
+
+Pillai V. Tambi.
+
+197, D. C, Trincomalie ... .. ... 59
+
+Puhaitamby v. Carolis.
+
+15,032, P. C, Annuradhapura ... 62
+
+Pidle V. Pulle.
+
+559, D. C. Negombo ... ... ... 105
+
+Rambukpotha v. Menica.
+
+10,944, P. C, Badulla ... 73
+
+Saibo V. Appuhami
+
+433, I>. C, Chilaw ... ... .. 126
+
+
+Digitized by VjOOQIC
+
+
+( xxiv )
+
+Sandford r. Don Peter.
+
+5,470, D. C, Kandy ... ... 35
+
+Senanayeke i'. Appu.
+
+1,195, D. C, NegomHo ... ... ... 135
+
+Siatu I?. Saduwa.
+
+224, D. C, Kegalle ... ... 123
+
+Silva r. Pate.
+
+1,391, D. C, Galle ... ... ... 71
+
+Silva V. Podi Sinno.
+
+39,788, 1). C, Kalntara ... i^
+
+Simon v. Nando.
+
+1,178, D. r., Galle ... .. ... 153
+
+Singer Manufacturing Company v. Sewing Machine Company.
+
+3,762, D. C, Colombo ... 27
+
+Stork V. Orchard.
+
+c. 2,533, ^- ^•' Colombo ... .. ... I
+
+Subehami v. Basnayeke.
+
+240, D. C, Matara ... ... 4^
+
+Telesinghe v. Anthony.
+
+5,225, D. C, Chilaw ... ... ... 129
+
+The Comillah Estate case.
+
+c. 2,533, D. C, Colombo ... i
+
+The Gclderland.
+
+The Gelderland ... ... ... 130
+
+The Queen r. Babun
+
+9,007, D. C, Crim. Matara ... ^28
+
+The Queen r. Fernando.
+
+1,030, D. C, Crim. Negombo ... ... 4^
+
+The Shewing Machine case.
+
+3,762, D. C, Colombo ... 27
+
+VanHouten v. Soota.
+
+7,707, M. C, Colombo ... ... ... 160
+
+Velayadan v. Geddes.
+
+7,444, C. R., Chavakacheri ... H^^
+
+Walker v. Palaniandi. _
+
+7,563, p. C, N'Eliya ... 63
+
+Wecraratna v. Silva.
+
+676, D. C, Galle ... ... 24
+
+Weerasiri v. Sanchihami.
+
+1,014, D. C, Galle ... ... — 69
+
+Weeresekere v. Seelawanka.
+
+230, D. C, Matara . . ... 12
+
+Wijewardene v. Maitland
+
+225, D. C, Ratnapura ... •:. ••. 9°
+
+
+Digitized by VjOOQIC
+
+
+THE
+
+
+Supreme Court Reports
+
+BEING
+
+Reports of Cases decided
+
+BY THE
+
+SUPREME COURT OF CETLON.
+
+
+Edited by Chas. M. Fernando, Advocate,
+
+
+Before La^vrie^ a. c. j. and Withers^ j.
+
+May 9 and i6, 1893.
+
+STORK V' ORCHARD and anethcr,
+
+[Hie Comillah Estate Case."]
+
+[No. C. 2,533 D. Cf, Colombo.]
+
+Landlord mnd Tenant — Misdesoription of p7y>perit/ leased--^
+
+Akatement 0/ I^U — Roman Dutch La'^^ReitiiiUio in
+
+integrum — Notahilis error. —
+
+Per Lawrie. a. c. J« — I" the absence of fraud on the part of the lessor,
+when lands are leased and there is no dispute as to the lessee having received
+the whole estate, which he meant to take on lease, he is not entitled to
+abate the rent from the price on account of a mere error in setting forth the
+property by way of description, as consisting of so many acres, or yielding
+such an amount of rental.
+
+The remedy ot Jir4UHfio tn integrum is available in all cases where the
+contract can be shewn to have proceeded in total misronception.
+
+Per Withers J.— Where the lessor has made out the property to be much
+larger than it is actually found o be — « r., where the misdescription in regard
+to the quantity is a notable one, the lessee is entitled to have the rent reduced
+in proportion to the small extent of ground.
+
+The following judgment, delivered by the learned District
+Judge [Browne] on October 17, iSga, fully set out the facts
+of the case: —
+
+
+B X
+
+
+Digitized by VjOOQIC
+
+
+i THE SUPREME COURT REPORTS. [Vol, U.
+
+Stork In this action plaintiff sues the defendants to recover
+
+Orchard, from them Rs, 1,500 arrears of rent for the period from ist
+
+The^Comtl- J""^> ^^9^» ^^ *^^ 2^^^ February, 1892, due on a lease by
+
+LAH Estate him to them of the Comillah Estate, which he and they
+Case.1
+
+entered into on the 7th March, 1890, and he prays also a
+
+cancellation of the lease. The defendants deny that they
+have committed any breach of the lease, for that, at the
+execution of the lease, plaintiff represented to them that the
+extent of tea under cultivation was eighty acres, and the rent
+was by them calculated on the faith of such representation,
+whereas the true acreage was under 48 acres, and that they
+on discovery of the discrepancy claimed refund of past over-
+payments and reduction of future instalments of rent to the
+amount of Rs. 200 a quarter. The plaintiff, in reply denied
+that he had made any such representation but that before
+the agreement for the lease he had put the defendants on
+enquiry as to the areas within the estate of tea, cocoanut
+and paddy cultivation, and that they had inspected the estate
+and satisfied themselves thereof before the agreement of lease
+had been entered into. About the middle of January, 1890,
+the estate in question was advertised for sale or lease, and
+whether with or without the plaintiff's authority, it was
+therein described as of certain acreage in these different culti-
+vations among which was 80 acres of tea. Negotiations for
+its lease were entered into at first between plaintiff and second
+defendant (who has not given any evidence thereof,)- and
+afterwards between plaintiff and ist defendant. Both of these
+gentlemen have been examined, and in many respects in' their
+recollections of what then passed as to acreage, they are
+entirely at variance with one another, 1st defendant asserts
+that in at least two interviews plaintiff informed him there
+were fully 80 acres of tea on the estate, while plaintiff asserts
+that, when ist defendant once questioned him, he said he
+had no survey and could not give him the acreage. So far
+as it is necessary to come to a conclusion thereon, my finding
+is that acreages were mentioned and were given approximately,
+but without any assurance of their certainty or accuracy. It
+is but only reasonable to assume as probable that the tea
+
+
+Digitized by VjOOQIC
+
+
+June xo, *g3.] thb suwema court riports. 3
+
+planter would desire this information and that the intending Stork
+lessor would inform him but without any positive pledge thereof. Orchard.
+In the conflict of recollection I am guided to this conclution, r^* "TT
+chiefly by the two letters of that time, A and B, of 27th lah Estate
+February and ist March. When these were written the lease ^^^^'^
+had actually been partially drafted, and the parties had con-
+ferred over its terms in the Notary's Office. There was
+nothing then in it respecting acreage. But ist defendant, on
+his return home, wrote to the Notary, "There is one thing
+I want you to put in the lease deed, a clause with the
+acreage stated something like the foUov^ing: —
+Cocoanutsso many acres cultivated
+Tea do do
+
+Paddy do do,"
+
+He did not quote therein any figures as having b^n
+given to him by the plain tifi*. And after conferring with plaintiff
+Mr. Staples, the Notary, in reply, wrote •*Dr, Stork has given
+me the approximate extent of the several plantations on the
+estate, as he is not in possession of a general plan shewing
+the exact extent of each plantation. The extents given, he
+assures me, are as nearly accurate as possible." There is no
+reference here to any previous express disclaimer of knowledge
+or responsibility or to the incident of which plaintifl* has
+deposed of ist defendant asking, and being given, these figures
+purely to assist him to strike the average of cost of manu-
+factinre. I do not feel I can rely on the recollection of
+either gentleman as being thoroughly accurate. But to my
+thinking the rights and liabilities of the parties have to be de-
+cided upon the application of the law bearing on the question
+to the agreement of lease itself and to the representation con-
+tained therein ; for the result of the correspondence A & B
+was that thereafter, at first defendant's instance and plaintifl s
+consent, the premises demised by that agreement were therein
+described to be "all that cocoanut and tea plantation comprising
+twelve alk>tments— now forming one property called and known
+as the ComiUah Estate, containing in extent 310 acres more or
+less, and consisting of about i8o acres under cocoanut cul-
+tivation, 8q acrep mider tea, about 20 acres of paddy land, abput
+
+Digitized by VjOOQIC
+
+
+4. THE tUFUBMS COURT RBP0RT8. [Vol. ii.
+
+STORK 15 teres reserve forest, and about 15 acres chena
+Orchard, land," of which the several 12 allotments with th«c
+[Thb"comil. ^^^"^ metes attd bouods, were then particularized. This
+LAa Estate i^ a representation by the plaintiff, who, as the |ist de«
+^^^'^ fendant has already been informed, has laasured the notary
+that it is as nearly as accurate as possible— and as to this there
+is no question of inaccuracy of . recollection. What is the effect
+of such a representation, even when the first defendant has
+been at pains himself to visit the estate and inform himself
+of all particulars thereof ? Plaintiff might have declined to state
+any particulars at all when he received letter A or to do more
+than lease the estate- as a corpus ; or he might have in reply
+and in the agreement given particulars to the best of his know-
+ledge, but have stipulated that the lessor was not to be res-
+potisibie for the quantity stated. But he has sufiisred the repre-
+seniation to appear on the face of .the agreement as. an absolute
+Statement by himself, and under the law as laid down in Voet
+xix, 2.26, with which must be read xviii. 1.7* is clear that he
+having represented the extent of this cultivation to be much
+greater than what was in fact delivered to the lessee to ehjoy,
+the rent must b^ dimitrished in proportion to the deficiency in
+quantity, which I hold to have been 30 acres out of So, as I do
+not consider it clearly proved that defendants are responsible
+for any abandonment. That the plaintift is not relieved from
+his responsibility for the statement by the 1st defendant's in-
+spection of the land will be seen from Smith vs. Land and
+House Property Corporation, 51 Law Times 718, when a sale
+rescinded by reason of a description having been given of the
+property which it would not bear, although the purchaser's
+ag^nt had before purchase inspected the property and reported
+unfavourably upoil it. As to the time firom which the defen-
+dants are entitled to have a {reduction of their rent made, I
+hold upon the evidence that they were put upon inquiry when
+at the end of their first year's working they surmised by the
+loss sustained that the acreage must be deficient, and they
+then made prompt ascertainment of the fact by survey and
+' claim for refund and reduction^ Though in the absence of all
+averment or proof ef fravd on the enroneoua representation,
+
+
+Digitized by VjOOQIC
+
+
+June 10, '93.] THE lUFRBMB COURT RBPORTtc 5
+
+tb^ cannot recover damages from plaintiff, they are yet entitled SToit
+
+to a refund or (in this case) a credit for all overpayments and OacHAan.
+
+against thfe contention iu the 4th] parafraph of the replication^ [THE^Mn.
+
+I hold they are entitled to be credited with a refund of excess lau £statb
+
+payments in the past, and were entitled to withhold paymenl '^
+
+of rent so long as the payments already made covered what
+
+would be due lor rent oomputed 00 the reduced rental. The
+
+amount of reduction would be 3/8 of so much of the rent ae
+
+may be calculated to have been paid by them for the tea por*
+
+tioa of the estate. The gross yield of the other productive
+
+parts of the estate has been proved to be 30,000 coccnuts (^
+
+Ra. fij^Rs, 810 and4 bushels paddy. Apportioning Rs. 600 aa^
+
+the rental therefore for all save the tea land, would leave
+
+R9.i,|oo as the rental for the tea land, and 3/8 thereof would re*
+
+duce the rental by Rs. J33 a year, i e,f to one of Rs. i,475« The
+
+accounts between the parties would, therefore, stand thus : —
+
+Rent from 1st March, 1890 to s8th Feb. 189a.
+
+2 years at Rs. 1,475= Rs. 2,950
+
+Rent paid by defendants „ 3.000
+
+Overpaid by defendants Rs. 50
+At the institution of this action the defendants, therefore,
+had fiilly paid all the rent due by them, under this finding,
+and I cannot hold that they have forefeited their rights under
+the lease.
+
+I dismiss piaintifiTs action and enter judgment for defen-
+dants for Rs. 50 and costs of suit.
+The plaintiff appealed.
+
+Layardf A.'G. {Morgan mXh him) for plaintiff appellant,
+Domhor^ (Orenier vrith him) for defendant respondent.
+
+Cur. adv. vult.
+On May 16, 1893, the following judgments were delivered; —
+Lawrib, A. c. J. — I take the law to be that in the absence
+of fraud on the part of the lessor, where lands are leased
+and tljcre is no dispute as to the lessee having received the
+whole estate which he meant to take on lease, he is not
+entitled to abatement from the price on account of a mere
+error in setting forth the property by way of description, as
+QQRsistin^ o| so inany acres pr yielding such ai^ amount of
+
+
+Digitized by VjOOQIC
+
+
+6 THE SUPREME COURT REPORTS. [Vol. U,
+
+Storic rental. On the other hand when the lessee does not get the
+Orchard, whole estate, he may either claim a deduction in respect of
+rTHK"coMiL- ^^^ part of the subject thus withheld whereever it is so dis-
+LAH Estate tinct that its value may be separated, or insist on the ground
+of error in essentialibua upon a restihitio in integrum. The
+latter remedy is available in all cases w^^ere the contract
+can be shewn to have proceeded in total misconception, and
+is available to the lessor equally with the lessee. I am of
+opinion that the lessees here got the whole estate which they
+meant to take on lease. They had seen it more than once,
+it lay within a ring fence ; they got all the land they expected
+to get. If there was an error in the description the doctrine
+of caveat emptor applies; but I think that there was not an
+error in essentialibvs, and the error in setting forth, by way
+of description, the manner in which the land was planted, the
+extent under one crop, the extent under another, the quantity
+of woodland, did not give them a right to abatement as to
+restitutio in integrum^ I would, therefore, give judgment for
+plantifF with costs.
+
+Withers, j. — By an indenture made between him and the
+defendants on the 9th day of March, 1890, the plantift demised
+and leased to the defendants what is described , in the plaint
+as **all that coconut and tea plantation called and known as
+Comillah Estate" for a term of 5 years from the ist of March,
+1890, at a yearly rent of Rs. 2,000 payable quarterly on the ist
+day of March, June, September and December in each and every
+year. The payment of rent as aforesaid was covenanted for by
+the defendants. There is a stipulation in the instrument of
+demise thar, if the rents thereby reserved shall be behind and un-
+paid for 30 days after any of the days or dates on which the same
+shall become due and payable, it shall be lawful for the lessor to
+cancel and determine the lease, and to re-enter and take posession
+of the ' premises, and to recover the arrears of rent.
+
+The plaintiff under this stipulation claims to recover the
+premises as well as arrears of rent which were behind and unpaid
+for thirty days on three successive quarters, i,e,, the" ist of Sep-
+tember, and then ist of December 1891, and the ist of March
+1892, the breach of Qopvenant to pay rent iq terms of the de-
+
+
+Digitized by VjOOQIC
+
+
+June lO, '93.] THE SUPREME COURT REPORTS. , ^
+
+mise being plaintifTs cause of action. The answer to this claim Stork
+commences with an admission of the piaint]B*s legal right to have Orchard.
+what he is here suing for,*and is followed by what is intended as rTHE"coMiL-
+an equitable defence. The second paragraph of the answer lah Estate
+contains the case of the defence, the nature of which is not, to my
+mind, very clear. However I take it to be tiiis, — "You, the
+piaictiff represented that the estate you let to us for a term of
+years comprised within its boundaries a block of So acres in tea
+which induced us to offer to you the rent appearing in the ex-
+ecuted lease ; as a matter of fact, there was deficiency of more
+than 30 acres as regards the block of tea, and we are entitled to
+have the rent reduced proportionately, and when what we have
+overpaid you is set off against the reduced rents admittedly in
+arrear, it will be found that we owe you nothing on account of
+rent, and you are therefore not entitled to eject us."
+
+What is not quite clear to mcs is whether the defendants
+intend to allege in the second paragraph of their answer, that
+the calculation of rent was with the knowledge of the lessor
+principally and riiainly based on the extent of land under
+tea, and that the sum eventually offered, and accepted, was
+settled by and because of the representation that as much as
+80 acres of the land demised, was under tea. If this is
+what is meant by the defence, I will dispose of it at once
+by saying, as the learned District Judge finds, that the facts proved
+do not support the suggestion, to put it briefly, that the Comillah
+Estate was let and hired as a tea Estate and little or nothing
+more. If it is meant, as I should construe it, viz : "our offer
+of rent was as high as it was because of the representation
+that 80 acres were in tea, and we must have our rent reduced
+proportionately, as 30 acres and odd were not under tea " that
+is another matter. What was demised according to the instru-
+ment of demise was **all that coconut and tea plantation and
+estate comprising twelve allotments of land all lying contiguous
+to each other and now forming one property called and
+known as the Comillah Estate • . . containing in extent
+about 310 acres more or less and in the schedule hereto more
+particularly described,*' a schedule to which in compliance
+with the request of the defendants during the negotiations
+
+
+Digitized by VjOOQIC
+
+
+i . THE SUPREl^B COURT REPORTS. [Vol. ii
+
+Stork for the lease, the following particulars weire added, **and
+Okchard. consisting of about 180 acres under coconut cultivation, akotU
+I The^Comil- *^ ^^cres under te&, about do acres of paddy land, about 15
+i.AH Estate acres of reserved forest, and about 15 acres of chena land."
+It is admitted that the plaintiff's mi^r^r^seiatation as to
+the acreage under tea was quite innocent, sp that no question
+of deceit is here raised, It was contended, but I .think un-
+successfully, that as this was a lease qf premises ckI carpw,
+fraud must be alleged and proved s^ainst the lessor before
+tlie price oould be reduced on aecount of a diminished extent
+short of enormfs le^sia and the authority was cited of Voet
+Lib. xriii. Tit I S. 7. On the contrary, this very chapter of
+Voet is an authority for the statemfint that this contract of
+lease waa at least as much md qiiantUaiem as ad 0orptM and
+the discrepaiicy being a ^*na^hW one the price should be
+proportionately reduced — se« the same chapter. Purchase and
+sales, are there being discuesedi but letting and hiring was
+in this respect gpverned on the same principles. See the
+authority cited to us in Voet xix. 11. a6. <*If the lessor has
+m^de out the property to be much larger than it is actually
+found to be, the rent must also be reduced in proportion to
+the smaller e.xtent of ground." The vendee in the one case
+had his relict ^^der the ^tio empU and the lessee under the
+actio looatU I conceive then that in the drcumstances, the
+defendajits were entitled to a diminution of rent in vitvi of
+the deficiency of the acreage under tea; but the question
+remains, to what relief, if any, does this defence set up by
+the defendants entitle them ? It appears to me that the equi-
+table defence set up grows out of a right of counterclaim
+and exists only because pt the right in the defendants to
+claim a diminution of the rent past, present, and future, a
+reform of the instrument of demise as to the quantity of
+land under tea, and as to the amount of rent payable there-
+under in consequence of the diminution they prove themselves
+entitled to. They must^ in my opinion, successfully establish
+this affirmative demand, to justify the judgment herein, dis-
+missing the plaintiff's claim with costs. On the lease as it
+Stands unreformedi they have no defenoe to the claim for ra-
+
+
+Digitized by VjOOQIC
+
+
+June 17, *93.] thb suprei^e CouRt reports. ^
+
+entry, or the payment of arrears of rent. .They dp not allege Stork
+
+their readiness to hold to the lease, with a rent diminished Orchard.
+
+by the amount found in their favor. It was, be it remembered, r j„j coMn,-
+
+open to the defendants, on. discovery of the difference of tA« Estate
+
+extent of land under. tea, to have brought an eicHo locati to
+
+have the lease reformed, the rent diminished proportionally^
+
+and a declaration that the excess overpaid should go in
+
+reduction of the rents accrued due. They did' not do so; they
+
+held to the land, and refused to pay the arrears of rent;
+
+they tendered nothing in the way of rent ; th;y have brought
+
+nothing into Court in satisfaction of rent accrued due; and
+
+no doubt they justify this to themselves on the ground that,
+
+so far from their having anything to pay, they are entitled^
+
+at the <bite of action brought to recover something fronv the
+
+plaintiff. To my mind, the only defence which could extip.^
+
+goish plaintiff's right of action as herein instituted would be
+
+a cMOiter claim of the natore of the claim I have just indi*
+
+cHtod. I consider the defence a mutilated one, so to speaks
+
+and of iu> «vaii against plaintiff's legal rights. And for this
+
+reason, I wauM set aside the Judgment, and give plaintiff
+
+ju(%inent as prayed for with costs.
+
+My inclination would have heen to follow the law relating
+to the actio red?iilniaria et qHunU minoris for the rescision
+of contracts of sale or a diminntionof ' the price on account
+of defects (vitia) in the subject matter which did not avail
+the buyer who had every opportunity,, as these defendants
+bad befc^e lease executed, of discovering the defects before
+buying the article, if 1 cooki have found an authority for
+doing so, but according to Voet XXI I-II neither remedy ^
+applied to the contract of letting and hiring. 1 cannot help .
+expressing an opinion that the learned Judge, in the Court
+below» has found his estimate of the diminished rent on an
+erroneous basis. We are not informed what the 30 odd acres
+consisted of— whether pf soil under jungle, or paddy or chena,
+or bare soil, but I take it, the difference would have to be
+found in the letting value of the estate with the soil of 30
+odd acres under jimgle or pad^y .or chena or bare soil, as
+the case may be, and 30 odd acres under tea*
+
+B a
+
+
+Digitized by VjOOQIC
+
+
+id tHE SUPREME COURT REPORTS. Voh ii,j
+
+Before Latvru, a. c. j. and Withers, j.
+
+June 2 and 6, i893,
+
+DAVIDSON v SILVA.
+
+[No. 335, D. C, Kegalla.]
+
+SivMon^AppealabU Ofxler — Decree signed by Judge after he
+has become ^'functus officio.''
+
+An order ending thus— **It is ordered that the libel be rejected as it ha»
+not been amended as directed by the Court. The plaintiff will pay the d*fen-
+dftht Ms costs of the action "•^19 an order complete in itvtlf and not requiring
+to be followed by a formal decree, and is a 6nal oider against which an appeal
+lie*.'
+
+A periOD who hat ceaied to held office at District Judge has no power to
+s^ the formal decree consequent on a judgment delivered by him when in
+office.
+
+As • t general rule the^ Supreme Court will not. exi^ept ia very exce|»tionAk
+casetf reriew an order from which an appeal might have been, but has not been,
+taken.
+
+Plaintiff, all Asshtairt Government Agent, Hot being aWtf
+to ajgreir with* defendant as to the atnotint of compensation tcf
+be* allowed for cettaiif land of defetidant acquired by Govern*
+m^tlt uttdet tfce proyisions of «*The Lard Acquisition Orditiancr
+iBjSi'' filed in Court a libel of reference in tetms of section
+II of the Ordinance, and notices were thereupon ibMied, in'
+terms of section 14, first, on defendant, requiring him to state
+to the Court the amount which he claims as compensation*
+for his interest ill the land, and secondly, on both plaintiff and*
+defendant, requiring tlwnn to - appoint* assessors to aid the
+Jtidgc jn det^mining the amount of compensation. Defendant-
+appeared in Court and ncminated an assessor, but before one
+was nominated by plaintiff, one Natchiappa Clietty claiming
+to be a mortgagee of the land and to have appeared before
+the A5rslstant Government Agent at his inquiry under
+sectioii 8 of the Ordinarice for ascertainment of the value of'
+the land, moved to be added as a party to the case. Plain-
+tifTs proctor had no objection to this motion, and himself moved
+to amend the plaint in certain respects, and the District Judge
+made order that the plaint be returned to plaintiff for amendment
+as set out in the order, and it was accordingly returned.
+A'fi amended plaint was thereafter tendered, but the
+District Judge rejected it by an order conchiding thus— •^'It 19
+
+
+Digitized by VjOOQIC
+
+
+Jime i7f *g3*] '^^ suprsmb court rbports* it
+
+ordered that the libel be rejected ass it has not been amended as Davidson
+directed by the Court. The plaintiff will pay the defendant sn.vii.
+bis costs of the action.*' Before a formal decree was drawn
+-upjn ttrms of this cnrderf the Pistrict Judge, by reason of transfer
+to another statian, cea^ to hold office as such, and the formal
+decree bearing the 6»me date as fhe above order was in
+fact signed after the District Judge became functus officio
+and after the lapse of the appealable time from the date of
+such order.
+
+On the motion of Layardf A* O. for revision, the case
+was sent for by the Supreme Court, and with notice to defend*
+ant and Natchiappa the question of reviewing the proceedings was,
+on June 2, discussed*
+
+Layard.A.G. for plain tifl.
+
+Pereira for defendant and Natchiappa Chetty.
+
+.Cur. adv. vult.
+
+On June 6, the following judgment of the Court was
+delivered by
+
+Lawrie, A. c. J.— On carefully considering the proceedings
+in this Land Acquisition Case we have not ascertained what • it
+was that prevented the Assistant Government Agent from appeal-
+ing. against the order signed by Mr. Dunlop, the District Jud|;e
+of Kegalla, on the 30th of March.
+
+The order was complete in itself: it ended, ''It is ordec/ed
+that the libel be rejected as it has not been amended as directed
+by the Court. The plaintiff will pay the defendant his costs of
+the action."
+
+Under the mistaken notion that the order was imperfect,
+and that it required to be followed by a formal dfcree, one was
+prepared and was sent to Mr. Dunlop, and was signed by him
+in Colombo after he had ceased to be District Judge of Kegalle.
+
+If a formal deciee was necessary, Mr. Dunlop certainly
+could not sign it after he had ceased to hold the oiBce of District
+Judge.
+
+The decree to be found on the last page of the record must
+be disregarded as prononsctipto.
+
+But the signature of the 30th March remain?. We have
+,t3een asked to set it Jvside in revision^
+
+
+Digitized by VjOOQIC
+
+
+12 THE SUPREME COUET REPORTS.' [Vol. H.
+
+Davidson 1 cannot say that It seems other than a good and reasonable
+
+Sii«VA. order, but assuming that it is not right, it certainly is a final
+
+order against which an appeal lay, and we abide by the rule
+
+that except in very exceptional cases we shall not reviM where
+
+an appeal might have been, but has not been, taken.
+
+We are of opinion that we must refuse to interfere.
+
+
+Before Lawrie and With§r8^ j. j.
+
+Feburary lo and 14, 1893.
+
+WEERESEKERE i;. SEELAWANKA.
+
+[No, 230, D. C, Matara.]
+
+Crowii Crant—PremmptioYiof Title— Bebutiable— Sect. 6
+of Ordinance 12 of 1840:
+
+The statutory presumption created by section 6 of Ordinance 12 of 1S40
+that all '^Cfaenas ana other lands Which can only be cultivated, after intervals
+of several years, shall be deemed to be forest or laaste lands'* and theiefore
+the property of the Crown, is a rebuttable presumption (Lewis v. Kiriappu 5
+S. €. C. p. 194 followed.)
+
+Per Withers, j. — The presumption of title thus created attaches to the
+land after it has passed from the Crown to a private subject.
+
+The plaintiff in this action sought to eject the defendant
+the incumbent of a Vihara, from a certain chena called
+Wandurudenia on the strength of a Crown grant dat^d
+February 4, 1891, claiming for himself the benefit of the
+presumption created by Ordinance 12 of 1840 in favour of the
+Crown in respect of chenas or forest lands. The defendant at the
+hearing of the case produced two conveyances of 1829 and
+183a in favour of the Pansala and also proved cultivation by
+him of the land with cocoannts for 8 or 9 years previous to
+the institution of the action.
+
+The learned District Judge held that the presumption in
+favour of the Crown had not been sufficiently rebutted and gave
+judgment for the plaintift.
+
+The defendant appealed,
+
+Domhorst for defendant-appellant.
+
+The presumption on which the District Judge has founded his
+'jtidgmefnt has been sufficiently met. The presumption in favour
+of the CrQwn should »ot be extended to private parties/ Tfie
+
+
+Digitized by VjOOQIC
+
+
+June 17, *93.] the suPRfiieK cot^itT reports. 13
+
+Ordinance is meant to apply only to particular casM. The land Wbere-
+is not forest land. It has been cultivated for the last 8 or 9 '^'^'^^
+years with cocoanuts. Seilawamka
+
+Qrenier lot plaintifi-respondent.
+
+The presumption in £airour of the Crown has not been
+met and a grant by .the Crown is prima facie evidence of
+title in the Crown. (8 S.C. C. p. 58 5 S. C. C p. 194.)
+
+Damhorst in reply.
+
+. , Cur. adv. vult.
+
+On February 14, the following judgments were delivered : —
+
+Lawrib» j. — The presumption in favour of the Crown is
+(as has been often held by this Court) a rebuttable presump-
+tion, and here it seems to me the presiunption has been
+rebutted.
+
+J^trv/— The defendants hold a title to the land, a title not
+of recent date, not concocted to defeat the right of the Crown,
+but a title obtained between 60 and 70 years ago.
+
+I hold it proved that the land conveyed by the transfers!
+produced by the defendants is the same land as that now
+claimed by the plaintiff.
+
+Second — The defendants are now in possession, and so
+b^ as appears they and their predecessors in the incumbency
+of the Vihara have been in continuous possesion for the last
+sixty years. There is no trace of any one else possessing.
+
+Thirdly — Their possession might not avail against the
+Crown if it had been merely a possession ' by authority.
+
+The Ordinance seems to disregard quiet possesion as ■ a
+proof of title, presuming that to Chena even at the most regular
+intervals is not a possession from which ownership must foe
+presumed.
+
+Accepting that view still there have been acts of possession
+of a different kind, possession by planting cocoanut trees.
+
+It is true that these trees are planted only on the
+Eastern side next to the Pansala, but planting of a part
+•f the land is an overt act of possession of the whole.
+
+This is a case in which I think the presumption in
+favour of the Crown has been amply met i^ncl upset by the
+evidcQCQ ^ddw;^ by thf dcfenda&t.
+
+
+Digitized by VjOOQIC
+
+
+14 TH£ SUPRBMB COURT RBfORTS. [Vol. ii.
+
+Wbbre- I wouM dismiss the aetion«
+
+SIKEKE
+
+.{;. Withers, i.-~rUiuler oo>ttr of the Crown ^ant the plain.
+
+Smlawanra ^.g. ^j^jj^g ^ parcel of land called Waodunideoiaheoa from
+which he seeks to eject the dfiloadaitts.
+
+Tiie defendAQt .xlaims jttnder the Kahi^araa Wandumdeoia
+Paosal to whkh th^y say the land plaintiff seeks to eject
+them feom belongs*
+
+The Pansala is in possession of a la^il .of that name,
+was so at the date of the grant, and .has had a part of it in
+cocoanut cultivation 'for the last '8 or 9 years.
+
+This being so the plaintiff had to prove two things, viz,
+that the land in defendant^-s possession on the Pansala's behalf
+is within his grant ^nd that his title to the land is -superior
+to that of the Pansala's.
+
+I am far from satisfied that he has established the fact
+oi the identity of the land in the defendants* possession with
+that in his grant. But assuming it to be so, has he proved a
+superior title. He has recovered judgment on the ground that
+he land being once wholly and still partially chena land is
+to be deemed forest or waste land and as such property of
+the Crown.
+
+.1 think this Court can hardly go back on the proposition
+to be (bund implied, if not expressed in its decisions— but
+contested by Mr. Dornhorst with much plausibility, that the
+presumption attaches so to speak to the land after it has
+passed from the Crown to a private subject.
+
+In this case however the statutable presumption of the
+Ordinance la of 1840 is. surely and clearly rebutted by the
+partial cultivation of the land for the last 8 or 9 yeaxs with
+cocoanuts, the production of conveyances of ' 1839 . and 1832
+the Pansala of the land herein claimed fnDm it, the culti-
+vation subsequent to those conveyances at int-ervals fit least
+up to 1857 with grain and payment of title to Government
+as by private individuals, ^nd the .onus was shifted bapk
+upon the plaintiff, to satisfy the Court that apart f(om statu-
+table presumption the laad he seeks to take irem the Pansala
+did indeed and in fact beloog to tlie Gtowiu -
+
+
+Digitized by VjOOQIC
+
+
+June 17, ^93.] THE SUt^fcEME COURf REPORfs. 1^.
+
+This omis he has not discharged and in my opinion the Weekk-
+
+jtidgment of the Court' below sheuld' be set aside and the y,
+
+plaintiflPs action dismissed with costs. • Seelawanka
+
+
+Before Laivrie' and Withers^ j. j.
+
+February 14 and 2t, 1893.
+
+THE ATTORN EY-GENERAL v. APPUHAMY and another
+
+[No. 15J, D. C. Kegalla.]
+
+Ptmdinffit^A7netidm&nt'^Ni>Hce-^^ostp^rmnent'-Co$t^^
+Section 98 Civil Prooedure Cod^
+
+On the day of trial the Court, in the presence of the ptrtles, allowed
+tbe*pfaifiitt to bt amended by the addition of ceruin words. The amendment
+rtot being a material one, in that it did not alter the issues in the case.
+
+J7r'rf that the defendant was riot entitled to a postponement of the case-'
+
+Per Withers^ j. — An order alhrwing an amendment should direct the detiref y
+«f tkt alMod^d pleadin^^ within a given time to the opposite party.
+
+On the day of hearing of an action brought by the Attorney-
+General on behalf of the Crown the defendant*s counsel drew the
+attention of the Judge of the Court below to an addition to the plaint
+inserted at the end of the first paragraph in these i^ords *'That the
+said Welikada Mukalana is a forest land '* and submitted that
+its presence was unauthorized as it had not been initialled by
+the Judge as required by section 95 of the Civil Code. The Court
+then initialled the additional matter.
+
+The counsel for the defence still contesting the legality of
+the amendment applied for an adjournment and the costs of the
+day . in order to plead over to the new matter if so advised.
+
+The learned Judge refused the, application and the defendant
+appealed.
+
+DomherRt l<x defendaot-appellaDt.
+
+Tb^ motion to amend wa* not made in Court and the
+amendment is oonsequently. irregular. The District Judge
+having allowed the amendment, ought to have granted appli^
+cation of the defendant for a postponement and costs.
+
+BamcuitUhan^ S.-G. for the Crown*
+
+The only objection in tfae court below was that the amend-
+ment had not been initiaUed, The Judge saj-s that the amend.
+
+
+Digitized by VjOOQIC
+
+
+l6 THE. SUPREME CQtJRt RjaMRtS* / ' [Vol. H.
+
+The nicnt was not object^ to. Tbe defect arising from tbe want
+GENERAL of initials of the District Ju<^e was subsequently cured by the
+
+Cur. adv; vult.
+
+On February 21, the following judgments were delivered:—
+
+Lawrue, j.T^-On the day fixed for the trial Of this case the
+counsel for the defendant moved that the hearing be postponed.
+The cause shown by him was in the opinion of the District Judge
+infufficient cau^e and the motion was disallowed^
+
+1 am of opinion that the District Judge was right. The
+reason given by the defendant'^ counsel for a postponement was
+not only insufficient but was triv^L
+
+Withers, J. — According to the petition of appeal to this
+Court the appeal was taken from an order of, the District
+Judge dated the 29th of July, 1892, refusing a postponement
+applied for at the hearing of the action.
+
+There is no record of ' a formal apfdication on defendant's
+behalf for an adjournment for^any particular reason or of a
+formal order therein.
+
+From what is recorded and from what counsel told us at
+the discussion of the appeal, I understand that defendaot's
+counsel in the Court below drew the learned Judge's attention
+to an addition to the plaint intioduced at the end of the first para-
+graph in these "words **<That the said Welikada Mukalana is a fbrest
+land,*' and submitted that its presence was unauthorized fbrthis
+reason If no other— that it had not been' initialled by the learned
+Judge as required by the 93rd section of the* Civil Prpcedure
+Code. . ' / * * '
+
+After appatrently a discussion is to the propriety of this
+so called amendment, the learned Judge proceeded to cure the
+defect by^ putting Ms initials and the date of the day" (^-7-92)
+a(gainst this additional tmtter and as the parties were bekx^
+Kim and * he had ihittaHed the amendment in their presence he
+held it to be in order, ' «
+
+Counsel still protesting against the Ifgatity of the so called
+amendment applied for an adjournment and the costs of the
+day in order to plead Over to the new matter if so advised.
+
+The learned Judge refused ttiis application and hence this
+
+
+Digitized by VjOOQIC
+
+
+June 24, '93.J THE SUfkRtfM^ COURT ItfiMRfS. If
+
+appeal. The
+
+On the 30th of May, 1892, a day was fixed for the hearing: ^gInbiul
+of the action, viz., the aoth of July, i8o2. v-
+
+On the 5th of July, a motion in writing was put 10 for the
+
+Crown and application made for notice on the defendants and
+their Proctors to the effect that the Court would he moved
+on the nth July, 1^92, to amend the plaint by introducing
+in it at the end of the first paragraph the words previously
+recited.
+
+On the nth of July, the learned Judge allowed the mo-
+tioh having satisfied himself that the other side bad be^n
+suflBcientty secured with notice of the motion, who made the
+amendment by introducing the added matter and When it was
+made does not appear.
+
+There it was 00 the day of hearing but the matter was
+not iKrell added because of the absence of the Judga*8 sanction
+as certified by his initials, and it only became an amendment,
+properly speaking after the Judge had initialled it.
+
+I should have thought it scarcely open to question, that
+a Judge, in making an order on a motion of the' kind, whether
+opposed or not, allowing an amendtnent, would naturally direct the
+delivery of the amended pleading within a given time from the
+date of the order with directions limiting the time for the other
+party to meet it, if so advised, and make some order as to
+costs, for an amendment cannot be made at the expense of
+the opposite party who is entitled to be indemnified for all
+additional expense involved in such amendment. Why the amend-
+ment was ever appHed for, or why it was allowed, I am un-
+able to imagine.
+
+But after all is said and done the simple question for us to
+decide is whether the learned Judge exercised or not a proper
+discretion in refusing a postponement of the trial because of
+the amendment so made on the day of hearing.
+
+If the amendment had been a material one his order
+could not be justified for a moment.
+
+It was ho good reason to refuse a postponement because thf
+deiendants had had notice of the motion for leave to amend
+the ^int in the manner I m«ntion^«. ... . .
+
+a 3
+
+Digitized by VjOOQIC
+
+
+tHE SUPREME COURT REPORtS,
+
+
+[Vol. ii.
+
+
+The
+
+ATTORNEY-t
+
+General
+
+V'
+APPUHAMT.
+
+
+They had no reason to suppose that the amendment had
+been made.
+
+But can the defendants be seriously said to have been pre-
+judiced by the order complained of ? The parties were or should
+have been prepared to go to trial on the 39th of July.
+
+Did this addition really change the aspect of the case
+or alter the patent issues in the action ? It was a statement
+that might have been taken out of a dictionary — it was partly
+explanatory^ partly argumentative, but quite immaterial seeing
+what the issues were.
+
+The course taken by the defendants' advisers was in the
+nature of a resort against the want of principle in the learned
+Judge's method of sanctioning amendments. It was a course
+taken at their own wish.
+
+I cannot say, I think, the judge was wrong in refusing a
+postponemetit, and in my opinion the order should be afRrmed,
+but ,1 would give no costs in appeal.
+
+
+Before Latvrie Xnd Witliers^ j. j.
+
+February 10 and 14, 1893.
+
+SILVA and another v. PODISINHO and another.
+
+[No. 39,788, D. C. Kalutara.]
+
+Judgment— 'Revival qf—Adjusiment'-Certificate under S^t. 349
+Civil Proceduf^ Code.
+
+Under section 349 of the Civil Procedure Code ** if any money payable
+under a decree is paid out of Court, or the decree is otherwise adjusted in
+whole or in part to the satisfaction of the decree-holder, he shall certify such
+payment or adjustment to the Court whose duty it is to execute the decree.
+The judgment-debtor may also by petition inform the Court of such payment
+or adjustment, and apply to the Court to issue a notice to the decree-holder
+to show cause, on a day to be fixed by the Court, why such payment or
+adjustment should not be recorded as certified. *
+
+ffeldf that n:;twithstanding the revival of a judgment, the Court may record
+as certified on the petition of the judgment-debtor any adjustment or payment
+made before such revival.
+
+The action was to recover a debt due on a mortgage
+bond, and judgment was entered on December 9, 1888, which
+the plaintiff allowed to lie dormant until its revival on June
+19, 1890. On November 3, 1892, the present plaintifls, who
+bad been substituted in place of the original plaintiff deceased,
+
+
+Digitized by VjOOQIC
+
+
+June 24, '93.] THE SUPREME COURT REPORTS. I9
+
+applied for and obtained leave to execute the revived judg- Silva
+ment, and while this order was out, the first defendant applied Podisiiicho.
+by way of summary procedure for an order recording as """"
+certified certain payments.
+
+The District Judge (De Livera) rejected this application
+on the ground that he could not go* behind the revived judg-
+ment of June 19, 1890.
+
+The first defendant appealed.
+
+Seneviratne for appellant.
+
+Revival of judgment does not imply an acknowledgment
+of the whole debt. The application for reviving judgment
+makes no mention of the payments made by appellant. The
+appellant is still entitled to a certificate imder § 349 of the
+Civil Procedure Code.
+
+Domh(h*8t for respondent.
+
+The operative judgment is the revived judgment. The
+defendant had notice of plaintiffs' application to revive judg-
+ment but he did not appear then and ask for a certificate;
+and he cannot now go behind the revived judgment in which
+he has actually acquiesced.
+
+Cur. adv. vult.
+
+On February 14, 1893, the following judgment agreed to
+by Lawrie, j., was delivered : —
+
+Withers, j.— A very simple action to recover a money
+debt secured by a mortgage has swollen into outrageous pro-
+portions and it is almost impossible to pick one's way through
+the growth of petitions, affidavitS| orders, precepts, processes
+and other kinds of documentary matter with which it is
+encrusted.
+
+It is one thing to listen to discussions on orders com-
+plained of, and another thing to discover the orders and
+construct a consecutive history of the proceedings which . lead
+up to those (orders.
+
+On the 31st August, 1888, the rule issued to the defendants
+to show cause why a money and mortgage decree should not
+be entered up in default of appearance to simimpns served, was
+made absolute and on the loth day of December, 1888, a decree
+was formulated that plaintiff do recover from the defend^^ the
+
+Digitized by VjOOQIC
+
+
+ao THE SUPUBMS OQURT MPORTS. [VoU U.
+
+Sn.VA sum of ^s, 231 w^th interest thereoa at 25 par cent, per annum
+
+P<>eiJiiQiiq.: from tls^.a^nd September, 1885, till payment in full and costar
+
+' ^nd that the premises described in the plains as security
+
+therefor be declared specially bound an4 executable for the
+
+Mi4 ju^ni^nt debt,
+
+Ng e9^i(|ion appaara to have h^n taken out of that
+decree and on the nth February, 1890, the plaintiff moved lor a
+rule on the defendants to show cause v/\\y the judgment should
+not be revived and writ issued.
+
+Thai mile was not expressly motde absolute, but on 19th
+June, 1890, it was ordered that the judgment entered on the xoth
+D^eember, 18^, be revived and writ do ia^ue against the
+
+Plaintiffs* costs in rfie action were taxed at Rs, 78-50
+and on the 28th June, 1890, plaintilBf applied tor wxhs against
+person and prqperty of the defendants. What the writ went
+out for dees act appear and as far as I can make out no
+writs with returns to thcoi have travelled back to this fecord.
+
+A veturo to writ issued against property on the 4th of
+July, by the Deputy Fiscal of Kalutara is the sut^ect of 4
+minute of the otli July, 1890, which does not make much sense
+of the return.
+
+Writs were then issued on the 14th of July, 1890, for
+^rvice in the District of Galte, to which the return, according
+to a minute of 20th January, 1891, was that the d^ndants
+had neither paid the money nor surrendered property which
+being situate at Kalutara was not easily to be surrendered at
+Galle.
+
+On the 6th of February, 1891, writs were reissued
+somewhere or another, and the quaint return made to them on
+the* nth March, 1891, by the Deputy Fiscal was that the plain-
+tiffs was dead.
+
+On the 2ist of August, 189X, the substituted plaintilfe
+apptied by way of summary procedure to have their names
+entered d record in the room of the orginal plaintiff deceased,
+and for leave to proceed in the action and reissue the
+wfit and order was allowed to go, though it should have beea
+««tofin#<J- to that part of the application wdeft § 395 of t^e
+
+
+Digitized by VjOOQIC
+
+
+June a4, *93.] the aupRBtfE covkt RiroitTs. zi
+
+Civil Procedurft Cbde (aee tkwt reported in IL c, l., r. 77) which Stlva
+relates to the entry of names in the room of the deceased Podcimoiio.
+idaialiff.
+
+On the Stfi of Sepleinber» 1891, one of the defendants
+appeared to the notice of the order nt»i» evidently with the
+intention of resisting that part of the application on behalf
+of the parties to be added which related to reissue of writ
+in execution of judgment, for the minute on his appearance
+is *' the ist respondent '* ( to the petition on summary proce-
+dure) says he paid Ra. 440** i.e. on account of judgment
+recovered and has got receipt'* signed by the judge *'I
+give defendant time to prove payment" signed by the judge.
+Of the validity of this order, the judge in the following month
+expressed a doubt in as much as the petitioners* names had
+not been entarred of record, but he left the order standing*
+
+On 4th October, 1891, the respondents to the petition
+under the said section 395 were advised unfortunately to resist the
+appbcatiflD of the petitioner to have their names altered in the
+record in plaoe of the deceased plaintiff, and though they
+gained a temporary success in the Court below they were
+Mltimately defeated in this Court and the order was made
+absolute, though I think it was only intended to make it ab
+sohKe as to the entry of the petitioners' nanoes on the record.
+
+Indeed it was competent to the petitioners as soon as their
+names were entered on the record to proceed with the action,
+ii unconchided. Nor could they do so till their names were
+duly entered.
+
+The formalities required by the judgment in appeal were
+executed and the order nisi of the 30th October, 1891, was
+declared absolute in conformity iiith the decree of this Court,
+and the terms of it are to be found on page 17.
+
+The successful appellant's costs below and im appeal were
+thereafter taxed at an aggregate of Rs. 141-75 and the substi-
+tuted plaintiffs ofk the 16th July, 1892, applied to have the amount
+added to the writ which on the 30th July, was accordingly
+issued. 1 suppose the writ went out for the amount of the
+judgmeiit with the new and old ^xM>ts on it, but I sannot
+6ik1 either writ How tbif wPt cai^e to bo is^u^ <m ^ yw»
+
+
+Digitized by VjOOQIC
+
+
+dH THB SUPRtME COURT RBP0RT6, [Vol. ii|
+
+SrLVA motioQ, ivhen more than a year had elapsed since the last return
+PoDisiNGHo, to the writ on the nth March, 1891, I do not quite under*
+""^ stand. It was returned un-executed on the ist September, 189a,
+and allowed to re-issue on the 2nd September, 1892.
+
+Thereafter on the nth October, 189a, an application was
+made by way of summary procedure on behalf of the ist
+defendant to have the writ dated the 4th July, 1896, (sic) recalled
+and execution stayed, the affidavit in support of which is to
+be found at page 71, and in the affidavit appears the reason
+for the application, viz., that the writ had been irregularly
+issued without notice, more than a year having elapsed
+between the date of the decree and the last application for its
+execution.
+
+This was not a true ground but was apparently accepted. as
+such for on the 19th October, 1892, plaintiffs' proctor moved
+to have the writ recalled as having been irregularly issued,
+and the writ was returned on the a4th October, 1892.
+
+Then on the 3rd November, 1892, the Plaintiffs* Proctor moved
+by way of summary procedure for leave to execute the judgment,
+which was allowed, and while this order iivas out the ist defen-
+dant appplied by way of summary procedure for an order
+rcicording as certified certain payments or adjustments of items
+of money paid on account of judgment debt and costs taxed
+in this action.
+
+Order nisi was made on this application and the matters
+of the contestants petitions were eventually heard and
+determined with the effect that execution should be allowed
+for a balance sum excluding some of the items which
+had been admittedly parid, including the principal sum of Rs, 300
+which the learned judge refused to admit proof of on the
+ground that the judgment debtor could not go behind the
+revived judgment ot the 19th June, 1890, see page 27. It is
+from this order that the judgment debtor appeals*
+
+Mr. Dornhorst contended that the revived judgment was
+the operative judgment and because it was the judgment which
+is deemed to be satisfied after 10 years have elapsed from the
+date on which it was pronounced, the judgment debtor could
+not go behind it and attempt to show that the original judg-
+
+
+Digitized by VjOOQIC
+
+
+jnne 24, *93.] the suPRfiME court REI>ORts. ij
+
+ment of December, 1888, had been satisfied in part as that Sflva
+would be tantamount to allowing the debtor to plead, if the Podisingho.
+occasion had arisen, that the old and not the revived judgment """
+had been satisfied, which would be an abuse of privilege. I am
+afraid I am not fully alive to the force of this contention not-
+withstanding the truth of the observation that the new judg-
+ment starts the period of limitation; but it seems to me
+it might work serious injustice, if a plaintiff, after letting a
+judgment lie dormant, could, by the mere step of reviving it,
+shut out all transactions in the nature of payments which
+take place in the interval. It is, of course, a matter for com-
+ment if a judgment-debtor does not come forward as soon as
+possible after the delivery of a writ in execution of judgment
+and ask for an order limiting the execution to a sum less
+than that which it carries on the face of it on account of
+payments made, error of computation, or some good reason.
+
+At the same time it is conceivable that the means of proof
+are not ready to hand at the date of delivery. On considera-
+tion I think the order appealed from should be set aside
+and the case remitted to the lower court for a day to be fixed
+f(x determining whether a payment of Rs. 300 in part satisfaction
+of the judgment should be recorded as certified. It is worthy
+of notice that on the day the appellant*s application was dis-
+cussed the plaintifis' proctor admitted all the payments men-
+tioned in the judgment debtors' affidavit except that of the
+said item of Rs. 300. The payments admitted were made
+according to the affidavit on three occasions including an item
+of Rs. 20 on the 25th day of March, 1889, ^i^d aggregating
+a sum of Rs. 140^ and as far as I can discover credit was
+never given for these payments till the application of the 26th
+October, 1892. In the application of the 2nd September,
+1892, the remarks made in the column, headed *' adjustment
+made if any" was no.
+
+It is true that in the application of the 26th October,
+1892, credit is not given for the item referred to in appellants*
+affidavit of Rs. 20. On the 23rd March, 1892, but the record
+(p. 27 a) states that plaintiffs* proctor admitted all the pay.
+
+
+Digitized by VjOOQIC
+
+
+14- thE SUPREikTE COURt kEl»ORtS. ' [Vol. U.
+
+81LVA ments mentioned in the aflSdavit except that of the item of
+PoDisiNGHo. Rs. 300 on the 23rd March, 1889.
+
+The appellant is entitled to his costs of appeal.
+
+
+Before Burmide^ c. j. Withers and Lawrie, j. j.
+
+January 24 and February 10, 1893.
+
+WEERARATNA v. SILVA.
+
+[No, 676, D. C, Galle,]
+
+Ejecimeni— Mortgage-Sale by mortgagor^SubHqtAent 9aU
+under mortgage decree.
+
+A mortgaged a land to W and subsequently sold it to S for the purpose
+of paying oH some mortgages that had existed before that of W. W subsequently
+sold It under a mortgage decree, and having bought it^ himself obtained 4
+Fiscal's conveyance.
+
+IJeld^ that W had no right to eject S as at the time of Ws purchase A
+had no, right, title or interest lor the Fiscal to seize or convey.
+
+This was an action in ejectment. The original owner of
+the land in dispute, one Alwis, mortgaged it on Octbber 18,
+1887, to plaintiff, which mortgage was duly registered. On
+this mortgage the plaintiff obtained the usual mortgage decree*
+sold the land under it and purchased it himself and obtained
+a Fiscal s conveyance therefor on November 11, 1890, which
+he registered on December 17, of the same year.
+
+Previous to the mortgage under which plaintiff claimed
+Alwis had mortgaged the same land by duly registered mort-
+gages to other persons, and on February 2, 1888, he
+transferred it to the defendant by duly executed conveyances
+dated February 24, 1888, and registered on March 19,
+of the same year arid paid off the mortgages that had
+Existed before that of the plaintiff, and the defendant entered
+into possession. Tlie plaintiff on the strength of the FiscaJ's
+conveyance sought to eject the defendant.
+
+The District Judge dismissed the plaintiff's action.
+
+The plaintifif appealed.
+
+Dornliornt for plaintiff-appellant. — Alwis' conveyance to
+defendant is subject to all prior encumbrances. He could not
+defeat his mortgagee's rights by transferring the property by
+private conveyance* It 4loe$ not make any difference that prior
+
+
+Digitized by VjOOQIC
+
+
+July 1, '93.] THB SUPREME COURT REPORTS.
+
+
+as
+
+
+mortgages have been paid off.
+
+Crenier for defendant-respondent. — The action is aho-
+gether misconceived. The defendant is not bound by the mortgage
+decree, he not having been a party to it. The proper course
+would have been to call upon the defendant to pay off the
+mortgage (Dicklande Case). My client stands in the shoes of
+he prior mortgagee, wliose debts have been paid off by the
+sale.
+
+Domhorst In reply.
+
+Cur. adv. vult.
+
+On February 10, 1893, the following judgments were deli-
+vered: —
+
+BuRNSiDE, c. J. — No question of priority under the Regis-
+tration Ordinance arises in this case. That being so, it is
+clear to me that the plaintiff has no right to maintain this
+action, and the judgment of the District Judge should be
+affirmed with costs.
+
+The action is in ejectment. The defendant is in the Ac-
+tual possession, and the plaintiff has never had possession. The
+admitted facts are shortly these :—
+
+The original owner, one Alwis, mortgaged the land on
+October 18, 1887, and on the 21st the mortgage was registered.
+On this mortgage the plaintiff obtained the usual mortgage
+decree, sold the land under it and purchased it himself and
+obtained a Fiscal's conveyance therefor on November 11,
+1690, which he registered on Decen^ber- 17, of the same years •
+
+On this paper title the plaintiff rests his right of ^K:tioa
+to eject the defendant.
+
+Previous to the mortgage under which plaintiff claims,
+Alwis had mortgaged the same land by duly registered
+mortgages to other persons, and on February 2, 1888, he
+transferred it to the defendant by duly executed conveyances,
+dated February 24, 1888, and registered on March 19,
+of the same year, having paid off the mortgages that had
+existed before that of plaintiff, and the defendant entered into
+possesion and has remained in possession.
+
+This is the defendant's title. The District Judge has given
+judgment for the def«nd»nt, and the plaintiff appeals*
+
+
+Weera-
+
+kATNA
+
+8ILVA.
+
+
+» 4
+
+
+Digitized by VjOOQIC
+
+
+26
+
+
+THB SUPREME COURT REPORTS,
+
+
+[Vol. 11.
+
+
+Weera*
+
+KATNA
+
+V'
+SlLVA.
+
+
+The judgment is undoubtedly right. The legal estate in the
+property is in the defendant. It was quite competent for
+Alwis to sell the property to the defendant who thereupon
+took title to it, and when the plaintiff purchased subsequent-
+ly Alwis had no right, title or interest for the Fiscal to
+seize or convey.
+
+It is not for us to point out any difference of position
+which the plaintiff might have occupied had the defendant
+been made a party to the mortgage suit against Alwis, or
+if there were a suit by plaintift to render his purchase under
+the mortgage decree available as against the land in. the
+plaintiff's possession. The action is in ejectment iq which
+the plaintiff must recover by strength of his title, and he has
+really no title against defendant.
+
+Lawrib, j. — I agree.
+
+Withers, j. — I confess I do not see what pretence of
+right the plaintiff has to eject the defendant. The action
+seems to me to be totally misconceived. Ihe property had
+already been sold by the owner to the defendant, when the
+plaintiff purchased it at a judicial sale. .»
+
+The judgment-debtor's estate had gone out of him, and
+there was nothing of his for the Fiscal to selU Plaintiffs title
+is surely a worthless piece of paper.
+
+Plaintiff may or may not have a claim to have the pro-
+perty sold in satisfaction of the late owner's mortgage debt
+to him, but that roust be determined in the usual hypothe-
+citry action.
+
+
+Digitized by VjOOQIC
+
+
+July r, 93.] THE SUPREME COURT REPORT^. 2*r
+
+Before Laivrie a. c j. and Withers, j.
+June 9 and 13, 1893.
+
+THE SINGER MASUFACTURINO COMPANY
+
+V.
+
+THE SEWING MACHINE COMPANY.
+
+[The Sewifig Machine Case.]
+
+[No. 3,762, D. C, Colombo.]
+
+Appealable Order-^Recojnised Agent — Proxy — Corporation
+
+Aggregate — Seal — Recognised Agent — Civil Procedure
+
+Code Sects. 756, 24, 27 and 470 — Ordinance
+
+No. 22 of 1866.
+
+The plaintiff Company having obtained an inter* m injunction against the
+defendant Company, the latter purported to present a petition to the Court
+applying for a dischirge of the injunction. The petition purported to be
+signed by F. L., proctor for the petitioning Company, and one j. K. After
+vgument the District judge made order disallowing the application as made by
+F. L, as proctor of the Company, on the ground that the Company bad no
+status to make such an application through F. L.
+
+Hfld, CO that this was an appealable order. (3) that as the application
+lod proxy had been uken off the Court's 6le, and the petition of appeal was
+signed by F. L. the requirements of Sect. 755 of the Civil Procedure Code as
+to signing of the petiti :n of appeal have been complied with.
+
+A /oint Stock Co. is m corporttion aggregate, which car.not appear in an action,
+and is consequently outside the provisions of Sect. 24 of the Civil Procedure
+Code.
+
+' Except as provided by special enactment, a corporation aggregate can only
+appear to an action by an Attorney made under its seal, or by Attorney
+appointed in writing by an agent, and empowered under the Company's seal
+10 bring ao action, or defend one (see O. B. C vs. Corbet, 4 S. C. C. p 158.)
+
+The plaintiffs, an American Company, carrying on business
+in Colombo, sought to restrain the defendants, a Joint Stock
+Company Registered and Incorporated in India and also carrying
+on business in Colombo, by a perpetual injunction from
+continuing to use and maintain on their premises in Colombo
+a sign board, which, they alleged, would deceive persons into
+the belief that the defendant Company are authorized Agents
+in Colombo of the plaintiff Company to self Sewing Machines,
+manufactured by the plaintiff Company. Soon after plaint was
+filed, plaintiff Company applied for and obtained, an interim in-
+junction against the defendant Company requiring them, their
+Agents and workmen to remove the sign board complained of.
+Oq March 9, the defendant Company purported to present
+
+
+Digitized by VjOOQIC
+
+
+^^ THE SUPREME COURT REPORTS. [VoL H.
+
+The a petition to the Court, applying for a difK^harge of the interim
+
+Manufac- injunction. The petition purported to be signed by F, Liesching,
+
+Company P^o^^or for the petitioning Company and one J. K. Hormusjee.
+
+V' After hearing counsel for the two Companies, the District
+
+Machine Judge (Browne) disallowed the application as made by Mr.
+
+Company. Ligsching as attorney of the Company, on the ground that
+
+the Company had no status to make such an application
+
+through Mr, Liesching. The defendant Company appealed from
+
+that order.
+
+L(^y^rdf A.- O, {y/\ih him Dor nhorst, Wer}4i, ?iVid DeSarqm)
+for respondents objected to the appeal being heard. The
+proctor signing a petition of appeal must be the proctor on
+the record. The District Judge having found that the de-
+fendant Company as regards the application referred to, was
+not properly represented by a proctor 'in Mr. Liesching, it
+cannot, be said that there is any proctor on the record, and
+the petition of ap|)eal in consequence cannot be received,
+as not satisfying the requirements under Sect. 775 of the Civil
+Procedure Code (Assauw v. Pestonjee i S. C. R, p. 221.) It
+is also urged that the order complained of is not an appeal-
+able order.
+
+Grenier (with him de Sampayo & Batva) for appellant.
+
+The preliminary objections taken by the Attorney General
+really affect the merits. The appeal is properly before the
+.Court, in that Mr. Liesching has signed the petition of
+appeal as proctor of the defendant Company and his
+name appears on the record as such proctor. Whether he
+could represent the defendant Company in law is the very
+question that is expressly raised in this appeal, which has not
+\ et been opened to the Court. (Withers,], We will hear your
+appeal.) Hormusjee as the recognised agent of the defendant
+Company was entitled to appoint a proctor to represent the
+defendant Company under Sec. 24 of the Civil Procedure Code,
+a Company being a **party to an action" within the meaning
+of this section. As a matter of fact the summons and injuc-
+tion were bcth served on Hormusjee as the recognised agent
+of the Company, and Hormusjee's affidavit establishes that he
+is in fact such recognised agent. Section 470 of the Civil Rro-
+
+
+Digitized by VjOOQIC
+
+
+jtti; I» '930 "^^^ SVPtiEliU COURT RSk)RTS. ^
+
+cedure Code does not apply to an applkation UJke the present T^
+one, but relates exclusively to two distinct stages in an action, Manufac-
+pUint and answer. ^'oul^^.
+
+Do7*nbarst for respondents. Chapter V of the Civil Proce- ^ v-
+^,,. ., , ^ Thb Sewing
+
+dure Code relating to recogmsed agents and proctors does not Machine
+
+apply to Joint Stocjc Companies, inasmuch as Company Law '
+
+is governed by Ordinance 22 of 1866, except where provision is ex-
+pressly made by local law on the subject (O. B« C vs, Oorbet
+4, S. C. C. p 158.) Even if this chapter did apply, Hormu^)ee*s
+affidavit is insuflScient as it fails to set out that there is no
+pth^ person in Qeylon expressly authorised by the defendant
+Company to make such appearance and application on their
+behalf. There is, further, no proof of Hormusjee^s appoint-
+ment as agent at Colombo of the defendant Company.
+
+0)'enier in reply — Hormusjee's affidavit is sufficient proof
+of his sole agency for the defendant Company. The caae cite^
+0. B. C. vs. Corbet, has no application at present, in that it
+was decided at a time when the law knew no such status as
+that of recognised agent, which was created by the Civijl
+
+Procedure Code.
+
+Cur. Adv. Vult.
+
+On June 13, 1893, the following judgment agreed to by
+Lawrie, a. c. j. was delivered: — «
+
+Withers, j. — This is an action by an American Company
+carrying on business in Colombo, against a Joint Stock Company
+registeted and incorporated in India and also carrying on
+Business in Colombo, in which it is sought to restrain the
+defendant Company by a perpetual injunction from continuing to
+use and maintain, on their premises in Colombo, a sign board
+Which, it is alleged, is calculated to deceive persons desirous
+of purchasing sewing machines manufactured by the plaintiff
+Company into the belief that the defendant Company are authorised
+Agentsof the plaintiff Company to sell such machines in Colpmbo,
+It appears that, soon after the plaint was filed, the plaintiff
+Company applied for, and obtained, an interim injunction against
+the defendant Company, requiring the Company its agents, and
+workmen, to i?emove the sign-board complained of. On March 9
+last, the defendant Company purported to present a petition to the
+
+
+Digitized by VjOOQIC
+
+
+5© tHE SUPREME COURT REtHDRtS. [Vol. li.
+
+The Court applying for a discharge of the interim injunction. This
+
+Manufac- petition purports to be signed by F. Liesching, Proctor for the
+
+Company Petitioning Company and one J. K. Hormusjee. After hearing
+
+V' Counsel for the two companies, the learned Distrtct Judge
+
+Machine disallowed the application as made by Mr. Liesching as Attorney
+
+C o mpa n y. ^£ ^j^^ Company, on the ground that the Company had no
+
+status to make such an application through Mr. Liesching.
+
+The Company appeal from that order. At the hearing
+of the appeal, a preliminary objection was taken to the
+appeal by Respondent's Counsel on the ground that the
+requirements of the 751st section of the Code have not been
+complied with.
+
+It was also urged that the order complained of was not
+an appealable order.
+
+As to the second point I may as well say at once that I think
+the order was an appealable one. The question before the Court
+was once and for all terminated by the decision of the Court, that
+the defendant Company as represented by Mr. Liesching has no
+loctAs standi.
+
+As regards the other point, the attention of appellants*
+Counsel was invited to the fact that the petition of appeal from
+the order complained of purports to be drawn and signed by a
+Proctor, and so fulfils the requirements of section 755 of the
+Civil Procedure Code. This difficulty was met in this way.
+This Court, it was urged, has laid it down that a petition
+of appeal must be signed by a Proctor on the record. The
+Judge having found that the Company, as regards the
+application referred to, was not properly represented by an
+Attorney in Mr. Liesching, it could not be said there was any
+Proctor on the record and' the petition of appeal in consequence
+could not be received. There is, however, herein filed of record,
+a proxy by which the defendant Company purports to empower
+Mr. Liesching to make the application to dissolve the injunction
+and to appeal from any order of the Court thereon. The learned
+Judge did not think fit to take the application and the proxy off
+• the Court's file. For the purpose then of this contention, I
+take it, we must consider the appointment of Mr. Liesching as
+Proctor, to be in force in view J>1 the provisions of section 27 of
+
+
+Digitized by VjOOQIC
+
+
+Julyi/93«j THE SUPRBMB COURT REPORTS. 3I
+
+the Code. Hence thiB objection, likewise, in my opinion fails. Tho
+
+As to the merits, it was strenuously contended by Mr. Grenier j^ancfac-
+that the proxy which vouched the defendant Company's application qq^^p^^y
+to dissolve the injunction was a good proxy to Mr. Liesching for v*
+
+that purpose, because it was signed by Hormusjee (the person Machine
+before referred to) as the recognised Agent of the defendant Com- ^ ^ ^^^ ^ ^'
+pany. It was contended that both in law and in fact, Hormusjee
+was the recognised Agent of the Company, and as such Agent was
+empowered to appoint Mr. Liesching, the Company's Proctor, for
+the purpose of the application. For his capacity in law, Mr.
+Grenier relied on section 24 of the Civil Procedure Code, and for
+his capacity in fact he relied on the affidavit of Horrou^)ee to be
+found at page 71 of the record, and more particularly in the first
+paragraph thereof in which Hormusjee deposes as follows : —
+
+"I am the only Agent in Ceylon of the Sewing Machine Co.,
+Ltd., the defendant in this case, and have been so since its forma-
+tion, and I am carrying on business for, and in the name of, the
+said Company which was formed about February 13, 1893, and
+whose Registered Office is at Bombay.*'
+
+It was contended on ihe other side that Chap. V of the Civil
+Procedure Code relating to recognised Agents and Proctors does
+not apply to Joint Stock Companies, inasmuch as Company Jaw is
+governed by Ordinance 22 of 1866, except where provision is ex-
+pressly made by local law on the subject, anc^nstances of such pro-
+visons in the Civil Procedure Code, to which I shall presently
+refer, were mentioned to us.
+
+It was also argued that, even if Chap. V of the Civil Proce-
+di^e Code did apply to this case, Hormusjee could not l>e consi.
+dered in law and fact the recognised Agent for the defendant
+Company for the purposes of this application^ inasmuch as it
+is nowhere stated in Hormusjee's affidavit that there was
+no person in Ceylon expressly authorized by the defendant
+Company to make such appearance and application herein
+as the law required or authorised to be made or dpne by a party
+to an action in the Court below — the absence or presence of such
+a ccH)dition of things being peculiarly within the knowledge oi •
+lt9nAtis^ee. Fur^bqr, thef^ is no proof of. t\\% s^id J» K,
+
+
+Digitized by VjOOQIC
+
+
+32 THE SUPREME COURT RF.PORTH. IVol. ii.
+
+The Hormu8Jee*s appointment as Agent, at Colonibo, of the defen-
+Maniifac dant Company.
+
+CoMPANv ^" ^y opinion, the contention of respondent's counsel must
+
+V' prevail. A Joint Stock Company is a corporation aggregate,
+Machine which cannot appear in an action, and is, consequently, outside
+Company, ^j^^ provisions of section 24 of the Civil Procedure Code.
+
+. Its very composition renders its appearance in person as an
+ordinary party to aft action, impossible. To obviate difficulties
+occasioned by its constitution, the law has provided, for instance,
+that a Joint Stock Company may be compelled to answer to in-
+terrogatwies by a member or officer of such Company — section
+97 of the Civil Procedure Code. The law thereby creates a
+mouth-piece for it.
+
+Section 470 of the Code creates a hand for it by allowing
+the plaint or answer to be subscribed on behalf of the
+Company by any member, Director, Secretary, Manager or
+other principal officer thereof, who is able to depose to the
+
+facts of the case.
+
+By section 471, it provides for a particular mode of service
+on the Company, and for compelling the Secretary or other
+principal officer of the Company to appear and answer any
+material question relating to the action, if so required, by
+sun mons or special order of the Court.
+
+By section 655 where an action has been instituted by a Com-
+pany it permits the principal officer of a Company to make affida-
+vit in support of the motion for the arrest of the defendant's
+person or the sequestration of his property before judgment.
+
+Even if section 24 ot 25 of the Civil Procedure Code does apply
+to the case of a Joint Stock Company, which I have taken leave to
+doubt, 1 think, J. K. Hormusjee^s affidavit is insufficient, on the
+positive side, as to his being th^ duly appointed Agent in
+Ceylon of the defendant Company, and on the negative sidei
+as to there being no other person in Ceylon competent to
+appear and make application for the Company in a civil
+suit. I take the hw to be, now as before, that, except as
+specially provided — and I know of no such provision — a
+corporation aggregate, lifie the Defendant Company, can bfiiy
+tpftix t9 ftp action by m Attorney upd^r its ^\ or
+
+
+Digitized by VjOOQIC
+
+
+July 8, '93.] THB SUl»ft6ME COUrT REPORtS. J3
+
+(sec case cited in iv. Supreme Court Circular p. 158) by an JThe
+
+Attorney appointed in writing, by an Agent empowered Makhkac-
+
+under the Company's seal to bring an action or defend one. Jompanv
+
+For this reason I would affirm' the learned Judge's order _ v-
+
+•' The Sewing
+
+disallowing the application on behalf of the Company by Machine
+
+Mr. Liesching to dissolve the interim injanction granted to ^tl^ ^ ^'
+
+the Plaintiff Company. No costs.
+
+
+Before Lawne^ j.
+
+March 2 and 7, 1893.
+
+PERERA V. HARMANIS.
+
+[No. 472, Ad, P. C, Colombo.]
+
+Itinerating Police Court— Ordinance No. 12 of 1890^
+Evidence — Dishofiestly retaining stolen property*
+
+Ordinance No. I a of 1890 enacts that a Police Court *Mawkilly esublithe<l
+in any division shall be holden bv and before the Police Magistrate appointed
+thereto, at any convenient spot within the liraits of such division*'—
+
+Sfmble per Lawrie, a. C. j^ that it is desirable that, in the case of Police
+Courts held at different places as permitted by this Ordinance, the Police Magistrate
+should state as a matter of reconi that the pbce at which he holds his Court
+is within his division, and that it is at a convenient spot for the trial, and
+that he had given due notice that he would sit there.
+
+Observations on the inconvenience and hardship to which suitors and wit-
+nesses having to attend the Police Court, to which the prestnt case betongs,
+are exposed.
+
+On a charge under section 394 of the Ceylon Penal Code of dishonestly
+retaining stolen property knowing or having reason to believe the! same to be
+stolen, It IS necessary that the prosecution should prove facts from which it could
+reasonably be inferred that the possession by the accu^ was dishonest.
+
+The facts sufficiently appear in the judgment.
+
+Domhorsty for accused-appellant.
+
+Cur. adv. vult.
+
+On March 7, the ibllo^nng judgment i/vas delivered.
+
+Lawrie, j. — The proceedings are headed in the "Itiner-
+ant Police Court of Colombo " — a court which is unknown to
+me. However, on page 3 I find that the Court which tried
+the case was the Additional Police Court of Colombo held at
+Welisara on February 16, 1893. ^^ reference to a map
+I sec that there is a Welisara on the road from Colombo to
+Jaela^. It is possibly a small place, because I do not find it
+nientioned in any of the Government Itineraries, n may,
+
+» 5
+
+
+Digitized by VjOOQIC
+
+
+34 TliE SUPREME CobRT REPORTS, [VoL
+
+
+U.
+
+
+Pekeka howerer, be a "convenient spot," and the Police Magistrate
+Harmanw. is permitted by 12 of 1890 to hold his Court at any •* convenient
+spot" within the limits of his division.
+
+I should like the Police Magistrate, in future, to state as
+a matter of record that the place he holds his court in is within
+his division, and that it is at a convenient spot for the trial,
+and that he had given due notice that he would sit there,
+
+I have observed in other cases which come before me
+from this Police Court that it is really '•itinerating"— here to-
+day and away to-mormw. The Magistrate is followed by com-
+plainants and accused and witnesses but not by counsel, for
+the time of counsel and proctors is too valuable to permit
+them to follow this peripatetic court, which sits when the Magis-
+trate pleases, in public places and in private houses, at any
+hour, from sunrise to sun^t, with, I should imagirie, im-
+mense inconvenience to ieveryone, particularly to the witnesses
+and to the accused, who are without legal advice.
+
+Here the Magistrate charged the accused with having on
+September, 22, 1892, dishonestly retained a stolen cow, the
+property of Haramaniis, knowing or having reason to believe
+the same to be stolen, an offence punnishdble under sectioh
+394 of the Penal Code. He convicted the accused in the same
+terms as the charge. Thechargfeand conviction arte bad in law,
+because the Magistrate had no jurisdiction to try the offence
+summanly, unless the value of the stolen property, dishonestly
+retained, was under Rs. 100. The value of the property is
+not stated in the complaint, nor in the charge, nor in the
+conviction.
+
+On the merits, there is no evidence of the accused's dishonesty
+or of his knowledge or of his having reason to believe the
+cow was stolen.
+
+Haramanis lost a cow on February, 1890. Two and a half
+years afterwards, on September 22, 1892, the cow was seized
+as a trespasser on another man*s land, and both the accused
+and Haramanis, claimed it as their own.
+
+Haramanis undoubtedly had npt been in possession for
+the 2^ }ears. The accused had been in possession for apart
+of that time.
+
+
+Digitized by VjOOQIC
+
+
+Jdy 8, '93.] THB iUPRBME cotmr reports. 35
+
+It may be that the coir formerly belonged to Haramanis^ Perera
+but it was necessary to prove facts from which it would Harmanis.
+reasonably be inferred that the possession by the accused was
+dbhonest. I invite the attention of the Magistrate to the
+statements of the accused in the petition of appeaU I have
+not relied on these but they deserve attention.
+
+The accuied is acquitted and discharged*
+
+
+Before Lawrie a. c. j. and WitJiers, j.
+
+May 5 and I2» 1893.
+
+SANDFORD and another v. DON PETER.
+
+[No. 5,470 D. C, Kandy.]
+
+Leas^ — Covenant to pay rent — Breach of Forfeiture and
+Serenity — Equitable relief.
+
+A Court has power in the exercise of its equitable jurisdiction, to mot
+rtlirf— where the circunastances warrant such relief— to a lessee against a clause
+of ibrfieiture and re entry for breach of covenant to pay rent.
+
+The terms of an indenture of lease can only be altered by an independent
+cootraa satisfying the statute of Frauds.
+
+Per Lawrie, a. C. j.— In tquity the construction put on a elauie of for-
+feiture of a lease on non-payment of rent is that it is a mere security for
+the payment of rent, and as the breach of that covenant it capable of a jusc
+compensation, a Court of equity may award the compensation and abstain Irofa
+cnforcinj?: the forfeiture.
+
+The action was in ejectment.
+
+The facts sufiiciently appear in the judgments: —
+
+Layardj A. G. { Wendt with him) for defendant-appellant.
+
+Dornhorst for plaintiflfs-respondents.
+
+On May 12, the following judgments were delivered: —
+
+Lawrie, a. c. j. — The cause of action is the defendant's failure
+to pay rent for the months from April i, 1891, till
+February i, 1892.
+
+The action was instituted on February 16, 1892. The
+defendant admits the non-payment. The issue is whether
+the admitted non-payment was, or was not, due to the
+neglect or default on defendant's part. By the lease the
+rent was payable monthly on the 15th of each month. "
+
+The plaintiffs Qoasented \q thQ d^fendfiint paying rent
+
+
+Digitized by VjOOQIC
+
+
+36 THE SUPREME COURT REPORTS. [Vol. ii*
+
+Sandfoed quarterly instead of monthly, I take it such quarterly pay-
+Don Petee. ments were to be made not in advance, but at the end of
+each quarter.
+
+It is proved that the plaintifiis gave notice to the defen-
+dant's manager that they desired a resumption of the noonth*
+ly payments, but that notice was not given to the defendant
+himself. It is my opinion that the plainti& were bound to
+give special notice to the defendant that they intended to re-
+quire monthly payments and that, on failure to pay monthly,
+the clause of forfeiture and re-entry would be enforced.
+
+Until such notice was given the defendant was in time
+if he paid each quarter's rent within three months of the date
+it fell due.
+
+The rent for the first quarter of 189X was paid. The rent
+for the second quarter fell due on June 30. It was not then
+paid ; the forfeiture for non-payment was not exigible until
+the rent had been three months in arrear, viz :. on September 30.
+
+On September 74, 1891, within the three months, the
+defendants tendered the rent. They thereby purged their
+default ; they were no longer in arrear.
+
+The next quarter rent fell due on 30th September. The
+defendant was in arrear if he did not pay or tender before
+December 31.
+
+Unfortunately the defendant did not within that time
+tender the rent. He made the mistake of setting off a private
+debt alleged to be due by the 1st plaintiff to the firm of
+which the defendant is a [member, and he tendered only a
+balance.
+
+Thi^ position was untenable. The debt which the ist plain-
+tiff owed to a firm could not be set off against a debt due
+to both plaintiffs by the defendant.
+
+Undoubtedly on January i, 189a, the defendant was more
+than three months in arrear of the rent, and the clause in
+the lease forfeiting his interest and giving to the lessors power
+to re-enter became enforceable in strict law.
+
+But 9i,s a Court of £<}uity I tb^^k \ye are 1;>9U^4 t9
+interpose,
+
+
+Digitized by VjOOQIC
+
+
+July 8, '93.] THS supHfiiia coun erforts. 37
+
+lo equity the conttrnctiQB pat on a claote of for£titure SAMtxFOftu
+of a lease on non-payment of rent is that it is a mere seen- Don Peter
+rity for the payment of rent, and that as the breach of that
+coveoapt is capable of a just compenaation^ a Court of equity
+may award the compensation and abetain from enforcing the
+forfeiture.
+
+Appljring this principle and assert bg this equity jurisdie*
+tion I would give to the defendant an opportunity of fully
+purging his default by paying the rent due up to date.
+
+I would defer giving judgment on this appeal until the
+4th day of Julj% and if on or before that day the defendant
+pay to the plaintiffs the rent up to the end of March of this
+year with interest at 9 per cent on arrears* and also the
+costs of the cause, then I would set aside the judgment and
+dismiss this action ; but if the payment be not made then or
+m July, 1893, I would affirm the judgment with costs.
+
+Withers j.— I think there can be no doubt that the
+defendant has broken his covenant to pay rent at the time
+stipulated in the indenture of the lease whereby a right of
+re-entry has accrued to his landlords who in consequence bring
+this action in ejectment.
+
+Taking the last, and I think the best, point pressed upon
+us by the Attorney-General this state of things suggests two
+questions. (1) Has this court jurisdiction to relieve against
+what is called for feiture for non-payment of rent? (2) Is this
+a proper case for such relief?
+
+In the text books on Roman*Dutch Law I have not been
+able to lay my hand on any authority for such an equitable
+jurisdiction. At the same time I am under the impression that
+relief against ejectment for breach of such a covenant has been
+not unfrequently granted in our Courts. Although I must say
+that I have only been able to find one case since the argu-
+ment, and that is reported in Beven and Siebel's reports for
+1875 page 43-
+
+There this Court constituted by Sir Richard Cayley, c.j.
+and H. Dias, j. affirmed the Judgment of my brother I^awrie, c. j.
+inrho granted rf|;ef to ^ (essee against fgirfeitvire fgr {ion-payment
+
+
+Digitized by VjOOQIC
+
+
+38 THE tUTOSMS COUW »ETORTi» [Vol. U.
+
+SAftrvFORD of T&nt in a cMe« whioh came before him in the Dtvtrict
+Don ^ETit. Court of Kandy.
+
+I am on the whole diipofled to think that we have jurisdic*
+tion to relieve, if in other respects the circumstances justify
+the exercise of this jurisdiction. Having regard to that pro-
+vision in the lease which gave liberty to the defendant to
+erect a certain daiss of building oa the parcel of land deniised
+to him, and to the fact that the defendant laid a considerable
+sum of money out in the erection of buildings, having regard to
+tl^e extension of time fropi monthly to quarterly payments, and
+the absence ot any notipe, after a course of dealing between
+the parties on the foqting of this indulgent ej^tension of time,
+that the right of re-entry ^ould be strictly insisted upon if the
+defendant did not resume punctual monthly payments in
+terms of his covenant, considering that the ist quarter's
+payment for 1891 was offered and accepted, that the 2nd
+quarter's payment was tendered within three months after it
+became due and was refused, and that the 3rd quarter's pay-
+ment less deducted sum, iu view of certain antecedent trans-
+actions by the defendant, without legal justification, but not
+without some show of reason, was offered within three months
+of i(s becoming due £(nd payable but refused, I am of opinion
+(which is not a very confident one) that this is a proper case
+for the relief proppsed by the Chief Justice.
+
+The agreement to extend the time from monthly to quarterly
+payments was not a binding agreement on the lessors, as the
+terms for the time of payment could not be altered without an
+independent contract satisfying the statute of Frauds*
+
+The agreement to take quarterly payment was nothing more
+than a voluntary forbearance by the lessor, and would not be
+an answer to this action, the actual acceptance of a quarterly
+payment amounting only to a waiver of breaches prior thereto.
+The contention pressed upon us by the Attorney-General in
+opening his appeal, that the plaint disclosed no cause of
+action in the present plaintififs, on the ground briefly
+put that the lessors sold only a reversion in the land
+after the expiration of the lease and not any interest in the
+lease itself, caonot, I think, be listened to for the simply rea^
+
+
+Digitized by VjOOQIC
+
+
+juiy^, *93-l "T^^E SUPREME COURT REPORTS. J^
+
+son that the plaintifis distinctly stated the effect of the trans- SAifDPORD
+fers from two of the original lessors to the present pkintiAi Don Petcr
+to be, inter alia, an assignment of all the rights and benefits ""~
+reserved by the said lease, and the defendant admitted the
+correctness of those statements.
+
+The 7th paragraph ot the answer on which the Attorney-
+Gend:al relied is a traverse of an inferential averment in
+pduugraph 9 of the plaint, and says merely that nothing in
+that paragraph entitles the plaintiffs to eject them.
+
+It does not sslj that as a matter of law the plaint didcloHed
+no right of action in the plalntifEs.
+
+I therefore agree in this order proposed by my brother
+LivitaEi c. J.
+
+
+Before WWierSj }.
+
+June 29 and July 5, 1893.
+
+In the matter of a charge of contempt of Court against
+Perera and others.
+1,646
+
+[No. , C. R., KURUNEGALLE.]
+
+Contempt of^ Court'-JUfHsdiction^Section i2S of the
+Penal Code.
+
+Accused were convicted by the Commissioner of the Court of Requests of
+Konincgallc of contempt of Court in that they interrupted the business of the
+Court by conducting, close to it, a noisy procetsion^JErcfM that the conriction
+was wrong, inasmuch as the Commissioner was not competent to try an
+alleged oftemse of contempt not committed in the pfeseoce of his Court ancl not
+committed in the course of any act or proceeding in his court and dedared by
+any law to be punishable at contempt of Court.
+
+If the conduct of accused amounted to an ofTence at all , it was that des
+cribed by section 223 of the Penal Cede, and triable only by another and
+competent Court. Moreover, the charge should have Specified the judicial
+proceeding in which the Court wds engaged when interrupted.
+
+The Commissioner having taken evidence that, on June 7,
+1893, when the Court was sitting, the appellants conducted
+along the public road close to the Court a procession com-
+posed of people shouting, beating tom-toms, discharging fire-
+arms, &c. and thus interrupted the business of the Court,
+found the appellants guilty, and passed sentence on them in
+these terms— '< The ist, and, 3rd, 4th and 6th accused are
+
+
+Digitized by VjOOQIC
+
+
+4o tHE SCF*REME COdRT llBt»ORTS. [Vol. il.
+
+In the matter gruihy, and are sentenced to pay a fine of Rs, lo each, or
+^contemprof i^ default of payment to-day, to rigorous imprisonment for
+
+•thers. In appoal,
+
+Pereira for appellants — A Conunissioner has no jurisdic-
+tion to try for contempts committed ex fcicie of the Court,,
+except where he is specially empowered to do so by the
+legislature. In such s^ case as the present, there is no special
+authority conferred on Commissioners. The Commissioner acted,
+apparently, under Chapter LXV of the Civil Procedure Code
+but he has not made out the conviction in the form referred
+to in section 797. The accused intended no contempt. They
+stopped the tom-toms when asked to do so, but were practi-
+cally powerless to stop the vociferations of the crowd.
+
+Cur. adv, vult.
+
+On July 3, the following judgment was delivered by
+
+Withers, j. — I feel bound to set aside this conviction,
+because I do not think that the Commissioner was competent
+to try an alleged offence of contempt which was not committed
+in the presence of his Court of Requests, and was not commit-
+ted in the course of any act or proceeding in his Court, and
+declared by any law to be punishable as contempt of Court.
+
+If. the conduct of the accused amounted to an offence at
+all, it was that described by section 223 of the Penal Code
+as intentionally causing an interruption to a public servant,
+while such public servant is sitting in a stage of a judicial
+proceeding. That offence could be tried only by another and
+competent Court. Moreover the charge should have specified the
+judicial proceeding in which the Commissioner was engaged at
+the time he was interrupted by the noisy procession near his
+Court in ^bich the accused took part.
+
+
+Digitized by VjOOQIC
+
+
+July 15, *93.] THB SUPREUB COURT REPOKTS.
+
+Before Bumside c. j. Lawrie and Withers^ j. j.
+
+January 24 And Feburary 28, 1893.
+
+SUBEHAMI and others v. BASNAYEKE and others.
+
+[No. 240, D.C., Matara.]
+
+Leaae — Breach of Covenant for quiet possession — Action
+against lessor — Damages,
+
+PlaiDtiifs and 5th defendant got a lease from the firit four defendants. At
+the date of lease, the land demised was under lease to lessees, of whom the 5th
+defendant was one. These lessees having refused to give up possession, the
+plaintiffs sued for damages consequent upon the breach of covenant for quiet
+possession.
+
+Held (per BuRNSIDE C. J. and WrTHERs J.) that some co-tenants cannot
+sue a landlord for the breach of a covenant to let them into premises at a day
+6xed under a demise for a term of years, when one of them has been let io, and
+enjoys the benefits of the lease made jointly to him and those whom he has
+lortiously excluded firom the premises.
+
+Per Lawkie, j.— If under a lease the lessor impliedly contracts to five the
+lessee possession at the commencement of the terra, and if he £iils to do so by
+reason of a preTions tenant wroogfiillj holding over, the lessee may recover
+damages, and is not driven to bring ejectment against the previous tenants.
+
+The plaintiffs and the 3th defendant got a lease from
+the first four defendants. At the date of the lease the land
+was demised to lessees, one of whom was the fifth defen-
+dant. The lessees then in possession, did not give up
+possession, and consequently plaintiffs did not get possession.
+The plaintiffs brought the present action to recover damages
+consequent on the failure of the defendants to let them into
+the premises demised.
+
+The plaintiffs appealed.
+
+SeneiHratne for plaintiffs.
+
+Domhorst{Wendt with him ) for ist, and, 3rd and 4th defen-
+dants.
+
+Oreni&r for 5th defendant.
+
+Cur. adv. vult.
+
+BuRNSiDE, c. J. — This action is altogether misconceived and
+assuming that there has been a breach of covenant for quiet en-
+joyment, which, I do not see my way to admit, the plaintiffs
+cannot recover ,even against the 5th and 6th defendants who
+must necessarily be dismissed from the suit.
+
+I think it best to affirm the judgment and leave the plain-
+tiffs to bring a fresh action in effect perhaps a little more
+
+B 6
+
+
+Digitized by VjOOQIC
+
+
+42 . THE SUPAHMb COURT REt»QJ^TS. [Vol. U.
+
+expensive, but certainly more satisfactory than proceeding on
+SuBftHAMi encumbered by the debris of this, even if he undertake to
+Basnavekr. amend the pleadings.
+
+Lawrie, j. — The plaintiflFs and the 5th defendant got a
+lease from the hrst four defendants. At the date of lease the
+land demised was under an unexpired lease to lessees .of whom
+the 5th defendant was one. These lessees did not give up
+and consequently the plaintiffs did not get possession. The
+failure of the lessors to give possession entitled the lessees
+to damages. There are not many cases reported on this
+point, I refer however to I Lorenz p 191 and Ramanathan
+(1877) p. 117.
+
+I am of opinion that the wrongdoers in this case are the
+lessors and not the 5th defendant* He did no wrong. He had
+an existing lease under which he was in possession which he
+was entitled to hold to. By joining in the new lease he
+did not covenant to his co-lessees for entry or quiet
+possession.
+
+It was the duty of the lessors before granting the second
+lease to have made such arrangement with the 5th defen-
+dant, and the other lessees as would hvae enabled the lessors to
+give possession on the day of entry,
+
+o* Jt has been settled in a series of cases (cited by Woodfall
+p. 696) that if under a lease the lessor impliedly contracts to
+give the lessee possession at the commencement of the term,
+and if he fails to do so by reason of a previous tenant wrong-
+fully holding Qver, the lessee may recover damages and is
+not driven to bring ejectment against the previous tenant
+Coe V. Clay 5 Bing p. 440. Jinks v. Edwards 1 1 Exch p. 775,
+Ludwell v. Newman 6 T, R. p. 458.
+
+The present is a stronger case against the lessor than
+these. In the English cases the previous tenants were wrong-
+doers holding over without title. But here the previous
+lease still existed. The first four defendants in leasing to a
+second set of tenants knew what their obligation was and
+that they would be liable in damages if they failed to make
+such arrangement as would enable them to give the
+
+
+Digitized by VjOOQIC
+
+
+July 15, '93.] THE SUPREME COURT REPORTS. 43
+
+Dew tenant possession on the first day of the new lease. Subkhami
+
+V
+I agree that the 6th defendant ought not to have been joined qas nayi ke.
+
+as defendant. I would amend the plaint by striking out the words
+
+"falsely" and "unlawfully" in the 5th paragraph. When so
+
+amended the allegations are in conformity with the facts proved.
+
+I would set aside the judgment, and dismiss tiie action
+as against the 6th defendant with costs, and give judgment
+against the, ist, 2nd, 3rd and 4 defendants for the damages
+prayed for up to August i, 1892, when the plaintiffs got
+possessicM), with costs against them. I find no costs due to or
+by the 5th defendant.
+
+Withers, j. — I think the judgment should be affirmed with
+costs and that 6th defendant is entitled to bis costs in appeal.
+The evidence is so far at variance with the plaint as to show
+that the present action cannot be maintained.
+
+It was the 5th defendant, a co-lessee with the plaintiff under
+a joint lease from the 4th defendant, who united with the 6th
+defendant in preventing the plaintiff from having the itte and
+enjoyment of the premises from the commencemeDt of their
+lea^ in August 1890.
+
+I fail to see how some co-tenants can sue a landlord for the
+breach of a covenant to let them into premises at a day fixed
+under a demise of a term of years, "When one of them has
+been let in and enjoys the benefits of the lease made jointly to
+him and those whom he has tortiously excluded from the
+premises.
+
+I think the action has been misconcieVed.
+
+
+Digitized by VjOOQIC
+
+
+44 THE SUPREME COURT REPORTS. [Vol. U.
+
+Before Withers^ j.
+
+June 29 and July 3, 1893.
+
+[No. 12,940, P. C, Hatton.]
+
+HARMAN V. MUTTIAH and others.
+
+Ordinance 14 of J 878 — Sections 6 and 7 — Repeals-Weights
+and Measures — Striker — Section 289 Penal Code.
+
+. Sect. S of the Weights and Measures Ordinance No. 14 of 187S specially
+provides against the use of a measuring striker which is not round and straight,
+and of the same diameter from end to end.
+
+Held^ that this Section has not been affected by the repeal of Section 7
+of the same Ordinance, which makes the use of a striker not in conformity
+with the terms of this Section, an offence punishable with fine or imprisonment,
+and that the provision of this Section now comes within the provision of Section
+289 of the Penal Code which enacts as follows : —
+
+** Whoever wilfully neglects or omits to perform any duty imposed upon
+him. by, or wilfully disobeys or infringes any provision of any Ordinance or
+' 'statute heretofore, or hereafter to be enacted, for which neglect, omission, disobe-
+dience, or infringement, no punishment is or shall be, by this Code, or any
+other Ordinance or statute, othemvise specially provided, shall be punished
+with a fine.
+
+The facts material to this report appear in the judgment : —
+
+iJomhorst {Ch'enier and Wendt with him) for appellants.
+
+. No coimsel for respondent.
+
+Cur. adv. vult.
+
+On July 3, the following judgment was delivered: —
+
+Withers, j. — The first offence of which the ist accused
+
+has been convicted in these proceedings as principal and the
+
+other accused as aiding and abetting is the o£fence of wilfully
+
+strking a measure of capacity with a stick not being round and
+
+straight and of the same diameter from end to end as required
+
+by Sect. 5 of Ordinance 14 of 1878, and Ordinance " to amend
+
+the Weights and Measures Ordinance 1876 ** in violation of
+
+the provisions of Sect. 289 of the Penal Code which enacts
+
+as follows: —
+
+" Whoever wilfully neglects or omits to perform any duty
+
+imposed upon him by, or wilfully disobeys or infringes any
+
+provision of any ordinance or statute heretofore, or hereafter
+
+to be enacted, for which neglect, omission, disobedience, or
+
+infringement, no punishment is or shall be, by this Code, or
+
+uy other ordinance or statute, otherwise specially provided,
+
+shall bt punished with a fine."
+
+
+Digitized by VjOOQIC
+
+
+July 15, '93.] THE SUPREME COURT REPORTS. 45
+
+As to this conviction it was argued by appellants' counsel Hajuian
+that it was contrary to law and against the weight of evidence. Mitttiah.
+
+It was urged in the first place that considering the posi-
+tion in the Code of the 289th Sect, this section can only ap-
+ply to wilful infringement of provisions of Ordinances for which
+DO punishment has been ordained, which deal with matters
+of the same kind as those which are made punishable as
+offences in Chapter XIV of the Code; but, to my mind, the
+language of this 289th section is too wide to have that limitation
+put upon it, while its position is not so strange as at first
+sight ap{>ears. It is found at the end of a Chapter which
+declares various kinds of conduct on the border line of crimes
+proper to be offences and punishable as such It was then
+urged that this section cannot apply to the 5th section of
+Ordinance 14 of 1878 because this section should be regarded
+as attendant on a subsequent section of the same Ordinance,
+viz, the 7th section, which makes the use or possession under
+special circumstances of a striker not in conformity with the
+terms of the 5th section an offence punishable with fine or
+imprisonment, and as the 7th section has been repealed, the 5th
+section must be taken to have been repealed with it. In my
+opinion there is not such a vital connection between the two
+sections as this argument would imply.
+
+The repeal of the 7th section as a matter of fact, leaves
+untouched the 5th section of Ordinance 14 of 1878 which spe-
+cially provides against the use of a measuring striker which
+is not round and straight and of uniform diameter from end to end.
+No punishment being now provided in this Ordinance for non-
+compliance with this provision I think this provision comes
+within the purview of Sect. 189 of the Penal Code.
+
+As to this conviction being against the weight of evidence
+I have come to the conclusion that it is not so, though I am
+not surprised that it was so contended. There is much that
+is unsatisfactory about the evidence of one Shuni, the only
+witness for the prosecution, who deposes to having seen the
+ist accused use the grooved striker in levelling the rice measured
+for sale. But the very fact of such a striker being found on
+the occasion in question in the boutique where the accused
+
+
+Digitized by VjOOQIC
+
+
+46 THE SUPREME COURT REPORTS. [Vol. ii.
+
+Harman ^ere employed in recording, measuring and delivering the rice sold
+MuTTiAH. by the ist accused to the coolies of Drayton Estate, and the fact
+of the deficiency in a quantity of rice sold by measure to one
+of the coolies confirm his testimony.
+
+I have given this part of the case my best consideration
+and I cannot say that the Magistrate has come to a wrong
+conclusion.
+
+Admit the wilful use by the ist accused of the grooved
+striker in levelling the rice and I think it cannot be gainsaid
+that all the other accused abetted the use of it, so I affirm
+the conviction pn this charge.
+
+The conviction on the 2nd charge of cheating must be
+quashed. The charge of cheating is not an alteration of the
+former charge. It is a charge of a new and distinct offence.
+
+A charge which changes the nature of an offence in the
+original charge cannot be said to be an alteration of that charge.
+Even the sustained charge was defective by the ommission of
+the word "wilfully,*' but I do not think the accused can be
+said to have been prejudiced by the ommission of that word
+in view of the circumstances disclosed by the case for the
+prosecution. The judgment contains this important word.
+
+** Wilfully " is not defined in our Code, but I think it may be
+taken to mean knowingly and with evil intent, and there is little
+doubt in my mind that the grooved striker was used by the
+ist accused on this occasion with intent to defraud, and (as I
+said before) that the other accused wilfully abetted him.
+
+
+Before LawHe^ j.
+June 22 and 27, 1893.
+
+THE QUEEN r. FERNANDO.
+
+' [No. 1,030, D, C, Crim,, Negombo.]
+
+Contempt of Court—making of false statement in affidant
+
+of sefvice of process— Penal Code Sectn. 223— Civil
+
+Procedure Code Sects, 372 and 797.
+
+The making of a false statement of fact in an affidavit is not a contempt
+of court, but the makings of a false statement of fact by an officer charged with
+the execution of process in his af&davit of service of process is an offence,
+which is punishable as contempt of court under Sect. 372 of the Civil Procedurt
+Code.
+
+
+Digitized by VjOOQIC
+
+
+July tS, 93.] THE SUPRBME COURT REPORTS. 47
+
+The accused Davit F&rnando was convicted of having IhiQuein
+committed a contempt of court, in that he, on the i6th of Fernando.
+January, 1893, <^id make a false statement of fact in the affi-
+davit made by him on the 15th of January 1893, on the sum-
+mons on the defendant, in District Court Negombo, No. 1030,
+by falsely stating that he had served the said summons on the
+defendant^ when, in &ct, he had not served it.
+
+Setievirattie for accused-appellant.
+
+The conviction should recite the the materials on which it
+is founded (see Sect. 793 Civi Procedure Code). The material is
+given in the conviction do not disclose the offence of contempt
+of Court (Sect. 223 Penal Code). If the accused has committed
+any offence, it is the offence defined in Sect. 372 of the Civil
+Procedure Code, which is not contempt of Court, but only
+punishable as such, but in the materials recited in the convic-
+tion, there is nothing to show that the statement made in the
+affidavit was false.
+
+Diufty C. G. for the Crown. The definition of contempt of
+
+Court has been enlarged by Sect. 137, 713 and 717 of the
+
+Civil Procedure Code in a manner which would include the
+
+present case.
+
+Cur. adv. vult.
+
+On June 27, the following judgment was delivered : —
+Lawrie, a. c. j. — ^This is an appeal against a conviction for
+contempt of Court.
+
+The District Judge stated in the conviction that the accused
+was Davit Fernando, of N egombo, and that he had committed
+a contempt of Court in that he, on the i6th day of January
+1893, did make a false statement of fact in the affidavit
+made by him on the i6th January, 1893, on the summons
+on the defendant in District Court, Negombo, case No. 1,030,
+by falsely stating that he had served the said summons on
+the defendant, when, in fact, he had not served it.
+
+This did not disclose the offence of contempt of Court.
+
+A contempt of Court is defined in section 223 of the
+Penal Code. It consists in intentionally offering any insult
+or causing any interruption to any public servant while
+
+
+Digitized by VjOOQIC
+
+
+48 THE SUPREME COURT REPORTS. [Vol. U.
+
+The Queen such public servant is sitting in any stage of a judicial
+Ebrhando. proceeding.
+
+This definition is enlarged by the 137, 713 and 717 and
+other sections of the Civil Procedure Code, but I have not
+been referred to any section of either Code which makes the
+making a felse statement of fact in an affidavit a contempt
+of Court, for, obsetVe, that in this conviction, it is not stated
+that the accused was an officer of the Court, nor that the
+afif.davit was presented when the District Judge was sitting.
+
+Further, it seems to me that the charge is defective in
+that it is not said the affidavit contained a statement which
+the accused knew or believed to be false or did not believe
+to be true.
+
+I am inclined to the opinion that the proper course would
+have been to have presented a complaint to the Police Magis-
+trate charging the accused under section 179 of the Penal Code.
+However, it was open to the District Judge to proceed under
+section 372 of the Civil Procedure Code, though under that
+section it was necessary to state that the affidavit was false
+to the knowledge of the accused, and the charge should have
+been, not for contempt, but for the separate offence of making
+a false affidavit, &c. which by section 372 is not said to be
+contempt of Court, but, to be an ofience punishable as such.
+V Another requirement of section 797, and of the form 134,
+is that the conviction shall recite the materials on which it is
+founded, and shall adjudicate upon the material facts of the
+accused's behaviour and language with so much of the
+surrounding circumstances as caused them to constitute the
+oflence of contempt of Court.
+
+The latter adjudication was, here, impossible because
+the act which constituted the offence was not done in facie
+curim.
+
+The materials on which the conviction was founded
+are said to be the affidavit of the defendant dated 2nd
+May 1893, and the evidence of the plaintiff taken on the 25th
+May 1893, the day before the accused was charged with this
+oftence. In my opinion neither of these materials was ad-
+missible evidence.
+
+
+Digitized by VjOOQIC
+
+
+July 22, '93.] THE SUPRBHfi COURT RBPORTS. H
+
+Jf the evidence of the defendant and of the plaintiff in THxQtnriiN
+District Court Case 1,030 was material in the summary trial RiafiANDo.
+of this offence, such evidence could only be given in Court
+inva voce in presence of the accused and subject to his right
+to cross-examine. These materials have no probative value aud
+are not evidence on which the District Coort could, coinvict
+and sentence.
+
+The Court had, however, other and better evidence before
+it than it recited in the conviction.
+
+The defendant in 1,030 was examined in the course of
+the summary trial of the accused and gave evidence that
+the accused did not serve the summons on him, and he was cross
+examined for the accused. '
+
+I do not say that the District Judge would not have
+been justified in convicting on this defendant's evidence alone,
+though I think it would he a somewhat slender foundation for
+a conviction being oath against oath.
+
+But, as the District Judge himself records that he convicted
+on other evidence, which I have shown was inadmissible, I
+am unable to amend the conviction by striking out the reference
+to the inadmissible, and by inserting a reference to the admiss-
+ible, evidence. For all these reasons, I hold that the conviction
+must be set aside, and the accused acquitted.
+
+
+Before Jjuwrie^ a. c, j.
+
+July 7 and 13, 1893.
+
+ANDREE i;. COORAY.
+
+[No. 490, Ad, P. C, Colombo.]
+
+Cnnmtal TreMpoBs— Charge— Mischief Ceylon Penal Code,
+Sects. 427 and 408.
+
+Acctt«d was charged with criminal trespass in that be "entered upon
+land in the possession of H. A. with intent to commit an offence."
+
+Held, that in such a charge it is essential that the offence intended to
+be committed by the accused after, entry khould be suted, ahd that the above
+charge was bad for. want of such statement. The evidence shewing that
+accu^ entered upon the land to intimidate^ insult and'anitoy the complainant,
+the bupreme Court, however, akertd the charge accordingly* and convicted
+
+accused th#>r#iinAn ^ '
+
+
+accused thereupon
+B 7
+
+
+Digitized by VjOOQIC
+
+
+t THE SUPRfillB COtIRT KKt>ORtS, [Vol. il.
+
+Alfimt Plvcliing coconuts, mature or immature, and jack, from trees is not causing
+
+Iff such destruction of, or change in property as constitutes the offence of mischief.
+
+CoOiUY*
+
+The ficts of the case sufficiently appear in the judgment.
+
+Pereira for accused, appellant.
+> Dornhorst for complainant, respondent.
+
+On July I3> the following judgment was delivered by
+
+Lawrib, a, c. j. — The Police Magistrate has given leave
+to s^ppeal against the fxinviction and sentence. The charge
+framed by the Magistrate was that the accused '*did commit
+criminal trespass by entering upon land Kalupallalewatte,
+then in the possession oi Hugh Andree, with intent to commit
+an offence and that you have thereby commited an offence
+punishable under section 433 of the Ceylon Penal Code.'*
+
+This was a bad charge because it did not set forth what
+was the offence the accused intended to commit.
+
+Section 38 of the Penal Code enacts that the word "offence"
+\ in section 427 which defines Criminal Tresspass means, not
+only a thing punishable by the Penal Code» but also a thing
+punishable under any law other than the Code, with imprison-
+ment for a term of six months or upwards, whether with or
+without fine ; section 435 and the subsequent section of the Peoal
+Code show that the punishment of criminal hous^ trespass
+varies according as the accused is convicted of intending to
+commit one crime or another.
+
+I think it is essential that the charge should state what
+offence the complainant charged tke accused with intending to
+commit. If the intended prime was murder or any crime
+punishable by long imprisonment, the Police Magistrate would
+not have jurisdiction to try the charge of criminal trespass;
+apart from a question of jusisdiction the charge should give
+.the accused roasooably sufficient notice of the matter with
+which he is charged.
+
+In this respect I hold the charge of criminal trespass was
+defective.
+
+The second charge is *»that you did commit mischief to
+wit, by forcibly plucking and removing 75 king cocoanuts
+and eight green cocoanuts and two jack fruits, value Rs. 9,
+fruits of the trees standing on the land Kalupellalawatte
+
+
+Digitized by VjOOQIC
+
+
+July 22, '93.] THR SUPREME COURT REPORtS. \
+
+in the possession of Hugh ADdree, knowing it to be likely Andree
+that you would cause wrongful loss to the said Hugh Andree, Coorav.
+and have thereby committed an offence punishable under section
+409 of the Ceylon Penal Code."
+
+If this charges discloses and sets forth any offence, which
+I doubt, it certainly does not set forth the offence of mischief.
+
+Taking cocoanuts or jack from trees is not a destruction
+of property, or any snch change in the property, or in the
+situation thereof as destroys or diminishes its value or utility
+or affects it injuriously. Neither the tree nor the fruits Wer6
+destroyed, nor by the removal was the value or utility
+diminished, nor were they injuriously affected. The circums-
+tances with which the removal occurred did not reasonably
+give rise to the belief that the accused committed theft. I
+find in the evidence sufficient material upon Which tO amend
+the first count of the charge by deleting the words ••to com-
+mit an offence *' and by substituting the words'^ to intimidate, lA^Ult
+and annoy the said Hugh Andree."
+
+I find the accused guilty on the 1st count and sentence
+Urn to one month's rigorous imprisonment. I set aside the
+conviction on the second count and acquit the aoeuied of the
+ofeice of mitehi^.
+
+
+Bbforb Bumsid0^ c. j.
+
+Feburary 9 and 17, 1887.
+
+PAMMODARAMPILLAI v. PANGAMUTtUPILLAI
+
+[No. 24,194, D. C, Batticaloa.]
+
+Agreement by a mother to give herdfmgMerin marrii$gs — how
+to be con^tnied and how far binding^^-
+
+Plainiiflf in his libel averrsd tbstf he proposed and «^ed to and wttk
+defendant that he should ladrry defendant's daughter and that defendant's daughter
+being then a minor, defendant, who aecoroing to custom had control and
+authority over her to enable her to give her in marriage, agreed that her
+daughter should marrj' plaintiff within a reasonable time. Plaintiff further
+averred that defendant foiled to perform her part of the agreement in that
+she proposed that her daughter should marry another man.
+
+Hfhf, that the agreement on defendant's part amounted simply to one
+that plaintiff wtiuld have her consent to marry her daughter, and, as such, wu
+a valid agreement for breach of which plaintiff was entitled to damages.
+
+Htlfi, further that the fact that defendant proposed that her daughter
+should marry another man did n^ cottaUtUt^ a bftack by htr «f iMt ^MFI -if
+the agreement.
+
+
+Digitized by VjOOQIC
+
+
+ft TUB SUPREMB COURT REPORTS. [VoL U.
+
+The defendant demurred to the plaintiff's claim siimmarised
+Pamhoda- above on three grounds, ist, because there was no allegation
+
+RAM PILL A I
+
+V' that the de£endant*s daughter was a consenting party to the
+MiiTTiJiTLLAi agreement between the plaintiff and the defendant, or that she
+was ever rea4y and wilting to marry the plaintiff, indly that
+the alleged custom enablidg a mother to have the power of
+donation in respect of her minor daughter, so as to entitle her
+to dispose of her in marriage without her consent was illegal
+and no contract founded on it could be enforced, and 3rdly
+that there was no allegation that the defendaiit was not
+ready and willing that the plaintiff should marry her minor
+daughter, or that the defendant in any way used her influence
+over her daughter to prevent her marrying the plaintiff, or
+that the marriage fell through owing to any act on the part
+of the djsfendant.
+
+The District Judge overruled the demurrer, and entered
+judgment for the plaintiff.
+
+The defendant appealed.
+
+Layard {Wiihern with him) for defendant, appelant.
+
+Ramanathan {{hrnhorat with him) for plaintiff, respondent.
+'^ : On February 17, 1887 the following judgment was delivered by
+
+BuRNSiDE, c. J. — This case, divested of all the irrelevant
+matters as to Tamil and European customs with regard to
+marriage and the right to donate a young girl in marriage,
+resolves itself into a simple question of contract. The plaintiff
+alleges that he agreed to marry the defendant's daughter and
+the defendant in consideration thereof, then agreed that her
+daughter should marry him, and he alleges that the defendant
+has refused to perform her part of the agreement in as much
+as she has agreed that her daughter should marry somebody
+else, and he claims damages. The defendant lias demurred to
+the plaintiff's libel on several grounds, ist that it is not
+alleged that the young lady herself was ready and willing to
+marry, and that any custom enabHng a mother to donate her
+daughter is illegal and no contract founded on such a custom
+can be enforced, 3rd that it is not alleged that it was in
+consequence of any act of the defendant that the plaintiff
+a>ttl4 not marry, the defendant's daughter.
+
+
+Digitized by VjOOQIC
+
+
+JiUy 33, *93.] THR SUPRBItfi COURT RBFORTB. 53
+
+The learned District Judge has giveD us the very interest- Pammoda*
+
+RAMPILLAI
+
+ing resoit of his research into Homan Law, and the opinions of y.
+
+the eminent jurists on the point whether a contract can be ^tpT'^ppu Vai
+made for a third party without his consent so as to bind hinu —
+but I find no difficulty in saying that however interesting it liaa
+fiothing to do with the point before .us: It is idle now a days
+toiilsist that matrimony is merely a contract. In Ceylon the law
+does, not sanction the marriage of any' female without her
+consent. Mutual consent is of the very essence of Che matri-
+monial, ad well as of every, contract, and without it there can
+be no marriage.
+
+As I read it, the libel in no way controvences that principle.
+It simply alleges that in consideration that the plaintiff had
+agreed to marry the defendant's daughter, the defendant, her
+mother, agreed that she should marry him or in other words,
+that he would have the defendants consent to the marriage. I
+see nothing immoral or illegal or startling in such an agreement,
+there is much wordly visdom in it. The plaintiff sought to secure
+the consent of his tuture mother-in-law before he married her
+daughter, and if the plaintiff had alleged a sufficient breach, the
+libel would in my opinion have been as good as any other libel
+on contract, but I cannot find that the libel does allege any
+sufficient breach. It says the defendant refused and . neglected
+to perform her part of the agreement because she has proposed
+that her daughter should marry another young man.
+
+This does not seem to be a breach, ftoti constat, that the
+other young man will marry the young woman or that in
+that proposal the defendant had intended to withdraw her con-
+consent to the marriage with the plaintift, she might have
+agreed to consent to the marriage of her daughter with either
+of the young men and not broken her contract because her
+daughter elected to marry one and rejected the other, or it may
+be the other young man and not the plaintiff, will be the
+victim of defendant's perfidy. It was the duty of the plaintiff,
+upon the contract on which he has declared, to allege that
+by something the defendant has done, he has been prev(inted
+kom marrying the young lady who, he says, had agreed to marry
+him, or to show that he married her, notwithstaflding,. that the
+
+
+Digitized by VjOOQIC
+
+
+J4 THE SUPREME COURT REPORTS. [Vol. if.
+
+Pammoda- defendant contrary to her agreement to consent had endea-
+
+y^ voured to prevent him, in either of which cases he would be
+
+MinriTPiLLAi ^'**^*1^ t^ such damages only as he had incurred by the de-
+
+fendant*s opposition. In the latter case it would be difficult
+
+to imagine what damage he could sustain beyond the pain
+which he could feel at being compelled to marry without his
+mother-in-law's consent, a source of anguish, however, which might
+be diminished even if he recovered damages against her.
+
+The libel is, therefore, in my opinion, bad for want of a
+sufficient allegation of breach of the contract declared on^
+and the judgment of the District Court must be set aside
+and judgment entered for defendant on the demurrer with
+costs.
+
+
+Before Lawrie^ a. c. j. and Withers^ j.
+
+July 7 and ii, 1893.
+
+PERERA V. FERNANDO.
+
+[No. 3,085, D. C, Colombo.]
+
+Administrator — Right to be siwd by creditor 0/ deceased intes-
+
+tate-^Chapters XXXVUI and LV Civil PrtH-Mure Code---
+
+Judicial settlement.
+
+The right of suing the administrator of a deceased inXestate accrues to
+tbe creditors of the deceased Immediately upon the f^nni of letters of ad*
+ministration.
+
+The Civil Procedure Code nowhere prohibits a creditor from suing an
+administrator or executor of a deceased, till one year has expired from the
+date of. probate or grant of letters of adiminist ration.
+
+Observations by Withers, j., upon the object and effect of the judicial
+settlement of an estate under Chapter LV, of the Ciril Procedure Coae.
+
+The facts material to this report sufficiently appear in the
+judgment of Withers, j.
+
+Wendt for plaintiff-appellant.
+
+Domhorst (VanLangenbei^g with him) for defendant-res-
+pondent.
+
+Cur. adv. vult.
+
+On July II, the following judgments were delivered:—
+Lawrib, a, c. j. — When a debtor dies intestate those of
+
+his creditors whose cause of action survives await with anxiety
+
+the grant of tetters of administration.
+
+
+Digitized by VjOOQIC
+
+
+July 2a, ^93.] THE SUP«£|4B court EfiMJlTS* ^g
+
+The day after these are iasued the cradkors are entitled to Puieka
+sue the administrator in the same way as tbey would have Feknandq.
+sued the debtor had he lived.
+
+The plea that the law protects an administrator from actions
+to constitute and to enforce debts due by the intestate, that
+the law penrnts administrators to defy the creditors for a
+year is supported neither by common sense nor by common
+law.
+
+If there be indication m our Code of such a protection these
+sections shall be strictly construed, but none of them apply to
+this case
+
+I would set aside the judgment and would give judgment
+for the plaintiff with costs as suggested by my brother Withers.
+
+Withers, j. — For the "first time, I imagine, has been
+raised on behalf of an administrator, in resistance to an ad-
+mittedly just claim by a creditor against the estate of a deceased
+debtor, which is sought to be enforced by action, this very
+curious plea.
+
+** My year has not yet run out and you must not worry
+me with your claim until that year has expired,**
+
+Whether the plea was a serious one or not it has been
+seriously upheld by the court below.
+
+Mr. Dornhorst in support of the judgment contended that
+the provisions of our Civil Procedure Code with regard to
+testamentary matters read as a whole, constitute a law pro-
+hibiting a creditor from suing an administrator or executor
+for a debt due by the deceased till one year has expired
+horn the date of probate or grant of letters, or he argued at all
+events that a Court is competent and is required by these pro-
+>isiDos, if read aright, to stay all proceedings in an action of
+the kind pending the year of grace*
+
+I cannot hold with this contention for a single moment.
+I require to sete some law expressed in the clearest possible
+terms which destroys the creditors undoubted right to sue an
+administrator or executor within ^ year from the date of probate
+or grant of letters for a debt, which the deceased owed him .
+when he died. As this objection, howeveri has been takea 1
+feel bound to say a few words wit^ fi^gftfd tP tkf^ pnpvisiQiis
+
+
+Digitized by VjOOQIC
+
+
+jg THE SUWUiME COURT RliPORTS. [Vol. U.
+
+Pekera of the Code which are supposed to legislate to this effect by
+Feri?ando. way of implication.
+
+Chapter XXXVIII of the Civil Procedure Code may be
+
+said to enact rules of procedure for the probate side of our
+District Court.
+
+It provides more particulary for the production and proof
+of wills, applications for probate and letters of administration,
+grants of probate and letters of administration revocation of
+probate or letters, the duties of executors and administrators
+compensation for service rendered by them, and the time when
+their accounts are to be filed.
+
+An executor or administrator has one year allowed him from
+the date of his grant to administer a dead man's estate, by or
+before which time he must file a true account of his adminis-
+tration. Chapter LV provides for compelling intermediate
+accounts before the year has expired and compelling final
+accounts, now called judicial settlements, after the year has
+expired, or after the revocation of grant or cessation of a grant-
+tees functions; an executor or administrator may on his part
+after his year is oiit apply for a judicial settlement of his
+accounts. The object of the judicial settlement is to bring
+the administration to a close and the effect of it is to conclude
+all parties cited to attend the proceedings and their privies
+in estate with regard to certain facts connected with the ad-
+ministration, 6f. ^., the correctness of items allowed to the
+accounting party for payments made by him {N. B.) to Creditors
+legatees, heirs, and next of kin also items allowed for nece8sar>'
+expenses incurred by him, and for services rendered by him,
+for interest charged against him, for money collected by him
+for* allowances made for decrease or increase of wasting or
+productive assets.
+
+Hence a judicial settlement, is of great advantage to an
+executor or administrator. It further enables him to prove and
+retain debts which the deceased incurred to him.
+
+It is further a mutual . advantage to the estate and the
+executor or administrator in that as regards mutual debts, that
+is, debts due from him to the estate or xfice versa^ the operation
+.oltbest^tuteof limitation is suspended t>etween the date of the
+
+Digitized by VjOOQIC
+
+
+July 29, *93.J THE SUPREME COURT REPORTS. 5/
+
+death of the deceased and that of the iirst judicial settlement Ferera
+—see Sect. 737 Civil Procedure Code. Fbrn^do.
+
+The counsel's contention really amounts to this — that a creditor
+whose debt an executor or administrator refuses to pay has no
+remedy open to him except to press for a judicial settlement, or
+defer his claim by action till a year from probate or grant has
+expired,' when meanwhile he may have lost his remedy by the
+statute of limitation.
+
+It is, as it ever was, the duty of an executor or adminis-
+trator to pay a creditor's admitted claim the moment it is
+demanded, if he has the wherewithal to pay it, and no
+preferential claim staitds in the way.
+
+Indeed, if he can do so, and does not do so within his
+year, he his liable by our Civil Procedure Code section 554
+to pay interest out of his own funds for all sums which he
+shall retain in his own hands after that period, unless he can
+show good and sufficient cause for such detention.
+
+I would set aside the judgment and give judgment to
+plaintiff against the administrator for the sum claimed, with
+costs to be levied against the administrator personally in the
+event of their being insufficient assets of the deceased C. Mathew
+out of which to levy them.
+
+
+Before Lawrie^ a. c. j.
+
+June I and 8, 1893.
+
+ARUNAKAM v. TAMPAIYA,
+
+[No. 723, C. R., Trincomalib.]
+
+Fishhig in the high seas — Disturbance of right to — Damages.
+
+A party enclosing a shoal of fish within a net in the high seas, although he
+has not actually captured them, has sufficient possession of them to entitle him
+to maintain trespass against one. who forcibly, prevents him from drawing his
+net and securing the said shoal of fish.
+
+The plaintiff had cast a net« in the high seas, and en-
+closed a shoal of fish, when the defendant forcibly and with
+intent to cause damage, assaulted the plaintiff and some of his
+men, and prevented the plaintiff from drawing his net, and
+securing the fish he had enclosed therein. Plaintiff also
+
+B 8
+
+
+Digitized by VjOOQIC
+
+
+{$; .THE «art>llEME COU*T 1CEt»ORtS. [V'^ol. ti.
+
+Arunakam averrefl the Tarekoh of a custom Tegulating fishing, and prayed
+TAWpiwwX, for damages.
+
+Wendt for plaintiff-appellant.
+
+iUimpayo for defendant-respondent.
+
+Cur. adv. vult.
+
+On June 8th the following judgment was delivered by.
+
+Lawrie, a. c j.— In my opinion the case does not, turn on
+the alleged custom regulating fishing, but on the averment in
+the 3rd paragraph of the plaint that the plaintiffs net had
+been cast and a shoal of fish had 'been enclosed, when the
+def^hdkht unjustly and forcibly and with intent to cause plain,
+tiff wrongful loss and damage, assaulted the plaintiff and some
+of his men and prevented the plaintiff from drawing his net
+and securing the said shoal of fish to the pUinftiff 's damage of
+98 rupees.
+
+The law applicable is that laid down in Young vs. Hichens,
+6 Q. B. 606.
+
+If a fisherttian goes to fish in the High seas and another
+fisherman domes and fiAes be^de him and with tempting
+baits * *- '*' draws away the fish from the lines and nets of the
+fitit tottitr with ^a vii*w of catxihiiig them himself, damage may
+be tlohe, but there is no tort -or wrong, for the one had as
+much right to fish and to use fair and rectsbnable means to
+catch fish as the other.
+
+But if the rival fisherman layfe hold bf the nets of the
+first comer, or violently disturbs the water, and drives away
+the fish, and prevents the latter by force and violence firom
+exercising his occupation and calling, there is then a wrong
+done to him, and ^he is entitled to compensation in damages.
+
+In a caee teported in 2. Lorensz, p. 115, it was deci(ied
+that a fisherman, who had enclosed fish in a Madella, has
+^sufficient 't)ossess!6n to entitle him to maintain trespass against
+one who entered within the circle of the net and disturbed
+the fish.
+
+The decision in Vimferdtradten, p. 247, is to the ^ame eifect.
+Hefe the Idarned Commissidner h^s not given »ny opinion or
+judgment on the evidenoe on the diird and fotBtth tdsuee wb^her
+plaintiff h^ [enplds^ ^ny fiah wkhin his net, and ^wheUtor tfee
+
+
+Digitized by VjOOQIC
+
+
+defendant wrongfully prevented the plaiotiC {pom (1lliBiiii|^ llife Arvkaham
+net and aecumg and laading Ihe fish* TAjufMivA.
+
+The evidence on this poini i& very covflMtiog. The plate*
+tiflf and several of his witnesses swear that the plaintifTs
+net was cast and bad eiK^osed a large shoal of fish, the
+defendants and their witnesses say thali the quarrel took
+place before the plaintiif had cast hie net« and tliab he« difl
+not either cast it or enclose any fish that day:*
+
+On carefully considering the evidence I hoU that tbe.
+plaintiff has not proved that he was prevented by the detsm-
+dant from drawing the net and seonritig any fish theneiti' and
+1 affimr) the judgment with costs^
+
+
+Bbforb Lawriej a, c. j* and Withers^ j.
+
+July 7 and 11, 1893.
+
+PILLAl V. TAMBl,
+
+[No. 197, D* C, Tringomalie.]*
+
+Mendatory injunction — Erection of wall^Exclusion of light
+
+and air — Prencription — f:cichfis.
+
+In an action for an injunction restraining the defendant from erecting
+building, so as to prerent free acoets of> li^t and' air to plaintifif 'i> hoMfie^ and
+at«o for a nnandatory injunction ordering the defen^iant to, i^moye, a bi|ilf]ii|e .
+already erected. " ' " %
+
+Ifgid[ that the pUintifiF was- entitle to aa injuoctionMiostrakililP th» detedpmii
+from qoDstructing^ aqy furjtber building, so 03 to preyj^^ fr«e s^c^ss of hgb^
+and air to plaintiff *s house.
+
+Held a*so that the plaintiff wa» not entitlbd" to » nmndatoi^ itafuiiciion
+ordering the delondani to remove thp building alr<^afly» oon^uctQ|d, ^e having .
+been guilty of laches in havini; allowed 3 or 4 years to elapse be/o^e applying
+for such rjnuedj-. *
+
+The facts sufficieotly appear ai- the judgment oiWvrasRSi j.
+Wmdt foe DjpfendBfiNappellaBfc.
+Dorr^trrst for Phuntiff>-respondent.
+
+Cur. ajdv., vultw
+On July II, the following judgmei^tis v^e. d||li,V9i:<*d : —
+Lawrie, a. c, j, — 1 agree to, the judgment p^opp^ed, by
+mx brptl^r \Vith^rs.,
+
+Without a plan and without title deeds from wl)^l^, \jx^^
+txMHNdaxi^ of th«> ptain|sira aindr d^ndw/^'s l|m4 <^ l?ft ^per-
+tained, I |kMVfl.Qi^ boeniablaj to ft^im % 9lQf^ i^a,.pf i|4nM^.^
+
+
+Digitized by VjOOQIC
+
+
+I THE SUPREME COURT REPORTS. [Vol. \U
+
+Ph*lai the plaintiff complaiiis.
+
+Tambi, I agree that we may enjoin the plaintiff to erect no ftirther
+
+building on the wall in question.
+
+I agree that we ought not to order the removal of any building
+existing at the commencement of this action.
+
+The learned District Judge thought he saw exactly what
+atterations were needed to restrict the building to its proper
+dimensions and site, but I do not understand his order. I
+should be sorry to be the Fiscal entrusted with the execution
+of this decree.
+
+Withers, j. — This is an action by the resident owner of
+a land separated by a wall and fence from a land occupied
+by the owner to recover damages, and to obtain injunctions
+mandatory and otherwise against the defendant on the following
+causes of action, the extension of the roof of a house built against the
+wall on the defendant's side of it so as to project over the
+plaintiflPs land and cause rain water falling on the projecting
+roof to drop upon her land and injure it. The act complain-
+ed of sounds in. damages in two Ways. The projecting
+roof is a trespass to plaintiflF's property and the water dripping
+from it into her land is another trespass to property.
+
+The other cause of action is the erection of certain
+buildings on the wall referred to, which the plaintiff
+alleges is owned by her, and the defendants in common
+so as to exclude from the plaintifTs house both light and air
+
+which would otherwise come to it.
+
+She docs not complain that anything done by the defen-
+dant has injured the party-wall .or is likely to injure it.
+
+No issue was settled, nor could one well have been as to this
+latter cause of action. Plaintiff does not say in her plaint that she
+has acquired an easement for the free access of light by grant or
+prescription, nor does she particularise what part of her house has
+su£fered from loss of light.
+
+It seems, however, that this obstruction of light and air
+complained of has been removed and properly removed by the
+defendant.
+
+As to the first cause of action the learned judge has
+preferred to believe the evidence led by the plaintiff.
+
+
+Digitized by VjOOQIC
+
+
+Joly 99^ '93.] THB SUPRBMB COURT RBMRTS. 6X
+
+According to the plaintiff the defendant in 1889, or, according Pillai
+to another witness, in 1887 put up a new building against Tambt.
+the wall of partition raising the wall and apparently the new
+building with it, and so constructed the root on plaintiffs
+side of the wall, that the eaves projected over her land. Tliis
+is the continuing trespass for which she has brought her action
+in time, and for which she has recovered Rs. i b)* way Oj
+damages, an award from which she has not appealed.
+
+She has obtained an injunction restraining the defendant
+from building on the v^all, and a mandatory injunction order-
+ing the defendant to remove the new building so as to leave
+the wall of partition free, so that the roof shall not dis-
+charge rainwater on to the plaintiff's land, i asked Mr. Dornhorst
+if he could show me any authority for such an injunction as
+the latter one being granted in a case where a plaintiff has
+allowed 3 or 4 years to go by before coming to Court for
+relief.
+
+No doubt the Court can, and will where a plaintiff has
+neither acquiesced in the construction of a building injurious
+to his right of property, nor has been guilty of laches, grant
+a mandatory injunction, though the work complained of may
+have been completed before the filing of the BilK See Goodson
+V. Richardson, 43 L, J., Chan. 790, and Larant v. Hortpn, 59
+L. J., ch. 441.
+
+True it is that the plaintiff did not acquiesce in the mode
+of construction of this new building, but her laches in apply-
+ing to the Court for a remedy by injunction quite disentitle her to
+this mode of relief. That part of the judgment cannot there-
+fore stand.
+
+As to the wall itself the defendant to my mind has quite
+failed to prove that it was built within the liouts oi his land,
+
+I gather from the evidence that the wall stands on the
+limit line of the two adjoining lands, and a wall placed on
+the boundary line by either of two adjoining landowners be*
+comes property common to both of them by Roman Dutch
+Law— See Hubert Grotious, page 207 — which neither can in-
+jure or open without common assent, nH!ich more can neith^
+
+
+Digitized by VjOOQIC
+
+
+Pn.bAr butbl on it so as to violate aoy cig^^ of hi^ neigbboiir Qither
+Tambi. in* the wall itself^ oc io the land, oq the other side o£ it.
+
+I would affirm that part of the order which enjoins the
+defendant not to construct any further building upon the party
+wall, vary the judgment by striking that part out of it which en-
+joins the defendant to remove the new building attached to the
+wall so as to leave the wall free and so as to prevent the
+roof of the new building firom projecting over the party-wall,
+
+i would give no costs in eitbier court.
+
+
+Before Lawrie^ a- c. j.
+July L3 and 15, 1893.
+PUHAITAMBT v. KAROLIS and others.
+[No. 15,032 P. C. Anuradhapura.]
+Oaming— Ordinance No. IK of 1889— Effect of flftoA^.
+
+The essence of the offence of gaming, as defined by the Ordinance No. 17
+of 16S9, is the existence of a stake for which the parties game; the Ordinance
+does not prohibit an assemblage of people to play gapies of chance, provided
+there be no stake.
+
+The accused appealed from a conviction on a cljarge of
+gaming under section 4 of Ordinance No. 17 of 1889,
+
+Domhorst for appellants.
+
+No council appeared for the respondents.
+
+Cui^ adv, vult.
+On July 15,, the following judgment was delivei:ed: —
+
+LAWitifiy k, c. j^— It seeing necessary to seinixid almost every
+PoHce Mttgietvate in the Island that the old law which made-
+gaming, or playing at any game (or pretended game) of chacce,
+has. t^<9en repealled.
+
+It is now lawful to play game» of chance- The legislature
+has chiuigod. it^ view of what is. unlawful E|n4 wor^y to be
+repeesBodand fuiipisbed. U no longer probijbiits games of ohaope but
+it pG9hibi|0 Rtaying a game; for a stake. In t}^ former law i^ did not
+msNttOP wh^tl^ ipoi^ was lost or wop ; nqw iA is of th^s essence q(
+thQQfiQS¥:e nptopl^thaA oioneyf shall belostor^iyon, buttliat mon^y
+shf#t^ st^k^d.Mere.^gai^iai^pja^ed^ As \ u^^d^rs^nd th^
+
+
+Digitized by VjOOQIC
+
+
+Jtlly 29, *93.] THE SUPREME COimX RfiPOBTS*
+
+(NresenC Ordinance men may play even far motiey {nrovided it is
+not staked. They may play for money on credit, ad It wete.
+
+The essence of the offence as defined by the preselit Ordin-
+ance is the existence of a stcdce Ibr which the gamers geMe.
+
+Here there is no proof of gaming for a staJce. The accused
+are not prG^red to have broken the law which, as it now standSi,
+by no means prohibits an assemblitge of people to play games
+of chanfce, provided, as I said before, thote be tio stake.
+
+All the accused are acquitted*
+
+I must add that the Police Magistrate recorded evidence of
+previous convictions before he cobvicted-^a course wbidh he
+cannot but know is contrary to law.
+
+The procedure by which the seventh accused was convicted
+without trial, or charge, or plea, was an astonishing act of
+rapid injustice. He, too, is acquitted.
+
+
+Before Withers^ j.
+June 29 and July 6, 1893.
+
+WALKER 1;. PALANIYANDI.
+
+[No. 7,563, P. C, NuwARA Eliva.]
+
+Labouirr — Ordmanoes No, 11 0/ 1S6S and No. 18 of 1889 —
+
+Entry in CheekroUr^NoHee k> quit.
+
+In a DroMclition ubder SectioD ti of Ordinaiice Uo. 1 1 of 1965, of a
+Ubourer for quitting prosecutor's service without leave or reasonable cause
+or |)ii<evioiis wamrng , although there ww iSo cri<!cncc that the name of the
+accused had been entered in the Check-roll of the esute, there wma evtdtncfc
+that he had received rice from the prosecutor, who was. the superintendent
+x>f the estate, and it appeared that the aocuaed bad giyeh notice to the prote-
+cutor that he would quit the prosecutor's service and leave the estate on the
+gpoiiha that liis wagos w^re due and unpaid for over skty days from the ^pi-
+ration of fne month, during which such wages had been- earned.*-
+
+HM that this was sufficient evidence of the fact that accused regarded
+ktmsclf as a labourer on the estate #itfein the meaning of the Ordin^ce.
+
+The facts material to this report appear in the judgitieht.
+
+DomJiorst for accused-appeaMent,
+
+The respondeDt was not represeoted by coaniel.
+
+Cur. adv. volt
+
+Only July 6, the following judgment was delivered by
+
+Withers, j. — The accused has been convicted of qtiittfttg
+
+the prosecutor's service without leave, or reasonable cause, •r
+
+previous warning in breach of section 1 1 cf Ordinaa^ JNo.
+
+II of 1865.
+
+
+Pn.LA!
+
+V.
+TaMiii.
+
+
+Digitized by VjOOQIC
+
+
+64
+
+
+THE SUPREME COURT REPORTS,
+
+
+[Vol. ii.
+
+
+Walker
+
+V.
+Palann
+
+YANDI.
+
+
+The prosecutor deposes that the accussd was employed on
+North Pundaloya estate under him as a monthly paid labourer.
+When this contract was made, what was the nature of the service,
+or the hire, does not appear. Wliat the evidence does show
+is, that the accused, Palaniandy Kangany, was employed on
+that estate in other than domestic labour before he left it.
+
+There is no proof that his name was entered in the CheckroU
+of the estate. There is evidence that he had received rice from
+the prosecutor, who is presently the superintendent of that
+estate.
+
+Looking, however, to the notice received by the prosecutor
+from the accused that he would quit the prosecutor's service and
+leave the estate on the 26th of May, on the ground that wages
+for six days for the months of January to May, both inclusive,
+were due and unpaid on the 22nd of May, it cannot at least be
+denied that the accused regarded himself as a labourer on the
+estate at that time.
+
+Assuming him to be a labourer within Ordinance 11 of
+1865 or Ordinance 13 of i889» ^^^ ^his a reasonable cause
+for quitting service?
+
+No labourer shall be liable to punishment under these Ordi-
+nances and No. 7 of 1890, if the monthly wages earned by him
+shall not have been paid in full within sixty days from th
+expiration of the month during which such wages shall have
+been earned.
+
+Now, according to the notice, the accused did not complain of
+any wages being owed to him previous to January, 1893. If he
+claimed wages in January and February, and they wer ^ not paid
+when he left on the 26th May, it is clear he had reasonable cause
+for leaving service.
+
+The prosecutor admits that the accused has not been paid
+wages since January, but at the same time says that nothing was
+due to the accused, when he left, by way of wages.
+
+I cannot quite reconcile this with a statement of the prose-
+cutor*s which I shall presently cite. Again, not knowing the
+terms of the contract of service between the accused and his
+employer, I do not even see how it is possible to find that
+accused did in fact earn no wages in January and February.
+
+
+Digitized by VjOOQIC
+
+
+Aug. 5, 93.] THE SUPREME COURT REPORTS.
+
+If he was paid a lump sum per month, so long as the
+service was not determined by due notice on either side, he was
+entitled to be paid his monthly wages whether he worked
+or not.
+
+If, as is more likely, his wages, were payable at a daily
+rate, they were to be computed, says the Ordinance, according to
+the number of days on which the labourer is able and willing
+to work, whether provided with work or not by his employer.
+
+The prosecutor deposes thus : — ''Accused did no work as a
+labourer, he drew rice but never asked for work. Head money
+was due to him though he did no work," This is not quite the
+same thing as saying that he was able but unwilling to work
+according to his contract.
+
+'Again he deposes thus : — 4 months and 26 days wages would
+have been due to the accused, if I had not been ordered by the
+Court to retain them.'*
+
+I must infer the months referred to b^ January, Feburary,
+March, April, and the first 26 days of May, The 26th being
+the day the accused left the estate. That means, if anything,
+that though the accused did not work, he had earned wages
+during those months, but owing to an order of the Court, the
+prosecutor considered himself restrained from paying them to
+the accused.
+
+But the order referred to was received on the 9th of
+Noveml)er, r892, and only affected a sum which the accused
+was at that date entitled to receive. It did not prohibit his
+receipt of wages thereafter earned.
+
+A sum of Rs. 226 '5 1, then due and payable by the manager
+or superintendent of the estate to the accused was not to be
+paid to or received until further order.
+
+That was all the order prohibited. In these circumstances
+I feel bound to hold that the accused had reasonable cause for
+leaving the estate on the 26th of May last, and to set aside
+the judgment.
+
+The accused is acquitted and discharged.
+
+
+65
+
+
+Walkkr
+
+V.
+
+Palani-
+
+YANDI.
+
+
+B 9
+
+
+Digitized by VjOOQIC
+
+
+^ tHB S^Uj'IUiME COUHT KijPQKTS. [Vol. ii.
+
+Before WWiers^ j.
+
+June 29 and July 3, 1893.
+
+FERNANDO v. BEMAPPU and another.
+
+[N,0. $>999, P. C, PANAiJURA,]
+
+MischUf^^''4il0ct^ 409. Bmal Umk—rBonu fide belief of* accusod
+UioU the property ie hie own.
+
+The accused really believing that they had a right of way over the
+prosecutor's land} cut down a^ p^ion of a fence whidi he h«d put up to
+prevent their entering his lanci, in order to assert their supposed right of way.
+
+Jleldy that the accused were not guilty of mischief, as no person can be
+convicted of mi^bief who deals inj^irioiisly with, property in the luma Jide
+belief that it is his own. •
+
+The facts sufficiently appear in the judgment*
+
+Wetidt for the appellant^,
+
+D9mlior8t for respondent.
+
+Cur. adv. vult.
+
+On July 3 the following judgment was delivered by
+
+Withers, J.— The judgment of the Police MagistrMe does
+not specify the offence of which, and the section of the Cpde qnder
+which, the accused h^ve been sentenceci to pay a fine of
+Rs. I each. Thisisavery necessary and proper requirement of the
+372nd section of the Crirnipal Procedure Code.
+
+That part of a judgment which complies with t}|is section
+should always prepede the rest which contains th^ ppipt for
+determination, the. decisiorj and. tl^e reasons for the decisioQ. I
+will tal^e it, however, for the purpose of my judgment, tl^at the
+accused have been convicted of the oflFence of mi^phief uodci;
+section 409 of the Penal Code, in thfit they, wjth th§ intent
+to cause the prosecutor wrongful loss or damage on some day,
+in May last, cut down two cubits of a ff.nce which t}ie. prosecutor,
+had put up as the djviding boiindary between his ^nd the
+contiguous lapd of the accused. The appeal is taken pn a
+point of law, which is, that the facts found by the magistrate
+do not constitute the oflfence of mischief as defined by sectipa
+408 of the Penal Code.
+
+I .think the appeal succeeds.
+
+The magistrate has found it to be clear that the defendants
+really believed that they had a right of way over the prose-
+
+
+Digitized by VjOOQIC
+
+
+Aug. 5, '93.] THE SUPREME COURT RTPOfRTS. 1^
+
+cutor's land at the point where they cot down the fence, Which rtr»NANi>o.
+
+he had put up to prevent their entering his Iknd, and fhat in TBemappu.
+
+doing the act complained of they were simply asserting the
+
+right of way which they honestly believed they enjoyed. On
+
+this finding I think the magistrate ought to have acquitted
+
+the accused. The magistrate went a little too far in laying
+
+down the proposition that it is not enough for a person charged
+
+with mischief to satisfy the Court that he had a bona fide
+
+belief he was exercising a right to do what he did do, but
+
+that as a matter of fact he should satisfy the Court that he
+
+was entitled to do what he honestly thought he had a right
+
+to do.
+
+I prefer to follow the principle laid down by the High
+Court of Allahabad, that a person cannot be convicted of com-
+mitting mischief who deals injuriously with property in the *
+bona fide belief that it is his own — See. Empress of India vs.
+Budh Singh 2 Allah. loi.
+
+Here the accused are found to have honestly believed that
+they had a right of way over the prosecutor's land, and they
+removed the obstruction put up by the prosecutor to prevent them
+from exercising that as5;erted right of way. The same Court had
+decided — and if I may venture to say so— rightly that the mere
+assertion of the right is not a sufficient answer to the charge* — See
+also judgment of Justice Clarence of 8th March, 1889, in c^fii^
+7,192, P. C. Ohilaw.
+
+
+Bf.forb Lnwrie^ and WWiera^ j, j.
+
+February 24 and 28, 1893.
+
+IBRAHIM and Another v. TILLEKERATNE.
+
+[No. 34,620, D. C. Matara.]
+
+Dfcm-^KxeciUion fer jmri fjT debt—WiSlkHfr—ileci. 837 Ctvil
+Procedure Oode^
+
+A iud^^ent creditor may not issue execution for la part of the debt,
+unless he waives his right to recover the rest, and each of several joint
+judtmcni creditors may not issue separate writs to recover a fractional share
+of tne debt due to them jointly.
+
+The material facts appear iq the judgment of Lawrib, ).
+
+Digitized by VjOOQIC
+
+
+THE SUPREME COURT REPORTS.
+
+
+[Vol. U.
+
+
+Ibrahim
+
+TiLLEKE*
+RATNE.
+
+
+W^tdt for .appellani
+Domlwrst for respondent.
+
+
+Cur. adv. vult.
+On February 28 the following judgment was delivered:—
+
+Lawrie, j. — The policy of the law is to restrain judg-
+ment creditors from harassing their debtors by repeated
+seiiures and sales of property.
+
+Section 337 provides that when an application to execute a
+decree has been made and granted, no subsequent application
+to execute the same decree be granted unles the Court is satis-
+fied that at the last preceding application due diligence was
+used to procure complete satisfaction of the decree. It is con-
+trary to the spirit and letter of our law to permit a judgment •
+creditor to issue execution for only part of the debt, unless
+he waives his right to recover the rest ; and it is even more
+irregular to permit each of several joint judgment creditors to
+issue separate writs to recover a fractional share of the debt
+due to them jointly.
+
+Here the Proctor who held a proxy for hotli plaintiflfs
+appears now for the 2ml plaintiff only, because the other
+plaintiff has assigned his right to some one else.
+
+The second plaintiff does not pretend to have right to
+waive part of the claim. The motion for execution is made on
+the footing that some one else at some other time may come
+forward and get execution issued for the other half.
+
+In my opinion the application should have been refused.
+
+I would set aside the order of i6th December with costs.
+
+Withers j. — I agree.
+
+
+Digitized by VjOOQIC
+
+
+Aug. St *93*] I'HB SUPREME COURT REPORTS. 69
+
+Before Latvrie^ and Withers j. j.
+
+December 20 and 29, 1892.
+
+WEERASIRI r. SANCHIHAMY,
+
+[No. loi V, D. C. Galle.]
+
+Tart — Actio personcUis moritur cum persona — 3 and 4 Wi/l
+
+IV c 42 — Wrong done by deceoited — Liability of legal
+
+representative.
+
+Per Lawrie j.— The law in Ceylon in regard to ihe liability of the
+legal representative of a deceastd for any wrong committed by him in bis life-
+limc is governed by the Act 3 Will IV c. 42. The legal representative must,
+however, under the Act be sued within six months of his uking upon himself
+the administration of the estate.
+
+Plaintiff sued the administratix of a wrong doer for damage
+alleging that the deceased '*not withstanding the protestations
+of plain tifi wrongfully deprived the plaintiff of the lateral
+support to the plaintiffs land and the building constructed there-
+on by wr(»igfully cutting almost perpendicularly the solid slop-
+ing ground immediately adjoining the plaintiff's land without
+leaving proper and sufficient support for the plaintiff's premiseis.
+
+Wendt for defendant appellant.
+
+DornJiorst for plaintiff respondent.
+
+Cur adv. vuli.
+
+On December 29 the following judgments were deHvered : —
+
+Lawrie, j. — The plaintiff alleges that he had right to
+lateral support for his land by the deceased intestate's land
+and also that he had gained by prescriptive possession an ease-
+ment of support for buildings.
+
+It was urged that the plaintiff had not proved that he
+had acquired this easement by prescription. It seems to me
+that the plaintiff proved that a wall and flight of steps
+on his land were in existence for at least 15 years prior to
+the committing of the wrong complained of, and I am of opi-
+nion that the plaintiff acquired the prescriptive right allegetl.
+
+But this is an action in tort. The plaintiff distinctly so
+puts it. He sues the administratrix of a wrongdoer for dam-
+age alleging that the deceased '* notwithstanding the protestations
+of plaintiff wrongfully deprived the plaintiff of the lateral sup-
+port to the plaintiffs land» aqd the building gopstructed there-
+
+
+Digitized by VjOOQIC
+
+
+70 THE SUPkEME COURT REtoRTS. [Vol. li.
+
+WEKRAsiRf on by wrongfully cutting' almost perpendicularly the solid slop-
+
+Sanchihamt ing ground immediately adjoining the plaintiffs land without
+
+leaving proper and sufficient support for the plaintiffs premises.''
+
+This is an section which at English common law did not lie
+against a personal representative of a deceased wrongdoer.
+
+It is of the same class of wrongs as diverting a waterconrse
+or obstructing lights which are expressly mentioned in the
+text books as torts to which the rule actio jternonalis mori-
+lur cum persona applies.
+
+As the English Law of Administrators and Kxecutors has
+been introduced into Ceylon, I take it that the Act 3 and 4.
+Will IV c. 42 Sect, is law in Ceylon, but thougli that Act
+provides that an action of trespass can be maintained against
+the executor or administrator of any person deceased for any
+wrong committed by him in his life time in respect of his
+property ; atid that the damages to be recovered shall be pay-
+able by the admibistrator in order of administration as the
+simple contract debt of such person, the Act limits the liability
+of the administrator to be sued to within 6 months of theSr
+taking upon themselves the administration •
+
+Here the deceased wrongdoer dted in Felvruiry, t^^, and
+the action was not instituted until January, 1892. There
+exists here the peculiarity that the cause of action, the
+actual damage, did not arise either in the lifetime of the
+Wrongdoer or within 6 months of the taking of aduiltlistratioii
+of his Estate, but it is clear the Act of Will iv. does not give
+relief to the plaintiff, and that at common law the actfcn
+does not li^.
+
+I would on these grounds set aside the judgment and di^-
+miss the ^ctfbn with costs.
+
+WitHERS, J.—! agree In thinking that the ju<ignvent of th&
+Court bdow should be set aside, and the piaintiflf*s action d&-
+missed with costs, but I prefer to 'rest my opinion ori the oth^
+point pressed upon us by Mr. Weodt, vi^ that phiiiitiif hag not
+proved what he averred^ that he had acquired a prescriptive
+right to the lateral support of the waH which according ko the
+learned judge fell in consequence of the intestJite's dealittg with
+the adjaccQt aoil of iAi own |)rc^]Nertyt
+
+
+Digitized by VjOOQIC
+
+
+Bfore Lawrie, a. c. j., and H^i7/i^/vs, j,
+
+June 6 and 9, 1893.
+
+SILVA f. PATE.
+
+[No. 1,391, D. Cm Galle,]
+
+Negli(/mce — BolHny horse — Burden of ptvo/^Evithnce:
+
+The mere happening of an accident does not throw on the defendant the
+»j»vtf of disproving negligence, nor does the mere, tact of. a horse bolting raise
+a prima f arte presumption of negligence.
+
+The facts sufficiently appear in the judgment ef Lawrie, a, c. j.
+
+Dharmaratrw for plaintiff-appellant.
+
+Donihorsf for defendant-respondent.
+
+On June 9, the following judgments were delivered : —
+
+Lawrie a. c. j,-=-It is well fixed law in England that a (daintif!
+in a c^asc like this must give some affirmative evidence of negli-
+gence on the part of the defendant.
+
+In Hammack vs. White (31 L.J,, C. P. 129) Erie, C. J.
+went so far as to say, ** I entirely dissent from the doctrine that
+the mere happening of an accident throws on the defendant the
+onus of disproving negligence."
+
+In Manzoui vs. Douglas (6 Q. B. D. 145) decided in 1880
+Lindley J. said that it cannot be said that the mere fact of bolting
+arises a prima facie presumption of negligence. Hprjses run
+away for all sorts of reasons and no such inference can be
+drawn from the mere fact of bolting.
+
+And in these cases and in Ootiop vs. Wood (29 L. J^, C.
+P. 333) it was decided thai if the cause of the accident be
+obscure, if the evidence adduced to prove negligence be equally
+consistent with no negligence^ there is not enough to leave tp
+the jury.
+
+Here in my opinion the plaintiff made out SLprimufacie case
+of negligence. His house was injured by the collisioo of. the.
+defendant's mail coach with his verandah posts, the coach wa^
+driven off the road, the defendant's cpachman b^in|[ on the Ih>x
+holding the reins.
+
+It is proved that the horses had QOt, bpUp4« Th^ cpaf^hoi^Q
+says the moment of thc^ collision they^wejrjB. OQt gqififfypt, \^iiy.
+
+
+Digitized by VjOOQIC
+
+
+72 THE SUPREME COURT REPORTS. [Vol. ii.
+
+SiLVA then did he come to collision. The defence is that the eoach-
+Pate. "^^n had lost control of the horses.
+
+The learned District Judge's view of the evidence is that one
+of the horses took fright at something, apparently the crowd of
+people in the market, and becoming unmanageable both the horses
+got beyond control and ran off.
+
+I think this view of the evidence is too favourable to the
+defence. The coachman lost control, but I find no evidence that
+the horses were unmanageable, nor is there proof that they
+ran off the road in the sense that they ran off or bolted.
+
+The horses became restive at the sight of what it niiglit
+have been expected they would see, a crowd in the market, and
+what happened was just what would happen if a child or an
+inexperienced man, who could not drive, was on the box. The
+coachman had neither strength of hand or head to fit him for
+an emergency so likely to happen, and instead of keeping the
+horses in hand and on the road, he guided them and suffered
+them to take him and the coach off the road, and to knock
+down a bit of the plaintiffs house.
+
+It is an accident but an accident which could have been
+prevented had the driver had skill. The plaintiff took advan-
+tage of the comparatively slight damage done to get his house
+thoroughly repaired. He must bear part of that expense himself.
+
+He gets enough if we assess the damage at Rs. loo with
+costs of suit.
+
+Withers, j.— I agree in thinking that the judgment ought
+to be set aside. With every* deference to the learned District
+Judge who tried this case in tbe Court below, the facts dis-
+close one of two states of things both of which make against
+the defendant.
+
+Either the driver improperly excited the horses to such
+an extent that he was unable to control them, or he was incom-
+petent to drive the horses.
+
+The strong impression I must say left in my mind by the
+evidence is that he flogged the horses into a gallop which took
+them with such a violent swerve in the direction of plaintiffs
+boutique that he lost all Control over them.
+
+
+Digitized by VjOOQIC
+
+
+Aug. 19, '93.] THE SUPREME COURT REPORTS. 73
+
+However, the driver's version of the story is that these Silva
+horses had never before shown any alarm at a crowd of people Pate.
+in the market place, and that this was the first time they were
+frightened at a crowd.
+
+If they were so frightened as, to spring off with a sudden
+swerve and at a great pace so that no ordinary skilful driver
+could have pulled them up within the distance between where
+they started from fright and the plaintiffs boutique, I think
+that state of things would excuse the defendant*
+
+But in cross-examination the driver admits that the horses
+were not going fast when the tent of the coach came in con-
+tact with the roof of the plaintifTs boutique. That is incon*
+sistent with his statement that they became unmanageable and
+beyond his control. If they were not going fast why did he not
+pull them up ? This surely indicates incompetency.
+
+
+Before Lawrk, a. c. j., amd WitherSt ]•
+
+July II and 38, 1S93.
+
+RAMBUKPOTA v. MENIKA and others.
+
+[No, 10,944, P* C., Badulla.1
+
+Charge^Warrant of Commitment^-Jurisdidion of Police
+
+Court^Eiiccqte or reacue wider Hects. 219 and 220
+
+of the Ceylon Penal Code,
+
+The charge in a prosecution before a Police Court for escape or rescue
+under Sections 219 and 220 of the Ceylon Penal Code must disclose the
+nature of the offence for which the prisoner escaping or rescued had been taken
+into custody, it being competent to a Police Magistrate to try such a
+charj^e where the escape or rescue was from custody in which the prisoner was
+lawfully detained for an offence with which he was chari^ed, or of which he had
+been convicted, only when sHch offence was itself cognisable by a Police Court. *
+
+The warrant of commitment in the present case not disclosing the Magis-
+trate's juris<liction to try the charge on which the prisoners had be convicted, the
+Supreme Court held that even if warrants of commitment were open to amend-
+ment, the present one could not be cured in consequence of the defective nature
+of the charge in the case.
+
+Ramanaihan^ S.-G.^ moved the Court to exercise its
+power of review under section 426 of the Criminal Proce-
+dure Code.
+
+Cur. adv. vult.
+
+On July 28, the following judgment of the Court wat
+delivered by
+
+* ^° r- T -
+
+Digitized by VjOOQIC
+
+
+74 THE SUPREME COURT REPORTS. [Vol. ii.
+
+R.AiiBUKPOTA Withers, j.— The Solicitor-General applied to us to send
+
+Manika. for the Police Court Badulla Case No. 10,944 ^^ revision on
+the ground that the warrants of commitment of the prisoners
+convicted and sentenced to pay fines, or in default to
+undergo terms of rigorous imprisonment are bad on the
+face of them by reason of the fact that they do not disclose
+the Magistrate's jurisdiction to try the charge on which they
+have been committed,
+
+A copy of the warrant of commitment of the ist prisoner
+was handed to us by the Solicitor who gave us to understand
+that the warrant of commitment of the other prisoners ran
+in the same way.
+
+It appears on the face of this warrant of commitment that
+the prisoner was convicted of the offence of escaping from
+lawful custody under section 219 of the Ceylon Penal Code*
+
+Now it is competent for a Police Magistrate to try a charge
+of escape or rescue where the escape or rescue is from custody
+in which the person escaping or rescued was lawfully detained
+for an offence with which he is charged, or of which he has
+been convicted, only when such an offence is itself cognisable
+by a Police Court.
+
+The charge in the case under revision does not disclose
+the nature of the offence for which the ist prisoner was taken
+into custody, so- that even if a warrant of commitment is
+open to amendment, these warrants cannot be cured in this
+case in consequence of the defective nature of the charge on
+which all the prisoners were tried.
+
+Hence the conviction of the ist prisoner from escaping
+from custody and the convictions of (he other prisoners for
+rescuing the ist prisoner from custody, must be quashed, and
+all the prisoners released from custody.
+
+The Magistrate must take care to carry this order
+into effect with the least possible delay. .
+
+
+Digitized by VjOOQIC
+
+
+Aug. 19, 93,] THE aUPaSME COURT REPORTS. 75
+
+Before Lawrie^ ▲. c. j.
+July 6 and 13, 1893.
+PERERA I'. SADIRAPPU,
+[No. 8,816, P. C, Panadure.]
+Gajfiiing^^ake— Ordinance No. 17 of 1889.
+
+Under Ordinance No. 17 of 1889, the playing of gamcf of chance if
+lawful, provided there be no stake.
+
+Obser\a'.ions by Lawrie, A. c. j. on the hisfory of the gaming laws of Ceylon.
+
+Accused were found in a house throwing dice. There was
+no evidence that they were playing for a stake. The appeal
+was from convictions of gaming, and of keeping a common
+gaming house.
+
+There was no appearance of counsel.
+
+Cur. adv. vult.
+
+Only July 13, the following judgment was delivered by
+
+Lawrie, a. c. j. — The conviction in this case shows that
+it is again necessary to explain what games the Legislature
+in Ceylon has declared illegal. Before referring to the ordinances
+passed on this subject, it may be worth while to remember
+what the Common Law of England is as to gaming, i Russell
+on Crimes, p 608, states — "By the English Common Law the
+playing at cards, dice, etc., when practised innocently and as
+a recreation, the better to fit a person for business, is not
+at all unlawful or punishable as any sort of offence,"
+
+I do not know if by Roman-Dutch Law, there was any
+punishment attached to gaming in Ceylon prior to the passing
+of the Ordinance 3 of 1834, but by that Ordinance the Legis-
+lature prohibited the playiqg at any game of chance, and
+the Ordinances 3 of 1840 and 4 of 1841 prohibitedgaming with
+any table, dice, cards, or any other instrument of gaming at
+any game or pretended game of chance.
+
+For the ensuing fifty years the law prohibited merely
+pUaying at games of chance, it said nothing about the losing
+and winning of money. That was not the essence of the
+offence. Chance was what made a game unlawful.
+
+In 1889 the Legislature abandoned the theory that playing
+a game of chance , was wrong ; and in lieu it prohibited
+playing a game for a stake.
+
+
+Digitized by VjOOQIC
+
+
+76 THE SUPREME COURT REPORTS, [Vol. ll.
+
+Perera Where this idea came from I do not know; it was not
+
+Sadirappu derived from India, because in the Indian Gaming Act of 1867
+it was enacted that it should not be necessary in order to
+convict any person for keeping a common gaming house, etc.»
+to prove that any person playing at any game, was playing
+for any "money wager or stake." Notwithstanding the change
+made by the Ordinance 17 of 1889 therp still lingers in the
+minds of most Police Magistrates the belief that the law
+prohibits games of chance and what needs to be proved is only
+that cards or dies were us3i by those playing the game;
+but that is an erroneous belief.
+
+The law now is, that games of chance are lawful. It is
+permitted to throw the dice and to play a game of chance
+provided there be no stake. Playing for a stake, the posses-
+sion of which is to depend on the throw of the dice as the
+result of the game, is alone prohibited.
+
+Here in the case before me the accused were found
+throwing dice ; there is no evidence that there was any
+stake. They are, therefore, not proved to have broken the
+law. The convictions of gaming and of keeping a common
+gaming house are set aside and the accused are acquitted.
+
+
+Before Lawrie^ a. c. j.
+
+July 13 and 15, 1892.
+
+MURUGASEN v. PERERA.
+
+[No. 5,361, P. C, Chilaw.]
+Ordinance No, 14 of 1867 — Exemjdion from
+payment oftolL
+
+A certiBcate signed by a District Engineer "that the accompanying convey-
+ance of A. B. is employed this day (January 14) and until December 31, 1893,
+in the service of the Public Works Department, Chilaw, within 10 miles of the
+toll station of Madampe*' is not a sufficient certificate of exemption from pay-
+ment of toll under Sect. 7 of Ordinance No. 14 of 1867.
+
+The facts sufficiently appear in the judgmenf.
+
+There was.no appearance of counsel.
+
+Cur. adv. vult.
+
+On July 15 the following judgment was delivered by
+
+LawriEi a. C.J,— It wa8t(?/m vires of th^ District Engineer
+
+
+Digitized by VjOOQIC
+
+
+Aug. 19, '93.] THE SUPREME COURT REPORTS. 77
+
+to sign a certificate that the " accompanying conveyance of Mcjrugasen
+Mr. V. Murukasen is employed this day (14 January) and until perera.
+the 31st December, 1893, in the service of the Public Works """
+Department, Chilaw, within 10 miles of the toll station of
+Madampe."
+
+First, it was necessary to identify the conveyance by a
+description by which it could be distinguished from others.
+This certificate was worded as if it were intended to exempt
+every carriage which Mr. Murukasen might use throughout the
+year. Such a general exemption could not legally be granted.
+
+Second, the District Engineer could not exempt a convey-
+ance on the ground that it was employed in the service of the
+Public Works Department. The Ordinance exempts vehicles
+only if they be employed in the construction of a road, bridge
+canal or ferry; and there is here no evidence that this con-
+veyance ever had been employed in the construction or repair
+of the canal of which Mr. Murukasen was supervising officer.
+
+Third, there is no proof that the canal was then being
+constructed or repaired ; unless it was, there was no exemption.
+
+But if I treat this certificate as one granted to Mr.
+Murukasen personally, he could not use it to pass a cart-
+load of other people who held no certificate of personal ex-
+emption.
+
+Again, this is not a case of a road officer who is bound
+to pass over his road repeatedly and who is fairly exempt from toll,
+it is not apparent how Mr. Murukasen can claim to drive along
+roads on duty. His duties lie in the canal.
+
+It is not proved that duty took him or his companions
+through the Madampe toll on the]25th April. If cannot be assum-
+ed that every supervising officer of the Public Works Depart-
+ment is entitled to drive with his firiends though every toll
+within ten miles of any part of his work, whatever that
+work is, and whether the officer be on pleasure or on duty, I
+refer the Magistrate to Vanderstraaten p. 179; Grenier 1874
+p. 48; I. S. C. C. p. 13 ; II S. C. C. p. 78.
+
+Holding that the certificate exempted neither the cart,
+ow Mr. Muruksiscn, n^r bis companions, I acquit th^ accu9^t
+
+
+Digitized by VjOOQIC
+
+
+78 THE SUPREME COURT REPORTS. ^Vol. ij.
+
+Before Laivrie, k, c, j.
+
+July 13 and 20, 1853.
+
+JAVEN V. ALLOESINNO.
+
+[No 9,148, P. C, Panadure.]
+
+fiemtance to arrest—PoUcesectioiii 156 & 219 Ceylon Penal
+Go(le*-^cction 34 Qnminal Procedure Code,
+
+A Police Officer has no power under section 34 of the (Viminal Pro-edurc
+Code to arrest without a warrant parties engaged in committing an uOTray as
+defined in section iS'j of the Penal Code.
+
+The facts sufficiently appear in the judgment.
+
+Dornhorst {Pierls with him) for accused-appellant.
+
+Ramanathan, S-0., for respondent.
+
+Cur. adv, vult.
+
+On July 20, the following judgment was delivered by
+
+Lawrie, A. c. J. — To make a man liable under section 2x9 of
+the Penal Code for resisting his apprehension, he must have
+been charged with an offence or have attempted to escape
+from lawful detention. In this case the ist accused was
+fighting with two or three other men. He and they seem to
+have committed an affray as defined in section 156 and
+punishable under section 157 of the Penal Code.
+
+The m^n were known to the Police. The provisions of
+section 34 of the Criminal Procedure Code do not apply.
+Committing an affray is a non-cognisable offence and the
+Police may not arrest without a warrant.
+
+The offence under Ordinance 4 of 1841 of behaving in a
+riotous and disorderly manner in a public street is obsolete.
+It was superseded by the Penal Code.
+
+I am of opinion Jjiat the ist accused was justified in
+resisting his apprehension. He did little more than run away.
+He is not charged with causing hurt; if he had been, the
+case would, of course, have been different. I acquit him of
+the charge laid under section 219.
+
+It necessarily follows that the and accused must be acquit-
+ted of the charge under section 2^0.
+
+
+Digitized by VjOOQIC
+
+
+Aug. 19, '93.] THE SUPREME COURT REPORTS. 79
+
+Before Lawrie and Withers, j. j.
+
+February 14 and 28, 1893.
+
+MISSY NONA and her husband v. JAYESOORIA and another.
+
+[No. 35,936, D. C. Matara.]
+
+Cross — decrees — set off^Civil Pro. Code Sect, o4o.
+
+A decree obtained ajfainst the husband alone cannot be set-off agiinsl a
+decree ob*ained by the husband and wife against the decree-holder.
+
+A decree obtained against a perron as administrator cannot be set-off against
+a decree obtained by hitn personally.
+
+In case No. 35,936 Missy Nona and her husband had ob-
+tained a decree against Bastian Jayesooria and Charles Jayc-
+sooria. In case No. 35,010 Bastian Jayesooria the first defend-
+ant had obtained a decree against Gregoris de Silva, the
+husband as administrator and claimed to set off this decree
+against the decree obtained in case No. 35,936.
+
+The District Judge refused to allow the decree in 35,010
+to be set off against the decree in 35>93&
+
+The defendants appealed.
+
+Wcndt for appellants— A debtor cannot claim to set-off the
+debt due from him to two creditors against a debt due to him
+from one of them. But the case is different, where there are
+two debtors. The debt due from both of them may be set off •
+against a debt due to one of them. Civil Procedure Code
+Sect. 246 ; I. CaK 379.
+
+Although the plaintiff in 35,936 are the husband and the
+wife, the husband is absolutely entitled to the proceeds of the
+decree (Sect. 19, Ordinance 15 of 1876); so that the parties are the
+same.
+
+iJornhorst (Pciris with him) for respondents.
+
+The decrees cannot be set off. The decree obtained by
+Gregoris Silva is in his personal capacity, the one obtained
+against him is as administrator. The plaintiffs in 35,936 are not
+the defendants in 35,010.
+
+Cur. adv. vult.
+
+On February 28th following judgment agreed to by Withers
+and was delivered by
+
+Lawrie, j,— In this case 35,936 Missy Nona and her
+
+
+Digitized by VjOOQIC
+
+
+8o THE SUPREME COURT REPORTS. [Vol. 11.
+
+MissvNoNA husband Gregoris de Silva held a judgment against Bastian
+Jayesooria. Jayesooriya and Charles* Jayesooriya. In the case 35,010 Bas-
+tian Jayesooriya qua administrator of the intestate estate of
+Don Davit Dirasuriya holds a judgment against Gregoris de
+Silva, These decrees are not cross-decrees. Only one of the
+decree-holders in 35,936 is the judgment-debtor in 35,010. The
+illustration (b) of section 345 is exactly in point.
+
+It was argued that because the two judgment-creditors in
+35,936 are husband and wife, the decree must be con-
+sidered as one in favour of the husband only, that it is
+absolutely vested in the husband.
+
+It is true that any money recovered under the judgment
+would belong absolutely to the husband, but qua the debtor
+against whom judgment was obtained the wife was and is the
+judgment-creditor.
+
+Further, the judgment-creditor in 35,010 does not fill the
+same character in that action as he does in the action 35»936.
+In the former he is an administrator entitled to recover the
+assets of his intestate ; in the latter he individually is liable.
+(Explanation (a) of the same section 345 applies.)
+
+The order of the District Judge was in my opinion right
+
+• I am inclined to think that the appeal was premature.
+
+The learned District Judge rather expressed an opinion than
+
+pronounced judgment but no point i;vas made of that in appeal.
+
+Withers, j.— I agree.
+
+
+Digitized by VjOOQIC
+
+
+Aug. 29, *93.] THE SUPREME COURT REPORT 51
+
+Before Lawrie^ a. c. '. and Withers, j.
+June 30 and July 4, 1S93.
+
+DEEN i\ PULLE,
+
+[No. 160, D. C, Kegalla.]
+
+Jdi nor—Guardian ad litem^^ Claim to property seized in
+
+execution — Sections 247, 481 and 582 of the Civil
+
+Ptvcedure Code.
+
+A claim to property seized by the Fiscal in execution of a decree was
+Rtade. on behalf of a minor, by his uncle who, however, had not been appoin-
+ted his guardian. The claim was reported by the Fiscal to the Court, which
+after investigation, disallowed it.
+
+TTrW, that the minor was not a party to such investii^tion, and was not
+entitled to inttitute ao action under Section 347 oi the Civil Procedure Code,
+to have the seizure released.
+
+Semhle per Lawrie, a. c. J.—
+
+(i) Where the mother of a minor without being appointed his guardian
+od litem i\t% a plaint on behalf of the minor, and is afterwards appointed
+such guardian, the date of such appointment is the date of the institution of
+the case.
+
+(2) The order of a District Judge allowing a party to sue as guardian
+ud litem must disclose his Jurisdiction to make such order.
+
+The material facts appear in the judgement of Lawrie, a. c. j.
+
+Wendt for plain tiflf-appellant.
+
+Bawa {Senathiraja with him) for defendant-respondent.
+
+Cur. adv. vult.
+
+On July 4, the following judgments were delivered : —
+
+L.\WRiB A. c. J.— 'This case raises more than one question of
+interest in the law applicable to curators and to guardians
+ad litem and to next friends.
+
+Thoug'i the defendant who supports the judgment has
+not objected to this part of it, I take leave to say that the
+ruling of the District Judge that the action was brought within
+14 days of the rejection of claim is doubtful. This is an action
+at the instance of a minor by his guardian ad litem. The
+plaint was filed on 27th October but the appointment of the
+guardian was not allowed until the 2nd November. The mother
+of the minors confident of the success of the application she
+intended to make, gave a proxy and filed a libel as guardian,
+some days before she came before the District Judge to be
+clothed with authority. The date when she was appointed
+guardian ad litem ^ when ker plaint was accepted, when the
+
+B a
+
+Digitized by VjOOQIC
+
+
+Si THE SUPREME COfftT REPORtS. ^V'ol.
+
+
+11.
+
+
+Deen District Judge allowed summons to issue, seems to me to be the
+PiJLLE, date of the institution of the action, and, if so, it was out of
+time. The order of the learned District Judge allowing Jaya-
+nambu Umma to sue as guardian does not disclose his juris-
+diction.
+
+It was an order not made under section 481 and requires a
+petition by way of summary procedure and an affidavit. And
+even if it had been under section 481 it would seem as if the
+582 section prevents a next friend appointed under 481 from
+suing until he gets a certificate. Again the order of the District
+Judge was not one made under the ist part of section 582,
+because there it is enacted that no person shall be entitled to
+institute or defend any action connected with the estate for a
+minor until he has got a certificate of curatorsbip.
+
+But I presume that the District Judge allowed the appoint-
+ment under the latter part of section j8a, which enacts that on
+proof that the property is of less value than Rs. 1,000 or for
+any other sufficient reason any Court having jurisdiction may
+allow any relative of a minor to institute an action on his
+behalf although a certificate of curatorsbip has not been granted
+to such relative.
+
+But this order of the and November does not recite that
+on enquiry the District Judge found that the property was
+under Rs. 1,000 and that he had any other sufficient reason
+for making the order.
+
+Next, as to the merits of the case property belonging to a
+minor was seized in execution on a judgment against a stranger.
+The minor himself plainly had no status to claim or object.
+
+His uncle who had not been appointed his guardian by
+any Court and who was not his natural guardian, for his mother
+was alive, made a claim on his behalf and that claim was
+rejected.
+
+It is clear that an officious friend or any close relative
+acting as an amateur guardian cannot bind a minor. His
+success may benefit but his failure cannot harm him. Here
+the claim of the uncle was disallowed and fearing lest the
+order should be held to be conclusive against the minor, this
+action was instituted in his (the minor^s,) name. I affirm the
+judgment dismissing the action because the minor was not a
+
+
+Digitized by VjOOQIC
+
+
+Aug, 39, '93.] THE SUPREME COURT REPORTS, 83
+
+party to the claim proceedings. If he was not a party he was ^^^^
+
+not bound and concluded by, the order passed, and it is only Pulle,
+
+on the looting that he would have been concluded after 14 '
+
+days that the action is tenable, and as I hold that the minor
+
+would not have been bound, I hold that he had no cause
+
+of action against the defendants who are entitled to be relieved
+
+of an action brought by one whom they had frightened but
+not hurt.
+
+The action is dismissed. The costs of the defendant should
+be paid by the guaixlian.
+
+WiTHRs, J.— I agree with the decision of the Chief Justice
+dismissing the action with costs and ordering the guardian
+ad litem to pay those costs.
+
+The minor in whose behalf this action is instituted cannot
+be said to be the party against whom the order on the claim
+was made under the 244th section of the Civil Procedure Code,
+nor can the Court*s allowance of the institution of this action
+by the guardian ad litem or the application of the minor's
+mother to be appointed a guardian ad litem for the purpose
+of bringing this action be said to confirm the uncle's authority
+to make the claim on the child's behalf in the former
+proceedings, and thereby to constitute the child a party against
+whom the order referred to was made.
+
+
+Before LauTie, a. c. j., and Withers^ j.
+March 17 and 23, 1893.
+CORNELIS V. DE SILVA and another,
+[No. 54,611, D. C„ Galle.]
+
+Judgment hy default— Notice, want of— Setting aside Judgment--
+Defence — Claim in Reconvention,
+
+A judgment by defeiul*. having been set aside, the second defendant was
+allowed to defend the action en the j?rounds that he had no notice of the pro-
+ceedings and that he disclosed the substantial defence of payment.
+
+The second defendant pleaded payment and also made a claim in recon-
+vention for damages accrued since issue of summons in plaintiffs action by reason
+of alleged illegal acts done by the plaintiff.
+
+Jield^ that tho ^efeoce of payment and counterclaim coqld not U pleaded
+togttheri f *»
+
+• Digitized by Google
+
+
+84 THE SUPREME COURT REPORTS, [Vol. ii.
+
+CoRNELis This Thras an action on a mortgage bond. The action was
+
+De SiLfA, instituted In 1888 and judgment by default passed against the
+*■"" defendant on September 27, 1893.
+
+The second defendant, filed an affidavit setting forth that
+he had been absent from the Island and had had no notice of
+the proceedings and disclosing the substantial defence of pay-
+ment. He was allowed to defend the action, the judgment by
+default being set aside.
+
+The second defendant in his answer pleaded payment and
+aide madte a claim in reconvention for damages for alleged illegal
+acts done by the plaintiff.
+
+The District Judge gave judgment for the plaintiff but did
+liot adjudicate upon the claim in reconvention.
+The defendant appealed.
+Wendt for appellant,
+Dornhorst for respondent.
+
+Cur. adv. vult.
+
+On March 22, the following judgments were delivered: —
+
+Lawrie, j. — This action on a mortgage bond was instituted
+in i888. Judgment by default was entered on September 27,
+1889. Writs issued and property was sold.
+
+In 1892 the 2nd defendant filed an affidavit setting forth
+that he had been absent from the Island and had had no notice
+of the proceedings and he disclosed the substantial defence of
+payment.
+
+The judgment by default was set aside and the 2nd
+defendant was allowed to defend.
+
+In his answer he pleaded payment of the bond and he also
+made a claim in reconvention for damages for alleged illegal
+acts done by the plaintiff since the judgment by default.
+
+At the trial the defendant's proctor acknowledged that he
+had no evidence to prove the alleged payment. The defendant
+then led evidence in support of his claim in reconvention.
+
+The learned District Judge in giving judgment for the plaintiff
+says he does not decide the claim in reconvention. And no notice
+of that claim is made in the formal decree, though this is incon-
+sistent with an express finding in the earlier part ol the
+
+
+Digitized by
+
+
+Google
+
+
+Auf . 19, *93.] THB SUPRBMB COURT REPORTS. 85
+
+jddgment that the defendant hsbd not -ghewa hi^ rif(ht to damages. Cormelis
+
+If the plaintiff had appealed he might have succeeded in pg Silva.
+getting the claim in reconvention dismiasedi but as the plaintiff
+is content with the judgment in his favour it is not necessary to
+8a> more than that the District Judge exercised a sound dia-
+cretioa in refusing to give judgment in reconvention.
+
+The judgment is affirmed with costs as suggested by my
+brother Withers, j.
+
+WiTHBRS, J.— The defendant was by this Court considered to
+have purged his default and let in to defend the action on the
+mortgage bond.
+
+He has not only put in a defence but a claim in reconven-
+tion for damages accrued since issue of summons in plaintiffs
+action.
+
+This I consider he had no right to do. A case where a
+defence and counterclaim could not justly be separated is
+quite conceivable, as for instance where a creditor has received
+more money than is necessary to liquidate his claim, and
+withhold, the balance from the debtor.
+
+The circumstances of this case however are quite different.
+As a matter of fact the defendant had no defence whatever to
+make.
+
+I would affirm the judgment giving plaintiff, however, in the
+Court below no more than the costs incidental to his action. He
+should in my opinion have moved the Court to strike out of the
+defendant's answer so much as related to the claim in recon-
+vention.
+
+He will have his costs in appeal.
+
+
+Before Burnside^ c. j., WWiers and Lawrie^ j. j.
+
+January 24 and February 3, 1893.
+
+FRANCINA V. NICHOLAS and others.
+
+[No. 1,084, ^* ^'j Galle.]
+
+Fraudulent Conveyance — Deed held void in one suit^ Validity.
+
+A deed held to be fraudulent in a suit does not i^iio facto become
+void as against those who were no parties to the suit.
+
+This was an action in ejectment to recover from the defendants
+
+Digitized by VjOOQIC
+
+
+86 THE SUPREME COURT REPORTS. [Vol. ii.
+
+Francina a certain land caUed «*Punchywatte;' The plaintiff based her
+Nicholas, title to the land on a conveyance by the Fiscal dated October
+"""^ 27, x89i. The judgment in execution of which this property was
+•old was pronounced in June 18, 1868. Prior to this date viz. in
+1857 the execution-debtor had sold this garden to one Gunatilleke
+Mohandiram who in 1871 gave it to the first and second defendants
+the nephews of the execution-detor, who prevented the plaintiff
+from taking possession of the land under the Fisc^rs conveyance.
+
+The plaintiff impeached the conveyance of 1857 to Guna-
+tilleke Mohandiram as fraudulent and brought the present
+action to gain possession of the land.
+
+The District Judge held that that conveyance was not
+in fraud of creditors and dismissed the plaintiff's action.
+
+The plaintiff appealed.
+
+Dornhart for plaintiff-appellant. The deed of conveyance
+of 1857 is fraudulent. So it was held in a previous suit. The
+object of the execution debtor was to defraud his creditors.
+
+Seneviratne for first and second defendants. The deed
+cannot be fraudulent as regards this particular creditor for
+the debt on which this action was founded was not in exis-
+tence at the time of the conveyance to Gunatilleke Mohan-
+dirum. The mere fact that in a previous suit this deed of
+1857 was held invalid to pass certain property does not ipHo
+facto make it utterly null and void.
+
+Wendt for third defendant, lessee of the first and second
+defendants, rested his case on the grounds urged by Mr.
+Seneviratne.
+
+Dornhorst in reply. A deed once held to be void can
+have no effect whatever.
+
+Cur. adv. vult.
+
+BuRNSiDE, c. J. — This appeal should be dismissed. There
+is no room for the contention made at the bar that because
+the deed of 1857 was impeached in one suit, it therefore was
+void against the plaintiff, who was no party to that suit ; but
+apart from this it seems to me sufficiently proved that defen-
+dants had acquired a prescriptive possession by occupation,
+
+'Withers, j.-— This i§ ^n ^c^ipn ip ejectment to r^cgver
+
+
+Digitized by VjOOQIC
+
+
+Aug. 29, '93.J THE SUPREME COURT RE^OftTS. S^
+
+from the defendant with damages a certain land called **Punchy- Francina
+watte.** Nicholas.
+
+The plaintiff does not say she was placed by the Fiscal #
+in possession of the land at any time after purchase and,
+notwithstanding the usual claim put in by her to a prescriptive
+title, I take it that she herself has never had possession of
+the premises.
+
+Plaintiff has to prove that B. Don Carolis De Silva wasowne^
+of the premises at the date of the judicial sale which occured in
+January 1891. She leases the title to the premises on a conveyance
+by the Fiscal dated 27th October, 1891, she having bought them at
+a judicial sale in execution of a judgment against one B. Don
+Cornelis De Silva pronounced so far back as the i8th June,
+1868, in favor of the plaintifTs husband, who appears to have
+died in 1889 in which year the plaintiff was allowed to come
+in as execution creditor in the place of her husband deceased.
+
+B. Cornelis De Silva sold this garden in August 1857,
+to one Philip Wijesinghe Gunatillcke Mohandiram who in July
+1871 gave it to his nephews including the first two defendants.
+
+Between 1857 and 1871 in execution of a judgment against
+the said B. Cornelis De Silva a dwelling house was sold and
+bought by first defendant herein. This the parties according
+to the judge's note admit was included in the conveyance to
+Gunatilleke of August 1837, f^^m Cornelis De Silva, a sale
+that was impeached and set aside in July 1871 on the ground
+that the conveyance of 1837 ^^ ^^ fraud of the creditors of the
+vendor Cornelis De Silva.
+
+This house was not included in the deed of gift from
+Gunatileke to the first and second defendant.
+
+I do not see how the impeachment of that particular
+sale effects the premises in question. The parties to that
+suit were a judgment creditor of Cornelis De Silva, his
+vendee under the conveyance of 1857 the said Philip Gunatileekc
+and the ist defendant, whose title deed of July 1871, recites
+that impeached deed of 1857.
+
+If that had been a creditor's suit to have that conveyance
+set abide as a fraudulent one and the property declared
+available for the creditors of Cornelis De Silva^ who coul4
+
+
+Digitized by VjOOQIC
+
+
+88 THE SUPREME COIJRT REPORTS. [Vol. ii.
+
+Francina come in at any time and prove in bankruptcy, this might
+
+Nicholas, have availed the plaintiff whose husband was an execution-
+
+"""" ■ creditor of CorneUs De Silva, when that conveyance was
+
+impeached in a contest with the defendants who claim as
+
+assignees of Philip Gunatileeke.
+
+As it is the result of that isolated action by an individual
+creditor in his own interest it cannot enure to plaintiff.
+
+But I am quite content to affirm the judgment on the
+ground that the first and second defendants being some of
+the donees under the deed of 1877, have shown themselves en-
+titled to a decree of prescriptive title to the premises gained
+by them from that date.
+Affirmed with costs.
+Lawrie, j. I agree.
+
+
+Before BurnBide^ c. j., Lawn'e and Withers, j. j.
+
+January 24 and February 10, 1893.
+
+FERNANDO v. JAMEL and others.
+
+[No. 21,5, D, C, ChilAw.]
+
+Defective plaint — Fresh action — Period of prescription a fid
+limitation — Civil Procedure Code Sects. 247, 406, 407.
+
+On a plea of non-joinder an action underr Sect. 247 of the Civil Procedure
+Code was withdrawn and a fresh action brought.
+
+Held that Sect. 407 of the Civil Procedure Code upplted and that the
+plaintiff was bound by the period of limitation of fourteen da3'S as recited in
+Sect. 247 as if the first action had not been brought.
+
+The plaintift whose claim to property seized had been
+disallowed, brought an action against two defendants, viz., the
+3rd and 4th of the present suit to have the order in the
+claim case set aside. The defendants having pleaded non -join-
+der the District Judge under section 406 of the Civil Proce-
+dure Code allowed the plaintiff to withdraw that action and
+to bring a fresh one against the original defendants and five
+others. But the fresh action was not brought within fourteen
+days of the decree disallowing the claim as required by sec*
+tion 247 of the Civil Procedure Code.
+
+
+Digitized by VjOOQIC
+
+
+Sept. 13, 93.] TriE SUPREME COURT kEPORT. 89
+
+On objection taken by the ist, 2nd, 5th, 6th, 7th defendants Fern \xdo
+the Court dismissed the plaintiff's action. j ^Vl.
+
+The plaintiff appealed.
+
+Wendt for appellant.
+
+The original action having been brought within fourteen
+days and this, being as it were, a mere continuation of the
+former one, must be held to have been instituted within four-
+teen days.
+
+Dornlwret^ for respondents, referred to section 407 of the
+Civil Procedure Code, according to which section, when a fresh
+action is brought, the plaintiff is bound by the law of pre-
+scription and limitation as if the first action had not been
+brought.
+
+Cur. adv. vult.
+
+Od February 10, the folUowing judgment, agreed to by
+BuRNsiDE, c. J. sind Withes, j. was delivered by
+
+Lawrie, j. — Though the Court on October 8, 1891,
+allowed the plaintiff to amend the plaint, the real nature of
+the order was to allow him to withdraw that plaint and to
+substitute another. The District Judge could do so under
+section 406 of the Procedure Code if on the application of
+the plaintiff the Court was satisfied that the action must fail
+by reason of a formal defect, and what the District Judge
+then did was virtually to allow the plaintiff to withdraw the
+action against two original defendants with liberty to bring
+a fresh action against those and other five defendants for the
+subject-matter of the action.
+
+That the plaintiff and the Court regarded this as the true
+nature of the order is apparent from the fact that there was
+a fresh plaint filed on a new stamp, on which summons issued
+which were served on all the defendants, and that answer and
+replication are thereafter filed.
+
+Section 407 of the Procedure Code enacts that in any fresh
+action the plaintiff shall be bound by the law of prescription
+and Hmitation in the same manner as if the first action had
+not been brought.
+
+The judgment dismissing this action must therefore be affirmed
+with this variation, that the words **but he is at liberty to
+
+B la
+
+
+Digitized by VjOOQIC
+
+
+^6 THE SUi'kEME coukt kEPofets. [Vol. ii.
+
+Fernando bring another action in ejectment for the land" be deleted.
+Jamf.L. If these words are intended to give a right which the
+
+plaintiff would not have had without them, the order is ulftn
+vires of the Court, if the right is one which the^ plaintiff has
+independent of the reservation, the words are unnecessary.
+
+
+Bepoue LaivHey a c. j., Withers and Brotvne^ j. j.,
+
+August 11 and 15, 1893.
+
+WIJEYWARDANE v. MAITLAND.
+
+[No. 225 D. C, Ratnepura.]
+
+Claim in Execution — Seizu)^ of mortgaged property — Claimant's
+Lien— Civil Procedure Cod^y Sects., 282, 243, 246 and iS2.
+
+The Plaintiff, against whom an order under Section '244 had been passed,
+brought his action aa mortgagee of certain timbea-, without possession^ to have
+it declared that the said timber was not liable for seizure and sale under de-
+fendant's writ.
+
+It was argued on behalf of the plaintiff-'iippelUnt that, as mortgagee of the
+timber, he was entitled to his prayer. For the defendant itwas contended that
+no binding contract of mortgage over the timber was made out, but taking
+that as proved, it was further contended that the right under the contract was
+not a right that could defeat execution under defendant's writ.
+
+//eld, that it never was the law before the Civil Procedure Code that mort-
+(raged property could nat be sebed and sold under a writ of ^' /a for the
+levy of a money judgment, and that the law is still unaltered
+
+//tld also, that if a claimant has goods of the debtor under a right of Hen.
+the judgment-creditor mU4t first satis y the lieft btibrc he takes the property
+In execution.
+
+I/M, also that an unsuccessful claimant has no right, under the circums-
+tances, to bring an action under Section 24J.
+
+ObMrvations by Browni, j. on the current of authorities.
+Domliorst, {Morgan and Wcndt with him) for plaiatiflf
+appellant,
+
+Sampayo for defendant'respondent.
+
+Cur. adv. vult.
+
+On August 15, the following judgments were delivered
+Lawrie, a c. j.— I assume that the plaintiff holds a valid
+mortgage over the ebony.
+
+Following the decision of this Court reported in Rama-
+nathan, 1872, p. 23, I am of opinion that the mortgagee has no
+right to prevent a sale in execution on a judgment against
+the mortgagor.
+
+
+Digitized by VjOOQIC
+
+
+^t. 13, *93.i THE SUPRRMC COURT REPORTS. 9I
+
+I am humbly of opinion that the injunction in Whittaira Wijey.
+case ought not to have been granted (IV. S. C. C. p. 23 and ^z.
+
+Wendt p. 217.) MAIT1.AND.
+
+There is no provision in the Civil Procedure Code which
+gives a mortgagee right to prevent a sale in execution of the
+mortgagor's right, title and interest in the property mortgaged.
+In this matter no distinction is drawn between mortgages of
+moveable and mortgages of immoveable property.
+
+We cannot be influenced by considerations whether the
+mortgagee will have a preference on the proceeds of the sale*
+It may be that as the plaintiff holds no judgment on his
+mortgage the 23and section of the Code has taken away the right
+which the law» as expounded in the judgment in Wendt p. 217,
+IX. S. C. C, p. 109, allowed to him.
+
+I give no opinion whether the mortgagee could have obtained
+or could even now obtain an order under section 246,
+
+He has not asked that the seizure should be continued
+and the property sold subject to his mortgage : when such a
+motion is made the Court will consider it.
+
+I would set aside the judgment including the order that
+the seizure be released. The action must be dismissed with
+costs.
+
+Withers, j. — What is the right to the property in dispute "^
+claimed by the plaintiff in this action and what was the right
+claimed to the property when first seized, which was the sub-
+ject of the adverse order giving rise to the present action.-
+These are questions I find difficult to answer. No right is.
+specified in the plaint as the subject of determination in this
+action, and as to the right referred to the Fiscal and referred
+by him to the Courts we know no more about it than what is
+said in the 7th paragraph of the plaint in somewhat ambiguous
+language. I have no doubt that under the 247th section of
+the Civil Procedure Code a claimant or objector can only
+seek to establish in the action thereby permitted to him the
+very same right to the property under seizure as was the sub-
+ject of the adverse order within 14 days of which he bis C9{i)r
+f^^ \9 Ukc the KCti90 Rll9We4 MWf
+
+
+Digitized by VjOOQIC
+
+
+9^ THE SUPREME COURT REPORTS. [^ol. H
+
+WijKV- The case was argued as if the right claimed in this* action
+
+^., was the nght of a mortgagee of the timber without possession.
+Maiti and. By ihe other side it was contended that no binding contract of
+mortgage over the timber under seizure was made out by the
+plaintiff, but, taking that as proved, it was further contended
+that the right under the contract was not a right that could
+defeat execution under defendant's writ.
+
+What is meant by the words right to property in the
+947th section of the Civil Procedure Code ? For the meaning
+we must go to the 243rd section which declares that a claim-
+ant or objector must adduce evidence to show that at the
+date of seizure he had some interest in, or was possessed of
+the property seized. Now the plaintiff was clearly not in
+possession of the property seized. Was then his interest in
+it such as to defeat execution ? It surely never was the law
+before the Civil Procedure Code that mortgaged property
+could not be seized and sold under a writ of Ji fa for the
+levy of a money judgment.
+
+Has it been altered by the Code?
+
+It was contended before us, that it was, if not explicitly, at all
+events implicitly altered by the provisions of the 246th section
+of the Civil Procedure Code, in view more particularly of the
+decision of the Court, that a mortgagee cannot follow moveables
+which have passed to a third person under a valid title and
+that it is only a decree holder with a writ out for levy of
+an unsatisfied judgment who can claim concurrence in the
+proceeds of the levy under a third person*s writ.
+
+The 246th section enacts that if the Court is satisfied that
+tlie property is subject to a mortgage or lien in favour of
+some person not in possession and thinks fit to continue the
+sequestration or seizure, it may do so subject to such mort-
+gage or lien. From these words we are asked to draw the
+inference that a Court is bound to release mortgaged property
+rather than continue the seizure. I admit that the language
+fairly suggests that contention, but I cannot admit that a
+radical change in the law can be made giving a new and
+unheard of advantage to the conventional mortgagee of property,-
+
+
+Digitized by VjOOQIC
+
+
+V.
+
+Maitlavo.
+
+
+Sept. 13, *93.] THR SUPREMK COURT REPORTS. 93
+
+eMfiopt by express language or by language which cannot Wijbt*
+possibly adnut of any other coastnicbon.
+
+Having regard to the provisions of the two prior sectionsi
+344 and 345 what must guide the Court in considering
+whether it shall or shall not release property seized at the
+instance of an objector or claimant is the fact of possession
+at the « date of seizure.
+
+If property is in possession of the debtor himself as his,
+own or in a third party's possession on account ot the
+debtor the Court shall disallow the claim under section 245.
+
+If the property is not in the possession of the debtor
+or of some one for him as trustee, tenant, or other person
+paying rent to the debtor, or if the property is in the
+possession of the debtor but not on his own account or as
+his own property, but on account of or in trust for some
+other person or partly one and partly the other, for the
+reason stated in the claim or objection, a reason, that is
+"by way of some interest" in the property under seizure,
+then the Court shall rrfease the projierty from seizure in
+whole or in part as the case may be (section 344.)
+
+The claimant's interest in or possession of property must be
+surely such as takes the property out of a writ of fi fa. For
+example, it a claimant has goods of the debtor under a right
+of lien, the debtors interest cannot be seized or sold as long
+as the claimants right to keep possession of the goods re-
+mains. The judgment-creditor must first satisfy the lien be-,
+fore he takes the property in execution,
+
+I apprehend the section 246 to mean that in certain spe-
+cial circumstances, which must be considered when they arise,
+a Court may allow the seizure to remain subject to a mort-
+gage or lien in cases when the claimant is not in actual pos-
+session of the property, because he may not have lost his
+right to possession.
+
+I cannot bring myself to think that the Code authorises
+a Court to release property seized at the instance of a mort-
+gagee who has no right to have the goods mortgaged in his
+possession.
+
+
+Digitized by VjOOQIC
+
+
+94 THB SUPREME COURT RRPORTA. [Vol. U.
+
+WARDAMs. '^^^^ being my opitrioo^ it become ucuiecessary tocoDsidar
+
+^* the points argued as to ordinary mortgagee's remedies or the
+AiTLAND. q^^J|QJ, whether plaintiff had any mortgage right at all.
+
+As the removal of the seizure was a remedy conaaquent
+only on the plaintifTs establishment of a right to the proper«
+ty, which has failed, the learned Judge was wrong to direct the
+removal of the seizure and this part of his judgment must be
+expunged. With this modification I would affirm the judgment
+with costs.
+
+Brownb, j.^The current of authority in precedents as respects
+the right of a mortgagee to interfere in the sale of the mortgage
+by an unsecured creditor runs thus. After the decision in
+Ledward's case (i Moore P. C N. S. 386) that the mortgagee had
+prior right of payment out of proceeds, the Collective Court
+(Ramanathan 1872, 24) held that the mortgagee had no right to
+demand the stoppage of the sale by the execution creditor. Nine
+years thereafter Clarbncb j. sitting alone (4 S. C. €• 23) allowed
+an injunction to restrain the sale of coffee crop when asked to do
+so by a mortgagee to whom it had been also covenanted by the
+debtor that crops should be given to him to be cured and shipped;
+and in the next year (Wendt 217) Clarencb a. c. j« and Dias j.
+held that the order was right. It does not appear from the
+reports whether the judgment reported in Ramanathan (nt sup)
+was cited in argument, but no doubt the ruling was then made
+in cases in which there was, as I have said, something more than
+the mere hypothec granted by the mortgagor. In 1890 (g.S.C. C,
+III) Clarence j, while upholding the right of the mortgagee to the
+proceeds after sales, again held << the mortgagee has the right to
+prevent the goods from being sold away from him " though the
+goods having been already sold, the right was not then in question.
+The decisions in 9 S. C. C. 127 and i S. C. R. 213 were pronounced
+in cases in which the mortgagor had sold the moveable property
+before the mortgagee took any action, and leave untouched the
+question which on the argument seemingly now arises for
+decision.
+
+I agree with my brother Withers, however, that on the relief
+ftsHed b^ the plaint the questioi^ ({oes t\qt anse« The prajrer is
+
+
+Digitized by VjOOQIC
+
+
+Sept. 13, '93.] THE SUPREME COURT kfiPOktS.
+
+
+9S
+
+
+that the property be declared not liable for seizure and be released Wijev-
+from seizure, and I fail to see that plaintiff has made out any ^.^
+
+right in law to have the prayer granted. Had he prayed an MArrtAND.
+injunction restraining the sale, until, say, he could have a
+hypothecary decree entered in his favour so as to bring himself
+within the protection of section 35a Civil Procedure Code as
+interpreted in 9 S. C. C. 203, or had he for such or any other
+cogent feason, at the time of preferrii^g his tlaim^ moved the
+Court under section 246 to make in his favour the order thereby
+cootempUtedi it is possible that under the previous precedents
+of Clarbncb j's decisions, he would have succeeded therein,
+unless it should be held that section 232 protected a mortgagee
+without decree from the rigid rule of section 352,
+
+His right is to be paid and paid the first out of the pro-
+ceeds sale, and, as explained in the decisions in a measure, to
+control the time of sale till this can be done; but it does not destroy
+the right of the onsectired creditor to be paid out of the surplus
+ulei and to sel^e and sequester for that purpose.
+
+
+Before Withers j.
+
+August I and 7 1893.
+
+JONKLAAS, V. PERERA.
+
+[No. 4821 Add, P. C. Colombo.]
+
+Oamhif) — Ordinrthce No. 17 of 1889 Spf'ta. 7, 8 rtfid 10 — Crimhinl
+
+Ptvcedurp CttdeChap, V. — Inst ntmefilB for Oaming—
+
+Arrest of Arcufted — Presumption under
+
+the Ordinance,
+
+If Instruments for f^min^ are seized in a bouse, admittedly a private house,
+it is incumbent on the prosecution to prove that the bouse was a common gaming
+place.
+
+The discovery by the Police witnesses of instruments for gaminj^ inside the
+house, and the escape therefrom of persons seen therein do not constitute a
+presumption under the Gaming Ordinance. Such presumption can only arise when
+persons or instruments fur gaming are fotuid in a place visited by the Police
+Mapsim?e himself, under section 8 or by a Police Officer under a warrant in
+terms of Sect. 7.
+
+A Police Magistrate can visit a house or issue his warrant to a Police
+Officer only in the circumitaoccB mentioned in the 7tb and 8tb sections.
+
+
+Digitized by VjOOQIC
+
+
+96 tHE SUPREME COliRTREPORtS, ' [Vol. ii.
+
+JoNKLAAs Bamnnatluin, S.-O.^ for appellant.
+
+Pbrb'ka. SeneveraUie for respondent.
+
+Cur. adv. vult.
+
+On August 7, the foUowing judgment was delivered:—
+Withers, j. — The accused have been acquitted of an offence
+charged against them under the Gaming Otdinance, No. 17 of 1889.
+Mr. Solicitor-General appeals from that acquittal.
+
+The house in which certain instruments for gaming were
+seized and in which* the accused were arrested for unlawfully
+gaming there, being admittedly a private house, it was incumbent
+on the prosecution to prove that the house was a common gaming
+place. It was argued by Mr. Solicitor-General that reading
+the Ordinance, 17 of 1889, in connection with chapter V. of the
+Criininal Procedure Code, the discovery by the Police witnesses
+of instruments for gaming inside the house and the escape there-
+from of persons found and seen therein on the entry of those officers
+for_ the purpose of arresting any one betting or playing a game
+there for a stake constituted a presumption under the Gaming
+Ordinance, unless the contrary was proved, that the house
+was a common gaming place and that the persons found in it were
+guilty of unlawful gaming.
+
+Having had frequent occasion to read and interpret tills
+Ordinance I entertain no doubt that such presumption can only
+arise ^hen persons or instruments for gaming are found in a place
+visited by the Police Magistrate himself under the provisions of
+section 8 of the Gaming Ordinance or by a Police officer (or
+other person named therein) under a warrant issued by a Police
+Magistrate under the provisions of the section 7 of that Ordinance.
+
+As I read the Ordinance, it was the intention of the legislature
+that the Police Magistrate should visit a private house under the
+Gaming Ordinance or issue his warrant to a Police Officer or other
+person to visit and search a private house only in the circiun-
+stance mentioned in the 7 and 8 sections of that Ordinance res-
+pectively, he himself being entitled to visit it in the cases stated
+under the 8th as well as under the 7th section. For these reasons
+I think that the judgment of acquittal in this case is a right one«
+
+Affirmed.
+
+
+Digitized by VjOOQIC
+
+
+Sept. 20, '93.J THE SUPREME COURT REPORT. ^
+
+Before Withers j.
+August 24 and 31, 1893.
+
+MA^AR i\ KIRITHATKANDU and another.
+
+[No. 873 C. R, Trincomalie.]
+
+SefTttude — OverJianging brandies. Co-owners — Injunction —
+
+Damages,
+
+An owner of a land over which a tree overhangs has the right 10 a decree
+ordering such tree to be cut down, although such owner be tenant in common
+with defendants of the land supporting the tree.
+
+Semhir. per WiTHFRj;. j. — The joint owner of an overhanging tree has n«
+right to cut it down himself except with the consent of his co-owners.
+
+Sampayo for Defendants-Appellants.
+
+Seneveraine for Plaintiff-Respondent.
+
+Cur. adv. vult.
+On August 31, the following judgment was delivered by
+Withers, j. — The servitude of an overhanging palmyra-
+tree shedding its leaves and dropping its fruits on the ad-
+joining landowner's bakery has not teen proved, if indeed an
+easement of the kind could be acquired by prescription.
+
+The difficulty in the case is caused by the fact that the
+owner of the land with the injured bakery on it is also co-
+owner with the defendants of the soil on which the over-
+hanging palmyra tree stands. He, therefore, is as much to
+blame for the nuisance as the other co-owners are.
+
+I do not decide, however, that he could not under any
+circumstances have recovered indemnity' trcm his co-owners,
+for the injury sustained to his bakery, as the law that one
+wrong doer cannot sue another wrong doer for contribution or
+indemnity seems to apply to cases of wrong in the ordinary
+sense of the word or culpable negligence.
+
+The plaintiflf has suffered this state of things to continue
+too long when he might have had earlier recourse to the
+remedy >\hich the Commissioner has afforded him and which
+I confirm, the order I mean requiring the defendants to cut
+down the overhanging tree, to entitle him to damages by way
+of indemnity.
+
+B '3
+
+
+Digitized by VjOOQIC
+
+
+98
+
+
+THE iiUPkEME COURT REi'ORTS,
+
+
+[Vol. ii.
+
+
+Malar
+
+KlRITHAT-
+KANDU.
+
+
+As tenant-in-common with defendants of the land support-
+ing the palmyra tree, I take it that it was not in his power
+to cut down the tree without the consent of his co-owners,
+unless in exceptional circumstances which are not present
+here.
+
+It would have been an act of destructive waste quite out-
+side the course of good husbandry which his co-owners might
+have applied to the court to prevent by injunction.
+
+In confirming the order on the defendants to cut down
+the tree I intend to follow the principles of the case decided
+by Clarence J. and reported in i S. C. C. p. 103.
+
+Mr. Seneviratne argued that defendants were responsible
+for the damages, as they were the exclusive owners of this
+particular tree.
+
+There would have been an additional difficulty in the
+case if this fact had been proved, but I do not find it even
+so alleged in the plaint.
+
+Vary the Commissioners' decree by striking out that part
+of it which orders the defendants to pay the plaintiff damages
+and costs. *
+
+As both sides have partially succeeded each will bear his
+own costs.
+
+
+Before Laivrie a. c. j, Withers and Broun j. j.
+
+August 29 and September i, 1893.
+
+KATTE KECHU and another i\ NARANY and others.
+[No. 1,015 C, R. Kayts.]
+
+The ''TfiemwafaHir'' — Cimtrdct of Purchase and Sale—Cuislofn—
+Fo rmalit ies — Publiai ft on and Uduya r\s Schedu Ic —
+Pre-emption — Pleadings — Transfer in
+fraud of Creditor.
+
+Publication and Udayars' Schedules are not requisites essential to the
+validity of a contract for the purchass or sale of Land in the Province of
+Jaffna.
+
+lldd that these formalities were designed to protect the right of third
+parties to pre-emption.
+
+Held also, that where Plaintiff had not in his plaint questioned the valid-
+ity of the^ form of execution of a deed^ it was not necessjtry for defendant to
+prop up by averment each detail of due execution.
+
+No. ig.377 and 20,562 D. C. Jaffna, IX S. C. C. p. 67 observed upon.
+
+
+Digitized by VjOOQIC
+
+
+Sept. 20, *93.] THE SUPREME COURT REPORTS.
+
+
+99
+
+
+On August 8, 1892, I St defendant and his son 2nd de-
+fendant unlawfully took possession of a land belonging to 2nd
+plaintiff, whereupon plaintiffs four days thereafter, on the 12th
+of August, instituted against them the action 768. C,R. Kayts.
+On the 13th August, ist defendant executed in favor of his
+daughter-in-law, the 3rd defendant, wife of 2nd defendant, a
+transfer of his only land and when plaintiffs recovered judg-
+ment against first defendant and sought to execute their wnrit
+the 3rd defendant claimed under her conveyance.
+
+The plaintiffs brought the present action to have this
+transfer by the 1st defendant in favor of the 3rd defendant
+''cancelled and set aside as fraudulant and illegar' as the same
+was executed without consideration and in fraud of the plain-
+tiffs' creditors. The defendants contended that the transfer was
+not fraudulent, but wrs bofia Jide Sind tot good consideration.
+
+At the trial, the ist defendant, who was called as a wit-
+ness for the plaintiff, proved the consideration, but admitted
+that the deed was executed without publication and Udayars*
+schedule, and the Commissioner, upon the plaintiff*s counsel's
+motion, declared the deed invalid, holding he was not bound by the
+decision in IX, S.C.C, p. 67, as it was not a decision of the
+Collective Court, and that the said decision was at variance with
+previous decisions of the same Court, and declared the land
+to be the property of the ist defendant.
+
+The plaintiff appealed.
+
+The following cases and ordinances were cited or referred to
+in the course of the argument: — Nos. 19377 ^^^ 20562, D.C. Jaffna,
+IX, S. C. C, p. 67, No. 329, C. R. Chavakachcheri, III Lorenz
+p. 28— Vanderstraaten*s Reports p. 94 — Muttukistna's «Thcsa-
+walame" 27th Section, No. 12,869 I^-C. Jaffna, Ramanathan 1864,
+p. 93, No. 2,599, D. C. Jaffna, Ramanathan 1849-166, Procla-
+mation No. 18 of 1806, Ordinance No. i, of 1842.
+
+Sampayo for 2nd and 3rd Defendants-Appellants.
+Ramanathan^ S. G, {Wendt with him) for Plaintiff-
+Respondents.
+
+Cur. adv. vult.
+On September i, the following judgments were delivered by
+Lawrie, a, c, j. — I agree that the judgment must be set
+
+
+Kalle
+Kechu
+
+V,
+
+Naranv.
+
+
+Digitized by VjOOQIC
+
+
+too
+
+
+THE 8UPRBMB COURT RBPOHTS.
+
+
+[Vol. «.
+
+
+Katte
+
+KiCHU
+
+V,
+
+Nakany.
+
+
+aside and that the case must be sent back for trial on the
+issue whether the transfer to the 3rd defendant was executed
+in fraud of the plaintiff creditor. In trying that issue it may
+be a relevant fact that the transfer was not preceded by the
+publication which usually attends transfers of land in the Jaffna
+Peninsula and the Islands.
+
+The judgment reported in IX. S. C. C. p. 67, deserves
+re-consideration. I venture to think that Mr. Justice Clarence
+was in error in fact when he said that the formalities were
+obsolete. I believe that they are not obsolete ; neither do I
+agree with Mr. Justice Dias when he said that the rule
+must be taken to have been dispensed with, after the sta-
+tute of frauds came into operation. It. was in full force Ibng
+after 1840. I approve of the law laid down in a case not
+cited to us at the argument, a case decided by the Collective
+Court (Rowe, C. J. Sterling and Temple j. j.) on 29th May, 1858,
+reported in III Lorenz p. 28, where it was held that the
+want of publication did not ipao facto render a deed of trans-
+fer invalid, and that the right totaketheobjectionwaslimited to those
+for whose protection the provision was made. Here even if the
+proclamation had been made the present plaintiff would have
+had no status to object to the sale.
+
+1 shall be ready to re-consider the dicta in the case reported
+in the 9th volume of the Circular w^hen the objection is taken
+by one who proves that his interests have been prejudiced by
+the omission of this time-honoured, and, I dare say, useful custom.
+
+Withers, j.— We have been asked to reconsider the
+judgment pronounced in 1890 by Clarence and Dias j. j. which
+declared that publication and Udayar's schedules are not essen-
+tial to the contract of a purchase and sale in the Jaffna Province.
+
+How the question has come before us has been stated
+by my brother Browne, arid I need not go over the same ground.
+
+It certainly occurred to me during the argument that
+we were not in a position to determine the point in this
+case inasmuch as it is not alleged as a part of plaintiffs
+cause of action that the deed under which the defendant claira-
+
+
+Digitized by VjOOQIC
+
+
+Sept. ao, '93.] THE SUPREME COURT RE10RT8. lOl
+
+ed the property, seized in execution at pldintifi*t instance, was Kallr
+
+invalid on the ground that the custom of the country which ^^
+
+required publication and schedule had not been complied with Nasan?,
+as a condition precedent to a contract of purchase and sale.
+
+If, however, it is a fact that such a custom is the law
+of the land laid down by this Court in decisions previous
+to the one we are invited now to reconsider, I am not sure
+that it was not open to the plaintiff on eliciting an admis.
+sion from the defendant, that the execution debtor had not
+complied with that custom before executing the transfer in
+his favour, to move the Court for judgment declaring the
+sale to be void and as a necessary consequence the property
+of the execution-debtor leviable under his (plaintift's) judgment,
+
+1 am therefore prepared to state my opinion as to the
+law on the subject*
+
+There are no doubt to be found decisions in the books
+implying that the formality of publication and schedule is
+necessary to constitute a valid transfer of property in ihe
+jafina Province, not that there is a uniform current of decisions
+to that effect. The most direct decision on this point of
+modem times was pronounced by this Court in 1870 and is
+reported in Vanderstraaten's Reports p. 94. The decision is a
+very short one and may be said to be comprised in tlie fol-
+lowing words *' according to the general Jaffna law publication
+and schedule are necessary to the valid sale of land.'* Little
+would be gained by going through all the decisions which 1
+have come across on the subject apriaiim.
+
+All that I think it necessary to say, as regards them, is
+that I cannot understand from ihem why such law was pro-
+nounced to be the law at any time.
+
+The learned Commissioner and Mr. Solicitor relied very
+much on the 27th of the 72 orders to be found in Muthu-
+kistna's ** Thesawalame '* which are said to have l>een published
+at different times by the Dutch authorities.
+
+That order declares that the inhabitants of the Jaffna Pro-
+\'ince shall not sell or Otty land without procuring publication
+thereof three weeks in the church nearest the land previous
+
+
+Digitized by VjOOQIC
+
+
+102
+
+
+THE SUPREME COURT REPORTS.
+
+
+[Vol. ii.
+
+
+Katte
+Kechu
+
+V,
+
+.Naranv.
+
+
+to the sale and prescribes a fine for the violation of the in-
+junctions contained in the order. But the provisions of those
+72 orders never had the force of law given to them by any
+Regulation or Ordinance.
+
+Regulation i8 of 1806 did give the force of law to the
+country customs of the Malabar inhabitants of the Jaffna Pro-
+vince collected by Claaz Isaaksy and approved of by Governor
+Simons.
+
+Those customs in an English translation are to bo found
+in the first XXXIV pages of Mutthukistna's Thesawalame.
+
+The custom relating to the purchase and sale of land is
+described in the ist paragraph of the 27th section of that
+collection of country customs.
+
+The custom described in that section and preserved by
+the regulation referred to is the requirement of a certain
+mode of publication by a vendor of his intention to sell
+land to a stranger in the interest of his (the vendors) heir,
+and partner, or that of the adjoining landowner, who holds
+a mortgage security over the land, to preserve their right
+of pre-emption. That is not the same thing as a custom
+which makes publication and schedule incidents so necessary
+to the transfer of land, that a transfer without them is void
+as being contrary to the law. Giving my best consideration
+to the matter, I am of opinion that we should declare the
+law of the Jaffna province to be that publication and
+Udayar*s schedule are not requisites essential to the validity
+of a contract for the purchase and sale of land.
+
+I am not disposed to go so far as to say that the due
+publication of the intention of a vendor to sell his lands to
+a stranger is not necessary to defeat the rights of parties
+who have the privilege of pre-emption.
+
+I am quite open to consider the question of a customar)-
+right of pre-emption in certain classes of persons, when the
+occasion shall arise.
+
+In the result I am for setting aside the judgment, and
+remitting the case for trial in due course on the issues
+raised in the pleadings. The appellant will have his costs
+in appeal,
+
+
+Digitized by VjOOQIC
+
+
+Sept. 20, '93.J THE SUPREME COURT REPORTS. lO^
+
+Browne, j. — This appeal has come before the Collective ^ Katte
+
+. Kechit
+
+Court upon the request of the Solicitor General, inasmuch ^,^
+
+as he desired to raise for re-consideration the question Naranv,
+
+decided by Clarence and Dias j. j, in 19,377 2i°d 20,562 .
+
+D. C. Jaffna IX. S. C. C. 67.
+
+The facts of the present case are averred in the plaint to be
+as follows : —
+
+On the 8th August 1892 ist defendant and his son 2nd
+defendant unlawfully took possession of a land belonging to
+2nd plaintiff, whereupon the plaintiffs 4 days thereafter, on
+the 12th August, instituted against them the action 768 C. R.
+Kayts. On the 13th August ist defendant executed in
+favour of his daughter-in-law 3rd defendant, wife of 2nd
+defendant, a transfer of his only land, and when plaintiffs
+recovered judgment against ist defendant and sought to
+execute their writ, 3rd defendant claimed under her conveyance
+that land when seized.
+
+The plaintiffs have accordingly instituted the present
+action to have the transfer to 3rd defendant by ist defendant
+"cancelled and set aside as fraudulent and illegal/ and the
+defendants in their answer maintain that the transfer was
+not fraudulent, but Vi,'as bona /ide and for good consideration.
+
+In support of his case plaintiff called and examined as
+his witness the ist defendant who proved he had received considera-
+tion for his transfer, but at the end of his examination was
+asked without objection and deposed to the fact that the deed
+was executed without* an Udayar's schedule from the Udayar
+of the village, certifying that he had caused publication in
+the village of ist defendant's intention to sell the land.
+
+Plaintiff himself then gave his testimony, in which he
+stated he was prepared to prove that there had not been any
+consideration for the execution of the deed.
+
+But before any further evidence was adduced plaintiff's
+Counsel moved the Court to hold the deed to 3rd defendant
+invalid, to set aside 3rd defendant's claim founded thereon, on
+the ground that it was executed without such a schedule,
+and to declare the land the property of the 1st defendant, Counsel
+
+
+Digitized by VjOOQIC
+
+
+104
+
+
+THE SUPREME COURT REPORTS.
+
+
+[Vol, ii.
+
+
+Katte
+Kkchu
+
+V.
+Xaranv.
+
+
+for 2nd and 3rd defendants while admitting that no such
+schedule had been granted, relied on the above-mentioned
+decision of this Court in IX. S. C .C, 67, and the Commissioner
+held the deed invalid and declared the land to be the proper-
+ty of the I St defendant, holding that the decision cited was at
+variance with previous decisions of this Court, and that not
+being a decision of the Collective Court, it was open to him
+to decide as he did.
+
+I consider first of all that the summary way of deciding
+this htigation was entirely irregular and that this judgment
+cannot stand. Plaintiff instituted his action on the basis that
+the deed was regularly executed, but was so executed in fraud
+of himself a creditor, and this was the only issue— fraud or
+not — which on the pleadings the Court had to try. Had
+plaintiff desired to rely on the informality of the execution of
+the deed, and that 3rd defendant was never thereby entitled
+to the land, he should have so averred. Mr. Solicitor in argu-
+ment contended that the answer was bad in that the 3rd defend-
+ant or all of them did not allege in support of the validity
+of the deed that publication had been made and schedule ob-
+tained, but when the plaintifl had not questioned the validity
+of the form of its execution it was surely unnecessary for the
+defendants to prop up by averment of each detail of due
+execution what was by plaintiff left standing square and firm.
+Secondly, even if disregarding the decision in IX. S. C. C.
+we consider the arguments of Mr Solicitor, I consider that as
+indicated on the question respecting tbe future sale of land
+in 12,869 -District Court, Jaffna Ramanathan 1864, 93 and also
+in the case cited by my Lord the Chief Justice, plaintiffs have
+not shown that it was open to them to raise the objection
+that there had been no publication nor schedule which were
+designed to protect the right of 3rd parties to pre-emption.
+As between the 1st and 3rd defendants here, the contracting
+parties, the transaction was no doubt valid and binding, and
+if it could be disturbed at all, it could only be by someone
+whose right as of pre-emption &c., existing at the date of tbe
+transaction, had been prejudiced by the omission of the cus-
+tomary procedure* Plaintifl had not then $ny such right, because
+
+
+Digitized by VjOOQIC
+
+
+Oct. J, 93.] THE SUPREME COURT llEPORtS,
+
+OB the day previous to the sale he had instituted an action ithich
+resulted in his getting Rs. I-25 dsimiiges and costs.
+
+Thirdly the proof and admissiop in the case extends not
+further than that Udayar^s schednled were not grants. I find
+DO express proof or admission that due publication • was not
+made, and it has been pointe J out by Oliphamt, c. j. in 2,596
+District Court Jaffna Ramanathan 1849 166 that section 27 of the
+Thesawalame makes no mention at all of any requirement for
+such schedule, and that Ordinance i of 1842 only enacts that
+when they are desired, there shall be be no delay or extortion
+iu the matter of their grant. The necessity for a schedule
+therefore did not become law by the Proclamation 18 of 1806.
+
+I agree, however, that in view of the recognition an i
+pronouncement by this Court for over 60 years after 1806
+that both proclamation and schedule are, at all- events in such
+cases as where a right of pre-emption may be aftected, neces-
+sary legal preliminaries for a sale of land in the Jaffiia
+province, the decision in IX. S. C. C. will be deserving of
+recbnsideration when occasion shall arise. I know not on what
+proof it was there held that this procedure was obsolete, or
+indeed how what is law could become obsolete in less than 20
+years (so far as our published reports show — possibly much less
+so far as regards lictnal decisions,) since this Court last recog*
+nised it to be law. But this may be shewn when next the
+question shall arise.
+
+
+toS
+
+
+Kattk
+Kecuu
+
+V.
+
+5Iaranv.
+
+
+Before Lawrie a. c, j. Withers and Browne j. j.
+August 18 and 29, 1893.
+
+PULLE r. PULLE and others.
+
+[No. 559, D. C. Negombo.j
+
+Deceased debtor — Heirs in jtosHessioH — KxenttorH de son fort.
+
+
+Where on the death of the debtor, the next of kin enter into possession
+s estate j ' '
+he debts
+
+B 14
+
+
+of his estate and by tctive steps take the benefit therefrom, they become liable
+(or the debts of the deceased to the extent of the benefit.
+
+
+Digitized by VjOOQIC
+
+
+io6 THE SUPREME COURt REPORtS. [Vol, il.
+
+Pi'lXE Per Browne. J. — An heir is liable to the extent of the property of the
+
+V, deceased which has come into bis possession, and a decree cpuld be entered
+
+PuLLE. against the estate of deceased.
+
+Wendt for appellant.
+
+De Saram for respondent.
+
+Cur. adv. vult.
+
+On August 29th the following judgments were delivered.—
+
+Browne, j. — I regret I cannot agree in dismissing . plain-
+tiff's action. Plaintiff sues to recover Rs. 284 as due to him
+on a notarially attested Tamil written document stamped with
+a 50 cents stamp, which the plaint calls a bond. A question
+having been raised in argument as to whether this is a bond
+or the amount is otherwise now irrecoverable, I hold, in the
+light of the decision reported in Wendt 296, and I. C. L. R. 40,
+that the instrument falls within the class specified in Section 6 of
+Ordinance 22 of 1871, and that the action has been instituted
+within time.
+
+Plaintiff avers his obligor died about five years before action
+brought without paying this debt and leit '*as heirs in possession
+of his estate and effects which do not exceed Rs. 400/' two
+persons, Salome the wife of ist defendant, and 2nd defendant
+who ha<i married one Juliana, who pre-deceased the debtor,
+leaving her surviving her children Inacia and Lucia, the 3rd
+set of defendants minors sued by their father 2nd defendant as
+their guardian ad litem.
+
+Plaintiff does not set out the relationship of these defendants
+to his debtor, but in his evidence he deposes that ist defendant
+is son-in-la»v of the debtor, wherefrom it may be assumed to be
+possible that Salome and Juliana were daughters of the debtor.
+No doubt the heirship should have been more clearly particularized,
+but inasmuch as the defendants have not denied they are heirs
+and the usual form of decree in these cases affects only the
+debtor's property and not the defendants, personally, save so
+far as they have profited thereby, the plaintiff should not, in my
+opinion, fail thereby to obtain his decree.
+
+Plaintiff further particularizes the lands to have been the
+property of liis debtor, and says that all the defendants are in
+possession of them— that 2nd defendant has been appointed
+
+
+Digitized by VjOOQIC
+
+
+Oot. 3. '93.]
+
+
+THB SUPREME COURT REPORTS.
+
+
+107
+
+
+guardian ad litem over his minor children, and that the amount Pulle
+due to him on this bond is only Rs. 284. Pulle.
+
+Defendants filed an answer, that, in my judgment, discloses no
+defence whatever to plaintiff's claim. They do not meet plaintifl's
+averments, but deny the debtor "executed any bond** or died
+"possessed of any property of which they are now in possession
+as his heirs and legal representatives,'* and finally they aver
+that before his death the debtor "gifted all his lands to the
+defendants by deeds, and, therefore, they are not liable for his
+unsecured debts." To me this very admission, in so far as it
+negatives the existence of other property out of which the debt
+could be paid, confirms plaintiff's averments, and assists to
+show his right to maintain this action.
+
+For, is not the question this? What is a creditor of a petty
+Rs. 250 debt like this to do when his debtor dies leaving Rs. 400
+worth of property, and no more, and some persons, who may be
+his children, sons-in-law, or grand children, but are not denied
+to be his heirs, are in possession thereof ? We may excise from
+the judgment of this Court, reported in VIII S. C. C. 14, all
+that was there ruled as to necessity for administration, for since
+the passing of our Civil Procedure Code it would be even less
+necessary that this creditor should administer a Rs. 400 estate
+to recover Rs. 250 than that a mortgagee creditor should do so,
+and the latter in a case of this kind would be so excused under
+the provisions of section 642. There will remain then .(he
+other portions of that decision which point out that an
+heir is liable to the extent of the property of the deceased which
+has come into his possession if it be proved what is here
+admitted, that the deceased died possessed of property, and that
+the property came into the possession of and was appropriated by
+the heir. I regard this case with such an ineffective answer as
+has been filed, as similar to 571840 District Court Colombo,
+Vanderstraten 158, and thaf decree should be entered against all
+who are in possession in the same form as was entered in 5»8o5
+District Court Kegalla VII S. C. C. 180, and 52.983 District
+Court Galle Supreme Court Min. 4th March 1887 (save the
+last sentence thereinj. A minor is, I humbly conceive, as
+
+Digitized by VjOOQIC
+
+
+I08 THE SUPRKMR COURT REPORTS. [Vol. li.
+
+PuLLE - capable of receiving benefit in his everyday life out of a
+PrtLLE. ^ fr^^^^o^s estate as is an adult) though, of course, in a lesser
+dfigrdo, proportionate to his younger years, and ic needs only
+that he should be d^ly represented in order th^t the creditor should
+by appoixltment of a guardian ad lit^m of any minor heirs obtain
+a valid decree, which will ifeach the debtor's assets in his or his
+guardiaB*s hands.
+
+Another questioii, houwver, might hare arise, if defendants
+should properly plead that which plaintiff in VI. S. C. C. 13
+admitted agamst himself, that they are oot only h6irs of the debtor
+but are donees from him of the lands of which they are admittedly
+in possession. No doubt had plaintift been aware of those deeds
+he should have set thein out in his plaint and challenged their
+efficacy to protect the donees on such grounds as he might
+advance, or had defendants disclosed and pleaded them with
+precision in their answer he might have replied thereto so as to
+r^ise the issue which Dias, J, in the decision under reference held,
+had not these been duly raised. As the pleadings now stand,
+I do not see that it would be open tc defendants to lead proof
+of what they have not duly and fully pleaded.
+
+While I would set aside this decree, holding that there had
+been suffieient proof of the debt and that decree could be
+entered *<aigainst the estate of the deceased' X57i^40 l^-C. Colombo,
+nt supra) i.e,^ in the later form to which I have referred, I would give
+liberty to defendants to amend the 3rd paragraph of their answer
+on the usual terms within a specified time and the case to
+proceed to trial thereon, or else that judgment l^e entered against
+the deleiidsnts for the amount claimed, 8|ich judgment to be
+elrfcvceable if necessary by levy on tlie property ef the deceased
+Susey Ftraando Vengadashi, in the hands of the defendantSg or
+any of thmm, but not otherwise.
+
+Lawkie, a. c. j. This action is instituted against 5 persons
+as **heirs in possession" of the estate of a deceased debtor
+of the plaiiitiflF, It is plain from the averments, and from the
+evidence, that out of the five defendants, two — the two men
+(husbands of Saldtoe and Juliana)— ar^ not heirs or next ef
+kin of the deceased. WiiateVer be their liabilities it is not as
+
+
+Digitized by VjOOQIC
+
+
+Oct. 3, 93.] THE SUPREME COURT REPORTS. IO9
+
+heirs in posscf saoo. Of the remamiBg thr«e« two ara stated to Pixle
+be minors, it is not averred in the pUint, nor was it proved piille.
+at the trial, that these minora by «ny act of theirs had entered —
+on the inheritance. I do not say that a minor by his duly
+appointed guardian, or even a minor himself when he reached
+years of comparative understanding, may not enter on and
+take possession of land or goods which belonged to a deceased
+ancestor, but I say, that the plaintififin this case has neither
+averred nor proved any acts of the minors or by a guardi.ia
+which, in law, would make them liable fjr the debts of the
+deceased relative.
+
+The rem^^ining defendant is Salome. What relative she
+is to the deceast:d the plaintiff does not take the trouble to
+tell us in his plaint nor does he aver what is the name or
+value of the lands Salome is in possession oft.
+
+In affirming the judgment, mainly for the reasons given
+by the learned District Judge, I do not feel that I am abridging
+the rights of creditors of small sums whose debtors die
+before payment. Now, as always, the law is, that the mere
+fact of relationship, of being th6 next ot kin. the son, the
+guardian, nephew, cousin or father, or uncle, of one who dies,
+will not make men liable for their relations' debts. They were
+not liable when the debtor was alive ; they are not liable
+when he is dead ; but if, by the death one gr more of the
+next of kin is entitled to benefit, and by active steps takes
+the benefit, he becomes liable to the extent of the benefit,
+cither as an erecnfor de $on tort or as an heir, who has
+entered on the inheritance. But, to make minors liable tor
+the relations* debts, the creditor must aver and prove some-
+thing more than relationship, and even something more than
+presumed benefit, he must prove acts of possessbn and
+enjoyment of the deceased's property sufficient to render even
+mincnrs liable.
+
+Again (as from the pleadings and pro^ seems to be the
+caee here) if the deceased debtor before his death dispose
+inter vivos of all his estate by deeds of gift, the question
+whether Ihe donees are by virtue of their taking benefit under
+their deeds liable for the donor's dehtl, will depend ovk the
+
+Digitized by VjOOQIC
+
+
+no THE SUPREME COURT REPORTS. [Vol. ii.
+
+PuLLE date of the contracting of the debt as compared with the
+P.JLLE ^*^® ^ ^^ ^^^^» ^^ ^^^^ further be complicated by consideration
+
+as to the amount of property which the deceased then had
+
+and how he dealt with it. The plaint of an action directed
+against donees should fairly raise the issue of liability, but
+here the plaintiff has avoided it by ignoring the deeds of
+gift altogether.
+
+The burden of proving that these defendants are liable
+on a contract to which they were strangers lay on the
+plaintiff. In my opinion, he failed, and his action was properly
+dismissed.
+
+Withers j. — I agree in affirming the judgment. I do
+not see how the minors can h>e made accountable for this
+debt, either in their own persons or to the extent of assets,
+if any, VIrhich have come into their hands.
+
+
+Before Lawrie a. c j., Withers and Brotr/ie j. j.
+
+August 15th and 25th, 1803.
+
+CHETTY V. ETANA and others.
+
+No. 472, D. C, Chilaw.
+
+Adiating an inheHtance — Widmr and children of d^reaj^ed
+
+drbfor — E.recutor de son tort — Liahility of heir-^.
+
+Observations on the atleganda tt froha^tJa necessary to render an heir
+in possession of the deceased's estate liable for the deceased*s debts and the
+extent of such liability.
+
+D. r. Kandy, 90, 200, IV. S. C. C, followed.
+Wendt for appellant. No appearance for respondent.
+
+Cur. adv. vult.
+On August 25th, the following judgments were delivered. —
+
+Lawrie a. c. j. — The plaintiff, averring that he holds a
+writing obligatory granted to him by the deceased Vidane
+Appu and that the debt Rs. 1,250 is still due, sues the
+widow and the minor children of the deceased debtor, and
+prays for judgment against them on the ground that they
+have **adiated the inheritance." As against the minors this is
+plainly not a cause of action*
+
+Digitized by VjOOQIC
+
+
+Oct. 3»*930 "rME SUPREME COURT REt»ORTS. Ill
+
+I do not think it is possible for several minors to "adiate Chetty
+ao inheritance." It is perhaps not very certain what is the exana
+meaning oi the expression ''adiating an inheritance ;" but at best —
+it must be some act or series of acts by a person of full
+age and contracting powers ; no act by minors would be such
+an adiation of an inheritance, as to render them after the do-
+ing of the act liable for debts which but for the act they
+would not have been responsible for. This at least I feel
+certain of, that a general averment of adiation is not sufficient;
+the specific acts the doing of which render the minors liable
+must be clearly set forth.
+
+With regard to the ist defendant (the widow) if she being
+of full age and legal capacity without taking letters of adminis-
+tration, had taken possession of the whole of her husband's
+estate, she may have rendered herself liable for his debts as
+an erecutor de son tort^ but that is not the cause of action
+against her. She, like her children, is sued because she adiated
+the inheritance, does that mean more than that she has taken
+possession of the one half of the property, to which under the
+Ordinance of 1876 she has right ? If so, that does not necessarily
+make her liable to pay all the debts of the husband; she is
+not Ha!)le to pay mors than the amount she succeeded to.
+
+It is not here averred what the amount of the estate was.
+
+The case as against the widow would have been different
+if the plaintiff had averred that the estate of the deceased debtor
+was of greater value than Rs. 1,000, that the widow had failed
+to take letters of administration and had notwithstanding taken
+possession of specified property of specified value and had there-
+fore rendered herself liable to pay a debt of that specified
+amount. The action against these defendants was rightly
+dismissed, though, as I have indicated , T do not rest my
+judgment on the ground given by the learned District Judge.
+
+Withers, j. — I also would affirm this judgment. The
+plaint is so defective in my opinion that the action cannot
+but fail.
+
+The suit is brought by the creditor of one Vadagu
+Mudianselage Vidane Appu deceased, against his late debtor's
+widow and children, to recover from them the amount of his
+
+
+Digitized by VjOOQIC
+
+
+Iti tHE SUPkliMB COURt kBPORtS. [Vol. ii.
+
+Chetty cieht on the ground that they have "adiated" the dead man's
+Etana. '^inheritance/* This antiquated expression of old Roman law
+
+is hardly adapted to the law of to-day, and without
+
+•particulars is an empty averment.
+
+The allegandd and probanda in an action like the present
+are pointed out in VI, S. C. C. p. 13. Nothing however
+could be alleged or proved to make the minor children answer-
+able for the father's debt in whole or in part, either out of
+his assets or their assets.
+
+The plaintiff has shewn himself unwise rather than tricky
+in not procuring a person to be appointed administrator of
+the estate and effects of his deceased debtor.
+
+Browne, j. — Plaintiff seeks to recover a money decree for
+Rs. 1,25675 principal and interest on a mortgage bond dated
+i6th December 1891, which he recited in, and filed with his
+plaint, alleging that his obligor died lo months prior to institu-
+tion of action, and that his widow and children whom plaiutiff
+named as defendants have adiated their husband's and>father*s
+inheritance. Concurrently with the institution of the action plain-
+tiff applied for and obtained an order nisi appointing ist
+defendant guardian ad iitefn over minor children, the 2nd, 3rd
+and 4th defendants, and this order was thereafter made abso-
+lute on no cause being shewn. Those latter proceedings
+were irregular in that (i) there is no record that the minors
+appeared personally in Court or were prevented by good cause
+from so doing, (Sec 493 Civil Procedure Code) in that (2)
+the petition and affidavit did not contain the averments
+required by Section 749, and in that (3) (as 1 think should still
+be done according to what was directed in 76,232 District
+Court Colombo S. C. C. 154 and in order to avert the
+necessity of the Summary Procedure are permitted by section
+493) no notice was served along with the symmons on the
+minor defendants to procure a guardian ad litem of their
+own selection to be appointed nor was averment made that
+they were so young as to be unable to do so.
+
+The parties however regarded that ist defendant had been
+validly appointed, the caption of the plaint was amended
+
+
+Digitized by VjOOQIC
+
+
+Oct. 24, \j}.] ' THE SUPREME COURT REPORTS. 1 13
+
+accordingly, and then the Court queried whether the action Chetty
+would be maintained when there had not been application made etana.
+
+for tlie appointment of an administrator to the estate of the
+
+deceased mortgagor, as required by Section 642, Civil Procedure
+Code, and on this suggestion the defendant hied answer
+taking that plea.
+
+I do not consider that sections 545 and 547 have any
+application to the present question, for the former concerns
+the question of appointment generally on a death l)eing reported
+to the Court, and the latter only actions for the recovery of
+any pioperty of a deceased (9 S. C. C. 181). Hut the question is
+rather, since the passing of the Civil Procedure Code, is it open
+to a mortgagee when his mortgagor has died since the ist,
+August 1890, to sue to recover only a money judgment in
+respect of the debt due to him on his mortgage bond ? To
+me it appears that the provisions of sections 640 and 642 are
+obligatory upon the mortgagee desiring to realize monies
+secured to him on a mortgage after the death of hi§ mortgagor,
+to proceed only in either of the ways therein directed, according
+to either contingency of the property mortgaged exceeding or
+l^ing less than Rs. 1000 in value, and that he cannot institute
+an action on the mere debt. The policy of this requirement
+is very possibly this: — That the heirs of a mortgagor whose
+property exceeding Ks. 1000 in value was mortgaged to its
+entire value would never seek to administer it, and so the
+revenue by stamp duties thereon is thus protected by the
+obligation thus imposed on each mortgagee. The design of
+tbe plaintiff (if any) I regard, not as the learned District
+Judge does, to have been to trick the widow and children,
+but rather to realize the mortgage without its having been
+reduced by the costs of administration.
+
+In this case, however, there is nothin*^ before the Court
+to shew what is the value of the properly of the debtor
+which has passed to the possession ot the delcndants, to the
+value whereof alone the plaintiff could obtain a decree against
+any vicious intromitters in a suit for the purpose and
+both as an action against an executor de son tort y the plaint
+is defective as my brother Withers has pointed out, and
+
+B15
+
+
+Digitized by VjOOQIC
+
+
+114
+
+
+THE SU1*REME court REPORTS.
+
+
+[Vol, ii.
+
+Chetty in my opinion it was not perpiissible for the plaintiff so to
+Etana. *^^ ^^^ widow and children, sav^ in a proper mortgage action.
+— I agree that the suit be dismissed with costs.
+
+
+Before Lawrie^ a. c. j, and Wither-^ j.
+
+July II and August i, 1893.
+
+BASTIAN V. ANDRIS and others.
+
+[No. 35,918 D, C. Matara.]
+
+Mortgagp by yuardian — Liabiliiy of guardirni:^ — Liability of
+m ino rti — Rat ijica t ion — Kn o tr ledge and acq a iesrenre.
+
+
+The 6rst 'defendant actings in good faith, but without authority, a,** guardiaii
+
+he other defendants who were minors, mortgaged with the plaintiff tenain
+
+immoveable property belonging to the latter. The plaintiff claimed a money
+
+
+judgment against all the defendants and a mortgage decree against the immoveable
+property.
+
+Hfld, that plaintiffs ac'ion failed (a) aj^inst the first defendant because
+he did not bind himself as principal and (b) against the other defendants
+because the first defendant was not authorised to incur u debt on their behalf
+and there was no proof tnat they rati6ed the mortgage when they came of age.
+
+Dornhurst for ist defendant-appellant.
+
+Wendt for 2nd, 3rd and 4th defendants-appellants.
+
+VanLaugenberg for plaintiff-respondent.
+
+Cur. adv. vult.
+
+On August I, 1893, the following judgments were delivered :—
+
+Lawrie, a. c. j.— In 1869 the first defendant without auth-
+ority held himself out to be the legal guardian of the other
+defendants, and borrowed money on the security of a mortgage
+over the property which he assumed he had power to grant.
+The mortgagee was permitted to enter on the lands. He and
+his assignee possessed them for many years during the minority
+of the owners. On attaining majority the defendants did not
+notify the mortgage of the ist defendant. About 1889 the
+mortgagee lost possession, and in 1890 he brought this action
+alleging that the mortgage was granted by the ist defendant
+for, or on behalf of and as guardian of the second, third and
+fourth defendants.
+
+He prayed for a money judgment againts the defendants
+jointly and severally and for a mortgage decree affiecting the
+lands.
+
+
+Digitized by VjOOQIC
+
+
+Oct. 24, '93.] THE SUPREME COURT REPORTS.
+
+
+U5
+
+
+The 2nd. 3rd and 4th defendants are not bound by the
+mortgage and the plaintiff has no right to a judgment against
+them or against the lands. The question whether the ist
+defendant is liable to repay the money borrowed and received
+by him depends on the terms of the bond, it is dfficult to decipher
+the document of which the plaintiff ought to have filed a legible
+copy.
+
+I understand that the ist detend^.nt represented himself to
+be an agent ; he did not bind himsfelf personally, there is no
+allegation that he was guilty- of fraud or fraudulent representa-
+tion. It may be that he and the plaintiff laboured under the
+mutual mistake that he was the natural guardian of his deceased
+sister's minor children, and that he had legal powers td deal
+with their estate. It was not contemplated that the guardian
+should bind himself and his own property ; the botld is not so
+expressed .
+
+I am of opinion that the plaintiff is not entitled to recover
+from the ist defendant personally.
+
+I would sot aside the judgment and dismiss thfe action nHth
+costs.
+
+Withers, J. — This is an action to recover on a usufructuary
+mortgage bond a sum of Rs 300. principal with legal interest
+thereon from the date of suit till payment in full. The bond
+purports to be made by the 1st defendant on th^ 2nd of
+September, 1869, and to mortgage shafes in certain lands
+belonging to the other defendants to be possessed by plaintiff
+in lieu of interest. The plaintiff claims a money judgment
+against the defendants jointly and severally and a mortgage
+decree against the shares in the land for the liquidation of
+the said sum and interest.
+
+It is clear that plaintiff cannot recover judgment for the debt
+ajrainst the ist defendant and the others jointly and severally
+as prayed, for the 2nd, 3rd and 4th defendants were Ho
+parties to the bond. We have to decide two questions, one
+whether the ist defendant is liable to satisfy the debt personally,
+the other whether the shares in the land dre liable to be
+sold in satisfaction of the debt secured by the mortgage.
+The plaintiff is entitled to a mortgage decree only on proof
+
+
+Basttan
+Andrfs.
+
+
+Digitized by VjOOQIC
+
+
+ii6
+
+
+THE SUPREME COURT REPORTS.
+
+
+[Vol. ii.
+
+
+Bastian
+
+V.
+
+Andris.
+
+
+that the defendant had the authority to borrow the money oa
+behalf of the other defendants and secure their property for
+the repayment of the money borrowed, or that the mortgage
+by ist defendant of their shares in lands was ratified by the
+other defendants so as to bind the lands as security for the
+debt.
+
+I omit for the moment any notice of other points of
+importance raised by appellants counsel.
+
+In his deposition plar'ntift says that the money was bor-
+rowed by ist defendant to pay oflf a debt due from the estate
+of one Punchi Hamy, the mother of the 2nd, 3rd and 4th
+defendants. He says that the money was duly paid for on account
+of what it was borrowed.
+
+He further says that ist defendant had been judicially
+appointed guardian of the 2nd, 3rd and 4th defendants, then
+minors, when he borrowed and applied the money to the dis-
+charge of the claim against Punchihamy's Estate.
+
+He declares that he took possession of the shares of lands
+mortgaged to him and remained in possession of them till
+he assigned his interest in the bond to one Don Louis some
+nine or ten years before the time he gave evidence in the cause.
+His assignee entered into possession of the shares, according to this
+witness, and held them for some four ye^rs when, having paid
+his assignee the money given for the assignment, the plaintiff
+entered into possession of the shares of land and held poss-
+ession till 1889, when the 3rd defendant witheld possession of
+them from him to his loss of interest in kind.
+
+In cross examination, the plaintiff says that he contracted with
+the ist defendant as guardian of the other defendants, they being
+minors. Don Louis confirms plaintiff's testimony and says
+he not only endorsed the bond in a way to shew that plaintiff had
+paid him back the money for which lie had taken the bond,
+but afterwards executed a deed cancelling the assignment.
+
+There does appear to be an endorsement on the original bond
+by one Louis Hami, of which the translation filed is as follows: —
+
+•*The Rs. 100 appearing in this deed has correctly been
+received from Mr. Don Bastian, the seller (/. e, assignor) therein
+named, and the deed is handed to him on this 5th November i886.
+
+
+Digitized by VjOOQIC
+
+
+Oct. 24, 93.]
+
+
+THE SUPREME COURT REPORTS.
+
+
+^17
+
+
+At page 49 is a document to which the plaintiff and Don
+Louis were parties, bearing date August i8th, 1889. It
+purports to be a renunciation of all the latter's claim to the
+benefits of the bond theretofore assigned to him in consideration
+of the repayment of that which he — Don Louis— gave for the
+assignment of the ist defendant's mortgage bond in his favour*
+
+Here ma} be mentioned one of the points made by ap-
+pellant's counsel. He argued that this deed of renunciation
+was not operative to extinguish the contract of assignment so that
+plaintift had no title to sue.
+
+I am against counsel on this point. I think that the con-
+tract was thereby extinguished and that the plaintiff was restored
+to his position of usufructuary mortgagee under ist defendant's
+bond.
+
+Now, what of ist defendant's liability? Mr. Dornhorst made
+two other points on this question. He argued that the bond
+was granted by ist defendant to and accepted by the plaintiff, not
+in the personal character of the ist deft*ndant, but in a represen-
+tative character as guardian.
+
+In support of his contention he referred to the plaint
+which alleges that ist defendant received this money for and
+on behalf of and as guardian of the 2nd, 3rd and 4th defendants,
+to the evidence of the plaintiff above recited as to the purpose
+for which this money was borrowed, and to the recital in the
+
+bond itself, p. 33 ** know all men that before Notary
+
+appeared the undersigned on behalf cf the three defendants and
+one Babahanii (since deceased) all being minors, who acknow-
+ledge himself to be indebted to Djn Bastian (plaintiff) in the
+
+sum of to be lent and advanced to him the appearer, for
+
+the purpose of paying the amounts ol the two cases
+
+who renounce the benefit of uni miinf*riUip j)pnini(>* which
+atoresaid sum of the appearer on behalf of the afore-
+said minor children hereby promises and undertakes to pay
+or cause to be paid unto the said Don Bastian his heirs, etc.,
+for the securing thereof the appearer hereby on behalf of the
+aforesaid declare to bind specially as & mortgage certain
+shares of lands therein enumerated — p 37? •^•—(illegible) by
+the four minor children by right of maternal inheritance of •••
+
+
+Bastian
+Andkis.
+
+
+Digitized by VjOOQIC
+
+
+Il8 THE SUPREME COURT REPORTS. [Vol. ii.
+
+Bastian (illegible) upon conditions nevertheless that the said creditor (the
+Andrts plaintiff) d j, may and shall possess without any interruptions the
+
+produce and profits of the aforesaid premises in lieu of interest as
+
+aforesaid.
+
+This document is signed in Sinhalese characters by the
+^ mortgagor.
+
+Is this signature, which is presumptive evidence of
+assent to the document signed, rebutted by evidence to the
+eflfect that the signatory was not to be l>ound as principal.
+It may well be that a creditor looks to the personal respon-
+sibility of a borrower for monies which he is lending to the
+borrower on behalf of 3rd parties and that .the borrower may
+bind himself personally therefor. But in this case it seems
+to me that the whole tenor of the bond shows that the signatory
+was not binding himself as a principal and other circumstances
+referred to confirm this view of the position. So that on this
+point I think the ist defendant is entitled to succeed.
+
+I am not with Mr. Dornhorst in his contention that the
+debt is barred as against the ist defendant, because no payment
+of interest by him had taken the law out of our Statute of
+Limitations, I think the possession in lieu of interest operated ^
+as a payment.
+
+There is no evidence that the defendant had any authority
+to incur this debt on behalf of the minors and bind their estate, nor
+do we know that the shares of land mortgaged by 1st defendant
+was estate devolving on the minors from Fimchihamy 011
+account of whose debt the money was borrowed.
+
+The plaintiff may perhaps have had a good cause of action
+for damages against the defendant on account of monies borrowed
+under a misrepresentation of authority, but this is not one of the
+present causes of action. As to the right of the plaintiff* to recover
+his debt by a judicial sale of the shares of land mortgaged
+to him by the ist defendant, it must be clearly proved that the
+act of the ist defendant in thus mortgaging the shares was
+subsequently ratified by the defendants after they came of age
+so as to bind their interests and the shares of land. Acquiescence
+and non-disavowal within a reasonable time may l>e taken to
+coticlude a ratification, but acquiscence and ratification trtust b«
+
+
+Digitized by VjOOQIC
+
+
+Oct. 24, '93-] THE SUPREME CX)URT REPORTS. 119
+
+based on a full or bare knowledge of facts. Of this really ^^^^y^^
+there is no proof. Indeed, if Ango Appu, the person spoken Andkis.
+of by Mendis Jayawardane, a witness for the plaintiff, is the 3rd
+defendant who is alleged to have ousted the plaintiff, he by
+this very act repudiated the mortgage of the lands which he
+wished to enjoy himself. No doubt it is said that he under-
+took to pay the debt, but at the most that imported only
+a moral obligation and cannot be converted into an ac-
+quiescence in the mortgage the usufruct of which he stopped
+the moment it seems he was aware of it.
+
+As to the 2nd and 4th defendants there is no proof
+whatever of their knowledge or acquiescence of the mortgage
+of their shares.
+
+In the result it is my opinion that the judgment should be
+set aside and the plaintiff's claim dismissed with costs.
+
+
+Before Withrrn and Bfvwne^ j. j.
+
+August 8 and 15, 1893.
+
+PERERA r. ABERAN and others
+
+[No. 640, D. C, Kalutara.]
+
+Decree lioUler — Sale in euectdion — Un^atinjied decree — Secessary
+avennenU in plaint — Ciril Procedure Code — Section ii47.
+
+lu -an action by the decree holder under section 247 of the Civil Procedure
+Code to have it declared that certain properties are liable to be sold in
+satisfaction of the decree in his fiivour. it must be alleged and proved that
+ui the date of the institution of the action the decree ^as unsatisoed.
+
+This was an action by the decree holder against a successful
+claimant and the judgment debtors to have it declared that
+the land claimed was liable to be sold in execution of the
+decree in his favour. There was also a claini for damages.
+The plaint did not allege that at the date of the institution
+of the action the amount decreed was unsatished, the defendants,
+inter aliriy answered that *' the allegations in the plaint do
+not entitle the plaintiff to the reUef prayed for." At the trial
+the judge dismissed the plaintiff^'s case, on the ground that
+there was no averment in the plaint that any amount was
+doe to the plaintiff on his writ. Plaintiff appealed.
+
+
+Digitized by VjOOQIC
+
+
+I20
+
+
+THE SUPKliME COURT RLFORTS.
+
+
+•Vol.
+
+
+Perera
+
+V,
+A RERAN.
+
+
+tSampai/o for plaintiff-appellant ;
+
+Morgan for ist 7 deffendants-respondants.
+
+Cur. adv. vult.
+On August 15, 1893, the following judgments were delivered :—
+
+Withers, j. — 1 think the leiirned juc'ge was right in pro-
+nouncing the plaint defective, hut I think he went too far in
+dismissing the claim altogether in conse(iuence.
+
+The point of law was not very fairly taken in the answer,
+in the sense, I mean, of not being explicit as it should have
+been. Had the ground been specified in the answer plaintiff,
+if so advised, might have applied for leave to amend his
+plaint by stating, if true, that he had recovered a money
+decree against defendants for so much with costs, that the
+amount so recovered was at the date of the order complained
+of and at the date of institution of this action wholly or
+partially unsatisfied, as the case may be, and he would have
+been or should have been allowed to make the necessary
+amendment, I should have thought that the fact of a subsisting
+money decree was as essential an element in a plaint by a
+judgment creditor under the 247 section Civil Procedure Code
+as a statement of the order releasing the seizure and the
+date of that order.
+
+That order is conclusive unless within 14 days an action
+is instituted to have it declared that that order notwithstanding
+the property seized and released is liable to be sold in satisfaction
+of the execution creditor's judgment and that declaration is ad-
+jiidged. Mr. Sampayo, however, argued that it was at least not
+necessary to allege the substance of the judgment debt at the
+date of action, because a judgement creditor, even if paid after
+release of seizure occasioned by an improper objection or claim,
+would be entitled to recover damages consequent thereon in an
+action instituted for the purpose of having it declared that
+at the date of the order of release the property as his debtor's
+assets was liable to be sold in execution of the decree in
+his favour. That is a very plausible contention, but looking
+at the effect of the order which subject to the result of the
+action shall be conclusive and to the object of the action
+permitted to the judgn>ent creditor by section 247 viz. to have
+
+
+Digitized by VjOOQIC
+
+
+Nov. 15, ^93.]
+
+
+THE SUPREME COiiRf REPOkt^.
+
+
+I2i
+
+
+the said property declared liable (1. e, I take it presently
+liable) to be sold in execution of his decree, the plaintiff in
+this action must in my opinion declare on a subsisting judg-
+ment debt. A judgm nt can only he executed if any part of it
+is outstanding. If there is no debt to levy for what is the cause
+of action ? It would be adding to the list of fictitious causes
+of action if a sham decree could originate a contest as to
+title to property. No doubt it may be said that if the property
+is assets of the judgment debtor it is no concern to the parties
+having no sort of interest therein whether the judgment
+debt is a sham or genuine one, but when property has been
+released from seizure on the ground that it was not in the
+debtor's possession direct or indirect and therefore not leviable
+by the Fiscal it surely is incumbent on a judgment
+creditor in an action against third parties at whose instance
+such an order has been made to aver and prove that he
+holds an unsatisfied money decree as well as that the
+property he seeks to attach is assets of his debtor liable
+to be levied* thereunder. I am prepared to give plaintiff
+liberty to amend his plaint as indicated on payment of the costs
+of the argument on the 8th February last. As the learned
+judge gave him no option in the Court below I think it
+would be unfair to order him to pay the costs of appeal
+as to which no order will be made if he avails himself
+of the liberty accorded to him.
+
+Set aside the judgment with Hberty to plaintiff to amend his
+plaint as indicated within fourteen days of the date of our
+judgment herein on paying respondent's costs as aforesaid.
+
+Plaintiff failing so to amend his plaint on terms as afore-
+said and delivering copy of the amendment to respondent's
+Proctor within two days of the entry oi the amendment on
+the record, the action will stand dismissed with cost in both
+Courts.
+
+Browne, j, — Under a certain Bill of Sale and two Fiscal's
+transfers Simon, plaintiff avers, was entitled to § of } of two
+allotments of land and he and the 8 — 1 1 Hefenj^ants had pres-
+criptive possession thereof. Plaintiff then avers that he is the
+decree holder that 8 — 11 defendants are next of kin who
+
+B 16
+
+
+Pbrbra
+
+A9BRAN.
+
+
+Digitized by VjOOQIC
+
+
+i2i
+
+
+THE SUPREME COURT REPORtS.
+
+
+[Vol.ii.
+
+
+Perera
+
+V,
+
+Aberan.
+
+
+adiated Simon's inheritance on the judgment debtors in a
+certain action but that i — 7 defendants when plaintiff had the
+land seized in execution of his decree unlawfully claimed the
+same to her damage of Rs. 20. Plaintiff prayed the usual
+declaration of the liability of the land to be sold and damages.
+The I — 7 defendants answered inter alia that the allegations
+in the plaint do not entitle the plaintiff to the relief prayed for
+and at the trial expanded this into the objection that there
+was no averment that any amount was due to plaintifi on
+his writ.
+
+This Court has already held this allegation and proof
+thereof to be necessary in an action by a mortgagee under
+Sect. 247 of the Civil Procedure Code or in an ordinary hy-
+pothecary action (574 D. C. Negombo II C. L. R. 188 in Wftis)
+and in my opinion is necessary in all actions instituted under
+the provisions of section 247 and this for the more immediate
+object of having this land declared liable to l>e sold in execution
+as well as for the lesser object of recovering damages for the
+wrongful claim,
+
+Whefher in the extreme case suggested by Mr. Sampayo
+of the writ being paid after the wrongful claim, but the writ
+holder still desiring to recover damages and suing to recover them
+alone it would be necessary to him to make this averment, will
+properly fall to be considered when such case shall rise.
+While agreeing in the views held by my brother Withers
+in the judgement he has written, I may add even in such an
+action as that suggested, not instituted for the peculiar purpose
+of section 247, it seems to me it would be still necessary to aver
+and prove existence of an unsatisfied decree to show that the
+plaintiff had full right to seize the land at the time when the
+wrongful claim was made to his datnage. So that in all cases
+the averment and proof are necessary.
+
+I agree to the order proposed considering plantiff should have
+had opportunity given him to amend before his plaint was dis-
+missed altogether.
+
+
+Digitized by VjOOQIC
+
+
+Nov, 15, '93.] THE SUPREME COURT REPORTS. 123
+
+Before Laivrie a. c. j. Withers and Broume j. j.
+
+August ii and 15, September 15 and 22, 1893.
+
+SIATU V. SADUWA.
+
+[No. 224, D. C, Kegalla.]
+
+Judgment — Appealable Order — Civil Procedure Code^ sections
+608 J54 — Courts Ordinance section 89.
+
+The plaintiff, a Nindagama proprietor, sued the defendants as Paravani tenants
+of the Nindagama for services alleged to be due but not performed by them.
+The defendants filed answer objecting as a matter of law that the plaint disclosed
+no cause of action. The District Judge upheld the claim and decreed a sum
+of Rs. 121*25 to the plaintiff reserving for fiirher adjudication the proportion
+payable by each defendant. The defendants appealed.
+
+HtUiy (Withers j. dissenting) that the order was an appealable one.
+Bnwa for defendants-appellants.
+Sampayo for plaintiff- respondent.
+
+On August 15, 1893, the following judgments were delivered : —
+Browne, j.— Plaintiff claiming to be lessee from the exe-
+cutrix of the late Henry de Soysa, owner and proprietor of a
+certain Nindagama, and to be (in the words of his lease)
+ordained to recover money from the tenants in lieu of
+Hajalihdriijd sued in this action thirteen defendants as the
+para want' Nelakarayas for Rs. 121-25 alleged to be the com-
+muted value of the Rajahkariya services due by them.
+
+Ten of the thirteen defendants filed answer wherein they
+raised only for defence as matter of law the question whether
+the plaint did or did not disclose a right in the plaintiff to
+bring and maintain this action and gave nine grounds upon
+which they submitted their defence should be sustained.
+
+The learned District Judge upheld the claim of the plaintiff,
+I. e. I presume that the plaint did disclose the right of the
+plaintiff to bring this action and entered a "decree" that
+the thirteen defendants as paraveni tenants of the Pangua
+in question do each severally pay to plaintiff such portion of
+the sum of Rs. 1*25 and the taxed costs of the action as
+would bear the same ratio to that su^i as his individual
+interest in the pangua might bear to the whole value of
+the pangua, and further that the amount of such portion
+be subject of further adjudication before execution , should
+
+
+Digitized by VjOOQIC
+
+
+124
+
+
+THE SUPREME COURT REPORTS.
+
+
+[Vol. ii.
+
+
+SlATU
+V.
+
+Saduwa.
+
+
+issue and be recovered in the first instance from the produce
+of the Pangua baloaging to the N ilakarayas and failing such
+recovery by sale of the defendants* interest therein.
+
+The defendants at once appealed from this judgment and
+decree and objection has beei taken preliminary to the argu-
+ment thereof that no appeal lay from this decree.
+
+I consider the objection should not be sustained but
+that the appeal should be heard. No doubt a mere expression
+of opinion on the part of a judge would not be A decree
+or sentence (5,326, District Court Mannat 2 Lor. 9. 82,841,
+District Court, Kandy, IV. S. C. C. 124) but here there has
+been a judgment that the plaintiff has in his plaint disclosed
+a sufficient cause of action and (since there was no further
+defence) a decree that each defendant do severally pay his
+proportionate share of the amount in claim and costs and a
+further decree for the ascertainment of each such proportion
+and the mode of its recovery. The one question which the
+pleadings made at issue between the parties was thus decided
+in that a sufficient right or cause of action was preferred ior
+adjudication and from this decision an appeal lies.
+
+I regard the decree made by the learned District Judge as one
+of those contemplated by section 508 of the Civil Procedure
+Code and I apprehend that every successive decree or order in
+any such piecemeal adjudication would be as open to appeal
+as was each successive order in Corbet v. The Ceylon Com-
+pany that determined a principle upon which ulterior proceedings
+would be taken. If it be so, the right to appeal could more
+strongly be claimed here in that if the defence were upheld and the
+decision reversed the Court would be saved the time and
+trouble and the parties the costs of the proposed further
+enquiry and adjudication thereon. In my view the wording
+of section 39 of Courts Ordinance and section 752 of the Civil
+Procedure Code is large enough to include any such decree
+or order made by ^a District Court as the present among the
+class of what is rightly appealable.
+
+Withers j* — In my opinion the appeal is premature and
+must be rejected.
+
+
+Digitized by VjOOQIC
+
+
+Nov. 15, '93.] THE SUPREME COURT REPORTS. I25
+
+True there is a judgment and a decree but the j«dg- Statu
+ment does not decide the question at issue and the decree saihiwa
+cannot as it stands be executed.
+
+The action is instituted by a so called Nindagama pro-
+prietor for the time being to recover compensation from his
+tenants for failure of services during the plaintiflf's alleged
+proprietorship under which the defendants hold the lands form-
+ing a pangua of the Nindagama.
+
+Plaintifl claims that the defendants be condemned to pay
+him Rs. 121-25 by way of compensation. The learned judjjje
+has found that the compensation asked for breach oi services
+ought to l)e paid by the defendantJj not as joint and several
+debtors but as debtors pro parte vinii.
+
+It remains to be ascertained and adjudicated what each
+defendant ought to be decreed to pay the plaintiff.
+
+The judgment and decree are therefore inconclusive, an<l
+the action has not yet been finally decided. I cannot see how
+an appeal can be taken from a judgment or so-called decree
+in this incomplete state and I think respondent's preliminary
+objection must succeed and I would reject the appeal with
+costs.
+
+If 1 am not mistaken, the principle of my proposed
+decision has been constantly recognised by this Court.
+
+Lawrie, a. c. j. — I am unable to agree to reject this
+appeal.
+
+The defendants plead as a matter of law that the plaint
+does not disclose a right of action in the plaintiff and they
+pray that the action be dismissed with costs.
+
+The District Judge repelled that plea in law and found
+the defendants liable according to the proportion which the
+land held by them bore to the sum claimed. In my opinion
+there is a judgment against which an appeal may be taken. It
+is not a mere incidental order, it goes to the root of the action. *
+
+
+Digitized by VjOOQIC
+
+
+126 THE SUPREME COURT REPORTS. [Vol. ii.
+
+Before Laivrie^ a. c. j. and Witlievs and Broivne, j. j.
+
+September 8 and 15, 1893.
+
+SAIBO and another v. APPUHAMY.
+
+[No 433, D. C, Chilaw.]
+
+Landlord and Tenant — Liability 0/ Landlord to put Tenant
+
+in possession of premises let — Tntei^ruption by
+
+Landlord, or strangers of Tenant's enjoy-
+
+ment of the premises.
+
+Pf't* Withers, j. — In an action for rent by landlord against Tenant it is a
+good defence that the landlord did not implement the contract of letting by
+putting the tenant in possession of the property let, and if the tenant had
+advanced money by way of rent for the use of the premises of which the land-
+lord had failed to put him in possession, he might recover the money so paid
+us money had and received by the landloid for the use of the tenant.
+
+Interruption by the landlord or any one under him of the tenant's enjoyment of the
+premises let is no answer to a claim for rent due and payable before such inter-
+ruption, but it is ground for a tenant's claim to have the contract of lease
+cancelled and for recovery of damages consequent on the interruption.
+
+Interruption of a tenant by strangers after the tenant has been put in
+prossession by the landlord is no answer to a claim fur rent, unless such
+inturruption was followed by eviction in due course of law, and it is then only an
+answer to a claim for rent that has become due after such interruption.
+
+Such interruption is no ground for a claim to damages or cancellation
+of the lease, unless it was followed by eviction in law and due notice h«d
+been given to the landlord, in the proieedings terminating in evict i>n. to
+warrant and defend the defendant's title.
+
+This was an action by a landlord against his tenant for rent
+Judgment having gone for defendant, plaintiff appealed.
+
+Wendt (Sampayo with him) for plaintiff-appellant.
+
+Jayeivardnw for defendant-respondent.
+
+On September 15, 1893, their Lordships being of opinion
+that the answer was so ambiguously worded that it was impossible
+to know whether the defence was that the defendant was never
+put in possession or that after he was let into possession he was
+interrupted, agreed to remit the case to the Court below for
+amendment of the answer, giving the liberty to amend the
+answer on payment by him to the plaintiff of all costs incurred by
+the plaintiff since the filing of the answer, and the following judg-
+ment in which tb^ points summarised above were considered
+was delivered^ by
+
+Withers, j. — It is an essential part, I take it, of a contract
+of letting or hiring that a landlord should put his tenant in
+
+
+Digitized by VjOOQIC
+
+
+Nav. 15, '93.] THE SUPREME COURT REPORTS. I27
+
+possession of the subject of the contract, and to an action for Saibo
+rent covenanted for by the tenant I think it would be a good appuhamv.
+
+defence that the landlord haud iwphvisae cotitntrtum by put-
+
+ting the tenant in possession of the premises and if the tenant
+had advanced any money by way of rent for the use of the
+premises into which the landlord had not put him as his contract
+obliged him to do, I think it would be competent for the
+tenant to recover the money so paid without consideration or
+for a consideration that has failed as money had and received
+by the landlord for the use of the tenant.
+
+Interruption by the landlord or any one under him in the
+enjoyment of the premises can be no answer to a claim for
+rent due and payable before the interruption, but it would be
+good ground for a tenant's claim to have the contract of lease
+cancelled and for' damages consequent on the interruption.
+Interruption by strangers after a tenant has been put into
+possession by a landlord can be no answer to a claim for rent
+unless the interruption was followed by eviction in due course
+of law and then only an answer to a claim for rent after such
+interruption, and such interruption can be no ground for claim
+to damages or cancellation of lease unless such interruption
+was followed by eviction in law and due notice to the landlord
+to warrant and defend defendant's title in the proceedings
+terminating in eviction had been given to the landlord. The
+answer in this case is so ambiguously worded that I do not know
+whether the plea intended to be taken is that the defendant
+was never let into possession of the premises by the plaintiff
+or that after he was let into possession he was interrupted by the
+people named in his answer.
+
+If the former is intended then I think that the defence and
+counterclaim can be sustained, otherwise both defence and
+counterclaim fail. If the judge is satisfied after such examina-
+tion as is mentioned in the 146th Section of the Civil Procedure
+Code that the defendant's plea is that he was never let into
+possession by the plaintiff, then that issue should be settled
+and set down for trial, and I am prepared to set aside the judg-
+ment for the purpose of remitting the case to the lower Court in
+order that that issue, ifsQ settled after enquiry may be duly tried.
+
+
+Digitized by VjOOQIC
+
+
+128 TtiE SUPREME COURT REPOkTS. Voi. H.
+
+Saibo Tliis IS really an indulgence to the defendant and I agree
+
+Appi'hamv ^^^^^ ^^^ order as to costs proposed by the Chief Justice as
+
+well as to his suggestion that on defendant's failure to comply
+
+with this order judgment should be entered for plaintiff with
+costs.
+
+
+Before Laivrle^ a. c. j.
+
+September 21 and 28, 1893.
+
+THE QUEEN i\ BABUN and another.
+
+[No, 9,007, D, C, Criminal, Matara.]
+
+Offence punhhahh with imprisonment or fine — Imprisonment
+in default of payment of svch fine —
+Penal Code, Sections 163, 454,
+
+Section 454 of the Penal Code enacts that **whoever commits forgery
+shall be punished with imprisonment of either description which may extend to
+five years, or with fine, or with both."
+
+Heldy that the offence being punishable with a fine alone the term of im-
+prisonment in default of payment of such fine should be regulated by section
+63, of the Penal Code.
+
+The accused were convicted, under section 454 of the Penal
+Code, of forgery, and were sentenced to pay a fine of Rs. 100
+each, and in default of payment of the fine to nine months'
+rigorous imprisonment. The accused appealed.
+
+There was no appearance of Counsel for the appellants.
+
+DrieherQy c. c, for respondent.
+
+Lawrie, a. c. j.— I see no reason to disturb the conviction
+and the sentence of fine of Rs. 100, but I cannot sustain the
+order that in default of payment the accused shall suffer rigorous
+imprisonment for nine months.
+
+The crime of which the accused have been found guilty is
+by the Penal Code punishable with imprisonment of either
+description or fine or both.
+
+Therefore, it is a crime punishable with fine alone. It is
+not one of those crimes which must be punished with im-
+prisonment, ^ut* St is a crime which may be punished with
+fine without imprisonment, and for such sentence the 63rd
+section of the Penal Code appUesi and the imprisanmeat,
+
+
+Digitized by VjOOQIC
+
+
+Nov. 27, *93.] THE SUPREME COURT kEPORtS. Jt29
+
+which the Court imposes in default of payment of the fine, The (Juekn
+may not be rigorous it must be simple, and it shall not exceed BabIn.
+
+four months, when the amount of the fine does not exceed
+
+Rs. 100.
+
+I, therefore, reduce the sentence of imprisonment in default
+of the fine to four months' simple imprisonment.
+
+
+Before Withers^ j.
+
+September 14 and 19, 1893.
+
+TELESINGHE v. ANTHONY.
+
+[No. 5,225, P. C, Chilaw*]
+
+Obstruction of 2)€r8on ejreciiting tlie latvfnl otxlrr of a
+Public Servant — Penal Codc^ Section 183.
+
+In order to support a conviction under Sect. 183 of the Penal Code for
+obstructing a person executing the lawful order of a public servant the order
+must be one which it was competent to the public servant to make. ,
+
+There was no appearance of counsel for either party.
+
+Withers, j. — The appeal succeeds on the point of law taken
+in it that the order which the prosecutor was obstructed by
+the appellant in his endeavour to execute was not a lawful
+order of a public servant (1. e.f a Police Magistrate) in the dis-
+charge of his public functions.
+
+A mandate to sequestrate several cocoanut lands and sell
+the fruits thereof (which lands are apparently the subject of a
+civil action in the District Court) with the object of preventing
+a possible disturbance of the peace amongst those who assert
+a right to enjoy the produce of the land is not one which a Police
+Magistrate is competent to issue.
+
+
+B 17
+
+Digitized byV^OOQlC
+
+
+ijd ttiE SUFkEMJl COURT kEPORtS. Vol. ii
+
+IN THE SUPREME COURT.*
+
+[Admiralty Jurisdiction.]
+
+THE QELDERLAND.
+
+Adniiralti/'-ColUsion — Foreign vessel^ action againat — Ad/ni rally
+Jurisdiction of tJie Supreme Court of Ceylon — Vice-
+Admiralty Act of 1863 — Ordinance
+No. 2 of 1891.
+
+The Supreme Court of Ceylon in its Admiralty Jurisdiction has the same
+powers as the High Court of England in its Admiralty Jurisdiction and must have
+the same regard as that Court to international law and the comity of nations.
+
+Hence, the Supreme Court of Ceylon in its Admiralty Jurisdiction car
+entertain a claim for damages against a Foreign Vessel lying in the harbours of
+Ceylon for injuries caustMl by her to a British ship on the high seas.
+
+The procedure to be followed in the exercise of such jurisdicticn is tlic
+procedure enacted by the Vict- Admiralty Act of 1863.
+
+An action of damage by collision.
+
+This was an action in rem brought by plaintiflfe, the owners
+of the steamship Swordsman^ to recover damages arising from a
+collision on the high seas between the Sirordsman and the Gelder-
+land^ a foreign vessel, which at the date of action was lying
+in the harbour of Colombo.
+
+Messrs, Dornhjrst and Wefidt appeared for the plaintiffs.
+
+The Hon'ble C. P. Layard^ A.-O,, (Messrs. Tempter and
+VanLangenherg with him) appeared for the owners of the
+Gelili'rland.
+
+On the day of trial, November 7, 1893. Layard, A.-O.^
+objected to the jurisdiction of tlie Supreme Court of Ceylon to
+entertain the action, the Gelder land being a foreign vessel and
+tlie collision having occurred on the high seas. He also argued that
+the procedure adopted was irregular, inasmuch a:j no suumiary
+application had been nuide tjo any judge for the detention of the
+of the ship until satisfaction or security given, and that jtbere was
+no defendant properly before the Court
+
+Ctfr. adv. vult.
+
+On November 8, the following judgments were delivered:—
+
+Lawrie, a. c. j,-jTiMS is the first Admiralty case instituted
+in this colony since the passing of the Ceylon Courts of
+
+•BiiFoRE //a/tv/>, A. c. J., Wif/ierii AUD Browfte, j. j.
+
+
+Digitized by VjOOQIC
+
+
+Nov. 27, '93.] THE 8UPRBMB COURT 1IBP0RT9* IJI
+
+AdmiraUjr Ordinance 1891* The Attorney-General challen^jed The
+the jurisdiction of the Court over a foreign ship, now in the har- *'-^_^^'^^'*
+hour of Colombo, which had caused injury to a British ship on
+the high seas. On hearing all that the learned Attorney-General
+urged, I yesterday had no doubt at all that the objection to our
+jurisdiction was unsound, but it was right that the full Court
+should take time to consult together. We have consulted and
+we have carefully considered the basis of the powers extendeJ
+to us by the Legislature. We authoritatively dispose of the
+objection, and unhesitatingly sustain our jurisdiction. The
+Attorney-General laid much stress on the 527th section of the
+Merchant Shipping Act. By that, certain powers were given to
+all Courts of Record in the United Kingdom, but the juris-
+diction over foreign ships existed in the High Court of Admiralty
+long before the passing of that Act, and the provisions of the
+527th section which provides a procedure by which almost any
+one in authority ia Great Britain may detain a foreign ship
+have no bearing whatever on the question of the jurisdiction
+of the Supreme Court of Ceylon. By our Ordinance 2 of 189!,
+the Supreme Court has jurisdiction over the like places, per^ns,
+matters and things as the Admiralty jurisdiction of the High Court
+in England whether existing by virtue of any Statute or other-
+wise, and such Colonial Court of Admiralty shall exercise such
+jurisdiction in the Kke manner and to as full an extent as the
+High Coort of England^ and shall have the same r^ard as
+that Court to international law and the comity of nations.
+If the High Court in England has jurisdiction over foreign
+d)if)s found within the harbours of the United Kingdom
+which have caused injury to British ships in any part of the
+world, then the Supreme Court of Ceylon has the like juris-
+diction over foreign ships found in the harbours of Ceylon.
+That the High Court liad that jurisdiction is clear. It
+fe equally clear that this Court has it unless indeed there be
+any provision or limitation in the Colonial Courts of Admiralty
+Act 1890 which takes it away from this Court.. There is no
+^uch limitation to be found in that Act, and I assert for this
+Go«rt full and complete jurisdiction in all cases where foreign
+Aips fownd withiti the hftcbo*ir and rivers of this Colony, are
+
+
+Digitized by VjOOQIC
+
+
+132 THE SUPREME COURT REPORTS. [Vol. lU
+
+The stated to have caused injury in any part of the world to any
+Gelderland t» .,. , , . ^. , , , . , , . . ,. .
+
+British ship. The rules by which that jurisdiction is to be
+
+exercised are the rules made under the Vice-Admiralty Act
+
+of 1863, and not the procedure of the 527th section of the
+
+Merchant Shipping Act.
+
+Withers, J.— The plea taken by the Attorney-General ore
+fenns to the jurisdiction of the Court must, I think, be repelled.
+As to the jurisdiction I cannot read the Colonial Courts of
+Admiralty Act of i8q6 and our local Ordinance No. 2 of
+1 891 without comirg to the conclusion, that in like circum-
+stances this Court has, subject to anything in the former Act,
+the same jurisdiction as the Admiralty jurisdiction of the High
+Court of Justice in England. This is not less than the juris-
+diction of the High Court of Admiralty before the constitution
+of the Supreme Court of Judicature. By statute 24 Victoria
+Cap 10, I take it that the High Court of Admiralty was
+competent to entertain a suit for damage caused in any waters,
+by a foreign ship, to one owned by Her Majefity*s subjects,
+the presence of the ship in any port in England giving it the
+right to make it answerable in damages. An action against a ship
+for damages by collision is one in rem for the arrest of which the
+High Court of Admiralty had, and the High Oourt in Admiralty
+has, its own procedure. This procedure is quite outside the sections
+of the Merchant Shipping Act to which the Attorney-General
+invited our attention when he protested against our mode
+of procedure, as well as our exercise of jurisdiction. No rules
+having been framed under our own Ordinance, we are obliged
+to follow the rules of the Vice Admiralty Act of 1863 which
+was done in the present case.
+
+Browne, j. — Although under 3 and 4 Vic. C. 65 the
+High Court of Admiralty had jurisdiction to decide all claims
+and demands whatsoever in the case of any foreign ship appa-
+rently only necessaries supplied, this jurisdiction was largely
+increased by 24 Vic. C. 10, Sect. 7 whereof gave it juris-
+diction ''over any claim for damage done by any ship." This
+act was later than the Merchant Shipping Act of 17 and 18
+Vic. C. 104, Sect, 527 — 29 whereof were cited with such stress
+by Mr. Attorney to us and I gather from the case of Jefiren
+
+
+Digitized by VjOOQIC
+
+
+Nov. 27, '93.] THE SUPREME COURT REPORTS. 1 33
+
+?«. The Frmwonia (25 W. R. 699 and 796: 46. L. J. P. D. The
+
+,. ,.,, . , Gfldekland
+and A. 71 and 33} that there never was any question as to the
+
+jurisdiction of the High Court of Admiralty thereunder to award
+damages, for injury to property caused by foreign ships under
+collision at sea. In that action the only questi* n raised was
+whether "Damage" was applicable to injury to the person as well,
+and the Appeal Court being divided in opinion, the Judgment
+in the affirmative thereof by the Admiralty Court was affirmed,
+thus giving the power as large an application as possible.
+It has been urged upon us by Mr. Attorney, however, that
+the sections 527-529 cited by him direct a procedure to l>e
+had *' Whenever any injury has in any part of the world
+been caused to any property belonging to any of Her Majesty's
+subjects by any foreign ship, if at any time thereafter such
+ship is found in any port or rivor of the United Kingdom
+or within three miles of the coast thereof" and that this
+procedure has not been followed in these proceedings. What
+is there enacted is that the Judge of any Court of Record
+in the United Kingdom or the Judge of the High Court of
+Admiralty or in Scotland the Court of Session or the Sherifl'
+of the Country within whose Jurisdiction such ship may be,
+may on summary application whenever the injury was probably
+caused by the misconduct or want of skill of the master, &c.,
+of such ship to issue an order directed to any officer of
+Customs or any officer named by such Judge requiring him
+to detain such ship until such time as the owner, &c., had
+made satisfaction of such injury, or had given approved secu-
+rity to abide the result of any action, suit 01 legal proceeding
+that might be instituted- in respect of such damages and pay
+all costs and damages, and the officer so directed should
+detain such ship. Mr. Attorney objected that no application
+had been made summarily to any Judge, or order made by
+such Judge to any officer requiring the detention of the
+ship until satisfaction or security given, and no such detention
+had been made since only a writ of summons and warrant
+to arrest the ship and cargo had been issued as in an ordi-
+nary Admiralty action in this Court against a British ship,
+ftnd that there was no defendant properly before the Court,
+
+
+Digitized by VjOOQIC
+
+
+134 '^"^ SUPREME COURT REPORTS. [Vol» U.
+
+The since (S6ct. 5^9) it waft Ihe person who had given such
+
+security who should be made defendants and no one has as
+
+yet given such security. I read these sections of Part X.
+of that Act which relates only to Legal Procedure as in no
+respect aftecting the jurisdiction of the Admiralty Court
+undet the later Act to which the largest possible construction
+has been given as* I have said. These sections are a pro-
+vision for tlie emergency that the foreign ship may leave
+the port before an ordinary action can be instituted against her
+n the ordinary procedure and are no substitute for that
+ordinary procedure. This is even more clear from Section
+528 which, without the intervention of any Court at all,
+enables a full pay Commissioned Officer or any British
+Officers of Customs or Consular Officer, without risk to himself
+so long as he acts on reasonable grounds, to detain such
+foreign ship until such time as shall allow of such appli-
+catioii to be made, so that (assuming these sections apply
+to Ceylon) if the Gelderland had desired to leave Coloraho
+a few hours after her arrival the Collector of Customs might
+have detained her till application was made to this C<>urt, or
+possibly some other Court, in turn to order some one to
+detain her until the master, &c., had given security or had abided
+the event of any action which might be instituted of course
+in the usual manner. No such application was needed or
+was made, and action has been so filed, and in its form is
+not in my opinion vitiated by the absence of any of those
+proceedings. I do not find that this procedure was resorted to
+in the first instance in the case of the Franconia. She had
+been ** arrested" not merely "detained" at the suit oif the
+owners of the StrathCh/de and thereafter some certain
+actions were pending against her at the suit of other persons,
+the Admiralty Court ordered she should be released in all
+actions on her owners giving such general security in a form
+corresponding to that which Sect. 547 indicates (vide L. R.
+2, C. P. D. 173, 46 L. J, C. L. 363.) That security was,
+however, held not to apply to an action in the Common
+Pleas Division for damages for injury to person and so the
+claim in Jeffrey's case was pressed in the Admiralty Court
+with success as I have said. The Sections of th6 Merchant
+
+
+Digitized by VjOOQIC
+
+
+Nov. 27, *93.] THE SUPREME CpUfeT REPOJlTS. tiS
+
+Shipping Act do not, therefore, need to be read with The
+
+substituted words under 53 and 54 Vic. C, 27, Sect. 2 (3a),
+
+Riding together the provisions of that act and of our
+Ordinance No. 3 of 1 891 whose language in its preamble and
+2od secticHi is a reproduction of the English Enactment, I
+hold that this Colonial Court of Admiralty has as full
+jurisdiction to entertain this action against a foreign vessel
+lying in the harbour of Colombo as the High Court of
+England in its Admiralty jurisdiction would have to hear
+and determine a like action against a like foreign vessel
+lying in a like harbour in England, but that it must have
+the same regard as that Court to international law and the
+comity of nations and that the procedure which has been
+taken under the still existing rules of the Vice-Admiralty
+Courts Act of 1863 is regular.
+
+
+BbFORB Withers and Brototie^ j. j.
+October 27 and November 3, 1893.
+8ENANAYEKE v. APPU and others.
+[No. 1,195 D. C, Nbgombo.]
+
+Pifi I tit — Protijritij — SsummoiiH — 'Isstie and Sevvue^-^
+InrgHturitij — Waitrr — Civil Pfocfdure Code.
+SectionH 66, 92, 366, mid 766.
+
+Where a plaint is so prolix and embarrassing as ta be oppressive it is the dut^
+o[ the defendant, who is summoned to answer it, to apply to the Court at the earli-
+est opportunity to have the plaint taken off the file.
+
+Wlxere the defendants appeared in obedience to summons and applied for and
+obtained fourteen days' time to file answer and on the day before the answer was due
+moved to have the plaint taken off the file as embarrassing and unintelligible:—
+
+Ileld^ that the motion was made too late, and that the defendants having obtain-
+ed time to file answer roust be considered to have waived all objections to the plaint
+and the summons.
+
+Per Withers and Browne, j. j.— Issue of summons unauthorized by the jud-
+ge's signature and entry of date is irregular.
+
+Prr Withers, j — Where summons has not been duly served in accordance with
+the provisions of section 55 of the Civil Procedure Code the defendant is not bound
+to appear and no judgment by default can be entered against him. If he appears he
+cures the irregularity.
+
+/Vr Browne, j. — Nuiiic of appeal under section 756 of the Civil Procedure
+Code should be served by the FiscaL
+
+
+Digitized by VjOOQIC
+
+
+136 THE SUPREME COURT feEPORTS. [VoL iL
+
+Senanayeke Plaintiff's proctor having filed his appointment, plaint and
+
+^pp,j^ affidavit moved for writ of sequestration. The Listrict Judge or-
+dered that notice of this motion should issue. Three days there-
+after the Secretary of the District Court issued summons and con-
+cise statements, without being authorized thereto by the Court.
+On the returnable day of summons the 5th defendant moved "that
+the proceedings had in the case be vacated." This motion was
+disallowed. Wishing to appeal against the order disallowing tbe
+motion the 5th defendant served notice of appeal on the plaintiflTs
+proctor by his clerk. The District Judge holding this service to
+be insufficient declined to accept the security thereafter tendered.
+Against this refusal the 5th defendant appealed. The other defen-
+dants obtained fourteen day's time to plead and on tlie day before
+their answer was due moved to have the plaint taken off the file as
+embarrassing and unintelligible. This motion was rejected for
+want of particulars of objection to the plaint. The motion was re-
+newed the following day when it was rejected for want of legal
+notice of it, /. ^„ served through the Fiscal. Against both rejections
+these defendants appealed.
+
+Donthonst and Sanipat/Oj for defendants-appellants.
+Wendt and Asserappa^ for plaintiff-relpondent.
+
+Cur. adt\ vtill.
+
+Oil November .'^, the following judgments were delivered : —
+Withers, j. — I have no doubt that a Court of record has
+jurisdiction to protect its records from abuse by taking off
+its file any pleading affidavit or other document which is so
+prolix and embarrassing, as to be oppressive. If such was
+fhe character of the plaint filed in this action it would have
+been the proper course for the defendants summoned to
+answer it to take the first opportunity available of applying
+to the Court for an order to remove it from the file and the
+Court would have been quite competent to make the order.
+Mr. Wendt however, has satisfied me that the plaint is not
+so embarrassing as to be oppressive. The fourth paragraph is
+not so clear as it might be and in the gth paragraph there
+is a mistaken reference to the third paragraph of the plaint
+which, however, could mislead nobody,
+
+
+Digitized by VjOOQIC
+
+
+bee. 2, '93.] THE SUPREME COURT REPORTS* ij?
+
+On the i8th, of April, three days* after the plaint was filed, Senanayeke
+summons was issued accompanied by concise statements of apph.
+
+the plaint, see journal entry of the i8th April. The issue of
+
+summons unauthorised by the Judge's signature and entry of
+date was no doubt irregular (see sections 55 and 92 of the
+Civil Procedure Code), but in my opinion this irregularity
+was waived. The defendants applied for time to file answer
+hereinafter referred to.
+
+The first application which concerns us is one niade to
+the Court on the 2nd May, 1893, ^Y ^^^ Proctor above-mentioned
+—and this was that the Court should vacate the proceedings
+had in the case, I will say no more of this application than
+that I do not pretend to understand it. Vacating an order
+is intelligible, so is a stay of proceedings. The application
+was rejected. The next motion which concerns us is one made
+to the Court on the 15th of May by Mr. Proctor Rajapakse
+on behalf of the defendants, and that was to remove the
+plaint from the file on the ground of it being embarrassing
+and unintelligible.
+
+That question I have disposed of. On the following day
+Mr, Wijetunge, for 5th defendant, moved the Court to direct
+acceptance of the security tendered in appeal from (I
+suppose) the order of the 2nd May before referred to. The
+motion was disallowed.
+
+This motion was renewed on the 19th of May and was
+again disallowed. I think it unnecessary to discuss the points
+acutely argued by counsel with regard to the acceptance of
+a plaint, the order thereon for summons, the proper mode of
+service of notices and especially of notice relating to tender
+of security in appeal and other interesting points of practice,
+because I think on the plain merits of the case that all these
+appeals ought to be dismissed. The cloud of objections raised
+by them should be cleared from the face of the record. There
+was no solid foundation for any of them.
+
+The appellants on their own application had obtained 14 days,
+time to file answer and that permission closed their mouths
+against all objections on the ground of irregularity of proceedings.
+
+B 18
+
+
+Digitized by VjOOQIC
+
+
+138 THE SUPREME COURT REPORTS. [Vol. il.
+
+Senanayeke Hud they during that fortnight found the plaint so embarrassing
+y^pp^, as to pass all understanding, I am not prepared to say that
+
+they would have been precluded from applying to the Court
+
+for due redress.
+
+I think it proper not to leave the case without making
+this observation. Where summons has not been duly served
+in accordance with the provisions of the 55th section of the Civil
+Procedure Code, the defendant is not bound to appear and
+no judgment d'^fault can be entered against him. If he appears
+to the summons he cures the irregularity. If the copy of the
+plaint or concise statement delivered to him under that section
+is so indefinite and uncertain as not fairly to apprise him
+of the cause of action, I see no reason to prevent a defendant
+giving notice with all despatch to the other side that he
+will appear and move the Court that that defect may be
+cured in the plaint or copy or statement and the proceedings
+stayed in order to enable him to have a clean case put before
+h m to answer, and in this regard I must take exception to a
+passage in the learned judge's order t3 be found at page 22 of
+the record, where he appears to intimate that a native who
+does not understand English and has engaged a Proctor is not
+prejudiced by the omission to serve on him a copy of the
+plaint or concise statement translated into his language.
+
+I think he is prejudiced, because he is much better able
+to instruct his proctor if he has received such a translation
+of the statement of the cause of action than if he has not.
+I am for dismissing all the appeals with costs.
+
+Browne, j. — The 5th defendant in this action has sepa-
+rated himself from the 8 other defendants both in appointment of
+Proctor and in the steps taken by him, and this separation
+continues even in the appeals which have been filed.
+
+Dealing with the 5th defendant first the proceedings
+were as follows: —
+
+PlaintifTs proctor filed appointment, plaint and affidavit
+and moved for writ of secjuestration. The District Judge made
+order only that notice of the motion should issue. Three days
+thereafter, without any recorded order by the judge to sane-
+
+
+Digitized by VjOOQIC
+
+
+Dec. 2, '93.] THE GUPREMB COURT REPORTS. 1 39
+
+tion his act, the Secretary issued summons and concise Sknanateke
+statements. There cannot be any presumption as to the authority ^ppj^
+
+of the Secretary to do so, and 5th defendant rightly appreciated
+
+their legal invaUdity. He, however, considered this entitled him
+to come forward and object to them and tha form of his
+objection as recorded by the District Judaic (I presume it was
+made viva voce on the returnable date of summ >ns as I cannot
+find any written embodiment of it by his pro:tor) was '*that
+the Court will vacate the proceedings," but no doubt the proper
+course for him to have taken was to hive treated them as
+worthless against him and not to have appeared generally in
+the action, or else possibly to appear only spjcially to object
+thereto on notice. The District Judge rejecte i the appHcation,
+and though I entirely dissent from the reasons given by him
+fordoing so, I would not be disposed t^ S3t aside his order.
+The object of any summons that could hive been regularly
+issued had been attained by all the defendants having a week
+previously caused appearance to be entered f)r them in the
+action as they might always voluntarily do before service on
+them of summons and the insufficiency in Ian .juage or quality
+of any concise statement served on them would thereafter at
+least be ground only for extension of time to plead or do
+prepare defence
+
+All defendants were before the Court when this application
+was made and the District Judge has recorded that
+on their application time was given them to file answer.
+I do not see how the 5th defendant could appeal from the
+order thereafter. He did however desire to do so and served
+notice of appeal on the plaintiff's proctor only and that by
+his clerk. The District Judge held this service insufficient and
+declined to accept the security thereafter tendered against which
+refusal 5th defendant has appealed. It is still an open question
+whether notice to the defendant (Sect. 756) can be given nnder
+the provisions of Sect. 29 to the Respondent's Proctor, the
+three Judges of this Court in 285 District Court, Gohtnbo,
+(Supreme Court minutes, 19th December, 1890,) not having agreet
+thereon, though they suffered the appeal then before them to
+be argued.
+
+
+Digitized by VjOOQIC
+
+
+140 THE SUPREME COURT REPORTS. [Vol. «.
+
+Senanayeke The notice however should in my opinion under Sect. 356
+
+Appit have been served by the Fiscal, and the appeal therefore
+
+cannot be sustained. The other defendants after accept ing^ on
+
+the 2nd May time to plead, moved on the day before their
+answer wa<; due that the plaint I e taken off the file as embarrasing
+ind unintelligible. On the rejection that day of the motion
+for want of particulars of objection to the plaint, the motion
+was renewed on the following day and it was then rejected for
+want of legal notice of it, i, ^., served through the Fiscal : against
+both rejections these other defendants have appealed.
+
+I am not disposed to disturb this order. The application
+made at the last moment, a month after the plaint was filed
+and a fortnight after time to plead was given, savours of a
+policy of delay rather than bond Jid^ contention and cannot
+expect any sympathy. But I regard the reasons for the rejec-
+tion as in themselves sufficient and (allowing to a clerical
+error twice repeated of calling paragraph 4, "the third para-
+graph'') the plaint is clear and intelligible: the end of that
+paragraph describes in words and by a figure of survey the
+land in claim in the action and the defendants should reason-
+ably have been able to plead thereto.
+
+
+Before Burnsidfy c. j.
+
+February 18 and 23, 1892.
+
+VELAYADAN v. GEDDES,
+
+[No. 7)4449 C. R., Chavakachcheri.]
+
+Loan — Hire — Destruction of thing Lent or Hired —
+Liability of Bailee,
+
+Where a person borrows or hires a thine, he is bound to return it, unless
+he is prevented from doing so by something for which he is not responsible.
+
+In an action for damages for non-return of a "bull loaned to the defendant,
+the defendant pleaded that it was killed by a leopard while in his possission:—
+
+Htld^ a had plea, unless it could be shewn that the defendant had taken
+the utmost c£.re of the animal, or that it was at the time of the accident under
+the care of the plaintifTs servant.
+
+The facts sufficiently appear in the judgment of the Court,
+
+^9 (Counsel appeared.
+
+
+Digitized by VjOOQIC
+
+
+Dec. 27, '93.] THE SUPREME COURT REPORTS. I4I
+
+On February 23, the following judgment was delivered : — Velayadan
+
+BuRNSiDE, c. J. — There was no appearance on this appeal. Geddes.
+The plaintiff's claim is for damages for non-return of a bulj
+which he says he loaned to defendant. Defendant denies that
+he borrowed the bull, but admits that he hired it for a
+journey.
+
+Now this was no answer to the action, for whether he
+lx)rrowed it, or hired it, he was bound to return it, unless
+indeed he was prevented from doinj< so by something for
+which he was not responsible.
+
+It is said that the bull was killed by a leopard whilst
+it was in the defendant's possession, but there is no proof of it,
+and even had it been proved, prima ftvcie the defendant was
+liable, unless he shewed that he had taken the utmost care
+of the animal, or that it was at the time of the accident
+under the care of the plaintiff's servant. This it certainly was
+not. It Avas in the charge of a person not employed by the
+plaintiff but who was acting as the defendant's servant, and
+whether he had once been plaintiff's servant or not does not
+touch the question of the defendant's liability for his defauh.
+
+The defendant was, therefore, liable to the plaintiff for the
+value of the animal which he has failed to return. On his
+own shewing the defendant was bound to pay the plaintiff
+something for the hiring, even this he has not done.
+
+The defendant's evidence to my mind is most unsatisfac-
+tory. His defence is certainly ungenerous, and I • do not under-
+stand the judgment of the learned Commissioner.
+
+I set aside the judgment and give judgment for the plaintiS
+for the value of the bull which may be fairly estimated at ru-
+pees thirty together with rupees ten as damages, which includes
+what the plaintifi would have been entitled to receive for the use
+of it, and tlie plaintitt will have his costs in both Courts.
+
+
+Digitized by VjOOQIC
+
+
+14a THE SUPREMB COURT RBP0RT8. Vol. U.
+
+Before Lawrie^ a. c. j,, WiflwrR and Brotrne, j. j.
+
+September 5 and 8, 1893.
+
+MAHATMAYA r. BANDA.
+
+(No.6,473, D, C, Kandy.)
+
+Kamhfan Law — Illegithnate Childn*n — Acquired Prajyeriy—
+
+Widow^ Right of— -Civil Pnjredure C<Hle
+
+Section 18.
+
+According to the Kandyan law the illegitimate children of a deceased succeed
+to his acquired property, provided there be no legiiiraaie children and no widow
+surviving.
+
+If there be both legitimate and illegitimate children the acquired property
+is divided between them.
+
+Action in detinue. The facts sufficiently appear in the judg-
+ments of the Court.
+
+Wendt^ for plaintiffs-appellants.
+
+Donihoraty for defendant-respondent.
+
+Cur. adv. valt.
+
+On Hepteraber 8, the following judgments were delivered:—
+
+Lawrie, a. c. j. — If it were not that these plaintiff's are
+
+minors I would recommend that the action be dismissed
+
+on the ground that the plaint is evasive and that the evidence
+
+led is at variance with the averments.
+
+The plaintiffs claim as the heirs-at law of Ukku Bamla
+who is incidentally stated to be their father. It is certainly
+untrue that they are his heirs-at-law and even if they are,
+there is no aVerment that there are no other heirs-at-law
+or that Ukku Banda died intestate.
+
+The plaint is silent as to the nature of the property whether
+acquired or inherited.
+
+This is an action in detinue. There is no averment of wrong-
+ful detention.
+
+If, however, we deal liberally with the plaintiffs, and if we
+take the answer and the evidence adduced as truly disclosing
+the facts, we find that this is an action not by Ukku Banda's
+heirs-at-law, but by his illegitimate children in which they claim
+his acquired movable property on the footing that their
+father died intestate and unmarried without legitimate children.
+
+
+Digitized by VjOOQIC
+
+
+Dec. 2, 93.] THE SUPREME COURT REPORTS. 143
+
+The learned District Judge was with the plaintiffs on Mahatmata
+all points but ohe; he held that Ukku Banda was married g^j^p^^
+
+at the time of his death, and that his widow Muttu Menika
+
+had right to the acquired property superior to that of the
+illegitimate children.
+
+I hesitate to agree with the learned District Judge.
+
+It is not averred or proved that the marriage of Muttu
+Menika to Ukku Banda was registered.
+
+It is proved that she left him many years ago and that
+she is now living as the wife of another man; she is no party
+to this action. She has made no claim to this property. The
+defendant does not assert that he holds this property for her.
+
+It seems to me that we may safely exclude Muttu Menika from
+consideration.
+
+Another supposed competitor is Kiri Banda said to have
+been adopted by Ukku Banda, but as he has not pressed
+a clami he, too, may be left out of consideration.
+
+It is well-established Kandyan law that provided there
+be no legitimate children and no widow illegitimate children
+succeed to the whole of the acquired property of the father.
+
+Sawers, p. 7 (quoted afterwards by Marshall, p. 338). Niti
+Nighanduwa p. 14. Perera's Armour p.p. 8 & 34; i Lorensz
+p. 189.
+
+Jf the deceased owner of the acquired property leaves (besides
+the illegitimate children) legitimate children, the acquired property
+is divided between them, and in a case unreported ol which I
+have a note, 721, District Court, Kandy, decided on March 11,
+1842, it was held by this Court that the acquired property should be
+divided between the widow and the illegitimate children of the
+deceased, but in that case I think the widow, by dam u?ntwa
+got the property as heir of the deceased legitimate son of her's.
+
+Here, on the footing that Ukku Banda left no widow and no
+legitimate children, I think it right that the plaintiff should be
+held entitled to the property which the defendant in his answer
+admits he has possession of.
+
+Withers, j. — The contest between the parties is as to the
+right of Ukku Banda's children, being issue of his co-habitation
+with Punchi Manika, to certain movable assets of Ukku Banda's
+
+
+Digitized by VjOOQIC
+
+
+144 THE SUPREME COURT REPORTS. [Vol. ii.
+
+Mahatmava estate admittedly in the custody of the defendant. It is taken
+Banda ^^^ granted that Ukku Banda died intestate.
+
+It is not alleged or pretended that the plaintiffs are the
+
+legitimate issue of Ukku banda. If as his illegiliinate children
+they are entitled to the movable assets of the estate in the
+defendant s hands, the defendant must be adjudged and ordered
+to surrender them to their curator who sues on their behalf
+to recover those assets.
+
+Defendant does not claim the movables admittedly in his
+possession as his own, nor does he set up a jns terth\ he
+says and has a right to say, " before you can comi>el me
+to give up the movables I am keeping as a sort of stake-holder,
+you the plaintiffs must prove your right to these goods."
+
+The simple issue on the pleadings is, are the plaintiffs, as
+illegitimate children of Ukku Banda, entitled to have and keep those
+movables as their own? This is a pure question of Kandyan
+law which would be answered adversely to the plaintiff if there
+was proof of a legitimate widow of Ukku Banda now being alive.
+But the existence of such a person has not been proved and
+cannot be assumed.
+
+As it is, it must be answered in their favour, these being
+articles acquired by their father. Defendant must give up the
+articles admitted to be in his possession. I would give plaintiff
+judgment for those articles with costs.
+
+Browne, j. — If defendant had desired for her own protection
+that there should be a decision as to any possible conflict of
+claim between plaintiff's, Muttu Menika and Kiri Banda, he
+could have moved under Section 1 8 of the. Civil Procedure Code
+that the alleged widow and adopted son should have been joined
+as parties necessary for effective and complete adjudication
+of all questions involved in the action. But though his answer
+suggested their rights he did not so press forward any contention
+for them and they on their part abstained from any claim. There
+is no proof of either the marriage or the adoption, and I
+agree that the plaintifTs should have judgment for all articles
+admitted in the answer or their values as stated in the plaint, and
+also for the Cash Rs. i6'88 which defendant admits he received
+but does not prove he disbursed.
+
+
+Digitized by VjOOQIC
+
+
+Dec. g, *93.] the supkEME court reports. 145
+
+Before Laivr'w^ a. c. j.
+
+September 21 and 28, 1893,
+
+FERNANDO v, FERNANDO.
+
+[No, 26,193, D. C, Criminal Chilaw.]
+
+Ewecution of decree — HefuHal to yield up posHeHsion — (Jonfentpt of
+
+Court— Civil Proicdnre Code, Sectiom 326,800.
+
+Refusal to yield pos9CS«ion of lands unJcr a decree of court «does not
+amount to a contempt of Court.
+
+Appeal from a conviction for contempt of Court under
+section 800 of the Civil Procedure Code. The facts sufficiently
+appear in the judgment.
+
+Heiiewirntue, and Sett at hi raja, for the appellant.
+
+Dornhorst, for respondent.
+
+Cur, adv, ruff.
+
+On September 28, the following judgment was delivered : —
+Lawrie, a. c. j. — When the Fiscal's officer, entrusted with the
+execution of the decree for delivery of possession to the purchaser
+of four lands sold by the Fiscal, first went to execute the decree
+on 26th April, 1892, he found in possession of the four lands a man
+Waas, who claimed the land as his own under a transfer.
+
+In subsequent proceedings the defendant and Waas were
+made respondents, and on 23rd November, 1892, the District Court
+of Chilaw ordered both respondents, Wass and the defendant, to
+yield up possession of the lands within one month on pain of being
+punished for contempt of court.
+
+Waas appealed, but the order was affirmed by the court on
+.3rd March, 1893.
+
+Notwithstanding the affirmance of the order, I am of opinion
+that the threat to punish for contempt of court was an er-
+ror and not in conformity with the Code. The respondent
+Waas had brought himself within the 326th section, and, in-
+stead of ordering him to yield possession within a month,
+the District Court ought to have committed him to jail for
+30 days and directed the judgment-creditor to be put in
+possession of the property — and from that order Waas might
+have appealed.
+
+B 19
+
+
+Digitized by VjOOQIC
+
+
+146 TkE SUPREME COURT REt»ORtS. VoU U,
+
+Fernando On 30th March, 1893, the District Judge again ordered
+
+Fernando *^^ defendant and Waas to yield up possession of the lands
+
+to the plaintiff, within one month from that date on pain of
+
+being punished for contempt of Court.
+
+This notice was served on the respondents, but no order
+to put plaintiff in possession was issued to the Fiscal or to
+a headman.
+
+On#27th April, 1893, the plaintiff, accompanied by the
+Mudaliyar, proceeded to the land to take possession. This
+seems to me to have been premature. The order of the Dis-
+trict Judge of 30th March gave the respondents a month's time.
+
+The plaintiff states in an affidavit, dated 8th May, 1893,
+that he and the Mudaliyar and several headmen proceeded to
+the lands **when the defendant Santiago, who was on the spot, re-
+fused to yield up possession.**
+
+The Mudaliyar's report was that the ist defendant, who
+was on the spot, refused to allow the plaintiff to obtain
+possession of the same" (sic).
+
+When he was examined on oath on August 14th, the
+Mudaliyar said~*'I asked this defendant to give up possessioo
+of the land to the plaintiff. Defendant was in his house.
+He said he did not know that the lands had been sold and
+refused to come out of his house. He refused to give up
+possession of the land to the plaintiff. Defendant said he
+would never allow any one to take possession of the lands
+sold under the writ. I do not know if defendant's residing
+house is on a sold portion or not."
+
+Plaintifl said as the defendant declined to come, he could
+not take possession of the lands.
+
+The Constable Aratchi's evidence is that "the Mudaliyar
+called upon the defendant, to deliver possession of the lands to
+plaintiflT and the defendant declined to do so."
+
+1 think this comes to no more than that the defendant re-
+fused to accompany the plaintiff and the headman. It is by
+no means proved that the house, which the defendant then occu-
+pied, had been purchased by the plaintiff or that the plain-
+
+
+Digitized by CiOOQle
+
+
+Dec. 9, '93.] THE SUPREME COURT REPORTS. I47
+
+tift had then any right to call on him to leave it. The charge Fernando
+which the learned 'District Judge framed was — ''that you''com- Fernando.
+
+mitted a contempt of this court by refusing to }ield up pos-
+
+session of certain lands to plaintiff as required by the order
+of this court, dated 30th March, 1893, and that you thereby
+committed an oflence punishable under section 800 of the
+Civil Procedure Code."
+
+Neither in the order of the 30th of March, nor in the
+charge, are the names of the lands given. The charge does
+not disclose an oflfence under section 800.
+
+I am unaware of any authority for the proposition that
+a refusal to yield possession of lands under a decree of court
+is a contempt of court.
+
+The oftence of obstructing an officer charged with the
+execution of a writ is a specific offence punishable with 30
+day's imprisonment under section 326.
+
+Here, the alleged contempt of court was refusing to give
+up possession on the 27th of April of land which the court
+ordered the defendant to yield possession within 30 days of
+the 30th of March. A part of the refusal alleged, was a refusal
+to listen to the Mudaliyar who had no authority to go there,
+or to speak to the defendant.
+
+The proof does not show that the defendant was in poss-
+ession of the lands purchased. What the plaintiff and the
+Mudaliyar wanted him to do was to make a public submis-
+sion to them, and to walk round the boundaries and point
+them out surrendering all within the limits.
+
+Theie is, to my mind, no proof that the plaintiff was in
+any way prevented from taking possession of the lands.
+
+I would set aside the conviction and sentence, and acquit the
+defendant.
+
+
+Digitized by VjOOQIC
+
+
+148 THB SUPREME COURT REPORTS. [VoL il.
+
+Present: — Bonder, c. j., and Lntvrie and Withers^ j. j.
+
+(November 14. 1893)
+
+The Hon*ble Jok)} WmJfM Bohapv vjas> sworn in as Chief Justice.
+
+
+Before Bon^Hrr, c. i.
+
+November 16, 1B93.
+
+MENDIS r. APPUHAMI.
+
+[No. 10,101, P. C, Negombc]
+
+PrelimiiHtry hiquiiy "NiPU'Rummary (1ha}^e — Dise]uirge by
+J \)Uce Mag inf t y/ /^ — A pftf*a /.
+
+A Magistrate holding a preliminary inquiry into a non-summary charj^c has
+the discretion of decidijig wtiether there are sufficient grounds for committing
+the accused for trial.
+
+It is the duty of the Nfagistrate in such a case to ascertain whether there
+are grounds for putting the accused to the ignominy and expense of a trial; and
+the Magistrate would Tail in his duty if he send up a case for trial where he
+considered the prosecution was utterly unreliable and that there was no possibility
+of a conviction.
+
+In this case the accused was charged with forgery, an
+oflence beyond the summary jurisdiction of the Police Court.
+The Magistrate, after the preliminary inquiry into the charge
+under Chapter XVI. of the Criminal Procedure Code, discharged
+the accused, being of opinion that there was not sufficient
+evidence for his committal.
+
+The complainant appealed.
+W&ndtf for appellant.
+Domhorst^ for respondent.
+
+BoNSER, c. j, — This is an appeal against the order of a
+Magistrate who discharged a defendant who had been charged
+before him with forgery of a lease. It appears to have been
+laid down by this Court that an appeal does lie against such
+an order, and I do not question the law as so laid down.
+But I do think it is a most inconvenient state of things, that
+an appeal should lie under such circumstances, and I entirely
+agree with the view of the late Chief Justice in the case of
+Kalu BancUi v, Pusumba, reported II. C, L. R. I, that it is
+better to leave this question to the authority designated by
+
+
+Digitized by VjOOQIC
+
+
+Dec. 9, '93.] THfi eypRBiifi court rbports. 149
+
+the Code, as the responsible officer in this matter, viz, the Mendis
+Attorney-General, at the same time an appeal lies, and we apfuhamy
+
+have to consider it, however inconvenient it may be. But we
+
+should require the strongest possible case l)efore we could
+interfere. Now the law has left to the Police Magistrat-e the
+discretion of deciding wnether there are sufficient grounds for
+committing an accused for trial. Mr. Wendi endeavoured to
+argue that the Magistrate in discharging the accused in this
+case had acted illegally. But there appears to be no ground
+for such a suggestion. The Magistrate's duty is to consider
+the evidence and to exercise his judicial discretion. He has
+to ascertain whether there are grounds for putting an accused
+to the ignominy and expense of a trial, and a Magistrate
+would fail in his duty if he send up a case for trial, where
+he considered the prosecution was utterly unreliable and that
+there was no possibility of a conviction. In this case the
+Magistrate considered most carefully the evidence adduced
+for the prosecution and has formed a very strong opinion thereon,
+and I see no reason for differing from him.
+
+There are many grounds of suspicion in the case. It is
+a curious thing that there is a deed prepared in a Notary's
+Office, prepared by a clerk, the lessor is a person well known
+and on intimate terms with the Notary, and yet the Notary
+attests the signature of a stranger, who, he sa}s, he thought
+somebody else with a similar name, a "rather fair man.*' It
+is also remarkable that the clerk in whose hand-writing the
+deed was prepared is not called ; no person is called who took *
+the instructions for the deed.
+
+Under these circumstances the Magistrate was justified
+in discharging the accused.
+
+The respondent's costs in this appeal must lu' p^id by ihe
+appellant, as taxed by the Registrar.
+
+
+Digitized by VjOOQIC
+
+
+150 THE SUPREME COURT REPORTS. [Vol. ii.
+
+Before Bomer^ c. j., and Lruvrie, and WitJiers, j. j.
+
+November 28, 1893
+
+FERNANDO r, FERNANDO.
+
+[No. 16,443 ^' C., Negombo.]
+
+Last imll — Incidental proof-^-Inconvenieywe — Probate.
+
+A Court may, \ri its discretion, allow a will to be proved incidentally in
+the course of an action; but it would be highly inconvenient to do so.
+
+Where a will is sought to be so proved the Court would be well-advised
+if it adjourns the case to enable the parties to prove the will in independent
+proceedings.
+
+This was an appeal by the defendant from an order of
+the District Judge {Bainngarthfr) refusinpf to allow a will to
+be proved incidentally in the course oi a trial.
+
+Weiidt (Sauipayo with him) for defendant-appellant cited
+20,703. D. C. BaduUa, (2 C. L. R 140); Paranatale *\ Punchi-
+menica, RamaNathan (1863-68), p. 325.
+
+Lai/anly A.-G.^ {Dornhori<t with him) for plaintiff-respondent
+cited Stone r. Forsyth, 2 Donglas 108; Bradford /'. Young
+54 L. J. Equity p. 96 ; 514, D. C, Caltura (2 C. L. R. 140).
+
+BoNSER, c. J. — This is an appeal from a judgment of the
+District Judge of Negombo, who refused to allow a ^ill,
+wliich was sought to be put in evidence by the defendants,
+to be provetl incidentally in this suit. The will has not been
+proved in the District Court which had jurisdiction to grant
+probate ; and the defendants sought to prove it in this suit.
+
+The learned District Judge was referred to a case (No.
+20,703., D. C, Badulla), reported in 2 C. L. R. 140, as an
+authority for the course of procedure which the defendants
+wished to follow. The learned District Judge declined to follow
+that case; and in that, I think, he w^as wrong; because it
+was a judgment of this Court, and it was binding on him,
+until it was reversed by this Court. But although he was
+not, in my opinion, justified in refusing to acknowledge the
+authority of that case, still, I think, the course which he
+adopted was on the whole in accordance with convenience and
+the due administration of justice. That case, as I read it,
+merely decides that if the learned judge had admitted the
+
+
+Digitized by VjOOQIC
+
+
+Dec. 9> *93-] "^HE SUPREME COURT REPORTS. 15^
+
+Will to be proved in the course of the suit, he would not Fernando
+have acted illegally. But I do not read that case as deciding keknando.
+
+that he was bound to do so. I think that, although the District
+
+Court may have jurisdiction to do this, yet, it would be in
+most cases exceedingly inconvenient to exercise its jurisdiction
+in this way. It would be manifestly inconvenient to try the
+issue of the validity ot a Will involving questions as to the
+sanity of the testator, the due execution of the Will and
+other like questions incidentally in the course of an action
+for goods sold and delivered.
+
+Therefore I am of opinion that in the great majority
+of cases where a will is sought to be proved in this way a
+judge would be wellad vised if he adjourns the case to enable the
+parties to prove the Will in independent proceedings. I tliink
+that what the learned judge did in this matter was right,
+though, I think, his reasons were wrong.
+
+The case must be sent back, to be dealt with in accordance
+with the opinion expressed by this Court.
+
+Lawrie and Withers, j.j., concurred.
+
+
+Before Bonsefy c. j.
+
+November i6, 1893.
+
+DISSANAYEKE y. APPUHAMI.
+
+[No. 17,130, P. C, Kandy.]
+
+Arrack — PoHHt\sHimi — B^ntoval — ***4 gallon or IhereabouW —
+
+Ordinance No. 10 of 1844, section 33.
+
+Section 33 of Ordinance 10 ot 1844 enacts that '*no spirit distilled from
+the produce of the cocodnui or other dtscription of palm, or of the sugar cant;,
+in any quantity exceeding two quarts, shall be removed without a permit
+accompanying the same "•* —
+
+//«•/</, that, under this section, it was not an offence to be in possession ol
+more than two quarts of arrack without a permit.
+
+Thr accused was charged with "having been in possession of one gallon
+of arrack or iherealx>uis without a permit."
+
+JM(f, that the charge was bad, inasmuch as **a gallon or thereabouts'
+may be less than two quarts.
+
+The accused was convicted, under section 33 of Ordinance
+10 of ' i8i|4, of having been in possession of one gallon of
+
+
+Digitized by VjOOQIC
+
+
+152 THE SUPREME COURT REPORTS. [Vol. U.
+
+DissANAYEKE arrack or thereabouts without a permit as required by that
+
+Appuhamy section.
+
+In appeal.
+
+VanLangenberg appeared for the accused -appellant.
+
+BoNSBR, c. J. — I think that in this case the conviction must
+be set aside.
+
+The defendant was convicted of "being in posse^on of
+(removing) more than two quarts of arrack without a permit
+in the form required by the Ordinance 10 of 1844, section
+33." On reference to this section it will be found that the
+only offence is "removing/*
+
+" Possession*' isnot anoffencebutthe^iemovar'of any quantity
+of arrack exceeding two quarts is an offence under the Ordinance
+and punishable under that section. The charge, and the com-
+plaint was adopted by the Magistrate as the charge, was that
+the defendant was found in possession of one gallon of arrack
+"or thereabouts." It is clear that this was no legal offence
+because "a gallon or thereabouts'* may be less than two
+quarts. The words "or thereabouts** make the quantity un-
+certain, and, therefore, the defendant was charged with an
+offence which is no offence in law.
+
+It is further alleged by appellant that there was no
+satisfactory evidence of the quantity of arrack in the jar,
+and I agree with the contention. The prosecutor says that
+it contained six bottles of arrack. Now the only evidence of
+what a bottle contained is to be found in the evidence of the
+tavern-keeper, Hendrick Rodrigo, who says that three bottles
+are 14^ gills. Therefore, there being 32 gills in a gallon, it
+is clear that in six bottles there are only 29 gills, and the
+result will be that the quantity is short by three gills of the
+legal quantity. The Magistrate seems to have been very much
+influenced by the fact that the jar was in a gunny bag. He
+says, "who is going to carry about a gallon jar with arrack
+in it in a gunny bag unless, it is full and unless for an un-
+lawful purpose." The answer, of course, which the Magistrate
+expects to this question, is that no one would carry about a
+gallon, &c., &c. I cannot see anything to lead me to this
+conclusion or to justify this inference.
+
+
+Digitized by VjOOQIC
+
+
+Dec. 20, 93.] THE SUPREME COURT REPORTS. 153
+
+I think, therefore, that the Magistrate was wrong in the Dbsanayeke
+conclusion he arrived at, and that his judgment must be reversed, appuhamv
+No order as to costs.
+
+
+Before Bnrnnidr, c. j. and Lnwrie and Withers^ j. j.
+
+January 24 and February 10, 1893.
+
+SIMAN V. NANDO.
+
+[No. 1,178. D. C. Galle.]
+
+jJefetidant as Plaintiff's Wifeless — Inte^sted iKirty — Adverse
+Witness— 17 Jc 18 Vict, G, 126, Sertifm 22.
+
+The evidence of a defendant called by the plaintiflf as his witness is not
+conclusive against the plaintiff*.
+
+Such evidence is no more than the evidence of an interested party, which
+may be contradicted by the evidence of other witnesses.
+
+In this case the plaintiff called the defendant as his
+witness. The defendant gave hostile e\idence, and the
+District Judge (Saram) dismissed the plaintiff's action, holding that
+the defendant's evidence was conclusive against the plaintiff.
+
+The plaintifi appealed.
+
+M'efidt^ for plaintiff -appellant.
+
+Domhorsti for defendant -respondent. •
+
+On February 10, the following judgments were delivered : —
+Burnside, c. j. — I cannot agree with the District Judge, if
+I understand his judgment aright, that because the plaintiff
+called defendant who gave hostile evidence against him, there-
+fore such evidence must prevail.
+
+The evidence of a party to the suit is always regarded
+as that of an interested party.
+
+The evidence of the defendant in his favour is not neces-
+sarily stronger evidence against the plaintiff than the piaintifi's
+evidence is in his own favour, and the District Judge should have
+balanced all the conflicting evidence in the case. I would send
+the case back to be reheard, but I cannot expect the District
+Judge to change his opinion, and, as the plaintiff has exhausted
+all his evidence, I tliink that, balancing the evidence, as the
+
+B 30
+
+
+Digitized by VjOOQIC
+
+
+'J34
+
+
+THE SUPREME COURT REPORTS.
+
+
+Vol. ii.
+
+
+SiMAN
+V.
+
+Nando.
+
+
+District Judge should have done, the weight of evidence is in
+favour of the plaintiff, and he should have judgment.
+
+Lawrie, j. — In the course of the trial the plaintiff called
+the I St defendant as a witness, though his name did not appear
+in the list.
+
+As might have been expected, the ist defendant gave evidence
+in support of his own case.
+
+The learned District Judge dismissed the action on the
+ground that this witness called by 'the plaintiff proved the
+defendant's case.
+
+He did not adjudicate on the other evidence.
+
+He felt himself bound to take ist defendant's evidence as
+evidence against plaintiff.
+
+He seems to have regarded it as equivalent to the old
+Roman Dutch reference to Oath which was decisive of the
+question put to the adversary.
+
+The act 17 and 18 Vict. C. 125, section 22 provides "that
+
+a party producing a witness . may in case the
+
+witness shall in the opinion of the judge prove "adverse," that
+is, hostile, as contradistinguished from being merely unfavour-
+able, contradict by other evidence.''
+
+^ Here to use the words of Taylor, (Evidence, section 1262)
+** the defendant stood in a situation which of necessity made
+him adverse to the party calling him" and the plaintiff, in
+my opinion, had the right to call other witnesses to contradict
+the ist defendant, and the District Judge ought to have weighed
+the evidence as a whole, and not to have considered the testimony
+of the defendant, as conclusive against the plaintiff.
+
+I was inclined to send the case back to the District Court, but
+as the Chief Justice and brother Withers are of opinion that, on
+the evidence, plaintii) is entitled to judgment, I agree to the judg-
+ment being set aside. Judgment entered for plaintifi with costs.
+
+Withers, j. — 1 am prepared to give plaintifi judgment
+here and now.
+
+
+Digitized by VjOOQIC
+
+
+Dec. 20, '93J "THE SUPREME COURT REPORTS. 155
+
+Before Lawne and Witlwrs^ j. j.
+December 8 and i2, 1893.
+
+de silva v. sella UMMA.
+
+[No. 2,670, 'D. C, Colombo.]
+
+Writ Against Person — Rttj)€es two hundred — Partial Recovert/
+
+— Action for Realisation of Mortgage —
+
+Form of Writ — More tJuin one Judgtuent Debtor —
+
+Separate Writs — Civil Procedure Code,
+
+Sections %98 and 306.
+
+On the return, to a Writ of Execution against property, in satisfaction of
+a decree awarding a sum of Rs. 200 and over, that property of a judgment
+debtor has been levied af a part of the sum so decreed, and that the Fiscal can
+find no further property of the debtor, out of which to levy the unsatisBed
+balance, the Court may issue a warrant for the arrest of the judgment debtor.
+
+The facts sufficiently appear from the judgments.
+Sampayo, for appellant.
+DornJiorsty for respondent.
+
+On December 12, the following judgments were delivered : —
+Lawrie, j. — I agree to affirm. When a judgment creditor
+holds a decree wherein the sum awarded inclusive of interest
+up to the date of the decree, but exclusive of any further
+interest, and exclusive of costs, amounts to above Rs. 200,
+and when after seizure and sale, the Fiscal reports that a
+partial recovery has been made, which reduces the debt to
+below Rs. 200, and that he is unable to find any more pro-
+perty of the judgment debtor moveable or immoveable, then,
+in my opinion, the Code permits the Court to issue a warrant
+for the arrest of a judgment -debtor. In other words, a debtor
+may be incarcerated for non-payment of a sum less than
+Rs. 200, provided the decree was for a larger amount. If
+a man be imprisoned for non-payment of more than Rs. 200,
+he cannot claim his release, as a matter of right, until the
+decree is fully satisfied. A partial payment is not sufficient,
+but the powers of the Court to refuse to* incarcerate or to
+release after incarceration are large, provided the Court be
+satisfied that the debtor has no property, which can be sold
+in execution. A harmless and honest debtor who lies in jail
+has only himself to thank, if he does not apply to the Court,
+
+
+Digitized by VjOOQIC
+
+
+Igt THE SUPREME COURT REPORTS. -[Vol. ii'
+
+De Silva under the provisions of the 306th and the subsequent sections
+
+Sella Umma ^f the Code.
+
+— Here, while I do not altogether agree with the reasons
+
+given by the learned District Judge, I am not disposed to
+set aside this order, and to require him to send the defendant
+to jail.
+
+The warrant of arrest issued on the loth of May, 1893,
+proceeded on the return by the Fiscal, dated the 13th April
+1393, which was a misleading and inaccurate return. It
+stated that the Fiscal on the 28th March was unable to
+find any property, moveable or immoveable, of the defendant,
+but it omitted to state that prior to the service of the writ
+on the 28th March, property had been seized and sold. In
+my opinion, the warrant of arrest should not issue, and if
+issued, should not be followed by the committal of the
+debtor, unless the procedure required by the Code has been
+strictly followed.
+
+I may add that, in my opinion, the writ against property
+was not in proper form. It ought tc have been in terms of
+the decree— not an ordinary writ of execution of property,
+but a special writ to the Fiscal, that in default of payment,
+he should sell the mortgage property described in the decree.
+
+It is also worthy of the attention of the District Judge,
+whether in cases where there are several judgment debtors,
+} separate writs against each debtor should not issue, instead of,
+
+as in the present case, one writ against all.
+
+Withers, j. — In my opinion, on the return, to a writ 01
+execution against property, in satisfaction of a decree award-
+lag a sum of Rs. 200 and over, that property of a judgment
+debtor has been levied as to part of the sum' so decreed,
+and that the Fiscal can find no further property of the
+debtor, out of which to levy the unsatisfied balance, it is
+competent to the Court to issue a warrant for the arrest of
+the judgment-debtor.
+
+In this particular case, however, the return to the writ
+of the 13th of April was defective in two particulars. It
+omitted to mention the fact of a levy on the ist defiendant*s
+property for a sum of Rs. 290, and it did not say, as to the
+
+
+Digitized by VjOOQIC
+
+
+Dec. TO, '93.] THE SUPREME COURT RBPORTS.i 1 57
+
+2nd defendant, that the Fiscal could find no property of his, I^e Silva
+out of which to levy execution for the balance. At the foot sella Umma
+
+of the return to the joint writ against the two defendants it
+
+is staled " I have been unable to find any property of the
+judgment debtor (w/r) moveable or immoveable."
+
+It is not said which debtor, iuyn-cotisUtt that it was the
+second, rather than the first, defendant.
+
+There was therefore no such foundation, as the section
+29S of the Civil Procedure Code requires, for the issue of a
+warrant of arrest against the 2nd defendant ; moreover, the
+decree required execution against specific moveable, as well as
+specific immoveable property of the two defendants, in default
+of payment of the sum thereby awarded, /. e, Rs. 3H8 25, with
+interest and costs (Rs. 250), land thereafter the defendants were
+ordered to pay the deficiency, if any, after the realisation of
+those mortgaged properties. The writ was not in conformity
+with this decree. Before the Court could issue a warrant
+of arrest against either debtor for a balance, if any, of the '
+sum of Rs. 3H8-25, it was incumbent on the Fiscal to satisfy
+the Court that he had first levied on those properties or
+was unable to do so, by reason whereof, payment of the
+balance could be enforced in the usual way.
+
+For these reasons, I think, the order, appealed from, should
+be affirmed with costs.
+
+
+Before Lawrip, j.
+
+November 29, and December 5, 1893.
+
+CAVE V. WILLIAM.
+
+(Cave's Case.)
+
+[No. 26,803, P. C, Colombo.]
+
+Jo^tnieymhu Artijicor — Macliine-i^uler — Ordhiaiuc Nn. // tif
+
+1866, Sectiona 3, 6, 7 and 11— Charge—
+
+Alteration.
+
+A machine-ruler, who has entered into a contract of monthly service, is a
+"Journeyman Artificer/' >\iihin the meaning of Ordinance II of I865.
+
+The accused was charged as follows: — "That he, being a
+Journeyman Artificer did, on the 12th September 1893, *^
+
+
+Digitized by VjOOQIC
+
+
+158 THE SUPREME COURT REPORTS. [Vol.il
+
+Cave Colombo, without reasonable cause, neglect to attend at the office
+William ^' Messrs. H. W. Cave & Co., his employers, between the
+hours of 9 a.m. and 5 p.m., during which hours it was usual, ac-
+cording to his occupation, being that of a machine-ruler, for him
+to attend, and that he thereby committed an offence punish-
+able under section 11 of the Ordinance 11 of 1865."
+
+The Magistrate (Pagden) acquitted the accused on the ground
+that he was not a Journeyman Artificer.
+
+The Attorney-QeiiPral appealed.
+
+Dornhorsty for appellant.
+
+Pertura, for respondent.
+
+Lawrie, J.— The Ordinance No. di of 1865 applies to three
+classes of earners of wages.
+
+First, — Menial, domestic, and other like servants.
+
+Seamd.— Pioneers, Kanganies, and other labourers whether
+employed in Agricultural, Road, Railways, or other like work.
+Third, — Journeyman artificers.
+
+The accused does not belong to either the first or the second
+class. He was neither a servant who lived and worked within his
+master's house and walls, nor an out-door labourer.
+
+Contrary to the opinion of the Police Magistrate, 1 hold
+that the accused was a Joitmeymmi Artificer,
+
+A machine ruler in a printing office is certainly an artificer.
+«
+
+The difficulty arises from the use by the Legislature of the
+
+prefix Journeyman.
+
+Now, although, from the derivation of the word, and from
+the 5th section of the Ordinance 11 of 1865, it is plain that
+Journeyman Artificer primarily means one who contracts to
+work for one day and for no longer, it means, secondarily, artificers
+who make a special contract or agreement to work for a longer
+period than one day.
+
+The 6th and 7th and many other sections of the Ordinance
+seem to me to show clearly that by such contract he does not
+lose his designation of Jonr^ieyman^ nor does he forfeit the
+privileges, nor escape from the penalties of the Ordinance.
+
+
+Digitized by VjOOQIC
+
+
+Dec. 20, '93,] THE SUPREME COURT REPORTS. I59
+
+In Police Court, Gampola, 25,204, November 11, 1873, Cave
+reported in 2nd Grenier Police Courts, p. 98, -Sir Edward Creasy, wiluam
+
+c. J., held, that a man was a Journeynuin Artijicei^ although he
+
+had contracted to serve for an indefinite period, namely, until
+he had repaid an advance.
+
+If an artificer, who enters into such an indefinite contract, is
+liable to punishment imposed on Jtmt'nPi/tnan A ?i (ft rrrn by the
+nth section, much more is an artificer liable, who enters into
+a definite contract of monthly service.
+
+In a case decided by the same Judge on nth February, 1893,
+reported in 2 Grenier, p, 13, a lithographing boy was held not to
+be a servant, or a labourer, but the Court does not seem to have
+considered the question, whether he was a Journey man Artificer.
+
+I read the words Jonnieynuin Artifice ra^ in this Ord-
+inance, as meaning all skilled workmen in the regular employ-
+ment of an employer, who are not indoor house servants nor
+out of door labourers, who are by law presumed to work by
+the day for day's wages, including those who legally contract to
+work and serve for a longer time.
+
+I hold that it is proved that the accused entered into a con-
+tract of monthly service, and had worked in terms of that
+contract, and had received monthly wages for several years.
+On 12th September, 1893, ^^ without reasonable cause, refused
+to attend at, and during the time and hours, and at the place
+where, and when he contracted to attend, before the end of his
+term' of service, without previous warning, as required by the
+3rd section of the Ordinance, and that he thereby committed
+an offence punishable under the nth section of the Ordinance
+II of 1865.
+
+The charge should be altered by adding the words, after
+Journeyman Arftjicer^ "being bound by contract to serve for the
+period of one month renewable month by month.^'
+
+I set aside the acquittal, and find the accused guilty of the
+above offence and sentence him to one week's simple imprison-
+ment.
+
+
+Digitized by VjOOQIC
+
+
+l6o . THE SUPRBME COURT REPORTS. [Vol. ii.
+
+Before Lawrie j.
+November 29 and 30, 1893.
+
+VAN HOUTEN v. SOOTA.
+
+[No. 7,707, M. C, Colombo.]
+
+Tom-tow cheating of — AIIp(/afio)is rutd prtmf — Limice — Ordinance
+No. 16 of 1866, M(*ctw/t 90.
+
+In a prosecution, under section 90 of Ordinance 16 of 1865. it is not incumbent
+on the complainant to allege and prove that beating a tom-tom was calculated
+to frighten horses^ or that it was done by night, ko as to disturb the repose of
+the inhabitants. It is enough to allege and prove that the accused, not being
+under Military Regulations, beat a tom-tom, within a town, without a licence.
+
+The accused was charged under section 90 of Ordinance
+16 of 1865 in that " he, not being under \lilitary Regulations,
+beat a tom-tom within a town, without a license."
+
+The accused, having pleaded guilty, wassentencedtopay a fine.
+
+In appeal.
+
+Pereira for appellant. There is no evidence that the
+beating of tom-tom frightened horses or tiiat it disturbed
+the public repose, &c. In the absence of such evidence, the
+j^ccused cannot be convicted of an offence under section 90
+of Ordinance 16 of 1865.
+
+On November 30, the following judgment was delivered:—
+
+Lawrie, j. — The accused pleaded guilty and was sentenced
+to pay a fine.
+
+There is no appeal.*
+
+The legislature by section 90 of Ordinance 16 of 1865
+has made the beating of drums and tom-toms within a town,
+an offence, unless it be done under either Military Regulations
+or a Hcense from the Police Magistrate or a Superintendent or
+an Inspector of Police.
+
+It is not necessary for a complainant to allege and prove that
+beating a tom-tom was calculated to frighten horses, or that it
+was done by night so as to disturb the repose of thfe inhabitants.
+It is enough to allege and prove that the accused, not being under
+Military Regulations, beat a tom-tom, within a town, without a
+license. This the accused has admitted. His admission was
+rightly construed as a plea of guilty.
+
+The appeal is dismissed.
+
+
+End of Volume II.
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+I
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+Digitized by VjOOQIC
+
+
+I
+
+
+m^^
+
+
+^;JtK

@@ -1,0 +1,3 @@
+# ca writ 341 2016
+
+IN THE COURT OF APPEAL OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA CA (Writ) Application No. 341 /2016 Nalin Dharmajeewa Kuruppuarachchi No. 128/2, Galwala Road, Katuwawala, Boralesgamuwa. Petitioner Vs. Open University of Sri Lanka, P.O. Box 21, Nawala, Nugegoda. 2. Prof. Vijitha Nanayakkara, Former Vice Chancellor, The Open University of Sri Lanka, P.O. Box 21, Nawala, Nugegoda 3. Prof. S.A. Ariadurai , Vice Chancellor, The Open University of Sri Lanka, P.O. Box 21, Nawala, Nugegoda 4. Nigel Hatch, Former Chairman, University Services Appeals Board, University Grants Commission of Sri Lanka, No: 20, Ward Place, Colombo 07. And Others Respondents

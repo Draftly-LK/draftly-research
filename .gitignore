@@ -12,13 +12,12 @@ __pycache__/
 .claude/skills/developing-with-streamlit/
 
 # Generated retrieval artifacts (rebuildable from the PDFs)
-data/legal-sources/derived/
-data/processed/
 
 # Harvested case-law text (rebuildable via scripts/harvest_*_caselaw.py;
 # manifests under data/legal-sources/manifests/ ARE tracked)
-data/legal-sources/library/case-law/internet-archive/
-data/legal-sources/library/case-law/commonlii/
+
+# Private client/legal document bundles
+data/raw/
 
 # Private discussion recordings and generated transcripts
 discussions/recordings/*
@@ -37,7 +36,6 @@ AGENTS.md
 .agents/skills/README.md
 /.agents
 /.playwright-mcp
-data/legal-sources/library/case-law/courts/
 
 # Case-law extraction outputs (derived; contains copyrighted headnote text)
 scripts/case-law-information-extraction/output/

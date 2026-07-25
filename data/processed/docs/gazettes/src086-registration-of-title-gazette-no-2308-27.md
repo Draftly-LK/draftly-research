@@ -1,0 +1,3491 @@
+# Registration of Title Gazette No. 2308/27
+
+Y%S ,xld m%cd;dka;%sl iudcjd§ ckrcfha .eiÜ m;%h
+ w;s úfYI
+ The Gazette of the Democratic Socialist Republic of Sri Lanka
+ EXTRAORDINARY
+ wxl 2308$27 - 2022 foieïn3⁄4 ui 01 jeks n%yiam;skaod - 2022'12'01
+ No. 2308/27 - thursday, december 01, 2022
+
+ (Published by Authority)
+
+
+ PART I : SECTION (I) — GENERAL
+ Government Notifications
+
+ REGISTRATION OF TITLE ACT, No. 21 of 1998
+
+
+REGULATIONS made by the Minister of Tourism and Lands by virtue of the powers vested in him under Section 67 of
+the Registration of Title Act, No. 21 of 1998.
+
+ Harin Fernando,
+ Minister of Tourism and Lands.
+
+
+At Colombo,
+16th November, 2022.
+
+ Regulations
+
+ Amendments published in the Gazette No.1886/58 of 31st October 2014, made to the Registration of Title Regulations,
+No. 21 of 1998 published in Gazette Extraordinary, No. 1050/10 of 21st October 1998, are further hereby amended as follows:
+
+ 1. By the repeal of Regulation 1(a) of the Gazette No.1886/58 of 31.10.2014 and the substitution therefor of the following
+ paragraph :-
+
+
+1A- G 38222- 16 (12/2022)
+This Gazette Extraordinary can be downloaded from www.documents.gov.lk
+
+
+2A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ (a) Property section:- Which shall adequate to include a brief description of the property, its encumbrances appur-
+ tenances, parcels and the cadastral map number, block number and sheet number of each parcel.
+
+ 2. By the repeal of Regulation 07(1) of the Gazette No.1050/10 and dated 21.10.1998 and the substitution therefor of
+ the following paragraph:-
+
+ “Publishing of the determination of the Commissioner General of Land Title Settlement”
+
+ “07) (1) A schedule containing the determination of the Commissioner made under Section 14 of the Principal
+ Enactment in respect of such land parcel or land parcels, shall be published in the Government Gazette substantially
+ in the Form 4 of the First Schedule hereto.
+
+ 3. By imposing the following regulation as Regulation 28 to refer the claims to the District Court, in Section 21 of the
+ Principal Enactment;
+ “In case of the opinion of the Commissioner General of Title Settlement that it is more suitable to carry out the
+ investigation activities by the District Court due to nature of the disputes of claiming, the same dispute shall be
+ forwarded to the District Court which is within whose area of jurisdiction the land dealt with by a transfer complaint
+ and affidavit. The complaint and the affidavit forwarded to the Court by the Commissioner General for the same
+ Regulation shall be substantially to the Form No.37 and 38 of the First Schedule to these regulations respectively”.
+
+ 4. Regulation 15(1) (e) is included in to the Gazette No.1886/58 and dated 31.10.2014 and it shall be as follows:-
+ The file number or code number provided by the Registrar General with the signature and the Official stamp of the
+ Notary Public shall be included in the forms mentioned 15 (1) (a) above.
+
+ 5 Regulation 15(1) (f) is included in to the Gazette No.1886/58 and dated 31 .10.2014 and it shall be as follows:-
+ “Action should be taken to cancel if any prior registration sales agreements before applying for register in the Title
+ Register by him /them for the same land /lands, on an application for amalgamation or Sub-division of a land which
+ has been attested by a notary public/acquisition officer to a land parcel/land parcels which has been registered in
+ the Title Register.”
+
+ 6. In addition to the regulation 13 (I) and (II) for Section 36 thereof ,the Gazette No.1050/10 and dated 21.10.1998,
+ the following regulation shall be included as (III) .
+ “ (III) Power is vested to the surveyor to include the name/names of the holder/holders of new land parcels or
+ original owner/owners in to the land tenement list ,for a land parcel or percentage which is allotted by a survey on
+ the written sanction /agreement obtained from the owner/owners to the form 39 in the first schedule in the regulations
+ hereto in an instance of transferring of a land with title certificate/certificates or Sub-divisions, amalgamation, sale,
+ transferring”.
+
+ 7. By the repeal of Regulation 04 of the Gazette No.1886/58 and dated 31.10.2014 and the substitution therefor of the
+ following paragraph:-
+ “15(I)(a) The Format of the instruments (Section 43(I) ) –which concerns any allotment of land where registered in
+ the Register of title and is certified by a Notary Public shall be in accordance with such Forms prepared in durable
+ A4 size papers as set out below:-
+
+ (i) “Transfer or a Sale”, shall be substantially in Form No. 8 of the First Schedule to these regulations;
+
+ (ii) “Sales Agreement”, shall be substantially in Form No. 23 of the First Schedule to these regulations;
+
+ (iii) “Transfer made for Security Bonds”, shall be substantially in Form No. 24 of the First Schedule to these regulations;
+
+ (iv) “Registration of Certificate of Sale”, shall be substantially in Form No. 25 of the First Schedule to these regulations;
+
+ (v) “Cancellation of Sales Agreement”, shall be substantially in Form No. 26 of the First Schedule to these regulations;
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 3A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+(vi) “Gift,” shall be substantially in Form No. 9 of the First Schedule to these regulations;
+
+(vii) “Cancellation of Gift”, shall be substantially in Form No. 27 of the First Schedule to these regulations;
+
+(viii) “Cancellation of Life Interest”, shall be substantially in Form No. 28 of the First Schedule to these regulations;
+
+(ix) “Lease”, shall be substantially in Form No. 10 of the First Schedule to these regulations;
+
+(x) “Cancellation of Lease”, shall be substantially in Form No. 29 of the First Schedule to these regulations;
+
+(xi) “Mortgage”, shall be substantially in Form No. 11 of the First Schedule to these regulations;
+
+(xii) “Cancellation of Mortgage”, shall be substantially in Form No. 12 of the First Schedule to these regulations;
+
+(xiii) “Caveat”, shall be substantially in Form No. 13 of the First Schedule to these regulations;
+
+(xiv) “Cancellation of Caveat”, shall be substantially in Form No. 30 of the First Schedule to these regulations;
+
+(xv) “Registration of an Address”, shall be substantially in Form No. 31 of the First Schedule to these regulations;
+
+(xvi) “Request for Amalgamation/Subdivision of a land”, shall be substantially in Form No. 7 of the First Schedule to
+ these regulations ;
+
+(xvii) “Register a Condominium Property”, shall be substantially in Form No. 21 of the First Schedule to these regulations ;
+
+(xviii) “Exchange of Land”, shall be substantially in Form No. 32 of the First Schedule to these regulations;
+
+(xix) “Cancellation of life interest when the life interest holder deceased” shall be substantially in Form No. 33 of the
+ First Schedule to these regulations;
+
+(xx) “Cancellation of sales certificate” shall be substantially in Form No. 34 of the First Schedule to these regulations;
+
+(xxi) “Transfer of right of way/right to access with servitude “shall be substantially in Form No. 35 of the First Schedule
+ to these regulations;
+
+(xxii)”Leasing out by the life interest holder” shall be substantially in Form No. 36 of the First Schedule to these regulations;
+
+(b) The Registrar General of Title may determine and accept where possible, for the purpose of the expeditious registering
+ of lands in the Register of Title, formats prescribed under any other enactment for the registration of transactions
+ relating to land.
+
+(c) Notwithstanding anything contained in sub paragraph (b) of paragraph (2) of this regulation, where the instrument
+ for registration is a Cancellation of a Gift, the submission of the original Certificate of Title in respect of such Gift
+ shall not be mandatory. The Registrar of Title shall in registering of such instrument, register the Cancellation of
+ Gift and forthwith inform the Donee of such cancellation. Once the cancellation is so registered, the Registrar of
+ Title shall not register in the Title Register any instrument submitted to him by the Donee of any transaction in
+ respect of such Gift.
+
+(d) (1) A Notary Public who attests an instrument in terms of Section 23 of the Notaries Ordinance (Chapter 107) shall
+ forward the attested instrument to the Registrar of Title within whose area of jurisdiction the land dealt with in
+ such instrument is situated and a copy of such instrument shall be retained with the Notary Public who attests such
+ instrument.”
+
+
+4A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ (2) A Notary Public who attests an instrument in terms of Sub-section 16(8)(15)(a)(1) of the Notaries Ordinance (amended)
+ No.31 of 2022 shall make to place the signature and the left or right finger impression or any other finger or finger
+ impression of a toe of parties or each person who prepared and signed , in the same instrument.
+
+ (3) A Notary Public who attests an instrument in terms of Sub-section 16(10)(b)(iii) of the Notaries Ordinance
+ (amended ) No.31 of 2022 shall forward the attested instrument to the Registrar of Title within whose area of ju-
+ risdiction the land dealt with in such instrument is situated , in duplicates of such instrument and in one copy of
+ thereof shall be placed his official stamp by fixing certified photographs in passport size of the parties and the copy
+ of the national identity card, passport or the driving license and the original copy of the receipt which is stamp
+ fees paid shall be affixed to the other copy.
+
+8. By the repeal of Regulation (c) and (d) of the Paragraph 7.21(I) of the Gazette No.1886/58 and dated 31.10.2014 and
+ the substitution therefor of the following paragraph;-
+ “(c) Title Certificate issued in registration of temporary Condominium Property shall be substantially in Form
+ No. 14 (b) of the First Schedule to these regulations;
+ (d) Title Certificate issued in registration of partly- Condominium Property, shall be substantially in Form No. 14 (c)
+ of the First Schedule to these regulations;”
+
+9. Regulation (e) of the paragraph 7.21(I) is included into the Gazette No.1886/58 and dated 31.10.2014 and it shall be set
+ out as below.
+ “(e) Title Certificate issued in registration of full Condominium Property, shall be substantially in Form No. 14 (d) of
+ the First Schedule to these regulations.
+
+10 By imposing of the following regulation as regulation 29 for format of instruments in relevant to registration in Sub
+ Section 43(1) of the Principal enactment;
+ “In case of transferred of the title or relationship on a document prepared under such Act, law by a statutory institution
+ under the same law, relating to land parcel which is registered under Sub Section 43(1) of the Title Registration Act,No.21
+ of 1998, the aforesaid document shall be considered as a standard format.”
+
+11. By the repeal of second schedule therein and the substitution therefor of the second schedule mentioned here.
+
+
+ Format (4)
+
+ Determination of the Commissioner General of Title Settlement
+
+ REGISTRATION OF TITLE ACT, No.21 Of 1998
+ (Section 14)
+
+I hereby declare my determination as set out in the schedule appended hereto in accordance with the powers vested in me
+by Section 14 of the Registration of Title Act, No.21 of 1998, regarding the title to parcel of Land, mentioned in the duly
+published notice of the Gazette No. ...........and dated ...........as per Section 12 of the Registration of Title Act, No.21 of
+1998 notifying to submit claims, situated in the Village of ........... , within the Grama Niladhari Division/ Divisions of
+......... in the Divisional Secretary’s Division of ..., in the District of .............which depicted as parcel of land No........
+Of the Sheet No...........of Block ...... contained in the Cadastral Map No. .........
+
+ .....................................,
+ Commissioner General of Land Title Settlement
+ Land Title Settlement Department.
+
+At the date ............
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 5A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Schedule
+
+
+ Particulars
+ Particulars
+ Sheet No. regarding
+ Name/Names Class if subject
+ and Extent National Mortgages
+ of the Owner/ Extent and to any form
+ Land Parcel (Hectare) Identity Encumbrances
+ Owners Owned Nature of special
+ No. Card No. pending
+ of Title or personal
+ Adjudication
+ law
+ and Injunction
+
+
+ Form No. 8
+ Instrument of Transfer or Sale
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+
+ For office use only
+ RECEIVED REGISTRATION
+
+ Date : Date Stamp Registered in the Title Register
+ Time : No. ...................................................................
+ No. :
+ Fees : .....................................
+ (a) Stamp Duty (Receipt No.) : Registrar of Titles.
+ (b) Registration Fee (Receipt No.) :
+ Certificate of Title No. : Date: ...........................
+ ............
+ Receiving Officer.
+
+
+1. Particulars of Land Parcel :
+
+ (a) District : ................................. (b) Divisional Secretary’s Division: ........................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent : ....................... (l) No. of the unit, if condominium property: ..........
+ (m) Extent subject to the transfer: .............
+
+
+6A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+2. Prior Registration Reference:
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No. : ..................................................................................................................................
+ (c) Class of Title : .............................................................................................................................................
+
+3. Transferor:
+ (a) Full name : .........................................................................................
+ (b) National Identity Card No. : ......................................................................
+ (c) Address: ...................................................................................................
+
+4. Transferee:
+ (a) Full Name : .........................................................................................
+ (b) National Identity Card No. : .....................................................................
+ (c) Address : ..................................................................................................
+
+5. Consideration:
+
+ (a) Rs.( in figures) : ......................................... (b) Rs.( in letters) : ..........................................
+
+6. Fees:
+ (a) Registration Fee : Rs. .............................. (b) Receipt No. : ...........................................
+ (c) Stamp Duty : Rs. ..................................... (d) Receipt No. : ..........................................
+
+7. Conditions: ...................................................................................................
+
+8. Encumbrances/Rights over other lands:
+
+
+ Nature Particulars Validity Period
+
+
+*Cut off the unnecessary words.
+
+The Transferor for the consideration herein expressed hereby transfers to the Transferee the title to the land parcel, title to
+the interest herein specified in the land parcel above described, subject to the encumbrances as shown hereon on this ........
+day of ....20......It is hereby request to register this “ Instrument of Transfer” in the Title Register.
+
+................................................................. ............................................................
+ Signature of the Transferor. Signature of the Transferee.
+
+ Date: Date:
+
+I, ...................................... do hereby declare that the life interest pertaining to the land parcel indicated hereto was
+revocated (Fill this part if relevant)
+
+Signature of Life Interest holder...................................... Date........................................
+
+9. Declaration of Witnesses: We certify that the instrument of transfer was signed on ..........at.........in our presence and
+transferor and transferee are well known to us.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 7A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ National Identity
+ Full Names of witnesses Address Signature
+ Card No.
+
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ...................................................
+
+ ...........................................
+ Notary Public
+ Signature and Official Stamp.
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No.21 of 1998.
+
+
+ Form No. - 9
+ Instrument of Gift
+
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+ For office use only
+ RECEIVED REGISTRATION
+
+ Date : Date Stamp Registered in the Title Register
+ Time : No. ..............................
+ No. :
+ Fees : ......................................
+ (a) Stamp Duty (Receipt No.) : Registrar of Titles.
+ (b) Registration Fee (Receipt No.) :
+ Certificate of Title No. : Date: ...........................
+ ............
+ Receiving Officer.
+
+
+1. Particulars of Land Parcel:
+ (a) District : ................................. (b) Divisional Secretary’s Division: ........................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No. : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent / Extents : ....................... (l) No. of the unit, if condominium property: ..........
+ (m) Extent subject to the transfer: .............
+
+
+8A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+2. Prior Registration Reference:
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No. : .............................................................................................................................
+ (c) Class of Title : .............................................................................................................................................
+
+3. Donor:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+
+4. If there is a life interest holder:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+
+5. Donee:
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+6. If any other person receives the Gift for the Donee, his /her; (If someone else accepts the gift on behalf of the
+ Donee, his/her written consent should be attached with the instrument. This consent does not apply when the Donee is a
+ minor.)
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+7. Consideration:
+ (a) Rs.( in figures) : .........................................
+ (b) Rs.( in letters) : ..........................................
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 9A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+8. Fees:
+ (a) Registration Fee : Rs. .............................. (b)Receipt No. : ...........................................
+ (c) Stamp Duty : Rs. ..................................... (d) Receipt No. : ..........................................
+
+9. Conditions (if any): ....................................................................................
+
+
+10. Encumbrances/Rights over other lands:
+
+
+ Nature Particulars Validity Period
+
+
+*Cut off the unnecessary words.
+
+I,............of...............(Donor) hereby gift to ......................of.........................(Donee) the land/ land part above
+described, (subject to the life interest of .......................of...............(If there is /are Life Interest Holder/s) subject to the
+conditions and encumbrances specified above on this ......................day of ....................20................It is requested
+to register this Instrument of Gift in the Title Register.
+
+ ....................................... ............................................... ..........................................
+ Signature of the Donor. Signature of the Life Interest Holder. Signature of the Donor.
+ Date: Date: Date:
+
+
+9. Declaration of Witnesses: We certify that the instrument of gift was signed on ..........at.........in our presence and Donor
+and Donee are well known to us.
+
+ National Identity
+ Full Names of witnesses Address Signature
+ Card No.
+
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................
+ Notary Public
+ Signature and Official Stamp.
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No.21 of 1998.
+
+
+10A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Form No. 10
+ Instrument of Lease
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+ For office use only
+
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register
+ No. ..............................
+ No. :
+ Fees : ......................................
+ (a) Stamp Duty (Receipt No.) : Registrar of Titles
+ (b) Registration Fee (Receipt No.) :
+ Certificate of Title No. : Date: ...........................
+ ............
+ Receiving Officer
+
+1. Particulars of Land Parcel:
+ (a) District : ................................. (b) Divisional Secretary’s Division: ........................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No. : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent : ....................... (l) No. of the unit, if condominium property: ..........
+ (m) Extent subject to the Lease: .............
+
+2. Prior Registration Reference:
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No. : .............................................................................................................................
+ (c) Class of Title : .............................................................................................................................................
+
+
+3. Lessor:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+4. Lessee:
+
+ (a) Full name :
+ .........................................................................................
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 11A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ (b) National Identity Card No. :
+ ......................................................................
+
+ (c) Address:
+ ................................................................................................
+
+5. Term of Lease:
+
+ For................years...... months commencing from the .............. day of..........20.... to the ..........day
+ of...........20.........
+
+6. Lease Amount:
+
+ (a) Rs.( in figures) : .........................................
+ (b) Rs.( in letters) : ..........................................
+
+7. Fees:
+ (a) Registration Fee : Rs. .............................. (b)Receipt No. : ...........................................
+ (c) Stamp Duty : Rs. ..................................... (d) Receipt No. : ..........................................
+
+8. Conditions (if any): ....................................................................................
+
+9. Encumbrances/Rights over other lands:
+
+
+ Nature Particulars Validity Period
+
+
+*Cut off the unnecessary words.
+
+I .........of............... (Lessor) hereby lease to ......................of......................... (Lessee) the land above described,
+for the consideration herein stated subject to the conditions and encumbrances specified above. It is requested to register this
+Instrument of lease in the Title Register.
+
+
+........................................ ...............................................
+Signature of the Lessor. Signature of the Lessee.
+
+Date: ................................. Date: ..................................
+
+10. Declaration of Witnesses: We certify that this instrument of lease was signed on ..........at.........in our presence and
+Lessor and Lessee are well known to us.
+
+
+ National Identity
+ Full Names of witnesses Address Signature
+ Card No.
+
+
+12A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................
+ Notary Public
+ Signature and Official Stamp
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, no.21 of 1998.
+
+
+ Form No. 11
+ Instrument of Mortgage
+
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+
+ For office use only
+
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register
+ No. : No...............................
+ Fees :
+ (a) Stamp Duty (Receipt No.) : ......................................
+ (b) Registration Fee (Receipt No.) : Registrar of Titles.
+ Certificate of Title No. :
+ ............ Date: ...........................
+ Receiving Officer.
+
+
+1. Particulars of Land Parcel:
+
+ (a) District : ................................. (b) Divisional Secretary’s Division: ........................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No. : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent : ....................... (l) No. of the unit, if condominium property: ..........
+ (m) Extent subject to the Mortgage: .............
+
+2. Prior Registration Reference:
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No. : .............................................................................................................................
+ (c) Class of Title : .............................................................................................................................................
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 13A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+3. Mortgagor:
+
+ (a) Full Name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+ If the Mortgagor is a company/ Joint venture / Business Enterprise:
+
+ (a) Name of the Institution:..................................................
+ (b) Registration Number :....................................................
+ (c) Registered Address :.......................................................
+
+4. Bond Holder:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+ If the Bond Holder is a company/ Joint venture / Business Enterprise:
+
+ (a) Name of the Institution:..................................................
+ (b) Registration Number :....................................................
+ (c) Registered Address :.......................................................
+
+
+5. Mortgagee:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+6. Total Sum:
+
+ (a) Rs. ( in figures). ......................... (b) Rs. ( in letters). .........................
+
+7. Method of re-payment of total sum: ...................................................
+
+
+8. Rate of interest:................................................................................
+
+9. Payment of interest : ...........................................................................
+
+
+14A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+10. Fees:
+ (a) Registration Fee : Rs. .............................. (b) Receipt No. : ...........................................
+ (c) Stamp Duty : Rs. ..................................... (d) Receipt No. : ..........................................
+
+11. Conditions (if any): ....................................................................................
+
+12. Encumbrances/Rights over other lands:
+
+ Nature Particulars Validity Period
+
+
+*Cut off the unnecessary words.
+
+I .........of............... (Mortgagor) hereby mortgage to ......................of......................... (Mortgagee), the land above
+described, for the consideration herein stated subject to the conditions and encumbrances specified above on this ..........day
+of ........20........ It is requested to register this Instrument of lease in the Title Register.
+
+
+........................................ ...............................................
+Signature of the Mortgagor Signature of the Mortgagee
+
+Date: ........................... Date: ................................
+
+
+13. Declaration of Witnesses: We certify that this instrument of mortgage was signed on ..........at.........in our presence
+and Mortgagor and Mortgagee are well known to us.
+
+
+ National Identity
+ Full Names of witnesses Address Signature
+ Card No.
+
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................
+ Notary Public
+ Signature and Official Stamp
+
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, no.21 of 1998.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 15A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Form No. - 12
+ Instrument for Cancellation of Mortgage
+
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+ For office use only
+
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register No..............................
+ No. : .....................................
+ Fees :
+ (a) Stamp Duty (Receipt No.) :
+ (b) Registration Fee (Receipt No.) : ......................................
+ Certificate of Title No. : Registrar of Titles.
+ ............
+ Receiving Officer. Date: ...........................
+
+
+1. Particulars of Land Parcel:
+ (a) District : ................................. (b) Divisional Secretary’s Division: .......................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent : ....................... (l) No. of the unit, if condominium property: ........
+ (m) Extent subject to the Mortgage: .............
+
+
+2. Prior Registration Reference:
+ (a) Place of Registration : ...............................................................................................................................
+ (b) Title Certificate No. : .............................................................................................................................
+ (c) Class of Title : ..........................................................................................................................................
+
+3. Mortgagor:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+4. Mortgagee:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+
+16A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+5. Instrument of Mortgage:
+
+
+ Day book number Date Principal Amount Attester
+
+
+6. Fees:
+ (a) Registration Fee : Rs. .............................. (b) Receipt No. : ...........................................
+
+
+*Cut off the unnecessary words.
+
+I.........of............... (Mortgagee) hereby discharge the land belonging to ..................... of .............. (Mortgagor), as
+the principal amount and interest in respect of the above mortgage, has completely been paid. It is requested to register this
+Instrument for cancellation of mortgage in the Title Register.
+
+
+........................................ ...............................................
+Signature of the owner. Signature of the Mortgagee.
+
+Date: Date:
+
+10. Declaration of Witnesses: We certify that this instrument of mortgage was signed on ..........at.........in our presence
+and Mortgagor and Mortgagee are well known to us.
+
+
+ National Identity
+ Full Names of witnesses Address Signature
+ Card No.
+
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................
+ Notary Public
+ Signature and Official Stamp.
+
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, no.21 of 1998
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 17A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Form No. 13
+ Instrument of Caveat Injunction
+
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+ For office use only
+
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register
+ No. : No...................................................................
+ Fees :
+ (a) Stamp Duty (Receipt No.) : .............................,
+ (b) Registration Fee (Receipt No.) : Registrar of Titles.
+ Certificate of Title No. :
+ ............, Date: ...........................
+ Receiving Officer.
+
+
+ To the Registrar of Title,
+ .................. District
+ Please take notice that I,
+ ......................................................................................................
+ .......................................................................................................
+ ................................ (Caveator’s Full Name, National identity Card No. and Address)
+ am required to be served with notice of the presentation of any instrument affecting the land
+ described below:
+ The original of the title certificate is submitted herewith
+
+1. Particulars of Land Parcel:
+ (a) District : ................................. (b) Divisional Secretary’s Division: .....................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent : ....................... (l) No. of the unit, if condominium property:..........
+ (m) Extent subject to the lease:.............
+
+2. Prior Registration Reference:
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No. : .............................................................................................................................
+ (c) Class of Title : .............................................................................................................................................
+
+3. Fees:
+ (a) Registration Fee : Rs. .............................. (b) Receipt No. : ...........................................
+
+ This caveat is to remain in force for a period of ................... Effective from.... Day of ......20.......And I give below
+ the place at which notices relating hereto should be sent. (Here state the postal address in Sri Lanka). It is requested to
+ register this Instrument of Caveat Injunction in the Title Register.
+
+
+18A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Postal address at which the documents to be sent: ...................................................
+
+ Date: ......... .................................................................................
+ Signature of the Caveator or his Attorney –at-Law or Notary Public.
+
+
+4. Declaration of Witnesses: We hereby certify that this Instrument of caveat Injunction was signed on ..........at.........
+in our presence and Caveator is well known to us.
+
+ National Identity
+ Full Names of witnesses Address Signature
+ Card No.
+
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................,
+ Notary Public
+ Signature and Official Stamp
+
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, no.21 of 1998.
+
+
+ Form No. 29
+ Instrument of cancellation of Lease
+
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+ For office use only
+
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register
+ No. : No:.........................................
+ Fees :
+ (a) Stamp Duty (Receipt No.) : ......................................,
+ (b) Registration Fee (Receipt No.) : Registrar of Titles.
+ Certificate of Title No. :
+ ............, Date: ...........................
+ Receiving Officer.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 19A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+1. Particulars of Land Parcel:
+ (a) District : ................................. (b) Divisional Secretary’s Division: ........................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent : ....................... (l) No. of the unit, if condominium property: .........
+ (m) Extent subject to the Lease: .............
+
+2. Prior Registration Reference:
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No. : .............................................................................................................................
+ (c) Class of Title : .............................................................................................................................................
+
+3. Lessor:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+4. Lessee:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+5. Term of Lease:
+
+ From .......................to ..........
+ ................years...... months......... dates
+
+6. Date of cancellation: ...................................
+
+7. Lease amount paid back: Rs:..............
+
+8. Fees:
+ (a) Registration Fee : Rs: .............................. Receipt No. : ...........................................
+
+I ............................(Lessee) of................ hereby cancel the lease bond, as per the conditions thereon from ...............
+registered under the........day book No. ................ on ........... effective from ................ to ............to..................
+(Lessor). of ................ It is hereby requested to register this Cancellation in the Title Register.
+
+ ........................................, ...............................................,
+Signature of the Lessor Party. Signature of the Lessee Party.
+
+Date: Date:
+
+
+20A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+9. Declaration of Witnesses: We certify that the instrument for cancellation of lease was signed on ..........at.........in our
+presence and the above mentioned parties are well known to us.
+
+
+ National Identity
+ Full Names of witnesses Address Signature
+ Card No.
+
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................,
+ Notary Public.
+ Signature and Official Stamp
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No.21 of 1998.
+
+
+ Form No. 31
+ Instrument for Registration of an Address
+
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+ For office use only
+
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register
+ No. : No:..........................................
+ Fees :
+ (a) Stamp Duty (Receipt No.) : ......................................,
+ (b) Registration Fee (Receipt No.) : Registrar of Titles.
+ Certificate of Title No. :
+ ............, Date: ...........................
+ Receiving Officer.
+
+
+1. Particulars of Land Parcel:
+ (a) District : ................................. (b) Divisional Secretary’s Division: ........................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No. : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent : ....................... (l) No. of the unit, if condominium property: ..........
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 21A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+2. Prior Registration Reference:
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No. : .............................................................................................................................
+ (c) Class of Title : .............................................................................................................................................
+
+3. Mortgagor:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+4. Mortgagee:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+5. Fees:
+ (a) Registration Fee : Rs. .............................. (b)Receipt No. : ...........................................
+
+I .........of............... (Mortgagor) hereby mortgage to...................... (Mortgagee), the land above described, for the
+consideration herein stated and the address to be registered shall be...............................It is requested to register this
+Instrument of lease in the Title Register.
+
+........................................, ...............................................,
+Signature of the Mortgagor. Signature of the Mortgagee.
+ Date: Date:
+
+6. Declaration of Witnesses: We certify that this instrument of mortgage was signed on ..........at.........in our presence and
+Mortgagor and Mortgagee are well known to us.
+
+ National Identity
+ Full Names of witnesses Address Signature
+ Card No.
+
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................,
+ Notary Public.
+ Signature and Official Stamp
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No.21 of 1998.
+
+
+22A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Form No. 30
+ Instrument for Cancellation of Caveat
+
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+ For office use only
+
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register
+ No. : No: ..........................................
+ Fees :
+ (a) Stamp Duty (Receipt No.) : .............................,
+ (b) Registration Fee (Receipt No.) : Registrar of Titles.
+ Certificate of Title No. :
+ ............, Date: ...........................
+ Receiving Officer.
+
+
+1. Particulars of Land Parcel:
+ (a) District : ................................. (b) Divisional Secretary’s Division: .....................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No. : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent : ....................... (l) No. of the unit, if condominium property:..........
+
+2. Prior Registration Reference:
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No. : .............................................................................................................................
+ (c) Class of Title : .............................................................................................................................................
+
+
+3. Caveator’s :
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+4. Registration Date of Caveat: ....................... Day Book No: ....................
+
+5. Period for which caveat is registered: From.................... to................
+
+6. Cancellation date of caveat: .......................
+
+7. Fees:
+ (a) Registration Fee : Rs. .............................. (b) Receipt No. : ...........................................
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 23A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ I............................of........................ the caveator, hereby notify the cancellation of the caveat as it is not
+ necessary to enforce the Instrument of caveat from .................. which is registered under Day Book No........... For
+ the period of ........... To ...................It is requested to register this Instrument for cancellation of caveat in the title
+ register. The original Title Certificate is submitted herewith.
+
+
+ ............................... ......................................
+ Date Signature of the caveator
+
+
+8. Declaration of Witnesses: We hereby certify that this Instrument of caveat was signed on ..........at.........in our presence
+ and Caveator is well known to us.
+
+ Full Names of wit- National Identity
+ Address Signature
+ nesses Card No.
+
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................
+ Notary Public
+ Signature and Official Stamp.
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No.21 of 1998.
+
+
+ Form No. 23
+ Instrument of Sales Agreement
+
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+ For office use only
+
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register
+ No. : No.............................................
+ Fees :
+ (a) Stamp Duty (Receipt No.) : ......................................
+ (b) Registration Fee (Receipt No.) : Registrar of Titles.
+ Certificate of Title No. :
+ ............ Date: ...........................
+ Receiving Officer
+
+
+24A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+1. Particulars of Land Parcel:
+ (a) District : ................................. (b) Divisional Secretary’s Division: ........................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent : ....................... (l) No. of the unit, if condominium property: ..........
+ (m) Extent subject to the Sales Agreement: ....
+
+2. Prior Registration Reference:
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No. : .............................................................................................................................
+ (c) Class of Title : .............................................................................................................................................
+
+3. Grantor:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+4. Vendee:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ..................................................................................................
+
+5. Total Amount: (in letters) Rs. ........................... (in figures).....................
+
+6. Period of Agreement: .................................
+
+7. Fees:
+ (a) Registration Fee : Rs. .............................. Receipt No. : ...........................................
+
+8. Conditions (if any):
+ (1) .........................................................................................................
+ (2)..........................................................................................................
+
+9. Encumbrances: .......................................................................................
+
+ I...............................of ......................... The Grantor, hereby certify that agreement has been made to sell the
+ ownership of the land above described to ................................ of.....................(Vendee) subject to the encum-
+ brances specified hereon on or before................................ Subject to the consideration mentioned above. I also
+ agree to transfer the said sale through respective instrument.
+
+10. Declaration of Witnesses: We certify that the instrument for cancellation of lease was signed on ..........at.........in our
+ presence and the above mentioned parties are well known to us.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 25A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ Full Names of National Identity
+ Address Signature
+ witnesses Card No.
+
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................
+ Notary Public
+ Signature and Official Stamp.
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No.21 of 1998.
+
+
+ Form No. 07
+ Request for Amalgamations / Sub Division of a Land
+
+ Registration of Title Act, No.21 of 1998
+
+ Section 36
+
+ For office use only
+
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register
+ No. : No. ...................................................................
+ Fees :
+ (a) Stamp Duty (Receipt No.) : ......................................
+ (b) Registration Fee (Receipt No.) : Registrar of Titles.
+ Certificate of Title No. :
+ ............ Date: ...........................
+ Receiving Officer
+
+
+(Registered owner/owners of the land shall fill this in duplicates)
+To the Registrar of Title,
+........................... District.
+ Name/Names of the owner/owners National Identity Card No. Address/Addresses
+
+
+1. Particulars of Land to be amalgamated/subdivided:
+ (a) District : ................................. (b) Divisional Secretary’s Division: ........................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No./Nos. : ..............................
+ (k) Extent /Extents: ....................... (l) No. of the unit, if condominium property: ..........
+
+
+26A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+2. Prior Registration Reference:
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No./Nos. : ......................................................................................
+ (Attach the certificate/certificates)
+ (c) Extent / Extents of the land : ....................................................................................................................................
+
+3. Encumbrances to land/lands:
+
+ Nature of Encumbrance Validity Period
+
+
+4. Rights over other lands:
+
+5. Plan for amalgamation / subdivision: (Plan should be attached)
+
+ (a) Name of the Surveyor: ...............................................................
+
+ (b) Plan no. : ...............................................................................
+
+ (c) Date of Plan: ..........................................................................
+
+ (d)
+ Parcel No. Claimant
+
+
+6. Fees:
+ (a) Registration Fee : Rs. .............................. Receipt No. : ...........................................
+
+7. We/I undersigned hereby declare that the land /lands subject to the encumbrances described in para 3 above and described
+ in para 2 has/have registered in the Title Register under Registration of Title Act, No.21 of 1998 and the bank receipt/
+ receipts obtained by paying fees stipulate in para 6 above and relevant Title Certificates and Survey Plan are annexed.
+ The plots of land will be divided as per the sheet No. ......... of block No. ....... of cadastral map No........... certified
+ by Senior Superintendent of Surveys ....................(Area) dated............ and I/We hereby request that each of the
+ undersigned shall have no further claim in relation to the shares other than the shares owned by each of the undersigned
+ and I /We hereby request that the said land amalgamation, sub division be registered in the Register of Title.
+
+
+ Full Name/Names of the Owner/
+ Signature / s Date
+ Owners
+
+
+ 8. Declaration of Witnesses: We certify that the instrument for Amalgamations / Sub Division of a Land was
+ signed on ..........at.........in our presence and the owner / owners are well known to us.
+
+ Full Names of National Identity
+ Address Signature
+ witnesses Card No.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 27A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................
+ Notary Public or Acqusition Officer
+ Signature and Official Stamp.
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No.21 of 1998.
+
+
+ Form No. - 28
+ Instrument for Cancellation of Life Interest
+
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+ For office use only
+
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register
+ No. : No. ...................................................................
+ Fees :
+ (a) Stamp Duty (Receipt No.) : .............................
+ (b) Registration Fee (Receipt No.) : Registrar of Titles
+ Certificate of Title No. :
+ ............ Date: ...........................
+ Receiving Officer.
+
+
+1. Particulars of Land Parcel:
+
+ (a) District : ................................. (b) Divisional Secretary’s Division: .....................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent : ....................... (l) No. of the unit, if condominium property:..........
+ (m) Extent subject to cancellation:......
+
+2. Prior Registration Reference:
+
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No. : .............................................................................................................................
+ (c) Class of Title : .............................................................................................................................................
+
+
+28A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+3. Life interest holder:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+4. Registration Date of Life Interest: ......................................................
+
+ Day Book No: ....................
+
+5. Cancellation date of life interest: ............................................................
+
+6. Reasons for cancellation of life interest: ...................................................
+
+7. Fees:
+ (a) Registration Fee : Rs. .............................. (b) Receipt No. : ...........................................
+
+
+ I............................of........................, hereby cancel the life interest right , which I kept through the Instrument
+ of Gift/ Instrument of Sales , registered under Day Book No........... in the Title Register No.......... , as the life interest
+ right is not necessary to be effective furthermore from .................. It is requested to register the said cancellation
+ of Life Interest in the title register.
+
+
+ ............................... ......................................
+ Signature of the life interest holder. Signature of the owner.
+
+ ................................. .................................
+ Date Date
+
+
+8. Declaration of Witnesses: We hereby certify that the Instrument for cancellation of life interest was signed on ..........
+ at.........in our presence and life interest holder is well known to us.
+
+ Full Names of National Identity
+ Address Signature
+ witnesses Card No.
+
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................
+ Notary Public
+ Signature and Official Stamp.
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No.21 of 1998.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 29A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Form No. 26
+ Instrument for the Cancellation of Sales Agreement
+
+ Registration of Title Act, No.21 of 1998
+
+ Section 43
+
+ For office use only
+
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register
+ No. : No. ........................................
+ Fees :
+ (a) Stamp Duty (Receipt No.) : .....................................
+ (b) Registration Fee (Receipt No.) : Registrar of Titles.
+ Certificate of Title No. :
+ ............ Date: ...........................
+ Receiving Officer.
+
+
+1. Particulars of Land Parcel:
+ (a) District : ................................. (b) Divisional Secretary’s Division: ........................
+ (c) Grama Niladhari Division: ............... (d) Village or Town : ................................
+ (e) Street : ..................................... (f) Assessment No. : .................................
+ (g) Cadastral Map No. : ....................... (h) Block No. : ....................................
+ (i) Sheet No. : ....................... (j) Parcel No. : ..............................
+ (k) Extent : ....................... (l) No. of the unit, if condominium property: ........
+2. Prior Registration Reference:
+
+ (a) Place of Registration : .................................................................................................................................
+ (b) Title Certificate No. : .............................................................................................................................
+ (c) Class of Title : .............................................................................................................................................
+
+3. Period of Agreement: Year.........From ......... To.............
+
+4. Date of Cancellation:...................................................
+
+5. Vendor:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+ (c) Address:
+ ................................................................................................
+
+6. Vendee:
+
+ (a) Full name :
+ .........................................................................................
+ (b) National Identity Card No. :
+ ......................................................................
+
+
+30A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ (c) Address:
+ ..................................................................................................
+
+7. Total Amount Paid: (in letters) Rs. ........................... (in figures).....................
+
+8. Amount paid back:......................................
+
+9. Reason for cancelling the agreement: ..................................
+
+10. Date of cancellation: ....................................................
+
+11. It is hereby informed that the Instrument for Agreement of Sale registered in the Day Book under No....... dated ........
+ effective from .......to......between I,.......the Vendor of .........and............the Vendee of ...........was cancelled with
+ effect from ......as the conditions stipulated in the said agreement had not been adhered to. It is requested to register this
+ cancellation in the Title Register.
+
+ ...................................... ....................................
+ Vendee Vendor
+ .................................... ...................................
+ Date Date
+
+12. Declaration of Witnesses: We certify that the instrument for cancellation of Sales Agreement was signed on ..........
+ at.........in our presence and Vendee and Vendor are well known to us.
+
+
+ Full Names of National Identity
+ Address Signature
+ witnesses Card No.
+
+
+ Attestation
+
+Prepared and certified in accordance with Section 44 of Registration of Title Act, No.21 of 1998.
+
+Date: ................................................. ................................................
+ Notary Public
+ Signature and Official Stamp.
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the “instrument” after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No.21 of 1998.
+
+
+12. Declaration of Witnesses : We certify that the instrument of transfer and sale was signed on ............................. at
+.............................. in our presence and transferor and transferee are well known to us.
+
+ Signature
+ Full Names of witnesses N.I.C. No Address
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 31A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Attestation
+
+Prepared and Certified in accordance with Section 44 of the Title Registration Act,No.21 of 1998.
+
+Date : ........................... ..........................................
+ Notary Public
+ Signature and Official Frank.
+
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attestors and the Notary
+Public shall certify the ‘Instrument’ only after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No. 21 of 1998.
+
+
+ Form No.-21
+
+ INSTRUMENT TO REGISTER A CONDOMINIUM PROPERTY
+ REGISTRATION OF TITLE ACT, NO. 21 OF 1998
+ SECTION 50
+
+
+ For office use only
+
+ RECEIVED REGISTRATION
+
+ Date : Date Stamp
+
+ Time : Registered in the Title Register
+
+ No. : No. .................................
+
+ Fees :
+
+ (a) Stamp Duty (Receipt No.) : ......................................
+
+ (b) Registration Fee (Receipt No.) : Registrar of Titles.
+
+ Certificate of Title No. :
+
+ ............ Date: ...........................
+ Receiving Officer.
+
+
+(Registered owner/owners of the land which the building is located shall fill this in duplicates.)
+To the Title Registrar of .................................................................... District.
+
+1. Name of the applicant:
+ .........................................................................................
+2.National Identity Card No. :
+ ......................................................................
+3. Address:................................................................................................
+4 Details of the land where the building is located .................................................................
+
+5. Nature of the Condominium Property : (State whether it is Temporary / Partly / General) .
+
+
+32A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+6 .Particulars of Location:
+ (a) District:-------------------------------- (b) Divisional Secretary’s Division:-----------------
+ (c) Grama Niladhari Division------------ (d) Village or Town:------------------------------
+ (e) Street : ------------------------------------- (f) Assessment No: ---------------------------------
+ (g) Cadastral map No: ---------------------- (h) Block No: ---------------------------------
+ (i) Sheet No:---------------------------------- (j) Parcel No./Nos.---------------------
+ (k) Extent /Extents----------------------------
+
+7. Reference of the Prior registration
+
+ a. Place of Registration................................. ....................................
+
+ b. No. of the Title Certificate........................... ....................................
+
+ c. Class of the Title ..................................... ....................................
+
+8. Particulars of Condominium Plan ( Annex the condominium plan)
+
+
+(a) Name of the Surveyor:---------------------------------------------------
+(b) Number of the Condominium Plan:--------------------------------------------------
+(c) Date:------------------------------------------------------------------------
+(d) Number of the Cadastral Map:--------------------------------------------------------
+(e) Number of condominium units:-----------------------------------------
+
+
+9. Registration Fee: Rs.-----------------------------(Receipt No.): --------------------------------
+
+............................................. I/We hereby request the Registrar of title to register the horizontal sub division of the building
+mentioned above in respect of the condominium plan described in the 07th paragraph above.
+
+10. I/We herewith submit the declaration (together with other documents) certified on ...................... under Section 5(ii) of
+Apartment Ownership Law No. 11 of 1973 and Section .......................................... of amended Act, No. ..............................
+of 2003 of the National Public Council by .................................................... Notary Public
+
+11. An application to Title Certificate is annexed here with.
+
+Date:----------------------
+
+ ---------------------------------
+ Signature/signatures of applicant/applicants.
+
+12. Declaration of the Witnesses :
+ We certify that the Instrument to register a condominium property was signed on -------------------at -----------------in
+ our presence and applicant party is well known to us.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 33A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ Signature
+ Full Names of witnesses N.I.C. No Address
+
+
+ Attestation
+Prepared and Certified in accordance with Section 44 of the Title Registration Act,No.21 of 1998.
+
+Date : ........................... ...............................................
+ Notary Public
+ Signature and Official Frank
+
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attestors and the Notary
+Public shall certify the ‘Instrument’ only after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No. 21 of 1998.
+
+ Form No.-25
+
+ INSTRUMENT TO REGISTER SALES CERTIFICATES
+ REGISTRATION OF TITLE ACT, NO. 21 OF 1998
+ SECTION 43
+
+ For office use only
+ RECEIVED REGISTRATION
+ Date : Date Stamp
+ Time : Registered in the Title Register
+ No. : No. ...................................................................
+ Fees :
+ (a) Stamp Duty (Receipt No.) : ....................................
+ (b) Registration Fee (Receipt No.) : Registrar of Titles.
+ Certificate of Title No. :
+ ............ Date: ...........................
+ Receiving Officer.
+
+1.Particulars of the Land
+ (a) District:-------------------------------- (b) Divisional Secretary’s Division:-----------------
+ (c) Grama Niladhari Division------------ (d) Village or Town:------------------------------
+ (e) Street; ------------------------------------- (f) Assessment No: ---------------------------------
+ (g) Cadastral map No: ---------------------- (h) Block No: ---------------------------------
+ (i) Sheet No:---------------------------------- (j) Parcel No.:---------------------
+ (k) Extent ---------------------------- (l) No. of the unit, if a Condominium Property -----
+
+2. Reference of the Prior registration
+ a. Place of Registration.................................
+ b. No. of the Title Certificate...........................
+ c. Class of the Title .....................................
+
+
+34A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+3. Total consideration:--------------------------------------------
+4.Amount in the Certificate of Sale : (In letters) ............................ (In figures) ...........................................
+5. Licensed Auctioneer :
+
+ (a) Full Name :---------------------------------------------------------------------------------------------
+ (b) National Identity Card No.---------------------------------------------------------------------------
+ (c) Address: ---------------------------------------------------------------------------------------------------
+
+6. Creditor’s :
+ (a) Full Name :---------------------------------------------------------------------------------------------
+ (b) National Identity Card No.---------------------------------------------------------------------------
+ (c) Address: ---------------------------------------------------------------------------------------------------
+
+7. Debtor’s :
+ (a) Full Name :---------------------------------------------------------------------------------------------
+ (b) National Identity Card No.---------------------------------------------------------------------------
+ (c)Address: ---------------------------------------------------------------------------------------------------
+8. Fees
+ (a) Registration Fee : Rs. .............................. Receipt No. : ...........................................
+
+I ................................................................... the Auctioneer of ................................................. hereby certify to sell the own-
+ership of the land described above to the .................................. (Vendee) subject to the consideration hereto. It is requested
+to Register this Certificate of Sale in the Title Register.
+-------------------------- ------------------------------------
+Auctioneer. Creditor / Financial Institution.
+Date : ......................... Date : ......................... .
+
+9. Declaration of Witnesses :
+ We certify that the instrument for the Registration of Certificate of Sale was signed on ......................... at ..........................
+in our presence and Auctioneer and Creditor are well known to us.
+
+ Signature
+ Full Names of witnesses N.I.C. No Address
+
+
+ Attestation
+
+Prepared and Certified in accordance with Section 44 of the Title Registration Act,No.21 of 1998.
+
+Date : ........................... ..........................................
+. Notary Public
+ Signature and Official Frank.
+
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attestors and the Notary
+Public shall certify the ‘Instrument’ only after examining the particulars stipulated in under Section 44 of the Title Registration
+Act, No. 21 of 1998.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 35A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+Land No.: Form No.-14
+ Title No.:
+
+
+ Democratic Socialist Republic of Sri Lanka
+
+ Title Certificate
+
+ Title Registration Act, No. 21 of 1998(Section 37)
+
+
+ Province : Block No.
+ District : Sheet No.
+ Divisional Secretary’s Division : Parcel No.
+ Grama Niladhari Division : Extent of the land
+ Name : Nature of the land
+ Assessment No. : Share of Ownership
+ Cadastral Map No. :
+ First Schedule (Ownership)
+ Name of the Owner
+ Address
+ National Identity Card No.
+
+ Second Schedule (Plan of the Land)
+
+
+ I do hereby certify that the person stipulated in the First Schedule above has a first class ownership to
+ the land depicted in the Second Schedule.
+
+ Date of Registration:
+
+ Office: ---------------------
+
+ Title Registrar
+
+ Warning:
+
+ (1) It is a punishable offence under Section 65 of the Registration of Title Act to prepare a duplicate of
+ this certificate or tamper with or alter in any manner of this certificate.
+
+ (2) Before dealing with this land please search the current folio of the Register.
+
+
+36A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ Third Schedule
+
+ Legal Document
+ Descriptions
+ (Instrument) Registered Cancelled
+
+Nature Number Name Date Day Signature Date Day Signature
+ and Date of the and Book and Seal and Book and Seal
+ Notary Time Number Time Number
+ Public
+
+
+Other Particulars }
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 37A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ Form No.-14(a)
+Land No.: Title No.:
+
+
+ Democratic Socialist Republic of Sri Lanka
+
+ Title Certificate
+
+ Title Registration Act, No. 21 of 1998(Section 37)
+
+
+ Province : Block No.
+ District : Sheet No.
+ Divisional Secretary’s Division : Parcel No.
+ Grama Niladhari Division : Extent of the land
+ Name : Nature of the land
+ Assessment No. : Share of Ownership
+ Cadastral Map No. :
+ First Schedule (Ownership)
+ Name of the Owner
+ Address
+ National identity Card No.
+
+ Second Schedule (Plan of the Land)
+
+
+ I do hereby certify that the person stipulated in the First Schedule above has a Second class ownership
+ to the land depicted in the Second Schedule.
+
+ Date of Registration:
+
+ Office: --------------------
+
+ Title Registrar
+
+ Warning:
+
+ (1) It is a punishable offence under Section 65 of the Registration of Title Act to prepare a duplicate of
+ this certificate or tamper with or alter in any manner of this certificate.
+
+ (2) Before dealing with this land please search the current folio of the Register.
+
+
+38A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ Third Schedule
+
+ Legal Document
+ Descriptions
+ (Instrument) Registered Cancelled
+Nature Number Name Date Day Signature Date Day Signature
+ and Date of the and Book and Seal and Book and Seal
+ Notary Time Number Time Number
+ Public
+
+
+Other Particulars }
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 39A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+Condominium unit:
+ Format No. -14 (b)
+
+
+ Democratic Socialist Republic of Sri Lanka
+
+ Title Certificate
+
+ Title Registration Act, No. 21 of 1998 (Section 37)
+
+
+ Province : Cadastral Map Number :
+
+ District : Block Number :
+
+ Divisional Secretary’s Division : Sheet Number :
+
+ Grama Niladhari Division : Unit Number :
+
+ Village : Extent of the Unit :
+
+ Assessment Number : Extent of the Title :
+
+
+ First Schedule (Title)
+
+
+ Owner’s Name :
+ Address :
+ NIC number :
+
+
+ Second Schedule (Plan of the Land)
+
+
+I do hereby certify that those who stated in the First Schedule have a Temporary Title of Condominium to the unit mentioned
+in the Second Schedule above.
+
+ ....................................
+ Title Registrar.
+ Date of Register :
+
+ Office :
+
+
+40A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+Condominium unit: Format No. 14 (c)
+
+
+ Democratic Socialist Republic of Sri Lanka
+
+ Title Certificate
+
+ Title Registration Act, No. 21 of 1998 (Section 37)
+
+
+ Province : Cadastral Map Number :
+
+ District : Block Number :
+
+ Divisional Secretary’s Division : Sheet Number :
+
+ Grama Niladhari Division : Unit Number :
+
+ Village : Extent of the Unit :
+
+ Assessment Number : Extent of the Title :
+
+
+ First Schedule (Title)
+
+
+ Owner’s Name :
+ Address :
+ NIC number :
+
+
+ Second Schedule (Plan of the Land)
+
+
+I do hereby certify that those who stated in the First Schedule have a Partly Title of Condominium to the unit mentioned in
+the Second Schedule above.
+
+ ....................................
+ Title Registrar.
+ Date of Register :
+
+ Office :
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 41A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+Condominium unit: Format No. 14 (d)
+
+
+ Democratic Socialist Republic of Sri Lanka
+
+ Title Certificate
+
+ Title Registration Act, No. 21 of 1998 (Section 37)
+
+
+ Province : Cadastral Map Number :
+
+ District : Block Number :
+
+ Divisional Secretary’s Division : Sheet Number :
+
+ Grama Niladhari Division : Unit Number :
+
+ Village : Extent of the Unit :
+
+ Assessment Number : Extent of the Title :
+
+
+ First Schedule (Title)
+
+
+ Owner’s Name :
+ Address :
+ NIC number :
+
+
+ Second Schedule (Plan of the Land)
+
+
+I do hereby certify that those who stated in the First Schedule have a Title of Condominium to the unit mentioned in the
+Second Schedule above.
+
+ ....................................
+ Title Registrar
+ Date of Register :
+
+ Office :
+
+
+42A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ Form No. - 19
+
+ Democratic Socialist Republic of Sri Lanka
+
+ Title Register
+
+ Title Registration Act, No. 21 of 1998
+Prior Registration
+Division:- .............. Volume:- ........................Folio .............................
+ 1. Information on Land :- Title No:-
+
+ Cadastral map
+ District : :
+ number
+
+ Divisional Secretary’s Division : Block number :
+
+ Grama Niladhari Division : Sheet no. :
+
+ No. of Land part/
+ Street/ Village/ City : :
+ Parts
+
+ Assessment number : Extent :
+
+ First Schedule
+
+ 2. Information on Ownership : Notes can be made by subsequent endorsements
+
+ Full Name Nature
+ Nature of the Registration Registrar’s
+ Address and Ownership to and the Other
+ Instrument Ownership Date and signature
+ N.I.C. No. of other Lands Class of Particulars
+ and No. Time and Stamp
+ the owner the Title
+
+
+ Second Schedules Note: Notes can be made by subsequent endorsements.
+
+ 3. Encumbrances
+
+
+ Legal Document Nature Registration Cancellation
+ of the Other
+ Encum- Sig- particulars
+ Nature of Certifying Date and Certifying Date and
+ Number brances na- Stamp Signature Stamp
+ instrument Officer Time Officer Time
+ ture
+
+
+ Third Schedule
+04. Other Particulars
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+
+
+ 1. Payments to be made to the Government or to the Local Authority:........................................
+ 2. Natural properties situated in the land or developments done to the land :- ...............................
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ 3. Other relevant details:- ............................................................................................ ....................................
+ 4. Cross References :- ................................................................................................. Title Registrar
+ 43A
+
+
+44A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Form No. – 19 (a)
+ Title Register
+
+ Title Registration Act, No. 21 of 1998
+Prior Registration
+Division:- .............. Volume:- ........................ Folio. .............................
+ 1. Information on Land :- Title No.:-
+
+
+ District : ........................................................................................
+ Divisional Secretary’s Division : ........................................................................................
+ Grama Niladhari Division : ........................................................................................
+ Street/ Village/ City : ........................................................................................
+ Cadastral Map number : ........................................................................................
+ Parcel No. : ........................................................................................
+ Extent : ........................................................................................
+
+
+ First Schedule
+ 2. Owner – The State:-
+
+
+ Allocation
+ Details on Grant
+ or Lien
+ or other
+ Registration Bearer’s
+ Instrument condition Other
+ Date and Ful Value
+ No. NIC Nature of or Particulars
+ Time name Institution Period
+ No. Encumbrances ownership
+ and on other
+ Address Lands
+
+
+ Note: Notes can be made by subsequent endorsements.
+ Second Schedule
+
+ 3. Encumbrances
+
+
+ Legal Document Cancellation
+ Regis-
+ tration Sig- In-
+ Descrip- stru-
+ Date na- Stamp Date
+ Nature of Certifying tion ment Certifying
+ Number and ture Description and No. Signature Stamp
+ instrument Officer Time No. Officer
+ Time
+ and
+ Date
+
+
+ Third Schedule
+04. Other Particulars
+ 1. Payments to be made to the Government or to the Local Authority:........................................
+ 2. Natural properties situated in the land or developments done to the land :- ...............................
+ 3. Other relevant details:- ............................................................................................
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+
+
+ ....................................
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ Title Registrar
+ 45A
+
+
+46A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Form No. – 32
+ Instrument of Exchange of Lands
+ Title Registration Act No. 21 of 1998
+ Section 43
+
+
+For office use only
+
+First Land Part Second Land Part
+
+
+ Received Received
+
+
+Date: Date Stamp Date: Date Stamp
+Time: Time:
+Number: Number:
+Fee: Fee:
+ (a) Stamp duty (Receipt No.): (a) Stamp duty (Receipt No.):
+ (b) Registration Fee (Receipt No.): (b) Registration Fee (Receipt No.):
+Title Registration Number: Title Registration Number:
+Receiving officer: Receiving officer:
+ Registration Registration
+Registered in the Title Register ............................ Registered in the Title Register ............................
+Registrar of Titles Registrar of Titles
+Date ................... Date ...................
+
+
+ 1. Particulars of two lands to be exchanged:
+
+
+(a) District: ............................................ (a) District: ............................................
+(b) Divisional Secretary’s Division:................. (b) Divisional Secretary’s Division::.................
+(c) Grama Niladhari Division:........................ (c) Grama Niladhari Division:........................
+(d) Village/ City:....................................... (d) Village/ City:.......................................
+(e) Street:................................................ (e) Street:................................................
+(f) Assessment Number:.............................. (f) Assessment Number:..............................
+(g) Cadastral Map number:........................... (g) Cadastral Map number:...........................
+(h) Sheet No:............................................ (h) Sheet No:............................................
+(i) Block No:. ......................................... (i) Block No: .........................................
+(j) Land parcel No:..................................... (j) Land parcel No:.....................................
+(k) Extent:.............................................. (k) Extent:..............................................
+(l) Extend subject to the transfer:.................. (l) Extend subject to the transfer:................
+(m) No. of the unit, if a Condominium Property: ... (m) No. of the unit, if a Condominium Property :......
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 47A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ 2. Reference of the Prior registration
+
+ a. Place of Registration :- ................................. ....................................
+
+ b. No. of the Title Certificate:- ........................... ....................................
+
+ c. Class of the Title:- ..................................... ....................................
+
+ 3. First Party
+
+ a. Full Name: ............................................................
+
+ b. NIC No.: ...............................................................
+
+ c. Address: ...............................................................
+
+ 4. Second Party
+
+ a. Full Name: ............................................................
+
+ b. NIC No.: ...............................................................
+
+ c. Address: ...............................................................
+
+
+ 5. Consideration :
+
+ a. First Land Rs. .................... (in figures) ............................(in letters)
+
+ b. First Land Rs. .................... (in figures) ............................(in letters)
+
+
+ 6. Fee
+
+ a. Registration Fee :
+
+ b. Receipt No :
+
+ c. Stamp duty :
+
+ d. Receipt No :
+
+
+ 7. Conditions
+
+.........................................................................................................
+The title to the land parcels, interest of the parties to the respective land parcel, herein specified in the land parcels above
+described, have been exchanged between the parties, named above, for the consideration here in expressed here by, subject
+to the encumbrances as shown hereon this........................................day of...........................20..........It is here by request to
+registert his “Instrument of Land Exchange” in the Title Register.
+
+.................................... ....................................
+Signature of the First Party Signature of the Second Party
+
+Date ............................ Date ............................
+
+
+48A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ 3. Declaration of Witnesses: -
+
+ We certify that this Instrument of Exchange of Land was signed in our presence and both parties are well known to
+ us.
+
+
+ Full Names of witnesses N.I.C.No. Address Signature
+
+
+ Attestation
+ Prepared and Certified in accordance with the Section 44 of the Title Registration Act No. 21 of 1998
+
+
+Date:........................... .....................
+ Notary Public.
+ (Signature and Official Frank)
+ Note:
+ Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the
+ Notary Public shall certify the‘Instrument’only after examining the particulars stipulated in under Section 44 of
+ the Title Registration Act, No. 21of 1998.
+
+
+ Form No. – 24
+ Instrument of Transfer made for Security Bond
+ Title Registration Act, No. 21 of 1998
+ Section 43
+
+ For office use only
+
+ Received Registration
+
+
+ Date: Date Stamp : Registered in the Title Register
+
+ Time: No :.......................................
+
+ Number:
+
+ Fee:
+
+ (a) Stamp duty (Receipt No.) : Registrar of Titles :
+
+ (b) Registration Fee (Receipt No.) : Date : ...................
+
+ Title Registration Number:
+
+ Receiving Officer:
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 49A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+1. Particulars of the land :
+
+(a) District :............................................
+(b) Divisional Secretary’s Division:.................
+(c) Grama Niladhari Division:........................
+(d) Village/ City:.......................................
+(e) Street:................................................
+(f) Assessment Number:..............................
+(g) Cadastral Map number:...........................
+(h) Block No:. .......................................
+(i) Sheet No:. .........................................
+(j) Land parcel no:.....................................
+(k) Extent:..............................................
+(l) No. of the unit, if a Condominium Property :........
+(m) Extend subject to the transfer :.........................
+
+
+2. Reference of the Prior registration :
+
+ a. Place of Registration:................................. ....................................
+
+ b. No. of the Title Certificate:........................... ....................................
+
+ c. Class of the Title: ..................................... ....................................
+
+3. Guarantor
+
+ a. Full Name: ............................................................
+
+ b. NIC No.: ...............................................................
+
+ c. Address: ...............................................................
+
+
+4. If the guarantor is a Company/ Joint Venture/ Business Enterprises
+
+ a. Name of the Institute: ............................................................
+
+ b. Registration No.: ...............................................................
+
+ c. Registered Address: ...............................................................
+
+
+5. Effective period of Guaranty:
+ ................................................................................
+6. Value of the Property
+
+ Rs. .................... (in figures) ............................(in letters)
+
+
+50A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ 7. Fee:
+
+ a. Registration Fee : ..........................................
+
+ b. Receipt No : ..........................................
+
+ c. Stamp duty : ..........................................
+
+ d. Receipt No : ..........................................
+
+
+ 8. Conditions if any,
+
+ .........................................................................................................
+
+ 9. Encumbrances/ rights regarding other lands
+
+ Nature Description Valid Period
+
+
+* Cut off the unnecessary words
+
+I................................of................................(Guarantor)here by agreed to keep the land and property on it described above, as
+a Surety to the ......................... (Institution/ Department/ Ministry). It is here by requested to register this “Instrument
+of Transfer made for Security Bond” in the Title Register.
+
+.................................... ....................................
+Signature of the Guarantor. Signature of the Holder of Guarantee.
+
+Date ............................ Date ............................
+
+
+ 10. Declaration of Witnesses: -
+
+We certify that this Instrument of Transfer made for Security Bond was signed in our presence on .............date
+at.....................and both Guarantee and the Holder of Guarantee are well known to us.
+
+
+ Full Names of witnesses N.I.C.No. Address Signature
+
+
+ Attestation
+
+ Prepared and Certified in accordance with the Section 44 of the Title Registration Act, No. 21 of 1998
+
+ .....................
+Date:........................... Notary Public.
+ (Signature and Official Frank)
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 51A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the ‘Instrument’ only after examining the particulars stipulated in under Section 44 of theTitle Registration
+Act, No.21 of 1998.
+
+Cancellation of the Security Bond
+ 11. The above mentioned property has been transferred to the ......................... (Institution/ Department/ Ministry) of
+ .......................................... by .........................................................of ................................. as
+ a surety and the relevant agreement has been terminated with effect from ...............................date and therefore,
+ that surety has been cancelled. It is here by requested to register this cancellation of Surety in the Title Register.
+
+
+ Form No. – 27
+ Instrument of Cancellation of Gift
+
+ Title Registration Act No. 21 of 1998
+ Section 43
+
+
+ For office use only
+
+ Received
+ Registration
+ Date: Day Stamp
+ Time: Registered in the Title Register
+ Number: No.................................
+ Fee:
+ (a) Stamp duty (Receipt No.): ............................
+ (b) Registration Fee (Receipt No.): Registrar of Titles
+ Title Registration Number: Date ...................
+ Receiving officer:
+
+
+1. Particulars of the land
+
+ (a) District :............................................
+ (b) Divisional Secretary’s Division :.................
+ (c) Grama Niladhari Division :........................
+ (d) Village/ City :.......................................
+ (e) Street :................................................
+ (f) Assessment Number :..............................
+ (g) Cadastral Map number :...........................
+ (h) Block No :. .......................................
+ (i) Sheet No :. .........................................
+ (j) Land parcel No :.....................................
+ (k) Extent :..............................................
+ (l) No. of the unit, if a Condominium Property: ........
+ (m) Extend subject to the cancellation of gift :.........
+
+
+52A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+2. Reference of the Prior registration :
+
+ a. Place of Registration :................................. ....................................
+
+ b. No. of the Title Certificate :........................... ....................................
+
+ c. Class of the Title : ..................................... ....................................
+
+
+3. Donor
+
+ a. Full Name: ............................................................
+
+ b. NIC No.: ...............................................................
+
+ c. Address: ...............................................................
+
+
+4. Donee of the gift to be cancelled
+
+ a. Full Name: ............................................................
+
+ b. NIC No.: ...............................................................
+
+ c. Address: ...............................................................
+
+
+5. Conditions mentioned in the Gift Deed/ Instrument
+ ................................................................................
+
+6. Gift deed to be cancelled (If relevant)
+
+ a. Number: ............................................................
+
+ b. Name of the Notary: ..............................................
+
+ c. Date: ...............................................................
+
+7. Fee:
+
+ a. Registration Fee :
+
+ b. Receipt No :
+
+ c. Stamp duty :
+
+ d. Receipt No :
+
+
+8. Reasons/ conditions for the Cancellation of the deed
+ ......................................................................................................
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 53A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+9. Encumbrances/ rights regarding other lands
+
+ Nature Description Validity Period
+
+
+* Cut off the unnecessary words
+
+Due to failure or non-fulfillment in the manner expected to me at the time of making the gift, of the land/ land part described
+above, which has been gifted to the ............................. .....of ........................ subjecting to the life interest (if any
+holder/ holders of life interest are there) of .................................. resides at .............................., by me, the donor,
+......................... of ........................it is hereby requested to register this Instrument of Cancellation of Gift in the Title
+Register, to cancel the said gift and transfer the said land to me.
+
+ .................................... ....................................
+ Signature of the Guarantor Signature of the Holder of Guarantee
+
+Date ............................ Date .....................
+
+
+11. Declaration of Witnesses: -
+
+ We certify that this Instrument of Cancellation of Gift was signed in our presence on .............date at.................
+ and the Donor is well known to us.
+
+
+ Full Names of witnesses N.I.C.No. Address Signature
+
+
+ Attestation
+
+ Prepared and Certified in accordance with the Section 44 of the Title Registration Act, No. 21 of 1998
+
+
+ .....................
+Date:........................... Notary Public.
+ (Signature and Official Frank)
+
+Note: Stakeholders and Witnesses shall place their signatures in the presence of their respective attesters and the Notary
+Public shall certify the ‘Instrument’only after examining the particulars stipulated in under Section 44 of theTitle Registration
+Act, No. 21 of 1998.
+
+
+54A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Form No. – 33
+
+ Instrument of Cancellation of Life Interest when the Holder of the Life Interest is diseased.
+ Title Registration Act No 21 of 1998
+ Section 43
+
+ For office use only
+
+ Received
+
+ Registration
+
+ Date: Day Stamp
+
+ Time: Registered in the Title Register
+
+ Number: No.................................
+
+ Fee:
+
+ (a) Stamp duty (Receipt No.): ............................
+
+ (b) Registration Fee (Receipt No.): Registrar of Titles
+
+ Title Registration Number: Date ...................
+
+ Receiving officer:
+
+
+1. Particulars of the land
+
+
+ (a) District :............................................
+ (b) Divisional Secretary’s Division:.................
+ (c) Grama Niladhari Division:........................
+ (d) Village/ City:.......................................
+ (e) Street:................................................
+ (f) Assessment Number:..............................
+ (g) Cadastral Map number:...........................
+ (h) Block No.: .......................................
+ (i) Sheet No. :.........................................
+ (j) Land parcel No:.....................................
+ (k) Extent:..............................................
+ (l) No. of the unit, if a Condominium Property :........
+ (m) Extend subject to the cancellation of gift :.........
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 55A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+2. Reference of the Prior registration
+
+ a. Place of Registration................................. ....................................
+
+ b. No. of the Title Certificate........................... ....................................
+
+ c. Class of the Title ..................................... ....................................
+
+
+3. Owner
+
+ a. Full Name: ............................................................
+
+ b. NIC No.: ...............................................................
+
+ c. Address: ...............................................................
+
+
+4. Holder of the Life Interest
+
+ a. Full Name: ............................................................
+
+ b. NIC No.: ...............................................................
+
+ c. Address: ...............................................................
+
+
+5. Registered date of Life Interest :...................
+
+ Day book No.:.......................................
+
+
+6. Diseased date of the Holder of the Life Interest.................. (attach a Copy of the certified Death Certificate)
+
+
+ a. No. of the Death Certificate...............
+
+ b. Registered Date............................
+
+ c. District......................................
+
+ d. Division registered.........................
+
+
+7. Fee:
+
+ a. Registration Fee :
+
+ b. Receipt No :
+
+ c. Stamp duty :
+
+ d. Receipt No :
+
+
+56A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+* Cut off the unnecessary words
+
+I (Owner)................................. of ..........................do hereby state that as the Life Interest
+Holder................................... of..................................has been diseased, the registration of that life interest has
+been cancelled. It is hereby requested to register this Instrument of Cancellation of Life Interest when the Holder of the Life
+Interest is diseased, in the Title Register.
+
+
+....................................
+Signature of the Owner.
+
+
+Date ............................
+
+
+8. Declaration of Witnesses: -
+
+ We certify that this Instrument of Cancellation of Life Interest when the Holder of the Life Interest is diseased,
+ wassigned in our presence on .............date at.............and the Owner is well known to us.
+
+
+ Full Names of witnesses N.I.C.No. Address Signature
+
+
+ Attestation
+
+ Prepared and Certified in accordance with the Section 44 of the Title Registration Act No. 21 of 1998
+
+ .....................
+Date:........................... Notary Public.
+ (Signature and Official Frank)
+
+
+Note: Stake holders and Witnesses shall place their signatures in the presence of their respective at testers and the Notary
+Public shall certify the‘Instrument’only after examining the particulars stipulated in under Section 44 of theTitle Registration
+Act,No.21 of 1998.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 57A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Form No. – 34
+ Instrument of Cancellation of the registration of Certificate of Sale
+ Title Registration Act No. 21 of 1998
+ Section 43
+
+ For office use only
+
+ Received
+
+ Registration
+
+ Date: Day Stamp
+
+ Time: Registered in the Title Register
+
+ Number: No.................................
+
+ Fee:
+
+ (a) Stamp duty (Receipt No.): ............................
+
+ (b) Registration Fee (Receipt No.): Registrar of Titles
+
+ Title Registration Number: Date ...................
+
+ Receiving officer:
+
+
+1. Particulars of the land
+
+ (a) District: ............................................
+
+ (b) Divisional Secretary’s Division:.................
+
+ (c) Grama Niladhari Division:........................
+
+ (d) Village/ City:.......................................
+
+ (e) Street:................................................
+
+ (f) Assessment Number:..............................
+
+ (g) Cadastral Map number:...........................
+
+ (h) Block No.: .......................................
+
+ (i) Sheet No. :.........................................
+
+ (j) Land parcel No:.....................................
+
+ (k) Extent:..............................................
+
+ (l) No. of the unit, if a Condominium Property :........
+
+
+58A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+2. Reference of the Prior registration
+
+ a. Place of Registration................................. ....................................
+
+ b. No. of the Title Certificate........................... ....................................
+
+ c. Class of the Title ..................................... ....................................
+
+3. Total consideration
+
+ ...........................................................
+
+4. Day book No. of which the Sales Certificate has been Registered:...................
+
+ Date.:.......................................
+
+
+5. Creditor/ Financial Institute
+
+ a. Full Name: ............................................................
+
+ b. NIC No.: ...............................................................
+
+ c. Address: ...............................................................
+
+6. Debtor
+
+ a. Full Name: ............................................................
+
+ b. NIC No.: ...............................................................
+
+ c. Address: ...............................................................
+
+
+7. Fee:
+
+ a. Registration Fee
+
+ b. Receipt No.
+
+I do hereby declare that the sales Certificate registered on ................ Date and the day book number.......... By
+........................ (Institute) situated in .............................. has been cancelled. It is hereby requested to register this
+Instrument of Cancellation of the registration of Certificate of Sale, inthe Title Register
+
+.................................... ....................................
+ Creditor/ Financial Institute Debtor
+
+
+Date ............................ Date .....................
+
+
+8. Declaration of Witnesses: -
+
+ We certify that this Instrument of Cancellation of the registration of Certificate of Sale, was signed on..............
+ date at.................in our presence and the Owner is well known to us.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 59A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ Full Names of witnesses N.I.C.No. Address Signature
+
+
+ Attestation
+
+ Prepared and Certified in accordance with the Section 44 of the Title Registration Act No. 21 of 1998
+
+ .....................
+Date:........................... Notary Public.
+ (Signature and Official Frank)
+
+ Note: Stake holders and Witnesses shall place their signatures in the presence of their respective attesters and the
+Notary Public shall certify the ‘Instrument’only after examining the particulars stipulated in under Section 44 of the Title
+Registration Act, No. 21 of 1998.
+
+
+ Form No. – 35
+ Instrument on transferring or selling the Right of way/ Right to access with servitude.
+ Title Registration Act No. 21 of 1998
+ Section 43
+
+ For office use only
+
+ Received
+ Registration
+ Date: Day Stamp
+ Time: Registered in the Title Register
+ Number: No.................................
+ Fee:
+ (a) Stamp duty (Receipt No.): ............................
+ (b) Registration Fee (Receipt No.): Registrar of Titles
+ Title Registration Number: Date ...................
+ Receiving officer:
+
+
+60A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+1. Particulars of the land
+
+ (a) District: ............................................
+ (b) Divisional Secretary’s Division:.................
+ (c) Grama Niladhari Division:........................
+ (d) Village/ City:.......................................
+ (e) Street:................................................
+ (f) Assessment Number:..............................
+ (g) Cadastral Map number :...........................
+ (h) Block No. :.......................................
+ (i) Sheet No. :.........................................
+ (j) Land parcel No:.....................................
+ (k) Extent :..............................................
+
+
+2. Reference of the Prior registration
+ a. Place of Registration................................. ....................................
+ b. No. of the Title Certificate........................... ....................................
+ c. Class of the Title ..................................... ....................................
+3. Transferor
+ a. Full Name: ............................................................
+ b. NIC No.: ...............................................................
+ c. Address: ...............................................................
+4. Transferee
+ a. Full Name: ............................................................
+ b. NIC No.: ...............................................................
+ c. Address: ...............................................................
+5. Consideration
+ Rs. .................... (in figures) ............................(in letters)
+6. Fee:
+ a. Registration Fee
+ b. Receipt No.
+ c. Stamp duty
+ d. Receipt No.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 61A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+7. Conditions...................................................
+
+8. Encumbrances/ rights regarding other lands
+
+ Nature Description Validity Period
+
+
+* Cut off the unnecessary words
+
+Right of way/ right to access with servitude, right of the Transferor regarding the land described above, have been transferred
+to the Transferee by the Transferor for the consideration stated here, subjecting to the conditions stated hereon. It is hereby
+requested to register this Instrument on transferring or selling the Right of way/ Right to access with servitude, in the Title
+Register
+
+.................................... ....................................
+ Transferor Transferee
+
+
+Date ............................ Date .....................
+
+
+9. Declaration of Witnesses: -
+
+
+ We certify that his Instrument on transferring or selling the Right of way/ Right to access with servitude, was signed
+ on.............. date at.................in our presence and bothTransferor and Transferee are well known to us.
+
+
+ Full Names of witnesses N.I.C.No. Address Signature
+
+
+ Attestation
+
+ Prepared and Certified in accordance with the Section 44 of the Title Registration Act No. 21 of 1998
+
+ .....................
+Date:........................... Notary Public.
+ (Signatureand Official Frank)
+
+ Note: Stake holders and Witnessess hall place their signatures in the presence of their respective attesters and the
+Notary Public shall certify the ‘Instrument’only after examining the particulars stipulated in under Section 44 of the Title
+Registration Act, No.21 of 1998.
+
+
+62A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Form No. – 36
+ Instrument on Given on lease by the Holder of Life Interest.
+ Title Registration Act, No. 21 of 1998
+ Section 43
+
+ For office use only
+
+ Received
+
+ Registration
+
+ Date: Day Stamp
+
+ Time: Registered in the Title Register
+
+ Number: No.................................
+
+ Fee:
+
+ (a) Stamp duty (Receipt No.): ............................
+
+ (b) Registration Fee (Receipt No.): Registrar of Titles
+
+ Title Registration Number: Date ...................
+
+ Receiving officer:
+
+
+1. Particulars of the land:
+
+
+ (a) District ............................................
+
+ (b) Divisional Secretary’s Division.................
+
+ (c) Grama Niladhari Division........................
+
+ (d) Village/ City.......................................
+
+ (e) Street................................................
+
+ (f) Assessment Number..............................
+
+ (g) Cadastral Map number...........................
+
+ (h) Block No. .......................................
+
+ (i) Sheet No. .........................................
+
+ (j) Land parcel no.....................................
+
+ (k) Extent..............................................
+
+ (l) No. of the unit, if a Condominium Property ........
+
+ (m) Extend subject to the Lease..........................
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 63A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+2. Reference of the Prior registration
+
+ a. Place of Registration................................. ....................................
+
+ b. No. of the Title Certificate........................... ....................................
+
+ c. Class of the Title ..................................... ....................................
+
+
+3. Lessor/ Holder of Life Interest
+
+ a. Full Name: ............................................................
+
+ b. NIC No.: ...............................................................
+
+ c. Address: ...............................................................
+
+
+4. Lessee
+
+ a. Full Name: ............................................................
+
+ b. NIC No.: ...............................................................
+
+ c. Address: ...............................................................
+
+
+5. Lease Period
+
+ For a period of .........y ears and .... months from ... date of ..... month ....... To...... date of ..... month .......
+
+
+6. Lease amount
+
+ Rs. .................... (in figures) ............................(in letters)
+
+
+7. Fee:
+
+ a. Registration Fee
+
+ b. Receipt No
+
+ c. Stamp duty
+
+ d. Receipt No
+
+
+8. Conditions if any...................................................
+
+
+64A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+9. Encumbrances/ rights regarding other lands
+
+ Nature Description Validity Period
+
+
+* Cut off the unnecessary words
+
+The land and the property described above, is given on lease to .........................of............ the Lessee
+by............................... Of.............. the Lessor, for the consideration stated here, subjecting to the conditions stated
+hereon. It is hereby requested to register this Instrument on Given on lease by the Holder of Life Interest, in the Title Register.
+
+.................................... ....................................
+ Lessor Lessee
+
+
+Date ............................ Date .....................
+
+
+10. Declaration of Witnesses: -
+
+
+ We certify that this Instrument on Given on Lease, was signed on.............. date at.................in our presence
+ and both Lessor and Lessee are well known to us.
+
+
+ Full Names of witnesses N.I.C.No. Address Signature
+
+
+ Attestation
+ Prepared and Certified in accordance with the Section 44 of the Title Registration Act, No. 21 of 1998
+
+ .....................
+Date:........................... Notary Public.
+ (SignatureandOfficialFrank)
+
+ Note: Stake holders and Witnesses shall place their signatures in the presence of their respective attesters and the
+Notary Public shall certify the ‘Instrument’only after examining the particulars stipulated in under Section 44 of the Title
+Registration Act, No. 21 of 1998.
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 65A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ Format (37)
+
+ At the District Court of ....................
+
+ Plaintiff
+
+
+ Accused
+
+
+ At this ..................date of month of ...........
+
+ “Commissioner General for Title Settlement, the plaintiff whose name mentioned above stated in his complaint as
+ follows, appearing through his Lawyer”
+
+ 1. The land described in Schedule “a” hereof lies within the jurisdiction of this Court
+
+ 2. According to The Gazette published under the Section 12 of the Title Registration Act, No. 21 of 1998, Deputy
+ Commissioner/ Assistant Commissioner of the Land Title Settlement Regional Office ..................... conducted
+ an investigation regarding the land described in Schedule “a” herein whereupon the above Defendant pretended
+ to be related to the and claimed to the land.
+
+ 3. In deciding the rights/ extent/ boundaries presented by the defendants in the said investigation, the plaintiff is
+ unable to reach a decision due to the disputed nature of the said claims, so it is necessary to present the said
+ claims to this Court for investigation and decision.
+
+ 4. The plaintiff has submitted as follows to the Court to know the details of the said case, for this Court to determine
+ the said situation
+
+ 5. The plaintiff stated that the documents detailed in Schedule “b” are a part of this complaint.
+
+
+Therefore, the plaintiff implores to,
+
+ a. Obtain a Court Order regarding the said dispute,
+
+ b. Obtain litigation fees
+
+ c. The plaintiff shall also seek such other or further relief as the Court may deem fit
+
+
+......................................
+Lawyer representing the Plaintiff
+ Schedule “a”
+
+The land bearing Parcel No............. with an extent of ..............hectare, in the sheet No...............of the Block
+No.................in the Cadastral Map No................ of the village..................... within the Grama Niladhari
+Division...................... Of the Divisional Secretariat Division......................in the District of ...........................
+in ...........................province.
+
+
+66A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+ Schedule “b”
+
+1. Certified copy of the Gazette published under the Section 12 of the Title Registration Act, No. 21 of 1998.
+
+2. Certified copy of the Cadastral Map, drawn including the land subjected to this Case
+
+3. Certified copies of the Land Title Application submitted by the Accused/ Accusers claiming their right.
+
+4. Copies of Deeds submitted by the Accused/ Accusers
+
+5. Copies of Extracts of the Land Registry, noted by the Assistant Title Investigation Officer.
+
+6. Certified copy of the Report on Property investigation details
+
+7. Certified copy of the Title Investigation Report carried out under the Section 13 of the Title Registration Act, No. 21 of
+ 1998.
+
+8. If a decision has been given by the Conciliation Board appointed under the Section 7 of the Title Registration Act,
+ No. 21 of 1998, a certified copy of that decision
+
+......................................
+Lawyer representing the Accused
+
+
+ Format (38)
+ Affidavit
+
+I, the Deputy / Assistant Commissioner of the Land Title Settlement Regional Office ....................... Of
+....................... Divisional Secretariat Division in ....................... District, being a Buddhist / Christian /Islamic, do
+hereby solemnly, honestly and truthfully declare as follows.
+ 1. I am the Deputy / Assistant Title Settlement Commissioner in the Regional office of ............................
+ Appointed under Section 2 of the Registration of Title Act, No. 21 of 1998.
+ 2. I declare the following particulars under the authority /power vested in me, under Section 21 of the Registration of
+ Title Act, No. 21 of 1998.
+
+ 3. The land referred to in the Schedule to the accompanying complaint sheet, is situated within the Jurisdiction of the
+ District Court ..............................
+
+ 4. This land is depicted as Lot No. ..................of Sheet No. ....................... Of Block No. ............... in Ca-
+ dastral map No. .............................Prepared by Surveyor General.
+
+
+ 5. In Accordance with the notice published by me in the Government Gazette under Section 12 of Registration of Title
+ Act, No. 21 of 1998, an investigation was conducted under Section 13 of the Act, to Determine the ownership of
+ this land, and I hereby state that due to the disputed nature of the claims while the investigation is being carried out,
+ it is my opinion that it is more appropriate for the investigations to be conducted by the District Court.
+
+..................................................
+Deputy /Assistant Commissioner of Title Settlement
+........................ Division Date:
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 67A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+This affidavit was certified and declared before me at ........................ after he understood those facts on .............
+day of ........... Month 20............after I read and propound the facts contained in this affidavit to the above named
+......................................
+......................................................................
+Justice of Peace / Commissioner of Oaths Date:
+
+Official Stamp
+
+
+ Format (39)
+
+Senior Superintendent of Survey (Bimsaviya).................................. District
+
+ The Declaration made under Sub Section (2) of the Section 36 of the Registration of Title Act No.21 of 1998.
+
+ I/We, do hereby given the consent to Subdivision/Amalgamation/ Subdivision Following Amalgamation of the
+Parcel/Parcels of Sheet No. ......... of Block No. ....... Of Cadastral Map No........ with the following Title Certificate /
+Certificates owned by I/We, the undersigned.
+
+ 1. Title Certificate No. .................................... Parcel No. ..................
+ Full Name.................................................................................
+ National Identity Card No. ..............................................................
+ Signature ............................................ Date .................................
+
+
+ 2. Title Certificate No. .................................... Parcel No. ..................
+ Full Name.................................................................................
+ National Identity Card No. ..............................................................
+ Signature ............................................ Date .................................
+
+
+ 3. Title Certificate No. .................................... Parcel No. ..................
+ Full Name.................................................................................
+ National Identity Card No. ..............................................................
+ Signature ............................................ Date .................................
+
+And I/ We, the undersigned, further agree to carry out the said Subdivision / Amalgamation / Subdivision following
+Amalgamation, as shown in the sketch below and reserve the Rights.
+
+Sketch depicting the Subdivision / Amalgamation / Subdivision following Amalgamation
+
+
+68A I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+ 1. Full Name
+ ........................................................................................................
+ National Identity Card No. ..............................................................
+ Signature......................................Date.........................................
+ 2. Full Name
+ ........................................................................................................
+ National Identity Card No. ..............................................................
+ Signature......................................Date.........................................
+ 3. Full Name
+ ........................................................................................................
+ National Identity Card No. ..............................................................
+ Signature......................................Date.........................................
+
+
+Note : Depending on the number of Parties , several forms may be used.
+
+ Second Schedule
+
+ Application Fees
+
+
+ Section Description Fee (Rs.)
+
+ 1 34(1) Application to inspect the Title Register 600
+
+
+ 2 34(1) Application to inspect the Cadastral Map (By Survey Department) 100
+
+
+ 3 34(2) Application to obtain a Extract from Title Register 600
+
+ 4 34(3) Application to obtain a copy of the Cadastral Map (By Survey Department) A4,Legal,
+ A3 A2,
+ A1,A0
+ per page
+ respectively
+ Rs.300.00,
+ 380.00,
+ 500.00,
+ 850.00,
+ 1,700.00,
+ 3,400.00
+
+
+ I fldgi ( ^I& fPoh - YS% ,xld m%cd;dka;s%l iudcjd§ ckrcfha w;s úfYI .eiÜ m;%h - 2022'12'01 69A
+ Part I : Sec. (I) - GAZETTE EXTRAORDINARY OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA - 01.12.2022
+
+
+5 36(1) Application to apply for Registration of a Subdivision or an amalgamation 600
+
+6 37(1) Application to issue a Title Certificate 600
+
+7 50(1) Application to register horizontal Sub – division of a building 1000
+
+8 15(4) Application to issue a Title Certificate 1000
+
+9 Other Application Fees 600
+
+10 Application to issue a copy of the duplicate Title Certificate 2500
+
+
+ Registration Fees
+
+
+ Descreption Fee (Rs.)
+
+1 Instrument of Mortgage 1000
+
+2 Address 500
+
+3 Instrument of Lease 1000
+
+4 Caveat Ordinance (For Each Six months) 5000
+
+5 Instrument of Cancellation 1000
+
+6 Instrument of Transfer 1000
+
+7 Instrument of Gift 1000
+
+8 For Registration of Horizontal Subdivision of a building (for each unit) 5000
+
+9 Registration of Amalgamation/Subdivision . unit 1-5 (for each unit) 1000
+
+10 Registration of Amalgamation/Subdivision . unit 6-10 (for all units,for each unit) 2500
+
+11 Registration of Amalgamation/Subdivision . More than10 Units (for all units,for each unit) 3000
+
+12 Instrument of Sales Agreement 1000
+
+13 Instrument of Sales Certifiates 1000
+
+14 Other Instruments enacted under the Registration of Title Act 1000
+
+ Other instruments which are published by other Acts which can be registered in the Title
+15 1000
+ Register
+
+
+EOG 12-0014
+
+
+ PRINTED AT THE DEPARTMENT OF GOVERNMENT PRINTING, SRI LANKA.

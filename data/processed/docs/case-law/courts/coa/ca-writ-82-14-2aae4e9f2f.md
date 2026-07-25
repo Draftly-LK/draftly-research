@@ -1,0 +1,3 @@
+# ca writ 82 14
+
+IN THE COURT OF APPEAL OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA CA Writ 82/2014 Martinus C. Perera & Son (Private) Ltd 167, Union Place, Colombo 02. PETITIONER Vs. N.C.J. Bertaram P.L.A.Kumri Semaratne RESPONDENTS BEFORE COUNSEL DECIDED ON CA 82/2014 WRIT Sisira J. de Abrew, J (PICA) & P.W.D.C. Jayathilaka, J. Dushantha Kularathne for the Petitioner. 02.04.2014 SISIRA J. DE ABREW, J (PICA) Learned counsel for the petitioner makes an application to withdraw the petition. Application for withdraw the petition is allowed. Petition is dismissed. PRESIDENT OF THE COURT OF APPEAL P.W.D.C. Jayathilaka, J. I agree. JUDGE OF THE COURT OF APPEAL KRL/- I I I I I t r i , J I , !, f I I I I ! ; , ! I

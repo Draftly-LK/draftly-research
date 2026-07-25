@@ -1,0 +1,3 @@
+# ca phc 65 06
+
+IN THE COURT OF APPEAL OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA. CA (PHC)Appeal No.65/06 P.H.C.Hambantota No.HCA 01/03 Wilfred Raffa Lake Road, Kocheriyagama, Tissamaharamaya. Appellant Vs. A.R.A. Nareem No: 42A, Weluwana Terrance Weluwanapura, Colombo 09. Respondent C.A.(PHC)Appeal No.65/06 P.H.C.Hambantota No.HCA 01/03 Before Counsel Decided on A.W.A.Salam, I. A.W.A.Salam, J. Sunil Rajapakse, J Parties absent and unrepresented. 27.03.2013 Appellant has been issued with notice to deposit brief fees and he has failed to do so. For failure on the part of the appellant to deposit brief fees this appeal stands rejected. JUDGE OF THE COURT OF APPEAL Sunil Rajapakse, I I agree. JUDGE OF THE COURT OF APPEAL KLP/-

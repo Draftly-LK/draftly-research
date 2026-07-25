@@ -1,0 +1,6000 @@
+# Urban Councils Ordinance
+
+URBAN COUNCILS
+
+ AN ORDINANCE TO MAKE PROVISION FOR THE ESTABLISHMENT OF URBAN
+ COUNCILS FOR THE PURPOSES OF LOCAL GOVERNMENT IN SRI LANKA.
+
+
+Ordinance Nos,
+ 61 of 1939
+ 14 of 1940
+ 3 of 1942
+ 16 of 1942
+ 51 of 1942
+ 5 of 1943
+ 37 of 1943
+ 36 of 1944
+ 37 of 1945
+ 31 of 1946
+ 37 of 1946
+ 53 of 1946
+ 57 of 1946
+Law Nos, 4
+ of 1975
+ 18 of 1977
+ 24 of 1977
+Act Nos,
+ 9 of 1950
+ 12 of 1951
+ 39 of 1951
+ 8 of 1952
+ 25 of 1952
+ 38 of 1953
+ 22 of 1955
+ 2 of 1957
+ 14 of 1958
+ 7 of 1959
+ 1 of 1961
+
+
+ 9 of 1961
+ 39 of 1961
+ 2 of 1967
+ 42 of 1968
+ 4 of 1969
+ 48 of 1971
+ 13 of 1979
+ 42 of 1979
+ 57 of 1979
+ 10 of 1981
+ 61 of 1981
+ 5 of 1983
+ 13 of 1983
+ 31 of 1983
+ 48 of 1983
+ 48 of 1984
+ 20 of 1985
+ 39 of 1986
+ 18 of 1987
+ 21 of 2012
+ 35 of 2014
+ 21 of 2017
+
+Short title. 1. This Ordinance may be cited as the Urban Councils Ordinance.
+
+
+ PART I
+ CONSTITUTION OF URBAN COUNCILS
+ AREAS FOR WHICH URBAN COUNCILS ARE
+ CONSTITUTED
+
+Power to declare 2. (1) The Minister may, by Order published in the Gazette, declare
+towns and to define any area, which by reason of its development or its amenities is
+their administrative urban in character, to be a town for the purposes of this
+limits. Ordinance, and may define the administrative limits of the
+[30, 48 of 1971] town so declared. The Minister may, by the same or any
+ subsequent Order, assign a name and designation to the Urban
+ Council to be constituted under this Ordinance for the town so
+ declared.
+ (2)A declaration under subsection (1) may be made by the
+ Minister in respect of two or more areas jointly, notwithstanding
+ that such areas are not contiguous; and the areas in respect of
+ which any such declaration is made shall accordingly be
+ deemed to constitute jointly one single town for all the
+ purposes of this
+
+
+ Ordinance.
+
+
+Urban Council to 3. An Urban Council in accordance with the provisions of this Ordinance
+be constituted for shall be constituted for every urban area declared to be a town by
+each town. Order under section 2.
+
+
+Functions of Urban 4. The Urban Council constituted for each town shall, subject to the
+
+Councils. powers reserved to or vested in any other authority by this Ordinance
+ or by any other written law, be the local authority, within the
+ administrative limits of the town, charged with the regulation, control and
+ administration of all matters relating to the public health, public utility
+ services and public thoroughfares, and generally with the protection and
+ promotion of the comfort, convenience and welfare of the people and
+ the amenities of the town.
+
+
+Composition of 5. (1) Each Urban Council shall consist of such number of
+Urban Councils. Councillors-
+[2, 21 of 2017] (a) equivalent to sixty per centum of the number of
+[8, 21 of 2012] Councillors to be elected and returned, for such Urban Council,
+[116, 24 of 1977] as specified by the Minister by Order published in the
+ Gazette, based on the number of wards specified in the Orders
+ published under sections 3C and 3D of the Local Authorities
+ Elections Ordinance (Chapter 262);
+ (b) equivalent to forty per centum of the number of
+ Councillors to be elected and returned for such Urban
+ Council, who shall be returned in terms of section 65B of the
+ Local Authorities Elections Ordinance (Chapter 262); and
+ (c) determined by the Commissioner under paragraph (a) of
+ subsection (4) of section 65B of the Local Authorities
+ Elections Ordinance (Chapter 262).
+ (2) Where the number constituting forty per centum referred to in
+ paragraph (b) of subsection (1), is an integer and fraction, the
+ integer shall be deemed to be the number which shall constitute
+ such forty per centum, for the purpose of that subsection.
+
+
+ ELECTIONS AND DATE OF COMMENCEMENT
+ OF TERMS OF OFFICE OF URBAN COUNCILS,
+ ETC.
+
+First general 7. Where an Urban Council is to be constituted for any town under this
+
+
+election of Ordinance, a general election in accordance with the provisions of written
+members. law for the time being applicable in that behalf shall be held for the
+ purpose of electing the first members of the Council.
+
+
+Arrangements 8. For the purposes of any preliminary arrangements in connexion with
+preliminary to the constitution of any Urban Council under this Ordinance, it shall be
+constitution of lawful for the Minister by an Order or Orders published in the Gazette,
+Urban Councils. to issue all such directions as may be necessary or appropriate, or to
+ modify or supplement any of the provisions of this Ordinance in such
+ manner and to such extent as may be specified by him in such Order;
+ and every such Order shall have the same effect in relation to such
+ purposes as if it had been embodied in this Ordinance.
+
+
+Commencement of 9. The term of office of an Urban Council to be constituted for any town
+
+term of office of under this Ordinance shall commence on such date as the Minister may
+Urban Councils appoint by Order published in the Gazette. Such date shall be deemed
+and date of to be the date of the constitution of the Council for all the purposes of this
+constitution of Ordinance; and the Council shall be deemed to be duly constituted on
+such Councils. that date, notwithstanding that the full number of members prescribed
+ under section 5 may not have been duly elected.
+
+
+Term of office of 10. (1) The term of office of each member elected at a general election
+members elected at shall commence
+the first and each (a) in the case of the first general election, on the date
+subsequent general appointed by the Minister under section 9; and
+election.
+ (b) in the case of any general election subsequent to the first
+[65, 39 of 1986]
+ general election, on the first day of January next succeeding
+[2, 2 of 1967]
+ the date of the election or on such other date as the Minister
+[2, 39 of 1961]
+ may appoint by Order published in the Gazette, and shall,
+ unless such councilor vacates office earlier by death,
+ resignation or removal continue for a period of forty eight
+ months from the date on which such term of office
+ commenced.
+ (2) The Minister may by Order published in the Gazette
+ (a) curtail the term of office referred to in subsection (1) by
+ appointing, in substitution for the date on which the term of
+ office expires, a day, of any month preceding the month on
+ which such term of office expires in that year or in the year
+ immediately preceding that year; and
+ (b) extend such term by appointing, in substitution for the
+
+
+ date on which the term of office expires, under subsection
+ (1) or the day appointed under paragraph (a) of this
+ subsection, a day of, any month after the day on which the
+ term of office expires in that year or in any year subsequent to
+ the year so specified Or appointed, and thereafter from time
+ to time extend such term by appointing in substitution for the
+ date of expiry of such term specified in the last Order, a
+ later date:
+ Provided, however, that the period by which such term is
+ extended or the aggregate of the periods by which such term is
+ from to time extended shall not exceed twelve month.
+
+Subsequent general 11. Where the term of office of the members elected at the first or any
+
+elections. subsequent general election of the members of an Urban Council is
+ due to expire under section 10, a general election in accordance with the
+ provisions of written law for the time being applicable in that behalf
+ shall be held for the purposes of electing new members in place of
+ such members.
+
+
+Refusal, 12. (1) Where any person who is elected as a member of an Urban
+resignation or Council decides for any reason not to serve as a member
+vacation of office. thereof, he may relinquish the office
+[9, 21 of 2012] (a) by a written communication of his refusal of office to
+[119, 24 of 1977] the elections officer of the district in which the town for
+ which the Council is constituted is situated, at any time before
+ the date fixed for the first meeting of the Council to be held
+ after his election, or
+ (b) by a written communication of his resignation of office
+ to such elections officer, either direct or through the
+ Chairman, at any time after such first meeting.
+ (2) Any member of an Urban Council who is absent without
+ leave of the Council from more than three consecutive ordinary
+ meetings of the Council shall ipso facto vacate his office.
+ (3) If any person elected as a member of an Urban Council refuses
+ or resigns his office, or dies, or vacates the office under
+ subsection (2), or if a casual vacancy occurs in any other
+ manner in such office, such office shall be filled in accordance
+ with the provisions of section 66A of the Local Authorities
+ Elections Ordinance (Cap. 262) and the persons so elected
+ shall hold office
+
+
+ until the next succeeding general election of members of that
+ Council.
+
+ 13.
+
+
+ ALTERATION OF LIMITS OF TOWNS AND
+ NUMBER OF MEMBERS. ; &C;
+
+Power of Minister 14. The Minister may at any time by Order published in the Gazette
+to vary limits of (a) vary the limits of any town;
+town and number
+ (b) vary the number of members prescribed for any Urban
+of members, and to
+ Council;
+dissolve and
+replace Council. (c) dissolve any existing Urban Council and direct that it shall be
+[122, 24 of 1977] replaced by a new Urban Council to be constituted in lieu of
+ such existing Council, whenever it appears to him to be
+ expedient so to do upon any variation of the limits of the town
+ for which the existing Council was constituted;
+ (d) dissolve any Urban Council for the purpose of constituting any
+ other local authority in its place.
+
+
+New Urban 16. Where any new Urban Council is constituted under section 14 in lieu
+Council to be of any Urban Council which is dissolved
+existing Council. (a) the new Council shall, from the date of the constitution
+ thereof, be the successor of the dissolved Council for all
+ purposes relating to the town or any part of the town for which
+ the dissolved Council was constituted, in so far as such town or
+ part of such town is concluded within the administrative limits of
+ the town for which the new Council is constituted;
+ (b) all the property of such dissolved Council situated within the
+ administrative limits of the new Council, and all the rights, powers,
+ duties, debts, liabilities, and obligations of such dissolved
+ Council in so far as the same relate to any area within the
+ administrative limits of the new Council, shall, as from the date of
+ the constitution of the new Council, be deemed to be transferred to
+ the new Council;
+ (c) all references in any enactment, or in any Order, rule,
+ regulation, or bylaw made thereunder, or any document or
+ instrument executed or issued in pursuance thereof, to such
+ dissolved Council, shall, for the purpose of any area within the
+ administrative limits of such dissolved Council which shall be
+
+
+ included in the administrative limits of the new Council, be
+ construed as though they were references to the new Council;
+ (d) all the provisions of sections 236 to 245 shall apply to the
+ case of the constitution of the new Council, in the same manner
+ as if all references to any local authority or authorities in such
+ sections were references to the dissolved Council.
+
+
+Chairman and 19. (1) There shall be a Chairman and a Vice-Chairman for each
+Vice-chairman. Urban Council who shall be members and be elected in
+[10, 21 of 2012] accordance with the provisions of the Local Authorities
+[125, 24 of 1977] Elections Ordinance (Cap. 262).
+ (2) The Chairman or Vice-Chairman of an Urban Council shall
+ hold office for the term of office of the Council unless he
+ resigns or vacates such office. A Chairman or Vice-Chairman
+ who resigns or vacates his office shall however continue to be a
+ member of the Council.
+ (3) The Chairman of an Urban Council shall, subject to the
+ provisions of section 170A, be the chief executive officer of
+ the Council and all executive acts and responsibilities which
+ are by this Ordinance or any other written law directed or
+ empowered to be done or discharged by the Council may
+ unless the contrary intention appears from the context, be done
+ or discharged by the Chairman.
+ (4) The Chairman may by order in writing delegate to the Vice-
+ Chairman or Secretary or any officer of the Council any of the
+ powers, duties or functions conferred or imposed upon, or
+ vested in the Chairman by this Ordinance or any other written
+ law.
+ (5) The exercise, discharge or performance by the Vice-
+ Chairman or Secretary or any other officer of the Council of
+ any power, function or duty delegated to him by order of
+ the Chairman shall be subject to the direction and control of
+ the Chairman and shall be subject to such conditions and
+ restrictions and limited to such purpose or purposes, as may
+ be specified in the order and any such delegation may at any
+ time be varied or cancelled by order of the Chairman.
+ (6) During the period commencing on the date of occurrence of a
+ vacancy in the office of Chairman and ending on the date of
+ election of a new Chairman or during the period of absence
+ of the Chairman on account of illness or other unavoidable
+ cause, the Vice-Chairman may exercise, discharge and
+ perform the
+
+
+ same powers, functions and duties as the Chairman.
+ (7) Whenever the office of Chairman of an Urban Council falls
+ vacant, notice of such vacancy shall forthwith be given by the
+ Secretary of the Council to the Commissioner of Local
+ Government and the Commissioner of Local Government shall
+ thereupon proceed to fill such vacancy in the manner provided
+ for the same in the Local Authorities Elections Ordinance (Cap
+ 262).
+
+
+Chairman and 23.
+Vice-Chairman to The Chairman and the Vice-Chairman of the Urban Council of each
+be Justices of the town shall, during the tenure of his office, be exofficio a Justice of the
+Peace and I. Peace and Unofficial Magistrate for the district within which that
+'unofficial town is situated.
+Magistrates.
+
+Presidency at 24. The Chairman of an Urban Council shall preside at all meetings of
+meetings. the Council. In the absence of the Chairman, the Vice-Chairman shall
+ preside, and in the absence of the Vice-Chairman, such member as
+ may be elected by the other members present to be the presiding
+ member for that meeting.
+
+Meetings of the 25. (1) The ordinary meeting of Urban Council shall be held for the
+council how and dispatch of business upon such day or days in every month as
+when convened. may be fixed by the Council.
+ (2) The Chairman may convene a special meeting of the Council
+ whenever he may consider it desirable and shall, whenever
+ requested in writing by any two or more members of the Council to
+ convene a special meeting for any purpose specified in such
+ writing, forthwith convene a special meeting for that purpose. Two
+ days' notice of the day appointed for any such special meeting
+ shall be given to, or left at the residence of, each member of
+ the Council.
+
+
+Powers of Council 26. (1) The quorum for any meeting of an Urban Council shall be one-
+to be vested in the third of the members of the Council in office on the day of that
+majority Quorum. meeting.
+[127, 24 of 1977] (2) All matters or questions authorized by this Ordinance or by any
+ other written law, to be decided by the members of an Urban
+ Council shall be decided by the majority of members present and
+
+
+ voting at any general or special meeting.
+ (3) Where the votes of the members present at any meeting are
+ equally divided in regard to any question, the Chairman, Vice-
+ Chairman or other member presiding at the meeting shall, in
+ addition to his vote as a member, have a casting vote.
+
+
+Appointment, 27. (1) Every Urban Council shall appoint a fit and proper person to be
+powers and duties the secretary of the Council.
+of secretary. [128, (2) The secretary of an Urban Council shall be the chief
+24 of 1977] administrative officer of the Council and shall exercise,
+ perform and discharge such powers, duties and functions as
+ are conferred or imposed upon him by this Ordinance or by
+ rules made under section 193 or by any other written law
+ for the time being in force.
+ (3) In the event of the vacation of the offices of both the Chairman
+ and the Vice-Chairman by death, resignation, removal or any
+ other cause, then, during the period intervening between the
+ vacation of the office of the Vice-Chairman and the election
+ of a new Chairman, the secretary of the Council shall, in
+ addition to the powers referred to in subsection (2), have
+ authority, subject to the approval of the Commissioner and
+ subject to such limitations and conditions as may be
+ prescribed by rules under section 193, to incur expenditure on
+ behalf of the Council, to make payments out of the local fund,
+ and to exercise and perform such of the powers, duties and
+ functions of the Chairman as may be specified by the
+ Commissioner or prescribed by rules as aforesaid.
+
+Minutes of 28. (1) All acts, orders, and proceedings of an Urban Council shall
+proceedings of be entered in a book to be kept by it for that purpose, and
+council to be shall be signed by the Chairman for the time book, being; and
+entered in a book. all such acts, orders, and proceedings shall then be deemed
+ and taken to be original acts, orders, and proceedings, and
+ any copy thereof or extract therefrom shall be admissible in
+ evidence in any Court of Justice, provided that it purport to be
+ signed and certified as a true copy or extract by the Chairman
+ or secretary of the Council.
+Committees. 29.
+ (1) An Urban Council may, from time to time, appoint
+ committees consisting either of members of the Council or
+ partly of members of the Council and partly of other
+ inhabitants of the
+
+
+ town, for the purpose of advising the Council with reference to any
+ of its powers, duties, or responsibilities, or any matter under the
+ consideration of the Council, and may from time to time, subject to
+ such instructions or conditions as it may determine, delegate any
+ of its powers or duties to such committees other than the power
+ to raise any loan, to levy any rate, or to impose any tax.
+ (2) For the purpose of any matter in which any Urban Council is
+ jointly interested with any other Urban Council or with any
+ Municipal Council, it may make arrangements by mutual
+ consent with such other Urban Council or with such Municipal
+ Council for the constitution of a joint committee, for the
+ appointment of members of the Council upon such joint
+ committee, and for the delegation to such joint committee of any of
+ its powers or duties other than the power to raise any loan, to levy
+ any rate, or to impose any tax.
+
+Acts of Council not 30. Subject to the provisions of section 26 as to the quorum, nothing
+
+to be invalidated, which is done or determined by an Urban Council, under this Ordinance
+by vacancies or any other written law, shall be or be deemed to be invalid by
+absence of reason only of the fact that the full number of members prescribed for
+members. that Council under section 5 had not been elected, or that any
+ member was absent from the Council, or that there was any vacancy in
+ the number of the members, at the time such thing was done or
+ determined.
+
+
+ PART II
+ STATUS, POWERS AND DUTIES OF URBAN COUNCILS
+
+Urban Council to 31. Every Urban Council shall be a corporation with perpetual succession
+be corporations. and a common seal, and may sue and be sued by such name as may
+ be assigned to it in the Order constituting the Council, or any
+ subsequent Order in modification thereof.
+
+
+ GENERAL POWERS AND DUTIES
+
+Lands vested in 32. There shall be vested in the Urban Council of each town all such
+Urban Council. immovable property of the following classes, namely;
+ (a) waste lands and open spaces;
+ (b) stone, cabook, and gravel quarries;
+ (c) public lakes and streams;
+
+
+ (d) public tanks, ponds, and channels;
+ (e) State lands whether with or without buildings;
+ as may be situate within the limits of the town and may be or have
+ been handed over, with the sanction of the President or the Governor-
+ General, as the case may be, to the Council, or to any local authority
+ of which the Council is the successor, in the manner described in section
+ 33.
+
+
+Method of vesting 33. (1) A vesting order, certificate or other record signed by the person
+administration &c; or persons authorized to hand over any immovable property
+of such lands. referred to in section 32, and by the Chairman of the Urban
+ Council or of any local authority of which the Council is the
+ successor- shall be sufficient, and shall be deemed at all
+ times to have been sufficient, to vest such property and all
+ right, title, and interest in such property in the Urban Council,
+ or the local authority, as the case may be:
+ Provided that nothing in this section or in section 32 shall
+ be deemed
+ (i) to affect or prejudice any right or title of the State to
+ any such immovable property, or the right of the State
+ at any time to resume or dispose of such property for
+ public purposes; or
+ (ii) to affect or prejudice any right, title, or interest
+ which any military authority, in which lands are vested
+ on behalf of the State, has or may have in any such
+ property; or
+ (iii) to empower the Council to dispose of any such
+ property otherwise than in accordance with such terms
+ and conditions as may be set out in the aforesaid
+ vesting order, certificate or other record relating to
+ such property; or
+ (iv) to prevent the Council from surrendering to the
+ State at any time any such immovable property.
+ (2) All immovable property vested in an Urban Council shall be
+ administered, and the revenue thereof shall be employed and
+ made use of for the purposes of this Ordinance.
+
+
+Other property 34. There shall be further vested in each Urban Council, for the purposes
+vested in the of this Ordinance, the following classes of property:
+
+
+Council.
+ (a) all public parks, gardens, and open spaces acquired by or
+ otherwise transferred to the Council or any other local authority
+ of which the Council is the successor, and all erections and
+ structures therein and the equipment thereof, subject always to
+ the terms of any trust or the conditions in any instrument by
+ which any such property may have been transferred to the
+ Council or any local authority of which the Council is the
+ successor;
+ (b) all public roads, streets, canals, and bridges (except such roads,
+ streets, canals, or bridges as may be vested in any other authority
+ under any other enactment, or may be specially exempted from
+ the provisions of this section by the Minister by Order published in
+ the Gazette), together with the lands used for the purposes thereof
+ and all the pavements, stones, or other materials thereof, and also
+ all erections, materials, implements, and other things provided
+ therefor;
+ (c) all public markets and all works, erections or structures for
+ the benefit or convenience of the public which may be constructed,
+ erected, or provided under this Ordinance, or which may have been
+ constructed, provided, or erected under any repealed enactment, or
+ which may be otherwise transferred or have been transferred to
+ the Council or to any local authority of which the Council is the
+ successor, and all the sites, reservations, appurtenances, materials,
+ furniture, and equipment provided therefor, subject always to any
+ such trust or condition as aforesaid;
+ (d) all other public buildings constructed or provided in whole or
+ in part out of the local fund of the Council or of any other local
+ authority of which the Council is the successor, or which may be
+ otherwise transferred to the Council, and all the sites,
+ appurtenances, materials, furniture, and equipment thereof,
+ subject always to any such trust or condition as aforesaid;
+ (e) the property of and in all the lamps, lamp-irons, lamp-posts,
+ sluices, dams, pipes, posts, chains, piles, rails and other similar
+ erections and things in, about, or belonging to the roads, streets,
+ and public places vested in the Council, and of and in all the
+ materials, furniture, and things belonging thereto, except in so
+ far as the same shall be otherwise regulated by contract with the
+ Council, or shall be otherwise shown to be private property, or
+ subject to private rights.
+
+
+Control and 34A. No person shall erect a monument on any land belonging to the
+erection of State or on any land vested in or belonging to any Urban Council
+monuments. except with the prior approval of the Minister granted upon an
+[7, 4 of 1975] application made in that behalf by such person.
+[9, 4 of 1975] In this section 'monument' includes any statue, pillar, post, or any
+ structure erected to commemorate any person, whether living or
+ dead, but does not include any structure, tomb, or cross erected in
+ any cemetery or burial ground.
+
+
+Naming of Public 34B. It shall not be lawful for any Urban Council to name any public
+parks, &c; park, playground, library, reading room, stadium, building, clock
+[9, 4 of 1975] tower, bridge or bathing-well except with the prior approval of the
+ Minister.
+
+
+General duties. 35. The Urban Council of each town shall within the administrative limits of
+ the town have the following duties:
+ (a) to maintain and cleanse all public thoroughfares and open
+ spaces vested in the Council or committed to its management;
+ (b) to enforce the proper maintenance, cleanliness, and repair of all
+ private streets;
+ (c) to supervise and provide for the growth and development of the
+ town by the planning and widening of streets, the reservation of
+ open spaces, and the execution of public improvements;
+ (d) to abate all nuisances;
+ (e) to establish and maintain (subject to the extent of its
+ resources) any public utility service which it is authorized to
+ maintain under this Ordinance, and which is required for the
+ welfare, comfort, or convenience of the public;
+ (f) generally to promote the public health, welfare, and
+ convenience, and the development, sanitation, and amenities of the
+ town.
+
+
+General powers. 36. For the purposes of the discharge of its duties under this Ordinance,
+[2, 18 of 1987] an Urban Council (without prejudice to any other powers specially
+[66, 39 of 1986] conferred upon it) shall have the following powers:
+[2, 48 of 1984] (a) to appoint necessary officers and servants and from time to
+[4, 13 of 1983] time remove any such officers or servants and to assign to any
+[13, 61 of 1981]
+
+
+office or service such salary, allowances or remuneration as to
+the Council may seem fit: Provided that, the preceding
+provisions shall not apply to and in relation to any officer or
+servant of such Council who is a member or who is deemed to
+be a member of the Local Government Service constituted under
+the Local Government Service Law
+(b) to spend any part of the local fund on maternity and child-
+welfare services, the training of midwives for the purposes of
+any maternity service established by the Council, housing schemes,
+and charities or measures for the relief of distress caused by
+rain, floods, fire, earthquake, famine or epidemics;
+(c) to enter into any arrangement with any other authority for the
+employment and remuneration of any officer or servant for the
+several purposes of the Council and such authority;
+(d) to take on lease or purchase any land or building;
+(e)
+ (i) to sell, exchange, let or give out on lease any land or
+ building belonging to the Council or vested in it otherwise
+ than by virtue of the provisions of, section 32 or section 34,
+ subject to the terms and conditions of the instrument by which
+ the land or building was transferred to or vested in the
+ Council, unless the sale, exchange, letting or leasing is
+ prohibited by such instrument;
+ *paragraph (ii) repealed by [66, 39 of 1986]
+ (iii) with the prior approval of the Minister
+ (i) to engage in commercial and industrial enterprises for
+ the manufacture and production of such machinery,
+ equipment, articles, materials and goods, as may be
+ required for the public services or the public utility
+ services, as the case may be, which may be established
+ and maintained by any Municipal Council or Urban
+ Council under the Municipal Councils Ordinance and the
+ Urban Councils Ordinance respectively, or under any
+ written law; and
+ (ii) to sell such machinery, equipment, articles,
+ materials or goods to any other Urban Council or
+ Municipal Council or to the public at such prices as
+ may be determined by the Council and approved by
+ the Minister.
+
+
+(f) subject to the express provisions of this Ordinance, to enter into
+any contract with any person for any work to be done, or services
+to be rendered, or goods or materials to be supplied;
+(g) to make by its officers authorized in that behalf and the
+servants or workmen accompanying them all such entries into
+lands and buildings and inspections thereon as may be necessary
+for the detection and abatement of nuisances, the detection,
+prevention, and abatement of all contraventions of this
+Ordinance or of by-laws or rules made thereunder, or for the
+performance of acts required to be done under this Ordinance in
+respect of which the owner or occupier of such premises is, or
+may be deemed to be, in default;
+(h) by its Chairman or other officer authorized by him, to hold
+all inquiries which the Chairman may deem necessary for any of
+the purposes of this Ordinance, and for the purpose of all such
+inquiries, to administer oaths and summon witnesses;
+(hh) to
+ (i) prepare and submit to the appropriate authority, a
+ programme for the provision of educational facilities such
+ as buildings, furniture, playgrounds, hostels, teachers'
+ quarters, sports materials and library facilities in the town;
+ (ii) recommend to the appropriate authority, the opening,
+ closing, amalgamation, naming and upgrading of, schools
+ in the town;
+(hhh) exercise, perform and discharge any power, duty or
+function delegated to it by the Development Council established
+for the administrative district within the limits of which the town is
+situated and to implement any scheme or work assigned to it
+for implementation by such Development Council;
+(i) to institute or defend any legal proceedings which the Council
+may deem necessary to institute or defend for the purpose of
+enforcing or protecting the rights of the Council or of the public
+or of protecting its officers or members in the execution or
+intended execution of their duties;
+(ii) with the prior approval of the Minister
+ (i) to engage, in commercial and industrial enterprises for
+ the manufacture and production of such machinery,
+ equipment, articles, materials and goods, as may be
+
+
+ required for the public services or the public utility services,
+ as the case may be, which may be established and
+ maintained by any Municipal Council or Urban Council under
+ the Municipal Councils Ordinance and the Urban Councils
+ Ordinance respectively, or under any other written law; and
+ (ii) to sell such machinery, equipment, articles, materials or
+ goods to any other Urban Council or Municipal Council or
+ to the public at such prices as may be determined by the
+ Council, and approved by the Ministers.
+ (j) generally to do all things necessary for the effective exercise
+ of the powers and duties of the Council.
+
+
+Powers of the 36A. (1) "The Minister may approve any commercial or industrial
+Minister in respect enterprise under paragraph (ii) of section 36 having regard
+of commercial and (a) the economic viability of such enterprise;
+industrial
+enterprises. (b) the benefits that may accrue to any Urban Council and
+ the public by the operation of such enterprise;
+[5, 13 of 1983]
+ (c) the financial position of the Urban Council engaging
+ in such enterprise.
+ (2) No sums of money appropriated to an Urban Council by
+ Parliament under paragraph (h) of subsection (2) of
+ section
+ 158 and no grants allocated to an Urban Council to the
+ Minister under paragraph (c) of subsection (2) of section 158
+ shall be utilized by such Council for the purposes of
+ establishing or maintaining any commercial or industrial
+ enterprise.
+ (3) Where the Minister is of opinion that the continued
+ operation of any commercial or industrial enterprise of any
+ Urban Council would be prejudicial to the interests of such
+ Council by reason of mismanagement or that it is likely to
+ involve financial loss to the Council, he may, after
+ consultation with the Council, by Order published in the
+ Gazette terminate the operation of such enterprise and direct
+ the Council to take charge of all books, records and assets of
+ the enterprise and to take such measures that may be
+ necessary to give effect to such Order.
+ (4) The Minister or the Commissioner may, from time to time,
+ give any Urban Council engaged in any commercial or
+
+
+ industrial enterprise general or special directions as to the
+ carrying on or transaction of its business and such directions
+ shall be carried out by the Council.
+ (5) The Minister or the Commissioner may, from time to time,
+ direct the Council in writing to furnish him in such form as
+ returns, accounts and other with respect to the business of such
+ enterprise, and the Council shall, carry out every such
+ direction.
+
+
+Power to authorize 37. (1) Whenever it appears to the Chairman of any Urban Council
+surveys. that an examination or survey of any private lands, buildings, or
+ premises is necessary for any local public purpose, it shall be
+ lawful for the Chairman to direct any officer or servant of the
+ Council to make such survey, and it shall thereupon be lawful
+ for such officer or servant and his workmen to enter upon such
+ premises and to do thereon any of the following acts:
+ (a) to survey and take levels of such land;
+ (b) to dig or bore into the subsoil;
+ (c) to do all other acts necessary to ascertain whether the land
+ is adapted for such public purpose;
+ (d) to set out the boundaries of any land which is to be
+ acquired, or street lines, or the lines of any work proposed
+ to be carried out;
+ (e) to mark such levels, boundaries, or lines by placing
+ permanent marks on existing buildings, trees, posts, walls,
+ fences, or other fixed objects, or by fixing new marks, or by
+ cutting trenches, as the case may require;
+ (f) and where otherwise a survey cannot be completed, or
+ levels taken, or the boundaries and lines marked, to cut
+ down and clear away any obstructions interfering with the
+ execution of such work:
+ Provided that full compensation shall be paid for any
+ damage done;
+ Provided, further, that no person shall enter any building or
+ any enclosure attached to a dwelling house except with the
+ written consent of the occupant, or if such consent is
+ withheld, with the sanction of the Chairman.
+ (2) Every mark fixed on any land under this section shall be
+
+
+ deemed to be the property of the Council.
+
+
+Contracts. 38. Any contract for any of the purposes of this Ordinance involving an
+[3, 48 of 1984] expenditure exceeding ten thousand rupees shall be reduced to
+ writing, shall be signed by the Chairman, and shall specify
+ (a) the work to be done, the services to be rendered or the goods
+ to be delivered;
+ (b) the materials to be used ;
+ (c) the price to be paid for such work, service, goods, or
+ materials ;
+ (d) the time or times within which the work or service is to be
+ done, or the goods or materials are to be furnished; and
+ (e) the penalty to be imposed in case of a breach of the contract.
+
+
+Consent of 39. (1) The Chairman shall not enter into any contract on behalf of
+Council. the Council for any work or service the cost of which
+[4, 48 of 1984] exceeds ten thousand rupees, or any contract enduring for a
+[129, 24 of 1977] longer period than the time elapsing between the making of
+ such contract and the end of the financial year, without the
+ sanction of the Council.
+ (2) If the Council fails to sanction any contract the Chairman
+ may with the approval of the Commissioner enter into such
+ contract notwithstanding the provisions of subsection (1).
+
+
+Advertisement for 40. Before entering into any contract, which involves an expenditure
+tenders. exceeding ten thousand rupees for the execution of any work, for the
+[5, 48 of 1984] rendering of any service, for the supply of any goods or materials, or for
+ any other matter necessary for the purposes of this Ordinance, the
+ Chairman shall call for tenders by advertisement, unless otherwise
+ authorized by a resolution of the Council.
+
+
+Acquisition of 41. An Urban Council may acquire lands or buildings for the general
+lands or buildings purposes of the Council without indicating the purposes for which
+for general public any land or building is to be applied.
+purposes.
+
+
+Compulsory 42. Any land or building required for the purposes of an Urban Council may
+acquisition lands be required under the Land Acquisition Act by the Government for the
+and buildings. Council.
+
+
+Power of Urban 43. An Urban Council may receive and hold any property in trust for the
+
+
+Council to act as benefit of the inhabitants of the town for which it is constituted, or
+trustee for any any section of such inhabitants, or for the purpose of any public
+public purpose. service administered by the Council, and may otherwise act as trustee
+ for any public purpose.
+
+
+ PART III
+ POWERS AND DUTIES AS TO THOROUGHFARES
+ THOROUGHFARES
+
+Urban Council to 44. (1) Subject to the powers and responsibilities by law committed
+be the general to any other authority, the Urban Council of each town shall
+authority for be the general administrative authority for the purpose of all
+thoroughfares and thoroughfares and communications, other than principal
+communications. thoroughfares, within the administrative limits of the town,
+ with all such powers as are vested in it under this Ordinance,
+ the Housing and Town Improvement Ordinance, and any other
+ enactment, from time to time, enacted in that behalf.
+ (2) Subject to such directions as may be given by the Minister,
+ from time to time, by Order published in the Gazette, the Urban
+ Council of each town shall be the administrative authority for
+ the purposes of the protection of any principal thoroughfare
+ that may be situate within the town, and shall be entitled for
+ such purposes to exercise or perform in relation to any such
+ principal thoroughfare any of the powers or duties conferred
+ or imposed by sections 72 to 92 (both inclusive) relating to
+ buildings along thoroughfares, obstructions to thoroughfares,
+ encroachments on thoroughfares, injuries to thoroughfares and
+ nuisances on thoroughfares.
+
+
+Every General 45. Subject to the powers and responsibilities by law belonging to any
+powers of Council other authority, it shall be the duty of the Urban Council of every
+with thoroughfares town, and such Council is hereby empowered, to take all necessary
+and open spaces. measures for securing and maintaining all public rights, interests, and
+ amenities arising out of or in connexion with all thoroughfares or
+ open spaces within the town, and for utilizing, regulating, adapting,
+ and developing such thoroughfares or open spaces for public
+ purposes.
+
+
+Thoroughfares 46. All thoroughfares within a town, other than principal thoroughfares,
+vested in Urban except in so far as such thoroughfares are already so vested by virtue
+Council. of any other enactment, shall be deemed to be vested in the Urban
+
+
+ Council of the town.
+
+
+Prescription. 47. Neither the provisions of the Prescription Ordinance, or those of any
+ other law relating to the acquisition of rights by virtue of possession
+ or user, shall apply in the case of the roads within any town; and no
+ person shall be entitled to any exclusive rights of ownership,
+ possession or user over or in respect of any such road or any portion
+ thereof by reason of his having, either before or after the coming into
+ operation of this Ordinance, had possession, or use of any description
+ whatsoever, of such road or portion thereof.
+
+
+Language of 48. All notices required to be given under this Part shall be in the Sinhala
+notices, and how and Tamil languages; and every notice addressed to any person may
+served. be served either personally upon such person, or by leaving it with some
+ member of his household, or by affixing it to some conspicuous part of
+ his residence.
+
+
+Control of roads 49. It shall be the duty of the Urban Council of every town, and every
+and paths in charge such Council is hereby empowered, to supervise and control the
+of minor local course and development of all public roads and paths within the town.
+authority.
+
+
+Power of Urban 50. The Urban Council of each town may within that town
+Council to (a) lay out and construct new roads, streets, bridges, or other
+construct new, and thoroughfares;
+improve existing,
+thoroughfares. (b) widen, open, or enlarge any street or other thoroughfare (not
+ being a principal thoroughfare);
+ (c) turn, divert, discontinue, or stop up, whether in whole or in
+ part, any public street or other thoroughfare (not being a
+ principal thoroughfare),
+ making due compensation to the owners or occupiers of any property
+ required for such purposes, or any person whose legal rights are thereby
+ infringed.
+
+
+Acquisition of 51. (1) If in connexion with the turning, diversion, widening, opening,
+lands required for enlargement, or improvement of any thoroughfare, it becomes
+diversions or necessary for any Urban Council to take possession, for public
+enlargements. use, of the land of any person, it shall be lawful for such
+ Council to make an agreement with the owner for the
+ compensation to be paid for such land, and for any building,
+ boundary wall, gateway, fence or tree standing thereon, either
+ by
+
+
+ allowing him to possess the ground, or part of the ground, of the
+ former thoroughfare, or by the grant of other land in exchange or
+ by payment of money or by any two or more of such methods.
+ (2) Any land of which possession is taken by an Urban Council
+ in pursuance of any agreement under subsection (1) shall vest in
+ the Council without any formal transfer thereof, and the
+ certificate of the Government Agent or the Chairman of the
+ Council that any person has been allowed by the Council to
+ possess any part of the ground of any former road or any land
+ given in exchange under subsection (1), together with a survey
+ thereof, shall be a sufficient proof of the right of such person to
+ such ground or land.
+ (3) Where an Urban Council cannot agree with the owner of any
+ land as to the compensation to be made under subsection (1), or
+ where such owner cannot be found, or where the Council does
+ not deem it advisable to enter into any agreement with the owner
+ of any land, then proceedings may be taken to obtain possession of
+ such land, and for compensating the owner, in the manner
+ prescribed by section 42.
+ (4) Every agreement under subsection (I) shall he in writing, but
+ section 2 of the Prevention of Frauds Ordinance shall not apply
+ to any such agreement or to any certificate issued under subsection
+ (2).
+
+
+Gifts of land 52. If in connexion with the turning, diversion, widening, opening,
+required for enlargement or improvement of any thoroughfare, it becomes
+diversion or necessary for any Urban Council to take possession of the land of any
+enlargement of person for public use, and if the person claiming to be the owner of
+thoroughfares. the land desires to make a free gift of the land to the Council for such
+ purpose and to renounce all claim to compensation therefor, a record
+ in writing to that effect duly signed by such person in the presence of
+ the Chairman or of a person authorized by the Chairman in writing in
+ that behalf shall be sufficient to vest the land in the Council. No such
+ record shall be deemed to be invalid or of no effect in law by reason
+ only that the requirements of section 2 of the Prevention of Frauds
+ Ordinance have not been complied with as to attestation by a notary
+ public and by witnesses.
+
+
+Power to dispose 53. Whenever Other any street or thoroughfare or any part of any street or
+of discontinued thoroughfare vested in an Urban Council ceases to be used as a street
+
+
+street. or thoroughfare, the Council, with the prior approval of the Minister,
+ may sell, lease, or exchange such street or other thoroughfare or part
+ thereof.
+
+
+Power to take land 54. In laying out or constructing any new street or thoroughfare, or in
+adjoining new turning, otherwise improving any street or thoroughfare, an Urban
+street for building Council may, in addition to the land required for the purposes of the
+diverting, carriage ways and footways thereof, also purchase the land necessary for
+widening, opening, houses and buildings to form the said street or thoroughfare, and may
+enlarging , or sell, lease, or otherwise dispose of the same, subject to the provisions of
+purposes. paragraph (e) of section 36 and subject to such stipulations and
+ conditions as to the class and description of houses or buildings to be
+ erected thereon as the Council may think fit.
+
+
+Other powers of an 55. It shall be lawful for the Urban Council of any town, without
+
+Urban Council. prejudice to any other powers vested in it, to do any of the following
+[4, 4 of 1975] acts:
+
+ (1) to water the streets;
+ (2) to remove encroachments and obstructions in or upon any
+ street or thoroughfare subject to the conditions that where the
+ person responsible therefor is known to the Council, such action
+ shall be taken by the Council only after notice has been given to
+ him, and he fails to remove such encroachments or obstructions
+ within such time as may be specified in the notice or with due
+ diligence;
+ (3) to paint up the names of streets and the numbers of houses or
+ tenements on any private property;
+ (4) to shut up and secure deserted houses;
+ (5) to recover in manner hereinafter provided the expenses
+ incurred by any action taken under paragraphs (2) and (4) hereof
+ from the person whose act or neglect shall have rendered such
+ action necessary.
+
+
+Naming of streets. 55A. The Minister shall, either of his own motion or on application made
+[4, 4 of 1975] in that behalf by an Urban Council, determine the name by which
+ any street shall be known and in like manner at any time alter the
+ name of any street.
+
+
+Roads for benefit 56. The Urban Council of any town may, at the request of the owner or
+
+
+of individual owners of any one or more estates or industrial enterprises situated
+property owners. within the town, in any, case in which the Council is of opinion that
+ the public interests would not otherwise justify the construction or
+ maintenance of a road in such a locality, contract with such owner or
+ owners for the construction or maintenance of a road for the service
+ of the estate or estates, or the enterprise or enterprises in question,
+ subject to the payment of such contribution towards the expenses of
+ such construction or maintenance as may be approved by the Council
+ and subject to the condition that by an appropriate instrument such
+ road is constituted a public road and is vested in the Council, and all
+ such agreed contributions shall be deemed to be special rates imposed
+ upon the lands benefited, and shall be recoverable in the same manner
+ as a rate imposed under this Ordinance, and all the provisions of this
+ Ordinance relating to rates shall apply thereto.
+
+
+Power to construct 57. An Urban Council, or any two or more Urban Councils in
+and maintain combination, or any Urban Council or Councils in combination with any
+tramways. Municipal Council, may, with the sanction of the Minister, by its own or
+ their own officers, construct, maintain, and use, a tramway or tramways
+ within the administrative limits of such Council or Councils.
+
+
+Agreement with 58. An Urban Council, or any two or more Urban Councils in
+promoters for combination, or any Urban Council or Councils in construction of
+construction of combination with any Municipal Council, tramways-may, with the
+tram ways. sanction of the Minister, enter into an agreement, not inconsistent
+ with the provisions of this Ordinance, with any promoter or
+ promoters for the purpose of granting to such promoter or promoters the
+ right to construct, maintain and use a tramway or tramways within the
+ administrative limits of the Council or Councils, upon the terms, for
+ the consideration, subject to the conditions, and in the manner specified
+ in such agreement.
+
+
+Public vehicular 59. An Urban Council may, subject to such prohibition or restriction as may
+communications. be imposed in respect thereof by any other law, and, in so far as any
+ principal thoroughfare may be thereby affected, subject to the approval
+ of the Minister in charge of the subject of Thoroughfares, organize and
+ maintain, either by itself and its own officers, or by agreement with any
+ promoter or promoters in the manner prescribed by section 58, any
+ form of public vehicular communication other than a tramway for the
+ service of the inhabitants of any area within the
+
+
+ administrative limits of the Council.
+
+
+Houses in a 60. If any house, building, boundary wall or gateway adjoining any street
+ruinous and or thoroughfare in any town, or anything affixed thereon, be deemed
+dangerous state. by the Urban Council of that town to be in a ruinous state, whether
+ dangerous or not, or to be likely to fall, the Council shall immediately, if
+ it appears to be necessary, cause a proper hoarding or fence to be
+ put up for the protection of persons using such street or thoroughfare,
+ and shall cause notice in writing to be served on the owner or
+ occupier forthwith to take down, secure, or repair such house,
+ building, boundary wall, gateway or thing affixed thereon, as the case
+ may require.
+
+
+Failure to comply 61. If any person, on whom a notice is served by or on behalf of an Urban
+with notice. Council under section 60, does not begin to comply with such notice
+ within three days of the service thereof or does not complete the work
+ with due diligence, the Council shall cause all or so much of the work as
+ it may think necessary to be carried out, and all the expenses incurred
+ by the Council shall be paid by such person and shall be recoverable as
+ hereinafter provided.
+
+
+Sale of materials of 62. If any house, building, or wall, or any part thereof be pulled down by
+
+ruinous houses. any Urban Council under section 61, the Council may sell the
+ materials thereof, or so much of the materials as may have been taken
+ down, and apply the proceeds of such sale in payment of the expenses
+ incurred, and shall, on demand, pay any surplus arising from such
+ sale to the owner of such house, building, or wall:
+ Provided always that, in case no demand for such surplus is made
+ within twelve months by any person entitled to make such demand,
+ the Council shall be at liberty to pay the amount of such surplus to the
+ credit of the local fund, and shall be freed from any liability to pay or
+ answer for or in respect of such unclaimed surplus;
+ Provided, further, that the Council, notwithstanding that it may have
+ sold such materials for the purposes aforesaid, shall have the same
+ remedies for compelling the payment of so much of the expenses as
+ may remain due after the application of the proceeds of the sale, as by
+ this Ordinance are given to it for compelling the payment of the
+ entirety of the expenses.
+
+
+ MAINTENANCE AND REPAIR OF
+ THOROUGHFARES
+
+
+Proper officers 63. It shall be lawful for the proper officer of the Urban Council of any town
+powered to repair, and for the servants, workmen, and labourers employed by or under
+&c; of through him, at all times, and with all necessary and proper carriages, carts,
+fare. animals and other means, to enter upon any land adjacent or near to
+ any existing or intended thoroughfare within that town, and there
+ severally to do and perform all acts, matters, and things necessary
+ for the purpose of tracing, measuring, making, working, opening,
+ altering, turning, repairing, clearing , improving, or fencing any such
+ thoroughfare or for building, excavating, repairing, clearing, or
+ Improving any bridge, fence, drain, dam, or ditch thereupon, or in any
+ way connected therewith, or for performing any act, matter, or thing
+ under the provisions of this Ordinance.
+
+
+Power to take 64. It shall be lawful for the proper officer of the Urban Council of any
+materials. town, and for the servants, workmen, and labourers employed by or
+ under him, at all reasonable times, and with all necessary and proper
+ carriages, animals, and other means, to search for, dig, cut, take, and
+ carry away any water, timber, brushwood, stone, gravel, clay, or any
+ other materials whatsoever, for the purpose of tracing, measuring,
+ making, working, opening, altering, turning, repairing, clearing,
+ improving, or fencing, or in any way assisting in the tracing, measuring,
+ making, working, opening, altering, turning, repairing, clearing,
+ improving, or fencing any existing or intended thoroughfare in that
+ town; or of building, excavating, repairing, clearing, or improving any
+ bridge, fence, drain, dam, or ditch thereupon, or in any way connected
+ therewith; or for the construction or repair of any lines or any buildings
+ whatsoever required on or near any such thoroughfare for the use of
+ any officer as aforesaid, or any workmen, animals, carriages, persons, or
+ things employed in his service, in and from any land adjacent or near to
+ any such thoroughfare, and to carry away the same through the land of
+ any person, without being deemed a trespasser:
+ Provided that no such materials shall be dug for, cut, or taken away,
+ upon or from any yard, avenue to a house, or lawn or any inclosed
+ garden, plantation, field, or wood, without the consent of the owner
+ thereof, unless sufficient materials cannot conveniently be obtained
+ from the neighbouring waste lands or common or abandoned grounds,
+ in which case the said officer may take any such materials where he
+ can conveniently procure them;
+ Provided also that reasonable compensation for all materials so taken,
+
+
+ and for the damage done in taking and carrying away the materials, shall
+ be made to the owner thereof;
+ Provided, further, that such officer shall rail or fence off any quarry or
+ pit from which any such materials may be taken, so that it may not be
+ dangerous to any person or animal.
+
+
+Power to erect 65. It shall be lawful for the proper officer of the Urban Council of any town
+buildings keep when tracing, measuring, making, working, opening, altering, turning,
+cattle &c. repairing, clearing, or improving any existing or intended thoroughfare
+ within the town, or building, excavating, repairing, clearing, or
+ improving any bridge, fence, drain, dam, or ditch thereupon or in any
+ way connected therewith
+ (a) to make and erect temporary buildings on any land adjacent
+ or near thereto for the accommodation of such officer, or for the
+ accommodation of the servants, workmen, labourers, animals,
+ carriages, or things employed by him during the progress of the
+ work; and
+ (b) to keep all such animals as may be employed by him duly
+ tethered and stabled upon any lands near or adjacent thereto, and to
+ continue so to keep the animals on such lands for such time as may
+ be necessary:
+ Provided that no such building shall be erected, nor any such animal
+ kept on any land which is under cultivation or is situated in any area
+ where there are neighbouring waste lands or common or abandoned
+ grounds available for the purpose;
+ Provided, further, that reasonable compensation for any damage done
+ to the land shall in all cases be made to the owner thereof.
+
+
+Power to throw 66. In the tracing, measuring, making, working, opening, altering,
+rubbish upon turning, repairing, clearing, or improving of any existing or intended
+adjacent lands. thoroughfare within any town, or building, excavating, repairing,
+ clearing, or improving any bridge, fence, drained am, or ditch thereupon
+ or in any way connected therewith, it shall be lawful for the proper
+ officer of any Urban Council of the town to throw upon any lands
+ adjacent or near to the thoroughfare such earth, rubbish, or materials as
+ it may be necessary to remove from the place of any such work
+ Provided that all earth, rubbish or materials thrown upon any such
+ land by the proper officer shall be removed by him from such land
+
+
+ within a reasonable time.
+
+
+Power to make 67. It shall be lawful for the proper officer of the Urban Council of any town
+temporary road. to make a temporary through the road grounds adjacent or near to
+ any existing or intended thoroughfare in the town during the execution
+ of any work thereupon or any work in any way connected therewith:
+ Provided that such road shall not be made over any ground whereon any
+ building stands or over an inclosed garden or yard.
+
+
+Power to cut trees. 68. It shall be lawful for the proper officer of the Urban Council of any town
+ to cut and remove, and place upon any adjacent or neighbouring land,
+ all trees, bushes, or shrubs, and all leaves or branches or roots of trees
+ that shall grow in or overhang any thoroughfare within the town, or
+ cause any obstruction therein, and for that purpose to enter upon
+ any land or premises with such persons, animals, and instruments as
+ may be necessary, and to proceed to do therein all such things as may be
+ necessary for the cutting, lopping, or removing of such trees, bushes,
+ shrubs, leaves, branches, or roots:
+ Provided that all trees, bushes, or shrubs, and all leaves or branches or
+ roots of trees placed upon any such land by the proper officer shall be
+ removed by him from such land within a reasonable time.
+
+
+Power to put up 69. It shall be lawful for the proper officer of the Urban Council of any town
+fences. to put up or make fences, hedges, ditches, drains, or banks by the
+ side of any thoroughfare within the town, whenever to him it shall
+ appear necessary, and the owner or occupier of each land adjoining such
+ fences, hedges, ditches, drains, or banks shall and he is hereby required
+ to keep them in good and substantial repair and order.
+
+
+Power to make and 70. The proper officer of the Urban Council of any town shall have power
+
+keep open ditches, to make, scour, cleanse, and keep open all ditches, gutters, drains, or
+&c; and to lay watercourses along any thoroughfare within the town, and also to
+trunks, &c. make and lay such drains, watercourses, trunks, tunnels, plats, or
+ bridges, as he may deem necessary for the protection, preservation,
+ improvement, repair, or construction of any thoroughfare or intended
+ thoroughfare, in and through any lands or grounds adjoining or lying
+ near to such thoroughfare or intended thoroughfare.
+
+
+Power to lay 71. The proper officer of the Urban Council of any town shall have power
+stones, &c.. to lay and heap of stone or gravel, or any log of wood, or any other
+
+
+ matter or thing whatsoever, upon any thoroughfare within the town,
+ and to allow such matter to remain there during the time such road is
+ under repair, and for such time before the repair, are commenced and
+ after the repairs are completed, as may be necessary for facilitating
+ the making of such repairs or for preventing damage to such recently
+ repaired road, but he shall take due and reasonable precaution for
+ preventing danger or injury to persons passing along such road.
+
+
+ BUILDING ALONG THOROUGHFARES
+
+Notice of intended 72. (1) It shall not be lawful for any person to commence any
+building along a building, boundary wall, gateway or fence along any
+thoroughfare. thoroughfare within any town, or to erect any temporary fence
+[6, 48 of 1984] or inclosure on any such thoroughfare for the purpose of
+ commencing or repairing any such building, boundary wall, or
+ gateway without giving one calendar month's previous notice
+ in writing to the Urban Council of that town.
+ (2) Any person neglecting to give the notice prescribed by
+ subsection (1), or to remove any building, boundary wall,
+ gateway or fence erected without such notice when he is
+ required in writing to do so by the Urban Council under this
+ subsection, shall be guilty of an offence, punishable with a
+ fine not exceeding five hundred rupees, and with a further fine
+ not exceeding two hundred rupees for each day he suffers or
+ allows such building, boundary wall, gateway or fence to
+ remain after he is required to remove it as aforesaid.
+ (3) It shall be lawful for the Urban Council to remove or cause to
+ be removed any building, boundary wall, gateway, fence, or
+ inclosure, commenced or erected without the notice
+ prescribed by subsection (1), and to recover the costs of such
+ removal in the manner provided in section 84 for the
+ recovery of the costs therein mentioned.
+ (4) Nothing herein contained shall be deemed to deprive any
+ Urban Council of the power, hereinafter conferred on such
+ Council, of removing any such building, boundary wall,
+ gateway, fence, or inclosure, which may subsequently be
+ discovered to be an encroachment on a thoroughfare,
+ notwithstanding that no proceedings may have been taken by
+ the Council on the notice given in respect of such building,
+ boundary wall, gateway, fence or inclosure under subsection
+ (1).
+
+
+Erection of 73. (1) Nothing contained in section 72 shall be construed to prevent
+temporary fences any public officer, duly authorized in that behalf, from making
+and inclosures. temporary use of any part of any thoroughfare for the public
+[7, 48 of 1984] service, or to prevent the Urban Council of any town from
+ granting a licence to the inhabitants of the town for the
+ erection of temporary fences and inclosures on any
+ thoroughfare, in connexion with the building, pulling down, or
+ repairing, of their houses and other buildings, or for temporary
+ decorations within the town, on such terms and conditions as
+ the Council may deem proper, including conditions as to
+ (a) the length, breadth and height of such inclosures;
+ (b) the space to be allowed for carriages and carts, or boats, to
+ pass along the thoroughfare; and
+ (c) the exhibition by the person obtaining such licence,
+ daily between sunset and sunrise throughout the period during
+ which the fence or inclosure is maintained or continued by
+ him, of a light sufficient to indicate clearly the exact situation
+ of the fence or inclosure or any obstruction caused thereby.
+ (2) Every holder of a licence granted under subsection (I) who
+ commits a breach of any of the conditions of such licence, and
+ every person who removes or extinguishes any light placed and
+ kept in accordance with the requirements of the conditions
+ of such licence, shall be guilty of an offence, punishable with a
+ fine not exceeding one hundred rupees.
+
+ (1) Notwithstanding anything contained in the Housing and Town
+Building limits 74. Improvement Ordinance, it shall not be lawful for any person
+along roads. (a) to erect any building, boundary wall or gateway within a
+ limit (hereinafter referred to as the 'building limit') of
+ twenty-five feet from the centre of any road which is used
+ or intended for vehicular traffic within any town and in
+ respect of which street lines providing for a roadway
+ exceeding fifty feet in width have not been defined under
+ section 19 of the Housing and Town Improvement Ordinance;
+ or
+ (b) except under the authority of a licence granted by the
+ Urban Council of the town, to re-erect or to make any
+
+
+ addition to any such building, boundary wall or gateway
+ within such limit;
+ Provided always that nothing in this subsection contained
+ shall apply to any repairs effected in any building, boundary
+ wall or gateway existing at the date of the constitution of
+ the Urban Council, or in the case of
+ (i) any street which is intended for foot traffic only and
+ is not less than twenty feet in width; or
+ (ii) any back lane or other service passage which is
+ intended only for the purposes of scavenging or
+ conservancy or other special sanitary purpose and is
+ not less than ten feet in width,
+ where such street, lane or passage has been defined or
+ approved by the Urban Council.
+ For the purposes of the foregoing provisions of this
+ subsection, 'repairs' shall not be deemed to include any
+ work of re-erection or reconstruction or the addition of any
+ new part.
+(2) It shall be the duty of every Urban Council, within three
+years after the date of the constitution thereof or within such
+further period as may in the special circumstances of any case be
+allowed by the Minister
+ (a) to demarcate by permanent marks the building limit
+ prescribed by subsection (1) on every road referred to in
+ that subsection;
+ (b) in the case of each road on which the building limit has
+ been so demarcated, to ascertain and record the value of
+ each building, boundary wall, or gateway or part thereof
+ situate or extending within such limit; and
+ (c) in the case of any road on which the building limit has not
+ been demarcated, to ascertain and record the value of each
+ building, boundary wall or gateway in respect of which a
+ licence under subsection (1) is granted by the Council for the
+ purposes of any re-erection or addition.
+(3) The value of any building, boundary wall or gateway shall,
+for the purposes of subsection (2)
+ (a) be fixed by agreement between the Urban Council and the
+ owner or owners of the building, boundary wall or
+
+
+ gateway; or
+ (b) where it is not so fixed by agreement, be determined by
+ the arbitration of two arbitrators, one nominated by the
+ owner or owners of the building, boundary wall or gateway,
+ and the other by the Urban Council, or if such arbitrators
+ cannot agree upon the said value, by an umpire chosen jointly
+ by the two arbitrators.
+(4) In determining the value of any building, boundary wall or
+gateway or any part thereof for the purposes of subsection (2),
+the following principles shall be followed:
+ (a) where any building, boundary wall or gateway, or any part
+ thereof the removal of which would render the remaining
+ part useless, is situated within the building limit of any
+ road, and where, for that reason, at the time of the widening
+ of the road the removal of the entire building, boundary wall
+ or gateway will become necessary, the value of the entire
+ building, boundary wall or gateway shall be determined; and
+ such value shall be the difference between the market value of
+ the premises, that is to say, of the building, boundary wall or
+ gateway together with the land attached thereto, at the time of
+ the demarcation of the building limit, and the market value at
+ that time of the land as distinct from the building, boundary
+ wall or gateway;
+ (b) where only a part of a building, boundary wall or
+ gateway is situated within the building limit of any road,
+ and after the severance and removal of such part the
+ remaining part will be capable of adaptation either to the
+ original purpose of the building, boundary wall or gateway
+ or to any other purpose permitted by law, the value of the part
+ within the building limit shall alone be determined; and such
+ value shall be the aggregate of
+ (i) the estimated cost of the severance and removal of
+ that part of the building, boundary wall or gateway;
+ and
+ (ii) the estimated cost, in the case of a building, of
+ adapting the part of the building which will then
+ remain to the purpose for which the building is used at
+ the time of the demarcation of the building limit, and
+ in the case of a boundary wall or gateway, of
+
+
+ completing such additions or repairs as may be
+ necessary;
+ (c) where, at the time of the demarcation of the building limit
+ on any road, the value of any building, boundary wall or
+ gateway is found to have been increased by any alteration
+ or improvement effected in the building, boundary wall or
+ gateway after the date of the constitution of the Urban
+ Council, then notwithstanding that the alteration or
+ improvement may have been authorized by a licence under
+ subsection (1), the amount of the increase shall not be
+ taken into account unless the alteration or improvement was
+ necessary for the maintenance of the building, boundary wall
+ or gateway in a proper state of repair: *Provided that for the
+ purposes of paragraph (c) of this subsection the date of the
+ constitution of any Urban Council which is the (c) successor
+ of any Urban District Council constituted under any repealed
+ enactment shall be deemed to be the actual date of the
+ constitution of such Urban District Council.
+(5) Every award or agreement made or entered into, as the case
+may be, under subsection (3) in respect of the value of any
+building, boundary wall or gateway or part thereof, shall specify
+the particular paragraph or paragraphs of subsection (4) in
+accordance with which the value aforesaid was fixed or
+determined.
+(6) The value of each building, boundary wall or gateway or part
+thereof situate within a building limit, fixed or determined as
+provided in subsection (3) shall be recorded in the office of the
+Urban Council together with all agreements or awards by which
+the value so recorded may be verified.
+(7) For the purpose of demarcating the building limit of any road
+it shall be lawful for any officer, servant or workman of the
+Urban Council to enter upon any private land adjoining the road
+and to erect permanent marks at convenient places, taking all
+such precautions as may be necessary to ensure that as little
+damage as possible is caused to the land. Compensation shall be
+paid by the Council for any damage so occasioned.
+(8) Where the building limit of any road has been demarcated
+under this section, nothing in any of the other provisions of this
+Ordinance shall be deemed to preclude the Urban Council from
+
+
+ letting or leasing any part of the road not included within such
+ building limit for the purpose of affording building facilities
+ along the road, or from using or permitting the use of any such part
+ for any public purpose.
+ (9) Nothing in this section shall apply to, or in the case of, any
+ road in respect of which street lines providing for a roadway
+ exceeding fifty feet in width have been defined under section 19
+ of the Housing and Town Improvement Ordinance.
+
+
+Power of Minister 75. (1) Upon application made in that behalf by the owner or occupier
+to modify building of any property affected by the building limit specified in
+limit. section 74, it shall be lawful for the Minister, by Notification
+ published in the Gazette, to modify the building limit in
+ respect of the road, or the part of a road upon which such
+ property abuts; and for the purposes of the provisions of this
+ Ordinance relating to the building limit along roads, the
+ building limit along such road or part of a road shall be the
+ building limit so modified by the Minister.
+ (2) Where after the values of the buildings, boundary walls or
+ gateways or part thereof situated within the building limits
+ of any road are ascertained and recorded by an Urban Council,
+ the Minister modifies the building limit under subsection (1) in
+ respect of the whole road or any part thereof, it shall be the
+ duty of the Council to vary or adjust the values so recorded in
+ such manner as may be rendered necessary by such
+ modification of the building limit; and every variation or
+ adjustment of such values shall be made in accordance with
+ the provisions of section 74.
+
+Condition to be 76. (1) It shall be a condition of any licence granted by an Urban
+attached to all Council under section 74 for the re-erection of or for any
+licences under addition to any building, boundary wall or gateway within the
+section. building limit of any road that in the event of the land on which
+ the building, boundary wall or gateway is situated being
+ acquired at any time thereafter for the purpose of the
+ widening of the road, the compensation payable in respect
+ of such building, boundary wall or gateway shall be
+ determined in accordance with the provisions of section 78.
+ (2)
+
+ (a) Full particulars of every licence containing a condition
+
+
+ of the description set out in subsection (1), and of the land
+ and the building, boundary wall or gateway to which the
+ condition relates, shall be entered by the Council in a
+ register to be kept for that purpose at the office of the
+ Council, and the Chairman shall cause a certified copy of
+ the entry so made in respect of each land and building,
+ boundary wall or gateway, and the conditions of the licence
+ relating thereto, to be registered in the office of the
+ Registrar of Lands. The Registrar of Lands shall register all
+ such copies free of any charge or duty.
+ (b) Upon the registration of any entry under this subsection,
+ the condition of the licence set out in such entry shall be
+ binding upon the land or building or boundary wall or
+ gateway affected thereby, in accordance with the tenor of
+ such condition, into whosesoever ownership or possession the
+ land or building or boundary wall or gateway may at any
+ time pass.
+ (c) The register kept at the office of the Council shall be
+ made available for inspection to any person interested, at
+ any time when the office is open for the transaction of
+ business.
+ (d) The provisions of section 2 of the Prevention of Frauds
+ Ordinance shall not apply to any entry or copy of an entry
+ referred to in this subsection.
+(3) Subject to the condition referred to in subsection (2), any
+person who is otherwise entitled to re-erect or make any addition to
+any building, boundary wall or gateway shall be entitled to a
+licence to re-erect or make such addition to such building,
+boundary wall or gateway within the building limit specified in
+section 74:
+Provided that no part of the building, boundary wall or gateway
+so re-erected or added to shall, upon such re-erection or addition,
+extend nearer to the centre of the road than it so extended in its
+original condition.
+(4) The expression 're-erect', with reference to a building, includes
+the restoration of any wall forming part of the building or of any
+support to the building which has been demolished or otherwise
+destroyed to or within a distance of five feet from the ground, but
+does not include any operation, which, in the
+
+
+ opinion of the Urban Council, may reasonably be considered to
+ be a repair to the wall or support.
+
+
+Power of Urban 77. If any person erects or re-erects any building, boundary wall or gateway,
+Council to deal or makes any addition to any building, boundary wall or gateway within
+with building, any town in contravention of any of the provisions of section 74, the
+boundary wall or Urban Council of that town shall be entitled to cause such building,
+gateway erected or boundary wall or gateway, or such addition, to be demolished or
+re-erected in removed by any officer or servant, and for that purpose the Urban
+contravention of Council shall have the same rights of entry and survey, and shall have
+Ordinance. the same powers of removal, abatement, and recovery of costs as are
+ vested by this Part in an Urban Council for the purposes of the
+ abatement or removal of any obstruction or encroachment or a supposed
+ obstruction or encroachment upon a thoroughfare, and all the
+ provisions of this Part relating to such obstructions or encroachments,
+ so far as they are applicable, shall apply accordingly with such
+ modifications as may be necessary.
+
+
+Principles of 78. (1) Where any land which is situated within the building limit
+assessing demarcated on a road, and which has been developed by the
+compensation in erection of any building wholly or partly within that building
+respect of land limit, is acquired for the purposes of the widening of that
+developed by road, the determination of the compensation payable in such
+building. case under the Land Acquisition Act, shall be subject to the
+ following special provisions, notwithstanding anything to the
+ contrary contained in that Act:
+ (a) Where the whole of the building or of any boundary
+ wall or gateway is situated within the building limit, the value
+ assigned to the building, boundary wall or gateway, as distinct
+ from the land acquired, shall be the value recorded under
+ section 74 at the time of the demarcation of the building limit
+ or the market value of the building, boundary wall or gateway
+ at the time of the acquisition, whichever is the less, and for
+ the purpose aforesaid, such market value shall be the
+ difference between the market value of the building,
+ boundary wall or gateway together with the land attached
+ thereto, at the time of the acquisition, and the market value at
+ that time of the land so attached as distinct from the building,
+ boundary wall or gateway;
+ (b) Where only a part of the building or of any boundary
+
+
+wall or gateway is situated within the building limit and the
+value recorded under section 74 is the value of the entire
+building, boundary wall or gateway in accordance with
+subsection (4) (a) of that section, the value assigned to that
+part of the building, boundary wall or gateway, as distinct
+from the land acquired, shall be the value so recorded or the
+market value of the entire building, boundary wall or gateway
+at the time of the acquisition, whichever is the less, and for
+the purpose aforesaid, such market value shall be the
+difference between the market value of the entire building,
+boundary wall or gateway together with the land attached
+thereto, at the time of the acquisition, and the market value at
+that time of the land so attached as distinct from the entire
+building, boundary wall or gateway;
+(c) Where only a part of the building or of any boundary wall
+or gateway is situated within the building limit and the value
+recorded under section 74 is the value of that part in
+accordance with subsection (4) (/) of that section, the value
+assigned to that part of the building, boundary wall or
+gateway, as distinct from the land acquired, shall be the
+value so recorded or the value of the part of the building,
+boundary wall or gateway within the building limit at the time
+of the acquisition, whichever is the less, and for the purpose
+aforesaid, such value shall be the aggregate of
+ (i) the estimated cost of the severance and removal of
+ that part of the building, boundary wall or gateway at
+ that time; and
+ (ii) the estimated cost, in the case of a building, of
+ adapting at that time the part of the building which will
+ then remain to the purpose for which the building is used
+ at that time, and in the case of a boundary wall or
+ gateway, of completing at that time such additions or
+ repairs as may be necessary;
+(d) No compensation shall be allowed in respect of any
+building, boundary wall or gateway which at any time after
+the date of the constitution of the Council has been erected
+in contravention of section 74 or re-erected or added to
+without the licence required by that section;
+(e) The value assigned to the land as distinct from the
+buildings thereon shall be the market value of the land at
+
+
+ the time of the acquisition;
+ (f) Where the land is only a portion of any premises
+ belonging to any one person or group of persons
+ (i) if the remaining portion of such premises is of
+ sufficient depth to admit of its being used as a site for a
+ building of the same character as the building which is to
+ be acquired, the market value assigned to the land shall
+ be one-half of the value at that time of similar land
+ in the vicinity possessing a road frontage; and
+ (ii) if the remaining portion of such premises is not of
+ sufficient depth for the purpose mentioned in
+ paragraph (i), the market value assigned to the land shall
+ be the value at that time of similar land in the vicinity
+ possessing a road frontage;
+ (g) Regard shall be had to any increase, in the value of any
+ other land or building belonging to the same owner or
+ owners, which is likely to accrue from any widening of the
+ road carried out after the acquisition of the land or the
+ demolition of any building, boundary wall or gateway
+ situated thereon;
+ (h) No additional compensation shall be allowed in respect of
+ the compulsory nature of the acquisition whether in the case
+ of the building or in the case of the land.
+ (2) In any case referred to in paragraph (f) (ii) of subsection (1),
+ the owner shall have the option of requiring the Urban Council
+ to acquire the entirety of his premises at the rate at which the
+ portion which the Council originally proposed to acquire was
+ valued under that paragraph.
+
+
+Power of Urban 79. The Urban Council of a town may, at the request of any person whose
+Council to acquire right to build upon any land abutting upon a road within that town is
+adjacent land for restricted by the building limit demarcated upon that road, and who
+owner of land desires to erect a building upon the land, acquire for such owner at his
+within building expense any land, situate at the rear of such first-mentioned land and
+limit. of sufficient extent to afford him building facilities of the same nature as
+ he would have enjoyed but for such restriction. All lands required for
+ any such purpose shall be deemed to be required for a public purpose,
+ and the provisions of section 78 shall apply to the valuation of such
+ land.
+
+
+ OBSTRUCTIONS TO THOROUGHFARES
+
+Power to demand 80. (1) Whenever it appears to any Urban Council that any building,
+production of title inclosure, or obstruction has been raised or made in any
+deeds. thoroughfare under the control of the Urban Council, or on any
+[8, 48 of 1984] waste or other land immediately adjoining such, road and
+ belonging to the State, it shall be lawful for the Urban
+ Council by written notice served on the person claiming to be
+ the owner of the premises on which such building, inclosure, or
+ obstruction has been raised or made, to demand the
+ production of every deed, document, and instrument upon
+ which such person founds such claim.
+ (2) In any of the following cases, that is to say:
+ (a) where the occupier of any premises, not being himself
+ the alleged owner, refuses to give full information
+ respecting the name and residence of the alleged owner
+ upon being requested so to do by the Urban Council; or
+ (b) where the alleged owner of any premises refuses to
+ produce within ten days, after being requested so to do,
+ every deed, document, and instrument upon which he
+ founds his claim to the premises and which is in his
+ possession; or
+ (c) where the alleged owner of any premises, not being in
+ possession of any such deed, document, or instrument
+ refuses to give full information to the Urban Council, upon
+ being requested so to do, of the name and residence of the
+ person in whose possession they are; or
+ (e) where any person having in his possession any such
+ deed, document, or instrument refuses to produce it within ten
+ days after having been requested so to do in writing by the
+ Urban Council,
+ every such occupier, alleged owner, or person so refusing shall
+ be guilty of an offence, punishable with a fine not exceeding five
+ hundred rupees.
+
+
+Demand of 81. (1) Every deed, document or instrument the production of which
+production of deed is demanded by an Urban Council under section 80 shall be
+to include power of produced on the premises to which it relates, or at such other
+examination. place as the Urban Council may require; and the power given
+ by
+
+
+[9, 48 of 1984] that section to demand the production thereof, shall be deemed
+ to include the power to make such examination and copies of
+ such deeds, documents, and instruments as may be necessary.
+ (2) Every person refusing or failing to permit any person
+ authorized by the Urban Council to examine any deed,
+ document, or instrument, or to take copies thereof, shall be
+ guilty of an offence punishable with a fine not exceeding five
+ hundred rupees.
+
+
+Power to make 82. In any case referred to in section 80 (I), it shall be lawful for any
+survey of premises. person authorized thereto by the Urban Council to make such survey
+ of the premises, on which the building, inclosure, or obstruction has
+ been raised or made, as may be necessary to enable the Urban
+ Council to ascertain whether an encroachment has been made thereby
+ upon any thoroughfare or on any State land adjoining a thoroughfare,
+ and for the purposes of such survey to enter upon such premises and
+ upon any other premises whatsoever which it may in his opinion be
+ necessary to enter.
+
+
+Proof of right to 83. (1) Whenever it appears to any Urban Council that the line of
+apparent any thoroughfare under the control of the Council has been
+encroachment to altered without proper authority, or has been stopped up, or
+rest upon the obstructed, or encroached upon, the Council shall give notice in
+owner. writing to the occupier of the land from off which the
+ thoroughfare is alleged or suspected to have been turned, or
+ upon which such stoppage or obstruction or encroachment is
+ alleged or suspected to have been made, that a survey of the
+ premises has been made by the direction of the Council, and is
+ open to the inspection of such occupier at a place to be
+ mentioned in the notice, and that unless within one month from
+ the service of the notice he, or the person under whom he holds,
+ takes legal proceedings for establishing his title to such land,
+ and for preventing the removal of any such obstruction or
+ encroachment, the Council will proceed with the removal
+ thereof in manner provided by section 84.
+ (2) If no legal proceedings are taken within the time specified in
+ subsection (I) or being taken are not duly prosecuted, it shall be
+ the duty of the Council to cause any such obstruction or
+ encroachment to be forthwith removed as provided by
+ section 84.
+
+
+ (3) Where legal proceedings are taken, it shall be incumbent on the
+ party claiming to be the owner of the land from off which the line
+ of any thoroughfare is alleged to have been altered or turned,
+ or upon which the stoppage or obstruction or encroachment is
+ alleged to have been made, to prove his title to such land.
+
+
+Removal of 84. (1) It shall be lawful for any Urban Council, through any person
+obstructions or authorized by the Council in that behalf, to give order
+encroachments. verbally, or by notice in writing, to any person obstructing or
+ encroaching upon any thoroughfare under the control of the
+ Council, forthwith to remove or abate the obstruction or
+ encroachment; and if any person to whom such order is
+ given refuses or neglects to comply therewith within a
+ reasonable time, or, if there be any doubt as to who is the
+ proper person to whom such order should be given, after such
+ notice has been affixed for a reasonable time to such
+ obstruction or encroachment, it shall be lawful for the Council
+ to cause any such obstruction or encroachment to be forthwith
+ removed or abated.
+ (2) For the purpose of removing or abating any obstruction or
+ encroachment under subsection (1) it shall be lawful for the
+ Urban Council, or any person authorized in writing by the
+ Council to enter into any house, garden, inclosure, or other
+ premises, together with such persons and with such implements
+ and materials as may be necessary, and to proceed to do or take
+ therein or cause to be done or taken all such acts or measures as
+ may be necessary for such removal or abatement.
+ (3) The costs incurred by the Urban Council in the removal or
+ abatement of any obstruction or encroachment shall be
+ payable by the person whose failure to comply with an order
+ under subsection (I) caused such costs to be incurred; and such
+ costs, where they are not paid by such person on demand, shall
+ be certified by the Chairman of the Council to the Magistrate's
+ Court* having jurisdiction over the area where such person
+ resides and shall be recovered by that court in like manner as a
+ fine imposed by the court. All moneys so recovered shall be
+ paid by the court into the local fund of the Council.
+ (4) Where the removal or abatement of any obstruction or
+ encroachment is effected after the due production of all deeds,
+ documents, and instruments affecting the title to such
+ premises,
+
+
+ and such premises are nevertheless adjudged to be the property
+ of the party laying claim to the same, such party shall be entitled to
+ compensation from the Urban Council for all loss and injury
+ occasioned thereby; but if the party claiming to be the owner of
+ such premises shall refuse or neglect to produce all such deeds,
+ documents, and instruments, or if such deeds, documents, and
+ instruments shall not be produced within ten days after
+ application in that behalf, and any such Urban Council shall
+ nevertheless have caused the removal of such building,
+ inclosure, or encroachment, then, in the event of such premises
+ being adjudged to be the property of the party claiming to be the
+ owner thereof, such party shall not be entitled to any compensation
+ for any loss or injury occasioned thereby.
+
+
+ INJURIES TO THOROUGH FARES , &c ;.
+
+Destroying 85. Every person who
+milestone, bridge, (1) willfully or negligently destroys, pulls up, defaces, throws
+&c. down, breaks, or injures any milestone, mile-post, demarcation
+[10, 48 of 1984] stone, demarcation post, lamp-post, or direction post, or any
+ bridge, culvert, parapet, arch, wall, dam, drain, sluice, lock,
+ bank, abutment, mound, prop, post, lamp, railing, chain, or fence
+ belonging to any thoroughfare, or erected at or near any pit or
+ quarry opened or used for getting road materials; or
+ (2) willfully and unnecessarily removes any fence, post, stone, log,
+ or other thing laid or erected by the direction of any competent
+ authority on or in any thoroughfare, for the temporary prevention
+ of the use thereof, or for preventing danger or injury to persons
+ passing along the same whilst undergoing repair; or
+ (3) without the permission of a competent authority, gathers or
+ heaps up, or takes away, any stones, gravel, sand, or other material,
+ or any slutch, dirt, drift, or soil from any thoroughfare; or
+ (4) leads or drives any elephant, ox, horse, pig, or other animal
+ or any vehicle from or off or on or into any thoroughfare in such
+ manner as to cause injury to the thoroughfare or shall suffer any
+ such animal to damage the thoroughfare; or
+ (5) being the owner or occupier of any land contiguous to any
+ road, suffers the passage through or into his land of the water
+ from such road, or from any ditch or drain leading therefrom, to be
+ obstructed, or suffers any water, filth, or other substance or
+
+
+ thing to flow or run from such land or house into or upon any
+ such road, or suffers any accumulation of dirt or rubbish in any
+ drain opposite to his house or land to impede the flow of water;
+ or
+ (6) without the previous consent of the Urban Council, by any
+ act on his land interferes with the free passage of water along or
+ from any drain or culvert of any road; or
+ (7) hauls or draws upon any thoroughfare any timber, stone, or
+ other thing, otherwise than upon a wheeled carriage, or suffers
+ any timber, stone, or other thing carried principally or in part
+ upon a wheeled carriage to drag or trail upon such thoroughfare
+ to the damage thereof; or
+ (8) makes or causes to be made any dam, ditch, drain, or
+ watercourse upon or across, or otherwise breaks up, or injures,
+ the surface of any road; or
+ (9) erects, sets up, lays down, or constructs, either permanently
+ or temporarily in, along, under, or over any thoroughfare, any post,
+ pillar, lamp, wire, pipe, rails or other plant, material, or works
+ without the permission of the Urban Council, or otherwise than in
+ accordance with the terms and conditions of such permission; or
+ (10) attaches additions to his house so as to project over the
+ outer edge of the side drain of any road, or by means of
+ temporary supports or otherwise exposes goods or wares of any
+ description over any portion of a road or its side drain, or by
+ causing carts to be loaded or unloaded in front of his dwelling in
+ any way injures the side drain,
+ shall be guilty of an offence punishable with a fine not exceeding five
+ hundred rupees.
+
+Using new road for 86. Upon the construction of a new thoroughfare or upon the execution of
+
+certain lime after any repair to an existing thoroughfare, it shall be lawful for the Urban
+making. Council having control of such thoroughfare, by notice exhibited
+[11, 48 of 1984] upon or so as to be visible from the thoroughfare, to prohibit the
+ riding or driving of any animal or vehicle on the thoroughfare for a
+ specified period not exceeding one month after the completion of the
+ work of construction or repair; and every person doing any act in
+ contravention of such notice shall be guilty of an offence punishable
+ with a fine not exceeding five hundred rupees.
+
+
+Owner or occupier 87. If the owner or occupant of any house or premises adjoining any
+bound to have thoroughfare, by the side of which a drain has been made or
+bridge, &c over excavated, requires means of access to such house or premises from
+drain leading to his such thoroughfare, he shall be bound to place over the drain, to the
+house. satisfaction of the Urban Council, a bridge, platform, or arch, which
+ shall in no case cover less than three feet of the length of such drain; and
+ it shall be lawful for the Urban Council on being satisfied that any
+ person has access from such thoroughfare to any house or premises
+ so situated and that such bridge, platform, or arch should be provided, to
+ call upon the owner or occupant of the house or premises forthwith to
+ construct such bridge, platform or arch, and if he fails to do so within a
+ reasonable time, to cause the work to be done, and to recover the costs
+ thereof in the manner provided by section 84 of the recovery of the costs
+ therein mentioned.
+
+
+Allowing trees to 88. Any person who allows any tree, upon any premises of which he is
+grow in such a way the owner or of which he is in occupation, to grow in, such a way as
+as to injure to cause injury to any thoroughfare, after the service of a notice upon
+thoroughfares. him by the Urban Council calling upon him to take the necessary
+[12, 48 of 1984] measures to abate such injury, and after the expiration of such
+ reasonable time as may be specified in the notice for the purpose,
+ shall be guilty of an offence, punishable with a fine not exceeding five
+ hundred rupees, and in any such case the Magistrate* before whom
+ the offender is convicted may, in default of the necessary measures
+ being taken by the offender, direct that such measures shall be taken
+ by the Urban Council, and that the costs thereof shall be recovered in the
+ manner provided in section 84 for the recovery of the costs therein
+ mentioned.
+
+
+Damage to 89. (1) It shall be the duty of every person who proposes to
+thoroughfare undertake any such operations for clearing, draining, or
+through clearing, opening up any land in the vicinity of any thoroughfare as are
+draining, or likely to cause injury to the thoroughfare, or to impair the
+opening up condition thereof by reason of any outflow or increased
+neighbouring land. outflow of water or silt
+
+ (a) to give notice in writing to the Urban Council of his
+ proposed operations; and
+ (b) in addition to such measures as may be taken by the
+ Urban Council, to take at his own expense all such
+
+
+ measures as may be reasonably necessary to prevent such
+ injury to or such impairment of the condition of such
+ thoroughfare.
+ (2) Any person who undertakes any of the operations referred to
+ in subsection (1) without giving the notice required by that
+ subsection, or who otherwise makes default in compliance with the
+ requirements thereof, shall be responsible for any damage
+ occasioned by such operations, and for any expenses incurred by
+ the Urban Council for the purpose of preventing or remedying
+ any damage that may be occasioned or apprehended in
+ consequence of such operations, and the amount of any such
+ damage or expenses may be recovered in manner provided in
+ section 84 for the recovery of the costs therein mentioned.
+
+
+ NUISANCES ON THOROUGHFARES, & C;.
+
+Offences. 90. (1) Every person who within a town turns loose or suffers to be
+[13, 48 of 1984] turned loose any elephant, ox, buffalo, horse, sheep, goat, or
+ other animal on to or into any thoroughfare, or so that it
+ makes its way on to or into any thoroughfare; or ties or
+ tethers or suffers to be tied or tethered any animal of any
+ description in any manner which permits it to make its way on
+ to or into any thoroughfare, unless such animal is so tied or
+ tethered during the time required for loading or unloading it, or
+ for the loading or unloading of any cart or boat to which it may
+ belong, shall be guilty of an offence punishable with a fine not
+ exceeding five hundred rupees:
+ Provided that where any such animal is found on or in any
+ thoroughfare, or tied or tethered in such a way that it can
+ make its way on to or into any thoroughfare, such animal
+ shall be deemed to have been turned loose, or suffered to be
+ turned loose, or to have been tied or tethered, or suffered to be
+ tied or tethered, as the case may be, by the owner thereof,
+ unless he satisfies the court to the contrary.
+ (2) The owner of any pig found tied, straying, burrowing or
+ wallowing in any road or canal within a town shall be guilty
+ of an offence punishable with a fine not exceeding fifty
+ rupees; and it shall be lawful for any person to seize or shoot or
+ otherwise destroy any pig that he may find tied, straying,
+ burrowing, or wallowing in any such road or canal; and such
+ person may, if he choose, take such pig to any peace or police
+ officer of the area in
+
+
+which the offence was committed, and such officer shall
+forthwith sell the pig, and pay the proceeds of such sale to such
+person.
+(3) Every person who within a town
+ (a) hangs up or otherwise exposes any mats, clothes, or any
+ substances of any nature whatever on or at the side of any
+ road in a manner calculated to obstruct the use of the road;
+ (b) leaves or permits to be left, on any road any cart or other
+ carriage, without the oxen, horses or other animal being
+ yoked or harnessed thereto, unless such cart or carriage has
+ accidentally broken down there, and, in case of such accident,
+ for a longer time than may be necessary for its removal;
+ (c) suffers any vehicle to remain in any road between a
+ quarter of an hour after sunset and a quarter of an hour
+ before sunrise without having attached thereto the lights
+ required by the Vehicles Ordinance, or the Motor Traffic
+ Act;
+ (d) leaves any boat or raft in any canal in such a way as to
+ obstruct the use of such canal;
+ (e) lays or throws any stones, bricks, raft, timber, sand,
+ lime, dung, straw, rubbish, or scourings of any ditch or
+ drain, or other article or thing, on or in any road, river, or
+ canal, and allows such article or thing to remain there,
+ except for such period as may be absolutely necessary for
+ the removal thereof,
+ (f) leads or drives on any road any cart or other carriage
+ with timber, boards, iron, or other goods so that either end
+ of any such goods projects beyond the wheels or sides
+ thereof;
+ (g) encroaches on any thoroughfare by making or causing
+ to be made any building, platform, hedge, ditch or fence, or
+ other obstruction upon or in any thoroughfare;
+ (h) after having blocked or stopped any cart or other carriage
+ in going up or down a hill or rising ground, causes or suffers
+ to be or to remain on any road the stone, timber, or other
+ thing with which such cart or other carriage may have been
+ blocked or stopped;
+
+
+ (i) in any manner willfully prevents any other person, or
+ any carriage, boat, raft, or other conveyance under his care,
+ from passing along any thoroughfare,
+ shall be guilty of an offence punishable with a fine not
+ exceeding five hundred rupees.
+ (4) Every person who within a town places or continues any
+ kraal or fence or any other obstruction in any canal or river so as to
+ impede or in any way interfere with the convenient navigation
+ thereof, shall be guilty of an offence punishable with a fine not
+ exceeding five hundred rupees. It shall be lawful for the Urban
+ Council to cause any such kraal, fence, or obstruction so placed
+ or continued to be pulled up or otherwise destroyed, and to recover
+ the cost thereof in the manner provided in section 84 for the
+ recovery of the costs therein mentioned.
+
+
+Seizure of stray 91. (1) It shall be lawful for any person, thereto authorized by the
+cattle. Chairman of the Urban Council of a town to seize any ox,
+[14, 48 of 1984] buffalo, horse, sheep, goat or pig which he may find tied,
+ tethered, or straying on or about any thoroughfare within the
+ administrative limits of the town, unless such animal belongs to
+ any cart or boat to which it is tied or tethered whilst the cart or
+ boat is being loaded or unloaded, and to place every animal so
+ seized in the pound established by the Council for the purpose,
+ (2) No animal seized under subsection (1) shall be delivered to
+ the owner thereof unless upon payment of such sum as the
+ Council having regard to local conditions may by resolution
+ fix, from time to time, for the use of the person by whom the
+ animal may have been seized, and for each day during which
+ the animal may have been kept in the pound.
+ (3) If no person claims any animal placed in the pound or pays
+ the dues required by subsection (2) within ten days after the
+ seizure of the animal, it shall be lawful for the Council to
+ sell it by public auction, and after payment of such sums as the
+ Council having regard to local conditions may by resolution
+ fix from time to time, to the person by whom me animal
+ was seized and for the custody and maintenance of the animal
+ for each day it is kept in the pound to pay any balance of the
+ proceeds of such sale into the local fund established by the
+ Council, and if such balance is not claimed and payment
+ thereof is not obtained by any person entitled thereto within
+ a period of one year from the
+
+
+ date of the sale, to pay such balance into the local fund.
+ (4) The provisions of this section shall have effect in every town to
+ which this Ordinance applies, notwithstanding anything contained
+ in the Animals Act.
+
+
+Interference with 92. Any person who removes any animal from the lawful custody of any
+cattle seizers or pig person authorized to seize it under section 91, or under subsection (2) of
+seizers. section 90, or who in any way molests or obstructs such person in the
+[15, 48 of 1984] exercise or discharge of his powers or duties, shall be guilty of an
+ offence, and shall, on conviction after summary trial before a
+ Magistrate,* be liable to a fine not exceeding five hundred rupees-
+
+
+ SPECIAL USER OF THOROUGHFARES
+
+Power of Urban 93. Any Urban Council may, from time to time, and either independently or
+Council to in combination with any other Urban Council, subject to the terms of
+authorize the user any special enactment in that behalf, enter into an agreement with any
+of public person or body of persons or any local authority constituted by law
+thoroughfares for (hereinafter referred to as 'the promoters'), to authorize such promoters,
+special purposes. for the purpose of any system of tramways, of any supply of gas,
+ electrical energy, water, or other public service, or any private enterprise
+ or object, to make such user of thoroughfares under the control of the
+ Council other than principal thoroughfares, to make such user of
+ principal thoroughfares with the prior approval of the Minister charged
+ with the subject of thoroughfares, and to execute all such works and to
+ set up or maintain all such erections or plant thereon or therein as
+ may in the opinion of the Council be necessary for the purpose of the
+ effective establishment or maintenance or the modification or
+ development of such public service or such enterprise or object.
+
+
+ 94. (1) For the purpose of any agreement referred to in section 93,
+ and for the purpose of securing the observance of the respective
+ rights and obligations of the public, the Urban Council and the
+ promoters in connexion with any public service or any private
+ enterprise or object to which the agreement relates, the Urban
+ Council (except in so far as provision is made by any special
+ enactment in that behalf) may make by-laws
+ (a) authorizing the promoters and their agents, servants or
+ workmen, or the agents, servants, or workmen of the Council,
+ subject to such conditions as may be prescribed in
+
+
+ the by-laws
+ (i) to break up the soil, metal, and pavement of any
+ thoroughfare vested in the Council;
+ (ii) to open and break up any sewers, drains, or tunnels
+ within or under such thoroughfare;
+ (iii) to erect, set up, or lay down, either permanently or
+ temporarily in, along, under, or over such
+ thoroughfare, any post, pillar, lamp, wire, pipe, rails or
+ other plant, material, or works;
+ (iv) to alter the position of any public line, wire, or other
+ apparatus or plant in or about such thoroughfare for the
+ purpose of any other public service;
+ (b) requiring the promoters to do as little damage as may be
+ in the execution of the powers granted by the said by-laws,
+ and to make compensation for any damage which may be
+ done in the execution of such powers;
+ (c) requiring the promoters to complete any work which
+ they may be authorized to execute under such by-laws with
+ all convenient speed, and to reconstruct, repair or restore
+ any thoroughfare, sewer, drain, tunnel, or any plant or
+ apparatus which they may be authorized to remove, alter or
+ interfere with in pursuance of such by-laws;
+ (d) requiring the promoters to remove and carry away all
+ rubbish occasioned by their operations, and to cause proper
+ precaution to be taken for the safety of the public in
+ connexion therewith;
+ (e) prohibiting any interference with or obstruction to any
+ operations authorized by any by-law under this section.
+ (2) No by-law under this section shall authorize or empower any
+ entry to be made, any material or plant to be erected or
+ deposited, or any work to be executed upon any building or land
+ which is not vested in the Council, without the consent of the
+ owners and occupiers thereof first had and obtained.
+
+
+Expenses caused 95. (1) Where it appears to any Urban Council that, having regard to
+by extraordinary the average expense of maintaining thoroughfares in the
+traffic. neighbourhood, extraordinary expenses have been incurred
+ by the Council in maintaining any thoroughfare of which it has
+ control, by reason of the damage caused or likely to be
+ caused
+
+
+ by the carriage of any excessive weight or the passing of any
+ extraordinary traffic thereon, the Council shall be entitled to
+ recover from any person by whose order, or in consequence of
+ whose order, such weight or traffic was carried or caused, the
+ amount of such expenses as may be proved to the satisfaction of
+ a competent court to have been incurred by the Council by
+ reason of the damage arising or likely to arise from such
+ excessive weight or extraordinary traffic, or, where more than
+ one person is responsible for such excessive weight or
+ extraordinary traffic, may recover from each of such persons
+ such proportion of the amount of the expenses so incurred, as in
+ the opinion of the court may fairly be assigned to him.
+ (2) Any person against whom expenses are or may be recoverable
+ by an Urban Council under this section may enter into an
+ agreement with the Council for making payment to the Council by
+ way of composition in respect of such weight or traffic and,
+ where payment is made in accordance with such agreement, no
+ proceedings under this section shall be instituted or maintained
+ against such person.
+ (3) Proceedings for the recovery of any expenses under this
+ section shall be commenced within twelve months of the time at
+ which such expenses were incurred, or where any expenses
+ incurred are the consequence of any particular contract or work
+ extending over a long period, shall be commenced not later than
+ six months after the completion of the contract or work.
+
+
+ POWERS, DUTIES, AND RESPONSIBILITIES OF
+ OFFICERS, & C.
+
+Powers conferred 96. In respect of all thoroughfares other than principal thoroughfares
+on officers in within the limits of the town for which an Urban Council is
+charge of public constituted, the Chairman of the Council and all persons authorized in
+works by whom to writing by him in that behalf, shall and may by themselves, their
+be exercised. servants, workmen, and labourers, exercise the several powers and
+ authorities conferred by this Part on officers in charge of works to which
+ this Part is applicable.
+
+
+Survey by proper 97. If any plan or survey, made by or by the direction of the Urban
+officer lobe Council or any authority of which the Urban Council is the successor,
+conclusive is produced in evidence in any proceeding under this Part, such plan
+evidence. or survey shall be deemed and taken to be conclusive proof of the
+
+
+ facts exhibited therein, in so far as the claim of the Council is
+ concerned, unless the contrary be established by the party contesting
+ such claim.
+
+
+Compensation for 98. Every person who sustains any loss or damage by reason of the exercise,
+injury to properly by or by the authority of the Chairman of any Urban Council, of
+by authorized any of the powers or authorities conferred by this Part upon officers
+officers. in charge of works to which it is applicable, shall (except where the
+ loss or damage is incurred through the act, default, or neglect of such
+ person) be entitled to receive compensation for such loss or damage,
+ if he makes application in that behalf to the Urban Council at any
+ time before the expiration of three months after the claim for
+ compensation has arisen. Where any such person fails to make such
+ application within the aforesaid period, his claim to compensation for
+ the alleged loss or damage, shall be disallowed, and he shall be barred
+ from recovering such compensation.
+
+
+Arbitration. 99. Where, for any reason, the amount of any compensation payable
+ under section 98 is not agreed upon between the Urban Council and
+ the claimant, such amount may be determined by two arbitrators, of
+ whom one shall be nominated by the Council and the other by the
+ claimant. If the two arbitrators cannot agree, they shall appoint an
+ umpire, and the award of the arbitrators or umpire, as the case may
+ be, given in terms of the reference agreed to by the Council and the
+ claimant, shall be final.
+
+
+Officers and 100. If any officer of an Urban Council in charge of any work on any
+contractors leaving thoroughfare, or any person engaged upon any thoroughfare in
+stones, pursuance of any contract with any Urban Council, lays or causes to be
+thoroughfares by laid any heap of stones, gravel, rubbish, or other matter whatsoever
+night. upon the thoroughfare, and allows such heap to remain there at night,
+[16, 48 of 1984] to the danger or personal damage of any person passing along the
+ thoroughfare (all due and reasonable precautions not having been
+ taken by him to prevent any such danger or damage), such officer
+ or person shall be guilty of an offence punishable with a fine not
+ exceeding five hundred rupees.
+
+
+Road officer or 101. Save as in sections 100 and 226 provided, nothing contained in this
+road contractor not Part shall render any officer of an Urban Council charge of any work
+liable to fine except on any thoroughfare, or any contractor under the Council, liable to
+in certain cases. any prosecution or fine under this Part for any act done by such
+
+
+ officer in the discharge of the duties of his office, or by such
+ contractor in the necessary execution or performance of his contract.
+
+
+Police officers and 102. It shall be the duty of all officers of the police force and of all grama
+grama seva seva niladhans generally, to aid and assist in the prevention of all
+niladharis to offences against this Part within the areas or divisions for which they
+enforce provisions are respectively appointed.
+of this part.
+
+
+ PART IV
+ POWERS AND DUTIES AS TO PUBLIC HEALTH
+ PUBLIC HEALTH
+
+Urban Council to 103. Subject to the powers and responsibilities by law committed to any
+be the public health other authority, the Urban Council of each authority town shall be
+authority. the general administrative authority for the purpose of promoting
+ and securing the public health within the town, and shall for that
+ purpose be entitled to exercise all such powers as are vested in it by
+ this Ordinance, the Nuisances Ordinance, the Housing and Town
+ Improvement Ordinance, and any other written law for the time
+ being in force in that behalf.
+
+
+ DRAINAGE
+
+Urban Council to 104. The Urban Council of each town may from time to time cause be made
+make public drains. altered, or extended such public main or other drains, sewers, and
+ watercourses as may appear to it to be necessary for the effectual
+ draining of any area within the town, and, if necessary, may carry
+ them through, across, or under any street, or any place laid out as
+ or intended for a street, and (after reasonable notice in writing in that
+ behalf) into, through, or under any enclosed or other lands whatsoever,
+ doing as little damage as may be and making full compensation for any
+ damage done.
+
+
+Duty of Council to 105. (1) The Urban Council of each town shall maintain, and from
+repair, alter, and time to time repair, and as it shall see fit, enlarge, alter, arch
+discontinue drains over, or otherwise improve all or any of the public drains,
+ culverts, gutters, and watercourses in the town, and may
+ discontinue, close up, or destroy such of them as it may deem
+ useless or unnecessary, but so that no nuisance is created
+ by such act.
+ (2) Where by reason of the discontinuance, closing up, or
+
+
+ destruction or alteration of any drain, culvert, gutter or
+ watercourse, any person is deprived of the lawful use thereof,
+ the Council shall with due diligence provide an effective
+ substitute therefor.
+
+Penalty for making 106. Whoever within any town, without the written consent of the Urban
+
+unauthorised drains Council first obtained, makes or causes to be made any drain leading
+into public drains. into any of the public sewers or drains, shall be guilty of an offence
+[17, 48 of 1984] punishable with a fine not exceeding five hundred rupees, and the
+ Council may cause the drain so made to be demolished, altered,
+ remade, or otherwise dealt with as it may think fit; and all the expenses
+ incurred therein by the Council shall be paid by the person convicted
+ of the offence, and shall be recoverable as hereinafter provided.
+
+
+Building over 107. No new building shall be erected over any public drain, sewer,
+drains &c; not to culvert, gutter, or watercourse in any town without the written
+be erected without consent of the Urban Council of the town; and where any building is so
+consent of Urban erected the Council may cause it to be pulled down, or otherwise dealt
+Council. with as it may think fit; and the expenses therein incurred by the
+ Council shall be paid by the person convicted of the offence, and shall
+ be recoverable as hereinafter provided.
+
+
+General control of 108. (1) Every private drain in any town shall be under the survey
+drains. and control of the Urban Council of that town, and shall be
+ constructed, altered, repaired, or kept in proper order as the
+ Council may require, at the cost and charges of the owners
+ of the land or building to which such drain belongs or for
+ the use of which it is constructed.
+ (2) If the owner of any land or building to which any such drain
+ belongs neglects during eight days after the service of a
+ written notice in that behalf by the Council, to alter, repair, or
+ put the drain in good order in such manner as may be
+ specified in the notice, the Council may cause such drain to
+ be altered, repaired, or put in good order in the manner
+ required, and the expenses incurred therein by the Council
+ shall be paid by the owner, and shall be recoverable as
+ hereinafter provided.
+
+
+Obstruction of 109. Whenever the Urban Council of a town has by a resolution
+discharge of rain determined that any natural watercourse, channel, lake, swamp, or
+water and drainage. any part thereof which is situated within the town and into which
+
+
+[18, 48 of 1984] rain water or drainage has theretofore discharged, shall remain open
+ for the reception of such rain water or drainage, any person who,
+ after receiving a written notice of the resolution from the Council,
+ fills up or permits to remain filled up any such watercourse, channel,
+ lake or swamp in such a manner as to obstruct or interfere with the free
+ flow of such rain water or drainage, shall be guilty of an offence
+ punishable with a fine not exceeding five hundred rupees;
+ Provided that
+ (a) such natural watercourse, channel, lake, or swamp may
+ be filled up if the owner thereof first provides such other
+ channel or drains, as may, in the opinion of the Council, be
+ sufficient and suitable for the reception and conveyance of
+ such rain water or drainage ; and
+ (b) the Council may contribute in part or in whole to the
+ cost of providing such other channel or drain.
+
+
+ LATRINES
+
+Duty of council as 110. It shall be the duty of the Urban Council of each town
+to latrine (a) to take effective measures to secure that adequate and
+accommodation. proper latrine accommodation is provided for all houses,
+ buildings and lands within the town;
+ (b) to provide such public latrine accommodation as is necessary
+ at all places of public resort within the town; and
+ (c) to ensure that all latrine accommodation, both public and
+ private, within the town, is maintained in proper order and
+ condition.
+
+
+Council may order 111. (1) Where the Urban Council is of opinion that any latrine or
+or cause additional latrines or additional latrine or latrines should be provided for
+latrines to be any house or building or land, the owner of such house or
+constructed. building or land shall within two months after service of a
+ written notice in that behalf by the Council, cause such
+ latrine or latrines to be constructed in accordance with such
+ requirements as may be set out in the notice.
+ (2) Where any notice served under subsection (1) is not complied
+ with to the satisfaction of the Chairman within the period
+ specified in that subsection, the Council shall be at liberty
+ to cause such latrine or latrines to be constructed, and the
+ expenses incurred in such construction shall be payable by
+
+
+ the person making default in complying with the notice, and
+ shall be recoverable as hereinafter provided.
+
+
+Council may cause 112. (1) It shall be lawful for an Urban Council by written notice to
+persons employing direct any person employing workmen or labourers in the
+men to provide and town to provide and maintain such latrine or latrines as
+maintain latrine or may to it seem fit, and to cause the latrine or latrines so
+latrines, &c. provided to be kept in proper order and to be daily cleaned.
+ (2) Where any notice served under subsection (1) is not
+ complied with, the Council may construct the necessary
+ latrine or latrines or cause the latrine or latrines to be kept
+ in good order and daily cleaned, and the expenses incurred
+ therein by the Council shall be paid by the person making
+ default in complying with the notice, and shall be recoverable
+ as hereinafter provided.
+
+
+Neglecting to 113. (1) The owner or occupier of any house or building or land on
+enclose private which a latrine is situated shall have such latrine shut out by a
+latrine. sufficient roof and a wall or fence from the view of persons
+[19, 48 of 1984] residing in the neighbourhood or passing by, and it shall not be
+ lawful for any such owner or occupier to keep any open
+ latrine or a latrine with a door or trapdoor opening on to any
+ street.
+ (2) The owner or occupier of any house or building or land who
+ fails to comply with, or shall commit any breach of, any of the
+ provisions of subsection (1) shall be guilty of an offence
+ punishable with a fine of fifty rupees for each day during
+ which such breach is continued:
+ Provided that the Urban Council of the town may in its
+ discretion permit the continuance for such time as it may think
+ fit of any open latrine or any latrine with a door or trapdoor
+ opening on to any street in any case where such latrine already
+ exists and does not create a nuisance.
+General control of 114.
+latrines. (1) All latrines and cesspits within any town shall be under the
+ survey and the control of the Urban Council of the town and
+ shall be altered, repaired, or kept in proper order as the
+ Council may require, at the cost and charges of the respective
+ owners of the houses, buildings, or lands to which the
+ latrines belong, or for the use of which they are constructed or
+ maintained.
+ (2) If the owner or occupier of any house, building, or land to
+
+
+ which any latrine or cesspit belongs neglects, during one month
+ after service of notice in writing for that purpose by the Urban
+ Council, or within such other period as may be prescribed by
+ the notice, to alter, repair, and put the latrine or cesspit in good
+ order in the manner required by the Council, the Council may
+ cause such latrine or cesspit to be altered, repaired, or put in
+ good order in the manner required; and the expenses incurred
+ by the Council in respect thereof shall be paid by the owner,
+ and shall be recoverable as hereinafter provided.
+
+
+Penalty for persons 115. (1) If any person within any town
+making or altering (a) constructs any latrine or cesspit contrary to the
+latrines, &c; directions of the Urban Council of the town or contrary to
+contrary to the the provisions of this Ordinance or any by-law made
+directions or by- thereunder; or
+laws of Urban
+Council. (b) continues the use of any latrine or cesspit which has
+ been ordered by the Council to be removed or closed; or
+[20, 48 of 1984]
+ (c) neglects to construct, provide, or maintain any latrine
+ ordered to be constructed, provided, or maintained under
+ sections 111 and 112,
+ such person shall be guilty of an offence punishable with a fine
+ not exceeding five hundred rupees.
+ (2) In any case failing within paragraph (a) or paragraph (b) of
+ subsection (1), the Council shall cause such alteration to be
+ made in the latrine or cesspit as it may think fit; and the
+ expenses thereof shall be paid by the person by whom such
+ latrine or cesspit was improperly constructed or made, and
+ shall be recoverable from him as hereinafter provided.
+
+
+Inspection of 116. (1) The Urban Council of a town or any officer authorized by
+latrines, &c. the Council for that purpose may, subject to the other
+ provisions of this Ordinance, inspect any latrine or cesspit
+ within the town, and may for that purpose at any time enter
+ upon any house, building or land, with such assistants and
+ workmen as are necessary, and cause the ground to be opened,
+ where such Council or officer may think fit, doing as little
+ damage as may be.
+ (2) If upon any inspection under subsection (1) it appears that any
+ latrine or cesspit is not in good order and condition, or that
+
+
+ it has been constructed after the date of the constitution of the
+ Council in any manner contravening the provisions of this
+ Ordinance or the by-laws made thereunder or contrary to the
+ directions of the Council, the expenses of such inspection shall be
+ paid by the person to whom such latrine or cesspit may belong,
+ and shall be recoverable as hereinafter provided.
+ (3) If any latrine or cesspit is found to be in proper order and
+ condition, and not to have been constructed in contravention of
+ the provisions of this Ordinance or of the by-laws made
+ thereunder or the directions of the Council, the Council or the
+ authorized officer of the Council shall cause the ground to be
+ closed and made good as soon as may be, and the expenses
+ incurred thereby shall in that case be defrayed by the Council.
+
+
+Power of Urban 117. (1) The Urban Council of a town or any officer authorized by
+Council to direct the Council for that purpose may by written notice require the
+latrine or closure of owner or occupier of any house or building or land within the
+cesspit. town, on which is situated a latrine or cesspit which, in the
+[21, 48 of 1984] opinion of the Council or the officer, is structurally defective
+ or unsuitable for the purpose to which it is put, or is liable to
+ give rise to a nuisance, to repair, alter, reconstruct, or remove
+ the latrine or cesspit, or to substitute an earth-closet therefor.
+ (2) If any owner or occupier neglects for a period of one month
+ after service of notice in that behalf under subsection (I), or
+ within such other period as may be specified in the notice, to
+ repair, alter, reconstruct, or remove the latrine or cesspit, to
+ which the notice relates, or to substitute an earth-closet
+ therefor, he shall be guilty of an offence punishable with a fine
+ not exceeding five hundred rupees.
+ (3) The Urban Council or the authorised officer may cause the
+ latrine or cesspit referred to in subsection (2) to be repaired,
+ altered, reconstructed, or to be removed and an earth-closet
+ to be substituted therefor, and the expenses incurred by the
+ Council or the officer in respect thereof shall be paid by the
+ owner, and shall be recoverable as hereinafter provided.
+
+
+ CONSERVANCYAND SCAVENGING
+
+Duty of Council as 118. It shall be the duty of the Urban Council of each town, so far as is
+to conservancy and reasonably practicable, to take all necessary measures in every part
+scavenging. of the town
+
+
+ (a) for properly sweeping and cleansing the streets, including
+ the footways, and for collecting and removing all street refuse;
+ (b) for securing the due removal at proper periods of all house
+ refuse, and the due cleansing and emptying at proper periods of
+ all latrines and cesspits; and
+ (c) for the proper disposal of all street refuse, house refuse, and
+ night-soil.
+
+
+All refuse 119. All street refuse, house refuse, night-soil, or other similar matter
+collection to be the collected by any Urban Council under the provisions of this Part
+properly of shall be the property of the Council, and the Council shall have full
+Council. power to sell or dispose of all such matter.
+
+
+Places for disposal 120. Every Urban Council shall, from time to time, provide places
+of refuse and convenient for the proper disposal of all street refuse, house refuse,
+keeping night-soil, and similar matter removed in accordance with the
+equipment. provisions of this Part, and for keeping all vehicles, animals,
+ implements, and other things required for that purpose or for any of the
+ other purposes of this Ordinance, and shall take all such measures
+ and precautions as may be necessary to ensure that no such refuse,
+ night-soil, or similar matter removed in accordance with the provisions
+ of this Part is disposed of in such a way as to cause a nuisance.
+
+
+ IN SANITARY BUILDINGS
+
+Duty of council as 121. It shall be the duty of the Urban Council of each town to cause to be
+to insanitary made, from time to time, an inspection of every part of the town
+buildings. with a view to securing that the houses or buildings in the town are
+ kept in such sanitary condition as is required by the provisions of
+ this Ordinance or any other enactment, and to undertake all
+ necessary measures to enforce such provisions within the town.
+
+
+Power of Council 122. (1) Whenever the Urban Council of any town is satisfied that
+as to existing any buildings or blocks of buildings situated within the town,
+buildings. whether existing at the date of the constitution of the Council
+ or subsequently erected, are, by reason of the occurrence of an
+ epidemic, or of the manner in which such buildings are
+ crowded together, or of the want of drainage or the
+ impracticability of scavenging, attended with risk to the
+ health of the inhabitants thereof or of the neighbourhood,
+ the Council
+
+
+ shall serve a notice on the owners or occupiers thereof, or, at its
+ option, on the owner of the land on which such buildings are
+ constructed, within such reasonable time as may be fixed by the
+ Council for that purpose, to execute such operations, including
+ alteration of such buildings, as the Council may deem
+ necessary for the avoidance of such risk.
+ (2) In any case where an owner or occupier served with a notice
+ under subsection (1) refuses or neglects to execute such
+ operations within the time fixed by the Council, any officer
+ authorized by the Council in that behalf may cause the
+ buildings to be taken down, or such operations to be performed
+ in respect thereof, as the Council may deem necessary to
+ prevent such risk.
+ (3) Where any buildings are taken down under subsection (2), the
+ Council or the authorized officer shall cause the materials of each
+ building to be sold separately if such sale can be effected, and the
+ proceeds shall be paid to the owner of the building, or if the
+ owner be unknown or the title disputed, shall be held in deposit
+ by the Council, until the person entitled thereto obtains the order
+ of a competent court for the payment of such proceeds.
+
+
+Overcrowding of 123. Whenever it appears to the Urban Council of any town that any
+houses. house within the town is so overcrowded as to be dangerous or
+[22, 48 of 1984] prejudicial to the health of the occupiers thereof, or of the
+ neighbourhood, and the occupiers consist of more than one family,
+ the Council shall cause proceedings to be taken before the Magistrate's
+ Court having jurisdiction to abate such overcrowding, and the court
+ shall thereupon make such order as it may think fit; and each of the
+ persons permitting such overcrowding shall be guilty of an offence
+ punishable with a fine not exceeding one hundred rupees for each
+ day after the date of such order during which such overcrowding shall
+ continue.
+
+
+Power of Council 124. It shall be lawful for the Urban Council of any town by any of its
+to inspect and lime officers at any time between sunrise and sunset to enter into and
+wash houses. inspect any house or building within the town, and by an order in
+ writing to direct all or any part thereof to be forthwith internally and
+ externally lime washed or otherwise cleaned; and if the owner or
+ occupier of such house or building neglects to comply with such
+ direction within seven days from the time when the order shall have
+
+
+ been served upon him, the Council may cause the work to be done, and
+ the expenses incurred shall be paid by the owner, and shall be
+ recoverable as hereinafter provided.
+
+
+Houses or huts not 125. (1) In any town for which an Urban Council is constituted it shall
+to be built or not be lawful for any person to erect or construct any house,
+roofed with cadjan hut, shed, or other building,(whether to be used as a dwelling
+without or as a stable or for any other purpose) having its external roof
+permission. or walls made of grass, leaves, thatch, cadjans, mats, or other
+ such inflammable material without first obtaining the
+ permission of the Chairman of the Council.
+ (2) The permission given by the Chairman under subsection (1)
+ shall in every case be subject to a specified time-limit and
+ such conditions as he may impose in writing for the purpose
+ of ensuring that such inflammable material as may be used for
+ the roof or walls of the building to which the permission
+ relates wilt be replaced at the earliest convenient opportunity
+ by such non-inflammable or durable material as may be
+ approved by the Chairman.
+ (3) If any house, hut, shed, or other building of the description
+ referred to in subsection (I) is built without the permission
+ required by that subsection, the Chairman shall give notice
+ to the owner thereof, or of the ground upon which such
+ building is erected or constructed, or is being erected or
+ constructed, by affixing a notice to some conspicuous part of
+ such house, hut, shed, or other building , to take down and
+ remove the building forthwith or within such time as the
+ Chairman may specify in the notice.
+ (4) If any house, hut, shed, or other Building is not taken down
+ and removed forthwith or within the time specified in any
+ notice under subsection (3), the Chairman shall cause the
+ building to be taken down and removed, and the expenses
+ incurred by the Chairman in doing so shall be paid by the
+ owner of the building or of the ground upon which it is
+ built, and shall be recoverable as hereinafter provided.
+
+
+ NUISANCES
+
+Inspection of 126. It shall be the duty of the Urban Council of each town to cause to be
+nuisances. made, from time to time, an inspection of the town with a view to
+ ascertaining what nuisances exist calling for abatement under the
+
+
+ powers conferred by this Ordinance or any other enactment, and to
+ the enforcement of the provisions of this Ordinance or such other
+ enactment in order to abate such nuisances.
+
+
+Power to fill up 127. (1) Where in any town for which an Urban Council is
+unwholesome constituted, any private tank or low marshy ground or any
+tanks on private waste or stagnant water, situated on any private land appears
+Premises. to the Council to be injurious to, health or to be offensive to
+ the neighbourhood, the Council shall, by notice in writing,
+ require the owner of that land to cleanse or fill up such tank
+ or marshy ground, or to drain off or remove such waste or
+ stagnant water.
+ (2) If any owner on whom a notice under subsection (1) is served
+ refuses or neglects to comply with the notice within such
+ period as may be specified therein, the Council or its officers
+ and workmen may enter into the land and do all necessary
+ acts for all or any of the purposes referred to in subsection (I),
+ and the expenses incurred thereby shall be paid by the
+ owner of the land, and shall be recoverable as hereinafter
+ provided.
+ (3) Where the land referred to in subsection (2) is owned by more
+ than one person, the expenses referred to in that subsection
+ shall be apportioned among, and recoverable from, the
+ several owners in such proportions as may be determined
+ by the Council.
+
+
+Nuisance by child. 127A. Every person who, having the care or custody of any child under
+[23, 48 of 1984] twelve years of age, omits to prevent such child from committing a
+ nuisance in or by the side of any street, shall be guilty of an
+ offence and shall be liable on conviction to a fine not exceeding
+ one hundred rupees.
+
+
+Public bathing 127B. (1) The Council may by public notice prohibit bathing or the
+places. washing of animals or clothes in any public place not set
+[23, 48 of 1984] apart for the purpose, or at times or by persons other than
+ those specified in the notice, and all other acts which may in
+ any manner pollute or render water in public places foul
+ or unfit for use, or may cause inconvenience or annoyance
+ to persons using the bathing or washing places. Such notice
+ shall be published in the Gazette in the Sinhala, Tamil and
+ English languages and in at least one Sinhala, one
+ Tamil and one
+
+
+ English newspapers.
+ (2) Every person who bathes, washes, or does any act
+ contrary to subsection (1) shall, be guilty of an offence and shall
+ on conviction be liable to a fine not exceeding five hundred
+ rupees.
+
+
+Pollution of streams127C. Every person who bathes in, or washes any clothes or other things
+which flow into in, or causes or suffers any dirt, refuse, or impurity to flow into or
+reservoirs or otherwise in any manner pollutes or contaminates any reservoir
+waterworks. used for the purpose of the waterworks belonging to any Urban
+[23, 48 of 1984] Council, or any stream or watercourse whereof the water flows
+ into or feeds any such reservoir, shall be guilty of an offence, and
+ shall be liable on conviction to a fine not exceeding five hundred
+ rupees, and, in the case of a continuing offence, to an additional
+ fine nor exceeding one hundred rupees for each day during which the
+ offence is continued after a conviction therefor, or after the dare
+ of service of the written notice from the Council directing attention
+ to the offence.
+
+
+Pollution caused 127D. (1) Any person who, within the administrative limits of any Urban
+by Factories. Council, operates or causes to be operated any factory which
+[23, 48 of 1984] causes pollution so as to endanger or prejudice the health of
+ the neighborhood, shall be guilty of an offence.
+ (2) Where a Magistrate after summary trial convicts a person of
+ an offence under subsection (1) he shall, depending on the
+ degree of pollution caused by such factory, make order
+ (a) that such person pay a fine, equivalent to twice the fee
+ payable for a licence issued under the provisions of this
+ Ordinance or any by-law made thereunder in respect of the
+ premises on which that factory is situated notwithstanding
+ that such amount exceeds the amount of fine which a
+ Magistrate may impose in the exercise of his ordinary
+ jurisdiction and the amount so recovered shall be paid into the
+ Fund of the Council; or
+ (b) that operations in such factory shall cease.
+
+
+Power of chairman 127E. (1) Where in any urban area any tree or any branch, trunk,
+of an Urban fruit or other part of a tree is causing or is likely to cause
+Council in regard damage to any building, or is in a condition dangerous to the
+to trees or occupants of any building, or to the safety of passers-by
+ along
+
+
+branches, trunks or any public thoroughfare, the Chairman of the Council of such
+fruits of trees area may, by a notice in writing served on the owner or occupier
+endangering the of the land on which such tree stands require such owner or
+safety of person occupier to lie up and make secure, or to cut down and remove
+property. such tree or the branch, trunk, fruit or other part of such tree
+[23, 48 of 1984] within such time as may be specified in the notice.
+ (2) Every person on whom a notice is served under subsection
+ (1), shall comply with the requirements of such notice within
+ the time specified therein, and in the event of the refusal or
+ neglect of such persons to comply with such requirements
+ within such time, the Chairman, or any officer or workman
+ authorized in writing in that behalf by the Chairman, may
+ enter upon the land referred to in such notice and do
+ what such person was required to do by such notice, and the
+ expenses thereby incurred may be recovered from such
+ person as a debt due to the Council,
+ For the purposes of section 127B, section 127C and section
+ 127D 'pollution' means any direct or indirect alteration of the
+ physical, thermal, chemical, biological or radioactive
+ properties of any part of the environment by discharging,
+ emitting or depositing wastes so as to effect any beneficial use
+ adversely, to cause a condition which is hazardous or potentially
+ hazardous to public health, safety or welfare or to animals,
+ birds, wildlife, fish or aquatic life, or to plants.
+
+
+Licensing of 128. (1) No place in any town, other than a place provided by the
+slaughterhouses. Urban Council of that town, shall be used as a slaughterhouse,
+[14, 61 of 1981] unless a licence for the use thereof as a slaughterhouse has
+ been obtained from the Chairman of the Council, who is
+ hereby empowered at his discretion, from time to time, to
+ grant such licence and such licence to suspend or revoke as to
+ him may seem necessary.
+ (2) Every person who uses as a slaughterhouse any place (other
+ than a place provided by the Urban Council) which is not
+ licensed under subsection (1), or in respect of which any
+ licence given has been suspended or revoked, shall be guilty
+ of an offence punishable with a fine not exceeding six
+ hundred rupees and with a further fine not exceeding five
+ hundred rupees for every day during which such offence is
+ continued
+
+
+ after notice has been served upon him by the Chairman
+ requiring him to discontinue the use of such slaughterhouse.
+
+
+Closure order by 128A. (1) Where a person convicted by any court for the offence of
+Magistrate. using any premises for any trade or business without a
+[15, 61 of 1981] licence issued in that behalf under this Ordinance or
+ under any by- law made thereunder, continues to use such
+ premises without a licence for such trade or business,
+ whether by himself or by any other person on his behalf, a
+ Magistrate may, upon an application for a closure order
+ made by the Chairman, Secretary or any officer authorized
+ in that behalf by such Chairman or Secretary, as the case
+ may be, order the closure of such trade or business at
+ such premises, until such time such person obtains a
+ licence from the Council.
+ (2) In any proceedings under subsection (1) a certificate
+ issued by the Chairman, Secretary or any officer authorized
+ in that behalf by such Chairman or Secretary, as the case
+ may be, setting out that the person mentioned in the
+ certificate, continues to use such premises without
+ obtaining a licence for any trade or business shall be prima
+ facie evidence of the matters stated therein.
+ (3) In any case where such person fails to comply with the
+ closure order issued under subsection (1) the Magistrate
+ shall forthwith order the Fiscal of the court requiring and
+ authorizing such Fiscal before a date specified in such order
+ not being a date earlier than three or later than seven
+ clear days from the date of issue of such order, to close any
+ trade or business at such premises. Such order shall be
+ sufficient authority for the said Fiscal or any police
+ officer authorized by him in that behalf, to enter the
+ premises with such assistants as the Fiscal or such officer
+ shall deem necessary to close any trade or business at such
+ premises.
+
+
+ PART V
+ PUBLIC UTILITY SERVICES
+
+Power of Urban 129. The Urban Council of a town may, for the purpose of any place or
+Council to area within the town, either independently or in conjunction with
+establish and any other local authority, and either directly (with or without the
+maintain public assistance of Government) or through any promoter or body of
+utility services. promoters, establish and maintain for the benefit of the persons
+ inhabiting or resorting to such place or area any of the following
+
+
+ public utility services:
+ (a) water supply;
+ (b) the lighting of streets, public places, and public buildings;
+ (c) the supply of electric light or power;
+ (d) markets;
+ (e) public baths and bathing-places;
+ (f) the manufacture and supply at cost price of squatting plates
+ for latrines;
+ (g) the provision of housing accommodation for the poorer
+ classes;
+ (h) any other form of public service, subject to such prohibition
+ or restriction of the establishment and maintenance of that service
+ as may be imposed by any other law.
+
+
+Manner of 130. (1) For the purpose establishment or maintenance of any public
+defraying expenses utility service which an Urban Council is authorized to
+of public utility establish or maintain under this Part, the Council may
+services. (a) provide for any expenses involved out of the revenue
+[4, 57 of 1979] of the Council; or
+ (b) subject to the sanction of the Minister, levy a special rate
+ upon the area benefited by such service, subject to such
+ limits and exemptions as may be prescribed by by- laws; or
+ (c) contract with the owners or occupiers of premises
+ benefited by such service for the supply of the service, and
+ charge and enforce such rates in respect of such service as
+ may be prescribed by by-laws under this Ordinance; or
+ (d) charge such fees as it may deem reasonable to persons
+ deriving benefit from such service; or
+ (e) where any such public service is established or
+ maintained through any promoter or body of promoters, in
+ pursuance of any agreement made with the Councilor
+ under any licence issued by the Council, authorize such
+ promoter or promoters to charge such fees as may be
+ approved by the Council to persons deriving benefit from
+ such service.
+ (2) It shall be lawful for the Minister to authorize the waiver of
+
+
+ the whole or any part of the special rate imposed by the Council
+ under subsection (1) (b) in any past year and any costs incurred
+ for the purpose of recovering that rate where
+ (a) he is of the opinion that such rate has been imposed
+ without the provision of adequate services; or
+ (b) he determines, with the approval of the Government,
+ that such waiver is just and equitable in all the circumstances
+ of the case.
+ (3) Where the Minister has under subsection (2) authorized the
+ waiver of the whole or part of any special rate imposed and any
+ costs incurred for the purpose of recovering that rate, the
+ Council shall
+ (a) where such special rate has been paid, set off such
+ amount of the rate and any costs incurred, against future
+ rates due on the property in respect of which such rate has
+ been paid; or
+ (b) where such special rate has not been paid, waive the
+ amount of such rate and any costs incurred.
+ No person shall have a right to a refund of such amount.
+
+Supply to premises 131. The Urban Council of any town may, subject to the consent of the
+
+in adjacent areas. local authority of any area adjacent to the town, contract with the
+ owners or occupiers of any premises situated in any such adjacent
+ area for the supply of any public utility service to such premises and
+ may charge and enforce rates in respect of such supply.
+
+
+General powers of 132. For the purposes of the establishment or maintenance of any public
+Council. utility service which it is authorized to establish or maintain under
+ this Ordinance, any Urban Council may enter into any contract, and
+ may, subject to the provisions of this Ordinance, purchase, take upon
+ lease, hire, construct, or maintain all premises, machinery, and
+ apparatus required for such purposes, and do and execute all such
+ works, matters, and things as may be necessary in that behalf.
+
+
+ WATER SUPPLY
+
+Ratepayer entitled 133. Where the Urban Council of a town establishes or maintains a public
+to free water water supply for the benefit of the inhabitants of any area within the
+supply from public town, the owner or occupier of any premises in such area in respect
+stand-pipes for of which the Council levies either a special water-rate or a general
+
+
+domestic purposes. rate for purposes including the purposes of such water supply, shall
+ be entitled to have free of further charge a supply of water from the
+ public stand-pipes for the domestic purposes of himself and his
+ household or of his tenants or other persons occupying the said
+ premises.
+
+
+Meaning of 134. A supply of water for domestic purposes shall not include a supply
+domestic purposes. of water for horses or cattle or for washing vehicles, where such
+ horses, cattle, or vehicles are kept for sale or hire, or a supply for
+ any trade, manufacture, or business, or for fountains or swimming
+ baths, or for any ornamental or mechanical purpose, or for purposes
+ of irrigation
+
+
+Contract for 135. An Urban Council may supply water for other than domestic purposes,
+private service. or allow a private service of water to any premises for domestic
+ purposes, in such quantities and upon such terms and conditions as
+ may be agreed upon between the Council and the persons desirous of
+ being so supplied, or as may be prescribed by by-laws in that
+ behalf.
+
+
+ MARKETS
+
+Duty of Council as 136. It shall be the duty of the Urban Council of each town-
+to markets. (a) to establish and maintain within the town all such public
+ markets as are required for the service of the inhabitants, and to
+ secure the proper scavenging, washing, disinfecting, and
+ conservancy of all such markets;
+ (b) to regulate, supervise, and control all private markets within
+ the town which are licensed under this Ordinance.
+
+
+Licensing of new 137. No new private market shall be established within any town for
+private markets. which an Urban Council has been constituted, except under and in
+ accordance with the conditions of a licence issued by the Chairman
+ of the Council.
+
+
+Licensing of 138. (1) After the expiration of a period of six months from the date of
+existing private the constitution of an Urban Council for any town, no private
+markets. market in existence at that date within that town shall
+ continue to be maintained except under and in accordance
+ with the conditions of a licence issued by the Chairman of the
+ Council.
+ (2) Every application for a licence for an existing private
+
+
+ market shall
+ (a) be substantially in form A set out in the First Schedule,
+ and be accompanied by the declaration, for which
+ provision is made in that form, and by such plans and
+ specifications as may be prescribed by the by-laws of the
+ Council for the time being in force, or, in the absence of
+ any such by-law, as may be required by the Chairman; and
+ (b) be made under the hand of the owner of the private
+ market within a period of three months from the date of
+ the constitution of the Council.
+ (3) Every declaration required by subsection (1) shall be
+ conclusive evidence, as against the owner by whom it is made,
+ with respect to all particulars therein contained in all questions
+ that may arise as to assessment of annual value, fees for
+ licences, compensation, or acquisition.
+
+
+Licence to be 139. (1) Every licence issued for a private market by an Urban
+annual and subject Council shall be substantially in the form B set out in the First
+to stamp duty. Schedule and shall be subject to the provisions of this
+ Ordinance, to the by-laws of the Council for the time being in
+ force, and to such special conditions, not inconsistent with
+ such by-laws, as the Chairman may deem it necessary to
+ impose in the circumstances of each case.
+ (2) Every licence for a private market shall expire on the thirty-
+ first day of December of the year for which it is granted.
+ (3) Every licence for a private market shall be renewable
+ annually, and on the occasion of the issue and of every
+ renewal of such licence, there shall be paid to the Council a
+ licence duty of such amount as may be imposed under
+ section 162.
+
+
+New private 140. No licence shall be granted for any new private market, unless such
+markets to market the standards prescribed in the Second Schedule, subject to
+conforms to such modifications or additions as may be prescribed by by-laws under
+prescribed this Ordinance.
+standards.
+
+
+Cleaning and 141. No licence for a private market shall be issued until the Chairman is
+avenging of satisfied that the owner has made satisfactory provision for the
+markets. scavenging, washing, disinfecting, and conservancy of the market
+ premises.
+
+
+New private 142. Every licence granted under this Ordinance for any new private market
+markets to acquire shall be upon the condition that should the Council at any time
+no vested interests. decide that it is in the public interest to establish a public market
+ in place of such private market the Chairman of the Council may
+ refuse to renew the licence of such private market and that the owner
+ of such private market shall not be entitled to any compensation in
+ respect of such refusal.
+
+
+Power of Chairman 143. The Chairman of an Urban Council may refuse to issue a licence for
+
+to refuse new any new private market, or to issue or renew any licence in respect
+license. of any private market established within one year prior to the date of
+ the constitution of the Council, if he is satisfied that the wants of the
+ locality are sufficiently provided for by the public and the private
+ markets already in existence or in contemplation.
+
+
+Refusal of licences 144. The Chairman of an Urban Council may refuse to license or to
+
+to existing private renew the licence for any private market existing at the date of the
+markets. constitution of the Council (not being a market established within
+ one year prior to such date) without the payment of compensation in
+ the following cases, that is to say:
+ (a) where such market does not conform to the standards
+ prescribed in the Second Schedule, and its owner or occupier
+ neglects or refuses, within such reasonable time as may be
+ fixed by the Chairman, to carry out such alterations, additions,
+ or improvements as are, in the opinion of the Chairman,
+ necessary to bring such market into conformity with the aforesaid
+ standards, subject to such modifications, if any, of those
+ standards as in the circumstances of the case the Urban Council
+ may sanction;
+ (b) where the Urban Council is satisfied that owing to the
+ inherent defects of such market or for any other reason such
+ market cannot be so improved as to bring it into conformity
+ with the aforesaid standards or such modification of those
+ standards as the Council may be prepared to sanction;
+ (c) where the Urban Council is satisfied with regard to any
+ private market that owing to its position or for any other reason
+ such market is objectionable from the point of view of
+ sanitation or of the safety or convenience of the public:
+ Provided that any person aggrieved by any decision of the Chairman
+
+
+ or the Urban Council under this section may appeal to the Minister;
+ and upon such appeal the Minister may confirm the decision of the
+ Chairman or Urban Council, or may order the issue of a licence,
+ subject to the market being brought into conformity with such
+ modification of the aforesaid standards as the Minister in the
+ circumstances of the case may deem to be reasonable and consistent
+ with the public interest, or may make such other order as the
+ Minister may deem just.
+
+
+Special provisions 145. (1) In the case of any market which is of the description
+with regard to referred to in paragraph (b) or paragraph (c) of section 144
+markets established and markets which is proved to the satisfaction of the
+over thirty years. established Urban Council to have been carried on for a
+ period of over thirty years prior to the date of the constitution
+ of the Council, the Council may in its discretion, and shall if
+ so directed by the Minister, proceed as follows;
+ (a) the Council may provide in any local public market
+ already established, or to be established under this
+ Ordinance, satisfactory accommodation for the business
+ hitherto carried on in such private market, and may
+ thereupon direct the owner or occupier of such private
+ market to close that market and transfer its business to the
+ new accommodation so provided; and
+ (b) if the directions given by the Council under paragraph
+ (a) are complied with, the Council may grant to such
+ owner or occupier a lease of such accommodation for a
+ period not exceeding fifty years, subject to the condition that
+ such owner or occupier and his successors, executors,
+ administrators, or assigns observe the by-laws of the Council
+ for the time being in force and the conditions of the
+ lease, and subject to the payment of the rent therein reserved.
+ (2) The rent payable under any lease referred to in subsection
+ (1) shall be such reasonable sum as may be determined by the
+ Council, and shall be revised every five years. For the first
+ period of five years such rent shall not exceed ten per centum of
+ the cost of providing such accommodation, and in the case of
+ every subsequent period of five years it shall not exceed ten per
+ centum of the average net annual profits derived from the
+ accommodation leased for the previous five years.
+
+
+ (3) If any dispute arises as to the amount of such annual profits,
+ the question shall be determined by the Chairman, subject to an
+ appeal to the Minister.
+ (4) Should the rent due under any lease referred to in
+ subsection (1) not be paid in accordance with the terms of the
+ lease, or should the lessee or the person for the time being in
+ control of the accommodation leased persistently fail to comply
+ with the conditions of the lease or with any by-laws made
+ under this Ordinance, the Council may, after affording, by
+ notice in writing, the person entitled to the lease an opportunity of
+ being heard, cancel such lease:
+ Provided that any person aggrieved by any order of the Council
+ under this subsection may appeal to the Minister, and the Minister
+ upon such appeal shall have power to make such order as he shall
+ deem just.
+
+
+Power to license 146. Where any Urban council is unable immediately to make suitable
+market provision for the public requirements in a public market, such
+provisionally. Council may, if it appears necessary for the public convenience,
+ allow any existing private market to continue provisionally, although
+ such private market does not conform to the standards prescribed in
+ the Second Schedule or to any authorized modification thereof, and
+ may issue a temporary licence to such private market without prejudice
+ to its rights to proceed at some future date under the provisions of this
+ Ordinance.
+
+
+Compensation for 147. (1) Where an Urban Council is satisfied that it is in the public
+discontinuance of interest that any private market licensed, or qualified to be
+private market. licensed, under this Ordinance (not being a market to which
+ section 145 applies) should be either
+ (a) discontinued altogether as a market; or
+ (b) taken over by the Council as a public market,
+ the Council may either direct the discontinuance of such
+ market, or may take it over and maintain it as a public market,
+ subject in either case to the payment of compensation in
+ accordance with the provisions of this section.
+ (2) Where any market referred to in subsection (1) is
+ discontinued as a market, the compensation payable, unless
+ otherwise settled by agreement, shall be the difference
+ between
+
+
+ the value of the premises if used as a market under this Ordinance
+ and the value of the same premises if used, not as a market, but
+ for any other local purposes to which similar premises in the
+ same locality are or might be put to the best advantage, together
+ with an allowance in respect of the cost of adapting the existing
+ market buildings for any such purpose.
+ (3) Where any market referred to in subsection (1) is taken over
+ by the Urban Council to be maintained as a public market, the
+ compensation payable shall be the value of the premises when
+ used as a market under this Ordinance.
+ (4) In estimating the value of market premises used as a market
+ under this Ordinance, regard shall be had to the depreciation
+ likely to occur in the value of such premises in the event of a
+ public market or a new private market being established in the
+ same neighbourhood.
+
+
+Vesting of village 148. Upon any place, in which any has been established under any
+markets in urban enactment relating to village areas, being declared to be a town
+council. under this Ordinance, such market shall vest in the Urban Council of
+ the town, and shall become subject to this Ordinance.
+
+
+Transfer of 149. An Urban Council may by arrangement with any Village Council-
+markets. transfer to the Village Council the management of any public market
+ administered by the Council under this Ordinance.
+
+
+Power to suspend 150. Where a licence has been granted by an Urban Council for a private
+licence of private market under this Ordinance and the licensee at any time during the
+markets. currency of such licence fails to conform to the standards and
+ bylaws applicable to private markets under this Ordinance after his
+ attention has been directed to such failure by means of a notice in
+ writing served upon him by or under the authority of the Urban
+ Council and setting out a period within which such failure must be
+ rectified, it shall be lawful for the Chairman to suspend the licence
+ of such market until the licensee shall have made good the default.
+
+
+Penalty for keeping 151. Any person who after the expiration of a period of six months from
+
+unauthorized the date of the constitution of an Urban Council in any town uses as
+market. a private market any premises in that town for which a licence has
+[24, 48 of 1984] not been granted under this Ordinance, or the licence for which has
+ been suspended, shall be guilty of an offence, punishable with a fine
+ not exceeding one thousand rupees, and with a further fine of five
+
+
+ hundred rupees for every day during which such offence shall have
+ been continued after written notice of the suspension of the licence
+ is served upon such person.
+
+
+Market areas. 152. (1) In any place within a town in which any public market is
+ established under the control of the Urban Council of the
+ town, the Council may by by-law made under this
+ Ordinance assign an area to such market (hereinafter referred
+ to as 'the market area'), and may prohibit the sale, otherwise
+ than in accordance with licences issued by the Chairman, of
+ meat, poultry, fish, fruit, or vegetables within such area.
+ (2) In any case referred to in subsection (I) the Chairman may
+ issue a licence for the sale of meat, poultry, fish, fruit, or
+ vegetables, within the market area, at authorized premises
+ other than such market, and fix and levy such fees in respect
+ of that licence as may be prescribed by by-law.
+ (3) In any case in which the Urban Council is satisfied that
+ sufficient facilities are afforded for the public requirements
+ of the market area by the public market, or by such
+ market together with other premises earlier authorized
+ under subsection (2), the Council may by by-law made under
+ this Ordinance, prohibit the sale of meat, poultry, fish, fruit,
+ or vegetables within the market area, except at such public
+ market, or, if the Council so determines, except at such
+ market and such other authorized premises.
+ (4) In any case referred to in subsection (3), the Council may
+ by by-law direct that no licence or no further licence (as
+ the case may be), shall be issued for the sale of meat, poultry,
+ fish, fruit, or vegetables within the market area, and if the
+ Council determines that no such licence shall be issued, it
+ may (on providing adequate accommodation for the purpose
+ in the public market) require that any person carrying on
+ the sale of any of the said articles within the market area at
+ premises other than the public market shall transfer such sale
+ to the public market.
+ (5) Nothing in this section shall be deemed to authorize an Urban
+ Council by by-law or otherwise to restrict the sale of poultry,
+ fruit, or vegetables by itinerant vendors who do not sell at
+ fixed places, or do not for the purposes of such sale establish
+ themselves on the public roads or other public places.
+
+
+ PART VI
+ BY-LAWS
+
+Power of Council 153. (1) Every Urban Council shall have power to make, from time
+to make by-laws. to time, such by-laws, not inconsistent with the provisions
+[16, 61 of 1981] of this Ordinance, as may be authorized or required by this
+ Ordinance, or may appear to the Council to be necessary for
+ the purposes of the exercise of its powers and the discharge of
+ its duties under this Ordinance, and to amend, vary or rescind
+ any by-law so made.
+ (2) A by-law made by any Urban Council may provide the
+ penalty of a fine for any contravention thereof, such fine not
+ exceeding seven hundred and fifty rupees for any one act or
+ omission constituting such contravention, and in the case of a
+ continuing contravention, an additional fine not exceeding
+ two hundred and fifty rupees of every day during which the
+ contravention is continued after a conviction thereof by a
+ court of competent jurisdiction or after service of a written
+ notice from the Chairman or other authorized officer
+ directing attention to such contravention.
+
+
+Power to 153A. (1) Where any person contravenes any by-law made under
+compound subsection (9) of section 157, and where such person has not
+offences. been previously convicted under section 153, the Chairman
+ shall compound such offence, if so requested by the offender,
+[17, 61 of 1981]
+ for a sum of money equal to one-fourth of the maximum fine
+ imposable for such offence under section 153, and where a
+ prosecution has been entered against any such offender, the
+ Chairman shall compound such offence at any time before
+ judgment with the consent of court.
+ (2) Any sum of money accepted by the Chairman under
+ subsection (1) shall be credited to the Fund of the Council.
+
+ (1) No by-law, and no amendment, variation or rescission of
+Approval and 154.
+ any by-law under this Ordinance shall have effect until it has
+publication of by-
+ been approved by the Minister, and notification of such
+laws.
+ approval is published in the Gazette.
+ (2) Every by-law made under this Ordinance shall be published in
+ the Gazette with the notification required by subsection (1)
+ and upon such publication, every such by-law purporting so
+ to
+
+
+ be made shall, subject to the provisions of section 156, be as valid
+ and effectual as if it had been enacted in this Ordinance, and
+ every contravention thereof shall be an offence under this
+ Ordinance.
+
+Supply of copies of 155. Copies of all by-laws made and published under this Ordinance in
+
+by-laws. the Sinhala and Tamil languages shall be kept at the office of the
+ Urban Council of the town to which they relate and at the office of
+ the Commissioner, and shall be open for inspection and be available
+ for sale to the public.
+
+
+By-laws to be 156. Every by-law made under this Ordinance shall as soon as conveniently
+subject to may be after the publication thereof under section 154, be brought
+disallowance before Parliament by a motion that such by-law be not disallowed, and
+amendment. may, by resolution of Parliament, be rescinded or amended.
+ Notification of the rescission or amendment of a by-law by
+ Parliament shall be published forthwith in the Gazette; and such
+ rescission or amendment shall take effect from the date of such
+ publication but without prejudice to anything that may have been
+ done or any proceedings that may have been instituted under that
+ by-law prior to that date.
+
+
+Subjects of by- 157. The power of any Urban Council to make by-laws under this Part shall,
+laws. without prejudice to the generality of the powers thereby conferred,
+[3, 18 of 1987] include power to make by-laws for or with respect to all or any of
+[3, 5 of 1983] the following purposes, namely:
+[11, 42 of 1979] (1) Procedure, including
+[3, 18 of 1977]
+ (a) the regulation of the meetings of the Council, and of its
+ committees;
+ (b) the form in which estimates, budgets, statements, and
+ returns incidental to the business of the Council shall be
+ drawn up;
+ (c) the form in which the accounts of the Council shall be
+ kept.
+ (2) Officers, including
+ (a) the creation of offices, the appointment of officers and
+ servants, the payment of salaries, allowances or other
+ remuneration, the payment of contributions to any scheme
+ established for the purpose of granting relief or assistance
+
+
+ to officers or servants in cases of illness, distress or
+ indebtedness, the provision of pensions and gratuities, and
+ the granting of leave of absence to such officers and
+ servants, and the provision of pensions or gratuities to the
+ widows, children, next of kin or dependants of deceased
+ officers or servants;
+ (b) the due performance of their several duties by all
+ officers and servants.
+(3) Taxation, including the recovery of any tax, payable under
+this Ordinance, for which no other express provision is made, and
+the rendering of all returns and information that may be required
+for the purposes of any such tax.
+(3A) The rendering of all returns and information that may be
+required for the purposes of the issue of any licence under this
+Ordinance.
+(4) Loans, including
+ (a) the form and manner of execution of securities;
+ (b) the arrangements for liquidation;
+ (c) the mode and order of repayment of loans or discharge or
+ redemption of securities;
+ (d) the conditions of any loan and the appropriation of the
+ sums borrowed.
+(5) The imposition, levy and recovery of rates and charges,
+including
+ (a) the assessment of buildings, lands, and tenements;
+ (b) the rendering of returns and information required for
+ the purpose of such assessment;
+ (c) the hearing and determination of objections;
+ (d) the registration at the office of the Council of mortgages
+ over immovable property situated within the administrative
+ limits of the Council and of the addresses of mortgagees,
+ and the imposition and recovery of fees for such registration;
+ (e) the posting of notices in writing to such registered
+ mortgagees of the sale of immovable property seized for
+ the recovery of rates, taxes, or charges.
+(6) Land and property, including
+ (a) the provision, regulation, and management of open
+
+
+ spaces, and places for public recreation;
+ (b) the care of waste or public land;
+ (c) the maintenance and management of immovable
+ property vested in, or under the control of the Urban
+ Council, the regulation of the removal of sand, gravel,
+ stones, cabook or other matter from such property, and the
+ charging of fees for any permits issued in that connection;
+ (d) the care, regulation, and provision of common pasture
+ grounds, and the levy of fees for the use of the same;
+ (e) the putting up and preservation of boundaries and of
+ fences of lands, whether private or public;
+ (f) the authorization of entry upon private lands for the
+ purpose of the prevention of damage to, or the repairing or
+ remedying of defects in, any wires, pipes, fixtures or
+ apparatus or the supports thereof maintained for the
+ purpose of any public service;
+ (g) the regulation and control of advertisements displayed or
+ exhibited so as to be visible from any thoroughfare, and the
+ charging of fees for any permits issued by the Council in
+ that connection.
+(7) Thoroughfares, including
+ (a) the alignment, level, width, and construction of new
+ streets;
+ (b) the cleaning, watering, and lighting of streets;
+ (c) the use of, and the regulation of traffic in, streets and
+ thoroughfares, including the limitation of the weight and
+ speed of vehicles, and the prevention or restriction of the use
+ of vehicles upon any bridge, road, or street, or in any place
+ where such use may be attended with danger to the public,
+ or may be likely to damage such bridge, road, or street;
+ (d) the regulation of processions and assemblages and of the
+ performance of music in thoroughfares;
+ (e) the prevention, abatement, supervision, and regulation of
+ obstructions, encroachments, projections, and other
+ interferences with thoroughfares;
+ (f) the erection of hoardings and other temporary
+ structures, or any decoration of any type, on or abutting
+
+
+ any street, and the charging of fees for any permits issued
+ in that connection;
+ (g) the protection of the public against dangers resulting
+ from building and other operations in or about
+ thoroughfares;
+ (h) the regulation and control of advertisements displayed or
+ exhibited so as to be visible from any thoroughfare, and the
+ charging of fees in respect of advertisements so displayed or
+ exhibited.
+(8) Buildings, building operations, and works, including
+ (a) the regulation of the material of such buildings with a
+ view to securing stability, preventing fires and
+ safeguarding health;
+ (b) the space to be left about any building or block of
+ buildings to secure free circulation of air and to facilitate
+ scavenging;
+ (c) the dimensions of doors and windows, the level of the
+ floor, the height of the roof, general ventilation, and
+ drainage;
+ (d) the number and nature of latrines; (e) the foundation and
+ stability of structure;
+ (ee) the levy of fees for the examination and consideration
+ of plans for new buildings or for alterations to existing
+ buildings;
+ (f) the line of building frontage.
+(9) Public health and amenities, including
+ (a) drainage;
+ (b) conservancy and scavenging, and the charging of fees
+ for the same;
+ (c) the inspection, regulation, maintenance and cleansing
+ of all drains, privies, cesspits, ash-pits, and sanitary
+ conveniences and appliances;
+ (d) the regulation and management of public sanitary
+ conveniences;
+ (e) the regulation, supervision, inspection, and control of
+ lodging-houses and tenement buildings;
+ (f) the abatement of nuisances, including the regulation
+
+
+and control of the operation of gramaphones,
+loudspeakers, amplifiers and other instruments automatically
+or mechanically producing or reproducing sound;
+(g) the seizure, forfeiture, removal and destruction of
+unwholesome articles of food or drink, and the prevention of
+the sale or exposure for sale thereof;
+(h) the regulation, supervision, inspection, and control of
+hotels, bakeries, eating houses, restaurants, and tea and
+coffee boutiques;
+(i) the regulation, supervision, inspection and control of hair
+dressing saloons, and barbers' shops;
+(j) the regulation, supervision, inspection, and control of
+dairies, and the sale of milk;
+(k) the definition of the prescribed standard of milk that
+may be sold, and the prevention of the sale of milk below
+the prescribed standard;
+(l) in the case of any sample of milk, cream, butter or
+cheese, the determination of
+ (i) the deficiency in any of the normal constituents of
+ genuine milk (including condensed and curdled
+ milk), cream, butter, or cheese, or,
+ (ii) the proportion of water or other extraneous matter
+ discovered in any such sample, which shall, for the
+ purposes of any enactment, or by-law for the time
+ being in force, raise a presumption until the contrary
+ is proved that the milk, cream, butter, or cheese from
+ which such sample was taken is not genuine or pure
+ or is injurious to health;
+(m) the regulation, supervision, inspection, and control of
+the sale of articles of food or drink, including the sale of
+such articles by itinerant vendors and at hotels, shops and
+places other than markets;
+(n) the regulation, supervision, inspection, and control of
+trades deemed to be offensive or dangerous by the Urban
+Council;
+(o) the regulation of the dimensions and use of kraals in
+public lakes, rivers, lagoons, and estuaries for soaking coir
+husks, and the charging of fees for permits for the use of
+
+
+ such kraals;
+ (p) the regulation, supervision, inspection, and control of
+ wells on private lands;
+ (q) the regulation, supervision, inspection, and control of
+ breweries, ice factories and aerated water manufactories;
+ (r) the compelling of owners and occupiers in urban areas
+ to keep their lands free of undergrowth and rubbish, and
+ their dwelling compounds in a clean and sanitary
+ condition;
+ (s) the prevention of malaria and the destruction of
+ mosquitoes and disease-bearing insects;
+ (t) the draining, cleansing, covering, or filling up of ponds,
+ pools, open ditches, sewers, drains, and places containing
+ or used for the collection of any drainage, filth, water,
+ matter, or thing of an offensive nature or likely to be
+ prejudicial to health;
+ (u) the cleansing, purifying, ventilating, and disinfecting
+ of houses, dwellings, and places of assembly or worship
+ by the owners or occupiers or persons having the care or
+ control thereof;
+ (v) the prevention or mitigation of epidemic, endemic, or
+ contagious diseases, and the speedy interment of the dead
+ during the prevalence of such diseases;
+ (w) washing and bathing, including the establishment,
+ maintenance, and regulation of public bathing-places and
+ places for washing animals and clothes;
+ (ww) the regulation and control of industrial waste;
+ (x) all such other purposes, not specially provided for by
+ this Ordinance, as may be necessary for the preservation
+ or promotion of the public health and the suppression of
+ nuisances.
+(10) Animals, including
+ (a) the regulation, supervision, inspection and control of
+ slaughterhouses, and the levy and recovery of fees for the
+ use thereof;
+ (b) the housing and penning of cattle, horses, sheep, goats,
+ and pigs;
+ (c) stray cattle, sheep, goats, and pigs, and the fixing,
+
+
+ levying and recovery of charges for the occupation of
+ pounds, and the cost of the keep of the animals
+ impounded;
+ (d) the control of epidemic diseases among animals, the
+ maintenance and regulation of quarantine stations for
+ animals, and the levying of fees for the occupation of such
+ stations, the provision of facilities for the vaccination and
+ immunization livestock and dogs;
+ (e) the protection and preservation of game and wild birds;
+ (f) the destruction of stray dogs;
+ (g) the prevention of cruelty to animals (including the
+ restriction of the exposure for sale of live animals in any
+ manner likely to cause unnecessary pain or suffering);
+ (h) the regulation and supervision of cattle sheds, galas,
+ and halting places, and the control of the location thereof.
+(11) Markets and fairs, public and private, including
+ (a) their establishment, maintenance, and improvement;
+ (b) their regulation, supervision, inspection, and control,
+ including the regulation of the prices of articles sold
+ therein,
+ (c) their conservancy and scavenging, and the prevention
+ of nuisances in connection with them;
+ (d) the control of traffic, and the preservation of order
+ within them and in their immediate vicinity;
+ (e) the provision, inspection, and control of latrines,
+ bathing-places, slaughterhouses, water supply and lighting in
+ markets;
+ (f) the allotment of stalls and stands;
+ (g) the inspection of food and the seizure of unwholesome
+ articles of food;
+ (h) the prohibition of the introduction or sale of any article
+ or articles of food in cases where there exists good reason
+ for such prohibition;
+ (i) the prohibition, either absolutely or subject to special
+ licences, of the sale of any specified article, and the charging
+ of fees for such special licences;
+ (j) the provision of security against fires;
+
+
+ (k) the temporary closing of any market or fair;
+ (l) the due performance of their duties by market keepers
+ and other employees;
+ (m) in the case of public markets, the fixing and recovery
+ of fees or rents for the use of the market premises or any part
+ thereof, and of the buildings and bathing-places connected
+ therewith, and for the leasing of the right to collect any such
+ fees or rents;
+ (n) in the case of public markets, the declaration of a market
+ area, and the licensing, restriction, or prohibition of sales
+ within such area in accordance with section 152;
+ (o) in the case of private markets or of fairs, the licensing
+ of such markets or fairs, the conditions of the licence, and
+ the fees payable in respect thereof;
+ (p) in the case of private markets or of fairs, the standards
+ to be observed in respect of accommodation, drainage,
+ roads, air spaces, equipment, and sanitary requirements;
+ (q) in the case of private markets or of fairs, the renovation,
+ alteration, enlargement, and improvement of existing
+ buildings, and the erection of all new buildings in
+ accordance with approved plans and after notice to the
+ Urban Council.
+(12) Waterworks, including
+ (a) the prevention of waste, misuse, undue consumption,
+ or contamination of the water supplied for public or
+ private use;
+ (b) the size, nature, strength, and materials, and the mode
+ of arrangement, position, alteration, removal, renewal, and
+ repair of the pipes, valves, clocks, cisterns, soil pans,
+ water-closets, and other apparatus and receptacles to be used
+ respectively for carrying, delivering, regulating, and storing
+ water;
+ (c) the regulation of the public supply of water by stand-
+ pipes, and the use of the same;
+ (d) the regulation of the supply of water by private services,
+ and the materials and fittings to be used;
+ (e) the regulation of the supply of water by measurement,
+ and the materials, meters, appliances, and fittings used for
+
+
+ such a purpose or in connection therewith;
+ (f) the regulation of the terms and conditions subject to
+ which water will be supplied by private services or for
+ other than domestic purposes, and the price to be paid for
+ water so supplied;
+ (g) the recovery of charges due in respect of any water so
+ supplied in the same manner as a fine; and
+ (h) every other purpose, relating to the supply or the control
+ of the supply of water from the waterworks, for which by-
+ laws may appear to be necessary.
+ (13) Public services, including all matters necessary for their
+ establishment, maintenance, working, and supply, and for the
+ recovery of charges in connection therewith.
+ (14) The measure or dimension of bread, and the regulation of
+ its manufacture and quality.
+ (14A) The control of parking of motor vehicles within the
+ Urban Council area by providing parking places and collecting
+ the prescribed fee for parking such motor vehicles in such
+ places:
+ Provided that the preceding provisions of this paragraph
+ shall not apply in respect of motor vehicles of the Sri
+ Lanka Central Transport Board.
+ (14B) the removal of obstructions to coastal fishing;
+ (15) All other purposes, whether of the same nature as those
+ above enumerated or otherwise, for which by-laws may be
+ necessary for the protection or promotion of the local public
+ interests, conveniences, and amenities.
+
+
+ PART VII
+ FINANCE
+ LOCAL FUND
+
+Local fund and its 158. (1) Every Urban Council for its, general financial purposes
+constituents. shall establish a local fund.
+ (2) There shall be payable into the local fund
+ (a) the fines and penalties enumerated in the Fourth
+ Schedule;
+ (b) the amount of all stamp duties enumerated in the Fifth
+ Schedule;
+
+
+ (c) subject to any special appropriation made by the
+ Minister, all grants allocated to the Council by the
+ Minister;
+ (d) all rates, taxes, duties, fees, and other charges levied
+ under the authority of this Ordinance;
+ (e) all sums realized by sales, leases, or other transactions of
+ the Council;
+ (f) all revenue derived by the Council from any property
+ vested in the Council, or by the administration of any
+ public service;
+ (g) all sums derived from any source of revenue made
+ over to any local authority to which the Council is the
+ successor in pursuance or in supposed pursuance of any
+ repealed enactment;
+ (h) all sums and all sources of revenue, from time to time,
+ appropriated or made over to the Council by Parliament,
+ whether by resolution or otherwise;
+ (i) all sums otherwise accruing to the Council in the course
+ of the exercise of its powers and duties.
+ (3) All moneys received by an Urban Council and payable into
+ the local fund shall be deposited at the nearest kachcheri or
+ placed to the credit of an account bearing the name of that fund at
+ an approved bank.
+ In this subsection 'approved bank' means a bank specified by
+ the Minister by Order published in the Gazette as a bank in which
+ the moneys of any Municipal Council, Urban Council or Town
+ Council may be deposited.
+ (4) Such part of the local fund as may not be immediately
+ required for the purposes of the Council may be invested on
+ any of the securities specified in section 20 of the Trusts
+ Ordinance.
+
+
+Application of 159. (1) There shall be paid out of the local fund established by each
+local fund Urban Council
+[11, 21 of 2012] (a) all expenses incurred by the Council or by the secretary
+[4, 18 of 1987] or any other officer of the Council in the exercise of its or
+[67, 39 of 1986] his powers and the discharge of its or his functions and
+[25, 48 of 1984] duties under this Ordinance or any other enactment or any
+
+
+[18, 61 of 1981] by-law or rule made thereunder; and
+[130, 24 of 1977] (b) all sums payable by the Council in respect of any
+[20, 48 of 1971] liability under the Workmen's Compensation Ordinance;
+[2, 14 of 1958] and
+ (c) all sums payable by the Council as premium for the
+ insurance of any property belonging to or vested in the
+ Council, or for insurance against any liability that may
+ be incurred by the Council under the Workmen's
+ Compensation Ordinance; and
+ (d) all sums which the Council may decide to award by way
+ of ex gratia payments to any persons or the
+ dependants of any persons (other than servants of the
+ Council) who receive injuries or sustain any other
+ damage or are killed in circumstances which, being due
+ to an accident or to a defect in any machinery, plant
+ or equipment used by the Council or to the unauthorized
+ or unlawful interference of a third party, are only
+ indirectly attributable to the exercise of any of the
+ powers vested in the Council or its officers or servants
+ by or under this Ordinance; and
+ (dd) all contributions voted by the Council towards; the
+ provision of relief to poor people, the rehabilitation and
+ care of, destitute persons or physically, mentally or
+ socially handicapped persons, community development
+ projects or employment programmes;
+ (ddd) all contributions voted by the Council towards,
+ promotion of religion and culture, including contributions
+ made towards the costs of the organization of religious
+ ceremonies and festivals, the maintenance of Dhamma
+ schools and Sasana Rakshaka Mandalayas, the establishment
+ pf cultural centres, the organization of literary and cultural
+ festival , the publication of books of literary and cultural
+ value and the award of prizes to artists, authors and
+ craftsmen;
+ (e) all sums received by the Council, which the Council is
+ authorized or required by any written law to refund to the
+ persons by whom they were paid ; and
+ (ee) all sums as may be set apart by the Council to pay as
+ incentives to the occupiers of premises under section 209A
+
+
+ ;
+ (f) such expenses not exceeding in the aggregate five
+ thousand rupees in any year as may be incurred by the
+ Council, and such other expenses as may be incurred by
+ the Council with the prior sanction in writing of the Minister,
+ in connection with civic receptions or the celebration or
+ observance of any events or occasions of public interest, or
+ any religious, charitable, cultural, health, recreational or
+ educational purposes;
+ (ff) all expenses incurred by the Council in the installation
+ and maintenance of official telephone facilities to the
+ residence of the Councillors;
+ (g) such contributions not exceeding in the aggregate two
+ thousand five hundred rupees in any year as may be voted
+ by the Council, and such other contributions as may be
+ voted by the Council with the prior sanction in writing of the
+ Minister, towards the cost of public entertainments or
+ recreations, or towards the support of any libraries, or any
+ educational, scientific, charitable or benevolent
+ institutions, or any religious, charitable, cultural, health or
+ educational purposes; and
+ (gg) all allowances payable to the Chairman, Vice-
+ Chairman and members in accordance with rules made
+ under section 193 ;
+ (h) all sums voted by the Council to meet the travelling
+ expenses of members or officers of the Council attending
+ any meeting or conference of members or officers of
+ Urban Councils for the consideration of matters relating to
+ local administration.
+ (i) all sums not exceeding in the aggregate one thousand
+ rupees or such other sum as may be approved by the
+ Minister as being payable in any year by the Council to
+ the Association of the Urban Councils.
+(2) All cheques or orders for payment of moneys out of the
+Urban Council Local Funds shall, subject to the approval of the
+Commissioner be signed by two officers other than the
+Chairman of the Council, specially authorized by the Council
+for that purpose and the Bank in which the fund is established
+may pay all cheques or orders out of the said funds which are
+
+
+ so signed.
+
+
+Ex gratia payment 159A. (1) An Urban Council may, with the approval of the Minister
+of pension, given after consultation with the Minister in charge of the
+annuity, gratuity or subject of Public Administration, grant, out of the local fund
+retiring allowance. established by that Council, to any person
+[2, 7 of 1959] (a) who retires or has retired from service as an officer or
+ servant of that Council, or
+ (b) who is or was transferred from such service to, and
+ retires or has retired from, the service of the
+ Government,
+ a pension, gratuity, or retiring allowance in respect of any
+ period of his service as such officer or servant for which no
+ pension, gratuity, or retiring allowance or no adequate
+ pension, gratuity, or retiring allowance is payable under any by-
+ laws or rules of that Council or under any pension scheme
+ established or deemed to be established under the Local
+ Government Service Law.
+ (2) Where no pension, annuity, or gratuity, or no adequate
+ pension, annuity, or gratuity is payable to the widow,
+ children, next of kin or dependants of any deceased officer
+ or servant of an Urban Council under any by-laws or
+ rules of that Council or under any scheme or fund
+ established or deemed to be established under the Local
+ Government Service Law, that Council may, with the
+ approval of the Minister given after consultation with the
+ Minister in charge of the subject of Public Administration,
+ grant to such widow, children, next of kin or dependants a
+ pension, an annuity or a gratuity out of the local fund
+ established by that Council.
+ (3) Nothing in subsection (1) or subsection(2) of this section
+ shall be construed to confer on any person any right to any
+ pension, annuity, gratuity or retiring allowance under either
+ of those subsections.
+Power to establish 159B.
+gratuity scheme. (1) An Urban Council may, with the approval of the Minister
+[2, 7 of 1959] given with the concurrence of the Minister in charge of the
+ subject of Public Administration, make bylaws providing for
+ the establishment of, and may establish in accordance with
+ such by-laws, a scheme for the payment of gratuities to
+
+
+ temporary officers and servants of that Council upon their
+ discontinuance from the service of that Council.
+ (2) By-laws made under subsection (I) may be so made by an
+ Urban Council as to be applicable to temporary officers and
+ servants of that Council who have been discontinued from the
+ service of that Council before the coming into operation of
+ the by-laws.
+
+
+ IMPOSITION OF RATES AND TAXES
+
+Power to impose 160. (1) The Urban Council of a town may, subject to such
+and levy rates. limitations, qualifications, and conditions as may be
+[68, 39 of 1986] prescribed by the Council, and subject to the approval of the
+[7, 20 of 1985] Minister, impose and levy a rate on the annual value of any
+[3, 10 of 1981] immovable property or any species of immovable property
+[5, 57 of 1979] situated within the town.
+ (1A) In pursuance of the powers under subsection (1), the
+ Council may impose a higher rate on premises used for
+ business or commercial purposes.
+ (1AA)
+ (a) The Council may, with the approval of the Minister,
+ exempt from the payment of rates all residential premises
+ the annual value of which does not exceed an amount that
+ may be determined by the Council under paragraph (b).
+ (b) In determining the amount of the annual value of
+ residential premises that may be exempted, the Council shall
+ have regard to
+ (i) the state of development of the town for which the
+ Council is constituted;
+ (ii) the nature of the services and amenities provided
+ by the Council to residential premises with lesser
+ annual values;
+ (iii) the loss of reverse that may result from the grant of
+ any exemption and the means proposed by the Council
+ to recover such loss.
+ (c) Where any residential premises are exempted under the
+ provisions of paragraph (b) the benefit of such exemption
+ shall accrue to the occupier thereof.
+ (2) The Council may under this section impose different rates
+
+
+ for different areas or parts of the town according to the services
+ provided by the Council for each such area or part.
+ (2A) It shall be lawful for the Minister to authorize the waiver
+ of the whole or any part of the rate imposed by the Council
+ under this section in any past year and any costs incurred for
+ the purpose of recovering that rate where
+ (a) he is of the opinion that such rate has been imposed
+ without the provision of adequate services; or
+ (b) he determines, with the approval of the Government,
+ that such waiver is just and equitable in all the circumstances
+ of the case.
+ (2B) Where the Minister has under subsection (2A) authorized
+ the waiver of the whole or part of any rate imposed and any
+ costs incurred for the purpose of recovering that rate, the
+ Council shall
+ (a) where such rate has been paid, set off such amount of the
+ rate and any costs incurred, against future rates due on the
+ property in respect of which such rate has been paid; or
+ (b) where such rate has not been paid, waive the amount of
+ the rate and any costs incurred.
+ No person shall have a right to a refund of such amount.
+ (3) Where the Council, in imposing any rates for any year,
+ resolves to levy without alteration the same rate as was in force
+ during the preceding year, the approval of the Minister shall not
+ be required for the imposition and levy of such rate.
+ (4) Repealed
+ (5) The Minister may from time to time make regulations
+ specifying the quantum of discount to which rate payers who
+ pay their rates in advance shall be entitled.
+
+
+Exemption from 161. There shall be exempt from any rate imposed under section 160
+rates. (a) all lands or buildings wholly or mainly used for religious,
+ educational, or charitable purposes;
+ (b) all buildings in charge of military sentries;
+ (c) all burial and cremation grounds;
+ (d) any immovable property which the Council may specially
+ exempt from such rate on the ground of the poverty of the
+
+
+ owner;
+ (e) in the case of any defined portion of a rate, declared by
+ resolution of the Council to be levied for the purposes of any
+ special public service, any immovable property situated within
+ any area which is not benefited by such service, or within
+ which other provision is made for the said or a like service to the
+ satisfaction of the Council.
+
+
+Power of Council 162. (1) The Urban Council of a town may, subject to such
+to impose taxes limitations, qualifications, and conditions as may be
+and licence duties. prescribed by the Council, impose and levy any of the
+ following taxes and licence duties within the town:
+ (a) a tax on vehicles and animals;
+ (b) a duty in respect of licences issued by the Council; and
+ (c) any other form of tax approved by the Minister.
+ (2) Where the Council, in imposing any tax under this section
+ for any year, resolves to levy without alteration the same tax
+ as was in force during the preceding year, the approval of the
+ Minister shall not be required for the imposition and levy
+ of such tax.
+
+Vehicles and (1) The tax on vehicles and animals which an Urban Council is
+animals tax. [13, 163. authorized to impose by section 162 shall be an annual tax in
+42 of 1979] respect of all or any of the vehicles and animals specified in
+[21, 48 of 1971] the Third Schedule, and ordinarily used or to be used within
+ the town for which the Council is constituted, and shall be the
+ respective amounts specified in that Schedule.
+ (2) The tax on vehicles and animals shall not be leviable or
+ payable in respect of
+ (a) any vehicle or animal which is the property of the State
+ or of the Council; or
+ (b) the authorized number of horses belonging to military
+ officers doing staff, regimental, or other public duty within
+ the town; or
+ (c) vehicles kept for sale by bona fide dealers in such
+ vehicles and not used for any other purpose; or
+ (d) vehicles subject to a licence duty under section 3 of the
+ Vehicles Ordinance, or to a tax under any enactment for
+
+
+ the time being in force relating to motor vehicles.
+(3) The tax on vehicles and animals shall be payable annually
+in advance on such date as may be ordered by the Council or
+prescribed by by-laws.
+(4) The tax on vehicles and animals shall be payable by each
+person in whose possession or custody or control any vehicle or
+animal liable to the tax may be found so soon as it has been for
+thirty days used or kept for use within the administrative limits of
+the town, but no person shall be liable under this section in
+respect of any vehicle or animal which has been in his
+possession for less than thirty days.
+(5) No person by reason of the transfer of ownership shall be
+liable to pay tax on any vehicle or animal on which the tax has
+already been paid for the year in which the ownership was
+transferred.
+(6) The Chairman may, in respect of any period not exceeding
+one year at any one time, accept from any livery stable keeper
+or other person keeping or using animals for hire such sum as
+may be determined by the Chairman, in composition of the tax
+payable in accordance with the Third Schedule on the vehicles
+or animals kept in such stable or by such person.
+(7) Where any vehicle or animal liable to any tax under this
+Ordinance is used or to be used within the administrative limits
+of more than one town, such vehicle or animal shall only be liable
+to one such tax in respect of the town within which it is
+principally used or to be used, and if any question arises as to
+the administrative limits within which any vehicle or animal
+liable to any such tax is principally used or to be used, the
+question shall be determined by the Commissioner.
+(8) Where any vehicle or animal is ordinarily liable to both the
+tax imposed under section 162 of this Ordinance, and the tax
+imposed under section 245 of the Municipal Councils
+Ordinance, such vehicle or animal shall be liable to only one such
+tax which shall be payable
+ (a) where the vehicle or animal is kept within the
+ administrative limits of an Urban Council or a Municipal
+ Council, to such Urban Council or Municipal Council as
+ the case may be; or
+
+
+ (b) where the vehicle or animal is not kept within the
+ administrative limits of an Urban Council or a Municipal
+ Council, to the Urban Council or Municipal Council
+ within whose administrative limits it is principally used.
+ (9) If any person liable to pay the tax leviable under this section
+ fails to pay such tax within seven days after demand, the secretary
+ of the Council shall report the failure to the Magistrate's Court,
+ and the court shall proceed to recover the amount due as if it
+ were a fine imposed by the court and shall pay the amount so
+ recovered into the local fund.
+
+
+Licence duty. 164. (1) The licence duty which an Urban Council is authorized to
+[8, 20 of 1985] impose by section 162 shall be in respect of each licence
+[14, 42 of 1979] granted by the Council authorizing the use of any premises or
+ place for any special purpose in pursuance of this Ordinance or
+ any by-law made thereunder.
+ (2) The amount of the licence duty shall be such as may, from
+ time to time, be determined by the Council, according to the
+ annual value of the premises to be licensed, and, where such
+ licence authorizes the use of such premises for the purposes of
+ any trade, having regard to:
+ (a) the annual value of such premises;
+ (b) the turnover of business, of such trade;
+ (c) the profit that is likely to be earned in such trade; and
+ (d) the essential nature of the goods or services supplied in
+ the course of such trade:
+ Provided that where the annual value of such premises falls
+ within the limits of any item in Column 1 set out below, the
+ maximum duty shall not exceed the sum set out in the
+ corresponding entry in Column II
+ Column Column II
+
+ Where the annual value does not Rs. 750
+ exceed Rs. 500
+ Exceeds Rs. 750 but does not Rs, 1,500
+ exceed Rs. 750
+
+
+ Exceeds Rs. 1,500 Rs. 1,000
+
+
+ Provided, further, that where any such premises are used for the
+
+
+ purposes of a hotel, restaurant or lodging house, and such hotel,
+ restaurant or lodging house is registered with or approved or
+ recognized by the Ceylon Tourist Board for the purposes of the
+ Tourist Development Act, the duty so levied shall be according to
+ the takings of the hotel, restaurant or lodging house for the year
+ preceding the year in which the licence duty is levied, and shall
+ not exceed one per Centum of such takings. Where such hotel,
+ restaurant or lodging house is in its first year of operation, the
+ licence duty shall be determined and levied according to the
+ annual value of shall such premises.
+ For the purposes of this section, 'takings' in relation to a hotel,
+ restaurant or lodging house means the total amount received or
+ receivable from transactions entered into in respect of that
+ hotel, restaurant or lodging house or for services performed in
+ carrying on that hotel, restaurant or lodging house.
+
+By-laws relating to 165. Any tax imposed under section 162 other than the tax on vehicles
+
+taxes. and animals shall be of such amount, and subject to such conditions
+ as may be prescribed by by-laws made under this Ordinance.
+
+
+Tax on certain 165A. (1) An Urban Council may impose and levy a tax on any trade
+trades. carried on within the administrative limits of that Council.
+[15, 42 of 1979] (2) The tax levied under subsection (1) shall be an annual tax
+ determined by the Council according to the annual value of
+ the premises on which that trade is carried on:
+
+ Provided that where the annual value of such premises falls
+ within the limits of any item in Column 1 set out below, the
+ tax levied shall not exceed the sum set out in the
+ corresponding entry in Column II :
+
+
+ Column I Column II
+
+ Where the annual value-does Rs. 500
+ not exceed Rs. 750
+ exceeds Rs. 750 but does not Rs. 750
+ exceed Rs. 1,500
+
+
+ exceeds Rs. 1,500 Rs. 1,000
+
+
+ Provided, further, that such tax shall not be leviable or
+
+
+ payable in respect of any trade for which a licence is
+ necessary under the provisions of this Ordinance or any by- law
+ made thereunder.
+ (3) The tax levied under subsection (1) shall be payable on such
+ date as may be determined by the Council or prescribed by by-
+ law, by the person who carries on such trade.
+ (4) If any person liable to pay the tax leviable under this
+ section fails to pay such tax within seven days after demand, the
+ Secretary shall report such failure to the Magistrate's Court
+ having jurisdiction over the area in which the Council is
+ situated. The Court shall proceed to recover the amount due as
+ if it were a fine imposed by Court, notwithstanding that such
+ amount exceeds the amount of fine which a Magistrate may
+ impose in the exercise of his ordinary jurisdiction, and the
+ amount so recovered shall be paid into the Fund of the Council.
+
+
+Determination of 165AA. Where an Urban Council resolves to impose and levy a duty in
+duty or tax where respect of a licence under section 164 or a tax on a trade under
+several trades are section 165A, and the trade carried on is one of many other
+carried on. trades carried on in the same premises, the Council shall
+[9, 20 of 1985] determine such duty or tax on the basis of the apportioned annual
+ value of the area of the premises occupied for the purposes of
+ such trade.
+
+
+Tax on businesses 165B. (1) An Urban Council may by resolution impose and levy
+and professions. annually, on, every person who, within the administrative
+[10, 20 of 1985] limits of such Council, carries on any business for which, no
+[15, 42 of 1979] licence is necessary under the provisions of this Ordinance
+ or any by-law made thereunder, or no tax is payable
+ under section 165A, a tax according to the takings of the
+ business for the year preceding the year in which such tax is
+ payable at such rates not exceeding the rates set out
+ below Column II Tax Payable Nil Rs. 90 Rs. 180 Rs. 360
+ Rs. Rs. 1,200 3,000: Column I Where the takings of the
+ business per year (i) do not exceed Rs, 6,000 (ii) exceeds
+ Rs, 6.000 but do not exceed Rs. 12,000 (iii) exceeds Rs.
+ 12.000 but do not exceed Rs. 18,750 (iv) exceeds Rs.
+ 18,750 but do not exceed Rs. 75,000
+ (v) exceeds Rs. 75.000 but do not exceed Rs. 150.000 (vi)
+ exceeds Rs. 150,000
+
+
+Provided, however, that the preceding provisions of this
+section shall not apply to itinerant vendors who do not carry
+on business at fixed places or do not for the purposes of such
+business established themselves on the public roads or other
+public places.
+(1A) An Urban Council may by resolution impose and levy
+annually on every person who, within the administrative
+limits of such Council, practices any profession a tax of an
+amount not exceeding an amount specified by the Minister by
+regulation as the maximum amount of 'tax which the Council
+may so impose and levy.
+(2) The tax payable under subsection (1) or subsection (1A)
+shall be payable on such date as may be specified by the
+Council or prescribed by by-law.
+(3) If any person liable to pay any tax leviable under this
+section fails to pay such tax within seven days after demand, the
+Secretary shall report such failure to the Magistrate's Court
+having jurisdiction over the area in which the Council is
+situated. The Court shall proceed to recover the amount due as
+if it were a fine imposed by Court, notwithstanding that such
+amount exceeds the amount of fine which a Magistrate may
+impose in the exercise of his ordinary jurisdiction, and the
+amount so recovered by Court shall be paid into the Fund of
+the Council.
+For the purposes of this section
+ (a) 'business' includes any trade or the business of a
+ manufacturer, or of any person taking commission or
+ fees in respect of any transaction or services rendered or
+ the business of an independent contractor, but does not
+ include the occupation of selling articles, goods or
+ materials at a private fair or the occupation of
+ maintaining any educational establishment or school to
+ which grants from state funds are paid or to which such
+ grants were earlier paid but at present are not paid; and
+ (b) 'takings' in relation to any business, means the total
+ amount received or receivable from transactions entered
+ into in respect of that business or for services performed in
+ carrying on that business, and includes
+ (a) in the case of financier, money-lender or
+
+
+pawnbroker, the moneys given out by him as loans,
+the interest received or receivable by him on such
+loans, and the sums received by him as fees or other
+charges in respect of such loans;
+(b) in the case of an auctioneer, and subject to the
+provision of paragraph (c) in the case of a broker or
+commission agent
+ (i) in respect of lands sold by him or in the sale
+ of which he is instrumental, the commission or
+ fees received or receivable by him for any
+ transactions effected or services rendered by him
+ in connection with such sale;
+ (ii) in respect of any goods sold by him or in the
+ sale of which he is instrumental the total amount
+ paid or payable by the purchaser of such goods;
+(c) in the case of any broker (other than a share
+broker or a produce broker), or commission agent,
+who
+ (i) on behalf of any person not resident in Sri
+ Lanka, sells or is instrumental in selling any
+ goods of that non-resident person, or
+ (ii) acts on behalf of an exporter of any goods
+ manufactured in Sri Lanka,as
+ (iii) on behalf of any other person carrying on
+ a business in Sri Lanka, is instrumental in
+ selling in Sri Lanka any goods of that other
+ person, being goods the total proceeds of the
+ sale of which is included in the takings of the
+ business of that other person,
+the commissions or fees received or receivable by
+such broker or commission agent in respect of any
+transaction effected, or services rendered by him in so
+selling, acting, or in being instrumental in so selling,
+and in the case of a share broker or a produce
+broker, the commissions or fees received or
+receivable by such broker or commission agent in
+respect of any transaction effected or services
+rendered by him; and
+
+
+ (d) in the case of a person carrying on any
+ educational establishment or school, the total amount,
+ excluding profits from investment of the moneys of
+ the educational establishment or school, received or
+ receivable by him in carrying on such educational
+ establishment or school, but does not include any
+ amount received or receivable by the sale of capital
+ assets.
+
+
+Tax on 165C. (1) Where any land within the administrative limits of an Urban
+undeveloped land. Council, is suitable for building purposes, or for the
+[11, 20 of 1985] purposes of permanent or regular cultivation, or such land is
+[15, 42 of 1979] capable of being developed for any such purpose at a cost
+ which would, in the opinion of the Council, be
+ reasonable, and where
+ (a) no building has been erected on such land;
+ (b) the extent of such land which is actually covered by
+ buildings bears to the total extent of such land, a
+ proportion less than that prescribed by the Council by
+ resolution; or
+ (c) such land has not been subject to regular or permanent
+ cultivation,
+ the Council shall levy annually, on the owner of such land, a tax
+ not exceeding two per centum of the capital site value of such
+ land.
+ (2) The provisions of sections 235 and 236 of the Municipal
+ Councils Ordinance shall, with the necessary modifications,
+ apply with respect to every assessment of the capital site
+ value of land, made under subsection (1).
+ For the purposes of this section, 'capital site value', when used
+ in reference to any land, means the probable price which
+ would be paid for the land, exclusive of all buildings thereon,
+ if the land were sold in the open market, free of all
+ mortgages, leases, encumbrances or other charges.
+
+Tax on certain 165D. (1) Where any land within the administrative limits of an
+sales of land, Urban Council is sold by public auction or otherwise, by an
+[71, 39 of 1986] auctioneer or broker or his servant or agent, the vendor
+ or such auctioneer or broker or his servant or agent, shall
+ pay to
+
+
+ the Council, from the proceeds of the sale of such land, a tax
+ equivalent to one per centum of the amount of such proceeds.
+ (2) If the tax payable under subsection (1) is not paid within
+ fourteen days of demand, the Secretary shall report such
+ failure to the Magistrate's Court and the Court shall proceed
+ to recover the amount due as if it were a fine imposed by
+ Court, notwithstanding that such amount exceeds the amount of
+ a fine which a Magistrate may impose in the exercise of his
+ ordinary jurisdiction and the amount so recovered by Court
+ shall be paid into the local fund of the Council.
+
+
+ ASSESSMENT AND RECOVERY OF RATES AND
+ TAXES
+
+Assessment of 166. The assessment of any immovable property for the purpose of any
+rates and taxes. rate under this Ordinance shall, with the necessary modifications, be
+ made in manner prescribed by section 235 of the Municipal
+ Councils Ordinance, with respect to immovable property within
+ Municipal limits, and all the provisions of the said section, together
+ with those of sections 233, 242, 243, and 236 to 241, shall, with the
+ necessary modifications, apply with respect to every such
+ assessment made for the purposes of this Ordinance:
+ Provided that, pending the making of any such assessment, any
+ valuation of any immovable property made for the purposes of the
+ assessment tax under the Police Ordinance, or any enactment passed in
+ amendment thereof, shall be deemed to be the valuation of such
+ property for the purpose of any rate on the annual value thereof
+ under this Ordinance.
+
+
+Power of Chairman 167. (1) For the purpose of the ascertainment of any information
+to require returns. which, in the opinion of the Chairman of an Urban
+[26, 48 of 1984] Council, may be necessary for the due imposition or levy of
+ any rate or tax within the town for which the Urban Council
+ is constituted, the Chairman may, by notice in writing, require
+ all persons who are liable or may be supposed to be liable to
+ such rate or tax, or who may be the owners or occupiers or
+ supposed owners or occupiers of any property with respect
+ to which any rate or tax is imposed or may be imposed under
+ this Ordinance, or if the Chairman shall so think fit, every
+ householder within the town, to render all such returns, and
+ make all such declarations of such particulars and in such
+ form as may be prescribed by by-
+
+
+ laws under this Ordinance, or, pending the making of such by-
+ laws, as may be directed by the Council.
+ (2) All persons on whom any notice under subsection (1) may
+ be served shall fill up in writing, sign, date, and deliver or
+ transmit to the office of the Council any form served with such
+ notice, or furnish any information required thereby, within
+ fourteen days, or such longer time as may be prescribed by by-
+ laws or specified in such notice.
+ (3) Any person who refuses to accept or who refuses, neglects,
+ or omits duly to fill up and deliver or transmit any form or to
+ furnish any information referred to in subsection (2) within the
+ time prescribed or specified in that behalf, or who negligently
+ renders a return or furnishes any information which is in any
+ material respect inaccurate to the advantage of such person,
+ shall be guilty of an offence punishable with a fine not
+ exceeding one thousand rupees.
+ (4) All declarations made for any of the purposes of this section
+ shall be free of stamp duty.
+
+
+Power of Chairman 168. (1) The Chairman of an Urban Council may, by notice in writing,
+to summon persons summon sons before him, or before any officer appointed by
+before him. him in that behalf, any person whom he has reason to
+[27, 48 of 1984] believe to be liable to the payment of any rate or tax, or
+ who may be the owner or supposed owner of any property
+ with respect to which any rate or tax is imposed or may be
+ imposed under this Ordinance, or any other person whom
+ he has reason to believe to be able to give any information
+ with respect to any such property, and the Chairman or the
+ officers so appointed may thereupon examine any such person
+ on oath with reference to the said liability, and it shall be the
+ duty of every person so examined to answer truly all
+ questions addressed to him.
+ (2) Any person who, being summoned under this section, fails
+ without lawful excuse to appear or submit to examination in
+ obedience to the summons, shall be guilty of an offence
+ punishable with a fine not exceeding five hundred rupees.
+ (3) Any statement or declaration made by any person under this
+ section or section 167 with reference to the value of any
+ property in which such person is interested, or as to the value
+ of
+
+
+ the interest of such person therein, shall be conclusive evidence in
+ any proceeding or matter in which the value of such property or
+ such interest is in question, as against the person making the
+ statement or declaration that at the date at, or with reference to,
+ which the statement or declaration was made, the said property
+ or the interest of such person in the said properly was of the value
+ attributed thereto in such statement or declaration.
+
+
+Chairman's Powers 169. (1) The Chairman of an Urban Council, or any officer authorized
+of inspection. by him in that behalf, may, for the purpose of ascertaining or
+[28, 48 of 1984] verifying any information as to the liability of any person to
+ any rate or tax, at any time between sunrise and sunset enter
+ upon and inspect any premises liable or supposed to be
+ liable to the said rate or tax, or any premises on which any
+ vehicle, animal, or other thing in respect of which any tax is
+ payable is situate, or may be supposed to be situate.
+ (2) Any person who, without lawful excuse, obstructs the
+ Chairman or officer appointed for the purpose while acting in
+ pursuance of this section shall be guilty of an offence
+ punishable with a fine not exceeding five hundred rupees.
+
+
+Recovery of rates 170. (1) All rates and taxes imposed and levied by an Urban Council
+and taxes. under this Ordinance, all rents due in respect of any
+[22, 48 of 1971] premises let by a Council, and all fees leviable under any
+ by-law made by a Council, shall, where no other method of
+ recovery is specifically provided by or under this Ordinance or
+ any other enactment, be recoverable by The secretary of the
+ Council in the same manner as rates, taxes and rents are
+ recoverable under the Municipal Councils Ordinance; and all
+ the provisions of sections 252 to 266 of that Ordinance
+ relating to the recovery or the waiver of rates, taxes and rents
+ and the termination of the tenancy of tenants of the Council
+ shall, with the necessary modifications, apply accordingly.
+ *(2) Where the lessee or occupier of any immovable property
+ belonging to the State and situated within the limits of any
+ town makes default in the payment of any rates imposed in
+ respect of such property under this Ordinance by the Urban
+ Council of that town, and a warrant is issued, in accordance
+ with such of the provisions of law as are made applicable in
+ such case by subsection (1), for the seizure and sale of the
+ movable or immovable property of such lessee or occupier, the
+
+
+ officer to whom the warrant is issued may, notwithstanding
+ anything contained in any other written law to the contrary,
+ execute the warrant in any area in which any movable or
+ immovable properly of such lessee or occupier may be found,
+ whether such area is within or outside the limits of that town.
+
+
+Recovery of 170A. (1) Where under the provisions of this Ordinance, or any by-
+payments due to law, rule or regulation made under this Ordinance, any duty,
+the Urban Council. fine, penalty, fee or other payment has become due to the
+[28, 48 of 1971] Urban Council, then, notwithstanding anything to the
+ contrary in any such provision or any such by-law, rule or
+ regulation, it shall be the duty of the secretary of the
+ Council to take all steps necessary to recover such duty, fine,
+ penalty, fee or other payment and credit it to the funds of the
+ Urban Council.
+ (2) Where any rate, tax, rent, fee, duty, toll, fine, penalty or any
+ other payment whatsoever has become due to the Urban
+ Council under any written law, other than this Ordinance, or
+ any by-law, rule or regulation made under this Ordinance,
+ then, notwithstanding anything to the contrary in the
+ aforesaid written law, it shall be the duty of the secretary
+ of the Council to take all steps necessary to recover such
+ rate, tax, rent, fee, duty, toll, fine, penalty or other payment
+ and credit it to the funds of the Urban Council.
+
+
+Waiver of sums 171. The Council may by resolution waive the whole or any part of any sum
+due to the Council. of money (not being a sum for the waiver of which provision is made
+ by section 170) due to the Council from any person if it appears to
+ the Council that the amount to be waived is inconsiderable or
+ irrecoverable or that it should be written off on the ground of the
+ poverty of the person liable therefor. Every such resolution relating to
+ the waiver of an amount exceeding fifty rupees shall be subject to the
+ approval of the Minister:
+
+
+Assessment, &c; 172. No assessment or valuation, and no charge or demand of rate or tax
+not to be under the authority of this Ordinance, and no seizure and sale, shall
+impeached for be impeached or affected by reason of any mistake in the name of
+want of form. any person liable to pay the rate or tax, or in the description of any
+ property or thing liable to rate or tax, or any mistake in the amount
+ of assessment or the mode of seizure and sale, or any other formal
+
+
+ defect,
+
+
+ LOANS
+
+Power of Urban 173. (1) It shall be lawful for an Urban Council, subject to the
+Council to borrow approval of the Minister, to borrow from the of Sri Lanka,
+on the security of or any person or persons or Government body of persons,
+raise and taxes. whether incorporated or not, such sum or sums of money as
+ may be necessary for any of the purposes of the Council:
+ Provided that the approval of the Minister shall not be
+ necessary for borrowing any such sum if the amount
+ outstanding in respect of all loans already raised by such
+ Council does not exceed the total income received by such
+ Council during the three years immediately preceding the year
+ in which that sum is to be borrowed.
+ (2) Every loan raised by an Urban Council shall be subject to
+ such rate of interest and to such conditions for the repayment
+ thereof as may, where that loan is raised with the approval
+ of the Minister, be approved by the Minister, and, in any
+ other case, be determined by the Council.
+ (3) For the purpose of securing the repayment of the sum or sums
+ borrowed by an Urban Council and the interest accruing
+ thereon, the Council may mortgage and assign to the lender or
+ lenders, by or on whose behalf such sum or sums or any part
+ thereof may be lent, the proceeds of any rate or tax levied or
+ imposed under this Ordinance or any portion thereof, or any
+ property belonging to the Council or any other source of
+ income accruing to the Council or any portion thereof.
+
+
+Limitation of (1) The amount at any time outstanding in respect of all loans due
+borrowing powers. 174. from any Urban Council (whether raised under the
+ authority of this Ordinance or any other enactment) shall not
+ exceed in the aggregate ten times the fair average annual
+ income received by the Council from all rates, taxes,
+ properties, and other sources of income for the preceding five
+ years, or, in the case of an Urban Council which has not
+ been in existence for five years, ten times its income for one
+ year as appraised by the Council, subject to the approval of
+ the Minister:
+ Provided that in any case in which the liabilities of any Urban
+ Council in respect of its loans are wholly or mainly due to the
+ Government of Sri Lanka, the Minister with the concurrence of
+
+
+ the Minister in charge of the subject of Finance may, by Order
+ published in the Gazette, authorize the limit prescribed by this
+ section to be exceeded to such extent as may be stated in the
+ Order.
+ (2) All securities given in respect of loans under this Part shall
+ be free of stamp duty.
+
+
+When Chairman 174A. If the Urban Council fails to sanction the raising of a loan for the
+may exercise purpose of fulfilling any duty imposed on the Council or carrying out
+powers of Council any work, which the Chairman considers to be necessary, the
+relating to raising Chairman may, with the approval of the Commissioner, raise such
+of loans. loan and may exercise all the powers vested in the Council under
+[131, 24 of 1977] the provisions of sections 173 and 174 as though such powers
+ were conferred by those sections on the Chairman.
+
+
+Form of security, 175. The form and manner of execution of any security given for the
+&c. purpose of any loan under this Part, the mode and order of
+ repayment of any sums borrowed, and the arrangements for the
+ liquidation of any loan, shall, subject to the provisions of the Local
+ Loans and Development Ordinance, be such as may be prescribed
+ by by-laws or regulations made under this Ordinance, and, in the
+ absence of any such by-laws or regulations shall be in accordance with
+ the provisions of the Municipal Councils Ordinance, and the said
+ provisions, with the necessary modifications, shall in such
+ circumstances apply to any loan made to any Urban Council under this
+ Ordinance.
+
+
+ ACCOUNTS, ESTIMATES, AND BUDGET
+
+Books of accounts 176. (1) Every Urban Council shall, from time to time, order and
+to be kept by direct a book or books, in such form as may be prescribed
+council. by the Commissioner, to be provided and kept at its office and
+ true and regular accounts to be entered therein of all sums of
+ money received by the Council and expended for or on
+ account of the purposes of this Ordinance, and of the several
+ articles, matters, and things for which sums of money shall
+ have been disbursed and paid.
+ (2) The book or books of accounts of an Urban Council shall
+ not for any reason or under any pretence whatsoever be taken
+ from the office of the Council, except by process of a
+ competent court.
+
+
+ (3) The book or books of accounts of an Urban Council shall at
+ all reasonable times be open to the inspection of the members
+ of the Council, and every householder resident within the town
+ administered by the Council, and any member of the Council or
+ any such householder may take copies of or extracts from such
+ book or books free of all charges.
+
+
+Preparation and 177. (1) Every Urban Council shall cause to be prepared in writing,
+publication of in the month of January in each year, or within such other
+annual accounts. period as the Council, with the sanction of the Commissioner
+ may direct, a true account of all the moneys received and
+ paid by virtue of this Ordinance during the year ending on the
+ thirty- first day of December next preceding or such other
+ period of twelve months as the Council, with the sanction of
+ the Commissioner, may direct, and a statement of the assets
+ and liabilities existing at the said date, and a copy or duplicate
+ of such account and statement verified on oath before any
+ Justice of the Peace by the Chairman of the Council, or such
+ other officer of the Council as it may appoint for the purpose,
+ and certified by one of the members to be correct, shall be
+ deposited with the Council, and shall be open to the inspection
+ of any householder resident within the town administered by
+ the Council or any party interested.
+ (2) An abstract of the account and statement referred to in
+ subsection (1) shall be published in the Gazette for general
+ information before the first day of March following, or before
+ such other date as the Council, with the sanction of the
+ Commissioner, may direct.
+
+
+Budget. (1) The Chairman of every Urban Council shall, each year, on
+ 178. or before such date as may be fixed by by-laws of the
+ Council or by rules made under section 193, prepare and
+ submit to the Council a budget for the next succeeding year in
+ such form as may be prescribed by the Commissioner, and
+ containing
+ (a) the details of the proposed expenditure set out in items
+ under appropriate heads;
+ (b) an estimate of the available income of the Council
+ from sources other than rates;
+ (c) an estimate of the rate or rates necessary for the
+ purpose of providing for the proposed expenditure.
+
+
+ (2) Whenever it is necessary to introduce any new item or items
+ of expenditure during the course of any year, the Chairman
+ shall prepare and submit to the Council a supplementary budget
+ containing details of the proposed expenditure.
+ (3) A copy of every annual budget or supplementary budget of an
+ Urban Council shall be open to inspection at the Urban Council
+ office.
+
+Chairman's Powers 178A. If the Urban Council modifies or rejects all or any of the items in
+
+with regard to any or supplementary budget or adds any item budget. thereto and
+budget. the Chairman does not agree with any such decision of the Council
+[12, 21 of 2012] he of shall re-submit the budget or supplementary budget to the
+[132, 24 of 1977] Council for further consideration- Where a budget or
+ supplementary budget is not passed by the Council within two weeks
+ after it is re-submitted, the budget or supplementary budget shall,
+ notwithstanding that it has not been passed by the Council, be
+ deemed to be the duly adopted budget or supplementary budget of
+ the Council:
+ Provided that, if the Council according to sections 178 and 178A
+ of this ordinance modifies or rejects all or any items in any budget or
+ supplementary budget or adds any item thereto which was submitted
+ to the Council at any time by the Chairman after a period of two
+ years since the commencement of the term of office of the
+ Council, and if the Chairman does not agree to such decision of
+ the Council, he shall resubmit the said budget to the Council for
+ further consideration. Where a budget or supplementary budget is
+ not passed by the Council within two weeks after it is resubmitte for
+ the second time, the Chairman shall be deemed to have been
+ resigned from the office of Chairman at the end of the said period
+ of two weeks.
+
+
+"Transitional 178B. The provisions of the proviso to section 178A of the Urban
+provision. Councils Ordinance as amended by the Local Authorities (Special
+[2, 35 of 2014] Provisions) Act, No. 21 of 2012 shall not be applicable to any budget
+ or supplementary budget to be submitted to an Urban Council
+ constituted in terms of elections held prior to the date of coming into
+ operation of Local Authorities (Special Provisions) Act, No. 21 of
+ 2012 and Local Authorities Elections (Amendment) Act, No. 22 of
+ 2012 respectively.
+
+
+Variation of 179. The Chairman may, in case of necessity during the course of any
+
+
+expenditure year, reduce or increase the expenditure under any head or transfer
+proposed in the moneys appropriated under one head to any other head, in the
+budget. budget or in any supplementary budget adopted for that year, but so,
+[133, 24 of 1977] however, that the total amount of expenditure sanctioned by such
+ budget or supplementary budget is not exceeded
+
+
+Annual 180. (1) The Chairman of every Urban Council shall, as soon as may
+administration be after the close of each financial year, prepare a detailed
+report. report of the administration of the Council during such
+ financial year, with a statement showing the nature and
+ amount of receipts and disbursements on account of the local
+ fund during that year.
+ (2) The report and statement required by subsection (1) shall be
+ in such form as may be prescribed by the Commissioner, and
+ shall be submitted to the Council, and, together with any
+ resolutions that may have been passed thereon by the Council,
+ shall be submitted to the Minister through the Commissioner
+ within six weeks of the date when they were first submitted to
+ the Council, or within such other period as the Council,
+ with the approval of the Commissioner, may determine.
+
+
+ AUDIT
+
+Audit. 181. (1) The accounts of every Urban Council shall be audited
+[29, 48 of 1984] during each half of the financial year by Government, and
+ every Urban Council shall, in respect of each audit for any
+ half of any financial year, pay to Government as a
+ contribution towards the cost of such audit a fee computed in
+ the manner following, that is to say;
+ (a) where the aggregate amount of the revenue of an
+ Urban Council for any half of any such financial year is
+ equal to or less than seventy-five thousand rupees, one per
+ centum of the amount of such revenue; and
+ (b) where the aggregate amount of the revenue of an
+ Urban Council for any half of any such financial year is
+ more than seventy-five thousand rupees, one per centum
+ of the first seventy-five thousand rupees of such revenue and
+ one-half per centum of the amount by which such revenue
+ exceeds seventy-five thousand rupees.
+ (2) For the purposes of any audit and examination of accounts
+
+
+ under this ordinance, the auditor may, by notice in writing,
+ require the production before him of any books, deeds,
+ contracts, accounts, vouchers, and any other documents and
+ papers which he may deem necessary, and may require any
+ person holding or accountable for any such books, deeds,
+ contracts, accounts, vouchers, documents, or papers to appear
+ before him at any such audit and examination or adjournment
+ thereof, and to make and sign a declaration in respect of the same.
+ Every such declaration shall be free of stamp duty.
+ (3) If any person neglects or refuses to produce any book, deed,
+ contract, account, voucher, document or papers, or to make or
+ sign any declaration when required so to do under subsection
+ (2), he shall be guilty of an offence punishable with a fine not
+ exceeding one thousand rupees, and a further fine not
+ exceeding five hundred rupees for each day during which the
+ offence is continued after he has been convicted of such
+ offence.
+
+
+Recovery of 182. (1) Every auditor acting in, pursuance of this Part shall disallow
+surcharges. every item of account contrary to law, and surcharge the
+ same on the person making or authorizing the making of the
+ illegal payment, and shall charge against any person
+ accounting the amount of any deficiency or loss incurred by
+ the negligence or misconduct of that person and any sum
+ which ought to have been, but is not, brought into account
+ by that person, and shall in every case certify the amount due
+ from such person.
+ (2) Before making any surcharge or disallowance, the auditor
+ shall afford an opportunity to the person against whom such
+ surcharge or disallowance is made, to be heard or to make any
+ representations with reference to any matter which he may
+ think fit, and shall, in the event of his making such surcharge
+ or disallowance, on application by any such person, state in
+ writing the reason for his decision in respect of such
+ disallowance or surcharge.
+Appeal and 183.
+enforcement of (1) Any person aggrieved by any disallowance or surcharge
+surcharges, &c. may appeal against such decision to the Court of Appeal,
+ and the Court of Appeal may either confirm such
+ disallowance or surcharge, or, if it is of opinion that such
+ disallowance or surcharge is not in accordance with law,
+ may modify or set
+
+
+aside such disallowance or surcharge accordingly.
+(2) Every appeal under subsection (1) shall be presented,
+prosecuted, and enforced within the time and in the manner and
+subject to the rules prescribed for and observed in appeal from
+interlocutory orders of District Courts, and all proceedings in
+connection therewith shall be subject to the same stamp duties
+as appeals from District Courts.
+(3) In lieu of an appeal under subsection (1) any person
+aggrieved may, within thirty days of the date of the decision of
+the auditor duly communicated to him, appeal from such decision
+to the Minister, and it shall be lawful for the Minister, upon any
+such appeal, to decide the question at issue according to the
+merits of the case, and if the Minister finds that any disallowance
+or surcharge has been lawfully made, but that the subject-matter
+thereof was incurred under such circumstances as to make it
+fair and equitable that the disallowance or surcharge should be
+remitted, the Minister may direct that such disallowance or
+surcharge shall be remitted on payment of the costs, if any,
+which may have been incurred by the auditor in the enforcing
+of such disallowance or surcharge. Any amount directed to be
+recovered from any such person under any order made by the
+Minister may forthwith be recovered by the Commissioner or any
+person authorized in writing in that behalf by the
+Commissioner, in the same manner as any sum certified to be due
+by an auditor is recoverable under the provisions of this section.
+(4) No expenses paid by any Urban Council shall be disallowed
+by the auditor, if such expenses have been sanctioned by the
+Minister.
+(5) Every sum certified to be due from any person by an auditor
+under this Ordinance shall be paid by such person to the
+Commissioner within fourteen days after the sum has been so
+certified, unless there is an appeal against the decision, and if
+such sum is not so paid and there is no such appeal, it shall be
+the duty of the Commissioner or any person authorized in
+writing in that behalf by the Commissioner to recover the sum
+from the person against whom the sum has been certified to be
+due, and any sum so certified to be due may, on application to
+the Magistrate* having local jurisdiction, be recovered in the
+
+
+ same manner as a fine imposed by such Magistrate,* together
+ with all costs and expenses incurred in connection with the
+ enforcement thereof.
+ (6) Every sum paid or recovered under this section, other than a
+ sum paid or recovered as costs and expenses incurred in the
+ enforcement of any disallowance or surcharge, shall be credited
+ to the local fund of the Council.
+
+
+ PART VIII
+ CENTRAL CONTROL
+
+Removal of 184. (1) If at any time the Minister is satisfied that there is sufficient
+Chairman and proof of
+dissolution of (a) persistent refusal to hold or attend meetings or to vote
+Urban Council. or to transact business at any meetings that may be held;
+[13, 21 of 2012] or
+[134, 24 of 1977] (b) wilful neglect, or misconduct in the performance of the
+[4, 48 of 1971] duties imposed by this Ordinance; or
+[5, 42 of 1968]
+ (c) persistent disobedience to or disregard of the directions,
+[2, 1 of 1961]
+ instructions or recommendations of the Minister or of the
+[2, 2 of 1957]
+ Commissioner; or
+ (d) incompetence and mismanagement; or
+ (e) abuse of the powers conferred by this Ordinance,
+ on the part of the Chairman or on the part of any Urban Council
+ or any of the members thereof, the Minister may, as the
+ circumstances of each case may require, by Order published in
+ the Gazette
+ (i) remove the Chairman from office; or
+ (ii) remove all or any of the members of the Council from
+ office, and the provisions of section 12 (3) shall thereupon
+ apply; or
+ (iii) dissolve the Council;
+ and such Order shall as soon as may be convenient be laid
+ before Parliament.
+ (1A) The Minister shall before making an Order under subsection
+ (1), appoint for the purpose of satisfying himself in regard to any
+ of the matters referred to in subsection (1), a retired judicial
+ officer to inquire into and report upon such matter within a
+ period of three months, and such officer shall in
+
+
+relation to such inquiry have the powers of a commission of
+inquiry appointed under the Commissions of Inquiry Act.
+(1B)
+ (a) When the Minister appoints a retired judicial officer
+ under subsection (IA) to inquire into any matter, the Minister
+ may as the circumstances of each case may require by
+ Order published in the Gazette
+ (i) suspend the Chairman from office and direct the
+ Vice-Chairman or, where the office of Vice-Chairman
+ is vacant, or where the Vice-Chairman has been
+ suspended, the Assistant Commissioner of Local
+ Government of the region to exercise the powers and
+ perform the duties of the Chairman; or
+ (ii) suspend any member from office; or
+ (iii) suspend the Council and direct the Assistant
+ Commissioner of Local Government of the region to
+ exercise the powers and perform the duties of the
+ Council and its Chairman.
+ (b) Upon the receipt of the report of the person appointed
+ under subsection (IA) the Minister may make an Order
+ under subsection (1) or revoke the Order made under
+ paragraph (a) of this subsection.
+(2) Every Order made under subsection (I) shall contain such
+directions and such supplemental, consequential and incidental
+provisions as may be necessary for the purpose of giving effect
+to the Order, and shall, on publication in the Gazette, have the
+force of law.
+(3) Where the Minister removes the Chairman of an Urban
+Council from office by Order under subsection (1) the
+Chairman shall be deemed to vacate forthwith the office of
+member of the Council as well as the office of Chairman and
+the provisions of the Local Authorities Elections Ordinance (Cap.
+262) shall thereupon apply with regard to the filling of such
+vacancy.
+(4) Where the Minister removes any member of an Urban
+Council from office by Order under subsection (1) and a new
+member in pursuance of such Order is elected in place of the
+member so removed, the new member shall go out of office on
+
+
+the date on which the original member would have gone out of
+office if he had not been removed from office by the Minister.
+(4A)
+ (a) Where an Order is made by the Minister under
+ subsection (1) removing a person from the office of
+ Chairman or member of the Council, the Minister may by
+ a subsequent Order published in the Gazette revoke the first-
+ mentioned Order, and the publication of such subsequent
+ Order in the Gazette shall have the following effect, and the
+ following effect only, namely that such person shall,
+ notwithstanding the provisions of subsection
+ (3) of section 9 of the Local Authorities Elections
+ Ordinance, cease, with effect from the date of such
+ publication, to be subject to the disqualification set out in the
+ aforesaid subsection (3).
+ (b) Where the provisions of paragraph (a) are in conflict or
+ inconsistent with any other provisions of this Ordinance or
+ of the Local Authorities Elections Ordinance, the
+ provisions of paragraph (a) shall prevail.
+(5) Where the Minister dissolves an Urban Council by Order
+under subsection (1), he may by the same or any subsequent
+Order
+ (a) appoint for a stated period, or from time to time, a
+ Special Commissioner or Commissioners to administer the
+ affairs of the town for which the Urban Council was
+ constituted, and, for that purpose and subject to such
+ conditions or limitations as may be specified in the Order,
+ to exercise the powers and perform the duties of an Urban
+ Council under this Ordinance, and
+ (b) either give such directions as may be necessary for
+ constituting for that town a new Urban Council consisting of
+ a larger or a smaller number of members, as to him may
+ seem expedient, or
+ (c) reduce or enlarge or otherwise redefine the limits of the
+ town, and give such directions as may be necessary for
+ constituting an Urban Council for the redefined town.
+(5A) For the purposes of subsection (5) (a), ' the town for
+which the Urban Council was constituted ' shall be deemed to
+include any area added to the town by an Order made under
+
+
+section 14 after the appointment of the Special Commissioner
+or Commissioners.
+(6) Where the Minister appoints any Special Commissioner or
+Commissioners to administer the affairs of a town upon the
+dissolution of the Urban Council of that town, such Special
+Commissioner or Commissioners shall be deemed to be the
+successor or successors of the dissolved Council and all the
+property and the rights under contracts and all the powers
+vested in the Urban Council or its Chairman by this Ordinance
+or any other written law shall be deemed to be vested in such
+Special Commissioner or Commissioners, and all the liabilities
+and duties of the Urban Council or its Chairman under this
+Ordinance or any other written law shall be deemed to be
+transferred to and shall be discharged by such Special
+Commissioner or Commissioners, until the end of the period
+stated in the Order or until the Minister otherwise directs and
+the provisions of sections 236 to 244 shall, with the necessary
+modifications, apply in the case of the appointment of the Special
+Commissioner or Commissioners in the same manner as if
+every reference in those sections to an Urban Council were a
+reference to the Special Commissioner or Commissioners and as
+if every reference in those sections to a local authority or
+authorities were a reference to the dissolved Urban Council.
+(7) At any time after the appointment of a Special
+Commissioner or Commissioners to administer the affairs of a
+town upon the dissolution of the Urban Council for that town,
+the Minister may, by Order published in the Gazette,
+ (a) give such directions as may be necessary for
+ constituting for that town a new Urban Council consisting of
+ the same number of members as the dissolved Urban
+ Council or of a larger or a smaller number of members, as
+ to him may seem expedient, or
+ (b) reduce or enlarge or otherwise redefine the limits of the
+ town, and give such directions as may be necessary for
+ constituting an Urban Council for the redefined town.
+(8) Where upon the termination of the administration of the
+affairs of a town by a Special Commissioner or Commissioners, a
+new Urban Council is constituted for that town, the new Council
+shall be the successor of the Special Commissioner or
+
+
+ Commissioners, as the case may be, and the provisions of
+ sections 236 to 244 shall, with the necessary modifications,
+ apply to the case of the constitution of the new Council in the
+ same manner as if all references to any local authority or
+ authorities in those sections were references to the Special
+ Commissioner or Commissioners.
+
+
+Secretary to 184A. Where an Urban Council is unable to discharge its functions by
+exercise powers of reason of the Chairman and Vice-chairman ceasing to hold office, the
+council, Chairman Secretary shall, during any period that elapses between the
+and vice chairman occurrence of the vacancies in respect of those offices and the
+in certain cases. filling of those vacancies in accordance with the provisions of the
+[14, 48 of 1983] Local Authorities Elections Ordinance, have, exercise, perform
+ and discharge all the rights, privileges, powers, duties and
+ functions vested in, or conferred or imposed on, the Council, the
+ Chairman or vice-chairman by this Ordinance or by any other written
+ law.
+
+
+Inquiries. 185. (1) The Minister may, from time to time, cause to be made all
+ such inquiries as may appear to be necessary in relation to any
+ matters concerning public health in any town or any
+ matters with respect to which his sanction, approval, or
+ consent is required under this Ordinance.
+ (2) For the purpose of any inquiry under this section, the person
+ appointed by the Minister and holding the inquiry shall have,
+ in relation to witnesses and their examination and production
+ of papers and accounts, the same powers as those accorded to
+ commissions under the Commissions of Inquiry Act, and all
+ such powers of inspection of places and matters required to be
+ inspected as may be necessary for the purpose of the inquiry.
+
+
+Cost of inquiries 186. The Minister may make orders as to the costs of inquiries or
+and proceedings. proceedings instituted by, or of appeals or references to, the Minister
+ under this Ordinance, and as to the parties by whom or the funds out of
+ which such costs shall be borne, and every such order may be
+ registered in the District Court, and may be enforced in the same
+ manner as a judgment of the court on the application of any person
+ named in that behalf in the order.
+
+
+Power to make 187. (1) If at any time it appears to the Minister that any Urban
+inquiry as to Council is omitting to fulfill any duty or to carry out any
+ work
+
+
+default in duty by imposed upon the Council by this Ordinance or any other
+urban Councils. enactment, or that the Council has otherwise made default in
+ the discharge of any of its duties or responsibilities under this
+ Ordinance or any other enactment, the Minister may give notice
+ to the Council that unless within a time specified in the notice
+ the Council show cause to the contrary, the Minister will
+ appoint a person or persons to inquire into and report upon the
+ facts of the case to the Minister and to make recommendations
+ as to the measures that should be taken for the purpose of
+ fulfilling such duty or carrying out such work or making good
+ such default.
+ (2) Where any cause or sufficient cause is not shown by any
+ Council to which notice is given under subsection (1), the
+ Minister shall appoint a person or persons to hold the inquiry
+ referred to in the notice. Such inquiry shall be held as far as
+ practicable in public.
+
+
+Power to give and 188. (1) On the receipt of the report of the person or persons
+enforce order appointed to hold an inquiry under section 187, the
+requiring council Minister shall determine what measures shall be taken for the
+to do necessary purpose of fulfilling any duty or carrying out any work in
+work. respect of which the Urban Council may have made default,
+ and make an order requiring the Council within a time
+ specified in the order to take such measures accordingly,
+ and to raise the funds necessary for the purpose by some
+ one or more of the rates or taxes provided for by this
+ Ordinance, or by means of a loan on the security of any such
+ rate or tax.
+ (2) If the Council fails to comply with the order made under
+ subsection (1) within the specified time, the Minister may
+ appoint some person to take the measures specified in the
+ order, and may fix the remuneration to be paid to such
+ person, and may direct that such remuneration and the cost of
+ the measures taken in accordance with the order of the
+ Minister shall be defrayed out of the local fund, and that, if
+ necessary, any one or more of the rates or taxes provided for
+ by this Ordinance shall be imposed, or increased, and levied.
+ (3) Any person appointed under subsection (2) shall have the
+ same power of levying or imposing any such rate or tax and
+ requiring all officers of the Council to pay over any moneys in
+ their hands as the Council would have in the case of
+ expenses
+
+
+ legally payable out of the local fund, and such person, after
+ paying all sums of money due in respect of the order, shall pay
+ the surplus, if any, to or to the order of the Council.
+
+
+Power to direct 189. The Minister, in addition to levying, imposing or increasing any rate or
+loan to be raised. tax, or in lieu thereof, may direct a loan to be raised on the
+ security of any local rate or tax for the purpose of fulfilling any duty, or
+ carrying out any work, or making good any default under section 188.
+
+
+Power to certify 190. The Minister may, from time to time, certify the amount of the
+expenses. expenses that have been incurred, or an estimate of the expenses
+ about to be incurred, by any person appointed under section 188,
+ and the amount of any loan required to be raised for the purpose of
+ defraying the expenses that have been so incurred, or are estimated
+ as about to be incurred, and a certificate of the Minister shall be
+ conclusive as to all matters to which it relates.
+
+
+Power of Local 191. (1) Whenever the Minister under section 190 certifies a loan to be
+Loans n e c e s s a r y, t h e L o c a l L o a n s a n d D e v e l o p m e n t
+Commissioners to Commissioners may advance to the Commissioner or any
+advance loan. person appointed under section 188 the amount of the loan so
+ certified to be required on the security of any local rate or tax
+ without requiring any other security.
+ (2) The Commissioner or the person appointed under section 188
+ may, by any instrument duly executed, charge any local
+ rate or tax with the repayment of the principal and interest
+ due in respect of the loan referred to in subsection (1); and
+ every such charge shall have the same effect as if the Council
+ were empowered to raise such loan on the security of such
+ local rate or tax, and had duly executed an instrument
+ mortgaging such rate or tax.
+
+Recovery of (1) The principal moneys or interest for the time being due in
+principal and 192. respect of any loan raised for payment of any expenses
+interest from the incurred or to be incurred under this Part shall be taken to be
+Council. a debt due from the Council, and, in addition to any other
+ remedies, may be recovered in manner provided by the Local
+ Loans and Development Ordinance.
+ (2) The surplus of any loan, after payment of the expenses
+ referred to in subsection (1), shall, on the amount thereof
+ being
+
+
+ certified by the Minister, be paid into the local fund of the
+ Council.
+
+
+Power to make 193. (1) The Minister may make rules procedure not inconsistent with
+general rules of the provisions of this Ordinance, for the guidance of
+procedure. Urban Councils and of their officers on any matter connected
+[135, 24 of 1977] with the execution or enforcement of the provisions of this
+ Ordinance, or any other written law relating to the powers and
+ duties of Urban Councils.
+ (2) Without prejudice to the generality of his powers under
+ subsection (1), the Minister may under this section make rules
+ applicable to all Urban Councils or to one or more specified
+ Urban Councils for all or any of the following purposes:
+ (a) for prescribing the procedure to be followed in the
+ preparation of the annual budget and supplemental
+ budgets;
+ (b) for requiring the preparation of plans and estimates and
+ prescribing the details that should be shown in such plans
+ and estimates;
+ (c) for requiring the rendering of periodical returns by the
+ several Councils to the Minister and prescribing the form
+ and contents of such returns;
+ (d) for prescribing the form of the several books of
+ accounts to be kept by Urban Councils and the manner of
+ auditing such accounts;
+ (e) for prescribing the form of the returns and declarations to
+ be used under section 167 for the purposes of the imposition
+ and levy of any rate or tax;
+ (f) for prescribing the principles and procedure to be
+ followed in assessing the annual value of any immovable
+ property for the purposes of any rate;
+ (g) for prescribing in the case of officers and servants of
+ an Urban Council:
+ (i) the qualifications necessary for appointment to
+ each post or class or grade of posts;
+ (ii) the scales of the salaries to be attached to each
+ post or class or grade of posts;
+ (iii) the terms and conditions and the duration of any
+
+
+ leave of absence that may be granted;
+ (iv) the rates of the subsistence or travelling
+ allowances payable by way of reimbursement of
+ expenses incurred in the performance of any duty;
+ (gg) for prescribing the rates at which allowances are
+ payable to the Chairman, Vice-Chairman and members of
+ Urban Councils;
+ (h) for prescribing the rates of the travelling or other
+ allowances payable to members of Urban Councils by way
+ of reimbursement of expenses incurred in the performance
+ of any duty under this Ordinance;
+ (i) for prescribing the powers, duties and functions of the
+ Chairman in his capacity of chief executive officer of an
+ Urban Council;
+ (j) for prescribing the officers by whom and the manner in
+ which cheques or orders for payment may be signed and
+ issued on behalf of an Urban Council;
+ (k) for declaring any officer of an Urban Council to be an
+ executive officer for the purposes of section 229;
+ (l) for any other purpose connected with or incidental to
+ the purposes set out in the foregoing paragraphs of this
+ subsection.
+
+
+Approval of rules. 194. (1) Every rule made by the Minister under section 193 shall be
+ published in the Gazette and shall be brought before
+ Parliament, as soon as may be after such publication, by a
+ motion that such rule shall be approved. Notification of such
+ approval shall be published in the Gazette.
+ (2) Every rule made by the Minister shall, when approved by
+ Parliament, be as valid and effectual as if it were herein
+ enacted, and shall prevail over any by-law made by an Urban
+ Council in respect of the same matter or for the same purpose.
+
+
+Power to make 195. The Minister or the Commissioner may
+recommendations (a) bring to the notice of any Urban Council any measure
+as to policy. which, in the opinion of the Minister or the Commissioner,
+ ought to be taken within the town administered by the Council
+ in the interests of public health or safety; or
+ (b) bring to the notice of any Urban Council any general
+
+
+ question of administrative policy as to which it is desirable, in
+ the opinion of the Minister or the Commissioner, that the
+ Council should co-ordinate its policy with the policy generally
+ in force in Sri Lanka or in any part of Sri Lanka.
+
+
+Power to inspect 196. The Minister or the Commissioner, or any person generally or specially
+hooks, &c; of authorized in that behalf by the Minister or the Commissioner may
+Urban Councils. (a) inspect any public building, immovable property or
+ institution used, occupied, or carried on, by or under the control
+ of an Urban Council, or any work in progress under the
+ direction of an Urban Council;
+ (b) call for and inspect any book or document in the possession or
+ under the control of an Urban Council;
+ (c) require any Urban Council to furnish such statements,
+ accounts, reports, or copies of documents relating to the
+ proceedings or duties of the Council, or any committee of the
+ Council.
+
+
+Power of 197. The Commissioner or any officer of Government authorized in that
+Commissioner and behalf shall, within the town administered by any Urban Council, have
+authorized officers. the same powers of entry and inspection, and all other powers and
+ authorities required for the due exercise and discharge of their
+ respective functions as the officers of the Urban Council;
+ Provided that the Commissioner or the authorized officer of
+ Government in the exercise of his powers under this section shall act in
+ consultation with the Chairman of the Urban Council;
+ Provided, further, that it shall be the duty of the officers of the Urban
+ Council to afford to the Commissioner or the authorized officer of
+ Government all such reasonable assistance as he may require for the
+ exercise of his powers under this section.
+
+
+Annual report of 198. The Commissioner shall prepare and transmit to the Chairman of
+commissioner on each Urban Council a report containing a general survey of the
+affairs of each affairs of the Council in each year, and the Chairman shall cause
+urban Council. such report to be tabled for the information of the members of the
+ Council at the next meeting of the Council held after the receipt of
+ such report.
+
+
+Annual budgets to 199. The annual budget of every Urban Council and every variation of
+
+
+Commissioner. such budget shall be communicated to the Commissioner, and every
+ Urban Council shall furnish to the Commissioner all such reports,
+ particulars, or explanations with regard to any such budget as the
+ Commissioner may require.
+
+
+Power to exercise 200. Where, in the opinion of the Minister, the financial position of any
+control over budget Urban Council is such as to make the control of the Minister over its
+of Urban Council. budget desirable, the Minister may direct that in the case of such
+ Council the annual budget and any variation thereof shall be subject
+ to the sanction of the Minister; and in any such case it shall be the duty
+ of the Council to conform to any directions of the Minister with respect
+ to such budget or variation thereof.
+
+
+Annual report. 201. It shall be the duty of the Commissioner to prepare and publish
+ annually an administration report and a review of the work and
+ expenditure of the Urban Councils in Sri Lanka.
+ Every such report and review shall be laid before Parliament, and
+ may be published in such manner as the Commissioner may determine.
+
+
+Determination of 202. If any question arises between two or more Urban Councils, or
+disputes. between any Urban Council or Councils, and any other local authority,
+ with reference to the rights, powers, duties, or obligations of any such
+ Urban Council or authority, or as to any question arising out of the
+ exercise or intended exercise or enforcement of any such right, power,
+ duty or obligation, such dispute may, if all parties consent, or if all
+ parties do not consent, on the application of any party to the
+ Minister, be referred by the Minister to the Commissioner, and any
+ order made by the Commissioner with reference to such dispute shall
+ be deemed to be a final settlement of all matters in issue.
+
+
+Power to extend 203. The Minister may on the application of any Urban Council or of any
+time, &c. person affected, and after making such inquiries as he may think
+ necessary, extend the time or postpone the date fixed for any act or
+ proceeding (not being a judicial proceeding) under this Ordinance,
+ or any by-law, rule, or regulation made thereunder, and may make such
+ consequential order as may be necessary to give effect to such
+ extension.
+
+
+Delegation of 204.
+
+
+ The Minister may, by Order published in the Gazette transfer to the
+powers to Commissioner any power vested in the Minister by or under any
+Commissioner. enactment other than this Ordinance in respect of any matter within the
+ competence of any Urban Council, or may direct that any such power
+ shall be exercised by an Urban Council after consultation with the
+ Minister and all enactments with reference to such powers shall be
+ construed accordingly:
+ Provided that every Order made under this section shall be subject to
+ confirmation by Parliament.
+
+
+ PART IX
+ GENERAL RECOVERY OF CHARGES AND EXPENSES
+
+Power of Urban 205. Whenever under the provisions of this Ordinance or any other
+Council on default enactment, or any by-law, rule, or regulation made thereunder, an
+made by owner or Urban Council requires any work to be executed by the owner or
+occupier to execute occupier of any house, building, or land, and default is made in the
+works and recover execution of such work, the Urban Council, whether or not any penalty
+expenses. is provided for such default, may cause such work to be executed, and
+ the expenses therein incurred by the Council shall be paid by the
+ person by whom such work ought to have been executed, and shall
+ be recoverable as provided by this Part.
+
+
+Power to levy 206. (1) If the person making any default referred to in section 205
+charges on is the owner of the house, building, or land, the whether or
+occupier, who same not an action or proceeding has Council may, by way of
+from his rent. additional remedy, been brought or taken against such owner,
+ require the payment of all or any part of the expenses payable
+ by the owner for the time being, from the person who then or
+ at any time thereafter occupies the house, building, or land
+ under such owner.
+ (2) The whole or any part of any expenses referred to in
+ subsection (I) shall, in default of payment by the occupier on
+ demand, be levied by distress of the goods and chattels of
+ such occupier.
+ (3) Where any sum in respect of expenses incurred by the
+ Council is paid by or recovered from the occupier under
+ subsection (1) or subsection (2), the occupier shall be
+ entitled to deduct such sum from the rent payable by him to
+ the owner and to retain possession of the house, building,
+ or land until such sum is fully reimbursed to him.
+
+
+Occupiers not to be 207. (1) No occupier of any house, building, or land shall be liable
+liable to more than to pay more money in respect of any expenses charged by this
+the amount of rent Ordinance or any other enactment, or any by-law, rule, or
+due. regulation made thereunder, on the owner thereof than the
+ amount of rent due from him for the premises in respect
+ of which such expenses are payable at the time of the
+ demand made upon him, or which at any time after such
+ demand and notice not to pay the same to his landlord has
+ accrued and become payable by him, unless he neglect or
+ refuse, upon application made to him for that purpose by
+ the Council, truly to disclose the amount of his rent and the
+ address of the person to whom such rent is payable.
+ (2) The burden of proof that the sum demanded of any occupier is
+ greater than the rent which was due by him at the time of
+ such demand, or which has since accrued, shall be upon such
+ occupier.
+ (3) Nothing herein contained shall be taken to affect any special
+ contract made between any owner and occupier respecting the
+ payment of the expense of any such works as aforesaid.
+
+
+Occupier in default 208. (1) Whenever default is made by the owner of any house,
+of owner may building, or land in the execution of any work required to be
+excuse works and executed by him, the occupier of such expenses from house,
+deduct expenses building, or land may, with the approval of the Council, cause
+from rent. such work to be executed, and the expenses thereof shall
+ be paid to him by the owner, or the amount may be
+ deducted out of the rent, from time to time, becoming due
+ from him to such owner.
+ (2) The owner of any house, building, or land shall not be
+ entitled to eject the occupier thereof until any expenses
+ incurred by the occupier under subsection (I) shall have been
+ fully paid or deducted as provided by that subsection.
+
+
+Obstruction by 209. If the occupier of any house, building, or land prevents the owner
+occupiers. thereof from carrying into effect, in respect of such house, building,
+[30, 48 of 1984] or land, any of the provisions of this Ordinance or of any by-law, or
+ regulation made thereunder, after notice of his intention so to do has
+ been given by the owner to such occupier, the Council, upon proof
+ thereof and upon application of the owner, may make an order in
+ writing requiring such occupier to permit the owner to execute all
+
+
+ such works with respect to such house, building, or land as may be
+ necessary for carrying into effect the provisions of this Ordinance, or
+ of any by-law or regulation made thereunder, and may also, if it
+ thinks fit, order the occupier to pay to the owner the costs relating to
+ such application or order, and, if, after the expiration of eight days
+ from the date of the order, such occupier continues to refuse to
+ permit such owner to execute such works, such occupier shall be guilty
+ of an offence punishable with a fine not exceeding five hundred
+ rupees for every day during which he so continues to refuse, and
+ every such owner, during the continuance of such refusal, shall be
+ discharged from any penalties to which he might otherwise have
+ become liable by reason of his default in executing such works.
+
+
+Payment of 209A. (1) An Urban Council shall appoint a committee consisting of
+incentives. not less than six Councilors for the purpose of preparing a
+[19, 61 of 1981] scheme as regards the maintenance of residential premises
+ and for making recommendations for the payment of an
+ incentive to occupiers of such premises who qualify for such
+ payment.
+ (2) The committee in preparing a scheme under subsection (1)
+ and in making any recommendation for payment of an
+ incentive to an occupier of any residential premises shall
+ take into consideration
+ (a) that the residential premises are well maintained and in
+ good repair and in a clean and sanitary condition ; and
+ (b) that the street, including the pavement, and all surface
+ drains as fronts, adjoins or abuts such premises are clean
+ and kept free of any waste material.
+ (3) The committee may enter and inspect any residential
+ premises with the consent of the occupier and ascertain any
+ information from the occupier of such premises at all
+ reasonable hours of the day for the purpose of making their
+ recommendations.
+
+
+Remedy if neither 210. If neither the owner nor the occupier of any house, building, or land,
+the owner nor pays the expenses incurred by the Council, the amount of the
+occupier pays expenses shall be a charge upon the house, building, or land in
+expenses. respect of which the expenses were incurred, and payable as a debt due
+ to the Council.
+
+
+Determination of 211. (1) Except as herein otherwise provided, in all cases where
+recovery of damages, costs, or expenses are payable under the provisions
+damages costs, &c. of this Ordinance or any other enactment, or of any by-
+ law, rule, or regulation made thereunder, the amount, in case
+ of dispute, and, if necessary, the apportionment of the same
+ shall be ascertained and determined in manner following:
+ (a) where the amount claimed does not exceed one hundred
+ rupees, by a Magistrate after a summary inquiry into the
+ claim;
+ (b) where the amount claimed exceeds one hundred rupees
+ and does not exceed one thousand five hundred rupees, by
+ the Primary Court having local jurisdiction;
+ (c) where the amount claimed exceeds one thousand five
+ hundred rupees, by the District Judge having local
+ jurisdiction.
+ (2) In the cases referred to in paragraphs (b) and (c) of
+ subsection (1), the claim shall be made by instituting a civil
+ action therefor. Such action shall be heard and determined
+ according to the procedure prescribed by the law for the time
+ being in force regulating the hearing and determination of
+ actions brought in Primary Courts and District Courts
+ respectively.
+ (3) Any person aggrieved by a decision of a Magistrate under
+ paragraph (a) of subsection (1) may appeal therefrom to the
+ Court of Appeal in accordance with the provisions of
+ section 320 of the Code of Criminal Procedure Act.
+ (4) Any person aggrieved by a decision under paragraphs (b)
+ and (c) of subsection (1) may appeal therefrom to the Court of
+ Appeal. Such appeals shall be subject to the provisions
+ contained in the Primary Courts' Procedure Act and in the
+ Civil Procedure Code respectively, relating to appeals to the
+ Court of Appeal.
+
+
+Recovery of 212. If the amount of damages, costs, or expenses determined by the
+damages, &c;. Magistrate under section 211 is not paid by the person liable to pay
+ the same within seven days after demand, the default may be
+ reported to such Magistrate, and the amount thereof shall be
+ recovered in the same manner as if it were a fine imposed by such
+
+
+ Magistrate.
+
+
+Recovery of 213. Where an Urban Council incurs any expenses in executing any of
+expenses on the works or performing any of the acts which under this Ordinance
+account of or any other enactment, or any by-law, rule, or regulation made
+improvement to thereunder, the owner of any house, building, or land is required to
+private property. execute or perform, the Council may either recover the amount of such
+ expenses in the manner provided by section 211, or if it thinks fit,
+ may accept any undertaking given by the owner for the payment by
+ instalments of such sums as will be sufficient to defray the whole
+ amount of the expenses, with interest thereon at the rate of nine per
+ centum per annum, within a period not exceeding five years, and
+ such sums when due may be recovered by the same process by
+ which rates payable under this Ordinance may be recovered.
+
+
+ PAYMENT OF COMPENSATION
+
+Council may make 214. An Urban Council may make compensation out of the local fund to
+compensation out all persons sustaining any damage by reason of the exercise of any
+of local fund. of the powers vested in the Council, its officers, or servants under
+ and by virtue of this Ordinance or any by-law made thereunder.
+
+
+Determination and 215. Except as herein otherwise provided, in all cases where
+payment of compensation is by this Ordinance, or by any by-law made thereunder,
+compensation. directed to be paid, the amount and, if necessary, the apportionment of
+ such compensation in case of dispute, shall be determined in the same
+ manner as a claim for damages, costs or expenses under section 211,
+ and all the provisions of that section shall, with the necessary
+ modifications, apply to the determination of all questions under this
+ section.
+
+
+ PROCEDURE AND LEGAL PROCEEDINGS
+
+Service of nobles. 216. (1) Any notice, order or other document required or authorized
+ to be served under this Ordinance, or any by-law made
+ thereunder, may be served by delivering the document to or
+ at the residence of the person to whom it is addressed, or
+ when addressed to the owner or occupier of any premises, by
+ delivering the document or a true copy thereof to some
+ person on the premises, or if there is no person on the
+ premises who can be so served, by affixing the document
+ on some conspicuous part of the premises:
+
+
+ Provided always that where an Urban Council has made
+ provision for the registration of owners of property and
+ any owner of property has registered his name and address
+ in accordance therewith, every such notice, order or
+ document shall be served upon him by registered letter at
+ such address.
+ (2) Any notice, order or other document may also be served by
+ post by registered letter, and if so served, shall be deemed to have
+ been served at the time when the letter containing the same
+ would be delivered in the ordinary course of post, and in proving
+ such service, it shall be sufficient to prove that the notice, order
+ or other document was properly addressed and put into the post.
+ (3) Any notice, order or other document required by this
+ Ordinance to be given to the owner or occupier of any premises
+ may be addressed by the description of the 'owner' or 'occupier' of
+ the premises (naming them) in respect of which the notice is
+ given, without further name or description.
+
+
+Notices may be 217. All notices which an Urban Council or any officer thereof is
+given or received empowered or required to give or receive, and all notices for the giving
+by secretary or any or receipt of which by the Council occasion may otherwise arise, be
+other officer given or received by the secretary of the Council or any other of its
+authorized officers authorized by by-law for the purpose.
+thereunto.
+
+
+Offences to be tried218. Every offence under this Ordinance shall be triable summarily by
+by Magistrate. the Magistrate having local jurisdiction, and any penalty prescribed
+ by this Ordinance may be imposed by such Magistrate notwithstanding
+ that such penalty may exceed the limits placed on his jurisdiction
+ by any other written law.
+
+
+Limitation of 219. No person shall be liable to any fine penalty under this Ordinance, or
+prosecutions. any by-law made thereunder, for any offence triable by a Magistrate,
+[31, 48 of 1984] unless the complaint respecting such offence shall have been made
+ within six months next after the commission of such offence.
+
+
+No action to be 220. (1) No action shall be instituted against any Urban Council or any
+instituted against member or any officer of the Council or any person acting
+Council until after under the direction of the Council for anything done or
+one month's notice, intended to be done under cause of action the powers
+ conferred
+
+
+nor after six cause by this Ordinance, or any by-law made thereunder, until the
+of action. expiration of one month next after notice in writing shall have
+ been given to the Council or to the defendant, stating with
+ reasonable certainty the and the name and the place of abode of
+ the intended plaintiff and of his attorney-at-law or agent, if any, in
+ such action.
+ (2) Every action referred to in subsection (1) shall be
+ commenced within six months next after the accrual of
+ the cause of action and not afterwards.
+ (3) If any person to whom notice of action is given under
+ subsection (1) shall before action is brought tender sufficient
+ amends to the plaintiff, such plaintiff shall not recover in any
+ such action when brought, and the defendant shall be entitled
+ to be paid his costs by the plaintiff.
+ (4) If no tender of amends is made under subsection (3), it shall
+ be lawful for the defendant by leave of the court before which
+ such action is pending, at any time before issue is joined, to
+ pay into court such sum of money as he may think fit, and
+ thereupon such proceedings shall be had as in other cases
+ where defendants are allowed to pay money into court.
+ (5) Upon the trial of any action referred to in subsection (1), the
+ plaintiff shall not be permitted to prove any cause of
+ action other than the cause of action stated in the notice given
+ by him under that subsection; and unless such notice be
+ proved, the court shall find for the defendant.
+
+
+Protection of 221. (1) No matter or thing done and no contract entered into by any
+council and Its Urban Council, and no matter or thing done under the
+officers. direction of any Urban Council by any member or officer
+ of such Council or by any other person whomsoever, shall, if
+ the matter or thing so done or the contract so entered into was
+ done or entered into bona fide for the purposes of this
+ Ordinance or any other enactment relating to the powers and
+ duties of an Urban Council, or any bylaw, or rule made
+ thereunder, subject any member of the Council or any such
+ officer or other person, in his private capacity, to any action,
+ liability, claim, or demand whatsoever; and any expenses
+ incurred by any such Council, or by any member, officer, or
+ other person acting as aforesaid, shall be borne and repaid
+ out of the local fund.
+ (2) Subject and without prejudice to any other powers, an
+
+
+ Urban Council in any case where the defendant in any action,
+ prosecution or other proceeding is a member of the Council, or its
+ officer, agent, or servant, may, if it thinks fit, except so far as the
+ court before which the action, prosecution, or other proceeding is
+ heard and determined otherwise directs, pay out of the local
+ fund all or any part of any sums payable by the defendant in or in
+ consequence of the action, prosecution, or proceeding, whether m
+ respect of costs, charges, expenses, damages, fines, or otherwise;
+ Provided that nothing in this section shall exempt any member
+ of any Urban Council from liability to be surcharged with the
+ amount of any payment which may be disallowed upon the
+ audit of the accounts of such Council, and which such member
+ authorized or joined in authorizing.
+
+
+Relief against 222. If the directions of this Ordinance, or of any by-law made
+formalities. thereunder, are in substance and effect complied with, no
+ proceedings under this Ordinance, or under such by-law shall be
+ quashed or set aside for want of form in any Court of Justice.
+
+
+ POWERS AND RESPONSIBILITIES OF
+ OFFICERS
+
+Delegation of 223. All duties and powers which the Chairman of an Urban Council is
+powers of empowered to perform and exercise by this Ordinance or by any
+Chairman to other enactment, or any by-law, rule or regulation made thereunder,
+officers of Council. may be performed and exercised by any officer of the Council
+ generally or specially authorised thereto in writing by the Chairman,
+ subject to the directions and control of the Chairman, for such period
+ and to such extent, if any, as may be specified in such written authority.
+
+
+Power of Council 224. An Urban Council may, by resolution, grant a general authority to
+to grant general any officer of the Council to do, give, or receive, as may be
+authorities to its necessary, from time to time, subject to the general control of the
+officers. Chairman, all acts, receipts, and approvals which the Council is
+ empowered to do, give, or receive by this Ordinance or any other
+ enactment, or by any by-law, rule, or regulation made thereunder,
+ and all acts, receipts, and approvals done or given or received by
+ such officer, so long as such resolution remains in force, shall be as
+ binding and valid, as if such acts, receipts, and approvals were done
+
+
+ or given by the Council.
+
+
+Punishment for 225. Whoever shall willfully obstruct any officer of an Urban Council in the
+obstructing officers performance of any duty or in the exercise of any authority vested
+of Council. in or conferred upon him under or by virtue of any of the provisions of
+[32, 48 of 1984] this Ordinance or any other enactment, or any by-law, rule, or
+ regulation made thereunder, shall be guilty of an offence, and
+ liable, upon conviction after summary trial before a Magistrate, to a
+ fine not exceeding five hundred rupees, or to imprisonment of either
+ description for any term not exceeding six months.
+
+
+Penalty for misuse 226. Any officer of an Urban Council who, under pretence of performing
+of power by any act under the authority of this Ordinance or any by-law or rule
+officers of Council. made thereunder, uses any unnecessary violence or causes any
+[33, 48 of 1984] vexation or annoyance to any person, shall be guilty of an offence,
+ and liable on conviction thereof after summary trial before a
+ Magistrate to a fine not exceeding five hundred rupees.
+
+
+Officers and 227. (1) No member, officer, or servant of any Urban Council shall,
+servants of Council whether directly or indirectly, be concerned or have any
+not to be interested financial interest in any contract or work made with or
+in contracts. executed for the Council.
+[34, 48 of 1984] (2) If any member, officer, or servant of an Urban Council is
+ concerned or has any financial interest in any contract or work
+ made with or executed for the Council, he shall be guilty of an
+ offence punishable with a fine not exceeding five thousand
+ rupees, and shall, as the case may be, be disqualified from
+ sitting as a member of the Council or from holding any
+ office or employment under the Council:
+ Provided, however, that no person being a shareholder of any
+ incorporated company shall be liable to such fine by reason
+ only of any contract between such company and the Council or of
+ any work executed by such company for the Council.
+
+
+Officers and 228. Every officer or servant of an Urban Council who is paid out of the
+servants of Urban local fund, and every contractor or agent to whom the collection of any
+Council to be tax or of any payment on account of any land or building of an Urban
+public servants. Council is entrusted by or under the authority of an Urban Council, and
+ every servant or other person employed by such contractor or agent
+ for the collection of such tax or payment, shall be deemed to be a
+ public servant within the meaning of that term as
+
+
+ used in the Penal Code.
+
+
+Repealed by 229.
+[35, 48 of 1984]
+
+ PART X
+ REPEAL, APPLICATION OF EXISTING LAWS,
+ TRANSITIONAL ARRANGEMENTS, . AND
+ MISCELLANEOUS PROVISIONS
+Repeal. 230. For the purposes of any town for which an Urban Council is
+ constituted under this Ordinance, and no further, the enactments
+ enumerated in the Sixth Schedule shall be repealed as from the date
+ on which such Council is declared to be constituted by Order of the
+ Minister under section 9 of this Ordinance:
+ Provided that nothing in this section contained shall be deemed to
+ affect or in any way derogate from such of the rights, powers, and
+ duties of the Minister as are not otherwise expressly provided for in
+ this Ordinance, in respect of principal thoroughfares or any portions
+ thereof situated within any town for which any Urban Council is
+ constituted.
+
+
+Construction and 231. Every provision of law applicable on the day immediately preceding
+application laws. the date on which this Ordinance comes into operation to an Urban
+ District Council constituted under any repealed enactment or to an area
+ within the administrative limits of such Urban District Council shall,
+ for the purposes of the application of such provision to an Urban
+ Council constituted under this Ordinance or to the town for which any
+ such Urban Council is constituted, be read and construed as if every
+ reference contained in such provision to an Urban District Council
+ or to the area within the administrative limits of an Urban District
+ Council were a reference to an Urban Council or to the town for
+ which an Urban Council is constituted under this Ordinance.
+
+
+No further roads to 232. After the commencement of this Ordinance no further roads within
+
+be constructed any town for which an Urban Council is constituted under this
+under Branch Ordinance shall be constructed under the provisions of the Branch
+Roads Ordinance Roads Ordinance, 1896, or the Estate Roads Ordinance, nor shall
+or Estate Roads any action be taken under section 42 of the Branch Roads
+Ordinance. Ordinance, 1896, or under section 37 of the Estate Roads Ordinance,
+
+
+ or in order to extend the respective Ordinances to any road or bridge
+ within such town.
+
+
+Adaptation of 233. Pending the vesting in an Urban Council of any branch or estate
+Branch Roads road situated within any town for which the Estate Roads Council is
+Ordinance and constituted, the provisions of the Branch Roads Ordinance, 1896,
+Estate Roads and of the, shall continue to apply to such branch or estate road, with
+Ordinance. the following modifications, that is to say:
+ (a) all references to the Provincial Road Committee shall be
+ construed as references to the Urban Council;
+ (b) all references to a province shall be construed as references
+ to the town;
+ (c) in any case in which any district defined under either of the
+ said Ordinances falls within two or more towns for which
+ Urban Councils have been constituted, the Minister may, by
+ Notification published in the Gazette, declare which of such
+ Councils shall have administrative control over such district,
+ and all references to the Provincial Road Committee and to the
+ province in connection with such district shall be construed
+ accordingly.
+
+
+On imposition of 234. From and after the date on which any new rate or tax imposed by an
+new taxation, Urban Council under this Ordinance and affecting the estates
+contributions under comprised in any district defined under the Branch Roads
+Estate and Branch Ordinance, 1896, or the Estate Roads Ordinance, becomes payable
+Roads Ordinances in respect of such estates, no contributions (other than contributions
+to cease. already due) shall be payable in respect of any of such estates under
+ either of those Ordinances, but all branch or estate roads in such
+ district which are not declared principal thoroughfares under the
+ Thoroughfares Ordinance, shall be vested in and shall be
+ maintainable and repairable by the Urban Council.
+
+
+Consequences of 235. On and after the date on which any new rate or tax imposed by the
+imposition of new Urban Council of a town under this Ordinance becomes payable by the
+tax in areas under inhabitants of any part of the town which is a divisional Assistant
+operation of Government Agent's division or part thereof within the operation of the
+Village Councils Village Councils Ordinance, the Village Councils constituted for any
+Ordinance. area which includes that part of the town shall not levy a tax, or
+ appropriate or apply any part of the funds at its disposal, for the
+ purposes of the construction or maintenance of roads in that part of
+
+
+ the town.
+
+
+Urban Councils to 236. (1) In any case where a town for which an Urban Council is
+be local authorities. constituted under this Ordinance comprises the whole or
+ any part of the administrative area under the control of any
+ local authority established under any repealed enactment, the
+ Urban Council shall be the successor of such local authority
+ for all purposes relating to such administrative area or part
+ thereof from the date of the constitution of the Council.
+ (2) With effect from the date on which an Urban Council is
+ constituted for any town referred to in subsection (1),
+ there shall be deemed to be transferred to that Council
+ (a) all such property, other than the funds, of the local
+ authority referred to in that subsection, as may be situated
+ within the town;
+ (b) the whole of the funds of that local authority, or in any
+ case where the town comprises a part only of the
+ administrative area of that authority, such part of the funds
+ aforesaid as the Minister may determine; and
+ (c) all the rights, powers, duties, debts, liabilities and
+ obligations of that authority, in so far as they relate to any
+ area within the town.
+ (3) Except in so far as provision is otherwise made by this
+ Ordinance, all references in any enactment, or in any
+ order, rule, regulation, or by-law made thereunder, or in any
+ document or instrument executed or issued in pursuance
+ thereof, to any class of local authorities, or to any particular
+ local authority, shall be construed as though they were
+ references to the Urban Councils constituted under this
+ Ordinance, or in the case of a reference to any particular local
+ authority, to the Urban Council which is the successor to
+ such local authority for the purposes of the matter in
+ question as from the date of the constitution of any such
+ Councils or Council.
+ (4) For the purposes of this section and the succeeding sections,
+ the expression 'local authority' means any Municipal Council,
+ Town Council or Village Council.
+Ordinance Saving
+for existing 237. (1) Nothing in this Ordinance shall prejudicially affect any
+securities and loans raised by a local authority on the security of any rate
+ or tax or of any property by this transferred to any Urban
+ Council;
+
+
+discharge of debts. and all debts so secured, as well as all unsecured debts,
+ liabilities, and obligations incurred by any local authority in the
+ exercise of any of the powers in relation to any property
+ transferred from such local authority to an Urban Council by or
+ under this Ordinance, shall be discharged, paid, and satisfied by
+ such Urban Council.
+ (2) It shall be the duty of every local authority whose powers,
+ duties, and liabilities are to be transferred to any Urban Council
+ by this Ordinance to liquidate so far as practicable, before the
+ date of such transfer, all current debts and liabilities incurred by
+ such local authority.
+
+
+Proclamations, 238. All such proclamations, orders, notifications, rules, regulations, and
+orders, rules, by-laws of or affecting any local authority whose powers and duties are
+notifications transferred under this Ordinance to any Urban Council, as are in force
+continued in force. at the time of the transfer, shall, so far as they relate to or are in
+ pursuance of the powers and duties transferred, or so far as they
+ relate to any matter or thing within any area comprised in the town
+ for which the Urban Council is constituted, and so far as they are not in
+ conflict with the provisions of this Ordinance, continue in force as if
+ they had been made with relation to or in the exercise of the
+ powers of the Urban Council under this Ordinance, subject,
+ nevertheless, to revocation or alteration by the Minister or by the
+ Urban Council, as the case may be, and subject also to any
+ exceptions or modifications which may in pursuance of this Ordinance
+ be made at the time of, or with reference to, the transfer.
+
+
+Saving for pending 239. (1) Any action or proceeding, or any cause of action or
+actions, contracts proceeding, pending contracts Ac or existing at the date of the
+&c. constitution of any Urban Council in the interest of or against
+ any local authority in relation to any powers, duties,
+ liabilities, or property by this Ordinance transferred to the
+ Urban Council, shall not be in anywise prejudicially affected
+ by reason of the constitution of such Urban Council, but may
+ be continued, prosecuted and enforced by or against such
+ Council as successor of the local authority in like manner as
+ it would have been continued, prosecuted and enforced by
+ the local authority as if such Council had not been
+ constituted.
+ (2) All contracts, deeds, bonds, agreements, notices, or other
+ instruments entered into, issued, or made by any local
+ authority
+
+
+ and subsisting at the time of the constitution of an Urban
+ Council for the administrative area of such local authority, and
+ affecting any such powers, duties, liabilities, obligations, or
+ property as are by this Ordinance transferred to the Urban
+ Council, shall be of as full force and effect against or in favour
+ of the Council, and may be enforced or acted upon as fully and
+ effectually as if the said Council had been a party to or had
+ made or issued such contracts, deeds, bonds, agreements,
+ notices or other instruments.
+
+
+Officers and 240. (1) The officers and servants of every local authority to which
+servants. any Urban Council constituted under this Ordinance is the
+ successor shall, subject to the provisions of this section,
+ upon the constitution of the Council, become officers and
+ servants of the Council, and shall hold their offices as nearly
+ as practicable by the same tenor and upon the same terms and
+ conditions as under the local authority, and while performing
+ the same or the corresponding duties shall as nearly as
+ practicable receive not less salary or remuneration or
+ allowances and be entitled to receive not less pensions and
+ gratuities, if any, than they would have been entitled to receive
+ from the local authority,
+ (2) The Urban Council may distribute the business to be
+ performed by any officers or servants referred to in
+ subsection
+ (1) in such manner as the Council may think just and every
+ such officer or servant shall perform such duties in relation to that
+ business as may be directed by the Council.
+
+
+Adjustment of 241. For the purpose of the adjustment of salaries, remuneration,
+salaries, &c;. allowances, pensions, gratuities, or duties of any officer or servant
+ referred to in section 240, with a view to meeting the new conditions
+ consequent upon any transfer of liabilities or obligations referred to
+ in section 239, an Urban Council may by resolution make such
+ provision as it may deem to be just and equitable in all the
+ circumstances of the case:
+ Provided that any officer or servant aggrieved by any such resolution
+ may appeal therefrom to the Commissioner and the Commissioner
+ on any such appeal may by order make any such provision as under
+ this section might have been made by the Urban Council.
+
+
+Power of 242. Any Urban Council deemed under section 246 to be constituted
+authorized Urban under this Ordinance, and authorized in that behalf by Order of the
+
+
+Council to apply Governor published in the Gazette, may by resolution declare
+retrospectively by- (a) that any by-law made by that Council for the provision of
+laws for the grant pensions or gratuities to the widows, children, next of kin or
+of pensions, &c; to dependants of deceased officers or servants shall be applicable
+dependants of retrospectively to the case of any deceased officer or servant,
+deceased officers where the Council is satisfied that such officer or servant died
+or servants. while in the service of the Council and on a date not earlier
+ than the 1st day of January, 1933 ; and
+ (b) that any pension granted in pursuance of such resolution to
+ the widow or children of any deceased officer or servant shall
+ be payable with effect from the date of the death of such officer
+ or servant.
+
+
+Abolition of 243. An Urban Council may, upon any transfer of liabilities or obligations
+offices. referred to in section 239, abolish any office which it may deem
+ unnecessary, subject to payment of such compensation to the holder
+ of the office at the time of the abolition, as he would have been entitled
+ to receive in the like circumstances if his office had been abolished by
+ the local authority under whom he was employed before the
+ constitution of the Urban Council.
+
+
+Rates and 244. (1) All such rates and taxes imposed by any local authority to
+assessments. which any Urban Council is the successor as may be due at
+ the date of the constitution of the Council, may be enforced
+ and recovered in the same manner as the rates and taxes
+ imposed by the Council.
+ (2) All assessments made or adopted by the local authority for the
+ purpose of any rate referred to in subsection (1) shall continue
+ in force until revised by the Urban Council in manner
+ provided by this Ordinance.
+
+Equitable (1) Where for the purpose of the constitution of any Urban
+adjustment of 245. Council or Councils under this Ordinance any subdivision is
+property, debts, made of the area comprised in the administrative limits of any
+&c, on transfer. local authority or authorities to which any such council or
+ Councils are to be the successor or successors, or any
+ variation is otherwise made in the respective boundaries of
+ the administrative limits of two or more such local authorities
+ assigned to any Urban Council or Councils, an equitable
+ adjustment shall be made of all matters relating to
+ the
+
+
+ respective property, rights, debts, liabilities, and obligations
+ transferred from any such local authority or authorities to any
+ such Urban Council, either by agreement between the Urban
+ Councils affected, or if such agreement shall not prove
+ practicable, by Order of the Minister.
+ (2) Every agreement between two or more Urban Councils, and
+ every Order made by the Minister under this section, shall be
+ published in the Gazette. Every Order made by the Minister shall,
+ upon such publication, take effect as though it had been embodied
+ in this Ordinance.
+
+
+Adjustment of 247. In connection with the preliminary arrangements necessary for
+questions not bringing this it Ordinance into operation, either generally or with
+provided for. reference to any special matter or matters, either throughout Ceylon
+ or in any specified place or area, the Minister, by Order published in
+ the Gazette, may issue all such directions as he may deem necessary
+ with a view to providing for any unforeseen or special
+ circumstances, or to determining or adjusting any question or matter,
+ for the determination or adjustment of which no provision or no
+ effective provision is made by this Ordinance.
+
+
+Power to exclude 248. The Minister, by Order published in the Gazette, may declare that
+application of any specified provision of this Ordinance shall not apply, either in
+specified whole or in part, within the administrative limits of any town for which
+provisions of an Urban Council is constituted under this Ordinance, or within any
+Ordinance within specified area comprised in such administrative limits.
+specified limits.
+
+
+Interpretation. 249. (1) In this Ordinance, unless the context otherwise requires
+[14, 21 of 2012]
+ 'administrative region' means an administrative region
+[136, 24 of 1977] defined by Order made under section 2 of the Local
+[3, 4 of 1969] Government (Administrative Regions) Ordinance;
+ 'annual value' means the annual rent which a tenant might
+ reasonably be expected, taking one year with another, to pay
+ for any house, building, land, or tenement if the tenant
+ undertook to pay all public rates and taxes, and if the
+ landlord undertook to bear the cost of insurance, repairs,
+ maintenance, and upkeep, if any, necessary to maintain the
+ house, building, land, or tenement in a state to command that
+ rent:
+
+
+Provided that in the computation and assessment of annual
+value, no allowance or reduction shall be made for any
+period of non-tenancy whatsoever;
+'appointed date' means the 1st day of January, 1940;
+'Assistant Commissioner' in relation to any town, means
+the Assistant Commissioner of Local Government for the
+administrative region within which the town is situated;
+'building' includes any house, garage, hut, shed, or roofed
+enclosure, whether used for the purpose of a human
+habitation or otherwise, and also any wall and in any context
+relating to a thoroughfare which is a canal or a river,
+includes any pier, landing-stage or bridge and any structure
+attached thereto or connected therewith;
+'canal' means any public canal, and includes the full extent
+of waterway from bank to bank, together with the sides,
+towing paths, embankments, drains, and ditches thereto
+belonging, and all land adjoining such canal which has
+been reserved for its protection or benefit;
+'Chairman and Vice-Chairman' means respectively a
+Chairman and Vice-Chairman of an Urban Council elected
+in accordance with the provisions of the Local Authorities
+Elections Ordinance (Cap. 262);
+'Commissioner' means the Commissioner of Local
+Government or any Deputy Commissioner of Local
+Government;
+'district' means an administrative district;
+'elections officer' means the elections officer of a district
+appointed under the provisions of written law for the time
+being applicable in that behalf and includes any assistant
+elections officer so appointed;
+'first general election' means a general election held for the
+purpose of electing the first members of an Urban Council to
+be constituted for a town under this Ordinance;
+'Government Agent' means the Government Agent of the
+administrative district within which any town is situated;
+'householder' means the owner, or part owner, or lessee, or
+principal occupant of the house in which a person resides;
+'inhabitant' means a person who, being in Sri Lanka, has
+
+
+resided therein for three months or upwards;
+'local fund' in relation to any town means the fund
+established by the Urban Council of that town under
+section 158;
+'nuisance' includes any act, omission, or thing occasioning or
+likely to occasion injury, annoyance, offence, harm, danger,
+or damage to the sense of sight, smell, or hearing or
+which is likely to be dangerous or injurious to health or
+property;
+'owner' includes the person for the time being receiving
+the rent of the premises in connection with which the word
+is used, whether on his own account or as agent or trustee
+for any other person, or who would receive the same if
+such premises were let to a tenant;
+'premises' includes all messuages, buildings, lands, and
+servitudes, servitudes being considered to be part of the
+property to which they appertain or in connection with
+which they are enjoyed;
+'principal thoroughfare' means any thoroughfare declared a
+principal thoroughfare by any proclamation, order or
+notification under any enactment dealing with principal
+thoroughfares, and not cancelled by a subsequent
+proclamation, order or notification;
+'proper officer' means the officer in charge of any work
+executed or to be executed on or in connection with any
+thoroughfare by direction of an Urban Council;
+'public street' means any street over which the public have
+a right of way, which is or has been usually repaired or
+maintained in whole or in part by any public authority, or
+which has been conveyed to them or has become vested in
+them under any enactment or by operation of law;
+'repealed enactment' means any enactment repealed by the
+Urban Councils Ordinance No. 61 of 1939;
+'river' includes all public navigable streams, lakes,
+estuaries, creeks, and inlets of the sea, and all towing paths
+and embankments thereto belonging;
+'road' includes
+
+
+ (a) all public carriageways, cartways, and pathways, as
+ well as all bridges, drains, and embankments,
+ causeways, and ditches belonging or appertaining to a
+ road;
+ (b) all land adjoining any road which has been
+ reserved for its protection or benefit;
+ (c) all land which has been marked off and reserved for
+ the construction of any road;
+ (d) all waste land which, not being private property,
+ lies within a distance of thirty-three feet of the centre of
+ public carriageways and cartways and ten feet of the
+ centre of public pathways, the burden of proving that
+ such waste land is private property lying on the person
+ asserting the same; and
+ (e) all public squares, greens, market places, and
+ other public places other than public buildings;
+ 'rule' means a rule made by the Minister under section 193
+ for the guidance of Urban Councils;
+ 'secretary' means the officer appointed by an Urban
+ Council to be or to act for the time being as the secretary
+ of the Council;
+ 'street' includes any road, footway, or passage used or
+ intended to be used as a means of access to two or more
+ houses or sites of houses, whether the public have a right
+ of way there over or not, and includes all channels, drains,
+ ditches, sidewalks, and reservations at the side thereof
+ 'thoroughfare' means any road, canal, or river, and includes a
+ cul-de-sac;
+ 'town' means an urban area declared to be a town for the
+ purposes of this Ordinance.
+(2) In determining for the purposes of this Ordinance the annual
+value of any premises to which the Rent Act applies, and in
+assessing the annual rent of such premises for the purposes of
+such determination, an Urban Council shall not have regard to the
+provisions of that Act.

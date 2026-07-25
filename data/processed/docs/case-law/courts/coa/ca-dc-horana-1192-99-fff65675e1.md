@@ -1,0 +1,3 @@
+# ca dc horana 1192 99
+
+IN THE COURT OF APPEAL OF THE DECMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA CA No. 1192/99(F) D.C. Horana Case No. 5372/RE Ananda Gamini Gardige Punchihewa No: 04/20, Polhengoda Road, Colombo 05. Complainant Appellant Vs. K.P.Siriwardane Millaniya Watta, Paragasthota. Defendendent Respondent I v 1 C.A. No. 1192/99(F) D.C. Horana Case No. 5372/RE Before A.W.A. Salam, J. Counsel Parties are absent and unrepresented. Decided on 29.01.2013. ******** A. W .A. Salam, J. I Notices have been dispatched to the legal heirs directing them to take steps. Parties absent and unrepresented. Legal heirs have not responded to the notice. Appeal abated. JUDGE OF THE COURT OF APPEAL AKN
