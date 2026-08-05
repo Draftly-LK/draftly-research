@@ -33,6 +33,11 @@ def main() -> None:
 
     subparsers.add_parser("evaluate", help="Run development retrieval evaluation.")
 
+    serve_parser = subparsers.add_parser("serve", help="Run the statute retrieval FastAPI service.")
+    serve_parser.add_argument("--host", default="127.0.0.1")
+    serve_parser.add_argument("--port", type=int, default=8000)
+    serve_parser.add_argument("--reload", action="store_true")
+
     questions_parser = subparsers.add_parser(
         "evaluate-questions",
         help="Run the questions.md robustness harness without claiming legal correctness.",
@@ -66,6 +71,10 @@ def main() -> None:
         print(json.dumps(response.to_dict(), indent=2, ensure_ascii=False))
     elif args.command == "evaluate":
         print(json.dumps(run_evaluation(), indent=2))
+    elif args.command == "serve":
+        import uvicorn
+
+        uvicorn.run("draftly.retrieval.api:app", host=args.host, port=args.port, reload=args.reload)
     elif args.command == "evaluate-questions":
         questions = parse_question_file(Path(args.questions))
         if args.question_id:
