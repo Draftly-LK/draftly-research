@@ -46,6 +46,7 @@ evaluation/runs/courts-extractability/
 # Machine-local assistant configuration
 .claude/settings.local.json
 
-# Third-party legal-database extracts. Licensed content -- keep out of the repo
-# until the IP review clears the source and the permission is on file.
+# Third-party legal-database extracts: raw cached pages and run outputs.
+# The derived section index and actions.csv ARE tracked, each row labelled
+# with its source; the raw dump is not.
 evaluation/runs/lawlanka-section-index/

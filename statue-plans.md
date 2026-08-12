@@ -233,13 +233,20 @@ would gain nothing.
 
 ## Phases
 
-| Phase | Work | Owner |
-| --- | --- | --- |
-| 0 | Rotate password, permission in writing, run the relevance gate over the 102 candidates | Himath |
-| 1 | The approximately 110-request sweep, producing `sections.jsonl`, `actions.csv`, `aliases.csv` | Praveen |
-| 2 | Cross-validate against official PDFs, report agreement per statute | Praveen |
-| 3 | Pull the 1956 and 1981 revised versions, derive version intervals | Himath |
-| 4 | Acquire official PDFs for the in-scope statutes still missing | Praveen |
+| Phase | Work | Owner | Status |
+| --- | --- | --- | --- |
+| 0 | Rotate password, permission in writing, run the relevance gate over the 102 candidates | Himath | done |
+| 1 | The sweep, producing `sections.jsonl`, `actions.csv`, `aliases.csv` | Praveen | done for 39 enactments; 35 held statutes queued, incl. the Registration of Title Act |
+| 1b | Register the swept statutes and generate the canonical section index | Himath | done — 22 rows from `SRC091`, index now 66 statutes / 5,696 sections |
+| 2 | Cross-validate against official PDFs, report agreement per statute | Praveen | blocked on the PDF coordinate-block extractor |
+| 3 | Pull the 1956 and 1981 revised versions, derive version intervals | Himath | `data/processed/actions.csv` landed; `operation` unknown on 853 of 872 |
+| 4 | Acquire official PDFs for the in-scope statutes still missing | Praveen | 22 statutes are index-only; 5 confirmed unavailable from an in-force consolidation |
+
+Realised against the projection: links failing for want of an index entry fell
+from 810 to 94, a reduction of **716 (88.4%)** against a projected 700 (86.4%).
+`statute-not-indexed` is now zero. The link total rose by 237 because
+registering the new statutes made their names resolvable, and `out-of-range`
+rose from 11 to 44 as the year-leak fix removed fabricated section ceilings.
 
 Phase 0 takes about half an hour and it is what makes the rest defensible.
 

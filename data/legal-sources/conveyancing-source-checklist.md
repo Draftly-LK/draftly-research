@@ -10,6 +10,19 @@ Source priority:
 3. Consolidated text from Laws of Sri Lanka, LawNet, or LawLanka.
 4. Secondary notes only for orientation, never as the authority.
 
+## Third-party structural data
+
+2026-08-07 — LawLanka structural data was used under written permission held with
+the corpus IP review file, consistent with the priority-3 rule above. Only
+*structure* was taken: section numbers, marginal-note headings, and the inline
+`[n, Act of Year]` amendment markers, for 39 enactments. No consolidated body
+prose and no law reports were taken. Statute text authority stays with the
+official PDFs; a section that LawLanka lists but our own extraction lacks is
+recorded as a known hole, never filled from LawLanka. Extracts live in the
+gitignored `evaluation/runs/lawlanka-section-index/` and every record is
+`status: unverified` pending lawyer review. Method and code:
+`scripts/lawlanka-section-index/`.
+
 ## 1. Introduction to Conveyancing
 
 | Source | Notes |
