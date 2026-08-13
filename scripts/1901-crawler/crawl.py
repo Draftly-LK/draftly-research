@@ -10,6 +10,7 @@ stage 2 over the archive rather than re-downloading anything:
 Usage:
     python crawl.py --db LKSC --year 1906 --check   # robots + reachability
     python crawl.py --db LKSC --year 1906           # crawl then parse
+    python crawl.py --all-years                     # year indexes -> year-cases.json
     python crawl.py --parse-only                    # re-parse the archive
 
 Stage 2 parses the whole raw/ archive, so cases.jsonl accumulates every
@@ -30,7 +31,22 @@ import parse_case as P
 
 HERE = Path(__file__).resolve().parent
 CASES_JSONL = HERE / "cases.jsonl"
+CASES_JSON = HERE / "cases.json"
+YEAR_CASES_JSON = HERE / "year-cases.json"
 FAILURES = HERE / "parse-failures.csv"
+
+YEARS = (
+    1878, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905,
+    1906, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918,
+    1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930,
+    1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942,
+    1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954,
+    1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966,
+    1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978,
+    1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990,
+    1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002,
+    2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012,
+)
 
 
 def check(db: str, year: int, transport: str) -> int:
@@ -93,6 +109,57 @@ def crawl(db: str, year: int, transport: str, delay_s: float) -> list[dict]:
             for p in pages]
 
 
+def crawl_year_indexes(db: str, transport: str, delay_s: float) -> int:
+    """Fetch each requested year index and write its downloadable case links."""
+    f = F.Fetcher(transport=transport, delay_s=delay_s)
+    by_year: dict[str, list[dict]] = {}
+    failures: list[dict] = []
+
+    for position, year in enumerate(YEARS, 1):
+        index_url = f"{F.BASE}/lk/cases/{db}/{year}/"
+        try:
+            page = f.get(index_url, note=f"index:{db}:{year}")
+            links = P.extract_download_links(page.html, index_url)
+            cases = []
+            for url in links:
+                match = P.DOWNLOAD_PATH_RE.search(url)
+                cases.append({
+                    "case_number": match.group("number") if match else None,
+                    "file_type": match.group("file_type").lower() if match else None,
+                    "url": url,
+                })
+            by_year[str(year)] = cases
+            print(f"  [{position}/{len(YEARS)}] {year}: {len(cases)} cases"
+                  + (" (cached)" if page.from_cache else ""))
+        except Exception as exc:  # noqa: BLE001
+            by_year[str(year)] = []
+            failures.append({
+                "year": year,
+                "index_url": index_url,
+                "error": f"{type(exc).__name__}: {exc}",
+            })
+            print(f"  [{position}/{len(YEARS)}] {year}: FAILED "
+                  f"{type(exc).__name__}: {exc}")
+
+        # Keep a valid, resumable result even if a long crawl is interrupted.
+        payload = {
+            "database": db,
+            "year_count": len(YEARS),
+            "case_count": sum(len(items) for items in by_year.values()),
+            "years": by_year,
+            "failures": failures,
+        }
+        YEAR_CASES_JSON.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+
+    print(f"\n  {f.summary()}")
+    print(f"  wrote {YEAR_CASES_JSON.name}: {payload['case_count']} cases "
+          f"across {len(YEARS)} years; {len(failures)} failed indexes")
+    return 1 if failures else 0
+
+
 def parse_archive() -> tuple[list[dict], list[tuple[str, str]]]:
     """Stage 2: parse every archived page. No network."""
     f = F.Fetcher(offline=True)
@@ -115,10 +182,15 @@ def parse_archive() -> tuple[list[dict], list[tuple[str, str]]]:
 
 
 def write_outputs(records: list[dict], failures: list[tuple[str, str]]) -> None:
+    ordered = sorted(records, key=lambda r: (r.get("year", 0),
+                                             int(r.get("case_number") or 0)))
     with CASES_JSONL.open("w", encoding="utf-8") as fh:
-        for r in sorted(records, key=lambda r: (r.get("year", 0),
-                                                int(r.get("case_number") or 0))):
+        for r in ordered:
             fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+    CASES_JSON.write_text(
+        json.dumps(ordered, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     if failures:
         import csv
         with FAILURES.open("w", newline="", encoding="utf-8") as fh:
@@ -132,6 +204,9 @@ def main() -> int:
     ap.add_argument("--db", default="LKHC")
     ap.add_argument("--year", type=int, default=1901)
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--all-years", action="store_true",
+                    help="crawl all configured LKSC year indexes and write "
+                         "year-cases.json without downloading judgments")
     ap.add_argument("--parse-only", action="store_true")
     ap.add_argument("--transport", choices=("cloudscraper", "urllib"),
                     default="cloudscraper",
@@ -144,6 +219,10 @@ def main() -> int:
 
     if a.check:
         return check(a.db, a.year, a.transport)
+
+    if a.all_years:
+        print(f"CommonLII year-index crawl: {a.db} ({len(YEARS)} years)")
+        return crawl_year_indexes(a.db, a.transport, a.delay)
 
     if not a.parse_only:
         print(f"CommonLII crawl: {a.db} {a.year} (transport: {a.transport})")
@@ -164,7 +243,7 @@ def main() -> int:
         cites = sum(len(r["report_citations"]) for r in records)
         legis = sum(len(r["cited_legislation"]) for r in records)
         print(f"  report citations: {cites} | legislation refs: {legis}")
-        print(f"  wrote {CASES_JSONL.name}")
+        print(f"  wrote {CASES_JSONL.name} and {CASES_JSON.name}")
     return 0
 
 
