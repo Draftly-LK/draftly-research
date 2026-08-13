@@ -67,6 +67,9 @@ FETCH_LOG = HERE / "fetch-log.csv"
 BASE = "https://www.commonlii.org"
 UA = ("DraftlyResearchBot/0.1 (+University of Moratuwa CS3501 academic research; "
       "legal-corpus retrieval; contact: draftly project team)")
+DOWNLOAD_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+               "AppleWebKit/537.36 (KHTML, like Gecko) "
+               "Chrome/140.0.0.0 Safari/537.36")
 DELAY_S = 2.0               # conservative, per the crawl plan
 TIMEOUT_S = 45
 MAX_RETRIES = 3
@@ -113,6 +116,28 @@ def _make_cloudscraper():
         enable_stealth=True,
         browser={"browser": "chrome", "platform": "windows", "mobile": False},
     )
+
+
+def make_download_session():
+    """Browser-like session for judgment bytes.
+
+    CommonLII serves HTML judgments to a normal browser GET. PDF judgments
+    additionally require the cookie set by their year index and that index as
+    the Referer. Call ``prime_download_year`` before downloading a PDF year.
+    """
+    import requests
+
+    session = requests.Session()
+    session.headers.update({"User-Agent": DOWNLOAD_UA})
+    return session
+
+
+def prime_download_year(session, database: str, year: int) -> str:
+    """Load a year index into the download session and return its URL."""
+    index_url = f"{BASE}/lk/cases/{database}/{year}/"
+    response = session.get(index_url, timeout=TIMEOUT_S)
+    response.raise_for_status()
+    return index_url
 
 
 def utc_now() -> str:
