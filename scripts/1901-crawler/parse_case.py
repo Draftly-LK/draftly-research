@@ -47,6 +47,9 @@ JUDGE = re.compile(
     r"(C\.?\s?J\.?|A\.?\s?C\.?\s?J\.?|J{1,2}\.?)(?=\s|$|[.,\-])")
 PATH_RE = re.compile(
     r"/cases/(?P<database>[^/]+)/(?P<year>\d{4})/(?P<number>\d+)\.html?$", re.I)
+DOWNLOAD_PATH_RE = re.compile(
+    r"/cases/(?P<database>[^/]+)/(?P<year>\d{4})/(?P<number>\d+)"
+    r"\.(?P<file_type>html?|pdf)$", re.I)
 
 # CommonLII leaves two machine-readable HTML comments under the <h2>. They are
 # the cleanest metadata on the page and the flat-text corpus dropped both.
@@ -77,6 +80,31 @@ def report_provenance(source_path: str) -> dict:
         out.update({"report_series": "NLR", "report_volume": int(m.group(1)),
                     "report_page": int(m.group(2))})
     return out
+
+TITLE_REPORT = re.compile(
+    r"-\s*(?P<series>NLR|SLR|Sri\s?LR)\s*-\s*(?P<page>\d{1,4})\s+of\s+(?P<volume>\d{1,3})",
+    re.I)
+TITLE_CITE = re.compile(
+    r"\((?P<year>\d{4})\)\s*(?P<volume>\d{1,3})\s*(?P<series>NLR|SLR|Sri\s?LR)"
+    r"\s*(?P<page>\d{1,4})", re.I)
+TITLE_DATE = re.compile(r"\((\d{1,2}\s+[A-Z][a-z]+\s+\d{4})\)")
+
+
+def report_from_title(title: str) -> dict:
+    """Printed-report reference parsed out of the page title."""
+    m = TITLE_REPORT.search(title) or TITLE_CITE.search(title)
+    if not m:
+        return {}
+    g = m.groupdict()
+    series = re.sub(r"\s+", "", g["series"]).upper()
+    return {"report_series": "SLR" if series.startswith("SRI") else series,
+            "report_volume": int(g["volume"]), "report_page": int(g["page"])}
+
+
+def case_name_from_title(title: str) -> str:
+    """The party names, with the citation tail trimmed off."""
+    return re.split(r"\s+-\s+(?:NLR|SLR|Sri\s?LR)\s+-\s+", title, maxsplit=1,
+                    flags=re.I)[0].strip(" .,-")
 
 
 def clean_text(node) -> str:
@@ -159,8 +187,16 @@ def parse_case(html: str, url: str, *, retrieved_at: str = "") -> dict:
     # metadata from the HTML comments, before BeautifulSoup discards them
     sino = SINO_DATE.search(html)
     docs = MAKE_DOCS.search(html)
-    decision_date = iso_date(sino.group(1)) if sino else None
     provenance = report_provenance(docs.group(1)) if docs else {}
+    # Both comments are missing from many pages; the title line carries the same
+    # date and report reference, so fall back to it rather than losing the field.
+    if not provenance.get("report_series"):
+        provenance = {**provenance, **report_from_title(display_title)}
+    raw_date = sino.group(1).strip() if sino else None
+    if not raw_date:
+        tm = TITLE_DATE.search(display_title)
+        raw_date = tm.group(1) if tm else None
+    decision_date = iso_date(raw_date) if raw_date else None
 
     parts = structure.segment(paragraphs)
 
@@ -168,11 +204,14 @@ def parse_case(html: str, url: str, *, retrieved_at: str = "") -> dict:
     return {
         **ident,
         "decision_date": decision_date,
-        "decision_date_raw": sino.group(1).strip() if sino else None,
+        "decision_date_raw": raw_date,
+        "date_source": ("sino-comment" if sino else
+                        "title-line" if raw_date else None),
         **provenance,
         **parts,
         "court": clean_text(court_node) if court_node else None,
-        "case_name": display_title,
+        "case_name": case_name_from_title(display_title),
+        "page_title": display_title,
         "neutral_citation": neutral.group(0) if neutral else None,
         "report_citations": reports,
         "judges": judges[:6],
@@ -196,8 +235,21 @@ def extract_links(html: str, base_url: str) -> list[str]:
     soup = BeautifulSoup(html, "lxml")
     out, seen = [], set()
     for a in soup.find_all("a", href=True):
-        href = urljoin(base_url, a["href"])
+        href = urljoin(base_url, str(a["href"]))
         if PATH_RE.search(urlparse(href).path) and href not in seen:
+            seen.add(href)
+            out.append(href)
+    return out
+
+
+def extract_download_links(html: str, base_url: str) -> list[str]:
+    """All downloadable judgments on an index, including later PDF records."""
+    from urllib.parse import urljoin
+    soup = BeautifulSoup(html, "lxml")
+    out, seen = [], set()
+    for a in soup.find_all("a", href=True):
+        href = urljoin(base_url, str(a["href"]))
+        if DOWNLOAD_PATH_RE.search(urlparse(href).path) and href not in seen:
             seen.add(href)
             out.append(href)
     return out
