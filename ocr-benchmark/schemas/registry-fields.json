@@ -1,0 +1,271 @@
+{
+  "_provenance": {
+    "source": "draftly-platform/backend/src/modules/document/domain/registry.py",
+    "note": "Keys, labels, and validator names only. No field values."
+  },
+  "kinds": {
+    "identity-card": [
+      {
+        "key": "transfereeNic",
+        "label": "NIC number",
+        "validator": "is_valid_nic"
+      },
+      {
+        "key": "holderNameEn",
+        "label": "Holder full name (English)",
+        "validator": null
+      },
+      {
+        "key": "holderNameSi",
+        "label": "Holder full name (Sinhala)",
+        "validator": null
+      },
+      {
+        "key": "holderDateOfBirth",
+        "label": "Date of birth",
+        "validator": "is_valid_iso_date"
+      },
+      {
+        "key": "holderAddress",
+        "label": "Residential address",
+        "validator": null
+      }
+    ],
+    "title-certificate": [
+      {
+        "key": "titleCertificateNo",
+        "label": "Title certificate number (හිමිකම් අංකය)",
+        "validator": null
+      },
+      {
+        "key": "cadastralMapNo",
+        "label": "Cadastral map number",
+        "validator": "is_digits"
+      },
+      {
+        "key": "blockNo",
+        "label": "Block / zone number (කලාප අංකය)",
+        "validator": null
+      },
+      {
+        "key": "sheetNo",
+        "label": "Sheet number (පත්‍ර අංකය)",
+        "validator": null
+      },
+      {
+        "key": "parcelNo",
+        "label": "Parcel number (ඉඩම් කැබලි අංකය)",
+        "validator": null
+      },
+      {
+        "key": "extent",
+        "label": "Extent in hectares",
+        "validator": "is_valid_extent"
+      },
+      {
+        "key": "district",
+        "label": "District",
+        "validator": null
+      },
+      {
+        "key": "dsDivision",
+        "label": "Divisional Secretary's division",
+        "validator": null
+      },
+      {
+        "key": "gnDivision",
+        "label": "Grama Niladhari division",
+        "validator": null
+      },
+      {
+        "key": "classOfTitle",
+        "label": "Class of title (first/second)",
+        "validator": null
+      },
+      {
+        "key": "ownerName",
+        "label": "Registered owner full name",
+        "validator": null
+      },
+      {
+        "key": "placeOfRegistration",
+        "label": "Title registry office",
+        "validator": null
+      }
+    ],
+    "form8-instrument": [
+      {
+        "key": "district",
+        "label": "1(a) District",
+        "validator": null
+      },
+      {
+        "key": "dsDivision",
+        "label": "1(b) Divisional Secretary's division",
+        "validator": null
+      },
+      {
+        "key": "gnDivision",
+        "label": "1(c) Grama Niladhari division",
+        "validator": null
+      },
+      {
+        "key": "village",
+        "label": "1(d) Village or town",
+        "validator": null
+      },
+      {
+        "key": "assessmentNumber",
+        "label": "1(f) Assessment number",
+        "validator": null
+      },
+      {
+        "key": "cadastralMapNo",
+        "label": "1(g) Cadastral map number",
+        "validator": "is_digits"
+      },
+      {
+        "key": "blockNo",
+        "label": "1(h) Block number",
+        "validator": null
+      },
+      {
+        "key": "sheetNo",
+        "label": "1(i) Sheet number",
+        "validator": null
+      },
+      {
+        "key": "parcelNo",
+        "label": "1(j) Parcel number",
+        "validator": null
+      },
+      {
+        "key": "extent",
+        "label": "1(l) Extent in hectares",
+        "validator": "is_valid_extent"
+      },
+      {
+        "key": "extentSubjectToTransfer",
+        "label": "1(m) Extent subject to the transfer",
+        "validator": null
+      },
+      {
+        "key": "placeOfRegistration",
+        "label": "2(a) Place of registration",
+        "validator": null
+      },
+      {
+        "key": "titleCertificateNo",
+        "label": "2(b) Title certificate number",
+        "validator": null
+      },
+      {
+        "key": "classOfTitle",
+        "label": "2(c) Class of title",
+        "validator": null
+      },
+      {
+        "key": "transferorName",
+        "label": "3(a) Transferor full name",
+        "validator": null
+      },
+      {
+        "key": "transferorNic",
+        "label": "3(b) Transferor NIC number",
+        "validator": "is_valid_nic"
+      },
+      {
+        "key": "transferorAddress",
+        "label": "3(c) Transferor address",
+        "validator": null
+      },
+      {
+        "key": "transfereeName",
+        "label": "4(a) Transferee full name",
+        "validator": null
+      },
+      {
+        "key": "transfereeNic",
+        "label": "4(b) Transferee NIC number",
+        "validator": "is_valid_nic"
+      },
+      {
+        "key": "transfereeAddress",
+        "label": "4(c) Transferee address",
+        "validator": null
+      },
+      {
+        "key": "consideration",
+        "label": "5(a) Consideration in figures",
+        "validator": null
+      },
+      {
+        "key": "considerationWords",
+        "label": "5(b) Consideration in words",
+        "validator": null
+      },
+      {
+        "key": "notaryName",
+        "label": "Attesting notary full name",
+        "validator": null
+      },
+      {
+        "key": "notaryCode",
+        "label": "Notary's code",
+        "validator": null
+      }
+    ],
+    "survey-plan": [
+      {
+        "key": "surveyPlanNo",
+        "label": "Plan number",
+        "validator": null
+      },
+      {
+        "key": "surveyorName",
+        "label": "Licensed surveyor's name",
+        "validator": null
+      },
+      {
+        "key": "surveyorRegistration",
+        "label": "Surveyor registration number",
+        "validator": null
+      },
+      {
+        "key": "landName",
+        "label": "Name of the land",
+        "validator": null
+      },
+      {
+        "key": "lotNo",
+        "label": "Lot number shown in this extract",
+        "validator": null
+      },
+      {
+        "key": "extent",
+        "label": "Lot extent in hectares",
+        "validator": "is_valid_extent"
+      },
+      {
+        "key": "boundaryNorth",
+        "label": "Boundary — north by",
+        "validator": null
+      },
+      {
+        "key": "boundaryEast",
+        "label": "Boundary — east by",
+        "validator": null
+      },
+      {
+        "key": "boundarySouth",
+        "label": "Boundary — south by",
+        "validator": null
+      },
+      {
+        "key": "boundaryWest",
+        "label": "Boundary — west by",
+        "validator": null
+      }
+    ]
+  }
+}

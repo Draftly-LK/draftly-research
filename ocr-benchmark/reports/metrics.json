@@ -1,0 +1,149 @@
+{
+  "datasetId": "case-001-smoke-26p",
+  "runs": {
+    "A": {
+      "variantId": "A",
+      "runId": "A",
+      "status": "failed",
+      "reason": "ClientError: 401 UNAUTHENTICATED. {'error': {'code': 401, 'message': 'Request had invalid authentication credentials. Expected OAuth 2 access token, login cooki",
+      "providerErrors": 9,
+      "docs": 1,
+      "pages": 2,
+      "fieldAccuracy": {
+        "scored": 0,
+        "correct": 0,
+        "exactMatchPlatform": null,
+        "exactMatchStrict": null
+      },
+      "criticalFieldAccuracy": {
+        "scored": 0,
+        "correct": 0,
+        "exactMatch": null,
+        "wilson95": null
+      },
+      "outcomes": {
+        "missing": 2
+      },
+      "ambiguousExcluded": 0,
+      "omissionRate": 1.0,
+      "inventedValueRate": null,
+      "coverage": 0.0,
+      "provenance": {},
+      "kindAccuracy": 0.0,
+      "cost": {
+        "calls": 3,
+        "estimatedUsd": 0.0,
+        "latencyMsTotal": 35704.3
+      },
+      "textMetrics": {
+        "status": "no-ground-truth",
+        "note": "add labels under ocr-benchmark/labels/ocr-region/"
+      }
+    },
+    "C": {
+      "variantId": "C",
+      "runId": "C",
+      "status": "skipped",
+      "reason": "surya-ocr not installed",
+      "providerErrors": 0,
+      "docs": 0,
+      "pages": 0,
+      "fieldAccuracy": {
+        "scored": 0,
+        "correct": 0,
+        "exactMatchPlatform": null,
+        "exactMatchStrict": null
+      },
+      "criticalFieldAccuracy": {
+        "scored": 0,
+        "correct": 0,
+        "exactMatch": null,
+        "wilson95": [
+          0.0,
+          0.0
+        ]
+      },
+      "outcomes": {},
+      "ambiguousExcluded": 0,
+      "omissionRate": null,
+      "inventedValueRate": null,
+      "coverage": null,
+      "provenance": {},
+      "kindAccuracy": null,
+      "cost": {
+        "calls": 0,
+        "estimatedUsd": 0,
+        "latencyMsTotal": 0
+      },
+      "textMetrics": {
+        "status": "no-ground-truth",
+        "note": "add labels under ocr-benchmark/labels/ocr-region/"
+      }
+    },
+    "stub": {
+      "variantId": "stub",
+      "runId": "stub",
+      "status": "completed",
+      "reason": "",
+      "providerErrors": 0,
+      "docs": 1,
+      "pages": 2,
+      "fieldAccuracy": {
+        "scored": 8,
+        "correct": 8,
+        "exactMatchPlatform": 1.0,
+        "exactMatchStrict": 1.0
+      },
+      "criticalFieldAccuracy": {
+        "scored": 8,
+        "correct": 8,
+        "exactMatch": 1.0,
+        "wilson95": [
+          0.6756,
+          1.0
+        ]
+      },
+      "outcomes": {
+        "correct": 8
+      },
+      "ambiguousExcluded": 0,
+      "omissionRate": 0.0,
+      "inventedValueRate": 0.0,
+      "coverage": 1.0,
+      "provenance": {
+        "region": 8
+      },
+      "kindAccuracy": 1.0,
+      "cost": {
+        "calls": 0,
+        "estimatedUsd": 0.0,
+        "latencyMsTotal": 21.1
+      },
+      "textMetrics": {
+        "status": "no-ground-truth",
+        "note": "add labels under ocr-benchmark/labels/ocr-region/"
+      }
+    }
+  },
+  "agreementMatrix": {
+    "A": {
+      "A": null,
+      "C": null,
+      "stub": null
+    },
+    "C": {
+      "A": null,
+      "C": null,
+      "stub": null
+    },
+    "stub": {
+      "A": null,
+      "C": null,
+      "stub": {
+        "n": 8,
+        "agreement": 1.0
+      }
+    }
+  },
+  "agreementVsTruth": {}
+}

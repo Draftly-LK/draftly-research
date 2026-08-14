@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "annotation-routing.schema.json",
+  "title": "Page routing ground truth",
+  "description": "Per-page labels for classification, language, rotation, quality and logical-document grouping. Placed in ocr-benchmark/labels/routing/<docId>.json. Note that production classifies a whole document from page 1 only (processing_service.py calls classify(pages[0])), so page-level labels will expose misrouting inside mixed bundles that the current pipeline cannot see.",
+  "type": "object",
+  "required": ["docId", "schemaVersion", "pages"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "docId": { "type": "string" },
+    "annotator": { "type": "string" },
+    "annotatedAt": { "type": "string", "format": "date-time" },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["page", "documentType"],
+        "properties": {
+          "page": { "type": "integer", "minimum": 1 },
+          "documentType": {
+            "type": "string",
+            "description": "Registry kind where one applies (identity-card, title-certificate, form8-instrument, survey-plan, other), or a corpus-specific type such as deed, assessment-extract, court-filing."
+          },
+          "languages": {
+            "type": "array",
+            "items": { "enum": ["si", "en", "ta"] },
+            "description": "A page may carry more than one"
+          },
+          "correctRotation": {
+            "type": "integer",
+            "enum": [0, 90, 180, 270],
+            "description": "Degrees clockwise needed to make the page upright"
+          },
+          "technicalRoute": { "enum": ["clean_scan", "photo", "degraded_scan", "digital_native"] },
+          "qualityFlags": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "stamp_overlap", "handwriting", "correction", "low_contrast",
+                "skew", "shadow", "fold", "cropped_edge", "blur", "blank"
+              ]
+            }
+          },
+          "documentGroup": {
+            "type": "string",
+            "description": "Logical document this page belongs to. Splits mixed PDFs; pages of one instrument share a group."
+          },
+          "isBlank": { "type": "boolean" },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}
