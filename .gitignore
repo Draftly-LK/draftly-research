@@ -19,10 +19,20 @@ __pycache__/
 # Private client/legal document bundles
 data/raw/
 
-# Private discussion recordings and generated transcripts
+# Private discussion recordings, transcripts, and service-account keys.
+# Both the old top-level path and the current proj-docs/ path are listed: the
+# folder moved and the stale rules left a GCP key unignored.
 discussions/recordings/*
 discussions/transcripts/*
 discussions/secrets/*
+proj-docs/discussions/recordings/*
+proj-docs/discussions/transcripts/*
+proj-docs/discussions/secrets/*
+
+# Credentials, wherever they land
+*.pem
+*-service-account*.json
+draftly-*-*.json
 
 # Generated LaTeX build files
 report/*.aux
@@ -50,3 +60,15 @@ evaluation/runs/courts-extractability/
 # The derived section index and actions.csv ARE tracked, each row labelled
 # with its source; the raw dump is not.
 evaluation/runs/lawlanka-section-index/
+
+progress.md
+
+# OCR benchmark: real client documents, rendered pages, run outputs and
+# annotations stay local. Only code, schemas, and aggregate reports are tracked.
+# cases/* rather than cases/ so the README can be re-included: git cannot
+# un-exclude a file whose parent directory is itself excluded.
+ocr-benchmark/cases/*
+!ocr-benchmark/cases/README.md
+ocr-benchmark/renders/
+ocr-benchmark/runs/
+ocr-benchmark/labels/
