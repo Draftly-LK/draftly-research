@@ -1,15 +1,27 @@
 {
  "track": "B",
- "status": "reject:quote-not-found",
+ "status": "ok",
  "model": "qwen2.5:7b",
- "rejected_rule": {
-  "statement": "A fidei commissum was created by the will of Kungiliyapodi Vanniya, and fiduciarii could not alienate more than their limited interest without proper Court proceedings.",
-  "supporting_quote": "\"This appears to be a request to his sons to hold in trust, without any power of alienation, the immovable property and buffaloes; ... and this I understand to be what is known as a fidei commissum or trust\"",
-  "statute_citation_verbatim": null,
-  "statute_section": null,
-  "scope": "ratio",
-  "confidence": "high"
- },
+ "rules": [
+  {
+   "statement": "The fiduciarii could not alienate more than the life interest they were entitled to, and any mortgage or encumbrance without proper Court approval was invalid.",
+   "supporting_quote": "\"I think therefore that the fiduciarii could not be deemed to be mortgaging more than the life interest for which they were entitled, and that this and no more was what vested in the purchaser\"",
+   "statute_section": "",
+   "section_status": "bad-source",
+   "statute_citation_verbatim": "Ordinance No. 11 of 1876, section 4",
+   "statute_citation_grounded": true,
+   "match_type": "verbatim",
+   "scope": "ratio",
+   "confidence": "high",
+   "method": "llm-extract",
+   "rule_id": "draftly-rule-commonlii-LKCA-1903-60-1",
+   "case_id": "commonlii-LKCA-1903-60",
+   "citation": "6 NLR 163",
+   "court": "LKCA",
+   "year": "1903",
+   "status": "unverified"
+  }
+ ],
  "case_id": "commonlii-LKCA-1903-60",
  "meta": {
   "case_id": "commonlii-LKCA-1903-60",
@@ -19,6 +31,5 @@
   "reported": true,
   "parties": "Annamal v. Saibo Lebbe",
   "disposition": "dismissed"
- },
- "rules": []
+ }
 }

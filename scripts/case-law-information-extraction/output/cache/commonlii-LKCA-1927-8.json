@@ -1,15 +1,27 @@
 {
  "track": "B",
- "status": "reject:quote-not-found",
+ "status": "ok",
  "model": "qwen2.5:7b",
- "rejected_rule": {
-  "statement": "A bank that pays a cheque under the mistaken belief that it is genuine and which induces another party to pay out the proceeds in good faith cannot recover those funds from the recipient.",
-  "supporting_quote": "The money paid under a mistake was received in good faith and in good faith paid out to John Perera. It would not have been so applied had not the bank represented that it considered the cheques to bear the genuine signature of its customer.",
-  "statute_citation_verbatim": null,
-  "statute_section": null,
-  "scope": "ratio",
-  "confidence": "high"
- },
+ "rules": [
+  {
+   "statement": "Where a bank pays cheques under the mistaken belief that they are genuine, and the payee has acted in good faith on this belief by disposing of the money as instructed, the loss should not be shifted to the payee.",
+   "supporting_quote": "It cannot be said that he did anything which induced the belief that the cheques bore the genuine signature of D. S. P. Abeyewardene. These being the circumstances the plaintiff who has by his mistake sustained a loss should not in my judgment be permitted to shift that loss on to the defendant.",
+   "statute_section": "",
+   "section_status": "none",
+   "statute_citation_verbatim": "",
+   "statute_citation_grounded": false,
+   "match_type": "verbatim",
+   "scope": "ratio",
+   "confidence": "high",
+   "method": "llm-extract",
+   "rule_id": "draftly-rule-commonlii-LKCA-1927-8-1",
+   "case_id": "commonlii-LKCA-1927-8",
+   "citation": "29 NLR 257",
+   "court": "LKCA",
+   "year": "1927",
+   "status": "unverified"
+  }
+ ],
  "case_id": "commonlii-LKCA-1927-8",
  "meta": {
   "case_id": "commonlii-LKCA-1927-8",
@@ -19,6 +31,5 @@
   "reported": true,
   "parties": "Imperial Bank of India v. Abeyesinghe",
   "disposition": "allowed"
- },
- "rules": []
+ }
 }

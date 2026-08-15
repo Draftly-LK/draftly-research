@@ -1,15 +1,27 @@
 {
  "track": "B",
- "status": "reject:quote-not-found",
+ "status": "ok",
  "model": "qwen2.5:7b",
- "rejected_rule": {
-  "statement": "A creditor who proceeds to execution before other creditors can be given preference over them.",
-  "supporting_quote": "\"This case is one in which a creditor has proceeded to execution and obtained judgment, but has not proceeded to execution. Held (in an application for concurrence by the appellants), that the eleventh respondent was entitled to preference.\"",
-  "statute_citation_verbatim": null,
-  "statute_section": null,
-  "scope": "ratio",
-  "confidence": "high"
- },
+ "rules": [
+  {
+   "statement": "Realization of assets for the purpose of section 352 occurs when a creditor's claim is brought to the attention of the court administering the estate, not necessarily upon final payment.",
+   "supporting_quote": "\"If it does occur, it must occur at some intermediate stage and I think it can be regarded, on the authority of Shaw & Sons v. Sulaiman (supra), as having taken place when the Jaffna Court was requested to pay over to the Colombo Court.\"",
+   "statute_section": "",
+   "section_status": "none",
+   "statute_citation_verbatim": "",
+   "statute_citation_grounded": false,
+   "match_type": "verbatim",
+   "scope": "ratio",
+   "confidence": "high",
+   "method": "llm-extract",
+   "rule_id": "draftly-rule-commonlii-LKCA-1929-10-1",
+   "case_id": "commonlii-LKCA-1929-10",
+   "citation": "35 NLR 133",
+   "court": "LKCA",
+   "year": "1929",
+   "status": "unverified"
+  }
+ ],
  "case_id": "commonlii-LKCA-1929-10",
  "meta": {
   "case_id": "commonlii-LKCA-1929-10",
@@ -19,6 +31,5 @@
   "reported": true,
   "parties": "Thornton Et Al. v. Emanuel Et Al",
   "disposition": "dismissed"
- },
- "rules": []
+ }
 }

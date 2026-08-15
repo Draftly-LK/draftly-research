@@ -1,15 +1,27 @@
 {
  "track": "B",
- "status": "reject:quote-not-found",
+ "status": "ok",
  "model": "qwen2.5:7b",
- "rejected_rule": {
-  "statement": "A minor who executes a deed that is ipso jure void does not have an obligation to institute an action to get rid of the effect of his act because the transfer is a nullity and the dominium remains in him.",
-  "supporting_quote": "\"But there is clear authority both in the Roman-Dutch law and in the English law on the point. ... But there is this important difference, that in the one case the action is vindicatory one and in the other a restitutio in integrum\"",
-  "statute_citation_verbatim": null,
-  "statute_section": null,
-  "scope": "ratio",
-  "confidence": "high"
- },
+ "rules": [
+  {
+   "statement": "A minor who has executed a deed which is ipso jure void can recover the property by an action rei vindicatio as the dominium had not passed.",
+   "supporting_quote": "\"Where the contract was void ab initio the proper Roman-Dutch action was the action rei vindicatio as the dominium had not passed, but where the contract was voidable only, the Roman-Dutch action was restitutio in integrum.\"",
+   "statute_section": "",
+   "section_status": "none",
+   "statute_citation_verbatim": "",
+   "statute_citation_grounded": false,
+   "match_type": "verbatim",
+   "scope": "ratio",
+   "confidence": "high",
+   "method": "llm-extract",
+   "rule_id": "draftly-rule-commonlii-LKCA-1944-43-1",
+   "case_id": "commonlii-LKCA-1944-43",
+   "citation": "45 NLR 499",
+   "court": "LKCA",
+   "year": "1944",
+   "status": "unverified"
+  }
+ ],
  "case_id": "commonlii-LKCA-1944-43",
  "meta": {
   "case_id": "commonlii-LKCA-1944-43",
@@ -19,6 +31,5 @@
   "reported": true,
   "parties": "Haturusinghe v. Ukku Amma",
   "disposition": "allowed"
- },
- "rules": []
+ }
 }

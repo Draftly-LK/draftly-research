@@ -1,15 +1,27 @@
 {
  "track": "B",
- "status": "reject:quote-not-found",
+ "status": "ok",
  "model": "qwen2.5:7b",
- "rejected_rule": {
-  "statement": "The mortgagee can enforce their mortgage against the same share of the land mortgaged, as determined by the preliminary decree.",
-  "supporting_quote": "\"These words I assume are intended to be an interpretation of the words 'the share in severalty allotted to his mortgagor' as set out in the proviso to section 12. The mortgagee can therefore enforce his mortgage against, in the words of Fernando v. Silva (supra), 'the same share of the land mortgaged,'\"",
-  "statute_citation_verbatim": null,
-  "statute_section": null,
-  "scope": "ratio",
-  "confidence": "high"
- },
+ "rules": [
+  {
+   "statement": "The mortgagee can enforce his mortgage against the same share of the land mortgaged, as determined by the lower court upon further evidence.",
+   "supporting_quote": "\"These words I assume are intended to be an interpretation of the words 'the share in severalty allotted to his mortgagor' as set out in the proviso to section 12. The question then arises what, in this case, following on the Sale is 'the share of the land mortgaged.'\"",
+   "statute_section": "",
+   "section_status": "none",
+   "statute_citation_verbatim": "",
+   "statute_citation_grounded": false,
+   "match_type": "verbatim",
+   "scope": "ratio",
+   "confidence": "high",
+   "method": "llm-extract",
+   "rule_id": "draftly-rule-commonlii-LKCA-1928-75-1",
+   "case_id": "commonlii-LKCA-1928-75",
+   "citation": "30 NLR 100",
+   "court": "LKCA",
+   "year": "1928",
+   "status": "unverified"
+  }
+ ],
  "case_id": "commonlii-LKCA-1928-75",
  "meta": {
   "case_id": "commonlii-LKCA-1928-75",
@@ -19,6 +31,5 @@
   "reported": true,
   "parties": "Godage v. Dias",
   "disposition": "set-aside"
- },
- "rules": []
+ }
 }

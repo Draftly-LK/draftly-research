@@ -180,3 +180,8 @@ total_prompt_tokens": 1197494, "total_completion_tokens": 94135, "total_calls": 
 [revalidate] checked=1184 recovered=329 | {'rules': 3381, 'high_confidence': 3381, 'meta': 3703, 'rejects': 863}
 [revalidate] checked=855 recovered=27 | {'rules': 3408, 'high_confidence': 3408, 'meta': 3703, 'rejects': 836}
 [revalidate] checked=828 recovered=734 | {'rules': 4142, 'high_confidence': 3408, 'meta': 3703, 'rejects': 102}
+[redo] matching cache cases=102 statuses=('llm-error', 'reject:quote-not-found') model=qwen2.5:7b allow_fuzzy=False budget=0
+[redo done] re-ran=102 recovered=19 llm_calls=102 | {'rules': 4161, 'high_confidence': 3427, 'meta': 3703, 'rejects': 83}
+[usage] {"by_model": {"qwen2.5:7b": {"prompt": 220408, "completion": 17736, "calls": 102}}, "total_prompt_tokens": 220408, "total_completion_tokens": 17736, "total_calls": 102, "http_attempts": 102}
+OUTPUTS -> C:\Users\ASUS\Desktop\DSEP\Draftly\scripts\case-law-information-extraction\output
+otal_prompt_tokens": 220408, "total_completion_tokens": 17736, "total_calls": 102, "http_attempts": 102}

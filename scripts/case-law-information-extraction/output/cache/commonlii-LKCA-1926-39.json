@@ -1,15 +1,27 @@
 {
  "track": "B",
- "status": "reject:quote-not-found",
+ "status": "ok",
  "model": "qwen2.5:7b",
- "rejected_rule": {
-  "statement": "A deed of gift given as dowry, or in contemplation of marriage, would be irrevocable if it operated as an inducement to contract the marriage.",
-  "supporting_quote": "'It is said that this is a dowry, and that dowry is usually the inducement agreed upon, in the course of negotiations for a marriage, for contracting the marriage. That may be so in some cases, but the proposition is not one of universal application. A conveyance of land by father to, or for the benefit of, his daughter by way of dowry on her marriage is, prima fade, a conveyance for valuable consideration.'",
-  "statute_citation_verbatim": null,
-  "statute_section": null,
-  "scope": "ratio",
-  "confidence": "high"
- },
+ "rules": [
+  {
+   "statement": "A deed of gift given as dowry to a bride by her parents is irrevocable, even if it is not an inducement for the marriage.",
+   "supporting_quote": "The husband derives advantage from the property settled on the wife. He is relieved to some extent from the provision which he would otherwise have to make for her. If he lived amicably with his wife, her income would contribute to the expenditure of the family which would otherwise fall on him exclusively.",
+   "statute_section": "",
+   "section_status": "none",
+   "statute_citation_verbatim": "",
+   "statute_citation_grounded": false,
+   "match_type": "verbatim",
+   "scope": "ratio",
+   "confidence": "high",
+   "method": "llm-extract",
+   "rule_id": "draftly-rule-commonlii-LKCA-1926-39-1",
+   "case_id": "commonlii-LKCA-1926-39",
+   "citation": "27 NLR 433",
+   "court": "LKCA",
+   "year": "1926",
+   "status": "unverified"
+  }
+ ],
  "case_id": "commonlii-LKCA-1926-39",
  "meta": {
   "case_id": "commonlii-LKCA-1926-39",
@@ -19,6 +31,5 @@
   "reported": true,
   "parties": "Kandappa v. Charles Appu",
   "disposition": "dismissed"
- },
- "rules": []
+ }
 }

@@ -1,15 +1,27 @@
 {
  "track": "B",
- "status": "reject:quote-not-found",
+ "status": "ok",
  "model": "qwen2.5:7b",
- "rejected_rule": {
-  "statement": "A proctor appointed under a power of attorney cannot receive money on behalf of the plaintiff to constitute such payment, unless specifically authorized by the power of attorney.",
-  "supporting_quote": "\"Where a power of attorney authorized a person to ask, demand, sue for, recover and receive any sum or sums of money due from the defendants, it was not sufficient that the proctor should be empowered to sue for and recover such sums, but he must also have authority to receive payment on behalf of the plaintiff. Where a power of attorney did not confer this authority, the proctor had no power to receive money on behalf of the plaintiff so as to constitute the payment to the proctor, a payment to the plaintiff.\"",
-  "statute_citation_verbatim": null,
-  "statute_section": null,
-  "scope": "ratio",
-  "confidence": "high"
- },
+ "rules": [
+  {
+   "statement": "The court ruled that Boake had no authority to delegate his right of receiving payment and granting a release, even if the first and second defendants were willing to make payments through de Vos.",
+   "supporting_quote": "Boake had no power to delegate to de Vos his right of receiving payment and granting a release.",
+   "statute_section": "",
+   "section_status": "none",
+   "statute_citation_verbatim": "",
+   "statute_citation_grounded": false,
+   "match_type": "verbatim",
+   "scope": "ratio",
+   "confidence": "high",
+   "method": "llm-extract",
+   "rule_id": "draftly-rule-commonlii-LKCA-1935-51-1",
+   "case_id": "commonlii-LKCA-1935-51",
+   "citation": "36 NLR 369",
+   "court": "LKCA",
+   "year": "1935",
+   "status": "unverified"
+  }
+ ],
  "case_id": "commonlii-LKCA-1935-51",
  "meta": {
   "case_id": "commonlii-LKCA-1935-51",
@@ -19,6 +31,5 @@
   "reported": true,
   "parties": "Marshall v. Seneviratne",
   "disposition": "dismissed"
- },
- "rules": []
+ }
 }

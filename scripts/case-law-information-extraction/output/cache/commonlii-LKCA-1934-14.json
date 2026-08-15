@@ -1,15 +1,27 @@
 {
  "track": "B",
- "status": "reject:quote-not-found",
+ "status": "ok",
  "model": "qwen2.5:7b",
- "rejected_rule": {
-  "statement": "An assignment of a decree, being prior in date to the seizure by a judgment-creditor, takes priority over the latter's claim.",
-  "supporting_quote": "\"Indeed section 254 seems to say so almost in terms for the seizing creditor is only to be deemed the assignee as of the date of the seizure made by the person against whom he is executing the writ of execution, so far as that person's interest extends. At the date of the seizure the interest of the original plaintiff in this decree had ceased for he had assigned it by assignment No. 309 of September 2, 1931.\"",
-  "statute_citation_verbatim": null,
-  "statute_section": null,
-  "scope": "ratio",
-  "confidence": "high"
- },
+ "rules": [
+  {
+   "statement": "An assignment of a decree, being prior in date to the seizure by a judgment-creditor, takes priority over the latter's claim.",
+   "supporting_quote": "\"The assignment in favour of the appellant has not been challenged on the ground that it is in fraud of creditors or on any ground upon which it might legally be impeached. It is therefore unexceptionable and being an assignment in writing of a decree prior to the seizure is entitled to preference.\"",
+   "statute_section": "",
+   "section_status": "none",
+   "statute_citation_verbatim": "",
+   "statute_citation_grounded": false,
+   "match_type": "verbatim",
+   "scope": "ratio",
+   "confidence": "high",
+   "method": "llm-extract",
+   "rule_id": "draftly-rule-commonlii-LKCA-1934-14-1",
+   "case_id": "commonlii-LKCA-1934-14",
+   "citation": "35 NLR 342",
+   "court": "LKCA",
+   "year": "1934",
+   "status": "unverified"
+  }
+ ],
  "case_id": "commonlii-LKCA-1934-14",
  "meta": {
   "case_id": "commonlii-LKCA-1934-14",
@@ -19,6 +31,5 @@
   "reported": true,
   "parties": "Kailasan Pillai v. Palaniappa Chettiar",
   "disposition": "allowed"
- },
- "rules": []
+ }
 }

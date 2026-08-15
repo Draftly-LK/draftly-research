@@ -1,15 +1,27 @@
 {
  "track": "B",
- "status": "reject:quote-not-found",
+ "status": "ok",
  "model": "qwen2.5:7b",
- "rejected_rule": {
-  "statement": "The learned trial Judge's failure to construe the letter and provide a clear direction on its meaning, coupled with the admission of inadmissible evidence, resulted in a misdirection that affected the jury's ability to properly determine if the property was Harris' or the appellant's.",
-  "supporting_quote": "\"Now, the meaning of the letter regarded in the light of the surrounding circumstances, of which evidence was properly admissible, is reasonably clear. ... On this view of the letter it is plain, in their Lordships' judgment, that it afforded no evidence that the monies were paid to the appellant as agent for Harris or that such monies by reason of the payment to the appellant became Harris' property.\"",
-  "statute_citation_verbatim": "By section 244 (1) (b) of the Criminal Procedure Code it is the duty of the Judge to decide upon the meaning and construction of all documents given in evidence at the trial.",
-  "statute_section": "SRC244-s1",
-  "scope": "ratio",
-  "confidence": "high"
- },
+ "rules": [
+  {
+   "statement": "The evidence did not support the conclusion that the property was Harris' property, as the letter indicated it was a private arrangement between the appellant and the Syndicate.",
+   "supporting_quote": "On this view of the letter it is plain, in their Lordships' judgment, that it afforded no evidence that the monies were paid to the appellant as agent for Harris or that such monies by reason of the payment to the appellant became Harris' property. On the contrary, it was an essential feature of what was done that the arrangement should remain a private one between the appellant and the Syndicate, of which no one else was to know anything.",
+   "statute_section": "",
+   "section_status": "none",
+   "statute_citation_verbatim": "",
+   "statute_citation_grounded": false,
+   "match_type": "verbatim",
+   "scope": "ratio",
+   "confidence": "high",
+   "method": "llm-extract",
+   "rule_id": "draftly-rule-commonlii-LKCA-1932-26-1",
+   "case_id": "commonlii-LKCA-1932-26",
+   "citation": "34 NLR 225",
+   "court": "LKCA",
+   "year": "1932",
+   "status": "unverified"
+  }
+ ],
  "case_id": "commonlii-LKCA-1932-26",
  "meta": {
   "case_id": "commonlii-LKCA-1932-26",
@@ -19,6 +31,5 @@
   "reported": true,
   "parties": "King v. Godamune",
   "disposition": ""
- },
- "rules": []
+ }
 }
