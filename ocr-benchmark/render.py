@@ -102,6 +102,9 @@ def render_doc(
     cheaply on a cache hit rather than stored, since it depends only on the
     variant and the image size.
     """
+    if pdf_path.suffix.lower() != ".pdf":
+        return _render_image(pdf_path, dpi, variant, use_cache)
+
     doc_id = pdf_path.name
     out: list[RenderedPage] = []
     pdf = pdfium.PdfDocument(pdf_path)
@@ -141,6 +144,41 @@ def render_doc(
     finally:
         pdf.close()
     return out
+
+
+def _render_image(
+    path: Path, dpi: int, variant: str, use_cache: bool
+) -> list[RenderedPage]:
+    """A photographed or scanned page that is already an image.
+
+    Roughly a third of the corpus is JPEG photos of documents rather than PDFs,
+    so they are first-class inputs. There is no PDF page geometry to scale, so
+    `dpi` only records which cache slot this is; the pixels are whatever the
+    camera produced.
+    """
+    dest = cache_path(path.name, 1, dpi, variant)
+    cached = _load_cached(dest, 1, dpi, variant) if use_cache else None
+    if cached is not None:
+        return [cached]
+
+    raw = Image.open(path).convert("RGB")
+    blank = not image_has_content(raw)
+    rotation, confidence = detect_orientation(raw)
+    skew = estimate_skew(raw) if variant in ("deskew", "full") else 0.0
+    processed, affine = apply_variant(raw, variant)
+    page = RenderedPage(
+        page_no=1,
+        image=processed,
+        dpi=dpi,
+        variant=variant,
+        transform_to_original=affine,
+        blank=blank,
+        rotation_applied=rotation if variant != "original" else 0,
+        rotation_confidence=confidence,
+        skew_corrected=skew,
+    )
+    _save_cached(dest, page)
+    return [page]
 
 
 def _sidecar(dest: Path) -> Path:

@@ -21,15 +21,14 @@
         "exactMatch": null,
         "wilson95": null
       },
-      "outcomes": {
-        "missing": 2
-      },
+      "outcomes": {},
       "ambiguousExcluded": 0,
-      "omissionRate": 1.0,
+      "omissionRate": null,
       "inventedValueRate": null,
-      "coverage": 0.0,
+      "coverage": null,
       "provenance": {},
-      "kindAccuracy": 0.0,
+      "kindAccuracy": null,
+      "byMatter": {},
       "cost": {
         "calls": 3,
         "estimatedUsd": 0.0,
@@ -70,6 +69,7 @@
       "coverage": null,
       "provenance": {},
       "kindAccuracy": null,
+      "byMatter": {},
       "cost": {
         "calls": 0,
         "estimatedUsd": 0,
@@ -114,10 +114,18 @@
         "region": 8
       },
       "kindAccuracy": 1.0,
+      "byMatter": {
+        "synthetic": {
+          "documents": 1,
+          "scored": 8,
+          "correct": 8,
+          "exactMatch": 1.0
+        }
+      },
       "cost": {
         "calls": 0,
         "estimatedUsd": 0.0,
-        "latencyMsTotal": 21.1
+        "latencyMsTotal": 18.6
       },
       "textMetrics": {
         "status": "no-ground-truth",

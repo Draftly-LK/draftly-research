@@ -1,6 +1,6 @@
 """Shared config for the case-law information-extraction pipeline.
 
-Loads .env (NVIDIA_API_KEY), defines model tiers, paths, and the NVIDIA NIM
+Loads .env, defines model tiers, paths, and the NVIDIA NIM
 endpoint. Everything downstream imports from here.
 """
 
@@ -16,7 +16,6 @@ load_dotenv(dotenv_path=ROOT / ".env")
 
 # --- NVIDIA NIM (OpenAI-compatible) ---
 BASE_URL = os.environ.get("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1")
-API_KEY = os.environ.get("NVIDIA_API_KEY", "")
 
 # Two tiers: cheap workhorse for the bulk, strong for escalation on hard cases.
 MODEL_CHEAP = os.environ.get("DRAFTLY_MODEL_CHEAP", "meta/llama-3.1-8b-instruct")

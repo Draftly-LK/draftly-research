@@ -92,31 +92,45 @@ def expand(spec: dict[str, Any], run_id: str, ablation: str | None) -> list[tupl
 
 # ── documents ────────────────────────────────────────────────────────────────
 def expected_fields() -> dict[str, dict[str, Any]]:
-    if not config.EXPECTED_FIELDS.is_file():
-        raise SystemExit(
-            f"expected-fields.json not found at {config.EXPECTED_FIELDS}\n"
-            "Set DRAFTLY_OCR_BENCH_INPUTS to the bundle directory."
-        )
-    return json.loads(config.EXPECTED_FIELDS.read_text(encoding="utf-8"))
+    """Expectations across every matter, keyed by "<matter>/<filename>".
 
-
-def input_docs(selector: str | None = None) -> list[Path]:
-    """Every PDF in the bundle, sorted.
-
-    Unlabelled documents are included on purpose: they carry no field score but
-    they do feed the cross-run agreement matrix and the transcript metrics.
+    Only some matters are labelled. An unlabelled matter is not an error: those
+    documents still feed cross-run agreement, transcript metrics and cost, they
+    just do not contribute a field score.
     """
-    docs = sorted(config.INPUTS.glob("*.pdf"))
+    out: dict[str, dict[str, Any]] = {}
+    for case in config.case_dirs():
+        path = config.expected_fields_path(case)
+        if not path.is_file():
+            continue
+        for name, payload in json.loads(path.read_text(encoding="utf-8")).items():
+            out[f"{case.name}/{name}"] = payload
+    return out
+
+
+def doc_id_for(path: Path) -> str:
+    """Matter-qualified id, because two matters both contain 'source-001-...'."""
+    return f"{path.parent.name}/{path.name}"
+
+
+def input_docs(selector: str | None = None, case_filter: str | None = None) -> list[Path]:
+    docs: list[Path] = []
+    for case in config.case_dirs():
+        if case_filter and case_filter.lower() not in case.name.lower():
+            continue
+        docs.extend(config.case_documents(case))
+
     if selector == "subset":
+        # One document per kind per matter keeps the ablation grids cheap.
         labelled = expected_fields()
-        # One document per kind keeps the ablation grids cheap.
-        seen: set[str] = set()
+        seen: set[tuple[str, str]] = set()
         chosen: list[Path] = []
         for doc in docs:
-            kind = labelled.get(doc.name, {}).get("kind", "other")
-            if kind in seen:
+            kind = labelled.get(doc_id_for(doc), {}).get("kind", "other")
+            marker = (doc.parent.name, kind)
+            if marker in seen:
                 continue
-            seen.add(kind)
+            seen.add(marker)
             chosen.append(doc)
         return chosen
     return docs
@@ -548,9 +562,12 @@ def write_manifest(variant_id: str, cfg: dict, docs: Sequence[Path], status: str
         "schemaVersion": config.SCHEMA_VERSION,
         "datasetId": config.DATASET_ID,
         "datasetVersion": dataset_fingerprint(docs) if docs else "",
-        "expectedFieldsVersion": (
-            sha256_file(config.EXPECTED_FIELDS)[:16] if config.EXPECTED_FIELDS.is_file() else ""
-        ),
+        # Fingerprint of every matter's expectations, so a label edit is visible
+        # in the manifest without the values themselves appearing anywhere.
+        "expectedFieldsVersion": sha256_text(
+            json.dumps(expected_fields(), sort_keys=True)
+        )[:16],
+        "matters": sorted({d.parent.name for d in docs}),
         "models": {"classify": cfg.get("classifyModel"), "extract": cfg.get("extractModel")},
         "detector": cfg.get("detector"),
         "temperature": cfg.get("temperature"),
@@ -579,7 +596,11 @@ def execute(variant_id: str, cfg: dict, limit: int | None, dry_run: bool,
             resume: bool = True) -> None:
     started = datetime.now(timezone.utc).isoformat()
     pipeline = PIPELINES[cfg["pipeline"]]
-    docs = [] if cfg.get("docs") == "synthetic" else input_docs(cfg.get("docs"))
+    docs = (
+        []
+        if cfg.get("docs") == "synthetic"
+        else input_docs(cfg.get("docs"), cfg.get("caseFilter"))
+    )
     if limit is not None:
         docs = docs[:limit]
 
@@ -614,7 +635,7 @@ def execute(variant_id: str, cfg: dict, limit: int | None, dry_run: bool,
     processed = 0
 
     for doc in targets:
-        doc_id = doc.name if doc else "synthetic"
+        doc_id = doc_id_for(doc) if doc else "synthetic"
         if doc_id in already:
             print(f"[{variant_id}] {doc_id}: cached")
             continue
@@ -666,6 +687,9 @@ def _count_pages(docs: Sequence[Path], cap: int | None = None) -> int:
 
     total = 0
     for doc in docs:
+        if doc.suffix.lower() != ".pdf":
+            total += 1  # a photographed page is one page
+            continue
         pdf = pdfium.PdfDocument(doc)
         try:
             total += min(len(pdf), int(cap)) if cap else len(pdf)
@@ -679,6 +703,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("runs", nargs="+", help="run ids from runs.yaml, e.g. A B D stub")
     parser.add_argument("--ablation", help="expand an ablation axis, e.g. dpi")
     parser.add_argument("--limit", type=int, help="first N documents only")
+    parser.add_argument("--case", help="only matters whose folder name contains this")
     parser.add_argument("--dry-run", action="store_true", help="plan and cost, no calls")
     parser.add_argument("--no-resume", action="store_true", help="re-read cached documents")
     parser.add_argument("--stub-noise", type=float, default=0.0,
@@ -692,6 +717,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         for variant_id, cfg in expand(spec, run_id, args.ablation):
             if args.stub_noise:
                 cfg["stubNoise"] = args.stub_noise
+            if args.case:
+                cfg["caseFilter"] = args.case
             execute(variant_id, cfg, args.limit, args.dry_run, resume=not args.no_resume)
     return 0
 

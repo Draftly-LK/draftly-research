@@ -12,6 +12,7 @@ dependencies = [
     "google-cloud-storage>=3.12.1",
     "markdownify>=1.2.3",
     "onnxruntime>=1.27.0",
+    "openai>=2.54.0",
     "pandas>=3.0.3",
     "python-dotenv>=1.2.2",
     "streamlit>=1.47.0",
@@ -39,6 +40,11 @@ dependencies = [
 # and is already installed.
 surya = ["surya-ocr>=0.6.0"]
 
+# docTR (Apache-2.0) is the licence-safe box-producing engine, and it reads the
+# numeric identifiers rapidocr misses on these scans. Optional only because it
+# needs torch; torch is already present in this environment.
+doctr = ["python-doctr>=1.0.0"]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
@@ -48,6 +54,9 @@ packages = ["src/draftly"]
 
 [tool.uv.sources]
 cloudscraper = { git = "https://github.com/VeNoMouS/cloudscraper.git" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
 
 [dependency-groups]
 dev = [
