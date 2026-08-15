@@ -1,39 +1,158 @@
-# Claude Instructions
+# CLAUDE.md
 
-## Writing Style
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-When editing or generating project-facing prose, read and follow:
+## What this repo is
 
-```text
-.agents/skills/avoid-ai-writing/SKILL.md
+Draftly is a lawyer-in-the-loop platform for Sri Lankan legal drafting and
+review. This repository is the research side: the legal corpus, extraction
+pipelines, and retrieval engine. Everything it produces is `status=unverified`
+until a lawyer signs it off — never present extraction output or generated
+answers as verified legal fact.
+
+Read `README.md` before making claims about corpus size, coverage, or scoring
+status — those numbers change as pipelines run and are the source of truth,
+not this file.
+
+## Commands
+
+Dependency management is `uv`; Python >=3.12.
+
+```powershell
+uv sync                                    # install deps
+uv run pytest                              # run all tests
+uv run pytest tests/test_statute_retrieval.py -q   # single test file
+uv run pytest tests/test_statute_retrieval.py::StatuteRetrievalTests::test_index_scope_is_statutes_and_amendments_only -q  # single test
+
+# statute retrieval engine
+uv run python -m draftly.retrieval build              # build/refresh the BM25+dense+graph index
+uv run python -m draftly.retrieval search "<query>"
+uv run python -m draftly.retrieval ask "<query>"       # cited, verified-claim-gated answer
+uv run python -m draftly.retrieval evaluate
+uv run python -m draftly.retrieval evaluate-questions  # runs src/questions.md harness
+uv run python -m draftly.retrieval serve               # FastAPI service
+uv run streamlit run apps/statute-retrieval/app.py     # Streamlit Q&A demo
+
+# OCR benchmark (offline, no spend)
+uv run python -m pytest ocr-benchmark/test_ocr_bench.py -q
+uv run python ocr-benchmark/runner.py stub
+uv run python ocr-benchmark/runner.py A --dry-run       # cost a real run, no calls
+uv run python ocr-benchmark/score.py
+
+# case-law rule extraction
+python scripts/case-law-information-extraction/extract_case_rules.py --track A --source commonlii
+python scripts/case-law-information-extraction/extract_case_rules.py --rebuild-only   # 0 credits
+
+# corpus build scripts (re-running produces byte-identical output)
+python scripts/build_section_index.py
+python scripts/build_actions.py
+python scripts/build_section_versions.py
 ```
 
-Use that skill to audit and rewrite text so it sounds direct, specific, and human.
-Apply it to README updates, report/proposal sections, project descriptions, emails,
-and public-facing documentation.
+`GEMINI_API_KEY` (statute retrieval dense channel + answering) and
+`NVIDIA_API_KEY` (case-law extraction) go in `.env`. The retrieval engine
+degrades to lexical-only without a Gemini key.
 
-Keep technical notes clear and grounded in the actual project files. Do not invent
-evidence, links, case details, legal claims, or implementation status.
+## Architecture
 
-## Markdown Quality
+### Statute retrieval engine (`src/draftly/retrieval/`)
 
-Whenever creating or editing Markdown files, run a markdown lint check before finishing.
+The only piece of this repo that is a running application. Scope is
+deliberately narrow: 57 statutes + 18 amendments, no case law. This is
+enforced in code, not just by convention — `corpus.py` has `ALLOWED_KINDS`,
+an `EXPECTED_COUNTS` assertion, and a runtime check that raises if a
+non-statutory document reaches the corpus. Do not widen this scope without
+touching all of `ALLOWED_KINDS`, the two runtime checks, the schema `CHECK`,
+and the answering prompt together — they're a matched set of guards, not
+redundant caution.
 
-Use:
+Query flow: `search.py` fuses three channels via reciprocal-rank fusion —
+lexical (SQLite FTS5/BM25 over section nodes, `index.py`), dense (Gemini
+embeddings, cached per corpus fingerprint under
+`data/processed/retrieval-indexes/`, `embeddings.py`), and graph (a
+deterministic statute graph — cross-references, amendment→target, definitions
+— expanded via personalized PageRank, `graph.py`). `answering.py` then adds
+per-part evidence quotas, a citation gate (every claim must cite a retrieved
+section ID), a claim-level entailment verifier, and one bounded corrective
+retry (query rewrite + re-retrieval) for any answer part left unverified.
+Ablation env vars: `DRAFTLY_DISABLE_DENSE`, `DRAFTLY_DISABLE_GRAPH`,
+`DRAFTLY_SKIP_CORRECTIVE`.
 
-```text
-npx markdownlint-cli2
-```
+The index is content-addressed: `corpus_fingerprint()` hashes the input
+version tag, metadata CSVs, and every document's text; `paths.py`'s
+`fingerprinted_index_db()` names the SQLite file from it. A stale fingerprint
+triggers a rebuild rather than serving drifted results.
 
-The project config ignores vendored/reference Markdown such as `contxt.md` and
-`.agents/**`, and disables line-length noise for URLs and readable prose.
+`section_parser.py` is the known weak point — the section index generated by
+`scripts/build_section_index.py` finds far more Civil Procedure Code sections
+than this parser does from the same source PDF (see README "Known
+limitations"). Don't assume the two agree.
 
-If `npx` cannot install or run the linter, do a manual markdownlint-style check
-for heading spacing, list spacing, line structure, and fenced code blocks. Mention
-the limitation in the final response.
+### Corpus and generated artifacts (`data/processed/`)
 
-## Data Privacy
+`documents.csv` and `source-registry.csv` are the join point between raw
+sources and every downstream pipeline. Several CSVs/JSONL files here
+(`section_versions.jsonl`, `actions.csv`, the section index) are generated —
+check the README's "corpus status" table and the `scripts/build_*.py` that
+produces each before hand-editing anything in `data/processed/`.
 
-The `data/raw/` folder contains private legal documents. Do not publish raw files,
-copy sensitive details into public docs, or use real names/NICs/addresses in demo
-material unless the team has explicitly approved an anonymized version.
+`data/raw/` holds private legal documents — see Data Privacy below.
+`data/legal-sources/` is the curated, citable corpus behind the
+`legal-source-lookup` skill (`.agents/skills/legal-source-lookup/SKILL.md`):
+`manifests/source-registry.csv` is its index of record, `topics/` maps the 20
+curriculum topics to source IDs, `library/` holds the actual files.
+
+### Case-law extraction (`scripts/case-law-information-extraction/`)
+
+Two tracks: Track A is deterministic `Held:`-block extraction from reported
+CommonLII headnotes (no LLM, $0). Track B is bounded LLM extraction over
+unreported judgments, gated by `validate.py`, which rejects any rule whose
+`supporting_quote` is not a verbatim substring of the judgment and nulls any
+`statute_section` not present in the closed statute catalogue. The validator,
+not the model, is what makes a cheap model (Llama 3.1 8B via NVIDIA NIM)
+trustworthy here — preserve that separation if you touch extraction. Runs are
+resumable and idempotent via `cache/<case_id>.json`; credit spend is bounded
+by `--max-llm-calls`.
+
+### OCR benchmark (`ocr-benchmark/`)
+
+Compares Gemini vs. an open-source OCR engine vs. preprocessing variants on
+scanned Sri Lankan conveyancing documents, using one shared field schema and
+normalization. `runner.py` spends money (Gemini calls); `score.py` and
+`viz.py` never do. The `stub` run (`render.synthetic_page()` +
+`engines.stub_read_page`) must always score 100% / 0.00 CER — if it doesn't,
+the harness itself is broken and no other result should be trusted.
+`normalize.assert_no_raw_values` and `config.assert_inputs_private` enforce
+the privacy rules below in code. When inspecting scoring errors, fix the
+pipeline, never the expectations.
+
+### `src/parsers/`
+
+Layout-driven parsing for the CommonLII case-law archive (`scripts/1901-crawler/`
+and `data/commonlii/`), separate from the statute retrieval corpus.
+
+## Writing style
+
+When editing or generating project-facing prose (README updates, reports,
+proposals, project descriptions, emails, public docs), read and apply
+`.agents/skills/avoid-ai-writing/SKILL.md` first. Keep technical notes grounded
+in what the project files actually show — do not invent evidence, links, case
+details, legal claims, or implementation status.
+
+## Markdown quality
+
+Before finishing any Markdown create/edit, run `npx markdownlint-cli2`. The
+config (`.markdownlint-cli2.jsonc`) ignores vendored/reference Markdown
+(`contxt.md`, `.agents/**`) and disables line-length noise. If `npx` can't run
+the linter, do a manual markdownlint-style check (heading spacing, list
+spacing, fenced code blocks) and say so in your response.
+
+## Data privacy
+
+`data/raw/` contains private legal documents; `ocr-benchmark`'s inputs (via
+`DRAFTLY_OCR_BENCH_INPUTS`, default `draftly-platform/inputs/case-001`) are
+real client files with real names, NICs, addresses, and consideration
+amounts. Never publish raw files, copy sensitive details into public docs, or
+use real names/NICs/addresses in demo material unless the team has explicitly
+approved an anonymized version. Clear notebook outputs before committing
+anything that renders client pages.
