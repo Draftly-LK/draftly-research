@@ -1,0 +1,68 @@
+# One config for every run, because the four questions are only answerable if the
+# runs share page rendering, field definitions, output schema and normalization.
+# Six separate files would duplicate the shared settings and let them drift.
+#
+# Ablations are OVERRIDES on a run, not new pipelines: variant_id is
+# "<run>@<axis>=<value>" and the pipeline code never learns an axis exists.
+schemaVersion: 1
+datasetId: case-001-smoke-26p
+
+defaults:
+  dpi: 200 # platform raster_dpi, so run A is comparable to eval_extraction.py
+  variant: original
+  temperature: 0.0
+  classifyModel: gemini-3.1-flash-lite
+  extractModel: gemini-3.5-flash
+  promptId: registry-v1
+  cropPad: 0.02
+
+runs:
+  A:
+    pipeline: gemini_page
+    describe: Gemini on the original page. The baseline, closest to production.
+  B:
+    pipeline: gemini_page
+    variant: full
+    describe: Gemini on the preprocessed page. Isolates the value of preprocessing.
+  C:
+    pipeline: boxes_page
+    variant: full
+    detector: surya
+    requires: [surya]
+    describe: Open-source OCR baseline, read end to end by the box engine.
+  D:
+    pipeline: gemini_page_plus_crops
+    cropKeys: critical
+    describe: Gemini page, then re-read every critical field from its own crop.
+  E:
+    pipeline: boxes_plus_gemini_crops
+    variant: full
+    detector: surya
+    requires: [surya]
+    describe: Detector supplies regions, Gemini reads each one. Local grounding.
+  F:
+    pipeline: reconcile
+    variant: full
+    detector: surya
+    requires: [surya]
+    describe: Gemini and the box engine both read; disagreements are adjudicated.
+  stub:
+    pipeline: stub
+    docs: synthetic
+    describe: Offline deterministic reader over the synthetic fixture. No spend.
+
+# Each axis expands the listed runs into extra variants.
+# `docs: subset` keeps the grids cheap - one page per document kind.
+ablations:
+  dpi:
+    axis: dpi
+    values: [150, 300, 400]
+    apply: [A, B, D]
+    docs: subset
+    maxPagesPerDoc: 2
+  variant:
+    axis: variant
+    values: [original, rotated, deskew, full]
+    apply: [B]
+    docs: subset
+    maxPagesPerDoc: 2

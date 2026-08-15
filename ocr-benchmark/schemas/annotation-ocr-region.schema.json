@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "annotation-ocr-region.schema.json",
+  "title": "OCR region ground truth",
+  "description": "Annotate selected regions rather than transcribing every page. Placed in ocr-benchmark/labels/ocr-region/<docId>-p<NN>.json. `textType` is what makes CER-by-text-type answerable; without it the OCR metrics collapse to one undifferentiated number.",
+  "type": "object",
+  "required": ["docId", "page", "schemaVersion", "regions"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "docId": { "type": "string" },
+    "page": { "type": "integer", "minimum": 1 },
+    "annotator": { "type": "string" },
+    "checkedBy": { "type": "string" },
+    "annotatedAt": { "type": "string", "format": "date-time" },
+    "fullPageTranscript": {
+      "type": ["string", "null"],
+      "description": "Optional whole-page verbatim text. When present, page-level CER/WER become available for this page."
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["regionId", "bbox", "verbatimText"],
+        "properties": {
+          "regionId": { "type": "string" },
+          "bbox": {
+            "type": "array",
+            "items": { "type": "number", "minimum": 0, "maximum": 1 },
+            "minItems": 4,
+            "maxItems": 4,
+            "description": "[x0,y0,x1,y1] normalized, origin top-left, ORIGINAL render frame"
+          },
+          "verbatimText": {
+            "type": "string",
+            "description": "Exact transcription. Do not correct spelling, expand abbreviations, or normalize digits."
+          },
+          "language": { "enum": ["si", "en", "ta", "numeric", "mixed"] },
+          "textType": { "enum": ["printed", "handwritten", "stamp", "table", "diagram-label"] },
+          "legibility": { "enum": ["clear", "partial", "illegible"] },
+          "isCorrected": { "type": "boolean", "description": "Struck through or overwritten on the document" },
+          "ambiguous": { "type": "boolean" },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "annotation-fields.schema.json",
+  "title": "Human field ground truth",
+  "description": "One file per document, placed in ocr-benchmark/labels/fields/<docId>.json. Not produced this pass; the schema exists so labels drop in without reshaping the scorer.",
+  "type": "object",
+  "required": ["docId", "schemaVersion", "fields"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "docId": { "type": "string" },
+    "annotator": { "type": "string", "description": "Who transcribed it" },
+    "checkedBy": { "type": "string", "description": "Independent second reader; required for critical fields" },
+    "resolvedBy": { "type": "string", "description": "Lawyer who resolved a genuine ambiguity" },
+    "annotatedAt": { "type": "string", "format": "date-time" },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "verbatimValue", "page"],
+        "properties": {
+          "key": { "type": "string", "description": "Registry factKey, exactly" },
+          "verbatimValue": {
+            "type": ["string", "null"],
+            "description": "Exactly as it appears on the page, including punctuation and leading zeros. Scored by the OCR benchmark."
+          },
+          "normalizedValue": {
+            "type": ["string", "null"],
+            "description": "Canonical form. Scored by the extraction benchmark."
+          },
+          "page": { "type": "integer", "minimum": 1 },
+          "bbox": {
+            "type": "array",
+            "items": { "type": "number", "minimum": 0, "maximum": 1 },
+            "minItems": 4,
+            "maxItems": 4,
+            "description": "[x0,y0,x1,y1] normalized, origin top-left, in the ORIGINAL render frame"
+          },
+          "regionIds": { "type": "array", "items": { "type": "string" } },
+          "critical": { "type": "boolean" },
+          "textType": { "enum": ["printed", "handwritten", "stamp", "table", "diagram-label"] },
+          "language": { "enum": ["si", "en", "ta", "numeric", "mixed"] },
+          "legibility": { "enum": ["clear", "partial", "illegible"] },
+          "overlap": {
+            "type": "array",
+            "items": { "enum": ["stamp_overlap", "correction", "signature_overlap", "fold", "shadow"] }
+          },
+          "ambiguous": {
+            "type": "boolean",
+            "description": "The document itself cannot be read with confidence. Excluded from accuracy denominators and reported separately. Never invent a value to avoid this flag."
+          },
+          "ambiguityNote": { "type": "string" },
+          "verifiedBy": { "enum": ["human", "human-double", "lawyer"] }
+        }
+      }
+    }
+  }
+}
