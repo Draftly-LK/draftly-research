@@ -460,6 +460,24 @@ PER_JUDGE_RE = re.compile(rf"^Per\s+(?P<judge>[A-Z][A-Za-z.'\- ]+?(?:{JUDGE_TITL
 QUAERE_RE = re.compile(r"^Quaere\b", re.I)
 NUMBERED_RE = re.compile(r"^\(?(?P<num>\d{1,2}|[ivx]{1,4})\)?[.)]\s+", re.I)
 CASES_REFERRED_RE = re.compile(r"^Cases?\s+referred\s+to\b", re.I)
+# Marks the start of the facts/procedural narrative, which follows the rule
+# statement(s) in the headnote. Used to stop a "Held"-equivalent region from
+# running on.
+PROCEDURAL_OPEN_RE = re.compile(
+    r"^THIS\s+(?:was|is)\b|^APPEAL\s+from\b|^APPLICATION\s+for\b", re.I
+)
+# A stronger facts-opener signal, valid ONLY for closing rule_zone_open (an
+# unlabelled rule statement, no "Held" anywhere in the case -- see
+# has_held_marker below). NOT safe to use against in_held: a real holding
+# commonly opens by naming a party ("The petitioner's rights were
+# infringed..."), so applying this to a case that DOES say "Held" would
+# delete real holdings instead of ending a facts narrative. Anchored to the
+# start of the block so it can't fire on a party word mid-sentence.
+FACTS_PARTY_OPEN_RE = re.compile(
+    r"^THE\s+(?:complaint|appellant|respondent|petitioner|defendant|accused|"
+    r"plaintiff|applicant|deceased)\b",
+    re.I,
+)
 
 
 # A date may precede the opinion heading in either order:
@@ -580,6 +598,21 @@ def extract_headnote(blocks, opinion_start: int | None) -> dict:
     per_judge: list[dict] = []
     facts: list[dict] = []
     in_held = False
+    # True for the run of blocks right after the catchwords: some older
+    # reports state the rule there without ever writing the word "Held". Only
+    # engage this when the record has NO "Held" marker anywhere -- those are
+    # exactly the cases where the old code guaranteed empty holdings, so there
+    # is no correct existing behaviour to disturb. A record that DOES use
+    # "Held" is trusted completely instead: its facts/issues paragraphs before
+    # the marker must not be picked up as if they were rule statements.
+    has_held_marker = any(HELD_RE.match(b.text) for b in blocks[:end])
+    rule_zone_open = False
+    # A generous last-resort backstop, not a precision tool -- real stopping
+    # is now PROCEDURAL_OPEN_RE's job (including the "THE <party>" branch).
+    # This only exists to bound the damage on some future, unanticipated
+    # block shape that neither stop signal recognises; it must sit well above
+    # any legitimate multi-part rule (the longest seen so far is ~2.3k chars).
+    rule_zone_chars = 0
 
     for block in blocks[:end]:
         text = block.text
@@ -589,6 +622,7 @@ def extract_headnote(blocks, opinion_start: int | None) -> dict:
         held = HELD_RE.match(text)
         if held:
             in_held = True
+            rule_zone_open = False
             body = text[held.end():].strip()
             if body:  # a bare "Held" heading has its items in later blocks
                 numbered = NUMBERED_RE.match(body)
@@ -618,6 +652,26 @@ def extract_headnote(blocks, opinion_start: int | None) -> dict:
                 "block_index": block.block_index,
             })
             continue
+        # A counsel appearance or the facts narrative starting up ends the
+        # "Held" region too. Without this, a missed opinion-heading detection
+        # (headnote_end() falls back to a fixed block count) lets a single
+        # holding swallow everything through to the end of the judgment.
+        # COUNSEL_RE is written to scan a whole block for a match anywhere,
+        # which is right for extract_counsel() but too loose here: ordinary
+        # judgment prose ("...entered judgment for the plaintiff...") can
+        # match it deep inside a long paragraph. A genuine counsel-appearance
+        # block IS the counsel line, so require the match to start at or near
+        # the front of the block.
+        counsel_match = COUNSEL_RE.search(text)
+        stop_marker = (
+            (counsel_match is not None and counsel_match.start() < 40)
+            or bool(PROCEDURAL_OPEN_RE.match(text))
+        )
+        if in_held and stop_marker:
+            in_held = False
+        # Broader than stop_marker -- only safe for rule_zone_open (see
+        # FACTS_PARTY_OPEN_RE's docstring above).
+        rule_zone_stop = stop_marker or bool(FACTS_PARTY_OPEN_RE.match(text))
         # Catchwords: early dash-separated topic blocks. Italics mark them in
         # clean conversions, but many files lost the markup, so a content
         # heuristic decides; multi-subject headnotes have several such blocks.
@@ -627,18 +681,43 @@ def extract_headnote(blocks, opinion_start: int | None) -> dict:
                 for part in re.split(r"\s*-\s*|-", text)
                 if part.strip(" .")
             )
+            rule_zone_open = not has_held_marker
+            rule_zone_chars = 0
             continue
         if in_held:
-            if holdings:
+            if holdings and len(holdings[-1]["text"]) < 1500:
                 holdings[-1]["text"] += " " + text
-            else:  # first item after a bare "Held" heading
+                continue
+            if not holdings:  # first item after a bare "Held" heading
                 holdings.append({
                     "number": None,
                     "qualifier": None,
                     "text": text,
                     "block_index": block.block_index,
                 })
-        elif catchwords and not block.was_bold and len(text) > 80:
+                continue
+            # Defensive cap: even with the stop markers above, don't let one
+            # holding run away with the rest of the judgment if some other,
+            # unanticipated block shape fails to end it. Fall through and let
+            # this block be classified normally instead.
+            in_held = False
+        if rule_zone_open:
+            if (
+                not rule_zone_stop
+                and not block.was_bold
+                and len(text) > 80
+                and rule_zone_chars < 6000
+            ):
+                holdings.append({
+                    "number": None,
+                    "qualifier": None,
+                    "text": text,
+                    "block_index": block.block_index,
+                })
+                rule_zone_chars += len(text)
+                continue
+            rule_zone_open = False
+        if catchwords and not block.was_bold and len(text) > 80:
             facts.append({"text": text, "block_index": block.block_index})
 
     return {
