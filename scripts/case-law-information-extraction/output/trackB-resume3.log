@@ -1,0 +1,8 @@
+[start] cases=1418 track=B source=official-courts escalate=False max_llm_calls=1500
+  processed 25 | llm_calls=25
+  processed 50 | llm_calls=50
+  processed 75 | llm_calls=75
+  processed 100 | llm_calls=100
+[done] new_processed=106 llm_calls=106 | rules=2166 meta=5121 rejects=3496
+[usage] {"by_model": {"meta/llama-3.1-8b-instruct": {"prompt": 475073, "completion": 11083, "calls": 106}}, "total_prompt_tokens": 475073, "total_completion_tokens": 11083, "total_calls": 106}
+OUTPUTS -> D:\projects\draftly\scripts\case-law-information-extraction\output
