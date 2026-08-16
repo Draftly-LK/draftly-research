@@ -3,18 +3,23 @@
 Stages are deliberately separate, so a parser bug can be fixed by re-running
 stage 2 over the archive rather than re-downloading anything:
 
-    1. crawl  -- year index -> judgment links -> raw HTML in raw/
-    2. parse  -- raw HTML -> cases.jsonl
+    1. crawl  -- year index -> judgment links -> raw HTML in raw/<db>/
+    2. parse  -- raw HTML -> cases-<db>.jsonl
     3. report -- counts, failures, citation yield
 
 Usage:
     python crawl.py --db LKSC --year 1906 --check   # robots + reachability
     python crawl.py --db LKSC --year 1906           # crawl then parse
-    python crawl.py --all-years                     # year indexes -> year-cases.json
-    python crawl.py --parse-only                    # re-parse the archive
+    python crawl.py --db LKSC --all-years            # year indexes -> year-cases-LKSC.json
+    python crawl.py --db LKSC --parse-only           # re-parse the LKSC archive
 
-Stage 2 parses the whole raw/ archive, so cases.jsonl accumulates every
-court-year crawled so far rather than just the one named on the command line.
+Every output is namespaced by --db (raw/<db>/, cases-<db>.jsonl,
+cases-<db>.json, year-cases-<db>.json, parse-failures-<db>.csv), so running
+this for a different database never touches another database's files.
+
+Stage 2 parses the whole raw/<db>/ archive, so cases-<db>.jsonl accumulates
+every year of that court crawled so far rather than just the one named on the
+command line.
 """
 
 from __future__ import annotations
@@ -30,10 +35,16 @@ import fetch as F
 import parse_case as P
 
 HERE = Path(__file__).resolve().parent
-CASES_JSONL = HERE / "cases.jsonl"
-CASES_JSON = HERE / "cases.json"
-YEAR_CASES_JSON = HERE / "year-cases.json"
-FAILURES = HERE / "parse-failures.csv"
+
+
+def output_paths(db: str) -> dict[str, Path]:
+    """Every output file for one database, all namespaced by --db."""
+    return {
+        "cases_jsonl": HERE / f"cases-{db}.jsonl",
+        "cases_json": HERE / f"cases-{db}.json",
+        "year_cases_json": HERE / f"year-cases-{db}.json",
+        "failures": HERE / f"parse-failures-{db}.csv",
+    }
 
 YEARS = (
     1878, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905,
@@ -70,7 +81,7 @@ def check(db: str, year: int, transport: str) -> int:
 
     print(f"\n  reachability of {db} {year} over the {transport} transport:")
     # A live check, so bypass the cache -- a hit would prove nothing about now.
-    f = F.Fetcher(transport=transport)
+    f = F.Fetcher(db, transport=transport)
     url = f"{F.BASE}/lk/cases/{db}/{year}/"
     try:
         status, html = f._fetch_once(url)
@@ -84,13 +95,17 @@ def check(db: str, year: int, transport: str) -> int:
         return 3
 
 
-def crawl(db: str, year: int, transport: str, delay_s: float) -> list[dict]:
+def crawl(db: str, year: int, transport: str, delay_s: float,
+          limit: int = 0) -> list[dict]:
     index_url = f"{F.BASE}/lk/cases/{db}/{year}/"
-    f = F.Fetcher(transport=transport, delay_s=delay_s)
+    f = F.Fetcher(db, transport=transport, delay_s=delay_s)
     print(f"  index: {index_url}")
     page = f.get(index_url, note=f"index:{db}:{year}")
     links = P.extract_links(page.html, index_url)
     print(f"  {len(links)} judgment links found")
+    if limit:
+        links = links[:limit]
+        print(f"  --limit {limit}: downloading only the first {len(links)}")
 
     pages = []
     for i, url in enumerate(links, 1):
@@ -111,7 +126,7 @@ def crawl(db: str, year: int, transport: str, delay_s: float) -> list[dict]:
 
 def crawl_year_indexes(db: str, transport: str, delay_s: float) -> int:
     """Fetch each requested year index and write its downloadable case links."""
-    f = F.Fetcher(transport=transport, delay_s=delay_s)
+    f = F.Fetcher(db, transport=transport, delay_s=delay_s)
     by_year: dict[str, list[dict]] = {}
     failures: list[dict] = []
 
@@ -149,27 +164,28 @@ def crawl_year_indexes(db: str, transport: str, delay_s: float) -> int:
             "years": by_year,
             "failures": failures,
         }
-        YEAR_CASES_JSON.write_text(
+        year_cases_json = output_paths(db)["year_cases_json"]
+        year_cases_json.write_text(
             json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
 
     print(f"\n  {f.summary()}")
-    print(f"  wrote {YEAR_CASES_JSON.name}: {payload['case_count']} cases "
+    print(f"  wrote {year_cases_json.name}: {payload['case_count']} cases "
           f"across {len(YEARS)} years; {len(failures)} failed indexes")
     return 1 if failures else 0
 
 
-def parse_archive() -> tuple[list[dict], list[tuple[str, str]]]:
-    """Stage 2: parse every archived page. No network."""
-    f = F.Fetcher(offline=True)
+def parse_archive(db: str) -> tuple[list[dict], list[tuple[str, str]]]:
+    """Stage 2: parse every archived page for this database. No network."""
+    f = F.Fetcher(db, offline=True)
     records, failures = [], []
-    for meta_path in sorted(F.CACHE_META.glob("*.json")):
+    for meta_path in sorted(f.cache_meta.glob("*.json")):
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
         url = meta["source_url"]
         if not P.PATH_RE.search(url):
             continue  # index pages, not judgments
-        body = F.RAW / f"{F.url_key(url)}.html"
+        body = f.raw / f"{F.url_key(url)}.html"
         if not body.exists():
             continue
         html = body.read_text(encoding="utf-8", errors="replace")
@@ -181,19 +197,21 @@ def parse_archive() -> tuple[list[dict], list[tuple[str, str]]]:
     return records, failures
 
 
-def write_outputs(records: list[dict], failures: list[tuple[str, str]]) -> None:
+def write_outputs(records: list[dict], failures: list[tuple[str, str]],
+                   db: str) -> None:
+    paths = output_paths(db)
     ordered = sorted(records, key=lambda r: (r.get("year", 0),
                                              int(r.get("case_number") or 0)))
-    with CASES_JSONL.open("w", encoding="utf-8") as fh:
+    with paths["cases_jsonl"].open("w", encoding="utf-8") as fh:
         for r in ordered:
             fh.write(json.dumps(r, ensure_ascii=False) + "\n")
-    CASES_JSON.write_text(
+    paths["cases_json"].write_text(
         json.dumps(ordered, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     if failures:
         import csv
-        with FAILURES.open("w", newline="", encoding="utf-8") as fh:
+        with paths["failures"].open("w", newline="", encoding="utf-8") as fh:
             w = csv.writer(fh)
             w.writerow(["url", "error"])
             w.writerows(failures)
@@ -205,8 +223,8 @@ def main() -> int:
     ap.add_argument("--year", type=int, default=1901)
     ap.add_argument("--check", action="store_true")
     ap.add_argument("--all-years", action="store_true",
-                    help="crawl all configured LKSC year indexes and write "
-                         "year-cases.json without downloading judgments")
+                    help="crawl all configured year indexes for --db and write "
+                         "year-cases-<db>.json without downloading judgments")
     ap.add_argument("--parse-only", action="store_true")
     ap.add_argument("--transport", choices=("cloudscraper", "urllib"),
                     default="cloudscraper",
@@ -215,6 +233,9 @@ def main() -> int:
                          "CommonLII currently 403s (see fetch.py)")
     ap.add_argument("--delay", type=float, default=F.DELAY_S,
                     help="seconds between live requests")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="download only the first N judgments from the year "
+                         "index (0 = all) -- for a quick test before a full run")
     a = ap.parse_args()
 
     if a.check:
@@ -227,7 +248,7 @@ def main() -> int:
     if not a.parse_only:
         print(f"CommonLII crawl: {a.db} {a.year} (transport: {a.transport})")
         try:
-            crawl(a.db, a.year, a.transport, a.delay)
+            crawl(a.db, a.year, a.transport, a.delay, limit=a.limit)
         except F.TransportUnavailable as e:
             print(f"\n  STOPPED: {e}")
             return 4
@@ -236,14 +257,15 @@ def main() -> int:
             print("\n  Nothing was downloaded. Run --check for the site's terms.")
             return 3
 
-    records, failures = parse_archive()
-    write_outputs(records, failures)
+    records, failures = parse_archive(a.db)
+    write_outputs(records, failures, a.db)
     print(f"\n  parsed {len(records)} case(s), {len(failures)} failure(s)")
     if records:
         cites = sum(len(r["report_citations"]) for r in records)
         legis = sum(len(r["cited_legislation"]) for r in records)
         print(f"  report citations: {cites} | legislation refs: {legis}")
-        print(f"  wrote {CASES_JSONL.name} and {CASES_JSON.name}")
+        paths = output_paths(a.db)
+        print(f"  wrote {paths['cases_jsonl'].name} and {paths['cases_json'].name}")
     return 0
 
 

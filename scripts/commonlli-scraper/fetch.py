@@ -60,16 +60,17 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-RAW = HERE / "raw"          # source-faithful HTML, one file per URL
-CACHE_META = HERE / "raw" / "_meta"
-FETCH_LOG = HERE / "fetch-log.csv"
+RAW_ROOT = HERE / "raw"      # source-faithful HTML, split into one folder per
+
+
+def raw_dir(db: str) -> Path:
+    """raw/<db>/ -- every file, cache entry, and log for one database lives
+    entirely under here, so two databases can never mix or overwrite."""
+    return RAW_ROOT / db
 
 BASE = "https://www.commonlii.org"
 UA = ("DraftlyResearchBot/0.1 (+University of Moratuwa CS3501 academic research; "
       "legal-corpus retrieval; contact: draftly project team)")
-DOWNLOAD_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-               "AppleWebKit/537.36 (KHTML, like Gecko) "
-               "Chrome/140.0.0.0 Safari/537.36")
 DELAY_S = 2.0               # conservative, per the crawl plan
 TIMEOUT_S = 45
 MAX_RETRIES = 3
@@ -91,8 +92,15 @@ class HTTPStatus(RuntimeError):
         self.code = code
 
 
-def _make_cloudscraper():
-    """A cloudscraper session, or a clear explanation of why there isn't one."""
+def make_cloudscraper():
+    """A cloudscraper session, or a clear explanation of why there isn't one.
+
+    Shared by both transports that need to get past Cloudflare's managed
+    challenge: the crawl/index Fetcher below, and make_download_session()
+    for downloading the actual judgment files. A plain requests.Session
+    (the old make_download_session()) gets a 403 on every request -- the
+    challenge fronts the whole /lk/cases/ tree, not just the index pages.
+    """
     try:
         import cloudscraper
     except ImportError as e:
@@ -119,17 +127,13 @@ def _make_cloudscraper():
 
 
 def make_download_session():
-    """Browser-like session for judgment bytes.
+    """Challenge-solving session for judgment bytes.
 
-    CommonLII serves HTML judgments to a normal browser GET. PDF judgments
-    additionally require the cookie set by their year index and that index as
-    the Referer. Call ``prime_download_year`` before downloading a PDF year.
+    PDF judgments additionally require the cookie set by their year index and
+    that index as the Referer. Call ``prime_download_year`` before
+    downloading a PDF year.
     """
-    import requests
-
-    session = requests.Session()
-    session.headers.update({"User-Agent": DOWNLOAD_UA})
-    return session
+    return make_cloudscraper()
 
 
 def prime_download_year(session, database: str, year: int) -> str:
@@ -158,10 +162,14 @@ class Page:
 
 
 class Fetcher:
-    def __init__(self, *, delay_s: float = DELAY_S, offline: bool = False,
+    def __init__(self, db: str, *, delay_s: float = DELAY_S, offline: bool = False,
                  transport: str = "cloudscraper"):
         if transport not in ("urllib", "cloudscraper"):
             raise ValueError(f"unknown transport: {transport}")
+        self.db = db
+        self.raw = raw_dir(db)
+        self.cache_meta = self.raw / "_meta"
+        self.fetch_log = self.raw / "fetch-log.csv"
         self.delay_s = delay_s
         self.offline = offline
         self.transport = transport
@@ -169,13 +177,13 @@ class Fetcher:
         self.cache_hits = 0
         self._last = 0.0
         self._session = None      # built on first live request, not on import
-        RAW.mkdir(parents=True, exist_ok=True)
-        CACHE_META.mkdir(parents=True, exist_ok=True)
+        self.raw.mkdir(parents=True, exist_ok=True)
+        self.cache_meta.mkdir(parents=True, exist_ok=True)
 
     # --- cache -------------------------------------------------------------
     def _paths(self, url: str) -> tuple[Path, Path]:
         k = url_key(url)
-        return RAW / f"{k}.html", CACHE_META / f"{k}.json"
+        return self.raw / f"{k}.html", self.cache_meta / f"{k}.json"
 
     def _read_cache(self, url: str) -> Page | None:
         body, meta = self._paths(url)
@@ -196,8 +204,8 @@ class Fetcher:
         }, indent=2), encoding="utf-8")
 
     def _log(self, url: str, status: object, nbytes: int, note: str = "") -> None:
-        new = not FETCH_LOG.exists()
-        with FETCH_LOG.open("a", newline="", encoding="utf-8") as f:
+        new = not self.fetch_log.exists()
+        with self.fetch_log.open("a", newline="", encoding="utf-8") as f:
             w = csv.writer(f)
             if new:
                 w.writerow(["url", "status", "bytes", "fetched_at", "note"])
@@ -218,7 +226,7 @@ class Fetcher:
                 return resp.status, resp.read().decode("utf-8", "replace")
 
         if self._session is None:
-            self._session = _make_cloudscraper()
+            self._session = make_cloudscraper()
         resp = self._session.get(url, timeout=TIMEOUT_S)
         if resp.status_code >= 400:
             raise HTTPStatus(resp.status_code, url)
