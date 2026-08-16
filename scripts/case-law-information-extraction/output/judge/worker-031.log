@@ -1,0 +1,1532 @@
+2026-07-19T13:54:42.131548Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+2026-07-19T13:54:47.125266Z ERROR codex_models_manager::manager: failed to refresh available models: timeout waiting for child process to exit
+2026-07-19T13:54:47.141281Z ERROR codex_models_manager::manager: failed to refresh available models: timeout waiting for child process to exit
+OpenAI Codex v0.144.5
+--------
+workdir: D:\projects\draftly
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: high
+reasoning summaries: none
+session id: 019f7aa8-70e5-7a33-90e1-cdb9bd207faf
+--------
+user
+You are a strict Sri Lankan legal auditor. Judge every rule in the file
+scripts/case-law-information-extraction/output/judge/pack-031.json (JSON array).
+
+For EACH rule object: read the judgment text at its "text_path" (repo-relative).
+Judge six booleans STRICTLY, leaning false when uncertain:
+- statement_correct: the statement accurately reflects what THIS court decided.
+- quote_supports: the supporting_quote genuinely supports the statement — false
+  if the quote is counsel's submission, a quotation of another case, a lower
+  court's reproduced judgment, or merely topically related.
+- is_ratio: ratio decidendi/holding, not obiter, not a "semble", not argument.
+- qualifications_ok: no material condition/exception the court stated is dropped.
+- statute_correct: if statute_section is non-empty it is the provision actually
+  construed for this rule; true when empty (nothing claimed).
+- usable: overall safe to show a lawyer as this case's rule (essentially all of
+  the above).
+Write EXACTLY one output file:
+scripts/case-law-information-extraction/output/judge/part-031.jsonl
+— one JSON object per line: {"rule_id": "...", "statement_correct": bool,
+"quote_supports": bool, "is_ratio": bool, "qualifications_ok": bool,
+"statute_correct": bool, "usable": bool, "reason": "one sentence"}.
+Every rule_id from the pack must appear exactly once. Do not modify any other
+file. Reply with one line: judged N rules, M usable.
+
+hook: SessionStart
+hook: SessionStart Failed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Failed
+codex
+I’ll read the shared project context first, then inspect the rule pack and its referenced judgments before writing only the requested JSONL output.
+hook: PreToolUse
+hook: PreToolUse Failed
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -LiteralPath .agents/context/CONTEXT.md' in D:\projects\draftly
+ succeeded in 1534ms:
+# Draftly â€” Project Context
+
+This is the shared handoff file for everyone working on Draftly: Claude Code,
+Codex, and (by copy-paste) ChatGPT. Read **Current State** first. When you
+finish a chunk of work, update it with the `update-context` skill
+(`.agents/skills/update-context/SKILL.md`).
+
+- **Current State** is a living snapshot â€” overwrite it as things change.
+- **Log** is append-only, newest first â€” never rewrite old entries.
+
+---
+
+## Current State
+
+Last updated: 2026-07-19 | by: Claude Code | repo @ 99426f0
+
+### What Draftly is
+
+A **lawyer-in-the-loop legal workflow platform for Sri Lankan legal practice**.
+It has two main workflow tracks: **conveyancing** and **litigation**.
+Conveyancing is the first prototype workflow because it is document-heavy,
+rule-driven, and easier to evaluate; litigation is the second workflow track,
+using an IRAC-style structure for later drafting and review. It is a DSE (ML +
+Software Engineering) product, not a
+research-only project â€” full software lifecycle, demoable at a symposium.
+
+The core framing to preserve: **Draftly is not a form-filling PDF generator and
+not a legal search engine.** It turns an unstructured legal/property document
+bundle into a _verified, structured title record_, checks that record, and
+generates multiple lawyer-reviewable drafts from it.
+
+Core pipeline:
+
+```text
+Documents â†’ Extraction â†’ Linking â†’ Title graph â†’ Checks â†’ Lawyer verification â†’ Drafts
+```
+
+The differentiator vs "template filling": the template is only the final output
+layer. The real work is before generation â€” reading prior deeds, extracting
+facts, linking them across documents, reconstructing the chain of title,
+resolving name variants, and flagging missing/inconsistent information. This is
+also what makes it measurable with ML metrics.
+
+### Academic context
+
+- University of Moratuwa, Dept. of Computer Science & Engineering.
+- Module `In23-S5-CS3501`; Project Idea submitted ~8 July 2026.
+- Group 06: Dhanapala D.H.N., Dilshan A.D.L., De Silva B.K.P.
+- Proposed Supervisor: Dr. Nisansa de Silva. Teaching Assistant: Ovindu A.
+- Title: _Draftly: A Lawyer-in-the-Loop Legal Workflow Platform for Sri Lankan
+  Legal Practice._
+- Positioning: aligns with the broader legal-NLP direction of Dr. Nisansa's
+  **SigmaLaw** work, but focused on practical drafting/workflow automation rather
+  than legal search, sentiment, or case analytics. Existing SL platforms
+  (LawLanka, AI PAZZ, Paralegal.lk, LawCeylon) mainly do research/legislation
+  retrieval; no known end-to-end system reconstructs chain-of-title from a
+  client's own deed bundle.
+
+### Sri Lanka Law College past-paper collection
+
+- `past-papers/` contains 44 validated PDFs (418,512,430 bytes): 19 files from
+  the official Sri Lanka Law College downloads page and 25 public GovDoc archive
+  files.
+- The collection is organized into `entrance/`, `entrance-archive/`,
+  `preliminary/`, `intermediate/`, and `final/`. It includes official year-level
+  bundles through 2023, a 2024 general entrance set, model papers, and GovDoc
+  language variants from 2015-2023 where publicly listed.
+- `past-papers/manifest.csv` records the exact source URL, local path, year,
+  level, medium, byte size, page count, download status, and SHA-256 for every
+  PDF. All 44 entries passed PDF-header, `pdfinfo`, file-size, and checksum
+  validation.
+- The official 2020 Final Year link is only Civil Procedure and Pleadings I in
+  all three media, not a complete Final Year bundle. Some later official bundles
+  are scanned, so subject-level extraction (including LW 307 Conveyancing)
+  requires OCR rather than filename or text-layer matching.
+
+### First use case & outputs
+
+Concrete first use case: **conveyancing title documentation.** Deliverable
+outputs the system generates for lawyer review:
+
+- Title report
+- Pedigree / chain-of-title graph
+- Abstract of Title Deed (AT form)
+- Certificate of ownership
+- Assessor / municipal ownership-transfer letter
+- Deed schedule (à¶‹à¶´à¶½à·šà¶›à¶±à¶º)
+- Missing-document checklist
+- Red-flag / inconsistency report (DOCX/PDF export)
+
+Architecture can support other workflows later (plaints, affidavits, petitions,
+statements of objections, legal notices) but those are out of scope for v1.
+
+### Inputs & extraction (schema, not data)
+
+Input = a **property matter bundle**: current + prior deeds, gift deeds, survey
+/ condominium plans, land-registry (path-iru) extracts, assessment-register
+extracts, municipal receipts, identity docs (entered manually / anonymized),
+existing title reports/pedigrees if any.
+
+Fields extracted per source type (deeds: deed no/type/date, grantor/grantee,
+consideration, notary, attestation, plan no, lot no, extent, boundaries,
+registration refs; survey plans: plan no, surveyor, land name, lots, extent,
+boundaries; municipal/assessment: assessment no, owner, annual value, receipt;
+registry: volume/folio, owners, encumbrances, prior registrations).
+
+Example red flags: prior deed referenced but not uploaded; owner name differs
+across docs; extent/plan/lot mismatch; missing registration ref; undischarged
+mortgage; a party transferring land they never acquired in the chain.
+
+### Data Science components
+
+OCR (Sinhala/English, historical + code-mixed), document classification, NER,
+relation extraction, layout-aware extraction, table extraction, entity
+resolution across name variants, cross-document linking, chain-of-title
+reconstruction, defect/inconsistency detection, grounded generation with
+clause-level provenance. Evaluated against lawyer-verified ground truth.
+
+Metrics: classification accuracy, OCR accuracy, NER F1, key-field extraction
+accuracy, relation-extraction accuracy, chain-of-title reconstruction accuracy,
+defect-detection precision/recall, lawyer-rated draft correctness, provenance
+correctness, time saved vs manual.
+
+### Software Engineering components
+
+Web matter dashboard, accounts/roles, matter creation, document upload +
+pipeline, template library, guided intake forms, fact-review UI,
+evidence/provenance viewer, pedigree viewer, red-flag dashboard, lawyer
+review/edit workspace, version history, audit trail, DOCX/PDF export, access
+control. Domain model centres on a **Matter** (type, parties, documents,
+extracted facts, templates, drafts, review comments, exports).
+
+Tentative stack: Next.js/React + FastAPI + PostgreSQL; repo laid out as
+`apps/web`, `apps/api`, `apps/ml-service`, `packages/shared`, `docs/`, `samples/`.
+
+### Statutory knowledge base â€” the retrieval sub-project (active work)
+
+Separate from the client-document pipeline, Draftly curates a **Sri Lankan
+conveyancing statutory corpus** (the law itself) to support title reasoning and
+consistency checks:
+
+- ~67 sources in `data/legal-sources/manifests/source-registry.csv` (statutes,
+  amendments, gazettes, case-law, guides), 1840â€“2024.
+- 20 curriculum topics under `data/legal-sources/topics/<NN-name>/manifest.md`.
+- Original PDFs in `data/legal-sources/library/`; extracted markdown being built
+  in `data/legal-sources/library-markdown/` (mirrors `library/`; PDF stays the
+  authority, markdown is the working copy).
+- **Retrieval approach (decided): rule-based engine over a BookRAG-shaped
+  index.** Keep BookRAG's _structure_ â€” the tree (`topics â†’ subtopics â†’ section`)
+  plus the caseâ†”statute graph (GT-Link: a `topics:` list per section) â€” but drop all
+  its LLM/embedding machinery. The index is built by curation + regex citation
+  extraction; queries route by a fixed keyword table; ranking is deterministic.
+  BookRAG (arXiv:2512.03413, at `papers/`) is an LLM/embedding method wearing a
+  structured coat â€” we take the coat, not the engine. Grounded and reproducible;
+  embedding retrieval only as a later fallback for questions no rule covers.
+- **Case-law corpus: normalized (2026-07-16).** The processed store contains
+  3,703 CommonLII conveyancing judgments, all 5,474 official court judgments,
+  and 33 historical Internet Archive volumes. Deterministic extraction has
+  produced section-specific candidate links, but every generated edge remains
+  `unverified` until lawyer review.
+- **BM25 retrieval baseline: implemented (2026-07-18).**
+  `notebooks/01_bm25_retrieval_baseline.ipynb` builds a persistent SQLite FTS5
+  index from the canonical processed corpus using heading-aware 320-word chunks
+  with 50-word overlap. It includes all curated non-case legal documents and
+  the 5,121 cases marked as conveyancing matches, collapses chunk hits to one
+  result per document, and evaluates against `evaluation/retrieval-gold.csv`.
+  A smoke run indexed 100 documents into 6,222 chunks and returned grounded
+  evidence for all three sample queries. The gold CSV currently contains only
+  its header, so no benchmark metrics have been claimed yet. Full-run artifacts
+  go to the ignored `data/processed/retrieval-indexes/` and
+  `evaluation/runs/bm25-v1/` directories.
+- **Statutes-only Q&A demo: implemented and reviewed (2026-07-18).**
+  `src/draftly/retrieval/` now parses and indexes exactly 57 statutes plus 18
+  amendments, decomposes the 18 exam questions in `src/questions.md` into 73
+  subquestions, retrieves with source-aware BM25 and reciprocal-rank fusion,
+  and produces bounded Gemini answers with claim-level citation and relevance
+  checks. The Streamlit app is at `apps/statute-retrieval/app.py`. Index builds
+  use a process lock, closed SQLite connections, and an atomic temporary-file
+  replacement to remain reliable on Windows. Known missing sources cause
+  explicit partial answers or abstention. Interleaved OCR in `SRC004:s23`
+  through `SRC004:s27`
+  is excluded from answer evidence until a verified transcription exists.
+  Current development retrieval results on ten unverified labels are
+  Recall@5 0.59, Recall@10 0.6567, MRR 0.6893, and nDCG@10 0.5840. The full
+  18-question Gemini evaluation completes with no runtime errors: 14 questions
+  return partial answers and 4 abstain for insufficient authority. The verifier
+  accepted 44 claims covering 37 of 73 requested parts. These are machine
+  citation-support checks, not legal-correctness scores; lawyer gold labels
+  remain the required publication/deployment gate. Final artifacts are under
+  `evaluation/runs/statute-qa-v2-final/`, and 35 automated tests pass.
+
+### Next: bounded-LLM enrichment (planned, grounded)
+
+Two LLM passes on top of the deterministic corpus â€” both **bounded** (closed
+choice + validated output, never free generation), cheap, and left `unverified`
+until lawyer review:
+
+- **Citation disambiguation** â€” resolve the ~62k `unresolved_citations.csv`
+  mentions (mostly bare "section N" with no nearby act; many are noise â€” Roman-law
+  / Digest false positives). Pipeline: (1) deterministic **pre-filter** to drop
+  obvious non-citations first; (2) give the model the **full 90-statute catalogue**
+  as the allowed set (it fits â€” grounding: pick only a real `source_id`) + the
+  **case's context** (acts already cited, topic) as the disambiguating prior +
+  an **abstain** option; (3) **validate** `source_id âˆˆ registry` and section
+  exists â†’ else stays unresolved. Menu size isn't the disambiguator; context is.
+
+- **Rule extraction (the payload)** â€” for each judgment, capture the **rule it
+  establishes**, stored WITH a reference to the case (a case = authority for a
+  rule). **Headnote-first**: for reported NLR/SLR cases the headnote _is_ the
+  rule (cheap, high quality); for unreported court judgments the bounded LLM
+  extracts a **quote-backed** rule. Output `rules.csv`:
+  `{rule_id, statement, supporting_quote, statute_section, topics, case_ref,
+  confidence, status=unverified}`. Retrieval then returns
+  `section â†’ rules â†’ each rule cites its case`. Guardrails: extractive/quote-backed
+  (quote must appear in the judgment), abstain when no clean rule, lawyer-sample
+  before trust. Copyright: SLR headnotes are Council-of-Law-Reporting copyright â€”
+  internal use only, don't republish (or store an extractive paraphrase + citation).
+
+- **Model:** cheap + swappable via an OpenAI-compatible client â€” default
+  **NVIDIA NIM** (`integrate.api.nvidia.com`, free dev tier) with a small instruct
+  model (Llama-3.1-8B / Qwen2.5-7B); can swap to local Ollama or Claude/Gemini
+  with no code change. A small model is safe because the **validation layer**, not
+  the model, guards correctness. After pre-filtering, volume is a few thousand
+  short calls â†’ effectively free.
+
+### Rule-extraction evaluation â€” provisional NO-GO (2026-07-18)
+
+Before the full ~3,179-case no-headnote run, a **pre-registered ablation +
+holdout study** was run (`evaluation/runs/caselaw-ablation-v1/`, notebook
+`notebooks/02_caselaw_extraction_validation.ipynb`). Findings that change the plan:
+
+- **Grounding â‰  correctness (the headline).** On the 100-case holdout: 74%
+  accepted, **100% independently quote-grounded**, yet only **~58% judged
+  _usable_** (Claude-Opus subagent judge, a proxy; a human `lawyer-labels.csv`
+  pack of 74 rows is the authoritative gate). So the verbatim gate is necessary,
+  not sufficient â€” it cannot catch obiter, borrowed quotes, or wrong statutes.
+- **Windowing ablation overturned the earlier cue-window idea:** for the small
+  8B, accept rate is monotonic in _less_ context â€” naive head+tail (0.83) >
+  cue-aware (0.73) > full text (0.63) > 70B+full (0.55). **Deploy the naive 8B
+  window** for the mass run; the cue-aware/16K changes were counterproductive.
+- **Statute attribution is the weak link (~19% wrong, worst dimension).** Cause:
+  the model only gets statute _titles_ (no text) and _guesses_ the section; the
+  corpus is 68% pre-1950 and construes repealed statutes not in the catalogue
+  (Partition Ordinance 1863/1951, Fiscal's Ordinance 1867, Courts Ordinance 1889,
+  Public Trustee, Privy Council Appeal â€” still to be downloaded and added).
+
+Fixes applied (code) toward a re-run: extraction now emits
+`statute_citation_verbatim` (statute+section copied from the judgment, kept even
+for out-of-catalogue statutes), an explicit common-law/no-statute option, and a
+"never guess source_id/section + ratio-only + not-borrowed-quote" instruction;
+`llm_client` now counts billable HTTP attempts; **50 of 85 statutes are now
+wired to their on-disk markdown** and a section index built (`data/legal-sources/
+derived/statute-section-index.json`, 3,547 sections) so section verification can
+become real. **Next:** re-run the eval harness with naive window + these fixes +
+deterministic section resolution, then get the human lawyer labels before any
+full run.
+
+### Statute QA agent â€” SOTA upgrade (2026-07-19, eval in progress)
+
+The statutes-only QA slice (`src/draftly/retrieval/` + `apps/statute-retrieval/`)
+was researched, reviewed, and upgraded toward state of the art in one pass:
+
+- **Research:** 31 verified papers + 3 annotated notes files in `papers/qa-agent/`
+  (agentic RAG: Self-RAG/CRAG/IRCoT/Plan\*RAG/Search-o1â€¦; graph RAG:
+  HippoRAG 1+2/GraphRAG/RAPTOR/SAT-Graph/LegalGraphRAGâ€¦; legal QA: SARA/
+  LegalBench(-RAG)/CLERC/Chain-of-Logic/Stanford legal-retrieval benchmark/
+  hallucination studies). Converged recipe: hybrid BM25+dense at section
+  granularity, deterministic graph + PPR for multi-hop (skip LLM-built graphs on
+  a closed corpus), statutory-vocabulary query restatement, pinpoint citations
+  enforced per claim, claim-level verification with calibrated refusal.
+- **Review** (`papers/qa-agent/review-and-plan.md`): generation side was already
+  SOTA-aligned (citation gate + entailment verifier + honest abstention); all
+  gaps were retrieval-side (single-shot, lexical-only, structure-blind, global
+  evidence pool, hand-coded hints).
+- **Implemented:** `graph.py` (deterministic statute graph, 15,810 edges â€”
+  cross-refs, amendmentâ†’principal targets, definitions â€” with personalized-
+  PageRank expansion); `embeddings.py` (Gemini `gemini-embedding-001` dense
+  channel, 5,126 cached vectors incl. chunked OCR mega-sections, graceful
+  lexical-only fallback); three-channel RRF fusion + densest-window excerpts in
+  `search.py`; per-part evidence quotas + CRAG-style corrective retry (statutory
+  query rewrites, same gate/verifier) in `answering.py`; ablation env switches
+  (`DRAFTLY_DISABLE_DENSE/GRAPH`, `DRAFTLY_SKIP_CORRECTIVE`).
+- **Verified live:** 2025 exam Q3.1 now retrieves Prevention of Frauds s.2 +
+  BOTH amendments together (graph edges); the Somar Notaries question's part 4
+  was answered on the corrective pass. Known corpus defect surfaced: 42 OCR
+  mega-sections (worst: Notaries Ordinance s.31 fused into `SRC014:s30`, 22K
+  chars; CPC has 22 such) â€” mitigated by chunked embeddings + densest-window
+  excerpts, but a re-extraction of those sources is the real fix.
+- **Eval done (quota-limited):** baseline 42 verified claims / 52% part
+  coverage / 4 full abstentions; upgraded (best valid window) 46 claims / 53% /
+  2 abstentions â€” converted 3 of 4 abstained questions into verified answers
+  and won the multi-hop amendment questions. Retrieval gold saturated at 100%
+  for both (anything a question names is retrieved). Gemini free-tier daily
+  quota died mid-final-rerun (11 questions `evidence_only`, preserved as
+  `upgraded/results.quota-dead-run.jsonl`); a resumable checkpoint is staged â€”
+  rerun `python evaluation/qa-agent/run_eval.py upgraded` on fresh quota, then
+  `--score`. Full results table in `papers/qa-agent/review-and-plan.md`.
+  Remaining blockers are corpus, not retrieval: 42 fused OCR mega-sections,
+  missing provincial stamp-duty sources, no verified drafting templates,
+  interleaved-column MRIO share provisions.
+
+### Team & workstreams
+
+Three-person team; roadmap in `roadmap.md`. Everyone builds against one shared
+structured matter-record contract (the verified title record). Agree its field
+schema + the demo case first, but keep implementation filenames out of
+proposal-facing prose.
+
+- **Lahiru â€” OCR & Extraction.** Scanned Sinhala/English deeds/plans â†’ structured
+  fields. Candidate engines + Sinhala-OCR papers surveyed in `roadmap.md`
+  (Document AI / Cloud Vision / Surya / Tesseract / VLMs); privacy favours
+  self-hosted open-source for real client docs. Also owns the ~70 scanned CoA
+  judgments that need OCR.
+- **Himath â€” Data & Legal Corpus lead.** This workstream (statutes + case law).
+  Targets: (1) retrieval-method research â†’ pick engine, (2) prepare datasets
+  (corpus + retrieval eval set + ground-truth case record), (3) make the corpus
+  traversable, (4) stand up the rule-based engine.
+- **Praveen â€” Templates, Outputs & User-Facing Interface.** Every output doc as
+  a parameterized template filled from the verified structured matter record.
+  Also owns the lawyer-facing review interface and export flow. Full input +
+  output document catalog is in `roadmap.md`; build the shared deed schedule
+  (à¶‹à¶´à¶½à·šà¶›à¶±à¶º) first.
+
+Integration = the Streamlit POC (`deed-workflow-plan-poc.md`): OCR â†’ verified
+record â†’ attach law â†’ fill templates. Other planning docs: `pitch.md` (TA pitch),
+`related-pepers.md`. A Markdown proposal draft now lives at
+`report/project proposal.md`; it frames Draftly as a two-workflow legal platform:
+conveyancing first, litigation second. Conveyancing remains the first prototype
+and evaluation workflow, but the project identity must not collapse into
+conveyancing-only wording. The local proposal now uses proposal-safe wording
+such as "verified structured matter record" rather than internal filenames,
+caveats the case-law corpus as acquired but not yet validated as linked legal
+authority, and presents the reusable legal-source counts as a compact table. The
+proposal was rebuilt against the official
+`C:\Users\asus\Downloads\CS3501 Project Proposal Template.docx`. The exported
+`Draftly Project Proposal.pdf` is verified as five A4 pages: one
+template-matched title page plus exactly four proposal pages, satisfying the
+template's 3-4 page body limit. The body uses Arial 11 at 1.15 line spacing,
+20 pt regular section headings, one-inch margins, and the template's eight
+required sections. The title page preserves the template's top-right module
+block, centered title, gray subtitle, and lower team-details block. The local
+Markdown now embeds the workflow as a Mermaid diagram instead of the older PNG
+image, because the raster figure looked poor in the proposal. Older figure
+assets still live at `report/assets/draftly-workflow.svg`,
+`report/assets/draftly-workflow.png`, and editable Mermaid source
+`report/assets/draftly-workflow.mmd`, but the proposal source uses the inline
+Mermaid block. A companion research map lives at `report/research-structure.md`;
+it tracks papers, GitHub projects, production products, Hugging Face assets, and
+search/API tooling. The live Google Doc
+`1HmMt6o2wQRcMPkeMrkKFQ4lXvzOaWMUymwXupreFKpU` was synced earlier, but may not
+include the latest local edits unless it is synced again.
+
+### Tooling / environment
+
+- Python venv at `.venv/`; docling installed. Convert PDFs with
+  `.venv/Scripts/docling.exe â€¦ --no-ocr` or `papers/convert.py` (OCR off avoids
+  a `std::bad_alloc` on born-digital PDFs).
+- `scripts/convert_to_text.py` routes scanned PDF extraction through recorded
+  Docling attempts, local RapidOCR/ONNX, and an explicit Document AI fallback or
+  direct mode. Cloud OCR has a persistent 2,000-page ceiling and resumable
+  per-page cache under ignored `data/processed/`; 208 pages have been used.
+- Discussion recording transcription CLI lives at `discussions/transcribe.py`.
+  It uses Google Cloud Speech-to-Text V2 batch transcription through GCS with
+  Sinhala `si-LK`, model `chirp_2`, region `asia-southeast1`, and optional
+  vocabulary hints from `discussions/vocabulary.txt`. Local `.env` currently
+  points `GOOGLE_APPLICATION_CREDENTIALS` at
+  `discussions/secrets/draftly-502319-96a312953eb0.json`; the secrets,
+  recordings, and generated transcripts folders are ignored.
+- Portable skills in `.agents/skills/` (agentskills.io format):
+  `avoid-ai-writing`, `legal-source-lookup`, `logbook-entry`, `update-context`.
+- `AGENTS.md` (root) points all agents here and to the skills registry.
+- Markdown must pass `npx markdownlint-cli2` before finishing (CLAUDE.md rule).
+
+### Domain model (from expert mentor, 12 Jul 2026)
+
+Source: `discussions/meeting-notes/jul - 12.md` (synthesis of the Sinhala STT in
+`discussions/transcripts/`). The team is mentored by a senior Sri Lankan
+lawyer/notary + Law College lecturer who authored a 20-topic conveyancing
+syllabus and supplies the statutes, sample deeds, and worked examples.
+
+- **Do conveyancing first, litigation later** â€” conveyancing is rule-driven and
+  systematisable; litigation is creative/complex.
+- **Conveyancing = 6 notarial functions, in order:** (1) examination of title,
+  (2) drafting, (3) execution, (4) stamping, (5) attestation, (6) registration.
+  **Build 4 now â€” examination, drafting, execution, attestation â€” defer
+  registration** (most complex); stamping is light.
+- **Retrieval pattern he described = the tree walk:** each function breaks into
+  ordered **steps**; each step surfaces its rules, and the step's **keywords**
+  drive case-law lookup. Maps directly onto the `topics â†’ subtopics â†’ section`
+  index and BookRAG's step/keyword navigation.
+- **Examination of title:** land search â†’ identify current + prior owners (~30
+  yrs, across systems) â†’ encumbrances/mortgages â†’ local-authority docs â†’
+  identity of parties.
+- **4 registration systems** (mixed regime): deed registration (old; weak â€”
+  adverse possession can beat a paying buyer), title registration (1998 "Bim
+  Saviya", ~10%), condominium (~half), special-area (~25%) â€” percentages
+  _uncertain_.
+- **Two-track strategy:** (1) help users operate the _existing_ system, get
+  popular first; (2) reform the system later. Build for (1).
+- **"Everything must tally":** deed schedule â†” survey plan â†” municipal assessment
+  (à·€à¶»à·’à¶´à¶±à¶¸à·Š/assessment no.) must cross-match â€” core of title checks + red flags.
+- **Legal constraints to encode:** NIC identity check now mandatory in the
+  attestation; notary territorial **jurisdiction** rules; annual licence renewal.
+- **Checklist behaviour he wants:** don't make users tick a checklist â€” accept
+  uploads, then tell them what's **missing**, then proceed.
+- **Grounding is existential:** team flagged Gemini "lies creatively" â†’ outputs
+  must be grounded/traceable to real documents + statutes or the product fails.
+- **Sources he will provide:** 20-topic syllabus (+ subtopic keywords), ~50â€“55
+  statutes, ~25,000 important cases (of a much larger corpus; only a few apply to
+  deeds â€” read head notes), Registrar-General handbook (get **officially via the
+  university**), ~50â€“60 sample deeds + 16 condominium transfer deeds + sample
+  title reports/pedigrees/T-forms/assessor letters. Litigation later uses the
+  **IRAC** method (Issueâ†’Ruleâ†’Applicationâ†’Conclusion).
+
+### Case-law corpus (NLR/SLR) â€” acquisition plan
+
+Case law is the missing corpus layer (statutes are largely in hand).
+
+**STATUS (acquired 2026-07-14):** The internet-obtainable slice is DONE.
+`scripts/harvest_ia_caselaw.py` pulled **33 public-domain Ceylon law-report
+volumes** (full text, ~32 MB, incl. NLR vol. 1 1896; 1839â€“1913) from the
+**Internet Archive** into `library/case-law/internet-archive/` (gitignored,
+rebuildable). `scripts/filter_conveyancing_caselaw.py` scored them (26,843
+conveyancing hits; all relevant). Manifests tracked:
+`manifests/case-law-ia-manifest.csv`, `manifests/case-law-ia-conveyancing.csv`.
+See `library/case-law/README.md`. **CommonLII (RESOLVED â€” the Cloudflare block was
+only User-Agent gating, a browser UA passes):** `scripts/harvest_commonlii_caselaw.py`
+and `finish_commonlii_caselaw.py` harvested the Supreme Court (LKSC) + Court of
+Appeal (LKCA) â€” the NLR+SLR body. The repaired result is a **9,586-case citation
+index**
+(`manifests/case-law-commonlii-index.csv`) and **3,703 conveyancing full-text
+judgments** (`manifests/case-law-commonlii-conveyancing.csv`; text in
+`library/case-law/commonlii/`, gitignored). Span 1872â€“2010; 3,040 NLR-era
+(<1978) + 663 SLR-era. Total case-law text on disk â‰ˆ 99 MB. **Only LawNet stays
+unobtainable** (site dead). Remaining work: segment judgments into per-case nodes
+(citation, parties, headnote, statutes-cited) + link to statute sections/topics
+(the graph/GT-Link layer) â€” acquisition and normalization are now done.
+
+**DATA-PREP STATUS (2026-07-16):**
+
+- **Canonical store complete:** `data/processed/` is the only retrieval data
+  source. It contains 9,295 normalized Markdown documents and 9,177 case
+  records: 57 statutes, 18 amendments, 7 gazettes, 3 institution guides, 3,703
+  CommonLII judgments, 5,474 official court judgments, and 33 historical report
+  volumes. `scripts/verify_processed_store.py` proves an exact 9,295-file/index
+  match, real text, matching checksums, and processed-only retrieval paths.
+- **CommonLII join repaired:** 47 rows belonged to year groups omitted from the
+  rebuilt remote landing-page index although all local texts existed.
+  `scripts/repair_commonlii_index.py` reconstructs their title, citation, and URL
+  from local headers. All 3,703 conveyancing rows now join with no blank title,
+  citation, or URL.
+- **OCR backlog cleared:** ten scanned statutory/support PDFs were converted;
+  35 pages used local RapidOCR and the rest used the operator-approved Document
+  AI route. Two low-text court judgments were fetched from official court URLs
+  and OCRed. The cloud ledger records 208/2,000 pages used. No
+  conversion-registry row remains `needs-ocr`.
+- **Section graph and review queues built:**
+  `case_statute_section_links.csv` has 14,665 unique, evidence-backed candidate
+  edges across 4,004 cases and 53 statutory sources. The strict unresolved queue
+  contains 62,385 section mentions; `verification-sample.csv` contains 30
+  unverified edges across 30 cases and 19 sources for lawyer sign-off.
+- **Official court judgments:** all 5,474 records are normalized; 1,418 are
+  conveyancing matches (SC 909 + CoA 509). The prior â€œ~70 needs OCRâ€ estimate
+  was stale; current verification found only two records below the text
+  threshold, and both are now repaired.
+- **Modern SLR (2012â€“2021):** public LawLanka volume index only â€” **630 case
+  citations/titles** (`manifests/slr-modern-index.csv`, `slr-modern-cases.csv`;
+  pages under `library/case-law/sri-lanka-law-reports/`). Full report text is
+  paywalled + copyright â†’ NOT downloaded. Planned next: **cross-match these 630
+  to our free court judgments by party name** to attach reported-status +
+  citation (clean; no paywall).
+- **Topics normalized + reconciled to the registry (source of truth):**
+  `scripts/normalize_topics.py` + `reconcile_topics.py` regenerate
+  `manifests/topics.csv`, `topic-sources.csv` (**174 edges**), `topics.json` and
+  YAML frontmatter on every topic manifest. `scripts/audit_corpus.py` cross-checks
+  all registries â†’ **0 registryâ†”topic mismatches**, junk conversion rows removed.
+- **Pipeline notebook:** `notebooks/data_processing_pipeline.ipynb` keeps its
+  exploratory Stages 0â€“5 and adds Stage 6 for building and verifying the
+  canonical processed store. OCR stays an explicit operator action; the
+  notebook does not silently make cloud calls.
+
+Original plan:
+
+- **Sources (verified 2026-07-14):** NLR (New Law Reports, ~1878â€“1978) + SLR
+  (Sri Lanka Law Reports, 1978â€“~2012) are on **CommonLII**
+  (`commonlii.org/lk/`, free) and **LawNet** (`lawnet.gov.lk`, official/free).
+  LawLanka is the paid fallback.
+- **Do NOT crawl CommonLII** â€” it returns 403 to automated agents and its
+  `robots.txt` disallows AI crawlers. LawNet has no bot block (just a broken TLS
+  cert) and hosts **SLR volume PDFs + topic Digests** under
+  `lawnet.gov.lk/wp-content/uploads/`.
+- **Method = digest-driven, not case-by-case scrape:** (1) download LawNet Digest
+  PDFs (the topic index of all reported cases); (2) filter digest entries to
+  conveyancing catchwords â†’ the citation list ("all relevant"); (3) download the
+  volume PDFs holding those cases; (4) docling â†’ markdown â†’ split per case;
+  (5) parse citation/headnote/statutes-cited/catchwords; (6) link to statute
+  sections + topics (the graph/GT-Link layer).
+- **Case node schema:** `citation`, `court`, `year`, `parties`, `catchwords`,
+  `statutes_cited: [SRCxxx-sN]`, `topics: [NN]`, `headnote`. Store under a new
+  `data/legal-sources/library/case-law/` + `library-markdown/case-law/` mirror,
+  tracked in `conversion-registry.csv`.
+- **Conveyancing filter catchwords:** prescription/adverse possession,
+  servitudes, fidei commissum, deeds & instruments, notaries & attestation,
+  partition, gift & revocation, mortgage, vendor & purchaser, title/ownership,
+  co-ownership/condominium, state land, trusts, last wills, powers of attorney.
+- **Copyright:** raw judgment text is public record; SLR **headnotes/digests are
+  Council of Law Reporting copyright** â€” fine to use internally for
+  retrieval/eval, do not republish as a public dataset.
+- **Cleanest bulk route for completeness:** official data request via the
+  university to LawNet/Ministry of Justice, or to AustLII (who run CommonLII and
+  license data feeds). Slower; pursue in parallel with the LawNet-PDF route.
+
+### Data & privacy (critical)
+
+`data/raw/` holds **real** client conveyancing bundles (deeds, plans, receipts,
+registry extracts, NICs, signatures) â€” including at least one complete supervised
+example set (source documents + lawyer-prepared title report + pedigree) usable
+as evaluation ground truth. **Never** publish raw files or copy real names,
+NICs, addresses, deed/registry numbers, or the actual pedigree chains into
+committed docs, demos, or this context file. For demo/dataset use anonymized or
+synthetic versions that preserve structure. (Specific client examples that were
+in the old `contxt.md` were deliberately left out of this file for that reason.)
+
+### Open questions
+
+- Subtopic granularity for the statutory tree: one markdown file per subtopic
+  under each topic? (leaning yes â€” small leaves.)
+- Do `library-markdown` sections get real `## Section N` headings + node
+  frontmatter (`node_id`, `type`, `level`, `source_id`, `section`, `topics`,
+  `amended_by`)? Proposed, not yet applied.
+- What precision does the 30-edge lawyer sample achieve for each confidence
+  method, and which deterministic aliases should be added before any bounded
+  model-assisted review?
+- Repo currently holds data + docs; the `apps/*` product code is not scaffolded
+  yet. The first BM25 retrieval baseline exists, but the gold evaluation rows
+  and full-corpus benchmark run are still outstanding.
+
+### Next steps
+
+- Ask the lawyer to complete `data/processed/verification-sample.csv`; calculate
+  precision by confidence method before exposing case links as authority.
+- Prioritize repeated items in `unresolved_citations.csv`, curate historical law
+  aliases, and rerun the deterministic linker before considering a bounded LLM
+  review pass.
+- Populate and review `evaluation/retrieval-gold.csv` with questions and expected
+  authorities, then execute the full BM25 notebook and freeze its baseline
+  Recall@k, MRR, and nDCG results.
+- After freezing the baseline, evaluate topic routing, graph expansion,
+  authority ranking, and temporal filtering as separate controlled additions.
+- Segment statutory Markdown into stable section nodes with frontmatter and
+  connect only lawyer-approved case edges to those nodes.
+- OCR and split the scanned Final Year past-paper bundles by subject, then build
+  a searchable LW 307 Conveyancing question index without treating unavailable
+  access-controlled compilations as downloaded sources.
+- Optionally write `papers/bookrag-notes.md` mapping the paper â†’ the build.
+- Product/academic track (from the idea-doc feedback; verify what's still open):
+  refine the "beyond template-filling" answer to Dr. Nisansa, review SigmaLaw
+  papers, keep "Proposed Supervisor" wording, soften claims about existing tools,
+  make the dataset-annotation plan concrete (entities, deed-to-deed links,
+  lawyer-verified chain ground truth).
+- Google Docs copy: Composio Google Docs is connected for `draftly-local-user`.
+  The proposal Doc ID `1HmMt6o2wQRcMPkeMrkKFQ4lXvzOaWMUymwXupreFKpU` was updated
+  from the local Markdown on 2026-07-15. Google Docs could not embed the local SVG
+  directly because its inline-image API needs a public PNG/JPEG/GIF URL, so the
+  SVG was rendered to PNG and inserted through a temporary public PNG URL. A
+  full-document Markdown replacement can inherit italic run formatting and drop
+  the image, so future syncs must reset `italic=false`, remove any generated
+  image-placeholder text, and reinsert the PNG before final export. The live
+  Google Doc is now built through explicit Docs style operations rather than a
+  whole-document Markdown import.
+
+---
+
+## Log
+
+### 2026-07-19 | Claude Code (statute QA agent â€” SOTA research + upgrade)
+
+- Collected 31 verified papers into `papers/qa-agent/` via three parallel
+  research agents (agentic RAG, graph/structure RAG, legal QA) with annotated
+  notes files; wrote the code review + upgrade plan in
+  `papers/qa-agent/review-and-plan.md`.
+- Upgraded `src/draftly/retrieval/`: NEW `graph.py` (deterministic statute
+  graph â€” section cross-refs, amendmentâ†’principal-target edges, definition
+  edges; 15,810 edges; personalized-PageRank expansion of retrieval seeds) and
+  NEW `embeddings.py` (Gemini dense channel, SQLite-cached by corpus
+  fingerprint, 5,126 vectors, chunked embedding for 42 OCR mega-sections,
+  graceful fallback). `search.py` now fuses lexical + dense + hints + graph via
+  RRF and picks densest-window excerpts; `answering.py` adds per-part evidence
+  quotas and a bounded CRAG-style corrective retry (statutory-vocabulary query
+  rewrites â†’ re-retrieve â†’ regenerate missing parts â†’ same citation gate +
+  entailment verifier). Ablation switches: `DRAFTLY_DISABLE_DENSE`,
+  `DRAFTLY_DISABLE_GRAPH`, `DRAFTLY_SKIP_CORRECTIVE`.
+- Live checks: Prevention-of-Frauds question now surfaces the principal +
+  both amendments together; a previously unanswerable Notaries part was
+  answered on the corrective pass. Surfaced corpus defect: OCR fused Notaries
+  s.31 into `SRC014:s30` (22K chars; 42 such blobs corpus-wide, 22 in the CPC)
+  â€” mitigated at retrieval level, but those sources need re-extraction.
+- Baseline-vs-upgraded evaluation over all 18 exam questions
+  (`src/questions.md`) launched via `evaluation/qa-agent/run_eval.py` with
+  objective gold labels (`gold-labels.json` â€” only sections/statutes explicitly
+  named in question text). Results pending; nothing committed.
+
+### 2026-07-19 | Codex (context refresh)
+
+- Refreshed the shared handoff after the latest local commits. The repository is
+  clean at `99426f0`, which includes the statute retrieval dependency update,
+  statutes-only retrieval baseline, Streamlit retrieval app, case-law extraction
+  validation harness, and the later statute-QA/caselaw ablation artifacts.
+- Preserved the current caution: statute-QA verifier results are machine
+  citation-support checks, not lawyer-approved legal correctness scores; the
+  case-law rule-extraction pipeline remains provisional until human legal review.
+
+### 2026-07-18 | Codex (full Gemini question evaluation)
+
+- Ran every one of the 18 exam-question blocks (73 subquestions) through the
+  current Gemini draft-and-verifier pipeline. The final clean run has zero
+  execution errors, 14 partial answers, 4 explicit insufficient-authority
+  outcomes, and 44 verifier-accepted claims covering 37 requested parts.
+- Preserved all iteration artifacts and consolidated the current results under
+  `evaluation/runs/statute-qa-v2-final/`. The metrics explicitly label this as
+  machine checking only because no lawyer gold answers were supplied.
+- Fixed citation normalization, partial-claim salvage, result checkpointing and
+  serialization, Windows SQLite build locking, and the known-corpus-gap UI.
+  All 35 automated tests pass. Streamlit is running locally on port 8501; the
+  in-app browser was unavailable, so visual desktop/mobile QA remains open.
+
+### 2026-07-18 | Codex (statutes-only retrieval and Q&A hardening)
+
+- Reviewed the Q&A system with parallel architecture, corpus, research, and
+  answer-audit passes. Adopted typed outcomes, question decomposition,
+  source-aware retrieval, claim citation validation, a second relevance check,
+  explicit corpus-gap reporting, and repeatable evaluation traces.
+- Fixed long legislative-volume contamination, false section boundaries,
+  amendment alias provenance, subsection citation normalization, and Windows
+  index rebuild locking. Quarantined unreliable two-column inheritance OCR.
+- Added the Streamlit statutes-only Q&A demo, command-line build/search/ask and
+  evaluation commands, 33 passing tests, a 73-subquestion retrieval run, and
+  four live Gemini regression answers. Legal correctness remains unscored until
+  lawyer labels are supplied.
+
+### 2026-07-18 | Claude Code (rule-extraction evaluation â€” provisional NO-GO)
+
+- Ran a **pre-registered ablation + holdout study** on the no-headnote
+  rule-extraction method before scaling to ~3,179 cases. Artifacts in
+  `evaluation/runs/caselaw-ablation-v1/`; presentation notebook
+  `notebooks/02_caselaw_extraction_validation.ipynb`; reusable harness
+  `scripts/case-law-information-extraction/ablation.py` + `audit_window_recall.py`.
+- **Why NO-GO:** holdout is 74% accept / 100% quote-grounded but only ~58% _usable_
+  (Claude-Opus judge proxy; lawyer labels authoritative). Grounding â‰  correctness â€”
+  it misses obiter, quotes borrowed from other cases/counsel, and wrong statute tags.
+- **Ablation result:** naive 8B head+tail wins (0.83) > cue-aware (0.73) > full
+  (0.63) > 70B+full (0.55). More context hurts the small model. This reverses the
+  earlier cue-window/16K change (measured via a misleading "cue-in-window" proxy);
+  deploy the naive window for the mass run.
+- **Statute attribution** is the worst dimension (~19% wrong): model gets only
+  titles and guesses sections, and the corpus cites repealed statutes absent from
+  the catalogue. Fixes applied: `statute_citation_verbatim` field + common-law/
+  no-statute option + no-guess instruction in `extract_case_rules.py`;
+  `llm_client` counts billable HTTP attempts; `validate.py` carries the new fields.
+- **Codex (driven via `codex exec`)** wired 50/85 statutes to their on-disk
+  markdown in `source-registry.csv` and built `data/legal-sources/derived/
+  statute-section-index.json` (3,547 sections) so section verification can work.
+- **Still to do:** download the missing historical statutes (Partition Ordinance
+  1863/1951, Fiscal's Ordinance 1867, Courts Ordinance 1889, Public Trustee, Privy
+  Council Appeal); wire deterministic section resolution; re-run the eval harness
+  with the naive window; then collect human lawyer labels before any full run.
+  Nothing committed. NVIDIA 70B endpoint was heavily throttled (~110s/call) during
+  this session, so the 70B judge/arm were slow.
+
+### 2026-07-18 | Codex (BM25 retrieval baseline notebook)
+
+- Added `notebooks/01_bm25_retrieval_baseline.ipynb` as the reproducible first
+  retrieval experiment: corpus selection, heading-aware chunking, persistent
+  SQLite FTS5 BM25 indexing, interactive search, gold-set evaluation, and
+  artifact export are all in one runnable notebook.
+- Added notebook usage and scope notes to `evaluation/README.md`. The baseline
+  deliberately excludes embeddings, LLM retrieval, graph expansion, authority
+  ranking, and temporal filtering so later improvements can be measured cleanly.
+- Verified all notebook code cells in smoke mode: 100 documents produced 6,222
+  chunks, the index built successfully, and all three sample queries returned
+  grounded results. The gold CSV has no question rows yet, so the notebook
+  correctly records configuration without inventing evaluation scores.
+
+### 2026-07-17 Â· Claude Code (case-law rule extraction â€” implemented)
+
+- Built `scripts/case-law-information-extraction/` (config, llm_client, catalogue,
+  headnote, windowing, validate, extract_case_rules, README) per
+  `case-law-extraction-plan.md`. NVIDIA NIM verified (key in `.env`); tiered
+  **llama-3.1-8b (cheap)** + **llama-3.3-70b (strong escalation)**, OpenAI-compatible,
+  swappable. Outputs â†’ `scripts/case-law-information-extraction/output/` (gitignored;
+  rules.csv, case_meta.csv, extract-rejects.csv, per-case cache, usage.json).
+- **Track A (reported, deterministic `Held:` extraction, $0): 1,065 rules** from
+  ~524 reported cases; the strict block-marker correctly ignores prose "held", so
+  ~86% route to Track B. Track A extractor verified: 98% extraction on
+  Held-bearing cases.
+- **Track B (unreported, bounded LLM, quote-validated): verified working** â€” real
+  grounded rules (e.g. prescription burden â†’ SRC071-s3; partition pedigree duty),
+  grounding gate rejects paraphrased (non-verbatim) quotes. ~5.1k prompt tok/case.
+  **COMPLETE: 2,166 rules total** (1,065 headnote + 1,101 llm-extract) from 1,625
+  cases; 405 linked to a statute section; ~7.2M tokens on the 8B tier (~$0 free
+  tier). Caveats: 18% Track-B quote-rejected (model paraphrased â€” fuzzy-match
+  tolerance would recover many); model self-reports confidence=high uniformly
+  (weak signal â€” escalate on quote-rejection, not confidence); 5 transient API
+  errors to retry.
+- Everything `status=unverified` until lawyer sample. Literature backing for the
+  cheap-model + constrained + grounded + validated design captured
+  (case-law-extraction-plan.md). `retrieval-engine-plan.md` = the engine that
+  consumes rules.csv.
+
+### 2026-07-17 Â· Codex (Law College past-paper collection)
+
+- Downloaded and organized every publicly downloadable Sri Lanka Law College
+  paper found on the official downloads page, plus the public GovDoc year and
+  language archives, under `past-papers/`.
+- Kept official year-level bundles separate from entrance/archive papers and did
+  not bypass Studocu, Scribd, or other access-controlled hosts.
+- Added `past-papers/manifest.csv` with source provenance, pages, sizes, and
+  SHA-256 checksums; all 44 PDFs and manifest rows were validated. The files are
+  untracked and no commit was made.
+
+### 2026-07-17 Â· Claude Code (retrieval engine plan)
+
+- Deep-read 12 papers via three parallel review agents (legal-RAG limits/temporal,
+  caseâ†”statute linking, eval+graph-walk) and wrote **`retrieval-engine-plan.md`**
+  â€” the end-to-end engine design with per-paper adopt/reject verdicts. Headlines:
+  topic-partitioned retrieval worth ~+40pts MRR (2502.20364); multi-hop = PPR
+  over our REAL 14.6k-edge citation graph (HippoRAG's walk without its noisy
+  LLM-KG); temporal layer = dated section-versions + amendment Action nodes +
+  SnapshotLast (SAT-Graph RAG); IL-PCSR cross-task statute-injection for the 62k
+  disambiguation queue; CLERC mask-a-citation recipe auto-generates the eval gold
+  set; BM25 > dense zero-shot in law (rerankers can harm). Authority-aware
+  ranking (SC binding > CoA binding-below > HC persuasive â€” CoA IS binding on
+  lower courts, and most land litigation ends there) is absent from all 12 papers
+  â†’ our most novel component. Build order P1â€“P6 in the plan. Papers organized in
+  papers/data/ + papers/ocr/ with verified README index.
+
+### 2026-07-16 Â· Codex (normalized legal corpus and citation graph)
+
+- Repaired the 47-row CommonLII join gap caused by omitted year groups in the
+  rebuilt landing-page index; all 3,703 conveyancing judgments now join.
+- Built and strictly verified the file-based `data/processed/` store: 9,295
+  normalized documents, 9,177 cases, zero missing/low-text files, and matching
+  file checksums. The generated store remains ignored and rebuildable.
+- Cleared the scanned-source backlog through local OCR and an approved,
+  resumable Document AI path capped at 2,000 pages; usage ended at 208 pages.
+  Repaired two weak court records from official PDFs.
+- Generated 14,665 section-specific candidate case links, a 62,385-row
+  unresolved queue, and a balanced 30-row lawyer-verification sample. All links
+  remain unverified pending legal review.
+- Extended the existing notebook with a canonical production-store stage and
+  added repeatable build, conversion, sampling, and verification scripts. No
+  changes were committed.
+
+### 2026-07-16 Â· Claude Code (data prep + court judgments + audit)
+
+- Harvested post-2012 **official court judgments** (supremecourt.lk +
+  courtofappeal.lk): 5,474 judgments, 1,418 conveyancing; ~70 scanned CoA ones
+  flagged `needs-ocr`. Scripts: `harvest_courts_caselaw.py`,
+  `rebuild_courts_manifest.py`.
+- **Normalized + reconciled topics** to the registry as source of truth
+  (`normalize_topics.py`, `reconcile_topics.py`): topics.csv / topic-sources.csv
+  (174 edges) / topics.json + manifest frontmatter. Wrote `audit_corpus.py`;
+  cross-checked all registries â†’ 0 mismatches; dropped 16 junk conversion rows;
+  fixed SRC036/037 topic union + SRC088 `00`. Restored `conversion-registry.csv`
+  after it was found deleted from the working tree.
+- `reextract_failed.py`: the 10 docling-`bad_alloc` statutes are scanned/no text
+  layer â†’ `needs-ocr` (not fixable by re-extraction).
+- Built `notebooks/data_processing_pipeline.ipynb` (Stages 0â€“5: consolidate â†’
+  clean â†’ caseâ†”statute links â†’ cases.jsonl â†’ topic tables â†’ eval seed).
+- Reviewed the modern-SLR discovery (630-case public LawLanka index, citations
+  only; full text paywalled/copyright) â€” planned cross-match to court judgments.
+- Wrote `pitch.md`, `roadmap.md` (3 workstreams + OCR model survey + doc
+  catalog), `deed-workflow-plan-poc.md`.
+
+### 2026-07-16 Â· Codex (proposal local polish and handoff refresh)
+
+- Updated the shared context after the latest local proposal polish. The local
+  proposal now uses an inline Mermaid workflow diagram instead of the older PNG,
+  because the raster figure looked poor in the proposal.
+- Recorded the compact reusable legal-source table, the cleaner expected
+  outcomes paragraph, and the team split now shown in the proposal: Himath as
+  data/legal-corpus lead and Praveen covering templates, outputs, and the
+  user-facing lawyer review/export interface.
+- Verified the exported `Draftly Project Proposal.pdf` is five A4 pages
+  including the title page. The Google Doc was synced earlier but may need a new
+  sync pass to reflect the newest local Markdown edits.
+
+### 2026-07-15 Â· Codex (two-workflow proposal framing fix)
+
+- Corrected `report/project proposal.md` after the proposal drifted back into
+  conveyancing-only wording. The proposal now frames Draftly as a two-workflow
+  legal platform: conveyancing as the first prototype and evaluation workflow,
+  and litigation as the second platform workflow using an IRAC-style structure.
+- Updated Current State so future proposal edits preserve the broader project
+  identity instead of treating litigation as a vague afterthought.
+
+### 2026-07-15 Â· Codex (official template rebuild)
+
+- Read and rendered the official CS3501 Word template. Confirmed A4 paper,
+  one-inch margins, Arial 11 body text at 1.15 spacing, 20 pt regular section
+  headings, a separate title page, eight required proposal sections, and a 3-4
+  page limit excluding the title page.
+- Reworked `report/project proposal.md` into the template's exact section order,
+  reduced the body to about 1,060 words before references, retained the grounded
+  legal-data and evaluation details, and restored 20 preliminary references.
+- Rebuilt the live Google Doc with a template-matched title page and formatting,
+  restored the workflow figure, and exported it for visual QA. Final pagination
+  is five A4 pages: one title page plus exactly four proposal pages.
+
+### 2026-07-15 Â· Codex (six-page proposal refinement)
+
+- Refined `report/project proposal.md` from about 1,660 to about 1,380 words by
+  removing repetition while preserving the project scope, statutory counts,
+  case-law readiness caveat, methods, evaluation, and bibliography.
+- Updated the live Google Doc through Composio, reset inherited all-italic body
+  formatting to the template's Arial 11 regular style, restored the workflow
+  figure at a readable size, fixed numbered criteria and bibliography entries,
+  and removed the generated image placeholder.
+- Exported and visually reviewed all six pages. The final Google Doc is exactly
+  six US-letter pages and has no observed clipping, overlap, broken tables, or
+  stray numbering.
+
+### 2026-07-15 Â· Codex (4-page proposal and embedded figure)
+
+- Compressed `report/project proposal.md` from the long working draft into a
+  4-page-friendly proposal while preserving the core problem, data, methods,
+  evaluation, success criteria, team split, and selected bibliography. Google
+  Docs plain-text readback is about 1,600 words.
+- Rendered `report/assets/draftly-workflow.svg` to
+  `report/assets/draftly-workflow.png`, synced the proposal to Google Docs via
+  Composio, and verified the Google Doc contains an inline image object.
+
+### 2026-07-15 Â· Codex (proposal review fixes)
+
+- Applied the review fixes requested after the proposal critique: renamed the
+  legal-source table to selected statutory source categories, added a sharper
+  case-law caveat, standardized all proposal wording to "verified structured
+  matter record," added stronger OCR/document-AI bibliography references from
+  `report/research-structure.md`, and changed the workflow diagram labels from
+  implementation-heavy BookRAG wording to reader-facing legal-source wording.
+- Synced the updated proposal back to the Google Doc
+  `1HmMt6o2wQRcMPkeMrkKFQ4lXvzOaWMUymwXupreFKpU` through Composio and verified
+  the new caveat, OCR references, and standardized wording are present.
+
+### 2026-07-15 Â· Codex (proposal and Google Docs sync)
+
+- Strengthened `report/project proposal.md`: added a production-product
+  comparison table, workflow-gap matrix, concrete evaluation/annotation table,
+  dataset-risk paragraph, lawyer review checklist, and missing retrieval
+  bibliography entries. Removed internal implementation filenames from
+  proposal-facing text.
+- Replaced the simple Mermaid pipeline with a proposal-ready workflow figure
+  (`report/assets/draftly-workflow.svg`) and editable Mermaid source
+  (`report/assets/draftly-workflow.mmd`). The figure shows document upload,
+  OCR/classification, extraction, cross-document linking, verified structured
+  matter record, grounded legal-source lookup, red flags, lawyer checklist,
+  template generation, and lawyer review/export.
+- Connected through Composio using the existing `COMPOSIO_API_KEY`, found an
+  active Google Docs connection for `draftly-local-user`, and updated the Google
+  Doc `1HmMt6o2wQRcMPkeMrkKFQ4lXvzOaWMUymwXupreFKpU` with the completed proposal.
+  The Google Docs copy includes a Figure 1 text reference; the local SVG remains
+  the actual diagram asset because Google Docs inline images require public
+  PNG/JPEG/GIF URLs.
+
+### 2026-07-14 Â· Codex (research map)
+
+- Added `report/research-structure.md` as the working research map for Draftly.
+  It records the search stack (Semantic Scholar, OpenAlex, arXiv, Hugging Face,
+  GitHub, broad web search, and third-party Scholar APIs if needed), core papers
+  such as BookRAG/RAPTOR/GraphRAG/HippoRAG/legal RAG benchmarks, open-source
+  repos, production products, and Hugging Face assets. Updated
+  `report/project proposal.md` to point to this structure.
+
+### 2026-07-14 Â· Codex (proposal draft)
+
+- Wrote `report/project proposal.md` from the current Draftly context, existing
+  `report/main.tex`, `roadmap.md`, `related-projects.md`, and the actual
+  `data/` inventory. The proposal keeps the broader product framing while naming
+  two workflows: conveyancing/title documentation as the first workflow and
+  litigation drafting/review as the later workflow. It also records the current
+  local data counts without copying private client details from `data/raw/`.
+
+### 2026-07-14 Â· Claude Code (context refresh)
+
+- Refreshed Current State: recorded the **rule-based engine over a BookRAG-shaped
+  index** decision (keep the structure, drop the LLM/embedding machinery); added
+  a **Team & workstreams** section (Lahiru/OCR, Himath/Data, Praveen/Templates)
+  with the shared `case_record.json` contract; marked the case-law corpus fully
+  acquired (~5,100 judgments + 33 volumes). New docs since last refresh:
+  `roadmap.md` (team plan + OCR model survey + document catalog), `pitch.md`,
+  `deed-workflow-plan-poc.md`, `related-pepers.md`.
+
+### 2026-07-14 Â· Claude Code (official court judgments harvested)
+
+- Added the **post-2012 official court judgments** â€” the layer beyond the
+  reported NLR/SLR. Since 2012 the Supreme Court and Court of Appeal publish all
+  judgments directly (free, official PDFs). `scripts/harvest_courts_caselaw.py`
+  pulled from `supremecourt.lk/judgements/` (2,583 PDFs) and
+  `courtofappeal.lk/judgements/` (3,042 PDFs); text extracted with pypdfium2
+  (born-digital text â€” only ~1 needs OCR in the kept set, ~70 CoA scanned images
+  have no text layer and are deferred to OCR). Result: **5,474 judgments indexed,
+  1,418 conveyancing matches (SC 909 + CoA 509)**. Manifest tracked:
+  `manifests/case-law-courts.csv`; text/PDFs gitignored under
+  `library/case-law/courts/` (rebuildable via `rebuild_courts_manifest.py`). All
+  text kept (not just matches) so the conveyancing filter stays re-tunable.
+  Corpus now: IA 33 volumes + CommonLII 3,703 (reported, pre-2012) + courts 1,418
+  (post-2012) conveyancing judgments.
+
+### 2026-07-14 Â· Claude Code (CommonLII harvest complete)
+
+- Cracked the CommonLII access problem: the Cloudflare 403 was User-Agent gating,
+  not a JS challenge (confirmed a real browser via Playwright passes, then that a
+  plain `curl` with a Chrome UA also passes). Built
+  `scripts/harvest_commonlii_caselaw.py` (+ `finish_commonlii_caselaw.py` to
+  finish LKCA 2001â€“2012 and rebuild manifests). Harvested Supreme Court + Court
+  of Appeal: **9,539-case citation index**, **3,703 conveyancing full-text
+  judgments** (1872â€“2010; 3,040 NLR-era + 663 SLR-era), ~99 MB. Gitignored the
+  text (rebuildable), tracked the manifests. Updated `library/case-law/README.md`
+  and `pitch.md`; wrote `deed-workflow-plan.md` updates. Goal met: all
+  internet-obtainable NLR/SLR conveyancing docs acquired. Next: segment into
+  per-case nodes + statute/topic links.
+
+### 2026-07-14 Â· Claude Code (case-law acquisition)
+
+- Acquired the internet-obtainable case-law corpus. Probed sources: CommonLII/
+  WorldLII are Cloudflare-bot-walled (403 to all non-browsers), LawNet is dead
+  (root = "root directory", paths 404), LawLanka is commercial. Pivoted to the
+  **Internet Archive** (open API, public-domain holdings). Wrote
+  `scripts/harvest_ia_caselaw.py` â†’ downloaded **33 Ceylon law-report volumes**
+  (full text ~32 MB, incl. NLR vol.1 1896, span 1839â€“1913, all NOT_IN_COPYRIGHT)
+  to `library/case-law/internet-archive/`. Wrote
+  `scripts/filter_conveyancing_caselaw.py` â†’ conveyancing relevance index
+  (26,843 hits). Tracked manifests: `case-law-ia-manifest.csv`,
+  `case-law-ia-conveyancing.csv`. Added `library/case-law/README.md` documenting
+  acquisition + access limits. Gitignored the raw IA text (rebuildable). Modern
+  NLR(â†’1978)/SLR remain unobtainable by automation â†’ official data request.
+
+### 2026-07-14 Â· Codex (case-law pilot)
+
+- Added `scripts/collect_case_law.py` and ran the Registration of Documents
+  digest pilot. LawNet PDF fetch was not reliable: TLS certificate verification
+  failed for `lawnet.gov.lk` / `www.lawnet.gov.lk`, and the uploads directory
+  returned 404 without TLS verification. Used the already-referenced public
+  LawLanka Registration of Documents related-case digest as the fallback source.
+- Generated `data/legal-sources/manifests/case-law-citations.csv` with 76
+  row-level digest references, 51 unique citations, and 76 conveyancing-filter
+  matches. All rows remain `unverified` until the underlying NLR/SLR report text
+  is checked. Added three linked sample case nodes and conversion-registry rows.
+
+### 2026-07-14 Â· Claude Code (case-law plan)
+
+- Verified NLR/SLR sources and access constraints (CommonLII blocks bots +
+  disallows AI crawlers â†’ 403; LawNet has no bot block but a broken TLS cert and
+  hosts SLR volume + Digest PDFs). Added the "Case-law corpus (NLR/SLR)
+  acquisition plan" section: digest-driven collection, per-case node schema,
+  conveyancing catchword filter, copyright note, and the official-data-request
+  route. Wrote a Codex task prompt for the case-law pilot.
+
+### 2026-07-14 Â· Claude Code (domain notes)
+
+- Wrote `discussions/meeting-notes/jul - 12.md`: a comprehensive synthesis of the
+  6 mentor recordings/transcripts (the 6 notarial functions, examination-of-title
+  steps, 4 registration systems, litigation/IRAC, the condominium worked example,
+  document tally rule, sources he'll provide, business/deployment thoughts).
+  Personal names/deed numbers kept out per the privacy rule.
+- Added the "Domain model (from expert mentor)" section to Current State above,
+  distilling the durable facts and tying his stepâ†’keyword retrieval pattern to
+  the existing tree/BookRAG design.
+
+### 2026-07-14 Â· Codex
+
+- Added the discussion-recording STT CLI under `discussions/transcribe.py` for
+  Google Cloud Speech-to-Text V2 Sinhala transcription using `chirp_2` in
+  `asia-southeast1`. Added the Google Speech/Storage/dotenv dependencies,
+  `discussions/vocabulary.txt`, and local ignore rules for private recordings,
+  generated transcripts, and discussion secrets.
+- Updated local `.env` so `GOOGLE_APPLICATION_CREDENTIALS` points to the
+  service-account JSON the user placed at
+  `discussions/secrets/draftly-502319-96a312953eb0.json`. Verified dry-run
+  behavior and that the credential file path exists; no real transcription was
+  run because there was no recording in `discussions/recordings`.
+
+### 2026-07-14 Â· Claude Code
+
+- Consolidated the full project handover from the old `contxt.md` (the DSE /
+  ChatGPT conversation dump) into this file, then removed `contxt.md`. Corrected
+  the earlier too-narrow framing ("a retrieval system") to the real product: a
+  lawyer-in-the-loop conveyancing drafting platform, with the statutory-corpus
+  retrieval work as one sub-component. Deliberately excluded real client PII per
+  the privacy rule.
+- Created the cross-agent context system: this file + the `update-context`
+  skill + root `AGENTS.md`, so Claude, Codex, and ChatGPT can hand off context.
+- Downloaded BookRAG (arXiv:2512.03413) to `papers/` and converted it to
+  markdown with docling (OCR disabled to dodge a `std::bad_alloc` on the
+  figure-heavy appendix; got the full method, pages 1â€“12). Extracted its
+  BookIndex schema and mapped it to Draftly's tree/graph/GT-Link design.
+- Widened `.claude/settings.local.json` so routine work (in-repo file writes,
+  venv toolchain, arXiv fetch, inspection) no longer prompts; kept destructive /
+  outbound actions (push, delete, non-arXiv network) gated.
+- Added ignore rules (`tmp/`, `.venv/`, `__pycache__/`, `data/legal-sources/derived/`).
+
+hook: PostToolUse
+hook: PostToolUse Failed
+codex
+I’ve got the current context. Next I’m checking the pack structure and how many judgment files are involved so I can audit each rule against the actual text.
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse Failed
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'git status --short' in D:\projects\draftly
+hook: PreToolUse Failed
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-ChildItem -LiteralPath scripts/case-law-information-extraction/output/judge | Select-Object Name,Length' in D:\projects\draftly
+hook: PreToolUse Failed
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -LiteralPath scripts/case-law-information-extraction/output/judge/pack-031.json' in D:\projects\draftly
+ succeeded in 1282ms:
+ M apps/statute-retrieval/README.md
+ D evaluation/qa-agent/baseline/results.partial.jsonl
+ M papers/qa-agent/review-and-plan.md
+ M scripts/case-law-information-extraction/extract_case_rules.py
+ M src/draftly/retrieval/answering.py
+?? .claude/settings.local.json
+?? evaluation/qa-agent/baseline/config.json
+?? evaluation/qa-agent/baseline/metrics.json
+?? evaluation/qa-agent/baseline/results.jsonl
+?? evaluation/qa-agent/upgraded/
+?? scripts/case-law-information-extraction/clean_rules.py
+?? scripts/case-law-information-extraction/judge_rules.py
+?? scripts/case-law-information-extraction/launch_judges.sh
+warning: unable to access 'C:\Users\asus/.config/git/ignore': Permission denied
+warning: unable to access 'C:\Users\asus/.config/git/ignore': Permission denied
+
+hook: PostToolUse
+ succeeded in 1395ms:
+[
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1983-20-1",
+  "case_id": "commonlii-LKSC-1983-20",
+  "citation": "(1983) 1 Sri LR 403",
+  "statement": "The State Mortgage Bank is not considered a 'Bank' under the given regulation.",
+  "supporting_quote": "That the State Mortgage Bank is not a \"Bank\" within the meaning of the words \"any other Bank\" in regulation 2(l0), and in view of this finding it is not necessary to consider the legal validity of the regulations",
+  "statute_section": "SRC044-s107",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1983/20.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1983-4-1",
+  "case_id": "commonlii-LKSC-1983-4",
+  "citation": "(1983) 1 Sri LR 332",
+  "statement": "A claim to the Viharadhipathiship of a temple based on a deed may not be sustained if it is not supported by the deed's contents.",
+  "supporting_quote": "(1) That though the plaintiff's claim to the Viharadhipathiship of the temple based on deed P6 cannot be sustained, on the basis of the dates and names of the robbing and ordaining tutors, he is the senior pupil of Rev. Saranatissa Maha Thero. (2) That the trial judges' observation that \"all the circumstances confirm the suspicious and questionable character of the writing D 2\" in, in the perspective of the case, apt and wellâ€founded. The Court of",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1983/4.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1983-4-2",
+  "case_id": "commonlii-LKSC-1983-4",
+  "citation": "(1983) 1 Sri LR 332",
+  "statement": "A trial judge's observation about the suspicious and questionable character of evidence can be apt and well-founded.",
+  "supporting_quote": "(1) That though the plaintiff's claim to the Viharadhipathiship of the temple based on deed P6 cannot be sustained, on the basis of the dates and names of the robbing and ordaining tutors, he is the senior pupil of Rev. Saranatissa Maha Thero. (2) That the trial judges' observation that \"all the circumstances confirm the suspicious and questionable character of the writing D 2\" in, in the perspective of the case, apt and wellâ€founded. The Court of",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1983/4.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1984-17-1",
+  "case_id": "commonlii-LKSC-1984-17",
+  "citation": "(1984) 2 Sri LR 172",
+  "statement": "Procedural rules are secondary to the provisions of Articles 17 and 126 in the exercise of jurisdiction under Article 126.",
+  "supporting_quote": "(1) The Supreme Court Rules 1978 (Rules 63 to 65) deal with the bare skeleton of procedure relating to a proceeding under Article 126. It is inconceivable that these four rules are comprehensive and all embracing and can provide for every situation that could arise in the exercise of the jurisdiction under Article 126. The procedural rules must be considered as secondary to the provisions of Articles 17 and 126 which are central. The Court is empowered to grant such relief or make such direction in the case as it may deem just and equitable and within this jurisdiction of the Court is included the power to make interim orders and to add parties without whose presence questions in issue cannot be completely and effectually decided. The presence of Mrs. Dassanayake and Messrs. Wijegooneratne and Weerasinghe was necessary as the Court could not make a fair order without consideration of the allegations against them in so far as they had a bearing on the conduct of the Land Reform Commission. These would be prejudiced if they were not given a full and complete hearing. The Court acting in the interests of justice of necessity had to join them as parties. (2) The provision requiring the court to make its determination within two months is directory only but this does not mean that the provision is erased from the statute book. The time limit must be complied with except when delay is necessitated in the in the interests of justice or where the delay is caused by circumstances bey",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1984/17.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1984-17-2",
+  "case_id": "commonlii-LKSC-1984-17",
+  "citation": "(1984) 2 Sri LR 172",
+  "statement": "A time limit in a statute is directory, but its non-compliance may be excused in certain circumstances.",
+  "supporting_quote": "(1) The Supreme Court Rules 1978 (Rules 63 to 65) deal with the bare skeleton of procedure relating to a proceeding under Article 126. It is inconceivable that these four rules are comprehensive and all embracing and can provide for every situation that could arise in the exercise of the jurisdiction under Article 126. The procedural rules must be considered as secondary to the provisions of Articles 17 and 126 which are central. The Court is empowered to grant such relief or make such direction in the case as it may deem just and equitable and within this jurisdiction of the Court is included the power to make interim orders and to add parties without whose presence questions in issue cannot be completely and effectually decided. The presence of Mrs. Dassanayake and Messrs. Wijegooneratne and Weerasinghe was necessary as the Court could not make a fair order without consideration of the allegations against them in so far as they had a bearing on the conduct of the Land Reform Commission. These would be prejudiced if they were not given a full and complete hearing. The Court acting in the interests of justice of necessity had to join them as parties. (2) The provision requiring the court to make its determination within two months is directory only but this does not mean that the provision is erased from the statute book. The time limit must be complied with except when delay is necessitated in the in the interests of justice or where the delay is caused by circumstances bey",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1984/17.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1984-2-1",
+  "case_id": "commonlii-LKSC-1984-2",
+  "citation": "(1985) 1 Sri LR 35",
+  "statement": "Privity of contract can be established between a tenant and a new owner.",
+  "supporting_quote": "(1) Privity of contract had been established between the tenant (plaintiff) and the new owner (Agnes)' (2) Although the plaintiff failed to seek redress in the partition suit yet the plaintiff was not debarred from invoking the provisions of s. 328 of the Civil Procedure Code. (3) One of the duties of a landlord is to guarantee to the tenant quiet possession of the premises let and a personal bona fide: action the actio conducti (not possessory action) is available to the tenant to claim the use and occupation of the property let and the performance of the duties imposed on the landlord. The action may be brought by the tenant or by any person who succeeds him in his capacity of tenant and it lies against the landlord or any person who succeeds him in his capacity of landlord",
+  "statute_section": "SRC030-s328",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1984/2.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1984-2-2",
+  "case_id": "commonlii-LKSC-1984-2",
+  "citation": "(1985) 1 Sri LR 35",
+  "statement": "A plaintiff who fails to seek redress in a partition suit is not debarred from invoking other provisions of the Civil Procedure Code.",
+  "supporting_quote": "(1) Privity of contract had been established between the tenant (plaintiff) and the new owner (Agnes)' (2) Although the plaintiff failed to seek redress in the partition suit yet the plaintiff was not debarred from invoking the provisions of s. 328 of the Civil Procedure Code. (3) One of the duties of a landlord is to guarantee to the tenant quiet possession of the premises let and a personal bona fide: action the actio conducti (not possessory action) is available to the tenant to claim the use and occupation of the property let and the performance of the duties imposed on the landlord. The action may be brought by the tenant or by any person who succeeds him in his capacity of tenant and it lies against the landlord or any person who succeeds him in his capacity of landlord",
+  "statute_section": "SRC030-s328",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1984/2.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1984-2-3",
+  "case_id": "commonlii-LKSC-1984-2",
+  "citation": "(1985) 1 Sri LR 35",
+  "statement": "A landlord has a duty to guarantee the tenant quiet possession of the premises let.",
+  "supporting_quote": "(1) Privity of contract had been established between the tenant (plaintiff) and the new owner (Agnes)' (2) Although the plaintiff failed to seek redress in the partition suit yet the plaintiff was not debarred from invoking the provisions of s. 328 of the Civil Procedure Code. (3) One of the duties of a landlord is to guarantee to the tenant quiet possession of the premises let and a personal bona fide: action the actio conducti (not possessory action) is available to the tenant to claim the use and occupation of the property let and the performance of the duties imposed on the landlord. The action may be brought by the tenant or by any person who succeeds him in his capacity of tenant and it lies against the landlord or any person who succeeds him in his capacity of landlord",
+  "statute_section": "SRC030-s328",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1984/2.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1985-22-1",
+  "case_id": "commonlii-LKSC-1985-22",
+  "citation": "(1985) 2 Sri LR 310",
+  "statement": "A building that has been divided and assessed for rates purposes can still be considered a single immovable property.",
+  "supporting_quote": "(1) Although the building has been divided and assessed for the purposes of rates leviable under the Municipal Councils Ordinance and each divided portion bearing a separate assessment number may be treated as a separate immovable property, physically the entire structure constitutes one building and a single immovable property of which the building bearing assessment No. 128 is an integral part, which has been damaged or destroyed by the riots and the building cannot be repaired without affecting the petitioners' portion. For the purposes of the relevant regulations Abdeen Building must be considered a single entity and if any part of it is substantially damaged the whole building is thereby affected and becomes affected property and under Regulation 9 it vests absolutely in the State free from all encumbrances. (2) The petitioners have accordingly lost their tenancy. Their present status is that of licensees only (3) Even if premises No. 128 are considered separate immovable property the damage to it coupled with the damage to the rest of the building makes it affected property. Ranasinghe, J. dissenting (4) If the owner was prepared to help REPIA to reconstruct the building it is legal for REPIA to utilise such an arrangement. No divesting order is necessary. The 2nd respondent could be authorised by REPIA to demolish the building and erect a new one",
+  "statute_section": "SRC061-s233(1)",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1985/22.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1985-22-2",
+  "case_id": "commonlii-LKSC-1985-22",
+  "citation": "(1985) 2 Sri LR 310",
+  "statement": "A tenant who loses their tenancy status becomes a licensee.",
+  "supporting_quote": "(1) Although the building has been divided and assessed for the purposes of rates leviable under the Municipal Councils Ordinance and each divided portion bearing a separate assessment number may be treated as a separate immovable property, physically the entire structure constitutes one building and a single immovable property of which the building bearing assessment No. 128 is an integral part, which has been damaged or destroyed by the riots and the building cannot be repaired without affecting the petitioners' portion. For the purposes of the relevant regulations Abdeen Building must be considered a single entity and if any part of it is substantially damaged the whole building is thereby affected and becomes affected property and under Regulation 9 it vests absolutely in the State free from all encumbrances. (2) The petitioners have accordingly lost their tenancy. Their present status is that of licensees only (3) Even if premises No. 128 are considered separate immovable property the damage to it coupled with the damage to the rest of the building makes it affected property. Ranasinghe, J. dissenting (4) If the owner was prepared to help REPIA to reconstruct the building it is legal for REPIA to utilise such an arrangement. No divesting order is necessary. The 2nd respondent could be authorised by REPIA to demolish the building and erect a new one",
+  "statute_section": "SRC061-s233(1)",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1985/22.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1985-22-3",
+  "case_id": "commonlii-LKSC-1985-22",
+  "citation": "(1985) 2 Sri LR 310",
+  "statement": "Damage to separate immovable property can still be considered affected property if it is coupled with damage to the rest of the building.",
+  "supporting_quote": "(1) Although the building has been divided and assessed for the purposes of rates leviable under the Municipal Councils Ordinance and each divided portion bearing a separate assessment number may be treated as a separate immovable property, physically the entire structure constitutes one building and a single immovable property of which the building bearing assessment No. 128 is an integral part, which has been damaged or destroyed by the riots and the building cannot be repaired without affecting the petitioners' portion. For the purposes of the relevant regulations Abdeen Building must be considered a single entity and if any part of it is substantially damaged the whole building is thereby affected and becomes affected property and under Regulation 9 it vests absolutely in the State free from all encumbrances. (2) The petitioners have accordingly lost their tenancy. Their present status is that of licensees only (3) Even if premises No. 128 are considered separate immovable property the damage to it coupled with the damage to the rest of the building makes it affected property. Ranasinghe, J. dissenting (4) If the owner was prepared to help REPIA to reconstruct the building it is legal for REPIA to utilise such an arrangement. No divesting order is necessary. The 2nd respondent could be authorised by REPIA to demolish the building and erect a new one",
+  "statute_section": "SRC061-s233(1)",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1985/22.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-1-1",
+  "case_id": "commonlii-LKSC-1986-1",
+  "citation": "(1987) 1 Sri LR 181",
+  "statement": "A court of law cannot question a purely administrative decision made by a bank regarding property acquisition.",
+  "supporting_quote": "\"While the decision on the third question whether the property should or should not be acquired and the consequent determination by the Bank to acquire the property may be a purely administrative decision guided at the final stage by considerations of policy and expediency and cannot be questioned by a Court of Law (vide s. 71 (3) of Finance Act No. 11 of 1963), nevertheless, the Bank's decisions on the preliminary issues on which the final determination is based have to be arrived at solely on the facts of the case, by an assessment and evaluation of the evidence and is a quasi-judicial process or a process closely analogous to the judicial and affects the rights of subjects and is therefore subject to review by the Courts\". Similar views were expressed by Sharvananda, J. in the",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/1.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-1-2",
+  "case_id": "commonlii-LKSC-1986-1",
+  "citation": "(1987) 1 Sri LR 181",
+  "statement": "Decisions made by a bank in a quasi-judicial process are subject to review by the Courts.",
+  "supporting_quote": "\"While the decision on the third question whether the property should or should not be acquired and the consequent determination by the Bank to acquire the property may be a purely administrative decision guided at the final stage by considerations of policy and expediency and cannot be questioned by a Court of Law (vide s. 71 (3) of Finance Act No. 11 of 1963), nevertheless, the Bank's decisions on the preliminary issues on which the final determination is based have to be arrived at solely on the facts of the case, by an assessment and evaluation of the evidence and is a quasi-judicial process or a process closely analogous to the judicial and affects the rights of subjects and is therefore subject to review by the Courts\". Similar views were expressed by Sharvananda, J. in the",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/1.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-25-1",
+  "case_id": "commonlii-LKSC-1986-25",
+  "citation": "(1986) 2 Sri LR 374",
+  "statement": "A lease granted by a lessor with only a usufructuary interest is dissolved upon the death of the usufructuary.",
+  "supporting_quote": "(1) Where the lessor granting a lease has only a usufructuary interest the lease is dissolved by the death of the usufructuary although the new co-owner requested the tenant B to attorn to him but B failed to do so. The case must be decided on the issues-i.e. as a rei vindicatory suit. B was in wrongful possession against the co-owner G and liable to be ejected",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/25.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-34-1",
+  "case_id": "commonlii-LKSC-1986-34",
+  "citation": "(1986) 2 Sri LR 1",
+  "statement": "A plaintiff must make full disclosure of material facts in a case.",
+  "supporting_quote": "The conduct of the plaintiff (failure to make full disclosure of the material facts in his",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/34.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-35-1",
+  "case_id": "commonlii-LKSC-1986-35",
+  "citation": "(1986) 1 Sri LR 291",
+  "statement": "A defendant is not entitled to give notice under a certain section.",
+  "supporting_quote": "(1) The defendant was not entitled to give notice under s. 18 (2) of the Rent Restriction Act as he was not the surviving spouse or child, parent, brother or sister of the deceased tenant or a dependant of the deceased tenant immediately prior to the death of the tenant and not a member of the deceased tenant's household during the whole of the period of three months preceding his death. A decision by the Rent Control Board that the defendant is entitled to give notice would be a nullity on grounds of jurisdictional error. (2) The notice under section 18(2) of the Rent Restriction Act must give the basis and particulars of the claim to be entitled to be deemed to be a tenant (Wickremasi nghe v. Abdul Rahim (1954) 56 NLR 280 not followed on this point. Semble: - The passage of the Rent Act No. 7 of 1972 could not have made the pending proceedings to have come to an end because s. 46 (2) provides for the continuance of such proceedings under the repealed law",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/35.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-35-2",
+  "case_id": "commonlii-LKSC-1986-35",
+  "citation": "(1986) 1 Sri LR 291",
+  "statement": "A person must be a surviving spouse, child, parent, brother, sister, or dependant of a deceased tenant to be eligible to succeed to the deceased tenant's tenancy.",
+  "supporting_quote": "(1) The defendant was not entitled to give notice under s. 18 (2) of the Rent Restriction Act as he was not the surviving spouse or child, parent, brother or sister of the deceased tenant or a dependant of the deceased tenant immediately prior to the death of the tenant and not a member of the deceased tenant's household during the whole of the period of three months preceding his death. A decision by the Rent Control Board that the defendant is entitled to give notice would be a nullity on grounds of jurisdictional error. (2) The notice under section 18(2) of the Rent Restriction Act must give the basis and particulars of the claim to be entitled to be deemed to be a tenant (Wickremasi nghe v. Abdul Rahim (1954) 56 NLR 280 not followed on this point. Semble: - The passage of the Rent Act No. 7 of 1972 could not have made the pending proceedings to have come to an end because s. 46 (2) provides for the continuance of such proceedings under the repealed law",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/35.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-35-3",
+  "case_id": "commonlii-LKSC-1986-35",
+  "citation": "(1986) 1 Sri LR 291",
+  "statement": "A landlord under the Rent Restriction Act must give the basis and particulars of the claim to be entitled to be deemed to be a tenant.",
+  "supporting_quote": "(1) The defendant was not entitled to give notice under s. 18 (2) of the Rent Restriction Act as he was not the surviving spouse or child, parent, brother or sister of the deceased tenant or a dependant of the deceased tenant immediately prior to the death of the tenant and not a member of the deceased tenant's household during the whole of the period of three months preceding his death. A decision by the Rent Control Board that the defendant is entitled to give notice would be a nullity on grounds of jurisdictional error. (2) The notice under section 18(2) of the Rent Restriction Act must give the basis and particulars of the claim to be entitled to be deemed to be a tenant (Wickremasi nghe v. Abdul Rahim (1954) 56 NLR 280 not followed on this point. Semble: - The passage of the Rent Act No. 7 of 1972 could not have made the pending proceedings to have come to an end because s. 46 (2) provides for the continuance of such proceedings under the repealed law",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/35.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-4-1",
+  "case_id": "commonlii-LKSC-1986-4",
+  "citation": "(1987) 1 Sri LR 5",
+  "statement": "Courts have discretionary jurisdiction to stay proceedings until an arbitration is held in cases involving bare arbitration agreements.",
+  "supporting_quote": "(1) Arbitration clauses in contracts are of two main kinds, namely (a) bare arbitration agreements where the provision for arbitration is a mere matter for procedure and does not include right of action on the contract itself but here the party against whom an action is brought can invoke the exercise of the discretionary power of the court to stay proceedings until an arbitration is held. (b) agreements making an arbitrator's award a condition precedent to any right of action which will then be bound not on the original contract but on the arbitral award. Such a provision known as a Scott v. Avery clause bars the institution of a suit without prior recourse to arbitration culminating in an award. In England however the courts are vested with discretionary jurisdiction to override a Scott v. Avery clause in suitable cases and to treat it as a mere arbitration clause. (2) The arbitration clause is not displaced or abrogated by repudiatory breaches of the contract unless the contract itself or arbitration clause itself is invalid or not binding on the parties or the parties have waived it or are estopped from relying upon it. (3) In the instant case clause 10 of the agreement P1 is a Scott v. Avery clause making arbitration a condition precedent and as there was no recourse to prior arbitration the District Court had no jurisdiction to entertain the suit. (4) The relationship between the 1st defendant and the plaintiff was that of principal and agent or master and servant. Hen",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/4.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-4-2",
+  "case_id": "commonlii-LKSC-1986-4",
+  "citation": "(1987) 1 Sri LR 5",
+  "statement": "An arbitration clause remains in effect even after a repudiatory breach of contract.",
+  "supporting_quote": "(1) Arbitration clauses in contracts are of two main kinds, namely (a) bare arbitration agreements where the provision for arbitration is a mere matter for procedure and does not include right of action on the contract itself but here the party against whom an action is brought can invoke the exercise of the discretionary power of the court to stay proceedings until an arbitration is held. (b) agreements making an arbitrator's award a condition precedent to any right of action which will then be bound not on the original contract but on the arbitral award. Such a provision known as a Scott v. Avery clause bars the institution of a suit without prior recourse to arbitration culminating in an award. In England however the courts are vested with discretionary jurisdiction to override a Scott v. Avery clause in suitable cases and to treat it as a mere arbitration clause. (2) The arbitration clause is not displaced or abrogated by repudiatory breaches of the contract unless the contract itself or arbitration clause itself is invalid or not binding on the parties or the parties have waived it or are estopped from relying upon it. (3) In the instant case clause 10 of the agreement P1 is a Scott v. Avery clause making arbitration a condition precedent and as there was no recourse to prior arbitration the District Court had no jurisdiction to entertain the suit. (4) The relationship between the 1st defendant and the plaintiff was that of principal and agent or master and servant. Hen",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/4.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-4-3",
+  "case_id": "commonlii-LKSC-1986-4",
+  "citation": "(1987) 1 Sri LR 5",
+  "statement": "A Scott v. Avery clause in an agreement makes arbitration a condition precedent.",
+  "supporting_quote": "(1) Arbitration clauses in contracts are of two main kinds, namely (a) bare arbitration agreements where the provision for arbitration is a mere matter for procedure and does not include right of action on the contract itself but here the party against whom an action is brought can invoke the exercise of the discretionary power of the court to stay proceedings until an arbitration is held. (b) agreements making an arbitrator's award a condition precedent to any right of action which will then be bound not on the original contract but on the arbitral award. Such a provision known as a Scott v. Avery clause bars the institution of a suit without prior recourse to arbitration culminating in an award. In England however the courts are vested with discretionary jurisdiction to override a Scott v. Avery clause in suitable cases and to treat it as a mere arbitration clause. (2) The arbitration clause is not displaced or abrogated by repudiatory breaches of the contract unless the contract itself or arbitration clause itself is invalid or not binding on the parties or the parties have waived it or are estopped from relying upon it. (3) In the instant case clause 10 of the agreement P1 is a Scott v. Avery clause making arbitration a condition precedent and as there was no recourse to prior arbitration the District Court had no jurisdiction to entertain the suit. (4) The relationship between the 1st defendant and the plaintiff was that of principal and agent or master and servant. Hen",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/4.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-7-1",
+  "case_id": "commonlii-LKSC-1986-7",
+  "citation": "(1987) 1 Sri LR 314",
+  "statement": "Omission to aver jurisdiction in a plaint due to negligence may be considered as unintentional.",
+  "supporting_quote": "(1) The omission to aver jurisdiction in the plaint though unintentional was due to utter negligence. (2) Although the Court made an erroneous order calling for an affidavit which was unnecessary where a permanent injunction was being prayed for there was an overriding duty to court cast on the registered attorney to ensure that the order was corrected. The resultant delay of over two months to obtain an order to issue summons was due to lack of prudence and diligence on the part of the respondent. (3) The respondent had neglected to appear for Mr. AIIes on 30.7.1984 and his explanation for his failure is unconvincing and unacceptable. 315 (4) The respondent had unduly delayed the steps for revocation of his proxy. (5) In his correspondence with Mr. Alles the respondent had indulged in, language unbecoming of an attorney-at-law and a gentleman. The respondent's allegation of dishonesty on the part of Mr. Alles was demonstrably baseless and made recklessly and irresponsibly. (6) The respondent's failure to file his observations on being called upon by the Supreme Court even after obtaining extensions of time, shows he did not have respect and regard for the Supreme Court. (7) Every negligent act on the part of an attorney-at-law, would not amount to a malpractice within the meaning of s. 42(2) of the Judicature Act but the conduct and negligence of the respondent amount to professional misconduct and malpractice within the meaning of s. 42 of the Judicature Act. Apart from its statutory powers the Supreme Court has inherent power to deal with delinquent attorneys-at-law. Professional misconduct which is improper or deplorable or reprehensible when judged in relation to accepted standards of propriety and competence amounts to malpractice",
+  "statute_section": "SRC030-s35",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/7.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-7-2",
+  "case_id": "commonlii-LKSC-1986-7",
+  "citation": "(1987) 1 Sri LR 314",
+  "statement": "A court's order can be corrected if it is found to be erroneous.",
+  "supporting_quote": "(1) The omission to aver jurisdiction in the plaint though unintentional was due to utter negligence. (2) Although the Court made an erroneous order calling for an affidavit which was unnecessary where a permanent injunction was being prayed for there was an overriding duty to court cast on the registered attorney to ensure that the order was corrected. The resultant delay of over two months to obtain an order to issue summons was due to lack of prudence and diligence on the part of the respondent. (3) The respondent had neglected to appear for Mr. AIIes on 30.7.1984 and his explanation for his failure is unconvincing and unacceptable. 315 (4) The respondent had unduly delayed the steps for revocation of his proxy. (5) In his correspondence with Mr. Alles the respondent had indulged in, language unbecoming of an attorney-at-law and a gentleman. The respondent's allegation of dishonesty on the part of Mr. Alles was demonstrably baseless and made recklessly and irresponsibly. (6) The respondent's failure to file his observations on being called upon by the Supreme Court even after obtaining extensions of time, shows he did not have respect and regard for the Supreme Court. (7) Every negligent act on the part of an attorney-at-law, would not amount to a malpractice within the meaning of s. 42(2) of the Judicature Act but the conduct and negligence of the respondent amount to professional misconduct and malpractice within the meaning of s. 42 of the Judicature Act. Apart from its statutory powers the Supreme Court has inherent power to deal with delinquent attorneys-at-law. Professional misconduct which is improper or deplorable or reprehensible when judged in relation to accepted standards of propriety and competence amounts to malpractice",
+  "statute_section": "SRC030-s35",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/7.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1986-7-3",
+  "case_id": "commonlii-LKSC-1986-7",
+  "citation": "(1987) 1 Sri LR 314",
+  "statement": "A respondent's failure to appear for a scheduled court date may be considered neglectful.",
+  "supporting_quote": "(1) The omission to aver jurisdiction in the plaint though unintentional was due to utter negligence. (2) Although the Court made an erroneous order calling for an affidavit which was unnecessary where a permanent injunction was being prayed for there was an overriding duty to court cast on the registered attorney to ensure that the order was corrected. The resultant delay of over two months to obtain an order to issue summons was due to lack of prudence and diligence on the part of the respondent. (3) The respondent had neglected to appear for Mr. AIIes on 30.7.1984 and his explanation for his failure is unconvincing and unacceptable. 315 (4) The respondent had unduly delayed the steps for revocation of his proxy. (5) In his correspondence with Mr. Alles the respondent had indulged in, language unbecoming of an attorney-at-law and a gentleman. The respondent's allegation of dishonesty on the part of Mr. Alles was demonstrably baseless and made recklessly and irresponsibly. (6) The respondent's failure to file his observations on being called upon by the Supreme Court even after obtaining extensions of time, shows he did not have respect and regard for the Supreme Court. (7) Every negligent act on the part of an attorney-at-law, would not amount to a malpractice within the meaning of s. 42(2) of the Judicature Act but the conduct and negligence of the respondent amount to professional misconduct and malpractice within the meaning of s. 42 of the Judicature Act. Apart from its statutory powers the Supreme Court has inherent power to deal with delinquent attorneys-at-law. Professional misconduct which is improper or deplorable or reprehensible when judged in relation to accepted standards of propriety and competence amounts to malpractice",
+  "statute_section": "SRC030-s35",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1986/7.md"
+ },
+ {
+  "rule_id": "draftly-rule-commonlii-LKSC-1987-22-1",
+  "case_id": "commonlii-LKSC-1987-22",
+  "citation": "(1988) 1 Sri LR 25",
+  "statement": "The Muslim law governs intestate succession for deceased Muslims domiciled in Sri Lanka or owning immovable property in Sri Lanka.",
+  "supporting_quote": "(The Muslim law postulates consanguinity to qualify oneself for intestate succession. The, Adoption of Children Ordinance being a general law does not abrogate the special law set out in the Muslim Intestate Succession Ordinance which prescribes that intestate succession to any deceased Muslim domiciled in Sri Lanka or owning immovable property in Sri Lanka shall be governed by the Muslim Law applicable to the sect to which the deceased Muslim belonged. The maxim generalia specialibus non derogant applies and the claim of an adopted child to succeed. to the estate of his adoptive Muslim parent fails as the Muslim law does not recognise adoption, but only birth in` lawful wedlock for intestate succession. 26",
+  "statute_section": "",
+  "method": "headnote",
+  "text_path": "data/processed/docs/case-law/commonlii/LKSC/1987/22.md"
+ }
+]
+
+hook: PostToolUse
+ succeeded in 1444ms:
+
+Name            Length
+----            ------
+pack-000.json    37210
+pack-001.json    38567
+pack-002.json    27726
+pack-003.json    27101
+pack-004.json    34630
+pack-005.json    32241
+pack-006.json    35418
+pack-007.json    32288
+pack-008.json    32704
+pack-009.json    33903
+pack-010.json    36485
+pack-011.json    36061
+pack-012.json    36220
+pack-013.json    32105
+pack-014.json    35169
+pack-015.json    31610
+pack-016.json    31110
+pack-017.json    32883
+pack-018.json    30730
+pack-019.json    31978
+pack-020.json    28735
+pack-021.json    28709
+pack-022.json    30779
+pack-023.json    32315
+pack-024.json    27091
+pack-025.json    30596
+pack-026.json    27355
+pack-027.json    29067
+pack-028.json    34769
+pack-029.json    29712
+pack-030.json    38188
+pack-031.json    36522
+pack-032.json    38750
+pack-033.json    31225
+pack-034.json    32457
+pack-035.json    29816
+pack-036.json    33990
+pack-037.json    26733
+pack-038.json    36011
+pack-039.json    21221
+pack-040.json    18685
+pack-041.json    18509
+pack-042.json    19517
+pack-043.json    17476
+pack-044.json    17804
+pack-045.json    18444
+pack-046.json    18333
+pack-047.json    18561
+pack-048.json    19638
+pack-049.json    18094
+pack-050.json    19278
+pack-051.json    18324
+pack-052.json    18585
+pack-053.json    19197
+pack-054.json    19781
+pack-055.json    17945
+pack-056.json     9279
+part-000.jsonl    9229
+part-001.jsonl    8433
+part-002.jsonl    8105
+part-003.jsonl    8286
+part-004.jsonl    7911
+part-005.jsonl    8574
+part-006.jsonl    8669
+part-007.jsonl    8015
+part-008.jsonl    8331
+part-009.jsonl    8468
+part-010.jsonl    8557
+part-011.jsonl    8340
+part-012.jsonl    8268
+part-013.jsonl    8309
+part-014.jsonl    8509
+part-015.jsonl    8645
+part-016.jsonl    8270
+part-017.jsonl    8491
+part-018.jsonl    8086
+part-019.jsonl    8315
+part-020.jsonl    8581
+part-021.jsonl    8613
+part-024.jsonl    8439
+part-027.jsonl    7965
+part-028.jsonl    8311
+part-029.jsonl    8114
+worker-000.log  671098
+worker-001.log 1623140
+worker-002.log 1321242
+worker-003.log  588480
+worker-004.log  398876
+worker-005.log 1551064
+worker-006.log  666787
+worker-007.log  373166
+worker-008.log  372756
+worker-009.log  343659
+worker-010.log  500115
+worker-011.log  609628
+worker-012.log  365691
+worker-013.log  350625
+worker-014.log 1454837
+worker-015.log  305661
+worker-016.log  301256
+worker-017.log  313618
+worker-018.log  446237
+worker-019.log  267275
+worker-020.log  286166
+worker-021.log  263601
+worker-022.log    4541
+worker-023.log    5481
+worker-024.log  281338
+worker-025.log    5502
+worker-026.log    5475
+worker-027.log 1477293
+worker-028.log  323039
+worker-029.log 1403227
+worker-030.log       0
+worker-031.log       0
+worker-032.log       0
+worker-033.log       0
+worker-034.log    2198
+worker-035.log    2198
+worker-036.log    2198
+worker-037.log    2198
+worker-038.log    2198
+worker-039.log    2198
+worker-040.log    2198
+worker-041.log    2198
+worker-042.log    2198
+worker-043.log    2198
+worker-044.log    2708
+worker-045.log    2198
+worker-046.log    2198
+worker-047.log    2198
+worker-048.log    2198
+worker-049.log    2198
+worker-050.log    2198
+worker-051.log    2198
+worker-052.log    2198
+worker-053.log    2198
+worker-054.log    2198
+worker-055.log    2198
+worker-056.log    2198
+
+
+
+hook: PostToolUse
+hook: PostToolUse Failed
+hook: PostToolUse Failed
+hook: PostToolUse Failed
+codex
+The pack contains headnote-style extractions across a small set of Supreme Court cases. I’m going case by case now because several quotes are broad headnotes, and strict auditing needs the court’s own holding rather than just topical support.
+hook: PreToolUse
+hook: PreToolUse Failed
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '$rules = Get-Content -LiteralPath scripts/case-law-information-extraction/output/judge/pack-031.json -Raw | ConvertFrom-Json; $rules.Count; $rules | Group-Object text_path | Select-Object Count,Name' in D:\projects\draftly
+ succeeded in 1037ms:
+25
+
+Count Name                                                  
+----- ----                                                  
+    1 data/processed/docs/case-law/commonlii/LKSC/1983/20.md
+    2 data/processed/docs/case-law/commonlii/LKSC/1983/4.md 
+    2 data/processed/docs/case-law/commonlii/LKSC/1984/17.md
+    3 data/processed/docs/case-law/commonlii/LKSC/1984/2.md 
+    3 data/processed/docs/case-law/commonlii/LKSC/1985/22.md
+    2 data/processed/docs/case-law/commonlii/LKSC/1986/1.md 
+    1 data/processed/docs/case-law/commonlii/LKSC/1986/25.md
+    1 data/processed/docs/case-law/commonlii/LKSC/1986/34.md
+    3 data/processed/docs/case-law/commonlii/LKSC/1986/35.md
+    3 data/processed/docs/case-law/commonlii/LKSC/1986/4.md 
+    3 data/processed/docs/case-law/commonlii/LKSC/1986/7.md 
+    1 data/processed/docs/case-law/commonlii/LKSC/1987/22.md
+
+
+
+hook: PostToolUse
+hook: PostToolUse Failed
+codex
+Before writing anything, I’ll inspect the judgment markdown around the headnote and the court’s reasoning. The main risk here is a generated statement being too broad or a quoted passage being from argument or another authority.
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse Failed
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -LiteralPath data/processed/docs/case-law/commonlii/LKSC/1983/4.md -TotalCount 260' in D:\projects\draftly
+hook: PreToolUse Failed
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -LiteralPath data/processed/docs/case-law/commonlii/LKSC/1983/20.md -TotalCount 220' in D:\projects\draftly
+hook: PreToolUse Failed
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -LiteralPath data/processed/docs/case-law/commonlii/LKSC/1984/17.md -TotalCount 280' in D:\projects\draftly
