@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 import sys
@@ -15,6 +16,23 @@ SPACE_RE = re.compile(r"\s+")
 SECTION_START_RE = re.compile(r"^(\d+[A-Za-z]?)\.\s*(.*)$", re.DOTALL)
 PART_RE = re.compile(r"^PART\s+([IVXLCDM]+)\s*$", re.IGNORECASE)
 SUBSECTION_RE = re.compile(r"^\((\d+)\)\s*(.*)$", re.DOTALL)
+PROVISION_MARKER_RE = re.compile(r"^\((\d+|[A-Za-z]+)\)\s*(.*)$", re.DOTALL)
+TRAILING_PROVISION_MARKER_RE = re.compile(
+    r"^(.*(?:;|:))\s+\(([A-Za-z]+)\)\s*$", re.DOTALL
+)
+
+KNOWN_SOURCE_ERRORS = [
+    ("section_heading", "2", "National Development Authority", "Heading appears to omit 'Housing'."),
+    ("section_text", "5", "other wise", "Suspicious split word in the source text."),
+    ("section_text", "8", "may. with", "Suspicious punctuation in the source text."),
+    ("section_text", "17", "deter mined", "Suspicious split word in the source text."),
+    ("section_text", "18", "Chair man", "Suspicious split word in the source text."),
+    ("section_text", "27", "sub section", "Suspicious split word in the source text."),
+    ("section_text", "38", "foe served", "Suspicious wording in the source text."),
+    ("section_text", "58", "sub section", "Suspicious split word in the source text."),
+    ("section_text", "72", "not excluding one year", "Potentially legally significant source wording; verify against the Gazette."),
+    ("part_title", "VII", "by the General", "Part title appears to end abruptly in the source."),
+]
 
 
 def clean_text(value: str) -> str:
@@ -38,7 +56,9 @@ def restore_html(source: str) -> str:
 class Event:
     kind: str
     text: str
+    raw_text: str
     td_width: str | None = None
+    depth: int = 0
 
 
 class LegislationHTMLParser(HTMLParser):
@@ -74,6 +94,9 @@ class LegislationHTMLParser(HTMLParser):
                     "tag": tag,
                     "parts": [],
                     "td_width": self.current_td_width,
+                    "depth": sum(
+                        1 for width in self._td_width_stack if width_number(width) == 340
+                    ),
                 }
             )
 
@@ -102,11 +125,18 @@ class LegislationHTMLParser(HTMLParser):
             self._captures[-1]["parts"].append(data)
 
     def _flush_capture(self, capture: dict[str, Any]) -> None:
-        text = clean_text("".join(capture["parts"]))
+        raw_text = "".join(capture["parts"]).strip()
+        text = clean_text(raw_text)
         capture["parts"].clear()
         if text:
             self.events.append(
-                Event(capture["tag"], text, capture.get("td_width"))
+                Event(
+                    capture["tag"],
+                    text,
+                    raw_text,
+                    capture.get("td_width"),
+                    capture.get("depth", 0),
+                )
             )
 
     def handle_endtag(self, tag: str) -> None:
@@ -138,29 +168,88 @@ def width_number(width: str | None) -> int | None:
     return int(match.group()) if match else None
 
 
-def parse_subsections(blocks: list[str]) -> list[dict[str, str]]:
-    """Build top-level subsection records from block boundaries."""
-    subsections: list[dict[str, str]] = []
-    current: dict[str, Any] | None = None
+def _new_provision(number: str, body: str) -> dict[str, Any]:
+    return {
+        "number": number,
+        "_blocks": [body] if body else [],
+        "paragraphs": [],
+        "subparagraphs": [],
+    }
 
-    for block in blocks:
-        match = SUBSECTION_RE.match(block)
-        if match:
-            if current:
-                current["text"] = clean_text(" ".join(current.pop("blocks")))
-                subsections.append(current)
-            current = {
-                "number": match.group(1),
-                "blocks": [match.group(2)] if match.group(2) else [],
-            }
-        elif current:
-            current["blocks"].append(block)
 
-    if current:
-        current["text"] = clean_text(" ".join(current.pop("blocks")))
-        subsections.append(current)
+def _finish_provision(node: dict[str, Any]) -> None:
+    blocks = node.pop("_blocks", [])
+    node["raw_text"] = "\n".join(blocks).strip()
+    node["normalized_text"] = clean_text(" ".join(blocks))
+    node["text"] = node["normalized_text"]
+    for key in ("paragraphs", "subparagraphs"):
+        for child in node.get(key, []):
+            _finish_provision(child)
+        if not node.get(key):
+            node.pop(key, None)
 
-    return subsections
+
+def parse_hierarchy(blocks: list[tuple[str, int]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Reconstruct subsection, paragraph and subparagraph nesting."""
+    expanded_blocks: list[tuple[str, int]] = []
+    for block, level in blocks:
+        trailing = TRAILING_PROVISION_MARKER_RE.match(clean_text(block))
+        if trailing:
+            text, marker = trailing.groups()
+            expanded_blocks.extend(((text, level), (f"({marker})", level)))
+        else:
+            expanded_blocks.append((block, level))
+
+    subsections: list[dict[str, Any]] = []
+    paragraphs: list[dict[str, Any]] = []
+    current_subsection: dict[str, Any] | None = None
+    current_paragraph: dict[str, Any] | None = None
+    current_subparagraph: dict[str, Any] | None = None
+    subsection_level = 0
+    paragraph_level = 0
+
+    for block, level in expanded_blocks:
+        match = PROVISION_MARKER_RE.match(clean_text(block))
+        if not match:
+            target = current_subparagraph or current_paragraph or current_subsection
+            if target is not None:
+                target["_blocks"].append(block)
+            continue
+
+        number, body = match.groups()
+        if number.isdigit():
+            expected_number = 1 if not subsections else int(subsections[-1]["number"]) + 1
+            if int(number) != expected_number:
+                # A wrapped line can begin with a parenthesized numeric cross-
+                # reference (for example, "(1) and the certificates...").
+                # Do not turn that reference into a duplicate subsection.
+                target = current_subparagraph or current_paragraph or current_subsection
+                if target is not None:
+                    target["_blocks"].append(block)
+                continue
+            current_subsection = _new_provision(number, body)
+            subsections.append(current_subsection)
+            subsection_level = level
+            current_paragraph = None
+            current_subparagraph = None
+            continue
+
+        if current_paragraph is not None and level > paragraph_level:
+            current_subparagraph = _new_provision(number, body)
+            current_paragraph["subparagraphs"].append(current_subparagraph)
+            continue
+
+        current_paragraph = _new_provision(number, body)
+        paragraph_level = level
+        current_subparagraph = None
+        if current_subsection is not None and level > subsection_level:
+            current_subsection["paragraphs"].append(current_paragraph)
+        else:
+            paragraphs.append(current_paragraph)
+
+    for node in [*subsections, *paragraphs]:
+        _finish_provision(node)
+    return subsections, paragraphs
 
 
 def extract_sections(source: str) -> list[dict[str, Any]]:
@@ -180,8 +269,14 @@ def extract_sections(source: str) -> list[dict[str, Any]]:
         if current is None:
             return
         blocks = current.pop("_blocks")
-        current["text"] = clean_text(" ".join(blocks))
-        current["subsections"] = parse_subsections(blocks)
+        raw_blocks = current.pop("_raw_blocks")
+        hierarchy_blocks = current.pop("_hierarchy_blocks")
+        current["raw_text"] = "\n".join(raw_blocks).strip()
+        current["normalized_text"] = clean_text(" ".join(blocks))
+        current["text"] = current["normalized_text"]
+        subsections, paragraphs = parse_hierarchy(hierarchy_blocks)
+        current["subsections"] = subsections
+        current["paragraphs"] = paragraphs
         sections.append(current)
         current = None
 
@@ -219,6 +314,8 @@ def extract_sections(source: str) -> list[dict[str, Any]]:
                 "part_number": current_part_number,
                 "part_title": current_part_title,
                 "_blocks": [first_text] if first_text else [],
+                "_raw_blocks": [first_text] if first_text else [],
+                "_hierarchy_blocks": [],
             }
             pending_heading = None
             continue
@@ -228,6 +325,8 @@ def extract_sections(source: str) -> list[dict[str, Any]]:
             # A 420 px continuation is also accepted for simple sections.
             if width in {340, 420}:
                 current["_blocks"].append(text)
+                current["_raw_blocks"].append(event.raw_text)
+                current["_hierarchy_blocks"].append((event.raw_text, event.depth))
 
     finish_current()
     return sections
@@ -261,8 +360,55 @@ def validate_sections(sections: list[dict[str, Any]]) -> list[str]:
     return warnings
 
 
-def write_json(sections: list[dict[str, Any]], stream: TextIO) -> None:
-    json.dump(sections, stream, ensure_ascii=False, indent=2)
+def source_errors_for(sections: list[dict[str, Any]]) -> list[dict[str, str]]:
+    by_number = {section["section_number"]: section for section in sections}
+    errors: list[dict[str, str]] = []
+    for kind, location, observed, note in KNOWN_SOURCE_ERRORS:
+        if kind == "part_title":
+            haystack = " ".join(
+                section.get("part_title") or ""
+                for section in sections
+                if section.get("part_number") == location
+            )
+            label = f"part {location} title"
+        else:
+            section = by_number.get(location, {})
+            field = "heading" if kind == "section_heading" else "raw_text"
+            haystack = str(section.get(field) or "")
+            label = f"section {location} {'heading' if field == 'heading' else 'text'}"
+        if observed in haystack:
+            errors.append(
+                {
+                    "location": label,
+                    "observed_text": observed,
+                    "note": note,
+                    "verification_status": "needs_authoritative_source_check",
+                }
+            )
+    return errors
+
+
+def build_document(args: argparse.Namespace, sections: list[dict[str, Any]]) -> dict[str, Any]:
+    raw_text = "\n\n".join(section["raw_text"] for section in sections)
+    normalized_text = "\n\n".join(section["normalized_text"] for section in sections)
+    return {
+        "source_id": args.source_id,
+        "official_title": args.official_title,
+        "act_number": args.act_number,
+        "year": args.year,
+        "source_url": args.source_url,
+        "retrieved_at": args.retrieved_at,
+        "raw_text": raw_text,
+        "normalized_text": normalized_text,
+        "verification_status": args.verification_status,
+        "source_errors": source_errors_for(sections),
+        "content_hash": hashlib.sha256(args.input.read_bytes()).hexdigest(),
+        "sections": sections,
+    }
+
+
+def write_json(document: dict[str, Any], stream: TextIO) -> None:
+    json.dump(document, stream, ensure_ascii=False, indent=2)
     stream.write("\n")
 
 
@@ -298,6 +444,13 @@ def build_argument_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Exit with status 2 if validation warnings are found",
     )
+    parser.add_argument("--source-id")
+    parser.add_argument("--official-title")
+    parser.add_argument("--act-number")
+    parser.add_argument("--year", type=int)
+    parser.add_argument("--source-url")
+    parser.add_argument("--retrieved-at")
+    parser.add_argument("--verification-status", default="unverified")
     return parser
 
 
@@ -306,6 +459,7 @@ def main() -> int:
     source = args.input.read_text(encoding="utf-8")
     sections = extract_sections(source)
     warnings = validate_sections(sections)
+    document = build_document(args, sections)
 
     stream: TextIO
     should_close = False
@@ -318,7 +472,7 @@ def main() -> int:
 
     try:
         if args.format == "json":
-            write_json(sections, stream)
+            write_json(document, stream)
         elif args.format == "jsonl":
             write_jsonl(sections, stream)
         else:
