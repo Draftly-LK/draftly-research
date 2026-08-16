@@ -26,7 +26,11 @@ PROGRESS_NAME = "download-progress.json"
 HARD_TIMEOUT_S = 90
 
 
-def call_with_hard_timeout(func, *args, timeout=HARD_TIMEOUT_S, **kwargs):
+def call_with_hard_timeout(func, *args, hard_timeout_s=HARD_TIMEOUT_S, **kwargs):
+    # NOTE: named hard_timeout_s, not timeout -- callers pass their own
+    # `timeout=` for the wrapped function itself (e.g. requests' own
+    # per-socket timeout); reusing the same name would silently swallow it
+    # into *this* wrapper's budget instead of forwarding it in kwargs.
     outcome: dict = {}
 
     def run():
@@ -39,11 +43,11 @@ def call_with_hard_timeout(func, *args, timeout=HARD_TIMEOUT_S, **kwargs):
     # exit -- Python threads cannot be forcibly killed.
     t = threading.Thread(target=run, daemon=True)
     t.start()
-    t.join(timeout)
+    t.join(hard_timeout_s)
     if t.is_alive():
         raise TimeoutError(
             f"{getattr(func, '__name__', func)} did not return within "
-            f"{timeout}s (likely cloudscraper's challenge-solver hanging)"
+            f"{hard_timeout_s}s (likely cloudscraper's challenge-solver hanging)"
         )
     if "error" in outcome:
         raise outcome["error"]
