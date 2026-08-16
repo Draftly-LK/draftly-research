@@ -35,6 +35,7 @@ import pypdfium2 as pdfium
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import build_case_citation_links as bcl  # noqa: E402
+import harvest_courts_caselaw as hcc  # noqa: E402 -- reuses its proven conveyancing keyword gate
 
 MANIFEST = REPO_ROOT / "data" / "supremecourt.lk" / "manifest.csv"
 PDF_ROOT = REPO_ROOT / "data" / "supremecourt.lk"
@@ -47,8 +48,24 @@ FIELDS = [
     "judge_primary", "coram", "lower_court_reference", "disposition",
     "disposition_evidence", "statutes_cited", "principle_statement",
     "final_order_paragraph", "pdf_url", "filename", "sha256", "text_chars",
-    "extraction_flags",
+    "is_conveyancing", "conveyancing_signal", "extraction_flags",
 ]
+
+# Conveyancing classifier: statute-citation signal OR keyword signal.
+#
+# Statute citation alone over-counts: the closed catalogue includes general
+# procedural statutes (Evidence Ordinance, Civil Procedure Code, Companies
+# Act) that get cited in nearly every civil appeal regardless of subject
+# matter -- measured 331/424 "statute cited, no keyword hit" cases cited
+# ONLY these. Excluded here so a citation only counts when it's to a
+# substantive conveyancing statute.
+GENERIC_STATUTES = {"SRC029", "SRC030", "SRC031", "SRC032"}  # Evidence Ord., CPC, Companies Act x2
+
+# Keyword signal: reused harvest_courts_caselaw.STRONG/THRESHOLD, scanned over
+# the FULL judgment text. Tested restricting this to just the caption/opening
+# (first 2.5-4K chars): hit rate collapsed from 35.9% to 10-19%, because the
+# substantive legal issue is usually developed in the reasoning, not announced
+# in the caption -- so the full-text scan is kept, not narrowed.
 
 # ---------------------------------------------------------------- patterns
 
@@ -212,6 +229,21 @@ def statutes_cited_for_text(text: str, law_matchers: list[dict], identity_map: d
             found.add(f"{law['source_id']}-s{number}")
     return sorted(found)
 
+
+def classify_conveyancing(text: str, statutes: list[str]) -> tuple[bool, str]:
+    """conveyancing = substantive statute citation OR keyword threshold.
+    Returns (is_conveyancing, signal_label) -- see the module-level comment
+    by GENERIC_STATUTES for why each half is defined the way it is."""
+    substantive = any(ref.split("-s")[0] not in GENERIC_STATUTES for ref in statutes)
+    keyword = len(hcc.STRONG.findall(text)) >= hcc.THRESHOLD if text else False
+    if substantive and keyword:
+        return True, "statute+keyword"
+    if keyword:
+        return True, "keyword-only"
+    if substantive:
+        return True, "statute-only"
+    return False, "none"
+
 # ---------------------------------------------------------------- io helpers
 
 
@@ -257,6 +289,7 @@ def build_row(row: dict, law_matchers: list[dict], identity_map: dict) -> dict:
 
     statutes = statutes_cited_for_text(text, law_matchers, identity_map) if text else []
     statutes_str = "; ".join(statutes) if statutes else "none"
+    is_conveyancing, conveyancing_signal = classify_conveyancing(text, statutes)
 
     principle = extract_principle_statement(text) if text else ""
     if not principle:
@@ -297,6 +330,8 @@ def build_row(row: dict, law_matchers: list[dict], identity_map: dict) -> dict:
         "filename": row["filename"],
         "sha256": row["sha256"],
         "text_chars": str(len(text)),
+        "is_conveyancing": str(is_conveyancing),
+        "conveyancing_signal": conveyancing_signal,
         "extraction_flags": "; ".join(flags) if flags else "none",
     }
 
