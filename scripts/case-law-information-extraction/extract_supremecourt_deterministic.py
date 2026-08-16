@@ -73,10 +73,21 @@ DISPOSITION_PATTERNS = [
 ]
 
 PRINCIPLE_MARKERS = [
-    r"it\s+is\s+(?:well\s+)?settled\s+(?:law\s+)?that",
+    r"it\s+is\s+(?:now\s+)?(?:well\s+)?settled\s+(?:law\s+)?that",
     r"it\s+is\s+trite\s+law\s+that",
     r"the\s+(?:established\s+)?(?:law|principle|position)\s+(?:in\s+law\s+)?is\s+that",
     r"the\s+established\s+principle\s+is",
+    r"this\s+court\s+has\s+(?:consistently\s+)?held\s+that",
+    r"it\s+has\s+been\s+held\s+(?:by\s+this\s+court\s+)?(?:in\s+a\s+(?:long\s+)?(?:line|series)\s+of\s+cases\s+)?that",
+    r"the\s+applicable\s+(?:test|principle)\s+(?:in\s+(?:this|such)\s+(?:a\s+)?case\s+)?is",
+    r"the\s+correct\s+(?:position|test)\s+in\s+law\s+is",
+    r"the\s+principle\s+applicable\s+(?:to|in)\s+(?:this|such)\s+(?:a\s+)?cases?\s+is",
+    r"it\s+is\s+a\s+well[\s-]established\s+principle\s+that",
+    r"the\s+test\s+to\s+be\s+applied\s+is",
+    r"it\s+is\s+a\s+cardinal\s+principle\s+(?:of\s+law\s+)?that",
+    r"the\s+law\s+(?:on\s+this\s+point|in\s+this\s+regard|is\s+this\s+regard)\s+is\s+(?:well\s+)?settled",
+    r"the\s+onus\s+(?:of\s+proof\s+)?(?:lies|rests|is)\s+(?:on|with|upon)",
+    r"the\s+burden\s+of\s+proof\s+(?:lies|rests)\s+(?:on|with|upon)",
 ]
 
 CASE_TYPE_RX = re.compile(r"^SC/([A-Z]+(?:/[A-Z]+)*)", re.I)
@@ -121,13 +132,23 @@ def classify_disposition(text: str) -> tuple[str, str, bool]:
     return "unclassified", re.sub(r"\s+", " ", tail[-300:]).strip(), True
 
 
-def extract_principle_statement(text: str) -> str:
+def extract_principle_statement(text: str, max_candidates: int = 3) -> str:
+    spans: list[tuple[int, int]] = []
+    candidates: list[str] = []
     for pat in PRINCIPLE_MARKERS:
-        m = re.search(pat, text, re.I)
-        if m:
-            start, end = bcl.sentence_bounds(text, m.start(), m.end())
-            return re.sub(r"\s+", " ", text[start:end]).strip()
-    return ""
+        for m in re.finditer(pat, text, re.I):
+            start, end = bcl.sentence_bounds(text, m.start(), m.end(), radius=700)
+            # pull in the following sentence too, for context beyond the marker clause
+            next_period = text.find(". ", end, end + 400)
+            if 0 <= next_period < end + 400:
+                end = next_period + 1
+            if any(abs(start - s) < 60 for s, _ in spans):
+                continue  # same passage already captured via another marker
+            spans.append((start, end))
+            candidates.append(re.sub(r"\s+", " ", text[start:end]).strip())
+            if len(candidates) >= max_candidates:
+                return " || ".join(candidates)
+    return " || ".join(candidates)
 
 
 def extract_final_order(text: str) -> str:
