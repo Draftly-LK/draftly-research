@@ -1,7 +1,7 @@
 """Reconcile topic membership using source-registry.csv as the single source of truth.
 
 The registry `topics` column is authoritative. This regenerates, from it:
-  - each topic manifest's `## Source IDs` table + YAML frontmatter
+  - each topic file's `## Source IDs` table + YAML frontmatter
     (Purpose / Status prose and existing role notes are preserved)
   - manifests/topics.csv, topic-sources.csv, topics.json
 
@@ -57,15 +57,18 @@ if ts_path.exists():
         for r in csv.DictReader(fh):
             roles[(r["topic_id"], r["source_id"])] = r["role"]
 
-slug_by_id = {d.name[:2]: d.name for d in sorted(TOPICS.glob("[0-9][0-9]-*")) if d.is_dir()}
+slug_by_id = {
+    path.stem[:2]: path.stem
+    for path in sorted(TOPICS.glob("[0-9][0-9]-*.md"))
+}
 
 topics_out = []
 for tid in sorted(topic_members):
     slug = slug_by_id.get(tid)
     if not slug:
-        print(f"[warn] topic {tid} has sources but no folder; skipping manifest rewrite")
+        print(f"[warn] topic {tid} has sources but no topic file; skipping rewrite")
         continue
-    md = TOPICS / slug / "manifest.md"
+    md = TOPICS / f"{slug}.md"
     raw = md.read_text(encoding="utf-8", errors="ignore")
     body = FM.sub("", raw)
     h1 = re.search(r"^#\s+Topic\s+\d+:\s*(.+)$", body, re.M)
