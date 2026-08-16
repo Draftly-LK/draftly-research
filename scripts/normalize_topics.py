@@ -1,14 +1,15 @@
-"""Normalize the 20 conveyancing topic manifests into machine-readable rule tables.
+"""Normalize the 20 conveyancing topic files into machine-readable rule tables.
 
-Each `data/legal-sources/topics/NN-slug/manifest.md` has a consistent shape
+Each `data/legal-sources/topics/NN-slug.md` has a consistent shape
 (`# Topic NN: Name`, `## Purpose`, `## Source IDs` table, `## Status`). This:
 
-  1. Parses every manifest → topic_id, slug, name, purpose, status, source_ids+roles.
+  1. Parses every topic file → topic_id, slug, name, purpose, status,
+     source_ids+roles.
   2. Writes normalized tables under manifests/:
        - topics.csv          (one row per topic)
        - topic-sources.csv   (long form: topic_id, source_id, role  — the rule edge table)
        - topics.json         (full nested)
-  3. Adds/refreshes YAML frontmatter on each manifest (topic_id, slug, name,
+  3. Adds/refreshes YAML frontmatter on each topic file (topic_id, slug, name,
      source_ids, keywords) so agents can parse them deterministically. Keywords
      are auto-seeded from the name + purpose (grounded, editable) for the
      rule-based topic router.
@@ -44,8 +45,8 @@ def parse(md: Path) -> dict:
     raw = md.read_text(encoding="utf-8", errors="ignore")
     body = FM.sub("", raw)  # ignore any existing frontmatter when parsing
     h1 = re.search(r"^#\s+Topic\s+(\d+):\s*(.+)$", body, re.M)
-    topic_id = h1.group(1) if h1 else md.parent.name[:2]
-    name = h1.group(2).strip() if h1 else md.parent.name
+    topic_id = h1.group(1) if h1 else md.stem[:2]
+    name = h1.group(2).strip() if h1 else md.stem
     purpose = re.sub(r"\s+", " ", section(body, "Purpose"))
     status = re.sub(r"\s+", " ", section(body, "Status"))
     sources = [
@@ -53,7 +54,7 @@ def parse(md: Path) -> dict:
         for sid, role in re.findall(r"\|\s*(SRC\d+)\s*\|\s*([^|]+?)\s*\|", body)
     ]
     return {
-        "topic_id": topic_id, "slug": md.parent.name, "name": name,
+        "topic_id": topic_id, "slug": md.stem, "name": name,
         "purpose": purpose, "status": status, "sources": sources,
     }
 
@@ -87,7 +88,7 @@ def write_frontmatter(md: Path, t: dict, kws: list[str]) -> None:
 
 def main() -> None:
     topics = []
-    for md in sorted(TOPICS.glob("*/manifest.md")):
+    for md in sorted(TOPICS.glob("[0-9][0-9]-*.md")):
         t = parse(md)
         t["keywords"] = keywords(t["name"], t["purpose"])
         write_frontmatter(md, t, t["keywords"])
@@ -116,7 +117,7 @@ def main() -> None:
 
     edges = sum(len(t["sources"]) for t in topics)
     print(f"normalized {len(topics)} topics | {edges} topic-source edges")
-    print("wrote: topics.csv, topic-sources.csv, topics.json + frontmatter on each manifest")
+    print("wrote: topics.csv, topic-sources.csv, topics.json + frontmatter on each topic file")
 
 
 if __name__ == "__main__":

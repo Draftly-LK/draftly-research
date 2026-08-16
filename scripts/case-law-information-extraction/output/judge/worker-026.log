@@ -1,0 +1,77 @@
+2026-07-19T13:51:40.188627Z ERROR codex_core_skills::service: failed to install system skills: io error while remove existing system skills dir: Access is denied. (os error 5)
+2026-07-19T13:51:40.437398Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.5
+--------
+workdir: D:\projects\draftly
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: high
+reasoning summaries: none
+session id: 019f7aa5-9b6f-7c61-a6fd-aa2eacd7196f
+--------
+user
+You are a strict Sri Lankan legal auditor. Judge every rule in the file
+scripts/case-law-information-extraction/output/judge/pack-026.json (JSON array).
+
+For EACH rule object: read the judgment text at its "text_path" (repo-relative).
+Judge six booleans STRICTLY, leaning false when uncertain:
+- statement_correct: the statement accurately reflects what THIS court decided.
+- quote_supports: the supporting_quote genuinely supports the statement — false
+  if the quote is counsel's submission, a quotation of another case, a lower
+  court's reproduced judgment, or merely topically related.
+- is_ratio: ratio decidendi/holding, not obiter, not a "semble", not argument.
+- qualifications_ok: no material condition/exception the court stated is dropped.
+- statute_correct: if statute_section is non-empty it is the provision actually
+  construed for this rule; true when empty (nothing claimed).
+- usable: overall safe to show a lawyer as this case's rule (essentially all of
+  the above).
+Write EXACTLY one output file:
+scripts/case-law-information-extraction/output/judge/part-026.jsonl
+— one JSON object per line: {"rule_id": "...", "statement_correct": bool,
+"quote_supports": bool, "is_ratio": bool, "qualifications_ok": bool,
+"statute_correct": bool, "usable": bool, "reason": "one sentence"}.
+Every rule_id from the pack must appear exactly once. Do not modify any other
+file. Reply with one line: judged N rules, M usable.
+
+hook: SessionStart
+hook: SessionStart Failed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Failed
+codex
+I’ll read the shared project context first, then inspect the rule pack and the referenced judgment texts before writing only the requested JSONL file.
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse Failed
+hook: PreToolUse Failed
+hook: PreToolUse Failed
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -Raw .agents/context/CONTEXT.md' in D:\projects\draftly
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -Raw .agents/skills/README.md' in D:\projects\draftly
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -Raw scripts/case-law-information-extraction/output/judge/pack-026.json' in D:\projects\draftly
+2026-07-19T13:53:45.266986Z ERROR codex_core::exec: exec error: windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)
+2026-07-19T13:53:45.267713Z ERROR codex_core::tools::router: error=execution error: Io(Custom { kind: Other, error: "windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)" })
+ exited -1 in 0ms:
+execution error: Io(Custom { kind: Other, error: "windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)" })
+2026-07-19T13:53:45.284523Z ERROR codex_core::exec: exec error: windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)
+2026-07-19T13:53:45.284829Z ERROR codex_core::tools::router: error=execution error: Io(Custom { kind: Other, error: "windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)" })
+ exited -1 in 0ms:
+execution error: Io(Custom { kind: Other, error: "windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)" })
+2026-07-19T13:53:45.299688Z ERROR codex_core::exec: exec error: windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)
+2026-07-19T13:53:45.299994Z ERROR codex_core::tools::router: error=execution error: Io(Custom { kind: Other, error: "windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)" })
+ exited -1 in 0ms:
+execution error: Io(Custom { kind: Other, error: "windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)" })
+codex
+The parallel read failed in the sandbox setup, so I’m switching to single-file reads to keep this moving without changing permissions.
+hook: PreToolUse
+hook: PreToolUse Failed
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -Raw .agents/context/CONTEXT.md' in D:\projects\draftly
+2026-07-19T13:53:50.367124Z ERROR codex_core::exec: exec error: windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)
+2026-07-19T13:53:50.367311Z ERROR codex_core::tools::router: error=execution error: Io(Custom { kind: Other, error: "windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)" })
+ exited -1 in 0ms:
+execution error: Io(Custom { kind: Other, error: "windows sandbox: orchestrator_helper_exit_nonzero: setup helper exited with status Some(-1073741502)" })

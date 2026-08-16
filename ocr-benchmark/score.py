@@ -36,9 +36,15 @@ OUTCOMES = ("correct", "wrong", "missing", "no_label", "unlabelled_extra")
 
 # ── loading ──────────────────────────────────────────────────────────────────
 def load_expected() -> dict[str, dict[str, Any]]:
-    if not config.EXPECTED_FIELDS.is_file():
-        return {}
-    return json.loads(config.EXPECTED_FIELDS.read_text(encoding="utf-8"))
+    """Expectations across every matter, keyed by "<matter>/<filename>"."""
+    out: dict[str, dict[str, Any]] = {}
+    for case in config.case_dirs():
+        path = config.expected_fields_path(case)
+        if not path.is_file():
+            continue
+        for name, payload in json.loads(path.read_text(encoding="utf-8")).items():
+            out[f"{case.name}/{name}"] = payload
+    return out
 
 
 def load_runs() -> dict[str, dict[str, Any]]:
@@ -148,6 +154,7 @@ def score_run(variant_id: str, run: dict[str, Any], expected_all: dict[str, dict
             rows.append(
                 {
                     "variant_id": variant_id,
+                    "matter": doc_id.split("/")[0] if "/" in doc_id else doc_id,
                     "doc_id": doc_id,
                     "key": key,
                     "critical": key in CRITICAL_KEYS,
@@ -210,6 +217,9 @@ def score_run(variant_id: str, run: dict[str, Any], expected_all: dict[str, dict
         "coverage": _ratio(predicted_count, scored) if scored else None,
         "provenance": dict(provenance),
         "kindAccuracy": _ratio(kind_hits, kind_total),
+        # Reported per matter because splits are by matter, never by page: pages
+        # from one transaction must not straddle a train/test boundary.
+        "byMatter": _by_matter(rows),
         "cost": {
             "calls": sum(d.get("provider_metadata", {}).get("calls", 0) for d in run["docs"]),
             "estimatedUsd": round(
@@ -228,6 +238,25 @@ def score_run(variant_id: str, run: dict[str, Any], expected_all: dict[str, dict
 
 def _ratio(numerator: int, denominator: int) -> float | None:
     return round(numerator / denominator, 4) if denominator else None
+
+
+def _by_matter(rows: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    out: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        bucket = out.setdefault(row["matter"], {"scored": 0, "correct": 0, "docs": set()})
+        bucket["docs"].add(row["doc_id"])
+        if row["outcome"] in ("correct", "wrong", "missing"):
+            bucket["scored"] += 1
+            bucket["correct"] += int(row["outcome"] == "correct")
+    return {
+        matter: {
+            "documents": len(bucket["docs"]),
+            "scored": bucket["scored"],
+            "correct": bucket["correct"],
+            "exactMatch": _ratio(bucket["correct"], bucket["scored"]),
+        }
+        for matter, bucket in sorted(out.items())
+    }
 
 
 def _first_error(run: dict[str, Any]) -> str:

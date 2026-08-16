@@ -9,13 +9,19 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 import time
-
-from openai import OpenAI
 
 import config
 
-_client = OpenAI(base_url=config.BASE_URL, api_key=config.API_KEY)
+# Direct execution adds this script's directory, rather than the repository
+# root, to sys.path. Add the root so the shared provider manager is importable.
+if str(config.ROOT) not in sys.path:
+    sys.path.insert(0, str(config.ROOT))
+
+from LLMs.nvidia import NvidiaManager  # noqa: E402
+
+_manager = NvidiaManager.from_env(env_file=config.ROOT / ".env")
 
 # cumulative usage across a run, keyed by model id
 USAGE: dict[str, dict[str, int]] = {}
@@ -75,11 +81,11 @@ def chat_json(system: str, user: str, model: str, *, temperature: float = 0.0,
                           max_tokens=max_tokens)
             try:
                 HTTP_ATTEMPTS["count"] += 1
-                r = _client.chat.completions.create(
+                r = _manager.create_chat_completion(
                     response_format={"type": "json_object"}, **kwargs)
             except Exception:
                 HTTP_ATTEMPTS["count"] += 1
-                r = _client.chat.completions.create(**kwargs)  # endpoint without json mode
+                r = _manager.create_chat_completion(**kwargs)  # endpoint without json mode
             _record(model, getattr(r, "usage", None))
             return _extract_json(r.choices[0].message.content or "")
         except Exception as e:  # noqa: BLE001

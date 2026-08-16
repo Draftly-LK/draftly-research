@@ -19,15 +19,10 @@ ROOT = HERE.parent
 
 load_dotenv(ROOT / ".env")
 
-# ── Inputs ───────────────────────────────────────────────────────────────────
-# Default to reading the platform bundle in place rather than duplicating client
-# documents. Override with DRAFTLY_OCR_BENCH_INPUTS.
-DEFAULT_INPUTS = ROOT.parent / "draftly-platform" / "inputs" / "case-001"
-INPUTS = Path(os.environ.get("DRAFTLY_OCR_BENCH_INPUTS", str(DEFAULT_INPUTS)))
-EXPECTED_FIELDS = INPUTS / "expected-fields.json"
-MANIFEST = INPUTS / "manifest.md"
-
 # ── Local, gitignored working directories ────────────────────────────────────
+# cases/ holds one directory per matter. Splitting by matter matters: pages from
+# the same transaction must never land on both sides of a train/test split, so
+# the matter is the unit everything downstream groups by.
 CASES = HERE / "cases"
 RENDERS = HERE / "renders"
 RUNS = HERE / "runs"
@@ -39,8 +34,38 @@ SCHEMAS = HERE / "schemas"
 RUNS_YAML = HERE / "runs.yaml"
 USAGE_JSON = RUNS / "gemini-usage.json"
 
-for _d in (RENDERS, RUNS, LABELS, REPORTS):
+for _d in (CASES, RENDERS, RUNS, LABELS, REPORTS):
     _d.mkdir(parents=True, exist_ok=True)
+
+# ── Inputs ───────────────────────────────────────────────────────────────────
+# Every matter directory under cases/. Point somewhere else with
+# DRAFTLY_OCR_BENCH_INPUTS (useful for reading a bundle in place instead of
+# copying client documents).
+INPUTS = Path(os.environ.get("DRAFTLY_OCR_BENCH_INPUTS", str(CASES)))
+
+DOC_EXTENSIONS = {".pdf", ".jpeg", ".jpg", ".png", ".tif", ".tiff", ".webp"}
+
+
+def case_dirs() -> list[Path]:
+    """Matter directories, sorted. A flat folder of documents counts as one matter."""
+    if not INPUTS.is_dir():
+        return []
+    subdirs = [
+        d for d in sorted(INPUTS.iterdir())
+        if d.is_dir() and any(f.suffix.lower() in DOC_EXTENSIONS for f in d.iterdir())
+    ]
+    if subdirs:
+        return subdirs
+    has_docs = any(f.suffix.lower() in DOC_EXTENSIONS for f in INPUTS.iterdir())
+    return [INPUTS] if has_docs else []
+
+
+def case_documents(case: Path) -> list[Path]:
+    return sorted(f for f in case.iterdir() if f.suffix.lower() in DOC_EXTENSIONS)
+
+
+def expected_fields_path(case: Path) -> Path:
+    return case / "expected-fields.json"
 
 # ── Models ───────────────────────────────────────────────────────────────────
 # Defaults match draftly-platform/backend/src/platform/config.py so a benchmark
@@ -91,10 +116,11 @@ def assert_inputs_private() -> None:
     These are real client documents. A benchmark that silently reads from a
     tracked path is one `git add -A` away from publishing them.
     """
-    if not INPUTS.is_dir():
+    if not INPUTS.is_dir() or not case_dirs():
         raise SystemExit(
-            f"Input bundle not found: {INPUTS}\n"
-            "Set DRAFTLY_OCR_BENCH_INPUTS to the case bundle directory."
+            f"No case documents found under {INPUTS}\n"
+            "Put one directory per matter in ocr-benchmark/cases/, or set "
+            "DRAFTLY_OCR_BENCH_INPUTS to a bundle directory."
         )
     try:
         inside = INPUTS.resolve().is_relative_to(ROOT.resolve())
@@ -102,7 +128,7 @@ def assert_inputs_private() -> None:
         inside = str(INPUTS.resolve()).startswith(str(ROOT.resolve()))
     if not inside:
         return  # Outside this repo entirely; nothing here can commit it.
-    probe = INPUTS / "expected-fields.json"
+    probe = case_documents(case_dirs()[0])[0]
     result = subprocess.run(
         ["git", "check-ignore", "-q", str(probe)], cwd=ROOT, capture_output=True
     )

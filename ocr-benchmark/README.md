@@ -26,9 +26,24 @@ uv run python ocr-benchmark/runner.py A --dry-run
 # The comparison.
 uv run python ocr-benchmark/runner.py A B D
 uv run python ocr-benchmark/score.py
+
+# One matter at a time, which is how you should start.
+uv run python ocr-benchmark/runner.py A --case platform
 ```
 
 Then open `ocr_benchmark.ipynb`. It only reads results, so it is free to re-run.
+
+## The corpus
+
+`cases/` holds one directory per matter — 4 matters, 38 documents, 282 pages, in
+PDFs and photographed JPEG pages. Only `platform-case-001` is labelled (37 fields
+across 4 documents); the rest still contribute transcripts, cross-run agreement,
+provenance and cost without contributing a field score.
+
+Documents are identified as `<matter>/<filename>`, because every bundle contains a
+`source-001-...`. Splits are taken by matter and never by page: pages from one
+transaction repeat the same parcels, parties and extents, so splitting by page
+contaminates the test set. See `cases/README.md`.
 
 ## The runs
 
@@ -116,9 +131,8 @@ amounts.
   tracked path, so the rule is enforced in code rather than by memory.
 - `config.assert_inputs_private` refuses to start if the resolved input directory sits
   inside the repo without a gitignore rule.
-- By default nothing is copied: `config.INPUTS` reads
-  `draftly-platform/inputs/case-001` in place. Override with
-  `DRAFTLY_OCR_BENCH_INPUTS`.
+- `config.INPUTS` defaults to `cases/`. Point it at a bundle elsewhere with
+  `DRAFTLY_OCR_BENCH_INPUTS` if you would rather not keep a working copy.
 - **Clear notebook outputs before committing.** The provenance preview renders client
   pages.
 
@@ -165,10 +179,14 @@ fingerprint), `raw-responses.jsonl` (written before normalization),
 
 ## A caution about the current size
 
-26 pages and 37 labelled fields cannot decide this. The Wilson intervals in the
-notebook are wide on purpose. Reaching 100–200 pages across several matters — split
-by matter, never by page, so pages from one transaction cannot straddle a split — is
-what turns this from a working harness into a decision.
+The corpus is 282 pages across 4 matters, which clears the 100–200 page target. The
+*labelled* portion does not: 37 fields on 4 documents in a single matter. Field
+accuracy therefore still rests on one matter, and the Wilson intervals in the
+notebook are wide on purpose.
+
+Labelling a second and third matter is what turns this from a working harness into
+a decision, because it is the only way to see whether a configuration generalises
+across matters rather than fitting the quirks of one bundle.
 
 When you inspect errors, fix the pipeline. Never edit the expectations to match the
 model.

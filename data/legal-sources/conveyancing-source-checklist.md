@@ -211,6 +211,13 @@ or lecturer notes that are not listed above.
 | LawNet case law | Useful for searchable case text. |
 | Lanka Law case-law pages | Useful for New Law Reports browsing. |
 
+`scripts/classify_commonlii_conveyancing.py` sorts the 2,162 parsed CommonLII
+judgments against the statute list above and the topic sections of this
+checklist: 246 `required`, 155 `review`, 1,761 `not-required`. Every verdict
+records the statutes, topics and terms behind it. Nothing is verified — the
+40-per-band sample in `evaluation/runs/conveyancing-gate-v1/review-sample.csv`
+is waiting on a lawyer.
+
 ## 20. Criminal and Civil Liabilities of Notaries
 
 | Source | Notes |

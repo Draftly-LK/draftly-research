@@ -12,6 +12,7 @@ dependencies = [
     "google-cloud-storage>=3.12.1",
     "markdownify>=1.2.3",
     "onnxruntime>=1.27.0",
+    "openai>=2.54.0",
     "pandas>=3.0.3",
     "python-dotenv>=1.2.2",
     "streamlit>=1.47.0",
@@ -19,27 +20,20 @@ dependencies = [
     "uvicorn[standard]>=0.51.0",
     "cloudscraper",
     "lxml>=6.1.1",
-    # Declared explicitly for the OCR benchmark. These already arrived transitively
-    # via docling, but the benchmark's preprocessing and rendering are built
-    # directly on them, and relying on another package's dependency tree for that
-    # is a latent break.
     "pypdfium2>=4.30.0",
     "opencv-python>=4.10.0",
     "numpy>=1.26",
     "matplotlib>=3.8",
     "pydantic>=2.9",
     "pyyaml>=6.0",
+    "pyvis>=0.3.2",
     "camoufox>=0.5.4",
-    "openai>=2.54.0",
 ]
 
 [project.optional-dependencies]
-# Runs C, E and F need a box-producing engine. Surya is kept optional because it
-# pulls torch (large, and GPU-oriented) and because it is GPL-3.0 licensed, which
-# needs a ruling before it can influence a product decision - the platform already
-# rejected PyMuPDF on AGPL grounds. rapidocr (Apache-2.0) is the default detector
-# and is already installed.
 surya = ["surya-ocr>=0.6.0"]
+
+doctr = ["python-doctr>=1.0.0"]
 
 [build-system]
 requires = ["hatchling"]
@@ -50,6 +44,9 @@ packages = ["src/draftly"]
 
 [tool.uv.sources]
 cloudscraper = { git = "https://github.com/VeNoMouS/cloudscraper.git" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
 
 [dependency-groups]
 dev = [
