@@ -11,8 +11,19 @@ from difflib import SequenceMatcher
 import catalogue
 
 
+_ALL_QUOTES = re.compile(r'[\'"‘’“”�]')
+
+
 def _norm(s: str) -> str:
-    return re.sub(r"\s+", " ", (s or "")).strip().lower()
+    # Quote-marks are unreliable in this OCR'd corpus: reporters re-insert a stray
+    # `"` at every wrapped line inside a multi-line quote, and the model sometimes
+    # renders the same quote with single quotes instead of double. Strip them
+    # entirely (from both the model's quote and the judgment text) rather than
+    # just the wrapping ones, so only the actual words have to match. Also strips
+    # U+FFFD, the "unreadable character" marker some scans have in place of an
+    # apostrophe (e.g. "executors� accounts" for "executors' accounts").
+    s = _ALL_QUOTES.sub("", s or "")
+    return re.sub(r"\s+", " ", s).strip().lower()
 
 
 def quote_in_text(quote: str, judgment_text: str, min_len: int = 15) -> bool:
@@ -23,20 +34,43 @@ def quote_in_text(quote: str, judgment_text: str, min_len: int = 15) -> bool:
     return q in _norm(judgment_text)
 
 
+FUZZY_COVERAGE = 0.90  # fraction of the quote's characters that must land in matching blocks
+FUZZY_WINDOW_PAD = 2.0  # how many quote-lengths of context to search around the anchor
+
+
+def _digits(s: str) -> set[str]:
+    return set(re.findall(r"\d+", s))
+
+
 def quote_match(quote: str, judgment_text: str, min_len: int = 20) -> str | None:
     """Return match type: 'verbatim' | 'fuzzy' | None.
 
-    'fuzzy' means the longest contiguous span shared with the judgment covers
-    >=85% of the quote (recovers rules where the model lightly paraphrased/clipped
-    the quote but the substance is genuinely present in the text).
+    'fuzzy' means: anchor on the best-aligning region of the judgment, then sum
+    ALL matching blocks between the quote and that region (not just the single
+    longest run) — this recovers quotes with several small scattered OCR/paraphrase
+    diffs, not only a single clean break. Requires >=90% of the quote's characters
+    to be covered. Hard-blocked if any digit sequence in the quote (a section
+    number, date, amount, ...) doesn't appear anywhere in the aligned region —
+    a near-miss must never be allowed to silently swap a citation or figure.
     """
     q, t = _norm(quote), _norm(judgment_text)
     if len(q) < min_len:
         return None
     if q in t:
         return "verbatim"
-    m = SequenceMatcher(None, q, t, autojunk=False).find_longest_match(0, len(q), 0, len(t))
-    if m.size >= max(min_len, int(0.85 * len(q))):
+    anchor = SequenceMatcher(None, q, t, autojunk=False).find_longest_match(0, len(q), 0, len(t))
+    if anchor.size == 0:
+        return None
+    pad = int(len(q) * FUZZY_WINDOW_PAD)
+    start = max(0, anchor.b - pad)
+    end = min(len(t), anchor.b + anchor.size + pad)
+    window = t[start:end]
+    q_nums = _digits(q)
+    if q_nums and not q_nums.issubset(_digits(window)):
+        return None
+    sm = SequenceMatcher(None, q, window, autojunk=False)
+    covered = sum(block.size for block in sm.get_matching_blocks())
+    if covered >= max(min_len, FUZZY_COVERAGE * len(q)):
         return "fuzzy"
     return None
 
