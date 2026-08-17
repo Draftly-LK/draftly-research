@@ -21,6 +21,7 @@ be argued with.
 Usage:
     uv run python scripts/classify_commonlii_conveyancing.py
     uv run python scripts/classify_commonlii_conveyancing.py --sample 40
+    uv run python scripts/classify_commonlii_conveyancing.py --source data/commonlii/parsed/LKCA/judgments.csv
 """
 
 from __future__ import annotations
@@ -29,13 +30,16 @@ import argparse
 import csv
 import re
 import sys
+import time
 from collections import Counter
 from pathlib import Path
 
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "data" / "commonlii" / "parsed" / "judgments.csv"
+PARSED_DIR = ROOT / "data" / "commonlii" / "parsed"
+# Default: every court's judgments.csv under parsed/<COURT>/, e.g. LKCA, LKSC.
+DEFAULT_SOURCES = sorted(PARSED_DIR.glob("*/judgments.csv"))
 OUT_DIR = ROOT / "evaluation" / "runs" / "conveyancing-gate-v1"
 
 # --------------------------------------------------------------------------
@@ -354,7 +358,7 @@ def classify(catchwords: str, text: str) -> dict:
 REVIEW_SAMPLE_PER_BAND = 40
 
 
-def write_review_sample(rows: list[dict]) -> Path:
+def write_review_sample(rows: list[dict], out_dir: Path) -> Path:
     """Spread a fixed sample across the three bands for lawyer adjudication.
 
     Nothing here is verified. The sample is what a lawyer needs to say whether
@@ -367,7 +371,7 @@ def write_review_sample(rows: list[dict]) -> Path:
         step = max(1, len(band_rows) // REVIEW_SAMPLE_PER_BAND)
         picked.extend(band_rows[::step][:REVIEW_SAMPLE_PER_BAND])
 
-    out = OUT_DIR / "review-sample.csv"
+    out = out_dir / "review-sample.csv"
     fields = [
         "case_id", "case_name", "reported_year", "verdict", "score",
         "decisive_signal", "statutes", "topics", "evidence_terms",
@@ -381,14 +385,29 @@ def write_review_sample(rows: list[dict]) -> Path:
     return out
 
 
-def run(sample: int = 0) -> int:
-    if not SOURCE.exists():
-        print(f"missing source: {SOURCE}", file=sys.stderr)
+def run(sample: int = 0, sources: list[Path] | None = None, out_dir: Path | None = None) -> int:
+    sources = sources or DEFAULT_SOURCES
+    out_dir = out_dir or OUT_DIR
+    missing = [s for s in sources if not s.exists()]
+    if missing or not sources:
+        for s in missing:
+            print(f"missing source: {s}", file=sys.stderr)
+        if not sources:
+            print(f"no judgments.csv found under {PARSED_DIR}/*/judgments.csv", file=sys.stderr)
         return 1
 
-    df = pd.read_csv(SOURCE, dtype=str).fillna("")
+    parts = []
+    for s in sources:
+        print(f"loading {s.relative_to(ROOT)} ...", file=sys.stderr, flush=True)
+        parts.append(pd.read_csv(s, dtype=str).fillna(""))
+    df = pd.concat(parts, ignore_index=True)
+
+    total = len(df)
+    print(f"classifying {total} judgment(s) ...", file=sys.stderr, flush=True)
+    log_every = max(1, total // 20)
+    start = time.monotonic()
     rows = []
-    for r in df.itertuples(index=False):
+    for i, r in enumerate(df.itertuples(index=False), start=1):
         verdict = classify(r.catchwords, r.text)
         rows.append({
             "case_id": r.case_id,
@@ -401,9 +420,17 @@ def run(sample: int = 0) -> int:
             **verdict,
             "status": "unverified",
         })
+        if i % log_every == 0 or i == total:
+            elapsed = time.monotonic() - start
+            rate = i / elapsed if elapsed else 0
+            eta = (total - i) / rate if rate else 0
+            print(
+                f"  {i}/{total} ({i / total:.0%})  {rate:.0f}/s  elapsed {elapsed:.0f}s  eta {eta:.0f}s",
+                file=sys.stderr, flush=True,
+            )
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    out = OUT_DIR / "conveyancing_labels.csv"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out = out_dir / "conveyancing_labels.csv"
     fields = list(rows[0].keys())
     with out.open("w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
@@ -432,7 +459,7 @@ def run(sample: int = 0) -> int:
         f"{sum(r['verdict'] == 'review' for r in no_catch)} review)"
     )
 
-    review_out = write_review_sample(rows)
+    review_out = write_review_sample(rows, out_dir)
     print(f"\nlawyer review sample: {review_out.relative_to(ROOT)} "
           f"({REVIEW_SAMPLE_PER_BAND} per band, verdict column left blank)")
 
@@ -451,4 +478,10 @@ def run(sample: int = 0) -> int:
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--sample", type=int, default=0, help="print N cases per band")
+    ap.add_argument(
+        "--source", action="append", type=Path, dest="sources",
+        help="judgments.csv to classify; repeatable. Default: every "
+             "parsed/<COURT>/judgments.csv (currently LKCA + LKSC).",
+    )
+    ap.add_argument("--output", type=Path, dest="out_dir", help="output directory")
     raise SystemExit(run(**vars(ap.parse_args())))
