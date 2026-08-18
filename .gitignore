@@ -12,6 +12,13 @@ __pycache__/
 .claude/skills/developing-with-streamlit/
 
 # Generated retrieval artifacts (rebuildable from the PDFs)
+data/processed/retrieval-indexes/
+
+# Per-page Document AI OCR text cache -- rebuildable via the same Document
+# AI calls (tracked/budgeted in documentai-usage.json, which IS tracked),
+# and its content is already duplicated in the committed parsed/*.json
+# raw_text fields for anything that made it through extraction.
+data/processed/documentai-cache/
 
 # Harvested case-law text (rebuildable via scripts/harvest_*_caselaw.py;
 # manifests under data/legal-sources/manifests/ ARE tracked)
@@ -33,6 +40,18 @@ proj-docs/discussions/secrets/*
 *.pem
 *-service-account*.json
 draftly-*-*.json
+credentials/
+
+# Runtime lock sentinel for the Document AI page-budget ledger; the ledger
+# JSON itself is tracked, this flock file has no content of its own.
+data/processed/documentai-usage.lock
+
+# Per-document resumability cache for the LLM statute-section-extraction
+# pipeline (anchors + full source_text per source_id) -- rebuildable by
+# re-running extraction, and its content is already duplicated in the
+# committed parsed/*.json outputs.
+scripts/statute-section-llm-extraction/cache/
+scripts/statute-section-llm-extraction/usage.json
 
 # Generated LaTeX build files
 report/*.aux
