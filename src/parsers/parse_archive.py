@@ -90,7 +90,7 @@ def flatten(record: dict, text: str) -> dict:
 
 
 def parse_bucket(
-    bucket: str, categories_dir: Path, html_root: Path, records_dir: Path
+    bucket: str, categories_dir: Path, html_root: Path, records_dir: Path, db: str
 ) -> pd.DataFrame:
     payload = json.loads(
         (categories_dir / f"{bucket}.json").read_text(encoding="utf-8")
@@ -102,7 +102,7 @@ def parse_bucket(
         for meta in payload["files"]:
             path = html_root / meta["file"]
             parsed = parse(path, meta["file"])
-            record = build_record(path, meta, parsed, bucket)
+            record = build_record(path, meta, parsed, bucket, db)
             sink.write(json.dumps(record, ensure_ascii=False) + "\n")
             rows.append(flatten(record, parsed.text))
     return pd.DataFrame(rows)
@@ -131,10 +131,17 @@ def main() -> int:
     records_dir = output_dir / "records"
     records_dir.mkdir(parents=True, exist_ok=True)
 
+    html_root = args.html_root.resolve()
+    # The database code is the raw HTML root's own folder name (raw/LKSC,
+    # raw/LKCA, ...) -- the one source of truth already used to keep every
+    # database's raw files and outputs separate; identity fields are built
+    # from it instead of ever being hardcoded to one database.
+    db = html_root.name
+
     frames = []
     for bucket in BUCKETS:
         frame = parse_bucket(
-            bucket, args.categories_dir.resolve(), args.html_root.resolve(), records_dir
+            bucket, args.categories_dir.resolve(), html_root, records_dir, db
         )
         frame.to_csv(output_dir / f"{bucket}.csv", index=False)
         empty = int((frame["paragraph_count"] == 0).sum()) if not frame.empty else 0

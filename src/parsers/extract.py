@@ -23,7 +23,7 @@ from base import ParsedJudgment
 
 TITLE_RE = re.compile(
     r"^(?P<name>.+?)\s+-\s+(?:NLR|SLR)\s+-\s+.*?"
-    r"\[(?P<nc_year>\d{4})\]\s+LKSC\s+(?P<nc_num>\d+);\s+"
+    r"\[(?P<nc_year>\d{4})\]\s+LK[A-Z]{2}\s+(?P<nc_num>\d+);\s+"
     r"\((?P<rep_year>\d{4})\)\s+(?P<volume>\d+)\s+(?P<series>NLR|Sri\s?[Ll]R)\s+"
     r"(?P<page>\d+)\s+\((?P<date_raw>[^)]+)\)\s*$"
 )
@@ -51,7 +51,7 @@ def parse_date(raw: str) -> str | None:
     return None
 
 
-def extract_frame(html: str, title: str, file: str) -> dict:
+def extract_frame(html: str, title: str, file: str, db: str) -> dict:
     match = TITLE_RE.match(title)
     frame: dict = {
         "case_name_raw": None,
@@ -66,7 +66,7 @@ def extract_frame(html: str, title: str, file: str) -> dict:
     if match:
         frame.update(
             case_name_raw=match["name"],
-            neutral_citation=f"[{match['nc_year']}] LKSC {match['nc_num']}",
+            neutral_citation=f"[{match['nc_year']}] {db} {match['nc_num']}",
             series="NLR" if match["series"] == "NLR" else "SLR",
             reported_year=int(match["rep_year"]),
             volume=int(match["volume"]),
@@ -1152,9 +1152,17 @@ def extract_quality(
 
 # ---------------------------------------------------------------- record ----
 
-def build_record(path: Path, meta: dict, parsed: ParsedJudgment, bucket: str) -> dict:
+# CommonLII's full name for each database this pipeline has been run against.
+# Add an entry here before parsing a new database for the first time.
+DATABASE_COURTS = {
+    "LKSC": "Supreme Court of Sri Lanka",
+    "LKCA": "Court of Appeal of Sri Lanka",
+}
+
+
+def build_record(path: Path, meta: dict, parsed: ParsedJudgment, bucket: str, db: str) -> dict:
     html = path.read_text(encoding="utf-8", errors="replace")
-    frame = extract_frame(html, parsed.page_title, meta["file"])
+    frame = extract_frame(html, parsed.page_title, meta["file"], db)
     paragraphs = parsed.paragraphs
 
     bench, deciding_court = extract_bench(paragraphs)
@@ -1187,9 +1195,9 @@ def build_record(path: Path, meta: dict, parsed: ParsedJudgment, bucket: str) ->
     year, number = meta["file"].replace(".html", "").split("/")
     return {
         "identity": {
-            "case_id": f"LKSC-{year}-{number}",
-            "database": "LKSC",
-            "database_court": "Supreme Court of Sri Lanka",
+            "case_id": f"{db}-{year}-{number}",
+            "database": db,
+            "database_court": DATABASE_COURTS.get(db, f"{db} Court"),
             "deciding_court": deciding_court or "Supreme Court",
             "case_name_raw": frame["case_name_raw"],
             "neutral_citation": frame["neutral_citation"],
