@@ -21,6 +21,37 @@ except ImportError as exc:  # pragma: no cover - environment-dependent
 
 SPACE_RE = re.compile(r"\s+")
 SECTION_MARKER_RE = re.compile(r"^(\d{1,3}[A-Za-z]?)\.$")
+# Some consolidated-Act layouts only give a marginal note to sections that
+# open a new topic; sections that continue under the same note are printed
+# inline, with the marker glued to the first word of their text ("3.(1)",
+# "5.No") rather than as its own token.
+INLINE_SECTION_MARKER_RE = re.compile(r"^(\d{1,3})\.(.+)$")
+# A reproduced Form or Schedule appended after the last real section. Its own
+# numbered fields ("1. Place of Birth") would otherwise be read as further
+# section markers.
+ORDINALS = "FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|NINTH|TENTH"
+# Case-sensitive and searched anywhere in the line (not anchored): a Schedule
+# heading is set in caps ("SECOND SCHEDULE", "FORM OF SUMMONS"), often on the
+# same line as a bracketed cross-reference ("[Sections 12, SECOND SCHEDULE"),
+# while an in-body cross-reference to the same Schedule is always lower/mixed
+# case ("substantially in the form set out in the Second Schedule to this
+# Law"), so case alone tells heading from reference without a false match.
+SCHEDULE_BOUNDARY_RE = re.compile(
+    rf"\b(?:(?:{ORDINALS})\s+)?SCHEDULE\b|\bFORM\s+OF\b"
+)
+# A line that is only ever "Form A" / "Schedules" -- no other prose -- is a
+# Schedule caption regardless of case; a body sentence never stands alone
+# like this, so the anchor to the whole line is what keeps this one safe to
+# match case-insensitively.
+FORM_CAPTION_RE = re.compile(r"^(Form\s+[A-Z]+|Schedules?)$", re.IGNORECASE)
+# A Part/Chapter cross-heading ("ALTERATION OF LIMITS OF TOWNS AND NUMBER OF
+# MEMBERS. ; &C;") divides the Act between sections; it belongs to none of
+# them and must not be read as body text of whichever section is still open
+# (typically an empty, repealed-in-place section immediately before it).
+# Genuine body prose is never set fully in caps, so requiring at least one
+# lowercase-eligible letter and none present is a safe, general test.
+CROSS_HEADING_RE = re.compile(r"^[^a-z]+$")
+CROSS_HEADING_MIN_LETTERS = 4
 PROVISION_MARKER_RE = re.compile(r"^\((\d+|[A-Za-z]+)\)\s*(.*)$", re.DOTALL)
 TRAILING_PROVISION_MARKER_RE = re.compile(
     r"^(.*(?:;|:))\s+\(([A-Za-z]+)\)\s*$", re.DOTALL
@@ -113,12 +144,54 @@ def cluster_words_into_lines(
     return lines
 
 
-def find_section_marker(line: Line, marker_min_x: float) -> tuple[int, str] | None:
-    """Return the body-column section marker, if this line starts a section."""
+# Words that mark the following number as *not* a section marker: a
+# cross-reference ("section 41") or a Rupee amount in a fee table ("Rs. 750"
+# but does not exceed Rs. 1,500").
+SECTION_REFERENCE_WORDS = (
+    "section", "sections", "subsection", "subsections",
+    "chapter", "chapters", "article", "articles", "rs",
+)
+
+
+def find_section_marker(
+    line: Line, marker_min_x: float, last_word_of_previous_line: str = ""
+) -> tuple[int, str, str | None] | None:
+    """Return (word index, section number, glued leftover text) if this line
+    opens a section -- either an isolated marker token ("2.") anywhere past
+    `marker_min_x`, or, when a topic continues under a still-open marginal
+    note, a marker glued straight onto its first word ("3.(1)", "5.No").
+    """
     for index, word in enumerate(line.words):
         match = SECTION_MARKER_RE.match(word.text)
-        if match and word.x0 >= marker_min_x:
-            return index, match.group(1)
+        # A standalone "237." ending a sentence is as often a cross-reference
+        # ("under section 237.") as it is a real marker. A genuine section
+        # opens a paragraph, so it is never preceded by the word "section" --
+        # including where the reference wraps, leaving the number alone at
+        # the start of the next line ("... of section" / "27.") -- while a
+        # cross-reference always is. Legitimate numbering gaps (a run of
+        # sections consolidated away entirely, not just left as an empty
+        # stub) are common enough in these Acts that gating on sequence
+        # instead would reject real markers as often as fake ones.
+        # A list of cross-references ("sections 36 and 45") only has the
+        # reference word before its first number; later ones in the list are
+        # preceded by "and" or a comma. Skip over those to find it too.
+        referenced = False
+        for back in range(index - 1, max(index - 6, -1), -1):
+            token = line.words[back].text.strip("[](),.:;").lower()
+            if token == "and" or token == "" or token.isdigit() or (
+                token[:-1].isdigit() and token.endswith((".", "a", "b", "c"))
+            ):
+                continue
+            referenced = token in SECTION_REFERENCE_WORDS
+            break
+        else:
+            token = last_word_of_previous_line.strip("[](),.:;").lower()
+            referenced = token in SECTION_REFERENCE_WORDS
+        if match and word.x0 >= marker_min_x and not referenced:
+            return index, match.group(1), None
+        glued = INLINE_SECTION_MARKER_RE.match(word.text)
+        if glued and not referenced:
+            return index, glued.group(1), glued.group(2)
     return None
 
 
@@ -326,11 +399,66 @@ def extract_sections(
 
     sections: list[dict[str, Any]] = []
     current: WorkingSection | None = None
+    last_word = ""
 
     for line in all_lines:
-        marker = find_section_marker(line, marker_min_x=marker_min_x)
+        # Appended Forms/Schedules are reproduced legal instruments, not
+        # sections -- they carry their own numbered fields ("1. Place of
+        # Birth", "2. Lay Name") that read exactly like section markers, so
+        # scanning past this boundary turns every field into a false split.
+        line_text_probe = clean_text(" ".join(w.text for w in line.words))
+        if SCHEDULE_BOUNDARY_RE.search(line_text_probe) or FORM_CAPTION_RE.match(
+            line_text_probe
+        ):
+            break
+
+        letters = [c for c in line_text_probe if c.isalpha()]
+        is_cross_heading = len(letters) >= CROSS_HEADING_MIN_LETTERS and (
+            CROSS_HEADING_RE.match(line_text_probe)
+        )
+        if is_cross_heading:
+            if line.words:
+                last_word = line.words[-1].text
+            continue
+
+        marker = find_section_marker(
+            line, marker_min_x=marker_min_x, last_word_of_previous_line=last_word
+        )
+        if line.words:
+            last_word = line.words[-1].text
+        if marker and current is not None:
+            marker_index, number, glued = marker
+            # A leading digit can be lost off a marker when it merges into
+            # the word before it in the PDF's text stream ("streams1
+            # 05.Every" for ".. streams. 105.Every", or "in6" for ".. in
+            # 62D."). Only repaired when the short number is literally a
+            # suffix of the section that must come next -- either the next
+            # base number, or a further letter on the section still open --
+            # never for a number that merely looks close, so a genuine gap
+            # is never masked.
+            base_match = re.match(r"(\d+)([A-Za-z]*)", number)
+            trunc_base, trunc_suffix = base_match.group(1), base_match.group(2)
+            current_base = int(re.match(r"\d+", current.number).group())
+            repaired = False
+            for candidate_base in (current_base, current_base + 1):
+                candidate = str(candidate_base)
+                if candidate.endswith(trunc_base) and len(trunc_base) < len(candidate):
+                    number = candidate + trunc_suffix
+                    repaired = True
+                    break
+            # A section number never goes backwards. A bare "2." deep inside,
+            # say, section 327 is a subsection the source set without
+            # parentheses (an Interpretation clause's second numbered limb,
+            # typeset as "2." instead of "(2)"), not a new section -- so it
+            # is left for the ordinary body/heading handling below to attach
+            # to the section still open, rather than started as section 2.
+            if not repaired and int(base_match.group(1)) < current_base:
+                marker = None
+            else:
+                marker = (marker_index, number, glued)
+
         if marker:
-            marker_index, number = marker
+            marker_index, number, glued = marker
             if current is not None:
                 sections.append(finalize_section(current))
 
@@ -346,13 +474,17 @@ def extract_sections(
             if heading_fragment:
                 current.heading_lines.append(heading_fragment)
 
-            first_body = clean_text(
-                " ".join(word.text for word in line.words[marker_index + 1 :])
-            )
-            if first_body:
-                current.body_blocks.append(
-                    BodyBlock(first_body, line.words[marker_index + 1].x0)
+            rest_words = line.words[marker_index + 1 :]
+            if glued is not None:
+                text = clean_text(
+                    " ".join([glued] + [word.text for word in rest_words])
                 )
+                indent = rest_words[0].x0 if rest_words else body_x
+            else:
+                text = clean_text(" ".join(word.text for word in rest_words))
+                indent = rest_words[0].x0 if rest_words else body_x
+            if text:
+                current.body_blocks.append(BodyBlock(text, indent))
             continue
 
         if current is None:
@@ -397,9 +529,13 @@ def validate_sections(sections: list[dict[str, Any]]) -> list[str]:
         ]
 
     numbers = [numeric_part(section["section_number"]) for section in sections]
-    duplicates = sorted({number for number in numbers if numbers.count(number) > 1})
+    full_numbers = [section["section_number"] for section in sections]
+    duplicates = sorted(
+        {n for n in full_numbers if full_numbers.count(n) > 1},
+        key=numeric_part,
+    )
     if duplicates:
-        warnings.append(f"Duplicate numeric section numbers: {duplicates}")
+        warnings.append(f"Duplicate section numbers: {duplicates}")
 
     expected = set(range(min(numbers), max(numbers) + 1))
     missing = sorted(expected - set(numbers))
