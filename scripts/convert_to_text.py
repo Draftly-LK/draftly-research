@@ -13,6 +13,7 @@ import gc
 import json
 import os
 import re
+from contextlib import contextmanager
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -32,6 +33,34 @@ MIN_DOCUMENT_CHARS = 200
 MIN_PAGE_CHARS = 35
 MIN_PAGE_CONFIDENCE = 0.62
 MAX_DOCUMENT_AI_PAGES = 2_000
+
+
+def document_ai_confidence_threshold() -> float:
+    """Document AI's own reported OCR confidence for a page (distinct from
+    MIN_PAGE_CONFIDENCE, which gates the *local*-OCR-vs-cloud-fallback
+    routing decision above). This one is a post-hoc quality flag: any page
+    Document AI itself is unsure about gets called out in the conversion
+    notes so a human can review it, regardless of which path produced it.
+    Read lazily (like the project/location/processor_id env vars below)
+    rather than at import time, since `.env` is only loaded in `main()`.
+    """
+    return float(os.environ.get("CONFIDENCE_THRESHOLD", 0.62))
+
+
+def print_progress_bar(current: int, total: int, *, label: str, width: int = 30) -> None:
+    """In-place `\\r` progress bar for a long per-page/per-document loop.
+
+    No external dependency (tqdm isn't a declared project dependency) --
+    just enough to see a long OCR/extraction batch is actually moving.
+    Prints a trailing newline once `current == total` so the final state
+    stays on screen instead of being overwritten by the next log line.
+    """
+    total = max(total, 1)
+    filled = int(width * current / total)
+    bar = "#" * filled + "-" * (width - filled)
+    pct = 100 * current / total
+    end = "\n" if current >= total else ""
+    print(f"\r[{bar}] {current}/{total} ({pct:5.1f}%) {label}", end=end, flush=True)
 
 
 @dataclass
@@ -136,6 +165,31 @@ def save_document_ai_ledger(ledger: dict[str, Any]) -> None:
     DOCUMENT_AI_LEDGER.write_text(json.dumps(ledger, indent=2), encoding="utf-8")
 
 
+@contextmanager
+def document_ai_ledger_lock():
+    """Cross-process lock around the ledger's check-then-increment.
+
+    Running multiple documents concurrently (each its own `uv run` subprocess)
+    means multiple independent processes can call maybe_document_ai() at the
+    same instant; without this, two processes can both read pages_used=N,
+    both decide the budget isn't exhausted, and one write clobbers the
+    other's increment (or worse, interleave and corrupt the JSON). A
+    flock'd sentinel file makes the read-check-write in maybe_document_ai
+    atomic across processes -- cheap since it's only held for the length of
+    one ledger read/write, not the Document AI call itself.
+    """
+    import fcntl
+
+    DOCUMENT_AI_LEDGER.parent.mkdir(parents=True, exist_ok=True)
+    lock_path = DOCUMENT_AI_LEDGER.with_suffix(".lock")
+    with open(lock_path, "w") as fh:
+        fcntl.flock(fh, fcntl.LOCK_EX)
+        try:
+            yield
+        finally:
+            fcntl.flock(fh, fcntl.LOCK_UN)
+
+
 def document_ai_cache_path(source_id: str, page_number: int) -> Path:
     safe_id = re.sub(r"[^A-Za-z0-9_.-]+", "-", source_id).strip("-")
     return DOCUMENT_AI_CACHE / safe_id / f"page-{page_number:04d}.txt"
@@ -160,7 +214,30 @@ def seed_document_ai_cache(source_id: str, markdown_path: Path) -> int:
     return seeded
 
 
-def document_ai_ocr_page(image: Any, source_id: str, page_number: int) -> str:
+def _document_ai_page_confidence(document: Any) -> float | None:
+    """Document AI's own OCR confidence for the (single) page processed.
+
+    Falls back to averaging per-block layout confidences if the page-level
+    figure isn't populated (older processor versions), and to None (unknown
+    -- never silently treated as either high or low confidence) if neither
+    is available.
+    """
+    pages = list(getattr(document, "pages", []) or [])
+    if not pages:
+        return None
+    page = pages[0]
+    page_confidence = getattr(getattr(page, "layout", None), "confidence", 0.0) or 0.0
+    if page_confidence > 0.0:
+        return float(page_confidence)
+    block_scores = [
+        float(b.layout.confidence)
+        for b in getattr(page, "blocks", []) or []
+        if getattr(getattr(b, "layout", None), "confidence", 0.0)
+    ]
+    return sum(block_scores) / len(block_scores) if block_scores else None
+
+
+def document_ai_ocr_page(image: Any, source_id: str, page_number: int) -> tuple[str, float | None]:
     from google.api_core.client_options import ClientOptions
     from google.cloud import documentai
 
@@ -190,7 +267,7 @@ def document_ai_ocr_page(image: Any, source_id: str, page_number: int) -> str:
     text = normalize_markdown(response.document.text)
     if not text:
         raise RuntimeError(f"Document AI returned no text for {source_id} page {page_number}")
-    return text
+    return text, _document_ai_page_confidence(response.document)
 
 
 def maybe_document_ai(
@@ -202,45 +279,52 @@ def maybe_document_ai(
     allow_document_ai: bool,
     page_limit: int,
     force_document_ai: bool = False,
-) -> tuple[str, bool, str]:
+) -> tuple[str, bool, str, float | None]:
     if not allow_document_ai:
-        return local_text, False, ""
+        return local_text, False, "", None
     if not force_document_ai and not image_has_content(image):
-        return local_text, False, ""
+        return local_text, False, "", None
     local_is_hard = force_document_ai or non_ws_chars(local_text) < MIN_PAGE_CHARS or (
         local_text and local_score < MIN_PAGE_CONFIDENCE
     )
     if not local_is_hard:
-        return local_text, False, ""
+        return local_text, False, "", None
 
     cache = document_ai_cache_path(source_id, page_number)
     if force_document_ai and cache.is_file():
         cached_text = normalize_markdown(cache.read_text(encoding="utf-8", errors="replace"))
         if cached_text:
-            return cached_text, True, ""
+            return cached_text, True, "", None
 
-    ledger = load_document_ai_ledger()
-    used = int(ledger.get("pages_used", 0))
     effective_limit = min(page_limit, MAX_DOCUMENT_AI_PAGES)
-    if used >= effective_limit:
-        return local_text, False, "document-ai-page-budget-exhausted"
+    with document_ai_ledger_lock():
+        used = int(load_document_ai_ledger().get("pages_used", 0))
+        if used >= effective_limit:
+            return local_text, False, "document-ai-page-budget-exhausted", None
     try:
-        cloud_text = document_ai_ocr_page(image, source_id, page_number)
+        cloud_text, cloud_confidence = document_ai_ocr_page(image, source_id, page_number)
     except Exception as exc:  # Preserve local output and make the failure auditable.
         detail = re.sub(r"\s+", " ", str(exc)).strip()[:300]
-        return local_text, False, f"document-ai-failed:{type(exc).__name__}:{detail}"
+        return local_text, False, f"document-ai-failed:{type(exc).__name__}:{detail}", None
 
     cache.parent.mkdir(parents=True, exist_ok=True)
     cache.write_text(cloud_text + "\n", encoding="utf-8")
-    ledger["page_limit"] = MAX_DOCUMENT_AI_PAGES
-    ledger["pages_used"] = used + 1
-    ledger.setdefault("events", []).append({
-        "source_id": source_id,
-        "page": page_number,
-        "used_at_utc": datetime.now(timezone.utc).isoformat(),
-    })
-    save_document_ai_ledger(ledger)
-    return cloud_text, True, ""
+    with document_ai_ledger_lock():
+        ledger = load_document_ai_ledger()
+        ledger["page_limit"] = MAX_DOCUMENT_AI_PAGES
+        ledger["pages_used"] = int(ledger.get("pages_used", 0)) + 1
+        ledger.setdefault("events", []).append({
+            "source_id": source_id,
+            "page": page_number,
+            "used_at_utc": datetime.now(timezone.utc).isoformat(),
+            "confidence": cloud_confidence,
+        })
+        save_document_ai_ledger(ledger)
+    warning = ""
+    threshold = document_ai_confidence_threshold()
+    if cloud_confidence is not None and cloud_confidence < threshold:
+        warning = f"low-confidence:{cloud_confidence:.2f}"
+    return cloud_text, True, warning, cloud_confidence
 
 
 def ocr_pdf(
@@ -268,7 +352,7 @@ def ocr_pdf(
                 if engine is None:
                     raise RuntimeError("Local OCR engine was not initialized")
                 text, score = local_ocr_page(engine, image)
-            text, used_cloud, warning = maybe_document_ai(
+            text, used_cloud, warning, cloud_confidence = maybe_document_ai(
                 image, source_id, page_index + 1, text, score,
                 allow_document_ai or prefer_document_ai, page_limit,
                 prefer_document_ai,
@@ -276,14 +360,13 @@ def ocr_pdf(
             if warning:
                 warnings.append(f"page-{page_index + 1}:{warning}")
             cloud_pages += int(used_cloud)
-            scores.append(score)
+            scores.append(cloud_confidence if used_cloud and cloud_confidence is not None else score)
             pages.append(f"## Page {page_index + 1}\n\n{text}".rstrip())
             del image, bitmap, page
             gc.collect()
-            print(
-                f"[{source_id}] page {page_index + 1}/{len(pdf)} "
-                f"local_chars={non_ws_chars(text)} cloud={used_cloud}",
-                flush=True,
+            print_progress_bar(
+                page_index + 1, len(pdf),
+                label=f"{source_id} chars={non_ws_chars(text)} cloud={used_cloud}",
             )
     finally:
         pdf.close()
