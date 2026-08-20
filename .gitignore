@@ -103,3 +103,16 @@ ocr-benchmark/cases/*
 ocr-benchmark/renders/
 ocr-benchmark/runs/
 ocr-benchmark/labels/
+
+# Past-paper evaluation: the source scans and every intermediate rendering are
+# large (381 MB) and reproducible from the pipeline, so only code and the small
+# derived artifacts are tracked. The scans themselves are the input, not output.
+data/evaluvation/*.pdf
+data/evaluvation/archive/
+data/evaluvation/__pycache__/
+data/evaluvation/tmp/
+
+# Stray local probe files from ad-hoc PDF inspection.
+probe.pdf
+probe-out.pdf
+probe.txt
