@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "paper_no": 5,
+  "session": "APRIL 2024",
+  "subject": "CONVEYANCING (LW 307)",
+  "code": "LW307",
+  "time_allowed": "Time-3 hours",
+  "rubric": "Answer Six (6) questions only. Question No. 01 is compulsory and carries Twenty (20) marks. Every other question carries Sixteen (16) marks",
+  "pdf_pages": {
+    "start": 18,
+    "end": 21,
+    "count": 4
+  },
+  "source": {
+    "pdf": "preprocess-pdf.pdf",
+    "ocr_text_dir": "2-documentai-outputs\\pages",
+    "ocr_engine": "google-document-ai",
+    "paper_index": "papers.csv",
+    "paper_index_source": "eye"
+  },
+  "ocr_confidence": {
+    "per_page": {
+      "18": 0.9221,
+      "19": 0.8904,
+      "20": 0.9307,
+      "21": 0.9068
+    },
+    "mean": 0.9125,
+    "min": 0.8904
+  },
+  "extraction": {
+    "model": "claude-haiku-4-5",
+    "pass": "structure-only",
+    "validated_at_utc": "2026-08-20T07:35:36.060335+00:00"
+  }
+}

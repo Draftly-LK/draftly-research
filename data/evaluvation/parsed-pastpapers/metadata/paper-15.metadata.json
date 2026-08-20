@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "paper_no": 15,
+  "session": "OCTOBER 2018",
+  "subject": "CONVEYANCING (LW 307)",
+  "code": "LW307",
+  "time_allowed": null,
+  "rubric": "Answer SIX (6) questions only. Question No. 01 is compulsor",
+  "pdf_pages": {
+    "start": 60,
+    "end": 63,
+    "count": 4
+  },
+  "source": {
+    "pdf": "preprocess-pdf.pdf",
+    "ocr_text_dir": "2-documentai-outputs\\pages",
+    "ocr_engine": "google-document-ai",
+    "paper_index": "papers.csv",
+    "paper_index_source": "eye"
+  },
+  "ocr_confidence": {
+    "per_page": {
+      "60": 0.7327,
+      "61": 0.6928,
+      "62": 0.9393,
+      "63": 0.9319
+    },
+    "mean": 0.8242,
+    "min": 0.6928
+  },
+  "extraction": {
+    "model": "claude-haiku-4-5",
+    "pass": "structure-only",
+    "validated_at_utc": "2026-08-20T07:35:39.831534+00:00"
+  }
+}

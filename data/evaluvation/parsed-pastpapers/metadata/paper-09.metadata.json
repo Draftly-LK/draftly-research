@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "paper_no": 9,
+  "session": "OCTOBER 2021 / APRIL 2022",
+  "subject": "CONVEYANCING (LW 307)",
+  "code": "LW307",
+  "time_allowed": "Time: 3 hours",
+  "rubric": "Answer SIX (6) questions only. Question No.01 is compulsory and carries twenty-five (25) marks. All",
+  "pdf_pages": {
+    "start": 36,
+    "end": 39,
+    "count": 4
+  },
+  "source": {
+    "pdf": "preprocess-pdf.pdf",
+    "ocr_text_dir": "2-documentai-outputs\\pages",
+    "ocr_engine": "google-document-ai",
+    "paper_index": "papers.csv",
+    "paper_index_source": "ocr"
+  },
+  "ocr_confidence": {
+    "per_page": {
+      "36": 0.9194,
+      "37": 0.8995,
+      "38": 0.8968,
+      "39": 0.9218
+    },
+    "mean": 0.9094,
+    "min": 0.8968
+  },
+  "extraction": {
+    "model": "claude-haiku-4-5",
+    "pass": "structure-only",
+    "validated_at_utc": "2026-08-20T07:35:37.418513+00:00"
+  }
+}
