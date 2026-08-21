@@ -1,0 +1,51 @@
+gantt
+    title Draftly Project Development Schedule
+    dateFormat YYYY-MM-DD
+    axisFormat %d %b
+
+    section Definition and Planning
+        Domain Research and Lawyer Consultation     :done, plan1, 2026-07-08, 10d
+        Project Scope and Requirements              :done, plan2, 2026-07-10, 19d
+        Feasibility and Architecture Documents      :done, plan3, 2026-07-20, 15d
+        Service-Based Implementation Plan           :done, plan4, 2026-07-20, 15d
+
+    section Legal Corpus
+        Legal Source Collection                     :done, data1, 2026-07-12, 25d
+        CommonLII Judgment Downloading              :done, data2, 2026-07-16, 29d
+        Judgment Layout Analysis                    :done, data3, 2026-08-05, 10d
+        Case-Law Parser Development                 :done, data4, 2026-07-25, 22d
+        Legal-Rule Extraction                       :done, data5, 2026-07-25, 22d
+        Case Relevance Classification               :done, data6, 2026-08-10, 7d
+
+    section Retrieval and Evaluation
+        Statute and Section Indexing                :done, ret1, 2026-08-05, 8d
+        Hybrid Retrieval Prototype                  :done, ret2, 2026-08-10, 10d
+        Retrieval Research Review                   :done, ret3, 2026-08-12, 8d
+        Law College Evaluation Dataset              :done, ret4, 2026-08-19, 3d
+        Retrieval Evaluation                        :active, ret5, 2026-08-21, 10d
+
+    section Document Processing
+        OCR Method Investigation                    :done, ocr1, 2026-08-14, 5d
+        Preprocessing Pipeline                      :done, ocr2, 2026-08-19, 3d
+        Examination Paper OCR                       :done, ocr3, 2026-08-20, 2d
+        OCR Benchmark and Validation                :active, ocr4, 2026-08-20, 7d
+        Document Processing Integration             :doc1, 2026-08-24, 10d
+
+    section Platform Development
+        Initial Frontend Development                :done, dev1, 2026-07-22, 12d
+        FastAPI Backend Foundation                  :done, dev2, 2026-08-03, 8d
+        RTA Rule Pack Implementation                :done, dev3, 2026-08-10, 8d
+        Authentication and Identity                 :done, dev4, 2026-08-12, 7d
+        Hosted Memory Service                       :done, dev5, 2026-08-15, 6d
+        UI and UX Improvements                      :done, dev6, 2026-08-17, 4d
+        Frontend-Backend Integration                :active, dev7, 2026-08-17, 12d
+
+    section Testing and Completion
+        Automated Unit Testing                      :active, test1, 2026-08-17, 14d
+        Integration Testing                         :test2, 2026-08-25, 8d
+        Lawyer Review and Validation                :test3, 2026-08-27, 8d
+        Progress Evaluation                         :milestone, mile1, 2026-08-21, 0d
+        Final Documentation                         :final1, 2026-08-28, 9d
+        Final Submission                            :milestone, mile2, 2026-09-06, 0d
+
+        

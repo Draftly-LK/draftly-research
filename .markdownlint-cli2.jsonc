@@ -9,6 +9,9 @@
     "!.agents/**"
   ],
   "config": {
-    "MD013": false
+    "MD013": false,
+    // Repeated subheadings are fine under different parents -- each person's
+    // section in progress.md carries its own "Challenges" heading.
+    "MD024": { "siblings_only": true }
   }
 }

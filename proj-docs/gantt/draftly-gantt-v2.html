@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Draftly — Project Gantt Chart by Member</title>
+<style>
+  :root{
+    --himath:#2F6F5E; --himath-lt:#D3E6E1;
+    --lahiru:#B4761F; --lahiru-lt:#F2E2C7;
+    --praveen:#3F6DA8; --praveen-lt:#D5E1F0;
+    --mile:#33403A;
+    --line:#e2e6e3; --text:#1c211e; --muted:#6b756f;
+  }
+  *{box-sizing:border-box;}
+  body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--text);
+       margin:0;padding:22px;background:#fff;font-size:12px;}
+  h1{font-size:19px;margin:0 0 2px;}
+  .sub{color:var(--muted);margin:0 0 14px;font-size:11.5px;}
+  .chart{border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+  table{border-collapse:collapse;width:100%;table-layout:fixed;}
+  thead th{background:#eef2f0;border-bottom:2px solid #c3ccc8;padding:6px 8px;
+           font-size:10.5px;text-transform:uppercase;letter-spacing:.03em;
+           color:var(--muted);text-align:left;vertical-align:bottom;}
+  /* The timeline header must have no padding, or it is inset relative to the
+     body cells below it and every month line lands in the wrong place. */
+  thead th.tlhead{padding:0;}
+  tbody tr{border-bottom:1px solid #f2f4f3;}
+  .lbl{width:290px;padding:4px 10px;border-right:1px solid var(--line);}
+  .own{width:74px;padding:4px 8px;border-right:1px solid var(--line);font-size:11px;}
+  .dates{width:104px;padding:4px 8px;border-right:1px solid var(--line);
+         color:var(--muted);font-size:10px;font-variant-numeric:tabular-nums;}
+  .group td{background:#f7f9f8;font-weight:700;letter-spacing:.02em;}
+  .group .lbl{padding-left:10px;}
+  .task .lbl{padding-left:22px;}
+  .tl{position:relative;padding:0;vertical-align:middle;}
+  .tlwrap{position:relative;height:21px;}
+  .grid{position:absolute;top:0;bottom:0;width:1px;background:#eff2f0;}
+  .gridmonth{position:absolute;top:0;bottom:0;width:1px;background:#b9c3be;}
+  .today{position:absolute;top:0;bottom:0;width:2px;background:#c0392b;opacity:.55;}
+  .bar{position:absolute;height:12px;top:4.5px;border-radius:3px;overflow:hidden;}
+  .bar .fill{position:absolute;left:0;top:0;bottom:0;}
+  .mstone{position:absolute;width:11px;height:11px;top:5px;background:var(--mile);
+          transform:rotate(45deg);border-radius:2px;}
+  .mlabel{position:absolute;top:3px;white-space:nowrap;font-size:9.5px;color:#4a544e;}
+  /* Month band: a filled strip with the name inside it, so the months read at a
+     glance instead of competing with the day numbers underneath. */
+  .mhead{height:44px;position:relative;background:#eef2f0;}
+  .mband{position:absolute;top:2px;height:19px;background:#dfe7e3;
+         border-left:2px solid #8fa39b;border-radius:2px;overflow:hidden;}
+  .mname{position:absolute;top:4px;font-weight:800;font-size:11px;
+         letter-spacing:.09em;color:#25322c;text-transform:uppercase;
+         white-space:nowrap;pointer-events:none;}
+  .hdrtick{position:absolute;top:26px;font-size:9px;color:#7c857f;}
+  .htick{position:absolute;top:23px;height:5px;width:1px;background:#c3ccc8;}
+  .legend{margin-top:11px;font-size:11px;color:#3a443e;}
+  .legend span{display:inline-block;margin-right:18px;}
+  .chip{display:inline-block;width:22px;height:9px;border-radius:2px;
+        vertical-align:middle;margin-right:6px;}
+  .dia{display:inline-block;width:9px;height:9px;background:var(--mile);
+       transform:rotate(45deg);vertical-align:middle;margin-right:8px;}
+  .note{margin-top:9px;font-size:10.5px;color:var(--muted);max-width:1150px;line-height:1.55;}
+  @media print{
+    @page{size:A3 landscape;margin:8mm;}
+    body{padding:0;font-size:9.5px;}
+    .lbl{width:250px;} .own{width:66px;} .dates{width:92px;}
+  }
+</style>
+</head>
+<body>
+<h1>Draftly — Project Gantt Chart</h1>
+<p class="sub">A Lawyer-in-the-Loop Legal Workflow Platform for Sri Lankan Legal Practice ·
+CS3501 · Group 06 · every work package has a single owner</p>
+
+<div class="chart" id="chart"></div>
+
+<div class="legend">
+  <span><i class="chip" style="background:#2F6F5E"></i>Himath Nimpura Dhanapala</span>
+  <span><i class="chip" style="background:#B4761F"></i>Lahiru Dilshan</span>
+  <span><i class="chip" style="background:#3F6DA8"></i>Praveen De Silva</span>
+  <span><i class="dia"></i>Milestone</span>
+  <span><i class="chip" style="background:#D3E6E1"></i>Not yet done</span>
+</div>
+
+<p class="note">
+  Solid colour is finished work, the pale shade is what is left, so a half-filled bar is a
+  package still in progress. No package is shared: the lawyer review, the test plan and
+  report and the final report are each split so one person is accountable for each part.
+  The red line marks 21 August 2026.
+</p>
+
+<script>
+/* =========================================================================
+   EDIT HERE. Each task is:
+     [name, owner, start "YYYY-MM-DD", end, percentComplete, kind]
+   owner: "H" Himath | "L" Lahiru | "P" Praveen   (never more than one)
+   kind : "task" | "milestone"
+
+   Percentages on the completed sections are estimates read off the repository,
+   not self-reported. Correct any that are wrong -- they are the one thing here
+   nobody has verified.
+   ========================================================================= */
+const OWNERS = {
+  H: {name:"Himath",  solid:"#2F6F5E", light:"#D3E6E1"},
+  L: {name:"Lahiru",  solid:"#B4761F", light:"#F2E2C7"},
+  P: {name:"Praveen", solid:"#3F6DA8", light:"#D5E1F0"},
+};
+
+const PLAN = [
+  {name:"1. Definition, specification and planning", tasks:[
+    ["Domain research and scope definition",            "H","2026-07-05","2026-07-18",100,"task"],
+    ["Feasibility study on the module template",        "H","2026-07-20","2026-07-25",100,"task"],
+    ["Feasibility report and document versions",        "P","2026-07-25","2026-08-03",100,"task"],
+    ["SRS and architecture source documents",           "H","2026-07-27","2026-07-31",100,"task"],
+    ["SRS and SAD submission documents",                "P","2026-07-30","2026-08-03",100,"task"],
+    ["Service-based implementation plan",               "H","2026-07-20","2026-08-05", 90,"task"],
+    ["Linear milestone and task setup",                 "P","2026-07-26","2026-07-28",100,"task"],
+  ]},
+
+  /* Meeting 1 is Himath's initial approach to the mentor and has no notes file.
+     Meetings 2 and 3 are proj-docs/discussions/meeting-notes/notes-jul-12.md and
+     notes-jul-19.md. Attendance is entered once per attendee: the meeting is
+     shared, the package is not. */
+  {name:"2. Lawyer consultation", tasks:[
+    ["Initial approach and scoping",                    "H","2026-07-05","2026-07-07",100,"task"],
+    ["Mentoring session, 12 Jul",                       "H","2026-07-12","2026-07-13",100,"task"],
+    ["Mentoring session, 12 Jul",                       "L","2026-07-12","2026-07-13",100,"task"],
+    ["Mentoring session, 12 Jul",                       "P","2026-07-12","2026-07-13",100,"task"],
+    ["Mentoring session, 19 Jul",                       "H","2026-07-19","2026-07-20",100,"task"],
+    ["Mentoring session, 19 Jul",                       "L","2026-07-19","2026-07-20",100,"task"],
+  ]},
+
+  {name:"3. Legal corpus and case-law extraction", tasks:[
+    ["Legal source collection and organisation",        "H","2026-07-12","2026-08-06", 85,"task"],
+    ["CommonLII crawler and judgment downloading",      "H","2026-07-16","2026-08-14",100,"task"],
+    ["Layout analysis and case-law parser",             "H","2026-07-25","2026-08-16",100,"task"],
+    ["Legal-rule extraction, Tracks A and A2",          "H","2026-07-25","2026-08-16", 90,"task"],
+    ["Track A2 parser hardening",                       "P","2026-07-26","2026-07-29",100,"task"],
+    ["Track B bounded LLM fallback and retry",          "P","2026-08-05","2026-08-11",100,"task"],
+    ["Quote-grounding validator correction",            "P","2026-08-10","2026-08-15",100,"task"],
+    ["Case relevance classification",                   "H","2026-08-10","2026-08-17", 90,"task"],
+    ["Conveyancing gate improvement",                   "P","2026-08-17","2026-08-19", 90,"task"],
+    ["Supreme Court judgment corpus and rule records",  "H","2026-08-13","2026-08-17", 90,"task"],
+    ["supremecourt.lk scraper and SC extraction",       "L","2026-08-15","2026-08-17",100,"task"],
+    ["Court of Appeal archive and multi-court scraper", "P","2026-08-16","2026-08-18",100,"task"],
+    ["Statute PDF collection and section parsing",      "L","2026-08-18","2026-08-20", 85,"task"],
+  ]},
+
+  {name:"4. Retrieval engine, groundwork", tasks:[
+    ["Statute and section indexing",                    "H","2026-08-05","2026-08-13", 70,"task"],
+    ["SriLankaLaw section index and statute alignment", "H","2026-08-12","2026-08-16", 80,"task"],
+    ["Hybrid retrieval prototype, BM25 + dense + graph","H","2026-08-10","2026-08-20", 60,"task"],
+    ["Retrieval research review, 31 papers",            "H","2026-08-12","2026-08-20",100,"task"],
+    ["FastAPI endpoint over the engine",                "P","2026-08-05","2026-08-07",100,"task"],
+    ["Law College evaluation dataset",                  "H","2026-08-19","2026-08-21", 70,"task"],
+  ]},
+
+  {name:"5. Document processing, groundwork", tasks:[
+    ["OCR literature review and method survey",         "H","2026-08-14","2026-08-19",100,"task"],
+    ["OCR benchmark harness",                           "H","2026-08-14","2026-08-19", 60,"task"],
+    ["Deskew and preprocessing pipeline",               "H","2026-08-19","2026-08-21", 90,"task"],
+    ["Past-paper OCR and paper index",                  "H","2026-08-20","2026-08-21", 90,"task"],
+    ["Document AI OCR fallback for statutes",           "L","2026-08-18","2026-08-20",100,"task"],
+  ]},
+
+  {name:"6. Platform, groundwork", tasks:[
+    ["Static UI clone",                                 "H","2026-07-22","2026-07-31",100,"task"],
+    ["Backend foundation and shared contracts",         "H","2026-08-01","2026-08-06",100,"task"],
+    ["Structured-data templates and editor",            "P","2026-07-16","2026-07-19",100,"task"],
+    ["Tiptap statutory form templates",                 "L","2026-07-23","2026-07-26", 60,"task"],
+    ["Classify-and-extract document pipeline",          "L","2026-07-29","2026-08-01",100,"task"],
+    ["Sinhala label and message catalogue",             "L","2026-07-31","2026-08-03", 70,"task"],
+    ["Authentication module and identity adapter",      "L","2026-08-02","2026-08-08",100,"task"],
+    ["Sign-in, profile and auth hardening",             "L","2026-08-06","2026-08-10",100,"task"],
+    ["CI gates and backend tooling",                    "L","2026-08-04","2026-08-09",100,"task"],
+    ["Billing and notarial register services",          "L","2026-08-08","2026-08-11",100,"task"],
+    ["Notification and obligations services",           "L","2026-08-09","2026-08-12",100,"task"],
+    ["Protected party tier",                            "L","2026-08-10","2026-08-13",100,"task"],
+    ["Authentication review and finding closure",       "H","2026-08-14","2026-08-18",100,"task"],
+    ["RTA rule pack and deterministic checks",          "H","2026-08-16","2026-08-18", 85,"task"],
+    ["Document processing service behind ports",        "H","2026-08-16","2026-08-18", 80,"task"],
+    ["RTA API accessors for the frontend",              "L","2026-08-16","2026-08-18",100,"task"],
+    ["Document, checks and facts screens on live APIs", "L","2026-08-17","2026-08-19",100,"task"],
+    ["Approval, export and registration screens",       "L","2026-08-18","2026-08-20", 85,"task"],
+    ["UI, UX and localisation gating",                  "H","2026-08-17","2026-08-19", 85,"task"],
+  ]},
+
+  {name:"7. Evaluation foundation", tasks:[
+    ["Finalise the evaluation question set",            "H","2026-08-21","2026-08-31",  5,"task"],
+    ["Re-extract the fused OCR statute sections",       "L","2026-08-21","2026-09-04",  0,"task"],
+    ["Acquire the missing statutes and gazettes",       "P","2026-08-24","2026-09-05",  0,"task"],
+    ["Gold labelling guide and agreement check",        "H","2026-08-31","2026-09-08",  0,"task"],
+    ["Legal corpus frozen for evaluation",              "H","2026-09-06","2026-09-06",  0,"milestone"],
+    ["Evaluation question set frozen",                  "H","2026-09-08","2026-09-08",  0,"milestone"],
+  ]},
+
+  /* Himath owns wrapping this up; Lahiru's extraction half is finished.
+     Design basis: papers/ocr/MADP.pdf and the rest of papers/ocr/. */
+  {name:"8. Document processing wrap-up", tasks:[
+    ["MADP-based processing design",                    "H","2026-08-21","2026-09-01",  0,"task"],
+    ["Wrap up the document processing pipeline",        "H","2026-09-01","2026-09-14",  0,"task"],
+    ["Deploy the OCR pipeline",                         "H","2026-09-10","2026-09-20",  0,"task"],
+    ["OCR accuracy report against labels",              "H","2026-09-18","2026-09-26",  0,"task"],
+    ["Document processing complete",                    "H","2026-09-26","2026-09-26",  0,"milestone"],
+  ]},
+
+  {name:"9. RTA workflow completion", tasks:[
+    ["Wrap up the RTA drafting workflow",               "P","2026-08-21","2026-09-06",  0,"task"],
+    ["Complete the statutory form templates",           "L","2026-08-24","2026-09-06",  0,"task"],
+    ["Deploy the memory service",                       "L","2026-09-01","2026-09-13",  0,"task"],
+    ["Frontend integration for drafting and export",    "L","2026-09-07","2026-09-18",  0,"task"],
+    ["End-to-end demo path",                            "P","2026-09-13","2026-09-23",  0,"task"],
+    ["RTA workflow complete",                           "P","2026-09-23","2026-09-23",  0,"milestone"],
+  ]},
+
+  /* The seven papers on the Research Basis slide. This is the core of the
+     project and the reason the retrieval engine carries the most weight. */
+  {name:"10. Retrieval engine, research implementation", tasks:[
+    ["01 Section-weighted hybrid case retrieval",       "H","2026-09-01","2026-09-12",  0,"task"],
+    ["05 LeSICiN heterogeneous statute graph",          "H","2026-09-08","2026-09-22",  0,"task"],
+    ["02 LexPath multi-path article retrieval",         "H","2026-09-15","2026-09-26",  0,"task"],
+    ["03 LR2 legal RAG over cases",                     "P","2026-09-01","2026-09-14",  0,"task"],
+    ["07 DoSSIER dense retrieval and reranking",        "P","2026-09-14","2026-09-26",  0,"task"],
+    ["06 Legal structure in retrieval-augmented generation","L","2026-09-08","2026-09-20",0,"task"],
+    ["04 Temporal misgrounding guard",                  "L","2026-09-20","2026-09-30",  0,"task"],
+  ]},
+
+  {name:"11. Benchmarking and engine selection", tasks:[
+    ["Benchmark harness and metric definitions",        "H","2026-08-24","2026-09-02",  0,"task"],
+    ["BM25, dense and hybrid baselines",                "H","2026-09-08","2026-09-18",  0,"task"],
+    ["Graph and published external baselines",          "H","2026-09-18","2026-09-28",  0,"task"],
+    ["Case-law retrieval baseline",                     "P","2026-09-16","2026-09-28",  0,"task"],
+    ["Baseline results locked",                         "H","2026-09-28","2026-09-28",  0,"milestone"],
+    ["Head-to-head benchmark of the seven methods",     "H","2026-09-28","2026-10-06",  0,"task"],
+    ["Retrieval engine selected",                       "H","2026-10-06","2026-10-06",  0,"milestone"],
+    ["Harden and tune the selected engine",             "H","2026-10-06","2026-10-15",  0,"task"],
+    ["Answer verification and abstention tuning",       "P","2026-10-04","2026-10-14",  0,"task"],
+    ["Final benchmark and ablation study",              "H","2026-10-10","2026-10-17",  0,"task"],
+  ]},
+
+  {name:"12. Lawyer review", tasks:[
+    ["Recruit and schedule the reviewing lawyer",       "P","2026-08-21","2026-09-11",  0,"task"],
+    ["Retrieval and corpus review pack",                "H","2026-08-24","2026-09-03",  0,"task"],
+    ["Rule-extraction review pack",                     "P","2026-08-28","2026-09-07",  0,"task"],
+    ["Document-extraction review pack",                 "L","2026-09-01","2026-09-10",  0,"task"],
+    ["Pilot review on a small sample",                  "H","2026-09-11","2026-09-19",  0,"task"],
+    ["Full lawyer review pass",                         "H","2026-09-21","2026-10-10",  0,"task"],
+    ["Incorporate the retrieval findings",              "H","2026-10-10","2026-10-17",  0,"task"],
+    ["Incorporate the extraction findings",             "L","2026-10-10","2026-10-15",  0,"task"],
+  ]},
+
+  {name:"13. Documentation and submission", tasks:[
+    ["Test plan, retrieval and corpus",                 "H","2026-09-20","2026-09-30",  0,"task"],
+    ["Test plan, platform and extraction",              "L","2026-09-20","2026-09-30",  0,"task"],
+    ["Test report, retrieval results",                  "H","2026-09-30","2026-10-08",  0,"task"],
+    ["Test report, platform results",                   "P","2026-09-30","2026-10-08",  0,"task"],
+    ["Final report, retrieval engine chapters",         "H","2026-10-05","2026-10-16",  0,"task"],
+    ["Final report, extraction and platform chapters",  "L","2026-10-05","2026-10-15",  0,"task"],
+    ["Final report compilation and slides",             "P","2026-10-08","2026-10-17",  0,"task"],
+    ["Demo video and one-slider",                       "P","2026-10-12","2026-10-17",  0,"task"],
+    ["Final submission",                                "P","2026-10-19","2026-10-19",  0,"milestone"],
+  ]},
+];
+
+const START = "2026-07-01", END = "2026-10-19", TODAY = "2026-08-21";
+const MS_DAY = 86400000;
+const d = s => new Date(s + "T00:00:00");
+const span = (d(END) - d(START)) / MS_DAY;
+const pct = s => ((d(s) - d(START)) / MS_DAY / span) * 100;
+const iso = dd => dd.toISOString().slice(0, 10);
+
+function monthHeader(){
+  let html = "";
+  let cur = new Date(d(START)); cur.setDate(1);
+  while (cur <= d(END)) {
+    const next = new Date(cur); next.setMonth(next.getMonth() + 1);
+    const from = cur < d(START) ? d(START) : cur;
+    const to   = next > d(END)   ? d(END)   : next;
+    const left = pct(iso(from)), width = pct(iso(to)) - pct(iso(from));
+    html += `<div class="mband" style="left:${left}%;width:${width}%"></div>`;
+    html += `<div class="mname" style="left:calc(${left}% + 7px)">` +
+            cur.toLocaleString("en-GB", {month:"long"}) + `</div>`;
+    cur = next;
+  }
+  let tick = new Date(d(START));
+  while (tick <= d(END)) {
+    const left = pct(iso(tick));
+    html += `<div class="htick" style="left:${left}%"></div>`;
+    html += `<div class="hdrtick" style="left:calc(${left}% + 3px)">${tick.getDate()}</div>`;
+    tick.setDate(tick.getDate() + 7);
+  }
+  return html;
+}
+
+function gridOnly(){
+  let html = "", tick = new Date(d(START));
+  while (tick <= d(END)) {
+    html += `<div class="grid" style="left:${pct(iso(tick))}%"></div>`;
+    tick.setDate(tick.getDate() + 7);
+  }
+  let cur = new Date(d(START)); cur.setDate(1);
+  while (cur <= d(END)) {
+    const left = pct(iso(cur));
+    if (left >= 0) html += `<div class="gridmonth" style="left:${left}%"></div>`;
+    cur.setMonth(cur.getMonth() + 1);
+  }
+  html += `<div class="today" style="left:${pct(TODAY)}%"></div>`;
+  return html;
+}
+
+const fmt = s => d(s).toLocaleDateString("en-GB", {day:"2-digit", month:"short"});
+
+let rows = "";
+for (const group of PLAN) {
+  rows += `<tr class="group"><td class="lbl">${group.name}</td>` +
+          `<td class="own"></td><td class="dates"></td>` +
+          `<td class="tl"><div class="tlwrap">${gridOnly()}</div></td></tr>`;
+
+  for (const [name, owner, start, end, done, kind] of group.tasks) {
+    const o = OWNERS[owner];
+    let bar;
+    if (kind === "milestone") {
+      bar = `<div class="mstone" style="left:calc(${pct(start)}% - 5px)"></div>` +
+            `<div class="mlabel" style="left:calc(${pct(start)}% + 10px)">${fmt(start)}</div>`;
+    } else {
+      const left = pct(start), width = Math.max(pct(end) - pct(start), 0.4);
+      bar = `<div class="bar" style="left:${left}%;width:${width}%;background:${o.light}">` +
+            `<div class="fill" style="width:${done}%;background:${o.solid}"></div></div>`;
+    }
+    rows += `<tr class="task"><td class="lbl">${name}</td>` +
+            `<td class="own" style="color:${o.solid};font-weight:600">${o.name}</td>` +
+            `<td class="dates">${fmt(start)} – ${fmt(end)}</td>` +
+            `<td class="tl"><div class="tlwrap">${gridOnly()}${bar}</div></td></tr>`;
+  }
+}
+
+document.getElementById("chart").innerHTML =
+  `<table>
+     <thead><tr>
+       <th>Work package</th><th>Owner</th><th>Dates</th>
+       <th class="tlhead"><div class="mhead">${monthHeader()}</div></th>
+     </tr></thead>
+     <tbody>${rows}</tbody>
+   </table>`;
+</script>
+</body>
+</html>

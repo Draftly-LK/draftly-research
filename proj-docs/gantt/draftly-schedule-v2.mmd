@@ -1,0 +1,70 @@
+%% Draftly — schedule from 21 Aug to final submission 19 Oct 2026.
+%%
+%% Weighted toward the retrieval engine over the platform, as agreed: the
+%% platform work is bounded and front-loaded so it finishes by late September,
+%% and everything after that is retrieval.
+%%
+%% Two sequencing rules drive the whole shape:
+%%   1. Nothing downstream is trustworthy until the corpus and the question set
+%%      stop moving, so both freeze early and are marked critical.
+%%   2. The reviewing lawyer is not booked. Recruitment starts on day one and
+%%      the review runs in a wide window with a pilot pass, so a delay costs a
+%%      sample rather than the headline result.
+%%
+%% Durations are calendar days, not working days.
+
+gantt
+    title Draftly Schedule to Final Submission
+    dateFormat YYYY-MM-DD
+    axisFormat %d %b
+
+    section Completed
+        Definition, feasibility and architecture    :done, c1, 2026-07-08, 27d
+        Corpus collection and case-law parsing      :done, c2, 2026-07-12, 34d
+        Rule extraction and relevance gate          :done, c3, 2026-07-25, 24d
+        Statute and section indexing                :done, c4, 2026-08-05, 8d
+        Hybrid retrieval prototype                  :done, c5, 2026-08-10, 10d
+        Preprocessing and past-paper OCR            :done, c6, 2026-08-19, 3d
+        Platform backend, rule pack, auth and UI    :done, c7, 2026-07-22, 30d
+        Progress evaluation                         :milestone, m0, 2026-08-21, 0d
+
+    section Evaluation foundation
+        Finalise the evaluation question set        :crit, ev1, 2026-08-21, 10d
+        Re-extract the fused OCR statute sections   :crit, ev2, 2026-08-21, 14d
+        Acquire the missing statutes and gazettes   :ev3, 2026-08-24, 12d
+        Gold labelling guide and agreement check    :ev4, after ev1, 8d
+        Legal corpus frozen for evaluation          :milestone, crit, m1, 2026-09-06, 0d
+        Evaluation question set frozen              :milestone, crit, m2, 2026-09-08, 0d
+
+    section Platform and RTA workflow
+        Wrap up the RTA drafting workflow           :p1, 2026-08-21, 16d
+        Deploy the document processing and OCR pipeline :p2, 2026-08-25, 16d
+        Deploy the memory service                   :p3, 2026-09-01, 12d
+        End-to-end demo path and integration testing :p4, after p3, 10d
+        RTA workflow complete                       :milestone, m3, 2026-09-23, 0d
+
+    section Lawyer review
+        Prepare review packs and instructions       :l1, 2026-08-24, 10d
+        Recruit and schedule the reviewing lawyer   :crit, l2, 2026-08-21, 21d
+        Pilot review on a small sample              :l3, after l2, 8d
+        Full lawyer review pass                     :l4, 2026-09-21, 19d
+        Incorporate findings and report results     :l5, after l4, 7d
+
+    section Retrieval benchmarking
+        Benchmark harness and metric definitions    :r1, 2026-09-01, 8d
+        BM25, dense and hybrid baselines            :r2, after m2, 10d
+        Graph and external published baselines      :r3, 2026-09-12, 14d
+        Baseline results locked                     :milestone, m4, 2026-09-26, 0d
+
+    section Retrieval engine
+        Implement candidate methods from the papers :crit, e1, 2026-09-08, 20d
+        Benchmark candidates against the baselines  :crit, e2, after m4, 8d
+        Retrieval engine selected                   :milestone, crit, m5, 2026-10-04, 0d
+        Harden and tune the selected engine         :crit, e3, after m5, 10d
+        Answer verification and abstention tuning   :e4, 2026-10-06, 9d
+        Final benchmark and ablation study          :crit, e5, 2026-10-09, 8d
+
+    section Documentation and submission
+        Test plan and test report                   :d1, 2026-09-20, 14d
+        Final report, slides and demo video         :d2, 2026-10-05, 12d
+        Final submission                            :milestone, crit, m6, 2026-10-19, 0d
