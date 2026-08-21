@@ -5,11 +5,18 @@
 The mappings below are proposed retrieval classifications for `SRC091` through
 `SRC112`. They are not verified statements of each statute's legal effect.
 
-All 22 sources are currently marked `index-only` in
-`manifests/source-registry.csv`. The corpus has section numbers and marginal
-headings in `derived/statute-section-index.json`, but it does not hold verified
-full statutory text for these sources. Keep the mappings provisional until the
-authoritative texts and source metadata have been checked.
+**These 22 sources were removed from `manifests/source-registry.csv` on
+2026-08-21**, taking it from 112 rows to 90. They had been marked `index-only`:
+the corpus held their section numbers and marginal headings but never their
+verified statutory text, so nothing downstream could cite them. This file is
+kept as the record of the proposed mapping should they be reinstated.
+
+Two manifests still carry those identifiers and no longer resolve against the
+registry — `manifests/statute-section-index.json` references 22 of them and
+`manifests/srilankalaw-sections.json` references 15. The extracted markdown
+remains under `archive/data/library-markdown-only/srilankalaw/`. Reinstating a
+source means restoring its registry row first, then re-checking the mapping
+below against the authoritative text.
 
 ## Recommended mapping
 
