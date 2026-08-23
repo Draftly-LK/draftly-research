@@ -189,7 +189,9 @@ def test_primary_and_secondary_partition_the_corpus():
     secondary = corpus - named
     assert primary | secondary == corpus
     assert not (primary & secondary)
-    assert len(primary) == 39
+    # 39 until the Execution of Deeds Ordinance was merged in from the LankaLaw
+    # HTML parse; these counts track the index and move when a statute is extracted.
+    assert len(primary) == 40
     assert len(secondary) == 27
 
 
