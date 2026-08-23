@@ -46,6 +46,14 @@ INDEX_URL = (
     "https://lankalaw.net/legislations/acts-and-laws/"
     "consolidated-acts-2024/consolidated-acts-2024-{letter}/"
 )
+# The A-Z index is not the whole site. Two further indexes carry statutes the
+# alphabetical one omits entirely, including the Notaries Ordinance, Prevention
+# of Frauds, the Wills Ordinance and the Civil Procedure Code. Scraping only the
+# A-Z pages leaves those looking unpublished when they are not.
+FLAT_INDEXES = (
+    "https://lankalaw.net/consolidated-statutes-upto-2006/",
+    "https://lankalaw.net/consolidated-acts-2025/",
+)
 LINK = re.compile(
     r'href="([^"]*wp-content/uploads/[^"]+\.html?)"[^>]*>(.*?)</a>', re.IGNORECASE | re.DOTALL
 )
@@ -99,29 +107,78 @@ def build_catalogue() -> list[dict[str, str]]:
             found += 1
         print(f"  {letter}: {found}")
         time.sleep(0.3)
+
+    for url in FLAT_INDEXES:
+        try:
+            page = get(url).decode("utf-8", errors="replace")
+        except Exception as error:  # noqa: BLE001
+            print(f"  {url}: {type(error).__name__}", file=sys.stderr)
+            continue
+        found = 0
+        for href, label in LINK.findall(page):
+            title = clean(label)
+            if not title or href in seen:
+                continue
+            seen.add(href)
+            rows.append({"letter": url.rstrip("/").rsplit("/", 1)[-1], "title": title, "url": href})
+            found += 1
+        print(f"  {url.rstrip('/').rsplit('/', 1)[-1]}: {found}")
+        time.sleep(0.3)
     return rows
 
 
-def load_targets() -> list[dict[str, str]]:
+def curriculum_source_ids() -> set[str]:
+    app = REPO_ROOT / "apps/statute-browser"
+    if str(app) not in sys.path:
+        sys.path.insert(0, str(app))
+    try:
+        from build_statute_tiers import match_curriculum
+    except Exception:  # noqa: BLE001
+        return set()
+    return {entry["source_id"] for entry in match_curriculum()[0]}
+
+
+def load_targets(all_primary: bool = False) -> list[dict[str, str]]:
     """Registry statutes with no sections in the index, or served by a volume."""
     import json
 
     indexed = set(json.loads(SECTION_INDEX.read_text(encoding="utf-8")))
     with REGISTRY.open(encoding="utf-8-sig") as handle:
         rows = [r for r in csv.DictReader(handle) if r["source_type"] == "statute"]
+
+    # Statutes whose PDF header block could not be read. The HTML edition carries
+    # the same amendment chain in markup, so it can supply what the PDF would not.
+    primary = curriculum_source_ids() if all_primary else set()
+    chained = set()
+    chains = REPO_ROOT / "data/processed/amendment-chains.csv"
+    if chains.exists():
+        with chains.open(encoding="utf-8") as handle:
+            chained = {
+                r["source_id"]
+                for r in csv.DictReader(l for l in handle if not l.startswith("#"))
+            }
+
     targets = []
     for row in rows:
-        pdf = Path(row.get("local_pdf_path") or "")
-        volume_only = pdf.name.startswith("legislative-enactments")
-        if row["source_id"] not in indexed or volume_only:
-            targets.append(
-                {
-                    **row,
-                    "reason": "no sections extracted"
-                    if row["source_id"] not in indexed
-                    else "source is a compendium volume",
-                }
-            )
+        recorded = row.get("local_pdf_path") or ""
+        pdf = REPO_ROOT / recorded if recorded else None
+        if row["source_id"] not in indexed:
+            reason = "no sections extracted"
+        elif Path(recorded).name.startswith("legislative-enactments"):
+            reason = "source is a compendium volume"
+        elif not recorded or not pdf.exists():
+            # The registry names a file that is not on disk, so there is no text
+            # behind the sections even though the index knows about them.
+            reason = "registry names a PDF that is not on disk"
+        elif row["source_id"] not in chained:
+            reason = "no amendment chain readable from the PDF"
+        elif all_primary and row["source_id"] in primary:
+            # The HTML edition carries per-section amendment markers that the
+            # PDFs mostly do not, so it is worth having even where a PDF works.
+            reason = "curriculum statute, HTML wanted for its section markers"
+        else:
+            continue
+        targets.append({**row, "reason": reason})
     return targets
 
 
@@ -150,7 +207,7 @@ def cmd_match(args) -> int:
 
     by_url = {entry["url"]: entry for entry in catalogue}
     results = []
-    for target in load_targets():
+    for target in load_targets(all_primary=getattr(args, "all_primary", False)):
         if target["source_id"] in OVERRIDES:
             url = OVERRIDES[target["source_id"]]
             entry = by_url.get(url, {"title": "(pinned by hand)"})
@@ -251,7 +308,10 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("catalogue").set_defaults(func=cmd_catalogue)
-    sub.add_parser("match").set_defaults(func=cmd_match)
+    match_cmd = sub.add_parser("match")
+    match_cmd.add_argument("--all-primary", action="store_true",
+                           help="also target curriculum statutes that already have a working PDF")
+    match_cmd.set_defaults(func=cmd_match)
     fetch = sub.add_parser("fetch")
     fetch.add_argument("--apply", action="store_true")
     fetch.set_defaults(func=cmd_fetch)
