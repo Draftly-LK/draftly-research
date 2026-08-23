@@ -1,0 +1,156 @@
+{
+ "_README": [
+  "Hand-maintained corrections applied by scripts/build_canonical_statutes.py.",
+  "Only for facts that cannot be read from the statute's own page and were",
+  "checked against another edition. Every entry records what was checked and",
+  "against what, so the correction can be re-tested rather than trusted.",
+  "The original wording is always kept alongside as heading_raw."
+ ],
+ "SRC048": {
+  "checked_against": "https://lankalaw.net/wp-content/uploads/2025/02/1956Y3V62C.html",
+  "note": "1956 revised edition, Chapter 62, Volume 3, page 73.",
+  "section_headings": {
+   "4": {
+    "heading": "Declaration of law relating to donations not covered by section 3",
+    "status": "verified_against_alternate_edition",
+    "reason": "The 1981 edition prints a damaged heading, 'Declaration of to donations by section3'."
+   }
+  },
+  "omitted_provisions": [
+   {
+    "from": "5",
+    "to": "24",
+    "reason": "Omitted under section 6 (1) of the Revised Editions of the Legislative Enactments Acts.",
+    "source_status": "verified_against_alternate_consolidated_edition"
+   }
+  ],
+  "verification_status": "structurally_verified"
+ },
+ "SRC047": {
+  "checked_against": "data/legal-sources/library/statutes/HTML/Kandyan Succession Ordinance.html",
+  "note": "1956 revised edition, Chapter 114, Volume 5, page 278. The parsed source is the later 2001 edition, which differs from it in three places recorded below.",
+  "source_location": {
+   "chapter": "114",
+   "volume": "5",
+   "page": "278",
+   "from": "alternate_edition"
+  },
+  "alternate_edition_variants": [
+   {
+    "where": "section 3 heading",
+    "parsed_edition": "16 M L. R.",
+    "alternate_edition": "16 N L. R.",
+    "assessment": "transcription error in the parsed 2001 edition; N is correct for New Law Reports",
+    "status": "verified_against_alternate_edition"
+   },
+   {
+    "where": "section 4(2) closing words",
+    "parsed_edition": "under the said first-mentioned Ordinance or Act.",
+    "alternate_edition": "under the said first-mentioned Ordinance.",
+    "assessment": "the two editions genuinely differ; neither is a parse error",
+    "status": "recorded_not_resolved"
+   },
+   {
+    "where": "definition of Kandyan provinces",
+    "parsed_edition": "carries the footnote *[*Repealed by Act No. 44 of 1952]",
+    "alternate_edition": "carries the asterisk only, with no footnote text",
+    "assessment": "the parsed edition supplies information the alternate omits",
+    "status": "recorded_not_resolved"
+   }
+  ],
+  "verification_status": "structurally_verified",
+  "section_headings": {
+   "3": {
+    "heading": "Saving as to property dealt with on the basis of the decision in Mudiyanse v. Appuhamy (16 N. L. R. 117-120).",
+    "status": "verified_against_alternate_edition",
+    "reason": "The parsed 2001 edition prints \"16 M L. R.. 117-120\"; the 1956 edition has \"16 N L. R.\", N for New Law Reports."
+   }
+  }
+ },
+ "SRC031": {
+  "checked_against": "https://lankalaw.net/wp-content/uploads/2025/02/2007Y0V0C7A.html",
+  "note": "Structure reviewed against the source page: 23 Parts, 106 crossheadings, 3 subheadings, 534 sections and 13 referenced schedules, all confirmed. Section 1 sits outside Part I in the source, so it is a top-level node.",
+  "verification_status": "structurally_verified"
+ },
+ "SRC011": {
+  "checked_against": "https://lankalaw.net/wp-content/uploads/2025/02/1998Y0V0C21A.html",
+  "note": "HTML extraction only, as instructed; the RGD PDF was not merged. Structure reviewed: 9 crossheadings, sections 1-75 complete, 14 definitions in s.75, 4 provisos (ss.20, 45, 46, 59). The two source errors below survive in the HTML as well as the PDF and are recorded, not corrected.",
+  "verification_status": "structurally_verified"
+ },
+ "SRC077": {
+  "checked_against": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y6V137C-1.html",
+  "note": "HTML extraction, checked against the revised-edition PDF at https://lankalaw.net/wp-content/uploads/2024/03/roodai137463.pdf. Sections 1-12 complete, 3 provisos, 1 term defined in s.11 and 1 scoped to s.2(1), four listed Ordinances in s.2(3), no Parts or Schedules.",
+  "verification_status": "needs_structural_review",
+  "quality_notes": [
+   {
+    "code": "missing_paragraph_container",
+    "detail": "Section 12(1) items (i) to (iii) sit directly under the subsection. Paragraph (b) exists, so an (a) container is missing from the source markup. Not synthesised here, because inventing a container would change the tree on inference alone."
+   },
+   {
+    "code": "extraction_damage_s12",
+    "detail": "Section 12 prints \"had, been\", \"for;,;the registration\", \"instrument..\" and \"Registrar- General\". Left as printed; the intended wording is \"had been\", \"for the registration\", \"instrument.\" and \"Registrar-General\"."
+   },
+   {
+    "code": "editorial_note_anchors",
+    "detail": "The Supreme Court note applies to references in ss.4 and 5, and the former Secretary of the District Court note to ss.5(7) and 7(7). Notes are recorded at section level only, so those multiple anchors are not preserved."
+   },
+   {
+    "code": "unextracted_references",
+    "detail": "Not captured: s.5(8) to Chapter XVII of the Civil Procedure Code, s.7(7) to ss.7(2) to 7(5), and s.11 to s.8(a) of the Registration of Documents Ordinance at paragraph level."
+   }
+  ]
+ },
+ "SRC072": {
+  "checked_against": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y11V301C-1.html",
+  "note": "HTML extraction. 5 Parts; 30 sections numbered 1-29 and 31, the source itself having no section 30. 9 definitions in s.31(1), 1 proviso, and one Schedule referenced by s.26(2)(b) whose text is not on the page.",
+  "commencement_caveat": "statute_commencement.csv gives 1968-06-22, which the page prints as the date of assent. Editorial notes on the page say operation was fixed for 3rd January 1970 by Order in Gazette No. 14,884 of 12 December 1969. The two dates answer different questions and neither is corrected here.",
+  "verification_status": "structurally_verified",
+  "long_title": "AN ACT TO ABOLISH THE SERVICES DUE IN RESPECT OF NINDAGAMA LANDS, TO PROVIDE FOR THE DETERMINATION OF TITLE TO SUCH LANDS AND TO PROVIDE FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO.",
+  "long_title_status": "requires_alternate_source_verification",
+  "omitted_provisions": [
+   {
+    "number": "30",
+    "description": "Repealing the Service Praveni Lands Succession Ordinance",
+    "status": "omitted_from_revised_edition",
+    "source_note": "Section 30, repealing the Service Praveni Lands Succession Ordinance, is omitted."
+   }
+  ],
+  "section_headings": {
+   "2": {
+    "heading": "Abolition of services due in respect of nindagama lands.",
+    "status": "requires_alternate_source_verification",
+    "reason": "Corruption in the LankaLaw text; the correction is inferred from the surrounding wording and has not been checked against another edition. Printed as \"madiguu luKte\"."
+   },
+   "3": {
+    "heading": "Declaration of tenant or holder of any nindagama land thereof.",
+    "status": "requires_alternate_source_verification",
+    "reason": "Corruption in the LankaLaw text; the correction is inferred from the surrounding wording and has not been checked against another edition. Printed as \"attani\"."
+   },
+   "5": {
+    "heading": "No compensation payable for loss or damage incurred or suffered by reason of any tenant or holder of any nindagama land becoming the owner thereof.",
+    "status": "requires_alternate_source_verification",
+    "reason": "Corruption in the LankaLaw text; the correction is inferred from the surrounding wording and has not been checked against another edition. Printed as \"forfeit\" and \"Dindagaiaa and\"."
+   },
+   "6": {
+    "heading": "Claim for an award as to title in respect of any nindagama land and reference of such claim to the Board.",
+    "status": "requires_alternate_source_verification",
+    "reason": "Corruption in the LankaLaw text; the correction is inferred from the surrounding wording and has not been checked against another edition. Printed as \"reaped\" and \"Dindagama\"."
+   }
+  },
+  "quality_notes": [
+   {
+    "code": "missing_schedule",
+    "detail": "The Schedule referenced by s.26(2)(b) is not present on the page, so the statute is not content-complete."
+   },
+   {
+    "code": "corrupt_part_heading",
+    "detail": "Part I prints \"NINDAGAMA LANDS,,\" with a doubled comma. Left as printed."
+   },
+   {
+    "code": "appointed_date_variants",
+    "detail": "The notes for ss.6 and 25 give the same Order with different readings: \"Gazette No. 14.884- died 13th December. 1969\" and \"Gazette No. 14,884 dated 12th December, 1969\". The second is the cleaner reading. The appointed date of 3 January 1970 is for those sections, not the Act as a whole."
+   }
+  ],
+  "content_completeness": "incomplete: the Schedule referenced by s.26(2)(b) has not been located"
+ }
+}
