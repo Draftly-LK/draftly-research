@@ -95,6 +95,61 @@ class StatuteApiTests(unittest.TestCase):
         self.assertTrue(body["hits"])
         self.assertNotIn("raw_response", body)
 
+    def test_case_statute_links_endpoint_defaults_to_verified_only(self) -> None:
+        response = self.client.get("/case-statute-links", params={"limit": 20})
+
+        self.assertEqual(response.status_code, 200)
+        links = response.json()
+        self.assertTrue(links)
+        self.assertTrue(all(link["band"] == "verified" for link in links))
+
+    def test_case_statute_links_for_case_endpoint_defaults_to_verified_only(self) -> None:
+        # this case has both verified and non-verified rows in resolved_links.csv;
+        # the default response must only surface the verified ones.
+        all_bands = self.client.get(
+            "/case-statute-links/commonlii-LKCA-1910-34", params={"band": "review"}
+        ).json()
+        self.assertTrue(all_bands["links"])
+
+        response = self.client.get("/case-statute-links/commonlii-LKCA-1910-34")
+
+        self.assertEqual(response.status_code, 200)
+        body = response.json()
+        self.assertTrue(body["links"])
+        self.assertTrue(all(link["band"] == "verified" for link in body["links"]))
+
+    def test_case_statute_links_endpoint_filters_by_band(self) -> None:
+        response = self.client.get("/case-statute-links", params={"band": "verified", "limit": 5})
+
+        self.assertEqual(response.status_code, 200)
+        links = response.json()
+        self.assertTrue(links)
+        self.assertTrue(all(link["band"] == "verified" for link in links))
+        self.assertTrue(all({"case_id", "source_id", "section_id", "statute_title"}.issubset(link) for link in links))
+
+    def test_case_statute_links_endpoint_rejects_unknown_band(self) -> None:
+        response = self.client.get("/case-statute-links", params={"band": "bogus"})
+
+        self.assertEqual(response.status_code, 422)
+        self.assertIn("bogus", response.json()["detail"])
+
+    def test_case_statute_links_for_case_endpoint_returns_scoped_links(self) -> None:
+        response = self.client.get("/case-statute-links/commonlii-LKCA-1894-3")
+
+        self.assertEqual(response.status_code, 200)
+        body = response.json()
+        self.assertEqual(body["case_id"], "commonlii-LKCA-1894-3")
+        self.assertEqual(body["count"], len(body["links"]))
+        self.assertTrue(all(link["case_id"] == "commonlii-LKCA-1894-3" for link in body["links"]))
+
+    def test_case_statute_links_for_unknown_case_returns_empty(self) -> None:
+        response = self.client.get("/case-statute-links/not-a-real-case-id")
+
+        self.assertEqual(response.status_code, 200)
+        body = response.json()
+        self.assertEqual(body["links"], [])
+        self.assertEqual(body["count"], 0)
+
     def test_answer_endpoint_abstains_on_known_corpus_gap(self) -> None:
         response = self.client.get(
             "/answer", params={"q": "Which authority approves development in the coastal zone?"}
