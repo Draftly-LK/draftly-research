@@ -189,9 +189,10 @@ def test_primary_and_secondary_partition_the_corpus():
     secondary = corpus - named
     assert primary | secondary == corpus
     assert not (primary & secondary)
-    # 39 until the Execution of Deeds Ordinance was merged in from the LankaLaw
-    # HTML parse; these counts track the index and move when a statute is extracted.
-    assert len(primary) == 40
+    # These counts track the section index and move when a statute is extracted.
+    # 39 before the LankaLaw HTML parse was merged in, 40 after the Execution of
+    # Deeds Ordinance, 45 once every accepted tree in library/finalized followed.
+    assert len(primary) == 45
     assert len(secondary) == 27
 
 
