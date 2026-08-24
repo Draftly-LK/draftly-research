@@ -3,9 +3,9 @@
 The 52 statutes named in the curriculum's Category 1 to 3 tables,
 the same set as `PRIMARY-STATUES.md`, with the local files held for each and
 every amending instrument known for it (347 in total, of which
-222 are held locally).
+223 are held locally).
 
-40 of the 52 have their sections extracted; the rest are
+45 of the 52 have their sections extracted; the rest are
 marked below. Statutes the corpus holds but the curriculum does not name are
 listed in `SECONDARY-STATUES.md` and are out of scope here.
 
@@ -51,16 +51,16 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 
 | Cat | Statute | Citation | Sections | Amendments known | Held | Final |
 | --- | --- | --- | ---: | ---: | ---: | --- |
-| 1 | Apartment Ownership Law | No. 11 of 1973 | 21 | 4 | 4 | - |
+| 1 | Apartment Ownership Law | No. 11 of 1973 | 26 | 4 | 4 | yes |
 | 1 | Civil Procedure Code | No. 2 of 1889 | 801 | 59 | 38 | - |
 | 1 | Companies Act | No. 7 of 2007 | 534 | 0 | 0 | yes |
-| 1 | Execution of Deeds Ordinance | No. 17 of 1852 | 7 | 1 | 0 | - |
-| 1 | Kandyan Succession Ordinance | No. 23 of 1917 | not extracted | 0 | 0 | yes |
-| 1 | Land (Restrictions on Alienation) Act | No. 38 of 2014 | 26 | 2 | 2 | - |
-| 1 | Matrimonial Rights and Inheritance (Jaffna) Ordinance | No. 58 of 1947 | 39 | 1 | 0 | - |
-| 1 | Matrimonial Rights and Inheritance Ordinance | No. 15 of 1876 | 36 | 1 | 0 | - |
+| 1 | Execution of Deeds Ordinance | No. 17 of 1852 | 7 | 1 | 0 | yes |
+| 1 | Kandyan Succession Ordinance | No. 23 of 1917 | 4 | 0 | 0 | yes |
+| 1 | Land (Restrictions on Alienation) Act | No. 38 of 2014 | 26 | 2 | 2 | yes |
+| 1 | Matrimonial Rights and Inheritance (Jaffna) Ordinance | No. 58 of 1947 | 40 | 1 | 0 | yes |
+| 1 | Matrimonial Rights and Inheritance Ordinance | No. 15 of 1876 | 36 | 1 | 0 | yes |
 | 1 | Muslim Intestate Succession Ordinance | No. 10 of 1931 | 4 | 0 | 0 | yes |
-| 1 | Notaries Ordinance | No. 1 of 1907 | 43 | 18 | 6 | - |
+| 1 | Notaries Ordinance | No. 1 of 1907 | 43 | 18 | 7 | - |
 | 1 | Powers of Attorney Ordinance | No. 4 of 1902 | 4 | 3 | 1 | - |
 | 1 | Prescription Ordinance | No. 22 of 1871 | 15 | 2 | 1 | - |
 | 1 | Prevention of Frauds Ordinance | No. 7 of 1840 | 19 | 6 | 2 | - |
@@ -69,15 +69,15 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act | No. 5 of 2017 | not extracted | 0 | 0 | - |
 | 1 | Stamp Duty (Special Provisions) Act | No. 12 of 2006 | 37 | 2 | 2 | - |
 | 1 | Stamp Duty Act | No. 43 of 1982 | 75 | 12 | 10 | - |
-| 1 | Tea and Rubber Estates (Control of Fragmentation) Act | No. 2 of 1958 | 24 | 1 | 1 | - |
-| 1 | Tesawalamai Pre-emption Ordinance | No. 59 of 1947 | not extracted | 0 | 0 | yes |
+| 1 | Tea and Rubber Estates (Control of Fragmentation) Act | No. 2 of 1958 | 25 | 1 | 1 | yes |
+| 1 | Tesawalamai Pre-emption Ordinance | No. 59 of 1947 | 14 | 0 | 0 | yes |
 | 1 | Western Province Financial Statute | No. 6 of 1990 | 124 | 0 | 0 | - |
 | 1 | Wills Ordinance | No. 21 of 1844 | 9 | 5 | 2 | - |
 | 2 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 42 | 11 | 8 | - |
 | 2 | Definition of Boundaries Ordinance | No. 1 of 1844 | 13 | 5 | 1 | - |
 | 2 | Land Acquisition Act | No. 9 of 1950 | 68 | 8 | 7 | - |
 | 2 | Land Development Ordinance | No. 19 of 1935 | 145 | 13 | 12 | - |
-| 2 | Land Grants (Special Provisions) Act | No. 43 of 1979 | 19 | 0 | 0 | yes |
+| 2 | Land Grants (Special Provisions) Act | No. 43 of 1979 | 20 | 0 | 0 | yes |
 | 2 | Land Reform Law | No. 1 of 1972 | 83 | 5 | 5 | - |
 | 2 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 0 | 0 | yes |
 | 2 | Mortgage Act | No. 6 of 1949 | 126 | 6 | 4 | - |
@@ -90,15 +90,15 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Municipal Councils Ordinance | No. 29 of 1947 | 341 | 41 | 33 | - |
 | 3 | National Housing Act | No. 37 of 1954 | 30 | 6 | 5 | - |
 | 3 | National Housing Development Authority Act | No. 17 of 1979 | not extracted | 6 | 6 | - |
-| 3 | Nindagama Lands Act | No. 30 of 1968 | not extracted | 0 | 0 | yes |
+| 3 | Nindagama Lands Act | No. 30 of 1968 | 30 | 0 | 0 | yes |
 | 3 | People's Bank Act | No. 29 of 1961 | 72 | 8 | 7 | - |
-| 3 | Registration of Old Deeds and Instruments Ordinance | No. 35 of 1947 | not extracted | 0 | 0 | yes |
+| 3 | Registration of Old Deeds and Instruments Ordinance | No. 35 of 1947 | 12 | 0 | 0 | yes |
 | 3 | Sannases and Old Deeds Ordinance | No. 6 of 1866 | not extracted | 1 | 0 | - |
-| 3 | State Lands (Claims) Ordinance | No. 21 of 1931 | not extracted | 0 | 0 | yes |
+| 3 | State Lands (Claims) Ordinance | No. 21 of 1931 | 7 | 0 | 0 | yes |
 | 3 | State Lands Encroachments Ordinance | No. 12 of 1840 | not extracted | 3 | 0 | - |
 | 3 | State Lands Ordinance | No. 8 of 1947 | 100 | 2 | 0 | - |
 | 3 | State Mortgage and Investment Bank Law | No. 13 of 1975 | 69 | 3 | 3 | - |
-| 3 | Survey Act | No. 17 of 2002 | 5 | 0 | 0 | - |
+| 3 | Survey Act | No. 17 of 2002 | 5 | 0 | 0 | yes |
 | 3 | Surveyors Ordinance | No. 15 of 1889 | 17 | 6 | 1 | - |
 | 3 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 5 | 3 | - |
 | 3 | Trusts Ordinance | No. 9 of 1917 | 123 | 6 | 4 | - |
@@ -108,17 +108,22 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 
 ### Apartment Ownership Law
 
-**No. 11 of 1973** · commenced 1973-03-20 · curriculum category 1 · SRC012
+**No. 11 of 1973** · commenced 1973-03-20 · curriculum category 1 · SRC012 · **finalized**
 
 Topics: Condominium Property, Stamping of Deeds, Drafting of Deeds, Criminal and Civil Liabilities of Notaries
 
-Sections: 21 in the index (headings from none 12, legacy 9)
+Sections: 26 in the index (headings from finalized 23, none 3)
 
 Parsed from the HTML edition: 50 sections, 44 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 50 sections, 165 subsections, 23 definitions, 226 paragraphs, 87 subparagraphs.
-125 cross-references; 3 schedules referenced (bodies not published).
+Canonical structure: 50 sections, 165 subsections, 25 definitions, 222 paragraphs, 117 subparagraphs.
+124 cross-references; 3 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC012-11-1973.json`
+
+Finalized: `data/legal-sources/library/finalized/11-1973-apartment-ownership-law/11-1973-apartment-ownership-law.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -129,12 +134,12 @@ Files:
 
 Amendments (4 known, 4 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 45 of 1982 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/45-1982-apartment-ownership-law-amendment.pdf` | `data/legal-sources/library/amendments/html/45-1982-apartment-ownership-amendment.html` |
-| No. 4 of 1999 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/4-1999-apartment-ownership-law-amendment.pdf` | `data/legal-sources/library/amendments/html/4-1999-apartment-ownership-special-provisions.html` |
-| No. 27 of 2002 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/27-2002-apartment-ownership-law-amendment.pdf` | `data/legal-sources/library/amendments/html/27-2002-apartment-ownership-special-provisions.html` |
-| No. 39 of 2003 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/39-2003-apartment-ownership-law-amendment.pdf` | `data/legal-sources/library/amendments/html/39-2003-apartment-ownership-amendment.html` |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 45 of 1982 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/45-1982-apartment-ownership-law-amendment.pdf` | `data/legal-sources/library/amendments/html/45-1982-apartment-ownership-amendment.html` | amend; amend 2; amend 5; insert 7A; amend 9; insert 11A; amend 12; substitute 13; amend... |
+| No. 4 of 1999 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/4-1999-apartment-ownership-law-amendment.pdf` | `data/legal-sources/library/amendments/html/4-1999-apartment-ownership-special-provisions.html` | amend 3; amend 26; amend |
+| No. 27 of 2002 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/27-2002-apartment-ownership-law-amendment.pdf` | `data/legal-sources/library/amendments/html/27-2002-apartment-ownership-special-provisions.html` | substitute 3 |
+| No. 39 of 2003 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/39-2003-apartment-ownership-law-amendment.pdf` | `data/legal-sources/library/amendments/html/39-2003-apartment-ownership-amendment.html` | substitute; substitute 2; repeal 3; insert 3A; substitute 5; insert 5A, 5B; substitute ... |
 
 ### Civil Procedure Code
 
@@ -158,67 +163,67 @@ Files:
 
 Amendments (59 known, 38 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 12 of 1895 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 23 of 1901 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 12 of 1904 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 14 of 1907 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 31 of 1909 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 9 of 1917 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 39 of 1921 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 42 of 1921 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 21 of 1927 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 23 of 1927 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 25 of 1927 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 15 of 1930 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 26 of 1930 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 4 of 1940 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 18 of 1944 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 39 of 1945 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 7 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 43 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 20 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/20-1954-civil-procedure-code-amendment.pdf` | not published as HTML |
-| No. 48 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/48-1954-civil-procedure-code-amendment.pdf` | not published as HTML |
-| No. 32 of 1957 | Act | chain+html | `data/legal-sources/library/amendments/32-1957-civil-procedure-code-amendment.pdf` | not published as HTML |
-| No. 49 of 1958 | Act | chain+html | `data/legal-sources/library/amendments/49-1958-civil-procedure-code-amendment.pdf` | not published as HTML |
-| No. 3 of 1960 | Act | chain+html+marker | `data/legal-sources/library/amendments/3-1960-civil-procedure-code-amendment.pdf` | not published as HTML |
-| No. 24 of 1961 | Act | chain+html | `data/legal-sources/library/amendments/24-1961-civil-procedure-code-amendment.pdf` | not published as HTML |
-| No. 5 of 1964 | Act | chain+html | `data/legal-sources/library/amendments/5-1964-courts-of-requests-special-provisions.pdf` | `data/legal-sources/library/amendments/html/5-1964-courts-of-requests-special-provisions.html` (title does not match this statute; check it) |
-| No. 23 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/23-1969-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/23-1969-civil-procedure-code-amendment.html` |
-| No. 24 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/24-1969-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/24-1969-civil-procedure-code-amendment.html` |
-| No. 12 of 1973 | Law | chain+html+marker | not held: not in the Act archive | `data/legal-sources/library/amendments/html/12-1973-civil-procedure-code-amendment.html` |
-| No. 44 of 1973 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/44-1973-administration-of-justice-law.html` (title does not match this statute; check it) |
-| No. 25 of 1975 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/25-1975-administration-of-justice-amendment-law.html` (title does not match this statute; check it) |
-| No. 19 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/19-1977-civil-courts-procedure-special-provisions-law.html` |
-| No. 20 of 1977 | Law | chain+html+marker | not held: not in the Act archive | `data/legal-sources/library/amendments/html/20-1977-civil-procedure-code-amendment-law.html` |
-| No. 53 of 1980 | Act | chain+html+marker | `data/legal-sources/library/amendments/53-1980-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/53-1980-civil-procedure-code-amendment.html` |
-| No. 79 of 1980 | - | marker | not held: not in the Act archive | not looked up |
-| No. 36 of 1981 | - | curriculum | `data/legal-sources/library/amendments/incoming/36-1981-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/36-1981-civil-law-amendment.html` |
-| No. 39 of 1988 | - | curriculum | `data/legal-sources/library/amendments/39-1988-grant-of-citizenship-to-stateless-persons-special-provisions.pdf` | `data/legal-sources/library/amendments/html/39-1988-grant-of-citizenship-to-stateless-persons-special-provisions.html` (title does not match this statute; check it) |
-| No. 79 of 1988 | Act | chain+html+marker | `data/legal-sources/library/amendments/79-1988-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/79-1988-civil-procedure-code-amendment.html` |
-| No. 2 of 1990 | Act | chain+html | not held: archive row has no URL | `data/legal-sources/library/amendments/html/2-1990-debt-recovery-special-provinces.html` (title does not match this statute; check it) |
-| No. 6 of 1990 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/6-1990-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/6-1990-civil-procedure-code-amendment.html` |
-| No. 9 of 1991 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/9-1991-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/9-1991-civil-procedure-code-amendment.html` |
-| No. 6 of 1993 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/6-1993-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/6-1993-civil-procedure-code-amendment.html` |
-| No. 14 of 1993 | Act | chain+html+marker | `data/legal-sources/library/amendments/14-1993-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/14-1993-civil-procedure-code-amendment.html` |
-| No. 11 of 1995 | Act | html | not held: no source located | not looked up |
-| No. 12 of 1996 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/12-1996-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/12-1996-civil-procedure-code-amendment.html` |
-| No. 14 of 1997 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/14-1997-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/14-1997-civil-procedure-code-amendment.html` |
-| No. 38 of 1998 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/38-1998-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/38-1998-civil-procedure-code-amendment.html` |
-| No. 34 of 2000 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/34-2000-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/34-2000-civil-procedure-code-amendment.html` |
-| No. 20 of 2002 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/20-2002-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/20-2002-civil-procedure-code-amendment.html` |
-| No. 4 of 2005 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/4-2005-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/4-2005-civil-procedure-code-amendment.html` |
-| No. 11 of 2010 | - | curriculum+marker | `data/legal-sources/library/amendments/incoming/11-2010-civil-procedure-code-amendment.pdf` | not published as HTML |
-| No. 8 of 2017 | - | curriculum+marker | `data/legal-sources/library/amendments/incoming/8-2017-civil-procedure-code-amendment.pdf` | not published as HTML |
-| No. 5 of 2022 | - | marker | `data/legal-sources/library/amendments/5-2022-civil-procedure-code-amendment.pdf` | not looked up |
-| No. 17 of 2022 | - | marker | `data/legal-sources/library/amendments/17-2022-civil-procedure-code-amendment.pdf` | not looked up |
-| No. 36 of 2022 | - | marker | `data/legal-sources/library/amendments/36-2022-civil-procedure-code-amendment.pdf` | not looked up |
-| No. 7 of 2023 | - | marker | not held: not in the Act archive | not looked up |
-| No. 20 of 2023 | - | marker | `data/legal-sources/library/amendments/20-2023-civil-procedure-code-amendment.pdf` | not looked up |
-| No. 27 of 2023 | - | marker | `data/legal-sources/library/amendments/27-2023-fisheries-and-aquatic-resources-amendment.pdf` | not looked up |
-| No. 29 of 2023 | - | marker | `data/legal-sources/library/amendments/29-2023-civil-procedure-code-amendment.pdf` | not looked up |
-| No. 43 of 2024 | - | marker | `data/legal-sources/library/amendments/43-2024-civil-procedure-code-amendment.pdf` | not looked up |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 12 of 1895 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 23 of 1901 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 12 of 1904 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 14 of 1907 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 31 of 1909 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 9 of 1917 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 39 of 1921 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 42 of 1921 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 21 of 1927 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 23 of 1927 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 25 of 1927 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 15 of 1930 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 26 of 1930 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 4 of 1940 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 18 of 1944 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 39 of 1945 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 7 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 43 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 20 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/20-1954-civil-procedure-code-amendment.pdf` | not published as HTML | not read |
+| No. 48 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/48-1954-civil-procedure-code-amendment.pdf` | not published as HTML | not read |
+| No. 32 of 1957 | Act | chain+html | `data/legal-sources/library/amendments/32-1957-civil-procedure-code-amendment.pdf` | not published as HTML | not read |
+| No. 49 of 1958 | Act | chain+html | `data/legal-sources/library/amendments/49-1958-civil-procedure-code-amendment.pdf` | not published as HTML | not read |
+| No. 3 of 1960 | Act | chain+html+marker | `data/legal-sources/library/amendments/3-1960-civil-procedure-code-amendment.pdf` | not published as HTML | not read |
+| No. 24 of 1961 | Act | chain+html | `data/legal-sources/library/amendments/24-1961-civil-procedure-code-amendment.pdf` | not published as HTML | not read |
+| No. 5 of 1964 | Act | chain+html | `data/legal-sources/library/amendments/5-1964-courts-of-requests-special-provisions.pdf` | `data/legal-sources/library/amendments/html/5-1964-courts-of-requests-special-provisions.html` (title does not match this statute; check it) | amend |
+| No. 23 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/23-1969-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/23-1969-civil-procedure-code-amendment.html` | amend 84; amend |
+| No. 24 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/24-1969-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/24-1969-civil-procedure-code-amendment.html` | substitute 338, 394, 519, 542, 545, 547, 582; amend |
+| No. 12 of 1973 | Law | chain+html+marker | not held: not in the Act archive | `data/legal-sources/library/amendments/html/12-1973-civil-procedure-code-amendment.html` | amend 30A; amend |
+| No. 44 of 1973 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/44-1973-administration-of-justice-law.html` (title does not match this statute; check it) | repeal 19, 21, 26, 36 |
+| No. 25 of 1975 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/25-1975-administration-of-justice-amendment-law.html` (title does not match this statute; check it) | substitute 3, 19, 21, 26, 36; insert; amend |
+| No. 19 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/19-1977-civil-courts-procedure-special-provisions-law.html` | amend |
+| No. 20 of 1977 | Law | chain+html+marker | not held: not in the Act archive | `data/legal-sources/library/amendments/html/20-1977-civil-procedure-code-amendment-law.html` | insert 5; substitute 10; amend 25; substitute 39; amend 40; substitute 49; amend 54; su... |
+| No. 53 of 1980 | Act | chain+html+marker | `data/legal-sources/library/amendments/53-1980-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/53-1980-civil-procedure-code-amendment.html` | amend 192; repeal_and_substitute 213; amend 222; insert 325, 337, 501, 580A, 580, 560; ... |
+| No. 79 of 1980 | - | marker | not held: not in the Act archive | not looked up | not read |
+| No. 36 of 1981 | - | curriculum | `data/legal-sources/library/amendments/incoming/36-1981-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/36-1981-civil-law-amendment.html` | amend 5 |
+| No. 39 of 1988 | - | curriculum | `data/legal-sources/library/amendments/39-1988-grant-of-citizenship-to-stateless-persons-special-provisions.pdf` | `data/legal-sources/library/amendments/html/39-1988-grant-of-citizenship-to-stateless-persons-special-provisions.html` (title does not match this statute; check it) | not read |
+| No. 79 of 1988 | Act | chain+html+marker | `data/legal-sources/library/amendments/79-1988-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/79-1988-civil-procedure-code-amendment.html` | amend 5; substitute 39; amend 46; amend 55; substitute 70; amend 77; substitute 80; sub... |
+| No. 2 of 1990 | Act | chain+html | not held: archive row has no URL | `data/legal-sources/library/amendments/html/2-1990-debt-recovery-special-provinces.html` (title does not match this statute; check it) | not read |
+| No. 6 of 1990 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/6-1990-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/6-1990-civil-procedure-code-amendment.html` | insert 14A; substitute 192; substitute 398; amend 405; insert 705; amend |
+| No. 9 of 1991 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/9-1991-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/9-1991-civil-procedure-code-amendment.html` | amend 1; substitute 9 |
+| No. 6 of 1993 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/6-1993-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/6-1993-civil-procedure-code-amendment.html` | amend 55; amend 60; amend 370; amend 371; amend |
+| No. 14 of 1993 | Act | chain+html+marker | `data/legal-sources/library/amendments/14-1993-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/14-1993-civil-procedure-code-amendment.html` | amend 333; amend 394; substitute; amend 554Y; amend 724; amend; repeal 18 |
+| No. 11 of 1995 | Act | html | not held: no source located | not looked up | not read |
+| No. 12 of 1996 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/12-1996-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/12-1996-civil-procedure-code-amendment.html` | amend 502 |
+| No. 14 of 1997 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/14-1997-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/14-1997-civil-procedure-code-amendment.html` | amend 55; substitute 59, 60, 61; amend 62; substitute 209; substitute 210; amend 211; s... |
+| No. 38 of 1998 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/38-1998-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/38-1998-civil-procedure-code-amendment.html` | amend 524; amend 757 |
+| No. 34 of 2000 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/34-2000-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/34-2000-civil-procedure-code-amendment.html` | amend 544 |
+| No. 20 of 2002 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/20-2002-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/20-2002-civil-procedure-code-amendment.html` | substitute 495; amend 544 |
+| No. 4 of 2005 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/4-2005-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/4-2005-civil-procedure-code-amendment.html` | amend 544 |
+| No. 11 of 2010 | - | curriculum+marker | `data/legal-sources/library/amendments/incoming/11-2010-civil-procedure-code-amendment.pdf` | not published as HTML | not read |
+| No. 8 of 2017 | - | curriculum+marker | `data/legal-sources/library/amendments/incoming/8-2017-civil-procedure-code-amendment.pdf` | not published as HTML | not read |
+| No. 5 of 2022 | - | marker | `data/legal-sources/library/amendments/5-2022-civil-procedure-code-amendment.pdf` | not looked up | not read |
+| No. 17 of 2022 | - | marker | `data/legal-sources/library/amendments/17-2022-civil-procedure-code-amendment.pdf` | not looked up | not read |
+| No. 36 of 2022 | - | marker | `data/legal-sources/library/amendments/36-2022-civil-procedure-code-amendment.pdf` | not looked up | not read |
+| No. 7 of 2023 | - | marker | not held: not in the Act archive | not looked up | not read |
+| No. 20 of 2023 | - | marker | `data/legal-sources/library/amendments/20-2023-civil-procedure-code-amendment.pdf` | not looked up | not read |
+| No. 27 of 2023 | - | marker | `data/legal-sources/library/amendments/27-2023-fisheries-and-aquatic-resources-amendment.pdf` | not looked up | not read |
+| No. 29 of 2023 | - | marker | `data/legal-sources/library/amendments/29-2023-civil-procedure-code-amendment.pdf` | not looked up | not read |
+| No. 43 of 2024 | - | marker | `data/legal-sources/library/amendments/43-2024-civil-procedure-code-amendment.pdf` | not looked up | not read |
 
 ### Companies Act
 
@@ -226,11 +231,11 @@ Amendments (59 known, 38 held):
 
 Topics: Formation of Deeds, Examination of Title
 
-Sections: 534 in the index (headings from legacy 519, none 15)
+Sections: 534 in the index (headings from finalized 532, legacy 2)
 
 Parsed from the HTML edition: 534 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 23 parts, 106 crossheadings, 3 subheadings, 534 sections, 1393 subsections, 50 definitions, 1569 paragraphs, 198 subparagraphs.
+Canonical structure: 23 parts, 106 crossheadings, 3 subheadings, 534 sections, 1392 subsections, 52 definitions, 1562 paragraphs, 205 subparagraphs.
 895 cross-references; 14 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC031-7-2007.json`
 
@@ -249,17 +254,22 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Execution of Deeds Ordinance
 
-**No. 17 of 1852** · curriculum category 1 · SRC070
+**No. 17 of 1852** · curriculum category 1 · SRC070 · **finalized**
 
 Topics: Formation of Deeds, Drafting of Deeds, Other Related Statutory Laws
 
-Sections: 7 in the index (headings from lankalaw-html 7)
+Sections: 7 in the index (headings from finalized 7)
 
 Parsed from the HTML edition: 7 sections, 0 carrying an amendment marker. Merged into the index by `scripts/merge_html_sections_into_index.py`.
 
 Canonical structure: 7 sections.
 4 cross-references.
 Tree: `data/processed/canonical-statutes/SRC070-17-1852.json`
+
+Finalized: `data/legal-sources/library/finalized/17-1852-deeds-and-documents-execution-before-public-officers-ordinance/17-1852-deeds-and-documents-execution-before-public-officers-ordinance.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -268,18 +278,17 @@ Files:
 
 Amendments (1 known, 0 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 5 of 1875 | Ordinance | html | not held: not in the Act archive | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 5 of 1875 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
 
 ### Kandyan Succession Ordinance
 
-**No. 23 of 1917** · commenced 1917-11-09 · curriculum category 1 · SRC047 · **finalized** · **sections not extracted**
+**No. 23 of 1917** · commenced 1917-11-09 · curriculum category 1 · SRC047 · **finalized**
 
 Topics: Special Laws
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 4 in the index (headings from finalized 4)
 
 Parsed from the HTML edition: 4 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
@@ -301,15 +310,20 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Land (Restrictions on Alienation) Act
 
-**No. 38 of 2014** · commenced 2013-01-01 · curriculum category 1 · SRC021
+**No. 38 of 2014** · commenced 2013-01-01 · curriculum category 1 · SRC021 · **finalized**
 
 Topics: Formation of Deeds, Examination of Title, Criminal and Civil Liabilities of Notaries
 
 Sections: 26 in the index (headings from legacy 24, none 2)
 
-Canonical structure: 26 sections, 41 subsections, 54 paragraphs, 8 subparagraphs.
-56 cross-references.
+Canonical structure: 26 sections, 40 subsections, 20 definitions, 48 paragraphs, 13 subparagraphs.
+103 cross-references.
 Tree: `data/processed/canonical-statutes/SRC021-38-2014.json`
+
+Finalized: `data/legal-sources/library/finalized/38-2014-land-restrictions-on-alienation-act/38-2014-land-restrictions-on-alienation-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -318,24 +332,29 @@ Files:
 
 Amendments (2 known, 2 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 3 of 2017 | Act | chain+curriculum | `data/legal-sources/library/amendments/incoming/3-2017-land-restriction-on-alienation-act-amendment.pdf` | not published as HTML |
-| No. 21 of 2018 | Act | chain+curriculum | `data/legal-sources/library/amendments/21-2018-land-restrictions-on-alienation-amendment-act.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 3 of 2017 | Act | chain+curriculum | `data/legal-sources/library/amendments/incoming/3-2017-land-restriction-on-alienation-act-amendment.pdf` | `data/legal-sources/library/amendments/html/3-2017-land-restrictions-on-alienation-amendment.html` | insert 5A |
+| No. 21 of 2018 | Act | chain+curriculum | `data/legal-sources/library/amendments/21-2018-land-restrictions-on-alienation-amendment-act.pdf` | `data/legal-sources/library/amendments/html/21-2018-land-restrictions-on-alienation-amendment.html` | multiple 3; multiple 5A |
 
 ### Matrimonial Rights and Inheritance (Jaffna) Ordinance
 
-**No. 58 of 1947** · Cap. 70 · curriculum category 1 · SRC045
+**No. 58 of 1947** · Cap. 70 · curriculum category 1 · SRC045 · **finalized**
 
 Topics: Special Laws
 
-Sections: 39 in the index (headings from legacy 39)
+Sections: 40 in the index (headings from finalized 40)
 
 Parsed from the HTML edition: 40 sections, 5 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 5 parts, 40 sections, 7 subsections, 2 paragraphs.
 4 cross-references.
 Tree: `data/processed/canonical-statutes/SRC045-58-1947.json`
+
+Finalized: `data/legal-sources/library/finalized/58-1947-matrimonial-rights-and-inheritance-jaffna-ordinance/58-1947-matrimonial-rights-and-inheritance-jaffna-ordinance.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -345,23 +364,28 @@ Files:
 
 Amendments (1 known, 0 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 1 of 1911 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 1 of 1911 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
 
 ### Matrimonial Rights and Inheritance Ordinance
 
-**No. 15 of 1876** · Cap. 69 · commenced 1876-06-29 · curriculum category 1 · SRC004
+**No. 15 of 1876** · Cap. 69 · commenced 1876-06-29 · curriculum category 1 · SRC004 · **finalized**
 
 Topics: Introduction to Conveyancing, Formation of Deeds, Examination of Title
 
-Sections: 36 in the index (headings from lawlanka 36)
+Sections: 36 in the index (headings from finalized 36)
 
 Parsed from the HTML edition: 36 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 3 parts, 36 sections, 5 subsections, 4 definitions.
 48 cross-references.
 Tree: `data/processed/canonical-statutes/SRC004-15-1876.json`
+
+Finalized: `data/legal-sources/library/finalized/15-1876-matrimonial-rights-and-inheritance-ordinance/15-1876-matrimonial-rights-and-inheritance-ordinance.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -371,9 +395,9 @@ Files:
 
 Amendments (1 known, 0 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 18 of 1923 | Ordinance | html | not held: not in the Act archive | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 18 of 1923 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
 
 ### Muslim Intestate Succession Ordinance
 
@@ -381,7 +405,7 @@ Amendments (1 known, 0 held):
 
 Topics: Special Laws
 
-Sections: 4 in the index (headings from srilankalaw 4)
+Sections: 4 in the index (headings from finalized 4)
 
 Parsed from the HTML edition: 4 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
@@ -411,7 +435,7 @@ Sections: 43 in the index (headings from legacy 40, none 3)
 
 Parsed from the HTML edition: 43 sections, 17 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 43 sections, 95 subsections, 50 paragraphs, 12 subparagraphs.
+Canonical structure: 43 sections, 95 subsections, 49 paragraphs, 13 subparagraphs.
 44 cross-references; 3 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC014-1-1907.json`
 
@@ -421,28 +445,28 @@ Files:
 - Markdown: `data/legal-sources/library-markdown/statutes/notaries-ordinance/notaries-ordinance-english.md`  (recorded in the registry but not on disk)
 - HTML: `data/legal-sources/library/statutes/HTML/1-1907-notaries-ordinance.html`
 
-Amendments (18 known, 6 held):
+Amendments (18 known, 7 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 27 of 1909 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 18 of 1910 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 31 of 1917 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 22 of 1919 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 24 of 1927 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 10 of 1934 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 10 of 1936 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 7 of 1943 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 59 of 1943 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 51 of 1944 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 48 of 1947 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 6 of 1951 | Act | chain+html | `data/legal-sources/library/amendments/6-1951-notaries-amendment.pdf` | not published as HTML |
-| No. 24 of 1973 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/24-1973-notaries-amendment.html` |
-| No. 20 of 1976 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/20-1976-notaries-amendment-law.html` |
-| No. 12 of 2005 | Act | html | not held: no source located | not looked up |
-| No. 47 of 2011 | - | curriculum | `data/legal-sources/library/amendments/incoming/47-2011-notaries-ordinance-amendment.pdf` | not published as HTML |
-| No. 13 of 2013 | - | curriculum | `data/legal-sources/library/amendments/incoming/13-2013-notaries-ordinance-amendment.pdf` | not published as HTML |
-| No. 31 of 2022 | - | curriculum | `data/legal-sources/library/amendments/31-2022-notaries-amendment-act.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 27 of 1909 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 18 of 1910 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 31 of 1917 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 22 of 1919 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 24 of 1927 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 10 of 1934 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 10 of 1936 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 7 of 1943 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 59 of 1943 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 51 of 1944 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 48 of 1947 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 6 of 1951 | Act | chain+html | `data/legal-sources/library/amendments/6-1951-notaries-amendment.pdf` | not published as HTML | not read |
+| No. 24 of 1973 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/24-1973-notaries-amendment.html` | amend 4; substitute |
+| No. 20 of 1976 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/20-1976-notaries-amendment-law.html` | substitute; substitute 3; insert 4A; amend 11; substitute 16; substitute 19; substitute... |
+| No. 12 of 2005 | Act | html | not held: no source located | `data/legal-sources/library/amendments/html/12-2005-increase-of-fines.html` | amend |
+| No. 47 of 2011 | - | curriculum | `data/legal-sources/library/amendments/incoming/47-2011-notaries-ordinance-amendment.pdf` | not published as HTML | not read |
+| No. 13 of 2013 | - | curriculum | `data/legal-sources/library/amendments/incoming/13-2013-notaries-ordinance-amendment.pdf` | not published as HTML | not read |
+| No. 31 of 2022 | - | curriculum | `data/legal-sources/library/amendments/31-2022-notaries-amendment-act.pdf` | not published as HTML | not read |
 
 ### Powers of Attorney Ordinance
 
@@ -466,11 +490,11 @@ Files:
 
 Amendments (3 known, 1 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 9 of 1913 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 33 of 1939 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 14 of 2013 | - | curriculum | `data/legal-sources/library/amendments/14-2013-powers-of-attorney-amendment-act.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 9 of 1913 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 33 of 1939 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 14 of 2013 | - | curriculum | `data/legal-sources/library/amendments/14-2013-powers-of-attorney-amendment-act.pdf` | not published as HTML | not read |
 
 ### Prescription Ordinance
 
@@ -493,10 +517,10 @@ Files:
 
 Amendments (2 known, 1 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 2 of 1889 | Ordinance | html | not held: no source located | not looked up |
-| No. 26 of 2014 | - | marker | `data/legal-sources/library/amendments/incoming/26-2014-prescription-ordinance-amendment.pdf` | not looked up |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 2 of 1889 | Ordinance | html | not held: no source located | not looked up | not read |
+| No. 26 of 2014 | - | marker | `data/legal-sources/library/amendments/incoming/26-2014-prescription-ordinance-amendment.pdf` | not looked up | not read |
 
 ### Prevention of Frauds Ordinance
 
@@ -521,14 +545,14 @@ Files:
 
 Amendments (6 known, 2 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 16 of 1852 | Ordinance | chain+curriculum+html | not held: not in the Act archive | not published as HTML |
-| No. 11 of 1856 | - | curriculum | not held: not in the Act archive | not published as HTML |
-| No. 11 of 1896 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 60 of 1947 | Ordinance | chain+curriculum+html+marker | not held: not in the Act archive | not published as HTML |
-| No. 30 of 2022 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/30-2022-prevention-of-frauds-amendment-act.pdf` | not published as HTML |
-| No. 4 of 2024 | Act | chain+marker | `data/legal-sources/library/amendments/4-2024-prevention-of-frauds-amendment-act.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 16 of 1852 | Ordinance | chain+curriculum+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 11 of 1856 | - | curriculum | not held: not in the Act archive | not published as HTML | not read |
+| No. 11 of 1896 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 60 of 1947 | Ordinance | chain+curriculum+html+marker | not held: not in the Act archive | not published as HTML | not read |
+| No. 30 of 2022 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/30-2022-prevention-of-frauds-amendment-act.pdf` | not published as HTML | not read |
+| No. 4 of 2024 | Act | chain+marker | `data/legal-sources/library/amendments/4-2024-prevention-of-frauds-amendment-act.pdf` | not published as HTML | not read |
 
 ### Registration of Documents Ordinance
 
@@ -540,7 +564,7 @@ Sections: 42 in the index (headings from lawlanka 41, legacy 1)
 
 Parsed from the HTML edition: 50 sections, 9 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 5 crossheadings, 7 subheadings, 50 sections, 96 subsections, 24 paragraphs, 11 subparagraphs.
+Canonical structure: 5 crossheadings, 7 subheadings, 50 sections, 96 subsections, 25 paragraphs, 13 subparagraphs.
 46 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC005-23-1927.json`
 
@@ -553,27 +577,27 @@ Files:
 
 Amendments (19 known, 12 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 19 of 1928 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 22 of 1930 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 14 of 1936 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 34 of 1939 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 13 of 1947 | Ordinance | chain+html+marker | not held: not in the Act archive | not published as HTML |
-| No. 6 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 16 of 1951 | Act | chain+html | `data/legal-sources/library/amendments/16-1951-partition.pdf` | not published as HTML |
-| No. 22 of 1958 | Act | chain+html+marker | `data/legal-sources/library/amendments/22-1958-registration-of-documents-amendment.pdf` | not published as HTML |
-| No. 11 of 1963 | Act | chain+html | `data/legal-sources/library/amendments/11-1963-finance.pdf` | `data/legal-sources/library/amendments/html/11-1963-marriage-registration-amendment.html` |
-| No. 27 of 1969 | Act | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/27-1969-registration-of-documents-amendment.html` |
-| No. 4 of 1974 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/4-1974-registration-of-documents-amendment-law.html` |
-| No. 14 of 1974 | Law | chain+html+marker | not held: not in the Act archive | `data/legal-sources/library/amendments/html/14-1974-registration-of-documents-amendment-law.html` |
-| No. 19 of 1976 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/19-1976-registration-of-documents-amendment-law.html` |
-| No. 50 of 1982 | Act | chain+html+marker | `data/legal-sources/library/amendments/50-1982-registration-of-documents-amendment.pdf` | `data/legal-sources/library/amendments/html/50-1982-registration-of-documents.html` |
-| No. 5 of 1990 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/5-1990-registration-of-documents-amendment-act.pdf` | `data/legal-sources/library/amendments/html/5-1990-registration-of-documents-amendment.html` |
-| No. 48 of 2011 | Act | chain+curriculum | `data/legal-sources/library/amendments/48-2011-registration-of-documents-amendment-act.pdf` | not published as HTML |
-| No. 21 of 2013 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/21-2013-registration-of-documents-amendment-act.pdf` | not published as HTML |
-| No. 32 of 2022 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/32-2022-registration-of-documents-amendment-act.pdf` | not published as HTML |
-| No. 18 of 2024 | Act | chain+marker | not held: not in the Act archive | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 19 of 1928 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 22 of 1930 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 14 of 1936 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 34 of 1939 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 13 of 1947 | Ordinance | chain+html+marker | not held: not in the Act archive | not published as HTML | not read |
+| No. 6 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 16 of 1951 | Act | chain+html | `data/legal-sources/library/amendments/16-1951-partition.pdf` | not published as HTML | not read |
+| No. 22 of 1958 | Act | chain+html+marker | `data/legal-sources/library/amendments/22-1958-registration-of-documents-amendment.pdf` | not published as HTML | not read |
+| No. 11 of 1963 | Act | chain+html | `data/legal-sources/library/amendments/11-1963-finance.pdf` | `data/legal-sources/library/amendments/html/11-1963-marriage-registration-amendment.html` | amend 34; amend 62; amend |
+| No. 27 of 1969 | Act | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/27-1969-registration-of-documents-amendment.html` | insert 2A, 2 |
+| No. 4 of 1974 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/4-1974-registration-of-documents-amendment-law.html` | repeal 2 |
+| No. 14 of 1974 | Law | chain+html+marker | not held: not in the Act archive | `data/legal-sources/library/amendments/html/14-1974-registration-of-documents-amendment-law.html` | amend 14 |
+| No. 19 of 1976 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/19-1976-registration-of-documents-amendment-law.html` | substitute 29 |
+| No. 50 of 1982 | Act | chain+html+marker | `data/legal-sources/library/amendments/50-1982-registration-of-documents-amendment.pdf` | `data/legal-sources/library/amendments/html/50-1982-registration-of-documents.html` | amend 13; amend 35 |
+| No. 5 of 1990 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/5-1990-registration-of-documents-amendment-act.pdf` | `data/legal-sources/library/amendments/html/5-1990-registration-of-documents-amendment.html` | amend 21 |
+| No. 48 of 2011 | Act | chain+curriculum | `data/legal-sources/library/amendments/48-2011-registration-of-documents-amendment-act.pdf` | not published as HTML | not read |
+| No. 21 of 2013 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/21-2013-registration-of-documents-amendment-act.pdf` | not published as HTML | not read |
+| No. 32 of 2022 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/32-2022-registration-of-documents-amendment-act.pdf` | not published as HTML | not read |
+| No. 18 of 2024 | Act | chain+marker | not held: not in the Act archive | not published as HTML | not read |
 
 ### Registration of Title Act
 
@@ -581,11 +605,11 @@ Amendments (19 known, 12 held):
 
 Topics: Registration of Title, Stamping of Deeds, Drafting of Deeds, Criminal and Civil Liabilities of Notaries
 
-Sections: 75 in the index (headings from legacy 74, none 1)
+Sections: 75 in the index (headings from finalized 75)
 
 Parsed from the HTML edition: 75 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 9 crossheadings, 75 sections, 96 subsections, 14 definitions, 65 paragraphs, 3 subparagraphs.
+Canonical structure: 9 crossheadings, 75 sections, 96 subsections, 14 definitions, 66 paragraphs, 3 subparagraphs.
 41 cross-references.
 Tree: `data/processed/canonical-statutes/SRC011-21-1998.json`
 
@@ -633,10 +657,10 @@ Files:
 
 Amendments (2 known, 2 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 10 of 2008 | - | curriculum | `data/legal-sources/library/amendments/10-2008-stamp-duty-special-provisions-amendment-act.pdf` | not published as HTML |
-| No. 28 of 2018 | - | curriculum | `data/legal-sources/library/amendments/28-2018-medical-amendment.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 10 of 2008 | - | curriculum | `data/legal-sources/library/amendments/10-2008-stamp-duty-special-provisions-amendment-act.pdf` | not published as HTML | not read |
+| No. 28 of 2018 | - | curriculum | `data/legal-sources/library/amendments/28-2018-medical-amendment.pdf` | not published as HTML | not read |
 
 ### Stamp Duty Act
 
@@ -648,7 +672,7 @@ Sections: 75 in the index (headings from legacy 74, none 1)
 
 Parsed from the HTML edition: 75 sections, 22 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 18 crossheadings, 20 subheadings, 75 sections, 162 subsections, 37 definitions, 98 paragraphs, 30 subparagraphs.
+Canonical structure: 18 crossheadings, 20 subheadings, 75 sections, 162 subsections, 37 definitions, 98 paragraphs, 31 subparagraphs.
 119 cross-references.
 Tree: `data/processed/canonical-statutes/SRC034-43-1982.json`
 
@@ -660,28 +684,37 @@ Files:
 
 Amendments (12 known, 10 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 71 of 1988 | Act | html | not held: no source located | not looked up |
-| No. 27 of 1991 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/27-1991-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/27-1991-stamp-duty-incorporation.html` |
-| No. 29 of 1993 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/29-1993-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/29-1993-stamp-duty-amendment.html` |
-| No. 63 of 1993 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/63-1993-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/63-1993-stamp-duty-amendment.html` |
-| No. 6 of 1996 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/6-1996-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/6-1996-stamp-duty-amendment.html` |
-| No. 38 of 1996 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/38-1996-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/38-1996-stamp-duty-amendment.html` |
-| No. 25 of 1999 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/25-1999-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/25-1999-stamp-duty.html` |
-| No. 27 of 2000 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/27-2000-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/27-2000-stamp-duty-amendment.html` |
-| No. 11 of 2002 | Act | html | not held: no source located | not looked up |
-| No. 12 of 2006 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/12-2006-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/12-2006-stamp-duty-special-provisions.html` |
-| No. 10 of 2008 | - | curriculum | `data/legal-sources/library/amendments/10-2008-stamp-duty-special-provisions-amendment-act.pdf` | not published as HTML |
-| No. 23 of 2018 | - | curriculum | `data/legal-sources/library/amendments/23-2018-apartment-ownership-special-provisions-act.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 71 of 1988 | Act | html | not held: no source located | not looked up | not read |
+| No. 27 of 1991 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/27-1991-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/27-1991-stamp-duty-incorporation.html` | amend 2; amend 5; amend 13; amend 54; amend 71 |
+| No. 29 of 1993 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/29-1993-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/29-1993-stamp-duty-amendment.html` | amend 5; amend 6; amend 13; substitute 45, 13; amend 54; amend 71 |
+| No. 63 of 1993 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/63-1993-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/63-1993-stamp-duty-amendment.html` | amend 5; amend 13; amend 27; amend 71 |
+| No. 6 of 1996 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/6-1996-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/6-1996-stamp-duty-amendment.html` | amend 5; amend 70; amend 71 |
+| No. 38 of 1996 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/38-1996-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/38-1996-stamp-duty-amendment.html` | amend 5 |
+| No. 25 of 1999 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/25-1999-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/25-1999-stamp-duty.html` | amend 5; amend 71 |
+| No. 27 of 2000 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/27-2000-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/27-2000-stamp-duty-amendment.html` | amend 5; amend 13 |
+| No. 11 of 2002 | Act | html | not held: no source located | not looked up | not read |
+| No. 12 of 2006 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/12-2006-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/12-2006-stamp-duty-special-provisions.html` | not read |
+| No. 10 of 2008 | - | curriculum | `data/legal-sources/library/amendments/10-2008-stamp-duty-special-provisions-amendment-act.pdf` | not published as HTML | not read |
+| No. 23 of 2018 | - | curriculum | `data/legal-sources/library/amendments/23-2018-apartment-ownership-special-provisions-act.pdf` | not published as HTML | not read |
 
 ### Tea and Rubber Estates (Control of Fragmentation) Act
 
-**No. 2 of 1958** · curriculum category 1 · SRC023
+**No. 2 of 1958** · curriculum category 1 · SRC023 · **finalized**
 
 Topics: Formation of Deeds, Examination of Title, Criminal and Civil Liabilities of Notaries
 
-Sections: 24 in the index (headings from legacy 24)
+Sections: 25 in the index (headings from finalized 25)
+
+Canonical structure: 25 sections, 50 subsections, 5 definitions, 38 paragraphs, 5 subparagraphs.
+38 cross-references.
+Tree: `data/processed/canonical-statutes/SRC023-2-1958.json`
+
+Finalized: `data/legal-sources/library/finalized/2-1958-tea-and-rubber-estates-control-of-fragmentation-act/2-1958-tea-and-rubber-estates-control-of-fragmentation-act.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -690,18 +723,17 @@ Files:
 
 Amendments (1 known, 1 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 20 of 2005 | - | curriculum | `data/legal-sources/library/amendments/incoming/20-2005-tea-and-rubber-estate-control-of-fragmentation-act-amendment.pdf` | `data/legal-sources/library/amendments/html/20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.html` (title does not match this statute; check it) |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 20 of 2005 | - | curriculum | `data/legal-sources/library/amendments/incoming/20-2005-tea-and-rubber-estate-control-of-fragmentation-act-amendment.pdf` | `data/legal-sources/library/amendments/html/20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.html` (title does not match this statute; check it) | amend; substitute; amend 9; amend 10; amend 16; insert 12A, 12B; amend 17; insert 23A; ... |
 
 ### Tesawalamai Pre-emption Ordinance
 
-**No. 59 of 1947** · curriculum category 1 · SRC046 · **finalized** · **sections not extracted**
+**No. 59 of 1947** · curriculum category 1 · SRC046 · **finalized**
 
 Topics: Special Laws
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 14 in the index (headings from finalized 14)
 
 Parsed from the HTML edition: 14 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
@@ -759,13 +791,13 @@ Files:
 
 Amendments (5 known, 2 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 11 of 1852 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 15 of 1876 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 1 of 1911 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 5 of 1993 | Act | chain+html | `data/legal-sources/library/amendments/5-1993-wills-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1993-wills-amendment.html` |
-| No. 29 of 2022 | Act | chain | `data/legal-sources/library/amendments/29-2022-wills-amendment-act.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 11 of 1852 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 15 of 1876 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 1 of 1911 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 5 of 1993 | Act | chain+html | `data/legal-sources/library/amendments/5-1993-wills-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1993-wills-amendment.html` | amend 3 |
+| No. 29 of 2022 | Act | chain | `data/legal-sources/library/amendments/29-2022-wills-amendment-act.pdf` | not published as HTML | repeal_and_substitute 2; repeal 3; repeal 4; amend 7; amend 9 |
 
 ## Category 2 (More Important) (9)
 
@@ -779,7 +811,7 @@ Sections: 42 in the index (headings from legacy 41, none 1)
 
 Parsed from the HTML edition: 44 sections, 6 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 5 parts, 44 sections, 72 subsections, 11 definitions, 57 paragraphs, 7 subparagraphs.
+Canonical structure: 5 parts, 44 sections, 72 subsections, 11 definitions, 67 paragraphs, 13 subparagraphs.
 25 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC049-19-1931.json`
 
@@ -792,19 +824,19 @@ Files:
 
 Amendments (11 known, 8 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 9 of 1940 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 14 of 1941 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 32 of 1947 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML |
-| No. 11 of 1968 | Act | chain+html | `data/legal-sources/library/amendments/11-1968-buddhist-temporalities-amendment.pdf` | `data/legal-sources/library/amendments/html/11-1968-buddhist-temporalities-amendment.html` |
-| No. 34 of 1973 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/34-1973-buddhist-temporalities-amendment-law.html` |
-| No. 22 of 1980 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/22-1980-buddhist-temporalities-amendment.pdf` | `data/legal-sources/library/amendments/html/22-1980-buddhist-temporalities-amendment.html` |
-| No. 18 of 1981 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/18-1981-buddhist-temporalities-amendment.pdf` | `data/legal-sources/library/amendments/html/18-1981-buddhist-temporalities-amendment.html` |
-| No. 42 of 1981 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/42-1981-buddhist-temporalities-amendment.pdf` | `data/legal-sources/library/amendments/html/42-1981-buddhist-temporalities-amendment.html` |
-| No. 3 of 1992 | Act | chain+curriculum+html | not held: archive row has no URL | `data/legal-sources/library/amendments/html/3-1992-buddhist-temporalities-amendment.html` |
-| No. 34 of 2013 | - | curriculum | `data/legal-sources/library/amendments/34-2013-buddhist-temporalities-amendment.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 9 of 1940 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 14 of 1941 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 32 of 1947 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML | not read |
+| No. 11 of 1968 | Act | chain+html | `data/legal-sources/library/amendments/11-1968-buddhist-temporalities-amendment.pdf` | `data/legal-sources/library/amendments/html/11-1968-buddhist-temporalities-amendment.html` | amend 2 |
+| No. 34 of 1973 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/34-1973-buddhist-temporalities-amendment-law.html` | amend 41 |
+| No. 22 of 1980 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/22-1980-buddhist-temporalities-amendment.pdf` | `data/legal-sources/library/amendments/html/22-1980-buddhist-temporalities-amendment.html` | not read |
+| No. 18 of 1981 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/18-1981-buddhist-temporalities-amendment.pdf` | `data/legal-sources/library/amendments/html/18-1981-buddhist-temporalities-amendment.html` | amend 12 |
+| No. 42 of 1981 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/42-1981-buddhist-temporalities-amendment.pdf` | `data/legal-sources/library/amendments/html/42-1981-buddhist-temporalities-amendment.html` | amend; amend 2; amend 15 |
+| No. 3 of 1992 | Act | chain+curriculum+html | not held: archive row has no URL | `data/legal-sources/library/amendments/html/3-1992-buddhist-temporalities-amendment.html` | amend 2; amend 14 |
+| No. 34 of 2013 | - | curriculum | `data/legal-sources/library/amendments/34-2013-buddhist-temporalities-amendment.pdf` | not published as HTML | not read |
 
 ### Definition of Boundaries Ordinance
 
@@ -828,13 +860,13 @@ Files:
 
 Amendments (5 known, 1 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 13 of 1905 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 28 of 1919 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 27 of 1933 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 8 of 1947 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 13 of 1905 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 28 of 1919 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 27 of 1933 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 8 of 1947 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML | not read |
 
 ### Land Acquisition Act
 
@@ -846,7 +878,7 @@ Sections: 68 in the index (headings from legacy 67, none 1)
 
 Parsed from the HTML edition: 73 sections, 19 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 7 parts, 73 sections, 137 subsections, 9 definitions, 107 paragraphs, 9 subparagraphs.
+Canonical structure: 7 parts, 73 sections, 137 subsections, 9 definitions, 112 paragraphs, 10 subparagraphs.
 158 cross-references.
 Tree: `data/processed/canonical-statutes/SRC051-9-1950.json`
 
@@ -858,16 +890,16 @@ Files:
 
 Amendments (8 known, 7 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 39 of 1954 | Act | html | not held: no source located | not looked up |
-| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML |
-| No. 28 of 1964 | Act | chain+html | `data/legal-sources/library/amendments/28-1964-land-acquisition-amendment.pdf` | not published as HTML |
-| No. 20 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/20-1969-land-acquisition-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1969-land-acquisition-amendment.html` |
-| No. 48 of 1971 | Act | chain+html | `data/legal-sources/library/amendments/48-1971-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/48-1971-local-authorities-special-provisions.html` (title does not match this statute; check it) |
-| No. 8 of 1979 | Act | chain+html | `data/legal-sources/library/amendments/8-1979-land-acquisition-amendment.pdf` | `data/legal-sources/library/amendments/html/8-1979-land-acquisition-amendment.html` |
-| No. 13 of 1986 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/13-1986-land-acquisition-act-amendment.pdf` | `data/legal-sources/library/amendments/html/13-1986-land-acquisition-amendment.html` |
-| No. 16 of 1986 | - | curriculum | not held: not in the Act archive | `data/legal-sources/library/amendments/html/16-1986-vidyaranya-vinayakrama-sabhawa-incorporation.html` (title does not match this statute; check it) |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 39 of 1954 | Act | html | not held: no source located | not looked up | not read |
+| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML | not read |
+| No. 28 of 1964 | Act | chain+html | `data/legal-sources/library/amendments/28-1964-land-acquisition-amendment.pdf` | not published as HTML | not read |
+| No. 20 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/20-1969-land-acquisition-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1969-land-acquisition-amendment.html` | insert 51A |
+| No. 48 of 1971 | Act | chain+html | `data/legal-sources/library/amendments/48-1971-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/48-1971-local-authorities-special-provisions.html` (title does not match this statute; check it) | insert 238, 235, 230; amend 37; insert 184, 9; amend 183; amend 54; substitute 155; ame... |
+| No. 8 of 1979 | Act | chain+html | `data/legal-sources/library/amendments/8-1979-land-acquisition-amendment.pdf` | `data/legal-sources/library/amendments/html/8-1979-land-acquisition-amendment.html` | insert 39A, 39 |
+| No. 13 of 1986 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/13-1986-land-acquisition-act-amendment.pdf` | `data/legal-sources/library/amendments/html/13-1986-land-acquisition-amendment.html` | amend |
+| No. 16 of 1986 | - | curriculum | not held: not in the Act archive | `data/legal-sources/library/amendments/html/16-1986-vidyaranya-vinayakrama-sabhawa-incorporation.html` (title does not match this statute; check it) | not read |
 
 ### Land Development Ordinance
 
@@ -891,21 +923,21 @@ Files:
 
 Amendments (13 known, 12 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 3 of 1946 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 49 of 1953 | Act | chain+html | `data/legal-sources/library/amendments/49-1953-land-development-amendment.pdf` | not published as HTML |
-| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML |
-| No. 16 of 1969 | Act | chain+html+marker | `data/legal-sources/library/amendments/16-1969-land-development-amendment.pdf` | `data/legal-sources/library/amendments/html/16-1969-land-development-amendment.html` |
-| No. 21 of 1971 | Act | chain+html | `data/legal-sources/library/amendments/21-1971-land-development-amendment.pdf` | `data/legal-sources/library/amendments/html/21-1971-land-development-amendment.html` |
-| No. 43 of 1973 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/43-1973-sale-of-state-lands-special-provisions-law.html` (title does not match this statute; check it) |
-| No. 13 of 1975 | Act | chain | not held: not in the Act archive | `data/legal-sources/library/amendments/html/13-1975-state-mortgage-and-investment-bank-law.html` (title does not match this statute; check it) |
-| No. 27 of 1981 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/27-1981-land-development-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/27-1981-land-development-amendment.html` |
-| No. 10 of 1983 | Act | chain+html+marker | `data/legal-sources/library/amendments/10-1983-metric-units-consequential-provisions-amendment.pdf` | `data/legal-sources/library/amendments/html/10-1983-metric-units-consequential-provisions.html` (title does not match this statute; check it) |
-| No. 22 of 1993 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/22-1993-land-development-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/22-1993-land-development-amendment.html` |
-| No. 9 of 1995 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/9-1995-land-development-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/9-1995-land-development-amendment.html` |
-| No. 20 of 1996 | Act | chain+html+marker | `data/legal-sources/library/amendments/20-1996-land-development-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1996-land-development-amendment.html` |
-| No. 11 of 2022 | Act | chain+marker | `data/legal-sources/library/amendments/11-2022-land-development-amendment.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 3 of 1946 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 49 of 1953 | Act | chain+html | `data/legal-sources/library/amendments/49-1953-land-development-amendment.pdf` | not published as HTML | not read |
+| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML | not read |
+| No. 16 of 1969 | Act | chain+html+marker | `data/legal-sources/library/amendments/16-1969-land-development-amendment.pdf` | `data/legal-sources/library/amendments/html/16-1969-land-development-amendment.html` | amend 2; substitute 8; substitute 10, 11; repeal 12; substitute 13; amend 17; insert 19... |
+| No. 21 of 1971 | Act | chain+html | `data/legal-sources/library/amendments/21-1971-land-development-amendment.pdf` | `data/legal-sources/library/amendments/html/21-1971-land-development-amendment.html` | amend; amend 6 |
+| No. 43 of 1973 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/43-1973-sale-of-state-lands-special-provisions-law.html` (title does not match this statute; check it) | repeal; amend |
+| No. 13 of 1975 | Act | chain | not held: not in the Act archive | `data/legal-sources/library/amendments/html/13-1975-state-mortgage-and-investment-bank-law.html` (title does not match this statute; check it) | repeal |
+| No. 27 of 1981 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/27-1981-land-development-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/27-1981-land-development-amendment.html` | amend 2; substitute; repeal 38; amend 41, 49, 68, 72, 105, 172; amend 43; amend 48A; am... |
+| No. 10 of 1983 | Act | chain+html+marker | `data/legal-sources/library/amendments/10-1983-metric-units-consequential-provisions-amendment.pdf` | `data/legal-sources/library/amendments/html/10-1983-metric-units-consequential-provisions.html` (title does not match this statute; check it) | substitute; substitute 17 |
+| No. 22 of 1993 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/22-1993-land-development-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/22-1993-land-development-amendment.html` | amend 2; insert 23B; substitute 39; insert 41A; amend 43; substitute 106, 107; amend 118A |
+| No. 9 of 1995 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/incoming/9-1995-land-development-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/9-1995-land-development-amendment.html` | amend 19; repeal 28; substitute 30 |
+| No. 20 of 1996 | Act | chain+html+marker | `data/legal-sources/library/amendments/20-1996-land-development-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1996-land-development-amendment.html` | amend 2; substitute 41A; amend 43 |
+| No. 11 of 2022 | Act | chain+marker | `data/legal-sources/library/amendments/11-2022-land-development-amendment.pdf` | not published as HTML | not read |
 
 ### Land Grants (Special Provisions) Act
 
@@ -913,7 +945,7 @@ Amendments (13 known, 12 held):
 
 Topics: State Lands
 
-Sections: 19 in the index (headings from legacy 19)
+Sections: 20 in the index (headings from finalized 20)
 
 Parsed from the HTML edition: 20 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
@@ -955,13 +987,13 @@ Files:
 
 Amendments (5 known, 5 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 39 of 1975 | Law | html+marker | not held: not in the Act archive | `data/legal-sources/library/amendments/html/39-1975-land-reform-amendment-law.html` |
-| No. 14 of 1981 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/14-1981-land-reform-law-amendment.pdf` | `data/legal-sources/library/amendments/html/14-1981-land-reform-amendment.html` |
-| No. 39 of 1981 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/39-1981-land-reform-law-amendment.pdf` | `data/legal-sources/library/amendments/html/39-1981-land-reform-amendment.html` |
-| No. 14 of 1986 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/14-1986-land-reform-law-amendment.pdf` | `data/legal-sources/library/amendments/html/14-1986-land-reform-special-provisions.html` |
-| No. 18 of 1986 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/18-1986-land-reform-law-amendment.pdf` | `data/legal-sources/library/amendments/html/18-1986-land-reform-special-provisions-amendment.html` |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 39 of 1975 | Law | html+marker | not held: not in the Act archive | `data/legal-sources/library/amendments/html/39-1975-land-reform-amendment-law.html` | insert |
+| No. 14 of 1981 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/14-1981-land-reform-law-amendment.pdf` | `data/legal-sources/library/amendments/html/14-1981-land-reform-amendment.html` | insert 42LL |
+| No. 39 of 1981 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/39-1981-land-reform-law-amendment.pdf` | `data/legal-sources/library/amendments/html/39-1981-land-reform-amendment.html` | not read |
+| No. 14 of 1986 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/14-1986-land-reform-law-amendment.pdf` | `data/legal-sources/library/amendments/html/14-1986-land-reform-special-provisions.html` | not read |
+| No. 18 of 1986 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/18-1986-land-reform-law-amendment.pdf` | `data/legal-sources/library/amendments/html/18-1986-land-reform-special-provisions-amendment.html` | amend 42 |
 
 ### Land Registers (Reconstructed Folios) Act
 
@@ -969,7 +1001,7 @@ Amendments (5 known, 5 held):
 
 Topics: Examination of Title
 
-Sections: 9 in the index (headings from none 6, legacy 3)
+Sections: 9 in the index (headings from finalized 9)
 
 Parsed from the HTML edition: 9 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
@@ -1013,14 +1045,14 @@ Files:
 
 Amendments (6 known, 4 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 53 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 11 of 1953 | Act | chain+html+marker | `data/legal-sources/library/amendments/11-1953-mortgage-amendment.pdf` | not published as HTML |
-| No. 24 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/24-1969-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/24-1969-civil-procedure-code-amendment.html` |
-| No. 27 of 1987 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/27-1987-mortgage-amendment.pdf` | `data/legal-sources/library/amendments/html/27-1987-mortgage-amendment.html` |
-| No. 3 of 1990 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/3-1990-mortgage-amendment.pdf` | `data/legal-sources/library/amendments/html/3-1990-mortgage-amendment.html` |
-| No. 20 of 2024 | Act | chain+marker | not held: not in the Act archive | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 53 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 11 of 1953 | Act | chain+html+marker | `data/legal-sources/library/amendments/11-1953-mortgage-amendment.pdf` | not published as HTML | not read |
+| No. 24 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/24-1969-civil-procedure-code-amendment.pdf` | `data/legal-sources/library/amendments/html/24-1969-civil-procedure-code-amendment.html` | substitute 338, 394, 519, 542, 545, 547, 582; amend |
+| No. 27 of 1987 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/27-1987-mortgage-amendment.pdf` | `data/legal-sources/library/amendments/html/27-1987-mortgage-amendment.html` | amend 114 |
+| No. 3 of 1990 | Act | chain+curriculum+html+marker | `data/legal-sources/library/amendments/3-1990-mortgage-amendment.pdf` | `data/legal-sources/library/amendments/html/3-1990-mortgage-amendment.html` | substitute 46; insert 47A; insert; amend |
+| No. 20 of 2024 | Act | chain+marker | not held: not in the Act archive | not published as HTML | not read |
 
 ### Urban Development Authority Act
 
@@ -1045,14 +1077,14 @@ Files:
 
 Amendments (6 known, 6 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 70 of 1979 | Act | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/70-1979-urban-development-authority-amendment.html` |
-| No. 4 of 1982 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/4-1982-urban-development-authority-amendment.pdf` | `data/legal-sources/library/amendments/html/4-1982-urban-development-authority-amendment.html` |
-| No. 44 of 1984 | Act | chain+curriculum+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/44-1984-urban-development-authority-special-provisions.html` |
-| No. 49 of 1987 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/49-1987-urban-development-authority-amendment.pdf` | `data/legal-sources/library/amendments/html/49-1987-urban-development-authority-amendment.html` |
-| No. 41 of 1988 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/41-1988-urban-development-authority-amendment.pdf` | `data/legal-sources/library/amendments/html/41-1988-urban-development-authority-amendment.html` |
-| No. 36 of 2007 | Act | chain | `data/legal-sources/library/amendments/36-2007-urban-development-authority-amendment.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 70 of 1979 | Act | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/70-1979-urban-development-authority-amendment.html` | substitute 9; amend 11 |
+| No. 4 of 1982 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/4-1982-urban-development-authority-amendment.pdf` | `data/legal-sources/library/amendments/html/4-1982-urban-development-authority-amendment.html` | amend 8; insert; amend 16; amend 23; insert 26A, 26B; substitute 28; insert 28A, 28B, 2... |
+| No. 44 of 1984 | Act | chain+curriculum+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/44-1984-urban-development-authority-special-provisions.html` | amend 2; amend 4; amend 8K; amend 13; amend 28A; insert 28D |
+| No. 49 of 1987 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/49-1987-urban-development-authority-amendment.pdf` | `data/legal-sources/library/amendments/html/49-1987-urban-development-authority-amendment.html` | insert 8L |
+| No. 41 of 1988 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/41-1988-urban-development-authority-amendment.pdf` | `data/legal-sources/library/amendments/html/41-1988-urban-development-authority-amendment.html` | amend 8L; insert |
+| No. 36 of 2007 | Act | chain | `data/legal-sources/library/amendments/36-2007-urban-development-authority-amendment.pdf` | not published as HTML | not read |
 
 ## Category 3 (Important) (21)
 
@@ -1078,21 +1110,21 @@ Files:
 
 Amendments (13 known, 7 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 45 of 1939 | Ordinance | html | not held: no source located | not looked up |
-| No. 53 of 1943 | Ordinance | html | not held: no source located | not looked up |
-| No. 4 of 1944 | Ordinance | html | not held: no source located | not looked up |
-| No. 34 of 1944 | Ordinance | html | not held: no source located | not looked up |
-| No. 7 of 1945 | Ordinance | html | not held: no source located | not looked up |
-| No. 39 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 19 of 1952 | Act | chain+html | `data/legal-sources/library/amendments/19-1952-bank-of-ceylon-amendment.pdf` | not published as HTML |
-| No. 42 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/42-1954-bank-of-ceylon-amendment.pdf` | not published as HTML |
-| No. 37 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/37-1955-bank-of-ceylon-amendment.pdf` | not published as HTML |
-| No. 34 of 1968 | Act | chain+html | `data/legal-sources/library/amendments/34-1968-bank-of-ceylon-amendment.pdf` | `data/legal-sources/library/amendments/html/34-1968-bank-of-ceylon-amendment.html` |
-| No. 10 of 1974 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/10-1974-bank-of-ceylon-amendment-law.html` |
-| No. 60 of 1980 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/incoming/60-1980-bank-of-ceylon-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/60-1980-bank-of-ceylon-amendment.html` |
-| No. 54 of 2000 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/incoming/54-2000-bank-of-ceylon-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/54-2000-bank-of-ceylon-amendment.html` |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 45 of 1939 | Ordinance | html | not held: no source located | not looked up | not read |
+| No. 53 of 1943 | Ordinance | html | not held: no source located | not looked up | not read |
+| No. 4 of 1944 | Ordinance | html | not held: no source located | not looked up | not read |
+| No. 34 of 1944 | Ordinance | html | not held: no source located | not looked up | not read |
+| No. 7 of 1945 | Ordinance | html | not held: no source located | not looked up | not read |
+| No. 39 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 19 of 1952 | Act | chain+html | `data/legal-sources/library/amendments/19-1952-bank-of-ceylon-amendment.pdf` | not published as HTML | not read |
+| No. 42 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/42-1954-bank-of-ceylon-amendment.pdf` | not published as HTML | not read |
+| No. 37 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/37-1955-bank-of-ceylon-amendment.pdf` | not published as HTML | not read |
+| No. 34 of 1968 | Act | chain+html | `data/legal-sources/library/amendments/34-1968-bank-of-ceylon-amendment.pdf` | `data/legal-sources/library/amendments/html/34-1968-bank-of-ceylon-amendment.html` | amend |
+| No. 10 of 1974 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/10-1974-bank-of-ceylon-amendment-law.html` | substitute 4; substitute 6; substitute 7; substitute 8; substitute 9; substitute 10; su... |
+| No. 60 of 1980 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/incoming/60-1980-bank-of-ceylon-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/60-1980-bank-of-ceylon-amendment.html` | substitute 3; repeal_and_substitute; substitute 33 |
+| No. 54 of 2000 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/incoming/54-2000-bank-of-ceylon-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/54-2000-bank-of-ceylon-amendment.html` | amend 7; amend 16; substitute 17; insert 17A; amend 19; amend 20; substitute 21; amend ... |
 
 ### Land Settlement Ordinance
 
@@ -1116,12 +1148,12 @@ Files:
 
 Amendments (4 known, 2 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 22 of 1932 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 31 of 1933 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML |
-| No. 23 of 1996 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/23-1996-land-settlement-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/23-1996-land-settlement-amendment.html` |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 22 of 1932 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 31 of 1933 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML | not read |
+| No. 23 of 1996 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/23-1996-land-settlement-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/23-1996-land-settlement-amendment.html` | amend 5; insert 5A |
 
 ### Land Surveys Ordinance
 
@@ -1145,9 +1177,9 @@ Files:
 
 Amendments (1 known, 1 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 17 of 2002 | Ordinance | html | `data/legal-sources/library/amendments/17-2002-survey.pdf` | `data/legal-sources/library/amendments/html/17-2002-survey-act.html` (title does not match this statute; check it) |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 17 of 2002 | Ordinance | html | `data/legal-sources/library/amendments/17-2002-survey.pdf` | `data/legal-sources/library/amendments/html/17-2002-survey-act.html` (title does not match this statute; check it) | not read |
 
 ### Lands Resumption Ordinance
 
@@ -1171,11 +1203,11 @@ Files:
 
 Amendments (3 known, 1 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 2 of 1934 | Ordinance | html | not held: not in the Act archive | not published as HTML |
-| No. 57 of 1942 | Ordinance | html | not held: not in the Act archive | not published as HTML |
-| No. 22 of 1955 | Act | curriculum+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 2 of 1934 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
+| No. 57 of 1942 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
+| No. 22 of 1955 | Act | curriculum+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML | not read |
 
 ### Local Authorities Housing Act
 
@@ -1199,9 +1231,9 @@ Files:
 
 Amendments (1 known, 1 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 63 of 1979 | Act | html | `data/legal-sources/library/amendments/63-1979-local-authorities-housing-amendment.pdf` | `data/legal-sources/library/amendments/html/63-1979-local-authorities-housing-amendment.html` |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 63 of 1979 | Act | html | `data/legal-sources/library/amendments/63-1979-local-authorities-housing-amendment.pdf` | `data/legal-sources/library/amendments/html/63-1979-local-authorities-housing-amendment.html` | substitute 3; insert 5A; insert 11A |
 
 ### Municipal Councils Ordinance
 
@@ -1213,7 +1245,7 @@ Sections: 341 in the index (headings from legacy 340, none 1)
 
 Parsed from the HTML edition: 348 sections, 118 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 16 parts, 32 crossheadings, 348 sections, 505 subsections, 29 definitions, 407 paragraphs, 59 subparagraphs.
+Canonical structure: 16 parts, 32 crossheadings, 348 sections, 505 subsections, 29 definitions, 406 paragraphs, 62 subparagraphs.
 334 cross-references; 12 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC061-29-1947.json`
 
@@ -1226,49 +1258,49 @@ Files:
 
 Amendments (41 known, 33 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 1 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 3 of 1951 | Act | chain+html | `data/legal-sources/library/amendments/3-1951-municipal-councils-amendment.pdf` | not published as HTML |
-| No. 12 of 1951 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 39 of 1951 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 8 of 1952 | Act | chain+html | `data/legal-sources/library/amendments/8-1952-local-authorities-enlargement-of-powers.pdf` | not published as HTML |
-| No. 38 of 1953 | Act | chain+html | `data/legal-sources/library/amendments/38-1953-local-authorities-term-of-office.pdf` | not published as HTML |
-| No. 7 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/7-1954-municipal-council-amendment.pdf` | not published as HTML |
-| No. 26 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/26-1954-municipal-councils-amendment.pdf` | not published as HTML |
-| No. 44 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/44-1954-municipal-councils-amendment.pdf` | not published as HTML |
-| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML |
-| No. 22 of 1956 | Act | chain+html | `data/legal-sources/library/amendments/22-1956-municipal-councils-amendment.pdf` | not published as HTML |
-| No. 15 of 1957 | Act | chain+html | `data/legal-sources/library/amendments/15-1957-municipal-councils-amendment.pdf` | not published as HTML |
-| No. 39 of 1958 | Act | chain+html | `data/legal-sources/library/amendments/39-1958-municipal-councils-amendment.pdf` | not published as HTML |
-| No. 12 of 1959 | Act | chain+html | `data/legal-sources/library/amendments/12-1959-municipal-councils-amendment.pdf` | not published as HTML |
-| No. 9 of 1961 | Act | chain+html | `data/legal-sources/library/amendments/9-1961-local-authorities-stamp-duties-on-proctors-annual-certificates.pdf` | not published as HTML |
-| No. 39 of 1961 | Act | chain+html | `data/legal-sources/library/amendments/39-1961-local-authorities-term-of-office.pdf` | not published as HTML |
-| No. 2 of 1967 | Act | chain+html | `data/legal-sources/library/amendments/2-1967-local-authorities-terms-of-office.pdf` | not published as HTML |
-| No. 8 of 1967 | Act | chain+html | `data/legal-sources/library/amendments/8-1967-municipal-councils-and-town-councils-amendment.pdf` | not published as HTML |
-| No. 42 of 1968 | Act | chain+html | `data/legal-sources/library/amendments/42-1968-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/42-1968-local-authorities-special-provisions.html` (title does not match this statute; check it) |
-| No. 4 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/4-1969-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/4-1969-local-authorities-special-provisions.html` (title does not match this statute; check it) |
-| No. 48 of 1971 | Act | chain+html | `data/legal-sources/library/amendments/48-1971-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/48-1971-local-authorities-special-provisions.html` (title does not match this statute; check it) |
-| No. 38 of 1973 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/38-1973-municipal-councils-amendment-law.html` |
-| No. 8 of 1974 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/8-1974-municipal-councils-amendment-law.html` |
-| No. 4 of 1975 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/4-1975-naming-of-streets-and-the-control-of-the-erection-of-monuments-law.html` (title does not match this statute; check it) |
-| No. 5 of 1975 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/5-1975-municipal-councils-amendment-law.html` |
-| No. 18 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/18-1977-municipal-councils-and-urban-councils-amendment-law.html` |
-| No. 24 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/24-1977-local-authorities-elections-special-provisions-law.html` (title does not match this statute; check it) |
-| No. 18 of 1979 | Act | html | not held: no source located | not looked up |
-| No. 42 of 1979 | Act | html | not held: no source located | not looked up |
-| No. 57 of 1979 | Act | html | not held: no source located | not looked up |
-| No. 10 of 1981 | Act | curriculum+html | `data/legal-sources/library/amendments/10-1981-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/10-1981-municipal-councils-and-urban-councils-amendment.html` |
-| No. 33 of 1981 | Act | curriculum+html | `data/legal-sources/library/amendments/33-1981-municipal-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/33-1981-municipal-councils-amendment.html` |
-| No. 61 of 1981 | Act | html | not held: no source located | not looked up |
-| No. 5 of 1983 | Act | curriculum+html | `data/legal-sources/library/amendments/5-1983-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1983-municipal-councils-and-urban-councils-amendment.html` |
-| No. 13 of 1983 | Act | html | not held: no source located | not looked up |
-| No. 20 of 1985 | Act | curriculum+html | `data/legal-sources/library/amendments/20-1985-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1985-municipal-councils-and-urban-councils-amendment.html` |
-| No. 39 of 1986 | Act | curriculum+html | `data/legal-sources/library/amendments/39-1986-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/39-1986-municipal-councils-and-urban-councils-amendment.html` |
-| No. 19 of 1987 | Act | curriculum+html | `data/legal-sources/library/amendments/19-1987-municipal-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/19-1987-municipal-councils-amendment.html` |
-| No. 35 of 1987 | Act | curriculum+html | `data/legal-sources/library/amendments/35-1987-municipal-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/35-1987-municipal-councils-amendment.html` |
-| No. 34 of 2014 | - | curriculum | `data/legal-sources/library/amendments/34-2014-muncipal-councils-amendment.pdf` | not published as HTML |
-| No. 20 of 2017 | - | curriculum | `data/legal-sources/library/amendments/20-2017-municipal-councils-amendment.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 1 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 3 of 1951 | Act | chain+html | `data/legal-sources/library/amendments/3-1951-municipal-councils-amendment.pdf` | not published as HTML | not read |
+| No. 12 of 1951 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 39 of 1951 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 8 of 1952 | Act | chain+html | `data/legal-sources/library/amendments/8-1952-local-authorities-enlargement-of-powers.pdf` | not published as HTML | not read |
+| No. 38 of 1953 | Act | chain+html | `data/legal-sources/library/amendments/38-1953-local-authorities-term-of-office.pdf` | not published as HTML | not read |
+| No. 7 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/7-1954-municipal-council-amendment.pdf` | not published as HTML | not read |
+| No. 26 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/26-1954-municipal-councils-amendment.pdf` | not published as HTML | not read |
+| No. 44 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/44-1954-municipal-councils-amendment.pdf` | not published as HTML | not read |
+| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML | not read |
+| No. 22 of 1956 | Act | chain+html | `data/legal-sources/library/amendments/22-1956-municipal-councils-amendment.pdf` | not published as HTML | not read |
+| No. 15 of 1957 | Act | chain+html | `data/legal-sources/library/amendments/15-1957-municipal-councils-amendment.pdf` | not published as HTML | not read |
+| No. 39 of 1958 | Act | chain+html | `data/legal-sources/library/amendments/39-1958-municipal-councils-amendment.pdf` | not published as HTML | not read |
+| No. 12 of 1959 | Act | chain+html | `data/legal-sources/library/amendments/12-1959-municipal-councils-amendment.pdf` | not published as HTML | not read |
+| No. 9 of 1961 | Act | chain+html | `data/legal-sources/library/amendments/9-1961-local-authorities-stamp-duties-on-proctors-annual-certificates.pdf` | not published as HTML | not read |
+| No. 39 of 1961 | Act | chain+html | `data/legal-sources/library/amendments/39-1961-local-authorities-term-of-office.pdf` | not published as HTML | not read |
+| No. 2 of 1967 | Act | chain+html | `data/legal-sources/library/amendments/2-1967-local-authorities-terms-of-office.pdf` | not published as HTML | not read |
+| No. 8 of 1967 | Act | chain+html | `data/legal-sources/library/amendments/8-1967-municipal-councils-and-town-councils-amendment.pdf` | not published as HTML | not read |
+| No. 42 of 1968 | Act | chain+html | `data/legal-sources/library/amendments/42-1968-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/42-1968-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend 170; amend 27; amend 184; amend 26; amend 183 |
+| No. 4 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/4-1969-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/4-1969-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend |
+| No. 48 of 1971 | Act | chain+html | `data/legal-sources/library/amendments/48-1971-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/48-1971-local-authorities-special-provisions.html` (title does not match this statute; check it) | insert 238, 235, 230; amend 37; insert 184, 9; amend 183; amend 54; substitute 155; ame... |
+| No. 38 of 1973 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/38-1973-municipal-councils-amendment-law.html` | amend 32; insert 323A, 323B; insert 323A, 7, 13, 14, 15, 21, 44 |
+| No. 8 of 1974 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/8-1974-municipal-councils-amendment-law.html` | amend 277 |
+| No. 4 of 1975 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/4-1975-naming-of-streets-and-the-control-of-the-erection-of-monuments-law.html` (title does not match this statute; check it) | amend 71; amend 55A; amend 57A; insert 57A |
+| No. 5 of 1975 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/5-1975-municipal-councils-amendment-law.html` | insert 184B |
+| No. 18 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/18-1977-municipal-councils-and-urban-councils-amendment-law.html` | amend 272; amend 157 |
+| No. 24 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/24-1977-local-authorities-elections-special-provisions-law.html` (title does not match this statute; check it) | repeal_and_substitute 2; amend 4; amend 5; amend 6; amend 7; substitute 8; amend 9; ins... |
+| No. 18 of 1979 | Act | html | not held: no source located | not looked up | not read |
+| No. 42 of 1979 | Act | html | not held: no source located | not looked up | not read |
+| No. 57 of 1979 | Act | html | not held: no source located | not looked up | not read |
+| No. 10 of 1981 | Act | curriculum+html | `data/legal-sources/library/amendments/10-1981-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/10-1981-municipal-councils-and-urban-councils-amendment.html` | not read |
+| No. 33 of 1981 | Act | curriculum+html | `data/legal-sources/library/amendments/33-1981-municipal-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/33-1981-municipal-councils-amendment.html` | amend 327 |
+| No. 61 of 1981 | Act | html | not held: no source located | not looked up | not read |
+| No. 5 of 1983 | Act | curriculum+html | `data/legal-sources/library/amendments/5-1983-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1983-municipal-councils-and-urban-councils-amendment.html` | amend 272; amend 157 |
+| No. 13 of 1983 | Act | html | not held: no source located | not looked up | not read |
+| No. 20 of 1985 | Act | curriculum+html | `data/legal-sources/library/amendments/20-1985-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1985-municipal-councils-and-urban-councils-amendment.html` | amend 230; amend 247A; insert 247BB; amend 247C; amend 247D; amend 160; amend 164; inse... |
+| No. 39 of 1986 | Act | curriculum+html | `data/legal-sources/library/amendments/39-1986-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/39-1986-municipal-councils-and-urban-councils-amendment.html` | amend 10; amend 40; amend 73; amend 74; amend 78; amend 79; substitute 81; amend 83; am... |
+| No. 19 of 1987 | Act | curriculum+html | `data/legal-sources/library/amendments/19-1987-municipal-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/19-1987-municipal-councils-amendment.html` | amend 40; amend 188; amend 272 |
+| No. 35 of 1987 | Act | curriculum+html | `data/legal-sources/library/amendments/35-1987-municipal-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/35-1987-municipal-councils-amendment.html` | amend 327 |
+| No. 34 of 2014 | - | curriculum | `data/legal-sources/library/amendments/34-2014-muncipal-councils-amendment.pdf` | not published as HTML | not read |
+| No. 20 of 2017 | - | curriculum | `data/legal-sources/library/amendments/20-2017-municipal-councils-amendment.pdf` | not published as HTML | not read |
 
 ### National Housing Act
 
@@ -1280,8 +1312,8 @@ Sections: 30 in the index (headings from legacy 29, none 1)
 
 Parsed from the HTML edition: 125 sections, 38 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 10 parts, 1 crossheading, 125 sections, 191 subsections, 24 definitions, 112 paragraphs, 10 subparagraphs.
-164 cross-references; 1 schedules referenced (bodies not published).
+Canonical structure: 10 parts, 1 crossheading, 125 sections, 191 subsections, 24 definitions, 145 paragraphs, 18 subparagraphs.
+163 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC076-37-1954.json`
 
 Files:
@@ -1292,14 +1324,14 @@ Files:
 
 Amendments (6 known, 5 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 22 of 1955 | Act | html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML |
-| No. 30 of 1955 | Act | html | `data/legal-sources/library/amendments/30-1955-national-housing-amendment.pdf` | not published as HTML |
-| No. 42 of 1958 | Act | html | `data/legal-sources/library/amendments/42-1958-national-housing-amendment.pdf` | not published as HTML |
-| No. 36 of 1966 | Act | html | `data/legal-sources/library/amendments/36-1966-national-housing-amendment.pdf` | not published as HTML |
-| No. 9 of 1978 | Act | html | not held: archive row has no URL | not published as HTML |
-| No. 49 of 1981 | Act | html | `data/legal-sources/library/amendments/49-1981-national-housing-amendment.pdf` | `data/legal-sources/library/amendments/html/49-1981-national-housing-amendment.html` |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 22 of 1955 | Act | html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML | not read |
+| No. 30 of 1955 | Act | html | `data/legal-sources/library/amendments/30-1955-national-housing-amendment.pdf` | not published as HTML | not read |
+| No. 42 of 1958 | Act | html | `data/legal-sources/library/amendments/42-1958-national-housing-amendment.pdf` | not published as HTML | not read |
+| No. 36 of 1966 | Act | html | `data/legal-sources/library/amendments/36-1966-national-housing-amendment.pdf` | not published as HTML | not read |
+| No. 9 of 1978 | Act | html | not held: archive row has no URL | not published as HTML | not read |
+| No. 49 of 1981 | Act | html | `data/legal-sources/library/amendments/49-1981-national-housing-amendment.pdf` | `data/legal-sources/library/amendments/html/49-1981-national-housing-amendment.html` | amend 33; substitute 36 |
 
 ### National Housing Development Authority Act
 
@@ -1312,7 +1344,7 @@ cited until they are extracted.
 
 Parsed from the HTML edition: 92 sections, 5 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 9 parts, 92 sections, 146 subsections, 3 definitions, 73 paragraphs, 8 subparagraphs.
+Canonical structure: 9 parts, 92 sections, 146 subsections, 3 definitions, 73 paragraphs, 9 subparagraphs.
 109 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC075-17-1979.json`
 
@@ -1323,23 +1355,22 @@ Files:
 
 Amendments (6 known, 6 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 5 of 1982 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/5-1982-national-housing-development-authority-act-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1982-national-housing-development-authority-amendment.html` |
-| No. 20 of 1988 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/20-1988-national-housing-development-authority-act-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1988-national-housing-development-authority-amendment.html` |
-| No. 30 of 1999 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/30-1999-national-housing-development-authority-act-amendment.pdf` | `data/legal-sources/library/amendments/html/30-1999-national-housing-development-authority-amendment.html` |
-| No. 23 of 2002 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/23-2002-national-housing-development-authority-act-amendment.pdf` | `data/legal-sources/library/amendments/html/23-2002-national-housing-development-authority-amendment.html` |
-| No. 32 of 2002 | - | curriculum | `data/legal-sources/library/amendments/32-2002-monetary-law-amendment.pdf` | `data/legal-sources/library/amendments/html/32-2002-monetary-law-amendment.html` (title does not match this statute; check it) |
-| No. 32 of 2003 | Act | html | `data/legal-sources/library/amendments/32-2003-national-housing-development-authority-amendment.pdf` | `data/legal-sources/library/amendments/html/32-2003-national-housing-development-authority-amendment.html` |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 5 of 1982 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/5-1982-national-housing-development-authority-act-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1982-national-housing-development-authority-amendment.html` | amend 6; amend 8 |
+| No. 20 of 1988 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/20-1988-national-housing-development-authority-act-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1988-national-housing-development-authority-amendment.html` | insert 73A |
+| No. 30 of 1999 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/30-1999-national-housing-development-authority-act-amendment.pdf` | `data/legal-sources/library/amendments/html/30-1999-national-housing-development-authority-amendment.html` | amend 68; insert; amend 82 |
+| No. 23 of 2002 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/23-2002-national-housing-development-authority-act-amendment.pdf` | `data/legal-sources/library/amendments/html/23-2002-national-housing-development-authority-amendment.html` | amend 63; amend 82; amend |
+| No. 32 of 2002 | - | curriculum | `data/legal-sources/library/amendments/32-2002-monetary-law-amendment.pdf` | `data/legal-sources/library/amendments/html/32-2002-monetary-law-amendment.html` (title does not match this statute; check it) | substitute 5; amend 8; amend 11; amend 13; amend 14; amend 15; amend 16; amend 17; amen... |
+| No. 32 of 2003 | Act | html | `data/legal-sources/library/amendments/32-2003-national-housing-development-authority-amendment.pdf` | `data/legal-sources/library/amendments/html/32-2003-national-housing-development-authority-amendment.html` | repeal 10 |
 
 ### Nindagama Lands Act
 
-**No. 30 of 1968** · commenced 1968-06-22 · curriculum category 3 · SRC072 · **finalized** · **sections not extracted**
+**No. 30 of 1968** · commenced 1968-06-22 · curriculum category 3 · SRC072 · **finalized**
 
 Topics: Temple, Devala, Nindagam, Sangika, and Pudgalika Properties, State Lands, Other Related Statutory Laws
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 30 in the index (headings from finalized 30)
 
 Parsed from the HTML edition: 30 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
@@ -1369,7 +1400,7 @@ Sections: 72 in the index (headings from lawlanka 64, legacy 8)
 
 Parsed from the HTML edition: 64 sections, 27 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 64 sections, 109 subsections, 14 definitions, 98 paragraphs, 11 subparagraphs.
+Canonical structure: 64 sections, 109 subsections, 14 definitions, 97 paragraphs, 12 subparagraphs.
 82 cross-references.
 Tree: `data/processed/canonical-statutes/SRC080-29-1961.json`
 
@@ -1381,25 +1412,24 @@ Files:
 
 Amendments (8 known, 7 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 11 of 1963 | Act | html | `data/legal-sources/library/amendments/11-1963-finance.pdf` | `data/legal-sources/library/amendments/html/11-1963-marriage-registration-amendment.html` |
-| No. 18 of 1965 | Act | html | `data/legal-sources/library/amendments/18-1965-inland-revenue-amendment.pdf` | not published as HTML |
-| No. 16 of 1969 | Act | html | `data/legal-sources/library/amendments/16-1969-land-development-amendment.pdf` | `data/legal-sources/library/amendments/html/16-1969-land-development-amendment.html` |
-| No. 43 of 1973 | Law | html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/43-1973-sale-of-state-lands-special-provisions-law.html` (title does not match this statute; check it) |
-| No. 25 of 1978 | Law | html+marker | not held: not in the Act archive | not published as HTML |
-| No. 61 of 1980 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/61-1980-peoples-bank-act-amendment.pdf` | `data/legal-sources/library/amendments/html/61-1980-peoples-bank-amendment.html` |
-| No. 32 of 1986 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/32-1986-peoples-bank-act-amendment.pdf` | `data/legal-sources/library/amendments/html/32-1986-peoples-bank-amendment.html` |
-| No. 16 of 2019 | - | curriculum+marker | `data/legal-sources/library/amendments/incoming/16-2019-peoples-bank-act-amendment.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 11 of 1963 | Act | html | `data/legal-sources/library/amendments/11-1963-finance.pdf` | `data/legal-sources/library/amendments/html/11-1963-marriage-registration-amendment.html` | amend 34; amend 62; amend |
+| No. 18 of 1965 | Act | html | `data/legal-sources/library/amendments/18-1965-inland-revenue-amendment.pdf` | not published as HTML | not read |
+| No. 16 of 1969 | Act | html | `data/legal-sources/library/amendments/16-1969-land-development-amendment.pdf` | `data/legal-sources/library/amendments/html/16-1969-land-development-amendment.html` | amend 2; substitute 8; substitute 10, 11; repeal 12; substitute 13; amend 17; insert 19... |
+| No. 43 of 1973 | Law | html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/43-1973-sale-of-state-lands-special-provisions-law.html` (title does not match this statute; check it) | repeal; amend |
+| No. 25 of 1978 | Law | html+marker | not held: not in the Act archive | not published as HTML | not read |
+| No. 61 of 1980 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/61-1980-peoples-bank-act-amendment.pdf` | `data/legal-sources/library/amendments/html/61-1980-peoples-bank-amendment.html` | insert 42A |
+| No. 32 of 1986 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/32-1986-peoples-bank-act-amendment.pdf` | `data/legal-sources/library/amendments/html/32-1986-peoples-bank-amendment.html` | substitute 4, 5; substitute 29; insert 29A, 29; repeal 30; amend 48 |
+| No. 16 of 2019 | - | curriculum+marker | `data/legal-sources/library/amendments/incoming/16-2019-peoples-bank-act-amendment.pdf` | not published as HTML | not read |
 
 ### Registration of Old Deeds and Instruments Ordinance
 
-**No. 35 of 1947** · commenced 1947-07-02 · curriculum category 3 · SRC077 · **finalized** · **sections not extracted**
+**No. 35 of 1947** · commenced 1947-07-02 · curriculum category 3 · SRC077 · **finalized**
 
 Topics: Registration of Documents, Examination of Title, Drafting of Deeds, Other Related Statutory Laws
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 12 in the index (headings from finalized 12)
 
 Parsed from the HTML edition: 12 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
@@ -1441,18 +1471,17 @@ Files:
 
 Amendments (1 known, 0 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 13 of 1867 | Ordinance | html | not held: not in the Act archive | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 13 of 1867 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
 
 ### State Lands (Claims) Ordinance
 
-**No. 21 of 1931** · curriculum category 3 · SRC057 · **finalized** · **sections not extracted**
+**No. 21 of 1931** · curriculum category 3 · SRC057 · **finalized**
 
 Topics: State Lands
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 7 in the index (headings from finalized 7)
 
 Parsed from the HTML edition: 7 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
@@ -1493,11 +1522,11 @@ Files:
 
 Amendments (3 known, 0 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 8 of 1847 | Ordinance | html | not held: not in the Act archive | not published as HTML |
-| No. 8 of 1854 | Act | html | not held: not in the Act archive | not published as HTML |
-| No. 22 of 1931 | Ordinance | html | not held: not in the Act archive | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 8 of 1847 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
+| No. 8 of 1854 | Act | html | not held: not in the Act archive | not published as HTML | not read |
+| No. 22 of 1931 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
 
 ### State Lands Ordinance
 
@@ -1521,10 +1550,10 @@ Files:
 
 Amendments (2 known, 0 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 9 of 1947 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 13 of 1949 | Ordinance | chain+curriculum+html | not held: not in the Act archive | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 9 of 1947 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 13 of 1949 | Ordinance | chain+curriculum+html | not held: not in the Act archive | not published as HTML | not read |
 
 ### State Mortgage and Investment Bank Law
 
@@ -1536,7 +1565,7 @@ Sections: 69 in the index (headings from legacy 69)
 
 Parsed from the HTML edition: 88 sections, 12 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 7 parts, 2 crossheadings, 88 sections, 99 subsections, 8 definitions, 99 paragraphs, 13 subparagraphs.
+Canonical structure: 7 parts, 2 crossheadings, 88 sections, 99 subsections, 8 definitions, 99 paragraphs, 14 subparagraphs.
 86 cross-references.
 Tree: `data/processed/canonical-statutes/SRC074-13-1975.json`
 
@@ -1548,15 +1577,15 @@ Files:
 
 Amendments (3 known, 3 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 62 of 1981 | Law | html | `data/legal-sources/library/amendments/62-1981-state-mortgage-and-investment-bank-amendment.pdf` | `data/legal-sources/library/amendments/html/62-1981-state-mortgage-and-investment-bank-amendment.html` |
-| No. 29 of 1984 | Law | html | `data/legal-sources/library/amendments/29-1984-state-mortgage-and-investment-bank-amendment.pdf` | `data/legal-sources/library/amendments/html/29-1984-state-mortgage-and-investment-bank-amendment.html` |
-| No. 10 of 1994 | Law | html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/10-1994-state-mortgage-and-investment-bank-implementation.html` |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 62 of 1981 | Law | html | `data/legal-sources/library/amendments/62-1981-state-mortgage-and-investment-bank-amendment.pdf` | `data/legal-sources/library/amendments/html/62-1981-state-mortgage-and-investment-bank-amendment.html` | amend 31; insert 50A; amend 85 |
+| No. 29 of 1984 | Law | html | `data/legal-sources/library/amendments/29-1984-state-mortgage-and-investment-bank-amendment.pdf` | `data/legal-sources/library/amendments/html/29-1984-state-mortgage-and-investment-bank-amendment.html` | amend 7; amend 31; amend 37; amend 59 |
+| No. 10 of 1994 | Law | html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/10-1994-state-mortgage-and-investment-bank-implementation.html` | amend 20; amend 28; amend 31; insert 31, 31A; amend 32; amend 66; amend 74 |
 
 ### Survey Act
 
-**No. 17 of 2002** · commenced 2002-10-04 · curriculum category 3 · SRC043
+**No. 17 of 2002** · commenced 2002-10-04 · curriculum category 3 · SRC043 · **finalized**
 
 Topics: Examination of Title
 
@@ -1567,6 +1596,11 @@ Parsed from the HTML edition: 67 sections, 0 carrying an amendment marker. Not y
 Canonical structure: 2 parts, 67 sections, 117 subsections, 11 definitions, 101 paragraphs, 32 subparagraphs.
 62 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC043-17-2002.json`
+
+Finalized: `data/legal-sources/library/finalized/17-2002-survey-act/17-2002-survey-act.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1591,14 +1625,14 @@ Files:
 
 Amendments (6 known, 1 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 8 of 1897 | Ordinance | chain | not held: not in the Act archive | not published as HTML |
-| No. 10 of 1908 | Ordinance | chain | not held: not in the Act archive | not published as HTML |
-| No. 26 of 1909 | Ordinance | chain | not held: not in the Act archive | not published as HTML |
-| No. 28 of 1916 | Ordinance | chain | not held: not in the Act archive | not published as HTML |
-| No. 20 of 1930 | Ordinance | chain | not held: not in the Act archive | not published as HTML |
-| No. 28 of 1950 | Act | chain | `data/legal-sources/library/amendments/28-1950-surveyers-amendment.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 8 of 1897 | Ordinance | chain | not held: not in the Act archive | not published as HTML | not read |
+| No. 10 of 1908 | Ordinance | chain | not held: not in the Act archive | not published as HTML | not read |
+| No. 26 of 1909 | Ordinance | chain | not held: not in the Act archive | not published as HTML | not read |
+| No. 28 of 1916 | Ordinance | chain | not held: not in the Act archive | not published as HTML | not read |
+| No. 20 of 1930 | Ordinance | chain | not held: not in the Act archive | not published as HTML | not read |
+| No. 28 of 1950 | Act | chain | `data/legal-sources/library/amendments/28-1950-surveyers-amendment.pdf` | not published as HTML | not read |
 
 ### Town and Country Planning Ordinance
 
@@ -1610,8 +1644,8 @@ Sections: 77 in the index (headings from legacy 77)
 
 Parsed from the HTML edition: 95 sections, 16 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 8 parts, 95 sections, 145 subsections, 18 definitions, 179 paragraphs, 23 subparagraphs.
-109 cross-references; 2 schedules referenced (bodies not published).
+Canonical structure: 8 parts, 95 sections, 145 subsections, 18 definitions, 209 paragraphs, 27 subparagraphs.
+107 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC041-13-1946.json`
 
 Files:
@@ -1622,13 +1656,13 @@ Files:
 
 Amendments (5 known, 3 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 9 of 1950 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 29 of 1953 | Act | chain+html | `data/legal-sources/library/amendments/29-1953-assignment-of-ministers-functions-consequential-provisions.pdf` | not published as HTML |
-| No. 10 of 1955 | Act | chain+html | not held: archive copy is a different Act | not published as HTML |
-| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML |
-| No. 49 of 2000 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/49-2000-town-and-country-planning-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/49-2000-town-and-country-planning-amendment.html` |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 9 of 1950 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 29 of 1953 | Act | chain+html | `data/legal-sources/library/amendments/29-1953-assignment-of-ministers-functions-consequential-provisions.pdf` | not published as HTML | not read |
+| No. 10 of 1955 | Act | chain+html | not held: archive copy is a different Act | not published as HTML | not read |
+| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML | not read |
+| No. 49 of 2000 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/49-2000-town-and-country-planning-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/49-2000-town-and-country-planning-amendment.html` | substitute; substitute 2, 3, 4; insert 4A; insert 5A, 5B, 5C, 5D, 5E; amend 12; amend 2... |
 
 ### Trusts Ordinance
 
@@ -1651,14 +1685,14 @@ Files:
 
 Amendments (6 known, 4 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 4 of 1918 | Ordinance | html | not held: not in the Act archive | not published as HTML |
-| No. 1 of 1934 | Ordinance | html | not held: not in the Act archive | not published as HTML |
-| No. 7 of 1968 | Act | html+marker | `data/legal-sources/library/amendments/7-1968-trusts-amendment.pdf` | `data/legal-sources/library/amendments/html/7-1968-trusts-amendment.html` |
-| No. 30 of 1971 | Act | html+marker | `data/legal-sources/library/amendments/30-1971-national-savings-banks.pdf` | `data/legal-sources/library/amendments/html/30-1971-national-savings-bank.html` (title does not match this statute; check it) |
-| No. 17 of 2002 | - | curriculum | `data/legal-sources/library/amendments/17-2002-survey.pdf` | `data/legal-sources/library/amendments/html/17-2002-survey-act.html` (title does not match this statute; check it) |
-| No. 6 of 2018 | - | curriculum+marker | `data/legal-sources/library/amendments/6-2018-trusts-amendment-act.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 4 of 1918 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
+| No. 1 of 1934 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
+| No. 7 of 1968 | Act | html+marker | `data/legal-sources/library/amendments/7-1968-trusts-amendment.pdf` | `data/legal-sources/library/amendments/html/7-1968-trusts-amendment.html` | amend 21 |
+| No. 30 of 1971 | Act | html+marker | `data/legal-sources/library/amendments/30-1971-national-savings-banks.pdf` | `data/legal-sources/library/amendments/html/30-1971-national-savings-bank.html` (title does not match this statute; check it) | repeal; amend 83; amend 21 |
+| No. 17 of 2002 | - | curriculum | `data/legal-sources/library/amendments/17-2002-survey.pdf` | `data/legal-sources/library/amendments/html/17-2002-survey-act.html` (title does not match this statute; check it) | not read |
+| No. 6 of 2018 | - | curriculum+marker | `data/legal-sources/library/amendments/6-2018-trusts-amendment-act.pdf` | not published as HTML | not read |
 
 ### Urban Councils Ordinance
 
@@ -1670,7 +1704,7 @@ Sections: 256 in the index (headings from legacy 256)
 
 Parsed from the HTML edition: 263 sections, 80 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 10 parts, 28 crossheadings, 263 sections, 347 subsections, 27 definitions, 301 paragraphs, 30 subparagraphs.
+Canonical structure: 10 parts, 28 crossheadings, 263 sections, 347 subsections, 27 definitions, 302 paragraphs, 31 subparagraphs.
 263 cross-references; 6 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC042-1-1939.json`
 
@@ -1683,53 +1717,53 @@ Files:
 
 Amendments (48 known, 24 held):
 
-| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |
-| --- | --- | --- | --- | --- |
-| No. 61 of 1939 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 14 of 1940 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 3 of 1942 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 16 of 1942 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 51 of 1942 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 5 of 1943 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 37 of 1943 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 36 of 1944 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 37 of 1945 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 31 of 1946 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 37 of 1946 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 53 of 1946 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 57 of 1946 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 9 of 1950 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 12 of 1951 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 39 of 1951 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 8 of 1952 | Act | chain+html | `data/legal-sources/library/amendments/8-1952-local-authorities-enlargement-of-powers.pdf` | not published as HTML |
-| No. 25 of 1952 | Act | chain+html | `data/legal-sources/library/amendments/25-1952-fisheries-amendment.pdf` | not published as HTML |
-| No. 38 of 1953 | Act | chain+html | `data/legal-sources/library/amendments/38-1953-local-authorities-term-of-office.pdf` | not published as HTML |
-| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML |
-| No. 2 of 1957 | Act | chain+html | `data/legal-sources/library/amendments/2-1957-local-authorities-special-provisions.pdf` | not published as HTML |
-| No. 14 of 1958 | Act | chain+html | `data/legal-sources/library/amendments/14-1958-enlargement-of-powers-urban-councils-town-councils-and-village-committees.pdf` | not published as HTML |
-| No. 7 of 1959 | Act | chain+html | `data/legal-sources/library/amendments/7-1959-local-authorities-special-provisions.pdf` | not published as HTML |
-| No. 1 of 1961 | Act | chain+html | not held: not in the Act archive | not published as HTML |
-| No. 9 of 1961 | Act | html | `data/legal-sources/library/amendments/9-1961-local-authorities-stamp-duties-on-proctors-annual-certificates.pdf` | not published as HTML |
-| No. 39 of 1961 | Act | html | `data/legal-sources/library/amendments/39-1961-local-authorities-term-of-office.pdf` | not published as HTML |
-| No. 2 of 1967 | Act | html | `data/legal-sources/library/amendments/2-1967-local-authorities-terms-of-office.pdf` | not published as HTML |
-| No. 42 of 1968 | Act | html | `data/legal-sources/library/amendments/42-1968-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/42-1968-local-authorities-special-provisions.html` (title does not match this statute; check it) |
-| No. 4 of 1969 | Act | html | `data/legal-sources/library/amendments/4-1969-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/4-1969-local-authorities-special-provisions.html` (title does not match this statute; check it) |
-| No. 48 of 1971 | Act | html | `data/legal-sources/library/amendments/48-1971-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/48-1971-local-authorities-special-provisions.html` (title does not match this statute; check it) |
-| No. 4 of 1975 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/4-1975-naming-of-streets-and-the-control-of-the-erection-of-monuments-law.html` (title does not match this statute; check it) |
-| No. 18 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/18-1977-municipal-councils-and-urban-councils-amendment-law.html` |
-| No. 24 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/24-1977-local-authorities-elections-special-provisions-law.html` (title does not match this statute; check it) |
-| No. 13 of 1979 | Act | html | not held: no source located | not looked up |
-| No. 42 of 1979 | Act | html | not held: no source located | not looked up |
-| No. 57 of 1979 | Act | html | not held: no source located | not looked up |
-| No. 10 of 1981 | Act | html | `data/legal-sources/library/amendments/10-1981-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/10-1981-municipal-councils-and-urban-councils-amendment.html` |
-| No. 61 of 1981 | Act | html | not held: no source located | not looked up |
-| No. 5 of 1983 | Act | html | `data/legal-sources/library/amendments/5-1983-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1983-municipal-councils-and-urban-councils-amendment.html` |
-| No. 13 of 1983 | Act | html | not held: no source located | not looked up |
-| No. 31 of 1983 | Act | html | not held: no source located | not looked up |
-| No. 48 of 1983 | Act | html | not held: no source located | not looked up |
-| No. 48 of 1984 | Act | curriculum+html | `data/legal-sources/library/amendments/48-1984-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/48-1984-urban-councils-amendment.html` |
-| No. 20 of 1985 | Act | html | `data/legal-sources/library/amendments/20-1985-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1985-municipal-councils-and-urban-councils-amendment.html` |
-| No. 39 of 1986 | Act | html | `data/legal-sources/library/amendments/39-1986-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/39-1986-municipal-councils-and-urban-councils-amendment.html` |
-| No. 18 of 1987 | Act | curriculum+html | `data/legal-sources/library/amendments/18-1987-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/18-1987-urban-councils-amendment.html` |
-| No. 35 of 2014 | - | curriculum | `data/legal-sources/library/amendments/35-2014-urban-councils-amendment.pdf` | not published as HTML |
-| No. 21 of 2017 | - | curriculum | `data/legal-sources/library/amendments/21-2017-urban-councils-amendment.pdf` | not published as HTML |
+| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
+| --- | --- | --- | --- | --- | --- |
+| No. 61 of 1939 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 14 of 1940 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 3 of 1942 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 16 of 1942 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 51 of 1942 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 5 of 1943 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 37 of 1943 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 36 of 1944 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 37 of 1945 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 31 of 1946 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 37 of 1946 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 53 of 1946 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 57 of 1946 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 9 of 1950 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 12 of 1951 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 39 of 1951 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 8 of 1952 | Act | chain+html | `data/legal-sources/library/amendments/8-1952-local-authorities-enlargement-of-powers.pdf` | not published as HTML | not read |
+| No. 25 of 1952 | Act | chain+html | `data/legal-sources/library/amendments/25-1952-fisheries-amendment.pdf` | not published as HTML | not read |
+| No. 38 of 1953 | Act | chain+html | `data/legal-sources/library/amendments/38-1953-local-authorities-term-of-office.pdf` | not published as HTML | not read |
+| No. 22 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/22-1955-administrative-districts.pdf` | not published as HTML | not read |
+| No. 2 of 1957 | Act | chain+html | `data/legal-sources/library/amendments/2-1957-local-authorities-special-provisions.pdf` | not published as HTML | not read |
+| No. 14 of 1958 | Act | chain+html | `data/legal-sources/library/amendments/14-1958-enlargement-of-powers-urban-councils-town-councils-and-village-committees.pdf` | not published as HTML | not read |
+| No. 7 of 1959 | Act | chain+html | `data/legal-sources/library/amendments/7-1959-local-authorities-special-provisions.pdf` | not published as HTML | not read |
+| No. 1 of 1961 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 9 of 1961 | Act | html | `data/legal-sources/library/amendments/9-1961-local-authorities-stamp-duties-on-proctors-annual-certificates.pdf` | not published as HTML | not read |
+| No. 39 of 1961 | Act | html | `data/legal-sources/library/amendments/39-1961-local-authorities-term-of-office.pdf` | not published as HTML | not read |
+| No. 2 of 1967 | Act | html | `data/legal-sources/library/amendments/2-1967-local-authorities-terms-of-office.pdf` | not published as HTML | not read |
+| No. 42 of 1968 | Act | html | `data/legal-sources/library/amendments/42-1968-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/42-1968-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend 170; amend 27; amend 184; amend 26; amend 183 |
+| No. 4 of 1969 | Act | html | `data/legal-sources/library/amendments/4-1969-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/4-1969-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend |
+| No. 48 of 1971 | Act | html | `data/legal-sources/library/amendments/48-1971-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/48-1971-local-authorities-special-provisions.html` (title does not match this statute; check it) | insert 238, 235, 230; amend 37; insert 184, 9; amend 183; amend 54; substitute 155; ame... |
+| No. 4 of 1975 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/4-1975-naming-of-streets-and-the-control-of-the-erection-of-monuments-law.html` (title does not match this statute; check it) | amend 71; amend 55A; amend 57A; insert 57A |
+| No. 18 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/18-1977-municipal-councils-and-urban-councils-amendment-law.html` | amend 272; amend 157 |
+| No. 24 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/24-1977-local-authorities-elections-special-provisions-law.html` (title does not match this statute; check it) | repeal_and_substitute 2; amend 4; amend 5; amend 6; amend 7; substitute 8; amend 9; ins... |
+| No. 13 of 1979 | Act | html | not held: no source located | not looked up | not read |
+| No. 42 of 1979 | Act | html | not held: no source located | not looked up | not read |
+| No. 57 of 1979 | Act | html | not held: no source located | not looked up | not read |
+| No. 10 of 1981 | Act | html | `data/legal-sources/library/amendments/10-1981-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/10-1981-municipal-councils-and-urban-councils-amendment.html` | not read |
+| No. 61 of 1981 | Act | html | not held: no source located | not looked up | not read |
+| No. 5 of 1983 | Act | html | `data/legal-sources/library/amendments/5-1983-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1983-municipal-councils-and-urban-councils-amendment.html` | amend 272; amend 157 |
+| No. 13 of 1983 | Act | html | not held: no source located | not looked up | not read |
+| No. 31 of 1983 | Act | html | not held: no source located | not looked up | not read |
+| No. 48 of 1983 | Act | html | not held: no source located | not looked up | not read |
+| No. 48 of 1984 | Act | curriculum+html | `data/legal-sources/library/amendments/48-1984-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/48-1984-urban-councils-amendment.html` | amend 36; amend 38; amend 39; amend 40; amend 72; amend 73; amend 80; amend 81; amend 8... |
+| No. 20 of 1985 | Act | html | `data/legal-sources/library/amendments/20-1985-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1985-municipal-councils-and-urban-councils-amendment.html` | amend 230; amend 247A; insert 247BB; amend 247C; amend 247D; amend 160; amend 164; inse... |
+| No. 39 of 1986 | Act | html | `data/legal-sources/library/amendments/39-1986-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/39-1986-municipal-councils-and-urban-councils-amendment.html` | amend 10; amend 40; amend 73; amend 74; amend 78; amend 79; substitute 81; amend 83; am... |
+| No. 18 of 1987 | Act | curriculum+html | `data/legal-sources/library/amendments/18-1987-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/18-1987-urban-councils-amendment.html` | amend 36; amend 157; amend 159 |
+| No. 35 of 2014 | - | curriculum | `data/legal-sources/library/amendments/35-2014-urban-councils-amendment.pdf` | not published as HTML | not read |
+| No. 21 of 2017 | - | curriculum | `data/legal-sources/library/amendments/21-2017-urban-councils-amendment.pdf` | not published as HTML | not read |

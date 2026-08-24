@@ -47,6 +47,7 @@ HTML_SECTIONS = REPO_ROOT / "data/processed/lankalaw-html-sections.json"
 CANONICAL_DIR = REPO_ROOT / "data/processed/canonical-statutes"
 AMENDMENT_HTML = REPO_ROOT / "data/processed/lankalaw-amendment-downloads.csv"
 FINALIZED_DIR = REPO_ROOT / "data/legal-sources/library/finalized"
+CANONICAL_AMENDMENTS = REPO_ROOT / "data/processed/canonical-amendments"
 ACTIONS = REPO_ROOT / "data/processed/actions.csv"
 DOWNLOADS = REPO_ROOT / "data/processed/amendment-chain-downloads.csv"
 COMMENCEMENT = REPO_ROOT / "data/processed/statute_commencement.csv"
@@ -129,6 +130,39 @@ def chapter_numbers(registry: list[dict[str, str]]) -> dict[str, str]:
     return found
 
 
+def amendment_operations() -> dict[tuple[int, int], str]:
+    """What each amending Act does, read from its own text.
+
+    Every amendment event in the corpus carries `operation: unknown`, because the
+    consolidated marker names the amending provision without saying what it did.
+    The amending Act's own sections say it outright.
+    """
+    summaries: dict[tuple[int, int], str] = {}
+    if not CANONICAL_AMENDMENTS.exists():
+        return summaries
+    for file in sorted(CANONICAL_AMENDMENTS.glob("*.json")):
+        document = json.loads(file.read_text(encoding="utf-8"))
+        parts = []
+        for instruction in document.get("amendment_instructions", []):
+            # Two shapes are in the directory: `target_sections` from the batch
+            # parser, and a hand-curated one carrying a single `target_section`
+            # with an `operations` list of limbs. Read either.
+            targets = list(instruction.get("target_sections") or [])
+            if not targets and instruction.get("target_section"):
+                targets = [str(instruction["target_section"])]
+            operation = instruction.get("operation", "")
+            if operation in ("", "unknown") and not targets:
+                continue
+            parts.append(f"{operation} {', '.join(targets)}".strip())
+        if parts:
+            citation = document["citation"]
+            shown = "; ".join(dict.fromkeys(parts))
+            if len(shown) > 90:
+                shown = shown[:87] + "..."
+            summaries[(citation["number"], citation["year"])] = shown
+    return summaries
+
+
 def finalized_files() -> dict[tuple[int, int], str]:
     """Statutes signed off into `library/finalized`, keyed (number, year).
 
@@ -208,6 +242,7 @@ def main() -> int:
     caps = chapter_numbers(list(registry.values()))
     structure = canonical_structure()
     finalized = finalized_files()
+    operations = amendment_operations()
     html_outcomes = {
         (int(r["instrument_no"]), int(r["instrument_year"])): r
         for r in (read_csv(AMENDMENT_HTML) if AMENDMENT_HTML.exists() else [])
@@ -254,6 +289,7 @@ def main() -> int:
     body = render(
         registry, index, amendments, held, downloads, commencement, topic_names,
         caps, extra_titles, curriculum, html_sections, structure, html_outcomes, finalized,
+        operations,
     )
 
     if args.check:
@@ -331,6 +367,7 @@ def curriculum_categories() -> dict[str, str]:
 def render(
     registry, index, amendments, held, downloads, commencement, topic_names,
     caps, extra_titles, curriculum, html_sections, structure, html_outcomes, finalized,
+    operations,
 ) -> str:
     # Scope is the curriculum's own statute list, the same set as
     # PRIMARY-STATUES.md. Everything else the corpus happens to hold is out.
@@ -428,7 +465,7 @@ def render(
             lines += statute_block(
                 source_id, registry.get(source_id, {}), index, amendments, held,
                 downloads, commencement, topic_names, caps, curriculum, extra_titles,
-                html_sections, structure, html_outcomes, finalized,
+                html_sections, structure, html_outcomes, finalized, operations,
             )
 
     return "\n".join(lines).rstrip() + "\n"
@@ -451,6 +488,7 @@ def cite(row: dict[str, str]) -> str:
 def statute_block(
     source_id, row, index, amendments, held, downloads, commencement, topic_names,
     caps, curriculum, extra_titles, html_sections, structure, html_outcomes, finalized,
+    operations,
 ) -> list[str]:
     title = row.get("official_title") or extra_titles.get(source_id, source_id)
     entries = index.get(source_id, [])
@@ -547,8 +585,8 @@ def statute_block(
     lines += [
         f"Amendments ({len(known)} known, {sum(1 for k in known if k in held)} held):",
         "",
-        "| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) |",
-        "| --- | --- | --- | --- | --- |",
+        "| Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |",
+        "| --- | --- | --- | --- | --- | --- |",
     ]
     for key in sorted(known, key=lambda k: (k[1], k[0])):
         number, year = key
@@ -567,7 +605,10 @@ def statute_block(
         else:
             outcome = html_outcomes.get(key, {}).get("outcome", "")
             html_cell = "not published as HTML" if outcome else "not looked up"
-        lines.append(f"| No. {number} of {year} | {kind} | {sources} | {pdf} | {html_cell} |")
+        does = operations.get(key, "not read")
+        lines.append(
+            f"| No. {number} of {year} | {kind} | {sources} | {pdf} | {html_cell} | {does} |"
+        )
     lines.append("")
     return lines
 
