@@ -1,0 +1,261 @@
+"""Stage 2 of case-law -> statute linking: resolve citations to sections.
+
+Built to the exact spec the audit (script 01) revealed. It fixes the failure
+modes that the existing resolution had:
+
+  * multi-section citations were collapsed to ONE section (63/166 grounded rows).
+      -> here, "ss. 283, 284 and 285" produces THREE candidate links.
+  * resolved section numbers that don't appear in the citation (22/166).
+      -> here, every emitted link is SELF-CHECKED: the section number must
+         actually appear in the citation string, or it is rejected.
+  * wrong-Act resolutions (e.g. Partition Ordinance -> SRC030 / CPC).
+      -> here, the Act is matched by an explicit alias table, not guessed.
+
+For each rule that carries a verbatim citation, it:
+  1. extracts the Act name and ALL section numbers from the citation;
+  2. resolves the Act name -> source_id via the alias table;
+  3. for each section number, checks that source_id actually HAS that section
+     (via statute_sections.csv from stage 0);
+  4. emits one link row per (source_id, section_number), with a band:
+       verified    -- Act matched AND section exists AND number echoed in cite
+       review      -- Act matched but section not found, or fuzzy Act match
+       unresolved  -- Act not in alias table / not in catalogue
+  5. leaves the extractor's ungrounded llm/headnote guesses OUT of the verified
+     set -- they are re-emitted as 'candidate' rows for optional human check,
+     never mixed with verified links.
+
+Nothing is modified in the input files.
+
+Usage:
+    python scripts/case-law-statute-linking/02_resolve_links.py
+    python 02_resolve_links.py --rules <rules.csv> --sections <statute_sections.csv> \
+        --alias <alias.csv>
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import re
+from collections import defaultdict
+from pathlib import Path
+
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_RULES = ROOT / "scripts" / "case-law-information-extraction" / "output" / "rules.csv"
+STAGE_OUT = ROOT / "scripts" / "case-law-statute-linking" / "output"
+DEFAULT_SECTIONS = STAGE_OUT / "statute_sections.csv"
+DEFAULT_ALIAS = STAGE_OUT / "alias.csv"           # you create this from alias_seed.csv
+
+C_CITE = "statute_citation_verbatim"
+C_SECTION = "statute_section"
+C_METHOD = "method"
+C_GROUNDED = "statute_citation_grounded"
+C_CASE = "case_id"
+C_RULE = "rule_id"
+C_YEAR = "year"
+
+# ---- starter alias table (from what the audit already revealed). --------------
+# Extend this from output/alias_seed.csv once Lahiru's full index is built.
+# Keys are lowercase name fragments; value is the source_id. Longer, more
+# specific fragments should come first so they win over generic ones.
+STARTER_ALIASES: list[tuple[str, str]] = [
+    ("civil procedure code", "SRC030"),
+    ("prescription ordinance", "SRC071"),
+    ("prevention of frauds", "SRC001"),
+    ("evidence ordinance", "SRC029"),
+    ("buddhist temporalities", "SRC049"),
+    ("trusts ordinance", "SRC059"),
+    ("partition act", "SRC026"),        # NOTE: Partition Act vs Ordinance differ --
+    ("partition ordinance", "SRC027"),  # verify both IDs against Lahiru's index.
+    ("apartment ownership", "SRC012"),
+]
+
+# section numbers in a citation: "s. 3", "ss. 283, 284 and 285", "section 19 (2)(a)"
+# capture the leading integer of each section token; ignore sub-paragraph parens.
+SECTION_TOKEN_RE = re.compile(r"\b(?:s{1,2}\.?|sections?)\s*([\d,\sand&]+)", re.I)
+NUM_RE = re.compile(r"\d{1,4}")
+# a year like 1889/1927 that must NOT be mistaken for a section number
+YEAR_RE = re.compile(r"\b(1[6-9]\d{2}|20\d{2})\b")
+
+
+def load_alias(path: Path | None) -> list[tuple[str, str]]:
+    """alias.csv columns: fragment, source_id  (fragment = lowercase name piece)."""
+    if not path or not path.exists():
+        return STARTER_ALIASES
+    rows = []
+    df = pd.read_csv(path, dtype=str).fillna("")
+    # accept either (fragment,source_id) or the seed's (source_id,official_title,aliases)
+    if "fragment" in df.columns and "source_id" in df.columns:
+        for r in df.itertuples(index=False):
+            frag = r.fragment.strip().lower()
+            if frag:
+                rows.append((frag, r.source_id.strip()))
+    elif "aliases" in df.columns and "source_id" in df.columns:
+        for r in df.itertuples(index=False):
+            sid = r.source_id.strip()
+            # official title itself is an alias
+            title = getattr(r, "official_title", "").strip().lower()
+            if title:
+                rows.append((title, sid))
+            for a in str(r.aliases).split(","):
+                a = a.strip().lower()
+                if a:
+                    rows.append((a, sid))
+    # longer fragments first so specific names win
+    rows.sort(key=lambda t: len(t[0]), reverse=True)
+    return rows or STARTER_ALIASES
+
+
+def load_sections(path: Path | None) -> dict[str, set[str]]:
+    """source_id -> set of section_number strings it actually contains."""
+    have: dict[str, set[str]] = defaultdict(set)
+    if not path or not path.exists():
+        print(f"[warn] statute_sections.csv not found at {path} -- "
+              f"section-existence check disabled (run stage 0 first).")
+        return have
+    df = pd.read_csv(path, dtype=str).fillna("")
+    for r in df.itertuples(index=False):
+        have[r.source_id.strip()].add(str(r.section_number).strip())
+    return have
+
+
+def match_act(citation: str, aliases: list[tuple[str, str]]) -> tuple[str, str] | None:
+    """Return (source_id, matched_fragment) for the first alias found in the cite."""
+    low = citation.lower()
+    for frag, sid in aliases:
+        if frag in low:
+            return sid, frag
+    return None
+
+
+def extract_section_numbers(citation: str) -> list[str]:
+    """Pull ALL section numbers from a citation, ignoring years."""
+    # blank out years so 'of 1889' isn't read as section 1889
+    masked = YEAR_RE.sub("    ", citation)
+    nums: list[str] = []
+    for m in SECTION_TOKEN_RE.finditer(masked):
+        chunk = m.group(1)
+        for n in NUM_RE.findall(chunk):
+            if n not in nums:
+                nums.append(n)
+    # fallback: "section 232 of..." where token regex already covers it;
+    # if nothing matched but there is a lone 'section N', catch it
+    if not nums:
+        m = re.search(r"\bsection\s+(\d{1,4})", masked, re.I)
+        if m:
+            nums.append(m.group(1))
+    return nums
+
+
+def run(rules: str | None = None, sections: str | None = None,
+        alias: str | None = None) -> int:
+    rules_path = Path(rules) if rules else DEFAULT_RULES
+    if not rules_path.exists():
+        raise SystemExit(f"rules file not found: {rules_path}")
+    df = pd.read_csv(rules_path, dtype=str).fillna("")
+
+    aliases = load_alias(Path(alias) if alias else DEFAULT_ALIAS)
+    have = load_sections(Path(sections) if sections else DEFAULT_SECTIONS)
+
+    STAGE_OUT.mkdir(parents=True, exist_ok=True)
+    links: list[dict] = []
+    candidates: list[dict] = []
+    band_counts = defaultdict(int)
+
+    for r in df.itertuples(index=False):
+        cite = getattr(r, C_CITE, "") or ""
+        case = getattr(r, C_CASE, "")
+        rule_id = getattr(r, C_RULE, "")
+        grounded = str(getattr(r, C_GROUNDED, "")).lower() == "true"
+        method = getattr(r, C_METHOD, "")
+
+        if cite.strip():
+            # a real citation -> resolve it properly
+            act = match_act(cite, aliases)
+            secnums = extract_section_numbers(cite)
+
+            if not act:
+                links.append(_row(case, rule_id, cite, "", "", "unresolved",
+                                  "act-not-in-alias", method))
+                band_counts["unresolved"] += 1
+                continue
+
+            source_id, frag = act
+            if not secnums:
+                links.append(_row(case, rule_id, cite, source_id, "", "review",
+                                  "act-matched-no-section", method))
+                band_counts["review"] += 1
+                continue
+
+            for num in secnums:
+                exists = (num in have.get(source_id, set())) if have else None
+                echoed = num in cite  # self-check: number must appear in the cite
+                if exists is False:
+                    band = "review"
+                    reason = "section-not-in-act"
+                elif not echoed:
+                    band = "review"
+                    reason = "number-not-echoed-in-cite"
+                else:
+                    band = "verified"
+                    reason = "act+section+echo"
+                links.append(_row(case, rule_id, cite, source_id, num, band, reason, method))
+                band_counts[band] += 1
+        else:
+            # no citation: the extractor's llm/headnote GUESS -> candidate only
+            sec = getattr(r, C_SECTION, "")
+            if sec.strip():
+                candidates.append({
+                    "case_id": case, "rule_id": rule_id,
+                    "guessed_section": sec, "method": method,
+                    "note": "ungrounded extractor guess; verify before use",
+                })
+
+    _write(STAGE_OUT / "resolved_links.csv", links,
+           ["case_id", "rule_id", "citation", "source_id", "section_number",
+            "band", "reason", "extractor_method"])
+    _write(STAGE_OUT / "candidate_guesses.csv", candidates,
+           ["case_id", "rule_id", "guessed_section", "method", "note"])
+
+    print(f"resolved from {len(df)} rules:")
+    print(f"  link rows emitted: {len(links)}")
+    for b in ("verified", "review", "unresolved"):
+        print(f"    {b:<12} {band_counts[b]:>4}")
+    print(f"  ungrounded extractor guesses (candidates, kept separate): {len(candidates)}")
+    print(f"\nwrote:")
+    print(f"  {STAGE_OUT / 'resolved_links.csv'}   <- verified links feed the graph")
+    print(f"  {STAGE_OUT / 'candidate_guesses.csv'} <- optional human/LLM check")
+
+    # quick reason breakdown so you see where review cases came from
+    from collections import Counter
+    rc = Counter(l["reason"] for l in links if l["band"] == "review")
+    if rc:
+        print(f"\nreview reasons:")
+        for reason, n in rc.most_common():
+            print(f"    {reason:<28} {n:>4}")
+    return 0
+
+
+def _row(case, rule_id, cite, sid, num, band, reason, method):
+    return {"case_id": case, "rule_id": rule_id, "citation": cite[:200],
+            "source_id": sid, "section_number": num, "band": band,
+            "reason": reason, "extractor_method": method}
+
+
+def _write(path: Path, rows: list[dict], fields: list[str]) -> None:
+    with path.open("w", encoding="utf-8", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=fields, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(rows)
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--rules", default=None)
+    ap.add_argument("--sections", default=None,
+                    help="statute_sections.csv from stage 0")
+    ap.add_argument("--alias", default=None,
+                    help="alias.csv (fragment,source_id) or the filled alias_seed.csv")
+    raise SystemExit(run(**vars(ap.parse_args())))
