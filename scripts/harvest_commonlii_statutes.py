@@ -231,7 +231,14 @@ class Fetcher:
 
 H3_RE = re.compile(r"<H3>(.*?)</H3>(.*?)<BR>", re.S | re.I)
 HEADING_RE = re.compile(r"<p><b>(.*?)</b></p>", re.S | re.I)
-CELL_RE = re.compile(r"<table>(.*?)</table>", re.S | re.I)
+# CommonLII lays a section out as tables nested inside tables, one per
+# subsection and paragraph. A non-greedy `<table>(.*?)</table>` stops at the
+# first INNER close, which silently truncated most multi-subsection sections --
+# section 3 ended at "obtained by the transferor, and", losing subsections (2)
+# to (5). The open/close tags are counted instead so the whole outer table is
+# taken.
+TABLE_OPEN_RE = re.compile(r"<table\b", re.I)
+TABLE_CLOSE_RE = re.compile(r"</table\s*>", re.I)
 SECT_LINK_RE = re.compile(r'href="(s\d+[A-Za-z]?\.html)"', re.I)
 LONGTITLE_RE = re.compile(r'href="(longtitle\.html)"', re.I)
 
@@ -241,6 +248,26 @@ def strip_tags(fragment: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(text)).strip()
 
 
+def outer_table(fragment: str) -> str | None:
+    """The first table in `fragment`, up to its own matching close tag."""
+    start = TABLE_OPEN_RE.search(fragment)
+    if not start:
+        return None
+    events = sorted(
+        [(m.start(), 1, m.end()) for m in TABLE_OPEN_RE.finditer(fragment, start.start())]
+        + [(m.start(), -1, m.end()) for m in TABLE_CLOSE_RE.finditer(fragment, start.start())]
+    )
+    depth = 0
+    for _, delta, end in events:
+        depth += delta
+        if depth == 0:
+            return fragment[start.start():end]
+    # CommonLII's markup is not always balanced. Taking everything to the last
+    # close is still far more of the section than stopping at the first one.
+    closes = list(TABLE_CLOSE_RE.finditer(fragment, start.start()))
+    return fragment[start.start():closes[-1].end()] if closes else fragment[start.start():]
+
+
 def parse_section(page: str) -> dict | None:
     """Pull one section's title, marginal note and body out of a section page."""
     m = H3_RE.search(page)
@@ -248,13 +275,11 @@ def parse_section(page: str) -> dict | None:
         return None
     title, rest = m.group(1), m.group(2)
     heading = HEADING_RE.search(rest)
-    cell = CELL_RE.search(rest)
-    if cell is None:
+    body_src = outer_table(rest)
+    if body_src is None:
         # Some sections carry no table wrapper; fall back to the whole block
         # minus the marginal note rather than dropping the section silently.
         body_src = HEADING_RE.sub("", rest)
-    else:
-        body_src = cell.group(1)
     return {
         "title": strip_tags(title),
         "heading": strip_tags(heading.group(1)) if heading else "",
