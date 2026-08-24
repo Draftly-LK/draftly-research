@@ -365,7 +365,73 @@ headings, targets and metadata have been checked line by line against the print.
 Leave it `unverified` when the wording rests on a single OCR reading with no
 second source. Legal effect is never verified by any of this.
 
-## Step 7: assemble the finalized package
+## Step 7: five independent passes, run by subagents, against the source
+
+Everything up to here was done by whoever fixed the parser, and that is the
+problem. The person who wrote the fix reads the output knowing what it was
+supposed to say, so they read past what it does say. Every defect list on this
+project so far has come from someone reading the tree cold against the print.
+
+So before anything is finalized, hand the tree to readers who did not build it.
+Five rounds. Each round fans out subagents that compare the tree against the
+source and report what disagrees. You fix. Next round reads the fixed tree.
+
+Give every subagent the same three things and one narrow question:
+
+- the tree, under `data/processed/canonical-*`
+- the source it was parsed from, and the command that renders it
+  (`pdftotext -layout <pdf> -` or the OCR sidecar)
+- one dimension to check, and nothing else
+
+One dimension each is the point. A reader asked to check everything finds the
+first defect and stops. Five readers each asked for one thing return five lists.
+
+Round by round, the dimensions worth splitting across:
+
+| Lens | The question it answers |
+| --- | --- |
+| Completeness | Is every section, subsection, paragraph and definition in the print also in the tree, and nothing in the tree that is not in the print? |
+| Text fidelity | Read the last provision of the five longest sections word for word against the print. Are any words missing at a line wrap or gained from a running header? |
+| Structure | Is each node at the depth the print puts it, and does every proviso attach to what it qualifies? |
+| References | Does every cross-reference resolve? Does any internal reference point past the last section? Does section 1 reference anything it should not? |
+| Metadata and amendments | Edition, publisher, citation type, long title, preamble, dates, `source_location`. Does every inline marker resolve to an operation that the amending Act's own text agrees with? |
+
+Run them concurrently, one message, several `Agent` calls. A useful prompt shape:
+
+```text
+Read data/processed/canonical-statutes/SRC021-38-2014.json against its source.
+Render the source with:
+  pdftotext -layout data/legal-sources/library/statutes/38-2014-...-2024.pdf -
+
+Check ONLY this: <one lens from the table above>.
+
+Report every disagreement as: location in the tree, what the tree says, what the
+print says. Quote the print. If you find nothing, say so plainly. Do not fix
+anything, do not comment on other dimensions, and do not summarise the statute.
+```
+
+Two rules that decide whether this is worth running at all:
+
+Subagents report, they do not edit. A subagent that fixes what it finds gives you
+a changed tree and no record of what changed or why. Findings come back, you fix
+the cause in the parser, and the next round reads the result.
+
+Verify a finding before acting on it. A reader working from a rendered column
+layout will sometimes call a correct nesting wrong. Check the claim against the
+print yourself before changing a parser that is right. A wrong fix applied to a
+correct parser is worse than the finding it answered.
+
+Stop when two rounds in a row return nothing new. That usually happens by round
+three or four. If round five still returns findings, the statute is not ready to
+finalize, and the honest move is to record what is outstanding in the override
+file and leave `verification_status` at `unverified` rather than finalizing over
+the top of it.
+
+Keep the rounds. What each round found, and what was done about it, goes in the
+override file's `checked_against` and `quality_notes`, so the tree carries a
+record of having been read rather than an assertion that it is correct.
+
+## Step 8: assemble the finalized package
 
 ```powershell
 uv run python scripts/finalize_statute.py --source-id SRC021 `
@@ -392,7 +458,7 @@ folders are rebuilt wholesale, which is what stops a source that has been
 dropped, such as a truncated page replaced by a better one, from sitting there
 indefinitely still looking like evidence.
 
-## Step 8: write it up in the RUBRIK
+## Step 9: write it up in the RUBRIK
 
 Nothing is finished until `apps/statute-browser/RUBRIK.md` says so. The RUBRIK is
 the index of record for what is held, where it is, and how far along it is.
@@ -457,6 +523,12 @@ gather sources + chain
    record what the parser cannot fix: source errors annotated, OCR errors corrected
         |
    vet: structure, text, amendments, metadata, provenance
+        |
+   +--> 5 subagents read the tree against the source, one lens each
+   |                                |
+   |                          findings -> verify -> fix the parser
+   |                                |
+   +----- up to 5 rounds, stop after two rounds return nothing new -----+
         |
    set verification_status
         |
