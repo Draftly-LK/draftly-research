@@ -1,0 +1,56 @@
+{
+ "_note": "Hand-maintained notes on the amending Acts, keyed by instrument_id. The parser never edits the source wording; anything wrong in the print is recorded here instead, so the tree keeps saying what the Act says and the reader still learns what is off about it. Mirrors data/processed/canonical-overrides.json, which does the same for the principal statutes.",
+ "3-2017": {
+  "checked_against": "Government Printer PDF, Land (Restrictions on Alienation) (Amendment) Act, No. 3 of 2017, certified 22nd February 2017",
+  "editorial_notes": [
+   {
+    "anchor_text": "under and indenture of lease executed on or after January 8, 2017",
+    "in": "inserted section 5A, closing text",
+    "text": "The print reads 'under and indenture'. This appears to be a typographical error for 'under an indenture'. The wording is left exactly as printed; the reading is noted, not applied.",
+    "kind": "apparent error in the source"
+   }
+  ],
+  "quality_notes": [
+   "LankaLaw's HTML edition of this Act stops after section 2 behind a subscription banner and omits section 3 entirely. It must not be used as a source for this instrument."
+  ],
+  "verification_status": "unverified"
+ },
+ "21-2018": {
+  "checked_against": "Government Printer PDF, Land (Restrictions on Alienation) (Amendment) Act, No. 21 of 2018, certified 30th July 2018",
+  "quality_notes": [
+   "The Government Printer PDF is a 4-page 1-bit scan with no text layer, so this tree is parsed from an offline OCR reading. Wording has not been proof-read against the scan.",
+   "LankaLaw's HTML edition stops after section 2 behind a subscription banner, omitting section 3 (which moves section 5A's date to January 1, 2016) and section 4 (Sinhala text to prevail). It must not be used as a source for this instrument."
+  ],
+  "known_ocr_defects": [
+   {
+    "reads": "(ht)",
+    "should_read": "(h)",
+    "in": "section 2, limb (c)",
+    "effect": "the insert instruction records its target as 3(1)(ht). The new paragraph is added immediately after paragraph (h) of section 3(1)."
+   },
+   {
+    "reads": "\"()  any land",
+    "should_read": "\"(i) any land",
+    "in": "section 2, limb (c), quoted new paragraph",
+    "effect": "the letter of the paragraph being inserted is lost, so the instruction cannot name it. It is paragraph (i) of section 3(1)."
+   },
+   {
+    "reads": "cnactment\")",
+    "should_read": "enactment\")",
+    "in": "section 2, lead-in"
+   },
+   {
+    "reads": "forghe words / wofds and figures",
+    "should_read": "for the words / words and figures",
+    "in": "section 3, limb (b)"
+   },
+   {
+    "reads": "prevail in case and of inconsistency",
+    "should_read": "prevail in case of inconsistency",
+    "in": "section 4, marginal note",
+    "effect": "the note and the provision interleave in the scan; the stray 'and' belongs to the provision's 'between the Sinhala and Tamil texts'."
+   }
+  ],
+  "verification_status": "unverified"
+ }
+}
