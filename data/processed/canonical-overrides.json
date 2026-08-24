@@ -152,5 +152,174 @@
    }
   ],
   "content_completeness": "incomplete: the Schedule referenced by s.26(2)(b) has not been located"
+ },
+ "SRC043": {
+  "checked_against": "https://survey.gov.lk/sdweb/pdf/surveydocuments/Survey%20Act/Survey%20Act%20English.pdf",
+  "note": "Checked against the Government Printer edition -- the Act as published as a supplement to Part II of the Gazette of 4 October 2002, certified the same day -- which the Survey Department publishes as a PDF with a text layer. That edition is the authority for everything corrected below; the parsed LankaLaw page is not. Structure reviewed: 2 Parts, sections 1 to 67 with section 1 outside both Parts, and one Schedule referenced by section 39. Section and Part numbering agree across the two editions. The two are separate transcriptions and their wording differs in small ways throughout, so only headings damaged past reading are corrected here; what remains is an edition difference, not a parse error.",
+  "verification_status": "structurally_verified",
+  "content_completeness": "incomplete: the parsed edition omits the definition of \"Minister\", prints \"registered licensed surveyor\" inside the entry for \"registered surveyor\", and leaves one interpretation entry blank. The Schedule below was recovered from the Government Printer edition, not from the parsed page.",
+  "long_title": "AN ACT TO PROVIDE FOR THE POWERS AND FUNCTIONS OF THE SURVEYOR GENERAL; TO REGULATE THE LAND SURVEYS ; TO PROVIDE FOR THE ESTABLISHMENT OF A LAND SURVEY COUNCIL TO REGULATE THE PROFESSIONAL CONDUCT OF SURVEYORS; TO REPEAL THE LAND SURVEYS ORDINANCE AND THE SURVEYORS ORDINANCE; AND FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO.",
+  "long_title_status": "verified_against_alternate_edition",
+  "section_headings": {
+   "3": {
+    "heading": "Delegation of Surveyor General's powers and functions.",
+    "status": "verified_against_alternate_edition",
+    "reason": "The parsed edition prints \"Delegation' of powers and functions of the Surveyors-General.\", with a stray apostrophe and the possessive moved onto the wrong word."
+   },
+   "10": {
+    "heading": "Preparation of Cadastral plans and maps.",
+    "status": "verified_against_alternate_edition",
+    "reason": "The parsed edition prints no marginal note against section 10. The note was set inside the body of subsection (1), which reads \"shall be responsible for Preparation of cadastral plans and maps the preparation and maintenance of all cadastral maps\". It is still there in raw_text and text."
+   },
+   "11": {
+    "heading": "Surveyor General to issue Certificate of Accreditation.",
+    "status": "verified_against_alternate_edition",
+    "reason": "The parsed edition prints \"General to issue certificate of Accreditation\", having lost the word \"Surveyor\" off the front."
+   },
+   "20": {
+    "heading": "False survey marks.",
+    "status": "verified_against_alternate_edition",
+    "reason": "The parsed edition prints no marginal note against section 20 and, unlike section 10, does not carry the wording in the body either."
+   },
+   "31": {
+    "heading": "Remuneration or allowance of members.",
+    "status": "verified_against_alternate_edition",
+    "reason": "The parsed edition prints \"Renunciation or allowance is members.\" Section 31 is about the remuneration the Council's members may be paid, not about renouncing anything."
+   },
+   "51": {
+    "heading": "Surrender of certificates.",
+    "status": "verified_against_alternate_edition",
+    "reason": "The parsed edition prints no marginal note against section 51."
+   }
+  },
+  "omitted_provisions": [
+   {
+    "location": "66",
+    "kind": "defined_term_absent_from_this_edition",
+    "term": "Minister",
+    "reason": "The Government Printer edition defines \"Minister\" as \"the Minister to whom the subject of Survey has been assigned\", between the entries for \"map\" and \"plan\". The parsed edition has no such entry anywhere in section 66.",
+    "source_status": "recovered_from_alternate_edition_not_merged"
+   },
+   {
+    "location": "66",
+    "kind": "defined_term_not_a_separate_entry_in_this_edition",
+    "term": "registered licensed surveyor",
+    "reason": "The Government Printer edition gives \"registered licensed surveyor\" -- \"a registered surveyor issued with an annual practising licence\" -- an entry of its own. The parsed edition runs it on inside the entry for \"registered surveyor\", so it is carried in that node's text rather than typed as a term.",
+    "source_status": "present_but_not_separable_without_editing_the_text"
+   },
+   {
+    "location": "66",
+    "kind": "entry_blank_in_this_edition",
+    "reason": "One interpretation entry is an empty markup block, between \"Department\" and \"land\". Which term it held cannot be read off the page, and the Government Printer edition has no entry in that position, so nothing in either edition identifies it.",
+    "source_status": "not_recovered"
+   }
+  ],
+  "schedules": [
+   {
+    "citation": "Schedule",
+    "heading": "Qualifications that entitles a person to be registered",
+    "applies_to": [
+     "39"
+    ],
+    "recovered_from": "the Government Printer edition, page 27. The parsed LankaLaw page does not carry the Schedule at all.",
+    "status": "recovered_from_alternate_edition",
+    "verification_status": "unverified",
+    "text": "Qualifications that entitles a person to be registered -\n\n(a) Academic qualifications;\n\n(i) Post Graduate Diploma in surveying or a higher qualification in surveying from a University or an Institute recognised by the Council, or\n\n(ii) Bachelors' Degree in Surveying from a University or an Institute recognised by the Council , or\n\n(iii) Advance Diploma in Surveying from the Institute of Surveying and Mapping, Diyatalawa; and\n\n(b) Practical experience;\n\n(i) For category (a) (i);\n\nMinimum of two years practical experience to the satisfaction of the Council.\n\n(ii) For category (a) (ii);\n\nMinimum of three years practical experience to the satisfaction of the Council.\n\n(iii) For category (a) (iii),\n\nMinimum of ten years practical experience to the satisfaction of the Council and a pass in the Junior Professional Examination conducted by the Survey Department, or\n\nMinimum of fifteen years practical experience to the satisfaction of the Council and a recommendation of the Surveyor General that he is professionally competent to be registered under this Act."
+   }
+  ],
+  "alternate_edition_variants": [
+   {
+    "where": "long title",
+    "parsed_edition": "... TO REGULATE THE CARRYING OUT OF THE LAND SURVEYS; ... TO REPEAL THE LAND SERVEYS ORDINANCE AND THE SURVEYORS ; AND TO PROVIDE FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO",
+    "alternate_edition": "... TO REGULATE THE LAND SURVEYS ; ... TO REPEAL THE LAND SURVEYS ORDINANCE AND THE SURVEYORS ORDINANCE; AND FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO.",
+    "assessment": "damage in the parsed edition. It misspells \"SURVEYS\" as \"SERVEYS\" and breaks off after \"THE SURVEYORS\", dropping the word \"ORDINANCE\", which leaves the Act reading as though it repealed the surveyors themselves. Section 25, in both editions, repeals the Land Surveys Ordinance (Chapter 458) and the Surveyors Ordinance (Chapter 108), so the corpus corroborates the correction on its own.",
+    "status": "corrected_in_long_title"
+   },
+   {
+    "where": "Part I heading",
+    "parsed_edition": "POWERS AND FUNCTIONS OF THE SURVEYOR-GENRERAL",
+    "alternate_edition": "POWERS AND FUNCTIONS OF THE SURVEYOR GENERAL",
+    "assessment": "a typo in the parsed edition. Not corrected: corrections here reach section headings only, so the Part heading stays as printed.",
+    "status": "recorded_not_corrected"
+   },
+   {
+    "where": "section 66, the term defined as \"landsurvey\"",
+    "parsed_edition": "\"landsurvey\"",
+    "alternate_edition": "\"land survey\"",
+    "assessment": "the space is lost in the parsed edition. Left as printed: the term is the node's key, and editing it would silently change what the tree says the Act defines.",
+    "status": "recorded_not_corrected"
+   },
+   {
+    "where": "section 10 (2) (a)",
+    "parsed_edition": "who is employed in the Department or",
+    "alternate_edition": "who is in the Survey Department or:",
+    "assessment": "the two editions genuinely differ in wording. Separately, the parsed edition does not mark (a) up as a paragraph, so it is carried inside the text of subsection (2) rather than typed. See the quality flags.",
+    "status": "recorded_not_resolved"
+   },
+   {
+    "where": "sections 25 (1) and 25 (2)",
+    "parsed_edition": "the (a) limb runs on inside the subsection",
+    "alternate_edition": "prints (a) and (b) as a pair in both subsections",
+    "assessment": "the same markup gap as section 10 (2) (a): only the (b) limb is marked up, so (a) is not a node.",
+    "status": "recorded_not_resolved"
+   }
+  ],
+  "quality_notes": [
+   {
+    "kind": "text-not-government-printer",
+    "detail": "The tree is parsed from LankaLaw, a private republisher. A Government Printer edition of this Act exists, has a text layer, and was used to check the parse -- but the text below is still LankaLaw's transcription, and the two differ in wording throughout."
+   },
+   {
+    "kind": "marginal-note-bleed",
+    "detail": "Section 10's marginal note, \"Preparation of Cadastral plans and maps.\", was printed inside the body of subsection (1). It is corrected into the heading and left in raw_text and text, where it still interrupts the sentence."
+   },
+   {
+    "kind": "missing-paragraph-container",
+    "detail": "Sections 10 (2), 25 (1) and 25 (2) each open a lettered pair and the source marks up only the (b) limb, so (a) is carried inside the subsection's own text rather than as a paragraph node. Not synthesised: inventing the container would change the tree on inference alone. Both editions print (a) and (b)."
+   },
+   {
+    "kind": "definitions-not-typed",
+    "detail": "Section 66 defines 15 terms in the Government Printer edition. This tree types 11. \"Cadastral survey\" is untyped because the parsed edition drops its opening quotation mark, and \"Department\" because a stray full stop is printed before its opening quote; both are held as closing_text nodes beside the definitions and carry their full wording. \"Minister\" is absent from the parsed edition, \"registered licensed surveyor\" is run on inside another entry, and one entry is blank."
+   },
+   {
+    "kind": "schedule-not-in-parsed-edition",
+    "detail": "Section 39 requires the qualifications specified in the Schedule, and the parsed page carries no Schedule. The body under `schedules` was read off the Government Printer edition and is marked as such; it is not part of the parse."
+   },
+   {
+    "kind": "amendment-history-not-established",
+    "detail": "No amending Act is recorded for this Act in this corpus and the parsed page carries no amendment chain in its header. That is the absence of a finding, not a finding of no amendments: nothing here has checked the Gazette."
+   }
+  ]
+ },
+ "SRC021": {
+  "checked_against": "Consolidated PDF of the Land (Restrictions on Alienation) Act, No. 38 of 2014 as amended to 2024, read page by page; the two amending Acts checked against their Government Printer PDFs.",
+  "note": "The marginal note of section 11 wraps across six printed lines whose note column overruns the body column on some of them. The column split recovers the provisions intact but clips two words of that note, so it is corrected here rather than by loosening the split, which would cost words out of the provisions themselves.",
+  "publisher": "Government Printer, Sri Lanka (consolidated reprint, 2024)",
+  "section_headings": {
+   "11": {
+    "heading": "Restrictions on mortgaging lands of which title has passed or has been leased to a foreign national.",
+    "status": "corrected_by_hand",
+    "reason": "The parser recovered 'Restrictions on mortgaging lands of which title has passed or has national', dropping 'been leased to a foreign'. Restored from the printed marginal note."
+   }
+  },
+  "editorial_notes": [
+   {
+    "anchor_text": "AN ACT TO MAKE PROVSIONS TO STIPULATE RESTRICTIONS",
+    "in": "long title",
+    "text": "The print reads 'PROVSIONS'. This appears to be a typographical error for 'PROVISIONS'. The wording is left exactly as printed.",
+    "kind": "apparent error in the source"
+   },
+   {
+    "anchor_text": "FOR THE REPEAL OF PARTVI OF THE FINANCE ACT, NO. 11 OF 1963",
+    "in": "long title",
+    "text": "The print reads 'PARTVI'. Section 19 of the Act shows the intended reading is 'PART VI'. The wording is left exactly as printed.",
+    "kind": "apparent error in the source"
+   }
+  ],
+  "quality_notes": [
+   "Parsed from a consolidated reprint, not from the Act as enacted. The registry's Government Printer PDF of the original has no text layer.",
+   "Section 5A and the amendments to sections 3 and 5A are carried in this text as consolidated; the inline markers name the amending provisions and the operations are resolved from the amending Acts' own instructions."
+  ],
+  "verification_status": "structurally_verified"
  }
 }

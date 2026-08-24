@@ -93,6 +93,15 @@ DEFINITION_LEAD_IN = re.compile(
 # A term is often qualified before the verb arrives: '"holder", in relation to
 # any nindagama land, means ...'. Testing the verb against the text straight
 # after the closing quote fails on those, and the definition is lost.
+# Several defined terms can share one markup block. Each new quoted term
+# followed by a definitional verb starts another definition, so the block has to
+# be split before any of it is typed.
+DEFINITION_START = re.compile(
+    r"[\"“‘]\s*[^\"”’]{2,60}?\s*[\"”’]+\s*"
+    r"(?:,\s*[^,]{1,90},\s*)?"
+    r"(?:means|includes|shall\s+mean|shall\s+include|shall\s+be\s+interpreted)",
+    re.IGNORECASE,
+)
 DEFINITION_QUALIFIER = re.compile(r"^\s*,\s*(?P<qualifier>[^,]{1,90}),\s*")
 DEFINITION_VERB = re.compile(
     r"^(means\b|includes\b|shall mean\b|shall include\b|shall be interpreted\b"
@@ -224,7 +233,8 @@ PROVISO = re.compile(
 # also break "paragraphs (c) and (d)" mid-sentence, so a split point must follow
 # a list-introducing character rather than an ordinary word.
 ENUM_TOKEN = re.compile(
-    r"(?:(?<=^)|(?<=[;:\-–—.]\s)|(?<=[;:\-–—])\s*)"
+    # A stray quote can stand where the colon should be: `Plan" (i) file the...`.
+    r"(?:(?<=^)|(?<=[;:\-–—.\"”’]\s)|(?<=[;:\-–—])\s*)"
     r"\(\s*(\d{1,3}[A-Z]?|[a-z]{1,2})\s*\)",
     re.IGNORECASE,
 )
@@ -344,6 +354,21 @@ def split_enumerated(text: str) -> list[str]:
     return parts
 
 
+def split_definitions(text: str) -> list[str]:
+    """One block into one piece per term it defines."""
+    starts = [m.start() for m in DEFINITION_START.finditer(text)]
+    if len(starts) < 2:
+        return [text]
+    if starts[0] > 0:
+        starts.insert(0, 0)
+    pieces = []
+    for start, end in zip(starts, starts[1:] + [len(text)]):
+        piece = text[start:end].strip(" ;,")
+        if piece:
+            pieces.append(piece)
+    return pieces
+
+
 def parse_definition(body: str) -> tuple[str, str, str] | None:
     """(term, qualifier, definition text) when the block defines a term."""
     match = DEFINITION.match(body)
@@ -358,7 +383,25 @@ def parse_definition(body: str) -> tuple[str, str, str] | None:
             qualifier, rest = qualified.group("qualifier").strip(), candidate
     if not DEFINITION_VERB.match(rest):
         return None
-    return re.sub(r"\s+", " ", match.group(1)).strip(), qualifier, rest
+    # A doubled opening quote leaves one inside the captured term.
+    term = re.sub(r"\s+", " ", match.group(1)).strip().strip("\"“”‘’' ")
+    return term, qualifier, rest
+
+
+ROMAN_DIGITS = {"i": 1, "v": 5, "x": 10, "l": 50, "c": 100}
+
+
+def roman_value(label: str) -> int:
+    """The numeric value of a roman label, or 0 if it is not one."""
+    label = label.lower()
+    if not label or any(ch not in ROMAN_DIGITS for ch in label):
+        return 0
+    total, previous = 0, 0
+    for ch in reversed(label):
+        value = ROMAN_DIGITS[ch]
+        total = total - value if value < previous else total + value
+        previous = max(previous, value)
+    return total
 
 
 def classify(text: str) -> tuple[str, str, str]:
@@ -617,6 +660,19 @@ def parse(page: str, self_title: str) -> tuple[list[dict], list[tuple[str, int, 
                     later["number"] = expected
                     later["type"] = "paragraph"
                     later["label_correction_status"] = "inferred_from_sequence"
+            # A single character is read as a paragraph letter, which is right for
+            # (a), (b), (c) but wrong for (v) sitting in a roman run. Once a
+            # roman list is open, a following single roman character continues it.
+            # It continues the run only if it is the next numeral: (v) after
+            # (iv) does, but (c) after (vi) is paragraph (c), not 100.
+            for index in range(1, len(current_blocks)):
+                block, previous = current_blocks[index], current_blocks[index - 1]
+                if block["type"] != "paragraph" or previous["type"] != "subparagraph":
+                    continue
+                here, before = roman_value(block.get("number", "")), roman_value(previous.get("number", ""))
+                if here and before and here == before + 1:
+                    block["type"] = "subparagraph"
+                    block["label_correction_status"] = "roman_run_continued"
             # "(i)" reads as a paragraph letter on its own, but an "(ii)" right
             # after it makes both roman. Settle that before nesting, or the two
             # land at different depths and (ii) becomes a child of (i).
@@ -639,6 +695,24 @@ def parse(page: str, self_title: str) -> tuple[list[dict], list[tuple[str, int, 
                     (":", "-", ":-", ";")
                 ):
                     block["type"] = "item"
+            # A stray block in the middle of a run of definitions is an entry the
+            # source damaged past recognition -- a term whose opening quote is
+            # missing, say -- not a container. `closing_text` sits above
+            # `definition` in DEPTH, so left alone such a block adopts every term
+            # printed after it as a child. Same rule as above: text inside a list
+            # takes that list's own level.
+            # Two damaged entries can sit next to each other, so it is the run
+            # the block falls inside that settles this, not the one block before
+            # it: a definition on either side means the block is in the list.
+            for index, block in enumerate(current_blocks):
+                # A block the rule above already placed is closing a list of its
+                # own, one nested inside a definition among others. Leave it.
+                if block["type"] != "closing_text" or "_depth" in block:
+                    continue
+                before = any(b["type"] == "definition" for b in current_blocks[:index])
+                after = any(b["type"] == "definition" for b in current_blocks[index + 1 :])
+                if before and after:
+                    block["_depth"] = DEPTH["definition"]
             nested = nest(list(current_blocks))
             parent = sections[-1]
             # Where a section opens straight into its first subsection, that text
@@ -827,7 +901,31 @@ def parse(page: str, self_title: str) -> tuple[list[dict], list[tuple[str, int, 
             # "In this subsection \"interest\" means ..." defines a term for the
             # whole subsection, so it is lifted to sit beside the paragraphs.
             scope_lead = DEFINITION_LEAD_IN.match(body)
-            defined = parse_definition(body[scope_lead.end():] if scope_lead else body)
+            after_lead = body[scope_lead.end():] if scope_lead else body
+            # One block can carry several terms; each becomes its own node.
+            definition_pieces = split_definitions(after_lead)
+            if len(definition_pieces) > 1 and not scope_lead:
+                for piece in definition_pieces:
+                    parsed_piece = parse_definition(piece)
+                    if not parsed_piece:
+                        continue
+                    term_p, qualifier_p, text_p = parsed_piece
+                    current_blocks.append(
+                        {
+                            "type": "definition",
+                            "term": term_p,
+                            "qualifier": qualifier_p,
+                            "raw_text": piece,
+                            "text": text_p,
+                            "amendment_events": extra,
+                            "cross_references": track_named(
+                                cross_references(text_p, self_title, current_section, last_named_enactment)
+                            ),
+                        }
+                    )
+                    extra = []
+                continue
+            defined = parse_definition(after_lead)
             if defined and scope_lead:
                 term, qualifier, definition_text = defined
                 current_blocks.append(
@@ -892,6 +990,21 @@ def parse(page: str, self_title: str) -> tuple[list[dict], list[tuple[str, int, 
     # Parts, crossheadings and sections are one stream; nest() turns the flat
     # run into a tree using DEPTH, so a statute with no Parts is unaffected.
     return nest(outline), chain, long_title, editorial
+
+
+def dedupe_events(nodes: list[dict]) -> None:
+    """A marker printed in both the heading and the marginal-note block is one
+    amendment, not two. Collecting from both sources counts it twice."""
+    for node in nodes:
+        seen, unique = set(), []
+        for event in node.get("amendment_events", []):
+            key = (event.get("amending_act"), event.get("amending_section"))
+            if key not in seen:
+                seen.add(key)
+                unique.append(event)
+        if "amendment_events" in node:
+            node["amendment_events"] = unique
+        dedupe_events(node.get("children", []))
 
 
 def apply_heading_overrides(nodes: list[dict], corrections: dict) -> None:
@@ -972,6 +1085,7 @@ def main() -> int:
             {"type": k, "number": n, "year": y} for k, n, y in chain if (n, y) != key
         ]
         override = overrides.get(row["source_id"], {})
+        dedupe_events(body)
         apply_heading_overrides(body, override.get("section_headings", {}))
         stated = re.search(r"\[\s*([0-9]{1,2}\s*\w{0,4}\s+\w+\s*,?\s*[0-9]{4})\s*\]", text_of(page))
         document = {
@@ -1033,10 +1147,13 @@ def main() -> int:
             "alternate_edition_variants": override.get("alternate_edition_variants", []),
             # Schedules are referenced in the text but their bodies are not on
             # these pages, so they are recorded as references, not as content.
+            # A body can only get here from an override, which means it was read
+            # off a different edition; each entry says which one, so a schedule
+            # recovered elsewhere is never mistaken for one this page carried.
             "schedules_referenced": sorted(
                 {re.sub(r"\s+", " ", m.group(1)) for m in SCHEDULE_REF.finditer(text_of(page))}
             ),
-            "schedules": [],
+            "schedules": override.get("schedules", []),
             "body": body,
         }
 
