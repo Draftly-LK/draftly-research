@@ -17,6 +17,7 @@ from typing import Any
 from fastapi import FastAPI, HTTPException, Query
 
 from .answering import answer as answer_query
+from .case_statute_links import case_statute_links
 from .corpus import sources_for_ui, topics_for_ui
 from .index import build_index
 from .models import StatuteQuery
@@ -25,6 +26,7 @@ from .search import search as search_query
 logger = logging.getLogger(__name__)
 
 ALLOWED_KINDS = {"statute", "amendment"}
+ALLOWED_LINK_BANDS = {"verified", "review", "unresolved"}
 
 
 @asynccontextmanager
@@ -63,6 +65,18 @@ def _validate_kinds(kind: list[str] | None) -> tuple[str, ...] | None:
     return tuple(kind)
 
 
+def _validate_link_band(band: str | None) -> str | None:
+    if not band:
+        return None
+    normalized = band.strip().lower()
+    if normalized not in ALLOWED_LINK_BANDS:
+        raise HTTPException(
+            status_code=422,
+            detail=f"Invalid band: {band}. Expected one of {sorted(ALLOWED_LINK_BANDS)}.",
+        )
+    return normalized
+
+
 @app.get("/health")
 def health() -> dict[str, Any]:
     try:
@@ -99,6 +113,42 @@ def search_endpoint(
     )
     hits = search_query(query)
     return [hit.to_dict(include_text=False) for hit in hits]
+
+
+@app.get("/case-statute-links")
+def case_statute_links_endpoint(
+    case_id: str | None = Query(None, description="Restrict links to one case ID."),
+    source_id: str | None = Query(None, description="Restrict links to one statute source ID, e.g. SRC030."),
+    band: str = Query(
+        "verified",
+        description="Filter by link quality band: verified, review, or unresolved. Defaults to verified only.",
+    ),
+    limit: int = Query(100, ge=1, le=1000),
+) -> list[dict[str, Any]]:
+    links = case_statute_links(
+        case_id=case_id,
+        source_id=source_id,
+        band=_validate_link_band(band),
+        limit=limit,
+    )
+    return [link.to_dict() for link in links]
+
+
+@app.get("/case-statute-links/{case_id}")
+def case_statute_links_for_case_endpoint(
+    case_id: str,
+    band: str = Query(
+        "verified",
+        description="Filter by link quality band: verified, review, or unresolved. Defaults to verified only.",
+    ),
+    limit: int = Query(100, ge=1, le=1000),
+) -> dict[str, Any]:
+    links = case_statute_links(case_id=case_id, band=_validate_link_band(band), limit=limit)
+    return {
+        "case_id": case_id,
+        "links": [link.to_dict() for link in links],
+        "count": len(links),
+    }
 
 
 @app.get("/answer")
