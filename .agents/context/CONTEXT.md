@@ -12,7 +12,7 @@ finish a chunk of work, update it with the `update-context` skill
 
 ## Current State
 
-Last updated: 2026-08-24 · by: Codex · draftly-research @ c3a9d7be
+Last updated: 2026-08-25 · by: Codex · draftly-research @ 47643044
 
 ### What Draftly is
 
@@ -1236,6 +1236,21 @@ in the old `contxt.md` were deliberately left out of this file for that reason.)
 ---
 
 ## Log
+
+### 2026-08-25 · Codex (KOBLEX-inspired legal-retrieval experiment)
+
+- Replaced the superseded Graphiti memory prototype with a bounded,
+  KOBLEX-inspired statute-retrieval experiment. It builds a Sri Lankan statute
+  smoke corpus, runs a transparent local BM25 baseline, and records each
+  multi-hop retrieval and answer-stage artifact for review.
+- Vendored the upstream KoBLEX implementation and related research papers as
+  reference material only. Draftly's local experiment remains separate from
+  the Korean benchmark and does not treat generated information needs as legal
+  evidence or citations.
+- Added a grounded LLM smoke path that requires an explicit OpenAI API key and
+  makes paid calls only when run. Its 20-question smoke artifacts and tests are
+  experimental evidence, not a production legal-answering claim. Focused tests:
+  53 passed.
 
 ### 2026-08-24 · Codex (statute corpus finalization and parser hardening)
 

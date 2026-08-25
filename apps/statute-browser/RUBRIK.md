@@ -72,7 +72,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Tea and Rubber Estates (Control of Fragmentation) Act | No. 2 of 1958 | 25 | 1 | 1 | yes |
 | 1 | Tesawalamai Pre-emption Ordinance | No. 59 of 1947 | 14 | 0 | 0 | yes |
 | 1 | Western Province Financial Statute | No. 6 of 1990 | 124 | 0 | 0 | - |
-| 1 | Wills Ordinance | No. 21 of 1844 | 9 | 5 | 2 | - |
+| 1 | Wills Ordinance | No. 21 of 1844 | 9 | 5 | 2 | yes |
 | 2 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 42 | 11 | 8 | - |
 | 2 | Definition of Boundaries Ordinance | No. 1 of 1844 | 13 | 5 | 1 | - |
 | 2 | Land Acquisition Act | No. 9 of 1950 | 68 | 8 | 7 | - |
@@ -770,7 +770,7 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Wills Ordinance
 
-**No. 21 of 1844** · commenced 1844-12-23 · curriculum category 1 · SRC024
+**No. 21 of 1844** · commenced 1844-12-23 · curriculum category 1 · SRC024 · **finalized**
 
 Topics: Formation of Deeds, Last Wills, Drafting of Deeds
 
@@ -781,6 +781,11 @@ Parsed from the HTML edition: 9 sections, 1 carrying an amendment marker. Not ye
 Canonical structure: 9 sections.
 3 cross-references.
 Tree: `data/processed/canonical-statutes/SRC024-21-1844.json`
+
+Finalized: `data/legal-sources/library/finalized/21-1844-wills-ordinance/21-1844-wills-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
