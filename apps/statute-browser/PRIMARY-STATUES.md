@@ -71,7 +71,7 @@ same as unchanged. Every row is `status=unverified`.
 | 051 | Urban Councils Ordinance | No. 61 of 1939 | 256 | 0 | none recorded |
 | 053 | Survey Act | No. 17 of 2002 | 5 | 0 | none recorded |
 | 054 | Trusts Ordinance | No. 9 of 1917 | 123 | 10 | 1968-2018 |
-| 055 | Bank of Ceylon Ordinance | No. 53 of 1938 | 81 | 0 | none recorded |
+| 055 | Bank of Ceylon Ordinance | No. 53 of 1938 | 82 | 43 | none recorded |
 
 ## Named in the curriculum but not extracted
 

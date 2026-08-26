@@ -4,23 +4,23 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ## Counts
 
-- Source files inspected: 32
-- Statutes indexed: 21
-- Records: 6211
-- Distinct sections referenced: 1190
+- Source files inspected: 33
+- Statutes indexed: 22
+- Records: 6382
+- Distinct sections referenced: 1249
 - Records without a heading: 9
 - `section_id` is a rollup key, not a foreign key: it names the section a record belongs to even where that section has no record of its own (a section whose text lives entirely in its children emits nothing). Group by it to score at section level.
 - Temporal metadata: none. `effective_from` / `effective_to` are null on every record; act-level `commencement` is deliberately not propagated to provisions.
 
 ### By node type
 
-- `paragraph`: 2390
-- `subsection`: 2389
-- `section`: 509
-- `subparagraph`: 405
-- `definition`: 194
-- `closing_text`: 147
-- `proviso`: 115
+- `subsection`: 2459
+- `paragraph`: 2428
+- `section`: 549
+- `subparagraph`: 409
+- `definition`: 203
+- `closing_text`: 151
+- `proviso`: 121
 - `text`: 36
 - `item`: 21
 - `schedule`: 3
@@ -35,6 +35,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 - Urban Development Authority Act: 242
 - Registration of Title Act: 225
 - Buddhist Temporalities Ordinance: 180
+- Bank of Ceylon Ordinance: 171
 - Land (Restrictions on Alienation) Act: 136
 - Tea and Rubber Estates (Control of Fragmentation) Act: 109
 - Land Grants (Special Provisions) Act: 78
@@ -68,7 +69,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ### Nodes
 
-- Empty own-text (content lives in children): 694 (definition 1, schedule 1, section 681, subsection 11)
+- Empty own-text (content lives in children): 713 (definition 1, schedule 1, section 700, subsection 11)
 - Repealed stubs excluded: 3
   - `11-1973/section-26/closing_text-1` -- '(*Repealed and replaced by the Companies Act, No. 17 of 1982.)'
   - `21-1844/section-3` -- 'Repealed By'
@@ -88,6 +89,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
 - **Registration of Old Deeds and Instruments Ordinance** -- verification_status is 'needs_structural_review'
 - **National Housing Act** -- verification_status is 'unverified'
 - **Urban Development Authority Act** -- verification_status is 'unverified'
+- **Bank of Ceylon Ordinance** -- verification_status is 'unverified'
 - **Jaffna Matrimonial Rights and Inheritance Ordinance** -- act_id '1-1911' from citation differs from directory prefix '58-1947'
 
 ## Problems
@@ -108,7 +110,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
   - `7-2007/section-529/subsection-1/definition-group-financial-statements/paragraph-b`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-a`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-b`
-- Duplicate evidence texts: 117 distinct strings appear more than once (340 records)
+- Duplicate evidence texts: 118 distinct strings appear more than once (342 records)
 - Schedule items carrying `rates` tables: 2. The band/rupees/cents tables are structured numeric data and are not flattened into `text`, so rate lookups will not retrieve them.
 
 ## Regeneration

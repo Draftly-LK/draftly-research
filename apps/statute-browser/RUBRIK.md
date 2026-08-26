@@ -82,7 +82,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 2 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 0 | 0 | yes |
 | 2 | Mortgage Act | No. 6 of 1949 | 126 | 6 | 4 | - |
 | 2 | Urban Development Authority Act | No. 41 of 1978 | 54 | 6 | 6 | yes |
-| 3 | Bank of Ceylon Ordinance | No. 53 of 1938 | 81 | 13 | 7 | - |
+| 3 | Bank of Ceylon Ordinance | No. 53 of 1938 | 82 | 13 | 7 | yes |
 | 3 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 4 | 2 | - |
 | 3 | Land Surveys Ordinance | No. 4 of 1866 | not extracted | 1 | 1 | - |
 | 3 | Lands Resumption Ordinance | No. 4 of 1887 | not extracted | 3 | 1 | - |
@@ -1105,17 +1105,22 @@ Amendments (6 known, 6 held):
 
 ### Bank of Ceylon Ordinance
 
-**No. 53 of 1938** · Cap. 397 · commenced 1938-12-01 · curriculum category 3 · SRC044
+**No. 53 of 1938** · Cap. 397 · commenced 1938-12-01 · curriculum category 3 · SRC044 · **finalized**
 
 Topics: Examination of Title
 
-Sections: 81 in the index (headings from legacy 77, none 4)
+Sections: 82 in the index (headings from finalized 59, legacy 23)
 
 Parsed from the HTML edition: 59 sections, 43 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 59 sections, 70 subsections, 9 definitions, 38 paragraphs, 4 subparagraphs.
-68 cross-references; 3 schedules referenced (bodies not published).
+69 cross-references; 3 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC044-53-1938.json`
+
+Finalized: `data/legal-sources/library/finalized/53-1938-bank-of-ceylon-ordinance/53-1938-bank-of-ceylon-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
