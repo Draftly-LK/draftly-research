@@ -447,6 +447,7 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
         if SECTION_START.match(body) and SECTION_START.match(body).group(2).strip()
     }
     skip_next_title = False
+    last_section_num = 0
     for note, body in rows:
         if not note and PART_NUMBER_LINE.match(body.strip()):
             skip_next_title = True
@@ -476,11 +477,25 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
                 or re.fullmatch(r"\(\s*\w{1,4}\s*\)", body_parts[-1].strip())
             )
         )
+        section_start = SECTION_START.match(body)
+        # A section always numbers up from the last one. A drafter occasionally
+        # opens a list with bare arabic numerals instead of "(a)"/"(i)" -- "56.
+        # Any person -- 1. who draws...; or 2. who executes...;" in the Stamp
+        # Duty Act -- and "1." there looks exactly like SECTION_START. Where the
+        # match would jump backward right after a list-opening line, it is that
+        # list's first item, not a new section restarting the count.
+        if section_start and opens_list and int(section_start.group(1).rstrip("ABCDEFGHIJKLMNOPQRSTUVWXYZ") or 0) < last_section_num:
+            section_start = None
         starts_block = bool(
-            SECTION_START.match(body)
+            section_start
             or DEFINITION_LINE.match(body)
             or (ENUM_START.match(body) and (opens_list or not body_parts))
         )
+        if section_start and section_start.group(2).strip():
+            last_section_num = max(
+                last_section_num,
+                int(section_start.group(1).rstrip("ABCDEFGHIJKLMNOPQRSTUVWXYZ") or 0),
+            )
         if starts_block and body_parts:
             flush()
         if note and not CHAIN_LINE.match(note):
@@ -491,7 +506,12 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
     return blocks
 
 
-SCHEDULE_BOUNDARY = re.compile(r"\n[ \t]*Schedules?[ \t]*\n")
+# A Schedule heading is not always the bare word: "RATES SCHEDULE" prints
+# above the Stamp Duty Act's table of stamp-duty rates by document type, and
+# a numbered list of rates ("1. Acknowledgement of debt", "4a. Application
+# for letters of Credit", ...) reads exactly like sections restarting at 1
+# just as a Schedule's form fields do.
+SCHEDULE_BOUNDARY = re.compile(r"\n[ \t\f]*(?:Schedules?|[A-Z][A-Z '\-]*\bSCHEDULES?\b[A-Z '\-]*)[ \t]*\n")
 
 
 def parse(pdf: Path, title: str) -> list[dict]:
