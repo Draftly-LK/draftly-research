@@ -1135,6 +1135,17 @@ def main() -> int:
         apply_heading_overrides(body, override.get("section_headings", {}))
         apply_text_corrections(body, override.get("text_corrections", []))
         stated = re.search(r"\[\s*([0-9]{1,2}\s*\w{0,4}\s+\w+\s*,?\s*[0-9]{4})\s*\]", text_of(page))
+        # text_of() replaces every tag with a space and collapses whitespace to
+        # one space rather than none, so a date's ordinal suffix marked up as
+        # "1<sup>st</sup> July" comes out "1 st July", and a line break before
+        # the trailing comma comes out "July , 1902" -- both belong to the
+        # markup, not to the date as printed.
+        date_stated = ""
+        if stated:
+            date_stated = re.sub(
+                r"^(\d{1,2})\s+(st|nd|rd|th)\b", r"\1\2", stated.group(1).strip(), flags=re.IGNORECASE
+            )
+            date_stated = re.sub(r"\s+,", ",", date_stated)
         document = {
             "source_id": row["source_id"],
             "title": row["official_title"],
@@ -1154,7 +1165,7 @@ def main() -> int:
             # The page prints a date without calling it a commencement. The
             # commencement below comes from statute_commencement.csv, a different
             # source, so the two are recorded separately rather than merged.
-            "date_stated_in_source": stated.group(1).strip() if stated else "",
+            "date_stated_in_source": date_stated,
             "commencement": commencement.get(row["source_id"], "") or None,
             "commencement_source": "statute_commencement.csv (srilankalaw)"
             if commencement.get(row["source_id"])
