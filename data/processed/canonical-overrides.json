@@ -422,5 +422,24 @@
             }
         ],
         "verification_status": "unverified"
+    },
+    "SRC044": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/53-1938-bank-of-ceylon-ordinance.html, cross-read against the official Bank of Ceylon PDF at data/legal-sources/library/statutes/53-1938-bank-of-ceylon-ordinance.pdf",
+        "note": "The registry's own official Bank of Ceylon PDF (Chapter 397 Government Printer format) prints its marginal note in the RIGHT column with the operative text on the left -- the opposite convention from every other Government Printer PDF handled so far -- and scripts/parse_consolidated_pdf.py has no reliable way yet to tell a genuine right-hand note from a short one-line provision (e.g. 'Repealed (§14,10 of 1974)') that happens to leave enough trailing whitespace to look like one. Parsed from the LankaLaw consolidated HTML instead, which reads cleanly (0.05% unmatched) and carries the identical amendment chain through Act No. 54 of 2000.",
+        "publisher": "LankaLaw (private republisher)",
+        "quality_notes": [
+            {
+                "code": "repealed_sections_omitted",
+                "sections_affected": ["34-40", "45-55", "66-67", "73"],
+                "issue": "The official PDF marks these numbers 'Repealed (§N, 10 of 1974)' explicitly; the LankaLaw HTML this tree is built from omits them from its numbering entirely rather than printing a stub. Confirmed genuine (not a parsing gap) by checking every missing number against the official PDF's own repeal markers.",
+                "status": "source_omission_confirmed_genuine"
+            },
+            {
+                "code": "pdf_reversed_column_layout",
+                "detail": "Left as future work: a general fix would need to distinguish a genuine right-hand marginal note from a short body line with trailing whitespace, e.g. by tracking the note column's horizontal position from confirmed multi-word notes and requiring a candidate note to start near it, the way body_column already does for the normal orientation.",
+                "status": "known_parser_limitation"
+            }
+        ],
+        "verification_status": "unverified"
     }
 }

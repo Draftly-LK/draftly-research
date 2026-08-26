@@ -92,8 +92,28 @@
  "amendment_history_status": "listed_in_source_header",
  "editorial_notes": [],
  "omitted_provisions": [],
- "overrides_applied": {},
- "quality_flags": [],
+ "overrides_applied": {
+  "checked_against": "data/legal-sources/library/statutes/HTML/53-1938-bank-of-ceylon-ordinance.html, cross-read against the official Bank of Ceylon PDF at data/legal-sources/library/statutes/53-1938-bank-of-ceylon-ordinance.pdf",
+  "note": "The registry's own official Bank of Ceylon PDF (Chapter 397 Government Printer format) prints its marginal note in the RIGHT column with the operative text on the left -- the opposite convention from every other Government Printer PDF handled so far -- and scripts/parse_consolidated_pdf.py has no reliable way yet to tell a genuine right-hand note from a short one-line provision (e.g. 'Repealed (§14,10 of 1974)') that happens to leave enough trailing whitespace to look like one. Parsed from the LankaLaw consolidated HTML instead, which reads cleanly (0.05% unmatched) and carries the identical amendment chain through Act No. 54 of 2000."
+ },
+ "quality_flags": [
+  {
+   "code": "repealed_sections_omitted",
+   "sections_affected": [
+    "34-40",
+    "45-55",
+    "66-67",
+    "73"
+   ],
+   "issue": "The official PDF marks these numbers 'Repealed (§N, 10 of 1974)' explicitly; the LankaLaw HTML this tree is built from omits them from its numbering entirely rather than printing a stub. Confirmed genuine (not a parsing gap) by checking every missing number against the official PDF's own repeal markers.",
+   "status": "source_omission_confirmed_genuine"
+  },
+  {
+   "code": "pdf_reversed_column_layout",
+   "detail": "Left as future work: a general fix would need to distinguish a genuine right-hand marginal note from a short body line with trailing whitespace, e.g. by tracking the note column's horizontal position from confirmed multi-word notes and requiring a candidate note to start near it, the way body_column already does for the normal orientation.",
+   "status": "known_parser_limitation"
+  }
+ ],
  "source_location": {},
  "alternate_edition_variants": [],
  "schedules_referenced": [
@@ -1713,10 +1733,16 @@
        "verbatim": "under subsection (3)"
       },
       {
-       "kind": "internal",
-       "target_document": "Bank of Ceylon Ordinance",
+       "kind": "external",
+       "target_document": "Civil Procedure Code",
        "target_section": "287",
-       "verbatim": "section 287"
+       "verbatim": "section 287 or 288 of the Civil Procedure Code"
+      },
+      {
+       "kind": "external",
+       "target_document": "Civil Procedure Code",
+       "target_section": "288",
+       "verbatim": "section 287 or 288 of the Civil Procedure Code"
       },
       {
        "kind": "enactment",
