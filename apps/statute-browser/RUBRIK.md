@@ -81,7 +81,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 2 | Land Reform Law | No. 1 of 1972 | 83 | 5 | 5 | - |
 | 2 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 0 | 0 | yes |
 | 2 | Mortgage Act | No. 6 of 1949 | 126 | 6 | 4 | - |
-| 2 | Urban Development Authority Act | No. 41 of 1978 | 48 | 6 | 6 | - |
+| 2 | Urban Development Authority Act | No. 41 of 1978 | 54 | 6 | 6 | yes |
 | 3 | Bank of Ceylon Ordinance | No. 53 of 1938 | 81 | 13 | 7 | - |
 | 3 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 4 | 2 | - |
 | 3 | Land Surveys Ordinance | No. 4 of 1866 | not extracted | 1 | 1 | - |
@@ -1061,17 +1061,22 @@ Amendments (6 known, 4 held):
 
 ### Urban Development Authority Act
 
-**No. 41 of 1978** · curriculum category 2 · SRC039
+**No. 41 of 1978** · curriculum category 2 · SRC039 · **finalized**
 
 Topics: Examination of Title, Local Authority, UDA, and Other Regulations
 
-Sections: 48 in the index (headings from legacy 48)
+Sections: 54 in the index (headings from finalized 54)
 
 Parsed from the HTML edition: 54 sections, 33 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 8 parts, 54 sections, 135 subsections, 5 definitions, 73 paragraphs, 4 subparagraphs.
+Canonical structure: 8 parts, 54 sections, 134 subsections, 5 definitions, 73 paragraphs, 4 subparagraphs.
 98 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC039-41-1978.json`
+
+Finalized: `data/legal-sources/library/finalized/41-1978-urban-development-authority-act/41-1978-urban-development-authority-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
