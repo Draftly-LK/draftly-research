@@ -441,5 +441,28 @@
             }
         ],
         "verification_status": "unverified"
+    },
+    "SRC034": {
+        "checked_against": "data/legal-sources/library/statutes/43-1982-stamp-duty-act.pdf (official Inland Revenue Department PDF)",
+        "note": "73 sections, no amendment chain header printed anywhere in the source (unlike every other statute finalized so far). The document instead marks amended provisions with a bare instrument-number/year in the margin (e.g. '71/1988', '27/1991', '29/1993', '27/2000'), a format none of the marker regexes recognise -- they all expect a bracketed '[N, Act of Year]' shape or a proper chain-header block. Left unextracted rather than guessed at.",
+        "quality_notes": [
+            {
+                "code": "rates_schedule_not_extracted",
+                "detail": "The 'RATES SCHEDULE' (stamp duty by document type, keyed to individual Gazette notices) is deliberately excluded from the tree, same as other statutes' Schedules -- coverage against the full PDF is 10.48% unmatched as a result, essentially all of it schedule/rate-table text (Rs., Gazette numbers, dates).",
+                "status": "known_scope_limitation"
+            },
+            {
+                "code": "bare_numeral_list_flattened",
+                "sections_affected": ["56"],
+                "issue": "Section 56 opens its list with bare arabic numerals ('1. who draws...; or 2. who executes...;') rather than the usual '(a)'/'(i)'. The parser now correctly reads this as one list inside section 56 rather than five bogus new sections, but the five items are not split into typed children -- the whole list stays as one paragraph of raw text, complete and undamaged, just flatter than the source's own visual layout.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "amendment_markers_unrecognised_format",
+                "detail": "Bare 'N/YEAR' markers (e.g. the four listed above) are not extracted into amendment_events. See the top-level note.",
+                "status": "known_parser_limitation"
+            }
+        ],
+        "verification_status": "unverified"
     }
 }
