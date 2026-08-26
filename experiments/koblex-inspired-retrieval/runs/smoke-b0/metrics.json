@@ -1,0 +1,248 @@
+{
+  "run_name": "smoke-b0",
+  "gold_path": "experiments/koblex-inspired-retrieval/data/smoke_test_20_gold.jsonl",
+  "gold_questions": 20,
+  "matching": "exact node_id",
+  "notes": [
+    "Recall@5 is arithmetically capped for smoke-q008: more than 5 gold provisions, so 5/n is the ceiling regardless of retrieval quality. With 20 questions one question moves the mean by 5 points, so Recall@20 and complete-evidence accuracy are the more informative headline numbers.",
+    "complete_evidence_in_candidates on a ranked block is a ceiling: it is the fraction of questions where every gold provision was present anywhere in the retrieved list, i.e. the best the selection stage could possibly achieve."
+  ],
+  "b0_bm25_ranked": {
+    "summary": {
+      "recall@5": 0.8071,
+      "recall@10": 0.8738,
+      "recall@20": 0.965,
+      "mrr": 0.975,
+      "complete_evidence_in_candidates": 0.9,
+      "questions": 20
+    },
+    "per_question": {
+      "smoke-q001": {
+        "retrieved": 20,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q002": {
+        "retrieved": 20,
+        "gold": 2,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q003": {
+        "retrieved": 20,
+        "gold": 2,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q004": {
+        "retrieved": 20,
+        "gold": 3,
+        "recall@5": 0.6667,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q005": {
+        "retrieved": 20,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 0.5,
+        "complete_in_candidates": true
+      },
+      "smoke-q006": {
+        "retrieved": 20,
+        "gold": 2,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q007": {
+        "retrieved": 20,
+        "gold": 5,
+        "recall@5": 0.6,
+        "recall@10": 0.6,
+        "recall@20": 0.8,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": false
+      },
+      "smoke-q008": {
+        "retrieved": 20,
+        "gold": 8,
+        "recall@5": 0.375,
+        "recall@10": 0.375,
+        "recall@20": 0.5,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": false
+      },
+      "smoke-q009": {
+        "retrieved": 20,
+        "gold": 3,
+        "recall@5": 0.3333,
+        "recall@10": 0.6667,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q010": {
+        "retrieved": 20,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q011": {
+        "retrieved": 20,
+        "gold": 2,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q012": {
+        "retrieved": 20,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q013": {
+        "retrieved": 20,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q014": {
+        "retrieved": 20,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q015": {
+        "retrieved": 20,
+        "gold": 3,
+        "recall@5": 0.3333,
+        "recall@10": 0.6667,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q016": {
+        "retrieved": 20,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q017": {
+        "retrieved": 20,
+        "gold": 2,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q018": {
+        "retrieved": 20,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q019": {
+        "retrieved": 20,
+        "gold": 3,
+        "recall@5": 0.3333,
+        "recall@10": 0.6667,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q020": {
+        "retrieved": 20,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      }
+    },
+    "grouped_by_question_type": {
+      "application": {
+        "questions": 14,
+        "recall@5": 0.9,
+        "recall@10": 0.9476,
+        "recall@20": 0.9857,
+        "reciprocal_rank": 0.9643
+      },
+      "calculation": {
+        "questions": 1,
+        "recall@5": 0.3333,
+        "recall@10": 0.6667,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "recall": {
+        "questions": 5,
+        "recall@5": 0.6417,
+        "recall@10": 0.7083,
+        "recall@20": 0.9,
+        "reciprocal_rank": 1.0
+      }
+    },
+    "grouped_by_n_hops": {
+      "1": {
+        "questions": 11,
+        "recall@5": 0.9394,
+        "recall@10": 0.9697,
+        "recall@20": 1.0,
+        "reciprocal_rank": 0.9545
+      },
+      "2": {
+        "questions": 6,
+        "recall@5": 0.7014,
+        "recall@10": 0.7569,
+        "recall@20": 0.9167,
+        "reciprocal_rank": 1.0
+      },
+      "3": {
+        "questions": 3,
+        "recall@5": 0.5333,
+        "recall@10": 0.7556,
+        "recall@20": 0.9333,
+        "reciprocal_rank": 1.0
+      }
+    }
+  }
+}

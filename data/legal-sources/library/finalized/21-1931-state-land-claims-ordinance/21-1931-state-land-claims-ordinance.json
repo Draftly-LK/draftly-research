@@ -1,0 +1,399 @@
+{
+ "source_id": "SRC057",
+ "title": "State Land (Claims) Ordinance",
+ "title_note": "Singular 'Land'. The parsed page's actname, its <title>, section 1 and the 1980 revised edition (Cap. 294) all print 'STATE LAND (CLAIMS)'. 'State Lands (Claims) Ordinance' in data/legal-sources/manifests/source-registry.csv is wrong and has not been changed here, because that title is a curriculum matching key.",
+ "long_title": "AN ORDINANCE TO PROVIDE FOR THE CONSIDERATION AND DECISION OF APPLICATIONS IN RESPECT OF CLAIMS TO LANDS AT THE DISPOSAL OF THE STATE.",
+ "citation": {
+  "type": "Ordinance",
+  "number": 21,
+  "year": 1931
+ },
+ "date_stated_in_source": "1 st July , 1931",
+ "commencement": "1931-07-01",
+ "commencement_source": "date printed at the head of the parsed edition; confirmed as the commencement date by the 1980 revised edition (Cap. 294) and by srilankalaw. There is no SRC057 row in data/processed/statute_commencement.csv.",
+ "language": "en",
+ "edition": {
+  "publisher": "lankalaw",
+  "kind": "consolidated",
+  "source_url": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y11V294C-1.html",
+  "local_path": "data/legal-sources/library/statutes/HTML/21-1931-state-lands-claims-ordinance.html",
+  "caveat": "private republisher, not the Government Printer"
+ },
+ "amendments": [],
+ "verification_status": "structurally_verified",
+ "amendment_history_status": "none_listed_in_source_header",
+ "editorial_notes": [],
+ "omitted_provisions": [],
+ "overrides_applied": {
+  "checked_against": "https://faolex.fao.org/docs/pdf/srl13616.pdf",
+  "note": "1980 revised edition, Chapter 294, Volume XI, pages 341-342. Used to confirm the singular short title and the commencement date, to correct 'Lane Settlement Ordinance' in section 3 (3), and to supply the Schedule, which the parsed page does not carry."
+ },
+ "quality_flags": [
+  {
+   "kind": "schedule-from-alternate-edition",
+   "detail": "The Schedule is absent from the parsed HTML body -- the page's 'Schedules' hyperlink is a dead relative link -- so its text comes from the 1980 revised-edition PDF, read by OCR. Every amount below carries the OCR string it was read from."
+  },
+  {
+   "kind": "ocr-column-split",
+   "detail": "The revised edition prints amounts in adjacent 'Rs.' and 'c.' columns. OCR merged the two for the 20-to-40-acre row, giving '1200' where the columns read 12 and 00. Read as Rs. 12.00, which is what the surrounding progression (6, 12, 25, 50, 75, 100) requires, but it is the one amount not directly legible."
+  }
+ ],
+ "source_location": {
+  "chapter": "294",
+  "volume": "XI",
+  "page": "341",
+  "from": "alternate_revised_edition"
+ },
+ "alternate_edition_variants": [
+  {
+   "where": "section 3 (3)",
+   "parsed_edition": "section 11 of the Lane Settlement Ordinance",
+   "alternate_edition": "section 11 of the Land Settlement Ordinance",
+   "assessment": "transcription error in the parsed 1981 edition; there is no 'Lane Settlement Ordinance'. The cross-reference below is recorded against the Land Settlement Ordinance and the printed wording is preserved in verbatim.",
+   "status": "resolved_with_source_correction"
+  },
+  {
+   "where": "section 4 (3)",
+   "parsed_edition": "For the purposes of subsection (2) the extent",
+   "alternate_edition": "For the purposes of subsection (2), the extent",
+   "assessment": "punctuation only; no effect on meaning.",
+   "status": "noted_no_change"
+  }
+ ],
+ "schedules_referenced": [
+  {
+   "number": "",
+   "citation": "Schedule",
+   "referenced_by": ["4(1)"],
+   "status": "extracted_from_alternate_edition"
+  }
+ ],
+ "schedules": [
+  {
+   "citation": "Schedule",
+   "heading": "RATES OF STAMP DUTY CHARGEABLE IN RESPECT OF PETITIONS",
+   "authority_note": "[Section 4 (1).]",
+   "source": {
+    "from": "alternate_revised_edition",
+    "url": "https://faolex.fao.org/docs/pdf/srl13616.pdf",
+    "location": "Chapter 294, Volume XI, page 342",
+    "method": "OCR of the revised-edition PDF"
+   },
+   "currency": "LKR",
+   "items": [
+    {
+     "number": "1",
+     "text": "If the claim is to the full ownership of any land or of any share of any land and the aggregate extent of land or of the share of land declared in the petition-",
+     "rates": [
+      {"band": "Does not exceed 2 acres", "rupees": 1, "cents": 0, "raw_ocr": "I 0"},
+      {"band": "Exceeds 2 acres, but does not exceed 5 acres", "rupees": 1, "cents": 50, "raw_ocr": "I 50"},
+      {"band": "Exceeds 5 acres, but does not exceed 10 acres", "rupees": 3, "cents": 50, "raw_ocr": "3 50"},
+      {"band": "Exceeds 10 acres, but does not exceed 20 acres", "rupees": 6, "cents": 0, "raw_ocr": "6 0"},
+      {"band": "Exceeds 20 acres, but does not exceed 40 acres", "rupees": 12, "cents": 0, "raw_ocr": "1200"},
+      {"band": "Exceeds 40 acres, but does not exceed 60 acres", "rupees": 25, "cents": 0, "raw_ocr": "25 0"},
+      {"band": "Exceeds 60 acres, but does not exceed 80 acres", "rupees": 50, "cents": 0, "raw_ocr": "50 0"},
+      {"band": "Exceeds 80 acres, but does not exceed 100 acres", "rupees": 75, "cents": 0, "raw_ocr": "75 0"},
+      {"band": "Exceeds 100 acres", "rupees": 100, "cents": 0, "raw_ocr": "100 0"}
+     ]
+    },
+    {
+     "number": "2",
+     "text": "If the claim is to an interest",
+     "rates": [
+      {"band": "", "rupees": 5, "cents": 0, "raw_ocr": "5 0"}
+     ]
+    }
+   ],
+   "note": "The revised edition abbreviates the repeated bands as 'Exceeds 5 do. 10 acres'. They are written out in full above; 'do.' stands for 'acres, but does not exceed'."
+  }
+ ],
+ "body": [
+  {
+   "type": "section",
+   "number": "1",
+   "heading": "Short title.",
+   "raw_text": "1. This Ordinance may be cited as the State Land (Claims) Ordinance.",
+   "text": "This Ordinance may be cited as the State Land (Claims) Ordinance.",
+   "amendment_events": [],
+   "cross_references": []
+  },
+  {
+   "type": "section",
+   "number": "2",
+   "heading": "Interpretation.",
+   "raw_text": "2. In this Ordinance, unless the context otherwise requires-",
+   "text": "In this Ordinance, unless the context otherwise requires-",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
+    {
+     "type": "definition",
+     "term": "claim",
+     "raw_text": "\" claim \" means any claim made otherwise than under the Land Settlement Ordinance, to land which may lawfully be granted or disposed of by the State, and \" claimant\" means any person making a claim;",
+     "text": "means any claim made otherwise than under the Land Settlement Ordinance, to land which may lawfully be granted or disposed of by the State;",
+     "amendment_events": [],
+     "cross_references": [
+      {
+       "kind": "enactment",
+       "target_document": "Land Settlement Ordinance",
+       "verbatim": "the Land Settlement Ordinance"
+      }
+     ],
+     "split_note": "The source prints 'claim' and 'claimant' in one run-on entry. They are two defined terms and are split here; raw_text on both nodes is the shared printed entry."
+    },
+    {
+     "type": "definition",
+     "term": "claimant",
+     "raw_text": "\" claim \" means any claim made otherwise than under the Land Settlement Ordinance, to land which may lawfully be granted or disposed of by the State, and \" claimant\" means any person making a claim;",
+     "text": "means any person making a claim;",
+     "amendment_events": [],
+     "cross_references": [],
+     "split_note": "The source prints 'claim' and 'claimant' in one run-on entry. They are two defined terms and are split here; raw_text on both nodes is the shared printed entry."
+    },
+    {
+     "type": "definition",
+     "term": "interest",
+     "raw_text": "\" interest \", in relation to any land, means an interest less than the full ownership of the land ;",
+     "text": "in relation to any land, means an interest less than the full ownership of the land ;",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "definition",
+     "term": "Settlement Officer",
+     "raw_text": "\" Settlement Officer \" means the Settlement Officer and any Assistant Settlement Officer appointed under the Land Settlement Ordinance, and any Government Agent or Assistant Government Agent;",
+     "text": "means the Settlement Officer and any Assistant Settlement Officer appointed under the Land Settlement Ordinance, and any Government Agent or Assistant Government Agent;",
+     "amendment_events": [],
+     "cross_references": [
+      {
+       "kind": "enactment",
+       "target_document": "Land Settlement Ordinance",
+       "verbatim": "the Land Settlement Ordinance"
+      }
+     ]
+    },
+    {
+     "type": "definition",
+     "term": "share",
+     "raw_text": "\" share \", in relation to any land, means an undivided share of the land.",
+     "text": "in relation to any land, means an undivided share of the land.",
+     "amendment_events": [],
+     "cross_references": []
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "3",
+   "heading": "Application to the board established by the Land Settlement Ordinance, for the revision of orders.",
+   "raw_text": "3.",
+   "text": "",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
+    {
+     "type": "subsection",
+     "number": "1",
+     "raw_text": "(1) Where the Settlement Officer, in pursuance of the authority of the President, investigates any claim and makes an order in relation thereto, he shall communicate such order to the claimant in writing.",
+     "text": "Where the Settlement Officer, in pursuance of the authority of the President, investigates any claim and makes an order in relation thereto, he shall communicate such order to the claimant in writing.",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "subsection",
+     "number": "2",
+     "raw_text": "(2) Any offer made under this section shall be assessed in accordance with the rules in force for the time being under section 6 of the Land Settlement Ordinance.",
+     "text": "Any offer made under this section shall be assessed in accordance with the rules in force for the time being under section 6 of the Land Settlement Ordinance.",
+     "amendment_events": [],
+     "cross_references": [
+      {
+       "kind": "external",
+       "target_document": "Land Settlement Ordinance",
+       "target_section": "6",
+       "verbatim": "section 6 of the Land Settlement Ordinance"
+      }
+     ]
+    },
+    {
+     "type": "subsection",
+     "number": "3",
+     "raw_text": "(3) Any claimant who is dissatisfied with any such order made by the Settlement Officer may, within a period of one month from the day on which the order was communicated to him, apply to the board established by section 11 of the Lane Settlement Ordinance, (hereinafter referred to as \" the board\"), to revise the order Such application shall be made by petition addressed to the board and delivered to the Settlement Officer, who shall forward the petition to the chairman of the board.",
+     "text": "Any claimant who is dissatisfied with any such order made by the Settlement Officer may, within a period of one month from the day on which the order was communicated to him, apply to the board established by section 11 of the Lane Settlement Ordinance, (hereinafter referred to as \" the board\"), to revise the order Such application shall be made by petition addressed to the board and delivered to the Settlement Officer, who shall forward the petition to the chairman of the board.",
+     "amendment_events": [],
+     "cross_references": [
+      {
+       "kind": "external",
+       "target_document": "Land Settlement Ordinance",
+       "target_section": "11",
+       "verbatim": "section 11 of the Lane Settlement Ordinance",
+       "resolution_status": "resolved_with_source_correction"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "4",
+   "heading": "Stamp duty on petitions.",
+   "raw_text": "4.",
+   "text": "",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
+    {
+     "type": "subsection",
+     "number": "1",
+     "raw_text": "(1) Stamp duty shall be chargeable in respect of petitions addressed to the board under section 3 at the rates specified in the Schedule.",
+     "text": "Stamp duty shall be chargeable in respect of petitions addressed to the board under section 3 at the rates specified in the Schedule.",
+     "amendment_events": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "State Land (Claims) Ordinance",
+       "target_section": "3",
+       "verbatim": "section 3"
+      },
+      {
+       "kind": "schedule",
+       "target_document": "State Land (Claims) Ordinance",
+       "target_schedule": "Schedule",
+       "verbatim": "the Schedule"
+      }
+     ]
+    },
+    {
+     "type": "subsection",
+     "number": "2",
+     "raw_text": "(2) Every claimant to land or to a share of land who makes an application to the board under section 3 shall declare in his petition the aggregate extent of land or of the share of land in respect of which the application is made; and stamp duty shall be chargeable in respect of such petition in accordance with the extent so declared.",
+     "text": "Every claimant to land or to a share of land who makes an application to the board under section 3 shall declare in his petition the aggregate extent of land or of the share of land in respect of which the application is made; and stamp duty shall be chargeable in respect of such petition in accordance with the extent so declared.",
+     "amendment_events": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "State Land (Claims) Ordinance",
+       "target_section": "3",
+       "verbatim": "section 3"
+      }
+     ]
+    },
+    {
+     "type": "subsection",
+     "number": "3",
+     "raw_text": "(3) For the purposes of subsection (2) the extent of a share of land shall be deemed to be the equivalent divided extent of land.",
+     "text": "For the purposes of subsection (2) the extent of a share of land shall be deemed to be the equivalent divided extent of land.",
+     "amendment_events": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "State Land (Claims) Ordinance",
+       "target_section": "4(2)",
+       "verbatim": "subsection (2)"
+      }
+     ]
+    },
+    {
+     "type": "subsection",
+     "number": "4",
+     "raw_text": "(4) It shall be lawful for the board, if it thinks proper to do so, to waive the stamp duty chargeable in respect of any petition or to accept, upon such terms and conditions as it thinks fit, any petition which has not been duly stamped or to order that the whole or any part of the stamp duty paid in respect of any petition be refunded.",
+     "text": "It shall be lawful for the board, if it thinks proper to do so, to waive the stamp duty chargeable in respect of any petition or to accept, upon such terms and conditions as it thinks fit, any petition which has not been duly stamped or to order that the whole or any part of the stamp duty paid in respect of any petition be refunded.",
+     "amendment_events": [],
+     "cross_references": []
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "5",
+   "heading": "Powers of the board and Procedure in respect of applications.",
+   "raw_text": "5.",
+   "text": "",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
+    {
+     "type": "subsection",
+     "number": "1",
+     "raw_text": "(1) The board may, after considering any application made under section 3 and after holding or making or ordering to be held or made any inquiry or inspection that it may think fit, confirm or revise any order made by the Settlement Officer in respect of the claim to which such application relates.",
+     "text": "The board may, after considering any application made under section 3 and after holding or making or ordering to be held or made any inquiry or inspection that it may think fit, confirm or revise any order made by the Settlement Officer in respect of the claim to which such application relates.",
+     "amendment_events": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "State Land (Claims) Ordinance",
+       "target_section": "3",
+       "verbatim": "section 3"
+      }
+     ]
+    },
+    {
+     "type": "subsection",
+     "number": "2",
+     "raw_text": "(2) The provisions of any rules made under section 11 (2) (a) of the Land Settlement Ordinance, so far as such rules are applicable, and the provisions of sections 11 (2) (c), 11 (4), 27 and 28 of the said Ordinance, shall apply to the holding or making of any inquiry or inspection by or by order of the board under this section and to the consideration and decision of every application made to the board under section 3 of this Ordinance, as though references to the Land Settlement Ordinance, in the said rules and sections were references to this Ordinance.",
+     "text": "The provisions of any rules made under section 11 (2) (a) of the Land Settlement Ordinance, so far as such rules are applicable, and the provisions of sections 11 (2) (c), 11 (4), 27 and 28 of the said Ordinance, shall apply to the holding or making of any inquiry or inspection by or by order of the board under this section and to the consideration and decision of every application made to the board under section 3 of this Ordinance, as though references to the Land Settlement Ordinance, in the said rules and sections were references to this Ordinance.",
+     "amendment_events": [],
+     "cross_references": [
+      {
+       "kind": "external",
+       "target_document": "Land Settlement Ordinance",
+       "target_section": "11(2)(a)",
+       "verbatim": "section 11 (2) (a) of the Land Settlement Ordinance"
+      },
+      {
+       "kind": "external",
+       "target_document": "Land Settlement Ordinance",
+       "target_section": "11(2)(c)",
+       "verbatim": "sections 11 (2) (c), 11 (4), 27 and 28 of the said Ordinance",
+       "resolution_note": "'the said Ordinance' is the Land Settlement Ordinance, named earlier in the same subsection."
+      },
+      {
+       "kind": "external",
+       "target_document": "Land Settlement Ordinance",
+       "target_section": "11(4)",
+       "verbatim": "sections 11 (2) (c), 11 (4), 27 and 28 of the said Ordinance",
+       "resolution_note": "'the said Ordinance' is the Land Settlement Ordinance, named earlier in the same subsection."
+      },
+      {
+       "kind": "external",
+       "target_document": "Land Settlement Ordinance",
+       "target_section": "27",
+       "verbatim": "sections 11 (2) (c), 11 (4), 27 and 28 of the said Ordinance",
+       "resolution_note": "'the said Ordinance' is the Land Settlement Ordinance, named earlier in the same subsection."
+      },
+      {
+       "kind": "external",
+       "target_document": "Land Settlement Ordinance",
+       "target_section": "28",
+       "verbatim": "sections 11 (2) (c), 11 (4), 27 and 28 of the said Ordinance",
+       "resolution_note": "'the said Ordinance' is the Land Settlement Ordinance, named earlier in the same subsection."
+      },
+      {
+       "kind": "internal",
+       "target_document": "State Land (Claims) Ordinance",
+       "target_section": "3",
+       "verbatim": "section 3 of this Ordinance"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "6",
+   "heading": "Effect to be given to decision of the board, if accepted.",
+   "raw_text": "6. The chairman of the board shall inform the Settlement Officer of the decision of the board in respect of every such application, and the Settlement Officer shall thereupon communicate such decision to the claimant by writing under his hand; and if upon such decision being communicated to him the claimant signifies to the Settlement Officer that he accepts such decision, the Settlement Officer shall take such steps to give effect thereto as may be necessary.",
+   "text": "The chairman of the board shall inform the Settlement Officer of the decision of the board in respect of every such application, and the Settlement Officer shall thereupon communicate such decision to the claimant by writing under his hand; and if upon such decision being communicated to him the claimant signifies to the Settlement Officer that he accepts such decision, the Settlement Officer shall take such steps to give effect thereto as may be necessary.",
+   "amendment_events": [],
+   "cross_references": []
+  },
+  {
+   "type": "section",
+   "number": "7",
+   "heading": "Orders of Settlement Officer and decisions of the board not to be considered by courts.",
+   "raw_text": "7. No order made by the Settlement Officer under this Ordinance, and no decision or proceedings of the board in relation thereto, shall be considered or adjudicated upon by any court; but the court shall make order according to law as if no such order or decision had been made and no such proceedings taken.",
+   "text": "No order made by the Settlement Officer under this Ordinance, and no decision or proceedings of the board in relation thereto, shall be considered or adjudicated upon by any court; but the court shall make order according to law as if no such order or decision had been made and no such proceedings taken.",
+   "amendment_events": [],
+   "cross_references": []
+  }
+ ]
+}

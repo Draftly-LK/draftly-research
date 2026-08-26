@@ -1,0 +1,75 @@
+{
+ "statute": "Apartment Ownership Law, No. 11 of 1973",
+ "source_id": "SRC012",
+ "note": "Every source actually used to build the canonical trees in library/finalized/11-1973-apartment-ownership-law. Copies, not moves; the originals stay where the registry points.",
+ "not_included": [
+  {
+   "what": "Amendment PDFs from the parliamentary Act archive",
+   "where": "data/legal-sources/library/amendments/incoming/",
+   "why": "Not used. They are image scans with no text layer, two of them 84 MB and 105 MB, and the amending Acts were parsed from the HTML instead."
+  }
+ ],
+ "status": "unverified. LankaLaw is a private republisher, not the Government Printer.",
+ "files": [
+  {
+   "file": "11-1973-apartment-ownership-law.pdf",
+   "role": "principal statute",
+   "edition": "original",
+   "bytes": 165747,
+   "sha256": "e51bab3e7672a992bc566d15a90c23d36ba9cfa141e663db4b1976dbe57cd061",
+   "copied_from": "data/legal-sources/library/statutes/sandbox/apartment-ownership-law-11-1973.pdf",
+   "retrieved_from": "https://www.ccisrilanka.org/wp-content/uploads/2021/04/Apartment-Ownership-Law-No-11-of-1973.pdf",
+   "used_for": "yes: parsed by scripts/parse_consolidated_pdf.py --edition original"
+  },
+  {
+   "file": "11-1973-apartment-ownership-law-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated to 1981 revised edition, amended to 2003",
+   "bytes": 389222,
+   "sha256": "0476708b284d51e548974f378ac36a527e25ac495a40ee10e6a6147a9afc4d39",
+   "copied_from": "data/legal-sources/library/statutes/HTML/11-1973-apartment-ownership-law.html",
+   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y4V83C-1.html",
+   "used_for": "yes: parsed by scripts/build_canonical_statutes.py"
+  },
+  {
+   "file": "45-1982-apartment-ownership-amendment.html",
+   "role": "amending Act",
+   "edition": "as enacted",
+   "bytes": 201232,
+   "sha256": "a3be9fe75932fe6ad18028f59242e0e7bfc696f1b3bc03d281d2ca2f1dc33299",
+   "copied_from": "data/legal-sources/library/amendments/html/45-1982-apartment-ownership-amendment.html",
+   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/03/1982Y0V0C45A.html",
+   "used_for": "yes: parsed by scripts/build_canonical_amendments.py"
+  },
+  {
+   "file": "4-1999-apartment-ownership-amendment.html",
+   "role": "amending Act",
+   "edition": "as enacted",
+   "bytes": 14675,
+   "sha256": "7b64450466da1caf2db1211cc2617d45dacca64aa50e73294f0d1a2c86b576d8",
+   "copied_from": "data/legal-sources/library/amendments/html/4-1999-apartment-ownership-special-provisions.html",
+   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/02/1999Y0V0C4A.html",
+   "used_for": "yes: parsed by scripts/build_canonical_amendments.py"
+  },
+  {
+   "file": "27-2002-apartment-ownership-amendment.html",
+   "role": "amending Act",
+   "edition": "as enacted",
+   "bytes": 8484,
+   "sha256": "4d07943d8554e3a45524bffd903283731503764adcb5bd6c0e53e5055429c103",
+   "copied_from": "data/legal-sources/library/amendments/html/27-2002-apartment-ownership-special-provisions.html",
+   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/03/2002Y0V0C27A.html",
+   "used_for": "yes: parsed by scripts/build_canonical_amendments.py"
+  },
+  {
+   "file": "39-2003-apartment-ownership-amendment.html",
+   "role": "amending Act",
+   "edition": "as enacted",
+   "bytes": 281233,
+   "sha256": "bc9025140239645daff59defb7ebf601910dd8ff1ceb0759d3b09d50e1ec0990",
+   "copied_from": "data/legal-sources/library/amendments/html/39-2003-apartment-ownership-amendment.html",
+   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/03/2003Y0V0C39A.html",
+   "used_for": "yes: parsed by scripts/build_canonical_amendments.py"
+  }
+ ]
+}

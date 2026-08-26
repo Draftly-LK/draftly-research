@@ -1,0 +1,41 @@
+{
+ "statute": "Tea and Rubber Estates (Control of Fragmentation) Act, No. 2 of 1958",
+ "source_id": "SRC023",
+ "note": "Every source actually used to build the canonical trees in library/finalized/2-1958-tea-and-rubber-estates-control-of-fragmentation-act. Copies, not moves; the originals stay where the registry points.",
+ "not_included": [
+  {
+   "what": "The Act's own PDF",
+   "where": "data/legal-sources/library/statutes/2-1958-tea-and-rubber-estates-control-of-fragmentation-act.pdf",
+   "why": "Not used. 4 MB image scan with no text layer; pdftotext returns nine characters. It is the text authority and would settle the four missing subsections and the truncated Schedule, but only after OCR."
+  },
+  {
+   "what": "The amending Act's PDF from the parliamentary Act archive",
+   "where": "data/legal-sources/library/amendments/incoming/20-2005-tea-and-rubber-estate-control-of-fragmentation-act-amendment.pdf",
+   "why": "Not used. The amending Act was parsed from the HTML instead."
+  }
+ ],
+ "status": "unverified. CommonLII is a priority-3 consolidator and LankaLaw a private republisher; neither is the Government Printer.",
+ "files": [
+  {
+   "file": "2-1958-tea-and-rubber-estates-control-of-fragmentation-act.html",
+   "role": "principal statute",
+   "edition": "as enacted (CommonLII Numbered Acts, assembled from 26 pages)",
+   "bytes": 33145,
+   "sha256": "d73b1862700e54e1399522744e315d187510005d0fd7f080852d75dac4bd4800",
+   "copied_from": "data/legal-sources/library/statutes/HTML/tea-and-rubber-estates-control-of-fragmentation-act-2-1958.html",
+   "retrieved_from": "https://www.commonlii.org/lk/legis/num_act/tareofa2o1958487/index.html",
+   "used_for": "yes: harvested by scripts/harvest_commonlii_statutes.py --only SRC023, parsed by scripts/parse_commonlii_statute.py",
+   "note": "Re-harvested after the nested-table truncation bug in harvest_commonlii_statutes.py was fixed; 17,691 -> 33,145 bytes."
+  },
+  {
+   "file": "20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.html",
+   "role": "amending Act",
+   "edition": "as enacted",
+   "bytes": 38792,
+   "sha256": "c613fb58ceac546f5d6bba9514085346a1d29b424a002a499bc22c60b1bfcf60",
+   "copied_from": "data/legal-sources/library/amendments/html/20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.html",
+   "retrieved_from": "lankalaw.net; see data/processed/lankalaw-amendment-downloads.csv",
+   "used_for": "yes: parsed by scripts/build_canonical_amendments.py --number 20 --year 2005"
+  }
+ ]
+}

@@ -45,7 +45,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 ACTIONS = ROOT / "data/processed/actions.csv"
-INDEX = ROOT / "data/legal-sources/derived/statute-section-index.json"
+# The live index. `data/legal-sources/derived/` is where build_section_index.py
+# still writes, but nothing has been there for some time and every consumer,
+# apps/statute-browser included, reads the manifests copy.
+INDEX = ROOT / "data/legal-sources/manifests/statute-section-index.json"
 REGISTRY = ROOT / "data/legal-sources/manifests/source-registry.csv"
 LINKS = ROOT / "evaluation/runs/headnote-recovery-v1/structured/statute_links_v2.csv"
 COMMENCEMENT = ROOT / "data/processed/statute_commencement.csv"
