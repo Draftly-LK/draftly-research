@@ -803,7 +803,18 @@ def parse(page: str, self_title: str) -> tuple[list[dict], list[tuple[str, int, 
         elif name == "sectioncontent":
             number, opening = section_cells.get(offset, (value, ""))
             number = text_of(number)
-            opening_text = text_of(opening).lstrip(". ").strip()
+            opening_raw = text_of(opening)
+            # A section-letter suffix sometimes sits outside the number's own
+            # font tag, e.g. "<a>90</a>E. Notwithstanding..." for what the
+            # print calls section 90E. Reattach it when doing so still yields
+            # a well-formed section number, so the digits and the letter do
+            # not end up split across two different nodes (National Housing
+            # Act section 90E, lost to a bare duplicate "90" otherwise).
+            suffix_match = re.match(r"^([A-Z])\.\s+(?=\S)", opening_raw)
+            if suffix_match and SECTION_NUMBER.match(number + suffix_match.group(1)):
+                number = number + suffix_match.group(1)
+                opening_raw = opening_raw[suffix_match.end():]
+            opening_text = opening_raw.lstrip(". ").strip()
 
             if value.lstrip().startswith("*"):
                 note = EDITORIAL_NOTE.match(value.strip())
