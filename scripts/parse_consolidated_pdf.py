@@ -108,7 +108,7 @@ MARKER_ONLY = re.compile(r"^(?:\[[^\]]+\]\s*)+$")
 # Ordinance section 6(4)'s proviso otherwise ends "...shall be final. PART II
 # TRUSTEES").
 PART_NUMBER_LINE = re.compile(r"^PART\s+[IVXLCM]+\s*$")
-PART_TITLE_LINE = re.compile(r"^[A-Z][A-Z '\-]{1,50}$")
+PART_TITLE_LINE = re.compile(r"^[A-Z][A-Z ,'\-]{1,50}$")
 CHAIN_LINE = re.compile(r"^(?:(Ordinance|Act|Law)s?\s*Nos?[.,]?|\s*\d{1,3}\s+of\s+\d{4}\s*,?)$", re.I)
 # Everything between the long title and the enacting formula is the preamble.
 # These recitals are the Act's own statement of why it exists, and dropping them
