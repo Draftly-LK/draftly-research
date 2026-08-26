@@ -505,6 +505,12 @@
                 "status": "source_as_printed"
             },
             {
+                "code": "external_ref_enactment_named_before_section",
+                "sections_affected": ["47"],
+                "issue": "Section 47's footnote reads '...references to 'protected holdings' in Chapters V and VI of the Land Development Ordinance have been replaced with references to a permit-holder... by virtue of the provisions of section 19A (3), which section has been subsequently repealed...'. The enactment name (Land Development Ordinance) comes well before 'section 19A (3)' in the same sentence rather than immediately after it in an 'of the <name>' phrase, which EXTERNAL_REF's adjacency requirement does not reach; recorded as an internal reference to a nonexistent section 19A of this Ordinance.",
+                "status": "known_parser_limitation"
+            },
+            {
                 "code": "footnote_marker_not_in_editorial_notes",
                 "sections_affected": ["36", "86"],
                 "issue": "Both sections' asterisked footnotes ('[* Repealed by Act No. 9 of 1950]' at s.36, '[* Section 829A is repealed by Law No. 20 of 1977]' at s.86) are present verbatim in the section's own raw_text/text but do not also get a corresponding entry in the tree's top-level editorial_notes array, unlike section 103's equivalent marker. No content is lost -- the footnote text is there to read -- it just is not indexed a second time in editorial_notes.",
