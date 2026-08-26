@@ -409,5 +409,18 @@
             }
         ],
         "verification_status": "unverified"
+    },
+    "SRC049": {
+        "checked_against": "data/legal-sources/library/statutes/19-1931-buddhist-temporalities-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
+        "note": "Parsed from the 2024 consolidated PDF rather than the older (1981 revised-edition) LankaLaw HTML also held for this source, since the PDF is the more current edition.",
+        "publisher": "LankaLaw (private republisher, consolidated to 2024)",
+        "quality_notes": [
+            {
+                "code": "schedule_not_extracted",
+                "detail": "The PDF's Schedules (Forms A/B, declarations for registering a bhikkhu/samanera under section 41) print their own numbered items ('1. Place of Birth', '2. Lay Name in Full', ...), which the section-number pattern cannot tell apart from a real section restarting at 1 -- three such runs (1-44 correct, then two bogus 1-N runs with no headings) were produced before scripts/parse_consolidated_pdf.py was given a boundary cut at the 'Schedules' heading. The tree now stops at section 44 and holds no schedule content; coverage against the full PDF text is 5.51% unmatched as a result, all of it schedule/form vocabulary (checked by hand against the missing-word list).",
+                "status": "known_scope_limitation"
+            }
+        ],
+        "verification_status": "unverified"
     }
 }
