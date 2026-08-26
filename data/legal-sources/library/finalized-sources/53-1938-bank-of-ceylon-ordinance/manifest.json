@@ -1,0 +1,27 @@
+{
+ "statute": "Bank of Ceylon Ordinance",
+ "source_id": "SRC044",
+ "note": "Every source actually used to build the canonical trees in library/finalized/53-1938-bank-of-ceylon-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "53-1938-bank-of-ceylon-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 136076,
+   "sha256": "43d58d49e84374c4eaea82f47213361f3c9dc52a5c4b49c48e53adf0543e6a07",
+   "copied_from": "data/legal-sources/library/statutes/HTML/53-1938-bank-of-ceylon-ordinance.html",
+   "used_for": "parsed into 53-1938-bank-of-ceylon-ordinance-consolidated.json"
+  },
+  {
+   "file": "53-1938-bank-of-ceylon-ordinance.html",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 136076,
+   "sha256": "43d58d49e84374c4eaea82f47213361f3c9dc52a5c4b49c48e53adf0543e6a07",
+   "copied_from": "data/legal-sources/library/statutes/HTML/53-1938-bank-of-ceylon-ordinance.html",
+   "used_for": "5-lens subagent review, 2 rounds, converged; cross-read against official Bank of Ceylon PDF"
+  }
+ ],
+ "statute_note": "The registry's official Bank of Ceylon PDF has its marginal notes in the right column with operative text on the left, opposite the convention parse_consolidated_pdf.py otherwise handles, and no reliable general fix was found in the time available; parsed from LankaLaw's consolidated HTML instead. 22 section numbers (34-40, 45-55, 66-67, 73) are genuinely repealed by Law No. 10 of 1974 and confirmed absent from both sources, not a parsing gap."
+}
