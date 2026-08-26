@@ -444,11 +444,12 @@
     },
     "SRC034": {
         "checked_against": "data/legal-sources/library/statutes/43-1982-stamp-duty-act.pdf (official Inland Revenue Department PDF)",
-        "note": "73 sections, no amendment chain header printed anywhere in the source (unlike every other statute finalized so far). The document instead marks amended provisions with a bare instrument-number/year in the margin (e.g. '71/1988', '27/1991', '29/1993', '27/2000'), a format none of the marker regexes recognise -- they all expect a bracketed '[N, Act of Year]' shape or a proper chain-header block. Left unextracted rather than guessed at.",
+        "note": "75 sections, no amendment chain header printed anywhere in the source (unlike every other statute finalized so far). The document instead marks amended provisions with a bare instrument-number/year in the margin (e.g. '71/1988', '27/1991', '29/1993', '27/2000'), a format none of the marker regexes recognise -- they all expect a bracketed '[N, Act of Year]' shape or a proper chain-header block. Left unextracted rather than guessed at.",
+        "publisher": "Inland Revenue Department",
         "quality_notes": [
             {
                 "code": "rates_schedule_not_extracted",
-                "detail": "The 'RATES SCHEDULE' (stamp duty by document type, keyed to individual Gazette notices) is deliberately excluded from the tree, same as other statutes' Schedules -- coverage against the full PDF is 10.48% unmatched as a result, essentially all of it schedule/rate-table text (Rs., Gazette numbers, dates).",
+                "detail": "The 'RATES SCHEDULE' (stamp duty by document type, keyed to individual Gazette notices) is deliberately excluded from the tree, same as other statutes' Schedules -- coverage against the full PDF is roughly 11% unmatched as a result, essentially all of it schedule/rate-table text (Rs., Gazette numbers, dates).",
                 "status": "known_scope_limitation"
             },
             {
@@ -460,6 +461,29 @@
             {
                 "code": "amendment_markers_unrecognised_format",
                 "detail": "Bare 'N/YEAR' markers (e.g. the four listed above) are not extracted into amendment_events. See the top-level note.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "inline_enumerator_not_split",
+                "sections_affected": ["14"],
+                "issue": "Section 14(1) prints 'a) ... or, b) ...' with the second item's marker appearing mid-line rather than at the start of a printed line, which the parser's line-based block detection cannot catch (it only recognises an enumerator opening a fresh physical line). Paragraphs (a) and (b) are fused into one node; both are complete and undamaged, just not split at their true boundary.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "long_title_note_bleed",
+                "detail": "long_title reads '...IMPOSITION OF STAMP DUTY ON No.43 of 1982 INSTRUMENTS AND DOCUMENTS...': the marginal note beside the first two lines of the printed long title ('Act. / No.43 of 1982') is read from the raw, not yet column-split, page text, so it lands inline between two of the title's own words. Cosmetic only -- no title wording is lost, and the citation number is already held correctly and separately in citation.number.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "external_ref_nested_parenthetical",
+                "sections_affected": ["49"],
+                "issue": "Section 49 refers to 'subsection (1) of section 291 (except paragraphs (a) (d) and (i) thereof) of the Code of Criminal Procedure Act.' EXTERNAL_REF already tolerates one short parenthetical aside between a section number and 'of the <Act>' (fixed for the National Housing Act's 'sections 120 to 127 (both inclusive) of the Land Development Ordinance'), but this aside itself contains nested parens and runs longer than the 40-character allowance, so it falls through and section 291 is recorded as an internal reference to a section that does not exist in this Act.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "wrapped_note_vs_wrapped_body_ambiguity",
+                "sections_affected": ["40"],
+                "issue": "Section 40(10) drops the word 'in' from '...the amount specified in the notice appealed against...' at a line wrap, and the following bare crossheading 'APPEAL TO THE BOARD OF REVIEW' (no 'CHAPTER'/'PART' label, so the existing heading filter does not catch it) glues onto its own end. A fix was attempted (treating any full-width wrapped line with no sentence-closing punctuation before it as more body text) and reverted: it corrected this case but scrambled word order in three other already-parsed statutes, including the already-finalized Buddhist Temporalities Ordinance, by misreading genuine wrapped marginal notes as body text. The general problem -- telling a wrapped note from a wrapped body line apart using only layout, with no reliable column-position signal in this particular document -- was not solved in the time available.",
                 "status": "known_parser_limitation"
             }
         ],
