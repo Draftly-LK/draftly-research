@@ -61,7 +61,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Matrimonial Rights and Inheritance Ordinance | No. 15 of 1876 | 36 | 1 | 0 | yes |
 | 1 | Muslim Intestate Succession Ordinance | No. 10 of 1931 | 4 | 0 | 0 | yes |
 | 1 | Notaries Ordinance | No. 1 of 1907 | 43 | 18 | 7 | - |
-| 1 | Powers of Attorney Ordinance | No. 4 of 1902 | 4 | 3 | 1 | - |
+| 1 | Powers of Attorney Ordinance | No. 4 of 1902 | 9 | 3 | 1 | yes |
 | 1 | Prescription Ordinance | No. 22 of 1871 | 15 | 2 | 1 | - |
 | 1 | Prevention of Frauds Ordinance | No. 7 of 1840 | 19 | 6 | 2 | - |
 | 1 | Registration of Documents Ordinance | No. 23 of 1927 | 42 | 19 | 12 | - |
@@ -102,7 +102,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Surveyors Ordinance | No. 15 of 1889 | 17 | 6 | 1 | - |
 | 3 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 5 | 3 | - |
 | 3 | Trusts Ordinance | No. 9 of 1917 | 123 | 6 | 4 | - |
-| 3 | Urban Councils Ordinance | No. 1 of 1939 | 256 | 48 | 24 | - |
+| 3 | Urban Councils Ordinance | No. 61 of 1939 | 256 | 48 | 24 | - |
 
 ## Category 1 (Most Important) (22)
 
@@ -470,17 +470,22 @@ Amendments (18 known, 7 held):
 
 ### Powers of Attorney Ordinance
 
-**No. 4 of 1902** · commenced 1902-07-01 · curriculum category 1 · SRC017
+**No. 4 of 1902** · commenced 1902-07-01 · curriculum category 1 · SRC017 · **finalized**
 
 Topics: Formation of Deeds, Power of Attorney, Drafting of Deeds
 
-Sections: 4 in the index (headings from legacy 4)
+Sections: 9 in the index (headings from finalized 9)
 
 Parsed from the HTML edition: 9 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 9 sections.
 4 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC017-4-1902.json`
+
+Finalized: `data/legal-sources/library/finalized/4-1902-powers-of-attorney-ordinance/4-1902-powers-of-attorney-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1706,7 +1711,7 @@ Amendments (6 known, 4 held):
 
 ### Urban Councils Ordinance
 
-**No. 1 of 1939** · commenced 1940-01-01 · curriculum category 3 · SRC042
+**No. 61 of 1939** · commenced 1940-01-01 · curriculum category 3 · SRC042
 
 Topics: Examination of Title, Local Authority, UDA, and Other Regulations
 
@@ -1716,14 +1721,14 @@ Parsed from the HTML edition: 263 sections, 80 carrying an amendment marker. Not
 
 Canonical structure: 10 parts, 28 crossheadings, 263 sections, 347 subsections, 27 definitions, 302 paragraphs, 31 subparagraphs.
 263 cross-references; 6 schedules referenced (bodies not published).
-Tree: `data/processed/canonical-statutes/SRC042-1-1939.json`
+Tree: `data/processed/canonical-statutes/SRC042-61-1939.json`
 
 Files:
 
-- PDF: `data/legal-sources/library/statutes/1-1939-urban-councils-ordinance.pdf`
-- Parsed JSON: `data/legal-sources/library/statutes/parsed/1-1939-urban-councils-ordinance.json`
+- PDF: `data/legal-sources/library/statutes/61-1939-urban-councils-ordinance.pdf`
+- Parsed JSON: `data/legal-sources/library/statutes/parsed/61-1939-urban-councils-ordinance.json`
 - Markdown: `data/legal-sources/library-markdown/statutes/urban-councils-ordinance/urban-councils-consolidated-2024.md`  (recorded in the registry but not on disk)
-- HTML: `data/legal-sources/library/statutes/HTML/1-1939-urban-councils-ordinance.html`
+- HTML: `data/legal-sources/library/statutes/HTML/61-1939-urban-councils-ordinance.html`
 
 Amendments (48 known, 24 held):
 
