@@ -5,6 +5,29 @@ This repository holds the research side: the legal corpus, the extraction
 pipelines, and the retrieval engine. Everything it produces is
 `status=unverified` until a lawyer signs it off.
 
+## Retrieval engine pipeline status
+
+Stage-by-stage status of `src/draftly/retrieval/`, from raw corpus to a
+returned answer. ✅ marks a stage that is implemented and working end to end.
+
+| Stage | Status | File(s) |
+| --- | --- | --- |
+| Data prep (corpus selection, 57 statutes + 18 amendments enforced) | ✅ Done | `corpus.py` |
+| Chunking (section extraction) | Partly done — undercounts Civil Procedure Code sections (103 found vs. 801 in the generated section index) | `section_parser.py` |
+| Indexing (SQLite + FTS5/BM25) | ✅ Done | `index.py` |
+| Embedding (dense channel, Gemini) | ✅ Done — degrades to lexical-only without `GEMINI_API_KEY` | `embeddings.py` |
+| Statute graph + personalized-PageRank expansion | ✅ Done | `graph.py` |
+| Hybrid retrieval query (BM25 + dense + graph, fused with RRF) | ✅ Done | `search.py` |
+| Answer generation with citation gate + entailment verifier + corrective retry | ✅ Done | `answering.py` |
+| API layer (FastAPI: `/search`, `/answer`, `/topics`, `/sources`, `/case-statute-links`) | ✅ Done | `api.py` |
+| Evaluation harness (retrieval + full-answer scoring) | ✅ Done | `evaluation.py`, `qa_evaluation.py` |
+| Evaluation gold set | Not started — `evaluation/retrieval-gold.csv` has 0 data rows | `evaluation/retrieval-gold.csv` |
+
+Case-law rule extraction and case-to-statute linking are separate pipelines
+(`scripts/case-law-information-extraction/`,
+`scripts/case-law-statute-linking/`) that do not feed the retrieval index;
+case law is deliberately excluded from it (see Known limitations below).
+
 ## Corpus status
 
 | Layer | Holdings |

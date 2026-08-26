@@ -152,6 +152,23 @@ SOURCE_LOCATION = re.compile(
     r"Chapter\s*([0-9]{1,3})\s*,\s*Volume\s*No\.?\s*([0-9]{1,2})\s*Page\s*No\.?\s*([0-9]{1,4})",
     re.IGNORECASE,
 )
+# A gazette running header/footer ("<Short Title> <page no.> Act, No. NN of
+# YYYY") occasionally sits on the same line as the last provision on the page
+# and gets read straight into it, as "...or Urban Development Authority
+# (Special Provisions) 5 Act, No. 44 of 1984". Genuine prose never has a bare
+# page number wedged between a title and the Ordinance/Act/Law/Code keyword,
+# so that shape is a safe, statute-agnostic signature for the artifact -
+# anchored to the end of the fragment so it can only ever trim a trailing
+# bleed, never touch the substance before it.
+RUNNING_FOOTER = re.compile(
+    r"\s+(?:[A-Z][A-Za-z'-]*|\([A-Za-z\s]+\))"
+    r"(?:\s+(?:[A-Z][A-Za-z'-]*|\([A-Za-z\s]+\)|of|and|the|for)){1,8}"
+    r"\s+\d{1,3}\s+(?:Ordinance|Act|Law|Code)\s*,?\s*N[o°]?\.?\s*\d{1,3}\s+of\s+\d{4}\s*$"
+)
+
+
+def strip_running_footer(text: str) -> str:
+    return RUNNING_FOOTER.sub("", text).rstrip()
 ROMAN_PART = re.compile(r"^PART\s+([IVXLC]+|\d+)\s*$", re.IGNORECASE)
 # A statute with a single schedule just calls it "the Schedule", so requiring an
 # ordinal reports no schedule at all for those.
@@ -339,7 +356,17 @@ def split_provisos(pieces: list[str]) -> list[str]:
 
 def split_enumerated(text: str) -> list[str]:
     """One element into one block per provision it actually carries."""
-    points = [m.start() for m in ENUM_TOKEN.finditer(text)]
+    points = []
+    for m in ENUM_TOKEN.finditer(text):
+        # "the provisions of subsection- (1) of section 19c" is a cross-reference
+        # that happens to land right after a hyphen, not a new item introduced by
+        # one: a line-wrap hyphenation before "subsection" leaves the same shape
+        # as a genuine "as follows- (1) ...". A real list item never opens with
+        # "of section", so that tail is enough to tell the two apart.
+        tail = text[m.end():m.end() + 15]
+        if re.match(r"\s*of\s+section\b", tail, re.IGNORECASE):
+            continue
+        points.append(m.start())
     # One enumerator still needs splitting when text runs ahead of it, as in
     # "Provided that- (i) the fact that ...": the proviso and its first limb.
     if not points or (len(points) == 1 and points[0] == 0):
@@ -417,11 +444,11 @@ def classify(text: str) -> tuple[str, str, str]:
             # A genuine one-item roman list is misread by this, which is the
             # cheaper error.
             if kind == "subparagraph" and len(label) == 1:
-                return "paragraph", label, match.group(2).strip()
-            return kind, label, match.group(2).strip()
+                return "paragraph", label, strip_running_footer(match.group(2).strip())
+            return kind, label, strip_running_footer(match.group(2).strip())
     if PROVISO.match(text):
-        return "proviso", "", text
-    return "text", "", text
+        return "proviso", "", strip_running_footer(text)
+    return "text", "", strip_running_footer(text)
 
 
 KEYWORD_ONLY = re.compile(r"^(?:Act|Ordinance|Law|Code)", re.IGNORECASE)
@@ -1020,6 +1047,25 @@ def apply_heading_overrides(nodes: list[dict], corrections: dict) -> None:
         apply_heading_overrides(node.get("children", []), corrections)
 
 
+def apply_text_corrections(nodes: list[dict], corrections: list[dict], section: str = "") -> None:
+    """A LankaLaw transcription slip verified against a second source (not a
+    defect in the Act itself) is corrected in `text`; `raw_text` keeps the
+    literal printed reading so the defect stays visible. The fix can land in
+    any descendant of the named section, not only a node numbered like it."""
+    by_section = collections.defaultdict(list)
+    for fix in corrections:
+        by_section[fix["section"]].append(fix)
+    for node in nodes:
+        here = node["number"] if node.get("type") == "section" else section
+        for fix in by_section.get(here, []):
+            if fix["find"] in node.get("text", ""):
+                node["text"] = node["text"].replace(fix["find"], fix["replace"])
+                node.setdefault("text_corrections", []).append(
+                    {"find": fix["find"], "replace": fix["replace"], "reason": fix.get("reason", "")}
+                )
+        apply_text_corrections(node.get("children", []), corrections, here)
+
+
 def source_location(page_text: str) -> dict[str, str]:
     match = SOURCE_LOCATION.search(page_text)
     if not match:
@@ -1087,6 +1133,7 @@ def main() -> int:
         override = overrides.get(row["source_id"], {})
         dedupe_events(body)
         apply_heading_overrides(body, override.get("section_headings", {}))
+        apply_text_corrections(body, override.get("text_corrections", []))
         stated = re.search(r"\[\s*([0-9]{1,2}\s*\w{0,4}\s+\w+\s*,?\s*[0-9]{4})\s*\]", text_of(page))
         document = {
             "source_id": row["source_id"],
