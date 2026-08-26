@@ -214,7 +214,11 @@ EXTERNAL_REF = re.compile(
     # 127 (both inclusive) of the Land Development Ordinance"). Both still
     # name an external statute at the end, so both belong to it and not to
     # this one.
-    r"\bsections?\s+(\d{1,3}[A-Z]{0,2}(?:\s*(?:,|and|or|to)\s*(?:sections?\s+)?\d{1,3}[A-Z]{0,2})*)"
+    # A footnote's asterisk can sit right on the number itself ("section
+    # 829A* of the Civil Procedure Code"), so an optional one is allowed
+    # after every number in the run, not just consumed by the whitespace
+    # before "of the".
+    r"\bsections?\s+(\d{1,3}[A-Z]{0,2}\*?(?:\s*(?:,|and|or|to)\s*(?:sections?\s+)?\d{1,3}[A-Z]{0,2}\*?)*)"
     r"(?:\s*\([^()]{0,40}\))?"
     r"\s+of\s+the\s+([A-Z][A-Za-z'()\s,.-]{4,70}?(?:Ordinance|Act|Law|Code))",
 )
