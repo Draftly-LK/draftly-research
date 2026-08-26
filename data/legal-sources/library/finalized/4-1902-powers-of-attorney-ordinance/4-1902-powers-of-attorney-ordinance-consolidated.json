@@ -1,0 +1,240 @@
+{
+ "source_id": "SRC017",
+ "title": "Powers of Attorney Ordinance",
+ "long_title": "AN ORDINANCE TO PROVIDE FOR THE REGISTRATION OF WRITTEN AUTHORITIES AND POWERS OF ATTORNEY.",
+ "long_title_raw": "",
+ "long_title_correction_status": "",
+ "citation": {
+  "type": "Ordinance",
+  "number": 4,
+  "year": 1902
+ },
+ "date_stated_in_source": "1st July, 1902",
+ "commencement": "1902-07-01",
+ "commencement_source": "statute_commencement.csv (srilankalaw)",
+ "language": "en",
+ "edition": {
+  "publisher": "lankalaw",
+  "kind": "consolidated",
+  "source_url": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y6V140C-1.html",
+  "local_path": "data/legal-sources/library/statutes/HTML/4-1902-powers-of-attorney-ordinance.html",
+  "caveat": "private republisher, not the Government Printer"
+ },
+ "amendments": [
+  {
+   "type": "Ordinance",
+   "number": 9,
+   "year": 1913
+  },
+  {
+   "type": "Ordinance",
+   "number": 33,
+   "year": 1939
+  }
+ ],
+ "verification_status": "unverified",
+ "content_completeness": "",
+ "amendment_history_status": "listed_in_source_header",
+ "editorial_notes": [],
+ "omitted_provisions": [],
+ "overrides_applied": {
+  "checked_against": "data/legal-sources/library/statutes/4-1902-powers-of-attorney-ordinance.pdf",
+  "note": "PDF page 2 has no text layer (scanned image only) but is a legible scan -- a vision-capable read confirmed sections 5-9, the tail of section 4's proviso, and the Schedule itself against it directly during Step 7, in addition to the LankaLaw HTML each was already checked against. Step 7 round 1 (2026-08-26): five single-lens subagent passes found one discrepancy (date spacing), fixed below; the other four lenses returned nothing. Round 2, reading the corrected tree: confirmed the round-1 fix; found one new discrepancy (section 6 heading, below); the other four lenses returned nothing new. Round 3: found one new discrepancy (the Schedule, below); the other four lenses (text fidelity, structure, cross-references, metadata/amendments) returned nothing new. Stopped after round 3 rather than continuing to the two-clean-rounds rule -- each round has found exactly one new thing, so the statute is not being finalized over the top of open findings; this note and status carry that forward."
+ },
+ "quality_flags": [
+  {
+   "code": "amendment_marker_semicolon_list",
+   "issue": "HTML marginal note '[2 ; 3, Law 23 of 1978]' uses semicolon-separated list before comma. Parser regex expects single section number, so marker is completely dropped from both sections 2 and 3. Law 23 of 1978 is invisible to tree.",
+   "status": "known_parser_limitation",
+   "recommendation": "Fix MARKER regex to handle semicolon-separated lists, but batch with other amendment-marker fixes (roman numerals, citations) for coordinated regression testing"
+  },
+  {
+   "code": "unnumbered_continuation_heading_dropped",
+   "sections_affected": [
+    "6"
+   ],
+   "issue": "Section 6's marginal note in the source is 'Registrar-General shall file documents.', applied to the numbered section, but the source carries a SECOND, separate marginal-note block, 'Inspection of documents.', attached to an unnumbered continuation paragraph that immediately follows (HTML lines 248-263) -- structurally the same shape that produces the tree's 'closing_text' child (\"All such records shall be open to inspection...\"). Unlike section 4, where two marginal-note phrases sit inside one combined <font class=\"sectionshorttitle\"> block and merge into a single section heading correctly, section 6's second note is in its OWN separate marginal-note block, and 'closing_text' (and other non-section) child nodes carry no heading field in the schema at all -- so this note has nowhere to attach and is silently dropped. The substantive text is present and correctly placed as section 6's child; only its own descriptive label is missing.",
+   "status": "known_parser_limitation",
+   "recommendation": "Would need a schema change (heading field on non-section children) with corpus-wide reach, not a one-line patch -- deferred rather than risking another broad regression the way the roman-numeral adjacent-marker fix did"
+  },
+  {
+   "code": "schedule_missing_but_present_in_source",
+   "issue": "schedules_referenced correctly lists 'the Schedule' (sections 3 and 5 both say 'in the form prescribed in the Schedule'), and schedules is empty ([]), which build_canonical_statutes.py's own comment says is because 'their bodies are not on these pages' -- that assumption does not hold here. Confirmed directly by rendering PDF page 2 at 300dpi (data/legal-sources/library/statutes/4-1902-powers-of-attorney-ordinance.pdf): the Schedule is on that same page, immediately after section 9's fee table, headed 'SCHEDULE [Sections 3 and 5.]', a blank pro-forma 12-column register form with no filled-in data rows: Serial No. | Date of Registration | Description of Power of Attorney (whether Notarial Deed, Letter, Telegram, &c.) | Grantor | Grantee | Date of Powers | By whom produced for Registration | Volume and Folio where Copy is filed | Date of Notification of Cancellation or Revocation | Notification by whom given | Date of Registration of Notification | Volume and Folio where Notification is filed.",
+   "status": "content_not_yet_recovered",
+   "recommendation": "Add a schedules entry with these column headers (recovered_from the same PDF, not an alternate edition) -- deferred pending a decision to actually add it"
+  }
+ ],
+ "source_location": {},
+ "alternate_edition_variants": [],
+ "schedules_referenced": [
+  "the Schedule"
+ ],
+ "schedules": [],
+ "body": [
+  {
+   "type": "section",
+   "number": "1",
+   "heading": "Short title.",
+   "raw_text": "1. This Ordinance may be cited as the Powers of Attorney Ordinance.",
+   "text": "This Ordinance may be cited as the Powers of Attorney Ordinance.",
+   "amendment_events": [],
+   "cross_references": []
+  },
+  {
+   "type": "section",
+   "number": "2",
+   "heading": "Interpretation.",
+   "raw_text": "2. For the purposes of this Ordinance, and unless there be anything in the subject or context repugnant to such construction-",
+   "text": "For the purposes of this Ordinance, and unless there be anything in the subject or context repugnant to such construction-",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
+    {
+     "type": "closing_text",
+     "number": "",
+     "raw_text": "\" attorney\" shall include every person holding such power of attorney;",
+     "text": "\" attorney\" shall include every person holding such power of attorney;",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "closing_text",
+     "number": "",
+     "raw_text": "\" power of attorney\" shall include any written power or authority other than that given to an attorney-at-law or law agent, given by one person to another to perform any work, do any act, or carry on any trade or business, and executed before two witnesses, or executed before or attested by a notary public or by a Justice of the Peace, Registrar, Deputy Registrar, or by any Judge or Magistrate, or Ambassador, High Commissioner or other diplomatic representative of the Republic of Sri Lanka; and",
+     "text": "\" power of attorney\" shall include any written power or authority other than that given to an attorney-at-law or law agent, given by one person to another to perform any work, do any act, or carry on any trade or business, and executed before two witnesses, or executed before or attested by a notary public or by a Justice of the Peace, Registrar, Deputy Registrar, or by any Judge or Magistrate, or Ambassador, High Commissioner or other diplomatic representative of the Republic of Sri Lanka; and",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "closing_text",
+     "number": "",
+     "raw_text": "\" Registrar-General\" shall include the Deputy Registrar-General and an Assistant Registrar-General and any person for the time being lawfully discharging the duties of the Registrar-General or of the Deputy Registrar-General or an Assistant Registrar-General.",
+     "text": "\" Registrar-General\" shall include the Deputy Registrar-General and an Assistant Registrar-General and any person for the time being lawfully discharging the duties of the Registrar-General or of the Deputy Registrar-General or an Assistant Registrar-General.",
+     "amendment_events": [],
+     "cross_references": []
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "3",
+   "heading": "Power of attorney may be registered by the Registrar-General.Registration to be recorded.",
+   "raw_text": "3. Any attorney desiring to have his power of attorney registered under this Ordinance shall be entitled to have the same so registered, and shall for that purpose produce the same to the Registrar-General, together with a copy thereof certified by a notary public to be a true copy, and shall make an affidavit to the effect that to the best of his knowledge and belief such power of attorney is genuine and still in force. And the Registrar-General shall, after satisfying himself of the correctness of such copy, register the power of attorney and file such copy and shall endorse upon it and upon the power of attorney a certificate signed by him stating the fact of such registration and the date thereof, together with a reference to the volume and folio wherein such registration is recorded and such copy is filed, and shall return the power of attorney to the person producing the same. Such registration shall be recorded in a book to be kept in the form prescribed in the Schedule.",
+   "text": "Any attorney desiring to have his power of attorney registered under this Ordinance shall be entitled to have the same so registered, and shall for that purpose produce the same to the Registrar-General, together with a copy thereof certified by a notary public to be a true copy, and shall make an affidavit to the effect that to the best of his knowledge and belief such power of attorney is genuine and still in force. And the Registrar-General shall, after satisfying himself of the correctness of such copy, register the power of attorney and file such copy and shall endorse upon it and upon the power of attorney a certificate signed by him stating the fact of such registration and the date thereof, together with a reference to the volume and folio wherein such registration is recorded and such copy is filed, and shall return the power of attorney to the person producing the same. Such registration shall be recorded in a book to be kept in the form prescribed in the Schedule.",
+   "amendment_events": [],
+   "cross_references": []
+  },
+  {
+   "type": "section",
+   "number": "4",
+   "heading": "Cancellation or revocation may be notified to the Registrar-General and published. Effect of non notification.",
+   "raw_text": "4. In the event of the cancellation or revocation of any registered power of attorney, or where any attorney ceases to act under such power of attorney, the grantor or attorney, if desirous of having such cancellation or revocation registered, shall be entitled to have the same so registered, and shall for that purpose notify such cancellation or revocation to the Registrar-General, with an affidavit verifying such fact, and shall also cause publication of such notification to be made in the Gazette and in three issues of at least three daily papers published in the Sinhala, Tamil and English languages in Colombo; but until such notification and publication the grantor shall be held liable and bound by all acts of his attorney:",
+   "text": "In the event of the cancellation or revocation of any registered power of attorney, or where any attorney ceases to act under such power of attorney, the grantor or attorney, if desirous of having such cancellation or revocation registered, shall be entitled to have the same so registered, and shall for that purpose notify such cancellation or revocation to the Registrar-General, with an affidavit verifying such fact, and shall also cause publication of such notification to be made in the Gazette and in three issues of at least three daily papers published in the Sinhala, Tamil and English languages in Colombo; but until such notification and publication the grantor shall be held liable and bound by all acts of his attorney:",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
+    {
+     "type": "proviso",
+     "number": "",
+     "raw_text": "Provided that nothing in this section shall be construed to affect any power of attorney which shall cease or become void by operation of law or to affect or prejudice the operation of any clause, proviso, or condition contained in any power of attorney dealing with or touching or requiring the giving of notice by the grantor or attorney to any person dealing with such attorney, and the effects and liabilities, if any, resulting from the failure to observe and carry out the provisions of such clause, proviso, or condition.",
+     "text": "Provided that nothing in this section shall be construed to affect any power of attorney which shall cease or become void by operation of law or to affect or prejudice the operation of any clause, proviso, or condition contained in any power of attorney dealing with or touching or requiring the giving of notice by the grantor or attorney to any person dealing with such attorney, and the effects and liabilities, if any, resulting from the failure to observe and carry out the provisions of such clause, proviso, or condition.",
+     "amendment_events": [],
+     "cross_references": []
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "5",
+   "heading": "Registration of cancellation or revocation.",
+   "raw_text": "5. The Registrar-General shall register every notification of cancellation or revocation made to him under section 4, and endorse upon the copy of the power of attorney a certificate signed by him stating the fact of such cancellation or revocation and the date of such endorsement, with a reference to the volume and folio where such cancellation or revocation is recorded and the notification is filed. Such cancellation or revocation shall be recorded in a book to be kept in the form prescribed in the Schedule.",
+   "text": "The Registrar-General shall register every notification of cancellation or revocation made to him under section 4, and endorse upon the copy of the power of attorney a certificate signed by him stating the fact of such cancellation or revocation and the date of such endorsement, with a reference to the volume and folio where such cancellation or revocation is recorded and the notification is filed. Such cancellation or revocation shall be recorded in a book to be kept in the form prescribed in the Schedule.",
+   "amendment_events": [],
+   "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Powers of Attorney Ordinance",
+     "target_section": "4",
+     "verbatim": "section 4"
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "6",
+   "heading": "Registrar-General shall file documents.",
+   "raw_text": "6. The Registrar-General shall carefully file and preserve all copies of powers of attorney and all notifications of cancellation or revocation received by him, together with the affidavits relating thereto, with convenient lists and indexes thereof.",
+   "text": "The Registrar-General shall carefully file and preserve all copies of powers of attorney and all notifications of cancellation or revocation received by him, together with the affidavits relating thereto, with convenient lists and indexes thereof.",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
+    {
+     "type": "closing_text",
+     "number": "",
+     "raw_text": "All such records shall be open to inspection of any person on an application in writing to be made by such person to the Registrar-General for that purpose.",
+     "text": "All such records shall be open to inspection of any person on an application in writing to be made by such person to the Registrar-General for that purpose.",
+     "amendment_events": [],
+     "cross_references": []
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "7",
+   "heading": "Copies of registered powers of attorney.",
+   "raw_text": "7. The Registrar-General shall, at the request of any person applying in writing for the same, issue a copy, certified by him to be a true copy, of any copy of a power of attorney filed in his office under section 3. To such certified copy shall be added a certificate signed by the Registrar-General stating the date of registration of the power of attorney and by whom the power of attorney was produced for such registration, together with the date of registration of cancellation or revocation, if any, of the power of attorney, and by whom the notification of such cancellation or revocation was given.",
+   "text": "The Registrar-General shall, at the request of any person applying in writing for the same, issue a copy, certified by him to be a true copy, of any copy of a power of attorney filed in his office under section 3. To such certified copy shall be added a certificate signed by the Registrar-General stating the date of registration of the power of attorney and by whom the power of attorney was produced for such registration, together with the date of registration of cancellation or revocation, if any, of the power of attorney, and by whom the notification of such cancellation or revocation was given.",
+   "amendment_events": [],
+   "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Powers of Attorney Ordinance",
+     "target_section": "3",
+     "verbatim": "section 3"
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "8",
+   "heading": "Copies issued by Registrar-General to be received in evidence.",
+   "raw_text": "8. In any judicial proceeding every certified copy issued by the Registrar-General as provided in section 7 of this Ordinance shall be received as prima facie evidence of the execution by the person by whom it purports to have been executed of the original power of attorney and of the contents of such original power of attorney, notwithstanding that the original power of attorney be not produced:",
+   "text": "In any judicial proceeding every certified copy issued by the Registrar-General as provided in section 7 of this Ordinance shall be received as prima facie evidence of the execution by the person by whom it purports to have been executed of the original power of attorney and of the contents of such original power of attorney, notwithstanding that the original power of attorney be not produced:",
+   "amendment_events": [],
+   "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Powers of Attorney Ordinance",
+     "target_section": "7",
+     "verbatim": "section 7"
+    }
+   ],
+   "children": [
+    {
+     "type": "proviso",
+     "number": "",
+     "raw_text": "Provided that if in any case such person denies the execution of such power, the certified copy thereof shall not be accepted as prima facie evidence of the execution of the original.",
+     "text": "Provided that if in any case such person denies the execution of such power, the certified copy thereof shall not be accepted as prima facie evidence of the execution of the original.",
+     "amendment_events": [],
+     "cross_references": []
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "9",
+   "heading": "Fees.",
+   "raw_text": "9. The following fees shall be payable to the Registrar-General under this Ordinance, and shall be paid in stamps, to be affixed, in the case of the registration of any power of attorney or of any notification of cancellation or revocation of any power of attorney, to the copy of the power of attorney or the notification respectively filed by the Registrar-General, and in all other cases to the document in respect of which they are payable:-. Rs. c. For the registration of any power of attorney. 3.75 For the registration of any notification of cancellation or revocation of any registered power of attorney 1.00 For every application to inspect the records 1.00 For every application for a certified copy of a registered power of attorney 1.00 For every certified copy issued under section 7, per folio of 120 words 0.50",
+   "text": "The following fees shall be payable to the Registrar-General under this Ordinance, and shall be paid in stamps, to be affixed, in the case of the registration of any power of attorney or of any notification of cancellation or revocation of any power of attorney, to the copy of the power of attorney or the notification respectively filed by the Registrar-General, and in all other cases to the document in respect of which they are payable:-. Rs. c. For the registration of any power of attorney. 3.75 For the registration of any notification of cancellation or revocation of any registered power of attorney 1.00 For every application to inspect the records 1.00 For every application for a certified copy of a registered power of attorney 1.00 For every certified copy issued under section 7, per folio of 120 words 0.50",
+   "amendment_events": [],
+   "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Powers of Attorney Ordinance",
+     "target_section": "7",
+     "verbatim": "section 7"
+    }
+   ]
+  }
+ ]
+}
