@@ -189,7 +189,14 @@ INTERNAL_REF = re.compile(r"\bsections?\s+(\d{1,3}[A-Z]{0,2})\b(?!\s+of\s+the)",
 # of Documents Ordinance". Matching only the last number leaves the earlier ones
 # to be read as references to this statute's own sections, which they are not.
 EXTERNAL_REF = re.compile(
-    r"\bsections?\s+(\d{1,3}[A-Z]{0,2}(?:\s*(?:,|and|to)\s*\d{1,3}[A-Z]{0,2})*)"
+    # A run can restate "section(s)" for each further number ("section 287 or
+    # section 288") rather than just listing bare numbers, and a range can
+    # carry a parenthetical aside before naming its statute ("sections 120 to
+    # 127 (both inclusive) of the Land Development Ordinance"). Both still
+    # name an external statute at the end, so both belong to it and not to
+    # this one.
+    r"\bsections?\s+(\d{1,3}[A-Z]{0,2}(?:\s*(?:,|and|or|to)\s*(?:sections?\s+)?\d{1,3}[A-Z]{0,2})*)"
+    r"(?:\s*\([^()]{0,40}\))?"
     r"\s+of\s+the\s+([A-Z][A-Za-z'()\s,.-]{4,70}?(?:Ordinance|Act|Law|Code))",
 )
 SECTION_IN_LIST = re.compile(r"\d{1,3}[A-Z]{0,2}")
@@ -241,7 +248,11 @@ SUSPECT_TOKENS = (
     "Jess than", "take slops",
 )
 PROVISO = re.compile(
-    r"\bProvided\s*,?\s*(?:however|always|further|nevertheless)?\s*,?\s*that\b",
+    # "it is provided that" is an ordinary statement of what the instrument
+    # says, not a legal proviso qualifying the provision; splitting it off
+    # left National Housing Act section 58's own text as the sentence
+    # fragment "...it is". A real proviso opens its own clause.
+    r"(?<!it is )\bProvided\s*,?\s*(?:however|always|further|nevertheless)?\s*,?\s*that\b",
     re.IGNORECASE,
 )
 
