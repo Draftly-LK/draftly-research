@@ -4,23 +4,23 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ## Counts
 
-- Source files inspected: 31
-- Statutes indexed: 20
-- Records: 6031
-- Distinct sections referenced: 1146
+- Source files inspected: 32
+- Statutes indexed: 21
+- Records: 6211
+- Distinct sections referenced: 1190
 - Records without a heading: 9
 - `section_id` is a rollup key, not a foreign key: it names the section a record belongs to even where that section has no record of its own (a section whose text lives entirely in its children emits nothing). Group by it to score at section level.
 - Temporal metadata: none. `effective_from` / `effective_to` are null on every record; act-level `commencement` is deliberately not propagated to provisions.
 
 ### By node type
 
-- `paragraph`: 2330
-- `subsection`: 2322
-- `section`: 487
-- `subparagraph`: 397
-- `definition`: 183
+- `paragraph`: 2390
+- `subsection`: 2389
+- `section`: 509
+- `subparagraph`: 405
+- `definition`: 194
 - `closing_text`: 147
-- `proviso`: 103
+- `proviso`: 115
 - `text`: 36
 - `item`: 21
 - `schedule`: 3
@@ -34,6 +34,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 - Survey Act: 310
 - Urban Development Authority Act: 242
 - Registration of Title Act: 225
+- Buddhist Temporalities Ordinance: 180
 - Land (Restrictions on Alienation) Act: 136
 - Tea and Rubber Estates (Control of Fragmentation) Act: 109
 - Land Grants (Special Provisions) Act: 78
@@ -67,7 +68,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ### Nodes
 
-- Empty own-text (content lives in children): 667 (definition 1, schedule 1, section 659, subsection 6)
+- Empty own-text (content lives in children): 694 (definition 1, schedule 1, section 681, subsection 11)
 - Repealed stubs excluded: 3
   - `11-1973/section-26/closing_text-1` -- '(*Repealed and replaced by the Companies Act, No. 17 of 1982.)'
   - `21-1844/section-3` -- 'Repealed By'
@@ -80,6 +81,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
 
 - **Apartment Ownership Law** -- verification_status is 'unverified'
 - **Survey Act** -- edition kind is 'original_or_unconfirmed_consolidation', not a confirmed consolidation
+- **Buddhist Temporalities Ordinance** -- verification_status is 'unverified'
 - **Tea and Rubber Estates (Control of Fragmentation) Act** -- edition kind is 'as enacted (Numbered Acts database)', not a confirmed consolidation; 1 amending Act(s) present (20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.json) so their changes may be absent
 - **Wills Ordinance** -- verification_status is 'unverified'
 - **Registration of Title Act** -- edition kind is 'original_or_unconfirmed_consolidation', not a confirmed consolidation

@@ -73,7 +73,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Tesawalamai Pre-emption Ordinance | No. 59 of 1947 | 14 | 0 | 0 | yes |
 | 1 | Western Province Financial Statute | No. 6 of 1990 | 124 | 0 | 0 | - |
 | 1 | Wills Ordinance | No. 21 of 1844 | 9 | 5 | 2 | yes |
-| 2 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 42 | 11 | 8 | - |
+| 2 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 44 | 11 | 8 | yes |
 | 2 | Definition of Boundaries Ordinance | No. 1 of 1844 | 13 | 5 | 1 | - |
 | 2 | Land Acquisition Act | No. 9 of 1950 | 68 | 8 | 7 | - |
 | 2 | Land Development Ordinance | No. 19 of 1935 | 145 | 13 | 12 | - |
@@ -808,17 +808,22 @@ Amendments (5 known, 2 held):
 
 ### Buddhist Temporalities Ordinance
 
-**No. 19 of 1931** · commenced 1931-01-11 · curriculum category 2 · SRC049
+**No. 19 of 1931** · commenced 1931-01-11 · curriculum category 2 · SRC049 · **finalized**
 
 Topics: Temple, Devala, Nindagam, Sangika, and Pudgalika Properties, Criminal and Civil Liabilities of Notaries
 
-Sections: 42 in the index (headings from legacy 41, none 1)
+Sections: 44 in the index (headings from finalized 44)
 
 Parsed from the HTML edition: 44 sections, 6 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 5 parts, 44 sections, 72 subsections, 11 definitions, 67 paragraphs, 13 subparagraphs.
-25 cross-references; 1 schedules referenced (bodies not published).
+Canonical structure: 44 sections, 72 subsections, 11 definitions, 60 paragraphs, 8 subparagraphs.
+26 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC049-19-1931.json`
+
+Finalized: `data/legal-sources/library/finalized/19-1931-buddhist-temporalities-ordinance/19-1931-buddhist-temporalities-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 

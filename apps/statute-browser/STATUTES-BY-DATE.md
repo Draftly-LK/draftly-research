@@ -40,7 +40,7 @@ Passed by the colonial legislature, so almost all are Ordinances.
 | 1924* | Married Women's Property Ordinance | index-only | 29 | 0 | none recorded |
 | 1924* | Village Communities Ordinance | index-only | 58 | 55 | 1933-1952 |
 | 1927 | Registration of Documents Ordinance | No. 23 of 1927 | 42 | 12 | 1947-2024 |
-| 1931 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 42 | 0 | none recorded |
+| 1931 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 44 | 4 | none recorded |
 | 1931 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 1 | 1996 |
 | 1931 | Muslim Intestate Succession Ordinance | No. 10 of 1931 | 4 | 0 | none recorded |
 | 1931 | State Lands (Claims) Ordinance | No. 21 of 1931 | 7 | 0 | none recorded |

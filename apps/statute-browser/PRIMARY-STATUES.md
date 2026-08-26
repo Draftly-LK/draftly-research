@@ -47,7 +47,7 @@ same as unchanged. Every row is `status=unverified`.
 | 025 | Land Acquisition Act | No. 9 of 1950 | 68 | 0 | none recorded |
 | 026 | Land Grants (Special Provisions) Act | No. 43 of 1979 | 20 | 0 | none recorded |
 | 027 | Land Reform Law | No. 1 of 1972 | 83 | 32 | 1975-1986 |
-| 028 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 42 | 0 | none recorded |
+| 028 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 44 | 4 | none recorded |
 | 029 | Definition of Boundaries Ordinance | No. 1 of 1844 | 13 | 0 | none recorded |
 | 030 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 1 | none recorded |
 | 031 | Mortgage Act | No. 6 of 1949 | 126 | 12 | 1953-2024 |
