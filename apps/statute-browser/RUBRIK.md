@@ -96,7 +96,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Sannases and Old Deeds Ordinance | No. 6 of 1866 | not extracted | 1 | 0 | - |
 | 3 | State Lands (Claims) Ordinance | No. 21 of 1931 | 7 | 0 | 0 | yes |
 | 3 | State Lands Encroachments Ordinance | No. 12 of 1840 | not extracted | 3 | 0 | - |
-| 3 | State Lands Ordinance | No. 8 of 1947 | 100 | 2 | 0 | - |
+| 3 | State Lands Ordinance | No. 8 of 1947 | 111 | 2 | 0 | yes |
 | 3 | State Mortgage and Investment Bank Law | No. 13 of 1975 | 69 | 3 | 3 | - |
 | 3 | Survey Act | No. 17 of 2002 | 5 | 0 | 0 | yes |
 | 3 | Surveyors Ordinance | No. 15 of 1889 | 17 | 6 | 1 | - |
@@ -1561,17 +1561,22 @@ Amendments (3 known, 0 held):
 
 ### State Lands Ordinance
 
-**No. 8 of 1947** · Cap. 286 · curriculum category 3 · SRC056
+**No. 8 of 1947** · Cap. 286 · curriculum category 3 · SRC056 · **finalized**
 
 Topics: State Lands
 
-Sections: 100 in the index (headings from legacy 99, none 1)
+Sections: 111 in the index (headings from finalized 111)
 
 Parsed from the HTML edition: 111 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 14 parts, 111 sections, 164 subsections, 30 definitions, 42 paragraphs.
-127 cross-references; 2 schedules referenced (bodies not published).
+130 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC056-8-1947.json`
+
+Finalized: `data/legal-sources/library/finalized/8-1947-state-lands-ordinance/8-1947-state-lands-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 

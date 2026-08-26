@@ -59,7 +59,7 @@ same as unchanged. Every row is `status=unverified`.
 | --- | --- | --- | --- | --- | --- |
 | 034 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 1 | 1996 |
 | 036 | Nindagama Lands Act | No. 30 of 1968 | 30 | 0 | none recorded |
-| 037, 047, 057 | State Lands Ordinance | No. 8 of 1947 | 100 | 0 | none recorded |
+| 037, 047, 057 | State Lands Ordinance | No. 8 of 1947 | 111 | 0 | none recorded |
 | 039 | State Mortgage and Investment Bank Law | No. 13 of 1975 | 69 | 0 | none recorded |
 | 040 | Municipal Councils Ordinance | No. 29 of 1947 | 341 | 0 | none recorded |
 | 042 | National Housing Act | No. 37 of 1954 | 127 | 35 | none recorded |
