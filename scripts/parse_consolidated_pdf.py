@@ -474,8 +474,20 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
     return blocks
 
 
+SCHEDULE_BOUNDARY = re.compile(r"\n[ \t]*Schedules?[ \t]*\n")
+
+
 def parse(pdf: Path, title: str) -> list[dict]:
     text = page_text(pdf)
+    # A Schedule prints its own numbered items (a form's "1. Place of Birth",
+    # "2. Lay Name in Full", ...), which SECTION_START cannot tell apart from a
+    # real section restarting at 1. Nothing here extracts schedule content into
+    # structure yet, so stop before it rather than filing form fields as bogus
+    # sections 1-N with no heading (Buddhist Temporalities Ordinance section 44
+    # was followed by three such runs before this cut).
+    boundary = SCHEDULE_BOUNDARY.search(text)
+    if boundary:
+        text = text[: boundary.start()]
     stream: list[dict] = []
     current_note = ""
 
