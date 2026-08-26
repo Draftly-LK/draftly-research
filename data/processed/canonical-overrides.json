@@ -488,5 +488,17 @@
             }
         ],
         "verification_status": "unverified"
+    },
+    "SRC056": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/8-1947-state-lands-ordinance.html",
+        "note": "111 sections, coverage 1.48% unmatched -- essentially all editorial footnotes about repeals of OTHER enactments (Land Acquisition Ordinance 1876, Seashore Protection Ordinance, etc.), not this Ordinance's own body text. The registry's own PDF (a FAOLEX scan) has heavy OCR noise in its supposed text layer ('MAK.E' for 'MAKE', roman 'I' read for digit '1') and a genuine two-column body-text layout parse_consolidated_pdf.py is not built to read (it assumes one note column and one body column, not two independent columns of substantive text), so this tree is built from LankaLaw's HTML instead.",
+        "quality_notes": [
+            {
+                "code": "commencement_not_in_csv",
+                "detail": "data/processed/statute_commencement.csv (machine-generated, not hand-edited per its own header) has no row for SRC056, so the tree's commencement field is null. The source itself states the date plainly: section 2's interpretation clause reads '\"commencement\", when used with reference to this Ordinance, means the 1st day of September, 1949', matching the bracketed date at the head of the print.",
+                "status": "unresolved_missing_from_source_csv"
+            }
+        ],
+        "verification_status": "unverified"
     }
 }
