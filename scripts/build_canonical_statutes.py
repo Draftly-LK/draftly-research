@@ -122,10 +122,18 @@ DEFINITION_VERB = re.compile(
 
 # Enumerators, outermost first. Numbering style is the only signal the markup
 # gives for depth, so the level is inferred from the shape of the label.
+# The Stamp Duty Act drops the opening bracket throughout -- "1) affidavit or
+# affirmation..." for its top-level exemption list, "a) all documents filed
+# ..." for the lettered items nested under one of those -- which the
+# double-bracket patterns above cannot match at all. Read the same way as
+# their bracketed counterparts (digit -> subsection depth, letter -> paragraph
+# depth) or the whole list collapses into one undivided run of text.
 ENUMERATORS = (
     ("subsection", re.compile(r"^\(\s*(\d{1,3}[A-Z]?)\s*\)\s*(.*)$", re.DOTALL)),
     ("subparagraph", re.compile(r"^\(\s*([ivxlc]{1,6})\s*\)\s*(.*)$", re.DOTALL | re.IGNORECASE)),
     ("paragraph", re.compile(r"^\(\s*([a-z]{1,2})\s*\)\s*(.*)$", re.DOTALL)),
+    ("subsection", re.compile(r"^(\d{1,3}[a-zA-Z]{0,2})\)\s*(.*)$", re.DOTALL)),
+    ("paragraph", re.compile(r"^([a-z]{1,3})\)\s*(.*)$", re.DOTALL)),
 )
 # Depth drives the nesting. Not every statute uses every level: the Apartment
 # Ownership Law is Act -> Section, the Companies Act is Act -> Part ->
