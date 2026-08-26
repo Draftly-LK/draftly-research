@@ -96,13 +96,24 @@ DEFINITION_LEAD_IN = re.compile(
 # Several defined terms can share one markup block. Each new quoted term
 # followed by a definitional verb starts another definition, so the block has to
 # be split before any of it is typed.
+# A qualifier is usually comma-delimited ("'X', in relation to Y, means...")
+# but a bare "in this Ordinance/Act/Law/Code" reads the same way with no
+# commas at all: "'Public Trustee' in this Ordinance means..." (Buddhist
+# Temporalities Ordinance section 2). Both shapes have to be recognised or
+# the qualifier is read as the start of the definition text instead, and
+# DEFINITION_VERB then fails to match because "in this Ordinance means..."
+# does not start with a verb.
+BARE_QUALIFIER = r"in\s+this\s+(?:Ordinance|Act|Law|Code)"
 DEFINITION_START = re.compile(
     r"[\"“‘]\s*[^\"”’]{2,60}?\s*[\"”’]+\s*"
-    r"(?:,\s*[^,]{1,90},\s*)?"
+    rf"(?:,\s*[^,]{{1,90}},\s*|{BARE_QUALIFIER}\s+)?"
     r"(?:means|includes|shall\s+mean|shall\s+include|shall\s+be\s+interpreted)",
     re.IGNORECASE,
 )
-DEFINITION_QUALIFIER = re.compile(r"^\s*,\s*(?P<qualifier>[^,]{1,90}),\s*")
+DEFINITION_QUALIFIER = re.compile(
+    rf"^\s*(?:,\s*(?P<qualifier>[^,]{{1,90}}),\s*|(?P<bare_qualifier>{BARE_QUALIFIER})\s+)",
+    re.IGNORECASE,
+)
 DEFINITION_VERB = re.compile(
     r"^(means\b|includes\b|shall mean\b|shall include\b|shall be interpreted\b"
     r"|has the same meaning\b|does not include\b|shall be deemed\b)",
@@ -418,7 +429,8 @@ def parse_definition(body: str) -> tuple[str, str, str] | None:
     if qualified:
         candidate = rest[qualified.end():]
         if DEFINITION_VERB.match(candidate):
-            qualifier, rest = qualified.group("qualifier").strip(), candidate
+            found = qualified.group("qualifier") or qualified.group("bare_qualifier")
+            qualifier, rest = found.strip(), candidate
     if not DEFINITION_VERB.match(rest):
         return None
     # A doubled opening quote leaves one inside the captured term.
