@@ -1,0 +1,27 @@
+{
+ "statute": "Stamp Duty Act",
+ "source_id": "SRC034",
+ "note": "Every source actually used to build the canonical trees in library/finalized/43-1982-stamp-duty-act. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "43-1982-stamp-duty-act-consolidated.pdf",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 964574,
+   "sha256": "f31dc480fef97a04f06dfc7bfda92ce1278bd710a4844c5c96aec53aec540d7d",
+   "copied_from": "data/legal-sources/library/statutes/43-1982-stamp-duty-act.pdf",
+   "used_for": "parsed into 43-1982-stamp-duty-act-consolidated.json"
+  },
+  {
+   "file": "43-1982-stamp-duty-act.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 964574,
+   "sha256": "f31dc480fef97a04f06dfc7bfda92ce1278bd710a4844c5c96aec53aec540d7d",
+   "copied_from": "data/legal-sources/library/statutes/43-1982-stamp-duty-act.pdf",
+   "used_for": "5-lens subagent review, 2 rounds, converged"
+  }
+ ],
+ "statute_note": "Official Inland Revenue Department PDF, two-column Government Printer layout unlike any other source handled so far. No amendment-chain header exists in the source; amending instruments are marked with a bare number/year in the margin, a format not recognised by the marker extractor. Rates Schedule deliberately excluded. See canonical-overrides.json for six documented residues."
+}
