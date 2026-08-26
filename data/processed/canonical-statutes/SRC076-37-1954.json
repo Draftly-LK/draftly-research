@@ -57,8 +57,32 @@
  "amendment_history_status": "listed_in_source_header",
  "editorial_notes": [],
  "omitted_provisions": [],
- "overrides_applied": {},
- "quality_flags": [],
+ "overrides_applied": {
+  "checked_against": "data/legal-sources/library/statutes/HTML/37-1954-national-housing-act.html",
+  "note": "5-lens subagent review, round 1, against the LankaLaw consolidated HTML. Coverage 0.48% unmatched (nav chrome and the amendment-chain header). Two findings led to parser fixes (see build_canonical_statutes.py git history: section-letter-suffix reattachment, 'it is provided that' proviso exclusion, external-reference range/or handling). Two residues recorded below could not be resolved from this source alone."
+ },
+ "quality_flags": [
+  {
+   "code": "source_lowercase_letter_suffix",
+   "sections_affected": [
+    "25D",
+    "25E",
+    "90B",
+    "90C"
+   ],
+   "issue": "The source itself prints some cross-references to lettered sections in lowercase ('sections 90c, 90D, and 90E', 'section 25c') while the sections' own headings are uppercase (25C, 90C). Recorded verbatim as printed in cross_references[].target_section, so a resolver doing exact-case matching against section numbers will not link these particular references.",
+   "status": "source_as_printed"
+  },
+  {
+   "code": "amendments_without_inline_markers",
+   "acts_affected": [
+    "22 of 1955",
+    "30 of 1955"
+   ],
+   "issue": "Both Acts are named in the amendment-chain header but neither has a corresponding bracketed inline marker anywhere in the body text (checked by direct search of the source HTML), unlike the other four chain entries (42 of 1958, 36 of 1966, 9 of 1978, 49 of 1981), which are all marked. Consistent with either the chain-marking scheme genuinely omitting these two, or their changes having been fully superseded by later amendments to the same provisions.",
+   "status": "unresolved_no_second_source"
+  }
+ ],
  "source_location": {},
  "alternate_edition_variants": [],
  "schedules_referenced": [
