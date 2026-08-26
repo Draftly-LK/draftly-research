@@ -9,29 +9,14 @@ using the judgment year.
 
 | Status | Links | Share | Meaning |
 | --- | ---: | ---: | --- |
-| `applicable` | 1,236 | 67.0% | no recorded amendment falls between the judgment and now |
-| `superseded-since-judgment` | 397 | 21.5% | the section changed after the court spoke, so the current text is not what was applied |
-| `history-unknown` | 212 | 11.5% | no amendment history held for this statute; unknown, not unchanged |
+| `applicable` | 0 | 0.0% | no recorded amendment falls between the judgment and now |
+| `superseded-since-judgment` | 0 | 0.0% | the section changed after the court spoke, so the current text is not what was applied |
+| `history-unknown` | 0 | 0.0% | no amendment history held for this statute; unknown, not unchanged |
 
 ## Sections most affected
 
 | Statute | Section | Links | Amended after the judgment |
 | --- | --- | ---: | --- |
-| Prevention of Frauds Ordinance | s.2 | 33 | 2022, 2024 |
-| Civil Procedure Code | s.18 | 32 | 2023 |
-| Civil Procedure Code | s.547 | 20 | 1993 |
-| Civil Procedure Code | s.5 | 19 | 2017, 2023, 2024 |
-| Civil Procedure Code | s.756 | 13 | 1997 |
-| Rent Act | s.22 | 13 | 2002 |
-| Civil Procedure Code | s.337 | 11 | 1980 |
-| Civil Procedure Code | s.325 | 11 | 1977, 1980 |
-| Civil Procedure Code | s.93 | 10 | 1988, 1991, 2017, 2023 |
-| Civil Procedure Code | s.9 | 8 | 2024 |
-| Evidence Ordinance | s.91 | 7 | 2021 |
-| Civil Procedure Code | s.328 | 7 | 1988 |
-| Civil Procedure Code | s.524 | 6 | 2010 |
-| Registration of Documents Ordinance | s.8 | 6 | 2024 |
-| Prevention of Frauds Ordinance | s.4 | 6 | 2022 |
 
 ## Limits
 
@@ -43,6 +28,6 @@ using the judgment year.
   something changed, not what changed.
 - **`applicable` is not proof.** The earliest amendment recorded anywhere is 1933, but the case corpus starts in 1886, and the pre-1933
   instruments for the Civil Procedure Code sit in a document header the
-  source page does not render. 280 links graded `applicable` come from judgments
+  source page does not render. 0 links graded `applicable` come from judgments
   older than 1933, where an intervening amendment would be invisible to us.
 - `history-unknown` is a coverage gap, not a clean bill of health.

@@ -51,7 +51,7 @@ same as unchanged. Every row is `status=unverified`.
 | 029 | Definition of Boundaries Ordinance | No. 1 of 1844 | 13 | 0 | none recorded |
 | 030 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 1 | none recorded |
 | 031 | Mortgage Act | No. 6 of 1949 | 126 | 12 | 1953-2024 |
-| 032, 052 | Urban Development Authority Act | No. 41 of 1978 | 48 | 0 | none recorded |
+| 032, 052 | Urban Development Authority Act | No. 41 of 1978 | 54 | 30 | none recorded |
 
 ## Category 3 (Important)
 
@@ -62,13 +62,13 @@ same as unchanged. Every row is `status=unverified`.
 | 037, 047, 057 | State Lands Ordinance | No. 8 of 1947 | 100 | 0 | none recorded |
 | 039 | State Mortgage and Investment Bank Law | No. 13 of 1975 | 69 | 0 | none recorded |
 | 040 | Municipal Councils Ordinance | No. 29 of 1947 | 341 | 0 | none recorded |
-| 042 | National Housing Act | No. 37 of 1954 | 30 | 0 | none recorded |
+| 042 | National Housing Act | No. 37 of 1954 | 127 | 35 | none recorded |
 | 043 | Registration of Old Deeds and Instruments Ordinance | No. 35 of 1947 | 12 | 0 | none recorded |
 | 045 | People's Bank Act | No. 29 of 1961 | 72 | 30 | 1978-2019 |
 | 046 | State Lands (Claims) Ordinance | No. 21 of 1931 | 7 | 0 | none recorded |
 | 049 | Surveyors Ordinance | No. 15 of 1889 | 17 | 0 | none recorded |
 | 050 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 0 | none recorded |
-| 051 | Urban Councils Ordinance | No. 1 of 1939 | 256 | 0 | none recorded |
+| 051 | Urban Councils Ordinance | No. 61 of 1939 | 256 | 0 | none recorded |
 | 053 | Survey Act | No. 17 of 2002 | 5 | 0 | none recorded |
 | 054 | Trusts Ordinance | No. 9 of 1917 | 123 | 10 | 1968-2018 |
 | 055 | Bank of Ceylon Ordinance | No. 53 of 1938 | 81 | 0 | none recorded |
@@ -91,7 +91,7 @@ browser and nothing can be retrieved from them.
 
 ## Citation discrepancies
 
-8 curriculum rows cite an Act number or year the registry does not
+9 curriculum rows cite an Act number or year the registry does not
 hold. The statute was still matched, by title or by a pinned entry in
 `OVERRIDES`. Which citation is correct is a question for the curriculum
 author, not something this script can settle.
@@ -106,3 +106,4 @@ author, not something this script can settle.
 | 019 | Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act No.7 of 2017 | Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act, No. 5 of 2017 | - |
 | 036 | Land, Nindagama Ordinance No.30 of 1986 | Nindagama Lands Act, No. 30 of 1968 | - |
 | 045 | People's Bank Act No.43 of 1973 | People's Bank Act, No. 29 of 1961 | - |
+| 051 | Urban Councils Ordinance Act No.1 of 1939 | Urban Councils Ordinance, No. 61 of 1939 | - |

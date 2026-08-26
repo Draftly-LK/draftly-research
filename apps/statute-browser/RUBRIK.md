@@ -88,7 +88,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Lands Resumption Ordinance | No. 4 of 1887 | not extracted | 3 | 1 | - |
 | 3 | Local Authorities Housing Act | No. 14 of 1964 | not extracted | 1 | 1 | - |
 | 3 | Municipal Councils Ordinance | No. 29 of 1947 | 341 | 41 | 33 | - |
-| 3 | National Housing Act | No. 37 of 1954 | 30 | 6 | 5 | - |
+| 3 | National Housing Act | No. 37 of 1954 | 127 | 6 | 5 | yes |
 | 3 | National Housing Development Authority Act | No. 17 of 1979 | not extracted | 6 | 6 | - |
 | 3 | Nindagama Lands Act | No. 30 of 1968 | 30 | 0 | 0 | yes |
 | 3 | People's Bank Act | No. 29 of 1961 | 72 | 8 | 7 | - |
@@ -102,7 +102,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Surveyors Ordinance | No. 15 of 1889 | 17 | 6 | 1 | - |
 | 3 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 5 | 3 | - |
 | 3 | Trusts Ordinance | No. 9 of 1917 | 123 | 6 | 4 | - |
-| 3 | Urban Councils Ordinance | No. 1 of 1939 | 256 | 48 | 24 | - |
+| 3 | Urban Councils Ordinance | No. 61 of 1939 | 256 | 48 | 24 | - |
 
 ## Category 1 (Most Important) (22)
 
@@ -1314,17 +1314,22 @@ Amendments (41 known, 33 held):
 
 ### National Housing Act
 
-**No. 37 of 1954** · commenced 1954-08-06 · curriculum category 3 · SRC076
+**No. 37 of 1954** · commenced 1954-08-06 · curriculum category 3 · SRC076 · **finalized**
 
 Topics: Local Authority, UDA, and Other Regulations, Other Related Statutory Laws
 
-Sections: 30 in the index (headings from legacy 29, none 1)
+Sections: 127 in the index (headings from finalized 125, legacy 2)
 
 Parsed from the HTML edition: 125 sections, 38 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 10 parts, 1 crossheading, 125 sections, 191 subsections, 24 definitions, 145 paragraphs, 18 subparagraphs.
-163 cross-references; 1 schedules referenced (bodies not published).
+164 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC076-37-1954.json`
+
+Finalized: `data/legal-sources/library/finalized/37-1954-national-housing-act/37-1954-national-housing-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1706,7 +1711,7 @@ Amendments (6 known, 4 held):
 
 ### Urban Councils Ordinance
 
-**No. 1 of 1939** · commenced 1940-01-01 · curriculum category 3 · SRC042
+**No. 61 of 1939** · commenced 1940-01-01 · curriculum category 3 · SRC042
 
 Topics: Examination of Title, Local Authority, UDA, and Other Regulations
 
@@ -1716,14 +1721,14 @@ Parsed from the HTML edition: 263 sections, 80 carrying an amendment marker. Not
 
 Canonical structure: 10 parts, 28 crossheadings, 263 sections, 347 subsections, 27 definitions, 302 paragraphs, 31 subparagraphs.
 263 cross-references; 6 schedules referenced (bodies not published).
-Tree: `data/processed/canonical-statutes/SRC042-1-1939.json`
+Tree: `data/processed/canonical-statutes/SRC042-61-1939.json`
 
 Files:
 
-- PDF: `data/legal-sources/library/statutes/1-1939-urban-councils-ordinance.pdf`
-- Parsed JSON: `data/legal-sources/library/statutes/parsed/1-1939-urban-councils-ordinance.json`
+- PDF: `data/legal-sources/library/statutes/61-1939-urban-councils-ordinance.pdf`
+- Parsed JSON: `data/legal-sources/library/statutes/parsed/61-1939-urban-councils-ordinance.json`
 - Markdown: `data/legal-sources/library-markdown/statutes/urban-councils-ordinance/urban-councils-consolidated-2024.md`  (recorded in the registry but not on disk)
-- HTML: `data/legal-sources/library/statutes/HTML/1-1939-urban-councils-ordinance.html`
+- HTML: `data/legal-sources/library/statutes/HTML/61-1939-urban-councils-ordinance.html`
 
 Amendments (48 known, 24 held):
 

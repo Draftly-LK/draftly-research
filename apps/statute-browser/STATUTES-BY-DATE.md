@@ -46,7 +46,7 @@ Passed by the colonial legislature, so almost all are Ordinances.
 | 1931 | State Lands (Claims) Ordinance | No. 21 of 1931 | 7 | 0 | none recorded |
 | 1935 | Land Development Ordinance | No. 19 of 1935 | 145 | 89 | 1969-2022 |
 | 1938 | Bank of Ceylon Ordinance | No. 53 of 1938 | 81 | 0 | none recorded |
-| 1939 | Urban Councils Ordinance | No. 1 of 1939 | 256 | 0 | none recorded |
+| 1939 | Urban Councils Ordinance | No. 61 of 1939 | 256 | 0 | none recorded |
 | 1941* | Debt Conciliation Ordinance | index-only | 67 | 13 | 1941-2019 |
 | 1945 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 1 | none recorded |
 | 1946 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 0 | none recorded |
@@ -67,7 +67,7 @@ Parliament of Ceylon. Acts.
 | 1948* | Rent Restriction Act | index-only | 31 | 0 | none recorded |
 | 1949 | Mortgage Act | No. 6 of 1949 | 126 | 12 | 1953-2024 |
 | 1950 | Land Acquisition Act | No. 9 of 1950 | 68 | 0 | none recorded |
-| 1954 | National Housing Act | No. 37 of 1954 | 30 | 0 | none recorded |
+| 1954 | National Housing Act | No. 37 of 1954 | 127 | 35 | none recorded |
 | 1958 | Tea and Rubber Estates (Control of Fragmentation) Act | No. 2 of 1958 | 25 | 0 | none recorded |
 | 1961 | People's Bank Act | No. 29 of 1961 | 72 | 30 | 1978-2019 |
 | 1968 | Nindagama Lands Act | No. 30 of 1968 | 30 | 0 | none recorded |
@@ -97,7 +97,7 @@ Parliament of Sri Lanka. Acts.
 
 | Year | Statute | Citation | Sections | Amended | Changed |
 | --- | --- | --- | --- | --- | --- |
-| 1978 | Urban Development Authority Act | No. 41 of 1978 | 48 | 0 | none recorded |
+| 1978 | Urban Development Authority Act | No. 41 of 1978 | 54 | 30 | none recorded |
 | 1979* | Judicature Act | index-only | 76 | 46 | 1979-2026 |
 | 1979 | Land Grants (Special Provisions) Act | No. 43 of 1979 | 20 | 0 | none recorded |
 | 1979* | Primary Courts Procedure Act | index-only | 78 | 1 | 1980 |
