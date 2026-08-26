@@ -2,7 +2,7 @@
 
 The 52 statutes named in the curriculum's Category 1 to 3 tables,
 the same set as `PRIMARY-STATUES.md`, with the local files held for each and
-every amending instrument known for it (347 in total, of which
+every amending instrument known for it (348 in total, of which
 223 are held locally).
 
 45 of the 52 have their sections extracted; the rest are
@@ -58,7 +58,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Kandyan Succession Ordinance | No. 23 of 1917 | 4 | 0 | 0 | yes |
 | 1 | Land (Restrictions on Alienation) Act | No. 38 of 2014 | 26 | 2 | 2 | yes |
 | 1 | Matrimonial Rights and Inheritance (Jaffna) Ordinance | No. 58 of 1947 | 40 | 1 | 0 | yes |
-| 1 | Matrimonial Rights and Inheritance Ordinance | No. 15 of 1876 | 36 | 1 | 0 | yes |
+| 1 | Matrimonial Rights and Inheritance Ordinance | No. 15 of 1876 | 36 | 2 | 0 | yes |
 | 1 | Muslim Intestate Succession Ordinance | No. 10 of 1931 | 4 | 0 | 0 | yes |
 | 1 | Notaries Ordinance | No. 1 of 1907 | 43 | 18 | 7 | - |
 | 1 | Powers of Attorney Ordinance | No. 4 of 1902 | 4 | 3 | 1 | - |
@@ -68,7 +68,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Registration of Title Act | No. 21 of 1998 | 75 | 0 | 0 | yes |
 | 1 | Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act | No. 5 of 2017 | not extracted | 0 | 0 | - |
 | 1 | Stamp Duty (Special Provisions) Act | No. 12 of 2006 | 37 | 2 | 2 | - |
-| 1 | Stamp Duty Act | No. 43 of 1982 | 75 | 12 | 10 | - |
+| 1 | Stamp Duty Act | No. 43 of 1982 | 75 | 12 | 10 | yes |
 | 1 | Tea and Rubber Estates (Control of Fragmentation) Act | No. 2 of 1958 | 25 | 1 | 1 | yes |
 | 1 | Tesawalamai Pre-emption Ordinance | No. 59 of 1947 | 14 | 0 | 0 | yes |
 | 1 | Western Province Financial Statute | No. 6 of 1990 | 124 | 0 | 0 | - |
@@ -393,10 +393,11 @@ Files:
 - Markdown: `data/legal-sources/library-markdown/statutes/matrimonial-rights-and-inheritance-ordinance/matrimonial-rights-and-inheritance-consolidated.md`  (recorded in the registry but not on disk)
 - HTML: `data/legal-sources/library/statutes/HTML/15-1876-matrimonial-rights-and-inheritance-ordinance.html`
 
-Amendments (1 known, 0 held):
+Amendments (2 known, 0 held):
 
 | Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
 | --- | --- | --- | --- | --- | --- |
+| No. 2 of 1889 | Ordinance | chain | not held: no source located | not looked up | not read |
 | No. 18 of 1923 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
 
 ### Muslim Intestate Succession Ordinance
@@ -664,17 +665,22 @@ Amendments (2 known, 2 held):
 
 ### Stamp Duty Act
 
-**No. 43 of 1982** · commenced 1982-12-14 · curriculum category 1 · SRC034
+**No. 43 of 1982** · commenced 1982-12-14 · curriculum category 1 · SRC034 · **finalized**
 
 Topics: Formation of Deeds, Stamping of Deeds, Drafting of Deeds, Criminal and Civil Liabilities of Notaries
 
-Sections: 75 in the index (headings from legacy 74, none 1)
+Sections: 75 in the index (headings from finalized 67, legacy 8)
 
 Parsed from the HTML edition: 75 sections, 22 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 18 crossheadings, 20 subheadings, 75 sections, 162 subsections, 37 definitions, 98 paragraphs, 31 subparagraphs.
-119 cross-references.
+Canonical structure: 75 sections, 155 subsections, 29 definitions, 105 paragraphs, 32 subparagraphs.
+100 cross-references.
 Tree: `data/processed/canonical-statutes/SRC034-43-1982.json`
+
+Finalized: `data/legal-sources/library/finalized/43-1982-stamp-duty-act/43-1982-stamp-duty-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1133,17 +1139,17 @@ Amendments (13 known, 7 held):
 | Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
 | --- | --- | --- | --- | --- | --- |
 | No. 45 of 1939 | Ordinance | html | not held: no source located | not looked up | not read |
-| No. 53 of 1943 | Ordinance | html | not held: no source located | not looked up | not read |
-| No. 4 of 1944 | Ordinance | html | not held: no source located | not looked up | not read |
-| No. 34 of 1944 | Ordinance | html | not held: no source located | not looked up | not read |
-| No. 7 of 1945 | Ordinance | html | not held: no source located | not looked up | not read |
+| No. 53 of 1943 | Ordinance | chain+html | not held: no source located | not looked up | not read |
+| No. 4 of 1944 | Ordinance | chain+html | not held: no source located | not looked up | not read |
+| No. 34 of 1944 | Ordinance | chain+html | not held: no source located | not looked up | not read |
+| No. 7 of 1945 | Ordinance | chain+html | not held: no source located | not looked up | not read |
 | No. 39 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
 | No. 19 of 1952 | Act | chain+html | `data/legal-sources/library/amendments/19-1952-bank-of-ceylon-amendment.pdf` | not published as HTML | not read |
 | No. 42 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/42-1954-bank-of-ceylon-amendment.pdf` | not published as HTML | not read |
 | No. 37 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/37-1955-bank-of-ceylon-amendment.pdf` | not published as HTML | not read |
 | No. 34 of 1968 | Act | chain+html | `data/legal-sources/library/amendments/34-1968-bank-of-ceylon-amendment.pdf` | `data/legal-sources/library/amendments/html/34-1968-bank-of-ceylon-amendment.html` | amend |
 | No. 10 of 1974 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/10-1974-bank-of-ceylon-amendment-law.html` | substitute 4; substitute 6; substitute 7; substitute 8; substitute 9; substitute 10; su... |
-| No. 60 of 1980 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/incoming/60-1980-bank-of-ceylon-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/60-1980-bank-of-ceylon-amendment.html` | substitute 3; repeal_and_substitute; substitute 33 |
+| No. 60 of 1980 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/60-1980-bank-of-ceylon-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/60-1980-bank-of-ceylon-amendment.html` | substitute 3; repeal_and_substitute; substitute 33 |
 | No. 54 of 2000 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/incoming/54-2000-bank-of-ceylon-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/54-2000-bank-of-ceylon-amendment.html` | amend 7; amend 16; substitute 17; insert 17A; amend 19; amend 20; substitute 21; amend ... |
 
 ### Land Settlement Ordinance
@@ -1744,7 +1750,7 @@ Amendments (48 known, 24 held):
 
 | Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
 | --- | --- | --- | --- | --- | --- |
-| No. 61 of 1939 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 61 of 1939 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
 | No. 14 of 1940 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
 | No. 3 of 1942 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
 | No. 16 of 1942 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
