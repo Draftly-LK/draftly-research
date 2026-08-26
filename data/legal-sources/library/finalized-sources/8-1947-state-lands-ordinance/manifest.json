@@ -1,0 +1,27 @@
+{
+ "statute": "State Lands Ordinance",
+ "source_id": "SRC056",
+ "note": "Every source actually used to build the canonical trees in library/finalized/8-1947-state-lands-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "8-1947-state-lands-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 245093,
+   "sha256": "e8549bb6f2b6f1ff5afacfd9db305f15135fcaea0082b0581270009c615aabc5",
+   "copied_from": "data/legal-sources/library/statutes/HTML/8-1947-state-lands-ordinance.html",
+   "used_for": "parsed into 8-1947-state-lands-ordinance-consolidated.json"
+  },
+  {
+   "file": "8-1947-state-lands-ordinance.html",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 245093,
+   "sha256": "e8549bb6f2b6f1ff5afacfd9db305f15135fcaea0082b0581270009c615aabc5",
+   "copied_from": "data/legal-sources/library/statutes/HTML/8-1947-state-lands-ordinance.html",
+   "used_for": "5-lens subagent review, 2 rounds, converged"
+  }
+ ],
+ "statute_note": "Registry's own PDF is a FAOLEX scan with heavy OCR noise and a two-column body layout the PDF parser cannot read; parsed from LankaLaw's consolidated HTML instead. Commencement date (1st September 1949) is stated in the source but absent from data/processed/statute_commencement.csv, so the tree's commencement field is null; see canonical-overrides.json."
+}
