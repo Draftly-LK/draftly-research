@@ -5,8 +5,8 @@
  "long_title_raw": "",
  "long_title_correction_status": "",
  "citation": {
-  "type": "",
-  "number": 1,
+  "type": "Ordinance",
+  "number": 61,
   "year": 1939
  },
  "date_stated_in_source": "1 st January , 1940",
@@ -17,15 +17,10 @@
   "publisher": "lankalaw",
   "kind": "consolidated",
   "source_url": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y18V577C-1.html",
-  "local_path": "data/legal-sources/library/statutes/HTML/1-1939-urban-councils-ordinance.html",
+  "local_path": "data/legal-sources/library/statutes/HTML/61-1939-urban-councils-ordinance.html",
   "caveat": "private republisher, not the Government Printer"
  },
  "amendments": [
-  {
-   "type": "Ordinance",
-   "number": 61,
-   "year": 1939
-  },
   {
    "type": "Ordinance",
    "number": 14,
@@ -257,8 +252,33 @@
  "amendment_history_status": "listed_in_source_header",
  "editorial_notes": [],
  "omitted_provisions": [],
- "overrides_applied": {},
- "quality_flags": [],
+ "overrides_applied": {
+  "checked_against": "data/legal-sources/library/statutes/61-1939-urban-councils-ordinance.pdf",
+  "note": "Tree built from pre-2012 LankaLaw HTML edition (1981 revised-edition snapshot). Coverage check vs 2024 consolidated PDF revealed Section 5 and related sections show pre-amendment wording from 1939, superseded by amendments Act 21 of 2017, Act 21 of 2012, Act 24 of 1977, and others."
+ },
+ "quality_flags": [
+  {
+   "code": "source_edition_stale",
+   "sections_affected": [
+    "5",
+    "possibly_others"
+   ],
+   "issue": "Built from pre-2012 LankaLaw HTML. Section 5 currently shows 1939 composition (Minister-prescribed members) but 2024 consolidated PDF shows complete rewrite via later amendments into wards/percentage scheme tied to Local Authorities Elections Ordinance.",
+   "missing_amendments": "At minimum: [2, 21 of 2017], [8, 21 of 2012], [116, 24 of 1977]",
+   "status": "known_limitation_source_edition",
+   "recommendation": "Future work: obtain 2024 consolidated HTML edition or extract current section text from PDF"
+  },
+  {
+   "code": "roman_numeral_parsing",
+   "sections_affected": [
+    "36",
+    "74",
+    "78"
+   ],
+   "issue": "A '(i)' that opens a single-item nested list stays folded into its parent's own text instead of becoming its own child, while a later '(ii)' in the same list correctly splits out as a sibling node -- so the tree shows an orphaned '(ii)' with no '(i)'. Two distinct shapes cause this: s.36(e) prints '(e) (i) to sell, exchange...', two enumerator markers directly adjacent with no lead-in prose; s.74 and s.78 have '...aggregate of (i) the estimated cost...', a marker straight after an ordinary word. A general fix for the first shape (treating a closing paren as a list-introducing character before the next marker) was tried and reverted: it also fires on citation chains like 'subsection (1) or (4) (a) or (b) or (c)', which are one continuous cross-reference, not a new list, and it corrupted that pattern across 25 other statutes in a full-corpus rebuild. The second shape is the same word-boundary ambiguity already documented for SRC039 (s.74/s.78's '(i)' looks identical to a genuine reference like 'referred to in paragraph (a)'), so it is not split either, by the same design choice.",
+   "status": "known_parser_limitation"
+  }
+ ],
  "source_location": {},
  "alternate_edition_variants": [],
  "schedules_referenced": [
