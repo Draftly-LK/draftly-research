@@ -422,5 +422,52 @@
             }
         ],
         "verification_status": "unverified"
+    },
+    "SRC017": {
+        "checked_against": "data/legal-sources/library/statutes/4-1902-powers-of-attorney-ordinance.pdf",
+        "note": "PDF page 2 has no text layer (scanned image only) but is a legible scan -- a vision-capable read confirmed sections 5-9, the tail of section 4's proviso, and the Schedule itself against it directly during Step 7, in addition to the LankaLaw HTML each was already checked against. Step 7 round 1 (2026-08-26): five single-lens subagent passes found one discrepancy (date spacing), fixed below; the other four lenses returned nothing. Round 2, reading the corrected tree: confirmed the round-1 fix; found one new discrepancy (section 6 heading, below); the other four lenses returned nothing new. Round 3: found one new discrepancy (the Schedule, below); the other four lenses (text fidelity, structure, cross-references, metadata/amendments) returned nothing new. Stopped after round 3 rather than continuing to the two-clean-rounds rule -- each round has found exactly one new thing, so the statute is not being finalized over the top of open findings; this note and status carry that forward.",
+        "quality_notes": [
+            {
+                "code": "amendment_marker_semicolon_list",
+                "issue": "HTML marginal note '[2 ; 3, Law 23 of 1978]' uses semicolon-separated list before comma. Parser regex expects single section number, so marker is completely dropped from both sections 2 and 3. Law 23 of 1978 is invisible to tree.",
+                "status": "known_parser_limitation",
+                "recommendation": "Fix MARKER regex to handle semicolon-separated lists, but batch with other amendment-marker fixes (roman numerals, citations) for coordinated regression testing"
+            },
+            {
+                "code": "unnumbered_continuation_heading_dropped",
+                "sections_affected": ["6"],
+                "issue": "Section 6's marginal note in the source is 'Registrar-General shall file documents.', applied to the numbered section, but the source carries a SECOND, separate marginal-note block, 'Inspection of documents.', attached to an unnumbered continuation paragraph that immediately follows (HTML lines 248-263) -- structurally the same shape that produces the tree's 'closing_text' child (\"All such records shall be open to inspection...\"). Unlike section 4, where two marginal-note phrases sit inside one combined <font class=\"sectionshorttitle\"> block and merge into a single section heading correctly, section 6's second note is in its OWN separate marginal-note block, and 'closing_text' (and other non-section) child nodes carry no heading field in the schema at all -- so this note has nowhere to attach and is silently dropped. The substantive text is present and correctly placed as section 6's child; only its own descriptive label is missing.",
+                "status": "known_parser_limitation",
+                "recommendation": "Would need a schema change (heading field on non-section children) with corpus-wide reach, not a one-line patch -- deferred rather than risking another broad regression the way the roman-numeral adjacent-marker fix did"
+            },
+            {
+                "code": "schedule_missing_but_present_in_source",
+                "issue": "schedules_referenced correctly lists 'the Schedule' (sections 3 and 5 both say 'in the form prescribed in the Schedule'), and schedules is empty ([]), which build_canonical_statutes.py's own comment says is because 'their bodies are not on these pages' -- that assumption does not hold here. Confirmed directly by rendering PDF page 2 at 300dpi (data/legal-sources/library/statutes/4-1902-powers-of-attorney-ordinance.pdf): the Schedule is on that same page, immediately after section 9's fee table, headed 'SCHEDULE [Sections 3 and 5.]', a blank pro-forma 12-column register form with no filled-in data rows: Serial No. | Date of Registration | Description of Power of Attorney (whether Notarial Deed, Letter, Telegram, &c.) | Grantor | Grantee | Date of Powers | By whom produced for Registration | Volume and Folio where Copy is filed | Date of Notification of Cancellation or Revocation | Notification by whom given | Date of Registration of Notification | Volume and Folio where Notification is filed.",
+                "status": "content_not_yet_recovered",
+                "recommendation": "Add a schedules entry with these column headers (recovered_from the same PDF, not an alternate edition) -- deferred pending a decision to actually add it"
+            }
+        ],
+        "fixed_in_parser": [
+            {
+                "code": "date_stated_ordinal_spacing",
+                "issue": "date_stated_in_source read '1 st July , 1902' instead of '1st July, 1902' (found by the metadata/amendments lens). text_of() replaces every tag with a space and collapses whitespace to one space rather than none, so a date's ordinal suffix marked up as '1<sup>st</sup> July' picked up a stray space, and a line break before the trailing comma left another.",
+                "status": "fixed_in_build_canonical_statutes",
+                "note": "Fixed at the source (date-parsing step in build_canonical_statutes.py), not just for SRC017: the same artifact was present in 44 other statutes' date_stated_in_source and is now corrected across all of them."
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC071": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/22-1871-prescription-ordinance.html",
+        "note": "Sections 4-15 were silently dropped from the canonical tree: SECTION_CELL required the section number to sit inside its own inner <font> tag, which this document only does for sections 1-3 (a bold, anchor-linked number); sections 4 onward print the number as bare text directly inside the outer <font class=\"sectioncontent\">. Confirmed by running SECTION_CELL against the raw HTML directly -- it matched exactly 3 times before the fix. All 15 sections now parse; regression-checked against all 52 statute HTML files in the corpus (old regex vs. new regex, section numbers compared per file) and only this document's output changed.",
+        "fixed_in_parser": [
+            {
+                "code": "section_number_bare_digit_fallback",
+                "issue": "SECTION_CELL (scripts/build_canonical_statutes.py) matched only a section number wrapped in an inner <font> tag, e.g. this document's sections 1-3 (\"<font class=\\\"sectioncontent\\\"><font style=\\\"...bold...\\\">4</font>. text\"). Sections 4-15 here print the number as bare text with no inner wrapper (\"<font class=\\\"sectioncontent\\\">4. text\"), so the regex found no match and those sections never reached the tree -- silently, with no parse error and no quality flag.",
+                "status": "fixed_in_build_canonical_statutes",
+                "note": "Made the inner <font> wrapper optional with a bare leading-number fallback. Checked against all other 51 statute HTML files in the corpus with old vs. new regex; none of their section counts changed, so the fallback is not known to fire spuriously elsewhere in this corpus."
+            }
+        ],
+        "verification_status": "unverified"
     }
 }

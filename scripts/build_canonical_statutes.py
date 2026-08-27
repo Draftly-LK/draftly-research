@@ -66,10 +66,14 @@ CLASSES = (
     "|morginalnotes|subsectionshorttitle|subsectioncontent"
 )
 SPAN = re.compile(rf'class="({CLASSES})"[^>]*>(.*?)</font>', re.IGNORECASE | re.DOTALL)
-# The section number sits in an inner bold font; the words after it are the
-# section's opening text and belong to the same node.
+# The section number usually sits in an inner bold font, e.g. the Prescription
+# Ordinance's sections 1-3; the words after it are the section's opening text
+# and belong to the same node. From section 4 onward that same document prints
+# the number as bare text directly inside the outer font instead, so the inner
+# font is optional, with a bare leading number as the fallback.
 SECTION_CELL = re.compile(
-    r'class="sectioncontent"[^>]*>\s*<font[^>]*>(.*?)</font>(.*?)</font>', re.IGNORECASE | re.DOTALL
+    r'class="sectioncontent"[^>]*>\s*(?:<font[^>]*>(.*?)</font>|(?P<bare>[0-9]{1,3}[A-Z]{0,2})(?=[.\s]))(.*?)</font>',
+    re.IGNORECASE | re.DOTALL,
 )
 NUMBER_CELL = re.compile(r'<font size="1">\s*(\d{1,3})\s*of\s*(\d{4})\s*</font>', re.IGNORECASE)
 CHAIN_HEAD = re.compile(r'class="ordinancestitle"[^>]*>\s*(Ordinance|Act|Law)s?\s*Nos?', re.IGNORECASE)
@@ -657,7 +661,8 @@ def parse(page: str, self_title: str) -> tuple[list[dict], list[tuple[str, int, 
         stream.append((match.start(), match.group(1).lower(), match.group(2), ""))
     section_cells = {}
     for match in SECTION_CELL.finditer(page):
-        section_cells[match.start()] = (match.group(1), match.group(2))
+        number = match.group(1) if match.group(1) is not None else match.group("bare")
+        section_cells[match.start()] = (number, match.group(3))
 
     has_crossheadings = 'class="sectiontitle"' in page
     current_section = ""
@@ -1169,6 +1174,17 @@ def main() -> int:
         apply_heading_overrides(body, override.get("section_headings", {}))
         apply_text_corrections(body, override.get("text_corrections", []))
         stated = re.search(r"\[\s*([0-9]{1,2}\s*\w{0,4}\s+\w+\s*,?\s*[0-9]{4})\s*\]", text_of(page))
+        # text_of() replaces every tag with a space and collapses whitespace to
+        # one space rather than none, so a date's ordinal suffix marked up as
+        # "1<sup>st</sup> July" comes out "1 st July", and a line break before
+        # the trailing comma comes out "July , 1902" -- both belong to the
+        # markup, not to the date as printed.
+        date_stated = ""
+        if stated:
+            date_stated = re.sub(
+                r"^(\d{1,2})\s+(st|nd|rd|th)\b", r"\1\2", stated.group(1).strip(), flags=re.IGNORECASE
+            )
+            date_stated = re.sub(r"\s+,", ",", date_stated)
         document = {
             "source_id": row["source_id"],
             "title": row["official_title"],
@@ -1188,7 +1204,7 @@ def main() -> int:
             # The page prints a date without calling it a commencement. The
             # commencement below comes from statute_commencement.csv, a different
             # source, so the two are recorded separately rather than merged.
-            "date_stated_in_source": stated.group(1).strip() if stated else "",
+            "date_stated_in_source": date_stated,
             "commencement": commencement.get(row["source_id"], "") or None,
             "commencement_source": "statute_commencement.csv (srilankalaw)"
             if commencement.get(row["source_id"])
