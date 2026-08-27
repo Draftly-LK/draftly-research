@@ -62,7 +62,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Muslim Intestate Succession Ordinance | No. 10 of 1931 | 4 | 0 | 0 | yes |
 | 1 | Notaries Ordinance | No. 1 of 1907 | 43 | 18 | 7 | - |
 | 1 | Powers of Attorney Ordinance | No. 4 of 1902 | 9 | 3 | 1 | yes |
-| 1 | Prescription Ordinance | No. 22 of 1871 | 15 | 2 | 1 | - |
+| 1 | Prescription Ordinance | No. 22 of 1871 | 15 | 2 | 1 | yes |
 | 1 | Prevention of Frauds Ordinance | No. 7 of 1840 | 19 | 6 | 2 | - |
 | 1 | Registration of Documents Ordinance | No. 23 of 1927 | 42 | 19 | 12 | - |
 | 1 | Registration of Title Act | No. 21 of 1998 | 75 | 0 | 0 | yes |
@@ -503,17 +503,22 @@ Amendments (3 known, 1 held):
 
 ### Prescription Ordinance
 
-**No. 22 of 1871** · commenced 1872-01-01 · curriculum category 1 · SRC071
+**No. 22 of 1871** · commenced 1872-01-01 · curriculum category 1 · SRC071 · **finalized**
 
 Topics: Examination of Title, Other Related Statutory Laws
 
-Sections: 15 in the index (headings from srilankalaw 15)
+Sections: 15 in the index (headings from finalized 15)
 
 Parsed from the HTML edition: 3 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 3 sections, 1 definition, 5 paragraphs.
+Canonical structure: 15 sections, 1 definition, 5 paragraphs.
 5 cross-references.
 Tree: `data/processed/canonical-statutes/SRC071-22-1871.json`
+
+Finalized: `data/legal-sources/library/finalized/22-1871-prescription-ordinance/22-1871-prescription-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
