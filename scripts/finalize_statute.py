@@ -58,6 +58,16 @@ def main() -> int:
         help="an amending Act to include, as it is named in canonical-amendments/",
     )
     parser.add_argument(
+        "--held-amendment",
+        action="append",
+        default=[],
+        metavar="PATH[=NOTE]",
+        help=(
+            "an amending instrument held as a file but not parsed into a tree, as "
+            "a repo-relative path, optionally followed by =<why it was not parsed>"
+        ),
+    )
+    parser.add_argument(
         "--verification-source",
         action="append",
         default=[],
@@ -183,6 +193,30 @@ def main() -> int:
                         ),
                     }
                 )
+
+    # An instrument in the chain that no tree was built from is still part of the
+    # statute's history, and a package that drops it reads as though the chain
+    # ended earlier than it did. It keeps its own filename rather than the
+    # `<slug>-amendment` form the parsed ones take, so which instruments were
+    # actually read stays visible from the directory listing alone.
+    for entry in args.held_amendment:
+        path_text, _, why = entry.partition("=")
+        source = REPO_ROOT / path_text
+        if not source.exists():
+            print(f"no such held amendment: {path_text}", file=sys.stderr)
+            return 1
+        copy(source, out_sources / source.name)
+        files.append(
+            {
+                "file": source.name,
+                "role": "amending Act, held but not parsed",
+                "edition": "as_enacted",
+                "bytes": source.stat().st_size,
+                "sha256": digest(source),
+                "copied_from": source.relative_to(REPO_ROOT).as_posix(),
+                "used_for": why or "not parsed; no tree was built from it",
+            }
+        )
 
     # A second edition read only to settle what the parsed one got wrong is
     # still evidence, and the package is unreadable without it: every
