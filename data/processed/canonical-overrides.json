@@ -391,6 +391,38 @@
         ],
         "verification_status": "unverified"
     },
+    "SRC076": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/37-1954-national-housing-act.html",
+        "note": "5-lens subagent review, round 1, against the LankaLaw consolidated HTML. Coverage 0.48% unmatched (nav chrome and the amendment-chain header). Two findings led to parser fixes (see build_canonical_statutes.py git history: section-letter-suffix reattachment, 'it is provided that' proviso exclusion, external-reference range/or handling). Two residues recorded below could not be resolved from this source alone.",
+        "quality_notes": [
+            {
+                "code": "source_lowercase_letter_suffix",
+                "sections_affected": ["25D", "25E", "90B", "90C"],
+                "issue": "The source itself prints some cross-references to lettered sections in lowercase ('sections 90c, 90D, and 90E', 'section 25c') while the sections' own headings are uppercase (25C, 90C). Recorded verbatim as printed in cross_references[].target_section, so a resolver doing exact-case matching against section numbers will not link these particular references.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "amendments_without_inline_markers",
+                "acts_affected": ["22 of 1955", "30 of 1955"],
+                "issue": "Both Acts are named in the amendment-chain header but neither has a corresponding bracketed inline marker anywhere in the body text (checked by direct search of the source HTML), unlike the other four chain entries (42 of 1958, 36 of 1966, 9 of 1978, 49 of 1981), which are all marked. Consistent with either the chain-marking scheme genuinely omitting these two, or their changes having been fully superseded by later amendments to the same provisions.",
+                "status": "unresolved_no_second_source"
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC049": {
+        "checked_against": "data/legal-sources/library/statutes/19-1931-buddhist-temporalities-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
+        "note": "Parsed from the 2024 consolidated PDF rather than the older (1981 revised-edition) LankaLaw HTML also held for this source, since the PDF is the more current edition.",
+        "publisher": "LankaLaw (private republisher, consolidated to 2024)",
+        "quality_notes": [
+            {
+                "code": "schedule_not_extracted",
+                "detail": "The PDF's Schedules (Forms A/B, declarations for registering a bhikkhu/samanera under section 41) print their own numbered items ('1. Place of Birth', '2. Lay Name in Full', ...), which the section-number pattern cannot tell apart from a real section restarting at 1 -- three such runs (1-44 correct, then two bogus 1-N runs with no headings) were produced before scripts/parse_consolidated_pdf.py was given a boundary cut at the 'Schedules' heading. The tree now stops at section 44 and holds no schedule content; coverage against the full PDF text is 5.51% unmatched as a result, all of it schedule/form vocabulary (checked by hand against the missing-word list).",
+                "status": "known_scope_limitation"
+            }
+        ],
+        "verification_status": "unverified"
+    },
     "SRC017": {
         "checked_against": "data/legal-sources/library/statutes/4-1902-powers-of-attorney-ordinance.pdf",
         "note": "PDF page 2 has no text layer (scanned image only) but is a legible scan -- a vision-capable read confirmed sections 5-9, the tail of section 4's proviso, and the Schedule itself against it directly during Step 7, in addition to the LankaLaw HTML each was already checked against. Step 7 round 1 (2026-08-26): five single-lens subagent passes found one discrepancy (date spacing), fixed below; the other four lenses returned nothing. Round 2, reading the corrected tree: confirmed the round-1 fix; found one new discrepancy (section 6 heading, below); the other four lenses returned nothing new. Round 3: found one new discrepancy (the Schedule, below); the other four lenses (text fidelity, structure, cross-references, metadata/amendments) returned nothing new. Stopped after round 3 rather than continuing to the two-clean-rounds rule -- each round has found exactly one new thing, so the statute is not being finalized over the top of open findings; this note and status carry that forward.",

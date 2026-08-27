@@ -53,6 +53,7 @@ from build_canonical_statutes import (  # noqa: E402
     cross_references,
     nest,
     quality_flags,
+    split_definitions,
     split_markers,
     apply_heading_overrides,
 )
@@ -100,6 +101,14 @@ NOTE_TAIL = re.compile(r"^[A-Za-z0-9][A-Za-z0-9 ,.'()&-]{0,30}$")
 # "...unless exempted under section" wrapping onto a line holding just "7."
 BARE_NUMBER = re.compile(r"^(\d{1,3}[A-Z]{0,2})\.$")
 MARKER_ONLY = re.compile(r"^(?:\[[^\]]+\]\s*)+$")
+# A Part heading prints as two centred lines with nothing else on them: "PART
+# II" then its title in capitals, e.g. "TRUSTEES". Nothing here builds typed
+# Part nodes yet, so these are dropped rather than left to glue onto whatever
+# provision happens to be open when they're read (Buddhist Temporalities
+# Ordinance section 6(4)'s proviso otherwise ends "...shall be final. PART II
+# TRUSTEES").
+PART_NUMBER_LINE = re.compile(r"^PART\s+[IVXLCM]+\s*$")
+PART_TITLE_LINE = re.compile(r"^[A-Z][A-Z ,'\-]{1,50}$")
 CHAIN_LINE = re.compile(r"^(?:(Ordinance|Act|Law)s?\s*Nos?[.,]?|\s*\d{1,3}\s+of\s+\d{4}\s*,?)$", re.I)
 # Everything between the long title and the enacting formula is the preamble.
 # These recitals are the Act's own statement of why it exists, and dropping them
@@ -437,7 +446,15 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
         for _note, body in rows
         if SECTION_START.match(body) and SECTION_START.match(body).group(2).strip()
     }
+    skip_next_title = False
     for note, body in rows:
+        if not note and PART_NUMBER_LINE.match(body.strip()):
+            skip_next_title = True
+            continue
+        if skip_next_title:
+            skip_next_title = False
+            if not note and PART_TITLE_LINE.match(body.strip()):
+                continue
         # "7." alone, where section 7 proper appears elsewhere with text, is the
         # end of a sentence in the section above it, not the start of a new one.
         bare = BARE_NUMBER.match(body)
@@ -474,8 +491,20 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
     return blocks
 
 
+SCHEDULE_BOUNDARY = re.compile(r"\n[ \t]*Schedules?[ \t]*\n")
+
+
 def parse(pdf: Path, title: str) -> list[dict]:
     text = page_text(pdf)
+    # A Schedule prints its own numbered items (a form's "1. Place of Birth",
+    # "2. Lay Name in Full", ...), which SECTION_START cannot tell apart from a
+    # real section restarting at 1. Nothing here extracts schedule content into
+    # structure yet, so stop before it rather than filing form fields as bogus
+    # sections 1-N with no heading (Buddhist Temporalities Ordinance section 44
+    # was followed by three such runs before this cut).
+    boundary = SCHEDULE_BOUNDARY.search(text)
+    if boundary:
+        text = text[: boundary.start()]
     stream: list[dict] = []
     current_note = ""
 
@@ -530,18 +559,26 @@ def parse(pdf: Path, title: str) -> list[dict]:
             continue
         defined = parse_definition(body)
         if defined:
-            term, qualifier, definition_text = defined
-            stream.append(
-                {
-                    "type": "definition",
-                    "term": term,
-                    "qualifier": qualifier,
-                    "raw_text": body,
-                    "text": definition_text,
-                    "amendment_events": events,
-                    "cross_references": cross_references(definition_text, title),
-                }
-            )
+            # A single printed line can carry more than one term, as "'Provincial
+            # Council' means...; 'Public Trustee' means...;". Split before typing
+            # it, or every term after the first is swallowed into the first
+            # definition's own text (Buddhist Temporalities Ordinance section 2).
+            for index, piece in enumerate(split_definitions(body)):
+                parsed = parse_definition(piece)
+                if not parsed:
+                    continue
+                term, qualifier, definition_text = parsed
+                stream.append(
+                    {
+                        "type": "definition",
+                        "term": term,
+                        "qualifier": qualifier,
+                        "raw_text": piece,
+                        "text": definition_text,
+                        "amendment_events": events if index == 0 else [],
+                        "cross_references": cross_references(definition_text, title),
+                    }
+                )
             continue
         kind, label, remainder = classify(body)
         if kind == "text" and stream and stream[-1]["type"] != "section":

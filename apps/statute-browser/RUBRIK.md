@@ -73,7 +73,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Tesawalamai Pre-emption Ordinance | No. 59 of 1947 | 14 | 0 | 0 | yes |
 | 1 | Western Province Financial Statute | No. 6 of 1990 | 124 | 0 | 0 | - |
 | 1 | Wills Ordinance | No. 21 of 1844 | 9 | 5 | 2 | yes |
-| 2 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 42 | 11 | 8 | - |
+| 2 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 44 | 11 | 8 | yes |
 | 2 | Definition of Boundaries Ordinance | No. 1 of 1844 | 13 | 5 | 1 | - |
 | 2 | Land Acquisition Act | No. 9 of 1950 | 68 | 8 | 7 | - |
 | 2 | Land Development Ordinance | No. 19 of 1935 | 145 | 13 | 12 | - |
@@ -88,7 +88,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Lands Resumption Ordinance | No. 4 of 1887 | not extracted | 3 | 1 | - |
 | 3 | Local Authorities Housing Act | No. 14 of 1964 | not extracted | 1 | 1 | - |
 | 3 | Municipal Councils Ordinance | No. 29 of 1947 | 341 | 41 | 33 | - |
-| 3 | National Housing Act | No. 37 of 1954 | 30 | 6 | 5 | - |
+| 3 | National Housing Act | No. 37 of 1954 | 127 | 6 | 5 | yes |
 | 3 | National Housing Development Authority Act | No. 17 of 1979 | not extracted | 6 | 6 | - |
 | 3 | Nindagama Lands Act | No. 30 of 1968 | 30 | 0 | 0 | yes |
 | 3 | People's Bank Act | No. 29 of 1961 | 72 | 8 | 7 | - |
@@ -813,17 +813,22 @@ Amendments (5 known, 2 held):
 
 ### Buddhist Temporalities Ordinance
 
-**No. 19 of 1931** · commenced 1931-01-11 · curriculum category 2 · SRC049
+**No. 19 of 1931** · commenced 1931-01-11 · curriculum category 2 · SRC049 · **finalized**
 
 Topics: Temple, Devala, Nindagam, Sangika, and Pudgalika Properties, Criminal and Civil Liabilities of Notaries
 
-Sections: 42 in the index (headings from legacy 41, none 1)
+Sections: 44 in the index (headings from finalized 44)
 
 Parsed from the HTML edition: 44 sections, 6 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 5 parts, 44 sections, 72 subsections, 11 definitions, 67 paragraphs, 13 subparagraphs.
-25 cross-references; 1 schedules referenced (bodies not published).
+Canonical structure: 44 sections, 72 subsections, 11 definitions, 60 paragraphs, 8 subparagraphs.
+26 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC049-19-1931.json`
+
+Finalized: `data/legal-sources/library/finalized/19-1931-buddhist-temporalities-ordinance/19-1931-buddhist-temporalities-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1319,17 +1324,22 @@ Amendments (41 known, 33 held):
 
 ### National Housing Act
 
-**No. 37 of 1954** · commenced 1954-08-06 · curriculum category 3 · SRC076
+**No. 37 of 1954** · commenced 1954-08-06 · curriculum category 3 · SRC076 · **finalized**
 
 Topics: Local Authority, UDA, and Other Regulations, Other Related Statutory Laws
 
-Sections: 30 in the index (headings from legacy 29, none 1)
+Sections: 127 in the index (headings from finalized 125, legacy 2)
 
 Parsed from the HTML edition: 125 sections, 38 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 10 parts, 1 crossheading, 125 sections, 191 subsections, 24 definitions, 145 paragraphs, 18 subparagraphs.
-163 cross-references; 1 schedules referenced (bodies not published).
+164 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC076-37-1954.json`
+
+Finalized: `data/legal-sources/library/finalized/37-1954-national-housing-act/37-1954-national-housing-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 

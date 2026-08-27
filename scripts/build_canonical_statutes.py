@@ -96,13 +96,24 @@ DEFINITION_LEAD_IN = re.compile(
 # Several defined terms can share one markup block. Each new quoted term
 # followed by a definitional verb starts another definition, so the block has to
 # be split before any of it is typed.
+# A qualifier is usually comma-delimited ("'X', in relation to Y, means...")
+# but a bare "in this Ordinance/Act/Law/Code" reads the same way with no
+# commas at all: "'Public Trustee' in this Ordinance means..." (Buddhist
+# Temporalities Ordinance section 2). Both shapes have to be recognised or
+# the qualifier is read as the start of the definition text instead, and
+# DEFINITION_VERB then fails to match because "in this Ordinance means..."
+# does not start with a verb.
+BARE_QUALIFIER = r"in\s+this\s+(?:Ordinance|Act|Law|Code)"
 DEFINITION_START = re.compile(
     r"[\"“‘]\s*[^\"”’]{2,60}?\s*[\"”’]+\s*"
-    r"(?:,\s*[^,]{1,90},\s*)?"
+    rf"(?:,\s*[^,]{{1,90}},\s*|{BARE_QUALIFIER}\s+)?"
     r"(?:means|includes|shall\s+mean|shall\s+include|shall\s+be\s+interpreted)",
     re.IGNORECASE,
 )
-DEFINITION_QUALIFIER = re.compile(r"^\s*,\s*(?P<qualifier>[^,]{1,90}),\s*")
+DEFINITION_QUALIFIER = re.compile(
+    rf"^\s*(?:,\s*(?P<qualifier>[^,]{{1,90}}),\s*|(?P<bare_qualifier>{BARE_QUALIFIER})\s+)",
+    re.IGNORECASE,
+)
 DEFINITION_VERB = re.compile(
     r"^(means\b|includes\b|shall mean\b|shall include\b|shall be interpreted\b"
     r"|has the same meaning\b|does not include\b|shall be deemed\b)",
@@ -189,7 +200,14 @@ INTERNAL_REF = re.compile(r"\bsections?\s+(\d{1,3}[A-Z]{0,2})\b(?!\s+of\s+the)",
 # of Documents Ordinance". Matching only the last number leaves the earlier ones
 # to be read as references to this statute's own sections, which they are not.
 EXTERNAL_REF = re.compile(
-    r"\bsections?\s+(\d{1,3}[A-Z]{0,2}(?:\s*(?:,|and|to)\s*\d{1,3}[A-Z]{0,2})*)"
+    # A run can restate "section(s)" for each further number ("section 287 or
+    # section 288") rather than just listing bare numbers, and a range can
+    # carry a parenthetical aside before naming its statute ("sections 120 to
+    # 127 (both inclusive) of the Land Development Ordinance"). Both still
+    # name an external statute at the end, so both belong to it and not to
+    # this one.
+    r"\bsections?\s+(\d{1,3}[A-Z]{0,2}(?:\s*(?:,|and|or|to)\s*(?:sections?\s+)?\d{1,3}[A-Z]{0,2})*)"
+    r"(?:\s*\([^()]{0,40}\))?"
     r"\s+of\s+the\s+([A-Z][A-Za-z'()\s,.-]{4,70}?(?:Ordinance|Act|Law|Code))",
 )
 SECTION_IN_LIST = re.compile(r"\d{1,3}[A-Z]{0,2}")
@@ -241,7 +259,11 @@ SUSPECT_TOKENS = (
     "Jess than", "take slops",
 )
 PROVISO = re.compile(
-    r"\bProvided\s*,?\s*(?:however|always|further|nevertheless)?\s*,?\s*that\b",
+    # "it is provided that" is an ordinary statement of what the instrument
+    # says, not a legal proviso qualifying the provision; splitting it off
+    # left National Housing Act section 58's own text as the sentence
+    # fragment "...it is". A real proviso opens its own clause.
+    r"(?<!it is )\bProvided\s*,?\s*(?:however|always|further|nevertheless)?\s*,?\s*that\b",
     re.IGNORECASE,
 )
 
@@ -407,7 +429,8 @@ def parse_definition(body: str) -> tuple[str, str, str] | None:
     if qualified:
         candidate = rest[qualified.end():]
         if DEFINITION_VERB.match(candidate):
-            qualifier, rest = qualified.group("qualifier").strip(), candidate
+            found = qualified.group("qualifier") or qualified.group("bare_qualifier")
+            qualifier, rest = found.strip(), candidate
     if not DEFINITION_VERB.match(rest):
         return None
     # A doubled opening quote leaves one inside the captured term.
@@ -803,7 +826,18 @@ def parse(page: str, self_title: str) -> tuple[list[dict], list[tuple[str, int, 
         elif name == "sectioncontent":
             number, opening = section_cells.get(offset, (value, ""))
             number = text_of(number)
-            opening_text = text_of(opening).lstrip(". ").strip()
+            opening_raw = text_of(opening)
+            # A section-letter suffix sometimes sits outside the number's own
+            # font tag, e.g. "<a>90</a>E. Notwithstanding..." for what the
+            # print calls section 90E. Reattach it when doing so still yields
+            # a well-formed section number, so the digits and the letter do
+            # not end up split across two different nodes (National Housing
+            # Act section 90E, lost to a bare duplicate "90" otherwise).
+            suffix_match = re.match(r"^([A-Z])\.\s+(?=\S)", opening_raw)
+            if suffix_match and SECTION_NUMBER.match(number + suffix_match.group(1)):
+                number = number + suffix_match.group(1)
+                opening_raw = opening_raw[suffix_match.end():]
+            opening_text = opening_raw.lstrip(". ").strip()
 
             if value.lstrip().startswith("*"):
                 note = EDITORIAL_NOTE.match(value.strip())
