@@ -469,5 +469,10 @@
             }
         ],
         "verification_status": "unverified"
+    },
+    "SRC001": {
+        "checked_against": "data/legal-sources/library/statutes/7-1840-prevention-of-frauds-ordinance.pdf (consolidated to 2024, per the registry's preferred_source_url)",
+        "note": "Parsed from the consolidated PDF via scripts/parse_consolidated_pdf.py rather than the older LankaLaw HTML also held for this source (data/legal-sources/library/statutes/HTML/7-1840-prevention-of-frauds-ordinance.html). The HTML-based tree was flat -- 19 sections, no subsection/paragraph/proviso structure -- and did not reflect the 2022 or 2024 amendments; the PDF is consolidated to 2024 and its two-column layout carries real subsection structure. Same 19 sections resolve either way; the PDF parse adds 6 subsections, 9 paragraphs and 7 provisos, and the amendment chain (16 of 1852, 11 of 1896, 60 of 1947, 30 of 2022, 4 of 2024). Inline [section, Act of Year] markers were confirmed by direct search of the PDF text for sections 2 (three markers: 60 of 1947, 30 of 2022, 4 of 2024), 3, 4 and 5 (one marker each, 30 of 2022); the two oldest chain entries (16 of 1852, 11 of 1896) have no corresponding inline marker anywhere in the body text, the same unresolved-marker shape already recorded for SRC076.",
+        "verification_status": "unverified"
     }
 }
