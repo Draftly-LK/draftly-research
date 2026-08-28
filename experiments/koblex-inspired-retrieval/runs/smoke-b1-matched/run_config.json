@@ -1,0 +1,23 @@
+{
+  "variant": "b1-koblex-inspired",
+  "timestamp_utc": "2026-08-26T09:17:45.527953+00:00",
+  "top_k": 20,
+  "max_candidates": 91,
+  "corpus_path": "experiments/koblex-inspired-retrieval/data/statute.jsonl",
+  "corpus_records": 5342,
+  "question_path": "experiments/koblex-inspired-retrieval/data/smoke_test_20_questions.jsonl",
+  "question_count": 20,
+  "limit": null,
+  "prompt_version": "v1",
+  "prompt_sha256": {
+    "grounded_answer": "93a08f69085002ee13427fd59be6046958a6a93aef5d1da9da8a92745c08c674",
+    "provision_selection": "ebd8ab0e1a51483c6b7feeb3cc9bc3af224ad4de88aaddcbc6c94750a390834c",
+    "query_generation": "653030320cd8c3e1138fbb6ed52c785e4aba2a4819b55cce97b1adffede8ac4f"
+  },
+  "model": "gpt-5.4-mini-2026-03-17",
+  "reasoning_effort": {
+    "query_generation": "low",
+    "provision_selection": "low",
+    "final_answer": "medium"
+  }
+}

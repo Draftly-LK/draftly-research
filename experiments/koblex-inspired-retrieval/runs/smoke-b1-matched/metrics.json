@@ -1,0 +1,691 @@
+{
+  "run_name": "smoke-b1-matched",
+  "gold_path": "experiments/koblex-inspired-retrieval/data/smoke_test_20_gold.jsonl",
+  "gold_questions": 20,
+  "matching": "exact node_id",
+  "notes": [
+    "Recall@5 is arithmetically capped for smoke-q008: more than 5 gold provisions, so 5/n is the ceiling regardless of retrieval quality. With 20 questions one question moves the mean by 5 points, so Recall@20 and complete-evidence accuracy are the more informative headline numbers.",
+    "complete_evidence_in_candidates on a ranked block is a ceiling: it is the fraction of questions where every gold provision was present anywhere in the retrieved list, i.e. the best the selection stage could possibly achieve."
+  ],
+  "b1_merged_candidates_ranked": {
+    "summary": {
+      "recall@5": 0.8342,
+      "recall@10": 0.8925,
+      "recall@20": 0.9383,
+      "mrr": 0.9625,
+      "complete_evidence_in_candidates": 0.9,
+      "questions": 20
+    },
+    "per_question": {
+      "smoke-q001": {
+        "retrieved": 23,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q002": {
+        "retrieved": 37,
+        "gold": 2,
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q003": {
+        "retrieved": 30,
+        "gold": 2,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q004": {
+        "retrieved": 34,
+        "gold": 3,
+        "recall@5": 0.6667,
+        "recall@10": 0.6667,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q005": {
+        "retrieved": 48,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 0.25,
+        "complete_in_candidates": true
+      },
+      "smoke-q006": {
+        "retrieved": 30,
+        "gold": 2,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q007": {
+        "retrieved": 45,
+        "gold": 5,
+        "recall@5": 0.6,
+        "recall@10": 0.6,
+        "recall@20": 0.6,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": false
+      },
+      "smoke-q008": {
+        "retrieved": 47,
+        "gold": 8,
+        "recall@5": 0.25,
+        "recall@10": 0.25,
+        "recall@20": 0.5,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": false
+      },
+      "smoke-q009": {
+        "retrieved": 29,
+        "gold": 3,
+        "recall@5": 0.6667,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q010": {
+        "retrieved": 35,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q011": {
+        "retrieved": 31,
+        "gold": 2,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q012": {
+        "retrieved": 35,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q013": {
+        "retrieved": 30,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q014": {
+        "retrieved": 31,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q015": {
+        "retrieved": 33,
+        "gold": 3,
+        "recall@5": 0.3333,
+        "recall@10": 0.6667,
+        "recall@20": 0.6667,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q016": {
+        "retrieved": 31,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q017": {
+        "retrieved": 29,
+        "gold": 2,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q018": {
+        "retrieved": 30,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q019": {
+        "retrieved": 49,
+        "gold": 3,
+        "recall@5": 0.6667,
+        "recall@10": 0.6667,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "smoke-q020": {
+        "retrieved": 31,
+        "gold": 1,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      }
+    },
+    "grouped_by_question_type": {
+      "application": {
+        "questions": 14,
+        "recall@5": 0.9238,
+        "recall@10": 0.9238,
+        "recall@20": 0.9714,
+        "reciprocal_rank": 0.9464
+      },
+      "calculation": {
+        "questions": 1,
+        "recall@5": 0.6667,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "recall": {
+        "questions": 5,
+        "recall@5": 0.6167,
+        "recall@10": 0.7833,
+        "recall@20": 0.8333,
+        "reciprocal_rank": 1.0
+      }
+    },
+    "grouped_by_n_hops": {
+      "1": {
+        "questions": 11,
+        "recall@5": 0.9394,
+        "recall@10": 0.9697,
+        "recall@20": 0.9697,
+        "reciprocal_rank": 0.9318
+      },
+      "2": {
+        "questions": 6,
+        "recall@5": 0.7361,
+        "recall@10": 0.8194,
+        "recall@20": 0.9167,
+        "reciprocal_rank": 1.0
+      },
+      "3": {
+        "questions": 3,
+        "recall@5": 0.6445,
+        "recall@10": 0.7556,
+        "recall@20": 0.8667,
+        "reciprocal_rank": 1.0
+      }
+    }
+  },
+  "b1_selected_provisions": {
+    "summary": {
+      "precision": 0.9775,
+      "recall": 0.9383,
+      "f1": 0.9541,
+      "complete_evidence_accuracy": 0.85,
+      "exact_set_accuracy": 0.85,
+      "questions": 20
+    },
+    "per_question": {
+      "smoke-q001": {
+        "selected_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q002": {
+        "selected_count": 2,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q003": {
+        "selected_count": 2,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q004": {
+        "selected_count": 2,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "complete_evidence": false,
+        "exact_set": false
+      },
+      "smoke-q005": {
+        "selected_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q006": {
+        "selected_count": 2,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q007": {
+        "selected_count": 4,
+        "gold": 5,
+        "precision": 0.75,
+        "recall": 0.6,
+        "f1": 0.6667,
+        "complete_evidence": false,
+        "exact_set": false
+      },
+      "smoke-q008": {
+        "selected_count": 5,
+        "gold": 8,
+        "precision": 0.8,
+        "recall": 0.5,
+        "f1": 0.6154,
+        "complete_evidence": false,
+        "exact_set": false
+      },
+      "smoke-q009": {
+        "selected_count": 3,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q010": {
+        "selected_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q011": {
+        "selected_count": 2,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q012": {
+        "selected_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q013": {
+        "selected_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q014": {
+        "selected_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q015": {
+        "selected_count": 3,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q016": {
+        "selected_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q017": {
+        "selected_count": 2,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q018": {
+        "selected_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q019": {
+        "selected_count": 3,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q020": {
+        "selected_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      }
+    },
+    "ranking_note": "Selections are an unordered set. No Recall@k or MRR is reported; their earlier BM25 positions are deliberately not reused as a pseudo-ranking.",
+    "grouped_by_question_type": {
+      "application": {
+        "questions": 14,
+        "precision": 0.9821,
+        "recall": 0.9476,
+        "f1": 0.9619,
+        "complete_evidence": 0.8571,
+        "exact_set": 0.8571
+      },
+      "calculation": {
+        "questions": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": 1.0,
+        "exact_set": 1.0
+      },
+      "recall": {
+        "questions": 5,
+        "precision": 0.96,
+        "recall": 0.9,
+        "f1": 0.9231,
+        "complete_evidence": 0.8,
+        "exact_set": 0.8
+      }
+    },
+    "grouped_by_n_hops": {
+      "1": {
+        "questions": 11,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": 1.0,
+        "exact_set": 1.0
+      },
+      "2": {
+        "questions": 6,
+        "precision": 0.9667,
+        "recall": 0.9167,
+        "f1": 0.9359,
+        "complete_evidence": 0.8333,
+        "exact_set": 0.8333
+      },
+      "3": {
+        "questions": 3,
+        "precision": 0.9167,
+        "recall": 0.7556,
+        "f1": 0.8222,
+        "complete_evidence": 0.3333,
+        "exact_set": 0.3333
+      }
+    }
+  },
+  "b1_answer_citations": {
+    "citation_precision": 0.99,
+    "citation_recall": 0.9383,
+    "citation_f1": 0.9583,
+    "citation_exact_match": 0.85,
+    "questions": 20,
+    "per_question": {
+      "smoke-q001": {
+        "cited_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q002": {
+        "cited_count": 2,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q003": {
+        "cited_count": 2,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q004": {
+        "cited_count": 2,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "complete_evidence": false,
+        "exact_set": false
+      },
+      "smoke-q005": {
+        "cited_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q006": {
+        "cited_count": 2,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q007": {
+        "cited_count": 3,
+        "gold": 5,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "complete_evidence": false,
+        "exact_set": false
+      },
+      "smoke-q008": {
+        "cited_count": 5,
+        "gold": 8,
+        "precision": 0.8,
+        "recall": 0.5,
+        "f1": 0.6154,
+        "complete_evidence": false,
+        "exact_set": false
+      },
+      "smoke-q009": {
+        "cited_count": 3,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q010": {
+        "cited_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q011": {
+        "cited_count": 2,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q012": {
+        "cited_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q013": {
+        "cited_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q014": {
+        "cited_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q015": {
+        "cited_count": 3,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q016": {
+        "cited_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q017": {
+        "cited_count": 2,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q018": {
+        "cited_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q019": {
+        "cited_count": 3,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      },
+      "smoke-q020": {
+        "cited_count": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "complete_evidence": true,
+        "exact_set": true
+      }
+    }
+  },
+  "b1_answerability": {
+    "answers_written": 20,
+    "answerable": 20,
+    "abstained": 0
+  },
+  "errors": {
+    "count": 0,
+    "by_stage": {}
+  }
+}
