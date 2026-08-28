@@ -563,5 +563,30 @@
             "Section 5(2) and 85(4) were fused into the subsection before them where a literal '===== PAGE N =====' marker (inserted by ocr_scanned_act.py at every page break) broke provision continuity the same way a bare page number does elsewhere in the corpus; now filtered before block accumulation.",
             "Section 88(4)'s 'sections 226 to 297 ofthe Civil Procedure Code' was recorded as internal because the OCR merged 'of' and 'the' together with no space; EXTERNAL_REF now tolerates that gap being absent."
         ]
+    },
+    "SRC064": {
+        "checked_against": "data/legal-sources/library/statutes/6-1949-mortgage-act.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
+        "note": "126 sections, coverage 2.12% unmatched -- the great majority the Act's three Schedules (forms of notice, deliberately excluded, same as other statutes' Schedules).",
+        "publisher": "LankaLaw (private republisher, consolidated to 2024)",
+        "quality_notes": [
+            {
+                "code": "section_28_29_boundary_confusion",
+                "sections_affected": ["28", "29"],
+                "issue": "Section 29's marginal note wraps across four lines, the last of which is the bare page-fragment '28.' (part of 'Estate to be bound if notices issued as provided in section 28.') sitting alone in the note column beside body text that continues section 29's own sentence ('may be or may have been dead...'). A general fix was attempted -- only treat a bare N. in the note-column position as reopening the body when it carries no text of its own -- and reverted: it restored section 29 correctly here but discarded real content in two OTHER already-finalized statutes (Stamp Duty Act section 30, Western Province Financial Statute section 1), because the identical bare-N.-alone shape is also how a genuine section legitimately opens in this document family when its own text happens to start on the very next physical line. The two failure modes are not distinguishable from this local signal alone. Left as before the attempt: section 28 (the real one, headed 'Provision for death, insolvency...') carries its own 4 subsections correctly; a second, phantom node also numbered '28' with no heading holds the fragment of section 29's own text that this note wrapping displaced ('may be or may have been dead or an insolvent...'); section 29 itself is missing that continuation and its subsections (2) and (3).",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "section_88_89_heading_bleed",
+                "sections_affected": ["88", "89"],
+                "issue": "Section 89's heading, 'Meaning of \"book debt\".', has its own number land inside the quoted term when the note wraps ('Meaning of \"book / 89. / debt\".'), and the whole thing -- number included -- gets read as a continuation of section 88's heading instead of opening section 89. Section 89 does not appear as its own node; 88's heading reads 'Damages for wrongful sale of mortgaged property. Meaning of \"book 89. debt\"'.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "section_47D_and_others_letter_run",
+                "detail": "Letter-suffixed sections present: 47A, 62A-62H (62D recovered by a fix landed while working this statute -- a note that fills its column can run straight into its own section number with no gap, 'Provision for death,28.' and 'Application to be in62D.' both did this), 68A. All confirmed against the source.",
+                "status": "informational"
+            }
+        ],
+        "verification_status": "unverified"
     }
 }
