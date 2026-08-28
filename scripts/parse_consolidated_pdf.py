@@ -73,8 +73,12 @@ COLUMN_GAP = re.compile(r"\s{3,}")
 NOTE_THEN_SECTION = re.compile(
     # The note often ends in a full stop, as "Application of law. 2. This Law
     # shall apply...", so the note characters have to allow it. And a section can
-    # open with a bare number, its text starting on the following line.
-    r"^(?P<note>[A-Z][A-Za-z ,.'()&-]{0,45}?)\s+(?P<body>\d{1,3}[A-Z]{0,2}\.\s*(?:[({A-Z].*)?)$"
+    # open with a bare number, its text starting on the following line. A note
+    # that fills its column can also run straight into the number with no gap
+    # at all: "Provision for death,28. (1) The duly appointed..." (Mortgage
+    # Act) touched its number this way and lost section 28 entirely, with 27
+    # and 29 swallowing pieces of its heading and body between them.
+    r"^(?P<note>[A-Z][A-Za-z ,.'()&-]{0,45}?)\s*(?P<body>\d{1,3}[A-Z]{0,2}\.\s*(?:[({A-Z].*)?)$"
 )
 # A section opens with its number at the start of the body column, as "1." or
 # "1.(1)" or "12A.". The trailing dot is what separates it from a stray figure.
