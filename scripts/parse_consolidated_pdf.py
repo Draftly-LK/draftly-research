@@ -101,10 +101,18 @@ DEFINITION_LINE = re.compile(r"^[\"‘“']\s*[^\"’”']{2,60}[\"’”']")
 # print instead follows the long title straight with "(Commencement --
 # <date>: Operation -- <date>.)", which is as good a stop as any of the
 # others and specific enough not to fire early.
+# The opening keyword is matched case-sensitively, not the whole pattern: a
+# printed long title is always set in capitals ("AN ACT TO...", "A STATUTE
+# TO..."), and the search runs over the full page text before this document's
+# own front matter is known to end. Left case-insensitive, "STATUTE" style
+# instruments got missed by the keyword list (added here) while the Western
+# Province Financial Statute's Table of Contents ("...appeal to the Court of
+# Appeal...", ordinary sentence case) supplied an earlier, false "law to"
+# match and the real title, six pages later, was never reached.
 LONG_TITLE_PDF = re.compile(
-    r"((?:AN?\s+)?(?:ACT|ORDINANCE|LAW)\s+TO.*?)"
-    r"(?:BE\s+it\s+enacted|WHEREAS|(?:Ordinance|Act|Law)s?\s+Nos?[.,]|\(Commencement)",
-    re.IGNORECASE | re.DOTALL,
+    r"((?:AN?\s+)?(?:ACT|ORDINANCE|LAW|STATUTE)\s+TO.*?)"
+    r"(?:(?i:BE\s+it\s+enacted|WHEREAS|(?:Ordinance|Act|Law|Statute)s?\s+Nos?[.,]|\(Commencement))",
+    re.DOTALL,
 )
 # The note column starts hard against the left margin; the body column is
 # indented. A short unindented line with no column gap is therefore the tail of a
@@ -544,9 +552,31 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
 # for letters of Credit", ...) reads exactly like sections restarting at 1
 # just as a Schedule's form fields do.
 SCHEDULE_BOUNDARY = re.compile(r"\n[ \t\f]*(?:Schedules?|[A-Z][A-Z '\-]*\bSCHEDULES?\b[A-Z '\-]*)[ \t]*\n")
+# The enacting formula closes the front matter and opens section 1. A
+# statute with a printed Table of Contents (the Western Province Financial
+# Statute lists every section, chapter and part by name before the text
+# proper starts) needs this cut or SECTION_START reads every "N.  <title>
+# ... <page number>" line in that table as a real section restarting the
+# count. Deliberately looser than ENACTING below (which requires "by the
+# Parliament" to extract the formula's own wording for the document):
+# provincial enactments open "Be it enacted by the Provincial Council of
+# the Western Province as Follows", not by Parliament.
+BODY_START = re.compile(r"be\s+it\s+enacted\b.*?as\s+follows\s*[:\-–—]*", re.IGNORECASE | re.DOTALL)
 
 
 def parse(text: str, title: str) -> list[dict]:
+    start = BODY_START.search(text)
+    if start:
+        text = text[start.end():]
+        # An OCR reading can land a fragment of the wrapped marginal note
+        # ("Short title and date" / "of.") on the same line as, and ahead
+        # of, section 1's own number ("date       1.     (1) This Statute
+        # may be cited..."). Deep-indented and lower-case, this line
+        # matches neither the usual column-gap split nor NOTE_THEN_SECTION,
+        # so section 1 never opens at all -- its whole block is silently
+        # dropped by "nothing open yet to attach it to". Strip a single
+        # stray word directly ahead of the first section number.
+        text = re.sub(r"^\s*\w{1,15}\s{3,}(?=\d{1,3}[A-Z]{0,2}\.)", "", text, count=1)
     # A Schedule prints its own numbered items (a form's "1. Place of Birth",
     # "2. Lay Name in Full", ...), which SECTION_START cannot tell apart from a
     # real section restarting at 1. Nothing here extracts schedule content into
@@ -727,11 +757,13 @@ def main() -> int:
             # Read from the amendment chain header where there is one; a
             # document with none (the Stamp Duty Act has no chain header at
             # all) falls back to its own long title, which always opens
-            # "AN ACT/ORDINANCE/LAW TO ...".
+            # "AN ACT/ORDINANCE/LAW TO ..." or, for a provincial council
+            # enactment such as the Western Province Financial Statute,
+            # "A STATUTE TO ...".
             "type": (
                 chain[0]["instrument_type"]
                 if chain
-                else (re.match(r"AN?\s+(ACT|ORDINANCE|LAW)\b", long_title, re.IGNORECASE) or [None, ""])[1].title()
+                else (re.match(r"AN?\s+(ACT|ORDINANCE|LAW|STATUTE)\b", long_title, re.IGNORECASE) or [None, ""])[1].title()
             ),
             "number": int(row["act_or_ordinance_no"]),
             "year": int(row["year"]),
