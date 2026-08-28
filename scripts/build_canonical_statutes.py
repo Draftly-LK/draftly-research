@@ -510,8 +510,13 @@ def clean_title(name: str) -> str:
 
 # "section 2 of that Ordinance" points at whichever enactment was last named,
 # not at this one. Reading it as internal sends the reference to the wrong Act.
+# A run can restate "section(s)" for each further number, same as EXTERNAL_REF
+# ("sections 296 and 297 of that Code", "sections 338 to 340, 342, 344, 345,
+# 346, 349 and 350 of that Code" -- Mortgage Act section 61, all pointing at
+# the Civil Procedure Code named earlier in the same section).
 THAT_ENACTMENT = re.compile(
-    r"sections?\s+(\d{1,3}[A-Z]{0,2})\s+of\s+(?:that|the said)\s+(Ordinance|Act|Law|Code)",
+    r"sections?\s+(\d{1,3}[A-Z]{0,2}(?:\s*(?:,|and|or|to)\s*(?:sections?\s+)?\d{1,3}[A-Z]{0,2})*)"
+    r"\s+of\s+(?:that|the said)\s+(Ordinance|Act|Law|Code)",
     re.IGNORECASE,
 )
 BARE_SUBSECTION = re.compile(
@@ -524,15 +529,16 @@ def cross_references(
 ) -> list[dict[str, str]]:
     refs = []
     for match in THAT_ENACTMENT.finditer(text):
-        refs.append(
-            {
-                "kind": "external" if last_named else "unresolved",
-                "target_document": last_named,
-                "target_section": match.group(1),
-                "verbatim": match.group(0),
-                "note": "" if last_named else "refers back to an enactment named earlier in the section",
-            }
-        )
+        for number in SECTION_IN_LIST.findall(match.group(1)):
+            refs.append(
+                {
+                    "kind": "external" if last_named else "unresolved",
+                    "target_document": last_named,
+                    "target_section": number,
+                    "verbatim": match.group(0),
+                    "note": "" if last_named else "refers back to an enactment named earlier in the section",
+                }
+            )
     covered = []
     covered_that = [(m.start(), m.end()) for m in THAT_ENACTMENT.finditer(text)]
     for match in BARE_SUBSECTION.finditer(text):
