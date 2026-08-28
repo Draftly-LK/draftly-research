@@ -80,7 +80,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 2 | Land Grants (Special Provisions) Act | No. 43 of 1979 | 20 | 0 | 0 | yes |
 | 2 | Land Reform Law | No. 1 of 1972 | 83 | 5 | 5 | - |
 | 2 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 0 | 0 | yes |
-| 2 | Mortgage Act | No. 6 of 1949 | 126 | 6 | 4 | - |
+| 2 | Mortgage Act | No. 6 of 1949 | 126 | 6 | 4 | yes |
 | 2 | Urban Development Authority Act | No. 41 of 1978 | 54 | 6 | 6 | yes |
 | 3 | Bank of Ceylon Ordinance | No. 53 of 1938 | 82 | 13 | 7 | yes |
 | 3 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 4 | 2 | - |
@@ -317,7 +317,7 @@ Topics: Formation of Deeds, Examination of Title, Criminal and Civil Liabilities
 Sections: 26 in the index (headings from legacy 24, none 2)
 
 Canonical structure: 26 sections, 40 subsections, 20 definitions, 48 paragraphs, 13 subparagraphs.
-103 cross-references.
+109 cross-references.
 Tree: `data/processed/canonical-statutes/SRC021-38-2014.json`
 
 Finalized: `data/legal-sources/library/finalized/38-2014-land-restrictions-on-alienation-act/38-2014-land-restrictions-on-alienation-act-consolidated.json`
@@ -674,7 +674,7 @@ Sections: 75 in the index (headings from finalized 67, legacy 8)
 Parsed from the HTML edition: 75 sections, 22 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 75 sections, 155 subsections, 29 definitions, 105 paragraphs, 32 subparagraphs.
-100 cross-references.
+130 cross-references.
 Tree: `data/processed/canonical-statutes/SRC034-43-1982.json`
 
 Finalized: `data/legal-sources/library/finalized/43-1982-stamp-duty-act/43-1982-stamp-duty-act-consolidated.json`
@@ -768,7 +768,7 @@ Topics: Formation of Deeds, Stamping of Deeds, Criminal and Civil Liabilities of
 Sections: 124 in the index (headings from finalized 95, none 22, legacy 7)
 
 Canonical structure: 108 sections, 225 subsections, 28 definitions, 108 paragraphs, 32 subparagraphs.
-111 cross-references.
+157 cross-references.
 Tree: `data/processed/canonical-statutes/SRC035-6-1990.json`
 
 Finalized: `data/legal-sources/library/finalized/6-1990-western-province-financial-statute/6-1990-western-province-financial-statute-consolidated.json`
@@ -832,7 +832,7 @@ Sections: 44 in the index (headings from finalized 44)
 Parsed from the HTML edition: 44 sections, 6 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 44 sections, 72 subsections, 11 definitions, 60 paragraphs, 8 subparagraphs.
-26 cross-references; 1 schedules referenced (bodies not published).
+28 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC049-19-1931.json`
 
 Finalized: `data/legal-sources/library/finalized/19-1931-buddhist-temporalities-ordinance/19-1931-buddhist-temporalities-ordinance-consolidated.json`
@@ -1049,17 +1049,22 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Mortgage Act
 
-**No. 6 of 1949** · commenced 1949-01-16 · curriculum category 2 · SRC064
+**No. 6 of 1949** · commenced 1949-01-16 · curriculum category 2 · SRC064 · **finalized**
 
 Topics: Drafting of Deeds
 
-Sections: 126 in the index (headings from lawlanka 126)
+Sections: 126 in the index (headings from finalized 125, lawlanka 1)
 
 Parsed from the HTML edition: 125 sections, 22 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 8 parts, 14 crossheadings, 125 sections, 191 subsections, 8 definitions, 167 paragraphs, 12 subparagraphs.
-354 cross-references; 3 schedules referenced (bodies not published).
+Canonical structure: 126 sections, 189 subsections, 11 definitions, 164 paragraphs, 17 subparagraphs.
+401 cross-references; 4 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC064-6-1949.json`
+
+Finalized: `data/legal-sources/library/finalized/6-1949-mortgage-act/6-1949-mortgage-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 

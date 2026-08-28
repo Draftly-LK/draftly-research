@@ -65,7 +65,7 @@ Parliament of Ceylon. Acts.
 | Year | Statute | Citation | Sections | Amended | Changed |
 | --- | --- | --- | --- | --- | --- |
 | 1948* | Rent Restriction Act | index-only | 31 | 0 | none recorded |
-| 1949 | Mortgage Act | No. 6 of 1949 | 126 | 12 | 1953-2024 |
+| 1949 | Mortgage Act | No. 6 of 1949 | 126 | 24 | 1953-2024 |
 | 1950 | Land Acquisition Act | No. 9 of 1950 | 68 | 0 | none recorded |
 | 1954 | National Housing Act | No. 37 of 1954 | 127 | 35 | none recorded |
 | 1958 | Tea and Rubber Estates (Control of Fragmentation) Act | No. 2 of 1958 | 25 | 0 | none recorded |
