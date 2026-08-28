@@ -4,22 +4,22 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ## Counts
 
-- Source files inspected: 35
-- Statutes indexed: 24
-- Records: 7100
-- Distinct sections referenced: 1435
-- Records without a heading: 59
+- Source files inspected: 36
+- Statutes indexed: 25
+- Records: 7565
+- Distinct sections referenced: 1542
+- Records without a heading: 116
 - `section_id` is a rollup key, not a foreign key: it names the section a record belongs to even where that section has no record of its own (a section whose text lives entirely in its children emits nothing). Group by it to score at section level.
 - Temporal metadata: none. `effective_from` / `effective_to` are null on every record; act-level `commencement` is deliberately not propagated to provisions.
 
 ### By node type
 
-- `subsection`: 2778
-- `paragraph`: 2575
-- `section`: 671
-- `subparagraph`: 441
-- `definition`: 262
-- `proviso`: 157
+- `subsection`: 3003
+- `paragraph`: 2683
+- `section`: 724
+- `subparagraph`: 473
+- `definition`: 290
+- `proviso`: 176
 - `closing_text`: 154
 - `text`: 36
 - `item`: 21
@@ -30,6 +30,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 - Companies Act: 3557
 - Apartment Ownership Law: 557
+- Western Province Financial Statute: 465
 - National Housing Act: 447
 - Stamp Duty Act: 381
 - State Lands Ordinance: 337
@@ -71,7 +72,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ### Nodes
 
-- Empty own-text (content lives in children): 777 (definition 1, schedule 1, section 764, subsection 11)
+- Empty own-text (content lives in children): 832 (definition 1, schedule 1, section 819, subsection 11)
 - Repealed stubs excluded: 3
   - `11-1973/section-26/closing_text-1` -- '(*Repealed and replaced by the Companies Act, No. 17 of 1982.)'
   - `21-1844/section-3` -- 'Repealed By'
@@ -94,12 +95,13 @@ Reported, not resolved -- this build does no historical version reconstruction.
 - **Stamp Duty Act** -- verification_status is 'unverified'
 - **Bank of Ceylon Ordinance** -- verification_status is 'unverified'
 - **Jaffna Matrimonial Rights and Inheritance Ordinance** -- act_id '1-1911' from citation differs from directory prefix '58-1947'
+- **Western Province Financial Statute** -- verification_status is 'unverified'
 - **State Lands Ordinance** -- verification_status is 'unverified'
 
 ## Problems
 
 - No parsing failures.
-- Duplicate node paths disambiguated: 20. These are source-side labelling defects, not build artefacts -- sibling provisions carrying the same label. Both records are kept, the later one suffixed `-2`, so no provision is silently dropped. Spot-checked examples: Apartment Ownership s.20C(2) genuinely has two `paragraph (bb)` siblings with different text; Companies Act s.529(1) has several definitions collapsed under one `definition:distribution` node, so its `(a)`/`(b)` paragraphs repeat. Affected paths:
+- Duplicate node paths disambiguated: 28. These are source-side labelling defects, not build artefacts -- sibling provisions carrying the same label. Both records are kept, the later one suffixed `-2`, so no provision is silently dropped. Spot-checked examples: Apartment Ownership s.20C(2) genuinely has two `paragraph (bb)` siblings with different text; Companies Act s.529(1) has several definitions collapsed under one `definition:distribution` node, so its `(a)`/`(b)` paragraphs repeat. Affected paths:
   - `11-1973/section-20c/subsection-2/paragraph-bb`
   - `17-2002/section-45/subsection-1/paragraph-c`
   - `38-2014/section-2/subsection-2/paragraph-b/subparagraph-i`
@@ -109,6 +111,14 @@ Reported, not resolved -- this build does no historical version reconstruction.
   - `41-1978/section-4/subsection-1`
   - `43-1982/section-13/subsection-1/paragraph-a`
   - `43-1982/section-48/subsection-2/paragraph-ii`
+  - `6-1990/section-102/subsection-2`
+  - `6-1990/section-102/subsection-3`
+  - `6-1990/section-102/subsection-4`
+  - `6-1990/section-39/subsection-1`
+  - `6-1990/section-73/subsection-2`
+  - `6-1990/section-73/subsection-3`
+  - `6-1990/section-73/subsection-4`
+  - `6-1990/section-88/subsection-1`
   - `7-2007/section-431/subsection-2/paragraph-c`
   - `7-2007/section-529/subsection-1/definition-distribution/paragraph-a`
   - `7-2007/section-529/subsection-1/definition-distribution/paragraph-b`
@@ -116,7 +126,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
   - `7-2007/section-529/subsection-1/definition-group-financial-statements/paragraph-b`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-a`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-b`
-- Duplicate evidence texts: 119 distinct strings appear more than once (348 records)
+- Duplicate evidence texts: 144 distinct strings appear more than once (400 records)
 - Schedule items carrying `rates` tables: 2. The band/rupees/cents tables are structured numeric data and are not flattened into `text`, so rate lookups will not retrieve them.
 
 ## Regeneration
