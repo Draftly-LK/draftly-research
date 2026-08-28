@@ -546,8 +546,7 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
 SCHEDULE_BOUNDARY = re.compile(r"\n[ \t\f]*(?:Schedules?|[A-Z][A-Z '\-]*\bSCHEDULES?\b[A-Z '\-]*)[ \t]*\n")
 
 
-def parse(pdf: Path, title: str) -> list[dict]:
-    text = page_text(pdf)
+def parse(text: str, title: str) -> list[dict]:
     # A Schedule prints its own numbered items (a form's "1. Place of Birth",
     # "2. Lay Name in Full", ...), which SECTION_START cannot tell apart from a
     # real section restarting at 1. Nothing here extracts schedule content into
@@ -660,6 +659,12 @@ def main() -> int:
         help="which text this PDF is. The same statute can be held twice, as "
              "enacted and as consolidated, and they must not overwrite each other.",
     )
+    parser.add_argument(
+        "--ocr-text", type=Path,
+        help="a sidecar from ocr_scanned_act.py, for a registry PDF that is a scan "
+             "with no text layer. Read instead of the PDF; the PDF path is still "
+             "recorded as the statute's source.",
+    )
     args = parser.parse_args()
 
     registry = {r["source_id"]: r for r in read_csv(REGISTRY)}
@@ -669,9 +674,19 @@ def main() -> int:
         print(f"{pdf} is missing", file=sys.stderr)
         return 1
 
-    body = parse(pdf, row["official_title"])
+    if args.ocr_text:
+        full_text = args.ocr_text.read_text(encoding="utf-8")
+        edition_caveat = (
+            "the registry PDF is a scan with no text layer, so this tree is "
+            "parsed from an OCR reading and carries OCR errors"
+        )
+    else:
+        full_text = page_text(pdf)
+        edition_caveat = "parsed from a two-column PDF"
+
+    body = parse(full_text, row["official_title"])
     if not body:
-        print("no sections found; this PDF probably has no text layer", file=sys.stderr)
+        print("no sections found; this text probably has no recognisable sections", file=sys.stderr)
         return 1
 
     chain = [
@@ -680,7 +695,6 @@ def main() -> int:
         if r["source_id"] == args.source_id and r["role"] == "amending"
     ]
     commencement = {r["source_id"]: r["commencement"] for r in read_csv(COMMENCEMENT)}
-    full_text = page_text(pdf)
     title_match = LONG_TITLE_PDF.search(re.sub(r"\s+", " ", full_text))
     long_title = re.sub(r"\s+", " ", title_match.group(1)).strip(" .") + "." if title_match else ""
     flat = re.sub(r"\s+", " ", full_text)
@@ -730,7 +744,7 @@ def main() -> int:
             "publisher": override.get("publisher", "unattributed"),
             "kind": args.edition,
             "local_path": pdf.relative_to(REPO_ROOT).as_posix(),
-            "caveat": "parsed from a two-column PDF",
+            "caveat": edition_caveat,
         },
         "amendments": [
             {
