@@ -67,7 +67,15 @@
     "88",
     "89"
    ],
-   "issue": "Section 89's heading, 'Meaning of \"book debt\".', has its own number land inside the quoted term when the note wraps ('Meaning of \"book / 89. / debt\".'), and the whole thing -- number included -- gets read as a continuation of section 88's heading instead of opening section 89. Section 89 does not appear as its own node; 88's heading reads 'Damages for wrongful sale of mortgaged property. Meaning of \"book 89. debt\"'.",
+   "issue": "Section 89's heading, 'Meaning of \"book debt\".', has its own number land inside the quoted term when the note wraps ('Meaning of \"book / 89. / debt\".'), and the whole thing -- number included -- gets read as a continuation of section 88's heading instead of opening section 89. Section 89 does not appear as its own node at all -- not just its heading but its whole body ('In sections 90 to 95 \"book debt\" means any debt which - (a)...') is missing; 88's heading reads 'Damages for wrongful sale of mortgaged property. Meaning of \"book 89. debt\"'.",
+   "status": "known_parser_limitation"
+  },
+  {
+   "code": "bare_section_backreference_unresolved",
+   "sections_affected": [
+    "110"
+   ],
+   "issue": "Section 110(2) reads '...all the provisions of Chapter XLVIII of that Code, other than section 664, shall apply accordingly.' THAT_ENACTMENT resolves 'of that Code' correctly, but 'section 664' is a separate bare mention afterward ('other than section 664') that doesn't repeat 'of that/the said Code', so it isn't covered by that mechanism and is recorded as an internal self-reference to a nonexistent section 664 of this Act.",
    "status": "known_parser_limitation"
   },
   {
@@ -530,6 +538,13 @@
       {
        "kind": "internal",
        "target_document": "Mortgage Act",
+       "target_section": "9",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      },
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
        "target_section": "8",
        "verbatim": "section 8"
       }
@@ -624,7 +639,15 @@
      "raw_text": "(2) The notice referred to in sub-paragraphs (i) and (ii) of paragraph (a) of subsection (1) shall be in Sinhala and Tamil and shall be accompanied by a translation thereof in English as the court may direct.",
      "text": "The notice referred to in sub-paragraphs (i) and (ii) of paragraph (a) of subsection (1) shall be in Sinhala and Tamil and shall be accompanied by a translation thereof in English as the court may direct.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "10",
+       "target_subsection": "1",
+       "verbatim": "of subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -938,7 +961,15 @@
      "raw_text": "(2) The raising of any issue or the amendment of any decree under subsection (1) shall not in any way affect the validity of the sale in execution of the hypothecary decree.",
      "text": "The raising of any issue or the amendment of any decree under subsection (1) shall not in any way affect the validity of the sale in execution of the hypothecary decree.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "18",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     },
     {
@@ -948,6 +979,13 @@
      "text": "A party omitted from a hypothecary action who intervenes in that action under subsection (1) shall, whether or not he makes a claim under section 57 to participate in the balance proceeds of sale of the mortgaged land, be bound by the sale in that action and by the decree (whether or not it is amended under that subsection) in like manner as though he had been a party to the action.",
      "amendment_events": [],
      "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "18",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      },
       {
        "kind": "internal",
        "target_document": "Mortgage Act",
@@ -996,8 +1034,8 @@
      "kind": "internal",
      "target_document": "Mortgage Act",
      "target_section": "18",
-     "target_subsection": "4",
-     "verbatim": "subsection (4) of section 18"
+     "target_subsection": "3",
+     "verbatim": "by subsection (3)"
     }
    ],
    "children": [
@@ -1008,6 +1046,13 @@
      "text": "Where a party omitted from a hypothecary action is not a person who is by subsection (3) or subsection (4) of section 18 declared to be bound by the decree and sale in that action, and a conveyance of the mortgaged land has been executed in favour of the person who had purchased that land at the sale (hereinafter referred to as ' the prior sale ') in execution of the hypothecary decree in that action -",
      "amendment_events": [],
      "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "19",
+       "target_subsection": "3",
+       "verbatim": "by subsection (3)"
+      },
       {
        "kind": "internal",
        "target_document": "Mortgage Act",
@@ -1059,7 +1104,15 @@
      "raw_text": "(3) The court may, if it thinks fit so to do having regard to the circumstances of any case, permit the party omitted to institute an action under subsection (1), notwithstanding that a conveyance of the mortgaged land may not have been executed in favour of the purchaser of the land.",
      "text": "The court may, if it thinks fit so to do having regard to the circumstances of any case, permit the party omitted to institute an action under subsection (1), notwithstanding that a conveyance of the mortgaged land may not have been executed in favour of the purchaser of the land.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "19",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -1119,7 +1172,15 @@
      "raw_text": "(2) Upon the resale of the mortgaged land under the decree entered under subsection (1), the proceeds of resale shall be distributed as follows :-",
      "text": "Upon the resale of the mortgaged land under the decree entered under subsection (1), the proceeds of resale shall be distributed as follows :-",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "21",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "subparagraph",
@@ -1153,7 +1214,15 @@
        "raw_text": "(ii) secondly, after payment of any amount to which the purchaser is entitled under paragraph (i), the party omitted shall be entitled to payment of the amount found under subsection (1) to be due to him from the mortgagor;",
        "text": "secondly, after payment of any amount to which the purchaser is entitled under paragraph (i), the party omitted shall be entitled to payment of the amount found under subsection (1) to be due to him from the mortgagor;",
        "amendment_events": [],
-       "cross_references": [],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Mortgage Act",
+         "target_section": "21",
+         "target_subsection": "1",
+         "verbatim": "under subsection (1)"
+        }
+       ],
        "children": []
       },
       {
@@ -1182,7 +1251,15 @@
      "raw_text": "(3) Where any moneys are paid to the party omitted by the purchaser at the prior sale in compliance with the decree under subsection (1) or any moneys are paid to the party omitted under paragraph (ii) of subsection (2), the following provisions shall apply:-",
      "text": "Where any moneys are paid to the party omitted by the purchaser at the prior sale in compliance with the decree under subsection (1) or any moneys are paid to the party omitted under paragraph (ii) of subsection (2), the following provisions shall apply:-",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "21",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "paragraph",
@@ -1224,7 +1301,15 @@
      "raw_text": "(4) Any order made under subsection (3) may be enforced in the same manner as an order or decree for the payment of money in an ordinary action.",
      "text": "Any order made under subsection (3) may be enforced in the same manner as an order or decree for the payment of money in an ordinary action.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "21",
+       "target_subsection": "3",
+       "verbatim": "under subsection (3)"
+      }
+     ],
      "children": []
     }
    ]
@@ -1433,7 +1518,15 @@
      "raw_text": "(2) Any order made under subsection (1) may be enforced in the same manner as an order or decree for the payment of money in an ordinary action. EFFECT OF SALE IN EXECUTION OF DECREE UPON PUISNE MORTGAGE",
      "text": "Any order made under subsection (1) may be enforced in the same manner as an order or decree for the payment of money in an ordinary action. EFFECT OF SALE IN EXECUTION OF DECREE UPON PUISNE MORTGAGE",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "23",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -1642,7 +1735,15 @@
      "raw_text": "(2) In making any appointment under subsection (1) the court shall appoint as representative a person who after summary inquiry appears to the court to be the person to whom probate of the will or letters of administration to the estate of the deceased would ordinarily be issued: Provided, however, that in the event of a dispute between persons claiming to be entitled to be so appointed, the court shall make such an appointment (whether of one of those persons or of any other person) as would in the opinion of the court be in the interests of the estate of the deceased.",
      "text": "In making any appointment under subsection (1) the court shall appoint as representative a person who after summary inquiry appears to the court to be the person to whom probate of the will or letters of administration to the estate of the deceased would ordinarily be issued:",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "26",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "proviso",
@@ -1716,6 +1817,13 @@
       {
        "kind": "internal",
        "target_document": "Mortgage Act",
+       "target_section": "28",
+       "target_subsection": "1",
+       "verbatim": "in subsection (1)"
+      },
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
        "target_section": "6",
        "verbatim": "section 6"
       }
@@ -1749,7 +1857,15 @@
        "raw_text": "(a) to any executor or administrator or to any assignee, curator or manager who has registered an address as provided in subsection (1); or",
        "text": "to any executor or administrator or to any assignee, curator or manager who has registered an address as provided in subsection (1); or",
        "amendment_events": [],
-       "cross_references": [],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Mortgage Act",
+         "target_section": "28",
+         "target_subsection": "1",
+         "verbatim": "in subsection (1)"
+        }
+       ],
        "children": []
       },
       {
@@ -1759,6 +1875,13 @@
        "text": "to any other person who has registered an address as provided in subsection (2) and whose address is for the time being registered, and if the deceased person, insolvent, minor or person of unsound mind had himself registered an address under section 6, to the address registered by him, notice of the hypothecary action shall be deemed to have been duly issued for the purpose of binding the estate of such deceased person, insolvent, minor or person of unsound mind.",
        "amendment_events": [],
        "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Mortgage Act",
+         "target_section": "28",
+         "target_subsection": "2",
+         "verbatim": "in subsection (2)"
+        },
         {
          "kind": "internal",
          "target_document": "Mortgage Act",
@@ -1776,7 +1899,15 @@
      "raw_text": "(4) In any case referred to in paragraph (b) of subsection (3), any person to whom notice of the hypothecary action is issued or any other person may, within one month of the date of the posting of the notice or of the publication thereof, whichever is the later, or where the notice is served in like manner as a summons, within one month of the date of such service, make application to the court for the appointment of some person to represent the estate of the deceased or of the insolvent, minor or person of unsound mind as the case may be, and the court shall appoint a person accordingly. In making such appointment the court shall appoint as representative a person who after summary inquiry appears to court to be the person to whom probate of the will or letters of administration to the estate of the deceased would ordinarily be issued, or who would ordinarily be appointed to be the curator, assignee or manager of the estate, as the case may be: Provided, however, that in the event of a dispute between persons claiming to be entitled to be so appointed, the court shall appoint as representative such of those persons or such other person, whose appointment in the opinion of the court will be in the interests of the estate. Where the court is satisfied that proceedings are pending for the appointment of an executor, administrator, assignee, curator or manager, the court may on that ground postpone the appointment of a representative for any period not exceeding three months.",
      "text": "In any case referred to in paragraph (b) of subsection (3), any person to whom notice of the hypothecary action is issued or any other person may, within one month of the date of the posting of the notice or of the publication thereof, whichever is the later, or where the notice is served in like manner as a summons, within one month of the date of such service, make application to the court for the appointment of some person to represent the estate of the deceased or of the insolvent, minor or person of unsound mind as the case may be, and the court shall appoint a person accordingly. In making such appointment the court shall appoint as representative a person who after summary inquiry appears to court to be the person to whom probate of the will or letters of administration to the estate of the deceased would ordinarily be issued, or who would ordinarily be appointed to be the curator, assignee or manager of the estate, as the case may be:",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "28",
+       "target_subsection": "3",
+       "verbatim": "of subsection (3)"
+      }
+     ],
      "children": [
       {
        "type": "proviso",
@@ -1845,6 +1976,13 @@
    "text": "may be or may have been dead or an insolvent or a minor or person of unsound mind at the time of the issue of the notice, the estate of such person shall be bound by every order, decree or sale or thing done in the hypothecary action whether or not application is made under subsection (4) of section 28 for the appointment of a representative, unless the executor or administrator or assignee, curator or manager or any other person had registered an address on behalf of the estate under subsection (1) or subsection (2) of that section.",
    "amendment_events": [],
    "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Mortgage Act",
+     "target_section": "29",
+     "target_subsection": "1",
+     "verbatim": "under subsection (1)"
+    },
     {
      "kind": "internal",
      "target_document": "Mortgage Act",
@@ -1947,8 +2085,8 @@
      "kind": "internal",
      "target_document": "Mortgage Act",
      "target_section": "28",
-     "target_subsection": "2",
-     "verbatim": "subsection (2) of section 28"
+     "target_subsection": "1",
+     "verbatim": "in subsection (1)"
     },
     {
      "kind": "internal",
@@ -2023,7 +2161,15 @@
      "raw_text": "(3) Where the executor or administrator or the duly appointed representative of a deceased person, or, as the case may be, the assignee, curator, or manager of the estate of the insolvent, minor, or person of unsound mind is not added as a party under subsection (2), the executor or administrator or, as the case may be, the assignee, curator or manager shall -",
      "text": "Where the executor or administrator or the duly appointed representative of a deceased person, or, as the case may be, the assignee, curator, or manager of the estate of the insolvent, minor, or person of unsound mind is not added as a party under subsection (2), the executor or administrator or, as the case may be, the assignee, curator or manager shall -",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "31",
+       "target_subsection": "2",
+       "verbatim": "under subsection (2)"
+      }
+     ],
      "children": [
       {
        "type": "paragraph",
@@ -2126,7 +2272,15 @@
      "raw_text": "(4) Where any person is joined as a party to the action under subsection (1), every adjudication by the court on any question relating to the title of the land or to the right of possession thereof shall be res adjudicate as between all parties to the action including the party so added.",
      "text": "Where any person is joined as a party to the action under subsection (1), every adjudication by the court on any question relating to the title of the land or to the right of possession thereof shall be res adjudicate as between all parties to the action including the party so added.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "33",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -2192,7 +2346,15 @@
      "raw_text": "(3) Every notice under subsection (2) shall contain a statement to the effect that a plan of the land has been filed in the court and will be available for inspection by any person interested.",
      "text": "Every notice under subsection (2) shall contain a statement to the effect that a plan of the land has been filed in the court and will be available for inspection by any person interested.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "34",
+       "target_subsection": "2",
+       "verbatim": "under subsection (2)"
+      }
+     ],
      "children": []
     },
     {
@@ -2201,7 +2363,15 @@
      "raw_text": "(4) For the purposes of paragraph (a) of subsection (2), the court shall direct publication in two newspapers which appear to the court to be the most appropriate for the purpose of conveying information of the action to the residents of the area in which the land is situated.",
      "text": "For the purposes of paragraph (a) of subsection (2), the court shall direct publication in two newspapers which appear to the court to be the most appropriate for the purpose of conveying information of the action to the residents of the area in which the land is situated.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "34",
+       "target_subsection": "2",
+       "verbatim": "of subsection (2)"
+      }
+     ],
      "children": []
     },
     {
@@ -2210,7 +2380,15 @@
      "raw_text": "(5) The notices required to be posted by paragraphs (b) and (c) of subsection (2) shall be posted either before the date of the last publication of the notice under paragraph (a) of subsection (2) or not later than two weeks after that date.",
      "text": "The notices required to be posted by paragraphs (b) and (c) of subsection (2) shall be posted either before the date of the last publication of the notice under paragraph (a) of subsection (2) or not later than two weeks after that date.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "34",
+       "target_subsection": "2",
+       "verbatim": "of subsection (2)"
+      }
+     ],
      "children": []
     }
    ]
@@ -2255,7 +2433,15 @@
      "raw_text": "(2) Where any person is added as a party under subsection (1), such person or any other party may raise any issue (including an issue on a question of title) relevant to the claim to possession of the land and in any such case the court shall, after hearing such evidence as may be adduced by any party to the action, make an adjudication upon the issue so raised.",
      "text": "Where any person is added as a party under subsection (1), such person or any other party may raise any issue (including an issue on a question of title) relevant to the claim to possession of the land and in any such case the court shall, after hearing such evidence as may be adduced by any party to the action, make an adjudication upon the issue so raised.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "35",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -2507,7 +2693,15 @@
      "raw_text": "(2) Save as provided in subsection (1), the court shall not refuse to make an order for the appointment of a receiver upon application duly made in that behalf. Notwithstanding anything in subsection (1), the court shall not refuse to make an order for the appointment of a receiver in any case where the court is satisfied that the mortgagor or other person in possession of the mortgaged land has committed any act of waste in respect of the land and that the appointment of a receiver is necessary for the purpose of the prevention of such acts.",
      "text": "Save as provided in subsection (1), the court shall not refuse to make an order for the appointment of a receiver upon application duly made in that behalf. Notwithstanding anything in subsection (1), the court shall not refuse to make an order for the appointment of a receiver in any case where the court is satisfied that the mortgagor or other person in possession of the mortgaged land has committed any act of waste in respect of the land and that the appointment of a receiver is necessary for the purpose of the prevention of such acts.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "38",
+       "target_subsection": "1",
+       "verbatim": "in subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -2582,7 +2776,15 @@
      "raw_text": "(2) Where the appointment of a receiver is cancelled under paragraph (c) or paragraph (d) of subsection (1), the court may, if the plaintiff so desires, make a new appointment of a receiver.",
      "text": "Where the appointment of a receiver is cancelled under paragraph (c) or paragraph (d) of subsection (1), the court may, if the plaintiff so desires, make a new appointment of a receiver.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "39",
+       "target_subsection": "1",
+       "verbatim": "of subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -2676,7 +2878,15 @@
        "raw_text": "(a) give such directions as it may consider necessary relating to the exercise of the rights and powers conferred by subsection (1);",
        "text": "give such directions as it may consider necessary relating to the exercise of the rights and powers conferred by subsection (1);",
        "amendment_events": [],
-       "cross_references": [],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Mortgage Act",
+         "target_section": "41",
+         "target_subsection": "1",
+         "verbatim": "by subsection (1)"
+        }
+       ],
        "children": []
       },
       {
@@ -2773,7 +2983,15 @@
      "raw_text": "(2) Any directions given under subsection (1) may be varied or revoked by the court on application made by the plaintiff or the mortgagor.",
      "text": "Any directions given under subsection (1) may be varied or revoked by the court on application made by the plaintiff or the mortgagor.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "43",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -2952,6 +3170,13 @@
        "amendment_events": [],
        "cross_references": [
         {
+         "kind": "internal",
+         "target_document": "Mortgage Act",
+         "target_section": "47A",
+         "target_subsection": "2",
+         "verbatim": "of subsection(2)"
+        },
+        {
          "kind": "external",
          "target_document": "Civil Procedure Code",
          "target_section": "218",
@@ -2973,7 +3198,15 @@
      "raw_text": "(2) In any case referred to in subsection (1), no process shall issue for the seizure and sale of any property of the mortgagor, other than the mortgaged property, until the mortgaged property is sold and the proceeds thereof applied in satisfaction of the decree.",
      "text": "In any case referred to in subsection (1), no process shall issue for the seizure and sale of any property of the mortgagor, other than the mortgaged property, until the mortgaged property is sold and the proceeds thereof applied in satisfaction of the decree.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "47A",
+       "target_subsection": "1",
+       "verbatim": "in subsection (1)"
+      }
+     ],
      "children": []
     },
     {
@@ -2983,6 +3216,13 @@
      "text": "Where the separate instrument referred to in subsection (1) is to be executed by any mortgagor, it shall be the duty of the notary to explain to the mortgagor, that the instrument provides for the renunciation of the benefit of section 46 and that the effect of such renunciation is that, in addition to the mortgaged property, other property of the mortgagor is liable to be sold in execution of a decree in an action upon the mortgage.",
      "amendment_events": [],
      "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "47A",
+       "target_subsection": "1",
+       "verbatim": "in subsection (1)"
+      },
       {
        "kind": "internal",
        "target_document": "Mortgage Act",
@@ -3008,6 +3248,13 @@
      "text": "Where the mortgage is created by an instrument referred to in section 69 which is attested by an officer of a lending institution, then for the purpose of the application of the provisions of subsection (1) and subsection (3) of this section, any reference in those provisions to the notary attesting the mortgage bond shall be deemed to be a reference to such officer.",
      "amendment_events": [],
      "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "47A",
+       "target_subsection": "1",
+       "verbatim": "of subsection (1)"
+      },
       {
        "kind": "internal",
        "target_document": "Mortgage Act",
@@ -3478,7 +3725,15 @@
      "raw_text": "(3) The court shall, after consideration of such objections, if any, as may be made under subsection (2), by order fix the amount which shall be taken, for the purposes of the succeeding provisions of this section, to be the appraised value of the land.",
      "text": "The court shall, after consideration of such objections, if any, as may be made under subsection (2), by order fix the amount which shall be taken, for the purposes of the succeeding provisions of this section, to be the appraised value of the land.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "51",
+       "target_subsection": "2",
+       "verbatim": "under subsection (2)"
+      }
+     ],
      "children": []
     },
     {
@@ -3488,6 +3743,13 @@
      "text": "Leave to the plaintiff to bid for and purchase any mortgaged land shall in every case be subject to the condition that the plaintiff shall not bid for or purchase the land except at or above the amount of the appraised value of the land as fixed under subsection (3) or the amount required by section 48 to be mentioned in the advertisement as the amount due under the decree, whichever such amount is the less.",
      "amendment_events": [],
      "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "51",
+       "target_subsection": "3",
+       "verbatim": "under subsection (3)"
+      },
       {
        "kind": "internal",
        "target_document": "Mortgage Act",
@@ -3519,7 +3781,15 @@
      "raw_text": "(6) Where application is made under subsection (2) after the publication of the advertisement of the sale, and it is necessary in consequence of such application to alter the date of the sale and publish a fresh advertisement of the sale, the court may order that the costs of the postponement and of the fresh advertisement shall be borne by the plaintiff.",
      "text": "Where application is made under subsection (2) after the publication of the advertisement of the sale, and it is necessary in consequence of such application to alter the date of the sale and publish a fresh advertisement of the sale, the court may order that the costs of the postponement and of the fresh advertisement shall be borne by the plaintiff.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "51",
+       "target_subsection": "2",
+       "verbatim": "under subsection (2)"
+      }
+     ],
      "children": []
     },
     {
@@ -3668,7 +3938,15 @@
      "raw_text": "(2) Where an order is made under subsection (1), and the Fiscal reports to the court that he was unable to put the purchaser or any other person on his behalf in possession of the land, the court shall direct the Fiscal to post in conspicuous places on the land a notice in the form set out in the First Schedule to this Act and to report to the court within seven days of the posting of such notice -",
      "text": "Where an order is made under subsection (1), and the Fiscal reports to the court that he was unable to put the purchaser or any other person on his behalf in possession of the land, the court shall direct the Fiscal to post in conspicuous places on the land a notice in the form set out in the First Schedule to this Act and to report to the court within seven days of the posting of such notice -",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "55",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "paragraph",
@@ -3696,7 +3974,15 @@
      "raw_text": "(3) Where the court is satisfied upon the report of the Fiscal that any person whosoever refused to yield up possession at any time after the date of the posting of the notice referred to in subsection (2) or obstructed or resisted the Fiscal at any time after that date, the court may commit the person so refusing to yield up possession or causing such obstruction or resistance to jail for a term which may extend to thirty days, and direct the purchaser to be put into possession of the land.",
      "text": "Where the court is satisfied upon the report of the Fiscal that any person whosoever refused to yield up possession at any time after the date of the posting of the notice referred to in subsection (2) or obstructed or resisted the Fiscal at any time after that date, the court may commit the person so refusing to yield up possession or causing such obstruction or resistance to jail for a term which may extend to thirty days, and direct the purchaser to be put into possession of the land.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "55",
+       "target_subsection": "2",
+       "verbatim": "in subsection (2)"
+      }
+     ],
      "children": []
     },
     {
@@ -3830,7 +4116,15 @@
        "raw_text": "(b) no person claiming under any seizure of the land effected or registered after the date of the registration of the lis pendens of the hypothecary action shall, by reason of such seizure, be entitled to participate in such balance proceeds, but nothing in this paragraph shall prejudice the right of such person after the sale of the land to seize the right, title and interest of the mortgagor in such balance proceeds, (2) The rights of any person claiming under a notice of seizure to participate in the balance proceeds as provided in paragraph (a) of subsection (1), shall, as between himself and any other person claiming whether under a notice of seizure or any other instrument, have priority according to the time of registration: Provided, however, that where two or more notices of seizure of any land are registered by different persons and no other person has any interest in the land by virtue of any other instrument registered between the dates of the registration of such notices of seizure, such different persons shall be entitled to claim a rateable distribution of the balance proceeds of sale remaining available for distribution. MISCELLANEOUS",
        "text": "no person claiming under any seizure of the land effected or registered after the date of the registration of the lis pendens of the hypothecary action shall, by reason of such seizure, be entitled to participate in such balance proceeds, but nothing in this paragraph shall prejudice the right of such person after the sale of the land to seize the right, title and interest of the mortgagor in such balance proceeds, (2) The rights of any person claiming under a notice of seizure to participate in the balance proceeds as provided in paragraph (a) of subsection (1), shall, as between himself and any other person claiming whether under a notice of seizure or any other instrument, have priority according to the time of registration:",
        "amendment_events": [],
-       "cross_references": [],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Mortgage Act",
+         "target_section": "58",
+         "target_subsection": "1",
+         "verbatim": "of subsection (1)"
+        }
+       ],
        "children": [
         {
          "type": "proviso",
@@ -4023,10 +4317,18 @@
        "amendment_events": [],
        "cross_references": [
         {
-         "kind": "internal",
-         "target_document": "Mortgage Act",
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
          "target_section": "296",
-         "verbatim": "sections 296"
+         "verbatim": "sections 296 and 297 of that Code",
+         "note": ""
+        },
+        {
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
+         "target_section": "297",
+         "verbatim": "sections 296 and 297 of that Code",
+         "note": ""
         }
        ],
        "children": []
@@ -4039,10 +4341,60 @@
        "amendment_events": [],
        "cross_references": [
         {
-         "kind": "internal",
-         "target_document": "Mortgage Act",
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
          "target_section": "338",
-         "verbatim": "sections 338"
+         "verbatim": "sections 338 to 340, 342, 344, 345, 346, 349 and 350 of that Code",
+         "note": ""
+        },
+        {
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
+         "target_section": "340",
+         "verbatim": "sections 338 to 340, 342, 344, 345, 346, 349 and 350 of that Code",
+         "note": ""
+        },
+        {
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
+         "target_section": "342",
+         "verbatim": "sections 338 to 340, 342, 344, 345, 346, 349 and 350 of that Code",
+         "note": ""
+        },
+        {
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
+         "target_section": "344",
+         "verbatim": "sections 338 to 340, 342, 344, 345, 346, 349 and 350 of that Code",
+         "note": ""
+        },
+        {
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
+         "target_section": "345",
+         "verbatim": "sections 338 to 340, 342, 344, 345, 346, 349 and 350 of that Code",
+         "note": ""
+        },
+        {
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
+         "target_section": "346",
+         "verbatim": "sections 338 to 340, 342, 344, 345, 346, 349 and 350 of that Code",
+         "note": ""
+        },
+        {
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
+         "target_section": "349",
+         "verbatim": "sections 338 to 340, 342, 344, 345, 346, 349 and 350 of that Code",
+         "note": ""
+        },
+        {
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
+         "target_section": "350",
+         "verbatim": "sections 338 to 340, 342, 344, 345, 346, 349 and 350 of that Code",
+         "note": ""
         }
        ],
        "children": []
@@ -4053,7 +4405,15 @@
        "raw_text": "(d) section 343 of that Code shall be applicable, subject to the modification that the court shall not under that section stay execution proceedings for the purpose only of allowing time for payment by the judgment-debtor, unless he satisfies the court that there is reason to believe that the amount of the decree may be raised by mortgage, lease or private sale of the mortgaged land or of any other immovable property of the debtor, and to the further modification that the time allowed for the purpose aforesaid shall not be longer than six months;",
        "text": "section 343 of that Code shall be applicable, subject to the modification that the court shall not under that section stay execution proceedings for the purpose only of allowing time for payment by the judgment-debtor, unless he satisfies the court that there is reason to believe that the amount of the decree may be raised by mortgage, lease or private sale of the mortgaged land or of any other immovable property of the debtor, and to the further modification that the time allowed for the purpose aforesaid shall not be longer than six months;",
        "amendment_events": [],
-       "cross_references": [],
+       "cross_references": [
+        {
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
+         "target_section": "343",
+         "verbatim": "section 343 of that Code",
+         "note": ""
+        }
+       ],
        "children": []
       },
       {
@@ -4064,10 +4424,25 @@
        "amendment_events": [],
        "cross_references": [
         {
-         "kind": "internal",
-         "target_document": "Mortgage Act",
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
          "target_section": "288",
-         "verbatim": "sections 288"
+         "verbatim": "sections 288 and 323 to 330 of that Code",
+         "note": ""
+        },
+        {
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
+         "target_section": "323",
+         "verbatim": "sections 288 and 323 to 330 of that Code",
+         "note": ""
+        },
+        {
+         "kind": "external",
+         "target_document": "Civil Procedure Code",
+         "target_section": "330",
+         "verbatim": "sections 288 and 323 to 330 of that Code",
+         "note": ""
         },
         {
          "kind": "internal",
@@ -4147,6 +4522,20 @@
       {
        "kind": "external",
        "target_document": "Civil Procedure Code",
+       "target_section": "323",
+       "verbatim": "sections 323 to 330 of that Code",
+       "note": ""
+      },
+      {
+       "kind": "external",
+       "target_document": "Civil Procedure Code",
+       "target_section": "330",
+       "verbatim": "sections 323 to 330 of that Code",
+       "note": ""
+      },
+      {
+       "kind": "external",
+       "target_document": "Civil Procedure Code",
        "target_section": "287",
        "verbatim": "section 287 of the Civil Procedure Code"
       },
@@ -4155,12 +4544,6 @@
        "target_document": "Mortgage Act",
        "target_section": "49",
        "verbatim": "section 49"
-      },
-      {
-       "kind": "internal",
-       "target_document": "Mortgage Act",
-       "target_section": "323",
-       "verbatim": "sections 323"
       },
       {
        "kind": "enactment",
@@ -4252,7 +4635,15 @@
      "raw_text": "(2) Where an order under subsection (1) is issued to the Fiscal by a Magistrate's Court he shall forthwith execute such order and shall in writing report to that Court the manner in which the order was executed.",
      "text": "Where an order under subsection (1) is issued to the Fiscal by a Magistrate's Court he shall forthwith execute such order and shall in writing report to that Court the manner in which the order was executed.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "62B",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     },
     {
@@ -4261,7 +4652,15 @@
      "raw_text": "(3) For the purpose of executing an order issued by a Magistrate's Court under subsection (1), the Fiscal or any person acting under his direction may use such force as may be necessary to enter the land to which that order relates and to eject any person in occupation of that land and to deliver possession of that land to the officer who is authorized to take possession of that land, for or on behalf of the bank or institution.",
      "text": "For the purpose of executing an order issued by a Magistrate's Court under subsection (1), the Fiscal or any person acting under his direction may use such force as may be necessary to enter the land to which that order relates and to eject any person in occupation of that land and to deliver possession of that land to the officer who is authorized to take possession of that land, for or on behalf of the bank or institution.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "62B",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -4569,7 +4968,15 @@
      "raw_text": "(2) Where any property which is subject to a mortgage given for any purposes mentioned in paragraph (a) or paragraph (b) or paragraph (c) of subsection (1) is seized in execution of a decree in favour of any person other than the mortgagee, the seizing creditor may make application to the court by which the decree was entered for the issue of a notice of such seizure on the mortgagee; and where such notice is issued, then, notwithstanding anything in subsection (1), the mortgage shall as against a person purchasing such property at a sale under the seizure or any other person claiming under him, be effective only to the extent of the moneys actually due under the mortgage at the date of the receipt by the mortgagee of the notice issued by the court under the preceding provisions of this subsection.",
      "text": "Where any property which is subject to a mortgage given for any purposes mentioned in paragraph (a) or paragraph (b) or paragraph (c) of subsection (1) is seized in execution of a decree in favour of any person other than the mortgagee, the seizing creditor may make application to the court by which the decree was entered for the issue of a notice of such seizure on the mortgagee; and where such notice is issued, then, notwithstanding anything in subsection (1), the mortgage shall as against a person purchasing such property at a sale under the seizure or any other person claiming under him, be effective only to the extent of the moneys actually due under the mortgage at the date of the receipt by the mortgagee of the notice issued by the court under the preceding provisions of this subsection.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "64",
+       "target_subsection": "1",
+       "verbatim": "of subsection (1)"
+      }
+     ],
      "children": []
     },
     {
@@ -4578,7 +4985,15 @@
      "raw_text": "(3) The preceding provisions of this section shall apply to the mortgage of any property movable or immovable: Provided, however, that where a mortgage of movable property is given for any purpose referred to in paragraph (a) or paragraph (b) or paragraph (c) of subsection (1), the preceding provisions of this section shall affect only the extent to which the property is subject to the mortgage, and the movable property shall not, by reason of the operation of those provisions, be deemed or construed to continue to be subject to the mortgage to any extent whatsoever as against any person claiming under a subsequent mortgage or transfer, unless -",
      "text": "The preceding provisions of this section shall apply to the mortgage of any property movable or immovable:",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "64",
+       "target_subsection": "1",
+       "verbatim": "of subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "proviso",
@@ -4615,7 +5030,15 @@
      "raw_text": "(4) Nothing in subsection (2) shall apply in the case of any mortgage given for the purpose of guaranteeing the fidelity of a person employed as the servant or agent of another person or of securing the due custody and payment of moneys which may come into the hands of any person in his capacity as such servant or agent.",
      "text": "Nothing in subsection (2) shall apply in the case of any mortgage given for the purpose of guaranteeing the fidelity of a person employed as the servant or agent of another person or of securing the due custody and payment of moneys which may come into the hands of any person in his capacity as such servant or agent.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "64",
+       "target_subsection": "2",
+       "verbatim": "in subsection (2)"
+      }
+     ],
      "children": []
     },
     {
@@ -4695,6 +5118,13 @@
       {
        "kind": "internal",
        "target_document": "Mortgage Act",
+       "target_section": "65",
+       "target_subsection": "1",
+       "verbatim": "in subsection (1)"
+      },
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
        "target_section": "51",
        "verbatim": "section 51"
       }
@@ -4707,7 +5137,15 @@
      "raw_text": "(3) Where in any action upon any mortgage bond referred to in subsection (1), the court has made an adjudication as to the amount due under the mortgage to every mortgagee, then any such mortgagee shall, at the sale of the mortgaged land -",
      "text": "Where in any action upon any mortgage bond referred to in subsection (1), the court has made an adjudication as to the amount due under the mortgage to every mortgagee, then any such mortgagee shall, at the sale of the mortgaged land -",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "65",
+       "target_subsection": "1",
+       "verbatim": "in subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "paragraph",
@@ -4735,7 +5173,15 @@
      "raw_text": "(4) Where in any action upon a mortgage bond referred to in subsection (1) the court has made an adjudication as to the amount due under the mortgage to one or some only, but not all, of the mortgagees, no mortgagee shall at the sale of the mortgaged land be given any credit notwithstanding that any amount may be ordered in the decree to be paid to him.",
      "text": "Where in any action upon a mortgage bond referred to in subsection (1) the court has made an adjudication as to the amount due under the mortgage to one or some only, but not all, of the mortgagees, no mortgagee shall at the sale of the mortgaged land be given any credit notwithstanding that any amount may be ordered in the decree to be paid to him.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "65",
+       "target_subsection": "1",
+       "verbatim": "in subsection (1)"
+      }
+     ],
      "children": []
     },
     {
@@ -4744,7 +5190,15 @@
      "raw_text": "(5) The preceding provisions of this section shall apply in the case of every bond referred to in subsection (1) notwithstanding anything in the bond contained: Provided that those provisions shall not apply where the bond contains provision expressly referring to this section and excluding its operation.",
      "text": "The preceding provisions of this section shall apply in the case of every bond referred to in subsection (1) notwithstanding anything in the bond contained:",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "65",
+       "target_subsection": "1",
+       "verbatim": "in subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "proviso",
@@ -5254,6 +5708,13 @@
        "amendment_events": [],
        "cross_references": [
         {
+         "kind": "internal",
+         "target_document": "Mortgage Act",
+         "target_section": "71",
+         "target_subsection": "1",
+         "verbatim": "in subsection (1)"
+        },
+        {
          "kind": "enactment",
          "target_document": "Stamp Ordinance",
          "verbatim": "the Stamp Ordinance"
@@ -5335,6 +5796,13 @@
        "amendment_events": [],
        "cross_references": [
         {
+         "kind": "external",
+         "target_document": "Stamp Duty Act",
+         "target_section": "41",
+         "verbatim": "section 41 of that Ordinance",
+         "note": ""
+        },
+        {
          "kind": "internal",
          "target_document": "Mortgage Act",
          "target_section": "33",
@@ -5369,7 +5837,15 @@
      "raw_text": "(3) Where the Commissioner-General of Inland Revenue or any other officer of his department duly authorized by him in that behalf, is satisfied, upon presentation to him of an instrument, that a payment has been duly made in accordance with any provision of paragraphs (a) to (c) of subsection (2), the Commissioner-General or such officer shall by means of an endorsement under his hand on such instrument certify that such payment has been duly made. No payment shall be certified by the Commissioner-General or any officer under the preceding provisions of this subsection unless the instrument is presented to him within fourteen days of the date of such payment: Provided, however, that the Commissioner-General or such officer may in his discretion certify such payment notwithstanding any delay in the presentation of the instrument, if he is satisfied that the delay was due to inadvertence.",
      "text": "Where the Commissioner-General of Inland Revenue or any other officer of his department duly authorized by him in that behalf, is satisfied, upon presentation to him of an instrument, that a payment has been duly made in accordance with any provision of paragraphs (a) to (c) of subsection (2), the Commissioner-General or such officer shall by means of an endorsement under his hand on such instrument certify that such payment has been duly made. No payment shall be certified by the Commissioner-General or any officer under the preceding provisions of this subsection unless the instrument is presented to him within fourteen days of the date of such payment:",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "71",
+       "target_subsection": "2",
+       "verbatim": "of subsection (2)"
+      }
+     ],
      "children": [
       {
        "type": "proviso",
@@ -5481,7 +5957,15 @@
      "raw_text": "(2) The right of the agency to sell any shares under subsection (1) shall include the right to purchase the shares at the current market value, or where the transfer had been executed in favour of the agency to retain the shares, credit being in either event given to the mortgagor to the extent of the current market value.",
      "text": "The right of the agency to sell any shares under subsection (1) shall include the right to purchase the shares at the current market value, or where the transfer had been executed in favour of the agency to retain the shares, credit being in either event given to the mortgagor to the extent of the current market value.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "73",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     },
     {
@@ -5490,7 +5974,15 @@
      "raw_text": "(3) The rights of the agency under the preceding provisions of this section may be exercised in respect of all the shares which are for the time being subject to the mortgage under the instrument referred to in subsection (1) (a) or separately in respect of any shares so subject.",
      "text": "The rights of the agency under the preceding provisions of this section may be exercised in respect of all the shares which are for the time being subject to the mortgage under the instrument referred to in subsection (1) (a) or separately in respect of any shares so subject.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "73",
+       "target_subsection": "1",
+       "verbatim": "in subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -6034,7 +6526,15 @@
      "raw_text": "(2) The power conferred on the agency by subsection (1) to sell any movables shall be exercised only if the instrument of mortgage or an agreement between the parties contains provision referring to this section and empowering the agency to exercise the power of sale conferred thereby, and if either of the following conditions is fulfilled, that is to say -",
      "text": "The power conferred on the agency by subsection (1) to sell any movables shall be exercised only if the instrument of mortgage or an agreement between the parties contains provision referring to this section and empowering the agency to exercise the power of sale conferred thereby, and if either of the following conditions is fulfilled, that is to say -",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "85",
+       "target_subsection": "1",
+       "verbatim": "by subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "paragraph",
@@ -6076,7 +6576,15 @@
      "raw_text": "(3) Every sale in exercise of the power conferred by subsection (1) shall be by public auction, and it shall be the duty of the agency to take such steps as are necessary to ensure -",
      "text": "Every sale in exercise of the power conferred by subsection (1) shall be by public auction, and it shall be the duty of the agency to take such steps as are necessary to ensure -",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "85",
+       "target_subsection": "1",
+       "verbatim": "by subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "paragraph",
@@ -6148,7 +6656,15 @@
      "raw_text": "(2) Every such notice of demand of payment shall be sent by registered post in a letter to the address of the mortgagor as stated in the instrument of mortgage or the writing referred to in subsection (1), or to such new address as may, for the time being, have been notified and acknowledged as provided by that subsection.",
      "text": "Every such notice of demand of payment shall be sent by registered post in a letter to the address of the mortgagor as stated in the instrument of mortgage or the writing referred to in subsection (1), or to such new address as may, for the time being, have been notified and acknowledged as provided by that subsection.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "86",
+       "target_subsection": "1",
+       "verbatim": "in subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -6317,7 +6833,15 @@
      "raw_text": "(2) The provisions of subsection (1) shall apply in relation to a book debt notwithstanding -",
      "text": "The provisions of subsection (1) shall apply in relation to a book debt notwithstanding -",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "90",
+       "target_subsection": "1",
+       "verbatim": "of subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "paragraph",
@@ -6384,7 +6908,15 @@
      "raw_text": "(2) Any notice referred to in paragraph (a) or paragraph (b) of subsection (1) may be signed by the assignor at the time of the execution of the assignment or at any time thereafter, and may be sent or presented to the person owing the debt at any time while the assignment is operative.",
      "text": "Any notice referred to in paragraph (a) or paragraph (b) of subsection (1) may be signed by the assignor at the time of the execution of the assignment or at any time thereafter, and may be sent or presented to the person owing the debt at any time while the assignment is operative.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "91",
+       "target_subsection": "1",
+       "verbatim": "of subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -6491,7 +7023,15 @@
      "raw_text": "(2) Where an injunction has been issued under subsection (1) or any order relating to the books has been made under that subsection, the court may thereafter upon application made by the assignor and after such inquiry as it may consider necessary, make such order in relation to the injunction and to the books as the court may think fit.",
      "text": "Where an injunction has been issued under subsection (1) or any order relating to the books has been made under that subsection, the court may thereafter upon application made by the assignor and after such inquiry as it may consider necessary, make such order in relation to the injunction and to the books as the court may think fit.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "94",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     }
    ]
@@ -6649,7 +7189,15 @@
        "raw_text": "(a) give any directions which might have been given in an order under subsection (1), or vary any directions previously given whether under that subsection or under the preceding provisions of this subsection;",
        "text": "give any directions which might have been given in an order under subsection (1), or vary any directions previously given whether under that subsection or under the preceding provisions of this subsection;",
        "amendment_events": [],
-       "cross_references": [],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Mortgage Act",
+         "target_section": "98",
+         "target_subsection": "1",
+         "verbatim": "under subsection (1)"
+        }
+       ],
        "children": []
       },
       {
@@ -6876,7 +7424,15 @@
      "raw_text": "(2) Application for registration under subsection (1) shall be made by the mortgagor and shall be accompanied by a fee of one rupee.",
      "text": "Application for registration under subsection (1) shall be made by the mortgagor and shall be accompanied by a fee of one rupee.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "102",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     },
     {
@@ -7042,7 +7598,15 @@
        "raw_text": "(c) where the mortgagee is so added before the sale under the seizure, and makes application in that behalf supported by affidavit declaring that the properly is subject to a mortgage in his favour, the court shall order that the sale under the seizure be stayed and that the property be sold by public auction by an auctioneer to be appointed under subsection (2).",
        "text": "where the mortgagee is so added before the sale under the seizure, and makes application in that behalf supported by affidavit declaring that the properly is subject to a mortgage in his favour, the court shall order that the sale under the seizure be stayed and that the property be sold by public auction by an auctioneer to be appointed under subsection (2).",
        "amendment_events": [],
-       "cross_references": [],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Mortgage Act",
+         "target_section": "105",
+         "target_subsection": "2",
+         "verbatim": "under subsection (2)"
+        }
+       ],
        "children": []
       }
      ]
@@ -7053,7 +7617,15 @@
      "raw_text": "(2) Notice of an order under subsection (1) (c) shall be given to the parties to the action, and the court shall after such inquiry as may be necessary appoint an auctioneer to conduct the sale and give directions as to the time and manner of such sale.",
      "text": "Notice of an order under subsection (1) (c) shall be given to the parties to the action, and the court shall after such inquiry as may be necessary appoint an auctioneer to conduct the sale and give directions as to the time and manner of such sale.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "105",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     },
     {
@@ -7062,7 +7634,15 @@
      "raw_text": "(3) Where the seizure of the movable property is released after the making of an order under subsection (1) (c) for the sale thereof, the order under that sub section shall be annulled and no further proceedings shall be taken thereon.",
      "text": "Where the seizure of the movable property is released after the making of an order under subsection (1) (c) for the sale thereof, the order under that sub section shall be annulled and no further proceedings shall be taken thereon.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "105",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": []
     },
     {
@@ -7071,7 +7651,15 @@
      "raw_text": "(4) Where the mortgagee is added under subsection (1) as a party to the action and the movable property is or has been sold, whether under the seizure or under an order made under subsection (1) (c), and it is proved to the satisfaction of the court (after trial of such relevant issues as may be framed) that the movable property was at the date of such addition subject to the mortgage and either (i) that any sum was due and payable under the mortgage at that date or on demand, or (ii) that any sum, the amount of which is ascertainable, is certain to fall due for payment under the mortgage upon the effluxion of time without the happening of any future event or the future fulfilment of any condition -",
      "text": "Where the mortgagee is added under subsection (1) as a party to the action and the movable property is or has been sold, whether under the seizure or under an order made under subsection (1) (c), and it is proved to the satisfaction of the court (after trial of such relevant issues as may be framed) that the movable property was at the date of such addition subject to the mortgage and either (i) that any sum was due and payable under the mortgage at that date or on demand, or (ii) that any sum, the amount of which is ascertainable, is certain to fall due for payment under the mortgage upon the effluxion of time without the happening of any future event or the future fulfilment of any condition -",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "105",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "paragraph",
@@ -7128,7 +7716,15 @@
      "raw_text": "(2) Where any property is sold upon application made under subsection (1), and it is proved to the satisfaction of the court, after trial of such relevant issues as may be framed, that the movable property was at the date of the application subject to the mortgage and either (i) that any sum was due and payable under the mortgage on that date or (ii) that any sum, the amount of which is ascertainable, is certain to fall due for payment under the mortgage upon the effluxion of time without the happening of any future event or the future fulfilment of any condition -",
      "text": "Where any property is sold upon application made under subsection (1), and it is proved to the satisfaction of the court, after trial of such relevant issues as may be framed, that the movable property was at the date of the application subject to the mortgage and either (i) that any sum was due and payable under the mortgage on that date or (ii) that any sum, the amount of which is ascertainable, is certain to fall due for payment under the mortgage upon the effluxion of time without the happening of any future event or the future fulfilment of any condition -",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "106",
+       "target_subsection": "1",
+       "verbatim": "under subsection (1)"
+      }
+     ],
      "children": [
       {
        "type": "paragraph",
@@ -7231,7 +7827,15 @@
    "raw_text": "110.(1) A plaintiff in an action for the recovery of the rent due from a tenant in respect of any premises shall be entitled, upon satisfying the court that rent is due from the tenant and has been in arrear for one month after it has become due, to obtain from the court, ex parte, an injunction restraining the tenant from removing any goods from the premises or causing or permitting the removal therefrom of any goods, at any time while any rent remains due and unpaid, unless authority has been granted in that behalf under subsection (3).",
    "text": "",
    "amendment_events": [],
-   "cross_references": [],
+   "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Mortgage Act",
+     "target_section": "109",
+     "target_subsection": "3",
+     "verbatim": "under subsection (3)"
+    }
+   ],
    "children": [
     {
      "type": "subsection",
@@ -7239,7 +7843,15 @@
      "raw_text": "(1) A plaintiff in an action for the recovery of the rent due from a tenant in respect of any premises shall be entitled, upon satisfying the court that rent is due from the tenant and has been in arrear for one month after it has become due, to obtain from the court, ex parte, an injunction restraining the tenant from removing any goods from the premises or causing or permitting the removal therefrom of any goods, at any time while any rent remains due and unpaid, unless authority has been granted in that behalf under subsection (3).",
      "text": "A plaintiff in an action for the recovery of the rent due from a tenant in respect of any premises shall be entitled, upon satisfying the court that rent is due from the tenant and has been in arrear for one month after it has become due, to obtain from the court, ex parte, an injunction restraining the tenant from removing any goods from the premises or causing or permitting the removal therefrom of any goods, at any time while any rent remains due and unpaid, unless authority has been granted in that behalf under subsection (3).",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "110",
+       "target_subsection": "3",
+       "verbatim": "under subsection (3)"
+      }
+     ],
      "children": []
     },
     {
@@ -7303,7 +7915,15 @@
      "raw_text": "(4) Where an injunction has been issued under sub section (1) in respect of the goods upon any premises and is for the time being in force, any person who knowing or having reason to believe that it is unlawful for the tenant to remove or cause or permit the removal of the goods from the premises, removes or assists in the removal from the premises of any goods the removal of which is not authorized by order under subsection (3), may be punished as for a contempt of court in like manner as a tenant in case of disobedience.",
      "text": "Where an injunction has been issued under sub section (1) in respect of the goods upon any premises and is for the time being in force, any person who knowing or having reason to believe that it is unlawful for the tenant to remove or cause or permit the removal of the goods from the premises, removes or assists in the removal from the premises of any goods the removal of which is not authorized by order under subsection (3), may be punished as for a contempt of court in like manner as a tenant in case of disobedience.",
      "amendment_events": [],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Mortgage Act",
+       "target_section": "110",
+       "target_subsection": "3",
+       "verbatim": "under subsection (3)"
+      }
+     ],
      "children": []
     }
    ]
@@ -7601,7 +8221,15 @@
        "raw_text": "(d)* authorizing the use, in lieu of, or in addition to, any of the forms set out in any of the Schedules to this Act, of such translations thereof in Sinhala or in Tamil or in both those languages as may be approved by him.(*The position is different today in view of the provisions of Article 18 of the Constitution.) (2) Every rule made under subsection (1) shall be submitted to Parliament for approval. Every rule so approved shall be published in the Gazette, and shall come into force upon such publication. SAVINGS FOR APPOINTMENT OF RECEIVERS UNDER CIVIL PROCEDURE CODE",
        "text": "* authorizing the use, in lieu of, or in addition to, any of the forms set out in any of the Schedules to this Act, of such translations thereof in Sinhala or in Tamil or in both those languages as may be approved by him.(*The position is different today in view of the provisions of Article 18 of the Constitution.) (2) Every rule made under subsection (1) shall be submitted to Parliament for approval. Every rule so approved shall be published in the Gazette, and shall come into force upon such publication. SAVINGS FOR APPOINTMENT OF RECEIVERS UNDER CIVIL PROCEDURE CODE",
        "amendment_events": [],
-       "cross_references": [],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Mortgage Act",
+         "target_section": "115",
+         "target_subsection": "1",
+         "verbatim": "under subsection (1)"
+        }
+       ],
        "children": []
       }
      ]

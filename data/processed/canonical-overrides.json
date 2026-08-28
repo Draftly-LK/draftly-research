@@ -578,7 +578,13 @@
             {
                 "code": "section_88_89_heading_bleed",
                 "sections_affected": ["88", "89"],
-                "issue": "Section 89's heading, 'Meaning of \"book debt\".', has its own number land inside the quoted term when the note wraps ('Meaning of \"book / 89. / debt\".'), and the whole thing -- number included -- gets read as a continuation of section 88's heading instead of opening section 89. Section 89 does not appear as its own node; 88's heading reads 'Damages for wrongful sale of mortgaged property. Meaning of \"book 89. debt\"'.",
+                "issue": "Section 89's heading, 'Meaning of \"book debt\".', has its own number land inside the quoted term when the note wraps ('Meaning of \"book / 89. / debt\".'), and the whole thing -- number included -- gets read as a continuation of section 88's heading instead of opening section 89. Section 89 does not appear as its own node at all -- not just its heading but its whole body ('In sections 90 to 95 \"book debt\" means any debt which - (a)...') is missing; 88's heading reads 'Damages for wrongful sale of mortgaged property. Meaning of \"book 89. debt\"'.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "bare_section_backreference_unresolved",
+                "sections_affected": ["110"],
+                "issue": "Section 110(2) reads '...all the provisions of Chapter XLVIII of that Code, other than section 664, shall apply accordingly.' THAT_ENACTMENT resolves 'of that Code' correctly, but 'section 664' is a separate bare mention afterward ('other than section 664') that doesn't repeat 'of that/the said Code', so it isn't covered by that mechanism and is recorded as an internal self-reference to a nonexistent section 664 of this Act.",
                 "status": "known_parser_limitation"
             },
             {
