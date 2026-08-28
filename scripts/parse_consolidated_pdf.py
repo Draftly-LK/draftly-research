@@ -128,6 +128,11 @@ BARE_NUMBER = re.compile(r"^(\d{1,3}[A-Z]{0,2})\.$")
 # Act's item 16 fused into item 15's text this way, with a page number
 # wedged between them.
 PAGE_NUMBER_LINE = re.compile(r"^\d{1,4}$")
+# ocr_scanned_act.py inserts a literal "===== PAGE N =====" marker at every
+# page break. It breaks provision continuity exactly like a bare page number
+# does (Western Province Financial Statute section 5(2) fused into 5(1)'s
+# text this way, immediately after one of these).
+OCR_PAGE_MARKER = re.compile(r"^=+\s*PAGE\s+\d+\s*=+$")
 MARKER_ONLY = re.compile(r"^(?:\[[^\]]+\]\s*)+$")
 # A Part heading prints as two centred lines with nothing else on them: "PART
 # II" then its title in capitals, e.g. "TRUSTEES". Nothing here builds typed
@@ -495,6 +500,8 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
                 continue
             skip_next_title = False
         if not note and PAGE_NUMBER_LINE.match(body.strip()):
+            continue
+        if not note and OCR_PAGE_MARKER.match(body.strip()):
             continue
         # "7." alone, where section 7 proper appears elsewhere with text, is the
         # end of a sentence in the section above it, not the start of a new one.

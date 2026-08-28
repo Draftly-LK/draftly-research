@@ -218,9 +218,13 @@ EXTERNAL_REF = re.compile(
     # 829A* of the Civil Procedure Code"), so an optional one is allowed
     # after every number in the run, not just consumed by the whitespace
     # before "of the".
+    # An OCR reading can drop the space between "of" and "the" ("...297
+    # ofthe Civil Procedure Code"). The gap before "of" stays required (a
+    # number is always followed by real whitespace even in a bad OCR read),
+    # but the one between "of" and "the" is now optional.
     r"\bsections?\s+(\d{1,3}[A-Z]{0,2}\*?(?:\s*(?:,|and|or|to)\s*(?:sections?\s+)?\d{1,3}[A-Z]{0,2}\*?)*)"
     r"(?:\s*\([^()]{0,40}\))?"
-    r"\s+of\s+the\s+([A-Z][A-Za-z'()\s,.-]{4,70}?(?:Ordinance|Act|Law|Code))",
+    r"\s+of\s*the\s+([A-Z][A-Za-z'()\s,.-]{4,70}?(?:Ordinance|Act|Law|Code))",
 )
 SECTION_IN_LIST = re.compile(r"\d{1,3}[A-Z]{0,2}")
 # Every word of a title is capitalised apart from short connectors. Allowing any
