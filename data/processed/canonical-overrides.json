@@ -547,11 +547,21 @@
                 "status": "known_ocr_limitation"
             },
             {
+                "code": "external_ref_nested_parenthetical",
+                "sections_affected": ["89"],
+                "issue": "Section 89 refers to 'subsection (1) of section 291 (except paragraphs (a), (b) and (i) thereof) ofthecode of Criminal Procedure Act' -- the same nested-parenthetical gap already documented for the Stamp Duty Act's section 49 (EXTERNAL_REF tolerates one short, non-nested parenthetical aside; this one both nests and, on top of that, has the OCR merging 'the' and 'code' into one word), compounded here by the OCR merge. Recorded as an internal reference to a nonexistent section 291.",
+                "status": "known_parser_limitation"
+            },
+            {
                 "code": "long_title_ocr_tail_noise",
                 "detail": "long_title correctly starts 'A STATUTE TO PROVIDE FOR THE IMPOSITION AND COLLECTION OF TAXES AND FEES FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO' but runs on into an OCR-interleaved marginal note about this Statute's relationship to other tax Acts before the real stop point (the enacting formula) is reached. The genuine title is the first sentence; everything after 'INCIDENTAL THERETO' is the same column-interleaving artifact as the ocr_word_order_scramble note above.",
                 "status": "known_ocr_limitation"
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "fixed_after_first_review": [
+            "Section 5(2) and 85(4) were fused into the subsection before them where a literal '===== PAGE N =====' marker (inserted by ocr_scanned_act.py at every page break) broke provision continuity the same way a bare page number does elsewhere in the corpus; now filtered before block accumulation.",
+            "Section 88(4)'s 'sections 226 to 297 ofthe Civil Procedure Code' was recorded as internal because the OCR merged 'of' and 'the' together with no space; EXTERNAL_REF now tolerates that gap being absent."
+        ]
     }
 }
