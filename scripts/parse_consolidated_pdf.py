@@ -599,6 +599,22 @@ def parse(text: str, title: str) -> list[dict]:
         text = text[: boundary.start()]
     stream: list[dict] = []
     current_note = ""
+    current_section = ""
+    # "sections 296 and 297 of that Code" points at whichever enactment was
+    # last named in this same section, not at this one -- the same tracking
+    # build_canonical_statutes.py's HTML path already does, missing here
+    # entirely until now, so every "of that/the said <X>" reference in a PDF
+    # source fell through to build a bare, unresolved match or (worse, before
+    # THAT_ENACTMENT covered a list of numbers) a false internal self-
+    # reference (Mortgage Act section 61).
+    last_named_enactment = ""
+
+    def track_named(refs: list[dict]) -> list[dict]:
+        nonlocal last_named_enactment
+        for ref in refs:
+            if ref["kind"] == "enactment" and ref.get("target_document"):
+                last_named_enactment = ref["target_document"]
+        return refs
 
     pending_events: list[dict] = []
     for note, body in blocks_from(split_columns(text)):
@@ -625,11 +641,15 @@ def parse(text: str, title: str) -> list[dict]:
                     "raw_text": body,
                     "text": "" if ENUM_START.match(remainder) else remainder,
                     "amendment_events": events + note_events,
-                    "cross_references": cross_references(remainder, title),
+                    "cross_references": track_named(
+                        cross_references(remainder, title, current_section, last_named_enactment)
+                    ),
                 }
             )
             note_events = []
             current_note = ""
+            current_section = number
+            last_named_enactment = ""
             if ENUM_START.match(remainder):
                 # The section node has taken these; the subsection below is a
                 # different node and must not claim them a second time.
@@ -668,7 +688,9 @@ def parse(text: str, title: str) -> list[dict]:
                         "raw_text": piece,
                         "text": definition_text,
                         "amendment_events": events if index == 0 else [],
-                        "cross_references": cross_references(definition_text, title),
+                        "cross_references": track_named(
+                            cross_references(definition_text, title, current_section, last_named_enactment)
+                        ),
                     }
                 )
             continue
@@ -683,7 +705,9 @@ def parse(text: str, title: str) -> list[dict]:
             "raw_text": body,
             "text": remainder,
             "amendment_events": events,
-            "cross_references": cross_references(remainder, title),
+            "cross_references": track_named(
+                cross_references(remainder, title, current_section, last_named_enactment)
+            ),
         }
         stream.append(node)
 
