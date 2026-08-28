@@ -524,5 +524,34 @@
             }
         ],
         "verification_status": "unverified"
+    },
+    "SRC035": {
+        "checked_against": "data/legal-sources/library/statutes/ocr/6-1990-western-province-financial-statute.txt (offline doctr OCR of the registry's scanned Government Printer PDF, which has no text layer)",
+        "publisher": "Western Province Department of Revenue",
+        "note": "108 sections, coverage 0.46% unmatched against the full OCR text (title page, Foreword and Table of Contents included) -- unusually good for a scan this size, but the underlying reading still carries real OCR errors throughout, most visibly word-order scrambling where a two-column layout's marginal note and body text interleaved wrongly (confirmed in several places by checking against the OCR text directly; not something that can be corrected without a second, cleaner source). verification_status is unverified and this is a materially weaker basis for that than any other statute finalized so far.",
+        "quality_notes": [
+            {
+                "code": "no_fixed_commencement_date",
+                "detail": "The print states it was 'Certified on 29th October, 1990', but section 1(1) itself says the Statute's provisions come into operation 'on such date or dates as may be appointed by the Minister by Order published in the Gazette' -- there is no single commencement date to record, and the tree's commencement field is deliberately left blank rather than substituting the certification date for it.",
+                "status": "no_single_date_in_source"
+            },
+            {
+                "code": "duplicate_section_number_43",
+                "detail": "Two distinct provisions both carry the base number 43 in the source: '43. How instruments effecting exchange are to be stamped' and '43.(a) Where an instrument relates to a transfer of an immovable property...', the latter likely an inserted provision using a '(a)' suffix instead of '43A'. Recorded as two separate section nodes both numbered '43' rather than merged or renumbered by inference.",
+                "status": "source_numbering_convention"
+            },
+            {
+                "code": "ocr_word_order_scramble",
+                "sections_affected": ["1", "possibly_others"],
+                "issue": "Section 1's text reads 'This Statute may be cited as the Financial Short title and Statute ofthe Western Province No. 06 of 1990 into operation and its provisions shall come on such date...' -- the marginal note fragments ('Short title and', 'of.', 'into operation') are interleaved into the body sentence rather than sitting beside it, a column-reading-order artifact of the OCR pass on this specific scan. All the words are present and none invented; only their order is disturbed. Not hand-corrected given the scale a full read-through against the original scan would take; flagged here so a reader knows to expect it.",
+                "status": "known_ocr_limitation"
+            },
+            {
+                "code": "long_title_ocr_tail_noise",
+                "detail": "long_title correctly starts 'A STATUTE TO PROVIDE FOR THE IMPOSITION AND COLLECTION OF TAXES AND FEES FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO' but runs on into an OCR-interleaved marginal note about this Statute's relationship to other tax Acts before the real stop point (the enacting formula) is reached. The genuine title is the first sentence; everything after 'INCIDENTAL THERETO' is the same column-interleaving artifact as the ocr_word_order_scramble note above.",
+                "status": "known_ocr_limitation"
+            }
+        ],
+        "verification_status": "unverified"
     }
 }
