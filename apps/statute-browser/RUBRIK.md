@@ -63,7 +63,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Notaries Ordinance | No. 1 of 1907 | 43 | 18 | 7 | - |
 | 1 | Powers of Attorney Ordinance | No. 4 of 1902 | 9 | 3 | 1 | yes |
 | 1 | Prescription Ordinance | No. 22 of 1871 | 15 | 2 | 1 | yes |
-| 1 | Prevention of Frauds Ordinance | No. 7 of 1840 | 19 | 6 | 2 | - |
+| 1 | Prevention of Frauds Ordinance | No. 7 of 1840 | 19 | 6 | 2 | yes |
 | 1 | Registration of Documents Ordinance | No. 23 of 1927 | 42 | 19 | 12 | - |
 | 1 | Registration of Title Act | No. 21 of 1998 | 75 | 0 | 0 | yes |
 | 1 | Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act | No. 5 of 2017 | not extracted | 0 | 0 | - |
@@ -534,17 +534,22 @@ Amendments (2 known, 1 held):
 
 ### Prevention of Frauds Ordinance
 
-**No. 7 of 1840** · commenced 1840-02-01 · curriculum category 1 · SRC001
+**No. 7 of 1840** · commenced 1840-02-01 · curriculum category 1 · SRC001 · **finalized**
 
 Topics: Introduction to Conveyancing, Formation of Deeds, Drafting and Study of Instruments, Drafting of Deeds
 
-Sections: 19 in the index (headings from lawlanka 19)
+Sections: 19 in the index (headings from finalized 19)
 
 Parsed from the HTML edition: 19 sections, 1 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 19 sections, 2 subsections, 3 paragraphs.
-5 cross-references.
+Canonical structure: 19 sections, 6 subsections, 9 paragraphs.
+6 cross-references.
 Tree: `data/processed/canonical-statutes/SRC001-7-1840.json`
+
+Finalized: `data/legal-sources/library/finalized/7-1840-prevention-of-frauds-ordinance/7-1840-prevention-of-frauds-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
