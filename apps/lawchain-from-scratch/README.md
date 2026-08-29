@@ -14,10 +14,12 @@ Status: implemented (`lawchain/` package + tests). Not yet run end-to-end
 with the dense channel enabled in this environment -- see the Neo4j and E5
 notes below.
 
-Scope: the 24 finalized statutes in `data/legal-sources/library/finalized/`
-only, not the full 57-document corpus the existing engine indexes. The 11
-separate amendment-Act JSONs living inside those folders are excluded --
-their text is already merged into the 24 consolidated statutes.
+Scope: the finalized statutes in `data/legal-sources/library/finalized/`
+only (30 as of this writing; `lawchain/config.py`'s `EXPECTED_STATUTE_COUNT`
+is asserted against at build time and needs bumping as more get finalized),
+not the full corpus the existing engine indexes. The separate amendment-Act
+JSONs living inside those folders are excluded -- their text is already
+merged into the consolidated statutes.
 
 ## Architecture
 
@@ -39,7 +41,7 @@ before implementation.
 
 ```powershell
 $env:PYTHONPATH = "apps/lawchain-from-scratch"
-uv run python -m lawchain sources    # verify the 24 resolved statute files
+uv run python -m lawchain sources    # verify the resolved statute files
 uv run python -m lawchain build
 uv run python -m lawchain search "stamp duty" --limit 5
 uv run python -m lawchain evaluate   # writes evaluation/runs/lawchain-v1/comparison.json
@@ -54,8 +56,9 @@ to skip that channel entirely (lexical + graph only).
 ## Evaluation
 
 `evaluate` filters the existing engine's gold question set (`GOLD_CSV`) down
-to rows whose expected sections all fall within the 24-statute scope here
-(3 of the current 10 gold rows qualify), then scores both engines with the
+to rows whose expected sections all fall within this module's statute scope
+(4 of the current 10 gold rows qualify as of this writing), then scores both
+engines with the
 same Precision@5/Recall@1/5/10/MRR/nDCG@10 functions
 (`src/draftly/retrieval/evaluation.py`, which gained a `precision_at_5`
 metric for this comparison), alongside the paper's own reported

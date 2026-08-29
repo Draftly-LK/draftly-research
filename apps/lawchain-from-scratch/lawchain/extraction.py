@@ -1,4 +1,4 @@
-"""Layout-aware extraction of the 24 finalized statute JSONs.
+"""Layout-aware extraction of the finalized statute JSONs.
 
 The finalized JSONs under ``data/legal-sources/library/finalized/`` store a
 recursive ``body`` tree (part -> crossheading -> section -> subsection ->
@@ -9,7 +9,7 @@ requires a recursive walk, not a flat scan of ``body``.
 
 Amendment-Act JSONs living inside a principal statute's folder (e.g.
 ``27-2002-apartment-ownership-amendment.json``) have ``source_id: null`` in
-this dataset, which is what actually separates them from the 24 principal
+this dataset, which is what actually separates them from the principal
 consolidated statutes -- filtering on a present ``source_id`` is simpler and
 more robust than matching on filename substrings, so both are used
 defensively.

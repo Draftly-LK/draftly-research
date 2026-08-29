@@ -32,7 +32,7 @@ def in_scope_source_ids() -> set[str]:
 
 
 def filtered_gold_rows() -> list[dict[str, str]]:
-    """GOLD_CSV rows restricted to the 24-statute scope this module indexes.
+    """GOLD_CSV rows restricted to the statute scope this module indexes.
 
     A row is kept only if every expected section belongs to an in-scope
     statute -- mixed in/out-of-scope rows are dropped entirely so both

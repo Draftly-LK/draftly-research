@@ -1,9 +1,10 @@
+from lawchain.config import EXPECTED_STATUTE_COUNT
 from lawchain.extraction import build_corpus, corpus_fingerprint, select_statute_files
 
 
-def test_select_statute_files_resolves_all_24() -> None:
+def test_select_statute_files_resolves_expected_count() -> None:
     resolved = select_statute_files()
-    assert len(resolved) == 24
+    assert len(resolved) == EXPECTED_STATUTE_COUNT
 
 
 def test_build_corpus_covers_all_source_ids() -> None:

@@ -1,4 +1,5 @@
 import lawchain.dense_index as dense_index_module
+from lawchain.config import EXPECTED_STATUTE_COUNT
 
 
 def test_engine_build_and_retrieve_smoke(monkeypatch) -> None:
@@ -10,7 +11,7 @@ def test_engine_build_and_retrieve_smoke(monkeypatch) -> None:
 
     stats = engine.build(force=True)
     assert stats.sections > 0
-    assert stats.source_ids == 24
+    assert stats.source_ids == EXPECTED_STATUTE_COUNT
     assert stats.graph_nodes > 0
 
     hits = engine.retrieve("what makes a deed valid", limit=5)

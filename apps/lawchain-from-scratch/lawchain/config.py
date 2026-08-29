@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-EXPECTED_STATUTE_COUNT = 24
+EXPECTED_STATUTE_COUNT = 30
 
 # Escape hatch: source_id -> exact JSON filename, for a folder whose
 # candidate files can't be disambiguated by the registry/edition-kind rules
