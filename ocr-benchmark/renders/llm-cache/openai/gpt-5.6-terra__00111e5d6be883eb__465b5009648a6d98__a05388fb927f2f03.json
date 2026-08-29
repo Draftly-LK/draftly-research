@@ -1,0 +1,33 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "document": "source-001-national-identity-card.pdf",
+  "raw_fields": [
+    {
+      "key": "transfereeNic",
+      "value": "955130669 V",
+      "page": 1,
+      "evidence": "955130669 V",
+      "confidence": 0.98
+    },
+    {
+      "key": "holderDateOfBirth",
+      "value": "1995.01.13",
+      "page": 2,
+      "evidence": "பிறந்தது 1995.01.13 திகதி",
+      "confidence": 0.98
+    },
+    {
+      "key": "holderAddress",
+      "value": "25 , ගමාවත ,\nපාදුක්ත\nඅරුක්වත්ත ,",
+      "page": 2,
+      "evidence": "25 , ගමාවත ,\nපාදුක්ත\nපදිංචිය\nඅරුක්වත්ත ,",
+      "confidence": 0.68
+    }
+  ],
+  "prompt_tokens": 605,
+  "completion_tokens": 670,
+  "seconds": 9.32,
+  "schema_valid": true,
+  "error": ""
+}

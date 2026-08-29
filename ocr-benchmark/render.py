@@ -429,15 +429,23 @@ def crop(image: Image.Image, bbox: Sequence[float], pad: float = 0.02) -> Image.
 
 
 # ── synthetic fixture ────────────────────────────────────────────────────────
+# Invented values. They mirror the SHAPE of real fields — digit counts, leading
+# zeros, the "/=" money suffix, NIC formats — because the tests depend on that
+# shape, but every value here is fabricated.
+#
+# An earlier version of this list used real numbers from a case manifest for
+# realism. That was a mistake: this file is tracked, so it put client values in
+# git. A synthetic fixture that contains real data is not a synthetic fixture.
+# There is a test asserting these do not collide with the labelled corpus.
 SYNTHETIC_LINES: list[tuple[str, str]] = [
-    ("titleCertificateNo", "00030085091"),
-    ("cadastralMapNo", "520005"),
-    ("blockNo", "03"),
-    ("parcelNo", "0021"),
-    ("extent", "0.0153 ha"),
-    ("consideration", "Rs.4,819,500/="),
-    ("transfereeNic", "199012345678"),
-    ("holderDateOfBirth", "1990-05-14"),
+    ("titleCertificateNo", "00011122233"),
+    ("cadastralMapNo", "999001"),
+    ("blockNo", "07"),
+    ("parcelNo", "0099"),
+    ("extent", "0.0777 ha"),
+    ("consideration", "Rs.1,234,500/="),
+    ("transfereeNic", "199912345678"),
+    ("holderDateOfBirth", "1999-01-02"),
 ]
 
 

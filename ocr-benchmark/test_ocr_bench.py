@@ -331,6 +331,29 @@ def test_wilson_brackets_the_estimate():
 
 
 # ── registry vocabulary ──────────────────────────────────────────────────────
+def test_synthetic_fixture_contains_no_real_client_values():
+    """The fixture is tracked in git, so it must not carry values from the corpus.
+
+    Regression guard: an earlier version copied real numbers out of a case
+    manifest to look realistic, which put client data into a committed file.
+    """
+    import config
+
+    real: set[str] = set()
+    for case in config.case_dirs():
+        path = config.expected_fields_path(case)
+        if not path.is_file():
+            continue
+        for payload in json.loads(path.read_text(encoding="utf-8")).values():
+            real.update(str(v).strip() for v in (payload.get("fields") or {}).values())
+
+    if not real:
+        pytest.skip("no labelled corpus present to check against")
+
+    collisions = [f"{k}={v}" for k, v in render.SYNTHETIC_LINES if v.strip() in real]
+    assert not collisions, f"synthetic fixture leaks real client values: {collisions}"
+
+
 def test_criticality_overlay_covers_every_registry_key():
     """A new registry field must be classified, not silently treated as non-critical."""
     import config
