@@ -4,23 +4,23 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ## Counts
 
-- Source files inspected: 37
-- Statutes indexed: 26
-- Records: 8044
-- Distinct sections referenced: 1667
+- Source files inspected: 40
+- Statutes indexed: 29
+- Records: 8124
+- Distinct sections referenced: 1710
 - Records without a heading: 121
 - `section_id` is a rollup key, not a foreign key: it names the section a record belongs to even where that section has no record of its own (a section whose text lives entirely in its children emits nothing). Group by it to score at section level.
 - Temporal metadata: none. `effective_from` / `effective_to` are null on every record; act-level `commencement` is deliberately not propagated to provisions.
 
 ### By node type
 
-- `subsection`: 3192
-- `paragraph`: 2844
-- `section`: 787
+- `subsection`: 3198
+- `paragraph`: 2858
+- `section`: 827
 - `subparagraph`: 490
-- `definition`: 301
-- `proviso`: 214
-- `closing_text`: 154
+- `definition`: 302
+- `proviso`: 226
+- `closing_text`: 161
 - `text`: 36
 - `item`: 21
 - `schedule`: 3
@@ -48,9 +48,12 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 - Matrimonial Rights and Inheritance Ordinance: 51
 - Jaffna Matrimonial Rights and Inheritance Ordinance: 49
 - Thesawalamai Pre-emption Ordinance: 39
+- Prevention of Frauds Ordinance: 38
+- Prescription Ordinance: 27
 - Land Registers (Reconstructed Folios) Ordinance: 24
 - Kandyan Succession Ordinance: 20
 - State Land (Claims) Ordinance: 20
+- Powers of Attorney Ordinance: 15
 - Wills Ordinance: 9
 - Deeds and Documents (Execution before Public Officers) Ordinance: 7
 - Muslim Intestate Succession Ordinance: 5
@@ -73,7 +76,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ### Nodes
 
-- Empty own-text (content lives in children): 898 (definition 1, paragraph 3, schedule 1, section 882, subsection 11)
+- Empty own-text (content lives in children): 901 (definition 1, paragraph 3, schedule 1, section 885, subsection 11)
 - Repealed stubs excluded: 3
   - `11-1973/section-26/closing_text-1` -- '(*Repealed and replaced by the Companies Act, No. 17 of 1982.)'
   - `21-1844/section-3` -- 'Repealed By'
@@ -90,14 +93,17 @@ Reported, not resolved -- this build does no historical version reconstruction.
 - **Tea and Rubber Estates (Control of Fragmentation) Act** -- edition kind is 'as enacted (Numbered Acts database)', not a confirmed consolidation; 1 amending Act(s) present (20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.json) so their changes may be absent
 - **Wills Ordinance** -- verification_status is 'unverified'
 - **Registration of Title Act** -- edition kind is 'original_or_unconfirmed_consolidation', not a confirmed consolidation
+- **Prescription Ordinance** -- verification_status is 'unverified'
 - **Registration of Old Deeds and Instruments Ordinance** -- verification_status is 'needs_structural_review'
 - **National Housing Act** -- verification_status is 'unverified'
+- **Powers of Attorney Ordinance** -- verification_status is 'unverified'
 - **Urban Development Authority Act** -- verification_status is 'unverified'
 - **Stamp Duty Act** -- verification_status is 'unverified'
 - **Bank of Ceylon Ordinance** -- verification_status is 'unverified'
 - **Jaffna Matrimonial Rights and Inheritance Ordinance** -- act_id '1-1911' from citation differs from directory prefix '58-1947'
 - **Mortgage Act** -- verification_status is 'unverified'
 - **Western Province Financial Statute** -- verification_status is 'unverified'
+- **Prevention of Frauds Ordinance** -- verification_status is 'unverified'
 - **State Lands Ordinance** -- verification_status is 'unverified'
 
 ## Problems
@@ -133,7 +139,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
   - `7-2007/section-529/subsection-1/definition-group-financial-statements/paragraph-b`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-a`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-b`
-- Duplicate evidence texts: 146 distinct strings appear more than once (405 records)
+- Duplicate evidence texts: 147 distinct strings appear more than once (407 records)
 - Schedule items carrying `rates` tables: 2. The band/rupees/cents tables are structured numeric data and are not flattened into `text`, so rate lookups will not retrieve them.
 
 ## Regeneration

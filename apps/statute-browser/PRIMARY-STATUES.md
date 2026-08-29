@@ -32,7 +32,7 @@ same as unchanged. Every row is `status=unverified`.
 | 014 | Tesawalamai Pre-emption Ordinance | No. 59 of 1947 | 14 | 0 | none recorded |
 | 015 | Kandyan Succession Ordinance | No. 23 of 1917 | 4 | 0 | none recorded |
 | 016 | Muslim Intestate Succession Ordinance | No. 10 of 1931 | 4 | 0 | none recorded |
-| 017 | Powers of Attorney Ordinance | No. 4 of 1902 | 4 | 0 | none recorded |
+| 017 | Powers of Attorney Ordinance | No. 4 of 1902 | 9 | 0 | none recorded |
 | 018 | Wills Ordinance | No. 21 of 1844 | 9 | 0 | none recorded |
 | 020 | Civil Procedure Code | No. 2 of 1889 | 801 | 226 | 1960-2024 |
 | 021 | Companies Act | No. 7 of 2007 | 534 | 0 | none recorded |

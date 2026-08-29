@@ -30,7 +30,7 @@ Passed by the colonial legislature, so almost all are Ordinances.
 | 1889 | Surveyors Ordinance | No. 15 of 1889 | 17 | 0 | none recorded |
 | 1896* | Evidence Ordinance | not recorded | 179 | 34 | 1946-2021 |
 | 1901* | Interpretation Ordinance | index-only | 24 | 3 | 1972-1974 |
-| 1902 | Powers of Attorney Ordinance | No. 4 of 1902 | 4 | 0 | none recorded |
+| 1902 | Powers of Attorney Ordinance | No. 4 of 1902 | 9 | 0 | none recorded |
 | 1907 | Notaries Ordinance | No. 1 of 1907 | 43 | 0 | none recorded |
 | 1908* | Marriage Registration Ordinance | index-only | 65 | 0 | none recorded |
 | 1915* | Housing and Town Improvement Ordinance | index-only | 114 | 2 | 1980-1981 |
