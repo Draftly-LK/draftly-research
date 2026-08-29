@@ -336,7 +336,10 @@
         "quality_notes": [
             {
                 "code": "source_misprints",
-                "sections": ["2", "4"],
+                "sections": [
+                    "2",
+                    "4"
+                ],
                 "issue": "Subsections printed out of order/mislabelled in the source itself, confirmed against the raw HTML line-by-line: s.2 prints (1),(2),(1A),(1B),(3) in that literal sequence (the 1982 insert was appended after (2) rather than spliced in after (1)); s.4's Board-membership list runs (i),(j),(k) then a list item printed as (1) where (l) is expected (an l/1 confusion), then resumes at (m),(n).",
                 "status": "source_error_preserved_as_printed"
             },
@@ -347,13 +350,18 @@
             },
             {
                 "code": "paragraph_a_embedded",
-                "sections": ["28A", "28B"],
+                "sections": [
+                    "28A",
+                    "28B"
+                ],
                 "issue": "A nested lettered list restarts at (a)/(b) inside an outer paragraph also lettered (a)/(b) (e.g. s.28A(3): the outer '(a) Where any person has failed ... authorizing the Authority to-' introduces its own '(a) to discontinue...', '(b) to demolish...', '(c) to do such other acts...'). The splitter does not recognise a lone letter preceded by an ordinary word as a new list item -- by design, to avoid worse false positives such as splitting 'referred to in paragraph (a)' -- so the outer paragraph's own lettered limb stays folded into its text instead of becoming its own child.",
                 "status": "known_parser_limitation"
             },
             {
                 "code": "external_refs_misclassified",
-                "sections": ["19G"],
+                "sections": [
+                    "19G"
+                ],
                 "issue": "s.19G(2) reads 'Sections 321, 322 (1), 322 (2), 324, 325, 326, 328 (c), 329 and 330 of the Code of Criminal Procedure Act, No. 15 of 1979' -- all nine are external to this Act. Only '321' was captured, and as an internal cross-reference (this Act has no section 321); 322-330 are dropped entirely. The external-reference regex does not handle a comma-separated run of section/subsection pairs this long before the enactment name.",
                 "status": "known_parser_limitation"
             }
@@ -376,7 +384,10 @@
         "quality_notes": [
             {
                 "code": "source_edition_stale",
-                "sections_affected": ["5", "possibly_others"],
+                "sections_affected": [
+                    "5",
+                    "possibly_others"
+                ],
                 "issue": "Built from pre-2012 LankaLaw HTML. Section 5 currently shows 1939 composition (Minister-prescribed members) but 2024 consolidated PDF shows complete rewrite via later amendments into wards/percentage scheme tied to Local Authorities Elections Ordinance.",
                 "missing_amendments": "At minimum: [2, 21 of 2017], [8, 21 of 2012], [116, 24 of 1977]",
                 "status": "known_limitation_source_edition",
@@ -384,7 +395,11 @@
             },
             {
                 "code": "roman_numeral_parsing",
-                "sections_affected": ["36", "74", "78"],
+                "sections_affected": [
+                    "36",
+                    "74",
+                    "78"
+                ],
                 "issue": "A '(i)' that opens a single-item nested list stays folded into its parent's own text instead of becoming its own child, while a later '(ii)' in the same list correctly splits out as a sibling node -- so the tree shows an orphaned '(ii)' with no '(i)'. Two distinct shapes cause this: s.36(e) prints '(e) (i) to sell, exchange...', two enumerator markers directly adjacent with no lead-in prose; s.74 and s.78 have '...aggregate of (i) the estimated cost...', a marker straight after an ordinary word. A general fix for the first shape (treating a closing paren as a list-introducing character before the next marker) was tried and reverted: it also fires on citation chains like 'subsection (1) or (4) (a) or (b) or (c)', which are one continuous cross-reference, not a new list, and it corrupted that pattern across 25 other statutes in a full-corpus rebuild. The second shape is the same word-boundary ambiguity already documented for SRC039 (s.74/s.78's '(i)' looks identical to a genuine reference like 'referred to in paragraph (a)'), so it is not split either, by the same design choice.",
                 "status": "known_parser_limitation"
             }
@@ -397,13 +412,21 @@
         "quality_notes": [
             {
                 "code": "source_lowercase_letter_suffix",
-                "sections_affected": ["25D", "25E", "90B", "90C"],
+                "sections_affected": [
+                    "25D",
+                    "25E",
+                    "90B",
+                    "90C"
+                ],
                 "issue": "The source itself prints some cross-references to lettered sections in lowercase ('sections 90c, 90D, and 90E', 'section 25c') while the sections' own headings are uppercase (25C, 90C). Recorded verbatim as printed in cross_references[].target_section, so a resolver doing exact-case matching against section numbers will not link these particular references.",
                 "status": "source_as_printed"
             },
             {
                 "code": "amendments_without_inline_markers",
-                "acts_affected": ["22 of 1955", "30 of 1955"],
+                "acts_affected": [
+                    "22 of 1955",
+                    "30 of 1955"
+                ],
                 "issue": "Both Acts are named in the amendment-chain header but neither has a corresponding bracketed inline marker anywhere in the body text (checked by direct search of the source HTML), unlike the other four chain entries (42 of 1958, 36 of 1966, 9 of 1978, 49 of 1981), which are all marked. Consistent with either the chain-marking scheme genuinely omitting these two, or their changes having been fully superseded by later amendments to the same provisions.",
                 "status": "unresolved_no_second_source"
             }
@@ -435,7 +458,9 @@
             },
             {
                 "code": "unnumbered_continuation_heading_dropped",
-                "sections_affected": ["6"],
+                "sections_affected": [
+                    "6"
+                ],
                 "issue": "Section 6's marginal note in the source is 'Registrar-General shall file documents.', applied to the numbered section, but the source carries a SECOND, separate marginal-note block, 'Inspection of documents.', attached to an unnumbered continuation paragraph that immediately follows (HTML lines 248-263) -- structurally the same shape that produces the tree's 'closing_text' child (\"All such records shall be open to inspection...\"). Unlike section 4, where two marginal-note phrases sit inside one combined <font class=\"sectionshorttitle\"> block and merge into a single section heading correctly, section 6's second note is in its OWN separate marginal-note block, and 'closing_text' (and other non-section) child nodes carry no heading field in the schema at all -- so this note has nowhere to attach and is silently dropped. The substantive text is present and correctly placed as section 6's child; only its own descriptive label is missing.",
                 "status": "known_parser_limitation",
                 "recommendation": "Would need a schema change (heading field on non-section children) with corpus-wide reach, not a one-line patch -- deferred rather than risking another broad regression the way the roman-numeral adjacent-marker fix did"
@@ -473,6 +498,220 @@
     "SRC001": {
         "checked_against": "data/legal-sources/library/statutes/7-1840-prevention-of-frauds-ordinance.pdf (consolidated to 2024, per the registry's preferred_source_url)",
         "note": "Parsed from the consolidated PDF via scripts/parse_consolidated_pdf.py rather than the older LankaLaw HTML also held for this source (data/legal-sources/library/statutes/HTML/7-1840-prevention-of-frauds-ordinance.html). The HTML-based tree was flat -- 19 sections, no subsection/paragraph/proviso structure -- and did not reflect the 2022 or 2024 amendments; the PDF is consolidated to 2024 and its two-column layout carries real subsection structure. Same 19 sections resolve either way; the PDF parse adds 6 subsections, 9 paragraphs and 7 provisos, and the amendment chain (16 of 1852, 11 of 1896, 60 of 1947, 30 of 2022, 4 of 2024). Inline [section, Act of Year] markers were confirmed by direct search of the PDF text for sections 2 (three markers: 60 of 1947, 30 of 2022, 4 of 2024), 3, 4 and 5 (one marker each, 30 of 2022); the two oldest chain entries (16 of 1852, 11 of 1896) have no corresponding inline marker anywhere in the body text, the same unresolved-marker shape already recorded for SRC076.",
+        "verification_status": "unverified"
+    },
+    "SRC044": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/53-1938-bank-of-ceylon-ordinance.html, cross-read against the official Bank of Ceylon PDF at data/legal-sources/library/statutes/53-1938-bank-of-ceylon-ordinance.pdf",
+        "note": "The registry's own official Bank of Ceylon PDF (Chapter 397 Government Printer format) prints its marginal note in the RIGHT column with the operative text on the left -- the opposite convention from every other Government Printer PDF handled so far -- and scripts/parse_consolidated_pdf.py has no reliable way yet to tell a genuine right-hand note from a short one-line provision (e.g. 'Repealed (\u00a714,10 of 1974)') that happens to leave enough trailing whitespace to look like one. Parsed from the LankaLaw consolidated HTML instead, which reads cleanly (0.05% unmatched) and carries the identical amendment chain through Act No. 54 of 2000.",
+        "publisher": "LankaLaw (private republisher)",
+        "quality_notes": [
+            {
+                "code": "repealed_sections_omitted",
+                "sections_affected": [
+                    "34-40",
+                    "45-55",
+                    "66-67",
+                    "73"
+                ],
+                "issue": "The official PDF marks these numbers 'Repealed (\u00a7N, 10 of 1974)' explicitly; the LankaLaw HTML this tree is built from omits them from its numbering entirely rather than printing a stub. Confirmed genuine (not a parsing gap) by checking every missing number against the official PDF's own repeal markers.",
+                "status": "source_omission_confirmed_genuine"
+            },
+            {
+                "code": "pdf_reversed_column_layout",
+                "detail": "Left as future work: a general fix would need to distinguish a genuine right-hand marginal note from a short body line with trailing whitespace, e.g. by tracking the note column's horizontal position from confirmed multi-word notes and requiring a candidate note to start near it, the way body_column already does for the normal orientation.",
+                "status": "known_parser_limitation"
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC034": {
+        "checked_against": "data/legal-sources/library/statutes/43-1982-stamp-duty-act.pdf (official Inland Revenue Department PDF)",
+        "note": "75 sections, no amendment chain header printed anywhere in the source (unlike every other statute finalized so far). The document instead marks amended provisions with a bare instrument-number/year in the margin (e.g. '71/1988', '27/1991', '29/1993', '27/2000'), a format none of the marker regexes recognise -- they all expect a bracketed '[N, Act of Year]' shape or a proper chain-header block. Left unextracted rather than guessed at.",
+        "publisher": "Inland Revenue Department",
+        "quality_notes": [
+            {
+                "code": "rates_schedule_not_extracted",
+                "detail": "The 'RATES SCHEDULE' (stamp duty by document type, keyed to individual Gazette notices) is deliberately excluded from the tree, same as other statutes' Schedules -- coverage against the full PDF is roughly 11% unmatched as a result, essentially all of it schedule/rate-table text (Rs., Gazette numbers, dates).",
+                "status": "known_scope_limitation"
+            },
+            {
+                "code": "bare_numeral_list_flattened",
+                "sections_affected": [
+                    "56"
+                ],
+                "issue": "Section 56 opens its list with bare arabic numerals ('1. who draws...; or 2. who executes...;') rather than the usual '(a)'/'(i)'. The parser now correctly reads this as one list inside section 56 rather than five bogus new sections, but the five items are not split into typed children -- the whole list stays as one paragraph of raw text, complete and undamaged, just flatter than the source's own visual layout.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "amendment_markers_unrecognised_format",
+                "detail": "Bare 'N/YEAR' markers (e.g. the four listed above) are not extracted into amendment_events. See the top-level note.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "inline_enumerator_not_split",
+                "sections_affected": [
+                    "14"
+                ],
+                "issue": "Section 14(1) prints 'a) ... or, b) ...' with the second item's marker appearing mid-line rather than at the start of a printed line, which the parser's line-based block detection cannot catch (it only recognises an enumerator opening a fresh physical line). Paragraphs (a) and (b) are fused into one node; both are complete and undamaged, just not split at their true boundary.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "long_title_note_bleed",
+                "detail": "long_title reads '...IMPOSITION OF STAMP DUTY ON No.43 of 1982 INSTRUMENTS AND DOCUMENTS...': the marginal note beside the first two lines of the printed long title ('Act. / No.43 of 1982') is read from the raw, not yet column-split, page text, so it lands inline between two of the title's own words. Cosmetic only -- no title wording is lost, and the citation number is already held correctly and separately in citation.number.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "external_ref_nested_parenthetical",
+                "sections_affected": [
+                    "49"
+                ],
+                "issue": "Section 49 refers to 'subsection (1) of section 291 (except paragraphs (a) (d) and (i) thereof) of the Code of Criminal Procedure Act.' EXTERNAL_REF already tolerates one short parenthetical aside between a section number and 'of the <Act>' (fixed for the National Housing Act's 'sections 120 to 127 (both inclusive) of the Land Development Ordinance'), but this aside itself contains nested parens and runs longer than the 40-character allowance, so it falls through and section 291 is recorded as an internal reference to a section that does not exist in this Act.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "wrapped_note_vs_wrapped_body_ambiguity",
+                "sections_affected": [
+                    "40"
+                ],
+                "issue": "Section 40(10) drops the word 'in' from '...the amount specified in the notice appealed against...' at a line wrap, and the following bare crossheading 'APPEAL TO THE BOARD OF REVIEW' (no 'CHAPTER'/'PART' label, so the existing heading filter does not catch it) glues onto its own end. A fix was attempted (treating any full-width wrapped line with no sentence-closing punctuation before it as more body text) and reverted: it corrected this case but scrambled word order in three other already-parsed statutes, including the already-finalized Buddhist Temporalities Ordinance, by misreading genuine wrapped marginal notes as body text. The general problem -- telling a wrapped note from a wrapped body line apart using only layout, with no reliable column-position signal in this particular document -- was not solved in the time available.",
+                "status": "known_parser_limitation"
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC056": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/8-1947-state-lands-ordinance.html",
+        "note": "111 sections, coverage 1.48% unmatched -- essentially all editorial footnotes about repeals of OTHER enactments (Land Acquisition Ordinance 1876, Seashore Protection Ordinance, etc.), not this Ordinance's own body text. The registry's own PDF (a FAOLEX scan) has heavy OCR noise in its supposed text layer ('MAK.E' for 'MAKE', roman 'I' read for digit '1') and a genuine two-column body-text layout parse_consolidated_pdf.py is not built to read (it assumes one note column and one body column, not two independent columns of substantive text), so this tree is built from LankaLaw's HTML instead.",
+        "quality_notes": [
+            {
+                "code": "commencement_not_in_csv",
+                "detail": "data/processed/statute_commencement.csv (machine-generated, not hand-edited per its own header) has no row for SRC056, so the tree's commencement field is null. The source itself states the date plainly: section 2's interpretation clause reads '\"commencement\", when used with reference to this Ordinance, means the 1st day of September, 1949', matching the bracketed date at the head of the print.",
+                "status": "unresolved_missing_from_source_csv"
+            },
+            {
+                "code": "source_word_scramble",
+                "sections_affected": [
+                    "28",
+                    "83"
+                ],
+                "issue": "Both sections read as scrambled prose in the source HTML itself, checked and confirmed present verbatim in the raw markup, not introduced by this parser. Section 28: '...local authority which is corporations in not a corporation in law...' (word order broken around 'not a corporation in law'). Section 83: '...paragraphs (a), (A) and (c) of water of public subsection (1) of section 77 except under lake or stream, authority of a permit issued...' -- looks like words from this section's own marginal note ('...unlawful diversion of water of public lake or stream...') were interleaved into the body sentence during LankaLaw's own PDF-to-HTML conversion, upstream of anything read here. Kept as printed per the rule that a source error stays in the text rather than being silently corrected.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "external_ref_enactment_named_before_section",
+                "sections_affected": [
+                    "47"
+                ],
+                "issue": "Section 47's footnote reads '...references to 'protected holdings' in Chapters V and VI of the Land Development Ordinance have been replaced with references to a permit-holder... by virtue of the provisions of section 19A (3), which section has been subsequently repealed...'. The enactment name (Land Development Ordinance) comes well before 'section 19A (3)' in the same sentence rather than immediately after it in an 'of the <name>' phrase, which EXTERNAL_REF's adjacency requirement does not reach; recorded as an internal reference to a nonexistent section 19A of this Ordinance.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "footnote_marker_not_in_editorial_notes",
+                "sections_affected": [
+                    "36",
+                    "86"
+                ],
+                "issue": "Both sections' asterisked footnotes ('[* Repealed by Act No. 9 of 1950]' at s.36, '[* Section 829A is repealed by Law No. 20 of 1977]' at s.86) are present verbatim in the section's own raw_text/text but do not also get a corresponding entry in the tree's top-level editorial_notes array, unlike section 103's equivalent marker. No content is lost -- the footnote text is there to read -- it just is not indexed a second time in editorial_notes.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "external_ref_bare_the_code",
+                "sections_affected": [
+                    "86"
+                ],
+                "issue": "Section 86's second reference to the Civil Procedure Code ('sections 703 and 829A* of the Code shall have effect...') uses the bare phrase 'the Code' rather than repeating the full name or using 'that Code'/'the said Code', which neither EXTERNAL_REF nor THAT_ENACTMENT recognises as continuing the earlier-named enactment; recorded as internal to this Ordinance. The section's first, fuller reference ('...of the Civil Procedure Code') is correctly external. Section 86's footnote ('[* Section 829A is repealed by Law No. 20 of 1977]') has the same gap in isolation, with no enactment name in the footnote itself to resolve from.",
+                "status": "known_parser_limitation"
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC035": {
+        "checked_against": "data/legal-sources/library/statutes/ocr/6-1990-western-province-financial-statute.txt (offline doctr OCR of the registry's scanned Government Printer PDF, which has no text layer)",
+        "publisher": "Western Province Department of Revenue",
+        "note": "108 sections, coverage 0.46% unmatched against the full OCR text (title page, Foreword and Table of Contents included) -- unusually good for a scan this size, but the underlying reading still carries real OCR errors throughout, most visibly word-order scrambling where a two-column layout's marginal note and body text interleaved wrongly (confirmed in several places by checking against the OCR text directly; not something that can be corrected without a second, cleaner source). verification_status is unverified and this is a materially weaker basis for that than any other statute finalized so far.",
+        "quality_notes": [
+            {
+                "code": "no_fixed_commencement_date",
+                "detail": "The print states it was 'Certified on 29th October, 1990', but section 1(1) itself says the Statute's provisions come into operation 'on such date or dates as may be appointed by the Minister by Order published in the Gazette' -- there is no single commencement date to record, and the tree's commencement field is deliberately left blank rather than substituting the certification date for it.",
+                "status": "no_single_date_in_source"
+            },
+            {
+                "code": "duplicate_section_number_43",
+                "detail": "Two distinct provisions both carry the base number 43 in the source: '43. How instruments effecting exchange are to be stamped' and '43.(a) Where an instrument relates to a transfer of an immovable property...', the latter likely an inserted provision using a '(a)' suffix instead of '43A'. Recorded as two separate section nodes both numbered '43' rather than merged or renumbered by inference.",
+                "status": "source_numbering_convention"
+            },
+            {
+                "code": "ocr_word_order_scramble",
+                "sections_affected": [
+                    "1",
+                    "possibly_others"
+                ],
+                "issue": "Section 1's text reads 'This Statute may be cited as the Financial Short title and Statute ofthe Western Province No. 06 of 1990 into operation and its provisions shall come on such date...' -- the marginal note fragments ('Short title and', 'of.', 'into operation') are interleaved into the body sentence rather than sitting beside it, a column-reading-order artifact of the OCR pass on this specific scan. All the words are present and none invented; only their order is disturbed. Not hand-corrected given the scale a full read-through against the original scan would take; flagged here so a reader knows to expect it.",
+                "status": "known_ocr_limitation"
+            },
+            {
+                "code": "external_ref_nested_parenthetical",
+                "sections_affected": [
+                    "89"
+                ],
+                "issue": "Section 89 refers to 'subsection (1) of section 291 (except paragraphs (a), (b) and (i) thereof) ofthecode of Criminal Procedure Act' -- the same nested-parenthetical gap already documented for the Stamp Duty Act's section 49 (EXTERNAL_REF tolerates one short, non-nested parenthetical aside; this one both nests and, on top of that, has the OCR merging 'the' and 'code' into one word), compounded here by the OCR merge. Recorded as an internal reference to a nonexistent section 291.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "long_title_ocr_tail_noise",
+                "detail": "long_title correctly starts 'A STATUTE TO PROVIDE FOR THE IMPOSITION AND COLLECTION OF TAXES AND FEES FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO' but runs on into an OCR-interleaved marginal note about this Statute's relationship to other tax Acts before the real stop point (the enacting formula) is reached. The genuine title is the first sentence; everything after 'INCIDENTAL THERETO' is the same column-interleaving artifact as the ocr_word_order_scramble note above.",
+                "status": "known_ocr_limitation"
+            }
+        ],
+        "verification_status": "unverified",
+        "fixed_after_first_review": [
+            "Section 5(2) and 85(4) were fused into the subsection before them where a literal '===== PAGE N =====' marker (inserted by ocr_scanned_act.py at every page break) broke provision continuity the same way a bare page number does elsewhere in the corpus; now filtered before block accumulation.",
+            "Section 88(4)'s 'sections 226 to 297 ofthe Civil Procedure Code' was recorded as internal because the OCR merged 'of' and 'the' together with no space; EXTERNAL_REF now tolerates that gap being absent."
+        ]
+    },
+    "SRC064": {
+        "checked_against": "data/legal-sources/library/statutes/6-1949-mortgage-act.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
+        "note": "126 sections, coverage 2.12% unmatched -- the great majority the Act's three Schedules (forms of notice, deliberately excluded, same as other statutes' Schedules).",
+        "publisher": "LankaLaw (private republisher, consolidated to 2024)",
+        "quality_notes": [
+            {
+                "code": "section_28_29_boundary_confusion",
+                "sections_affected": [
+                    "28",
+                    "29"
+                ],
+                "issue": "Section 29's marginal note wraps across four lines, the last of which is the bare page-fragment '28.' (part of 'Estate to be bound if notices issued as provided in section 28.') sitting alone in the note column beside body text that continues section 29's own sentence ('may be or may have been dead...'). A general fix was attempted -- only treat a bare N. in the note-column position as reopening the body when it carries no text of its own -- and reverted: it restored section 29 correctly here but discarded real content in two OTHER already-finalized statutes (Stamp Duty Act section 30, Western Province Financial Statute section 1), because the identical bare-N.-alone shape is also how a genuine section legitimately opens in this document family when its own text happens to start on the very next physical line. The two failure modes are not distinguishable from this local signal alone. Left as before the attempt: section 28 (the real one, headed 'Provision for death, insolvency...') carries its own 4 subsections correctly; a second, phantom node also numbered '28' with no heading holds the fragment of section 29's own text that this note wrapping displaced ('may be or may have been dead or an insolvent...'); section 29 itself is missing that continuation and its subsections (2) and (3).",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "section_88_89_heading_bleed",
+                "sections_affected": [
+                    "88",
+                    "89"
+                ],
+                "issue": "Section 89's heading, 'Meaning of \"book debt\".', has its own number land inside the quoted term when the note wraps ('Meaning of \"book / 89. / debt\".'), and the whole thing -- number included -- gets read as a continuation of section 88's heading instead of opening section 89. Section 89 does not appear as its own node at all -- not just its heading but its whole body ('In sections 90 to 95 \"book debt\" means any debt which - (a)...') is missing; 88's heading reads 'Damages for wrongful sale of mortgaged property. Meaning of \"book 89. debt\"'.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "bare_section_backreference_unresolved",
+                "sections_affected": [
+                    "110"
+                ],
+                "issue": "Section 110(2) reads '...all the provisions of Chapter XLVIII of that Code, other than section 664, shall apply accordingly.' THAT_ENACTMENT resolves 'of that Code' correctly, but 'section 664' is a separate bare mention afterward ('other than section 664') that doesn't repeat 'of that/the said Code', so it isn't covered by that mechanism and is recorded as an internal self-reference to a nonexistent section 664 of this Act.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "section_47D_and_others_letter_run",
+                "detail": "Letter-suffixed sections present: 47A, 62A-62H (62D recovered by a fix landed while working this statute -- a note that fills its column can run straight into its own section number with no gap, 'Provision for death,28.' and 'Application to be in62D.' both did this), 68A. All confirmed against the source.",
+                "status": "informational"
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC050": {
+        "checked_against": "data/legal-sources/library/statutes/19-1935-land-development-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
+        "note": "144 sections, coverage 0.94% unmatched -- chapter headings (dropped, same as Part headings elsewhere) and front-matter/title-page vocabulary. Numbering gaps (26, 32-34, 36, 44-45, 50, 69-71, 77-83, 88-103, 124, 144-151, 171 among others) not individually confirmed against a repeal marker for each one given the volume, but consistent with this document's own amendment history (13 amending instruments) and the pattern already verified elsewhere in this corpus for similarly aged, heavily-amended statutes.",
+        "publisher": "LankaLaw (private republisher, consolidated to 2024)",
         "verification_status": "unverified"
     }
 }

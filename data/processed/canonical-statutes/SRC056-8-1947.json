@@ -125,8 +125,51 @@
   }
  ],
  "omitted_provisions": [],
- "overrides_applied": {},
- "quality_flags": [],
+ "overrides_applied": {
+  "checked_against": "data/legal-sources/library/statutes/HTML/8-1947-state-lands-ordinance.html",
+  "note": "111 sections, coverage 1.48% unmatched -- essentially all editorial footnotes about repeals of OTHER enactments (Land Acquisition Ordinance 1876, Seashore Protection Ordinance, etc.), not this Ordinance's own body text. The registry's own PDF (a FAOLEX scan) has heavy OCR noise in its supposed text layer ('MAK.E' for 'MAKE', roman 'I' read for digit '1') and a genuine two-column body-text layout parse_consolidated_pdf.py is not built to read (it assumes one note column and one body column, not two independent columns of substantive text), so this tree is built from LankaLaw's HTML instead."
+ },
+ "quality_flags": [
+  {
+   "code": "commencement_not_in_csv",
+   "detail": "data/processed/statute_commencement.csv (machine-generated, not hand-edited per its own header) has no row for SRC056, so the tree's commencement field is null. The source itself states the date plainly: section 2's interpretation clause reads '\"commencement\", when used with reference to this Ordinance, means the 1st day of September, 1949', matching the bracketed date at the head of the print.",
+   "status": "unresolved_missing_from_source_csv"
+  },
+  {
+   "code": "source_word_scramble",
+   "sections_affected": [
+    "28",
+    "83"
+   ],
+   "issue": "Both sections read as scrambled prose in the source HTML itself, checked and confirmed present verbatim in the raw markup, not introduced by this parser. Section 28: '...local authority which is corporations in not a corporation in law...' (word order broken around 'not a corporation in law'). Section 83: '...paragraphs (a), (A) and (c) of water of public subsection (1) of section 77 except under lake or stream, authority of a permit issued...' -- looks like words from this section's own marginal note ('...unlawful diversion of water of public lake or stream...') were interleaved into the body sentence during LankaLaw's own PDF-to-HTML conversion, upstream of anything read here. Kept as printed per the rule that a source error stays in the text rather than being silently corrected.",
+   "status": "source_as_printed"
+  },
+  {
+   "code": "external_ref_enactment_named_before_section",
+   "sections_affected": [
+    "47"
+   ],
+   "issue": "Section 47's footnote reads '...references to 'protected holdings' in Chapters V and VI of the Land Development Ordinance have been replaced with references to a permit-holder... by virtue of the provisions of section 19A (3), which section has been subsequently repealed...'. The enactment name (Land Development Ordinance) comes well before 'section 19A (3)' in the same sentence rather than immediately after it in an 'of the <name>' phrase, which EXTERNAL_REF's adjacency requirement does not reach; recorded as an internal reference to a nonexistent section 19A of this Ordinance.",
+   "status": "known_parser_limitation"
+  },
+  {
+   "code": "footnote_marker_not_in_editorial_notes",
+   "sections_affected": [
+    "36",
+    "86"
+   ],
+   "issue": "Both sections' asterisked footnotes ('[* Repealed by Act No. 9 of 1950]' at s.36, '[* Section 829A is repealed by Law No. 20 of 1977]' at s.86) are present verbatim in the section's own raw_text/text but do not also get a corresponding entry in the tree's top-level editorial_notes array, unlike section 103's equivalent marker. No content is lost -- the footnote text is there to read -- it just is not indexed a second time in editorial_notes.",
+   "status": "known_parser_limitation"
+  },
+  {
+   "code": "external_ref_bare_the_code",
+   "sections_affected": [
+    "86"
+   ],
+   "issue": "Section 86's second reference to the Civil Procedure Code ('sections 703 and 829A* of the Code shall have effect...') uses the bare phrase 'the Code' rather than repeating the full name or using 'that Code'/'the said Code', which neither EXTERNAL_REF nor THAT_ENACTMENT recognises as continuing the earlier-named enactment; recorded as internal to this Ordinance. The section's first, fuller reference ('...of the Civil Procedure Code') is correctly external. Section 86's footnote ('[* Section 829A is repealed by Law No. 20 of 1977]') has the same gap in isolation, with no enactment name in the footnote itself to resolve from.",
+   "status": "known_parser_limitation"
+  }
+ ],
  "source_location": {},
  "alternate_edition_variants": [],
  "schedules_referenced": [
@@ -545,20 +588,10 @@
      "type": "section",
      "number": "19",
      "heading": "Dispositions executed by grantee contrary to provisions in instrument of disposition are void.",
-     "raw_text": "19. Where in any instrument of disposition issued or executed either before or after the commencement of this Ordinance it is",
-     "text": "Where in any instrument of disposition issued or executed either before or after the commencement of this Ordinance it is",
+     "raw_text": "19. Where in any instrument of disposition issued or executed either before or after the commencement of this Ordinance it is provided that any disposition of the land comprised in such instrument shall not be effected by the grantee without the prior consent or sanction of the President or of any specified officer of Government, any disposition executed by the grantee without such consent or sanction shall be void and inoperative for all purposes.",
+     "text": "Where in any instrument of disposition issued or executed either before or after the commencement of this Ordinance it is provided that any disposition of the land comprised in such instrument shall not be effected by the grantee without the prior consent or sanction of the President or of any specified officer of Government, any disposition executed by the grantee without such consent or sanction shall be void and inoperative for all purposes.",
      "amendment_events": [],
-     "cross_references": [],
-     "children": [
-      {
-       "type": "proviso",
-       "number": "",
-       "raw_text": "provided that any disposition of the land comprised in such instrument shall not be effected by the grantee without the prior consent or sanction of the President or of any specified officer of Government, any disposition executed by the grantee without such consent or sanction shall be void and inoperative for all purposes.",
-       "text": "provided that any disposition of the land comprised in such instrument shall not be effected by the grantee without the prior consent or sanction of the President or of any specified officer of Government, any disposition executed by the grantee without such consent or sanction shall be void and inoperative for all purposes.",
-       "amendment_events": [],
-       "cross_references": []
-      }
-     ]
+     "cross_references": []
     },
     {
      "type": "section",
@@ -1882,6 +1915,12 @@
          "verbatim": "section 44 (2)"
         },
         {
+         "kind": "external",
+         "target_document": "Urban Councils Ordinance",
+         "target_section": "44",
+         "verbatim": "section 44 (2) of the Urban Councils Ordinance"
+        },
+        {
          "kind": "enactment",
          "target_document": "Urban Councils Ordinance",
          "verbatim": "the Urban Councils Ordinance"
@@ -3059,6 +3098,24 @@
      "cross_references": [
       {
        "kind": "external",
+       "target_document": "Civil Procedure Code",
+       "target_section": "703",
+       "verbatim": "sections 703 to 711 and section 829A* of the Civil Procedure Code"
+      },
+      {
+       "kind": "external",
+       "target_document": "Civil Procedure Code",
+       "target_section": "711",
+       "verbatim": "sections 703 to 711 and section 829A* of the Civil Procedure Code"
+      },
+      {
+       "kind": "external",
+       "target_document": "Civil Procedure Code",
+       "target_section": "829A",
+       "verbatim": "sections 703 to 711 and section 829A* of the Civil Procedure Code"
+      },
+      {
+       "kind": "external",
        "target_document": "State Lands Ordinance",
        "target_section": "85",
        "verbatim": "section 85 of the State Lands Ordinance"
@@ -3068,12 +3125,6 @@
        "target_document": "State Lands Ordinance",
        "target_section": "703",
        "verbatim": "sections 703"
-      },
-      {
-       "kind": "internal",
-       "target_document": "State Lands Ordinance",
-       "target_section": "829A",
-       "verbatim": "section 829A"
       },
       {
        "kind": "enactment",

@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-29T11:36:02.610633+00:00",
+  "case": "platform-case-001",
+  "provider": "google-cloud-vision:document_text_detection",
+  "method": "confidence x top-edge-length weighted vote over high-confidence word polygons",
+  "thresholds": {
+    "min_usable_words": 10,
+    "min_vote_share": 0.7,
+    "min_word_confidence": 0.6
+  },
+  "counts": {
+    "pages": 26,
+    "upright": 10,
+    "rotate": 16,
+    "uncertain": 0
+  },
+  "pages": [
+    {
+      "document": "source-001-national-identity-card.pdf",
+      "page": 1,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.8796,
+      "usable_word_count": 22
+    },
+    {
+      "document": "source-001-national-identity-card.pdf",
+      "page": 2,
+      "detected_orientation_degrees": 0,
+      "correction_degrees": 0,
+      "status": "upright",
+      "vote_share": 1.0,
+      "usable_word_count": 39
+    },
+    {
+      "document": "source-002-survey-plan-2338-lot-17-18-extracts.pdf",
+      "page": 1,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.9921,
+      "usable_word_count": 408
+    },
+    {
+      "document": "source-002-survey-plan-2338-lot-17-18-extracts.pdf",
+      "page": 2,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.9808,
+      "usable_word_count": 404
+    },
+    {
+      "document": "source-003-title-certificate-parcel-0021.pdf",
+      "page": 1,
+      "detected_orientation_degrees": 0,
+      "correction_degrees": 0,
+      "status": "upright",
+      "vote_share": 0.9993,
+      "usable_word_count": 227
+    },
+    {
+      "document": "source-003-title-certificate-parcel-0021.pdf",
+      "page": 2,
+      "detected_orientation_degrees": 270,
+      "correction_degrees": 90,
+      "status": "rotate",
+      "vote_share": 0.9484,
+      "usable_word_count": 214
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 1,
+      "detected_orientation_degrees": 0,
+      "correction_degrees": 0,
+      "status": "upright",
+      "vote_share": 1.0,
+      "usable_word_count": 152
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 2,
+      "detected_orientation_degrees": 0,
+      "correction_degrees": 0,
+      "status": "upright",
+      "vote_share": 1.0,
+      "usable_word_count": 260
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 3,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.922,
+      "usable_word_count": 462
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 4,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.9812,
+      "usable_word_count": 203
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 5,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.9642,
+      "usable_word_count": 185
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 6,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.9933,
+      "usable_word_count": 493
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 7,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.9773,
+      "usable_word_count": 171
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 8,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.9834,
+      "usable_word_count": 162
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 9,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.9857,
+      "usable_word_count": 256
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 10,
+      "detected_orientation_degrees": 0,
+      "correction_degrees": 0,
+      "status": "upright",
+      "vote_share": 0.9663,
+      "usable_word_count": 486
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 11,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.981,
+      "usable_word_count": 208
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 12,
+      "detected_orientation_degrees": 90,
+      "correction_degrees": 270,
+      "status": "rotate",
+      "vote_share": 0.9772,
+      "usable_word_count": 132
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 13,
+      "detected_orientation_degrees": 270,
+      "correction_degrees": 90,
+      "status": "rotate",
+      "vote_share": 0.9914,
+      "usable_word_count": 493
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 14,
+      "detected_orientation_degrees": 270,
+      "correction_degrees": 90,
+      "status": "rotate",
+      "vote_share": 0.9705,
+      "usable_word_count": 171
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 15,
+      "detected_orientation_degrees": 0,
+      "correction_degrees": 0,
+      "status": "upright",
+      "vote_share": 1.0,
+      "usable_word_count": 265
+    },
+    {
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 16,
+      "detected_orientation_degrees": 180,
+      "correction_degrees": 180,
+      "status": "rotate",
+      "vote_share": 1.0,
+      "usable_word_count": 49
+    },
+    {
+      "document": "source-005-rta-sale-instrument-sinhala-registered.pdf",
+      "page": 1,
+      "detected_orientation_degrees": 0,
+      "correction_degrees": 0,
+      "status": "upright",
+      "vote_share": 0.9948,
+      "usable_word_count": 345
+    },
+    {
+      "document": "source-005-rta-sale-instrument-sinhala-registered.pdf",
+      "page": 2,
+      "detected_orientation_degrees": 0,
+      "correction_degrees": 0,
+      "status": "upright",
+      "vote_share": 0.9964,
+      "usable_word_count": 401
+    },
+    {
+      "document": "source-006-vendor-board-resolution-lot-20.pdf",
+      "page": 1,
+      "detected_orientation_degrees": 0,
+      "correction_degrees": 0,
+      "status": "upright",
+      "vote_share": 0.9949,
+      "usable_word_count": 359
+    },
+    {
+      "document": "source-007-payment-cheque-part-consideration.pdf",
+      "page": 1,
+      "detected_orientation_degrees": 0,
+      "correction_degrees": 0,
+      "status": "upright",
+      "vote_share": 0.9922,
+      "usable_word_count": 95
+    }
+  ],
+  "note": "Angles and counts only. No recognised text or client values appear in this report."
+}

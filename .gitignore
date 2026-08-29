@@ -102,11 +102,10 @@ scripts/case-law-information-extraction/output/supremecourt-lk/text-cache/
 # annotations stay local. Only code, schemas, and aggregate reports are tracked.
 # cases/* rather than cases/ so the README can be re-included: git cannot
 # un-exclude a file whose parent directory is itself excluded.
-ocr-benchmark/cases/*
-!ocr-benchmark/cases/README.md
-ocr-benchmark/renders/
-ocr-benchmark/runs/
 ocr-benchmark/labels/
+# Archived overlays and older run artifacts. These render real client pages,
+# so archiving them must not make them committable.
+ocr-benchmark/archive/
 
 # Past-paper evaluation: the source scans and every intermediate rendering are
 # large (381 MB) and reproducible from the pipeline, so only code and the small

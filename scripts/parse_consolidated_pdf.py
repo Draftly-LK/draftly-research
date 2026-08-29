@@ -73,13 +73,21 @@ COLUMN_GAP = re.compile(r"\s{3,}")
 NOTE_THEN_SECTION = re.compile(
     # The note often ends in a full stop, as "Application of law. 2. This Law
     # shall apply...", so the note characters have to allow it. And a section can
-    # open with a bare number, its text starting on the following line.
-    r"^(?P<note>[A-Z][A-Za-z ,.'()&-]{0,45}?)\s+(?P<body>\d{1,3}[A-Z]{0,2}\.\s*(?:[({A-Z].*)?)$"
+    # open with a bare number, its text starting on the following line. A note
+    # that fills its column can also run straight into the number with no gap
+    # at all: "Provision for death,28. (1) The duly appointed..." (Mortgage
+    # Act) touched its number this way and lost section 28 entirely, with 27
+    # and 29 swallowing pieces of its heading and body between them.
+    r"^(?P<note>[A-Z][A-Za-z ,.'()&-]{0,45}?)\s*(?P<body>\d{1,3}[A-Z]{0,2}\.\s*(?:[({A-Z].*)?)$"
 )
 # A section opens with its number at the start of the body column, as "1." or
 # "1.(1)" or "12A.". The trailing dot is what separates it from a stray figure.
 SECTION_START = re.compile(r"^(\d{1,3}[A-Z]{0,2})\.\s*(.*)$", re.DOTALL)
-ENUM_START = re.compile(r"^\(\s*\w{1,4}\s*\)")
+# Some prints drop the opening bracket entirely: "1) affidavit..." and
+# "a) all documents..." in the Stamp Duty Act's exemption list. Recognised
+# here too, or these lines never open their own block in the first place and
+# the whole list stays fused into whatever came before it.
+ENUM_START = re.compile(r"^(?:\(\s*\w{1,4}\s*\)|\d{1,3}[a-zA-Z]{0,2}\)|[a-z]{1,3}\))")
 # A defined term opens a block just as a section number or an enumerator does.
 # Without this the whole interpretation list is glued onto the section's text.
 DEFINITION_LINE = re.compile(r"^[\"‘“']\s*[^\"’”']{2,60}[\"’”']")
@@ -88,10 +96,27 @@ DEFINITION_LINE = re.compile(r"^[\"‘“']\s*[^\"’”']{2,60}[\"’”']")
 # MAKE PROVISION WITH RESPECT TO..." with no "AN" in front of it -- and a
 # consolidated reprint of that age carries no enacting formula to stop at
 # either, only the amendment chain that follows the title.
+# A print with neither an enacting formula nor a chain header (the Stamp Duty
+# Act has no "Be it enacted", and no proper amendment-chain block either) has
+# nothing to stop the non-greedy match at, so it runs on until the first
+# incidental "<Act|Ordinance|Law> No." anywhere in the body -- for this Act,
+# a cross-reference to "Credit Information Bureau of Sri Lanka Act No.18 of
+# 1990" buried in an exemptions list, six thousand characters in. Its own
+# print instead follows the long title straight with "(Commencement --
+# <date>: Operation -- <date>.)", which is as good a stop as any of the
+# others and specific enough not to fire early.
+# The opening keyword is matched case-sensitively, not the whole pattern: a
+# printed long title is always set in capitals ("AN ACT TO...", "A STATUTE
+# TO..."), and the search runs over the full page text before this document's
+# own front matter is known to end. Left case-insensitive, "STATUTE" style
+# instruments got missed by the keyword list (added here) while the Western
+# Province Financial Statute's Table of Contents ("...appeal to the Court of
+# Appeal...", ordinary sentence case) supplied an earlier, false "law to"
+# match and the real title, six pages later, was never reached.
 LONG_TITLE_PDF = re.compile(
-    r"((?:AN?\s+)?(?:ACT|ORDINANCE|LAW)\s+TO.*?)"
-    r"(?:BE\s+it\s+enacted|WHEREAS|(?:Ordinance|Act|Law)s?\s+Nos?[.,])",
-    re.IGNORECASE | re.DOTALL,
+    r"((?:AN?\s+)?(?:ACT|ORDINANCE|LAW|STATUTE)\s+TO.*?)"
+    r"(?:(?i:BE\s+it\s+enacted|WHEREAS|(?:Ordinance|Act|Law|Statute)s?\s+Nos?[.,]|\(Commencement))",
+    re.DOTALL,
 )
 # The note column starts hard against the left margin; the body column is
 # indented. A short unindented line with no column gap is therefore the tail of a
@@ -100,14 +125,29 @@ LONG_TITLE_PDF = re.compile(
 NOTE_TAIL = re.compile(r"^[A-Za-z0-9][A-Za-z0-9 ,.'()&-]{0,30}$")
 # "...unless exempted under section" wrapping onto a line holding just "7."
 BARE_NUMBER = re.compile(r"^(\d{1,3}[A-Z]{0,2})\.$")
+# A page number prints alone on its own line, with no note and no trailing
+# punctuation ("3", not "3." or "3)"). Left in the stream it becomes the tail
+# of whatever provision came before it and breaks the "ends in ;:.-- or/and"
+# check the next enumerator needs to open its own block: the Stamp Duty
+# Act's item 16 fused into item 15's text this way, with a page number
+# wedged between them.
+PAGE_NUMBER_LINE = re.compile(r"^\d{1,4}$")
+# ocr_scanned_act.py inserts a literal "===== PAGE N =====" marker at every
+# page break. It breaks provision continuity exactly like a bare page number
+# does (Western Province Financial Statute section 5(2) fused into 5(1)'s
+# text this way, immediately after one of these).
+OCR_PAGE_MARKER = re.compile(r"^=+\s*PAGE\s+\d+\s*=+$")
 MARKER_ONLY = re.compile(r"^(?:\[[^\]]+\]\s*)+$")
 # A Part heading prints as two centred lines with nothing else on them: "PART
 # II" then its title in capitals, e.g. "TRUSTEES". Nothing here builds typed
 # Part nodes yet, so these are dropped rather than left to glue onto whatever
 # provision happens to be open when they're read (Buddhist Temporalities
 # Ordinance section 6(4)'s proviso otherwise ends "...shall be final. PART II
-# TRUSTEES").
-PART_NUMBER_LINE = re.compile(r"^PART\s+[IVXLCM]+\s*$")
+# TRUSTEES"). The Stamp Duty Act uses "CHAPTER" instead of "PART" for the same
+# thing, numbered inconsistently -- "CHAPTER 1", "CHAPTER 111" (pdftotext's
+# reading of "CHAPTER III"), "CHAPTER IV" onward -- so both a roman and a bare
+# arabic numeral are accepted.
+PART_NUMBER_LINE = re.compile(r"^(?:PART|CHAPTER)\s+(?:[IVXLCM]+|\d+)\s*$")
 PART_TITLE_LINE = re.compile(r"^[A-Z][A-Z ,'\-]{1,50}$")
 CHAIN_LINE = re.compile(r"^(?:(Ordinance|Act|Law)s?\s*Nos?[.,]?|\s*\d{1,3}\s+of\s+\d{4}\s*,?)$", re.I)
 # Everything between the long title and the enacting formula is the preamble.
@@ -357,7 +397,7 @@ def split_columns(text: str) -> list[tuple[str, str]]:
             record(carried.group("note").strip(), carried.group("body").strip(), line)
             continue
         fields = COLUMN_GAP.split(line.strip())
-        if len(fields) >= 2 and indent < 24:
+        if len(fields) >= 2 and indent < 24 and not (ENUM_START.match(fields[0]) or SECTION_START.match(fields[0])):
             # Note on the left, provision on the right.
             record(fields[0].strip(), " ".join(f.strip() for f in fields[1:]), line)
             continue
@@ -447,14 +487,26 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
         if SECTION_START.match(body) and SECTION_START.match(body).group(2).strip()
     }
     skip_next_title = False
+    last_section_num = 0
     for note, body in rows:
         if not note and PART_NUMBER_LINE.match(body.strip()):
             skip_next_title = True
             continue
         if skip_next_title:
-            skip_next_title = False
+            # A title can wrap onto a second centred line ("CHAPTER VI /
+            # SPECIAL PROVISIONS RELATING TO / DOCUMENTS FILED IN LEGAL
+            # PROCEEDINGS"), so keep skipping consecutive title-shaped lines
+            # rather than just the first one, and the blank lines a centred
+            # heading is printed with between and after them.
+            if not body.strip():
+                continue
             if not note and PART_TITLE_LINE.match(body.strip()):
                 continue
+            skip_next_title = False
+        if not note and PAGE_NUMBER_LINE.match(body.strip()):
+            continue
+        if not note and OCR_PAGE_MARKER.match(body.strip()):
+            continue
         # "7." alone, where section 7 proper appears elsewhere with text, is the
         # end of a sentence in the section above it, not the start of a new one.
         bare = BARE_NUMBER.match(body)
@@ -476,11 +528,25 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
                 or re.fullmatch(r"\(\s*\w{1,4}\s*\)", body_parts[-1].strip())
             )
         )
+        section_start = SECTION_START.match(body)
+        # A section always numbers up from the last one. A drafter occasionally
+        # opens a list with bare arabic numerals instead of "(a)"/"(i)" -- "56.
+        # Any person -- 1. who draws...; or 2. who executes...;" in the Stamp
+        # Duty Act -- and "1." there looks exactly like SECTION_START. Where the
+        # match would jump backward right after a list-opening line, it is that
+        # list's first item, not a new section restarting the count.
+        if section_start and opens_list and int(section_start.group(1).rstrip("ABCDEFGHIJKLMNOPQRSTUVWXYZ") or 0) < last_section_num:
+            section_start = None
         starts_block = bool(
-            SECTION_START.match(body)
+            section_start
             or DEFINITION_LINE.match(body)
             or (ENUM_START.match(body) and (opens_list or not body_parts))
         )
+        if section_start and section_start.group(2).strip():
+            last_section_num = max(
+                last_section_num,
+                int(section_start.group(1).rstrip("ABCDEFGHIJKLMNOPQRSTUVWXYZ") or 0),
+            )
         if starts_block and body_parts:
             flush()
         if note and not CHAIN_LINE.match(note):
@@ -491,11 +557,37 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
     return blocks
 
 
-SCHEDULE_BOUNDARY = re.compile(r"\n[ \t]*Schedules?[ \t]*\n")
+# A Schedule heading is not always the bare word: "RATES SCHEDULE" prints
+# above the Stamp Duty Act's table of stamp-duty rates by document type, and
+# a numbered list of rates ("1. Acknowledgement of debt", "4a. Application
+# for letters of Credit", ...) reads exactly like sections restarting at 1
+# just as a Schedule's form fields do.
+SCHEDULE_BOUNDARY = re.compile(r"\n[ \t\f]*(?:Schedules?|[A-Z][A-Z '\-]*\bSCHEDULES?\b[A-Z '\-]*)[ \t]*\n")
+# The enacting formula closes the front matter and opens section 1. A
+# statute with a printed Table of Contents (the Western Province Financial
+# Statute lists every section, chapter and part by name before the text
+# proper starts) needs this cut or SECTION_START reads every "N.  <title>
+# ... <page number>" line in that table as a real section restarting the
+# count. Deliberately looser than ENACTING below (which requires "by the
+# Parliament" to extract the formula's own wording for the document):
+# provincial enactments open "Be it enacted by the Provincial Council of
+# the Western Province as Follows", not by Parliament.
+BODY_START = re.compile(r"be\s+it\s+enacted\b.*?as\s+follows\s*[:\-–—]*", re.IGNORECASE | re.DOTALL)
 
 
-def parse(pdf: Path, title: str) -> list[dict]:
-    text = page_text(pdf)
+def parse(text: str, title: str) -> list[dict]:
+    start = BODY_START.search(text)
+    if start:
+        text = text[start.end():]
+        # An OCR reading can land a fragment of the wrapped marginal note
+        # ("Short title and date" / "of.") on the same line as, and ahead
+        # of, section 1's own number ("date       1.     (1) This Statute
+        # may be cited..."). Deep-indented and lower-case, this line
+        # matches neither the usual column-gap split nor NOTE_THEN_SECTION,
+        # so section 1 never opens at all -- its whole block is silently
+        # dropped by "nothing open yet to attach it to". Strip a single
+        # stray word directly ahead of the first section number.
+        text = re.sub(r"^\s*\w{1,15}\s{3,}(?=\d{1,3}[A-Z]{0,2}\.)", "", text, count=1)
     # A Schedule prints its own numbered items (a form's "1. Place of Birth",
     # "2. Lay Name in Full", ...), which SECTION_START cannot tell apart from a
     # real section restarting at 1. Nothing here extracts schedule content into
@@ -507,6 +599,22 @@ def parse(pdf: Path, title: str) -> list[dict]:
         text = text[: boundary.start()]
     stream: list[dict] = []
     current_note = ""
+    current_section = ""
+    # "sections 296 and 297 of that Code" points at whichever enactment was
+    # last named in this same section, not at this one -- the same tracking
+    # build_canonical_statutes.py's HTML path already does, missing here
+    # entirely until now, so every "of that/the said <X>" reference in a PDF
+    # source fell through to build a bare, unresolved match or (worse, before
+    # THAT_ENACTMENT covered a list of numbers) a false internal self-
+    # reference (Mortgage Act section 61).
+    last_named_enactment = ""
+
+    def track_named(refs: list[dict]) -> list[dict]:
+        nonlocal last_named_enactment
+        for ref in refs:
+            if ref["kind"] == "enactment" and ref.get("target_document"):
+                last_named_enactment = ref["target_document"]
+        return refs
 
     pending_events: list[dict] = []
     for note, body in blocks_from(split_columns(text)):
@@ -533,11 +641,15 @@ def parse(pdf: Path, title: str) -> list[dict]:
                     "raw_text": body,
                     "text": "" if ENUM_START.match(remainder) else remainder,
                     "amendment_events": events + note_events,
-                    "cross_references": cross_references(remainder, title),
+                    "cross_references": track_named(
+                        cross_references(remainder, title, current_section, last_named_enactment)
+                    ),
                 }
             )
             note_events = []
             current_note = ""
+            current_section = number
+            last_named_enactment = ""
             if ENUM_START.match(remainder):
                 # The section node has taken these; the subsection below is a
                 # different node and must not claim them a second time.
@@ -576,7 +688,9 @@ def parse(pdf: Path, title: str) -> list[dict]:
                         "raw_text": piece,
                         "text": definition_text,
                         "amendment_events": events if index == 0 else [],
-                        "cross_references": cross_references(definition_text, title),
+                        "cross_references": track_named(
+                            cross_references(definition_text, title, current_section, last_named_enactment)
+                        ),
                     }
                 )
             continue
@@ -591,7 +705,9 @@ def parse(pdf: Path, title: str) -> list[dict]:
             "raw_text": body,
             "text": remainder,
             "amendment_events": events,
-            "cross_references": cross_references(remainder, title),
+            "cross_references": track_named(
+                cross_references(remainder, title, current_section, last_named_enactment)
+            ),
         }
         stream.append(node)
 
@@ -608,6 +724,12 @@ def main() -> int:
         help="which text this PDF is. The same statute can be held twice, as "
              "enacted and as consolidated, and they must not overwrite each other.",
     )
+    parser.add_argument(
+        "--ocr-text", type=Path,
+        help="a sidecar from ocr_scanned_act.py, for a registry PDF that is a scan "
+             "with no text layer. Read instead of the PDF; the PDF path is still "
+             "recorded as the statute's source.",
+    )
     args = parser.parse_args()
 
     registry = {r["source_id"]: r for r in read_csv(REGISTRY)}
@@ -617,9 +739,19 @@ def main() -> int:
         print(f"{pdf} is missing", file=sys.stderr)
         return 1
 
-    body = parse(pdf, row["official_title"])
+    if args.ocr_text:
+        full_text = args.ocr_text.read_text(encoding="utf-8")
+        edition_caveat = (
+            "the registry PDF is a scan with no text layer, so this tree is "
+            "parsed from an OCR reading and carries OCR errors"
+        )
+    else:
+        full_text = page_text(pdf)
+        edition_caveat = "parsed from a two-column PDF"
+
+    body = parse(full_text, row["official_title"])
     if not body:
-        print("no sections found; this PDF probably has no text layer", file=sys.stderr)
+        print("no sections found; this text probably has no recognisable sections", file=sys.stderr)
         return 1
 
     chain = [
@@ -628,7 +760,6 @@ def main() -> int:
         if r["source_id"] == args.source_id and r["role"] == "amending"
     ]
     commencement = {r["source_id"]: r["commencement"] for r in read_csv(COMMENCEMENT)}
-    full_text = page_text(pdf)
     title_match = LONG_TITLE_PDF.search(re.sub(r"\s+", " ", full_text))
     long_title = re.sub(r"\s+", " ", title_match.group(1)).strip(" .") + "." if title_match else ""
     flat = re.sub(r"\s+", " ", full_text)
@@ -658,7 +789,17 @@ def main() -> int:
         "long_title": override.get("long_title", long_title),
         "long_title_raw": long_title if override.get("long_title") else "",
         "citation": {
-            "type": chain[0]["instrument_type"] if chain else "",
+            # Read from the amendment chain header where there is one; a
+            # document with none (the Stamp Duty Act has no chain header at
+            # all) falls back to its own long title, which always opens
+            # "AN ACT/ORDINANCE/LAW TO ..." or, for a provincial council
+            # enactment such as the Western Province Financial Statute,
+            # "A STATUTE TO ...".
+            "type": (
+                chain[0]["instrument_type"]
+                if chain
+                else (re.match(r"AN?\s+(ACT|ORDINANCE|LAW|STATUTE)\b", long_title, re.IGNORECASE) or [None, ""])[1].title()
+            ),
             "number": int(row["act_or_ordinance_no"]),
             "year": int(row["year"]),
         },
@@ -670,7 +811,7 @@ def main() -> int:
             "publisher": override.get("publisher", "unattributed"),
             "kind": args.edition,
             "local_path": pdf.relative_to(REPO_ROOT).as_posix(),
-            "caveat": "parsed from a two-column PDF",
+            "caveat": edition_caveat,
         },
         "amendments": [
             {

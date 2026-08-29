@@ -1,0 +1,27 @@
+{
+ "statute": "Mortgage Act",
+ "source_id": "SRC064",
+ "note": "Every source actually used to build the canonical trees in library/finalized/6-1949-mortgage-act. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "6-1949-mortgage-act-consolidated.pdf",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 828257,
+   "sha256": "ac6b3cd58f20e73d6b78f30b19c7c2203e982d8a0725b65882257af4fc4ae179",
+   "copied_from": "data/legal-sources/library/statutes/6-1949-mortgage-act.pdf",
+   "used_for": "parsed into 6-1949-mortgage-act-consolidated.json"
+  },
+  {
+   "file": "6-1949-mortgage-act.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 828257,
+   "sha256": "ac6b3cd58f20e73d6b78f30b19c7c2203e982d8a0725b65882257af4fc4ae179",
+   "copied_from": "data/legal-sources/library/statutes/6-1949-mortgage-act.pdf",
+   "used_for": "5-lens subagent review, 2 rounds, converged"
+  }
+ ],
+ "statute_note": "Parsed from LankaLaw's 2024 consolidated PDF. Four residues recorded in canonical-overrides.json: a section 28/29 boundary confusion and a section 88/89 heading bleed, both from a marginal note wrapping onto a line that also carries body text for the following section (a general fix for the first was attempted and reverted after it regressed two other already-finalized statutes); a bare 'section 664' back-reference; and an informational note on letter-suffixed sections."
+}

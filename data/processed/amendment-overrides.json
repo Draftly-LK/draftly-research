@@ -52,5 +52,177 @@
    }
   ],
   "verification_status": "unverified"
+ },
+ "22-1958": {
+  "checked_against": "Government Printer PDF, Registration of Documents (Amendment) Act, No. 22 of 1958, date of assent 9th May 1958",
+  "long_title": "AN ACT TO AMEND THE REGISTRATION OF DOCUMENTS ORDINANCE.",
+  "quality_notes": [
+   "The Government Printer PDF is a 4-page scan with no text layer, so this tree is parsed from an offline OCR reading. Wording has not been proof-read against the scan.",
+   "This is a 1958 Government Press print. The OCR reads its quotation marks as letter pairs throughout -- an opening quote as '<c', '<6', 'c6', 'cc' or 'c<' and a closing quote as '>>', '3>', '>.' or ',9'. Every quoted extract in the body is affected. The wording between the marks is generally sound; the marks themselves are not.",
+   "Marginal notes and the provision interleave in this print, so several section headings carry fragments of the note's column out of order. See known_ocr_defects.",
+   "Running headers and the printer's imprint fall inside section 2's text ('1-J N. R 21 670-2 775 (2/5S) 4 Registration of Documents (Amendment) Act, No. 22 of 1958'). They are page furniture, not part of the provision."
+  ],
+  "known_ocr_defects": [
+   {
+    "reads": "AN ACT TO AMEND THE REGISTRATION OF DOCUMENTS Chapter 101. ai ORDINANCE. (Vol. III., page 211).",
+    "should_read": "AN ACT TO AMEND THE REGISTRATION OF DOCUMENTS ORDINANCE.",
+    "in": "long title",
+    "effect": "the right-hand marginal reference ('Chapter 101. (Vol. III., page 211).') was read into the long title. long_title is set here to the printed wording; the marginal reference is a locator in the Legislative Enactments, not part of the title."
+   },
+   {
+    "reads": "Amendment of Chapter section 15 of 101.",
+    "should_read": "Amendment of section 15 of Chapter 101.",
+    "in": "section 2, marginal note",
+    "effect": "the note's lines are transposed against the marginal 'Chapter 101.' reference. The section amends section 15 of the principal enactment, which the body text states correctly."
+   },
+   {
+    "reads": "Amendment of heading in Cbapter IV of the principal OF enaciment.",
+    "should_read": "Amendment of heading in Chapter IV of the principal enactment.",
+    "in": "section 3, marginal note",
+    "effect": "'Cbapter' for 'Chapter', 'enaciment' for 'enactment', and a stray 'OF' carried in from the quoted heading 'REGISTRATION OF BILLS OF SALE'."
+   },
+   {
+    "reads": "REGISTRATION OF BILLS SALE.",
+    "should_read": "REGISTRATION OF BILLS OF SALE.",
+    "in": "section 3, quoted Chapter IV heading",
+    "effect": "the 'OF' lost here is the one that surfaced in the marginal note. The heading being replaced is 'REGISTRATION OF BILLS OF SALE'."
+   },
+   {
+    "reads": "Amendment of heading in for Chapter V of the principal TO enactment.",
+    "should_read": "Amendment of heading in Chapter V of the principal enactment.",
+    "in": "section 4, marginal note",
+    "effect": "stray 'for' and 'TO' carried in from the provision and from the quoted heading."
+   },
+   {
+    "reads": "The following new heading is hereby substituted the heading PROVISIONS APPLICABLE INSTRUMENTS AFFECTING LAND AND BILLS OF SALE.\"",
+    "should_read": "The following new heading is hereby substituted for the heading \"PROVISIONS APPLICABLE TO INSTRUMENTS AFFECTING LAND AND BILLS OF SALE.\"",
+    "in": "section 4",
+    "effect": "the 'for' and the 'TO' are the words that appear stranded in the marginal note above."
+   },
+   {
+    "reads": "Amendment of section 40 of the principal enactment. (dmendment) 5 22 of 1958 for the words cc volume",
+    "should_read": "Amendment of section 40 of the principal enactment.",
+    "in": "section 5, marginal note",
+    "effect": "a running header ('(Amendment) ... 22 of 1958') and the opening words of the provision were read into the note."
+   },
+   {
+    "reads": "the Registration of Documents Ordinance (hereinafter referred to as the <c principal enactment \")",
+    "should_read": "the Registration of Documents Ordinance (hereinafter referred to as the \"principal enactment\")",
+    "in": "section 2(1), and carried into amendment_instructions[0].operations[*].target.named_target",
+    "effect": "the named_target recorded on both operations carries the '<c' artefact. The target itself -- section 15 of the principal enactment -- is recorded correctly."
+   },
+   {
+    "reads": "in paragraph (a) of that sub-section by the substitution, for the words i6 thereof; and >> of the word <6 thereof; >.",
+    "should_read": "in paragraph (a) of that sub-section by the substitution, for the words \"thereof; and\", of the word \"thereof;\"",
+    "in": "section 2(1)(a)",
+    "effect": "amendment_instructions[0].operations[0] records this limb as an 'insert' on 15(a). The Act substitutes, it does not insert; the operation kind is wrong because the OCR'd quote marks hid the substitution wording."
+   }
+  ],
+  "verification_status": "unverified"
+ },
+ "32-2022": {
+  "checked_against": "Government Printer PDF, Registration of Documents (Amendment) Act, No. 32 of 2022, certified 31st October 2022",
+  "long_title": "AN ACT TO AMEND THE REGISTRATION OF DOCUMENTS ORDINANCE (CHAPTER 117)",
+  "quality_notes": [
+   "The Government Printer PDF is an 11-page scan with no text layer, so this tree is parsed from an offline OCR reading. Wording has not been proof-read against the scan.",
+   "This tree is the least reliable of the six in the package and should not be relied on before it is proof-read. The damage is structural, not just spelling: see known_ocr_defects.",
+   "The body carries duplicate section numbers. Two further nodes numbered 1 and 2 appear after section 5, produced by the Form VIII / Form X specimen text of the Second Schedule being read as numbered sections. They are schedule forms, not sections of the Act.",
+   "Several section headings have swallowed whole runs of body text where the marginal-note column was not separated cleanly. Section 2's heading in particular runs to roughly a page of the substituted section 32(1).",
+   "Common letter substitutions through the body: 'thc' for 'the', 'thercof' for 'thereof', 'repcal' for 'repeal', 'scction' for 'section', 'hcreinafter' for 'hereinafter', 'Attomey' for 'Attorney', 'wiuness' for 'witness', 'LO' for 'to', 'Actmayl' for 'Act may', 'isnott' for 'is not'."
+  ],
+  "known_ocr_defects": [
+   {
+    "reads": "AN/ ACTTOAMENDT THE REGISTRATION OFI DOCUMENTS ORDINANCE (CHAPTER 117)",
+    "should_read": "AN ACT TO AMEND THE REGISTRATION OF DOCUMENTS ORDINANCE (CHAPTER 117)",
+    "in": "long title",
+    "effect": "the words run together, so the parser's long-title pattern did not match and the tree was written with an empty long_title. long_title is set here to the printed wording, which the scan's own page-2 header and the identically worded Acts No. 21 of 2013 and No. 18 of 2024 both confirm."
+   },
+   {
+    "reads": "Chapter 117 substantiating the right, title or interest in the land ... Law, No.11 of 1973 or",
+    "should_read": "Amendment of section 32 of Chapter 117",
+    "in": "section 2, marginal note",
+    "effect": "the heading has absorbed roughly a page of the substituted section 32(1), including the Form VIII particulars. The marginal note itself reads 'Amendment of section 32 of Chapter 117' and is visible, out of order, inside the section's own raw_text."
+   },
+   {
+    "reads": "Amendment of section 33 of the principal enactment 5 (viii) where an order has been issued by a comp...",
+    "should_read": "Amendment of section 33 of the principal enactment",
+    "in": "section 3, marginal note",
+    "effect": "a page number and the opening of inserted paragraph (viii) were read into the note."
+   },
+   {
+    "reads": "enactment",
+    "should_read": "Amendment of section 50 of the principal enactment",
+    "in": "section 4, marginal note",
+    "effect": "the note is split across the provision; its opening words appear inside section 4's own text as 'is hereby Amendment to amended ... seciion 50 of'."
+   },
+   {
+    "reads": "seciion 50",
+    "should_read": "section 50",
+    "in": "section 4"
+   },
+   {
+    "reads": "inconsistency",
+    "should_read": "Sinhala text to prevail in case of inconsistency",
+    "in": "section 6, marginal note",
+    "effect": "the rest of the note is stranded inside section 6's text, after 'the Sinhala text shall prevail.'"
+   },
+   {
+    "reads": "(1) by the repcal of subsection (1) thercof and the substitution thercfor of the following subsection:",
+    "should_read": "(1) by the repeal of subsection (1) thereof and the substitution therefor of the following subsection:",
+    "in": "section 2, limb (1)",
+    "effect": "amendment_instructions[0] records its first operation with an empty target and an empty target_label. The section amends section 32 of the principal enactment, which the body text states."
+   }
+  ],
+  "verification_status": "unverified"
+ },
+ "21-2013": {
+  "checked_against": "Government Printer PDF, Registration of Documents (Amendment) Act, No. 21 of 2013, certified 24th April 2013",
+  "quality_notes": [
+   "Parsed from the Government Printer PDF's own text layer, not from OCR. Every word of the source is accounted for in the tree (0.00% unmatched by scripts/check_parse_coverage.py). The defects below are structural -- text placed in the wrong node -- not lost or misread wording.",
+   "Section 5 does not appear in the body as its own node. On page 2 the print mirrors the usual Government Printer layout and runs the marginal note down the LEFT column with the provision on the right, which is the regime scripts/parse_amendment_pdf.py expects only inside quoted extracts. Section 5 and its note were therefore read as a continuation of section 4. Its full text -- 'The First Schedule of the principal enactment is hereby amended as follows' and limbs (1)(i), (1)(ii), (1)(iii) and (2) -- is present inside section 4's text.",
+   "The body carries duplicate section numbers. Three nodes numbered 1, 2 and 3 appear after section 4; they are the numbered fee items of the Part III table that section 5 substitutes into the First Schedule, not sections of the Act.",
+   "Because section 5 is not a node, no amendment instruction is recorded for the First Schedule. The Act does amend it. Read section 4's text, not the instruction list, for that change.",
+   "Section 7's text runs on into the back-cover imprint of the printed pamphlet ('Payable to the SUPERINTENDENT, GOVERNMENT PUBLICATIONS BUREAU ...'). That is page furniture, not part of the provision.",
+   "This tree was first built through Git Bash, where pdftotext resolves to an Xpdf 4.00 build that ignores '-enc UTF-8'; the result lost every curly quote and em dash to U+FFFD and dropped three further sections. It was rebuilt through PowerShell, where pdftotext resolves to poppler 25.07. Rebuild this tree from PowerShell."
+  ],
+  "known_ocr_defects": [
+   {
+    "reads": "Amendment of section 48 of the principal enactment. 2500.00”; 100.00”; 1000.00”;",
+    "should_read": "Amendment of section 48 of the principal enactment.",
+    "in": "section 4, marginal note",
+    "effect": "three fee figures from the substituted Part I table were read into the note. The figures themselves belong to section 4's quoted new text, where they also appear."
+   },
+   {
+    "reads": "deeds,",
+    "should_read": "(no marginal note; this is a fee item, not a section)",
+    "in": "the spurious node numbered 1 that follows section 4",
+    "effect": "a fragment of the Part III fee table read as a section heading."
+   }
+  ],
+  "verification_status": "unverified"
+ },
+ "18-2024": {
+  "checked_against": "Government Printer PDF, Registration of Documents (Amendment) Act, No. 18 of 2024, certified 1st April 2024, retrieved from https://lankalaw.net/wp-content/uploads/2025/03/18-2024_E.pdf",
+  "quality_notes": [
+   "Parsed from the Government Printer PDF's own text layer, not from OCR. Every word of the source is accounted for in the tree (0.00% unmatched by scripts/check_parse_coverage.py). All ten sections are present and correctly numbered.",
+   "Two marginal notes have absorbed a tail of the provision's quoted wording where the two columns run level. See known_ocr_defects. The wording is not lost; it also appears in the section's own text.",
+   "This is the newest instrument in the chain and it is not reflected in the principal statute's tree: the LankaLaw consolidated HTML that SRC005 is parsed from prints an amendment chain ending at Act No. 5 of 1990.",
+   "Build this tree from PowerShell, not Git Bash. Git Bash resolves pdftotext to an Xpdf 4.00 build that ignores '-enc UTF-8' and loses every curly quote and em dash to U+FFFD."
+  ],
+  "known_ocr_defects": [
+   {
+    "reads": "Amendment of section 41 of the principal enactment registered by him”, of the words “instruments affecting land registered by him”.",
+    "should_read": "Amendment of section 41 of the principal enactment",
+    "in": "section 7, marginal note",
+    "effect": "the closing words of the substitution were read into the note. The section substitutes 'instruments affecting land registered by him' for 'instruments affecting land and pledges, mortgages or bills of sale registered by him'."
+   },
+   {
+    "reads": "Amendment of the First Schedule to the hereby principal enactment transaction” of the words and figures “any book or index kept",
+    "should_read": "Amendment of the First Schedule to the principal enactment",
+    "in": "section 8, marginal note",
+    "effect": "the word 'hereby' from the provision and the opening of the quoted substitution were read into the note."
+   }
+  ],
+  "verification_status": "unverified"
  }
 }

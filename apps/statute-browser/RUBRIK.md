@@ -2,7 +2,7 @@
 
 The 52 statutes named in the curriculum's Category 1 to 3 tables,
 the same set as `PRIMARY-STATUES.md`, with the local files held for each and
-every amending instrument known for it (347 in total, of which
+every amending instrument known for it (348 in total, of which
 224 are held locally).
 
 45 of the 52 have their sections extracted; the rest are
@@ -58,20 +58,20 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Kandyan Succession Ordinance | No. 23 of 1917 | 4 | 0 | 0 | yes |
 | 1 | Land (Restrictions on Alienation) Act | No. 38 of 2014 | 26 | 2 | 2 | yes |
 | 1 | Matrimonial Rights and Inheritance (Jaffna) Ordinance | No. 58 of 1947 | 40 | 1 | 0 | yes |
-| 1 | Matrimonial Rights and Inheritance Ordinance | No. 15 of 1876 | 36 | 1 | 0 | yes |
+| 1 | Matrimonial Rights and Inheritance Ordinance | No. 15 of 1876 | 36 | 2 | 0 | yes |
 | 1 | Muslim Intestate Succession Ordinance | No. 10 of 1931 | 4 | 0 | 0 | yes |
 | 1 | Notaries Ordinance | No. 1 of 1907 | 43 | 18 | 7 | - |
 | 1 | Powers of Attorney Ordinance | No. 4 of 1902 | 9 | 3 | 1 | yes |
 | 1 | Prescription Ordinance | No. 22 of 1871 | 15 | 2 | 1 | yes |
 | 1 | Prevention of Frauds Ordinance | No. 7 of 1840 | 19 | 6 | 2 | yes |
-| 1 | Registration of Documents Ordinance | No. 23 of 1927 | 42 | 19 | 13 | - |
+| 1 | Registration of Documents Ordinance | No. 23 of 1927 | 42 | 19 | 13 | yes |
 | 1 | Registration of Title Act | No. 21 of 1998 | 75 | 0 | 0 | yes |
 | 1 | Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act | No. 5 of 2017 | not extracted | 0 | 0 | - |
 | 1 | Stamp Duty (Special Provisions) Act | No. 12 of 2006 | 37 | 2 | 2 | - |
-| 1 | Stamp Duty Act | No. 43 of 1982 | 75 | 12 | 10 | - |
+| 1 | Stamp Duty Act | No. 43 of 1982 | 75 | 12 | 10 | yes |
 | 1 | Tea and Rubber Estates (Control of Fragmentation) Act | No. 2 of 1958 | 25 | 1 | 1 | yes |
 | 1 | Tesawalamai Pre-emption Ordinance | No. 59 of 1947 | 14 | 0 | 0 | yes |
-| 1 | Western Province Financial Statute | No. 6 of 1990 | 124 | 0 | 0 | - |
+| 1 | Western Province Financial Statute | No. 6 of 1990 | 124 | 0 | 0 | yes |
 | 1 | Wills Ordinance | No. 21 of 1844 | 9 | 5 | 2 | yes |
 | 2 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 44 | 11 | 8 | yes |
 | 2 | Definition of Boundaries Ordinance | No. 1 of 1844 | 13 | 5 | 1 | - |
@@ -80,9 +80,9 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 2 | Land Grants (Special Provisions) Act | No. 43 of 1979 | 20 | 0 | 0 | yes |
 | 2 | Land Reform Law | No. 1 of 1972 | 83 | 5 | 5 | - |
 | 2 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 0 | 0 | yes |
-| 2 | Mortgage Act | No. 6 of 1949 | 126 | 6 | 4 | - |
+| 2 | Mortgage Act | No. 6 of 1949 | 126 | 6 | 4 | yes |
 | 2 | Urban Development Authority Act | No. 41 of 1978 | 54 | 6 | 6 | yes |
-| 3 | Bank of Ceylon Ordinance | No. 53 of 1938 | 81 | 13 | 7 | - |
+| 3 | Bank of Ceylon Ordinance | No. 53 of 1938 | 82 | 13 | 7 | yes |
 | 3 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 4 | 2 | - |
 | 3 | Land Surveys Ordinance | No. 4 of 1866 | not extracted | 1 | 1 | - |
 | 3 | Lands Resumption Ordinance | No. 4 of 1887 | not extracted | 3 | 1 | - |
@@ -96,7 +96,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Sannases and Old Deeds Ordinance | No. 6 of 1866 | not extracted | 1 | 0 | - |
 | 3 | State Lands (Claims) Ordinance | No. 21 of 1931 | 7 | 0 | 0 | yes |
 | 3 | State Lands Encroachments Ordinance | No. 12 of 1840 | not extracted | 3 | 0 | - |
-| 3 | State Lands Ordinance | No. 8 of 1947 | 100 | 2 | 0 | - |
+| 3 | State Lands Ordinance | No. 8 of 1947 | 111 | 2 | 0 | yes |
 | 3 | State Mortgage and Investment Bank Law | No. 13 of 1975 | 69 | 3 | 3 | - |
 | 3 | Survey Act | No. 17 of 2002 | 5 | 0 | 0 | yes |
 | 3 | Surveyors Ordinance | No. 15 of 1889 | 17 | 6 | 1 | - |
@@ -317,7 +317,7 @@ Topics: Formation of Deeds, Examination of Title, Criminal and Civil Liabilities
 Sections: 26 in the index (headings from legacy 24, none 2)
 
 Canonical structure: 26 sections, 40 subsections, 20 definitions, 48 paragraphs, 13 subparagraphs.
-103 cross-references.
+109 cross-references.
 Tree: `data/processed/canonical-statutes/SRC021-38-2014.json`
 
 Finalized: `data/legal-sources/library/finalized/38-2014-land-restrictions-on-alienation-act/38-2014-land-restrictions-on-alienation-act-consolidated.json`
@@ -393,10 +393,11 @@ Files:
 - Markdown: `data/legal-sources/library-markdown/statutes/matrimonial-rights-and-inheritance-ordinance/matrimonial-rights-and-inheritance-consolidated.md`  (recorded in the registry but not on disk)
 - HTML: `data/legal-sources/library/statutes/HTML/15-1876-matrimonial-rights-and-inheritance-ordinance.html`
 
-Amendments (1 known, 0 held):
+Amendments (2 known, 0 held):
 
 | Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
 | --- | --- | --- | --- | --- | --- |
+| No. 2 of 1889 | Ordinance | chain | not held: no source located | not looked up | not read |
 | No. 18 of 1923 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
 
 ### Muslim Intestate Succession Ordinance
@@ -571,7 +572,7 @@ Amendments (6 known, 2 held):
 
 ### Registration of Documents Ordinance
 
-**No. 23 of 1927** · commenced 1927-01-01 · curriculum category 1 · SRC005
+**No. 23 of 1927** · commenced 1927-01-01 · curriculum category 1 · SRC005 · **finalized**
 
 Topics: Registration of Documents, Formation of Deeds, Drafting and Study of Instruments, Drafting of Deeds
 
@@ -582,6 +583,11 @@ Parsed from the HTML edition: 50 sections, 9 carrying an amendment marker. Not y
 Canonical structure: 5 crossheadings, 7 subheadings, 50 sections, 96 subsections, 25 paragraphs, 13 subparagraphs.
 46 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC005-23-1927.json`
+
+Finalized: `data/legal-sources/library/finalized/23-1927-registration-of-documents-ordinance/23-1927-registration-of-documents-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -601,7 +607,7 @@ Amendments (19 known, 13 held):
 | No. 13 of 1947 | Ordinance | chain+html+marker | not held: not in the Act archive | not published as HTML | not read |
 | No. 6 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
 | No. 16 of 1951 | Act | chain+html | `data/legal-sources/library/amendments/16-1951-partition.pdf` | not published as HTML | not read |
-| No. 22 of 1958 | Act | chain+html+marker | `data/legal-sources/library/amendments/22-1958-registration-of-documents-amendment.pdf` | not published as HTML | not read |
+| No. 22 of 1958 | Act | chain+html+marker | `data/legal-sources/library/amendments/22-1958-registration-of-documents-amendment.pdf` | not published as HTML | multiple 15; amend 40 |
 | No. 11 of 1963 | Act | chain+html | `data/legal-sources/library/amendments/11-1963-finance.pdf` | `data/legal-sources/library/amendments/html/11-1963-marriage-registration-amendment.html` | amend 34; amend 62; amend |
 | No. 27 of 1969 | Act | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/27-1969-registration-of-documents-amendment.html` | insert 2A, 2 |
 | No. 4 of 1974 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/4-1974-registration-of-documents-amendment-law.html` | repeal 2 |
@@ -609,10 +615,10 @@ Amendments (19 known, 13 held):
 | No. 19 of 1976 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/19-1976-registration-of-documents-amendment-law.html` | substitute 29 |
 | No. 50 of 1982 | Act | chain+html+marker | `data/legal-sources/library/amendments/50-1982-registration-of-documents-amendment.pdf` | `data/legal-sources/library/amendments/html/50-1982-registration-of-documents.html` | amend 13; amend 35 |
 | No. 5 of 1990 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/5-1990-registration-of-documents-amendment-act.pdf` | `data/legal-sources/library/amendments/html/5-1990-registration-of-documents-amendment.html` | amend 21 |
-| No. 48 of 2011 | Act | chain+curriculum | `data/legal-sources/library/amendments/48-2011-registration-of-documents-amendment-act.pdf` | not published as HTML | not read |
-| No. 21 of 2013 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/21-2013-registration-of-documents-amendment-act.pdf` | not published as HTML | not read |
-| No. 32 of 2022 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/32-2022-registration-of-documents-amendment-act.pdf` | not published as HTML | not read |
-| No. 18 of 2024 | Act | chain+marker | `data/legal-sources/library/amendments/18-2024-registration-of-documents-amendment-act.pdf` | not published as HTML | not read |
+| No. 48 of 2011 | Act | chain+curriculum | `data/legal-sources/library/amendments/48-2011-registration-of-documents-amendment-act.pdf` | not published as HTML | amend 13 |
+| No. 21 of 2013 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/21-2013-registration-of-documents-amendment-act.pdf` | not published as HTML | amend 13; amend 22; amend 48 |
+| No. 32 of 2022 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/32-2022-registration-of-documents-amendment-act.pdf` | not published as HTML | multiple; insert 33 |
+| No. 18 of 2024 | Act | chain+marker | `data/legal-sources/library/amendments/18-2024-registration-of-documents-amendment-act.pdf` | not published as HTML | amend 8; amend 25; amend 29; amend 41; amend |
 
 ### Registration of Title Act
 
@@ -679,17 +685,22 @@ Amendments (2 known, 2 held):
 
 ### Stamp Duty Act
 
-**No. 43 of 1982** · commenced 1982-12-14 · curriculum category 1 · SRC034
+**No. 43 of 1982** · commenced 1982-12-14 · curriculum category 1 · SRC034 · **finalized**
 
 Topics: Formation of Deeds, Stamping of Deeds, Drafting of Deeds, Criminal and Civil Liabilities of Notaries
 
-Sections: 75 in the index (headings from legacy 74, none 1)
+Sections: 75 in the index (headings from finalized 67, legacy 8)
 
 Parsed from the HTML edition: 75 sections, 22 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 18 crossheadings, 20 subheadings, 75 sections, 162 subsections, 37 definitions, 98 paragraphs, 31 subparagraphs.
-119 cross-references.
+Canonical structure: 75 sections, 155 subsections, 29 definitions, 105 paragraphs, 32 subparagraphs.
+130 cross-references.
 Tree: `data/processed/canonical-statutes/SRC034-43-1982.json`
+
+Finalized: `data/legal-sources/library/finalized/43-1982-stamp-duty-act/43-1982-stamp-duty-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -770,11 +781,20 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Western Province Financial Statute
 
-**No. 6 of 1990** · curriculum category 1 · SRC035
+**No. 6 of 1990** · curriculum category 1 · SRC035 · **finalized**
 
 Topics: Formation of Deeds, Stamping of Deeds, Criminal and Civil Liabilities of Notaries
 
-Sections: 124 in the index (headings from none 69, legacy 55)
+Sections: 124 in the index (headings from finalized 95, none 22, legacy 7)
+
+Canonical structure: 108 sections, 225 subsections, 28 definitions, 108 paragraphs, 32 subparagraphs.
+157 cross-references.
+Tree: `data/processed/canonical-statutes/SRC035-6-1990.json`
+
+Finalized: `data/legal-sources/library/finalized/6-1990-western-province-financial-statute/6-1990-western-province-financial-statute-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -832,7 +852,7 @@ Sections: 44 in the index (headings from finalized 44)
 Parsed from the HTML edition: 44 sections, 6 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 44 sections, 72 subsections, 11 definitions, 60 paragraphs, 8 subparagraphs.
-26 cross-references; 1 schedules referenced (bodies not published).
+28 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC049-19-1931.json`
 
 Finalized: `data/legal-sources/library/finalized/19-1931-buddhist-temporalities-ordinance/19-1931-buddhist-temporalities-ordinance-consolidated.json`
@@ -936,8 +956,8 @@ Sections: 145 in the index (headings from lawlanka 144, legacy 1)
 
 Parsed from the HTML edition: 139 sections, 80 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 12 crossheadings, 12 subheadings, 139 sections, 112 subsections, 35 definitions, 79 paragraphs, 3 subparagraphs.
-145 cross-references; 3 schedules referenced (bodies not published).
+Canonical structure: 144 sections, 121 subsections, 30 definitions, 81 paragraphs, 4 subparagraphs.
+185 cross-references; 3 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC050-19-1935.json`
 
 Files:
@@ -1049,17 +1069,22 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Mortgage Act
 
-**No. 6 of 1949** · commenced 1949-01-16 · curriculum category 2 · SRC064
+**No. 6 of 1949** · commenced 1949-01-16 · curriculum category 2 · SRC064 · **finalized**
 
 Topics: Drafting of Deeds
 
-Sections: 126 in the index (headings from lawlanka 126)
+Sections: 126 in the index (headings from finalized 125, lawlanka 1)
 
 Parsed from the HTML edition: 125 sections, 22 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 8 parts, 14 crossheadings, 125 sections, 191 subsections, 8 definitions, 167 paragraphs, 12 subparagraphs.
-354 cross-references; 3 schedules referenced (bodies not published).
+Canonical structure: 126 sections, 189 subsections, 11 definitions, 164 paragraphs, 17 subparagraphs.
+401 cross-references; 4 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC064-6-1949.json`
+
+Finalized: `data/legal-sources/library/finalized/6-1949-mortgage-act/6-1949-mortgage-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1120,17 +1145,22 @@ Amendments (6 known, 6 held):
 
 ### Bank of Ceylon Ordinance
 
-**No. 53 of 1938** · Cap. 397 · commenced 1938-12-01 · curriculum category 3 · SRC044
+**No. 53 of 1938** · Cap. 397 · commenced 1938-12-01 · curriculum category 3 · SRC044 · **finalized**
 
 Topics: Examination of Title
 
-Sections: 81 in the index (headings from legacy 77, none 4)
+Sections: 82 in the index (headings from finalized 59, legacy 23)
 
 Parsed from the HTML edition: 59 sections, 43 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 59 sections, 70 subsections, 9 definitions, 38 paragraphs, 4 subparagraphs.
-68 cross-references; 3 schedules referenced (bodies not published).
+69 cross-references; 3 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC044-53-1938.json`
+
+Finalized: `data/legal-sources/library/finalized/53-1938-bank-of-ceylon-ordinance/53-1938-bank-of-ceylon-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1143,17 +1173,17 @@ Amendments (13 known, 7 held):
 | Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
 | --- | --- | --- | --- | --- | --- |
 | No. 45 of 1939 | Ordinance | html | not held: no source located | not looked up | not read |
-| No. 53 of 1943 | Ordinance | html | not held: no source located | not looked up | not read |
-| No. 4 of 1944 | Ordinance | html | not held: no source located | not looked up | not read |
-| No. 34 of 1944 | Ordinance | html | not held: no source located | not looked up | not read |
-| No. 7 of 1945 | Ordinance | html | not held: no source located | not looked up | not read |
+| No. 53 of 1943 | Ordinance | chain+html | not held: no source located | not looked up | not read |
+| No. 4 of 1944 | Ordinance | chain+html | not held: no source located | not looked up | not read |
+| No. 34 of 1944 | Ordinance | chain+html | not held: no source located | not looked up | not read |
+| No. 7 of 1945 | Ordinance | chain+html | not held: no source located | not looked up | not read |
 | No. 39 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
 | No. 19 of 1952 | Act | chain+html | `data/legal-sources/library/amendments/19-1952-bank-of-ceylon-amendment.pdf` | not published as HTML | not read |
 | No. 42 of 1954 | Act | chain+html | `data/legal-sources/library/amendments/42-1954-bank-of-ceylon-amendment.pdf` | not published as HTML | not read |
 | No. 37 of 1955 | Act | chain+html | `data/legal-sources/library/amendments/37-1955-bank-of-ceylon-amendment.pdf` | not published as HTML | not read |
 | No. 34 of 1968 | Act | chain+html | `data/legal-sources/library/amendments/34-1968-bank-of-ceylon-amendment.pdf` | `data/legal-sources/library/amendments/html/34-1968-bank-of-ceylon-amendment.html` | amend |
 | No. 10 of 1974 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/10-1974-bank-of-ceylon-amendment-law.html` | substitute 4; substitute 6; substitute 7; substitute 8; substitute 9; substitute 10; su... |
-| No. 60 of 1980 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/incoming/60-1980-bank-of-ceylon-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/60-1980-bank-of-ceylon-amendment.html` | substitute 3; repeal_and_substitute; substitute 33 |
+| No. 60 of 1980 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/60-1980-bank-of-ceylon-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/60-1980-bank-of-ceylon-amendment.html` | substitute 3; repeal_and_substitute; substitute 33 |
 | No. 54 of 2000 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/incoming/54-2000-bank-of-ceylon-ordinance-amendment.pdf` | `data/legal-sources/library/amendments/html/54-2000-bank-of-ceylon-amendment.html` | amend 7; amend 16; substitute 17; insert 17A; amend 19; amend 20; substitute 21; amend ... |
 
 ### Land Settlement Ordinance
@@ -1565,17 +1595,22 @@ Amendments (3 known, 0 held):
 
 ### State Lands Ordinance
 
-**No. 8 of 1947** · Cap. 286 · curriculum category 3 · SRC056
+**No. 8 of 1947** · Cap. 286 · curriculum category 3 · SRC056 · **finalized**
 
 Topics: State Lands
 
-Sections: 100 in the index (headings from legacy 99, none 1)
+Sections: 111 in the index (headings from finalized 111)
 
 Parsed from the HTML edition: 111 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 14 parts, 111 sections, 164 subsections, 30 definitions, 42 paragraphs.
-127 cross-references; 2 schedules referenced (bodies not published).
+130 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC056-8-1947.json`
+
+Finalized: `data/legal-sources/library/finalized/8-1947-state-lands-ordinance/8-1947-state-lands-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1754,7 +1789,7 @@ Amendments (48 known, 24 held):
 
 | Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
 | --- | --- | --- | --- | --- | --- |
-| No. 61 of 1939 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
+| No. 61 of 1939 | Ordinance | html | not held: not in the Act archive | not published as HTML | not read |
 | No. 14 of 1940 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
 | No. 3 of 1942 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
 | No. 16 of 1942 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |

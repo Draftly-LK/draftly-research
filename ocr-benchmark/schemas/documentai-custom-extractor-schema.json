@@ -1,0 +1,395 @@
+{
+  "displayName": "draftly-rta-conveyancing",
+  "description": "Draftly RTA field vocabulary, mirrored from the platform registry.",
+  "entityTypes": [
+    {
+      "name": "identity-card",
+      "baseTypes": [
+        "document"
+      ],
+      "properties": [
+        {
+          "name": "transfereeNic",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "NIC number",
+          "critical": true
+        },
+        {
+          "name": "holderNameEn",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Holder full name (English)",
+          "critical": false
+        },
+        {
+          "name": "holderNameSi",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Holder full name (Sinhala)",
+          "critical": false
+        },
+        {
+          "name": "holderDateOfBirth",
+          "valueType": "datetime",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Date of birth",
+          "critical": true
+        },
+        {
+          "name": "holderAddress",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Residential address",
+          "critical": false
+        }
+      ]
+    },
+    {
+      "name": "title-certificate",
+      "baseTypes": [
+        "document"
+      ],
+      "properties": [
+        {
+          "name": "titleCertificateNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Title certificate number (\u0dc4\u0dd2\u0db8\u0dd2\u0d9a\u0db8\u0dca \u0d85\u0d82\u0d9a\u0dba)",
+          "critical": true
+        },
+        {
+          "name": "cadastralMapNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Cadastral map number",
+          "critical": true
+        },
+        {
+          "name": "blockNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Block / zone number (\u0d9a\u0dbd\u0dcf\u0db4 \u0d85\u0d82\u0d9a\u0dba)",
+          "critical": true
+        },
+        {
+          "name": "sheetNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Sheet number (\u0db4\u0dad\u0dca\u200d\u0dbb \u0d85\u0d82\u0d9a\u0dba)",
+          "critical": true
+        },
+        {
+          "name": "parcelNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Parcel number (\u0d89\u0da9\u0db8\u0dca \u0d9a\u0dd0\u0db6\u0dbd\u0dd2 \u0d85\u0d82\u0d9a\u0dba)",
+          "critical": true
+        },
+        {
+          "name": "extent",
+          "valueType": "number",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Extent in hectares",
+          "critical": true
+        },
+        {
+          "name": "district",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "District",
+          "critical": false
+        },
+        {
+          "name": "dsDivision",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Divisional Secretary's division",
+          "critical": false
+        },
+        {
+          "name": "gnDivision",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Grama Niladhari division",
+          "critical": false
+        },
+        {
+          "name": "classOfTitle",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Class of title (first/second)",
+          "critical": false
+        },
+        {
+          "name": "ownerName",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Registered owner full name",
+          "critical": false
+        },
+        {
+          "name": "placeOfRegistration",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Title registry office",
+          "critical": false
+        }
+      ]
+    },
+    {
+      "name": "form8-instrument",
+      "baseTypes": [
+        "document"
+      ],
+      "properties": [
+        {
+          "name": "district",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "1(a) District",
+          "critical": false
+        },
+        {
+          "name": "dsDivision",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "1(b) Divisional Secretary's division",
+          "critical": false
+        },
+        {
+          "name": "gnDivision",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "1(c) Grama Niladhari division",
+          "critical": false
+        },
+        {
+          "name": "village",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "1(d) Village or town",
+          "critical": false
+        },
+        {
+          "name": "assessmentNumber",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "1(f) Assessment number",
+          "critical": true
+        },
+        {
+          "name": "cadastralMapNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "1(g) Cadastral map number",
+          "critical": true
+        },
+        {
+          "name": "blockNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "1(h) Block number",
+          "critical": true
+        },
+        {
+          "name": "sheetNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "1(i) Sheet number",
+          "critical": true
+        },
+        {
+          "name": "parcelNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "1(j) Parcel number",
+          "critical": true
+        },
+        {
+          "name": "extent",
+          "valueType": "number",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "1(l) Extent in hectares",
+          "critical": true
+        },
+        {
+          "name": "extentSubjectToTransfer",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "1(m) Extent subject to the transfer",
+          "critical": true
+        },
+        {
+          "name": "placeOfRegistration",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "2(a) Place of registration",
+          "critical": false
+        },
+        {
+          "name": "titleCertificateNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "2(b) Title certificate number",
+          "critical": true
+        },
+        {
+          "name": "classOfTitle",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "2(c) Class of title",
+          "critical": false
+        },
+        {
+          "name": "transferorName",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "3(a) Transferor full name",
+          "critical": false
+        },
+        {
+          "name": "transferorNic",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "3(b) Transferor NIC number",
+          "critical": true
+        },
+        {
+          "name": "transferorAddress",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "3(c) Transferor address",
+          "critical": false
+        },
+        {
+          "name": "transfereeName",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "4(a) Transferee full name",
+          "critical": false
+        },
+        {
+          "name": "transfereeNic",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "4(b) Transferee NIC number",
+          "critical": true
+        },
+        {
+          "name": "transfereeAddress",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "4(c) Transferee address",
+          "critical": false
+        },
+        {
+          "name": "consideration",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "5(a) Consideration in figures",
+          "critical": true
+        },
+        {
+          "name": "considerationWords",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "5(b) Consideration in words",
+          "critical": false
+        },
+        {
+          "name": "notaryName",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Attesting notary full name",
+          "critical": false
+        },
+        {
+          "name": "notaryCode",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Notary's code",
+          "critical": true
+        }
+      ]
+    },
+    {
+      "name": "survey-plan",
+      "baseTypes": [
+        "document"
+      ],
+      "properties": [
+        {
+          "name": "surveyPlanNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Plan number",
+          "critical": true
+        },
+        {
+          "name": "surveyorName",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Licensed surveyor's name",
+          "critical": false
+        },
+        {
+          "name": "surveyorRegistration",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Surveyor registration number",
+          "critical": true
+        },
+        {
+          "name": "landName",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Name of the land",
+          "critical": false
+        },
+        {
+          "name": "lotNo",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Lot number shown in this extract",
+          "critical": true
+        },
+        {
+          "name": "extent",
+          "valueType": "number",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Lot extent in hectares",
+          "critical": true
+        },
+        {
+          "name": "boundaryNorth",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Boundary \u2014 north by",
+          "critical": false
+        },
+        {
+          "name": "boundaryEast",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Boundary \u2014 east by",
+          "critical": false
+        },
+        {
+          "name": "boundarySouth",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Boundary \u2014 south by",
+          "critical": false
+        },
+        {
+          "name": "boundaryWest",
+          "valueType": "string",
+          "occurrenceType": "OPTIONAL_ONCE",
+          "description": "Boundary \u2014 west by",
+          "critical": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+ "statute": "Western Province Financial Statute",
+ "source_id": "SRC035",
+ "note": "Every source actually used to build the canonical trees in library/finalized/6-1990-western-province-financial-statute. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "6-1990-western-province-financial-statute-consolidated.pdf",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 10582506,
+   "sha256": "f7b98dc6c90c2c4a023a527b6d869b10f38332e1c4f4324a42e9b3affed32375",
+   "copied_from": "data/legal-sources/library/statutes/6-1990-western-province-financial-statute.pdf",
+   "used_for": "parsed into 6-1990-western-province-financial-statute-consolidated.json"
+  },
+  {
+   "file": "6-1990-western-province-financial-statute.txt",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 347069,
+   "sha256": "a26018dd2ef53628928b829b6d99a80a4eb1c42c76c092ef2788acc90e3bb352",
+   "copied_from": "data/legal-sources/library/statutes/ocr/6-1990-western-province-financial-statute.txt",
+   "used_for": "3-lens subagent review, 2 rounds; OCR quality prevents higher confidence"
+  }
+ ],
+ "statute_note": "Registry PDF is a scan with no text layer; parsed from an offline doctr OCR reading (data/legal-sources/library/statutes/ocr/6-1990-western-province-financial-statute.txt), which carries real reading errors including word-order scrambling from a two-column layout. This is a materially weaker basis than any other statute finalized so far; see canonical-overrides.json for five documented residues."
+}

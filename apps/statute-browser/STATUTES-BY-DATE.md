@@ -30,7 +30,7 @@ Passed by the colonial legislature, so almost all are Ordinances.
 | 1889 | Surveyors Ordinance | No. 15 of 1889 | 17 | 0 | none recorded |
 | 1896* | Evidence Ordinance | not recorded | 179 | 34 | 1946-2021 |
 | 1901* | Interpretation Ordinance | index-only | 24 | 3 | 1972-1974 |
-| 1902 | Powers of Attorney Ordinance | No. 4 of 1902 | 4 | 0 | none recorded |
+| 1902 | Powers of Attorney Ordinance | No. 4 of 1902 | 9 | 0 | none recorded |
 | 1907 | Notaries Ordinance | No. 1 of 1907 | 43 | 0 | none recorded |
 | 1908* | Marriage Registration Ordinance | index-only | 65 | 0 | none recorded |
 | 1915* | Housing and Town Improvement Ordinance | index-only | 114 | 2 | 1980-1981 |
@@ -45,7 +45,7 @@ Passed by the colonial legislature, so almost all are Ordinances.
 | 1931 | Muslim Intestate Succession Ordinance | No. 10 of 1931 | 4 | 0 | none recorded |
 | 1931 | State Lands (Claims) Ordinance | No. 21 of 1931 | 7 | 0 | none recorded |
 | 1935 | Land Development Ordinance | No. 19 of 1935 | 145 | 89 | 1969-2022 |
-| 1938 | Bank of Ceylon Ordinance | No. 53 of 1938 | 81 | 0 | none recorded |
+| 1938 | Bank of Ceylon Ordinance | No. 53 of 1938 | 82 | 43 | none recorded |
 | 1939 | Urban Councils Ordinance | No. 61 of 1939 | 256 | 0 | none recorded |
 | 1941* | Debt Conciliation Ordinance | index-only | 67 | 13 | 1941-2019 |
 | 1945 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 1 | none recorded |
@@ -53,7 +53,7 @@ Passed by the colonial legislature, so almost all are Ordinances.
 | 1947 | Matrimonial Rights and Inheritance (Jaffna) Ordinance | No. 58 of 1947 | 40 | 5 | none recorded |
 | 1947 | Municipal Councils Ordinance | No. 29 of 1947 | 341 | 0 | none recorded |
 | 1947 | Registration of Old Deeds and Instruments Ordinance | No. 35 of 1947 | 12 | 0 | none recorded |
-| 1947 | State Lands Ordinance | No. 8 of 1947 | 100 | 0 | none recorded |
+| 1947 | State Lands Ordinance | No. 8 of 1947 | 111 | 0 | none recorded |
 | 1947 | Tesawalamai Pre-emption Ordinance | No. 59 of 1947 | 14 | 0 | none recorded |
 
 `*` dated by commencement year, not by a year in the registry.
@@ -65,7 +65,7 @@ Parliament of Ceylon. Acts.
 | Year | Statute | Citation | Sections | Amended | Changed |
 | --- | --- | --- | --- | --- | --- |
 | 1948* | Rent Restriction Act | index-only | 31 | 0 | none recorded |
-| 1949 | Mortgage Act | No. 6 of 1949 | 126 | 12 | 1953-2024 |
+| 1949 | Mortgage Act | No. 6 of 1949 | 126 | 24 | 1953-2024 |
 | 1950 | Land Acquisition Act | No. 9 of 1950 | 68 | 0 | none recorded |
 | 1954 | National Housing Act | No. 37 of 1954 | 127 | 35 | none recorded |
 | 1958 | Tea and Rubber Estates (Control of Fragmentation) Act | No. 2 of 1958 | 25 | 0 | none recorded |

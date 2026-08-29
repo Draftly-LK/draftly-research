@@ -1,0 +1,59 @@
+{
+  "variant": "hirec",
+  "timestamp_utc": "2026-08-26T09:10:12.901913+00:00",
+  "corpus_path": "experiments/koblex-inspired-retrieval/data/statute.jsonl",
+  "corpus_records": 5342,
+  "question_path": "experiments/koblex-inspired-retrieval/data/smoke_test_20_questions.jsonl",
+  "question_count": 20,
+  "limit": null,
+  "prompt_version": "v1",
+  "prompt_sha256": {
+    "act_selection": "00021366cdcd763babd6c11c166c2cf661704f8ad78fd36b6613e2c5420c6832",
+    "evidence_curation": "9863d85b9001257fde5a3add2dda8ec91d0d358858f1f846faa36a9f5448d9f7",
+    "grounded_answer": "93a08f69085002ee13427fd59be6046958a6a93aef5d1da9da8a92745c08c674",
+    "query_transform": "ce391949709837e055d2cfe681bf39658d472dd0d33d539016a63f75272cf8bd"
+  },
+  "model": "gpt-5.4-mini-2026-03-17",
+  "reasoning_effort": {
+    "act_selection": "low",
+    "query_transform": "low",
+    "evidence_curation": "medium",
+    "final_answer": "medium"
+  },
+  "seed_top_k": 20,
+  "max_iterations": 1,
+  "max_relevant_ids": 25,
+  "max_acts": 3,
+  "max_pool_records": 220,
+  "max_pool_chars": 120000,
+  "act_selector": "derived",
+  "gate_on": "derived",
+  "section_expansion": true,
+  "curation_effort": "medium",
+  "negative_prior": false,
+  "xref_precheck": false,
+  "freeze_evidence": false,
+  "hirec_fidelity": {
+    "faithful": [
+      "hierarchical retrieval: document -> page -> passage becomes act -> section -> provision",
+      "one LLM inference per iteration does filter, answerability, missing-information and complementary question together",
+      "the original question is never mutated and is what the curator and the answering stage always see",
+      "the refined query drives retrieval only; it is never evidence and is never shown to the curator or the answering stage",
+      "accumulated evidence is re-filtered each iteration rather than frozen",
+      "saturation hatch: an incomplete verdict that nonetheless marks max_relevant_ids provisions relevant is treated as complete",
+      "budget exhaustion appends one uncurated last-resort retrieval and answers anyway rather than failing"
+    ],
+    "divergent": [
+      "completeness is derived from the coverage table rather than taken from the model's boolean, and both values are recorded; the comparable koblex run reported complete on all 20 questions including 3 that were not",
+      "the curation schema forces a per-point coverage table, a cross-reference list and sibling accounting to be emitted before the completeness boolean",
+      "curation runs at reasoning effort medium; the comparable koblex selection stage ran at low",
+      "the answer is a separate stage rather than a field of the curation call, which preserves the citation gate and comparability with koblex b1",
+      "structured outputs with one corrective retry, rather than parsing a hash-delimited text blob",
+      "max_iterations 3, not HiREC's 4: a K=20 section pool already contains all gold, so a fourth round has nothing to find",
+      "max_relevant_ids 25, not HiREC's 10: gold sets reach 9 provisions and pools reach 179 records, so a threshold of 10 would fire the saturation hatch on nearly every question",
+      "the curator sees a whole-section pool of up to max_pool_records provisions rather than 10 flat chunks",
+      "no query transform on the first iteration: the koblex b1 run measured that generated queries cost 4 points of recall@20",
+      "the list of queries already tried is fed back to the rewriting stage to prevent it repeating a query; it is deliberately withheld from the curator, so no generated string can reach a prompt that judges or cites evidence"
+    ]
+  }
+}

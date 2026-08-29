@@ -1,0 +1,226 @@
+{
+  "generatedAt": "2026-08-29T09:37:49.625917+00:00",
+  "mode": "vision full-page DOCUMENT_TEXT_DETECTION",
+  "languageHints": [
+    "si",
+    "ta",
+    "en"
+  ],
+  "dpi": 200,
+  "renderVariant": "original",
+  "thresholds": {
+    "min_chars": 40,
+    "min_confidence": 0.7
+  },
+  "coverage": {
+    "pages_in_corpus": 26,
+    "pages_with_results": 26,
+    "pages_failed": 0
+  },
+  "cost": {
+    "api_calls_this_run": 0,
+    "usd_per_unit": 0.0015,
+    "estimated_usd_this_run": 0.0,
+    "estimated_usd_full_corpus": 0.04,
+    "note": "first 1000 units per month are free"
+  },
+  "runtime": {
+    "wall_seconds": 0.0,
+    "mean_seconds_per_page": 3.38,
+    "max_seconds_per_page": 6.74
+  },
+  "overall": {
+    "pages": 26,
+    "chars_total": 31739,
+    "chars_per_page": 1220.7,
+    "mean_confidence": 0.9041,
+    "empty_pages": 0,
+    "low_confidence_pages": 0,
+    "seconds_per_page": 3.38,
+    "script_char_share": {
+      "sinhala": 0.2169,
+      "tamil": 0.0703,
+      "latin": 0.6369,
+      "digits": 0.0759
+    },
+    "dominant_script_pages": {
+      "sinhala+mixed": 3,
+      "latin": 16,
+      "tamil+mixed": 1,
+      "latin+mixed": 2,
+      "sinhala": 4
+    }
+  },
+  "by_matter": {
+    "platform-case-001": {
+      "pages": 26,
+      "chars_total": 31739,
+      "chars_per_page": 1220.7,
+      "mean_confidence": 0.9041,
+      "empty_pages": 0,
+      "low_confidence_pages": 0,
+      "seconds_per_page": 3.38,
+      "script_char_share": {
+        "sinhala": 0.2169,
+        "tamil": 0.0703,
+        "latin": 0.6369,
+        "digits": 0.0759
+      },
+      "dominant_script_pages": {
+        "sinhala+mixed": 3,
+        "latin": 16,
+        "tamil+mixed": 1,
+        "latin+mixed": 2,
+        "sinhala": 4
+      }
+    }
+  },
+  "by_document_script": {
+    "platform-case-001/source-001-national-identity-card.pdf": {
+      "pages": 2,
+      "dominant_script_pages": {
+        "sinhala+mixed": 2
+      },
+      "mean_confidence": 0.8183
+    },
+    "platform-case-001/source-002-survey-plan-2338-lot-17-18-extracts.pdf": {
+      "pages": 2,
+      "dominant_script_pages": {
+        "latin": 2
+      },
+      "mean_confidence": 0.9363
+    },
+    "platform-case-001/source-003-title-certificate-parcel-0021.pdf": {
+      "pages": 2,
+      "dominant_script_pages": {
+        "sinhala+mixed": 1,
+        "tamil+mixed": 1
+      },
+      "mean_confidence": 0.9407
+    },
+    "platform-case-001/source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf": {
+      "pages": 16,
+      "dominant_script_pages": {
+        "latin": 12,
+        "latin+mixed": 2,
+        "sinhala": 2
+      },
+      "mean_confidence": 0.9031
+    },
+    "platform-case-001/source-005-rta-sale-instrument-sinhala-registered.pdf": {
+      "pages": 2,
+      "dominant_script_pages": {
+        "sinhala": 2
+      },
+      "mean_confidence": 0.916
+    },
+    "platform-case-001/source-006-vendor-board-resolution-lot-20.pdf": {
+      "pages": 1,
+      "dominant_script_pages": {
+        "latin": 1
+      },
+      "mean_confidence": 0.9298
+    },
+    "platform-case-001/source-007-payment-cheque-part-consideration.pdf": {
+      "pages": 1,
+      "dominant_script_pages": {
+        "latin": 1
+      },
+      "mean_confidence": 0.9049
+    }
+  },
+  "failures": [],
+  "difficult_pages_for_manual_inspection": [
+    {
+      "matter": "platform-case-001",
+      "document": "source-001-national-identity-card.pdf",
+      "page": 1,
+      "chars": 155,
+      "mean_confidence": 0.8353,
+      "dominant_script": "sinhala+mixed",
+      "difficulty": 0.245
+    },
+    {
+      "matter": "platform-case-001",
+      "document": "source-001-national-identity-card.pdf",
+      "page": 2,
+      "chars": 228,
+      "mean_confidence": 0.8013,
+      "dominant_script": "sinhala+mixed",
+      "difficulty": 0.172
+    },
+    {
+      "matter": "platform-case-001",
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 16,
+      "chars": 316,
+      "mean_confidence": 0.7179,
+      "dominant_script": "sinhala",
+      "difficulty": 0.084
+    },
+    {
+      "matter": "platform-case-001",
+      "document": "source-002-survey-plan-2338-lot-17-18-extracts.pdf",
+      "page": 1,
+      "chars": 1838,
+      "mean_confidence": 0.9296,
+      "dominant_script": "latin",
+      "difficulty": 0.0
+    },
+    {
+      "matter": "platform-case-001",
+      "document": "source-002-survey-plan-2338-lot-17-18-extracts.pdf",
+      "page": 2,
+      "chars": 1803,
+      "mean_confidence": 0.9429,
+      "dominant_script": "latin",
+      "difficulty": 0.0
+    },
+    {
+      "matter": "platform-case-001",
+      "document": "source-003-title-certificate-parcel-0021.pdf",
+      "page": 1,
+      "chars": 1104,
+      "mean_confidence": 0.9158,
+      "dominant_script": "sinhala+mixed",
+      "difficulty": 0.0
+    },
+    {
+      "matter": "platform-case-001",
+      "document": "source-003-title-certificate-parcel-0021.pdf",
+      "page": 2,
+      "chars": 1161,
+      "mean_confidence": 0.9657,
+      "dominant_script": "tamil+mixed",
+      "difficulty": 0.0
+    },
+    {
+      "matter": "platform-case-001",
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 1,
+      "chars": 708,
+      "mean_confidence": 0.9743,
+      "dominant_script": "latin",
+      "difficulty": 0.0
+    },
+    {
+      "matter": "platform-case-001",
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 2,
+      "chars": 1050,
+      "mean_confidence": 0.9627,
+      "dominant_script": "latin",
+      "difficulty": 0.0
+    },
+    {
+      "matter": "platform-case-001",
+      "document": "source-004-form8-instrument-of-transfer-with-stamp-receipt.pdf",
+      "page": 3,
+      "chars": 2687,
+      "mean_confidence": 0.8743,
+      "dominant_script": "latin+mixed",
+      "difficulty": 0.0
+    }
+  ],
+  "note": "Counts and ratios only. No recognised text, field values or client content appear in this file. These are OCR COVERAGE statistics, NOT accuracy: the corpus is unlabelled apart from 37 fields in platform-case-001, so OCR output on unlabelled pages cannot be scored for correctness."
+}

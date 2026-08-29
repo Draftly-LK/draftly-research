@@ -126,10 +126,18 @@ DEFINITION_VERB = re.compile(
 
 # Enumerators, outermost first. Numbering style is the only signal the markup
 # gives for depth, so the level is inferred from the shape of the label.
+# The Stamp Duty Act drops the opening bracket throughout -- "1) affidavit or
+# affirmation..." for its top-level exemption list, "a) all documents filed
+# ..." for the lettered items nested under one of those -- which the
+# double-bracket patterns above cannot match at all. Read the same way as
+# their bracketed counterparts (digit -> subsection depth, letter -> paragraph
+# depth) or the whole list collapses into one undivided run of text.
 ENUMERATORS = (
     ("subsection", re.compile(r"^\(\s*(\d{1,3}[A-Z]?)\s*\)\s*(.*)$", re.DOTALL)),
     ("subparagraph", re.compile(r"^\(\s*([ivxlc]{1,6})\s*\)\s*(.*)$", re.DOTALL | re.IGNORECASE)),
     ("paragraph", re.compile(r"^\(\s*([a-z]{1,2})\s*\)\s*(.*)$", re.DOTALL)),
+    ("subsection", re.compile(r"^(\d{1,3}[a-zA-Z]{0,2})\)\s*(.*)$", re.DOTALL)),
+    ("paragraph", re.compile(r"^([a-z]{1,3})\)\s*(.*)$", re.DOTALL)),
 )
 # Depth drives the nesting. Not every statute uses every level: the Apartment
 # Ownership Law is Act -> Section, the Companies Act is Act -> Part ->
@@ -210,9 +218,17 @@ EXTERNAL_REF = re.compile(
     # 127 (both inclusive) of the Land Development Ordinance"). Both still
     # name an external statute at the end, so both belong to it and not to
     # this one.
-    r"\bsections?\s+(\d{1,3}[A-Z]{0,2}(?:\s*(?:,|and|or|to)\s*(?:sections?\s+)?\d{1,3}[A-Z]{0,2})*)"
+    # A footnote's asterisk can sit right on the number itself ("section
+    # 829A* of the Civil Procedure Code"), so an optional one is allowed
+    # after every number in the run, not just consumed by the whitespace
+    # before "of the".
+    # An OCR reading can drop the space between "of" and "the" ("...297
+    # ofthe Civil Procedure Code"). The gap before "of" stays required (a
+    # number is always followed by real whitespace even in a bad OCR read),
+    # but the one between "of" and "the" is now optional.
+    r"\bsections?\s+(\d{1,3}[A-Z]{0,2}\*?(?:\s*(?:,|and|or|to)\s*(?:sections?\s+)?\d{1,3}[A-Z]{0,2}\*?)*)"
     r"(?:\s*\([^()]{0,40}\))?"
-    r"\s+of\s+the\s+([A-Z][A-Za-z'()\s,.-]{4,70}?(?:Ordinance|Act|Law|Code))",
+    r"\s+of\s*the\s+([A-Z][A-Za-z'()\s,.-]{4,70}?(?:Ordinance|Act|Law|Code))",
 )
 SECTION_IN_LIST = re.compile(r"\d{1,3}[A-Z]{0,2}")
 # Every word of a title is capitalised apart from short connectors. Allowing any
@@ -498,8 +514,13 @@ def clean_title(name: str) -> str:
 
 # "section 2 of that Ordinance" points at whichever enactment was last named,
 # not at this one. Reading it as internal sends the reference to the wrong Act.
+# A run can restate "section(s)" for each further number, same as EXTERNAL_REF
+# ("sections 296 and 297 of that Code", "sections 338 to 340, 342, 344, 345,
+# 346, 349 and 350 of that Code" -- Mortgage Act section 61, all pointing at
+# the Civil Procedure Code named earlier in the same section).
 THAT_ENACTMENT = re.compile(
-    r"sections?\s+(\d{1,3}[A-Z]{0,2})\s+of\s+(?:that|the said)\s+(Ordinance|Act|Law|Code)",
+    r"sections?\s+(\d{1,3}[A-Z]{0,2}(?:\s*(?:,|and|or|to)\s*(?:sections?\s+)?\d{1,3}[A-Z]{0,2})*)"
+    r"\s+of\s+(?:that|the said)\s+(Ordinance|Act|Law|Code)",
     re.IGNORECASE,
 )
 BARE_SUBSECTION = re.compile(
@@ -512,15 +533,16 @@ def cross_references(
 ) -> list[dict[str, str]]:
     refs = []
     for match in THAT_ENACTMENT.finditer(text):
-        refs.append(
-            {
-                "kind": "external" if last_named else "unresolved",
-                "target_document": last_named,
-                "target_section": match.group(1),
-                "verbatim": match.group(0),
-                "note": "" if last_named else "refers back to an enactment named earlier in the section",
-            }
-        )
+        for number in SECTION_IN_LIST.findall(match.group(1)):
+            refs.append(
+                {
+                    "kind": "external" if last_named else "unresolved",
+                    "target_document": last_named,
+                    "target_section": number,
+                    "verbatim": match.group(0),
+                    "note": "" if last_named else "refers back to an enactment named earlier in the section",
+                }
+            )
     covered = []
     covered_that = [(m.start(), m.end()) for m in THAT_ENACTMENT.finditer(text)]
     for match in BARE_SUBSECTION.finditer(text):
