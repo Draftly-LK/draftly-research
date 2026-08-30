@@ -4,24 +4,24 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ## Counts
 
-- Source files inspected: 41
-- Statutes indexed: 30
-- Records: 8472
-- Distinct sections referenced: 1854
+- Source files inspected: 56
+- Statutes indexed: 32
+- Records: 8664
+- Distinct sections referenced: 1918
 - Records without a heading: 121
 - `section_id` is a rollup key, not a foreign key: it names the section a record belongs to even where that section has no record of its own (a section whose text lives entirely in its children emits nothing). Group by it to score at section level.
 - Temporal metadata: none. `effective_from` / `effective_to` are null on every record; act-level `commencement` is deliberately not propagated to provisions.
 
 ### By node type
 
-- `subsection`: 3319
-- `paragraph`: 2939
-- `section`: 924
-- `subparagraph`: 494
+- `subsection`: 3415
+- `paragraph`: 2968
+- `section`: 961
+- `subparagraph`: 507
 - `definition`: 332
-- `proviso`: 240
-- `closing_text`: 161
-- `text`: 37
+- `proviso`: 255
+- `closing_text`: 162
+- `text`: 38
 - `item`: 21
 - `schedule`: 3
 - `schedule_item`: 2
@@ -41,6 +41,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 - Registration of Title Act: 225
 - Buddhist Temporalities Ordinance: 180
 - Bank of Ceylon Ordinance: 171
+- Registration of Documents Ordinance: 164
 - Land (Restrictions on Alienation) Act: 136
 - Tea and Rubber Estates (Control of Fragmentation) Act: 109
 - Land Grants (Special Provisions) Act: 78
@@ -50,6 +51,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 - Jaffna Matrimonial Rights and Inheritance Ordinance: 49
 - Thesawalamai Pre-emption Ordinance: 39
 - Prevention of Frauds Ordinance: 38
+- Definition of Boundaries Ordinance: 28
 - Prescription Ordinance: 27
 - Land Registers (Reconstructed Folios) Ordinance: 24
 - Kandyan Succession Ordinance: 20
@@ -72,12 +74,25 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 - `29-2022-wills-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
 - `5-1993-wills-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
 - `21-1844-wills-ordinance-consolidated.json` -- superseded edition (kept 'consolidated-2024')
+- `14-1974-registration-of-documents-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `18-2024-registration-of-documents-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `19-1976-registration-of-documents-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `21-2013-registration-of-documents-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `22-1958-registration-of-documents-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `27-1969-registration-of-documents-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `32-2022-registration-of-documents-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `4-1974-registration-of-documents-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `48-2011-registration-of-documents-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `5-1990-registration-of-documents-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `50-1982-registration-of-documents-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
 - `21-2018-land-restrictions-on-alienation-amendment.json` -- amending Act (no source_id); already folded into the consolidation
 - `3-2017-land-restrictions-on-alienation-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `30-2022-prevention-of-frauds-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
+- `4-2024-prevention-of-frauds-ordinance-amendment.json` -- amending Act (no source_id); already folded into the consolidation
 
 ### Nodes
 
-- Empty own-text (content lives in children): 948 (definition 1, paragraph 3, schedule 1, section 932, subsection 11)
+- Empty own-text (content lives in children): 975 (definition 1, paragraph 3, schedule 1, section 959, subsection 11)
 - Repealed stubs excluded: 3
   - `11-1973/section-26/closing_text-1` -- '(*Repealed and replaced by the Companies Act, No. 17 of 1982.)'
   - `21-1844/section-3` -- 'Repealed By'
@@ -88,6 +103,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 Reported, not resolved -- this build does no historical version reconstruction.
 
+- **Definition of Boundaries Ordinance** -- verification_status is 'unverified'
 - **Apartment Ownership Law** -- verification_status is 'unverified'
 - **Survey Act** -- edition kind is 'original_or_unconfirmed_consolidation', not a confirmed consolidation
 - **Buddhist Temporalities Ordinance** -- verification_status is 'unverified'
@@ -96,6 +112,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
 - **Wills Ordinance** -- verification_status is 'unverified'
 - **Registration of Title Act** -- edition kind is 'original_or_unconfirmed_consolidation', not a confirmed consolidation
 - **Prescription Ordinance** -- verification_status is 'unverified'
+- **Registration of Documents Ordinance** -- verification_status is 'unverified'
 - **Registration of Old Deeds and Instruments Ordinance** -- verification_status is 'needs_structural_review'
 - **National Housing Act** -- verification_status is 'unverified'
 - **Powers of Attorney Ordinance** -- verification_status is 'unverified'
@@ -141,7 +158,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
   - `7-2007/section-529/subsection-1/definition-group-financial-statements/paragraph-b`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-a`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-b`
-- Duplicate evidence texts: 148 distinct strings appear more than once (412 records)
+- Duplicate evidence texts: 149 distinct strings appear more than once (415 records)
 - Schedule items carrying `rates` tables: 2. The band/rupees/cents tables are structured numeric data and are not flattened into `text`, so rate lookups will not retrieve them.
 
 ## Regeneration

@@ -18,7 +18,7 @@ Passed by the colonial legislature, so almost all are Ordinances.
 | Year | Statute | Citation | Sections | Amended | Changed |
 | --- | --- | --- | --- | --- | --- |
 | 1840 | Prevention of Frauds Ordinance | No. 7 of 1840 | 19 | 4 | 1947-2024 |
-| 1844 | Definition of Boundaries Ordinance | No. 1 of 1844 | 13 | 0 | none recorded |
+| 1844 | Definition of Boundaries Ordinance | No. 1 of 1844 | 14 | 0 | none recorded |
 | 1844 | Wills Ordinance | No. 21 of 1844 | 9 | 0 | none recorded |
 | 1852 | Execution of Deeds Ordinance | No. 17 of 1852 | 7 | 0 | none recorded |
 | 1853* | Insolvency Ordinance | index-only | 480 | 0 | none recorded |

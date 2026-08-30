@@ -78,6 +78,7 @@ def score_question(question_id: str, expected: set[str], retrieved: list[str]) -
         "question_id": question_id,
         "n_expected": len(expected),
         "recall_at_1": recall(expected, retrieved_set_at[1]),
+        "precision_at_5": len(expected & retrieved_set_at[5]) / 5,
         "recall_at_5": recall(expected, retrieved_set_at[5]),
         "recall_at_10": recall(expected, retrieved_set_at[10]),
         "all_recall_at_5": float(bool(expected) and expected.issubset(retrieved_set_at[5])),
@@ -88,7 +89,16 @@ def score_question(question_id: str, expected: set[str], retrieved: list[str]) -
 
 
 def aggregate_scores(scores: list[dict[str, Any]]) -> dict[str, float]:
-    keys = ["recall_at_1", "recall_at_5", "recall_at_10", "all_recall_at_5", "all_recall_at_10", "mrr", "ndcg_at_10"]
+    keys = [
+        "recall_at_1",
+        "precision_at_5",
+        "recall_at_5",
+        "recall_at_10",
+        "all_recall_at_5",
+        "all_recall_at_10",
+        "mrr",
+        "ndcg_at_10",
+    ]
     return {key: round(sum(float(row[key]) for row in scores) / len(scores), 4) for key in keys} | {
         "questions": len(scores)
     }

@@ -1237,6 +1237,39 @@ in the old `contxt.md` were deliberately left out of this file for that reason.)
 
 ## Log
 
+### 2026-08-26 · Claude (HiREC-inspired statute retrieval experiment)
+
+- Added `experiments/HiREC-inspired-retrieval/`, a port of HiREC (ACL 2025
+  Findings) to Sri Lankan statute retrieval. It maps the paper's
+  document/page/passage hierarchy onto act/section/provision, expands every BM25
+  hit to its whole section subtree, and curates evidence in one LLM call that
+  also decides answerability and writes the next query.
+- Its own directory rather than a variant inside the KOBLEX experiment, so that
+  experiment's index schema, config, prompts and committed b0/b1 artifacts are
+  untouched. Corpus, questions and gold are read from its data directory rather
+  than copied, which is what keeps the numbers comparable. Every module carries a
+  `hirec_` prefix because both directories go on `sys.path` in one pytest run and
+  unprefixed names would shadow each other; a test enforces it.
+- Section-subtree expansion closes the gap the flat baselines could not: complete
+  gold evidence available on 20 of 20 questions against 0.90 for both b0 and b1,
+  and complete-evidence accuracy 1.00 against b1's 0.85 with evidence recall
+  1.00. Paid for in precision (0.99 to 0.87-0.91), so F1 lands slightly below
+  b1's. A control run of b1 at a matched candidate-pool size scores exactly what
+  b1 scored, which rules out the extra candidates as the explanation.
+- The paper's answerability check does not transfer. The b1 selection stage
+  claimed complete evidence on all 20 questions, a false-complete rate of 1.0 and
+  an MCC of 0.0; that baseline is now recomputed into every `metrics.json` here.
+  Deriving the flag from a forced coverage table does fire where the raw boolean
+  never does, and the resulting extra iterations are what tighten precision. But
+  once the hierarchy removes the retrieval ceiling the metric loses its ground
+  truth, so `false_complete_rate` is reported as null with an explicit
+  `degenerate` note. Scoring it properly needs questions whose evidence is
+  genuinely absent from the corpus.
+- 20 questions, synthetic and authored alongside the corpus, so the results are
+  directional, not significant. Artifacts are `status=unverified` experimental
+  evidence, not legal answers. Focused tests: 77 passed; `uv run pytest tests/`:
+  229 passed.
+
 ### 2026-08-25 · Codex (KOBLEX-inspired legal-retrieval experiment)
 
 - Replaced the superseded Graphiti memory prototype with a bounded,
