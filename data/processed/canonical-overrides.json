@@ -710,8 +710,16 @@
     },
     "SRC050": {
         "checked_against": "data/legal-sources/library/statutes/19-1935-land-development-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
-        "note": "144 sections, coverage 0.94% unmatched -- chapter headings (dropped, same as Part headings elsewhere) and front-matter/title-page vocabulary. Numbering gaps (26, 32-34, 36, 44-45, 50, 69-71, 77-83, 88-103, 124, 144-151, 171 among others) not individually confirmed against a repeal marker for each one given the volume, but consistent with this document's own amendment history (13 amending instruments) and the pattern already verified elsewhere in this corpus for similarly aged, heavily-amended statutes.",
+        "note": "144 sections, coverage 0.94% unmatched -- chapter headings (dropped, same as Part headings elsewhere) and front-matter/title-page vocabulary. Numbering gaps confirmed genuine by direct check of a sample (26, 32-34, 36, 44-45, 50, 69-71, 77-83): every one carries the source's own '[Section(s) N (to M) (is/are) repealed by Act No. ...]' marker. Internal cross-references to repealed sections (19A, 26, 32, 50, 69-71, 124, 171, etc.) are the print's own citations to now-repealed provisions -- normal in consolidated legislation, not a parser defect -- and are correctly recorded as internal even though the target no longer has its own node.",
         "publisher": "LankaLaw (private republisher, consolidated to 2024)",
+        "quality_notes": [
+            {
+                "code": "first_list_item_not_split",
+                "sections_affected": ["9", "16", "19", "23", "159B", "possibly_others"],
+                "issue": "parse_consolidated_pdf.py's block-opening detection (blocks_from) only starts a new block at an enumerator when the accumulated text so far already ends in ';:.-–—' or 'or'/'and' -- the signal it uses to tell a genuine new list item from a cross-reference that happens to land beside a bracketed letter mid-sentence. The FIRST item after an intro clause that ends in ordinary words ('...the Government Agent shall cause to be prepared (a) a scheme...') doesn't satisfy that, so it stays fused into the section/subsection's own text; whichever item comes next (here, (b)) DOES split correctly, because by then the accumulated text ends in a semicolon from the fused-in first item. The same shape recurs with the SECOND item missing in section 2's 'land' definition (paragraph (a)'s raw_text swallows (b)'s content instead of the reverse) -- it is not specific to which letter, only to whichever item follows non-punctuated lead-in text. This is the same general class of gap already documented as 'inline_enumerator_not_split' for the Stamp Duty Act's section 14, here recurring at scale across a whole statute. A general fix (giving parse_consolidated_pdf.py an equivalent of build_canonical_statutes.py's split_enumerated, which scans a whole accumulated text for enumerator tokens rather than relying on line-by-line continuity signals) is real future work, not attempted here given two other general fixes in this same area regressed already-finalized statutes earlier in this session.",
+                "status": "known_parser_limitation"
+            }
+        ],
         "verification_status": "unverified"
     }
 }
