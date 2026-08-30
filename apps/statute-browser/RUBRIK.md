@@ -5,7 +5,7 @@ the same set as `PRIMARY-STATUES.md`, with the local files held for each and
 every amending instrument known for it (349 in total, of which
 225 are held locally).
 
-47 of the 52 have their sections extracted; the rest are
+48 of the 52 have their sections extracted; the rest are
 marked below. Statutes the corpus holds but the curriculum does not name are
 listed in `SECONDARY-STATUES.md` and are out of scope here.
 
@@ -86,7 +86,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 4 | 2 | - |
 | 3 | Land Surveys Ordinance | No. 4 of 1866 | not extracted | 1 | 1 | - |
 | 3 | Lands Resumption Ordinance | No. 4 of 1887 | 17 | 3 | 1 | yes |
-| 3 | Local Authorities Housing Act | No. 14 of 1964 | not extracted | 1 | 1 | - |
+| 3 | Local Authorities Housing Act | No. 14 of 1964 | 14 | 1 | 1 | yes |
 | 3 | Municipal Councils Ordinance | No. 29 of 1947 | 349 | 41 | 33 | yes |
 | 3 | National Housing Act | No. 37 of 1954 | 127 | 6 | 5 | yes |
 | 3 | National Housing Development Authority Act | No. 17 of 1979 | 92 | 6 | 6 | yes |
@@ -1285,18 +1285,22 @@ Amendments (3 known, 1 held):
 
 ### Local Authorities Housing Act
 
-**No. 14 of 1964** · commenced 1964-04-01 · curriculum category 3 · SRC073 · **sections not extracted**
+**No. 14 of 1964** · commenced 1964-04-01 · curriculum category 3 · SRC073 · **finalized**
 
 Topics: Local Authority, UDA, and Other Regulations, Other Related Statutory Laws
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 14 in the index (headings from finalized 14)
 
 Parsed from the HTML edition: 14 sections, 2 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 14 sections, 24 subsections, 4 definitions, 26 paragraphs, 3 subparagraphs.
 16 cross-references.
 Tree: `data/processed/canonical-statutes/SRC073-14-1964.json`
+
+Finalized: `data/legal-sources/library/finalized/14-1964-local-authorities-housing-act/14-1964-local-authorities-housing-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 

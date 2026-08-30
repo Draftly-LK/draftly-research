@@ -194,8 +194,9 @@ def test_primary_and_secondary_partition_the_corpus():
     # Deeds Ordinance, 45 once every accepted tree in library/finalized followed,
     # 46 once the National Housing Development Authority Act (SRC075, previously
     # unmatched to any curriculum topic in the section index at all) was finalized,
-    # 47 once the Lands Resumption Ordinance (SRC079, same situation) followed.
-    assert len(primary) == 47
+    # 47 once the Lands Resumption Ordinance (SRC079, same situation) followed,
+    # 48 once the Local Authorities Housing Act (SRC073, same situation) followed.
+    assert len(primary) == 48
     assert len(secondary) == 27
 
 
