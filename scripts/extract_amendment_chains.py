@@ -45,9 +45,9 @@ NUMBER_YEAR = re.compile(r"(\d{1,3})\s*of\s*(1[78]\d{2}|19\d{2}|20\d{2})")
 QUIET_LINES = 4
 
 
-def page_text(pdf: Path, page: int = 1) -> str:
+def page_text(pdf: Path, page: int = 1, through_page: int = 1) -> str:
     result = subprocess.run(
-        ["pdftotext", "-f", str(page), "-l", str(page), "-layout", str(pdf), "-"],
+        ["pdftotext", "-f", str(page), "-l", str(through_page), "-layout", str(pdf), "-"],
         capture_output=True,
         text=True,
         encoding="utf-8",
@@ -135,7 +135,13 @@ def main() -> int:
             continue
         seen_pdfs.add(pdf.name)
 
-        text = page_text(pdf)
+        # A heavily-amended statute's chain header can run past page 1 --
+        # the Urban Councils Ordinance's 48-instrument chain wraps onto page
+        # 2. header_column() already stops itself once real body text
+        # starts (the QUIET_LINES break), so reading a few extra pages is
+        # safe: it cannot pull in unrelated content, only give the header
+        # more room when it genuinely needs it.
+        text = page_text(pdf, through_page=3)
         if args.show:
             print(f"===== {row['source_id']} {row['official_title']} =====")
             print(text[:1200])
