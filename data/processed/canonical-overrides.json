@@ -864,6 +864,25 @@
     "SRC075": {
         "checked_against": "data/legal-sources/library/statutes/HTML/17-1979-national-housing-development-authority-act.html",
         "note": "92 sections, coverage 0.40% unmatched. The registry has no PDF for this source at all (status 'indexed-html', local_pdf_path blank, sha256 blank) -- the earlier finalized National Housing Act's LankaLaw fetch pass also happened to pull this statute's page, since both are hosted by the same republisher. This is the only text of the Act held in the corpus beyond a 133-word indexed markdown snippet from the registry's own preferred_source_url.",
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "quality_notes": [
+            {
+                "code": "source_lowercase_letter_suffix",
+                "sections_affected": [
+                    "69D"
+                ],
+                "issue": "Section 69D(1)(iv) cross-references \"section 69c\" (lowercase) while the section itself is headed 69C (uppercase). Same source-printed case mismatch already documented for the National Housing Act; recorded verbatim as printed.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "source_ocr_garbling_preserved",
+                "sections_affected": [
+                    "4",
+                    "7"
+                ],
+                "issue": "The source HTML itself carries pre-existing OCR/transcription damage in a small number of places (section 4: \"shall Up-\" mid-sentence; section 7 similarly garbled), confirmed identical in both the rendered source and the parsed tree -- not introduced by anything in this repository's own code. Kept as printed.",
+                "status": "source_as_printed"
+            }
+        ]
     }
 }
