@@ -53,6 +53,10 @@ data/processed/documentai-usage.lock
 scripts/statute-section-llm-extraction/cache/
 scripts/statute-section-llm-extraction/usage.json
 
+# Fingerprint-gated BM25/dense/graph index cache for the from-scratch
+# LawChain reimplementation -- rebuildable via `python -m lawchain build`.
+apps/lawchain-from-scratch/.cache/
+
 # Generated LaTeX build files
 report/*.aux
 report/*.fdb_latexmk

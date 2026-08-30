@@ -37,6 +37,12 @@ surya = ["surya-ocr>=0.6.0"]
 
 doctr = ["python-doctr>=1.0.0"]
 
+lawchain = [
+    "rank-bm25>=0.2.2",
+    "sentence-transformers>=3.0.0",
+    "networkx>=3.0",
+]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
@@ -48,7 +54,7 @@ packages = ["src/draftly"]
 cloudscraper = { git = "https://github.com/VeNoMouS/cloudscraper.git" }
 
 [tool.pytest.ini_options]
-pythonpath = ["."]
+pythonpath = [".", "apps/lawchain-from-scratch"]
 
 [dependency-groups]
 dev = [
