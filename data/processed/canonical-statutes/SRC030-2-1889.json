@@ -269,6 +269,19 @@
    ],
    "issue": "The source itself prints two entirely different provisions both numbered \"808\" (\"Summons to issue\" and \"Of the service of summons\"), in the printed order 805, 808, 807, 808, 809 -- section 806 is missing from the sequence entirely. This reads as a genuine \"6\" misread as \"8\" somewhere upstream of this corpus (most likely in the original scan the LankaLaw consolidated edition was itself transcribed from): the first \"808\" (Summons to issue) most plausibly IS section 806, restoring the natural order 805, 806, 807, 808, 809. Not corrected here -- inventing the true number would be inference, not verification, and no second source was checked. Both nodes kept as printed, both numbered 808.",
    "status": "source_as_printed"
+  },
+  {
+   "code": "source_section_227_duplication_and_note_bleed",
+   "sections_affected": [
+    "227"
+   ],
+   "issue": "Section 227 is genuinely duplicated in the source HTML itself, checked byte-for-byte against the raw markup: the entire section (from \"If the property sought to be seized...\" through \"...reduce the amount of expenses so certified as aforesaid:\") appears twice back-to-back in one sectioncontent span, followed by a proviso in a SECOND, separate span whose own marginal note (\"Proviso as to subject to speedy and natural decay, or perishable property.\") is interleaved word-for-word into the middle of the proviso sentence itself (\"Provided that when the property seized is Proviso as to subject to speedy and natural decay, or perishable property. when the expense...\"). This is upstream LankaLaw transcription corruption, not introduced by anything in this repository. The tree reflects it as printed -- the duplicated intro text and the interleaved note both survive in the parsed section.",
+   "status": "source_as_printed"
+  },
+  {
+   "code": "sampled_review_not_exhaustive",
+   "detail": "Given the statute size (831 leaf sections), the 5-lens review was sampled rather than exhaustive: completeness checked 20 sections spread across the numeric range plus 5 of the 71 numbering gaps; text fidelity checked the 8 longest sections; structure checked all section numbers programmatically (for duplicates/ordering) plus 15 sections sampled for proviso attachment; references checked all cross_references programmatically for implausible targets plus 25 sampled for classification; metadata checked all fields plus 20 of 46 amendment-chain entries. A section not covered by this sampling could still carry an undiscovered defect of the kinds already found and fixed elsewhere in this statute (list-splitting, proviso attachment, cross-reference misclassification).",
+   "status": "known_review_scope_limitation"
   }
  ],
  "source_location": {},
@@ -4904,26 +4917,24 @@
              "raw_text": "Provided, however, that the court may in its discretion, if special circumstances appear to it to render such a course advisable in the interests of justice, permit a witness to be examined, although such witness may not have been included in such list aforesaid,",
              "text": "Provided, however, that the court may in its discretion, if special circumstances appear to it to render such a course advisable in the interests of justice, permit a witness to be examined, although such witness may not have been included in such list aforesaid,",
              "amendment_events": [],
-             "cross_references": [],
-             "children": [
+             "cross_references": []
+            },
+            {
+             "type": "proviso",
+             "number": "",
+             "raw_text": "Provided also that any party to an action may be called as a witness without his name having been included in any such list.",
+             "text": "Provided also that any party to an action may be called as a witness without his name having been included in any such list.",
+             "amendment_events": [
               {
-               "type": "text",
-               "number": "",
-               "raw_text": "Provided also that any party to an action may be called as a witness without his name having been included in any such list.",
-               "text": "Provided also that any party to an action may be called as a witness without his name having been included in any such list.",
-               "amendment_events": [
-                {
-                 "amending_act": "20 of 1977",
-                 "amending_act_no": 20,
-                 "amending_year": 1977,
-                 "amending_section": "31",
-                 "operation": "unknown",
-                 "verbatim": "[31,20 of 1977]"
-                }
-               ],
-               "cross_references": []
+               "amending_act": "20 of 1977",
+               "amending_act_no": 20,
+               "amending_year": 1977,
+               "amending_section": "31",
+               "operation": "unknown",
+               "verbatim": "[31,20 of 1977]"
               }
-             ]
+             ],
+             "cross_references": []
             }
            ]
           },
@@ -5467,7 +5478,7 @@
            "cross_references": []
           },
           {
-           "type": "closing_text",
+           "type": "proviso",
            "number": "",
            "raw_text": "Provided also, that if the party ordered to pay by instalments shall appeal against the decree, and the appeal shall be decided against him, his right to pay by instalments shall cease, and the whole amount shall be immediately payable, unless the Court of Appeal or the Supreme Court, as the case may be, give express direction to the contrary;",
            "text": "Provided also, that if the party ordered to pay by instalments shall appeal against the decree, and the appeal shall be decided against him, his right to pay by instalments shall cease, and the whole amount shall be immediately payable, unless the Court of Appeal or the Supreme Court, as the case may be, give express direction to the contrary;",
@@ -5475,7 +5486,7 @@
            "cross_references": []
           },
           {
-           "type": "closing_text",
+           "type": "proviso",
            "number": "",
            "raw_text": "Provided also, that no appeal shall lie against the refusal of the court to make an order for payment by instalments.",
            "text": "Provided also, that no appeal shall lie against the refusal of the court to make an order for payment by instalments.",
@@ -8618,17 +8629,15 @@
              "raw_text": "Provided that as to so much of the property, if any, as is in the occupancy of a tenant or other person entitled to occupy the same as against the judgment-debtor, and not bound by the decree to relinquish such occupancy, the Fiscal or his officer shall give delivery by affixing a copy of the writ in some conspicuous place on the property and proclaiming to the occupant by beat of tom-tom, or in such other mode as is customary, at some convenient place, the substance of the decree in regard to the property; and",
              "text": "Provided that as to so much of the property, if any, as is in the occupancy of a tenant or other person entitled to occupy the same as against the judgment-debtor, and not bound by the decree to relinquish such occupancy, the Fiscal or his officer shall give delivery by affixing a copy of the writ in some conspicuous place on the property and proclaiming to the occupant by beat of tom-tom, or in such other mode as is customary, at some convenient place, the substance of the decree in regard to the property; and",
              "amendment_events": [],
-             "cross_references": [],
-             "children": [
-              {
-               "type": "text",
-               "number": "",
-               "raw_text": "Provided also that if the occupant can be found, a notice in writing containing the substance of such decree shall be served upon him, and in such case no proclamation need be made.",
-               "text": "Provided also that if the occupant can be found, a notice in writing containing the substance of such decree shall be served upon him, and in such case no proclamation need be made.",
-               "amendment_events": [],
-               "cross_references": []
-              }
-             ]
+             "cross_references": []
+            },
+            {
+             "type": "proviso",
+             "number": "",
+             "raw_text": "Provided also that if the occupant can be found, a notice in writing containing the substance of such decree shall be served upon him, and in such case no proclamation need be made.",
+             "text": "Provided also that if the occupant can be found, a notice in writing containing the substance of such decree shall be served upon him, and in such case no proclamation need be made.",
+             "amendment_events": [],
+             "cross_references": []
             }
            ]
           },
@@ -9297,17 +9306,15 @@
              "raw_text": "Provided that where the decree has been transferred by operation of law, the transferor need not be made respondent to the petition;",
              "text": "Provided that where the decree has been transferred by operation of law, the transferor need not be made respondent to the petition;",
              "amendment_events": [],
-             "cross_references": [],
-             "children": [
-              {
-               "type": "text",
-               "number": "",
-               "raw_text": "Provided also that where a decree against several persons has been transferred to one of them, it shall not be executed against the others.",
-               "text": "Provided also that where a decree against several persons has been transferred to one of them, it shall not be executed against the others.",
-               "amendment_events": [],
-               "cross_references": []
-              }
-             ]
+             "cross_references": []
+            },
+            {
+             "type": "proviso",
+             "number": "",
+             "raw_text": "Provided also that where a decree against several persons has been transferred to one of them, it shall not be executed against the others.",
+             "text": "Provided also that where a decree against several persons has been transferred to one of them, it shall not be executed against the others.",
+             "amendment_events": [],
+             "cross_references": []
             }
            ]
           },
@@ -9417,7 +9424,7 @@
            "cross_references": []
           },
           {
-           "type": "closing_text",
+           "type": "proviso",
            "number": "",
            "raw_text": "Provided also that he report to the court in his return to the writ of execution, or sooner, the cause for which the adjournment was made.",
            "text": "Provided also that he report to the court in his return to the writ of execution, or sooner, the cause for which the adjournment was made.",
@@ -14057,10 +14064,20 @@
           {
            "type": "paragraph",
            "number": "d",
-           "raw_text": "(d) If the sole executor of a will does, or if there are more executors than one and all the executors reside, out of Sri Lanka, or such of the executors as reside in Sri Lanka decline to act, then the court may grant administration, with copy of the will annexed to any person within Sri Lanka, as attorney of the executor or of the executors, who shall be appointed for that purpose by power of attorney, the grant so made being limited for the use and benefit of the principal until the executor or one of the executors comes in and obtains probate for himself. If the document admitted to proof in this case be a copy of, or substitute for the original on account of the original itself not being forthcoming by reason of one of the just-mentioned causes, the grant shall further be limited until the original is brought into court: Provided also, that if the person applying for the grant is not the attorney of all the executors, where there are more than one, the grant of administration shall not be made to him until the remaining executors have declined to act.",
-           "text": "If the sole executor of a will does, or if there are more executors than one and all the executors reside, out of Sri Lanka, or such of the executors as reside in Sri Lanka decline to act, then the court may grant administration, with copy of the will annexed to any person within Sri Lanka, as attorney of the executor or of the executors, who shall be appointed for that purpose by power of attorney, the grant so made being limited for the use and benefit of the principal until the executor or one of the executors comes in and obtains probate for himself. If the document admitted to proof in this case be a copy of, or substitute for the original on account of the original itself not being forthcoming by reason of one of the just-mentioned causes, the grant shall further be limited until the original is brought into court: Provided also, that if the person applying for the grant is not the attorney of all the executors, where there are more than one, the grant of administration shall not be made to him until the remaining executors have declined to act.",
+           "raw_text": "(d) If the sole executor of a will does, or if there are more executors than one and all the executors reside, out of Sri Lanka, or such of the executors as reside in Sri Lanka decline to act, then the court may grant administration, with copy of the will annexed to any person within Sri Lanka, as attorney of the executor or of the executors, who shall be appointed for that purpose by power of attorney, the grant so made being limited for the use and benefit of the principal until the executor or one of the executors comes in and obtains probate for himself. If the document admitted to proof in this case be a copy of, or substitute for the original on account of the original itself not being forthcoming by reason of one of the just-mentioned causes, the grant shall further be limited until the original is brought into court:",
+           "text": "If the sole executor of a will does, or if there are more executors than one and all the executors reside, out of Sri Lanka, or such of the executors as reside in Sri Lanka decline to act, then the court may grant administration, with copy of the will annexed to any person within Sri Lanka, as attorney of the executor or of the executors, who shall be appointed for that purpose by power of attorney, the grant so made being limited for the use and benefit of the principal until the executor or one of the executors comes in and obtains probate for himself. If the document admitted to proof in this case be a copy of, or substitute for the original on account of the original itself not being forthcoming by reason of one of the just-mentioned causes, the grant shall further be limited until the original is brought into court:",
            "amendment_events": [],
-           "cross_references": []
+           "cross_references": [],
+           "children": [
+            {
+             "type": "proviso",
+             "number": "",
+             "raw_text": "Provided also, that if the person applying for the grant is not the attorney of all the executors, where there are more than one, the grant of administration shall not be made to him until the remaining executors have declined to act.",
+             "text": "Provided also, that if the person applying for the grant is not the attorney of all the executors, where there are more than one, the grant of administration shall not be made to him until the remaining executors have declined to act.",
+             "amendment_events": [],
+             "cross_references": []
+            }
+           ]
           },
           {
            "type": "paragraph",
@@ -16758,7 +16775,7 @@
            "cross_references": []
           },
           {
-           "type": "closing_text",
+           "type": "proviso",
            "number": "",
            "raw_text": "Provided also that nothing shall prevent the wife from joining, at any time during such separation, in the exercise of any joint power given to herself and her husband.",
            "text": "Provided also that nothing shall prevent the wife from joining, at any time during such separation, in the exercise of any joint power given to herself and her husband.",
@@ -17563,7 +17580,7 @@
          "cross_references": [],
          "children": [
           {
-           "type": "closing_text",
+           "type": "proviso",
            "number": "",
            "raw_text": "Provided also that no person shall in any case be imprisoned under this section for a longer period than three months before decree.",
            "text": "Provided also that no person shall in any case be imprisoned under this section for a longer period than three months before decree.",
@@ -20824,7 +20841,7 @@
            "cross_references": []
           },
           {
-           "type": "closing_text",
+           "type": "proviso",
            "number": "",
            "raw_text": "Provided also that it appears to the Court of Appeal that the petitioner has a good ground of appeal, and that nothing has occurred since the date when the decree or order which is appealed from was passed to render it inequitable to the judgment-creditor that the decree or order appealed from should be disturbed.",
            "text": "Provided also that it appears to the Court of Appeal that the petitioner has a good ground of appeal, and that nothing has occurred since the date when the decree or order which is appealed from was passed to render it inequitable to the judgment-creditor that the decree or order appealed from should be disturbed.",
@@ -20926,7 +20943,7 @@
            "cross_references": []
           },
           {
-           "type": "closing_text",
+           "type": "proviso",
            "number": "",
            "raw_text": "Provided also that the court may of its own motion or on the application of a party concerned and with reasonable notice to the parties accelerate or postpone the hearing of an appeal, upon any such terms as to the prosecution or the costs of the appeal, or otherwise as it may think fit.",
            "text": "Provided also that the court may of its own motion or on the application of a party concerned and with reasonable notice to the parties accelerate or postpone the hearing of an appeal, upon any such terms as to the prosecution or the costs of the appeal, or otherwise as it may think fit.",

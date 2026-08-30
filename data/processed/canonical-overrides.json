@@ -959,6 +959,19 @@
                 ],
                 "issue": "The source itself prints two entirely different provisions both numbered \"808\" (\"Summons to issue\" and \"Of the service of summons\"), in the printed order 805, 808, 807, 808, 809 -- section 806 is missing from the sequence entirely. This reads as a genuine \"6\" misread as \"8\" somewhere upstream of this corpus (most likely in the original scan the LankaLaw consolidated edition was itself transcribed from): the first \"808\" (Summons to issue) most plausibly IS section 806, restoring the natural order 805, 806, 807, 808, 809. Not corrected here -- inventing the true number would be inference, not verification, and no second source was checked. Both nodes kept as printed, both numbered 808.",
                 "status": "source_as_printed"
+            },
+            {
+                "code": "source_section_227_duplication_and_note_bleed",
+                "sections_affected": [
+                    "227"
+                ],
+                "issue": "Section 227 is genuinely duplicated in the source HTML itself, checked byte-for-byte against the raw markup: the entire section (from \"If the property sought to be seized...\" through \"...reduce the amount of expenses so certified as aforesaid:\") appears twice back-to-back in one sectioncontent span, followed by a proviso in a SECOND, separate span whose own marginal note (\"Proviso as to subject to speedy and natural decay, or perishable property.\") is interleaved word-for-word into the middle of the proviso sentence itself (\"Provided that when the property seized is Proviso as to subject to speedy and natural decay, or perishable property. when the expense...\"). This is upstream LankaLaw transcription corruption, not introduced by anything in this repository. The tree reflects it as printed -- the duplicated intro text and the interleaved note both survive in the parsed section.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "sampled_review_not_exhaustive",
+                "detail": "Given the statute size (831 leaf sections), the 5-lens review was sampled rather than exhaustive: completeness checked 20 sections spread across the numeric range plus 5 of the 71 numbering gaps; text fidelity checked the 8 longest sections; structure checked all section numbers programmatically (for duplicates/ordering) plus 15 sections sampled for proviso attachment; references checked all cross_references programmatically for implausible targets plus 25 sampled for classification; metadata checked all fields plus 20 of 46 amendment-chain entries. A section not covered by this sampling could still carry an undiscovered defect of the kinds already found and fixed elsewhere in this statute (list-splitting, proviso attachment, cross-reference misclassification).",
+                "status": "known_review_scope_limitation"
             }
         ],
         "verification_status": "unverified"
