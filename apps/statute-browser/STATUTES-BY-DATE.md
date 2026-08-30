@@ -46,7 +46,7 @@ Passed by the colonial legislature, so almost all are Ordinances.
 | 1931 | State Lands (Claims) Ordinance | No. 21 of 1931 | 7 | 0 | none recorded |
 | 1935 | Land Development Ordinance | No. 19 of 1935 | 145 | 101 | 1969-2022 |
 | 1938 | Bank of Ceylon Ordinance | No. 53 of 1938 | 82 | 43 | none recorded |
-| 1939 | Urban Councils Ordinance | No. 61 of 1939 | 256 | 0 | none recorded |
+| 1939 | Urban Councils Ordinance | No. 61 of 1939 | 267 | 78 | none recorded |
 | 1941* | Debt Conciliation Ordinance | index-only | 67 | 13 | 1941-2019 |
 | 1945 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 1 | none recorded |
 | 1946 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 0 | none recorded |

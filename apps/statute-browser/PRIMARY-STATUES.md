@@ -68,7 +68,7 @@ same as unchanged. Every row is `status=unverified`.
 | 046 | State Lands (Claims) Ordinance | No. 21 of 1931 | 7 | 0 | none recorded |
 | 049 | Surveyors Ordinance | No. 15 of 1889 | 17 | 0 | none recorded |
 | 050 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 0 | none recorded |
-| 051 | Urban Councils Ordinance | No. 61 of 1939 | 256 | 0 | none recorded |
+| 051 | Urban Councils Ordinance | No. 61 of 1939 | 267 | 78 | none recorded |
 | 053 | Survey Act | No. 17 of 2002 | 5 | 0 | none recorded |
 | 054 | Trusts Ordinance | No. 9 of 1917 | 123 | 10 | 1968-2018 |
 | 055 | Bank of Ceylon Ordinance | No. 53 of 1938 | 82 | 43 | none recorded |

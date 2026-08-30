@@ -2,8 +2,8 @@
 
 The 52 statutes named in the curriculum's Category 1 to 3 tables,
 the same set as `PRIMARY-STATUES.md`, with the local files held for each and
-every amending instrument known for it (348 in total, of which
-224 are held locally).
+every amending instrument known for it (349 in total, of which
+225 are held locally).
 
 45 of the 52 have their sections extracted; the rest are
 marked below. Statutes the corpus holds but the curriculum does not name are
@@ -102,7 +102,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Surveyors Ordinance | No. 15 of 1889 | 17 | 6 | 1 | - |
 | 3 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 5 | 3 | - |
 | 3 | Trusts Ordinance | No. 9 of 1917 | 123 | 6 | 4 | - |
-| 3 | Urban Councils Ordinance | No. 61 of 1939 | 256 | 48 | 24 | - |
+| 3 | Urban Councils Ordinance | No. 61 of 1939 | 267 | 49 | 25 | yes |
 
 ## Category 1 (Most Important) (22)
 
@@ -1781,17 +1781,22 @@ Amendments (6 known, 4 held):
 
 ### Urban Councils Ordinance
 
-**No. 61 of 1939** · commenced 1940-01-01 · curriculum category 3 · SRC042
+**No. 61 of 1939** · commenced 1940-01-01 · curriculum category 3 · SRC042 · **finalized**
 
 Topics: Examination of Title, Local Authority, UDA, and Other Regulations
 
-Sections: 256 in the index (headings from legacy 256)
+Sections: 267 in the index (headings from finalized 262, legacy 5)
 
 Parsed from the HTML edition: 263 sections, 80 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 10 parts, 28 crossheadings, 263 sections, 347 subsections, 27 definitions, 302 paragraphs, 31 subparagraphs.
-262 cross-references; 6 schedules referenced (bodies not published).
+Canonical structure: 264 sections, 343 subsections, 27 definitions, 293 paragraphs, 28 subparagraphs.
+305 cross-references; 6 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC042-61-1939.json`
+
+Finalized: `data/legal-sources/library/finalized/61-1939-urban-councils-ordinance/61-1939-urban-councils-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1800,7 +1805,7 @@ Files:
 - Markdown: `data/legal-sources/library-markdown/statutes/urban-councils-ordinance/urban-councils-consolidated-2024.md`  (recorded in the registry but not on disk)
 - HTML: `data/legal-sources/library/statutes/HTML/61-1939-urban-councils-ordinance.html`
 
-Amendments (48 known, 24 held):
+Amendments (49 known, 25 held):
 
 | Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
 | --- | --- | --- | --- | --- | --- |
@@ -1828,27 +1833,28 @@ Amendments (48 known, 24 held):
 | No. 14 of 1958 | Act | chain+html | `data/legal-sources/library/amendments/14-1958-enlargement-of-powers-urban-councils-town-councils-and-village-committees.pdf` | not published as HTML | not read |
 | No. 7 of 1959 | Act | chain+html | `data/legal-sources/library/amendments/7-1959-local-authorities-special-provisions.pdf` | not published as HTML | not read |
 | No. 1 of 1961 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
-| No. 9 of 1961 | Act | html | `data/legal-sources/library/amendments/9-1961-local-authorities-stamp-duties-on-proctors-annual-certificates.pdf` | not published as HTML | not read |
-| No. 39 of 1961 | Act | html | `data/legal-sources/library/amendments/39-1961-local-authorities-term-of-office.pdf` | not published as HTML | not read |
-| No. 2 of 1967 | Act | html | `data/legal-sources/library/amendments/2-1967-local-authorities-terms-of-office.pdf` | not published as HTML | not read |
-| No. 42 of 1968 | Act | html | `data/legal-sources/library/amendments/42-1968-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/42-1968-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend 170; amend 27; amend 184; amend 26; amend 183 |
-| No. 4 of 1969 | Act | html | `data/legal-sources/library/amendments/4-1969-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/4-1969-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend |
-| No. 48 of 1971 | Act | html | `data/legal-sources/library/amendments/48-1971-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/48-1971-local-authorities-special-provisions.html` (title does not match this statute; check it) | insert 238, 235, 230; amend 37; insert 184, 9; amend 183; amend 54; substitute 155; ame... |
+| No. 9 of 1961 | Act | chain+html | `data/legal-sources/library/amendments/9-1961-local-authorities-stamp-duties-on-proctors-annual-certificates.pdf` | not published as HTML | not read |
+| No. 39 of 1961 | Act | chain+html | `data/legal-sources/library/amendments/39-1961-local-authorities-term-of-office.pdf` | not published as HTML | not read |
+| No. 2 of 1967 | Act | chain+html | `data/legal-sources/library/amendments/2-1967-local-authorities-terms-of-office.pdf` | not published as HTML | not read |
+| No. 42 of 1968 | Act | chain+html | `data/legal-sources/library/amendments/42-1968-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/42-1968-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend 170; amend 27; amend 184; amend 26; amend 183 |
+| No. 4 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/4-1969-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/4-1969-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend |
+| No. 48 of 1971 | Act | chain+html | `data/legal-sources/library/amendments/48-1971-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/48-1971-local-authorities-special-provisions.html` (title does not match this statute; check it) | insert 238, 235, 230; amend 37; insert 184, 9; amend 183; amend 54; substitute 155; ame... |
 | No. 4 of 1975 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/4-1975-naming-of-streets-and-the-control-of-the-erection-of-monuments-law.html` (title does not match this statute; check it) | amend 71; amend 55A; amend 57A; insert 57A |
 | No. 18 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/18-1977-municipal-councils-and-urban-councils-amendment-law.html` | amend 272; amend 157 |
 | No. 24 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/24-1977-local-authorities-elections-special-provisions-law.html` (title does not match this statute; check it) | repeal_and_substitute 2; amend 4; amend 5; amend 6; amend 7; substitute 8; amend 9; ins... |
-| No. 13 of 1979 | Act | html | not held: no source located | not looked up | not read |
-| No. 42 of 1979 | Act | html | not held: no source located | not looked up | not read |
-| No. 57 of 1979 | Act | html | not held: no source located | not looked up | not read |
-| No. 10 of 1981 | Act | html | `data/legal-sources/library/amendments/10-1981-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/10-1981-municipal-councils-and-urban-councils-amendment.html` | not read |
-| No. 61 of 1981 | Act | html | not held: no source located | not looked up | not read |
-| No. 5 of 1983 | Act | html | `data/legal-sources/library/amendments/5-1983-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1983-municipal-councils-and-urban-councils-amendment.html` | amend 272; amend 157 |
-| No. 13 of 1983 | Act | html | not held: no source located | not looked up | not read |
-| No. 31 of 1983 | Act | html | not held: no source located | not looked up | not read |
-| No. 48 of 1983 | Act | html | not held: no source located | not looked up | not read |
-| No. 48 of 1984 | Act | curriculum+html | `data/legal-sources/library/amendments/48-1984-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/48-1984-urban-councils-amendment.html` | amend 36; amend 38; amend 39; amend 40; amend 72; amend 73; amend 80; amend 81; amend 8... |
-| No. 20 of 1985 | Act | html | `data/legal-sources/library/amendments/20-1985-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1985-municipal-councils-and-urban-councils-amendment.html` | amend 230; amend 247A; insert 247BB; amend 247C; amend 247D; amend 160; amend 164; inse... |
-| No. 39 of 1986 | Act | html | `data/legal-sources/library/amendments/39-1986-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/39-1986-municipal-councils-and-urban-councils-amendment.html` | amend 10; amend 40; amend 73; amend 74; amend 78; amend 79; substitute 81; amend 83; am... |
-| No. 18 of 1987 | Act | curriculum+html | `data/legal-sources/library/amendments/18-1987-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/18-1987-urban-councils-amendment.html` | amend 36; amend 157; amend 159 |
-| No. 35 of 2014 | - | curriculum | `data/legal-sources/library/amendments/35-2014-urban-councils-amendment.pdf` | not published as HTML | not read |
-| No. 21 of 2017 | - | curriculum | `data/legal-sources/library/amendments/21-2017-urban-councils-amendment.pdf` | not published as HTML | not read |
+| No. 13 of 1979 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 42 of 1979 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 57 of 1979 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 10 of 1981 | Act | chain+html | `data/legal-sources/library/amendments/10-1981-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/10-1981-municipal-councils-and-urban-councils-amendment.html` | not read |
+| No. 61 of 1981 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 5 of 1983 | Act | chain+html | `data/legal-sources/library/amendments/5-1983-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1983-municipal-councils-and-urban-councils-amendment.html` | amend 272; amend 157 |
+| No. 13 of 1983 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 31 of 1983 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 48 of 1983 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 48 of 1984 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/48-1984-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/48-1984-urban-councils-amendment.html` | amend 36; amend 38; amend 39; amend 40; amend 72; amend 73; amend 80; amend 81; amend 8... |
+| No. 20 of 1985 | Act | chain+html | `data/legal-sources/library/amendments/20-1985-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1985-municipal-councils-and-urban-councils-amendment.html` | amend 230; amend 247A; insert 247BB; amend 247C; amend 247D; amend 160; amend 164; inse... |
+| No. 39 of 1986 | Act | chain+html | `data/legal-sources/library/amendments/39-1986-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/39-1986-municipal-councils-and-urban-councils-amendment.html` | amend 10; amend 40; amend 73; amend 74; amend 78; amend 79; substitute 81; amend 83; am... |
+| No. 18 of 1987 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/18-1987-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/18-1987-urban-councils-amendment.html` | amend 36; amend 157; amend 159 |
+| No. 21 of 2012 | Act | chain | `data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf` | not looked up | not read |
+| No. 35 of 2014 | Act | chain+curriculum | `data/legal-sources/library/amendments/35-2014-urban-councils-amendment.pdf` | not published as HTML | not read |
+| No. 21 of 2017 | Act | chain+curriculum | `data/legal-sources/library/amendments/21-2017-urban-councils-amendment.pdf` | not published as HTML | not read |
