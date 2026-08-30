@@ -5,7 +5,7 @@ the same set as `PRIMARY-STATUES.md`, with the local files held for each and
 every amending instrument known for it (349 in total, of which
 225 are held locally).
 
-45 of the 52 have their sections extracted; the rest are
+46 of the 52 have their sections extracted; the rest are
 marked below. Statutes the corpus holds but the curriculum does not name are
 listed in `SECONDARY-STATUES.md` and are out of scope here.
 
@@ -89,7 +89,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Local Authorities Housing Act | No. 14 of 1964 | not extracted | 1 | 1 | - |
 | 3 | Municipal Councils Ordinance | No. 29 of 1947 | 349 | 41 | 33 | yes |
 | 3 | National Housing Act | No. 37 of 1954 | 127 | 6 | 5 | yes |
-| 3 | National Housing Development Authority Act | No. 17 of 1979 | not extracted | 6 | 6 | - |
+| 3 | National Housing Development Authority Act | No. 17 of 1979 | 92 | 6 | 6 | yes |
 | 3 | Nindagama Lands Act | No. 30 of 1968 | 30 | 0 | 0 | yes |
 | 3 | People's Bank Act | No. 29 of 1961 | 72 | 8 | 7 | - |
 | 3 | Registration of Old Deeds and Instruments Ordinance | No. 35 of 1947 | 12 | 0 | 0 | yes |
@@ -1415,18 +1415,22 @@ Amendments (6 known, 5 held):
 
 ### National Housing Development Authority Act
 
-**No. 17 of 1979** · commenced 1979-04-01 · curriculum category 3 · SRC075 · **sections not extracted**
+**No. 17 of 1979** · commenced 1979-04-01 · curriculum category 3 · SRC075 · **finalized**
 
 Topics: Local Authority, UDA, and Other Regulations, Other Related Statutory Laws
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 92 in the index (headings from finalized 90, none 2)
 
 Parsed from the HTML edition: 92 sections, 5 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 9 parts, 92 sections, 146 subsections, 3 definitions, 73 paragraphs, 9 subparagraphs.
 109 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC075-17-1979.json`
+
+Finalized: `data/legal-sources/library/finalized/17-1979-national-housing-development-authority-act/17-1979-national-housing-development-authority-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 

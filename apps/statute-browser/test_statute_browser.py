@@ -191,8 +191,10 @@ def test_primary_and_secondary_partition_the_corpus():
     assert not (primary & secondary)
     # These counts track the section index and move when a statute is extracted.
     # 39 before the LankaLaw HTML parse was merged in, 40 after the Execution of
-    # Deeds Ordinance, 45 once every accepted tree in library/finalized followed.
-    assert len(primary) == 45
+    # Deeds Ordinance, 45 once every accepted tree in library/finalized followed,
+    # 46 once the National Housing Development Authority Act (SRC075, previously
+    # unmatched to any curriculum topic in the section index at all) was finalized.
+    assert len(primary) == 46
     assert len(secondary) == 27
 
 
