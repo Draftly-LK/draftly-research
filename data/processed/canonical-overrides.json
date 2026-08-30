@@ -801,19 +801,61 @@
     },
     "SRC042": {
         "checked_against": "data/legal-sources/library/statutes/61-1939-urban-councils-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
-        "note": "Re-parsed from the 2024 consolidated PDF, replacing an earlier tree built from a stale pre-2012 LankaLaw HTML edition (that tree's own quality_notes recorded section 5 showing 1939-era wording superseded by amendments through Act 21 of 2017; this PDF-sourced tree shows the current text). 264 sections, coverage 0.79% unmatched (Part headings and front matter). Sections 6, 15, 17, 18, 20, 21, 22, 246 confirmed genuinely absent from this consolidated numbering, consistent with the registry's existing note.",
+        "note": "Re-parsed from the 2024 consolidated PDF, replacing an earlier tree built from a stale pre-2012 LankaLaw HTML edition (that tree's own quality_notes recorded section 5 showing 1939-era wording superseded by amendments through Act 21 of 2017; this PDF-sourced tree shows the current text). 264 sections, coverage 0.79% unmatched (Part headings and front matter). Sections 6, 15, 17, 18, 20, 21, 22, 246 confirmed genuinely absent from this consolidated numbering, consistent with the registry's existing note. Amendment chain corrected from 26 to the full 48 instruments: extract_amendment_chains.py only read PDF page 1, but this statute's own chain header wraps onto page 2; see the script fix and the amendment-chains.csv correction committed alongside this tree.",
         "publisher": "LankaLaw (private republisher, consolidated to 2024)",
         "quality_notes": [
             {
                 "code": "first_list_item_not_split",
-                "sections_affected": ["74", "78", "possibly_65_others"],
-                "issue": "The same class of gap already documented for the Land Development Ordinance and Stamp Duty Act, at unusually large scale in this statute: parse_consolidated_pdf.py's block-opening detection only starts a new list item when the accumulated text so far already ends in ';:.-–—' or 'or'/'and'. The FIRST item after an intro clause ending in ordinary words fuses into the parent's own text; whichever item follows DOES split correctly, since the fused-in first item usually ends the text in a semicolon. A programmatic scan for section/subsection text containing a mid-string ' (x) ' pattern flags roughly 65 locations across this statute -- not all necessarily genuine instances (some may be legitimate cross-references landing beside a bracketed letter), but the true count is large. Section 74's paragraph (a) and section 78's paragraph (a) were spot-checked and confirmed as genuine instances of the pattern. Not fixed here: three separate attempts at a general fix for this exact defect class, made earlier in this session while working the Land Development Ordinance and Mortgage Act, each regressed content in other already-finalized statutes and were reverted. A proper fix needs parse_consolidated_pdf.py to gain something like build_canonical_statutes.py's split_enumerated -- a full-text scan for enumerator tokens rather than a line-by-line continuity heuristic -- which is real, non-trivial future work, not attempted under this session's time constraints.",
+                "sections_affected": [
+                    "74",
+                    "78",
+                    "possibly_65_others"
+                ],
+                "issue": "The same class of gap already documented for the Land Development Ordinance and Stamp Duty Act, at unusually large scale in this statute: parse_consolidated_pdf.py's block-opening detection only starts a new list item when the accumulated text so far already ends in ';:.-\u2013\u2014' or 'or'/'and'. The FIRST item after an intro clause ending in ordinary words fuses into the parent's own text; whichever item follows DOES split correctly, since the fused-in first item usually ends the text in a semicolon. A programmatic scan for section/subsection text containing a mid-string ' (x) ' pattern flags roughly 65 locations across this statute -- not all necessarily genuine instances (some may be legitimate cross-references landing beside a bracketed letter), but the true count is large. Section 74's paragraph (a) and section 78's paragraph (a) were spot-checked and confirmed as genuine instances of the pattern. Not fixed here: three separate attempts at a general fix for this exact defect class, made earlier in this session while working the Land Development Ordinance and Mortgage Act, each regressed content in other already-finalized statutes and were reverted. A proper fix needs parse_consolidated_pdf.py to gain something like build_canonical_statutes.py's split_enumerated -- a full-text scan for enumerator tokens rather than a line-by-line continuity heuristic -- which is real, non-trivial future work, not attempted under this session's time constraints.",
                 "status": "known_parser_limitation"
             },
             {
                 "code": "cascading_damage_in_nested_lists",
-                "sections_affected": ["36"],
+                "sections_affected": [
+                    "36"
+                ],
                 "issue": "Section 36 paragraph (hh) contains its own nested (i)/(ii) sub-list ('(hh) to (i) prepare and submit... (ii) recommend to the appropriate authority...'). The first_list_item_not_split defect fuses (hh)'s own '(i)' into (hh)'s text as usual, but the resulting tree then shows FOUR children under (hh) -- 'ii', 'i', 'ii', 'ii' -- with the third and fourth carrying text that belongs to sections 36(i) and 36(j) (later paragraphs in the SAME section's own top-level list, not sub-items of (hh) at all). This is a compounding failure: once the block boundary is lost at (hh)'s own (i), the roman-numeral retyping pass (retype_roman_runs) appears to misattribute later top-level paragraph content as further (hh) sub-items. Confirmed against the source; not corrected given the same general-fix risk documented above.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "missing_provisos_in_four_sections",
+                "sections_affected": [
+                    "28",
+                    "33",
+                    "90",
+                    "173"
+                ],
+                "issue": "Sections 28, 33, 90 and 173(1) each have a proviso present in raw_text (\"Provided that...\") that is not split out as a proviso child node -- the parent subsection's own text field runs on past the colon into the proviso wording instead of stopping there. A different failure shape from first_list_item_not_split (no bracketed enumerator involved); the proviso-detection pass simply did not fire for these four. Confirmed genuine by direct source check.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "section_174_merged_into_173",
+                "sections_affected": [
+                    "173",
+                    "174"
+                ],
+                "issue": "Section 174 does not appear as its own node. Its marginal note (\"Limitation of borrowing powers.\") lands on the same physical line as its own section number in the source PDF (\"borrowing powers. 174.             from any Urban Council...\"), a column-alignment quirk parse_consolidated_pdf.py could not resolve into a fresh section boundary; both of 174's subsections were instead appended as a second (1) and (2) under section 173. No text is lost -- confirmed all of section 174's content is present verbatim, just filed under the wrong section number, alongside 173's own correct three subsections. A reader querying \"section 174\" specifically will not find it as its own node.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "source_column_word_reorder",
+                "sections_affected": [
+                    "173"
+                ],
+                "issue": "Section 173(1) reads \"...to borrow from the of Sri Lanka, or any person or persons or Government body of persons...\" -- the word \"Government\" is present but landed one physical line down from where it belongs (\"...borrow from the Government of Sri Lanka...\"), a pdftotext -layout column-reconstruction slip on this two-column source PDF, confirmed present in the raw pdftotext output itself and not introduced by anything in this repository's own code. Left as printed.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "internal_ref_bare_subsection_of_external_section",
+                "sections_affected": [
+                    "5"
+                ],
+                "issue": "Section 5(1)(c) reads \"...determined by the Commissioner under paragraph (a) of subsection (4) of section 65B of the Local Authorities Elections Ordinance\" -- BARE_SUBSECTION/SUBSECTION_REF read \"subsection (4) of section 65B\" as an internal self-reference (this Ordinance has no section 65B of its own) even though the same clause also correctly produces a second, external cross-reference for the fuller phrase \"section 65B of the Local Authorities Elections Ordinance\". Both entries are recorded on the same node; the internal one is spurious.",
                 "status": "known_parser_limitation"
             }
         ],
