@@ -529,8 +529,25 @@
   }
  ],
  "omitted_provisions": [],
- "overrides_applied": {},
- "quality_flags": [],
+ "overrides_applied": {
+  "checked_against": "data/legal-sources/library/statutes/HTML/29-1947-municipal-councils-ordinance.html, cross-read against the registry's own preferred_source_url PDF",
+  "note": "349 sections (39-Act amendment chain), coverage 0.02% unmatched against the rendered HTML. Sections 6, 12, 15, 285 confirmed genuinely absent from this consolidated numbering, consistent with the registry's existing note."
+ },
+ "quality_flags": [
+  {
+   "code": "source_duplicate_section_136B",
+   "sections_affected": [
+    "136B"
+   ],
+   "issue": "Section 136B is printed twice in the source HTML, verbatim (same heading, same two-subsection body, checked byte-for-byte against the raw markup at both locations) -- a LankaLaw transcription duplicate, not a parser artifact. Recorded as two separate but identical section nodes rather than merged or dropped.",
+   "status": "source_as_printed"
+  },
+  {
+   "code": "long_title_reads_as_amending_act",
+   "detail": "The source's own <meta name=\"description\"> states the long title as 'AN ACT TO AMEND THE MUNICIPAL COUNCILS ORDINANCE.' -- phrasing that reads like an amending Act's title rather than the principal 1947 Ordinance's own long title, but there is no other long-title text anywhere else on the page to prefer over it. Recorded as printed.",
+   "status": "source_as_printed"
+  }
+ ],
  "source_location": {},
  "alternate_edition_variants": [],
  "schedules_referenced": [
