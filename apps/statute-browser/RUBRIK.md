@@ -87,7 +87,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Land Surveys Ordinance | No. 4 of 1866 | not extracted | 1 | 1 | - |
 | 3 | Lands Resumption Ordinance | No. 4 of 1887 | not extracted | 3 | 1 | - |
 | 3 | Local Authorities Housing Act | No. 14 of 1964 | not extracted | 1 | 1 | - |
-| 3 | Municipal Councils Ordinance | No. 29 of 1947 | 341 | 41 | 33 | - |
+| 3 | Municipal Councils Ordinance | No. 29 of 1947 | 349 | 41 | 33 | yes |
 | 3 | National Housing Act | No. 37 of 1954 | 127 | 6 | 5 | yes |
 | 3 | National Housing Development Authority Act | No. 17 of 1979 | not extracted | 6 | 6 | - |
 | 3 | Nindagama Lands Act | No. 30 of 1968 | 30 | 0 | 0 | yes |
@@ -1307,17 +1307,22 @@ Amendments (1 known, 1 held):
 
 ### Municipal Councils Ordinance
 
-**No. 29 of 1947** · commenced 1947-08-15 · curriculum category 3 · SRC061
+**No. 29 of 1947** · commenced 1947-08-15 · curriculum category 3 · SRC061 · **finalized**
 
 Topics: Local Authority, UDA, and Other Regulations
 
-Sections: 341 in the index (headings from legacy 340, none 1)
+Sections: 349 in the index (headings from finalized 347, none 1, legacy 1)
 
 Parsed from the HTML edition: 348 sections, 118 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 16 parts, 32 crossheadings, 349 sections, 505 subsections, 29 definitions, 406 paragraphs, 62 subparagraphs.
 336 cross-references; 12 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC061-29-1947.json`
+
+Finalized: `data/legal-sources/library/finalized/29-1947-municipal-councils-ordinance/29-1947-municipal-councils-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 

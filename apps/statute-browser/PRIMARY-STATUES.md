@@ -61,7 +61,7 @@ same as unchanged. Every row is `status=unverified`.
 | 036 | Nindagama Lands Act | No. 30 of 1968 | 30 | 0 | none recorded |
 | 037, 047, 057 | State Lands Ordinance | No. 8 of 1947 | 111 | 0 | none recorded |
 | 039 | State Mortgage and Investment Bank Law | No. 13 of 1975 | 69 | 0 | none recorded |
-| 040 | Municipal Councils Ordinance | No. 29 of 1947 | 341 | 0 | none recorded |
+| 040 | Municipal Councils Ordinance | No. 29 of 1947 | 349 | 114 | none recorded |
 | 042 | National Housing Act | No. 37 of 1954 | 127 | 35 | none recorded |
 | 043 | Registration of Old Deeds and Instruments Ordinance | No. 35 of 1947 | 12 | 0 | none recorded |
 | 045 | People's Bank Act | No. 29 of 1961 | 72 | 30 | 1978-2019 |

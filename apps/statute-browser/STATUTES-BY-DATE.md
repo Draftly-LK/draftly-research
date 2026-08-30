@@ -51,7 +51,7 @@ Passed by the colonial legislature, so almost all are Ordinances.
 | 1945 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 1 | none recorded |
 | 1946 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 0 | none recorded |
 | 1947 | Matrimonial Rights and Inheritance (Jaffna) Ordinance | No. 58 of 1947 | 40 | 5 | none recorded |
-| 1947 | Municipal Councils Ordinance | No. 29 of 1947 | 341 | 0 | none recorded |
+| 1947 | Municipal Councils Ordinance | No. 29 of 1947 | 349 | 114 | none recorded |
 | 1947 | Registration of Old Deeds and Instruments Ordinance | No. 35 of 1947 | 12 | 0 | none recorded |
 | 1947 | State Lands Ordinance | No. 8 of 1947 | 111 | 0 | none recorded |
 | 1947 | Tesawalamai Pre-emption Ordinance | No. 59 of 1947 | 14 | 0 | none recorded |
