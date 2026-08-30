@@ -5,7 +5,7 @@
  "long_title_raw": "",
  "long_title_correction_status": "",
  "citation": {
-  "type": "",
+  "type": "Ordinance",
   "number": 2,
   "year": 1889
  },
@@ -257,8 +257,20 @@
  "amendment_history_status": "listed_in_source_header",
  "editorial_notes": [],
  "omitted_provisions": [],
- "overrides_applied": {},
- "quality_flags": [],
+ "overrides_applied": {
+  "checked_against": "data/legal-sources/library/statutes/HTML/2-1889-civil-procedure-code.html (LankaLaw consolidated through Act No. 43 of 2024)",
+  "note": "831 leaf section nodes, coverage 2.41% unmatched against 102,904 words -- the largest and oldest statute finalized in this corpus (135 years of amendment history, 46-instrument chain). This document is CLAUDE.md's documented weak point for a DIFFERENT parser (src/draftly/retrieval/section_parser.py, the retrieval-engine section index, not the finalization pipeline used here); the tree here is built by build_canonical_statutes.py against LankaLaw's consolidated HTML and was checked by sampling given the statute's size, not exhaustively. 71 numeric gaps in the section-number sequence; a sample of 5 (31/32, 56-58, 74, 201, 257, 441-455) checked directly against the source and confirmed genuinely repealed by explicit bracketed markers, not a parsing miss."
+ },
+ "quality_flags": [
+  {
+   "code": "source_duplicate_section_808",
+   "sections_affected": [
+    "808"
+   ],
+   "issue": "The source itself prints two entirely different provisions both numbered \"808\" (\"Summons to issue\" and \"Of the service of summons\"), in the printed order 805, 808, 807, 808, 809 -- section 806 is missing from the sequence entirely. This reads as a genuine \"6\" misread as \"8\" somewhere upstream of this corpus (most likely in the original scan the LankaLaw consolidated edition was itself transcribed from): the first \"808\" (Summons to issue) most plausibly IS section 806, restoring the natural order 805, 806, 807, 808, 809. Not corrected here -- inventing the true number would be inference, not verification, and no second source was checked. Both nodes kept as printed, both numbered 808.",
+   "status": "source_as_printed"
+  }
+ ],
  "source_location": {},
  "alternate_edition_variants": [],
  "schedules_referenced": [
