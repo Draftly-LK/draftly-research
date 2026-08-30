@@ -44,7 +44,7 @@ Passed by the colonial legislature, so almost all are Ordinances.
 | 1931 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 1 | 1996 |
 | 1931 | Muslim Intestate Succession Ordinance | No. 10 of 1931 | 4 | 0 | none recorded |
 | 1931 | State Lands (Claims) Ordinance | No. 21 of 1931 | 7 | 0 | none recorded |
-| 1935 | Land Development Ordinance | No. 19 of 1935 | 145 | 89 | 1969-2022 |
+| 1935 | Land Development Ordinance | No. 19 of 1935 | 145 | 101 | 1969-2022 |
 | 1938 | Bank of Ceylon Ordinance | No. 53 of 1938 | 82 | 43 | none recorded |
 | 1939 | Urban Councils Ordinance | No. 61 of 1939 | 256 | 0 | none recorded |
 | 1941* | Debt Conciliation Ordinance | index-only | 67 | 13 | 1941-2019 |

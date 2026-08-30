@@ -4,24 +4,24 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ## Counts
 
-- Source files inspected: 40
-- Statutes indexed: 29
-- Records: 8124
-- Distinct sections referenced: 1710
+- Source files inspected: 41
+- Statutes indexed: 30
+- Records: 8472
+- Distinct sections referenced: 1854
 - Records without a heading: 121
 - `section_id` is a rollup key, not a foreign key: it names the section a record belongs to even where that section has no record of its own (a section whose text lives entirely in its children emits nothing). Group by it to score at section level.
 - Temporal metadata: none. `effective_from` / `effective_to` are null on every record; act-level `commencement` is deliberately not propagated to provisions.
 
 ### By node type
 
-- `subsection`: 3198
-- `paragraph`: 2858
-- `section`: 827
-- `subparagraph`: 490
-- `definition`: 302
-- `proviso`: 226
+- `subsection`: 3319
+- `paragraph`: 2939
+- `section`: 924
+- `subparagraph`: 494
+- `definition`: 332
+- `proviso`: 240
 - `closing_text`: 161
-- `text`: 36
+- `text`: 37
 - `item`: 21
 - `schedule`: 3
 - `schedule_item`: 2
@@ -34,6 +34,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 - Western Province Financial Statute: 465
 - National Housing Act: 447
 - Stamp Duty Act: 381
+- Land Development Ordinance: 348
 - State Lands Ordinance: 337
 - Survey Act: 310
 - Urban Development Authority Act: 242
@@ -76,7 +77,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ### Nodes
 
-- Empty own-text (content lives in children): 901 (definition 1, paragraph 3, schedule 1, section 885, subsection 11)
+- Empty own-text (content lives in children): 948 (definition 1, paragraph 3, schedule 1, section 932, subsection 11)
 - Repealed stubs excluded: 3
   - `11-1973/section-26/closing_text-1` -- '(*Repealed and replaced by the Companies Act, No. 17 of 1982.)'
   - `21-1844/section-3` -- 'Repealed By'
@@ -90,6 +91,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
 - **Apartment Ownership Law** -- verification_status is 'unverified'
 - **Survey Act** -- edition kind is 'original_or_unconfirmed_consolidation', not a confirmed consolidation
 - **Buddhist Temporalities Ordinance** -- verification_status is 'unverified'
+- **Land Development Ordinance** -- verification_status is 'unverified'
 - **Tea and Rubber Estates (Control of Fragmentation) Act** -- edition kind is 'as enacted (Numbered Acts database)', not a confirmed consolidation; 1 amending Act(s) present (20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.json) so their changes may be absent
 - **Wills Ordinance** -- verification_status is 'unverified'
 - **Registration of Title Act** -- edition kind is 'original_or_unconfirmed_consolidation', not a confirmed consolidation
@@ -139,7 +141,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
   - `7-2007/section-529/subsection-1/definition-group-financial-statements/paragraph-b`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-a`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-b`
-- Duplicate evidence texts: 147 distinct strings appear more than once (407 records)
+- Duplicate evidence texts: 148 distinct strings appear more than once (412 records)
 - Schedule items carrying `rates` tables: 2. The band/rupees/cents tables are structured numeric data and are not flattened into `text`, so rate lookups will not retrieve them.
 
 ## Regeneration

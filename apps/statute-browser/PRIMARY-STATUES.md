@@ -43,7 +43,7 @@ same as unchanged. Every row is `status=unverified`.
 
 | Serial | Statute | Citation | Sections | Amended | Changed |
 | --- | --- | --- | --- | --- | --- |
-| 024 | Land Development Ordinance | No. 19 of 1935 | 145 | 89 | 1969-2022 |
+| 024 | Land Development Ordinance | No. 19 of 1935 | 145 | 101 | 1969-2022 |
 | 025 | Land Acquisition Act | No. 9 of 1950 | 68 | 0 | none recorded |
 | 026 | Land Grants (Special Provisions) Act | No. 43 of 1979 | 20 | 0 | none recorded |
 | 027 | Land Reform Law | No. 1 of 1972 | 83 | 32 | 1975-1986 |

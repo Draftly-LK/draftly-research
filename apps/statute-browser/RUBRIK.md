@@ -76,7 +76,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 2 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 44 | 11 | 8 | yes |
 | 2 | Definition of Boundaries Ordinance | No. 1 of 1844 | 13 | 5 | 1 | - |
 | 2 | Land Acquisition Act | No. 9 of 1950 | 68 | 8 | 7 | - |
-| 2 | Land Development Ordinance | No. 19 of 1935 | 145 | 13 | 12 | - |
+| 2 | Land Development Ordinance | No. 19 of 1935 | 145 | 13 | 12 | yes |
 | 2 | Land Grants (Special Provisions) Act | No. 43 of 1979 | 20 | 0 | 0 | yes |
 | 2 | Land Reform Law | No. 1 of 1972 | 83 | 5 | 5 | - |
 | 2 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 0 | 0 | yes |
@@ -943,17 +943,22 @@ Amendments (8 known, 7 held):
 
 ### Land Development Ordinance
 
-**No. 19 of 1935** · commenced 1935-10-15 · curriculum category 2 · SRC050
+**No. 19 of 1935** · commenced 1935-10-15 · curriculum category 2 · SRC050 · **finalized**
 
 Topics: State Lands, Criminal and Civil Liabilities of Notaries
 
-Sections: 145 in the index (headings from lawlanka 144, legacy 1)
+Sections: 145 in the index (headings from finalized 144, legacy 1)
 
 Parsed from the HTML edition: 139 sections, 80 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 144 sections, 121 subsections, 30 definitions, 81 paragraphs, 4 subparagraphs.
 185 cross-references; 3 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC050-19-1935.json`
+
+Finalized: `data/legal-sources/library/finalized/19-1935-land-development-ordinance/19-1935-land-development-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
