@@ -1215,10 +1215,17 @@ def main() -> int:
             "long_title_correction_status": override.get("long_title_status", ""),
             "citation": {
                 # A standalone Act has no chain block to read the word "Act"
-                # from, so the registry supplies it.
+                # from, so the registry supplies it. A source whose own
+                # principal citation is simply absent from its chain block
+                # (the Civil Procedure Code's own page lists only its
+                # amending instruments, starting at "12 of 1895" -- "2 of
+                # 1889" itself never appears) falls back to its own long
+                # title instead, which always opens "AN ACT/ORDINANCE/LAW
+                # TO ...".
                 "type": next(
                     (k for k, n, y in chain if (n, y) == key),
-                    "Act" if row["source_type"] == "statute" and key[1] >= 1948 else "",
+                    "Act" if row["source_type"] == "statute" and key[1] >= 1948 else
+                    (re.match(r"AN?\s+(ACT|ORDINANCE|LAW)\b", long_title, re.IGNORECASE) or [None, ""])[1].title(),
                 ),
                 "number": key[0],
                 "year": key[1],
