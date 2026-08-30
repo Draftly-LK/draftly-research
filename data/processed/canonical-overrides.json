@@ -6,6 +6,57 @@
         "against what, so the correction can be re-tested rather than trusted.",
         "The original wording is always kept alongside as heading_raw."
     ],
+    "SRC053": {
+        "checked_against": "data/legal-sources/library/statutes/1-1844-definition-of-boundaries-ordinance.pdf",
+        "note": "LankaLaw HTML edition (source of the parsed tree) and LankaLaw's own PDF export of the same consolidated text disagree on the spelling of 'wilfully' in five places. The PDF's text layer reads 'wilfully' (single l), the period-correct spelling used consistently elsewhere in this corpus; the HTML reads 'willfully' (double l) in all five instances. Treated as an HTML transcription slip and corrected to match the PDF.",
+        "text_corrections": [
+            {
+                "section": "3",
+                "find": "such trespass or injury shall have been willfully committed",
+                "replace": "such trespass or injury shall have been wilfully committed",
+                "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+            },
+            {
+                "section": "5",
+                "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+                "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+                "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+            },
+            {
+                "section": "6",
+                "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+                "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+                "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+            },
+            {
+                "section": "7",
+                "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+                "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+                "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+            },
+            {
+                "section": "14",
+                "find": "Every person who shall willfully and knowingly remove",
+                "replace": "Every person who shall wilfully and knowingly remove",
+                "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+            }
+        ],
+        "quality_notes": [
+            {
+                "code": "benign_coverage_gap",
+                "issue": "check_parse_coverage.py reports ~3% unmatched against the PDF: cover-page/running-header text ('AN ORDINANCE TO MAKE PROVISION...', 'Cap. 292', volume/page markers) that never enters the section tree, plus a handful of 'survey'/'cost' tokens in sections 8-9 that the two-column PDF's marginal notes place out of body-text order (same words are present in the tree, just not adjacent to their pdftotext position).",
+                "status": "acceptable",
+                "recommendation": "Coverage percentage will not reach ~0% for this source; verify by reading the missing-word list, not the percentage alone."
+            },
+            {
+                "code": "amendments_not_gathered",
+                "issue": "The source header lists five amending Acts (13 of 1905, 28 of 1919, 27 of 1933, 8 of 1947, 22 of 1955), but none of their texts have been located or added to this corpus, so amendment_history_status stays 'listed_in_source_header' rather than a parsed/held chain. The parsed edition is LankaLaw's 'consolidated' text, which by convention already reflects amendments up to its compilation date, so the operative section text is not believed to be stale -- but this has not been independently confirmed against any amendment's actual text, unlike SRC001 where the amendment PDFs existed and were cross-checked.",
+                "status": "do_not_fix",
+                "recommendation": "If any of these five Acts' texts are ever located, run parse_amendment_pdf.py against them and re-finalize with --amendment before treating this statute's amendment history as verified."
+            }
+        ],
+        "verification_status": "unverified"
+    },
     "SRC048": {
         "checked_against": "https://lankalaw.net/wp-content/uploads/2025/02/1956Y3V62C.html",
         "note": "1956 revised edition, Chapter 62, Volume 3, page 73.",

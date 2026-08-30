@@ -52,8 +52,24 @@
  "amendment_history_status": "listed_in_source_header",
  "editorial_notes": [],
  "omitted_provisions": [],
- "overrides_applied": {},
- "quality_flags": [],
+ "overrides_applied": {
+  "checked_against": "data/legal-sources/library/statutes/1-1844-definition-of-boundaries-ordinance.pdf",
+  "note": "LankaLaw HTML edition (source of the parsed tree) and LankaLaw's own PDF export of the same consolidated text disagree on the spelling of 'wilfully' in five places. The PDF's text layer reads 'wilfully' (single l), the period-correct spelling used consistently elsewhere in this corpus; the HTML reads 'willfully' (double l) in all five instances. Treated as an HTML transcription slip and corrected to match the PDF."
+ },
+ "quality_flags": [
+  {
+   "code": "benign_coverage_gap",
+   "issue": "check_parse_coverage.py reports ~3% unmatched against the PDF: cover-page/running-header text ('AN ORDINANCE TO MAKE PROVISION...', 'Cap. 292', volume/page markers) that never enters the section tree, plus a handful of 'survey'/'cost' tokens in sections 8-9 that the two-column PDF's marginal notes place out of body-text order (same words are present in the tree, just not adjacent to their pdftotext position).",
+   "status": "acceptable",
+   "recommendation": "Coverage percentage will not reach ~0% for this source; verify by reading the missing-word list, not the percentage alone."
+  },
+  {
+   "code": "amendments_not_gathered",
+   "issue": "The source header lists five amending Acts (13 of 1905, 28 of 1919, 27 of 1933, 8 of 1947, 22 of 1955), but none of their texts have been located or added to this corpus, so amendment_history_status stays 'listed_in_source_header' rather than a parsed/held chain. The parsed edition is LankaLaw's 'consolidated' text, which by convention already reflects amendments up to its compilation date, so the operative section text is not believed to be stale -- but this has not been independently confirmed against any amendment's actual text, unlike SRC001 where the amendment PDFs existed and were cross-checked.",
+   "status": "do_not_fix",
+   "recommendation": "If any of these five Acts' texts are ever located, run parse_amendment_pdf.py against them and re-finalize with --amendment before treating this statute's amendment history as verified."
+  }
+ ],
  "source_location": {},
  "alternate_edition_variants": [],
  "schedules_referenced": [],
@@ -82,9 +98,16 @@
    "number": "3",
    "heading": "Trespassers, unless willful, not liable.",
    "raw_text": "3. From and after the passing of this Ordinance, no person shall be liable to any action for trespass for any entry upon any land within Sri Lanka, or to any action for damages in respect of any injury done to the same, if the title to such land shall be founded on any grant from the State, or if the person claiming to be the owner thereof shall have attached or belonging to the deed, document, or instrument by virtue of which he claims such land, a correct and authenticated survey thereof, or shall at any time have received a certificate that the State has no claim upon such land, unless the boundaries of such land shall be clearly defined along their whole line, or at such intervals as shall accurately show their whole line, by some wall, bank, ditch, fence, posts, stones or other sufficient landmarks or boundary, unless such trespass or injury shall have been willfully committed.",
-   "text": "From and after the passing of this Ordinance, no person shall be liable to any action for trespass for any entry upon any land within Sri Lanka, or to any action for damages in respect of any injury done to the same, if the title to such land shall be founded on any grant from the State, or if the person claiming to be the owner thereof shall have attached or belonging to the deed, document, or instrument by virtue of which he claims such land, a correct and authenticated survey thereof, or shall at any time have received a certificate that the State has no claim upon such land, unless the boundaries of such land shall be clearly defined along their whole line, or at such intervals as shall accurately show their whole line, by some wall, bank, ditch, fence, posts, stones or other sufficient landmarks or boundary, unless such trespass or injury shall have been willfully committed.",
+   "text": "From and after the passing of this Ordinance, no person shall be liable to any action for trespass for any entry upon any land within Sri Lanka, or to any action for damages in respect of any injury done to the same, if the title to such land shall be founded on any grant from the State, or if the person claiming to be the owner thereof shall have attached or belonging to the deed, document, or instrument by virtue of which he claims such land, a correct and authenticated survey thereof, or shall at any time have received a certificate that the State has no claim upon such land, unless the boundaries of such land shall be clearly defined along their whole line, or at such intervals as shall accurately show their whole line, by some wall, bank, ditch, fence, posts, stones or other sufficient landmarks or boundary, unless such trespass or injury shall have been wilfully committed.",
    "amendment_events": [],
-   "cross_references": []
+   "cross_references": [],
+   "text_corrections": [
+    {
+     "find": "such trespass or injury shall have been willfully committed",
+     "replace": "such trespass or injury shall have been wilfully committed",
+     "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+    }
+   ]
   },
   {
    "type": "section",
@@ -130,7 +153,7 @@
      "type": "proviso",
      "number": "",
      "raw_text": "Provided further, that if it shall appear that the party having claim to such land under such first grant from the State or under any other good and valid title, had full knowledge of such land being so cultivated or improved, and willfully, fraudulently, or negligently abstained from giving notice to the party cultivating or improving the same that such land was the property of the party having such claim as aforesaid, then the party so having cultivated or improved the same shall be entitled to retain possession of such land upon the same terms and in such and the like manner as is declared in section 4 of this Ordinance in respect of parties who shall have cultivated or improved land erroneously granted to them by the State and shall have remained in undisturbed possession of the same for the space of three years subsequent to the passing of this Ordinance.",
-     "text": "Provided further, that if it shall appear that the party having claim to such land under such first grant from the State or under any other good and valid title, had full knowledge of such land being so cultivated or improved, and willfully, fraudulently, or negligently abstained from giving notice to the party cultivating or improving the same that such land was the property of the party having such claim as aforesaid, then the party so having cultivated or improved the same shall be entitled to retain possession of such land upon the same terms and in such and the like manner as is declared in section 4 of this Ordinance in respect of parties who shall have cultivated or improved land erroneously granted to them by the State and shall have remained in undisturbed possession of the same for the space of three years subsequent to the passing of this Ordinance.",
+     "text": "Provided further, that if it shall appear that the party having claim to such land under such first grant from the State or under any other good and valid title, had full knowledge of such land being so cultivated or improved, and wilfully, fraudulently, or negligently abstained from giving notice to the party cultivating or improving the same that such land was the property of the party having such claim as aforesaid, then the party so having cultivated or improved the same shall be entitled to retain possession of such land upon the same terms and in such and the like manner as is declared in section 4 of this Ordinance in respect of parties who shall have cultivated or improved land erroneously granted to them by the State and shall have remained in undisturbed possession of the same for the space of three years subsequent to the passing of this Ordinance.",
      "amendment_events": [],
      "cross_references": [
       {
@@ -138,6 +161,13 @@
        "target_document": "Definition of Boundaries Ordinance",
        "target_section": "4",
        "verbatim": "section 4"
+      }
+     ],
+     "text_corrections": [
+      {
+       "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+       "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+       "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
       }
      ]
     }
@@ -164,9 +194,16 @@
      "type": "proviso",
      "number": "",
      "raw_text": "Provided further, that if it shall appear that the proprietor of such land had full knowledge of such land being so cultivated or improved, and willfully, fraudulently, or negligently abstained from giving notice to the party so cultivating or improving the same that such land was his property, such proprietor shall not be entitled to re-enter upon such land except upon payment to the party having cultivated or improved the same of the full improved value of such land, less the value thereof in its uncultivated state; and such questions of value shall be determined by arbitration in manner hereinafter provided.",
-     "text": "Provided further, that if it shall appear that the proprietor of such land had full knowledge of such land being so cultivated or improved, and willfully, fraudulently, or negligently abstained from giving notice to the party so cultivating or improving the same that such land was his property, such proprietor shall not be entitled to re-enter upon such land except upon payment to the party having cultivated or improved the same of the full improved value of such land, less the value thereof in its uncultivated state; and such questions of value shall be determined by arbitration in manner hereinafter provided.",
+     "text": "Provided further, that if it shall appear that the proprietor of such land had full knowledge of such land being so cultivated or improved, and wilfully, fraudulently, or negligently abstained from giving notice to the party so cultivating or improving the same that such land was his property, such proprietor shall not be entitled to re-enter upon such land except upon payment to the party having cultivated or improved the same of the full improved value of such land, less the value thereof in its uncultivated state; and such questions of value shall be determined by arbitration in manner hereinafter provided.",
      "amendment_events": [],
-     "cross_references": []
+     "cross_references": [],
+     "text_corrections": [
+      {
+       "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+       "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+       "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+      }
+     ]
     }
    ]
   },
@@ -191,9 +228,16 @@
      "type": "proviso",
      "number": "",
      "raw_text": "Provided further, that if it shall appear that the proprietor of such land had, at any time within such five years, full knowledge of such land being so cultivated or improved, and willfully, fraudulently, or negligently abstained from giving notice to the party cultivating or improving the same that such land was his property, then it shall be competent to such party, upon payment to such proprietor of the value of such land when first entered upon by such party (such value to be determined, if necessary, by arbitration in manner hereinafter provided), to call upon such proprietor, and such proprietor is- hereby required, to execute a good and valid transfer thereof to such party and his heirs at the cost of such party.",
-     "text": "Provided further, that if it shall appear that the proprietor of such land had, at any time within such five years, full knowledge of such land being so cultivated or improved, and willfully, fraudulently, or negligently abstained from giving notice to the party cultivating or improving the same that such land was his property, then it shall be competent to such party, upon payment to such proprietor of the value of such land when first entered upon by such party (such value to be determined, if necessary, by arbitration in manner hereinafter provided), to call upon such proprietor, and such proprietor is- hereby required, to execute a good and valid transfer thereof to such party and his heirs at the cost of such party.",
+     "text": "Provided further, that if it shall appear that the proprietor of such land had, at any time within such five years, full knowledge of such land being so cultivated or improved, and wilfully, fraudulently, or negligently abstained from giving notice to the party cultivating or improving the same that such land was his property, then it shall be competent to such party, upon payment to such proprietor of the value of such land when first entered upon by such party (such value to be determined, if necessary, by arbitration in manner hereinafter provided), to call upon such proprietor, and such proprietor is- hereby required, to execute a good and valid transfer thereof to such party and his heirs at the cost of such party.",
      "amendment_events": [],
-     "cross_references": []
+     "cross_references": [],
+     "text_corrections": [
+      {
+       "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+       "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+       "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+      }
+     ]
     }
    ]
   },
@@ -349,9 +393,16 @@
    "number": "14",
    "heading": "Penalty on removing landmarks.",
    "raw_text": "14. Every person who shall willfully and knowingly remove, destroy, or efface, or attempt to remove, destroy, or efface, any landmark or boundary which shall serve to mark the limits of any land, except for the purpose of repairing the same, shall be guilty of an offence, and be liable, on conviction thereof, to payment of any fine not exceeding five hundred rupees, or to imprisonment, with or without hard labour, for any period not exceeding one year.",
-   "text": "Every person who shall willfully and knowingly remove, destroy, or efface, or attempt to remove, destroy, or efface, any landmark or boundary which shall serve to mark the limits of any land, except for the purpose of repairing the same, shall be guilty of an offence, and be liable, on conviction thereof, to payment of any fine not exceeding five hundred rupees, or to imprisonment, with or without hard labour, for any period not exceeding one year.",
+   "text": "Every person who shall wilfully and knowingly remove, destroy, or efface, or attempt to remove, destroy, or efface, any landmark or boundary which shall serve to mark the limits of any land, except for the purpose of repairing the same, shall be guilty of an offence, and be liable, on conviction thereof, to payment of any fine not exceeding five hundred rupees, or to imprisonment, with or without hard labour, for any period not exceeding one year.",
    "amendment_events": [],
-   "cross_references": []
+   "cross_references": [],
+   "text_corrections": [
+    {
+     "find": "Every person who shall willfully and knowingly remove",
+     "replace": "Every person who shall wilfully and knowingly remove",
+     "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+    }
+   ]
   }
  ]
 }
