@@ -1078,12 +1078,12 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 Topics: Drafting of Deeds
 
-Sections: 126 in the index (headings from finalized 125, lawlanka 1)
+Sections: 126 in the index (headings from finalized 126)
 
 Parsed from the HTML edition: 125 sections, 22 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 126 sections, 189 subsections, 11 definitions, 164 paragraphs, 17 subparagraphs.
-401 cross-references; 4 schedules referenced (bodies not published).
+Canonical structure: 8 parts, 14 crossheadings, 126 sections, 191 subsections, 8 definitions, 167 paragraphs, 12 subparagraphs.
+366 cross-references; 3 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC064-6-1949.json`
 
 Finalized: `data/legal-sources/library/finalized/6-1949-mortgage-act/6-1949-mortgage-act-consolidated.json`
