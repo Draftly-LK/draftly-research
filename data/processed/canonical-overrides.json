@@ -917,5 +917,35 @@
             }
         ],
         "verification_status": "unverified"
+    },
+    "SRC073": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/14-1964-local-authorities-housing-act.html",
+        "note": "14 sections, coverage 3.28% unmatched (front matter). Parsed from a dedicated LankaLaw HTML page rather than the registry shared Legislative Enactments 1980 Volume 3 compendium PDF.",
+        "quality_notes": [
+            {
+                "code": "appointed_date_distinct_from_commencement",
+                "detail": "commencement (1964-04-01, from statute_commencement.csv) and the defined term \"appointed date\" (1st April, 1975, used within the Act for the vesting provisions in sections 2/3) are two different concepts, not a discrepancy: the Act commenced in 1964, but the vesting provisions it enacts only take effect from a later appointed date it defines separately. Same pattern already seen for other statutes (e.g. Mortgage Act).",
+                "status": "not_a_defect"
+            },
+            {
+                "code": "source_typos",
+                "sections_affected": [
+                    "1",
+                    "4",
+                    "5A"
+                ],
+                "issue": "Three genuine source-level errors confirmed against the raw HTML, not parser artifacts: section 1 heading reads \"Short tile.\" (for \"title\"); section 4 heading reads \"Special provisions of regarding value house...\"; section 5A(3) lists its third item as \"(hi)\" instead of \"(iii)\". Kept as printed.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "malformed_amendment_marker_not_extracted",
+                "sections_affected": [
+                    "3"
+                ],
+                "issue": "Section 3(3)(b)'s amendment marker is corrupted in the source itself -- body text is interleaved word-for-word inside the bracket: \"[section 2, 63 of is given by that local authority to 1979]\" instead of the normal \"[2, 63 of 1979]\". Confirmed against the raw HTML; not something any reasonable marker regex could parse. Left unextracted rather than guessed at.",
+                "status": "source_as_printed"
+            }
+        ],
+        "verification_status": "unverified"
     }
 }
