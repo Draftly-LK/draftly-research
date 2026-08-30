@@ -3,7 +3,7 @@
 The 52 statutes named in the curriculum's Category 1 to 3 tables,
 the same set as `PRIMARY-STATUES.md`, with the local files held for each and
 every amending instrument known for it (348 in total, of which
-223 are held locally).
+224 are held locally).
 
 45 of the 52 have their sections extracted; the rest are
 marked below. Statutes the corpus holds but the curriculum does not name are
@@ -64,7 +64,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Powers of Attorney Ordinance | No. 4 of 1902 | 9 | 3 | 1 | yes |
 | 1 | Prescription Ordinance | No. 22 of 1871 | 15 | 2 | 1 | yes |
 | 1 | Prevention of Frauds Ordinance | No. 7 of 1840 | 19 | 6 | 2 | yes |
-| 1 | Registration of Documents Ordinance | No. 23 of 1927 | 42 | 19 | 12 | - |
+| 1 | Registration of Documents Ordinance | No. 23 of 1927 | 42 | 19 | 13 | yes |
 | 1 | Registration of Title Act | No. 21 of 1998 | 75 | 0 | 0 | yes |
 | 1 | Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act | No. 5 of 2017 | not extracted | 0 | 0 | - |
 | 1 | Stamp Duty (Special Provisions) Act | No. 12 of 2006 | 37 | 2 | 2 | - |
@@ -567,12 +567,12 @@ Amendments (6 known, 2 held):
 | No. 11 of 1856 | - | curriculum | not held: not in the Act archive | not published as HTML | not read |
 | No. 11 of 1896 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
 | No. 60 of 1947 | Ordinance | chain+curriculum+html+marker | not held: not in the Act archive | not published as HTML | not read |
-| No. 30 of 2022 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/30-2022-prevention-of-frauds-amendment-act.pdf` | not published as HTML | not read |
-| No. 4 of 2024 | Act | chain+marker | `data/legal-sources/library/amendments/4-2024-prevention-of-frauds-amendment-act.pdf` | not published as HTML | not read |
+| No. 30 of 2022 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/30-2022-prevention-of-frauds-amendment-act.pdf` | not published as HTML | amend 2; amend 4; amend 7; amend 16 |
+| No. 4 of 2024 | Act | chain+marker | `data/legal-sources/library/amendments/4-2024-prevention-of-frauds-amendment-act.pdf` | not published as HTML | multiple 2 |
 
 ### Registration of Documents Ordinance
 
-**No. 23 of 1927** · commenced 1927-01-01 · curriculum category 1 · SRC005
+**No. 23 of 1927** · commenced 1927-01-01 · curriculum category 1 · SRC005 · **finalized**
 
 Topics: Registration of Documents, Formation of Deeds, Drafting and Study of Instruments, Drafting of Deeds
 
@@ -584,6 +584,11 @@ Canonical structure: 5 crossheadings, 7 subheadings, 50 sections, 96 subsections
 46 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC005-23-1927.json`
 
+Finalized: `data/legal-sources/library/finalized/23-1927-registration-of-documents-ordinance/23-1927-registration-of-documents-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
+
 Files:
 
 - PDF: `data/legal-sources/library/statutes/23-1927-registration-of-documents-ordinance.pdf`
@@ -591,7 +596,7 @@ Files:
 - Markdown: `data/legal-sources/library-markdown/statutes/registration-of-documents-ordinance/registration-of-documents-consolidated-2024.md`  (recorded in the registry but not on disk)
 - HTML: `data/legal-sources/library/statutes/HTML/23-1927-registration-of-documents-ordinance.html`
 
-Amendments (19 known, 12 held):
+Amendments (19 known, 13 held):
 
 | Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
 | --- | --- | --- | --- | --- | --- |
@@ -602,7 +607,7 @@ Amendments (19 known, 12 held):
 | No. 13 of 1947 | Ordinance | chain+html+marker | not held: not in the Act archive | not published as HTML | not read |
 | No. 6 of 1949 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
 | No. 16 of 1951 | Act | chain+html | `data/legal-sources/library/amendments/16-1951-partition.pdf` | not published as HTML | not read |
-| No. 22 of 1958 | Act | chain+html+marker | `data/legal-sources/library/amendments/22-1958-registration-of-documents-amendment.pdf` | not published as HTML | not read |
+| No. 22 of 1958 | Act | chain+html+marker | `data/legal-sources/library/amendments/22-1958-registration-of-documents-amendment.pdf` | not published as HTML | multiple 15; amend 40 |
 | No. 11 of 1963 | Act | chain+html | `data/legal-sources/library/amendments/11-1963-finance.pdf` | `data/legal-sources/library/amendments/html/11-1963-marriage-registration-amendment.html` | amend 34; amend 62; amend |
 | No. 27 of 1969 | Act | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/27-1969-registration-of-documents-amendment.html` | insert 2A, 2 |
 | No. 4 of 1974 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/4-1974-registration-of-documents-amendment-law.html` | repeal 2 |
@@ -610,10 +615,10 @@ Amendments (19 known, 12 held):
 | No. 19 of 1976 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/19-1976-registration-of-documents-amendment-law.html` | substitute 29 |
 | No. 50 of 1982 | Act | chain+html+marker | `data/legal-sources/library/amendments/50-1982-registration-of-documents-amendment.pdf` | `data/legal-sources/library/amendments/html/50-1982-registration-of-documents.html` | amend 13; amend 35 |
 | No. 5 of 1990 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/5-1990-registration-of-documents-amendment-act.pdf` | `data/legal-sources/library/amendments/html/5-1990-registration-of-documents-amendment.html` | amend 21 |
-| No. 48 of 2011 | Act | chain+curriculum | `data/legal-sources/library/amendments/48-2011-registration-of-documents-amendment-act.pdf` | not published as HTML | not read |
-| No. 21 of 2013 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/21-2013-registration-of-documents-amendment-act.pdf` | not published as HTML | not read |
-| No. 32 of 2022 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/32-2022-registration-of-documents-amendment-act.pdf` | not published as HTML | not read |
-| No. 18 of 2024 | Act | chain+marker | not held: not in the Act archive | not published as HTML | not read |
+| No. 48 of 2011 | Act | chain+curriculum | `data/legal-sources/library/amendments/48-2011-registration-of-documents-amendment-act.pdf` | not published as HTML | amend 13 |
+| No. 21 of 2013 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/21-2013-registration-of-documents-amendment-act.pdf` | not published as HTML | amend 13; amend 22; amend 48 |
+| No. 32 of 2022 | Act | chain+curriculum+marker | `data/legal-sources/library/amendments/32-2022-registration-of-documents-amendment-act.pdf` | not published as HTML | multiple; insert 33 |
+| No. 18 of 2024 | Act | chain+marker | `data/legal-sources/library/amendments/18-2024-registration-of-documents-amendment-act.pdf` | not published as HTML | amend 8; amend 25; amend 29; amend 41; amend |
 
 ### Registration of Title Act
 
