@@ -5,7 +5,7 @@ the same set as `PRIMARY-STATUES.md`, with the local files held for each and
 every amending instrument known for it (349 in total, of which
 225 are held locally).
 
-46 of the 52 have their sections extracted; the rest are
+47 of the 52 have their sections extracted; the rest are
 marked below. Statutes the corpus holds but the curriculum does not name are
 listed in `SECONDARY-STATUES.md` and are out of scope here.
 
@@ -85,7 +85,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Bank of Ceylon Ordinance | No. 53 of 1938 | 82 | 13 | 7 | yes |
 | 3 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 4 | 2 | - |
 | 3 | Land Surveys Ordinance | No. 4 of 1866 | not extracted | 1 | 1 | - |
-| 3 | Lands Resumption Ordinance | No. 4 of 1887 | not extracted | 3 | 1 | - |
+| 3 | Lands Resumption Ordinance | No. 4 of 1887 | 17 | 3 | 1 | yes |
 | 3 | Local Authorities Housing Act | No. 14 of 1964 | not extracted | 1 | 1 | - |
 | 3 | Municipal Councils Ordinance | No. 29 of 1947 | 349 | 41 | 33 | yes |
 | 3 | National Housing Act | No. 37 of 1954 | 127 | 6 | 5 | yes |
@@ -1253,18 +1253,22 @@ Amendments (1 known, 1 held):
 
 ### Lands Resumption Ordinance
 
-**No. 4 of 1887** · commenced 1887-01-24 · curriculum category 3 · SRC079 · **sections not extracted**
+**No. 4 of 1887** · commenced 1887-01-24 · curriculum category 3 · SRC079 · **finalized**
 
 Topics: State Lands, Other Related Statutory Laws
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 17 in the index (headings from finalized 17)
 
 Parsed from the HTML edition: 17 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 17 sections, 2 subsections, 1 definition, 4 paragraphs.
 9 cross-references.
 Tree: `data/processed/canonical-statutes/SRC079-4-1887.json`
+
+Finalized: `data/legal-sources/library/finalized/4-1887-lands-resumption-ordinance/4-1887-lands-resumption-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
