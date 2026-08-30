@@ -283,7 +283,7 @@ PROVISO = re.compile(
     # says, not a legal proviso qualifying the provision; splitting it off
     # left National Housing Act section 58's own text as the sentence
     # fragment "...it is". A real proviso opens its own clause.
-    r"(?<!it is )\bProvided\s*,?\s*(?:however|always|further|nevertheless)?\s*,?\s*that\b",
+    r"(?<!it is )\bProvided\s*,?\s*(?:however|always|further|also|nevertheless)?\s*,?\s*that\b",
     re.IGNORECASE,
 )
 
