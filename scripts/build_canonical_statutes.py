@@ -1108,6 +1108,41 @@ def apply_heading_overrides(nodes: list[dict], corrections: dict) -> None:
         apply_heading_overrides(node.get("children", []), corrections)
 
 
+def insert_missing_sections(nodes: list[dict], insertions: list[dict]) -> None:
+    """A section wholly absent from the parsed HTML edition (typically a later
+    insertion the HTML's consolidation predates) is spliced in from a second,
+    more current source, immediately after the section named in `after`. The
+    inserted section is a plain leaf: no children, cross_references limited to
+    what the override itself declares, since none of this project's normal
+    detection passes ever saw its text."""
+    by_after = collections.defaultdict(list)
+    for fix in insertions:
+        by_after[fix["after"]].append(fix)
+    i = 0
+    while i < len(nodes):
+        node = nodes[i]
+        if node.get("type") == "section":
+            for fix in by_after.get(node["number"], []):
+                stripped, events = split_markers(fix["raw_text"])
+                text = stripped.split(".", 1)[1].strip() if "." in stripped else stripped
+                new_node = {
+                    "type": "section",
+                    "number": fix["number"],
+                    "heading": fix["heading"],
+                    "raw_text": fix["raw_text"],
+                    "text": text,
+                    "amendment_events": events,
+                    "cross_references": fix.get("cross_references", []),
+                    "children": [],
+                    "inserted_from_secondary_source": True,
+                    "insertion_reason": fix.get("reason", ""),
+                }
+                i += 1
+                nodes.insert(i, new_node)
+        insert_missing_sections(node.get("children", []), insertions)
+        i += 1
+
+
 def apply_text_corrections(nodes: list[dict], corrections: list[dict], section: str = "") -> None:
     """A LankaLaw transcription slip verified against a second source (not a
     defect in the Act itself) is corrected in `text`; `raw_text` keeps the
@@ -1195,6 +1230,7 @@ def main() -> int:
         dedupe_events(body)
         apply_heading_overrides(body, override.get("section_headings", {}))
         apply_text_corrections(body, override.get("text_corrections", []))
+        insert_missing_sections(body, override.get("inserted_sections", []))
         stated = re.search(r"\[\s*([0-9]{1,2}\s*\w{0,4}\s+\w+\s*,?\s*[0-9]{4})\s*\]", text_of(page))
         # text_of() replaces every tag with a space and collapses whitespace to
         # one space rather than none, so a date's ordinal suffix marked up as
