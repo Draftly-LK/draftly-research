@@ -1,0 +1,425 @@
+{
+ "source_id": "SRC053",
+ "title": "Definition of Boundaries Ordinance",
+ "long_title": "AN ORDINANCE TO MAKE PROVISION FOR THE MORE EASILY ASCERTAINING THE BOUNDARIES OF LANDS IN SRI LANKA.",
+ "long_title_raw": "",
+ "long_title_correction_status": "",
+ "citation": {
+  "type": "Ordinance",
+  "number": 1,
+  "year": 1844
+ },
+ "date_stated_in_source": "17th January, 1844",
+ "commencement": "1844-01-17",
+ "commencement_source": "statute_commencement.csv (srilankalaw)",
+ "language": "en",
+ "edition": {
+  "publisher": "lankalaw",
+  "kind": "consolidated",
+  "source_url": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y11V292C-1.html",
+  "local_path": "data/legal-sources/library/statutes/HTML/1-1844-definition-of-boundaries-ordinance.html",
+  "caveat": "private republisher, not the Government Printer"
+ },
+ "amendments": [
+  {
+   "type": "Ordinance",
+   "number": 13,
+   "year": 1905
+  },
+  {
+   "type": "Ordinance",
+   "number": 28,
+   "year": 1919
+  },
+  {
+   "type": "Ordinance",
+   "number": 27,
+   "year": 1933
+  },
+  {
+   "type": "Ordinance",
+   "number": 8,
+   "year": 1947
+  },
+  {
+   "type": "Act",
+   "number": 22,
+   "year": 1955
+  }
+ ],
+ "verification_status": "unverified",
+ "content_completeness": "",
+ "amendment_history_status": "listed_in_source_header",
+ "editorial_notes": [],
+ "omitted_provisions": [],
+ "overrides_applied": {
+  "checked_against": "data/legal-sources/library/statutes/1-1844-definition-of-boundaries-ordinance.pdf",
+  "note": "LankaLaw HTML edition (source of the parsed tree) and LankaLaw's own PDF export of the same consolidated text disagree on the spelling of 'wilfully' in five places. The PDF's text layer reads 'wilfully' (single l), the period-correct spelling used consistently elsewhere in this corpus; the HTML reads 'willfully' (double l) in all five instances. Treated as an HTML transcription slip and corrected to match the PDF."
+ },
+ "quality_flags": [
+  {
+   "code": "benign_coverage_gap",
+   "issue": "check_parse_coverage.py reports unmatched words against the PDF beyond the fixes above: cover-page/running-header text ('AN ORDINANCE TO MAKE PROVISION...', 'Cap. 292', volume/page markers) that never enters the section tree, plus stray 'survey'/'cost' tokens from two-column marginal-note reordering elsewhere in sections 8-9 that don't form a readable corrupted clause (unlike the two instances in section 9 fixed above).",
+   "status": "acceptable",
+   "recommendation": "Coverage percentage will not reach ~0% for this source; verify by reading the missing-word list, not the percentage alone."
+  },
+  {
+   "code": "amendments_not_gathered",
+   "issue": "The source header lists five amending Acts (13 of 1905, 28 of 1919, 27 of 1933, 8 of 1947, 22 of 1955), but none of their texts have been located or added to this corpus, so amendment_history_status stays 'listed_in_source_header' rather than a parsed/held chain. The parsed edition is LankaLaw's 'consolidated' text, which by convention already reflects amendments up to its compilation date, so the operative section text is not believed to be stale -- but this has not been independently confirmed against any amendment's actual text, unlike SRC001 where the amendment PDFs existed and were cross-checked.",
+   "status": "do_not_fix",
+   "recommendation": "If any of these five Acts' texts are ever located, run parse_amendment_pdf.py against them and re-finalize with --amendment before treating this statute's amendment history as verified."
+  }
+ ],
+ "source_location": {},
+ "alternate_edition_variants": [],
+ "schedules_referenced": [],
+ "schedules": [],
+ "body": [
+  {
+   "type": "section",
+   "number": "1",
+   "heading": "Short title.",
+   "raw_text": "1. This Ordinance may be cited as the Definition of Boundaries Ordinance.",
+   "text": "This Ordinance may be cited as the Definition of Boundaries Ordinance.",
+   "amendment_events": [],
+   "cross_references": []
+  },
+  {
+   "type": "section",
+   "number": "2",
+   "heading": "Government Agent may demand production of title deeds.",
+   "raw_text": "2. It shall at any time be lawful for the Government Agent of the administrative district to demand in writing of any person claiming to be the owner of any land within the same the production of every deed, document, and instrument upon which such person founds such claim; and if the occupier or person having the superintendence or management of any such land, not being himself the alleged owner thereof, shall refuse to give full information respecting the name and residence of such alleged owner, upon being requested so to do by the Government Agent, or if such alleged owner shall refuse to produce to the Government Agent, within ten days after being requested so to do, every deed, document, and instrument upon which he founds his claim to the said land, and which shall be in his possession, or if any such deed, document, or instrument shall not be in his possession, shall refuse fully to inform the Government Agent, upon application, in whose possession they are, or if any person having in his possession any such deed, document, or instrument shall refuse to produce the same within ten days after having been requested so to do in writing by the Government Agent, every such occupier, superintendent or manager, alleged owner, and person so refusing shall be guilty of an offence, and be liable, on conviction thereof, to any fine not exceeding fifty rupees.",
+   "text": "It shall at any time be lawful for the Government Agent of the administrative district to demand in writing of any person claiming to be the owner of any land within the same the production of every deed, document, and instrument upon which such person founds such claim; and if the occupier or person having the superintendence or management of any such land, not being himself the alleged owner thereof, shall refuse to give full information respecting the name and residence of such alleged owner, upon being requested so to do by the Government Agent, or if such alleged owner shall refuse to produce to the Government Agent, within ten days after being requested so to do, every deed, document, and instrument upon which he founds his claim to the said land, and which shall be in his possession, or if any such deed, document, or instrument shall not be in his possession, shall refuse fully to inform the Government Agent, upon application, in whose possession they are, or if any person having in his possession any such deed, document, or instrument shall refuse to produce the same within ten days after having been requested so to do in writing by the Government Agent, every such occupier, superintendent or manager, alleged owner, and person so refusing shall be guilty of an offence, and be liable, on conviction thereof, to any fine not exceeding fifty rupees.",
+   "amendment_events": [],
+   "cross_references": []
+  },
+  {
+   "type": "section",
+   "number": "3",
+   "heading": "Trespassers, unless wilful, not liable.",
+   "raw_text": "3. From and after the passing of this Ordinance, no person shall be liable to any action for trespass for any entry upon any land within Sri Lanka, or to any action for damages in respect of any injury done to the same, if the title to such land shall be founded on any grant from the State, or if the person claiming to be the owner thereof shall have attached or belonging to the deed, document, or instrument by virtue of which he claims such land, a correct and authenticated survey thereof, or shall at any time have received a certificate that the State has no claim upon such land, unless the boundaries of such land shall be clearly defined along their whole line, or at such intervals as shall accurately show their whole line, by some wall, bank, ditch, fence, posts, stones or other sufficient landmarks or boundary, unless such trespass or injury shall have been willfully committed.",
+   "text": "From and after the passing of this Ordinance, no person shall be liable to any action for trespass for any entry upon any land within Sri Lanka, or to any action for damages in respect of any injury done to the same, if the title to such land shall be founded on any grant from the State, or if the person claiming to be the owner thereof shall have attached or belonging to the deed, document, or instrument by virtue of which he claims such land, a correct and authenticated survey thereof, or shall at any time have received a certificate that the State has no claim upon such land, unless the boundaries of such land shall be clearly defined along their whole line, or at such intervals as shall accurately show their whole line, by some wall, bank, ditch, fence, posts, stones or other sufficient landmarks or boundary, unless such trespass or injury shall have been wilfully committed.",
+   "amendment_events": [],
+   "cross_references": [],
+   "heading_raw": "Trespassers, unless willful, not liable.",
+   "heading_correction_status": "verified_against_alternate_edition",
+   "heading_correction_reason": "HTML heading reads 'willful' (double l); the PDF's own margin caption for this section reads 'wilful' (single l), matching the spelling corrected in the body text of sections 3, 5, 6, 7, and 14 above.",
+   "text_corrections": [
+    {
+     "find": "such trespass or injury shall have been willfully committed",
+     "replace": "such trespass or injury shall have been wilfully committed",
+     "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "4",
+   "heading": "Where party has had possession for three years of land erroneously granted by the State.",
+   "raw_text": "4. If the State shall have heretofore granted, or shall hereafter grant, any land which shall have been previously granted by the State to any party, or which shall be possessed by any person in manner provided by section 3 of this Ordinance, and the boundaries whereof shall not have been or shall not be clearly defined in the manner provided by the said section at the time of making such erroneous grant, and if the party to whom any such erroneous grant shall have been made shall have entered upon such land, and shall have clearly defined the boundaries thereof as aforesaid, and remained in undisturbed possession thereof for the space of three years subsequent to the passing of this Ordinance, and shall have cultivated or improved the same, the party so in possession shall be entitled to retain the land so cultivated and improved upon payment to the party having a title to the same under the original grant from the State or under any other good and sufficient title, of the value of such land at the time such erroneous grant shall have been made (which value shall be determined, if necessary, by arbitration in manner hereinafter provided): And upon such payment being made to such party, and in consideration thereof, such party is hereby required to execute a good and valid transfer of such land to the party so in possession thereof as aforesaid, and his heirs, upon application by and at the sole cost of the said party so in possession; and the said party so in possession shall be entitled to recover from the State the amount paid to the State in respect of such erroneous grant.",
+   "text": "If the State shall have heretofore granted, or shall hereafter grant, any land which shall have been previously granted by the State to any party, or which shall be possessed by any person in manner provided by section 3 of this Ordinance, and the boundaries whereof shall not have been or shall not be clearly defined in the manner provided by the said section at the time of making such erroneous grant, and if the party to whom any such erroneous grant shall have been made shall have entered upon such land, and shall have clearly defined the boundaries thereof as aforesaid, and remained in undisturbed possession thereof for the space of three years subsequent to the passing of this Ordinance, and shall have cultivated or improved the same, the party so in possession shall be entitled to retain the land so cultivated and improved upon payment to the party having a title to the same under the original grant from the State or under any other good and sufficient title, of the value of such land at the time such erroneous grant shall have been made (which value shall be determined, if necessary, by arbitration in manner hereinafter provided): And upon such payment being made to such party, and in consideration thereof, such party is hereby required to execute a good and valid transfer of such land to the party so in possession thereof as aforesaid, and his heirs, upon application by and at the sole cost of the said party so in possession; and the said party so in possession shall be entitled to recover from the State the amount paid to the State in respect of such erroneous grant.",
+   "amendment_events": [],
+   "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Definition of Boundaries Ordinance",
+     "target_section": "3",
+     "verbatim": "section 3"
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "5",
+   "heading": "Where less than three years.",
+   "raw_text": "5. If the State shall have heretofore granted, or shall hereafter grant, any land which shall have been previously granted by the State to any party, or which shall be possessed by any person in manner provided by section 3 of this Ordinance, and the boundaries whereof shall not have been or shall not be clearly defined in the manner provided by the said section at the time of making such erroneous grant, and if the party to whom such erroneous grant shall have been made shall have entered upon such land and clearly defined the boundaries thereof, and shall have cultivated or improved the same, but shall not have remained in undisturbed possession thereof for the space of three years subsequent to the passing of this Ordinance, then the first grantee or proprietor shall not be entitled to enter upon and take possession of the land so cultivated or improved except upon payment to the cultivator or improver thereof of three-fourths of the improved value of such land, less the value of such land in its uncultivated state, such last-mentioned value to be taken to be the same as that of similar land adjoining; and such questions of value shall be determined by arbitration in manner hereinafter provided; and the party having so cultivated or improved the same shall be entitled to recover from the State the amount paid to the State by such party in respect of such erroneous grant:",
+   "text": "If the State shall have heretofore granted, or shall hereafter grant, any land which shall have been previously granted by the State to any party, or which shall be possessed by any person in manner provided by section 3 of this Ordinance, and the boundaries whereof shall not have been or shall not be clearly defined in the manner provided by the said section at the time of making such erroneous grant, and if the party to whom such erroneous grant shall have been made shall have entered upon such land and clearly defined the boundaries thereof, and shall have cultivated or improved the same, but shall not have remained in undisturbed possession thereof for the space of three years subsequent to the passing of this Ordinance, then the first grantee or proprietor shall not be entitled to enter upon and take possession of the land so cultivated or improved except upon payment to the cultivator or improver thereof of three-fourths of the improved value of such land, less the value of such land in its uncultivated state, such last-mentioned value to be taken to be the same as that of similar land adjoining; and such questions of value shall be determined by arbitration in manner hereinafter provided; and the party having so cultivated or improved the same shall be entitled to recover from the State the amount paid to the State by such party in respect of such erroneous grant:",
+   "amendment_events": [],
+   "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Definition of Boundaries Ordinance",
+     "target_section": "3",
+     "verbatim": "section 3"
+    }
+   ],
+   "children": [
+    {
+     "type": "proviso",
+     "number": "",
+     "raw_text": "Provided always that if the first grantee or proprietor of such land shall decline to enter into possession of the land so cultivated or improved, he shall be entitled to recover from the cultivator or improver thereof the value of the land and one-fourth of the value of the cultivation or improvements thereupon, such value to be determined by arbitration in manner hereinafter provided ; and upon payment of such amount the said first grantee or proprietor shall, upon application by and at the cost of the party having cultivated or improved such land, execute a good and valid transfer thereof to such party and his heirs, and the said last-mentioned party shall be entitled to recover from the State the amount paid to the State in respect of such erroneous grant; and",
+     "text": "Provided always that if the first grantee or proprietor of such land shall decline to enter into possession of the land so cultivated or improved, he shall be entitled to recover from the cultivator or improver thereof the value of the land and one-fourth of the value of the cultivation or improvements thereupon, such value to be determined by arbitration in manner hereinafter provided ; and upon payment of such amount the said first grantee or proprietor shall, upon application by and at the cost of the party having cultivated or improved such land, execute a good and valid transfer thereof to such party and his heirs, and the said last-mentioned party shall be entitled to recover from the State the amount paid to the State in respect of such erroneous grant; and",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "proviso",
+     "number": "",
+     "raw_text": "Provided further, that if it shall appear that the party having claim to such land under such first grant from the State or under any other good and valid title, had full knowledge of such land being so cultivated or improved, and willfully, fraudulently, or negligently abstained from giving notice to the party cultivating or improving the same that such land was the property of the party having such claim as aforesaid, then the party so having cultivated or improved the same shall be entitled to retain possession of such land upon the same terms and in such and the like manner as is declared in section 4 of this Ordinance in respect of parties who shall have cultivated or improved land erroneously granted to them by the State and shall have remained in undisturbed possession of the same for the space of three years subsequent to the passing of this Ordinance.",
+     "text": "Provided further, that if it shall appear that the party having claim to such land under such first grant from the State or under any other good and valid title, had full knowledge of such land being so cultivated or improved, and wilfully, fraudulently, or negligently abstained from giving notice to the party cultivating or improving the same that such land was the property of the party having such claim as aforesaid, then the party so having cultivated or improved the same shall be entitled to retain possession of such land upon the same terms and in such and the like manner as is declared in section 4 of this Ordinance in respect of parties who shall have cultivated or improved land erroneously granted to them by the State and shall have remained in undisturbed possession of the same for the space of three years subsequent to the passing of this Ordinance.",
+     "amendment_events": [],
+     "cross_references": [
+      {
+       "kind": "internal",
+       "target_document": "Definition of Boundaries Ordinance",
+       "target_section": "4",
+       "verbatim": "section 4"
+      }
+     ],
+     "text_corrections": [
+      {
+       "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+       "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+       "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "6",
+   "heading": "Where party has had possession for not less than two nor more than five years of uncultivated land belonging to another.",
+   "raw_text": "6. If any person shall without fraud and in perfect good faith enter upon any uncultivated land which shall be the property of any other person, the boundaries of which shall not be clearly defined as aforesaid, and shall cultivate or improve the same, and shall remain in undisturbed possession thereof for any period not less than two nor more than five years, the proprietor of such land so cultivated or improved shall not be entitled to enter upon or take possession of the same, unless upon payment to the party by whom it shall have been so cultivated or improved of three-fourths of the improved value of such land, less the value of such land in its uncultivated state, such last-mentioned value to be taken to be the same as that of similar land in the neighbourhood; and such questions of value shall be determined by arbitration in manner hereinafter provided:",
+   "text": "If any person shall without fraud and in perfect good faith enter upon any uncultivated land which shall be the property of any other person, the boundaries of which shall not be clearly defined as aforesaid, and shall cultivate or improve the same, and shall remain in undisturbed possession thereof for any period not less than two nor more than five years, the proprietor of such land so cultivated or improved shall not be entitled to enter upon or take possession of the same, unless upon payment to the party by whom it shall have been so cultivated or improved of three-fourths of the improved value of such land, less the value of such land in its uncultivated state, such last-mentioned value to be taken to be the same as that of similar land in the neighbourhood; and such questions of value shall be determined by arbitration in manner hereinafter provided:",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
+    {
+     "type": "proviso",
+     "number": "",
+     "raw_text": "Provided always that it shall be lawful for such proprietor, if he shall think fit, to recover from the party having cultivated or improved such land one-fourth of the value of the land, and one-fourth of the value of the cultivation or improvements thereupon, and upon payment of such amount to such proprietor such proprietor shall, on application at the cost of the party so having cultivated or improved such land, execute a good and valid transfer thereof to such party and his heirs ; and",
+     "text": "Provided always that it shall be lawful for such proprietor, if he shall think fit, to recover from the party having cultivated or improved such land one-fourth of the value of the land, and one-fourth of the value of the cultivation or improvements thereupon, and upon payment of such amount to such proprietor such proprietor shall, on application at the cost of the party so having cultivated or improved such land, execute a good and valid transfer thereof to such party and his heirs ; and",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "proviso",
+     "number": "",
+     "raw_text": "Provided further, that if it shall appear that the proprietor of such land had full knowledge of such land being so cultivated or improved, and willfully, fraudulently, or negligently abstained from giving notice to the party so cultivating or improving the same that such land was his property, such proprietor shall not be entitled to re-enter upon such land except upon payment to the party having cultivated or improved the same of the full improved value of such land, less the value thereof in its uncultivated state; and such questions of value shall be determined by arbitration in manner hereinafter provided.",
+     "text": "Provided further, that if it shall appear that the proprietor of such land had full knowledge of such land being so cultivated or improved, and wilfully, fraudulently, or negligently abstained from giving notice to the party so cultivating or improving the same that such land was his property, such proprietor shall not be entitled to re-enter upon such land except upon payment to the party having cultivated or improved the same of the full improved value of such land, less the value thereof in its uncultivated state; and such questions of value shall be determined by arbitration in manner hereinafter provided.",
+     "amendment_events": [],
+     "cross_references": [],
+     "text_corrections": [
+      {
+       "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+       "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+       "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "7",
+   "heading": "Where more than five years.",
+   "raw_text": "7. If any person shall without fraud and in perfect good faith enter upon any uncultivated land which shall be the property of any other person, the boundaries of which shall not be clearly defined as aforesaid, and shall cultivate or improve the same, and shall remain in undisturbed possession thereof for upwards of five years, the proprietor of such land shall not be entitled to enter upon and take possession of such land so cultivated or improved, unless upon payment to the party having cultivated or improved the same of the full improved value thereof, less the value of the land in its uncultivated state, which last-mentioned value shall be deemed and taken to be the same as that of similar land in the neighbourhood; and such questions of value shall be determined, if necessary, by arbitration in manner hereinafter provided:",
+   "text": "If any person shall without fraud and in perfect good faith enter upon any uncultivated land which shall be the property of any other person, the boundaries of which shall not be clearly defined as aforesaid, and shall cultivate or improve the same, and shall remain in undisturbed possession thereof for upwards of five years, the proprietor of such land shall not be entitled to enter upon and take possession of such land so cultivated or improved, unless upon payment to the party having cultivated or improved the same of the full improved value thereof, less the value of the land in its uncultivated state, which last-mentioned value shall be deemed and taken to be the same as that of similar land in the neighbourhood; and such questions of value shall be determined, if necessary, by arbitration in manner hereinafter provided:",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
+    {
+     "type": "proviso",
+     "number": "",
+     "raw_text": "Provided nevertheless, that such proprietor shall, if he elect so to do, have full power and authority to claim and recover from the party having cultivated or improved such land the value of such land in its uncultivated state, such value to be taken to be the same as that of similar land in the neighbourhood at the time of valuation, and to be determined, if necessary, by arbitration in manner hereinafter provided ; and upon payment of such amount to such proprietor, and in consideration thereof, such proprietor is hereby required to execute a good and valid transfer thereof to the party having cultivated or improved the same, and his heirs, the cost of such transfer to be borne by such party ; and",
+     "text": "Provided nevertheless, that such proprietor shall, if he elect so to do, have full power and authority to claim and recover from the party having cultivated or improved such land the value of such land in its uncultivated state, such value to be taken to be the same as that of similar land in the neighbourhood at the time of valuation, and to be determined, if necessary, by arbitration in manner hereinafter provided ; and upon payment of such amount to such proprietor, and in consideration thereof, such proprietor is hereby required to execute a good and valid transfer thereof to the party having cultivated or improved the same, and his heirs, the cost of such transfer to be borne by such party ; and",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "proviso",
+     "number": "",
+     "raw_text": "Provided further, that if it shall appear that the proprietor of such land had, at any time within such five years, full knowledge of such land being so cultivated or improved, and willfully, fraudulently, or negligently abstained from giving notice to the party cultivating or improving the same that such land was his property, then it shall be competent to such party, upon payment to such proprietor of the value of such land when first entered upon by such party (such value to be determined, if necessary, by arbitration in manner hereinafter provided), to call upon such proprietor, and such proprietor is- hereby required, to execute a good and valid transfer thereof to such party and his heirs at the cost of such party.",
+     "text": "Provided further, that if it shall appear that the proprietor of such land had, at any time within such five years, full knowledge of such land being so cultivated or improved, and wilfully, fraudulently, or negligently abstained from giving notice to the party cultivating or improving the same that such land was his property, then it shall be competent to such party, upon payment to such proprietor of the value of such land when first entered upon by such party (such value to be determined, if necessary, by arbitration in manner hereinafter provided), to call upon such proprietor, and such proprietor is- hereby required, to execute a good and valid transfer thereof to such party and his heirs at the cost of such party.",
+     "amendment_events": [],
+     "cross_references": [],
+     "text_corrections": [
+      {
+       "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+       "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+       "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "8",
+   "heading": "Proprietors of adjoining lands may call upon each other to define boundaries.",
+   "raw_text": "8. It shall be lawful for any person possessed of land in manner provided by section 3 of this Ordinance, the boundaries of which shall not be clearly defined as aforesaid, or any agent on his behalf, to call upon the proprietor or occupant of any land adjoining thereunto, not being the State, or upon his agent, by notice in writing under the hand of such possessor, to be served personally on such last-mentioned proprietor, occupant, or agent, or in the event of their absence from Sri Lanka, or of their not being known, by affixing the same for the space of one month on some conspicuous place in every kachcheri and court-house within the district in which such land shall be situated, and upon the land itself, to cause one-half of such boundary to be made or renewed as shall require to be made or renewed, except where the liability of making or renewing such boundary or any part thereof shall by any law, custom, or agreement be otherwise determined; and if the making or renewal of such boundary shall not be commenced within thirty days after the service of such notice, and be diligently proceeded with, such first-mentioned possessor shall be entitled to cause such half of such boundary to be made or renewed, and to recover twice the amount of the costs necessarily incurred therein from the party failing to make or renew his share of such boundary:",
+   "text": "It shall be lawful for any person possessed of land in manner provided by section 3 of this Ordinance, the boundaries of which shall not be clearly defined as aforesaid, or any agent on his behalf, to call upon the proprietor or occupant of any land adjoining thereunto, not being the State, or upon his agent, by notice in writing under the hand of such possessor, to be served personally on such last-mentioned proprietor, occupant, or agent, or in the event of their absence from Sri Lanka, or of their not being known, by affixing the same for the space of one month on some conspicuous place in every kachcheri and court-house within the district in which such land shall be situated, and upon the land itself, to cause one-half of such boundary to be made or renewed as shall require to be made or renewed, except where the liability of making or renewing such boundary or any part thereof shall by any law, custom, or agreement be otherwise determined; and if the making or renewal of such boundary shall not be commenced within thirty days after the service of such notice, and be diligently proceeded with, such first-mentioned possessor shall be entitled to cause such half of such boundary to be made or renewed, and to recover twice the amount of the costs necessarily incurred therein from the party failing to make or renew his share of such boundary:",
+   "amendment_events": [],
+   "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Definition of Boundaries Ordinance",
+     "target_section": "3",
+     "verbatim": "section 3"
+    }
+   ],
+   "children": [
+    {
+     "type": "proviso",
+     "number": "",
+     "raw_text": "Provided always that where the land of any person shall adjoin land belonging to the State, it shall be competent for the Government Agent or any Assistant Government Agent of the administrative district in which such lands so adjoin, to call upon such subject, by notice to be served in manner provided in respect of the notice hereinbefore mentioned, to make or renew the whole of such boundary, or such part thereof as shall require to be made or renewed; and if the making or renewal of such boundary shall not be commenced within thirty days after the service of such notice, and diligently proceeded with, the said Government Agent or Assistant Government Agent shall be entitled to cause such boundary to be made or renewed, and to recover from such subject twice the amount of the costs necessarily incurred therein.",
+     "text": "Provided always that where the land of any person shall adjoin land belonging to the State, it shall be competent for the Government Agent or any Assistant Government Agent of the administrative district in which such lands so adjoin, to call upon such subject, by notice to be served in manner provided in respect of the notice hereinbefore mentioned, to make or renew the whole of such boundary, or such part thereof as shall require to be made or renewed; and if the making or renewal of such boundary shall not be commenced within thirty days after the service of such notice, and diligently proceeded with, the said Government Agent or Assistant Government Agent shall be entitled to cause such boundary to be made or renewed, and to recover from such subject twice the amount of the costs necessarily incurred therein.",
+     "amendment_events": [],
+     "cross_references": []
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "9",
+   "heading": "Procedure when Government Agent or Assistant Government Agent finds boundary of private land adjoining State land should be made or. renewed.",
+   "raw_text": "9. Where it appears to a Government Agent or Assistant Government Agent that the boundary of land belonging to any person which adjoins land belonging to the State should be made or renewed in whole or in part, such Government Agent or Assistant Government Agent may, in lieu of taking action under section 8, adopt the following procedure:- When owner of such land cannot get its boundary satisfactorily surveyed, Government Agent or Assistant Government Agent may get Surveyor-General to make survey.",
+   "text": "Where it appears to a Government Agent or Assistant Government Agent that the boundary of land belonging to any person which adjoins land belonging to the State should be made or renewed in whole or in part, such Government Agent or Assistant Government Agent may, in lieu of taking action under section 8, adopt the following procedure:-",
+   "amendment_events": [],
+   "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Definition of Boundaries Ordinance",
+     "target_section": "8",
+     "verbatim": "section 8"
+    }
+   ],
+   "children": [
+    {
+     "type": "paragraph",
+     "number": "a",
+     "raw_text": "(a) the Government Agent or Assistant Government Agent, if he is of opinion, after consultation with the Surveyor-General, that the work of making or renewing a boundary cannot be satisfactorily carried out by such person or any surveyor employed by him, may call upon the Surveyor-General to make or renew such boundary in whole or in part and thereupon such Surveyor-General shall make or renew such boundary, as the case may be;",
+     "text": "the Government Agent or Assistant Government Agent, if he is of opinion, after consultation with the Surveyor-General, that the work of making or renewing a boundary cannot be satisfactorily carried out by such person or any surveyor employed by him, may call upon the Surveyor-General to make or renew such boundary in whole or in part and thereupon such Surveyor-General shall make or renew such boundary, as the case may be;",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "paragraph",
+     "number": "b",
+     "raw_text": "(b) the Surveyor-General shall certify the amount of the cost of the survey to such Government Agent or Assistant Government Agent, and such certificate shall be final and conclusive;",
+     "text": "the Surveyor-General shall certify the amount of the cost of the survey to such Government Agent or Assistant Government Agent, and such certificate shall be final and conclusive;",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "paragraph",
+     "number": "c",
+     "raw_text": "(c) such person as aforesaid shall pay the amount so certified to such Government Agent or Assistant Government Agent, and in the event of such person refusing or neglecting to pay such amount, a summons shall be served upon him requiring him to show cause before a Magistrate why the said amount should not be paid by him, and if he fails to show cause, or if he fails to appear, the Magistrate, on proof of service of the summons and on reading the Surveyor-General's certificate as aforesaid, may make an order for payment of the amount;",
+     "text": "such person as aforesaid shall pay the amount so certified to such Government Agent or Assistant Government Agent, and in the event of such person refusing or neglecting to pay such amount, a summons shall be served upon him requiring him to show cause before a Magistrate why the said amount should not be paid by him, and if he fails to show cause, or if he fails to appear, the Magistrate, on proof of service of the summons and on reading the Surveyor-General's certificate as aforesaid, may make an order for payment of the amount;",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "paragraph",
+     "number": "d",
+     "raw_text": "(d) the amount ordered to be paid under be recovered. the last preceding paragraph may be recovered in the manner provided by law for the recovery of fines by Magistrates, although exceeding the amount that is within their ordinary jurisdiction, and when so recovered shall be paid to such Government Agent or Assistant Government Agent as aforesaid.",
+     "text": "the amount ordered to be paid under the last preceding paragraph may be recovered in the manner provided by law for the recovery of fines by Magistrates, although exceeding the amount that is within their ordinary jurisdiction, and when so recovered shall be paid to such Government Agent or Assistant Government Agent as aforesaid.",
+     "amendment_events": [],
+     "cross_references": [],
+     "text_corrections": [
+      {
+       "find": "the amount ordered to be paid under be recovered. the last preceding paragraph may be recovered",
+       "replace": "the amount ordered to be paid under the last preceding paragraph may be recovered",
+       "reason": "The marginal-note caption for paragraph (d), 'How such cost of survey may be recovered.', bled into the middle of the body sentence at the two-column boundary, producing a corrupted duplicate of 'recovered'. Verified against the PDF's body column, which reads continuously 'the amount ordered to be paid under the last preceding paragraph may be recovered in the manner provided by law...'."
+      }
+     ]
+    }
+   ],
+   "text_corrections": [
+    {
+     "find": "adopt the following procedure:- When owner of such land cannot get its boundary satisfactorily surveyed, Government Agent or Assistant Government Agent may get Surveyor-General to make survey.",
+     "replace": "adopt the following procedure:-",
+     "reason": "The two-column PDF's marginal-note caption for paragraph (a) ('When owner of such land cannot get its boundary satisfactorily surveyed, ...') sits beside the chapeau in the source layout and was swept into the chapeau's own text instead of being dropped as a caption. Verified against data/legal-sources/library/statutes/1-1844-definition-of-boundaries-ordinance.pdf: the body column ends at 'adopt the following procedure:--'; the quoted sentence is the margin heading for paragraph (a), not part of section 9's chapeau."
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "10",
+   "heading": "Where boundaries have been made and adjoining lands subsequently purchased.",
+   "raw_text": "10. If any person possessed of land in manner provided by section 3 shall, after the passing of this Ordinance, clearly define the boundaries of his land as aforesaid before the lands immediately adjoining thereunto shall have been duly granted by the State, or otherwise held as private property, the owner of the land the boundaries of which shall have been so made shall be authorized to claim and recover from the person or persons who shall afterwards become the proprietor or proprietors of such adjoining lands, one-half of the actual value of the boundaries there existing between the said adjoining lands, and such value shall be determined, if necessary, by arbitration in manner hereinafter provided as soon as is practicable after such adjoining land shall have been granted by the State, or otherwise held as private property as aforesaid.",
+   "text": "If any person possessed of land in manner provided by section 3 shall, after the passing of this Ordinance, clearly define the boundaries of his land as aforesaid before the lands immediately adjoining thereunto shall have been duly granted by the State, or otherwise held as private property, the owner of the land the boundaries of which shall have been so made shall be authorized to claim and recover from the person or persons who shall afterwards become the proprietor or proprietors of such adjoining lands, one-half of the actual value of the boundaries there existing between the said adjoining lands, and such value shall be determined, if necessary, by arbitration in manner hereinafter provided as soon as is practicable after such adjoining land shall have been granted by the State, or otherwise held as private property as aforesaid.",
+   "amendment_events": [],
+   "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Definition of Boundaries Ordinance",
+     "target_section": "3",
+     "verbatim": "section 3"
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "11",
+   "heading": "Disputes to be referred to arbitration.",
+   "raw_text": "11. Wherever any question shall be left under the provisions of this Ordinance to be determined by arbitration, such arbitration shall be referred to two persons, one of whom shall be nominated by each of the parties, and the amount which shall be awarded under such arbitration shall, upon due proof and verification of such award before any competent court, be recovered in the same manner that such amount would have been recoverable if it had been decreed to be due by the judgment of such court:",
+   "text": "Wherever any question shall be left under the provisions of this Ordinance to be determined by arbitration, such arbitration shall be referred to two persons, one of whom shall be nominated by each of the parties, and the amount which shall be awarded under such arbitration shall, upon due proof and verification of such award before any competent court, be recovered in the same manner that such amount would have been recoverable if it had been decreed to be due by the judgment of such court:",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
+    {
+     "type": "proviso",
+     "number": "",
+     "raw_text": "Provided always that in case such two persons so nominated as aforesaid shall not agree in the amount of the sum to be paid within the space of one calendar month next after such reference shall be made to them, then and in such case the same shall be referred to the determination of such indifferent person as the said arbitrators by any writing under their hands shall nominate and appoint as umpire in the case, and the decision of such umpire shall be conclusive and the amount awarded by him shall be recoverable in like manner as is hereinbefore provided in respect to the amount awarded by the original referees;",
+     "text": "Provided always that in case such two persons so nominated as aforesaid shall not agree in the amount of the sum to be paid within the space of one calendar month next after such reference shall be made to them, then and in such case the same shall be referred to the determination of such indifferent person as the said arbitrators by any writing under their hands shall nominate and appoint as umpire in the case, and the decision of such umpire shall be conclusive and the amount awarded by him shall be recoverable in like manner as is hereinbefore provided in respect to the amount awarded by the original referees;",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "closing_text",
+     "number": "",
+     "raw_text": "Provided also, that in case either of the parties in difference shall neglect or refuse, for the space of one calendar month after notice in writing given by the other party for that purpose, to join in the appointment of such arbitrators as aforesaid, it shall and may be lawful for the arbitrator to be chosen by the party giving such notice to nominate another arbitrator to act with him, and the award of such arbitrators, or if they shall not agree in an award, then the award of the umpire, whom they are hereby required to nominate in like manner as hereinbefore provided in respect of the umpire to be nominated by the original referees, shall be binding and conclusive, and the amount awarded under it be recoverable in like manner as if the party so neglecting or refusing had chosen an arbitrator who had actually joined and made an award therein.",
+     "text": "Provided also, that in case either of the parties in difference shall neglect or refuse, for the space of one calendar month after notice in writing given by the other party for that purpose, to join in the appointment of such arbitrators as aforesaid, it shall and may be lawful for the arbitrator to be chosen by the party giving such notice to nominate another arbitrator to act with him, and the award of such arbitrators, or if they shall not agree in an award, then the award of the umpire, whom they are hereby required to nominate in like manner as hereinbefore provided in respect of the umpire to be nominated by the original referees, shall be binding and conclusive, and the amount awarded under it be recoverable in like manner as if the party so neglecting or refusing had chosen an arbitrator who had actually joined and made an award therein.",
+     "amendment_events": [],
+     "cross_references": []
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "12",
+   "heading": "Disputes between respective owners as to necessity or sufficiency of boundary to be referred to arbitration.",
+   "raw_text": "12. In all cases where any dispute or difference shall arise between the respective owners, or persons legally possessed of such adjoining lands, as to the necessity or sufficiency of any boundary as aforesaid, then and in every such case the same shall be referred to arbitration in like manner, and shall be subject to the like award in manner hereinbefore provided, which award shall in like manner be binding and conclusive.",
+   "text": "In all cases where any dispute or difference shall arise between the respective owners, or persons legally possessed of such adjoining lands, as to the necessity or sufficiency of any boundary as aforesaid, then and in every such case the same shall be referred to arbitration in like manner, and shall be subject to the like award in manner hereinbefore provided, which award shall in like manner be binding and conclusive.",
+   "amendment_events": [],
+   "cross_references": []
+  },
+  {
+   "type": "section",
+   "number": "13",
+   "heading": "Ordinance not to affect property of minors or insane persons, & c.",
+   "raw_text": "13. No person shall acquire any right under the provisions of this Ordinance in respect of the entry upon and cultivation of land which shall be the property, sole or joint, of any person under twenty-one years of age, or of any insane person: and",
+   "text": "No person shall acquire any right under the provisions of this Ordinance in respect of the entry upon and cultivation of land which shall be the property, sole or joint, of any person under twenty-one years of age, or of any insane person: and",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
+    {
+     "type": "proviso",
+     "number": "",
+     "raw_text": "Provided further, that no person shall be subject to the liabilities hereinbefore declared for the not making of a proper boundary to the land possessed by him, if the making thereof shall have been stayed by any order or judgment of any competent court of law.",
+     "text": "Provided further, that no person shall be subject to the liabilities hereinbefore declared for the not making of a proper boundary to the land possessed by him, if the making thereof shall have been stayed by any order or judgment of any competent court of law.",
+     "amendment_events": [],
+     "cross_references": []
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "14",
+   "heading": "Penalty on removing landmarks.",
+   "raw_text": "14. Every person who shall willfully and knowingly remove, destroy, or efface, or attempt to remove, destroy, or efface, any landmark or boundary which shall serve to mark the limits of any land, except for the purpose of repairing the same, shall be guilty of an offence, and be liable, on conviction thereof, to payment of any fine not exceeding five hundred rupees, or to imprisonment, with or without hard labour, for any period not exceeding one year.",
+   "text": "Every person who shall wilfully and knowingly remove, destroy, or efface, or attempt to remove, destroy, or efface, any landmark or boundary which shall serve to mark the limits of any land, except for the purpose of repairing the same, shall be guilty of an offence, and be liable, on conviction thereof, to payment of any fine not exceeding five hundred rupees, or to imprisonment, with or without hard labour, for any period not exceeding one year.",
+   "amendment_events": [],
+   "cross_references": [],
+   "text_corrections": [
+    {
+     "find": "Every person who shall willfully and knowingly remove",
+     "replace": "Every person who shall wilfully and knowingly remove",
+     "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+    }
+   ]
+  }
+ ]
+}
