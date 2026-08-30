@@ -34,7 +34,7 @@ same as unchanged. Every row is `status=unverified`.
 | 016 | Muslim Intestate Succession Ordinance | No. 10 of 1931 | 4 | 0 | none recorded |
 | 017 | Powers of Attorney Ordinance | No. 4 of 1902 | 9 | 0 | none recorded |
 | 018 | Wills Ordinance | No. 21 of 1844 | 9 | 0 | none recorded |
-| 020 | Civil Procedure Code | No. 2 of 1889 | 801 | 226 | 1960-2024 |
+| 020 | Civil Procedure Code | No. 2 of 1889 | 853 | 228 | 1960-2024 |
 | 021 | Companies Act | No. 7 of 2007 | 534 | 0 | none recorded |
 | 022 | Execution of Deeds Ordinance | No. 17 of 1852 | 7 | 0 | none recorded |
 | 023 | Prescription Ordinance | No. 22 of 1871 | 15 | 1 | 2014 |

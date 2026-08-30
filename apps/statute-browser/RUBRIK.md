@@ -52,7 +52,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | Cat | Statute | Citation | Sections | Amendments known | Held | Final |
 | --- | --- | --- | ---: | ---: | ---: | --- |
 | 1 | Apartment Ownership Law | No. 11 of 1973 | 26 | 4 | 4 | yes |
-| 1 | Civil Procedure Code | No. 2 of 1889 | 801 | 59 | 38 | - |
+| 1 | Civil Procedure Code | No. 2 of 1889 | 853 | 59 | 38 | yes |
 | 1 | Companies Act | No. 7 of 2007 | 534 | 0 | 0 | yes |
 | 1 | Execution of Deeds Ordinance | No. 17 of 1852 | 7 | 1 | 0 | yes |
 | 1 | Kandyan Succession Ordinance | No. 23 of 1917 | 4 | 0 | 0 | yes |
@@ -143,17 +143,22 @@ Amendments (4 known, 4 held):
 
 ### Civil Procedure Code
 
-**No. 2 of 1889** · commenced 1890-08-01 · curriculum category 1 · SRC030
+**No. 2 of 1889** · commenced 1890-08-01 · curriculum category 1 · SRC030 · **finalized**
 
 Topics: Formation of Deeds, Examination of Title, Drafting of Deeds
 
-Sections: 801 in the index (headings from lawlanka 800, none 1)
+Sections: 853 in the index (headings from finalized 830, lawlanka 23)
 
 Parsed from the HTML edition: 830 sections, 195 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 9 parts, 62 crossheadings, 96 subheadings, 831 sections, 525 subsections, 6 definitions, 346 paragraphs, 24 subparagraphs.
 296 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC030-2-1889.json`
+
+Finalized: `data/legal-sources/library/finalized/2-1889-civil-procedure-code/2-1889-civil-procedure-code-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 

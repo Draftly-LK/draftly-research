@@ -4,31 +4,32 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ## Counts
 
-- Source files inspected: 62
-- Statutes indexed: 38
-- Records: 11608
-- Distinct sections referenced: 2769
+- Source files inspected: 63
+- Statutes indexed: 39
+- Records: 13381
+- Distinct sections referenced: 3600
 - Records without a heading: 135
 - `section_id` is a rollup key, not a foreign key: it names the section a record belongs to even where that section has no record of its own (a section whose text lives entirely in its children emits nothing). Group by it to score at section level.
 - Temporal metadata: none. `effective_from` / `effective_to` are null on every record; act-level `commencement` is deliberately not propagated to provisions.
 
 ### By node type
 
-- `subsection`: 4544
-- `paragraph`: 3905
-- `section`: 1482
-- `subparagraph`: 617
-- `definition`: 396
-- `proviso`: 373
-- `closing_text`: 207
-- `text`: 54
-- `item`: 25
+- `subsection`: 5069
+- `paragraph`: 4251
+- `section`: 2118
+- `subparagraph`: 641
+- `proviso`: 498
+- `definition`: 402
+- `closing_text`: 298
+- `text`: 69
+- `item`: 30
 - `schedule`: 3
 - `schedule_item`: 2
 
 ### By Act
 
 - Companies Act: 3557
+- Civil Procedure Code: 1773
 - Municipal Councils Ordinance: 1321
 - Urban Councils Ordinance: 883
 - Apartment Ownership Law: 557
@@ -98,7 +99,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ### Nodes
 
-- Empty own-text (content lives in children): 1310 (definition 1, paragraph 4, schedule 1, section 1290, subsection 14)
+- Empty own-text (content lives in children): 1505 (definition 1, paragraph 4, schedule 1, section 1485, subsection 14)
 - Repealed stubs excluded: 5
   - `11-1973/section-26/closing_text-1` -- '(*Repealed and replaced by the Companies Act, No. 17 of 1982.)'
   - `17-1979/section-10` -- 'Repealed.'
@@ -118,6 +119,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
 - **Survey Act** -- edition kind is 'original_or_unconfirmed_consolidation', not a confirmed consolidation
 - **Buddhist Temporalities Ordinance** -- verification_status is 'unverified'
 - **Land Development Ordinance** -- verification_status is 'unverified'
+- **Civil Procedure Code** -- verification_status is 'unverified'
 - **Tea and Rubber Estates (Control of Fragmentation) Act** -- edition kind is 'as enacted (Numbered Acts database)', not a confirmed consolidation; 1 amending Act(s) present (20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.json) so their changes may be absent
 - **Wills Ordinance** -- verification_status is 'unverified'
 - **Registration of Title Act** -- edition kind is 'original_or_unconfirmed_consolidation', not a confirmed consolidation
@@ -142,9 +144,10 @@ Reported, not resolved -- this build does no historical version reconstruction.
 ## Problems
 
 - No parsing failures.
-- Duplicate node paths disambiguated: 59. These are source-side labelling defects, not build artefacts -- sibling provisions carrying the same label. Both records are kept, the later one suffixed `-2`, so no provision is silently dropped. Spot-checked examples: Apartment Ownership s.20C(2) genuinely has two `paragraph (bb)` siblings with different text; Companies Act s.529(1) has several definitions collapsed under one `definition:distribution` node, so its `(a)`/`(b)` paragraphs repeat. Affected paths:
+- Duplicate node paths disambiguated: 60. These are source-side labelling defects, not build artefacts -- sibling provisions carrying the same label. Both records are kept, the later one suffixed `-2`, so no provision is silently dropped. Spot-checked examples: Apartment Ownership s.20C(2) genuinely has two `paragraph (bb)` siblings with different text; Companies Act s.529(1) has several definitions collapsed under one `definition:distribution` node, so its `(a)`/`(b)` paragraphs repeat. Affected paths:
   - `11-1973/section-20c/subsection-2/paragraph-bb`
   - `17-2002/section-45/subsection-1/paragraph-c`
+  - `2-1889/section-808`
   - `29-1947/section-136b/subsection-1`
   - `29-1947/section-136b/subsection-2`
   - `29-1947/section-207/subsection-1/paragraph-a`
@@ -196,7 +199,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
   - `7-2007/section-529/subsection-1/definition-group-financial-statements/paragraph-b`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-a`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-b`
-- Duplicate evidence texts: 225 distinct strings appear more than once (582 records)
+- Duplicate evidence texts: 236 distinct strings appear more than once (609 records)
 - Schedule items carrying `rates` tables: 2. The band/rupees/cents tables are structured numeric data and are not flattened into `text`, so rate lookups will not retrieve them.
 
 ## Regeneration

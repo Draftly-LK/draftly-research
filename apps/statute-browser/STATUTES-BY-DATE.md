@@ -27,7 +27,7 @@ Passed by the colonial legislature, so almost all are Ordinances.
 | 1871 | Prescription Ordinance | No. 22 of 1871 | 15 | 1 | 2014 |
 | 1876 | Matrimonial Rights and Inheritance Ordinance | No. 15 of 1876 | 36 | 0 | none recorded |
 | 1887 | Lands Resumption Ordinance | No. 4 of 1887 | 17 | 0 | none recorded |
-| 1889 | Civil Procedure Code | No. 2 of 1889 | 801 | 226 | 1960-2024 |
+| 1889 | Civil Procedure Code | No. 2 of 1889 | 853 | 228 | 1960-2024 |
 | 1889 | Surveyors Ordinance | No. 15 of 1889 | 17 | 0 | none recorded |
 | 1896* | Evidence Ordinance | not recorded | 179 | 34 | 1946-2021 |
 | 1901* | Interpretation Ordinance | index-only | 24 | 3 | 1972-1974 |
