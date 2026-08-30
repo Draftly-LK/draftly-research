@@ -59,7 +59,7 @@
  "quality_flags": [
   {
    "code": "benign_coverage_gap",
-   "issue": "check_parse_coverage.py reports ~3% unmatched against the PDF: cover-page/running-header text ('AN ORDINANCE TO MAKE PROVISION...', 'Cap. 292', volume/page markers) that never enters the section tree, plus a handful of 'survey'/'cost' tokens in sections 8-9 that the two-column PDF's marginal notes place out of body-text order (same words are present in the tree, just not adjacent to their pdftotext position).",
+   "issue": "check_parse_coverage.py reports unmatched words against the PDF beyond the fixes above: cover-page/running-header text ('AN ORDINANCE TO MAKE PROVISION...', 'Cap. 292', volume/page markers) that never enters the section tree, plus stray 'survey'/'cost' tokens from two-column marginal-note reordering elsewhere in sections 8-9 that don't form a readable corrupted clause (unlike the two instances in section 9 fixed above).",
    "status": "acceptable",
    "recommendation": "Coverage percentage will not reach ~0% for this source; verify by reading the missing-word list, not the percentage alone."
   },
@@ -96,11 +96,14 @@
   {
    "type": "section",
    "number": "3",
-   "heading": "Trespassers, unless willful, not liable.",
+   "heading": "Trespassers, unless wilful, not liable.",
    "raw_text": "3. From and after the passing of this Ordinance, no person shall be liable to any action for trespass for any entry upon any land within Sri Lanka, or to any action for damages in respect of any injury done to the same, if the title to such land shall be founded on any grant from the State, or if the person claiming to be the owner thereof shall have attached or belonging to the deed, document, or instrument by virtue of which he claims such land, a correct and authenticated survey thereof, or shall at any time have received a certificate that the State has no claim upon such land, unless the boundaries of such land shall be clearly defined along their whole line, or at such intervals as shall accurately show their whole line, by some wall, bank, ditch, fence, posts, stones or other sufficient landmarks or boundary, unless such trespass or injury shall have been willfully committed.",
    "text": "From and after the passing of this Ordinance, no person shall be liable to any action for trespass for any entry upon any land within Sri Lanka, or to any action for damages in respect of any injury done to the same, if the title to such land shall be founded on any grant from the State, or if the person claiming to be the owner thereof shall have attached or belonging to the deed, document, or instrument by virtue of which he claims such land, a correct and authenticated survey thereof, or shall at any time have received a certificate that the State has no claim upon such land, unless the boundaries of such land shall be clearly defined along their whole line, or at such intervals as shall accurately show their whole line, by some wall, bank, ditch, fence, posts, stones or other sufficient landmarks or boundary, unless such trespass or injury shall have been wilfully committed.",
    "amendment_events": [],
    "cross_references": [],
+   "heading_raw": "Trespassers, unless willful, not liable.",
+   "heading_correction_status": "verified_against_alternate_edition",
+   "heading_correction_reason": "HTML heading reads 'willful' (double l); the PDF's own margin caption for this section reads 'wilful' (single l), matching the spelling corrected in the body text of sections 3, 5, 6, 7, and 14 above.",
    "text_corrections": [
     {
      "find": "such trespass or injury shall have been willfully committed",
@@ -272,7 +275,7 @@
    "number": "9",
    "heading": "Procedure when Government Agent or Assistant Government Agent finds boundary of private land adjoining State land should be made or. renewed.",
    "raw_text": "9. Where it appears to a Government Agent or Assistant Government Agent that the boundary of land belonging to any person which adjoins land belonging to the State should be made or renewed in whole or in part, such Government Agent or Assistant Government Agent may, in lieu of taking action under section 8, adopt the following procedure:- When owner of such land cannot get its boundary satisfactorily surveyed, Government Agent or Assistant Government Agent may get Surveyor-General to make survey.",
-   "text": "Where it appears to a Government Agent or Assistant Government Agent that the boundary of land belonging to any person which adjoins land belonging to the State should be made or renewed in whole or in part, such Government Agent or Assistant Government Agent may, in lieu of taking action under section 8, adopt the following procedure:- When owner of such land cannot get its boundary satisfactorily surveyed, Government Agent or Assistant Government Agent may get Surveyor-General to make survey.",
+   "text": "Where it appears to a Government Agent or Assistant Government Agent that the boundary of land belonging to any person which adjoins land belonging to the State should be made or renewed in whole or in part, such Government Agent or Assistant Government Agent may, in lieu of taking action under section 8, adopt the following procedure:-",
    "amendment_events": [],
    "cross_references": [
     {
@@ -311,9 +314,23 @@
      "type": "paragraph",
      "number": "d",
      "raw_text": "(d) the amount ordered to be paid under be recovered. the last preceding paragraph may be recovered in the manner provided by law for the recovery of fines by Magistrates, although exceeding the amount that is within their ordinary jurisdiction, and when so recovered shall be paid to such Government Agent or Assistant Government Agent as aforesaid.",
-     "text": "the amount ordered to be paid under be recovered. the last preceding paragraph may be recovered in the manner provided by law for the recovery of fines by Magistrates, although exceeding the amount that is within their ordinary jurisdiction, and when so recovered shall be paid to such Government Agent or Assistant Government Agent as aforesaid.",
+     "text": "the amount ordered to be paid under the last preceding paragraph may be recovered in the manner provided by law for the recovery of fines by Magistrates, although exceeding the amount that is within their ordinary jurisdiction, and when so recovered shall be paid to such Government Agent or Assistant Government Agent as aforesaid.",
      "amendment_events": [],
-     "cross_references": []
+     "cross_references": [],
+     "text_corrections": [
+      {
+       "find": "the amount ordered to be paid under be recovered. the last preceding paragraph may be recovered",
+       "replace": "the amount ordered to be paid under the last preceding paragraph may be recovered",
+       "reason": "The marginal-note caption for paragraph (d), 'How such cost of survey may be recovered.', bled into the middle of the body sentence at the two-column boundary, producing a corrupted duplicate of 'recovered'. Verified against the PDF's body column, which reads continuously 'the amount ordered to be paid under the last preceding paragraph may be recovered in the manner provided by law...'."
+      }
+     ]
+    }
+   ],
+   "text_corrections": [
+    {
+     "find": "adopt the following procedure:- When owner of such land cannot get its boundary satisfactorily surveyed, Government Agent or Assistant Government Agent may get Surveyor-General to make survey.",
+     "replace": "adopt the following procedure:-",
+     "reason": "The two-column PDF's marginal-note caption for paragraph (a) ('When owner of such land cannot get its boundary satisfactorily surveyed, ...') sits beside the chapeau in the source layout and was swept into the chapeau's own text instead of being dropped as a caption. Verified against data/legal-sources/library/statutes/1-1844-definition-of-boundaries-ordinance.pdf: the body column ends at 'adopt the following procedure:--'; the quoted sentence is the margin heading for paragraph (a), not part of section 9's chapeau."
     }
    ]
   },
