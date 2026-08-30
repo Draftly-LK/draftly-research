@@ -101,7 +101,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Survey Act | No. 17 of 2002 | 5 | 0 | 0 | yes |
 | 3 | Surveyors Ordinance | No. 15 of 1889 | 17 | 6 | 1 | - |
 | 3 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 5 | 3 | - |
-| 3 | Trusts Ordinance | No. 9 of 1917 | 123 | 6 | 4 | - |
+| 3 | Trusts Ordinance | No. 9 of 1917 | 123 | 6 | 4 | yes |
 | 3 | Urban Councils Ordinance | No. 61 of 1939 | 267 | 49 | 25 | yes |
 
 ## Category 1 (Most Important) (22)
@@ -1755,17 +1755,22 @@ Amendments (5 known, 3 held):
 
 ### Trusts Ordinance
 
-**No. 9 of 1917** · commenced 1918-04-16 · curriculum category 3 · SRC059
+**No. 9 of 1917** · commenced 1918-04-16 · curriculum category 3 · SRC059 · **finalized**
 
 Topics: Trust Deeds
 
-Sections: 123 in the index (headings from srilankalaw 123)
+Sections: 123 in the index (headings from finalized 117, srilankalaw 6)
 
 Parsed from the HTML edition: 117 sections, 1 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 10 crossheadings, 11 subheadings, 117 sections, 113 subsections, 136 paragraphs, 8 subparagraphs.
 55 cross-references.
 Tree: `data/processed/canonical-statutes/SRC059-9-1917.json`
+
+Finalized: `data/legal-sources/library/finalized/9-1917-trusts-ordinance/9-1917-trusts-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 

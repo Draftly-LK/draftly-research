@@ -4,25 +4,25 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ## Counts
 
-- Source files inspected: 59
-- Statutes indexed: 35
-- Records: 11157
-- Distinct sections referenced: 2621
+- Source files inspected: 60
+- Statutes indexed: 36
+- Records: 11520
+- Distinct sections referenced: 2738
 - Records without a heading: 135
 - `section_id` is a rollup key, not a foreign key: it names the section a record belongs to even where that section has no record of its own (a section whose text lives entirely in its children emits nothing). Group by it to score at section level.
 - Temporal metadata: none. `effective_from` / `effective_to` are null on every record; act-level `commencement` is deliberately not propagated to provisions.
 
 ### By node type
 
-- `subsection`: 4405
-- `paragraph`: 3739
-- `section`: 1376
-- `subparagraph`: 606
+- `subsection`: 4518
+- `paragraph`: 3875
+- `section`: 1460
+- `subparagraph`: 614
 - `definition`: 391
-- `proviso`: 358
-- `closing_text`: 200
-- `text`: 53
-- `item`: 24
+- `proviso`: 372
+- `closing_text`: 206
+- `text`: 54
+- `item`: 25
 - `schedule`: 3
 - `schedule_item`: 2
 
@@ -36,6 +36,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 - Western Province Financial Statute: 465
 - National Housing Act: 447
 - Stamp Duty Act: 381
+- Trusts Ordinance: 363
 - Land Development Ordinance: 348
 - State Lands Ordinance: 337
 - Survey Act: 310
@@ -95,7 +96,7 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ### Nodes
 
-- Empty own-text (content lives in children): 1268 (definition 1, paragraph 4, schedule 1, section 1248, subsection 14)
+- Empty own-text (content lives in children): 1301 (definition 1, paragraph 4, schedule 1, section 1281, subsection 14)
 - Repealed stubs excluded: 5
   - `11-1973/section-26/closing_text-1` -- '(*Repealed and replaced by the Companies Act, No. 17 of 1982.)'
   - `17-1979/section-10` -- 'Repealed.'
@@ -132,6 +133,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
 - **Urban Councils Ordinance** -- verification_status is 'unverified'
 - **Prevention of Frauds Ordinance** -- verification_status is 'unverified'
 - **State Lands Ordinance** -- verification_status is 'unverified'
+- **Trusts Ordinance** -- verification_status is 'unverified'
 
 ## Problems
 
@@ -190,7 +192,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
   - `7-2007/section-529/subsection-1/definition-group-financial-statements/paragraph-b`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-a`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-b`
-- Duplicate evidence texts: 220 distinct strings appear more than once (569 records)
+- Duplicate evidence texts: 223 distinct strings appear more than once (576 records)
 - Schedule items carrying `rates` tables: 2. The band/rupees/cents tables are structured numeric data and are not flattened into `text`, so rate lookups will not retrieve them.
 
 ## Regeneration
