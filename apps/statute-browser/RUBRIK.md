@@ -74,7 +74,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Western Province Financial Statute | No. 6 of 1990 | 124 | 0 | 0 | yes |
 | 1 | Wills Ordinance | No. 21 of 1844 | 9 | 5 | 2 | yes |
 | 2 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 44 | 11 | 8 | yes |
-| 2 | Definition of Boundaries Ordinance | No. 1 of 1844 | 13 | 5 | 1 | - |
+| 2 | Definition of Boundaries Ordinance | No. 1 of 1844 | 14 | 5 | 1 | yes |
 | 2 | Land Acquisition Act | No. 9 of 1950 | 68 | 8 | 7 | - |
 | 2 | Land Development Ordinance | No. 19 of 1935 | 145 | 13 | 12 | - |
 | 2 | Land Grants (Special Provisions) Act | No. 43 of 1979 | 20 | 0 | 0 | yes |
@@ -151,7 +151,7 @@ Sections: 801 in the index (headings from lawlanka 800, none 1)
 
 Parsed from the HTML edition: 830 sections, 195 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 9 parts, 62 crossheadings, 96 subheadings, 830 sections, 525 subsections, 6 definitions, 346 paragraphs, 24 subparagraphs.
+Canonical structure: 9 parts, 62 crossheadings, 96 subheadings, 831 sections, 525 subsections, 6 definitions, 346 paragraphs, 24 subparagraphs.
 296 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC030-2-1889.json`
 
@@ -436,7 +436,7 @@ Sections: 43 in the index (headings from legacy 40, none 3)
 
 Parsed from the HTML edition: 43 sections, 17 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 43 sections, 95 subsections, 49 paragraphs, 13 subparagraphs.
+Canonical structure: 43 sections, 95 subsections, 50 paragraphs, 13 subparagraphs.
 44 cross-references; 3 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC014-1-1907.json`
 
@@ -543,8 +543,8 @@ Sections: 19 in the index (headings from finalized 19)
 
 Parsed from the HTML edition: 19 sections, 1 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 19 sections, 6 subsections, 9 paragraphs.
-6 cross-references.
+Canonical structure: 19 sections, 2 subsections, 3 paragraphs.
+5 cross-references.
 Tree: `data/processed/canonical-statutes/SRC001-7-1840.json`
 
 Finalized: `data/legal-sources/library/finalized/7-1840-prevention-of-frauds-ordinance/7-1840-prevention-of-frauds-ordinance-consolidated.json`
@@ -581,7 +581,7 @@ Sections: 42 in the index (headings from lawlanka 41, legacy 1)
 Parsed from the HTML edition: 50 sections, 9 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 5 crossheadings, 7 subheadings, 50 sections, 96 subsections, 25 paragraphs, 13 subparagraphs.
-46 cross-references; 2 schedules referenced (bodies not published).
+47 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC005-23-1927.json`
 
 Finalized: `data/legal-sources/library/finalized/23-1927-registration-of-documents-ordinance/23-1927-registration-of-documents-ordinance-consolidated.json`
@@ -693,8 +693,8 @@ Sections: 75 in the index (headings from finalized 67, legacy 8)
 
 Parsed from the HTML edition: 75 sections, 22 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 75 sections, 155 subsections, 29 definitions, 105 paragraphs, 32 subparagraphs.
-130 cross-references.
+Canonical structure: 18 crossheadings, 20 subheadings, 75 sections, 162 subsections, 37 definitions, 98 paragraphs, 31 subparagraphs.
+119 cross-references.
 Tree: `data/processed/canonical-statutes/SRC034-43-1982.json`
 
 Finalized: `data/legal-sources/library/finalized/43-1982-stamp-duty-act/43-1982-stamp-duty-act-consolidated.json`
@@ -851,8 +851,8 @@ Sections: 44 in the index (headings from finalized 44)
 
 Parsed from the HTML edition: 44 sections, 6 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 44 sections, 72 subsections, 11 definitions, 60 paragraphs, 8 subparagraphs.
-28 cross-references; 1 schedules referenced (bodies not published).
+Canonical structure: 5 parts, 44 sections, 72 subsections, 11 definitions, 67 paragraphs, 13 subparagraphs.
+25 cross-references; 1 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC049-19-1931.json`
 
 Finalized: `data/legal-sources/library/finalized/19-1931-buddhist-temporalities-ordinance/19-1931-buddhist-temporalities-ordinance-consolidated.json`
@@ -885,17 +885,22 @@ Amendments (11 known, 8 held):
 
 ### Definition of Boundaries Ordinance
 
-**No. 1 of 1844** · Cap. 292 · commenced 1844-01-17 · curriculum category 2 · SRC053
+**No. 1 of 1844** · Cap. 292 · commenced 1844-01-17 · curriculum category 2 · SRC053 · **finalized**
 
 Topics: State Lands
 
-Sections: 13 in the index (headings from legacy 13)
+Sections: 14 in the index (headings from finalized 14)
 
 Parsed from the HTML edition: 14 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 14 sections, 4 paragraphs.
 6 cross-references.
 Tree: `data/processed/canonical-statutes/SRC053-1-1844.json`
+
+Finalized: `data/legal-sources/library/finalized/1-1844-definition-of-boundaries-ordinance/1-1844-definition-of-boundaries-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1305,8 +1310,8 @@ Sections: 341 in the index (headings from legacy 340, none 1)
 
 Parsed from the HTML edition: 348 sections, 118 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 16 parts, 32 crossheadings, 348 sections, 505 subsections, 29 definitions, 406 paragraphs, 62 subparagraphs.
-334 cross-references; 12 schedules referenced (bodies not published).
+Canonical structure: 16 parts, 32 crossheadings, 349 sections, 505 subsections, 29 definitions, 406 paragraphs, 62 subparagraphs.
+336 cross-references; 12 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC061-29-1947.json`
 
 Files:
@@ -1636,7 +1641,7 @@ Sections: 69 in the index (headings from legacy 69)
 Parsed from the HTML edition: 88 sections, 12 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 7 parts, 2 crossheadings, 88 sections, 99 subsections, 8 definitions, 99 paragraphs, 14 subparagraphs.
-86 cross-references.
+88 cross-references.
 Tree: `data/processed/canonical-statutes/SRC074-13-1975.json`
 
 Files:
@@ -1775,7 +1780,7 @@ Sections: 256 in the index (headings from legacy 256)
 Parsed from the HTML edition: 263 sections, 80 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 10 parts, 28 crossheadings, 263 sections, 347 subsections, 27 definitions, 302 paragraphs, 31 subparagraphs.
-263 cross-references; 6 schedules referenced (bodies not published).
+262 cross-references; 6 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC042-61-1939.json`
 
 Files:
