@@ -1,0 +1,27 @@
+{
+ "statute": "Civil Procedure Code",
+ "source_id": "SRC030",
+ "note": "Every source actually used to build the canonical trees in library/finalized/2-1889-civil-procedure-code. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "2-1889-civil-procedure-code-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 1621669,
+   "sha256": "b82aa7d3d84070893213d2d355949b3805052ecad0617f30bdfde9ca89f206d8",
+   "copied_from": "data/legal-sources/library/statutes/HTML/2-1889-civil-procedure-code.html",
+   "used_for": "parsed into 2-1889-civil-procedure-code-consolidated.json"
+  },
+  {
+   "file": "2-1889-civil-procedure-code.html",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 1621669,
+   "sha256": "b82aa7d3d84070893213d2d355949b3805052ecad0617f30bdfde9ca89f206d8",
+   "copied_from": "data/legal-sources/library/statutes/HTML/2-1889-civil-procedure-code.html",
+   "used_for": "5-lens sampled subagent review, 2 rounds, converged (statute size makes exhaustive review impractical)"
+  }
+ ],
+ "statute_note": "The largest and oldest statute in this batch: 831 leaf sections, 135 years of amendment history, 46-instrument chain. Parsed from LankaLaw's consolidated HTML (through Act No. 43 of 2024). Given the size, review was sampled rather than exhaustive across all five lenses; scope disclosed explicitly in canonical-overrides.json. Two residues: sections both numbered 808 in the source itself (806 missing, likely a 6/8 scan misread upstream of this corpus), and section 227 has duplicated intro text with its marginal note interleaved into the proviso, also confirmed as upstream source corruption. One genuine parser defect found and fixed during review ('Provided also that' provisos), which also corrected an already-finalized statute (Municipal Councils Ordinance)."
+}
