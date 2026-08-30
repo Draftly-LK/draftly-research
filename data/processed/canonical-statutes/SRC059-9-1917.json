@@ -47,8 +47,17 @@
  "amendment_history_status": "listed_in_source_header",
  "editorial_notes": [],
  "omitted_provisions": [],
- "overrides_applied": {},
- "quality_flags": [],
+ "overrides_applied": {
+  "checked_against": "data/legal-sources/library/statutes/HTML/9-1917-trusts-ordinance.html",
+  "note": "117 sections, coverage 2.78% unmatched, almost entirely from Illustrations blocks -- worked examples (\"(a) A bequeaths property to B in trust to...\") interspersed after many provisions, in the style of the Indian Trusts Act 1882 this Ordinance derives from. Deliberately excluded from the tree, the same treatment already given to Schedules elsewhere in this corpus: explanatory material, not enacted operative text. Confirmed the exclusion is clean -- no illustration content bled into or corrupted the surrounding sections."
+ },
+ "quality_flags": [
+  {
+   "code": "illustrations_not_extracted",
+   "detail": "Numbered/lettered Illustration examples following many sections are not captured anywhere in the tree. Legally non-binding explanatory material, consistent with how this corpus already treats Schedules; not attempted here given the added structural work (a third content type, distinct from both Schedule and body text) for material that carries no operative force.",
+   "status": "known_scope_limitation"
+  }
+ ],
  "source_location": {},
  "alternate_edition_variants": [],
  "schedules_referenced": [],
