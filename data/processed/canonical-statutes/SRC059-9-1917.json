@@ -56,6 +56,14 @@
    "code": "illustrations_not_extracted",
    "detail": "Numbered/lettered Illustration examples following many sections are not captured anywhere in the tree. Legally non-binding explanatory material, consistent with how this corpus already treats Schedules; not attempted here given the added structural work (a third content type, distinct from both Schedule and body text) for material that carries no operative force.",
    "status": "known_scope_limitation"
+  },
+  {
+   "code": "footnote_marker_cites_instrument_not_in_chain",
+   "sections_affected": [
+    "3"
+   ],
+   "issue": "Section 3(b) reads \"...a trust does not include a fideicommissum;(* Abolished by Act No. 20 of 1972.)\" -- a footnote-style citation, not the bracketed \"[N, Act of Year]\" inline marker format the parser recognises, and Act 20 of 1972 does not appear anywhere in the amendment chain header. Present verbatim in raw_text/text; not extracted into amendment_events.",
+   "status": "source_as_printed"
   }
  ],
  "source_location": {},
