@@ -54,9 +54,11 @@ Deterministic, no LLM calls, re-running produces byte-identical output
 Inputs:
 
 - `scripts/case-law-statute-linking/output/resolved_links.csv`,
-  `band == "verified"` rows only (450 of 764 rows; `review` and
-  `unresolved` bands are excluded because their citation wasn't cleanly
-  grounded).
+  `band == "verified"` rows only (486 of 765 rows as of the hardened
+  resolver in `scripts/case-law-statute-linking/README.md` — name-alias
+  normalization plus a second Act/Ordinance-No.-of-year resolver path;
+  `review` and `unresolved` bands are excluded because their citation
+  wasn't cleanly grounded).
 - `scripts/case-law-information-extraction/output/rules.csv`, joined by
   `rule_id`, for the verbatim `supporting_quote` and
   `statute_citation_verbatim`.
@@ -81,8 +83,8 @@ keep the surrounding sentence as the query):
    than dropping the row.
 
 Measured on the current corpus, the split across the three modes is
-**window-citation-masked: 41, window-quote-masked: 32,
-held-sentence-fallback: 377** — i.e. the exact-window construction only
+**window-citation-masked: 45, window-quote-masked: 34,
+held-sentence-fallback: 407** — i.e. the exact-window construction only
 succeeds for about 16% of verified links; the rest fall back to the bare
 holding sentence as the query. This is a real data-quality limit (the
 verbatim match that gated extraction was checked against a different text
@@ -127,14 +129,16 @@ the existing `statutes-bm25-v1` run.
 
 ## What the first real run showed
 
-On the 450-query gold set (BM25+dense+graph, no re-rank):
+On the 486-query gold set (BM25+dense+graph, no re-rank; regenerated after
+the resolver hardening in `scripts/case-law-statute-linking/README.md`
+added 36 net new verified links):
 
 | Bucket | Queries | recall@5 | recall@10 | MRR |
 | --- | ---: | ---: | ---: | ---: |
-| Overall | 450 | 0.198 | 0.231 | 0.142 |
-| `applicable` | 273 | 0.213 | 0.238 | 0.150 |
-| `superseded-since-judgment` | 147 | 0.136 | 0.170 | 0.101 |
-| `history-unknown` | 30 | 0.367 | 0.467 | 0.269 |
+| Overall | 486 | 0.200 | 0.231 | 0.142 |
+| `applicable` | 297 | 0.212 | 0.236 | 0.146 |
+| `superseded-since-judgment` | 154 | 0.143 | 0.175 | 0.109 |
+| `history-unknown` | 35 | 0.343 | 0.429 | 0.259 |
 
 `superseded-since-judgment` recall is meaningfully lower than `applicable`
 recall. That is consistent with a real, already-documented corpus

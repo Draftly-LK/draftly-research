@@ -139,9 +139,9 @@ against the Wills Ordinance's 9.
 (not the deterministic citation-matching pipeline above) on the case→statute
 retrieval task from IL-PCSR (Paul et al., EMNLP 2025): mask a case's statute
 citation, retrieve over the surrounding text, and check whether the right
-section comes back. On the 450-query gold set built from verified links,
-overall recall@5 is 0.198, but it splits to 0.213 for cases whose statute
-text is unchanged since judgment (`applicable`) versus 0.136 for cases whose
+section comes back. On the 486-query gold set built from verified links,
+overall recall@5 is 0.200, but it splits to 0.212 for cases whose statute
+text is unchanged since judgment (`applicable`) versus 0.143 for cases whose
 section was later amended (`superseded-since-judgment`) — the index holds
 only current section text, so retrieval is effectively being asked to match
 wording the court never saw for that second group. See
