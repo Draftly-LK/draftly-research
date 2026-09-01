@@ -4,38 +4,44 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ## Counts
 
-- Source files inspected: 55
-- Statutes indexed: 31
-- Records: 8331
-- Distinct sections referenced: 1775
-- Records without a heading: 116
+- Source files inspected: 63
+- Statutes indexed: 39
+- Records: 13396
+- Distinct sections referenced: 3601
+- Records without a heading: 130
 - `section_id` is a rollup key, not a foreign key: it names the section a record belongs to even where that section has no record of its own (a section whose text lives entirely in its children emits nothing). Group by it to score at section level.
 - Temporal metadata: none. `effective_from` / `effective_to` are null on every record; act-level `commencement` is deliberately not propagated to provisions.
 
 ### By node type
 
-- `subsection`: 3296
-- `paragraph`: 2893
-- `section`: 864
-- `subparagraph`: 498
-- `definition`: 299
-- `proviso`: 242
-- `closing_text`: 171
-- `text`: 42
-- `item`: 21
+- `subsection`: 5071
+- `paragraph`: 4257
+- `section`: 2118
+- `subparagraph`: 636
+- `proviso`: 499
+- `definition`: 399
+- `closing_text`: 307
+- `text`: 74
+- `item`: 30
 - `schedule`: 3
 - `schedule_item`: 2
 
 ### By Act
 
 - Companies Act: 3557
+- Civil Procedure Code: 1773
+- Municipal Councils Ordinance: 1321
+- Urban Councils Ordinance: 883
 - Apartment Ownership Law: 557
 - Mortgage Act: 494
 - Western Province Financial Statute: 465
 - National Housing Act: 447
 - Stamp Duty Act: 381
+- Trusts Ordinance: 363
+- Land Development Ordinance: 348
 - State Lands Ordinance: 337
 - Survey Act: 310
+- National Housing Development Authority Act: 289
 - Urban Development Authority Act: 242
 - Registration of Title Act: 225
 - Buddhist Temporalities Ordinance: 180
@@ -46,12 +52,14 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 - Land Grants (Special Provisions) Act: 78
 - Registration of Old Deeds and Instruments Ordinance: 74
 - Nindagama Lands Act: 72
+- Local Authorities Housing Act: 63
 - Matrimonial Rights and Inheritance Ordinance: 51
 - Jaffna Matrimonial Rights and Inheritance Ordinance: 49
 - Thesawalamai Pre-emption Ordinance: 39
 - Prevention of Frauds Ordinance: 38
 - Definition of Boundaries Ordinance: 28
 - Prescription Ordinance: 27
+- Lands Resumption Ordinance: 25
 - Land Registers (Reconstructed Folios) Ordinance: 24
 - Kandyan Succession Ordinance: 20
 - State Land (Claims) Ordinance: 20
@@ -91,11 +99,13 @@ Corpus for the KoBLEX-inspired retrieval experiment. Provision-level records bui
 
 ### Nodes
 
-- Empty own-text (content lives in children): 925 (definition 1, schedule 1, section 912, subsection 11)
-- Repealed stubs excluded: 3
+- Empty own-text (content lives in children): 1502 (definition 1, paragraph 1, schedule 1, section 1485, subsection 14)
+- Repealed stubs excluded: 5
   - `11-1973/section-26/closing_text-1` -- '(*Repealed and replaced by the Companies Act, No. 17 of 1982.)'
+  - `17-1979/section-10` -- 'Repealed.'
   - `21-1844/section-3` -- 'Repealed By'
   - `21-1844/section-4` -- 'Repealed By'
+  - `61-1939/section-160/subsection-4` -- 'Repealed'
 - `inserted_provision` / `substituted_provision` encountered: 0 (unwrapped 0, skipped as empty 0)
 
 ## Consolidation gaps
@@ -104,15 +114,21 @@ Reported, not resolved -- this build does no historical version reconstruction.
 
 - **Definition of Boundaries Ordinance** -- verification_status is 'unverified'
 - **Apartment Ownership Law** -- verification_status is 'unverified'
+- **Local Authorities Housing Act** -- verification_status is 'unverified'
+- **National Housing Development Authority Act** -- verification_status is 'unverified'
 - **Survey Act** -- edition kind is 'original_or_unconfirmed_consolidation', not a confirmed consolidation
 - **Buddhist Temporalities Ordinance** -- verification_status is 'unverified'
+- **Land Development Ordinance** -- verification_status is 'unverified'
+- **Civil Procedure Code** -- verification_status is 'unverified'
 - **Tea and Rubber Estates (Control of Fragmentation) Act** -- edition kind is 'as enacted (Numbered Acts database)', not a confirmed consolidation; 1 amending Act(s) present (20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.json) so their changes may be absent
 - **Wills Ordinance** -- verification_status is 'unverified'
 - **Registration of Title Act** -- edition kind is 'original_or_unconfirmed_consolidation', not a confirmed consolidation
 - **Prescription Ordinance** -- verification_status is 'unverified'
 - **Registration of Documents Ordinance** -- verification_status is 'unverified'
+- **Municipal Councils Ordinance** -- verification_status is 'unverified'
 - **Registration of Old Deeds and Instruments Ordinance** -- verification_status is 'needs_structural_review'
 - **National Housing Act** -- verification_status is 'unverified'
+- **Lands Resumption Ordinance** -- verification_status is 'unverified'
 - **Powers of Attorney Ordinance** -- verification_status is 'unverified'
 - **Urban Development Authority Act** -- verification_status is 'unverified'
 - **Stamp Duty Act** -- verification_status is 'unverified'
@@ -120,15 +136,31 @@ Reported, not resolved -- this build does no historical version reconstruction.
 - **Jaffna Matrimonial Rights and Inheritance Ordinance** -- act_id '1-1911' from citation differs from directory prefix '58-1947'
 - **Mortgage Act** -- verification_status is 'unverified'
 - **Western Province Financial Statute** -- verification_status is 'unverified'
+- **Urban Councils Ordinance** -- verification_status is 'unverified'
 - **Prevention of Frauds Ordinance** -- verification_status is 'unverified'
 - **State Lands Ordinance** -- verification_status is 'unverified'
+- **Trusts Ordinance** -- verification_status is 'unverified'
 
 ## Problems
 
 - No parsing failures.
-- Duplicate node paths disambiguated: 29. These are source-side labelling defects, not build artefacts -- sibling provisions carrying the same label. Both records are kept, the later one suffixed `-2`, so no provision is silently dropped. Spot-checked examples: Apartment Ownership s.20C(2) genuinely has two `paragraph (bb)` siblings with different text; Companies Act s.529(1) has several definitions collapsed under one `definition:distribution` node, so its `(a)`/`(b)` paragraphs repeat. Affected paths:
+- Duplicate node paths disambiguated: 56. These are source-side labelling defects, not build artefacts -- sibling provisions carrying the same label. Both records are kept, the later one suffixed `-2`, so no provision is silently dropped. Spot-checked examples: Apartment Ownership s.20C(2) genuinely has two `paragraph (bb)` siblings with different text; Companies Act s.529(1) has several definitions collapsed under one `definition:distribution` node, so its `(a)`/`(b)` paragraphs repeat. Affected paths:
   - `11-1973/section-20c/subsection-2/paragraph-bb`
   - `17-2002/section-45/subsection-1/paragraph-c`
+  - `2-1889/section-808`
+  - `29-1947/section-136b/subsection-1`
+  - `29-1947/section-136b/subsection-2`
+  - `29-1947/section-207/subsection-1/paragraph-a`
+  - `29-1947/section-207/subsection-1/paragraph-b`
+  - `29-1947/section-230/subsection-1/paragraph-a`
+  - `29-1947/section-230/subsection-1/paragraph-b`
+  - `29-1947/section-247c/subsection-3/paragraph-a`
+  - `29-1947/section-277/subsection-1/closing_text-1/subparagraph-i`
+  - `29-1947/section-277/subsection-1/closing_text-1/subparagraph-ii`
+  - `29-1947/section-277/subsection-1/closing_text-1/subparagraph-iii`
+  - `29-1947/section-277/subsection-1/paragraph-b`
+  - `29-1947/section-83/subsection-3/paragraph-f`
+  - `29-1947/section-87/subsection-1/paragraph-c`
   - `38-2014/section-2/subsection-2/paragraph-b/subparagraph-i`
   - `38-2014/section-2/subsection-2/paragraph-b/subparagraph-ii`
   - `41-1978/section-28a/subsection-3/paragraph-a`
@@ -145,6 +177,17 @@ Reported, not resolved -- this build does no historical version reconstruction.
   - `6-1990/section-73/subsection-3`
   - `6-1990/section-73/subsection-4`
   - `6-1990/section-88/subsection-1`
+  - `61-1939/section-153a/subsection-1`
+  - `61-1939/section-162/subsection-1`
+  - `61-1939/section-165b/subsection-3/paragraph-b`
+  - `61-1939/section-173/subsection-1`
+  - `61-1939/section-173/subsection-1/proviso-1`
+  - `61-1939/section-173/subsection-2`
+  - `61-1939/section-177/subsection-1`
+  - `61-1939/section-191/subsection-1`
+  - `61-1939/section-244/subsection-1`
+  - `61-1939/section-36/paragraph-hh/subparagraph-ii`
+  - `61-1939/section-73/subsection-1`
   - `7-2007/section-431/subsection-2/paragraph-c`
   - `7-2007/section-529/subsection-1/definition-distribution/paragraph-a`
   - `7-2007/section-529/subsection-1/definition-distribution/paragraph-b`
@@ -152,7 +195,7 @@ Reported, not resolved -- this build does no historical version reconstruction.
   - `7-2007/section-529/subsection-1/definition-group-financial-statements/paragraph-b`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-a`
   - `7-2007/section-529/subsection-1/definition-share-register/paragraph-b`
-- Duplicate evidence texts: 147 distinct strings appear more than once (408 records)
+- Duplicate evidence texts: 235 distinct strings appear more than once (607 records)
 - Schedule items carrying `rates` tables: 2. The band/rupees/cents tables are structured numeric data and are not flattened into `text`, so rate lookups will not retrieve them.
 
 ## Regeneration
