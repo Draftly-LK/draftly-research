@@ -133,6 +133,22 @@ The Civil Procedure Code dominates the link table — it is procedural, so every
 civil case travels through it regardless of subject, and it has 840 sections
 against the Wills Ordinance's 9.
 
+## Legal statute retrieval (LSR) evaluation
+
+`scripts/legal-statute-retrieval/` benchmarks the retrieval engine itself
+(not the deterministic citation-matching pipeline above) on the case→statute
+retrieval task from IL-PCSR (Paul et al., EMNLP 2025): mask a case's statute
+citation, retrieve over the surrounding text, and check whether the right
+section comes back. On the 450-query gold set built from verified links,
+overall recall@5 is 0.198, but it splits to 0.213 for cases whose statute
+text is unchanged since judgment (`applicable`) versus 0.136 for cases whose
+section was later amended (`superseded-since-judgment`) — the index holds
+only current section text, so retrieval is effectively being asked to match
+wording the court never saw for that second group. See
+`scripts/legal-statute-retrieval/README.md` for the full methodology, scope
+decisions (LSR only, no trained model — see that file for why), and result
+table.
+
 ## Known limitations
 
 **The section index and the retrieval index still disagree.**
