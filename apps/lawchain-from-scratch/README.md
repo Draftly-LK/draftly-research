@@ -15,7 +15,7 @@ with the dense channel enabled in this environment -- see the Neo4j and E5
 notes below.
 
 Scope: the finalized statutes in `data/legal-sources/library/finalized/`
-only (30 as of this writing; `lawchain/config.py`'s `EXPECTED_STATUTE_COUNT`
+only (39 as of this writing; `lawchain/config.py`'s `EXPECTED_STATUTE_COUNT`
 is asserted against at build time and needs bumping as more get finalized),
 not the full corpus the existing engine indexes. The separate amendment-Act
 JSONs living inside those folders are excluded -- their text is already
