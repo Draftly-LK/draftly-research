@@ -24,6 +24,7 @@ away.
 from __future__ import annotations
 
 import json
+import os
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -39,6 +40,14 @@ LSR_GOLD_JSONL = DATA_PROCESSED / "lsr_gold.jsonl"
 LSR_EVAL_DIR = REPO_ROOT / "evaluation" / "runs" / "statute-retrieval-lsr-v1"
 
 TEMPORAL_STATUSES = ("applicable", "superseded-since-judgment", "history-unknown")
+
+RERANK_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "ranked_section_ids": {"type": "array", "items": {"type": "string"}},
+    },
+    "required": ["ranked_section_ids"],
+}
 
 
 @dataclass(frozen=True)
@@ -74,12 +83,49 @@ def load_lsr_gold(path: Path = LSR_GOLD_JSONL) -> list[LsrGoldRow]:
     return rows
 
 
+def rerank_hits(query_text: str, section_ids: list[str], *, api_key: str, model: str) -> list[str]:
+    """Ask Gemini to re-order an existing candidate list. Bounded to the
+    hits already retrieved -- this never adds a candidate, only reorders,
+    so it cannot invent a citation that lexical/dense/graph search missed."""
+    from .answering import generate_json  # local import: keeps this module importable without google-genai
+
+    if not section_ids:
+        return section_ids
+
+    prompt = (
+        "A Sri Lankan court judgment (citation masked) is given below, followed "
+        "by candidate statute section IDs already retrieved for it. Re-order the "
+        "candidate IDs from most to least likely to be the section this judgment "
+        "cites. Return every given ID exactly once, in your ranked order.\n\n"
+        f"Judgment excerpt:\n{query_text}\n\n"
+        f"Candidate section IDs: {json.dumps(section_ids)}"
+    )
+    parsed, _raw, error = generate_json(
+        api_key=api_key,
+        model=model,
+        prompt=prompt,
+        schema=RERANK_SCHEMA,
+        system_instruction="You rank statute-section candidates by relevance. Never invent an ID.",
+    )
+    if error:
+        return section_ids
+    ranked = [sid for sid in parsed.get("ranked_section_ids", []) if sid in section_ids]
+    remaining = [sid for sid in section_ids if sid not in ranked]
+    return ranked + remaining
+
+
 def run_lsr_evaluation(
     gold_path: Path = LSR_GOLD_JSONL,
     output_dir: Path = LSR_EVAL_DIR,
+    *,
+    rerank: bool = False,
 ) -> dict[str, Any]:
     build_index(force=False)
     gold_rows = load_lsr_gold(gold_path)
+
+    api_key = os.getenv("GEMINI_API_KEY") if rerank else None
+    rerank_model = os.getenv("DRAFTLY_GEMINI_MODEL", "gemini-3.5-flash")
+    rerank_used = rerank and bool(api_key)
 
     predictions: list[dict[str, Any]] = []
     scores: list[dict[str, Any]] = []
@@ -88,6 +134,8 @@ def run_lsr_evaluation(
     for row in gold_rows:
         hits = search(StatuteQuery(text=row.query_text, limit=10))
         retrieved = [hit.section_id for hit in hits]
+        if rerank_used:
+            retrieved = rerank_hits(row.query_text, retrieved, api_key=api_key, model=rerank_model)
 
         expected = {row.section_id}
         score = score_question(row.query_id, expected, retrieved)
@@ -111,6 +159,7 @@ def run_lsr_evaluation(
     for status, status_scores in scores_by_status.items():
         metrics[status] = aggregate_scores(status_scores) if status_scores else {"questions": 0}
     metrics["label"] = "development-only: derived gold, small sample, not lawyer-verified"
+    metrics["rerank_used"] = rerank_used
     metrics["generated_at"] = datetime.now(timezone.utc).isoformat()
 
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -123,6 +172,8 @@ def run_lsr_evaluation(
                 "run_id": "statute-retrieval-lsr-v1",
                 "task": "legal-statute-retrieval (IL-PCSR-derived)",
                 "gold": str(gold_path),
+                "rerank_requested": rerank,
+                "rerank_used": rerank_used,
                 "notes": (
                     "Gold built from verified case-to-statute links only; expected_section "
                     "is a single section ID per query, not a set."

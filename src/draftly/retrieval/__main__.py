@@ -34,9 +34,14 @@ def main() -> None:
 
     subparsers.add_parser("evaluate", help="Run development retrieval evaluation.")
 
-    subparsers.add_parser(
+    lsr_parser = subparsers.add_parser(
         "evaluate-lsr",
         help="Run the IL-PCSR-derived legal statute retrieval (LSR) evaluation.",
+    )
+    lsr_parser.add_argument(
+        "--rerank",
+        action="store_true",
+        help="Add a bounded Gemini re-rank pass over each query's retrieved candidates.",
     )
 
     serve_parser = subparsers.add_parser("serve", help="Run the statute retrieval FastAPI service.")
@@ -78,7 +83,7 @@ def main() -> None:
     elif args.command == "evaluate":
         print(json.dumps(run_evaluation(), indent=2))
     elif args.command == "evaluate-lsr":
-        print(json.dumps(run_lsr_evaluation(), indent=2))
+        print(json.dumps(run_lsr_evaluation(rerank=args.rerank), indent=2))
     elif args.command == "serve":
         import uvicorn
 
