@@ -167,6 +167,17 @@ class ResolveLinksIntegrationTests(unittest.TestCase):
         distinct_sids = {sid for sid, _ in name_acts} | {sid for sid, _ in number_acts}
         self.assertEqual(distinct_sids, {"SRC030"})
 
+    def test_the_real_committed_jaffna_alias_resolves_to_src045_only(self) -> None:
+        # Locks in the alias_seed.csv data fix: this citation must resolve
+        # to SRC045 alone against the live alias table, not collide with
+        # SRC004's generic "Matrimonial Rights and Inheritance Ordinance".
+        alias_seed = STAGE_DIR / "output" / "alias_seed.csv"
+        if not alias_seed.exists():
+            self.skipTest("alias_seed.csv not built yet -- run 00_build_statute_index.py first")
+        aliases = resolver.load_alias(alias_seed)
+        citation = "Section 8 of the Jaffna Matrimonial Rights and Inheritance Ordinance (Cap. 57)"
+        found = resolver.find_all_name_acts(citation, aliases)
+        self.assertEqual([sid for sid, _ in found], ["SRC045"])
 
 
 class ProposeAliasesTests(unittest.TestCase):
