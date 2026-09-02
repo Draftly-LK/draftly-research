@@ -89,6 +89,53 @@ class MatchActNumberTests(unittest.TestCase):
         self.assertIsNone(resolver.match_act_number("Civil Procedure Code, s. 241", self.index))
 
 
+class AmendingClauseMaskingTests(unittest.TestCase):
+    def test_amending_instrument_section_is_excluded(self) -> None:
+        citation = (
+            "Jaffna Matrimonial Rights and Inheritance Ordinance (prior to "
+            "amendment by s. 6 of Ordinance No. 58 of 1947), s. 20 (2)"
+        )
+        self.assertEqual(resolver.extract_section_numbers(citation), ["20"])
+
+    def test_as_amended_by_phrasing_is_also_excluded(self) -> None:
+        citation = "Section 77 of the Courts Ordinance, as amended by section 4 of the Ordinance No. 12 of 1895."
+        self.assertEqual(resolver.extract_section_numbers(citation), ["77"])
+
+    def test_real_section_after_an_amending_clause_is_still_kept(self) -> None:
+        citation = "section 756 of the Civil Procedure Code, amended by section 2 of Ordinance No. 42 of 1921."
+        self.assertEqual(resolver.extract_section_numbers(citation), ["756"])
+
+
+class FindAllActsTests(unittest.TestCase):
+    def test_find_all_name_acts_returns_both_for_a_genuine_two_act_citation(self) -> None:
+        aliases = [("evidence ordinance", "SRC029"), ("partition ordinance", "SRC027")]
+        citation = "Section 44 of the Evidence Ordinance; Section 2 of the Partition Ordinance."
+        found = resolver.find_all_name_acts(citation, aliases)
+        self.assertEqual({sid for sid, _ in found}, {"SRC029", "SRC027"})
+
+    def test_find_all_name_acts_returns_one_for_a_single_act_citation(self) -> None:
+        aliases = [("civil procedure code", "SRC030"), ("evidence ordinance", "SRC029")]
+        found = resolver.find_all_name_acts("Civil Procedure Code, s. 241", aliases)
+        self.assertEqual([sid for sid, _ in found], ["SRC030"])
+
+    def test_a_more_specific_alias_suppresses_the_generic_one_it_contains(self) -> None:
+        # "Jaffna Matrimonial Rights and Inheritance Ordinance" (SRC045)
+        # contains "Matrimonial Rights and Inheritance Ordinance" (SRC004)
+        # as a substring -- this is ONE Act cited by its fuller name, not two.
+        aliases = [
+            ("matrimonial rights and inheritance ordinance", "SRC004"),
+            ("jaffna matrimonial rights and inheritance ordinance", "SRC045"),
+        ]
+        found = resolver.find_all_name_acts("Jaffna Matrimonial Rights and Inheritance Ordinance, s. 20", aliases)
+        self.assertEqual([sid for sid, _ in found], ["SRC045"])
+
+    def test_find_all_number_acts_returns_every_distinct_instrument(self) -> None:
+        index = {("1", "1889"): "SRC100", ("12", "1895"): "SRC101"}
+        citation = "Section 77 of Ordinance No. 1 of 1889, as amended by section 4 of the Ordinance No. 12 of 1895."
+        found = resolver.find_all_number_acts(citation, index)
+        self.assertEqual({sid for sid, _ in found}, {"SRC100", "SRC101"})
+
+
 class ResolveLinksIntegrationTests(unittest.TestCase):
     def test_disagreement_between_name_and_number_paths_is_not_silently_resolved(self) -> None:
         # Constructed citation: the name alias says SRC030 (Civil Procedure
@@ -99,12 +146,27 @@ class ResolveLinksIntegrationTests(unittest.TestCase):
         number_index = {("2", "1889"): "SRC999"}
         citation = "Civil Procedure Code, Ordinance No. 2 of 1889, s. 5"
 
-        name_act = resolver.match_act(citation, aliases)
-        number_act = resolver.match_act_number(citation, number_index)
+        name_acts = resolver.find_all_name_acts(citation, aliases)
+        number_acts = resolver.find_all_number_acts(citation, number_index)
+        distinct_sids = {sid for sid, _ in name_acts} | {sid for sid, _ in number_acts}
 
-        self.assertEqual(name_act[0], "SRC030")
-        self.assertEqual(number_act[0], "SRC999")
-        self.assertNotEqual(name_act[0], number_act[0])
+        self.assertEqual(distinct_sids, {"SRC030", "SRC999"})
+
+    def test_a_genuine_two_act_citation_yields_two_distinct_sids(self) -> None:
+        aliases = [("evidence ordinance", "SRC029"), ("partition ordinance", "SRC027")]
+        citation = "Section 44 of the Evidence Ordinance; Section 2 of the Partition Ordinance."
+        name_acts = resolver.find_all_name_acts(citation, aliases)
+        number_acts = resolver.find_all_number_acts(citation, {})
+        distinct_sids = {sid for sid, _ in name_acts} | {sid for sid, _ in number_acts}
+        self.assertEqual(distinct_sids, {"SRC029", "SRC027"})
+
+    def test_a_single_act_citation_yields_exactly_one_sid(self) -> None:
+        aliases = [("civil procedure code", "SRC030")]
+        name_acts = resolver.find_all_name_acts("Civil Procedure Code, s. 241", aliases)
+        number_acts = resolver.find_all_number_acts("Civil Procedure Code, s. 241", {})
+        distinct_sids = {sid for sid, _ in name_acts} | {sid for sid, _ in number_acts}
+        self.assertEqual(distinct_sids, {"SRC030"})
+
 
 
 class ProposeAliasesTests(unittest.TestCase):
@@ -120,7 +182,11 @@ class ProposeAliasesTests(unittest.TestCase):
 class BuildReviewSampleTests(unittest.TestCase):
     def test_stratum_for_classifies_mismatch_first(self) -> None:
         row = {"reason": "name-number-mismatch:SRC004-vs-SRC045", "citation": "Ordinance No. 2 of 1889"}
-        self.assertEqual(sampler.stratum_for(row), "name-number-mismatch")
+        self.assertEqual(sampler.stratum_for(row), "multi-act-or-mismatch")
+
+    def test_stratum_for_classifies_multiple_acts_reason(self) -> None:
+        row = {"reason": "multiple-acts-in-citation:SRC029-vs-SRC030", "citation": "Ordinance No. 2 of 1889"}
+        self.assertEqual(sampler.stratum_for(row), "multi-act-or-mismatch")
 
     def test_stratum_for_detects_number_plus_year_citations(self) -> None:
         row = {"reason": "act+section+echo", "citation": "Ordinance No. 22 of 1871, s. 3"}

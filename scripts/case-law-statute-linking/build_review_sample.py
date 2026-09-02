@@ -33,8 +33,8 @@ SEED = 20260901  # fixed so re-running draws the same sample
 
 
 def stratum_for(row: dict[str, str]) -> str:
-    if row["reason"].startswith("name-number-mismatch"):
-        return "name-number-mismatch"
+    if row["reason"].startswith("name-number-mismatch") or row["reason"].startswith("multiple-acts-in-citation"):
+        return "multi-act-or-mismatch"
     if NUMBER_YEAR_RE.search(row["citation"]):
         return "number-plus-year-path"
     return "name-alias-path"

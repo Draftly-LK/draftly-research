@@ -101,6 +101,15 @@ NUM_RE = re.compile(r"\d{1,4}")
 # a year like 1889/1927 that must NOT be mistaken for a section number
 YEAR_RE = re.compile(r"\b(1[6-9]\d{2}|20\d{2})\b")
 
+# "...(prior to amendment by s. 6 of Ordinance No. 58 of 1947)..." -- the
+# section number here belongs to the AMENDING instrument, not the Act being
+# cited, and must not be picked up as one of ITS section numbers. Found live:
+# "6" wrongly attributed to the Jaffna Ordinance instead of just the real "20".
+AMENDING_CLAUSE_RE = re.compile(
+    r"(?:as\s+)?amend(?:ed|ment)\s+by\s+s(?:ection)?s?\.?\s*\d+\s+of\s+(?:the\s+)?(?:ordinance|act)",
+    re.I,
+)
+
 # "Ordinance No. 2 of 1877" / "Act No. 30 of 2022" -- a whole citation class
 # with no statute name at all, so the name-alias matcher below can never
 # resolve it. Looked up against statute_index.csv's act_number/year instead,
@@ -227,10 +236,61 @@ def match_act_number(citation: str, number_year_index: dict[tuple[str, str], str
     return source_id, f"no.{number}-of-{year}"
 
 
+def find_all_name_acts(citation: str, aliases: list[tuple[str, str]]) -> list[tuple[str, str]]:
+    """Like match_act, but returns every distinct (source_id, fragment)
+    found in the citation instead of stopping at the first -- needed to
+    detect a citation that names two different Acts (e.g. "Section 44 of
+    the Evidence Ordinance...; Section 2 of the Partition Ordinance...")
+    rather than silently attributing both to whichever alias matched first.
+
+    A matched fragment that is itself a substring of another matched
+    fragment is dropped, not counted as a second Act: e.g. "Jaffna
+    Matrimonial Rights and Inheritance Ordinance" (SRC045's alias) contains
+    the generic "Matrimonial Rights and Inheritance Ordinance" (SRC004's
+    title) as a substring -- that's one Act cited by its more specific name,
+    not two Acts.
+    """
+    normalized = normalize_fragment(citation)
+    seen_sids: set[str] = set()
+    found: list[tuple[str, str]] = []
+    for frag, sid in aliases:
+        if sid in seen_sids:
+            continue
+        if re.search(rf"\b{re.escape(frag)}\b", normalized):
+            found.append((sid, frag))
+            seen_sids.add(sid)
+
+    fragments = [frag for _, frag in found]
+    return [
+        (sid, frag)
+        for sid, frag in found
+        if not any(frag != other and frag in other for other in fragments)
+    ]
+
+
+def find_all_number_acts(citation: str, number_year_index: dict[tuple[str, str], str]) -> list[tuple[str, str]]:
+    """Like match_act_number, but returns every distinct source_id resolved
+    from every "No. N of YYYY" in the citation, not just the first -- a
+    citation can reference two different numbered instruments (the Act
+    itself, and separately the amending Act that changed it)."""
+    seen_sids: set[str] = set()
+    found: list[tuple[str, str]] = []
+    for number, year in NUMBER_YEAR_RE.findall(citation):
+        source_id = number_year_index.get((number, year))
+        if source_id and source_id not in seen_sids:
+            found.append((source_id, f"no.{number}-of-{year}"))
+            seen_sids.add(source_id)
+    return found
+
+
 def extract_section_numbers(citation: str) -> list[str]:
-    """Pull ALL section numbers from a citation, ignoring years."""
+    """Pull ALL section numbers from a citation, ignoring years and any
+    amending-instrument's own section reference."""
     # blank out years so 'of 1889' isn't read as section 1889
     masked = YEAR_RE.sub("    ", citation)
+    # blank out "amended by s. N of ..." so N isn't attributed to the Act
+    # actually being cited -- it belongs to the amending instrument instead
+    masked = AMENDING_CLAUSE_RE.sub(lambda m: " " * len(m.group(0)), masked)
     nums: list[str] = []
     for m in SECTION_TOKEN_RE.finditer(masked):
         chunk = m.group(1)
@@ -279,19 +339,30 @@ def run(rules: str | None = None, sections: str | None = None,
         method = getattr(r, C_METHOD, "")
 
         if cite.strip():
-            # a real citation -> resolve it properly, via two independent paths
-            name_act = match_act(cite, aliases)
-            number_act = match_act_number(cite, number_year_index)
+            # a real citation -> resolve it properly. Collect every distinct
+            # Act signalled, by name or by number+year, rather than stopping
+            # at the first match -- a citation naming two different Acts
+            # (or two different "No. N of YYYY" instruments) must not have
+            # all its section numbers silently folded into just one of them.
+            name_acts = find_all_name_acts(cite, aliases)
+            number_acts = find_all_number_acts(cite, number_year_index)
             secnums = extract_section_numbers(cite)
 
-            if name_act and number_act and name_act[0] != number_act[0]:
-                # The name-alias match and the exact number+year match point
-                # at two different statutes. Both are usually trustworthy in
-                # isolation, so a disagreement is a signal worth a human's
-                # eyes rather than a silent tie-break -- route to review
-                # instead of guessing which one is right.
-                mismatch = f"name-number-mismatch:{name_act[0]}-vs-{number_act[0]}"
-                source_id = number_act[0]  # higher-precision path, but still flagged
+            distinct_sids = {sid for sid, _ in name_acts} | {sid for sid, _ in number_acts}
+
+            if len(distinct_sids) > 1:
+                # Two or more otherwise-trustworthy signals point at
+                # different Acts in the same citation. This is either a
+                # genuine multi-Act citation (e.g. "s.44 of the Evidence
+                # Ordinance...; s.2 of the Partition Ordinance...") or a
+                # name/number disagreement about a single Act -- either way,
+                # abstain rather than guess which section belongs to which
+                # Act; a person should look, not a silent tie-break.
+                mismatch = f"multiple-acts-in-citation:{'-vs-'.join(sorted(distinct_sids))}"
+                # kept for continuity with anyone grepping the round-1 label
+                if len(name_acts) == 1 and len(number_acts) == 1:
+                    mismatch = f"name-number-mismatch:{name_acts[0][0]}-vs-{number_acts[0][0]}"
+                source_id = (number_acts[0][0] if number_acts else name_acts[0][0])
                 if not secnums:
                     links.append(_row(case, rule_id, cite, source_id, "", "review", mismatch, method))
                     band_counts["review"] += 1
@@ -301,7 +372,7 @@ def run(rules: str | None = None, sections: str | None = None,
                         band_counts["review"] += 1
                 continue
 
-            act = name_act or number_act
+            act = (name_acts[0] if name_acts else None) or (number_acts[0] if number_acts else None)
             if not act:
                 links.append(_row(case, rule_id, cite, "", "", "unresolved",
                                   "act-not-in-alias", method))
