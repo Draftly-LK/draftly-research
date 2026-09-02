@@ -30,7 +30,7 @@ This implementation covers **LSR only**, with **no trained model**:
 - **No PCR.** This repo has no case-to-case citation gold set at all yet;
   adding one is a separate, larger effort (new corpus module, new index,
   new gold-set construction) that wasn't in scope for this pass.
-- **No GNN / trained retriever.** The available gold data — 450 verified
+- **No GNN / trained retriever.** The available gold data — 462 verified
   case→statute links after filtering (see below) — is roughly two orders
   of magnitude smaller than IL-PCSR's query set. Training a model on it
   would very likely underperform the existing untrained BM25+dense+graph
@@ -54,9 +54,10 @@ Deterministic, no LLM calls, re-running produces byte-identical output
 Inputs:
 
 - `scripts/case-law-statute-linking/output/resolved_links.csv`,
-  `band == "verified"` rows only (486 of 765 rows as of the hardened
+  `band == "verified"` rows only (462 of 762 rows as of the hardened
   resolver in `scripts/case-law-statute-linking/README.md` — name-alias
-  normalization plus a second Act/Ordinance-No.-of-year resolver path;
+  normalization, a second Act/Ordinance-No.-of-year resolver path, and
+  abstention on multi-Act citations rather than mis-attributing them;
   `review` and `unresolved` bands are excluded because their citation
   wasn't cleanly grounded).
 - `scripts/case-law-information-extraction/output/rules.csv`, joined by
@@ -83,8 +84,8 @@ keep the surrounding sentence as the query):
    than dropping the row.
 
 Measured on the current corpus, the split across the three modes is
-**window-citation-masked: 45, window-quote-masked: 34,
-held-sentence-fallback: 407** — i.e. the exact-window construction only
+**window-citation-masked: 45, window-quote-masked: 32,
+held-sentence-fallback: 385** — i.e. the exact-window construction only
 succeeds for about 16% of verified links; the rest fall back to the bare
 holding sentence as the query. This is a real data-quality limit (the
 verbatim match that gated extraction was checked against a different text
@@ -129,16 +130,18 @@ the existing `statutes-bm25-v1` run.
 
 ## What the first real run showed
 
-On the 486-query gold set (BM25+dense+graph, no re-rank; regenerated after
-the resolver hardening in `scripts/case-law-statute-linking/README.md`
-added 36 net new verified links):
+On the 462-query gold set (BM25+dense+graph, no re-rank; regenerated after
+round 2 of the resolver hardening in
+`scripts/case-law-statute-linking/README.md`, which corrected 23 previously
+mis-attributed multi-Act links rather than adding new ones — see that
+file's coverage report):
 
 | Bucket | Queries | recall@5 | recall@10 | MRR |
 | --- | ---: | ---: | ---: | ---: |
-| Overall | 486 | 0.200 | 0.231 | 0.142 |
-| `applicable` | 297 | 0.212 | 0.236 | 0.146 |
-| `superseded-since-judgment` | 154 | 0.143 | 0.175 | 0.109 |
-| `history-unknown` | 35 | 0.343 | 0.429 | 0.259 |
+| Overall | 462 | 0.206 | 0.238 | 0.148 |
+| `applicable` | 282 | 0.220 | 0.245 | 0.152 |
+| `superseded-since-judgment` | 145 | 0.152 | 0.186 | 0.116 |
+| `history-unknown` | 35 | 0.314 | 0.400 | 0.249 |
 
 `superseded-since-judgment` recall is meaningfully lower than `applicable`
 recall. That is consistent with a real, already-documented corpus

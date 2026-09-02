@@ -83,26 +83,30 @@ fails loudly here instead of silently producing an empty or wrong
 
 ## What this measurably fixed
 
-Before (name-alias matching only, 9 hardcoded full statute names,
-unnormalized substring matching): 450 verified / 38 review / 276 unresolved
-(764 rows).
+Two rounds of hardening, both measured against the real judgment text
+before being built, not assumed. Full detail, the complete issues list, and
+what fraction of the whole 9,177-case corpus is actually linked (short
+answer: 4.0% verified — the ceiling is set upstream by extraction coverage,
+not by this stage) are in
+**[`COVERAGE-AND-ISSUES.md`](COVERAGE-AND-ISSUES.md)**.
 
-After (normalization + word-boundary matching + the number+year resolver):
-**486 verified / 40 review / 239 unresolved** (765 rows) — 36 more verified
-links, 37 fewer unresolved, from data the corpus already had. Two things
-drove it, both measured against the real judgment text before being
-built, not assumed:
+**Round 1** (name-alias matching only, 9 hardcoded full statute names,
+unnormalized substring matching → normalization + word-boundary matching +
+a number+year resolver): 450→486 verified, 276→239 unresolved. Driven by
+two gaps: 41 judgment files use `CPC`/`C.P.C.` with no normalization to
+catch it, and 91 of the then-276 unresolved rows were bare `"Ordinance/Act
+No. N of YYYY"` citations with no name to match at all (47 immediately
+resolvable against data stage 0 already computed but nothing used).
 
-- **41 judgment files** contain a section number next to `CPC`/`C.P.C.` —
-  none of these citations resolved before, because the alias table had no
-  normalization step.
-- **91 of the 276 previously-unresolved rows** were bare
-  `"Ordinance/Act No. N of YYYY"` citations; **47 of those** are
-  immediately resolvable against data `00_build_statute_index.py` already
-  computes (`act_number`/`year` in `statute_index.csv`) but that nothing
-  downstream used until now. The remaining ~44 cite an Act genuinely absent
-  from the registry (`out-of-catalogue`) — a data-acquisition gap (see
-  root README's "Next steps"), not something this resolver can fix.
+**Round 2** (this pass — mask an amending instrument's own section number
+out of the base Act's link; detect and abstain on citations naming two
+different Acts instead of guessing; add one missing regionally-qualified
+alias): 486→462 verified. Verified *dropped* on purpose — 23 of round 1's
+verified rows were multi-Act citations silently and wrongly attributed to
+one Act (confirmed by hand, e.g. section 44 of the Evidence Ordinance
+wrongly filed under the Partition Ordinance); they're now correctly in
+`review` instead of quietly wrong. Round 2 is a precision fix, round 1 was
+mostly a recall fix — the two numbers aren't comparable on their own.
 
 ## What this does not do
 
@@ -119,6 +123,10 @@ built, not assumed:
 - `propose_aliases.py` never writes to the live alias table. A person
   reviews `proposed_aliases.csv` and copies chosen entries into
   `alias_seed.csv`'s `aliases` column by hand.
+- Does not split a genuine multi-Act citation into two correct links —
+  abstaining to `review` (round 2) stops it from being silently wrong, it
+  doesn't resolve both Acts. That needs citation segmentation, a bigger
+  piece of work than either round attempted.
 
 ## Status
 

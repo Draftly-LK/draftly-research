@@ -27,6 +27,10 @@ Case-law rule extraction and case-to-statute linking are separate pipelines
 (`scripts/case-law-information-extraction/`,
 `scripts/case-law-statute-linking/`) that do not feed the retrieval index;
 case law is deliberately excluded from it (see Known limitations below).
+The linking pipeline's full coverage funnel and known-issues list — how
+much of the 9,177-case corpus is actually linked (4.0% verified; the
+bottleneck is upstream rule extraction, not linking) — is in
+`scripts/case-law-statute-linking/COVERAGE-AND-ISSUES.md`.
 
 ## Corpus status
 
@@ -139,9 +143,9 @@ against the Wills Ordinance's 9.
 (not the deterministic citation-matching pipeline above) on the case→statute
 retrieval task from IL-PCSR (Paul et al., EMNLP 2025): mask a case's statute
 citation, retrieve over the surrounding text, and check whether the right
-section comes back. On the 486-query gold set built from verified links,
-overall recall@5 is 0.200, but it splits to 0.212 for cases whose statute
-text is unchanged since judgment (`applicable`) versus 0.143 for cases whose
+section comes back. On the 462-query gold set built from verified links,
+overall recall@5 is 0.206, but it splits to 0.220 for cases whose statute
+text is unchanged since judgment (`applicable`) versus 0.152 for cases whose
 section was later amended (`superseded-since-judgment`) — the index holds
 only current section text, so retrieval is effectively being asked to match
 wording the court never saw for that second group. See
