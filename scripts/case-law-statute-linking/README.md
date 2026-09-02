@@ -84,10 +84,12 @@ fails loudly here instead of silently producing an empty or wrong
 ## What this measurably fixed
 
 Two rounds of hardening, both measured against the real judgment text
-before being built, not assumed. Full detail, the complete issues list, and
-what fraction of the whole 9,177-case corpus is actually linked (short
-answer: 4.0% verified — the ceiling is set upstream by extraction coverage,
-not by this stage) are in
+before being built, not assumed. This pipeline only ever sees the 5,121
+conveyancing-flagged cases (the other 4,056 of the full 9,177-case corpus
+are out of scope by design — upstream extraction never runs on them). Full
+detail, the complete issues list, and what fraction of that 5,121 is
+actually linked (short answer: 7.2% verified — the ceiling is set upstream
+by extraction/citation yield, not by this stage) are in
 **[`COVERAGE-AND-ISSUES.md`](COVERAGE-AND-ISSUES.md)**.
 
 **Round 1** (name-alias matching only, 9 hardcoded full statute names,

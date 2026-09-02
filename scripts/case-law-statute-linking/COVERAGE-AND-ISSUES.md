@@ -8,27 +8,42 @@ the real corpus on 2026-09-02, not from an estimate.
 
 ## The funnel: how much of the corpus is actually linked
 
-| Stage | Count | Share |
+**Scope, first, since it changes every percentage below.** This pipeline
+never sees a non-conveyancing case — it only ever reads
+`case-law-information-extraction`'s `rules.csv`, and that extraction only
+ever runs on cases flagged `conveyancing_match: true` in
+`data/processed/cases.jsonl`. Checked directly: all 3,620 distinct cases
+that have an extracted rule are conveyancing-flagged; zero are not. So the
+correct population to measure coverage against is the **5,121
+conveyancing-flagged cases**, not the full 9,177-case corpus (which
+includes 4,056 non-conveyancing cases that are out of scope by design, not
+unprocessed by oversight). An earlier version of this table used 9,177 as
+the denominator throughout, which understated coverage by roughly half.
+
+| Stage | Count | Share of the 5,121 conveyancing-flagged cases |
 | --- | ---: | ---: |
-| Cases in the corpus | 9,177 | 100% |
-| Cases with at least one extracted rule | 3,620 | 39.5% of cases |
-| Rules with a locatable statute citation | 649 | 15.6% of rules |
+| Cases in the corpus (total) | 9,177 | — (100%, includes 4,056 out-of-scope non-conveyancing cases) |
+| Conveyancing-flagged cases (the actual scope) | 5,121 | 100% |
+| Cases with at least one extracted rule | 3,620 | **70.7%** |
+| Rules with a locatable statute citation | 649 | 15.6% of the 4,161 rules |
 | Link rows produced from those citations | 762 | — |
 | → `verified` | 462 | 60.6% of link rows |
 | → `review` | 61 | 8.0% of link rows |
 | → `unresolved` | 239 | 31.4% of link rows |
-| Distinct cases with ≥1 `verified` statute link | 369 | **4.0% of all 9,177 cases** |
-| Distinct cases with ≥1 `verified` or `review` link | 410 | 4.5% of all 9,177 cases |
+| Distinct cases with ≥1 `verified` statute link | 369 | **7.2%** (4.0% if measured against the full 9,177-case corpus instead) |
+| Distinct cases with ≥1 `verified` or `review` link | 410 | 8.0% |
 | Ungrounded LLM/headnote guesses (no citation at all, kept separate) | 531 | — |
 
-**Read the 4.0% carefully — it is not "96% of cases have no statute link
-in them," it's "96% of cases have not been checked yet."** The real
-bottleneck is the top of the funnel, not this linking stage: only 39.5% of
-cases have had a rule extracted at all, and of those, only 15.6% produced a
-locatable citation. This pipeline resolves what it's given close to
-completely (462 + 61 = 523 of the 762 link rows, 68.6%, land somewhere
-other than `unresolved`) — the ceiling on total coverage is set upstream,
-by `case-law-information-extraction`, not by anything in this stage.
+**Read the 7.2% carefully — it is not "93% of conveyancing cases have no
+statute link in them," it's "93% have not been checked yet."** The real
+bottleneck is the top of the funnel, not this linking stage: 70.7% of
+conveyancing cases have had a rule extracted, but of those, only 15.6% of
+rules produced a locatable citation — most extracted rules are ratio
+statements with no citation to resolve in the first place. This pipeline
+resolves what it's given close to completely (462 + 61 = 523 of the 762
+link rows, 68.6%, land somewhere other than `unresolved`) — the ceiling on
+total coverage is set upstream, by `case-law-information-extraction`'s
+citation-yield, not by anything in this linking stage.
 
 ## Issues found, and what happened to each
 

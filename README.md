@@ -27,9 +27,11 @@ Case-law rule extraction and case-to-statute linking are separate pipelines
 (`scripts/case-law-information-extraction/`,
 `scripts/case-law-statute-linking/`) that do not feed the retrieval index;
 case law is deliberately excluded from it (see Known limitations below).
-The linking pipeline's full coverage funnel and known-issues list — how
-much of the 9,177-case corpus is actually linked (4.0% verified; the
-bottleneck is upstream rule extraction, not linking) — is in
+The linking pipeline only ever sees the 5,121 conveyancing-flagged cases
+(the other 4,056 of the 9,177-case corpus are out of scope by design). Its
+full coverage funnel and known-issues list — how much of that 5,121 is
+actually linked (7.2% verified; the bottleneck is upstream rule
+extraction, not linking) — is in
 `scripts/case-law-statute-linking/COVERAGE-AND-ISSUES.md`.
 
 ## Corpus status
