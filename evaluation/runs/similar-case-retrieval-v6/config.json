@@ -1,0 +1,13 @@
+{
+  "run_id": "similar-case-retrieval-v6",
+  "corpus": "conveyancing-flagged-cases-only",
+  "queries": "/Users/lahiru/Semester 5/Law Research/draftly/scripts/similar-case-retrieval/test_queries.jsonl",
+  "variant_toggles": {
+    "DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "0",
+    "DRAFTLY_CASE_LEXICAL_IDF": "0",
+    "DRAFTLY_CASE_GRAPH_FANOUT_WEIGHT": "1",
+    "DRAFTLY_CASE_CATCHWORD_EDGES": "0",
+    "DRAFTLY_CASE_CATCHWORD_STATUTE_LINKS": "0"
+  },
+  "notes": "Queries are exam fact patterns from src/questions.md (see build_test_set.py for selection rationale), not a labeled gold set."
+}
