@@ -9,13 +9,24 @@ is corroborated by at least one of the lexical or graph (statute/topic
 bridge) channels — dense similarity is additive evidence, never sufficient by
 itself. See `scripts/similar-case-retrieval/RESULTS.md` for the calibration
 notes and the honest caveat that this is a heuristic, not a proven cutoff.
+
+Architecture toggle: `DRAFTLY_CASE_LEXICAL_IDF=1` replaces the flat
+`MIN_LEXICAL_OVERLAP` token-count gate with a rarity-weighted one. A token
+that appears in more than `MAX_DOCUMENT_FREQUENCY_RATIO` of the corpus (a
+generic word like "will" or "land", or an institutional phrase fragment
+like "commissioner") no longer counts toward lexical corroboration --
+only genuinely rare, doctrine-specific overlap does. See
+`scripts/similar-case-retrieval/RESULTS.md`'s architecture comparison for
+the measured effect versus the flat count.
 """
 
 from __future__ import annotations
 
+import os
 import re
 import sqlite3
 from dataclasses import replace
+from functools import lru_cache
 
 from . import embeddings, graph
 from .index import build_index, connect
@@ -131,6 +142,41 @@ MIN_LEXICAL_OVERLAP = 3  # two coincidental token matches (e.g. "quantum" and
 # case about "computing the quantum of compensation") must not count as
 # corroboration on their own — see RESULTS.md for the calibration note.
 
+MAX_DOCUMENT_FREQUENCY_RATIO = 0.05  # DRAFTLY_CASE_LEXICAL_IDF only: a token
+# appearing in more than this share of the corpus doesn't count as rare
+# enough to corroborate on its own. Empirically, institutional/generic terms
+# like "divisional"/"secretary"/"development" sit at 6-9% document frequency
+# individually — above 0.12 they still passed and let administrative writs
+# through on an LDO query; 0.05 was the value that actually excluded them in
+# manual probing before the formal architecture comparison in RESULTS.md.
+
+
+def _idf_enabled() -> bool:
+    return os.getenv("DRAFTLY_CASE_LEXICAL_IDF", "").strip().lower() in {"1", "true", "yes"}
+
+
+@lru_cache(maxsize=1)
+def _total_case_count() -> int:
+    with connect() as conn:
+        return int(conn.execute("SELECT COUNT(*) FROM cases").fetchone()[0])
+
+
+@lru_cache(maxsize=4096)
+def _document_frequency(token: str) -> int:
+    with connect() as conn:
+        try:
+            return int(
+                conn.execute("SELECT COUNT(*) FROM cases_fts WHERE cases_fts MATCH ?", (f'"{token}"',)).fetchone()[0]
+            )
+        except sqlite3.OperationalError:
+            return 0
+
+
+def _rare_tokens(tokens: list[str]) -> list[str]:
+    """Tokens whose corpus document frequency is below MAX_DOCUMENT_FREQUENCY_RATIO."""
+    total = _total_case_count() or 1
+    return [token for token in tokens if _document_frequency(token) / total <= MAX_DOCUMENT_FREQUENCY_RATIO]
+
 
 def lexical_lookup(conn: sqlite3.Connection, query_text: str, *, limit: int) -> list[CaseHit]:
     tokens = query_tokens(query_text)
@@ -151,11 +197,13 @@ def lexical_lookup(conn: sqlite3.Connection, query_text: str, *, limit: int) -> 
         ).fetchall()
     except sqlite3.OperationalError:
         return []
-    min_overlap = min(MIN_LEXICAL_OVERLAP, len(tokens))
+
+    corroboration_tokens = _rare_tokens(tokens) if _idf_enabled() else tokens
+    min_overlap = min(MIN_LEXICAL_OVERLAP, len(corroboration_tokens)) if corroboration_tokens else MIN_LEXICAL_OVERLAP
     hits = []
     for row in rows:
         haystack = f"{row['title']} {row['body']} {row['rule_statement']}".lower()
-        overlap = sum(1 for token in tokens if token in haystack)
+        overlap = sum(1 for token in corroboration_tokens if token in haystack)
         if overlap >= min_overlap:
             hits.append(row_to_hit(row, score=-float(row["rank"]), query_text=query_text))
         if len(hits) >= limit:
