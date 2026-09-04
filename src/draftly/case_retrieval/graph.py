@@ -16,17 +16,31 @@ walk from every case already linked to that statute. This is the mechanism
 that lets a fact pattern naming "the Partition Act" or "the Prescription
 Ordinance" reach precedent cases even when no word in the judgment matches
 the query lexically.
+
+Architecture toggle: `DRAFTLY_CASE_GRAPH_VERIFIED_ONLY=1` restricts the
+graph to the parts of the case<->case link data that are actually verified.
+`case_topic_links.csv` is 10,527 rows and every single one is
+`review_status="candidate"` -- there is no verified topic link at all -- so
+under this toggle the topic bridge is dropped entirely, and the statute
+bridge keeps only `resolved_links.csv` rows with `band == "verified"` (462
+of 523 source_id-bearing rows). See RESULTS.md's architecture comparison
+for the measured effect.
 """
 
 from __future__ import annotations
 
 import json
+import os
 import re
 import sqlite3
 from functools import lru_cache
 
 from .index import build_index, connect
 from .paths import REPO_ROOT
+
+
+def _verified_only() -> bool:
+    return os.getenv("DRAFTLY_CASE_GRAPH_VERIFIED_ONLY", "").strip().lower() in {"1", "true", "yes"}
 
 STATUTE_INDEX_CSV = REPO_ROOT / "scripts" / "case-law-statute-linking" / "output" / "statute_index.csv"
 
@@ -48,7 +62,8 @@ def _add_edge(adjacency: Adjacency, a: str, b: str, weight: float) -> None:
     adjacency[b][a] = max(adjacency[b].get(a, 0.0), weight)
 
 
-def build_graph(conn: sqlite3.Connection) -> Adjacency:
+def build_graph(conn: sqlite3.Connection, *, verified_only: bool | None = None) -> Adjacency:
+    verified_only = _verified_only() if verified_only is None else verified_only
     rows = conn.execute("SELECT case_id, statute_links_json, topic_ids_json FROM cases").fetchall()
 
     by_section: dict[tuple[str, str], list[tuple[str, str]]] = {}
@@ -58,9 +73,12 @@ def build_graph(conn: sqlite3.Connection) -> Adjacency:
         for source_id, section_number, band in json.loads(row["statute_links_json"]):
             if not section_number:
                 continue
+            if verified_only and band != "verified":
+                continue
             by_section.setdefault((source_id, section_number), []).append((case_id, band))
-        for topic_id in json.loads(row["topic_ids_json"]):
-            by_topic.setdefault(topic_id, []).append(case_id)
+        if not verified_only:  # candidate-only data; dropped entirely under verified_only
+            for topic_id in json.loads(row["topic_ids_json"]):
+                by_topic.setdefault(topic_id, []).append(case_id)
 
     adjacency: Adjacency = {}
     for members in by_section.values():
@@ -81,15 +99,15 @@ def build_graph(conn: sqlite3.Connection) -> Adjacency:
     return adjacency
 
 
-@lru_cache(maxsize=2)
-def _graph_for_fingerprint(fingerprint: str) -> Adjacency:
+@lru_cache(maxsize=4)
+def _graph_for_fingerprint(fingerprint: str, verified_only: bool) -> Adjacency:
     with connect() as conn:
-        return build_graph(conn)
+        return build_graph(conn, verified_only=verified_only)
 
 
 def get_graph() -> Adjacency:
     stats = build_index(force=False)
-    return _graph_for_fingerprint(stats.fingerprint)
+    return _graph_for_fingerprint(stats.fingerprint, _verified_only())
 
 
 def expand_seeds(
@@ -157,10 +175,13 @@ def seeds_from_statute_mentions(conn: sqlite3.Connection, text: str) -> dict[str
     source_ids = match_statutes_in_text(text)
     if not source_ids:
         return {}
+    verified_only = _verified_only()
     seeds: dict[str, float] = {}
     for row in conn.execute("SELECT case_id, statute_links_json FROM cases"):
         for source_id, _section_number, band in json.loads(row["statute_links_json"]):
             if source_id in source_ids:
+                if verified_only and band != "verified":
+                    continue
                 weight = BAND_WEIGHT.get(band, 0.3)
                 seeds[row["case_id"]] = max(seeds.get(row["case_id"], 0.0), weight)
     return seeds
