@@ -71,6 +71,7 @@ class CaseDoc:
     text: str
     text_sha256: str
     rule_statement: str = ""
+    catchwords: str = ""
     statute_links: tuple[tuple[str, str, str], ...] = ()  # (source_id, section_number, band)
     topic_ids: tuple[str, ...] = ()
     metadata: dict[str, Any] = field(default_factory=dict)

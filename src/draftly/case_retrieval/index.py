@@ -32,6 +32,7 @@ CREATE TABLE cases (
     url TEXT NOT NULL,
     body TEXT NOT NULL,
     rule_statement TEXT NOT NULL,
+    catchwords TEXT NOT NULL,
     text_sha256 TEXT NOT NULL,
     statute_links_json TEXT NOT NULL,
     topic_ids_json TEXT NOT NULL
@@ -41,6 +42,7 @@ CREATE VIRTUAL TABLE cases_fts USING fts5(
     title,
     body,
     rule_statement,
+    catchwords,
     case_id UNINDEXED,
     tokenize = 'unicode61'
 );
@@ -100,8 +102,8 @@ def write_index_database(path: Path, docs: list[CaseDoc], summary: dict) -> None
                 """
                 INSERT INTO cases (
                     case_id, citation, title, court, year, url, body, rule_statement,
-                    text_sha256, statute_links_json, topic_ids_json
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    catchwords, text_sha256, statute_links_json, topic_ids_json
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     doc.case_id,
@@ -112,14 +114,15 @@ def write_index_database(path: Path, docs: list[CaseDoc], summary: dict) -> None
                     doc.url,
                     doc.text,
                     doc.rule_statement,
+                    doc.catchwords,
                     doc.text_sha256,
                     json.dumps(list(doc.statute_links)),
                     json.dumps(list(doc.topic_ids)),
                 ),
             )
             conn.execute(
-                "INSERT INTO cases_fts(title, body, rule_statement, case_id) VALUES (?, ?, ?, ?)",
-                (doc.title, doc.text, doc.rule_statement, doc.case_id),
+                "INSERT INTO cases_fts(title, body, rule_statement, catchwords, case_id) VALUES (?, ?, ?, ?, ?)",
+                (doc.title, doc.text, doc.rule_statement, doc.catchwords, doc.case_id),
             )
         conn.commit()
     finally:

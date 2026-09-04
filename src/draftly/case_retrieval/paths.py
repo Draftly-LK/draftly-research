@@ -10,6 +10,10 @@ CASES_JSONL = DATA_PROCESSED / "cases.jsonl"
 CASE_TOPIC_LINKS_CSV = DATA_PROCESSED / "legal-case-index" / "case_topic_links.csv"
 RESOLVED_LINKS_CSV = REPO_ROOT / "scripts" / "case-law-statute-linking" / "output" / "resolved_links.csv"
 RULES_CSV = REPO_ROOT / "scripts" / "case-law-information-extraction" / "output" / "rules_high_confidence.csv"
+COMMONLII_JUDGMENTS_JSONL = {
+    "LKCA": REPO_ROOT / "data" / "commonlii" / "parsed" / "LKCA" / "judgments.jsonl",
+    "LKSC": REPO_ROOT / "data" / "commonlii" / "parsed" / "LKSC" / "judgments.jsonl",
+}
 
 INDEX_DIR = DATA_PROCESSED / "retrieval-indexes" / "cases-conveyancing-bm25-v1"
 INDEX_POINTER = INDEX_DIR / "active.json"

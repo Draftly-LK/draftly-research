@@ -77,7 +77,7 @@ def _case_chunks(row: sqlite3.Row) -> list[tuple[str, str]]:
     """(vector_key, text) pairs. Judgments run far longer than statute
     sections, so long bodies are embedded in overlapping chunks; vector keys
     get a '#k' suffix that dense_lookup() strips back to the parent case_id."""
-    header = f"{row['title']}\n{row['rule_statement']}\n".strip() + "\n"
+    header = f"{row['title']}\n{row['catchwords']}\n{row['rule_statement']}\n".strip() + "\n"
     body = row["body"]
     if len(body) <= MAX_CASE_CHARS:
         return [(row["case_id"], header + body)]
@@ -112,7 +112,9 @@ def build_embeddings(force: bool = False) -> int:
         }
         pending: list[tuple[str, str]] = []
         with connect() as conn:
-            for row in conn.execute("SELECT case_id, title, rule_statement, body FROM cases ORDER BY case_id"):
+            for row in conn.execute(
+                "SELECT case_id, title, rule_statement, catchwords, body FROM cases ORDER BY case_id"
+            ):
                 for key, text in _case_chunks(row):
                     if key not in have:
                         pending.append((key, text))

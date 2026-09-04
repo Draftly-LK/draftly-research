@@ -8,8 +8,10 @@ module does not re-derive or widen that population — it only reads the flag.
 Case-to-case bridges are built from two existing, already-graded link tables:
 `resolved_links.csv` (case -> statute/section, with a quality `band`) and
 `case_topic_links.csv` (case -> curriculum topic). Rule statements from
-`rules_high_confidence.csv` are an optional text enrichment, not a
-requirement — a case with no extracted rule still indexes on its raw text.
+`rules_high_confidence.csv` and editor catchwords from the CommonLII parse
+(`data/commonlii/parsed/{LKCA,LKSC}/judgments.jsonl`) are optional text
+enrichments, not requirements — a case with neither still indexes on its
+raw text.
 """
 
 from __future__ import annotations
@@ -21,7 +23,14 @@ from pathlib import Path
 from typing import Any
 
 from .models import CaseDoc
-from .paths import CASE_TOPIC_LINKS_CSV, CASES_JSONL, REPO_ROOT, RESOLVED_LINKS_CSV, RULES_CSV
+from .paths import (
+    CASE_TOPIC_LINKS_CSV,
+    CASES_JSONL,
+    COMMONLII_JUDGMENTS_JSONL,
+    REPO_ROOT,
+    RESOLVED_LINKS_CSV,
+    RULES_CSV,
+)
 
 INDEX_INPUT_VERSION = "cases-conveyancing-v1"
 
@@ -76,6 +85,29 @@ def load_topic_bridge() -> dict[str, list[str]]:
     return bridge
 
 
+def load_catchwords() -> dict[str, str]:
+    """case_id -> editor-assigned catchwords, joined from the CommonLII parse.
+
+    These carry a bare `case_id` (e.g. "LKCA-1878-1") one prefix short of
+    the "commonlii-LKCA-1878-1" ids used everywhere else in this corpus;
+    re-prefixed here so callers never see the mismatch.
+    """
+    catchwords: dict[str, str] = {}
+    for path in COMMONLII_JUDGMENTS_JSONL.values():
+        if not path.exists():
+            continue
+        with path.open("r", encoding="utf-8") as file:
+            for line in file:
+                line = line.strip()
+                if not line:
+                    continue
+                row = json.loads(line)
+                text = (row.get("catchwords") or "").strip()
+                if text:
+                    catchwords[f"commonlii-{row['case_id']}"] = text
+    return catchwords
+
+
 def load_rule_statements() -> dict[str, str]:
     statements: dict[str, str] = {}
     for row in read_csv(RULES_CSV):
@@ -89,7 +121,7 @@ def load_rule_statements() -> dict[str, str]:
 def corpus_fingerprint(rows: list[dict[str, Any]]) -> str:
     digest = hashlib.sha256()
     digest.update(INDEX_INPUT_VERSION.encode("utf-8"))
-    for metadata_path in (RESOLVED_LINKS_CSV, CASE_TOPIC_LINKS_CSV, RULES_CSV):
+    for metadata_path in (RESOLVED_LINKS_CSV, CASE_TOPIC_LINKS_CSV, RULES_CSV, *COMMONLII_JUDGMENTS_JSONL.values()):
         if metadata_path.exists():
             digest.update(metadata_path.read_bytes())
     for row in sorted(rows, key=lambda item: item["case_id"]):
@@ -106,6 +138,7 @@ def build_case_documents(rows: list[dict[str, Any]] | None = None) -> tuple[list
     statute_bridge = load_statute_bridge()
     topic_bridge = load_topic_bridge()
     rule_statements = load_rule_statements()
+    catchwords_by_case = load_catchwords()
 
     docs: list[CaseDoc] = []
     missing_text = 0
@@ -127,6 +160,7 @@ def build_case_documents(rows: list[dict[str, Any]] | None = None) -> tuple[list
                 text=text,
                 text_sha256=hashlib.sha256(text.encode("utf-8")).hexdigest(),
                 rule_statement=rule_statements.get(case_id, ""),
+                catchwords=catchwords_by_case.get(case_id, ""),
                 statute_links=tuple(statute_bridge.get(case_id, [])),
                 topic_ids=tuple(topic_bridge.get(case_id, [])),
             )
