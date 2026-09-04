@@ -202,7 +202,7 @@ def lexical_lookup(conn: sqlite3.Connection, query_text: str, *, limit: int) -> 
     min_overlap = min(MIN_LEXICAL_OVERLAP, len(corroboration_tokens)) if corroboration_tokens else MIN_LEXICAL_OVERLAP
     hits = []
     for row in rows:
-        haystack = f"{row['title']} {row['body']} {row['rule_statement']}".lower()
+        haystack = f"{row['title']} {row['body']} {row['rule_statement']} {row['catchwords']}".lower()
         overlap = sum(1 for token in corroboration_tokens if token in haystack)
         if overlap >= min_overlap:
             hits.append(row_to_hit(row, score=-float(row["rank"]), query_text=query_text))
