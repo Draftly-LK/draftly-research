@@ -215,16 +215,98 @@ probe during development did).
   (see `search.py`'s docstring and `tests/test_similar_case_retrieval.py`),
   not by this 20-query set.
 
+## Architecture comparison: 4 configurations, same 20 queries
+
+The failure analysis above names two specific mechanisms that let
+wrong-domain padding through: a graph bridge that includes noisy,
+never-verified topic links, and a lexical corroboration count that treats
+"divisional"/"secretary"/"will" the same as genuinely rare doctrine terms.
+Both are real, data-grounded hypotheses — and both, measured, made accuracy
+**worse**, not better. This section reports all four configurations tested
+against the identical 20-query set, using the identical grading protocol
+(20 independent Haiku subagents per variant, binary correct/incorrect
+rubric, no memory of other variants' grading, aggregated by this session
+without alteration).
+
+| Variant | `GRAPH_VERIFIED_ONLY` | `LEXICAL_IDF` | Accuracy | vs. baseline |
+| --- | --- | --- | ---: | ---: |
+| **v1 (baseline)** | off | off | **70% (14/20)** | — |
+| v2 | on | off | 55% (11/20) | −15 pts |
+| v3 | off | on | 30% (6/20) | −40 pts |
+| v4 (combined) | on | on | 25% (5/20) | −45 pts |
+
+### v2 — verified-only statute/topic bridge
+
+Restricting the graph to `resolved_links.csv` rows banded `verified` and
+dropping the (all-candidate) topic bridge shrinks the graph from 20,437 to
+530 edges. It does exactly what it was built to do — it stops bridging
+cases through weak or unverified links — but the *side effect* dominates:
+several queries that were correct under v1 (scr-04, scr-09) lost their
+supporting graph edge and fell back to lexical-only ranking that landed on
+worse candidates. The graph's weak/unresolved edges were, on this test set,
+doing more useful work carrying real signal than they were doing harm.
+**Lesson for the paper: precision-only edits to a retrieval graph can cost
+more recall than they save precision, even when the precision hypothesis
+is correct in isolation** (scr-16's fundamental-rights false positive did
+improve under v2 as predicted — the net effect was still negative).
+
+### v3 — IDF-weighted lexical corroboration
+
+This is the sharper negative result. The manual probe that motivated it
+worked exactly as designed (the "quantum entanglement" adversarial query
+and the LDO administrative-writ false positive were both fixed by the
+rarity filter — see the calibration note above). But run across all 20
+real queries, accuracy fell to 30%. The reason is structural, not a tuning
+miss: **this corpus is not general English text, it is entirely legal
+text**, so words that are "rare" by general-language intuition — "notary",
+"deed", "gift", "prescriptive", "fideicommissum" — are exactly the
+doctrine-bearing terms a lawyer's fact pattern uses, and several of them
+sit at a *high enough* corpus document frequency (because they recur across
+many unrelated doctrines within this legal corpus) to get incorrectly
+filtered out as "not rare enough," starving genuinely relevant lexical
+matches of the token overlap they need to pass corroboration. An in-domain
+IDF computed against a general corpus (or a small legal-stopword list
+curated by hand, rather than a raw frequency cutoff) would likely behave
+differently — this run only tested the naive in-corpus-frequency version.
+
+### v4 — combined
+
+Compounds both effects: fewer graph edges to fall back on *and* a stricter
+lexical gate, so the two variants' losses mostly do not overlap and their
+damage adds up (25%, the worst of the four).
+
+### Recommendation
+
+**Keep v1 (baseline) as the default.** Neither engineered "precision" fix
+survives contact with the full test set, and combining them is worse than
+either alone — a clean, if humbling, ablation result. Both toggles stay in
+the codebase (`DRAFTLY_CASE_GRAPH_VERIFIED_ONLY`, `DRAFTLY_CASE_LEXICAL_IDF`,
+both default off) for reproducibility and as a documented dead end, not
+because either is recommended. Two concrete next ideas this comparison
+points to, neither implemented here: (1) IDF computed against a
+general-English reference frequency rather than in-corpus frequency, so
+"notary" stays legally salient without being penalized for being common
+*within* a legal corpus; (2) keep the topic bridge but weight it by topic
+specificity (how many cases share it) rather than dropping it wholesale.
+
 ## Reproducing this run
 
 ```bash
 uv run python -m draftly.case_retrieval build
 python scripts/similar-case-retrieval/build_test_set.py
-uv run python scripts/similar-case-retrieval/run_eval.py
+uv run python scripts/similar-case-retrieval/run_eval.py --variant v1  # baseline; do not rerun, see note below
+uv run python scripts/similar-case-retrieval/run_eval.py --variant v2  # verified-only graph
+uv run python scripts/similar-case-retrieval/run_eval.py --variant v3  # IDF lexical
+uv run python scripts/similar-case-retrieval/run_eval.py --variant v4  # combined
 ```
 
-Outputs land in `evaluation/runs/similar-case-retrieval-v1/`
+Outputs land in `evaluation/runs/similar-case-retrieval-{variant}/`
 (`config.json`, `predictions.csv`, `metrics.json`, including the
-`llm_graded_correctness` block). The five-way grading inputs are in
-`scripts/similar-case-retrieval/grading/`; the binary correct/incorrect
-verdicts are in `scripts/similar-case-retrieval/grading-binary/`.
+`llm_graded_correctness` block for each). The five-way grading inputs for
+v1 are in `scripts/similar-case-retrieval/grading/`; binary
+correct/incorrect verdicts for all four variants are in
+`scripts/similar-case-retrieval/grading-binary/{v1 files at the top level,
+v2,v3,v4 in their own subdirectories}`. Re-running `--variant v1` is safe
+(it reproduces the same result) but was deliberately not re-run when v2-v4
+were added, so the original v1 `metrics.json`'s `llm_graded_correctness`
+block — written before this comparison existed — is preserved untouched.
