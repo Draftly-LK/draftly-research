@@ -90,7 +90,56 @@ five-way rubric: `relevant`, `partially_relevant`, `irrelevant`,
 `correct_abstention`, `incorrect_abstention`. Sonnet aggregated the 20
 verdicts below without altering any of them.
 
+A second, independent pass then reduced the question to a strict binary:
+20 **fresh** Haiku subagents (one per query, no memory of the first pass)
+were each given only the query's fact pattern, outcome, and hits, and a
+rule for CORRECT vs. INCORRECT — CORRECT requires at least one retrieved
+case (for `similar_cases_found`) to genuinely address the same legal
+doctrine as the query, tolerating off-topic padding among the rest; an
+abstention is CORRECT only if a lawyer would genuinely expect no precedent
+to exist. Sonnet again aggregated these 20 verdicts without altering them.
+
 ## Results
+
+### Binary correctness check and accuracy
+
+| # | Source | Correct? | Why |
+| --- | --- | --- | --- |
+| scr-01 | April 2026 Q1.1 | ✅ | Somalatha and Dingiri Banda cases directly address gift law and succession. |
+| scr-02 | April 2026 Q1.3 | ✅ | Azhar Ghouse and Rankiri genuinely address intestate succession doctrine, though neither reaches the foreign-heir restriction specifically. |
+| scr-03 | April 2026 Q3.2 | ❌ | All hits are administrative/constitutional writs matched on "Divisional Secretary"; none address LDO mortgage-approval doctrine. |
+| scr-04 | April 2026 Q3.3 | ✅ | Cases before the Commissioner General of Lands are plausibly relevant to grant-cancellation precedent. |
+| scr-05 | April 2026 Q3.4 | ❌ | All hits are administrative land-official disputes matched on "land"/"commissioner"; none reach Third Schedule succession doctrine. |
+| scr-06 | April 2026 Q5.1 | ✅ | King v. Perera directly addresses Notaries Ordinance authority and deed attestation. |
+| scr-07 | April 2026 Q5.4 | ✅ | Carthelis v. Ranasinghe directly addresses Notaries Ordinance duties. |
+| scr-08 | April 2026 Q6.3 | ✅ | Hall v. Pelmadulla and Ebert Silva directly address non-registration of a notarial deed. |
+| scr-09 | April 2026 Q9.1 | ✅ | Gamini Ranasagalla Corea genuinely addresses Last Will execution requirements. |
+| scr-10 | October 2025 Q1.1 | ✅ | All five hits directly address fidei commissum, conditional gifts, and devolution. |
+| scr-11 | October 2025 Q2.2 | ✅ | All five hits directly address Kandyan-law gift irrevocability and revocation procedure. |
+| scr-12 | October 2025 Q3.1 | ✅ | Rohan De Soyza v. Jinendradasa genuinely addresses Prevention of Frauds Ordinance and deed validity. |
+| scr-13 | October 2025 Q3.2 | ✅ | King v. Perera (1930) directly addresses notarial authority to attest deeds outside one's own district. |
+| scr-14 | October 2025 Q4.2 | ✅ | Strong v. Marikar directly addresses caveats under the Registration of Documents Ordinance. |
+| scr-15 | October 2025 Q5.3 | ❌ | All hits are coincidental keyword matches (undue influence, land valuation, misconduct); none address power-of-attorney scope for leasing. |
+| scr-16 | October 2025 Q6.4 | ❌ | Four of five hits are unrelated fundamental-rights cases; the fifth shows no evidence of addressing prescriptive rights. |
+| scr-17 | October 2025 Q7.1 | ✅ | Lee v. Chandrawarnam directly addresses notary jurisdictional limits across districts. |
+| scr-18 | October 2025 Q9.3 | ✅ | Two hits directly address guardian/curator power to transact a minor's property. |
+| scr-19 | October 2025 Q9.4 | ❌ | All hits are lexical matches unrelated to a minor's legal capacity to purchase land or who signs on their behalf. |
+| scr-20 | October 2025 Q9.5 | ❌ | Retrieved cases address will validity/probate, not notary confidentiality/disclosure obligations. |
+
+**Accuracy: 14/20 = 70%.**
+
+The five-way rubric above and this binary check broadly agree: every query
+graded `relevant` or `partially_relevant` there is CORRECT here except
+scr-16 (a `partially_relevant` verdict where the one plausible hit's
+excerpt didn't actually confirm relevance on closer, binary-forced
+scrutiny), and all three `irrelevant` queries (scr-03, scr-05, scr-15) are
+INCORRECT here, plus two additional queries (scr-19, scr-20) that the
+five-way pass called "partially_relevant" but the binary pass judged to
+have no genuinely on-topic hit at all — the binary rubric is stricter
+because it forces a single yes/no call instead of allowing a hedged
+middle verdict.
+
+### Five-way appropriateness grading
 
 | Outcome | Count |
 | --- | ---: |
@@ -132,6 +181,12 @@ probe during development did).
 
 ## Reading these results honestly
 
+- **Binary accuracy is 70% (14/20).** That is the headline number for the
+  paper. It is stricter than it looks from the five-way breakdown alone,
+  because a forced yes/no call collapsed two `partially_relevant` queries
+  (scr-19, scr-20) into INCORRECT once a grader had to commit to whether
+  any single hit was genuinely on-topic rather than just similar in
+  vocabulary.
 - **0/20 fully irrelevant-and-returned-nothing-useful, but only 2/20 fully
   relevant.** The dominant outcome (15/20) is `partially_relevant`: the
   fusion reliably surfaces at least one genuinely on-point precedent, but
@@ -169,5 +224,7 @@ uv run python scripts/similar-case-retrieval/run_eval.py
 ```
 
 Outputs land in `evaluation/runs/similar-case-retrieval-v1/`
-(`config.json`, `predictions.csv`, `metrics.json`). The per-query grading
-JSON inputs used above are in `scripts/similar-case-retrieval/grading/`.
+(`config.json`, `predictions.csv`, `metrics.json`, including the
+`llm_graded_correctness` block). The five-way grading inputs are in
+`scripts/similar-case-retrieval/grading/`; the binary correct/incorrect
+verdicts are in `scripts/similar-case-retrieval/grading-binary/`.
