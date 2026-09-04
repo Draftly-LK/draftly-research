@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import unittest
+from unittest import mock
 
+from draftly.case_retrieval import graph as case_graph
 from draftly.case_retrieval.corpus import corpus_fingerprint, load_conveyancing_case_rows
 from draftly.case_retrieval.index import build_index
 from draftly.case_retrieval.models import CaseHit
-from draftly.case_retrieval.search import find_similar, fuse_rankings, query_tokens
+from draftly.case_retrieval.search import _rare_tokens, find_similar, fuse_rankings, query_tokens
 
 
 def make_hit(case_id: str) -> CaseHit:
@@ -110,6 +112,39 @@ class FindSimilarTests(unittest.TestCase):
 
         for hit in result.hits:
             self.assertTrue(set(hit.matched_signals) & {"lexical", "graph"})
+
+
+class GraphVerifiedOnlyToggleTests(unittest.TestCase):
+    def test_verified_only_drops_the_topic_bridge_and_shrinks_the_graph(self) -> None:
+        from draftly.case_retrieval.index import connect
+
+        with connect() as conn:
+            baseline_adjacency = case_graph.build_graph(conn, verified_only=False)
+            verified_adjacency = case_graph.build_graph(conn, verified_only=True)
+
+        baseline_edges = sum(len(n) for n in baseline_adjacency.values())
+        verified_edges = sum(len(n) for n in verified_adjacency.values())
+        self.assertLess(verified_edges, baseline_edges)
+        self.assertGreater(verified_edges, 0)
+
+    def test_verified_only_env_var_is_read_by_get_graph(self) -> None:
+        with mock.patch.dict("os.environ", {"DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "1"}):
+            self.assertTrue(case_graph._verified_only())
+        with mock.patch.dict("os.environ", {"DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "0"}):
+            self.assertFalse(case_graph._verified_only())
+
+
+class LexicalIdfToggleTests(unittest.TestCase):
+    def test_rare_tokens_drops_common_corpus_words(self) -> None:
+        # "land" is a near-universal term in this corpus; "fideicommissary"
+        # and "anuradhapura" are not.
+        tokens = ["land", "fideicommissary", "anuradhapura"]
+
+        rare = _rare_tokens(tokens)
+
+        self.assertNotIn("land", rare)
+        self.assertIn("fideicommissary", rare)
+        self.assertIn("anuradhapura", rare)
 
 
 if __name__ == "__main__":
