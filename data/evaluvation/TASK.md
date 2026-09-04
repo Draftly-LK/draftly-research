@@ -45,6 +45,7 @@ Two things, and the second is the one people miss.
 | Thing | Where |
 | --- | --- |
 | Parsed past papers, 16 papers / 144 questions / 589 parts | `data/evaluvation/parsed-pastpapers/` |
+| Atomic questions with backgrounds split out, 667 records | `data/evaluvation/parsed-pastpapers/atomic/` (built by `data/evaluvation/restructure_pastpapers.py`) |
 | Pre-sorted authoring worksheet, one row per part | `data/evaluvation/pastpaper-triage/worksheet.csv` |
 | Triage summary | `data/evaluvation/pastpaper-triage/triage-summary.json` |
 | Triage / build tool | `experiments/HiREC-inspired-retrieval/pastpaper_triage.py` |
