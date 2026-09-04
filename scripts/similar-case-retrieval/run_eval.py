@@ -7,27 +7,55 @@ metrics like the statute engine's evaluation.py does. It runs
 records outcome + hits; appropriateness grading is a separate, human/LLM
 step (see RESULTS.md), not computed here.
 
+`--variant` selects one of the 4-way architecture ablation configurations
+documented in RESULTS.md, by setting the two case_retrieval env-var toggles
+before running:
+
+    v1  baseline                          (both toggles off)
+    v2  verified-only statute/topic bridge (DRAFTLY_CASE_GRAPH_VERIFIED_ONLY)
+    v3  IDF-weighted lexical corroboration (DRAFTLY_CASE_LEXICAL_IDF)
+    v4  both combined
+
 Usage:
-    uv run python scripts/similar-case-retrieval/run_eval.py
+    uv run python scripts/similar-case-retrieval/run_eval.py --variant v1
 """
 
 from __future__ import annotations
 
+import argparse
 import csv
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 
-from draftly.case_retrieval.index import build_index
-from draftly.case_retrieval.models import CaseQuery
-from draftly.case_retrieval.search import find_similar
+VARIANTS = {
+    "v1": {"DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "0", "DRAFTLY_CASE_LEXICAL_IDF": "0"},
+    "v2": {"DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "1", "DRAFTLY_CASE_LEXICAL_IDF": "0"},
+    "v3": {"DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "0", "DRAFTLY_CASE_LEXICAL_IDF": "1"},
+    "v4": {"DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "1", "DRAFTLY_CASE_LEXICAL_IDF": "1"},
+}
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 TEST_QUERIES = SCRIPT_DIR / "test_queries.jsonl"
-OUTPUT_DIR = Path(__file__).resolve().parents[2] / "evaluation" / "runs" / "similar-case-retrieval-v1"
+RUNS_DIR = Path(__file__).resolve().parents[2] / "evaluation" / "runs"
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--variant", choices=sorted(VARIANTS), default="v1")
+    args = parser.parse_args()
+    os.environ.update(VARIANTS[args.variant])
+
+    # Imported after the env vars are set: build_index()/find_similar() read
+    # the toggles lazily on each call, but importing after setting them here
+    # keeps this script's behavior obviously correct even if that changes.
+    from draftly.case_retrieval.index import build_index
+    from draftly.case_retrieval.models import CaseQuery
+    from draftly.case_retrieval.search import find_similar
+
+    output_dir = RUNS_DIR / f"similar-case-retrieval-{args.variant}"
+
     queries = [json.loads(line) for line in TEST_QUERIES.read_text(encoding="utf-8").splitlines() if line.strip()]
     stats = build_index(force=False)
 
@@ -50,10 +78,12 @@ def main() -> None:
             }
         )
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    write_csv(OUTPUT_DIR / "predictions.csv", predictions)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    write_csv(output_dir / "predictions.csv", predictions)
 
     metrics = {
+        "variant": args.variant,
+        "variant_toggles": VARIANTS[args.variant],
         "queries": len(queries),
         "outcome_counts": outcome_counts,
         "similar_cases_found_rate": round(outcome_counts.get("similar_cases_found", 0) / len(queries), 4),
@@ -66,13 +96,14 @@ def main() -> None:
         "label": "development-only: no similar-case gold set exists; appropriateness is graded separately (RESULTS.md)",
         "generated_at": datetime.now(timezone.utc).isoformat(),
     }
-    (OUTPUT_DIR / "metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
-    (OUTPUT_DIR / "config.json").write_text(
+    (output_dir / "metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
+    (output_dir / "config.json").write_text(
         json.dumps(
             {
-                "run_id": "similar-case-retrieval-v1",
+                "run_id": f"similar-case-retrieval-{args.variant}",
                 "corpus": "conveyancing-flagged-cases-only",
                 "queries": str(TEST_QUERIES),
+                "variant_toggles": VARIANTS[args.variant],
                 "notes": (
                     "Queries are exam fact patterns from src/questions.md (see "
                     "build_test_set.py for selection rationale), not a labeled gold set."

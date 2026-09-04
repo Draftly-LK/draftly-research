@@ -1,0 +1,40 @@
+{
+  "variant": "v3",
+  "variant_toggles": {
+    "DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "0",
+    "DRAFTLY_CASE_LEXICAL_IDF": "1"
+  },
+  "queries": 20,
+  "outcome_counts": {
+    "similar_cases_found": 19,
+    "no_similar_cases": 1
+  },
+  "similar_cases_found_rate": 0.95,
+  "mean_hits_when_found": 4.47,
+  "corpus_fingerprint": "086c5012ce6a3491077694ab6d27897a1865d2515051c2a19dc915be8e58dfd0",
+  "label": "development-only: no similar-case gold set exists; appropriateness is graded separately (RESULTS.md)",
+  "generated_at": "2026-09-04T15:54:23.360171+00:00",
+  "llm_graded_correctness": {
+    "method": "20 independent Haiku subagents, one per query, binary correct/incorrect rubric (same rubric as v1, see RESULTS.md)",
+    "correct": 6,
+    "incorrect": 14,
+    "accuracy": 0.3,
+    "incorrect_query_ids": [
+      "scr-02",
+      "scr-03",
+      "scr-04",
+      "scr-05",
+      "scr-07",
+      "scr-09",
+      "scr-10",
+      "scr-13",
+      "scr-14",
+      "scr-15",
+      "scr-16",
+      "scr-18",
+      "scr-19",
+      "scr-20"
+    ],
+    "caveat": "LLM-graded appropriateness, not a human-verified or IR-standard metric; unverified per repo convention"
+  }
+}
