@@ -61,6 +61,13 @@ def score_ranked(ranked: dict[str, list[str]], gold: dict[str, set[str]],
     for qid, gold_ids in gold.items():
         if qid not in ranked:
             continue
+        # A question with no gold provisions has no rank-aware metric: recall
+        # has a zero denominator and MRR has nothing to find. Skipping is right
+        # rather than scoring 0 or 1, both of which would be a made-up number
+        # averaged into the headline. These questions are scored separately by
+        # score_absent_evidence.
+        if not gold_ids:
+            continue
         order = ranked[qid]
         entry: dict = {"retrieved": len(order), "gold": len(gold_ids)}
         for cutoff in cutoffs:
@@ -94,6 +101,10 @@ def score_sets(selected: dict[str, set[str]], gold: dict[str, set[str]],
     per_question = {}
     for qid, gold_ids in gold.items():
         if qid not in selected:
+            continue
+        # As in score_ranked: precision, recall and F1 are not defined against an
+        # empty gold set. Scored by score_absent_evidence instead.
+        if not gold_ids:
             continue
         chosen = selected[qid]
         hit = len(chosen & gold_ids)
@@ -161,6 +172,11 @@ def score_act_selection(selections: dict[str, list[str]],
     for qid, gold_ids in gold.items():
         if qid not in selections:
             continue
+        # No gold provisions means no gold Acts, so act recall has a zero
+        # denominator. Scoring it 0.0 would drag the mean down for a question
+        # that had nothing to find in the first place.
+        if not gold_ids:
+            continue
         chosen = list(selections[qid])
         chosen_set = set(chosen)
         gold_acts = {nid.split("/")[0] for nid in gold_ids}
@@ -211,18 +227,28 @@ def score_act_selection(selections: dict[str, list[str]],
 # --------------------------------------------------------------------------- #
 
 def score_calibration(claims: dict[str, tuple[bool, set[str]]],
-                      gold: dict[str, set[str]]) -> dict:
+                      gold: dict[str, set[str]],
+                      absent: set[str] | None = None) -> dict:
     """Confusion matrix of a completeness claim against whether it was true.
 
     `claims[qid]` is (claimed_complete, ids_the_claim_was_about). Ground truth is
     `gold_ids <= ids`.
+
+    `absent` names the questions whose evidence is not in the corpus at all. They
+    need explicit handling rather than falling out of the subset test, because an
+    empty gold set is a subset of everything: left alone they would score as
+    "evidence was complete" on every run, which is the exact opposite of the
+    truth and would quietly destroy the measurement these questions exist to
+    make possible. For them the evidence can never be complete, so `actual` is
+    False by construction.
     """
+    absent = absent or set()
     tp = fp = fn = tn = 0
     per_question = {}
     for qid, (claimed, ids) in claims.items():
         if qid not in gold:
             continue
-        actual = gold[qid].issubset(ids)
+        actual = False if qid in absent else gold[qid].issubset(ids)
         if claimed and actual:
             tp += 1
         elif claimed and not actual:
@@ -234,6 +260,7 @@ def score_calibration(claims: dict[str, tuple[bool, set[str]]],
         per_question[qid] = {
             "claimed_complete": claimed,
             "actually_complete": actual,
+            "evidence_absent_from_corpus": qid in absent,
             "missing": sorted(gold[qid] - ids),
         }
 
@@ -271,6 +298,69 @@ def score_calibration(claims: dict[str, tuple[bool, set[str]]],
         "mcc": round(mcc, 4),
         "degenerate": degenerate,
         "per_question": per_question,
+    }
+
+
+def score_absent_evidence(answers: list[dict], curations: list[dict],
+                          absent: set[str]) -> dict:
+    """How the pipeline behaves when the answer is not in the corpus.
+
+    This is the measurement the ranked and set metrics cannot make. For a
+    question whose governing statute is absent, there is no provision to rank
+    and no set to score; the only thing worth knowing is whether the pipeline
+    said so or answered anyway.
+
+    Abstaining is the correct outcome. Answering confidently from provisions
+    that do not govern the question is the failure this whole variant is meant
+    to be able to detect.
+    """
+    if not absent:
+        return {
+            "questions": 0,
+            "note": ("No absent-evidence questions in this gold set. Until some "
+                     "exist, the answerability metrics have no negative class "
+                     "and cannot distinguish a well-calibrated pipeline from a "
+                     "pipeline that always claims completeness."),
+        }
+
+    relevant = [a for a in answers if a["question_id"] in absent]
+    abstained = [a for a in relevant if not a["answerable"]]
+    answered = [a for a in relevant if a["answerable"]]
+    cited_anyway = [a for a in answered if a["cited_node_ids"]]
+    flagged_gap = [a for a in relevant if a.get("missing_evidence")]
+
+    by_question = {}
+    for record in curations:
+        if record["question_id"] in absent:
+            by_question.setdefault(record["question_id"], []).append(record)
+    said_incomplete = sum(
+        1 for records in by_question.values()
+        if any(not r["evidence_complete"] for r in records))
+
+    return {
+        "questions": len(relevant),
+        "abstained": len(abstained),
+        "answered_anyway": len(answered),
+        "answered_and_cited_provisions": len(cited_anyway),
+        "abstention_rate": (round(len(abstained) / len(relevant), 4)
+                            if relevant else None),
+        "named_the_gap_in_missing_evidence": len(flagged_gap),
+        "curator_said_incomplete_at_some_iteration": said_incomplete,
+        "note": (
+            "abstention_rate is the headline: the fraction of questions whose "
+            "governing statute is not in the corpus where the pipeline declined "
+            "to answer. answered_and_cited_provisions counts the dangerous "
+            "cases -- an answer built on provisions that do not govern the "
+            "question, presented with citations."),
+        "per_question": {
+            a["question_id"]: {
+                "answerable": a["answerable"],
+                "cited_node_ids": a["cited_node_ids"],
+                "missing_evidence": a.get("missing_evidence") or [],
+                "stopped_by": a.get("stopped_by"),
+            }
+            for a in relevant
+        },
     }
 
 
@@ -465,6 +555,12 @@ def main() -> int:
     gold_records = config.load_jsonl(args.gold)
     gold = {g["question_id"]: set(g["relevant_provisions"]) for g in gold_records}
     gold_meta = {g["question_id"]: g for g in gold_records}
+    # Questions whose governing statute is not in the corpus. Empty gold alone
+    # would be ambiguous, so the coverage field is authoritative and an empty
+    # provision list is accepted as corroboration.
+    absent = {g["question_id"] for g in gold_records
+              if (g.get("corpus_coverage") == "absent"
+                  or not g.get("relevant_provisions"))}
 
     metrics: dict = {
         "run_name": args.run_name,
@@ -582,14 +678,17 @@ def main() -> int:
         pool_ids = {qid: {n["node_id"] for n in first_pools[qid]["pool"]}
                     for qid in first if qid in first_pools}
 
+        def score_calibration_absent(claims, gold_map):
+            return score_calibration(claims, gold_map, absent)
+
         calibration = {"iteration": 1}
         for label, flag in (("model_claimed", "model_claimed_complete"),
                             ("derived", "derived_complete")):
             if pool_ids:
-                calibration[f"{label}_against_pool"] = score_calibration(
+                calibration[f"{label}_against_pool"] = score_calibration_absent(
                     {qid: (bool(r[flag]), pool_ids.get(qid, set()))
                      for qid, r in first.items()}, gold)
-            calibration[f"{label}_against_selection"] = score_calibration(
+            calibration[f"{label}_against_selection"] = score_calibration_absent(
                 {qid: (bool(r[flag]),
                        set(r.get("retained_node_ids") or r["relevant_node_ids"]))
                  for qid, r in first.items()}, gold)
@@ -602,6 +701,8 @@ def main() -> int:
         metrics["answerability_calibration"] = calibration
         metrics["sub_question_coverage_calibration"] = (
             score_sub_question_coverage(curations, gold))
+        metrics["absent_evidence"] = score_absent_evidence(
+            answers, curations, absent)
 
         curated = {a["question_id"]: set(a["curated_node_ids"]) for a in answers}
         scored = score_sets(curated, gold, "curated")
@@ -664,6 +765,20 @@ def main() -> int:
     metrics["notes"].append(
         "complete_evidence_in_pool is the ceiling for every downstream number in "
         "this file. No curation or answering metric can exceed it.")
+    if absent:
+        metrics["notes"].append(
+            f"{len(absent)} question(s) have no gold provisions because the "
+            "governing statute is not in the corpus. They are excluded from "
+            "every rank-aware and set-valued metric, where an empty gold set "
+            "has no defined value, and scored in the absent_evidence block "
+            "instead. In the calibration block their evidence counts as never "
+            "complete.")
+    else:
+        metrics["notes"].append(
+            "No absent-evidence questions in this gold set, so the answerability "
+            "metrics have no negative class: a claim of completeness is never "
+            "wrong and false_complete_rate is null by construction rather than "
+            "by good calibration.")
 
     config.write_json(metrics, run_dir / "metrics.json")
 
@@ -684,6 +799,11 @@ def main() -> int:
         block = metrics["iterations"]
         print(f"  iterations   : mean {block['mean_iterations']}, "
               f"stopped_by {block['stopped_by']}")
+    if metrics.get("absent_evidence", {}).get("questions"):
+        block = metrics["absent_evidence"]
+        print(f"  absent-ev    : {block['questions']} questions, "
+              f"abstained {block['abstained']}, "
+              f"answered anyway {block['answered_anyway']}")
     if "answerability_calibration" in metrics:
         for key, value in metrics["answerability_calibration"].items():
             if isinstance(value, dict) and "confusion" in value:

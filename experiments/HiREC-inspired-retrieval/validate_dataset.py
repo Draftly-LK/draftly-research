@@ -104,9 +104,18 @@ def check_gold(gold: list[dict], questions: list[dict], report: Report) -> None:
             report.error(where, f"missing field(s): {sorted(missing)}")
 
         provisions = record.get("relevant_provisions") or []
-        if not provisions:
-            report.error(where, "relevant_provisions is empty; every question "
-                                "needs at least one gold provision")
+        coverage_value = (record.get("corpus_coverage") or "").strip()
+        # An absent-evidence question is a legitimate and valuable kind of gold:
+        # the correct behaviour is to abstain, so there is nothing to cite and an
+        # empty list is the answer. Every other coverage value needs provisions.
+        if not provisions and coverage_value != "absent":
+            report.error(where, "relevant_provisions is empty; a question with "
+                                "no gold provisions must set corpus_coverage to "
+                                "'absent'")
+        if provisions and coverage_value == "absent":
+            report.error(where, "corpus_coverage is 'absent' but "
+                                f"{len(provisions)} provision(s) are listed; "
+                                "absent means the rule is not in the corpus")
         if len(set(provisions)) != len(provisions):
             duplicated = [p for p, c in Counter(provisions).items() if c > 1]
             report.error(where, f"relevant_provisions repeats: {duplicated}")
@@ -136,7 +145,8 @@ def check_gold(gold: list[dict], questions: list[dict], report: Report) -> None:
         elif len(citations) > len(provisions):
             report.warn(where, f"{len(citations)} citations but only "
                                f"{len(provisions)} provisions")
-        if not (record.get("answer") or "").strip():
+        if (not (record.get("answer") or "").strip()
+                and coverage_value != "absent"):
             report.warn(where, "answer text is empty")
 
 
@@ -172,7 +182,10 @@ def check_against_corpus(gold: list[dict], questions: list[dict],
             report.error(where, f"gold names unknown act_id(s): {sorted(unknown)}")
 
         n_hops = record.get("n_hops")
-        if isinstance(n_hops, int) and n_hops > len(provisions):
+        # An absent-evidence question legitimately has n_hops with no provisions:
+        # the hop count describes the question, not the corpus.
+        if (isinstance(n_hops, int) and n_hops > len(provisions)
+                and coverage_value != "absent"):
             report.warn(where, f"n_hops is {n_hops} but only "
                                f"{len(provisions)} provisions are listed")
 

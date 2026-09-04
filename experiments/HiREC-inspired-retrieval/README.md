@@ -25,30 +25,121 @@ and the corpus already carries all three levels. Expanding each BM25 hit to its
 whole section subtree is the analog of HiREC's `--use_full_page`, and it is what
 closes the gap.
 
+## The pipeline
+
+```text
+background + question
+   │
+   ├─ act selection ──────────── 21 Acts → ≤3.  Default "derived": free, no LLM call
+   │
+   ├─ BM25 seed ──────────────── top-20 provisions, scoped to those Acts
+   │
+   ├─ SECTION EXPANSION ──────── each hit → its whole section subtree = the "pool"
+   │                             (~90 provisions, grouped by section, ranked)
+   │
+   ├─ CURATION ──── ONE LLM call: which provisions are needed
+   │                            + is anything missing
+   │                            + what to search for next
+   │       │
+   │       ├─ complete? ──── yes ──→ answer
+   │       └─ no ──→ rewrite the gap as a query, re-retrieve, merge, curate again
+   │                 (max 3 iterations)
+   │
+   └─ ANSWER ─────────────────── from curated provisions only, citing node_ids
+```
+
+Section expansion is the step that matters, and it is deterministic and free.
+Everything above and below it is bounded LLM work over what that step produced.
+
+Two properties of the diagram are enforced in code rather than by convention.
+The refined query written by the curation stage feeds only the next retrieval —
+`curate_evidence()` and `answer()` have no parameter it could arrive through, so
+a generated string cannot reach a prompt that judges or cites evidence. And the
+answering stage sees the original question every time; the loop never mutates it.
+
 ## Results, 20-question smoke set
 
-Retrieval ceiling, no LLM, free:
+**Read the corpus version before comparing anything.** The statute corpus grew
+from 18 Acts / 5,342 provisions to 21 Acts / 6,211 provisions on 2026-08-26,
+when the National Housing Act, Urban Development Authority Act and Buddhist
+Temporalities Ordinance were ingested. Numbers taken either side of that are not
+comparable: re-running the same command on the larger corpus cost about 5 points
+of evidence precision, because there is more competing text to pull in.
+
+Retrieval ceiling, no LLM, free. Current corpus (21 Acts):
 
 | run | seed K | complete evidence in pool | mean pool | max pool |
 | --- | --- | --- | --- | --- |
-| `smoke-r0-k5` | 5 | 0.80 | 23 | 99 |
-| `smoke-r0-k10` | 10 | 0.90 | 52 | 116 |
-| `smoke-r0-k20` | 20 | **1.00** | 91 | 179 |
+| `smoke-r0-k5` | 5 | 0.80 | 25 | 99 |
+| `smoke-r0-k10` | 10 | 0.90 | 50 | 116 |
+| `smoke-r0-k20` | 20 | **1.00** | 90 | 181 |
+| `smoke-r0-k30` | 30 | **1.00** | 123 | 219 |
 
-Full pipeline, against the flat baselines on the same questions, corpus and
-answering prompt:
+K=20 is the operating point: the first value where complete evidence is
+available for every question. K=30 buys nothing and starts truncating pools.
 
-| | B0 | B1 | B1 at matched pool | `smoke-h` (1 iter) | `smoke-full` (≤3 iter) |
-| --- | --- | --- | --- | --- | --- |
-| complete evidence available | 0.90 | 0.90 | 0.90 | **1.00** | **1.00** |
-| evidence recall | — | 0.948 | 0.938 | **1.00** | **1.00** |
-| complete-evidence accuracy | — | 0.85 | 0.85 | **1.00** | **1.00** |
-| evidence precision | — | 0.990 | 0.978 | 0.865 | 0.911 |
-| evidence F1 | — | 0.965 | 0.954 | 0.899 | 0.941 |
-| citation F1 | — | 0.965 | 0.958 | 0.948 | 0.953 |
-| exact-set accuracy | — | 0.85 | 0.85 | 0.70 | 0.75 |
-| mean iterations | — | — | — | 1.0 | 1.2 |
-| errors | 0 | 0 | 0 | 0 | 0 |
+Full pipeline. All four `smoke-*` columns are on the current corpus; the three
+baselines are **not**, and are marked accordingly:
+
+| | B0 † | B1 † | B1 matched † | `smoke-h` | `smoke-act-llm` | `smoke-full` | `smoke-final` |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| act selector | — | — | — | derived | llm | derived | llm |
+| max iterations | — | 1 | 1 | 1 | 1 | 3 | 3 |
+| complete evidence available | 0.90 | 0.90 | 0.90 | **1.00** | **1.00** | **1.00** | **1.00** |
+| evidence recall | — | 0.948 | 0.938 | **1.00** | **1.00** | **1.00** | **1.00** |
+| complete-evidence accuracy | — | 0.85 | 0.85 | **1.00** | **1.00** | **1.00** | **1.00** |
+| evidence precision | — | 0.990 | 0.978 | 0.817 | 0.890 | 0.838 | 0.825 |
+| evidence F1 | — | 0.965 | 0.954 | 0.852 | 0.915 | 0.870 | 0.861 |
+| citation F1 | — | 0.965 | 0.958 | 0.903 | 0.919 | 0.966 | 0.923 |
+| exact-set accuracy | — | 0.85 | 0.85 | 0.65 | 0.75 | 0.65 | 0.65 |
+| act precision | — | — | — | 0.558 | 0.858 | 0.558 | 0.867 |
+| mean acts selected | — | — | — | 2.15 | 1.35 | 2.15 | 1.30 |
+| gold lost to act filter | — | — | — | 0 | 0 | 0 | 0 |
+| gold lost to re-filtering | — | — | — | 0 | 0 | 0 | 0 |
+| mean iterations | — | — | — | 1.0 | 1.0 | 1.2 | 1.2 |
+| cost (USD) | 0 | ~0.05 | ~0.06 | 0.114 | 0.130 | 0.129 | 0.154 |
+| latency per question | — | — | — | 14.2s | 19.0s | 15.5s | 17.1s |
+| errors | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+† measured on the 18-Act corpus. Not comparable to the unmarked columns.
+
+### What is established, and what is not
+
+**Established.** Complete evidence available and evidence recall are **1.00 in
+every configuration**. That is the result: the section-expanded pool always
+contains every gold provision, and the curator always selects all of them. The
+retrieval half is deterministic and reproduces exactly across runs — identical
+pool recall@20 for the two `derived` runs (0.925) and for the two `llm` runs
+(0.942). Errors are zero throughout, and `gold_lost` to re-filtering is zero, so
+HiREC's re-filter-don't-freeze policy never costs a provision here and
+`--freeze-evidence` is unnecessary.
+
+**Not established: any precision or F1 difference between these four
+configurations.** Evidence precision spans 0.817–0.890 across them, and the
+configuration combining the two apparent improvements (`smoke-final`: LLM acts
+*and* 3 iterations) lands in the middle, worse than either component alone. The
+iteration effect even changes sign depending on the act selector — with
+`derived` it helps precision (0.817 → 0.838), with `llm` it hurts
+(0.890 → 0.825). Two "improvements" that do not compose, and whose direction
+flips, is what noise looks like.
+
+At 20 questions one question moves any mean by 5 points, which is most of the
+observed 7-point spread. There are no repeat runs of any configuration, so the
+run-to-run variance is unmeasured and cannot be separated from the config
+effect. **Do not quote a best configuration from this table.** Establishing one
+needs either repeated runs per config or the larger past-paper question set.
+
+The LLM act selector is worth keeping in the running for a reason that does not
+depend on the noisy metrics: it selects 1.3 Acts against `derived`'s 2.15,
+loses no gold at any seed K, and picks the single correct Act on 14 of 20
+questions where `derived` drags in irrelevant ones on 13 of 20 — Tea and Rubber
+Estates for a title-registration question, National Housing for a Companies Act
+one. Whether that tidiness converts into better answers is the open question.
+
+One side effect worth knowing: act scoping concentrates all 20 BM25 seeds inside
+fewer Acts, so they spread across more distinct sections there and the *maximum*
+pool grows (204 against 181) even though the mean shrinks. Two questions
+truncate under `llm`. `max_pool_records` is closer to binding than it was.
 
 Three things to read out of that.
 
@@ -59,18 +150,20 @@ the obvious alternative explanation — B1 given a candidate list the same size 
 this pool scores exactly what it scored before (0.85 / 0.90), so the gain is the
 section structure, not the extra candidates.
 
-**It is paid for in precision.** The curator selects 2.55 provisions per question
-against a gold mean of 2.2, so precision falls from 0.99 to 0.87–0.91 and F1
-lands slightly *below* B1's. For a lawyer-in-the-loop product that is the right
-trade — a missing provision is a wrong answer, an extra one is a moment's reading
-— but it is a trade, not a free win.
+**It is paid for in precision.** The curator selects more provisions than the
+gold mean of 2.2, so precision falls from B1's 0.99 to 0.82–0.89 and F1 lands
+*below* B1's. For a lawyer-in-the-loop product that is the right trade — a
+missing provision is a wrong answer, an extra one is a moment's reading — but it
+is a trade, not a free win, and precision is where the remaining work is.
 
-**The iteration earns its keep, though not the way the paper suggests.** Two
-questions ran the full budget, and at iterations 2 and 3 the curator selected
-*fewer* provisions (1.5 vs 2.55) while recall stayed at 1.00. So the loop is not
-finding missing evidence — the pool already had everything — it is tightening an
-over-broad selection. Precision 0.865 → 0.911, exact-set 0.70 → 0.75, citation
-exact match 0.80 → 0.85.
+**The iteration does something, but not what the paper intends.** Two questions
+run the full budget, and at iterations 2 and 3 the curator selects *fewer*
+provisions (1.5 against 2.5) while recall stays at 1.00. It is not finding
+missing evidence — the pool already had everything — it is narrowing an
+over-broad selection. Both questions exhaust the budget rather than converging,
+so the loop never satisfies its own completeness gate on them. Whether the
+narrowing is a real gain is exactly what the variance problem above leaves
+unresolved.
 
 ### The answerability finding
 
@@ -96,6 +189,17 @@ is not in the corpus.
 
 `iterations.gold_lost` is 0 everywhere, so HiREC's re-filter-don't-freeze policy
 never cost a provision on this set and `--freeze-evidence` is not needed.
+
+Scoring now supports absent-evidence questions, so the negative class can be
+added as soon as it exists. A question with `corpus_coverage: absent` carries no
+gold provisions; it is excluded from every rank-aware and set-valued metric
+(where an empty gold set has no defined value rather than a value of zero), and
+scored instead in the `absent_evidence` block on the only thing that matters
+there — did the pipeline abstain, or answer anyway and cite provisions that do
+not govern the question. In the calibration block such a question counts as
+never complete, which it must: an empty gold set is a subset of everything, so
+left to the ordinary subset test it would score as "the evidence was complete"
+on every run and silently inflate the very metric it exists to fix.
 
 ## Commands
 

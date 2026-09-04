@@ -1,0 +1,47 @@
+{
+  "questions": 20,
+  "api_calls": 68,
+  "failed_calls": 0,
+  "wall_clock_s": 341.415,
+  "api_time_s": 334.678,
+  "mean_latency_s_per_call": 4.922,
+  "p95_latency_s_per_call": 12.988,
+  "max_latency_s_per_call": 18.081,
+  "mean_latency_s_per_question": 17.071,
+  "input_tokens": 265332,
+  "output_tokens": 43989,
+  "reasoning_tokens": 30553,
+  "cost_usd": 0.154311,
+  "cost_usd_per_question": 0.007716,
+  "rates_usd_per_million": {
+    "input": 0.25,
+    "output": 2.0
+  },
+  "rates_source": "hand-entered gpt-5-mini-class list price, not verified against the provider price list on any particular date",
+  "by_stage": {
+    "act_selection": {
+      "calls": 20,
+      "elapsed_s": 49.533,
+      "input_tokens": 43759,
+      "output_tokens": 3821
+    },
+    "evidence_curation": {
+      "calls": 24,
+      "elapsed_s": 205.075,
+      "input_tokens": 197484,
+      "output_tokens": 29934
+    },
+    "final_answer": {
+      "calls": 20,
+      "elapsed_s": 71.907,
+      "input_tokens": 22111,
+      "output_tokens": 9542
+    },
+    "query_transform": {
+      "calls": 4,
+      "elapsed_s": 8.163,
+      "input_tokens": 1978,
+      "output_tokens": 692
+    }
+  }
+}

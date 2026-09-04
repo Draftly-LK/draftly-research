@@ -1,5 +1,5 @@
 {
-  "run_name": "smoke-full",
+  "run_name": "smoke-final",
   "gold_path": "experiments/koblex-inspired-retrieval/data/smoke_test_20_gold.jsonl",
   "gold_questions": 20,
   "matching": "exact node_id",
@@ -11,8 +11,8 @@
   ],
   "hierarchy_pool_ranked": {
     "summary": {
-      "recall@20": 0.925,
-      "recall@50": 0.975,
+      "recall@20": 0.9417,
+      "recall@50": 1.0,
       "recall@100": 1.0,
       "recall@200": 1.0,
       "mrr": 0.9167,
@@ -31,17 +31,17 @@
         "complete_in_candidates": true
       },
       "smoke-q002": {
-        "retrieved": 79,
+        "retrieved": 38,
         "gold": 2,
         "recall@20": 0.5,
-        "recall@50": 0.5,
+        "recall@50": 1.0,
         "recall@100": 1.0,
         "recall@200": 1.0,
         "reciprocal_rank": 1.0,
         "complete_in_candidates": true
       },
       "smoke-q003": {
-        "retrieved": 33,
+        "retrieved": 30,
         "gold": 2,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -51,7 +51,7 @@
         "complete_in_candidates": true
       },
       "smoke-q004": {
-        "retrieved": 60,
+        "retrieved": 58,
         "gold": 3,
         "recall@20": 0.6667,
         "recall@50": 1.0,
@@ -61,7 +61,7 @@
         "complete_in_candidates": true
       },
       "smoke-q005": {
-        "retrieved": 78,
+        "retrieved": 68,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -71,7 +71,7 @@
         "complete_in_candidates": true
       },
       "smoke-q006": {
-        "retrieved": 47,
+        "retrieved": 45,
         "gold": 2,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -81,7 +81,7 @@
         "complete_in_candidates": true
       },
       "smoke-q007": {
-        "retrieved": 55,
+        "retrieved": 49,
         "gold": 5,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -111,7 +111,7 @@
         "complete_in_candidates": true
       },
       "smoke-q010": {
-        "retrieved": 96,
+        "retrieved": 24,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -151,7 +151,7 @@
         "complete_in_candidates": true
       },
       "smoke-q014": {
-        "retrieved": 181,
+        "retrieved": 204,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -161,7 +161,7 @@
         "complete_in_candidates": true
       },
       "smoke-q015": {
-        "retrieved": 90,
+        "retrieved": 93,
         "gold": 3,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -171,7 +171,7 @@
         "complete_in_candidates": true
       },
       "smoke-q016": {
-        "retrieved": 97,
+        "retrieved": 110,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -181,7 +181,7 @@
         "complete_in_candidates": true
       },
       "smoke-q017": {
-        "retrieved": 97,
+        "retrieved": 83,
         "gold": 2,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -191,7 +191,7 @@
         "complete_in_candidates": true
       },
       "smoke-q018": {
-        "retrieved": 136,
+        "retrieved": 131,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -201,9 +201,9 @@
         "complete_in_candidates": true
       },
       "smoke-q019": {
-        "retrieved": 154,
+        "retrieved": 182,
         "gold": 3,
-        "recall@20": 0.6667,
+        "recall@20": 1.0,
         "recall@50": 1.0,
         "recall@100": 1.0,
         "recall@200": 1.0,
@@ -224,7 +224,7 @@
     "grouped_by_question_type": {
       "application": {
         "questions": 14,
-        "recall@20": 0.9524,
+        "recall@20": 0.9762,
         "recall@50": 1.0,
         "recall@100": 1.0,
         "recall@200": 1.0,
@@ -243,7 +243,7 @@
       "recall": {
         "questions": 5,
         "recall@20": 0.9,
-        "recall@50": 0.9,
+        "recall@50": 1.0,
         "recall@100": 1.0,
         "recall@200": 1.0,
         "reciprocal_rank": 0.9,
@@ -262,8 +262,8 @@
       },
       "2": {
         "questions": 6,
-        "recall@20": 0.8611,
-        "recall@50": 0.9167,
+        "recall@20": 0.9167,
+        "recall@50": 1.0,
         "recall@100": 1.0,
         "recall@200": 1.0,
         "reciprocal_rank": 0.8333,
@@ -282,25 +282,54 @@
   },
   "pool_shape": {
     "iteration": 1,
-    "mean_pool_size": 88.05,
-    "max_pool_size": 181,
-    "mean_pool_chars": 28440.8,
-    "max_pool_chars": 70447,
-    "mean_sections": 13.2,
-    "truncated_questions": []
+    "mean_pool_size": 83.65,
+    "max_pool_size": 204,
+    "mean_pool_chars": 26208.25,
+    "max_pool_chars": 73003,
+    "mean_sections": 12.6,
+    "truncated_questions": [
+      "smoke-q014",
+      "smoke-q018"
+    ]
   },
   "act_selection": {
     "summary": {
       "act_recall": 1.0,
-      "act_precision": 0.5583,
+      "act_precision": 0.8667,
       "act_set_complete": 1.0,
-      "mean_acts_selected": 2.15,
+      "mean_acts_selected": 1.3,
       "gold_provisions_excluded_by_act_filter": 0,
       "questions": 20
     },
     "note": "Most of these questions cite a single Act, so act recall saturates and discriminates poorly between selectors. gold_provisions_excluded_by_act_filter is the number that matters: any value above zero means the act stage is losing evidence the unscoped search would have reached.",
     "per_question": {
       "smoke-q001": {
+        "gold_acts": [
+          "21-1998"
+        ],
+        "selected_acts": [
+          "21-1998",
+          "17-2002"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 0.5,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "smoke-q002": {
+        "gold_acts": [
+          "21-1998"
+        ],
+        "selected_acts": [
+          "21-1998",
+          "17-2002"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 0.5,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "smoke-q003": {
         "gold_acts": [
           "21-1998"
         ],
@@ -312,7 +341,55 @@
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
-      "smoke-q002": {
+      "smoke-q004": {
+        "gold_acts": [
+          "21-1998"
+        ],
+        "selected_acts": [
+          "21-1998"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 1.0,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "smoke-q005": {
+        "gold_acts": [
+          "21-1998"
+        ],
+        "selected_acts": [
+          "21-1998"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 1.0,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "smoke-q006": {
+        "gold_acts": [
+          "21-1998"
+        ],
+        "selected_acts": [
+          "21-1998"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 1.0,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "smoke-q007": {
+        "gold_acts": [
+          "21-1998"
+        ],
+        "selected_acts": [
+          "21-1998"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 1.0,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "smoke-q008": {
         "gold_acts": [
           "21-1998"
         ],
@@ -326,93 +403,13 @@
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
-      "smoke-q003": {
-        "gold_acts": [
-          "21-1998"
-        ],
-        "selected_acts": [
-          "21-1998",
-          "21-1931"
-        ],
-        "act_recall": 1.0,
-        "act_precision": 0.5,
-        "act_set_complete": true,
-        "gold_provisions_lost": []
-      },
-      "smoke-q004": {
-        "gold_acts": [
-          "21-1998"
-        ],
-        "selected_acts": [
-          "21-1998",
-          "7-2007"
-        ],
-        "act_recall": 1.0,
-        "act_precision": 0.5,
-        "act_set_complete": true,
-        "gold_provisions_lost": []
-      },
-      "smoke-q005": {
-        "gold_acts": [
-          "21-1998"
-        ],
-        "selected_acts": [
-          "21-1998",
-          "11-1973"
-        ],
-        "act_recall": 1.0,
-        "act_precision": 0.5,
-        "act_set_complete": true,
-        "gold_provisions_lost": []
-      },
-      "smoke-q006": {
-        "gold_acts": [
-          "21-1998"
-        ],
-        "selected_acts": [
-          "21-1998",
-          "2-1958",
-          "19-1931"
-        ],
-        "act_recall": 1.0,
-        "act_precision": 0.3333,
-        "act_set_complete": true,
-        "gold_provisions_lost": []
-      },
-      "smoke-q007": {
-        "gold_acts": [
-          "21-1998"
-        ],
-        "selected_acts": [
-          "21-1998",
-          "30-1968",
-          "7-2007"
-        ],
-        "act_recall": 1.0,
-        "act_precision": 0.3333,
-        "act_set_complete": true,
-        "gold_provisions_lost": []
-      },
-      "smoke-q008": {
-        "gold_acts": [
-          "21-1998"
-        ],
-        "selected_acts": [
-          "21-1998",
-          "11-1973"
-        ],
-        "act_recall": 1.0,
-        "act_precision": 0.5,
-        "act_set_complete": true,
-        "gold_provisions_lost": []
-      },
       "smoke-q009": {
         "gold_acts": [
           "15-1876"
         ],
         "selected_acts": [
-          "15-1876",
-          "1-1911"
+          "1-1911",
+          "15-1876"
         ],
         "act_recall": 1.0,
         "act_precision": 0.5,
@@ -425,11 +422,10 @@
         ],
         "selected_acts": [
           "21-1844",
-          "7-2007",
           "15-1876"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.3333,
+        "act_precision": 0.5,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -474,12 +470,10 @@
           "11-1973"
         ],
         "selected_acts": [
-          "11-1973",
-          "21-1998",
-          "2-1958"
+          "11-1973"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.3333,
+        "act_precision": 1.0,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -488,11 +482,10 @@
           "17-2002"
         ],
         "selected_acts": [
-          "17-2002",
-          "21-1998"
+          "17-2002"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.5,
+        "act_precision": 1.0,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -501,12 +494,10 @@
           "17-2002"
         ],
         "selected_acts": [
-          "17-2002",
-          "21-1998",
-          "7-2007"
+          "17-2002"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.3333,
+        "act_precision": 1.0,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -515,12 +506,10 @@
           "7-2007"
         ],
         "selected_acts": [
-          "7-2007",
-          "37-1954",
-          "11-1973"
+          "7-2007"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.3333,
+        "act_precision": 1.0,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -529,11 +518,10 @@
           "7-2007"
         ],
         "selected_acts": [
-          "7-2007",
-          "2-1958"
+          "7-2007"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.5,
+        "act_precision": 1.0,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -542,12 +530,10 @@
           "7-2007"
         ],
         "selected_acts": [
-          "7-2007",
-          "17-2002",
-          "19-1931"
+          "7-2007"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.3333,
+        "act_precision": 1.0,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -564,7 +550,7 @@
         "gold_provisions_lost": []
       }
     },
-    "selector": "derived"
+    "selector": "llm"
   },
   "iterations": {
     "mean_iterations": 1.2,
@@ -579,8 +565,8 @@
     "per_iteration": {
       "1": {
         "questions": 20,
-        "mean_selected": 2.5,
-        "mean_pool_size": 88.05,
+        "mean_selected": 2.6,
+        "mean_pool_size": 83.65,
         "selection_recall": 1.0,
         "complete_evidence_rate": 0.9,
         "forced_answerable": 0,
@@ -590,7 +576,7 @@
       "2": {
         "questions": 2,
         "mean_selected": 1.5,
-        "mean_pool_size": 45.0,
+        "mean_pool_size": 26.5,
         "selection_recall": 1.0,
         "complete_evidence_rate": 0.0,
         "forced_answerable": 0,
@@ -600,7 +586,7 @@
       "3": {
         "questions": 2,
         "mean_selected": 1.5,
-        "mean_pool_size": 46.5,
+        "mean_pool_size": 26.5,
         "selection_recall": 1.0,
         "complete_evidence_rate": 0.0,
         "forced_answerable": 0,
@@ -1161,9 +1147,9 @@
     "note": "against_pool is what the curation prompt actually asks the model to judge: does the pool contain every rule the question needs. against_selection asks the stricter question of whether the evidence it will answer from is complete. Both are reported because the two readings can disagree."
   },
   "sub_question_coverage_calibration": {
-    "points_marked_covered": 50,
-    "covered_points_naming_gold": 49,
-    "covered_precision": 0.98,
+    "points_marked_covered": 53,
+    "covered_points_naming_gold": 51,
+    "covered_precision": 0.9623,
     "points_marked_not_covered": 0,
     "not_covered_with_gold_genuinely_absent": 0,
     "not_covered_precision": null,
@@ -1175,9 +1161,9 @@
   },
   "curated_provisions": {
     "summary": {
-      "precision": 0.8377,
+      "precision": 0.8252,
       "recall": 1.0,
-      "f1": 0.8702,
+      "f1": 0.8608,
       "complete_evidence_accuracy": 1.0,
       "exact_set_accuracy": 0.65,
       "questions": 20
@@ -1211,13 +1197,13 @@
         "exact_set": true
       },
       "smoke-q004": {
-        "curated_count": 3,
+        "curated_count": 6,
         "gold": 3,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 1.0,
-        "f1": 1.0,
+        "f1": 0.6667,
         "complete_evidence": true,
-        "exact_set": true
+        "exact_set": false
       },
       "smoke-q005": {
         "curated_count": 1,
@@ -1265,11 +1251,11 @@
         "exact_set": true
       },
       "smoke-q010": {
-        "curated_count": 25,
+        "curated_count": 24,
         "gold": 1,
-        "precision": 0.04,
+        "precision": 0.0417,
         "recall": 1.0,
-        "f1": 0.0769,
+        "f1": 0.08,
         "complete_evidence": true,
         "exact_set": false
       },
@@ -1310,13 +1296,13 @@
         "exact_set": true
       },
       "smoke-q015": {
-        "curated_count": 4,
+        "curated_count": 3,
         "gold": 3,
-        "precision": 0.75,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1": 0.8571,
+        "f1": 1.0,
         "complete_evidence": true,
-        "exact_set": false
+        "exact_set": true
       },
       "smoke-q016": {
         "curated_count": 1,
@@ -1368,11 +1354,11 @@
     "grouped_by_question_type": {
       "application": {
         "questions": 14,
-        "precision": 0.8002,
+        "precision": 0.7646,
         "recall": 1.0,
-        "f1": 0.8327,
+        "f1": 0.8091,
         "complete_evidence": 1.0,
-        "exact_set": 0.6429
+        "exact_set": 0.5714
       },
       "calculation": {
         "questions": 1,
@@ -1384,21 +1370,21 @@
       },
       "recall": {
         "questions": 5,
-        "precision": 0.91,
+        "precision": 0.96,
         "recall": 1.0,
-        "f1": 0.9492,
+        "f1": 0.9778,
         "complete_evidence": 1.0,
-        "exact_set": 0.6
+        "exact_set": 0.8
       }
     },
     "grouped_by_n_hops": {
       "1": {
         "questions": 11,
-        "precision": 0.8445,
+        "precision": 0.8674,
         "recall": 1.0,
-        "f1": 0.8728,
+        "f1": 0.8861,
         "complete_evidence": 1.0,
-        "exact_set": 0.7273
+        "exact_set": 0.8182
       },
       "2": {
         "questions": 6,
@@ -1410,18 +1396,18 @@
       },
       "3": {
         "questions": 3,
-        "precision": 0.9444,
+        "precision": 0.7778,
         "recall": 1.0,
-        "f1": 0.9697,
+        "f1": 0.8586,
         "complete_evidence": 1.0,
-        "exact_set": 0.6667
+        "exact_set": 0.3333
       }
     }
   },
   "answer_citations": {
-    "citation_precision": 0.9442,
-    "citation_recall": 1.0,
-    "citation_f1": 0.9661,
+    "citation_precision": 0.9067,
+    "citation_recall": 0.95,
+    "citation_f1": 0.9232,
     "citation_exact_match": 0.8,
     "questions": 20,
     "per_question": {
@@ -1552,12 +1538,12 @@
         "exact_set": true
       },
       "smoke-q015": {
-        "cited_count": 4,
+        "cited_count": 0,
         "gold": 3,
-        "precision": 0.75,
-        "recall": 1.0,
-        "f1": 0.8571,
-        "complete_evidence": true,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "complete_evidence": false,
         "exact_set": false
       },
       "smoke-q016": {
@@ -1609,8 +1595,8 @@
   },
   "answerability": {
     "answers_written": 20,
-    "answerable": 20,
-    "abstained": 0
+    "answerable": 19,
+    "abstained": 1
   },
   "koblex_baseline_calibration": {
     "available": true,
