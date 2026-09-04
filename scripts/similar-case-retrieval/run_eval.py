@@ -7,14 +7,24 @@ metrics like the statute engine's evaluation.py does. It runs
 records outcome + hits; appropriateness grading is a separate, human/LLM
 step (see RESULTS.md), not computed here.
 
-`--variant` selects one of the 4-way architecture ablation configurations
-documented in RESULTS.md, by setting the two case_retrieval env-var toggles
+`--variant` selects one of the architecture ablation configurations
+documented in RESULTS.md, by setting case_retrieval's env-var toggles
 before running:
 
-    v1  baseline                          (both toggles off)
-    v2  verified-only statute/topic bridge (DRAFTLY_CASE_GRAPH_VERIFIED_ONLY)
-    v3  IDF-weighted lexical corroboration (DRAFTLY_CASE_LEXICAL_IDF)
-    v4  both combined
+    v1              baseline                            (all toggles off)
+    v2              verified-only statute/topic bridge   (GRAPH_VERIFIED_ONLY)
+    v3              IDF-weighted lexical corroboration   (LEXICAL_IDF)
+    v4              v2 + v3 combined
+    v1-rebaseline   baseline rerun after catchwords were added to the
+                    index/lexical/dense channels unconditionally (see
+                    corpus.py) -- v5/v6/v7 below are measured against this,
+                    not the original v1, since the code underneath v1
+                    changed
+    v5              catchword-phrase case<->case edges   (CATCHWORD_EDGES)
+    v6              fanout-discounted section edges      (GRAPH_FANOUT_WEIGHT)
+    v7              catchword-derived statute links      (CATCHWORD_STATUTE_LINKS)
+    v8              best-of v5/v6/v7 combined (only meaningful once those
+                    are measured)
 
 Usage:
     uv run python scripts/similar-case-retrieval/run_eval.py --variant v1
@@ -29,11 +39,33 @@ import os
 from datetime import datetime, timezone
 from pathlib import Path
 
+_ALL_OFF = {
+    "DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "0",
+    "DRAFTLY_CASE_LEXICAL_IDF": "0",
+    "DRAFTLY_CASE_GRAPH_FANOUT_WEIGHT": "0",
+    "DRAFTLY_CASE_CATCHWORD_EDGES": "0",
+    "DRAFTLY_CASE_CATCHWORD_STATUTE_LINKS": "0",
+}
+
+
+def _toggles(**on: str) -> dict[str, str]:
+    merged = dict(_ALL_OFF)
+    merged.update(on)
+    return merged
+
+
 VARIANTS = {
-    "v1": {"DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "0", "DRAFTLY_CASE_LEXICAL_IDF": "0"},
-    "v2": {"DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "1", "DRAFTLY_CASE_LEXICAL_IDF": "0"},
-    "v3": {"DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "0", "DRAFTLY_CASE_LEXICAL_IDF": "1"},
-    "v4": {"DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "1", "DRAFTLY_CASE_LEXICAL_IDF": "1"},
+    "v1": _toggles(),
+    "v2": _toggles(DRAFTLY_CASE_GRAPH_VERIFIED_ONLY="1"),
+    "v3": _toggles(DRAFTLY_CASE_LEXICAL_IDF="1"),
+    "v4": _toggles(DRAFTLY_CASE_GRAPH_VERIFIED_ONLY="1", DRAFTLY_CASE_LEXICAL_IDF="1"),
+    "v1-rebaseline": _toggles(),
+    "v5": _toggles(DRAFTLY_CASE_CATCHWORD_EDGES="1"),
+    "v6": _toggles(DRAFTLY_CASE_GRAPH_FANOUT_WEIGHT="1"),
+    "v7": _toggles(DRAFTLY_CASE_CATCHWORD_STATUTE_LINKS="1"),
+    "v8": _toggles(
+        DRAFTLY_CASE_CATCHWORD_EDGES="1", DRAFTLY_CASE_GRAPH_FANOUT_WEIGHT="1", DRAFTLY_CASE_CATCHWORD_STATUTE_LINKS="1"
+    ),
 }
 
 SCRIPT_DIR = Path(__file__).resolve().parent
