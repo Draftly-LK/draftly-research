@@ -2,10 +2,10 @@
 
 The 52 statutes named in the curriculum's Category 1 to 3 tables,
 the same set as `PRIMARY-STATUES.md`, with the local files held for each and
-every amending instrument known for it (348 in total, of which
-224 are held locally).
+every amending instrument known for it (349 in total, of which
+225 are held locally).
 
-45 of the 52 have their sections extracted; the rest are
+48 of the 52 have their sections extracted; the rest are
 marked below. Statutes the corpus holds but the curriculum does not name are
 listed in `SECONDARY-STATUES.md` and are out of scope here.
 
@@ -52,7 +52,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | Cat | Statute | Citation | Sections | Amendments known | Held | Final |
 | --- | --- | --- | ---: | ---: | ---: | --- |
 | 1 | Apartment Ownership Law | No. 11 of 1973 | 26 | 4 | 4 | yes |
-| 1 | Civil Procedure Code | No. 2 of 1889 | 801 | 59 | 38 | - |
+| 1 | Civil Procedure Code | No. 2 of 1889 | 853 | 59 | 38 | yes |
 | 1 | Companies Act | No. 7 of 2007 | 534 | 0 | 0 | yes |
 | 1 | Execution of Deeds Ordinance | No. 17 of 1852 | 7 | 1 | 0 | yes |
 | 1 | Kandyan Succession Ordinance | No. 23 of 1917 | 4 | 0 | 0 | yes |
@@ -74,9 +74,9 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Western Province Financial Statute | No. 6 of 1990 | 124 | 0 | 0 | yes |
 | 1 | Wills Ordinance | No. 21 of 1844 | 9 | 5 | 2 | yes |
 | 2 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 44 | 11 | 8 | yes |
-| 2 | Definition of Boundaries Ordinance | No. 1 of 1844 | 13 | 5 | 1 | - |
+| 2 | Definition of Boundaries Ordinance | No. 1 of 1844 | 14 | 5 | 1 | yes |
 | 2 | Land Acquisition Act | No. 9 of 1950 | 68 | 8 | 7 | - |
-| 2 | Land Development Ordinance | No. 19 of 1935 | 145 | 13 | 12 | - |
+| 2 | Land Development Ordinance | No. 19 of 1935 | 145 | 13 | 12 | yes |
 | 2 | Land Grants (Special Provisions) Act | No. 43 of 1979 | 20 | 0 | 0 | yes |
 | 2 | Land Reform Law | No. 1 of 1972 | 83 | 5 | 5 | - |
 | 2 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 0 | 0 | yes |
@@ -85,11 +85,11 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Bank of Ceylon Ordinance | No. 53 of 1938 | 82 | 13 | 7 | yes |
 | 3 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 4 | 2 | - |
 | 3 | Land Surveys Ordinance | No. 4 of 1866 | not extracted | 1 | 1 | - |
-| 3 | Lands Resumption Ordinance | No. 4 of 1887 | not extracted | 3 | 1 | - |
-| 3 | Local Authorities Housing Act | No. 14 of 1964 | not extracted | 1 | 1 | - |
-| 3 | Municipal Councils Ordinance | No. 29 of 1947 | 341 | 41 | 33 | - |
+| 3 | Lands Resumption Ordinance | No. 4 of 1887 | 17 | 3 | 1 | yes |
+| 3 | Local Authorities Housing Act | No. 14 of 1964 | 14 | 1 | 1 | yes |
+| 3 | Municipal Councils Ordinance | No. 29 of 1947 | 349 | 41 | 33 | yes |
 | 3 | National Housing Act | No. 37 of 1954 | 127 | 6 | 5 | yes |
-| 3 | National Housing Development Authority Act | No. 17 of 1979 | not extracted | 6 | 6 | - |
+| 3 | National Housing Development Authority Act | No. 17 of 1979 | 92 | 6 | 6 | yes |
 | 3 | Nindagama Lands Act | No. 30 of 1968 | 30 | 0 | 0 | yes |
 | 3 | People's Bank Act | No. 29 of 1961 | 72 | 8 | 7 | - |
 | 3 | Registration of Old Deeds and Instruments Ordinance | No. 35 of 1947 | 12 | 0 | 0 | yes |
@@ -101,8 +101,8 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 3 | Survey Act | No. 17 of 2002 | 5 | 0 | 0 | yes |
 | 3 | Surveyors Ordinance | No. 15 of 1889 | 17 | 6 | 1 | - |
 | 3 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 5 | 3 | - |
-| 3 | Trusts Ordinance | No. 9 of 1917 | 123 | 6 | 4 | - |
-| 3 | Urban Councils Ordinance | No. 61 of 1939 | 256 | 48 | 24 | - |
+| 3 | Trusts Ordinance | No. 9 of 1917 | 123 | 6 | 4 | yes |
+| 3 | Urban Councils Ordinance | No. 61 of 1939 | 267 | 49 | 25 | yes |
 
 ## Category 1 (Most Important) (22)
 
@@ -143,17 +143,22 @@ Amendments (4 known, 4 held):
 
 ### Civil Procedure Code
 
-**No. 2 of 1889** · commenced 1890-08-01 · curriculum category 1 · SRC030
+**No. 2 of 1889** · commenced 1890-08-01 · curriculum category 1 · SRC030 · **finalized**
 
 Topics: Formation of Deeds, Examination of Title, Drafting of Deeds
 
-Sections: 801 in the index (headings from lawlanka 800, none 1)
+Sections: 853 in the index (headings from finalized 830, lawlanka 23)
 
 Parsed from the HTML edition: 830 sections, 195 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 9 parts, 62 crossheadings, 96 subheadings, 830 sections, 525 subsections, 6 definitions, 346 paragraphs, 24 subparagraphs.
+Canonical structure: 9 parts, 62 crossheadings, 96 subheadings, 831 sections, 525 subsections, 6 definitions, 346 paragraphs, 24 subparagraphs.
 296 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC030-2-1889.json`
+
+Finalized: `data/legal-sources/library/finalized/2-1889-civil-procedure-code/2-1889-civil-procedure-code-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -436,7 +441,7 @@ Sections: 43 in the index (headings from legacy 40, none 3)
 
 Parsed from the HTML edition: 43 sections, 17 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 43 sections, 95 subsections, 49 paragraphs, 13 subparagraphs.
+Canonical structure: 43 sections, 95 subsections, 50 paragraphs, 13 subparagraphs.
 44 cross-references; 3 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC014-1-1907.json`
 
@@ -543,8 +548,8 @@ Sections: 19 in the index (headings from finalized 19)
 
 Parsed from the HTML edition: 19 sections, 1 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 19 sections, 6 subsections, 9 paragraphs.
-6 cross-references.
+Canonical structure: 19 sections, 2 subsections, 3 paragraphs.
+5 cross-references.
 Tree: `data/processed/canonical-statutes/SRC001-7-1840.json`
 
 Finalized: `data/legal-sources/library/finalized/7-1840-prevention-of-frauds-ordinance/7-1840-prevention-of-frauds-ordinance-consolidated.json`
@@ -581,7 +586,7 @@ Sections: 42 in the index (headings from lawlanka 41, legacy 1)
 Parsed from the HTML edition: 50 sections, 9 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 5 crossheadings, 7 subheadings, 50 sections, 96 subsections, 25 paragraphs, 13 subparagraphs.
-46 cross-references; 2 schedules referenced (bodies not published).
+47 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC005-23-1927.json`
 
 Finalized: `data/legal-sources/library/finalized/23-1927-registration-of-documents-ordinance/23-1927-registration-of-documents-ordinance-consolidated.json`
@@ -885,17 +890,22 @@ Amendments (11 known, 8 held):
 
 ### Definition of Boundaries Ordinance
 
-**No. 1 of 1844** · Cap. 292 · commenced 1844-01-17 · curriculum category 2 · SRC053
+**No. 1 of 1844** · Cap. 292 · commenced 1844-01-17 · curriculum category 2 · SRC053 · **finalized**
 
 Topics: State Lands
 
-Sections: 13 in the index (headings from legacy 13)
+Sections: 14 in the index (headings from finalized 14)
 
 Parsed from the HTML edition: 14 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 14 sections, 4 paragraphs.
 6 cross-references.
 Tree: `data/processed/canonical-statutes/SRC053-1-1844.json`
+
+Finalized: `data/legal-sources/library/finalized/1-1844-definition-of-boundaries-ordinance/1-1844-definition-of-boundaries-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -948,17 +958,22 @@ Amendments (8 known, 7 held):
 
 ### Land Development Ordinance
 
-**No. 19 of 1935** · commenced 1935-10-15 · curriculum category 2 · SRC050
+**No. 19 of 1935** · commenced 1935-10-15 · curriculum category 2 · SRC050 · **finalized**
 
 Topics: State Lands, Criminal and Civil Liabilities of Notaries
 
-Sections: 145 in the index (headings from lawlanka 144, legacy 1)
+Sections: 145 in the index (headings from finalized 144, legacy 1)
 
 Parsed from the HTML edition: 139 sections, 80 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 144 sections, 121 subsections, 30 definitions, 81 paragraphs, 4 subparagraphs.
 185 cross-references; 3 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC050-19-1935.json`
+
+Finalized: `data/legal-sources/library/finalized/19-1935-land-development-ordinance/19-1935-land-development-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1243,18 +1258,22 @@ Amendments (1 known, 1 held):
 
 ### Lands Resumption Ordinance
 
-**No. 4 of 1887** · commenced 1887-01-24 · curriculum category 3 · SRC079 · **sections not extracted**
+**No. 4 of 1887** · commenced 1887-01-24 · curriculum category 3 · SRC079 · **finalized**
 
 Topics: State Lands, Other Related Statutory Laws
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 17 in the index (headings from finalized 17)
 
 Parsed from the HTML edition: 17 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 17 sections, 2 subsections, 1 definition, 4 paragraphs.
 9 cross-references.
 Tree: `data/processed/canonical-statutes/SRC079-4-1887.json`
+
+Finalized: `data/legal-sources/library/finalized/4-1887-lands-resumption-ordinance/4-1887-lands-resumption-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1271,18 +1290,22 @@ Amendments (3 known, 1 held):
 
 ### Local Authorities Housing Act
 
-**No. 14 of 1964** · commenced 1964-04-01 · curriculum category 3 · SRC073 · **sections not extracted**
+**No. 14 of 1964** · commenced 1964-04-01 · curriculum category 3 · SRC073 · **finalized**
 
 Topics: Local Authority, UDA, and Other Regulations, Other Related Statutory Laws
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 14 in the index (headings from finalized 14)
 
 Parsed from the HTML edition: 14 sections, 2 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 14 sections, 24 subsections, 4 definitions, 26 paragraphs, 3 subparagraphs.
 16 cross-references.
 Tree: `data/processed/canonical-statutes/SRC073-14-1964.json`
+
+Finalized: `data/legal-sources/library/finalized/14-1964-local-authorities-housing-act/14-1964-local-authorities-housing-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1297,17 +1320,22 @@ Amendments (1 known, 1 held):
 
 ### Municipal Councils Ordinance
 
-**No. 29 of 1947** · commenced 1947-08-15 · curriculum category 3 · SRC061
+**No. 29 of 1947** · commenced 1947-08-15 · curriculum category 3 · SRC061 · **finalized**
 
 Topics: Local Authority, UDA, and Other Regulations
 
-Sections: 341 in the index (headings from legacy 340, none 1)
+Sections: 349 in the index (headings from finalized 347, none 1, legacy 1)
 
 Parsed from the HTML edition: 348 sections, 118 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 16 parts, 32 crossheadings, 348 sections, 505 subsections, 29 definitions, 406 paragraphs, 62 subparagraphs.
-334 cross-references; 12 schedules referenced (bodies not published).
+Canonical structure: 16 parts, 32 crossheadings, 349 sections, 505 subsections, 29 definitions, 406 paragraphs, 62 subparagraphs.
+336 cross-references; 12 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC061-29-1947.json`
+
+Finalized: `data/legal-sources/library/finalized/29-1947-municipal-councils-ordinance/29-1947-municipal-councils-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1400,18 +1428,22 @@ Amendments (6 known, 5 held):
 
 ### National Housing Development Authority Act
 
-**No. 17 of 1979** · commenced 1979-04-01 · curriculum category 3 · SRC075 · **sections not extracted**
+**No. 17 of 1979** · commenced 1979-04-01 · curriculum category 3 · SRC075 · **finalized**
 
 Topics: Local Authority, UDA, and Other Regulations, Other Related Statutory Laws
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 92 in the index (headings from finalized 90, none 2)
 
 Parsed from the HTML edition: 92 sections, 5 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 9 parts, 92 sections, 146 subsections, 3 definitions, 73 paragraphs, 9 subparagraphs.
 109 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC075-17-1979.json`
+
+Finalized: `data/legal-sources/library/finalized/17-1979-national-housing-development-authority-act/17-1979-national-housing-development-authority-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1636,7 +1668,7 @@ Sections: 69 in the index (headings from legacy 69)
 Parsed from the HTML edition: 88 sections, 12 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 7 parts, 2 crossheadings, 88 sections, 99 subsections, 8 definitions, 99 paragraphs, 14 subparagraphs.
-86 cross-references.
+88 cross-references.
 Tree: `data/processed/canonical-statutes/SRC074-13-1975.json`
 
 Files:
@@ -1736,17 +1768,22 @@ Amendments (5 known, 3 held):
 
 ### Trusts Ordinance
 
-**No. 9 of 1917** · commenced 1918-04-16 · curriculum category 3 · SRC059
+**No. 9 of 1917** · commenced 1918-04-16 · curriculum category 3 · SRC059 · **finalized**
 
 Topics: Trust Deeds
 
-Sections: 123 in the index (headings from srilankalaw 123)
+Sections: 123 in the index (headings from finalized 117, srilankalaw 6)
 
 Parsed from the HTML edition: 117 sections, 1 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 10 crossheadings, 11 subheadings, 117 sections, 113 subsections, 136 paragraphs, 8 subparagraphs.
 55 cross-references.
 Tree: `data/processed/canonical-statutes/SRC059-9-1917.json`
+
+Finalized: `data/legal-sources/library/finalized/9-1917-trusts-ordinance/9-1917-trusts-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1766,17 +1803,22 @@ Amendments (6 known, 4 held):
 
 ### Urban Councils Ordinance
 
-**No. 61 of 1939** · commenced 1940-01-01 · curriculum category 3 · SRC042
+**No. 61 of 1939** · commenced 1940-01-01 · curriculum category 3 · SRC042 · **finalized**
 
 Topics: Examination of Title, Local Authority, UDA, and Other Regulations
 
-Sections: 256 in the index (headings from legacy 256)
+Sections: 267 in the index (headings from finalized 262, legacy 5)
 
 Parsed from the HTML edition: 263 sections, 80 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 10 parts, 28 crossheadings, 263 sections, 347 subsections, 27 definitions, 302 paragraphs, 31 subparagraphs.
-263 cross-references; 6 schedules referenced (bodies not published).
+Canonical structure: 264 sections, 343 subsections, 27 definitions, 293 paragraphs, 28 subparagraphs.
+305 cross-references; 6 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC042-61-1939.json`
+
+Finalized: `data/legal-sources/library/finalized/61-1939-urban-councils-ordinance/61-1939-urban-councils-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1785,7 +1827,7 @@ Files:
 - Markdown: `data/legal-sources/library-markdown/statutes/urban-councils-ordinance/urban-councils-consolidated-2024.md`  (recorded in the registry but not on disk)
 - HTML: `data/legal-sources/library/statutes/HTML/61-1939-urban-councils-ordinance.html`
 
-Amendments (48 known, 24 held):
+Amendments (49 known, 25 held):
 
 | Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
 | --- | --- | --- | --- | --- | --- |
@@ -1813,27 +1855,28 @@ Amendments (48 known, 24 held):
 | No. 14 of 1958 | Act | chain+html | `data/legal-sources/library/amendments/14-1958-enlargement-of-powers-urban-councils-town-councils-and-village-committees.pdf` | not published as HTML | not read |
 | No. 7 of 1959 | Act | chain+html | `data/legal-sources/library/amendments/7-1959-local-authorities-special-provisions.pdf` | not published as HTML | not read |
 | No. 1 of 1961 | Act | chain+html | not held: not in the Act archive | not published as HTML | not read |
-| No. 9 of 1961 | Act | html | `data/legal-sources/library/amendments/9-1961-local-authorities-stamp-duties-on-proctors-annual-certificates.pdf` | not published as HTML | not read |
-| No. 39 of 1961 | Act | html | `data/legal-sources/library/amendments/39-1961-local-authorities-term-of-office.pdf` | not published as HTML | not read |
-| No. 2 of 1967 | Act | html | `data/legal-sources/library/amendments/2-1967-local-authorities-terms-of-office.pdf` | not published as HTML | not read |
-| No. 42 of 1968 | Act | html | `data/legal-sources/library/amendments/42-1968-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/42-1968-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend 170; amend 27; amend 184; amend 26; amend 183 |
-| No. 4 of 1969 | Act | html | `data/legal-sources/library/amendments/4-1969-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/4-1969-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend |
-| No. 48 of 1971 | Act | html | `data/legal-sources/library/amendments/48-1971-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/48-1971-local-authorities-special-provisions.html` (title does not match this statute; check it) | insert 238, 235, 230; amend 37; insert 184, 9; amend 183; amend 54; substitute 155; ame... |
+| No. 9 of 1961 | Act | chain+html | `data/legal-sources/library/amendments/9-1961-local-authorities-stamp-duties-on-proctors-annual-certificates.pdf` | not published as HTML | not read |
+| No. 39 of 1961 | Act | chain+html | `data/legal-sources/library/amendments/39-1961-local-authorities-term-of-office.pdf` | not published as HTML | not read |
+| No. 2 of 1967 | Act | chain+html | `data/legal-sources/library/amendments/2-1967-local-authorities-terms-of-office.pdf` | not published as HTML | not read |
+| No. 42 of 1968 | Act | chain+html | `data/legal-sources/library/amendments/42-1968-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/42-1968-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend 170; amend 27; amend 184; amend 26; amend 183 |
+| No. 4 of 1969 | Act | chain+html | `data/legal-sources/library/amendments/4-1969-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/4-1969-local-authorities-special-provisions.html` (title does not match this statute; check it) | amend |
+| No. 48 of 1971 | Act | chain+html | `data/legal-sources/library/amendments/48-1971-local-authorities-special-provisions.pdf` | `data/legal-sources/library/amendments/html/48-1971-local-authorities-special-provisions.html` (title does not match this statute; check it) | insert 238, 235, 230; amend 37; insert 184, 9; amend 183; amend 54; substitute 155; ame... |
 | No. 4 of 1975 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/4-1975-naming-of-streets-and-the-control-of-the-erection-of-monuments-law.html` (title does not match this statute; check it) | amend 71; amend 55A; amend 57A; insert 57A |
 | No. 18 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/18-1977-municipal-councils-and-urban-councils-amendment-law.html` | amend 272; amend 157 |
 | No. 24 of 1977 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/24-1977-local-authorities-elections-special-provisions-law.html` (title does not match this statute; check it) | repeal_and_substitute 2; amend 4; amend 5; amend 6; amend 7; substitute 8; amend 9; ins... |
-| No. 13 of 1979 | Act | html | not held: no source located | not looked up | not read |
-| No. 42 of 1979 | Act | html | not held: no source located | not looked up | not read |
-| No. 57 of 1979 | Act | html | not held: no source located | not looked up | not read |
-| No. 10 of 1981 | Act | html | `data/legal-sources/library/amendments/10-1981-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/10-1981-municipal-councils-and-urban-councils-amendment.html` | not read |
-| No. 61 of 1981 | Act | html | not held: no source located | not looked up | not read |
-| No. 5 of 1983 | Act | html | `data/legal-sources/library/amendments/5-1983-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1983-municipal-councils-and-urban-councils-amendment.html` | amend 272; amend 157 |
-| No. 13 of 1983 | Act | html | not held: no source located | not looked up | not read |
-| No. 31 of 1983 | Act | html | not held: no source located | not looked up | not read |
-| No. 48 of 1983 | Act | html | not held: no source located | not looked up | not read |
-| No. 48 of 1984 | Act | curriculum+html | `data/legal-sources/library/amendments/48-1984-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/48-1984-urban-councils-amendment.html` | amend 36; amend 38; amend 39; amend 40; amend 72; amend 73; amend 80; amend 81; amend 8... |
-| No. 20 of 1985 | Act | html | `data/legal-sources/library/amendments/20-1985-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1985-municipal-councils-and-urban-councils-amendment.html` | amend 230; amend 247A; insert 247BB; amend 247C; amend 247D; amend 160; amend 164; inse... |
-| No. 39 of 1986 | Act | html | `data/legal-sources/library/amendments/39-1986-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/39-1986-municipal-councils-and-urban-councils-amendment.html` | amend 10; amend 40; amend 73; amend 74; amend 78; amend 79; substitute 81; amend 83; am... |
-| No. 18 of 1987 | Act | curriculum+html | `data/legal-sources/library/amendments/18-1987-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/18-1987-urban-councils-amendment.html` | amend 36; amend 157; amend 159 |
-| No. 35 of 2014 | - | curriculum | `data/legal-sources/library/amendments/35-2014-urban-councils-amendment.pdf` | not published as HTML | not read |
-| No. 21 of 2017 | - | curriculum | `data/legal-sources/library/amendments/21-2017-urban-councils-amendment.pdf` | not published as HTML | not read |
+| No. 13 of 1979 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 42 of 1979 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 57 of 1979 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 10 of 1981 | Act | chain+html | `data/legal-sources/library/amendments/10-1981-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/10-1981-municipal-councils-and-urban-councils-amendment.html` | not read |
+| No. 61 of 1981 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 5 of 1983 | Act | chain+html | `data/legal-sources/library/amendments/5-1983-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/5-1983-municipal-councils-and-urban-councils-amendment.html` | amend 272; amend 157 |
+| No. 13 of 1983 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 31 of 1983 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 48 of 1983 | Act | chain+html | not held: no source located | not looked up | not read |
+| No. 48 of 1984 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/48-1984-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/48-1984-urban-councils-amendment.html` | amend 36; amend 38; amend 39; amend 40; amend 72; amend 73; amend 80; amend 81; amend 8... |
+| No. 20 of 1985 | Act | chain+html | `data/legal-sources/library/amendments/20-1985-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/20-1985-municipal-councils-and-urban-councils-amendment.html` | amend 230; amend 247A; insert 247BB; amend 247C; amend 247D; amend 160; amend 164; inse... |
+| No. 39 of 1986 | Act | chain+html | `data/legal-sources/library/amendments/39-1986-municipal-councils-and-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/39-1986-municipal-councils-and-urban-councils-amendment.html` | amend 10; amend 40; amend 73; amend 74; amend 78; amend 79; substitute 81; amend 83; am... |
+| No. 18 of 1987 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/18-1987-urban-councils-amendment.pdf` | `data/legal-sources/library/amendments/html/18-1987-urban-councils-amendment.html` | amend 36; amend 157; amend 159 |
+| No. 21 of 2012 | Act | chain | `data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf` | not looked up | not read |
+| No. 35 of 2014 | Act | chain+curriculum | `data/legal-sources/library/amendments/35-2014-urban-councils-amendment.pdf` | not published as HTML | not read |
+| No. 21 of 2017 | Act | chain+curriculum | `data/legal-sources/library/amendments/21-2017-urban-councils-amendment.pdf` | not published as HTML | not read |

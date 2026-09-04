@@ -1,0 +1,27 @@
+{
+ "statute": "Land Development Ordinance",
+ "source_id": "SRC050",
+ "note": "Every source actually used to build the canonical trees in library/finalized/19-1935-land-development-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "19-1935-land-development-ordinance-consolidated.pdf",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 545661,
+   "sha256": "54f3cf7f46b50e6556d7eecb432689d5a53099f80f30bc451c9a04a1e5c77b30",
+   "copied_from": "data/legal-sources/library/statutes/19-1935-land-development-ordinance.pdf",
+   "used_for": "parsed into 19-1935-land-development-ordinance-consolidated.json"
+  },
+  {
+   "file": "19-1935-land-development-ordinance.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 545661,
+   "sha256": "54f3cf7f46b50e6556d7eecb432689d5a53099f80f30bc451c9a04a1e5c77b30",
+   "copied_from": "data/legal-sources/library/statutes/19-1935-land-development-ordinance.pdf",
+   "used_for": "5-lens subagent review, 2 rounds, converged"
+  }
+ ],
+ "statute_note": "Parsed from LankaLaw's 2024 consolidated PDF. One residue recorded: parse_consolidated_pdf.py's line-based block detection fails to split the list item immediately following a non-punctuated intro clause, same class of gap already documented for the Stamp Duty Act. All numbering gaps confirmed genuinely repealed against the source's own markers; all 'dangling' cross-references confirmed as the print's own citations to repealed provisions."
+}

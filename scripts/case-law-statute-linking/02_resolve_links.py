@@ -10,15 +10,28 @@ modes that the existing resolution had:
          actually appear in the citation string, or it is rejected.
   * wrong-Act resolutions (e.g. Partition Ordinance -> SRC030 / CPC).
       -> here, the Act is matched by an explicit alias table, not guessed.
+  * abbreviations ("CPC", "C.P.C.") and bare "Ordinance/Act No. N of YYYY"
+      citations (no statute name at all) were both unresolved even when the
+      statute is in the catalogue -- 41 judgment files use the former, 91 of
+      764 rules used the latter. Two things fix this: the name-alias match
+      now normalizes punctuation/case before matching so "CPC"/"C.P.C."/
+      "C. P. C." all hit the same alias entry, and a second, independent
+      resolver looks up "No. N of YYYY" directly against statute_index.csv's
+      act_number/year (confirmed a unique key across the registry -- see
+      match_act_number). Where the two resolvers disagree on the Act, the
+      link is routed to `review` rather than silently picking one.
 
 For each rule that carries a verbatim citation, it:
   1. extracts the Act name and ALL section numbers from the citation;
-  2. resolves the Act name -> source_id via the alias table;
+  2. resolves the Act name -> source_id via the alias table AND independently
+     via any "No. N of YYYY" in the citation; a disagreement between the two
+     goes to `review` instead of being decided silently;
   3. for each section number, checks that source_id actually HAS that section
      (via statute_sections.csv from stage 0);
   4. emits one link row per (source_id, section_number), with a band:
        verified    -- Act matched AND section exists AND number echoed in cite
-       review      -- Act matched but section not found, or fuzzy Act match
+       review      -- Act matched but section not found, fuzzy Act match, or
+                       the name and number resolvers disagreed
        unresolved  -- Act not in alias table / not in catalogue
   5. leaves the extractor's ungrounded llm/headnote guesses OUT of the verified
      set -- they are re-emitted as 'candidate' rows for optional human check,
@@ -29,7 +42,7 @@ Nothing is modified in the input files.
 Usage:
     python scripts/case-law-statute-linking/02_resolve_links.py
     python 02_resolve_links.py --rules <rules.csv> --sections <statute_sections.csv> \
-        --alias <alias.csv>
+        --alias <alias.csv> --statute-index <statute_index.csv>
 """
 
 from __future__ import annotations
@@ -50,6 +63,7 @@ DEFAULT_SECTIONS = STAGE_OUT / "statute_sections.csv"
 # backbone; its aliases column is for hand-added historical names /
 # abbreviations on top of that -- see the entries for SRC027 and SRC064.
 DEFAULT_ALIAS = STAGE_OUT / "alias_seed.csv"
+DEFAULT_STATUTE_INDEX = STAGE_OUT / "statute_index.csv"
 
 C_CITE = "statute_citation_verbatim"
 C_SECTION = "statute_section"
@@ -58,6 +72,11 @@ C_GROUNDED = "statute_citation_grounded"
 C_CASE = "case_id"
 C_RULE = "rule_id"
 C_YEAR = "year"
+
+# rules.csv columns this stage reads; if the upstream extraction schema ever
+# changes, fail loudly here instead of silently emitting an empty/wrong
+# resolved_links.csv.
+REQUIRED_RULES_COLUMNS = {C_CITE, C_SECTION, C_METHOD, C_GROUNDED, C_CASE, C_RULE}
 
 # ---- starter alias table (from what the audit already revealed). --------------
 # Extend this from output/alias_seed.csv once Lahiru's full index is built.
@@ -82,33 +101,89 @@ NUM_RE = re.compile(r"\d{1,4}")
 # a year like 1889/1927 that must NOT be mistaken for a section number
 YEAR_RE = re.compile(r"\b(1[6-9]\d{2}|20\d{2})\b")
 
+# "...(prior to amendment by s. 6 of Ordinance No. 58 of 1947)..." -- the
+# section number here belongs to the AMENDING instrument, not the Act being
+# cited, and must not be picked up as one of ITS section numbers. Found live:
+# "6" wrongly attributed to the Jaffna Ordinance instead of just the real "20".
+AMENDING_CLAUSE_RE = re.compile(
+    r"(?:as\s+)?amend(?:ed|ment)\s+by\s+s(?:ection)?s?\.?\s*\d+\s+of\s+(?:the\s+)?(?:ordinance|act)",
+    re.I,
+)
+
+# "Ordinance No. 2 of 1877" / "Act No. 30 of 2022" -- a whole citation class
+# with no statute name at all, so the name-alias matcher below can never
+# resolve it. Looked up against statute_index.csv's act_number/year instead,
+# which stage 0 already computes and which is a unique key across the
+# registry (verified: 73 (number, year) pairs, 0 collisions).
+NUMBER_YEAR_RE = re.compile(r"\b(?:ordinance|act)\s+no\.?\s*(\d+)\s+of\s+(\d{4})", re.I)
+
+
+def normalize_fragment(text: str) -> str:
+    """Collapse punctuation/whitespace variants of the same name so
+    "CPC", "C.P.C.", and "C. P. C." all normalize to one token and match
+    the same alias entry."""
+    text = text.lower().replace("&", " and ")
+    text = re.sub(r"\.", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    # "C. P. C." becomes "c p c" after period-stripping -- collapse a run of
+    # spaced-out single letters ("c p c") into one token ("cpc"). Scoped to
+    # single-letter tokens only, so real multi-word names are untouched.
+    text = re.sub(r"\b(?:[a-z]\s+){1,}[a-z]\b", lambda m: m.group(0).replace(" ", ""), text)
+    return text
+
 
 def load_alias(path: Path | None) -> list[tuple[str, str]]:
-    """alias.csv columns: fragment, source_id  (fragment = lowercase name piece)."""
+    """alias.csv columns: fragment, source_id  (fragment = lowercase name piece).
+
+    Fragments are normalized (see normalize_fragment) so hand-added
+    abbreviations like "C.P.C." in alias_seed.csv match citations spelled
+    "CPC" or "C. P. C." just as well.
+    """
     if not path or not path.exists():
-        return STARTER_ALIASES
-    rows = []
+        rows = list(STARTER_ALIASES)
+    else:
+        rows = []
+        df = pd.read_csv(path, dtype=str).fillna("")
+        # accept either (fragment,source_id) or the seed's (source_id,official_title,aliases)
+        if "fragment" in df.columns and "source_id" in df.columns:
+            for r in df.itertuples(index=False):
+                frag = r.fragment.strip()
+                if frag:
+                    rows.append((frag, r.source_id.strip()))
+        elif "aliases" in df.columns and "source_id" in df.columns:
+            for r in df.itertuples(index=False):
+                sid = r.source_id.strip()
+                # official title itself is an alias
+                title = getattr(r, "official_title", "").strip()
+                if title:
+                    rows.append((title, sid))
+                for a in str(r.aliases).split(","):
+                    a = a.strip()
+                    if a:
+                        rows.append((a, sid))
+        if not rows:
+            rows = list(STARTER_ALIASES)
+
+    normalized = [(normalize_fragment(frag), sid) for frag, sid in rows if frag.strip()]
+    # longer fragments first so specific names win (e.g. "partition act"
+    # before a hypothetical bare "act")
+    normalized.sort(key=lambda t: len(t[0]), reverse=True)
+    return normalized
+
+
+def load_number_year_index(path: Path | None) -> dict[tuple[str, str], str]:
+    """(act_number, year) -> source_id, from stage 0's statute_index.csv."""
+    if not path or not path.exists():
+        return {}
     df = pd.read_csv(path, dtype=str).fillna("")
-    # accept either (fragment,source_id) or the seed's (source_id,official_title,aliases)
-    if "fragment" in df.columns and "source_id" in df.columns:
-        for r in df.itertuples(index=False):
-            frag = r.fragment.strip().lower()
-            if frag:
-                rows.append((frag, r.source_id.strip()))
-    elif "aliases" in df.columns and "source_id" in df.columns:
-        for r in df.itertuples(index=False):
-            sid = r.source_id.strip()
-            # official title itself is an alias
-            title = getattr(r, "official_title", "").strip().lower()
-            if title:
-                rows.append((title, sid))
-            for a in str(r.aliases).split(","):
-                a = a.strip().lower()
-                if a:
-                    rows.append((a, sid))
-    # longer fragments first so specific names win
-    rows.sort(key=lambda t: len(t[0]), reverse=True)
-    return rows or STARTER_ALIASES
+    index: dict[tuple[str, str], str] = {}
+    for r in df.itertuples(index=False):
+        number = getattr(r, "act_number", "").strip()
+        year = getattr(r, "year", "").strip()
+        sid = r.source_id.strip()
+        if number and year and sid:
+            index[(number, year)] = sid
+    return index
 
 
 def load_sections(path: Path | None) -> dict[str, set[str]]:
@@ -132,18 +207,90 @@ def load_sections(path: Path | None) -> dict[str, set[str]]:
 
 
 def match_act(citation: str, aliases: list[tuple[str, str]]) -> tuple[str, str] | None:
-    """Return (source_id, matched_fragment) for the first alias found in the cite."""
-    low = citation.lower()
+    """Return (source_id, matched_fragment) for the first alias found in the cite.
+
+    Both the citation and every alias fragment are normalized (punctuation/
+    case/whitespace) before matching, and matching requires a word boundary
+    rather than raw substring containment -- otherwise a short alias like
+    "to" (an auto-derived acronym for "Trusts Ordinance") could match inside
+    an unrelated word.
+    """
+    normalized = normalize_fragment(citation)
     for frag, sid in aliases:
-        if frag in low:
+        if re.search(rf"\b{re.escape(frag)}\b", normalized):
             return sid, frag
     return None
 
 
+def match_act_number(citation: str, number_year_index: dict[tuple[str, str], str]) -> tuple[str, str] | None:
+    """Return (source_id, "no.N-of-YYYY") for a bare "Ordinance/Act No. N of
+    YYYY" citation, resolved directly against statute_index.csv -- no
+    statute name needs to appear anywhere in the citation for this path."""
+    match = NUMBER_YEAR_RE.search(citation)
+    if not match:
+        return None
+    number, year = match.group(1), match.group(2)
+    source_id = number_year_index.get((number, year))
+    if not source_id:
+        return None
+    return source_id, f"no.{number}-of-{year}"
+
+
+def find_all_name_acts(citation: str, aliases: list[tuple[str, str]]) -> list[tuple[str, str]]:
+    """Like match_act, but returns every distinct (source_id, fragment)
+    found in the citation instead of stopping at the first -- needed to
+    detect a citation that names two different Acts (e.g. "Section 44 of
+    the Evidence Ordinance...; Section 2 of the Partition Ordinance...")
+    rather than silently attributing both to whichever alias matched first.
+
+    A matched fragment that is itself a substring of another matched
+    fragment is dropped, not counted as a second Act: e.g. "Jaffna
+    Matrimonial Rights and Inheritance Ordinance" (SRC045's alias) contains
+    the generic "Matrimonial Rights and Inheritance Ordinance" (SRC004's
+    title) as a substring -- that's one Act cited by its more specific name,
+    not two Acts.
+    """
+    normalized = normalize_fragment(citation)
+    seen_sids: set[str] = set()
+    found: list[tuple[str, str]] = []
+    for frag, sid in aliases:
+        if sid in seen_sids:
+            continue
+        if re.search(rf"\b{re.escape(frag)}\b", normalized):
+            found.append((sid, frag))
+            seen_sids.add(sid)
+
+    fragments = [frag for _, frag in found]
+    return [
+        (sid, frag)
+        for sid, frag in found
+        if not any(frag != other and frag in other for other in fragments)
+    ]
+
+
+def find_all_number_acts(citation: str, number_year_index: dict[tuple[str, str], str]) -> list[tuple[str, str]]:
+    """Like match_act_number, but returns every distinct source_id resolved
+    from every "No. N of YYYY" in the citation, not just the first -- a
+    citation can reference two different numbered instruments (the Act
+    itself, and separately the amending Act that changed it)."""
+    seen_sids: set[str] = set()
+    found: list[tuple[str, str]] = []
+    for number, year in NUMBER_YEAR_RE.findall(citation):
+        source_id = number_year_index.get((number, year))
+        if source_id and source_id not in seen_sids:
+            found.append((source_id, f"no.{number}-of-{year}"))
+            seen_sids.add(source_id)
+    return found
+
+
 def extract_section_numbers(citation: str) -> list[str]:
-    """Pull ALL section numbers from a citation, ignoring years."""
+    """Pull ALL section numbers from a citation, ignoring years and any
+    amending-instrument's own section reference."""
     # blank out years so 'of 1889' isn't read as section 1889
     masked = YEAR_RE.sub("    ", citation)
+    # blank out "amended by s. N of ..." so N isn't attributed to the Act
+    # actually being cited -- it belongs to the amending instrument instead
+    masked = AMENDING_CLAUSE_RE.sub(lambda m: " " * len(m.group(0)), masked)
     nums: list[str] = []
     for m in SECTION_TOKEN_RE.finditer(masked):
         chunk = m.group(1)
@@ -160,14 +307,24 @@ def extract_section_numbers(citation: str) -> list[str]:
 
 
 def run(rules: str | None = None, sections: str | None = None,
-        alias: str | None = None) -> int:
+        alias: str | None = None, statute_index: str | None = None) -> int:
     rules_path = Path(rules) if rules else DEFAULT_RULES
     if not rules_path.exists():
         raise SystemExit(f"rules file not found: {rules_path}")
     df = pd.read_csv(rules_path, dtype=str).fillna("")
 
+    missing_columns = REQUIRED_RULES_COLUMNS - set(df.columns)
+    if missing_columns:
+        raise SystemExit(
+            f"{rules_path} is missing expected column(s): {sorted(missing_columns)}. "
+            "The case-law-information-extraction schema may have changed -- "
+            "update the C_* column-name constants at the top of this script "
+            "rather than letting resolution silently emit wrong/empty output."
+        )
+
     aliases = load_alias(Path(alias) if alias else DEFAULT_ALIAS)
     have = load_sections(Path(sections) if sections else DEFAULT_SECTIONS)
+    number_year_index = load_number_year_index(Path(statute_index) if statute_index else DEFAULT_STATUTE_INDEX)
 
     STAGE_OUT.mkdir(parents=True, exist_ok=True)
     links: list[dict] = []
@@ -182,10 +339,40 @@ def run(rules: str | None = None, sections: str | None = None,
         method = getattr(r, C_METHOD, "")
 
         if cite.strip():
-            # a real citation -> resolve it properly
-            act = match_act(cite, aliases)
+            # a real citation -> resolve it properly. Collect every distinct
+            # Act signalled, by name or by number+year, rather than stopping
+            # at the first match -- a citation naming two different Acts
+            # (or two different "No. N of YYYY" instruments) must not have
+            # all its section numbers silently folded into just one of them.
+            name_acts = find_all_name_acts(cite, aliases)
+            number_acts = find_all_number_acts(cite, number_year_index)
             secnums = extract_section_numbers(cite)
 
+            distinct_sids = {sid for sid, _ in name_acts} | {sid for sid, _ in number_acts}
+
+            if len(distinct_sids) > 1:
+                # Two or more otherwise-trustworthy signals point at
+                # different Acts in the same citation. This is either a
+                # genuine multi-Act citation (e.g. "s.44 of the Evidence
+                # Ordinance...; s.2 of the Partition Ordinance...") or a
+                # name/number disagreement about a single Act -- either way,
+                # abstain rather than guess which section belongs to which
+                # Act; a person should look, not a silent tie-break.
+                mismatch = f"multiple-acts-in-citation:{'-vs-'.join(sorted(distinct_sids))}"
+                # kept for continuity with anyone grepping the round-1 label
+                if len(name_acts) == 1 and len(number_acts) == 1:
+                    mismatch = f"name-number-mismatch:{name_acts[0][0]}-vs-{number_acts[0][0]}"
+                source_id = (number_acts[0][0] if number_acts else name_acts[0][0])
+                if not secnums:
+                    links.append(_row(case, rule_id, cite, source_id, "", "review", mismatch, method))
+                    band_counts["review"] += 1
+                else:
+                    for num in secnums:
+                        links.append(_row(case, rule_id, cite, source_id, num, "review", mismatch, method))
+                        band_counts["review"] += 1
+                continue
+
+            act = (name_acts[0] if name_acts else None) or (number_acts[0] if number_acts else None)
             if not act:
                 links.append(_row(case, rule_id, cite, "", "", "unresolved",
                                   "act-not-in-alias", method))
@@ -268,4 +455,6 @@ if __name__ == "__main__":
                     help="statute_sections.csv from stage 0")
     ap.add_argument("--alias", default=None,
                     help="alias.csv (fragment,source_id) or the filled alias_seed.csv")
+    ap.add_argument("--statute-index", dest="statute_index", default=None,
+                    help="statute_index.csv from stage 0, for No.-of-YYYY resolution")
     raise SystemExit(run(**vars(ap.parse_args())))

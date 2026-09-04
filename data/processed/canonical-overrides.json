@@ -6,6 +6,76 @@
         "against what, so the correction can be re-tested rather than trusted.",
         "The original wording is always kept alongside as heading_raw."
     ],
+    "SRC053": {
+        "checked_against": "data/legal-sources/library/statutes/1-1844-definition-of-boundaries-ordinance.pdf",
+        "note": "LankaLaw HTML edition (source of the parsed tree) and LankaLaw's own PDF export of the same consolidated text disagree on the spelling of 'wilfully' in five places. The PDF's text layer reads 'wilfully' (single l), the period-correct spelling used consistently elsewhere in this corpus; the HTML reads 'willfully' (double l) in all five instances. Treated as an HTML transcription slip and corrected to match the PDF.",
+        "text_corrections": [
+            {
+                "section": "3",
+                "find": "such trespass or injury shall have been willfully committed",
+                "replace": "such trespass or injury shall have been wilfully committed",
+                "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+            },
+            {
+                "section": "5",
+                "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+                "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+                "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+            },
+            {
+                "section": "6",
+                "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+                "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+                "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+            },
+            {
+                "section": "7",
+                "find": "so cultivated or improved, and willfully, fraudulently, or negligently abstained",
+                "replace": "so cultivated or improved, and wilfully, fraudulently, or negligently abstained",
+                "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+            },
+            {
+                "section": "14",
+                "find": "Every person who shall willfully and knowingly remove",
+                "replace": "Every person who shall wilfully and knowingly remove",
+                "reason": "HTML reads 'willfully'; PDF text layer reads 'wilfully'."
+            },
+            {
+                "section": "9",
+                "find": "adopt the following procedure:- When owner of such land cannot get its boundary satisfactorily surveyed, Government Agent or Assistant Government Agent may get Surveyor-General to make survey.",
+                "replace": "adopt the following procedure:-",
+                "reason": "The two-column PDF's marginal-note caption for paragraph (a) ('When owner of such land cannot get its boundary satisfactorily surveyed, ...') sits beside the chapeau in the source layout and was swept into the chapeau's own text instead of being dropped as a caption. Verified against data/legal-sources/library/statutes/1-1844-definition-of-boundaries-ordinance.pdf: the body column ends at 'adopt the following procedure:--'; the quoted sentence is the margin heading for paragraph (a), not part of section 9's chapeau."
+            },
+            {
+                "section": "9",
+                "find": "the amount ordered to be paid under be recovered. the last preceding paragraph may be recovered",
+                "replace": "the amount ordered to be paid under the last preceding paragraph may be recovered",
+                "reason": "The marginal-note caption for paragraph (d), 'How such cost of survey may be recovered.', bled into the middle of the body sentence at the two-column boundary, producing a corrupted duplicate of 'recovered'. Verified against the PDF's body column, which reads continuously 'the amount ordered to be paid under the last preceding paragraph may be recovered in the manner provided by law...'."
+            }
+        ],
+        "section_headings": {
+            "3": {
+                "heading": "Trespassers, unless wilful, not liable.",
+                "status": "verified_against_alternate_edition",
+                "reason": "HTML heading reads 'willful' (double l); the PDF's own margin caption for this section reads 'wilful' (single l), matching the spelling corrected in the body text of sections 3, 5, 6, 7, and 14 above."
+            }
+        },
+        "quality_notes": [
+            {
+                "code": "benign_coverage_gap",
+                "issue": "check_parse_coverage.py reports unmatched words against the PDF beyond the fixes above: cover-page/running-header text ('AN ORDINANCE TO MAKE PROVISION...', 'Cap. 292', volume/page markers) that never enters the section tree, plus stray 'survey'/'cost' tokens from two-column marginal-note reordering elsewhere in sections 8-9 that don't form a readable corrupted clause (unlike the two instances in section 9 fixed above).",
+                "status": "acceptable",
+                "recommendation": "Coverage percentage will not reach ~0% for this source; verify by reading the missing-word list, not the percentage alone."
+            },
+            {
+                "code": "amendments_not_gathered",
+                "issue": "The source header lists five amending Acts (13 of 1905, 28 of 1919, 27 of 1933, 8 of 1947, 22 of 1955), but none of their texts have been located or added to this corpus, so amendment_history_status stays 'listed_in_source_header' rather than a parsed/held chain. The parsed edition is LankaLaw's 'consolidated' text, which by convention already reflects amendments up to its compilation date, so the operative section text is not believed to be stale -- but this has not been independently confirmed against any amendment's actual text, unlike SRC001 where the amendment PDFs existed and were cross-checked.",
+                "status": "do_not_fix",
+                "recommendation": "If any of these five Acts' texts are ever located, run parse_amendment_pdf.py against them and re-finalize with --amendment before treating this statute's amendment history as verified."
+            }
+        ],
+        "verification_status": "unverified"
+    },
     "SRC048": {
         "checked_against": "https://lankalaw.net/wp-content/uploads/2025/02/1956Y3V62C.html",
         "note": "1956 revised edition, Chapter 62, Volume 3, page 73.",
@@ -378,34 +448,6 @@
             }
         ]
     },
-    "SRC042": {
-        "checked_against": "data/legal-sources/library/statutes/61-1939-urban-councils-ordinance.pdf",
-        "note": "Tree built from pre-2012 LankaLaw HTML edition (1981 revised-edition snapshot). Coverage check vs 2024 consolidated PDF revealed Section 5 and related sections show pre-amendment wording from 1939, superseded by amendments Act 21 of 2017, Act 21 of 2012, Act 24 of 1977, and others.",
-        "quality_notes": [
-            {
-                "code": "source_edition_stale",
-                "sections_affected": [
-                    "5",
-                    "possibly_others"
-                ],
-                "issue": "Built from pre-2012 LankaLaw HTML. Section 5 currently shows 1939 composition (Minister-prescribed members) but 2024 consolidated PDF shows complete rewrite via later amendments into wards/percentage scheme tied to Local Authorities Elections Ordinance.",
-                "missing_amendments": "At minimum: [2, 21 of 2017], [8, 21 of 2012], [116, 24 of 1977]",
-                "status": "known_limitation_source_edition",
-                "recommendation": "Future work: obtain 2024 consolidated HTML edition or extract current section text from PDF"
-            },
-            {
-                "code": "roman_numeral_parsing",
-                "sections_affected": [
-                    "36",
-                    "74",
-                    "78"
-                ],
-                "issue": "A '(i)' that opens a single-item nested list stays folded into its parent's own text instead of becoming its own child, while a later '(ii)' in the same list correctly splits out as a sibling node -- so the tree shows an orphaned '(ii)' with no '(i)'. Two distinct shapes cause this: s.36(e) prints '(e) (i) to sell, exchange...', two enumerator markers directly adjacent with no lead-in prose; s.74 and s.78 have '...aggregate of (i) the estimated cost...', a marker straight after an ordinary word. A general fix for the first shape (treating a closing paren as a list-introducing character before the next marker) was tried and reverted: it also fires on citation chains like 'subsection (1) or (4) (a) or (b) or (c)', which are one continuous cross-reference, not a new list, and it corrupted that pattern across 25 other statutes in a full-corpus rebuild. The second shape is the same word-boundary ambiguity already documented for SRC039 (s.74/s.78's '(i)' looks identical to a genuine reference like 'referred to in paragraph (a)'), so it is not split either, by the same design choice.",
-                "status": "known_parser_limitation"
-            }
-        ],
-        "verification_status": "unverified"
-    },
     "SRC076": {
         "checked_against": "data/legal-sources/library/statutes/HTML/37-1954-national-housing-act.html",
         "note": "5-lens subagent review, round 1, against the LankaLaw consolidated HTML. Coverage 0.48% unmatched (nav chrome and the amendment-chain header). Two findings led to parser fixes (see build_canonical_statutes.py git history: section-letter-suffix reattachment, 'it is provided that' proviso exclusion, external-reference range/or handling). Two residues recorded below could not be resolved from this source alone.",
@@ -710,8 +752,228 @@
     },
     "SRC050": {
         "checked_against": "data/legal-sources/library/statutes/19-1935-land-development-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
-        "note": "144 sections, coverage 0.94% unmatched -- chapter headings (dropped, same as Part headings elsewhere) and front-matter/title-page vocabulary. Numbering gaps (26, 32-34, 36, 44-45, 50, 69-71, 77-83, 88-103, 124, 144-151, 171 among others) not individually confirmed against a repeal marker for each one given the volume, but consistent with this document's own amendment history (13 amending instruments) and the pattern already verified elsewhere in this corpus for similarly aged, heavily-amended statutes.",
+        "note": "144 sections, coverage 0.94% unmatched -- chapter headings (dropped, same as Part headings elsewhere) and front-matter/title-page vocabulary. Numbering gaps confirmed genuine by direct check of a sample (26, 32-34, 36, 44-45, 50, 69-71, 77-83): every one carries the source's own '[Section(s) N (to M) (is/are) repealed by Act No. ...]' marker. Internal cross-references to repealed sections (19A, 26, 32, 50, 69-71, 124, 171, etc.) are the print's own citations to now-repealed provisions -- normal in consolidated legislation, not a parser defect -- and are correctly recorded as internal even though the target no longer has its own node.",
         "publisher": "LankaLaw (private republisher, consolidated to 2024)",
+        "quality_notes": [
+            {
+                "code": "first_list_item_not_split",
+                "sections_affected": [
+                    "9",
+                    "16",
+                    "19",
+                    "23",
+                    "159B",
+                    "possibly_others"
+                ],
+                "issue": "parse_consolidated_pdf.py's block-opening detection (blocks_from) only starts a new block at an enumerator when the accumulated text so far already ends in ';:.-\u2013\u2014' or 'or'/'and' -- the signal it uses to tell a genuine new list item from a cross-reference that happens to land beside a bracketed letter mid-sentence. The FIRST item after an intro clause that ends in ordinary words ('...the Government Agent shall cause to be prepared (a) a scheme...') doesn't satisfy that, so it stays fused into the section/subsection's own text; whichever item comes next (here, (b)) DOES split correctly, because by then the accumulated text ends in a semicolon from the fused-in first item. The same shape recurs with the SECOND item missing in section 2's 'land' definition (paragraph (a)'s raw_text swallows (b)'s content instead of the reverse) -- it is not specific to which letter, only to whichever item follows non-punctuated lead-in text. This is the same general class of gap already documented as 'inline_enumerator_not_split' for the Stamp Duty Act's section 14, here recurring at scale across a whole statute. A general fix (giving parse_consolidated_pdf.py an equivalent of build_canonical_statutes.py's split_enumerated, which scans a whole accumulated text for enumerator tokens rather than relying on line-by-line continuity signals) is real future work, not attempted here given two other general fixes in this same area regressed already-finalized statutes earlier in this session.",
+                "status": "known_parser_limitation"
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC061": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/29-1947-municipal-councils-ordinance.html, cross-read against the registry's own preferred_source_url PDF",
+        "note": "349 sections (39-Act amendment chain), coverage 0.02% unmatched against the rendered HTML. Sections 6, 12, 15, 285 confirmed genuinely absent from this consolidated numbering, consistent with the registry's existing note.",
+        "quality_notes": [
+            {
+                "code": "source_duplicate_section_136B",
+                "sections_affected": [
+                    "136B"
+                ],
+                "issue": "Section 136B is printed twice in the source HTML, verbatim (same heading, same two-subsection body, checked byte-for-byte against the raw markup at both locations) -- a LankaLaw transcription duplicate, not a parser artifact. Recorded as two separate but identical section nodes rather than merged or dropped.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "long_title_reads_as_amending_act",
+                "detail": "The source's own <meta name=\"description\"> states the long title as 'AN ACT TO AMEND THE MUNICIPAL COUNCILS ORDINANCE.' -- phrasing that reads like an amending Act's title rather than the principal 1947 Ordinance's own long title, but there is no other long-title text anywhere else on the page to prefer over it. Recorded as printed.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "footnote_cites_superseded_amendments_not_in_chain",
+                "sections_affected": [
+                    "183"
+                ],
+                "issue": "Section 183(2)'s footnote reads '[*Repealed by Act No. 18 of 1969, itself repealed by Law No. 16 of 1974]' -- both instruments confirmed present verbatim in the source. Neither Act 18 of 1969 nor Law 16 of 1974 appears in the amendments list (which has 39 entries, including the similarly-numbered Act 18 of 1979 and Law 8 of 1974, both different instruments). This is expected, not a transcription error: the amendments list is the chain of instruments whose provisions are currently incorporated in this consolidated text, while the footnote is historical color describing an earlier repeal-of-a-repeal for a provision now itself struck from the numbering -- there is nothing left of either 1969 or 1974 instrument's own text for the chain to incorporate.",
+                "status": "source_as_printed"
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC042": {
+        "checked_against": "data/legal-sources/library/statutes/61-1939-urban-councils-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
+        "note": "Re-parsed from the 2024 consolidated PDF, replacing an earlier tree built from a stale pre-2012 LankaLaw HTML edition (that tree's own quality_notes recorded section 5 showing 1939-era wording superseded by amendments through Act 21 of 2017; this PDF-sourced tree shows the current text). 264 sections, coverage 0.79% unmatched (Part headings and front matter). Sections 6, 15, 17, 18, 20, 21, 22, 246 confirmed genuinely absent from this consolidated numbering, consistent with the registry's existing note. Amendment chain corrected from 26 to the full 48 instruments: extract_amendment_chains.py only read PDF page 1, but this statute's own chain header wraps onto page 2; see the script fix and the amendment-chains.csv correction committed alongside this tree.",
+        "publisher": "LankaLaw (private republisher, consolidated to 2024)",
+        "quality_notes": [
+            {
+                "code": "first_list_item_not_split",
+                "sections_affected": [
+                    "74",
+                    "78",
+                    "possibly_65_others"
+                ],
+                "issue": "The same class of gap already documented for the Land Development Ordinance and Stamp Duty Act, at unusually large scale in this statute: parse_consolidated_pdf.py's block-opening detection only starts a new list item when the accumulated text so far already ends in ';:.-\u2013\u2014' or 'or'/'and'. The FIRST item after an intro clause ending in ordinary words fuses into the parent's own text; whichever item follows DOES split correctly, since the fused-in first item usually ends the text in a semicolon. A programmatic scan for section/subsection text containing a mid-string ' (x) ' pattern flags roughly 65 locations across this statute -- not all necessarily genuine instances (some may be legitimate cross-references landing beside a bracketed letter), but the true count is large. Section 74's paragraph (a) and section 78's paragraph (a) were spot-checked and confirmed as genuine instances of the pattern. Not fixed here: three separate attempts at a general fix for this exact defect class, made earlier in this session while working the Land Development Ordinance and Mortgage Act, each regressed content in other already-finalized statutes and were reverted. A proper fix needs parse_consolidated_pdf.py to gain something like build_canonical_statutes.py's split_enumerated -- a full-text scan for enumerator tokens rather than a line-by-line continuity heuristic -- which is real, non-trivial future work, not attempted under this session's time constraints.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "cascading_damage_in_nested_lists",
+                "sections_affected": [
+                    "36"
+                ],
+                "issue": "Section 36 paragraph (hh) contains its own nested (i)/(ii) sub-list ('(hh) to (i) prepare and submit... (ii) recommend to the appropriate authority...'). The first_list_item_not_split defect fuses (hh)'s own '(i)' into (hh)'s text as usual, but the resulting tree then shows FOUR children under (hh) -- 'ii', 'i', 'ii', 'ii' -- with the third and fourth carrying text that belongs to sections 36(i) and 36(j) (later paragraphs in the SAME section's own top-level list, not sub-items of (hh) at all). This is a compounding failure: once the block boundary is lost at (hh)'s own (i), the roman-numeral retyping pass (retype_roman_runs) appears to misattribute later top-level paragraph content as further (hh) sub-items. Confirmed against the source; not corrected given the same general-fix risk documented above.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "missing_provisos_in_four_sections",
+                "sections_affected": [
+                    "28",
+                    "33",
+                    "90",
+                    "173"
+                ],
+                "issue": "Sections 28, 33, 90 and 173(1) each have a proviso present in raw_text (\"Provided that...\") that is not split out as a proviso child node -- the parent subsection's own text field runs on past the colon into the proviso wording instead of stopping there. A different failure shape from first_list_item_not_split (no bracketed enumerator involved); the proviso-detection pass simply did not fire for these four. Confirmed genuine by direct source check.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "section_174_merged_into_173",
+                "sections_affected": [
+                    "173",
+                    "174"
+                ],
+                "issue": "Section 174 does not appear as its own node. Its marginal note (\"Limitation of borrowing powers.\") lands on the same physical line as its own section number in the source PDF (\"borrowing powers. 174.             from any Urban Council...\"), a column-alignment quirk parse_consolidated_pdf.py could not resolve into a fresh section boundary; both of 174's subsections were instead appended as a second (1) and (2) under section 173. No text is lost -- confirmed all of section 174's content is present verbatim, just filed under the wrong section number, alongside 173's own correct three subsections. A reader querying \"section 174\" specifically will not find it as its own node.",
+                "status": "known_parser_limitation"
+            },
+            {
+                "code": "source_column_word_reorder",
+                "sections_affected": [
+                    "173"
+                ],
+                "issue": "Section 173(1) reads \"...to borrow from the of Sri Lanka, or any person or persons or Government body of persons...\" -- the word \"Government\" is present but landed one physical line down from where it belongs (\"...borrow from the Government of Sri Lanka...\"), a pdftotext -layout column-reconstruction slip on this two-column source PDF, confirmed present in the raw pdftotext output itself and not introduced by anything in this repository's own code. Left as printed.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "internal_ref_bare_subsection_of_external_section",
+                "sections_affected": [
+                    "5"
+                ],
+                "issue": "Section 5(1)(c) reads \"...determined by the Commissioner under paragraph (a) of subsection (4) of section 65B of the Local Authorities Elections Ordinance\" -- BARE_SUBSECTION/SUBSECTION_REF read \"subsection (4) of section 65B\" as an internal self-reference (this Ordinance has no section 65B of its own) even though the same clause also correctly produces a second, external cross-reference for the fuller phrase \"section 65B of the Local Authorities Elections Ordinance\". Both entries are recorded on the same node; the internal one is spurious.",
+                "status": "known_parser_limitation"
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC075": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/17-1979-national-housing-development-authority-act.html",
+        "note": "92 sections, coverage 0.40% unmatched. The registry has no PDF for this source at all (status 'indexed-html', local_pdf_path blank, sha256 blank) -- the earlier finalized National Housing Act's LankaLaw fetch pass also happened to pull this statute's page, since both are hosted by the same republisher. This is the only text of the Act held in the corpus beyond a 133-word indexed markdown snippet from the registry's own preferred_source_url.",
+        "verification_status": "unverified",
+        "quality_notes": [
+            {
+                "code": "source_lowercase_letter_suffix",
+                "sections_affected": [
+                    "69D"
+                ],
+                "issue": "Section 69D(1)(iv) cross-references \"section 69c\" (lowercase) while the section itself is headed 69C (uppercase). Same source-printed case mismatch already documented for the National Housing Act; recorded verbatim as printed.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "source_ocr_garbling_preserved",
+                "sections_affected": [
+                    "4",
+                    "7"
+                ],
+                "issue": "The source HTML itself carries pre-existing OCR/transcription damage in a small number of places (section 4: \"shall Up-\" mid-sentence; section 7 similarly garbled), confirmed identical in both the rendered source and the parsed tree -- not introduced by anything in this repository's own code. Kept as printed.",
+                "status": "source_as_printed"
+            }
+        ]
+    },
+    "SRC059": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/9-1917-trusts-ordinance.html",
+        "note": "117 sections, coverage 2.78% unmatched, almost entirely from Illustrations blocks -- worked examples (\"(a) A bequeaths property to B in trust to...\") interspersed after many provisions, in the style of the Indian Trusts Act 1882 this Ordinance derives from. Deliberately excluded from the tree, the same treatment already given to Schedules elsewhere in this corpus: explanatory material, not enacted operative text. Confirmed the exclusion is clean -- no illustration content bled into or corrupted the surrounding sections.",
+        "publisher": "LankaLaw (private republisher)",
+        "quality_notes": [
+            {
+                "code": "illustrations_not_extracted",
+                "detail": "Numbered/lettered Illustration examples following many sections are not captured anywhere in the tree. Legally non-binding explanatory material, consistent with how this corpus already treats Schedules; not attempted here given the added structural work (a third content type, distinct from both Schedule and body text) for material that carries no operative force.",
+                "status": "known_scope_limitation"
+            },
+            {
+                "code": "footnote_marker_cites_instrument_not_in_chain",
+                "sections_affected": [
+                    "3"
+                ],
+                "issue": "Section 3(b) reads \"...a trust does not include a fideicommissum;(* Abolished by Act No. 20 of 1972.)\" -- a footnote-style citation, not the bracketed \"[N, Act of Year]\" inline marker format the parser recognises, and Act 20 of 1972 does not appear anywhere in the amendment chain header. Present verbatim in raw_text/text; not extracted into amendment_events.",
+                "status": "source_as_printed"
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC079": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/4-1887-lands-resumption-ordinance.html",
+        "note": "17 sections, coverage 2.32% unmatched (front matter/title page). Parsed from a dedicated LankaLaw HTML page rather than the registry shared Legislative Enactments 1980 Volume 3 compendium PDF.",
+        "quality_notes": [
+            {
+                "code": "source_date_typo",
+                "detail": "date_stated_in_source reads \"24th January, 1987\" -- the source HTML itself prints \"1987\", a hundred-year typo (the Ordinance is No. 4 of 1887, confirmed correctly elsewhere on the same page and in the citation/amendment-chain header). The separately-sourced commencement field (1887-01-24, from statute_commencement.csv) is correct and unaffected. Kept as printed rather than silently corrected.",
+                "status": "source_as_printed"
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC073": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/14-1964-local-authorities-housing-act.html",
+        "note": "14 sections, coverage 3.28% unmatched (front matter). Parsed from a dedicated LankaLaw HTML page rather than the registry shared Legislative Enactments 1980 Volume 3 compendium PDF.",
+        "quality_notes": [
+            {
+                "code": "appointed_date_distinct_from_commencement",
+                "detail": "commencement (1964-04-01, from statute_commencement.csv) and the defined term \"appointed date\" (1st April, 1975, used within the Act for the vesting provisions in sections 2/3) are two different concepts, not a discrepancy: the Act commenced in 1964, but the vesting provisions it enacts only take effect from a later appointed date it defines separately. Same pattern already seen for other statutes (e.g. Mortgage Act).",
+                "status": "not_a_defect"
+            },
+            {
+                "code": "source_typos",
+                "sections_affected": [
+                    "1",
+                    "4",
+                    "5A"
+                ],
+                "issue": "Three genuine source-level errors confirmed against the raw HTML, not parser artifacts: section 1 heading reads \"Short tile.\" (for \"title\"); section 4 heading reads \"Special provisions of regarding value house...\"; section 5A(3) lists its third item as \"(hi)\" instead of \"(iii)\". Kept as printed.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "malformed_amendment_marker_not_extracted",
+                "sections_affected": [
+                    "3"
+                ],
+                "issue": "Section 3(3)(b)'s amendment marker is corrupted in the source itself -- body text is interleaved word-for-word inside the bracket: \"[section 2, 63 of is given by that local authority to 1979]\" instead of the normal \"[2, 63 of 1979]\". Confirmed against the raw HTML; not something any reasonable marker regex could parse. Left unextracted rather than guessed at.",
+                "status": "source_as_printed"
+            }
+        ],
+        "verification_status": "unverified"
+    },
+    "SRC030": {
+        "checked_against": "data/legal-sources/library/statutes/HTML/2-1889-civil-procedure-code.html (LankaLaw consolidated through Act No. 43 of 2024)",
+        "note": "831 leaf section nodes, coverage 2.41% unmatched against 102,904 words -- the largest and oldest statute finalized in this corpus (135 years of amendment history, 46-instrument chain). This document is CLAUDE.md's documented weak point for a DIFFERENT parser (src/draftly/retrieval/section_parser.py, the retrieval-engine section index, not the finalization pipeline used here); the tree here is built by build_canonical_statutes.py against LankaLaw's consolidated HTML and was checked by sampling given the statute's size, not exhaustively. 71 numeric gaps in the section-number sequence; a sample of 5 (31/32, 56-58, 74, 201, 257, 441-455) checked directly against the source and confirmed genuinely repealed by explicit bracketed markers, not a parsing miss.",
+        "quality_notes": [
+            {
+                "code": "source_duplicate_section_808",
+                "sections_affected": [
+                    "808"
+                ],
+                "issue": "The source itself prints two entirely different provisions both numbered \"808\" (\"Summons to issue\" and \"Of the service of summons\"), in the printed order 805, 808, 807, 808, 809 -- section 806 is missing from the sequence entirely. This reads as a genuine \"6\" misread as \"8\" somewhere upstream of this corpus (most likely in the original scan the LankaLaw consolidated edition was itself transcribed from): the first \"808\" (Summons to issue) most plausibly IS section 806, restoring the natural order 805, 806, 807, 808, 809. Not corrected here -- inventing the true number would be inference, not verification, and no second source was checked. Both nodes kept as printed, both numbered 808.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "source_section_227_duplication_and_note_bleed",
+                "sections_affected": [
+                    "227"
+                ],
+                "issue": "Section 227 is genuinely duplicated in the source HTML itself, checked byte-for-byte against the raw markup: the entire section (from \"If the property sought to be seized...\" through \"...reduce the amount of expenses so certified as aforesaid:\") appears twice back-to-back in one sectioncontent span, followed by a proviso in a SECOND, separate span whose own marginal note (\"Proviso as to subject to speedy and natural decay, or perishable property.\") is interleaved word-for-word into the middle of the proviso sentence itself (\"Provided that when the property seized is Proviso as to subject to speedy and natural decay, or perishable property. when the expense...\"). This is upstream LankaLaw transcription corruption, not introduced by anything in this repository. The tree reflects it as printed -- the duplicated intro text and the interleaved note both survive in the parsed section.",
+                "status": "source_as_printed"
+            },
+            {
+                "code": "sampled_review_not_exhaustive",
+                "detail": "Given the statute size (831 leaf sections), the 5-lens review was sampled rather than exhaustive: completeness checked 20 sections spread across the numeric range plus 5 of the 71 numbering gaps; text fidelity checked the 8 longest sections; structure checked all section numbers programmatically (for duplicates/ordering) plus 15 sections sampled for proviso attachment; references checked all cross_references programmatically for implausible targets plus 25 sampled for classification; metadata checked all fields plus 20 of 46 amendment-chain entries. A section not covered by this sampling could still carry an undiscovered defect of the kinds already found and fixed elsewhere in this statute (list-splitting, proviso attachment, cross-reference misclassification).",
+                "status": "known_review_scope_limitation"
+            }
+        ],
         "verification_status": "unverified"
     }
 }

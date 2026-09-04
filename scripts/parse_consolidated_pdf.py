@@ -526,6 +526,13 @@ def blocks_from(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
                 # has been said yet, so the next enumerator is the first thing
                 # inside it rather than a continuation of it.
                 or re.fullmatch(r"\(\s*\w{1,4}\s*\)", body_parts[-1].strip())
+                # A repealed subsection's body is just its own enumerator
+                # plus the bare word, with nothing that could continue into
+                # the next item ("(4) Repealed" / "(5) The Minister may...").
+                # Urban Councils Ordinance section 160(4)/(5) fused this way
+                # with no page break or column quirk involved -- the plain
+                # no-punctuation case the other two branches don't cover.
+                or re.search(r"\brepealed\.?$", body_parts[-1].rstrip(), re.IGNORECASE)
             )
         )
         section_start = SECTION_START.match(body)
