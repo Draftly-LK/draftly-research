@@ -119,8 +119,12 @@ class GraphVerifiedOnlyToggleTests(unittest.TestCase):
         from draftly.case_retrieval.index import connect
 
         with connect() as conn:
-            baseline_adjacency = case_graph.build_graph(conn, verified_only=False)
-            verified_adjacency = case_graph.build_graph(conn, verified_only=True)
+            baseline_adjacency = case_graph.build_graph(
+                conn, verified_only=False, fanout_weight=False, catchword_edges=False, catchword_statute_links=False
+            )
+            verified_adjacency = case_graph.build_graph(
+                conn, verified_only=True, fanout_weight=False, catchword_edges=False, catchword_statute_links=False
+            )
 
         baseline_edges = sum(len(n) for n in baseline_adjacency.values())
         verified_edges = sum(len(n) for n in verified_adjacency.values())
@@ -132,6 +136,41 @@ class GraphVerifiedOnlyToggleTests(unittest.TestCase):
             self.assertTrue(case_graph._verified_only())
         with mock.patch.dict("os.environ", {"DRAFTLY_CASE_GRAPH_VERIFIED_ONLY": "0"}):
             self.assertFalse(case_graph._verified_only())
+
+
+class CatchwordEdgesToggleTests(unittest.TestCase):
+    def test_catchword_edges_default_on_unless_explicitly_disabled(self) -> None:
+        with mock.patch.dict("os.environ", {}, clear=False):
+            import os as _os
+
+            _os.environ.pop("DRAFTLY_CASE_CATCHWORD_EDGES", None)
+            self.assertTrue(case_graph._catchword_edges_enabled())
+        with mock.patch.dict("os.environ", {"DRAFTLY_CASE_CATCHWORD_EDGES": "0"}):
+            self.assertFalse(case_graph._catchword_edges_enabled())
+
+    def test_catchword_edges_add_a_second_independent_bridge(self) -> None:
+        from draftly.case_retrieval.index import connect
+
+        with connect() as conn:
+            baseline_adjacency = case_graph.build_graph(
+                conn, verified_only=False, fanout_weight=False, catchword_edges=False, catchword_statute_links=False
+            )
+            with_catchwords = case_graph.build_graph(
+                conn, verified_only=False, fanout_weight=False, catchword_edges=True, catchword_statute_links=False
+            )
+
+        baseline_edges = sum(len(n) for n in baseline_adjacency.values())
+        catchword_edges_count = sum(len(n) for n in with_catchwords.values())
+        self.assertGreater(catchword_edges_count, baseline_edges)
+
+
+class FanoutDiscountTests(unittest.TestCase):
+    def test_discount_shrinks_as_member_count_grows(self) -> None:
+        low = case_graph.fanout_discount(2)
+        high = case_graph.fanout_discount(13)
+
+        self.assertGreater(low, high)
+        self.assertGreater(high, 0.0)
 
 
 class LexicalIdfToggleTests(unittest.TestCase):
