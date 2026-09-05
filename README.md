@@ -27,6 +27,12 @@ Case-law rule extraction and case-to-statute linking are separate pipelines
 (`scripts/case-law-information-extraction/`,
 `scripts/case-law-statute-linking/`) that do not feed the retrieval index;
 case law is deliberately excluded from it (see Known limitations below).
+The linking pipeline only ever sees the 5,121 conveyancing-flagged cases
+(the other 4,056 of the 9,177-case corpus are out of scope by design). Its
+full coverage funnel and known-issues list — how much of that 5,121 is
+actually linked (7.2% verified; the bottleneck is upstream rule
+extraction, not linking) — is in
+`scripts/case-law-statute-linking/COVERAGE-AND-ISSUES.md`.
 
 ## Corpus status
 
@@ -132,6 +138,22 @@ citations to provisions that no longer exist.
 The Civil Procedure Code dominates the link table — it is procedural, so every
 civil case travels through it regardless of subject, and it has 840 sections
 against the Wills Ordinance's 9.
+
+## Legal statute retrieval (LSR) evaluation
+
+`scripts/legal-statute-retrieval/` benchmarks the retrieval engine itself
+(not the deterministic citation-matching pipeline above) on the case→statute
+retrieval task from IL-PCSR (Paul et al., EMNLP 2025): mask a case's statute
+citation, retrieve over the surrounding text, and check whether the right
+section comes back. On the 462-query gold set built from verified links,
+overall recall@5 is 0.206, but it splits to 0.220 for cases whose statute
+text is unchanged since judgment (`applicable`) versus 0.152 for cases whose
+section was later amended (`superseded-since-judgment`) — the index holds
+only current section text, so retrieval is effectively being asked to match
+wording the court never saw for that second group. See
+`scripts/legal-statute-retrieval/README.md` for the full methodology, scope
+decisions (LSR only, no trained model — see that file for why), and result
+table.
 
 ## Known limitations
 

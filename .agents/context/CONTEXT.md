@@ -1237,6 +1237,45 @@ in the old `contxt.md` were deliberately left out of this file for that reason.)
 
 ## Log
 
+### 2026-08-27 · Claude (HiREC baseline on the 21-Act corpus)
+
+- Re-ran the HiREC variant against the current corpus (21 Acts / 6,211
+  provisions) after the 26 Aug statute ingestions, and recorded four
+  configurations: `smoke-h` (derived acts, 1 iteration), `smoke-act-llm` (LLM
+  acts, 1), `smoke-full` (derived, 3), `smoke-final` (LLM acts, 3). Zero errors
+  in all four. Earlier README numbers were measured on the 18-Act corpus and
+  have been marked as not comparable.
+- **Holds on the larger corpus:** complete evidence available and evidence recall
+  are 1.00 in every configuration, and the free ceiling run still reaches 1.00 at
+  seed K=20. The retrieval half is deterministic and reproduces exactly. Gold
+  lost to re-filtering is zero, so `--freeze-evidence` is unnecessary.
+- **Does not hold:** any precision or F1 ranking between configurations.
+  Evidence precision spans 0.817-0.890, and the configuration combining the two
+  apparent wins lands in the middle, worse than either alone. The iteration
+  effect changes sign depending on the act selector. With 20 questions one
+  question moves a mean by 5 points and there are no repeat runs, so config
+  effect cannot be separated from run-to-run variance. An earlier claim in this
+  session that the LLM act selector improved six metrics at once does not
+  survive that; it is retracted pending repeats or a larger question set.
+- Corpus growth costs precision: re-running an unchanged command on 21 Acts
+  rather than 18 lost about 5 points of evidence precision, because there is
+  more competing text to retrieve.
+- Scoring now handles absent-evidence questions, which previously crashed on a
+  zero denominator. A question with `corpus_coverage: absent` is excluded from
+  rank-aware and set-valued metrics and scored in a new `absent_evidence` block
+  on abstention behaviour instead. In the calibration block it counts as never
+  complete -- required, because an empty gold set is a subset of everything and
+  would otherwise score as "evidence complete" on every run, inflating the metric
+  it exists to fix. `validate_dataset.py` no longer rejects such rows.
+- Also removed a hardcoded `EXPECTED_ACTS = 18` guard that failed the index build
+  the moment the corpus legitimately grew; it now checks that the acts table
+  covers every act_id present in the records.
+- Per-run latency and token/cost are now measured into `usage.jsonl` and
+  `usage_summary.json`. The cost figure derives from a hand-entered rate table
+  that is not verified against the provider price list -- token counts are
+  trustworthy, the money number is not.
+- Focused tests: 83 passed. `uv run pytest tests/`: 235 passed.
+
 ### 2026-08-26 · Claude (HiREC-inspired statute retrieval experiment)
 
 - Added `experiments/HiREC-inspired-retrieval/`, a port of HiREC (ACL 2025

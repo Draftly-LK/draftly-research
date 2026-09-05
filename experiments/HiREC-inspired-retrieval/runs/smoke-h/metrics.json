@@ -30,7 +30,7 @@
         "complete_in_candidates": true
       },
       "smoke-q002": {
-        "retrieved": 78,
+        "retrieved": 79,
         "gold": 2,
         "recall@20": 0.5,
         "recall@50": 0.5,
@@ -70,7 +70,7 @@
         "complete_in_candidates": true
       },
       "smoke-q006": {
-        "retrieved": 46,
+        "retrieved": 47,
         "gold": 2,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -120,7 +120,7 @@
         "complete_in_candidates": true
       },
       "smoke-q011": {
-        "retrieved": 35,
+        "retrieved": 29,
         "gold": 2,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -150,7 +150,7 @@
         "complete_in_candidates": true
       },
       "smoke-q014": {
-        "retrieved": 173,
+        "retrieved": 181,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -170,7 +170,7 @@
         "complete_in_candidates": true
       },
       "smoke-q016": {
-        "retrieved": 102,
+        "retrieved": 97,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -180,7 +180,7 @@
         "complete_in_candidates": true
       },
       "smoke-q017": {
-        "retrieved": 106,
+        "retrieved": 97,
         "gold": 2,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -190,7 +190,7 @@
         "complete_in_candidates": true
       },
       "smoke-q018": {
-        "retrieved": 137,
+        "retrieved": 136,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -200,7 +200,7 @@
         "complete_in_candidates": true
       },
       "smoke-q019": {
-        "retrieved": 174,
+        "retrieved": 154,
         "gold": 3,
         "recall@20": 0.6667,
         "recall@50": 1.0,
@@ -210,7 +210,7 @@
         "complete_in_candidates": true
       },
       "smoke-q020": {
-        "retrieved": 77,
+        "retrieved": 76,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -281,11 +281,11 @@
   },
   "pool_shape": {
     "iteration": 1,
-    "mean_pool_size": 89.65,
-    "max_pool_size": 179,
-    "mean_pool_chars": 28516.25,
+    "mean_pool_size": 88.05,
+    "max_pool_size": 181,
+    "mean_pool_chars": 28440.8,
     "max_pool_chars": 70447,
-    "mean_sections": 13.25,
+    "mean_sections": 13.2,
     "truncated_questions": []
   },
   "act_selection": {
@@ -293,7 +293,7 @@
       "act_recall": 1.0,
       "act_precision": 0.5583,
       "act_set_complete": 1.0,
-      "mean_acts_selected": 2.05,
+      "mean_acts_selected": 2.15,
       "gold_provisions_excluded_by_act_filter": 0,
       "questions": 20
     },
@@ -317,10 +317,11 @@
         ],
         "selected_acts": [
           "21-1998",
-          "11-1973"
+          "11-1973",
+          "17-2002"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.5,
+        "act_precision": 0.3333,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -370,7 +371,7 @@
         "selected_acts": [
           "21-1998",
           "2-1958",
-          "21-1844"
+          "19-1931"
         ],
         "act_recall": 1.0,
         "act_precision": 0.3333,
@@ -514,10 +515,11 @@
         ],
         "selected_acts": [
           "7-2007",
+          "37-1954",
           "11-1973"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.5,
+        "act_precision": 0.3333,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -540,10 +542,11 @@
         ],
         "selected_acts": [
           "7-2007",
-          "17-2002"
+          "17-2002",
+          "19-1931"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.5,
+        "act_precision": 0.3333,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -552,11 +555,10 @@
           "38-2014"
         ],
         "selected_acts": [
-          "38-2014",
-          "18-1945"
+          "38-2014"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.5,
+        "act_precision": 1.0,
         "act_set_complete": true,
         "gold_provisions_lost": []
       }
@@ -569,16 +571,16 @@
       "1": 20
     },
     "stopped_by": {
-      "complete": 19,
-      "budget_exhausted": 1
+      "complete": 18,
+      "budget_exhausted": 2
     },
     "per_iteration": {
       "1": {
         "questions": 20,
         "mean_selected": 2.55,
-        "mean_pool_size": 89.65,
+        "mean_pool_size": 88.05,
         "selection_recall": 1.0,
-        "complete_evidence_rate": 0.95,
+        "complete_evidence_rate": 0.9,
         "forced_answerable": 0,
         "new_gold_found": 0,
         "gold_lost": 0
@@ -825,12 +827,12 @@
     "derived_against_pool": {
       "n": 20,
       "confusion": {
-        "claimed_complete_and_complete": 19,
+        "claimed_complete_and_complete": 18,
         "claimed_complete_but_incomplete": 0,
-        "claimed_incomplete_but_complete": 1,
+        "claimed_incomplete_but_complete": 2,
         "claimed_incomplete_and_incomplete": 0
       },
-      "accuracy": 0.95,
+      "accuracy": 0.9,
       "false_complete_rate": null,
       "recall_of_incomplete": null,
       "mcc": 0.0,
@@ -882,7 +884,7 @@
           "missing": []
         },
         "smoke-q010": {
-          "claimed_complete": true,
+          "claimed_complete": false,
           "actually_complete": true,
           "missing": []
         },
@@ -941,12 +943,12 @@
     "derived_against_selection": {
       "n": 20,
       "confusion": {
-        "claimed_complete_and_complete": 19,
+        "claimed_complete_and_complete": 18,
         "claimed_complete_but_incomplete": 0,
-        "claimed_incomplete_but_complete": 1,
+        "claimed_incomplete_but_complete": 2,
         "claimed_incomplete_and_incomplete": 0
       },
-      "accuracy": 0.95,
+      "accuracy": 0.9,
       "false_complete_rate": null,
       "recall_of_incomplete": null,
       "mcc": 0.0,
@@ -998,7 +1000,7 @@
           "missing": []
         },
         "smoke-q010": {
-          "claimed_complete": true,
+          "claimed_complete": false,
           "actually_complete": true,
           "missing": []
         },
@@ -1057,9 +1059,9 @@
     "note": "against_pool is what the curation prompt actually asks the model to judge: does the pool contain every rule the question needs. against_selection asks the stricter question of whether the evidence it will answer from is complete. Both are reported because the two readings can disagree."
   },
   "sub_question_coverage_calibration": {
-    "points_marked_covered": 39,
-    "covered_points_naming_gold": 37,
-    "covered_precision": 0.9487,
+    "points_marked_covered": 42,
+    "covered_points_naming_gold": 40,
+    "covered_precision": 0.9524,
     "points_marked_not_covered": 0,
     "not_covered_with_gold_genuinely_absent": 0,
     "not_covered_precision": null,
@@ -1067,11 +1069,11 @@
   },
   "curated_provisions": {
     "summary": {
-      "precision": 0.8648,
+      "precision": 0.8168,
       "recall": 1.0,
-      "f1": 0.8985,
+      "f1": 0.8523,
       "complete_evidence_accuracy": 1.0,
-      "exact_set_accuracy": 0.7,
+      "exact_set_accuracy": 0.65,
       "questions": 20
     },
     "per_question": {
@@ -1157,13 +1159,13 @@
         "exact_set": true
       },
       "smoke-q010": {
-        "curated_count": 1,
+        "curated_count": 25,
         "gold": 1,
-        "precision": 1.0,
+        "precision": 0.04,
         "recall": 1.0,
-        "f1": 1.0,
+        "f1": 0.0769,
         "complete_evidence": true,
-        "exact_set": true
+        "exact_set": false
       },
       "smoke-q011": {
         "curated_count": 25,
@@ -1260,11 +1262,11 @@
     "grouped_by_question_type": {
       "application": {
         "questions": 14,
-        "precision": 0.8212,
+        "precision": 0.7526,
         "recall": 1.0,
-        "f1": 0.8629,
+        "f1": 0.797,
         "complete_evidence": 1.0,
-        "exact_set": 0.6429
+        "exact_set": 0.5714
       },
       "calculation": {
         "questions": 1,
@@ -1286,11 +1288,11 @@
     "grouped_by_n_hops": {
       "1": {
         "questions": 11,
-        "precision": 0.8939,
+        "precision": 0.8067,
         "recall": 1.0,
-        "f1": 0.9242,
+        "f1": 0.8403,
         "complete_evidence": 1.0,
-        "exact_set": 0.8182
+        "exact_set": 0.7273
       },
       "2": {
         "questions": 6,
@@ -1311,9 +1313,9 @@
     }
   },
   "answer_citations": {
-    "citation_precision": 0.9233,
-    "citation_recall": 1.0,
-    "citation_f1": 0.9482,
+    "citation_precision": 0.8817,
+    "citation_recall": 0.95,
+    "citation_f1": 0.9028,
     "citation_exact_match": 0.8,
     "questions": 20,
     "per_question": {
@@ -1372,12 +1374,12 @@
         "exact_set": true
       },
       "smoke-q007": {
-        "cited_count": 6,
+        "cited_count": 0,
         "gold": 5,
-        "precision": 0.8333,
-        "recall": 1.0,
-        "f1": 0.9091,
-        "complete_evidence": true,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "complete_evidence": false,
         "exact_set": false
       },
       "smoke-q008": {
@@ -1501,262 +1503,8 @@
   },
   "answerability": {
     "answers_written": 20,
-    "answerable": 20,
-    "abstained": 0
-  },
-  "koblex_baseline_calibration": {
-    "available": true,
-    "run_name": "smoke-b1",
-    "claims_complete": 20,
-    "claims_total": 20,
-    "against_candidate_pool": {
-      "n": 20,
-      "confusion": {
-        "claimed_complete_and_complete": 18,
-        "claimed_complete_but_incomplete": 2,
-        "claimed_incomplete_but_complete": 0,
-        "claimed_incomplete_and_incomplete": 0
-      },
-      "accuracy": 0.9,
-      "false_complete_rate": 1.0,
-      "recall_of_incomplete": 0.0,
-      "mcc": 0.0,
-      "degenerate": null,
-      "per_question": {
-        "smoke-q001": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q002": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q003": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q004": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q005": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q006": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q007": {
-          "claimed_complete": true,
-          "actually_complete": false,
-          "missing": [
-            "21-1998/section-60/subsection-1/closing_text-1"
-          ]
-        },
-        "smoke-q008": {
-          "claimed_complete": true,
-          "actually_complete": false,
-          "missing": [
-            "21-1998/section-52/paragraph-c",
-            "21-1998/section-52/paragraph-d",
-            "21-1998/section-52/paragraph-e",
-            "21-1998/section-52/paragraph-f"
-          ]
-        },
-        "smoke-q009": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q010": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q011": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q012": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q013": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q014": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q015": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q016": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q017": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q018": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q019": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q020": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        }
-      }
-    },
-    "against_own_selection": {
-      "n": 20,
-      "confusion": {
-        "claimed_complete_and_complete": 17,
-        "claimed_complete_but_incomplete": 3,
-        "claimed_incomplete_but_complete": 0,
-        "claimed_incomplete_and_incomplete": 0
-      },
-      "accuracy": 0.85,
-      "false_complete_rate": 1.0,
-      "recall_of_incomplete": 0.0,
-      "mcc": 0.0,
-      "degenerate": null,
-      "per_question": {
-        "smoke-q001": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q002": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q003": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q004": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q005": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q006": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q007": {
-          "claimed_complete": true,
-          "actually_complete": false,
-          "missing": [
-            "21-1998/section-60/subsection-1/closing_text-1"
-          ]
-        },
-        "smoke-q008": {
-          "claimed_complete": true,
-          "actually_complete": false,
-          "missing": [
-            "21-1998/section-52/paragraph-c",
-            "21-1998/section-52/paragraph-d",
-            "21-1998/section-52/paragraph-e",
-            "21-1998/section-52/paragraph-f"
-          ]
-        },
-        "smoke-q009": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q010": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q011": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q012": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q013": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q014": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q015": {
-          "claimed_complete": true,
-          "actually_complete": false,
-          "missing": [
-            "17-2002/section-13"
-          ]
-        },
-        "smoke-q016": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q017": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q018": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q019": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        },
-        "smoke-q020": {
-          "claimed_complete": true,
-          "actually_complete": true,
-          "missing": []
-        }
-      }
-    }
+    "answerable": 19,
+    "abstained": 1
   },
   "errors": {
     "count": 0,

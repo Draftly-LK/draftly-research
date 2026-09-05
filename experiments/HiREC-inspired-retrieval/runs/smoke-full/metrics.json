@@ -6,7 +6,8 @@
   "notes": [
     "With 20 questions one question moves any mean by 5 points, and smoke-q008 have more than 5 gold provisions each. Complete-evidence accuracy is the more informative headline number than any single recall cutoff.",
     "Pool recall@k is not comparable to the koblex b0/b1 recall@k: the section-expanded pool is a differently-sized object (roughly 91 records against 20-40), so its cutoffs run to 200.",
-    "complete_evidence_in_pool is the ceiling for every downstream number in this file. No curation or answering metric can exceed it."
+    "complete_evidence_in_pool is the ceiling for every downstream number in this file. No curation or answering metric can exceed it.",
+    "No absent-evidence questions in this gold set, so the answerability metrics have no negative class: a claim of completeness is never wrong and false_complete_rate is null by construction rather than by good calibration."
   ],
   "hierarchy_pool_ranked": {
     "summary": {
@@ -30,7 +31,7 @@
         "complete_in_candidates": true
       },
       "smoke-q002": {
-        "retrieved": 78,
+        "retrieved": 79,
         "gold": 2,
         "recall@20": 0.5,
         "recall@50": 0.5,
@@ -70,7 +71,7 @@
         "complete_in_candidates": true
       },
       "smoke-q006": {
-        "retrieved": 46,
+        "retrieved": 47,
         "gold": 2,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -120,7 +121,7 @@
         "complete_in_candidates": true
       },
       "smoke-q011": {
-        "retrieved": 35,
+        "retrieved": 29,
         "gold": 2,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -150,7 +151,7 @@
         "complete_in_candidates": true
       },
       "smoke-q014": {
-        "retrieved": 173,
+        "retrieved": 181,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -170,7 +171,7 @@
         "complete_in_candidates": true
       },
       "smoke-q016": {
-        "retrieved": 102,
+        "retrieved": 97,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -180,7 +181,7 @@
         "complete_in_candidates": true
       },
       "smoke-q017": {
-        "retrieved": 106,
+        "retrieved": 97,
         "gold": 2,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -190,7 +191,7 @@
         "complete_in_candidates": true
       },
       "smoke-q018": {
-        "retrieved": 137,
+        "retrieved": 136,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -200,7 +201,7 @@
         "complete_in_candidates": true
       },
       "smoke-q019": {
-        "retrieved": 174,
+        "retrieved": 154,
         "gold": 3,
         "recall@20": 0.6667,
         "recall@50": 1.0,
@@ -210,7 +211,7 @@
         "complete_in_candidates": true
       },
       "smoke-q020": {
-        "retrieved": 77,
+        "retrieved": 76,
         "gold": 1,
         "recall@20": 1.0,
         "recall@50": 1.0,
@@ -281,11 +282,11 @@
   },
   "pool_shape": {
     "iteration": 1,
-    "mean_pool_size": 89.65,
-    "max_pool_size": 179,
-    "mean_pool_chars": 28516.25,
+    "mean_pool_size": 88.05,
+    "max_pool_size": 181,
+    "mean_pool_chars": 28440.8,
     "max_pool_chars": 70447,
-    "mean_sections": 13.25,
+    "mean_sections": 13.2,
     "truncated_questions": []
   },
   "act_selection": {
@@ -293,7 +294,7 @@
       "act_recall": 1.0,
       "act_precision": 0.5583,
       "act_set_complete": 1.0,
-      "mean_acts_selected": 2.05,
+      "mean_acts_selected": 2.15,
       "gold_provisions_excluded_by_act_filter": 0,
       "questions": 20
     },
@@ -317,10 +318,11 @@
         ],
         "selected_acts": [
           "21-1998",
-          "11-1973"
+          "11-1973",
+          "17-2002"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.5,
+        "act_precision": 0.3333,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -370,7 +372,7 @@
         "selected_acts": [
           "21-1998",
           "2-1958",
-          "21-1844"
+          "19-1931"
         ],
         "act_recall": 1.0,
         "act_precision": 0.3333,
@@ -514,10 +516,11 @@
         ],
         "selected_acts": [
           "7-2007",
+          "37-1954",
           "11-1973"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.5,
+        "act_precision": 0.3333,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -540,10 +543,11 @@
         ],
         "selected_acts": [
           "7-2007",
-          "17-2002"
+          "17-2002",
+          "19-1931"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.5,
+        "act_precision": 0.3333,
         "act_set_complete": true,
         "gold_provisions_lost": []
       },
@@ -552,11 +556,10 @@
           "38-2014"
         ],
         "selected_acts": [
-          "38-2014",
-          "18-1945"
+          "38-2014"
         ],
         "act_recall": 1.0,
-        "act_precision": 0.5,
+        "act_precision": 1.0,
         "act_set_complete": true,
         "gold_provisions_lost": []
       }
@@ -570,13 +573,14 @@
       "3": 2
     },
     "stopped_by": {
-      "complete": 20
+      "complete": 18,
+      "budget_exhausted": 2
     },
     "per_iteration": {
       "1": {
         "questions": 20,
-        "mean_selected": 2.55,
-        "mean_pool_size": 89.65,
+        "mean_selected": 2.5,
+        "mean_pool_size": 88.05,
         "selection_recall": 1.0,
         "complete_evidence_rate": 0.9,
         "forced_answerable": 0,
@@ -586,7 +590,7 @@
       "2": {
         "questions": 2,
         "mean_selected": 1.5,
-        "mean_pool_size": 73.0,
+        "mean_pool_size": 45.0,
         "selection_recall": 1.0,
         "complete_evidence_rate": 0.0,
         "forced_answerable": 0,
@@ -596,9 +600,9 @@
       "3": {
         "questions": 2,
         "mean_selected": 1.5,
-        "mean_pool_size": 67.5,
+        "mean_pool_size": 46.5,
         "selection_recall": 1.0,
-        "complete_evidence_rate": 1.0,
+        "complete_evidence_rate": 0.0,
         "forced_answerable": 0,
         "new_gold_found": 0,
         "gold_lost": 0
@@ -627,101 +631,121 @@
         "smoke-q001": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q002": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q003": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q004": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q005": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q006": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q007": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q008": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q009": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q010": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q011": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q012": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q013": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q014": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q015": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q016": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q017": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q018": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q019": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q020": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         }
       }
@@ -743,101 +767,121 @@
         "smoke-q001": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q002": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q003": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q004": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q005": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q006": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q007": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q008": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q009": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q010": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q011": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q012": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q013": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q014": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q015": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q016": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q017": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q018": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q019": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q020": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         }
       }
@@ -859,101 +903,121 @@
         "smoke-q001": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q002": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q003": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q004": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q005": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q006": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q007": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q008": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q009": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q010": {
           "claimed_complete": false,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q011": {
           "claimed_complete": false,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q012": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q013": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q014": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q015": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q016": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q017": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q018": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q019": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q020": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         }
       }
@@ -975,101 +1039,121 @@
         "smoke-q001": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q002": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q003": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q004": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q005": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q006": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q007": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q008": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q009": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q010": {
           "claimed_complete": false,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q011": {
           "claimed_complete": false,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q012": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q013": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q014": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q015": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q016": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q017": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q018": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q019": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q020": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         }
       }
@@ -1078,20 +1162,24 @@
   },
   "sub_question_coverage_calibration": {
     "points_marked_covered": 50,
-    "covered_points_naming_gold": 48,
-    "covered_precision": 0.96,
+    "covered_points_naming_gold": 49,
+    "covered_precision": 0.98,
     "points_marked_not_covered": 0,
     "not_covered_with_gold_genuinely_absent": 0,
     "not_covered_precision": null,
     "note": "not_covered_precision is only computable where the run recorded the pool alongside the curation; it asks whether any gold provision was genuinely outside the pool at that point, not whether this particular point's gap was."
   },
+  "absent_evidence": {
+    "questions": 0,
+    "note": "No absent-evidence questions in this gold set. Until some exist, the answerability metrics have no negative class and cannot distinguish a well-calibrated pipeline from a pipeline that always claims completeness."
+  },
   "curated_provisions": {
     "summary": {
-      "precision": 0.9108,
+      "precision": 0.8377,
       "recall": 1.0,
-      "f1": 0.9411,
+      "f1": 0.8702,
       "complete_evidence_accuracy": 1.0,
-      "exact_set_accuracy": 0.75,
+      "exact_set_accuracy": 0.65,
       "questions": 20
     },
     "per_question": {
@@ -1177,6 +1265,24 @@
         "exact_set": true
       },
       "smoke-q010": {
+        "curated_count": 25,
+        "gold": 1,
+        "precision": 0.04,
+        "recall": 1.0,
+        "f1": 0.0769,
+        "complete_evidence": true,
+        "exact_set": false
+      },
+      "smoke-q011": {
+        "curated_count": 25,
+        "gold": 2,
+        "precision": 0.08,
+        "recall": 1.0,
+        "f1": 0.1481,
+        "complete_evidence": true,
+        "exact_set": false
+      },
+      "smoke-q012": {
         "curated_count": 1,
         "gold": 1,
         "precision": 1.0,
@@ -1184,24 +1290,6 @@
         "f1": 1.0,
         "complete_evidence": true,
         "exact_set": true
-      },
-      "smoke-q011": {
-        "curated_count": 2,
-        "gold": 2,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "complete_evidence": true,
-        "exact_set": true
-      },
-      "smoke-q012": {
-        "curated_count": 3,
-        "gold": 1,
-        "precision": 0.3333,
-        "recall": 1.0,
-        "f1": 0.5,
-        "complete_evidence": true,
-        "exact_set": false
       },
       "smoke-q013": {
         "curated_count": 1,
@@ -1222,13 +1310,13 @@
         "exact_set": true
       },
       "smoke-q015": {
-        "curated_count": 3,
+        "curated_count": 4,
         "gold": 3,
-        "precision": 1.0,
+        "precision": 0.75,
         "recall": 1.0,
-        "f1": 1.0,
+        "f1": 0.8571,
         "complete_evidence": true,
-        "exact_set": true
+        "exact_set": false
       },
       "smoke-q016": {
         "curated_count": 1,
@@ -1280,11 +1368,11 @@
     "grouped_by_question_type": {
       "application": {
         "questions": 14,
-        "precision": 0.8869,
+        "precision": 0.8002,
         "recall": 1.0,
-        "f1": 0.9238,
+        "f1": 0.8327,
         "complete_evidence": 1.0,
-        "exact_set": 0.7143
+        "exact_set": 0.6429
       },
       "calculation": {
         "questions": 1,
@@ -1296,29 +1384,29 @@
       },
       "recall": {
         "questions": 5,
-        "precision": 0.96,
+        "precision": 0.91,
         "recall": 1.0,
-        "f1": 0.9778,
+        "f1": 0.9492,
         "complete_evidence": 1.0,
-        "exact_set": 0.8
+        "exact_set": 0.6
       }
     },
     "grouped_by_n_hops": {
       "1": {
         "questions": 11,
-        "precision": 0.8939,
+        "precision": 0.8445,
         "recall": 1.0,
-        "f1": 0.9242,
+        "f1": 0.8728,
         "complete_evidence": 1.0,
-        "exact_set": 0.8182
+        "exact_set": 0.7273
       },
       "2": {
         "questions": 6,
-        "precision": 0.925,
+        "precision": 0.7717,
         "recall": 1.0,
-        "f1": 0.9577,
+        "f1": 0.8157,
         "complete_evidence": 1.0,
-        "exact_set": 0.6667
+        "exact_set": 0.5
       },
       "3": {
         "questions": 3,
@@ -1331,10 +1419,10 @@
     }
   },
   "answer_citations": {
-    "citation_precision": 0.9317,
+    "citation_precision": 0.9442,
     "citation_recall": 1.0,
-    "citation_f1": 0.9528,
-    "citation_exact_match": 0.85,
+    "citation_f1": 0.9661,
+    "citation_exact_match": 0.8,
     "questions": 20,
     "per_question": {
       "smoke-q001": {
@@ -1392,13 +1480,13 @@
         "exact_set": true
       },
       "smoke-q007": {
-        "cited_count": 5,
+        "cited_count": 6,
         "gold": 5,
-        "precision": 1.0,
+        "precision": 0.8333,
         "recall": 1.0,
-        "f1": 1.0,
+        "f1": 0.9091,
         "complete_evidence": true,
-        "exact_set": true
+        "exact_set": false
       },
       "smoke-q008": {
         "cited_count": 10,
@@ -1437,13 +1525,13 @@
         "exact_set": true
       },
       "smoke-q012": {
-        "cited_count": 3,
+        "cited_count": 1,
         "gold": 1,
-        "precision": 0.3333,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1": 0.5,
+        "f1": 1.0,
         "complete_evidence": true,
-        "exact_set": false
+        "exact_set": true
       },
       "smoke-q013": {
         "cited_count": 1,
@@ -1464,13 +1552,13 @@
         "exact_set": true
       },
       "smoke-q015": {
-        "cited_count": 3,
+        "cited_count": 4,
         "gold": 3,
-        "precision": 1.0,
+        "precision": 0.75,
         "recall": 1.0,
-        "f1": 1.0,
+        "f1": 0.8571,
         "complete_evidence": true,
-        "exact_set": true
+        "exact_set": false
       },
       "smoke-q016": {
         "cited_count": 1,
@@ -1521,8 +1609,8 @@
   },
   "answerability": {
     "answers_written": 20,
-    "answerable": 19,
-    "abstained": 1
+    "answerable": 20,
+    "abstained": 0
   },
   "koblex_baseline_calibration": {
     "available": true,
@@ -1546,36 +1634,43 @@
         "smoke-q001": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q002": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q003": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q004": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q005": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q006": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q007": {
           "claimed_complete": true,
           "actually_complete": false,
+          "evidence_absent_from_corpus": false,
           "missing": [
             "21-1998/section-60/subsection-1/closing_text-1"
           ]
@@ -1583,6 +1678,7 @@
         "smoke-q008": {
           "claimed_complete": true,
           "actually_complete": false,
+          "evidence_absent_from_corpus": false,
           "missing": [
             "21-1998/section-52/paragraph-c",
             "21-1998/section-52/paragraph-d",
@@ -1593,61 +1689,73 @@
         "smoke-q009": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q010": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q011": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q012": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q013": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q014": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q015": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q016": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q017": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q018": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q019": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q020": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         }
       }
@@ -1669,36 +1777,43 @@
         "smoke-q001": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q002": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q003": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q004": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q005": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q006": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q007": {
           "claimed_complete": true,
           "actually_complete": false,
+          "evidence_absent_from_corpus": false,
           "missing": [
             "21-1998/section-60/subsection-1/closing_text-1"
           ]
@@ -1706,6 +1821,7 @@
         "smoke-q008": {
           "claimed_complete": true,
           "actually_complete": false,
+          "evidence_absent_from_corpus": false,
           "missing": [
             "21-1998/section-52/paragraph-c",
             "21-1998/section-52/paragraph-d",
@@ -1716,36 +1832,43 @@
         "smoke-q009": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q010": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q011": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q012": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q013": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q014": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q015": {
           "claimed_complete": true,
           "actually_complete": false,
+          "evidence_absent_from_corpus": false,
           "missing": [
             "17-2002/section-13"
           ]
@@ -1753,26 +1876,31 @@
         "smoke-q016": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q017": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q018": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q019": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         },
         "smoke-q020": {
           "claimed_complete": true,
           "actually_complete": true,
+          "evidence_absent_from_corpus": false,
           "missing": []
         }
       }

@@ -1195,6 +1195,63 @@ class EvaluationTests(unittest.TestCase):
         self.assertEqual(block["covered_precision"], 0.5)
         self.assertEqual(block["points_marked_not_covered"], 1)
 
+    def test_absent_evidence_questions_do_not_crash_ranked_scoring(self):
+        """An empty gold set has a zero denominator; it must be skipped, not
+        divided by."""
+        scored = evaluate_module.score_ranked(
+            {"q1": ["a", "b"], "q2": ["c"]},
+            {"q1": {"a"}, "q2": set()},
+            evaluate_module.RECALL_CUTOFFS_POOL)
+        self.assertEqual(scored["summary"]["questions"], 1)
+        self.assertIn("q1", scored["per_question"])
+        self.assertNotIn("q2", scored["per_question"])
+
+    def test_absent_evidence_questions_are_skipped_by_set_scoring(self):
+        scored = evaluate_module.score_sets(
+            {"q1": {"a"}, "q2": {"c"}}, {"q1": {"a"}, "q2": set()}, "curated")
+        self.assertEqual(scored["summary"]["questions"], 1)
+        self.assertNotIn("q2", scored["per_question"])
+
+    def test_absent_evidence_never_counts_as_complete_in_calibration(self):
+        """An empty gold set is a subset of everything. Left alone it would score
+        as 'the evidence was complete' on every run -- the exact opposite of the
+        truth, and it would destroy the measurement these questions enable."""
+        claims = {"q1": (True, {"a", "b"})}
+        block = evaluate_module.score_calibration(
+            claims, {"q1": set()}, absent={"q1"})
+        self.assertEqual(block["confusion"]["claimed_complete_but_incomplete"], 1)
+        self.assertEqual(block["confusion"]["claimed_complete_and_complete"], 0)
+        self.assertTrue(block["per_question"]["q1"]["evidence_absent_from_corpus"])
+
+    def test_absent_evidence_gives_the_calibration_a_negative_class(self):
+        """The degenerate flag disappears once absent questions exist."""
+        claims = {"q1": (True, {"a"}), "q2": (True, {"a"})}
+        gold = {"q1": {"a"}, "q2": set()}
+        block = evaluate_module.score_calibration(claims, gold, absent={"q2"})
+        self.assertEqual(block["false_complete_rate"], 1.0)
+        self.assertIsNone(block["degenerate"])
+
+    def test_absent_evidence_block_scores_abstention(self):
+        answers = [
+            {"question_id": "q1", "answerable": False, "cited_node_ids": [],
+             "missing_evidence": ["the Notaries Ordinance"], "stopped_by": "x"},
+            {"question_id": "q2", "answerable": True, "cited_node_ids": ["a"],
+             "missing_evidence": [], "stopped_by": "complete"},
+        ]
+        block = evaluate_module.score_absent_evidence(
+            answers, [], absent={"q1", "q2"})
+        self.assertEqual(block["questions"], 2)
+        self.assertEqual(block["abstained"], 1)
+        self.assertEqual(block["answered_anyway"], 1)
+        self.assertEqual(block["answered_and_cited_provisions"], 1)
+        self.assertEqual(block["abstention_rate"], 0.5)
+        self.assertEqual(block["named_the_gap_in_missing_evidence"], 1)
+
+    def test_absent_evidence_block_says_so_when_there_are_none(self):
+        block = evaluate_module.score_absent_evidence([], [], absent=set())
+        self.assertEqual(block["questions"], 0)
+        self.assertIn("no negative class", block["note"])
+
     def test_selection_block_reports_no_rank_aware_metric(self):
         block = evaluate_module.score_sets(
             {"q1": {"a"}}, {"q1": {"a"}}, "curated")

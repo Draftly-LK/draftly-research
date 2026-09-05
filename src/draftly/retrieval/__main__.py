@@ -7,6 +7,7 @@ from pathlib import Path
 from .answering import answer
 from .evaluation import run_evaluation
 from .index import build_index
+from .lsr_evaluation import run_lsr_evaluation
 from .models import StatuteQuery
 from .qa_evaluation import run_qa_evaluation
 from .question_analysis import parse_question_file
@@ -32,6 +33,16 @@ def main() -> None:
     ask_parser.add_argument("--limit", type=int, default=12)
 
     subparsers.add_parser("evaluate", help="Run development retrieval evaluation.")
+
+    lsr_parser = subparsers.add_parser(
+        "evaluate-lsr",
+        help="Run the IL-PCSR-derived legal statute retrieval (LSR) evaluation.",
+    )
+    lsr_parser.add_argument(
+        "--rerank",
+        action="store_true",
+        help="Add a bounded Gemini re-rank pass over each query's retrieved candidates.",
+    )
 
     serve_parser = subparsers.add_parser("serve", help="Run the statute retrieval FastAPI service.")
     serve_parser.add_argument("--host", default="127.0.0.1")
@@ -71,6 +82,8 @@ def main() -> None:
         print(json.dumps(response.to_dict(), indent=2, ensure_ascii=False))
     elif args.command == "evaluate":
         print(json.dumps(run_evaluation(), indent=2))
+    elif args.command == "evaluate-lsr":
+        print(json.dumps(run_lsr_evaluation(rerank=args.rerank), indent=2))
     elif args.command == "serve":
         import uvicorn
 

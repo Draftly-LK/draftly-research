@@ -16,6 +16,9 @@ from typing import Any
 
 from fastapi import FastAPI, HTTPException, Query
 
+from draftly.case_retrieval.models import CaseQuery
+from draftly.case_retrieval.search import find_similar
+
 from .answering import answer as answer_query
 from .case_statute_links import case_statute_links
 from .corpus import sources_for_ui, topics_for_ui
@@ -149,6 +152,19 @@ def case_statute_links_for_case_endpoint(
         "links": [link.to_dict() for link in links],
         "count": len(links),
     }
+
+
+@app.get("/similar-cases")
+def similar_cases_endpoint(
+    q: str = Query(..., min_length=1, description="Free-text fact pattern to find similar conveyancing cases for."),
+    limit: int = Query(8, ge=1, le=50),
+) -> dict[str, Any]:
+    """Similar-case retrieval, scoped to the conveyancing-flagged case corpus
+    (`draftly.case_retrieval`). Deliberately separate from `/search`/`/answer`
+    above: this queries case law, not the statutes-only engine those wire to.
+    """
+    result = find_similar(CaseQuery(text=q, limit=limit))
+    return result.to_dict()
 
 
 @app.get("/answer")
