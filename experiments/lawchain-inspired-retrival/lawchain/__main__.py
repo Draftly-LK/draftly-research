@@ -19,6 +19,10 @@ def main() -> None:
     search_parser.add_argument("query")
     search_parser.add_argument("--limit", type=int, default=5)
 
+    answer_parser = subparsers.add_parser("answer")
+    answer_parser.add_argument("question")
+    answer_parser.add_argument("--limit", type=int, default=5)
+
     subparsers.add_parser("evaluate")
     subparsers.add_parser("sources")
 
@@ -30,6 +34,9 @@ def main() -> None:
     elif args.command == "search":
         hits = engine.retrieve(args.query, limit=args.limit)
         print(json.dumps([hit.to_dict() for hit in hits], indent=2))
+    elif args.command == "answer":
+        answer = engine.answer(args.question, limit=args.limit)
+        print(json.dumps(answer.to_dict(), indent=2))
     elif args.command == "evaluate":
         result = run_comparison()
         print(json.dumps(result, indent=2))
