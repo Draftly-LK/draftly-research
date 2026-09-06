@@ -54,7 +54,7 @@ packages = ["src/draftly"]
 cloudscraper = { git = "https://github.com/VeNoMouS/cloudscraper.git" }
 
 [tool.pytest.ini_options]
-pythonpath = [".", "apps/lawchain-from-scratch"]
+pythonpath = [".", "experiments/lawchain-inspired-retrival"]
 
 [dependency-groups]
 dev = [
