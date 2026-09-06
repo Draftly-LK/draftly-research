@@ -40,7 +40,7 @@ before implementation.
 ## Running it
 
 ```powershell
-$env:PYTHONPATH = "apps/lawchain-from-scratch"
+$env:PYTHONPATH = "experiments/lawchain-inspired-retrival"
 uv run python -m lawchain sources    # verify the resolved statute files
 uv run python -m lawchain build
 uv run python -m lawchain search "stamp duty" --limit 5
@@ -48,7 +48,7 @@ uv run python -m lawchain evaluate   # writes evaluation/runs/lawchain-v1/compar
 ```
 
 `lawchain` is not part of the installed `draftly` package -- it needs
-`apps/lawchain-from-scratch` on `PYTHONPATH` at invocation time. The first
+`experiments/lawchain-inspired-retrival` on `PYTHONPATH` at invocation time. The first
 `build` with the dense channel enabled downloads the `intfloat/e5-base-v2`
 weights (~440MB) from the Hugging Face Hub; set `LAWCHAIN_DISABLE_DENSE=1`
 to skip that channel entirely (lexical + graph only).
