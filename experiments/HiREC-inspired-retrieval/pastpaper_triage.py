@@ -102,24 +102,38 @@ ALIASES = {
         "Deeds and Documents (Execution before Public Officers) Ordinance",
     "tea and rubber estates (control of fragmentation) act":
         "Tea and Rubber Estates (Control of Fragmentation) Act",
+    # The corpus grew from 21 to 39 acts after this list was first written
+    # (see paper-01/paper-02 review notes in worksheet.csv); these eight were
+    # on KNOWN_ABSENT below and are now present. Moved here, not deleted from
+    # KNOWN_ABSENT's history -- if the corpus is ever queried at an older
+    # fingerprint, check this list's date against it before trusting either.
+    "registration of documents ordinance": "Registration of Documents Ordinance",
+    "prevention of frauds ordinance": "Prevention of Frauds Ordinance",
+    "mortgage act": "Mortgage Act",
+    "land development ordinance": "Land Development Ordinance",
+    "trusts ordinance": "Trusts Ordinance",
+    "stamp duty act": "Stamp Duty Act",
+    "civil procedure code": "Civil Procedure Code",
+    "state lands ordinance": "State Lands Ordinance",
 }
 
 # Statute names that appear in the papers and are known NOT to be in the
 # corpus. Listing them explicitly means bucket B is a positive identification
 # rather than "the alias table did not match", which would also catch typos.
+#
+# Verify against the corpus before trusting this list -- it has already gone
+# stale twice (paper-01 review: prevention of frauds ordinance, mortgage act,
+# stamp duty act, state lands ordinance; paper-02 review: registration of
+# documents ordinance, land development ordinance, trusts ordinance, civil
+# procedure code). Re-check with:
+#   python -c "import json; acts={json.loads(l)['act_title'] for l in
+#   open('experiments/koblex-inspired-retrieval/data/statute.jsonl',
+#   encoding='utf-8')}; print(sorted(acts))"
 KNOWN_ABSENT = [
-    "registration of documents ordinance",
     "notaries ordinance",
-    "prevention of frauds ordinance",
     "partition act",
     "partition law",
-    "mortgage act",
-    "land development ordinance",
-    "trusts ordinance",
-    "stamp duty act",
-    "civil procedure code",
     "crown lands ordinance",
-    "state lands ordinance",
     "land acquisition act",
     "condominium management authority law",
     "rent act",

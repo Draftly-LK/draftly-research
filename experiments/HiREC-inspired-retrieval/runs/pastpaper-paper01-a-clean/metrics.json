@@ -1,0 +1,343 @@
+{
+  "run_name": "pastpaper-paper01-a-clean",
+  "gold_path": "data/evaluvation/pastpaper-triage/pastpaper_gold.filtered-a-clean.jsonl",
+  "gold_questions": 10,
+  "matching": "exact node_id",
+  "notes": [
+    "Pool recall@k is not comparable to the koblex b0/b1 recall@k: the section-expanded pool is a differently-sized object (roughly 91 records against 20-40), so its cutoffs run to 200.",
+    "complete_evidence_in_pool is the ceiling for every downstream number in this file. No curation or answering metric can exceed it."
+  ],
+  "hierarchy_pool_ranked": {
+    "summary": {
+      "recall@20": 0.42,
+      "recall@50": 0.52,
+      "recall@100": 0.6533,
+      "recall@200": 0.7033,
+      "mrr": 0.381,
+      "questions": 10,
+      "complete_evidence_in_pool": 0.6
+    },
+    "per_question": {
+      "paper-01-q1-iv": {
+        "retrieved": 29,
+        "gold": 5,
+        "recall@20": 0.2,
+        "recall@50": 0.2,
+        "recall@100": 0.2,
+        "recall@200": 0.2,
+        "reciprocal_rank": 0.1667,
+        "complete_in_candidates": false
+      },
+      "paper-01-q2-iv": {
+        "retrieved": 108,
+        "gold": 2,
+        "recall@20": 0.0,
+        "recall@50": 0.0,
+        "recall@100": 1.0,
+        "recall@200": 1.0,
+        "reciprocal_rank": 0.0179,
+        "complete_in_candidates": true
+      },
+      "paper-01-q3-i": {
+        "retrieved": 197,
+        "gold": 2,
+        "recall@20": 0.0,
+        "recall@50": 0.0,
+        "recall@100": 0.0,
+        "recall@200": 0.0,
+        "reciprocal_rank": 0.0,
+        "complete_in_candidates": false
+      },
+      "paper-01-q6-i": {
+        "retrieved": 29,
+        "gold": 1,
+        "recall@20": 1.0,
+        "recall@50": 1.0,
+        "recall@100": 1.0,
+        "recall@200": 1.0,
+        "reciprocal_rank": 0.3333,
+        "complete_in_candidates": true
+      },
+      "paper-01-q6-ii": {
+        "retrieved": 96,
+        "gold": 2,
+        "recall@20": 1.0,
+        "recall@50": 1.0,
+        "recall@100": 1.0,
+        "recall@200": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "paper-01-q6-iii": {
+        "retrieved": 58,
+        "gold": 2,
+        "recall@20": 0.5,
+        "recall@50": 0.5,
+        "recall@100": 0.5,
+        "recall@200": 0.5,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": false
+      },
+      "paper-01-q6-iv": {
+        "retrieved": 41,
+        "gold": 1,
+        "recall@20": 1.0,
+        "recall@50": 1.0,
+        "recall@100": 1.0,
+        "recall@200": 1.0,
+        "reciprocal_rank": 0.25,
+        "complete_in_candidates": true
+      },
+      "paper-01-q8-ii": {
+        "retrieved": 75,
+        "gold": 3,
+        "recall@20": 0.0,
+        "recall@50": 0.0,
+        "recall@100": 0.3333,
+        "recall@200": 0.3333,
+        "reciprocal_rank": 0.0196,
+        "complete_in_candidates": false
+      },
+      "paper-01-q8-iii": {
+        "retrieved": 208,
+        "gold": 2,
+        "recall@20": 0.5,
+        "recall@50": 0.5,
+        "recall@100": 0.5,
+        "recall@200": 1.0,
+        "reciprocal_rank": 1.0,
+        "complete_in_candidates": true
+      },
+      "paper-01-q9-i": {
+        "retrieved": 104,
+        "gold": 1,
+        "recall@20": 0.0,
+        "recall@50": 1.0,
+        "recall@100": 1.0,
+        "recall@200": 1.0,
+        "reciprocal_rank": 0.0227,
+        "complete_in_candidates": true
+      }
+    },
+    "grouped_by_question_type": {
+      "application": {
+        "questions": 2,
+        "recall@20": 0.75,
+        "recall@50": 0.75,
+        "recall@100": 0.75,
+        "recall@200": 0.75,
+        "reciprocal_rank": 0.6666,
+        "complete_in_candidates": 0.5
+      },
+      "recall": {
+        "questions": 8,
+        "recall@20": 0.3375,
+        "recall@50": 0.4625,
+        "recall@100": 0.6292,
+        "recall@200": 0.6917,
+        "reciprocal_rank": 0.3096,
+        "complete_in_candidates": 0.625
+      }
+    },
+    "grouped_by_n_hops": {
+      "1": {
+        "questions": 3,
+        "recall@20": 0.6667,
+        "recall@50": 1.0,
+        "recall@100": 1.0,
+        "recall@200": 1.0,
+        "reciprocal_rank": 0.202,
+        "complete_in_candidates": 1.0
+      },
+      "2": {
+        "questions": 5,
+        "recall@20": 0.4,
+        "recall@50": 0.4,
+        "recall@100": 0.6,
+        "recall@200": 0.7,
+        "reciprocal_rank": 0.6036,
+        "complete_in_candidates": 0.6
+      },
+      "3": {
+        "questions": 1,
+        "recall@20": 0.0,
+        "recall@50": 0.0,
+        "recall@100": 0.3333,
+        "recall@200": 0.3333,
+        "reciprocal_rank": 0.0196,
+        "complete_in_candidates": 0.0
+      },
+      "5": {
+        "questions": 1,
+        "recall@20": 0.2,
+        "recall@50": 0.2,
+        "recall@100": 0.2,
+        "recall@200": 0.2,
+        "reciprocal_rank": 0.1667,
+        "complete_in_candidates": 0.0
+      }
+    }
+  },
+  "act_selection": {
+    "summary": {
+      "act_recall": 1.0,
+      "act_precision": 0.5967,
+      "act_set_complete": 1.0,
+      "mean_acts_selected": 3.1,
+      "gold_provisions_excluded_by_act_filter": 0,
+      "questions": 10
+    },
+    "note": "Most of these questions cite a single Act, so act recall saturates and discriminates poorly between selectors. gold_provisions_excluded_by_act_filter is the number that matters: any value above zero means the act stage is losing evidence the unscoped search would have reached.",
+    "per_question": {
+      "paper-01-q1-iv": {
+        "gold_acts": [
+          "15-1876"
+        ],
+        "selected_acts": [
+          "1-1911",
+          "15-1876"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 0.5,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "paper-01-q2-iv": {
+        "gold_acts": [
+          "43-1982"
+        ],
+        "selected_acts": [
+          "43-1982",
+          "6-1949",
+          "6-1990",
+          "61-1939",
+          "7-2007"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 0.2,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "paper-01-q3-i": {
+        "gold_acts": [
+          "43-1982"
+        ],
+        "selected_acts": [
+          "19-1935",
+          "29-1947",
+          "43-1982",
+          "53-1938",
+          "6-1949",
+          "61-1939"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 0.1667,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "paper-01-q6-i": {
+        "gold_acts": [
+          "21-1998"
+        ],
+        "selected_acts": [
+          "21-1998"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 1.0,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "paper-01-q6-ii": {
+        "gold_acts": [
+          "21-1998"
+        ],
+        "selected_acts": [
+          "11-1973",
+          "21-1998"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 0.5,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "paper-01-q6-iii": {
+        "gold_acts": [
+          "21-1998"
+        ],
+        "selected_acts": [
+          "21-1998",
+          "35-1947"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 0.5,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "paper-01-q6-iv": {
+        "gold_acts": [
+          "21-1998"
+        ],
+        "selected_acts": [
+          "21-1998"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 1.0,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "paper-01-q8-ii": {
+        "gold_acts": [
+          "11-1973"
+        ],
+        "selected_acts": [
+          "11-1973"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 1.0,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "paper-01-q8-iii": {
+        "gold_acts": [
+          "11-1973"
+        ],
+        "selected_acts": [
+          "11-1973"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 1.0,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      },
+      "paper-01-q9-i": {
+        "gold_acts": [
+          "21-1844"
+        ],
+        "selected_acts": [
+          "17-1979",
+          "2-1889",
+          "21-1844",
+          "29-1947",
+          "37-1954",
+          "41-1978",
+          "53-1938",
+          "61-1939",
+          "7-2007",
+          "9-1917"
+        ],
+        "act_recall": 1.0,
+        "act_precision": 0.1,
+        "act_set_complete": true,
+        "gold_provisions_lost": []
+      }
+    }
+  },
+  "pool_shape": {
+    "mean_pool_size": 94.5,
+    "max_pool_size": 208,
+    "mean_pool_chars": 35004.6,
+    "max_pool_chars": 80434,
+    "mean_sections": 12.9,
+    "truncated_questions": []
+  }
+}

@@ -713,7 +713,7 @@
     },
     "SRC064": {
         "checked_against": "data/legal-sources/library/statutes/6-1949-mortgage-act.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
-        "note": "126 sections, coverage 2.12% unmatched -- the great majority the Act's three Schedules (forms of notice, deliberately excluded, same as other statutes' Schedules).",
+        "note": "126 sections, coverage 2.03% unmatched -- the great majority the Act's three Schedules (forms of notice, deliberately excluded, same as other statutes' Schedules). Moved from the two-column PDF parser to this HTML edition: verified every one of the 125 sections common to both editions section-by-section (not just by count) -- the only real differences were 6 stray-space typos (mort gage x2, other wise, hereinafter split, claming) now fixed below, plus genuine improvements the HTML edition doesn't share the old PDF parser's defects for (the section 88/89 heading-bleed and the phantom duplicate section-28 node, both previously logged as known_parser_limitation, are gone; six sections' trailing Part-heading bleed is correctly excluded; section 3's and section 46's definitional clauses are correctly nested as their own children instead of run into the section's own text). Section 68A, absent from the HTML edition entirely, is restored via inserted_sections below.",
         "publisher": "LankaLaw (private republisher, consolidated to 2024)",
         "quality_notes": [
             {
@@ -723,7 +723,8 @@
                     "29"
                 ],
                 "issue": "Section 29's marginal note wraps across four lines, the last of which is the bare page-fragment '28.' (part of 'Estate to be bound if notices issued as provided in section 28.') sitting alone in the note column beside body text that continues section 29's own sentence ('may be or may have been dead...'). A general fix was attempted -- only treat a bare N. in the note-column position as reopening the body when it carries no text of its own -- and reverted: it restored section 29 correctly here but discarded real content in two OTHER already-finalized statutes (Stamp Duty Act section 30, Western Province Financial Statute section 1), because the identical bare-N.-alone shape is also how a genuine section legitimately opens in this document family when its own text happens to start on the very next physical line. The two failure modes are not distinguishable from this local signal alone. Left as before the attempt: section 28 (the real one, headed 'Provision for death, insolvency...') carries its own 4 subsections correctly; a second, phantom node also numbered '28' with no heading holds the fragment of section 29's own text that this note wrapping displaced ('may be or may have been dead or an insolvent...'); section 29 itself is missing that continuation and its subsections (2) and (3).",
-                "status": "known_parser_limitation"
+                "status": "superseded_by_edition_switch",
+                "resolution": "This described the two-column PDF parser's output for this statute. Now generated from the HTML edition instead, which doesn't have this note-wrapping defect: section 28 and 29 are each a single, correctly-headed node, the phantom duplicate '28' is gone, and section 29's subsection (1) carries the full text this note previously displaced. Kept here as a record of the defect the switch fixed, and because parse_consolidated_pdf.py itself still has this limitation for whatever other statutes still go through it."
             },
             {
                 "code": "section_88_89_heading_bleed",
@@ -732,7 +733,8 @@
                     "89"
                 ],
                 "issue": "Section 89's heading, 'Meaning of \"book debt\".', has its own number land inside the quoted term when the note wraps ('Meaning of \"book / 89. / debt\".'), and the whole thing -- number included -- gets read as a continuation of section 88's heading instead of opening section 89. Section 89 does not appear as its own node at all -- not just its heading but its whole body ('In sections 90 to 95 \"book debt\" means any debt which - (a)...') is missing; 88's heading reads 'Damages for wrongful sale of mortgaged property. Meaning of \"book 89. debt\"'.",
-                "status": "known_parser_limitation"
+                "status": "superseded_by_edition_switch",
+                "resolution": "This described the two-column PDF parser's output for this statute. Now generated from the HTML edition instead, which has section 89 as a clean, complete node (heading, body text, and cross-reference to section 90 all correct) and section 88 ending at its own proper close. Kept here as a record of the defect the switch fixed, and because parse_consolidated_pdf.py itself still has this limitation for whatever other statutes still go through it."
             },
             {
                 "code": "bare_section_backreference_unresolved",
@@ -744,8 +746,61 @@
             },
             {
                 "code": "section_47D_and_others_letter_run",
-                "detail": "Letter-suffixed sections present: 47A, 62A-62H (62D recovered by a fix landed while working this statute -- a note that fills its column can run straight into its own section number with no gap, 'Provision for death,28.' and 'Application to be in62D.' both did this), 68A. All confirmed against the source.",
+                "detail": "Letter-suffixed sections present: 47A, 62A-62H (62D recovered by a fix landed while working this statute -- a note that fills its column can run straight into its own section number with no gap, 'Provision for death,28.' and 'Application to be in62D.' both did this), 68A. All confirmed against the source. 68A itself was never actually present as a node in this generation pathway despite being noted here as confirmed -- see inserted_sections below, which finally applies that fix.",
                 "status": "informational"
+            },
+            {
+                "code": "edition_switch_recovers_section_89",
+                "issue": "This statute's canonical tree moved from the two-column PDF parser to the HTML edition (data/legal-sources/library/statutes/HTML/6-1949-mortgage-act.html), which does not have the section_88_89_heading_bleed defect noted above -- section 89 ('Meaning of \"book debt\".') is a proper node in the HTML parse. Verified: the HTML-derived tree's only content difference from the prior PDF-derived tree is gaining section 89 (previously swallowed into section 88's heading) and losing section 68A, which the HTML edition's underlying consolidation predates -- restored below via inserted_sections. Every other section number is identical between the two editions.",
+                "status": "resolved_by_edition_switch"
+            }
+        ],
+        "text_corrections": [
+            {
+                "section": "25",
+                "find": "upon a puisne mort gage, and the conveyance",
+                "replace": "upon a puisne mortgage, and the conveyance",
+                "reason": "HTML reads 'mort gage' (stray space); confirmed against the PDF text layer, which reads 'mortgage' continuously, same as the word's ~363 other occurrences in this HTML edition."
+            },
+            {
+                "section": "25",
+                "find": "here inafter in this section referred to as",
+                "replace": "hereinafter in this section referred to as",
+                "reason": "HTML reads 'here inafter' (stray space); confirmed against the PDF text layer, which reads 'hereinafter' continuously, same as 16 of the word's 19 occurrences elsewhere in this HTML edition."
+            },
+            {
+                "section": "107",
+                "find": "the court finds that the mort gage ought to be enforced",
+                "replace": "the court finds that the mortgage ought to be enforced",
+                "reason": "HTML reads 'mort gage' (stray space); confirmed against the PDF text layer, which reads 'mortgage' continuously."
+            },
+            {
+                "section": "84",
+                "find": "surrendered by the agency other wise than in the due exercise",
+                "replace": "surrendered by the agency otherwise than in the due exercise",
+                "reason": "HTML reads 'other wise' (stray space); confirmed against the PDF text layer, which reads 'otherwise' continuously, same as the word's other 18 occurrences in this HTML edition."
+            },
+            {
+                "section": "62F",
+                "find": "or of some person claming under a title",
+                "replace": "or of some person claiming under a title",
+                "reason": "HTML reads 'claming' (missing the 'i'); confirmed against the PDF text layer, which reads 'claiming'."
+            }
+        ],
+        "inserted_sections": [
+            {
+                "after": "68",
+                "number": "68A",
+                "heading": "Application of Part III to movable property",
+                "raw_text": "68A. The provisions of Part III of this Act shall only apply to any movable property in so far as they are not inconsistent with the provisions of the Secured Transactions Act, No. 17 of 2024, from and after the date of coming into operation of the said Secured Transactions Act. [2, 20 of 2024]",
+                "cross_references": [
+                    {
+                        "kind": "enactment",
+                        "target_document": "Secured Transactions Act",
+                        "verbatim": "the Secured Transactions Act, No. 17 of 2024"
+                    }
+                ],
+                "reason": "Section 68A is absent from the HTML edition entirely (that consolidation predates the amendment that inserted it) but is present, with this exact text and its own inline amendment marker '[2, 20 of 2024]', in the registry's own consolidated PDF for this statute (data/legal-sources/library/statutes/6-1949-mortgage-act.pdf). The amending instrument itself (Act No. 20 of 2024) is not present anywhere in this corpus, so this section could not be produced via parse_amendment_pdf.py and an --amendment flag the normal way; it is inserted directly from the PDF's own text instead. amendment_history_status for this instrument stays unverified against the amending Act's own document."
             }
         ],
         "verification_status": "unverified"

@@ -165,6 +165,7 @@ def check_against_corpus(gold: list[dict], questions: list[dict],
     for record in gold:
         where = record.get("question_id") or "?"
         provisions = record.get("relevant_provisions") or []
+        coverage_value = (record.get("corpus_coverage") or "").strip()
 
         for node_id in provisions:
             if node_id not in corpus_ids:
