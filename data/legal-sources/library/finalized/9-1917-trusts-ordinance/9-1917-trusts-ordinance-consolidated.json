@@ -40,12 +40,48 @@
    "type": "Act",
    "number": 30,
    "year": 1971
+  },
+  {
+   "type": "Act",
+   "number": 6,
+   "year": 2018,
+   "status": "applied_from_held_source",
+   "source_tree": "6-2018-trusts-amendment.json"
   }
  ],
  "verification_status": "unverified",
  "content_completeness": "",
- "amendment_history_status": "listed_in_source_header",
- "editorial_notes": [],
+ "amendment_history_status": "listed_in_source_header_plus_Act_6_of_2018_applied_from_held_text",
+ "editorial_notes": [
+  {
+   "code": "consolidation_by_this_pipeline",
+   "note": "The LankaLaw baseline (chain 9 of 1917, 4 of 1918, 1 of 1934, 7 of 1968, 30 of 1971) predates the Trusts (Amendment) Act, No. 6 of 2018, whose operations were applied here from the Act's own Government Printer text on 2026-09-05; every applied node carries an amendment_event with applied: true and its earlier text in text_before_amendment. The resulting text is the pipeline's consolidation, not a publisher's."
+  },
+  {
+   "code": "inserted_text_says_this_Act",
+   "sections_affected": [
+    "3",
+    "6A",
+    "6B",
+    "19A",
+    "19B",
+    "19C",
+    "115A"
+   ],
+   "note": "Provisions inserted by Act 6 of 2018 refer to 'this Act' where the Ordinance would say 'this Ordinance'; kept as enacted."
+  },
+  {
+   "code": "survey_act_not_an_amendment",
+   "note": "The curriculum pairs '17 of 2002' with the Trusts Ordinance; the held files amendments/17-2002-survey.pdf and amendments/html/17-2002-survey-act.html are the Survey Act, No. 17 of 2002, which does not touch this Ordinance. Excluded."
+  },
+  {
+   "code": "section_3_footnote",
+   "sections_affected": [
+    "3"
+   ],
+   "note": "Paragraph (b) carries the republisher's footnote '(* Abolished by Act No. 20 of 1972.)' about fideicommissa; kept as printed, not an amendment of this Ordinance."
+  }
+ ],
  "omitted_provisions": [],
  "overrides_applied": {
   "checked_against": "data/legal-sources/library/statutes/HTML/9-1917-trusts-ordinance.html",
@@ -138,10 +174,24 @@
       {
        "type": "paragraph",
        "number": "e",
-       "raw_text": "(e) the person for whose benefit the confidence is accepted is called the \" beneficiary \";",
-       "text": "the person for whose benefit the confidence is accepted is called the \" beneficiary \";",
-       "amendment_events": [],
-       "cross_references": []
+       "raw_text": "(e) “beneficiary” means a person, or a defined or definitely ascertainable class of persons, for whose benefit the confidence is accepted;",
+       "text": "“beneficiary” means a person, or a defined or definitely ascertainable class of persons, for whose benefit the confidence is accepted;",
+       "amendment_events": [
+        {
+         "instrument": "6-2018",
+         "amending_act": "Act No. 6 of 2018",
+         "amending_section": "2(1)",
+         "operation": "repeal_and_substitute",
+         "applied": true,
+         "applied_on": "2026-09-05",
+         "classification": "applied_from_held_source",
+         "source_tree": "6-2018-trusts-amendment.json"
+        }
+       ],
+       "cross_references": [],
+       "children": [],
+       "text_before_amendment": "the person for whose benefit the confidence is accepted is called the \" beneficiary \";",
+       "raw_text_before_amendment": "(e) the person for whose benefit the confidence is accepted is called the \" beneficiary \";"
       },
       {
        "type": "paragraph",
@@ -244,6 +294,48 @@
          "verbatim": "the Prevention of Frauds Ordinance"
         }
        ]
+      },
+      {
+       "type": "paragraph",
+       "number": "p",
+       "raw_text": "(p) “express trust” means a trust that is created by the author of the trust generally in the form of an instrument in writing with certainty indicating the intention of the trust, but does not include a constructive trust or a de facto trust, whether charitable or not;",
+       "text": "“express trust” means a trust that is created by the author of the trust generally in the form of an instrument in writing with certainty indicating the intention of the trust, but does not include a constructive trust or a de facto trust, whether charitable or not;",
+       "amendment_events": [
+        {
+         "instrument": "6-2018",
+         "amending_act": "Act No. 6 of 2018",
+         "amending_section": "2(2)",
+         "operation": "insert",
+         "applied": true,
+         "applied_on": "2026-09-05",
+         "classification": "applied_from_held_source",
+         "source_tree": "6-2018-trusts-amendment.json",
+         "after_paragraph": "o"
+        }
+       ],
+       "cross_references": [],
+       "children": []
+      },
+      {
+       "type": "paragraph",
+       "number": "q",
+       "raw_text": "(q) “prescribed” means prescribed by regulations made under this Act.",
+       "text": "“prescribed” means prescribed by regulations made under this Act.",
+       "amendment_events": [
+        {
+         "instrument": "6-2018",
+         "amending_act": "Act No. 6 of 2018",
+         "amending_section": "2(2)",
+         "operation": "insert",
+         "applied": true,
+         "applied_on": "2026-09-05",
+         "classification": "applied_from_held_source",
+         "source_tree": "6-2018-trusts-amendment.json",
+         "after_paragraph": "o"
+        }
+       ],
+       "cross_references": [],
+       "children": []
       }
      ]
     }
@@ -425,6 +517,109 @@
          "text": "(unless the trust is declared by will or the author of the trust is himself to be the trustee) transfers the trust property to the trustee.",
          "amendment_events": [],
          "cross_references": []
+        }
+       ]
+      },
+      {
+       "type": "section",
+       "number": "6A",
+       "heading": "Registrar-General to maintain a register of trusts.",
+       "raw_text": "6A.",
+       "text": "",
+       "amendment_events": [
+        {
+         "instrument": "6-2018",
+         "amending_act": "Act No. 6 of 2018",
+         "amending_section": "3",
+         "operation": "insert",
+         "applied": true,
+         "applied_on": "2026-09-05",
+         "classification": "applied_from_held_source",
+         "source_tree": "6-2018-trusts-amendment.json",
+         "after_section": "6"
+        }
+       ],
+       "cross_references": [],
+       "children": [
+        {
+         "type": "subsection",
+         "number": "1",
+         "raw_text": "The Registrar-General shall prepare and maintain a register containing such information as may be prescribed in respect of every express trust created in compliance with section 5.",
+         "text": "The Registrar-General shall prepare and maintain a register containing such information as may be prescribed in respect of every express trust created in compliance with section 5.",
+         "amendment_events": [],
+         "cross_references": [
+          {
+           "kind": "internal",
+           "target_document": "Trusts Ordinance",
+           "target_section": "5",
+           "verbatim": "section 5"
+          }
+         ],
+         "children": []
+        },
+        {
+         "type": "subsection",
+         "number": "2",
+         "raw_text": "The trustee of any immovable or movable property in respect of an express trust, shall forward to the Registrar-General for the purpose of subsection (1), all such information relating to the trust, as may be prescribed.",
+         "text": "The trustee of any immovable or movable property in respect of an express trust, shall forward to the Registrar-General for the purpose of subsection (1), all such information relating to the trust, as may be prescribed.",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        }
+       ]
+      },
+      {
+       "type": "section",
+       "number": "6B",
+       "heading": "Duty of the Registrar-General to provide information of trusts.",
+       "raw_text": "6B.",
+       "text": "",
+       "amendment_events": [
+        {
+         "instrument": "6-2018",
+         "amending_act": "Act No. 6 of 2018",
+         "amending_section": "3",
+         "operation": "insert",
+         "applied": true,
+         "applied_on": "2026-09-05",
+         "classification": "applied_from_held_source",
+         "source_tree": "6-2018-trusts-amendment.json",
+         "after_section": "6"
+        }
+       ],
+       "cross_references": [],
+       "children": [
+        {
+         "type": "subsection",
+         "number": "1",
+         "raw_text": "The Registrar-General shall, on a request made by the Financial Intelligence Unit, or by any other authority with the written sanction of the Financial Intelligence Unit, provide to the Financial Intelligence Unit or such other authority any information relating to any express trust, kept in the register maintained under section 6A.",
+         "text": "The Registrar-General shall, on a request made by the Financial Intelligence Unit, or by any other authority with the written sanction of the Financial Intelligence Unit, provide to the Financial Intelligence Unit or such other authority any information relating to any express trust, kept in the register maintained under section 6A.",
+         "amendment_events": [],
+         "cross_references": [
+          {
+           "kind": "internal",
+           "target_document": "Trusts Ordinance",
+           "target_section": "6A",
+           "verbatim": "section 6A"
+          }
+         ],
+         "children": []
+        },
+        {
+         "type": "subsection",
+         "number": "2",
+         "raw_text": "For the purpose of subsection (1), the Financial Intelligence Unit shall be the Financial Intelligence Unit that may be designated under the Financial Transactions Reporting Act, No. 6 of 2006.",
+         "text": "For the purpose of subsection (1), the Financial Intelligence Unit shall be the Financial Intelligence Unit that may be designated under the Financial Transactions Reporting Act, No. 6 of 2006.",
+         "amendment_events": [],
+         "cross_references": [
+          {
+           "kind": "enactment",
+           "target_document": "Financial Transactions Reporting Act",
+           "verbatim": "the Financial Transactions Reporting Act, No. 6 of 2006",
+           "target_citation": "No. 6 of 2006"
+          }
+         ],
+         "children": []
         }
        ]
       },
@@ -701,6 +896,302 @@
       },
       {
        "type": "section",
+       "number": "19A",
+       "heading": "Trustee to keep updated information on identity in record.",
+       "raw_text": "19A.",
+       "text": "",
+       "amendment_events": [
+        {
+         "instrument": "6-2018",
+         "amending_act": "Act No. 6 of 2018",
+         "amending_section": "4",
+         "operation": "insert",
+         "applied": true,
+         "applied_on": "2026-09-05",
+         "classification": "applied_from_held_source",
+         "source_tree": "6-2018-trusts-amendment.json",
+         "after_section": "19"
+        }
+       ],
+       "cross_references": [],
+       "children": [
+        {
+         "type": "subsection",
+         "number": "1",
+         "raw_text": "A trustee shall keep records of all such information as may be prescribed, on the identity of the following persons at the time of creation of an express trust under section 6:—",
+         "text": "A trustee shall keep records of all such information as may be prescribed, on the identity of the following persons at the time of creation of an express trust under section 6:—",
+         "amendment_events": [],
+         "cross_references": [
+          {
+           "kind": "internal",
+           "target_document": "Trusts Ordinance",
+           "target_section": "6",
+           "verbatim": "section 6"
+          }
+         ],
+         "children": [
+          {
+           "type": "paragraph",
+           "number": "a",
+           "raw_text": "the trustee himself;",
+           "text": "the trustee himself;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "paragraph",
+           "number": "b",
+           "raw_text": "the co-trustees, if any;",
+           "text": "the co-trustees, if any;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "paragraph",
+           "number": "c",
+           "raw_text": "the author of the trust;",
+           "text": "the author of the trust;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "paragraph",
+           "number": "d",
+           "raw_text": "the beneficiary, to the greatest extent possible; and",
+           "text": "the beneficiary, to the greatest extent possible; and",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "paragraph",
+           "number": "e",
+           "raw_text": "any other person engaged in the execution of the trust in the capacity of an agent, a legal representative, a manager, an investment advisor or a tax advisor, an accountant or otherwise.",
+           "text": "any other person engaged in the execution of the trust in the capacity of an agent, a legal representative, a manager, an investment advisor or a tax advisor, an accountant or otherwise.",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          }
+         ]
+        },
+        {
+         "type": "subsection",
+         "number": "2",
+         "raw_text": "The information under subsection (1) shall be verified and updated every three months, to the greatest extent possible.",
+         "text": "The information under subsection (1) shall be verified and updated every three months, to the greatest extent possible.",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        },
+        {
+         "type": "subsection",
+         "number": "3",
+         "raw_text": "Where an express trust has been created for the benefit of a class of persons, all such information as may be prescribed, on the identity of every person belonging to such class of persons, to the greatest extent possible, shall be kept in record under subsection (1).",
+         "text": "Where an express trust has been created for the benefit of a class of persons, all such information as may be prescribed, on the identity of every person belonging to such class of persons, to the greatest extent possible, shall be kept in record under subsection (1).",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        },
+        {
+         "type": "subsection",
+         "number": "4",
+         "raw_text": "Where an express trust has been created for the benefit of a person other than a natural person, the information on the identity of the natural person who is the beneficial owner of the trust, shall be kept in record under subsection (1).",
+         "text": "Where an express trust has been created for the benefit of a person other than a natural person, the information on the identity of the natural person who is the beneficial owner of the trust, shall be kept in record under subsection (1).",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        },
+        {
+         "type": "subsection",
+         "number": "5",
+         "raw_text": "A trustee shall maintain records of information of any person referred to in subsections (1), (2), (3) and (4), at least for a period of six years from the date on which such person’s involvement with the trust ceases to exist.",
+         "text": "A trustee shall maintain records of information of any person referred to in subsections (1), (2), (3) and (4), at least for a period of six years from the date on which such person’s involvement with the trust ceases to exist.",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        },
+        {
+         "type": "subsection",
+         "number": "6",
+         "raw_text": "For the purposes of this section, “beneficial owner” means a natural person or persons who ultimately own the benefits of an express trust or control the trust property or the person or persons on whose behalf an express trust is being created and includes the person or persons who exercise ultimate effective control over a person or a body of persons, whether incorporated or unincorporated.",
+         "text": "For the purposes of this section, “beneficial owner” means a natural person or persons who ultimately own the benefits of an express trust or control the trust property or the person or persons on whose behalf an express trust is being created and includes the person or persons who exercise ultimate effective control over a person or a body of persons, whether incorporated or unincorporated.",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        }
+       ]
+      },
+      {
+       "type": "section",
+       "number": "19B",
+       "heading": "Trustee to provide updated information of identity to relevant authorities.",
+       "raw_text": "19B.",
+       "text": "",
+       "amendment_events": [
+        {
+         "instrument": "6-2018",
+         "amending_act": "Act No. 6 of 2018",
+         "amending_section": "4",
+         "operation": "insert",
+         "applied": true,
+         "applied_on": "2026-09-05",
+         "classification": "applied_from_held_source",
+         "source_tree": "6-2018-trusts-amendment.json",
+         "after_section": "19"
+        }
+       ],
+       "cross_references": [],
+       "children": [
+        {
+         "type": "subsection",
+         "number": "1",
+         "raw_text": "",
+         "text": "",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": [
+          {
+           "type": "paragraph",
+           "number": "a",
+           "raw_text": "A trustee and a co-trustee, if any, of an express trust shall provide to any relevant authority, any information in the record maintained under section 19A, in respect of any person referred to in that section whenever such trustee is required to provide such information by such authority.",
+           "text": "A trustee and a co-trustee, if any, of an express trust shall provide to any relevant authority, any information in the record maintained under section 19A, in respect of any person referred to in that section whenever such trustee is required to provide such information by such authority.",
+           "amendment_events": [],
+           "cross_references": [
+            {
+             "kind": "internal",
+             "target_document": "Trusts Ordinance",
+             "target_section": "19A",
+             "verbatim": "section 19A"
+            }
+           ],
+           "children": []
+          },
+          {
+           "type": "paragraph",
+           "number": "b",
+           "raw_text": "For the purpose of paragraph (a), the “relevant authority” means –",
+           "text": "For the purpose of paragraph (a), the “relevant authority” means –",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": [
+            {
+             "type": "subparagraph",
+             "number": "i",
+             "raw_text": "any public authority assigned with the responsibility of preventing money laundering and suppression of terrorist financing; or",
+             "text": "any public authority assigned with the responsibility of preventing money laundering and suppression of terrorist financing; or",
+             "amendment_events": [],
+             "cross_references": [],
+             "children": []
+            },
+            {
+             "type": "subparagraph",
+             "number": "ii",
+             "raw_text": "any authority that performs the function of investigating and prosecuting money laundering and terrorist financing associated offences and seizing or freezing and confiscating assets relating to such offences.",
+             "text": "any authority that performs the function of investigating and prosecuting money laundering and terrorist financing associated offences and seizing or freezing and confiscating assets relating to such offences.",
+             "amendment_events": [],
+             "cross_references": [],
+             "children": []
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "subsection",
+         "number": "2",
+         "raw_text": "",
+         "text": "",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": [
+          {
+           "type": "paragraph",
+           "number": "a",
+           "raw_text": "A trustee of an express trust shall, when entering into a continuing business relationship or conducting any transaction or carrying out any occasional transaction, exceeding a financial limit as may be prescribed, with any institution carrying out financial business or designated non-finance business, provide updated information on the identity of any person referred to in section 19A or of the trust property which is subject to the business relationship, as is required by such institution.",
+           "text": "A trustee of an express trust shall, when entering into a continuing business relationship or conducting any transaction or carrying out any occasional transaction, exceeding a financial limit as may be prescribed, with any institution carrying out financial business or designated non-finance business, provide updated information on the identity of any person referred to in section 19A or of the trust property which is subject to the business relationship, as is required by such institution.",
+           "amendment_events": [],
+           "cross_references": [
+            {
+             "kind": "internal",
+             "target_document": "Trusts Ordinance",
+             "target_section": "19A",
+             "verbatim": "section 19A"
+            }
+           ],
+           "children": []
+          },
+          {
+           "type": "paragraph",
+           "number": "b",
+           "raw_text": "For the purpose of paragraph (a), the expressions “designated non-finance business”, “finance business” and “occasional transaction’’, shall have the same meanings as in the Financial Transactions Reporting Act, No. 6 of 2006.",
+           "text": "For the purpose of paragraph (a), the expressions “designated non-finance business”, “finance business” and “occasional transaction’’, shall have the same meanings as in the Financial Transactions Reporting Act, No. 6 of 2006.",
+           "amendment_events": [],
+           "cross_references": [
+            {
+             "kind": "enactment",
+             "target_document": "Financial Transactions Reporting Act",
+             "verbatim": "the Financial Transactions Reporting Act, No. 6 of 2006",
+             "target_citation": "No. 6 of 2006"
+            }
+           ],
+           "children": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "section",
+       "number": "19C",
+       "heading": "Penalty for contravention of sections 6A, 19, 19A and 19B.",
+       "raw_text": "19C. A trustee who acts in contravention of the provisions of sections 6A, 19, 19A and 19B shall be guilty of an offence under this Act and shall, on conviction by a Magistrate, be liable to a fine not exceeding two hundred thousand rupees or to imprisonment for a term not exceeding two years or to both such fine and imprisonment.",
+       "text": "A trustee who acts in contravention of the provisions of sections 6A, 19, 19A and 19B shall be guilty of an offence under this Act and shall, on conviction by a Magistrate, be liable to a fine not exceeding two hundred thousand rupees or to imprisonment for a term not exceeding two years or to both such fine and imprisonment.",
+       "amendment_events": [
+        {
+         "instrument": "6-2018",
+         "amending_act": "Act No. 6 of 2018",
+         "amending_section": "4",
+         "operation": "insert",
+         "applied": true,
+         "applied_on": "2026-09-05",
+         "classification": "applied_from_held_source",
+         "source_tree": "6-2018-trusts-amendment.json",
+         "after_section": "19"
+        }
+       ],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Trusts Ordinance",
+         "target_section": "6A",
+         "verbatim": "sections 6A, 19, 19A and 19B"
+        },
+        {
+         "kind": "internal",
+         "target_document": "Trusts Ordinance",
+         "target_section": "19",
+         "verbatim": "sections 6A, 19, 19A and 19B"
+        },
+        {
+         "kind": "internal",
+         "target_document": "Trusts Ordinance",
+         "target_section": "19A",
+         "verbatim": "sections 6A, 19, 19A and 19B"
+        },
+        {
+         "kind": "internal",
+         "target_document": "Trusts Ordinance",
+         "target_section": "19B",
+         "verbatim": "sections 6A, 19, 19A and 19B"
+        }
+       ],
+       "children": []
+      },
+      {
+       "type": "section",
        "number": "20",
        "heading": "Investment of trust money.",
        "raw_text": "20. Where the trust property consists of money and cannot be applied immediately or at an early date to the purposes of the trust, the trustee is bound (subject to any direction contained in the instrument of trust) to invest the money on the following securities, and on no others:-",
@@ -810,23 +1301,29 @@
        "number": "21",
        "heading": "Savings as to existing investments and investment in Government Savings Banks or National Savings Bank.",
        "raw_text": "21. Nothing in section 20 shall apply to investments made before the commencement of this Ordinance, or shall be deemed to preclude a deposit of that money in a Government Savings Bank or in the National Savings Bank.",
-       "text": "Nothing in section 20 shall apply to investments made before the commencement of this Ordinance, or shall be deemed to preclude a deposit of that money in a Government Savings Bank or in the National Savings Bank.",
+       "text": "Nothing in section 20 shall apply to investments made before the commencement of this Ordinance, or shall be deemed to preclude a deposit of trust money in a Government Savings Bank or in the National Savings Bank.",
        "amendment_events": [
         {
          "amending_act": "7 of 1968",
          "amending_act_no": 7,
          "amending_year": 1968,
          "amending_section": "2",
-         "operation": "unknown",
-         "verbatim": "[2,7 of 1968]"
+         "operation": "substitute",
+         "verbatim": "[2,7 of 1968]",
+         "corroborated_by": "amendments/html/7-1968-trusts-amendment.html s.2: substitution for all the words from ' to preclude, in any case ' to the end of the section of the words ' to preclude the deposit of trust money in a Government Savings Bank (including the Ceylon Savings Bank). '"
         },
         {
          "amending_act": "30 of 1971",
          "amending_act_no": 30,
          "amending_year": 1971,
          "amending_section": "89",
-         "operation": "unknown",
-         "verbatim": "[ 89, 30 of 1971]"
+         "operation": "substitute",
+         "verbatim": "[ 89, 30 of 1971]",
+         "operations": [
+          "s.89(1): words from 'shall be deemed to preclude,' to the end of the section substituted",
+          "s.89(2): marginal note 'in Government Savings Bank.' -> 'in Government Savings Bank or National Savings Bank.'"
+         ],
+         "corroborated_by": "amendments/30-1971-national-savings-banks.pdf page 48 (render) and amendments/html/30-1971-national-savings-bank.html s.89; the baseline heading already reads 'Savings as to existing investments and investment in Government Savings Banks or National Savings Bank.'"
         }
        ],
        "cross_references": [
@@ -836,7 +1333,9 @@
          "target_section": "20",
          "verbatim": "section 20"
         }
-       ]
+       ],
+       "text_raw_html": "Nothing in section 20 shall apply to investments made before the commencement of this Ordinance, or shall be deemed to preclude a deposit of that money in a Government Savings Bank or in the National Savings Bank.",
+       "correction_note": "'that money' (LankaLaw HTML) -> 'trust money': the words from 'shall be deemed to preclude' to the end of the section are those substituted by the National Savings Bank Act, No. 30 of 1971, s.89(1), whose Government Printer text (scan, page 48, read from a pdftoppm render) reads 'shall be deemed to preclude a deposit of trust money in a Government Savings Bank or in the National Savings Bank.'; the earlier Act No. 7 of 1968 s.2 (LankaLaw HTML) also read 'the deposit of trust money'. The HTML reading is kept in text_raw_html."
       },
       {
        "type": "section",
@@ -2128,9 +2627,32 @@
        "number": "72",
        "heading": "office how vacated.",
        "raw_text": "72. The office of a trustee is vacated by his death or by his discharge from his office.",
-       "text": "The office of a trustee is vacated by his death or by his discharge from his office.",
-       "amendment_events": [],
-       "cross_references": []
+       "text": "The office of a trustee is vacated by his death or by his discharge from his office or on such trustee being convicted of an offence under section 19C.",
+       "amendment_events": [
+        {
+         "instrument": "6-2018",
+         "amending_act": "Act No. 6 of 2018",
+         "amending_section": "5",
+         "operation": "substitute",
+         "applied": true,
+         "applied_on": "2026-09-05",
+         "classification": "applied_from_held_source",
+         "source_tree": "6-2018-trusts-amendment.json",
+         "substitutes": {
+          "from": "by his discharge from his office.",
+          "to": "by his discharge from his office or on such trustee being convicted of an offence under section 19C."
+         }
+        }
+       ],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Trusts Ordinance",
+         "target_section": "19C",
+         "verbatim": "section 19C"
+        }
+       ],
+       "text_before_amendment": "The office of a trustee is vacated by his death or by his discharge from his office."
       },
       {
        "type": "section",
@@ -2220,9 +2742,31 @@
          "type": "subsection",
          "number": "1",
          "raw_text": "(1) Whenever any person appointed a trustee disclaims, or any trustee, either original or substituted, dies, or is absent from Sri Lanka for such a continuous period and under such circumstances that, in the opinion of the court, it is desirable, in the interests of the trust, that his office should be declared vacant, or is declared an insolvent, or desires to be discharged from the trust, or refuses or is or becomes, in the opinion of the court, unfit or personally incapable to act in the trust, or accepts an inconsistent trust, a new trustee may be appointed in his place by -",
-         "text": "Whenever any person appointed a trustee disclaims, or any trustee, either original or substituted, dies, or is absent from Sri Lanka for such a continuous period and under such circumstances that, in the opinion of the court, it is desirable, in the interests of the trust, that his office should be declared vacant, or is declared an insolvent, or desires to be discharged from the trust, or refuses or is or becomes, in the opinion of the court, unfit or personally incapable to act in the trust, or accepts an inconsistent trust, a new trustee may be appointed in his place by -",
-         "amendment_events": [],
-         "cross_references": [],
+         "text": "Whenever any person appointed a trustee disclaims, or any trustee, either original or substituted, dies, or is absent from Sri Lanka for such a continuous period and under such circumstances that, in the opinion of the court, it is desirable, in the interests of the trust, that his office should be declared vacant, or is declared an insolvent, or desires to be discharged from the trust, or refuses or is or becomes, in the opinion of the court, unfit or personally incapable to act in the trust, or accepts an inconsistent trust, or is convicted of an offence under section 19C, a new trustee may be appointed in his place by -",
+         "amendment_events": [
+          {
+           "instrument": "6-2018",
+           "amending_act": "Act No. 6 of 2018",
+           "amending_section": "6",
+           "operation": "substitute",
+           "applied": true,
+           "applied_on": "2026-09-05",
+           "classification": "applied_from_held_source",
+           "source_tree": "6-2018-trusts-amendment.json",
+           "substitutes": {
+            "from": "or accepts an inconsistent trust,",
+            "to": "or accepts an inconsistent trust, or is convicted of an offence under section 19C,"
+           }
+          }
+         ],
+         "cross_references": [
+          {
+           "kind": "internal",
+           "target_document": "Trusts Ordinance",
+           "target_section": "19C",
+           "verbatim": "section 19C"
+          }
+         ],
          "children": [
           {
            "type": "paragraph",
@@ -2240,7 +2784,8 @@
            "amendment_events": [],
            "cross_references": []
           }
-         ]
+         ],
+         "text_before_amendment": "Whenever any person appointed a trustee disclaims, or any trustee, either original or substituted, dies, or is absent from Sri Lanka for such a continuous period and under such circumstances that, in the opinion of the court, it is desirable, in the interests of the trust, that his office should be declared vacant, or is declared an insolvent, or desires to be discharged from the trust, or refuses or is or becomes, in the opinion of the court, unfit or personally incapable to act in the trust, or accepts an inconsistent trust, a new trustee may be appointed in his place by -"
         },
         {
          "type": "subsection",
@@ -4016,6 +4561,65 @@
       },
       {
        "type": "section",
+       "number": "115A",
+       "heading": "Regulations.",
+       "raw_text": "115A.",
+       "text": "",
+       "amendment_events": [
+        {
+         "instrument": "6-2018",
+         "amending_act": "Act No. 6 of 2018",
+         "amending_section": "7",
+         "operation": "insert",
+         "applied": true,
+         "applied_on": "2026-09-05",
+         "classification": "applied_from_held_source",
+         "source_tree": "6-2018-trusts-amendment.json",
+         "after_section": "115"
+        }
+       ],
+       "cross_references": [],
+       "children": [
+        {
+         "type": "subsection",
+         "number": "1",
+         "raw_text": "The Minister may make regulations in respect of all matters required by this Act to be prescribed or in respect of which regulations are authorized by this Act to be made.",
+         "text": "The Minister may make regulations in respect of all matters required by this Act to be prescribed or in respect of which regulations are authorized by this Act to be made.",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        },
+        {
+         "type": "subsection",
+         "number": "2",
+         "raw_text": "Every regulation made by the Minister under subsection (1) shall be published in the Gazette and shall come into operation on the date of such publication or on such later date as may be specified therein.",
+         "text": "Every regulation made by the Minister under subsection (1) shall be published in the Gazette and shall come into operation on the date of such publication or on such later date as may be specified therein.",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        },
+        {
+         "type": "subsection",
+         "number": "3",
+         "raw_text": "Every regulation made by the Minister shall, as soon as convenient, be brought before Parliament for approval. Every regulation which is not so approved shall be deemed to be rescinded from the date of disapproval but without prejudice to anything previously done thereunder.",
+         "text": "Every regulation made by the Minister shall, as soon as convenient, be brought before Parliament for approval. Every regulation which is not so approved shall be deemed to be rescinded from the date of disapproval but without prejudice to anything previously done thereunder.",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        },
+        {
+         "type": "subsection",
+         "number": "4",
+         "raw_text": "Notification of the date on which any regulation is deemed to be rescinded shall be published in the Gazette.",
+         "text": "Notification of the date on which any regulation is deemed to be rescinded shall be published in the Gazette.",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        }
+       ]
+      },
+      {
+       "type": "section",
        "number": "116",
        "heading": "Procedure.",
        "raw_text": "116.",
@@ -4062,5 +4666,37 @@
     }
    ]
   }
- ]
+ ],
+ "applied_amendments_log": [
+  {
+   "instrument": "6-2018",
+   "operations": [
+    "3(e) repeal_and_substitute",
+    "3(p), 3(q) insert after (o)",
+    "6A, 6B insert after 6",
+    "19A, 19B, 19C insert after 19",
+    "72 word substitution",
+    "75(1) word substitution",
+    "115A insert after 115"
+   ],
+   "not_applied": [
+    "s.8 Sinhala text (not an amendment of the text)"
+   ],
+   "cross_check": "data/processed/actions.csv lists nine operations for 6 of 2018 on ss.3, 6A, 6B, 19A, 19B, 19C, 72, 75, 115A (from lawlanka markers); the Act's own text prescribes the same nine targets"
+  }
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "against": "LankaLaw HTML baseline (accepted tree, identical to data/processed/canonical-statutes/SRC059-9-1917.json on 2026-09-05); Government Printer text of Act 6 of 2018 (pdftotext -layout); Government Printer scan of Act 30 of 1971 page 48 (pdftoppm render) and LankaLaw HTML of Acts 7 of 1968 and 30 of 1971 for s.21",
+  "what_changed": [
+   "s.3: paragraph (e) repealed and substituted per Act 6 of 2018 s.2(1) (old text in text_before_amendment); paragraphs (p) 'express trust' and (q) 'prescribed' added after (o) per s.2(2)",
+   "ss.6A, 6B inserted after s.6 (Chapter II) per Act 6 of 2018 s.3",
+   "ss.19A, 19B, 19C inserted after s.19 (Chapter III) per Act 6 of 2018 s.4",
+   "s.72: words substituted per Act 6 of 2018 s.5",
+   "s.75(1): words substituted per Act 6 of 2018 s.6",
+   "s.115A inserted after s.115 (Chapter XI) per Act 6 of 2018 s.7",
+   "s.21: 'a deposit of that money' -> 'a deposit of trust money' against the Government Printer text of Act 30 of 1971 s.89(1) (HTML reading kept in text_raw_html); the two existing markers resolved from 'unknown' to 'substitute' with the amending Acts' own words"
+  ]
+ }
 }

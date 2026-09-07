@@ -1,41 +1,75 @@
 {
- "statute": "Tea and Rubber Estates (Control of Fragmentation) Act, No. 2 of 1958",
+ "statute": "Tea and Rubber Estates (Control of Fragmentation) Act",
  "source_id": "SRC023",
  "note": "Every source actually used to build the canonical trees in library/finalized/2-1958-tea-and-rubber-estates-control-of-fragmentation-act. Copies, not moves; the originals stay where the registry points.",
- "not_included": [
-  {
-   "what": "The Act's own PDF",
-   "where": "data/legal-sources/library/statutes/2-1958-tea-and-rubber-estates-control-of-fragmentation-act.pdf",
-   "why": "Not used. 4 MB image scan with no text layer; pdftotext returns nine characters. It is the text authority and would settle the four missing subsections and the truncated Schedule, but only after OCR."
-  },
-  {
-   "what": "The amending Act's PDF from the parliamentary Act archive",
-   "where": "data/legal-sources/library/amendments/incoming/20-2005-tea-and-rubber-estate-control-of-fragmentation-act-amendment.pdf",
-   "why": "Not used. The amending Act was parsed from the HTML instead."
-  }
- ],
- "status": "unverified. CommonLII is a priority-3 consolidator and LankaLaw a private republisher; neither is the Government Printer.",
+ "status": "unverified until a lawyer signs it off",
  "files": [
   {
    "file": "2-1958-tea-and-rubber-estates-control-of-fragmentation-act.html",
    "role": "principal statute",
-   "edition": "as enacted (CommonLII Numbered Acts, assembled from 26 pages)",
-   "bytes": 33145,
-   "sha256": "d73b1862700e54e1399522744e315d187510005d0fd7f080852d75dac4bd4800",
+   "edition": "as_enacted",
+   "bytes": 32994,
+   "sha256": "5d743a7f2e894bef349695cf22c5c9c5bfb48f776b103851f7024714947b78f8",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/tea-and-rubber-estates-control-of-fragmentation-act-2-1958.html",
+   "used_for": "parsed into 2-1958-tea-and-rubber-estates-control-of-fragmentation-act.json",
    "retrieved_from": "https://www.commonlii.org/lk/legis/num_act/tareofa2o1958487/index.html",
-   "used_for": "yes: harvested by scripts/harvest_commonlii_statutes.py --only SRC023, parsed by scripts/parse_commonlii_statute.py",
    "note": "Re-harvested after the nested-table truncation bug in harvest_commonlii_statutes.py was fixed; 17,691 -> 33,145 bytes."
   },
   {
    "file": "20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.html",
    "role": "amending Act",
-   "edition": "as enacted",
-   "bytes": 38792,
-   "sha256": "c613fb58ceac546f5d6bba9514085346a1d29b424a002a499bc22c60b1bfcf60",
+   "edition": "as_enacted",
+   "bytes": 37612,
+   "sha256": "16eef78885ae5f35e33b918478ef2e66e419860d397617438f6c2c277a244145",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/amendments/html/20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.html",
-   "retrieved_from": "lankalaw.net; see data/processed/lankalaw-amendment-downloads.csv",
-   "used_for": "yes: parsed by scripts/build_canonical_amendments.py --number 20 --year 2005"
+   "used_for": "parsed into 20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.json",
+   "retrieved_from": "lankalaw.net; see data/processed/lankalaw-amendment-downloads.csv"
+  },
+  {
+   "file": "20-2005-tea-and-rubber-estate-control-of-fragmentation-act-amendment.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 37827,
+   "sha256": "fbe6e7479444a25734b9770d72a321ad0f62b5628009c7b32c12efba2cda725b",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/incoming/20-2005-tea-and-rubber-estate-control-of-fragmentation-act-amendment.pdf",
+   "used_for": "Government Printer PDF of the Tea and Rubber Estates (Control of Fragmentation) (Amendment) Act, No. 20 of 2005 (9 pp., text layer, certified 22nd July 2005), read in full; it is the text from which the Act's section-targeted operations were applied by hand to the principal tree, and it confirmed the HTML-derived amending tree section by section"
   }
- ]
+ ],
+ "not_included": [
+  {
+   "what": "The Act's own PDF",
+   "where": "data/legal-sources/library/statutes/2-1958-tea-and-rubber-estates-control-of-fragmentation-act.pdf",
+   "why": "Not used. 4 MB image scan with no text layer (pdftotext returns nine characters). It is the text authority for the 1958 Act and would settle the two provisions that are short on the CommonLII page, but only after OCR."
+  },
+  {
+   "what": "Regenerated Government Printer parse of Act No. 20 of 2005",
+   "where": "data/processed/canonical-amendments/20-2005.json",
+   "why": "Not accepted: parse_amendment_pdf.py folded sections 7 and 9 (the inserted 12A, 12B and 23A) into section 12 and dropped paragraphs of section 3. The HTML-derived tree in finalized/ stays the accepted amending tree; the Government Printer PDF itself is in the package as the verification source and as the text the hand-applied operations were transcribed from."
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "2-1958-tea-and-rubber-estates-control-of-fragmentation-act.html",
+  "tree": "2-1958-tea-and-rubber-estates-control-of-fragmentation-act.json",
+  "edition": "as_enacted, with the section-targeted operations of Act No. 20 of 2005 applied by hand (see amendment_reconciliation)",
+  "publisher": "CommonLII Numbered Acts database (priority-3 consolidator), assembled from 26 per-section pages; not the Government Printer",
+  "consolidation_cutoff": "none: as enacted, 1958; no consolidation. Act No. 20 of 2005 applied by hand to the extent recorded",
+  "cutoff_evidence": "The page prints no amendment-chain header and no inline markers; section 2(1) reads 'This Act shall come into operation on the eleventh day of December, 1957.' The only later instrument known or held is Act No. 20 of 2005."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "20-2005",
+   "title": "TEA AND RUBBER ESTATES (CONTROL OF FRAGMENTATION) (AMENDMENT) ACT, No. 20 OF 2005 [Certified on 22nd July, 2005] -- 'AN ACT TO AMEND THE TEA AND RUBBER ESTATES (CONTROL OF FRAGMENTATION) ACT, NO. 2 OF 1958'",
+   "classification": "applied_from_held_source",
+   "reason": "Post-dates the as-enacted baseline and was previously held but not applied. Read in full from the Government Printer PDF (9 pp., text layer) and compared with the LankaLaw HTML tree of the same Act (same 12 sections, same operations). Applied to the principal tree, each with an amendment_events entry and the pre-amendment reading kept: s.2 long title ('Tea, Rubber and Coconut Estates'); s.4 section 9 (new subsection (3), marginal note); s.5 section 10 (subsection (1) paragraphs (a)-(f) replaced by (a)-(i); 'unofficial member' -> 'appointed member' in (3)-(5)); s.6 section 16 ((a), (b) punctuation, new (c); the closing clause 'and the officer so engaged ...' separated from paragraph (b) as a structural reading a lawyer should confirm); s.7 sections 12A and 12B inserted; s.8 section 17 ((1)(a) tail, (1)(b), new (1)(bb), (1)(c) replaced, (2) replaced); s.9 section 23A inserted; s.10(a) definitions of 'coconut estate' and 'local authority' inserted. NOT applied: s.3 global renaming of the Act, the Board and 'tea or rubber estate' (a body-wide substitution the Act itself states inconsistently; recorded under alternate_titles); s.10(b), (c) 'forty hectares' -> 'twenty hectares' in the 'rubber estate' and 'tea estate' definitions, because the baseline reads 'one hundred acres' and the metricating instrument is neither in the chain nor held. s.11 (Sinhala text prevails) and s.12 (transitional: existing Board continues) operate on nothing in the text.",
+   "source_path": "data/legal-sources/library/amendments/incoming/20-2005-tea-and-rubber-estate-control-of-fragmentation-act-amendment.pdf",
+   "html_path": "data/legal-sources/library/amendments/html/20-2005-tea-and-rubber-estates-control-of-fragmentation-amendment.html",
+   "rubrik_flag": "The RUBRIK's 'title does not match this statute; check it' on the HTML file is a false positive: the HTML title and long title name this Act (the registry spells 'Estates', the incoming file name 'Estate')."
+  }
+ ],
+ "statute_note": "Principal source selected: the CommonLII Numbered Acts HTML of the Act as enacted (2-1958-tea-and-rubber-estates-control-of-fragmentation-act.html, assembled from 26 per-section pages after the nested-table truncation fix), parsed into 2-1958-tea-and-rubber-estates-control-of-fragmentation-act.json: 25 sections, 50 subsections, 5 definitions, one Schedule (modifications of the Land Acquisition Act, recovered from the tail of section 25). The tree was already structurally_verified with recorded flags (provisions-short-in-source: 8(1)(b)(i) breaks off and 3(2) has no conclusion on the CommonLII page itself; short-title-year-wrong-in-source: section 1 prints 'No. 2 of 1953', corrected to 1958 with the print kept in raw_text; dangling footnote markers on 'Tea Control Act*'). Other sources inspected: the registry PDF statutes/2-1958-tea-and-rubber-estates-control-of-fragmentation-act.pdf (Ministry of Plantation Industries scan, 4 MB, no text layer, nine characters from pdftotext; not used, listed under not_included); the LankaLaw HTML of the Tea and Rubber Estates (Control of Fragmentation) (Amendment) Act, No. 20 of 2005 (12 sections, no subscription banner; the accepted amending tree); the Government Printer PDF of the same Act (amendments/incoming/20-2005-...pdf, 9 pp., text layer, certified 22nd July 2005), read in full and included as the verification source; and the regenerated parse_amendment_pdf.py output of that PDF, which folded the inserted sections into section 12 and was not accepted. Consolidation cutoff: none. The baseline is the Act as enacted, 1958 (commencement 11 December 1957 per section 2(1)); the page carries no chain header and no inline markers. Review performed: the 2005 Act read operation by operation against the HTML amending tree (they agree on all twelve sections) and then applied to the principal tree where its operations are section-targeted and unambiguous: long title; section 9 (new (3), marginal note); section 10 (new paragraphs (a)-(i) of subsection (1), 'appointed member' in (3)-(5)); section 16 ((a), (b), new (c)); section 17 ((1)(a), (b), new (bb), (c), and (2)); new sections 12A, 12B and 23A; two new definitions in section 25. Every changed node carries an amendment_events entry naming the amending section, and the pre-amendment reading is kept under *_before_amendment; the inserted text was transcribed from the Government Printer PDF with its typography ('money's', 'administerd', 'Calender', 'summery', 'and accordance with') as printed. Two operations were recorded and not applied: the section 3 global renaming (a body-wide substitution that changes number in 'tea or rubber estate' -> 'tea, rubber or coconut estates' and that the Act states inconsistently for the Board's new name), now under alternate_titles; and the 'forty hectares' -> 'twenty hectares' substitutions in section 25, because the baseline reads 'one hundred acres' and the intermediate metrication instrument is unknown and not held. One structural reading is flagged for a lawyer: in section 16 the closing clause 'and the officer so engaged shall carry out such investigation or make such report.' had been parsed as the tail of paragraph (b) and was separated when paragraph (c) was inserted. The tree passes validate_finalized_trees.py with zero errors; its warnings (section 21's references to sections 38 and 39 are to the Land Acquisition Act; sections keep full text on the section node) are documented in the tree. Amendment coverage: one instrument known (curriculum, registry-less), held twice (HTML and Government Printer PDF), applied as above; nothing applied twice. The RUBRIK's 'title does not match' flag on the HTML is a false positive. OCR or structural weaknesses: the two provisions short in the CommonLII source remain short (no OCR of the scan was run); the tree is now neither a pure as-enacted text nor a published consolidation, and says so in edition.note. The title, Board name and 'tea or rubber estate' wording in the section text remain the 1958 forms although the 2005 Act renamed them. Missing sources: a text-layer copy of the 1958 Act (only the scan is held); any instrument that metricated the section 25 thresholds between 1958 and 2005. Unresolved questions: the metrication instrument; whether the Board's renamed form is 'Tea, Rubber and Coconut Estates (Control of Fragmentation) Board' (s.3(1)(b)) or 'Tea, Rubber and Coconut (Control of Fragmentation) Board' (s.3(2) and marginal note). Lawyer-verification status: unverified. Everything here is pipeline output.",
+ "lawyer_verification": "unverified"
 }

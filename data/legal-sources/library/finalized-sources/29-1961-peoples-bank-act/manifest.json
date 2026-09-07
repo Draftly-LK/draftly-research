@@ -1,0 +1,231 @@
+{
+ "statute": "People's Bank Act",
+ "source_id": "SRC080",
+ "note": "Every source actually used to build the canonical trees in library/finalized/29-1961-peoples-bank-act. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "29-1961-peoples-bank-act-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 196108,
+   "sha256": "128f119822268c69795c139267550a5656aefb4017496d58b07214d5d82f64c0",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/29-1961-people-s-bank-act.html",
+   "used_for": "parsed into 29-1961-peoples-bank-act-consolidated.json"
+  },
+  {
+   "file": "61-1980-peoples-bank-amendment.html",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 5706,
+   "sha256": "6ab247d832b77321fb73c6f9cb4ee33555d63d8349ed396d5adc28f1ace79c46",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/html/61-1980-peoples-bank-amendment.html",
+   "used_for": "parsed into 61-1980-peoples-bank-amendment.json"
+  },
+  {
+   "file": "32-1986-peoples-bank-amendment.html",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 82477,
+   "sha256": "1afd3d1eb01c11a88a035d0ef9dab0f2dc557486bfefb897448d8a555a91d4da",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/html/32-1986-peoples-bank-amendment.html",
+   "used_for": "parsed into 32-1986-peoples-bank-amendment.json"
+  },
+  {
+   "file": "16-2019-peoples-bank-amendment.pdf",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 106189,
+   "sha256": "0e0a9a7ed02e85f04537c1424271c55d1b506734a8a5c5d9f6c83cb31ed71264",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/incoming/16-2019-peoples-bank-act-amendment.pdf",
+   "used_for": "parsed into 16-2019-peoples-bank-amendment.json"
+  },
+  {
+   "file": "61-1980-peoples-bank-act-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 2832463,
+   "sha256": "2cf53d168ebcff12f7b78ba1a426ddc361d0a19c176cca7f433d446f3545cfb3",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/incoming/61-1980-peoples-bank-act-amendment.pdf",
+   "used_for": "Government Printer scan, 2 pp, no text layer; title page read: 'PEOPLE'S BANK (AMENDMENT) ACT, No. 61 OF 1980 [Certified on 29th December, 1980]'; page 2 read as an image and used to correct the LankaLaw HTML transcription of the same Act (see 61-1980 tree corrections)."
+  },
+  {
+   "file": "32-1986-peoples-bank-act-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 31792206,
+   "sha256": "d345100c3a3d9484e58ec56db9e6318a1ce26da7e1a5ab7b7dd00670b4d8f7d6",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/incoming/32-1986-peoples-bank-act-amendment.pdf",
+   "used_for": "Government Printer scan, 21 pp, no text layer; title page read: 'PEOPLE'S BANK (AMENDMENT) ACT, No. 32 OF 1986 [Certified on 24th September, 1986]'; pages 4 to 6 read as images to check marginal notes of the inserted sections 29A onward. Not parsed; the LankaLaw HTML of the same Act was parsed instead."
+  },
+  {
+   "file": "29-1961-peoples-bank-act.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 1783789,
+   "sha256": "a76dc06845e0ab3f97b9d90245022a157f5e8d826e2c54f9fbecd236a7dcbbeb",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/29-1961-peoples-bank-act.pdf",
+   "used_for": "Central Bank of Ceylon Annual Report 1961, Appendix I, text layer, 39 pp; pages (i) to (xvi) carry '(2) People's Bank Act, No. 29 of 1961' as enacted, sections 2 to 48 (section 1 omitted from the extract), no marginal notes. Used to confirm every unamended section's opening words and the last provision of sections 5, 8, 34, 36 and 48 where the 1961 text still applies; shows sections 31, 46 and 47 as enacted."
+  }
+ ],
+ "pipeline_status": "needs_structural_review",
+ "baseline": {
+  "file": "29-1961-peoples-bank-act-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; the page names no publisher of the underlying revision)",
+  "consolidation_cutoff": "Act No. 32 of 1986 (the header also lists 'Gazette Nos, 1386-18-2005', which leaves no marker in the body)",
+  "cutoff_evidence": "HTML chain header: 'Law Nos, 43 of 1973 25 of 1978 Act Nos, 29 of 1961 11 of 1963 18 of 1965 16 of 1969 61 of 1980 32 of 1986 Gazette Nos, 1386-18-2005'; markers '[ 2,32 of 1986]' to '[ 6,32 of 1986]' on sections 4, 5, 29, 29A-29T, 30 and 48. Act No. 16 of 2019 is not in the header and was applied by hand (see amendment_reconciliation)."
+ },
+ "alternate_edition": {
+  "file": "29-1961-peoples-bank-act.pdf",
+  "edition": "as_enacted (extract, sections 2-48)",
+  "publisher": "Central Bank of Ceylon, Annual Report 1961, Appendix I 'Extracts of Major Legal Enactments of the Parliament of Ceylon in 1961'",
+  "consolidation_cutoff": "none (as enacted)",
+  "cutoff_evidence": "Appendix heading '(2) People's Bank Act, No. 29 of 1961 *' on page (i); text ends at section 48 before '(3) Bills of Exchange (Amendment) Act'.",
+  "why_not_baseline": "as-enacted text, no marginal notes, section 1 omitted, and it is an extract inside a 39-page appendix that also prints other enactments (which is where the 8 legacy index entries came from); the HTML carries every later amendment through 32 of 1986"
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "11-1963",
+   "title": "Finance Act, No. 11 of 1963 (title page of the scan, Date of Assent December 21, 1963) / 'Marriage Registration (Amendment)' (title of the LankaLaw HTML filed under the same number-year)",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "In the chain header as '11 of 1963' but no marker in the body. The two held files under 11-1963 name two different Acts; the scan (95 pp) has no text layer and was not read past its title page, and the HTML amends the Marriage Registration Ordinance. Neither confirms an amendment of this Act. Not packaged.",
+   "source_path": "data/legal-sources/library/amendments/11-1963-finance.pdf"
+  },
+  {
+   "instrument": "18-1965",
+   "title": "Inland Revenue (Amendment) Act, No. 18 of 1965 (title page of the scan, Date of Assent December 18, 1965)",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "In the chain header; marker '[57(1), 18 of 1965]' beside section 41 (income tax and stamp duty exemption), so the instrument is already incorporated in the baseline. The held scan (100 pp) has no text layer and its section 57 was not read, so the file is unconfirmed as the operative source. Not packaged.",
+   "source_path": "data/legal-sources/library/amendments/18-1965-inland-revenue-amendment.pdf"
+  },
+  {
+   "instrument": "16-1969",
+   "title": "Land Development (Amendment) Act, No. 16 of 1969 (title page of the scan, Date of Assent June 6, 1969; HTML long title 'AN ACT TO AMEND THE LAND DEVELOPMENT ORDINANCE AND TO MAKE CERTAIN CONSEQUENTIAL AMENDMENTS IN OTHER WRITTEN LAW.')",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "In the chain header. The held HTML's own text reads 'The People's Bank Act, No. 29 of 1961, is hereby amended in paragraph (a) of sub-section (1) of section 5 of that Act', which confirms the consequential amendment (the coordinator's provisional 'ambiguous' classification is departed from on that evidence). Section 5 was wholly replaced by 32 of 1986, so nothing survives to apply. Title names another statute; not packaged.",
+   "source_path": "data/legal-sources/library/amendments/html/16-1969-land-development-amendment.html"
+  },
+  {
+   "instrument": "43-1973",
+   "title": "Sale of State Lands (Special Provisions) Law, No. 43 of 1973 (HTML title)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "In the chain header as 'Law Nos, 43 of 1973'. The held HTML's own text reads 'The People's Bank Act, No. 29 of 1961, as amended by section 90 of the Land Development (Amendment) Act, No. 16 of 1969, is hereby further amended in paragraph (a) of subsection (1) of section 5', confirming a consequential amendment of section 5(1)(a), since replaced by 32 of 1986. Title names another statute; not packaged. The curriculum's 'People's Bank Act No. 43 of 1973' is this Law's number.",
+   "source_path": "data/legal-sources/library/amendments/html/43-1973-sale-of-state-lands-special-provisions-law.html"
+  },
+  {
+   "instrument": "25-1978",
+   "title": "People's Bank (Special Provisions) Law, No. 25 of 1978 (as named in section 2 of Act No. 61 of 1980); not held",
+   "classification": "known_but_not_held",
+   "reason": "In the chain header; markers '[ 3, Law 25 of 1978]' on sections 8 and 10. No copy on disk.",
+   "source_path": null
+  },
+  {
+   "instrument": "61-1980",
+   "title": "People's Bank (Amendment) Act, No. 61 of 1980 (title page of the scan; Certified on 29th December, 1980)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "In the chain header; markers '[ 2, 61 of 1980]' on 8, '[ 3, 61 of 1980]' on 12, '[4, 61 of 1980]' on 42A, agreeing with the Act's sections 2, 3 and 4. HTML parsed into 61-1980-peoples-bank-amendment.json and rebuilt by hand from the page with corrections from the scan. Nothing applied.",
+   "source_path": "data/legal-sources/library/amendments/html/61-1980-peoples-bank-amendment.html"
+  },
+  {
+   "instrument": "32-1986",
+   "title": "People's Bank (Amendment) Act, No. 32 of 1986 (title page of the scan; Certified on 24th September, 1986)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Last Act in the chain header; markers on 4, 5, 29, 29A-29T, 30 and 48 agree with the Act's sections 2-6. HTML parsed into 32-1986-peoples-bank-amendment.json (inserted-section bodies dropped by the parser; see its quality_notes). Nothing applied.",
+   "source_path": "data/legal-sources/library/amendments/html/32-1986-peoples-bank-amendment.html"
+  },
+  {
+   "instrument": "Gazette 1386/18 of 2005",
+   "title": "not held; named only in the chain header as 'Gazette Nos, 1386-18-2005'",
+   "classification": "known_but_not_held",
+   "reason": "No marker in the body; presumably an Order under section 12(2). Section 12 has since been replaced by 16 of 2019.",
+   "source_path": null
+  },
+  {
+   "instrument": "16-2019",
+   "title": "People's Bank (Amendment) Act, No. 16 of 2019 (Government Printer text: 'AN ACT TO AMEND THE PEOPLE'S BANK ACT, NO. 29 OF 1961', Certified on 30th of September, 2019)",
+   "classification": "applied_from_held_source",
+   "reason": "Postdates the baseline. Parsed with parse_amendment_pdf.py and rebuilt by hand from the text layer (6 sections). Applied to the consolidated tree: section 12 replaced (s. 2), section 20 replaced (s. 3), 21(1)(b) and 21(3) repealed (s. 4), 43(2)(c) repealed (s. 5). Each operation is recorded in the tree's applied_amendments with the prior wording.",
+   "source_path": "data/legal-sources/library/amendments/incoming/16-2019-peoples-bank-act-amendment.pdf"
+  }
+ ],
+ "sources_inspected": [
+  {
+   "path": "data/legal-sources/library/statutes/HTML/29-1961-people-s-bank-act.html",
+   "what": "LankaLaw consolidated HTML, chain to 32 of 1986, 64 sections, footnote omitting 46-47, no 'Free/Promotional User' banner; selected baseline"
+  },
+  {
+   "path": "data/legal-sources/library/statutes/29-1961-peoples-bank-act.pdf",
+   "what": "Central Bank 1961 annual-report appendix, text layer, 39 pp; the Act as enacted at pages (i)-(xvi), sections 2-48; verification source"
+  },
+  {
+   "path": "data/processed/canonical-statutes/SRC080-29-1961.json",
+   "what": "canonical tree rebuilt on 2026-09-05 (byte-identical to the committed parse); copied into finalized/ and corrected by hand (see provenance)"
+  },
+  {
+   "path": "data/legal-sources/manifests/statute-section-index.json",
+   "what": "72 entries for SRC080: 64 LankaLaw plus 8 legacy entries from the appendix"
+  },
+  {
+   "path": "data/processed/statute_commencement.csv",
+   "what": "row SRC080 gives 1980-01-01 and links the 2019 amending Act's page; contradicted by the head date 30th May, 1961"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/incoming/61-1980-peoples-bank-act-amendment.pdf",
+   "what": "scan, 2 pp, no text layer; both pages read as images"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/html/61-1980-peoples-bank-amendment.html",
+   "what": "LankaLaw HTML, no banner; parsed badly (2 nodes), rebuilt by hand"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/incoming/32-1986-peoples-bank-act-amendment.pdf",
+   "what": "scan, 21 pp, no text layer; title page and pages 3-9 read as images"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/html/32-1986-peoples-bank-amendment.html",
+   "what": "LankaLaw HTML, no banner, 33,085 characters; parsed (6 sections; inserted 29A-29T bodies present on the page, dropped by the parser)"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/incoming/16-2019-peoples-bank-act-amendment.pdf",
+   "what": "Government Printer PDF, 4 pp, text layer; parsed and rebuilt by hand"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/11-1963-finance.pdf",
+   "what": "scan, 95 pp, no text layer; title page read: Finance Act, No. 11 of 1963"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/html/11-1963-marriage-registration-amendment.html",
+   "what": "LankaLaw HTML titled Marriage Registration (Amendment); excluded"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/18-1965-inland-revenue-amendment.pdf",
+   "what": "scan, 100 pp, no text layer; title page read: Inland Revenue (Amendment) Act, No. 18 of 1965"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/16-1969-land-development-amendment.pdf",
+   "what": "scan, 37 pp, no text layer; title page read: Land Development (Amendment) Act, No. 16 of 1969"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/html/16-1969-land-development-amendment.html",
+   "what": "LankaLaw HTML; its text amends section 5(1)(a) of this Act; excluded from the package"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/html/43-1973-sale-of-state-lands-special-provisions-law.html",
+   "what": "LankaLaw HTML of the Sale of State Lands (Special Provisions) Law; its text amends section 5(1)(a) of this Act; excluded from the package"
+  },
+  {
+   "path": "data/legal-sources/library-markdown/statutes/peoples-bank-act/peoples-bank-act-29-1961-cbsl-appendix.md",
+   "what": "registry local_markdown_path; not consulted"
+  }
+ ],
+ "statute_note": "Principal source: the LankaLaw consolidated HTML (chain header 'Law Nos, 43 of 1973 25 of 1978 Act Nos, 29 of 1961 11 of 1963 18 of 1965 16 of 1969 61 of 1980 32 of 1986 Gazette Nos, 1386-18-2005'), parsed by build_canonical_statutes.py into a 64-section tree with 14 definitions, no schedules and a publisher's footnote omitting sections 46 and 47. Other sources inspected: the Central Bank 1961 appendix (the Act as enacted, sections 2-48, no marginal notes), used as the verification source; the section index (72 entries); the commencement CSV; every held amending file, whose title pages were read from the scans; the 16 of 2019 Government Printer text. Consolidation cutoff: Act No. 32 of 1986, with Act No. 16 of 2019 applied by hand on top (the header's Gazette 1386/18 of 2005 leaves no marker). Review performed: the opening words of every section searched in the 1961 print, with every miss explained by a chain amendment; last provision of sections 5, 36 and 48 matched, of 8 explained by 61 of 1980, of 29P not in the print (inserted 1986), of 34 differing with no marker; marginal notes cannot be checked against this print, so only 29A's heading was checked (against the 1986 scan) and corrected; validate_finalized_trees.py reports 0 errors and every remaining warning is documented in the trees. Not read word for word throughout. Amendment coverage: 9 instruments known (8 in the chain header plus 16 of 2019 held); 25 of 1978 and the 2005 Gazette not held; 11 of 1963 and 18 of 1965 held only as scans whose bodies were not read (ambiguous_or_unconfirmed); 16 of 1969 and 43 of 1973 confirmed from their held HTML as consequential amendments of section 5(1)(a), spent since 32 of 1986; 61 of 1980 and 32 of 1986 incorporated; 16 of 2019 applied (sections 12 and 20 replaced, 21(1)(b), 21(3), 43(2)(c) repealed). Trees included for 61 of 1980 (rebuilt by hand from the HTML with scan corrections), 32 of 1986 and 16 of 2019 (rebuilt by hand from the text layer). Structural weaknesses: section 31 is absent from the HTML without explanation while present in the 1961 print (the reason this package is needs_structural_review); section 34(6) differs from the 1961 print with no marker; section 29D reads 'section 291'; the 32 of 1986 amending tree lacks the bodies of the inserted 29A-29T; the parser flattens substituted sections 4 and 29L. Section count discrepancy: index 72 = HTML 64 + 8 legacy entries scraped from other enactments in the same Central Bank appendix; the print's extract has 47 (2-48, including 31, 46, 47 which the HTML omits); the tree has 64. Missing sources: Law No. 25 of 1978; Gazette 1386/18 of 2005; a Government Printer text of the principal Act; readable texts of Acts 11 of 1963 and 18 of 1965. Curriculum discrepancy: the curriculum's 'People's Bank Act No. 43 of 1973' is the number of the Sale of State Lands (Special Provisions) Law in the chain; the Act is No. 29 of 1961. Unresolved questions: the fate of section 31; the instrument behind the section 34(6) wording; whether 11 of 1963 (Finance Act) touches this Act; the commencement date (head date 30th May, 1961 used; CSV says 1980-01-01). Lawyer verification: unverified.",
+ "lawyer_verification": "unverified"
+}

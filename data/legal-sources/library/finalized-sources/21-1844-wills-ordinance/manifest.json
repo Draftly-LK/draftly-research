@@ -10,6 +10,7 @@
    "edition": "consolidated-2024",
    "bytes": 78907,
    "sha256": "39b470a5782b1b8d9a17c6d89502f27efc7454e076d05aeb5645de050d2a9a2a",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/statutes/wills-consolidated-2024.pdf",
    "used_for": "parsed into 21-1844-wills-ordinance-consolidated-2024.json"
   },
@@ -17,19 +18,11 @@
    "file": "21-1844-wills-ordinance-consolidated.html",
    "role": "principal statute",
    "edition": "consolidated",
-   "bytes": 17886,
-   "sha256": "453b12d727e4b8d99097625fe879ed16c5f2dcd9e4fcbead4b7aeb3ed90bf8aa",
+   "bytes": 17586,
+   "sha256": "e2dea8fba2f7ae2a113c152c25a348ac0fc285c59366f4e035c6664120861512",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/21-1844-wills-ordinance.html",
    "used_for": "parsed into 21-1844-wills-ordinance-consolidated.json"
-  },
-  {
-   "file": "5-1993-wills-ordinance-amendment.html",
-   "role": "amending Act",
-   "edition": "as_enacted",
-   "bytes": 4521,
-   "sha256": "0857e3c255a2812fb7b774a00bd8e9031a9eb1b4f93662cc0a6221cdafb44655",
-   "copied_from": "data/legal-sources/library/amendments/html/5-1993-wills-amendment.html",
-   "used_for": "parsed into 5-1993-wills-ordinance-amendment.json"
   },
   {
    "file": "29-2022-wills-ordinance-amendment.pdf",
@@ -37,9 +30,88 @@
    "edition": "as_enacted",
    "bytes": 139641,
    "sha256": "8245cebb75c03cf3aa01747bb889cf2dc6ea9b2fc0cccf4580851f8cf566153f",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/amendments/29-2022-wills-amendment-act.pdf",
    "used_for": "parsed into 29-2022-wills-ordinance-amendment.json"
+  },
+  {
+   "file": "5-1993-wills-ordinance-amendment.html",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 4386,
+   "sha256": "5af501345802967268063f2bb1a38e6c1667a4d84399b96a21a784606b43279f",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/html/5-1993-wills-amendment.html",
+   "used_for": "parsed into 5-1993-wills-ordinance-amendment.json"
+  },
+  {
+   "file": "5-1993-wills-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 1951343,
+   "sha256": "4844c7706b179348d8e38dd5db575373af0d06271cb37a53680c1414bd55274f",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/5-1993-wills-amendment.pdf",
+   "used_for": "parliamentary archive copy of Act No. 5 of 1993, 3 pp. image scan with no text layer (pdftotext returns nothing); the amending tree was parsed from the LankaLaw HTML instead; the scan is held as the second copy of the instrument and was not read"
   }
  ],
- "statute_note": "Two editions are finalized. The LankaLaw HTML edition (lankalaw.net/.../2001Y3V60C.html) prints an amendment chain ending at Act No. 5 of 1993 and so predates the 2022 Act; the consolidated PDF carries the chain through the Wills (Amendment) Act, No. 29 of 2022, and its sections 2, 3, 4, 7 and 9 read as that Act left them. Neither edition names a publisher on the page. Three of the five amending instruments -- Ordinances No. 11 of 1852, No. 15 of 1876 and No. 1 of 1911 -- are not held in any archive and are known only from the chain printed in the consolidated editions."
+ "statute_note": "Principal source selected: the consolidated PDF 21-1844-wills-ordinance-consolidated-2024.pdf (registry SRC024, statutes/wills-consolidated-2024.pdf, two-column text layer, publisher not stated on the page; the registry records it as a LankaLaw download), parsed into 21-1844-wills-ordinance-consolidated-2024.json. This is the current-text baseline. Other sources inspected: the LankaLaw HTML edition (21-1844-wills-ordinance-consolidated.html, page 2001Y3V60C.html, i.e. Chapter 60 of the revised edition), whose chain ends at Act No. 5 of 1993 and which carries a single marker '[ 2, 5 of 1993]' on section 3; it is finalized alongside as 21-1844-wills-ordinance-consolidated.json and is the pre-2022 text, useful because the 2024 edition prints sections 3 and 4 only as 'Repealed'. The Government Printer PDF of the Wills (Amendment) Act, No. 29 of 2022 (text layer, certified 25th October 2022; parsed into 29-2022-wills-ordinance-amendment.json). The LankaLaw HTML of the Wills (Amendment) Act, No. 5 of 1993 (3 sections, no subscription banner; parsed into 5-1993-wills-ordinance-amendment.json) and the parliamentary-archive scan of the same Act (3 pp., no text layer, not read, held in the package). Consolidation cutoff: Act No. 29 of 2022. The PDF's chain header reads 'Ordinance Nos, 21 of 1844 11 of 1852 15 of 1876 1 of 1911 Act Nos, 5 of 1993 29 of 2022' and its inline markers run '[2, 29 of 2022]' to '[6, 29 of 2022]'. The HTML edition's chain stops at '5 of 1993' with '[ 23 rd December , 1844 ]'. Review performed: both chain headers and every inline marker read; the six markers in the 2024 PDF (sections 2, 3, 4, 7, 9) matched one-to-one against the operations in the 29 of 2022 Act's own text (section 2 replaces section 2; sections 3 and 4 repeal sections 3 and 4; section 5 amends section 7; section 6 amends section 9), and the 2024 tree's amendment_events carry those operations; the 5 of 1993 marker on HTML section 3 matched against that Act's section 2 (substitutes 'No will made by any person under the age of eighteen years,' for the sex-differentiated ages) and the HTML text of section 3 reads as so amended. Section lists (9 sections in each edition), headings and the interpretation section were compared across the two editions; the 2024 section 9 adds 'condominium parcel or any land parcel' as the 2022 Act directs. Both trees pass validate_finalized_trees.py with zero errors; the one warning (sections 2 and 7 keep their full text on the section as well as in subsections) is a parser convention already noted in the tree. Amendment coverage: five instruments in the chain. Ordinances No. 11 of 1852, No. 15 of 1876 and No. 1 of 1911 are not held as their own text; the last two are the Matrimonial Rights and Inheritance Ordinance (SRC004) and the Matrimonial Rights and Inheritance (Jaffna) Ordinance (SRC045), held in this library only as consolidated principal statutes; the Jaffna Ordinance's consolidated text still contains the clause repealing 'so much of the Wills Ordinance, as are inconsistent with the provisions of this Ordinance', which is the operation the chain records, but the 1876 and 1852 operations cannot be read anywhere on disk. Act No. 5 of 1993 and Act No. 29 of 2022 are held, incorporated in the baseline and cross-checked as above; nothing was applied by hand. OCR or structural weaknesses: none; both editions have text layers or semantic HTML. The 2024 PDF prints sections 3 and 4 as 'Repealed By [3, 29 of 2022]' with no text, and the trees record them so. Neither edition names its publisher. Missing sources: own text of 11 of 1852, 15 of 1876 (as an amending instrument) and 1 of 1911 (as an amending instrument); no Government Printer edition of the Ordinance itself. Unresolved questions: none material; the two editions agree on every section that 29 of 2022 left untouched. Lawyer-verification status: unverified. Everything here is pipeline output.",
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "21-1844-wills-ordinance-consolidated-2024.pdf",
+  "tree": "21-1844-wills-ordinance-consolidated-2024.json",
+  "edition": "consolidated",
+  "publisher": "not stated (registry: LankaLaw download, 'Wills-Consolidated-2024.pdf')",
+  "consolidation_cutoff": "Act No. 29 of 2022",
+  "cutoff_evidence": "Chain header: 'Ordinance Nos, 21 of 1844 11 of 1852 15 of 1876 1 of 1911 Act Nos, 5 of 1993 29 of 2022'. Inline markers: '[2, 29 of 2022]' (section 2), '[3, 29 of 2022]' and '[4, 29 of 2022]' (sections 3 and 4, printed 'Repealed By'), '[5, 29 of 2022]' (section 7), '[6, 29 of 2022]' (section 9).",
+  "secondary_tree": {
+   "file": "21-1844-wills-ordinance-consolidated.html",
+   "tree": "21-1844-wills-ordinance-consolidated.json",
+   "edition": "consolidated (pre-2022 text)",
+   "publisher": "not stated (LankaLaw, private republisher; page id 2001Y3V60C = Chapter 60)",
+   "consolidation_cutoff": "Act No. 5 of 1993",
+   "cutoff_evidence": "Chain header: 'Ordinance Nos, 21 of 1844 11 of 1852 15 of 1876 1 of 1911 Act Nos, 5 of 1993 [ 23 rd December , 1844 ]'; single marker '[ 2, 5 of 1993]' on section 3."
+  }
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "11-1852",
+   "title": "Ordinance No. 11 of 1852 (title not read: no copy held)",
+   "classification": "known_but_not_held",
+   "reason": "Named in both chain headers; pre-1956 instrument not in any archive on disk. Its operations are in the baseline text by the publisher's consolidation and cannot be checked.",
+   "source_path": null
+  },
+  {
+   "instrument": "15-1876",
+   "title": "Ordinance No. 15 of 1876 -- the Matrimonial Rights and Inheritance Ordinance (title from SRC004; not read as an amending instrument)",
+   "classification": "known_but_not_held",
+   "reason": "Named in both chain headers. Held in this library only as a consolidated principal statute (SRC004, finalized/15-1876-matrimonial-rights-and-inheritance-ordinance), whose current text contains no provision naming the Wills Ordinance, so the operation the chain records cannot be read. Nothing applied.",
+   "source_path": null,
+   "related_package": "data/legal-sources/library/finalized/15-1876-matrimonial-rights-and-inheritance-ordinance/"
+  },
+  {
+   "instrument": "1-1911",
+   "title": "Ordinance No. 1 of 1911 -- the Jaffna Matrimonial Rights and Inheritance Ordinance (title from SRC045; not read as an amending instrument)",
+   "classification": "known_but_not_held",
+   "reason": "Named in both chain headers. Held only as a consolidated principal statute (SRC045, finalized/58-1947-matrimonial-rights-and-inheritance-jaffna-ordinance) whose text repeals 'so much of the ... Wills Ordinance, as are inconsistent with the provisions of this Ordinance'; that is a repugnancy clause, not a textual amendment, and nothing in the Wills text can be traced to it. Nothing applied.",
+   "source_path": null,
+   "related_package": "data/legal-sources/library/finalized/58-1947-matrimonial-rights-and-inheritance-jaffna-ordinance/"
+  },
+  {
+   "instrument": "5-1993",
+   "title": "Wills (Amendment) Act, No. 5 of 1993 -- 'AN ACT TO AMEND THE WILLS ORDINANCE' (LankaLaw HTML; the archive scan's title page has no text layer)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "In both chain headers. Its single operation (section 2: substitute the age wording in section 3) is marked '[ 2, 5 of 1993]' on section 3 of the HTML edition and the HTML text reads as amended; in the 2024 baseline section 3 has since been repealed by 29 of 2022. Own text held as HTML (parsed, tree in this folder) and as an unread scan (in the package). Nothing applied a second time.",
+   "source_path": "data/legal-sources/library/amendments/html/5-1993-wills-amendment.html",
+   "scan_not_read": "data/legal-sources/library/amendments/5-1993-wills-amendment.pdf"
+  },
+  {
+   "instrument": "29-2022",
+   "title": "WILLS (AMENDMENT) ACT, No. 29 OF 2022 [Certified on 25th of October, 2022] -- 'AN ACT TO AMEND THE WILLS ORDINANCE (CHAPTER 60)'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Last instrument in the 2024 PDF's chain and its cutoff; markers [2]-[6, 29 of 2022] on sections 2, 3, 4, 7 and 9 match the Act's sections 2 to 6 one-to-one. Not in the HTML edition (chain ends 1993), which is why that edition is kept as the pre-2022 text and not as the baseline. Own text held as the Government Printer PDF, parsed; nothing applied a second time.",
+   "source_path": "data/legal-sources/library/amendments/29-2022-wills-amendment-act.pdf"
+  }
+ ],
+ "lawyer_verification": "unverified"
 }

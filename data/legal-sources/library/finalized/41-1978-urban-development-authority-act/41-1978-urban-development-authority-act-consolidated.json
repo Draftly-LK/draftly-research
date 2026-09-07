@@ -1,6 +1,6 @@
 {
  "source_id": "SRC039",
- "title": "Urban Development Authority Act",
+ "title": "Urban Development Authority Law",
  "long_title": "A LAW TO PROVIDE FOR THE ESTABLISHMENT OF AN URBAN DEVELOPMENT AUTHORITY TO PROMOTE INTEGRATED PLANNING AND IMPLEMENTATION OF ECONOMIC, SOCIAL AND PHYSICAL DEVELOPMENT OF CERTAIN AREAS AS MAY BE DECLARED BY THE MINISTER TO BE URBAN DEVELOPMENT AREAS AND FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO.",
  "long_title_raw": "",
  "long_title_correction_status": "",
@@ -9,7 +9,7 @@
   "number": 41,
   "year": 1978
  },
- "date_stated_in_source": "6 th September , 1978",
+ "date_stated_in_source": "6th September, 1978",
  "commencement": null,
  "commencement_source": "",
  "language": "en",
@@ -45,11 +45,16 @@
    "type": "Act",
    "number": 41,
    "year": 1988
+  },
+  {
+   "type": "Act",
+   "number": 36,
+   "year": 2007
   }
  ],
  "verification_status": "unverified",
  "content_completeness": "",
- "amendment_history_status": "listed_in_source_header",
+ "amendment_history_status": "listed_in_source_header; Act No. 36 of 2007 applied by hand from its own Government Printer text (not in the HTML baseline's header)",
  "editorial_notes": [],
  "omitted_provisions": [],
  "overrides_applied": {
@@ -69,7 +74,8 @@
   {
    "code": "section_26b_missing",
    "issue": "Section 26B's heading and text are embedded inside section 26A's own content block rather than under their own tagged section anchor, so the shared parser reads them as part of 26A and no separate 26B section is emitted.",
-   "status": "known_gap_parser_cannot_separate"
+   "status": "resolved_by_hand_in_finalized_tree",
+   "resolution": "26B split into its own section node on 2026-09-05 from the HTML span and the consolidated PDF p.26; see provenance.what_changed."
   },
   {
    "code": "paragraph_a_embedded",
@@ -86,6 +92,50 @@
     "19G"
    ],
    "issue": "s.19G(2) reads 'Sections 321, 322 (1), 322 (2), 324, 325, 326, 328 (c), 329 and 330 of the Code of Criminal Procedure Act, No. 15 of 1979' -- all nine are external to this Act. Only '321' was captured, and as an internal cross-reference (this Act has no section 321); 322-330 are dropped entirely. The external-reference regex does not handle a comma-separated run of section/subsection pairs this long before the enactment name.",
+   "status": "known_parser_limitation"
+  },
+  {
+   "code": "first_child_repeated",
+   "sections": [
+    "8G",
+    "19A",
+    "28C",
+    "28D"
+   ],
+   "issue": "These four sections keep their opening words plus the first lettered limb in their own text as well as in the first child node, because the print runs the first paragraph on from the introductory words without a line break. Text is duplicated, not lost.",
+   "status": "known_parser_limitation"
+  },
+  {
+   "code": "marker_misprint_28D",
+   "sections": [
+    "28D"
+   ],
+   "issue": "The HTML marker on section 28D reads '[ 9,4 of 1984]'. There is no Act No. 4 of 1984 in the chain; section 9 of the Urban Development Authority (Special Provisions) Act, No. 44 of 1984 is the provision that inserts 28D (its own HTML text: 'Insertion of new section 28D of the principal enactment'). Read as a dropped digit in the source; the marker is left as printed.",
+   "status": "source_error_preserved_as_printed"
+  },
+  {
+   "code": "heading_gazette_number_s8",
+   "sections": [
+    "8"
+   ],
+   "issue": "Heading corrected by hand; the damaged reading is in heading_raw.",
+   "status": "hand_corrected"
+  },
+  {
+   "code": "amendment_36_2007_applied",
+   "sections": [
+    "8",
+    "Schedule"
+   ],
+   "issue": "The HTML baseline's chain header ends at Act No. 41 of 1988. Act No. 36 of 2007 (two operations) is applied from its own Government Printer text: s.2 inserts paragraph (cc) in section 8; s.3 substitutes item 4(e) of the Schedule, which the Schedule node already carries from the consolidated PDF (marker '[3,36 of 2007]'). Nothing else in that Act amends the text (s.1 short title, s.4 Sinhala text prevails).",
+   "status": "applied_from_held_source"
+  },
+  {
+   "code": "cross_reference_gaps_19G",
+   "sections": [
+    "19G"
+   ],
+   "issue": "s.19G(2) cites sections 321, 322 (1), 322 (2), 324, 325, 326, 328 (c), 329 and 330 of the Code of Criminal Procedure Act, No. 15 of 1979. Only '321' was captured, as an internal reference; the rest are not recorded. Text is intact; only the cross_references list is incomplete.",
    "status": "known_parser_limitation"
   }
  ],
@@ -811,7 +861,7 @@
     {
      "type": "section",
      "number": "8",
-     "heading": "Powers and functions of the Authority. 392-9-1986 392-9-1986",
+     "heading": "Powers and functions of the Authority.",
      "raw_text": "8. The powers and functions of Authority within any development area shall be-",
      "text": "The powers and functions of Authority within any development area shall be-",
      "amendment_events": [],
@@ -849,6 +899,41 @@
        "text": "to enter into, perform and carry out, whether directly or by way of joint venture with any person in or outside Sri Lanka, all such contracts or agreements as may-be necessary for the purpose of carrying out any development project or scheme, as may be approved by the Government;",
        "amendment_events": [],
        "cross_references": []
+      },
+      {
+       "type": "paragraph",
+       "number": "cc",
+       "raw_text": "(cc) to formulate a Scheme for rainwater harvesting to be included in the Development Plan prepared in terms of section 8A which scheme shall be in keeping with the National Rainwater Policy and Strategies ;",
+       "text": "to formulate a Scheme for rainwater harvesting to be included in the Development Plan prepared in terms of section 8A which scheme shall be in keeping with the National Rainwater Policy and Strategies ;",
+       "amendment_events": [
+        {
+         "amending_act": "36 of 2007",
+         "amending_act_no": 36,
+         "amending_year": 2007,
+         "amending_section": "2",
+         "operation": "insert",
+         "verbatim": "applied by hand from the Government Printer text of Act No. 36 of 2007, s.2: 'is hereby amended by the insertion immediately after paragraph (c) of that section, of the following paragraph'",
+         "source_path": "data/legal-sources/library/amendments/36-2007-urban-development-authority-amendment.pdf"
+        }
+       ],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Urban Development Authority Act",
+         "target_section": "8A",
+         "verbatim": "section 8A"
+        }
+       ],
+       "hand_corrections": [
+        {
+         "field": "paragraph",
+         "original_span": "(absent: the LankaLaw HTML baseline stops at Act No. 41 of 1988)",
+         "reading": "(cc) to formulate a Scheme for rainwater harvesting to be included in the Development Plan prepared in terms of section 8A which scheme shall be in keeping with the National Rainwater Policy and Strategies ;",
+         "source": "data/legal-sources/library/amendments/36-2007-urban-development-authority-amendment.pdf p.1, s.2 (text layer). Cross-checked against data/legal-sources/library/statutes/41-1978-urban-development-authority-act.pdf p.7, which prints the same paragraph as '(cc) to formulate a Scheme ... National Rainwater Policy and Strategies;' (without the space before the semicolon). Transcribed from the Government Printer text as printed, spacing included.",
+         "confidence": "high",
+         "why_a_human_must_check": "Amendment applied to a baseline that predates it; a lawyer should confirm nothing else in Act No. 36 of 2007 touches section 8."
+        }
+       ]
       },
       {
        "type": "paragraph",
@@ -1011,7 +1096,8 @@
        "amendment_events": [],
        "cross_references": []
       }
-     ]
+     ],
+     "heading_raw": "Powers and functions of the Authority. 392-9-1986 392-9-1986"
     }
    ]
   },
@@ -1549,10 +1635,10 @@
        "amendment_events": [],
        "cross_references": [
         {
-         "kind": "internal",
-         "target_document": "Urban Development Authority Act",
+         "kind": "external",
+         "target_document": "Inland Revenue Act",
          "target_section": "22",
-         "verbatim": "section 22"
+         "verbatim": "section 22 (B) of the Inland Revenue Act"
         },
         {
          "kind": "internal",
@@ -3096,7 +3182,7 @@
      "number": "26A",
      "heading": "Delegation of power & c by the Authority.",
      "raw_text": "26A. The Authority may delegate to the Chairman or any officer of the Authority any of its powers, functions and duties under this Law. Fines when recovered to be credited to the Fund of the Authority** 26b. All fines imposed for any offence under this Law or any regulation or rule made there under shall when recovered be credited to the Fund of the Authority.",
-     "text": "The Authority may delegate to the Chairman or any officer of the Authority any of its powers, functions and duties under this Law. Fines when recovered to be credited to the Fund of the Authority** 26b. All fines imposed for any offence under this Law or any regulation or rule made there under shall when recovered be credited to the Fund of the Authority.",
+     "text": "The Authority may delegate to the Chairman or any officer of the Authority any of its powers, functions and duties under this Law.",
      "amendment_events": [
       {
        "amending_act": "4 of 1982",
@@ -3107,7 +3193,45 @@
        "verbatim": "[ 6,4 of 1982]"
       }
      ],
-     "cross_references": []
+     "cross_references": [],
+     "hand_corrections": [
+      {
+       "field": "text",
+       "original_span": "26A. The Authority may delegate to the Chairman or any officer of the Authority any of its powers, functions and duties under this Law. Fines when recovered to be credited to the Fund of the Authority** 26b. All fines imposed for any offence under this Law or any regulation or rule made there under shall when recovered be credited to the Fund of the Authority.",
+       "reading": "The Authority may delegate to the Chairman or any officer of the Authority any of its powers, functions and duties under this Law.",
+       "source": "data/legal-sources/library/statutes/41-1978-urban-development-authority-act.pdf p.26 prints 26A as a single sentence ending 'under this Law.' with '[6, 4 of 1982]' beside it; data/legal-sources/library/statutes/HTML/41-1978-urban-development-authority-act.html embeds the following section's marginal note and text in the same block ('Fines when recovered to be credited to the Fund of the Authority** 26b. All fines ...'). The embedded material is moved to its own section 26B node; raw_text keeps the HTML reading.",
+       "confidence": "high",
+       "why_a_human_must_check": "The split point and the 26B heading are taken from the consolidated PDF's marginal notes; the HTML has no separate anchor for 26B."
+      }
+     ]
+    },
+    {
+     "type": "section",
+     "number": "26B",
+     "heading": "Fines when recovered to be credited to the Fund of the Authority.",
+     "raw_text": "Fines when recovered to be credited to the Fund of the Authority** 26b. All fines imposed for any offence under this Law or any regulation or rule made there under shall when recovered be credited to the Fund of the Authority.",
+     "text": "All fines imposed for any offence under this Law or any regulation or rule made there under shall when recovered be credited to the Fund of the Authority.",
+     "amendment_events": [
+      {
+       "amending_act": "4 of 1982",
+       "amending_act_no": 4,
+       "amending_year": 1982,
+       "amending_section": "6",
+       "operation": "unknown",
+       "verbatim": "[ 6,4 of 1982]"
+      }
+     ],
+     "cross_references": [],
+     "hand_corrections": [
+      {
+       "field": "section",
+       "original_span": "(embedded in section 26A's HTML content block; no separate section emitted by the parser)",
+       "reading": "separate section 26B, heading and text as above",
+       "source": "data/legal-sources/library/statutes/41-1978-urban-development-authority-act.pdf p.26 prints '26B.' with marginal note 'Fines when recovered to be credited to the Fund of the Authority' and marker '[6, 4 of 1982]'; text agrees word for word with the HTML span ('there under' printed as two words in both). The 4-of-1982 OCR sidecar (data/legal-sources/library/amendments/ocr/4-1982-urban-development-authority-amendment.txt) also shows s.6 of that Act inserting 26A and 26B.",
+       "confidence": "high",
+       "why_a_human_must_check": "Section created by hand from two machine readings of two sources; no tagged anchor exists in the parsed HTML."
+      }
+     ]
     },
     {
      "type": "section",
@@ -3681,5 +3805,32 @@
     }
    ]
   }
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "baseline": {
+   "file": "data/legal-sources/library/statutes/HTML/41-1978-urban-development-authority-act.html",
+   "edition": "LankaLaw consolidated HTML",
+   "chain_header": "Law Nos, 41 of 1978 Act Nos, 70 of 1979 4 of 1982 44 of 1984 49 of 1987 41 of 1988 Gazette Nos, 392-9-1986"
+  },
+  "sources_used_for_corrections": [
+   "data/legal-sources/library/statutes/41-1978-urban-development-authority-act.pdf",
+   "data/legal-sources/library/amendments/36-2007-urban-development-authority-amendment.pdf",
+   "data/legal-sources/library/statutes/HTML/41-1978-urban-development-authority-act.html",
+   "data/legal-sources/library/amendments/ocr/4-1982-urban-development-authority-amendment.txt"
+  ],
+  "what_changed": [
+   "Section 26B split out of section 26A's text into its own node (heading from the consolidated PDF p.26 marginal note; text identical in HTML and PDF).",
+   "Paragraph (cc) inserted in section 8 after paragraph (c), transcribed from Act No. 36 of 2007, s.2 (Government Printer text) and cross-checked against the consolidated PDF p.7.",
+   "Section 8 heading: the Gazette number '392-9-1986' printed twice after the marginal note in the HTML (the header block's 'Gazette Nos, 392-9-1986') removed from the heading; raw reading kept in heading_raw. The consolidated PDF p.7 also prints '392-9-' in the note column beside this section.",
+   "Section 8L(1): 'section 22 (B) of the Inland Revenue Act, No. 28 of 1979' re-classified from an internal reference to section 22 of this Law to an external reference (as the regenerated canonical parse now reads it).",
+   "date_stated_in_source whitespace normalised to '6th September, 1978' (as the regenerated canonical parse reads it).",
+   "Schedule node was recovered on 2026-08-26 from the consolidated PDF text layer pp.30-32 (not from OCR); it already carries the 36 of 2007 substitution of item 4(e).",
+   "title set to 'Urban Development Authority Law', the short title section 1 declares ('This Law may be cited as the Urban Development Authority Law.'; citation type Law, No. 41 of 1978; every amending Act names 'the Urban Development Authority Law, No. 41 of 1978'). The registry form 'Urban Development Authority Act' is kept under alternate_titles; source-registry.csv is not edited."
+  ]
+ },
+ "alternate_titles": [
+  "Urban Development Authority Act (registry official_title and curriculum form)"
  ]
 }

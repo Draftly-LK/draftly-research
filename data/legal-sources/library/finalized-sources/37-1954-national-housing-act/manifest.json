@@ -10,18 +10,132 @@
    "edition": "consolidated",
    "bytes": 338374,
    "sha256": "022be02a89a7bdbac89f048f2186c79d31dffc8e8b3465e8360a19bfbeff77c1",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/37-1954-national-housing-act.html",
    "used_for": "parsed into 37-1954-national-housing-act-consolidated.json"
   },
   {
-   "file": "37-1954-national-housing-act.html",
-   "role": "verification source, not parsed",
-   "edition": "",
-   "bytes": 338374,
-   "sha256": "022be02a89a7bdbac89f048f2186c79d31dffc8e8b3465e8360a19bfbeff77c1",
-   "copied_from": "data/legal-sources/library/statutes/HTML/37-1954-national-housing-act.html",
-   "used_for": "5-lens subagent review, 2 rounds, converged"
+   "file": "49-1981-national-housing-amendment.html",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 10379,
+   "sha256": "19b8eb5744a2e3a832f1e3c3c1404cd0536a59aab6243e1c726588970ce4b9f4",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/html/49-1981-national-housing-amendment.html",
+   "used_for": "parsed into 49-1981-national-housing-amendment.json"
+  },
+  {
+   "file": "22-1955-administrative-districts.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 18987580,
+   "sha256": "068d0ab2ae144da440033f0b2ba0da3882f32abdb677883051ad6a00a8dcea45",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/22-1955-administrative-districts.pdf",
+   "used_for": "Administrative Districts Act, No. 22 of 1955 (Government Press, Ceylon; Date of Assent April 14, 1955; 10 pp., no text layer). Omnibus Act: ss.1-7 establish administrative districts and construe 'Province' references; a Schedule of consequential amendments to other written laws follows. Named in the principal's chain header; already incorporated in the consolidated baseline. Not parsed; title page and pp.3-4, 10-11 read as images."
+  },
+  {
+   "file": "30-1955-national-housing-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 36129279,
+   "sha256": "843e59c24c947ab9c3f3e8632b7e915e50cccde58a751cc0bbd71c8f766880ab",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/30-1955-national-housing-amendment.pdf",
+   "used_for": "National Housing (Amendment) Act, No. 30 of 1955 (Government Press, Ceylon; Date of Assent August 25, 1955; 19 pp., no text layer). Named in the chain header; already incorporated in the consolidated baseline. Not parsed; title page read as an image."
+  },
+  {
+   "file": "42-1958-national-housing-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 11994597,
+   "sha256": "279eba4d8e057a2e9287a876581aa7f3bdcff40090921602c18927dd577cbc2b",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/42-1958-national-housing-amendment.pdf",
+   "used_for": "National Housing (Amendment) Act, No. 42 of 1958 (Government Press, Ceylon; Date of Assent November 3, 1958; 9 pp., no text layer). Named in the chain header; the baseline carries 10 inline markers from it. Not parsed; title page read as an image."
+  },
+  {
+   "file": "36-1966-national-housing-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 50407117,
+   "sha256": "e983628614bf4b78f18079ea206da768418a2e5f3f103dda1bded19600b08648",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/36-1966-national-housing-amendment.pdf",
+   "used_for": "National Housing (Amendment) Act, No. 36 of 1966 (Government Press, Ceylon; Date of Assent November 3, 1966; 29 pp., no text layer). Named in the chain header; the baseline carries 23 inline markers from it. Not parsed; title page read as an image."
+  },
+  {
+   "file": "49-1981-national-housing-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 4240904,
+   "sha256": "9d98d48a2758e974d021d8cbb0c55041c055377077925c6db010446def31c20e",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/49-1981-national-housing-amendment.pdf",
+   "used_for": "National Housing (Amendment) Act, No. 49 of 1981 (Government Printer; certified 24th July 1981; 3 pp., no text layer). Scan of the same Act whose LankaLaw HTML was parsed into 49-1981-national-housing-amendment.json; pp.1-3 read as images and found to carry the same five sections."
   }
  ],
- "statute_note": "Registry's only prior PDF (CBSL annual-report appendix) held a summary paragraph, not the Act text. This tree is parsed from LankaLaw's consolidated HTML (through Act No. 49 of 1981) instead; no separate PDF/HTML exists for the individual amending Acts, so they are not held or finalized separately."
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "37-1954-national-housing-act-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Act No. 49 of 1981",
+  "cutoff_evidence": "HTML chain header reads 'Act Nos, 37 of 1954 22 of 1955 30 of 1955 42 of 1958 36 of 1966 9 of 1978 49 of 1981 [ 6 th August , 1954 ]'. Inline markers in the body cite 42 of 1958 (10), 36 of 1966 (23), 9 of 1978 (1, s.60A) and 49 of 1981 (2, ss.33 and 36); none cite 22 of 1955 or 30 of 1955."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "22-1955",
+   "title": "Administrative Districts Act, No. 22 of 1955 (title page: 'PARLIAMENT OF CEYLON 3rd Session 1954-55 ... Date of Assent: April 14, 1955')",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Named in the chain header. Omnibus Act: ss.1-7 establish administrative districts and construe 'Province'/'revenue district' references in all written law; a Schedule of consequential amendments to named enactments follows (pp.9-11 read; the National Housing Act entry was not located in the pages read). No inline marker for it in the body; the earlier review recorded this as unresolved. Scan has no text layer; not OCR'd, nothing applied.",
+   "source_path": "data/legal-sources/library/amendments/22-1955-administrative-districts.pdf",
+   "held": true
+  },
+  {
+   "instrument": "30-1955",
+   "title": "National Housing (Amendment) Act, No. 30 of 1955 (title page: 'PARLIAMENT OF CEYLON 4th Session 1955 ... Date of Assent: August 25, 1955')",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Named in the chain header. 19 pp., no text layer; not OCR'd. No inline marker for it in the body (recorded as unresolved by the earlier review, consistent with later Acts having superseded the same provisions). Nothing applied.",
+   "source_path": "data/legal-sources/library/amendments/30-1955-national-housing-amendment.pdf",
+   "held": true
+  },
+  {
+   "instrument": "42-1958",
+   "title": "National Housing (Amendment) Act, No. 42 of 1958 (title page: 'PARLIAMENT OF CEYLON 3rd Session 1958-59 ... Date of Assent: November 3, 1958')",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Named in the chain header; 10 inline markers in the baseline (ss.45A-45C, 48, 49, 49A, 71, 76A, 94A, 96). 9 pp., no text layer; not OCR'd. Nothing applied.",
+   "source_path": "data/legal-sources/library/amendments/42-1958-national-housing-amendment.pdf",
+   "held": true
+  },
+  {
+   "instrument": "36-1966",
+   "title": "National Housing (Amendment) Act, No. 36 of 1966 (title page: 'PARLIAMENT OF CEYLON 2nd Session 1966-67 ... Date of Assent: November 3, 1966')",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Named in the chain header; 23 inline markers in the baseline (ss.25A-25F, 32, 64A, 71, 71A, 78, 85 and others). 29 pp., no text layer; not OCR'd. Nothing applied.",
+   "source_path": "data/legal-sources/library/amendments/36-1966-national-housing-amendment.pdf",
+   "held": true
+  },
+  {
+   "instrument": "9-1978",
+   "title": "not held; chain header names 'Act No. 9 of 1978'",
+   "classification": "known_but_not_held",
+   "reason": "Named in the chain header and cited by one inline marker (s.60A). No file on disk under any folder; the download report records no archive URL for it.",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "49-1981",
+   "title": "National Housing (Amendment) Act, No. 49 of 1981 (title page: 'PARLIAMENT OF THE DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA ... [Certified on 24th July, 1981]')",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Named in the chain header; inline markers on ss.33 and 36. The LankaLaw HTML of the Act is parsed into 49-1981-national-housing-amendment.json (5 sections: amend s.33(1), replace s.36, retrospective effect from July 2, 1979, savings). The scan's three pages were read as images and carry the same five sections. The tree's own instructions agree with the baseline's markers; nothing applied twice.",
+   "source_path": "data/legal-sources/library/amendments/html/49-1981-national-housing-amendment.html",
+   "held": true,
+   "also_held": "data/legal-sources/library/amendments/49-1981-national-housing-amendment.pdf"
+  }
+ ],
+ "index_note": "data/legal-sources/manifests/statute-section-index.json lists 127 sections for SRC076 against 125 in the tree. The two extra, 26A and 58A, are present_in ['legacy'] only: 26A has a blank heading and 58A's 'heading' is the fragment 'Law Act, No. 58 of 1949, (hereinafter referred to as \" the principal Act \") :', a line from some other document's text. Neither appears in the LankaLaw HTML (searched for '26A', '26 A', '58A', '58 A'). They are legacy harvest noise, not sections of this Act. The index was not edited.",
+ "registry_note": "source-registry.csv SRC076 local_pdf_path (statutes/37-1954-national-housing-act.pdf, sha256 2707748a...) is the CBSL Annual Report 1954 Appendix I, 7 pp.; item (iii) 'NATIONAL HOUSING ACT, No. 37 OF 1954' is a two-paragraph summary (the long title paraphrased, then s.6 quoted and the National Housing (No. 2) Regulations 1954 described). It is not the text of the Act. No PDF of the Act's text is held. The registry row already says so in its notes; the row was not edited.",
+ "statute_note": "Principal source selected: the LankaLaw consolidated HTML (data/legal-sources/library/statutes/HTML/37-1954-national-housing-act.html, identifier 1981Y12V336C-1), parsed by the earlier worker into the accepted tree, 125 sections in 10 Parts (ss.1-100 with lettered insertions 25A-25F, 45A-45C, 49A, 60A, 64A, 71A, 76A, 85A, 90A-90E, 91A-91D, 94A). Other sources inspected: the registry PDF (CBSL annual-report appendix; a summary, not the Act; see registry_note); the five amending-Act scans listed in amendment_reconciliation (title pages read as images; none has a text layer); the LankaLaw HTML of Act No. 49 of 1981. Consolidation cutoff: Act No. 49 of 1981, from the chain header quoted in baseline.cutoff_evidence. Review performed: packaging pass. The accepted tree was diffed against data/processed/canonical-statutes/SRC076-37-1954.json: bodies identical; the only difference is date_stated_in_source whitespace ('6 th August , 1954' vs '6th August, 1954'), left as is. validate_finalized_trees: 0 errors; the two warnings (s.56 'references internal section 120/127') are the validator misreading external references to the Land Development Ordinance and are now documented in the tree's quality_flags. The earlier 5-lens review (2 rounds, converged) is recorded in canonical-overrides.json SRC076. Amendment coverage: six instruments in the chain; five held as scans, four of them also evidenced by inline markers; 9 of 1978 not held; 49 of 1981 also parsed from HTML and its instructions agree with the baseline's markers. Nothing was applied: the baseline already incorporates the whole chain. OCR or structural weaknesses: the five scans have no text layer and were not OCR'd (nothing needed applying); the source prints some lettered cross-references in lowercase (recorded); the Schedule referred to in the body is not printed by the source and is not held. Missing sources: Act No. 9 of 1978; any Government Printer or revised-edition text of the principal Act; the Schedule body. Unresolved questions: why 22 of 1955 and 30 of 1955 leave no inline marker (see quality_notes in the override); which entry of the Administrative Districts Act's Schedule touches this Act. Index: 127 vs 125, see index_note. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
 }

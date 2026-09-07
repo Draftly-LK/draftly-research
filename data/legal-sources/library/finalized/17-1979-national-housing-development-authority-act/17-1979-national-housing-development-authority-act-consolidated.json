@@ -73,6 +73,41 @@
    ],
    "issue": "The source HTML itself carries pre-existing OCR/transcription damage in a small number of places (section 4: \"shall Up-\" mid-sentence; section 7 similarly garbled), confirmed identical in both the rendered source and the parsed tree -- not introduced by anything in this repository's own code. Kept as printed.",
    "status": "source_as_printed"
+  },
+  {
+   "code": "validator_external_reference_false_positive",
+   "sections_affected": [
+    "67"
+   ],
+   "issue": "Section 67 reads 'Subject to the provisions of sections 755 and 756 of the Civil Procedure Code'. Recorded in cross_references as external references to the Civil Procedure Code. scripts/validate_finalized_trees.py decides internal-vs-external by a `scope`/`target_statute` key this parser does not write; it does not read `kind: external` or `target_document`, so these references to another enactment are reported as internal references beyond the last section. The tree records them as external, which is what the source says. No change to the text.",
+   "status": "documented_validator_warning"
+  },
+  {
+   "code": "section_without_heading_as_printed",
+   "sections_affected": [
+    "10",
+    "69G"
+   ],
+   "issue": "Section 10 prints as '[ 2,32 of 2003] 10 . Repealed.' with no marginal note; Act No. 32 of 2003 s.2 repealed it and the source prints nothing else. Section 69G (inserted by Act No. 30 of 1999 s.3) prints no marginal note in the LankaLaw HTML, and the Government Printer PDF of Act No. 30 of 1999 prints '69G. for the purposes of this Part -' with no marginal note either. Both left empty rather than invented.",
+   "status": "source_as_printed"
+  },
+  {
+   "code": "section_text_repeats_first_child",
+   "sections_affected": [
+    "5",
+    "36",
+    "37",
+    "49",
+    "57",
+    "73A"
+   ],
+   "issue": "In these six sections the section-level `text`/`raw_text` carries the lead-in words followed by the full run of paragraphs, and the same paragraphs also appear as child nodes. Nothing is missing and nothing is invented; the paragraph text is present twice. Parser artefact of build_canonical_statutes.py for sections whose lead-in and first paragraph share one HTML block; left as parsed so the finalized tree stays diffable against data/processed/canonical-statutes/SRC075-17-1979.json.",
+   "status": "known_parser_limitation"
+  },
+  {
+   "code": "schedule_bodies_not_in_source",
+   "issue": "The source references 'the Schedule' (renamed 'First Schedule' by Act No. 30 of 1999 s.4) and a 'Second Schedule' (inserted by Act No. 30 of 1999 s.5: affidavit forms for applications for ejectment under Part VIIA). The LankaLaw consolidated HTML prints neither body. The LankaLaw HTML of Act No. 30 of 1999 ends at the word 'Schedules' with no body. The Government Printer PDF of Act No. 30 of 1999 (data/legal-sources/library/amendments/incoming/30-1999-national-housing-development-authority-act-amendment.pdf, text layer, pp.11-12) prints the Second Schedule in a two-column form layout; it has not been transcribed. No held source prints the First Schedule.",
+   "status": "unresolved_held_source_not_transcribed"
   }
  ],
  "source_location": {},
@@ -3869,5 +3904,13 @@
     }
    ]
   }
- ]
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "what_changed": [
+   "quality_flags: added `validator_external_reference_false_positive` (s.67), `section_without_heading_as_printed` (ss.10, 69G), `section_text_repeats_first_child` (ss.5, 36, 37, 49, 57, 73A), `schedule_bodies_not_in_source`. No node text changed."
+  ],
+  "corrected_by": "finalization worker, September 2026 packaging pass",
+  "basis": "packaging pass; documentation only, body untouched"
+ }
 }

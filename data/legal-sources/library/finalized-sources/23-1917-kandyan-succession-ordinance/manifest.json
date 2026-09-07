@@ -1,0 +1,63 @@
+{
+ "statute": "Kandyan Succession Ordinance",
+ "source_id": "SRC047",
+ "note": "Every source actually used to build the canonical trees in library/finalized/23-1917-kandyan-succession-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "23-1917-kandyan-succession-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 14217,
+   "sha256": "215972e7942034585b9804cda3e586efad3471160777eb060793c9381c2a7c68",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/23-1917-kandyan-succession-ordinance.html",
+   "used_for": "parsed into 23-1917-kandyan-succession-ordinance.json"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-3.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 26631560,
+   "sha256": "a2bcc592deac8abcd04d69584b34a3ab8146e75f7e51cb335b30656f7603c58c",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-3.pdf",
+   "used_for": "1980 revised edition, Cap. 133 (Vol. VI pp. 257-258, PDF pp. 217-218); chain header 'Ordinance No. 23 of 1917.' only; read section by section; prints '16 M L. R..' in the s.3 heading and 'Ordinance or Act' in s.4(2), agreeing with the parsed edition"
+  },
+  {
+   "file": "Kandyan Succession Ordinance.html",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 14407,
+   "sha256": "a4e0bf696dd152540b0d0d7c00e1642667e63c0bad783cab6bcd4940192b9ad9",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/Kandyan Succession Ordinance.html",
+   "used_for": "1956 revised edition, Cap. 114 (Vol. 5 p. 278); the alternate edition the override's three variants were read against"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "23-1917-kandyan-succession-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Ordinance No. 23 of 1917 (principal only; the chain names no amending instrument)",
+  "cutoff_evidence": "HTML chain header reads 'Ordinance Nos, 23 of 1917 [ 9 th November , 1917 ]'. The 1980 revised edition (Cap. 133, Vol. VI p. 257) prints 'Ordinance No. 23 of 1917.' and '[9th November, 1917.]'. The only bracketed note carrying a year is the footnote '*[*Repealed by Act No. 44 of 1952]', which refers to the Kandyan Marriage Ordinance named in s.4, not to this Ordinance."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "32-1971",
+   "title": "not held; cited only in the curriculum list as 'No. 32 of 1971'",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "No held file, chain header or footnote names an instrument No. 32 of 1971 in connection with this Ordinance. The 1980 revised edition and the LankaLaw page both give the principal alone. Recorded as a curriculum discrepancy, not as an amendment.",
+   "source_path": null,
+   "held": false
+  }
+ ],
+ "source_conflicts": [
+  "s.3 heading: HTML and the 1980 print both read '(16 M L. R.. 117-120)'; the 1956 revised edition (statutes/HTML/Kandyan Succession Ordinance.html) reads '16 N L. R.'. The tree carries the corrected N reading from the override, with the printed form in heading_raw.",
+  "s.4(2) closing words: HTML and the 1980 print read 'under the said first-mentioned Ordinance or Act.'; the 1956 edition reads 'under the said first-mentioned Ordinance.'. Recorded in the tree's alternate_edition_variants; the parsed wording is kept.",
+  "Footnote to 'Kandyan Marriage Ordinance': HTML and the 1980 print both carry '* Repealed by Act No. 44 of 1952'; the 1956 edition carries the asterisk only."
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML (data/legal-sources/library/statutes/HTML/23-1917-kandyan-succession-ordinance.html, identifier 1981Y6V133C-1; the override calls it the later edition), parsed and reviewed by the earlier worker against the 1956 revised edition. Other sources inspected: the 1980 revised edition compendium, Cap. 133 (statutes/legislative-enactments-1980-volume-3.pdf, Vol. VI pp. 257-258, PDF pp. 217-218, text layer; registry SRC047 local_pdf_path), read in full against the tree; and the 1956 revised edition page (statutes/HTML/Kandyan Succession Ordinance.html, Cap. 114, Vol. 5 p. 278), the alternate edition named in override SRC047. Consolidation cutoff: the principal Ordinance alone; both chain headers name nothing else. Review performed this pass: packaging pass. All four sections, the s.4 definitions and the footnote read against the 1980 print; the three recorded edition variants checked against it (the 1980 print sides with the parsed edition on all three). Amendment coverage: no amending instrument in either chain header or on disk. The curriculum's 'No. 32 of 1971' has one reconciliation row as unsupported. OCR or structural weaknesses: none from OCR. The 1980 compendium text layer is itself OCR-grade. Missing sources: the text of any instrument No. 32 of 1971 is not held, so the curriculum citation cannot be checked. Unresolved questions: which reading of s.4(2) ('Ordinance' or 'Ordinance or Act') the current law carries; the two later editions agree against the 1956 one. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
+}

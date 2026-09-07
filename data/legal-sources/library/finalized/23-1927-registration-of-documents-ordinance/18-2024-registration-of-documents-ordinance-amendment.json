@@ -15,7 +15,7 @@
   "year": 1927
  },
  "certified_on": "01st of April, 2024",
- "legal_draftsman_number": "69/2017",
+ "legal_draftsman_number": "O. 69/2017",
  "language": "en",
  "edition": {
   "publisher": "Government Printer, Sri Lanka",
@@ -27,11 +27,45 @@
  "amendment_instructions": [
   {
    "in_section": "2",
-   "operation": "amend",
+   "operation": "insert",
    "operations": [],
    "targets_principal_enactment": true,
    "target_enactment": "Registration of Documents Ordinance",
-   "target_section": "8"
+   "target_section": "8",
+   "target_paragraph": "b",
+   "in_proviso": true,
+   "inserted_subparagraph": "xii",
+   "inserted_text": "any agreement in relation to a transaction which is subject to the provisions of the Secured Transactions Act, No. 17 of 2024."
+  },
+  {
+   "in_section": "3",
+   "operation": "repeal",
+   "operations": [],
+   "targets_principal_enactment": true,
+   "target_enactment": "Registration of Documents Ordinance",
+   "target_chapter": "IV",
+   "target_sections": [
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24"
+   ]
+  },
+  {
+   "in_section": "4",
+   "operation": "repeal_and_substitute",
+   "operations": [],
+   "targets_principal_enactment": true,
+   "target_enactment": "Registration of Documents Ordinance",
+   "target_chapter_heading": "V",
+   "substitutes": {
+    "to": "CHAPTER V PROVISIONS APPLICABLE TO INSTRUMENTS AFFECTING LAND"
+   }
   },
   {
    "in_section": "5",
@@ -48,7 +82,32 @@
   {
    "in_section": "6",
    "operation": "amend",
-   "operations": [],
+   "operations": [
+    {
+     "limb": "1",
+     "operation": "substitute_words",
+     "target": {
+      "target_section": "29",
+      "target_subsection": "1"
+     },
+     "target_label": "29(1)",
+     "substitutes": {
+      "from": "which affects land or movable property",
+      "to": "which affects land"
+     }
+    },
+    {
+     "limb": "2",
+     "operation": "substitute_marginal_note",
+     "target": {
+      "target_section": "29"
+     },
+     "target_label": "29 (marginal note)",
+     "substitutes": {
+      "to": "Land situated in several districts."
+     }
+    }
+   ],
    "targets_principal_enactment": true,
    "target_enactment": "Registration of Documents Ordinance",
    "target_section": "29",
@@ -60,25 +119,37 @@
   },
   {
    "in_section": "7",
-   "operation": "amend",
+   "operation": "substitute_words",
    "operations": [],
    "targets_principal_enactment": true,
    "target_enactment": "Registration of Documents Ordinance",
-   "target_section": "41"
+   "target_section": "41",
+   "substitutes": {
+    "from": "instruments affecting land and pledges, mortgages or bills of sale registered by him",
+    "to": "instruments affecting land registered by him"
+   }
+  },
+  {
+   "in_section": "8",
+   "operation": "substitute_words",
+   "operations": [],
+   "targets_principal_enactment": true,
+   "target_enactment": "Registration of Documents Ordinance",
+   "target_schedule": "First Schedule",
+   "target_part": "III",
+   "target_item": "2",
+   "substitutes": {
+    "from": "any book or index kept under Chapters III, IV, V, VI, for each transaction",
+    "to": "any book or index kept under Chapter III, V or VI for each transaction"
+   }
   },
   {
    "in_section": "9",
-   "operation": "amend",
-   "operations": [
-    {
-     "limb": "i",
-     "operation": "amend",
-     "target": {},
-     "target_label": ""
-    }
-   ],
+   "operation": "transitional_provision",
+   "operations": [],
    "targets_principal_enactment": false,
-   "target_enactment": "Registration of Documents Ordinance"
+   "target_enactment": "Registration of Documents Ordinance",
+   "note": "Not an amendment of the principal enactment's text: a saving for instruments registered under the repealed Chapter IV, tied to the Secured Transactions Act, No. 17 of 2024."
   }
  ],
  "verification_status": "unverified",
@@ -105,11 +176,15 @@
    "cross_references": [],
    "children": [],
    "amendment_instruction": {
-    "operation": "amend",
+    "operation": "insert",
     "operations": [],
     "targets_principal_enactment": true,
     "target_enactment": "Registration of Documents Ordinance",
-    "target_section": "8"
+    "target_section": "8",
+    "target_paragraph": "b",
+    "in_proviso": true,
+    "inserted_subparagraph": "xii",
+    "inserted_text": "any agreement in relation to a transaction which is subject to the provisions of the Secured Transactions Act, No. 17 of 2024."
    }
   },
   {
@@ -120,17 +195,49 @@
    "text": "Chapter IV of the principal enactment (sections 16 to 24 both inclusive) is hereby repealed.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "amendment_instruction": {
+    "operation": "repeal",
+    "operations": [],
+    "targets_principal_enactment": true,
+    "target_enactment": "Registration of Documents Ordinance",
+    "target_chapter": "IV",
+    "target_sections": [
+     "16",
+     "17",
+     "18",
+     "19",
+     "20",
+     "21",
+     "22",
+     "23",
+     "24"
+    ]
+   }
   },
   {
    "type": "section",
    "number": "4",
-   "heading": "Replacement of the heading of Chapter V of the principal enactment 2",
-   "raw_text": "4. The heading of Chapter V of the principal enactment is hereby repealed and the following heading is substituted therefor: - Registration of Documents (Amendment) “CHAPTER V PROVISIONS APPLICABLE TO INSTRUMENTS AFFECTING LAND’’",
-   "text": "The heading of Chapter V of the principal enactment is hereby repealed and the following heading is substituted therefor: - Registration of Documents (Amendment) “CHAPTER V PROVISIONS APPLICABLE TO INSTRUMENTS AFFECTING LAND’’",
+   "heading": "Replacement of the heading of Chapter V of the principal enactment",
+   "raw_text": "4. The heading of Chapter V of the principal enactment is hereby repealed and the following heading is substituted therefor: - “CHAPTER V PROVISIONS APPLICABLE TO INSTRUMENTS AFFECTING LAND’’",
+   "text": "The heading of Chapter V of the principal enactment is hereby repealed and the following heading is substituted therefor: - “CHAPTER V PROVISIONS APPLICABLE TO INSTRUMENTS AFFECTING LAND’’",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "Replacement of the heading of Chapter V of the principal enactment 2",
+   "heading_correction_status": "restored_from_print",
+   "text_raw_parser": "The heading of Chapter V of the principal enactment is hereby repealed and the following heading is substituted therefor: - Registration of Documents (Amendment) “CHAPTER V PROVISIONS APPLICABLE TO INSTRUMENTS AFFECTING LAND’’",
+   "text_note": "The closing quotation mark after LAND is printed as two straight apostrophes (’’) in the Act.",
+   "amendment_instruction": {
+    "operation": "repeal_and_substitute",
+    "operations": [],
+    "targets_principal_enactment": true,
+    "target_enactment": "Registration of Documents Ordinance",
+    "target_chapter_heading": "V",
+    "substitutes": {
+     "to": "CHAPTER V PROVISIONS APPLICABLE TO INSTRUMENTS AFFECTING LAND"
+    }
+   }
   },
   {
    "type": "section",
@@ -164,7 +271,32 @@
    "children": [],
    "amendment_instruction": {
     "operation": "amend",
-    "operations": [],
+    "operations": [
+     {
+      "limb": "1",
+      "operation": "substitute_words",
+      "target": {
+       "target_section": "29",
+       "target_subsection": "1"
+      },
+      "target_label": "29(1)",
+      "substitutes": {
+       "from": "which affects land or movable property",
+       "to": "which affects land"
+      }
+     },
+     {
+      "limb": "2",
+      "operation": "substitute_marginal_note",
+      "target": {
+       "target_section": "29"
+      },
+      "target_label": "29 (marginal note)",
+      "substitutes": {
+       "to": "Land situated in several districts."
+      }
+     }
+    ],
     "targets_principal_enactment": true,
     "target_enactment": "Registration of Documents Ordinance",
     "target_section": "29",
@@ -178,113 +310,179 @@
   {
    "type": "section",
    "number": "7",
-   "heading": "Amendment of section 41 of the principal enactment registered by him”, of the words “instruments affecting land registered by him”.",
-   "raw_text": "7. Section 41 of the principal enactment is hereby amended by the substitution for the words “instruments affecting land and pledges, mortgages or bills of sale",
-   "text": "Section 41 of the principal enactment is hereby amended by the substitution for the words “instruments affecting land and pledges, mortgages or bills of sale",
+   "heading": "Amendment of section 41 of the principal enactment",
+   "raw_text": "7. Section 41 of the principal enactment is hereby amended by the substitution for the words “instruments affecting land and pledges, mortgages or bills of sale registered by him”, of the words “instruments affecting land registered by him”.",
+   "text": "Section 41 of the principal enactment is hereby amended by the substitution for the words “instruments affecting land and pledges, mortgages or bills of sale registered by him”, of the words “instruments affecting land registered by him”.",
    "amendment_events": [],
    "cross_references": [],
    "children": [],
    "amendment_instruction": {
-    "operation": "amend",
+    "operation": "substitute_words",
     "operations": [],
     "targets_principal_enactment": true,
     "target_enactment": "Registration of Documents Ordinance",
-    "target_section": "41"
-   }
+    "target_section": "41",
+    "substitutes": {
+     "from": "instruments affecting land and pledges, mortgages or bills of sale registered by him",
+     "to": "instruments affecting land registered by him"
+    }
+   },
+   "heading_raw": "Amendment of section 41 of the principal enactment registered by him”, of the words “instruments affecting land registered by him”.",
+   "heading_correction_status": "restored_from_print",
+   "text_raw_parser": "Section 41 of the principal enactment is hereby amended by the substitution for the words “instruments affecting land and pledges, mortgages or bills of sale"
   },
   {
    "type": "section",
    "number": "8",
-   "heading": "Amendment of the First Schedule to the hereby principal enactment transaction” of the words and figures “any book or index kept",
-   "raw_text": "8. The First Schedule to the principal enactment is amended in Part III of that Schedule, by the substitution in item 2 thereof, for the words and figures “any book or index kept under Chapters III, IV, V, VI, for each under Chapter III, V or VI for each transaction”. Registration of Documents (Amendment) 3",
-   "text": "The First Schedule to the principal enactment is amended in Part III of that Schedule, by the substitution in item 2 thereof, for the words and figures “any book or index kept under Chapters III, IV, V, VI, for each under Chapter III, V or VI for each transaction”. Registration of Documents (Amendment) 3",
+   "heading": "Amendment of the First Schedule to the principal enactment",
+   "raw_text": "8. The First Schedule to the principal enactment is hereby amended in Part III of that Schedule, by the substitution in item 2 thereof, for the words and figures “any book or index kept under Chapters III, IV, V, VI, for each transaction” of the words and figures “any book or index kept under Chapter III, V or VI for each transaction”.",
+   "text": "The First Schedule to the principal enactment is hereby amended in Part III of that Schedule, by the substitution in item 2 thereof, for the words and figures “any book or index kept under Chapters III, IV, V, VI, for each transaction” of the words and figures “any book or index kept under Chapter III, V or VI for each transaction”.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "Amendment of the First Schedule to the hereby principal enactment transaction” of the words and figures “any book or index kept",
+   "heading_correction_status": "restored_from_print",
+   "text_raw_parser": "The First Schedule to the principal enactment is amended in Part III of that Schedule, by the substitution in item 2 thereof, for the words and figures “any book or index kept under Chapters III, IV, V, VI, for each under Chapter III, V or VI for each transaction”. Registration of Documents (Amendment) 3",
+   "amendment_instruction": {
+    "operation": "substitute_words",
+    "operations": [],
+    "targets_principal_enactment": true,
+    "target_enactment": "Registration of Documents Ordinance",
+    "target_schedule": "First Schedule",
+    "target_part": "III",
+    "target_item": "2",
+    "substitutes": {
+     "from": "any book or index kept under Chapters III, IV, V, VI, for each transaction",
+     "to": "any book or index kept under Chapter III, V or VI for each transaction"
+    }
+   }
   },
   {
    "type": "section",
    "number": "9",
-   "heading": "Enforceability of instruments registered under Chapter IV of the principal enactment 4 is not the the",
-   "raw_text": "9. (1) Where, on the appointed date, an instrument creating- (a) a pledge, mortgage or bill of sale of movable property; or (b) (i) an interest in a fixture of any immovable property; or (ii) an assignment of a right to payment under a mortgage, charge or lease of any immovable property where the assignment does not convey or transfer the assignor’s interest in the immovable property, which has been registered under Chapter IV of the principal enactment, is in force, such pledge, mortgage or bill of sale of movable property or such interest in a fixture of immovable property or such assignment of a right to payment under a mortgage, charge or lease of immovable property shall, for a period of two years from the appointed date, continue to be enforceable, but shall be required to be registered under the relevant provisions of the Secured Transactions Act, No. 17 of 2024 as a pledge, mortgage or bill of sale of movable property, or an interest in a fixture of immovable property or an assignment of a right to payment under a mortgage, charge or lease of immovable property prior to the expiration of such period of two years. (2) An instrument referred to in subsection (1) shall, on being registered under the Secured Transactions the date on which such instrument initially became legally enforceable, and the priority which such instrument became entitled to at the time it initially became legally enforceable, shall continue to prevail. Registration of Documents (Amendment) (3) An instrument referred to in subsection (1) which registered under the Secured Transactions appointed date, shall become legally unenforceable after expiration of such period.",
-   "text": "(1) Where, on the appointed date, an instrument creating-",
+   "heading": "Enforceability of instruments registered under Chapter IV of the principal enactment",
+   "raw_text": "9.",
+   "text": "",
    "amendment_events": [],
    "cross_references": [],
    "children": [
     {
-     "type": "paragraph",
-     "number": "a",
-     "raw_text": "(a) a pledge, mortgage or bill of sale of movable property; or (b)",
-     "text": "a pledge, mortgage or bill of sale of movable property; or (b)",
+     "type": "subsection",
+     "number": "1",
+     "raw_text": "Where, on the appointed date, an instrument creating-",
+     "text": "Where, on the appointed date, an instrument creating-",
      "amendment_events": [],
-     "cross_references": []
-    },
-    {
-     "type": "paragraph",
-     "number": "i",
-     "raw_text": "(i) an interest in a fixture of any immovable property; or (ii) an assignment of a right to payment under a mortgage, charge or lease of any immovable property where the assignment does not convey or transfer the assignor’s interest in the immovable property, which has been registered under Chapter IV of the principal enactment, is in force, such pledge, mortgage or bill of sale of movable property or such interest in a fixture of immovable property or such assignment of a right to payment under a mortgage, charge or lease of immovable property shall, for a period of two years from the appointed date, continue to be enforceable, but shall be required to be registered under the relevant provisions of the Secured Transactions Act, No. 17 of 2024 as a pledge, mortgage or bill of sale of movable property, or an interest in a fixture of immovable property or an assignment of a right to payment under a mortgage, charge or lease of immovable property prior to the expiration of such period of two years. (2) An instrument referred to in subsection (1) shall, on being registered under the Secured Transactions the date on which such instrument initially became legally enforceable, and the priority which such instrument became entitled to at the time it initially became legally enforceable, shall continue to prevail. Registration of Documents (Amendment) (3) An instrument referred to in subsection (1) which registered under the Secured Transactions appointed date, shall become legally unenforceable after expiration of such period.",
-     "text": "an interest in a fixture of any immovable property; or (ii) an assignment of a right to payment under a mortgage, charge or lease of any immovable property where the assignment does not convey or transfer the assignor’s interest in the immovable property, which has been registered under Chapter IV of the principal enactment, is in force, such pledge, mortgage or bill of sale of movable property or such interest in a fixture of immovable property or such assignment of a right to payment under a mortgage, charge or lease of immovable property shall, for a period of two years from the appointed date, continue to be enforceable, but shall be required to be registered under the relevant provisions of the Secured Transactions Act, No. 17 of 2024 as a pledge, mortgage or bill of sale of movable property, or an interest in a fixture of immovable property or an assignment of a right to payment under a mortgage, charge or lease of immovable property prior to the expiration of such period of two years. (2) An instrument referred to in subsection (1) shall, on being registered under the Secured Transactions the date on which such instrument initially became legally enforceable, and the priority which such instrument became entitled to at the time it initially became legally enforceable, shall continue to prevail. Registration of Documents (Amendment) (3) An instrument referred to in subsection (1) which registered under the Secured Transactions appointed date, shall become legally unenforceable after expiration of such period.",
-     "amendment_events": [],
-     "cross_references": [
+     "cross_references": [],
+     "children": [
       {
-       "kind": "enactment",
-       "target_document": "Secured Transactions Act",
-       "verbatim": "the Secured Transactions Act"
+       "type": "paragraph",
+       "number": "a",
+       "raw_text": "a pledge, mortgage or bill of sale of movable property; or",
+       "text": "a pledge, mortgage or bill of sale of movable property; or",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": []
       },
       {
-       "kind": "enactment",
-       "target_document": "Secured Transactions Act",
-       "target_document_note": "",
-       "target_citation": "No. 17 of 2024",
-       "verbatim": "of the Secured Transactions Act, No. 17 of 2024"
+       "type": "paragraph",
+       "number": "b",
+       "raw_text": "",
+       "text": "",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": [
+        {
+         "type": "subparagraph",
+         "number": "i",
+         "raw_text": "an interest in a fixture of any immovable property; or",
+         "text": "an interest in a fixture of any immovable property; or",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        },
+        {
+         "type": "subparagraph",
+         "number": "ii",
+         "raw_text": "an assignment of a right to payment under a mortgage, charge or lease of any immovable property where the assignment does not convey or transfer the assignor’s interest in the immovable property,",
+         "text": "an assignment of a right to payment under a mortgage, charge or lease of any immovable property where the assignment does not convey or transfer the assignor’s interest in the immovable property,",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        }
+       ]
+      },
+      {
+       "type": "closing_text",
+       "raw_text": "",
+       "amendment_events": [],
+       "cross_references": [],
+       "text": "which has been registered under Chapter IV of the principal enactment, is in force, such pledge, mortgage or bill of sale of movable property or such interest in a fixture of immovable property or such assignment of a right to payment under a mortgage, charge or lease of immovable property shall, for a period of two years from the appointed date, continue to be enforceable, but shall be required to be registered under the relevant provisions of the Secured Transactions Act, No. 17 of 2024 as a pledge, mortgage or bill of sale of movable property, or an interest in a fixture of immovable property or an assignment of a right to payment under a mortgage, charge or lease of immovable property prior to the expiration of such period of two years."
       }
      ]
+    },
+    {
+     "type": "subsection",
+     "number": "2",
+     "raw_text": "An instrument referred to in subsection (1) shall, on being registered under the Secured Transactions Act, No. 17 of 2024, be deemed to have been perfected from the date on which such instrument initially became legally enforceable, and the priority which such instrument became entitled to at the time it initially became legally enforceable, shall continue to prevail.",
+     "text": "An instrument referred to in subsection (1) shall, on being registered under the Secured Transactions Act, No. 17 of 2024, be deemed to have been perfected from the date on which such instrument initially became legally enforceable, and the priority which such instrument became entitled to at the time it initially became legally enforceable, shall continue to prevail.",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": []
+    },
+    {
+     "type": "subsection",
+     "number": "3",
+     "raw_text": "An instrument referred to in subsection (1) which is not registered under the Secured Transactions Act, No. 17 of 2024 prior to the expiration of two years from the appointed date, shall become legally unenforceable after the expiration of such period.",
+     "text": "An instrument referred to in subsection (1) which is not registered under the Secured Transactions Act, No. 17 of 2024 prior to the expiration of two years from the appointed date, shall become legally unenforceable after the expiration of such period.",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": []
     }
    ],
    "amendment_instruction": {
-    "operation": "amend",
-    "operations": [
-     {
-      "limb": "i",
-      "operation": "amend",
-      "target": {},
-      "target_label": ""
-     }
-    ],
+    "operation": "transitional_provision",
+    "operations": [],
     "targets_principal_enactment": false,
-    "target_enactment": "Registration of Documents Ordinance"
-   }
+    "target_enactment": "Registration of Documents Ordinance",
+    "note": "Not an amendment of the principal enactment's text: a saving for instruments registered under the repealed Chapter IV, tied to the Secured Transactions Act, No. 17 of 2024."
+   },
+   "heading_raw": "Enforceability of instruments registered under Chapter IV of the principal enactment 4 is not the the",
+   "heading_correction_status": "restored_from_print",
+   "raw_text_parser": "9. (1) Where, on the appointed date, an instrument creating- (a) a pledge, mortgage or bill of sale of movable property; or (b) (i) an interest in a fixture of any immovable property; or (ii) an assignment of a right to payment under a mortgage, charge or lease of any immovable property where the assignment does not convey or transfer the assignor’s interest in the immovable property, which has been registered under Chapter IV of the principal enactment, is in force, such pledge, mortgage or bill of sale of movable property or such interest in a fixture of immovable property or such assignment of a right to payment under a mortgage, charge or lease of immovable property shall, for a period of two years from the appointed date, continue to be enforceable, but shall be required to be registered under the relevant provisions of the Secured Transactions Act, No. 17 of 2024 as a pledge, mortgage or bill of sale of movable property, or an interest in a fixture of immovable property or an assignment of a right to payment under a mortgage, charge or lease of immovable property prior to the expiration of such period of two years. (2) An instrument referred to in subsection (1) shall, on being registered under the Secured Transactions the date on which such instrument initially became legally enforceable, and the priority which such instrument became entitled to at the time it initially became legally enforceable, shall continue to prevail. Registration of Documents (Amendment) (3) An instrument referred to in subsection (1) which registered under the Secured Transactions appointed date, shall become legally unenforceable after expiration of such period."
   },
   {
    "type": "section",
    "number": "10",
    "heading": "Sinhala text to prevail in case of inconsistency",
-   "raw_text": "10. In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail. Registration of Documents (Amendment) 5",
-   "text": "In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail. Registration of Documents (Amendment) 5",
+   "raw_text": "10. In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail.",
+   "text": "In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "text_raw_parser": "In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail. Registration of Documents (Amendment) 5"
   }
  ],
  "checked_against": "Government Printer PDF, Registration of Documents (Amendment) Act, No. 18 of 2024, certified 1st April 2024, retrieved from https://lankalaw.net/wp-content/uploads/2025/03/18-2024_E.pdf",
  "quality_notes": [
   "Parsed from the Government Printer PDF's own text layer, not from OCR. Every word of the source is accounted for in the tree (0.00% unmatched by scripts/check_parse_coverage.py). All ten sections are present and correctly numbered.",
-  "Two marginal notes have absorbed a tail of the provision's quoted wording where the two columns run level. See known_ocr_defects. The wording is not lost; it also appears in the section's own text.",
-  "This is the newest instrument in the chain and it is not reflected in the principal statute's tree: the LankaLaw consolidated HTML that SRC005 is parsed from prints an amendment chain ending at Act No. 5 of 1990.",
-  "Build this tree from PowerShell, not Git Bash. Git Bash resolves pdftotext to an Xpdf 4.00 build that ignores '-enc UTF-8' and loses every curly quote and em dash to U+FFFD."
+  "Build this tree from PowerShell, not Git Bash. Git Bash resolves pdftotext to an Xpdf 4.00 build that ignores '-enc UTF-8' and loses every curly quote and em dash to U+FFFD.",
+  "Corrected by hand on 2026-09-05 against pdftotext -layout of the PDF: marginal notes of ss.4, 7, 8, 9, 10 restored (they had absorbed body text or a page number); page headers 'Registration of Documents (Amendment) N' removed from ss.4, 8, 10; s.7's text completed (its second half had been read into the note); s.8's text restored to the printed order (the parser had interleaved the two quoted phrases); s.9 rebuilt as subsections (1)-(3) with paragraphs (a), (b)(i)-(ii) and the closing words, and s.9(2)-(3) restored where the parser had dropped 'Act, No. 17 of 2024, be deemed to have been perfected from' and 'is not' / 'Act, No. 17 of 2024 prior to the expiration of two years from the'. Parser readings kept in heading_raw / raw_text_parser / text_raw_parser.",
+  "Instructions filled for every section: s.2 insert 8(b) proviso (xii); s.3 repeal Chapter IV (ss.16-24); s.4 substitute Chapter V heading; s.5 words in s.25; s.6 words in 29(1) and the s.29 marginal note; s.7 words in s.41; s.8 words in First Schedule Part III item 2; s.9 transitional."
  ],
- "known_ocr_defects": [
-  {
-   "reads": "Amendment of section 41 of the principal enactment registered by him”, of the words “instruments affecting land registered by him”.",
-   "should_read": "Amendment of section 41 of the principal enactment",
-   "in": "section 7, marginal note",
-   "effect": "the closing words of the substitution were read into the note. The section substitutes 'instruments affecting land registered by him' for 'instruments affecting land and pledges, mortgages or bills of sale registered by him'."
-  },
-  {
-   "reads": "Amendment of the First Schedule to the hereby principal enactment transaction” of the words and figures “any book or index kept",
-   "should_read": "Amendment of the First Schedule to the principal enactment",
-   "in": "section 8, marginal note",
-   "effect": "the word 'hereby' from the provision and the opening of the quoted substitution were read into the note."
-  }
- ]
+ "known_ocr_defects": [],
+ "certified_on_iso": "2024-04-01",
+ "commencement_note": "s.1(2): the provisions other than s.1 come into operation on a date the Minister appoints by Order in the Gazette (the 'appointed date'); s.1(3): s.1 on the date the Bill becomes an Act. No held source shows the appointing Order.",
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "against": "pdftotext -layout -enc UTF-8 (poppler, PowerShell) of data/legal-sources/library/amendments/18-2024-registration-of-documents-amendment-act.pdf, all six pages",
+  "what_changed": [
+   "Headings of ss.4, 7, 8, 9, 10 restored from the marginal notes.",
+   "Page furniture removed from ss.4, 8, 10.",
+   "s.7 and s.8 text completed/reordered as printed.",
+   "s.9 restructured; dropped words in 9(2) and 9(3) restored from the text layer.",
+   "Amendment instructions completed for ss.2-9."
+  ],
+  "note": "Re-running the parser writes data/processed/canonical-amendments/<instrument>.json without these corrections; this accepted copy is protected by provenance.hand_corrected. Rebuild the package with finalize_statute.py --package-only."
+ }
 }

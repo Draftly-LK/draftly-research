@@ -1,0 +1,148 @@
+{
+ "statute": "Land Settlement Ordinance",
+ "source_id": "SRC054",
+ "note": "Every source actually used to build the canonical trees in library/finalized/20-1931-land-settlement-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "20-1931-land-settlement-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 107984,
+   "sha256": "f9cfb53c9e0784242515584019db232695ecbb01aaacdaa603a945adcca1f11d",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/20-1931-land-settlement-ordinance.html",
+   "used_for": "parsed into 20-1931-land-settlement-ordinance-consolidated.json"
+  },
+  {
+   "file": "23-1996-land-settlement-ordinance-amendment.html",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 9719,
+   "sha256": "885a6d02815e7c973a04473aa03b2270537fcae9eb60116385154135da71a6cc",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/html/23-1996-land-settlement-amendment.html",
+   "used_for": "parsed into 23-1996-land-settlement-ordinance-amendment.json"
+  },
+  {
+   "file": "22-1955-administrative-districts.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 18987580,
+   "sha256": "068d0ab2ae144da440033f0b2ba0da3882f32abdb677883051ad6a00a8dcea45",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/22-1955-administrative-districts.pdf",
+   "used_for": "Government Press scan, 10 pp, no text layer; title page read: 'Administrative Districts Act, No. 22 of 1955', Date of Assent April 14, 1955. Omnibus Act in the HTML and PDF chain headers; already incorporated in both editions, nothing applied."
+  },
+  {
+   "file": "23-1996-land-settlement-ordinance-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 4934278,
+   "sha256": "26f194852e15ca15e798384933884b3c220a38708e3a8f76b98d3d30af3ecf57",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/incoming/23-1996-land-settlement-ordinance-amendment.pdf",
+   "used_for": "Government Printer scan, 3 pp, no text layer; title page read: 'LAND SETTLEMENT (AMENDMENT) ACT, No. 23 OF 1996 [Certified on 22nd August, 1996]'. Not parsed; the LankaLaw HTML of the same Act was parsed instead."
+  },
+  {
+   "file": "20-1931-land-settlement-ordinance.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 218947,
+   "sha256": "26f6edae1ff56e54241763f46547e1c55111a10b0dd991436d97afe3982d0710",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/20-1931-land-settlement-ordinance.pdf",
+   "used_for": "LankaLaw text-layer PDF of Cap. 299, 13 pp, chain header 'Ordinances Nos. 20 of 1931, 22 of 1932, 31 of 1933, Act No. 22 of 1955', head date '[23rd October, 1931.]'. Predates 23 of 1996 (no 5A, no 5(8)). All 32 pre-1996 section numbers located as section starts; marginal notes read for every section and used to correct the HTML headings of sections 4, 5 and 6; last provision of sections 6, 4, 11 and 24 and of 5(7) matched word for word."
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "20-1931-land-settlement-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; the page names no publisher of the underlying revision)",
+  "consolidation_cutoff": "Act No. 23 of 1996",
+  "cutoff_evidence": "HTML chain header: 'Ordinance Nos, 20 of 1931 22 of 1932 31 of 1933 Act Nos, 22 of 1955 23 of 1996'; inline markers '[ 2,23 of 1996]' on section 5(8) and '[ 3,23 of 1996]' on section 5A, both absent from the Cap. 299 PDF."
+ },
+ "alternate_edition": {
+  "file": "20-1931-land-settlement-ordinance.pdf",
+  "edition": "consolidated (revised edition, Cap. 299)",
+  "publisher": "LankaLaw copy; publisher of the revision not stated on the page",
+  "consolidation_cutoff": "Act No. 22 of 1955",
+  "cutoff_evidence": "Printed header: 'Ordinances Nos. 20 of 1931, 22 of 1932, 31 of 1933, Act No. 22 of 1955.' with head date '[23rd October, 1931.]'",
+  "why_not_baseline": "older cutoff than the HTML; lacks section 5A and section 5(8), both inserted by 23 of 1996; every other section number in the HTML is present in it"
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "22-1932",
+   "title": "not held; named only in both chain headers as '22 of 1932'",
+   "classification": "known_but_not_held",
+   "reason": "In the chain header of both held editions, so already folded into both; no copy on disk under 22-1932.",
+   "source_path": null
+  },
+  {
+   "instrument": "31-1933",
+   "title": "not held; named only in both chain headers as '31 of 1933'",
+   "classification": "known_but_not_held",
+   "reason": "In the chain header of both held editions, so already folded into both; no copy on disk under 31-1933.",
+   "source_path": null
+  },
+  {
+   "instrument": "22-1955",
+   "title": "Administrative Districts Act, No. 22 of 1955 (title page read from the scan; Date of Assent April 14, 1955)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Omnibus Act in both chain headers. Scan has no text layer; title page read; nothing applied because both editions already incorporate it.",
+   "source_path": "data/legal-sources/library/amendments/22-1955-administrative-districts.pdf"
+  },
+  {
+   "instrument": "23-1996",
+   "title": "Land Settlement (Amendment) Act, No. 23 of 1996 (title page read from the scan: 'LAND SETTLEMENT (AMENDMENT) ACT, No. 23 OF 1996 [Certified on 22nd August, 1996]')",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Last instrument in the HTML chain header; markers '[ 2,23 of 1996]' on 5(8) and '[ 3,23 of 1996]' on 5A. HTML copy parsed into 23-1996-land-settlement-ordinance-amendment.json (long title 'AN ACT TO AMEND THE LAND SETTLEMENT ORDINANCE, TO PROVIDE FOR REVISION OR CANCELLATION OF SETTLEMENT ORDERS ...'); its section 2 inserts 5(8) and section 3 inserts 5A, agreeing with the markers. Absent from the Cap. 299 PDF, which predates it. Nothing applied.",
+   "source_path": "data/legal-sources/library/amendments/html/23-1996-land-settlement-amendment.html"
+  }
+ ],
+ "sources_inspected": [
+  {
+   "path": "data/legal-sources/library/statutes/HTML/20-1931-land-settlement-ordinance.html",
+   "what": "LankaLaw consolidated HTML, chain to 23 of 1996, 33 sections, no 'Free/Promotional User' banner; selected baseline"
+  },
+  {
+   "path": "data/legal-sources/library/statutes/20-1931-land-settlement-ordinance.pdf",
+   "what": "LankaLaw text-layer PDF of Cap. 299, 13 pp, chain to 22 of 1955, 32 sections; verification source"
+  },
+  {
+   "path": "data/processed/canonical-statutes/SRC054-20-1931.json",
+   "what": "canonical tree rebuilt from the HTML on 2026-09-05 with build_canonical_statutes.py --source-id SRC054 (33 sections); copied into finalized/ and corrected by hand (see provenance)"
+  },
+  {
+   "path": "data/legal-sources/manifests/statute-section-index.json",
+   "what": "33 sections for SRC054, the same numbers as the HTML"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/22-1955-administrative-districts.pdf",
+   "what": "scan, 10 pp, no text layer; title page read"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/incoming/23-1996-land-settlement-ordinance-amendment.pdf",
+   "what": "scan, 3 pp, no text layer; title page read"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/html/23-1996-land-settlement-amendment.html",
+   "what": "LankaLaw HTML, no banner, parsed (4 sections; inserted 5A body present on the page but dropped by the parser)"
+  },
+  {
+   "path": "data/processed/canonical-amendments/23-1996.json",
+   "what": "parsed amending tree; `amends` empty, filled in the finalized copy"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/parsed/",
+   "what": "older parse artefacts for 23-1996; not used, per assignment"
+  },
+  {
+   "path": "data/legal-sources/library-markdown/statutes/land-settlement-ordinance/land-settlement-ordinance-consolidated.md",
+   "what": "registry local_markdown_path; not consulted"
+  }
+ ],
+ "statute_note": "Principal source: the LankaLaw consolidated HTML (chain header 'Ordinance Nos, 20 of 1931 22 of 1932 31 of 1933 Act Nos, 22 of 1955 23 of 1996'), parsed by build_canonical_statutes.py on 2026-09-05 into a 33-section tree with 9 definitions and 2 source footnotes; no schedules are transcribed although the First and Second Schedules are referenced. Other sources inspected: the LankaLaw text-layer PDF of Cap. 299 (chain to 22 of 1955, 32 sections), used as the verification source; the section index (33 sections, identical numbers); both held amending files, whose title pages were read from the scans; the 23 of 1996 HTML. Consolidation cutoff: Act No. 23 of 1996. Review performed: all 32 pre-1996 section numbers located as section starts in the print; every marginal note read against the HTML heading, with sections 4, 5 and 6 corrected to the print and the HTML reading kept in heading_raw; last provision of the five longest sections (5, 6, 4, 11, 24) read against the print, where 5's last provision 5(8) postdates the print and was read against the 23 of 1996 HTML instead and 5(7) matched word for word; validate_finalized_trees.py reports 0 errors and every remaining warning is documented in the trees. Not read word for word throughout. Amendment coverage: 4 instruments in the chain; 22 of 1932 and 31 of 1933 not held; 22 of 1955 (omnibus) and 23 of 1996 held and already incorporated in the baseline, so nothing was applied. Tree included for 23 of 1996 (HTML); its `amends` was filled from the long title. Structural weaknesses: section 5(7) is damaged identically in both editions ('no subsection settlement notice', 'at any lime', 'livery such declaration', 'reading to such notice') and is kept as held; the 23 of 1996 amending tree drops the quoted body of inserted section 5A, which is held only in the consolidated tree; the amending Act cites the principal as Chapter 468 while the PDF is headed Cap. 299. Section count discrepancy: index 33 = HTML 33; PDF 32 because it predates section 5A. Missing sources: Ordinances 22 of 1932 and 31 of 1933; a Government Printer text of the principal Ordinance; the schedules. Unresolved questions: the true wording of the damaged words in 5(7). Lawyer verification: unverified.",
+ "lawyer_verification": "unverified"
+}

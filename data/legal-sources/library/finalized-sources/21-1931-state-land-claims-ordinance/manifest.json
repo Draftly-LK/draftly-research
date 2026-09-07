@@ -1,0 +1,44 @@
+{
+ "statute": "State Land (Claims) Ordinance",
+ "source_id": "SRC057",
+ "note": "Every source actually used to build the canonical trees in library/finalized/21-1931-state-land-claims-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "21-1931-state-land-claims-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 15462,
+   "sha256": "f02c3a27bc70000a681cda1dadfd2cded57895222a3fbc6306242649514982fc",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/21-1931-state-lands-claims-ordinance.html",
+   "used_for": "parsed into 21-1931-state-land-claims-ordinance.json"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-5.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 12846618,
+   "sha256": "f0573b27f15490956edae2c5c6516f91cc5d91078c0c893427acd41137005a26",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-5.pdf",
+   "used_for": "1980 revised edition, Cap. 294 (Vol. XI pp. 341-342, PDF pp. 157-158); chain header 'Ordinance No. 21 of 1931.' only; prints 'STATE LAND (CLAIMS)', 'Lane Settlement Ordinance' in s.3(3), and the Schedule with the 20-to-40-acre row legible as '12 00'"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "21-1931-state-land-claims-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Ordinance No. 21 of 1931 (principal only; the chain names no amending instrument)",
+  "cutoff_evidence": "HTML chain header reads 'Ordinance Nos, 21 of 1931 [ 1 st July , 1931 ]'. The 1980 revised edition (Cap. 294, Vol. XI p. 341) prints 'Ordinance No. 21 of 1931.' and '[1 st July. 1931.]'. No inline marker on either page."
+ },
+ "amendment_reconciliation": [],
+ "source_conflicts": [
+  "Title: registry 'State Lands (Claims) Ordinance'; both held editions print 'STATE LAND (CLAIMS)' and s.1 cites the 'State Land (Claims) Ordinance'.",
+  "s.3(3): both the HTML and the 1980 compendium text layer read 'Lane Settlement Ordinance'; the tree records the Land Settlement Ordinance with the printed form in verbatim. Because the compendium text layer is itself OCR, this does not show whether the misprint is in the print or in its OCR.",
+  "Schedule: absent from the HTML (dead 'Schedules' link); the tree's Schedule was read by OCR from an FAO copy of the 1980 edition (URL, not held). The held compendium prints the same Schedule at Vol. XI p. 342 with the 20-to-40-acre row legible as '12 00', corroborating the tree's Rs. 12.00 reading of the FAO OCR string '1200'."
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML (data/legal-sources/library/statutes/HTML/21-1931-state-lands-claims-ordinance.html, identifier 1981Y11V294C-1), parsed and hand-corrected by the earlier worker (7 sections, 5 definitions, one Schedule). Other sources inspected: the 1980 revised edition compendium, Cap. 294 (statutes/legislative-enactments-1980-volume-5.pdf, Vol. XI pp. 341-342, PDF pp. 157-158, text layer; registry SRC057 local_pdf_path), read in full against the tree. The FAO PDF the tree's Schedule cites (faolex srl13616) is not on disk and was not read. Consolidation cutoff: the principal Ordinance alone. Review performed this pass: packaging pass. All seven sections, the five definitions (including the run-together 'claim'/'claimant' entry) and the Schedule read against the 1980 print. Amendment coverage: none in either chain header, in the RUBRIK entry or on disk; the table is empty. OCR or structural weaknesses: the Schedule rests on OCR. The tree flags one column-split reading ('1200' for Rs. 12.00) from the FAO copy; the held compendium text layer prints that row as '12 00', so the reading is corroborated by a second copy but still by OCR, and the compendium is now in the package as the held evidence. The other eight rows read the same in both copies. Missing sources: the FAO copy named in the tree's schedule source is not held. Unresolved questions: none beyond the registry title. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
+}

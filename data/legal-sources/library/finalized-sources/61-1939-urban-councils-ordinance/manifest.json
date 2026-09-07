@@ -10,18 +10,407 @@
    "edition": "consolidated",
    "bytes": 1489939,
    "sha256": "08ddf1414f3e106ce615cf85af37db3b5d6a728a566dbcf2a82e0d133b69fb31",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/statutes/61-1939-urban-councils-ordinance.pdf",
    "used_for": "parsed into 61-1939-urban-councils-ordinance-consolidated.json"
   },
   {
-   "file": "61-1939-urban-councils-ordinance.pdf",
+   "file": "21-2012-local-authorities-special-provisions.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 89350,
+   "sha256": "104544138b6b1632642848e462955130cf783f285c79fc467f1cdac6ff4415a7",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+   "used_for": "Local Authorities (Special Provisions) Act, No. 21 of 2012 (GP text layer); Part II ss.8-14 already incorporated in the 2024 PDF baseline (markers on ss.5, 12, 19, 159, 178A, 184, 249); read to resolve the operations"
+  },
+  {
+   "file": "35-2014-urban-councils-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 62839,
+   "sha256": "ee0000a1b822de5eda54dd47ca1434bc07ce6e2410b0072ad9e378427bac3bbe",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/35-2014-urban-councils-amendment.pdf",
+   "used_for": "Urban Councils (Amendment) Act, No. 35 of 2014 (GP text layer); s.2 (inserts s.178B) already incorporated in the baseline"
+  },
+  {
+   "file": "21-2017-urban-councils-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 67158,
+   "sha256": "8d5f2ed6acd5a98afa85830dfb414e5cd6619a9f36ec28b317b93a2568d26ae9",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/21-2017-urban-councils-amendment.pdf",
+   "used_for": "Urban Councils (Amendment) Act, No. 21 of 2017 (GP text layer); s.2 (replaces s.5) already incorporated in the baseline"
+  },
+  {
+   "file": "61-1939-urban-councils-ordinance.html",
    "role": "verification source, not parsed",
    "edition": "",
-   "bytes": 1489939,
-   "sha256": "08ddf1414f3e106ce615cf85af37db3b5d6a728a566dbcf2a82e0d133b69fb31",
-   "copied_from": "data/legal-sources/library/statutes/61-1939-urban-councils-ordinance.pdf",
-   "used_for": "5-lens subagent review, 2 rounds, converged"
+   "bytes": 782759,
+   "sha256": "1bd4ded3845df77b2ffb4edf45cd9b7222bda2be1aff059c15b89ddf691b664d",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/61-1939-urban-councils-ordinance.html",
+   "used_for": "LankaLaw HTML edition, chain header to 18 of 1987 (older than the PDF); read for s.13 (absent; marker [§ 121, Law 24 of 1977]), s.94 (no marginal note), s.173/174 (separate sections) and the pre-2012 wording"
   }
  ],
- "statute_note": "Re-parsed from the 2024 consolidated PDF, replacing an earlier tree built from a stale pre-2012 HTML edition. Amendment chain corrected from 26 to the full 48 instruments. Sections 6/15/17/18/20/21/22/246 confirmed genuinely absent. Six residues recorded, all content-preserving except one printed-source word-order slip. See canonical-overrides.json."
+ "statute_note": "Principal source: the LankaLaw consolidated-2024 PDF (library/statutes/61-1939-urban-councils-ordinance.pdf, text layer), chain header 'Ordinance Nos, 61 of 1939 ... Act Nos, ... 39 of 1986 18 of 1987 21 of 2012 35 of 2014 21 of 2017'; the accepted tree parsed from it (byte-identical to the canonical parse before this pass) was kept and finished by hand. Other sources inspected: the LankaLaw HTML edition (library/statutes/HTML/61-1939-urban-councils-ordinance.html, chain to 18 of 1987), older than the PDF and used as a verification source for ss.13, 94, 173/174 and the pre-2012 wording; the Government Printer PDFs of Acts 21/2012, 35/2014 and 21/2017; page 1 of 22 scanned amending Acts and the <title> of amending-Act HTML files, opened only to read their titles. Consolidation cutoff: Act No. 21 of 2017, from the printed chain header (page 1-2 of the PDF). Review performed: validate_finalized_trees (0 errors, 3 documented warnings); check_parse_coverage against the PDF (51599 words, 416 unmatched, 0.81%, made up of Part headings, chain-header numbers and crossheadings that the flat tree does not model); ss.12, 13, 14, 93, 94, 173, 174, 174A, 178B read against the poppler rendering and the HTML; the 2012-2017 inline markers on ss.5, 12, 19, 159, 178A, 178B, 184, 249 resolved against the Acts' own text and each substituted phrase confirmed present in the baseline; one read-only reviewer pass over the changed sections; the earlier two-round five-lens review stands for the rest. Amendment coverage: 49 rows: 48 chain instruments, all incorporated in the baseline, plus '61 of 1939', which the RUBRIK lists as an amendment and is the principal itself. 25 have their own text on disk (22 scans, 3 HTML-only); 23 are not held. 25/1952 is a Fisheries (Amendment) Act and 4/1975 and 24/1977 carry other Laws' titles; all three are in the chain header and are recorded as ambiguous held files. Structural weaknesses: parse_consolidated_pdf.py leaves the first item of many lists inside the parent's text (about 65 candidate locations; one, s.94(1), fixed here) and mis-nests s.36(hh); the body is flat (no Part or crossheading nodes); s.94 has no marginal note in either edition; the print shows a bare '13.' with no text; s.173's marginal note reads 'raise and taxes'; s.173(1) has a column-reorder ('borrow from the of Sri Lanka, or any person or persons or Government body'); the six Schedules are not printed. Missing sources: the 23 unheld instruments; the Schedules; the commencement Orders for Acts 21/2012 and 35/2014. Unresolved questions: the nature of s.13 (repealed by s.121 of Law 24 of 1977 on the HTML marker, but the Law's text is not held); whether ss.28, 33 and 90 still carry unsplit provisos (recorded earlier, not re-examined); the remaining first-item fusions. Lawyer verification: none. Everything here is pipeline output and remains lawyer-unverified.",
+ "pipeline_status": "needs_structural_review",
+ "baseline": {
+  "file": "61-1939-urban-councils-ordinance-consolidated.pdf",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher, consolidated to 2024); not stated on the PDF itself",
+  "consolidation_cutoff": "Act No. 21 of 2017",
+  "cutoff_evidence": "PDF chain header (pages 1-2), last entries: '39 of 1986 18 of 1987 21 of 2012 35 of 2014 21 of 2017'"
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "61-1939",
+   "title": "principal Ordinance (Urban Councils Ordinance, No. 61 of 1939)",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "RUBRIK artefact: the principal instrument listed as its own amendment because the chain header opens with it; not an amending instrument",
+   "source_path": null
+  },
+  {
+   "instrument": "14-1940",
+   "title": "not held; chain header: 'Ordinance No. 14 of 1940'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "3-1942",
+   "title": "not held; chain header: 'Ordinance No. 3 of 1942'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "16-1942",
+   "title": "not held; chain header: 'Ordinance No. 16 of 1942'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "51-1942",
+   "title": "not held; chain header: 'Ordinance No. 51 of 1942'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "5-1943",
+   "title": "not held; chain header: 'Ordinance No. 5 of 1943'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "37-1943",
+   "title": "not held; chain header: 'Ordinance No. 37 of 1943'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "36-1944",
+   "title": "not held; chain header: 'Ordinance No. 36 of 1944'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "37-1945",
+   "title": "not held; chain header: 'Ordinance No. 37 of 1945'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "31-1946",
+   "title": "not held; chain header: 'Ordinance No. 31 of 1946'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "37-1946",
+   "title": "not held; chain header: 'Ordinance No. 37 of 1946'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "53-1946",
+   "title": "not held; chain header: 'Ordinance No. 53 of 1946'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "57-1946",
+   "title": "not held; chain header: 'Ordinance No. 57 of 1946'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "9-1950",
+   "title": "not held; chain header: 'Act No. 9 of 1950'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "12-1951",
+   "title": "not held; chain header: 'Act No. 12 of 1951'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "39-1951",
+   "title": "not held; chain header: 'Act No. 39 of 1951'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "8-1952",
+   "title": "Local Authorities (Enlargement of Powers) Act, No. 8 of 1952",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus",
+   "source_path": "data/legal-sources/library/amendments/8-1952-local-authorities-enlargement-of-powers.pdf"
+  },
+  {
+   "instrument": "25-1952",
+   "title": "Fisheries (Amendment) Act, No. 25 of 1952",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; title names another statute; in the chain header, so treated as an omnibus instrument that also touched this Ordinance",
+   "source_path": "data/legal-sources/library/amendments/25-1952-fisheries-amendment.pdf",
+   "held_file_status": "ambiguous_or_unconfirmed"
+  },
+  {
+   "instrument": "38-1953",
+   "title": "Local Authorities (Term of Office) Act, No. 38 of 1953",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus",
+   "source_path": "data/legal-sources/library/amendments/38-1953-local-authorities-term-of-office.pdf"
+  },
+  {
+   "instrument": "22-1955",
+   "title": "Administrative Districts Act, No. 22 of 1955",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus",
+   "source_path": "data/legal-sources/library/amendments/22-1955-administrative-districts.pdf"
+  },
+  {
+   "instrument": "2-1957",
+   "title": "Local Authorities (Special Provisions) Act, No. 2 of 1957",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus",
+   "source_path": "data/legal-sources/library/amendments/2-1957-local-authorities-special-provisions.pdf"
+  },
+  {
+   "instrument": "14-1958",
+   "title": "Enlargement of Powers (Urban Councils, Town Councils and Village Committees) Act, No. 14 of 1958",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus, names Urban Councils",
+   "source_path": "data/legal-sources/library/amendments/14-1958-enlargement-of-powers-urban-councils-town-councils-and-village-committees.pdf"
+  },
+  {
+   "instrument": "7-1959",
+   "title": "Local Authorities (Special Provisions) Act, No. 7 of 1959",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus",
+   "source_path": "data/legal-sources/library/amendments/7-1959-local-authorities-special-provisions.pdf"
+  },
+  {
+   "instrument": "1-1961",
+   "title": "not held; chain header: 'Act No. 1 of 1961'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "9-1961",
+   "title": "Local Authorities (Stamp Duties on Proctors' Annual Certificates) Act, No. 9 of 1961",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus",
+   "source_path": "data/legal-sources/library/amendments/9-1961-local-authorities-stamp-duties-on-proctors-annual-certificates.pdf"
+  },
+  {
+   "instrument": "39-1961",
+   "title": "Local Authorities (Term of Office) Act, No. 39 of 1961",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus",
+   "source_path": "data/legal-sources/library/amendments/39-1961-local-authorities-term-of-office.pdf"
+  },
+  {
+   "instrument": "2-1967",
+   "title": "Local Authorities (Term of Office) Act, No. 2 of 1967",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus",
+   "source_path": "data/legal-sources/library/amendments/2-1967-local-authorities-terms-of-office.pdf"
+  },
+  {
+   "instrument": "42-1968",
+   "title": "Local Authorities (Special Provisions) Act, No. 42 of 1968",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus; HTML copy also held",
+   "source_path": "data/legal-sources/library/amendments/42-1968-local-authorities-special-provisions.pdf"
+  },
+  {
+   "instrument": "4-1969",
+   "title": "Local Authorities (Special Provisions) Act, No. 4 of 1969",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus; HTML copy also held",
+   "source_path": "data/legal-sources/library/amendments/4-1969-local-authorities-special-provisions.pdf"
+  },
+  {
+   "instrument": "48-1971",
+   "title": "Local Authorities (Special Provisions) Act, No. 48 of 1971",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; omnibus; HTML copy also held",
+   "source_path": "data/legal-sources/library/amendments/48-1971-local-authorities-special-provisions.pdf"
+  },
+  {
+   "instrument": "4-1975",
+   "title": "Naming Of Streets And The Control Of The Erection Of Monuments Law",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "LankaLaw HTML; title read from the page <title>; title names another Law; in the chain header",
+   "source_path": "data/legal-sources/library/amendments/html/4-1975-naming-of-streets-and-the-control-of-the-erection-of-monuments-law.html",
+   "held_file_status": "ambiguous_or_unconfirmed"
+  },
+  {
+   "instrument": "18-1977",
+   "title": "Municipal Councils And Urban Councils (Amendment) Law",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "LankaLaw HTML; title read from the page <title>",
+   "source_path": "data/legal-sources/library/amendments/html/18-1977-municipal-councils-and-urban-councils-amendment-law.html"
+  },
+  {
+   "instrument": "24-1977",
+   "title": "Local authorities elections (special provisions) Law",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "LankaLaw HTML; title read from the page <title>; title does not name this Ordinance; in the chain header and cited by many inline markers",
+   "source_path": "data/legal-sources/library/amendments/html/24-1977-local-authorities-elections-special-provisions-law.html",
+   "held_file_status": "ambiguous_or_unconfirmed"
+  },
+  {
+   "instrument": "13-1979",
+   "title": "not held; chain header: 'Act No. 13 of 1979'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "42-1979",
+   "title": "not held; chain header: 'Act No. 42 of 1979'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "57-1979",
+   "title": "not held; chain header: 'Act No. 57 of 1979'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "10-1981",
+   "title": "Municipal Councils and Urban Councils (Amendment) Act, No. 10 of 1981",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; HTML copy also held",
+   "source_path": "data/legal-sources/library/amendments/10-1981-municipal-councils-and-urban-councils-amendment.pdf"
+  },
+  {
+   "instrument": "61-1981",
+   "title": "not held; chain header: 'Act No. 61 of 1981'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "5-1983",
+   "title": "Municipal Councils and Urban Councils (Amendment) Act, No. 5 of 1983",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; HTML copy also held",
+   "source_path": "data/legal-sources/library/amendments/5-1983-municipal-councils-and-urban-councils-amendment.pdf"
+  },
+  {
+   "instrument": "13-1983",
+   "title": "not held; chain header: 'Act No. 13 of 1983'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "31-1983",
+   "title": "not held; chain header: 'Act No. 31 of 1983'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "48-1983",
+   "title": "not held; chain header: 'Act No. 48 of 1983'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header; own text not held on disk",
+   "source_path": null
+  },
+  {
+   "instrument": "48-1984",
+   "title": "Urban Councils (Amendment) Act, No. 48 of 1984",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; HTML copy also held",
+   "source_path": "data/legal-sources/library/amendments/48-1984-urban-councils-amendment.pdf"
+  },
+  {
+   "instrument": "20-1985",
+   "title": "Municipal Councils and Urban Councils (Amendment) Act, No. 20 of 1985",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; HTML copy also held",
+   "source_path": "data/legal-sources/library/amendments/20-1985-municipal-councils-and-urban-councils-amendment.pdf"
+  },
+  {
+   "instrument": "39-1986",
+   "title": "Municipal Councils and Urban Councils (Amendment) Act, No. 39 of 1986",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; HTML copy also held",
+   "source_path": "data/legal-sources/library/amendments/39-1986-municipal-councils-and-urban-councils-amendment.pdf"
+  },
+  {
+   "instrument": "18-1987",
+   "title": "Urban Councils (Amendment) Act, No. 18 of 1987",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "scan without text layer; title read from a rendering of page 1; HTML copy also held; the older HTML edition's cutoff",
+   "source_path": "data/legal-sources/library/amendments/18-1987-urban-councils-amendment.pdf"
+  },
+  {
+   "instrument": "21-2012",
+   "title": "Local Authorities (Special Provisions) Act, No. 21 of 2012",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Government Printer PDF with text layer; Part II (ss.8-14) already in the 2024 PDF baseline (markers on ss.5, 12, 19, 159, 178A, 184, 249); read to set each marker's operation; commencement by Ministerial Order, date unknown",
+   "source_path": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf"
+  },
+  {
+   "instrument": "35-2014",
+   "title": "Urban Councils (Amendment) Act, No. 35 of 2014",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Government Printer PDF with text layer; s.2 (new s.178B) already in the baseline (marker [2, 35 of 2014]); commencement by Ministerial Order, date unknown",
+   "source_path": "data/legal-sources/library/amendments/35-2014-urban-councils-amendment.pdf"
+  },
+  {
+   "instrument": "21-2017",
+   "title": "Urban Councils (Amendment) Act, No. 21 of 2017",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Government Printer PDF with text layer; s.2 (replaces s.5) already in the baseline (marker [2, 21 of 2017]); the baseline's cutoff",
+   "source_path": "data/legal-sources/library/amendments/21-2017-urban-councils-amendment.pdf"
+  }
+ ],
+ "lawyer_verification": "unverified"
 }

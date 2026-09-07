@@ -27,7 +27,7 @@
    "year": 1875
   }
  ],
- "verification_status": "structurally_verified",
+ "verification_status": "needs_structural_review",
  "content_completeness": "incomplete: the section 5 form of certificate is not held",
  "amendment_history_status": "listed_in_source_header",
  "editorial_notes": [],
@@ -64,6 +64,12 @@
   {
    "kind": "corrections-are-single-source",
    "detail": "The section 3 body correction and the source_location rest on the parsed page alone. The title and commencement are corroborated by srilankalaw."
+  },
+  {
+   "code": "edition_wording_conflict_ss2_4_5",
+   "issue": "HTML reads 'District Judge or Commissioner of a Court of Requests' (s.2), 'Minister of Justice' (s.4), 'Judge, Commissioner, or Justice' (s.5); the 1980 revised edition (legislative-enactments-1980-volume-2.pdf pp. 215-216, Cap. 85) reads 'District Judge or Judge of a Primary Court', 'Minister in charge of the subject of Justice', 'Judge or Justice'. Two held editions disagree; the HTML's dangling asterisks sit where the newer wording is. Tree keeps the HTML reading.",
+   "status": "unresolved",
+   "set_by": "coordinator 2026-09-05 from the packaging worker handoff"
   }
  ],
  "source_location": {
@@ -197,5 +203,12 @@
    "type": "reference_dedupe",
    "note": "Prevention of Frauds Ordinance s.2 and Registration of Documents Ordinance s.4 each had a redundant bare enactment reference beside them."
   }
- ]
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "what_changed": [
+   "2026-09-05 coordinator: verification_status structurally_verified -> needs_structural_review to match the package manifest (edition wording conflict ss.2, 4, 5); quality flag added. No text changed."
+  ],
+  "against": "legislative-enactments-1980-volume-2.pdf pp. 215-216 (read by the packaging worker)"
+ }
 }

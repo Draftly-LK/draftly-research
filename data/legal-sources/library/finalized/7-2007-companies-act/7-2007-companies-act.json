@@ -20,17 +20,28 @@
   "local_path": "data/legal-sources/library/statutes/HTML/7-2007-companies-act.html",
   "caveat": "private republisher, not the Government Printer"
  },
- "amendments": [],
+ "amendments": [
+  {
+   "type": "Act",
+   "number": 13,
+   "year": 2019
+  }
+ ],
  "verification_status": "structurally_verified",
  "content_completeness": "",
- "amendment_history_status": "none_listed_in_source_header",
+ "amendment_history_status": "none_listed_in_source_header; Companies (Amendment) Act, No. 13 of 2019 applied from its Government Printer text on 2026-09-05 (see applied_amendments_log)",
  "editorial_notes": [],
  "omitted_provisions": [],
  "overrides_applied": {
   "checked_against": "https://lankalaw.net/wp-content/uploads/2025/02/2007Y0V0C7A.html",
   "note": "Structure reviewed against the source page: 23 Parts, 106 crossheadings, 3 subheadings, 534 sections and 13 referenced schedules, all confirmed. Section 1 sits outside Part I in the source, so it is a top-level node."
  },
- "quality_flags": [],
+ "quality_flags": [
+  {
+   "kind": "repealed-subsection-left-empty",
+   "detail": "Section 9 subsection (1) was repealed by Act No. 13 of 2019, s.3(1). The node is kept, emptied, so the numbering of section 9 still reads (1)-(3) as the amended Act does; the repealed wording is under text_before_amendment."
+  }
+ ],
  "source_location": {},
  "alternate_edition_variants": [],
  "schedules_referenced": [
@@ -315,18 +326,86 @@
           {
            "type": "paragraph",
            "number": "b",
-           "raw_text": "(b) assign a unique number to that company as its company number; and",
-           "text": "assign a unique number to that company as its company number; and",
-           "amendment_events": [],
-           "cross_references": []
+           "raw_text": "(b) assign a unique number to that company as its company number;",
+           "text": "assign a unique number to that company as its company number;",
+           "amendment_events": [
+            {
+             "instrument": "13-2019",
+             "amending_act": "Act No. 13 of 2019",
+             "amending_section": "2",
+             "operation": "substitute",
+             "applied": true,
+             "applied_on": "2026-09-05",
+             "classification": "applied_from_held_source"
+            }
+           ],
+           "cross_references": [],
+           "text_before_amendment": "assign a unique number to that company as its company number; and"
           },
           {
            "type": "paragraph",
            "number": "c",
-           "raw_text": "(c) issue a certificate of incorporation in the prescribed form to the applicant company.",
-           "text": "issue a certificate of incorporation in the prescribed form to the applicant company.",
-           "amendment_events": [],
-           "cross_references": []
+           "raw_text": "(c) issue a certificate of incorporation in the prescribed form to the applicant company; and",
+           "text": "issue a certificate of incorporation in the prescribed form to the applicant company; and",
+           "amendment_events": [
+            {
+             "instrument": "13-2019",
+             "amending_act": "Act No. 13 of 2019",
+             "amending_section": "2",
+             "operation": "substitute",
+             "applied": true,
+             "applied_on": "2026-09-05",
+             "classification": "applied_from_held_source"
+            }
+           ],
+           "cross_references": [],
+           "text_before_amendment": "issue a certificate of incorporation in the prescribed form to the applicant company."
+          },
+          {
+           "type": "paragraph",
+           "number": "d",
+           "raw_text": "(d) notify the general public, within sixty working days of the incorporation of a company, by a notice published in a daily newspaper which has circulation in Sinhala, English and Tamil languages which shall specify –",
+           "text": "notify the general public, within sixty working days of the incorporation of a company, by a notice published in a daily newspaper which has circulation in Sinhala, English and Tamil languages which shall specify –",
+           "amendment_events": [
+            {
+             "instrument": "13-2019",
+             "amending_act": "Act No. 13 of 2019",
+             "amending_section": "2",
+             "operation": "substitute",
+             "applied": true,
+             "applied_on": "2026-09-05",
+             "classification": "applied_from_held_source",
+             "note": "no paragraph (d) existed before; it arrives as part of the matter substituted for (b) and (c)"
+            }
+           ],
+           "cross_references": [],
+           "children": [
+            {
+             "type": "subparagraph",
+             "number": "i",
+             "raw_text": "(i) name of the company;",
+             "text": "name of the company;",
+             "amendment_events": [],
+             "cross_references": []
+            },
+            {
+             "type": "subparagraph",
+             "number": "ii",
+             "raw_text": "(ii) the company registration number; and",
+             "text": "the company registration number; and",
+             "amendment_events": [],
+             "cross_references": []
+            },
+            {
+             "type": "subparagraph",
+             "number": "iii",
+             "raw_text": "(iii) the address of the registered office of the company.",
+             "text": "the address of the registered office of the company.",
+             "amendment_events": [],
+             "cross_references": []
+            }
+           ],
+           "text_before_amendment": ""
           }
          ]
         },
@@ -810,11 +889,24 @@
         {
          "type": "subsection",
          "number": "1",
-         "raw_text": "(1) A company shall within thirty working days of its incorporation under this Act, give public notice of its incorporation, specifying -",
-         "text": "A company shall within thirty working days of its incorporation under this Act, give public notice of its incorporation, specifying -",
-         "amendment_events": [],
+         "raw_text": "",
+         "text": "",
+         "amendment_events": [
+          {
+           "instrument": "13-2019",
+           "amending_act": "Act No. 13 of 2019",
+           "amending_section": "3(1)",
+           "operation": "repeal",
+           "applied": true,
+           "applied_on": "2026-09-05",
+           "classification": "applied_from_held_source"
+          }
+         ],
          "cross_references": [],
-         "children": [
+         "children": [],
+         "text_before_amendment": "A company shall within thirty working days of its incorporation under this Act, give public notice of its incorporation, specifying -",
+         "raw_text_before_amendment": "(1) A company shall within thirty working days of its incorporation under this Act, give public notice of its incorporation, specifying -",
+         "children_before_amendment": [
           {
            "type": "paragraph",
            "number": "a",
@@ -885,16 +977,26 @@
         {
          "type": "subsection",
          "number": "3",
-         "raw_text": "(3) Where a company fails to publish the notice required under subsection (1) or (2):-",
-         "text": "Where a company fails to publish the notice required under subsection (1) or (2):-",
-         "amendment_events": [],
+         "raw_text": "(3) Where a company fails to publish the notice required under subsection (2):-",
+         "text": "Where a company fails to publish the notice required under subsection (2):-",
+         "amendment_events": [
+          {
+           "instrument": "13-2019",
+           "amending_act": "Act No. 13 of 2019",
+           "amending_section": "3(2)",
+           "operation": "substitute_words",
+           "applied": true,
+           "applied_on": "2026-09-05",
+           "classification": "applied_from_held_source"
+          }
+         ],
          "cross_references": [
           {
            "kind": "internal",
            "target_document": "Companies Act",
            "target_section": "9",
-           "target_subsection": "1",
-           "verbatim": "under subsection (1)"
+           "target_subsection": "2",
+           "verbatim": "under subsection (2)"
           }
          ],
          "children": [
@@ -914,7 +1016,9 @@
            "amendment_events": [],
            "cross_references": []
           }
-         ]
+         ],
+         "text_before_amendment": "Where a company fails to publish the notice required under subsection (1) or (2):-",
+         "raw_text_before_amendment": "(3) Where a company fails to publish the notice required under subsection (1) or (2):-"
         }
        ]
       },
@@ -960,18 +1064,56 @@
           {
            "type": "paragraph",
            "number": "b",
-           "raw_text": "(b) a request is made to the Registrar to do so within three months of the company giving public notice of the name objected to under section 9, by another company or by a registered overseas company, where -",
-           "text": "a request is made to the Registrar to do so within three months of the company giving public notice of the name objected to under section 9, by another company or by a registered overseas company, where -",
-           "amendment_events": [],
+           "raw_text": "(b) a request is made to the Registrar to do so within three months of public notice of the name being given under section 5 (1) (d) and section 9 (2) by another company or by a registered overseas company, where –",
+           "text": "a request is made to the Registrar to do so within three months of public notice of the name being given under section 5 (1) (d) and section 9 (2) by another company or by a registered overseas company, where –",
+           "amendment_events": [
+            {
+             "instrument": "13-2019",
+             "amending_act": "Act No. 13 of 2019",
+             "amending_section": "4",
+             "operation": "substitute",
+             "applied": true,
+             "applied_on": "2026-09-05",
+             "classification": "applied_from_held_source"
+            }
+           ],
            "cross_references": [
             {
              "kind": "internal",
              "target_document": "Companies Act",
+             "target_section": "5",
+             "target_subsection": "1",
+             "target_paragraph": "d",
+             "verbatim": "section 5 (1) (d)"
+            },
+            {
+             "kind": "internal",
+             "target_document": "Companies Act",
              "target_section": "9",
-             "verbatim": "section 9"
+             "target_subsection": "2",
+             "verbatim": "section 9 (2)"
             }
            ],
            "children": [
+            {
+             "type": "subparagraph",
+             "number": "i",
+             "raw_text": "(i) the name of the first mentioned company is so similar to the name of the requesting company that it is likely to cause confusion; and",
+             "text": "the name of the first mentioned company is so similar to the name of the requesting company that it is likely to cause confusion; and",
+             "amendment_events": [],
+             "cross_references": []
+            },
+            {
+             "type": "subparagraph",
+             "number": "ii",
+             "raw_text": "(ii) the requesting company was registered with its current name before the first mentioned company was registered with the name objected to; or",
+             "text": "the requesting company was registered with its current name before the first mentioned company was registered with the name objected to; or",
+             "amendment_events": [],
+             "cross_references": []
+            }
+           ],
+           "text_before_amendment": "a request is made to the Registrar to do so within three months of the company giving public notice of the name objected to under section 9, by another company or by a registered overseas company, where -",
+           "children_before_amendment": [
             {
              "type": "subparagraph",
              "number": "i",
@@ -41761,5 +41903,55 @@
     }
    ]
   }
- ]
+ ],
+ "applied_amendments_log": [
+  {
+   "instrument": "13-2019",
+   "amending_section": "2",
+   "target": "5(1)(b)-(c)",
+   "operation": "substitute",
+   "status": "applied",
+   "reason": "",
+   "detail": "paragraphs (b) and (c) replaced by new (b), (c) and (d)(i)-(iii); the baseline wording of (b) and (c) matched the Act's premise"
+  },
+  {
+   "instrument": "13-2019",
+   "amending_section": "3(1)",
+   "target": "9(1)",
+   "operation": "repeal",
+   "status": "applied",
+   "reason": "",
+   "detail": "subsection (1) emptied; its text and paragraphs (a)-(b) kept under *_before_amendment"
+  },
+  {
+   "instrument": "13-2019",
+   "amending_section": "3(2)",
+   "target": "9(3)",
+   "operation": "substitute_words",
+   "status": "applied",
+   "reason": "",
+   "detail": "'subsection (1) or (2)' -> 'subsection (2)'; the internal reference to 9(1) re-pointed to 9(2)"
+  },
+  {
+   "instrument": "13-2019",
+   "amending_section": "4",
+   "target": "10(1)(b)",
+   "operation": "substitute",
+   "status": "applied",
+   "reason": "",
+   "detail": "paragraph (b) with (i)-(ii) replaced; the former paragraph kept under *_before_amendment"
+  }
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "against": "pdftotext -layout (poppler, PowerShell) of data/legal-sources/library/amendments/companies-act-amendments-english.pdf",
+  "what_changed": [
+   "s.5(1): paragraphs (b) and (c) replaced by the (b), (c), (d)(i)-(iii) enacted by Act 13 of 2019 s.2; former wording kept in text_before_amendment",
+   "s.9(1): repealed by Act 13 of 2019 s.3(1); text and paragraphs kept in text_before_amendment / children_before_amendment",
+   "s.9(3): 'subsection (1) or (2)' -> 'subsection (2)' per Act 13 of 2019 s.3(2)",
+   "s.10(1)(b): replaced by the paragraph enacted by Act 13 of 2019 s.4; former paragraph kept in text_before_amendment / children_before_amendment",
+   "amendments, amendment_history_status and applied_amendments_log added; nothing else in the 534-section tree was touched"
+  ]
+ }
 }

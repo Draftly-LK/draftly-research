@@ -1,8 +1,8 @@
 {
  "source_id": "SRC035",
  "title": "Western Province Financial Statute",
- "long_title": "A STATUTE TO PROVIDE FOR THE IMPOSITION AND COLLECTION OF TAXES AND FEES FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO is Inconsistant with certain Provision of the Turnover Tax This Statute.",
- "long_title_raw": "",
+ "long_title": "A STATUTE TO PROVIDE FOR THE IMPOSITION AND COLLECTION OF TAXES AND FEES FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO",
+ "long_title_raw": "A STATUTE TO PROVIDE FOR THE IMPOSITION AND COLLECTION OF TAXES AND FEES FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO is Inconsistant with certain Provision of the Turnover Tax This Statute.",
  "citation": {
   "type": "Statute",
   "number": 6,
@@ -19,7 +19,7 @@
   "caveat": "the registry PDF is a scan with no text layer, so this tree is parsed from an OCR reading and carries OCR errors"
  },
  "amendments": [],
- "verification_status": "unverified",
+ "verification_status": "needs_structural_review",
  "quality_flags": [
   {
    "code": "no_fixed_commencement_date",
@@ -29,7 +29,8 @@
   {
    "code": "duplicate_section_number_43",
    "detail": "Two distinct provisions both carry the base number 43 in the source: '43. How instruments effecting exchange are to be stamped' and '43.(a) Where an instrument relates to a transfer of an immovable property...', the latter likely an inserted provision using a '(a)' suffix instead of '43A'. Recorded as two separate section nodes both numbered '43' rather than merged or renumbered by inference.",
-   "status": "source_numbering_convention"
+   "status": "resolved_from_print",
+   "resolution": "scan page 33 prints the second provision as '43.(a)'; renumbered 43(a), see corrections"
   },
   {
    "code": "ocr_word_order_scramble",
@@ -38,7 +39,8 @@
     "possibly_others"
    ],
    "issue": "Section 1's text reads 'This Statute may be cited as the Financial Short title and Statute ofthe Western Province No. 06 of 1990 into operation and its provisions shall come on such date...' -- the marginal note fragments ('Short title and', 'of.', 'into operation') are interleaved into the body sentence rather than sitting beside it, a column-reading-order artifact of the OCR pass on this specific scan. All the words are present and none invented; only their order is disturbed. Not hand-corrected given the scale a full read-through against the original scan would take; flagged here so a reader knows to expect it.",
-   "status": "known_ocr_limitation"
+   "status": "partly_corrected",
+   "resolution": "s.1 and s.43 corrected against the scan; the rest of the 84 pages were not proof-read and the same artefact should be expected elsewhere"
   },
   {
    "code": "external_ref_nested_parenthetical",
@@ -51,18 +53,55 @@
   {
    "code": "long_title_ocr_tail_noise",
    "detail": "long_title correctly starts 'A STATUTE TO PROVIDE FOR THE IMPOSITION AND COLLECTION OF TAXES AND FEES FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO' but runs on into an OCR-interleaved marginal note about this Statute's relationship to other tax Acts before the real stop point (the enacting formula) is reached. The genuine title is the first sentence; everything after 'INCIDENTAL THERETO' is the same column-interleaving artifact as the ocr_word_order_scramble note above.",
-   "status": "known_ocr_limitation"
+   "status": "resolved_from_print",
+   "resolution": "long_title cut at the printed title; the trailing statement recorded in editorial_notes"
+  },
+  {
+   "code": "no_marginal_note_in_print",
+   "sections_affected": [
+    "9",
+    "15",
+    "49",
+    "63",
+    "66",
+    "69",
+    "83",
+    "86",
+    "87",
+    "88",
+    "90",
+    "105"
+   ],
+   "issue": "Twelve sections carry no marginal note in the reprint; the Table of Sections prints '- do -' for each. Confirmed on rendered scan pages 13, 18, 36, 43, 45, 47, 57, 62, 63, 67 and 77. Headings left empty.",
+   "status": "documented_source_layout"
+  },
+  {
+   "code": "single_ocr_reading_partially_proofread",
+   "issue": "The whole body rests on one offline doctr reading of a scan with no text layer. Only scan pages 1-3, 9, 13, 18, 33, 36, 43, 45, 47, 57, 62, 63, 67 and 77 (16 of 84) were read against the image in this pass; every correction found is listed under corrections. The remaining 68 pages are unproofed.",
+   "status": "needs_structural_review"
+  },
+  {
+   "code": "post_baseline_amendments_held_not_applied",
+   "issue": "The reprint incorporates amendments to No. 4 of 1992 (cover). Held but not applied: Financial (Amendment) Statute of the Western Province No. 04 of 2014 (Gazette 1894/15; substitutes the long title, inserts Chapter XXIX a, ss.97a-97b; names an unheld 'Statute No. 02 of 2010') and Western Provincial Finance (Amendment) Statute No. 01 of 2016 (Gazette 1986/30; repeals and replaces a 'Section 102(a)' this baseline does not contain). Neither the 1992 amendments nor Statute No. 2 of 2010 are held.",
+   "status": "held_but_not_applied"
   }
  ],
- "editorial_notes": [],
- "checked_against": "data/legal-sources/library/statutes/ocr/6-1990-western-province-financial-statute.txt (offline doctr OCR of the registry's scanned Government Printer PDF, which has no text layer)",
+ "editorial_notes": [
+  {
+   "code": "printed_statement_below_long_title",
+   "location": "scan page 9 (printed page 1), between the long title and the enacting formula",
+   "text_as_printed": "This Statute is Inconsistant with certain Provision of the Turnover Tax Act No. 69 of 1981 as amended, The Stamp Duty Act, No. 43 of 1982 as amended, the Excise Ordinance as amended, the Municipal Councils Ordinance, as amended, the Urban Councils Ordinance, as amended, and the Pradeshiya Sabha Act, No. 15 of 1987.",
+   "note": "Printed full-width in bold beneath the long title, not as a marginal note. Transcribed as printed, including 'Inconsistant' and 'Provision'. The Financial (Amendment) Statute of the Western Province No. 04 of 2014, s.2, treats this statement as the statute's 'long title' and substitutes a new one; that instrument post-dates the 1997 reprint and is held but not applied."
+  }
+ ],
+ "checked_against": "data/legal-sources/library/statutes/ocr/6-1990-western-province-financial-statute.txt (offline doctr OCR of the registry's scanned Government Printer PDF, which has no text layer); rendered scan pages 1-3, 9, 13, 18, 33, 36, 43, 45, 47, 57, 62, 63, 67, 77 of the registry PDF (this pass)",
  "schedules_referenced": [],
  "schedules": [],
  "body": [
   {
    "type": "section",
    "number": "1",
-   "heading": "of",
+   "heading": "Short title and date of.",
    "raw_text": "1. (1) This Statute may be cited as the Financial Short title and Statute ofthe Western Province No. 06 of 1990 into operation and its provisions shall come on such date or dates as may be appointed by the Minister by Order published in the Gazette.",
    "text": "",
    "amendment_events": [],
@@ -70,34 +109,38 @@
    "children": [
     {
      "type": "subsection",
-     "number": "1",
+     "number": "i",
      "raw_text": "(1) This Statute may be cited as the Financial Short title and Statute ofthe Western Province No. 06 of 1990 into operation and its provisions shall come on such date or dates as may be appointed by the Minister by Order published in the Gazette.",
-     "text": "This Statute may be cited as the Financial Short title and Statute ofthe Western Province No. 06 of 1990 into operation and its provisions shall come on such date or dates as may be appointed by the Minister by Order published in the Gazette.",
+     "text": "This Statute may be cited as the Financial Statute of the Western Province No. 06 of 1990 and its provisions shall come into operation on such date or dates as may be appointed by the Minister by Order published in the Gazette.",
      "amendment_events": [],
      "cross_references": [],
-     "children": [
-      {
-       "type": "subparagraph",
-       "number": "ii",
-       "raw_text": "(ii) The Minister may appoint different dates in respect of different parts. Whenever Part 1 or 2, is brought into operation, Parts 3 and 8 shall be deemed to have come into operation from the date appointed on which the first of the aforesaid Part 1, or 2 is brought into operation and whenever Part 4, 5, 6 or 7 is brought into operation Part 8 if it is not already in operation shall be deemed to come into operation from the date appointed on which the first of the aforesaid part 4, 5, 6 or 7 is brought into operation.",
-       "text": "The Minister may appoint different dates in respect of different parts. Whenever Part 1 or 2, is brought into operation, Parts 3 and 8 shall be deemed to have come into operation from the date appointed on which the first of the aforesaid Part 1, or 2 is brought into operation and whenever Part 4, 5, 6 or 7 is brought into operation Part 8 if it is not already in operation shall be deemed to come into operation from the date appointed on which the first of the aforesaid part 4, 5, 6 or 7 is brought into operation.",
-       "amendment_events": [],
-       "cross_references": [],
-       "children": []
-      }
-     ]
+     "children": []
+    },
+    {
+     "type": "subsection",
+     "number": "ii",
+     "raw_text": "(ii) The Minister may appoint different dates in respect of different parts. Whenever Part 1 or 2, is brought into operation, Parts 3 and 8 shall be deemed to have come into operation from the date appointed on which the first of the aforesaid Part 1, or 2 is brought into operation and whenever Part 4, 5, 6 or 7 is brought into operation Part 8 if it is not already in operation shall be deemed to come into operation from the date appointed on which the first of the aforesaid part 4, 5, 6 or 7 is brought into operation.",
+     "text": "The Minister may appoint different dates in respect of different parts. Whenever Part 1 or 2, is brought into operation, Parts 3 and 8 shall be deemed to have come into operation from the date appointed on which the first of the aforesaid Part 1, or 2 is brought into operation and whenever Part 4, 5, 6 or 7 is brought into operation Part 8 if it is not already in operation shall be deemed to come into operation from the date appointed on which the first of the aforesaid part 4, 5, 6 or 7 is brought into operation.",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": []
     }
-   ]
+   ],
+   "heading_raw": "of",
+   "heading_source": "marginal note, scan page 9",
+   "numbering_note": "the print numbers the two subsections (i) and (ii), lower-case roman"
   },
   {
    "type": "section",
    "number": "2",
-   "heading": "Appointment officers",
+   "heading": "Appointment of officers.",
    "raw_text": "2. For the purpose of this Statute, there shall be of. appointed a Provincial Commissioner of Revenue Provincial Deputy and such number of Commissioners, Provincial Assessors and such other officers as may be necessary. IMPOSITION OF TURNOVER TAX",
    "text": "For the purpose of this Statute, there shall be of. appointed a Provincial Commissioner of Revenue Provincial Deputy and such number of Commissioners, Provincial Assessors and such other officers as may be necessary. IMPOSITION OF TURNOVER TAX",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "Appointment officers",
+   "heading_source": "marginal note, scan page 9 (printed 'Appointment of.' / 'officers.')"
   },
   {
    "type": "section",
@@ -357,7 +400,8 @@
    "text": "Where an article is, under section (8), declared to be an excepted article in respect of any class or description of business, no turnover tax shall be payable in respect ofthe sum realized by the sale of such article.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_note": "no marginal note printed beside this section on scan page 13; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -802,7 +846,8 @@
      "verbatim": "section 11"
     }
    ],
-   "children": []
+   "children": [],
+   "heading_note": "no marginal note printed beside this section on scan page 18; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -2019,9 +2064,9 @@
   {
    "type": "section",
    "number": "43",
-   "heading": "How instruments effecting exchange to be stamped. are",
+   "heading": "How instruments effecting exchange are to be stamped.",
    "raw_text": "43. Where there are several instruments of conveyance or transfer for effecting an exchange of property, the instrument first with the stamp duty, executed shall be stamped if any, with which such exchange is chargeable, and all the other instruments shall, be stamped with a stamp duty of five rupees; Provided, however that the preceding provisions ofthis section shall not apply to any such subsequent instrument executed after a period ofthree months from the date on which the first instrument was executed.",
-   "text": "Where there are several instruments of conveyance or transfer for effecting an exchange of property, the instrument first with the stamp duty, executed shall be stamped if any, with which such exchange is chargeable, and all the other instruments shall, be stamped with a stamp duty of five rupees;",
+   "text": "Where there are several instruments of conveyance or transfer for effecting an exchange of property, the instrument first executed shall be stamped with the stamp duty, if any, with which such exchange is chargeable, and all the other instruments shall, be stamped with a stamp duty of five rupees;",
    "amendment_events": [],
    "cross_references": [],
    "children": [
@@ -2034,27 +2079,23 @@
      "amendment_events": [],
      "cross_references": []
     }
-   ]
+   ],
+   "heading_raw": "How instruments effecting exchange to be stamped. are",
+   "heading_source": "marginal note, scan page 33"
   },
   {
    "type": "section",
-   "number": "43",
-   "heading": "e",
+   "number": "43(a)",
+   "heading": "",
    "raw_text": "43.(a) Where an instrument relates to a transfer of an immovable property or immovable proper- ties which is or are situated in the Western Province and in any one or more of the provinces of Sri Lanka, such in strument shall be and be deemed to be duly stamped in respect of the land or lands situated in the Western Province if stamped either with the stamp duty chargeable thereon and in the manner provided in this Statute or with the stamp duty chargeable thereon and in the manner provided in the Financial Statute of any other Provincial Council of Sri Lanka within whose jurisdiction such immovable property or any ofthe immovable properties to which such instrument relates may also be situated.\"",
-   "text": "",
+   "text": "Where an instrument relates to a transfer of an immovable property or immovable properties which is or are situated in the Western Province and in any one or more of the provinces of Sri Lanka, such instrument shall be and be deemed to be duly stamped in respect of the land or lands situated in the Western Province if stamped either with the stamp duty chargeable thereon and in the manner provided in this Statute or with the stamp duty chargeable thereon and in the manner provided in the Financial Statute of any other Provincial Council of Sri Lanka within whose jurisdiction such immovable property or any of the immovable properties to which such instrument relates may also be situated.\"",
    "amendment_events": [],
    "cross_references": [],
-   "children": [
-    {
-     "type": "paragraph",
-     "number": "a",
-     "raw_text": "(a) Where an instrument relates to a transfer of an immovable property or immovable proper- ties which is or are situated in the Western Province and in any one or more of the provinces of Sri Lanka, such in strument shall be and be deemed to be duly stamped in respect of the land or lands situated in the Western Province if stamped either with the stamp duty chargeable thereon and in the manner provided in this Statute or with the stamp duty chargeable thereon and in the manner provided in the Financial Statute of any other Provincial Council of Sri Lanka within whose jurisdiction such immovable property or any ofthe immovable properties to which such instrument relates may also be situated.\"",
-     "text": "Where an instrument relates to a transfer of an immovable property or immovable proper- ties which is or are situated in the Western Province and in any one or more of the provinces of Sri Lanka, such in strument shall be and be deemed to be duly stamped in respect of the land or lands situated in the Western Province if stamped either with the stamp duty chargeable thereon and in the manner provided in this Statute or with the stamp duty chargeable thereon and in the manner provided in the Financial Statute of any other Provincial Council of Sri Lanka within whose jurisdiction such immovable property or any ofthe immovable properties to which such instrument relates may also be situated.\"",
-     "amendment_events": [],
-     "cross_references": [],
-     "children": []
-    }
-   ]
+   "children": [],
+   "number_raw": "43",
+   "heading_raw": "e",
+   "heading_note": "no marginal note printed; the 'e' the OCR read as a heading is a stray mark in the left margin of scan page 33",
+   "numbering_note": "printed as '43.(a)' with '(a)' on the number line, not as paragraph (a) of section 43; the provision ends with a closing quotation mark and has no marginal note, which is how this reprint sets an inserted provision. The amending instrument is not named on the page."
   },
   {
    "type": "section",
@@ -2298,7 +2339,8 @@
    "text": "Where any instrument is chargeable with stamp duty in respect of any money expressed in any currency other than that of Sri Lanka, such duty shall be calculated on the value of such money in the currency of Sri Lanka according to the current rate of exchange on the day of the instrument.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_note": "no marginal note printed beside this section on scan page 36; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -2900,7 +2942,7 @@
    "number": "63",
    "heading": "",
    "raw_text": "63. For the purpose of giving his opinion under section 62 the Assessor may require the person bringing the instrument to produce any such document or other evidence asis necessary to prove the facts relating to the chargeability of the instrument with stamp duty or the amount of the stamp duty with which it is chargeable: Provided that, every person by whom any such evidence is furnished shall, on payment of the full stamp duty with which the instrument to which it relates is chargeable, be relieved from any penalty which he may have incurred under this Statute, otherwise than by reason of his omitting, to state truly in such instrument any of the facts or circumstances aforesaid.",
-   "text": "For the purpose of giving his opinion under section 62 the Assessor may require the person bringing the instrument to produce any such document or other evidence asis necessary to prove the facts relating to the chargeability of the instrument with stamp duty or the amount of the stamp duty with which it is chargeable:",
+   "text": "For the purpose of giving his opinion under section 62 the Assessor may require the person bringing the instrument to produce any such document or other evidence as is necessary to prove the facts relating to the chargeability of the instrument with stamp duty or the amount of the stamp duty with which it is chargeable:",
    "amendment_events": [],
    "cross_references": [
     {
@@ -2920,7 +2962,8 @@
      "amendment_events": [],
      "cross_references": []
     }
-   ]
+   ],
+   "heading_note": "no marginal note printed beside this section on scan page 43; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -3155,7 +3198,8 @@
      ],
      "children": []
     }
-   ]
+   ],
+   "heading_note": "no marginal note printed beside this section on scan page 45; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -3290,7 +3334,8 @@
      "verbatim": "Section 73 (8)"
     }
    ],
-   "children": []
+   "children": [],
+   "heading_note": "no marginal note printed beside this section on scan page 47; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -4190,7 +4235,8 @@
      ],
      "children": []
     }
-   ]
+   ],
+   "heading_note": "no marginal note printed beside this section on scan page 57; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -4543,7 +4589,8 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_note": "no marginal note printed beside this section on scan page 62; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -4616,7 +4663,8 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_note": "no marginal note printed beside this section on scan page 62; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -4776,7 +4824,8 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_note": "no marginal note printed beside this section on scan page 63; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -5040,7 +5089,8 @@
       }
      ]
     }
-   ]
+   ],
+   "heading_note": "no marginal note printed beside this section on scan page 67; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -5613,7 +5663,8 @@
      "verbatim": "Section 73"
     }
    ],
-   "children": []
+   "children": [],
+   "heading_note": "no marginal note printed beside this section on scan page 77; the Table of Sections (scan pages 4-8) prints '- do -' against it, i.e. the preceding section's heading applies. Left empty rather than copied."
   },
   {
    "type": "section",
@@ -6134,5 +6185,170 @@
    "cross_references": [],
    "children": []
   }
- ]
+ ],
+ "long_title_correction_status": "truncated_to_printed_title_after_proof_read",
+ "corrections": [
+  {
+   "page": 9,
+   "printed_page": 1,
+   "location": "long_title",
+   "original_span": "is Inconsistant with certain Provision of the Turnover Tax This Statute.",
+   "proposed_reading": "(not part of the long title; separate printed statement, moved to editorial_notes)",
+   "confidence": "high",
+   "why_check": "the scan prints the statement as a distinct paragraph below the title; a reader should confirm it is not part of the title"
+  },
+  {
+   "page": 9,
+   "printed_page": 1,
+   "location": "s.1 marginal note",
+   "original_span": "of",
+   "proposed_reading": "Short title and date of.",
+   "confidence": "high",
+   "why_check": "OCR split the note across three lines and dropped two into the body; clear on the scan"
+  },
+  {
+   "page": 9,
+   "printed_page": 1,
+   "location": "s.1(i)",
+   "original_span": "the Financial Short title and Statute ofthe Western Province No. 06 of 1990 into operation and its provisions shall come on such date",
+   "proposed_reading": "the Financial Statute of the Western Province No. 06 of 1990 and its provisions shall come into operation on such date",
+   "confidence": "high",
+   "why_check": "column-order scramble: marginal-note fragments interleaved into the sentence"
+  },
+  {
+   "page": 9,
+   "printed_page": 1,
+   "location": "s.1 first enumerator",
+   "original_span": "(1)",
+   "proposed_reading": "(i)",
+   "confidence": "medium",
+   "why_check": "the print pairs it with '(ii)'; small type, could be read as (1) or (i)"
+  },
+  {
+   "page": 9,
+   "printed_page": 1,
+   "location": "s.1 second enumerator nesting",
+   "original_span": "(ii) nested under subsection (1) as a subparagraph",
+   "proposed_reading": "(ii) is a sibling of (i)",
+   "confidence": "high",
+   "why_check": "the print sets both at the same indent"
+  },
+  {
+   "page": 33,
+   "printed_page": 25,
+   "location": "s.43 marginal note",
+   "original_span": "How instruments effecting exchange to be stamped. are",
+   "proposed_reading": "How instruments effecting exchange are to be stamped.",
+   "confidence": "high",
+   "why_check": "'are' fell to a later line in the OCR; clear on the scan"
+  },
+  {
+   "page": 33,
+   "printed_page": 25,
+   "location": "s.43 body",
+   "original_span": "the instrument first with the stamp duty, executed shall be stamped if any,",
+   "proposed_reading": "the instrument first executed shall be stamped with the stamp duty, if any,",
+   "confidence": "high",
+   "why_check": "column-order scramble; clear on the scan"
+  },
+  {
+   "page": 33,
+   "printed_page": 25,
+   "location": "second s.43 marginal note",
+   "original_span": "e",
+   "proposed_reading": "(none printed)",
+   "confidence": "high",
+   "why_check": "stray mark at the left page edge, level with the provision; not a heading"
+  },
+  {
+   "page": 33,
+   "printed_page": 25,
+   "location": "second s.43 number",
+   "original_span": "43. + paragraph (a)",
+   "proposed_reading": "43.(a) as one provision number",
+   "confidence": "medium",
+   "why_check": "whether this is section 43A or a lettered continuation is a drafting question the print does not settle"
+  },
+  {
+   "page": 33,
+   "printed_page": 25,
+   "location": "s.43(a) body",
+   "original_span": "immovable proper- ties ... such in strument ... any ofthe immovable",
+   "proposed_reading": "immovable properties ... such instrument ... any of the immovable",
+   "confidence": "high",
+   "why_check": "line-break hyphen and two OCR word splits/merges; clear on the scan"
+  },
+  {
+   "page": 43,
+   "printed_page": 35,
+   "location": "s.63 body",
+   "original_span": "asis",
+   "proposed_reading": "as is",
+   "confidence": "high",
+   "why_check": "OCR merge; clear on the scan"
+  },
+  {
+   "page": 9,
+   "printed_page": 1,
+   "location": "s.2 marginal note",
+   "original_span": "Appointment officers",
+   "proposed_reading": "Appointment of officers.",
+   "confidence": "high",
+   "why_check": "the print breaks the note as 'Appointment of.' / 'officers.' with a stray full stop after 'of'; the OCR dropped 'of'"
+  }
+ ],
+ "source_pages_proofread": {
+  "render": "pdftoppm -r 110 -gray, PowerShell/poppler",
+  "scan_pages": [
+   1,
+   2,
+   3,
+   9,
+   13,
+   18,
+   33,
+   36,
+   43,
+   45,
+   47,
+   57,
+   62,
+   63,
+   67,
+   77
+  ],
+  "printed_pages": [
+   "cover",
+   "title",
+   "foreword (i)",
+   1,
+   5,
+   10,
+   25,
+   28,
+   35,
+   37,
+   39,
+   49,
+   54,
+   55,
+   59,
+   69
+  ]
+ },
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "against": "pdftoppm renders of data/legal-sources/library/statutes/6-1990-western-province-financial-statute.pdf, scan pages 1-3, 9, 13, 18, 33, 36, 43, 45, 47, 57, 62, 63, 67, 77; OCR sidecar data/legal-sources/library/statutes/ocr/6-1990-western-province-financial-statute.txt",
+  "method": "targeted proof-read of s.1, both s.43 provisions and the twelve headingless sections against the image",
+  "what_changed": [
+   "long_title cut at 'INCIDENTAL THERETO' (original kept in long_title_raw); the printed statement that followed it is recorded in editorial_notes",
+   "s.1: heading 'of' -> 'Short title and date of.' (heading_raw kept); body re-ordered to the printed word order; children re-cut as subsections (i) and (ii)",
+   "s.43: heading and body word order corrected against scan page 33",
+   "second s.43 renumbered '43(a)' from the print (number_raw kept); heading 'e' removed as a stray mark; paragraph child folded into the provision text; hyphenation and word splits corrected",
+   "s.63: 'asis' -> 'as is'",
+   "heading_note added to the 12 sections without a marginal note (9, 15, 49, 63, 66, 69, 83, 86, 87, 88, 90, 105) after checking each on the rendered page",
+   "s.2: heading 'Appointment officers' -> 'Appointment of officers.' (heading_raw kept)"
+  ]
+ }
 }

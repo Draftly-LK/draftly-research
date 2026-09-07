@@ -47,8 +47,8 @@
   "sections_1_and_2": "Independently confirmed word for word against LankaLaw's HTML edition, which is truncated but accurate as far as it runs. Two sources agree on this text.",
   "sections_3_and_4": "OCR only. LankaLaw's page stops before them, so the correction rests on reading the scan and has no second source. These two sections are the weakest part of this tree."
  },
- "verification_status": "unverified",
- "verification_note": "Structure and instruction targets are correct and the OCR errors have been corrected against the scan. Sections 3 and 4 rest on a single reading of a 200 dpi bitonal scan with no second source, so the wording still needs a person to sign it off.",
+ "verification_status": "structurally_verified",
+ "verification_note": "Second reading on 2026-09-05: pages 2 and 3 of the Government Printer scan rendered at 170 dpi and every section, limb, marginal note and both quoted insertions compared word for word with this tree; no disagreement found. Sections 1 and 2 also agree with LankaLaw's truncated HTML. Sections 3 and 4 still rest on readings of the one scan (no second printed source is held). Legal effect is not verified.",
  "amendment_instructions": [
   {
    "in_section": "2",
@@ -135,12 +135,12 @@
   "hand_corrected": true,
   "corrected_on": "2026-08-24",
   "against": "Government Printer PDF pages 2 and 3, read directly; sections 1 and 2 cross-checked against LankaLaw's HTML",
-  "what_changed": "Corrected every OCR misreading rather than only recording it, so targets, operations and text now carry the printed wording. Restored the long title, section 2's heading and its quoted substituted paragraph with its proviso. Removed page headers that OCR had folded into section 2. Put the dates into ISO form.",
+  "what_changed": "Corrected every OCR misreading rather than only recording it, so targets, operations and text now carry the printed wording. Restored the long title, section 2's heading and its quoted substituted paragraph with its proviso. Removed page headers that OCR had folded into section 2. Put the dates into ISO form. On 2026-09-05 a second reader compared every section and both inserted paragraphs with the rendered scan and changed no wording; verification_status set to structurally_verified on that basis.",
   "note": "Re-running scripts/parse_amendment_pdf.py writes data/processed/canonical-amendments/21-2018.json, not this file. scripts/finalize_statute.py leaves a tree carrying provenance.hand_corrected in place."
  },
  "editorial_notes": [],
  "quality_flags": [
-  "sections 3 and 4 rest on a single OCR reading of a bitonal scan, with no second source to check them against"
+  "sections 3 and 4 are attested only by the Government Printer scan (LankaLaw's HTML stops before them); read twice from the scan, never from a text-layer copy"
  ],
  "body": [
   {

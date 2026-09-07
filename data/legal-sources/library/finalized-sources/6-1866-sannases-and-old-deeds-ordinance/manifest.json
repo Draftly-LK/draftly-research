@@ -1,0 +1,100 @@
+{
+ "statute": "Sannases and Old Deeds Ordinance",
+ "source_id": "SRC078",
+ "note": "Every source actually used to build the canonical trees in library/finalized/6-1866-sannases-and-old-deeds-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "6-1866-sannases-and-old-deeds-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 16848,
+   "sha256": "83d7777b670c82539335570a364fce7f9fb4ca6eab5ca900ab6cdeca851a7ccb",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/6-1866-sannases-and-old-deeds-ordinance.html",
+   "used_for": "parsed into 6-1866-sannases-and-old-deeds-ordinance-consolidated.json"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-5.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 12846618,
+   "sha256": "f0573b27f15490956edae2c5c6516f91cc5d91078c0c893427acd41137005a26",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-5.pdf",
+   "used_for": "LankaLaw copy of the 1980 revised edition, volume 5; Sannases and Old Deeds is Cap. 136 at PDF pages 110 to 111 (printed VI/310 to VI/311), chain header 'Ordinances Nos. 6 of 1866, 13 of 1867.', head date '[20th October, 1866.]'. Every section (1 to 10) read word for word against the tree. Settled: the missing word 'with' in s.3; 'sannas' for the HTML's 'saunas' at four places in s.7; the marginal note on the s.2 proviso ('Extension of time for producing deeds, &c.'); the '&c.,' form and punctuation of the notes on ss.2, 4, 6, 7 and 10. Left open: 'alt' in s.4, 'saunas' in the s.7 note and in s.10, which both copies print; the compendium's own 'bylaw' in s.10 is its error"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "6-1866-sannases-and-old-deeds-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; the page names no publisher of the underlying revision). The page's URL pattern (1981Y6V136C) and the compendium's Cap. 136 place the text in the 1980 revised edition, volume VI.",
+  "consolidation_cutoff": "Ordinance No. 13 of 1867",
+  "cutoff_evidence": "HTML chain block: 'Ordinance Nos, 6 of 1866 13 of 1867'; compendium header, PDF p. 110: 'Ordinances Nos. 6 of 1866, 13 of 1867.' No inline marker in either copy; the only marginal apparatus is the footnote '* Extended to 1st February, 1875.' on the s.2 proviso."
+ },
+ "alternate_edition": {
+  "file": "legislative-enactments-1980-volume-5.pdf",
+  "pdf_pages": [
+   110,
+   111
+  ],
+  "printed_pages": "VI/310 to VI/311",
+  "edition": "consolidated (1980 revised edition, Cap. 136)",
+  "publisher": "LankaLaw's watermarked copy of the 1980 revised edition of the Legislative Enactments; a re-typeset rendering whose page images reproduce the OCR-type errors of its text layer, so it is a second copy of the revised edition rather than a scan of the Government Printer's volume",
+  "consolidation_cutoff": "Ordinance No. 13 of 1867",
+  "cutoff_evidence": "Printed header on PDF p. 110: 'Ordinances Nos. 6 of 1866, 13 of 1867.' with head date '[20th October, 1866.]'",
+  "why_not_baseline": "same chain and, after the corrections recorded in the tree's provenance, the same text; the HTML carries the structure and is the copy the parser reads. Used as the verification source; it settled the missing 'with' in s.3, four 'sannas' readings in s.7 and the s.2 proviso's marginal note."
+ },
+ "source_conflicts": [
+  {
+   "field": "s.3 text",
+   "html": "'...received the same, the Registrar's endorsement written...'",
+   "compendium": "'...received the same, with the Registrar's endorsement written...' (PDF p. 110)",
+   "resolution": "compendium reading adopted in text; HTML reading kept in raw_text"
+  },
+  {
+   "field": "s.7 text (four places)",
+   "html": "'saunas'",
+   "compendium": "'sannas' (PDF pp. 110 to 111, italic in the rendered page)",
+   "resolution": "compendium reading adopted in text; HTML readings kept in raw_text"
+  },
+  {
+   "field": "s.10 text",
+   "html": "'by law.'",
+   "compendium": "'bylaw.'",
+   "resolution": "HTML reading kept; the compendium has dropped a space"
+  },
+  {
+   "field": "marginal notes of ss.2, 4, 6, 10 ('&c.')",
+   "html": "'& c,' / '& c.,' / 'others,; & c not affected.'",
+   "compendium": "'&c.,' throughout; 'others, &c., not affected.'",
+   "resolution": "compendium form adopted; heading_raw kept"
+  }
+ ],
+ "amendment_reconciliation": [
+  {
+   "instrument": "13-1867",
+   "title": "not stated in any held source (named only as \"13 of 1867\" in both chain headers)",
+   "classification": "known_but_not_held",
+   "reason": "In both chain headers; not held on disk under any name (RUBRIK: \"not held: not in the Act archive\", \"not published as HTML\"). Both held copies already incorporate it; no inline marker says which section it touched.",
+   "source_path": null
+  }
+ ],
+ "sources_inspected": [
+  {
+   "path": "data/legal-sources/library/statutes/HTML/6-1866-sannases-and-old-deeds-ordinance.html",
+   "what": "LankaLaw consolidated HTML, 17 KB, 10 sections, chain \"6 of 1866, 13 of 1867\"; selected baseline"
+  },
+  {
+   "path": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-5.pdf",
+   "what": "registry PDF; 1980 revised edition volume 5 as republished by LankaLaw, text layer; Cap. 136 at PDF pp. 110 to 111 (the registry note says \"around text page 110\"); verification source"
+  },
+  {
+   "path": "data/processed/canonical-statutes/SRC078-6-1866.json",
+   "what": "canonical tree built from the HTML (10 sections, 3 provisos); rebuilt with build_canonical_statutes.py --source-id SRC078 on 2026-09-05, which retyped the second proviso of s.7 from closing_text to proviso; copied into finalized/ and corrected by hand (see provenance)"
+  }
+ ],
+ "statute_note": "Principal source: the LankaLaw consolidated HTML (chain block 'Ordinance Nos, 6 of 1866 13 of 1867'), parsed by build_canonical_statutes.py into a 10-section tree with three provisos (s.2, s.7 twice), no subsections, definitions or schedules, and one editorial footnote. Other sources inspected: the registry's compendium PDF (1980 revised edition volume 5, Cap. 136 at PDF pp. 110 to 111, chain 'Ordinances Nos. 6 of 1866, 13 of 1867.'), used as the verification source. Consolidation cutoff: Ordinance No. 13 of 1867, from both headers. Review performed: every section number, marginal note and the full text of all ten sections and three provisos compared word for word against the compendium text layer and its rendered pages. Corrections made from the compendium, each with the HTML reading kept in raw_text or heading_raw: the dropped word 'with' in s.3; 'sannas' for 'saunas' at four places in s.7; the marginal note on the s.2 proviso; the '&c.,' form and punctuation of the notes on ss.2, 4, 6, 7 and 10; the s.2 footnote moved from text to a footnotes field. validate_finalized_trees.py reports 0 errors and 0 warnings. Amendment coverage: 13 of 1867 known but not held, already incorporated in both copies. OCR or structural weaknesses: both copies print 'alt' (s.4), 'saunas' in the s.7 note and in s.10; the compendium prints 'bylaw' (s.10). Both copies are LankaLaw republications carrying the same OCR-type defects; the compendium is not an independent print. Missing sources: a Government Printer print of Cap. 136 or of Ordinances 6 of 1866 and 13 of 1867. Unresolved questions: the three suspect readings above. Lawyer verification: unverified.",
+ "lawyer_verification": "unverified"
+}

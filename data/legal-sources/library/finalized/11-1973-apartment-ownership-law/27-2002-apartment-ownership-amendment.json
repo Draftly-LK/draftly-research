@@ -8,7 +8,13 @@
   "year": 2002
  },
  "instrument_role": "amending",
- "amends": {},
+ "amends": {
+  "type": "Act",
+  "title": "Apartment Ownership (Special Provisions) Act",
+  "title_as_printed_in_long_title": "APARTMENT OWNERSHIP (SPECIAL PROVISIONS) ACT, NO, 4 OF 1999",
+  "number": 4,
+  "year": 1999
+ },
  "amends_recorded_elsewhere": "Apartment Ownership Law",
  "language": "en",
  "edition": {
@@ -45,7 +51,11 @@
   }
  ],
  "verification_status": "unverified",
- "editorial_notes": [],
+ "editorial_notes": [
+  "amends was empty in the parsed tree (validator hard error); set by hand from the long title and section 2.",
+  "Sections 3 and 4 of this Act operate on Act No. 4 of 1999 ('the principal enactment' as that Act defines it), not on the Law; amendment_instructions targets_principal_enactment therefore point at Act 4 of 1999.",
+  "Section 4(2) prints 'an or alter March 10, 2001' and 'shall he deemed' (source typography); kept as printed."
+ ],
  "quality_flags": [],
  "source_location": {},
  "body": [
@@ -198,5 +208,13 @@
    "amendment_events": [],
    "cross_references": []
   }
- ]
+ ],
+ "amends_note": "This Act amends the Apartment Ownership (Special Provisions) Act, No. 4 of 1999, not the Apartment Ownership Law directly: its long title reads 'AN ACT TO AMEND THE APARTMENT OWNERSHIP (SPECIAL PROVISIONS) ACT, NO, 4 OF 1999' and its section 2 replaces section 3 of that Act. The consolidated Apartment Ownership Law (LankaLaw HTML edition) lists 27 of 2002 in its chain header but carries no inline marker for it. Kept in this folder because the chain names it and because Act 4 of 1999 is itself an amending Act of the Law.",
+ "provenance": {
+  "hand_corrected": true,
+  "what_changed": "amends set to Act No. 4 of 1999 (was {}); amends_note and editorial_notes added; no body text changed.",
+  "checked_against": "long title and section 2 of the tree's own source, data/legal-sources/library/amendments/html/27-2002-apartment-ownership-special-provisions.html; the incoming PDF of the same Act is an image scan and was not read",
+  "corrected_on": "2026-09-05",
+  "corrected_by": "finalization worker (pipeline pass); lawyer-unverified"
+ }
 }

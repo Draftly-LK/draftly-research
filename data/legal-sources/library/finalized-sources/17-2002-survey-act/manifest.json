@@ -7,9 +7,10 @@
   {
    "file": "17-2002-survey-act.html",
    "role": "principal statute",
-   "edition": "original_or_unconfirmed_consolidation",
-   "bytes": 201145,
-   "sha256": "f49a2db700f1a8b1fd7b966c8da0e8f719f5954c9f983ec9c35d4bf53b6d7618",
+   "edition": "as_enacted",
+   "bytes": 195882,
+   "sha256": "56d5f194f3ccb636a9caa2bbac3a3c2c10fc3f46c01a7a73835af24b44320439",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/17-2002-survey-act.html",
    "used_for": "parsed into 17-2002-survey-act.json"
   },
@@ -19,9 +20,35 @@
    "edition": "",
    "bytes": 183156,
    "sha256": "f9d4ae86bc254aca24c875ada96eba5017d5ef0fd316353ac0cf755c7e42eafd",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/statutes/verification/17-2002-survey-act-government-printer.pdf",
-   "used_for": "the Government Printer edition, published as a supplement to Part II of the Gazette of 4 October 2002, retrieved from https://survey.gov.lk/sdweb/pdf/surveydocuments/Survey%20Act/Survey%20Act%20English.pdf. It has a text layer. Settled the long title, the marginal notes on ss.3, 10, 11, 20, 31 and 51, and the Schedule; see overrides_applied, alternate_edition_variants and schedules in the tree"
+   "used_for": "Government Printer edition of the Act as enacted: 'SURVEY ACT, No.17 OF 2002 [Certified on 04th October, 2002] ... Published as a Supplement to Part II of the Gazette ... of October 04, 2002', 27 pp., text layer, retrieved from https://survey.gov.lk/sdweb/pdf/surveydocuments/Survey%20Act/Survey%20Act%20English.pdf. Settled the long title, the marginal notes on ss.3, 10, 11, 20, 31 and 51, the Schedule (see overrides_applied, alternate_edition_variants and schedules in the tree), and this pass the edition kind (as_enacted)."
   }
  ],
- "statute_note": "No amending Act is recorded for this Act in this corpus, and neither edition held here carries an amendment chain. That is the absence of a finding, not a finding of no amendments."
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "17-2002-survey-act.html",
+  "edition": "as_enacted",
+  "publisher": "LankaLaw (private republisher; page states no publisher). The Government Printer edition in this package is 'PRINTED AT THE DEPARTMENT OF GOVERMENT PRINTING, SRI LANKA' (as printed).",
+  "consolidation_cutoff": "Act No. 17 of 2002 (the principal Act as enacted; no amending instrument known)",
+  "cutoff_evidence": "The LankaLaw page carries the enacting formula, s.1 'This Act may be cited as the Survey Act. No 17 of 2002', the head date '[ 4 th October , 2002 ]', no chain header and no inline marker. The Government Printer PDF is headed 'SURVEY ACT, No.17 OF 2002 [Certified on 04th October, 2002] Printed on the order of Government ... Published as a Supplement to Part II of the Gazette of the Democratic Socialist Republic of Sri Lanka of October 04, 2002'. Both are the Act as enacted; edition.kind is therefore as_enacted, not a consolidation."
+ },
+ "amendment_reconciliation": [],
+ "repeals_effected": [
+  {
+   "repealed": "Land Surveys Ordinance",
+   "basis": "long title: 'TO REPEAL THE LAND SURVEYS ORDINANCE AND THE SURVEYORS ORDINANCE' (Government Printer edition); the LankaLaw page prints 'TO REPEAL THE LAND SERVEYS ORDINANCE AND THE SURVEYORS ;'. Finalized separately as 4-1866-land-surveys-ordinance."
+  },
+  {
+   "repealed": "Surveyors Ordinance",
+   "basis": "same long title. Finalized separately as 15-1889-surveyors-ordinance."
+  }
+ ],
+ "index_note": "data/legal-sources/manifests/statute-section-index.json lists 5 sections for SRC043 (28-32), all present_in ['legacy'] with 'headings' that are body fragments ('Disqualifica1ion', '(h) if he is found guilty of an offence under this Act', 'of the Council', 'eligihle for re-appointment', 'with the Minister in charge of the subject of Finance'): lines harvested from the 19 MB LankaLaw scan's 532-word partial text layer, not headings. The accepted tree has 67 sections in 2 Parts with a Schedule. The index was not edited; the coordinator will merge from finalized/.",
+ "source_conflicts": [
+  "Long title: LankaLaw prints 'SURVEYOR- GENERAL', 'THE CARRYING OUT OF THE LAND SURVEYS', 'LAND SERVEYS ORDINANCE AND THE SURVEYORS ;' where the Government Printer prints 'SURVEYOR GENERAL', 'THE LAND SURVEYS', 'LAND SURVEYS ORDINANCE AND THE SURVEYORS ORDINANCE'. The tree carries the Government Printer wording via the override (long_title_status verified_against_alternate_edition) with the LankaLaw reading in long_title_raw.",
+  "Part I heading: LankaLaw 'POWERS AND FUNCTIONS OF THE SURVEYOR-GENRERAL'; Government Printer 'POWERS AND FUNCTIONS OF THE SURVEYOR GENERAL'. Kept as parsed in the body (source error, annotated here)."
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML of the Act as enacted (data/legal-sources/library/statutes/HTML/17-2002-survey-act.html, identifier 2002Y0V0C17A), parsed by the earlier worker and corrected through canonical-overrides.json SRC043 against the Government Printer edition; 67 sections, s.1 outside both Parts, Part I ss.2-24, Part II ss.25-67, one Schedule (s.39) recovered from the Government Printer edition. Other sources inspected: statutes/verification/17-2002-survey-act-government-printer.pdf (Government Printer, 27 pp., text layer; in the package); statutes/17-2002-survey-act.pdf (the registry's local_pdf_path, 19 MB, 39 pp. LankaLaw scan of the same Government Printer print; title page read as an image, text layer of 532 words covers the cover only; not in the package); amendments/17-2002-survey.pdf, byte-identical to that scan (sha256 0a7963c8...); amendments/html/17-2002-survey-act.html, identical (text-lf) to the principal HTML and misfiled as an amendment, from which data/processed/canonical-amendments/17-2002.json was built with amends {} (a copy of the principal Act, not an amending instrument; not included). Consolidation cutoff: not applicable; the Act as enacted, see baseline.cutoff_evidence. Review performed: packaging pass. The accepted tree was diffed against data/processed/canonical-statutes/SRC043-17-2002.json: same 67 sections; one leaf differed (s.40(1) cross-references, where the re-parse correctly reads 'section 4 or section 6 of the Surveyors Ordinance' as two external references) and was adopted; edition.kind changed from original_or_unconfirmed_consolidation to as_enacted on the evidence quoted. validate_finalized_trees: 0 errors; the one warning (ss.13, 14, 44 repeat their paragraphs in the section text) is a parser artefact now documented in quality_flags. The earlier structural review against the Government Printer edition is recorded in the override (verification_status structurally_verified). Amendment coverage: no amending instrument is named in either edition, in the RUBRIK, or in the curriculum, and none is held; the reconciliation table is empty. That is the absence of a finding, not a finding of no amendments. The Act repeals the Land Surveys Ordinance and the Surveyors Ordinance (long title; see repeals_effected). OCR or structural weaknesses: the parsed text is LankaLaw's transcription and differs in small ways from the Government Printer print throughout (recorded in quality_flags 'text-not-government-printer'); s.10's marginal note sits inside subsection (1)'s text; the parsed page omits the definition of 'Minister' and leaves one interpretation entry blank (content_completeness). Missing sources: none for the Act itself. Unresolved questions: whether any amendment exists after 2002. Index: 5 legacy fragments vs 67 sections, see index_note. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
 }

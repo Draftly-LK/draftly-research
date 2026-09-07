@@ -1,35 +1,65 @@
 {
- "statute": "Matrimonial Rights and Inheritance Ordinance, No. 15 of 1876",
+ "statute": "Matrimonial Rights and Inheritance Ordinance",
  "source_id": "SRC004",
- "note": "Every source used to build the canonical tree in library/finalized/15-1876-matrimonial-rights-and-inheritance-ordinance. Copies, not moves; the originals stay where the registry points.",
- "not_included": [
-  {
-   "what": "The amending Ordinance's own text",
-   "where": "not in the corpus",
-   "why": "Pre-1950 instrument; the parliamentary Act archive starts at 1950."
-  }
- ],
- "status": "unverified. LankaLaw is a private republisher, not the Government Printer.",
+ "note": "Every source actually used to build the canonical trees in library/finalized/15-1876-matrimonial-rights-and-inheritance-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
  "files": [
   {
-   "file": "15-1876-matrimonial-rights-and-inheritance-ordinance.html",
+   "file": "15-1876-matrimonial-rights-and-inheritance-ordinance-consolidated.html",
    "role": "principal statute",
    "edition": "consolidated",
-   "bytes": 58731,
-   "sha256": "f457777cfa26d8edbf50289d3d18bfa3757c8c9b6a94de6acbd3db961c4d1e4d",
+   "bytes": 57680,
+   "sha256": "dd35f368347168346995c43da4f61b9b99f71b59df2b6da183e9f718ed5afdc2",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/15-1876-matrimonial-rights-and-inheritance-ordinance.html",
-   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y4V69C-1.html",
-   "used_for": "yes: parsed by scripts/build_canonical_statutes.py"
+   "used_for": "parsed into 15-1876-matrimonial-rights-and-inheritance-ordinance.json",
+   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y4V69C-1.html"
   },
   {
    "file": "15-1876-matrimonial-rights-and-inheritance-ordinance.pdf",
-   "role": "principal statute",
-   "edition": "scan",
+   "role": "verification source, not parsed",
+   "edition": "",
    "bytes": 86451,
    "sha256": "47c992a86d24a750501ea27ee8360576b83ed60fd9c43af1e58727e49bccdf34",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/statutes/15-1876-matrimonial-rights-and-inheritance-ordinance.pdf",
-   "retrieved_from": "see source-registry.csv",
-   "used_for": "no: image scan, kept for provenance"
+   "used_for": "LankaLaw PDF of Chapter 69 (6 pp., scan with an embedded OCR text layer of poor quality: 'Nos'' for 'Nos.', '18 ol 1922', 'balf blood'); used to read the header block, chain and head date against the HTML edition and for spot checks of section text; not parsed",
+   "retrieved_from": "see source-registry.csv"
   }
- ]
+ ],
+ "not_included": [
+  {
+   "what": "The amending Ordinances' own text (No. 2 of 1889, No. 18 of 1922/1923)",
+   "where": "not in the corpus as amending instruments",
+   "why": "Pre-1950 instruments; the parliamentary Act archive starts at 1950. No. 2 of 1889 is the Civil Procedure Code, held in this library only as a consolidated principal statute (SRC030), in which the 1889 operation on this Ordinance cannot be identified."
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "15-1876-matrimonial-rights-and-inheritance-ordinance-consolidated.html",
+  "tree": "15-1876-matrimonial-rights-and-inheritance-ordinance.json",
+  "edition": "consolidated",
+  "publisher": "not stated (LankaLaw, private republisher; page id 1981Y4V69C-1 = 1981 revised edition, volume 4, chapter 69)",
+  "consolidation_cutoff": "Ordinance No. 18 of 1923 (HTML header); the PDF header reads the same instrument as '18 ol 1922' -- see cutoff_conflict",
+  "cutoff_evidence": "HTML chain header: 'Ordinance Nos, 15 of 1876 18 of 1923 [ 29 th June , 1877 ]'. PDF (Cap. 69) header block: 'Ordinances Nos' 15 of 1876 2 of 1889 18 ol 1922' and '[29th June. 1877.}'. Neither copy carries an inline marker.",
+  "cutoff_conflict": "The two held copies disagree on the year of the last instrument (1923 in the HTML, 1922 in the PDF's OCR text layer, which also misreads 'of' as 'ol' on the same line) and the HTML omits '2 of 1889', which the PDF lists. Section text agrees between the copies where the PDF's text layer is legible (chain and head date, editorial note on sections 4 to 19, definitions, spot-checked sections), so the conflict is recorded here and in the tree rather than forcing needs_structural_review; a lawyer should settle the year from a printed revised edition."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "2-1889",
+   "title": "Ordinance No. 2 of 1889 -- the Civil Procedure Code (title from SRC030; not read as an amending instrument)",
+   "classification": "known_but_not_held",
+   "reason": "Named only in the PDF header block ('2 of 1889'); the HTML chain omits it. Held in this library only as a consolidated principal statute (finalized/2-1889-civil-procedure-code), whose current text does not show what it did to this Ordinance. Nothing applied.",
+   "source_path": null
+  },
+  {
+   "instrument": "18-1923",
+   "title": "Ordinance No. 18 of 1923 (title not read: no copy held); the PDF header prints the same entry as '18 ol 1922'",
+   "classification": "known_but_not_held",
+   "reason": "Named in both headers with a one-digit conflict in the year (1923 HTML, 1922 PDF text layer). Neither copy carries an inline marker, so which sections it changed is unknown; its own text is not held. Nothing applied.",
+   "source_path": null
+  }
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML consolidated edition (15-1876-matrimonial-rights-and-inheritance-ordinance-consolidated.html, page 1981Y4V69C-1 = Chapter 69 of the 1981 revised edition, volume 4), parsed into 15-1876-matrimonial-rights-and-inheritance-ordinance.json: 3 Parts, 36 sections, 4 definitions, no Schedule; already structurally_verified. Other sources inspected: the registry PDF statutes/15-1876-matrimonial-rights-and-inheritance-ordinance.pdf (LankaLaw, Cap. 69, 6 pp.), which the previous manifest called an image scan; it is a scan with an embedded OCR text layer of poor quality ('Nos'' for 'Nos.', '18 ol 1922', 'balf blood'), usable for the header block and for spot checks and carried as a verification source, not parsed. Consolidation cutoff: Ordinance No. 18 of 1923 on the HTML header ('Ordinance Nos, 15 of 1876 18 of 1923'); the PDF header reads 'Ordinances Nos' 15 of 1876 2 of 1889 18 ol 1922'. The two copies therefore disagree on the year of the last instrument (1923 vs 1922, a single-digit conflict on the same instrument in an OCR layer that misreads 'of' on the same line) and the HTML omits 2 of 1889, which the PDF lists. Neither copy carries an inline marker. Both copies date the Ordinance '29th June, 1877' at its head and both print the editorial note that sections 4 to 19 are repealed by section 4 of the Married Women's Property Ordinance for persons married on or after 29 June 1877; data/processed/statute_commencement.csv gives 1876-06-29, which the tree already records as wrong (commencement_correction). Review performed: header block, chain, head date and the sections 4-19 editorial note read in both copies; the tree's 36 section headings and node texts were run against the PDF text layer (8-word chunk matching) and spot-checked by eye; where the PDF layer is legible it agrees with the HTML, and the many non-matches are column interleaving and OCR noise in the PDF rather than different wording -- no substantive disagreement was found, but the check is limited by the PDF's quality and is recorded as spot-level, not line by line. Validator: zero errors; the one warning (section 14 keeps its text on the section node) is documented in the tree. Amendment coverage: two instruments, both known_but_not_held. 2 of 1889 (the Civil Procedure Code) from the PDF header only; 18 of 1923/1922 from both headers with the digit conflict. Nothing applied. The curriculum lists no amendments. OCR or structural weaknesses: the PDF's OCR layer; the 1922/1923 conflict; sections 4 to 19 are reproduced in full and not marked repealed node by node (flagged in the tree); section 19 carries the editor's note '(+ This section has no relevance today.)'. Missing sources: own text of both amending Ordinances; a printed revised edition to settle the year. Unresolved questions: the year of Ordinance No. 18 (1922 or 1923) and whether 2 of 1889 belongs in the chain. Lawyer-verification status: unverified. Everything here is pipeline output.",
+ "lawyer_verification": "unverified"
 }

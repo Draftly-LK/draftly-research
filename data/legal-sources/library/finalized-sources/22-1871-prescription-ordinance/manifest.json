@@ -8,11 +8,66 @@
    "file": "22-1871-prescription-ordinance-consolidated.html",
    "role": "principal statute",
    "edition": "consolidated",
-   "bytes": 23239,
-   "sha256": "4c8f370dfd20c35f9f9ba1dd712ae8cedae563a2129caa00c8913d499c7f7f23",
+   "bytes": 22706,
+   "sha256": "3515dc3065dc1386f9af9853425df9a8ab43bc311b3347c97f9335eb04ba9713",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/22-1871-prescription-ordinance.html",
    "used_for": "parsed into 22-1871-prescription-ordinance-consolidated.json"
+  },
+  {
+   "file": "26-2014-prescription-ordinance-amendment.pdf",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 63288,
+   "sha256": "5589567bc921817e7c04e0dcc33f4057f4c212272be6071f46bbf1cc0a0f1e9b",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/incoming/26-2014-prescription-ordinance-amendment.pdf",
+   "used_for": "parsed into 26-2014-prescription-ordinance-amendment.json"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-4.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 21496722,
+   "sha256": "9962cbf555576070b34fdb1f82e67905b01c16a0b16aa2fab1f11148c76e4b34",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-4.pdf",
+   "used_for": "1980 revised edition, Vol. IV Cap. 81 (PDF pp. 270-272); chain header 'Ordinances Nos. 22 of 1871, 2 of 1889. [1st January, 1872.]'; all 15 sections and the chain header checked against the tree by word-level coverage (4.20% unmatched, residue: front matter, running headers, letter-spaced OCR noise, 'hereinbefore' spacing)"
   }
  ],
- "statute_note": "Verification: unverified. All 15 sections recovered via parser fix (sections 1-3 had optional <font> wrapper)."
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "22-1871-prescription-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Ordinance No. 2 of 1889",
+  "cutoff_evidence": "HTML chain header reads 'Ordinance Nos, 22 of 1871 2 of 1889 [1st January, 1872]'; the 1980 revised edition (Vol. IV Cap. 81, PDF p. 270) reads 'Ordinances Nos. 22 of 1871, 2 of 1889. [1st January, 1872.]'. No inline markers.",
+  "post_baseline_applied": [
+   "26-2014"
+  ]
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "2-1889",
+   "title": "Ordinance No. 2 of 1889 (title not held; named only in the chain headers)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header of both held consolidated editions; its own text is not held (pre-1956, no standalone copy located)",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "26-2014",
+   "title": "Prescription (Amendment) Act, No. 26 of 2014",
+   "classification": "applied_from_held_source",
+   "reason": "Government Printer PDF with a text layer, certified 08th August 2014; post-dates both consolidated editions and is not in either chain header; s.2 repeals and substitutes s.15 and is applied to the tree with the baseline wording kept in text_before_amendment; s.3 (Sinhala text to prevail) amends nothing. The RUBRIK lists it as 'not read'; it is now parsed and packaged",
+   "source_path": "data/legal-sources/library/amendments/incoming/26-2014-prescription-ordinance-amendment.pdf",
+   "held": true
+  }
+ ],
+ "source_conflicts": [
+  "Spelling/spacing: HTML 'herein before' (6 sites) vs revised edition 'hereinbefore' (4 legible sites). Left as the HTML prints it.",
+  "Chapter number: Act No. 26 of 2014 cites the Ordinance as Chapter 68 (1956 revision); both consolidated editions print Chapter 81 (1980 revision). Same Ordinance."
+ ],
+ "statute_note": "Principal source selected: LankaLaw consolidated HTML (statutes/HTML/22-1871-prescription-ordinance.html), chain to Ordinance No. 2 of 1889; the finalized tree is byte-identical to the canonical parse SRC071-22-1871.json before this pass's hand corrections. Other sources inspected: Legislative Enactments 1980 Vol. IV Cap. 81 (registry PDF, text layer, PDF pp. 270-272), used as the verification source and carried in the package; Government Printer PDF of Act No. 26 of 2014 (text layer, 3 pp), parsed with parse_amendment_pdf.py and hand-corrected. No copy of Ordinance No. 2 of 1889 is held. Consolidation cutoff: Ordinance No. 2 of 1889 (both editions). Review performed: one worker; section list (1-15) and chain header compared with the Cap. 81 print; word-level coverage of the tree against the Cap. 81 text (1738 words, 73 unmatched = 4.20%: front matter, running headers, letter-spaced OCR noise, 'hereinbefore'); s.15 read against the amending Act. Headings were not read one by one against the print; no Step 7 subagent rounds. Amendment coverage: 2 reconciliation rows; 2 of 1889 in the baseline, 26 of 2014 applied (one operation, recorded in applied_amendments_log and on s.15). Nothing applied twice. OCR or structural weaknesses: none from OCR (both sources have text layers). The compendium text layer is letter-spaced in places. Missing sources: Ordinance No. 2 of 1889 text. Unresolved questions: whether the Ordinance has been amended between 1889 and 2014 by any instrument neither edition lists (the LankaLaw regex-based marker scan cannot show a negative). The RUBRIK's 'Parsed from the HTML edition: 3 sections' line is stale (the parser fix that recovered ss. 4-15 is recorded in canonical-overrides.json) and should be regenerated. Lawyer verification: unverified.",
+ "lawyer_verification": "unverified"
 }

@@ -10,8 +10,29 @@
    "edition": "consolidated",
    "bytes": 10582506,
    "sha256": "f7b98dc6c90c2c4a023a527b6d869b10f38332e1c4f4324a42e9b3affed32375",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/statutes/6-1990-western-province-financial-statute.pdf",
    "used_for": "parsed into 6-1990-western-province-financial-statute-consolidated.json"
+  },
+  {
+   "file": "4-2014-western-province-financial-statute-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 31117,
+   "sha256": "93239585ca9d7584ae8648d57a12c8179c0491b719f4036a03b4ed4440aacab1",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/4-2014-western-province-financial-statute-amendment.pdf",
+   "used_for": "Gazette Extraordinary No. 1894/15 of 23.12.2014, Part IV(A), text layer; title read: Financial (Amendment) Statute of the Western Province, No. 04 of 2014, assented 05.11.2014; substitutes the long title and inserts Chapter XXIX a (ss.97a, 97b); recites an unheld Statute No. 02 of 2010; post-dates the 1992 cutoff, held but not applied"
+  },
+  {
+   "file": "1-2016-western-province-financial-statute-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 117358,
+   "sha256": "77dc9bece34b11d297811da7b5e24cb758eab2a8ad64ef9002c0af0b827c95ea",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/1-2016-western-province-financial-statute-amendment.pdf",
+   "used_for": "Gazette Extraordinary No. 1986/30 of 28.09.2016, Part IV(A), text layer; title read: Western Provincial Finance (Amendment) Statute No. 01 of 2016, assented 07.09.2016; repeals and replaces a 'Section 102(a)' the 1992-cutoff baseline does not contain; held but not applied"
   },
   {
    "file": "6-1990-western-province-financial-statute.txt",
@@ -19,9 +40,81 @@
    "edition": "",
    "bytes": 347069,
    "sha256": "a26018dd2ef53628928b829b6d99a80a4eb1c42c76c092ef2788acc90e3bb352",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/ocr/6-1990-western-province-financial-statute.txt",
-   "used_for": "3-lens subagent review, 2 rounds; OCR quality prevents higher confidence"
+   "used_for": "offline doctr OCR sidecar of the registry scan (no text layer); the tree was parsed from this reading; scan pages 1-3, 9, 13, 18, 33, 36, 43, 45, 47, 57, 62, 63, 67, 77 proof-read against pdftoppm renders in this pass, corrections listed in the tree"
   }
  ],
- "statute_note": "Registry PDF is a scan with no text layer; parsed from an offline doctr OCR reading (data/legal-sources/library/statutes/ocr/6-1990-western-province-financial-statute.txt), which carries real reading errors including word-order scrambling from a two-column layout. This is a materially weaker basis than any other statute finalized so far; see canonical-overrides.json for five documented residues."
+ "statute_note": "Principal source: the registry PDF data/legal-sources/library/statutes/6-1990-western-province-financial-statute.pdf, an 84-page scan with no text layer of a 1997 reprint 'Printed on the orders of Western Province Provincial Council', read through the offline doctr sidecar statutes/ocr/6-1990-western-province-financial-statute.txt from which the 108-section tree was parsed. Other sources inspected: none exist for the principal text; the two held Gazette Extraordinary PDFs of the 2014 and 2016 amending statutes (both with text layers) were read in full. Consolidation cutoff: Statute No. 4 of 1992, from the title page and Foreword; the reprint names no amending instrument and carries no inline markers. Review performed: this pass rendered 16 of the 84 scan pages (1-3, 9, 13, 18, 33, 36, 43, 45, 47, 57, 62, 63, 67, 77) with pdftoppm and proof-read s.1, s.2's marginal note, both s.43 provisions, s.63 and each of the twelve sections without a marginal note against the image; 12 corrections are listed in the tree's corrections with page, span, reading and confidence. Earlier passes were a 3-lens subagent read against the OCR text only (2 rounds). Findings: s.1's heading is 'Short title and date of.' and its two subsections are printed (i)/(ii); the second s.43 is printed '43.(a)' with a closing quotation mark and no marginal note, so the duplicate number is a numbering convention of the print, not a parse error, and the 'e' heading was a stray mark; the 'Inconsistant' passage is a separate printed statement beneath the long title, now in editorial_notes; all twelve headingless sections genuinely carry no marginal note (the Table of Sections prints '- do -' for each). Amendment coverage: four reconciliation rows; nothing applied. Statutes 4 of 2014 and 1 of 2016 are held with text layers but sit on unheld intervening instruments (Statute No. 02 of 2010 is recited) and on provisions this baseline does not contain, so both are held_but_not_applied. OCR and structural weaknesses: 68 of 84 pages remain unproofed and the column-order scramble corrected in s.1 and s.43 should be expected elsewhere; s.89's Criminal Procedure Code reference still resolves internally to a non-existent s.291 (parser limitation); the tree has no Part/Chapter nodes although the print has both. Missing sources: every Western Province amending statute to No. 4 of 1992, Statute No. 02 of 2010, and any other instrument between 1992 and 2016. Unresolved: whether '43.(a)' is to be cited as 43A; the exact list of instruments folded into the reprint; how ss.97a-97b and the 2016 s.102(a) relate to the 1992 text. Index reports 124 sections against the tree's 108 (index built from a different pass; not reconciled here). Lawyer verification: unverified. Pipeline status needs_structural_review because the text rests on a single, largely unproofed OCR reading and two held amendments could not be applied.",
+ "pipeline_status": "needs_structural_review",
+ "baseline": {
+  "file": "6-1990-western-province-financial-statute-consolidated.pdf",
+  "edition": "consolidated (reprint; the Foreword says it 'is however, not a statutory reprint')",
+  "publisher": "as printed: 'Printed on the orders of Western Province Provincial Council'; Foreword signed 'H. D. J. B. Hycinth, Commissioner of Revenue, Western Province, 01st October 1997'; file served by the Western Province Department of Revenue site",
+  "consolidation_cutoff": "Statute No. 4 of 1992 (Western Province; the amending instruments are not named anywhere in the reprint)",
+  "cutoff_evidence": "title page (scan pp. 1-2): 'FINANCIAL STATUTE OF THE WESTERN PROVINCE NO. 06 OF 1990 (Certified on 29th October, 1990) Incorporating Amendments up to No. 4 of 1992'; Foreword (scan p. 3): 'incorporating all amendments ending with amendment No. 4 of 1992'. Read on the rendered image, not only in OCR.",
+  "ocr_sidecar": "6-1990-western-province-financial-statute.txt",
+  "post_baseline_applied": []
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "unnamed-to-4-1992",
+   "title": "not stated; the reprint says only 'Incorporating Amendments up to No. 4 of 1992'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "the reprint folds in every Western Province amending statute to No. 4 of 1992 without naming them; no inline markers; the second s.43 ('43.(a)', printed with a closing quotation mark and no marginal note) is the one visibly inserted provision. None of those instruments is held.",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "2-2010",
+   "title": "Statute No. 02 of 2010 (Western Province; title not held; recited in the long title of the 2014 amending statute as 'AMENDED BY STATUTE NO. 02 OF 2010')",
+   "classification": "known_but_not_held",
+   "reason": "named only in the 2014 instrument's recital; not held, not in the RUBRIK entry",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "4-2014",
+   "title": "FINANCIAL (AMENDMENT) STATUTE OF THE WESTERN PROVINCE, NO. 04 OF 2014 (Gazette Extraordinary No. 1894/15 of 23.12.2014, Part IV(A); Governor's assent 05.11.2014)",
+   "classification": "held_but_not_applied",
+   "reason": "post-dates the 1992 cutoff. Its operative text (English version of a Sinhala-prevailing statute) s.2 substitutes the long title, s.3 inserts Chapter XXIX a 'Nation Building Tax and Stamp Duty', ss.97a and 97b, before s.97, s.4 Sinhala text prevails. Not applied because it sits on top of an unheld Statute No. 02 of 2010 and possibly other post-1992 instruments, so the text it amends cannot be shown to be the text this baseline holds; the English is itself a translation ('Be it enforced as follows', 'non-complies').",
+   "source_path": "data/legal-sources/library/amendments/4-2014-western-province-financial-statute-amendment.pdf",
+   "held": true,
+   "operations_not_applied": [
+    {
+     "amending_section": "2",
+     "target": "long title (the printed statement beginning 'This Statute is Inconsistant...')",
+     "status": "not_applied",
+     "reason": "intervening Statute No. 02 of 2010 not held"
+    },
+    {
+     "amending_section": "3",
+     "target": "new Chapter XXIX a, ss.97a-97b before s.97",
+     "status": "not_applied",
+     "reason": "same"
+    }
+   ]
+  },
+  {
+   "instrument": "1-2016",
+   "title": "WESTERN PROVINCIAL FINANCE (AMENDMENT) STATUTE No. 01 OF 2016 (Gazette Extraordinary No. 1986/30 of 28.09.2016, Part IV(A); assent 07.09.2016)",
+   "classification": "held_but_not_applied",
+   "reason": "post-dates the cutoff. s.2 repeals 'Section 102(a) of the main statute' and substitutes a 'Revenue Incentive Fund' section with paragraphs (a)-(h). The baseline's s.102 is 'Official secrecy' and has no paragraph (a); the provision it replaces was evidently inserted by an instrument between 1992 and 2016 that is not held (the 2016 long title recites amendment 'BY STATUTE NO. 04 OF 2014'). Nothing in the held text can be matched, so not applied.",
+   "source_path": "data/legal-sources/library/amendments/1-2016-western-province-financial-statute-amendment.pdf",
+   "held": true,
+   "operations_not_applied": [
+    {
+     "amending_section": "2",
+     "target": "102(a) (not in baseline)",
+     "status": "not_applied",
+     "reason": "target provision absent from the 1992-cutoff text; intervening instrument not held"
+    }
+   ]
+  }
+ ],
+ "source_conflicts": [
+  "The only text is a single offline doctr OCR reading of a scan with no text layer. No second copy of the statute is held; nothing can be cross-checked except by rendering the image.",
+  "The 2014 amending statute refers to this instrument as the 'Financial Statute of Western Province No. 06 of 1990'; the 2016 one as the 'Western Provincial Finance Statute No. 06 of 1990'; the reprint's s.1 says 'Financial Statute of the Western Province No. 06 of 1990'. Registry title 'Western Province Financial Statute' matches none of the three word for word."
+ ],
+ "lawyer_verification": "unverified"
 }

@@ -10,8 +10,8 @@
   "year": 1964
  },
  "date_stated_in_source": "1st April, 1975",
- "commencement": "1964-04-01",
- "commencement_source": "statute_commencement.csv (srilankalaw)",
+ "commencement": "1975-04-01",
+ "commencement_source": "head date '[1st April, 1975]' printed in both held consolidated editions (LankaLaw HTML; Legislative Enactments 1980 Vol. III Cap. 601, PDF p. 254); s.1 of the Act as enacted (Government Printer scan, statutes/incoming/local-authorities-housing-ordinance-14-1964.pdf, p. 2) reads 'shall come into operation on such date (hereafter in this Act referred to as the \"appointed date\") as the Minister may appoint by Order published in the Gazette', and s.12 defines the appointed date as 1st April 1975. statute_commencement.csv gives 1964-04-01 (kept in commencement_csv_value); that is the year of enactment, not the date of operation.",
  "language": "en",
  "edition": {
   "publisher": "lankalaw",
@@ -30,7 +30,14 @@
  "verification_status": "unverified",
  "content_completeness": "",
  "amendment_history_status": "listed_in_source_header",
- "editorial_notes": [],
+ "editorial_notes": [
+  {
+   "in": "section 5A",
+   "anchor_text": "Where prior to the 15th day of October, 1979",
+   "text": "Act No. 63 of 1979 s.3 reads 'Where prior to the date of coming into force of this section' (four sites) and, in 5A(3)(a), 'the Secretary to the Ministry of the Minister in charge of the subject of Local Government'. The consolidated editions read '15th day of October, 1979' (the Act's certification date) and 'the Secretary to the Ministry charged with the subject of Local Government'. Revisers' substitutions, kept as the consolidated editions print them.",
+   "kind": "consolidated text differs from the amending Act as enacted"
+  }
+ ],
  "omitted_provisions": [],
  "overrides_applied": {
   "checked_against": "data/legal-sources/library/statutes/HTML/14-1964-local-authorities-housing-act.html",
@@ -38,9 +45,9 @@
  },
  "quality_flags": [
   {
-   "code": "appointed_date_distinct_from_commencement",
-   "detail": "commencement (1964-04-01, from statute_commencement.csv) and the defined term \"appointed date\" (1st April, 1975, used within the Act for the vesting provisions in sections 2/3) are two different concepts, not a discrepancy: the Act commenced in 1964, but the vesting provisions it enacts only take effect from a later appointed date it defines separately. Same pattern already seen for other statutes (e.g. Mortgage Act).",
-   "status": "not_a_defect"
+   "code": "commencement_corrected_from_held_prints",
+   "detail": "The earlier flag treated 1964-04-01 (statute_commencement.csv) and the appointed date 1st April 1975 as two different concepts. Section 1 of the Act as enacted says the Act comes into operation on the appointed date, so they are the same date. commencement is now 1975-04-01; the CSV row is the one to correct.",
+   "status": "corrected"
   },
   {
    "code": "source_typos",
@@ -49,16 +56,16 @@
     "4",
     "5A"
    ],
-   "issue": "Three genuine source-level errors confirmed against the raw HTML, not parser artifacts: section 1 heading reads \"Short tile.\" (for \"title\"); section 4 heading reads \"Special provisions of regarding value house...\"; section 5A(3) lists its third item as \"(hi)\" instead of \"(iii)\". Kept as printed.",
-   "status": "source_as_printed"
+   "issue": "Section 1 heading reads 'Short tile.' in both held consolidated editions (HTML and Cap. 601 print); the Act as enacted reads 'Short title and date of operation.' Kept as the consolidated editions print it. Section 4 heading was garbled in the HTML ('Special provisions of regarding value house...') and is corrected from the prints (heading_raw kept). Section 5A(3) enumerator '(hi)' corrected to '(iii)' from the Government Printer print of Act No. 63 of 1979 (raw_text keeps '(hi)'; the compendium text layer, itself OCR, also reads '(hi)').",
+   "status": "partly_corrected_see_provenance"
   },
   {
    "code": "malformed_amendment_marker_not_extracted",
    "sections_affected": [
     "3"
    ],
-   "issue": "Section 3(3)(b)'s amendment marker is corrupted in the source itself -- body text is interleaved word-for-word inside the bracket: \"[section 2, 63 of is given by that local authority to 1979]\" instead of the normal \"[2, 63 of 1979]\". Confirmed against the raw HTML; not something any reasonable marker regex could parse. Left unextracted rather than guessed at.",
-   "status": "source_as_printed"
+   "issue": "Section 3(3)(b)'s amendment marker is corrupted in the source itself -- body text is interleaved word-for-word inside the bracket: \"[section 2, 63 of is given by that local authority to 1979]\" instead of the normal \"[2, 63 of 1979]\". Confirmed against the raw HTML; not something any reasonable marker regex could parse. Left unextracted rather than guessed at. Resolved by hand on 2026-09-05: the amending Act's own text (Act No. 63 of 1979 s.2, Government Printer scan p. 2) substitutes paragraph (b) of s.3(3); the event is recorded on that paragraph and the interleaved marker words removed from its text (raw_text keeps the HTML reading).",
+   "status": "resolved_by_hand_from_amending_act"
   }
  ],
  "source_location": {},
@@ -196,9 +203,21 @@
        "type": "paragraph",
        "number": "b",
        "raw_text": "(b) unless six months' notice in writing [§ 2, 63 of is given by that local authority to 1979] the first-mentioned person of its intention to so let such house to some other person and alternate accommodation is provided for the first-mentioned person by that local authority.",
-       "text": "unless six months' notice in writing [§ 2, 63 of is given by that local authority to 1979] the first-mentioned person of its intention to so let such house to some other person and alternate accommodation is provided for the first-mentioned person by that local authority.",
-       "amendment_events": [],
-       "cross_references": []
+       "text": "unless six months' notice in writing is given by that local authority to the first-mentioned person of its intention to so let such house to some other person and alternate accommodation is provided for the first-mentioned person by that local authority.",
+       "amendment_events": [
+        {
+         "amending_act": "63 of 1979",
+         "amending_act_no": 63,
+         "amending_year": 1979,
+         "amending_section": "2",
+         "operation": "substitute",
+         "verbatim": "[§ 2, 63 of is given by that local authority to 1979]",
+         "verbatim_note": "as the HTML prints it, with body words interleaved inside the bracket",
+         "corroborated_by": "63-1979 s.2 'Amendment of section 3 of Act No. 14 of 1964' substitutes paragraph (b) of subsection (3); wording checked against the Government Printer scan p. 2"
+        }
+       ],
+       "cross_references": [],
+       "text_raw_html": "unless six months' notice in writing [§ 2, 63 of is given by that local authority to 1979] the first-mentioned person of its intention to so let such house to some other person and alternate accommodation is provided for the first-mentioned person by that local authority."
       }
      ]
     }
@@ -207,7 +226,7 @@
   {
    "type": "section",
    "number": "4",
-   "heading": "Special provisions of regarding value house for the purposes of determining rent",
+   "heading": "Special provisions regarding value of house for the purposes of determining rent.",
    "raw_text": "4. Where any house to which this Act applies is let by a local authority under the \"provisions of section 3 (1) to a person who is at the time of such letting in occupation of such house as a tenant, the local authority shall, in the determination of the amount payable by such person by way of rent upon such letting, set off against the value of that house at the date of such letting a sum calculated at the rate of one per centum of the valuation of that house for each year of occupation or part thereof by such person prior to the date of such letting.",
    "text": "Where any house to which this Act applies is let by a local authority under the \"provisions of section 3 (1) to a person who is at the time of such letting in occupation of such house as a tenant, the local authority shall, in the determination of the amount payable by such person by way of rent upon such letting, set off against the value of that house at the date of such letting a sum calculated at the rate of one per centum of the valuation of that house for each year of occupation or part thereof by such person prior to the date of such letting.",
    "amendment_events": [],
@@ -219,7 +238,9 @@
      "target_subsection": "1",
      "verbatim": "section 3 (1)"
     }
-   ]
+   ],
+   "heading_raw": "Special provisions of regarding value house for the purposes of determining rent",
+   "heading_source": "as-enacted print p. 2 marginal note; Cap. 601 print p. 256 (which itself misprints 'determmining')"
   },
   {
    "type": "section",
@@ -276,8 +297,9 @@
      "amending_act_no": 63,
      "amending_year": 1979,
      "amending_section": "3",
-     "operation": "unknown",
-     "verbatim": "[ 3, 63 of 1979]"
+     "operation": "insert",
+     "verbatim": "[ 3, 63 of 1979]",
+     "corroborated_by": "63-1979 s.3 'Insertion of new section 5A in the principal enactment'"
     }
    ],
    "cross_references": [],
@@ -362,7 +384,7 @@
      "type": "subsection",
      "number": "3",
      "raw_text": "(3) Where the Advisory Board constituted for a local authority decides that the tenant or person in occupation, as the case may be, of a house referred to in subsection (2) does not satisfy the requirements set out in paragraphs (i), (ii) and (hi) of that subsection-",
-     "text": "Where the Advisory Board constituted for a local authority decides that the tenant or person in occupation, as the case may be, of a house referred to in subsection (2) does not satisfy the requirements set out in paragraphs (i), (ii) and (hi) of that subsection-",
+     "text": "Where the Advisory Board constituted for a local authority decides that the tenant or person in occupation, as the case may be, of a house referred to in subsection (2) does not satisfy the requirements set out in paragraphs (i), (ii) and (iii) of that subsection-",
      "amendment_events": [],
      "cross_references": [
       {
@@ -655,11 +677,13 @@
   {
    "type": "section",
    "number": "10",
-   "heading": "Signing of documents on behalf of",
+   "heading": "Signing of documents on behalf of local authority.",
    "raw_text": "10. The Mayor of a Municipal Council or his representative or, in the case of any local authority, other local authority, the Chairman of that local authority is hereby authorized to sign on behalf of that local authority all documents required to be signed or executed in the exercise, discharge or performance by that local authority under this Act of any powers, functions or duties.",
    "text": "The Mayor of a Municipal Council or his representative or, in the case of any local authority, other local authority, the Chairman of that local authority is hereby authorized to sign on behalf of that local authority all documents required to be signed or executed in the exercise, discharge or performance by that local authority under this Act of any powers, functions or duties.",
    "amendment_events": [],
-   "cross_references": []
+   "cross_references": [],
+   "heading_raw": "Signing of documents on behalf of",
+   "heading_source": "Cap. 601 print p. 257 marginal note"
   },
   {
    "type": "section",
@@ -741,7 +765,7 @@
   {
    "type": "section",
    "number": "11A",
-   "heading": "This Act not to apply to houses to officers or servants of local authorities.",
+   "heading": "This Act not to apply to houses to which this Act applies let to officers or servants of local authorities.",
    "raw_text": "11A. Nothing in this Act shall apply to, or in relation to, any house to which this Act applies which has been let by a local authority to an officer or servant of that local authority as official quarters.",
    "text": "Nothing in this Act shall apply to, or in relation to, any house to which this Act applies which has been let by a local authority to an officer or servant of that local authority as official quarters.",
    "amendment_events": [
@@ -750,11 +774,14 @@
      "amending_act_no": 63,
      "amending_year": 1979,
      "amending_section": "4",
-     "operation": "unknown",
-     "verbatim": "[ 4, 63 of 1979]"
+     "operation": "insert",
+     "verbatim": "[ 4, 63 of 1979]",
+     "corroborated_by": "63-1979 s.4 'Insertion of new section 11A in principal enactment'"
     }
    ],
-   "cross_references": []
+   "cross_references": [],
+   "heading_raw": "This Act not to apply to houses to officers or servants of local authorities.",
+   "heading_source": "Cap. 601 print p. 257 marginal note; Act No. 63 of 1979 s.4 (Government Printer scan p. 5)"
   },
   {
    "type": "section",
@@ -824,5 +851,33 @@
     }
    ]
   }
- ]
+ ],
+ "commencement_csv_value": "1964-04-01",
+ "alternate_titles": [
+  {
+   "title": "Local Authorities Housing Act",
+   "source": "registry official_title; s.1 short title agrees"
+  }
+ ],
+ "source_conflicts": [
+  "Commencement: statute_commencement.csv 1964-04-01 vs head date 1st April 1975 in both consolidated editions; resolved to 1975-04-01 from s.1 of the Act as enacted (see commencement_source).",
+  "Headings: HTML ss. 4, 10, 11A garbled or truncated against the Cap. 601 print and the as-enacted print; corrected, heading_raw kept.",
+  "Wording: the Act as enacted reads 'Crown land(s)'; both consolidated editions read 'State land(s)' (revisers' substitution). Consolidated wording kept."
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "against": "Legislative Enactments 1980 Vol. III Cap. 601 (PDF pp. 254-257, text layer, letter-spaced) via pdftotext -layout and check_parse_coverage.py; Government Printer scan of Act No. 63 of 1979 (5 pp, no text layer) rendered and read page by page; Government Printer scan of the Act as enacted (7 pp, no text layer), title page and pp. 2-3 rendered and read",
+  "what_changed": [
+   "commencement: 1964-04-01 (statute_commencement.csv) -> 1975-04-01; reasoning in commencement_source; CSV value kept",
+   "s.4 heading: 'Special provisions of regarding value house for the purposes of determining rent' -> 'Special provisions regarding value of house for the purposes of determining rent.' (as-enacted print p. 2 marginal note; Cap. 601 print p. 256 (which itself misprints 'determmining'))",
+   "s.10 heading: 'Signing of documents on behalf of' -> 'Signing of documents on behalf of local authority.' (Cap. 601 print p. 257 marginal note)",
+   "s.11A heading: 'This Act not to apply to houses to officers or servants of local authorities.' -> 'This Act not to apply to houses to which this Act applies let to officers or servants of local authorities.' (Cap. 601 print p. 257 marginal note; Act No. 63 of 1979 s.4 (Government Printer scan p. 5))",
+   "s.3(3)(b): interleaved marker words removed from text (HTML reading kept in text_raw_html); substitute event by Act 63 of 1979 s.2 recorded",
+   "s.5A: marker operation 'unknown' -> 'insert', corroborated by Act 63 of 1979 s.3",
+   "s.11A: marker operation 'unknown' -> 'insert', corroborated by Act 63 of 1979 s.4",
+   "s.5A(3): '(hi)' -> '(iii)' in text (raw_text keeps '(hi)'); the Government Printer print of Act 63 of 1979 reads '(iii)'"
+  ],
+  "note": "Re-running build_canonical_statutes.py writes data/processed/canonical-statutes/SRC073-14-1964.json, not this file."
+ }
 }

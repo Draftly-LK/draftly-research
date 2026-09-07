@@ -1,0 +1,58 @@
+{
+ "statute": "Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act",
+ "source_id": "SRC037",
+ "note": "Every source actually used to build the canonical trees in library/finalized/5-2017-revocation-of-irrevocable-deeds-of-gift-act. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "5-2017-revocation-of-irrevocable-deeds-of-gift-act.pdf",
+   "role": "principal statute",
+   "edition": "as_enacted",
+   "bytes": 65248,
+   "sha256": "a263ef357d12d132af5825251acbae280702daa2586d82bc17090a8f1f407a55",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/5-2017-revocation-of-irrevocable-deeds-of-gift-on-the-ground-of-gross-ingratitude-act.pdf",
+   "used_for": "parsed into 5-2017-revocation-of-irrevocable-deeds-of-gift-act.json"
+  },
+  {
+   "file": "Revocation Of Irrevocable Deeds Of Gift On The Ground Of Gross Ingratitude Act.txt",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 3785,
+   "sha256": "76552c93b906980c396f0460ad59c3dd4e4f8bd5b651881abb941b014156be3d",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/Revocation Of Irrevocable Deeds Of Gift On The Ground Of Gross Ingratitude Act.txt",
+   "used_for": "paralegal.lk consolidated page text (source unstated on the page beyond the paralegal.lk banner); read as a second copy of all seven sections and found to agree word for word with the Government Printer print"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "5-2017-revocation-of-irrevocable-deeds-of-gift-act.pdf",
+  "edition": "as_enacted",
+  "publisher": "Department of Government Printing, Sri Lanka (cover: 'PRINTED AT THE DEPARTMENT OF GOVERNMENT PRINTING, SRI LANKA')",
+  "consolidation_cutoff": "not applicable (Act as enacted; no amendment chain header)",
+  "cutoff_evidence": "Cover: 'REVOCATION OF IRREVOCABLE DEEDS OF GIFT ON THE GROUND OF GROSS INGRATITUDE ACT, No. 5 OF 2017 [Certified on 4th of April, 2017] ... Published as a Supplement to Part II of the Gazette of the Democratic Socialist Republic of Sri Lanka of April 7, 2017'. No chain header and no inline markers anywhere in the text."
+ },
+ "amendment_reconciliation": [],
+ "amendment_reconciliation_note": "No amending instrument is named in the RUBRIK entry ('Amendments: none recorded'), in the curriculum tables, in the print (as enacted, no chain) or held on disk under 5-2017 or any other number-year for this Act. None known does not mean unamended; a lawyer should confirm against a current source.",
+ "sources_inspected": [
+  {
+   "path": "data/legal-sources/library/statutes/5-2017-revocation-of-irrevocable-deeds-of-gift-on-the-ground-of-gross-ingratitude-act.pdf",
+   "what": "Government Printer PDF, 4 pages, text layer; selected as principal"
+  },
+  {
+   "path": "data/legal-sources/library/statutes/HTML/Revocation Of Irrevocable Deeds Of Gift On The Ground Of Gross Ingratitude Act.txt",
+   "what": "plain-text dump of a paralegal.lk 'Current Act / Consolidated view' page (banner 'paralegal.lk Logo ... Current Act'; the page's own source is not stated); all seven sections present and agreeing word for word with the print; included as a verification source"
+  },
+  {
+   "path": "data/legal-sources/library/statutes/parsed/5-2017-revocation-of-irrevocable-deeds-of-gift-on-the-ground-of-gross-ingratitude-act.json",
+   "what": "older LLM extraction whose raw_text carries the same column-splice damage as the parser output (marginal notes inside sentences); looked at for comparison only, not used and not packaged"
+  },
+  {
+   "path": "data/processed/canonical-statutes/SRC037-5-2017-as_enacted.json",
+   "what": "output of parse_consolidated_pdf.py --edition as_enacted, written by this pass; structurally wrong (see provenance.what_changed in the tree) and superseded by the hand-corrected finalized copy"
+  }
+ ],
+ "statute_note": "Principal source: the Government Printer PDF of Act No. 5 of 2017 as certified (text layer, 4 pages), parsed with parse_consolidated_pdf.py --edition as_enacted and then re-transcribed by hand because the parser split the single-column page at the wrong column and spliced every marginal note into the operative text. Other sources inspected: the paralegal.lk page text under statutes/HTML/ (agrees word for word; packaged as a verification source) and the older LLM extraction under statutes/parsed/ (comparison only). Consolidation cutoff: not applicable; this is the Act as enacted with no chain header and no markers. Review: all seven sections, both definitions, every marginal-note heading, the long title, the enacting formula, the certification and Gazette dates and the Legal Draftsman number were read word for word against pdftotext -layout output of the print; coverage check on the parser tree reported 461 source words, 2 unmatched (0.43%), both being the enumerators '2' and '3'; validate_finalized_trees.py reports 0 errors, 0 warnings. Amendment coverage: no amending instrument is known from the RUBRIK, the curriculum, the print or disk; nothing applied. Structural weaknesses: none known in the finalized tree; the canonical parser output under data/processed is not usable for this Act without the hand correction recorded in provenance.what_changed. Missing sources: none required. Unresolved questions: (1) the curriculum cites this Act as 'No. 7 of 2017' (data/legal-sources/conveyancing-source-checklist.md line 105, PRIMARY-STATUES.md line 106); the print, section 1 and the registry say No. 5 of 2017, and the registry note already records the correction; (2) the Act has no commencement section, so whether 2017-04-04 (certified) or 2017-04-07 (Gazette) is its commencement is for a lawyer; the tree carries the CSV value 2017-04-07 with a note; (3) the registry title capitalises 'Ground' where section 1 prints 'ground'. Lawyer verification: unverified. verification_status in the tree is structurally_verified, which speaks to structure and transcription against the print only, not legal effect.",
+ "lawyer_verification": "unverified"
+}

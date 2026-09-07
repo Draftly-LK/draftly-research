@@ -1,0 +1,52 @@
+{
+ "statute": "Thesawalamai Pre-emption Ordinance",
+ "source_id": "SRC046",
+ "note": "Every source actually used to build the canonical trees in library/finalized/59-1947-thesawalamai-pre-emption-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "59-1947-thesawalamai-pre-emption-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 31092,
+   "sha256": "19d78d99b24cc4c1b32cc6447d33af82582bef418c02e7117b8c28f83656e936",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/59-1947-tesawalamai-pre-emption-ordinance.html",
+   "used_for": "parsed into 59-1947-thesawalamai-pre-emption-ordinance.json"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-5.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 12846618,
+   "sha256": "f0573b27f15490956edae2c5c6516f91cc5d91078c0c893427acd41137005a26",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-5.pdf",
+   "used_for": "1980 revised edition, Cap. 74 (Vol. IV pp. 46-48, PDF pp. 469-471); chain header 'Ordinance No. 59 of 1947.' only, dated '[1st July. 1948.]'; all 14 sections read against the tree; prints 'Thesawalamai' and the s.13 reference to 'section 3'"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "59-1947-thesawalamai-pre-emption-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Ordinance No. 59 of 1947 (principal only; the chain names no amending instrument)",
+  "cutoff_evidence": "HTML chain header reads 'Ordinance Nos, 59 of 1947 [ 1 st July , 1948 ]'. The 1980 revised edition (Cap. 74, Vol. IV p. 46) prints 'Ordinance No. 59 of 1947.' and '[ 1 s t July. 1948.]'. No inline marker on either page."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "1-1911",
+   "title": "Jaffna Matrimonial Rights and Inheritance Ordinance, No. 1 of 1911 (per the corpus; the curriculum cites 'No. 1 of 1911' against this Ordinance)",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "Neither held edition names any instrument beyond the principal. No. 1 of 1911 is the Jaffna Matrimonial Rights and Inheritance Ordinance, a different statute (finalized/58-1947-matrimonial-rights-and-inheritance-jaffna-ordinance). Recorded as a curriculum discrepancy, not as an amendment.",
+   "source_path": null,
+   "held": false
+  }
+ ],
+ "source_conflicts": [
+  "Title: registry 'Tesawalamai Pre-emption Ordinance'; both held editions print 'Thesawalamai' in the heading, the long title and s.1.",
+  "s.13: both editions print 'within the meaning of section 3', which defines nothing; the tree records the printed words with likely_target_section 2. The error is in the source."
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML (data/legal-sources/library/statutes/HTML/59-1947-tesawalamai-pre-emption-ordinance.html, identifier 2001Y3V64C), parsed and hand-corrected by the earlier worker (14 sections, 2 provisos, one defined term, no Schedule). Other sources inspected: the 1980 revised edition compendium, Cap. 74 (statutes/legislative-enactments-1980-volume-5.pdf, Vol. IV pp. 46-48, PDF pp. 469-471, text layer; registry SRC046 local_pdf_path), read in full against the tree. Consolidation cutoff: the principal Ordinance alone. Review performed this pass: packaging pass. All 14 sections read against the 1980 print: section list, headings, the s.2(2) definition of 'heirs', the s.7(5) references to Chapter XXIV and s.333 of the Civil Procedure Code, the s.13 'section 3' error and the s.14 repeal wording all agree. The four typographic normalisations recorded in the tree ('intend-ing', 'pre -emption', 'pre -empt', 'within, a reasonable') are HTML artefacts; the 1980 print reads 'intending', 'pre-emption', 'pre-empt' and 'within a reasonable'. The tree's overrides_applied says no second edition was consulted; this pass supplies one, and the tree was not changed. Amendment coverage: none in either chain header, none on disk. The curriculum's 'No. 1 of 1911' has one row as a different statute. s.14 repeals so much of the Thesawalamai and of Ordinance No. 4 of 1895 as is inconsistent; that is a repeal by this Ordinance, not of it. OCR or structural weaknesses: none from OCR. Missing sources: none required. Unresolved questions: whether anything has amended this Ordinance since 1947; neither edition says so. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
+}

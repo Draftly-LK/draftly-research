@@ -1,0 +1,117 @@
+{
+ "statute": "State Lands Encroachments Ordinance",
+ "source_id": "SRC058",
+ "note": "Every source actually used to build the canonical trees in library/finalized/12-1840-state-lands-encroachments-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "12-1840-state-lands-encroachments-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 18553,
+   "sha256": "4f59ae862ce39f3a52fa635e6722a08954d74a5903799f1c9d3c63827edf2c22",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/12-1840-state-lands-encroachments-ordinance.html",
+   "used_for": "parsed into 12-1840-state-lands-encroachments-ordinance-consolidated.json"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-5.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 12846618,
+   "sha256": "f0573b27f15490956edae2c5c6516f91cc5d91078c0c893427acd41137005a26",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-5.pdf",
+   "used_for": "LankaLaw copy of the 1980 revised edition, volume 5; State Lands Encroachments is Cap. 288 at PDF pages 170 to 171 (printed XI/321 to XI/322), chain header 'Ordinances Nos.l2ofl840, 22 of 1931, 8 of 1947, Act No. 8 of 1954.' (as the text layer and the rendered page read it), head date '[27 th October. 1840.]'. Every section (1 to 10) read word for word against the tree: operative text agrees except 'wilful' (s.2) and 'wilfully' (s.9), which the HTML spells 'willful'/'willfully'; settled the period on the s.3 note. Its chain disagrees with the HTML chain ('8 of 1847', 'Act Nos, 8 of 1854'); neither copy carries inline markers, so the conflict is recorded, not resolved"
+  }
+ ],
+ "pipeline_status": "needs_structural_review",
+ "baseline": {
+  "file": "12-1840-state-lands-encroachments-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; the page names no publisher of the underlying revision). The page's URL pattern (1981Y11V288C) and the compendium's Cap. 288 place the text in the 1980 revised edition, volume XI.",
+  "consolidation_cutoff": "unknown",
+  "cutoff_evidence": "The two held copies disagree. HTML chain block: 'Ordinance Nos, 12 of 1840 12 of 1840 22 of 1931 8 of 1847 Act Nos, 8 of 1854' (the duplicated first row shows the block is damaged). Compendium header, PDF p. 170, text layer and rendered page: 'Ordinances Nos.l2ofl840, 22 of 1931, 8 of 1947, Act No. 8 of 1954.' The last instrument is therefore Act No. 8 of 1954 or 'Act' No. 8 of 1854 depending on the copy. No inline marker in either copy."
+ },
+ "alternate_edition": {
+  "file": "legislative-enactments-1980-volume-5.pdf",
+  "pdf_pages": [
+   170,
+   171
+  ],
+  "printed_pages": "XI/321 to XI/322",
+  "edition": "consolidated (1980 revised edition, Cap. 288)",
+  "publisher": "LankaLaw's watermarked copy of the 1980 revised edition of the Legislative Enactments; a re-typeset rendering whose page images reproduce the OCR-type errors of its text layer, so it is a second copy of the revised edition rather than a scan of the Government Printer's volume",
+  "consolidation_cutoff": "Act No. 8 of 1954 (as this copy prints it)",
+  "cutoff_evidence": "Printed header on PDF p. 170: 'Ordinances Nos.l2ofl840, 22 of 1931, 8 of 1947, Act No. 8 of 1954.' with head date '[27 th October. 1840.]'",
+  "why_not_baseline": "same text as the HTML word for word (apart from 'wilful'/'willful'); the HTML carries the structure and is the copy the parser reads. Used as the verification source; its chain is the alternative reading recorded in the conflict."
+ },
+ "source_conflicts": [
+  {
+   "field": "amendment chain (years of the second and third amending instruments)",
+   "html": "'8 of 1847' under 'Ordinance Nos,' and '8 of 1854' under 'Act Nos,' (data/legal-sources/library/statutes/HTML/12-1840-state-lands-encroachments-ordinance.html, lines 50 to 69); the block also repeats '12 of 1840'",
+   "compendium": "'8 of 1947,' under 'Ordinances' and 'No. 8 of 1954.' under 'Act' (PDF p. 170; text layer and rendered page agree)",
+   "internal_evidence": "Neither copy carries an inline marker, so no section can be tied to an instrument. Both copies label the third instrument an 'Act'; this corpus holds Acts numbered in 1954 and no 'Act' of 1854, and every pre-1947 instrument in it is an Ordinance, which favours the compendium reading but is inference, not a source. The held State Lands Ordinance, No. 8 of 1947 (SRC056) does not name this Ordinance, Cap. 288 or '12 of 1840', so it neither confirms nor refutes the compendium's '8 of 1947'.",
+   "resolution": "unresolved; the tree keeps the HTML chain in `amendments` (it was parsed from the HTML) and records both readings in amendment_chain_conflict. This is the reason for needs_structural_review."
+  },
+  {
+   "field": "ss.2 and 9 spelling",
+   "html": "'willful', 'willfully'",
+   "compendium": "'wilful', 'wilfully' (PDF pp. 170 to 171)",
+   "resolution": "compendium spelling adopted in text, as for SRC053; HTML readings kept in raw_text"
+  },
+  {
+   "field": "s.2 marginal notes",
+   "html": "one heading: 'Information of encroachment. Order for delivery up of possession. Penalty on disobedience of order or renewed encroachment.'",
+   "compendium": "three separate notes at three points of the section",
+   "resolution": "HTML concatenation kept as the heading; noted in the tree"
+  }
+ ],
+ "amendment_reconciliation": [
+  {
+   "instrument": "22-1931",
+   "title": "not stated in any held source (named only as \"22 of 1931\" in both chain headers)",
+   "classification": "known_but_not_held",
+   "reason": "In both chain headers; not held on disk under any name. Both held copies already incorporate it; no inline marker says which section it touched.",
+   "source_path": null
+  },
+  {
+   "instrument": "8-1947 (HTML: 8-1847)",
+   "title": "not stated in either chain header. If the compendium year is right, Ordinance No. 8 of 1947 is the number of the State Lands Ordinance (SRC056, held), whose held text does not mention this Ordinance.",
+   "classification": "known_but_not_held",
+   "reason": "Year disputed between the two held copies (see source_conflicts). No amending text is held under either year (RUBRIK: 'not held: not in the Act archive'). The State Lands Ordinance package was searched for 'Encroachments', 'Cap. 288' and '12 of 1840' with no hit, so it is not treated as the amending instrument. Both held copies already incorporate whatever this instrument did.",
+   "source_path": null
+  },
+  {
+   "instrument": "8-1954 (HTML: 8-1854)",
+   "title": "not stated in any held source",
+   "classification": "known_but_not_held",
+   "reason": "Year disputed between the two held copies (see source_conflicts); both copies label it an Act. Not held on disk under either year. Both held copies already incorporate it; no inline marker says which section it touched.",
+   "source_path": null
+  }
+ ],
+ "sources_inspected": [
+  {
+   "path": "data/legal-sources/library/statutes/HTML/12-1840-state-lands-encroachments-ordinance.html",
+   "what": "LankaLaw consolidated HTML, 18.9 KB, 10 sections, chain \"12 of 1840 12 of 1840 22 of 1931 8 of 1847 / Act Nos, 8 of 1854\"; selected baseline"
+  },
+  {
+   "path": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-5.pdf",
+   "what": "registry PDF; 1980 revised edition volume 5 as republished by LankaLaw, text layer; Cap. 288 at PDF pp. 170 to 171; verification source and the source of the alternative chain reading"
+  },
+  {
+   "path": "data/processed/canonical-statutes/SRC058-12-1840.json",
+   "what": "canonical tree built from the HTML (10 sections, 3 paragraphs, 1 definition); rebuilt with build_canonical_statutes.py --source-id SRC058 on 2026-09-05, byte-identical to the checked-in tree; copied into finalized/ and corrected by hand (see provenance)"
+  },
+  {
+   "path": "data/legal-sources/library/finalized/8-1947-state-lands-ordinance/",
+   "what": "State Lands Ordinance, No. 8 of 1947 (the number the compendium gives the second amending instrument); searched for 'Encroachments', 'Cap. 288', '12 of 1840': no hit beyond its own s.34 wording"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/",
+   "what": "listing checked for any file numbered 22-1931, 8-1847, 8-1947, 8-1854 or 8-1954: none; the folder does hold other Acts of 1954 (e.g. 20-1954-civil-procedure-code-amendment.pdf)"
+  }
+ ],
+ "statute_note": "Principal source: the LankaLaw consolidated HTML (chain block 'Ordinance Nos, 12 of 1840 12 of 1840 22 of 1931 8 of 1847 Act Nos, 8 of 1854'), parsed by build_canonical_statutes.py into a 10-section tree with paragraphs (a) to (c) and closing words in s.7 and one definition in s.10; no provisos, subsections or schedules. Other sources inspected: the registry's compendium PDF (1980 revised edition volume 5, Cap. 288 at PDF pp. 170 to 171, chain 'Ordinances Nos.l2ofl840, 22 of 1931, 8 of 1947, Act No. 8 of 1954.'), used as the verification source; the finalized State Lands Ordinance (8 of 1947) package; the amendments folder listing. Consolidation cutoff: unknown. The two copies disagree on the years of the second and third amending instruments (1847/1854 in the HTML against 1947/1954 in the compendium); neither carries an inline marker; nothing held settles it. Both readings are quoted in the manifest and in the tree's amendment_chain_conflict. Review performed: every section number, marginal note and the full text of all ten sections, three paragraphs and the definition compared word for word against the compendium text layer and its rendered pages; the two copies agree throughout apart from 'wilful'/'willful' (ss.2 and 9, corrected to the compendium spelling with raw_text kept) and the s.3 note's final period (added, heading_raw kept). validate_finalized_trees.py reports 0 errors and 0 warnings. Amendment coverage: three instruments known from the headers, none held; each has one reconciliation row; nothing applied. OCR or structural weaknesses: the HTML chain block is visibly damaged (duplicated '12 of 1840' row); the compendium's own header reads 'Nos.l2ofl840'. Both copies are LankaLaw republications; the compendium is not an independent print. Missing sources: a Government Printer print of Cap. 288 or of any of the amending instruments. Unresolved questions: which chain reading is correct; whether Ordinance No. 8 of 1947 (the State Lands Ordinance) is the second amending instrument. Status: needs_structural_review, because two held copies disagree on a material field (the chain) and no held source resolves it. The section text itself is not in doubt between the two copies. Lawyer verification: unverified.",
+ "lawyer_verification": "unverified"
+}

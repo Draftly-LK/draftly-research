@@ -1,0 +1,53 @@
+{
+ "statute": "Land Registers (Reconstructed Folios) Ordinance",
+ "source_id": "SRC038",
+ "note": "Every source actually used to build the canonical trees in library/finalized/18-1945-land-registers-reconstructed-folios-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "18-1945-land-registers-reconstructed-folios-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 21926,
+   "sha256": "806c80376a1b522a25638d373aa5f3cbb9f08888779a3b67af5d5af4fd73d75f",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/18-1945-land-registers-reconstructed-folios-act.html",
+   "used_for": "parsed into 18-1945-land-registers-reconstructed-folios-ordinance.json"
+  },
+  {
+   "file": "18-1945-land-registers-reconstructed-folios-act.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 40839,
+   "sha256": "c3ab4c4548fa13098d04e884caa01d269b6564b68f0b9a26885517e9d4cc4c24",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/18-1945-land-registers-reconstructed-folios-act.pdf",
+   "used_for": "LankaLaw revised-edition PDF, Cap. 138 (Vol. VI pp. 318-320, 3 pp, text layer); chain header 'Ordinance No. 18 of 1945.' only; prints 'AN ORDINANCE' and the s.9(3) marker '[§§ 2 & 3, Law 23 of 1978.]'; read against the HTML tree"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "18-1945-land-registers-reconstructed-folios-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "unknown",
+  "cutoff_evidence": "HTML chain header reads 'Ordinance Nos, 18 of 1945 [ 24 th August , 1945 ]' and names no amending instrument, yet s.9 carries the inline marker '[ 2 ; 3, Law 23 of 1978]'. The LankaLaw PDF (Cap. 138, Vol. VI p. 318) likewise prints 'Ordinance No. 18 of 1945.' alone and carries '[§§ 2 & 3, Law 23 of 1978.]' at s.9(3). The chain and the marker disagree, so the cutoff is recorded as unknown."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "23-1978",
+   "title": "Law No. 23 of 1978 (title not held; known only from the inline marker at s.9)",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "Both held editions carry the marker at s.9 (HTML '[ 2 ; 3, Law 23 of 1978]', PDF '[§§ 2 & 3, Law 23 of 1978.]'), neither names the Law in its chain header, and the Law's own text is not held. The marker says ss.2 and 3 of the Law touched s.9; what they did is not recorded anywhere in this corpus.",
+   "source_path": null,
+   "held": false
+  }
+ ],
+ "source_conflicts": [
+  "Title: registry 'Land Registers (Reconstructed Folios) Act'; both held editions print 'AN ORDINANCE' and s.1 cites the 'Land Registers (Reconstructed Folios) Ordinance'.",
+  "s.7(1): both editions print 'renders of necessary any alteration'; the tree leaves it as printed.",
+  "Marker form: HTML '[ 2 ; 3, Law 23 of 1978]' against PDF '[§§ 2 & 3, Law 23 of 1978.]'; same instrument, same sections."
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML (data/legal-sources/library/statutes/HTML/18-1945-land-registers-reconstructed-folios-act.html, identifier 1981Y6V138C-1), parsed and hand-corrected by the earlier worker (9 sections, 1 proviso, no Schedule). Other sources inspected: the LankaLaw revised-edition PDF, Cap. 138 (statutes/18-1945-land-registers-reconstructed-folios-act.pdf, Vol. VI pp. 318-320, 3 pp, text layer; registry SRC038 local_pdf_path), read in full against the tree. Consolidation cutoff: unknown. Both chain headers name only the principal; both texts carry a Law 23 of 1978 marker at s.9. Review performed this pass: packaging pass. All nine sections read against the PDF: headings, the s.3 numbered provisions, the s.6 proviso, the s.9 definitions and marker all agree. The tree's overrides_applied says no second edition was consulted; this pass supplies one, and the tree was not changed. Amendment coverage: one instrument (Law 23 of 1978) known from the marker, not held, one row as ambiguous. The RUBRIK's 'Amendments: none recorded' reflects the marker regex, not the page. OCR or structural weaknesses: none from OCR. Missing sources: the text of Law No. 23 of 1978. Unresolved questions: what ss.2 and 3 of Law 23 of 1978 did to s.9; the 'renders of necessary' reading. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
+}

@@ -1,0 +1,108 @@
+{
+ "statute": "Land Surveys Ordinance",
+ "source_id": "SRC055",
+ "note": "Every source actually used to build the canonical trees in library/finalized/4-1866-land-surveys-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "4-1866-land-surveys-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 13603,
+   "sha256": "812fadd4731f0e125911a4d5c1aa131550dabcc08d92ea6d6db237ecc7687700",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/4-1866-land-surveys-ordinance.html",
+   "used_for": "parsed into 4-1866-land-surveys-ordinance-consolidated.json"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-3.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 26631560,
+   "sha256": "a2bcc592deac8abcd04d69584b34a3ab8146e75f7e51cb335b30656f7603c58c",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-3.pdf",
+   "used_for": "LankaLaw copy of the 1980 revised edition, volume 3; Land Surveys is Cap. 293 at PDF pages 427 to 428 (printed XI/339 to XI/340), chain header 'Ordinances Nos. 4 of 1866, 2 of 1917.', head date '[20 th October, 1866.]'. Every section (1 to 7) read word for word against the tree: the operative text agrees throughout; settled the marginal note of s.2 ('&c.,'); the s.5 note reads 'powel ... Ac.' here and 'power ... Ac.' in the HTML, so 'Ac.' is unresolved. Predates the 2002 repeal, so its chain cannot name Act 17 of 2002"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "4-1866-land-surveys-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; the page names no publisher of the underlying revision). The page's URL pattern (1981Y11V293C) and the compendium's Cap. 293 place the text in the 1980 revised edition, volume XI.",
+  "consolidation_cutoff": "Ordinance No. 2 of 1917",
+  "cutoff_evidence": "Compendium header, PDF p. 427: 'Ordinances Nos. 4 of 1866, 2 of 1917.' The HTML chain block reads 'Ordinance Nos, 4 of 1866 17 of 2002' and its banner reads 'Repealed and Replaced by the Survey Act  No.17 of 2002. The following Chapter Contents are prior to repeal.'; the 17 of 2002 row is the repealing Act, not a consolidation cutoff. No inline marker in either copy.",
+  "repeal": "Repealed by the Survey Act, No. 17 of 2002 (HTML banner; Survey Act long title and title page). Both held copies are pre-repeal text."
+ },
+ "alternate_edition": {
+  "file": "legislative-enactments-1980-volume-3.pdf",
+  "pdf_pages": [
+   427,
+   428
+  ],
+  "printed_pages": "XI/339 to XI/340",
+  "edition": "consolidated (1980 revised edition, Cap. 293)",
+  "publisher": "LankaLaw's watermarked copy of the 1980 revised edition of the Legislative Enactments; a re-typeset rendering whose page images reproduce the OCR-type errors of its text layer, so it is a second copy of the revised edition rather than a scan of the Government Printer's volume",
+  "consolidation_cutoff": "Ordinance No. 2 of 1917",
+  "cutoff_evidence": "Printed header on PDF p. 427: 'Ordinances Nos. 4 of 1866, 2 of 1917.' with head date '[20 th October, 1866.]'",
+  "why_not_baseline": "same text as the HTML word for word; the HTML carries the structure and the repeal banner, and is the copy the parser reads. Used as the verification source and as the authority for the chain."
+ },
+ "source_conflicts": [
+  {
+   "field": "amendment chain",
+   "html": "'Ordinance Nos, 4 of 1866 17 of 2002' (omits 2 of 1917; lists the repealing Act)",
+   "compendium": "'Ordinances Nos. 4 of 1866, 2 of 1917.' (PDF p. 427; predates the 2002 repeal)",
+   "resolution": "treated as complementary: the compendium chain is recorded in the tree as amendments, the repeal separately in repeal_status. The section text of the two copies is identical, so the discrepancy has no effect on the held text."
+  },
+  {
+   "field": "marginal note of s.5",
+   "html": "'Penalty on abuse of power by Surveyor-General, Ac.'",
+   "compendium": "'Penalty on abuse of powel by Surveyor-General, Ac.' (PDF p. 428, text layer and rendered page)",
+   "resolution": "'power' from the HTML; 'Ac.' kept because both copies print it; flagged suspect_reading"
+  }
+ ],
+ "amendment_reconciliation": [
+  {
+   "instrument": "2-1917",
+   "title": "not stated in any held source (named only as \"2 of 1917\" in the compendium chain header)",
+   "classification": "known_but_not_held",
+   "reason": "Named in the compendium chain (PDF p. 427); absent from the HTML chain and from the RUBRIK. Not held on disk under any name. Both held copies are 1980 revised-edition text and already incorporate it; no inline marker says which section it touched.",
+   "source_path": null
+  },
+  {
+   "instrument": "17-2002",
+   "title": "Survey Act, No. 17 of 2002 (title page of the scan: 'SURVEY ACT, No. 17 OF 2002 [Certified on 04th October, 2002]'; HTML long title: 'AN ACT TO PROVIDE FOR THE POWERS AND FUNCTIONS OF THE SURVEYOR-GENERAL; ... TO REPEAL THE LAND SERVEYS ORDINANCE AND THE SURVEYORS ; AND TO PROVIDE FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO')",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "Held as data/legal-sources/library/amendments/17-2002-survey.pdf (Government Printer scan, 39 pp, no text layer) and amendments/html/17-2002-survey-act.html, and finalized separately as SRC043 (library/finalized/17-2002-survey-act). It is the repealing Act, not an amendment: its title names another statute and its long title repeals this Ordinance. Recorded in the tree under repeal_status; not packaged here as an amendment and nothing applied.",
+   "source_path": "data/legal-sources/library/amendments/17-2002-survey.pdf"
+  }
+ ],
+ "sources_inspected": [
+  {
+   "path": "data/legal-sources/library/statutes/HTML/4-1866-land-surveys-ordinance.html",
+   "what": "LankaLaw consolidated HTML, 13.9 KB, 7 sections, repeal banner, chain \"4 of 1866, 17 of 2002\"; selected baseline"
+  },
+  {
+   "path": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-3.pdf",
+   "what": "registry PDF; 1980 revised edition volume 3 as republished by LankaLaw, text layer; Cap. 293 at PDF pp. 427 to 428; verification source"
+  },
+  {
+   "path": "data/processed/canonical-statutes/SRC055-4-1866.json",
+   "what": "canonical tree built from the HTML (7 sections); rebuilt with build_canonical_statutes.py --source-id SRC055 on 2026-09-05, byte-identical to the checked-in tree; copied into finalized/ and corrected by hand (see provenance)"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/17-2002-survey.pdf",
+   "what": "Government Printer scan of the Survey Act, 39 pp, no text layer; title page rendered and read; not an amendment"
+  },
+  {
+   "path": "data/legal-sources/library/amendments/html/17-2002-survey-act.html",
+   "what": "LankaLaw HTML of the Survey Act; long title read; not an amendment"
+  },
+  {
+   "path": "data/legal-sources/library/finalized-sources/17-2002-survey-act/manifest.json",
+   "what": "the Survey Act is already finalized as SRC043; not duplicated here"
+  }
+ ],
+ "statute_note": "Principal source: the LankaLaw consolidated HTML (chain block 'Ordinance Nos, 4 of 1866 17 of 2002', banner 'Repealed and Replaced by the Survey Act  No.17 of 2002. The following Chapter Contents are prior to repeal.'), parsed by build_canonical_statutes.py into a 7-section tree with no subsections, provisos, definitions or schedules. Other sources inspected: the registry's compendium PDF (1980 revised edition volume 3, Cap. 293 at PDF pp. 427 to 428, chain 'Ordinances Nos. 4 of 1866, 2 of 1917.'), used as the verification source; the held Survey Act PDF and HTML (title page and long title read). Consolidation cutoff: Ordinance No. 2 of 1917, from the compendium header; the HTML chain omits it and lists the repealing Act instead. Review performed: every section number, marginal note and the full text of all seven sections compared word for word against the compendium text layer and its rendered pages; the two copies agree throughout apart from the s.2 note form ('& c,' corrected to '&c.,' with heading_raw kept) and the s.5 note, where the compendium's 'powel' is its own error and both copies print 'Ac.'. validate_finalized_trees.py reports 0 errors and 0 warnings. Amendment coverage: 2 of 1917 known but not held, already incorporated in both copies; 17 of 2002 is the repealing Act, held and finalized separately, classified ambiguous_or_unconfirmed here and not packaged as an amendment. OCR or structural weaknesses: both copies are LankaLaw republications carrying the same OCR-type defects ('Ac.'); the compendium is not an independent print. Missing sources: a Government Printer print of Cap. 293 or of Ordinances 4 of 1866 and 2 of 1917. Unresolved questions: the reading of 'Ac.' in the s.5 note; the date on which the 2002 repeal took effect (the Survey Act's commencement provisions were not read here). REPEALED STATUTE: this Ordinance was repealed by the Survey Act, No. 17 of 2002, and the tree is pre-repeal text; it must not be presented as current law. Lawyer verification: unverified.",
+ "lawyer_verification": "unverified"
+}

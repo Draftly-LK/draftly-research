@@ -8,11 +8,88 @@
    "file": "1-1844-definition-of-boundaries-ordinance-consolidated.html",
    "role": "principal statute",
    "edition": "consolidated",
-   "bytes": 38981,
-   "sha256": "56894c5b68ff23ce0fa692e748146f836b9c80d7d8ff0a393f2f4e7411defd01",
+   "bytes": 38404,
+   "sha256": "264a67660c3dccfc115aba22866b10fdc956c67145ef0c8f5b086c61f413b38a",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/1-1844-definition-of-boundaries-ordinance.html",
    "used_for": "parsed into 1-1844-definition-of-boundaries-ordinance-consolidated.json"
+  },
+  {
+   "file": "22-1955-administrative-districts.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 18987580,
+   "sha256": "068d0ab2ae144da440033f0b2ba0da3882f32abdb677883051ad6a00a8dcea45",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/22-1955-administrative-districts.pdf",
+   "used_for": "Government Press scan, no text layer, 10 pp; title page read: Administrative Districts Act, No. 22 of 1955, Date of Assent April 14, 1955; omnibus Act named in the chain header, already incorporated"
+  },
+  {
+   "file": "1-1844-definition-of-boundaries-ordinance.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 98495,
+   "sha256": "0f5b936afd47b060abe64d524df4e05781a0055f801b1ff9aa0e40dda507e171",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/1-1844-definition-of-boundaries-ordinance.pdf",
+   "used_for": "LankaLaw PDF of the same consolidated text (Cap. 292 running header, footer XI/338, 5 pp, text layer, same chain header ending Act No. 22 of 1955); settled the wilfully/willfully spelling and two marginal-note bleeds in s.9; not parsed"
   }
  ],
- "statute_note": "Reviewed via the full 5-lens Step 7 process (2 consecutive clean rounds after fixing a spelling transcription slip and two marginal-note bleed corruptions in section 9). Five historical amendments (1905-1955) are listed in the source header but their texts are not present in this corpus; amendment history is not independently verified."
+ "statute_note": "Principal source: LankaLaw HTML data/legal-sources/library/statutes/HTML/1-1844-definition-of-boundaries-ordinance.html (14 sections, chain header to Act No. 22 of 1955), parsed with build_canonical_statutes.py; accepted tree byte-identical to the canonical parse. Other sources inspected: LankaLaw's PDF of the same text (statutes/1-1844-definition-of-boundaries-ordinance.pdf, 5 pp, text layer, running header 'Cap. 292', footer 'XI/338', identical chain header), now carried as the verification source; the title page of the Administrative Districts Act 22 of 1955 scan. Consolidation cutoff: Act No. 22 of 1955 (both editions). Review performed: full 5-lens Step 7 review in an earlier pass, two consecutive clean rounds after fixing the spelling slip and two marginal-note bleeds in s.9; this pass re-read the PDF chain header, s.1 and s.14 against the tree and confirmed the registry hash. Amendment coverage: 5 reconciliation rows, all already incorporated in the baseline; one (22 of 1955) held as a scan, four pre-1956 Ordinances not held. Nothing applied. Structural weaknesses: none open; validator reports zero warnings. Missing sources: Ordinances 13 of 1905, 28 of 1919, 27 of 1933, 8 of 1947; no Government Printer copy. Unresolved: none beyond the missing pre-1956 texts. Registry: title 'Definition of Boundaries Ordinance' agrees with s.1; head date '[17th January, 1844]' agrees with statute_commencement.csv. Lawyer verification: unverified.",
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "1-1844-definition-of-boundaries-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher). The PDF verification copy carries the revised-edition running header 'Cap. 292' and footer 'XI/338'.",
+  "consolidation_cutoff": "Act No. 22 of 1955",
+  "cutoff_evidence": "HTML chain header: 'Ordinance Nos, 1 of 1844 13 of 1905 28 of 1919 27 of 1933 8 of 1947 Act Nos, 22 of 1955 [17th January, 1844]'; the PDF prints the same list in its margin ('Ordinances Nos. 1 of 1844, 13 of 1905, 28 of 1919, 27 of 1933, 8 of 1947, Act No. 22 of 1955.')",
+  "post_baseline_applied": []
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "13-1905",
+   "title": "Ordinance No. 13 of 1905 (title not held; chain header only)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in both chain headers; text not held (pre-1956, not in the Act archive per the RUBRIK)",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "28-1919",
+   "title": "Ordinance No. 28 of 1919 (title not held; chain header only)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in both chain headers; text not held",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "27-1933",
+   "title": "Ordinance No. 27 of 1933 (title not held; chain header only)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in both chain headers; text not held",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "8-1947",
+   "title": "Ordinance No. 8 of 1947 (title not held; chain header only)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in both chain headers; text not held",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "22-1955",
+   "title": "Administrative Districts Act, No. 22 of 1955 (title page read: 'Parliament of Ceylon 3rd Session 1954-55 ... Date of Assent: April 14, 1955')",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "omnibus Act, last in both chain headers; held as a 10-page Government Press scan with no text layer; title page read only. Its effect here is the 'Government Agent of the administrative district' wording in s.2.",
+   "source_path": "data/legal-sources/library/amendments/22-1955-administrative-districts.pdf",
+   "held": true
+  }
+ ],
+ "source_conflicts": [
+  "HTML 'willfully' (5 places) and heading 'willful' vs PDF 'wilfully'/'wilful'; PDF reading adopted (recorded in canonical-overrides.json).",
+  "PDF two-column layout bled two marginal captions into s.9's body; HTML reading adopted after checking the PDF body column."
+ ],
+ "lawyer_verification": "unverified"
 }

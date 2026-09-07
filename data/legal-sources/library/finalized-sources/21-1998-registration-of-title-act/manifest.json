@@ -1,0 +1,40 @@
+{
+ "statute": "Registration of Title Act",
+ "source_id": "SRC011",
+ "note": "Every source actually used to build the canonical trees in library/finalized/21-1998-registration-of-title-act. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "21-1998-registration-of-title-act.html",
+   "role": "principal statute",
+   "edition": "original_or_unconfirmed_consolidation",
+   "bytes": 161786,
+   "sha256": "5c54b1bdc31f081e7d56c0ca987de9280712b198ddf8c30f7190e31ec41faed2",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/21-1998-registration-of-title-act.html",
+   "used_for": "parsed into 21-1998-registration-of-title-act.json"
+  },
+  {
+   "file": "registration-of-title-act-21-1998.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 187123,
+   "sha256": "c71e136e3bacd795ce55ef7c400f48a86db64d2980484b9373959ae4a50daa65",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/sandbox/registration-of-title-act-21-1998.pdf",
+   "used_for": "RGD PDF of the Act as enacted (20 pp, text layer, no amendment chain); read against the HTML tree for structure, headings, definitions and the two recorded source errors; not parsed"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "21-1998-registration-of-title-act.html",
+  "edition": "as_enacted (LankaLaw republication of the Act as enacted; the tree's edition.kind says 'original_or_unconfirmed_consolidation')",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Act No. 21 of 1998 (as enacted; no amending instrument incorporated)",
+  "cutoff_evidence": "The page carries no amendment-chain header. It opens 'Registration Of Title ... AN ACT TO MAKE PROVISION FOR THE INVESTIGATION AND REGISTRATION OF TITLE TO A LAND PARCEL ... [ 29 th April , 1998 ]' and carries no inline amendment marker. The RGD PDF (statutes/sandbox/registration-of-title-act-21-1998.pdf) opens identically, '[29th April , 1998 ]', with no chain."
+ },
+ "amendment_reconciliation": [],
+ "source_conflicts": [],
+ "statute_note": "Principal source selected: the LankaLaw HTML of the Act (data/legal-sources/library/statutes/HTML/21-1998-registration-of-title-act.html, identifier 1998Y0V0C21A), parsed and then reviewed by the earlier worker (override SRC011: 9 crossheadings, sections 1-75, 14 definitions in s.75, 4 provisos). Other sources inspected: the RGD PDF of the Act as enacted (statutes/sandbox/registration-of-title-act-21-1998.pdf, 20 pp, text layer regenerated through Microsoft Word 2019, registry SRC011 local_pdf_path), read at the head, s.1, the s.75 definitions and the tail; it prints the same text and the same two source errors the tree flags ('Jess than' in the definition of 'interest in land parcel', 'take slops'), so those are errors of the source rather than of the HTML. Not inspected: the LLM extraction under statutes/parsed/ and the markdown copy. Consolidation cutoff: the Act as enacted (No. 21 of 1998); neither held copy carries a chain header or an inline marker. Review performed this pass: packaging pass only. Header, s.1, s.75 and tail read in both copies; the section count (75) confirmed against the RGD PDF's marginal numbering. The structural review recorded in the override was done earlier by another worker and is not repeated here. Amendment coverage: no amending instrument is named in either copy, in the RUBRIK entry or in the curriculum list, and no held file under amendments/ matches No. 21 of 1998; the reconciliation table is therefore empty. The registry's Registration of Title gazettes (SRC087, Gazette No. 1302/16 of 2003, status needs-official-source) are Orders under s.1 declaring areas, not amendments of the Act text, and no copy is held. OCR or structural weaknesses: none from OCR (both copies have text layers). The two source errors above are left as printed. Missing sources: none required. Unresolved questions: whether the Act has been amended since 1998 cannot be settled from what is held; absence of a chain is not evidence of no amendment. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
+}

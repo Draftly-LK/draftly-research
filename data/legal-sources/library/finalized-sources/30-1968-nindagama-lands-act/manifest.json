@@ -1,0 +1,53 @@
+{
+ "statute": "Nindagama Lands Act",
+ "source_id": "SRC072",
+ "note": "Every source actually used to build the canonical trees in library/finalized/30-1968-nindagama-lands-act. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "30-1968-nindagama-lands-act-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 58133,
+   "sha256": "de9390c7103bd28c55a6df483a9cd93dd99bacc03a3db520245a76e98571fdf9",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/30-1968-nindagama-lands-act.html",
+   "used_for": "parsed into 30-1968-nindagama-lands-act.json"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-4.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 21496722,
+   "sha256": "9962cbf555576070b34fdb1f82e67905b01c16a0b16aa2fab1f11148c76e4b34",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-4.pdf",
+   "used_for": "1980 revised edition, Cap. 301 (Vol. XI pp. 435-440, PDF pp. 135-140); chain header 'Act No. 30 of 1968.' only; text layer carries the same OCR-corrupt marginal notes as the HTML ('madiguu luKte', 'Dindagaiaa'); prints the s.26 Schedule (nine items) that the tree records as missing"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "30-1968-nindagama-lands-act-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Act No. 30 of 1968 (principal only; the chain names no amending instrument)",
+  "cutoff_evidence": "HTML chain header reads 'Act Nos, 30 of 1968 [ 22 nd June , 1968 ]'. The 1980 revised edition (Cap. 301, Vol. XI p. 435) prints 'Act No. 30 of 1968.' and '[22nd June, 1968.]'. No inline amendment marker on either page; the bracketed notes at ss.6 and 25 are appointed-date notes (Gazette No. 14,884 of 12 December 1969), not amendments."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "30-1986",
+   "title": "not held; cited only in the curriculum list as 'Ordinance No. 30 of 1986'",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "No held file, chain header or note names an instrument No. 30 of 1986 in connection with this Act. Both held editions give the principal alone. The registry notes already read this as a curriculum misstatement of Act No. 30 of 1968.",
+   "source_path": null,
+   "held": false
+  }
+ ],
+ "source_conflicts": [
+  "Schedule: absent from the HTML; printed in the 1980 edition at Vol. XI p. 440 ('[Section 26.] SCHEDULE', nine numbered items on Board remuneration, constitution, expenses, costs, commissions, powers of entry and penalties). The tree records it as missing; a held file in this package now carries it.",
+  "Marginal notes, ss.2, 3, 5, 6: the 1980 compendium text layer prints the same corrupt readings as the HTML ('madiguu luKte', 'Dindagaiaa', 'reaped', 'Dindagama'), so it derives from the same OCR and cannot settle the override's inferred headings.",
+  "Part I heading: both copies print 'NINDAGAMA LANDS,,' with the doubled comma."
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML (data/legal-sources/library/statutes/HTML/30-1968-nindagama-lands-act.html, identifier 1981Y11V301C-1), parsed and reviewed by the earlier worker (5 Parts, 30 sections numbered 1-29 and 31, 9 definitions, Schedule referenced). Other sources inspected: the 1980 revised edition compendium, Cap. 301 (statutes/legislative-enactments-1980-volume-4.pdf, Vol. XI pp. 435-440, PDF pp. 135-140, text layer; registry SRC072 local_pdf_path), read at the header, Part I, ss.1-6 and the Schedule. Consolidation cutoff: the principal Act alone. Review performed this pass: packaging pass. Header, long title, Part I, ss.1-6 and the Schedule read against the 1980 print; ss.7-31 not re-read this pass. The long title in the 1980 print reads as the HTML does, including 'FOIL MATTERS' for 'FOR MATTERS', so the override's long_title_status of requires_alternate_source_verification is not resolved by it. Amendment coverage: none in either chain header, none on disk. The curriculum's '30 of 1986' has one row as unsupported. s.30 (repeal of the Service Praveni Lands Succession Ordinance) is omitted from the revised edition, as the tree records. OCR or structural weaknesses: four section headings (ss.2, 3, 5, 6) and the long title rest on inference from corrupt text, and the compendium text layer shares that corruption; only an image reading of the print would settle them. The Schedule is not in the tree though the compendium in this package prints it. Missing sources: a clean text of Cap. 301; the text of any instrument No. 30 of 1986. Unresolved questions: whether to transcribe the nine-item Schedule from the compendium; the four inferred headings. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
+}

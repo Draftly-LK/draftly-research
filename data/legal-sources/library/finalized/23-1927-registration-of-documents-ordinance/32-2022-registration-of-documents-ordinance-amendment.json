@@ -15,256 +15,892 @@
   "year": 1927
  },
  "certified_on": "31st of October, 2022",
- "legal_draftsman_number": "",
+ "legal_draftsman_number": "O. 2/2021",
  "language": "en",
  "edition": {
   "publisher": "Government Printer, Sri Lanka",
   "kind": "as_enacted",
   "markup": "OCR of a scan",
   "local_path": "data/legal-sources/library/amendments/ocr/32-2022-registration-of-documents-amendment.txt",
-  "caveat": "the Government Printer PDF is a scan with no text layer, so this tree is parsed from an OCR reading and carries OCR errors"
+  "caveat": "the Government Printer PDF is a scan with no text layer; this tree was parsed from an offline OCR reading (raw_text) and then proof-read against page renders of the scan. text carries the proof-read wording; every difference is listed under corrections.",
+  "scan_path": "data/legal-sources/library/amendments/32-2022-registration-of-documents-amendment-act.pdf"
  },
  "amendment_instructions": [
   {
    "in_section": "2",
    "operation": "multiple",
+   "targets_principal_enactment": true,
+   "target_enactment": "Registration of Documents Ordinance",
+   "target_section": "32",
    "operations": [
     {
-     "limb": "i",
-     "operation": "amend",
-     "target": {},
-     "target_label": ""
+     "limb": "1",
+     "operation": "repeal_and_substitute",
+     "target": {
+      "target_section": "32",
+      "target_subsection": "1"
+     },
+     "target_label": "32(1)",
+     "substituted_text_node": "body[1].children[0].children[0]"
     },
     {
-     "limb": "i",
+     "limb": "2",
+     "operation": "insert",
+     "target": {
+      "target_section": "32",
+      "after_subsection": "1",
+      "inserted_subsections": [
+       "1A",
+       "1B"
+      ]
+     },
+     "target_label": "32(1A), 32(1B)"
+    },
+    {
+     "limb": "3",
      "operation": "repeal_and_substitute",
+     "target": {
+      "target_section": "32",
+      "target_subsection": "3"
+     },
+     "target_label": "32(3)"
+    },
+    {
+     "limb": "4",
+     "operation": "substitute_words",
+     "target": {
+      "target_section": "32",
+      "target_subsection": "4"
+     },
+     "target_label": "32(4)",
      "substitutes": {
       "from": "The notice to be given to the caveator shall be in the prescribed form",
       "to": "Where an instrument affecting the same land described in the caveat has been subsequently presented for registration, a notice shall be given to the caveator in Form XI of the Second Schedule hereto"
-     },
+     }
+    },
+    {
+     "limb": "5",
+     "operation": "substitute_words",
      "target": {
-      "target_paragraph": "b"
+      "target_section": "32",
+      "target_subsection": "5"
      },
-     "target_label": ""
+     "target_label": "32(5)",
+     "substitutes": {
+      "from": "a competent court within thirty days",
+      "to": "a competent court within sixty days"
+     }
     }
-   ],
-   "targets_principal_enactment": false,
-   "target_enactment": "Registration of Documents Ordinance"
+   ]
   },
   {
    "in_section": "3",
-   "operation": "insert",
-   "operations": [
-    {
-     "limb": "v",
-     "operation": "insert",
-     "target": {
-      "target_section": "33",
-      "named_target": "the principal enactment",
-      "target_subsection": "1"
-     },
-     "target_label": "33(1)"
-    }
-   ],
+   "operation": "multiple",
    "targets_principal_enactment": true,
    "target_enactment": "Registration of Documents Ordinance",
    "target_section": "33",
-   "target_subsection": "1"
+   "operations": [
+    {
+     "limb": "1",
+     "operation": "substitute_words",
+     "target": {
+      "target_section": "33",
+      "target_subsection": "1"
+     },
+     "target_label": "33(1)",
+     "substitutes": {
+      "from": "seizure priority notice, caveat, or lis pendens",
+      "to": "seizure priority notice or lis pendens"
+     }
+    },
+    {
+     "limb": "2",
+     "operation": "insert",
+     "target": {
+      "target_section": "33",
+      "after_subsection": "1",
+      "inserted_subsections": [
+       "1A"
+      ]
+     },
+     "target_label": "33(1A)"
+    },
+    {
+     "limb": "3",
+     "operation": "insert",
+     "target": {
+      "target_section": "33",
+      "after_subsection": "2",
+      "inserted_subsections": [
+       "2A"
+      ]
+     },
+     "target_label": "33(2A)"
+    },
+    {
+     "limb": "4",
+     "operation": "insert",
+     "target": {
+      "target_section": "33",
+      "after_subsection": "3",
+      "inserted_subsections": [
+       "4"
+      ]
+     },
+     "target_label": "33(4)"
+    }
+   ]
+  },
+  {
+   "in_section": "4",
+   "operation": "substitute_words",
+   "targets_principal_enactment": true,
+   "target_enactment": "Registration of Documents Ordinance",
+   "target_section": "50",
+   "operations": [
+    {
+     "limb": "",
+     "operation": "substitute_words",
+     "target": {
+      "target_section": "50"
+     },
+     "target_label": "50",
+     "substitutes": {
+      "from": "require, but such Schedule may be altered or added to by regulation",
+      "to": "require."
+     }
+    }
+   ]
+  },
+  {
+   "in_section": "5",
+   "operation": "multiple",
+   "targets_principal_enactment": true,
+   "target_enactment": "Registration of Documents Ordinance",
+   "target_schedule": "Second Schedule",
+   "operations": [
+    {
+     "limb": "1",
+     "operation": "repeal_and_substitute",
+     "target": {
+      "target_schedule": "Second Schedule",
+      "target_form": "VIII"
+     },
+     "target_label": "Second Schedule, Form VIII"
+    },
+    {
+     "limb": "2",
+     "operation": "insert",
+     "target": {
+      "target_schedule": "Second Schedule",
+      "after_form": "IX",
+      "inserted_forms": [
+       "X",
+       "XI"
+      ]
+     },
+     "target_label": "Second Schedule, Forms X and XI"
+    }
+   ]
   }
  ],
  "verification_status": "unverified",
  "editorial_notes": [],
  "quality_flags": [
-  "parsed from OCR; wording needs checking against the scan"
+  "proof-read against the scan by eye; single OCR reading underneath; a second independent reading has not been made"
  ],
  "body": [
   {
    "type": "section",
    "number": "1",
-   "heading": "",
    "raw_text": "1. This Actmayl be cited as the. Registration of Documents Short title (Amendment) Act, No. 32 of 2022.",
-   "text": "This Actmayl be cited as the. Registration of Documents Short title (Amendment) Act, No. 32 of 2022.",
+   "text": "This Act may be cited as the Registration of Documents (Amendment) Act, No. 32 of 2022.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading": "Short title"
   },
   {
    "type": "section",
    "number": "2",
-   "heading": "Chapter 117 substantiating the right, title or interest in the land or claims to a right, title or interest in the land of the caveator; copies of the notice set out in Form X ofthe Second Schedule! hereto together with stamped envelopes, to be served on the owners of thel land whose names and addresses are given in the relevant volume and folio in which such land is registered, where the caveatori is not the owner; the original of the Power of Attomey duly registered with the Registrar General or the Registrar of the relevant Land Registry or the Registrar of Title (hereinafter in this section referred to as the \"Registrar\") where the caveator is a holder of a Power of Attorney (hcreinafter in this scction referred to as the \"attorney\"); and National Identity Card number or the passport number or the driving licence number and address of the caveator in Sri Lanka at which notices relating to the caveat shall be served, the date of the caveat, the names and addresses of the persons LO whom the notice of the caveat shall be sent where the caveator isnott the owner, the right, title ori interest in the land claimed by the caveator, grounds in support of the claim and the description of the land, including the boundaries, indicating the correct volume and folio in which such land, is registered. 3 parcel\" means a Law, No.11 of 1973 or",
    "raw_text": "2. Section 32 oft thc Registration ofDocuments Ordinance Amendment of (Chapter 117) (hereinafter referred to as the \"principal section 32 of enactment\") is hereby amended as follows:- (1) by the repcal of subsection (1) thercof and the substitution thercfor of the following subsection: - \"(1) (a) A person (hereinafter referred to as the \"caveator\") who (i) has a right, title or interest; or (ii) claims tol have a right, title or interest, to al land, an undivided land. al land parcel or a condominium parcel (hereinafter in this section referred to ast the \"land\") may present for registration a caveat substantially in Form VIII of the Second Schedule hereto requiring him to be served a notice of the presentation for registration of any instrument affecting such land. (b) Every caveat presented. for registration shall- (i) be in duplicate and accompanied by an affidavit of the caveator together with a certificate issued by an Attorney-at-law 2 Registration of Documents (Amendment) (ii) be accompanied by such number of (iii) be accompanied by a certified copy of (iv) contain the name, signature and the Registration of Documents (Amendment) (c) For the purpose of this section- (i) \"caveator\" includes a body of persons, a beneficiary under any trust affecting a land, the lawful guardian or the next friend lofar minor or ofaj person of unsound mind or mentally deficient person, an attorney of a person, a judgement creditor, an executor or an administrator of an estate ofa deceased, or a legal heir, or an intended purchaser whol has entered into an agreement with the owner of a land or a developer of a land: (ii) \"condominium condominium parcel registered under the in ternis of section 10 of the Apartment Ownership registered under this Ordinance: and (iii) \"interest\" includes an interest arising from an unregistered deed or instrument relating to a land which is incapable of immediate registration, a trust, an inheritance either by testate or intestate succession, instruments relating to a mortgage or an agreement to sell. CO- ownership. an ownership arising from a condominium parcel or the estate of a minor, or of a person of unsound mind or mentally deficient person. '; (2) by the inscrtion, immediately after subsection (1) thereof, of the following new subsections: - \"(1A) The Registrar, on being satisfied that all required documents andi informationr referred to in paragraph (b) of subsection (I) are provided by the cavcator, shall acknowledge 4 Registration of Documents (Amendment) the receipt of such caveat and record the prescribed particulars referred toi in subsection (I) of section 27. (1B) Upon the acknowledgement, the Registrar shall forthwith notify the persons, whose names and addresses have becn furnished by the caveator under subparagraph (iv)ofp paragraph (b) of subsection (1) and shall make an endorsement in the Remark Column by inserting the date and the names of the persons to whom and the addresses to which the notices referred to in subparagraph (ii) of paragraph (D) in subsection (I) were sent.\" \": (3) by the repeal of subsection (3) thereof and the substitution therefor of the following subsection: - \"(3) A caveat shall be in force for a maximum period of two years.\"; (4) in subsection (4) thereof, by the substitution for the words \"The notice to be given to the caveator shall be in the prescribed form\", of the words and figures \"Where an instrument affecting the same land described in the caveat has been subsequently presented for registration, a notice shall be given to the caveator in Form XI of the Second Schedule hereto\"; (5) in subsection (5) thereof, by the substitution for the words \"a competent court within thirty days\" of the",
-   "text": "Section 32 oft thc Registration ofDocuments Ordinance Amendment of (Chapter 117) (hereinafter referred to as the \"principal section 32 of enactment\") is hereby amended as follows:- (1) by the repcal of subsection (1) thercof and the substitution thercfor of the following subsection: - \"(1)",
+   "text": "Section 32 of the Registration of Documents Ordinance (Chapter 117) (hereinafter referred to as the \"principal enactment\") is hereby amended as follows:-",
    "amendment_events": [],
    "cross_references": [],
    "children": [
     {
      "type": "paragraph",
-     "number": "a",
-     "raw_text": "(a) A person (hereinafter referred to as the \"caveator\") who (i) has a right, title or interest; or (ii) claims tol have a right, title or interest, to al land, an undivided land. al land parcel or a condominium parcel (hereinafter in this section referred to ast the \"land\") may present for registration a caveat substantially in Form VIII of the Second Schedule hereto requiring him to be served a notice of the presentation for registration of any instrument affecting such land. (b) Every caveat presented. for registration shall-",
-     "text": "A person (hereinafter referred to as the \"caveator\") who (i) has a right, title or interest; or (ii) claims tol have a right, title or interest, to al land, an undivided land. al land parcel or a condominium parcel (hereinafter in this section referred to ast the \"land\") may present for registration a caveat substantially in Form VIII of the Second Schedule hereto requiring him to be served a notice of the presentation for registration of any instrument affecting such land. (b) Every caveat presented. for registration shall-",
+     "number": "1",
+     "raw_text": "by the repeal of subsection (1) thereof and the substitution therefor of the following subsection: -",
+     "text": "by the repeal of subsection (1) thereof and the substitution therefor of the following subsection: -",
      "amendment_events": [],
-     "cross_references": []
-    },
-    {
-     "type": "paragraph",
-     "number": "i",
-     "raw_text": "(i) be in duplicate and accompanied by an affidavit of the caveator together with a certificate issued by an Attorney-at-law 2 Registration of Documents (Amendment) (ii) be accompanied by such number of (iii) be accompanied by a certified copy of (iv) contain the name, signature and the Registration of Documents (Amendment)",
-     "text": "be in duplicate and accompanied by an affidavit of the caveator together with a certificate issued by an Attorney-at-law 2 Registration of Documents (Amendment) (ii) be accompanied by such number of (iii) be accompanied by a certified copy of (iv) contain the name, signature and the Registration of Documents (Amendment)",
-     "amendment_events": [],
-     "cross_references": []
-    },
-    {
-     "type": "paragraph",
-     "number": "c",
-     "raw_text": "(c) For the purpose of this section-",
-     "text": "For the purpose of this section-",
-     "amendment_events": [],
-     "cross_references": []
-    },
-    {
-     "type": "paragraph",
-     "number": "i",
-     "raw_text": "(i) \"caveator\" includes a body of persons, a beneficiary under any trust affecting a land, the lawful guardian or the next friend lofar minor or ofaj person of unsound mind or mentally deficient person, an attorney of a person, a judgement creditor, an executor or an administrator of an estate ofa deceased, or a legal heir, or an intended purchaser whol has entered into an agreement with the owner of a land or a developer of a land: (ii) \"condominium condominium parcel registered under the in ternis of section 10 of the Apartment Ownership registered under this Ordinance: and (iii) \"interest\" includes an interest arising from an unregistered deed or instrument relating to a land which is incapable of immediate registration, a trust, an inheritance either by testate or intestate succession, instruments relating to a mortgage or an agreement to sell. CO- ownership. an ownership arising from a condominium parcel or the estate of a minor, or of a person of unsound mind or mentally deficient person. '; (2) by the inscrtion, immediately after subsection (1) thereof, of the following new subsections: - \"(1A) The Registrar, on being satisfied that all required documents andi informationr referred to in paragraph (b) of subsection (I) are provided by the cavcator, shall acknowledge 4 Registration of Documents (Amendment) the receipt of such caveat and record the prescribed particulars referred toi in subsection (I) of section 27. (1B) Upon the acknowledgement, the Registrar shall forthwith notify the persons, whose names and addresses have becn furnished by the caveator under subparagraph (iv)ofp paragraph (b) of subsection (1) and shall make an endorsement in the Remark Column by inserting the date and the names of the persons to whom and the addresses to which the notices referred to in subparagraph (ii) of paragraph (D) in subsection (I) were sent.\" \": (3) by the repeal of subsection (3) thereof and the substitution therefor of the following subsection: - \"(3) A caveat shall be in force for a maximum period of two years.\"; (4) in subsection (4) thereof, by the substitution for the words \"The notice to be given to the caveator shall be in the prescribed form\", of the words and figures \"Where an instrument affecting the same land described in the caveat has been subsequently presented for registration, a notice shall be given to the caveator in Form XI of the Second Schedule hereto\"; (5) in subsection (5) thereof, by the substitution for the words \"a competent court within thirty days\" of the",
-     "text": "\"caveator\" includes a body of persons, a beneficiary under any trust affecting a land, the lawful guardian or the next friend lofar minor or ofaj person of unsound mind or mentally deficient person, an attorney of a person, a judgement creditor, an executor or an administrator of an estate ofa deceased, or a legal heir, or an intended purchaser whol has entered into an agreement with the owner of a land or a developer of a land: (ii) \"condominium condominium parcel registered under the in ternis of section 10 of the Apartment Ownership registered under this Ordinance: and (iii) \"interest\" includes an interest arising from an unregistered deed or instrument relating to a land which is incapable of immediate registration, a trust, an inheritance either by testate or intestate succession, instruments relating to a mortgage or an agreement to sell. CO- ownership. an ownership arising from a condominium parcel or the estate of a minor, or of a person of unsound mind or mentally deficient person. '; (2) by the inscrtion, immediately after subsection (1) thereof, of the following new subsections: - \"(1A) The Registrar, on being satisfied that all required documents andi informationr referred to in paragraph (b) of subsection (I) are provided by the cavcator, shall acknowledge 4 Registration of Documents (Amendment) the receipt of such caveat and record the prescribed particulars referred toi in subsection (I) of section 27. (1B) Upon the acknowledgement, the Registrar shall forthwith notify the persons, whose names and addresses have becn furnished by the caveator under subparagraph (iv)ofp paragraph (b) of subsection (1) and shall make an endorsement in the Remark Column by inserting the date and the names of the persons to whom and the addresses to which the notices referred to in subparagraph (ii) of paragraph (D) in subsection (I) were sent.\" \": (3) by the repeal of subsection (3) thereof and the substitution therefor of the following subsection: - \"(3) A caveat shall be in force for a maximum period of two years.\"; (4) in subsection (4) thereof, by the substitution for the words \"The notice to be given to the caveator shall be in the prescribed form\", of the words and figures \"Where an instrument affecting the same land described in the caveat has been subsequently presented for registration, a notice shall be given to the caveator in Form XI of the Second Schedule hereto\"; (5) in subsection (5) thereof, by the substitution for the words \"a competent court within thirty days\" of the",
-     "amendment_events": [],
-     "cross_references": [
+     "cross_references": [],
+     "children": [
       {
-       "kind": "external",
-       "target_document": "Apartment Ownership registered under this Ordinance",
-       "target_section": "10",
-       "verbatim": "section 10 of the Apartment Ownership registered under this Ordinance"
+       "type": "subsection",
+       "number": "1",
+       "raw_text": "",
+       "text": "",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": [
+        {
+         "type": "paragraph",
+         "number": "a",
+         "raw_text": "A person (hereinafter referred to as the \"caveator\") who",
+         "text": "A person (hereinafter referred to as the \"caveator\") who",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": [
+          {
+           "type": "subparagraph",
+           "number": "i",
+           "raw_text": "has a right, title or interest; or",
+           "text": "has a right, title or interest; or",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "ii",
+           "raw_text": "claims to have a right, title or interest,",
+           "text": "claims to have a right, title or interest,",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "closing_text",
+           "raw_text": "",
+           "text": "to a land, an undivided land, a land parcel or a condominium parcel (hereinafter in this section referred to as the \"land\") may present for registration a caveat substantially in Form VIII of the Second Schedule hereto requiring him to be served a notice of the presentation for registration of any instrument affecting such land.",
+           "amendment_events": [],
+           "cross_references": []
+          }
+         ]
+        },
+        {
+         "type": "paragraph",
+         "number": "b",
+         "raw_text": "Every caveat presented for registration shall-",
+         "text": "Every caveat presented for registration shall-",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": [
+          {
+           "type": "subparagraph",
+           "number": "i",
+           "raw_text": "be in duplicate and accompanied by an affidavit of the caveator together with a certificate issued by an Attorney-at-law substantiating the right, title or interest in the land or claims to a right, title or interest in the land of the caveator;",
+           "text": "be in duplicate and accompanied by an affidavit of the caveator together with a certificate issued by an Attorney-at-law substantiating the right, title or interest in the land or claims to a right, title or interest in the land of the caveator;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "ii",
+           "raw_text": "be accompanied by such number of copies of the notice set out in Form X of the Second Schedule hereto together with stamped envelopes, to be served on the owners of the land whose names and addresses are given in the relevant volume and folio in which such land is registered, where the caveator is not the owner;",
+           "text": "be accompanied by such number of copies of the notice set out in Form X of the Second Schedule hereto together with stamped envelopes, to be served on the owners of the land whose names and addresses are given in the relevant volume and folio in which such land is registered, where the caveator is not the owner;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "iii",
+           "raw_text": "be accompanied by a certified copy of the original of the Power of Attorney duly registered with the Registrar General or the Registrar of the relevant Land Registry or the Registrar of Title (hereinafter in this section referred to as the \"Registrar\") where the caveator is a holder of a Power of Attorney (hereinafter in this section referred to as the \"attorney\"); and",
+           "text": "be accompanied by a certified copy of the original of the Power of Attorney duly registered with the Registrar General or the Registrar of the relevant Land Registry or the Registrar of Title (hereinafter in this section referred to as the \"Registrar\") where the caveator is a holder of a Power of Attorney (hereinafter in this section referred to as the \"attorney\"); and",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "iv",
+           "raw_text": "contain the name, signature and the National Identity Card number or the passport number or the driving licence number and address of the caveator in Sri Lanka at which notices relating to the caveat shall be served, the date of the caveat, the names and addresses of the persons to whom the notice of the caveat shall be sent where the caveator is not the owner, the right, title or interest in the land claimed by the caveator, grounds in support of the claim and the description of the land, including the boundaries, indicating the correct volume and folio in which such land, is registered.",
+           "text": "contain the name, signature and the National Identity Card number or the passport number or the driving licence number and address of the caveator in Sri Lanka at which notices relating to the caveat shall be served, the date of the caveat, the names and addresses of the persons to whom the notice of the caveat shall be sent where the caveator is not the owner, the right, title or interest in the land claimed by the caveator, grounds in support of the claim and the description of the land, including the boundaries, indicating the correct volume and folio in which such land, is registered.",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          }
+         ]
+        },
+        {
+         "type": "paragraph",
+         "number": "c",
+         "raw_text": "For the purpose of this section-",
+         "text": "For the purpose of this section-",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": [
+          {
+           "type": "subparagraph",
+           "number": "i",
+           "raw_text": "\"caveator\" includes a body of persons, a beneficiary under any trust affecting a land, the lawful guardian or the next friend of a minor or of a person of unsound mind or mentally deficient person, an attorney of a person, a judgement creditor, an executor or an administrator of an estate of a deceased, or a legal heir, or an intended purchaser who has entered into an agreement with the owner of a land or a developer of a land;",
+           "text": "\"caveator\" includes a body of persons, a beneficiary under any trust affecting a land, the lawful guardian or the next friend of a minor or of a person of unsound mind or mentally deficient person, an attorney of a person, a judgement creditor, an executor or an administrator of an estate of a deceased, or a legal heir, or an intended purchaser who has entered into an agreement with the owner of a land or a developer of a land;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "ii",
+           "raw_text": "\"condominium parcel\" means a condominium parcel registered under the Registration of Title Act, No.21 of 1998 in terms of section 10 of the Apartment Ownership Law, No.11 of 1973 or registered under this Ordinance; and",
+           "text": "\"condominium parcel\" means a condominium parcel registered under the Registration of Title Act, No.21 of 1998 in terms of section 10 of the Apartment Ownership Law, No.11 of 1973 or registered under this Ordinance; and",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "iii",
+           "raw_text": "\"interest\" includes an interest arising from an unregistered deed or instrument relating to a land which is incapable of immediate registration, a trust, an inheritance either by testate or intestate succession, instruments relating to a mortgage or an agreement to sell, co-ownership, an ownership arising from a condominium parcel or the estate of a minor, or of a person of unsound mind or mentally deficient person.",
+           "text": "\"interest\" includes an interest arising from an unregistered deed or instrument relating to a land which is incapable of immediate registration, a trust, an inheritance either by testate or intestate succession, instruments relating to a mortgage or an agreement to sell, co-ownership, an ownership arising from a condominium parcel or the estate of a minor, or of a person of unsound mind or mentally deficient person.",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "quoted_provision_note": "the substituted subsection (1) of section 32 of the principal enactment; printed within quotation marks on pages 1 to 3 of the Act"
+    },
+    {
+     "type": "paragraph",
+     "number": "2",
+     "raw_text": "by the insertion, immediately after subsection (1) thereof, of the following new subsections: -",
+     "text": "by the insertion, immediately after subsection (1) thereof, of the following new subsections: -",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": [
+      {
+       "type": "subsection",
+       "number": "1A",
+       "raw_text": "The Registrar, on being satisfied that all required documents and information referred to in paragraph (b) of subsection (1) are provided by the caveator, shall acknowledge the receipt of such caveat and record the prescribed particulars referred to in subsection (1) of section 27.",
+       "text": "The Registrar, on being satisfied that all required documents and information referred to in paragraph (b) of subsection (1) are provided by the caveator, shall acknowledge the receipt of such caveat and record the prescribed particulars referred to in subsection (1) of section 27.",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": []
       },
       {
-       "kind": "internal",
-       "target_document": "Registration of Documents Ordinance",
-       "target_section": "27",
-       "verbatim": "section 27"
+       "type": "subsection",
+       "number": "1B",
+       "raw_text": "Upon the acknowledgement, the Registrar shall forthwith notify the persons, whose names and addresses have been furnished by the caveator under subparagraph (iv) of paragraph (b) of subsection (1) and shall make an endorsement in the Remark Column by inserting the date and the names of the persons to whom and the addresses to which the notices referred to in subparagraph (ii) of paragraph (b) in subsection (1) were sent.",
+       "text": "Upon the acknowledgement, the Registrar shall forthwith notify the persons, whose names and addresses have been furnished by the caveator under subparagraph (iv) of paragraph (b) of subsection (1) and shall make an endorsement in the Remark Column by inserting the date and the names of the persons to whom and the addresses to which the notices referred to in subparagraph (ii) of paragraph (b) in subsection (1) were sent.",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": []
       }
      ]
+    },
+    {
+     "type": "paragraph",
+     "number": "3",
+     "raw_text": "by the repeal of subsection (3) thereof and the substitution therefor of the following subsection: -",
+     "text": "by the repeal of subsection (3) thereof and the substitution therefor of the following subsection: -",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": [
+      {
+       "type": "subsection",
+       "number": "3",
+       "raw_text": "A caveat shall be in force for a maximum period of two years.",
+       "text": "A caveat shall be in force for a maximum period of two years.",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": []
+      }
+     ]
+    },
+    {
+     "type": "paragraph",
+     "number": "4",
+     "raw_text": "in subsection (4) thereof, by the substitution for the words \"The notice to be given to the caveator shall be in the prescribed form\", of the words and figures \"Where an instrument affecting the same land described in the caveat has been subsequently presented for registration, a notice shall be given to the caveator in Form XI of the Second Schedule hereto\";",
+     "text": "in subsection (4) thereof, by the substitution for the words \"The notice to be given to the caveator shall be in the prescribed form\", of the words and figures \"Where an instrument affecting the same land described in the caveat has been subsequently presented for registration, a notice shall be given to the caveator in Form XI of the Second Schedule hereto\";",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": []
+    },
+    {
+     "type": "paragraph",
+     "number": "5",
+     "raw_text": "in subsection (5) thereof, by the substitution for the words \"a competent court within thirty days\" of the words \"a competent court within sixty days\".",
+     "text": "in subsection (5) thereof, by the substitution for the words \"a competent court within thirty days\" of the words \"a competent court within sixty days\".",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": []
     }
    ],
+   "heading": "Amendment of section 32 of Chapter 117",
+   "heading_raw": "Chapter 117 substantiating the right, title or interest in the land or claims to a right, title or interest in the land of the caveator; copies of the notice set out in Form X ofthe Second Schedule! hereto together with stamped envelopes, to be served on the owners of thel land whose names and addresses are given in the relevant volume and folio in which such land is registered, where the caveatori is not the owner; the original of the Power of Attomey duly registered with the Registrar General or the Registrar of the relevant Land Registry or the Registrar of Title (hereinafter in this section referred to as the \"Registrar\") where the caveator is a holder of a Power of Attorney (hcreinafter in this scction referred to as the \"attorney\"); and National Identity Card number or the passport number or the driving licence number and address of the caveator in Sri Lanka at which notices relating to the caveat shall be served, the date of the caveat, the names and addresses of the persons LO whom the notice of the caveat shall be sent where the caveator isnott the owner, the right, title ori interest in the land claimed by the caveator, grounds in support of the claim and the description of the land, including the boundaries, indicating the correct volume and folio in which such land, is registered. 3 parcel\" means a Law, No.11 of 1973 or",
+   "heading_correction_status": "restored_from_scan",
    "amendment_instruction": {
     "operation": "multiple",
+    "targets_principal_enactment": true,
+    "target_enactment": "Registration of Documents Ordinance",
+    "target_section": "32",
     "operations": [
      {
-      "limb": "i",
-      "operation": "amend",
-      "target": {},
-      "target_label": ""
+      "limb": "1",
+      "operation": "repeal_and_substitute",
+      "target": {
+       "target_section": "32",
+       "target_subsection": "1"
+      },
+      "target_label": "32(1)",
+      "substituted_text_node": "body[1].children[0].children[0]"
      },
      {
-      "limb": "i",
+      "limb": "2",
+      "operation": "insert",
+      "target": {
+       "target_section": "32",
+       "after_subsection": "1",
+       "inserted_subsections": [
+        "1A",
+        "1B"
+       ]
+      },
+      "target_label": "32(1A), 32(1B)"
+     },
+     {
+      "limb": "3",
       "operation": "repeal_and_substitute",
+      "target": {
+       "target_section": "32",
+       "target_subsection": "3"
+      },
+      "target_label": "32(3)"
+     },
+     {
+      "limb": "4",
+      "operation": "substitute_words",
+      "target": {
+       "target_section": "32",
+       "target_subsection": "4"
+      },
+      "target_label": "32(4)",
       "substitutes": {
        "from": "The notice to be given to the caveator shall be in the prescribed form",
        "to": "Where an instrument affecting the same land described in the caveat has been subsequently presented for registration, a notice shall be given to the caveator in Form XI of the Second Schedule hereto"
-      },
+      }
+     },
+     {
+      "limb": "5",
+      "operation": "substitute_words",
       "target": {
-       "target_paragraph": "b"
+       "target_section": "32",
+       "target_subsection": "5"
       },
-      "target_label": ""
+      "target_label": "32(5)",
+      "substitutes": {
+       "from": "a competent court within thirty days",
+       "to": "a competent court within sixty days"
+      }
      }
-    ],
-    "targets_principal_enactment": false,
-    "target_enactment": "Registration of Documents Ordinance"
+    ]
    }
   },
   {
    "type": "section",
    "number": "3",
-   "heading": "Amendment of section 33 of the principal enactment 5 (viii) where an order has been issued by a competent court on an estate which is the subject of a caveat, by a Fiscal officer, or any other person receiving the rights under such order. (b) on receipt of the instrument for withdrawal under paragraph (a) hereof. the Registrar shall- () cancel the entry of the caveat in the register in the aforesaid manner and setting out the date thereof, and (ii) notify the persons or body of persons. whose right, title or interest for registration of an instrument was affected by such caveat.\" \"; \"(2A) Notwithstanding anything to the contrary in any other written law, any summons, notice, decree nisi or order in relation to any proceeding under subsection (2) ona caveat. shall be served tot the address of the caveator in Sri Lanka referred to in sub-paragraph (iv) of paragraph (b) of subsection (1) of section 32.\"; \"(4) The Registrar shall not register a caveat of the same caveator in respect of the same land or same iterest in the land, in respect of which registration of caveat was cancelled under subsection (3).\". - 7",
    "raw_text": "3. Section 33 of the principal enactment is hereby amended as follows: - (1) in subsection (1) thereof, by the substitution for the words \"seizure priority notice, caveal, or lis pendens\". of the words \"seizure priority notice or lis pendens\"; Registration of Documents (Amendment) (2) by the addition immediately after subsection (1) thereof. of the following new subsection: \"(IA) (a). A caveat mayl bc withdrawn or cancelled, as the case may be, at the request in writing (i) by the cavealor; (ii) by an attorney: (iii) upon the death of a caveator, by an executor. administrator. or a legal heir; (iv) by the guardian or ncxt friend of a minor of a person of unsound mind or mentally deficient person on whose interest the caveat was lodged. on the dcath or removal of the guardian, by the successor or by the ninor upon the minor attaining the age of majority: (v) where there are joint caveators, and upon the death of one or more oft them, by the surviving caveator or caveators: (vi) where the caveator is adjudicated a bankrupt, by the Official Assignee; (vii) where the caveator is a body corporate and is in liquidation, and the estate or intercst claimed by the ca veator has become vested in the. liquidator appointed by court, by the liquidator or by the Official Recciver; or 6 Registration of Documents (Amendment) (3) by the insertion, immediately after subsection (2) thereof. of the following new subsection: (4) by the addition, immediately after subsection (3) thereof, of the following new subsection:- Registration of Documents (Amendment)",
-   "text": "Section 33 of the principal enactment is hereby amended as follows: - (1) in subsection (1) thereof, by the substitution for the words \"seizure priority notice, caveal, or lis pendens\". of the words \"seizure priority notice or lis pendens\"; Registration of Documents (Amendment) (2) by the addition immediately after subsection (1) thereof. of the following new subsection: \"(IA) (a). A caveat mayl bc withdrawn or cancelled, as the case may be, at the request in writing (i) by the cavealor; (ii) by an attorney: (iii) upon the death of a caveator, by an executor. administrator. or a legal heir; (iv) by the guardian or ncxt friend of a minor of a person of unsound mind or mentally deficient person on whose interest the caveat was lodged. on the dcath or removal of the guardian, by the successor or by the ninor upon the minor attaining the age of majority:",
+   "text": "Section 33 of the principal enactment is hereby amended as follows: -",
    "amendment_events": [],
    "cross_references": [],
    "children": [
     {
      "type": "paragraph",
-     "number": "v",
-     "raw_text": "(v) where there are joint caveators, and upon the death of one or more oft them, by the surviving caveator or caveators: (vi) where the caveator is adjudicated a bankrupt, by the Official Assignee; (vii) where the caveator is a body corporate and is in liquidation, and the estate or intercst claimed by the ca veator has become vested in the. liquidator appointed by court, by the liquidator or by the Official Recciver; or 6 Registration of Documents (Amendment) (3) by the insertion, immediately after subsection (2) thereof. of the following new subsection: (4) by the addition, immediately after subsection (3) thereof, of the following new subsection:- Registration of Documents (Amendment)",
-     "text": "where there are joint caveators, and upon the death of one or more oft them, by the surviving caveator or caveators: (vi) where the caveator is adjudicated a bankrupt, by the Official Assignee; (vii) where the caveator is a body corporate and is in liquidation, and the estate or intercst claimed by the ca veator has become vested in the. liquidator appointed by court, by the liquidator or by the Official Recciver; or 6 Registration of Documents (Amendment) (3) by the insertion, immediately after subsection (2) thereof. of the following new subsection: (4) by the addition, immediately after subsection (3) thereof, of the following new subsection:- Registration of Documents (Amendment)",
+     "number": "1",
+     "raw_text": "in subsection (1) thereof, by the substitution for the words \"seizure priority notice, caveat, or lis pendens\", of the words \"seizure priority notice or lis pendens\";",
+     "text": "in subsection (1) thereof, by the substitution for the words \"seizure priority notice, caveat, or lis pendens\", of the words \"seizure priority notice or lis pendens\";",
      "amendment_events": [],
-     "cross_references": []
+     "cross_references": [],
+     "children": []
+    },
+    {
+     "type": "paragraph",
+     "number": "2",
+     "raw_text": "by the addition immediately after subsection (1) thereof, of the following new subsection:",
+     "text": "by the addition immediately after subsection (1) thereof, of the following new subsection:",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": [
+      {
+       "type": "subsection",
+       "number": "1A",
+       "raw_text": "",
+       "text": "",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": [
+        {
+         "type": "paragraph",
+         "number": "a",
+         "raw_text": "A caveat may be withdrawn or cancelled, as the case may be, at the request in writing -",
+         "text": "A caveat may be withdrawn or cancelled, as the case may be, at the request in writing -",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": [
+          {
+           "type": "subparagraph",
+           "number": "i",
+           "raw_text": "by the caveator;",
+           "text": "by the caveator;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "ii",
+           "raw_text": "by an attorney;",
+           "text": "by an attorney;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "iii",
+           "raw_text": "upon the death of a caveator, by an executor, administrator, or a legal heir;",
+           "text": "upon the death of a caveator, by an executor, administrator, or a legal heir;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "iv",
+           "raw_text": "by the guardian or next friend of a minor of a person of unsound mind or mentally deficient person on whose interest the caveat was lodged, on the death or removal of the guardian, by the successor or by the minor upon the minor attaining the age of majority;",
+           "text": "by the guardian or next friend of a minor of a person of unsound mind or mentally deficient person on whose interest the caveat was lodged, on the death or removal of the guardian, by the successor or by the minor upon the minor attaining the age of majority;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "v",
+           "raw_text": "where there are joint caveators, and upon the death of one or more of them, by the surviving caveator or caveators;",
+           "text": "where there are joint caveators, and upon the death of one or more of them, by the surviving caveator or caveators;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "vi",
+           "raw_text": "where the caveator is adjudicated a bankrupt, by the Official Assignee;",
+           "text": "where the caveator is adjudicated a bankrupt, by the Official Assignee;",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "vii",
+           "raw_text": "where the caveator is a body corporate and is in liquidation, and the estate or interest claimed by the caveator has become vested in the liquidator appointed by court, by the liquidator or by the Official Receiver; or",
+           "text": "where the caveator is a body corporate and is in liquidation, and the estate or interest claimed by the caveator has become vested in the liquidator appointed by court, by the liquidator or by the Official Receiver; or",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "viii",
+           "raw_text": "where an order has been issued by a competent court on an estate which is the subject of a caveat, by a Fiscal officer, or any other person receiving the rights under such order.",
+           "text": "where an order has been issued by a competent court on an estate which is the subject of a caveat, by a Fiscal officer, or any other person receiving the rights under such order.",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          }
+         ]
+        },
+        {
+         "type": "paragraph",
+         "number": "b",
+         "raw_text": "on receipt of the instrument for withdrawal under paragraph (a) hereof, the Registrar shall-",
+         "text": "on receipt of the instrument for withdrawal under paragraph (a) hereof, the Registrar shall-",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": [
+          {
+           "type": "subparagraph",
+           "number": "i",
+           "raw_text": "cancel the entry of the caveat in the register in the aforesaid manner and setting out the date thereof, and",
+           "text": "cancel the entry of the caveat in the register in the aforesaid manner and setting out the date thereof, and",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          },
+          {
+           "type": "subparagraph",
+           "number": "ii",
+           "raw_text": "notify the persons or body of persons, whose right, title or interest for registration of an instrument was affected by such caveat.",
+           "text": "notify the persons or body of persons, whose right, title or interest for registration of an instrument was affected by such caveat.",
+           "amendment_events": [],
+           "cross_references": [],
+           "children": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "paragraph",
+     "number": "3",
+     "raw_text": "by the insertion, immediately after subsection (2) thereof, of the following new subsection:",
+     "text": "by the insertion, immediately after subsection (2) thereof, of the following new subsection:",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": [
+      {
+       "type": "subsection",
+       "number": "2A",
+       "raw_text": "Notwithstanding anything to the contrary in any other written law, any summons, notice, decree nisi or order in relation to any proceeding under subsection (2) on a caveat, shall be served to the address of the caveator in Sri Lanka referred to in sub-paragraph (iv) of paragraph (b) of subsection (1) of section 32.",
+       "text": "Notwithstanding anything to the contrary in any other written law, any summons, notice, decree nisi or order in relation to any proceeding under subsection (2) on a caveat, shall be served to the address of the caveator in Sri Lanka referred to in sub-paragraph (iv) of paragraph (b) of subsection (1) of section 32.",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": []
+      }
+     ]
+    },
+    {
+     "type": "paragraph",
+     "number": "4",
+     "raw_text": "by the addition, immediately after subsection (3) thereof, of the following new subsection:-",
+     "text": "by the addition, immediately after subsection (3) thereof, of the following new subsection:-",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": [
+      {
+       "type": "subsection",
+       "number": "4",
+       "raw_text": "The Registrar shall not register a caveat of the same caveator in respect of the same land or same iterest in the land, in respect of which registration of caveat was cancelled under subsection (3).",
+       "text": "The Registrar shall not register a caveat of the same caveator in respect of the same land or same iterest in the land, in respect of which registration of caveat was cancelled under subsection (3).",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": [],
+       "text_note": "'iterest' is printed so in the Act (page 6); kept as printed."
+      }
+     ]
     }
    ],
+   "heading": "Amendment of section 33 of the principal enactment",
+   "heading_raw": "Amendment of section 33 of the principal enactment 5 (viii) where an order has been issued by a competent court on an estate which is the subject of a caveat, by a Fiscal officer, or any other person receiving the rights under such order. (b) on receipt of the instrument for withdrawal under paragraph (a) hereof. the Registrar shall- () cancel the entry of the caveat in the register in the aforesaid manner and setting out the date thereof, and (ii) notify the persons or body of persons. whose right, title or interest for registration of an instrument was affected by such caveat.\" \"; \"(2A) Notwithstanding anything to the contrary in any other written law, any summons, notice, decree nisi or order in relation to any proceeding under subsection (2) ona caveat. shall be served tot the address of the caveator in Sri Lanka referred to in sub-paragraph (iv) of paragraph (b) of subsection (1) of section 32.\"; \"(4) The Registrar shall not register a caveat of the same caveator in respect of the same land or same iterest in the land, in respect of which registration of caveat was cancelled under subsection (3).\". - 7",
+   "heading_correction_status": "restored_from_scan",
    "amendment_instruction": {
-    "operation": "insert",
-    "operations": [
-     {
-      "limb": "v",
-      "operation": "insert",
-      "target": {
-       "target_section": "33",
-       "named_target": "the principal enactment",
-       "target_subsection": "1"
-      },
-      "target_label": "33(1)"
-     }
-    ],
+    "operation": "multiple",
     "targets_principal_enactment": true,
     "target_enactment": "Registration of Documents Ordinance",
     "target_section": "33",
-    "target_subsection": "1"
+    "operations": [
+     {
+      "limb": "1",
+      "operation": "substitute_words",
+      "target": {
+       "target_section": "33",
+       "target_subsection": "1"
+      },
+      "target_label": "33(1)",
+      "substitutes": {
+       "from": "seizure priority notice, caveat, or lis pendens",
+       "to": "seizure priority notice or lis pendens"
+      }
+     },
+     {
+      "limb": "2",
+      "operation": "insert",
+      "target": {
+       "target_section": "33",
+       "after_subsection": "1",
+       "inserted_subsections": [
+        "1A"
+       ]
+      },
+      "target_label": "33(1A)"
+     },
+     {
+      "limb": "3",
+      "operation": "insert",
+      "target": {
+       "target_section": "33",
+       "after_subsection": "2",
+       "inserted_subsections": [
+        "2A"
+       ]
+      },
+      "target_label": "33(2A)"
+     },
+     {
+      "limb": "4",
+      "operation": "insert",
+      "target": {
+       "target_section": "33",
+       "after_subsection": "3",
+       "inserted_subsections": [
+        "4"
+       ]
+      },
+      "target_label": "33(4)"
+     }
+    ]
    }
   },
   {
    "type": "section",
    "number": "4",
-   "heading": "enactment",
    "raw_text": "4. Section 50 of the principal enactment is hereby Amendment to amended by the substitution for the words, \"require, but such seciion 50 of the Schedule may be altered or added to by regulation\". of the principal words \"require.\" \"",
-   "text": "Section 50 of the principal enactment is hereby Amendment to amended by the substitution for the words, \"require, but such seciion 50 of the Schedule may be altered or added to by regulation\". of the principal words \"require.\" \"",
+   "text": "Section 50 of the principal enactment is hereby amended by the substitution for the words, \"require, but such Schedule may be altered or added to by regulation\". of the words \"require.\".",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading": "Amendment to section 50 of the principal enactment",
+   "heading_raw": "enactment",
+   "heading_correction_status": "restored_from_scan",
+   "text_note": "Punctuation as printed on page 7: a full stop follows the closing quotation mark after 'regulation'.",
+   "amendment_instruction": {
+    "operation": "substitute_words",
+    "targets_principal_enactment": true,
+    "target_enactment": "Registration of Documents Ordinance",
+    "target_section": "50",
+    "operations": [
+     {
+      "limb": "",
+      "operation": "substitute_words",
+      "target": {
+       "target_section": "50"
+      },
+      "target_label": "50",
+      "substitutes": {
+       "from": "require, but such Schedule may be altered or added to by regulation",
+       "to": "require."
+      }
+     }
+    ]
+   }
   },
   {
    "type": "section",
    "number": "5",
-   "heading": "the Second Schedule to the thercof, and the substitution principal enaciment (section 32(b)1 (where thc caveator is nol the (Signature of the caveator/his",
-   "raw_text": "5. The Second Schedule to the principal enactment is Amendment of hereby amended as follows:- (I) Form by the repeal of VIII therefor, of the following new Form:- \"FORM VIII FORM OF THE CAVEAT Takc notice that. 1, (full name and the address of the caveator) bearing (NIC/passport/ driving licence) no... require to be served with notice of the presentution for registration of any instrument affecting Jand... : (owned by me i owned by other- specify the right/ titlel or interest) referred to in the Schedule hereio. And 1 further declare that I present this caveat in my behalf/ in behalf of owner) on 1hc foliowing ground/s. Title under deed will nu.. Under the last of.. Other (specify) And I appoint (the address in Sri Lanka) as the place at which notices relating hereio shall be sent. Attorney-at-Law or notary/attorney) Date Signed by the above-named.. in the presence of (full name and address of the Iwo witnesses)",
-   "text": "The Second Schedule to the principal enactment is Amendment of hereby amended as follows:- (I) Form by the repeal of VIII therefor, of the following new Form:- \"FORM VIII FORM OF THE CAVEAT Takc notice that. 1, (full name and the address of the caveator) bearing (NIC/passport/ driving licence) no... require to be served with notice of the presentution for registration of any instrument affecting Jand... : (owned by me i owned by other- specify the right/ titlel or interest) referred to in the Schedule hereio. And 1 further declare that I present this caveat in my behalf/ in behalf of owner) on 1hc foliowing ground/s. Title under deed will nu.. Under the last of.. Other (specify) And I appoint (the address in Sri Lanka) as the place at which notices relating hereio shall be sent. Attorney-at-Law or notary/attorney) Date Signed by the above-named.. in the presence of (full name and address of the Iwo witnesses)",
+   "raw_text": "5. The Second Schedule to the principal enactment is Amendment of hereby amended as follows:- (I) Form by the repeal of VIII therefor, of the following new Form:- \"FORM VIII FORM OF THE CAVEAT Takc notice that. 1, (full name and the address of the caveator) bearing (NIC/passport/ driving licence) no... require to be served with notice of the presentution for registration of any instrument affecting Jand... : (owned by me i owned by other- specify the right/ titlel or interest) referred to in the Schedule hereio. And 1 further declare that I present this caveat in my behalf/ in behalf of owner) on 1hc foliowing ground/s. Title under deed will nu.. Under the last of.. Other (specify) And I appoint (the address in Sri Lanka) as the place at which notices relating hereio shall be sent. Attorney-at-Law or notary/attorney) Date Signed by the above-named.. in the presence of (full name and address of the Iwo witnesses) 1. Signature of the first witness 2. Signature of the second wiuness 8 Registration of Documents (Amendment) (2) by the insertion immediately after Form IX of that Schedule, of the following new Forms: - NOTICE TO AN OWNER OF A PROPERTY IN RESPECT Take notice that a caveat has been lodged by of assessment no.. folio... Date NOTICE TO THE CAVEATOR OF AN INSTRUMENT You are hereby notified that the instrument specified in the Schedule hereto is pending registration in volune... and folio.. to caveat No... dated... Date Registration of Documents (Amendment) Deed Naturc of the Name of the Description Parties No. deed/ Notary who of the Land instrument attested the (as Schedule) per the instrument deed/",
+   "text": "The Second Schedule to the principal enactment is hereby amended as follows:-",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
-  },
-  {
-   "type": "section",
-   "number": "1",
-   "heading": "",
-   "raw_text": "1. Signature of the first witness",
-   "text": "Signature of the first witness",
-   "amendment_events": [],
-   "cross_references": [],
-   "children": []
-  },
-  {
-   "type": "section",
-   "number": "2",
-   "heading": "Schedule (describe land as in section 13 and previous registration, if known)\"; and \"FORM X [section 32(1)(bXii)] OF WHICH A CAVEAT HAS BEEN LODGED in respect of the property named... bearing and registered under of volume at this land registry. (signature) Registrar of Lands of. FORM XI [section 32(4)] PENDING REGISTRATION of at this Land Registry. as opposed submitted by you. (signature) Registrar of Lands of.. 9",
-   "raw_text": "2. Signature of the second wiuness 8 Registration of Documents (Amendment) (2) by the insertion immediately after Form IX of that Schedule, of the following new Forms: - NOTICE TO AN OWNER OF A PROPERTY IN RESPECT Take notice that a caveat has been lodged by of assessment no.. folio... Date NOTICE TO THE CAVEATOR OF AN INSTRUMENT You are hereby notified that the instrument specified in the Schedule hereto is pending registration in volune... and folio.. to caveat No... dated... Date Registration of Documents (Amendment) Deed Naturc of the Name of the Description Parties No. deed/ Notary who of the Land instrument attested the (as Schedule) per the instrument deed/",
-   "text": "Signature of the second wiuness 8 Registration of Documents (Amendment) (2) by the insertion immediately after Form IX of that Schedule, of the following new Forms: - NOTICE TO AN OWNER OF A PROPERTY IN RESPECT Take notice that a caveat has been lodged by of assessment no.. folio... Date NOTICE TO THE CAVEATOR OF AN INSTRUMENT You are hereby notified that the instrument specified in the Schedule hereto is pending registration in volune... and folio.. to caveat No... dated... Date Registration of Documents (Amendment) Deed Naturc of the Name of the Description Parties No. deed/ Notary who of the Land instrument attested the (as Schedule) per the instrument deed/",
-   "amendment_events": [],
-   "cross_references": [],
-   "children": []
+   "children": [
+    {
+     "type": "paragraph",
+     "number": "1",
+     "raw_text": "by the repeal of Form VIII thereof, and the substitution therefor, of the following new Form:-",
+     "text": "by the repeal of Form VIII thereof, and the substitution therefor, of the following new Form:-",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": [
+      {
+       "type": "form",
+       "number": "VIII",
+       "heading": "FORM VIII",
+       "authority_note": "[section 32(b)]",
+       "title": "FORM OF THE CAVEAT",
+       "raw_text": "5. The Second Schedule to the principal enactment is Amendment of hereby amended as follows:- (I) Form by the repeal of VIII therefor, of the following new Form:- \"FORM VIII FORM OF THE CAVEAT Takc notice that. 1, (full name and the address of the caveator) bearing (NIC/passport/ driving licence) no... require to be served with notice of the presentution for registration of any instrument affecting Jand... : (owned by me i owned by other- specify the right/ titlel or interest) referred to in the Schedule hereio. And 1 further declare that I present this caveat in my behalf/ in behalf of owner) on 1hc foliowing ground/s. Title under deed will nu.. Under the last of.. Other (specify) And I appoint (the address in Sri Lanka) as the place at which notices relating hereio shall be sent. Attorney-at-Law or notary/attorney) Date Signed by the above-named.. in the presence of (full name and address of the Iwo witnesses)",
+       "amendment_events": [],
+       "cross_references": [],
+       "text": "Take notice that, I, ............ (full name and the address of the caveator) bearing (NIC/passport/ driving licence) no.................. require to be served with notice of the presentation for registration of any instrument affecting land........ (owned by me / owned by other- specify the right/ title/ or interest) referred to in the Schedule hereto.\n\nAnd I further declare that I present this caveat in my behalf/ in behalf of ........................ (where the caveator is not the owner) on the following ground/s.\n\nTitle under deed no.............\nUnder the last will of............\nOther (specify) ...........................................\n\nAnd I appoint (the address in Sri Lanka) as the place at which notices relating hereto shall be sent.\n\n............................\n(Signature of the caveator/his Attorney-at-Law or notary/attorney)\n\nDate\n\nSigned by the above-named.............. in the presence of (full name and address of the two witnesses)\n\n1. Signature of the first witness\n2. Signature of the second witness\n\nSchedule\n\n(describe land as in section 13 and previous registration, if known)",
+       "note": "'[section 32(b)]' is the authority note as printed on page 7; dotted blanks are reproduced with the same number of dots the OCR read, which is approximate."
+      }
+     ]
+    },
+    {
+     "type": "paragraph",
+     "number": "2",
+     "raw_text": "by the insertion immediately after Form IX of that Schedule, of the following new Forms: -",
+     "text": "by the insertion immediately after Form IX of that Schedule, of the following new Forms: -",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": [
+      {
+       "type": "form",
+       "number": "X",
+       "heading": "FORM X",
+       "authority_note": "[section 32(1)(b)(ii)]",
+       "title": "NOTICE TO AN OWNER OF A PROPERTY IN RESPECT OF WHICH A CAVEAT HAS BEEN LODGED",
+       "raw_text": "2. Signature of the second wiuness 8 Registration of Documents (Amendment) (2) by the insertion immediately after Form IX of that Schedule, of the following new Forms: - NOTICE TO AN OWNER OF A PROPERTY IN RESPECT Take notice that a caveat has been lodged by of assessment no.. folio... Date NOTICE TO THE CAVEATOR OF AN INSTRUMENT You are hereby notified that the instrument specified in the Schedule hereto is pending registration in volune... and folio.. to caveat No... dated... Date Registration of Documents (Amendment) Deed Naturc of the Name of the Description Parties No. deed/ Notary who of the Land instrument attested the (as Schedule) per the instrument deed/",
+       "amendment_events": [],
+       "cross_references": [],
+       "text": "Take notice that a caveat has been lodged by ......... of .................. in respect of the property named....... bearing assessment no................... and registered under folio............. of volume .............. at this land registry.\n\n(signature)\n..................\nRegistrar of Lands\nof.................\n\nDate :......................"
+      },
+      {
+       "type": "form",
+       "number": "XI",
+       "heading": "FORM XI",
+       "authority_note": "[section 32(4)]",
+       "title": "NOTICE TO THE CAVEATOR OF AN INSTRUMENT PENDING REGISTRATION",
+       "raw_text": "2. Signature of the second wiuness 8 Registration of Documents (Amendment) (2) by the insertion immediately after Form IX of that Schedule, of the following new Forms: - NOTICE TO AN OWNER OF A PROPERTY IN RESPECT Take notice that a caveat has been lodged by of assessment no.. folio... Date NOTICE TO THE CAVEATOR OF AN INSTRUMENT You are hereby notified that the instrument specified in the Schedule hereto is pending registration in volune... and folio.. to caveat No... dated... Date Registration of Documents (Amendment) Deed Naturc of the Name of the Description Parties No. deed/ Notary who of the Land instrument attested the (as Schedule) per the instrument deed/",
+       "amendment_events": [],
+       "cross_references": [],
+       "text": "You are hereby notified that the instrument specified in the Schedule hereto is pending registration in volume.......... and folio........... of ................ at this Land Registry, as opposed to caveat No......... dated.............. submitted by you.\n\n(signature)\n..................\nRegistrar of Lands\nof.................\n\nDate :......................\n\n[table, page 9, five columns:] Deed No. | Nature of the deed/ instrument | Name of the Notary who attested the deed/ instrument | Description of the Land (as per the Schedule) | Parties",
+       "note": "The table on page 9 is the Schedule to Form XI; it is printed as an empty five-column table with the headings transcribed here."
+      }
+     ]
+    }
+   ],
+   "heading": "Amendment of the Second Schedule to the principal enactment",
+   "heading_raw": "the Second Schedule to the thercof, and the substitution principal enaciment (section 32(b)1 (where thc caveator is nol the (Signature of the caveator/his",
+   "heading_correction_status": "restored_from_scan",
+   "amendment_instruction": {
+    "operation": "multiple",
+    "targets_principal_enactment": true,
+    "target_enactment": "Registration of Documents Ordinance",
+    "target_schedule": "Second Schedule",
+    "operations": [
+     {
+      "limb": "1",
+      "operation": "repeal_and_substitute",
+      "target": {
+       "target_schedule": "Second Schedule",
+       "target_form": "VIII"
+      },
+      "target_label": "Second Schedule, Form VIII"
+     },
+     {
+      "limb": "2",
+      "operation": "insert",
+      "target": {
+       "target_schedule": "Second Schedule",
+       "after_form": "IX",
+       "inserted_forms": [
+        "X",
+        "XI"
+       ]
+      },
+      "target_label": "Second Schedule, Forms X and XI"
+     }
+    ]
+   }
   },
   {
    "type": "section",
    "number": "6",
-   "heading": "inconsistency",
    "raw_text": "6. In the event of any inconsistency between the Sinhala Sinhala text to and Tamil texts of this Act, the Sinhala text shall prevail. prevail in case of GOVERKMENT PRINTING. No. 118, DR. DANISTER DE SILVA MAWATHA. COLOMBO 8.",
-   "text": "In the event of any inconsistency between the Sinhala Sinhala text to and Tamil texts of this Act, the Sinhala text shall prevail. prevail in case of GOVERKMENT PRINTING. No. 118, DR. DANISTER DE SILVA MAWATHA. COLOMBO 8.",
+   "text": "In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading": "Sinhala text to prevail in case of inconsistency",
+   "heading_raw": "inconsistency",
+   "heading_correction_status": "restored_from_scan"
   }
  ],
  "checked_against": "Government Printer PDF, Registration of Documents (Amendment) Act, No. 32 of 2022, certified 31st October 2022",
  "quality_notes": [
-  "The Government Printer PDF is an 11-page scan with no text layer, so this tree is parsed from an offline OCR reading. Wording has not been proof-read against the scan.",
-  "This tree is the least reliable of the six in the package and should not be relied on before it is proof-read. The damage is structural, not just spelling: see known_ocr_defects.",
-  "The body carries duplicate section numbers. Two further nodes numbered 1 and 2 appear after section 5, produced by the Form VIII / Form X specimen text of the Second Schedule being read as numbered sections. They are schedule forms, not sections of the Act.",
-  "Several section headings have swallowed whole runs of body text where the marginal-note column was not separated cleanly. Section 2's heading in particular runs to roughly a page of the substituted section 32(1).",
-  "Common letter substitutions through the body: 'thc' for 'the', 'thercof' for 'thereof', 'repcal' for 'repeal', 'scction' for 'section', 'hcreinafter' for 'hereinafter', 'Attomey' for 'Attorney', 'wiuness' for 'witness', 'LO' for 'to', 'Actmayl' for 'Act may', 'isnott' for 'is not'."
+  "The Government Printer PDF is an 11-page scan with no text layer. The tree was first parsed from an offline OCR reading (raw_text); on 2026-09-05 every operative provision and both Schedule forms were proof-read against page renders of the scan and the wording in text corrected. The OCR reading stays in raw_text.",
+  "Structure fixed at the same time: the six sections are now six nodes (the parser had read the Form VIII witness lines and Forms X/XI as sections numbered 1 and 2); the substituted 32(1) and inserted 32(1A), (1B), (3), 33(1A), (2A), (4) sit under the limb that enacts them; the three Forms are form nodes under section 5.",
+  "Printed peculiarities kept as printed: s.3 limb (4) 'iterest'; Form VIII authority note '[section 32(b)]'; s.4's full stop after the closing quotation mark.",
+  "Dotted blanks in the Forms are reproduced approximately; their exact length is not significant."
  ],
  "known_ocr_defects": [
   {
@@ -308,5 +944,292 @@
    "in": "section 2, limb (1)",
    "effect": "amendment_instructions[0] records its first operation with an empty target and an empty target_label. The section amends section 32 of the principal enactment, which the body text states."
   }
- ]
+ ],
+ "certified_on_iso": "2022-10-31",
+ "gazette": "Published as a Supplement to Part II of the Gazette of the Democratic Socialist Republic of Sri Lanka of November 04, 2022",
+ "source_location": {
+  "kind": "pdf_page",
+  "file": "data/legal-sources/library/amendments/32-2022-registration-of-documents-amendment-act.pdf",
+  "section_pages": {
+   "1": 2,
+   "2": 2,
+   "3": 5,
+   "4": 8,
+   "5": 8,
+   "6": 10
+  },
+  "note": "PDF page numbers (cover is page 1); the printed page numbers run one behind."
+ },
+ "corrections": [
+  {
+   "page": 2,
+   "location": "long title",
+   "reads": "AN/ ACTTOAMENDT THE REGISTRATION OFI DOCUMENTS ORDINANCE",
+   "corrected_to": "AN ACT TO AMEND THE REGISTRATION OF DOCUMENTS ORDINANCE",
+   "confidence": "high",
+   "why_check": "small capitals run together in the scan"
+  },
+  {
+   "page": 2,
+   "location": "s.1",
+   "reads": "This Actmayl be cited as the. Registration",
+   "corrected_to": "This Act may be cited as the Registration",
+   "confidence": "high",
+   "why_check": "word spacing"
+  },
+  {
+   "page": 2,
+   "location": "s.2 opening",
+   "reads": "Section 32 oft thc Registration ofDocuments Ordinance",
+   "corrected_to": "Section 32 of the Registration of Documents Ordinance",
+   "confidence": "high",
+   "why_check": "letter substitutions"
+  },
+  {
+   "page": 2,
+   "location": "s.2 marginal note",
+   "reads": "Chapter 117 substantiating the right ... Law, No.11 of 1973 or (absorbed body text)",
+   "corrected_to": "Amendment of section 32 of Chapter 117",
+   "confidence": "high",
+   "why_check": "the note is printed in three lines to the right of the section opening"
+  },
+  {
+   "page": 2,
+   "location": "s.2 limb (1)",
+   "reads": "by the repcal of subsection (1) thercof and the substitution thercfor",
+   "corrected_to": "by the repeal of subsection (1) thereof and the substitution therefor",
+   "confidence": "high",
+   "why_check": "c for e"
+  },
+  {
+   "page": 2,
+   "location": "32(1)(a)(ii)",
+   "reads": "claims tol have a right",
+   "corrected_to": "claims to have a right",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 2,
+   "location": "32(1)(a) closing words",
+   "reads": "to al land, an undivided land. al land parcel ... referred to ast the \"land\"",
+   "corrected_to": "to a land, an undivided land, a land parcel ... referred to as the \"land\"",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 2,
+   "location": "32(1)(b)",
+   "reads": "Every caveat presented. for registration shall-",
+   "corrected_to": "Every caveat presented for registration shall-",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 3,
+   "location": "32(1)(b)(ii)",
+   "reads": "ofthe Second Schedule! hereto ... owners of thel land ... where the caveatori is not the owner",
+   "corrected_to": "of the Second Schedule hereto ... owners of the land ... where the caveator is not the owner",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 3,
+   "location": "32(1)(b)(iii)",
+   "reads": "Power of Attomey ... (hcreinafter in this scction referred to",
+   "corrected_to": "Power of Attorney ... (hereinafter in this section referred to",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 3,
+   "location": "32(1)(b)(iv)",
+   "reads": "the persons LO whom ... isnott the owner, the right, title ori interest",
+   "corrected_to": "the persons to whom ... is not the owner, the right, title or interest",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 4,
+   "location": "32(1)(c)(i)",
+   "reads": "friend lofar minor or ofaj person ... estate ofa deceased ... purchaser whol has entered ... developer of a land:",
+   "corrected_to": "friend of a minor or of a person ... estate of a deceased ... purchaser who has entered ... developer of a land;",
+   "confidence": "high",
+   "why_check": "final punctuation reads ';' on the scan"
+  },
+  {
+   "page": 4,
+   "location": "32(1)(c)(ii)",
+   "reads": "in ternis of section 10 ... registered under this Ordinance: and",
+   "corrected_to": "in terms of section 10 ... registered under this Ordinance; and",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 4,
+   "location": "32(1)(c)(iii)",
+   "reads": "agreement to sell. CO- ownership. an ownership ... deficient person. ';",
+   "corrected_to": "agreement to sell, co-ownership, an ownership ... deficient person.\";",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 4,
+   "location": "s.2 limb (2)",
+   "reads": "by the inscrtion ... documents andi informationr referred to in paragraph (b) of subsection (I) ... by the cavcator",
+   "corrected_to": "by the insertion ... documents and information referred to in paragraph (b) of subsection (1) ... by the caveator",
+   "confidence": "high",
+   "why_check": "'(I)' is the numeral 1 throughout"
+  },
+  {
+   "page": 5,
+   "location": "32(1A)",
+   "reads": "referred toi in subsection (I) of section 27",
+   "corrected_to": "referred to in subsection (1) of section 27",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 5,
+   "location": "32(1B)",
+   "reads": "have becn furnished ... (iv)ofp paragraph (b) ... paragraph (D) in subsection (I) were sent.\" \":",
+   "corrected_to": "have been furnished ... (iv) of paragraph (b) ... paragraph (b) in subsection (1) were sent.\";",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 5,
+   "location": "s.2 limb (5)",
+   "reads": "a compctent court within sixty days",
+   "corrected_to": "a competent court within sixty days",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 5,
+   "location": "s.3 limb (1)",
+   "reads": "\"seizure priority notice, caveal, or lis pendens\". of the words",
+   "corrected_to": "\"seizure priority notice, caveat, or lis pendens\", of the words",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 5,
+   "location": "s.3 marginal note",
+   "reads": "Amendment of section 33 of the principal enactment 5 (viii) where an order ... (absorbed page number and body text)",
+   "corrected_to": "Amendment of section 33 of the principal enactment",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 6,
+   "location": "33(1A)(a)",
+   "reads": "\"(IA) (a). A caveat mayl bc withdrawn",
+   "corrected_to": "\"(1A) (a) A caveat may be withdrawn",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 6,
+   "location": "33(1A)(a)(i)-(iv)",
+   "reads": "by the cavealor; ... by an attorney: ... an executor. administrator. or a legal heir; ... ncxt friend ... lodged. on the dcath ... the ninor upon the minor attaining the age of majority:",
+   "corrected_to": "by the caveator; ... by an attorney; ... an executor, administrator, or a legal heir; ... next friend ... lodged, on the death ... the minor upon the minor attaining the age of majority;",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 6,
+   "location": "33(1A)(a)(v)-(vii)",
+   "reads": "oft them, by the surviving caveator or caveators: ... estate or intercst claimed by the ca veator ... in the. liquidator ... Official Recciver",
+   "corrected_to": "of them, by the surviving caveator or caveators; ... estate or interest claimed by the caveator ... in the liquidator ... Official Receiver",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 7,
+   "location": "33(1A)(b)",
+   "reads": "under paragraph (a) hereof. the Registrar shall- () cancel the entry ... body of persons. whose right",
+   "corrected_to": "under paragraph (a) hereof, the Registrar shall- (i) cancel the entry ... body of persons, whose right",
+   "confidence": "high",
+   "why_check": "'(i)' lost its letter in the OCR"
+  },
+  {
+   "page": 7,
+   "location": "33(2A)",
+   "reads": "under subsection (2) ona caveat. shall be served tot the address",
+   "corrected_to": "under subsection (2) on a caveat, shall be served to the address",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 8,
+   "location": "s.4",
+   "reads": "\"require, but such seciion 50 of the Schedule may be altered ... words \"require.\" \" (marginal note interleaved)",
+   "corrected_to": "\"require, but such Schedule may be altered or added to by regulation\". of the words \"require.\".",
+   "confidence": "high",
+   "why_check": "marginal note 'Amendment to section 50 of the principal enactment' removed from the body"
+  },
+  {
+   "page": 8,
+   "location": "s.5 limb (1)",
+   "reads": "(I) Form thercof, and the substitution principal by the repeal of VIII therefor, of the following new Form:- (lines transposed)",
+   "corrected_to": "(1) by the repeal of Form VIII thereof, and the substitution therefor, of the following new Form:-",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 8,
+   "location": "Form VIII",
+   "reads": "(section 32(b)1 ... Takc notice that. 1, ... presentution ... Jand... ... titlel or interest ... Schedule hereio ... where thc caveator is nol the owner) on 1hc foliowing ground/s. ... Title under deed will nu.. ... relating hereio ... second wiuness",
+   "corrected_to": "[section 32(b)] ... Take notice that, I, ... presentation ... land... ... title/ or interest ... Schedule hereto ... where the caveator is not the owner) on the following ground/s. ... Title under deed no. ... relating hereto ... second witness",
+   "confidence": "high",
+   "why_check": "the OCR merged 'Title under deed no.' and 'Under the last will of' into one line"
+  },
+  {
+   "page": 9,
+   "location": "Form X",
+   "reads": "[section 32(1)(bXii)]",
+   "corrected_to": "[section 32(1)(b)(ii)]",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 9,
+   "location": "Form XI",
+   "reads": "in volune... ... at this Land Registry. as opposed",
+   "corrected_to": "in volume... ... at this Land Registry, as opposed",
+   "confidence": "high",
+   "why_check": ""
+  },
+  {
+   "page": 10,
+   "location": "s.6",
+   "reads": "In the event of any inconsistency between the Sinhala Sinhala text to and Tamil texts of this Act, the Sinhala text shall prevail. prevail in case of ... GOVERKMENT PRINTING ... (marginal note and back-cover imprint absorbed)",
+   "corrected_to": "In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail.",
+   "confidence": "high",
+   "why_check": "marginal note 'Sinhala text to prevail in case of inconsistency' restored as the heading; imprint dropped"
+  },
+  {
+   "page": 10,
+   "location": "Form XI Schedule table",
+   "reads": "Deed Naturc of the Name of the Description Parties No. deed/ Notary who of the Land instrument attested the (as Schedule) per the instrument deed/",
+   "corrected_to": "Deed No. | Nature of the deed/ instrument | Name of the Notary who attested the deed/ instrument | Description of the Land (as per the Schedule) | Parties",
+   "confidence": "high",
+   "why_check": "column headings read across the table"
+  }
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "against": "pdftoppm -r 110 renders of all 11 pages of data/legal-sources/library/amendments/32-2022-registration-of-documents-amendment-act.pdf, read directly, against the OCR sidecar data/legal-sources/library/amendments/ocr/32-2022-registration-of-documents-amendment.txt",
+  "what_changed": [
+   "Body rebuilt as six sections; the two spurious nodes numbered 1 and 2 (Form VIII witness lines; Forms X and XI) folded into section 5 as form nodes.",
+   "Every marginal note restored as the section heading (raw parser reading kept in heading_raw).",
+   "Substituted and inserted provisions placed under the limb that enacts them; enumerators nested as printed.",
+   "Section 2's amendment instruction now targets section 32 with five limbs (was an empty target); sections 3, 4 and 5 given full instructions.",
+   "Wording corrected against the scan as listed in corrections; the OCR reading stays in raw_text.",
+   "Added certified_on_iso, legal_draftsman_number (L.D.-O. 2/2021), gazette line, source_location."
+  ],
+  "note": "Re-running the parser writes data/processed/canonical-amendments/<instrument>.json without these corrections; this accepted copy is protected by provenance.hand_corrected. Rebuild the package with finalize_statute.py --package-only."
+ }
 }

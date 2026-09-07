@@ -10,8 +10,49 @@
    "edition": "consolidated",
    "bytes": 305469,
    "sha256": "528c28b7b7ebfb178e980ff98cad3819c1133d599e5486e619bb09041c758ba5",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/9-1917-trusts-ordinance.html",
    "used_for": "parsed into 9-1917-trusts-ordinance-consolidated.json"
+  },
+  {
+   "file": "6-2018-trusts-amendment.pdf",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 95879,
+   "sha256": "46c0898b5a0b01c9384221fcf3ab030c3e5875d256b1c2c097fedd7a225cf951",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/6-2018-trusts-amendment-act.pdf",
+   "used_for": "parsed into 6-2018-trusts-amendment.json"
+  },
+  {
+   "file": "7-1968-trusts-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 1783187,
+   "sha256": "c9b28c390c4d9e76ea6dbe1f15f2d5ba154fc238c02f27df93509ef18c373fdc",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/7-1968-trusts-amendment.pdf",
+   "used_for": "Trusts (Amendment) Act, No. 7 of 1968 (title page read; 2-page scan, no text layer). In the baseline's chain header and marked on s.21, so already incorporated; its words were replaced again by Act 30 of 1971 s.89. Not parsed"
+  },
+  {
+   "file": "7-1968-trusts-amendment.html",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 2206,
+   "sha256": "ed825bf91978370050f575135fa52925c42fad6e0967d506105d9ed72da4c33b",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/html/7-1968-trusts-amendment.html",
+   "used_for": "LankaLaw HTML of Act 7 of 1968 (complete, no subscription banner); s.2 read to resolve the s.21 marker's operation"
+  },
+  {
+   "file": "30-1971-national-savings-bank.html",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 241945,
+   "sha256": "d2c1536c9707418e210ae2832acad4f972771aa8340a76db5cf8a7f1f0582e00",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/html/30-1971-national-savings-bank.html",
+   "used_for": "LankaLaw HTML of the National Savings Bank Act, No. 30 of 1971 (omnibus; s.89 amends Trusts s.21). The 94 MB Government Printer scan of the same Act is hashed in the manifest but not copied"
   },
   {
    "file": "9-1917-trusts-ordinance.html",
@@ -19,9 +60,99 @@
    "edition": "",
    "bytes": 305469,
    "sha256": "528c28b7b7ebfb178e980ff98cad3819c1133d599e5486e619bb09041c758ba5",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/9-1917-trusts-ordinance.html",
-   "used_for": "5-lens subagent review, 1 round, all clean or already-documented"
+   "used_for": "5-lens subagent review, 1 round, all clean or already-documented (earlier pass)"
   }
  ],
- "statute_note": "Parsed from a dedicated LankaLaw HTML page rather than the registry's shared Legislative Enactments 1980 Volume 5 compendium PDF. 117 sections. Illustrations (worked examples) deliberately excluded, same treatment as Schedules elsewhere in this corpus. One footnote-style amendment citation not extracted (different marker format from the bracketed inline markers the parser recognises)."
+ "statute_note": "PRINCIPAL SOURCE SELECTED: the LankaLaw HTML consolidated edition (statutes/HTML/9-1917-trusts-ordinance.html; chain 9 of 1917, 4 of 1918, 1 of 1934, 7 of 1968, 30 of 1971), the accepted 117-section tree, extended on 2026-09-05 by applying Act No. 6 of 2018; tree 9-1917-trusts-ordinance-consolidated.json now holds 123 sections in eleven chapters (6A, 6B, 19A-19C, 115A added). OTHER SOURCES INSPECTED: the registry's Legislative Enactments 1980 Volume 5 compendium PDF (not re-parsed; same 1971 cutoff); the Government Printer text of Act 6 of 2018; the scan and HTML of Act 7 of 1968 and of the National Savings Bank Act 30 of 1971 (title pages and s.89 read); the Survey Act files of 2002 (excluded). CONSOLIDATION CUTOFF of the baseline: Act No. 30 of 1971 (chain header and s.21 markers); after application the text stands at Act No. 6 of 2018, a consolidation produced by this pipeline, not by a publisher. REVIEW PERFORMED: baseline diffed against the canonical parse (identical) and left as accepted (one earlier five-lens round recorded in the manifest); Act 6 of 2018 read in full from pdftotext -layout, its tree rebuilt by hand with the parser reading kept in raw_text, coverage 2.83% unmatched (running headers only); each operation applied with text_before_amendment; s.21 read against the Government Printer scan of Act 30 of 1971. No new five-lens subagent rounds were run. AMENDMENT COVERAGE: seven rows: 4 of 1918 and 1 of 1934 (chain, not held), 7 of 1968 and 30 of 1971 (held, already incorporated), 20 of 1972 (footnote citation, not held), 6 of 2018 (held and applied), 17 of 2002 (Survey Act, excluded). Nothing applied twice. OCR OR STRUCTURAL WEAKNESSES: none from OCR (no OCR used). Illustrations (worked examples) remain deliberately excluded from the tree; the republisher's footnotes in s.3(b) and s.116(2) are kept in the text; the s.3(b) footnote citation of Act 20 of 1972 is not an amendment event. Inserted sections say 'this Act' where the Ordinance says 'this Ordinance'. The 94 MB scan of Act 30 of 1971 is hashed but not copied. MISSING SOURCES: Ordinances 4 of 1918 and 1 of 1934; Act 20 of 1972; any published consolidation later than 1971; the regulations under s.115A. UNRESOLVED QUESTIONS: (1) s.21 wording corrected from a republisher's 'that money' to the amending Act's 'trust money' -- a lawyer should confirm; (2) the compendium PDF (Volume 5, page 311) was not read section by section against the HTML; (3) the commencement of Act 6 of 2018 (its s.1 states none; certified 28 March 2018). LAWYER VERIFICATION: unverified. Every tree carries verification_status unverified.",
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "9-1917-trusts-ordinance-consolidated.html",
+  "tree": "9-1917-trusts-ordinance-consolidated.json",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; the page states no publisher)",
+  "consolidation_cutoff": "Act No. 30 of 1971",
+  "cutoff_evidence": "HTML chain header 'Ordinance Nos, 9 of 1917, 4 of 1918, 1 of 1934; Act Nos, 7 of 1968, 30 of 1971'; head date '[16th April, 1918]'; inline markers '[2,7 of 1968]' and '[ 89, 30 of 1971]' on s.21",
+  "post_baseline_applied": [
+   "6-2018"
+  ],
+  "decision": "The accepted HTML tree (117 sections in eleven chapters) was diffed against data/processed/canonical-statutes/SRC059-9-1917.json on 2026-09-05 and found identical, so it had not been hand-finished; it is kept as the baseline and packaged with --package-only. The registry's Legislative Enactments 1980 Volume 5 compendium PDF (Trusts from page 311) was not re-parsed: the dedicated HTML page carries the same 1971 cutoff with the structure marked up. Act No. 6 of 2018 (Government Printer text) was parsed with parse_amendment_pdf.py, rebuilt by hand where the parser misplaced the inserted sections, and its seven operations applied to the baseline; every applied node carries an amendment_event with applied: true and its earlier text in text_before_amendment. One wording correction to the baseline (s.21 'that money' -> 'trust money') rests on the Government Printer text of Act 30 of 1971 s.89(1)."
+ },
+ "source_conflicts": [
+  "s.21: LankaLaw HTML reads 'a deposit of that money in a Government Savings Bank or in the National Savings Bank.'; the Government Printer text of the National Savings Bank Act, No. 30 of 1971, s.89(1) (scan, page 48) substitutes 'a deposit of trust money in ...', and Act 7 of 1968 s.2 had also read 'trust money'. The tree now reads 'trust money' with the HTML reading kept in text_raw_html.",
+  "LankaLaw's HTML of the National Savings Bank Act cites it in s.1 as 'No. 80 of 1971'; its title page and the Trusts marker read No. 30 of 1971. Transcription error in the republisher's HTML; not carried into any tree.",
+  "Curriculum pairs '17 of 2002' with the Trusts Ordinance; the held files of that number are the Survey Act, No. 17 of 2002 (title read on both the PDF and the HTML), which does not touch this Ordinance."
+ ],
+ "amendment_reconciliation": [
+  {
+   "instrument": "4-1918",
+   "title": "Ordinance No. 4 of 1918 (title not held; named only in the chain header)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the HTML chain header; own text in no held archive",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "1-1934",
+   "title": "Ordinance No. 1 of 1934 (title not held; named only in the chain header)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the HTML chain header; own text in no held archive",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "7-1968",
+   "title": "Trusts (Amendment) Act, No. 7 of 1968 (title page read: 'Parliament of Ceylon, 3rd Session 1967-68 ... Date of Assent: February 28, 1968')",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "in the chain header; marker '[2,7 of 1968]' on s.21; held as a 2-page scan (carried) and as LankaLaw HTML (carried, complete, one operative section: s.2 substitutes the closing words of s.21). Its words were themselves replaced by Act 30 of 1971 s.89. Not parsed into a tree; the marker's operation resolved to 'substitute' from the HTML text",
+   "source_path": "data/legal-sources/library/amendments/7-1968-trusts-amendment.pdf",
+   "held": true
+  },
+  {
+   "instrument": "30-1971",
+   "title": "National Savings Bank Act, No. 30 of 1971 (title page read: 'Parliament of Ceylon, 2nd Session 1971-72 ... Date of Assent: August 31, 1971'); omnibus Act, s.89 amends Trusts s.21",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "in the chain header; marker '[ 89, 30 of 1971]' on s.21. Held as a 49-page, 94 MB scan (not copied into the package for size; hashed in sources_referenced_not_copied) and as LankaLaw HTML (carried). Its s.89(1) wording ('trust money') was used to correct the baseline's 'that money' in s.21; s.89(2) marginal-note change already reflected in the baseline heading",
+   "source_path": "data/legal-sources/library/amendments/30-1971-national-savings-banks.pdf",
+   "held": true
+  },
+  {
+   "instrument": "20-1972",
+   "title": "Act No. 20 of 1972 (cited by the republisher's footnote to s.3(b): '* Abolished by Act No. 20 of 1972.'; title not held)",
+   "classification": "known_but_not_held",
+   "reason": "not in the chain header and not an amendment of this Ordinance's text as printed; a footnote about the abolition of fideicommissa. Recorded so the citation is not lost",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "6-2018",
+   "title": "Trusts (Amendment) Act, No. 6 of 2018 (title page read; certified 28th of March, 2018)",
+   "classification": "applied_from_held_source",
+   "reason": "RGD copy of the Government Printer Act with text layer (8 pages). Parsed (parse_amendment_pdf.py --number 6 --year 2018 --amends SRC059; coverage 2.83% unmatched, all running headers), rebuilt by hand where the parser misplaced the inserted sections, and applied: 3(e) substituted; 3(p), 3(q) added; 6A, 6B inserted; 19A, 19B, 19C inserted; 72 and 75(1) words substituted; 115A inserted. Not applied: s.8 Sinhala text. actions.csv's nine lawlanka operations for this Act name the same nine targets",
+   "source_path": "data/legal-sources/library/amendments/6-2018-trusts-amendment-act.pdf",
+   "held": true
+  },
+  {
+   "instrument": "17-2002",
+   "title": "Survey Act, No. 17 of 2002 (title read on amendments/17-2002-survey.pdf and amendments/html/17-2002-survey-act.html)",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "paired with the Trusts Ordinance in the curriculum list, but the held files are the Survey Act, which repeals the Land Surveys and Surveyors Ordinances and does not touch this Ordinance. Excluded from the package",
+   "source_path": "data/legal-sources/library/amendments/17-2002-survey.pdf",
+   "held": true
+  }
+ ],
+ "sources_referenced_not_copied": [
+  {
+   "file": "30-1971-national-savings-banks.pdf",
+   "role": "amending Act, held but not parsed; not copied",
+   "edition": "as_enacted",
+   "bytes": 94419027,
+   "sha256": "81594d9ef0cb9657ee7678e8ebf648c99c0e990164b85c13783ac430ae63cb44",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/30-1971-national-savings-banks.pdf",
+   "used_for": "s.89 (page 48) read from a pdftoppm render to correct s.21 'that money' -> 'trust money'; 94 MB scan left in place because of its size"
+  }
+ ],
+ "lawyer_verification": "unverified"
 }

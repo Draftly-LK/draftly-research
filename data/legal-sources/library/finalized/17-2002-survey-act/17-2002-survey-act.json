@@ -15,10 +15,11 @@
  "language": "en",
  "edition": {
   "publisher": "lankalaw",
-  "kind": "original_or_unconfirmed_consolidation",
+  "kind": "as_enacted",
   "source_url": "https://lankalaw.net/wp-content/uploads/2025/02/2002Y0V0C17A.html",
   "local_path": "data/legal-sources/library/statutes/HTML/17-2002-survey-act.html",
-  "caveat": "private republisher, not the Government Printer"
+  "caveat": "private republisher, not the Government Printer",
+  "kind_evidence": "The LankaLaw page prints the enacting formula ('BE it enacted by the Parliament of the Democratic Socialist Republic of Sri Lanka as follows'), cites itself in s.1 as 'the Survey Act. No 17 of 2002', prints no amendment chain and no inline amendment marker, and its identifier (2002Y0V0C17A) is the Acts series rather than a revised-edition chapter. The Government Printer PDF in this package is headed 'SURVEY ACT, No.17 OF 2002 [Certified on 04th October, 2002] ... Published as a Supplement to Part II of the Gazette ... of October 04, 2002' and has the same 67 sections in the same two Parts. Both are the Act as enacted."
  },
  "amendments": [],
  "verification_status": "structurally_verified",
@@ -75,6 +76,15 @@
   {
    "kind": "amendment-history-not-established",
    "detail": "No amending Act is recorded for this Act in this corpus and the parsed page carries no amendment chain in its header. That is the absence of a finding, not a finding of no amendments: nothing here has checked the Gazette."
+  },
+  {
+   "kind": "section-text-repeats-first-child",
+   "sections_affected": [
+    "13",
+    "14",
+    "44"
+   ],
+   "detail": "In sections 13, 14 and 44 the section-level text carries the lead-in words followed by the full run of paragraphs, and the same paragraphs also appear as child nodes. Nothing missing, nothing invented; parser artefact of build_canonical_statutes.py where the lead-in and paragraph (a) share one HTML block. Left as parsed; the Government Printer PDF prints the same paragraphs once each."
   }
  ],
  "source_location": {},
@@ -1848,20 +1858,20 @@
         {
          "kind": "external",
          "target_document": "Surveyors Ordinance",
+         "target_section": "4",
+         "verbatim": "section 4 or section 6 of the Surveyors Ordinance"
+        },
+        {
+         "kind": "external",
+         "target_document": "Surveyors Ordinance",
          "target_section": "6",
-         "verbatim": "section 6 of the Surveyors Ordinance"
+         "verbatim": "section 4 or section 6 of the Surveyors Ordinance"
         },
         {
          "kind": "internal",
          "target_document": "Survey Act",
          "target_section": "39",
          "verbatim": "section 39"
-        },
-        {
-         "kind": "internal",
-         "target_document": "Survey Act",
-         "target_section": "4",
-         "verbatim": "section 4"
         },
         {
          "kind": "enactment",
@@ -3595,5 +3605,15 @@
     }
    ]
   }
- ]
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "what_changed": [
+   "edition.kind: original_or_unconfirmed_consolidation -> as_enacted, with `edition.kind_evidence` quoting the Government Printer header",
+   "s.40(1) cross_references: 'section 4' was recorded as an internal reference to this Act; the sentence reads 'section 4 or section 6 of the Surveyors Ordinance', so both are external. Taken from the current canonical re-parse of the same page (data/processed/canonical-statutes/SRC043-17-2002.json), which is otherwise identical in body to this tree.",
+   "quality_flags: added `section-text-repeats-first-child` for ss.13, 14, 44"
+  ],
+  "corrected_by": "finalization worker, September 2026 packaging pass",
+  "basis": "Government Printer PDF header and the sentence at s.40(1); body text untouched"
+ }
 }

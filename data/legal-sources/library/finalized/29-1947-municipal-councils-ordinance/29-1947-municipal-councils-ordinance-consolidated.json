@@ -18,7 +18,9 @@
   "kind": "consolidated",
   "source_url": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y18V576C-1.html",
   "local_path": "data/legal-sources/library/statutes/HTML/29-1947-municipal-councils-ordinance.html",
-  "caveat": "private republisher, not the Government Printer"
+  "caveat": "private republisher, not the Government Printer",
+  "consolidation_cutoff_of_baseline": "Act No. 35 of 1987",
+  "brought_forward_to": "Act No. 20 of 2017 (Acts 21/2012, 34/2014, 20/2017 applied from held Government Printer text)"
  },
  "amendments": [
   {
@@ -215,6 +217,27 @@
    "type": "Act",
    "number": 35,
    "year": 1987
+  },
+  {
+   "type": "Act",
+   "number": 21,
+   "year": 2012,
+   "applied_from_held_source": true,
+   "note": "not in the HTML baseline's chain header (which ends at 35 of 1987); applied from the Act's own Government Printer text"
+  },
+  {
+   "type": "Act",
+   "number": 34,
+   "year": 2014,
+   "applied_from_held_source": true,
+   "note": "not in the HTML baseline's chain header (which ends at 35 of 1987); applied from the Act's own Government Printer text"
+  },
+  {
+   "type": "Act",
+   "number": 20,
+   "year": 2017,
+   "applied_from_held_source": true,
+   "note": "not in the HTML baseline's chain header (which ends at 35 of 1987); applied from the Act's own Government Printer text"
   }
  ],
  "verification_status": "unverified",
@@ -528,7 +551,38 @@
    "anchor_section": "286"
   }
  ],
- "omitted_provisions": [],
+ "omitted_provisions": [
+  {
+   "section": "6",
+   "status": "repealed",
+   "note": "Both editions: '[* Section 6 is repealed by Law No. 24 of 1977]' (footnote to s.7)."
+  },
+  {
+   "section": "12",
+   "status": "repealed",
+   "note": "Both editions: '[Section 12 is repealed by Law No. 24 of 1977]' (after s.11)."
+  },
+  {
+   "section": "15",
+   "status": "repealed",
+   "note": "Both editions: '[Section 15 is repealed by Law No. 24 of 1977]' (footnote to s.16)."
+  },
+  {
+   "section": "285",
+   "status": "repealed",
+   "note": "Both editions: '[* Section 285 is repealed by Law No. 24 of 1977]' (footnote to s.286)."
+  },
+  {
+   "section": "71(2)",
+   "status": "repealed",
+   "note": "Both editions: '[* Subsection 2 is repealed by Law No. 4 of 1975]'."
+  },
+  {
+   "section": "230(3)-(4)",
+   "status": "repealed",
+   "note": "Both editions, bracket note in s.230(1): '[subsection 3 and 4 repealed by Act 52, 39 of 1986]'."
+  }
+ ],
  "overrides_applied": {
   "checked_against": "data/legal-sources/library/statutes/HTML/29-1947-municipal-councils-ordinance.html, cross-read against the registry's own preferred_source_url PDF",
   "note": "349 sections (39-Act amendment chain), coverage 0.02% unmatched against the rendered HTML. Sections 6, 12, 15, 285 confirmed genuinely absent from this consolidated numbering, consistent with the registry's existing note."
@@ -539,21 +593,103 @@
    "sections_affected": [
     "136B"
    ],
-   "issue": "Section 136B is printed twice in the source HTML, verbatim (same heading, same two-subsection body, checked byte-for-byte against the raw markup at both locations) -- a LankaLaw transcription duplicate, not a parser artifact. Recorded as two separate but identical section nodes rather than merged or dropped.",
-   "status": "source_as_printed"
+   "status": "corrected_by_hand",
+   "issue": "The HTML prints section 136B twice: once before 136A with no marginal marker and with subsection (2) ending in a stray closing quote ('...debt due to the Council.\".'), and once after 136A carrying '[ 39, 39 of 1986]'. The earlier override note called the two copies verbatim; they are not (marker and stray quote differ). The 2024 PDF prints 136B once, after 136A, with the marker. The first copy was removed; the removed node is kept in provenance.removed_nodes."
   },
   {
    "code": "long_title_reads_as_amending_act",
-   "detail": "The source's own <meta name=\"description\"> states the long title as 'AN ACT TO AMEND THE MUNICIPAL COUNCILS ORDINANCE.' -- phrasing that reads like an amending Act's title rather than the principal 1947 Ordinance's own long title, but there is no other long-title text anywhere else on the page to prefer over it. Recorded as printed.",
-   "status": "source_as_printed"
+   "status": "source_as_printed",
+   "detail": "Both held editions print 'AN ACT TO AMEND THE MUNICIPAL COUNCILS ORDINANCE.' as the long title. See long_title_note."
   },
   {
    "code": "footnote_cites_superseded_amendments_not_in_chain",
    "sections_affected": [
     "183"
    ],
-   "issue": "Section 183(2)'s footnote reads '[*Repealed by Act No. 18 of 1969, itself repealed by Law No. 16 of 1974]' -- both instruments confirmed present verbatim in the source. Neither Act 18 of 1969 nor Law 16 of 1974 appears in the amendments list (which has 39 entries, including the similarly-numbered Act 18 of 1979 and Law 8 of 1974, both different instruments). This is expected, not a transcription error: the amendments list is the chain of instruments whose provisions are currently incorporated in this consolidated text, while the footnote is historical color describing an earlier repeal-of-a-repeal for a provision now itself struck from the numbering -- there is nothing left of either 1969 or 1974 instrument's own text for the chain to incorporate.",
-   "status": "source_as_printed"
+   "status": "source_as_printed",
+   "issue": "Section 183(2)'s footnote reads '[*Repealed by Act No. 18 of 1969, itself repealed by Law No. 16 of 1974]'. Neither instrument is in the chain header; both editions print the footnote."
+  },
+  {
+   "code": "displaced_marginal_note",
+   "sections_affected": [
+    "18",
+    "19"
+   ],
+   "status": "corrected_by_hand",
+   "issue": "Both editions run s.19's marginal note 'Notice of meetings.' into the end of s.18's text. Restored to s.19's heading; s.18 raw_text keeps the print."
+  },
+  {
+   "code": "roman_I_for_1_in_subsection_labels",
+   "sections_affected": [
+    "184",
+    "230",
+    "277"
+   ],
+   "status": "corrected_by_hand",
+   "issue": "Both editions print inserted subsections as (I A), (IA), (IAA), (IAB), (IB), (IC). Numbered 1A, 1AA, 1AB, 1B, 1C in the tree; the printed form is kept in number_as_printed and raw_text. Cross-references inside these sections still quote the printed form ('subsection (IB)')."
+  },
+  {
+   "code": "headings_carrying_markers_or_stray_quotes",
+   "sections_affected": [
+    "148A",
+    "154A",
+    "155",
+    "268A",
+    "289"
+   ],
+   "status": "corrected_by_hand",
+   "issue": "HTML marginal notes for 148A, 154A and 268A open with a stray '\"', 155's carries the marker '[ V, 48 of 1971]', 289's the fragment '1977]'. Corrected against the PDF's marginal notes; printed form kept in heading_raw."
+  },
+  {
+   "code": "amendments_applied_by_hand",
+   "sections_affected": [
+    "5",
+    "13",
+    "14",
+    "26",
+    "189",
+    "215A",
+    "215B"
+   ],
+   "status": "applied_from_held_source",
+   "issue": "The HTML baseline's chain ends at Act No. 35 of 1987. Acts No. 21 of 2012 (Part I, ss.2-7), 34 of 2014 (s.2) and 20 of 2017 (s.2) were applied from their Government Printer text. Each applied passage was compared word-for-word with the LankaLaw consolidated-2024 PDF (chain to 20 of 2017); see provenance.pdf_cross_check. Commencement of Act No. 21 of 2012 and Act No. 34 of 2014 is by Ministerial Order (s.1 of each); no Order is held, so the operative dates are unknown."
+  },
+  {
+   "code": "first_list_item_fused_into_parent_text",
+   "sections_affected": [
+    "14",
+    "230"
+   ],
+   "status": "partially_corrected",
+   "issue": "The HTML parser occasionally leaves the first enumerated item inside its parent's text (found and fixed in 14(2)(a), 230(1AB)(b)(i), 230(1AB)(a)). Other instances may remain: a scan for mid-text '(a)'/'(i)' tokens flags about 120 nodes, most of which are citations ('paragraph (a) of subsection (1)') rather than list items, and they were not all read."
+  },
+  {
+   "code": "schedules_not_published",
+   "status": "source_limitation",
+   "issue": "Twelve Schedules are referenced; neither held edition prints their bodies (the PDF ends at s.327). schedules is empty."
+  },
+  {
+   "code": "section_1_declares_short_title_only",
+   "status": "source_as_printed",
+   "issue": "Section 1 reads 'This Ordinance may be cited as the Municipal Councils Ordinance.' in both editions; the registry's official_title agrees."
+  },
+  {
+   "code": "html_transcription_slips_corrected_against_pdf",
+   "sections_affected": [
+    "16",
+    "22",
+    "98",
+    "125",
+    "157",
+    "190",
+    "263",
+    "286",
+    "321",
+    "325",
+    "40A"
+   ],
+   "status": "corrected_by_hand",
+   "issue": "A word-level diff of every section against the 2024 PDF parse found 22 single-word disagreements. Thirteen are HTML transcription slips of the OCR kind ('lime' for 'time', 'tease' for 'lease', 'alt'/'ail' for 'all', 'lake(s)' for 'take(s)', 'suck' for 'such', 'ay' for 'as', 'ex official' for 'ex officio', 'he' for 'be'/'the', 'it' for 'if'); each was corrected in text to the PDF's reading and listed under html_transcription_slips on the node, with the HTML reading kept in raw_text. Not changed: 'fulfil' (HTML) vs 'fulfill' (PDF) in ss.280 and 282 (spelling variant), and the s.247C table cells, where the PDF parse itself is garbled. Only single-word replacements were compared; the PDF parse loses words at column breaks, so deletions were not."
   }
  ],
  "source_location": {},
@@ -662,43 +798,118 @@
        "amending_section": "94",
        "operation": "unknown",
        "verbatim": "[ 94,24 of 1977]"
+      },
+      {
+       "amending_act": "21 of 2012",
+       "amending_act_no": 21,
+       "amending_year": 2012,
+       "amending_section": "2",
+       "operation": "repeal_and_substitute",
+       "verbatim": "Section 5 of the Municipal Councils Ordinance (Chapter 252) (hereinafter in this Part referred to as the \"principal enactment\") is hereby repealed and the following section is substituted therefor",
+       "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+       "applied_by": "finalization worker, from the amending Act's own Government Printer text; cross-checked against the LankaLaw consolidated-2024 PDF (chain to 20 of 2017)",
+       "note": "The text substituted by this section was itself repealed and replaced by Act No. 20 of 2017, s.2, before this tree was brought forward; it is not carried here."
+      },
+      {
+       "amending_act": "20 of 2017",
+       "amending_act_no": 20,
+       "amending_year": 2017,
+       "amending_section": "2",
+       "operation": "repeal_and_substitute",
+       "verbatim": "Section 5 of the Municipal Councils Ordinance (Chapter 252) is hereby repealed and the following section substituted therefor",
+       "operation_source": "data/legal-sources/library/amendments/20-2017-municipal-councils-amendment.pdf",
+       "applied_by": "finalization worker, from the amending Act's own Government Printer text; cross-checked against the LankaLaw consolidated-2024 PDF (chain to 20 of 2017)"
       }
      ],
-     "cross_references": [],
+     "cross_references": [
+      {
+       "kind": "enactment",
+       "target_document": "Local Authorities Elections Ordinance",
+       "verbatim": "the Local Authorities Elections Ordinance (Chapter 262)"
+      }
+     ],
      "children": [
       {
        "type": "subsection",
        "number": "1",
-       "raw_text": "(1) Each Municipal Council shall consist of the Mayor and Deputy Mayor and such number of other Councillors as the Minister may prescribe by Order published in the Gazette.",
-       "text": "Each Municipal Council shall consist of the Mayor and Deputy Mayor and such number of other Councillors as the Minister may prescribe by Order published in the Gazette.",
+       "raw_text": "(1) Each Municipal Council shall consist of such number of Councillors—",
+       "text": "Each Municipal Council shall consist of such number of Councillors—",
        "amendment_events": [],
-       "cross_references": []
+       "cross_references": [],
+       "children": [
+        {
+         "type": "paragraph",
+         "number": "a",
+         "raw_text": "(a) equivalent to sixty per centum of the number of Councillors to be elected and returned, for such Municipal Council, as specified by the Minister by Order published in the Gazette, based on the number of wards specified in the Orders published under sections 3C and 3D of the Local Authorities Elections Ordinance (Chapter 262);",
+         "text": "equivalent to sixty per centum of the number of Councillors to be elected and returned, for such Municipal Council, as specified by the Minister by Order published in the Gazette, based on the number of wards specified in the Orders published under sections 3C and 3D of the Local Authorities Elections Ordinance (Chapter 262);",
+         "amendment_events": [],
+         "cross_references": []
+        },
+        {
+         "type": "paragraph",
+         "number": "b",
+         "raw_text": "(b) equivalent to forty per centum of the number of Councillors to be elected and returned for such Municipal Council, who shall be returned in terms of section 65B of the Local Authorities Elections Ordinance (Chapter 262); and",
+         "text": "equivalent to forty per centum of the number of Councillors to be elected and returned for such Municipal Council, who shall be returned in terms of section 65B of the Local Authorities Elections Ordinance (Chapter 262); and",
+         "amendment_events": [],
+         "cross_references": []
+        },
+        {
+         "type": "paragraph",
+         "number": "c",
+         "raw_text": "(c) determined by the Commissioner under paragraph (a) of subsection (4) of section 65B of the Local Authorities Elections Ordinance (Chapter 262).",
+         "text": "determined by the Commissioner under paragraph (a) of subsection (4) of section 65B of the Local Authorities Elections Ordinance (Chapter 262).",
+         "amendment_events": [],
+         "cross_references": []
+        }
+       ]
       },
       {
        "type": "subsection",
        "number": "2",
-       "raw_text": "(2) In determining the number of Councillors the Minister shall have regard to the area and population of the Municipality.",
-       "text": "In determining the number of Councillors the Minister shall have regard to the area and population of the Municipality.",
+       "raw_text": "(2) Where the number constituting forty per centum referred to in paragraph (b) of subsection (1), is an integer and fraction, the integer shall be deemed to be the number which shall constitute such forty per centum, for the purpose of that subsection.",
+       "text": "Where the number constituting forty per centum referred to in paragraph (b) of subsection (1), is an integer and fraction, the integer shall be deemed to be the number which shall constitute such forty per centum, for the purpose of that subsection.",
        "amendment_events": [],
        "cross_references": []
-      },
-      {
-       "type": "subsection",
-       "number": "3",
-       "raw_text": "(3) Every Order made under subsection (1) shall as soon as may be convenient be laid before Parliament.",
-       "text": "Every Order made under subsection (1) shall as soon as may be convenient be laid before Parliament.",
-       "amendment_events": [],
-       "cross_references": [
-        {
-         "kind": "internal",
-         "target_document": "Municipal Councils Ordinance",
-         "target_section": "5",
-         "target_subsection": "1",
-         "verbatim": "under subsection (1)"
-        }
-       ]
       }
-     ]
+     ],
+     "text_before_amendment": {
+      "as_of": "Act No. 35 of 1987 (HTML baseline)",
+      "text": "Each Municipal Council shall consist of the Mayor and Deputy Mayor and such number of other Councillors as the Minister may prescribe by Order published in the Gazette. In determining the number of Councillors the Minister shall have regard to the area and population of the Municipality. Every Order made under subsection (1) shall as soon as may be convenient be laid before Parliament.",
+      "children": [
+       {
+        "type": "subsection",
+        "number": "1",
+        "raw_text": "(1) Each Municipal Council shall consist of the Mayor and Deputy Mayor and such number of other Councillors as the Minister may prescribe by Order published in the Gazette.",
+        "text": "Each Municipal Council shall consist of the Mayor and Deputy Mayor and such number of other Councillors as the Minister may prescribe by Order published in the Gazette.",
+        "amendment_events": [],
+        "cross_references": []
+       },
+       {
+        "type": "subsection",
+        "number": "2",
+        "raw_text": "(2) In determining the number of Councillors the Minister shall have regard to the area and population of the Municipality.",
+        "text": "In determining the number of Councillors the Minister shall have regard to the area and population of the Municipality.",
+        "amendment_events": [],
+        "cross_references": []
+       },
+       {
+        "type": "subsection",
+        "number": "3",
+        "raw_text": "(3) Every Order made under subsection (1) shall as soon as may be convenient be laid before Parliament.",
+        "text": "Every Order made under subsection (1) shall as soon as may be convenient be laid before Parliament.",
+        "amendment_events": [],
+        "cross_references": [
+         {
+          "kind": "internal",
+          "target_document": "Municipal Councils Ordinance",
+          "target_section": "5",
+          "target_subsection": "1",
+          "verbatim": "under subsection (1)"
+         }
+        ]
+       }
+      ]
+     }
     },
     {
      "type": "section",
@@ -912,7 +1123,19 @@
      "heading": "Refusal, resignation or vacation of office.",
      "raw_text": "13.",
      "text": "",
-     "amendment_events": [],
+     "amendment_events": [
+      {
+       "amending_act": "21 of 2012",
+       "amending_act_no": 21,
+       "amending_year": 2012,
+       "amending_section": "3",
+       "operation": "amend",
+       "verbatim": "Section 13 of the principal enactment is hereby amended in subsection (3) of that section, by the substitution for all the words from \"with the provisions of the Local Authorities Elections Ordinance,\" to the end of that subsection, and the substitution therefore of the words \"with the provisions of section 66A of the Local Authorities Elections Ordinance (Cap. 262), and the person so elected shall hold office as a Councillor, until the next succeeding general election of Councillors of that Council.\"",
+       "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+       "applied_by": "finalization worker, from the amending Act's own Government Printer text; cross-checked against the LankaLaw consolidated-2024 PDF (chain to 20 of 2017)",
+       "target_subsection": "3"
+      }
+     ],
      "cross_references": [],
      "children": [
       {
@@ -997,8 +1220,8 @@
       {
        "type": "subsection",
        "number": "3",
-       "raw_text": "(3) If any person elected as a Councillor refuses or resigns his office, or dies, or vacates his office under subsection (2) or if a casual vacancy occurs in any other manner in such office, the Mayor or the Commissioner, as the case may be, shall send a written communication to that effect to the elections officer. Upon the receipt of such communication, the elections officer shall proceed to fill the vacancy in accordance with the provisions of the Local Authorities Elections Ordinance, and the person thereupon elected shall serve as a Councillor until the expiry of the term of office of the Councillors elected at the last preceding general election.",
-       "text": "If any person elected as a Councillor refuses or resigns his office, or dies, or vacates his office under subsection (2) or if a casual vacancy occurs in any other manner in such office, the Mayor or the Commissioner, as the case may be, shall send a written communication to that effect to the elections officer. Upon the receipt of such communication, the elections officer shall proceed to fill the vacancy in accordance with the provisions of the Local Authorities Elections Ordinance, and the person thereupon elected shall serve as a Councillor until the expiry of the term of office of the Councillors elected at the last preceding general election.",
+       "raw_text": "(3) If any person elected as a Councillor refuses or resigns his office, or dies, or vacates his office under subsection (2) or if a casual vacancy occurs in any other manner in such office, the Mayor or the Commissioner, as the case may be, shall send a written communication to that effect to the elections officer. Upon the receipt of such communication, the elections officer shall proceed to fill the vacancy in accordance with the provisions of section 66A of the Local Authorities Elections Ordinance (Cap. 262), and the person so elected shall hold office as a Councillor, until the next succeeding general election of Councillors of that Council.",
+       "text": "If any person elected as a Councillor refuses or resigns his office, or dies, or vacates his office under subsection (2) or if a casual vacancy occurs in any other manner in such office, the Mayor or the Commissioner, as the case may be, shall send a written communication to that effect to the elections officer. Upon the receipt of such communication, the elections officer shall proceed to fill the vacancy in accordance with the provisions of section 66A of the Local Authorities Elections Ordinance (Cap. 262), and the person so elected shall hold office as a Councillor, until the next succeeding general election of Councillors of that Council.",
        "amendment_events": [],
        "cross_references": [
         {
@@ -1009,11 +1232,13 @@
          "verbatim": "under subsection (2)"
         },
         {
-         "kind": "enactment",
+         "kind": "external",
          "target_document": "Local Authorities Elections Ordinance",
-         "verbatim": "the Local Authorities Elections Ordinance"
+         "target_section": "66A",
+         "verbatim": "section 66A of the Local Authorities Elections Ordinance (Cap. 262)"
         }
-       ]
+       ],
+       "text_before_amendment": "If any person elected as a Councillor refuses or resigns his office, or dies, or vacates his office under subsection (2) or if a casual vacancy occurs in any other manner in such office, the Mayor or the Commissioner, as the case may be, shall send a written communication to that effect to the elections officer. Upon the receipt of such communication, the elections officer shall proceed to fill the vacancy in accordance with the provisions of the Local Authorities Elections Ordinance, and the person thereupon elected shall serve as a Councillor until the expiry of the term of office of the Councillors elected at the last preceding general election."
       }
      ]
     }
@@ -1043,6 +1268,17 @@
          "amending_section": "99",
          "operation": "unknown",
          "verbatim": "[99,24 of 1977]"
+        },
+        {
+         "amending_act": "21 of 2012",
+         "amending_act_no": 21,
+         "amending_year": 2012,
+         "amending_section": "4",
+         "operation": "amend",
+         "verbatim": "Section 14 of the principal enactment as amended by Law No. 24 of 1977, is hereby further amended as follows:-- (1) by the repeal of paragraph (b) of subsection (2) of that section, and the substitution therefor of the following paragraph:-- \"(b) a Mayor or Deputy Mayor who resigns or vacates his office, shall however continue to be a Councillor.\"; and (2) by the repeal of subsection (7) of that section and the substitution therefor of the following subsection:-- \"(7) Whenever the office of Mayor of a Municipal Council falls vacant, notice of such vacancy shall forthwith be given by the Commissioner to the Commissioner of Local Government and the Commissioner of Local Government shall thereupon proceed to fill such vacancy in the manner provided for the same in the Local Authorities Elections Ordinance (Cap. 262).\"",
+         "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+         "applied_by": "finalization worker, from the amending Act's own Government Printer text; cross-checked against the LankaLaw consolidated-2024 PDF (chain to 20 of 2017)",
+         "target_subsection": "2(b), 7"
         }
        ],
        "cross_references": [],
@@ -1064,18 +1300,27 @@
         {
          "type": "subsection",
          "number": "2",
-         "raw_text": "(2) (a) The Mayor or Deputy Mayor of a Municipal Council shall hold office for the term of office of the Council unless he resigns or vacates such office.",
-         "text": "(a) The Mayor or Deputy Mayor of a Municipal Council shall hold office for the term of office of the Council unless he resigns or vacates such office.",
+         "raw_text": "(2)",
+         "text": "",
          "amendment_events": [],
          "cross_references": [],
          "children": [
           {
            "type": "paragraph",
-           "number": "b",
-           "raw_text": "(b) Whenever a Mayor or Deputy Mayor vacates his office he shall at the same time cease to be Councillor.",
-           "text": "Whenever a Mayor or Deputy Mayor vacates his office he shall at the same time cease to be Councillor.",
+           "number": "a",
+           "raw_text": "(a) The Mayor or Deputy Mayor of a Municipal Council shall hold office for the term of office of the Council unless he resigns or vacates such office.",
+           "text": "The Mayor or Deputy Mayor of a Municipal Council shall hold office for the term of office of the Council unless he resigns or vacates such office.",
            "amendment_events": [],
            "cross_references": []
+          },
+          {
+           "type": "paragraph",
+           "number": "b",
+           "raw_text": "(b) a Mayor or Deputy Mayor who resigns or vacates his office, shall however continue to be a Councillor.",
+           "text": "a Mayor or Deputy Mayor who resigns or vacates his office, shall however continue to be a Councillor.",
+           "amendment_events": [],
+           "cross_references": [],
+           "text_before_amendment": "Whenever a Mayor or Deputy Mayor vacates his office he shall at the same time cease to be Councillor."
           }
          ]
         },
@@ -1121,16 +1366,17 @@
         {
          "type": "subsection",
          "number": "7",
-         "raw_text": "(7) Whenever the office of Mayor of a Municipal Council falls vacant information of the occurrence of the vacancy shall forthwith be given to the elections officer of the district, in writing, by the Commissioner of the Council. Upon the receipt of such information the elections officer shall proceed to fill the vacancy in the manner prescribed in the Local Authorities Elections Ordinance.",
-         "text": "Whenever the office of Mayor of a Municipal Council falls vacant information of the occurrence of the vacancy shall forthwith be given to the elections officer of the district, in writing, by the Commissioner of the Council. Upon the receipt of such information the elections officer shall proceed to fill the vacancy in the manner prescribed in the Local Authorities Elections Ordinance.",
+         "raw_text": "(7) Whenever the office of Mayor of a Municipal Council falls vacant, notice of such vacancy shall forthwith be given by the Commissioner to the Commissioner of Local Government and the Commissioner of Local Government shall thereupon proceed to fill such vacancy in the manner provided for the same in the Local Authorities Elections Ordinance (Cap. 262).",
+         "text": "Whenever the office of Mayor of a Municipal Council falls vacant, notice of such vacancy shall forthwith be given by the Commissioner to the Commissioner of Local Government and the Commissioner of Local Government shall thereupon proceed to fill such vacancy in the manner provided for the same in the Local Authorities Elections Ordinance (Cap. 262).",
          "amendment_events": [],
          "cross_references": [
           {
            "kind": "enactment",
            "target_document": "Local Authorities Elections Ordinance",
-           "verbatim": "the Local Authorities Elections Ordinance"
+           "verbatim": "the Local Authorities Elections Ordinance (Cap. 262)"
           }
-         ]
+         ],
+         "text_before_amendment": "Whenever the office of Mayor of a Municipal Council falls vacant information of the occurrence of the vacancy shall forthwith be given to the elections officer of the district, in writing, by the Commissioner of the Council. Upon the receipt of such information the elections officer shall proceed to fill the vacancy in the manner prescribed in the Local Authorities Elections Ordinance."
         }
        ]
       },
@@ -1139,7 +1385,7 @@
        "number": "16",
        "heading": "Mayor and Deputy Mayor to be justices of the Peace and Unofficial Magistrates.",
        "raw_text": "16. The Mayor and Deputy Mayor of the Council shall each, during the tenure of his office, be ex official a Justice of the Peace and Unofficial Magistrate for the administrative district in which the Municipality is situated. [ Section 15 is repealed by Law No. 24 of 1977]",
-       "text": "The Mayor and Deputy Mayor of the Council shall each, during the tenure of his office, be ex official a Justice of the Peace and Unofficial Magistrate for the administrative district in which the Municipality is situated. [ Section 15 is repealed by Law No. 24 of 1977]",
+       "text": "The Mayor and Deputy Mayor of the Council shall each, during the tenure of his office, be ex officio a Justice of the Peace and Unofficial Magistrate for the administrative district in which the Municipality is situated. [ Section 15 is repealed by Law No. 24 of 1977]",
        "amendment_events": [],
        "cross_references": [
         {
@@ -1147,6 +1393,13 @@
          "target_document": "Municipal Councils Ordinance",
          "target_section": "15",
          "verbatim": "Section 15"
+        }
+       ],
+       "html_transcription_slips": [
+        {
+         "printed_html": "ex official",
+         "corrected_to": "ex officio",
+         "pdf_agrees": true
         }
        ]
       }
@@ -1171,7 +1424,7 @@
        "number": "18",
        "heading": "Special meetings.",
        "raw_text": "18. The Mayor may, whenever he thinks fit, and shall upon a written requisition signed by three Councillors, call a special meeting of the Council to be held at the Municipal office. Notice of meetings.",
-       "text": "The Mayor may, whenever he thinks fit, and shall upon a written requisition signed by three Councillors, call a special meeting of the Council to be held at the Municipal office. Notice of meetings.",
+       "text": "The Mayor may, whenever he thinks fit, and shall upon a written requisition signed by three Councillors, call a special meeting of the Council to be held at the Municipal office.",
        "amendment_events": [
         {
          "amending_act": "24 of 1977",
@@ -1187,7 +1440,7 @@
       {
        "type": "section",
        "number": "19",
-       "heading": "",
+       "heading": "Notice of meetings.",
        "raw_text": "19. The Mayor shall cause notice in writing of every general or special meeting or adjourned meeting of the Council, and of the business to be transacted thereat to be served on each Councillor at least four days before the meeting.",
        "text": "The Mayor shall cause notice in writing of every general or special meeting or adjourned meeting of the Council, and of the business to be transacted thereat to be served on each Councillor at least four days before the meeting.",
        "amendment_events": [
@@ -1200,7 +1453,9 @@
          "verbatim": "[ 102,24 of 1977]"
         }
        ],
-       "cross_references": []
+       "cross_references": [],
+       "heading_raw": "",
+       "heading_note": "Both held editions print the marginal note 'Notice of meetings.' at the end of s.18's text instead of beside s.19 (HTML: inside s.18's sectioncontent; PDF p.6: 'held at the Municipal office. Notice of meetings.'). Restored to s.19; s.18 raw_text keeps the printed run-in."
       },
       {
        "type": "section",
@@ -1243,7 +1498,7 @@
        "number": "22",
        "heading": "Mayor or Deputy mayor to preside at meetings of the Council.",
        "raw_text": "22. The Mayor, or in his absence, the Deputy Mayor, shall preside at all meetings of the Council, and it both the Mayor and he Deputy Mayor are absent, Councillors present shall elect one of their own number to preside at the meeting.",
-       "text": "The Mayor, or in his absence, the Deputy Mayor, shall preside at all meetings of the Council, and it both the Mayor and he Deputy Mayor are absent, Councillors present shall elect one of their own number to preside at the meeting.",
+       "text": "The Mayor, or in his absence, the Deputy Mayor, shall preside at all meetings of the Council, and if both the Mayor and the Deputy Mayor are absent, Councillors present shall elect one of their own number to preside at the meeting.",
        "amendment_events": [
         {
          "amending_act": "24 of 1977",
@@ -1254,7 +1509,14 @@
          "verbatim": "[ 103,24 of 1977]"
         }
        ],
-       "cross_references": []
+       "cross_references": [],
+       "html_transcription_slips": [
+        {
+         "printed_html": "and it both the Mayor and he Deputy Mayor",
+         "corrected_to": "and if both the Mayor and the Deputy Mayor",
+         "pdf_agrees": true
+        }
+       ]
       },
       {
        "type": "section",
@@ -1296,7 +1558,19 @@
        "heading": "Standing committees.",
        "raw_text": "26.",
        "text": "",
-       "amendment_events": [],
+       "amendment_events": [
+        {
+         "amending_act": "21 of 2012",
+         "amending_act_no": 21,
+         "amending_year": 2012,
+         "amending_section": "5",
+         "operation": "amend",
+         "verbatim": "Section 26 of the principal enactment is hereby amended by the repeal of subsection (3) thereof and the substitution therefor of the following:-- \"(3) A Councillor other than the Mayor shall not be eligible for election to-- (a) any two Standing Committees, until every other Councillor has been elected to serve on at least two Standing Committees; (b) any three Standing Committees, until every other Councillor has been elected to serve on at least one Standing Committee: Provided that, in any event a Councillor shall not be eligible to be elected to more than three Standing Committees.\"",
+         "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+         "applied_by": "finalization worker, from the amending Act's own Government Printer text; cross-checked against the LankaLaw consolidated-2024 PDF (chain to 20 of 2017)",
+         "target_subsection": "3"
+        }
+       ],
        "cross_references": [],
        "children": [
         {
@@ -1318,10 +1592,38 @@
         {
          "type": "subsection",
          "number": "3",
-         "raw_text": "(3) A Councillor other than the Mayor shall not be eligible for election to more than one standing committee until every other such Councillor has been elected to at least one standing committee and shall not in any event be eligible for election to more than two standing committees.",
-         "text": "A Councillor other than the Mayor shall not be eligible for election to more than one standing committee until every other such Councillor has been elected to at least one standing committee and shall not in any event be eligible for election to more than two standing committees.",
+         "raw_text": "(3) A Councillor other than the Mayor shall not be eligible for election to—",
+         "text": "A Councillor other than the Mayor shall not be eligible for election to—",
          "amendment_events": [],
-         "cross_references": []
+         "cross_references": [],
+         "text_before_amendment": "A Councillor other than the Mayor shall not be eligible for election to more than one standing committee until every other such Councillor has been elected to at least one standing committee and shall not in any event be eligible for election to more than two standing committees.",
+         "children": [
+          {
+           "type": "paragraph",
+           "number": "a",
+           "raw_text": "(a) any two Standing Committees, until every other Councillor has been elected to serve on at least two Standing Committees;",
+           "text": "any two Standing Committees, until every other Councillor has been elected to serve on at least two Standing Committees;",
+           "amendment_events": [],
+           "cross_references": []
+          },
+          {
+           "type": "paragraph",
+           "number": "b",
+           "raw_text": "(b) any three Standing Committees, until every other Councillor has been elected to serve on at least one Standing Committee:",
+           "text": "any three Standing Committees, until every other Councillor has been elected to serve on at least one Standing Committee:",
+           "amendment_events": [],
+           "cross_references": []
+          },
+          {
+           "type": "proviso",
+           "is_proviso": true,
+           "raw_text": "Provided that, in any event a Councillor shall not be eligible to be elected to more than three Standing Committees.",
+           "text": "Provided that, in any event a Councillor shall not be eligible to be elected to more than three Standing Committees.",
+           "qualifies": "3",
+           "amendment_events": [],
+           "cross_references": []
+          }
+         ]
         },
         {
          "type": "subsection",
@@ -2433,9 +2735,16 @@
        "type": "subsection",
        "number": "3",
        "raw_text": "(3)Where the Minister is of opinion that the continued operation of any commercial or industrial enterprise of any Municipal Council would be prejudicial to the interests of such Council by reason of mismanagement or that it is likely to involve financial loss to the Council he may, after consultation with the Council by proper published in the Gazette, terminate the operation of suck enterprises and direct the Council to take charge of all books records and assets of the enterprise and to take such measures as may be necessary to give effect to such Order.",
-       "text": "Where the Minister is of opinion that the continued operation of any commercial or industrial enterprise of any Municipal Council would be prejudicial to the interests of such Council by reason of mismanagement or that it is likely to involve financial loss to the Council he may, after consultation with the Council by proper published in the Gazette, terminate the operation of suck enterprises and direct the Council to take charge of all books records and assets of the enterprise and to take such measures as may be necessary to give effect to such Order.",
+       "text": "Where the Minister is of opinion that the continued operation of any commercial or industrial enterprise of any Municipal Council would be prejudicial to the interests of such Council by reason of mismanagement or that it is likely to involve financial loss to the Council he may, after consultation with the Council by proper published in the Gazette, terminate the operation of such enterprises and direct the Council to take charge of all books records and assets of the enterprise and to take such measures as may be necessary to give effect to such Order.",
        "amendment_events": [],
-       "cross_references": []
+       "cross_references": [],
+       "html_transcription_slips": [
+        {
+         "printed_html": "suck",
+         "corrected_to": "such",
+         "pdf_agrees": true
+        }
+       ]
       },
       {
        "type": "subsection",
@@ -3340,17 +3649,16 @@
          "raw_text": "(1) The Minister shall, either by his own motion or on application made in that behalf by a Municipal Council, determine the name by which any street shall be known and in like manner at any time alter the name of any street.",
          "text": "The Minister shall, either by his own motion or on application made in that behalf by a Municipal Council, determine the name by which any street shall be known and in like manner at any time alter the name of any street.",
          "amendment_events": [],
+         "cross_references": []
+        },
+        {
+         "type": "subsection",
+         "number": "3",
+         "raw_text": "*(3) The Council shall determine the number by which any house or tenement shall be distinguished and may alter such number, from time to time, as occasion may require.",
+         "text": "The Council shall determine the number by which any house or tenement shall be distinguished and may alter such number, from time to time, as occasion may require.",
+         "amendment_events": [],
          "cross_references": [],
-         "children": [
-          {
-           "type": "text",
-           "number": "",
-           "raw_text": "*(3) The Council shall determine the number by which any house or tenement shall be distinguished and may alter such number, from time to time, as occasion may require.",
-           "text": "*(3) The Council shall determine the number by which any house or tenement shall be distinguished and may alter such number, from time to time, as occasion may require.",
-           "amendment_events": [],
-           "cross_references": []
-          }
-         ]
+         "footnote_marker": "*"
         },
         {
          "type": "subsection",
@@ -4556,9 +4864,16 @@
          "type": "subsection",
          "number": "1",
          "raw_text": "(1) Every Municipal Council shall maintain and, from time to time, repair and as it sees fit, enlarge, alter, arch over or otherwise improve all or any of the public drains, culverts, gutters, and watercourses, and may discontinue, close up, or destroy such of them ay it may deem useless or unnecessary, but so that no nuisance is created by such act.",
-         "text": "Every Municipal Council shall maintain and, from time to time, repair and as it sees fit, enlarge, alter, arch over or otherwise improve all or any of the public drains, culverts, gutters, and watercourses, and may discontinue, close up, or destroy such of them ay it may deem useless or unnecessary, but so that no nuisance is created by such act.",
+         "text": "Every Municipal Council shall maintain and, from time to time, repair and as it sees fit, enlarge, alter, arch over or otherwise improve all or any of the public drains, culverts, gutters, and watercourses, and may discontinue, close up, or destroy such of them as it may deem useless or unnecessary, but so that no nuisance is created by such act.",
          "amendment_events": [],
-         "cross_references": []
+         "cross_references": [],
+         "html_transcription_slips": [
+          {
+           "printed_html": "ay",
+           "corrected_to": "as",
+           "pdf_agrees": true
+          }
+         ]
         },
         {
          "type": "subsection",
@@ -6183,9 +6498,16 @@
        "number": "125",
        "heading": "Power of Council to inspect and lime-wash houses.",
        "raw_text": "125. It shall be lawful for any person authorized in that behalf by the Council at any lime between sunrise and sunset to enter into and inspect any house or building, and by an order in writing to direct all or any part thereof to be forthwith internally and externally lime washed or otherwise cleaned; and if the owner or occupier of such house or building neglects to comply with such direction within seven days from the time when the order shall have been served upon him, the Council may cause the work to be done, and the expenses thereby incurred shall be paid by the owner, and, in case of default, shall be recoverable as hereinafter provided.",
-       "text": "It shall be lawful for any person authorized in that behalf by the Council at any lime between sunrise and sunset to enter into and inspect any house or building, and by an order in writing to direct all or any part thereof to be forthwith internally and externally lime washed or otherwise cleaned; and if the owner or occupier of such house or building neglects to comply with such direction within seven days from the time when the order shall have been served upon him, the Council may cause the work to be done, and the expenses thereby incurred shall be paid by the owner, and, in case of default, shall be recoverable as hereinafter provided.",
+       "text": "It shall be lawful for any person authorized in that behalf by the Council at any time between sunrise and sunset to enter into and inspect any house or building, and by an order in writing to direct all or any part thereof to be forthwith internally and externally lime washed or otherwise cleaned; and if the owner or occupier of such house or building neglects to comply with such direction within seven days from the time when the order shall have been served upon him, the Council may cause the work to be done, and the expenses thereby incurred shall be paid by the owner, and, in case of default, shall be recoverable as hereinafter provided.",
        "amendment_events": [],
-       "cross_references": []
+       "cross_references": [],
+       "html_transcription_slips": [
+        {
+         "printed_html": "at any lime between",
+         "corrected_to": "at any time between",
+         "pdf_agrees": true
+        }
+       ]
       },
       {
        "type": "section",
@@ -6550,41 +6872,6 @@
       },
       {
        "type": "section",
-       "number": "136B",
-       "heading": "Power of the Mayor in regard to trees or branches, trunks or fruits of trees endangering the safety of person or property.",
-       "raw_text": "136B.",
-       "text": "",
-       "amendment_events": [],
-       "cross_references": [],
-       "children": [
-        {
-         "type": "subsection",
-         "number": "1",
-         "raw_text": "(1) Where in any Municipal Council area any tree or any branch, trunk, fruit or other part of a tree is causing or is likely to cause damage to any building, or is in a condition dangerous to the occupants of any building, or to the safety of passers by along any public thoroughfare, the Mayor may, by a notice in writing served on the owner or occupier of the land on which such tree stands require such owner or occupier to tie up and make secure, or to cut down and remove such tree or the branch, trunk, fruit or other part of such tree within such time as may be specified in the notice.",
-         "text": "Where in any Municipal Council area any tree or any branch, trunk, fruit or other part of a tree is causing or is likely to cause damage to any building, or is in a condition dangerous to the occupants of any building, or to the safety of passers by along any public thoroughfare, the Mayor may, by a notice in writing served on the owner or occupier of the land on which such tree stands require such owner or occupier to tie up and make secure, or to cut down and remove such tree or the branch, trunk, fruit or other part of such tree within such time as may be specified in the notice.",
-         "amendment_events": [],
-         "cross_references": []
-        },
-        {
-         "type": "subsection",
-         "number": "2",
-         "raw_text": "(2) Every person on whom a notice is served under subsection (1), shall comply with the requirements of such notice within the time specified therein, and in the event of the refusal or neglect of such persons to comply with such requirements within such time, the Mayor or any officer or workman authorized in writing in that behalf by the Mayor, may enter upon the land referred to in such notice and do what such person was required to do by such notice, and the expenses thereby incurred may be recovered from such person as a debt due to the Council.\".",
-         "text": "Every person on whom a notice is served under subsection (1), shall comply with the requirements of such notice within the time specified therein, and in the event of the refusal or neglect of such persons to comply with such requirements within such time, the Mayor or any officer or workman authorized in writing in that behalf by the Mayor, may enter upon the land referred to in such notice and do what such person was required to do by such notice, and the expenses thereby incurred may be recovered from such person as a debt due to the Council.\".",
-         "amendment_events": [],
-         "cross_references": [
-          {
-           "kind": "internal",
-           "target_document": "Municipal Councils Ordinance",
-           "target_section": "136B",
-           "target_subsection": "1",
-           "verbatim": "under subsection (1)"
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "type": "section",
        "number": "136A",
        "heading": "Pollution caused by factories.",
        "raw_text": "136A.",
@@ -6648,18 +6935,19 @@
            "text": "that operations in such factory shall cease.",
            "amendment_events": [],
            "cross_references": []
-          },
-          {
-           "type": "definition",
-           "term": "pollution",
-           "qualifier": "",
-           "scope": "For the purposes of this section",
-           "raw_text": "For the purposes of this section, \" pollution\" means any direct or indirect alteration of the physical, thermal, chemical, biological or radioactive properties of any part of the environment by discharging, emitting or depositing wastes so as to affect any beneficial use adversely, to cause a condition which is hazardous or potentially hazardous to public health, safety or welfare or to animals, birds, wildlife, fish or aquatic life, or to plants,",
-           "text": "means any direct or indirect alteration of the physical, thermal, chemical, biological or radioactive properties of any part of the environment by discharging, emitting or depositing wastes so as to affect any beneficial use adversely, to cause a condition which is hazardous or potentially hazardous to public health, safety or welfare or to animals, birds, wildlife, fish or aquatic life, or to plants,",
-           "amendment_events": [],
-           "cross_references": []
           }
          ]
+        },
+        {
+         "type": "definition",
+         "term": "pollution",
+         "qualifier": "",
+         "scope": "For the purposes of this section",
+         "raw_text": "For the purposes of this section, \" pollution\" means any direct or indirect alteration of the physical, thermal, chemical, biological or radioactive properties of any part of the environment by discharging, emitting or depositing wastes so as to affect any beneficial use adversely, to cause a condition which is hazardous or potentially hazardous to public health, safety or welfare or to animals, birds, wildlife, fish or aquatic life, or to plants,",
+         "text": "means any direct or indirect alteration of the physical, thermal, chemical, biological or radioactive properties of any part of the environment by discharging, emitting or depositing wastes so as to affect any beneficial use adversely, to cause a condition which is hazardous or potentially hazardous to public health, safety or welfare or to animals, birds, wildlife, fish or aquatic life, or to plants,",
+         "amendment_events": [],
+         "cross_references": [],
+         "scope_note": "printed flush at the subsection margin after (2)(b) and worded 'For the purposes of this section'; a section-level definition, not part of subsection (2)"
         }
        ]
       },
@@ -7264,7 +7552,7 @@
       {
        "type": "section",
        "number": "148A",
-       "heading": "\" Closure order by-Magistrate.",
+       "heading": "Closure order by-Magistrate.",
        "raw_text": "148A.",
        "text": "",
        "amendment_events": [
@@ -7319,7 +7607,8 @@
           }
          ]
         }
-       ]
+       ],
+       "heading_raw": "\" Closure order by-Magistrate."
       }
      ]
     },
@@ -7494,7 +7783,7 @@
       {
        "type": "section",
        "number": "154A",
-       "heading": "\" Payment of incentives.",
+       "heading": "Payment of incentives.",
        "raw_text": "154A.",
        "text": "",
        "amendment_events": [
@@ -7559,7 +7848,8 @@
          "amendment_events": [],
          "cross_references": []
         }
-       ]
+       ],
+       "heading_raw": "\" Payment of incentives."
       }
      ]
     }
@@ -7573,11 +7863,12 @@
     {
      "type": "section",
      "number": "155",
-     "heading": "Provision of markets and charging of rents and fees. [ V, 48 of 1971]",
+     "heading": "Provision of markets and charging of rents and fees.",
      "raw_text": "155. A Municipal Council may, from time to time, as occasion requires, provide places within the Municipality for the purpose of being used as public markets, and may charge such rents, tolls and fees as to it may seem fit for the use of, or the right to expose goods for sale in, such markets, and for the use of shops, stalls, sheds, pens, and standings therein. All such rents, tolls, and fees shall be recoverable by the Commissioner from the persons liable to pay the same, as if the amounts payable in respect thereof were taxes due under this Ordinance.",
      "text": "A Municipal Council may, from time to time, as occasion requires, provide places within the Municipality for the purpose of being used as public markets, and may charge such rents, tolls and fees as to it may seem fit for the use of, or the right to expose goods for sale in, such markets, and for the use of shops, stalls, sheds, pens, and standings therein. All such rents, tolls, and fees shall be recoverable by the Commissioner from the persons liable to pay the same, as if the amounts payable in respect thereof were taxes due under this Ordinance.",
      "amendment_events": [],
-     "cross_references": []
+     "cross_references": [],
+     "heading_raw": "Provision of markets and charging of rents and fees. [ V, 48 of 1971]"
     },
     {
      "type": "section",
@@ -7619,7 +7910,7 @@
      "number": "157",
      "heading": "Sale, lease, and closure of markets.",
      "raw_text": "157. A Municipal Council may, subject to the provisions of paragraph (f) of subsection (1) of section 40, sell, or let to tenants on tease or otherwise, on such terms as it may think fit, any public market or any part thereof, and may close any such market or part thereof.",
-     "text": "A Municipal Council may, subject to the provisions of paragraph (f) of subsection (1) of section 40, sell, or let to tenants on tease or otherwise, on such terms as it may think fit, any public market or any part thereof, and may close any such market or part thereof.",
+     "text": "A Municipal Council may, subject to the provisions of paragraph (f) of subsection (1) of section 40, sell, or let to tenants on lease or otherwise, on such terms as it may think fit, any public market or any part thereof, and may close any such market or part thereof.",
      "amendment_events": [],
      "cross_references": [
       {
@@ -7628,6 +7919,13 @@
        "target_section": "40",
        "target_subsection": "1",
        "verbatim": "subsection (1) of section 40"
+      }
+     ],
+     "html_transcription_slips": [
+      {
+       "printed_html": "tease",
+       "corrected_to": "lease",
+       "pdf_agrees": true
       }
      ]
     },
@@ -8473,33 +8771,19 @@
               }
              ],
              "cross_references": []
-            },
-            {
-             "type": "text",
-             "number": "",
-             "raw_text": "(I A) Where no pension, annuity or gratuity or no adequate pension, annuity or gratuity is payable to the widow, children, next of kin or dependants of any deceased officer or servant of the Council under any by-laws or rules of that Council or under any scheme or fund established under the Local Government Service Ordinance, the Council may, with the approval of the Minister given after consultation with the Minister in charge of the subject of Public Administration, grant out of the Municipal Fund to such widow, children, next of kin or dependants a pension, annuity or gratuity.",
-             "text": "(I A) Where no pension, annuity or gratuity or no adequate pension, annuity or gratuity is payable to the widow, children, next of kin or dependants of any deceased officer or servant of the Council under any by-laws or rules of that Council or under any scheme or fund established under the Local Government Service Ordinance, the Council may, with the approval of the Minister given after consultation with the Minister in charge of the subject of Public Administration, grant out of the Municipal Fund to such widow, children, next of kin or dependants a pension, annuity or gratuity.",
-             "amendment_events": [
-              {
-               "amending_act": "15 of 1957",
-               "amending_act_no": 15,
-               "amending_year": 1957,
-               "amending_section": "3",
-               "operation": "unknown",
-               "verbatim": "[ 3, 15 of 1957]"
-              }
-             ],
-             "cross_references": [
-              {
-               "kind": "enactment",
-               "target_document": "Local Government Service Ordinance",
-               "verbatim": "the Local Government Service Ordinance"
-              }
-             ]
             }
            ]
           }
          ]
+        },
+        {
+         "type": "subsection",
+         "number": "1A",
+         "raw_text": "(I A) Where no pension, annuity or gratuity or no adequate pension, annuity or gratuity is payable to the widow, children, next of kin or dependants of any deceased officer or servant of the Council under any by-laws or rules of that Council or under any scheme or fund established under the Local Government Service Ordinance, the Council may, with the approval of the Minister given after consultation with the Minister in charge of the subject of Public Administration, grant out of the Municipal Fund to such widow, children, next of kin or dependants a pension, annuity or gratuity.",
+         "text": "Where no pension, annuity or gratuity or no adequate pension, annuity or gratuity is payable to the widow, children, next of kin or dependants of any deceased officer or servant of the Council under any by-laws or rules of that Council or under any scheme or fund established under the Local Government Service Ordinance, the Council may, with the approval of the Minister given after consultation with the Minister in charge of the subject of Public Administration, grant out of the Municipal Fund to such widow, children, next of kin or dependants a pension, annuity or gratuity.",
+         "amendment_events": [],
+         "cross_references": [],
+         "number_as_printed": "(I A)"
         },
         {
          "type": "subsection",
@@ -9193,20 +9477,40 @@
     {
      "type": "section",
      "number": "189",
-     "heading": "Orders, cheques, & c., for payment out of the fund.",
-     "raw_text": "189. All orders or cheques for the payment of moneys out of the Municipal Fund shall be signed by two officers specially authorized by the Council for that purpose, and the bank in which the fund is established may pay all orders or cheques against the said fund which are so signed,",
-     "text": "All orders or cheques for the payment of moneys out of the Municipal Fund shall be signed by two officers specially authorized by the Council for that purpose, and the bank in which the fund is established may pay all orders or cheques against the said fund which are so signed,",
-     "amendment_events": [],
-     "cross_references": []
+     "heading": "Cheques, Orders &c. for payment out of the Municipal Fund.",
+     "raw_text": "189. All cheques and orders for the payment of moneys out of the Municipal Fund shall be signed by two officers authorized by the Council other than the Mayor and the Bank in which the Municipal Fund is established may pay all cheques or orders out of the said Fund which are so signed.",
+     "text": "All cheques and orders for the payment of moneys out of the Municipal Fund shall be signed by two officers authorized by the Council other than the Mayor and the Bank in which the Municipal Fund is established may pay all cheques or orders out of the said Fund which are so signed.",
+     "amendment_events": [
+      {
+       "amending_act": "21 of 2012",
+       "amending_act_no": 21,
+       "amending_year": 2012,
+       "amending_section": "6",
+       "operation": "repeal_and_substitute",
+       "verbatim": "Section 189 of the principal enactment is hereby amended by the repeal of section 189 and the substitution therefor of the following:-- \"Cheques, Orders &c. for payment out of the Municipal Fund. 189. All cheques and orders for the payment of moneys out of the Municipal Fund shall be signed by two officers authorized by the Council other than the Mayor and the Bank in which the Municipal Fund is established may pay all cheques or orders out of the said Fund which are so signed.\"",
+       "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+       "applied_by": "finalization worker, from the amending Act's own Government Printer text; cross-checked against the LankaLaw consolidated-2024 PDF (chain to 20 of 2017)"
+      }
+     ],
+     "cross_references": [],
+     "heading_raw": "Orders, cheques, & c., for payment out of the fund.",
+     "text_before_amendment": "All orders or cheques for the payment of moneys out of the Municipal Fund shall be signed by two officers specially authorized by the Council for that purpose, and the bank in which the fund is established may pay all orders or cheques against the said fund which are so signed,"
     },
     {
      "type": "section",
      "number": "190",
      "heading": "Statement of receipts, disbursements, & c., on account of the Fund.",
      "raw_text": "190. At each general meeting of a Municipal Council, the Mayor shall submit to the Council a statement of receipts and disbursements on account of the Municipal Fund from the close of the previous year up to the close of the month preceding that in which the meeting lakes place. Such statement, together with the minutes of the proceedings of the meeting, shall be forwarded forthwith to the Commissioner of Local Government, and shall be published in the Gazette.",
-     "text": "At each general meeting of a Municipal Council, the Mayor shall submit to the Council a statement of receipts and disbursements on account of the Municipal Fund from the close of the previous year up to the close of the month preceding that in which the meeting lakes place. Such statement, together with the minutes of the proceedings of the meeting, shall be forwarded forthwith to the Commissioner of Local Government, and shall be published in the Gazette.",
+     "text": "At each general meeting of a Municipal Council, the Mayor shall submit to the Council a statement of receipts and disbursements on account of the Municipal Fund from the close of the previous year up to the close of the month preceding that in which the meeting takes place. Such statement, together with the minutes of the proceedings of the meeting, shall be forwarded forthwith to the Commissioner of Local Government, and shall be published in the Gazette.",
      "amendment_events": [],
-     "cross_references": []
+     "cross_references": [],
+     "html_transcription_slips": [
+      {
+       "printed_html": "lakes",
+       "corrected_to": "takes",
+       "pdf_agrees": true
+      }
+     ]
     }
    ]
   },
@@ -10312,8 +10616,8 @@
        "type": "section",
        "number": "215A",
        "heading": "Mayor's powers with regard to budget.",
-       "raw_text": "215A. If the Municipal Council modifies or rejects all or any of the items in any budget or supplementary budget or adds any item thereto and the Mayor does not agree with any such decision of the Council, he shall re-submit the budget or supplementary budget to the Council for further consideration. Where a budget or supplementary budget is not passed by the Council within two weeks after it is re-submitted, such budget or supplementary budget shall, notwithstanding that it has not been passed by the Council, be deemed to be the duly adopted budget or supplementary budget of the Council.",
-       "text": "If the Municipal Council modifies or rejects all or any of the items in any budget or supplementary budget or adds any item thereto and the Mayor does not agree with any such decision of the Council, he shall re-submit the budget or supplementary budget to the Council for further consideration. Where a budget or supplementary budget is not passed by the Council within two weeks after it is re-submitted, such budget or supplementary budget shall, notwithstanding that it has not been passed by the Council, be deemed to be the duly adopted budget or supplementary budget of the Council.",
+       "raw_text": "215A. If the Municipal Council modifies or rejects all or any of the items in any budget or supplementary budget or adds any item thereto and the Mayor does not agree with any such decision of the Council, he shall re-submit the budget or supplementary budget to the Council for further consideration. Where a budget or supplementary budget is not passed by the Council within two weeks after it is re-submitted, such budget or supplementary budget shall, notwithstanding that it has not been passed by the Council, be deemed to be the duly adopted budget or supplementary budget of the Council:",
+       "text": "If the Municipal Council modifies or rejects all or any of the items in any budget or supplementary budget or adds any item thereto and the Mayor does not agree with any such decision of the Council, he shall re-submit the budget or supplementary budget to the Council for further consideration. Where a budget or supplementary budget is not passed by the Council within two weeks after it is re-submitted, such budget or supplementary budget shall, notwithstanding that it has not been passed by the Council, be deemed to be the duly adopted budget or supplementary budget of the Council:",
        "amendment_events": [
         {
          "amending_act": "24 of 1977",
@@ -10322,9 +10626,81 @@
          "amending_section": "107",
          "operation": "unknown",
          "verbatim": "[ 107,24 of 1977]"
+        },
+        {
+         "amending_act": "21 of 2012",
+         "amending_act_no": 21,
+         "amending_year": 2012,
+         "amending_section": "7",
+         "operation": "amend",
+         "verbatim": "Section 215A of the principal enactment is hereby amended by the substitution for the words \"the Council.\" of the following:-- \"the Council: Provided that, if the Council according to section 214 and 215 of this Ordinance modifies or rejects all or any items in any budget or supplementary budget or adds any item thereto which was submitted to the Council at any time by the Mayor after a period of two years since the commencement of the term of office of the Council, and if the Mayor does not agree to such decision of the Council, he shall resubmit the said budget to the Council for further consideration. Where a budget or supplementary budget is not passed by the Council within two weeks after it is resubmitted for the second time, the Mayor shall be deemed to have resigned from the office of Mayor at the end of the said period of two weeks.\"",
+         "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+         "applied_by": "finalization worker, from the amending Act's own Government Printer text; cross-checked against the LankaLaw consolidated-2024 PDF (chain to 20 of 2017)"
         }
        ],
-       "cross_references": []
+       "cross_references": [],
+       "text_before_amendment": "If the Municipal Council modifies or rejects all or any of the items in any budget or supplementary budget or adds any item thereto and the Mayor does not agree with any such decision of the Council, he shall re-submit the budget or supplementary budget to the Council for further consideration. Where a budget or supplementary budget is not passed by the Council within two weeks after it is re-submitted, such budget or supplementary budget shall, notwithstanding that it has not been passed by the Council, be deemed to be the duly adopted budget or supplementary budget of the Council.",
+       "children": [
+        {
+         "type": "proviso",
+         "is_proviso": true,
+         "raw_text": "Provided that, if the Council according to section 214 and 215 of this Ordinance modifies or rejects all or any items in any budget or supplementary budget or adds any item thereto which was submitted to the Council at any time by the Mayor after a period of two years since the commencement of the term of office of the Council, and if the Mayor does not agree to such decision of the Council, he shall resubmit the said budget to the Council for further consideration. Where a budget or supplementary budget is not passed by the Council within two weeks after it is resubmitted for the second time, the Mayor shall be deemed to have resigned from the office of Mayor at the end of the said period of two weeks.",
+         "text": "Provided that, if the Council according to section 214 and 215 of this Ordinance modifies or rejects all or any items in any budget or supplementary budget or adds any item thereto which was submitted to the Council at any time by the Mayor after a period of two years since the commencement of the term of office of the Council, and if the Mayor does not agree to such decision of the Council, he shall resubmit the said budget to the Council for further consideration. Where a budget or supplementary budget is not passed by the Council within two weeks after it is resubmitted for the second time, the Mayor shall be deemed to have resigned from the office of Mayor at the end of the said period of two weeks.",
+         "qualifies": "215A",
+         "amendment_events": [],
+         "cross_references": [
+          {
+           "kind": "internal",
+           "target_document": "Municipal Councils Ordinance",
+           "target_section": "214",
+           "verbatim": "section 214 and 215 of this Ordinance"
+          },
+          {
+           "kind": "internal",
+           "target_document": "Municipal Councils Ordinance",
+           "target_section": "215",
+           "verbatim": "section 214 and 215 of this Ordinance"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "section",
+       "number": "215B",
+       "heading": "Transitional provision.",
+       "raw_text": "215B. The provisions of the proviso to section 215A of the Municipal Councils Ordinance as amended by the Local Authorities (Special Provisions) Act, No. 21 of 2012 shall not be applicable to any budget or supplementary budget to be submitted to a Municipal Council constituted in terms of the results of elections held prior to the date of coming into operation of Local Authorities (Special Provisions) Act, No. 21 of 2012 and Local Authorities Elections (Amendment) Act, No. 22 of 2012 respectively.",
+       "text": "The provisions of the proviso to section 215A of the Municipal Councils Ordinance as amended by the Local Authorities (Special Provisions) Act, No. 21 of 2012 shall not be applicable to any budget or supplementary budget to be submitted to a Municipal Council constituted in terms of the results of elections held prior to the date of coming into operation of Local Authorities (Special Provisions) Act, No. 21 of 2012 and Local Authorities Elections (Amendment) Act, No. 22 of 2012 respectively.",
+       "amendment_events": [
+        {
+         "amending_act": "34 of 2014",
+         "amending_act_no": 34,
+         "amending_year": 2014,
+         "amending_section": "2",
+         "operation": "insert",
+         "verbatim": "The following new section is hereby inserted immediately after section 215A of the Municipal Councils Ordinance (Chapter 252) and shall have effect as section 215B of that Ordinance",
+         "operation_source": "data/legal-sources/library/amendments/34-2014-muncipal-councils-amendment.pdf",
+         "applied_by": "finalization worker, from the amending Act's own Government Printer text; cross-checked against the LankaLaw consolidated-2024 PDF (chain to 20 of 2017)"
+        }
+       ],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Municipal Councils Ordinance",
+         "target_section": "215A",
+         "verbatim": "section 215A of the Municipal Councils Ordinance"
+        },
+        {
+         "kind": "enactment",
+         "target_document": "Local Authorities (Special Provisions) Act, No. 21 of 2012",
+         "verbatim": "the Local Authorities (Special Provisions) Act, No. 21 of 2012"
+        },
+        {
+         "kind": "enactment",
+         "target_document": "Local Authorities Elections (Amendment) Act, No. 22 of 2012",
+         "verbatim": "Local Authorities Elections (Amendment) Act, No. 22 of 2012"
+        }
+       ]
       },
       {
        "type": "section",
@@ -10815,65 +11191,59 @@
          "verbatim": "[2,8 of 1967]"
         }
        ],
+       "cross_references": []
+      },
+      {
+       "type": "subsection",
+       "number": "1A",
+       "raw_text": "(IA) In pursuance of the powers of a Municipal Council under subsection (1), any Council may, with the sanction of the Minister, impose different rates for different areas or parts of the Municipality according to the services provided by such Council for each such area or part.",
+       "text": "In pursuance of the powers of a Municipal Council under subsection (1), any Council may, with the sanction of the Minister, impose different rates for different areas or parts of the Municipality according to the services provided by such Council for each such area or part.",
+       "amendment_events": [],
        "cross_references": [],
+       "number_as_printed": "(IA)"
+      },
+      {
+       "type": "subsection",
+       "number": "1AA",
+       "raw_text": "(IAA) In pursuance of the powers under subsection (1) the Council may impose a higher rate on premises used for business or commercial purposes.",
+       "text": "In pursuance of the powers under subsection (1) the Council may impose a higher rate on premises used for business or commercial purposes.",
+       "amendment_events": [],
+       "cross_references": [],
+       "number_as_printed": "(IAA)"
+      },
+      {
+       "type": "subsection",
+       "number": "1AB",
+       "raw_text": "(IAB)",
+       "text": "",
+       "amendment_events": [],
+       "cross_references": [],
+       "number_as_printed": "(IAB)",
        "children": [
         {
-         "type": "text",
-         "number": "",
-         "raw_text": "(IA) In pursuance of the powers of a Municipal Council under subsection (1), any Council may, with the sanction of the Minister, impose different rates for different areas or parts of the Municipality according to the services provided by such Council for each such area or part.",
-         "text": "(IA) In pursuance of the powers of a Municipal Council under subsection (1), any Council may, with the sanction of the Minister, impose different rates for different areas or parts of the Municipality according to the services provided by such Council for each such area or part.",
-         "amendment_events": [
-          {
-           "amending_act": "10 of 1981",
-           "amending_act_no": 10,
-           "amending_year": 1981,
-           "amending_section": "2",
-           "operation": "unknown",
-           "verbatim": "[2,10 of 1981]"
-          }
-         ],
-         "cross_references": [
-          {
-           "kind": "internal",
-           "target_document": "Municipal Councils Ordinance",
-           "target_section": "230",
-           "target_subsection": "1",
-           "verbatim": "under subsection (1)"
-          }
-         ]
-        },
-        {
-         "type": "text",
-         "number": "",
-         "raw_text": "(IAA) In pursuance of the powers under subsection (1) the Council may impose a higher rate on premises used for business or commercial purposes.",
-         "text": "(IAA) In pursuance of the powers under subsection (1) the Council may impose a higher rate on premises used for business or commercial purposes.",
-         "amendment_events": [],
-         "cross_references": [
-          {
-           "kind": "internal",
-           "target_document": "Municipal Councils Ordinance",
-           "target_section": "230",
-           "target_subsection": "1",
-           "verbatim": "under subsection (1)"
-          }
-         ]
-        },
-        {
-         "type": "text",
-         "number": "",
-         "raw_text": "(IAB) (a) The Council may, with the approval of the Minister, exempt from the payment of rates all residential premises the annual value of which does not exceed an amount that may be determined by the Council under paragraph (b).",
-         "text": "(IAB) (a) The Council may, with the approval of the Minister, exempt from the payment of rates all residential premises the annual value of which does not exceed an amount that may be determined by the Council under paragraph (b).",
+         "type": "paragraph",
+         "number": "a",
+         "raw_text": "(a) The Council may, with the approval of the Minister, exempt from the payment of rates all residential premises the annual value of which does not exceed an amount that may be determined by the Council under paragraph (b).",
+         "text": "The Council may, with the approval of the Minister, exempt from the payment of rates all residential premises the annual value of which does not exceed an amount that may be determined by the Council under paragraph (b).",
          "amendment_events": [],
          "cross_references": []
         },
         {
          "type": "paragraph",
          "number": "b",
-         "raw_text": "(b) In determining the amount of the annual value of residential premises that may be exempted, the Council shall have regard to (i) the state of development of the Municipality;",
-         "text": "In determining the amount of the annual value of residential premises that may be exempted, the Council shall have regard to (i) the state of development of the Municipality;",
+         "raw_text": "(b) In determining the amount of the annual value of residential premises that may be exempted, the Council shall have regard to",
+         "text": "In determining the amount of the annual value of residential premises that may be exempted, the Council shall have regard to",
          "amendment_events": [],
          "cross_references": [],
          "children": [
+          {
+           "type": "subparagraph",
+           "number": "i",
+           "raw_text": "(i) the state of development of the Municipality;",
+           "text": "the state of development of the Municipality;",
+           "amendment_events": [],
+           "cross_references": []
+          },
           {
            "type": "subparagraph",
            "number": "ii",
@@ -10890,7 +11260,8 @@
            "amendment_events": [],
            "cross_references": []
           }
-         ]
+         ],
+         "raw_text_as_parsed": "(b) In determining the amount of the annual value of residential premises that may be exempted, the Council shall have regard to (i) the state of development of the Municipality;"
         },
         {
          "type": "paragraph",
@@ -10908,15 +11279,18 @@
           }
          ],
          "cross_references": []
-        },
-        {
-         "type": "closing_text",
-         "number": "",
-         "raw_text": "(IB) It shall be lawful for the Minister to authorize the waiver of the whole or any part of the rates imposed by the Council under this section in any past year and any costs incurred for the purpose of recovering those rates where-",
-         "text": "(IB) It shall be lawful for the Minister to authorize the waiver of the whole or any part of the rates imposed by the Council under this section in any past year and any costs incurred for the purpose of recovering those rates where-",
-         "amendment_events": [],
-         "cross_references": []
-        },
+        }
+       ]
+      },
+      {
+       "type": "subsection",
+       "number": "1B",
+       "raw_text": "(IB) It shall be lawful for the Minister to authorize the waiver of the whole or any part of the rates imposed by the Council under this section in any past year and any costs incurred for the purpose of recovering those rates where-",
+       "text": "It shall be lawful for the Minister to authorize the waiver of the whole or any part of the rates imposed by the Council under this section in any past year and any costs incurred for the purpose of recovering those rates where-",
+       "amendment_events": [],
+       "cross_references": [],
+       "number_as_printed": "(IB)",
+       "children": [
         {
          "type": "paragraph",
          "number": "a",
@@ -10940,18 +11314,19 @@
            "verbatim": "[ 2,57 of 1979]"
           }
          ],
-         "cross_references": [],
-         "children": [
-          {
-           "type": "subparagraph",
-           "number": "Ic",
-           "raw_text": "(Ic) Where the Minister has under subsection (IB) authorized the waiver of the whole or part of any rates imposed and any costs incurred, the Council shall-",
-           "text": "Where the Minister has under subsection (IB) authorized the waiver of the whole or part of any rates imposed and any costs incurred, the Council shall-",
-           "amendment_events": [],
-           "cross_references": []
-          }
-         ]
-        },
+         "cross_references": []
+        }
+       ]
+      },
+      {
+       "type": "subsection",
+       "number": "1C",
+       "raw_text": "(Ic) Where the Minister has under subsection (IB) authorized the waiver of the whole or part of any rates imposed and any costs incurred, the Council shall-",
+       "text": "Where the Minister has under subsection (IB) authorized the waiver of the whole or part of any rates imposed and any costs incurred, the Council shall-",
+       "amendment_events": [],
+       "cross_references": [],
+       "number_as_printed": "(IC)",
+       "children": [
         {
          "type": "paragraph",
          "number": "a",
@@ -13035,7 +13410,7 @@
      "number": "263",
      "heading": "Form of conveyance to the council.",
      "raw_text": "263. Where land or other immovable property is purchased by a Municipal Council under the provisions of section 261, a certificate substantially in the form set out in the Eighth Schedule, signed by the Commissioner, shall vest the property sold absolutely in the Council free from alt encumbrances -, and such certificate shall be received in all courts as conclusive evidence of the title of the Council to such land or other immovable property. Every certificate shall be liable to the stamp duty leviable on conveyances of immovable property and to the charges payable for the registration thereof.",
-     "text": "Where land or other immovable property is purchased by a Municipal Council under the provisions of section 261, a certificate substantially in the form set out in the Eighth Schedule, signed by the Commissioner, shall vest the property sold absolutely in the Council free from alt encumbrances -, and such certificate shall be received in all courts as conclusive evidence of the title of the Council to such land or other immovable property. Every certificate shall be liable to the stamp duty leviable on conveyances of immovable property and to the charges payable for the registration thereof.",
+     "text": "Where land or other immovable property is purchased by a Municipal Council under the provisions of section 261, a certificate substantially in the form set out in the Eighth Schedule, signed by the Commissioner, shall vest the property sold absolutely in the Council free from all encumbrances -, and such certificate shall be received in all courts as conclusive evidence of the title of the Council to such land or other immovable property. Every certificate shall be liable to the stamp duty leviable on conveyances of immovable property and to the charges payable for the registration thereof.",
      "amendment_events": [
       {
        "amending_act": "48 of 1971",
@@ -13052,6 +13427,13 @@
        "target_document": "Municipal Councils Ordinance",
        "target_section": "261",
        "verbatim": "section 261"
+      }
+     ],
+     "html_transcription_slips": [
+      {
+       "printed_html": "alt",
+       "corrected_to": "all",
+       "pdf_agrees": true
       }
      ]
     },
@@ -13634,7 +14016,7 @@
     {
      "type": "section",
      "number": "268A",
-     "heading": "\" Power to compound offences.",
+     "heading": "Power to compound offences.",
      "raw_text": "268A.",
      "text": "",
      "amendment_events": [
@@ -13687,7 +14069,8 @@
         }
        ]
       }
-     ]
+     ],
+     "heading_raw": "\" Power to compound offences."
     },
     {
      "type": "section",
@@ -15012,48 +15395,38 @@
              "verbatim": "[111,24 of 1977]"
             }
            ],
-           "cross_references": [],
-           "children": [
-            {
-             "type": "text",
-             "number": "",
-             "raw_text": "(IA) The Minister shall, before making an Order under subsection (1), appoint for the purpose of satisfying himself in regard to any of the matters referred to in subsection (I), a retired judicial officer to inquire into and report upon such matter within a period of three months, and the person so appointed shall in relation to such inquiry have the powers of a commission of inquiry appointed under the Commissions of Inquiry Act.",
-             "text": "(IA) The Minister shall, before making an Order under subsection (1), appoint for the purpose of satisfying himself in regard to any of the matters referred to in subsection (I), a retired judicial officer to inquire into and report upon such matter within a period of three months, and the person so appointed shall in relation to such inquiry have the powers of a commission of inquiry appointed under the Commissions of Inquiry Act.",
-             "amendment_events": [
-              {
-               "amending_act": "24 of 1977",
-               "amending_act_no": 24,
-               "amending_year": 1977,
-               "amending_section": "111",
-               "operation": "unknown",
-               "verbatim": "[111,24 of 1977]"
-              }
-             ],
-             "cross_references": [
-              {
-               "kind": "internal",
-               "target_document": "Municipal Councils Ordinance",
-               "target_section": "277",
-               "target_subsection": "1",
-               "verbatim": "under subsection (1)"
-              },
-              {
-               "kind": "enactment",
-               "target_document": "Commissions of Inquiry Act",
-               "verbatim": "the Commissions of Inquiry Act"
-              }
-             ]
-            },
-            {
-             "type": "text",
-             "number": "",
-             "raw_text": "(IB) (a) When the Minister appoints a retired judicial officer under subsection (I A) to inquire into any matter the Minister may, as the circumstances of each case may require, by Order published in the Gazette-",
-             "text": "(IB) (a) When the Minister appoints a retired judicial officer under subsection (I A) to inquire into any matter the Minister may, as the circumstances of each case may require, by Order published in the Gazette-",
-             "amendment_events": [],
-             "cross_references": []
-            }
-           ]
-          },
+           "cross_references": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "subsection",
+       "number": "1A",
+       "raw_text": "(IA) The Minister shall, before making an Order under subsection (1), appoint for the purpose of satisfying himself in regard to any of the matters referred to in subsection (I), a retired judicial officer to inquire into and report upon such matter within a period of three months, and the person so appointed shall in relation to such inquiry have the powers of a commission of inquiry appointed under the Commissions of Inquiry Act.",
+       "text": "The Minister shall, before making an Order under subsection (1), appoint for the purpose of satisfying himself in regard to any of the matters referred to in subsection (I), a retired judicial officer to inquire into and report upon such matter within a period of three months, and the person so appointed shall in relation to such inquiry have the powers of a commission of inquiry appointed under the Commissions of Inquiry Act.",
+       "amendment_events": [],
+       "cross_references": [],
+       "number_as_printed": "(IA)"
+      },
+      {
+       "type": "subsection",
+       "number": "1B",
+       "raw_text": "(IB)",
+       "text": "",
+       "amendment_events": [],
+       "cross_references": [],
+       "number_as_printed": "(IB)",
+       "children": [
+        {
+         "type": "paragraph",
+         "number": "a",
+         "raw_text": "(a) When the Minister appoints a retired judicial officer under subsection (I A) to inquire into any matter the Minister may, as the circumstances of each case may require, by Order published in the Gazette-",
+         "text": "When the Minister appoints a retired judicial officer under subsection (I A) to inquire into any matter the Minister may, as the circumstances of each case may require, by Order published in the Gazette-",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": [
           {
            "type": "subparagraph",
            "number": "i",
@@ -15103,32 +15476,18 @@
            "target_subsection": "1",
            "verbatim": "under subsection (1)"
           }
-         ],
-         "children": [
-          {
-           "type": "subparagraph",
-           "number": "Ic",
-           "raw_text": "(Ic) Where the Minister removes the Mayor of a Municipal Council from office by Order under subsection (1), the Mayor shall also cease to be a Councillor and the provisions of the Local Authorities Elections Ordinance shall thereupon apply with regard to the filling of such vacancy.",
-           "text": "Where the Minister removes the Mayor of a Municipal Council from office by Order under subsection (1), the Mayor shall also cease to be a Councillor and the provisions of the Local Authorities Elections Ordinance shall thereupon apply with regard to the filling of such vacancy.",
-           "amendment_events": [],
-           "cross_references": [
-            {
-             "kind": "internal",
-             "target_document": "Municipal Councils Ordinance",
-             "target_section": "277",
-             "target_subsection": "1",
-             "verbatim": "under subsection (1)"
-            },
-            {
-             "kind": "enactment",
-             "target_document": "Local Authorities Elections Ordinance",
-             "verbatim": "the Local Authorities Elections Ordinance"
-            }
-           ]
-          }
          ]
         }
        ]
+      },
+      {
+       "type": "subsection",
+       "number": "1C",
+       "raw_text": "(Ic) Where the Minister removes the Mayor of a Municipal Council from office by Order under subsection (1), the Mayor shall also cease to be a Councillor and the provisions of the Local Authorities Elections Ordinance shall thereupon apply with regard to the filling of such vacancy.",
+       "text": "Where the Minister removes the Mayor of a Municipal Council from office by Order under subsection (1), the Mayor shall also cease to be a Councillor and the provisions of the Local Authorities Elections Ordinance shall thereupon apply with regard to the filling of such vacancy.",
+       "amendment_events": [],
+       "cross_references": [],
+       "number_as_printed": "(IC)"
       },
       {
        "type": "subsection",
@@ -15598,7 +15957,7 @@
        "type": "subsection",
        "number": "4",
        "raw_text": "(4) The new Council shall, from the date of the Constitution thereof, be the successor of the dissolved Council for all purposes relating to the Municipality and all the provisions of section 325 shall apply, with the necessary modifications, in the case of the constitution of the new Council, in the same manner as if alt references to any local authority in that section were references to the dissolved Council and as if all references to a Municipal Council in that section were references to the new Council.",
-       "text": "The new Council shall, from the date of the Constitution thereof, be the successor of the dissolved Council for all purposes relating to the Municipality and all the provisions of section 325 shall apply, with the necessary modifications, in the case of the constitution of the new Council, in the same manner as if alt references to any local authority in that section were references to the dissolved Council and as if all references to a Municipal Council in that section were references to the new Council.",
+       "text": "The new Council shall, from the date of the Constitution thereof, be the successor of the dissolved Council for all purposes relating to the Municipality and all the provisions of section 325 shall apply, with the necessary modifications, in the case of the constitution of the new Council, in the same manner as if all references to any local authority in that section were references to the dissolved Council and as if all references to a Municipal Council in that section were references to the new Council.",
        "amendment_events": [],
        "cross_references": [
         {
@@ -15606,6 +15965,13 @@
          "target_document": "Municipal Councils Ordinance",
          "target_section": "325",
          "verbatim": "section 325"
+        }
+       ],
+       "html_transcription_slips": [
+        {
+         "printed_html": "alt",
+         "corrected_to": "all",
+         "pdf_agrees": true
         }
        ]
       }
@@ -15650,7 +16016,7 @@
     {
      "type": "section",
      "number": "289",
-     "heading": "Power to make regulations. 1977]",
+     "heading": "Power to make regulations.",
      "raw_text": "289.",
      "text": "",
      "amendment_events": [],
@@ -15680,7 +16046,8 @@
        "amendment_events": [],
        "cross_references": []
       }
-     ]
+     ],
+     "heading_raw": "Power to make regulations. 1977]"
     }
    ]
   },
@@ -16672,9 +17039,16 @@
        "type": "subsection",
        "number": "1",
        "raw_text": "(1) All property of any kind whatsoever, movable or immovable, and all interests therein, which by virtue of any repealed enactment was vested in or held in trust for the Municipal Councils of Colombo, Kandy and Galle, respectively, with ail rights which were enjoyed by such Councils, shall continue to be vested in or held in trust for the said Councils for the purposes of this Ordinance.",
-       "text": "All property of any kind whatsoever, movable or immovable, and all interests therein, which by virtue of any repealed enactment was vested in or held in trust for the Municipal Councils of Colombo, Kandy and Galle, respectively, with ail rights which were enjoyed by such Councils, shall continue to be vested in or held in trust for the said Councils for the purposes of this Ordinance.",
+       "text": "All property of any kind whatsoever, movable or immovable, and all interests therein, which by virtue of any repealed enactment was vested in or held in trust for the Municipal Councils of Colombo, Kandy and Galle, respectively, with all rights which were enjoyed by such Councils, shall continue to be vested in or held in trust for the said Councils for the purposes of this Ordinance.",
        "amendment_events": [],
-       "cross_references": []
+       "cross_references": [],
+       "html_transcription_slips": [
+        {
+         "printed_html": "ail",
+         "corrected_to": "all",
+         "pdf_agrees": true
+        }
+       ]
       },
       {
        "type": "subsection",
@@ -16688,13 +17062,20 @@
        "type": "subsection",
        "number": "3",
        "raw_text": "(3) The Municipal Council of Colombo shall be entitled to lake and receive for the Municipal Fund all stamp duties payable for and in respect of the licences issued under or by virtue of the Excise Ordinance to sell by retail arrack and rum at taverns situated within the Municipality of Colombo.",
-       "text": "The Municipal Council of Colombo shall be entitled to lake and receive for the Municipal Fund all stamp duties payable for and in respect of the licences issued under or by virtue of the Excise Ordinance to sell by retail arrack and rum at taverns situated within the Municipality of Colombo.",
+       "text": "The Municipal Council of Colombo shall be entitled to take and receive for the Municipal Fund all stamp duties payable for and in respect of the licences issued under or by virtue of the Excise Ordinance to sell by retail arrack and rum at taverns situated within the Municipality of Colombo.",
        "amendment_events": [],
        "cross_references": [
         {
          "kind": "enactment",
          "target_document": "Excise Ordinance",
          "verbatim": "the Excise Ordinance"
+        }
+       ],
+       "html_transcription_slips": [
+        {
+         "printed_html": "lake",
+         "corrected_to": "take",
+         "pdf_agrees": true
         }
        ]
       }
@@ -17027,9 +17408,16 @@
          "type": "paragraph",
          "number": "a",
          "raw_text": "(a) the Municipal Council shall he the successor of such local authority for all purposes relating to such administrative area from the date of the constitution of the Council and such local authority shall be deemed to be dissolved on the date immediately preceding that date;",
-         "text": "the Municipal Council shall he the successor of such local authority for all purposes relating to such administrative area from the date of the constitution of the Council and such local authority shall be deemed to be dissolved on the date immediately preceding that date;",
+         "text": "the Municipal Council shall be the successor of such local authority for all purposes relating to such administrative area from the date of the constitution of the Council and such local authority shall be deemed to be dissolved on the date immediately preceding that date;",
          "amendment_events": [],
-         "cross_references": []
+         "cross_references": [],
+         "html_transcription_slips": [
+          {
+           "printed_html": "shall he the successor",
+           "corrected_to": "shall be the successor",
+           "pdf_agrees": true
+          }
+         ]
         },
         {
          "type": "paragraph",
@@ -17160,9 +17548,16 @@
          "type": "paragraph",
          "number": "f",
          "raw_text": "(f) alt proclamations, orders, notifications, rules, regulations and by-laws of or affecting such local authority and published or made under any written law other than the enactment under which such authority was constituted, and in force at the said date shall, so far as they are not inconsistent with the provisions of this Ordinance, continue in force as if they had been published or made with relation to or in the exercise of the powers of the Municipal Council under this Ordinance, subject nevertheless to revocation or alteration by the Minister or by the Municipal Council, as the case may be;",
-         "text": "alt proclamations, orders, notifications, rules, regulations and by-laws of or affecting such local authority and published or made under any written law other than the enactment under which such authority was constituted, and in force at the said date shall, so far as they are not inconsistent with the provisions of this Ordinance, continue in force as if they had been published or made with relation to or in the exercise of the powers of the Municipal Council under this Ordinance, subject nevertheless to revocation or alteration by the Minister or by the Municipal Council, as the case may be;",
+         "text": "all proclamations, orders, notifications, rules, regulations and by-laws of or affecting such local authority and published or made under any written law other than the enactment under which such authority was constituted, and in force at the said date shall, so far as they are not inconsistent with the provisions of this Ordinance, continue in force as if they had been published or made with relation to or in the exercise of the powers of the Municipal Council under this Ordinance, subject nevertheless to revocation or alteration by the Minister or by the Municipal Council, as the case may be;",
          "amendment_events": [],
-         "cross_references": []
+         "cross_references": [],
+         "html_transcription_slips": [
+          {
+           "printed_html": "alt",
+           "corrected_to": "all",
+           "pdf_agrees": true
+          }
+         ]
         },
         {
          "type": "paragraph",
@@ -17279,61 +17674,64 @@
        "cross_references": [],
        "children": [
         {
-         "type": "item",
+         "type": "definition",
          "number": "",
          "raw_text": "\" local authority \"-",
          "text": "\" local authority \"-",
          "amendment_events": [],
-         "cross_references": []
-        },
-        {
-         "type": "paragraph",
-         "number": "a",
-         "raw_text": "(a) in relation to the Urban Councils Ordinance, means an Urban Council;",
-         "text": "in relation to the Urban Councils Ordinance, means an Urban Council;",
-         "amendment_events": [],
-         "cross_references": [
+         "cross_references": [],
+         "term": "local authority",
+         "children": [
           {
-           "kind": "enactment",
-           "target_document": "Urban Councils Ordinance",
-           "verbatim": "the Urban Councils Ordinance"
-          }
-         ]
-        },
-        {
-         "type": "paragraph",
-         "number": "b",
-         "raw_text": "(b) in relation to the Town Councils Ordinance, means a Town Council.",
-         "text": "in relation to the Town Councils Ordinance, means a Town Council.",
-         "amendment_events": [
+           "type": "paragraph",
+           "number": "a",
+           "raw_text": "(a) in relation to the Urban Councils Ordinance, means an Urban Council;",
+           "text": "in relation to the Urban Councils Ordinance, means an Urban Council;",
+           "amendment_events": [],
+           "cross_references": [
+            {
+             "kind": "enactment",
+             "target_document": "Urban Councils Ordinance",
+             "verbatim": "the Urban Councils Ordinance"
+            }
+           ]
+          },
           {
-           "amending_act": "48 of 1971",
-           "amending_act_no": 48,
-           "amending_year": 1971,
-           "amending_section": "29",
-           "operation": "unknown",
-           "verbatim": "[ 29, 48 of 1971]"
-          }
-         ],
-         "cross_references": [
+           "type": "paragraph",
+           "number": "b",
+           "raw_text": "(b) in relation to the Town Councils Ordinance, means a Town Council.",
+           "text": "in relation to the Town Councils Ordinance, means a Town Council.",
+           "amendment_events": [
+            {
+             "amending_act": "48 of 1971",
+             "amending_act_no": 48,
+             "amending_year": 1971,
+             "amending_section": "29",
+             "operation": "unknown",
+             "verbatim": "[ 29, 48 of 1971]"
+            }
+           ],
+           "cross_references": [
+            {
+             "kind": "enactment",
+             "target_document": "Town Councils Ordinance",
+             "verbatim": "the Town Councils Ordinance"
+            }
+           ]
+          },
           {
-           "kind": "enactment",
-           "target_document": "Town Councils Ordinance",
-           "verbatim": "the Town Councils Ordinance"
-          }
-         ]
-        },
-        {
-         "type": "paragraph",
-         "number": "c",
-         "raw_text": "(c) in relation to the Village Councils Ordinance, means a Village Council.",
-         "text": "in relation to the Village Councils Ordinance, means a Village Council.",
-         "amendment_events": [],
-         "cross_references": [
-          {
-           "kind": "enactment",
-           "target_document": "Village Councils Ordinance",
-           "verbatim": "the Village Councils Ordinance"
+           "type": "paragraph",
+           "number": "c",
+           "raw_text": "(c) in relation to the Village Councils Ordinance, means a Village Council.",
+           "text": "in relation to the Village Councils Ordinance, means a Village Council.",
+           "amendment_events": [],
+           "cross_references": [
+            {
+             "kind": "enactment",
+             "target_document": "Village Councils Ordinance",
+             "verbatim": "the Village Councils Ordinance"
+            }
+           ]
           }
          ]
         }
@@ -17482,16 +17880,18 @@
          "raw_text": "\" Commissioner of Local Government\" includes any Deputy Commissioner of Local Government;",
          "text": "includes any Deputy Commissioner of Local Government;",
          "amendment_events": [],
+         "cross_references": []
+        },
+        {
+         "type": "definition",
+         "number": "",
+         "raw_text": "\" Council\" or \" Municipal Council \", in relation to any Municipality, means the Municipal Council constituted or deemed to be constituted under this Ordinance for that Municipality;",
+         "text": "\" Council\" or \" Municipal Council \", in relation to any Municipality, means the Municipal Council constituted or deemed to be constituted under this Ordinance for that Municipality;",
+         "amendment_events": [],
          "cross_references": [],
-         "children": [
-          {
-           "type": "text",
-           "number": "",
-           "raw_text": "\" Council\" or \" Municipal Council \", in relation to any Municipality, means the Municipal Council constituted or deemed to be constituted under this Ordinance for that Municipality;",
-           "text": "\" Council\" or \" Municipal Council \", in relation to any Municipality, means the Municipal Council constituted or deemed to be constituted under this Ordinance for that Municipality;",
-           "amendment_events": [],
-           "cross_references": []
-          }
+         "term": "Council",
+         "also_defines": [
+          "Municipal Council"
          ]
         },
         {
@@ -17549,22 +17949,24 @@
            "verbatim": "[ 115,24 of 1977]"
           }
          ],
-         "cross_references": [],
-         "children": [
+         "cross_references": []
+        },
+        {
+         "type": "definition",
+         "number": "",
+         "raw_text": "\" Mayor \" and \" Deputy Mayor \" means respectively the Mayor and Deputy Mayor elected in accordance with the provisions of the Local Authorities Elections Ordinance.",
+         "text": "\" Mayor \" and \" Deputy Mayor \" means respectively the Mayor and Deputy Mayor elected in accordance with the provisions of the Local Authorities Elections Ordinance.",
+         "amendment_events": [],
+         "cross_references": [
           {
-           "type": "text",
-           "number": "",
-           "raw_text": "\" Mayor \" and \" Deputy Mayor \" means respectively the Mayor and Deputy Mayor elected in accordance with the provisions of the Local Authorities Elections Ordinance.",
-           "text": "\" Mayor \" and \" Deputy Mayor \" means respectively the Mayor and Deputy Mayor elected in accordance with the provisions of the Local Authorities Elections Ordinance.",
-           "amendment_events": [],
-           "cross_references": [
-            {
-             "kind": "enactment",
-             "target_document": "Local Authorities Elections Ordinance",
-             "verbatim": "the Local Authorities Elections Ordinance"
-            }
-           ]
+           "kind": "enactment",
+           "target_document": "Local Authorities Elections Ordinance",
+           "verbatim": "the Local Authorities Elections Ordinance"
           }
+         ],
+         "term": "Mayor",
+         "also_defines": [
+          "Deputy Mayor"
          ]
         },
         {
@@ -17653,17 +18055,16 @@
          "raw_text": "\" proper officer\" means the officer in charge of any work executed or to be executed on or in connexion with any street by direction of a Municipal Council;",
          "text": "means the officer in charge of any work executed or to be executed on or in connexion with any street by direction of a Municipal Council;",
          "amendment_events": [],
+         "cross_references": []
+        },
+        {
+         "type": "definition",
+         "number": "",
+         "raw_text": "\" public\" when applied to any drain, culvert, gutter, or watercourse, means vested in the Council;",
+         "text": "\" public\" when applied to any drain, culvert, gutter, or watercourse, means vested in the Council;",
+         "amendment_events": [],
          "cross_references": [],
-         "children": [
-          {
-           "type": "text",
-           "number": "",
-           "raw_text": "\" public\" when applied to any drain, culvert, gutter, or watercourse, means vested in the Council;",
-           "text": "\" public\" when applied to any drain, culvert, gutter, or watercourse, means vested in the Council;",
-           "amendment_events": [],
-           "cross_references": []
-          }
-         ]
+         "term": "public"
         },
         {
          "type": "definition",
@@ -17708,51 +18109,52 @@
          "raw_text": "\" work\" includes the partial or total constructing, reconstructing, pulling down, opening, cutting into, adding to, and altering any building, wall, retaining wall, chimney stack, flue, scaffold, ground, road, well, drain, pier, wharf, fence, or any other like operation whatsoever.",
          "text": "includes the partial or total constructing, reconstructing, pulling down, opening, cutting into, adding to, and altering any building, wall, retaining wall, chimney stack, flue, scaffold, ground, road, well, drain, pier, wharf, fence, or any other like operation whatsoever.",
          "amendment_events": [],
+         "cross_references": []
+        }
+       ]
+      },
+      {
+       "type": "subsection",
+       "number": "2",
+       "raw_text": "2.For the purposes of this Ordinance-",
+       "text": "For the purposes of this Ordinance-",
+       "amendment_events": [],
+       "cross_references": [],
+       "number_as_printed": "2.",
+       "children": [
+        {
+         "type": "paragraph",
+         "number": "a",
+         "raw_text": "(a) a person shall be deemed to reside in, or to be a resident of, any place, if he has, and from time to time uses, a sleeping apartment in any building therein;",
+         "text": "a person shall be deemed to reside in, or to be a resident of, any place, if he has, and from time to time uses, a sleeping apartment in any building therein;",
+         "amendment_events": [],
+         "cross_references": []
+        },
+        {
+         "type": "paragraph",
+         "number": "b",
+         "raw_text": "(b) a person shall not be deemed to cease to reside in, or to be a resident of, such place because he is sometimes absent from the said building or has, or from time to time uses, a sleeping apartment in a building in another place:",
+         "text": "a person shall not be deemed to cease to reside in, or to be a resident of, such place because he is sometimes absent from the said building or has, or from time to time uses, a sleeping apartment in a building in another place:",
+         "amendment_events": [],
          "cross_references": [],
          "children": [
           {
-           "type": "text",
+           "type": "proviso",
            "number": "",
-           "raw_text": "2.For the purposes of this Ordinance-",
-           "text": "2.For the purposes of this Ordinance-",
-           "amendment_events": [],
-           "cross_references": []
-          },
-          {
-           "type": "paragraph",
-           "number": "a",
-           "raw_text": "(a) a person shall be deemed to reside in, or to be a resident of, any place, if he has, and from time to time uses, a sleeping apartment in any building therein;",
-           "text": "a person shall be deemed to reside in, or to be a resident of, any place, if he has, and from time to time uses, a sleeping apartment in any building therein;",
-           "amendment_events": [],
-           "cross_references": []
-          },
-          {
-           "type": "paragraph",
-           "number": "b",
-           "raw_text": "(b) a person shall not be deemed to cease to reside in, or to be a resident of, such place because he is sometimes absent from the said building or has, or from time to time uses, a sleeping apartment in a building in another place:",
-           "text": "a person shall not be deemed to cease to reside in, or to be a resident of, such place because he is sometimes absent from the said building or has, or from time to time uses, a sleeping apartment in a building in another place:",
-           "amendment_events": [],
-           "cross_references": [],
-           "children": [
-            {
-             "type": "proviso",
-             "number": "",
-             "raw_text": "Provided that he is at liberty to return, and has not abandoned the intention of returning to such first-mentioned building at any time; and",
-             "text": "Provided that he is at liberty to return, and has not abandoned the intention of returning to such first-mentioned building at any time; and",
-             "amendment_events": [],
-             "cross_references": []
-            }
-           ]
-          },
-          {
-           "type": "paragraph",
-           "number": "c",
-           "raw_text": "(c) a reference to an Ordinance or enactment includes any enactment amending the Ordinance or enactment referred to, and any Ordinance or enactment substituted for it, and also rules, regulations, by-laws, notifications or orders made under any of such Ordinances or enactments and for the time being in force.",
-           "text": "a reference to an Ordinance or enactment includes any enactment amending the Ordinance or enactment referred to, and any Ordinance or enactment substituted for it, and also rules, regulations, by-laws, notifications or orders made under any of such Ordinances or enactments and for the time being in force.",
+           "raw_text": "Provided that he is at liberty to return, and has not abandoned the intention of returning to such first-mentioned building at any time; and",
+           "text": "Provided that he is at liberty to return, and has not abandoned the intention of returning to such first-mentioned building at any time; and",
            "amendment_events": [],
            "cross_references": []
           }
          ]
+        },
+        {
+         "type": "paragraph",
+         "number": "c",
+         "raw_text": "(c) a reference to an Ordinance or enactment includes any enactment amending the Ordinance or enactment referred to, and any Ordinance or enactment substituted for it, and also rules, regulations, by-laws, notifications or orders made under any of such Ordinances or enactments and for the time being in force.",
+         "text": "a reference to an Ordinance or enactment includes any enactment amending the Ordinance or enactment referred to, and any Ordinance or enactment substituted for it, and also rules, regulations, by-laws, notifications or orders made under any of such Ordinances or enactments and for the time being in force.",
+         "amendment_events": [],
+         "cross_references": []
         }
        ]
       },
@@ -17860,5 +18262,120 @@
     }
    ]
   }
- ]
+ ],
+ "long_title_note": "Both held editions (LankaLaw HTML meta description and the LankaLaw consolidated-2024 PDF cover) print 'AN ACT TO AMEND THE MUNICIPAL COUNCILS ORDINANCE.' as the long title. That is the long title of an amending Act, not of the 1947 Ordinance; no held source prints the Ordinance's own long title. Kept as printed.",
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "corrected_by": "finalization worker (pipeline pass); lawyer-unverified",
+  "baseline": "LankaLaw HTML edition (data/legal-sources/library/statutes/HTML/29-1947-municipal-councils-ordinance.html), chain header ending '19 of 1987 35 of 1987'",
+  "against": "pdftotext -layout (poppler, PowerShell) of data/legal-sources/library/statutes/29-1947-municipal-councils-ordinance.pdf (LankaLaw consolidated-2024 edition, chain to 20 of 2017) and its parse by parse_consolidated_pdf.py; Government Printer PDFs of Acts 21/2012, 34/2014, 20/2017 (text layer)",
+  "why_not_the_pdf_tree": "parse_consolidated_pdf.py on the 2024 PDF converged on coverage (0.06% unmatched) but not on structure: 348 sections (323A lost), no Part or crossheading nodes, 483 subsections against the HTML tree's 505, 58 provisos against 65, 22 marginal notes truncated, citation type read as 'Law', chain header read only to 48 of 1971. The HTML tree plus the three post-1987 Acts applied from their own text was the stronger result.",
+  "what_changed": [
+   "s.136B: the HTML prints the section twice; the first copy (placed before 136A, no marginal marker, subsection (2) ending in a stray '\".') was removed. The kept copy sits after 136A and carries [39, 39 of 1986], which is where and how the 2024 PDF prints it once. The two copies were not identical: they differed in the marker and in the stray closing quote.",
+   "s.18: trailing 'Notice of meetings.' (s.19's displaced marginal note) removed from text; kept in raw_text. s.19: heading '' -> 'Notice of meetings.'",
+   "heading of s.148A: '\" Closure order by-Magistrate.' -> 'Closure order by-Magistrate.'",
+   "heading of s.154A: '\" Payment of incentives.' -> 'Payment of incentives.'",
+   "heading of s.268A: '\" Power to compound offences.' -> 'Power to compound offences.'",
+   "heading of s.155: 'Provision of markets and charging of rents and fees. [ V, 48 of 1971]' -> 'Provision of markets and charging of rents and fees.'",
+   "heading of s.289: 'Power to make regulations. 1977]' -> 'Power to make regulations.'",
+   "s.71: text node '*(3) ...' retyped as subsection 3 (footnote marker kept as footnote_marker; the note '[* Subsection 2 is repealed by Law No. 4 of 1975]' is in editorial_notes)",
+   "s.184: text node '(I A) Where no pension ...' retyped as subsection 1A (print uses roman I for 1; kept in number_as_printed)",
+   "s.230: subsections (IA), (IAA), (IAB), (IB), (IC) -- printed with roman I and parsed as text/closing_text/subparagraph nodes inside subsection (1) -- rebuilt as subsections 1A, 1AA, 1AB, 1B, 1C at section level; 1AB(b)'s fused first item split out as subparagraph (i). Layout follows the 2024 PDF (pp. 107-108).",
+   "s.277: subsections (IA), (IB) and (IC) -- parsed as text nodes under the closing words of subsection (1) and as a subparagraph 'Ic' -- rebuilt as subsections 1A, 1B (paragraphs (a) with (i)-(iii), (b)) and 1C at section level, following the 2024 PDF (pp. 143-144).",
+   "s.327(1): text nodes for 'Council'/'Municipal Council', 'Mayor'/'Deputy Mayor' and 'public' retyped as definition nodes (two-term entries keep the second term in also_defines); the run-on '2.For the purposes of this Ordinance-' with paragraphs (a)-(c) moved out of the definition of 'work' to become subsection 2 (the print labels it '2.').",
+   "s.325(3): item node '\" local authority \"-' retyped as a definition with paragraphs (a)-(c) as its children",
+   "s.5: replaced with the text substituted by Act No. 20 of 2017, s.2 (Government Printer text). The 1987-baseline text is kept in text_before_amendment. The intermediate text substituted by Act No. 21 of 2012, s.2 is recorded as an event only. GP prints 'section 65 B' in paragraph (c) with a space inside the label; written closed up as '65B', matching paragraph (b) and the 2024 PDF.",
+   "s.13(3): closing words substituted per Act No. 21 of 2012, s.3; prior words kept in text_before_amendment",
+   "s.14(2)(b) and s.14(7): replaced per Act No. 21 of 2012, s.4; prior text kept in text_before_amendment. 14(2)'s fused paragraph (a) split out of the subsection text.",
+   "s.26(3): replaced per Act No. 21 of 2012, s.5 (paragraphs (a), (b) and proviso); prior text kept in text_before_amendment",
+   "s.189: replaced (heading and text) per Act No. 21 of 2012, s.6; prior heading in heading_raw, prior text in text_before_amendment",
+   "s.215A: closing full stop replaced by a colon and the proviso added per Act No. 21 of 2012, s.7",
+   "s.215B inserted after s.215A per Act No. 34 of 2014, s.2. GP prints '215 B .' and 'section 215 A' with spaces inside the labels; written closed up, as the 2024 PDF prints them. The 2024 PDF ends the section with a stray \"''.\" not present in the GP text; not carried.",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.16 [section 16]: 'ex official' -> 'ex officio' (context: '...ch, during the tenure of his office, be ex official a Justice of the Peace and Unofficial M...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.22 [section 22]: 'and it both the Mayor and he Deputy Mayor' -> 'and if both the Mayor and the Deputy Mayor' (context: '...preside at all meetings of the Council, and it both the Mayor and he Deputy Mayor are absent, Councillors present shall e...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.40A [subsection 3]: 'suck' -> 'such' (context: '...the Gazette, terminate the operation of suck enterprises and direct the Council to t...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.98 [subsection 1]: 'ay' -> 'as' (context: '...inue, close up, or destroy such of them ay it may deem useless or unnecessary, but...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.125 [section 125]: 'at any lime between' -> 'at any time between' (context: '...uthorized in that behalf by the Council at any lime between sunrise and sunset to enter into and in...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.157 [section 157]: 'tease' -> 'lease' (context: '... section 40, sell, or let to tenants on tease or otherwise, on such terms as it may t...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.190 [section 190]: 'lakes' -> 'takes' (context: '...nth preceding that in which the meeting lakes place. Such statement, together with th...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.263 [section 263]: 'alt' -> 'all' (context: '...old absolutely in the Council free from alt encumbrances -, and such certificate sh...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.286 [subsection 4]: 'alt' -> 'all' (context: '...e new Council, in the same manner as if alt references to any local authority in th...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.321 [subsection 1]: 'ail' -> 'all' (context: '...bo, Kandy and Galle, respectively, with ail rights which were enjoyed by such Counc...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.321 [subsection 3]: 'lake' -> 'take' (context: '...Council of Colombo shall be entitled to lake and receive for the Municipal Fund all ...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.325 [paragraph a]: 'shall he the successor' -> 'shall be the successor' (context: '...the Municipal Council shall he the successor of such local authority for all purpose...')",
+   "HTML transcription slip corrected to the 2024 PDF's reading (raw_text keeps the HTML): s.325 [paragraph f]: 'alt' -> 'all' (context: '...alt proclamations, orders, notifications, r...')",
+   "after reviewer pass: s.136A: definition of 'pollution' moved from inside subsection (2) to section level (print sets it after (2)(b) at the subsection margin, scoped 'for the purposes of this section')",
+   "after reviewer pass: s.230(1AB)(b): raw_text trimmed to the paragraph's own words; the parsed run (with (i) fused) kept in raw_text_as_parsed",
+   "after reviewer pass: s.327(1): definitions of 'Council', 'Mayor' and 'public' lifted out of the preceding definitions ('Commissioner of Local Government', 'Magistrate', 'proper officer') to be siblings under subsection (1), as printed"
+  ],
+  "removed_nodes": [
+   {
+    "reason": "duplicate 136B (first copy)",
+    "node": {
+     "type": "section",
+     "number": "136B",
+     "heading": "Power of the Mayor in regard to trees or branches, trunks or fruits of trees endangering the safety of person or property.",
+     "raw_text": "136B.",
+     "text": "",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": [
+      {
+       "type": "subsection",
+       "number": "1",
+       "raw_text": "(1) Where in any Municipal Council area any tree or any branch, trunk, fruit or other part of a tree is causing or is likely to cause damage to any building, or is in a condition dangerous to the occupants of any building, or to the safety of passers by along any public thoroughfare, the Mayor may, by a notice in writing served on the owner or occupier of the land on which such tree stands require such owner or occupier to tie up and make secure, or to cut down and remove such tree or the branch, trunk, fruit or other part of such tree within such time as may be specified in the notice.",
+       "text": "Where in any Municipal Council area any tree or any branch, trunk, fruit or other part of a tree is causing or is likely to cause damage to any building, or is in a condition dangerous to the occupants of any building, or to the safety of passers by along any public thoroughfare, the Mayor may, by a notice in writing served on the owner or occupier of the land on which such tree stands require such owner or occupier to tie up and make secure, or to cut down and remove such tree or the branch, trunk, fruit or other part of such tree within such time as may be specified in the notice.",
+       "amendment_events": [],
+       "cross_references": []
+      },
+      {
+       "type": "subsection",
+       "number": "2",
+       "raw_text": "(2) Every person on whom a notice is served under subsection (1), shall comply with the requirements of such notice within the time specified therein, and in the event of the refusal or neglect of such persons to comply with such requirements within such time, the Mayor or any officer or workman authorized in writing in that behalf by the Mayor, may enter upon the land referred to in such notice and do what such person was required to do by such notice, and the expenses thereby incurred may be recovered from such person as a debt due to the Council.\".",
+       "text": "Every person on whom a notice is served under subsection (1), shall comply with the requirements of such notice within the time specified therein, and in the event of the refusal or neglect of such persons to comply with such requirements within such time, the Mayor or any officer or workman authorized in writing in that behalf by the Mayor, may enter upon the land referred to in such notice and do what such person was required to do by such notice, and the expenses thereby incurred may be recovered from such person as a debt due to the Council.\".",
+       "amendment_events": [],
+       "cross_references": [
+        {
+         "kind": "internal",
+         "target_document": "Municipal Councils Ordinance",
+         "target_section": "136B",
+         "target_subsection": "1",
+         "verbatim": "under subsection (1)"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "pdf_cross_check": [
+   "5: identical after whitespace/quote/dash normalisation",
+   "13(3): identical after whitespace/quote/dash normalisation",
+   "14(2)(b): identical after whitespace/quote/dash normalisation",
+   "14(7): identical after whitespace/quote/dash normalisation",
+   "26(3): DIFFERS ratio=0.985 [[\"replace\", \"a\", \"(3)a\"]]",
+   "189: identical after whitespace/quote/dash normalisation",
+   "189 heading: identical after whitespace/quote/dash normalisation",
+   "215A: identical after whitespace/quote/dash normalisation",
+   "215B: identical after whitespace/quote/dash normalisation",
+   "230 1A-1C: DIFFERS ratio=0.000 [[\"delete\", \"in pursuance of the powers of a municipal council under subsection(1),any council may,with the sanction of the minister,impose different rates for different areas or parts of the municipality according to the services provided by such council for each such area or part.in pursuance of the powers under subsection(1)the council may impose a higher rate on premises used for business or commercial purposes.the council may,with the approval of the minister,exempt from the payment of rates all residential premises the annual value of which does not exceed an amount that may be determined by the council under paragraph(b).in determining the amount of the annual value of residential premises that may be exempted,the council shall have regard to the state of development of the municipality;the nature of the services and amenities provided by the council to residential premises with lesser annual values;the loss of revenue that may result from the grant of any exemption and the means proposed by the council to recover such loss.where any residential premises are exempted under the provisions of paragraph(b)the benefit of such exemption shall accrue to the occupier thereof.it shall be lawful for the minister to authorize the waiver of the whole or any part of the rates imposed by the council under this section in any past year and any costs incurred for the purpose of recovering those rates where-he is of the opinion that such rates have been imposed without the provision of adequate services;or he determines,with the approval of the government,that such waiver is just and equitable in all the circumstances of the case.where the minister has under subsection(ib)authorized the waiver of the whole or part of any rates imposed and any costs incurred,the council shall-where such rates and any costs incurred have been paid,set off such amount of the rates and costs waived,against future rates due on the property in respect of which such rates have been paid;where such rates and any costs incurred have not been paid,waive the amount of such rates and costs.no person shall have a right to a refund of such amount.\", \"\"]]",
+   "277 1A-1C: DIFFERS ratio=0.000 [[\"delete\", \"the minister shall,before making an order under subsection(1),appoint for the purpose of satisfying himself in regard to any of the matters referred to in subsection(i),a retired judicial officer to inquire into and report upon such matter within a period of three months,and the person so appointed shall in relation to such inquiry have the powers of a commission of inquiry appointed under the commissions of inquiry act.when the minister appoints a retired judicial officer under subsection(i a)to inquire into any matter the minister may,as the circumstances of each case may require,by order published in the gazette-suspend the mayor from office and direct the deputy mayor or,where the office of the deputy mayor is vacant or where the deputy mayor has been suspended from office,the municipal commissioner to exercise the powers and perform the duties of the mayor;or suspend any councillor from office;or suspend the council and direct the municipal commissioner to exercise the powers and duties of the council and its mayor.upon the receipt of the report of the person appointed under subsection(ia),the minister may make an order under subsection(1)or revoke the order made under paragraph(a)of this subsection.where the minister removes the mayor of a municipal council from office by order under subsection(1),the mayor shall also cease to be a councillor and the provisions of the local authorities elections ordinance shall thereupon apply with regard to the filling of such vacancy.\", \"\"]]"
+  ],
+  "reviewer_pass": {
+   "date": "2026-09-05",
+   "scope": "read-only subagent read ss.5, 13(3), 14(2),(7), 18, 19, 26(3), 71, 136A, 136B, 184(1A), 189, 215A, 215B, 230(1A-1C), 277(1A-1C), 325(3), 327 against pdftotext -layout of the 2024 PDF",
+   "findings_fixed": [
+    "s.136A: definition of 'pollution' moved from inside subsection (2) to section level (print sets it after (2)(b) at the subsection margin, scoped 'for the purposes of this section')",
+    "s.230(1AB)(b): raw_text trimmed to the paragraph's own words; the parsed run (with (i) fused) kept in raw_text_as_parsed",
+    "s.327(1): definitions of 'Council', 'Mayor' and 'public' lifted out of the preceding definitions ('Commissioner of Local Government', 'Magistrate', 'proper officer') to be siblings under subsection (1), as printed"
+   ],
+   "findings_left": [
+    "s.18 raw_text keeps the run-in 'Notice of meetings.' by design (raw_text is the print; text is corrected)",
+    "s.71(3): the print's footnote '[* Subsection 2 is repealed by Law No. 4 of 1975]' is in editorial_notes rather than in the subsection text; s.230(1): the parser kept one bracket note and dropped the '[* Application modified ... Rating and Valuation Ordinance.-See section 76 thereof]' note, which is in editorial_notes (the tree's editorial_notes carry that note only where it is anchored to ss.240, 242, 252, 254 and 272) -- inconsistent, left as parsed",
+    "s.184(1) closing text 'may. at his option' (HTML) where the PDF has 'may, at his option': punctuation only, left as printed in the HTML",
+    "s.230(1C) and s.277(1C): raw_text label reads '(Ic)' as the HTML prints it; the PDF prints '(IC)'"
+   ]
+  }
+ }
 }

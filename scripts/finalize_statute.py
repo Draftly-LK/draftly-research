@@ -14,20 +14,32 @@ can tell an accepted tree from a re-run of a since-changed source.
 
 Copies, never moves: the registry still points at the originals.
 
+Hashes follow `package_integrity.py`: PDFs and other binaries are hashed as
+stored (`hash_mode: bytes`); HTML, TXT, MD, CSV and JSON evidence is hashed
+with line endings folded to LF (`hash_mode: text-lf`), so a Windows checkout
+with `core.autocrlf=true` still verifies. `scripts/verify_finalized_packages.py`
+checks every package against its manifest.
+
     uv run python scripts/finalize_statute.py --source-id SRC021 \
         --slug 38-2014-land-restrictions-on-alienation-act \
         --amendment 3-2017 --amendment 21-2018
+
+    # package an already-accepted tree without regenerating it
+    uv run python scripts/finalize_statute.py --source-id SRC031 \
+        --slug 7-2007-companies-act --package-only
 """
 
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import re
 import shutil
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from package_integrity import file_entry  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 LIBRARY = REPO_ROOT / "data/legal-sources/library"
@@ -37,13 +49,38 @@ CANONICAL_STATUTES = REPO_ROOT / "data/processed/canonical-statutes"
 CANONICAL_AMENDMENTS = REPO_ROOT / "data/processed/canonical-amendments"
 
 
-def digest(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
-
-
 def copy(source: Path, target: Path) -> None:
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(source, target)
+
+
+def is_amending(tree: Path) -> bool:
+    try:
+        document = json.loads(tree.read_text(encoding="utf-8"))
+    except (ValueError, OSError):
+        return False
+    return document.get("instrument_role") == "amending" or "instrument_id" in document
+
+
+GENERATED_KEYS = {"statute", "source_id", "note", "status", "files"}
+GENERATED_FILE_KEYS = {"file", "role", "edition", "bytes", "sha256", "hash_mode", "copied_from", "used_for"}
+
+
+def read_previous_manifest(path: Path) -> dict:
+    """Hand-added manifest keys, and per-file extras keyed by file name."""
+    if not path.exists():
+        return {}
+    try:
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+    except (ValueError, OSError):
+        return {}
+    kept = {k: v for k, v in manifest.items() if k not in GENERATED_KEYS}
+    kept["files"] = {
+        entry["file"]: {k: v for k, v in entry.items() if k not in GENERATED_FILE_KEYS}
+        for entry in manifest.get("files", [])
+        if isinstance(entry, dict) and "file" in entry
+    }
+    return kept
 
 
 def main() -> int:
@@ -78,17 +115,47 @@ def main() -> int:
         ),
     )
     parser.add_argument("--statute-note", default="")
+    parser.add_argument(
+        "--package-only",
+        action="store_true",
+        help=(
+            "leave finalized/<slug>/ untouched and build finalized-sources/<slug>/ "
+            "from the trees already accepted there, reading each tree's "
+            "edition.local_path. For trees finished by hand after their canonical "
+            "parse, which a normal run would overwrite."
+        ),
+    )
     args = parser.parse_args()
-
-    trees = sorted(CANONICAL_STATUTES.glob(f"{args.source_id}-*.json"))
-    if not trees:
-        print(f"no canonical tree for {args.source_id}", file=sys.stderr)
-        return 1
 
     out_trees = FINALIZED / args.slug
     out_sources = FINALIZED_SOURCES / args.slug
+
+    if args.package_only:
+        trees = sorted(p for p in out_trees.glob("*.json") if not is_amending(p))
+        amending_trees = sorted(p for p in out_trees.glob("*.json") if is_amending(p))
+        if not trees:
+            print(f"no accepted tree under {out_trees.relative_to(REPO_ROOT)}", file=sys.stderr)
+            return 1
+        if args.amendment:
+            print(
+                "--amendment is not used with --package-only; amending trees are read from finalized/",
+                file=sys.stderr,
+            )
+            return 1
+    else:
+        amending_trees = []
+        trees = sorted(CANONICAL_STATUTES.glob(f"{args.source_id}-*.json"))
+        if not trees:
+            print(f"no canonical tree for {args.source_id}", file=sys.stderr)
+            return 1
+
     out_trees.mkdir(parents=True, exist_ok=True)
     out_sources.mkdir(parents=True, exist_ok=True)
+
+    # Keys added to the manifest by hand -- reconciliation tables, notes,
+    # retrieval URLs -- outlive a re-run. They are read back before the folder
+    # is cleared and written again unless this run supplies a replacement.
+    previous = read_previous_manifest(out_sources / "manifest.json")
     # Both folders are regenerated wholesale. Clearing them first is what stops a
     # source that has been dropped -- a truncated page replaced by a better one --
     # from sitting in the package indefinitely, still looking like evidence.
@@ -104,7 +171,8 @@ def main() -> int:
                 protected.add(existing.name)
         except (ValueError, OSError):
             pass
-    for stale in (*out_trees.iterdir(), *out_sources.iterdir()):
+    stale_dirs = (out_sources,) if args.package_only else (out_trees, out_sources)
+    for stale in (path for d in stale_dirs for path in d.iterdir()):
         if stale.is_file() and stale.name not in protected:
             stale.unlink()
 
@@ -126,49 +194,74 @@ def main() -> int:
             if kind in ("", "original", "as_enacted", "original_or_unconfirmed_consolidation")
             else f"-{kind}"
         )
-        copy(tree, out_trees / f"{args.slug}{suffix}.json")
+        tree_name = tree.name if args.package_only else f"{args.slug}{suffix}.json"
+        if not args.package_only:
+            copy(tree, out_trees / tree_name)
 
-        original = REPO_ROOT / document["edition"]["local_path"]
-        if original.exists():
+        local_path = document.get("edition", {}).get("local_path", "")
+        original = REPO_ROOT / local_path
+        if local_path and original.exists():
             name = f"{args.slug}{suffix}{original.suffix}"
             copy(original, out_sources / name)
             files.append(
-                {
-                    "file": name,
-                    "role": "principal statute",
-                    "edition": kind or "unstated",
-                    "bytes": original.stat().st_size,
-                    "sha256": digest(original),
-                    "copied_from": original.relative_to(REPO_ROOT).as_posix(),
-                    "used_for": f"parsed into {args.slug}{suffix}.json",
-                }
+                file_entry(
+                    original,
+                    REPO_ROOT,
+                    file=name,
+                    role="principal statute",
+                    edition=kind or "unstated",
+                    used_for=f"parsed into {tree_name}",
+                )
+            )
+        elif args.package_only:
+            print(
+                f"warning: {tree.name} names no readable edition.local_path; "
+                "its source is not in the package",
+                file=sys.stderr,
             )
 
+    amendment_jobs: list[tuple[str, Path, bool]] = []
     for instrument in args.amendment:
         tree = CANONICAL_AMENDMENTS / f"{instrument}.json"
         if not tree.exists():
             print(f"no canonical tree for amending Act {instrument}", file=sys.stderr)
             return 1
+        amendment_jobs.append((instrument, tree, True))
+    for tree in amending_trees:
+        parts = tree.stem.split("-", 2)
+        amendment_jobs.append((f"{parts[0]}-{parts[1]}", tree, False))
+
+    for instrument, tree, from_canonical in amendment_jobs:
         document = json.loads(tree.read_text(encoding="utf-8"))
         # Name the tree after the instrument, not after whatever the source file
         # happened to be called: the same Act reached through a PDF and through
         # HTML must not land here under two names.
-        stem = f"{instrument}-{args.slug.split('-', 2)[-1].removesuffix('-act')}-amendment"
-        if f"{stem}.json" not in protected:
+        stem = (
+            f"{instrument}-{args.slug.split('-', 2)[-1].removesuffix('-act')}-amendment"
+            if from_canonical
+            else tree.stem
+        )
+        if from_canonical and f"{stem}.json" not in protected:
             copy(tree, out_trees / f"{stem}.json")
 
-        original = REPO_ROOT / document["edition"]["local_path"]
+        local_path = document.get("edition", {}).get("local_path", "")
+        original = REPO_ROOT / local_path
+        if not local_path or not original.exists():
+            print(
+                f"warning: amending tree {tree.name} names no readable edition.local_path",
+                file=sys.stderr,
+            )
+            continue
         copy(original, out_sources / f"{stem}{original.suffix}")
         files.append(
-            {
-                "file": f"{stem}{original.suffix}",
-                "role": "amending Act",
-                "edition": document["edition"].get("kind", ""),
-                "bytes": original.stat().st_size,
-                "sha256": digest(original),
-                "copied_from": original.relative_to(REPO_ROOT).as_posix(),
-                "used_for": f"parsed into {stem}.json",
-            }
+            file_entry(
+                original,
+                REPO_ROOT,
+                file=f"{stem}{original.suffix}",
+                role="amending Act",
+                edition=document["edition"].get("kind", ""),
+                used_for=f"parsed into {stem}.json",
+            )
         )
         # An OCR sidecar is a reading of something. Carry the scan it was read
         # from, or the package documents a transcript with no original.
@@ -180,18 +273,17 @@ def main() -> int:
             if scan.exists():
                 copy(scan, out_sources / f"{stem}-scan{scan.suffix}")
                 files.append(
-                    {
-                        "file": f"{stem}-scan{scan.suffix}",
-                        "role": "amending Act",
-                        "edition": "as_enacted",
-                        "bytes": scan.stat().st_size,
-                        "sha256": digest(scan),
-                        "copied_from": scan.relative_to(REPO_ROOT).as_posix(),
-                        "used_for": (
+                    file_entry(
+                        scan,
+                        REPO_ROOT,
+                        file=f"{stem}-scan{scan.suffix}",
+                        role="amending Act",
+                        edition="as_enacted",
+                        used_for=(
                             f"image source of {stem}{original.suffix}; no text "
                             "layer, so it was not parsed directly"
                         ),
-                    }
+                    )
                 )
 
     # An instrument in the chain that no tree was built from is still part of the
@@ -207,15 +299,13 @@ def main() -> int:
             return 1
         copy(source, out_sources / source.name)
         files.append(
-            {
-                "file": source.name,
-                "role": "amending Act, held but not parsed",
-                "edition": "as_enacted",
-                "bytes": source.stat().st_size,
-                "sha256": digest(source),
-                "copied_from": source.relative_to(REPO_ROOT).as_posix(),
-                "used_for": why or "not parsed; no tree was built from it",
-            }
+            file_entry(
+                source,
+                REPO_ROOT,
+                role="amending Act, held but not parsed",
+                edition="as_enacted",
+                used_for=why or "not parsed; no tree was built from it",
+            )
         )
 
     # A second edition read only to settle what the parsed one got wrong is
@@ -231,15 +321,13 @@ def main() -> int:
             return 1
         copy(source, out_sources / source.name)
         files.append(
-            {
-                "file": source.name,
-                "role": "verification source, not parsed",
-                "edition": "",
-                "bytes": source.stat().st_size,
-                "sha256": digest(source),
-                "copied_from": source.relative_to(REPO_ROOT).as_posix(),
-                "used_for": why or "checked against; nothing here was parsed from it",
-            }
+            file_entry(
+                source,
+                REPO_ROOT,
+                role="verification source, not parsed",
+                edition="",
+                used_for=why or "checked against; nothing here was parsed from it",
+            )
         )
 
     manifest = {
@@ -253,6 +341,12 @@ def main() -> int:
         "status": "unverified until a lawyer signs it off",
         "files": files,
     }
+    for entry in files:
+        for key, value in previous.get("files", {}).get(entry["file"], {}).items():
+            entry.setdefault(key, value)
+    for key, value in previous.items():
+        if key not in manifest and key != "files":
+            manifest[key] = value
     if args.statute_note:
         manifest["statute_note"] = args.statute_note
     (out_sources / "manifest.json").write_text(

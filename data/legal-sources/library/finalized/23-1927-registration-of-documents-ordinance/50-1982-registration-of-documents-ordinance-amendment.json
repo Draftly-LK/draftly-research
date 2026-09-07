@@ -171,9 +171,9 @@
   {
    "type": "section",
    "number": "3",
-   "heading": "Amendment of section 35 of principal enactment. [§ 3, 50 of 1982]",
+   "heading": "Amendment of section 35 of principal enactment.",
    "raw_text": "3. Section 35 of the principal enactment is hereby amended by the repeal of subsection (1) of that section, and the substitution subsection:- \"(I) Where it is shown to the satisfaction of the Registrar-General that any error or omission has been made in registering any instrument, whether before or after the commencement of this Ordinance, the Registrar-General shall issue notice in writing in the prescribed form (a) in the case of a deed to the parties thereto; or",
-   "text": "Section 35 of the principal enactment is hereby amended by the repeal of subsection (1) of that section, and the substitution subsection:- \"(I) Where it is shown to the satisfaction of the Registrar-General that any error or omission has been made in registering any instrument, whether before or after the commencement of this Ordinance, the Registrar-General shall issue notice in writing in the prescribed form (a) in the case of a deed to the parties thereto; or",
+   "text": "Section 35 of the principal enactment is hereby amended by the repeal of subsection (1) of that section, and the substitution subsection:-",
    "amendment_events": [],
    "cross_references": [],
    "children": [
@@ -231,7 +231,23 @@
     ],
     "targets_principal_enactment": true,
     "basis": "heading"
-   }
+   },
+   "text_raw_parser": "Section 35 of the principal enactment is hereby amended by the repeal of subsection (1) of that section, and the substitution subsection:- \"(I) Where it is shown to the satisfaction of the Registrar-General that any error or omission has been made in registering any instrument, whether before or after the commencement of this Ordinance, the Registrar-General shall issue notice in writing in the prescribed form (a) in the case of a deed to the parties thereto; or",
+   "heading_raw": "Amendment of section 35 of principal enactment. [§ 3, 50 of 1982]",
+   "heading_note": "the marker '[ 3, 50 of 1982]' that followed the note in the HTML is an amendment marker, not part of the heading",
+   "text_note": "'and the substitution subsection:-' is as the LankaLaw page prints it (the word 'therefor of the following' is missing there); not supplied."
   }
- ]
+ ],
+ "quality_notes": [
+  "Corrected by hand on 2026-09-05: s.3's text no longer repeats its first child (the quoted substituted 35(1)); the section text is the enacting words only. Parser reading kept in text_raw_parser."
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "against": "the LankaLaw HTML page in edition.local_path",
+  "what_changed": [
+   "s.3 text de-duplicated; heading marker removed to heading_raw."
+  ],
+  "note": "Re-running the parser writes data/processed/canonical-amendments/<instrument>.json without these corrections; this accepted copy is protected by provenance.hand_corrected. Rebuild the package with finalize_statute.py --package-only."
+ }
 }

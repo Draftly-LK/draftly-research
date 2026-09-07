@@ -81,6 +81,14 @@
    ],
    "issue": "Both Acts are named in the amendment-chain header but neither has a corresponding bracketed inline marker anywhere in the body text (checked by direct search of the source HTML), unlike the other four chain entries (42 of 1958, 36 of 1966, 9 of 1978, 49 of 1981), which are all marked. Consistent with either the chain-marking scheme genuinely omitting these two, or their changes having been fully superseded by later amendments to the same provisions.",
    "status": "unresolved_no_second_source"
+  },
+  {
+   "code": "validator_external_reference_false_positive",
+   "sections_affected": [
+    "56"
+   ],
+   "issue": "Section 56 reads 'sections 120 to 127 (both inclusive) of the Land Development Ordinance'. Recorded in cross_references as external references to the Land Development Ordinance. scripts/validate_finalized_trees.py decides internal-vs-external by a `scope`/`target_statute` key this parser does not write; it does not read `kind: external` or `target_document`, so these references to another enactment are reported as internal references beyond the last section. The tree records them as external, which is what the source says. No change to the text.",
+   "status": "documented_validator_warning"
   }
  ],
  "source_location": {},
@@ -6167,5 +6175,13 @@
     }
    ]
   }
- ]
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "what_changed": [
+   "quality_flags: added `validator_external_reference_false_positive` for s.56 (no text changed)"
+  ],
+  "corrected_by": "finalization worker, September 2026 packaging pass",
+  "basis": "packaging pass; documentation only, body untouched"
+ }
 }

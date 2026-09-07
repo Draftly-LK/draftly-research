@@ -24,10 +24,12 @@
  "enacting_formula": "NOW THEREFORE be it enacted by the Parliament of the Democratic Socialist Republic of Sri Lanka as follows:-",
  "language": "en",
  "edition": {
-  "publisher": "Government Printer, Sri Lanka (consolidated reprint, 2024)",
+  "publisher": "not stated",
   "kind": "consolidated",
   "local_path": "data/legal-sources/library/statutes/38-2014-land-restrictions-on-alienation-act-consolidated-2024.pdf",
-  "caveat": "parsed from a two-column PDF"
+  "caveat": "parsed from a two-column PDF",
+  "publisher_as_recorded_by_override": "Government Printer, Sri Lanka (consolidated reprint, 2024)",
+  "publisher_note": "The PDF carries no imprint, cover or publisher line. Its metadata title is 'Land (Restrictions on Alienation) - Consolidated 2024' and it was produced with Apple Pages (macOS 13.4.1 Quartz PDFContext). The registry says it was supplied by the team. The earlier attribution to the Government Printer is not supported by anything printed in the document."
  },
  "amendments": [
   {
@@ -2302,5 +2304,14 @@
     }
    ]
   }
- ]
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "what_changed": [
+   "edition.publisher: 'Government Printer, Sri Lanka (consolidated reprint, 2024)' -> 'not stated' (publisher_as_recorded_by_override keeps the earlier value; see publisher_note)"
+  ],
+  "against": "the consolidated 2024 PDF itself (pdfinfo and pdftotext, poppler): no imprint on any of its 16 pages",
+  "note": "Re-running parse_consolidated_pdf.py writes data/processed/canonical-statutes/SRC021-38-2014.json, not this file."
+ }
 }

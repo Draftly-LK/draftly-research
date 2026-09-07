@@ -1,0 +1,105 @@
+{
+ "statute": "Surveyors Ordinance",
+ "source_id": "SRC040",
+ "note": "Every source actually used to build the canonical trees in library/finalized/15-1889-surveyors-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "15-1889-surveyors-ordinance-consolidated.pdf",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 92163,
+   "sha256": "1384c53d2599d13668c4ece95b2bc0436ffca6f2f0dabff3835ee5bdc42a6fc0",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/15-1889-surveyors-ordinance.pdf",
+   "used_for": "parsed into 15-1889-surveyors-ordinance-consolidated.json"
+  },
+  {
+   "file": "28-1950-surveyers-amendment.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 3987219,
+   "sha256": "6369f2b68ae5d148f53dda44b01a7cdc73f559cdba31251db4665ac3a05da446",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/28-1950-surveyers-amendment.pdf",
+   "used_for": "Surveyors (Amendment) Act, No. 28 of 1950 (title page read; filename spells 'surveyers'). Scan with no text layer. It is the last instrument in the baseline's printed chain header, so its operations are already incorporated in the consolidated text; held for provenance, not parsed"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "15-1889-surveyors-ordinance-consolidated.pdf",
+  "tree": "15-1889-surveyors-ordinance-consolidated.json",
+  "edition": "consolidated",
+  "publisher": "not stated on the document; LankaLaw (private republisher) per the registry URL lankalaw.net/wp-content/uploads/2024/03/s123217.pdf; text-layer PDF with real fonts, no page images, 7 pages, Cap. 123, pages VI/127 to VI/133",
+  "consolidation_cutoff": "Act No. 28 of 1950",
+  "cutoff_evidence": "page 1 chain header: 'Ordinances Nos. 15 of 1889, 8 of 1897, 10 of 1908, 26 of 1909, 28 of 1916, 20 of 1930, Act No. 28 of 1950.' followed by the head date '[31st October, 1889.]'. No section carries an inline marker.",
+  "decision": "Only one copy of the statute is held (no HTML edition, no compendium copy, the registry's markdown path is not on disk). The PDF was parsed deterministically with parse_consolidated_pdf.py from PowerShell; its direct pass interleaved the two body columns (15 sections, 13.56% unmatched), so the page was re-laid to one column from the poppler word coordinates and fed back through --ocr-text (four passes, see the tree's provenance.parser_passes). The remaining five structural defects were corrected by hand against the print and are listed in provenance.what_changed with the parser reading kept in raw_text. Coverage of the re-laid body text: 1.47% unmatched, every word being the chain header, long title, head date or the 'Penalty' marginal note beside s.13(2). Schedules A and B transcribed by hand."
+ },
+ "repeal_status": "Repealed by the Survey Act, No. 17 of 2002 (registry note; Survey Act s.25 in library/finalized/17-2002-survey-act). Held as the pre-repeal consolidated text for historical reference; nothing in this package is current law.",
+ "amendment_reconciliation": [
+  {
+   "instrument": "8-1897",
+   "title": "Ordinance No. 8 of 1897 (title not held; named only in the chain header)",
+   "classification": "known_but_not_held",
+   "reason": "named in the page-1 chain header of the baseline, so its operations are already folded into the consolidated text; the instrument's own text is in no held archive (pre-1956 Ordinance; the download report lists it as not in the Act archive and not published as HTML)",
+   "source_path": null,
+   "held": false,
+   "already_incorporated_in_baseline": true
+  },
+  {
+   "instrument": "10-1908",
+   "title": "Ordinance No. 10 of 1908 (title not held; named only in the chain header)",
+   "classification": "known_but_not_held",
+   "reason": "named in the page-1 chain header of the baseline, so its operations are already folded into the consolidated text; the instrument's own text is in no held archive (pre-1956 Ordinance; the download report lists it as not in the Act archive and not published as HTML)",
+   "source_path": null,
+   "held": false,
+   "already_incorporated_in_baseline": true
+  },
+  {
+   "instrument": "26-1909",
+   "title": "Ordinance No. 26 of 1909 (title not held; named only in the chain header)",
+   "classification": "known_but_not_held",
+   "reason": "named in the page-1 chain header of the baseline, so its operations are already folded into the consolidated text; the instrument's own text is in no held archive (pre-1956 Ordinance; the download report lists it as not in the Act archive and not published as HTML)",
+   "source_path": null,
+   "held": false,
+   "already_incorporated_in_baseline": true
+  },
+  {
+   "instrument": "28-1916",
+   "title": "Ordinance No. 28 of 1916 (title not held; named only in the chain header)",
+   "classification": "known_but_not_held",
+   "reason": "named in the page-1 chain header of the baseline, so its operations are already folded into the consolidated text; the instrument's own text is in no held archive (pre-1956 Ordinance; the download report lists it as not in the Act archive and not published as HTML)",
+   "source_path": null,
+   "held": false,
+   "already_incorporated_in_baseline": true
+  },
+  {
+   "instrument": "20-1930",
+   "title": "Ordinance No. 20 of 1930 (title not held; named only in the chain header)",
+   "classification": "known_but_not_held",
+   "reason": "named in the page-1 chain header of the baseline, so its operations are already folded into the consolidated text; the instrument's own text is in no held archive (pre-1956 Ordinance; the download report lists it as not in the Act archive and not published as HTML)",
+   "source_path": null,
+   "held": false,
+   "already_incorporated_in_baseline": true
+  },
+  {
+   "instrument": "28-1950",
+   "title": "Surveyors (Amendment) Act, No. 28 of 1950 (title page read: 'Parliament of Ceylon, 4th Session 1950 ... Date of Assent: October 20, 1950')",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "last instrument in the baseline's chain header ('Act No. 28 of 1950'); held as a 3-page scan with no text layer under a misspelt filename (surveyers); not parsed and not applied, since the consolidated text already incorporates it",
+   "source_path": "data/legal-sources/library/amendments/28-1950-surveyers-amendment.pdf",
+   "held": true
+  },
+  {
+   "instrument": "17-2002",
+   "title": "Survey Act, No. 17 of 2002 (repealing Act, not an amendment)",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "repeals the Surveyors Ordinance (registry note; Survey Act s.25). Not an amending instrument and not part of this package; the Survey Act has its own package under library/finalized-sources/17-2002-survey-act. Recorded here so the repeal is not lost.",
+   "source_path": "data/legal-sources/library/finalized/17-2002-survey-act/17-2002-survey-act.json",
+   "held": true
+  }
+ ],
+ "source_conflicts": [],
+ "statute_note": "PRINCIPAL SOURCE SELECTED: the LankaLaw consolidated PDF (statutes/15-1889-surveyors-ordinance.pdf, 7 pages, text layer, Cap. 123, chain to Act No. 28 of 1950), the only copy of the Ordinance held; parsed with parse_consolidated_pdf.py from PowerShell after re-laying each two-column page to one column from word coordinates, then hand-corrected; tree 15-1889-surveyors-ordinance-consolidated.json, 18 sections (1-16, 18, 19) plus Schedules A and B. OTHER SOURCES INSPECTED: amendments/28-1950-surveyers-amendment.pdf (scan; title page read, carried as a held amendment); statutes/parsed/15-1889-surveyors-ordinance.json (old LLM extraction, comparison only, not used); the registry's markdown path (not on disk); no HTML edition exists. The Survey Act, No. 17 of 2002 (amendments/17-2002-survey.pdf and its HTML) is the repealing Act, not an amendment, and is not in this package. CONSOLIDATION CUTOFF: Act No. 28 of 1950, from the page-1 chain header quoted in baseline.cutoff_evidence. REVIEW PERFORMED: four parser passes (provenance.parser_passes) with the coverage check as the stopping rule, then every section read word for word against pdftotext -layout and, for the two typographic oddities, against pdftoppm renders of pages 2 and 4; five structural defects fixed by hand (s.8(1)(a) split out, s.8(4) phantom subsection merged, s.9(2) restored, s.11(1)(b) split out, 'Surveyor- General' rejoined), listed in provenance.what_changed with the parser reading kept in raw_text. No five-lens subagent rounds were run. Coverage of the body: 1.47% unmatched, all accounted for. AMENDMENT COVERAGE: six chain instruments each have a reconciliation row; five pre-1956 Ordinances are known_but_not_held and already folded into the text; Act 28 of 1950 is held as a scan and already incorporated. Nothing was applied to the baseline by hand. The print carries no inline amendment markers. OCR OR STRUCTURAL WEAKNESSES: no OCR was used. The republisher omits section 17 ('* Section 17 is omitted, as the references therein are to lapsed or repealed enactments.') and its text is in no held source. Sixteen transcription artefacts in the print are kept as printed and listed in quality_flags ('dale' for 'date', 'Cooper's Hilt', 'IS Still in force ; Or', stray hyphens and commas). The marginal note 'Penalty' beside s.13(2) has no node to attach to. The section index lists 17 sections from a legacy extraction; the print has 18. MISSING SOURCES: Ordinances 8 of 1897, 10 of 1908, 26 of 1909, 28 of 1916, 20 of 1930; the text of section 17; a Government Printer edition. UNRESOLVED QUESTIONS: (1) the Ordinance is repealed by the Survey Act, No. 17 of 2002; this package is pre-repeal text only. (2) The commencement 1889-10-31 rests on the bracketed head date alone; statute_commencement.csv has no row. (3) Whether the small-capitals 'IS Still in force ; Or' in s.11(1)(a) is a typographic artefact of the republisher. LAWYER VERIFICATION: unverified. The tree carries verification_status unverified.",
+ "lawyer_verification": "unverified"
+}

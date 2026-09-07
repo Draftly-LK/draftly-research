@@ -10,18 +10,69 @@
    "edition": "consolidated",
    "bytes": 26781,
    "sha256": "1e1a236b02dafbc3115c8fbf672a5fb21f2942c73e37a913461de708799641bd",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/4-1887-lands-resumption-ordinance.html",
    "used_for": "parsed into 4-1887-lands-resumption-ordinance-consolidated.json"
   },
   {
-   "file": "4-1887-lands-resumption-ordinance.html",
+   "file": "22-1955-administrative-districts.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 18987580,
+   "sha256": "068d0ab2ae144da440033f0b2ba0da3882f32abdb677883051ad6a00a8dcea45",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/22-1955-administrative-districts.pdf",
+   "used_for": "Government Printer scan, 10 pp, no text layer; title page read: Administrative Districts Act, No. 22 of 1955, Date of Assent April 14, 1955. Named in the chain header of both consolidated editions, so already incorporated in the baseline. Its Second Schedule (pp. 9-11) does not name this Ordinance; its effect here runs through s.7 (construction of references to Government Agents of Provinces and to revenue districts). Not parsed"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-3.pdf",
    "role": "verification source, not parsed",
    "edition": "",
-   "bytes": 26781,
-   "sha256": "1e1a236b02dafbc3115c8fbf672a5fb21f2942c73e37a913461de708799641bd",
-   "copied_from": "data/legal-sources/library/statutes/HTML/4-1887-lands-resumption-ordinance.html",
-   "used_for": "2-agent exhaustive review (short statute), clean except one already-documented source typo"
+   "bytes": 26631560,
+   "sha256": "a2bcc592deac8abcd04d69584b34a3ab8146e75f7e51cb335b30656f7603c58c",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-3.pdf",
+   "used_for": "1980 revised edition, Vol. III Cap. 290 (PDF pp. 398-400); chain header 'Ordinances Nos. 4 of 1887, 2 of 1934, 57 of 1942, Act No. 22 of 1955. [24th January, 1887.]'; all 17 sections checked against the tree by word-level coverage (7.59% unmatched, residue: front matter, running headers, letter-spaced OCR noise, 'wilfully' spelling now corrected, head-date misprint now corrected)"
   }
  ],
- "statute_note": "Parsed from a dedicated LankaLaw HTML page rather than the registry's shared Legislative Enactments 1980 Volume 3 compendium PDF. 17 sections. One residue: the source's own date_stated_in_source reads 1987 instead of 1887 (a hundred-year source typo); the separately-sourced commencement field is correct."
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "4-1887-lands-resumption-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Act No. 22 of 1955",
+  "cutoff_evidence": "HTML chain header reads 'Ordinance Nos, 4 of 1887 2 of 1934 57 of 1942 Act Nos, 22 of 1955 [24th January, 1987]' (the head date is a misprint for 1887); the 1980 revised edition (Vol. III Cap. 290, PDF p. 398) reads 'Ordinances Nos. 4 of 1887, 2 of 1934, 57 of 1942, Act No. 22 of 1955. [24th January, 1887.]'. No inline markers."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "2-1934",
+   "title": "Ordinance No. 2 of 1934 (title not held; named only in the chain headers)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header of both held consolidated editions; own text not held (download report: not in the parliamentary archive; LankaLaw: not published as HTML)",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "57-1942",
+   "title": "Ordinance No. 57 of 1942 (title not held; named only in the chain headers)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "as for 2 of 1934",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "22-1955",
+   "title": "Administrative Districts Act, No. 22 of 1955",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Government Printer scan (10 pp, no text layer); title page read: 'Administrative Districts Act, No. 22 of 1955, Date of Assent: April 14, 1955'. Named as the last instrument in the chain header of both consolidated editions, so its effect is already in the text. The download report rejected the number-year pairing as a collision because the Act is an omnibus one; the title page and both chain headers confirm it. Its Second Schedule (pp. 9-11) lists eight written laws and does not name this Ordinance, so its effect here runs through s.7 (construction of references to Government Agents of Provinces and to revenue districts). Not parsed; nothing to apply",
+   "source_path": "data/legal-sources/library/amendments/22-1955-administrative-districts.pdf",
+   "held": true
+  }
+ ],
+ "source_conflicts": [
+  "Head date: HTML '24th January, 1987' vs print '24th January, 1887'. Corrected in the tree from the print; HTML reading kept in date_stated_in_source_raw.",
+  "Spelling: HTML 'willfully' (ss. 11, 12, 14 x2) vs print 'wilfully' at the same sites. Print spelling used; recorded in the tree's provenance."
+ ],
+ "statute_note": "Principal source selected: LankaLaw consolidated HTML (statutes/HTML/4-1887-lands-resumption-ordinance.html), chain to Act No. 22 of 1955; byte-identical to the canonical parse SRC079-4-1887.json before this pass's hand corrections. Other sources inspected: Legislative Enactments 1980 Vol. III Cap. 290 (registry PDF, text layer, PDF pp. 398-400), verification source, carried in the package; Government Printer scan of the Administrative Districts Act, No. 22 of 1955 (all 10 pages rendered and read), carried as a held amendment. Nothing is held for Ordinances 2 of 1934 and 57 of 1942. Consolidation cutoff: Act No. 22 of 1955 (both editions). Review performed: one worker; section list (1-17) and chain header compared with the Cap. 290 print; word-level coverage of the tree against the Cap. 290 text (1805 words, 137 unmatched = 7.59%, of which the real words are the front matter, running headers 'LANDS RESUMPTION', 'wilfully' x4 (now corrected) and letter-spaced OCR noise); an earlier two-agent read of the HTML is recorded in the previous manifest. Headings were not read one by one against the print; no Step 7 subagent rounds. Amendment coverage: 3 reconciliation rows, all already in the baseline; nothing applied. The HTML carries no inline markers, so which sections 2/1934, 57/1942 and 22/1955 touched cannot be stated from the held sources. OCR or structural weaknesses: none from OCR; the compendium text layer is letter-spaced in places. Missing sources: the texts of Ordinances 2 of 1934 and 57 of 1942. Unresolved questions: the download report's collision note for 22-1955 should be updated so the RUBRIK stops reporting the Act as 'not read'. Lawyer verification: unverified.",
+ "lawyer_verification": "unverified"
 }

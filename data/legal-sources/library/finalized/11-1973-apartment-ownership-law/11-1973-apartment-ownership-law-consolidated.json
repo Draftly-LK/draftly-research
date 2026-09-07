@@ -45,8 +45,21 @@
  "verification_status": "unverified",
  "content_completeness": "",
  "amendment_history_status": "listed_in_source_header",
- "editorial_notes": [],
- "omitted_provisions": [],
+ "editorial_notes": [
+  "Section 22 is a numbering gap in this edition by design: the source prints under section 23 the note '(*Section 22, repealing the Condominium Property Act, No. 12 of 1970, is omitted from this Edition.)'. The as-enacted text of section 22 is in 11-1973-apartment-ownership-law.json.",
+  "Section 20M: the source runs paragraph (a) into the section's opening sentence and the parser kept both the run-in and the paragraph node; the words are printed once in the source. Left as parsed and recorded here.",
+  "Consolidation cutoff: chain header 'Law Nos, 11 of 1973 Act Nos, 45 of 1982 4 of 1999 27 of 2002 39 of 2003'; latest inline marker is 39 of 2003 (e.g. '[ 41,39 of 2003]'). No inline marker cites 27 of 2002; that Act amends the Apartment Ownership (Special Provisions) Act, No. 4 of 1999 (its section 3) and not the text of this Law, which is why the chain lists it and the body does not.",
+  "Apartment Ownership (Special Provisions) Act, No. 23 of 2018 (registry SRC013) post-dates this edition and is not in the chain; read in full from the Government Printer PDF: it contains no operation on the text of this Law (see the package manifest)."
+ ],
+ "omitted_provisions": [
+  {
+   "section": "22",
+   "status": "omitted_by_source_edition",
+   "source_note_verbatim": "(*Section 22, repealing the Condominium Property Act, No. 12 of 1970, is omitted from this Edition.)",
+   "where": "footnote printed under section 23 in the LankaLaw HTML edition",
+   "as_enacted_text": "22. The Condominium Property Act, No. 12 of 1970, is hereby repealed. (from the 1973 as-enacted PDF in this folder)"
+  }
+ ],
  "overrides_applied": {},
  "quality_flags": [],
  "source_location": {},
@@ -7112,5 +7125,12 @@
     }
    ]
   }
- ]
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "what_changed": "no text changed; omitted_provisions and editorial_notes added to record the section 22 gap, the 20M run-in, the cutoff evidence and the 27 of 2002 / 23 of 2018 position.",
+  "checked_against": "data/legal-sources/library/statutes/HTML/11-1973-apartment-ownership-law.html (chain header, inline markers, footnote under section 23), read 2026-09-05",
+  "corrected_on": "2026-09-05",
+  "corrected_by": "finalization worker (pipeline pass); lawyer-unverified"
+ }
 }

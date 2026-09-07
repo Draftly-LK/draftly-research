@@ -1,75 +1,166 @@
 {
- "statute": "Apartment Ownership Law, No. 11 of 1973",
+ "statute": "Apartment Ownership Law",
  "source_id": "SRC012",
  "note": "Every source actually used to build the canonical trees in library/finalized/11-1973-apartment-ownership-law. Copies, not moves; the originals stay where the registry points.",
- "not_included": [
-  {
-   "what": "Amendment PDFs from the parliamentary Act archive",
-   "where": "data/legal-sources/library/amendments/incoming/",
-   "why": "Not used. They are image scans with no text layer, two of them 84 MB and 105 MB, and the amending Acts were parsed from the HTML instead."
-  }
- ],
- "status": "unverified. LankaLaw is a private republisher, not the Government Printer.",
+ "status": "unverified until a lawyer signs it off",
  "files": [
+  {
+   "file": "11-1973-apartment-ownership-law-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 379038,
+   "sha256": "a9d158f45a988ef472b4920ed65125bc22e58fdc9ee43e44a7f7ef900c20bd36",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/11-1973-apartment-ownership-law.html",
+   "used_for": "parsed into 11-1973-apartment-ownership-law-consolidated.json",
+   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y4V83C-1.html"
+  },
   {
    "file": "11-1973-apartment-ownership-law.pdf",
    "role": "principal statute",
    "edition": "original",
    "bytes": 165747,
    "sha256": "e51bab3e7672a992bc566d15a90c23d36ba9cfa141e663db4b1976dbe57cd061",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/statutes/sandbox/apartment-ownership-law-11-1973.pdf",
-   "retrieved_from": "https://www.ccisrilanka.org/wp-content/uploads/2021/04/Apartment-Ownership-Law-No-11-of-1973.pdf",
-   "used_for": "yes: parsed by scripts/parse_consolidated_pdf.py --edition original"
-  },
-  {
-   "file": "11-1973-apartment-ownership-law-consolidated.html",
-   "role": "principal statute",
-   "edition": "consolidated to 1981 revised edition, amended to 2003",
-   "bytes": 389222,
-   "sha256": "0476708b284d51e548974f378ac36a527e25ac495a40ee10e6a6147a9afc4d39",
-   "copied_from": "data/legal-sources/library/statutes/HTML/11-1973-apartment-ownership-law.html",
-   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y4V83C-1.html",
-   "used_for": "yes: parsed by scripts/build_canonical_statutes.py"
-  },
-  {
-   "file": "45-1982-apartment-ownership-amendment.html",
-   "role": "amending Act",
-   "edition": "as enacted",
-   "bytes": 201232,
-   "sha256": "a3be9fe75932fe6ad18028f59242e0e7bfc696f1b3bc03d281d2ca2f1dc33299",
-   "copied_from": "data/legal-sources/library/amendments/html/45-1982-apartment-ownership-amendment.html",
-   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/03/1982Y0V0C45A.html",
-   "used_for": "yes: parsed by scripts/build_canonical_amendments.py"
-  },
-  {
-   "file": "4-1999-apartment-ownership-amendment.html",
-   "role": "amending Act",
-   "edition": "as enacted",
-   "bytes": 14675,
-   "sha256": "7b64450466da1caf2db1211cc2617d45dacca64aa50e73294f0d1a2c86b576d8",
-   "copied_from": "data/legal-sources/library/amendments/html/4-1999-apartment-ownership-special-provisions.html",
-   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/02/1999Y0V0C4A.html",
-   "used_for": "yes: parsed by scripts/build_canonical_amendments.py"
+   "used_for": "parsed into 11-1973-apartment-ownership-law.json",
+   "retrieved_from": "https://www.ccisrilanka.org/wp-content/uploads/2021/04/Apartment-Ownership-Law-No-11-of-1973.pdf"
   },
   {
    "file": "27-2002-apartment-ownership-amendment.html",
    "role": "amending Act",
-   "edition": "as enacted",
-   "bytes": 8484,
-   "sha256": "4d07943d8554e3a45524bffd903283731503764adcb5bd6c0e53e5055429c103",
+   "edition": "as_enacted",
+   "bytes": 8265,
+   "sha256": "cd4e29d5ba64b626231fab99afd86b58f64816a5d53bf5e0c3962cb64cf4b55d",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/amendments/html/27-2002-apartment-ownership-special-provisions.html",
-   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/03/2002Y0V0C27A.html",
-   "used_for": "yes: parsed by scripts/build_canonical_amendments.py"
+   "used_for": "parsed into 27-2002-apartment-ownership-amendment.json",
+   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/03/2002Y0V0C27A.html"
   },
   {
    "file": "39-2003-apartment-ownership-amendment.html",
    "role": "amending Act",
-   "edition": "as enacted",
-   "bytes": 281233,
-   "sha256": "bc9025140239645daff59defb7ebf601910dd8ff1ceb0759d3b09d50e1ec0990",
+   "edition": "as_enacted",
+   "bytes": 273981,
+   "sha256": "8e06050c2322f00b32661389027c27a2e1e55d876f9a0892c09a10dd05c44c01",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/amendments/html/39-2003-apartment-ownership-amendment.html",
-   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/03/2003Y0V0C39A.html",
-   "used_for": "yes: parsed by scripts/build_canonical_amendments.py"
+   "used_for": "parsed into 39-2003-apartment-ownership-amendment.json",
+   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/03/2003Y0V0C39A.html"
+  },
+  {
+   "file": "4-1999-apartment-ownership-amendment.html",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 14307,
+   "sha256": "0125d18329d67bee0224c6f4d59b793aa192047acd7142829460e3165d75ece0",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/html/4-1999-apartment-ownership-special-provisions.html",
+   "used_for": "parsed into 4-1999-apartment-ownership-amendment.json",
+   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/02/1999Y0V0C4A.html"
+  },
+  {
+   "file": "45-1982-apartment-ownership-amendment.html",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 195943,
+   "sha256": "0651e172b8e2ca5f8d21188ded6677d5dfbf9ede11ed18d48c0f34a7507aa8ac",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/html/45-1982-apartment-ownership-amendment.html",
+   "used_for": "parsed into 45-1982-apartment-ownership-amendment.json",
+   "retrieved_from": "https://lankalaw.net/wp-content/uploads/2025/03/1982Y0V0C45A.html"
+  },
+  {
+   "file": "23-2018-apartment-ownership-special-provisions-act.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 156070,
+   "sha256": "587d5b36757a94ca589b45fb6f0ccab9f3d72c018da3a1583e315994db6e3d88",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/23-2018-apartment-ownership-special-provisions-act.pdf",
+   "used_for": "read in full from the Government Printer text layer (5 sections); a standalone Act that registers certain State-owned condominium properties under section 6 of the Law for five years and contains no operation on the text of the Law, so nothing was applied; canonical parse at data/processed/canonical-amendments/23-2018.json is regenerated output, not accepted here"
+  },
+  {
+   "file": "4-1999-apartment-ownership-law-amendment.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 19088,
+   "sha256": "53b96f5e6140b69f91a097f99a910f46e3d802ced4a26a5326b2bcdb28166eae",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/incoming/4-1999-apartment-ownership-law-amendment.pdf",
+   "used_for": "Government Printer PDF of Act No. 4 of 1999 (text layer, certified 10th March 1999) read in full against the HTML-derived tree; settled that the LankaLaw page prints section 3 as substituted by Act No. 27 of 2002, and supplied the as-enacted reading now in the tree"
   }
- ]
+ ],
+ "not_included": [
+  {
+   "what": "Parliamentary Act archive scans of Acts No. 27 of 2002, 45 of 1982 and 39 of 2003",
+   "where": "data/legal-sources/library/amendments/incoming/",
+   "why": "Not used. Image scans with no text layer (pdftotext returns nothing); 4 pp. / 1.2 MB, 51 pp. / 84 MB and 76 pp. / 105 MB. The amending Acts were parsed from the LankaLaw HTML instead. The fourth archive file, Act No. 4 of 1999, has a text layer and is included as a verification source."
+  },
+  {
+   "what": "Regenerated parse of Act No. 23 of 2018",
+   "where": "data/processed/canonical-amendments/23-2018.json",
+   "why": "Not accepted. The Act makes no textual amendment to the Law (0 amending instructions); the parser also bled marginal notes into the body of four sections. The Government Printer PDF itself is in the package."
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "11-1973-apartment-ownership-law-consolidated.html",
+  "tree": "11-1973-apartment-ownership-law-consolidated.json",
+  "edition": "consolidated",
+  "publisher": "not stated (LankaLaw, private republisher; page id 1981Y4V83C-1 = 1981 revised edition, volume 4, chapter 83)",
+  "consolidation_cutoff": "Act No. 39 of 2003",
+  "cutoff_evidence": "Chain header: 'Law Nos, 11 of 1973 Act Nos, 45 of 1982 4 of 1999 27 of 2002 39 of 2003 [ 20 th March , 1973 ]'. Latest inline markers: '[ 41,39 of 2003]' (section 26 definitions), '[ 40,39 of 2003]' (section 20Q). No marker cites 27 of 2002.",
+  "secondary_tree": {
+   "file": "11-1973-apartment-ownership-law.pdf",
+   "tree": "11-1973-apartment-ownership-law.json",
+   "edition": "as_enacted",
+   "publisher": "not stated (republished by CCI Sri Lanka)",
+   "consolidation_cutoff": "none: the Law as enacted, 1973 (26 sections)",
+   "cutoff_evidence": "Head reads 'A LAW TO PROVIDE FOR THE REGISTRATION OF MULTISTOREYED PROPERTIES ... TO REPEAL THE CONDOMINIUM PROPERTY ACT, NO. 12 OF 1970 ...' with no amendment chain and no inline markers; section 22 (repeal) present."
+  }
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "45-1982",
+   "title": "Apartment Ownership (Amendment) Act, No. 45 of 1982 -- 'AN ACT TO AMEND THE APARTMENT OWNERSHIP LAW.' (LankaLaw HTML; the archive PDF is an image scan whose title page could not be read)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "First Act in the chain header; 38 inline markers '[ n,45 of 1982]' (n = 3 to 12) in the HTML body; its own 13 sections (long title, sections 2, 5, 7A, 9, 11A, 12, 13, 15-20, 21, 26, Schedules) match those markers. Held as HTML with a tree in this folder; nothing applied a second time.",
+   "source_path": "data/legal-sources/library/amendments/html/45-1982-apartment-ownership-amendment.html",
+   "scan_not_read": "data/legal-sources/library/amendments/incoming/45-1982-apartment-ownership-law-amendment.pdf (84 MB, no text layer)"
+  },
+  {
+   "instrument": "4-1999",
+   "title": "APARTMENT OWNERSHIP (SPECIAL PROVISIONS) ACT, NO.4 OF 1999 [Certified on 10th March, 1999] -- 'AN ACT TO FACILITATE THE REGISTRATION OF PLANS OF CERTAIN CONDOMINIUM PROPERTIES ... AND TO AMEND THE APARTMENT OWNERSHIP LAW NO. 11 OF 1973'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "In the chain header; markers '[ 4,4 of 1999]' on section 3 and '[ 5,4 of 1999]' on the section 26 definition of 'Condominium Plan' match its sections 4 and 5; its section 6 (by-law 2(dd) of the Second Schedule) cannot be seen in the baseline because the HTML prints no Schedule bodies. Own text held twice: LankaLaw HTML (parsed; prints section 3 as later substituted by 27 of 2002) and the Government Printer PDF (verification source; as-enacted reading restored in the tree). Nothing applied a second time.",
+   "source_path": "data/legal-sources/library/amendments/html/4-1999-apartment-ownership-special-provisions.html",
+   "verification_source": "data/legal-sources/library/amendments/incoming/4-1999-apartment-ownership-law-amendment.pdf"
+  },
+  {
+   "instrument": "27-2002",
+   "title": "Apartment Ownership (Special Provisions) (Amendment) Act, No. 27 of 2002 -- 'AN ACT TO AMEND THE APARTMENT OWNERSHIP (SPECIAL PROVISIONS) ACT, NO, 4 OF 1999' (LankaLaw HTML; the archive PDF is an image scan whose title page could not be read)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Listed in the chain header but carries no inline marker in the Law's body, and rightly so: its only operations replace section 3 of Act No. 4 of 1999 (Part I of that Act to run until December 31, 2003, retrospective to March 10, 2001) and validate registrations made meanwhile. It does not touch the text of the Law. Its tree in this folder had amends = {} (validator hard error); set by hand to Act No. 4 of 1999 with provenance.hand_corrected. The 4 of 1999 tree's section 3 records the substitution as an amendment_event.",
+   "source_path": "data/legal-sources/library/amendments/html/27-2002-apartment-ownership-special-provisions.html",
+   "scan_not_read": "data/legal-sources/library/amendments/incoming/27-2002-apartment-ownership-law-amendment.pdf (4 pp., no text layer)"
+  },
+  {
+   "instrument": "39-2003",
+   "title": "Apartment Ownership (Amendment) Act, No. 39 of 2003 -- 'AN ACT TO AMEND THE APARTMENT OWNERSHIP LAW, No. 11 OF 1973' (LankaLaw HTML; the archive PDF is an image scan whose title page could not be read)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Last instrument in the chain header and the cutoff; 89 inline markers '[ n,39 of 2003]' (n = 3 to 41, none for 34) in the HTML body match its 45 sections, including the inserted sections 3A-3C, 5A, 5B, 8A, 8B, 9A and 20A-20Q. Held as HTML with a tree in this folder; nothing applied a second time.",
+   "source_path": "data/legal-sources/library/amendments/html/39-2003-apartment-ownership-amendment.html",
+   "scan_not_read": "data/legal-sources/library/amendments/incoming/39-2003-apartment-ownership-law-amendment.pdf (105 MB, no text layer)"
+  },
+  {
+   "instrument": "23-2018",
+   "title": "APARTMENT OWNERSHIP (SPECIAL PROVISIONS) ACT, No. 23 OF 2018 [Certified on 15th of August, 2018] -- 'AN ACT TO FACILITATE THE REGISTRATION AND DISPOSITION OF CERTAIN CONDOMINIUM PROPERTIES OWNED BY THE STATE OR BY A STATE AGENCY; AND TO MAKE PROVISION FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO.'",
+   "classification": "held_but_not_applied",
+   "reason": "Registry SRC013 (type 'amendment'); post-dates the 2003 baseline and is not in the chain header. Read in full from the Government Printer text layer: 5 sections (short title; five-year duration; registration under section 6 of the Law of condominium properties owned by the Commissioner for National Housing, NHDA, UDA, SLLRDC or the State, built before December 31, 2009, notwithstanding six listed defects; interpretation; Sinhala text prevails). It contains no amendment, insertion, repeal or substitution of any provision of the Law, so there is nothing to apply. The PDF travels in the package as a held, unparsed instrument. parse_amendment_pdf.py was run on it (0 amending instructions; marginal notes bled into the text of sections 1, 2, 4, 5) and that regenerated output at data/processed/canonical-amendments/23-2018.json was not accepted.",
+   "source_path": "data/legal-sources/library/amendments/23-2018-apartment-ownership-special-provisions-act.pdf"
+  }
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML consolidated edition (11-1973-apartment-ownership-law-consolidated.html, page 1981Y4V83C-1.html, i.e. the 1981 revised-edition volume 4 chapter 83 text carried forward to 2003), 50 sections, parsed into 11-1973-apartment-ownership-law-consolidated.json. It is the current-text baseline. The 1973 as-enacted text (11-1973-apartment-ownership-law.pdf, 26 sections, republished by CCI Sri Lanka, text layer, no publisher stated) is held alongside as a second principal tree, 11-1973-apartment-ownership-law.json, and is not a consolidation. Other sources inspected: the four LankaLaw HTML amending Acts (45 of 1982, 4 of 1999, 27 of 2002, 39 of 2003; none carries a subscription banner); the Government Printer PDF of Act No. 4 of 1999 (text layer, 5 pp., certified 10th March 1999), read in full and included as a verification source; the parliamentary-archive scans of 27 of 2002 (4 pp.), 45 of 1982 (51 pp., 84 MB) and 39 of 2003 (76 pp., 105 MB), which have no text layer (pdftotext returns nothing) and were not read; and the Government Printer PDF of the Apartment Ownership (Special Provisions) Act, No. 23 of 2018 (registry SRC013, text layer, 5 sections), read in full. Consolidation cutoff: Act No. 39 of 2003. The chain header reads 'Law Nos, 11 of 1973 Act Nos, 45 of 1982 4 of 1999 27 of 2002 39 of 2003' and the latest inline markers are '[ 41,39 of 2003]'. The as-enacted tree has no cutoff (1973 text). Review performed: chain header and all 130 inline markers (38 for 45 of 1982, 3 for 4 of 1999, 89 for 39 of 2003) read from the HTML and matched to the four amending Acts' own instruction lists (45 of 1982 sections 3 to 12; 4 of 1999 sections 4 and 5; 39 of 2003 sections 3 to 41); the numbering gap at section 22 traced to the source's own footnote ('Section 22, repealing the Condominium Property Act, No. 12 of 1970, is omitted from this Edition'); the 1973 PDF read in full against the as-enacted tree, whose headings for 17 sections had been truncated by the two-column parser and whose body text in sections 3, 7, 14, 15, 16 and 23 carried interleaved marginal-note words -- all corrected from the print with the machine reading kept (heading_raw, text_before_correction, corrections). Act No. 4 of 1999 read section by section against the Government Printer PDF: the LankaLaw page prints section 3 as substituted by Act No. 27 of 2002, so the tree's section 3 was restored to the 1999 wording with the 2002 wording kept on the node. The 50-section consolidated body was not re-read word for word against the HTML beyond the markers, headings, section list and the sections named above; that depth is recorded here rather than claimed. Amendment coverage: 45 of 1982, 4 of 1999 and 39 of 2003 are incorporated in the baseline and each is held as its own HTML text with a tree in this folder; 27 of 2002 is in the chain but amends Act No. 4 of 1999 (its section 3, the sunset of that Act's Part I), not the Law, so there is nothing of it to find in the Law's text; its tree had an empty 'amends' (validator hard error), now set to Act No. 4 of 1999 by hand. Act No. 23 of 2018 post-dates the baseline, is not in the chain, and contains no operation on the Law's text (it directs the Registrar to register certain State-owned condominium properties under section 6 for five years and has its own interpretation section); nothing was applied and it is held in the package as an unparsed instrument. Index 26 vs consolidated 50: the section index and the as-enacted tree count the 1973 Law's 26 sections; the consolidated edition has 50 because 45 of 1982 inserted 7A and 11A, 39 of 2003 inserted 3A-3C, 5A, 5B, 8A, 8B, 9A and 20A-20Q (skipping 20I and 20O as printed), and the edition omits section 22. Structural weaknesses: the HTML edition does not print the bodies of the First and Second Schedules (added by section 13 of Act No. 45 of 1982, amended by section 6 of Act No. 4 of 1999 and by Act No. 39 of 2003); only the 1982 text of the Schedules, as inserted, is held (inside the 45 of 1982 amending tree). The consolidated tree's schedules list is therefore empty by source limitation. Section 20M runs paragraph (a) into the section text (parser convention, recorded). The as-enacted PDF carries print typography ('Mm', 'Proprety', 'redvision', 'ail') left as printed. Missing sources: no Government Printer text of the Law, of 45 of 1982, 27 of 2002 or 39 of 2003 with a text layer; no consolidated text of the Schedules. Unresolved: whether any instrument after 2003 other than 23 of 2018 touches the Law cannot be settled from what is held; the HTML footnote '(*Repealed and replaced by the Companies Act, No. 17 of 1982.)' at the foot of section 26 is unplaced (it follows the definitions and names no term). Lawyer-verification status: unverified. Everything here is pipeline output.",
+ "lawyer_verification": "unverified"
 }

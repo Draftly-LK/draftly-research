@@ -18,8 +18,69 @@
   "local_path": "data/legal-sources/library/statutes/43-1982-stamp-duty-act.pdf",
   "caveat": "parsed from a two-column PDF"
  },
- "amendments": [],
- "verification_status": "unverified",
+ "amendments": [
+  {
+   "type": "Act",
+   "number": 71,
+   "year": 1988,
+   "status": "known_but_not_held; marked 23 times in the IRD margin"
+  },
+  {
+   "type": "Act",
+   "number": 27,
+   "year": 1991,
+   "status": "held; marked in the IRD margin"
+  },
+  {
+   "type": "Act",
+   "number": 29,
+   "year": 1993,
+   "status": "held; marked in the IRD margin"
+  },
+  {
+   "type": "Act",
+   "number": 63,
+   "year": 1993,
+   "status": "held; marked in the IRD margin"
+  },
+  {
+   "type": "Act",
+   "number": 6,
+   "year": 1996,
+   "status": "held; marked in the IRD margin"
+  },
+  {
+   "type": "Act",
+   "number": 38,
+   "year": 1996,
+   "status": "held; marked in the IRD margin"
+  },
+  {
+   "type": "Act",
+   "number": 25,
+   "year": 1999,
+   "status": "held; marked in the IRD margin"
+  },
+  {
+   "type": "Act",
+   "number": 27,
+   "year": 2000,
+   "status": "held; marked in the IRD margin (latest instrument the print demonstrates)"
+  },
+  {
+   "type": "Act",
+   "number": 11,
+   "year": 2002,
+   "status": "known_but_not_held; named only in the LankaLaw HTML chain header, no inline marker in either source"
+  },
+  {
+   "type": "Act",
+   "number": 12,
+   "year": 2006,
+   "status": "held; named only in the LankaLaw HTML chain header, no inline marker in either source; its own text makes no textual amendment to this Act"
+  }
+ ],
+ "verification_status": "structurally_verified",
  "quality_flags": [
   {
    "code": "rates_schedule_not_extracted",
@@ -67,6 +128,48 @@
    ],
    "issue": "Section 40(10) drops the word 'in' from '...the amount specified in the notice appealed against...' at a line wrap, and the following bare crossheading 'APPEAL TO THE BOARD OF REVIEW' (no 'CHAPTER'/'PART' label, so the existing heading filter does not catch it) glues onto its own end. A fix was attempted (treating any full-width wrapped line with no sentence-closing punctuation before it as more body text) and reverted: it corrected this case but scrambled word order in three other already-parsed statutes, including the already-finalized Buddhist Temporalities Ordinance, by misreading genuine wrapped marginal notes as body text. The general problem -- telling a wrapped note from a wrapped body line apart using only layout, with no reliable column-position signal in this particular document -- was not solved in the time available.",
    "status": "known_parser_limitation"
+  },
+  {
+   "code": "margin_marker_anomalies",
+   "detail": "Three IRD margin markers name instruments outside the chain and are read as misprints: “61/1996” beside exemption item 24 (debt security), which Act No. 6 of 1996 s.2 inserted, so 6/1996 is meant; “71/1998” beside section 13(4), where every neighbouring marker is 71/1988; and “24/1993” beside the section 71 definition of “Commissioner General”, where 29/1993 (which amended section 71) is the likely reading. None was resolved to an operation.",
+   "status": "documented"
+  },
+  {
+   "code": "heading_misassignment_corrected",
+   "sections_affected": [
+    "13",
+    "20",
+    "21",
+    "29",
+    "30",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "68"
+   ],
+   "detail": "The IRD print places marginal notes above the provision they belong to, sometimes by most of a page, so the parser attached notes to the preceding section and left eight sections (21, 30, 33, 35, 38, 40, 42, 43) without one. Headings corrected by hand; the damaged reading is kept in heading_raw and the source of each correction in heading_source. Section 34's note is not printed in the IRD copy and comes from the HTML edition alone.",
+   "status": "corrected"
+  },
+  {
+   "code": "source_typography_kept",
+   "sections_affected": [
+    "3",
+    "22",
+    "69",
+    "41"
+   ],
+   "detail": "Kept as printed in the IRD copy where the HTML edition differs: section 3 “several district matters” (HTML: distinct); section 22 “instruments or conveyance” (HTML: of conveyance); section 69 heading “Registrations” (HTML: Regulations; the section is about regulations); section 41 “Inalnd Revenue Act”.",
+   "status": "documented"
   }
  ],
  "editorial_notes": [],
@@ -87,7 +190,7 @@
   {
    "type": "section",
    "number": "2",
-   "heading": "71/1988 Instruments chargeable with duty",
+   "heading": "Instruments chargeable with duty",
    "raw_text": "2. There shall be charged on-",
    "text": "There shall be charged on-",
    "amendment_events": [],
@@ -138,7 +241,13 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "71/1988 Instruments chargeable with duty",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "71/1988"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
@@ -153,12 +262,18 @@
   {
    "type": "section",
    "number": "4",
-   "heading": "71/1988 Other enactments saved",
+   "heading": "Other enactments saved",
    "raw_text": "4. Nothing in this Act shall affect or be deemed to affect any provision of law providing for the stamping of any instrument or the exemption of any instrument or document from stamp duty.",
    "text": "Nothing in this Act shall affect or be deemed to affect any provision of law providing for the stamping of any instrument or the exemption of any instrument or document from stamp duty.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "71/1988 Other enactments saved",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "71/1988"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
@@ -745,7 +860,7 @@
   {
    "type": "section",
    "number": "7",
-   "heading": "71/1988 Cancellation of adhesive stamps",
+   "heading": "Cancellation of adhesive stamps",
    "raw_text": "7. (1) Where the payment of stamp duty with which an instrument is chargeable is indicated by means of an adhesive stamp, the person executing such instrument or in the case of a notarially executed instrument, the notary and the person or any one of the persons executing such instrument shall cancel the stamp by writing his name or their names respectively across and initialing it in ink so as not to admit of it being used again.",
    "text": "",
    "amendment_events": [],
@@ -803,7 +918,13 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "71/1988 Cancellation of adhesive stamps",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "71/1988"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
@@ -868,17 +989,23 @@
   {
    "type": "section",
    "number": "12",
-   "heading": "71/1988 Stamping of duplicate of certain instruments",
+   "heading": "Stamping of duplicate of certain instruments",
    "raw_text": "12. Where any instrument chargeable with stamp duty (not being a draft, order, or promissory note for the payment of money or a receipt or discharge for or upon the payment of money) is executed or acknowledged before a notary public or fiscal in the execution of his office, the stamp duty chargeable on such instrument shall be chargeable on the duplicate or counterpart thereof, instead of on the original instrument and the original instrument shall bear a stamp of one rupee.",
    "text": "Where any instrument chargeable with stamp duty (not being a draft, order, or promissory note for the payment of money or a receipt or discharge for or upon the payment of money) is executed or acknowledged before a notary public or fiscal in the execution of his office, the stamp duty chargeable on such instrument shall be chargeable on the duplicate or counterpart thereof, instead of on the original instrument and the original instrument shall bear a stamp of one rupee.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "71/1988 Stamping of duplicate of certain instruments",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "71/1988"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
    "number": "13",
-   "heading": "71/1988 27/1991",
+   "heading": "Composition of Stamp Duty payable on certain instruments",
    "raw_text": "13. (1) The Commissioner General may authorize –",
    "text": "",
    "amendment_events": [],
@@ -1056,7 +1183,14 @@
      ],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "71/1988 27/1991",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html)",
+   "margin_markers": [
+    "71/1988",
+    "27/1991"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
@@ -1185,12 +1319,18 @@
   {
    "type": "section",
    "number": "15A",
-   "heading": "71/1988 Conversion",
+   "heading": "Conversion",
    "raw_text": "15A. Where any instrument is chargeable with stamp duty in respect of any money expressed in any currency other than that of Sri Lanka, such duty shall be calculated of the value of such money in the currency of Sri Lanka according to the current rate of exchange on the day of the date of the instrument or where the instrument is a bill of exchange, cheque or promissory note drawn or made, out of Sri Lanka, on the day on which the instrument is stamped in Sri Lanka.",
    "text": "Where any instrument is chargeable with stamp duty in respect of any money expressed in any currency other than that of Sri Lanka, such duty shall be calculated of the value of such money in the currency of Sri Lanka according to the current rate of exchange on the day of the date of the instrument or where the instrument is a bill of exchange, cheque or promissory note drawn or made, out of Sri Lanka, on the day on which the instrument is stamped in Sri Lanka.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "71/1988 Conversion",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "71/1988"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
@@ -1215,7 +1355,7 @@
   {
    "type": "section",
    "number": "18",
-   "heading": "71/1988 How consideration consisting of periodical payments to be charged",
+   "heading": "How consideration consisting of periodical payments to be charged",
    "raw_text": "18. (1) A conveyance, the consideration or any part of the consideration for which consists of money payable periodically or any instrument for the creation or sale of any annuity or other right to a periodical payment not before in existence, shall be chargeable with the same stamp duty as on a conveyance of movable property for the consideration set out in such instrument. Where no consideration is so set out, the consideration shall be deemed to be an amount ascertained in accordance with sub-section(2).",
    "text": "",
    "amendment_events": [],
@@ -1267,7 +1407,13 @@
       }
      ]
     }
-   ]
+   ],
+   "heading_raw": "71/1988 How consideration consisting of periodical payments to be charged",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "71/1988"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
@@ -1299,17 +1445,19 @@
   {
    "type": "section",
    "number": "20",
-   "heading": "Drawing several instruments to avoid duty Certain agreements to",
+   "heading": "Drawing several instruments to avoid duty",
    "raw_text": "20. Where any immovable property, or any part thereof, is conveyed or transferred to the same person in lots by several instruments and it appears to the Assessor that several instruments were executed with the intention of avoiding the stamp duty which would be chargeable had the total area conveyed or transferred by such instruments been conveyed or transferred by a single instrument, he may call upon the parties to such instruments to prove to his satisfaction that such instruments were not executed with such intention and if no such proof is furnished or the proof furnished is inadequate, each such instrument shall be charged with stamp duty in proportion to the value of the property conveyed by the instrument of such an amount as would make the aggregate stamp duty chargeable on all such instruments equal to one and a half times the stamp duty that would have been chargeable had a single instrument been executed to convey and transfer the total area transferred by such instruments.",
    "text": "Where any immovable property, or any part thereof, is conveyed or transferred to the same person in lots by several instruments and it appears to the Assessor that several instruments were executed with the intention of avoiding the stamp duty which would be chargeable had the total area conveyed or transferred by such instruments been conveyed or transferred by a single instrument, he may call upon the parties to such instruments to prove to his satisfaction that such instruments were not executed with such intention and if no such proof is furnished or the proof furnished is inadequate, each such instrument shall be charged with stamp duty in proportion to the value of the property conveyed by the instrument of such an amount as would make the aggregate stamp duty chargeable on all such instruments equal to one and a half times the stamp duty that would have been chargeable had a single instrument been executed to convey and transfer the total area transferred by such instruments.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "Drawing several instruments to avoid duty Certain agreements to",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html); the print's note for section 21 had been glued on"
   },
   {
    "type": "section",
    "number": "21",
-   "heading": "",
+   "heading": "Certain agreements to be chargeable with same ad valorem duty",
    "raw_text": "21. (1) Any agreement or contract for the conveyance or transfer-",
    "text": "",
    "amendment_events": [],
@@ -1389,7 +1537,9 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html)"
   },
   {
    "type": "section",
@@ -1686,7 +1836,7 @@
   {
    "type": "section",
    "number": "27",
-   "heading": "63/1993 Power of certain officers to impound and examine instruments",
+   "heading": "Power of certain officers to impound and examine instruments",
    "raw_text": "27. (1) Every person having by law or consent of parties authority to receive evidence, and every officer in a public office (other than a police officer) and every officer of a public corporation or bank, approved credit agency, institution, company or a licensed stock broker, before whom any instrument, chargeable in his opinion with stamp duty, is produced or comes in the performance of his functions, shall, if it appears to him that such instrument is not duly stamped, impound such instrument: Provided that, nothing in this section shall be deemed to require any Magistrate or Judge of a criminal court to impound or examine, if he does not think fit to do so, any instrument coming before him in the course of any proceedings in that court.",
    "text": "",
    "amendment_events": [],
@@ -1756,12 +1906,18 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "63/1993 Power of certain officers to impound and examine instruments",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "63/1993"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
    "number": "28",
-   "heading": "63/1993 Impounded instruments to be transmitted to the Commissioner General",
+   "heading": "Impounded instruments to be transmitted to the Commissioner General",
    "raw_text": "28. (1) Where any person who has by law or consent of parties, authority to receive evidence or the Registrar General admits in evidence, or acts upon any instrument in accordance with the provisions of the proviso to section 33, he shall send the Commissioner General an authenticated copy of such instrument, supplied at the expense of the person tendering it, together with a certificate in writing stating the amount of the stamp duty and penalty levied in respect thereof, and shall send such amount to the Commissioner General.",
    "text": "",
    "amendment_events": [],
@@ -1799,22 +1955,30 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "63/1993 Impounded instruments to be transmitted to the Commissioner General",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "63/1993"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
    "number": "29",
-   "heading": "The Commissioner General to deal with impounded instruments",
+   "heading": "Instruments not duly stamped by accident produced voluntarily",
    "raw_text": "29. If any instrument chargeable with stamp duty and not duly stamped, not being an instrument chargeable with stamp duty not exceeding fifty cents or a bill of exchange, cheque, or promissory note, is produced by any person of his own motion before an Assessor within one year from the date of its execution and such person brings to the notice of the Assessor the fact that such instrument is not duly stamped and offers to pay to the Assessor, the amount of the proper duty or the amount required to make up the same and the Assessor is satisfied that the omission to stamp such instrument has been occasioned by accident, mistake or urgent necessity, he may instead of impounding the instrument receive such amount and shall by endorsement thereon state that the proper amount of stamp duty with which such instrument is chargeable has been paid.",
    "text": "If any instrument chargeable with stamp duty and not duly stamped, not being an instrument chargeable with stamp duty not exceeding fifty cents or a bill of exchange, cheque, or promissory note, is produced by any person of his own motion before an Assessor within one year from the date of its execution and such person brings to the notice of the Assessor the fact that such instrument is not duly stamped and offers to pay to the Assessor, the amount of the proper duty or the amount required to make up the same and the Assessor is satisfied that the omission to stamp such instrument has been occasioned by accident, mistake or urgent necessity, he may instead of impounding the instrument receive such amount and shall by endorsement thereon state that the proper amount of stamp duty with which such instrument is chargeable has been paid.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "The Commissioner General to deal with impounded instruments",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html); the tree had carried section 30's note here"
   },
   {
    "type": "section",
    "number": "30",
-   "heading": "",
+   "heading": "The Commissioner General to deal with impounded instruments",
    "raw_text": "30. (1) Where the Commissioner General impounds any instrument under section 27 or receives any instrument under section 28(2) not being an instrument chargeable with a duty of fifty cents or less or a bill of exchange, cheque or promissory note, he shall refer it to an Assessor who shall adopt the following procedure in respect thereof-",
    "text": "",
    "amendment_events": [],
@@ -1885,7 +2049,9 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html)"
   },
   {
    "type": "section",
@@ -1978,7 +2144,7 @@
   {
    "type": "section",
    "number": "32",
-   "heading": "Admissibility of instruments",
+   "heading": "Non-liability for loss of instruments sent.",
    "raw_text": "32. (1) If any instrument sent to the Commissioner General under section 28 is lost, destroyed or damaged during transmission the person sending the same shall not be liable for such loss, destruction, or damage.",
    "text": "",
    "amendment_events": [],
@@ -2016,12 +2182,14 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "Admissibility of instruments",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html); the tree had carried section 33's note here"
   },
   {
    "type": "section",
    "number": "33",
-   "heading": "",
+   "heading": "Admissibility of instruments",
    "raw_text": "33. (1) No instrument chargeable with stamp duty shall be received or admitted in evidence by any person having by law or consent of parties authority to receive evidence or registered or authenticated or acted upon by any person or by any officer in a public office or corporation or bank or approved credit agency unless such instrument is duly stamped. Provided that any such instrument may-",
    "text": "",
    "amendment_events": [],
@@ -2098,22 +2266,26 @@
      ],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html)"
   },
   {
    "type": "section",
    "number": "34",
-   "heading": "receipts in certain cases Power of payer to stamp bills, promissory notes, cheques received by him unstamped",
+   "heading": "Effect of non-compliance with this Act in case of certain bills of exchange",
    "raw_text": "34. A bill of exchange which is presented for acceptance, or accepted, or payable, outside Sri Lanka shall not be invalid by reason only that it is not stamped in accordance with the provisions of this Act, and any such bill of exchange which is not duly stamped shall be admitted in evidence on payment of the stamp duty with which that bill of exchange is chargeable or in the case of any such bill of exchange which is insufficiently stamped, of the amount required to make up the proper duty, together with a penalty, not exceeding three times the amount of the proper duty.",
    "text": "A bill of exchange which is presented for acceptance, or accepted, or payable, outside Sri Lanka shall not be invalid by reason only that it is not stamped in accordance with the provisions of this Act, and any such bill of exchange which is not duly stamped shall be admitted in evidence on payment of the stamp duty with which that bill of exchange is chargeable or in the case of any such bill of exchange which is insufficiently stamped, of the amount required to make up the proper duty, together with a penalty, not exceeding three times the amount of the proper duty.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "receipts in certain cases Power of payer to stamp bills, promissory notes, cheques received by him unstamped",
+   "heading_source": "LankaLaw HTML edition; the IRD print carries no legible marginal note for this section"
   },
   {
    "type": "section",
    "number": "35",
-   "heading": "",
+   "heading": "One bill only of a set need be stamped",
    "raw_text": "35. When a bill of exchange is drawn in a set and one of the set is duly stamped, the other or others of the set shall, unless issued or in some manner negotiated apart from the stamped bill, be exempt from stamp duty; and upon proof of the loss or destruction of a duly stamped bill forming one of a set, any other bill of the set which has not been issued or in any manner negotiated apart from the lost or destroyed bill shall, notwithstanding anything in section 33, be admitted in evidence to prove the contents of the lost or destroyed bill.",
    "text": "When a bill of exchange is drawn in a set and one of the set is duly stamped, the other or others of the set shall, unless issued or in some manner negotiated apart from the stamped bill, be exempt from stamp duty; and upon proof of the loss or destruction of a duly stamped bill forming one of a set, any other bill of the set which has not been issued or in any manner negotiated apart from the lost or destroyed bill shall, notwithstanding anything in section 33, be admitted in evidence to prove the contents of the lost or destroyed bill.",
    "amendment_events": [],
@@ -2125,12 +2297,14 @@
      "verbatim": "section 33"
     }
    ],
-   "children": []
+   "children": [],
+   "heading_raw": "",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html)"
   },
   {
    "type": "section",
    "number": "36",
-   "heading": "71/1988 Adjudication as to proper stamp duty",
+   "heading": "Admissibility of receipts in certain cases",
    "raw_text": "36. Where any person required to give a stamped receipt has given an unstamped receipt and such receipt if stamped would be admissible in evidence against him, then such receipt shall notwithstanding anything in section 33, be admitted in evidence against him on payment of a penalty of five rupees by the person tendering it.",
    "text": "Where any person required to give a stamped receipt has given an unstamped receipt and such receipt if stamped would be admissible in evidence against him, then such receipt shall notwithstanding anything in section 33, be admitted in evidence against him on payment of a penalty of five rupees by the person tendering it.",
    "amendment_events": [],
@@ -2142,12 +2316,18 @@
      "verbatim": "section 33"
     }
    ],
-   "children": []
+   "children": [],
+   "heading_raw": "71/1988 Adjudication as to proper stamp duty",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html); the tree had carried section 38's note here",
+   "margin_markers": [
+    "71/1988"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
    "number": "37",
-   "heading": "Endorsement by Assessor",
+   "heading": "Power of payer to stamp bills, promissory notes, cheques received by him unstamped",
    "raw_text": "37. Notwithstanding anything in section 33, where any bill of exchange, cheque or promissory note chargeable with stamp duty of one rupee or less is presented for payment unstamped, the person to whom it is presented may affix thereto the necessary adhesive stamp, and upon canceling the same in accordance with the provisions of this Act, may pay the sum payable upon such bill, cheque or note and charge the stamp duty against the person who ought to have paid the same or deduct it from the sum payable as aforesaid and thereupon, such bill, note or cheque shall be deemed to be duly stamped; Provided that nothing herein contained shall relieve any person from any penalty or proceeding to which he may be liable in relation to such bill, cheque or note.",
    "text": "Notwithstanding anything in section 33, where any bill of exchange, cheque or promissory note chargeable with stamp duty of one rupee or less is presented for payment unstamped, the person to whom it is presented may affix thereto the necessary adhesive stamp, and upon canceling the same in accordance with the provisions of this Act, may pay the sum payable upon such bill, cheque or note and charge the stamp duty against the person who ought to have paid the same or deduct it from the sum payable as aforesaid and thereupon, such bill, note or cheque shall be deemed to be duly stamped;",
    "amendment_events": [],
@@ -2169,12 +2349,14 @@
      "amendment_events": [],
      "cross_references": []
     }
-   ]
+   ],
+   "heading_raw": "Endorsement by Assessor",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html); the tree had carried section 39's note here"
   },
   {
    "type": "section",
    "number": "38",
-   "heading": "",
+   "heading": "Adjudication as to proper stamp duty",
    "raw_text": "38. (1) Where any instrument whether executed or not and whether previously stamped or not, is brought to an Assessor together with a copy thereof, and the person bringing it applies to have the opinion of the Assessor as to the stamp duty, if any, with which it is chargeable, and pays a fee of fifty rupees, the Assessor shall determine the stamp duty, if any, with which in his opinion the instrument is chargeable, and shall notify his determination to such person in writing.",
    "text": "",
    "amendment_events": [],
@@ -2208,12 +2390,14 @@
       }
      ]
     }
-   ]
+   ],
+   "heading_raw": "",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html)"
   },
   {
    "type": "section",
    "number": "39",
-   "heading": "Appeals to the Commissioner General",
+   "heading": "Endorsement by Assessor",
    "raw_text": "39. (1) The Assessor shall certify by endorsement on any instrument brought to him under section 38 that any stamp duty with which such instrument is chargeable has been paid or that such instrument is not chargeable with stamp duty.",
    "text": "",
    "amendment_events": [],
@@ -2288,12 +2472,14 @@
       }
      ]
     }
-   ]
+   ],
+   "heading_raw": "Appeals to the Commissioner General",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html); the tree had carried section 40's note here"
   },
   {
    "type": "section",
    "number": "40",
-   "heading": "",
+   "heading": "Appeals to the Commissioner General",
    "raw_text": "40. (1) Any person who is aggrieved by an opinion given under section 38 or any requirement imposed by a notice issued under section 30(1) (b) may within a period of thirty days after the date of the opinion or notice, appeal to the Commissioner General against such opinion or notice. Provided that the Commissioner General, upon being satisfied that owing to absence from Sri Lanka, sickness or other reasonable cause, the appellant was prevented from appealing within such period, shall grant an extension of time for preferring the appeal.",
    "text": "",
    "amendment_events": [],
@@ -2445,12 +2631,14 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html)"
   },
   {
    "type": "section",
    "number": "41",
-   "heading": "in",
+   "heading": "Appeal to the Board of Review",
    "raw_text": "41. Any person aggrieved by the determination of the Commissioner General upon any appeal made to him under section 40 may appeal from that determination to the Board of Review constituted under the Inalnd Revenue Act (No.28 of 1979) and the provisions of that Act relating to appeals to such Board of Review from a determination of the Commissioner General under that Act shall mutatis mutandis apply to the making, hearing and determination of an appeal under this section.",
    "text": "Any person aggrieved by the determination of the Commissioner General upon any appeal made to him under section 40 may appeal from that determination to the Board of Review constituted under the Inalnd Revenue Act (No.28 of 1979) and the provisions of that Act relating to appeals to such Board of Review from a determination of the Commissioner General under that Act shall mutatis mutandis apply to the making, hearing and determination of an appeal under this section.",
    "amendment_events": [],
@@ -2467,12 +2655,14 @@
      "verbatim": "the Inalnd Revenue Act"
     }
    ],
-   "children": []
+   "children": [],
+   "heading_raw": "in",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html); the tree had read the stray word “in” from the body as the heading"
   },
   {
    "type": "section",
    "number": "42",
-   "heading": "",
+   "heading": "Amount when final",
    "raw_text": "42. Where no valid appeal has been lodged within the time specified in this Act against an opinion given under section 38 or a notice issued under section 30(1)(b) the amount as specified in such opinion or notice, or where agreement is reached under section 40(4) as to any such amount or where any such amount has been determined on appeal, the amount as required to be paid under such agreement or as reduced or increased or confirmed on appeal, as the case may be, shall be final and conclusive for all purposes of this Act as regards the amount to be paid; Provided that nothing in this Act shall prevent the Commissioner General from requiring the payment of any other amount which does not involve reopening any matter which has been determined on appeal. APPEALS TO THE COURT OF APPEAL AND TO THE SUPREME COURT",
    "text": "Where no valid appeal has been lodged within the time specified in this Act against an opinion given under section 38 or a notice issued under section 30(1)(b) the amount as specified in such opinion or notice, or where agreement is reached under section 40(4) as to any such amount or where any such amount has been determined on appeal, the amount as required to be paid under such agreement or as reduced or increased or confirmed on appeal, as the case may be, shall be final and conclusive for all purposes of this Act as regards the amount to be paid;",
    "amendment_events": [],
@@ -2508,12 +2698,14 @@
      "amendment_events": [],
      "cross_references": []
     }
-   ]
+   ],
+   "heading_raw": "",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html)"
   },
   {
    "type": "section",
    "number": "43",
-   "heading": "",
+   "heading": "Appeal on a question of law to the Court of Appeal and to the Supreme Court",
    "raw_text": "43. (1) The decision of the Board shall be final; Provided that either the appellant or the Commissioner General may make an application requiring the Board to state a case on a question of law for the opinion of the Court of Appeal. Such application shall not be entertained unless it is made in writing and delivered to the clerk to the Board, together with a fee of fifty rupees, within one month of the date on which the decision of the Board was notified in writing to the Commissioner General or the applicant, as the case may be.",
    "text": "",
    "amendment_events": [],
@@ -2673,22 +2865,26 @@
       }
      ]
     }
-   ]
+   ],
+   "heading_raw": "",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html)"
   },
   {
    "type": "section",
    "number": "44",
-   "heading": "penalties, fines & c",
+   "heading": "Duty to include penalties, fines & c.",
    "raw_text": "44. In this Chapter “duty” includes stamp duty and any sum added to any such duty and any fines, penalties, fees or costs, whatsoever, incurred under this Act.",
    "text": "In this Chapter “duty” includes stamp duty and any sum added to any such duty and any fines, penalties, fees or costs, whatsoever, incurred under this Act.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "penalties, fines & c",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html); the tree had lost the first line of the note"
   },
   {
    "type": "section",
    "number": "45",
-   "heading": "71/1988 Provisions regarding payments of stamp duty & c",
+   "heading": "Provisions regarding payments of stamp duty & c",
    "raw_text": "45. (1) The duty required to be paid by any notice issued under section 30(1)(b) shall be paid on or before the date specified in such notice, and, where such duty is not paid on or before the date specified therein, such duty together with a penalty equal to ten per centum of the duty for every month of non payment shall be deemed to be in default and the person by whom such duty is payable shall be deemed to be a defaulter for the purposes of this Act: Provided that the total amount payable as penalty shall not exceed 50 per centum of the duty in default.",
    "text": "",
    "amendment_events": [],
@@ -2788,7 +2984,13 @@
      ],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "71/1988 Provisions regarding payments of stamp duty & c",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "71/1988"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
@@ -3591,12 +3793,18 @@
   {
    "type": "section",
    "number": "56A",
-   "heading": "71/1988 Forging of stamps",
+   "heading": "Forging of stamps",
    "raw_text": "56A. Any person who without lawful authority makes or produces, or assists, in any manner whatsoever, in the making or producing, of any stamp or die or has in his possession, any such dies or any stamp so made or produced shall be guilty of an offence and be liable on conviction after summary trial before a Magistrate to a fine not exceeding five thousand rupees or to imprisonment of either description for a term not exceeding six months or to both such fine and imprisonment.",
    "text": "Any person who without lawful authority makes or produces, or assists, in any manner whatsoever, in the making or producing, of any stamp or die or has in his possession, any such dies or any stamp so made or produced shall be guilty of an offence and be liable on conviction after summary trial before a Magistrate to a fine not exceeding five thousand rupees or to imprisonment of either description for a term not exceeding six months or to both such fine and imprisonment.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "71/1988 Forging of stamps",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "71/1988"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
@@ -3745,7 +3953,7 @@
   {
    "type": "section",
    "number": "59A",
-   "heading": "71/1988 Non compliance with notice under section 53 or section 64A",
+   "heading": "Non compliance with notice under section 53 or section 64A",
    "raw_text": "59A. Any person who fails to comply with the requirement of a notice given to him under section 53, or section 64A shall be guilty of an offence and shall be liable on conviction after summary trial before a Magistrate to a fine not exceeding five thousand rupees.",
    "text": "Any person who fails to comply with the requirement of a notice given to him under section 53, or section 64A shall be guilty of an offence and shall be liable on conviction after summary trial before a Magistrate to a fine not exceeding five thousand rupees.",
    "amendment_events": [],
@@ -3763,7 +3971,13 @@
      "verbatim": "section 64A"
     }
    ],
-   "children": []
+   "children": [],
+   "heading_raw": "71/1988 Non compliance with notice under section 53 or section 64A",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "71/1988"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
@@ -4112,12 +4326,14 @@
   {
    "type": "section",
    "number": "68",
-   "heading": "Stamp Ordinance apply to instruments executed on or after the appointed date",
+   "heading": "Stamp Ordinance (Chapter 247) not to apply to instruments executed on or after the appointed date.",
    "raw_text": "68. The Stamp Ordinance shall not apply to any instruments (Chapter 247) not to executed on or after the appointed date.",
    "text": "The Stamp Ordinance shall not apply to any instruments (Chapter 247) not to executed on or after the appointed date.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "heading_raw": "Stamp Ordinance apply to instruments executed on or after the appointed date",
+   "heading_source": "IRD print marginal note; the print floats its notes above the section they belong to, so the assignment was confirmed against the LankaLaw HTML edition (statutes/HTML/43-1982-stamp-duty-act.html); the tree had dropped the wrapped words “(Chapter 247) not to”"
   },
   {
    "type": "section",
@@ -4179,7 +4395,7 @@
   {
    "type": "section",
    "number": "70",
-   "heading": "6/1996 Amendments to certain enactments",
+   "heading": "Amendments to certain enactments",
    "raw_text": "70. (1) Section 39 of the Co-operative Wholesale Establishment Act (Chapter 126) is hereby amended by the repeal of paragraph (a) of that section.",
    "text": "",
    "amendment_events": [],
@@ -4221,7 +4437,13 @@
      ],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "6/1996 Amendments to certain enactments",
+   "heading_source": "IRD print marginal note; the bare instrument marker printed above it moved to margin_markers",
+   "margin_markers": [
+    "6/1996"
+   ],
+   "margin_markers_note": "Bare N/YEAR marker printed in the IRD margin beside this section; the print has no chain header and these markers were not resolved to operations. 71/1988 and 11/2002 are not held."
   },
   {
    "type": "section",
@@ -4917,5 +5139,13 @@
     }
    ]
   }
- ]
+ ],
+ "amendment_chain_source": "The IRD print has no chain header. This list is the LankaLaw HTML chain header (“Act Nos, 71 of 1988 27 of 1991 29 of 1993 63 of 1993 6 of 1996 38 of 1996 25 of 1999 27 of 2000 11 of 2002 12 of 2006”) cross-read with the IRD margin markers.",
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "against": "IRD PDF rendered with pdftotext -layout (PowerShell), read at every section whose heading was empty, marker-only or disagreed with the LankaLaw HTML edition; headings of all 75 sections compared against the HTML edition parsed with build_canonical_statutes.parse",
+  "what_changed": "Corrected 19 section headings (13, 20, 21, 29, 30, 32-44, 68) that the parser had left empty, truncated, or attached to the wrong section because the print floats its marginal notes; moved the bare N/YEAR margin markers out of 14 headings into margin_markers; recorded the amendment chain (from the HTML header) and three marker anomalies; kept the damaged readings in heading_raw. No body text was changed.",
+  "note": "Re-running scripts/parse_consolidated_pdf.py writes data/processed/canonical-statutes/SRC034-43-1982.json, not this file. scripts/finalize_statute.py leaves a tree carrying provenance.hand_corrected in place."
+ }
 }

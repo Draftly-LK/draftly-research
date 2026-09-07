@@ -10,18 +10,58 @@
    "edition": "consolidated",
    "bytes": 245093,
    "sha256": "e8549bb6f2b6f1ff5afacfd9db305f15135fcaea0082b0581270009c615aabc5",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/8-1947-state-lands-ordinance.html",
    "used_for": "parsed into 8-1947-state-lands-ordinance-consolidated.json"
   },
   {
-   "file": "8-1947-state-lands-ordinance.html",
+   "file": "8-1947-state-lands-ordinance.pdf",
    "role": "verification source, not parsed",
    "edition": "",
-   "bytes": 245093,
-   "sha256": "e8549bb6f2b6f1ff5afacfd9db305f15135fcaea0082b0581270009c615aabc5",
-   "copied_from": "data/legal-sources/library/statutes/HTML/8-1947-state-lands-ordinance.html",
-   "used_for": "5-lens subagent review, 2 rounds, converged"
+   "bytes": 1214980,
+   "sha256": "664ebd08b502bd973f53cbc708c2bde70c8bd513b56850878129feabd6a7a365",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/8-1947-state-lands-ordinance.pdf",
+   "used_for": "FAOLEX PDF of Cap. 286 (1980 revised edition pages XI/293-315; 22 pp.; noisy text layer, two-column body). The registry's local_pdf_path. Confirmed the chain header ('Ordinances Nos, 8 of 1947. 9 of 1947, Act No. 13 of 1949'), the head date '[1st September, 1949.]', s.89's reference to the Land Development Ordinance, the s.47 footnote on Law No. 43 of 1973, and supplied the First and Second Schedules transcribed into the tree. Not parsed."
   }
  ],
- "statute_note": "Registry's own PDF is a FAOLEX scan with heavy OCR noise and a two-column body layout the PDF parser cannot read; parsed from LankaLaw's consolidated HTML instead. Commencement date (1st September 1949) is stated in the source but absent from data/processed/statute_commencement.csv, so the tree's commencement field is null; see canonical-overrides.json."
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "8-1947-state-lands-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher). The FAOLEX PDF of the same text is the 1980 revised edition, Chapter 286, pages XI/293-315.",
+  "consolidation_cutoff": "Act No. 13 of 1949",
+  "cutoff_evidence": "HTML chain header reads 'Ordinance Nos, 8 of 1947 9 of 1947 Act Nos, 13 of 1949 [ 1 st September , 1949 ]'. The FAOLEX PDF prints 'Cap. 286] STATE LANDS ... Ordinances Nos, 8 of 1947. 9 of 1947, Act No. 13 of 1949. ... [1st September, 1949.]' (text layer reads 'ACI :'\\0. 13 of 1949'). No inline marker in the body; the s.47 footnote records later events in the Land Development Ordinance, not amendments of this Ordinance."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "9-1947",
+   "title": "not held; chain header names 'Ordinance No. 9 of 1947'",
+   "classification": "known_but_not_held",
+   "reason": "Named in both chain headers. No file on disk; the download report records it as not in the Act archive (pre-1956).",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "13-1949",
+   "title": "not held; chain header names 'Act No. 13 of 1949'",
+   "classification": "known_but_not_held",
+   "reason": "Named in both chain headers and in the curriculum. No file on disk; not in the Act archive (pre-1956). The head date 1st September 1949 is this Act's commencement of the consolidated text.",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "43-1973",
+   "title": "Sale of State Lands (Special Provisions) Law, No. 43 of 1973 (HTML long title: 'A LAW TO PROVIDE FOR THE SYSTEMATIC SALE OF STATE LAND IN SRI LANKA TO CERTAIN PRESCRIBED CLASSES OF PERSONS FOR THE PURPOSE OF AGRICULTURAL DEVELOPMENT, FOR THE REPEAL OF CERTAIN PROVISIONS OF THE LAND DEVELOPMENT ORDINANCE AND FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO.')",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "Held under amendments/html by slug match only. Its long title names the Land Development Ordinance; the phrase 'State Lands Ordinance' does not occur anywhere in its 55 sections (searched); canonical-amendments/43-1973.json records amends_recorded_elsewhere 'Land Development Ordinance; People's Bank Act'. It is named in this Ordinance's s.47 footnote only as the Law that repealed s.19A(3) of the Land Development Ordinance. Not an amendment of this Ordinance; excluded from the package.",
+   "source_path": null,
+   "held": false,
+   "files_read_and_excluded": [
+    "data/legal-sources/library/amendments/html/43-1973-sale-of-state-lands-special-provisions-law.html"
+   ]
+  }
+ ],
+ "statute_note": "Principal source selected: the LankaLaw consolidated HTML (data/legal-sources/library/statutes/HTML/8-1947-state-lands-ordinance.html, identifier 1981Y11V286C-1), parsed by the earlier worker into the accepted tree, 111 sections in 14 Parts, 30 definitions in s.110. Other sources inspected: the FAOLEX PDF (statutes/8-1947-state-lands-ordinance.pdf, the registry's local_pdf_path; 22 pp. of the 1980 revised edition Cap. 286 with a noisy text layer and two-column body), read for the chain header, head date, s.89, the s.47 footnote and the Schedules, and carried in the package as a verification source; the LankaLaw HTML of Law No. 43 of 1973, read and excluded. Consolidation cutoff: Act No. 13 of 1949, quoted in baseline.cutoff_evidence and agreed by both copies. Review performed: packaging pass. The accepted tree was diffed against data/processed/canonical-statutes/SRC056-8-1947.json: bodies identical; only date_stated_in_source whitespace differs. validate_finalized_trees: 0 errors; the four s.89 warnings are the validator misreading external references to the Land Development Ordinance (ss.120-123, 125-127), confirmed word for word in the FAOLEX print and now documented in quality_flags; the five previously documented warnings (s.79 text, s.86 Civil Procedure Code references) stand as recorded in canonical-overrides.json SRC056. This pass set commencement to 1949-09-01 from the head date printed in both copies and s.2, and transcribed the First Schedule (s.48, the 1935 Karaiyur indenture of lease) and Second Schedule (s.54, four Ordinances) from the FAOLEX text layer into the tree's schedules with raw_text kept and two OCR corrections listed ('AI2. R3. PIO.7' read as 'A12. R3. P10.7'; a missing space). Amendment coverage: two chain instruments, neither held (pre-1956); nothing applied. Law 43 of 1973 excluded as not amending this Ordinance. OCR or structural weaknesses: ss.28 and 83 read as scrambled prose in the HTML source itself (recorded in the override, kept as printed); the FAOLEX text layer misreads 'MAKE' as 'MAK.E' and digit 1 as I throughout, so nothing of the body was taken from it. Missing sources: Ordinance No. 9 of 1947 and Act No. 13 of 1949; any Government Printer text later than the 1980 revised edition. Unresolved questions: whether any instrument after 1949 amended this Ordinance (no held copy names one; the RUBRIK lists none). Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
 }

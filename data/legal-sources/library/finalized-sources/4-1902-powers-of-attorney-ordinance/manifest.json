@@ -8,10 +8,134 @@
    "file": "4-1902-powers-of-attorney-ordinance-consolidated.html",
    "role": "principal statute",
    "edition": "consolidated",
-   "bytes": 17597,
-   "sha256": "5a5f1d2f27f511c36fbcd03b8e8922ffe9ca94d7a11f955a3a76b18fa3407fb0",
+   "bytes": 17253,
+   "sha256": "fb8c4caef3523d32cad2ba9722fffb3c087b505ecf86f45b08ab5d3bd27899d6",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/4-1902-powers-of-attorney-ordinance.html",
    "used_for": "parsed into 4-1902-powers-of-attorney-ordinance-consolidated.json"
+  },
+  {
+   "file": "14-2013-powers-of-attorney-amendment.pdf",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 73524,
+   "sha256": "52797a988e0a70f24ecb0b92913ec673f11ee4756ae03045552e8c059a4bb60e",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/14-2013-powers-of-attorney-amendment-act.pdf",
+   "used_for": "parsed into 14-2013-powers-of-attorney-amendment.json"
+  },
+  {
+   "file": "28-2022-powers-of-attorney-amendment.txt",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 34429,
+   "sha256": "7f1b2339761177a815b6d2da9a5a03119876c55752ac72a17b1c914250a70efa",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/ocr/28-2022-powers-of-attorney-amendment.txt",
+   "used_for": "parsed into 28-2022-powers-of-attorney-amendment.json"
+  },
+  {
+   "file": "28-2022-powers-of-attorney-amendment-scan.pdf",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 261230,
+   "sha256": "b8d49820a7beba5ca406b5e891b04fa828ff8892e9356c8082baad607e5d047c",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/28-2022-powers-of-attorney-amendment-act.pdf",
+   "used_for": "image source of 28-2022-powers-of-attorney-amendment.txt; no text layer, so it was not parsed directly"
+  },
+  {
+   "file": "3-2024-powers-of-attorney-amendment.pdf",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 128493,
+   "sha256": "18bc22e65229ace7f0d05bfd32f87602a4a7c4328da8610cc878fb3cf7ba9a90",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/3-2024-powers-of-attorney-amendment-act.pdf",
+   "used_for": "parsed into 3-2024-powers-of-attorney-amendment.json"
+  },
+  {
+   "file": "4-1902-powers-of-attorney-ordinance.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 1972451,
+   "sha256": "ce62e477712433067b7110e21f8ea9424f389085ae5ae071b1beaa26f887b23a",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/4-1902-powers-of-attorney-ordinance.pdf",
+   "used_for": "RGD consolidated PDF (Cap. 140, chain 4 of 1902, 9 of 1913, 33 of 1939; page 2 is a scan). Checked against the HTML baseline during the earlier Step 7 rounds; on 2026-09-05 its page-2 render supplied the twelve column headings of the original Schedule recorded in schedules_before_amendment"
   }
- ]
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "4-1902-powers-of-attorney-ordinance-consolidated.html",
+  "tree": "4-1902-powers-of-attorney-ordinance-consolidated.json",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; the page states no publisher)",
+  "consolidation_cutoff": "Ordinance No. 33 of 1939 (chain header), with an inline marker for Law No. 23 of 1978 on ss.2-3",
+  "cutoff_evidence": "HTML chain header 'Ordinance Nos, 4 of 1902, 9 of 1913, 33 of 1939' (the RGD PDF page 1 carries the same three-instrument chain and 'Cap. 140'); HTML marginal marker '[ 2 ; 3, Law 23 of 1978]' beside ss.2-3, which the parser's MARKER regex does not match and which is recorded by hand on s.2",
+  "post_baseline_applied": [
+   "14-2013",
+   "28-2022",
+   "3-2024"
+  ],
+  "decision": "The accepted HTML tree (9 sections) was diffed against data/processed/canonical-statutes/SRC017-4-1902.json on 2026-09-05 and found identical, so it had not been hand-finished; it is kept as the baseline and packaged with --package-only. The three post-baseline Acts held on disk were each parsed with parse_amendment_pdf.py (--amends SRC017), rebuilt by hand where the parser interleaved columns (all three) or read OCR (28 of 2022), and their operations applied to the baseline in the order 2013, 2022, 2024. Every applied node carries an amendment_event with applied: true and its earlier text in text_before_amendment; the resulting text is the pipeline's consolidation, not a publisher's."
+ },
+ "source_conflicts": [
+  "Chapter number: the RGD consolidated PDF prints 'Cap. 140' (1980 revised edition, page VI/323); Acts 14 of 2013, 28 of 2022 and 3 of 2024 cite 'Chapter 122' (1956 revised edition). Same Ordinance.",
+  "Term 'Registrar-General': the HTML baseline hyphenates it; Act 28 of 2022 repeals the definition of 'Registrar General' and its new text is unhyphenated. Treated as the same definition; recorded on the node.",
+  "Act 28 of 2022 s.2(1)(b) as OCR'd read 'No. 40 of 1981' for the Consular Functions Act; the page render reads 'No. 4 of 1981', as does Act 3 of 2024 s.4 for the same citation. Corrected in text; OCR kept in raw_text.",
+  "Curriculum cites 'No. 21 of 1844' for this Ordinance; that number belongs to the Wills Ordinance. The Ordinance is No. 4 of 1902 in the registry, the HTML header and the RGD PDF."
+ ],
+ "amendment_reconciliation": [
+  {
+   "instrument": "9-1913",
+   "title": "Ordinance No. 9 of 1913 (title not held; named only in the chain headers)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "named in the chain header of both held consolidated editions (LankaLaw HTML, RGD PDF); the instrument's own text is in no held archive",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "33-1939",
+   "title": "Ordinance No. 33 of 1939 (title not held; named only in the chain headers)",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "last instrument in the chain header of both held consolidated editions; own text not held",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "23-1978 (Law)",
+   "title": "Law No. 23 of 1978 (title not held; known only from the HTML marker '[ 2 ; 3, Law 23 of 1978]')",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "marker on ss.2-3 of the HTML edition, not in either chain header; the baseline wording ('attorney-at-law', 'Republic of Sri Lanka') reflects it. Own text not held. The parser drops the marker (semicolon list); recorded by hand on s.2",
+   "source_path": null,
+   "held": false
+  },
+  {
+   "instrument": "14-2013",
+   "title": "Powers of Attorney (Amendment) Act, No. 14 of 2013 (title page read; certified 23rd April, 2013; deemed in operation from January 1, 2013)",
+   "classification": "applied_from_held_source",
+   "reason": "Government Printer PDF with text layer (SRC018). Applied: s.2 replaces principal s.9 (fees); s.3 adds s.10 (Regulations). Not applied: s.4 Validation and s.5 Sinhala text, which do not amend the principal text. Tree 14-2013-powers-of-attorney-amendment.json rebuilt by hand from the layout rendering (parser interleaved the marginal notes)",
+   "source_path": "data/legal-sources/library/amendments/14-2013-powers-of-attorney-amendment-act.pdf",
+   "held": true
+  },
+  {
+   "instrument": "28-2022",
+   "title": "Powers of Attorney (Amendment) Act, No. 28 of 2022 (title page read; certified 25th of October, 2022)",
+   "classification": "applied_from_held_source",
+   "reason": "RGD copy of the Government Printer Act, 13-page scan with no text layer (SRC019). OCR'd with ocr_scanned_act.py to amendments/ocr/28-2022-powers-of-attorney-amendment.txt and proof-read against pdftoppm renders of pages 2-12 (36 corrections and 5 label/citation defects listed in the tree). Applied: s.2 two definitions in principal s.2; s.3 replaces s.3; s.4 inserts 3A-3D; s.5 replaces s.4; s.6 words in s.5; s.7 replaces the Schedule with Schedules I-III. Not applied: s.8 Transitional Provisions and s.9 Sinhala text (not amendments of the text). The wording rests on one OCR reading proof-read by eye",
+   "source_path": "data/legal-sources/library/amendments/28-2022-powers-of-attorney-amendment-act.pdf",
+   "held": true
+  },
+  {
+   "instrument": "3-2024",
+   "title": "Powers of Attorney (Amendment) Act, No. 3 of 2024 (title page read; certified 23rd of January, 2024)",
+   "classification": "applied_from_held_source",
+   "reason": "Parliament/Government Printer PDF with text layer (SRC020). Applied: s.2 words in the 'power of attorney' definition (b); s.3 on 3D (identical English words, no textual change, recorded); s.4 replaces 4(1)(b); s.5 replaces Schedule II. Not applied: s.6 Validation (varies the 2022 transitional period) and s.7 Sinhala text. Tree rebuilt by hand (parser read the Schedule items as sections)",
+   "source_path": "data/legal-sources/library/amendments/3-2024-powers-of-attorney-amendment-act.pdf",
+   "held": true
+  }
+ ],
+ "statute_note": "PRINCIPAL SOURCE SELECTED: the LankaLaw HTML consolidated edition (statutes/HTML/4-1902-powers-of-attorney-ordinance.html; chain 4 of 1902, 9 of 1913, 33 of 1939; marker Law 23 of 1978), the accepted 9-section tree, extended on 2026-09-05 by applying the three held post-baseline Acts; tree 4-1902-powers-of-attorney-ordinance-consolidated.json now holds ss.1-10 with 3A-3D (14 sections), three typed definitions in s.2, and Schedules I-III. OTHER SOURCES INSPECTED: the RGD consolidated PDF (statutes/4-1902-powers-of-attorney-ordinance.pdf, Cap. 140, same chain, page 2 a scan carrying the original Schedule), carried as a verification source; the three amending Acts (title pages read, listed in amendment_reconciliation); the OCR sidecar of the 2022 Act. CONSOLIDATION CUTOFF of the baseline: Ordinance No. 33 of 1939 (chain header) plus the Law 23 of 1978 marker; after application the text stands at Act No. 3 of 2024, a consolidation produced by this pipeline, not by a publisher. REVIEW PERFORMED: baseline diffed against the canonical parse (identical) and left as accepted (three earlier single-lens rounds recorded in overrides_applied); the 2013 and 2024 Acts read in full from pdftotext -layout, the 2022 Act read in full from page renders; each amending tree rebuilt by hand with the parser reading kept in raw_text; every operation applied recorded on the node with text_before_amendment. Coverage of the amending trees against their sources is reported in the handoff. No new five-lens subagent rounds were run. AMENDMENT COVERAGE: six instruments have reconciliation rows: 9 of 1913 and 33 of 1939 (chain, not held), Law 23 of 1978 (marker only, not held), 14 of 2013, 28 of 2022 and 3 of 2024 (held and applied). Nothing applied twice; the transitional and Sinhala-text sections of the Acts were not applied. OCR OR STRUCTURAL WEAKNESSES: Act 28 of 2022 rests on a single OCR reading proof-read by eye (36 corrections, incl. 'No. 40 of 1981' -> 'No. 4 of 1981'); its Schedule forms were transcribed from the renders because the OCR jumbled them. The baseline's known parser limitations remain (s.6 second marginal note 'Inspection of documents.' has no node; the Law 23 of 1978 marker is hand-recorded). Sections inserted by the Acts say 'this Act' where the Ordinance says 'this Ordinance'; kept as enacted. Act 3 of 2024 s.3 substitutes identical English words in 3D. MISSING SOURCES: Ordinances 9 of 1913 and 33 of 1939 and Law 23 of 1978 (own texts); any published consolidation later than 1939; the Gazette regulations under s.10. UNRESOLVED QUESTIONS: (1) chapter number Cap. 140 (RGD PDF) v. Chapter 122 (the Acts); (2) whether Act 28 of 2022 s.2(1)(b) reads 'No. 4 of 1981' (render) rather than the OCR's 'No. 40 of 1981'; (3) the curriculum's 'No. 21 of 1844' is the Wills Ordinance's number; (4) the commencement of Act 28 of 2022 (certified 25 October 2022; Act 3 of 2024 s.6 speaks of powers executed prior to October 25, 2022) and whether its s.1 states a date -- it does not. LAWYER VERIFICATION: unverified. Every tree carries verification_status unverified.",
+ "lawyer_verification": "unverified"
 }

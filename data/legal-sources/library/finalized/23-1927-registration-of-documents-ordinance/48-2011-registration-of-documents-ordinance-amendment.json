@@ -15,7 +15,7 @@
   "year": 1927
  },
  "certified_on": "24th November, 2011",
- "legal_draftsman_number": "22/2010",
+ "legal_draftsman_number": "O. 22/2010",
  "language": "en",
  "edition": {
   "publisher": "Government Printer, Sri Lanka",
@@ -69,11 +69,25 @@
    "type": "section",
    "number": "3",
    "heading": "Sinhala text to prevail in case of inconsistency.",
-   "raw_text": "3. In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail. 2 Registration of Documents (Foreign), Payable to the SUPERINTENDENT, GOVERNMENT PUBLICATIONS BUREAU, DEPARTMENT OF GOVERNMENT INFORMATION, NO. 163, KIRULAPONA MAWATHA, POLHENGODA, COLOMBO 05 before 15th",
-   "text": "In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail. 2 Registration of Documents (Foreign), Payable to the SUPERINTENDENT, GOVERNMENT PUBLICATIONS BUREAU, DEPARTMENT OF GOVERNMENT INFORMATION, NO. 163, KIRULAPONA MAWATHA, POLHENGODA, COLOMBO 05 before 15th",
+   "raw_text": "3. In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail.",
+   "text": "In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail.",
    "amendment_events": [],
    "cross_references": [],
-   "children": []
+   "children": [],
+   "text_raw_parser": "In the event of any inconsistency between the Sinhala and Tamil texts of this Act, the Sinhala text shall prevail. 2 Registration of Documents (Foreign), Payable to the SUPERINTENDENT, GOVERNMENT PUBLICATIONS BUREAU, DEPARTMENT OF GOVERNMENT INFORMATION, NO. 163, KIRULAPONA MAWATHA, POLHENGODA, COLOMBO 05 before 15th"
   }
- ]
+ ],
+ "certified_on_iso": "2011-11-24",
+ "quality_notes": [
+  "Parsed from the Government Printer PDF's own text layer (poppler, PowerShell). s.3 had run into the back-cover subscription imprint; removed on 2026-09-05, parser reading kept in text_raw_parser."
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "against": "pdftotext -layout of data/legal-sources/library/amendments/48-2011-registration-of-documents-amendment-act.pdf",
+  "what_changed": [
+   "Imprint removed from the tail of s.3."
+  ],
+  "note": "Re-running the parser writes data/processed/canonical-amendments/<instrument>.json without these corrections; this accepted copy is protected by provenance.hand_corrected. Rebuild the package with finalize_statute.py --package-only."
+ }
 }

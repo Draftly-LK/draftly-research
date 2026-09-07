@@ -1,0 +1,51 @@
+{
+ "statute": "Muslim Intestate Succession Ordinance",
+ "source_id": "SRC048",
+ "note": "Every source actually used to build the canonical trees in library/finalized/10-1931-muslim-intestate-succession-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "10-1931-muslim-intestate-succession-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 6731,
+   "sha256": "62e7893d8ff5533139aeb4ebabecb5355ec41a899070b97173f539d5fd66a727",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/10-1931-muslim-intestate-succession-ordinance.html",
+   "used_for": "parsed into 10-1931-muslim-intestate-succession-ordinance.json"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-3.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 26631560,
+   "sha256": "a2bcc592deac8abcd04d69584b34a3ab8146e75f7e51cb335b30656f7603c58c",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-3.pdf",
+   "used_for": "1980 revised edition, Cap. 72 (Vol. IV p. 28, PDF p. 735); chain header 'Ordinance No. 10 of 1931.' only; all four sections and the crossheading read against the tree"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "10-1931-muslim-intestate-succession-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Ordinance No. 10 of 1931 (principal only; the chain names no amending instrument)",
+  "cutoff_evidence": "HTML chain header reads 'Ordinance Nos, 10 of 1931 [ 17 th June , 1931 ]'. The 1980 revised edition (Cap. 72, Vol. IV p. 28) prints 'Ordinance No. 10 of 1931.' and '[l7th June, 1931]'. No inline marker on the page."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "33-1939",
+   "title": "not held; cited only in the curriculum list as 'Act No. 33 of 1939'",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "No held file, chain header or footnote names an instrument No. 33 of 1939 in connection with this Ordinance; neither revised edition lists anything after the principal. Recorded as a curriculum discrepancy, not as an amendment.",
+   "source_path": null,
+   "held": false
+  }
+ ],
+ "source_conflicts": [
+  "s.4 heading: HTML prints the damaged 'Declaration of to donations by section3'; the 1980 print reads 'Declaration of law relating to donations not covered by section 3'. The tree carries the override's corrected heading, which the 1980 print now confirms."
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML (data/legal-sources/library/statutes/HTML/10-1931-muslim-intestate-succession-ordinance.html, identifier 1981Y4V72C-1), parsed and reviewed by the earlier worker. Other sources inspected: the 1980 revised edition compendium, Cap. 72 (statutes/legislative-enactments-1980-volume-3.pdf, Vol. IV p. 28, PDF p. 735, text layer; registry SRC048 local_pdf_path), one page, read in full against the tree. The 1956 revised edition page named in override SRC048 (1956Y3V62C) is a URL, not a held file, and was not read. Consolidation cutoff: the principal Ordinance alone. Review performed this pass: packaging pass. Sections 1-4, the crossheading 'TESTATE AND INTESTATE SUCCESSION AND DONATIONS', the proviso to s.3 and the fideicommissa footnote read against the 1980 print; the s.4 heading correction confirmed there. Amendment coverage: none in either chain header, none on disk. The curriculum's 'Act No. 33 of 1939' has one row as unsupported. The footnote naming the Abolition of Fideicommissa and Entails Act, No. 20 of 1972 records that fideicommissa were abolished; it is not an amendment of this Ordinance and has no row. Sections 5-24 are omitted from both revised editions under s.6(1) of the Revised Editions of the Legislative Enactments Acts, as the tree's omitted_provisions records. OCR or structural weaknesses: none from OCR. Missing sources: the 1956 edition page the override cites; the text of any Act No. 33 of 1939. Unresolved questions: the content of the omitted ss.5-24 is not held in any edition on disk. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
+}

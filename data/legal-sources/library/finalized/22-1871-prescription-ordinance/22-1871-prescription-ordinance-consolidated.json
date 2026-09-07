@@ -25,18 +25,33 @@
    "type": "Ordinance",
    "number": 2,
    "year": 1889
+  },
+  {
+   "type": "Act",
+   "number": 26,
+   "year": 2014,
+   "applied_from_held_source": true
   }
  ],
  "verification_status": "unverified",
  "content_completeness": "",
- "amendment_history_status": "listed_in_source_header",
- "editorial_notes": [],
+ "amendment_history_status": "listed_in_source_header (Ordinance No. 2 of 1889); post-baseline Act No. 26 of 2014 applied from the held Government Printer PDF (see applied_amendments_log)",
+ "editorial_notes": [
+  {
+   "in": "section 15 (as substituted by Act No. 26 of 2014)",
+   "anchor_text": "AN ACT TO AMEND THE PRESCRIPTION ORDINANCE (CHAPTER 68)",
+   "text": "The amending Act cites the Ordinance as Chapter 68, the chapter number in the 1956 revised edition. Both held consolidated editions (LankaLaw HTML; Legislative Enactments 1980, Vol. IV) print it as Chapter 81. Same Ordinance, different revision.",
+   "kind": "citation form differs between editions"
+  }
+ ],
  "omitted_provisions": [],
  "overrides_applied": {
   "checked_against": "data/legal-sources/library/statutes/HTML/22-1871-prescription-ordinance.html",
   "note": "Sections 4-15 were silently dropped from the canonical tree: SECTION_CELL required the section number to sit inside its own inner <font> tag, which this document only does for sections 1-3 (a bold, anchor-linked number); sections 4 onward print the number as bare text directly inside the outer <font class=\"sectioncontent\">. Confirmed by running SECTION_CELL against the raw HTML directly -- it matched exactly 3 times before the fix. All 15 sections now parse; regression-checked against all 52 statute HTML files in the corpus (old regex vs. new regex, section numbers compared per file) and only this document's output changed."
  },
- "quality_flags": [],
+ "quality_flags": [
+  "post_baseline_operation_applied: section 15 carries the text substituted by Act No. 26 of 2014; the LankaLaw baseline wording is kept in text_before_amendment"
+ ],
  "source_location": {},
  "alternate_edition_variants": [],
  "schedules_referenced": [],
@@ -315,10 +330,76 @@
    "type": "section",
    "number": "15",
    "heading": "This Ordinance not to affect State or causes matrimonial.",
-   "raw_text": "15. Nothing herein contained shall in any way affect the rights of the State, or shall be taken to apply to any proceedings in any action for divorce, or to any case in which special provision has been or may hereafter be made for regulating and determining the period within which actions may be commenced against any public officer or other person.",
-   "text": "Nothing herein contained shall in any way affect the rights of the State, or shall be taken to apply to any proceedings in any action for divorce, or to any case in which special provision has been or may hereafter be made for regulating and determining the period within which actions may be commenced against any public officer or other person.",
-   "amendment_events": [],
-   "cross_references": []
+   "raw_text": "15. Nothing herein contained shall in any way— (a) affect the alienable or inalienable rights of the State; or (b) apply to any proceedings in any action for divorce, or to any case in which special provision has been or may hereafter be made for regulating and determining the period within which actions may be commenced against any public officer or other person.",
+   "text": "Nothing herein contained shall in any way—",
+   "amendment_events": [
+    {
+     "instrument": "26-2014",
+     "amending_act": "Act No. 26 of 2014",
+     "amending_act_no": 26,
+     "amending_year": 2014,
+     "amending_section": "2",
+     "operation": "repeal_and_substitute",
+     "applied": true,
+     "applied_on": "2026-09-05",
+     "classification": "applied_from_held_source",
+     "source": "data/legal-sources/library/amendments/incoming/26-2014-prescription-ordinance-amendment.pdf",
+     "note": "Section 2 of the Prescription (Amendment) Act, No. 26 of 2014 repeals section 15 and substitutes the section transcribed here; the marginal note it prints ('This Ordinance not to affect State or causes matrimonial.') is the heading already carried, so the heading is unchanged."
+    }
+   ],
+   "cross_references": [],
+   "text_before_amendment": "Nothing herein contained shall in any way affect the rights of the State, or shall be taken to apply to any proceedings in any action for divorce, or to any case in which special provision has been or may hereafter be made for regulating and determining the period within which actions may be commenced against any public officer or other person.",
+   "raw_text_before_amendment": "15. Nothing herein contained shall in any way affect the rights of the State, or shall be taken to apply to any proceedings in any action for divorce, or to any case in which special provision has been or may hereafter be made for regulating and determining the period within which actions may be commenced against any public officer or other person.",
+   "children": [
+    {
+     "type": "paragraph",
+     "number": "a",
+     "raw_text": "(a) affect the alienable or inalienable rights of the State; or",
+     "text": "affect the alienable or inalienable rights of the State; or",
+     "amendment_events": [],
+     "cross_references": []
+    },
+    {
+     "type": "paragraph",
+     "number": "b",
+     "raw_text": "(b) apply to any proceedings in any action for divorce, or to any case in which special provision has been or may hereafter be made for regulating and determining the period within which actions may be commenced against any public officer or other person.",
+     "text": "apply to any proceedings in any action for divorce, or to any case in which special provision has been or may hereafter be made for regulating and determining the period within which actions may be commenced against any public officer or other person.",
+     "amendment_events": [],
+     "cross_references": []
+    }
+   ]
   }
- ]
+ ],
+ "applied_amendments_log": [
+  {
+   "instrument": "26-2014",
+   "amending_section": "2",
+   "target": "15",
+   "operation": "repeal_and_substitute",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "instrument": "26-2014",
+   "amending_section": "3",
+   "target": "(none)",
+   "operation": "none",
+   "status": "no_operation",
+   "reason": "section 3 (Sinhala text to prevail in case of inconsistency) governs the amending Act's own texts and amends nothing in the Ordinance"
+  }
+ ],
+ "source_conflicts": [
+  "Spelling/spacing: the HTML prints 'herein before' (6 sites: ss. 3, 10 heading and text, 11, 14 x2); the 1980 revised edition (Vol. IV, Cap. 81, PDF pp. 270-272) prints 'hereinbefore' at the four sites that are legible in its text layer. Left as the HTML prints it; not modernised or joined by hand."
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "against": "Government Printer PDF of the Prescription (Amendment) Act, No. 26 of 2014 (text layer, pdftotext -layout from PowerShell/poppler), read directly; section list and chain header checked against Legislative Enactments 1980 Vol. IV Cap. 81 (PDF pp. 270-272)",
+  "what_changed": [
+   "s.15: text replaced by the section substituted by Act No. 26 of 2014 s.2 (two paragraphs (a) and (b) as children); the LankaLaw baseline wording kept in text_before_amendment / raw_text_before_amendment; amendment event recorded",
+   "amendments: Act No. 26 of 2014 appended with applied_from_held_source",
+   "applied_amendments_log, amendment_history_status, quality_flags, editorial_notes, source_conflicts added"
+  ],
+  "note": "Re-running build_canonical_statutes.py writes data/processed/canonical-statutes/SRC071-22-1871.json, not this file. finalize_statute.py leaves a tree carrying provenance.hand_corrected in place."
+ }
 }

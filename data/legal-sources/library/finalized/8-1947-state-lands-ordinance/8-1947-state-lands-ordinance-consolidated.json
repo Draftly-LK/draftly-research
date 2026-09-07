@@ -10,8 +10,8 @@
   "year": 1947
  },
  "date_stated_in_source": "1 st September , 1949",
- "commencement": null,
- "commencement_source": "",
+ "commencement": "1949-09-01",
+ "commencement_source": "date printed at the head of the source ('[ 1 st September , 1949 ]' in the LankaLaw HTML; '[1st September, 1949.]' in the FAOLEX PDF of Cap. 286) and s.2: '\"commencement\", when used with reference to this Ordinance, means the 1st day of September, 1949'. Not present in data/processed/statute_commencement.csv.",
  "language": "en",
  "edition": {
   "publisher": "lankalaw",
@@ -168,6 +168,14 @@
    ],
    "issue": "Section 86's second reference to the Civil Procedure Code ('sections 703 and 829A* of the Code shall have effect...') uses the bare phrase 'the Code' rather than repeating the full name or using 'that Code'/'the said Code', which neither EXTERNAL_REF nor THAT_ENACTMENT recognises as continuing the earlier-named enactment; recorded as internal to this Ordinance. The section's first, fuller reference ('...of the Civil Procedure Code') is correctly external. Section 86's footnote ('[* Section 829A is repealed by Law No. 20 of 1977]') has the same gap in isolation, with no enactment name in the footnote itself to resolve from.",
    "status": "known_parser_limitation"
+  },
+  {
+   "code": "validator_external_reference_false_positive",
+   "sections_affected": [
+    "89"
+   ],
+   "issue": "Section 89 reads 'sections 120 to 123 and 125 to 127 of the Land Development Ordinance'. Recorded in cross_references as external references to the Land Development Ordinance; confirmed word for word in the FAOLEX PDF (Cap. 286, p. XI/308 region). scripts/validate_finalized_trees.py decides internal-vs-external by a `scope`/`target_statute` key this parser does not write; it does not read `kind: external` or `target_document`, so these references to another enactment are reported as internal references beyond the last section. The tree records them as external, which is what the source says. No change to the text.",
+   "status": "documented_validator_warning"
   }
  ],
  "source_location": {},
@@ -176,7 +184,49 @@
   "First Schedule",
   "Second Schedule"
  ],
- "schedules": [],
+ "schedules": [
+  {
+   "citation": "First Schedule",
+   "heading": "FIRST SCHEDULE",
+   "applies_to": [
+    "48"
+   ],
+   "recovered_from": "the FAOLEX PDF of Cap. 286 (data/legal-sources/library/statutes/8-1947-state-lands-ordinance.pdf), p. XI/314-315, text layer. The LankaLaw HTML this tree was parsed from does not print the Schedules.",
+   "status": "recovered_from_alternate_edition",
+   "verification_status": "unverified",
+   "raw_text": "An indenture of lease dated the 10th and 24th days of September, 1935, whereby His Excellency Sir Francis Graeme Tyrrell, K.B.E., C.M.G., the then Officer Administering the Government of Ceylon, acting for and on behalf of his late Majesty King George the Fifth, leased and demised to the Urban District Council. Jaffna, for the purpose of housing people residing at Karaiyur within the Jaffna town within the area commonly called the Karaiyur slum area and thereby improving the sanitary condition of the said slum area, the following land :-\nAll that allotment of Crown land called Reclamation Ground in Karaiyur, within the Urban Council limits of Jaffna, Jaffna District, Northern Province, bounded as follows :-North by reclamation grounds said to be Crown, reservation along Beach Road and a road reservation; east by reservation for a road; south by reservation along Reclamation Road; west by reclamation grounds said to be Crown; containing in extent exclusive of road reservation twelve acres, three roods and ten perches and seven tenths of a perch (AI2. R3. PIO.7) and more particularly delineated and described in Lease Plan No. 5,764 dated the 27th day of August, 1935,authenticated by R. W. E. Ruddock, Acting Surveyor-General.",
+   "text": "An indenture of lease dated the 10th and 24th days of September, 1935, whereby His Excellency Sir Francis Graeme Tyrrell, K.B.E., C.M.G., the then Officer Administering the Government of Ceylon, acting for and on behalf of his late Majesty King George the Fifth, leased and demised to the Urban District Council. Jaffna, for the purpose of housing people residing at Karaiyur within the Jaffna town within the area commonly called the Karaiyur slum area and thereby improving the sanitary condition of the said slum area, the following land :-\nAll that allotment of Crown land called Reclamation Ground in Karaiyur, within the Urban Council limits of Jaffna, Jaffna District, Northern Province, bounded as follows :-North by reclamation grounds said to be Crown, reservation along Beach Road and a road reservation; east by reservation for a road; south by reservation along Reclamation Road; west by reclamation grounds said to be Crown; containing in extent exclusive of road reservation twelve acres, three roods and ten perches and seven tenths of a perch (A12. R3. P10.7) and more particularly delineated and described in Lease Plan No. 5,764 dated the 27th day of August, 1935, authenticated by R. W. E. Ruddock, Acting Surveyor-General.",
+   "corrections": [
+    {
+     "location": "extent in brackets",
+     "original_span": "(AI2. R3. PIO.7)",
+     "proposed_reading": "(A12. R3. P10.7)",
+     "confidence": "high",
+     "why_check": "text-layer OCR reads the digit 1 as capital I and 0 as O; the words 'twelve acres, three roods and ten perches and seven tenths of a perch' immediately before it give the figures"
+    },
+    {
+     "location": "last sentence",
+     "original_span": "1935,authenticated",
+     "proposed_reading": "1935, authenticated",
+     "confidence": "high",
+     "why_check": "missing space in the text layer; no letters changed"
+    }
+   ]
+  },
+  {
+   "citation": "Second Schedule",
+   "heading": "SECOND SCHEDULE",
+   "applies_to": [
+    "54"
+   ],
+   "recovered_from": "the FAOLEX PDF of Cap. 286 (data/legal-sources/library/statutes/8-1947-state-lands-ordinance.pdf), p. XI/315, text layer. The LankaLaw HTML this tree was parsed from does not print the Schedules.",
+   "status": "recovered_from_alternate_edition",
+   "verification_status": "unverified",
+   "raw_text": "The Thoroughfares Ordinance.\nThe Forest Ordinance.\nThe State Landmarks Ordinance.\nThe Gemming Ordinance, 1890.",
+   "text": "The Thoroughfares Ordinance.\nThe Forest Ordinance.\nThe State Landmarks Ordinance.\nThe Gemming Ordinance, 1890.",
+   "corrections": []
+  }
+ ],
  "body": [
   {
    "type": "section",
@@ -4360,5 +4410,15 @@
     }
    ]
   }
- ]
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "what_changed": [
+   "commencement: null -> 1949-09-01, commencement_source rewritten; taken from the date printed at the head of both held copies and s.2",
+   "schedules: [] -> First Schedule (s.48) and Second Schedule (s.54) transcribed from the FAOLEX PDF text layer, with raw_text kept and two OCR corrections listed",
+   "quality_flags: added `validator_external_reference_false_positive` for s.89"
+  ],
+  "corrected_by": "finalization worker, September 2026 packaging pass",
+  "basis": "FAOLEX PDF of Cap. 286 read against the HTML; body sections untouched"
+ }
 }

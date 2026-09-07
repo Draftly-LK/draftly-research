@@ -1,0 +1,65 @@
+{
+ "statute": "Companies Act",
+ "source_id": "SRC031",
+ "note": "Every source actually used to build the canonical trees in library/finalized/7-2007-companies-act. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "7-2007-companies-act-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 2089780,
+   "sha256": "9732fc08846d1fff47ea3abeb72dd19d3ff9bb33b1304fa702641a7ac205f674",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/7-2007-companies-act.html",
+   "used_for": "parsed into 7-2007-companies-act.json"
+  },
+  {
+   "file": "13-2019-companies-act-amendment.pdf",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 151456,
+   "sha256": "681948753de7370729cb4928aa6ca2c42d3390d37574b073a4b5fab8375ca798",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/companies-act-amendments-english.pdf",
+   "used_for": "parsed into 13-2019-companies-act-amendment.json"
+  },
+  {
+   "file": "7-2007-companies-act.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 1162144,
+   "sha256": "6fc7b6b36b00c786ba0b12386e4808a8f6c29fca353f00f72a5407a614d35a6a",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/7-2007-companies-act.pdf",
+   "used_for": "Government Printer PDF of the Act as certified on 20 March 2007 (488 pp, text layer, thirteen Schedules); ss.5(1), 9 and 10(1) read against the HTML baseline before Act 13 of 2019 was applied, wording identical; not parsed"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "7-2007-companies-act-consolidated.html",
+  "edition": "as_enacted text republished by LankaLaw (no chain header; the tree's edition.kind says 'consolidated'); Act No. 13 of 2019 applied to it by hand in this package",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Act No. 7 of 2007 (as enacted; no amending instrument incorporated in the baseline file)",
+  "cutoff_evidence": "The page carries no amendment-chain header and no inline marker. It opens 'Companies Act ... AN ACT TO AMEND AND CONSOLIDATE THE LAW RELATING TO COMPANIES ... [ 20 th March , 2007 ]'. The Government Printer PDF (statutes/7-2007-companies-act.pdf) is '[Certified on 20th March, 2007]'; ss.5(1), 9 and 10(1) read word for word identical in both before the 2019 Act was applied.",
+  "post_baseline_applied": [
+   "13-2019"
+  ]
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "13-2019",
+   "title": "COMPANIES (AMENDMENT) ACT, No. 13 OF 2019 (title page; certified 06 August 2019; Gazette supplement of 09 August 2019)",
+   "classification": "applied_from_held_source",
+   "reason": "Government Printer PDF, 4 pp, text layer (registry SRC032). Its four operations all quote baseline wording that the HTML contained verbatim: s.2 substitutes new paragraphs (b), (c), (d)(i)-(iii) for s.5(1)(b)-(c); s.3(1) repeals s.9(1); s.3(2) substitutes 'subsection (2)' for 'subsection (1) or (2)' in s.9(3); s.4 substitutes a new paragraph (b) with (i)-(ii) for s.10(1)(b). All four applied on 2026-09-05 and logged in the tree's applied_amendments_log with the former wording under text_before_amendment / children_before_amendment. The parsed amending tree was hand-corrected from the print (provenance.what_changed lists each fix) and sits in finalized/ as 13-2019-companies-act-amendment.json.",
+   "source_path": "data/legal-sources/library/amendments/companies-act-amendments-english.pdf",
+   "held": true
+  }
+ ],
+ "source_conflicts": [
+  "Schedules: the GP PDF prints thirteen Schedules; the HTML ends with the single word 'Schedules' and carries none of them. The tree lists them under schedules_referenced and holds no schedule text.",
+  "Hyphenation: the 2007 text (HTML and GP PDF) prints 'first-mentioned'; the 2019 Act prints 'first mentioned' in the paragraph it substitutes into s.10(1)(b). The applied text follows the 2019 print."
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML of the Act (data/legal-sources/library/statutes/HTML/7-2007-companies-act.html, identifier 2007Y0V0C7A), parsed and reviewed by the earlier worker (override SRC031: 23 Parts, 106 crossheadings, 3 subheadings, 534 sections, 13 referenced Schedules). Other sources inspected: the Government Printer PDF of the Act as certified on 20 March 2007 (statutes/7-2007-companies-act.pdf, 488 pp, text layer, registry SRC031), read at the title page, the table of sections and ss.5(1), 9 and 10(1), which match the HTML word for word; and the Government Printer PDF of the Companies (Amendment) Act, No. 13 of 2019 (amendments/companies-act-amendments-english.pdf, 4 pp, text layer, registry SRC032), read in full. Consolidation cutoff: the baseline file is the Act as enacted (no chain header). With Act No. 13 of 2019 applied in this package the tree stands at Act No. 13 of 2019. Review performed this pass: packaging plus one amendment. The three amended provisions were read in the HTML, the 2007 GP print and the 2019 GP print before and after application; the rest of the 534-section tree was not re-read and rests on the earlier structural review. The amending tree was rewritten by hand from the print because parse_amendment_pdf.py glued the quoted paragraphs, invented a paragraph (d) in s.4, dropped 'and' from s.5 and pulled the running headers into the text. Amendment coverage: one instrument known and held (13 of 2019), applied in full (four operations, nothing applied twice, s.9(1) kept as an emptied node so the section still numbers (1)-(3) as the amended Act does). No other amending instrument is named in either copy, in the RUBRIK entry or the curriculum list, and no other held file under amendments/ matches this Act. OCR or structural weaknesses: none from OCR. The thirteen Schedules are not in the tree; the HTML does not carry them and the GP PDF does. Registry row SRC032 records the amending Act as 'Companies Act Amendments', year 0, with no number; the title page reads Companies (Amendment) Act, No. 13 of 2019. Validator warnings left standing: sections 211 and 212 have no heading in the HTML and in the tree (pre-existing; the GP print's table of sections reads '211. Age limit not to apply if company so resolves' and '212. Duty of directors to disclose age', proposed to the coordinator as override section_headings, not written into the tree here); section 534 repeats its first child's text (documented in the tree). Missing sources: none for the applied amendment. Any Companies amendment after 2019 is not held and not known from what is held. Unresolved questions: whether further amendments exist after 13 of 2019; the Schedules remain to be transcribed from the GP PDF. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
+}

@@ -10,18 +10,77 @@
    "edition": "consolidated",
    "bytes": 44588,
    "sha256": "2cbdb07045df710151e56d555a3aa60b9d13efe7a1bec874f4dbf7a26119fb4a",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/statutes/HTML/14-1964-local-authorities-housing-act.html",
    "used_for": "parsed into 14-1964-local-authorities-housing-act-consolidated.json"
   },
   {
-   "file": "14-1964-local-authorities-housing-act.html",
+   "file": "63-1979-local-authorities-housing-amendment.html",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 15109,
+   "sha256": "2e99405d3ead6eef95a5b18ee888a32fd0f4d84805d1c6e0686676af3bce02e4",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/html/63-1979-local-authorities-housing-amendment.html",
+   "used_for": "parsed into 63-1979-local-authorities-housing-amendment.json"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-3.pdf",
    "role": "verification source, not parsed",
    "edition": "",
-   "bytes": 44588,
-   "sha256": "2cbdb07045df710151e56d555a3aa60b9d13efe7a1bec874f4dbf7a26119fb4a",
-   "copied_from": "data/legal-sources/library/statutes/HTML/14-1964-local-authorities-housing-act.html",
-   "used_for": "2-agent exhaustive review (short statute), clean except three confirmed source-level defects"
+   "bytes": 26631560,
+   "sha256": "a2bcc592deac8abcd04d69584b34a3ab8146e75f7e51cb335b30656f7603c58c",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-3.pdf",
+   "used_for": "1980 revised edition, Vol. III Cap. 601 (PDF pp. 254-257); chain header 'Acts Nos. 14 of 1964, 63 of 1979. [1st April, 1975.]'; headings of ss. 4, 10, 11A corrected from its marginal notes; word-level coverage 17.72% unmatched, almost all letter-spaced OCR noise and running headers (read, not just counted)"
+  },
+  {
+   "file": "63-1979-local-authorities-housing-amendment.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 6846571,
+   "sha256": "f4774b04bf78fd12f9eb0e1cd4d64d5879dcefc57041de83a26710d1c4f6f4fc",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/63-1979-local-authorities-housing-amendment.pdf",
+   "used_for": "Government Printer scan of Act No. 63 of 1979, 5 pp, no text layer; rendered and read page by page against the HTML-derived amending tree; source of the '(iii)' and 3(3)(b) corrections in the principal tree"
+  },
+  {
+   "file": "local-authorities-housing-ordinance-14-1964.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 12518754,
+   "sha256": "562bf2d5f2dc83baa3593ea86e0178b1b62ecada66c094c4d666f3fd8881c275",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/incoming/local-authorities-housing-ordinance-14-1964.pdf",
+   "used_for": "Government Printer scan of the Act as enacted, 7 pp, no text layer; title page and pp. 2-3 rendered and read: Date of Assent August 28, 1964; s.1 makes the appointed date the date of operation; reads 'Crown land' where the consolidated editions read 'State land'. Not parsed; not OCR'd"
   }
  ],
- "statute_note": "Parsed from a dedicated LankaLaw HTML page rather than the registry's shared Legislative Enactments 1980 Volume 3 compendium PDF. 14 sections. Three residues: distinct commencement vs. appointed-date concepts (not a discrepancy), three source-level typos, and one amendment marker corrupted in the source itself."
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "14-1964-local-authorities-housing-act-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Act No. 63 of 1979",
+  "cutoff_evidence": "HTML chain header reads 'Act Nos, 14 of 1964 63 of 1979 [1st April, 1975]'; inline markers '[ 3, 63 of 1979]' on s.5A and '[ 4, 63 of 1979]' on s.11A, and a corrupted '[section 2, 63 of ... 1979]' inside s.3(3)(b). The 1980 revised edition (Vol. III Cap. 601, PDF p. 254) reads 'Acts Nos. 14 of 1964, 63 of 1979. [1st April, 1975.]' and prints '[§ 4, 63 of 1979.]' on 11A."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "63-1979",
+   "title": "Local Authorities Housing (Amendment) Act, No. 63 of 1979",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Named in both chain headers and marked inline on ss. 3(3)(b), 5A and 11A. Held twice: LankaLaw HTML (complete, no subscription banner; parsed into the amending tree 63-1979-local-authorities-housing-amendment.json, hand-corrected) and the Government Printer scan (5 pp, no text layer; title page reads 'LOCAL AUTHORITIES HOUSING (AMENDMENT) ACT, No. 63 OF 1979, Certified on 15th October, 1979'; read page by page). Its three operations (substitute 3(3)(b), insert 5A, insert 11A) agree with the principal tree's markers; nothing applied",
+   "source_path": "data/legal-sources/library/amendments/63-1979-local-authorities-housing-amendment.pdf",
+   "html_path": "data/legal-sources/library/amendments/html/63-1979-local-authorities-housing-amendment.html",
+   "held": true
+  }
+ ],
+ "source_conflicts": [
+  "Commencement: statute_commencement.csv 1964-04-01 vs head date '1st April, 1975' in both consolidated editions; s.1 of the Act as enacted makes the appointed date the date of operation. Tree corrected to 1975-04-01; CSV value kept in commencement_csv_value. Registry/CSV correction proposed.",
+  "Headings: HTML ss. 4, 10 and 11A garbled or truncated against the Cap. 601 marginal notes and the as-enacted print; corrected, heading_raw kept. 'Short tile.' (s.1) is printed in both consolidated editions and kept.",
+  "Enumerator: HTML and the compendium text layer both read '(hi)' in 5A(3); the Government Printer print of Act 63 of 1979 reads '(iii)'. Corrected in text, raw_text kept.",
+  "Wording: the Act as enacted reads 'Crown land(s)'; both consolidated editions read 'State land(s)'. Revisers' substitution; consolidated wording kept.",
+  "5A dates: Act 63 of 1979 reads 'the date of coming into force of this section'; the consolidated editions read '15th day of October, 1979'. Revisers' substitution; kept and noted in the tree's editorial_notes."
+ ],
+ "statute_note": "Principal source selected: LankaLaw consolidated HTML (statutes/HTML/14-1964-local-authorities-housing-act.html), chain to Act No. 63 of 1979; byte-identical to the canonical parse SRC073-14-1964.json before this pass's hand corrections. Other sources inspected: Legislative Enactments 1980 Vol. III Cap. 601 (registry PDF, text layer, PDF pp. 254-257), verification source, carried in the package; Government Printer scan of the Act as enacted (statutes/incoming/local-authorities-housing-ordinance-14-1964.pdf, 7 pp, no text layer; title page and pp. 2-3 read), carried; LankaLaw HTML of Act 63 of 1979 (complete; parsed) and its Government Printer scan (5 pp, read in full), both carried. Consolidation cutoff: Act No. 63 of 1979 (both editions). Review performed: one worker; section list (1-12 with 5A and 11A, 14 sections) and chain header compared with the Cap. 601 print; all 14 headings compared with the Cap. 601 marginal notes (three corrected); word-level coverage against the Cap. 601 text (2867 words, 508 unmatched = 17.72%, almost entirely single letters from the letter-spaced text layer plus running headers and front matter; the unmatched list was read); s.3(3)(b), 5A and 11A read against the Act 63 of 1979 scan. No Step 7 subagent rounds. Amendment coverage: 1 reconciliation row; 63 of 1979 already in the baseline, its three operations corroborated by the amending tree; the corrupted marker on 3(3)(b) resolved by hand. Nothing applied. OCR or structural weaknesses: the compendium text layer is heavily letter-spaced, which is why the coverage figure is high; the amending tree's 5A was re-structured by hand from a flat parse and its layout choices are noted on the nodes. Missing sources: none for the chain. Unresolved questions: statute_commencement.csv gives 1964-04-01 and needs correcting to 1975-04-01; the LankaLaw marker regex does not read '[section 2, ...]' or '[§ n, ...]' forms. Lawyer verification: unverified.",
+ "lawyer_verification": "unverified"
 }

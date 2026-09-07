@@ -110,7 +110,12 @@
   }
  ],
  "verification_status": "unverified",
- "editorial_notes": [],
+ "editorial_notes": [
+  "Read in full against the Government Printer PDF (data/legal-sources/library/amendments/incoming/20-2005-tea-and-rubber-estate-control-of-fragmentation-act-amendment.pdf, 9 pp., text layer, certified 22nd July 2005): the same 12 sections, the same operations and the same inserted text; the HTML page carries no subscription banner. The RUBRIK's 'title does not match this statute' flag on this file is a false positive: the HTML title 'Tea And Rubber Estates (Control Of Fragmentation) (Amendment)' and the long title 'AN ACT TO AMEND THE TEA AND RUBBER ESTATES (CONTROL OF FRAGMENTATION) ACT, NO. 2 OF 1958' name this statute.",
+  "Section 9 refers to section 23A, the section it inserts into the principal enactment; the validator's 'beyond last section 12' warning is that reference, not a defect.",
+  "The Act names the renamed Board inconsistently: 'Tea, Rubber and Coconut Estates (Control of Fragmentation) Board' in section 3(1)(b) and 'Tea, Rubber and Coconut (Control of Fragmentation) Board' in section 3(2) and the marginal note (printed 'Contorl').",
+  "Government Printer parse (parse_amendment_pdf.py, regenerated output at data/processed/canonical-amendments/20-2005.json) folded sections 7 and 9 into section 12 and was not accepted; this HTML-derived tree stays the accepted one."
+ ],
  "quality_flags": [],
  "source_location": {},
  "body": [
@@ -1036,5 +1041,11 @@
     }
    ]
   }
- ]
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "what_changed": "editorial_notes added; no body text changed.",
+  "checked_against": "data/legal-sources/library/amendments/incoming/20-2005-tea-and-rubber-estate-control-of-fragmentation-act-amendment.pdf",
+  "corrected_on": "2026-09-05"
+ }
 }

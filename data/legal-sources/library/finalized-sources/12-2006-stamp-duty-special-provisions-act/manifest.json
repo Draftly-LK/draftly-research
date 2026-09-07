@@ -1,0 +1,87 @@
+{
+ "statute": "Stamp Duty (Special Provisions) Act",
+ "source_id": "SRC068",
+ "note": "Every source actually used to build the canonical trees in library/finalized/12-2006-stamp-duty-special-provisions-act. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "12-2006-stamp-duty-special-provisions-act-consolidated.pdf",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 104659,
+   "sha256": "34f85751e164f157096ff792e9d137ebb18be9bd557ce43fe572f736a5eb64f8",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/12-2006-stamp-duty-special-provisions-act.pdf",
+   "used_for": "parsed into 12-2006-stamp-duty-special-provisions-act-consolidated.json"
+  },
+  {
+   "file": "10-2008-stamp-duty-special-provisions-amendment.pdf",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 19867,
+   "sha256": "d58fc39ad7f185ce867c3a54f2aeb5531cdb331ff1a3ba8461b8da16cf3bb428",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/10-2008-stamp-duty-special-provisions-amendment-act.pdf",
+   "used_for": "parsed into 10-2008-stamp-duty-special-provisions-amendment.json"
+  },
+  {
+   "file": "stamp-duty-special-provision-2-10-2008.pdf",
+   "role": "amending Act, held but not parsed",
+   "edition": "as_enacted",
+   "bytes": 17461,
+   "sha256": "283e1252ff238d03616111671cbc7560c4821f7d6b952fcca845069461c5324c",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/incoming/stamp-duty-special-provision-2-10-2008.pdf",
+   "used_for": "second copy of Act No. 10 of 2008 held under statutes/incoming; identical text layer to the copy parsed (different bytes); not parsed separately"
+  },
+  {
+   "file": "12-2006-stamp-duty-act-amendment.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 30978,
+   "sha256": "11defaa0f22547364647ac5b53c0484e03e5a171d29e1c4c201c707b17ed5fc0",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/incoming/12-2006-stamp-duty-act-amendment.pdf",
+   "used_for": "Government Printer text of the Act as enacted (certified 31 March 2006); settled the as-enacted wording of sections 1-16, the long title, the original section 8 and paragraph 6(d) before Act No. 10 of 2008"
+  },
+  {
+   "file": "12-2006-stamp-duty-special-provisions.html",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 38025,
+   "sha256": "1c5dafc9acd81c98d49fb30efd216a8462b07d3c44a6501d3f1b1e28da834e6a",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/amendments/html/12-2006-stamp-duty-special-provisions.html",
+   "used_for": "LankaLaw HTML of the Act as enacted; supplied the structural skeleton (16 sections, 3 chapters, headings, 2 definitions) that the IRD consolidated text was reconciled against"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "12-2006-stamp-duty-special-provisions-act-consolidated.pdf",
+  "edition": "consolidated",
+  "publisher": "Inland Revenue Department",
+  "publisher_caveat": "The cover states: “this consolidated text cannot be regarded as a statutory copy of the Stamp Duty (Special Provisions) Act No 12 of 2006. It is prepared for the purpose of convenient reference only.” It is a departmental consolidation, not a Government Printer text.",
+  "consolidation_cutoff": "Act No. 10 of 2008",
+  "cutoff_evidence": "Cover, p.1: “This consolidated text of the Stamp Duty (Special Provisions) Act No 12 of 2006 incorporates the amendment made to that Act by the Stamp Duty (Special Provisions) (Amendment) Act No.10 of 2008.” Head of the Act, p.4: “Incorporating Stamp Duty (Special Provision) Amendment Act No 10 of 2008 Certified on 29th February 2008”. Inline margin markers at 6(d), 6(dd), 6(ddd): “$ 2, 10 of 2008 w.e.f.01.01.2008”; at section 8: “Repealed $ 3, 10 of 2008 w. e .f. 01.01.2008” and “$ 3, 10 of 2008 w.e.f.01.01.2008”. No later instrument is named anywhere in the file.",
+  "pages_used": "pp. 4-9 (Act); pp. 10-26 are appended Gazette Orders, excluded"
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "10-2008",
+   "title": "STAMP DUTY (SPECIAL PROVISIONS) (AMENDMENT) ACT, No. 10 OF 2008 [Certified on 29th February, 2008]; long title “AN ACT TO AMEND THE STAMP DUTY (SPECIAL PROVISIONS) ACT, NO. 12 OF 2006”",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "The IRD consolidation states on its cover that it incorporates this Act and marks each affected provision (6(d), 6(dd), 6(ddd), 8) with “$ 2, 10 of 2008” / “$ 3, 10 of 2008” w.e.f. 01.01.2008. The Act's own Government Printer text was parsed (10-2008-stamp-duty-special-provisions-amendment.json, hand-corrected) and its two operations agree with the consolidated text word for word; nothing was applied a second time. A second copy of the same Act (statutes/incoming/stamp-duty-special-provision-2-10-2008.pdf) has an identical text layer and is carried as a held file.",
+   "source_path": "data/legal-sources/library/amendments/10-2008-stamp-duty-special-provisions-amendment-act.pdf",
+   "duplicate_copy": "data/legal-sources/library/statutes/incoming/stamp-duty-special-provision-2-10-2008.pdf"
+  },
+  {
+   "instrument": "28-2018",
+   "title": "MEDICAL (AMENDMENT) ACT, No. 28 OF 2018 [Certified on 19th of September, 2018]; long title “AN ACT TO AMEND THE MEDICAL ORDINANCE (CHAPTER 105)”",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "The RUBRIK pairs this file with the Stamp Duty (Special Provisions) Act on the curriculum's number-year alone. Its title page and long title name the Medical Ordinance; nothing in it touches stamp duty. Excluded from the package. Whether a different Act No. 28 of 2018 amends this statute cannot be confirmed from anything held on disk.",
+   "source_path": "data/legal-sources/library/amendments/28-2018-medical-amendment.pdf"
+  }
+ ],
+ "statute_note": "Principal source: the Inland Revenue Department consolidated PDF (registry SRC068, 26 pp., text layer), pp. 4-9 of which carry the Act. It is a departmental consolidation and its cover says it cannot be regarded as a statutory copy. Other sources inspected: the Government Printer text of the Act as enacted (amendments/incoming/12-2006-stamp-duty-act-amendment.pdf, certified 31 March 2006, text layer); the LankaLaw HTML of the Act as enacted (amendments/html/12-2006-stamp-duty-special-provisions.html, 16 sections, no subscription banner; it sits in the amendments folder because the Act also bears on the Stamp Duty Act, No. 43 of 1982); two copies of Act No. 10 of 2008 (identical text layers); and amendments/28-2018-medical-amendment.pdf, which is the Medical (Amendment) Act and was excluded. Consolidation cutoff: Act No. 10 of 2008, from the cover statement, the head-of-Act line and the inline “$ 2, 10 of 2008” / “$ 3, 10 of 2008” markers. Review performed: scripts/parse_consolidated_pdf.py was run on the IRD PDF and its output (32 sections, marginal notes spliced into text, Gazette pages read as sections) was discarded; the tree was rebuilt by hand from the LankaLaw HTML skeleton (build_canonical_statutes.parse) with every node's wording reconciled against the IRD text: check_parse_coverage.py on pp. 4-9 leaves 116 of 2108 print words unmatched, all of them the repealed section 8 (carried under text_before_amendment), the margin notes, running headers and page numbers; a reverse check finds no tree word absent from the print. Against the Government Printer as-enacted text the residue is 23 words: running headers, page numbers and the pre-amendment section 8. Amendment coverage: Act No. 10 of 2008 is the only amending instrument known or held; it is already in the baseline, its own text was parsed and hand-corrected, and the two independent readings agree. Structural notes: the IRD print carries section 8 twice (repealed and substituted); the tree keeps the substituted text current and the repealed text under text_before_amendment. Printed errors are kept as printed (“PTOVIDE”, “date of it publication”, the missing opening quote before Commissioner – General in section 14); the as-enacted “or ;” in 3(1)(a) is “or” in the IRD text and the tree follows the IRD text. The legacy section index lists 37 sections for this Act against 16 in the Act: the 37 are lines harvested from the IRD PDF's table of sections and from the appended Gazette rate schedules (items such as “Policy of insurance”, “Rs”, “PROCEDURE”, “GENERAL”), not sections; the index was not edited. Missing sources: none for the Act itself; Part III of the Finance Act, No. 11 of 2002, which section 15 repeals, is not held. Unresolved: the registry's commencement date (2006-03-31) is the certification date; section 1(2) puts the Act into operation on 1 April 2006 and the tree records both. Lawyer verification: none. Everything here is pipeline output and remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
+}

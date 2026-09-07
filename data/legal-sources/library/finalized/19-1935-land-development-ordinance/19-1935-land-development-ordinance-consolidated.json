@@ -85,7 +85,7 @@
    "year": 1975
   }
  ],
- "verification_status": "unverified",
+ "verification_status": "needs_structural_review",
  "quality_flags": [
   {
    "code": "first_list_item_not_split",
@@ -101,7 +101,24 @@
    "status": "known_parser_limitation"
   }
  ],
- "editorial_notes": [],
+ "editorial_notes": [
+  {
+   "code": "stale_footnote_chapters_II_III",
+   "text_as_printed": "[*Chapters II and III (Sections 8 to 24) are repealed by Section 53, Law No. 43 of 1973]",
+   "location": "PDF beside s.25; the s.2 definition of 'regulation' also carries '* Section 8 is repealed by Law No. 43 of 1973.'",
+   "note": "ss.8-24 are present in both held editions with markers from Act No. 27 of 1981, whose long title repeals Law No. 43 of 1973. The footnote appears to be historical. Not resolved here; sections kept."
+  },
+  {
+   "code": "marker_13_of_1975",
+   "text_as_printed": "[89, 13 of 1975]",
+   "location": "PDF s.2 definitions, beside 'State Mortgage and Investment Bank'",
+   "note": "not in the chain header of either edition. The held LankaLaw HTML of the State Mortgage and Investment Bank Law, No. 13 of 1975 (84 sections) contains no section 89 and no reference to this Ordinance, so the operation could not be read from the instrument itself."
+  },
+  {
+   "code": "footnotes_lifted_from_body_text",
+   "note": "18 nodes had a bracketed repeal footnote swept into text by the two-column parse; removed from text, kept in raw_text and listed on each node under footnotes_removed_from_text"
+  }
+ ],
  "checked_against": "data/legal-sources/library/statutes/19-1935-land-development-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
  "schedules_referenced": [
   "Fourth Schedule",
@@ -548,7 +565,7 @@
      "term": "regulation",
      "qualifier": "",
      "raw_text": "'regulation' means a regulation made under this Ordinance by the Minister; * Section 8 is repealed by Law No. 43 of 1973.",
-     "text": "means a regulation made under this Ordinance by the Minister; * Section 8 is repealed by Law No. 43 of 1973.",
+     "text": "means a regulation made under this Ordinance by the Minister;",
      "amendment_events": [],
      "cross_references": [
       {
@@ -558,7 +575,10 @@
        "verbatim": "Section 8"
       }
      ],
-     "children": []
+     "children": [],
+     "footnotes_removed_from_text": [
+      "* Section 8 is repealed by Law No. 43 of 1973."
+     ]
     },
     {
      "type": "definition",
@@ -1711,7 +1731,7 @@
    "number": "25",
    "heading": "Form of permit",
    "raw_text": "25. Every permit shall be substantially in a prescribed form. [*Chapters II and III (Sections 8 to 24) are repealed by Section 53, Law No. 43 of 1973]",
-   "text": "Every permit shall be substantially in a prescribed form. [*Chapters II and III (Sections 8 to 24) are repealed by Section 53, Law No. 43 of 1973]",
+   "text": "Every permit shall be substantially in a prescribed form.",
    "amendment_events": [],
    "cross_references": [
     {
@@ -1727,14 +1747,17 @@
      "verbatim": "Section 53"
     }
    ],
-   "children": []
+   "children": [],
+   "footnotes_removed_from_text": [
+    "[*Chapters II and III (Sections 8 to 24) are repealed by Section 53, Law No. 43 of 1973]"
+   ]
   },
   {
    "type": "section",
    "number": "27",
    "heading": "Form of grant.",
    "raw_text": "27. Every grant shall be substantially in a prescribed form. [+Section 26 is repealed by Act No. 16 of 1969]",
-   "text": "Every grant shall be substantially in a prescribed form. [+Section 26 is repealed by Act No. 16 of 1969]",
+   "text": "Every grant shall be substantially in a prescribed form.",
    "amendment_events": [
     {
      "amending_act": "16 of 1969",
@@ -1754,7 +1777,10 @@
      "verbatim": "Section 26"
     }
    ],
-   "children": []
+   "children": [],
+   "footnotes_removed_from_text": [
+    "[+Section 26 is repealed by Act No. 16 of 1969]"
+   ]
   },
   {
    "type": "section",
@@ -1856,7 +1882,7 @@
    "number": "35",
    "heading": "conditions in grants.",
    "raw_text": "35. The Commissioner-General of Lands may authorize the Government Agent to include in a grant special conditions applicable to individual insertion of special cases or to classes of cases in particular areas. [Sections 32, 33, 34 and 36 are repealed by Act No. 16 of 1969]",
-   "text": "The Commissioner-General of Lands may authorize the Government Agent to include in a grant special conditions applicable to individual insertion of special cases or to classes of cases in particular areas. [Sections 32, 33, 34 and 36 are repealed by Act No. 16 of 1969]",
+   "text": "The Commissioner-General of Lands may authorize the Government Agent to include in a grant special conditions applicable to individual insertion of special cases or to classes of cases in particular areas.",
    "amendment_events": [
     {
      "amending_act": "11 of 2022",
@@ -1875,14 +1901,17 @@
      "verbatim": "Sections 32"
     }
    ],
-   "children": []
+   "children": [],
+   "footnotes_removed_from_text": [
+    "[Sections 32, 33, 34 and 36 are repealed by Act No. 16 of 1969]"
+   ]
   },
   {
    "type": "section",
    "number": "37",
    "heading": "Conditions in a grant to run with the land",
    "raw_text": "37. The conditions included in any grant shall, as from the date of such grant, run with the land and shall bind the original and all owners thereof and all persons whomsoever who acquire any title thereto. [Sections 32, 33, 34 and 36 are repealed by Act No. 16 of 1969]",
-   "text": "The conditions included in any grant shall, as from the date of such grant, run with the land and shall bind the original and all owners thereof and all persons whomsoever who acquire any title thereto. [Sections 32, 33, 34 and 36 are repealed by Act No. 16 of 1969]",
+   "text": "The conditions included in any grant shall, as from the date of such grant, run with the land and shall bind the original and all owners thereof and all persons whomsoever who acquire any title thereto.",
    "amendment_events": [],
    "cross_references": [
     {
@@ -1892,34 +1921,10 @@
      "verbatim": "Sections 32"
     }
    ],
-   "children": []
-  },
-  {
-   "type": "section",
-   "number": "38",
-   "heading": "Section 38 is repealed by Act No.",
-   "raw_text": "38. Section 38 is repealed by Act No. 4, 27 of 1981",
-   "text": "Section 38 is repealed by Act No. 4, 27 of 1981",
-   "amendment_events": [
-    {
-     "amending_act": "27 of 1981",
-     "amending_act_no": 27,
-     "amending_year": 1981,
-     "amending_section": "4",
-     "operation": "repeal",
-     "verbatim": "[4, 27 of 1981]",
-     "operation_source": "canonical-amendments/27-1981.json"
-    }
-   ],
-   "cross_references": [
-    {
-     "kind": "internal",
-     "target_document": "Land Development Ordinance",
-     "target_section": "38",
-     "verbatim": "Section 38"
-    }
-   ],
-   "children": []
+   "children": [],
+   "footnotes_removed_from_text": [
+    "[Sections 32, 33, 34 and 36 are repealed by Act No. 16 of 1969]"
+   ]
   },
   {
    "type": "section",
@@ -1983,7 +1988,7 @@
    "number": "41",
    "heading": "Scope of protection.",
    "raw_text": "41. The provisions of sections 39 and 40 shall apply to land alienated by grant or to land alienated on a permit in respect of which the permit- holder is paying an annual instalment by virtue of the provisions of section 19* notwithstanding the devolution or disposition under this Ordinance of the title of the original grantee or of such permit-holder to any other person. [*Section 19A is repealed by Law No. 43 of 1973]",
-   "text": "The provisions of sections 39 and 40 shall apply to land alienated by grant or to land alienated on a permit in respect of which the permit- holder is paying an annual instalment by virtue of the provisions of section 19* notwithstanding the devolution or disposition under this Ordinance of the title of the original grantee or of such permit-holder to any other person. [*Section 19A is repealed by Law No. 43 of 1973]",
+   "text": "The provisions of sections 39 and 40 shall apply to land alienated by grant or to land alienated on a permit in respect of which the permit- holder is paying an annual instalment by virtue of the provisions of section 19* notwithstanding the devolution or disposition under this Ordinance of the title of the original grantee or of such permit-holder to any other person.",
    "amendment_events": [
     {
      "amending_act": "27 of 1981",
@@ -2024,7 +2029,10 @@
      "verbatim": "Section 19A"
     }
    ],
-   "children": []
+   "children": [],
+   "footnotes_removed_from_text": [
+    "[*Section 19A is repealed by Law No. 43 of 1973]"
+   ]
   },
   {
    "type": "section",
@@ -2198,7 +2206,7 @@
      "type": "subsection",
      "number": "3",
      "raw_text": "(3) Any disposition, other than a disposition in accordance with the provisions of subsection (2), of any land alienated on a permit shall be null and void. [* Sections 44 and 45 are repealed by Act No. 16 of 1969]",
-     "text": "Any disposition, other than a disposition in accordance with the provisions of subsection (2), of any land alienated on a permit shall be null and void. [* Sections 44 and 45 are repealed by Act No. 16 of 1969]",
+     "text": "Any disposition, other than a disposition in accordance with the provisions of subsection (2), of any land alienated on a permit shall be null and void.",
      "amendment_events": [],
      "cross_references": [
       {
@@ -2215,7 +2223,10 @@
        "verbatim": "Sections 44"
       }
      ],
-     "children": []
+     "children": [],
+     "footnotes_removed_from_text": [
+      "[* Sections 44 and 45 are repealed by Act No. 16 of 1969]"
+     ]
     }
    ]
   },
@@ -2439,7 +2450,7 @@
      "type": "subsection",
      "number": "3",
      "raw_text": "(3) Any disposition or nomination made by a spouse in contravention of the provisions of subsection (2) shall be invalid. [*Section 19A is repealed by Law No. 43 of 1973]",
-     "text": "Any disposition or nomination made by a spouse in contravention of the provisions of subsection (2) shall be invalid. [*Section 19A is repealed by Law No. 43 of 1973]",
+     "text": "Any disposition or nomination made by a spouse in contravention of the provisions of subsection (2) shall be invalid.",
      "amendment_events": [],
      "cross_references": [
       {
@@ -2456,7 +2467,10 @@
        "verbatim": "Section 19A"
       }
      ],
-     "children": []
+     "children": [],
+     "footnotes_removed_from_text": [
+      "[*Section 19A is repealed by Law No. 43 of 1973]"
+     ]
     }
    ]
   },
@@ -2549,7 +2563,7 @@
    "number": "49",
    "heading": "Succession to land alienated on a permit or to a holding.",
    "raw_text": "49. Upon the death of a permit-holder who at the time of his or her death was paying an annual instalment by virtue of the provisions of section 19*, or of an owner of a holding, without leaving behind his or her spouse, or, where such permit-holder or owner died leaving behind his or her spouse, upon the failure of such spouse to succeed to the land alienated to that permit-holder on the permit or holding or upon the death of such spouse, a person nominated as successor by such permit- holder or owner shall succeed to that land or holding. [*Section 19A is repealed by Law No. 43 of 1973]",
-   "text": "Upon the death of a permit-holder who at the time of his or her death was paying an annual instalment by virtue of the provisions of section 19*, or of an owner of a holding, without leaving behind his or her spouse, or, where such permit-holder or owner died leaving behind his or her spouse, upon the failure of such spouse to succeed to the land alienated to that permit-holder on the permit or holding or upon the death of such spouse, a person nominated as successor by such permit- holder or owner shall succeed to that land or holding. [*Section 19A is repealed by Law No. 43 of 1973]",
+   "text": "Upon the death of a permit-holder who at the time of his or her death was paying an annual instalment by virtue of the provisions of section 19*, or of an owner of a holding, without leaving behind his or her spouse, or, where such permit-holder or owner died leaving behind his or her spouse, upon the failure of such spouse to succeed to the land alienated to that permit-holder on the permit or holding or upon the death of such spouse, a person nominated as successor by such permit- holder or owner shall succeed to that land or holding.",
    "amendment_events": [
     {
      "amending_act": "27 of 1981",
@@ -2584,14 +2598,17 @@
      "verbatim": "Section 19A"
     }
    ],
-   "children": []
+   "children": [],
+   "footnotes_removed_from_text": [
+    "[*Section 19A is repealed by Law No. 43 of 1973]"
+   ]
   },
   {
    "type": "section",
    "number": "51",
    "heading": "Restriction on nomination of successors to holdings",
    "raw_text": "51. No person shall be nominated by the owner of a holding or a permit- holder as his successor unless that person is the spouse of such owner or permit-holder, or belongs to one of the groups of relatives enumerated in rule 1 of the Third Schedule. [Section 50 is repealed by Act No. 16 of 1969]",
-   "text": "No person shall be nominated by the owner of a holding or a permit- holder as his successor unless that person is the spouse of such owner or permit-holder, or belongs to one of the groups of relatives enumerated in rule 1 of the Third Schedule. [Section 50 is repealed by Act No. 16 of 1969]",
+   "text": "No person shall be nominated by the owner of a holding or a permit- holder as his successor unless that person is the spouse of such owner or permit-holder, or belongs to one of the groups of relatives enumerated in rule 1 of the Third Schedule.",
    "amendment_events": [],
    "cross_references": [
     {
@@ -2601,7 +2618,10 @@
      "verbatim": "Section 50"
     }
    ],
-   "children": []
+   "children": [],
+   "footnotes_removed_from_text": [
+    "[Section 50 is repealed by Act No. 16 of 1969]"
+   ]
   },
   {
    "type": "section",
@@ -3193,7 +3213,7 @@
        "type": "subparagraph",
        "number": "ii",
        "raw_text": "(ii) where such permit-holder or owner dies leaving behind his or her spouse, from the date of the failure of such spouse to succeed, such date being reckoned according to the provisions of paragraph (b) of subsection (1), or of the death of such spouse, as the case may be. [*Section 19A is repealed by Law No. 43 of 1973]",
-       "text": "where such permit-holder or owner dies leaving behind his or her spouse, from the date of the failure of such spouse to succeed, such date being reckoned according to the provisions of paragraph (b) of subsection (1), or of the death of such spouse, as the case may be. [*Section 19A is repealed by Law No. 43 of 1973]",
+       "text": "where such permit-holder or owner dies leaving behind his or her spouse, from the date of the failure of such spouse to succeed, such date being reckoned according to the provisions of paragraph (b) of subsection (1), or of the death of such spouse, as the case may be.",
        "amendment_events": [],
        "cross_references": [
         {
@@ -3210,7 +3230,10 @@
          "verbatim": "Section 19A"
         }
        ],
-       "children": []
+       "children": [],
+       "footnotes_removed_from_text": [
+        "[*Section 19A is repealed by Law No. 43 of 1973]"
+       ]
       }
      ]
     }
@@ -3221,7 +3244,7 @@
    "number": "72",
    "heading": "Succession under the Third Schedule.",
    "raw_text": "72. If no successor has been nominated, or if the nominated successor fails to succeed, or if the nomination of a successor contravenes the provisions of this Ordinance, the title to the land alienated on a permit to a permit-holder who at the time of his or her death was paying an annual instalment by virtue of the provisions of section 19* or to the holding of an owner shall, upon the death of such permit-holder or owner without leaving behind his or her spouse, or, where such permit- holder or owner died leaving behind his or her spouse, upon the failure of such spouse to succeed to that land or holding, or upon the death of such spouse, devolve as prescribed in rule 1 of the Third Schedule. [*Section 19A is repealed by Law No. 43 of 1973] [Sections 69, 70 and 71 are repealed by Act No. 16 of 1969]",
-   "text": "If no successor has been nominated, or if the nominated successor fails to succeed, or if the nomination of a successor contravenes the provisions of this Ordinance, the title to the land alienated on a permit to a permit-holder who at the time of his or her death was paying an annual instalment by virtue of the provisions of section 19* or to the holding of an owner shall, upon the death of such permit-holder or owner without leaving behind his or her spouse, or, where such permit- holder or owner died leaving behind his or her spouse, upon the failure of such spouse to succeed to that land or holding, or upon the death of such spouse, devolve as prescribed in rule 1 of the Third Schedule. [*Section 19A is repealed by Law No. 43 of 1973] [Sections 69, 70 and 71 are repealed by Act No. 16 of 1969]",
+   "text": "If no successor has been nominated, or if the nominated successor fails to succeed, or if the nomination of a successor contravenes the provisions of this Ordinance, the title to the land alienated on a permit to a permit-holder who at the time of his or her death was paying an annual instalment by virtue of the provisions of section 19* or to the holding of an owner shall, upon the death of such permit-holder or owner without leaving behind his or her spouse, or, where such permit- holder or owner died leaving behind his or her spouse, upon the failure of such spouse to succeed to that land or holding, or upon the death of such spouse, devolve as prescribed in rule 1 of the Third Schedule.",
    "amendment_events": [
     {
      "amending_act": "27 of 1981",
@@ -3262,7 +3285,11 @@
      "verbatim": "Sections 69"
     }
    ],
-   "children": []
+   "children": [],
+   "footnotes_removed_from_text": [
+    "[*Section 19A is repealed by Law No. 43 of 1973]",
+    "[Sections 69, 70 and 71 are repealed by Act No. 16 of 1969]"
+   ]
   },
   {
    "type": "section",
@@ -3477,7 +3504,7 @@
      "type": "paragraph",
      "number": "b",
      "raw_text": "(b) if that permit-holder is not survived by his or her spouse or if the spouse does not succeed to the land, any other person who is a duly nominated successor of the deceased permit-holder shall be entitled to succeed to that land on such person obtaining a permit from the Government Agent under the provisions of this Ordinance to occupy that land. [*Section 19A is repealed by Law No. 43 of 1973] [Sections 77 to 83 are repealed by Act No. 16 of 1969]",
-     "text": "if that permit-holder is not survived by his or her spouse or if the spouse does not succeed to the land, any other person who is a duly nominated successor of the deceased permit-holder shall be entitled to succeed to that land on such person obtaining a permit from the Government Agent under the provisions of this Ordinance to occupy that land. [*Section 19A is repealed by Law No. 43 of 1973] [Sections 77 to 83 are repealed by Act No. 16 of 1969]",
+     "text": "if that permit-holder is not survived by his or her spouse or if the spouse does not succeed to the land, any other person who is a duly nominated successor of the deceased permit-holder shall be entitled to succeed to that land on such person obtaining a permit from the Government Agent under the provisions of this Ordinance to occupy that land.",
      "amendment_events": [],
      "cross_references": [
       {
@@ -3493,7 +3520,11 @@
        "verbatim": "Sections 77"
       }
      ],
-     "children": []
+     "children": [],
+     "footnotes_removed_from_text": [
+      "[*Section 19A is repealed by Law No. 43 of 1973]",
+      "[Sections 77 to 83 are repealed by Act No. 16 of 1969]"
+     ]
     }
    ]
   },
@@ -3828,7 +3859,7 @@
    "number": "105",
    "heading": "Power of the Government Agent in respect of a land alienated on a permit where there is a failure of succession or where such land has been vested in the State.",
    "raw_text": "105. Where in the case of a land alienated on a permit to any person who was at the time of his death paying an annual instalment by virtue of the provisions of section 19* there has been a failure of succession because there is no person lawfully entitled to succeed or because no person so entitled is willing to succeed or where any land has vested in the State under section 86, the Government Agent of the administrative district in which that land is situated shall be entitled to take possession of that land on behalf of the State. [*Section 19A is repealed by Law No. 43 of 1973]",
-   "text": "Where in the case of a land alienated on a permit to any person who was at the time of his death paying an annual instalment by virtue of the provisions of section 19* there has been a failure of succession because there is no person lawfully entitled to succeed or because no person so entitled is willing to succeed or where any land has vested in the State under section 86, the Government Agent of the administrative district in which that land is situated shall be entitled to take possession of that land on behalf of the State. [*Section 19A is repealed by Law No. 43 of 1973]",
+   "text": "Where in the case of a land alienated on a permit to any person who was at the time of his death paying an annual instalment by virtue of the provisions of section 19* there has been a failure of succession because there is no person lawfully entitled to succeed or because no person so entitled is willing to succeed or where any land has vested in the State under section 86, the Government Agent of the administrative district in which that land is situated shall be entitled to take possession of that land on behalf of the State.",
    "amendment_events": [
     {
      "amending_act": "27 of 1981",
@@ -3869,7 +3900,10 @@
      "verbatim": "Section 19A"
     }
    ],
-   "children": []
+   "children": [],
+   "footnotes_removed_from_text": [
+    "[*Section 19A is repealed by Law No. 43 of 1973]"
+   ]
   },
   {
    "type": "section",
@@ -4560,7 +4594,7 @@
      "type": "paragraph",
      "number": "b",
      "raw_text": "(b) where no permit has been issued to such person and where such person is in occupation of the land, such person shall vacate and deliver possession of the land on such date and at such time, and to such officer, as may be specified in the notice. [*Section 23A is repealed by Law No. 43 of 1973]",
-     "text": "where no permit has been issued to such person and where such person is in occupation of the land, such person shall vacate and deliver possession of the land on such date and at such time, and to such officer, as may be specified in the notice. [*Section 23A is repealed by Law No. 43 of 1973]",
+     "text": "where no permit has been issued to such person and where such person is in occupation of the land, such person shall vacate and deliver possession of the land on such date and at such time, and to such officer, as may be specified in the notice.",
      "amendment_events": [],
      "cross_references": [
       {
@@ -4570,7 +4604,10 @@
        "verbatim": "Section 23A"
       }
      ],
-     "children": []
+     "children": [],
+     "footnotes_removed_from_text": [
+      "[*Section 23A is repealed by Law No. 43 of 1973]"
+     ]
     }
    ]
   },
@@ -4674,7 +4711,7 @@
    "number": "125",
    "heading": "Order of ejectment.",
    "raw_text": "125. If, after due inquiry, the Magistrate is not satisfied that the person showing cause is entitled to the possession or occupation of the holding, he shall make order directing such person forthwith to be ejected from the holding. [Section 124 is repealed by Act No. 16 of 1969]",
-   "text": "If, after due inquiry, the Magistrate is not satisfied that the person showing cause is entitled to the possession or occupation of the holding, he shall make order directing such person forthwith to be ejected from the holding. [Section 124 is repealed by Act No. 16 of 1969]",
+   "text": "If, after due inquiry, the Magistrate is not satisfied that the person showing cause is entitled to the possession or occupation of the holding, he shall make order directing such person forthwith to be ejected from the holding.",
    "amendment_events": [
     {
      "amending_act": "16 of 1969",
@@ -4693,7 +4730,10 @@
      "verbatim": "Section 124"
     }
    ],
-   "children": []
+   "children": [],
+   "footnotes_removed_from_text": [
+    "[Section 124 is repealed by Act No. 16 of 1969]"
+   ]
   },
   {
    "type": "section",
@@ -5479,7 +5519,7 @@
      "type": "subsection",
      "number": "2",
      "raw_text": "(2) Save as is herein expressly provided, a local authority shall not take proceedings for the recovery of any sum due to such local authority from a permit-holder in respect of the land alienated to that permit- holder on the permit. [* Sections 144 to 151 are repealed by Act No. 16 of 1969]",
-     "text": "Save as is herein expressly provided, a local authority shall not take proceedings for the recovery of any sum due to such local authority from a permit-holder in respect of the land alienated to that permit- holder on the permit. [* Sections 144 to 151 are repealed by Act No. 16 of 1969]",
+     "text": "Save as is herein expressly provided, a local authority shall not take proceedings for the recovery of any sum due to such local authority from a permit-holder in respect of the land alienated to that permit- holder on the permit.",
      "amendment_events": [],
      "cross_references": [
       {
@@ -5489,7 +5529,10 @@
        "verbatim": "Sections 144"
       }
      ],
-     "children": []
+     "children": [],
+     "footnotes_removed_from_text": [
+      "[* Sections 144 to 151 are repealed by Act No. 16 of 1969]"
+     ]
     }
    ]
   },
@@ -6456,7 +6499,7 @@
    "number": "172",
    "heading": "Loans to permit- holders who are paying annual sums by virtue of provisions of section 19A (3)T",
    "raw_text": "172. Regulations may be made for lending money to permit-holders who are paying an annual instalment by virtue of the provisions of section 19* out of funds provided for the purpose by Parliament. Such regulations may prescribe the conditions upon which and the terms for which such money may be lent. Where default is made in the repayment of any money lent to such a permit-holder under this section such money together with the interest, if any, which is due thereon shall be deemed to be money due to the State under this Ordinance and may be recovered in the manner hereinbefore provided in Chapter X. [*Section 19A is repealed by Law No. 43 of 1973] [Section 171 is repealed by Act No. 16 of 1969] [First and Second Schedules are repealed by Act No. 16 of 1969]",
-   "text": "Regulations may be made for lending money to permit-holders who are paying an annual instalment by virtue of the provisions of section 19* out of funds provided for the purpose by Parliament. Such regulations may prescribe the conditions upon which and the terms for which such money may be lent. Where default is made in the repayment of any money lent to such a permit-holder under this section such money together with the interest, if any, which is due thereon shall be deemed to be money due to the State under this Ordinance and may be recovered in the manner hereinbefore provided in Chapter X. [*Section 19A is repealed by Law No. 43 of 1973] [Section 171 is repealed by Act No. 16 of 1969] [First and Second Schedules are repealed by Act No. 16 of 1969]",
+   "text": "Regulations may be made for lending money to permit-holders who are paying an annual instalment by virtue of the provisions of section 19* out of funds provided for the purpose by Parliament. Such regulations may prescribe the conditions upon which and the terms for which such money may be lent. Where default is made in the repayment of any money lent to such a permit-holder under this section such money together with the interest, if any, which is due thereon shall be deemed to be money due to the State under this Ordinance and may be recovered in the manner hereinbefore provided in Chapter X.",
    "amendment_events": [
     {
      "amending_act": "27 of 1981",
@@ -6497,7 +6540,414 @@
      "verbatim": "Section 171"
     }
    ],
+   "children": [],
+   "footnotes_removed_from_text": [
+    "[*Section 19A is repealed by Law No. 43 of 1973]",
+    "[Section 171 is repealed by Act No. 16 of 1969]",
+    "[First and Second Schedules are repealed by Act No. 16 of 1969]"
+   ]
+  }
+ ],
+ "omitted_provisions": [
+  {
+   "section": "26",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[+Section 26 is repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF p.7 beside s.27"
+  },
+  {
+   "section": "32",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 32, 33, 34 and 36 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside ss.35 and 37"
+  },
+  {
+   "section": "33",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 32, 33, 34 and 36 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside ss.35 and 37"
+  },
+  {
+   "section": "34",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 32, 33, 34 and 36 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside ss.35 and 37"
+  },
+  {
+   "section": "36",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 32, 33, 34 and 36 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside ss.35 and 37"
+  },
+  {
+   "section": "38",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 27 of 1981, s.4",
+   "source_marker": "Section 38 is repealed by Act No. 4, 27 of 1981 / marginal '[4, 27 of 1981]'",
+   "marker_location": "PDF, the s.38 slot",
+   "note": "the parse had turned this repeal note into a section node numbered 38 with the note as its heading and text; node removed"
+  },
+  {
+   "section": "44",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[* Sections 44 and 45 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.46(3)"
+  },
+  {
+   "section": "45",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[* Sections 44 and 45 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.46(3)"
+  },
+  {
+   "section": "50",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Section 50 is repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.51"
+  },
+  {
+   "section": "69",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 69, 70 and 71 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.72"
+  },
+  {
+   "section": "70",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 69, 70 and 71 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.72"
+  },
+  {
+   "section": "71",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 69, 70 and 71 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.72"
+  },
+  {
+   "section": "77",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 77 to 83 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.84"
+  },
+  {
+   "section": "78",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 77 to 83 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.84"
+  },
+  {
+   "section": "79",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 77 to 83 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.84"
+  },
+  {
+   "section": "80",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 77 to 83 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.84"
+  },
+  {
+   "section": "81",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 77 to 83 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.84"
+  },
+  {
+   "section": "82",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 77 to 83 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.84"
+  },
+  {
+   "section": "83",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Sections 77 to 83 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.84"
+  },
+  {
+   "section": "88",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "89",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "90",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "91",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "92",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "93",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "94",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "95",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "96",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "97",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "98",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "99",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "100",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "101",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "102",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "103",
+   "status": "absent_without_note_in_pdf; repealed per HTML marker and amending Act",
+   "repealed_by": "Act No. 16 of 1969, s.52",
+   "source_marker": "(none in the PDF: s.87 is followed directly by Chapter VIII, s.104)",
+   "marker_location": "absent from the PDF",
+   "note": "the LankaLaw HTML edition prints '[Sections 88 to 103 are repealed by Act No. 16 of 1969]' and the held HTML of Act No. 16 of 1969, s.52, reads 'Sections 88, 89, ... 102 and 103 of the principal enactment are hereby repealed'"
+  },
+  {
+   "section": "124",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Section 124 is repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF beside s.125"
+  },
+  {
+   "section": "144",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[* Sections 144 to 151 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.152(2)"
+  },
+  {
+   "section": "145",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[* Sections 144 to 151 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.152(2)"
+  },
+  {
+   "section": "146",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[* Sections 144 to 151 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.152(2)"
+  },
+  {
+   "section": "147",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[* Sections 144 to 151 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.152(2)"
+  },
+  {
+   "section": "148",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[* Sections 144 to 151 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.152(2)"
+  },
+  {
+   "section": "149",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[* Sections 144 to 151 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.152(2)"
+  },
+  {
+   "section": "150",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[* Sections 144 to 151 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.152(2)"
+  },
+  {
+   "section": "151",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[* Sections 144 to 151 are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.152(2)"
+  },
+  {
+   "section": "171",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[Section 171 is repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.172"
+  },
+  {
+   "section": "19A",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Law No. 43 of 1973",
+   "source_marker": "[*Section 19A is repealed by Law No. 43 of 1973]",
+   "marker_location": "PDF, repeated beside every citation of s.19A",
+   "note": "lettered section; not a numbering gap. The print still cites s.19A in ss.41, 48A(3), 49, 68, 72, 84(b), 105, 172"
+  },
+  {
+   "section": "23A",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Law No. 43 of 1973",
+   "source_marker": "[*Section 23A is repealed by Law No. 43 of 1973]",
+   "marker_location": "PDF beside s.118A(b)",
+   "note": "the tree nevertheless carries a s.23A (with 23B, inserted by Act No. 22 of 1993, s.4); whether the 1993 insertion re-enacted 23A or the footnote is stale is for a lawyer"
+  },
+  {
+   "section": "First Schedule",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[First and Second Schedules are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.172"
+  },
+  {
+   "section": "Second Schedule",
+   "status": "repealed_per_source_marker",
+   "repealed_by": "Act No. 16 of 1969",
+   "source_marker": "[First and Second Schedules are repealed by Act No. 16 of 1969]",
+   "marker_location": "PDF after s.172"
+  }
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "against": "pdftotext -layout (poppler, PowerShell) of data/legal-sources/library/statutes/19-1935-land-development-ordinance.pdf; LankaLaw HTML edition; held HTML of Act No. 16 of 1969",
+  "what_changed": [
+   "s.38: repeal-note stub ('38. Section 38 is repealed by Act No. 4, 27 of 1981') removed as a section node; recorded in omitted_provisions",
+   "bracketed repeal footnotes removed from text in 18 nodes (raw_text unchanged): s.2 definition regulation; s.25 section 25; s.27 section 27; s.35 section 35; s.37 section 37; s.41 section 41; s.46 subsection 3; s.48A subsection 3; s.49 section 49; s.51 section 51; s.68 subparagraph ii; s.72 section 72; s.84 paragraph b; s.105 section 105; s.118A paragraph b; s.125 section 125; s.152 subsection 2; s.172 section 172",
+   "omitted_provisions: all 44 numbered gaps plus 19A, 23A, 38 and the First/Second Schedules listed with the marker each rests on; 88-103 flagged absent-without-note in the PDF",
+   "editorial_notes: stale Chapters II-III footnote, unexplained '[89, 13 of 1975]' marker"
+  ],
+  "removed_node_38": {
+   "type": "section",
+   "number": "38",
+   "heading": "Section 38 is repealed by Act No.",
+   "raw_text": "38. Section 38 is repealed by Act No. 4, 27 of 1981",
+   "text": "Section 38 is repealed by Act No. 4, 27 of 1981",
+   "amendment_events": [
+    {
+     "amending_act": "27 of 1981",
+     "amending_act_no": 27,
+     "amending_year": 1981,
+     "amending_section": "4",
+     "operation": "repeal",
+     "verbatim": "[4, 27 of 1981]",
+     "operation_source": "canonical-amendments/27-1981.json"
+    }
+   ],
+   "cross_references": [
+    {
+     "kind": "internal",
+     "target_document": "Land Development Ordinance",
+     "target_section": "38",
+     "verbatim": "Section 38"
+    }
+   ],
    "children": []
   }
- ]
+ }
 }

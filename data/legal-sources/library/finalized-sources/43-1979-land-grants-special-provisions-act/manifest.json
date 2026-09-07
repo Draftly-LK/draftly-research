@@ -1,0 +1,44 @@
+{
+ "statute": "Land Grants (Special Provisions) Act",
+ "source_id": "SRC052",
+ "note": "Every source actually used to build the canonical trees in library/finalized/43-1979-land-grants-special-provisions-act. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "43-1979-land-grants-special-provisions-act-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 50900,
+   "sha256": "f1b31e286e017d2b25e3e97d40a19dc765ae9363f2c5e124b349e978f4bc3bf3",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/43-1979-land-grants-special-provisions-act.html",
+   "used_for": "parsed into 43-1979-land-grants-special-provisions-act.json"
+  },
+  {
+   "file": "43-1979-land-grants-special-provisions-act.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 80927,
+   "sha256": "66aeb12a5275f117611b90d407a22da846db86afb6bc9fe284c12f3092b03c9a",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/43-1979-land-grants-special-provisions-act.pdf",
+   "used_for": "LankaLaw revised-edition PDF, Cap. 287 (Vol. XI pp. 316-320, 5 pp, text layer); chain header 'Act No. 43 of 1979.' only; corroborates the s.9(4) Agrarian Services Act reading and the seven s.20 definitions; prints the s.3 Schedule (Form of instrument of disposition) that the HTML tree records as not held"
+  }
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "43-1979-land-grants-special-provisions-act-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Act No. 43 of 1979 (principal only; the chain names no amending instrument)",
+  "cutoff_evidence": "HTML chain header reads 'Act Nos, 43 of 1979 [ 25 th June , 1979 ]'. The LankaLaw PDF (Cap. 287, Vol. XI p. 316) prints 'Act No. 43 of 1979.' and '[25 th June. 1979.]'. No inline marker on either page."
+ },
+ "amendment_reconciliation": [],
+ "source_conflicts": [
+  "Schedule: absent from the HTML (dead 'Schedules' link); printed in the Cap. 287 PDF at Vol. XI p. 320 ('[Section 3.] SCHEDULE. INSTRUMENT OF DISPOSITION EFFECTING TRANSFER OF LAND UNDER SECTION 3 OF THE LAND GRANTS (SPECIAL PROVISIONS) ACT, 1979', two numbered clauses, attestation and a certificate under s.6(3)). The tree records the Schedule as referenced_not_held; a held file in this package now carries it.",
+  "s.9(4): both held consolidated editions read 'subsections (4), (5), (6), (7) and (9) of section 7 of the Agrarian Services Act'. The 'Agricultural Lands Law, No. 42 of 1973' reading in the tree's alternate_edition_variants was reported during review and is not in any held file with a text layer.",
+  "s.20: both held consolidated editions define seven terms; neither prints a definition of 'Land Reform Law'. The tree's omitted_provisions entry for that term rests on a report, not on a held file."
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML (data/legal-sources/library/statutes/HTML/43-1979-land-grants-special-provisions-act.html, identifier 1981Y11V287C-1), parsed and hand-corrected by the earlier worker (20 sections, 7 definitions, Schedule referenced). Other sources inspected: the LankaLaw revised-edition PDF, Cap. 287 (statutes/43-1979-land-grants-special-provisions-act.pdf, Vol. XI pp. 316-320, 5 pp, text layer; registry SRC052 local_pdf_path), read at the header, ss.1-3, ss.9-20 and the Schedule; and the parliamentary scan of the Act as certified on 25 June 1979 (statutes/incoming/land-grants-special-provisions-act-43-1979.pdf, 10 pp, no text layer; title page read as an image: 'LAND GRANTS (SPECIAL PROVISIONS) ACT, No. 43 OF 1979 [Certified on 25th June, 1979]'), not OCR'd and not included in the package because nothing was read from it beyond the title page. Consolidation cutoff: the principal Act alone. Review performed this pass: packaging pass. The Cap. 287 PDF confirms the s.13 marginal-note bleed correction, the s.9(4) Agrarian Services Act reading, the s.10 list of twelve relatives and the seven s.20 definitions. The tree's overrides_applied says no second edition was consulted; this pass supplies one, and the tree was not changed. Amendment coverage: none in either chain header, in the RUBRIK entry or on disk; the table is empty. If the Agrarian Services Act displaced the Agricultural Lands Law in s.9(4), the instrument that did so is not named in any held copy. OCR or structural weaknesses: none from OCR. The Schedule is not in the tree though the Cap. 287 PDF in this package prints it. Missing sources: an OCR of the parliamentary scan, which alone could show the Act as passed (and settle the s.9(4) and 'Land Reform Law' questions). Unresolved questions: whether to transcribe the Schedule from the Cap. 287 PDF into the tree; the as-passed wording of s.9(4) and s.20. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
+}

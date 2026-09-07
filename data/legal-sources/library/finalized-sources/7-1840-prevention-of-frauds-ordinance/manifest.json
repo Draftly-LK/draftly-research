@@ -10,6 +10,7 @@
    "edition": "consolidated",
    "bytes": 126476,
    "sha256": "b2d489a83ca491c97daf3a99bdf2a5191788ed00672791476717f872bc62b073",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/statutes/7-1840-prevention-of-frauds-ordinance.pdf",
    "used_for": "parsed into 7-1840-prevention-of-frauds-ordinance-consolidated.json"
   },
@@ -19,6 +20,7 @@
    "edition": "as_enacted",
    "bytes": 121131,
    "sha256": "c99ce0af7bbf683d8f8a7cd7647224c3420568d062a71a613e3ac4112083d3b2",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/amendments/30-2022-prevention-of-frauds-amendment-act.pdf",
    "used_for": "parsed into 30-2022-prevention-of-frauds-ordinance-amendment.json"
   },
@@ -28,8 +30,74 @@
    "edition": "as_enacted",
    "bytes": 115742,
    "sha256": "6c98a2dd648c29fe70d6722ef29224907f61b472ed908da1b7ca66c941ff138f",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/amendments/4-2024-prevention-of-frauds-amendment-act.pdf",
    "used_for": "parsed into 4-2024-prevention-of-frauds-ordinance-amendment.json"
+  },
+  {
+   "file": "7-1840-prevention-of-frauds-ordinance.html",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 30558,
+   "sha256": "213e611613cd26f49dfdbb2482af8f6b1b6ae8de70a40275425e67a9bb2572d5",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/7-1840-prevention-of-frauds-ordinance.html",
+   "used_for": "LankaLaw HTML edition of the Ordinance, chain to 60 of 1947 (pre-2022 text); every node and heading of the accepted tree was checked against it; it agreed on the 15 unamended sections, differed on sections 2, 4, 7 and 16 exactly where Acts 30 of 2022 and 4 of 2024 operate, and exposed no other disagreement"
   }
- ]
+ ],
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "7-1840-prevention-of-frauds-ordinance-consolidated.pdf",
+  "tree": "7-1840-prevention-of-frauds-ordinance-consolidated.json",
+  "edition": "consolidated",
+  "publisher": "not stated (registry: LankaLaw download 'Prevention-of-Frauds-Consolidated-2024.pdf')",
+  "consolidation_cutoff": "Act No. 4 of 2024",
+  "cutoff_evidence": "Chain header: 'Ordinance Nos, 7 of 1840 16 of 1852 11 of 1896 60 of 1947 Act Nos, 30 of 2022 4 of 2024'. Inline markers: '[2, 4 of 2024]', '[2, 30 of 2022]', '[2, 60 of 1947]' beside section 2; '[3, 30 of 2022]' (section 4), '[4, 30 of 2022]' (section 7), '[5, 30 of 2022]' (section 16)."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "16-1852",
+   "title": "Ordinance No. 16 of 1852 (title not read: no copy held)",
+   "classification": "known_but_not_held",
+   "reason": "Named in both editions' chain headers; pre-1956 instrument not in any archive on disk. Its operations are in the baseline by the publisher's consolidation and cannot be checked.",
+   "source_path": null
+  },
+  {
+   "instrument": "11-1856",
+   "title": "not known (no copy held; no chain names it)",
+   "classification": "ambiguous_or_unconfirmed",
+   "reason": "Listed for this Ordinance in the RUBRIK from the curriculum only. It appears in neither the PDF nor the HTML chain header and no copy is held, so whether it amended this Ordinance at all cannot be confirmed from what is on disk. Recorded as a curriculum discrepancy; nothing applied.",
+   "source_path": null
+  },
+  {
+   "instrument": "11-1896",
+   "title": "Ordinance No. 11 of 1896 (title not read: no copy held)",
+   "classification": "known_but_not_held",
+   "reason": "Named in both chain headers; not held.",
+   "source_path": null
+  },
+  {
+   "instrument": "60-1947",
+   "title": "Ordinance No. 60 of 1947 (title not read: no copy held)",
+   "classification": "known_but_not_held",
+   "reason": "Named in both chain headers and marked '[2, 60 of 1947]' on section 2 in both editions (the Thesawalamai Pre-emption notice words), so its operation is in the baseline; its own text is not held.",
+   "source_path": null
+  },
+  {
+   "instrument": "30-2022",
+   "title": "PREVENTION OF FRAUDS (AMENDMENT) ACT, No. 30 OF 2022 [Certified on 25th of October, 2022] -- 'AN ACT TO AMEND THE PREVENTION OF FRAUDS ORDINANCE (CHAPTER 70)'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "In the PDF chain header; markers on sections 2, 4, 7 and 16 match its sections 2 to 5 one-to-one (section 2 amended; section 4 recast into subsections (1) and (2) with thumb impression; section 7 signature and thumb impression with provisos; section 16 'duplicate' -> 'triplicate'). Own text held as the Government Printer PDF (registry SRC002, hash matches), parsed; nothing applied a second time.",
+   "source_path": "data/legal-sources/library/amendments/30-2022-prevention-of-frauds-amendment-act.pdf"
+  },
+  {
+   "instrument": "4-2024",
+   "title": "PREVENTION OF FRAUDS (AMENDMENT) ACT, No. 4 OF 2024 [Certified on 23rd of January, 2024] -- 'AN ACT TO AMEND THE PREVENTION OF FRAUDS ORDINANCE (CHAPTER 70)'",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Last instrument in the chain and the cutoff; marker '[2, 4 of 2024]' on section 2 matches its section 2 (replaces 2(1)(a), amends 2(1)(b)). Own text held as the Government Printer PDF (registry SRC003, hash matches), parsed; nothing applied a second time.",
+   "source_path": "data/legal-sources/library/amendments/4-2024-prevention-of-frauds-amendment-act.pdf"
+  }
+ ],
+ "statute_note": "Principal source selected: the consolidated two-column PDF 7-1840-prevention-of-frauds-ordinance-consolidated.pdf (registry SRC001, statutes/7-1840-prevention-of-frauds-ordinance.pdf, text layer, publisher not stated; the registry records it as a LankaLaw download consolidated to 2024), parsed into 7-1840-prevention-of-frauds-ordinance-consolidated.json, 19 sections. Other sources inspected: the LankaLaw HTML edition statutes/HTML/7-1840-prevention-of-frauds-ordinance.html (19 sections, chain 'Ordinance Nos, 7 of 1840 16 of 1852 11 of 1896 60 of 1947', head date '[ 1 st February , 1840 ]', one marker '[2,60 of 1947]'), which stops before the 2022 and 2024 Acts and is carried in the package as a verification source; the Government Printer PDFs of the Prevention of Frauds (Amendment) Acts No. 30 of 2022 and No. 4 of 2024 (text layers; registry SRC002 and SRC003; parsed into the two amending trees). Consolidation cutoff: Act No. 4 of 2024, from the chain header 'Ordinance Nos, 7 of 1840 16 of 1852 11 of 1896 60 of 1947 Act Nos, 30 of 2022 4 of 2024' and the marker '[2, 4 of 2024]' beside section 2. Review performed: every node's text and every heading of the tree was checked for presence in the HTML edition after case and punctuation folding. Fifteen sections (1, 3, 5, 6, 8 to 15, 17, 18, 19) agree word for word; sections 2, 4, 7 and 16 differ exactly where the 2022 and 2024 Acts operate, and the two Acts' own instruction lists were matched against the six inline markers of the PDF (they agree). The comparison exposed two-column parser residue in the accepted tree: in section 5 the marginal note 'Appointments by will to be executed like other wills, and to be valid although other required solemnities are not observed.' had lost 'will to be executed' and 'not' into the body, which read 'expressly not required' where the print reads 'expressly required'; in section 8 the note's last word 'it.' sat inside 'any will, testament, it. or codicil'. Both were corrected from the PDF marginal notes with the parser reading kept (heading_raw, text_before_correction, corrections). In the two amending trees the marginal note 'Short title' had been read into the body of section 1 and the heading left empty; corrected from the Government Printer text. The tree passes validate_finalized_trees.py with zero errors; the one warning (sections 3 and 4 keep the full text on the section as well as in subsections) is a parser convention noted in the tree. Amendment coverage: six instruments have reconciliation rows. 16 of 1852, 11 of 1896 and 60 of 1947 are in both chains and not held; 30 of 2022 and 4 of 2024 are held, incorporated in the baseline and cross-checked; 11 of 1856 comes from the curriculum only, appears in no chain and is not held (ambiguous). Nothing was applied by hand. OCR or structural weaknesses: none beyond the parser residue now corrected; both editions have text layers or semantic HTML. Both print 'naturally executed' in the section 3 heading, which reads as a misprint for 'notarially' and is kept. Section 15 prints the footnote '(*Repealed by Ordinance No. 7 of 1840.)' inline after 'Ordinance No. 7 of 1834*'. Missing sources: own text of the three Ordinances in the chain; no Government Printer edition of the Ordinance itself. Unresolved questions: whether Ordinance No. 11 of 1856 ever amended this Ordinance. Git note: the two amending PDFs in this package show as modified in git status because of a Git LFS pointer/smudge state, not a content change; their SHA-256 match the registry rows SRC002 and SRC003 and the manifest. Not touched. Lawyer-verification status: unverified. Everything here is pipeline output.",
+ "lawyer_verification": "unverified"
 }

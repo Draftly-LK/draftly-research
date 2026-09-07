@@ -1,0 +1,54 @@
+{
+ "statute": "Deeds and Documents (Execution before Public Officers) Ordinance",
+ "source_id": "SRC070",
+ "note": "Every source actually used to build the canonical trees in library/finalized/17-1852-deeds-and-documents-execution-before-public-officers-ordinance. Copies, not moves; the originals stay where the registry points.",
+ "status": "unverified until a lawyer signs it off",
+ "files": [
+  {
+   "file": "17-1852-deeds-and-documents-execution-before-public-officers-ordinance-consolidated.html",
+   "role": "principal statute",
+   "edition": "consolidated",
+   "bytes": 12035,
+   "sha256": "31525fc6e997588a003c1161b75144ce3f09577aafe2dfbd9c03911717b6f2fa",
+   "hash_mode": "text-lf",
+   "copied_from": "data/legal-sources/library/statutes/HTML/17-1852-execution-of-deeds-ordinance.html",
+   "used_for": "parsed into 17-1852-deeds-and-documents-execution-before-public-officers-ordinance.json"
+  },
+  {
+   "file": "legislative-enactments-1980-volume-2.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 15080535,
+   "sha256": "595c8158f5c2bc94a4558dac1d8138314d3893b585cccd924f56b5ba4c67739b",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/legislative-enactments-1980-volume-2.pdf",
+   "used_for": "1980 revised edition, Cap. 85 (Vol. IV pp. 124-125, PDF pp. 215-216); chain header garbled as 'Ordinances Nos. 17 of 1852, 0 \\''; confirms the section 1 short title, all seven sections and the s.3 second marginal note; prints the s.5 form of certificate the HTML omits"
+  }
+ ],
+ "pipeline_status": "needs_structural_review",
+ "baseline": {
+  "file": "17-1852-deeds-and-documents-execution-before-public-officers-ordinance-consolidated.html",
+  "edition": "consolidated",
+  "publisher": "LankaLaw (private republisher; page states no publisher)",
+  "consolidation_cutoff": "Ordinance No. 5 of 1875",
+  "cutoff_evidence": "HTML chain header reads 'Ordinance Nos, 17 of 1852 5 of 1875 [ 1 st July , 1853 ]'. The 1980 revised edition (Cap. 85, Vol. IV p. 124) prints 'Ordinances Nos. 17 of 1852, 0 '' with the second instrument illegible in the text layer, and '[1st July. 1853.]'. No inline marker on either page."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "5-1875",
+   "title": "Ordinance No. 5 of 1875 (title not held; named only in the HTML chain header)",
+   "classification": "known_but_not_held",
+   "reason": "Named in the HTML chain header as folded into the text; the 1980 print's header names a second instrument whose number the text layer garbles. Its own text is not held, neither page carries an inline marker, so which section it changed is not recorded anywhere in this corpus.",
+   "source_path": null,
+   "held": false
+  }
+ ],
+ "source_conflicts": [
+  "Body wording, ss.2, 4 and 5: the HTML reads 'District Judge or Commissioner of a Court of Requests*', 'Minister of Justice', 'such Judge or Commissioner*' and 'No such Judge, Commissioner, or Justice'; the 1980 print reads 'District Judge or Judge of a Primary Court', 'Minister in charge of the subject of Justice', 'such Judge or of such Justice' and 'No such Judge or Justice'. The s.2 marginal note differs the same way ('District Judge or Commissioner, & c.' against 'District Judge or Judge of a Primary Court, &c.'). The two held editions therefore disagree on operative wording; the tree follows the HTML. The HTML's two dangling asterisks in s.2 sit exactly where the 1980 print has the newer wording, so they probably marked footnotes about that substitution, but no footnote text survives on the page.",
+  "Chain header: HTML '17 of 1852 5 of 1875'; 1980 print 'Nos. 17 of 1852, 0 '' (garbled).",
+  "s.5 form of certificate: absent from the HTML (the page runs from 'that is to say,' straight to s.6); printed in the 1980 edition at Vol. IV pp. 124-125.",
+  "Title: registry 'Execution of Deeds Ordinance' (the running header, a subject heading); s.1 in both editions cites the 'Deeds and Documents (Execution before Public Officers) Ordinance'. Recorded in the tree's alternate_titles."
+ ],
+ "statute_note": "Principal source selected: the LankaLaw HTML (data/legal-sources/library/statutes/HTML/17-1852-execution-of-deeds-ordinance.html, identifier 2001Y3V71C), parsed and hand-corrected by the earlier worker (7 sections, no Schedule). Other sources inspected: the 1980 revised edition compendium, Cap. 85 (statutes/legislative-enactments-1980-volume-2.pdf, Vol. IV pp. 124-125, PDF pp. 215-216, text layer; registry SRC070 local_pdf_path), read in full against the tree. Consolidation cutoff: Ordinance No. 5 of 1875 per the HTML chain header; the 1980 print's header is garbled at the second instrument. Review performed this pass: packaging pass. All seven sections and marginal notes read against the 1980 print. That reading confirmed the s.1 short title, the s.3 second marginal note ('Copies or extracts how obtained.') and the commencement date, and found the material wording conflict in ss.2, 4 and 5 recorded under source_conflicts. It also found the s.5 prescribed form of certificate printed in the 1980 edition: 'I, A. B-, District Judge of (or as the case may be), hereby certify that the above-written deed was signed by the within-named (insert the name of the party making the deed), the maker thereof, and by ................ of ............... and ................ of ............... the attesting witnesses thereto, in my presence and in the presence of one another, at .............. on the ............. day of ............, 19 ............. Signature A.B.. Seal District Judge.' (text layer reads 'Disirict'). The tree was not changed: the form and the wording question are for the coordinator. Amendment coverage: one instrument (5 of 1875), known from the chain, not held. OCR or structural weaknesses: the compendium text layer is OCR-grade and garbles the chain header. The HTML's s.2 footnotes are lost. Missing sources: the text of Ordinance No. 5 of 1875; a clean copy of the chain header; the footnotes to s.2. Unresolved questions: which wording of ss.2, 4 and 5 is current (Court of Requests / Commissioner against Primary Court / Judge), and by what instrument the substitution was made; whether the s.5 form from the 1980 print should be added to the tree. pipeline_status is needs_structural_review for the wording conflict; the tree's own verification_status was left at structurally_verified because this pass was not to alter trees, and the coordinator should reconcile the two. Lawyer-verification status: unverified. This output remains lawyer-unverified.",
+ "lawyer_verification": "unverified"
+}

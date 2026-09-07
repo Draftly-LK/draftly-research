@@ -19,7 +19,7 @@
   "publisher": "lankalaw",
   "kind": "as_enacted",
   "local_path": "data/legal-sources/library/amendments/html/4-1999-apartment-ownership-special-provisions.html",
-  "caveat": "private republisher, not the Government Printer"
+  "caveat": "private republisher, not the Government Printer. The page is NOT a clean as-enacted text: section 3 is printed as substituted by Act No. 27 of 2002. Section 3 has been restored to the 1999 text from the Government Printer PDF held at data/legal-sources/library/amendments/incoming/4-1999-apartment-ownership-law-amendment.pdf; all other sections agree with that PDF."
  },
  "amendment_instructions": [
   {
@@ -49,7 +49,11 @@
   }
  ],
  "verification_status": "unverified",
- "editorial_notes": [],
+ "editorial_notes": [
+  "Checked section by section against the Government Printer PDF (5 pp., text layer, certified 10th March, 1999): 7 sections, headings and text agree except section 3, corrected as recorded on that node.",
+  "Section 6: the parser kept the inserted by-law 2(dd) both as the tail of the section text and as a child node; the words are printed once. Left as parsed.",
+  "Part I (sections 2 and 3) is a standalone registration scheme; Part II (sections 4 to 6) amends the Law: section 3(1) wording, the definition of 'Condominium Plan' in section 26, and by-law 2 of the Second Schedule."
+ ],
  "quality_flags": [],
  "source_location": {},
  "body": [
@@ -164,20 +168,26 @@
   {
    "type": "section",
    "number": "3",
-   "heading": "Extension of Part 1 of the principal enactment",
-   "raw_text": "3. The provisions of Part I of the principal Enactment shall be in operation till December 31, 2003.",
-   "text": "The provisions of Part I of the principal Enactment shall be in operation till December 31, 2003.",
+   "heading": "Duration of this Part of this Act.",
+   "raw_text": "3. The provisions of this Part of this Act, shall be in operation for a period of two years from the date of commencement of this Act.",
+   "text": "The provisions of this Part of this Act, shall be in operation for a period of two years from the date of commencement of this Act.",
    "amendment_events": [
     {
      "amending_act": "27 of 2002",
      "amending_act_no": 27,
      "amending_year": 2002,
      "amending_section": "2",
-     "operation": "unknown",
-     "verbatim": "[ 2,27 of 2002]"
+     "operation": "repeal_and_substitute",
+     "verbatim": "[ 2,27 of 2002]",
+     "note": "section 2 of Act No. 27 of 2002 repeals this section and substitutes: '3. The provisions of Part I of the principal Enactment shall be in operation till December 31, 2003.'"
     }
    ],
-   "cross_references": []
+   "cross_references": [],
+   "text_before_correction": "The provisions of Part I of the principal Enactment shall be in operation till December 31, 2003.",
+   "raw_text_before_correction": "3. The provisions of Part I of the principal Enactment shall be in operation till December 31, 2003.",
+   "heading_raw": "Extension of Part 1 of the principal enactment",
+   "text_correction_status": "hand_corrected_from_government_printer_pdf",
+   "text_correction_reason": "The LankaLaw HTML prints section 3 as substituted by Act No. 27 of 2002 (and marks it '[ 2,27 of 2002]'), so that page is not the Act as enacted. The Government Printer PDF certified 10th March 1999 reads as transcribed here. The HTML reading is kept in text_before_correction and is the current text of the section."
   },
   {
    "type": "section",
@@ -268,5 +278,12 @@
    "amendment_events": [],
    "cross_references": []
   }
- ]
+ ],
+ "provenance": {
+  "hand_corrected": true,
+  "what_changed": "section 3 heading and text restored to the as-enacted reading from the Government Printer PDF; edition caveat rewritten; editorial_notes added.",
+  "checked_against": "pdftotext -layout data/legal-sources/library/amendments/incoming/4-1999-apartment-ownership-law-amendment.pdf (poppler, PowerShell), read in full 2026-09-05",
+  "corrected_on": "2026-09-05",
+  "corrected_by": "finalization worker (pipeline pass); lawyer-unverified"
+ }
 }

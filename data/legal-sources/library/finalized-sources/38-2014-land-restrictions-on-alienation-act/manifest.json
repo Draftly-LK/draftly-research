@@ -10,24 +10,17 @@
    "edition": "consolidated",
    "bytes": 211824,
    "sha256": "4a2ba74446d2130e0b7c6602b961d9d2f9db5b2ea1de09b59305502251e39dd4",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/statutes/38-2014-land-restrictions-on-alienation-act-consolidated-2024.pdf",
    "used_for": "parsed into 38-2014-land-restrictions-on-alienation-act-consolidated.json"
-  },
-  {
-   "file": "3-2017-land-restrictions-on-alienation-amendment.pdf",
-   "role": "amending Act",
-   "edition": "as_enacted",
-   "bytes": 76785,
-   "sha256": "2cec4c3f6fea90c062d0fdaffab8d1fbfd6ba426c99a2ea2c98ea4c51d32d91f",
-   "copied_from": "data/legal-sources/library/amendments/incoming/3-2017-land-restriction-on-alienation-act-amendment.pdf",
-   "used_for": "parsed into 3-2017-land-restrictions-on-alienation-amendment.json"
   },
   {
    "file": "21-2018-land-restrictions-on-alienation-amendment.txt",
    "role": "amending Act",
    "edition": "as_enacted",
-   "bytes": 8096,
-   "sha256": "75108b299e4787e2f89b3f4ea34f3be82da8bbd4bf95f4fae17741c8e3b87518",
+   "bytes": 8025,
+   "sha256": "d217ad7fbf46fcd5cc11a1c42f0f2a318f05dc54bc36d5313f11afae00af87b5",
+   "hash_mode": "text-lf",
    "copied_from": "data/legal-sources/library/amendments/ocr/21-2018-land-restrictions-on-alienation-amendment.txt",
    "used_for": "parsed into 21-2018-land-restrictions-on-alienation-amendment.json"
   },
@@ -37,9 +30,62 @@
    "edition": "as_enacted",
    "bytes": 61179,
    "sha256": "00d6274e0c87d6e5512b4262aa27386f0c187527b91d0ec993f4e938f414aff6",
+   "hash_mode": "bytes",
    "copied_from": "data/legal-sources/library/amendments/21-2018-land-restrictions-on-alienation-amendment-act.pdf",
    "used_for": "image source of 21-2018-land-restrictions-on-alienation-amendment.txt; no text layer, so it was not parsed directly"
+  },
+  {
+   "file": "3-2017-land-restrictions-on-alienation-amendment.pdf",
+   "role": "amending Act",
+   "edition": "as_enacted",
+   "bytes": 76785,
+   "sha256": "2cec4c3f6fea90c062d0fdaffab8d1fbfd6ba426c99a2ea2c98ea4c51d32d91f",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/amendments/incoming/3-2017-land-restriction-on-alienation-act-amendment.pdf",
+   "used_for": "parsed into 3-2017-land-restrictions-on-alienation-amendment.json"
+  },
+  {
+   "file": "38-2014-land-restrictions-on-alienation-act.pdf",
+   "role": "verification source, not parsed",
+   "edition": "",
+   "bytes": 482261,
+   "sha256": "9a5a4f54a96ed52df61519cf91245a2081a2ab158ce8a670c32386f8ae3f367b",
+   "hash_mode": "bytes",
+   "copied_from": "data/legal-sources/library/statutes/38-2014-land-restrictions-on-alienation-act.pdf",
+   "used_for": "Registry PDF of the Act as enacted (RGD), 20 pp, scan with no text layer; title page read: Land (Restrictions on Alienation) Act, No. 38 of 2014, Certified on 29th October, 2014. Not parsed; no original-edition tree exists"
   }
  ],
- "statute_note": "No original-edition text is held. The registry's Government Printer PDF of the Act as enacted is a scan with no text layer; the consolidated 2024 reprint is the only readable edition, so the tree is consolidated only."
+ "pipeline_status": "pipeline-finalized, lawyer-unverified",
+ "baseline": {
+  "file": "38-2014-land-restrictions-on-alienation-act-consolidated.pdf",
+  "edition": "consolidated",
+  "publisher": "not stated (no imprint; PDF metadata title 'Land (Restrictions on Alienation) - Consolidated 2024', produced with Apple Pages; supplied by the team per the registry)",
+  "consolidation_cutoff": "Act No. 21 of 2018",
+  "cutoff_evidence": "Page 1 chain header reads 'Act Nos, 3 of 2017 21 of 2018'; inline marker '[3, 21 of 2018]' on s.5A, whose heading already reads 'Land Lease Tax not to be levied with effect from January 1, 2016.' (the date substituted by Act 21 of 2018 s.3); s.3(1)(i) (added by Act 21 of 2018 s.2(c)) is present."
+ },
+ "amendment_reconciliation": [
+  {
+   "instrument": "3-2017",
+   "title": "Land (Restrictions on Alienation) (Amendment) Act, No. 3 of 2017",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Named in the chain header; s.5A, which it inserts, is in the consolidated text with a marker naming s.2 of this Act. Held as a Government Printer PDF with a text layer (certified 22nd February 2017), parsed and hand-corrected into the amending tree in this package. LankaLaw's HTML copy (amendments/html/3-2017-...html) stops after s.2 behind a 'Free/Promotional User' banner and was not used. Nothing applied",
+   "source_path": "data/legal-sources/library/amendments/incoming/3-2017-land-restriction-on-alienation-act-amendment.pdf",
+   "held": true
+  },
+  {
+   "instrument": "21-2018",
+   "title": "Land (Restrictions on Alienation) (Amendment) Act, No. 21 of 2018",
+   "classification": "already_incorporated_in_baseline",
+   "reason": "Named in the chain header and marked '[3, 21 of 2018]' on s.5A; s.3(1)(b) proviso, s.3(1)(h) closing words 'transfer of such land; and', s.3(1)(i) and the January 1, 2016 date in s.5A are all in the consolidated text. Held as a Government Printer scan (4 pp, no text layer) with an OCR sidecar, hand-corrected against the scan on 2026-08-24 and re-read against the rendered scan in this pass. LankaLaw's HTML copy (amendments/html/21-2018-...html) stops after s.2 behind a 'Free/Promotional User' banner and was not used. Nothing applied",
+   "source_path": "data/legal-sources/library/amendments/21-2018-land-restrictions-on-alienation-amendment-act.pdf",
+   "ocr_sidecar": "data/legal-sources/library/amendments/ocr/21-2018-land-restrictions-on-alienation-amendment.txt",
+   "held": true
+  }
+ ],
+ "source_conflicts": [
+  "Publisher: canonical-overrides.json records 'Government Printer, Sri Lanka (consolidated reprint, 2024)'; the PDF itself carries no imprint or publisher line. The tree now says 'not stated' and keeps the earlier value in edition.publisher_as_recorded_by_override.",
+  "Amendment 21-2018 proof-reading: amendment-overrides.json says 'Wording has not been proof-read against the scan'; that describes the canonical parse (data/processed/canonical-amendments/21-2018.json). The finalized tree was hand-corrected against the scan on 2026-08-24 (provenance) and re-read in this pass; see the note."
+ ],
+ "statute_note": "Principal source selected: the consolidated 2024 PDF (statutes/38-2014-land-restrictions-on-alienation-act-consolidated-2024.pdf, 16 pp, text layer, two-column, chain header to Act No. 21 of 2018), parsed with parse_consolidated_pdf.py and hand-corrected (s.11 heading; earlier rounds recorded in canonical-overrides.json). It states no publisher; the earlier Government Printer attribution is withdrawn in the tree and proposed for withdrawal in the override. Other sources inspected: the registry's RGD PDF of the Act as enacted (20 pp, scan, no text layer; title page read, certified 29th October 2014), carried as a verification source, not parsed, so no original-edition tree exists; Government Printer PDF of Act 3 of 2017 (text layer) and Government Printer scan of Act 21 of 2018 with its OCR sidecar, all carried; LankaLaw HTML copies of both amending Acts, truncated behind the subscription banner, inspected and not used. Consolidation cutoff: Act No. 21 of 2018. Review performed: earlier passes recorded in canonical-overrides.json (page-by-page read of the consolidated PDF; amending Acts checked against their PDFs). This pass: the three finalized trees diffed against their canonical parses (principal: raw_text spacing and cross-reference pruning only; 3-2017 and 21-2018: hand corrections with provenance); the four sections and both quoted insertions of Act 21 of 2018 compared word for word with the scan rendered at 170 dpi, no disagreement; s.3(1)(b), (h), (i) and s.5A of the consolidated text checked against the operations of both amending Acts. Amendment coverage: 2 reconciliation rows, both already incorporated in the baseline; nothing applied. OCR or structural weaknesses: Act 21 of 2018 ss. 3 and 4 are attested only by the scan (two readings of one image, no text-layer copy). The consolidated PDF is of unknown provenance beyond 'supplied by the team'. Missing sources: a text-layer copy of the Act as enacted; a text-layer copy of Act 21 of 2018. Unresolved questions: who produced the consolidated 2024 PDF; the amendment-overrides.json wording for 21-2018 (see source_conflicts). Lawyer verification: unverified.",
+ "lawyer_verification": "unverified"
 }

@@ -5,7 +5,7 @@ the same set as `PRIMARY-STATUES.md`, with the local files held for each and
 every amending instrument known for it (349 in total, of which
 225 are held locally).
 
-48 of the 52 have their sections extracted; the rest are
+52 of the 52 have their sections extracted; the rest are
 marked below. Statutes the corpus holds but the curriculum does not name are
 listed in `SECONDARY-STATUES.md` and are out of scope here.
 
@@ -56,51 +56,51 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 | 1 | Companies Act | No. 7 of 2007 | 534 | 0 | 0 | yes |
 | 1 | Execution of Deeds Ordinance | No. 17 of 1852 | 7 | 1 | 0 | yes |
 | 1 | Kandyan Succession Ordinance | No. 23 of 1917 | 4 | 0 | 0 | yes |
-| 1 | Land (Restrictions on Alienation) Act | No. 38 of 2014 | 26 | 2 | 2 | yes |
+| 1 | Land (Restrictions on Alienation) Act | No. 38 of 2014 | 27 | 2 | 2 | yes |
 | 1 | Matrimonial Rights and Inheritance (Jaffna) Ordinance | No. 58 of 1947 | 40 | 1 | 0 | yes |
 | 1 | Matrimonial Rights and Inheritance Ordinance | No. 15 of 1876 | 36 | 2 | 0 | yes |
 | 1 | Muslim Intestate Succession Ordinance | No. 10 of 1931 | 4 | 0 | 0 | yes |
-| 1 | Notaries Ordinance | No. 1 of 1907 | 43 | 18 | 7 | - |
-| 1 | Powers of Attorney Ordinance | No. 4 of 1902 | 9 | 3 | 1 | yes |
+| 1 | Notaries Ordinance | No. 1 of 1907 | 45 | 18 | 7 | yes |
+| 1 | Powers of Attorney Ordinance | No. 4 of 1902 | 14 | 3 | 1 | yes |
 | 1 | Prescription Ordinance | No. 22 of 1871 | 15 | 2 | 1 | yes |
 | 1 | Prevention of Frauds Ordinance | No. 7 of 1840 | 19 | 6 | 2 | yes |
 | 1 | Registration of Documents Ordinance | No. 23 of 1927 | 42 | 19 | 13 | yes |
 | 1 | Registration of Title Act | No. 21 of 1998 | 75 | 0 | 0 | yes |
-| 1 | Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act | No. 5 of 2017 | not extracted | 0 | 0 | - |
-| 1 | Stamp Duty (Special Provisions) Act | No. 12 of 2006 | 37 | 2 | 2 | - |
+| 1 | Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act | No. 5 of 2017 | 7 | 0 | 0 | yes |
+| 1 | Stamp Duty (Special Provisions) Act | No. 12 of 2006 | 37 | 2 | 2 | yes |
 | 1 | Stamp Duty Act | No. 43 of 1982 | 75 | 12 | 10 | yes |
-| 1 | Tea and Rubber Estates (Control of Fragmentation) Act | No. 2 of 1958 | 25 | 1 | 1 | yes |
+| 1 | Tea and Rubber Estates (Control of Fragmentation) Act | No. 2 of 1958 | 28 | 1 | 1 | yes |
 | 1 | Tesawalamai Pre-emption Ordinance | No. 59 of 1947 | 14 | 0 | 0 | yes |
-| 1 | Western Province Financial Statute | No. 6 of 1990 | 124 | 0 | 0 | yes |
+| 1 | Western Province Financial Statute | No. 6 of 1990 | 125 | 0 | 0 | yes |
 | 1 | Wills Ordinance | No. 21 of 1844 | 9 | 5 | 2 | yes |
 | 2 | Buddhist Temporalities Ordinance | No. 19 of 1931 | 44 | 11 | 8 | yes |
 | 2 | Definition of Boundaries Ordinance | No. 1 of 1844 | 14 | 5 | 1 | yes |
-| 2 | Land Acquisition Act | No. 9 of 1950 | 68 | 8 | 7 | - |
+| 2 | Land Acquisition Act | No. 9 of 1950 | 73 | 8 | 7 | yes |
 | 2 | Land Development Ordinance | No. 19 of 1935 | 145 | 13 | 12 | yes |
 | 2 | Land Grants (Special Provisions) Act | No. 43 of 1979 | 20 | 0 | 0 | yes |
-| 2 | Land Reform Law | No. 1 of 1972 | 83 | 5 | 5 | - |
+| 2 | Land Reform Law | No. 1 of 1972 | 83 | 5 | 5 | yes |
 | 2 | Land Registers (Reconstructed Folios) Act | No. 18 of 1945 | 9 | 0 | 0 | yes |
 | 2 | Mortgage Act | No. 6 of 1949 | 126 | 6 | 4 | yes |
-| 2 | Urban Development Authority Act | No. 41 of 1978 | 54 | 6 | 6 | yes |
+| 2 | Urban Development Authority Act | No. 41 of 1978 | 55 | 6 | 6 | yes |
 | 3 | Bank of Ceylon Ordinance | No. 53 of 1938 | 82 | 13 | 7 | yes |
-| 3 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 4 | 2 | - |
-| 3 | Land Surveys Ordinance | No. 4 of 1866 | not extracted | 1 | 1 | - |
+| 3 | Land Settlement Ordinance | No. 20 of 1931 | 33 | 4 | 2 | yes |
+| 3 | Land Surveys Ordinance | No. 4 of 1866 | 7 | 1 | 1 | yes |
 | 3 | Lands Resumption Ordinance | No. 4 of 1887 | 17 | 3 | 1 | yes |
 | 3 | Local Authorities Housing Act | No. 14 of 1964 | 14 | 1 | 1 | yes |
 | 3 | Municipal Councils Ordinance | No. 29 of 1947 | 349 | 41 | 33 | yes |
 | 3 | National Housing Act | No. 37 of 1954 | 127 | 6 | 5 | yes |
 | 3 | National Housing Development Authority Act | No. 17 of 1979 | 92 | 6 | 6 | yes |
 | 3 | Nindagama Lands Act | No. 30 of 1968 | 30 | 0 | 0 | yes |
-| 3 | People's Bank Act | No. 29 of 1961 | 72 | 8 | 7 | - |
+| 3 | People's Bank Act | No. 29 of 1961 | 72 | 8 | 7 | yes |
 | 3 | Registration of Old Deeds and Instruments Ordinance | No. 35 of 1947 | 12 | 0 | 0 | yes |
-| 3 | Sannases and Old Deeds Ordinance | No. 6 of 1866 | not extracted | 1 | 0 | - |
+| 3 | Sannases and Old Deeds Ordinance | No. 6 of 1866 | 10 | 1 | 0 | yes |
 | 3 | State Lands (Claims) Ordinance | No. 21 of 1931 | 7 | 0 | 0 | yes |
-| 3 | State Lands Encroachments Ordinance | No. 12 of 1840 | not extracted | 3 | 0 | - |
+| 3 | State Lands Encroachments Ordinance | No. 12 of 1840 | 10 | 3 | 0 | yes |
 | 3 | State Lands Ordinance | No. 8 of 1947 | 111 | 2 | 0 | yes |
-| 3 | State Mortgage and Investment Bank Law | No. 13 of 1975 | 69 | 3 | 3 | - |
-| 3 | Survey Act | No. 17 of 2002 | 5 | 0 | 0 | yes |
-| 3 | Surveyors Ordinance | No. 15 of 1889 | 17 | 6 | 1 | - |
-| 3 | Town and Country Planning Ordinance | No. 13 of 1946 | 77 | 5 | 3 | - |
+| 3 | State Mortgage and Investment Bank Law | No. 13 of 1975 | 94 | 3 | 3 | yes |
+| 3 | Survey Act | No. 17 of 2002 | 67 | 0 | 0 | yes |
+| 3 | Surveyors Ordinance | No. 15 of 1889 | 18 | 6 | 1 | yes |
+| 3 | Town and Country Planning Ordinance | No. 13 of 1946 | 96 | 5 | 3 | yes |
 | 3 | Trusts Ordinance | No. 9 of 1917 | 123 | 6 | 4 | yes |
 | 3 | Urban Councils Ordinance | No. 61 of 1939 | 267 | 49 | 25 | yes |
 
@@ -112,7 +112,7 @@ like, so treat any surprising pairing as unconfirmed until someone opens it.
 
 Topics: Condominium Property, Stamping of Deeds, Drafting of Deeds, Criminal and Civil Liabilities of Notaries
 
-Sections: 26 in the index (headings from finalized 23, none 3)
+Sections: 26 in the index (headings from finalized 26)
 
 Parsed from the HTML edition: 50 sections, 44 carrying an amendment marker. Not yet merged into the index.
 
@@ -147,7 +147,7 @@ Amendments (4 known, 4 held):
 
 Topics: Formation of Deeds, Examination of Title, Drafting of Deeds
 
-Sections: 853 in the index (headings from finalized 830, lawlanka 23)
+Sections: 853 in the index (headings from finalized 851, lawlanka 2)
 
 Parsed from the HTML edition: 830 sections, 195 carrying an amendment marker. Not yet merged into the index.
 
@@ -319,7 +319,7 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 Topics: Formation of Deeds, Examination of Title, Criminal and Civil Liabilities of Notaries
 
-Sections: 26 in the index (headings from legacy 24, none 2)
+Sections: 27 in the index (headings from finalized 26, none 1)
 
 Canonical structure: 26 sections, 40 subsections, 20 definitions, 48 paragraphs, 13 subparagraphs.
 109 cross-references.
@@ -433,17 +433,22 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Notaries Ordinance
 
-**No. 1 of 1907** · Cap. 110 · commenced 1907-03-27 · curriculum category 1 · SRC014
+**No. 1 of 1907** · Cap. 110 · commenced 1907-03-27 · curriculum category 1 · SRC014 · **finalized**
 
 Topics: Formation of Deeds, Drafting and Study of Instruments, Duties of a Notary, Drafting of Deeds, Criminal and Civil Liabilities of Notaries
 
-Sections: 43 in the index (headings from legacy 40, none 3)
+Sections: 45 in the index (headings from finalized 44, legacy 1)
 
 Parsed from the HTML edition: 43 sections, 17 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 43 sections, 95 subsections, 50 paragraphs, 13 subparagraphs.
 44 cross-references; 3 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC014-1-1907.json`
+
+Finalized: `data/legal-sources/library/finalized/1-1907-notaries-ordinance/1-1907-notaries-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -470,9 +475,9 @@ Amendments (18 known, 7 held):
 | No. 24 of 1973 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/24-1973-notaries-amendment.html` | amend 4; substitute |
 | No. 20 of 1976 | Law | chain+html | not held: not in the Act archive | `data/legal-sources/library/amendments/html/20-1976-notaries-amendment-law.html` | substitute; substitute 3; insert 4A; amend 11; substitute 16; substitute 19; substitute... |
 | No. 12 of 2005 | Act | html | not held: no source located | `data/legal-sources/library/amendments/html/12-2005-increase-of-fines.html` | amend |
-| No. 47 of 2011 | - | curriculum | `data/legal-sources/library/amendments/incoming/47-2011-notaries-ordinance-amendment.pdf` | not published as HTML | not read |
-| No. 13 of 2013 | - | curriculum | `data/legal-sources/library/amendments/incoming/13-2013-notaries-ordinance-amendment.pdf` | not published as HTML | not read |
-| No. 31 of 2022 | - | curriculum | `data/legal-sources/library/amendments/31-2022-notaries-amendment-act.pdf` | not published as HTML | not read |
+| No. 47 of 2011 | - | curriculum | `data/legal-sources/library/amendments/incoming/47-2011-notaries-ordinance-amendment.pdf` | not published as HTML | amend 31 |
+| No. 13 of 2013 | - | curriculum | `data/legal-sources/library/amendments/incoming/13-2013-notaries-ordinance-amendment.pdf` | not published as HTML | amend 27 |
+| No. 31 of 2022 | - | curriculum | `data/legal-sources/library/amendments/31-2022-notaries-amendment-act.pdf` | not published as HTML | substitute 3; multiple 12; substitute 13; repeal 14; repeal 15; repeal 16; substitute 1... |
 
 ### Powers of Attorney Ordinance
 
@@ -480,7 +485,7 @@ Amendments (18 known, 7 held):
 
 Topics: Formation of Deeds, Power of Attorney, Drafting of Deeds
 
-Sections: 9 in the index (headings from finalized 9)
+Sections: 14 in the index (headings from finalized 14)
 
 Parsed from the HTML edition: 9 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
@@ -505,7 +510,7 @@ Amendments (3 known, 1 held):
 | --- | --- | --- | --- | --- | --- |
 | No. 9 of 1913 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
 | No. 33 of 1939 | Ordinance | chain+html | not held: not in the Act archive | not published as HTML | not read |
-| No. 14 of 2013 | - | curriculum | `data/legal-sources/library/amendments/14-2013-powers-of-attorney-amendment-act.pdf` | not published as HTML | not read |
+| No. 14 of 2013 | - | curriculum | `data/legal-sources/library/amendments/14-2013-powers-of-attorney-amendment-act.pdf` | not published as HTML | amend 9 |
 
 ### Prescription Ordinance
 
@@ -536,7 +541,7 @@ Amendments (2 known, 1 held):
 | Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
 | --- | --- | --- | --- | --- | --- |
 | No. 2 of 1889 | Ordinance | html | not held: no source located | not looked up | not read |
-| No. 26 of 2014 | - | marker | `data/legal-sources/library/amendments/incoming/26-2014-prescription-ordinance-amendment.pdf` | not looked up | not read |
+| No. 26 of 2014 | - | marker | `data/legal-sources/library/amendments/incoming/26-2014-prescription-ordinance-amendment.pdf` | not looked up | repeal_and_substitute 15 |
 
 ### Prevention of Frauds Ordinance
 
@@ -581,12 +586,12 @@ Amendments (6 known, 2 held):
 
 Topics: Registration of Documents, Formation of Deeds, Drafting and Study of Instruments, Drafting of Deeds
 
-Sections: 42 in the index (headings from lawlanka 41, legacy 1)
+Sections: 42 in the index (headings from finalized 42)
 
 Parsed from the HTML edition: 50 sections, 9 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 5 crossheadings, 7 subheadings, 50 sections, 96 subsections, 25 paragraphs, 13 subparagraphs.
-47 cross-references; 2 schedules referenced (bodies not published).
+Canonical structure: 42 sections, 91 subsections, 27 paragraphs, 30 subparagraphs.
+71 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC005-23-1927.json`
 
 Finalized: `data/legal-sources/library/finalized/23-1927-registration-of-documents-ordinance/23-1927-registration-of-documents-ordinance-consolidated.json`
@@ -655,12 +660,20 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act
 
-**No. 5 of 2017** · commenced 2017-04-07 · curriculum category 1 · SRC037 · **sections not extracted**
+**No. 5 of 2017** · commenced 2017-04-07 · curriculum category 1 · SRC037 · **finalized**
 
 Topics: Examination of Title, Drafting of Deeds
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 7 in the index (headings from finalized 7)
+
+Canonical structure: 7 sections, 1 subsection, 1 definition, 2 paragraphs.
+6 cross-references.
+Tree: `data/processed/canonical-statutes/SRC037-5-2017-as_enacted.json`
+
+Finalized: `data/legal-sources/library/finalized/5-2017-revocation-of-irrevocable-deeds-of-gift-act/5-2017-revocation-of-irrevocable-deeds-of-gift-act.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -670,22 +683,32 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Stamp Duty (Special Provisions) Act
 
-**No. 12 of 2006** · commenced 2006-03-31 · curriculum category 1 · SRC068
+**No. 12 of 2006** · commenced 2006-03-31 · curriculum category 1 · SRC068 · **finalized**
 
 Topics: Stamping of Deeds, Criminal and Civil Liabilities of Notaries
 
-Sections: 37 in the index (headings from legacy 34, none 3)
+Sections: 37 in the index (headings from legacy 19, finalized 16, none 2)
+
+Canonical structure: 3 parts, 16 sections, 14 subsections, 2 definitions, 23 paragraphs.
+19 cross-references; 2 schedules referenced (bodies not published).
+Tree: `data/processed/canonical-statutes/SRC068-12-2006.json`
+
+Finalized: `data/legal-sources/library/finalized/12-2006-stamp-duty-special-provisions-act/12-2006-stamp-duty-special-provisions-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
 - PDF: `data/legal-sources/library/statutes/12-2006-stamp-duty-special-provisions-act.pdf`
 - Markdown: `data/legal-sources/library-markdown/statutes/stamp-duty-special-provisions-act/stamp-duty-special-provisions-act-12-2006-consolidated.md`  (recorded in the registry but not on disk)
+- HTML: `data/legal-sources/library/statutes/HTML/12-2006-stamp-duty-special-provisions-act.html`
 
 Amendments (2 known, 2 held):
 
 | Instrument | Type | Known from | Own text (PDF) | Own text (HTML) | What it does |
 | --- | --- | --- | --- | --- | --- |
-| No. 10 of 2008 | - | curriculum | `data/legal-sources/library/amendments/10-2008-stamp-duty-special-provisions-amendment-act.pdf` | not published as HTML | not read |
+| No. 10 of 2008 | - | curriculum | `data/legal-sources/library/amendments/10-2008-stamp-duty-special-provisions-amendment-act.pdf` | not published as HTML | amend 6; repeal 8 |
 | No. 28 of 2018 | - | curriculum | `data/legal-sources/library/amendments/28-2018-medical-amendment.pdf` | not published as HTML | not read |
 
 ### Stamp Duty Act
@@ -694,12 +717,12 @@ Amendments (2 known, 2 held):
 
 Topics: Formation of Deeds, Stamping of Deeds, Drafting of Deeds, Criminal and Civil Liabilities of Notaries
 
-Sections: 75 in the index (headings from finalized 67, legacy 8)
+Sections: 75 in the index (headings from finalized 75)
 
 Parsed from the HTML edition: 75 sections, 22 carrying an amendment marker. Not yet merged into the index.
 
-Canonical structure: 75 sections, 155 subsections, 29 definitions, 105 paragraphs, 32 subparagraphs.
-130 cross-references.
+Canonical structure: 18 crossheadings, 20 subheadings, 75 sections, 162 subsections, 37 definitions, 98 paragraphs, 31 subparagraphs.
+119 cross-references.
 Tree: `data/processed/canonical-statutes/SRC034-43-1982.json`
 
 Finalized: `data/legal-sources/library/finalized/43-1982-stamp-duty-act/43-1982-stamp-duty-act-consolidated.json`
@@ -727,7 +750,7 @@ Amendments (12 known, 10 held):
 | No. 27 of 2000 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/27-2000-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/27-2000-stamp-duty-amendment.html` | amend 5; amend 13 |
 | No. 11 of 2002 | Act | html | not held: no source located | not looked up | not read |
 | No. 12 of 2006 | Act | curriculum+html | `data/legal-sources/library/amendments/incoming/12-2006-stamp-duty-act-amendment.pdf` | `data/legal-sources/library/amendments/html/12-2006-stamp-duty-special-provisions.html` | not read |
-| No. 10 of 2008 | - | curriculum | `data/legal-sources/library/amendments/10-2008-stamp-duty-special-provisions-amendment-act.pdf` | not published as HTML | not read |
+| No. 10 of 2008 | - | curriculum | `data/legal-sources/library/amendments/10-2008-stamp-duty-special-provisions-amendment-act.pdf` | not published as HTML | amend 6; repeal 8 |
 | No. 23 of 2018 | - | curriculum | `data/legal-sources/library/amendments/23-2018-apartment-ownership-special-provisions-act.pdf` | not published as HTML | not read |
 
 ### Tea and Rubber Estates (Control of Fragmentation) Act
@@ -736,7 +759,7 @@ Amendments (12 known, 10 held):
 
 Topics: Formation of Deeds, Examination of Title, Criminal and Civil Liabilities of Notaries
 
-Sections: 25 in the index (headings from finalized 25)
+Sections: 28 in the index (headings from finalized 28)
 
 Canonical structure: 25 sections, 50 subsections, 5 definitions, 38 paragraphs, 5 subparagraphs.
 38 cross-references.
@@ -790,7 +813,7 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 Topics: Formation of Deeds, Stamping of Deeds, Criminal and Civil Liabilities of Notaries
 
-Sections: 124 in the index (headings from finalized 95, none 22, legacy 7)
+Sections: 125 in the index (headings from finalized 95, none 23, legacy 7)
 
 Canonical structure: 108 sections, 225 subsections, 28 definitions, 108 paragraphs, 32 subparagraphs.
 157 cross-references.
@@ -814,7 +837,7 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 Topics: Formation of Deeds, Last Wills, Drafting of Deeds
 
-Sections: 9 in the index (headings from legacy 7, none 2)
+Sections: 9 in the index (headings from finalized 9)
 
 Parsed from the HTML edition: 9 sections, 1 carrying an amendment marker. Not yet merged into the index.
 
@@ -886,7 +909,7 @@ Amendments (11 known, 8 held):
 | No. 18 of 1981 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/18-1981-buddhist-temporalities-amendment.pdf` | `data/legal-sources/library/amendments/html/18-1981-buddhist-temporalities-amendment.html` | amend 12 |
 | No. 42 of 1981 | Act | chain+curriculum+html | `data/legal-sources/library/amendments/42-1981-buddhist-temporalities-amendment.pdf` | `data/legal-sources/library/amendments/html/42-1981-buddhist-temporalities-amendment.html` | amend; amend 2; amend 15 |
 | No. 3 of 1992 | Act | chain+curriculum+html | not held: archive row has no URL | `data/legal-sources/library/amendments/html/3-1992-buddhist-temporalities-amendment.html` | amend 2; amend 14 |
-| No. 34 of 2013 | - | curriculum | `data/legal-sources/library/amendments/34-2013-buddhist-temporalities-amendment.pdf` | not published as HTML | not read |
+| No. 34 of 2013 | - | curriculum | `data/legal-sources/library/amendments/34-2013-buddhist-temporalities-amendment.pdf` | not published as HTML | amend 2 |
 
 ### Definition of Boundaries Ordinance
 
@@ -925,17 +948,22 @@ Amendments (5 known, 1 held):
 
 ### Land Acquisition Act
 
-**No. 9 of 1950** · Cap. 295 · commenced 1950-03-09 · curriculum category 2 · SRC051
+**No. 9 of 1950** · Cap. 295 · commenced 1950-03-09 · curriculum category 2 · SRC051 · **finalized**
 
 Topics: State Lands
 
-Sections: 68 in the index (headings from legacy 67, none 1)
+Sections: 73 in the index (headings from finalized 73)
 
 Parsed from the HTML edition: 73 sections, 19 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 7 parts, 73 sections, 137 subsections, 9 definitions, 112 paragraphs, 10 subparagraphs.
 158 cross-references.
 Tree: `data/processed/canonical-statutes/SRC051-9-1950.json`
+
+Finalized: `data/legal-sources/library/finalized/9-1950-land-acquisition-act/9-1950-land-acquisition-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1028,17 +1056,22 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Land Reform Law
 
-**No. 1 of 1972** · commenced 1972-08-22 · curriculum category 2 · SRC033
+**No. 1 of 1972** · commenced 1972-08-22 · curriculum category 2 · SRC033 · **finalized**
 
 Topics: Formation of Deeds, State Lands, Criminal and Civil Liabilities of Notaries
 
-Sections: 83 in the index (headings from srilankalaw 82, lawlanka 1)
+Sections: 83 in the index (headings from finalized 83)
 
 Parsed from the HTML edition: 83 sections, 32 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 8 parts, 83 sections, 168 subsections, 14 definitions, 127 paragraphs, 28 subparagraphs.
 174 cross-references.
 Tree: `data/processed/canonical-statutes/SRC033-1-1972.json`
+
+Finalized: `data/legal-sources/library/finalized/1-1972-land-reform-law/1-1972-land-reform-law-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1125,7 +1158,7 @@ Amendments (6 known, 4 held):
 
 Topics: Examination of Title, Local Authority, UDA, and Other Regulations
 
-Sections: 54 in the index (headings from finalized 54)
+Sections: 55 in the index (headings from finalized 55)
 
 Parsed from the HTML edition: 54 sections, 33 carrying an amendment marker. Not yet merged into the index.
 
@@ -1203,17 +1236,22 @@ Amendments (13 known, 7 held):
 
 ### Land Settlement Ordinance
 
-**No. 20 of 1931** · Cap. 299 · commenced 1931-10-23 · curriculum category 3 · SRC054
+**No. 20 of 1931** · Cap. 299 · commenced 1931-10-23 · curriculum category 3 · SRC054 · **finalized**
 
 Topics: State Lands
 
-Sections: 33 in the index (headings from lawlanka 33)
+Sections: 33 in the index (headings from finalized 33)
 
 Parsed from the HTML edition: 33 sections, 2 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 33 sections, 61 subsections, 9 definitions, 28 paragraphs, 2 subparagraphs.
 71 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC054-20-1931.json`
+
+Finalized: `data/legal-sources/library/finalized/20-1931-land-settlement-ordinance/20-1931-land-settlement-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1232,18 +1270,22 @@ Amendments (4 known, 2 held):
 
 ### Land Surveys Ordinance
 
-**No. 4 of 1866** · curriculum category 3 · SRC055 · **sections not extracted**
+**No. 4 of 1866** · curriculum category 3 · SRC055 · **finalized**
 
 Topics: State Lands
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 7 in the index (headings from finalized 7)
 
 Parsed from the HTML edition: 7 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 7 sections.
 1 cross-references.
 Tree: `data/processed/canonical-statutes/SRC055-4-1866.json`
+
+Finalized: `data/legal-sources/library/finalized/4-1866-land-surveys-ordinance/4-1866-land-surveys-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1324,7 +1366,7 @@ Amendments (1 known, 1 held):
 
 Topics: Local Authority, UDA, and Other Regulations
 
-Sections: 349 in the index (headings from finalized 347, none 1, legacy 1)
+Sections: 349 in the index (headings from finalized 349)
 
 Parsed from the HTML edition: 348 sections, 118 carrying an amendment marker. Not yet merged into the index.
 
@@ -1489,17 +1531,22 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### People's Bank Act
 
-**No. 29 of 1961** · commenced 1980-01-01 · curriculum category 3 · SRC080
+**No. 29 of 1961** · commenced 1980-01-01 · curriculum category 3 · SRC080 · **finalized**
 
 Topics: Drafting of Deeds, Other Related Statutory Laws
 
-Sections: 72 in the index (headings from lawlanka 64, legacy 8)
+Sections: 72 in the index (headings from finalized 64, legacy 8)
 
 Parsed from the HTML edition: 64 sections, 27 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 64 sections, 109 subsections, 14 definitions, 97 paragraphs, 12 subparagraphs.
 82 cross-references.
 Tree: `data/processed/canonical-statutes/SRC080-29-1961.json`
+
+Finalized: `data/legal-sources/library/finalized/29-1961-peoples-bank-act/29-1961-peoples-bank-act-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1518,7 +1565,7 @@ Amendments (8 known, 7 held):
 | No. 25 of 1978 | Law | html+marker | not held: not in the Act archive | not published as HTML | not read |
 | No. 61 of 1980 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/61-1980-peoples-bank-act-amendment.pdf` | `data/legal-sources/library/amendments/html/61-1980-peoples-bank-amendment.html` | insert 42A |
 | No. 32 of 1986 | Act | curriculum+html+marker | `data/legal-sources/library/amendments/incoming/32-1986-peoples-bank-act-amendment.pdf` | `data/legal-sources/library/amendments/html/32-1986-peoples-bank-amendment.html` | substitute 4, 5; substitute 29; insert 29A, 29; repeal 30; amend 48 |
-| No. 16 of 2019 | - | curriculum+marker | `data/legal-sources/library/amendments/incoming/16-2019-peoples-bank-act-amendment.pdf` | not published as HTML | not read |
+| No. 16 of 2019 | - | curriculum+marker | `data/legal-sources/library/amendments/incoming/16-2019-peoples-bank-act-amendment.pdf` | not published as HTML | repeal_and_substitute 12; repeal_and_substitute 20 |
 
 ### Registration of Old Deeds and Instruments Ordinance
 
@@ -1548,18 +1595,22 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Sannases and Old Deeds Ordinance
 
-**No. 6 of 1866** · commenced 1866-10-20 · curriculum category 3 · SRC078 · **sections not extracted**
+**No. 6 of 1866** · commenced 1866-10-20 · curriculum category 3 · SRC078 · **finalized**
 
 Topics: Registration of Documents, Examination of Title, Drafting of Deeds, Other Related Statutory Laws
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 10 in the index (headings from finalized 10)
 
 Parsed from the HTML edition: 10 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 10 sections.
 4 cross-references.
 Tree: `data/processed/canonical-statutes/SRC078-6-1866.json`
+
+Finalized: `data/legal-sources/library/finalized/6-1866-sannases-and-old-deeds-ordinance/6-1866-sannases-and-old-deeds-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1600,17 +1651,21 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### State Lands Encroachments Ordinance
 
-**No. 12 of 1840** · commenced 1840-10-27 · curriculum category 3 · SRC058 · **sections not extracted**
+**No. 12 of 1840** · commenced 1840-10-27 · curriculum category 3 · SRC058 · **finalized**
 
 Topics: State Lands
 
-Sections: none in the index. Nothing from this statute can be retrieved or
-cited until they are extracted.
+Sections: 10 in the index (headings from finalized 10)
 
 Parsed from the HTML edition: 10 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 10 sections, 1 definition, 3 paragraphs.
 Tree: `data/processed/canonical-statutes/SRC058-12-1840.json`
+
+Finalized: `data/legal-sources/library/finalized/12-1840-state-lands-encroachments-ordinance/12-1840-state-lands-encroachments-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1659,17 +1714,22 @@ Amendments (2 known, 0 held):
 
 ### State Mortgage and Investment Bank Law
 
-**No. 13 of 1975** · commenced 1975-05-15 · curriculum category 3 · SRC074
+**No. 13 of 1975** · commenced 1975-05-15 · curriculum category 3 · SRC074 · **finalized**
 
 Topics: Drafting of Deeds, Other Related Statutory Laws
 
-Sections: 69 in the index (headings from legacy 69)
+Sections: 94 in the index (headings from finalized 88, legacy 6)
 
 Parsed from the HTML edition: 88 sections, 12 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 7 parts, 2 crossheadings, 88 sections, 99 subsections, 8 definitions, 99 paragraphs, 14 subparagraphs.
 88 cross-references.
 Tree: `data/processed/canonical-statutes/SRC074-13-1975.json`
+
+Finalized: `data/legal-sources/library/finalized/13-1975-state-mortgage-and-investment-bank-law/13-1975-state-mortgage-and-investment-bank-law-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1691,7 +1751,7 @@ Amendments (3 known, 3 held):
 
 Topics: Examination of Title
 
-Sections: 5 in the index (headings from legacy 5)
+Sections: 67 in the index (headings from finalized 67)
 
 Parsed from the HTML edition: 67 sections, 0 carrying an amendment marker. Not yet merged into the index.
 
@@ -1714,11 +1774,20 @@ Amendments: none recorded. This means no amendment history was found, which is n
 
 ### Surveyors Ordinance
 
-**No. 15 of 1889** · Cap. 123 · curriculum category 3 · SRC040
+**No. 15 of 1889** · Cap. 123 · curriculum category 3 · SRC040 · **finalized**
 
 Topics: Examination of Title
 
-Sections: 17 in the index (headings from legacy 17)
+Sections: 18 in the index (headings from finalized 18)
+
+Canonical structure: 18 sections, 26 subsections, 5 definitions, 33 paragraphs.
+8 cross-references.
+Tree: `data/processed/canonical-statutes/SRC040-15-1889.json`
+
+Finalized: `data/legal-sources/library/finalized/15-1889-surveyors-ordinance/15-1889-surveyors-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1738,17 +1807,22 @@ Amendments (6 known, 1 held):
 
 ### Town and Country Planning Ordinance
 
-**No. 13 of 1946** · Cap. 605 · commenced 1946-01-01 · curriculum category 3 · SRC041
+**No. 13 of 1946** · Cap. 605 · commenced 1946-01-01 · curriculum category 3 · SRC041 · **finalized**
 
 Topics: Examination of Title, Local Authority, UDA, and Other Regulations
 
-Sections: 77 in the index (headings from legacy 77)
+Sections: 96 in the index (headings from finalized 95, legacy 1)
 
 Parsed from the HTML edition: 95 sections, 16 carrying an amendment marker. Not yet merged into the index.
 
 Canonical structure: 8 parts, 95 sections, 145 subsections, 18 definitions, 209 paragraphs, 27 subparagraphs.
 107 cross-references; 2 schedules referenced (bodies not published).
 Tree: `data/processed/canonical-statutes/SRC041-13-1946.json`
+
+Finalized: `data/legal-sources/library/finalized/13-1946-town-and-country-planning-ordinance/13-1946-town-and-country-planning-ordinance-consolidated.json`
+
+This tree has been accepted. Build on it rather than on the canonical
+directory, which is regenerated output.
 
 Files:
 
@@ -1772,7 +1846,7 @@ Amendments (5 known, 3 held):
 
 Topics: Trust Deeds
 
-Sections: 123 in the index (headings from finalized 117, srilankalaw 6)
+Sections: 123 in the index (headings from finalized 123)
 
 Parsed from the HTML edition: 117 sections, 1 carrying an amendment marker. Not yet merged into the index.
 
@@ -1799,7 +1873,7 @@ Amendments (6 known, 4 held):
 | No. 7 of 1968 | Act | html+marker | `data/legal-sources/library/amendments/7-1968-trusts-amendment.pdf` | `data/legal-sources/library/amendments/html/7-1968-trusts-amendment.html` | amend 21 |
 | No. 30 of 1971 | Act | html+marker | `data/legal-sources/library/amendments/30-1971-national-savings-banks.pdf` | `data/legal-sources/library/amendments/html/30-1971-national-savings-bank.html` (title does not match this statute; check it) | repeal; amend 83; amend 21 |
 | No. 17 of 2002 | - | curriculum | `data/legal-sources/library/amendments/17-2002-survey.pdf` | `data/legal-sources/library/amendments/html/17-2002-survey-act.html` (title does not match this statute; check it) | not read |
-| No. 6 of 2018 | - | curriculum+marker | `data/legal-sources/library/amendments/6-2018-trusts-amendment-act.pdf` | not published as HTML | not read |
+| No. 6 of 2018 | - | curriculum+marker | `data/legal-sources/library/amendments/6-2018-trusts-amendment-act.pdf` | not published as HTML | amend 3; amend 72; amend 75; insert 115A |
 
 ### Urban Councils Ordinance
 
@@ -1807,7 +1881,7 @@ Amendments (6 known, 4 held):
 
 Topics: Examination of Title, Local Authority, UDA, and Other Regulations
 
-Sections: 267 in the index (headings from finalized 262, legacy 5)
+Sections: 267 in the index (headings from finalized 263, legacy 4)
 
 Parsed from the HTML edition: 263 sections, 80 carrying an amendment marker. Not yet merged into the index.
 

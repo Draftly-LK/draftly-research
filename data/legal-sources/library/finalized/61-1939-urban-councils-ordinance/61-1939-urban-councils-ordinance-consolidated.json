@@ -260,7 +260,7 @@
    "year": 2017
   }
  ],
- "verification_status": "unverified",
+ "verification_status": "needs_structural_review",
  "quality_flags": [
   {
    "code": "first_list_item_not_split",
@@ -270,7 +270,8 @@
     "possibly_65_others"
    ],
    "issue": "The same class of gap already documented for the Land Development Ordinance and Stamp Duty Act, at unusually large scale in this statute: parse_consolidated_pdf.py's block-opening detection only starts a new list item when the accumulated text so far already ends in ';:.-–—' or 'or'/'and'. The FIRST item after an intro clause ending in ordinary words fuses into the parent's own text; whichever item follows DOES split correctly, since the fused-in first item usually ends the text in a semicolon. A programmatic scan for section/subsection text containing a mid-string ' (x) ' pattern flags roughly 65 locations across this statute -- not all necessarily genuine instances (some may be legitimate cross-references landing beside a bracketed letter), but the true count is large. Section 74's paragraph (a) and section 78's paragraph (a) were spot-checked and confirmed as genuine instances of the pattern. Not fixed here: three separate attempts at a general fix for this exact defect class, made earlier in this session while working the Land Development Ordinance and Mortgage Act, each regressed content in other already-finalized statutes and were reverted. A proper fix needs parse_consolidated_pdf.py to gain something like build_canonical_statutes.py's split_enumerated -- a full-text scan for enumerator tokens rather than a line-by-line continuity heuristic -- which is real, non-trivial future work, not attempted under this session's time constraints.",
-   "status": "known_parser_limitation"
+   "status": "known_parser_limitation",
+   "note_2026_09_05": "s.94(1)(a)/(i) corrected by hand in this pass; the remaining instances stand."
   },
   {
    "code": "cascading_damage_in_nested_lists",
@@ -289,7 +290,8 @@
     "173"
    ],
    "issue": "Sections 28, 33, 90 and 173(1) each have a proviso present in raw_text (\"Provided that...\") that is not split out as a proviso child node -- the parent subsection's own text field runs on past the colon into the proviso wording instead of stopping there. A different failure shape from first_list_item_not_split (no bracketed enumerator involved); the proviso-detection pass simply did not fire for these four. Confirmed genuine by direct source check.",
-   "status": "known_parser_limitation"
+   "status": "known_parser_limitation",
+   "note_2026_09_05": "173(1) and the former second (1) [now 174(1)] both carry proviso child nodes in the accepted tree; 28, 33 and 90 not re-examined in this pass."
   },
   {
    "code": "section_174_merged_into_173",
@@ -298,7 +300,8 @@
     "174"
    ],
    "issue": "Section 174 does not appear as its own node. Its marginal note (\"Limitation of borrowing powers.\") lands on the same physical line as its own section number in the source PDF (\"borrowing powers. 174.             from any Urban Council...\"), a column-alignment quirk parse_consolidated_pdf.py could not resolve into a fresh section boundary; both of 174's subsections were instead appended as a second (1) and (2) under section 173. No text is lost -- confirmed all of section 174's content is present verbatim, just filed under the wrong section number, alongside 173's own correct three subsections. A reader querying \"section 174\" specifically will not find it as its own node.",
-   "status": "known_parser_limitation"
+   "status": "corrected_by_hand",
+   "resolution": "s.174 split out on 2026-09-05; see provenance.what_changed"
   },
   {
    "code": "source_column_word_reorder",
@@ -315,6 +318,59 @@
    ],
    "issue": "Section 5(1)(c) reads \"...determined by the Commissioner under paragraph (a) of subsection (4) of section 65B of the Local Authorities Elections Ordinance\" -- BARE_SUBSECTION/SUBSECTION_REF read \"subsection (4) of section 65B\" as an internal self-reference (this Ordinance has no section 65B of its own) even though the same clause also correctly produces a second, external cross-reference for the fuller phrase \"section 65B of the Local Authorities Elections Ordinance\". Both entries are recorded on the same node; the internal one is spurious.",
    "status": "known_parser_limitation"
+  },
+  {
+   "code": "phantom_section_13",
+   "sections_affected": [
+    "13"
+   ],
+   "status": "corrected_by_hand",
+   "issue": "The parser made a section 13 out of the crossheading that follows the bare '13.' in the print. Node removed; see omitted_provisions."
+  },
+  {
+   "code": "no_marginal_note_in_source",
+   "sections_affected": [
+    "94"
+   ],
+   "status": "source_as_printed",
+   "issue": "Neither held edition prints a marginal note for s.94. heading left empty."
+  },
+  {
+   "code": "heading_stray_quote",
+   "sections_affected": [
+    "178B"
+   ],
+   "status": "corrected_by_hand",
+   "issue": "PDF marginal note reads '\"Transitional provision.' (opening quote carried over from the inserting Act). Corrected; printed form in heading_raw."
+  },
+  {
+   "code": "heading_typo_as_printed",
+   "sections_affected": [
+    "173"
+   ],
+   "status": "source_as_printed",
+   "issue": "Marginal note reads 'Power of Urban Council to borrow on the security of raise and taxes' in both editions ('raise' where 'rates' is meant). Kept as printed."
+  },
+  {
+   "code": "schedules_not_published",
+   "status": "source_limitation",
+   "issue": "Six Schedules are referenced; the PDF does not print their bodies. schedules is empty."
+  },
+  {
+   "code": "text_lost_at_body_column_shifts",
+   "status": "partially_corrected",
+   "sections_affected": [
+    "36",
+    "78",
+    "90",
+    "157",
+    "165B",
+    "183",
+    "184",
+    "249",
+    "and others not read"
+   ],
+   "issue": "Where the PDF's body column shifts to the left margin mid-provision (it does so on most pages), parse_consolidated_pdf.py dropped the opening words of each shifted line, so the accepted tree runs sentences together with words missing (e.g. s.78(1)(b) had lost roughly half its words; s.184(1A) lost 'relation to such inquiry' and 'inquiry appointed under the'). Nine passages found by a shingle comparison against pdftotext were read against the print and restored (parsed text kept in text_as_parsed). The remaining extent is not measured: check_parse_coverage still reports 416 unmatched words including content words (wall, gateway, boundary, value, market, loans, charges, inquiry), so more passages are affected. This is the main reason the tree is marked needs_structural_review; the fix belongs in the parser."
   }
  ],
  "editorial_notes": [],
@@ -425,16 +481,23 @@
      "amending_act_no": 21,
      "amending_year": 2017,
      "amending_section": "2",
-     "operation": "unknown",
-     "verbatim": "[2, 21 of 2017]"
+     "operation": "repeal_and_substitute",
+     "verbatim": "[2, 21 of 2017]",
+     "operation_verbatim": "Section 5 of the Urban Councils Ordinance (Chapter 255) is hereby repealed and the following section substituted therefor",
+     "operation_source": "data/legal-sources/library/amendments/21-2017-urban-councils-amendment.pdf",
+     "confirmed_in_baseline_text": true
     },
     {
      "amending_act": "21 of 2012",
      "amending_act_no": 21,
      "amending_year": 2012,
      "amending_section": "8",
-     "operation": "unknown",
-     "verbatim": "[8, 21 of 2012]"
+     "operation": "repeal_and_substitute",
+     "verbatim": "[8, 21 of 2012]",
+     "operation_verbatim": "Section 5 of the Urban Councils Ordinance (Chapter 255) ... is hereby repealed and the following section is substituted therefor",
+     "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+     "confirmed_in_baseline_text": true,
+     "note": "text substituted by this section was itself replaced by Act No. 21 of 2017, s.2; the baseline prints the 2017 text"
     },
     {
      "amending_act": "24 of 1977",
@@ -538,7 +601,7 @@
      "type": "subsection",
      "number": "2",
      "raw_text": "(2) Where the number constituting forty per centum referred to in paragraph (b) of subsection (1), is an integer and fraction, the integer shall be deemed to be the number which shall constitute such forty per centum, for the purpose of that subsection. ELECTIONS AND DATE OF COMMENCEMENT OF TERMS OF OFFICE OF URBAN COUNCILS, ETC.",
-     "text": "Where the number constituting forty per centum referred to in paragraph (b) of subsection (1), is an integer and fraction, the integer shall be deemed to be the number which shall constitute such forty per centum, for the purpose of that subsection. ELECTIONS AND DATE OF COMMENCEMENT OF TERMS OF OFFICE OF URBAN COUNCILS, ETC.",
+     "text": "Where the number constituting forty per centum referred to in paragraph (b) of subsection (1), is an integer and fraction, the integer shall be deemed to be the number which shall constitute such forty per centum, for the purpose of that subsection.",
      "amendment_events": [],
      "cross_references": [
       {
@@ -734,8 +797,11 @@
      "amending_act_no": 21,
      "amending_year": 2012,
      "amending_section": "9",
-     "operation": "unknown",
-     "verbatim": "[9, 21 of 2012]"
+     "operation": "amend",
+     "verbatim": "[9, 21 of 2012]",
+     "operation_verbatim": "Section 12 ... amended in subsection (3) ... by the substitution for the words \"the provisions of written law for the time being applicable in that behalf,\" of the words \"the provisions of section 66A of the Local Authorities Elections Ordinance (Cap. 262)\"",
+     "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+     "confirmed_in_baseline_text": true
     },
     {
      "amending_act": "24 of 1977",
@@ -753,10 +819,19 @@
      "type": "subsection",
      "number": "1",
      "raw_text": "(1) Where any person who is elected as a member of an Urban Council decides for any reason not to serve as a member thereof, he may relinquish the office (a) by a written communication of his refusal of office to the elections officer of the district in which the town for which the Council is constituted is situated, at any time before the date fixed for the first meeting of the Council to be held after his election, or",
-     "text": "Where any person who is elected as a member of an Urban Council decides for any reason not to serve as a member thereof, he may relinquish the office (a) by a written communication of his refusal of office to the elections officer of the district in which the town for which the Council is constituted is situated, at any time before the date fixed for the first meeting of the Council to be held after his election, or",
+     "text": "Where any person who is elected as a member of an Urban Council decides for any reason not to serve as a member thereof, he may relinquish the office",
      "amendment_events": [],
      "cross_references": [],
      "children": [
+      {
+       "type": "paragraph",
+       "number": "a",
+       "raw_text": "(a) by a written communication of his refusal of office to the elections officer of the district in which the town for which the Council is constituted is situated, at any time before the date fixed for the first meeting of the Council to be held after his election, or",
+       "text": "by a written communication of his refusal of office to the elections officer of the district in which the town for which the Council is constituted is situated, at any time before the date fixed for the first meeting of the Council to be held after his election, or",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": []
+      },
       {
        "type": "paragraph",
        "number": "b",
@@ -809,20 +884,10 @@
   },
   {
    "type": "section",
-   "number": "13",
-   "heading": "",
-   "raw_text": "13. ALTERATION OF LIMITS OF TOWNS AND NUMBER OF MEMBERS. ; &C;",
-   "text": "ALTERATION OF LIMITS OF TOWNS AND NUMBER OF MEMBERS. ; &C;",
-   "amendment_events": [],
-   "cross_references": [],
-   "children": []
-  },
-  {
-   "type": "section",
    "number": "14",
-   "heading": "Power of Minister to vary limits of town and number",
+   "heading": "Power of Minister to vary limits of town and number of members, and to dissolve and replace Council.",
    "raw_text": "14. The Minister may at any time by Order published in the Gazette (a) vary the limits of any town;",
-   "text": "The Minister may at any time by Order published in the Gazette (a) vary the limits of any town;",
+   "text": "The Minister may at any time by Order published in the Gazette",
    "amendment_events": [
     {
      "amending_act": "24 of 1977",
@@ -836,6 +901,15 @@
    ],
    "cross_references": [],
    "children": [
+    {
+     "type": "paragraph",
+     "number": "a",
+     "raw_text": "(a) vary the limits of any town;",
+     "text": "vary the limits of any town;",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": []
+    },
     {
      "type": "paragraph",
      "number": "b",
@@ -863,7 +937,8 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_raw": "Power of Minister to vary limits of town and number"
   },
   {
    "type": "section",
@@ -929,8 +1004,11 @@
      "amending_act_no": 21,
      "amending_year": 2012,
      "amending_section": "10",
-     "operation": "unknown",
-     "verbatim": "[10, 21 of 2012]"
+     "operation": "amend",
+     "verbatim": "[10, 21 of 2012]",
+     "operation_verbatim": "Section 19 ... further amended: (1) in subsection (1) ... 'in accordance with the provisions of the Local Authorities Elections Ordinance (Cap. 262).'; (2) in subsection (2) ... 'vacates such office. A Chairman or Vice-Chairman who resigns or vacates his office shall however continue to be a member of the Council.'; (3) by the repeal of subsection (7) and the substitution of a new subsection (7) (notice of vacancy to the Commissioner of Local Government)",
+     "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+     "confirmed_in_baseline_text": true
     },
     {
      "amending_act": "24 of 1977",
@@ -1277,7 +1355,7 @@
    "number": "31",
    "heading": "Urban Council to be corporations",
    "raw_text": "31. Every Urban Council shall be a corporation with perpetual succession and a common seal, and may sue and be sued by such name as may be assigned to it in the Order constituting the Council, or any subsequent Order in modification thereof. GENERAL POWERS AND DUTIES",
-   "text": "Every Urban Council shall be a corporation with perpetual succession and a common seal, and may sue and be sued by such name as may be assigned to it in the Order constituting the Council, or any subsequent Order in modification thereof. GENERAL POWERS AND DUTIES",
+   "text": "Every Urban Council shall be a corporation with perpetual succession and a common seal, and may sue and be sued by such name as may be assigned to it in the Order constituting the Council, or any subsequent Order in modification thereof.",
    "amendment_events": [],
    "cross_references": [],
    "children": []
@@ -1657,12 +1735,23 @@
        "type": "proviso",
        "is_proviso": true,
        "raw_text": "Provided that, the preceding to and in relation to any officer or is a member or who is deemed to Government Service constituted under Law (b) to spend any part of the local fund on maternity and child- welfare services, the training of midwives for the purposes of any maternity service established by the Council, housing schemes, and charities or measures for the relief of distress caused by rain, floods, fire, earthquake, famine or epidemics;",
-       "text": "Provided that, the preceding to and in relation to any officer or is a member or who is deemed to Government Service constituted under Law (b) to spend any part of the local fund on maternity and child- welfare services, the training of midwives for the purposes of any maternity service established by the Council, housing schemes, and charities or measures for the relief of distress caused by rain, floods, fire, earthquake, famine or epidemics;",
+       "text": "Provided that, the preceding provisions shall not apply to and in relation to any officer or servant of such Council who is a member or who is deemed to be a member of the Local Government Service constituted under the Local Government Service Law",
        "qualifies": "a",
        "amendment_events": [],
-       "cross_references": []
+       "cross_references": [],
+       "text_as_parsed": "Provided that, the preceding to and in relation to any officer or is a member or who is deemed to Government Service constituted under Law (b) to spend any part of the local fund on maternity and child- welfare services, the training of midwives for the purposes of any maternity service established by the Council, housing schemes, and charities or measures for the relief of distress caused by rain, floods, fire, earthquake, famine or epidemics;",
+       "text_note": "words lost by the parser where the print's body column shifts left; restored from pdftotext -layout"
       }
      ]
+    },
+    {
+     "type": "paragraph",
+     "number": "b",
+     "raw_text": "(b) to spend any part of the local fund on maternity and child- welfare services, the training of midwives for the purposes of any maternity service established by the Council, housing schemes, and charities or measures for the relief of distress caused by rain, floods, fire, earthquake, famine or epidemics;",
+     "text": "to spend any part of the local fund on maternity and child- welfare services, the training of midwives for the purposes of any maternity service established by the Council, housing schemes, and charities or measures for the relief of distress caused by rain, floods, fire, earthquake, famine or epidemics;",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": []
     },
     {
      "type": "paragraph",
@@ -2647,7 +2736,7 @@
      "type": "proviso",
      "is_proviso": true,
      "raw_text": "Provided always that, in case no demand for such surplus is made within twelve months by any person entitled to make such demand, the Council shall be at liberty to pay the amount of such surplus to the credit of the local fund, and shall be freed from any liability to pay or answer for or in respect of such unclaimed surplus; Provided, further, that the Council, notwithstanding that it may have sold such materials for the purposes aforesaid, shall have the same remedies for compelling the payment of so much of the expenses as may remain due after the application of the proceeds of the sale, as by this Ordinance are given to it for compelling the payment of the entirety of the expenses. MAINTENANCE AND REPAIR OF THOROUGHFARES",
-     "text": "Provided always that, in case no demand for such surplus is made within twelve months by any person entitled to make such demand, the Council shall be at liberty to pay the amount of such surplus to the credit of the local fund, and shall be freed from any liability to pay or answer for or in respect of such unclaimed surplus; Provided, further, that the Council, notwithstanding that it may have sold such materials for the purposes aforesaid, shall have the same remedies for compelling the payment of so much of the expenses as may remain due after the application of the proceeds of the sale, as by this Ordinance are given to it for compelling the payment of the entirety of the expenses. MAINTENANCE AND REPAIR OF THOROUGHFARES",
+     "text": "Provided always that, in case no demand for such surplus is made within twelve months by any person entitled to make such demand, the Council shall be at liberty to pay the amount of such surplus to the credit of the local fund, and shall be freed from any liability to pay or answer for or in respect of such unclaimed surplus; Provided, further, that the Council, notwithstanding that it may have sold such materials for the purposes aforesaid, shall have the same remedies for compelling the payment of so much of the expenses as may remain due after the application of the proceeds of the sale, as by this Ordinance are given to it for compelling the payment of the entirety of the expenses.",
      "qualifies": "62",
      "amendment_events": [],
      "cross_references": []
@@ -2799,7 +2888,7 @@
    "number": "71",
    "heading": "Power to lay stones, &c",
    "raw_text": "71. The proper officer of the Urban Council of any town shall have power to lay and heap of stone or gravel, or any log of wood, or any other matter or thing whatsoever, upon any thoroughfare within the town, and to allow such matter to remain there during the time such road is under repair, and for such time before the repair, are commenced and after the repairs are completed, as may be necessary for facilitating the making of such repairs or for preventing damage to such recently repaired road, but he shall take due and reasonable precaution for preventing danger or injury to persons passing along such road. BUILDING ALONG THOROUGHFARES",
-   "text": "The proper officer of the Urban Council of any town shall have power to lay and heap of stone or gravel, or any log of wood, or any other matter or thing whatsoever, upon any thoroughfare within the town, and to allow such matter to remain there during the time such road is under repair, and for such time before the repair, are commenced and after the repairs are completed, as may be necessary for facilitating the making of such repairs or for preventing damage to such recently repaired road, but he shall take due and reasonable precaution for preventing danger or injury to persons passing along such road. BUILDING ALONG THOROUGHFARES",
+   "text": "The proper officer of the Urban Council of any town shall have power to lay and heap of stone or gravel, or any log of wood, or any other matter or thing whatsoever, upon any thoroughfare within the town, and to allow such matter to remain there during the time such road is under repair, and for such time before the repair, are commenced and after the repairs are completed, as may be necessary for facilitating the making of such repairs or for preventing damage to such recently repaired road, but he shall take due and reasonable precaution for preventing danger or injury to persons passing along such road.",
    "amendment_events": [],
    "cross_references": [],
    "children": []
@@ -3517,10 +3606,12 @@
        "type": "paragraph",
        "number": "b",
        "raw_text": "(b) Where only a part of the building or of any boundary the building limit and the the value of the entire in accordance with the value assigned to that or gateway, as distinct the value so recorded or the boundary wall or gateway whichever is the less, and for value shall be the of the entire building, with the land attached thereto, at the time of the acquisition, and the market value at as distinct from the entire building, boundary wall or gateway;",
-       "text": "Where only a part of the building or of any boundary the building limit and the the value of the entire in accordance with the value assigned to that or gateway, as distinct the value so recorded or the boundary wall or gateway whichever is the less, and for value shall be the of the entire building, with the land attached thereto, at the time of the acquisition, and the market value at as distinct from the entire building, boundary wall or gateway;",
+       "text": "Where only a part of the building or of any boundary wall or gateway is situated within the building limit and the value recorded under section 74 is the value of the entire building, boundary wall or gateway in accordance with subsection (4) (a) of that section, the value assigned to that part of the building, boundary wall or gateway, as distinct from the land acquired, shall be the value so recorded or the market value of the entire building, boundary wall or gateway at the time of the acquisition, whichever is the less, and for the purpose aforesaid, such market value shall be the difference between the market value of the entire building, boundary wall or gateway together with the land attached thereto, at the time of the acquisition, and the market value at that time of the land so attached as distinct from the entire building, boundary wall or gateway;",
        "amendment_events": [],
        "cross_references": [],
-       "children": []
+       "children": [],
+       "text_as_parsed": "Where only a part of the building or of any boundary the building limit and the the value of the entire in accordance with the value assigned to that or gateway, as distinct the value so recorded or the boundary wall or gateway whichever is the less, and for value shall be the of the entire building, with the land attached thereto, at the time of the acquisition, and the market value at as distinct from the entire building, boundary wall or gateway;",
+       "text_note": "words lost by the parser where the print's body column shifts left; restored from pdftotext -layout"
       },
       {
        "type": "paragraph",
@@ -3636,7 +3727,7 @@
    "number": "79",
    "heading": "Power of Urban Council to acquire adjacent land for owner of land within building limit",
    "raw_text": "79. The Urban Council of a town may, at the request of any person whose right to build upon any land abutting upon a road within that town is restricted by the building limit demarcated upon that road, and who desires to erect a building upon the land, acquire for such owner at his expense any land, situate at the rear of such first-mentioned land and of sufficient extent to afford him building facilities of the same nature as he would have enjoyed but for such restriction. All lands required for any such purpose shall be deemed to be required for a public purpose, and the provisions of section 78 shall apply to the valuation of such land. OBSTRUCTIONS TO THOROUGHFARES",
-   "text": "The Urban Council of a town may, at the request of any person whose right to build upon any land abutting upon a road within that town is restricted by the building limit demarcated upon that road, and who desires to erect a building upon the land, acquire for such owner at his expense any land, situate at the rear of such first-mentioned land and of sufficient extent to afford him building facilities of the same nature as he would have enjoyed but for such restriction. All lands required for any such purpose shall be deemed to be required for a public purpose, and the provisions of section 78 shall apply to the valuation of such land. OBSTRUCTIONS TO THOROUGHFARES",
+   "text": "The Urban Council of a town may, at the request of any person whose right to build upon any land abutting upon a road within that town is restricted by the building limit demarcated upon that road, and who desires to erect a building upon the land, acquire for such owner at his expense any land, situate at the rear of such first-mentioned land and of sufficient extent to afford him building facilities of the same nature as he would have enjoyed but for such restriction. All lands required for any such purpose shall be deemed to be required for a public purpose, and the provisions of section 78 shall apply to the valuation of such land.",
    "amendment_events": [],
    "cross_references": [
     {
@@ -4162,10 +4253,30 @@
      "type": "subsection",
      "number": "2",
      "raw_text": "(2) The owner of any pig found tied, straying, burrowing or wallowing in any road or canal within a town shall be guilty of an offence punishable with a fine not exceeding fifty rupees; and it shall be lawful for any person to seize or shoot or otherwise destroy any pig that he may find tied, straying, burrowing, or wallowing in any such road or canal; and such person may, if he choose, take such pig to any peace or police officer of the area in committed, and such officer shall and pay the proceeds of such sale to such (3) Every person who within a town (a) hangs up or otherwise exposes any mats, clothes, or any substances of any nature whatever on or at the side of any road in a manner calculated to obstruct the use of the road;",
-     "text": "The owner of any pig found tied, straying, burrowing or wallowing in any road or canal within a town shall be guilty of an offence punishable with a fine not exceeding fifty rupees; and it shall be lawful for any person to seize or shoot or otherwise destroy any pig that he may find tied, straying, burrowing, or wallowing in any such road or canal; and such person may, if he choose, take such pig to any peace or police officer of the area in committed, and such officer shall and pay the proceeds of such sale to such (3) Every person who within a town (a) hangs up or otherwise exposes any mats, clothes, or any substances of any nature whatever on or at the side of any road in a manner calculated to obstruct the use of the road;",
+     "text": "The owner of any pig found tied, straying, burrowing or wallowing in any road or canal within a town shall be guilty of an offence punishable with a fine not exceeding fifty rupees; and it shall be lawful for any person to seize or shoot or otherwise destroy any pig that he may find tied, straying, burrowing, or wallowing in any such road or canal; and such person may, if he choose, take such pig to any peace or police officer of the area in which the offence was committed, and such officer shall forthwith sell the pig, and pay the proceeds of such sale to such person.",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": [],
+     "text_as_parsed": "The owner of any pig found tied, straying, burrowing or wallowing in any road or canal within a town shall be guilty of an offence punishable with a fine not exceeding fifty rupees; and it shall be lawful for any person to seize or shoot or otherwise destroy any pig that he may find tied, straying, burrowing, or wallowing in any such road or canal; and such person may, if he choose, take such pig to any peace or police officer of the area in committed, and such officer shall and pay the proceeds of such sale to such (3) Every person who within a town (a) hangs up or otherwise exposes any mats, clothes, or any substances of any nature whatever on or at the side of any road in a manner calculated to obstruct the use of the road;",
+     "text_note": "words lost by the parser where the print's body column shifts left; restored from pdftotext -layout"
+    },
+    {
+     "type": "subsection",
+     "number": "3",
+     "raw_text": "(3) Every person who within a town",
+     "text": "Every person who within a town",
      "amendment_events": [],
      "cross_references": [],
      "children": [
+      {
+       "type": "paragraph",
+       "number": "a",
+       "raw_text": "(a) hangs up or otherwise exposes any mats, clothes, or any substances of any nature whatever on or at the side of any road in a manner calculated to obstruct the use of the road;",
+       "text": "hangs up or otherwise exposes any mats, clothes, or any substances of any nature whatever on or at the side of any road in a manner calculated to obstruct the use of the road;",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": []
+      },
       {
        "type": "paragraph",
        "number": "b",
@@ -4208,7 +4319,16 @@
        "type": "paragraph",
        "number": "e",
        "raw_text": "(e) lays or throws any stones, bricks, raft, timber, sand, lime, dung, straw, rubbish, or scourings of any ditch or drain, or other article or thing, on or in any road, river, or canal, and allows such article or thing to remain there, except for such period as may be absolutely necessary for the removal thereof, (f) leads or drives on any road any cart or other carriage with timber, boards, iron, or other goods so that either end of any such goods projects beyond the wheels or sides thereof;",
-       "text": "lays or throws any stones, bricks, raft, timber, sand, lime, dung, straw, rubbish, or scourings of any ditch or drain, or other article or thing, on or in any road, river, or canal, and allows such article or thing to remain there, except for such period as may be absolutely necessary for the removal thereof, (f) leads or drives on any road any cart or other carriage with timber, boards, iron, or other goods so that either end of any such goods projects beyond the wheels or sides thereof;",
+       "text": "lays or throws any stones, bricks, raft, timber, sand, lime, dung, straw, rubbish, or scourings of any ditch or drain, or other article or thing, on or in any road, river, or canal, and allows such article or thing to remain there, except for such period as may be absolutely necessary for the removal thereof,",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": []
+      },
+      {
+       "type": "paragraph",
+       "number": "f",
+       "raw_text": "(f) leads or drives on any road any cart or other carriage with timber, boards, iron, or other goods so that either end of any such goods projects beyond the wheels or sides thereof;",
+       "text": "leads or drives on any road any cart or other carriage with timber, boards, iron, or other goods so that either end of any such goods projects beyond the wheels or sides thereof;",
        "amendment_events": [],
        "cross_references": [],
        "children": []
@@ -4343,7 +4463,7 @@
    "number": "92",
    "heading": "Interference with cattle seizers or seizers.",
    "raw_text": "92. Any person who removes any animal from the lawful custody of any pig person authorized to seize it under section 91, or under subsection (2) of section 90, or who in any way molests or obstructs such person in the exercise or discharge of his powers or duties, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate,* be liable to a fine not exceeding five hundred rupees- SPECIAL USER OF THOROUGHFARES",
-   "text": "Any person who removes any animal from the lawful custody of any pig person authorized to seize it under section 91, or under subsection (2) of section 90, or who in any way molests or obstructs such person in the exercise or discharge of his powers or duties, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate,* be liable to a fine not exceeding five hundred rupees- SPECIAL USER OF THOROUGHFARES",
+   "text": "Any person who removes any animal from the lawful custody of any pig person authorized to seize it under section 91, or under subsection (2) of section 90, or who in any way molests or obstructs such person in the exercise or discharge of his powers or duties, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate,* be liable to a fine not exceeding five hundred rupees-",
    "amendment_events": [
     {
      "amending_act": "48 of 1984",
@@ -4386,7 +4506,7 @@
    "type": "section",
    "number": "94",
    "heading": "",
-   "raw_text": "94. (1) For the purpose of any agreement referred to in section 93, and for the purpose of securing the observance of the respective rights and obligations of the public, the Urban Council and the promoters in connexion with any public service or any private enterprise or object to which the agreement relates, the Urban Council (except in so far as provision is made by any special enactment in that behalf) may make by-laws (a) authorizing the promoters and their agents, servants or workmen, or the agents, servants, or workmen of the Council, subject to such conditions as may be prescribed in the by-laws (i) to break up the soil, metal, and pavement of any thoroughfare vested in the Council;",
+   "raw_text": "94.",
    "text": "",
    "amendment_events": [],
    "cross_references": [
@@ -4401,8 +4521,8 @@
     {
      "type": "subsection",
      "number": "1",
-     "raw_text": "(1) For the purpose of any agreement referred to in section 93, and for the purpose of securing the observance of the respective rights and obligations of the public, the Urban Council and the promoters in connexion with any public service or any private enterprise or object to which the agreement relates, the Urban Council (except in so far as provision is made by any special enactment in that behalf) may make by-laws (a) authorizing the promoters and their agents, servants or workmen, or the agents, servants, or workmen of the Council, subject to such conditions as may be prescribed in the by-laws (i) to break up the soil, metal, and pavement of any thoroughfare vested in the Council;",
-     "text": "For the purpose of any agreement referred to in section 93, and for the purpose of securing the observance of the respective rights and obligations of the public, the Urban Council and the promoters in connexion with any public service or any private enterprise or object to which the agreement relates, the Urban Council (except in so far as provision is made by any special enactment in that behalf) may make by-laws (a) authorizing the promoters and their agents, servants or workmen, or the agents, servants, or workmen of the Council, subject to such conditions as may be prescribed in the by-laws (i) to break up the soil, metal, and pavement of any thoroughfare vested in the Council;",
+     "raw_text": "(1) For the purpose of any agreement referred to in section 93, and for the purpose of securing the observance of the respective rights and obligations of the public, the Urban Council and the promoters in connexion with any public service or any private enterprise or object to which the agreement relates, the Urban Council (except in so far as provision is made by any special enactment in that behalf) may make by-laws",
+     "text": "For the purpose of any agreement referred to in section 93, and for the purpose of securing the observance of the respective rights and obligations of the public, the Urban Council and the promoters in connexion with any public service or any private enterprise or object to which the agreement relates, the Urban Council (except in so far as provision is made by any special enactment in that behalf) may make by-laws",
      "amendment_events": [],
      "cross_references": [
       {
@@ -4414,31 +4534,50 @@
      ],
      "children": [
       {
-       "type": "subparagraph",
-       "number": "ii",
-       "raw_text": "(ii) to open and break up any sewers, drains, or tunnels within or under such thoroughfare;",
-       "text": "to open and break up any sewers, drains, or tunnels within or under such thoroughfare;",
+       "type": "paragraph",
+       "number": "a",
+       "raw_text": "(a) authorizing the promoters and their agents, servants or workmen, or the agents, servants, or workmen of the Council, subject to such conditions as may be prescribed in the by-laws",
+       "text": "authorizing the promoters and their agents, servants or workmen, or the agents, servants, or workmen of the Council, subject to such conditions as may be prescribed in the by-laws",
        "amendment_events": [],
        "cross_references": [],
-       "children": []
-      },
-      {
-       "type": "subparagraph",
-       "number": "iii",
-       "raw_text": "(iii) to erect, set up, or lay down, either permanently or temporarily in, along, under, or over such thoroughfare, any post, pillar, lamp, wire, pipe, rails or other plant, material, or works;",
-       "text": "to erect, set up, or lay down, either permanently or temporarily in, along, under, or over such thoroughfare, any post, pillar, lamp, wire, pipe, rails or other plant, material, or works;",
-       "amendment_events": [],
-       "cross_references": [],
-       "children": []
-      },
-      {
-       "type": "subparagraph",
-       "number": "iv",
-       "raw_text": "(iv) to alter the position of any public line, wire, or other apparatus or plant in or about such thoroughfare for the purpose of any other public service;",
-       "text": "to alter the position of any public line, wire, or other apparatus or plant in or about such thoroughfare for the purpose of any other public service;",
-       "amendment_events": [],
-       "cross_references": [],
-       "children": []
+       "children": [
+        {
+         "type": "subparagraph",
+         "number": "i",
+         "raw_text": "(i) to break up the soil, metal, and pavement of any thoroughfare vested in the Council;",
+         "text": "to break up the soil, metal, and pavement of any thoroughfare vested in the Council;",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        },
+        {
+         "type": "subparagraph",
+         "number": "ii",
+         "raw_text": "(ii) to open and break up any sewers, drains, or tunnels within or under such thoroughfare;",
+         "text": "to open and break up any sewers, drains, or tunnels within or under such thoroughfare;",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        },
+        {
+         "type": "subparagraph",
+         "number": "iii",
+         "raw_text": "(iii) to erect, set up, or lay down, either permanently or temporarily in, along, under, or over such thoroughfare, any post, pillar, lamp, wire, pipe, rails or other plant, material, or works;",
+         "text": "to erect, set up, or lay down, either permanently or temporarily in, along, under, or over such thoroughfare, any post, pillar, lamp, wire, pipe, rails or other plant, material, or works;",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        },
+        {
+         "type": "subparagraph",
+         "number": "iv",
+         "raw_text": "(iv) to alter the position of any public line, wire, or other apparatus or plant in or about such thoroughfare for the purpose of any other public service;",
+         "text": "to alter the position of any public line, wire, or other apparatus or plant in or about such thoroughfare for the purpose of any other public service;",
+         "amendment_events": [],
+         "cross_references": [],
+         "children": []
+        }
+       ]
       },
       {
        "type": "paragraph",
@@ -4487,7 +4626,8 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "heading_note": "No marginal note is printed for s.94 in either held edition (PDF p.? / pdftotext line 1992; HTML runs straight from s.93 into '94 . (1)'). Left empty rather than invented."
   },
   {
    "type": "section",
@@ -5187,7 +5327,7 @@
    "number": "120",
    "heading": "Places for disposal of refuse and keeping equipment",
    "raw_text": "120. Every Urban Council shall, from time to time, provide places convenient for the proper disposal of all street refuse, house refuse, night-soil, and similar matter removed in accordance with the provisions of this Part, and for keeping all vehicles, animals, implements, and other things required for that purpose or for any of the other purposes of this Ordinance, and shall take all such measures and precautions as may be necessary to ensure that no such refuse, night-soil, or similar matter removed in accordance with the provisions of this Part is disposed of in such a way as to cause a nuisance. IN SANITARY BUILDINGS",
-   "text": "Every Urban Council shall, from time to time, provide places convenient for the proper disposal of all street refuse, house refuse, night-soil, and similar matter removed in accordance with the provisions of this Part, and for keeping all vehicles, animals, implements, and other things required for that purpose or for any of the other purposes of this Ordinance, and shall take all such measures and precautions as may be necessary to ensure that no such refuse, night-soil, or similar matter removed in accordance with the provisions of this Part is disposed of in such a way as to cause a nuisance. IN SANITARY BUILDINGS",
+   "text": "Every Urban Council shall, from time to time, provide places convenient for the proper disposal of all street refuse, house refuse, night-soil, and similar matter removed in accordance with the provisions of this Part, and for keeping all vehicles, animals, implements, and other things required for that purpose or for any of the other purposes of this Ordinance, and shall take all such measures and precautions as may be necessary to ensure that no such refuse, night-soil, or similar matter removed in accordance with the provisions of this Part is disposed of in such a way as to cause a nuisance.",
    "amendment_events": [],
    "cross_references": [],
    "children": []
@@ -7152,10 +7292,12 @@
        "type": "paragraph",
        "number": "f",
        "raw_text": "(f) the abatement of nuisances, including the regulation control of the operation of gramaphones, loudspeakers, amplifiers and other instruments automatically mechanically producing or reproducing sound;",
-       "text": "the abatement of nuisances, including the regulation control of the operation of gramaphones, loudspeakers, amplifiers and other instruments automatically mechanically producing or reproducing sound;",
+       "text": "the abatement of nuisances, including the regulation and control of the operation of gramaphones, loudspeakers, amplifiers and other instruments automatically or mechanically producing or reproducing sound;",
        "amendment_events": [],
        "cross_references": [],
-       "children": []
+       "children": [],
+       "text_as_parsed": "the abatement of nuisances, including the regulation control of the operation of gramaphones, loudspeakers, amplifiers and other instruments automatically mechanically producing or reproducing sound;",
+       "text_note": "words lost by the parser where the print's body column shifts left; restored from pdftotext -layout"
       },
       {
        "type": "paragraph",
@@ -7829,8 +7971,11 @@
      "amending_act_no": 21,
      "amending_year": 2012,
      "amending_section": "11",
-     "operation": "unknown",
-     "verbatim": "[11, 21 of 2012]"
+     "operation": "amend",
+     "verbatim": "[11, 21 of 2012]",
+     "operation_verbatim": "Section 159 ... amended by the repeal of subsection (2) thereof and the substitution therefor of the following:-- \"(2) All cheques or orders for payment of moneys out of the Urban Council Local Funds shall, subject to the approval of the Commissioner be signed by two officers other than the Chairman of the Council ...\"",
+     "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+     "confirmed_in_baseline_text": true
     },
     {
      "amending_act": "18 of 1987",
@@ -7900,10 +8045,19 @@
      "type": "subsection",
      "number": "1",
      "raw_text": "(1) There shall be paid out of the local fund established by each Urban Council (a) all expenses incurred by the Council or by the secretary or any other officer of the Council in the exercise of its or his powers and the discharge of its or his functions and duties under this Ordinance or any other enactment or any by-law or rule made thereunder; and",
-     "text": "There shall be paid out of the local fund established by each Urban Council (a) all expenses incurred by the Council or by the secretary or any other officer of the Council in the exercise of its or his powers and the discharge of its or his functions and duties under this Ordinance or any other enactment or any by-law or rule made thereunder; and",
+     "text": "There shall be paid out of the local fund established by each Urban Council",
      "amendment_events": [],
      "cross_references": [],
      "children": [
+      {
+       "type": "paragraph",
+       "number": "a",
+       "raw_text": "(a) all expenses incurred by the Council or by the secretary or any other officer of the Council in the exercise of its or his powers and the discharge of its or his functions and duties under this Ordinance or any other enactment or any by-law or rule made thereunder; and",
+       "text": "all expenses incurred by the Council or by the secretary or any other officer of the Council in the exercise of its or his powers and the discharge of its or his functions and duties under this Ordinance or any other enactment or any by-law or rule made thereunder; and",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": []
+      },
       {
        "type": "paragraph",
        "number": "b",
@@ -7947,7 +8101,16 @@
        "type": "paragraph",
        "number": "dd",
        "raw_text": "(dd) all contributions voted by the Council towards; the provision of relief to poor people, the rehabilitation and care of, destitute persons or physically, mentally or socially handicapped persons, community development projects or employment programmes;",
-       "text": "all contributions voted by the Council towards; the provision of relief to poor people, the rehabilitation and care of, destitute persons or physically, mentally or socially handicapped persons, community development projects or employment programmes; (ddd) all contributions voted by the Council towards, promotion of religion and culture, including contributions made towards the costs of the organization of religious ceremonies and festivals, the maintenance of Dhamma schools and Sasana Rakshaka Mandalayas, the establishment pf cultural centres, the organization of literary and cultural festival , the publication of books of literary and cultural value and the award of prizes to artists, authors and craftsmen;",
+       "text": "all contributions voted by the Council towards; the provision of relief to poor people, the rehabilitation and care of, destitute persons or physically, mentally or socially handicapped persons, community development projects or employment programmes;",
+       "amendment_events": [],
+       "cross_references": [],
+       "children": []
+      },
+      {
+       "type": "paragraph",
+       "number": "ddd",
+       "raw_text": "(ddd) all contributions voted by the Council towards, promotion of religion and culture, including contributions made towards the costs of the organization of religious ceremonies and festivals, the maintenance of Dhamma schools and Sasana Rakshaka Mandalayas, the establishment pf cultural centres, the organization of literary and cultural festival , the publication of books of literary and cultural value and the award of prizes to artists, authors and craftsmen;",
+       "text": "all contributions voted by the Council towards, promotion of religion and culture, including contributions made towards the costs of the organization of religious ceremonies and festivals, the maintenance of Dhamma schools and Sasana Rakshaka Mandalayas, the establishment pf cultural centres, the organization of literary and cultural festival , the publication of books of literary and cultural value and the award of prizes to artists, authors and craftsmen;",
        "amendment_events": [],
        "cross_references": [],
        "children": []
@@ -8159,7 +8322,7 @@
      "type": "subsection",
      "number": "2",
      "raw_text": "(2) By-laws made under subsection (I) may be so made by an Urban Council as to be applicable to temporary officers and servants of that Council who have been discontinued from the service of that Council before the coming into operation of the by-laws. IMPOSITION OF RATES AND TAXES",
-     "text": "By-laws made under subsection (I) may be so made by an Urban Council as to be applicable to temporary officers and servants of that Council who have been discontinued from the service of that Council before the coming into operation of the by-laws. IMPOSITION OF RATES AND TAXES",
+     "text": "By-laws made under subsection (I) may be so made by an Urban Council as to be applicable to temporary officers and servants of that Council who have been discontinued from the service of that Council before the coming into operation of the by-laws.",
      "amendment_events": [],
      "cross_references": [],
      "children": []
@@ -8998,10 +9161,13 @@
        "type": "paragraph",
        "number": "b",
        "raw_text": "(b) 'takings' in relation to any business, means the total amount received or receivable from transactions entered into in respect of that business or for services performed in carrying on that business, and includes (a) in the case of financier, money-lender or the moneys given out by him as loans, received or receivable by him on such the sums received by him as fees or other respect of such loans;",
-       "text": "'takings' in relation to any business, means the total amount received or receivable from transactions entered into in respect of that business or for services performed in carrying on that business, and includes (a) in the case of financier, money-lender or the moneys given out by him as loans, received or receivable by him on such the sums received by him as fees or other respect of such loans;",
+       "text": "'takings' in relation to any business, means the total amount received or receivable from transactions entered into in respect of that business or for services performed in carrying on that business, and includes (a) in the case of financier, money-lender or pawnbroker, the moneys given out by him as loans, the interest received or receivable by him on such loans, and the sums received by him as fees or other charges in respect of such loans;",
        "amendment_events": [],
        "cross_references": [],
-       "children": []
+       "children": [],
+       "text_as_parsed": "'takings' in relation to any business, means the total amount received or receivable from transactions entered into in respect of that business or for services performed in carrying on that business, and includes (a) in the case of financier, money-lender or the moneys given out by him as loans, received or receivable by him on such the sums received by him as fees or other respect of such loans;",
+       "text_note": "words lost by the parser where the print's body column shifts left; restored from pdftotext -layout",
+       "structure_note": "this definition (and the definitions around it) are typed as paragraphs of subsection (3), which is the tax-recovery subsection; the print sets the definitions apart. Structure not corrected."
       },
       {
        "type": "paragraph",
@@ -9177,7 +9343,7 @@
      "type": "subsection",
      "number": "2",
      "raw_text": "(2) If the tax payable under subsection (1) is not paid within fourteen days of demand, the Secretary shall report such failure to the Magistrate's Court and the Court shall proceed to recover the amount due as if it were a fine imposed by Court, notwithstanding that such amount exceeds the amount of a fine which a Magistrate may impose in the exercise of his ordinary jurisdiction and the amount so recovered by Court shall be paid into the local fund of the Council. ASSESSMENT AND RECOVERY OF RATES AND TAXES",
-     "text": "If the tax payable under subsection (1) is not paid within fourteen days of demand, the Secretary shall report such failure to the Magistrate's Court and the Court shall proceed to recover the amount due as if it were a fine imposed by Court, notwithstanding that such amount exceeds the amount of a fine which a Magistrate may impose in the exercise of his ordinary jurisdiction and the amount so recovered by Court shall be paid into the local fund of the Council. ASSESSMENT AND RECOVERY OF RATES AND TAXES",
+     "text": "If the tax payable under subsection (1) is not paid within fourteen days of demand, the Secretary shall report such failure to the Magistrate's Court and the Court shall proceed to recover the amount due as if it were a fine imposed by Court, notwithstanding that such amount exceeds the amount of a fine which a Magistrate may impose in the exercise of his ordinary jurisdiction and the amount so recovered by Court shall be paid into the local fund of the Council.",
      "amendment_events": [],
      "cross_references": [
       {
@@ -9568,7 +9734,18 @@
      "amendment_events": [],
      "cross_references": [],
      "children": []
-    },
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "number": "174",
+   "heading": "Limitation of borrowing powers.",
+   "raw_text": "174.",
+   "text": "",
+   "amendment_events": [],
+   "cross_references": [],
+   "children": [
     {
      "type": "subsection",
      "number": "1",
@@ -9597,7 +9774,8 @@
      "cross_references": [],
      "children": []
     }
-   ]
+   ],
+   "source_note": "PDF p.? (pdftotext line 4283-4301): the marginal note 'Limitation of borrowing powers.' and the number '174.' share a physical line with subsection (1); the parser had appended both subsections to s.173."
   },
   {
    "type": "section",
@@ -9622,6 +9800,12 @@
      "target_document": "Urban Councils Ordinance",
      "target_section": "173",
      "verbatim": "sections 173"
+    },
+    {
+     "kind": "internal",
+     "target_document": "Urban Councils Ordinance",
+     "target_section": "174",
+     "verbatim": "sections 173 and 174"
     }
    ],
    "children": []
@@ -9631,7 +9815,7 @@
    "number": "175",
    "heading": "Form of security, &c",
    "raw_text": "175. The form and manner of execution of any security given for the purpose of any loan under this Part, the mode and order of repayment of any sums borrowed, and the arrangements for the liquidation of any loan, shall, subject to the provisions of the Local Loans and Development Ordinance, be such as may be prescribed by by-laws or regulations made under this Ordinance, and, in the absence of any such by-laws or regulations shall be in accordance with the provisions of the Municipal Councils Ordinance, and the said provisions, with the necessary modifications, shall in such circumstances apply to any loan made to any Urban Council under this Ordinance. ACCOUNTS, ESTIMATES, AND BUDGET",
-   "text": "The form and manner of execution of any security given for the purpose of any loan under this Part, the mode and order of repayment of any sums borrowed, and the arrangements for the liquidation of any loan, shall, subject to the provisions of the Local Loans and Development Ordinance, be such as may be prescribed by by-laws or regulations made under this Ordinance, and, in the absence of any such by-laws or regulations shall be in accordance with the provisions of the Municipal Councils Ordinance, and the said provisions, with the necessary modifications, shall in such circumstances apply to any loan made to any Urban Council under this Ordinance. ACCOUNTS, ESTIMATES, AND BUDGET",
+   "text": "The form and manner of execution of any security given for the purpose of any loan under this Part, the mode and order of repayment of any sums borrowed, and the arrangements for the liquidation of any loan, shall, subject to the provisions of the Local Loans and Development Ordinance, be such as may be prescribed by by-laws or regulations made under this Ordinance, and, in the absence of any such by-laws or regulations shall be in accordance with the provisions of the Municipal Councils Ordinance, and the said provisions, with the necessary modifications, shall in such circumstances apply to any loan made to any Urban Council under this Ordinance.",
    "amendment_events": [],
    "cross_references": [
     {
@@ -9797,8 +9981,11 @@
      "amending_act_no": 21,
      "amending_year": 2012,
      "amending_section": "12",
-     "operation": "unknown",
-     "verbatim": "[12, 21 of 2012]"
+     "operation": "amend",
+     "verbatim": "[12, 21 of 2012]",
+     "operation_verbatim": "Section 178A ... further amended by the substitution for the words \"supplementary budget of the Council\" of the following:-- \"supplementary budget of the Council: Provided that, if the Council according to sections 178 and 178A of this ordinance modifies or rejects ...\"",
+     "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+     "confirmed_in_baseline_text": true
     },
     {
      "amending_act": "24 of 1977",
@@ -9833,7 +10020,7 @@
   {
    "type": "section",
    "number": "178B",
-   "heading": "\"Transitional provision.",
+   "heading": "Transitional provision.",
    "raw_text": "178B. The provisions of the proviso to section 178A of the Urban Councils Ordinance as amended by the Local Authorities (Special Provisions) Act, No. 21 of 2012 shall not be applicable to any budget or supplementary budget to be submitted to an Urban Council constituted in terms of elections held prior to the date of coming into operation of Local Authorities (Special Provisions) Act, No. 21 of 2012 and Local Authorities Elections (Amendment) Act, No. 22 of 2012 respectively.",
    "text": "The provisions of the proviso to section 178A of the Urban Councils Ordinance as amended by the Local Authorities (Special Provisions) Act, No. 21 of 2012 shall not be applicable to any budget or supplementary budget to be submitted to an Urban Council constituted in terms of elections held prior to the date of coming into operation of Local Authorities (Special Provisions) Act, No. 21 of 2012 and Local Authorities Elections (Amendment) Act, No. 22 of 2012 respectively.",
    "amendment_events": [
@@ -9842,8 +10029,11 @@
      "amending_act_no": 35,
      "amending_year": 2014,
      "amending_section": "2",
-     "operation": "unknown",
-     "verbatim": "[2, 35 of 2014]"
+     "operation": "insert",
+     "verbatim": "[2, 35 of 2014]",
+     "operation_verbatim": "The following new section is hereby inserted immediately after section 178A of the Urban Councils Ordinance (Chapter 255) and shall have effect as section 178B of that Ordinance",
+     "operation_source": "data/legal-sources/library/amendments/35-2014-urban-councils-amendment.pdf",
+     "confirmed_in_baseline_text": true
     }
    ],
    "cross_references": [
@@ -9875,7 +10065,8 @@
      "target_document_raw": "Amendment) Act"
     }
    ],
-   "children": []
+   "children": [],
+   "heading_raw": "\"Transitional provision."
   },
   {
    "type": "section",
@@ -10051,10 +10242,12 @@
      "type": "subsection",
      "number": "1",
      "raw_text": "(1) Any person aggrieved by any disallowance or surcharge may appeal against such decision to the Court of Appeal, and the Court of Appeal may either confirm such disallowance or surcharge, or, if it is of opinion that such disallowance or surcharge is not in accordance with law, may modify or set or surcharge accordingly.",
-     "text": "Any person aggrieved by any disallowance or surcharge may appeal against such decision to the Court of Appeal, and the Court of Appeal may either confirm such disallowance or surcharge, or, if it is of opinion that such disallowance or surcharge is not in accordance with law, may modify or set or surcharge accordingly.",
+     "text": "Any person aggrieved by any disallowance or surcharge may appeal against such decision to the Court of Appeal, and the Court of Appeal may either confirm such disallowance or surcharge, or, if it is of opinion that such disallowance or surcharge is not in accordance with law, may modify or set aside such disallowance or surcharge accordingly.",
      "amendment_events": [],
      "cross_references": [],
-     "children": []
+     "children": [],
+     "text_as_parsed": "Any person aggrieved by any disallowance or surcharge may appeal against such decision to the Court of Appeal, and the Court of Appeal may either confirm such disallowance or surcharge, or, if it is of opinion that such disallowance or surcharge is not in accordance with law, may modify or set or surcharge accordingly.",
+     "text_note": "words lost by the parser where the print's body column shifts left; restored from pdftotext -layout"
     },
     {
      "type": "subsection",
@@ -10131,8 +10324,11 @@
      "amending_act_no": 21,
      "amending_year": 2012,
      "amending_section": "13",
-     "operation": "unknown",
-     "verbatim": "[13, 21 of 2012]"
+     "operation": "amend",
+     "verbatim": "[13, 21 of 2012]",
+     "operation_verbatim": "Section 184 ... further amended in subsection (3) ... by the substitution for the words \"and the provisions of written law for the time being applicable in that behalf\", of the words \"and the provisions of the Local Authorities Elections Ordinance (Cap. 262)\"",
+     "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+     "confirmed_in_baseline_text": true
     },
     {
      "amending_act": "24 of 1977",
@@ -10257,7 +10453,7 @@
      "type": "subsection",
      "number": "1A",
      "raw_text": "(1A) The Minister shall before making an Order under subsection (1), appoint for the purpose of satisfying himself in regard to any of the matters referred to in subsection (1), a retired judicial officer to inquire into and report upon such matter within a period of three months, and such officer shall in have the powers of a commission of Commissions of Inquiry Act.",
-     "text": "The Minister shall before making an Order under subsection (1), appoint for the purpose of satisfying himself in regard to any of the matters referred to in subsection (1), a retired judicial officer to inquire into and report upon such matter within a period of three months, and such officer shall in have the powers of a commission of Commissions of Inquiry Act.",
+     "text": "The Minister shall before making an Order under subsection (1), appoint for the purpose of satisfying himself in regard to any of the matters referred to in subsection (1), a retired judicial officer to inquire into and report upon such matter within a period of three months, and such officer shall in relation to such inquiry have the powers of a commission of inquiry appointed under the Commissions of Inquiry Act.",
      "amendment_events": [],
      "cross_references": [
       {
@@ -10268,7 +10464,9 @@
        "verbatim": "under subsection (1)"
       }
      ],
-     "children": []
+     "children": [],
+     "text_as_parsed": "The Minister shall before making an Order under subsection (1), appoint for the purpose of satisfying himself in regard to any of the matters referred to in subsection (1), a retired judicial officer to inquire into and report upon such matter within a period of three months, and such officer shall in have the powers of a commission of Commissions of Inquiry Act.",
+     "text_note": "words lost by the parser where the print's body column shifts left; restored from pdftotext -layout"
     },
     {
      "type": "subsection",
@@ -10337,8 +10535,8 @@
     {
      "type": "subsection",
      "number": "3",
-     "raw_text": "(3) Where the Minister removes the Chairman of an Urban Council from office by Order under subsection (1) the Chairman shall be deemed to vacate forthwith the office of member of the Council as well as the office of Chairman and the provisions of the Local Authorities Elections Ordinance (Cap.",
-     "text": "Where the Minister removes the Chairman of an Urban Council from office by Order under subsection (1) the Chairman shall be deemed to vacate forthwith the office of member of the Council as well as the office of Chairman and the provisions of the Local Authorities Elections Ordinance (Cap.",
+     "raw_text": "(3) Where the Minister removes the Chairman of an Urban Council from office by Order under subsection (1) the Chairman shall be deemed to vacate forthwith the office of member of the Council as well as the office of Chairman and the provisions of the Local Authorities Elections Ordinance (Cap. 262) shall thereupon apply with regard to the filling of such vacancy.",
+     "text": "Where the Minister removes the Chairman of an Urban Council from office by Order under subsection (1) the Chairman shall be deemed to vacate forthwith the office of member of the Council as well as the office of Chairman and the provisions of the Local Authorities Elections Ordinance (Cap. 262) shall thereupon apply with regard to the filling of such vacancy.",
      "amendment_events": [],
      "cross_references": [
       {
@@ -10354,16 +10552,8 @@
        "verbatim": "the Local Authorities Elections Ordinance"
       }
      ],
-     "children": []
-    },
-    {
-     "type": "subsection",
-     "number": "262",
-     "raw_text": "262) shall thereupon apply with regard to the filling of such vacancy.",
-     "text": "shall thereupon apply with regard to the filling of such vacancy.",
-     "amendment_events": [],
-     "cross_references": [],
-     "children": []
+     "children": [],
+     "text_as_parsed": "Where the Minister removes the Chairman of an Urban Council from office by Order under subsection (1) the Chairman shall be deemed to vacate forthwith the office of member of the Council as well as the office of Chairman and the provisions of the Local Authorities Elections Ordinance (Cap."
     },
     {
      "type": "subsection",
@@ -11646,7 +11836,7 @@
    "number": "213",
    "heading": "Recovery of expenses on account of improvement to private property",
    "raw_text": "213. Where an Urban Council incurs any expenses in executing any of the works or performing any of the acts which under this Ordinance or any other enactment, or any by-law, rule, or regulation made thereunder, the owner of any house, building, or land is required to execute or perform, the Council may either recover the amount of such expenses in the manner provided by section 211, or if it thinks fit, may accept any undertaking given by the owner for the payment by instalments of such sums as will be sufficient to defray the whole amount of the expenses, with interest thereon at the rate of nine per centum per annum, within a period not exceeding five years, and such sums when due may be recovered by the same process by which rates payable under this Ordinance may be recovered. PAYMENT OF COMPENSATION",
-   "text": "Where an Urban Council incurs any expenses in executing any of the works or performing any of the acts which under this Ordinance or any other enactment, or any by-law, rule, or regulation made thereunder, the owner of any house, building, or land is required to execute or perform, the Council may either recover the amount of such expenses in the manner provided by section 211, or if it thinks fit, may accept any undertaking given by the owner for the payment by instalments of such sums as will be sufficient to defray the whole amount of the expenses, with interest thereon at the rate of nine per centum per annum, within a period not exceeding five years, and such sums when due may be recovered by the same process by which rates payable under this Ordinance may be recovered. PAYMENT OF COMPENSATION",
+   "text": "Where an Urban Council incurs any expenses in executing any of the works or performing any of the acts which under this Ordinance or any other enactment, or any by-law, rule, or regulation made thereunder, the owner of any house, building, or land is required to execute or perform, the Council may either recover the amount of such expenses in the manner provided by section 211, or if it thinks fit, may accept any undertaking given by the owner for the payment by instalments of such sums as will be sufficient to defray the whole amount of the expenses, with interest thereon at the rate of nine per centum per annum, within a period not exceeding five years, and such sums when due may be recovered by the same process by which rates payable under this Ordinance may be recovered.",
    "amendment_events": [],
    "cross_references": [
     {
@@ -11673,7 +11863,7 @@
    "number": "215",
    "heading": "Determination and payment of compensation",
    "raw_text": "215. Except as herein otherwise provided, in all cases where compensation is by this Ordinance, or by any by-law made thereunder, directed to be paid, the amount and, if necessary, the apportionment of such compensation in case of dispute, shall be determined in the same manner as a claim for damages, costs or expenses under section 211, and all the provisions of that section shall, with the necessary modifications, apply to the determination of all questions under this section. PROCEDURE AND LEGAL PROCEEDINGS",
-   "text": "Except as herein otherwise provided, in all cases where compensation is by this Ordinance, or by any by-law made thereunder, directed to be paid, the amount and, if necessary, the apportionment of such compensation in case of dispute, shall be determined in the same manner as a claim for damages, costs or expenses under section 211, and all the provisions of that section shall, with the necessary modifications, apply to the determination of all questions under this section. PROCEDURE AND LEGAL PROCEEDINGS",
+   "text": "Except as herein otherwise provided, in all cases where compensation is by this Ordinance, or by any by-law made thereunder, directed to be paid, the amount and, if necessary, the apportionment of such compensation in case of dispute, shall be determined in the same manner as a claim for damages, costs or expenses under section 211, and all the provisions of that section shall, with the necessary modifications, apply to the determination of all questions under this section.",
    "amendment_events": [],
    "cross_references": [
     {
@@ -11905,7 +12095,7 @@
    "number": "222",
    "heading": "Relief against formalities",
    "raw_text": "222. If the directions of this Ordinance, or of any by-law made thereunder, are in substance and effect complied with, no proceedings under this Ordinance, or under such by-law shall be quashed or set aside for want of form in any Court of Justice. POWERS AND RESPONSIBILITIES OF OFFICERS",
-   "text": "If the directions of this Ordinance, or of any by-law made thereunder, are in substance and effect complied with, no proceedings under this Ordinance, or under such by-law shall be quashed or set aside for want of form in any Court of Justice. POWERS AND RESPONSIBILITIES OF OFFICERS",
+   "text": "If the directions of this Ordinance, or of any by-law made thereunder, are in substance and effect complied with, no proceedings under this Ordinance, or under such by-law shall be quashed or set aside for want of form in any Court of Justice.",
    "amendment_events": [],
    "cross_references": [],
    "children": []
@@ -12040,7 +12230,7 @@
    "number": "229",
    "heading": "Repealed by",
    "raw_text": "229. TRANSITIONAL ARRANGEMENTS, . AND MISCELLANEOUS PROVISIONS",
-   "text": "TRANSITIONAL ARRANGEMENTS, . AND MISCELLANEOUS PROVISIONS",
+   "text": "",
    "amendment_events": [
     {
      "amending_act": "48 of 1984",
@@ -12564,8 +12754,11 @@
      "amending_act_no": 21,
      "amending_year": 2012,
      "amending_section": "14",
-     "operation": "unknown",
-     "verbatim": "[14, 21 of 2012]"
+     "operation": "amend",
+     "verbatim": "[14, 21 of 2012]",
+     "operation_verbatim": "Section 249 ... further amended in the definition of the expression \"Chairman and Vice Chairman\", by the substitution for the words \"the provisions of written law for the time being applicable in that behalf;\", of the words \"the provisions of the Local Authorities Elections Ordinance (Cap. 262);\"",
+     "operation_source": "data/legal-sources/library/amendments/21-2012-local-authorities-special-provisions.pdf",
+     "confirmed_in_baseline_text": true
     },
     {
      "amending_act": "24 of 1977",
@@ -12623,10 +12816,12 @@
        "term": "annual value",
        "qualifier": "",
        "raw_text": "'annual value' means the annual rent which a tenant might reasonably be expected, taking one year with another, to pay for any house, building, land, or tenement if the tenant undertook to pay all public rates and taxes, and if the landlord undertook to bear the cost of insurance, repairs, maintenance, and upkeep, if any, necessary to maintain the house, building, land, or tenement in a state to command that rent: and assessment of annual shall be made for any period of non-tenancy whatsoever;",
-       "text": "means the annual rent which a tenant might reasonably be expected, taking one year with another, to pay for any house, building, land, or tenement if the tenant undertook to pay all public rates and taxes, and if the landlord undertook to bear the cost of insurance, repairs, maintenance, and upkeep, if any, necessary to maintain the house, building, land, or tenement in a state to command that rent: and assessment of annual shall be made for any period of non-tenancy whatsoever;",
+       "text": "means the annual rent which a tenant might reasonably be expected, taking one year with another, to pay for any house, building, land, or tenement if the tenant undertook to pay all public rates and taxes, and if the landlord undertook to bear the cost of insurance, repairs, maintenance, and upkeep, if any, necessary to maintain the house, building, land, or tenement in a state to command that rent: Provided that in the computation and assessment of annual value, no allowance or reduction shall be made for any period of non-tenancy whatsoever;",
        "amendment_events": [],
        "cross_references": [],
-       "children": []
+       "children": [],
+       "text_as_parsed": "means the annual rent which a tenant might reasonably be expected, taking one year with another, to pay for any house, building, land, or tenement if the tenant undertook to pay all public rates and taxes, and if the landlord undertook to bear the cost of insurance, repairs, maintenance, and upkeep, if any, necessary to maintain the house, building, land, or tenement in a state to command that rent: and assessment of annual shall be made for any period of non-tenancy whatsoever;",
+       "text_note": "words lost by the parser where the print's body column shifts left; restored from pdftotext -layout"
       },
       {
        "type": "definition",
@@ -12947,5 +13142,147 @@
     }
    ]
   }
- ]
+ ],
+ "omitted_provisions": [
+  {
+   "section": "13",
+   "status": "bare_number_in_source",
+   "note": "The 2024 consolidated PDF prints '13.' with no heading and no text between s.12(3) and the crossheading 'ALTERATION OF LIMITS OF TOWNS AND NUMBER OF MEMBERS. ; &C;'. The older LankaLaw HTML edition (chain to 18 of 1987) prints no section 13 at all and carries the marker '[§ 121, Law 24 of 1977]' there, consistent with a repeal by s.121 of Law No. 24 of 1977; the Law's own text is not held, so the repeal is inferred from the markers only."
+  },
+  {
+   "section": "6, 15, 17, 18, 20, 21, 22, 246",
+   "status": "absent_from_source_numbering",
+   "note": "Absent from both held editions' numbering (registry note, confirmed against the PDF text)."
+  }
+ ],
+ "crossheadings_not_modelled": {
+  "note": "The PDF prints Part headings and centred crossheadings; parse_consolidated_pdf.py emits no container nodes and had appended fifteen of them to the text of the preceding provision. They were removed from text (raw_text keeps the run) and are listed here with the section they follow.",
+  "headings": [
+   {
+    "after_section": "5",
+    "text": "ELECTIONS AND DATE OF COMMENCEMENT OF TERMS OF OFFICE OF URBAN COUNCILS, ETC."
+   },
+   {
+    "after_section": "31",
+    "text": "GENERAL POWERS AND DUTIES"
+   },
+   {
+    "after_section": "62",
+    "text": "MAINTENANCE AND REPAIR OF THOROUGHFARES"
+   },
+   {
+    "after_section": "71",
+    "text": "BUILDING ALONG THOROUGHFARES"
+   },
+   {
+    "after_section": "79",
+    "text": "OBSTRUCTIONS TO THOROUGHFARES"
+   },
+   {
+    "after_section": "92",
+    "text": "SPECIAL USER OF THOROUGHFARES"
+   },
+   {
+    "after_section": "120",
+    "text": "IN SANITARY BUILDINGS"
+   },
+   {
+    "after_section": "159B",
+    "text": "IMPOSITION OF RATES AND TAXES"
+   },
+   {
+    "after_section": "165D",
+    "text": "ASSESSMENT AND RECOVERY OF RATES AND TAXES"
+   },
+   {
+    "after_section": "175",
+    "text": "ACCOUNTS, ESTIMATES, AND BUDGET"
+   },
+   {
+    "after_section": "213",
+    "text": "PAYMENT OF COMPENSATION"
+   },
+   {
+    "after_section": "215",
+    "text": "PROCEDURE AND LEGAL PROCEEDINGS"
+   },
+   {
+    "after_section": "222",
+    "text": "POWERS AND RESPONSIBILITIES OF OFFICERS"
+   },
+   {
+    "after_section": "229",
+    "text": "TRANSITIONAL ARRANGEMENTS, . AND MISCELLANEOUS PROVISIONS",
+    "note": "Part heading as printed by the parser's run-in (the PDF's Part XVI heading)"
+   },
+   {
+    "after_section": "12",
+    "text": "ALTERATION OF LIMITS OF TOWNS AND NUMBER OF MEMBERS. ; &C;",
+    "note": "follows the bare '13.'"
+   },
+   {
+    "after_section": "172",
+    "text": "LOANS"
+   }
+  ]
+ },
+ "provenance": {
+  "hand_corrected": true,
+  "corrected_on": "2026-09-05",
+  "corrected_by": "finalization worker (pipeline pass); lawyer-unverified",
+  "baseline": "accepted tree parsed from data/legal-sources/library/statutes/61-1939-urban-councils-ordinance.pdf (LankaLaw consolidated-2024, chain to 21 of 2017); byte-identical to data/processed/canonical-statutes/SRC042-61-1939.json before this pass",
+  "against": "pdftotext -layout (poppler, PowerShell) of the same PDF; LankaLaw HTML edition (chain to 18 of 1987) for s.13, s.94, s.173/174; Government Printer PDFs of Acts 21/2012, 35/2014, 21/2017",
+  "what_changed": [
+   "s.174 'Limitation of borrowing powers.' split out of s.173: the second (1) [with its proviso] and (2) filed under 173 become s.174(1)-(2); s.173 keeps its own (1)-(3). s.174A's reference to 'sections 173 and 174' now also resolves to 174.",
+   "s.13 node removed: the PDF prints '13.' alone between s.12(3) and the crossheading 'ALTERATION OF LIMITS OF TOWNS AND NUMBER OF MEMBERS. ; &C;', with no heading and no text; the parser had filed the crossheading as the section's text. The older HTML edition prints no s.13 and carries '[§ 121, Law 24 of 1977]' at that point.",
+   "s.94(1): fused first item split: paragraph (a) 'authorizing the promoters ...' created with subparagraphs (i)-(iv) [(i) 'to break up the soil...' was inside the subsection text]; (b)-(e) remain paragraphs of (1). Heading left empty: no marginal note printed in either edition.",
+   "heading of s.178B: '\"Transitional provision.' -> 'Transitional provision.' (the PDF's marginal note opens with a stray quote)",
+   "amendment_events for Acts 21/2012 (ss.8-14), 35/2014 (s.2) and 21/2017 (s.2): operation set from each Act's own Government Printer text (was 'unknown'); each target's baseline text checked to contain the substituted words (confirmed_in_baseline_text).",
+   "second pass: fifteen crossheadings that the parser had appended to the preceding provision's text removed from text and listed in crossheadings_not_modelled (ss.5(2), 31, 62 proviso, 71, 79, 92, 120, 159B(2), 165D(2), 175, 213, 215, 222, 229)",
+   "second pass: s.12(1): fused paragraph (a) split out",
+   "second pass: s.14: heading completed from the marginal note (was truncated after 'number'); fused paragraph (a) split out",
+   "second pass: s.159(1): fused paragraph (a) split out; paragraph (ddd) split out of (dd)",
+   "second pass: s.184(1A): text restored from the print (parser had dropped the opening words of column-shifted lines); parsed text kept in text_as_parsed",
+   "second pass: s.184(3): spurious 'subsection 262' (the parser split the text at '(Cap. 262)') merged back; '262)' restored",
+   "second pass: s.36(a) proviso: text restored from the print (parser had dropped the opening words of column-shifted lines); parsed text kept in text_as_parsed",
+   "second pass: s.36: paragraph (b) split out of (a)'s proviso",
+   "second pass: s.90(2): text restored from the print (parser had dropped the opening words of column-shifted lines); parsed text kept in text_as_parsed",
+   "second pass: s.90: subsection (3) rebuilt as its own node with paragraphs (a)-(i) (the parser had run (3) and its (a) into (2)'s text, hung (b)-(i) under (2), and fused (f) into (e))",
+   "second pass: s.157(9)(f): text restored from the print (parser had dropped the opening words of column-shifted lines); parsed text kept in text_as_parsed",
+   "second pass: s.183(1): text restored from the print (parser had dropped the opening words of column-shifted lines); parsed text kept in text_as_parsed",
+   "second pass: s.249 definition of 'annual value': text restored from the print (parser had dropped the opening words of column-shifted lines); parsed text kept in text_as_parsed",
+   "second pass: s.78(1)(b): text restored from the print (parser had dropped the opening words of column-shifted lines); parsed text kept in text_as_parsed",
+   "second pass: s.165B definition of 'takings', paragraph (a): text restored from the print (parser had dropped the opening words of column-shifted lines); parsed text kept in text_as_parsed"
+  ],
+  "removed_nodes": [
+   {
+    "reason": "phantom section 13 built from a crossheading",
+    "node": {
+     "type": "section",
+     "number": "13",
+     "heading": "",
+     "raw_text": "13. ALTERATION OF LIMITS OF TOWNS AND NUMBER OF MEMBERS. ; &C;",
+     "text": "ALTERATION OF LIMITS OF TOWNS AND NUMBER OF MEMBERS. ; &C;",
+     "amendment_events": [],
+     "cross_references": [],
+     "children": []
+    }
+   }
+  ],
+  "why_needs_structural_review": "first_list_item_not_split (about 65 candidate locations) and cascading_damage_in_nested_lists (s.36) remain as recorded parser defects; content is present but the hierarchy is wrong at those points.",
+  "reviewer_pass": {
+   "date": "2026-09-05",
+   "scope": "read-only subagent read ss.5, 12, 13/14, 93, 94, 159, 173, 174, 174A, 175, 178A, 178B, 184(3), 249 against pdftotext -layout of the PDF",
+   "findings_fixed": [
+    "crossheading tails on ss.5(2) and 175 (and thirteen more found by scan)",
+    "s.12(1)(a), s.14(a), s.159(1)(a), s.159(ddd) fused first items",
+    "s.14 heading truncated",
+    "s.184(3) split at '(Cap. 262)' into a phantom subsection 262",
+    "s.184(1A) lost words"
+   ],
+   "findings_left": [
+    "first_list_item_not_split elsewhere; text_lost_at_body_column_shifts elsewhere"
+   ]
+  }
+ }
 }
