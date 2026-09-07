@@ -1,0 +1,513 @@
+{
+  "benchmark_matter_id": "M086",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M086",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T23:02:06Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2019-10",
+  "matter_reference_date_basis": "matter_reference_date recorded in candidates/matters/M086.json, taken from the OCTOBER 2019 exam session. Every temporal check below is made against October 2019, and against the survey plan date of 3 April 2013 and the stated period of over thirty years of possession running back from it.",
+  "corpus_gaps": [
+    "No provision anywhere in the frozen corpus names, defines or prescribes the form of a deed of declaration (also called a declaration of title or a declaratory deed). The Prescription Ordinance says what possession does, and the Registration of Documents Ordinance says that an instrument which declares a right or title to land is registrable, but neither creates the instrument. The choice of that instrument for a possessor who holds no paper title is conveyancing practice and case law, and that is why this question is reserved rather than proposed_gold.",
+    "Section 3 of the Prescription Ordinance is written in terms of proof in an action: it entitles a defendant, plaintiff or intervenient to a decree. Nothing in the corpus states that prescriptive title vests out of court, without a decree, so that it can simply be declared by deed. That step, which the answer to this question depends on, comes from judicial authority and is not in the corpus.",
+    "The corpus text of section 2 of the Prescription Ordinance is defective. The interpretation section reads 'In this Ordinance, unless the context otherwise requires - shall be taken to include all shares and interests in such property', with the defined expression 'immovable property' dropped out of the body. The defined_terms field still records the term.",
+    "No stamp duty rate schedule for a declaration or for a non-conveyancing deed could be found. The Stamp Duty (Special Provisions) Act No. 12 of 2006 in the corpus contains no reference to a declaration, so the duty payable on the proposed deed cannot be sourced.",
+    "The corpus edition of the Notaries Ordinance and of the Prevention of Frauds Ordinance is a consolidation carrying amendments made in 2022 and 2024, after the October 2019 matter date. Provisions taken from those two Acts are marked with a temporal note and none of them is treated as indispensable."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M086-001",
+      "section_id": "22-1871/s3",
+      "act_id": "22-1871",
+      "formal_title": "Prescription Ordinance",
+      "number_and_year": "No. 22 of 1871",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "of lands or immovable property, by a title adverse to or independent of that of the claimant or plaintiff in such action (that is to say, a possession unaccompanied by payment of rent or produce, or performance of service or duty, or by any other act by the possessor, from which an acknowledgment of a right existing in another person would fairly and naturally be inferred) for ten years previous to the bringing of such action, shall entitle the defendant to a decree in his favour with costs.",
+      "why_relevant": "This is the source of whatever right Sunimal Peiris has. The facts given track the language of the section almost word for word: undisturbed and uninterrupted possession, by a title adverse to or independent of that of any other, by him and by those under whom he claims. The section fixes the qualifying period at ten years and the scenario gives over thirty. The second limb of the section, which covers a plaintiff or intervenient who sues to be quieted in possession or to establish his claim in any other manner, is what makes prescription available to him affirmatively and not only as a shield.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1871 with no recorded change to section 3. The corpus records no amendment event on this section, so the same text governed the whole of the thirty-year period of possession and was in force in October 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M086-002",
+      "section_id": "22-1871/s2",
+      "act_id": "22-1871",
+      "formal_title": "Prescription Ordinance",
+      "number_and_year": "No. 22 of 1871",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "shall be taken to include all shares and interests in such property, and all rights, easements, and servitudes thereunto belonging or appertaining.",
+      "why_relevant": "The interpretation section for the expression immovable property used in section 3. It matters here because Lot X is a divided allotment of thirty perches carved out of a larger land called Ambagahawatta, so the answer depends on prescription being capable of running to a share or a defined part and to the rights belonging to it. The corpus body of this section has lost the defined expression itself, which is recorded separately in the section's defined_terms field.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1871, no recorded amendment event, so in force in October 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M086-003",
+      "section_id": "22-1871/s15",
+      "act_id": "22-1871",
+      "formal_title": "Prescription Ordinance",
+      "number_and_year": "No. 22 of 1871",
+      "section": "15",
+      "subsection": "(a)",
+      "relevant_excerpt": "affect the alienable or inalienable rights of the State; or (b) apply to any proceedings in any action for divorce, or to any case in which special provision has been or may hereafter be made",
+      "why_relevant": "The one qualification the notary must clear before drawing any deed. Prescription does not run against the State, so if the land is State land or the possession is under a permit or grant, no amount of possession will found the declaration. The scenario says the land is called Ambagahawatta and gives an assessment number and a private survey plan, but does not say whether the land or any part of it is State land, so the point has to be checked rather than assumed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The present text was substituted by section 2 of the Prescription (Amendment) Act No. 26 of 2014, which is five years before the matter date, so the substituted text is the text in force in October 2019. The predecessor text also excluded the rights of the Crown, so the exclusion covered the whole period of possession, but the precise wording relied on here dates only from 2014.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M086-004",
+      "section_id": "23-1927/s8",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "8",
+      "subsection": "(b)",
+      "relevant_excerpt": "all instruments, including wills, decrees and orders of any court or authority, and awards, which purport or operate to create, confer, declare, limit, assign, transfer, charge, incumber, release, or extinguish any right, title, or interest, whether vested or contingent, past, present, or future, to, in or over land",
+      "why_relevant": "This is the only place in the corpus that recognises a purely declaratory instrument affecting land. The verb declare stands alongside transfer and assign, so an instrument that does no more than declare an existing right, title or interest in land is nevertheless deemed to affect land for the purposes of the Ordinance and is therefore registrable. Without this provision the proposed deed of declaration would have nowhere to go in the register, and the whole point of the exercise, which is to manifest the title on the folio, would fail.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927, no recorded amendment event on section 8, and paragraph (b) applies to instruments executed after the commencement of the Ordinance, which covers a deed drawn in or after 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M086-005",
+      "section_id": "23-1927/s7",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "7",
+      "subsection": "(1)",
+      "relevant_excerpt": "be void as against all parties claiming an adverse interest thereto on valuable consideration by virtue of any subsequent instrument which is duly registered under this Chapter",
+      "why_relevant": "This supplies the reason for choosing a registrable deed at all rather than, say, an affidavit kept in the client's file. Once the declaration is registered it takes its place in the priority scheme and later purchasers for value are on notice of it; if it is left unregistered it is void against a later registered instrument taken for value. That is what better manifestation of title means in practice.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927, no recorded amendment event, so in force in October 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M086-006",
+      "section_id": "23-1927/s7",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "7",
+      "subsection": "(4)",
+      "relevant_excerpt": "Registration of an instrument under this Chapter shall not cure any defect in the instrument or confer upon it any effect or validity which it would not otherwise have except the priority conferred on it by this section.",
+      "why_relevant": "The limit on what the proposed deed can achieve, and the reason the advice must be qualified. Registering a declaration does not turn a bad claim into a good one. The deed and its registration record and publicise the prescriptive title; they do not create it, and they do not bind a paper owner who has never been heard. This is why the honest answer names the deed and then tells the client what it does not do.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927, no recorded amendment event, so in force in October 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M086-007",
+      "section_id": "23-1927/s13",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "13",
+      "subsection": "(1)",
+      "relevant_excerpt": "Every instrument (except a will) presented for registration shall contain embodied therein, or in a schedule annexed thereto, an accurate and clear description of the land affected thereby, its boundaries, extent, and situation specifying the district and the village, pattu, korale, or other division of the district in which the land is situated",
+      "why_relevant": "Drafting instruction for the schedule of the proposed deed. The scenario already supplies every particular the subsection asks for: Lot X on Survey Plan No. 657 dated 3 April 2013 by Saliya Silva, Licensed Surveyor, thirty perches in extent, the land called Ambagahawatta at Thalawathugoda, Palle Pattu of Salpiti Korale, District of Colombo, and the street name through the assessment number for Hokandara Road. Subsection (5) obliges the Registrar to refuse registration of an instrument that does not state these particulars, so the schedule has to reproduce them.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Latest recorded change is by section 2 of the Registration of Documents (Amendment) Act No. 50 of 1982, well before the matter date, so the corpus text is the text in force in October 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M086-008",
+      "section_id": "23-1927/s14",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "14",
+      "subsection": "(2)",
+      "relevant_excerpt": "An instrument, whether registered before or after the commencement of this Ordinance, shall not be deemed to be duly registered under this Chapter unless it is registered in accordance with the foregoing provisions of this section.",
+      "why_relevant": "Registration only counts if it is in the right folio. Subsection (1) requires the instrument to go into the folio of the division in which the land lies and in which the first registered instrument affecting the same land is registered, or a folio opened in continuation with cross references, and where no instrument affecting the land has been registered before, into a new folio allotted by the Registrar. The second limb is the likely case here, because a possessor without paper title may have nothing earlier on the folio. The point matters because a declaration registered in the wrong folio buys the client no priority under section 7.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Latest recorded change is 1974, well before the matter date, so the corpus text is the text in force in October 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M086-009",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (30A)",
+      "relevant_excerpt": "It shall be the duty of every notary to submit for registration to the Registrar, every deed or instrument attested by him before the expiry of thirty days from the date of attestation thereof",
+      "why_relevant": "The client consults a notary, and this rule turns the registration step from a matter for the client into the notary's own statutory duty. Having drawn and attested the declaration, the notary must lodge it for registration within thirty days, or sixty days where the land lies outside the area in which he practises.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "This rule was inserted by section 3(2) of the Notaries (Amendment) Act No. 47 of 2011, eight years before the matter date, so it was in force in October 2019. The corpus edition of section 31 as a whole is a consolidation carrying later amendments made by Act No. 31 of 2022 and Act No. 6 of 2024, so the surrounding rules in the same section cannot be relied on for a 2019 matter without checking each one. The rule is treated as supporting only.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M086-010",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "No sale, purchase, transfer, assignment, or mortgage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property",
+      "why_relevant": "Included to mark out what the proposed deed is not. The transactions listed here are dispositive: sale, purchase, transfer, assignment, mortgage, and agreements to effect them. A declaration of a title already acquired by possession is none of these, and there is no grantor from whom the client can take a conveyance, so no transfer deed can be drawn. The section is background because it explains the exclusion rather than supplying a condition the client must satisfy.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The corpus text of section 2 is a consolidation incorporating the Prevention of Frauds (Amendment) Act No. 30 of 2022 and Act No. 4 of 2024, both after the matter date, which is where the subsection numbering, the thumb impression requirement and the transferee provisions in subsection (2) come from. The opening words quoted here list the same transactions as the text in force in October 2019, but a verifier should confirm the 2019 wording against a pre-2022 edition. The provision is background only and is not relied on for any operative condition.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M086-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "Two links in the answer are statutory and two are not. The statutory links are strong: section 3 of the Prescription Ordinance sets the ten year period and the character of possession, and section 8(b) of the Registration of Documents Ordinance recognises an instrument that declares a right, title or interest in land as an instrument affecting land, with sections 7, 13 and 14 governing what registration achieves and how it must be done. The two non-statutory links are indispensable. First, no provision in the corpus names a deed of declaration or prescribes its form or contents; the instrument is a creature of conveyancing practice, and the question asks precisely which type of deed to draw. Second, section 3 is framed as a rule of proof in an action, entitling a defendant, plaintiff or intervenient to a decree; nothing in the corpus says that prescriptive title vests without a decree so that the possessor may simply declare it. That proposition rests on judicial authority. A complete answer therefore cannot be built from the statutes alone.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M086-Q01-01",
+          "issue": "Whether Sunimal Peiris has acquired title to Lot X by prescription, given undisturbed and uninterrupted possession by him and his predecessors in title, adverse to and independent of that of any other, for over thirty years against the statutory period of ten years.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M086-Q01-02",
+          "issue": "Whether any conveyancing deed of the ordinary dispositive kind, such as a transfer, can be drawn where the client holds no paper title and there is no grantor from whom title can be taken.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M086-Q01-03",
+          "issue": "What type of deed a notary should draw to manifest a title acquired by prescription, and whether such an instrument is registrable as an instrument affecting land.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M086-Q01-04",
+          "issue": "What the deed and its registration actually achieve, and what they do not achieve, for a client whose title rests on possession rather than on a grant.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M086-Q01-05",
+          "issue": "What the notary must check before drawing the deed, in particular whether the land or any part of it is State land, against which prescription does not run.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M086-001",
+        "PROV-M086-004",
+        "PROV-M086-005"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M086-002",
+        "PROV-M086-003",
+        "PROV-M086-006",
+        "PROV-M086-007",
+        "PROV-M086-008",
+        "PROV-M086-009"
+      ],
+      "background_provision_ids": [
+        "PROV-M086-010"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across two enactments. Step one, section 3 of the Prescription Ordinance gives the client a title founded on ten years of adverse and independent possession, which the facts exceed. Step two, an instrument that declares an existing right, title or interest in land is deemed by section 8(b) of the Registration of Documents Ordinance to be an instrument affecting land and is therefore registrable, which is what makes a declaratory deed the right vehicle. Step three, section 7(1) of the same Ordinance makes registration of that instrument matter, because an unregistered instrument is void against a later registered instrument taken for value. Section 2 of the Prescription Ordinance is counted inside step one as a definition, and sections 7(4), 13, 14 and Notaries Ordinance rule 30A refine steps two and three without adding a hop. The further step from a rule of proof in an action to a title that can be declared out of court is not counted, because it is not in the corpus.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M086-002",
+          "to_provision_id": "PROV-M086-001",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M086-003",
+          "to_provision_id": "PROV-M086-001",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M086-001",
+          "to_provision_id": "PROV-M086-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M086-004",
+          "to_provision_id": "PROV-M086-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M086-006",
+          "to_provision_id": "PROV-M086-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M086-007",
+          "to_provision_id": "PROV-M086-005",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M086-008",
+          "to_provision_id": "PROV-M086-005",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M086-009",
+          "to_provision_id": "PROV-M086-005",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Sunimal Peiris and his predecessors in title had been in undisturbed and uninterrupted possession in premises bearing Assesment No. 34, Hokandara Road, Thalawathugoda which possession is adverse and independent to that of any other for over 30 years of the land marked Lot X depicted in Survey Plan No. 657 dated 3/4/2013 made by Saliya Silva Licensed Surveyor in extent of 30 perches of the land called Ambagahawatta situated in Thalawathugoda in the Palle Pattu of Salpiti Korale in the District of Colombo Western Province. He consults you as a Notary.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Sunimal Peiris holds no paper title to Lot X. What he has is possession: undisturbed and uninterrupted possession by himself and his predecessors in title, adverse to and independent of that of any other, for over thirty years of a thirty perch allotment at Thalawathugoda. He asks his notary what type of deed should be drawn to manifest that title better. The question is therefore which instrument fits a title that rests on possession rather than on a grant, and what that instrument can and cannot do for him.",
+        "rule": "Prescription Ordinance s.3 makes ten years of undisturbed and uninterrupted possession of land, by a title adverse to or independent of that of the claimant, enough to establish a claim, whether the possessor is defending or is himself seeking to be quieted in his possession or to establish his claim in any other manner; the possession must be unaccompanied by payment of rent or produce, performance of service or duty, or any other act from which an acknowledgment of a right in another would fairly and naturally be inferred. Prescription Ordinance s.2 extends immovable property to shares and interests in it and to the rights belonging to it. Prescription Ordinance s.15(a) removes the alienable and inalienable rights of the State from the operation of the Ordinance. On the conveyancing side, Prevention of Frauds Ordinance s.2(1) governs dispositive instruments, sale, purchase, transfer, assignment, mortgage and agreements to effect them, and a declaration of a title already acquired is none of these. Registration of Documents Ordinance s.8(b) deems every instrument which purports or operates to declare any right, title or interest in land to be an instrument affecting land, so a purely declaratory deed is registrable. Registration of Documents Ordinance s.7(1) makes an unregistered instrument void against a subsequent registered instrument taken for value, while s.7(4) provides that registration cures no defect and confers no validity beyond that priority. Registration of Documents Ordinance s.13(1) requires an accurate and clear description of the land, its boundaries, extent and situation, in the body or in an annexed schedule, and s.14(2) makes registration ineffective unless it is in the proper folio, a new folio being allotted where no instrument affecting the land has been registered before. Notaries Ordinance s.31 rule (30A) obliges the notary who attests a deed to submit it for registration within thirty days of attestation.",
+        "application": "No transfer deed can be drawn. Under Prevention of Frauds Ordinance s.2(1) a transfer presupposes a grantor with a title to give, and here there is none; the client's claim is against the world and derives from his own possession. What the facts do establish is the Prescription Ordinance s.3 case: possession undisturbed and uninterrupted, by the client and by those under whom he claims, adverse to and independent of that of any other, for over thirty years, which is three times the ten year period, and nothing in the facts suggests rent, produce, service or any other acknowledgment of a right in another. The subject is a divided thirty perch allotment of a larger land, which Prescription Ordinance s.2 accommodates. The instrument that matches this position is a deed of declaration, a unilateral notarially executed and attested deed in which the client declares on oath the facts of his possession, identifies his predecessors and the period, and declares himself entitled to Lot X by prescriptive possession. That instrument falls squarely within Registration of Documents Ordinance s.8(b) because it purports to declare a right, title and interest in land, so it can be registered. Registration is the point of the exercise: by Registration of Documents Ordinance s.7(1) an unregistered instrument is void against a later registered instrument taken for value, so registration puts the client's claim on the folio where any later purchaser or lender must find it. The schedule must reproduce the particulars Registration of Documents Ordinance s.13(1) demands, which the instructions already supply: Lot X on Survey Plan No. 657 dated 3 April 2013 by Saliya Silva, Licensed Surveyor, thirty perches in extent, part of the land called Ambagahawatta at Thalawathugoda, Palle Pattu of Salpiti Korale, District of Colombo, premises bearing Assessment No. 34, Hokandara Road. Registration of Documents Ordinance s.14(2) then requires the deed to go into the correct folio, which may have to be a new folio if nothing affecting Lot X has been registered before, and Notaries Ordinance s.31 rule (30A) puts the duty of lodging it within thirty days on the notary. Two limits must be stated. By Registration of Documents Ordinance s.7(4) registration confers no validity the deed would not otherwise have, so the declaration records the client's title and does not manufacture it; a paper owner who has never been heard is not bound by the client's own assertion, and if the claim is contested the client will still have to prove the Prescription Ordinance s.3 possession in court. And by Prescription Ordinance s.15(a) the Ordinance does not touch the rights of the State, so before drawing anything the notary must satisfy himself that neither Lot X nor any part of it is State land and that the possession was not held under any permit or grant.",
+        "conclusion": "The deed to be drawn is a deed of declaration of title by prescriptive possession: a unilateral deed by Sunimal Peiris, notarially executed and attested, reciting the facts of undisturbed and uninterrupted possession by him and his predecessors in title, adverse to and independent of that of any other, for over thirty years, describing Lot X in a schedule that meets Registration of Documents Ordinance s.13(1), and registered under Registration of Documents Ordinance s.8(b) in the proper folio as s.14(2) requires, the notary lodging it within thirty days under Notaries Ordinance s.31 rule (30A). Its purpose is evidentiary and protective: it places the client's prescriptive title, founded on Prescription Ordinance s.3, on the register and secures the priority given by Registration of Documents Ordinance s.7(1). Two things should be told to the client in writing. Registration of Documents Ordinance s.7(4) means the deed proves nothing it could not otherwise prove, so if his possession is challenged he must still establish it, and a declaratory action in the District Court is the surer route where an adverse claimant is known. And by Prescription Ordinance s.15(a) the whole plan fails if the land turns out to be State land. This answer also depends on two propositions that no provision in the corpus supplies: that a deed of declaration is the recognised instrument for this purpose, and that a prescriptive title vests without a decree so that it can be declared out of court. Both come from practice and from judicial authority, so the answer is not complete on the statutes alone."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M086-Q01-001",
+          "claim_text": "Ten years of undisturbed and uninterrupted possession of land by a title adverse to or independent of that of any other, unaccompanied by any act from which an acknowledgment of a right in another would fairly and naturally be inferred, is enough to establish a claim to that land, whether the possessor is defending or is himself seeking to be quieted in his possession or to establish his claim in any other manner.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M086-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-002",
+          "claim_text": "Immovable property for the purposes of the Prescription Ordinance includes shares and interests in the property and the rights belonging to it, so prescription can run to a divided allotment of a larger land.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M086-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-003",
+          "claim_text": "The Prescription Ordinance does not affect the alienable or inalienable rights of the State, so no period of possession founds a prescriptive claim against State land.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M086-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-004",
+          "claim_text": "The transactions requiring a dispositive notarial instrument are sale, purchase, transfer, assignment and mortgage of land and agreements for effecting them; a declaration of a title already acquired is not among them.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M086-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-005",
+          "claim_text": "An instrument which purports or operates to declare any right, title or interest in or over land is deemed to be an instrument affecting land and is therefore registrable.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M086-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-006",
+          "claim_text": "An instrument affecting land that is not duly registered is void against a party claiming an adverse interest for valuable consideration under a subsequent registered instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M086-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-007",
+          "claim_text": "Registration cures no defect in an instrument and confers on it no effect or validity beyond the priority given by the registration provisions.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M086-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-008",
+          "claim_text": "Every instrument other than a will presented for registration must contain, in the body or in an annexed schedule, an accurate and clear description of the land, its boundaries, extent and situation, specifying the district and the pattu, korale or other division, and the street where the land is in a town.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M086-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-009",
+          "claim_text": "An instrument is not duly registered unless it is registered in the folio required by the folio provisions, a new folio being allotted where no instrument affecting the same land has previously been registered.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M086-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-010",
+          "claim_text": "A notary must submit every deed he attests for registration within thirty days of attestation, or within sixty days where it must be registered outside the area in which he practises.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M086-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-011",
+          "claim_text": "The client's possession as described, undisturbed and uninterrupted, by himself and his predecessors in title, adverse to and independent of that of any other, for over thirty years, satisfies and greatly exceeds the ten year period, and no act of acknowledgment of a right in another appears on the facts.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M086-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-012",
+          "claim_text": "No transfer or other dispositive deed can be drawn, because the client holds no paper title and there is no grantor from whom a conveyance could be taken.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M086-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-5"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-013",
+          "claim_text": "A unilateral deed in which the client declares the facts of his possession and declares himself entitled to Lot X by prescription is an instrument declaring a right, title and interest in land, and so is registrable.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M086-004",
+            "PROV-M086-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-014",
+          "claim_text": "The schedule to the deed must reproduce Lot X on Survey Plan No. 657 dated 3 April 2013 by Saliya Silva, Licensed Surveyor, thirty perches in extent, part of the land called Ambagahawatta at Thalawathugoda, Palle Pattu of Salpiti Korale, District of Colombo, and premises bearing Assessment No. 34, Hokandara Road.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M086-007"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-015",
+          "claim_text": "Registering the declaration puts the client's claim on the folio for Lot X ahead of any later instrument taken for value, and the deed must go into the correct folio, which may be a new folio if nothing affecting Lot X has been registered before.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M086-005",
+            "PROV-M086-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-016",
+          "claim_text": "Before drawing the deed the notary must satisfy himself that neither Lot X nor any part of it is State land and that the possession was not held under a permit or grant, since the scenario does not settle the point.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M086-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-5"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-017",
+          "claim_text": "The deed to be drawn is a deed of declaration of title by prescriptive possession: a unilateral notarially executed and attested deed reciting the possession, describing Lot X in a conforming schedule, and lodged for registration by the notary within thirty days.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M086-001",
+            "PROV-M086-004",
+            "PROV-M086-007",
+            "PROV-M086-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-4",
+            "BG-5"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M086-Q01-018",
+          "claim_text": "The deed manifests and publicises the title and secures priority, but it does not create title and does not bind an owner who has not been heard, so if the possession is challenged the client must still prove it, and a declaratory action is the surer course where an adverse claimant is known.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M086-006",
+            "PROV-M086-005",
+            "PROV-M086-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "The question asks which type of deed to draw, and no provision in the frozen corpus names a deed of declaration or prescribes its form. The corpus reaches the instrument only obliquely, through section 8(b) of the Registration of Documents Ordinance, which deems an instrument that declares a right, title or interest in land to be registrable. A second indispensable step is also outside the corpus: section 3 of the Prescription Ordinance is expressed as a rule of proof entitling a party to a decree in an action, and nothing in the corpus states that prescriptive title vests without a decree so that the possessor may declare it by deed. Both steps rest on conveyancing practice and judicial authority, so the question is mixed_statute_and_case and cannot be proposed_gold. The statutory scaffolding recorded above is complete and can be verified as it stands.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

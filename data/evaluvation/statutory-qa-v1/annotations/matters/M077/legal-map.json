@@ -1,0 +1,386 @@
+{
+  "benchmark_matter_id": "M077",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M077",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:53:05Z",
+    "verification_agent": "verifier-M077",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T23:03:39Z"
+  },
+  "matter_reference_date": "2020-04",
+  "matter_reference_date_basis": "Exam session stated in the matter file (APRIL 2020); the law is taken as it stood at that session.",
+  "corpus_gaps": [
+    "The Partition Law No. 21 of 1977 is not in the corpus. Its provisions on the final decree and the partition plan, which are the usual source of the lot number and plan reference a conveyancer puts in the Schedule of a post-partition transfer, could not be consulted. The answer is therefore framed in the statutory language of Notaries Ordinance s.31(16)(b) and Registration of Documents Ordinance s.13(2) rather than on any lot-and-plan requirement.",
+    "The corpus copy of the Registration of Documents Ordinance is consolidated only to 1990 and still shows the pre-2011 wording of s.13(1). The text in force in April 2020 had to be taken from the amending Act No. 48 of 2011, s.2, cited separately as PROV-M077-005.",
+    "The corpus copy of Notaries Ordinance s.31 is consolidated to 2024, so its rule (16)(a) text carries condominium wording inserted by Act No. 31 of 2022 that was not in force in April 2020. The 2020 text was taken from the Notaries (Amendment) Act No. 47 of 2011, s.2 (PROV-M077-006).",
+    "No provision in the corpus prescribes a form or model Schedule for a deed of transfer. Form E in the Second Schedule to the Notaries Ordinance governs the attestation only, so the layout of the Schedule rests on the descriptive particulars the two statutes require and not on any prescribed form."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M077-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(16)(a)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument, other than a will or codicil, affecting land or other immovable property, unless the deed or instrument embodies therin or in a Schedule annexed therto an accurate and clear description of the said land or other property affected thereby, showing its boundaries, extent, situation specifying the district, pattu, korale, Divisional Secretary's Division, local authority division and the Grama Niladari Division, and the village within the District in which the land is situated",
+      "why_relevant": "This is the rule that fixes what the Schedule of the deed of transfer must contain: an accurate and clear description of the land showing boundaries, extent and situation down to the Grama Niladhari Division and village, with the assessment number and street name where the land lies in a municipality, town or development area. A deed whose Schedule is blank cannot lawfully be attested.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (16)(a) in this form was substituted by the Notaries (Amendment) Act No. 47 of 2011, s.2, and was in force in April 2020. The consolidated corpus text of s.31 also carries later words on condominium parcels inserted by Act No. 31 of 2022, with further changes by Act No. 6 of 2024; those post-date the matter and are not relied on. The excerpt quoted here is common to the 2011 text and the consolidated text.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 1-1907/s31 and the rule (16)(a) description duty applied in April 2020, but the excerpt stops before the municipality, town and development area clause that why_relevant and CL-M077-Q01-002 rely on; that clause is now quoted separately as PROV-M077-901."
+    },
+    {
+      "provision_id": "PROV-M077-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(16)(b)",
+      "relevant_excerpt": "if such property consist of a share of a land or other property, the deed shall state whether it is a divided or undivided share, and the fractional part which it is of the whole. If it be a divided share, such share shall be clearly and accurately defined by its particular boundaries and extent; if it be an undivided share, the boundaries and extent shall be stated of the land of which it is a share.",
+      "why_relevant": "Anuk holds one of three equal shares of the 45 perch portion. This rule decides the form the Schedule must take: the deed must say whether the interest sold is divided or undivided and the fractional part it is of the whole, and where the share is undivided the Schedule must give the boundaries and extent of the entire land of which it is a share rather than of a notional block.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment event recorded against s.31 in the corpus touches paragraph (b) of rule (16); the paragraph stood in this form well before April 2020.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim, but the temporal note is wrong that no amendment touches paragraph (b): Act No. 31 of 2022, s.16(9)(b) substituted the words running from \"which it is a share: Provided, however\" to the end of the paragraph, so the text in force in April 2020 carried a further proviso whose wording the corpus does not hold."
+    },
+    {
+      "provision_id": "PROV-M077-003",
+      "section_id": "23-1927/s13",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "13",
+      "subsection": "(2) and (3)",
+      "relevant_excerpt": "(2) If the land consists of a divided portion of a land or allotment, such portion shall be clearly and accurately defined by its particular boundaries and extent. (3) If the land consists of an undivided share in a land, the proportion which the share bears to the entire land shall be staled, and a description of the entire land shall be given as required by subsection (1).",
+      "why_relevant": "The registration statute imposes the same divided and undivided distinction on the description in the Schedule of the instrument presented for registration, so one description must satisfy both the notarial duty and the registration requirement.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Subsections (2) and (3) are the 1927 text as consolidated to 1990. No amendment event in the corpus record touches them, so they stood in this form in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M077-004",
+      "section_id": "23-1927/s13",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "13",
+      "subsection": "(5)",
+      "relevant_excerpt": "Every Registrar shall refuse to register an instrument, other than a will, which docs not state the particulars required by the foregoing provisions of this section.",
+      "why_relevant": "Supplies the consequence of a blank or insufficient Schedule: the Registrar of Lands must refuse registration, which is why the draft cannot be passed for execution as it stands.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Consolidated 1927 text with no amendment event recorded against subsection (5), so it applied in April 2020. Subsections (5A) and (5B) give a right of appeal to the Registrar-General and thereafter to the District Court.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and applied in April 2020, but the temporal note is wrong that no amendment event is recorded against subsection (5): the quoted subsection is the text substituted by the Registration of Documents (Amendment) Act No. 50 of 1982, s.2(a), which also inserted (5A) and (5B)."
+    },
+    {
+      "provision_id": "PROV-M077-005",
+      "section_id": "48-2011/s2",
+      "act_id": "48-2011",
+      "formal_title": "Registration of Documents (Amendment) Act",
+      "number_and_year": "No. 48 of 2011",
+      "section": "2",
+      "subsection": "new s.13(1)",
+      "relevant_excerpt": "Every instrument (other than a will) presented for registration shall embody therein or in a Schedule annexed thereto, an accurate and clear description of the land or immovable property affected thereby, its boundaries, extent and situation specifying the District, Pattu, Korale, Divisional Secretary's Division, local authority division and the Grama Niladari Division and the village, of the District in which the land is situated",
+      "why_relevant": "Gives the text of s.13(1) of the Registration of Documents Ordinance actually in force in April 2020. The corpus copy of the principal Ordinance is consolidated only to 1990 and still shows the older wording, so the amending section is cited for the operative registration standard, which matches Notaries Ordinance s.31(16)(a).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted in 2011 and in force well before the April 2020 matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M077-006",
+      "section_id": "47-2011/s2",
+      "act_id": "47-2011",
+      "formal_title": "Notaries (Amendment) Act",
+      "number_and_year": "No. 47 of 2011",
+      "section": "2",
+      "subsection": "new s.31(16)(a)",
+      "relevant_excerpt": "Section 31 of the Notaries Ordinance (Chapter 107) (hereinafter referred to as the \"principal enactment\") is hereby amended by the repeal of paragraph (a) of subsection (16) thereof and substitution therefor of the following paragraph",
+      "why_relevant": "Establishes that the expanded description requirement in rule (16)(a), covering the Divisional Secretary's Division, the local authority division and the Grama Niladhari Division, was already the law in April 2020, and isolates the 2020 text from the condominium wording added in 2022.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted in 2011 and in force well before the April 2020 matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The excerpt quotes only the amending formula and not the paragraph substituted by it, so on its own it does not show the 2020 wording; the substituted paragraph does appear in the body of 47-2011/s2, but the corpus text of it breaks off at \"section 2 of the Pradeshiya Sabha number\", so the 2011 wording of the municipality and assessment number clause is only partly legible in the corpus."
+    },
+    {
+      "provision_id": "PROV-M077-007",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(17)(a)",
+      "relevant_excerpt": "Before any deed or instrument (other than a will or codicil) affecting any interest in land or other immovable property is drawn by him, he shall search or cause to be searched the registers in the land registry to ascertain the state of the title in regard to such land and whether any prior deed affecting any interest in such land has been registered",
+      "why_relevant": "Explains where the description that goes into the Schedule must come from: the notary's search of the land registry folio, so that the Schedule reproduces the land as it stands registered under the partition decree rather than a description supplied by the parties.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The search duty in rule (17)(a) long predates the matter. Neighbouring paragraphs of rule (17) in the consolidated corpus text carry insertions made in 2022 and 2024 which post-date April 2020 and are not relied on.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M077-901",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(16)(a), municipality, town and development area clause",
+      "relevant_excerpt": "and in case the land is situated in any municipality, town or development area, declared under section 2 of the Municipal Councils Ordinance (Chapter 252) section 2 of the Urban Councils' Ordinance (Chapter 255) and section 2 of the Pradeshiya Sabha Act, No. 15 of 1987 respectively, the assessment number and the name, if any, of the street in which it is situated",
+      "why_relevant": "Carries the part of rule (16)(a) that CL-M077-Q01-002 and the rule paragraph of the gold answer depend on: where the land lies in a municipality, town or development area the Schedule must also give the assessment number and the street name. PROV-M077-001 quotes only the earlier half of the paragraph.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "These are the closing words of rule (16)(a) as substituted by the Notaries (Amendment) Act No. 47 of 2011, s.2. Act No. 31 of 2022, s.16(9)(a) substituted for the words \"the assessment number and the name, if any, of the street in which it is situated.\" a longer form adding condominium parcels, which confirms that the clause quoted here stood in this form in April 2020 and that the condominium tail in the consolidated corpus text does not.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim against 1-1907/s31."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M077-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "What the Schedule to a deed of transfer must contain is laid down by statute: Notaries Ordinance s.31(16)(a) and (b) for the notary's duty and Registration of Documents Ordinance s.13 for registrability. The answer turns on applying those requirements to the facts and needs no judicial authority or Roman-Dutch doctrine. Because the Partition Law is not in the corpus, the answer is expressed in the statutory language of particular boundaries and extent instead of resting on a partition-plan lot requirement.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M077-Q01-01",
+          "issue": "What particulars the Schedule of a deed of transfer of land must contain for the notary lawfully to attest the deed.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M077-Q01-02",
+          "issue": "Whether what Anuk can convey out of the 45 perch portion allotted by the partition decree is a divided block or an undivided one third share, and how each must be described in the Schedule.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M077-Q01-03",
+          "issue": "The consequence for attestation and for registration if the Schedule is left blank or omits the required particulars.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M077-001",
+        "PROV-M077-002",
+        "PROV-M077-003"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M077-004",
+        "PROV-M077-005",
+        "PROV-M077-006",
+        "PROV-M077-007",
+        "PROV-M077-901"
+      ],
+      "background_provision_ids": [],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across two enactments: the content of the description under Notaries Ordinance s.31(16)(a); the qualification in s.31(16)(b) that decides whether the block or the whole land is described; and the matching registration standard in Registration of Documents Ordinance s.13(2) and (3), without which the description would not make the deed registrable.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M077-001",
+          "to_provision_id": "PROV-M077-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M077-001",
+          "to_provision_id": "PROV-M077-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M077-006",
+          "to_provision_id": "PROV-M077-001",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M077-005",
+          "to_provision_id": "PROV-M077-003",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M077-003",
+          "to_provision_id": "PROV-M077-004",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M077-007",
+          "to_provision_id": "PROV-M077-001",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Anuk de Silva, Pramuk de Silva and Dinuk de Silva are three brothers and they own equal undivided shares of a divided portion of a land in extent of 45 perches as per a Partition Decree in the District Court of Ratnapura in case No. 345/P. Anuk wishes to sell his entitlement of the land. Pramuk wishes to construct a house on his share of the land having mortgaged it to a Bank. Dinuk wants to Lease his share of land to a Company for a commercial purpose. The Bank informed Pramuk that he should have a divided and defined block of land in order to enable them to grant him a loan. Therefore, he informs his brothers that they should file a Partition Action for the division of the property. Anuk has approached you for Legal advice.\n\nThe Notary retained by the buyer of Anuk's divided block of land has drafted the deed of Transfer and forwarded it to you for perusal. You observe that he has kept the Schedule blank.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "How the block of land must be described in the Schedule of the deed of transfer that the buyer's notary has left blank, and whether the description is of a divided block or of an undivided share of the 45 perch portion allotted by the partition decree.",
+        "rule": "Notaries Ordinance s.31(16)(a) forbids a notary to attest any deed, other than a will or codicil, affecting land unless the deed embodies in itself or in a Schedule annexed to it an accurate and clear description of the land showing its boundaries, extent and situation, specifying the district, pattu, korale, Divisional Secretary's Division, local authority division, Grama Niladhari Division and the village in the district in which the land is situated, and, where the land lies in a municipality, town or development area declared under s.2 of the Municipal Councils Ordinance, s.2 of the Urban Councils Ordinance or the corresponding local government law, the assessment number and the name of the street. Section 31(16)(b) adds that where the property is a share of a land the deed must state whether the share is divided or undivided and the fractional part which it is of the whole; a divided share must be clearly and accurately defined by its own particular boundaries and extent, while for an undivided share the boundaries and extent of the land of which it is a share must be stated. The same standard governs registration: s.13(1) of the Registration of Documents Ordinance, as substituted by Act No. 48 of 2011, requires those particulars in the Schedule; s.13(2) requires a divided portion to be defined by its particular boundaries and extent; s.13(3) requires, for an undivided share, the proportion it bears to the entire land together with a description of the entire land; and s.13(5) obliges the Registrar to refuse registration of an instrument that does not state the required particulars. The description is not taken from the parties' instructions but from the land registry, since Notaries Ordinance s.31(17)(a) requires the notary to search the registers before drawing the deed.",
+        "application": "The subject matter is the divided portion of 45 perches allotted by the partition decree entered in the District Court of Ratnapura in case No. 345/P, of which the three brothers hold equal undivided shares. On the facts as given no further partition has divided that portion among them; that is precisely why the brothers are being pressed to file a partition action. What Anuk can convey as matters stand is therefore an undivided one third share, and by s.31(16)(b) and s.13(3) the Schedule must set out the whole 45 perch portion, describing it by its boundaries on the four sides and its extent of 45 perches as they appear in the partition decree and in the registered title, and locating it by district, pattu, korale, Divisional Secretary's Division, local authority division, Grama Niladhari Division and village, with the assessment number and street name added if the land lies within a municipality, town or development area; the deed must then state in terms that what is transferred is an undivided one third share of that land. Only if a defined block has in fact already been allotted to Anuk can the Schedule describe a divided block, and in that case s.31(16)(b) and s.13(2) require the block itself to be defined by its own particular boundaries and extent, with the extent stated in perches and each of the four boundaries given, and the deed to state that the share conveyed is a divided one and the fractional part it is of the whole. Either way the notary must verify the description against the folio by the search required by s.31(17)(a) and reproduce it in the Schedule. Because the Schedule has been left blank the deed as drafted cannot be attested at all, and if it were attested in that state registration would have to be refused under s.13(5). The papers do not show whether the land falls within a municipal, urban or Pradeshiya Sabha area, nor whether a survey has yet defined a block for Anuk, so those particulars must be settled before the Schedule is engrossed.",
+        "conclusion": "The draft should go back to the notary. The Schedule must carry an accurate and clear description of the land answering Notaries Ordinance s.31(16)(a) and s.13(1) of the Registration of Documents Ordinance, stating boundaries, extent and situation down to the Grama Niladhari Division and village, with assessment number and street where applicable, and it must be framed under s.31(16)(b) and s.13(2) and (3) according to what Anuk actually owns at execution: the whole 45 perch portion described in full with the transfer expressed as an undivided one third share of it, unless a divided block has by then been allotted to him, in which case the block is described by its own particular boundaries and extent. A blank or defective Schedule leaves the notary in breach of his statutory duty and compels the Registrar to refuse registration."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M077-Q01-001",
+          "claim_text": "A notary may not attest a deed affecting land unless the deed embodies, in itself or in a Schedule annexed to it, an accurate and clear description of the land showing its boundaries, extent and situation, specifying the district, pattu, korale, Divisional Secretary's Division, local authority division, Grama Niladhari Division and village (Notaries Ordinance s.31(16)(a)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M077-001",
+            "PROV-M077-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M077-Q01-002",
+          "claim_text": "Where the land lies within a municipality, town or development area declared under section 2 of the Municipal Councils Ordinance, section 2 of the Urban Councils Ordinance or the corresponding local government law, the assessment number and the name of the street must also be given (Notaries Ordinance s.31(16)(a)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M077-001",
+            "PROV-M077-901"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M077-Q01-003",
+          "claim_text": "Where the subject of the deed is a share of a land, the deed must state whether the share is divided or undivided and the fractional part it is of the whole; a divided share must be defined by its own particular boundaries and extent, and for an undivided share the boundaries and extent of the entire land of which it is a share must be stated (Notaries Ordinance s.31(16)(b)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M077-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M077-Q01-004",
+          "claim_text": "The registration law sets the same standard for the instrument presented for registration: an accurate and clear description in the Schedule with boundaries, extent and situation down to the Grama Niladhari Division, a divided portion defined by its particular boundaries and extent, and for an undivided share the proportion it bears to the entire land together with a description of the entire land (Registration of Documents Ordinance s.13(1) as substituted in 2011, and s.13(2) and (3)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M077-005",
+            "PROV-M077-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M077-Q01-005",
+          "claim_text": "A Registrar must refuse to register an instrument that does not state those particulars (Registration of Documents Ordinance s.13(5)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M077-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M077-Q01-006",
+          "claim_text": "The description put into the Schedule must be taken from a search of the land registry, which the notary is bound to make before drawing a deed affecting an interest in land (Notaries Ordinance s.31(17)(a)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M077-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M077-Q01-007",
+          "claim_text": "The deed as forwarded cannot be attested, because a blank Schedule leaves the deed without the description of the land that Notaries Ordinance s.31(16)(a) makes a condition of attestation.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M077-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-5"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M077-Q01-008",
+          "claim_text": "The land to be described is the divided portion of 45 perches allotted by the partition decree entered in the District Court of Ratnapura in case No. 345/P, and the Schedule must reproduce that land by its boundaries, extent and situation as it stands registered, ascertained by the notary's search of the folio.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M077-001",
+            "PROV-M077-007"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M077-Q01-009",
+          "claim_text": "On the facts as stated the three brothers hold equal undivided shares of that 45 perch portion and no further partition has yet divided it among them, so what Anuk can convey is an undivided one third share; the Schedule must then describe the whole 45 perch portion by its boundaries and extent and the deed must state that the interest transferred is an undivided one third share of it.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M077-002",
+            "PROV-M077-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M077-Q01-010",
+          "claim_text": "If a defined block has in fact been allotted to Anuk, the Schedule must instead define that block by its own particular boundaries and extent, giving the extent in perches and the four boundaries, and the deed must state that the share conveyed is a divided one.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M077-002",
+            "PROV-M077-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M077-Q01-011",
+          "claim_text": "The draft should be returned to the notary with instructions to complete the Schedule with an accurate and clear description of the land answering Notaries Ordinance s.31(16)(a) and (b) and s.13 of the Registration of Documents Ordinance, expressed as a divided or an undivided share according to what Anuk in fact owns at execution.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M077-001",
+            "PROV-M077-002",
+            "PROV-M077-003",
+            "PROV-M077-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-5"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M077-Q01-012",
+          "claim_text": "If the Schedule is left blank or is inaccurate the notary is in breach of his statutory duty and the Registrar of Lands must refuse registration of the transfer.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M077-001",
+            "PROV-M077-004"
+          ],
+          "supporting_fact_ids": [
+            "BG-5"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Two problems a lawyer must settle. First, the answer leads with the undivided one third reading, but part (iii) as set calls the subject \"Anuk's divided block of land\", so the primary description in the gold answer may be the wrong way round; the alternative divided block description at CL-M077-Q01-010 may be the answer the question asks for. Second, the April 2020 text of Notaries Ordinance rule (16)(b), the indispensable provision for the divided or undivided distinction, ended with a proviso that Act No. 31 of 2022, s.16(9)(b) removed and that the corpus does not reproduce, and the Partition Law No. 21 of 1977, which would supply the lot and plan reference for a post partition transfer, is not in the corpus.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

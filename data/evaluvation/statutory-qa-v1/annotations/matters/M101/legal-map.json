@@ -1,0 +1,663 @@
+{
+  "benchmark_matter_id": "M101",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M101",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T23:09:51Z",
+    "verification_agent": "verifier-M101",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T23:18:03Z"
+  },
+  "matter_reference_date": "2018-10",
+  "matter_reference_date_basis": "exam_session OCTOBER 2018 recorded in candidates/matters/M101.json; the law is stated as at that session",
+  "corpus_gaps": [
+    "The corpus holds only the consolidated (post-2024) text of the Notaries Ordinance. Rules (11), (12), (15), (18), (20)(a), (20)(c), (20)(d), (20)(f), (21) and (22) of section 31 are untouched by Notaries (Amendment) Act No. 31 of 2022 and Notaries (Amendment) Act No. 6 of 2024 (checked against 31-2022/s16, 6-2024/s3, 47-2011/s2, 47-2011/s3), so their corpus text is the text in force in October 2018. Rules (8), (9), (14), (15A), (17) and (20)(b) as printed are later text.",
+    "Rule (10) of section 31 is missing from the corpus body (the provision list jumps from sub-9 to sub-11) because the consolidation applies the repeal by 6-2024 s.3(4). Rule (10) was in force in October 2018 and may bear on this question; its text cannot be recovered from the corpus.",
+    "The Second Schedule to the Notaries Ordinance is not in the corpus, so Form E (the prescribed attestation form referred to in rule (21)) cannot be quoted or checked. The gold answer therefore describes the required attestation content from rule (20) rather than reproducing the form.",
+    "Prevention of Frauds Ordinance section 2 is held only in its post-2022/2024 form (amendment events for 30-2022 s.2 and 4-2024 s.2). The thumb-impression requirement in section 2(1)(b) and the whole of section 2(2) were not in force in October 2018, so this section is used only as background.",
+    "No provision in the corpus deals with interpretation or translation for an executant who does not understand the language of the deed beyond the read-over-and-explain duty in rule (11); if an interpreter requirement is expected, it is not in the corpus.",
+    "Added by the verifier: rule (3) of section 31, which forbids any signature or mark being taken until the whole deed has been written or engrossed, is held only in the wording substituted by 31-2022 s.16(1). The gold answer instructs the executants that nothing is to be signed until the deed is fully engrossed, but the October 2018 wording of rule (3) is not in the corpus, so that instruction is carried in the answer prose without a provision entry.",
+    "Added by the verifier: the gold answer instructs the executant who cannot sign to make his mark on the deed, the duplicate and the protocol. Rule (24) (added as PROV-M101-901) supports the protocol, but the corpus holds no October 2018 provision requiring execution on the duplicate; the 'original, duplicate and the protocol' formula appears only in rule (15A) and in Prevention of Frauds Ordinance s.2(1)(b), both of which date from 2022."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M101-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(22)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice nor authenticate or attest any deed or instrument drawn in any language other than that in which he is authorized to practice.",
+      "why_relevant": "The notary is licensed in English only, so the deed of transfer must be drawn in English and attested in English. This rule is what makes a Sinhala signature a signature in a language other than the notary's language of practice, and it is the reason the executants must be instructed that the instrument itself will be in English.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (22) is original 1907 text; it is not amended by 47-2011, 13-2013, 31-2022 or 6-2024, so the corpus text is the text in force in October 2018.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M101-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(11)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument in any case in which the person executing or acknowledging the same shall be or profess to be unable to read the same, or in which such person shall require him to read over the same, unless and until he shall have read over and explained the same, or caused the same to be explained, in the presence and hearing of such person and, except in the case of wills and codicils, in the presence of the attesting witnesses.",
+      "why_relevant": "One executant cannot sign in any language and cannot read; the other reads only Sinhala while the deed is in English. Both are therefore unable to read the instrument, so the notary must read it over and explain it, or cause it to be explained, in their presence and hearing and in the presence of the attesting witnesses before he attests.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (11) is original 1907 text; not amended by 47-2011, 31-2022 or 6-2024. In force in October 2018.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M101-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(12)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+      "why_relevant": "Fixes the manner of execution the notary must instruct the parties to follow: both brothers and both witnesses must sign, or in the case of the illiterate brother make his mark, in the notary's presence and in the presence of one another, and the notary must sign in their presence.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (12) is original 1907 text; not amended by 47-2011, 31-2022 or 6-2024. In force in October 2018.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M101-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(15), first limb",
+      "relevant_excerpt": "If any deed or instrument executed or acknowledged before him be signed by any of the parties or witnesses thereto with a mark, or with a signature in a language other than that in which the notary is authorized to practice, he shall write over such mark or signature in his own handwriting and at the time of execution the words \"This is the mark (or signature, as the case may be) of A. B.\"",
+      "why_relevant": "This is the certification rule the question asks about. It covers both executants at once: the brother who cannot sign signs with a mark, and the brother who signs in Sinhala signs in a language other than English, the language of the notary's warrant. In each case the notary must write over the mark or signature, in his own hand and at the time of execution, the words prescribed, inserting the name of the person signing.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (15) is original 1907 text. Notaries (Amendment) Act No. 31 of 2022 s.16(8) inserted a new rule (15A) after it but did not alter rule (15) itself. In force in October 2018.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M101-005",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(15), second limb",
+      "relevant_excerpt": "and in the case of a mark he shall besides require such person to affix to the deed or instrument the impression of his left thumb and shall write over such impression at the time and in the manner aforesaid the words \"This is the left thumb impression of A. B.\"",
+      "why_relevant": "Adds the extra step required only for the executant who signs with a mark: the notary must require the left thumb impression and write the prescribed words over it. This is the step that distinguishes the treatment of the brother who cannot sign from the treatment of the brother who signs in Sinhala.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of the original rule (15); not amended by 31-2022 or 6-2024. In force in October 2018. The general obligation on every executant of a deed affecting immovable property to affix a thumb impression comes from rule (15A), inserted only in 2022, and is therefore not applied here.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M101-006",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(20)(a) and (20)(d)",
+      "relevant_excerpt": "He shall without delay duly attest every deed or instrument which shall be executed or acknowledged before him, and shall sign and seal such attestation. In such attestation he shall state- (a) that the said deed or instrument was signed by the party and the witnesses thereto in his presence and in the presence of one another;",
+      "why_relevant": "The second half of the question is how the notary certifies. Rule (20) requires an attestation, signed and sealed without delay, which states that the parties and witnesses signed in his presence and in the presence of one another, and (paragraph (d)) whether the deed was read over by the executant or read and explained by the notary in the presence of the attesting witnesses. That last statement is what records compliance with rule (11) on the face of the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The opening words of rule (20) and paragraphs (a), (c), (d) and (f) are original text. Paragraphs (b) and (e) were substituted and (h) added by 31-2022 s.16(11), and (g) was substituted by 6-2024 s.3(7); none of those later paragraphs is relied on here.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording and 2018 applicability confirmed against 31-2022 s.16(11) and 6-2024 s.3(7), but the subsection label reads \"(20)(a) and (20)(d)\" while the excerpt covers only the opening words of rule (20) and paragraph (a); paragraph (d) is carried separately by PROV-M101-007, and the label should be read as rule (20) opening words and paragraph (a)."
+    },
+    {
+      "provision_id": "PROV-M101-007",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(20)(d)",
+      "relevant_excerpt": "(d) whether the same was read over by the person executing the same, or read and explained by him, the said notary, to the said person in the presence of the attesting witnesses;",
+      "why_relevant": "Requires the attestation itself to record that the deed was read over and explained to these executants in the presence of the attesting witnesses, which is the certification counterpart of the rule (11) duty triggered by an executant who cannot read.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Paragraph (d) of rule (20) is original text and was not touched by 31-2022 s.16(11) or 6-2024 s.3(7). In force in October 2018.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M101-008",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(21)",
+      "relevant_excerpt": "Every such attestation shall be substantially in the form E in the Second Schedule, and shall be legibly signed by him in the language in which the deed or instrument is written, and also with his usual signature if the language or form of that signature be different from that in which such deed or instrument is written.",
+      "why_relevant": "Fixes the form and language of the certification: the attestation must follow Form E substantially and must be legibly signed by the notary in English, the language in which this deed is written, and in addition with his usual signature if that differs.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (21) is original 1907 text; not amended by 47-2011, 31-2022 or 6-2024. In force in October 2018. Form E itself is not in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M101-009",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(8)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument to which at least two witnesses have not subscribed their signatures in letters.",
+      "why_relevant": "Explains why the witnesses, unlike the executants, must sign in letters and cannot sign by mark, and so shapes the instruction the notary gives about who may witness this deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (8) is original text and was not amended by 31-2022 or 6-2024. In force in October 2018.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M101-010",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(18)",
+      "relevant_excerpt": "He shall correctly insert in letters in every deed or instrument executed before him the day, month, and year on which and the place where the same is executed, and shall sign the same.",
+      "why_relevant": "Supports the execution instructions: the date and place of execution must be inserted in letters and the notary must sign the deed itself, in addition to signing the attestation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (18) is original text; not amended by 31-2022 or 6-2024. In force in October 2018.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M101-011",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(14)",
+      "relevant_excerpt": "He shall, before any executant or witness signs or makes a mark and before any executant affixes his left or right thumb impression or any other finger impression or toe impression, ascertain the full names of the executant and witnesses to such deed or instrument",
+      "why_relevant": "The notary must ascertain the full names of the executants before the mark or signature is made, because rule (15) requires him to write the correct name into the words he places over the mark or the Sinhala signature.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus text of rule (14) is the text substituted by Notaries (Amendment) Act No. 31 of 2022 s.16(7), which postdates October 2018. A duty in similar terms to ascertain the full names before signing appears to have existed earlier, but the corpus does not hold the pre-2022 wording, so this provision is carried as supporting only and nothing indispensable rests on it.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim but the corpus text of rule (14) is the wording substituted by 31-2022 s.16(7), so it is not the October 2018 text; the provision may stand as supporting only, and the gold answer's rule paragraph should not state s.31(14) as law applicable at the reference date."
+    },
+    {
+      "provision_id": "PROV-M101-012",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary",
+      "why_relevant": "Background: it is this section that makes notarial execution and attestation a condition of a transfer of land having force in law, which is why the manner of signing and of certification matters at all.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus holds only the consolidated text of section 2, which records amendment events for 30-2022 s.2 and 4-2024 s.2. The quoted wording and the thumb-impression requirement in paragraph (b) are post-2018 text, so the section is used as background only and no claim rests on it.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim but is the post-30-2022 / 4-2024 text of section 2; confirmed against 30-2022 s.2 that paragraph (1)(b) and subsection (2) date from 2022, so the section is correctly carried as background only and no claim may rest on its wording."
+    },
+    {
+      "provision_id": "PROV-M101-901",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(24)",
+      "relevant_excerpt": "He shall carefully preserve as his protocol a draft or copy of every deed or instrument executed or acknowledged before him, to which shall be attached his signature and those of the party and witnesses to the original deed or instrument",
+      "why_relevant": "Added by the verifier. The gold answer instructs the executant who cannot sign to make his mark on the deed, the duplicate and the protocol, but no provision in the map supported signing anything beyond the deed itself once rule (15A) was excluded as post-2018. Rule (24) is the provision that requires the protocol to carry the signatures of the party and the witnesses, and it is untouched by 20-1976 s.10, 47-2011, 31-2022 s.16 and 6-2024 s.3.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (24) is original 1907 text. The amendment events on section 31 record no change to rule (24) by 20-1976 s.10, 47-2011 s.2 or s.3, 31-2022 s.16 or 6-2024 s.3, so the corpus text is the text in force in October 2018.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier to give the protocol element of the execution instruction a cited basis; excerpt checked verbatim. It does not support the duplicate element of that instruction, for which the corpus holds no October 2018 provision."
+    },
+    {
+      "provision_id": "PROV-M101-902",
+      "section_id": "31-2022/s16",
+      "act_id": "31-2022",
+      "formal_title": "Notaries (Amendment) Act",
+      "number_and_year": "No. 31 of 2022",
+      "section": "16",
+      "subsection": "(8)",
+      "relevant_excerpt": "by the insertion, immediately after rule (15) thereof, of the following new rule:- (a) Every- (i) executant; (ii) attorney; or (iii) board of directors or the authorized person of a corporate body; executing a deed or instrument in respect of an immovable property, in addition to the provisions of rule (15) shall affix his thumb impression of any hand above or beside his signature to the original, duplicate and the protocol of such deed or instrument",
+      "why_relevant": "Added by the verifier. Claim CL-M101-Q01-016 concludes that the brother who signs in Sinhala need not affix a thumb impression as at October 2018. That negative conclusion turns on the date rule (15A) entered the law, which is this amending provision; it was cited only in a temporal note and not as authority for the claim.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "This is the amending provision that inserted rule (15A), with effect from 2022, four years after the matter reference date. It is carried as supporting authority for the temporal proposition that no general thumb impression duty applied to a signing executant in October 2018; it is not applied to the matter.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier so that the temporal conclusion rests on a cited provision rather than on a temporal note; excerpt checked verbatim."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M101-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Both halves of the question, the instructions for due execution and the manner of certifying the signatures, are answered by the express rules in section 31 of the Notaries Ordinance: rule (22) on the language of practice, rule (11) on reading over and explaining, rule (12) on signing in the notary's presence, rule (15) on marks and on signatures in a language other than the notary's, and rules (20) and (21) on the attestation. The prescribed words of certification are set out verbatim in rule (15), so no judicial gloss or Roman-Dutch common law principle is needed to produce a complete answer.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M101-Q01-01",
+          "issue": "In what language must the deed of transfer be drawn and attested, given that the notary holds a licence to practise in English only, and what does that mean for an executant who signs in Sinhala.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M101-Q01-02",
+          "issue": "What must the notary do before execution where one executant cannot sign or read in any language and the other cannot read the English deed: reading over and explaining, ascertaining names, and arranging witnesses.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M101-Q01-03",
+          "issue": "How must the executant who cannot sign execute the deed, and what additional step (the left thumb impression) does the notary have to require of him.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M101-Q01-04",
+          "issue": "In what words and in whose handwriting must the notary certify the mark of the one brother and the Sinhala signature of the other, and what must the attestation itself state and in what form and language.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M101-001",
+        "PROV-M101-002",
+        "PROV-M101-003",
+        "PROV-M101-004",
+        "PROV-M101-005",
+        "PROV-M101-006",
+        "PROV-M101-007",
+        "PROV-M101-008"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M101-009",
+        "PROV-M101-010",
+        "PROV-M101-011",
+        "PROV-M101-901",
+        "PROV-M101-902"
+      ],
+      "background_provision_ids": [
+        "PROV-M101-012"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps. First, rule (22) fixes English as the language of the deed and of the attestation, which is what makes the Sinhala signature a signature in a language other than that of the notary's warrant. Second, that characterisation, together with the fact that the other brother can only make a mark, brings both limbs of rule (15) into play and, because neither brother can read the English deed, also rule (11) and rule (12) on the manner of execution. Third, rules (20) and (21) require the reading over and the manner of signing established at the second step to be recorded in a signed and sealed attestation substantially in Form E. Only these dependencies are counted; rules (8), (18) and (14) add detail without carrying the chain.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M101-001",
+          "to_provision_id": "PROV-M101-004",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M101-004",
+          "to_provision_id": "PROV-M101-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M101-001",
+          "to_provision_id": "PROV-M101-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M101-002",
+          "to_provision_id": "PROV-M101-007",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M101-003",
+          "to_provision_id": "PROV-M101-006",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M101-006",
+          "to_provision_id": "PROV-M101-007",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M101-006",
+          "to_provision_id": "PROV-M101-008",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M101-001",
+          "to_provision_id": "PROV-M101-008",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M101-009",
+          "to_provision_id": "PROV-M101-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M101-011",
+          "to_provision_id": "PROV-M101-004",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "One of the executants in a Deed of Transfer does not know to sign in any language and his brother the other executant signs in Sinhala The Notary has a license to practice in the English language.",
+        "enriched_background": "Ranjith Weerasinghe and his brother Nimal Weerasinghe are the two executants of a Deed of Transfer by which they convey to Kamala Fernando an allotment of land called Delgahawatta, about twenty perches in extent, at Ganemulla in the Gampaha District. Ranjith does not know how to sign in any language and cannot read; he speaks and understands only Sinhala. Nimal signs in Sinhala and also reads only Sinhala; neither brother reads English. The notary before whom the deed is to be executed, Mr. S. Jayasuriya of Gampaha, holds a licence to practise in the English language, and the deed has been drawn and engrossed in English. Execution is fixed for 12 March 2018 at the notary's office at Gampaha, where two witnesses, both of whom can write their names and are well acquainted with the brothers, will be present throughout. Ranjith's left thumb is intact and an impression of it can be taken.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M101-Q01-001",
+            "fact": "The two executants are brothers named Ranjith Weerasinghe and Nimal Weerasinghe, and the transferee is Kamala Fernando.",
+            "origin": "synthetic_neutral",
+            "reason": "The original scenario names nobody, and the certification wording the notary must write requires the name of the person signing to be inserted. Names make the scenario determinate without changing any legal outcome.",
+            "activates_provision_ids": [
+              "PROV-M101-004",
+              "PROV-M101-005",
+              "PROV-M101-011"
+            ],
+            "counterfactual_effect": "None on the outcome. Any other names would give the same result; only the words written over the mark and the signature would differ.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M101-Q01-002",
+            "fact": "Ranjith, the executant who cannot sign, also cannot read, and speaks and understands only Sinhala.",
+            "origin": "synthetic_decisive",
+            "reason": "The original says only that he cannot sign in any language. Inability to read is the condition that triggers the duty to read over and explain, so it must be stated rather than assumed.",
+            "activates_provision_ids": [
+              "PROV-M101-002",
+              "PROV-M101-007"
+            ],
+            "counterfactual_effect": "If he could read the English deed and did not ask for it to be read, the reading over and explanation would not be compulsory for him, though the mark and thumb impression steps would be unchanged.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M101-Q01-003",
+            "fact": "Nimal, the brother who signs in Sinhala, reads only Sinhala and does not read English.",
+            "origin": "synthetic_decisive",
+            "reason": "The original states only that he signs in Sinhala, which does not by itself show that he cannot read an English deed. His inability to read English is what brings him within the read-over-and-explain duty as well.",
+            "activates_provision_ids": [
+              "PROV-M101-002",
+              "PROV-M101-007"
+            ],
+            "counterfactual_effect": "If he read English fluently and did not ask for the deed to be read, the notary would not be bound to read over and explain it to him, but would still have to certify his Sinhala signature.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M101-Q01-004",
+            "fact": "The deed has been drawn and engrossed in English, the language of the notary's licence.",
+            "origin": "synthetic_decisive",
+            "reason": "The original gives the notary's language of practice but not the language of the instrument. The language of the deed decides whether the notary may attest it at all and fixes the language in which he must sign the attestation.",
+            "activates_provision_ids": [
+              "PROV-M101-001",
+              "PROV-M101-004",
+              "PROV-M101-008"
+            ],
+            "counterfactual_effect": "If the deed had been drawn in Sinhala the notary could not have attested it at all, and the brother signing in Sinhala would not have been signing in a language other than that of the notary's warrant.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M101-Q01-005",
+            "fact": "The subject of the transfer is an allotment of land called Delgahawatta, about twenty perches in extent, at Ganemulla in the Gampaha District.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the property identity the original omits, so that the instrument is a determinate deed of transfer of immovable property.",
+            "activates_provision_ids": [
+              "PROV-M101-012"
+            ],
+            "counterfactual_effect": "None on the execution and certification steps; a different parcel would give the same answer.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M101-Q01-006",
+            "fact": "Execution is fixed for 12 March 2018 at the notary's office at Gampaha.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the missing instrument date and place, both of which the notary must insert in letters in the deed, and fixes the date before the October 2018 reference date so the pre-2022 text of the rules applies.",
+            "activates_provision_ids": [
+              "PROV-M101-010"
+            ],
+            "counterfactual_effect": "A date after 2022 would bring the amended rules, including the general thumb impression rule (15A), into play and change the answer.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M101-Q01-007",
+            "fact": "Two witnesses who can write their names and are well acquainted with both brothers attend and remain present throughout the execution.",
+            "origin": "synthetic_decisive",
+            "reason": "The original scenario is silent on witnesses, yet the reading over and explanation must happen in the presence of the attesting witnesses and the deed cannot be attested without two witnesses who subscribe their signatures in letters.",
+            "activates_provision_ids": [
+              "PROV-M101-002",
+              "PROV-M101-003",
+              "PROV-M101-009"
+            ],
+            "counterfactual_effect": "If only one witness attended, or if a witness could sign only by mark, the notary could not attest the deed at all.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M101-Q01-008",
+            "fact": "Ranjith's left thumb is intact and an impression of it can be taken.",
+            "origin": "synthetic_decisive",
+            "reason": "The rule on marks requires the left thumb impression specifically, so the scenario has to say whether that impression can be obtained.",
+            "activates_provision_ids": [
+              "PROV-M101-005"
+            ],
+            "counterfactual_effect": "If the left thumb were missing, the corpus text of the rule on marks would give no substitute for October 2018, and the notary would face a gap that the later amendments only fill from 2022 onwards.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "The issue is what instructions the notary, who is licensed to practise in English, must give two brothers executing an English deed of transfer where one of them cannot sign or read in any language and the other signs in Sinhala, and in what words and form he must then certify their respective signatures.",
+        "rule": "By Notaries Ordinance s.31(22) a notary may not attest a deed in any language other than that in which he is authorised to practise, nor attest a deed drawn in any other language, so an English licence means an English deed and an English attestation. By s.31(11) he may not attest where an executant is or professes to be unable to read the deed, or asks him to read it, unless he has first read it over and explained it, or caused it to be explained, in the presence and hearing of that executant and in the presence of the attesting witnesses. By s.31(12) the executants and the witnesses must sign in the notary's presence and in the presence of one another, and the notary must sign in their presence; by s.31(8) at least two witnesses must subscribe their signatures in letters, and by s.31(18) the day, month, year and place of execution must be inserted in letters. Section 31(14) requires the full names of executants and witnesses to be ascertained before any signature or mark is made. Section 31(15) governs certification: where a party signs with a mark, or with a signature in a language other than that in which the notary is authorised to practise, the notary must write over the mark or signature, in his own handwriting and at the time of execution, the words \"This is the mark (or signature, as the case may be) of A. B.\", inserting the name of the person signing; and in the case of a mark he must besides require that person to affix the impression of his left thumb and write over it, at the same time and in the same manner, the words \"This is the left thumb impression of A. B.\". Section 31(20) then requires him without delay to attest the deed, signing and sealing the attestation, and to state in it among other things that the deed was signed by the party and the witnesses in his presence and in the presence of one another, and whether it was read over by the executant or read and explained by the notary in the presence of the attesting witnesses; and by s.31(21) the attestation must be substantially in Form E of the Second Schedule and must be legibly signed by him in the language in which the deed is written, and also with his usual signature if that differs.",
+        "application": "The deed is drawn in English, which is the language of the notary's licence, so under s.31(22) he may properly draw and attest it. Because neither Ranjith, who cannot read at all, nor Nimal, who reads only Sinhala, can read the English instrument, s.31(11) obliges the notary to read the whole deed over and explain it, or cause it to be explained, in Sinhala in the presence and hearing of both brothers and in the presence of the two attesting witnesses, before anything is signed. He must instruct them that nothing is to be signed until the deed has been fully engrossed and read over, that the two witnesses must be present throughout and must sign their names in letters, and that under s.31(12) both brothers and both witnesses must sign in his presence and in the presence of one another, after which he will sign himself; he must also ascertain their full names beforehand, as s.31(14) requires, so that the correct names can be written into the certification. Ranjith, who does not know to sign in any language, must be instructed to make his mark on the deed, the duplicate and the protocol, and then to affix the impression of his left thumb. Nimal, who can write, is to sign in Sinhala, which he may do even though the deed and the attestation are in English. Certifying the signatures then follows s.31(15). Over Ranjith's mark the notary must write, in his own handwriting and at the time of execution, the words \"This is the mark of Ranjith Weerasinghe\", and over the left thumb impression the words \"This is the left thumb impression of Ranjith Weerasinghe\". Over Nimal's Sinhala signature, which is a signature in a language other than English, he must write in the same way the words \"This is the signature of Nimal Weerasinghe\". He must insert the date, 12 March 2018, and the place, Gampaha, in letters under s.31(18), and then attest the deed under s.31(20), stating that the brothers and the witnesses signed in his presence and in the presence of one another and that the deed was read over and explained by him to the executants in the presence of the attesting witnesses, and he must sign and seal that attestation, substantially in Form E and legibly signed in English as s.31(21) requires.",
+        "conclusion": "The notary should instruct the brothers that the deed will be in English and will be read over and explained to them in full, in the presence of the two attesting witnesses, before execution; that Ranjith is to make his mark and then affix his left thumb impression, and Nimal is to sign in Sinhala; and that both are to do so in the notary's presence and in the presence of one another and of the witnesses, who must sign their own names in letters. He should certify by writing in his own hand, at the time of execution, \"This is the mark of Ranjith Weerasinghe\" over the mark, \"This is the left thumb impression of Ranjith Weerasinghe\" over the thumb impression, and \"This is the signature of Nimal Weerasinghe\" over the Sinhala signature, and by then attesting the deed substantially in Form E, stating that the parties and witnesses signed in his presence and in the presence of one another and that the deed was read over and explained in the presence of the attesting witnesses, signing and sealing the attestation in English. One point should be flagged as open: the answer is stated as at the October 2018 session, and the general requirement that every executant of a deed affecting immovable property affix a thumb impression beside his signature dates only from the 2022 amendment, so on these facts Nimal is not required to give a thumb impression."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M101-Q01-001",
+          "claim_text": "A notary may not attest a deed in, or a deed drawn in, any language other than that in which he is authorised to practise.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M101-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-002",
+          "claim_text": "Where an executant is or professes to be unable to read the deed, or requires the notary to read it, the notary may not attest until he has read it over and explained it, or caused it to be explained, in the presence and hearing of that executant and in the presence of the attesting witnesses.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M101-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-003",
+          "claim_text": "The executants and the witnesses must sign in the notary's presence and in the presence of one another, and the notary must sign in their presence; at least two witnesses must subscribe their signatures in letters.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M101-003",
+            "PROV-M101-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-004",
+          "claim_text": "Where a party signs with a mark, or with a signature in a language other than that in which the notary is authorised to practise, the notary must write over the mark or signature in his own handwriting and at the time of execution the words \"This is the mark (or signature, as the case may be) of A. B.\", inserting the name of the person signing.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M101-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-005",
+          "claim_text": "In the case of a mark the notary must besides require that person to affix the impression of his left thumb and write over it, at the same time and in the same manner, the words \"This is the left thumb impression of A. B.\".",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M101-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-006",
+          "claim_text": "The notary must without delay attest the deed, sign and seal the attestation, and state in it that the party and the witnesses signed in his presence and in the presence of one another and whether the deed was read over by the executant or read and explained by the notary in the presence of the attesting witnesses.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M101-006",
+            "PROV-M101-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-007",
+          "claim_text": "The attestation must be substantially in Form E of the Second Schedule and must be legibly signed by the notary in the language in which the deed is written, and also with his usual signature if that differs.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M101-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-008",
+          "claim_text": "The notary must insert the day, month and year and the place of execution in letters and sign the deed, and must ascertain the full names of the executants and witnesses before any signature or mark is made.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M101-010",
+            "PROV-M101-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed",
+          "verifier_note": "The first half (day, month, year and place in letters, and the notary signing the deed) is verified against rule (18); the second half, on ascertaining full names before any signature or mark, rests on PROV-M101-011, whose corpus text is the wording substituted by 31-2022 s.16(7) and is therefore not shown to be the law in October 2018."
+        },
+        {
+          "claim_id": "CL-M101-Q01-009",
+          "claim_text": "Because the notary's licence is in English and the deed has been drawn in English, he may lawfully attest this deed, and the attestation must be signed by him in English.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M101-001",
+            "PROV-M101-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "FACT-M101-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-010",
+          "claim_text": "Since neither brother can read the English deed, the notary must instruct them that he will read the whole deed over and explain it in Sinhala in their presence and hearing and in the presence of the two attesting witnesses before anything is signed.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M101-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M101-Q01-002",
+            "FACT-M101-Q01-003",
+            "FACT-M101-Q01-007"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-011",
+          "claim_text": "The brothers must be instructed to execute in the notary's presence and in the presence of one another and of two witnesses who will sign their own names in letters, and the notary will then sign in their presence.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M101-003",
+            "PROV-M101-009"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M101-Q01-007"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-012",
+          "claim_text": "Ranjith, who does not know to sign in any language, must be instructed to make his mark and then to affix the impression of his left thumb.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M101-004",
+            "PROV-M101-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "FACT-M101-Q01-008"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-013",
+          "claim_text": "Nimal may sign in Sinhala even though the deed and the attestation are in English, because the rule on signatures in a language other than that of the notary's warrant provides for that signature to be certified rather than refused.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M101-001",
+            "PROV-M101-004"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-014",
+          "claim_text": "The notary must write in his own handwriting at the time of execution the words \"This is the mark of Ranjith Weerasinghe\" over the mark, \"This is the left thumb impression of Ranjith Weerasinghe\" over the thumb impression, and \"This is the signature of Nimal Weerasinghe\" over the Sinhala signature.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M101-004",
+            "PROV-M101-005",
+            "PROV-M101-011"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M101-Q01-001"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "verifier_note": "Verified on PROV-M101-004 and PROV-M101-005; the citation of PROV-M101-011 adds nothing shown to be October 2018 law, and the claim stands without it."
+        },
+        {
+          "claim_id": "CL-M101-Q01-015",
+          "claim_text": "He must then attest the deed substantially in Form E, stating that the parties and witnesses signed in his presence and in the presence of one another and that the deed was read over and explained in the presence of the attesting witnesses, and sign and seal that attestation in English.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M101-006",
+            "PROV-M101-007",
+            "PROV-M101-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M101-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M101-Q01-016",
+          "claim_text": "As at the October 2018 reference date Nimal is not required to affix a thumb impression beside his Sinhala signature, because the general thumb impression requirement for executants of deeds affecting immovable property dates only from the 2022 amendment.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M101-005",
+            "PROV-M101-902"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M101-Q01-006"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified",
+          "verifier_note": "Verified after adding PROV-M101-902 (31-2022 s.16(8), which inserted rule (15A)) as the authority for the date from which the general thumb impression duty runs."
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Verification confirmed every indispensable provision, but two defects need a lawyer before this stands as gold. First, the gold answer's rule paragraph states s.31(14) (ascertaining full names before signing) as law applicable in October 2018, while the corpus holds only the wording substituted by 31-2022 s.16(7); claim CL-M101-Q01-008 is marked disputed for the same reason, and the pre-2022 wording of rule (14), like the repealed rule (10), cannot be recovered from the corpus. Second, the enriched background states that the executant's left thumb is intact and an impression can be taken, and that the witnesses can write their names, which telegraphs the left thumb impression step in rule (15) and the rule (8) requirement that witnesses subscribe in letters; the enrichment should be reworded to remove that leak before the question is used.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

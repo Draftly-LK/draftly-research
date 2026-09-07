@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://draftly.lk/schemas/legal-qa-v1/lawyer-review.schema.json",
+  "title": "Lawyer approval record (review-packets/<matter>/approval.json). Generated with every approval false and reviewer fields null; only a human fills them.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "matter_id", "reviewer_id", "review_date", "background_approved", "issues_approved", "authorities_approved",
+    "predicates_approved", "document_bundle_approved", "gold_answers_approved", "required_corrections", "overall_status"
+  ],
+  "properties": {
+    "matter_id": { "type": "string", "pattern": "^M[0-9]{3}$" },
+    "reviewer_id": { "type": ["string", "null"] },
+    "review_date": { "type": ["string", "null"] },
+    "background_approved": { "type": "boolean" },
+    "issues_approved": { "type": "boolean" },
+    "authorities_approved": { "type": "boolean" },
+    "predicates_approved": { "type": "boolean" },
+    "document_bundle_approved": { "type": "boolean" },
+    "gold_answers_approved": { "type": "boolean" },
+    "required_corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target", "correction"],
+        "properties": {
+          "target": { "type": "string", "description": "authority_id / claim_id / predicate_id / document_id / 'background'" },
+          "correction": { "type": "string" },
+          "severity": { "enum": ["blocking", "minor"] }
+        }
+      }
+    },
+    "overall_status": { "enum": ["pending", "approved", "corrections_required", "rejected"] }
+  },
+  "allOf": [
+    {
+      "description": "Machine-generated packets must be pending with nothing approved and no reviewer.",
+      "if": { "properties": { "reviewer_id": { "type": "null" } } },
+      "then": {
+        "properties": {
+          "review_date": { "type": "null" },
+          "background_approved": { "const": false },
+          "issues_approved": { "const": false },
+          "authorities_approved": { "const": false },
+          "predicates_approved": { "const": false },
+          "document_bundle_approved": { "const": false },
+          "gold_answers_approved": { "const": false },
+          "overall_status": { "const": "pending" }
+        }
+      }
+    }
+  ]
+}

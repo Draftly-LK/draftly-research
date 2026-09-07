@@ -1,0 +1,389 @@
+{
+  "benchmark_matter_id": "M004",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M004",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T21:52:59Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2026-04",
+  "matter_reference_date_basis": "matter_reference_date 2026-04 in candidates/matters/M004.json, corresponding to the APRIL 2026 exam session; the law is stated as at that date.",
+  "corpus_gaps": [
+    "The Third Schedule to the Land Development Ordinance (rule 1, the groups of relatives entitled to succeed) is not in the corpus. The finalized consolidated source JSON lists Third Schedule under schedules_referenced but its schedules array is empty, so schedules were never extracted.",
+    "The Land Development (Amendment) Act No. 11 of 2022 is not in the corpus as a separate instrument. Its effect appears only as amendment_events with operation unknown on 29 sections of the consolidated Ordinance (including s.2), and no such event is recorded on s.51, s.72 or the Third Schedule, so whether the 2022 Act altered the groups of relatives cannot be checked.",
+    "The corpus extraction of s.2 has dropped the quoted defined term at the head of most definitions (for example the owner and holding definitions read as bare 'means ...' clauses), so the excerpt for PROV-M004-002 has to be matched to its term by position rather than by label."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M004-001",
+      "section_id": "19-1935/s170",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "170",
+      "subsection": "(1)",
+      "relevant_excerpt": "No written law (other than this Ordinance) which provides for succession to land upon an intestacy and no other law relating to succession to land upon an intestacy shall have any application in respect of any land alienated under this Ordinance.",
+      "why_relevant": "Excludes the general law of intestate succession from land alienated under the Ordinance, so the devolution of Herath's land is governed by Chapter VII of the Ordinance and by the Third Schedule alone.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1935; corpus records the latest change as Act No. 16 of 1969 s.84. No later amendment event is recorded, so the text stands at the matter date 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M004-002",
+      "section_id": "19-1935/s2",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "2",
+      "subsection": "definition of 'owner'",
+      "relevant_excerpt": "means the owner of a holding whose title thereto is derived from or under a grant issued under this Ordinance and includes a permit- holder who has paid all sums which he is required to pay under subsection (2) of section 19 and has complied with all the other conditions specified in the permit;",
+      "why_relevant": "Fixes who counts as the owner of a holding whose death triggers the succession rules in sections 48B, 49 and 72. Herath must fall inside this definition (grant-derived title, or a permit-holder who has paid up) for Chapter VII devolution to apply.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 carries an amendment event from Act No. 11 of 2022 (operation recorded as 'unknown' in the corpus), so the consolidated text is at least partly post-2022 and applies at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M004-003",
+      "section_id": "19-1935/s48",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "48",
+      "subsection": null,
+      "relevant_excerpt": "In this Chapter 'successor', when used with reference to any land alienated on a permit or a holding, means a person who is entitled under this Chapter to succeed to that land or holding upon the death of the permit-holder or owner thereof, if that permit-holder or owner died without leaving behind his or her spouse, or, if that permit-holder or owner died leaving behind his or her spouse, upon the failure of that spouse to succeed to that land or holding or upon the death of that spouse.",
+      "why_relevant": "Defines 'successor' for Chapter VII, and locates the Third Schedule class after the surviving spouse in the order of devolution.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1935; substituted by Act No. 16 of 1969 s.22. No later amendment event recorded, so applicable at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M004-004",
+      "section_id": "19-1935/s48B",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "48B",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) Upon the death of the owner of a holding, the spouse of that owner shall be entitled to succeed to that holding subject to the following conditions:- (a) upon the marriage of such spouse, title to the holding shall devolve on the nominated successor of the deceased owner or, if there was no such nomination, on the person who was entitled to succeed under rule 1 of the Third Schedule;",
+      "why_relevant": "Gives the surviving spouse of a deceased owner priority over the Third Schedule class, and confirms that where there was no nomination the holding goes to the person entitled under rule 1 of the Third Schedule. Whether the Third Schedule group takes at all depends on whether Herath left a spouse.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1935 (inserted by Act No. 16 of 1969 s.23 per the corpus event list); no later amendment event recorded, so applicable at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M004-005",
+      "section_id": "19-1935/s49",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "49",
+      "subsection": null,
+      "relevant_excerpt": "a person nominated as successor by such permit- holder or owner shall succeed to that land or holding.",
+      "why_relevant": "States the primary route, devolution on a nominated successor. Herath made no nomination, so this route fails and section 72 is reached.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1935; substituted by Act No. 16 of 1969 s.24 and amended by Act No. 27 of 1981 s.5. No later amendment event recorded, so applicable at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M004-006",
+      "section_id": "19-1935/s51",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "51",
+      "subsection": null,
+      "relevant_excerpt": "No person shall be nominated by the owner of a holding or a permit- holder as his successor unless that person is the spouse of such owner or permit-holder, or belongs to one of the groups of relatives enumerated in rule 1 of the Third Schedule.",
+      "why_relevant": "Uses the exact phrase the question asks about, the groups of relatives enumerated in rule 1 of the Third Schedule, and confirms that the Third Schedule defines the eligible class by groups of relatives. The corpus does not carry the Schedule itself.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1935; the corpus records no amendment event for this section, so the text stands at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M004-007",
+      "section_id": "19-1935/s72",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "72",
+      "subsection": null,
+      "relevant_excerpt": "If no successor has been nominated, or if the nominated successor fails to succeed, or if the nomination of a successor contravenes the provisions of this Ordinance, the title to the land alienated on a permit to a permit-holder who at the time of his or her death was paying an annual instalment by virtue of the provisions of section 19* or to the holding of an owner shall, upon the death of such permit-holder or owner without leaving behind his or her spouse, or, where such permit- holder or owner died leaving behind his or her spouse, upon the failure of such spouse to succeed to that land or holding, or upon the death of such spouse, devolve as prescribed in rule 1 of the Third Schedule.",
+      "why_relevant": "The operative gateway. Where no successor has been nominated, title to the holding devolves as prescribed in rule 1 of the Third Schedule. It answers how the land devolves but not to whom, because rule 1 is not in the corpus.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1935; substituted by Act No. 16 of 1969 s.43 and amended by Act No. 27 of 1981 s.5. The corpus records no amendment event from Act No. 11 of 2022 on this section, so the extracted text is as at 1981; whether Act No. 11 of 2022 touched section 72 or rule 1 of the Third Schedule cannot be checked in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M004-008",
+      "section_id": "19-1935/s73",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "73",
+      "subsection": null,
+      "relevant_excerpt": "Title to a land alienated on a permit or to a holding shall be deemed to have devolved on any person entitled to succeed to the land or holding under the provisions of section 72 as from the date of the death of the permit-holder or owner of the holding if such permit-holder or owner died without leaving behind his or her spouse",
+      "why_relevant": "Fixes the date on which title devolves on the person entitled under section 72, the date of the owner's death where no spouse survives. Relevant to Herath's 2023 death.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1935; substituted by Act No. 16 of 1969 s.44. No later amendment event recorded, so applicable at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M004-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks which groups of relatives are entitled under rule 1 of the Third Schedule to the Land Development Ordinance. That is answered entirely by the text of the Ordinance and its Third Schedule as amended; no judicial authority or Roman-Dutch doctrine is needed, and section 170(1) expressly shuts out the general law of intestate succession. The question is nevertheless blocked because the Schedule text is not in the frozen corpus.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M004-Q01-01",
+          "issue": "Whether devolution of a holding alienated under the Land Development Ordinance on the owner's death without a nominated successor is governed by the Ordinance to the exclusion of the general law of intestate succession.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M004-Q01-02",
+          "issue": "Whether, on Herath's death with no nomination and no surviving spouse, title devolves under section 72 as prescribed in rule 1 of the Third Schedule.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M004-Q01-03",
+          "issue": "Which groups of relatives rule 1 of the Third Schedule enumerates, and in what order of priority, as the Schedule stands after the Land Development (Amendment) Act No. 11 of 2022.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M004-001",
+        "PROV-M004-004",
+        "PROV-M004-007"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M004-003",
+        "PROV-M004-005",
+        "PROV-M004-006",
+        "PROV-M004-008"
+      ],
+      "background_provision_ids": [
+        "PROV-M004-002"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps: section 170(1) excludes the general intestacy law and confines devolution to the Ordinance; section 48B(1) settles that no surviving spouse takes ahead of the Third Schedule class; section 72 then sends title to the person entitled under rule 1 of the Third Schedule. A fourth step, reading rule 1 itself, cannot be taken in this corpus.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M004-001",
+          "to_provision_id": "PROV-M004-007",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M004-004",
+          "to_provision_id": "PROV-M004-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M004-005",
+          "to_provision_id": "PROV-M004-007",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M004-003",
+          "to_provision_id": "PROV-M004-007",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M004-002",
+          "to_provision_id": "PROV-M004-004",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M004-007",
+          "to_provision_id": "PROV-M004-008",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M004-006",
+          "to_provision_id": "PROV-M004-007",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Herath intends to Mortgage his land situated in Anuradhapura which is under the Land Development Ordinance 27 of 1981 amended by the Land Development (Amendment) Act No. 11 of 2022 to a commercial Bank in Sri Lanka for Rupees Ten Million (RS. 10,000,000/).\n\nHerath passed away after the Mortgage is settled and released in 2023. He failed to appoint a successor to the said land.",
+        "enriched_background": "Herath was the owner of a two-acre high land holding at Thalawa in the Anuradhapura District, alienated to him by a grant issued under the Land Development Ordinance in 1998 and registered in his name at the Anuradhapura Land Registry. In January 2022 he mortgaged that holding to a licensed commercial bank in Sri Lanka for Rupees Ten Million (Rs. 10,000,000/-) on Mortgage Bond No. 1842 attested by a notary practising in Anuradhapura. He repaid the facility in full and a deed of release, No. 2117 dated 14 March 2023, was executed and registered, so the holding was unencumbered thereafter.\n\nHerath's wife, Kamalawathie, predeceased him in 2019, and he did not remarry. He died at Thalawa on 8 November 2023. He never executed or registered any instrument nominating a successor to the holding, and he left no last will containing a nomination. He was survived by three adult children, two sons, Nimal and Sunil, and a daughter, Kanthi, all of whom live in the Anuradhapura District. Both his parents had died before him, and he was also survived by two brothers and one sister.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M004-Q01-001",
+            "fact": "The land is a two-acre high land holding at Thalawa, Anuradhapura, alienated to Herath by a grant issued under the Land Development Ordinance in 1998 and registered in his name.",
+            "origin": "synthetic_neutral",
+            "reason": "The question presupposes that the land is held under the Ordinance but does not say whether Herath held a permit or a grant. The Chapter VII rules on nomination and on devolution under the Third Schedule are framed around the owner of a holding and the permit-holder paying instalments under section 19, so the scenario is indeterminate without this.",
+            "activates_provision_ids": [
+              "PROV-M004-002",
+              "PROV-M004-004",
+              "PROV-M004-007"
+            ],
+            "counterfactual_effect": "If Herath held only a permit and was not paying annual instalments under section 19, sections 49 and 72 as extracted would not reach him and devolution would have to be traced through the permit provisions instead.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M004-Q01-002",
+            "fact": "Herath's wife Kamalawathie predeceased him in 2019 and he did not remarry, so no spouse survived him.",
+            "origin": "synthetic_decisive",
+            "reason": "Section 48B gives a surviving spouse priority over the Third Schedule class, so whether the group of relatives takes at all turns on this fact.",
+            "activates_provision_ids": [
+              "PROV-M004-004",
+              "PROV-M004-007",
+              "PROV-M004-008"
+            ],
+            "counterfactual_effect": "If a spouse had survived, she would succeed under section 48B and the Third Schedule class would take only on her death, her remarriage, or her failure to succeed.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M004-Q01-003",
+            "fact": "Herath never executed or registered any instrument nominating a successor, and left no last will containing a nomination.",
+            "origin": "synthetic_decisive",
+            "reason": "The original text says only that he failed to appoint a successor. Chapter VII allows nomination by registered instrument or by last will, and section 72 is reached only if neither exists or the nomination fails.",
+            "activates_provision_ids": [
+              "PROV-M004-005",
+              "PROV-M004-007"
+            ],
+            "counterfactual_effect": "A valid registered nomination would carry the holding to the nominee under section 49 and the Third Schedule would never be reached.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M004-Q01-004",
+            "fact": "Herath was survived by three adult children (two sons, Nimal and Sunil, and a daughter, Kanthi), by two brothers and one sister; both his parents predeceased him.",
+            "origin": "synthetic_decisive",
+            "reason": "Rule 1 of the Third Schedule ranks groups of relatives, so the answer to who is entitled is indeterminate unless the scenario states which relatives survive.",
+            "activates_provision_ids": [
+              "PROV-M004-006",
+              "PROV-M004-007"
+            ],
+            "counterfactual_effect": "If no descendant had survived, entitlement would fall to a later group in the ranking (parents, then siblings), changing the answer.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M004-Q01-005",
+            "fact": "The mortgage was Bond No. 1842 of January 2022 and was discharged by deed of release No. 2117 dated 14 March 2023, registered before Herath's death on 8 November 2023, leaving the holding unencumbered.",
+            "origin": "synthetic_neutral",
+            "reason": "Names the instruments the original background refers to only in general terms, and fixes the death after the release, so no question of the bank's rights survives to complicate devolution.",
+            "activates_provision_ids": [
+              "PROV-M004-008"
+            ],
+            "counterfactual_effect": "If the bond had still been live at death, the successor would take subject to the mortgage, but the identity of the entitled group would be unchanged.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Herath, the owner of a holding alienated under the Land Development Ordinance, died in 2023 without nominating a successor. The issue is who is entitled to the holding, and in particular which groups of relatives rule 1 of the Third Schedule to the Ordinance identifies.",
+        "rule": "Succession to land alienated under the Land Development Ordinance is regulated entirely by that Ordinance, and no other law of intestate succession applies to such land (s.170(1)). Where the owner of a holding dies, a surviving spouse is entitled to succeed (s.48B(1)); where the owner nominated a successor, the nominee succeeds (s.49); and a nomination may only be made in favour of the spouse or of a person belonging to one of the groups of relatives enumerated in rule 1 of the Third Schedule (s.51). Where no successor has been nominated, or the nomination fails or contravenes the Ordinance, title devolves as prescribed in rule 1 of the Third Schedule (s.72), and it is deemed to devolve from the date of the owner's death where no spouse survives (s.73).",
+        "application": "Herath held the land as owner of a holding under a grant issued under the Ordinance, so Chapter VII governs its devolution and the general law of intestacy is excluded by s.170(1). He made no nomination by instrument or by last will, so s.49 cannot operate and s.72 is engaged. No spouse survived him, so the priority given to a surviving spouse by s.48B(1) does not arise and the class entitled under rule 1 of the Third Schedule takes directly, with title deemed to devolve from the date of his death in 2023 under s.73. The remaining step is to read rule 1 of the Third Schedule against the relatives who survived him. The Third Schedule is not present in the frozen corpus: the extracted Land Development Ordinance carries sections 1 to 172 but no schedule text, and the Land Development (Amendment) Act No. 11 of 2022 relied on in the question is not in the corpus either, so neither the current list of groups of relatives nor their order of priority can be verified.",
+        "conclusion": "The holding devolves under s.72 on the person entitled under rule 1 of the Third Schedule, and not on Herath's heirs under the general law of intestate succession. The list of groups of relatives that rule 1 enumerates cannot be stated from this corpus, so the answer to the question as asked is left open pending the Schedule text as amended by Act No. 11 of 2022."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M004-Q01-001",
+          "claim_text": "Succession to land alienated under the Land Development Ordinance is governed exclusively by that Ordinance; no general law of intestate succession applies (Land Development Ordinance s.170(1)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M004-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M004-Q01-002",
+          "claim_text": "On the death of the owner of a holding, a surviving spouse is entitled to succeed, and only where there was no nomination and no spouse takes does title pass to the person entitled under rule 1 of the Third Schedule (Land Development Ordinance ss.48, 48B(1)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M004-003",
+            "PROV-M004-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M004-Q01-003",
+          "claim_text": "Where the owner nominated a successor, that nominee succeeds; where no successor has been nominated, title devolves as prescribed in rule 1 of the Third Schedule (Land Development Ordinance ss.49, 72).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M004-005",
+            "PROV-M004-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M004-Q01-004",
+          "claim_text": "Rule 1 of the Third Schedule identifies the eligible persons by groups of relatives, which is also the pool from which a nomination under section 51 must be made (Land Development Ordinance s.51).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M004-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M004-Q01-005",
+          "claim_text": "Herath was the owner of a holding under a grant and made no nomination by instrument or by last will, so section 72 rather than section 49 governs the devolution of his holding.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M004-002",
+            "PROV-M004-005",
+            "PROV-M004-007"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M004-Q01-001",
+            "FACT-M004-Q01-003",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M004-Q01-006",
+          "claim_text": "Because no spouse survived Herath, the surviving-spouse route in section 48B is not engaged and the holding falls to be taken by the group of relatives entitled under rule 1 of the Third Schedule, with title deemed to devolve from the date of his death in 2023.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M004-004",
+            "PROV-M004-007",
+            "PROV-M004-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M004-Q01-002",
+            "FACT-M004-Q01-004",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M004-Q01-007",
+          "claim_text": "The specific groups of relatives listed in rule 1 of the Third Schedule, and their order of priority, cannot be stated from the frozen corpus, which contains no schedule text for the Land Development Ordinance and no text of the Land Development (Amendment) Act No. 11 of 2022.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M004-006",
+            "PROV-M004-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "Rule 1 of the Third Schedule to the Land Development Ordinance, the only provision that enumerates the groups of relatives the question asks about, is not in the frozen corpus. The extracted consolidated Ordinance records an empty schedules list and carries no schedule text, and the Land Development (Amendment) Act No. 11 of 2022 named in the question is not in the corpus as a separate instrument. The route to the Schedule (ss.170, 49, 51, 48B, 72, 73) is fully supported, but the list itself cannot be produced without inventing it.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

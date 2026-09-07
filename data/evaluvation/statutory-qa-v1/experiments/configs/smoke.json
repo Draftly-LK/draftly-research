@@ -1,0 +1,737 @@
+{
+  "run": "smoke",
+  "split": "all",
+  "timestamp": "2026-09-04T22:35:48Z",
+  "git_commit": "e491f2d26f84163ff2a82a08e7f3619051b436bb",
+  "corpus_fingerprint": "f119236b806f0ff2e3d905c120e3a7319a497e8b7eea085655ef17e34fce9d30",
+  "corpus_manifest_sha256": "8e27dde52697da5e2b41b94d6fcdad4f2a966b9f5ede71072f26b62aa871b356",
+  "public_input_sha256": "29d31616f4f72299494483c1615c3c12d77d11539d744645fdbc7da093c760f5",
+  "split_file_sha256": null,
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "embedding_query_prefix": "Represent this sentence for searching relevant passages: ",
+  "chunking": {
+    "chars": 1500,
+    "stride": 1200,
+    "max_chunks": 12
+  },
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "reranker_max_length": 512,
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "tokenizer": "[0-9a-z]+ casefold, closed-class stopwords"
+  },
+  "query_format": "normalized background (enriched where applied) + ' ' + question",
+  "overrides": {},
+  "environment": {
+    "python": "3.12.12",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.13.0+cpu",
+    "transformers": "5.15.0",
+    "sentence_transformers": "6.0.0",
+    "device": "cpu"
+  },
+  "systems": [
+    {
+      "system": "S1_bm25",
+      "config": {
+        "system": "bm25",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": false,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 0.65,
+      "mean_latency_ms": 28.3
+    },
+    {
+      "system": "S2_bm25f",
+      "config": {
+        "system": "bm25f",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 0.88,
+      "mean_latency_ms": 38.3
+    },
+    {
+      "system": "S3_dense",
+      "config": {
+        "system": "dense",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 50.09,
+      "mean_latency_ms": 2177.6
+    },
+    {
+      "system": "S4_hybrid_rrf",
+      "config": {
+        "system": "hybrid",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 0.62,
+      "mean_latency_ms": 26.8
+    },
+    {
+      "system": "S5_hybrid_rerank",
+      "config": {
+        "system": "hybrid_rerank",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 472.81,
+      "mean_latency_ms": 20555.1
+    },
+    {
+      "system": "S6_hier",
+      "config": {
+        "system": "hier",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": false,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 2.43,
+      "mean_latency_ms": 103.9
+    },
+    {
+      "system": "S7_bundle",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 62.56,
+      "mean_latency_ms": 2717.7
+    },
+    {
+      "system": "A1_no_act_routing",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": false,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 54.02,
+      "mean_latency_ms": 2348.2
+    },
+    {
+      "system": "A2_no_field_weights",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": false,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 3.73,
+      "mean_latency_ms": 161.8
+    },
+    {
+      "system": "A3_no_dense",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": false,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 17.01,
+      "mean_latency_ms": 738.7
+    },
+    {
+      "system": "A4_no_temporal",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": false,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 1.15,
+      "mean_latency_ms": 49.6
+    },
+    {
+      "system": "A5_no_defines",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 1.06,
+      "mean_latency_ms": 46.0
+    },
+    {
+      "system": "A6_no_excepts_qualifies",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 1.1,
+      "mean_latency_ms": 47.6
+    },
+    {
+      "system": "A7_no_xref_procedural",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 1.12,
+      "mean_latency_ms": 48.3
+    },
+    {
+      "system": "A8_no_amends",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 1.05,
+      "mean_latency_ms": 45.2
+    },
+    {
+      "system": "A9_no_rerank",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": false,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 0.8,
+      "mean_latency_ms": 34.5
+    },
+    {
+      "system": "A10_no_expansion",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [],
+        "temporal_filter": true,
+        "rerank": true,
+        "graph_support_weight": 0.15,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 0.85,
+      "mean_latency_ms": 36.7
+    }
+  ]
+}

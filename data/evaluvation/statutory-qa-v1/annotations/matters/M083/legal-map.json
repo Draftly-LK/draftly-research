@@ -1,0 +1,331 @@
+{
+  "benchmark_matter_id": "M083",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M083",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:56:44Z",
+    "verification_agent": "verifier-M083",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-05T00:00:00Z"
+  },
+  "matter_reference_date": "2019-10",
+  "matter_reference_date_basis": "exam_session OCTOBER 2019 recorded in candidates/matters/M083.json",
+  "corpus_gaps": [
+    "The corpus holds only the consolidated (post-2024) text of the Notaries Ordinance. Section 34, the penalty provision for breaches of the section 31 rules, was substituted by the Notaries (Amendment) Act No. 31 of 2022, so the fine figures quoted in PROV-M083-003 are later than the matter reference date of October 2019; the pre-2022 text of section 34 (as affected by the Increase of Fines Act No. 12 of 2005) is not in the corpus. Rule (1) of section 31 itself is untouched by any amendment in the corpus.",
+    "The Ordinance does not define 'employer', 'secret' or 'required to do so by law' (section 43 defines only 'Council of Legal Education', 'High Court Judge' and 'Registrar-General'). The identification of the testator as the notary's employer, and the treatment of a will as a secret, rest on the ordinary meaning of rule (1) read with the will-specific safeguards in rules (24) and (26); no corpus provision states them expressly.",
+    "Professional-conduct rules for notaries and attorneys-at-law made outside the Notaries Ordinance, and any judicial authority on the scope of the notarial duty of secrecy, are outside the frozen statutory corpus."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M083-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(1)",
+      "relevant_excerpt": "He shall not divulge the secrets confided to him or of which he becomes possessed in the execution of his office, unless with the express permission of his employer or when required to do so by law.",
+      "why_relevant": "This is the notary's statutory duty of secrecy and the direct answer to the question. Knowledge that a particular person has executed a will before the notary, and the contents of that will, is information the notary became possessed of in the execution of his office. The rule is a prohibition subject to two exhaustive exceptions - express permission of his employer, and a legal requirement to disclose - so the whole analysis turns on whether either exception is made out.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is in force from 1907. Rule (1) has not been amended: the substitutions of section 31 effected by the Notaries (Amendment) Act No. 31 of 2022 and the Notaries (Amendment) Act No. 6 of 2024 begin at rule (3), and no amendment Act in the corpus mentions rule (1) or the word 'divulge'. The text quoted therefore stood unchanged at October 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M083-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(24)",
+      "relevant_excerpt": "he shall keep a register thereof with a convenient index for the purpose of easy reference; and every such register shall be substantially in the form F in the Second Schedule, but in the case of wills and codicils only the number and date of the instrument shall be inserted in the register.",
+      "why_relevant": "Supports the reading of rule (1) as covering wills. The Ordinance singles wills and codicils out from the notary's ordinary record-keeping: even in the notary's own protocol register, only the number and date of a will may be entered, not the parties or the substance. That statutory treatment shows the confidentiality of a will is protected by the Ordinance itself and is not merely a matter of professional courtesy.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907; no amendment Act in the corpus substitutes rule (24) (the 1976, 2011, 2022 and 2024 amendment Acts do not touch it). Applicable at October 2019.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording and temporal note confirmed (rule (24) is untouched by 20-1976 s.10, 47-2011 ss.2-3, 31-2022 s.16 and 6-2024 s.3), but the why_relevant overstates it: rule (24) governs what the notary enters in his own protocol register and states no duty of non-disclosure, so it supports the answer only by analogy; role moved from supporting to background."
+    },
+    {
+      "provision_id": "PROV-M083-003",
+      "section_id": "1-1907/s34",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "34",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "rules (1), (31) or (32) set out in section 31, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate, be liable to a fine not exceeding five thousand rupees, in addition to any civil liability he may incur thereby",
+      "why_relevant": "Shows that the duty of secrecy in rule (1) is enforced by penal sanction and not merely by professional convention: a notary who divulges is liable to be convicted and fined, in addition to any civil liability. It supports the strength of the advice given, but the answer to the question would be the same without it.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus text of section 34 is the version substituted by the Notaries (Amendment) Act No. 31 of 2022, which post-dates the October 2019 matter date. The pre-2022 penalty text is not in the corpus, so the fine figure quoted here must not be treated as the figure applicable in October 2019. Recorded as supporting only; it is not indispensable and nothing in the answer turns on the amount.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim in the corpus, but the corpus body of s.34 is wholly the text substituted by 31-2022 s.17 (confirmed by reading that section), so neither the fine figure nor the paragraph structure can be attributed to October 2019; the corpus cannot establish what penalty attached to a breach of rule (1) at the matter date, and the provision is retained as supporting only."
+    },
+    {
+      "provision_id": "PROV-M083-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(26)(a)(i), proviso",
+      "relevant_excerpt": "Provided, however, that in the case of wills and codicils only the number and date of the document shall be inserted in such list",
+      "why_relevant": "Background reinforcement of the same policy: even in the monthly list of attested instruments that a notary must deliver to the Registrar of Lands, a will is entered by number and date only. The Ordinance therefore withholds the substance of a will even from a public registration officer, which tells against any suggestion that the notary may volunteer it to private inquirers.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (26) in its present form derives from the Notaries (Amendment) Law No. 20 of 1976; no amendment Act in the corpus alters this proviso after 1976. Applicable at October 2019.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The proviso is verbatim and is untouched by every amendment Act in the corpus, so it applied in October 2019; but the temporal note is wrong on the history - 20-1976 s.10 amended rules (29) and (36), not rule (26); rule (26)(a) was renumbered as (26)(a)(i) by 47-2011 s.3 and the words 'Form F' in that subparagraph were replaced by 'Form F 1' by 6-2024 s.3(8), so the surrounding corpus text of (26)(a)(i) is post-2019 even though the proviso is not."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M083-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Rule (1) of section 31 of the Notaries Ordinance states the duty of secrecy and its two exceptions in complete terms, and section 34 attaches the sanction. Once the facts show that the notary learned of the will in the execution of his office, that the testator has given no permission and that no law compels disclosure, the answer follows from the statutory text alone. No judicial gloss or Roman-Dutch doctrine is needed to reach it; the will-specific safeguards in rules (24) and (26) confirm rather than supplement the statutory rule.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M083-Q01-01",
+          "issue": "Whether knowledge that a named person has executed a will before the notary, and the contents of that will, is a secret confided to the notary or of which he became possessed in the execution of his office within rule (1) of section 31 of the Notaries Ordinance.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M083-Q01-02",
+          "issue": "Whether either exception in rule (1) applies - that is, whether the testator, as the notary's employer, has given express permission to disclose, and whether the notary is required by law to disclose to the testator's children.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M083-Q01-03",
+          "issue": "Whether the children of a living testator, having no authority from him, can stand in the place of the employer for the purpose of giving that permission.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M083-001"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M083-003"
+      ],
+      "background_provision_ids": [
+        "PROV-M083-002",
+        "PROV-M083-004"
+      ],
+      "legal_hop_count": 1,
+      "hop_count_basis": "One directly applicable provision. Rule (1) of section 31 both states the duty and contains its own two exceptions, so no external definition, exception or linked enactment has to be brought in to reach the conclusion. Rules (24) and (26) and section 34 are corroborative and penal respectively; removing any of them would not leave a required claim unsupported. Verifier: hop count of 1 confirmed - rule (1) of s.31 carries its own two exceptions, and no definition section, cross-referenced procedure or amending Act has to be brought in; PROV-M083-002 was moved from supporting to background because rule (24) is a register-content rule rather than a disclosure rule and removing it leaves no required claim unsupported.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M083-003",
+          "to_provision_id": "PROV-M083-001",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "The children of a testator inquire from the Notary as to whether he has attested a Will executed by their father. The testator is alive.",
+        "enriched_background": "Mr. D. A. Ranaweera is a notary public practising in Panadura. On 12 March 2017 he attested a Will executed before him by Mr. Piyadasa Wickramaratne of No. 42, Temple Road, Panadura, and gave it the number 4187 in his register; the protocol of that Will is still in his custody at his office. On 8 October 2019 Mr. Wickramaratne's two adult children, Nimal Wickramaratne and Kamala Wickramaratne, call at the notary's office and ask him whether their father has executed a Will before him and, if so, in whose favour it is drawn. Mr. Wickramaratne is alive, is of sound mind and manages his own affairs. He has not told the notary, orally or in writing, that his children may be given any information about the Will, and neither child holds a power of attorney or any other written authority from him. The children come of their own accord and produce no court order, summons or other legal process calling on the notary to disclose the matter, and no public officer has required the information from him.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M083-Q01-001",
+            "fact": "The notary is Mr. D. A. Ranaweera, practising in Panadura; the testator is Mr. Piyadasa Wickramaratne of No. 42, Temple Road, Panadura; the inquirers are his two adult children, Nimal and Kamala Wickramaratne.",
+            "origin": "synthetic_neutral",
+            "reason": "The question names no party. Fixing identities makes it determinate who the notary's client was and who is asking, which is what separates the employer from a third party under rule (1). It does not change the legal outcome.",
+            "activates_provision_ids": [
+              "PROV-M083-001"
+            ],
+            "counterfactual_effect": "None on the outcome. Different names would give the same answer.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M083-Q01-002",
+            "fact": "The Will was executed before and attested by the notary on 12 March 2017, was numbered 4187 in his register, and its protocol remains in his custody.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the missing instrument date and the relevant document, and establishes that the notary came by the information in the execution of his office rather than privately, which is the trigger in rule (1).",
+            "activates_provision_ids": [
+              "PROV-M083-001",
+              "PROV-M083-002"
+            ],
+            "counterfactual_effect": "If the notary had learned of the Will privately and not in the execution of his office, rule (1) would not be engaged in the same way.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M083-Q01-003",
+            "fact": "The testator has not authorised the notary, orally or in writing, to give his children any information about the Will.",
+            "origin": "synthetic_decisive",
+            "reason": "Closes the first exception in rule (1). Without this fact the scenario is indeterminate, because express permission of the employer would make disclosure lawful.",
+            "activates_provision_ids": [
+              "PROV-M083-001"
+            ],
+            "counterfactual_effect": "If the testator had expressly permitted disclosure, the notary could divulge the information and the answer would be the opposite.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M083-Q01-004",
+            "fact": "The children produce no court order, summons or other legal process requiring disclosure, and no public officer has called for the information.",
+            "origin": "synthetic_decisive",
+            "reason": "Closes the second exception in rule (1). Whether the notary is required by law to disclose is the only other route to lawful disclosure.",
+            "activates_provision_ids": [
+              "PROV-M083-001"
+            ],
+            "counterfactual_effect": "If a court had ordered production, or a law had required disclosure, the notary would be bound to disclose despite the duty of secrecy.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M083-Q01-005",
+            "fact": "The testator is alive, of sound mind, manages his own affairs, and neither child holds a power of attorney or other written authority from him.",
+            "origin": "synthetic_decisive",
+            "reason": "Rules out the children speaking for the testator. The original scenario says only that the testator is alive; this makes clear that no one but the testator can give the permission rule (1) contemplates.",
+            "activates_provision_ids": [
+              "PROV-M083-001"
+            ],
+            "counterfactual_effect": "If a child held the testator's written authority to obtain the information, the permission exception would be arguable and the analysis would change.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the notary may tell the testator's children that he has attested a Will executed by their father, and disclose what it contains, while the testator is alive and has given no permission. The issue is whether that knowledge is a secret within the notary's statutory duty of secrecy, and whether either exception to that duty is made out.",
+        "rule": "Notaries Ordinance s.31(1) makes it the duty of every notary that he shall not divulge the secrets confided to him or of which he becomes possessed in the execution of his office, unless with the express permission of his employer or when required to do so by law. The prohibition is general and the two exceptions are the only gateways out of it. That a will attested by a notary falls within this protection is borne out by the way the Ordinance itself handles wills: under s.31(24) a notary's protocol register may record only the number and date of a will or codicil, and under the proviso to s.31(26)(a)(i) the monthly list delivered to the Registrar of Lands likewise carries only the number and date of a will. Breach of rule (1) is not merely unprofessional; the s.31 rules are penally enforced by s.34 of the Ordinance, which makes a notary who disregards rule (1) guilty of an offence triable summarily before a Magistrate and liable to a fine in addition to any civil liability he may incur, although the fine figures in the consolidated text come from a 2022 amendment and were not the figures in force in October 2019.",
+        "application": "The notary learned that Mr. Wickramaratne had made a Will, and learned its contents, because the Will was executed before him and attested by him on 12 March 2017 and its protocol is in his custody. That is information of which he became possessed in the execution of his office, so s.31(1) is engaged. On the first exception, the employer for this purpose is the testator, the person at whose instance the notary acted, and he is alive and of sound mind; he has given the notary no permission, express or otherwise, to tell his children anything about the Will. The children are not the notary's employer, and holding no power of attorney or other authority from their father they cannot supply the permission on his behalf; their relationship to the testator and their expectation as prospective heirs give them no standing under the rule, and while the testator lives they have no interest in his estate at all. On the second exception, nothing requires the notary to disclose: the children come of their own accord with no court order, summons or other legal process, and no public officer has called for the information. Neither exception being made out, the general prohibition stands. It also applies to the bare fact of attestation and not only to the terms of the Will, since confirming that a named person has made a Will before him would itself divulge something the notary knows only through his office.",
+        "conclusion": "No. The notary should not divulge the information. He should decline to confirm or deny whether he has attested a Will for their father and should not disclose its contents; he may properly tell the children that he is bound to keep his client's affairs secret and that they should approach their father. The position is not permanent: if the testator himself expressly permits disclosure, or if a court or some other law requires the notary to disclose, s.31(1) allows him to speak. If he were to divulge the information now, he would expose himself to prosecution under s.34 of the Ordinance in addition to any civil liability."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M083-Q01-001",
+          "claim_text": "A notary must not divulge the secrets confided to him or of which he becomes possessed in the execution of his office, unless with the express permission of his employer or when required to do so by law.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M083-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M083-Q01-002",
+          "claim_text": "The Ordinance treats a will attested by a notary as confidential: only the number and date of a will or codicil may be entered in the notary's protocol register, and only the number and date appear in the monthly list of instruments delivered to the Registrar of Lands.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M083-002",
+            "PROV-M083-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M083-Q01-003",
+          "claim_text": "A notary who disregards the duty of secrecy in rule (1) of section 31 is guilty of an offence triable summarily before a Magistrate and liable to a fine, in addition to any civil liability, although the fine figures in the consolidated text were substituted in 2022 and are not the figures that applied in October 2019.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M083-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M083-Q01-004",
+          "claim_text": "The notary knows of the Will and its contents because it was executed and attested before him and its protocol is in his custody, so the knowledge is information of which he became possessed in the execution of his office.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M083-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M083-Q01-002",
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M083-Q01-005",
+          "claim_text": "The employer for the purpose of the permission exception is the testator, who is alive and of sound mind and has given the notary no permission to tell his children about the Will.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M083-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M083-Q01-003",
+            "FACT-M083-Q01-005",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M083-Q01-006",
+          "claim_text": "The children are not the notary's employer and, holding no authority from their father, cannot give the permission that the rule requires; their status as prospective heirs gives them no entitlement to the information while the testator lives.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M083-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M083-Q01-001",
+            "FACT-M083-Q01-005",
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M083-Q01-007",
+          "claim_text": "No law requires the notary to disclose in these circumstances: the children produce no court order, summons or other legal process, and no public officer has called for the information.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M083-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M083-Q01-004"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M083-Q01-008",
+          "claim_text": "The prohibition covers the bare fact of attestation as well as the contents, because confirming that a named person made a Will before him would itself divulge what the notary knows only through his office.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M083-001",
+            "PROV-M083-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M083-Q01-009",
+          "claim_text": "The notary should not divulge the information; he should decline to confirm or deny that he attested a Will for their father and should not disclose its contents, directing the children to their father instead.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M083-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M083-Q01-003",
+            "FACT-M083-Q01-004",
+            "FACT-M083-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M083-Q01-010",
+          "claim_text": "The notary may disclose only if the testator expressly permits it or if a law or a court requires it; if he divulges the information without either, he risks prosecution in addition to any civil liability.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M083-001",
+            "PROV-M083-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Core conclusion is sound and rests on a fully verified provision (rule (1) of s.31, unamended at the matter date), but three parts of the drafted answer go beyond the frozen corpus and need a lawyer: (a) the penalty sentence relies on s.34 as substituted by 31-2022, and the version in force in October 2019 is not in the corpus; (b) the statement that the children, as prospective heirs, 'have no interest in his estate at all' while the testator lives is a proposition of succession law with no supporting corpus provision; (c) the answer characterises rules (24) and (26) as confidentiality provisions, which is an inference from record-keeping rules rather than anything they say.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

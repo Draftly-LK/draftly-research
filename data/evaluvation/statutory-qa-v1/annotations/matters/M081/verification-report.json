@@ -1,0 +1,131 @@
+{
+  "benchmark_matter_id": "M081",
+  "verifier": "verifier-M081",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:06:17Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M081-001",
+      "decision": "verified",
+      "note": "6-1990/s37 excerpt checks verbatim; the charge sits in the closing words 'a stamp duty at the prescribed rate'. (a)-(c) are lettered paragraphs, not subsections, so the 'subsection: (a)' label reads as paragraph (a)."
+    },
+    {
+      "provision_id": "PROV-M081-002",
+      "decision": "verified",
+      "note": "6-1990/s48(1) verbatim; correctly indispensable as the section that makes 'value' the base of the duty."
+    },
+    {
+      "provision_id": "PROV-M081-003",
+      "decision": "verified",
+      "note": "Paragraph (c) of the definition of 'value' in 6-1990/s106 checks verbatim, OCR damage included. Acquisition in March 1978 puts the matter in paragraph (c) and out of paragraph (b); confirmed against the full text of s.106."
+    },
+    {
+      "provision_id": "PROV-M081-004",
+      "decision": "verified",
+      "note": "Definition of 'Transfer' verbatim; the excerpt stops before the exclusions for a deed of partition and an agreement to transfer, neither of which touches a deed of gift."
+    },
+    {
+      "provision_id": "PROV-M081-005",
+      "decision": "verified",
+      "note": "Definition of 'gift' verbatim."
+    },
+    {
+      "provision_id": "PROV-M081-006",
+      "decision": "verified",
+      "note": "Definition of 'Assessor' verbatim; s.106 separately defines 'Provincial Assessor' consistently."
+    },
+    {
+      "provision_id": "PROV-M081-007",
+      "decision": "partially_verified",
+      "note": "Wording verbatim and the role is correctly supporting, but adjudication under s.62 is optional (it runs only on the application of the person bringing the instrument), and the Rs.250 fee inside the excerpt cannot be confirmed as the October 2019 figure from this corpus."
+    },
+    {
+      "provision_id": "PROV-M081-008",
+      "decision": "verified",
+      "note": "6-1990/s63 verbatim; the excerpt stops before the penalty-relief proviso, which is immaterial to the valuation point."
+    },
+    {
+      "provision_id": "PROV-M081-009",
+      "decision": "verified",
+      "note": "6-1990/s64(1) verbatim."
+    },
+    {
+      "provision_id": "PROV-M081-010",
+      "decision": "verified",
+      "note": "6-1990/s78(2) verbatim; correctly treated as background."
+    },
+    {
+      "provision_id": "PROV-M081-011",
+      "decision": "partially_verified",
+      "note": "6-1990/s51(a) verbatim, but incidence is qualified by s.52: s.52(1) makes every person executing an unstamped instrument relating to Western Province immovable property liable to the Commissioner, s.52(3) applies notwithstanding s.51, and s.52(2) gives a right of recovery against the person liable under s.51. The map states the primary incidence without that override."
+    },
+    {
+      "provision_id": "PROV-M081-012",
+      "decision": "verified",
+      "note": "12-2006/s13 verbatim; the carve-out for instruments relating to the transfer of immovable property is correctly used as background only."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M081-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "All five indispensable provisions check verbatim and the chain s.37 read with the definition of 'Transfer', then s.48(1), then paragraph (c) of the definition of 'value' holds on the corpus text, so the hop count of 3 stands. Every claim rests on a cited provision or a background fact and none cites case law. Retained as proposed_gold, subject to the temporal point and the Rs.120,000 point below."
+    },
+    {
+      "benchmark_question_id": "M081-Q02",
+      "research_status_before": "blocked_missing_authority",
+      "research_status_after": "blocked_missing_authority",
+      "authority_requirement_after": "statute_only",
+      "note": "The block is confirmed independently: grep for 'per centum', 'rate of stamp duty' and 'prescribed rate' across the whole corpus returns no Western Province rate instrument or schedule, s.106 defines neither 'prescribed' nor 'improvements', and 12-2006 ss.3-4 do not reach a conveyance or a deed of gift. block_reason was corrected: the power to prescribe is s.77(1)(a), not ss.76 and 77 as written; s.76 deals with the description of stamps and with reciprocal exemptions."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "rate_making_power_miscited",
+      "researcher_position": "The Western Province stamp duty rate is fixed by subsidiary instrument under ss.76 and 77 of Statute No. 6 of 1990.",
+      "verifier_position": "s.76 empowers the Minister to specify the description of stamps to be used and to extend the s.39(4) exemption to other governments; the power to prescribe is s.77(1)(a). The conclusion that the rate lies outside the corpus is unaffected. Corrected in block_reason; the same wording remains in corpus_gaps, which is outside the verifier's edit scope.",
+      "supporting_sources": ["6-1990/s37", "6-1990/s76", "6-1990/s77"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "incidence_stated_without_override",
+      "researcher_position": "Duty on the Deed of Gift is payable by the grantee under s.51(a) unless the deed provides otherwise.",
+      "verifier_position": "Correct as to primary incidence but incomplete: under s.52(1) and (3) every person executing the instrument, including the donor, is liable to the Commissioner if it is not duly stamped, notwithstanding s.51, with recovery under s.52(2).",
+      "supporting_sources": ["6-1990/s51", "6-1990/s52"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M081-Q01-003 is marked support_strength 'direct' on s.48(1), but s.48(1) says only that duty is calculated on the value of the property conveyed. The added words 'not on the consideration recited in the instrument' are an inference, backed indirectly by s.48(2) and by the definition of 'value' turning on the Assessor's opinion. The claim is sound; its strength reads better as inferential."
+    ],
+    "temporal_issues": [
+      "The corpus copy of Statute No. 6 of 1990 is a consolidated edition with in_force_from_year 1990, latest_change_year null and no amendment events, and the corpus holds no Western Province amending statute. Nothing inside the corpus confirms that ss.37, 48, 51 and 106 read in October 2019 as they read here. The map discloses this in corpus_gaps and in each temporal note; it is unresolved for both questions rather than a defect in the research.",
+      "The Rs.250 adjudication fee quoted from s.62 in PROV-M081-007 is the 1990 consolidated figure and cannot be confirmed for October 2019. Neither gold answer relies on it."
+    ],
+    "missing_definitions_or_exceptions": [
+      "s.52 (liability of other parties for stamp duty) is absent from the map. It overrides s.51 where the instrument is not duly stamped and is the qualification to the Q02 incidence claim.",
+      "s.79 (appeal to the Provincial Commissioner against an opinion given under s.62) is absent from the map. It is the remedy if the Assessor's valuation is disputed, so it is a natural supporting provision for Q01, though not indispensable to how the Assessor arrives at the value.",
+      "The Statute defines neither 'prescribed' nor 'improvements'; both were checked with defs against 6-1990. The absence of a definition of 'prescribed' is part of what confirms the Q02 rate gap.",
+      "s.48(3) (gift subject to a reservation) and s.39 (exemptions) were re-read in full and are correctly excluded: the facts disclose no reservation and no exemption covers a gift between private individuals."
+    ],
+    "case_law_dependence": [
+      "Neither gold answer cites case law and neither needs it. One caveat: the premise that the Western Provincial Council and not the national Commissioner-General taxes this deed rests ultimately on constitutional devolution, which is outside the corpus. The question supplies that premise by naming an Assessor attached to the Western Provincial Council, and 12-2006/s13 is consistent with it, so statute_only stands for both questions."
+    ],
+    "enrichment_issues": [
+      "No enrichment was applied to either question, which is correct: both items are Tier A with candidate_action 'keep', and the shared background already supplies the acquisition date, the purchase price, the construction cost and the present market value."
+    ],
+    "duplicate_or_leak_issues": [
+      "The two questions share PROV-M081-001 to 005 and 012, which is expected for two parts of one exam question; Q01 answers the valuation method and Q02 the amount and the incidence, so the gold answers are not duplicates.",
+      "No statute name, section number or conclusion is leaked into any background text, since no facts were added."
+    ]
+  },
+  "lawyer_questions": [
+    "May the Rs.120,000 paid on the March 1978 purchase stand as the Assessor's opinion of the open-market price of the land on the date of acquisition under limb (i) of paragraph (c) of the definition of 'value' in s.106, so that the chargeable value is Rs.3,020,000? The statute asks for the Assessor's opinion, not the deed figure, and the whole Rs.3,020,000 answer depends on treating the two as the same.",
+    "Did ss.37, 48, 51 and 106 of Statute No. 6 of 1990 read in October 2019 as they read in the consolidated edition held in this corpus, and what was the prescribed rate for an instrument transferring immovable property in the Western Province at that date?",
+    "Should the Q02 answer on incidence record the s.52 override alongside s.51(a)?"
+  ]
+}

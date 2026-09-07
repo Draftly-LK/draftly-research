@@ -1,0 +1,859 @@
+{
+  "benchmark_matter_id": "M092",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M092",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T23:07:21Z",
+    "verification_agent": "verifier-M092",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T23:22:31Z"
+  },
+  "matter_reference_date": "2019-04",
+  "matter_reference_date_basis": "exam_session APRIL 2019 recorded in candidates/matters/M092.json",
+  "corpus_gaps": [
+    "The Judicature Act No. 2 of 1978 and the ministerial orders that delimit judicial zones and judicial divisions are not in the corpus, so the corpus cannot settle whether Mount Lavinia falls inside or outside the area specified in a warrant expressed as 'Colombo'. The territorial point is carried by an added scenario fact (FACT-M092-Q01-002) rather than by any corpus provision.",
+    "The corpus holds only the current consolidated text of Prevention of Frauds Ordinance s.4 (as replaced by Act No. 30 of 2022) and of several rules in Notaries Ordinance s.31 (as amended by Act No. 47 of 2011, Act No. 31 of 2022 and Act No. 6 of 2024). The text in force in April 2019 is not separately held, so pre-2022 wording had to be reconstructed from the recorded amendment_events rather than read.",
+    "Wills Ordinance s.2 in the corpus is the text substituted by Act No. 29 of 2022; the April 2019 text of the testamentary-capacity provision is not available, so it is recorded as background only.",
+    "The Second Schedule Form E attestation form referred to in Notaries Ordinance s.31 rule (21) is not reproduced as a searchable section in the corpus.",
+    "No provision in the corpus creates a privileged, non-notarial or emergency mode of executing a will for a testator who cannot travel, apart from the soldiers' and mariners' exception in Prevention of Frauds Ordinance s.14, which does not apply here.",
+    "Verifier: sections 3(1), 4(2) and 4A of the Notaries Ordinance tie the area of a notary's warrant to the judicial zone in which he resides, but no instrument delimiting judicial zones is in the corpus, so the corpus states the rule that decides this matter without supplying what is needed to apply it.",
+    "Verifier: rule (10) of Notaries Ordinance s.31 was repealed by Act No. 6 of 2024 s.3(4) and the consolidated text in the corpus omits it, so a rule that was in force in April 2019 cannot be read."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M092-001",
+      "section_id": "7-1840/s4",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "4",
+      "subsection": "(1)",
+      "relevant_excerpt": "No will, testament, or codicil containing any devise of land or other immovable property, or any bequest of movable property, or for any other purpose whatsoever, shall be valid unless it shall be in writing and executed subject to the provisions specified in subsection (2);",
+      "why_relevant": "Sets the validity condition for every will: it must be in writing and executed in the prescribed manner. It is the provision that makes the mode of execution a question of validity rather than of good practice.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1840. The corpus text is the version substituted by the Prevention of Frauds (Amendment) Act No. 30 of 2022, which post-dates 2019-04; the requirement that a will be in writing and executed in the prescribed manner was, however, the substance of the section long before the matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim of the current text, but the renumbering as subsection (1) and the closing words ‘subject to the provisions specified in subsection (2)’ were made by Prevention of Frauds (Amendment) Act No. 30 of 2022 s.3(1)-(2); in April 2019 the section read ‘executed in the manner hereinafter mentioned’ and that repealed wording is not in the corpus."
+    },
+    {
+      "provision_id": "PROV-M092-002",
+      "section_id": "7-1840/s4",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "4",
+      "subsection": "(2)",
+      "relevant_excerpt": "The testator shall - (a) sign; and (b) affix his left or right thumb impression, at the foot or end of the will, testament or codicil referred to in subsection (1), before a notary public and two witnesses who shall be present at the same time",
+      "why_relevant": "Fixes the three actors who must be together at one time for a valid will: the testator signing at the foot or end, a notary public, and two witnesses. This is why execution cannot happen by post, by proxy or in stages, and therefore why someone must travel to the bedridden testator.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The requirement of signature at the foot or end before a notary public and two witnesses present at the same time was in force in April 2019. The additional thumb-impression requirement in paragraph (b) and its proviso were introduced by Act No. 30 of 2022 and did NOT apply at the matter date; the excerpt is relied on only for the signature, notary and two-witnesses-present-together elements.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Confirmed against 30-2022 s.3(3): the whole of subsection (2) was added in 2022 and the pre-2022 words prescribing the manner of execution were repealed by the same section, so the April 2019 requirement of signature at the foot or end before a notary and two witnesses present together is a reconstruction that cannot be read anywhere in the corpus."
+    },
+    {
+      "provision_id": "PROV-M092-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (22)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice",
+      "why_relevant": "The decisive constraint. A notary's competence to attest is territorial: he may not attest anywhere outside the area named in his warrant. A will attested at the testator's home outside that area is attested in breach of this rule.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (22) is part of the original 1907 rules and is not among the rules recorded as substituted by the 2011, 2022 or 2024 amending Acts; treated as in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (12)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+      "why_relevant": "Makes simultaneous physical presence of testator, both witnesses and the notary a notarial duty as well as a validity requirement, so the whole signing must happen in one sitting at the testator's bedside.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Original 1907 rule, not recorded as substituted by any amending Act in the corpus; treated as in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-005",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (8)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument to which at least two witnesses have not subscribed their signatures in letters.",
+      "why_relevant": "Requires two witnesses who sign in letters, which matches the two witnesses demanded by the Prevention of Frauds Ordinance and settles that a mark alone from a witness is not enough.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Original 1907 rule, not recorded as substituted by any amending Act in the corpus; treated as in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-006",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (11)",
+      "relevant_excerpt": "unless and until he shall have read over and explained the same, or caused the same to be explained, in the presence and hearing of such person and, except in the case of wills and codicils, in the presence of the attesting witnesses.",
+      "why_relevant": "Governs reading over where the executant cannot read or asks for it, and carries the express exception for wills and codicils: the reading need not be done in the presence of the attesting witnesses, which protects the confidentiality of the testator's dispositions.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Original 1907 rule with the wills exception; not recorded as substituted by any amending Act in the corpus; treated as in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-007",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20) and rule (20)(a)",
+      "relevant_excerpt": "He shall without delay duly attest every deed or instrument which shall be executed or acknowledged before him, and shall sign and seal such attestation. In such attestation he shall state- (a) that the said deed or instrument was signed by the party and the witnesses thereto in his presence and in the presence of one another;",
+      "why_relevant": "Requires the notary to draw, sign and seal an attestation recording that the testator and both witnesses signed in his presence and in the presence of one another. The attestation is the instrument's own proof that the statutory mode of execution was followed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The rule (20) chapeau and paragraph (a) are long-standing; the corpus records substitutions to parts of rule (20) by Act No. 31 of 2022 and Act No. 6 of 2024, so the exact 2019 wording of the later paragraphs is uncertain and is not relied on here.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-008",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (18)",
+      "relevant_excerpt": "He shall correctly insert in letters in every deed or instrument executed before him the day, month, and year on which and the place where the same is executed, and shall sign the same.",
+      "why_relevant": "The notary must state the true place of execution in letters. He cannot cure a territorial problem by recording a place inside his own area when the will was in fact signed elsewhere, so this rule locks rule (22) in place.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Original 1907 rule, not recorded as substituted by any amending Act in the corpus; treated as in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-009",
+      "section_id": "1-1907/s11",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "11",
+      "subsection": null,
+      "relevant_excerpt": "The Minister may on application made in that behalf grant to a notary, having a warrant authorizing him to practice within a judicial zone, a fresh warrant authorizing him to practice within another judicial zone.",
+      "why_relevant": "The only route in the corpus by which this notary himself could become competent to attest in the testator's area, and the reason the answer is either a fresh warrant or a different notary rather than a flat impossibility.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by the Notaries (Amendment) Law No. 20 of 1976, well before the matter date; in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-010",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (9)",
+      "relevant_excerpt": "he shall satisfy himself, before accepting them as witnesses, that they are persons of good repute and that they are well acquainted with the executant and know his proper name, occupation, and residence",
+      "why_relevant": "Constrains who may be used as the two witnesses at a bedside execution: people of good repute who genuinely know the testator, not whoever happens to be in the house.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The good-repute and acquaintance limb quoted here is long-standing. The identity-document limb of rule (9), covering the national identity card, passport bio-page and driving licence, was introduced by later amendments recorded in the corpus and is not relied on for April 2019.",
+      "verification_status": "partially_verified",
+      "verifier_note": "In April 2019 the quoted duty was introduced by the words ‘and in the latter case, he shall satisfy himself’, which Act No. 6 of 2024 s.3(3) replaced with ‘he shall’; at the matter date the good-repute and acquaintance duty therefore applied where the executant was known to the notary through the two attesting witnesses, not unconditionally as the excerpt now reads."
+    },
+    {
+      "provision_id": "PROV-M092-011",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (21)",
+      "relevant_excerpt": "Every such attestation shall be substantially in the form E in the Second Schedule, and shall be legibly signed by him in the language in which the deed or instrument is written",
+      "why_relevant": "Prescribes the form and language of the attestation the notary must sign at the bedside.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Original 1907 rule, not recorded as substituted by any amending Act in the corpus; treated as in force in April 2019. Form E itself is not reproduced as a searchable section in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-012",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (24)",
+      "relevant_excerpt": "He shall carefully preserve as his protocol a draft or copy of every deed or instrument executed or acknowledged before him, to which shall be attached his signature and those of the party and witnesses to the original deed or instrument",
+      "why_relevant": "The protocol obligation applies to wills as well, and the same rule limits the register entry for a will to its number and date, which is how the notary's record-keeping duty is reconciled with testamentary secrecy.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Original 1907 rule, not recorded as substituted by any amending Act in the corpus; treated as in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-013",
+      "section_id": "1-1907/s34",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "34",
+      "subsection": "(1)(c)",
+      "relevant_excerpt": "any other rule set out in section 31, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate, be liable to a fine not exceeding fifty thousand rupees, in addition to any civil liability he may incur thereby.",
+      "why_relevant": "Shows the consequence for the notary personally if he attests outside his area: rule (22) is not in the lighter penalty lists in paragraphs (a) and (b), so it falls into the residual paragraph (c).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The corpus carries the consolidated text including fine levels raised by later amendments; the fine figures may differ from those in force in April 2019, so the provision is used for the fact of criminal liability, not for the amount.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Section 34 was repealed and replaced by Notaries (Amendment) Act No. 31 of 2022 s.17, so the paragraph lettering, the rule lists in paragraphs (a) and (b) and the fine levels are all 2022 text; the April 2019 section is not in the corpus, so the inference that rule (22) falls into the residual paragraph (c) cannot be read off the law in force at the matter date."
+    },
+    {
+      "provision_id": "PROV-M092-014",
+      "section_id": "1-1907/s33",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "33",
+      "subsection": null,
+      "relevant_excerpt": "No instrument shall be deemed to be invalid by reason only of the failure of any notary to observe any provision of any rule set out in section 31 in respect of any matter of form",
+      "why_relevant": "Separates the two consequences that this scenario mixes together. Breach of a section 31 rule of form does not by itself void the instrument, but the proviso keeps intact any invalidity arising under another written law, which is where the Prevention of Frauds Ordinance requirements bite.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Original 1907 section, not recorded as amended in the corpus; treated as in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-015",
+      "section_id": "7-1840/s11",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "11",
+      "subsection": null,
+      "relevant_excerpt": "If any person shall attest the execution of any will, testament, or codicil to whom or to whose wife or husband any beneficial devise, legacy, estate, interest, gift, disposition, or appointment of or affecting any immovable or movable property (other than and except charges and directions for the payment of any debt or debts) shall be thereby given or made, such devise, legacy, estate, interest, gift, disposition, or appointment shall, so far only as concerns such person attesting the execution of such will",
+      "why_relevant": "A bedside execution tempts the notary to use family members present in the house as witnesses. This section makes any benefit under the will void as against an attesting witness or that witness's spouse, so the choice of witnesses is a substantive matter, not a formality.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Original 1840 section, not recorded as amended in the corpus; treated as in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-016",
+      "section_id": "1-1907/s9",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "9",
+      "subsection": null,
+      "relevant_excerpt": "Every notary shall be bound to have his office within the area specified in his warrant; and any notary infringing this provision shall be liable to have his warrant withdrawn by the Minister.",
+      "why_relevant": "Context for the notary's residence at Battaramulla: where he lives is regulated only through the location of his office, and it is the area specified in the warrant, not his residence, that fixes where he may attest.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Original 1907 section, not recorded as amended in the corpus; treated as in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-017",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (36)(c)",
+      "relevant_excerpt": "The taking of instructions for or signature to a deed or instrument shall not be a good cause for absence from office, unless the person whose instructions or signature is to be taken is believed to be on the point of death.",
+      "why_relevant": "Background showing that the Ordinance contemplates a notary going out to a person who cannot come to him, while treating that as exceptional. It applies only to notaries who are not attorneys-at-law.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of the additional rules for notaries who are not attorneys-at-law; not recorded as substituted by any amending Act in the corpus; treated as in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-018",
+      "section_id": "17-1852/s2",
+      "act_id": "17-1852",
+      "formal_title": "Deeds and Documents (Execution before Public Officers) Ordinance",
+      "number_and_year": "No. 17 of 1852",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "Every writing, deed, or instrument which by section 2 of the Prevention of Frauds Ordinance is required to be executed in the manner therein mentioned in order to its validity, shall, if made after this Ordinance shall come into operation, be valid and effectual, so far as relates to the execution thereof, if the same be signed by the party making the same or by some person lawfully authorized by him, and by two or more witnesses present at the same time, in the presence of some District Judge",
+      "why_relevant": "Recorded because it is the obvious alternative to look for and it fails: the substitute execution before a District Judge or authorised Justice of the Peace is offered only for instruments required to be executed under section 2 of the Prevention of Frauds Ordinance, not for wills under section 4 of that Ordinance.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Original 1852 section, not recorded as amended in the corpus; treated as in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M092-019",
+      "section_id": "21-1844/s2",
+      "act_id": "21-1844",
+      "formal_title": "Wills Ordinance",
+      "number_and_year": "No. 21 of 1844",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "It shall be lawful for any person who has reached the age of eighteen years and residing within or outside Sri Lanka to execute a will bequeathing and disposing any movable and immovable property",
+      "why_relevant": "Background on testamentary capacity and the freedom to dispose. It confirms that the client's problem is one of execution, not of capacity to make a will at all.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus text is the version repealed and substituted by Act No. 29 of 2022, which post-dates the matter date of 2019-04. The April 2019 wording is not in the corpus, so this provision is used as background only and is not relied on for any operative step.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim of the text substituted by Act No. 29 of 2022; the April 2019 text is not in the corpus, so the provision cannot support even a background statement about testamentary capacity as at the matter date."
+    },
+    {
+      "provision_id": "PROV-M092-020",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20)(h)",
+      "relevant_excerpt": "in the case of a will- (i) set out in the attestation of the will that the testator was in good and sound mind to execute the will; and (ii) enter in the deed register maintained by him, the number assigned to such will, the date and the name of the testator.",
+      "why_relevant": "The will-specific content of a notarial attestation in the current law: a statement that the testator was of sound mind, plus a limited register entry.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Recorded in the corpus among the parts of rule (20) substituted by the Notaries (Amendment) Act No. 31 of 2022 and the Notaries (Amendment) Act No. 6 of 2024, both later than 2019-04. It is therefore not treated as indispensable and is flagged for the verifier.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording verified and the temporal finding confirmed against 31-2022 s.16(11)(d), which inserted paragraph (h); because it was not in force in April 2019 it has been moved from supporting to background and its reasoning edge to PROV-M092-007 removed."
+    },
+    {
+      "provision_id": "PROV-M092-901",
+      "section_id": "1-1907/s4A",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "4A",
+      "subsection": null,
+      "relevant_excerpt": "Every warrant issued to a notary under the provisions of section 3* or section 4* authorizing him to practice as a notary in any judicial division in which he resides, shall be deemed to authorize him to practice as a notary in the judicial zone in which he resides.",
+      "why_relevant": "Measures the area that rule (22) protects. Read with section 3(1) and section 4(2), which entitle a notary to a warrant for the judicial zone in which he resides, this section deems a warrant expressed for a judicial division to authorise practice throughout the judicial zone of the notary residence. It is therefore the provision that decides whether a warrant expressed as \"Colombo\", held by a notary residing at Battaramulla, reaches Mount Lavinia, and the researcher treated that question as a scenario fact instead.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by the Notaries (Amendment) Law No. 20 of 1976 s.4 and not amended since; in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked as a verbatim substring of 1-1907/s4A."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M092-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "How a will may lawfully be executed in Sri Lanka is fixed entirely by written law: section 4 of the Prevention of Frauds Ordinance sets the validity conditions, and section 31 of the Notaries Ordinance sets the notary's duties, including the territorial limit in rule (22), with section 11 supplying the cure. No judicial authority or Roman-Dutch doctrine is needed to state the mode of execution or the territorial restriction. The only non-statutory input is the geography of judicial zones, which is supplied as a scenario fact rather than as law. Verifier: the classification statute_only is kept, because no case law or Roman-Dutch doctrine is needed. The geography of judicial zones is not a scenario fact, however, but the effect of section 4A of the Notaries Ordinance and of orders made under the Judicature Act, which are outside this corpus.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M092-Q01-01",
+          "issue": "What formalities must be satisfied for the client's last will to be validly executed.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M092-Q01-02",
+          "issue": "Whether a notary whose warrant covers one area may attest a will at the testator's home in another area, and what follows for the notary and for the instrument if he does.",
+          "status": "disputed"
+        },
+        {
+          "issue_id": "ISS-M092-Q01-03",
+          "issue": "By what lawful means the will can still be executed when the testator is bedridden and cannot travel to the notary.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M092-Q01-04",
+          "issue": "What the notary must do at the bedside signing itself: choice of witnesses, simultaneous presence, reading over, attestation, place and date, and protocol.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M092-001",
+        "PROV-M092-002",
+        "PROV-M092-003",
+        "PROV-M092-004",
+        "PROV-M092-005",
+        "PROV-M092-007",
+        "PROV-M092-008",
+        "PROV-M092-009",
+        "PROV-M092-901"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M092-006",
+        "PROV-M092-010",
+        "PROV-M092-011",
+        "PROV-M092-012",
+        "PROV-M092-013",
+        "PROV-M092-014",
+        "PROV-M092-015"
+      ],
+      "background_provision_ids": [
+        "PROV-M092-016",
+        "PROV-M092-017",
+        "PROV-M092-018",
+        "PROV-M092-019",
+        "PROV-M092-020"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across two enactments: (1) Prevention of Frauds Ordinance s.4(1) and (2) require the will to be in writing and signed at the foot or end before a notary and two witnesses present at the same time; (2) Notaries Ordinance s.31 rules (8), (12), (18) and (20) fix how that single sitting must be conducted and recorded; (3) rule (22) limits which notary may attest at the place where the sitting must happen, which in turn engages s.11 as the cure. Only these are counted; the witness-competence, penalty and formality provisions are supporting. Verifier: the count stays at three, but step (3) now runs through s.4A (PROV-M092-901), which fixes the area a warrant covers before rule (22) can be applied to it.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M092-001",
+          "to_provision_id": "PROV-M092-002",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M092-002",
+          "to_provision_id": "PROV-M092-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M092-002",
+          "to_provision_id": "PROV-M092-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M092-003",
+          "to_provision_id": "PROV-M092-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M092-008",
+          "to_provision_id": "PROV-M092-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M092-009",
+          "to_provision_id": "PROV-M092-003",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M092-002",
+          "to_provision_id": "PROV-M092-007",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M092-010",
+          "to_provision_id": "PROV-M092-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M092-006",
+          "to_provision_id": "PROV-M092-004",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M092-011",
+          "to_provision_id": "PROV-M092-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M092-013",
+          "to_provision_id": "PROV-M092-003",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M092-014",
+          "to_provision_id": "PROV-M092-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M092-015",
+          "to_provision_id": "PROV-M092-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M092-901",
+          "to_provision_id": "PROV-M092-003",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "The notary is licensed to practice in Colombo. He lives in Battaramulla. He is employed to draw up the Last Will of his client who lives in Mt Lavinia. The client is not able to leave Mt lavinia as he is bedridden.",
+        "enriched_background": "Mr. Nuwan Rajapaksha is an attorney-at-law and notary public. His warrant authorises him to practise as a notary in Colombo, and the area specified in that warrant does not extend to Mount Lavinia. He lives in Battaramulla and keeps his notarial office at his residence. In March 2019 he was employed by Mr. Piyasena Silva, aged 74, of No. 12, Sea Breeze Lane, Mount Lavinia, to draw up Mr. Silva's last will. Mr. Silva has been bedridden since a stroke in 2018 and cannot be moved from his house at Mount Lavinia, but he is fully conscious, alert and able to read, speak and write his usual signature, and his doctor has certified that he understands his affairs. Mr. Rajapaksha drew the will himself. It is a single instrument, written in Sinhala on one sheet, leaving Mr. Silva's house at Mount Lavinia to his daughter and his bank deposits to his son, and the parties propose that it be signed on 15 May 2019 at Mr. Silva's bedside. Two neighbours, Mr. Ariyadasa and Mrs. Fernando, have known Mr. Silva for over twenty years, are willing to attend at the bedside as witnesses and take no benefit under the will; Mr. Silva's daughter and son are also in the house that day. Mrs. Nirmali Perera is a notary public whose warrant authorises her to practise in the area in which Mount Lavinia lies.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M092-Q01-001",
+            "fact": "The notary is named Mr. Nuwan Rajapaksha, an attorney-at-law and notary public who keeps his notarial office at his residence in Battaramulla; the client is Mr. Piyasena Silva, aged 74, of No. 12, Sea Breeze Lane, Mount Lavinia.",
+            "origin": "synthetic_neutral",
+            "reason": "The matter file records party_identity as a missing fact type. Names, an address and the location of the notarial office make the scenario concrete without changing any statutory condition.",
+            "activates_provision_ids": [
+              "PROV-M092-016"
+            ],
+            "counterfactual_effect": "None on the outcome. Different names, or a different office address within the warrant area, would not alter the analysis.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M092-Q01-002",
+            "fact": "The area specified in Mr. Rajapaksha's warrant does not extend to Mount Lavinia, and Mrs. Nirmali Perera is a notary public whose warrant authorises her to practise in the area in which Mount Lavinia lies.",
+            "origin": "synthetic_decisive",
+            "reason": "The original scenario says only that the notary is licensed for Colombo and the client is at Mount Lavinia. Whether Mount Lavinia falls inside or outside the area named in the warrant is what decides the question, and the corpus contains no instrument delimiting judicial zones, so it must be supplied as a scenario fact. Naming an available notary for the client's area makes the alternative route determinate.",
+            "activates_provision_ids": [
+              "PROV-M092-003",
+              "PROV-M092-008",
+              "PROV-M092-009",
+              "PROV-M092-013"
+            ],
+            "counterfactual_effect": "If Mount Lavinia were inside the area specified in the warrant, the territorial bar would fall away entirely and Mr. Rajapaksha could attend at the bedside and attest the will himself, leaving only the ordinary execution formalities in issue.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M092-Q01-003",
+            "fact": "The will is a single instrument written in Sinhala on one sheet, drawn by Mr. Rajapaksha himself, leaving the client's house at Mount Lavinia to his daughter and his bank deposits to his son.",
+            "origin": "synthetic_neutral",
+            "reason": "The matter file records relevant_document as a missing fact type. Identifying the instrument as a single self-drawn will in one language and on one sheet removes side issues about drafting certificates, multiple sheets and language competence.",
+            "activates_provision_ids": [
+              "PROV-M092-001",
+              "PROV-M092-011"
+            ],
+            "counterfactual_effect": "If the will had been drawn by another person, or written in a language the notary is not authorised to practise in, further rules on drafting certificates and language would be engaged and could bar this notary independently of the territorial point.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M092-Q01-004",
+            "fact": "The will is to be signed on 15 May 2019 at the client's bedside, the notary having been employed in March 2019.",
+            "origin": "synthetic_neutral",
+            "reason": "The matter file records instrument_date as a missing fact type. A date close to the April 2019 exam session fixes which version of the law applies and makes the temporal check meaningful.",
+            "activates_provision_ids": [
+              "PROV-M092-008"
+            ],
+            "counterfactual_effect": "A date after 2022 would bring in the later amendments to the Prevention of Frauds Ordinance and to the notarial rules, including the thumb-impression requirement, and would change the list of formalities.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M092-Q01-005",
+            "fact": "The client is fully conscious, alert, able to read, speak and sign his usual signature, and his doctor has certified that he understands his affairs; he simply cannot be moved from his house.",
+            "origin": "synthetic_decisive",
+            "reason": "The original scenario says only that the client is bedridden, which leaves open whether the obstacle is physical or a want of capacity. Fixing it as purely physical is what makes the question one about where and by whom the will may be executed rather than about whether it may be made at all.",
+            "activates_provision_ids": [
+              "PROV-M092-002",
+              "PROV-M092-004",
+              "PROV-M092-006",
+              "PROV-M092-019"
+            ],
+            "counterfactual_effect": "If the client could not understand or sign, the analysis would shift to capacity and to signing by mark, and the mode of execution described here would not be available in the same form.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M092-Q01-006",
+            "fact": "Two neighbours, Mr. Ariyadasa and Mrs. Fernando, have known the client for over twenty years, are willing to attend at the bedside and take no benefit under the will, while the client's daughter and son, who are beneficiaries, are also in the house that day.",
+            "origin": "synthetic_decisive",
+            "reason": "A bedside execution needs two witnesses present at the same time who are competent and disinterested. Supplying both a compliant pair and an interested pair present in the house makes the witness-selection issue determinate.",
+            "activates_provision_ids": [
+              "PROV-M092-005",
+              "PROV-M092-010",
+              "PROV-M092-015"
+            ],
+            "counterfactual_effect": "If the daughter and son were used as the attesting witnesses, the benefits given to them under the will would be void as against them, even though the will itself could still be executed.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "How, if at all, can the client's last will be lawfully executed when the notary employed to draw it holds a warrant for an area that does not extend to Mount Lavinia, while the testator is bedridden at Mount Lavinia and cannot travel to the notary? Three questions follow: what the statutory mode of executing a will is; whether this notary may attest at the testator's bedside; and what the correct course is if he may not.",
+        "rule": "A will is valid only if it is in writing and executed in the prescribed manner (Prevention of Frauds Ordinance s.4(1)), and the prescribed manner is that the testator signs at the foot or end of the instrument before a notary public and two witnesses who are all present at the same time (s.4(2)). The Notaries Ordinance then regulates the sitting. The notary may not attest unless at least two witnesses have subscribed their signatures in letters (s.31 rule (8)); the testator and the witnesses must sign in his presence and in the presence of one another, and he must sign in their presence (rule (12)); he must satisfy himself that the witnesses are of good repute and well acquainted with the testator (rule (9)); where the testator cannot read or asks for the instrument to be read, it must be read over and explained to him, though in the case of a will this need not be done in the presence of the attesting witnesses (rule (11)); he must insert in letters the day, month and year and the place of execution (rule (18)); and he must without delay attest, sign and seal the instrument, stating that the testator and the witnesses signed in his presence and in the presence of one another (rule (20) and (20)(a)), substantially in Form E of the Second Schedule (rule (21)), keeping the draft or copy as his protocol (rule (24)). Cutting across all of this, a notary shall not authenticate or attest any instrument in any area other than that in which he is authorised to practise (s.31 rule (22)). The Minister may grant a notary holding a warrant for one judicial zone a fresh warrant for another (s.11). Breach of rule (22) is an offence punishable on summary trial in addition to civil liability (s.34(1)(c)), and although an instrument is not void merely for a notarial failure in a matter of form (s.33), that saving does not cure invalidity arising under another written law. Finally, a beneficial gift to an attesting witness or to that witness's spouse is void as against that person (Prevention of Frauds Ordinance s.11), and the alternative of executing before a District Judge or an authorised Justice of the Peace under the Deeds and Documents (Execution before Public Officers) Ordinance s.2 is offered only for instruments required to be executed under s.2 of the Prevention of Frauds Ordinance and so is not available for a will.",
+        "application": "Because the testator must sign before the notary and two witnesses all present together, and because he cannot be moved from his house, the signing must take place at his bedside at Mount Lavinia; there is no statutory route by which the notary can attest from a distance or in stages. That fixes the place of execution outside the area specified in this notary's warrant, and rule (22) forbids him to attest there. He cannot escape the difficulty by recording a place inside his own area, because rule (18) obliges him to insert the true place of execution in letters, and the attestation he must sign under rule (20) records the same. His residence at Battaramulla makes no difference, since it is the area named in the warrant, and not where he lives, that measures his competence to attest; s.9 regulates his residence only through the location of his office. If he nevertheless attests at the bedside he commits an offence under s.34(1)(c), and while s.33 would protect the will from being treated as void for a mere matter of form, the breach is of his territorial competence rather than of form, so the safe course cannot rest on that saving. Two lawful routes remain. Either he applies to the Minister under s.11 for a fresh warrant covering the area in which Mount Lavinia lies, which changes his competence prospectively but not in time for a signing fixed for 15 May 2019, or the will he drew is executed before a notary whose warrant covers that area, such as Mrs. Perera. At that bedside sitting the testator, being alert and able to sign, signs at the foot or end of the will; the two neighbours, who have known him for over twenty years and take nothing under the will, sign as witnesses in letters in his presence and in the presence of one another and of the notary, who then signs in their presence. The daughter and the son should not be used as witnesses even though they are in the house, because a gift to an attesting witness is void as against that witness. The will is read over and explained to the testator, which for a will need not be done in front of the witnesses, and the notary then attests without delay in Form E, stating the true date and place of execution, and preserves the protocol.",
+        "conclusion": "The will can be executed, but not by this notary at the testator's bedside. Since the testator cannot travel and the signing must therefore occur at Mount Lavinia, which lies outside the area specified in his warrant, the notary who drew the will is barred by s.31 rule (22) of the Notaries Ordinance from attesting it there and would be criminally liable if he did. The will he has drawn should be executed at the bedside before a notary whose warrant covers the area in which Mount Lavinia lies, with two disinterested witnesses who know the testator, all four present at the same time and signing in one another's presence, followed by a Form E attestation stating the true date and place; alternatively the notary may first obtain a fresh warrant for that area under s.11. Whether Mount Lavinia in truth falls outside a warrant expressed as Colombo depends on the delimitation of judicial zones, which is outside the statutes examined here, so this analysis holds on the facts as stated and remains unverified."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M092-Q01-001",
+          "claim_text": "A will is valid only if it is in writing and executed in the manner prescribed by the Prevention of Frauds Ordinance.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M092-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-002",
+          "claim_text": "The prescribed manner is that the testator signs at the foot or end of the will before a notary public and two witnesses who are all present at the same time.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M092-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M092-Q01-003",
+          "claim_text": "The notary may not attest unless at least two witnesses have subscribed their signatures in letters, and the testator and the witnesses must sign in his presence and in the presence of one another, he signing in theirs.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M092-005",
+            "PROV-M092-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-004",
+          "claim_text": "The notary must satisfy himself that the witnesses are of good repute and well acquainted with the testator before accepting them.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M092-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M092-Q01-005",
+          "claim_text": "Where the instrument must be read over, it must be read and explained in the presence and hearing of the executant, but in the case of a will this need not be done in the presence of the attesting witnesses.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M092-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-006",
+          "claim_text": "The notary must insert in letters the day, month and year on which and the place where the instrument is executed, must attest it without delay under his signature and seal stating that the party and the witnesses signed in his presence and in the presence of one another, substantially in Form E of the Second Schedule, and must preserve the draft or copy as his protocol.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M092-008",
+            "PROV-M092-007",
+            "PROV-M092-011",
+            "PROV-M092-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-007",
+          "claim_text": "A notary shall not authenticate or attest any instrument in any area other than that in which he is authorised to practise.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M092-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-008",
+          "claim_text": "The Minister may grant a notary who holds a warrant for one judicial zone a fresh warrant authorising him to practise in another judicial zone.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M092-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-009",
+          "claim_text": "Breach of the territorial rule is an offence triable summarily before a Magistrate, in addition to any civil liability, and the protection given to instruments defective only in a matter of form does not extend to invalidity arising under another written law.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M092-013",
+            "PROV-M092-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M092-Q01-010",
+          "claim_text": "A beneficial gift under a will to a person who attests its execution, or to that person's spouse, is void so far as concerns that attesting witness or spouse.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M092-015"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-011",
+          "claim_text": "Execution before a District Judge or an authorised Justice of the Peace is available only for instruments required to be executed under section 2 of the Prevention of Frauds Ordinance, and so cannot be used for a will.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M092-018",
+            "PROV-M092-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-012",
+          "claim_text": "Because the testator cannot be moved from his house and all four persons must be present together at the signing, the will must be executed at his bedside at Mount Lavinia.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M092-002",
+            "PROV-M092-004"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-4",
+            "FACT-M092-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-013",
+          "claim_text": "That place lies outside the area specified in the notary's warrant, so he is forbidden to attest the will there.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M092-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "FACT-M092-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M092-Q01-014",
+          "claim_text": "He cannot avoid that bar by recording a place of execution inside his own area, because he is bound to insert the true place in letters and to record it in his attestation.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M092-008",
+            "PROV-M092-007"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M092-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-015",
+          "claim_text": "His residence at Battaramulla does not enlarge his competence, because it is the area named in the warrant that measures where he may attest, residence being regulated only through the location of his office.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M092-003",
+            "PROV-M092-016"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M092-Q01-016",
+          "claim_text": "If he attested at the bedside he would commit an offence, and the saving for defects of form would not be a safe answer because the defect would be in his territorial competence rather than in the form of the instrument.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M092-013",
+            "PROV-M092-014",
+            "PROV-M092-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M092-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M092-Q01-017",
+          "claim_text": "The will he drew can instead be executed at the bedside before a notary whose warrant covers the area in which Mount Lavinia lies, or he may first apply to the Minister for a fresh warrant for that area.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M092-009",
+            "PROV-M092-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M092-Q01-002",
+            "FACT-M092-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-018",
+          "claim_text": "At that sitting the testator, being alert and able to sign, signs at the foot or end, and the two neighbours who have long known him sign as witnesses in letters in his presence and in the presence of one another and of the notary, who then signs in their presence.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M092-002",
+            "PROV-M092-005",
+            "PROV-M092-004",
+            "PROV-M092-010"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M092-Q01-005",
+            "FACT-M092-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-019",
+          "claim_text": "The daughter and the son should not be used as attesting witnesses, because the benefits given to them under the will would be void as against them.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M092-015"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M092-Q01-006",
+            "FACT-M092-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-020",
+          "claim_text": "The will is read over and explained to the testator, which for a will need not be done in the presence of the witnesses, and the notary then attests without delay in Form E stating the true date and place and preserves the protocol.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M092-006",
+            "PROV-M092-007",
+            "PROV-M092-008",
+            "PROV-M092-011",
+            "PROV-M092-012"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M092-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M092-Q01-021",
+          "claim_text": "The last will can lawfully be executed, but not by the notary who drew it: it must be signed at the testator's bedside before a notary authorised to practise in the area in which Mount Lavinia lies, with two disinterested witnesses, all present at the same time, unless that notary first obtains a fresh warrant for that area.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M092-002",
+            "PROV-M092-003",
+            "PROV-M092-004",
+            "PROV-M092-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-3",
+            "BG-4",
+            "FACT-M092-Q01-002",
+            "FACT-M092-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M092-Q01-022",
+          "claim_text": "Whether Mount Lavinia in fact falls outside a warrant expressed as Colombo turns on the delimitation of judicial zones, which is not settled by the statutes examined here, so the conclusion holds on the stated facts and remains unverified.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M092-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M092-Q01-002"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "The decisive step is not settled by the corpus. Section 4A of the Notaries Ordinance, read with sections 3(1) and 4(2), deems a warrant expressed for a judicial division to authorise practice throughout the judicial zone in which the notary resides, so whether a warrant expressed as ‘Colombo’ held by a notary residing at Battaramulla reaches Mount Lavinia turns on the delimitation of judicial zones under the Judicature Act and the orders made under it, none of which is in the corpus. The researcher supplied the answer to that question as a synthetic decisive fact (FACT-M092-Q01-002), which pre-decides the issue the examiner poses. Two further provisions the answer relies on, Prevention of Frauds Ordinance s.4(2) and Notaries Ordinance s.34, exist in the corpus only in text enacted after the matter date. A lawyer must settle the judicial-zone point and the April 2019 wording before this question can stand as gold.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

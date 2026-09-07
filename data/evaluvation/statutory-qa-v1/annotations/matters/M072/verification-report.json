@@ -1,0 +1,147 @@
+{
+  "benchmark_matter_id": "M072",
+  "verifier": "verifier-M072",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:02:04Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M072-001",
+      "decision": "verified",
+      "note": "Excerpt verbatim, role and temporal note confirmed against the corpus."
+    },
+    {
+      "provision_id": "PROV-M072-002",
+      "decision": "verified",
+      "note": "Excerpt verbatim, role and temporal note confirmed against the corpus."
+    },
+    {
+      "provision_id": "PROV-M072-003",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim but is the text as substituted by Prevention of Frauds (Amendment) Act No. 4 of 2024 s.2(2)(a); the corpus copy of Act No. 30 of 2022 s.2 shows that between 2022 and 2024 paragraph (a) read 'signed by every executant and attested by a notary public before two witnesses present at the same time', with no authorised-signatory limb, so the researcher's note that this wording is the long-standing content of the section is wrong as stated; the April-2020 wording is not in the corpus and the only corpus support for an authorised signatory at that date is the parallel recital in the unamended 17-1852/s2."
+    },
+    {
+      "provision_id": "PROV-M072-004",
+      "decision": "unresolved",
+      "note": "The whole definition of 'power of attorney' was repealed and substituted by Powers of Attorney (Amendment) Act No. 28 of 2022 s.2(1) and substituted again by Act No. 3 of 2024 s.2, and the corpus holds no pre-2022 text, so it cannot be shown from the corpus that the limb relied on, execution before two witnesses and attestation by a notary public, formed part of the definition in April 2020."
+    },
+    {
+      "provision_id": "PROV-M072-005",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim but the corpus consolidation of rule (30) is stale rather than post-2022 as the researcher's note says: 31-2022 s.16(13) substituted the tail of the rule from the words 'he shall preserve a true copy of the registered power of attorney with his protocol' and 6-2024 s.3(10) substituted it again, and neither change is reflected in the corpus text; the April-2020 rule required a copy of the registered power of attorney, while the opening limb relied on, 'If he attest any deed or instrument executed before him by means of an attorney', is untouched by either amendment and was in force at the matter date."
+    },
+    {
+      "provision_id": "PROV-M072-006",
+      "decision": "partially_verified",
+      "note": "Wording and supporting role are right, but the excerpt quotes 'Form F 1', which 6-2024 s.3(9) substituted for 'Form F', so the excerpt is not the text in force in April 2020 even though the filing duty relied on is."
+    },
+    {
+      "provision_id": "PROV-M072-007",
+      "decision": "verified",
+      "note": "Excerpt verbatim, role and temporal note confirmed against the corpus."
+    },
+    {
+      "provision_id": "PROV-M072-008",
+      "decision": "unresolved",
+      "note": "Section 3 was repealed and substituted in its entirety by Powers of Attorney (Amendment) Act No. 28 of 2022 s.3 and the corpus holds no pre-2022 text, so the April-2020 registration duty cannot be established from the corpus; the pre-2022 wording of Notaries Ordinance s.31 rule (30) quoted in 31-2022 s.16(13) refers to a registered power of attorney, which shows registration was contemplated at the matter date but does not fix the terms of the duty."
+    },
+    {
+      "provision_id": "PROV-M072-009",
+      "decision": "verified",
+      "note": "Excerpt verbatim, role and temporal note confirmed against the corpus."
+    },
+    {
+      "provision_id": "PROV-M072-010",
+      "decision": "partially_verified",
+      "note": "Section 34 was substituted wholesale by 31-2022 s.17, so the entire quoted paragraph (1)(c), not only the fifty thousand rupee ceiling, post-dates April 2020, and the corpus does not hold the penalty provision in force at the matter date (the Increase of Fines Act No. 12 of 2005 amends the Notaries Ordinance through schedules the corpus does not carry); the proposition actually relied on, that breach of a section 31 rule is an offence triable summarily before a Magistrate, is not in doubt."
+    },
+    {
+      "provision_id": "PROV-M072-011",
+      "decision": "verified",
+      "note": "Correctly recorded as background with applicable_to_matter_date false; 4-1902/s3A carries an insert event by 28-2022 and must not bear on an April-2020 answer."
+    },
+    {
+      "provision_id": "PROV-M072-901",
+      "decision": "verified",
+      "note": "Added by the verifier as an indispensable and temporally stable anchor for the presence requirement that PROV-M072-003 would otherwise have to carry on post-2022 wording."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M072-901",
+      "reason": "Notaries Ordinance s.31 rule (12) was missing from the map. It is the rule that forbids a notary to attest unless the executant and the witnesses signed in his presence, which is what makes the vendor's inability to travel a legal obstacle at all, and it is the only source of that requirement in the corpus that is temporally stable: no Notaries amendment in the corpus touches rule (12), whereas the presence wording in 7-1840/s2 is 2024 text. Added as indispensable, excerpt checked verbatim."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M072-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "The territorial half of the answer is sound and verified: Notaries Ordinance s.2, s.4A and s.31 rules (12), (22) and (29) all check out verbatim and none of the rules relied on was amended between 1976 and the matter date, so the conclusion that Gayan Alwis cannot attest in Ratnapura and can attest a deed signed in Galle by an attorney holds. The power-of-attorney half does not survive on the corpus at April 2020: 4-1902/s2 and 4-1902/s3 were each repealed and substituted by Act No. 28 of 2022 and the corpus holds no earlier text, and 7-1840/s2 paragraph (a) is 2024 text whose authorised-signatory limb the corpus copy of Act No. 30 of 2022 shows was absent in 2022-2024. Authority requirement is left at statute_only, since the question is in principle answerable from the statute book in force in April 2020, but that statute book is not in the corpus."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "temporal_characterisation_of_notaries_rule_30",
+      "researcher_position": "The corpus text of s.31 rule (30) incorporates the 2022 and 2024 amendments, and the April-2020 rule referred to the registered power of attorney.",
+      "verifier_position": "The corpus consolidation of rule (30) is stale, not current: 31-2022 s.16(13) substituted the tail of the rule from the words 'he shall preserve a true copy of the registered power of attorney with his protocol' and 6-2024 s.3(10) substituted it again, and neither substitution appears in the corpus text, which still reads 'preserve a true copy of the power of attorney with his protocol, and shall forward a like copy with the duplicate to the Registrar of Lands'. The corpus text is therefore older even than the April-2020 rule, which per the words quoted in the 2022 Act required a copy of the registered power of attorney. The opening limb the answer relies on is unaffected either way.",
+      "supporting_sources": [
+        "1-1907/s31",
+        "31-2022/s16",
+        "6-2024/s3"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "long_standing_content_of_prevention_of_frauds_s2",
+      "researcher_position": "The element relied on, that a deed may be signed by the executant or by a person duly authorised by him, is the long-standing content of s.2, so the post-2022 wording can be quoted safely for an April-2020 answer.",
+      "verifier_position": "The corpus copy of Prevention of Frauds (Amendment) Act No. 30 of 2022 s.2 sets out the paragraph (a) it inserted in full, and it contains no authorised-signatory limb; that limb entered the section only through Act No. 4 of 2024 s.2(2)(a). The proposition is probably right for April 2020, since 17-1852/s2 recites the pre-2022 Prevention of Frauds formula and expressly contemplates signature 'by some person lawfully authorized by him', but it cannot be established from the section text the map quotes.",
+      "supporting_sources": [
+        "7-1840/s2",
+        "30-2022/s2",
+        "4-2024/s2",
+        "17-1852/s2"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M072-Q01-003 (a power of attorney executed in Sri Lanka is to be registered with the Registrar-General) rests only on 4-1902/s3, which was repealed and substituted in 2022; marked disputed.",
+      "CL-M072-Q01-004 states the notary must preserve a true copy of 'the power of attorney'; at April 2020 rule (30) required a copy of the registered power of attorney. Marked disputed.",
+      "CL-M072-Q01-002, -010 and -012 all depend on the post-2022 definition of 'power of attorney' in 4-1902/s2 and are marked disputed for the same reason.",
+      "CL-M072-Q01-013 depends on rule (29) in its 2024 'Form F 1' wording; the duty stands at April 2020 but under 'Form F'. Marked disputed."
+    ],
+    "temporal_issues": [
+      "4-1902/s2 definition of 'power of attorney': repealed and substituted by 28-2022 s.2(1), substituted again by 3-2024 s.2. No April-2020 text in the corpus. Indispensable, so the question is downgraded.",
+      "4-1902/s3: repealed and substituted by 28-2022 s.3. No April-2020 text in the corpus.",
+      "7-1840/s2(1)(a): quoted text is 4-2024 s.2(2)(a); the 30-2022 text had no authorised-signatory limb.",
+      "1-1907/s34: substituted wholesale by 31-2022 s.17; the whole quoted paragraph, not just the fine, post-dates the matter date, and the corpus does not carry the Increase of Fines Act No. 12 of 2005 schedules that would give the April-2020 figure.",
+      "1-1907/s31 rule (29): 'Form F 1' is 6-2024 s.3(9); at April 2020 the rule cited Form F.",
+      "1-1907/s31 rule (30): the corpus text predates both the 2022 and the 2024 substitutions, so the corpus is stale here rather than over-current.",
+      "Checked and clear: 1-1907/s2 (no amendment event), 1-1907/s4A (inserted 1976), 1-1907/s31 rules (12) and (22) (untouched by 20-1976 s.10, 47-2011 ss.2-3, 31-2022 s.16 and 6-2024 s.3), 17-1852/s2 (no amendment event)."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Notaries Ordinance s.31 rule (12), the presence requirement, was omitted; the researcher recorded the omission as deliberate but it is the temporally stable anchor for the step the map otherwise runs through post-2022 Prevention of Frauds wording. Added as PROV-M072-901.",
+      "Notaries Ordinance s.32(1) exempts a power of attorney for use out of Sri Lanka from rules (20) and (23) to (26). Not engaged here, since the power of attorney in this matter is for use in Sri Lanka, but it is the nearest exception to the power-of-attorney route and worth noting.",
+      "The corpus contains no instrument defining the extent of the Galle judicial zone; the researcher's corpus_gaps entry on this is accurate and the step rests on the question's own facts."
+    ],
+    "case_law_dependence": [
+      "The answer cites no case law and none is needed for the territorial half.",
+      "Residual risk: at April 2020 the requirement that a power of attorney authorising a land transfer be itself notarially executed may have rested on the general law rather than on the statutory definition, since the definition's paragraph (a) is a 2022 insertion. That is the point a lawyer must settle."
+    ],
+    "enrichment_issues": [
+      "enrichment.applied is false and the background is reproduced unchanged from candidates/matters/M072.json. Nothing to check."
+    ],
+    "duplicate_or_leak_issues": [
+      "No leak: no statute name, section number or conclusion is added to the background.",
+      "Traceability gap, not a correctness one: answer_claims cite supporting_fact_ids 'BG-1', 'BG-2' and 'BG-3', but no fact list defines those ids anywhere in the map or the candidate file. The schema types them as free strings so the validator does not catch it."
+    ]
+  },
+  "lawyer_questions": [
+    "What did the definition of 'power of attorney' in s.2 of the Powers of Attorney Ordinance, and s.3 of that Ordinance, say in April 2020, before Act No. 28 of 2022 repealed and substituted both? Specifically, did the pre-2022 definition itself require execution before two witnesses and attestation by a notary public, or did that requirement come from the general law? The whole power-of-attorney method, and therefore the answer to the second half of the question, turns on this.",
+    "Confirm the April-2020 text of Prevention of Frauds Ordinance s.2, in particular whether it permitted signature by a person lawfully authorised by the executant, as 17-1852/s2 implies.",
+    "Confirm that Ratnapura lies outside the judicial zone covered by a Galle High Court warrant; the corpus holds no instrument fixing zone boundaries.",
+    "Is execution before a District Judge or a specially authorised Justice of the Peace under the Deeds and Documents (Execution before Public Officers) Ordinance No. 17 of 1852 still a live route in practice, or should the gold answer's second method be confined to attestation by a notary holding a warrant for the Ratnapura zone?"
+  ]
+}

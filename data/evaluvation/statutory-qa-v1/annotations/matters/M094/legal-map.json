@@ -1,0 +1,721 @@
+{
+  "benchmark_matter_id": "M094",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M094",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T23:09:15Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2019-04",
+  "matter_reference_date_basis": "exam_session APRIL 2019 recorded in candidates/matters/M094.json",
+  "corpus_gaps": [
+    "The Second Schedule to the Notaries Ordinance is not in the corpus, so Form E (the statutory form of attestation referred to in rule (21) of section 31) cannot be quoted. The only Form E text in the corpus is the replacement form enacted by section 22 of the Notaries (Amendment) Act No. 31 of 2022, which is after the matter date.",
+    "The corpus holds only the consolidated (post-2022, post-2024) text of section 31 of the Notaries Ordinance. The wording in force in April 2019 of rule (9), rule (20)(b) and rule (20)(h) is not reproduced anywhere except that the pre-2022 wording of rule (9) survives verbatim inside section 16(6) of Act No. 31 of 2022; the pre-2022 wording of rule (20)(b) is nowhere in the corpus.",
+    "The corpus holds only the post-2022 text of section 4 of the Prevention of Frauds Ordinance (as amended by Act No. 30 of 2022, which added the thumb-impression requirement). The execution formality actually in force in April 2019 cannot be quoted verbatim from the corpus.",
+    "Notarial drafting forms and precedents for a codicil (heading, revocation clause, republication clause, testimonium) are not statutory and are not in the corpus.",
+    "The life interest the testator wishes to reserve for his wife is a usufruct under Roman-Dutch common law; no statute in the corpus defines or regulates it."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M094-001",
+      "section_id": "7-1840/s4",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "4",
+      "subsection": "(1)",
+      "relevant_excerpt": "No will, testament, or codicil containing any devise of land or other immovable property, or any bequest of movable property, or for any other purpose whatsoever, shall be valid unless it shall be in writing and executed subject to the provisions specified in subsection (2)",
+      "why_relevant": "Establishes that a codicil, like a will, is invalid unless it is in writing and executed with the prescribed formalities; this is why the client's wishes must be reduced to a written, notarially executed codicil rather than a note or an alteration of the existing will.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus text is section 4 as renumbered and amended by section 3 of the Prevention of Frauds (Amendment) Act No. 30 of 2022, which is after the April 2019 matter date. In April 2019 the section required the will to be in writing and executed 'in the manner hereinafter mentioned' and did not require a thumb impression. The pre-2022 wording is not in the corpus, so this provision is recorded as supporting only and is not treated as indispensable.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-002",
+      "section_id": "7-1840/s6",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "6",
+      "subsection": null,
+      "relevant_excerpt": "No will, testament, or codicil, or any part thereof, shall be revoked otherwise than by the marriage of the testator or testatrix, or by another will, testament, or codicil executed in manner herein before required",
+      "why_relevant": "The client wants to displace clause 5 of Last Will No. 3250. Part of a will can only be revoked by another will or codicil executed with the same formalities, which is the authority for effecting the change by a codicil containing an express revocation of clause 5.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1840; the corpus records no amendment event for this section, so the text applied unchanged in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-003",
+      "section_id": "7-1840/s7",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "7",
+      "subsection": null,
+      "relevant_excerpt": "No obliteration, interlineations, or other alteration made in any will, testament, or codicil after the execution thereof shall be valid or have any effect, except so far as the words or effect of the will, testament, or codicil before such alteration shall not be apparent, unless such alteration shall be executed in like manner as herein before is required for the execution of the will",
+      "why_relevant": "Explains why clause 5 cannot simply be struck out or written over on the 2009 will: any alteration after execution has no effect unless executed with will formalities, so a separate codicil is the appropriate instrument.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The section carries an amendment event by section 4 of Act No. 30 of 2022 (after the matter date), but that amendment inserted the thumb, finger and toe impression wording later in the section and in the proviso. The limb quoted here is the original 1840 wording and applied unchanged in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-004",
+      "section_id": "7-1840/s11",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "11",
+      "subsection": null,
+      "relevant_excerpt": "If any person shall attest the execution of any will, testament, or codicil to whom or to whose wife or husband any beneficial devise, legacy, estate, interest, gift, disposition, or appointment of or affecting any immovable or movable property (other than and except charges and directions for the payment of any debt or debts) shall be thereby given or made, such devise, legacy, estate, interest, gift, disposition, or appointment shall, so far only as concerns such person attesting the execution of such will, testament, or codicil, or the wife or husband of such person, or any person claiming under such person",
+      "why_relevant": "Constrains the choice of attesting witnesses for the codicil: none of the beneficiaries named in it (Himali, Hemal, Kumudu, Bandula, Karunadasa) or their spouses may attest it, or the gift to that witness is void. The two attesting witnesses named in the scenario take no benefit, so the rule is satisfied.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1840; no amendment event recorded in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-005",
+      "section_id": "21-1844/s9",
+      "act_id": "21-1844",
+      "formal_title": "Wills Ordinance",
+      "number_and_year": "No. 21 of 1844",
+      "section": "9",
+      "subsection": null,
+      "relevant_excerpt": "Whenever in this Ordinance the word 'will' is used it shall be construed to extend to a testament and to a codicil, and to any other testamentary disposition",
+      "why_relevant": "Definition provision: everything the Wills Ordinance says about wills applies to the codicil to be drafted, including the republication rule in section 6.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The section carries an amendment event by section 6 of the Wills (Amendment) Act No. 29 of 2022, but that amendment substituted words in the definition of 'landed property' only. The limb quoted here is the 1844 wording and applied in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-006",
+      "section_id": "21-1844/s6",
+      "act_id": "21-1844",
+      "formal_title": "Wills Ordinance",
+      "number_and_year": "No. 21 of 1844",
+      "section": "6",
+      "subsection": null,
+      "relevant_excerpt": "Every will re-executed or republished, or revived by any codicil, shall for the purpose of this Ordinance be deemed to have been made at the time at which the same shall be so re-executed or republished or revived.",
+      "why_relevant": "Supports the closing confirmation clause of the codicil. Because the client wants all other clauses of Last Will No. 3250 to stand, the codicil should confirm the will, and the confirmed will is then deemed to have been made at the date of the codicil.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1844; no amendment event recorded in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-007",
+      "section_id": "21-1844/s2",
+      "act_id": "21-1844",
+      "formal_title": "Wills Ordinance",
+      "number_and_year": "No. 21 of 1844",
+      "section": "2",
+      "subsection": "(2)",
+      "relevant_excerpt": "Every testator shall have full power to make such testamentary disposition as he shall feel disposed",
+      "why_relevant": "Background: the testator's freedom to redistribute his property among his wife, children, driver and servant by codicil.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus text of section 2 is the version repealed and substituted by section 2 of the Wills (Amendment) Act No. 29 of 2022, after the matter date. Recorded as background only.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-008",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (9)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless one of the executants to the deed or instrument or the two attesting witnesses be known to notary or by the identity of the executants to a deed or instrument is established by such notary by inspection of the national identity card, bio-page of the passport or the driving licence of such executants; he shall satisfy himself, before accepting them as witnesses, that they are persons of good repute and that they are well acquainted with the executant and know his proper name, occupation, and residence",
+      "why_relevant": "Governs the situation where the executant is not known to the notary: identification through the two attesting witnesses who are known to the notary. This is the rule the attestation must reflect.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "This is rule (9) as substituted by section 16(6) of the Notaries (Amendment) Act No. 31 of 2022 and further amended by section 3(3) of Act No. 6 of 2024, both after the April 2019 matter date. The wording in force in April 2019 is recorded separately as PROV-M094-009. Not treated as indispensable.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-009",
+      "section_id": "31-2022/s16",
+      "act_id": "31-2022",
+      "formal_title": "Notaries (Amendment) Act",
+      "number_and_year": "No. 31 of 2022",
+      "section": "16",
+      "subsection": "(6)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless the person executing the same be known to him or to at least two of the attesting witnesses thereto;",
+      "why_relevant": "The amending section recites verbatim the wording of rule (9) of section 31 of the Notaries Ordinance that it replaced, and that recited wording is the rule that was in force in April 2019: the executant must be known to the notary or to at least two of the attesting witnesses. It is the only corpus text of the April 2019 rule.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The amending Act itself dates from 2022 and was not in force at the matter date. It is cited only because its recital preserves the pre-2022 wording of rule (9), which was the wording in force in April 2019. Recorded as supporting, not indispensable.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-010",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (11)",
+      "relevant_excerpt": "(11) He shall not authenticate or attest any deed or instrument in any case in which the person executing or acknowledging the same shall be or profess to be unable to read the same, or in which such person shall require him to read over the same, unless and until he shall have read over and explained the same, or caused the same to be explained, in the presence and hearing of such person and, except in the case of wills and codicils, in the presence of the attesting witnesses.",
+      "why_relevant": "Reading over and explanation; the express carve-out for wills and codicils means the reading over of this codicil need not take place in the presence of the attesting witnesses, which affects how the attestation is worded.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (11) is not among the rules substituted by the 2022 or 2024 amending Acts recorded in the corpus, so the wording is treated as in force in April 2019. The verifier should confirm this against the 2019 edition.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-011",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (12)",
+      "relevant_excerpt": "(12) He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+      "why_relevant": "The core execution requirement the attestation must certify: testator, both witnesses and the notary signing in the presence of one another.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (12) is not among the rules substituted by the 2022 or 2024 amending Acts; wording treated as in force in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-012",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (15)",
+      "relevant_excerpt": "(15) If any deed or instrument executed or acknowledged before him be signed by any of the parties or witnesses thereto with a mark, or with a signature in a language other than that in which the notary is authorized to practice, he shall write over such mark or signature in his own handwriting and at the time of execution the words \"This is the mark (or signature, as the case may be) of A. B.\"",
+      "why_relevant": "Decisive for this attestation: the notary is licensed in Sinhala, but both attesting witnesses sign in English characters, so the notary must write over each of those signatures the words 'This is the signature of ...' and record that he did so.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (15) itself was not substituted by the 2022 or 2024 amending Acts (Act No. 31 of 2022 inserted a new rule (15A) immediately after it); wording treated as in force in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-013",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (18)",
+      "relevant_excerpt": "(18) He shall correctly insert in letters in every deed or instrument executed before him the day, month, and year on which and the place where the same is executed, and shall sign the same.",
+      "why_relevant": "The date and place of execution must be written in letters, not figures, in the codicil and carried into the attestation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (18) is not among the rules amended in 2022 or 2024; wording treated as in force in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-014",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20) chapeau and (a)",
+      "relevant_excerpt": "(20) He shall without delay duly attest every deed or instrument which shall be executed or acknowledged before him, and shall sign and seal such attestation. In such attestation he shall state- (a) that the said deed or instrument was signed by the party and the witnesses thereto in his presence and in the presence of one another;",
+      "why_relevant": "The operative duty to attest, sign and seal, and the first mandatory recital of the attestation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The chapeau and paragraph (a) of rule (20) were not touched by the 2022 or 2024 amendments (which replaced paragraphs (b), (e) and (g) and added (h)); wording treated as in force in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-015",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20)(b)",
+      "relevant_excerpt": "(b) whether the executants of the said deed or instrument are known to him or whether he has identified them by the inspection of the national identity card, bio-page of the passport or the driving licence or whether the witnesses thereto are known to him and in the latter case he shall specify which of the executants or the person acknowledging are known to the said witness;",
+      "why_relevant": "The recital that carries the decisive fact in this question: the executant is not known to the notary, the witnesses are, and the attestation must specify which executant is known to which witness.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "This paragraph is the text substituted by section 16(11)(a) of the Notaries (Amendment) Act No. 31 of 2022, after the matter date; the national identity card limb did not exist in April 2019. The pre-2022 wording of paragraph (b) is not reproduced anywhere in the corpus. Not treated as indispensable.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-016",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20)(c) and (d)",
+      "relevant_excerpt": "(c) the day, month, and year on which and the place where the said deed or instrument was executed or acknowledged, and the full names of the attesting witnesses and their residences; (d) whether the same was read over by the person executing the same, or read and explained by him, the said notary, to the said person in the presence of the attesting witnesses;",
+      "why_relevant": "Requires the attestation to state the date and place of execution, the full names and residences of the two witnesses, and whether the codicil was read over by the testator or read and explained by the notary.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Paragraphs (c) and (d) of rule (20) were not amended in 2022 or 2024; wording treated as in force in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-017",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20)(f)",
+      "relevant_excerpt": "(f) the number and value of the adhesive stamps affixed to or the value of the impressed stamps on such deed or instrument and the duplicate thereof;",
+      "why_relevant": "Supporting recital about stamps. The scenario gives no stamp particulars, so the drafted attestation can only leave the values to be completed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Paragraph (f) was not amended in 2022 or 2024; wording treated as in force in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-018",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20)(h)",
+      "relevant_excerpt": "(h) in the case of a will- (i) set out in the attestation of the will that the testator was in good and sound mind to execute the will; and (ii) enter in the deed register maintained by him, the number assigned to such will, the date and the name of the testator.",
+      "why_relevant": "Under the current text the attestation of a will or codicil must state that the testator was of sound mind. It is recorded to warn the verifier that this recital is a post-2019 statutory requirement, whatever notarial practice may have been in 2019.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Paragraph (h) was inserted by section 16(11)(d) of the Notaries (Amendment) Act No. 31 of 2022, after the April 2019 matter date. Not treated as indispensable.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-019",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (21)",
+      "relevant_excerpt": "(21) Every such attestation shall be substantially in the form E in the Second Schedule, and shall be legibly signed by him in the language in which the deed or instrument is written, and also with his usual signature if the language or form of that signature be different from that in which such deed or instrument is written.",
+      "why_relevant": "Fixes the form of the attestation and requires the notary to sign it legibly in the language of the instrument, which here is Sinhala.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The text of rule (21) was not amended in 2022 or 2024, but Form E of the Second Schedule was repealed and replaced by section 22 of Act No. 31 of 2022. The Second Schedule is not in the corpus at all, so the Form E in force in April 2019 cannot be reproduced.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-020",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (22)",
+      "relevant_excerpt": "(22) He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice nor authenticate or attest any deed or instrument drawn in any language other than that in which he is authorized to practice.",
+      "why_relevant": "The notary is licensed to practise in Sinhala, so the codicil must be drawn in Sinhala and the attestation written and signed in Sinhala. This also explains why the witnesses' English-character signatures engage rule (15).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (22) was not amended in 2022 or 2024; wording treated as in force in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-021",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (8)",
+      "relevant_excerpt": "(8) He shall not authenticate or attest any deed or instrument to which at least two witnesses have not subscribed their signatures in letters.",
+      "why_relevant": "Requires the two attesting witnesses; the scenario supplies exactly two, both of whom sign in letters (English characters).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (8) was not amended in 2022 or 2024; wording treated as in force in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-022",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (23)",
+      "relevant_excerpt": "(23) He shall number with consecutive integral numbers the documents executed or acknowledged before him, including wills and codicils, according to the order in which they are executed or acknowledged before him.",
+      "why_relevant": "The codicil takes the attesting notary's own next consecutive number; it does not carry the number 3250 of the original will, which was attested by a different notary.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (23) was not amended in 2022 or 2024; wording treated as in force in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-023",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (24)",
+      "relevant_excerpt": "(24) He shall carefully preserve as his protocol a draft or copy of every deed or instrument executed or acknowledged before him, to which shall be attached his signature and those of the party and witnesses to the original deed or instrument",
+      "why_relevant": "Background on what happens to the codicil after attestation: a protocol copy is retained, and for wills and codicils only the number and date go into the register.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The 2024 amendment replaced Form F of the Second Schedule referred to in this rule; the quoted words of rule (24) are unchanged and applied in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-024",
+      "section_id": "1-1907/s33",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "33",
+      "subsection": null,
+      "relevant_excerpt": "No instrument shall be deemed to be invalid by reason only of the failure of any notary to observe any provision of any rule set out in section 31 in respect of any matter of form",
+      "why_relevant": "Background: departures from the prescribed form of attestation do not by themselves invalidate the codicil, although they expose the notary to the penalties in section 34.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907; no amendment event recorded in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-025",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (16)(a)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument, other than a will or codicil, affecting land or other immovable property, unless the deed or instrument embodies therin or in a Schedule annexed therto an accurate and clear description of the said land or other property affected thereby, showing its boundaries, extent, situation",
+      "why_relevant": "A codicil is expressly excluded from the requirement of a full boundary and extent description, so the drafted codicil may identify the Moratuwa and Ratmalana properties by name, assessment number and street as the client described them.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (16)(a) was amended in 2022 by the addition of condominium wording at the end of the paragraph; the opening words quoted here, including the exclusion of wills and codicils, are unchanged and applied in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M094-026",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(a)",
+      "relevant_excerpt": "Before any deed or instrument (other than a will or codicil) affecting any interest in land or other immovable property is drawn by him, he shall search or cause to be searched the registers in the land registry to ascertain the state of the title in regard to such land",
+      "why_relevant": "Confirms that no title search is required before drawing a codicil, which is why the drafting can proceed on the client's instructions alone.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Paragraph (a) of rule (17) was not amended in 2022 or 2024 (those amendments replaced paragraph (b) and added paragraphs (c) to (e)); wording treated as in force in April 2019.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M094-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The statutory skeleton of the answer is in the corpus: a part of a will can be revoked only by another will or codicil executed with will formalities (Prevention of Frauds Ordinance s.6), an alteration made on the face of the executed will is ineffective (s.7), a codicil must be in writing and notarially executed (s.4), 'will' includes a codicil (Wills Ordinance s.9), and a will confirmed by a codicil is deemed made at the date of the codicil (s.6). But the answer called for is a drafted instrument, and its form - heading, revocation and substitution clauses, the reservation of a life interest (usufruct) to the wife, the confirmation clause and the testimonium - comes from Roman-Dutch common law and settled notarial precedent, neither of which is in the corpus. A statute-only answer would therefore be incomplete.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M094-Q01-01",
+          "issue": "Whether the changes the testator wants to clause 5 of Last Will No. 3250 must be made by a separate codicil rather than by altering the executed will.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M094-Q01-02",
+          "issue": "What the codicil must contain to revoke clause 5, substitute the new devises subject to the wife's life interest, and add the two pecuniary legacies.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M094-Q01-03",
+          "issue": "What effect the codicil has on the remaining clauses of the 2009 will, and how the codicil should express that they stand.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M094-Q01-04",
+          "issue": "Who may attest the codicil, given that a gift to an attesting witness or that witness's spouse is void.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": ["PROV-M094-002", "PROV-M094-003", "PROV-M094-005", "PROV-M094-006"],
+      "supporting_provision_ids": ["PROV-M094-001", "PROV-M094-004", "PROV-M094-022", "PROV-M094-025", "PROV-M094-026"],
+      "background_provision_ids": ["PROV-M094-007", "PROV-M094-023"],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps: (1) an alteration on the face of the executed will is ineffective, so a fresh testamentary instrument is needed (Prevention of Frauds Ordinance s.7); (2) part of a will can be revoked only by another will or codicil executed in the required manner (s.6); (3) that instrument is a codicil, which the Wills Ordinance treats as a will (s.9) and which, by confirming the 2009 will, republishes it as of the date of the codicil (Wills Ordinance s.6).",
+      "reasoning_edges": [
+        {"from_provision_id": "PROV-M094-003", "to_provision_id": "PROV-M094-002", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M094-002", "to_provision_id": "PROV-M094-001", "relationship": "cross_references"},
+        {"from_provision_id": "PROV-M094-005", "to_provision_id": "PROV-M094-006", "relationship": "defines"},
+        {"from_provision_id": "PROV-M094-002", "to_provision_id": "PROV-M094-006", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M094-004", "to_provision_id": "PROV-M094-002", "relationship": "qualifies"},
+        {"from_provision_id": "PROV-M094-025", "to_provision_id": "PROV-M094-026", "relationship": "jointly_required"}
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Sarth Perera of No.14, Saranankara Mawatha, Dehiwala gives you a copy of his Last Will bearing No.3250 dated 8th August 2009 attested by Peter Perera Notary Public and states that he wants to change clause 5 in the Last Will such that he would give his House and property called Malwatta at Moratuwa to his Daughter Himali and his house at No.14, Dammadara Mawatha, Ratmalana to his son Hemal both subject to life interest of his wife Kumudu. He also wishes to add to the Last Will a clause thereby that he would give Rs.250, 000/- in cash to his driver Bandula and a sum of Rs.50, 000/- to his servant Karunadasa. All other clauses in the Last Will would remain unchanged.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "How to give effect to the testator's instructions to replace clause 5 of Last Will No. 3250 dated 8 August 2009, to add two pecuniary legacies, and to leave the rest of that will standing; and what the resulting instrument must contain.",
+        "rule": "An obliteration, interlineation or other alteration made in a will after execution has no effect unless it is itself executed in the manner required for a will (Prevention of Frauds Ordinance s.7), and no will or any part of it can be revoked otherwise than by another will or codicil executed in the manner required (Prevention of Frauds Ordinance s.6). A codicil is a will for the purposes of the Wills Ordinance (Wills Ordinance s.9) and must be in writing and notarially executed (Prevention of Frauds Ordinance s.4). A will revived or republished by a codicil is deemed to have been made at the date of the codicil (Wills Ordinance s.6). A beneficiary, or the spouse of a beneficiary, who attests the instrument loses the gift (Prevention of Frauds Ordinance s.11). A codicil is exempt from the boundary-description rule and from the pre-drafting title search (Notaries Ordinance s.31, rules (16)(a) and (17)(a)), and takes the attesting notary's own next consecutive number (Notaries Ordinance s.31, rule (23)).",
+        "application": "Clause 5 cannot be struck out or written over on the 2009 will, so a codicil is drawn. Substance of the draft: 'THIS CODICIL made and executed at Dehiwala on this ....... day of ....... Two Thousand and Nineteen by SARATH PERERA of No.14, Saranankara Mawatha, Dehiwala. WHEREAS I made and executed my Last Will bearing No.3250 dated 8th August 2009 attested by Peter Perera, Notary Public, AND WHEREAS I am desirous of altering the said Last Will to the extent hereinafter appearing: NOW THEREFORE I do hereby (1) revoke clause 5 of my said Last Will No.3250 in its entirety and in substitution therefor declare that I give and devise (a) the house and premises together with the land called Malwatta situated at Moratuwa to my daughter Himali, and (b) the house and premises bearing assessment No.14, Dammadara Mawatha, Ratmalana to my son Hemal, both the said devises being subject to the life interest of my wife Kumudu, who shall be entitled to hold and enjoy the said two properties and the rents, profits and produce thereof during the term of her natural life, the said devises to take effect in full possession on her death; (2) give and bequeath a sum of Rupees Two Hundred and Fifty Thousand (Rs.250,000/-) in cash to my driver Bandula and a sum of Rupees Fifty Thousand (Rs.50,000/-) in cash to my servant Karunadasa, to be paid by my executor out of my estate; and (3) in all other respects confirm my said Last Will No.3250 dated 8th August 2009, which shall be read and construed together with this Codicil as one testamentary instrument. IN WITNESS WHEREOF I have set my hand to this Codicil, written on ....... sheets, at Dehiwala on the day, month and year first above written.' The date and place are written in letters, the two properties are identified as the client described them, and the two attesting witnesses must be persons who take no benefit under the will or this codicil, and whose spouses take none, so that no legacy is avoided.",
+        "conclusion": "The instructions are carried out by a codicil to Last Will No. 3250 which expressly revokes clause 5, substitutes the new devises subject to the wife's life interest, adds the two cash legacies, and confirms the rest of the 2009 will; once notarially executed with two disinterested witnesses it takes effect as a testamentary instrument and republishes the will as at the date of the codicil. The drafted wording above is proposed only: the corpus supplies the statutory requirements but not the notarial precedent form or the Roman-Dutch law of the life interest, so the draft is reserved for a lawyer's review of form."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M094-Q01-001",
+          "claim_text": "An alteration made in a will after its execution has no effect unless the alteration is itself executed in the manner required for a will.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-003"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q01-002",
+          "claim_text": "A will or any part of it can be revoked only by another will or codicil executed in the manner required for a will.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-002"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q01-003",
+          "claim_text": "A codicil is a will for the purposes of the Wills Ordinance and must be in writing and notarially executed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-005", "PROV-M094-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q01-004",
+          "claim_text": "A will republished or revived by a codicil is deemed to have been made at the date of the codicil.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-006"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q01-005",
+          "claim_text": "A gift to a person who attests the codicil, or to that person's spouse, is void so far as that person is concerned, so the attesting witnesses must be persons taking no benefit under the instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-004"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q01-006",
+          "claim_text": "Because clause 5 of Last Will No. 3250 dated 8 August 2009 cannot be altered on the face of the executed will, the change must be made by a codicil that expressly revokes clause 5 and substitutes the new dispositions.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M094-003", "PROV-M094-002"],
+          "supporting_fact_ids": ["BG-1"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q01-007",
+          "claim_text": "The codicil need not set out the boundaries and extent of the Moratuwa and Ratmalana properties and need not be preceded by a title search, because rules (16)(a) and (17)(a) of section 31 of the Notaries Ordinance exclude wills and codicils.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M094-025", "PROV-M094-026"],
+          "supporting_fact_ids": ["BG-2"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q01-008",
+          "claim_text": "The codicil closes by confirming Last Will No. 3250 in all other respects, so that the unchanged clauses stand and the will is read together with the codicil as one testamentary instrument, republished as at the date of the codicil.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M094-006"],
+          "supporting_fact_ids": ["BG-3"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q01-009",
+          "claim_text": "The drafted wording of the codicil, including the reservation of the life interest to the wife, rests on notarial precedent and Roman-Dutch common law that are outside the corpus, so the draft is proposed subject to review.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [],
+          "supporting_fact_ids": ["BG-4"],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "Reserved because the question asks for a drafted instrument. The corpus supplies the statutory requirements for making, revoking and republishing a testamentary disposition, but not the notarial precedent form of a codicil and not the Roman-Dutch law of the life interest (usufruct) the testator wishes to reserve to his wife, so a statute-only answer would be incomplete. The corpus also holds only the post-2022 text of Prevention of Frauds Ordinance s.4, so the execution formality in force in April 2019 cannot be quoted verbatim.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M094-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The contents of a notarial attestation are prescribed exhaustively by statute: rule (20) of section 31 of the Notaries Ordinance lists what the attestation must state, rule (21) requires it to be substantially in Form E of the Second Schedule and signed in the language of the instrument, and rules (8), (9), (11), (12), (15), (18) and (22) supply the execution facts the attestation must certify - two witnesses signing in letters, identification of an executant not known to the notary through the attesting witnesses, reading over and explanation, signing in the presence of one another, the treatment of a signature made in a language other than that in which the notary practises, the date and place in letters, and the notary's language of practice. No judicial authority or common-law doctrine is needed.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M094-Q02-01",
+          "issue": "What the attestation of the codicil must state under rule (20) of section 31 of the Notaries Ordinance, and in what form.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M094-Q02-02",
+          "issue": "How the attestation must deal with the fact that the executant is not known to the notary while the two attesting witnesses are.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M094-Q02-03",
+          "issue": "What the notary licensed in Sinhala must do about witnesses who sign in English characters, and in what language the codicil and attestation must be drawn and signed.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M094-Q02-04",
+          "issue": "Whether the reading over and explanation of a codicil must take place in the presence of the attesting witnesses.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": ["PROV-M094-010", "PROV-M094-011", "PROV-M094-012", "PROV-M094-013", "PROV-M094-014", "PROV-M094-016", "PROV-M094-019", "PROV-M094-020", "PROV-M094-021"],
+      "supporting_provision_ids": ["PROV-M094-004", "PROV-M094-008", "PROV-M094-009", "PROV-M094-015", "PROV-M094-017", "PROV-M094-018", "PROV-M094-022"],
+      "background_provision_ids": ["PROV-M094-005", "PROV-M094-023", "PROV-M094-024"],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps: (1) rule (20) fixes what the attestation must state and rule (21) fixes its form; (2) those recitals must be filled from the execution rules - rule (9) on identification of an executant not known to the notary, rule (12) on signing in the presence of one another, rule (11) on reading over with its carve-out for codicils, rule (8) on two witnesses signing in letters, rule (18) on date and place in letters; (3) rule (22) restricts the notary to Sinhala and so triggers rule (15), which obliges him to write over the witnesses' English-character signatures and to record that in the attestation.",
+      "reasoning_edges": [
+        {"from_provision_id": "PROV-M094-014", "to_provision_id": "PROV-M094-019", "relationship": "procedurally_requires"},
+        {"from_provision_id": "PROV-M094-014", "to_provision_id": "PROV-M094-016", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M094-014", "to_provision_id": "PROV-M094-011", "relationship": "cross_references"},
+        {"from_provision_id": "PROV-M094-016", "to_provision_id": "PROV-M094-010", "relationship": "cross_references"},
+        {"from_provision_id": "PROV-M094-016", "to_provision_id": "PROV-M094-013", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M094-020", "to_provision_id": "PROV-M094-012", "relationship": "qualifies"},
+        {"from_provision_id": "PROV-M094-021", "to_provision_id": "PROV-M094-011", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M094-008", "to_provision_id": "PROV-M094-015", "relationship": "cross_references"},
+        {"from_provision_id": "PROV-M094-009", "to_provision_id": "PROV-M094-008", "relationship": "amends"}
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Sarth Perera of No.14, Saranankara Mawatha, Dehiwala gives you a copy of his Last Will bearing No.3250 dated 8th August 2009 attested by Peter Perera Notary Public and states that he wants to change clause 5 in the Last Will such that he would give his House and property called Malwatta at Moratuwa to his Daughter Himali and his house at No.14, Dammadara Mawatha, Ratmalana to his son Hemal both subject to life interest of his wife Kumudu. He also wishes to add to the Last Will a clause thereby that he would give Rs.250, 000/- in cash to his driver Bandula and a sum of Rs.50, 000/- to his servant Karunadasa. All other clauses in the Last Will would remain unchanged.\n\nSarath Perera is not known to you. He signs in sinhala as \"S. Perera\". He has brought 2 friends namely Ranjith De Silva and Kamani De Silva both of No.20, Sri Saranankara Rd, Dehiwala who are known to you and who sign in English characters.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What the attestation of the codicil to Last Will No. 3250 must contain, and how it must record that the executant is not known to the notary but is known to the two attesting witnesses who are known to the notary and who sign in English characters while the notary is licensed to practise in Sinhala.",
+        "rule": "The notary must without delay attest every instrument executed before him and sign and seal the attestation, stating that the instrument was signed by the party and the witnesses in his presence and in the presence of one another (Notaries Ordinance s.31, rule (20) chapeau and (a)); the day, month, year and place of execution and the full names and residences of the attesting witnesses, and whether the instrument was read over by the executant or read and explained by the notary (rule (20)(c) and (d)); and whether the executants are known to him or the witnesses are known to him, specifying in the latter case which executant is known to which witness (rule (20)(b), the wording of which was replaced in 2022; in April 2019 rule (9) required the executant to be known to the notary or to at least two of the attesting witnesses). The attestation must be substantially in Form E of the Second Schedule and signed legibly in the language of the instrument (rule (21)). At least two witnesses must subscribe their signatures in letters (rule (8)); the executant and witnesses must sign in the notary's presence and in the presence of one another and he must sign in theirs (rule (12)); the instrument must be read over and explained where required, but in the case of wills and codicils this need not be done in the presence of the attesting witnesses (rule (11)); the date and place must be inserted in letters (rule (18)); the notary may not attest in a language other than that in which he is authorised to practise (rule (22)); and where a party or witness signs in a language other than the notary's language of practice, the notary must write over that signature, in his own hand and at the time of execution, words identifying whose signature it is (rule (15)).",
+        "application": "The notary practises in Sinhala, so the codicil and the attestation are drawn and signed in Sinhala. The testator signs in Sinhala as 'S. Perera'; both witnesses sign in English characters, so the notary must write over each of their signatures the words 'This is the signature of Ranjith De Silva' and 'This is the signature of Kamani De Silva' respectively at the time of execution, and recite that he did so. The testator is not known to the notary, but the two witnesses are known to the notary, so the attestation identifies the executant through them. Substance of the draft attestation: 'I, ......., of Dehiwala, Notary Public, licensed to practise in the Sinhala language, do hereby certify and attest that the foregoing instrument, being a Codicil to Last Will No.3250 dated Eighth August Two Thousand and Nine attested by Peter Perera, Notary Public, having been duly read over and explained by me the said Notary to the within named Sarath Perera of No.14, Saranankara Mawatha, Dehiwala, and he having declared that he understood the contents and effect thereof and that the same was in accordance with his instructions and his last wish, the same was signed by the said Sarath Perera in Sinhala characters as \"S. Perera\", and by the witnesses hereto Ranjith De Silva and Kamani De Silva, both of No.20, Sri Saranankara Road, Dehiwala, in English characters, and by me the said Notary, all being present at the same time at Dehiwala on this ....... day of ....... Two Thousand and Nineteen, in the presence of one another. I further certify and attest that the said Sarath Perera is not known to me, but is known to the said witnesses Ranjith De Silva and Kamani De Silva, who are both known to me; that the said witnesses having signed in a language other than that in which I am authorised to practise, I wrote in my own hand over their respective signatures at the time of execution the words \"This is the signature of Ranjith De Silva\" and \"This is the signature of Kamani De Silva\"; that no consideration passed in my presence; that the original bears stamps of the value of Rupees ....... and the duplicate stamps of the value of Rupees .......; and that no erasures, alterations or interpolations were made in the said Codicil, in its serial number, in the signatures thereto or in this attestation. Which I attest. (Signed in Sinhala) ......., Notary Public. (Seal)'",
+        "conclusion": "An attestation in the above form satisfies rule (20) read with rule (21) of section 31 of the Notaries Ordinance for this codicil, because it records the signing by executant, witnesses and notary in the presence of one another, the date and place, the full names and residences of the two witnesses, the reading over and explanation, the identification of the executant through the witnesses who are known to the notary, the writing over of the English-character signatures required by rule (15), the stamps, and the absence of erasures. The draft is proposed only: the corpus does not contain Form E as it stood in April 2019, and the corpus wording of rule (9) and rule (20)(b) is the post-2022 text, so the exact recitals required at the matter date need to be confirmed against the 2019 edition."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M094-Q02-001",
+          "claim_text": "The notary must attest the instrument without delay, sign and seal the attestation, and state in it that the instrument was signed by the party and the witnesses in his presence and in the presence of one another.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-014"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q02-002",
+          "claim_text": "The attestation must state the day, month, year and place of execution, the full names and residences of the attesting witnesses, and whether the instrument was read over by the executant or read and explained by the notary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-016", "PROV-M094-013"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q02-003",
+          "claim_text": "The attestation must be substantially in Form E of the Second Schedule and signed legibly by the notary in the language in which the instrument is written.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-019"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q02-004",
+          "claim_text": "Where a party or witness signs in a language other than that in which the notary is authorised to practise, the notary must write over that signature in his own hand at the time of execution words identifying whose signature it is.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-012"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q02-005",
+          "claim_text": "A notary may not attest an instrument in, or drawn in, any language other than that in which he is authorised to practise.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-020"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q02-006",
+          "claim_text": "In the case of wills and codicils the reading over and explanation need not take place in the presence of the attesting witnesses.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-010"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q02-007",
+          "claim_text": "At least two witnesses must subscribe their signatures in letters, and the executant, the witnesses and the notary must sign in the presence of one another.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M094-021", "PROV-M094-011"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q02-008",
+          "claim_text": "Because the notary is licensed to practise in Sinhala, the codicil and its attestation are drawn and signed in Sinhala, and the testator's Sinhala signature as 'S. Perera' needs no writing over.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M094-020", "PROV-M094-019"],
+          "supporting_fact_ids": ["BG-5", "BG-6"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q02-009",
+          "claim_text": "Because Ranjith De Silva and Kamani De Silva sign in English characters, the notary must write over each signature the words 'This is the signature of ...' at the time of execution and recite that he did so in the attestation.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M094-012"],
+          "supporting_fact_ids": ["BG-7"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q02-010",
+          "claim_text": "Because Sarath Perera is not known to the notary while the two attesting witnesses are known to him, the attestation must state that the executant is not known to the notary but is known to the named witnesses, who are known to the notary.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M094-009", "PROV-M094-015"],
+          "supporting_fact_ids": ["BG-8"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q02-011",
+          "claim_text": "An attestation in the drafted form satisfies rule (20) read with rule (21) of section 31 of the Notaries Ordinance for this codicil.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M094-014", "PROV-M094-016", "PROV-M094-019"],
+          "supporting_fact_ids": ["BG-5", "BG-7", "BG-8"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M094-Q02-012",
+          "claim_text": "The exact recitals required in April 2019 cannot be settled from the corpus, because the corpus holds only the post-2022 text of rule (9) and rule (20)(b) and does not contain Form E of the Second Schedule.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M094-008", "PROV-M094-015", "PROV-M094-018", "PROV-M094-019"],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "blocked_temporal_uncertainty",
+      "block_reason": "The authority requirement is statute_only, but the corpus carries only the consolidated post-2022 and post-2024 text of section 31 of the Notaries Ordinance. Two of the rules that decide this question changed after the April 2019 matter date: rule (9) was substituted in 2022 and again in 2024, and rule (20)(b), the paragraph that carries the 'not known to me but known to the witnesses' recital, was substituted in 2022 with wording that adds identification by national identity card, passport or driving licence. Rule (20)(h), requiring the attestation of a will to state that the testator was of sound mind, was only inserted in 2022. Form E of the Second Schedule, prescribed by rule (21), is absent from the corpus, and the only Form E text available is the 2022 replacement. The April 2019 wording of rule (9) survives verbatim only in the recital in section 16(6) of Act No. 31 of 2022. The draft attestation is therefore proposed subject to confirmation against the 2019 edition of the Ordinance and Form E as it then stood.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

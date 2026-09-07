@@ -1,0 +1,62 @@
+{
+  "benchmark_matter_id": "M072",
+  "source_matter_id": "P12-Q04-M02",
+  "grouping_key": "P12-Q04-M02",
+  "paper_no": 12,
+  "question_no": 4,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Gayan Alwis is a Notary licensed to practice within the High Court Jurisdiction of Galle. His client Anura Fernando wishes to purchase a property in Ratnapura from a person living there who is unable to travel to Galle due to ill health to execute the Deed.",
+    "normalized": "Gayan Alwis is a Notary licensed to practice within the High Court Jurisdiction of Galle. His client Anura Fernando wishes to purchase a property in Ratnapura from a person living there who is unable to travel to Galle due to ill health to execute the Deed.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P12-Q04-P02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M072-Q01",
+      "atomic_id": "P12-Q04-P02",
+      "part_uid": "paper-12/q4/ii",
+      "part_id": "ii",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 49,
+      "question_original": "Write 2 methods Gayan Alwis could advice his client to execute a valid Deed of Transfer. In which method Gayan Alwis himself could attest the deed of Transfer?",
+      "question_normalized": "Write 2 methods Gayan Alwis could advice his client to execute a valid Deed of Transfer. In which method Gayan Alwis himself could attest the deed of Transfer?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Gayan Alwis is a Notary licensed to practice within the High Court Jurisdiction of Galle. His client Anura Fernando wishes to purchase a property in Ratnapura from a person living there who is unable to travel to Galle due to ill health to execute the Deed.",
+      "effective_background_normalized": "Gayan Alwis is a Notary licensed to practice within the High Court Jurisdiction of Galle. His client Anura Fernando wishes to purchase a property in Ratnapura from a person living there who is unable to travel to Galle due to ill health to execute the Deed.",
+      "source_quote": "(ii) Gayan Alwis is a Notary licensed to practice within the High Court Jurisdiction of Galle. His client Anura Fernando wishes to purchase a property in Ratnapura from a person living there who is unable to travel to Galle due to ill health to execute the Deed. Write 2 methods Gayan Alwis could advice his client to execute a valid Deed of Transfer. In which method Gayan Alwis himself could attest the deed of Transfer?\n(03 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.8,
+        "flags": [
+          "question combines two requests"
+        ]
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2020-04",
+  "exam_session": "APRIL 2020",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

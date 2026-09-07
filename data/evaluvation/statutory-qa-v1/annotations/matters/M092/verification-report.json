@@ -1,0 +1,204 @@
+{
+  "benchmark_matter_id": "M092",
+  "verifier": "verifier-M092",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:22:31Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M092-001",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim of the current text, but the renumbering as subsection (1) and the closing words ‘subject to the provisions specified in subsection (2)’ were made by Prevention of Frauds (Amendment) Act No. 30 of 2022 s.3(1)-(2); in April 2019 the section read ‘executed in the manner hereinafter mentioned’ and that repealed wording is not in the corpus."
+    },
+    {
+      "provision_id": "PROV-M092-002",
+      "decision": "partially_verified",
+      "note": "Confirmed against 30-2022 s.3(3): the whole of subsection (2) was added in 2022 and the pre-2022 words prescribing the manner of execution were repealed by the same section, so the April 2019 requirement of signature at the foot or end before a notary and two witnesses present together is a reconstruction that cannot be read anywhere in the corpus."
+    },
+    {
+      "provision_id": "PROV-M092-003",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-004",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-005",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-006",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-007",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-008",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-009",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-010",
+      "decision": "partially_verified",
+      "note": "In April 2019 the quoted duty was introduced by the words ‘and in the latter case, he shall satisfy himself’, which Act No. 6 of 2024 s.3(3) replaced with ‘he shall’; at the matter date the good-repute and acquaintance duty therefore applied where the executant was known to the notary through the two attesting witnesses, not unconditionally as the excerpt now reads."
+    },
+    {
+      "provision_id": "PROV-M092-011",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-012",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-013",
+      "decision": "partially_verified",
+      "note": "Section 34 was repealed and replaced by Notaries (Amendment) Act No. 31 of 2022 s.17, so the paragraph lettering, the rule lists in paragraphs (a) and (b) and the fine levels are all 2022 text; the April 2019 section is not in the corpus, so the inference that rule (22) falls into the residual paragraph (c) cannot be read off the law in force at the matter date."
+    },
+    {
+      "provision_id": "PROV-M092-014",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-015",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-016",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-017",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-018",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M092-019",
+      "decision": "partially_verified",
+      "note": "Wording is verbatim of the text substituted by Act No. 29 of 2022; the April 2019 text is not in the corpus, so the provision cannot support even a background statement about testamentary capacity as at the matter date."
+    },
+    {
+      "provision_id": "PROV-M092-020",
+      "decision": "partially_verified",
+      "note": "Wording verified and the temporal finding confirmed against 31-2022 s.16(11)(d), which inserted paragraph (h); because it was not in force in April 2019 it has been moved from supporting to background and its reasoning edge to PROV-M092-007 removed."
+    },
+    {
+      "provision_id": "PROV-M092-901",
+      "decision": "verified",
+      "note": "Added by the verifier; excerpt checked as a verbatim substring of 1-1907/s4A."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M092-901",
+      "reason": "Notaries Ordinance s.4A deems a warrant issued under s.3 or s.4 for the judicial division in which the notary resides to authorise practice throughout the judicial zone in which he resides. Read with s.3(1) and s.4(2), it is the provision that measures the area rule (22) protects, and it is the corpus provision the researcher needed but rejected. It cuts directly against the proposed conclusion, so the map must carry it."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M092-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "Wording of every provision checks out, but the answer turns on a territorial premise the corpus states a rule about (s.4A) and cannot supply the facts for, and on two sections held only in post-2022 text. Authority requirement is unchanged: no case law is needed."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "scope_of_notarial_warrant",
+      "researcher_position": "A warrant expressed as 'Colombo' does not reach Mount Lavinia, so s.31 rule (22) bars this notary from attesting at the bedside; the territorial point is supplied as a scenario fact because the corpus cannot settle it.",
+      "verifier_position": "The corpus does address it. Sections 3(1) and 4(2) entitle a notary to a warrant for the judicial zone in which he resides, and s.4A deems a warrant expressed for a judicial division to authorise practice in that whole judicial zone. The notary resides at Battaramulla and holds a Colombo warrant, so the more natural reading is that his area is a judicial zone rather than the city, and Mount Lavinia may well fall inside it. If it does, rule (22) is not engaged and he may attend the bedside and attest himself, which is the opposite of the proposed conclusion.",
+      "supporting_sources": [
+        "1-1907/s3",
+        "1-1907/s4",
+        "1-1907/s4A",
+        "1-1907/s11",
+        "1-1907/s31"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "temporal_basis_of_the_mode_of_execution",
+      "researcher_position": "Prevention of Frauds Ordinance s.4(2) is quoted in its current form but relied on only for the signature, notary and two-witness elements, which were in force in April 2019.",
+      "verifier_position": "Act No. 30 of 2022 s.3 repealed all the words of s.4 from 'in the manner hereinafter mentioned' to the end and added subsection (2) in its place. Every word the answer relies on for the mode of execution is therefore 2022 text, and the April 2019 wording is nowhere in the corpus. The proposition may well be right as law, but it is not verifiable here.",
+      "supporting_sources": [
+        "7-1840/s4",
+        "30-2022/s3"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "enrichment_pre_decides_the_question",
+      "researcher_position": "FACT-M092-Q01-002 supplies the territorial premise and names an available notary for the client's area, so that the alternative route is determinate.",
+      "verifier_position": "The examiner's facts (licensed for Colombo, resident at Battaramulla, client at Mount Lavinia) are the question. Stipulating that the warrant does not reach Mount Lavinia, and supplying a second notary who is warranted for it, answers the question in the background rather than in the analysis.",
+      "supporting_sources": [
+        "candidates/matters/M092.json",
+        "1-1907/s4A"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M092-Q01-013: 'That place lies outside the area specified in the notary's warrant' rests entirely on the stipulated fact and is contradicted on its face by s.4A.",
+      "CL-M092-Q01-015: 'His residence at Battaramulla does not enlarge his competence' is wrong as stated. Under s.3(1), s.4(2) and s.4A residence is precisely what fixes the judicial zone a warrant covers; s.9 is not the only place residence bears on the question.",
+      "CL-M092-Q01-016 and CL-M092-Q01-021 inherit the same defect and are marked disputed.",
+      "CL-M092-Q01-004 states the rule (9) duty unconditionally; at the matter date it was prefaced by 'and in the latter case'.",
+      "CL-M092-Q01-009 rests on the 2022 replacement of s.34."
+    ],
+    "temporal_issues": [
+      "7-1840/s4: subsection (2) in full, the renumbering of subsection (1) and its closing cross-reference are all Act No. 30 of 2022 s.3 text. The April 2019 wording was repealed by that section and is not held.",
+      "1-1907/s34: repealed and replaced by Act No. 31 of 2022 s.17, so the residual-paragraph inference for rule (22) cannot be made from the 2019 law.",
+      "1-1907/s31 rule (9): the trailing limb the answer quotes was conditional in April 2019; Act No. 6 of 2024 s.3(3) made it unconditional.",
+      "21-1844/s2: text of Act No. 29 of 2022 only; already flagged not applicable and now marked partially_verified.",
+      "1-1907/s31 rule (20)(h): confirmed inserted by Act No. 31 of 2022 s.16(11)(d), so not in force in April 2019; moved from supporting to background.",
+      "Positively resolved by the verifier: rules (8), (11), (12), (18), (21), (22), (24), (36)(c) and the rule (20) chapeau and paragraph (a) are untouched by every amending Act in the corpus (20-1976 s.10, 47-2011 ss.2-3, 31-2022 s.16, 6-2024 s.3), so the researcher's 'not recorded as amended' assumption holds and those provisions are verified for April 2019.",
+      "Rule (10) of s.31 was repealed by Act No. 6 of 2024 s.3(4) and is absent from the consolidated text, so a rule in force at the matter date cannot be read."
+    ],
+    "missing_definitions_or_exceptions": [
+      "1-1907/s4A, s.3(1) and s.4(2): the scope of a notarial warrant. Added as PROV-M092-901.",
+      "'Judicial zone' is used throughout the Notaries Ordinance and defined nowhere in the corpus.",
+      "1-1907/s31 rule (23) expressly cross-refers to s.11 for a change of area and renumbering on change of zone; a small omission, not indispensable.",
+      "7-1840/s10 (a will is not void because an attesting witness is incompetent) sits beside s.11 and would round out the witness discussion."
+    ],
+    "case_law_dependence": [],
+    "enrichment_issues": [
+      "FACT-M092-Q01-002 is marked synthetic_decisive but decides the legal issue rather than supplying a fact, and its counterfactual_effect concedes as much.",
+      "The enriched background introduces 'Mrs. Nirmali Perera is a notary public whose warrant authorises her to practise in the area in which Mount Lavinia lies', which supplies the remedy the answer reaches.",
+      "The enriched background asserts 'the area specified in that warrant does not extend to Mount Lavinia' in the same sentence as the warrant itself, which reads as a conclusion rather than a fact.",
+      "FACT-M092-Q01-004 fixes the signing for 15 May 2019, after the April 2019 exam session; harmless but it makes the matter reference date and the instrument date disagree."
+    ],
+    "duplicate_or_leak_issues": [
+      "No statute names or section numbers leak into the enriched background.",
+      "The background does leak the conclusion, as recorded under enrichment_issues."
+    ]
+  },
+  "lawyer_questions": [
+    "In April 2019, did a notary's warrant expressed as 'Colombo', held by a notary resident at Battaramulla, extend to Mount Lavinia by force of s.4A of the Notaries Ordinance? The whole answer turns on this and the corpus cannot settle it.",
+    "What did Prevention of Frauds Ordinance s.4 say before Act No. 30 of 2022, and does the answer's statement of the mode of execution hold on that wording?",
+    "What was the penalty structure of Notaries Ordinance s.34 before the 2022 replacement, and did breach of rule (22) attract a fine on the same footing?",
+    "Is it acceptable for an enriched scenario to stipulate the territorial premise that the examiner set as the issue, or must FACT-M092-Q01-002 be withdrawn and the question answered in the alternative?"
+  ]
+}

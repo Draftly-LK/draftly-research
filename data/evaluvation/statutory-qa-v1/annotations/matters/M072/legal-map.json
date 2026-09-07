@@ -1,0 +1,488 @@
+{
+  "benchmark_matter_id": "M072",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M072",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:48:37Z",
+    "verification_agent": "verifier-M072",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T23:02:04Z"
+  },
+  "matter_reference_date": "2020-04",
+  "matter_reference_date_basis": "matter_reference_date field of candidates/matters/M072.json; exam session APRIL 2020",
+  "corpus_gaps": [
+    "The corpus holds only the current consolidated editions of the Notaries Ordinance, the Prevention of Frauds Ordinance and the Powers of Attorney Ordinance. There is no April-2020 snapshot, so the verbatim wording of Prevention of Frauds Ordinance s.2, Notaries Ordinance s.31 rule (30), s.34 and Powers of Attorney Ordinance ss.2 and 3 quoted here incorporates amendments made in 2022 and 2024, after the matter date. Each affected provision carries a temporal_note.",
+    "Notaries Ordinance s.31 rule (22) ties a notary's competence to 'the area in which he is authorized to practice'. The corpus contains no schedule or instrument defining the territorial extent of the Galle judicial zone or of the zone in which Ratnapura lies, so the conclusion that Ratnapura falls outside Gayan Alwis's area rests on the facts stated in the question rather than on a corpus provision.",
+    "The law of agency governing the scope, revocation and death-determination of a power of attorney is Roman-Dutch common law and is not in the corpus; the map relies only on the statutory form and attestation requirements.",
+    "Notaries Ordinance s.32 refers to rules (20), (23) to (26) and rule (16); the corpus consolidation of s.31 numbers some of these differently after the 2011, 2022 and 2024 restructurings, so rule-number cross-references inside the Ordinance should be re-checked by the verifier."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M072-001",
+      "section_id": "1-1907/s2",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "Every appointment to the office of notary shall be by warrant granted by the Minister, and shall specify the area within which, and the language or languages in which, the person appointed is authorized to practice.",
+      "why_relevant": "Source of the territorial limit on a notary's competence: the warrant, not the Ordinance at large, fixes the area within which Gayan Alwis may act. His warrant covers the Galle High Court jurisdiction only.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907; the corpus records no amendment event on this section, so the text quoted is the text in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M072-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (22)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice",
+      "why_relevant": "The operative prohibition. It bars Gayan Alwis from attesting a deed anywhere outside the area in his warrant, so he cannot travel to the vendor in Ratnapura and attest there. It is what forces the answer to the second half of the question.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 as a whole carries amendment events in 1976, 2011, 2022 and 2024, but none of the recorded events is directed at rule (22); the 1976 amendment law substituted 'zone' for 'division' throughout the Ordinance. The prohibition was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M072-003",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary",
+      "why_relevant": "Sets the validity condition for any transfer of immovable property and, critically, allows the deed to be signed by a person duly authorised by the executant instead of the executant in person. That is the statutory opening for the power-of-attorney method.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The section was in force in April 2020, but the corpus holds the consolidated text incorporating amendments by Act No. 30 of 2022 and Act No. 4 of 2024 (thumb impressions, transferee signature). The element relied on here, that the deed may be signed by the executant or by a person duly authorised by him before a notary and witnesses and attested by that notary, is the long-standing content of the section; the exact wording quoted post-dates the matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim but is the text as substituted by Prevention of Frauds (Amendment) Act No. 4 of 2024 s.2(2)(a); the corpus copy of Act No. 30 of 2022 s.2 shows that between 2022 and 2024 paragraph (a) read 'signed by every executant and attested by a notary public before two witnesses present at the same time', with no authorised-signatory limb, so the researcher's note that this wording is the long-standing content of the section is wrong as stated; the April-2020 wording is not in the corpus and the only corpus support for an authorised signatory at that date is the parallel recital in the unamended 17-1852/s2."
+    },
+    {
+      "provision_id": "PROV-M072-004",
+      "section_id": "4-1902/s2",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "2",
+      "subsection": "definition of \"power of attorney\"",
+      "relevant_excerpt": "means any written power or authority other than that given to an attorney at law for the purpose of appearing as an attorney at law on behalf of such person, given by one person to another, to represent him, to perform any work, do any act, or carry on any trade or business, and - (a) if it is executed in Sri Lanka, executed before two witnesses and attested by a notary public",
+      "why_relevant": "Defines the instrument by which the Ratnapura vendor can authorise someone else to sign the deed of transfer, and fixes its own formalities: two witnesses and notarial attestation. The vendor can satisfy these in Ratnapura, before a notary authorised for that area, without travelling.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The definition was in force in April 2020, but the corpus text is the definition as repealed and substituted by Act No. 28 of 2022 and further substituted by Act No. 3 of 2024. The two elements relied on here, a written authority given by one person to another to act for him and execution before two witnesses with notarial attestation when executed in Sri Lanka, were in the section before those amendments; the verifier should confirm the April-2020 wording against a pre-2022 edition.",
+      "verification_status": "unresolved",
+      "verifier_note": "The whole definition of 'power of attorney' was repealed and substituted by Powers of Attorney (Amendment) Act No. 28 of 2022 s.2(1) and substituted again by Act No. 3 of 2024 s.2, and the corpus holds no pre-2022 text, so it cannot be shown from the corpus that the limb relied on, execution before two witnesses and attestation by a notary public, formed part of the definition in April 2020."
+    },
+    {
+      "provision_id": "PROV-M072-005",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (30)",
+      "relevant_excerpt": "If he attest any deed or instrument executed before him by means of an attorney, he shall preserve a true copy of the power of attorney with his protocol, and shall forward a like copy with the duplicate to the Registrar of Lands.",
+      "why_relevant": "Statutory recognition that a notary may attest a deed 'executed before him by means of an attorney', and the duty that attaches when he does. This is the rule that confirms Gayan Alwis himself can attest in the power-of-attorney method.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (30) was in force in April 2020. Act No. 31 of 2022 s.16(13) substituted the tail of the rule from the words 'he shall preserve a true copy of the registered power of attorney with his protocol', and Act No. 6 of 2024 s.3(10) amended it further, so the April-2020 rule referred to the registered power of attorney. The proposition relied on, that a notary may attest a deed executed before him by means of an attorney and must keep a copy of the power with his protocol, is unaffected.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim but the corpus consolidation of rule (30) is stale rather than post-2022 as the researcher's note says: 31-2022 s.16(13) substituted the tail of the rule from the words 'he shall preserve a true copy of the registered power of attorney with his protocol' and 6-2024 s.3(10) substituted it again, and neither change is reflected in the corpus text; the April-2020 rule required a copy of the registered power of attorney, while the opening limb relied on, 'If he attest any deed or instrument executed before him by means of an attorney', is untouched by either amendment and was in force at the matter date."
+    },
+    {
+      "provision_id": "PROV-M072-006",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (29)",
+      "relevant_excerpt": "deliver or transmit to the Registrar of Lands of the district in which such land shall be situated a copy thereof certified by him as correct, together with a list in duplicate in the Form F 1 in the Second Schedule",
+      "why_relevant": "Shows that the Ordinance contemplates a notary attesting a deed that affects land in a district other than his own, and imposes the extra filing duty in that case. It answers the objection that a Galle notary cannot deal with Ratnapura land at all: the limit in rule (22) is on where he attests, not on where the land lies.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The rule in its present shape dates from Notaries (Amendment) Law No. 20 of 1976 s.10(1); Act No. 6 of 2024 s.3(9) only substituted the form reference 'Form F 1' for 'Form F'. The duty relied on was in force in April 2020, with the form then cited as Form F.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording and supporting role are right, but the excerpt quotes 'Form F 1', which 6-2024 s.3(9) substituted for 'Form F', so the excerpt is not the text in force in April 2020 even though the filing duty relied on is."
+    },
+    {
+      "provision_id": "PROV-M072-007",
+      "section_id": "17-1852/s2",
+      "act_id": "17-1852",
+      "formal_title": "Deeds and Documents (Execution before Public Officers) Ordinance",
+      "number_and_year": "No. 17 of 1852",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "be valid and effectual, so far as relates to the execution thereof, if the same be signed by the party making the same or by some person lawfully authorized by him, and by two or more witnesses present at the same time, in the presence of some District Judge or Commissioner of a Court of Requests* for the district in which the party making such writing, deed, or instrument, or the person signing the same as such attorney, resides",
+      "why_relevant": "A further statutory route to a valid deed that does not need a notary at all: execution before the District Judge, or a specially authorised Justice of the Peace, for the district where the executant resides. It is available to the Ratnapura vendor locally, and it is a route in which Gayan Alwis plainly cannot be the attesting officer.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1852; the corpus records no amendment event. The reference to a Commissioner of a Court of Requests is marked in the corpus as a superseded office.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M072-008",
+      "section_id": "4-1902/s3",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3",
+      "subsection": "(a)",
+      "relevant_excerpt": "Every power of attorney executed in Sri Lanka or any other country shall be registered with the Registrar General.",
+      "why_relevant": "Registration duty that attaches to the power of attorney once granted. It is a step the advice should mention, but the validity of the deed of transfer under Prevention of Frauds Ordinance s.2 does not turn on it, so it is supporting rather than indispensable.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 3 was in force in April 2020 but the corpus text is the section as repealed and substituted by Act No. 28 of 2022 s.3, which also introduced the one-month and three-month filing windows. The verifier should check the April-2020 registration requirement against a pre-2022 edition before this is relied on.",
+      "verification_status": "unresolved",
+      "verifier_note": "Section 3 was repealed and substituted in its entirety by Powers of Attorney (Amendment) Act No. 28 of 2022 s.3 and the corpus holds no pre-2022 text, so the April-2020 registration duty cannot be established from the corpus; the pre-2022 wording of Notaries Ordinance s.31 rule (30) quoted in 31-2022 s.16(13) refers to a registered power of attorney, which shows registration was contemplated at the matter date but does not fix the terms of the duty."
+    },
+    {
+      "provision_id": "PROV-M072-009",
+      "section_id": "1-1907/s4A",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "4A",
+      "subsection": null,
+      "relevant_excerpt": "Every warrant issued to a notary under the provisions of section 3* or section 4* authorizing him to practice as a notary in any judicial division in which he resides, shall be deemed to authorize him to practice as a notary in the judicial zone in which he resides.",
+      "why_relevant": "Fixes the unit of a notary's territorial competence as the judicial zone of residence, which is how the warrant area in section 2 is read today and why a Galle warrant does not reach Ratnapura.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Notaries (Amendment) Law No. 20 of 1976 s.4; in force from 1976, well before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M072-010",
+      "section_id": "1-1907/s34",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "34",
+      "subsection": "(1)(c)",
+      "relevant_excerpt": "any other rule set out in section 31, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate, be liable to a fine not exceeding fifty thousand rupees, in addition to any civil liability he may incur thereby",
+      "why_relevant": "Gives the sanction for breach of rule (22), which is why attesting outside his area is not a course Gayan Alwis may take as a matter of convenience.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 34 was substituted by Act No. 31 of 2022 s.17, so the fifty thousand rupee ceiling quoted post-dates April 2020. A penalty for breach of the section 31 rules existed at the matter date, at a lower figure that the corpus does not hold; the amount is not relied on in the answer.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Section 34 was substituted wholesale by 31-2022 s.17, so the entire quoted paragraph (1)(c), not only the fifty thousand rupee ceiling, post-dates April 2020, and the corpus does not hold the penalty provision in force at the matter date (the Increase of Fines Act No. 12 of 2005 amends the Notaries Ordinance through schedules the corpus does not carry); the proposition actually relied on, that breach of a section 31 rule is an offence triable summarily before a Magistrate, is not in doubt."
+    },
+    {
+      "provision_id": "PROV-M072-011",
+      "section_id": "4-1902/s3A",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3A",
+      "subsection": "(1)",
+      "relevant_excerpt": "A power of attorney granted to be used for the purpose of a transaction which falls within the scope of section 2 of the Prevention of Frauds Ordinance (Chapter 70) shall be executed subject to the provisions specified in subsection (2) or (3), as the case may be.",
+      "why_relevant": "Recorded as background only. It is the modern, much stricter code for a power of attorney used in a land transaction. It did not exist at the matter date and must not be used to grade an April 2020 answer, but a reader of the current statute book would expect to see it.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Inserted by Powers of Attorney (Amendment) Act No. 28 of 2022 s.4; in force from 2022, after the matter reference date of April 2020. Not relied on in the gold answer.",
+      "verification_status": "verified",
+      "verifier_note": "Correctly recorded as background with applicable_to_matter_date false; 4-1902/s3A carries an insert event by 28-2022 and must not bear on an April-2020 answer."
+    },
+    {
+      "provision_id": "PROV-M072-901",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (12)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+      "why_relevant": "Added by the verifier. This is the rule that makes the vendor's inability to travel a legal problem rather than an inconvenience: the notary may not attest unless the person executing the deed signed it in his presence and in the presence of the witnesses. It is why the answer must choose between sending an attorney to Galle and moving the attestation to Ratnapura, and unlike Prevention of Frauds Ordinance s.2 it is temporally stable.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (12) is not among the rules amended by 20-1976 s.10 (rule (29) only), 47-2011 ss.2 and 3 (rules (16) and (26)), 31-2022 s.16 (rules (3) to (7), (9), (14) to (17), (20), (27) and (30)) or 6-2024 s.3 (rules (5), (7A), (9), (10), (15A), (17), (20), (26), (29) and (30)), so the text quoted is the text in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier as an indispensable and temporally stable anchor for the presence requirement that PROV-M072-003 would otherwise have to carry on post-2022 wording."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M072-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Both halves of the question are answered by statute. The validity conditions for a deed transferring immovable property are in Prevention of Frauds Ordinance s.2, the alternative of execution before a public officer is in Deeds and Documents (Execution before Public Officers) Ordinance s.2, the power-of-attorney route rests on Powers of Attorney Ordinance s.2 read with Prevention of Frauds Ordinance s.2, and the territorial limit that decides who may attest is Notaries Ordinance s.2 read with s.31 rule (22) and rule (30). No judicial authority or Roman-Dutch doctrine is needed to reach a complete answer, although the general law of agency would govern questions about the scope of the power that this question does not raise.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M072-Q01-01",
+          "issue": "By what methods can a deed transferring immovable property be validly executed when the transferor cannot attend before the purchaser's notary?",
+          "status": "disputed"
+        },
+        {
+          "issue_id": "ISS-M072-Q01-02",
+          "issue": "Does the area specified in a notary's warrant limit where he may attest a deed, and does it also limit the location of the land the deed affects?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M072-Q01-03",
+          "issue": "In which of the available methods may Gayan Alwis, whose warrant covers the Galle judicial zone, attest the deed of transfer himself?",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M072-001",
+        "PROV-M072-002",
+        "PROV-M072-003",
+        "PROV-M072-004",
+        "PROV-M072-005",
+        "PROV-M072-901"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M072-006",
+        "PROV-M072-007",
+        "PROV-M072-008",
+        "PROV-M072-009",
+        "PROV-M072-010"
+      ],
+      "background_provision_ids": [
+        "PROV-M072-011"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across enactments. Step one: Prevention of Frauds Ordinance s.2 requires notarial execution and permits signature by a person duly authorised by the executant. Step two: that authorisation must take the statutory form of a power of attorney under Powers of Attorney Ordinance s.2, itself attested by a notary. Step three: Notaries Ordinance s.2 read with s.31 rule (22) fixes where Gayan Alwis may attest, and rule (30) confirms he may attest a deed executed before him by an attorney. Only these five provisions are counted; rule (29), the 1852 Ordinance, s.4A, s.3 of the Powers of Attorney Ordinance and s.34 add detail without carrying the chain. Verifier: PROV-M072-901 (s.31 rule (12)) has been added to the indispensable set as a second, temporally stable source of the presence requirement in step one; it restates that step rather than adding one, so the hop count stays at 3.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M072-009",
+          "to_provision_id": "PROV-M072-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M072-001",
+          "to_provision_id": "PROV-M072-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M072-901",
+          "to_provision_id": "PROV-M072-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M072-002",
+          "to_provision_id": "PROV-M072-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M072-003",
+          "to_provision_id": "PROV-M072-004",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M072-004",
+          "to_provision_id": "PROV-M072-005",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M072-004",
+          "to_provision_id": "PROV-M072-008",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M072-003",
+          "to_provision_id": "PROV-M072-006",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M072-007",
+          "to_provision_id": "PROV-M072-003",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M072-002",
+          "to_provision_id": "PROV-M072-010",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Gayan Alwis is a Notary licensed to practice within the High Court Jurisdiction of Galle. His client Anura Fernando wishes to purchase a property in Ratnapura from a person living there who is unable to travel to Galle due to ill health to execute the Deed.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "How can a valid deed transferring the Ratnapura property be executed when the vendor is too ill to travel to Galle, and in which of those methods may Gayan Alwis, whose warrant authorises him to practise only within the Galle judicial zone, attest the deed himself?",
+        "rule": "A transfer of immovable property is of no force in law unless the deed is in writing, signed by every executant or by a person duly authorised by the executant, together with the witnesses, in the presence of a licensed notary public present at the same time and in the presence of one another, and attested by that notary (Prevention of Frauds Ordinance s.2). The person who signs need not be the vendor: the authorisation contemplated by that section takes the form of a power of attorney, that is, a written authority given by one person to another to represent him and do any act on his behalf, which if executed in Sri Lanka must be executed before two witnesses and attested by a notary public (Powers of Attorney Ordinance s.2) and must be registered with the Registrar-General (Powers of Attorney Ordinance s.3). The Notaries Ordinance in terms allows a notary to attest a deed executed before him by means of an attorney, requiring him to preserve a true copy of the power of attorney with his protocol and to forward a like copy with the duplicate to the Registrar of Lands (s.31 rule (30)). A notary's competence is territorial: his warrant specifies the area within which he is authorised to practise (Notaries Ordinance s.2), a warrant for the judicial division of residence being deemed to authorise practice in the judicial zone of residence (s.4A), and he shall not attest any deed in any area other than that in which he is authorised to practise (s.31 rule (22)), breach of which is an offence punishable summarily (s.34). That limit is on the place of attestation only, not on the situation of the land: where the deed affects land in another district the notary must in addition transmit a certified copy to the Registrar of Lands of the district in which the land lies (s.31 rule (29)). Independently of the notarial route, a deed that Prevention of Frauds Ordinance s.2 would otherwise govern is valid if signed by the party or by a person lawfully authorised by him, and by two or more witnesses present at the same time, before the District Judge, or a specially authorised Justice of the Peace, for the district in which that party resides, and certified by that officer (Deeds and Documents (Execution before Public Officers) Ordinance s.2).",
+        "application": "The vendor lives in Ratnapura and cannot travel; Gayan Alwis's warrant covers only the Galle High Court jurisdiction. Notaries Ordinance s.31 rule (22) therefore stops him from going to Ratnapura and attesting the deed at the vendor's bedside, and s.34 makes doing so an offence. It does not stop him from acting on a Ratnapura property, since s.31 rule (29) expressly assumes that a notary may attest a deed affecting land in another district and merely adds a filing duty. The first method open to Anura Fernando is therefore to have the vendor grant a power of attorney in Ratnapura, executed before two witnesses and attested by a notary who is authorised to practise in the judicial zone in which Ratnapura lies, appointing an attorney who can travel; that power is registered with the Registrar-General, and the attorney then signs the deed of transfer in Galle, with the witnesses, in the presence of Gayan Alwis. Because the signature of a duly authorised person satisfies Prevention of Frauds Ordinance s.2 and the attestation takes place inside his own area, Gayan Alwis may attest that deed, keeping a true copy of the power with his protocol under rule (30) and sending a certified copy of the deed to the Registrar of Lands for the Ratnapura district under rule (29). The second method is to have the deed attested in Ratnapura itself, either by a notary who holds a warrant for that zone, who may attend on the vendor at home, or, without any notary, by execution before the District Judge or a specially authorised Justice of the Peace for the district in which the vendor resides under Deeds and Documents (Execution before Public Officers) Ordinance s.2. In that second method the attesting officer must be the local notary or the public officer, and rule (22) prevents Gayan Alwis from taking that role.",
+        "conclusion": "Gayan Alwis can advise two methods. First, the vendor grants a notarially attested power of attorney in Ratnapura and the attorney executes the deed of transfer in Galle. Second, the deed is executed in Ratnapura, either before a notary authorised to practise in that zone or before the District Judge or an authorised Justice of the Peace for that district under the Deeds and Documents (Execution before Public Officers) Ordinance. Only in the first method can Gayan Alwis himself attest the deed of transfer, because the execution then takes place within the area specified in his warrant; if he does, he must keep a copy of the power of attorney with his protocol and send a certified copy of the deed to the Registrar of Lands of the district where the land lies. How far the vendor is willing to entrust an attorney with the sale, and whether a suitable attorney is available, are matters of fact on which the papers say nothing."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M072-Q01-001",
+          "claim_text": "A transfer of immovable property is of no force in law unless the deed is in writing, signed by every executant or by a person duly authorised by the executant, and by the witnesses, in the presence of a licensed notary public present at the same time and in the presence of one another, and attested by that notary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M072-003",
+            "PROV-M072-901"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M072-Q01-002",
+          "claim_text": "The authorisation by which someone other than the executant may sign takes the form of a power of attorney, a written authority given by one person to another to represent him and do any act on his behalf, which if executed in Sri Lanka must be executed before two witnesses and attested by a notary public.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M072-004",
+            "PROV-M072-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M072-Q01-003",
+          "claim_text": "A power of attorney executed in Sri Lanka is to be registered with the Registrar-General.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M072-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M072-Q01-004",
+          "claim_text": "A notary may attest a deed executed before him by means of an attorney, and must then preserve a true copy of the power of attorney with his protocol and forward a like copy with the duplicate to the Registrar of Lands.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M072-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M072-Q01-005",
+          "claim_text": "A notary's warrant specifies the area within which he is authorised to practise, and a warrant for the judicial division in which he resides is deemed to authorise practice in the judicial zone in which he resides.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M072-001",
+            "PROV-M072-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M072-Q01-006",
+          "claim_text": "A notary shall not authenticate or attest any deed in any area other than that in which he is authorised to practise, and breach of that rule is an offence punishable on summary trial before a Magistrate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M072-002",
+            "PROV-M072-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M072-Q01-007",
+          "claim_text": "The territorial limit bears on where the deed is attested, not on where the land lies; a notary who attests a deed affecting land in another district must transmit a certified copy to the Registrar of Lands of the district in which the land is situated.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M072-006",
+            "PROV-M072-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M072-Q01-008",
+          "claim_text": "A deed otherwise governed by the Prevention of Frauds Ordinance is also valid if signed by the party or a person lawfully authorised by him, and by two or more witnesses present at the same time, before the District Judge or a specially authorised Justice of the Peace for the district in which that party resides, and certified by that officer.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M072-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M072-Q01-009",
+          "claim_text": "Because Gayan Alwis is authorised to practise only within the Galle High Court jurisdiction and the vendor is in Ratnapura, he cannot lawfully travel to the vendor and attest the deed there.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M072-001",
+            "PROV-M072-002",
+            "PROV-M072-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M072-Q01-010",
+          "claim_text": "The first method is for the vendor to grant a power of attorney in Ratnapura, before two witnesses and attested by a notary authorised for that area, so that the attorney can sign the deed of transfer in Galle in the presence of Gayan Alwis and the witnesses.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M072-003",
+            "PROV-M072-004",
+            "PROV-M072-008",
+            "PROV-M072-901"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M072-Q01-011",
+          "claim_text": "The second method is to have the deed executed in Ratnapura itself, either before a notary who holds a warrant for that judicial zone or before the District Judge or a specially authorised Justice of the Peace for that district.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M072-001",
+            "PROV-M072-003",
+            "PROV-M072-007"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M072-Q01-012",
+          "claim_text": "Gayan Alwis may himself attest the deed of transfer only in the power-of-attorney method, because the deed is then signed before him inside the area specified in his warrant by a person duly authorised by the vendor.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M072-002",
+            "PROV-M072-003",
+            "PROV-M072-004",
+            "PROV-M072-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M072-Q01-013",
+          "claim_text": "If Gayan Alwis attests the deed on a power of attorney, he must keep a true copy of the power with his protocol and, because the land is in Ratnapura, send a certified copy of the deed to the Registrar of Lands of that district.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M072-005",
+            "PROV-M072-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Verifier downgrade. Two provisions the power-of-attorney method rests on are unresolved on the corpus: the definition of 'power of attorney' in 4-1902/s2 (PROV-M072-004, indispensable) and the registration duty in 4-1902/s3 (PROV-M072-008) were each repealed and substituted by Act No. 28 of 2022 and the corpus holds no April-2020 text. The quoted wording of 7-1840/s2 is the 2024 text, and the corpus copy of Act No. 30 of 2022 shows the authorised-signatory limb was absent from the section between 2022 and 2024, so the researcher's long-standing-content reasoning does not hold as written. The territorial half of the answer (Notaries Ordinance s.2, s.4A and s.31 rules (12), (22) and (29)) is verified and unaffected. A lawyer needs to supply the April-2020 editions of Powers of Attorney Ordinance ss.2 and 3 and Prevention of Frauds Ordinance s.2 before this becomes gold.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

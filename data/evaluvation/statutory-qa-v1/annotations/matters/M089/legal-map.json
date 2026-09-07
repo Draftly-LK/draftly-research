@@ -1,0 +1,507 @@
+{
+  "benchmark_matter_id": "M089",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M089",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T23:05:00Z",
+    "verification_agent": "verifier-M089",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-05T00:00:00Z"
+  },
+  "matter_reference_date": "2019-04",
+  "matter_reference_date_basis": "Exam session APRIL 2019 recorded as matter_reference_date 2019-04 in candidates/matters/M089.json.",
+  "corpus_gaps": [
+    "The corpus contains no general enactment on praedial servitudes. In Sri Lanka the creation, transfer, division and extinction of a right of way is governed by the Roman-Dutch common law, which is not in the frozen corpus. Questions M089-Q01 and M089-Q02 turn on that common law and cannot be answered from statute alone.",
+    "No corpus provision states the rules that a praedial servitude is appurtenant to a dominant tenement, that it passes on subdivision of the dominant tenement to each subdivided lot, or that it cannot be alienated apart from the dominant tenement. Municipal Councils Ordinance s.327 only echoes the last idea for the interpretation of that Ordinance.",
+    "The corpus has no enactment governing approval of subdivision plans by a local authority or the vesting of a road reservation shown on an approved subdivision plan (no Urban Development Authority subdivision regulations, no local-authority building or subdivision by-laws).",
+    "The corpus does not record whether Kaduwela has been declared a Municipality under Municipal Councils Ordinance s.2, so the applicability of that Ordinance to Lot R1 is taken from the question itself.",
+    "Prevention of Frauds Ordinance s.2 is held in the corpus only in its current consolidated form, which incorporates amendments of 2022 and 2024; the corpus does not carry the text as it stood in April 2019.",
+    "Verifier: the corpus holds no provision by which a private road reservation shown on a subdivision plan is dedicated to the public or otherwise becomes a \"street\" within Municipal Councils Ordinance s.327, so the vesting assumed by M089-Q03 cannot be traced to any enactment in the corpus.",
+    "Verifier: Prescription Ordinance s.3, read with the s.2 definition of \"immovable property\" (which includes rights, easements and servitudes appertaining to it), is the only route in the corpus by which a right of way may be acquired otherwise than by grant. It does not help Kapila Fernando on these facts, since he has never used Lot R1."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M089-001",
+      "section_id": "29-1947/s37",
+      "act_id": "29-1947",
+      "formal_title": "Municipal Councils Ordinance",
+      "number_and_year": "No. 29 of 1947",
+      "section": "37",
+      "subsection": "(1)(b)",
+      "relevant_excerpt": "all streets within the Municipality (except such streets as may be specially exempted by the President) together with the pavements, stones and other materials thereof",
+      "why_relevant": "This is the vesting provision the third question assumes has operated. Once Lot R1 is a street within the Municipality, the road reservation is vested in the Municipal Council rather than in any private owner, and access over it ceases to depend on a private grant.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1947; the corpus records no amendment event on s.37, so the text applies at 2019-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M089-002",
+      "section_id": "29-1947/s327",
+      "act_id": "29-1947",
+      "formal_title": "Municipal Councils Ordinance",
+      "number_and_year": "No. 29 of 1947",
+      "section": "327",
+      "subsection": "(1), definition of \"street\"",
+      "relevant_excerpt": "includes any road, square, court, alley, lane, or passage, river or canal, whether a thoroughfare or not, over which the public have a right of way",
+      "why_relevant": "Defines the term on which the vesting in s.37(1)(b) turns. A road reservation that is a street for the purposes of the Ordinance is one over which the public have a right of way, so a member of the public may pass over it without any private servitude.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 327 was last touched in 1987 on the corpus record (amendment events 1969, 1977, 1981, 1987); the definition text is therefore the text in force at 2019-04.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and in force at 2019-04, but the s.327 definition is inclusive and makes a public right of way a criterion of being a \"street\", not a consequence of vesting, so the answer must state the premise that Lot R1 is vested as a street under s.37(1)(b) rather than by some other route."
+    },
+    {
+      "provision_id": "PROV-M089-003",
+      "section_id": "29-1947/s327",
+      "act_id": "29-1947",
+      "formal_title": "Municipal Councils Ordinance",
+      "number_and_year": "No. 29 of 1947",
+      "section": "327",
+      "subsection": "(1), definition of \"premises\"",
+      "relevant_excerpt": "includes all messages, buildings, lands, and servitudes, and all servitudes shall be deemed to be part of the property to which they appertain, or in connexion with which they are enjoyed",
+      "why_relevant": "Statutory recognition, for the purposes of this Ordinance, that a servitude is treated as part of the property to which it appertains. It is consistent with the common-law rule that a right of way is appurtenant to a dominant tenement, but it is an interpretation clause of one Ordinance and does not itself govern conveyancing between private parties.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Same section as PROV-M089-002; last recorded change 1987, so in force at 2019-04.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim, but it is the \"premises\" interpretation clause of this Ordinance alone and cannot carry a general rule of servitude law, so its role is demoted to background in both M089-Q01 and M089-Q02."
+    },
+    {
+      "provision_id": "PROV-M089-004",
+      "section_id": "29-1947/s46",
+      "act_id": "29-1947",
+      "formal_title": "Municipal Councils Ordinance",
+      "number_and_year": "No. 29 of 1947",
+      "section": "46",
+      "subsection": "(a)",
+      "relevant_excerpt": "to maintain and cleanse all public streets and open spaces vested in the Council or committed to its management",
+      "why_relevant": "Shows that a street vested in the Council is held and maintained by it as a public street, which supports the conclusion that use of Lot R1 after vesting is public use rather than use under a private right.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1947; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M089-005",
+      "section_id": "29-1947/s50",
+      "act_id": "29-1947",
+      "formal_title": "Municipal Councils Ordinance",
+      "number_and_year": "No. 29 of 1947",
+      "section": "50",
+      "subsection": null,
+      "relevant_excerpt": "Whenever any street or any part of any street vested in a Municipal Council ceases to be used as a street, the Council, with the prior approval of the President, may sell, lease, or exchange such street or part thereof",
+      "why_relevant": "Confirms that a vested street stays available for street use unless and until it ceases to be used as a street and is disposed of with the President's prior approval, so the vesting is not a temporary or precarious arrangement.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1947; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M089-006",
+      "section_id": "29-1947/s77",
+      "act_id": "29-1947",
+      "formal_title": "Municipal Councils Ordinance",
+      "number_and_year": "No. 29 of 1947",
+      "section": "77",
+      "subsection": "(1)",
+      "relevant_excerpt": "to any person obstructing or encroaching upon any street under control of the Council, forthwith to remove or abate the obstruction or encroachment",
+      "why_relevant": "Gives the Council the power to clear obstructions on a street under its control, which is the practical protection of the access Kapila Fernando would enjoy over Lot R1 after vesting.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1947; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M089-007",
+      "section_id": "29-1947/s65",
+      "act_id": "29-1947",
+      "formal_title": "Municipal Councils Ordinance",
+      "number_and_year": "No. 29 of 1947",
+      "section": "65",
+      "subsection": null,
+      "relevant_excerpt": "subject to the condition that by an appropriate instrument such road is constituted a public road and is vested in the Council",
+      "why_relevant": "Illustrates one statutory route by which a road serving private owners is constituted a public road and vested in the Council. It is background to how a private road reservation such as Lot R1 may come to be vested; it is not the only route and the question does not say which was used.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1947; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M089-008",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "No sale, purchase, transfer, assignment, or mortgage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property",
+      "why_relevant": "A right of way is an interest affecting immovable property, so any transfer of Lot A2 with the right of way, or any purported transfer of the right of way on its own, must be by notarially executed and attested deed. This governs the form of the transaction; it does not decide whether the right of way is capable of being transferred in the way proposed.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus holds only the current consolidated text of s.2, which incorporates the amendments made by Act No. 30 of 2022 and Act No. 4 of 2024 (thumb impressions, transferee signature). A requirement of writing, signature and notarial attestation existed in April 2019, but the excerpt above is not the April 2019 text, so this provision is treated as not applicable to the matter date and is never relied on as indispensable.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim only in the post-2022/2024 consolidated text; the corpus does not hold s.2 as it stood in April 2019, so it cannot give direct support to a rule claim at the matter date and is correctly marked applicable_to_matter_date=false."
+    },
+    {
+      "provision_id": "PROV-M089-901",
+      "section_id": "29-1947/s71",
+      "act_id": "29-1947",
+      "formal_title": "Municipal Councils Ordinance",
+      "number_and_year": "No. 29 of 1947",
+      "section": "71",
+      "subsection": "(6)",
+      "relevant_excerpt": "the word \"street\" includes any road, footway, or passage used or intended to be used as a means of access to two or more houses or sites of houses whether the public have a right of way there over or not",
+      "why_relevant": "Added by the verifier. Section 71(6) has to extend \"street\", for that section only, to roads used as access to two or more houses \"whether the public have a right of way there over or not\". That extension would be unnecessary unless the general s.327 definition required a public right of way. It therefore confirms that a road reservation is a street for the purposes of s.37(1)(b) only where the public already have a right of way over it, which is the premise the third answer must assume rather than derive.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 71 records one amendment event (No. 4 of 1975, s.3); latest recorded change 1975, so the text applies at 2019-04.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt checked verbatim against 29-1947/s71."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M089-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The question is whether a right of way appurtenant to Lot A survives the subdivision of Lot A and can be conveyed with Lot A2 after Lot A1 has already been sold with the same right of way. Those rules (a praedial servitude is appurtenant to the dominant tenement; on subdivision of the dominant tenement the servitude enures to each subdivided portion unless the burden on the servient tenement is thereby increased) come from the Roman-Dutch common law as worked out in judicial decisions. No enactment in the corpus states them. The statutes in the corpus reach only the form of the conveyance, not the transferability of the servitude, so a complete answer needs non-statutory authority.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M089-Q01-01",
+          "issue": "Whether the right of way over Lot R1, granted in favour of Lot A as dominant tenement, survives the subdivision of Lot A into Lots A1 and A2 and attaches to each subdivided allotment.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M089-Q01-02",
+          "issue": "Whether Nimal Perera, having already conveyed Lot A1 together with the right of way to Sunil Silva, retains anything he can convey with Lot A2, and whether conveying it to a second purchaser increases the burden on the servient tenement Lot R1.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M089-Q01-03",
+          "issue": "In what form any such conveyance of Lot A2 with the right of way must be executed.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [],
+      "supporting_provision_ids": [],
+      "background_provision_ids": [
+        "PROV-M089-008",
+        "PROV-M089-003"
+      ],
+      "legal_hop_count": 0,
+      "hop_count_basis": "No indispensable statutory provision was found. The reasoning chain runs through the common law of servitudes, which is outside the corpus, so no statutory hop is counted.",
+      "reasoning_edges": [],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Nimal Perera the owner of Lot A in extent of 40 Perches and a right of way over the road reservation marked Lot R1 to go to and from Lot A. Nimal Perera sub divided Lot A into 2 allotments marked Lots Al and A2 and sells Lot Al together with right of way over the road reservation marked Lot R1 to Sunil Silva. Ananda Senerath has negotiated with Nimal Perera to buy Lot A2.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether Nimal Perera may convey to Ananda Senerath, along with Lot A2, the right of way over the road reservation Lot R1 that was granted in favour of the undivided Lot A, when he has already conveyed Lot A1 together with the same right of way to Sunil Silva.",
+        "rule": "Only a partial rule can be stated from the corpus. The right of way is an interest affecting immovable property, so any deed by which Lot A2 is transferred with the benefit of that right must be in writing and notarially executed and attested (Prevention of Frauds Ordinance s.2). Whether the right of way itself passes with a subdivided portion of the dominant tenement is not addressed by any enactment in the corpus; it is governed by the Roman-Dutch common law of praedial servitudes, under which a servitude is appurtenant to a dominant tenement and does not exist in the abstract. Municipal Councils Ordinance s.327 reflects the same idea only for the interpretation of that Ordinance, where servitudes are deemed part of the property to which they appertain.",
+        "application": "Lot A was the dominant tenement and Lot R1 the servient tenement. On subdivision, Lot A2 is part of the former dominant tenement, so the question is whether the benefit of the servitude enures to Lot A2 as well as to Lot A1, and whether use by two owners instead of one aggravates the burden on Lot R1. Answering that requires the common-law rules on the division of a dominant tenement and on aggravation of the servient burden, and possibly the terms of the original grant of the right of way, none of which is in the frozen corpus. The corpus does support the subsidiary point that any conveyance of Lot A2 with the right of way must be by notarially attested deed.",
+        "conclusion": "Reserved. The corpus cannot settle whether Nimal Perera can validly convey the right of way over Lot R1 with Lot A2. The answer depends on Roman-Dutch servitude law and on the terms of the original grant, which are outside the corpus; the only point that can be stated on statute is the notarial form required for the deed."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M089-Q01-001",
+          "claim_text": "A transfer of Lot A2 together with the benefit of the right of way over Lot R1 is a transfer of land and of an interest affecting immovable property, and must be effected by a deed in writing signed before and attested by a notary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M089-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M089-Q01-002",
+          "claim_text": "A servitude such as a right of way is treated as part of the property to which it appertains and is not an independent thing existing apart from land.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M089-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M089-Q01-003",
+          "claim_text": "Lot A2 is part of the land, Lot A, in whose favour the right of way over Lot R1 was granted, and Lot A1 has already been sold with that same right of way to Sunil Silva.",
+          "claim_type": "application",
+          "supporting_provision_ids": [],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "The controlling law is the Roman-Dutch common law of praedial servitudes (appurtenance to the dominant tenement, effect of subdivision of the dominant tenement, aggravation of the servient burden), which is not in the frozen corpus. The terms of the original grant of the right of way are also not stated in the scenario. Only the notarial form requirement can be sourced to statute, so the question cannot be a statute-only gold item. Verifier: agreed. Both statutory provisions are demoted to background - Prevention of Frauds Ordinance s.2 is held only in its post-2022/2024 form, and Municipal Councils Ordinance s.327 is an interpretation clause of that Ordinance alone.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M089-Q02",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "Whether the owner of a dominant tenement can sell a right of way to the owner of a neighbouring land that is not the dominant tenement depends on the common-law characteristics of a praedial servitude: that it is appurtenant to a particular dominant tenement, that it cannot be alienated separately from that tenement, and that it cannot be extended to serve other land. No enactment in the corpus lays down those rules. The corpus supplies only the form requirement for a deed and an interpretation clause of the Municipal Councils Ordinance that points the same way for its own purposes.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M089-Q02-01",
+          "issue": "Whether a right of way appurtenant to Lot A2 can be transferred by Ananda Senerath separately from Lot A2 itself.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M089-Q02-02",
+          "issue": "Whether the benefit of the servitude over Lot R1 can be extended to Kapila Fernando's adjoining land, which was never the dominant tenement of that servitude.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M089-Q02-03",
+          "issue": "What alternative routes exist for Kapila Fernando to obtain access, and whether any of them is statutory.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [],
+      "supporting_provision_ids": [],
+      "background_provision_ids": [
+        "PROV-M089-008",
+        "PROV-M089-003"
+      ],
+      "legal_hop_count": 0,
+      "hop_count_basis": "No indispensable statutory provision was found; the determinative rule is common law and lies outside the corpus.",
+      "reasoning_edges": [],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Nimal Perera the owner of Lot A in extent of 40 Perches and a right of way over the road reservation marked Lot R1 to go to and from Lot A. Nimal Perera sub divided Lot A into 2 allotments marked Lots Al and A2 and sells Lot Al together with right of way over the road reservation marked Lot R1 to Sunil Silva. Ananda Senerath has negotiated with Nimal Perera to buy Lot A2.\n\nKapila Fernando who owns the adjacent block of Lot A2 has no access to the main road. After Ananda Senerath purchased Lot A2 he asked him whether he could purchase the right of way over the road reservation marked Lot R1 to go to the main road.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether Ananda Senerath, the owner of Lot A2, can sell to Kapila Fernando the right of way over the road reservation Lot R1, so that Kapila Fernando may use it to reach the main road from his own adjoining land.",
+        "rule": "The corpus yields only part of the rule. A right of way is an interest affecting immovable property, so any purported sale of it would in any event have to be by notarially attested deed (Prevention of Frauds Ordinance s.2). The decisive proposition, that a praedial servitude is appurtenant to its dominant tenement, cannot be sold apart from that tenement and cannot be enlarged to serve other land, belongs to the Roman-Dutch common law and is not enacted anywhere in the corpus. Municipal Councils Ordinance s.327 states, for the interpretation of that Ordinance only, that servitudes are deemed part of the property to which they appertain or in connexion with which they are enjoyed.",
+        "application": "The right of way over Lot R1 was granted in favour of Lot A, of which Lot A2 forms part. Kapila Fernando's block is a different land and was never a dominant tenement of that servitude. A sale of the right of way to him would separate the servitude from the land it serves and would extend the burden on Lot R1 to a tenement the servient owner never accepted. Whether that is possible, and what the correct route to access for Kapila Fernando is instead, requires the common law of servitudes, which is outside the corpus.",
+        "conclusion": "Reserved. On the common law the expected answer is that Ananda Senerath cannot sell the right of way to Kapila Fernando, because the servitude is appurtenant to Lot A2 and cannot be transferred apart from it, but that proposition cannot be sourced to any provision in the frozen corpus and the question therefore cannot be a statute-only gold item."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M089-Q02-001",
+          "claim_text": "A servitude is deemed to be part of the property to which it appertains or in connexion with which it is enjoyed, and so is not an independent asset that can be dealt with in isolation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M089-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M089-Q02-002",
+          "claim_text": "Kapila Fernando's block is an allotment adjoining Lot A2 and was never part of Lot A, in whose favour the right of way over Lot R1 was granted.",
+          "claim_type": "application",
+          "supporting_provision_ids": [],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-3"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "The rule that a praedial servitude cannot be alienated apart from its dominant tenement, and cannot be extended to a tenement that was never dominant, comes from the Roman-Dutch common law and is absent from the frozen corpus. Only the deed-form requirement is statutory, so the question cannot be answered completely from statute. Verifier: agreed, and PROV-M089-003 is demoted from supporting to background because an interpretation clause of the Municipal Councils Ordinance cannot state the general rule. The corpus does hold one statutory route to a right of way that the map does not mention - Prescription Ordinance s.3 read with the s.2 definition of immovable property, which includes servitudes appertaining to it - but on these facts Kapila Fernando has no user of Lot R1 at all, so it does not answer the question.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M089-Q03",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question supposes that Lot R1 has been vested in the Kaduwela Municipal Council. From that point the answer follows from the Municipal Councils Ordinance alone: s.37(1)(b) vests all streets within the Municipality in the Council, s.327 defines a street as a road or passage over which the public have a right of way, s.46(a) puts the Council under a duty to maintain public streets vested in it, s.50 restricts disposal of a vested street, and s.77 lets the Council clear obstructions. No common-law servitude rule is needed, because access after vesting is public access and not access under a private servitude.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M089-Q03-01",
+          "issue": "What the legal character of Lot R1 becomes once it is vested in the Kaduwela Municipal Council.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M089-Q03-02",
+          "issue": "Whether Kapila Fernando, who holds no servitude over Lot R1, may nevertheless pass over it to reach the main road once it is vested in the Council.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M089-Q03-03",
+          "issue": "Whether that access is secure, and what the Council can do if it is obstructed.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M089-001",
+        "PROV-M089-002"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M089-004",
+        "PROV-M089-005",
+        "PROV-M089-006"
+      ],
+      "background_provision_ids": [
+        "PROV-M089-007",
+        "PROV-M089-901"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Two necessary steps: the vesting of streets in the Council under s.37(1)(b), plus the s.327 definition of \"street\", which supplies the public right of way that answers the question. The maintenance duty, the disposal restriction and the obstruction power reinforce the conclusion but removing them would not break it. Verifier: the two hops are the right ones, but the second runs backwards - the s.327 definition makes a public right of way a criterion of being a street, so the chain holds only on the premise that the vesting is a vesting of Lot R1 as a street under s.37(1)(b). Section 77 is enforcement over a street already vested rather than a procedural precondition of s.37, so that edge is relabelled cross_references.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M089-002",
+          "to_provision_id": "PROV-M089-001",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M089-004",
+          "to_provision_id": "PROV-M089-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M089-005",
+          "to_provision_id": "PROV-M089-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M089-006",
+          "to_provision_id": "PROV-M089-001",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M089-901",
+          "to_provision_id": "PROV-M089-002",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Nimal Perera the owner of Lot A in extent of 40 Perches and a right of way over the road reservation marked Lot R1 to go to and from Lot A. Nimal Perera sub divided Lot A into 2 allotments marked Lots Al and A2 and sells Lot Al together with right of way over the road reservation marked Lot R1 to Sunil Silva. Ananda Senerath has negotiated with Nimal Perera to buy Lot A2.\n\nKapila Fernando who owns the adjacent block of Lot A2 has no access to the main road. After Ananda Senerath purchased Lot A2 he asked him whether he could purchase the right of way over the road reservation marked Lot R1 to go to the main road.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether Kapila Fernando, who owns the block adjoining Lot A2, has no access to the main road and holds no servitude over Lot R1, can gain access to his land over the road reservation Lot R1 if Lot R1 is vested in the Kaduwela Municipal Council.",
+        "rule": "Under the Municipal Councils Ordinance s.37(1)(b), all streets within the Municipality, together with their pavements, stones and materials, are vested in the Municipal Council, save streets specially exempted by the President. A street, for the purposes of that Ordinance, includes any road, lane or passage, whether a thoroughfare or not, over which the public have a right of way (s.327). A street so vested is a public street which the Council is under a duty to maintain and cleanse (s.46(a)); it may be sold, leased or exchanged only after it ceases to be used as a street and with the prior approval of the President (s.50); and the Council may order the removal of any obstruction or encroachment on a street under its control (s.77). Section 65 shows one route by which a road serving private owners is constituted a public road and vested in the Council.",
+        "application": "If Lot R1 is vested in the Kaduwela Municipal Council under s.37(1)(b), it is no longer a private road reservation burdened only by servitudes granted to particular lots. It is a street over which, by the definition in s.327, the public have a right of way. Kapila Fernando therefore does not need a grant from Ananda Senerath or from anyone else: he may use Lot R1 as a member of the public to reach the main road from his block. That access is protected in practice, because the Council must maintain the street under s.46(a), cannot dispose of it while it is still used as a street without the President's prior approval under s.50, and can order any obstruction or encroachment on it to be removed under s.77. The scenario does not say how the vesting came about, and s.65 is only one of the possible routes; but the question directs that vesting be assumed, and it is on that assumption that the answer proceeds.",
+        "conclusion": "Yes. Once Lot R1 is vested in the Kaduwela Municipal Council it is a public street over which the public have a right of way, so Kapila Fernando can gain access to his allotment over Lot R1 as a member of the public, without purchasing any right of way from Ananda Senerath, and the Council's duties and powers over the street support that access."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M089-Q03-001",
+          "claim_text": "All streets within a Municipality, other than those specially exempted by the President, together with their pavements, stones and materials, are vested in the Municipal Council.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M089-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M089-Q03-002",
+          "claim_text": "For the purposes of the Municipal Councils Ordinance a street includes any road, lane or passage, whether a thoroughfare or not, over which the public have a right of way.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M089-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M089-Q03-003",
+          "claim_text": "A street vested in a Municipal Council is a public street which the Council must maintain and cleanse, and which it may sell, lease or exchange only once the street has ceased to be used as a street and with the prior approval of the President.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M089-004",
+            "PROV-M089-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M089-Q03-004",
+          "claim_text": "The Council may order any person obstructing or encroaching upon a street under its control to remove or abate the obstruction, and may remove it itself if the order is not complied with.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M089-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M089-Q03-005",
+          "claim_text": "One statutory route by which a road serving private owners becomes vested in the Council is a contract under which the road is constituted a public road and vested in the Council by an appropriate instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M089-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M089-Q03-006",
+          "claim_text": "On the assumption stated in the question, Lot R1, the road reservation giving access from the lots to the main road, is vested in the Kaduwela Municipal Council and is therefore a street vested in that Council.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M089-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M089-Q03-007",
+          "claim_text": "Because a vested street is one over which the public have a right of way, Kapila Fernando may pass over Lot R1 as a member of the public even though he holds no servitude over it and his block was never a dominant tenement of the right of way.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M089-001",
+            "PROV-M089-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M089-Q03-008",
+          "claim_text": "Kapila Fernando can gain access to his allotment over Lot R1 once it is vested in the Kaduwela Municipal Council, and he need not purchase a right of way from Ananda Senerath.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M089-001",
+            "PROV-M089-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M089-Q03-009",
+          "claim_text": "That access is supported by the Council's duty to maintain the street, the restriction on disposing of it while it is still used as a street, and the Council's power to clear obstructions on it.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M089-004",
+            "PROV-M089-005",
+            "PROV-M089-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Verifier downgrade from proposed_gold. The conclusion is probably right, but the decisive step is not a direct statutory inference. Section 327 defines \"street\" inclusively and as a road over which the public HAVE a right of way, so a public right of way is a precondition of street status and not an effect of vesting; s.71(6) has to extend the word for its own section precisely because the general definition carries that requirement. The question stipulates only that Lot R1 \"is vested in the Kaduwela Municipal Council\" and does not say by what route, and the corpus holds no provision on the approval of a subdivision plan or on the dedication of a private road reservation to the public. The answer therefore assumes, rather than shows, that Lot R1 became a street. A lawyer should confirm that assumption before this becomes a gold item; the authority requirement remains statute_only.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

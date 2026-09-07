@@ -1,0 +1,64 @@
+{
+  "benchmark_matter_id": "M100",
+  "source_matter_id": "P15-Q08-M01",
+  "grouping_key": "P15-Q08-M01",
+  "paper_no": 15,
+  "question_no": 8,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "The Notary knows the testator who wishes to execute a last Will and who is sick and taking treatment warded in a hospital. He is of the opinion that the testator is of sound mind memory and understanding.",
+    "normalized": "The Notary knows the testator who wishes to execute a last Will and who is sick and taking treatment warded in a hospital. He is of the opinion that the testator is of sound mind memory and understanding.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P15-Q08-P01"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M100-Q01",
+      "atomic_id": "P15-Q08-P01",
+      "part_uid": "paper-15/q8/1",
+      "part_id": "1",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 63,
+      "question_original": "What are the precautions, the Notary should take relating to witnesses when the Last Will is executed by the Testator?",
+      "question_normalized": "What are the precautions, the Notary should take relating to witnesses when the Last Will is executed by the Testator?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "The Notary knows the testator who wishes to execute a last Will and who is sick and taking treatment warded in a hospital. He is of the opinion that the testator is of sound mind memory and understanding.",
+      "effective_background_normalized": "The Notary knows the testator who wishes to execute a last Will and who is sick and taking treatment warded in a hospital. He is of the opinion that the testator is of sound mind memory and understanding.",
+      "source_quote": "1. The Notary knows the testator who wishes to execute a last Will and who is sick and taking treatment warded in a hospital. He is of the opinion that the testator is of sound mind memory and understanding. What are the precautions, the Notary should take relating to witnesses when the Last Will is executed by the Testator?",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "relevant_document"
+      ]
+    }
+  ],
+  "matter_reference_date": "2018-10",
+  "exam_session": "OCTOBER 2018",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

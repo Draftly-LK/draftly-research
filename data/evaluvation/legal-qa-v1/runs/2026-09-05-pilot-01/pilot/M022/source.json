@@ -1,0 +1,160 @@
+{
+  "benchmark_matter_id": "M022",
+  "source_matter_id": "P11-Q04-M02",
+  "grouping_key": "P11-Q04-M02",
+  "paper_no": 11,
+  "question_no": 4,
+  "selection_status": "gold_research_ready",
+  "matter_background": {
+    "original": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+    "normalized": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P11-Q04-P02"
+        ]
+      },
+      {
+        "segment_index": 0,
+        "field": "prior_background",
+        "atomic_ids": [
+          "P11-Q04-P03"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M022-Q01",
+      "atomic_id": "P11-Q04-P02",
+      "part_uid": "paper-11/q4/2",
+      "part_id": "2",
+      "item_id": null,
+      "marks": 4,
+      "pdf_page": 45,
+      "question_original": "How can they execute this Lease Agreement?",
+      "question_normalized": "How can they execute this Lease Agreement?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "effective_background_normalized": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "source_quote": "2) Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private)\nLimited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to\nattest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not\nknow the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary\nRuwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera\ndoes not want to come to Colombo. How can they execute this Lease Agreement?\n(4 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.85,
+        "flags": []
+      }
+    },
+    {
+      "benchmark_question_id": "M022-Q02",
+      "atomic_id": "P11-Q04-P03",
+      "part_uid": "paper-11/q4/3",
+      "part_id": "3",
+      "item_id": null,
+      "marks": 7,
+      "pdf_page": 45,
+      "question_original": "If Ruwan Perera is the first Notary what are the things that he should mention in his attestation?",
+      "question_normalized": "If Ruwan Perera is the first Notary what are the things that he should mention in his attestation?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "effective_background_normalized": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "source_quote": "3) If Ruwan Perera is the first Notary what are the things that he should mention in his attestation?\n(7 marks)",
+      "classification": {
+        "context_sources": [
+          "prior"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.85,
+        "flags": []
+      }
+    }
+  ],
+  "run_id": "2026-09-05-pilot-01",
+  "flat_questions": [
+    {
+      "benchmark_question_id": "M022-Q01",
+      "benchmark_matter_id": "M022",
+      "atomic_id": "P11-Q04-P02",
+      "paper_no": 11,
+      "background_original": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "background_normalized": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "question_original": "How can they execute this Lease Agreement?",
+      "question_normalized": "How can they execute this Lease Agreement?",
+      "source_quote": "2) Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private)\nLimited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to\nattest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not\nknow the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary\nRuwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera\ndoes not want to come to Colombo. How can they execute this Lease Agreement?\n(4 marks)",
+      "provenance": {
+        "source_matter_id": "P11-Q04-M02",
+        "part_uid": "paper-11/q4/2",
+        "pdf_page": 45,
+        "context_sources": [
+          "local"
+        ]
+      },
+      "selection": {
+        "candidate_action": "keep",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "context_dependency": "required",
+        "confidence": 0.85
+      },
+      "legal_map_status": "pending",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M022-Q02",
+      "benchmark_matter_id": "M022",
+      "atomic_id": "P11-Q04-P03",
+      "paper_no": 11,
+      "background_original": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "background_normalized": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "question_original": "If Ruwan Perera is the first Notary what are the things that he should mention in his attestation?",
+      "question_normalized": "If Ruwan Perera is the first Notary what are the things that he should mention in his attestation?",
+      "source_quote": "3) If Ruwan Perera is the first Notary what are the things that he should mention in his attestation?\n(7 marks)",
+      "provenance": {
+        "source_matter_id": "P11-Q04-M02",
+        "part_uid": "paper-11/q4/3",
+        "pdf_page": 45,
+        "context_sources": [
+          "prior"
+        ]
+      },
+      "selection": {
+        "candidate_action": "keep",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "context_dependency": "required",
+        "confidence": 0.85
+      },
+      "legal_map_status": "pending",
+      "lawyer_validation_status": "pending"
+    }
+  ],
+  "source_paths": {
+    "selected_matters": "data/evaluvation/parsed-pastpapers/benchmark/selected-matters.jsonl",
+    "selected_questions": "data/evaluvation/parsed-pastpapers/benchmark/selected-questions.jsonl"
+  },
+  "source_sha256": {
+    "selected_matters_jsonl": "a2634a24297f493ea47b9ef4d04be037c6da76c5e6b8206ad14ab921b3e2af95",
+    "selected_questions_jsonl": "7c7ca55c651ab4e260a3b3a06ffdfc9ea7bfd0168fabf0e1c4e4ed036c4a4611",
+    "matter_record": "027cc9bda53cac96012f74b3cfe858fe1cbeafbc7089d0366a2c2ac068e5ba52",
+    "flat_questions": "fb3bcce8c97109306e2d14b96f6520e1524e60f8d121ba6daf2bc16be7bc5604"
+  },
+  "status": "unverified"
+}

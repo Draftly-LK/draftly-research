@@ -1,0 +1,840 @@
+{
+  "benchmark_matter_id": "M056",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M056",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:42:12Z",
+    "verification_agent": "verifier-M056",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:59:04Z"
+  },
+  "matter_reference_date": "2021-10",
+  "matter_reference_date_basis": "Exam session recorded in candidates/matters/M056.json as OCTOBER 2021, giving matter_reference_date 2021-10. Every provision was checked against in_force_from_year and amendment_events for that date.",
+  "corpus_gaps": [
+    "The rate Order made by the Minister under section 3 of the Stamp Duty (Special Provisions) Act is published in the Gazette and is not in the corpus, so the duty actually payable on a four-year lease at Rs. 60,000 per month cannot be computed from corpus material.",
+    "Chapters XVIII to XXIV of the Inland Revenue Act, applied to stamp duty assessment, appeals and recovery by section 11 of the Stamp Duty (Special Provisions) Act, are outside the corpus, so the recovery and penalty consequences falling on the parties themselves cannot be stated.",
+    "The corpus holds only the consolidated Notaries Ordinance. Section 34 was repealed and replaced, and rule (6) of section 31 substituted, by the Notaries (Amendment) Act No. 31 of 2022, after the matter date, and the pre-2022 wording of those provisions is not in the corpus. Both are recorded as supporting context with applicable_to_matter_date false and no claim depends on them.",
+    "Section 38A of the Notaries Ordinance (duty to explain the true nature of the transaction) was inserted by Act No. 6 of 2024 and was not available at the matter date; it is not recorded or relied on.",
+    "The Notaries Ordinance interpretation section does not define 'deed'. Section 38 speaks of 'any deed' while most of section 31 speaks of 'any deed or instrument'; treating a notarially attested lease agreement as a 'deed' for section 38 rests on reading the Ordinance as a whole and should be confirmed.",
+    "No case law is in the corpus, so no judicial gloss on the territorial reach of rule (22) of section 31 or on section 38 could be considered."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M056-001",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "No sale, purchase, transfer, assignment, or mortgage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month)",
+      "why_relevant": "Establishes that an agreement affecting immovable property, other than a lease at will or for a period not exceeding one month, has no force in law unless it is in writing and notarially attested. A four-year lease of the Colombo building therefore requires a notary at all.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The quoted opening words are the original enumeration and were not touched by the later amendments. The Prevention of Frauds (Amendment) Act No. 30 of 2022 s.2 repealed only the words from \"shall be of force\" to the end of the section, and Act No. 4 of 2024 s.2 renumbered the section, replaced paragraphs (a) and (b) and added subsection (2). Both post-date the matter. The corpus carries the consolidated post-2024 text, so the execution formalities shown in the corpus body are not the text in force in October 2021, but the lease carve-out relied on here is.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim, but it stops at the lease carve-out and does not itself carry the operative words \"shall be in force or avail in law unless ... attested by such notary\" on which why_relevant and CL-M056-Q01-001 depend; those words are in the same section and, per 30-2022 s.2, the pre-2022 equivalent (\"shall be of force ... unless ... in the presence of a licensed notary public and two or more witnesses ... duly attested\") was in force at 2021-10, so the proposition holds - but the subsection label \"(1)\" is the post-2024 numbering inserted by 4-2024 s.2 and did not exist at the matter date."
+    },
+    {
+      "provision_id": "PROV-M056-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (22)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice nor authenticate or attest any deed or instrument drawn in any language other than that in which he is authorized to practice.",
+      "why_relevant": "The only territorial and language limit on a notary's competence to attest. It restricts the area in which the notary may act and the language of the instrument; it says nothing about where the land affected by the instrument is situated.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (22) is not among the rules substituted, inserted or repealed by the Notaries (Amendment) Act No. 31 of 2022 s.16 or by Act No. 6 of 2024 s.3, so the text shown is the text in force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M056-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (29)",
+      "relevant_excerpt": "If a deed or instrument other than a will or codicil affects a land situated in a district other than that in which the notary before whom it is signed, and by whom it is attested, 'shall reside, such notary, or in case such deed or instrument is attested by two or more notaries, then the notary upon whom is cast the duty of transmitting to the Registrar of Lands the duplicate of such deed or instrument, shall on or before the fifteenth day of the month next following that in which the same was executed (besides transmitting the duplicate in manner aforesaid) deliver or transmit to the Registrar of Lands of the district in which such land shall be situated a copy thereof certified by him as correct",
+      "why_relevant": "Rule (29) expressly assumes that a notary may attest an instrument affecting land in a district other than the district in which he resides, and imposes the consequential duty to send a certified copy to the Registrar of Lands of the district where the land lies. It is the provision that answers the Galle notary and Colombo building point.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (29) is not among the rules substituted, inserted or repealed by the Notaries (Amendment) Act No. 31 of 2022 s.16 or by Act No. 6 of 2024 s.3, so the text shown is the text in force at 2021-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording and role confirmed, but the temporal_note is wrong on one point: 6-2024 s.3(9) did amend rule (29), substituting \"in the Form F 1\" for \"in the Form F\"; that amendment falls outside the quoted excerpt, so the substance relied on was in force at 2021-10 and the conclusion is unaffected."
+    },
+    {
+      "provision_id": "PROV-M056-004",
+      "section_id": "1-1907/s4A",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "4A",
+      "subsection": null,
+      "relevant_excerpt": "Every warrant issued to a notary under the provisions of section 3* or section 4* authorizing him to practice as a notary in any judicial division in which he resides, shall be deemed to authorize him to practice as a notary in the judicial zone in which he resides.",
+      "why_relevant": "Fixes the extent of the area in which a notary is authorized to practice for the purposes of rule (22): a warrant for a judicial division is deemed to authorise practice in the whole judicial zone in which the notary resides.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by the Notaries (Amendment) Law No. 20 of 1976 s.4 and in force from 1976, well before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M056-005",
+      "section_id": "1-1907/s9",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "9",
+      "subsection": null,
+      "relevant_excerpt": "Every notary shall be bound to have his office within the area specified in his warrant; and any notary infringing this provision shall be liable to have his warrant withdrawn by the Minister.",
+      "why_relevant": "Confirms that the Ordinance regulates where the notary is based and acts rather than the location of the property dealt with, and supplies the sanction of withdrawal of the warrant for acting outside the warrant area.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907 with no recorded amendment; the text shown applies at 2021-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording verified, but why_relevant overstates the section: s.9 requires the notary to have his office within the warrant area and makes withdrawal of the warrant the sanction for not doing so; it is not a sanction for attesting outside that area, which is rule (22) enforced through s.34. Role is supporting only."
+    },
+    {
+      "provision_id": "PROV-M056-006",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (13)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument to which he is a party.",
+      "why_relevant": "The only personal disqualification in section 31 that is in issue. Being the lessor's neighbour is not a statutory disqualification; only being a party to the instrument is.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (13) is not among the rules amended by the Notaries (Amendment) Act No. 31 of 2022 s.16 or by Act No. 6 of 2024 s.3; the text shown applies at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M056-007",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (11)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument in any case in which the person executing or acknowledging the same shall be or profess to be unable to read the same, or in which such person shall require him to read over the same, unless and until he shall have read over and explained the same, or caused the same to be explained, in the presence and hearing of such person and, except in the case of wills and codicils, in the presence of the attesting witnesses.",
+      "why_relevant": "Sudath Gunawardana is illiterate. Rule (11) shows that illiteracy of an executant does not bar attestation; it makes the reading over and explanation of the instrument, in the presence of the executant and the attesting witnesses, a condition of lawful attestation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (11) is not among the rules substituted by the Notaries (Amendment) Act No. 31 of 2022 s.16 or by Act No. 6 of 2024 s.3; the text shown applies at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M056-008",
+      "section_id": "1-1907/s38",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "38",
+      "subsection": "(1) and (2)",
+      "relevant_excerpt": "(1) It shall be the duty of every notary to endeavour to ascertain the true and full consideration for the execution of any deed, and to insert and set forth the same in such deed. (2) Any notary who shall knowingly and willfully insert or set forth in or upon any such deed any other than the full and true consideration or money directly or indirectly paid or secured, or agreed to be paid or secured for the same, or the actual value of the same, or shall abet the doing thereof, respectively, shall be guilty of an offence",
+      "why_relevant": "The central provision for the request to understate the rental. Subsection (1) puts the notary under a positive duty to ascertain and set out the true and full consideration; subsection (2) makes knowingly inserting anything other than the full and true consideration, or abetting it, an offence with civil liability in addition.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Subsection (1) has stood since 1907. The Notaries (Amendment) Act No. 31 of 2022 s.18 amended subsection (2) only by substituting the words \"not exceeding fifty thousand rupees\" for \"not exceeding twenty five thousand rupees\". The excerpt stops before the penalty words, so the quoted text was in force at 2021-10; the maximum fine at that date was twenty five thousand rupees, not the fifty thousand shown in the corpus body.",
+      "verification_status": "verified",
+      "verifier_note": "Temporal analysis checked against 31-2022 s.18, which substituted \"not exceeding fifty thousand rupees\" for \"not exceeding twenty five thousand rupees\" in subsection (2) only; the excerpt stops before the penalty words. 6-2024 s.4 inserted s.38A and did not touch s.38."
+    },
+    {
+      "provision_id": "PROV-M056-009",
+      "section_id": "1-1907/s39",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "39",
+      "subsection": "(b)",
+      "relevant_excerpt": "shall knowingly and willfully, with intent to prejudice or defraud any person, insert in any deed or instrument whatsoever any word, letter, figure, matter, or thing which ought not to have been inserted therein, or omit to insert therein any word, letter, figure, matter, or thing which ought to have been inserted therein",
+      "why_relevant": "Inserting a rental figure the notary knows to be false, with intent to defeat the revenue, falls within paragraph (b) and exposes him to the heavier penalty for fraud in the execution of his office, over and above the section 38 offence.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Paragraph (b) was not amended in 2022. The Notaries (Amendment) Act No. 31 of 2022 s.19 amended paragraph (c) and substituted the closing penalty words, so that imprisonment \"not exceeding five years\" became ten years with a fine and compensation. The excerpt is confined to paragraph (b) and was in force at 2021-10; the penalty at that date was imprisonment not exceeding five years.",
+      "verification_status": "verified",
+      "verifier_note": "Temporal analysis checked against 31-2022 s.19, which amended paragraph (c) and the closing penalty words only; paragraph (b) is unchanged."
+    },
+    {
+      "provision_id": "PROV-M056-010",
+      "section_id": "12-2006/s4",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "4",
+      "subsection": "(i)",
+      "relevant_excerpt": "(g) a bond or mortgage for any definite and certain sum of money and affecting any property; (h) a promissory note; (i) a lease or hire of any property;",
+      "why_relevant": "Makes a lease a specified instrument, so the lease agreement is chargeable with stamp duty. Without it the stamp duty motive behind the parties' request has no statutory footing.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006 with no recorded amendment; the text shown applies at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": "Verbatim and correct, though the excerpt also carries paragraphs (g) and (h) while the subsection field records only (i)."
+    },
+    {
+      "provision_id": "PROV-M056-011",
+      "section_id": "12-2006/s6",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "6",
+      "subsection": "(c)",
+      "relevant_excerpt": "in the case of a lease, by the lessee;",
+      "why_relevant": "Identifies Kapila Warnakulasooriya as the person on whom the duty falls, absent agreement to the contrary, and so identifies who stands to be assessed if the instrument understates the rental.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 6 was amended by Act No. 10 of 2008; paragraph (c) stands in the consolidated text and applied at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M056-012",
+      "section_id": "12-2006/s3",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "there shall be charged a duty (hereinafter to be called \"stamp duty\") at such rate as the Minister may determine by Order published in the Gazette on every \"specified instrument\"- (a) executed, drawn or presented in Sri Lanka;",
+      "why_relevant": "The charging provision. It shows the duty is a rate applied to the instrument as executed in Sri Lanka, which is why the figure the notary writes into the lease determines the duty collected.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006 with no recorded amendment; the text shown applies at 2021-10. The rate Order itself is not in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M056-013",
+      "section_id": "12-2006/s10",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "10",
+      "subsection": null,
+      "relevant_excerpt": "Where an Assessor is of the opinion that an instrument liable to stamp duty has not been duly stamped, he shall assess the value of the stamp duty payable in respect of such instrument, by the person liable to pay such duty and forward a Notice to such person requiring him to pay the amount due thereon, within the time specified in the Notice.",
+      "why_relevant": "Shows that understating the rental does not extinguish the duty: an Assessor may assess and recover the correct duty from the person liable, so the parties gain nothing lawful and the notary would have exposed himself for no purpose.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006 with no recorded amendment; the text shown applies at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M056-014",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20)(f)",
+      "relevant_excerpt": "the number and value of the adhesive stamps affixed to or the value of the impressed stamps on such deed or instrument and the duplicate thereof",
+      "why_relevant": "The attestation itself must state the value of the stamps. A notary who writes a reduced rental into the lease will also certify a stamp value corresponding to the false figure, so the falsehood is carried into his own attestation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The Notaries (Amendment) Act No. 31 of 2022 s.16(11) altered paragraphs (b), (e) and (g) of rule (20) and added paragraph (h); paragraph (f) was not amended, so the text shown applies at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": "Checked against 31-2022 s.16(11), which altered paragraphs (b), (e) and (g) of rule (20) and added (h); paragraph (f) is unchanged."
+    },
+    {
+      "provision_id": "PROV-M056-015",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (6)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless he has an assurance that the required stamp duty is provided.",
+      "why_relevant": "Bars the notary from attesting at all unless satisfied that the required stamp duty is provided, which is what a deliberately understated rental defeats.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Rule (6) as shown was substituted by the Notaries (Amendment) Act No. 31 of 2022 s.16(4), after the matter date, and the corpus does not hold the pre-2022 wording. Recorded as supporting context only; no claim relies on it. The verifier should confirm the rule (6) text in force in October 2021.",
+      "verification_status": "unresolved",
+      "verifier_note": "The rule (6) text in the corpus is the text substituted by 31-2022 s.16(4); the amending section does not reproduce the pre-2022 wording, so what rule (6) said in October 2021 cannot be established from the corpus. Correctly kept out of every claim."
+    },
+    {
+      "provision_id": "PROV-M056-016",
+      "section_id": "1-1907/s34",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "34",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "Every notary who acts in violation of or disregards or neglects to observe- (a) rules (1), (31) or (32) set out in section 31, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate, be liable to a fine not exceeding five thousand rupees, in addition to any civil liability he may incur thereby",
+      "why_relevant": "Shows the general scheme by which breaches of the section 31 rules are punished on summary trial before a Magistrate, in addition to civil liability.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Section 34 was repealed and wholly replaced by the Notaries (Amendment) Act No. 31 of 2022 s.17, after the matter date, and the corpus holds only the replacement text. The fine bands shown are therefore not those in force in October 2021. Recorded as supporting context only; no claim relies on the amounts.",
+      "verification_status": "unresolved",
+      "verifier_note": "31-2022 s.17 repealed and replaced the whole of s.34, and the corpus holds only the replacement, so the 2021 fine bands cannot be established from the corpus. Correctly kept out of every claim."
+    },
+    {
+      "provision_id": "PROV-M056-017",
+      "section_id": "1-1907/s21",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "21",
+      "subsection": "(1)(b) and (c)",
+      "relevant_excerpt": "has grossly misconducted himself in the discharge of the duties of his office; or (c) has so conducted himself by repeated breaches of any of the rules made by or under this Ordinance that he ought not to be any longer entrusted with the performance of the said duties",
+      "why_relevant": "Supplies the professional, as distinct from criminal, liability: gross misconduct in the discharge of notarial duties is a ground for inquiry and for a report on which the Minister may suspend the notary or cancel his warrant.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The Notaries (Amendment) Act No. 31 of 2022 s.11 amended only paragraph (e) of subsection (1), where \"incompetence, age\" became \"incompetence\", and the fine in subsection (4). Paragraphs (b) and (c) quoted here are unchanged and applied at 2021-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Paragraphs (b) and (c) are verbatim and, per 31-2022 s.11, unamended at 2021-10; but the excerpt carries only the grounds in subsection (1), not the Minister's power to suspend or cancel the warrant that why_relevant and CL-M056-Q04-008 rely on, which is in s.21(2) of the same section and is unamended."
+    },
+    {
+      "provision_id": "PROV-M056-901",
+      "section_id": "1-1907/s39",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "39",
+      "subsection": "(f)",
+      "relevant_excerpt": "shall by any other willful act, either of commission or omission, commit or attempt to commit any fraud in the execution of his office",
+      "why_relevant": "Added by the verifier. Paragraph (b), on which the researcher relies, requires an intent to prejudice or defraud \"any person\", and the Ordinance does not define \"person\"; whether the revenue is such a person is an open reading. Paragraph (f) catches any wilful act or omission by which the notary commits or attempts to commit a fraud in the execution of his office and reaches the same conduct without that reading, so it secures the section 39 limb of the answer.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Paragraph (f) was not amended by 31-2022 s.19, which touched only paragraph (c) and the closing penalty words, nor by any later Act in the corpus; the text shown applied at 2021-10. As with paragraph (b), the penalty at that date was imprisonment not exceeding five years, the excerpt stopping before the penalty words.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt checked verbatim against 1-1907/s39 by the verifier."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M056-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Whether this notary may attest this lease turns entirely on provisions of the Notaries Ordinance and the Prevention of Frauds Ordinance: the requirement of notarial attestation for a lease exceeding one month, the territorial and language limit in rule (22) of section 31 read with section 4A and section 9, the treatment of land lying in another district in rule (29), and the personal disqualification in rule (13). No judicial authority or Roman-Dutch doctrine is needed to reach a complete answer.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M056-Q01-01",
+          "issue": "Whether a lease of a commercial building for four years must be executed before and attested by a notary at all.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M056-Q01-02",
+          "issue": "Whether a notary whose warrant authorises him to practise in the Galle area is competent to attest a lease of a building situated in Colombo, that is, whether the statutory limit attaches to the place of attestation or to the situation of the land.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M056-Q01-03",
+          "issue": "Whether the notary is disqualified because the lessor is his neighbour, and whether the lessor's illiteracy prevents him from attesting.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M056-001",
+        "PROV-M056-002",
+        "PROV-M056-003"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M056-004",
+        "PROV-M056-005",
+        "PROV-M056-006",
+        "PROV-M056-007"
+      ],
+      "background_provision_ids": [],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across two enactments: Prevention of Frauds Ordinance s.2 establishes that the four-year lease needs notarial attestation; Notaries Ordinance s.31 rule (22) supplies the only competence limit and locates it in the area of attestation; rule (29) shows that an instrument affecting land in another district is contemplated and merely attracts an added transmission duty. Section 4A, section 9, rule (13) and rule (11) qualify these steps, but removing any one of them alone would not change the conclusion.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M056-001",
+          "to_provision_id": "PROV-M056-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M056-003",
+          "to_provision_id": "PROV-M056-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M056-004",
+          "to_provision_id": "PROV-M056-002",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M056-005",
+          "to_provision_id": "PROV-M056-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M056-006",
+          "to_provision_id": "PROV-M056-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M056-001",
+          "to_provision_id": "PROV-M056-007",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kamal Rathnayaka is a Notary practicing in Galle. Sudath Gunawardana is a neighbour of Kamal Ratnayake and the owner of a commercial building in Colombo. He is an illiterate individual. Sudath wishes to lease out his commercial building for 4 years at a monthly rental of Rs. 60,000/- and Kapila Warnakulasooriya is ready to take on lease in accordance with the said terms.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether Kamal Rathnayaka, a notary practising in Galle, may lawfully attest a four-year lease of a commercial building situated in Colombo granted by his neighbour Sudath Gunawardana, who is illiterate, to Kapila Warnakulasooriya.",
+        "rule": "Under Prevention of Frauds Ordinance s.2 no agreement affecting immovable property, other than a lease at will or for a period not exceeding one month, is of force in law unless it is in writing and attested by a notary. Notaries Ordinance s.31 rule (22) provides that a notary shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice. Notaries Ordinance s.4A deems a warrant issued for a judicial division to authorise practice in the judicial zone in which the notary resides, and s.9 binds him to have his office within the area specified in his warrant. The limit is therefore on where the notary acts, not on where the land lies: s.31 rule (29) expressly contemplates a deed or instrument affecting land situated in a district other than that in which the attesting notary resides, and requires him to deliver or transmit to the Registrar of Lands of the district in which the land is situated a certified copy, on or before the fifteenth day of the following month. As to personal capacity, s.31 rule (13) disqualifies a notary only from attesting a deed or instrument to which he is a party. Where an executant is or professes to be unable to read the instrument, s.31 rule (11) forbids attestation unless and until the notary has read over and explained it, or caused it to be explained, in the presence and hearing of that person and in the presence of the attesting witnesses.",
+        "application": "The proposed lease is for four years, far beyond the one month carved out of Prevention of Frauds Ordinance s.2, so it must be in writing and notarially attested to be of any force in law. Kamal Rathnayaka holds a notarial warrant and practises in Galle. Nothing in the Notaries Ordinance ties his competence to the district in which the leased property stands: s.31 rule (22) looks only to the area and the language in which he is authorized to practice, and s.4A extends that area to the judicial zone in which he resides. Provided the lease is drawn in a language in which he is authorized to practice and is executed and attested by him within that area, rule (22) is satisfied even though the building is in Colombo. That the land is in another district is dealt with expressly by rule (29), which assumes the attestation is good and adds a duty to send a certified copy to the Registrar of Lands of the Colombo district within the prescribed time. Kamal is Sudath Gunawardana's neighbour but he is not a party to the lease, which is between Sudath as lessor and Kapila Warnakulasooriya as lessee, so rule (13) does not touch him; his acquaintance with the lessor in fact assists identification. Sudath's illiteracy is likewise not a bar: it engages rule (11) and obliges Kamal to read over and explain the lease to him, in his presence and hearing and in the presence of the attesting witnesses, before attestation.",
+        "conclusion": "Yes. Kamal Rathnayaka can attest this lease agreement, and the lease in fact needs notarial attestation to be of force in law. His competence turns not on the Colombo situation of the building but on the execution and attestation taking place within the area, and the instrument being in a language, authorised by his warrant. The Colombo location affects only his later duty under s.31 rule (29) to transmit a certified copy to the Registrar of Lands of that district; his relationship as neighbour is no disqualification under rule (13); and the lessor's illiteracy obliges him to comply with rule (11) rather than to decline the work. Were the lease to be signed and attested outside the area of his warrant, or drawn in a language he is not authorised to practise in, the answer would be no."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M056-Q01-001",
+          "claim_text": "An agreement affecting immovable property, other than a lease at will or for a period not exceeding one month, is of no force in law unless it is in writing and notarially attested.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-002",
+          "claim_text": "A notary must not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-003",
+          "claim_text": "A warrant authorising a notary to practise in a judicial division is deemed to authorise him to practise in the judicial zone in which he resides, and he must keep his office within the area specified in his warrant.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-004",
+            "PROV-M056-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-004",
+          "claim_text": "The Notaries Ordinance contemplates a notary attesting an instrument that affects land situated in a district other than the district in which he resides, and requires him in that case to deliver or transmit a certified copy to the Registrar of Lands of the district in which the land is situated on or before the fifteenth day of the following month.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-005",
+          "claim_text": "A notary is disqualified from attesting only a deed or instrument to which he is himself a party.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-006",
+          "claim_text": "Where an executant is or professes to be unable to read the instrument, the notary must not attest it unless and until he has read over and explained it, or caused it to be explained, in the presence and hearing of that executant and in the presence of the attesting witnesses.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-007",
+          "claim_text": "Because the proposed lease runs for four years it falls outside the one month carve-out and must be notarially attested to be of force in law.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M056-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-3"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-008",
+          "claim_text": "That the building is in Colombo while Kamal Rathnayaka practises in Galle does not affect his competence to attest, because the statutory limit attaches to the area in which he attests and not to the situation of the land.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M056-002",
+            "PROV-M056-003",
+            "PROV-M056-004"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-009",
+          "claim_text": "Because the leased land is in a district other than the district in which Kamal Rathnayaka resides, he must in addition transmit a certified copy of the lease to the Registrar of Lands of the Colombo district.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M056-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-010",
+          "claim_text": "Kamal Rathnayaka is a neighbour of the lessor but not a party to the lease, so rule (13) does not disqualify him.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M056-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-6"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-011",
+          "claim_text": "Sudath Gunawardana's illiteracy does not bar attestation but obliges the notary to read over and explain the lease to him in the presence of the attesting witnesses before it is attested.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M056-007"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-012",
+          "claim_text": "Kamal Rathnayaka can attest this lease agreement, provided the execution and attestation take place within the area, and the instrument is in a language, authorised by his warrant.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M056-001",
+            "PROV-M056-002",
+            "PROV-M056-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q01-013",
+          "claim_text": "Were the lease signed and attested outside the area of his warrant, or drawn in a language he is not authorised to practise in, he could not lawfully attest it.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M056-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M056-Q04",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The notary's duty as to the consideration recorded in an instrument, and the criminal and professional consequences of departing from it, are set out in sections 38, 39, 34 and 21 of the Notaries Ordinance and in rule (20) of section 31; the chargeability of a lease to stamp duty and the person liable are set out in sections 3, 4 and 6 of the Stamp Duty (Special Provisions) Act. A complete answer to a duties-and-liabilities question follows from those provisions without judicial authority.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M056-Q04-01",
+          "issue": "Whether the lease agreement is chargeable with stamp duty and on whom the duty falls, so that understating the rental would reduce the duty payable.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M056-Q04-02",
+          "issue": "What duty the Notaries Ordinance imposes on the notary as to the consideration to be inserted in the instrument, and whether he may accede to the parties' request.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M056-Q04-03",
+          "issue": "What criminal, civil and professional liabilities the notary incurs if he inserts the lower rental, and what he must do instead.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M056-008",
+        "PROV-M056-009",
+        "PROV-M056-010"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M056-011",
+        "PROV-M056-012",
+        "PROV-M056-013",
+        "PROV-M056-014",
+        "PROV-M056-015",
+        "PROV-M056-016",
+        "PROV-M056-017",
+        "PROV-M056-901"
+      ],
+      "background_provision_ids": [],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across two enactments: section 4 of the Stamp Duty (Special Provisions) Act makes a lease a specified instrument so that the rental figure drives the duty; section 38 of the Notaries Ordinance imposes the duty to ascertain and insert the true and full consideration and makes a knowing departure an offence; section 39(b) supplies the further and graver liability where the false figure is inserted with intent to defraud. Sections 3, 6 and 10 of the Stamp Duty Act, rule (20)(f), rule (6), section 34 and section 21 qualify or extend these steps without being necessary to the conclusion.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M056-010",
+          "to_provision_id": "PROV-M056-008",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M056-012",
+          "to_provision_id": "PROV-M056-010",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M056-011",
+          "to_provision_id": "PROV-M056-010",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M056-008",
+          "to_provision_id": "PROV-M056-009",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M056-008",
+          "to_provision_id": "PROV-M056-014",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M056-015",
+          "to_provision_id": "PROV-M056-016",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M056-009",
+          "to_provision_id": "PROV-M056-017",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M056-010",
+          "to_provision_id": "PROV-M056-013",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M056-901",
+          "to_provision_id": "PROV-M056-009",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kamal Rathnayaka is a Notary practicing in Galle. Sudath Gunawardana is a neighbour of Kamal Ratnayake and the owner of a commercial building in Colombo. He is an illiterate individual. Sudath wishes to lease out his commercial building for 4 years at a monthly rental of Rs. 60,000/- and Kapila Warnakulasooriya is ready to take on lease in accordance with the said terms.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What are the duties and the liabilities of Kamal Rathnayaka as a notary when the lessor and the lessee ask him to insert in the lease agreement a rental lower than the agreed Rs. 60,000 per month in order to reduce the stamp duty payable.",
+        "rule": "A lease or hire of any property is a specified instrument under Stamp Duty (Special Provisions) Act s.4, and by s.3 stamp duty is charged on every specified instrument executed, drawn or presented in Sri Lanka at the rate the Minister determines by Order published in the Gazette; by s.6 the duty on a lease is payable by the lessee unless there is agreement to the contrary. Notaries Ordinance s.38(1) makes it the duty of every notary to endeavour to ascertain the true and full consideration for the execution of any deed and to insert and set forth the same in the deed, and s.38(2) makes a notary who knowingly and wilfully inserts anything other than the full and true consideration, or abets the doing of it, guilty of an offence and liable to a fine in addition to any civil liability he may incur. Notaries Ordinance s.39(b) further provides that a notary who knowingly and wilfully, with intent to prejudice or defraud any person, inserts in any deed or instrument any figure or thing which ought not to have been inserted, or omits any which ought to have been inserted, is guilty of an offence carrying imprisonment. Notaries Ordinance s.31 rule (20)(f) requires the attestation itself to state the number and value of the stamps affixed to the instrument and to its duplicate. Understating the consideration does not defeat the revenue in any event: under Stamp Duty (Special Provisions) Act s.10 an Assessor who is of opinion that an instrument liable to stamp duty has not been duly stamped shall assess the duty payable and require the person liable to pay it. Beyond the criminal law, Notaries Ordinance s.21(1) makes gross misconduct in the discharge of notarial duties, and repeated breaches of the rules under the Ordinance, grounds on which a report may be made to the Minister, who may suspend the notary or cancel his warrant.",
+        "application": "The agreed rental is Rs. 60,000 per month for four years, so that is the true and full consideration for the lease. The lease is a specified instrument chargeable with stamp duty at the rate in force, and the duty ordinarily falls on Kapila Warnakulasooriya as lessee. If Kamal Rathnayaka writes a lower rental into the lease at the parties' request, he inserts something other than the full and true consideration knowing it to be false, which is what s.38(2) forbids, and the same act would abet the parties' own attempt to underpay. Because the object stated by the parties is to save stamp duty, the false figure would be inserted with intent to prejudice the revenue, which brings the conduct within s.39(b) as well. He would also be certifying in his own attestation, under rule (20)(f), a stamp value corresponding to a figure he knows to be untrue. The parties gain nothing lawful by the exercise, since an Assessor may in any event assess the duty properly payable and require the lessee to pay it. Kamal Rathnayaka's duty is therefore to ascertain and insert the true rental of Rs. 60,000 per month, to explain to the parties that he cannot record any other figure, and to decline to execute the lease on the terms proposed if they persist.",
+        "conclusion": "Kamal Rathnayaka must refuse the request. His duty under Notaries Ordinance s.38(1) is to ascertain the true and full consideration and to set it forth in the instrument, which here means the agreed rental of Rs. 60,000 per month. If he accedes he commits an offence under s.38(2), punishable by a fine and leaving him civilly liable in addition, and, because the figure would be inserted with intent to defeat the stamp duty, a further and graver offence under s.39(b) punishable with imprisonment. He would also expose himself to inquiry for gross misconduct under s.21, on a report of which the Minister may suspend him or cancel his warrant. The proper course is to record the true rental, satisfy himself that the correct stamp duty is provided, state the stamp particulars accurately in his attestation, and refuse to attest the lease if the parties insist on the false figure."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M056-Q04-001",
+          "claim_text": "A lease or hire of any property is a specified instrument chargeable with stamp duty at the rate determined by the Minister by Order published in the Gazette.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-010",
+            "PROV-M056-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-002",
+          "claim_text": "In the case of a lease the stamp duty is payable by the lessee, otherwise than where there is an agreement to the contrary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-003",
+          "claim_text": "It is the duty of every notary to endeavour to ascertain the true and full consideration for the execution of a deed and to insert and set it forth in the deed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-004",
+          "claim_text": "A notary who knowingly and wilfully inserts other than the full and true consideration, or abets the doing of it, is guilty of an offence and is liable in addition to any civil liability he may incur.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-005",
+          "claim_text": "A notary who knowingly and wilfully, with intent to prejudice or defraud any person, inserts in an instrument a figure which ought not to have been inserted commits a further offence.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-006",
+          "claim_text": "The attestation must state the number and value of the adhesive stamps affixed to, or the value of the impressed stamps on, the instrument and its duplicate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-007",
+          "claim_text": "Where an Assessor is of opinion that an instrument liable to stamp duty has not been duly stamped he shall assess the duty payable and require the person liable to pay it.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-013"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-008",
+          "claim_text": "Gross misconduct in the discharge of notarial duties, or repeated breaches of the rules under the Ordinance, are grounds for inquiry and for a report on which the Minister may suspend the notary or cancel his warrant.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M056-017"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-009",
+          "claim_text": "The true and full consideration for this lease is the agreed monthly rental of Rs. 60,000 over the four-year term, and that is the figure the notary is bound to insert.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M056-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-3"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-010",
+          "claim_text": "Inserting a lower rental at the parties' request would be knowingly and wilfully setting forth other than the full and true consideration, and would also abet the parties' underpayment of duty.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M056-008",
+            "PROV-M056-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-011",
+          "claim_text": "Because the stated object is to save stamp duty, the false figure would be inserted with intent to prejudice the revenue and would fall within the fraud provision as well.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M056-009",
+            "PROV-M056-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M056-Q04-012",
+          "claim_text": "The notary would additionally be certifying in his own attestation a stamp value corresponding to a rental he knows to be untrue.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M056-014"
+          ],
+          "supporting_fact_ids": [
+            "BG-7"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-013",
+          "claim_text": "The understatement would not in any event defeat the duty, since an Assessor may assess the duty properly payable on the lease and require the lessee to pay it.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M056-013",
+            "PROV-M056-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-014",
+          "claim_text": "Kamal Rathnayaka must refuse the request, ascertain and insert the true rental of Rs. 60,000 per month, and decline to attest the lease if the parties insist on the false figure.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M056-008",
+            "PROV-M056-014"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M056-Q04-015",
+          "claim_text": "If he accedes he commits an offence under section 38(2) of the Notaries Ordinance with civil liability in addition, and a further offence under section 39(b), and exposes himself to inquiry for gross misconduct on which the Minister may suspend him or cancel his warrant.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M056-008",
+            "PROV-M056-009",
+            "PROV-M056-017"
+          ],
+          "supporting_fact_ids": [
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

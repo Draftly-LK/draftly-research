@@ -1,0 +1,113 @@
+{
+  "benchmark_matter_id": "M052",
+  "source_matter_id": "P09-Q08-M00",
+  "grouping_key": "P09-Q08-M00",
+  "paper_no": 9,
+  "question_no": 8,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Lanka Rubber Trading (Private) Limited intents to purchase a Rubber Estate situated in Kalutara, Twenty Acres (A20-RO-PO) in extent. The said company instructs you to examine the title of the said Rubber Estate.",
+    "normalized": "Lanka Rubber Trading (Private) Limited intents to purchase a Rubber Estate situated in Kalutara, Twenty Acres (A20-RO-PO) in extent. The said company instructs you to examine the title of the said Rubber Estate.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P09-Q08-P01",
+          "P09-Q08-P02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M052-Q01",
+      "atomic_id": "P09-Q08-P01",
+      "part_uid": "paper-09/q8/01",
+      "part_id": "01",
+      "item_id": null,
+      "marks": 4,
+      "pdf_page": 39,
+      "question_original": "What documents would you call for the examination of title of the Rubber Estate?",
+      "question_normalized": "What documents would you call for the examination of title of the Rubber Estate?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Lanka Rubber Trading (Private) Limited intents to purchase a Rubber Estate situated in Kalutara, Twenty Acres (A20-RO-PO) in extent. The said company instructs you to examine the title of the said Rubber Estate.",
+      "effective_background_normalized": "Lanka Rubber Trading (Private) Limited intents to purchase a Rubber Estate situated in Kalutara, Twenty Acres (A20-RO-PO) in extent. The said company instructs you to examine the title of the said Rubber Estate.",
+      "source_quote": "01. What documents would you call for the examination of title of the Rubber Estate?",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "instrument_type",
+        "registration_status",
+        "existing_encumbrance",
+        "relevant_document"
+      ]
+    },
+    {
+      "benchmark_question_id": "M052-Q02",
+      "atomic_id": "P09-Q08-P02",
+      "part_uid": "paper-09/q8/02",
+      "part_id": "02",
+      "item_id": null,
+      "marks": 7,
+      "pdf_page": 39,
+      "question_original": "Explain the reasons why a Notary should call for and examine the above documents.",
+      "question_normalized": "Explain the reasons why a Notary should call for and examine the above documents.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Lanka Rubber Trading (Private) Limited intents to purchase a Rubber Estate situated in Kalutara, Twenty Acres (A20-RO-PO) in extent. The said company instructs you to examine the title of the said Rubber Estate.",
+      "effective_background_normalized": "Lanka Rubber Trading (Private) Limited intents to purchase a Rubber Estate situated in Kalutara, Twenty Acres (A20-RO-PO) in extent. The said company instructs you to examine the title of the said Rubber Estate.",
+      "source_quote": "02. Explain the reasons why a Notary should call for and examine the above documents.",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "review",
+        "candidate_action": "enrich",
+        "confidence": 0.7,
+        "flags": [
+          "depends_on_prior_answer"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "extraction_quality=review",
+        "confidence=0.7"
+      ],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "instrument_type",
+        "registration_status",
+        "existing_encumbrance",
+        "relevant_document"
+      ]
+    }
+  ],
+  "matter_reference_date": "2021-10",
+  "exam_session": "OCTOBER 2021 / APRIL 2022",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

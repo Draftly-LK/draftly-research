@@ -1,0 +1,151 @@
+{
+  "benchmark_matter_id": "M021",
+  "verifier": "verifier-M021",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:24:13Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M021-001",
+      "decision": "verified",
+      "note": "21-1844/s2(1) checked verbatim; the substituted text does fix eighteen years and covers movable and immovable property."
+    },
+    {
+      "provision_id": "PROV-M021-002",
+      "decision": "verified",
+      "note": "29-2022/s2 repeals and substitutes s.2 of the Wills Ordinance as claimed, and 29-2022 is the only Wills Ordinance amendment in the corpus after 5-1993."
+    },
+    {
+      "provision_id": "PROV-M021-003",
+      "decision": "verified",
+      "note": "Repeal of s.3 confirmed. 29-2022 also repeals s.4 (29-2022/s4), which the map does not record but does not need."
+    },
+    {
+      "provision_id": "PROV-M021-004",
+      "decision": "verified",
+      "note": "Historical only, correctly flagged applicable_to_matter_date false and given a background role."
+    },
+    {
+      "provision_id": "PROV-M021-005",
+      "decision": "partially_verified",
+      "note": "Wording, role and temporal note are right, but the proviso allowing another finger or toe impression, which the gold answer and CL-M021-Q01-005 rely on, lies in 7-1840/s4 outside the recorded excerpt; the excerpt should run to the end of subsection (2). The proviso text itself was checked verbatim."
+    },
+    {
+      "provision_id": "PROV-M021-006",
+      "decision": "verified",
+      "note": "Verbatim in 30-2022/s3. search_corpus.py check reports FAIL for this excerpt from a Windows console only because the en dash in \"The testator shall -\" is mangled in argv; substring identity was confirmed in Python."
+    },
+    {
+      "provision_id": "PROV-M021-007",
+      "decision": "verified",
+      "note": "Rule (20)(h) confirmed as inserted by 31-2022 s.16(11)(d); 6-2024 s.3(7) touched paragraph (g) only, so the researcher's temporal note is right."
+    },
+    {
+      "provision_id": "PROV-M021-008",
+      "decision": "verified",
+      "note": "Rule (12) is unamended by 31-2022 s.16 and by 6-2024 s.3."
+    },
+    {
+      "provision_id": "PROV-M021-009",
+      "decision": "verified",
+      "note": "Rule (8) is unamended by 31-2022 s.16 and by 6-2024 s.3."
+    },
+    {
+      "provision_id": "PROV-M021-010",
+      "decision": "verified",
+      "note": "Rule number (17)(b)(iii) confirmed against 6-2024 s.3(6)(a), which substituted that sub paragraph and moved the photographs from the original to the protocol; the consolidated corpus text matches the 2024 version."
+    },
+    {
+      "provision_id": "PROV-M021-011",
+      "decision": "verified",
+      "note": "7-1840/s11 checked verbatim; no amendment recorded in the corpus."
+    },
+    {
+      "provision_id": "PROV-M021-012",
+      "decision": "verified",
+      "note": "7-1840/s16 checked verbatim, including that \"triplicate\" is the word substituted by 30-2022 s.5 for \"duplicate\". Wills are excepted on either reading of the sentence."
+    },
+    {
+      "provision_id": "PROV-M021-013",
+      "decision": "verified",
+      "note": "7-1840/s9 checked verbatim; correctly given a background role, since probate is a post-death step."
+    },
+    {
+      "provision_id": "PROV-M021-014",
+      "decision": "verified",
+      "note": "21-1844/s9 checked verbatim; 29-2022 s.6 altered only the \"landed property\" limb, not the definition of \"will\" relied on."
+    },
+    {
+      "provision_id": "PROV-M021-901",
+      "decision": "verified",
+      "note": "Added by the verifier. Notaries Ordinance s.31 rule (9); excerpt checked verbatim against 1-1907/s31."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M021-901",
+      "reason": "The map's procedure omits Notaries Ordinance s.31 rule (9), a mandatory execution step: the notary must know one of the executants or the two witnesses, or establish the executant's identity from a national identity card, passport bio page or driving licence; he must satisfy himself that the witnesses are of good repute and well acquainted with the testator; and the witnesses must sign a declaration to that effect at the foot of the instrument. The enrichment puts two neighbours forward as witnesses, so the rule is directly engaged and the procedure limb of the answer is incomplete without it. Recorded as supporting, with a procedurally_requires edge from PROV-M021-005."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M021-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "No indispensable provision was rejected or left unresolved, so the question stands as proposed_gold. statute_only is upheld: the age limit is fixed by Wills Ordinance s.2 as substituted by Act No. 29 of 2022, and the procedure by Prevention of Frauds Ordinance s.4 as amended by Act No. 30 of 2022 together with Notaries Ordinance s.31; neither limb needs Roman-Dutch common law or a decided case. Two claims were downgraded to disputed, one provision to partially_verified, and one supporting provision was added. The hop count of 3 and the four legal issues were confirmed, and the issues were marked verified."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "scope_of_claim",
+      "researcher_position": "CL-M021-Q01-013: Sunil's chronic illness does not affect his competence under the Ordinance, and because he remains lucid the notary can properly certify his good and sound mind.",
+      "verifier_position": "The first half is right as a statement about the Wills Ordinance, which imposes only an age condition. The second half asserts that the notary can properly certify sound mind, which turns on the substantive test of testamentary capacity. That test is Roman-Dutch common law and is not in the corpus; Notaries Ordinance s.31(20)(h) prescribes the duty to state sound mind but supplies no standard. Marked disputed rather than rejected, because the statutory duty and the physician's fact are both real.",
+      "supporting_sources": ["1-1907/s31", "21-1844/s2"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "overstated_conclusion",
+      "researcher_position": "CL-M021-Q01-016: only one instrument need be executed and no publication is required during Sunil's lifetime.",
+      "verifier_position": "Prevention of Frauds Ordinance s.16 excepts wills from the triplicate rule and s.9 removes any need for publication, so both halves point the right way. But s.16 does not positively say that a single instrument suffices, and Notaries Ordinance s.31(24) still requires the notary to preserve as his protocol a draft or copy carrying the signatures of the testator and the witnesses. \"Only one instrument need be executed\" needs qualification.",
+      "supporting_sources": ["7-1840/s16", "7-1840/s9", "1-1907/s31"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M021-Q01-013, marked disputed: the assertion that the notary can properly certify good and sound mind rests on a capacity standard that is not in the statutory corpus.",
+      "CL-M021-Q01-016, marked disputed: \"only one instrument need be executed\" is not what Prevention of Frauds Ordinance s.16 says, and it sits uneasily with the notary's protocol duty in Notaries Ordinance s.31(24)."
+    ],
+    "temporal_issues": [
+      "All temporal notes were re-derived from the corpus amendment_events and from the amending Acts and hold at October 2025: 21-1844/s2 latest_change_year 2022 (29-2022 s.2); 7-1840/s4 and s.16 latest_change_year 2022 (30-2022 ss.3 and 5); 1-1907/s31 latest_change_year 2024 (31-2022 s.16 and 6-2024 s.3).",
+      "The research notes never mention the Prevention of Frauds (Amendment) Act No. 4 of 2024, which is in the corpus. Checked: it amends only s.2 of Chapter 70, on deeds and transfers of land, and does not touch s.4, s.9, s.11 or s.16, so no provision or temporal note is affected.",
+      "The corpus is frozen. \"Act No. 29 of 2022 is the most recent amendment to the Wills Ordinance\" is true of this corpus and should be read as corpus-bounded, not as a statement about the statute book at large in October 2025."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Notaries Ordinance s.31 rule (9): identity of the executant, and the good repute, acquaintance and foot-of-deed declaration of the witnesses. Added as PROV-M021-901.",
+      "Notaries Ordinance s.31 rule (11): wills and codicils are excepted from the requirement that the instrument be read over and explained in the presence of the attesting witnesses. The researcher considered and excluded it; it is a genuine will-specific exception and a plausible mark-earning point, so it is flagged rather than added.",
+      "Notaries Ordinance s.31 rule (22): the notary may not attest outside the area, or in a language other than that, in which he is authorised to practise. The enrichment makes Mr Perera a Colombo District Sinhala-language notary attending at Nugegoda, which is consistent, but the map never records the constraint.",
+      "Notaries Ordinance s.31 rules (23) and (24): consecutive numbering of wills, preservation of the protocol, and the rule that for wills and codicils only the number and date go in the register. Relevant to the procedure limb and to CL-M021-Q01-016.",
+      "Notaries Ordinance s.31 rule (15A): thumb impression on the original, duplicate and protocol for an instrument in respect of immovable property. How it interacts with a will devising land, given the s.16 exception, cannot be resolved on the corpus text and is left for the lawyer."
+    ],
+    "case_law_dependence": [
+      "The answer cites no case law and the validator's case-citation regex is clean.",
+      "The only real pull towards case law is testamentary capacity, a sound and disposing mind. It is already recorded in corpus_gaps and is not what the question asks, so statute_only is upheld."
+    ],
+    "enrichment_issues": [
+      "No statute name, section number or conclusion is leaked, so the hard rule is met. But three added facts telegraph the answer: FACT-M021-Q01-002 says Sunil can place a thumb impression, which points straight at the 2022 formality that is the point of the question; FACT-M021-Q01-004 supplies a notary; FACT-M021-Q01-005 states that neither witness nor either spouse takes a benefit, which is the whole of Prevention of Frauds Ordinance s.11. A candidate could recover much of the procedure from the facts alone.",
+      "FACT-M021-Q01-003 is marked synthetic_neutral and carries a reason and a counterfactual, so the schema requirement is met; the property is held on a private deed of gift, which correctly keeps the Land Development Ordinance nomination chapter out of play.",
+      "A date of birth of 14 March 2005 against an execution date of 20 October 2025 gives an age of 20, consistent with the original background and with the October 2025 reference date."
+    ],
+    "duplicate_or_leak_issues": [
+      "PROV-M021-007, 008, 009, 010 and the added 901 all carry section_id 1-1907/s31 with different subsection values. That is correct, since the corpus holds all notarial rules in one section, but five provision entries share a section id and any downstream de-duplication by section_id would collapse them.",
+      "No other matter's directory and no legal-qa-v1 file was read during this verification."
+    ]
+  },
+  "lawyer_questions": [
+    "Testamentary capacity: is it acceptable for this gold answer to treat the chronic illness purely through the notary's statutory duty under Notaries Ordinance s.31(20)(h), or must the question be reclassified as mixed_statute_and_case because a complete answer needs the Roman-Dutch test of a sound and disposing mind?",
+    "Does Notaries Ordinance s.31(15A), which requires a thumb impression on the original, duplicate and protocol for an instrument in respect of immovable property, apply to a will devising land, given that Prevention of Frauds Ordinance s.16 excepts wills from execution in triplicate?",
+    "Should the enrichment be softened so that the thumb impression, the notary and the disinterestedness of the witnesses are not handed to the candidate?",
+    "Is the pre-2022 text of Wills Ordinance ss.3 and 4 worth adding to the corpus, so that the history in the rule paragraph can be quoted rather than inferred from the amending Acts?"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "benchmark_matter_id": "M033",
+  "source_matter_id": "P05-Q04-M00",
+  "grouping_key": "P05-Q04-M00",
+  "paper_no": 5,
+  "question_no": 4,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Athula Silva is a Notary practicing in Colombo. His client Mr. Siripala wishes to take on lease a business premises situated in Kegalle for his textile business belonging to one Mr. Kariyawasam. Mr. Kariyawasam wants Mr. Godage his Notary who is authorized to practice in Kegalle to draft and attest the lease agreement. Mr. Siripala is not willing to come to Kegalle.",
+    "normalized": "Athula Silva is a Notary practicing in Colombo. His client Mr. Siripala wishes to take on lease a business premises situated in Kegalle for his textile business belonging to one Mr. Kariyawasam. Mr. Kariyawasam wants Mr. Godage his Notary who is authorized to practice in Kegalle to draft and attest the lease agreement. Mr. Siripala is not willing to come to Kegalle.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P05-Q04-P01"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M033-Q01",
+      "atomic_id": "P05-Q04-P01",
+      "part_uid": "paper-05/q4/1",
+      "part_id": "1",
+      "item_id": null,
+      "marks": 4,
+      "pdf_page": 19,
+      "question_original": "How can they execute this Agreement?",
+      "question_normalized": "How can they execute this Agreement?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Athula Silva is a Notary practicing in Colombo. His client Mr. Siripala wishes to take on lease a business premises situated in Kegalle for his textile business belonging to one Mr. Kariyawasam. Mr. Kariyawasam wants Mr. Godage his Notary who is authorized to practice in Kegalle to draft and attest the lease agreement. Mr. Siripala is not willing to come to Kegalle.",
+      "effective_background_normalized": "Athula Silva is a Notary practicing in Colombo. His client Mr. Siripala wishes to take on lease a business premises situated in Kegalle for his textile business belonging to one Mr. Kariyawasam. Mr. Kariyawasam wants Mr. Godage his Notary who is authorized to practice in Kegalle to draft and attest the lease agreement. Mr. Siripala is not willing to come to Kegalle.",
+      "source_quote": "1). Athula Silva is a Notary practicing in Colombo. His client Mr. Siripala wishes to take on\nlease a business premises situated in Kegalle for his textile business belonging to one\nMr. Kariyawasam. Mr. Kariyawasam wants Mr. Godage his Notary who is authorized\nto practice in Kegalle to draft and attest the lease agreement. Mr. Siripala is not willing\nto come to Kegalle. How can they execute this Agreement?\n(4 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.75,
+        "flags": []
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "confidence=0.75"
+      ],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2024-04",
+  "exam_session": "APRIL 2024",
+  "matter_tier": "B",
+  "tier_a_question_count": 0
+}

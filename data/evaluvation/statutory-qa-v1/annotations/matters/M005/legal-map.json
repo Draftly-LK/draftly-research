@@ -1,0 +1,459 @@
+{
+  "benchmark_matter_id": "M005",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M005",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T21:52:30Z",
+    "verification_agent": "verifier-M005",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:00:59Z"
+  },
+  "matter_reference_date": "2026-04",
+  "matter_reference_date_basis": "matter_reference_date from candidates/matters/M005.json; the exam session is APRIL 2026, so the law is taken as it stands in April 2026, which includes the Notaries (Amendment) Acts No. 31 of 2022 and No. 6 of 2024 carried into the consolidated text of the Notaries Ordinance.",
+  "corpus_gaps": [
+    "The corpus holds the Notaries Ordinance only as a single consolidated edition. Individual rules of s.31 carry no separate commencement date, so the temporal check for each rule rests on the amendment_events list for the whole section rather than on a per-rule in-force date.",
+    "Notaries (Amendment) Act No. 6 of 2024 appears in the amendment_events of 1-1907/s31 but is not itself listed as an Act in the corpus, so the wording it substituted into rule (17) could not be read against its own text.",
+    "The corpus contains no case law and no Roman-Dutch material, so professional practice on how far a notary's investigation of title should go beyond the statutory minimum could not be checked. This does not affect the answer, which rests only on the Ordinance."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M005-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "opening words (chapeau)",
+      "relevant_excerpt": "It is and shall be the duty of every notary strictly to observe and act in conformity with the following rules",
+      "why_relevant": "Makes the rules in section 31 mandatory duties of the notary personally, so a notary cannot treat any of them as optional because of an employer's instruction or urgency.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is in force from 1907; the consolidated text used here carries the amendments up to Act No. 6 of 2024. The chapeau itself was not altered by those amendments and is in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M005-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(a)",
+      "relevant_excerpt": "Before any deed or instrument (other than a will or codicil) affecting any interest in land or other immovable property is drawn by him, he shall search or cause to be searched the registers in the land registry to ascertain the state of the title in regard to such land and whether any prior deed affecting any interest in such land has been registered",
+      "why_relevant": "The provision that directly answers the question: the notary must search the land registry registers before drawing a deed affecting an interest in land, and must do so before the deed is drawn, not merely before it is registered.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (17) of section 31 in the consolidated text reflects the substitutions made by Notaries (Amendment) Act No. 31 of 2022 and Act No. 6 of 2024, both of which precede 2026-04, so this text is in force at the matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and the rule is in force at 2026-04, but the temporal note is corrected: paragraph (a) of rule (17) was not touched by Act No. 31 of 2022 (s.16(10) repealed and replaced only paragraph (b) and added paragraphs (c) to (e)) or by Act No. 6 of 2024 (s.3(6) altered only paragraph (b)(iii) and paragraph (c)), so the search duty stands in its pre-2022 form."
+    },
+    {
+      "provision_id": "PROV-M005-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "proviso to rule (17)",
+      "relevant_excerpt": "Provided that if the parties to the transaction authorize the notary in writing to dispense with the search, the search shall not be compulsory, but he shall before the deed or instrument is tendered for registration write at the head thereof the reference to the previous registration, if any.",
+      "why_relevant": "The only statutory route by which the search may lawfully be omitted. The answer turns on this exception, so it must be recorded and tested against the facts.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Appears in the consolidated rule (17) as amended to 2024; in force at 2026-04.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verbatim and the proviso is carried at rule (17) level in the corpus (1-1907/s31/sub-17/pro-39), but the temporal note is corrected: neither Act No. 31 of 2022 nor Act No. 6 of 2024 amended the proviso; it is the original text, and by its terms it dispenses only with the search, not with the certified-folio-extract duty in paragraph (b)(i)."
+    },
+    {
+      "provision_id": "PROV-M005-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(b)(i)",
+      "relevant_excerpt": "he shall obtain from the Registrar of the relevant Land Registry the certified extract of the folio containing the last entry pertaining to such land or immovable property containing the ownership and the registered encumbrances relating to such land or immovable property",
+      "why_relevant": "Shows what the required investigation of title consists of in concrete terms, so that inspecting a copy of an earlier deed handed over by a client or employer does not discharge the duty.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted into rule (17) by the amendments consolidated up to 2024; in force at 2026-04.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verbatim; role corrected from supporting to indispensable because the gold conclusion (CL-M005-Q01-012) requires the certified folio extract, and the temporal note is corrected: paragraph (b) was repealed and substituted by Act No. 31 of 2022 s.16(10)(a), and Act No. 6 of 2024 s.3(6)(a) touched only sub-paragraph (iii), not (i)."
+    },
+    {
+      "provision_id": "PROV-M005-005",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (33)",
+      "relevant_excerpt": "When a deed transferring any immovable property is executed or acknowledged before a notary, he shall use his best endeavours to obtain the title deed, if any, of such property",
+      "why_relevant": "A further title-related duty owed on a deed of transfer, which supports the conclusion that the Ordinance does not leave title investigation to the notary's convenience. Not indispensable: rule (17) alone decides the question.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Long-standing rule in section 31, not identified as altered by the 2011, 2022 or 2024 amendment events listed for the section; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M005-006",
+      "section_id": "1-1907/s34",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "34",
+      "subsection": "(1)(c)",
+      "relevant_excerpt": "any other rule set out in section 31, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate, be liable to a fine not exceeding fifty thousand rupees, in addition to any civil liability he may incur thereby.",
+      "why_relevant": "Supplies the consequence of breaching rule (17). Rule (17) is not listed in section 34(1)(a) or (b), so it falls within the residual paragraph (c).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 34 was substituted by Notaries (Amendment) Act No. 31 of 2022, which precedes the matter date of 2026-04; the substituted text is the one in force.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M005-007",
+      "section_id": "1-1907/s33",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "33",
+      "subsection": null,
+      "relevant_excerpt": "No instrument shall be deemed to be invalid by reason only of the failure of any notary to observe any provision of any rule set out in section 31 in respect of any matter of form",
+      "why_relevant": "Context only: it limits the effect of a breach on the validity of the instrument, and only for matters of form. It says nothing about the notary's own liability, so it does not make the search optional.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907 and carrying no amendment events in the corpus; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M005-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question expressly asks for the provisions of the Notaries Ordinance, and a complete answer is given by s.31 rule (17) with its proviso, read with rule (17)(b)(i), s.34(1)(c) and s.33. No judicial authority or Roman-Dutch doctrine is needed to decide whether the search may be omitted or what the consequence of omitting it is.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M005-Q01-01",
+          "issue": "Whether s.31 rule (17)(a) of the Notaries Ordinance obliges a notary to search the land registry before drawing a deed of transfer of land.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M005-Q01-02",
+          "issue": "Whether the proviso to s.31 rule (17) permits the search to be omitted on these facts, there being no written authority from the parties.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M005-Q01-03",
+          "issue": "Whether an employer's urgent instruction to an employed notary qualifies the duties imposed on him personally by s.31.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M005-Q01-04",
+          "issue": "What liability follows under s.34 if the notary executes the deed without the search, and what s.33 does and does not save.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M005-001",
+        "PROV-M005-002",
+        "PROV-M005-003",
+        "PROV-M005-004"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M005-005",
+        "PROV-M005-006"
+      ],
+      "background_provision_ids": [
+        "PROV-M005-007"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Verifier-revised. One directly applicable rule, s.31 rule (17)(a), plus the exception in the proviso to rule (17) which must be ruled out before the answer can be given, both resting on the mandatory chapeau of s.31. Two necessary steps, so hop count 2. Rule (17)(b)(i) has been moved to the indispensable set because the gold conclusion requires the certified folio extract, but it adds no further hop: it is a parallel duty imposed by the same chapeau and engaged by the same fact (a deed affecting an interest in land), not an extra inferential step. The penalty in s.34(1)(c) enriches the answer but is not needed to reach the yes/no conclusion, so it stays supporting and is not counted.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M005-001",
+          "to_provision_id": "PROV-M005-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M005-003",
+          "to_provision_id": "PROV-M005-002",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M005-004",
+          "to_provision_id": "PROV-M005-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M005-006",
+          "to_provision_id": "PROV-M005-002",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M005-007",
+          "to_provision_id": "PROV-M005-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M005-005",
+          "to_provision_id": "PROV-M005-002",
+          "relationship": "jointly_required"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis.",
+        "enriched_background": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis. The transfer concerns Lot 3B depicted in Survey Plan No. 2145 dated 12 March 2019 made by K. B. Ranaweera, Licensed Surveyor, an allotment of land of eighteen perches in extent situated at Talangama North within the Kaduwela Divisional Secretary's Division in the District of Colombo. The intended vendor is Nimal Perera and the intended purchaser is Kamala Silva, a customer of Saman's employer; Saman himself has no interest in the land and is not a party to the transaction. On 19 April 2026 the employer hands Saman a photocopy of Deed of Transfer No. 4512 dated 6 August 2014, by which Nimal Perera says he acquired the land, and tells him to draw and attest the new deed at the company's Colombo office on 20 April 2026 so that the purchase money can be paid the same day. Neither Nimal Perera nor Kamala Silva has given Saman any written authority dispensing with an examination of the land registry, and no extract of the land registry folio for the land has been obtained by anyone.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M005-Q01-001",
+            "fact": "The deed is to transfer Lot 3B in Survey Plan No. 2145 dated 12 March 2019, an allotment of eighteen perches at Talangama North in the Kaduwela Divisional Secretary's Division, District of Colombo.",
+            "origin": "synthetic_decisive",
+            "reason": "The original background says only 'a Deed of Transfer'. Rule (17)(a) is engaged only by a deed affecting an interest in land or other immovable property, so the subject matter has to be fixed before the rule can be applied.",
+            "activates_provision_ids": [
+              "PROV-M005-002",
+              "PROV-M005-004",
+              "PROV-M005-005"
+            ],
+            "counterfactual_effect": "If the deed transferred only movable property, or were a will or codicil, rule (17)(a) would not apply and Saman could execute it without any land registry search.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M005-Q01-002",
+            "fact": "The intended vendor is Nimal Perera and the intended purchaser is Kamala Silva, a customer of Saman's employer; Saman has no interest in the land and is not a party to the transaction.",
+            "origin": "synthetic_neutral",
+            "reason": "Identifies the parties to the transaction, who are the persons whose written authority the proviso to rule (17) speaks of, and keeps the scenario clear of the separate problem of a notary attesting a deed to which he is himself a party.",
+            "activates_provision_ids": [
+              "PROV-M005-003"
+            ],
+            "counterfactual_effect": "If Saman were himself an executant the question would turn on a different rule; as drafted the facts keep the issue confined to the title search.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M005-Q01-003",
+            "fact": "On 19 April 2026 the employer gives Saman only a photocopy of Deed of Transfer No. 4512 dated 6 August 2014, said to be the vendor's title, and no extract of the land registry folio for the land has been obtained by anyone.",
+            "origin": "synthetic_decisive",
+            "reason": "Fixes what Saman would actually have in front of him if he complied with the instruction, and makes it determinate that no search of the registers and no certified folio extract has been made.",
+            "activates_provision_ids": [
+              "PROV-M005-002",
+              "PROV-M005-004"
+            ],
+            "counterfactual_effect": "If a certified extract of the folio had already been obtained and the registers searched, the duty under rule (17) would be satisfied and the answer would be that he may proceed.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M005-Q01-004",
+            "fact": "Neither Nimal Perera nor Kamala Silva has given Saman any written authority to dispense with an examination of the land registry.",
+            "origin": "synthetic_decisive",
+            "reason": "The proviso to rule (17) is the only lawful way to omit the search, and it depends on written authority from the parties. Without this fact the question could not be answered either way.",
+            "activates_provision_ids": [
+              "PROV-M005-003"
+            ],
+            "counterfactual_effect": "If both parties had authorised the omission in writing, the search would not be compulsory and Saman could draw the deed without it, subject to writing the reference to the previous registration at the head of the deed before tendering it for registration.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M005-Q01-005",
+            "fact": "The employer wants the deed drawn and attested at the company's Colombo office on 20 April 2026, the day after the instruction, so that the purchase money can be paid the same day.",
+            "origin": "synthetic_neutral",
+            "reason": "Gives the 'urgent basis' in the original background a concrete sequence, and places the execution within the Judicial Zone of Colombo in which Saman is licensed, so that no separate question of territorial competence arises.",
+            "activates_provision_ids": [
+              "PROV-M005-001"
+            ],
+            "counterfactual_effect": "A longer timetable would not change the legal position, because urgency is not a statutory ground for omitting the search.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether a notary who is instructed by his employer to execute a Deed of Transfer urgently may draw and attest that deed without searching the land registry to ascertain the state of the title, and what follows under the Notaries Ordinance if he does.",
+        "rule": "Notaries Ordinance s.31 makes it the duty of every notary strictly to observe the rules set out in that section. Rule (17)(a) of s.31 provides that before any deed or instrument, other than a will or codicil, affecting any interest in land or other immovable property is drawn by him, the notary shall search or cause to be searched the registers in the land registry to ascertain the state of the title in regard to such land and whether any prior deed affecting any interest in such land has been registered. Rule (17)(b)(i) requires him to obtain from the Registrar of the relevant Land Registry a certified extract of the folio containing the last entry showing the ownership of and the registered encumbrances on the land. The proviso to rule (17) creates the single exception: if the parties to the transaction authorise the notary in writing to dispense with the search, the search is not compulsory, but he must then write at the head of the deed the reference to the previous registration, if any, before tendering it for registration. Rule (33) adds that on a deed transferring immovable property the notary shall use his best endeavours to obtain the title deed. Breach of rule (17) is an offence: it is not among the rules listed in s.34(1)(a) or (b), so it falls within s.34(1)(c) and carries, on summary trial before a Magistrate, a fine not exceeding fifty thousand rupees in addition to any civil liability. Section 33 saves an instrument from invalidity only where the notary's non-compliance is in respect of a matter of form; it does not address the notary's own liability.",
+        "application": "The instrument is a Deed of Transfer of an allotment of land at Talangama North, so it affects an interest in land and is not a will or codicil, and rule (17)(a) applies to it before the deed is drawn, not merely before it is registered. What the employer has given Saman is a photocopy of the vendor's 2014 deed. That is neither a search of the registers in the land registry nor the certified folio extract required by rule (17)(b)(i), so on these facts nothing has been done to ascertain the state of the title or to discover whether any prior deed affecting the land has been registered. The proviso cannot be relied on, because neither the vendor nor the purchaser has authorised Saman in writing to dispense with the search; the employer is not a party to the transaction, and its instruction is in any event oral. The duty under s.31 lies on Saman in his capacity as notary. His employment as a legal officer of the real estate company does not shift that duty to his employer, and the Ordinance recognises no exception for urgency. Whether a deed executed in breach would nonetheless be a valid instrument is a separate question, since s.33 operates only where the omission is a matter of form; that point is open on these facts and does not affect Saman's own position.",
+        "conclusion": "No. Saman cannot execute the Deed of Transfer without checking the title at the land registry. Rule (17)(a) of s.31 of the Notaries Ordinance obliges him to search or cause to be searched the land registry registers before he draws the deed, and rule (17)(b)(i) obliges him to obtain the certified folio extract. Because neither party has given him written authority to dispense with the search, the proviso to rule (17) does not apply, and his employer's urgency is no answer. If he proceeds he is guilty of an offence under s.34(1)(c), liable to a fine not exceeding fifty thousand rupees in addition to any civil liability. The proper course is to search the registers and obtain the certified folio extract first or, if the parties are willing, to take their written authority to dispense with the search and then write the reference to the previous registration at the head of the deed before tendering it for registration."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M005-Q01-001",
+          "claim_type": "rule",
+          "claim_text": "Notaries Ordinance s.31 casts on every notary a duty strictly to observe and act in conformity with the rules set out in that section.",
+          "supporting_provision_ids": [
+            "PROV-M005-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-002",
+          "claim_type": "rule",
+          "claim_text": "Under Notaries Ordinance s.31 rule (17)(a), before any deed or instrument other than a will or codicil affecting any interest in land or other immovable property is drawn by him, the notary must search or cause to be searched the registers in the land registry to ascertain the state of the title and whether any prior deed affecting an interest in that land has been registered.",
+          "supporting_provision_ids": [
+            "PROV-M005-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-003",
+          "claim_type": "rule",
+          "claim_text": "Notaries Ordinance s.31 rule (17)(b)(i) requires the notary to obtain from the Registrar of the relevant Land Registry a certified extract of the folio containing the last entry showing the ownership of, and the registered encumbrances on, the land.",
+          "supporting_provision_ids": [
+            "PROV-M005-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-004",
+          "claim_type": "rule",
+          "claim_text": "The proviso to Notaries Ordinance s.31 rule (17) makes the search non-compulsory only where the parties to the transaction authorise the notary in writing to dispense with it, and even then the notary must write at the head of the deed the reference to the previous registration, if any, before the deed is tendered for registration.",
+          "supporting_provision_ids": [
+            "PROV-M005-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-005",
+          "claim_type": "rule",
+          "claim_text": "Notaries Ordinance s.31 rule (33) separately requires a notary before whom a deed transferring immovable property is executed to use his best endeavours to obtain the title deed of the property.",
+          "supporting_provision_ids": [
+            "PROV-M005-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-006",
+          "claim_type": "rule",
+          "claim_text": "A notary who disregards or neglects to observe rule (17) is guilty of an offence and liable on summary trial before a Magistrate to a fine not exceeding fifty thousand rupees, in addition to any civil liability, because rule (17) is not named in Notaries Ordinance s.34(1)(a) or (b) and so falls within the residual paragraph s.34(1)(c).",
+          "supporting_provision_ids": [
+            "PROV-M005-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-007",
+          "claim_type": "rule",
+          "claim_text": "Notaries Ordinance s.33 protects an instrument from being held invalid only where the notary's non-compliance with a s.31 rule concerns a matter of form, and it does not by its terms relieve the notary of liability for the breach.",
+          "supporting_provision_ids": [
+            "PROV-M005-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-008",
+          "claim_type": "application",
+          "claim_text": "The instrument Saman is asked to execute is a deed of transfer of an allotment of land at Talangama North, so it is a deed affecting an interest in land and is not a will or codicil, and rule (17)(a) applies to it.",
+          "supporting_provision_ids": [
+            "PROV-M005-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M005-Q01-001",
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-009",
+          "claim_type": "application",
+          "claim_text": "Neither the vendor nor the purchaser has authorised Saman in writing to dispense with the search, so the proviso to rule (17) is not available to him.",
+          "supporting_provision_ids": [
+            "PROV-M005-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M005-Q01-004",
+            "FACT-M005-Q01-002"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-010",
+          "claim_type": "application",
+          "claim_text": "A photocopy of the vendor's 2014 deed supplied by the employer is not a search of the registers in the land registry and is not the certified folio extract that rule (17)(b)(i) requires, so acting on it alone would leave rule (17) unperformed.",
+          "supporting_provision_ids": [
+            "PROV-M005-002",
+            "PROV-M005-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M005-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-011",
+          "claim_type": "application",
+          "claim_text": "The duty under s.31 is imposed on Saman as notary, so his employment as a legal officer of the real estate company and the urgency of his employer's instruction do not qualify or excuse it; the Ordinance provides no exception for urgency or for instructions from an employer, and the employer is not a party to the transaction whose written authority the proviso to rule (17) contemplates.",
+          "supporting_provision_ids": [
+            "PROV-M005-001",
+            "PROV-M005-002",
+            "PROV-M005-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-3",
+            "FACT-M005-Q01-005"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-012",
+          "claim_type": "conclusion",
+          "claim_text": "Saman cannot lawfully execute the Deed of Transfer without first searching or causing to be searched the land registry registers and obtaining the certified folio extract, because the only statutory dispensation, written authority from the parties, is absent on these facts.",
+          "supporting_provision_ids": [
+            "PROV-M005-002",
+            "PROV-M005-003",
+            "PROV-M005-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M005-Q01-001",
+            "FACT-M005-Q01-003",
+            "FACT-M005-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-013",
+          "claim_type": "conclusion",
+          "claim_text": "If Saman proceeds without the search he commits an offence under s.34(1)(c) punishable with a fine not exceeding fifty thousand rupees in addition to any civil liability, and s.33 would not assist him because it addresses only the validity of the instrument and only in matters of form.",
+          "supporting_provision_ids": [
+            "PROV-M005-006",
+            "PROV-M005-007"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M005-Q01-003",
+            "FACT-M005-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M005-Q01-014",
+          "claim_type": "conclusion",
+          "claim_text": "If instead both Nimal Perera and Kamala Silva were to authorise Saman in writing to dispense with the search, the search would cease to be compulsory, and Saman would then have to write the reference to the previous registration, if any, at the head of the deed before tendering it for registration.",
+          "supporting_provision_ids": [
+            "PROV-M005-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M005-Q01-004"
+          ],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

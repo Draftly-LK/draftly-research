@@ -1,0 +1,932 @@
+{
+  "benchmark_matter_id": "M093",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M093",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-05T00:00:00Z",
+    "verification_agent": "verifier-M093",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-05T00:00:00Z"
+  },
+  "matter_reference_date": "2019-04",
+  "matter_reference_date_basis": "Exam session recorded in the candidate matter file as APRIL 2019 (exam_session), giving matter_reference_date 2019-04. All temporal checks are made against April 2019.",
+  "corpus_gaps": [
+    "The Rubber Control Act is not in the corpus. The definition of 'rubber estate' in the Tea and Rubber Estates (Control of Fragmentation) Act, s 25 turns on registration under that Act, so the registration criterion the notary must verify cannot be read from the corpus.",
+    "The Ministerial Order made under the Stamp Duty (Special Provisions) Act, s 3(1) fixing the rate of stamp duty on a transfer of immovable property is not in the corpus, so no rate can be stated.",
+    "The Pradeshiya Sabhas Act, No. 15 of 1987, and the subdivision-approval machinery behind the Tea and Rubber Estates (Control of Fragmentation) Act, s 23A, are not in the corpus, so the local-authority approval procedure for a blocking out plan cannot be traced.",
+    "The corpus copy of the Notaries Ordinance is a consolidation that already carries Notaries (Amendment) Act No. 31 of 2022 and No. 6 of 2024. There is no as-at-2019 edition, so the April 2019 wording of s 31 was reconstructed by reading 31-2022 s.16 and 6-2024 s.3 to see which rules those Acts touched; excerpts are quoted from the consolidated body as the corpus requires.",
+    "The corpus copy of the Prevention of Frauds Ordinance, s 2 likewise carries the 2022 and 2024 substitutions; only the opening words, which those Acts did not change, are relied on here.",
+    "Regulations and prescribed forms under the Registration of Documents Ordinance (searches, certified extracts, priority notices) are not in the corpus.",
+    "Paragraph (b) of Notaries Ordinance s 31 rule (17) and the proviso to rule (16)(b), both in force in April 2019, are not in the corpus: 31-2022 s 16(9)(b) deleted the proviso and s 16(10)(a) repealed and replaced paragraph (b), and the consolidation carries only the replacement text. The April 2019 content of both is therefore unreadable from the corpus."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M093-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(a)",
+      "relevant_excerpt": "Before any deed or instrument (other than a will or codicil) affecting any interest in land or other immovable property is drawn by him, he shall search or cause to be searched the registers in the land registry to ascertain the state of the title in regard to such land and whether any prior deed affecting any interest in such land has been registered",
+      "why_relevant": "The only provision that speaks directly to what a notary must do before the deed is drawn: search the land registry registers for the state of the title and for prior registered deeds. It is the statutory core of the answer.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (17)(a) was in force in April 2019. Notaries (Amendment) Act No. 31 of 2022, s 16(10) repealed and replaced only paragraph (b) of rule (17) and added new paragraphs (c) to (e); paragraph (a) was not touched by the 2022 or the 2024 amendment. The proviso allowing the parties to dispense with the search in writing was also in force.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (16)(a)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument, other than a will or codicil, affecting land or other immovable property, unless the deed or instrument embodies therin or in a Schedule annexed therto an accurate and clear description of the said land or other property affected thereby, showing its boundaries, extent, situation specifying the district, pattu, korale, Divisional Secretary's Division, local authority division and the Grama Niladari Division",
+      "why_relevant": "The notary cannot draft the schedule until he has the material for an accurate description of the land by boundaries, extent and situation. Gathering that material is a pre-drafting step.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in April 2019. Notaries (Amendment) Act No. 31 of 2022, s 16(9)(a) only substituted the closing words of rule (16)(a) to add condominium parcels; the words quoted here are the pre-2022 text (the spellings 'therin' and 'therto' are as printed in the corpus).",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (16)(b)",
+      "relevant_excerpt": "if such property consist of a share of a land or other property, the deed shall state whether it is a divided or undivided share, and the fractional part which it is of the whole. If it be a divided share, such share shall be clearly and accurately defined by its particular boundaries and extent",
+      "why_relevant": "Wimal is buying a portion, not the whole estate. Rule (16)(b) requires the deed to say whether the share is divided or undivided and, if divided, to define it by its own boundaries and extent, which in practice requires a survey plan of the portion before drafting.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in April 2019. The 2022 amendment (s 16(9)(b)) only deleted the proviso at the end of rule (16)(b); the sentences quoted here are unchanged.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and unaffected by the 2022 amendment, but 31-2022 s.16(9)(b) deleted a proviso at the end of rule (16)(b) that was still in force in April 2019 and is absent from the consolidated corpus text, so the April 2019 paragraph cannot be read in full."
+    },
+    {
+      "provision_id": "PROV-M093-004",
+      "section_id": "2-1958/s3",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act",
+      "number_and_year": "No. 2 of 1958",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "The transfer of ownership of a tea or rubber estate on or after the appointed day shall, subject to the provisions of subsections (2) and (3), be null and void unless- (a) a certificate of consent of the Board to such transfer has been previously obtained by the transferor, and (b) such transfer is effected in accordance with the conditions, if any, subject to which such consent has been granted.",
+      "why_relevant": "If the land is a rubber estate within the meaning of the Act, the transfer of a portion of it is null and void unless the transferor has previously obtained the Board's certificate of consent. Checking whether the Act applies, and seeing the certificate, is an indispensable pre-drafting step.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since the appointed day, 11 December 1957 (s 2), and unamended as at April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-005",
+      "section_id": "2-1958/s25",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act",
+      "number_and_year": "No. 2 of 1958",
+      "section": "25",
+      "subsection": "definition of \"rubber estate\"",
+      "relevant_excerpt": "means a rubber estate of not less than one hundred acres in extent which, under the Rubber Control Act is or is deemed to be an estate registered under that Act",
+      "why_relevant": "The consent requirement in s 3(1) only bites if the land answers this definition. The notary must therefore establish the extent of the estate and whether it is registered under the Rubber Control Act before he can know whether a certificate of consent is needed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in April 2019. The corpus body of s 25 prints the defined terms in a separate list, so the definition reads as a bare 'means ...' clause; the term defined is 'rubber estate'. The recorded amendment events on s 25 relate to the coconut estate and local authority definitions dealt with in 2005.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-006",
+      "section_id": "2-1958/s25",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act",
+      "number_and_year": "No. 2 of 1958",
+      "section": "25",
+      "subsection": "definition of \"transfer of ownership\"",
+      "relevant_excerpt": "with reference to any tea or rubber estate, means the transfer of ownership of such estate or any portion thereof by sale, exchange or gift other than a gift by a testamentary disposition",
+      "why_relevant": "This definition is what brings the sale of a portion of the estate, and not merely a sale of the whole, within s 3(1). Without it the Fragmentation Act would look irrelevant to a purchase of part of an estate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in April 2019; the corpus body prints the defined term separately from the definition, as noted for PROV-M093-005.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-007",
+      "section_id": "2-1958/s3",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act",
+      "number_and_year": "No. 2 of 1958",
+      "section": "3",
+      "subsection": "(4)",
+      "relevant_excerpt": "Where a certificate of consent to the transfer of ownership of a tea or rubber estate is issued by the Board, such certificate shall be attached to the deed by which such transfer is effected, and the notary attesting such deed shall in his attestation state that such certificate has been issued in respect of such transfer and specify the number, if any, and the date of issue of such certificate",
+      "why_relevant": "The certificate has to be in the notary's hands before drafting, because it must be attached to the deed and its number and date recited in the attestation. Failure is an offence under s 5.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1957 and unamended as at April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-008",
+      "section_id": "2-1958/s11",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act",
+      "number_and_year": "No. 2 of 1958",
+      "section": "11",
+      "subsection": null,
+      "relevant_excerpt": "Every application for the consent of the Board to the transfer of ownership or the partition by deed of, or to the institution of a partition action in respect of, a tea or rubber estate shall- (a) be made in writing by the proprietor or any one of the proprietors of such estate or by the authorized agent of such proprietor or proprietors; (b) be addressed to the Chairman of the Board and transmitted to or delivered at the office of the Board",
+      "why_relevant": "Tells the notary who must apply for consent (the proprietor, that is the vendor) and what the application must contain, so he can advise the parties on the step that has to be completed before the deed is drawn.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1957 and unamended as at April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-009",
+      "section_id": "2-1958/s23A",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act",
+      "number_and_year": "No. 2 of 1958",
+      "section": "23A",
+      "subsection": "(1)",
+      "relevant_excerpt": "No officer of a local authority shall approve a blocking out plan of any land which is a tea estate, a rubber estate or a coconut estate, as the case may be, within the meaning of the Act, unless a certificate of consent under section 14 of the Act has been issued by the Board relating to such estate.",
+      "why_relevant": "Carving a portion out of the estate needs a blocking out plan, and the local authority may not approve one without the Board's certificate. This fixes the order of the pre-drafting steps: consent first, then approval of the plan, then the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 20 of 2005, s 9, so in force well before April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-010",
+      "section_id": "2-1958/s8",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act",
+      "number_and_year": "No. 2 of 1958",
+      "section": "8",
+      "subsection": "(1)",
+      "relevant_excerpt": "The Board shall grant its consent- (a) to the transfer of ownership of a tea or rubber estate which does not involve the division of such estate into a number of lots; (b) to the transfer of ownership of a tea or rubber estate which involves the division of such estate into a number of lots, or to the partition by deed of a tea or rubber estate",
+      "why_relevant": "Background on the grounds on which the Board must consent, which lets the notary tell the client at the outset how the application for a divided block is likely to be treated.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1957 and unamended as at April 2019.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The excerpt stops at the opening words of paragraph (b) and omits sub-paragraphs (i) to (iii), which are the conditions that actually govern consent to a division into lots, so as quoted s 8(1) reads as an unconditional duty to consent; the excerpt should be extended before the answer relies on it."
+    },
+    {
+      "provision_id": "PROV-M093-011",
+      "section_id": "23-1927/s7",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "7",
+      "subsection": "(1)",
+      "relevant_excerpt": "unless it is duly registered under this Chapter, or, if the land has come within the operation of the Land Registration Ordinance, 1877f, in the books mentioned in section 26 of that Ordinance, be void as against all parties claiming an adverse interest thereto on valuable consideration by virtue of any subsequent instrument which is duly registered under this Chapter",
+      "why_relevant": "Explains why the pre-drafting search matters: priority turns on registration, so an unnoticed registered prior instrument can defeat the purchaser.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1927 and unamended as at April 2019 (the trailing 'f' is a footnote marker printed in the corpus text).",
+      "verification_status": "partially_verified",
+      "verifier_note": "The excerpt is verbatim but begins mid-sentence and drops the subject ('An instrument executed or made on or after the 1st day of January, 1864 ... shall'), so it does not stand as a proposition on its own; the priority point it is cited for is correct."
+    },
+    {
+      "provision_id": "PROV-M093-012",
+      "section_id": "23-1927/s42",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "42",
+      "subsection": null,
+      "relevant_excerpt": "all duplicates and copies and all books and indexes kept under this Ordinance may be searched and examined by any person claiming to be interested therein or by his attorney-at-law or agent duly authorized thereto in writing, and certified copies of or extracts from any such duplicate, copy, or book may be obtained if required",
+      "why_relevant": "This is the statutory right that makes the search under rule (17)(a) possible, and the source of the certified extract the notary should obtain.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1927 and unamended as at April 2019.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Section 42 confers a right, subject to the prescribed regulations, to search and to obtain certified copies or extracts; it imposes no duty on a notary. The duty to obtain a certified extract of the folio was created by Notaries (Amendment) Act No. 31 of 2022, s 16(10)(a), inserting rule (17)(b)(i), and did not exist in April 2019."
+    },
+    {
+      "provision_id": "PROV-M093-013",
+      "section_id": "23-1927/s14",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "14",
+      "subsection": "(1)",
+      "relevant_excerpt": "Every instrument presented for registration shall be registered in the book allotted to the division in which the land affected by the instrument is situated and in the folio in which",
+      "why_relevant": "Fixes the registry at which the search has to be made: the division in which the land lies, that is Ratnapura, not the notary's own district of Colombo.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in April 2019; the only recorded change is by Act No. 14 of 1974.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-014",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (22)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice nor authenticate or attest any deed or instrument drawn in any language other than that in which he is authorized to practice.",
+      "why_relevant": "The notary is licensed for Colombo while the land is in Ratnapura. Rule (22) restricts the area and language of attestation, not the situation of the land, so the notary must plan execution within his own area and in his own language before he starts drafting.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in April 2019; rule (22) was not touched by the 2011, 2022 or 2024 amendments.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-015",
+      "section_id": "1-1907/s38",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "38",
+      "subsection": "(1)",
+      "relevant_excerpt": "It shall be the duty of every notary to endeavour to ascertain the true and full consideration for the execution of any deed, and to insert and set forth the same in such deed.",
+      "why_relevant": "Ascertaining the true consideration is an instruction-taking step that precedes drafting, and it feeds both the deed and the stamp duty computation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Subsection (1) has stood since 1907. The 2005 and 2022 amendments changed only the fine in subsection (2).",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-016",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (33)",
+      "relevant_excerpt": "When a deed transferring any immovable property is executed or acknowledged before a notary, he shall use his best endeavours to obtain the title deed, if any, of such property",
+      "why_relevant": "Calling for the vendor's title deeds is the practical first step that both supports the registry search and lets the notary trace the devolution of title before drafting.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in April 2019; rule (33) was not touched by the 2011, 2022 or 2024 amendments.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Rule (33) is triggered when a deed is executed or acknowledged before a notary, so on its terms it is a duty at execution rather than before drafting; it supports calling for the title deeds at the instruction stage only by inference."
+    },
+    {
+      "provision_id": "PROV-M093-017",
+      "section_id": "38-2014/s2",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "Notwithstanding any provision to the contrary in any other written law, the transfer of title of any land situated in Sri Lanka, shall be prohibited if such transfer is- (a) to a foreigner; or (b) to a company incorporated in Sri Lanka under the Companies Act where any foreign shareholding in such company, either direct or indirect, is fifty per cent or above",
+      "why_relevant": "Before drafting, the notary must satisfy himself that the transferee is not within the prohibition; an alienation in contravention of the Act is void under s 18.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2014 and in force in April 2019 as amended by Acts No. 3 of 2017 and No. 21 of 2018.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The quoted words of s 2(1) were in force in April 2019, but the temporal note is wrong on the amending Acts: the corpus records no amendment event on 38-2014/s2, and Act No. 3 of 2017 inserted s 5A while Act No. 21 of 2018 amended ss 3 and 5A."
+    },
+    {
+      "provision_id": "PROV-M093-018",
+      "section_id": "38-2014/s25",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "25",
+      "subsection": "definition of \"foreigner\"",
+      "relevant_excerpt": "means a person who is not a citizen of Sri Lanka",
+      "why_relevant": "Defines the class the notary has to exclude when he checks the purchaser's status, which is why proof of citizenship or identity is taken at the instruction stage.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in April 2019. As with other interpretation sections in this corpus, the body prints defined terms separately from their definitions.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-019",
+      "section_id": "1-1972/s3",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "the maximum extent of agricultural land which may be owned by any person, in this Law referred to as the \" ceiling \", shall (a) if such land consists exclusively of paddy land, be twenty-five acres; or (b) if such land does not consist exclusively of paddy land, be fifty acres",
+      "why_relevant": "Rubber land is agricultural land, so before drafting the notary should check what agricultural land the purchaser already owns, since the ceiling limits what he may acquire.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1972; last recorded change by Act No. 39 of 1981, well before April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-020",
+      "section_id": "1-1972/s5",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "5",
+      "subsection": "(1)",
+      "relevant_excerpt": "Where after the date of commencement of this Law any person becomes the owner of agricultural land in excess of the ceiling, any such land owned by such person in excess of the ceiling shall as from that date- (a) be deemed to vest in the Commission",
+      "why_relevant": "Shows the consequence of skipping the ceiling check: the excess vests in the Commission, so the purchase would not give the client what he is paying for.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in April 2019 as amended in 1981 and 1986.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-021",
+      "section_id": "17-2002/s13",
+      "act_id": "17-2002",
+      "formal_title": "Survey Act",
+      "number_and_year": "No. 17 of 2002",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "No plan or map or copy or tracing of a plan or map shall be receivable in evidence in any court in Sri Lanka unless such plan or map has been prepared (a)by or on behalf of the Surveyor-General by a registered surveyor duly authorised by him and certified by the Surveyor-General or by a registered surveyor duly authorised by him for such purpose",
+      "why_relevant": "The divided portion has to be surveyed before it can be described under rule (16)(b); this section is why the plan should come from the Surveyor-General's department or a registered licensed surveyor.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 2002 and unamended as at April 2019. The corpus body repeats paragraph (a); that is an artefact of the source text.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Section 13 governs the admissibility of a plan in evidence; it does not require a survey to be made. It supports the survey step only indirectly, and the requirement to define a divided share by its own boundaries and extent comes from Notaries Ordinance s 31 rule (16)(b), not from the Survey Act."
+    },
+    {
+      "provision_id": "PROV-M093-022",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "No sale, purchase, transfer, assignment, or mortgage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object",
+      "why_relevant": "Background: this section is what makes notarial execution of a writing indispensable to a sale of land, and so explains why the notary's pre-drafting duties arise at all.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The requirement of a notarially attested writing has stood since 1840 and applied in April 2019, but the corpus text of s 2 is the version substituted by the Prevention of Frauds (Amendment) Acts No. 30 of 2022 and No. 4 of 2024. Only the opening words, which those Acts did not change, are quoted, and nothing in the answer depends on the post-2019 wording.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-023",
+      "section_id": "12-2006/s3",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "there shall be charged a duty (hereinafter to be called \"stamp duty\") at such rate as the Minister may determine by Order published in the Gazette on every \"specified instrument\"- (a) executed, drawn or presented in Sri Lanka",
+      "why_relevant": "Stamp duty has to be quantified and provided for before the deed is engrossed, so the notary must obtain the value of the portion and compute the duty at the instruction stage.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 2006 and unamended as at April 2019. The rate Order itself is not in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M093-024",
+      "section_id": "12-2006/s6",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "6",
+      "subsection": null,
+      "relevant_excerpt": "Otherwise than in cases where there is an agreement to the contrary, stamp duty shall be payable:- (a) in the case of a policy of insurance, by the person effecting the insurance",
+      "why_relevant": "Identifies who bears the duty in the absence of agreement, which the notary needs to settle with the parties before drafting.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in April 2019 as amended by Act No. 10 of 2008.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The quoted paragraph (a) concerns policies of insurance. The limb that carries the claim is paragraph (e), 'in all other cases, by the person drawing, making or executing such instrument', which is not in the excerpt."
+    },
+    {
+      "provision_id": "PROV-M093-901",
+      "section_id": "1-1972/s66",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "66",
+      "subsection": "definitions of 'agriculture' and 'agricultural land'",
+      "relevant_excerpt": "includes (i) the growing of rice, all field crops, spices and condiments, industrial crops, vegetables, fruits, flowers, pasture and fodder; (ii) dairy farming, livestock-rearing and breeding; (iii) plant and fruit nurseries; means land used or capable of being used for agriculture within the meaning given in this Law and shall include private lands",
+      "why_relevant": "Added by the verifier. The ceiling in s 3(1) bites only on 'agricultural land', and the map relied on the unstated premise that rubber land answers that description. Section 66 supplies it: 'agriculture' includes the growing of industrial crops, and 'agricultural land' means land used or capable of being used for agriculture. Without this definition the ceiling limb of the answer rests on an uncited assumption.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in April 2019. The corpus records one change, by Act No. 39 of 1981 s 15, well before the matter date. As with the other interpretation sections in this corpus the body prints the defined terms separately from the definitions; 'agriculture' is the first defined term and 'agricultural land' the second, matching the order of the quoted clauses.",
+      "verification_status": "verified",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M093-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks what a notary must do before drafting a deed. Every step a complete answer needs is imposed by statute: the pre-drafting registry search and the description and area rules in the Notaries Ordinance, s 31; the prior consent of the Board under the Tea and Rubber Estates (Control of Fragmentation) Act, s 3, read with the definitions in s 25; the registration and priority rules in the Registration of Documents Ordinance; and the collateral checks under the Land (Restrictions on Alienation) Act, the Land Reform Law and the stamp duty legislation. No judicial authority or Roman-Dutch doctrine is needed to state the steps; case law would only add gloss on how far back a title should be traced.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M093-Q01-01",
+          "issue": "What investigation of title must a notary carry out before he draws a deed affecting an interest in land, and where must that investigation be made when the land lies outside his own district?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M093-Q01-02",
+          "issue": "Does the sale of a portion of a rubber estate require the prior consent of the Tea and Rubber Estates (Control of Fragmentation) Board, and what must the notary see and do before drafting if it does?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M093-Q01-03",
+          "issue": "What material must the notary have in hand before drafting so the deed can describe a divided portion accurately, and what other pre-drafting checks (identity and status of the parties, the ceiling on agricultural land, consideration and stamp duty, place of execution) does the law require?",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M093-001",
+        "PROV-M093-002",
+        "PROV-M093-003",
+        "PROV-M093-004",
+        "PROV-M093-005",
+        "PROV-M093-006"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M093-007",
+        "PROV-M093-008",
+        "PROV-M093-009",
+        "PROV-M093-011",
+        "PROV-M093-012",
+        "PROV-M093-013",
+        "PROV-M093-014",
+        "PROV-M093-015",
+        "PROV-M093-016",
+        "PROV-M093-017",
+        "PROV-M093-018",
+        "PROV-M093-019",
+        "PROV-M093-020",
+        "PROV-M093-021",
+        "PROV-M093-023",
+        "PROV-M093-024",
+        "PROV-M093-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M093-010",
+        "PROV-M093-022"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across two enactments: (1) the notary's pre-drafting duties under the Notaries Ordinance, s 31 rules (16) and (17)(a); (2) the cross-enactment step to the Tea and Rubber Estates (Control of Fragmentation) Act, s 3(1), which makes the transfer of a rubber estate null and void without the Board's prior consent; (3) the definitional step to s 25, where 'rubber estate' (one hundred acres and registered) and 'transfer of ownership' (the estate or any portion of it) decide whether s 3(1) reaches the sale of a portion at all. Only these dependencies are counted.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M093-004",
+          "to_provision_id": "PROV-M093-005",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M093-004",
+          "to_provision_id": "PROV-M093-006",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M093-004",
+          "to_provision_id": "PROV-M093-007",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M093-004",
+          "to_provision_id": "PROV-M093-008",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M093-009",
+          "to_provision_id": "PROV-M093-004",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M093-002",
+          "to_provision_id": "PROV-M093-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M093-003",
+          "to_provision_id": "PROV-M093-021",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M093-001",
+          "to_provision_id": "PROV-M093-012",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M093-001",
+          "to_provision_id": "PROV-M093-013",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M093-001",
+          "to_provision_id": "PROV-M093-011",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M093-001",
+          "to_provision_id": "PROV-M093-016",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M093-017",
+          "to_provision_id": "PROV-M093-018",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M093-019",
+          "to_provision_id": "PROV-M093-020",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M093-023",
+          "to_provision_id": "PROV-M093-024",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M093-019",
+          "to_provision_id": "PROV-M093-901",
+          "relationship": "defines"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Wimal wishes to purchase a portion of a Rubber Estate Situated in Ratnapura. He requests you to attest the Deed.",
+        "enriched_background": "Wimal Nandasena, aged 46, a citizen of Sri Lanka living at No. 118, Kirula Road, Colombo 5, wishes to purchase a portion of a Rubber Estate Situated in Ratnapura. The estate is Kirimetiyana Estate, 212 acres in extent, at Kuruwita in the Ratnapura District, and it stands registered as an estate for rubber control purposes. What Wimal wants is a divided block of about fifteen acres on the northern side of the estate; no surveyor has yet been put on the ground and no plan of that block exists. The owner is Malani Wijesinghe of Ratnapura, who holds the whole estate on Deed of Transfer No. 4211 dated 3 March 1996, attested by a notary of Ratnapura and registered in the Ratnapura Land Registry, and who says she still has the original deed. She also mentions that in 2016 she mortgaged the estate to a commercial bank and that the bond has not been discharged. The price agreed for the fifteen acres is Rs. 21,000,000, to be paid in full on the day of signing. Wimal already owns eight acres of coconut land at Polgahawela. The parties propose to come to your office in Colombo to sign. He requests you to attest the Deed.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M093-Q01-001",
+            "fact": "The purchaser is Wimal Nandasena, aged 46, a citizen of Sri Lanka, of No. 118, Kirula Road, Colombo 5.",
+            "origin": "synthetic_neutral",
+            "reason": "The original scenario gives only a first name, so the purchaser's status could not be tested. Citizenship and address make the identity and status checks determinate without changing the result.",
+            "activates_provision_ids": [
+              "PROV-M093-017",
+              "PROV-M093-018"
+            ],
+            "counterfactual_effect": "If Wimal were not a citizen of Sri Lanka the transfer of title would be prohibited outright and the notary could not draw the transfer at all.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M093-Q01-002",
+            "fact": "The vendor is Malani Wijesinghe of Ratnapura, who owns the whole estate.",
+            "origin": "synthetic_neutral",
+            "reason": "The original scenario names no vendor. A single owner keeps the question on pre-drafting steps rather than on co-ownership or partition.",
+            "activates_provision_ids": [
+              "PROV-M093-008",
+              "PROV-M093-016"
+            ],
+            "counterfactual_effect": "If the estate were co-owned, a partition by deed would engage a separate consent regime and the pre-drafting steps would differ.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M093-Q01-003",
+            "fact": "The land is Kirimetiyana Estate at Kuruwita in the Ratnapura District, 212 acres in extent, registered as an estate for rubber control purposes.",
+            "origin": "synthetic_decisive",
+            "reason": "Whether the fragmentation control regime applies turns on extent and registration, neither of which the original scenario gave.",
+            "activates_provision_ids": [
+              "PROV-M093-004",
+              "PROV-M093-005",
+              "PROV-M093-006",
+              "PROV-M093-009",
+              "PROV-M093-010"
+            ],
+            "counterfactual_effect": "If the estate were under one hundred acres or not registered, no certificate of consent would be needed and the transfer would not be void for want of it.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M093-Q01-004",
+            "fact": "The subject of the sale is a divided block of about fifteen acres on the northern side of the estate, and no survey plan of that block exists.",
+            "origin": "synthetic_decisive",
+            "reason": "The original scenario says only 'a portion'. Making it a divided, unsurveyed block is what brings the description and survey steps into play.",
+            "activates_provision_ids": [
+              "PROV-M093-002",
+              "PROV-M093-003",
+              "PROV-M093-021"
+            ],
+            "counterfactual_effect": "If an undivided share were being sold, no blocking out plan would be needed and the deed would state the fraction of the whole instead of separate boundaries.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M093-Q01-005",
+            "fact": "The vendor holds on Deed of Transfer No. 4211 dated 3 March 1996, attested by a notary of Ratnapura and registered in the Ratnapura Land Registry, and she still holds the original deed.",
+            "origin": "synthetic_neutral",
+            "reason": "The registration status of the vendor's title was missing, and the search step cannot be applied without it.",
+            "activates_provision_ids": [
+              "PROV-M093-001",
+              "PROV-M093-012",
+              "PROV-M093-013",
+              "PROV-M093-016"
+            ],
+            "counterfactual_effect": "If the vendor's deed were unregistered, the search would not disclose her title and the priority risk to the purchaser would be materially greater.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M093-Q01-006",
+            "fact": "The estate was mortgaged to a commercial bank in 2016 and the bond has not been discharged.",
+            "origin": "synthetic_decisive",
+            "reason": "The original scenario disclosed no encumbrance, so nothing turned on the search. An undischarged bond makes the search result operative.",
+            "activates_provision_ids": [
+              "PROV-M093-001",
+              "PROV-M093-011"
+            ],
+            "counterfactual_effect": "If the title were unencumbered, the search would confirm a clear title and no release or redemption would have to be arranged before the deed is drawn.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M093-Q01-007",
+            "fact": "The agreed price for the fifteen acres is Rs. 21,000,000, payable in full on the day of signing.",
+            "origin": "synthetic_neutral",
+            "reason": "Consideration was missing, and the duty to ascertain the true consideration and to provide for stamp duty cannot be applied without a figure.",
+            "activates_provision_ids": [
+              "PROV-M093-015",
+              "PROV-M093-023",
+              "PROV-M093-024"
+            ],
+            "counterfactual_effect": "If the price stated to the notary were understated against the real one, he would be bound to insist on the true figure before drafting.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M093-Q01-008",
+            "fact": "Wimal already owns eight acres of coconut land at Polgahawela.",
+            "origin": "synthetic_neutral",
+            "reason": "Existing agricultural holdings decide whether the ceiling is a live problem. Eight acres plus fifteen keeps the purchaser well inside the ceiling.",
+            "activates_provision_ids": [
+              "PROV-M093-019",
+              "PROV-M093-020"
+            ],
+            "counterfactual_effect": "If Wimal already owned more than thirty-five acres of agricultural land, the purchase would push him over the ceiling and the excess would vest in the Commission.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M093-Q01-009",
+            "fact": "The parties propose to come to the notary's office in Colombo to sign the deed.",
+            "origin": "synthetic_neutral",
+            "reason": "The original scenario left the place of execution open, which is what the area restriction on a Colombo notary turns on.",
+            "activates_provision_ids": [
+              "PROV-M093-014",
+              "PROV-M093-022"
+            ],
+            "counterfactual_effect": "If the parties insisted on signing at the estate in Ratnapura, the notary could not attest there and would have to arrange execution within his own area.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "What must a notary licensed to practise in Colombo do before he draws a deed by which his client is to buy a divided fifteen-acre block out of a 212-acre registered rubber estate at Kuruwita in the Ratnapura District: what title investigation the law requires of him, whether the fragmentation control regime applies to the sale of a portion of such an estate, and what other checks and materials he must have in hand before he starts drafting.",
+        "rule": "Notaries Ordinance s.31 rule (17)(a) provides that before any deed affecting an interest in land is drawn by him the notary shall search or cause to be searched the registers in the land registry to ascertain the state of the title and whether any prior deed affecting an interest in the land has been registered. The registers are open to search and certified extracts may be obtained under Registration of Documents Ordinance s.42, and the search must be made in the registry for the division in which the land lies (Registration of Documents Ordinance s.14(1)), because an unregistered instrument is void against a subsequent registered instrument taken for valuable consideration (s.7(1)). Notaries Ordinance s.31 rule (33) requires the notary to use his best endeavours to obtain the title deed of the property. Rule (16)(a) forbids attestation unless the deed embodies an accurate and clear description showing boundaries, extent and situation, and rule (16)(b) requires a divided share to be defined by its own particular boundaries and extent, which calls for a survey plan; a plan is receivable in evidence only if prepared as Survey Act s.13 requires. Under Tea and Rubber Estates (Control of Fragmentation) Act s.3(1) the transfer of ownership of a rubber estate is null and void unless a certificate of consent of the Board has been previously obtained by the transferor and the transfer follows any conditions attached to it; by s.25 a rubber estate is one of not less than one hundred acres registered under the Rubber Control Act, and transfer of ownership covers the transfer of such an estate or any portion of it by sale. The application for consent is made in writing by the proprietor to the Chairman of the Board (s.11), no officer of a local authority may approve a blocking out plan of such an estate without the certificate (s.23A(1)), and where a certificate is issued it must be attached to the deed and its number and date recited in the attestation (s.3(4)). Notaries Ordinance s.38(1) obliges the notary to ascertain the true and full consideration and set it out in the deed; stamp duty is charged on the instrument under Stamp Duty (Special Provisions) Act s.3(1) and, absent agreement, falls on the person executing it under s.6. Land (Restrictions on Alienation) Act s.2(1) prohibits a transfer of title to a foreigner, that is a person who is not a citizen of Sri Lanka (s.25). Land Reform Law s.3(1) fixes a ceiling of fifty acres of agricultural land other than paddy, and s.5(1) vests the excess in the Commission where a person becomes owner beyond the ceiling. Notaries Ordinance s.31 rule (22) forbids the notary to attest in any area, or in any language, other than that in which he is authorised to practise.",
+        "application": "Because the estate is 212 acres and registered for rubber control purposes, and the sale is of a portion of it, the transaction is a transfer of ownership of a rubber estate within Tea and Rubber Estates (Control of Fragmentation) Act s.25, so s.3(1) applies and the notary must first satisfy himself that the vendor has applied to and obtained from the Board a certificate of consent (s.11, s.3(1)); without it the deed he draws would be null and void, and the local authority could not approve a blocking out plan for the fifteen-acre block (s.23A(1)). He must call for Deed No. 4211 of 3 March 1996 and the earlier title deeds (rule (33)) and cause a search of the registers at the Ratnapura Land Registry, the registry for the division in which the land lies (rule (17)(a); Registration of Documents Ordinance s.42 and s.14(1)), obtaining a certified extract of the relevant folio. That search should disclose the 2016 bond in favour of the bank, and since that bond is registered it will take priority (s.7(1)); the notary must therefore require its discharge, or a release of the fifteen acres, to be arranged before the deed is drawn. As the block is a divided portion that has never been surveyed, he must have a plan prepared for it so that the schedule can define it by its particular boundaries and extent (rule (16)(a) and (b); Survey Act s.13). He should verify from the purchaser's identity documents that Wimal is a citizen, so that Land (Restrictions on Alienation) Act s.2(1) does not prohibit the transfer, and check that fifteen acres added to his existing eight acres of coconut land leaves him inside the fifty-acre ceiling in Land Reform Law s.3(1). He must record the true consideration of Rs. 21,000,000 (Notaries Ordinance s.38(1)) and settle with the parties the stamp duty payable on that value and who is to bear it (Stamp Duty (Special Provisions) Act s.3(1) and s.6); the rate is fixed by Order and is not stated here. Being licensed for Colombo, he may act although the land is in Ratnapura, but execution must take place within his own area, which the parties' proposal to sign at his Colombo office satisfies (rule (22)).",
+        "conclusion": "Before drafting, the notary should take instructions and verify the parties' identity and the purchaser's citizenship; call for and examine the vendor's title deeds; cause a search of the registers at the Ratnapura Land Registry and obtain a certified extract of the folio, and require the undischarged 2016 bond to be released or discharged; satisfy himself that the estate is a rubber estate within the Tea and Rubber Estates (Control of Fragmentation) Act and that the vendor has obtained the Board's certificate of consent to the transfer of the portion under s.3(1), so that the certificate can be attached to the deed and recited in the attestation under s.3(4); have the fifteen-acre block surveyed and the blocking out plan approved; ascertain the true consideration and provide for stamp duty; check the purchaser against the fifty-acre agricultural ceiling; and arrange execution within the area in which he is authorised to practise. If the Board's consent is not forthcoming he should decline to draw the deed, because the transfer would be null and void. How far back beyond the registered folio the title ought to be traced is a matter of practice on which the statutes are silent."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M093-Q01-001",
+          "claim_text": "Before drawing any deed affecting an interest in land, a notary must search or cause to be searched the registers in the land registry to ascertain the state of the title and whether any prior deed affecting an interest in the land has been registered.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M093-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-002",
+          "claim_text": "The search must be made in the registry for the division in which the land is situated, and the registers may be searched and certified extracts obtained by a person interested or his agent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M093-013",
+            "PROV-M093-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-003",
+          "claim_text": "The search matters because an instrument that is not duly registered is void against a subsequent duly registered instrument taken for valuable consideration.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M093-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-004",
+          "claim_text": "The notary must also use his best endeavours to obtain the title deed of the property being transferred.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M093-016"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-005",
+          "claim_text": "The transfer of ownership of a rubber estate is null and void unless the transferor has previously obtained a certificate of consent of the Tea and Rubber Estates (Control of Fragmentation) Board and the transfer conforms to any conditions of that consent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M093-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-006",
+          "claim_text": "A rubber estate for this purpose is one of not less than one hundred acres registered or deemed registered under the Rubber Control Act, and a transfer of ownership includes the sale of any portion of such an estate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M093-005",
+            "PROV-M093-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-007",
+          "claim_text": "The certificate of consent is applied for in writing by the proprietor to the Chairman of the Board, must be attached to the deed with its number and date stated by the attesting notary, and without it no officer of a local authority may approve a blocking out plan of such an estate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M093-008",
+            "PROV-M093-007",
+            "PROV-M093-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-008",
+          "claim_text": "The deed must embody an accurate and clear description of the land showing boundaries, extent and situation, and a divided share must be defined by its own particular boundaries and extent, which requires a survey plan prepared as the Survey Act allows.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M093-002",
+            "PROV-M093-003",
+            "PROV-M093-021"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M093-Q01-009",
+          "claim_text": "The notary must endeavour to ascertain the true and full consideration and set it out in the deed, and stamp duty is charged on the instrument and, absent agreement to the contrary, borne by the person executing it.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M093-015",
+            "PROV-M093-023",
+            "PROV-M093-024"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-010",
+          "claim_text": "A transfer of title to a foreigner, meaning a person who is not a citizen of Sri Lanka, is prohibited, and no person may own agricultural land other than paddy in excess of fifty acres, the excess vesting in the Land Reform Commission.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M093-017",
+            "PROV-M093-018",
+            "PROV-M093-019",
+            "PROV-M093-020",
+            "PROV-M093-901"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-011",
+          "claim_text": "A notary may not attest a deed in any area, or in any language, other than that in which he is authorised to practise.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M093-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-012",
+          "claim_text": "Because the estate is 212 acres and registered for rubber control purposes and the sale is of a portion of it, the transaction is a transfer of ownership of a rubber estate, so the Board's prior certificate of consent must be obtained by the vendor before the deed is drawn.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M093-004",
+            "PROV-M093-005",
+            "PROV-M093-006"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M093-Q01-003",
+            "FACT-M093-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-013",
+          "claim_text": "The notary must call for Deed No. 4211 of 1996 and search the registers at the Ratnapura Land Registry, obtaining a certified extract of the folio, which will disclose the undischarged 2016 bond in favour of the bank; he must require that bond to be discharged or the block released before drafting.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M093-001",
+            "PROV-M093-011",
+            "PROV-M093-012",
+            "PROV-M093-013",
+            "PROV-M093-016"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M093-Q01-005",
+            "FACT-M093-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M093-Q01-014",
+          "claim_text": "As the fifteen-acre block is a divided and unsurveyed portion, a survey plan must be obtained before drafting so that the schedule can define the block by its particular boundaries and extent.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M093-002",
+            "PROV-M093-003",
+            "PROV-M093-021"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M093-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-015",
+          "claim_text": "The notary must verify from identity documents that the purchaser is a citizen of Sri Lanka, and check that fifteen acres added to his existing eight acres of coconut land leaves him within the fifty-acre ceiling.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M093-017",
+            "PROV-M093-018",
+            "PROV-M093-019",
+            "PROV-M093-901"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M093-Q01-001",
+            "FACT-M093-Q01-008"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-016",
+          "claim_text": "He must record the true consideration of Rs. 21,000,000, compute the stamp duty on that value and settle who bears it before the deed is engrossed.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M093-015",
+            "PROV-M093-023",
+            "PROV-M093-024"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M093-Q01-007"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-017",
+          "claim_text": "Being licensed for Colombo, the notary may act although the land lies in Ratnapura, provided the deed is executed and attested within his own area, which signing at his Colombo office satisfies.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M093-014"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M093-Q01-009"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M093-Q01-018",
+          "claim_text": "The steps to be taken before drafting are therefore to take instructions and verify identity and citizenship, call for and examine the title deeds, search the Ratnapura Land Registry and obtain a certified extract, clear the registered bond, obtain the Board's certificate of consent, have the block surveyed and the blocking out plan approved, ascertain the true consideration and provide for stamp duty, check the agricultural ceiling, and arrange execution within his own area.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M093-001",
+            "PROV-M093-002",
+            "PROV-M093-003",
+            "PROV-M093-004",
+            "PROV-M093-007",
+            "PROV-M093-009",
+            "PROV-M093-014",
+            "PROV-M093-015",
+            "PROV-M093-017",
+            "PROV-M093-019"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M093-Q01-003",
+            "FACT-M093-Q01-004",
+            "FACT-M093-Q01-005",
+            "FACT-M093-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M093-Q01-019",
+          "claim_text": "If the Board's certificate of consent is not obtained, the notary should decline to draw the deed, because the transfer would be null and void.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M093-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M093-Q01-003"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Verification left three claims disputed and eight provisions partially verified. (1) CL-M093-Q01-013 and the conclusion treat obtaining a certified extract of the folio as a step the notary must take; that duty was created by Notaries (Amendment) Act No. 31 of 2022 s 16(10)(a) (rule (17)(b)(i)) and did not exist in April 2019, when Registration of Documents Ordinance s 42 gave only a right to obtain extracts. (2) No cited provision requires the notary to insist that the registered 2016 bond be discharged or the block released before the deed is drawn; that step is practice, not statute. (3) CL-M093-Q01-018 puts approval of the blocking out plan before drafting, whereas s 23A(1) only forbids a local authority to approve such a plan without the Board's certificate. (4) CL-M093-Q01-008 reads Survey Act s 13, an admissibility rule, as requiring a survey. The verifier may not rewrite the gold answer prose, so a lawyer must decide whether to correct these limbs or reserve the question.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

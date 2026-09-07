@@ -1,0 +1,1021 @@
+{
+  "benchmark_matter_id": "M022",
+  "run_id": "2026-09-05-pilot-01",
+  "produced_by_agent": "predicate-derivation-agent (Claude) via _build_predicates.py",
+  "predicates": [
+    {
+      "predicate_id": "PR-M022-001",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "instrument_is_lease_of_immovable_property",
+      "description": "The instrument to be executed is a Lease Agreement over a warehouse situated in Galle, i.e. an agreement establishing an interest affecting land or other immovable property within Prevention of Frauds Ordinance s.2.",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-017"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If the subject matter were movable property or a mere licence, s.2 would not require notarial execution and the whole two-notary execution procedure would be optional rather than required; the gold answer would change.",
+      "potentially_decisive": true,
+      "notes": "Source: 'lease out a warehouse situated in Galle'. PoF s.2 excerpt is the pre-2022 tree text (current_text_superseded_since_event); both versions keep the notary-plus-two-witnesses requirement and the lease-at-will / one-month exception."
+    },
+    {
+      "predicate_id": "PR-M022-002",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "lease_term_exceeds_one_month_and_is_not_at_will",
+      "description": "The lease is neither a lease at will nor a lease for a period not exceeding one month, so it falls outside the bracketed exception in Prevention of Frauds Ordinance s.2.",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-017"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "synthetic_needed",
+      "counterfactual_effect": "If the term were one month or less (or at will), s.2 would not require notarial execution; the answer's rule step ('must be in writing signed before a licensed notary') would no longer apply as a legal requirement, although the parties could still choose notarial execution.",
+      "potentially_decisive": true,
+      "notes": "Scenario does not state the term. A synthetic Lease Agreement fixing any term above one month (e.g. a multi-year commercial warehouse lease) is neutral: the gold answer already assumes a lease requiring notarial execution (CL-M022-Q01-011), so fixing the value does not change the answer. Flagged decisive because the opposite value would alter the rule step."
+    },
+    {
+      "predicate_id": "PR-M022-003",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "lease_must_be_notarially_executed_before_two_witnesses",
+      "description": "As a lease of immovable property outside the s.2 exception, the Lease Agreement must be in writing, signed by the party (or a person lawfully authorised) in the presence of a licensed notary public and two or more witnesses present at the same time, and duly attested by them.",
+      "expected_value": true,
+      "predicate_type": "legal_status",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-017"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If notarial execution were not required, the question of how two notaries in different towns can execute one deed would not arise as a legal necessity.",
+      "potentially_decisive": true,
+      "notes": "Follows from PR-M022-001 and PR-M022-002; the question itself presupposes attestation."
+    },
+    {
+      "predicate_id": "PR-M022-004",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "both_anil_fernando_and_ruwan_perera_are_licensed_notaries",
+      "description": "Anil Fernando (Colombo) and Ruwan Perera (Galle) are each licensed notaries public able to attest a deed under PoF s.2.",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-017"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If either were not a licensed notary, he could not attest his party's signature and the two-notary procedure with those two persons would fail.",
+      "potentially_decisive": true,
+      "notes": "Source: 'Anil Fernando is a Notary practising in Colombo'; 'his Notary Ruwan Perera who is practising in Galle'."
+    },
+    {
+      "predicate_id": "PR-M022-005",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "russel_perera_refuses_to_travel_to_colombo",
+      "description": "The warehouse owner Russel Perera will not come to Colombo and wants his own notary in Galle to draft and attest the Lease Agreement.",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If Russel Perera were willing to come to Colombo, all executants could sign before Anil Fernando at one sitting (subject to r.9 identification) and no second notary would be needed.",
+      "potentially_decisive": true,
+      "notes": "Source: 'Russel Perera does not want to come to Colombo.' This is the factual driver of PR-M022-006."
+    },
+    {
+      "predicate_id": "PR-M022-006",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "parties_do_not_sign_at_same_time_and_place",
+      "description": "The executants (Russel Perera in Galle; the company's directors in Colombo) will not sign the deed at the same time and place, bringing the deed within Notaries Ordinance s.32(2).",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-004"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If all parties signed at one time and place, s.32(2) would not apply, a single notary would attest, and the allocation of first/second notary duties would disappear.",
+      "potentially_decisive": true,
+      "notes": "s.32(2) is recorded as current_text_applicable (not touched by any amending instrument in the repo)."
+    },
+    {
+      "predicate_id": "PR-M022-007",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "notaries_authorised_for_different_areas",
+      "description": "Anil Fernando practises in Colombo and Ruwan Perera in Galle; the two notaries are authorised to practise in different areas.",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-008"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If both notaries were authorised for the same area, rule (22) would not force the Galle and Colombo signings to be attested by different notaries; the two-notary route would rest on the parties' wishes alone.",
+      "potentially_decisive": true,
+      "notes": "The scenario gives only the towns ('practising in Colombo' / 'practising in Galle'); the precise authorised area/zone on each notary's warrant is not stated. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-008",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "each_notary_attests_only_within_own_authorised_area",
+      "description": "Each notary attests only the signatures taken within the area in which he is authorised to practise: Ruwan Perera attests Russel Perera's signature in Galle and Anil Fernando attests the directors' signatures in Colombo.",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-008"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If Anil Fernando attested a signing in Galle (or Ruwan Perera one in Colombo) he would breach rule (22); the gold procedure assigns each signing to the local notary precisely to avoid this.",
+      "potentially_decisive": true,
+      "notes": "Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-009",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "single_notary_can_attest_both_parties_at_one_sitting",
+      "description": "One notary could lawfully attest both Russel Perera's and the directors' signatures at a single sitting.",
+      "expected_value": false,
+      "predicate_type": "legal_status",
+      "necessity": "supporting",
+      "polarity": "negative",
+      "authority_ids": [
+        "AUTH-M022-008",
+        "AUTH-M022-004"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If this were true (parties in one place before one notary), the answer would be ordinary single-notary execution and rules (25) and (28) would not be engaged.",
+      "potentially_decisive": true,
+      "notes": "Negative predicate: derived from PR-M022-005 to PR-M022-008 (refusal to travel, different areas, rule (22)). It is the absence of this option that makes the two-notary route the answer."
+    },
+    {
+      "predicate_id": "PR-M022-010",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "each_notary_authorised_for_language_of_deed",
+      "description": "Each attesting notary is authorised to practise in the language in which the Lease Agreement is drawn (rule (22) second and third limbs).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-008"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "unresolved",
+      "counterfactual_effect": "If either notary were not authorised for the deed's language he could not attest it and a different notary would be needed for that party.",
+      "potentially_decisive": true,
+      "notes": "Language of the deed and of each notary's warrant are not stated in the scenario. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-011",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "russel_perera_known_to_anil_fernando",
+      "description": "The warehouse owner Russel Perera is personally known to the Colombo notary Anil Fernando.",
+      "expected_value": false,
+      "predicate_type": "fact",
+      "necessity": "indispensable",
+      "polarity": "negative",
+      "authority_ids": [
+        "AUTH-M022-006",
+        "AUTH-M022-007"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If Anil Fernando knew Russel Perera, rule (9) would no longer be a reason for Russel Perera to sign before his own notary; the two-notary conclusion would still follow from rule (22) and the refusal to travel, so the conclusion stands but reasoning step 4 falls away.",
+      "potentially_decisive": false,
+      "notes": "Source: 'he does not know the owner of the warehouse, namely Mr. Russel Perera'. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-012",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "russel_perera_known_to_ruwan_perera_or_to_two_attesting_witnesses",
+      "description": "Russel Perera is known to Ruwan Perera, or failing that to at least two attesting witnesses who sign the rule (9) declaration, so that Ruwan Perera may attest his signature.",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-006",
+        "AUTH-M022-007"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If Russel Perera were unknown both to Ruwan Perera and to the witnesses, rule (10) would bar Ruwan Perera from attesting and the Galle leg of the procedure would fail.",
+      "potentially_decisive": true,
+      "notes": "Inferred from 'his Notary Ruwan Perera'; the scenario does not say in terms that Ruwan Perera knows him. For Q02 this feeds the rule (20)(b) statement. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-013",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "company_directors_known_to_anil_fernando",
+      "description": "The directors of Cyril & Cyril (Private) Limited who will sign for the company are known to Anil Fernando.",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-006"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If the directors were unknown to him, Anil Fernando would need two witnesses who know them (rule (9)); the two-notary procedure itself would be unchanged.",
+      "potentially_decisive": false,
+      "notes": "Source: 'Anil Fernando knows the directors of the said company'."
+    },
+    {
+      "predicate_id": "PR-M022-014",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "party_executing_in_colombo_is_a_company",
+      "description": "One party to the Lease Agreement, Cyril & Cyril (Private) Limited, is a body corporate that can sign only through natural persons.",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-019"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If the Colombo party were a natural person, Companies Act s.19(1)(a) would not apply and the 'two directors sign under the company's name' step would be replaced by personal signature.",
+      "potentially_decisive": true,
+      "notes": "Source: 'A company named Cyril & Cyril (Private) Limited'."
+    },
+    {
+      "predicate_id": "PR-M022-015",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "company_executes_by_two_directors_signing_under_company_name",
+      "description": "The company enters into the notarially attested obligation in writing signed under the company's name by two directors, and the deed is notarially executed (Companies Act s.19(1)(a)(i)).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-019"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If the company instead signed by its sole director, by persons authorised under its articles, or by an attorney (s.19(1)(a)(ii)-(iv)), the persons appearing before Anil Fernando would differ but the deed would still be notarially executed in Colombo; conclusion unchanged.",
+      "potentially_decisive": false,
+      "notes": "The gold answer adopts the two-director route because the scenario refers to 'the directors' (plural) whom Anil Fernando knows. Number of directors and any article-based signing authority are not stated (issue-map unresolved fact)."
+    },
+    {
+      "predicate_id": "PR-M022-016",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "company_has_at_least_two_directors",
+      "description": "The company has two or more directors available to sign under s.19(1)(a)(i).",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-019"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If the company had a single director, that director would sign alone under s.19(1)(a)(ii); the procedure and conclusion are otherwise unchanged.",
+      "potentially_decisive": false,
+      "notes": "Source uses the plural 'the directors of the said company'; the exact number is not stated."
+    },
+    {
+      "predicate_id": "PR-M022-017",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "company_role_in_lease_is_lessee_rather_than_sublessor",
+      "description": "The company is the lessee taking the warehouse from its owner Russel Perera (rather than a head-lessee sub-letting with the owner joining to consent).",
+      "expected_value": null,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "unresolved",
+      "counterfactual_effect": "Either reading leaves the execution mechanics unchanged: Russel Perera still executes in Galle before Ruwan Perera and the company still executes in Colombo before Anil Fernando. Only the description of the parties in the instrument would differ.",
+      "potentially_decisive": false,
+      "notes": "Scenario ambiguity recorded in issue-map.json: the company 'wishes to lease out' the warehouse yet Russel Perera is 'the owner'. Left unresolved deliberately; not to be fixed by a synthetic document without lawyer sign-off."
+    },
+    {
+      "predicate_id": "PR-M022-018",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "deed_executed_before_more_than_one_notary",
+      "description": "The Lease Agreement is one deed executed before two notaries (Ruwan Perera in Galle, Anil Fernando in Colombo), engaging Notaries Ordinance s.31 rule (25).",
+      "expected_value": true,
+      "predicate_type": "legal_status",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-001",
+        "AUTH-M022-004"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If the deed were executed before a single notary, rule (25) would not apply and there would be no first/second notary allocation; Q02 would collapse into the ordinary rule (20) attestation.",
+      "potentially_decisive": true,
+      "notes": "Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-019",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "ruwan_perera_is_first_attesting_notary",
+      "description": "Ruwan Perera attests the deed first (Russel Perera signs in Galle before the directors sign in Colombo), so Anil Fernando is the second notary.",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-001"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If Anil Fernando attested first, the rule (25)/(28) duties would swap: Anil Fernando would give the full rule (20) attestation, keep the protocol and transmit the duplicate (with a rule (29) cross-district copy, the land being in Galle); Q02 would then concern Anil Fernando's attestation.",
+      "potentially_decisive": true,
+      "notes": "Q02 stipulates this ('If Ruwan Perera is the first Notary'); for Q01 it is the sequence the gold answer adopts because Ruwan Perera drafts the deed and holds the executant who will not travel. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-020",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "only_russel_perera_signs_before_ruwan_perera",
+      "description": "Russel Perera is the only executant who signs before Ruwan Perera; the company's directors sign later before Anil Fernando.",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-004"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If the directors also signed before Ruwan Perera in Galle, one notary would attest every signature, no second notary would be needed (Q01 changes) and Ruwan Perera's attestation would record all executants (Q02 changes).",
+      "potentially_decisive": true,
+      "notes": "Under s.32(2)(ii) the deed is deemed executed before Ruwan Perera for rules (18) and (20) whenever a party signs before him, so his attestation records only that signing."
+    },
+    {
+      "predicate_id": "PR-M022-021",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "russel_perera_signs_before_ruwan_perera_and_two_witnesses_in_mutual_presence",
+      "description": "Russel Perera and two attesting witnesses sign the Lease Agreement in Galle in Ruwan Perera's presence and in the presence of one another, and Ruwan Perera signs in their presence.",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-009",
+        "AUTH-M022-017"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If the executant and witnesses did not sign in one another's presence, rule (12) and PoF s.2 would be breached and Ruwan Perera could not truthfully make the rule (20)(a) statement.",
+      "potentially_decisive": true,
+      "notes": "Availability of two suitable witnesses in Galle is assumed; the scenario does not name them. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-022",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "directors_sign_before_anil_fernando_and_two_witnesses_in_mutual_presence",
+      "description": "The two directors and two attesting witnesses sign in Colombo in Anil Fernando's presence and in the presence of one another, and Anil Fernando signs in their presence.",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-009",
+        "AUTH-M022-017"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If the Colombo signing did not satisfy rule (12) and PoF s.2, the company's execution would be defective and the deed would not be validly executed by both parties.",
+      "potentially_decisive": true,
+      "notes": "Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-023",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "first_notary_complies_with_all_requirements_of_rule_20",
+      "description": "As the notary who first attests, Ruwan Perera must comply with all the requirements of rule (20), including the stamp statement in paragraph (f).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-001",
+        "AUTH-M022-002"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If the first notary were subject only to the reduced (a)-(e) and (g) list, the Q02 answer would omit the stamp statement and the distinction between the two attestations would vanish.",
+      "potentially_decisive": true,
+      "notes": "Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-024",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "second_notary_complies_only_with_rule_20_a_to_e_and_g",
+      "description": "Anil Fernando, as the other attesting notary, complies with paragraphs (a) to (e) of rule (20) and with paragraph (g) only as to erasures, alterations and interpolations in the signatures he attests or in his serial number.",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-001"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If the second notary also had to give the full attestation, the description of Anil Fernando's reduced attestation in the gold answer would be wrong, but the execution route would stand.",
+      "potentially_decisive": false,
+      "notes": "Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-025",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "each_notary_numbers_deed_in_own_consecutive_series",
+      "description": "Each attesting notary gives the Lease Agreement a number in his own consecutive series under rule (23), as required by rule (25)(b).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-001",
+        "AUTH-M022-010"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "Omitting a notary's serial number would breach rules (23) and (25)(b) but would not change how the deed is executed or what the attestation must state.",
+      "potentially_decisive": false,
+      "notes": "Under s.32(2)(i) the deed is deemed executed at the first signing for rule (23) purposes. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-026",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "first_notary_preserves_protocol_and_second_keeps_certified_copy",
+      "description": "Ruwan Perera preserves the rule (24) draft or copy as his protocol; Anil Fernando supplies himself with a certified copy of the deed as his protocol (rule (25)(c)).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-001",
+        "AUTH-M022-011"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "Reversing the protocol allocation would follow only if the order of attestation reversed (PR-M022-019); it does not alter the execution route.",
+      "potentially_decisive": false,
+      "notes": "Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-027",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "deed_executed_in_duplicate",
+      "description": "The Lease Agreement is drawn and executed in duplicate as PoF s.16 requires of every deed that must be attested by a notary.",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-018"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "Without a duplicate there would be nothing for the first notary to transmit under rule (28) and no duplicate stamps to state under rule (20)(f); the execution route is otherwise unchanged.",
+      "potentially_decisive": false,
+      "notes": "PoF s.16 excerpt is the pre-2022 tree text (current_text_superseded_since_event)."
+    },
+    {
+      "predicate_id": "PR-M022-028",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "first_notary_transmits_duplicate_to_registrar_of_lands",
+      "description": "Ruwan Perera, as the notary who first attests, delivers or transmits the duplicate to the Registrar of Lands of the district in which he resides; Anil Fernando need not transmit one.",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-005"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If the transmitting duty fell on Anil Fernando instead (only if he attested first), the rule (29) cross-district copy would also be required; the execution route is unchanged.",
+      "potentially_decisive": false,
+      "notes": "Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-029",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "land_situated_outside_first_notary_district_of_residence",
+      "description": "The warehouse lies in a district other than that in which the transmitting notary (Ruwan Perera) resides, so that rule (29) would require a certified copy to the Registrar of Lands of the land's district.",
+      "expected_value": false,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "negative",
+      "authority_ids": [
+        "AUTH-M022-013",
+        "AUTH-M022-005"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If Ruwan Perera resided outside the Galle district, he would additionally have to send a certified copy and a Form F list to the Galle Registrar of Lands; the execution route is unchanged.",
+      "potentially_decisive": false,
+      "notes": "Scenario says Ruwan Perera is 'practising in Galle' and the warehouse is 'situated in Galle'; his district of residence is not stated, so the negative value is inferred. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-030",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "deed_drawn_by_notary_other_than_second_attesting_notary",
+      "description": "The Lease Agreement is drawn by Ruwan Perera, not by Anil Fernando who also attests it.",
+      "expected_value": true,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-016"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If Anil Fernando drew the deed himself, rule (2) would not require a drafting certificate for his attestation (but would for Ruwan Perera's); the execution route is unchanged.",
+      "potentially_decisive": false,
+      "notes": "Source: Russel Perera 'wants his Notary Ruwan Perera ... to draft and attest'. AUTH-M022-016 is partially_verified (tree text scrambled; RGD PDF supports the proposition)."
+    },
+    {
+      "predicate_id": "PR-M022-031",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "drafting_notary_certificate_endorsed_on_deed",
+      "description": "A certificate signed by Ruwan Perera certifying that he drew the deed is endorsed on it before Anil Fernando attests (rule (2)).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-016"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "Without the certificate Anil Fernando could not lawfully attest a deed drawn by another; the remedy is to endorse the certificate, so the execution route is unchanged.",
+      "potentially_decisive": false,
+      "notes": "AUTH-M022-016 is partially_verified (source conflict: tree wording scrambled, RGD PDF reads 'certifying that such deed or instrument has been drawn by himself'); kept supporting. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-032",
+      "benchmark_question_ids": [
+        "M022-Q01"
+      ],
+      "predicate": "russel_perera_executes_through_attorney_before_colombo_notary",
+      "description": "Russel Perera appoints an attorney to sign the Lease Agreement on his behalf in Colombo before Anil Fernando instead of signing personally before Ruwan Perera.",
+      "expected_value": false,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "negative",
+      "authority_ids": [
+        "AUTH-M022-014",
+        "AUTH-M022-017"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If he did execute through an attorney in Colombo, a single notary (Anil Fernando) could attest the whole deed, keeping a copy of the power of attorney with his protocol (rule (30)); the two-notary answer would become the alternative rather than the primary route.",
+      "potentially_decisive": true,
+      "notes": "Scenario: he 'wants his Notary Ruwan Perera ... to draft and attest', so the attorney route is not taken. AUTH-M022-014 is partially_verified: the 2022 Act describes the pre-2022 rule (30) as reading 'registered power of attorney', which the 1980 text lacks; October 2020 wording uncertain."
+    },
+    {
+      "predicate_id": "PR-M022-033",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "attestation_made_without_delay_and_signed_and_sealed",
+      "description": "Ruwan Perera attests the deed without delay after Russel Perera signs before him, and signs and seals the attestation.",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "An unsigned or unsealed attestation would not satisfy rule (20); the list of statements would be incomplete without the signing-and-sealing requirement.",
+      "potentially_decisive": true,
+      "notes": "Case law (AUTH-M022-022, partially_verified) treats 'attestation' as covering both the notary's signature and the attestation clause; cited in notes only because it is not fully verified. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-034",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "attestation_states_deed_signed_in_notary_presence_and_in_presence_of_one_another",
+      "description": "The attestation states that the deed was signed by Russel Perera and the witnesses in Ruwan Perera's presence and in the presence of one another (rule (20)(a)).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002",
+        "AUTH-M022-009"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "Omitting this statement would leave the attestation non-compliant with rule (20)(a) and the gold list short one item.",
+      "potentially_decisive": true,
+      "notes": "Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-035",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "attestation_states_whether_executant_and_witnesses_known_to_notary",
+      "description": "The attestation states whether Russel Perera and the attesting witnesses (specifying which witnesses) were known to Ruwan Perera (rule (20)(b)).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002",
+        "AUTH-M022-006"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "Omitting this statement would breach rule (20)(b); the gold list would be short one item.",
+      "potentially_decisive": true,
+      "notes": "Rule (20)(b) was rewritten by the Notaries (Amendment) Act No. 31 of 2022 without quoting the old words; the October 2020 text rests on the 1980 edition alone. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-036",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "attestation_states_date_place_and_witness_names_and_residences",
+      "description": "The attestation states the day, month and year on which and the place (Galle) where Russel Perera executed the deed, and the full names and residences of the attesting witnesses (rule (20)(c)); the date and place are also inserted in the deed in letters (rule (18)).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002",
+        "AUTH-M022-012",
+        "AUTH-M022-004"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "Omitting date, place or witness particulars would breach rule (20)(c). Under s.32(2)(ii) the relevant date and place are those of Russel Perera's signing, not of the later Colombo signing.",
+      "potentially_decisive": true,
+      "notes": "Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-037",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "attestation_states_whether_deed_read_over_or_read_and_explained",
+      "description": "The attestation states whether the deed was read over by Russel Perera, or read and explained by Ruwan Perera to him in the presence of the attesting witnesses (rule (20)(d)).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "Omitting this statement would breach rule (20)(d); the gold list would be short one item.",
+      "potentially_decisive": true,
+      "notes": "Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-038",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "attestation_states_whether_consideration_paid_in_notary_presence_and_amount",
+      "description": "The attestation states whether any money was paid or not in Ruwan Perera's presence as the consideration or part of it and, if paid, the actual amount in local currency (rule (20)(e)).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "Omitting this statement would breach rule (20)(e); the gold list would be short one item.",
+      "potentially_decisive": true,
+      "notes": "Diyes Singho v. Herath (AUTH-M022-023, partially_verified) holds the statement is not itself proof of payment; noted only, not relied on. Rule (20)(e) was rewritten in 2022 without quoting the old words. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-039",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "attestation_states_number_and_value_of_stamps_on_deed_and_duplicate",
+      "description": "The attestation states the number and value of the adhesive stamps affixed to, or the value of the impressed stamps on, the deed and its duplicate (rule (20)(f)) - the item that only the first notary must state.",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002",
+        "AUTH-M022-001"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "If Ruwan Perera were the second notary this item would drop out under rule (25)(a); its presence is what distinguishes the first notary's attestation in the gold answer.",
+      "potentially_decisive": true,
+      "notes": "Rex v. Seenytamby (AUTH-M022-024, verified) confirms that a knowingly false stamp statement in the attestation is an offence. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-040",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "attestation_specifies_erasures_alterations_and_interpolations",
+      "description": "The attestation specifically states the erasures, alterations and interpolations in the deed, whether they were made before it was read over, and any made in the signatures, the serial number and the writing on the stamps (rule (20)(g)).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "indispensable",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "Omitting this statement would breach rule (20)(g); the gold list would be short one item.",
+      "potentially_decisive": true,
+      "notes": "Rule (20)(g) was amended by the Notaries (Amendment) Act No. 6 of 2024, after the matter date. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-041",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "attestation_substantially_in_form_e_and_legibly_signed_in_deed_language",
+      "description": "The attestation is substantially in Form E of the Second Schedule, legibly signed in the language of the deed (and with the notary's usual signature if different), with any erasure, alteration or interpolation in the attestation authenticated by his initials (rule (21)).",
+      "expected_value": true,
+      "predicate_type": "procedural_condition",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-003"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "inferred",
+      "counterfactual_effect": "A departure from Form E or an unsigned attestation would breach rule (21) but would not alter the list of rule (20) statements the question asks for.",
+      "potentially_decisive": false,
+      "notes": "Form E (1980 revised edition) was replaced by the 2022 amending Act, after the matter date. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-042",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "russel_perera_signature_differs_from_name_given",
+      "description": "Russel Perera's signature differs from the full name he gives to the notary, so that rule (14) requires the attestation to describe him by both names.",
+      "expected_value": null,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-015"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "unresolved",
+      "counterfactual_effect": "If true, one extra statement (both names) is added to the attestation; if false, nothing changes. Either way the core rule (20) list is unaffected.",
+      "potentially_decisive": false,
+      "notes": "Not stated in the scenario. Temporal warning: the Notaries Ordinance s.31 rule text relied on is the 1980 revised-edition consolidation (applicable_version_for_matter_date = history_unknown); the October 2020 wording is unconfirmed from repo files, with low residual risk per the verifier (no 2005-2020 instrument held in the repo touches this rule)."
+    },
+    {
+      "predicate_id": "PR-M022-043",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "russel_perera_reads_deed_himself",
+      "description": "Russel Perera reads the deed over himself rather than having Ruwan Perera read and explain it to him in the witnesses' presence.",
+      "expected_value": null,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "unresolved",
+      "counterfactual_effect": "Whichever is true, rule (20)(d) requires the attestation to state which occurred; the value changes the wording of the statement, not the requirement to make it.",
+      "potentially_decisive": false,
+      "notes": "Literacy / language of the executant not stated (issue-map unresolved fact)."
+    },
+    {
+      "predicate_id": "PR-M022-044",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "consideration_paid_in_ruwan_perera_presence",
+      "description": "Rent, premium or other consideration is paid in Ruwan Perera's presence at the Galle signing.",
+      "expected_value": null,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "unresolved",
+      "counterfactual_effect": "If paid, the attestation must state the actual amount in local currency; if not, it must state that none was paid in his presence. The requirement to make the statement is unaffected.",
+      "potentially_decisive": false,
+      "notes": "Not stated in the scenario (issue-map unresolved fact)."
+    },
+    {
+      "predicate_id": "PR-M022-045",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "stamp_type_and_value_on_deed_and_duplicate_determined",
+      "description": "The number and value of adhesive stamps, or the value of impressed stamps, on the deed and its duplicate are known at the time of Ruwan Perera's attestation.",
+      "expected_value": null,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "unresolved",
+      "counterfactual_effect": "The values only fill in the rule (20)(f) statement; the requirement to state them is unaffected. Stamp duty computation is outside the verified authorities.",
+      "potentially_decisive": false,
+      "notes": "Not stated in the scenario (issue-map unresolved fact)."
+    },
+    {
+      "predicate_id": "PR-M022-046",
+      "benchmark_question_ids": [
+        "M022-Q02"
+      ],
+      "predicate": "attesting_witnesses_known_to_ruwan_perera",
+      "description": "The two attesting witnesses at the Galle signing are known to Ruwan Perera.",
+      "expected_value": null,
+      "predicate_type": "fact",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-002",
+        "AUTH-M022-006"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "unresolved",
+      "counterfactual_effect": "Rule (20)(b) requires the attestation to say whether the witnesses were known and, if so, which; the value changes the wording, not the requirement. If Russel Perera were unknown to the notary, at least two witnesses would have to know him (rule (9)).",
+      "potentially_decisive": false,
+      "notes": "Witnesses are not identified in the scenario."
+    },
+    {
+      "predicate_id": "PR-M022-047",
+      "benchmark_question_ids": [
+        "M022-Q01",
+        "M022-Q02"
+      ],
+      "predicate": "post_october_2020_amendments_excluded_from_answer",
+      "description": "The Notaries (Amendment) Acts No. 31 of 2022 and No. 6 of 2024 (which rewrote rule (20)(b), (e) and (g) and replaced Form E) post-date the October 2020 matter reference date and are excluded from the answer.",
+      "expected_value": true,
+      "predicate_type": "legal_status",
+      "necessity": "supporting",
+      "polarity": "positive",
+      "authority_ids": [
+        "AUTH-M022-020",
+        "AUTH-M022-021"
+      ],
+      "supporting_fact_ids": [],
+      "evidence_document_ids": [],
+      "status": "observed",
+      "counterfactual_effect": "If the matter were dated after the 2022/2024 Acts came into force, the contents of rule (20)(b), (e) and (g), rule (30) and Form E would differ and the Q02 list would have to be restated.",
+      "potentially_decisive": true,
+      "notes": "Matter reference date 2020-10 (Sri Lanka Law College Conveyancing LW 307, October 2020 session); the scenario itself is undated. Commencement dates of the 2022/2024 Acts are not held in the repo."
+    }
+  ]
+}

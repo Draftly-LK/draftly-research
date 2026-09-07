@@ -1,0 +1,174 @@
+{
+  "benchmark_matter_id": "M078",
+  "source_matter_id": "P12-Q09-M01",
+  "grouping_key": "P12-Q09-M01",
+  "paper_no": 12,
+  "question_no": 9,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Kamal Perera executed an Indenture of Lease and leased out a house owned by him situated in Nugegoda to Jayantha de Siva. Subsequently Kamal Perera mortgaged this house to a Lending Institution and obtained a loan but the Lending Institution informed him that they need their Mortgage Bond to get priority.",
+    "normalized": "Kamal Perera executed an Indenture of Lease and leased out a house owned by him situated in Nugegoda to Jayantha de Siva. Subsequently Kamal Perera mortgaged this house to a Lending Institution and obtained a loan but the Lending Institution informed him that they need their Mortgage Bond to get priority.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P12-Q09-P01"
+        ]
+      },
+      {
+        "segment_index": 0,
+        "field": "prior_background",
+        "atomic_ids": [
+          "P12-Q09-P02",
+          "P12-Q09-P03-IA",
+          "P12-Q09-P03-IB"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M078-Q01",
+      "atomic_id": "P12-Q09-P01",
+      "part_uid": "paper-12/q9/i",
+      "part_id": "i",
+      "item_id": null,
+      "marks": 5,
+      "pdf_page": 51,
+      "question_original": "Kamal seeks your advice. Advise him.",
+      "question_normalized": "Kamal seeks your advice. Advise him.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Kamal Perera executed an Indenture of Lease and leased out a house owned by him situated in Nugegoda to Jayantha de Siva. Subsequently Kamal Perera mortgaged this house to a Lending Institution and obtained a loan but the Lending Institution informed him that they need their Mortgage Bond to get priority.",
+      "effective_background_normalized": "Kamal Perera executed an Indenture of Lease and leased out a house owned by him situated in Nugegoda to Jayantha de Siva. Subsequently Kamal Perera mortgaged this house to a Lending Institution and obtained a loan but the Lending Institution informed him that they need their Mortgage Bond to get priority.",
+      "source_quote": "09. (i) Kamal Perera executed an Indenture of Lease and leased out a house owned by him situated in\nNugegoda to Jayantha de Siva. Subsequently Kamal Perera mortgaged this house to a Lending\nInstitution and obtained a loan but the Lending Institution informed him that they need their\nMortgage Bond to get priority. Kamal seeks your advice. Advise him.\n(05 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    },
+    {
+      "benchmark_question_id": "M078-Q02",
+      "atomic_id": "P12-Q09-P02",
+      "part_uid": "paper-12/q9/ii",
+      "part_id": "ii",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 51,
+      "question_original": "Kamal Perera has noticed the following wording in the Mortgage Bond \"therefore hereby renouncing the beneficium non numerate pecuniae do hereby engage and bind himself.....\"How do you explain this to him?",
+      "question_normalized": "Kamal Perera has noticed the following wording in the Mortgage Bond \"therefore hereby renouncing the beneficium non numerate pecuniae do hereby engage and bind himself.....\"How do you explain this to him?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Kamal Perera executed an Indenture of Lease and leased out a house owned by him situated in Nugegoda to Jayantha de Siva. Subsequently Kamal Perera mortgaged this house to a Lending Institution and obtained a loan but the Lending Institution informed him that they need their Mortgage Bond to get priority.",
+      "effective_background_normalized": "Kamal Perera executed an Indenture of Lease and leased out a house owned by him situated in Nugegoda to Jayantha de Siva. Subsequently Kamal Perera mortgaged this house to a Lending Institution and obtained a loan but the Lending Institution informed him that they need their Mortgage Bond to get priority.",
+      "source_quote": "(ii) Kamal Perera has noticed the following wording in the Mortgage Bond \"therefore hereby\nrenouncing the beneficium non numerate pecuniae do hereby engage and bind\nhimself.....\"How do you explain this to him?\n(03 marks)",
+      "classification": {
+        "context_sources": [
+          "prior"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.7,
+        "flags": [
+          "largely doctrinal despite inherited scenario"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "confidence=0.7"
+      ],
+      "missing_fact_types": []
+    },
+    {
+      "benchmark_question_id": "M078-Q03",
+      "atomic_id": "P12-Q09-P03-IA",
+      "part_uid": "paper-12/q9/iii/a",
+      "part_id": "iii",
+      "item_id": "a",
+      "marks": 3,
+      "pdf_page": 51,
+      "question_original": "What is the stamp duty payable on the Mortgage Bond? You should show the mode of calculating the stamp duty.",
+      "question_normalized": "What is the stamp duty payable on the Mortgage Bond? You should show the mode of calculating the stamp duty.",
+      "question_specific_context": {
+        "group_background": "Kamal Perera obtained a loan of Rs.3,000,000/- from the Lending Institution.",
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Kamal Perera obtained a loan of Rs.3,000,000/- from the Lending Institution.\n\nKamal Perera executed an Indenture of Lease and leased out a house owned by him situated in Nugegoda to Jayantha de Siva. Subsequently Kamal Perera mortgaged this house to a Lending Institution and obtained a loan but the Lending Institution informed him that they need their Mortgage Bond to get priority.",
+      "effective_background_normalized": "Kamal Perera obtained a loan of Rs.3,000,000/- from the Lending Institution.\n\nKamal Perera executed an Indenture of Lease and leased out a house owned by him situated in Nugegoda to Jayantha de Siva. Subsequently Kamal Perera mortgaged this house to a Lending Institution and obtained a loan but the Lending Institution informed him that they need their Mortgage Bond to get priority.",
+      "source_quote": "a). What is the stamp duty payable on the Mortgage Bond? You should show the mode of\ncalculating the stamp duty.\n(03 marks)",
+      "classification": {
+        "context_sources": [
+          "prior",
+          "group"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.9,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    },
+    {
+      "benchmark_question_id": "M078-Q04",
+      "atomic_id": "P12-Q09-P03-IB",
+      "part_uid": "paper-12/q9/iii/b",
+      "part_id": "iii",
+      "item_id": "b",
+      "marks": 4,
+      "pdf_page": 51,
+      "question_original": "Who should pay the Stamp duty for this Mortgage Bond and to whom should it be paid? What is the procedure?",
+      "question_normalized": "Who should pay the Stamp duty for this Mortgage Bond and to whom should it be paid? What is the procedure?",
+      "question_specific_context": {
+        "group_background": "Kamal Perera obtained a loan of Rs.3,000,000/- from the Lending Institution.",
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Kamal Perera obtained a loan of Rs.3,000,000/- from the Lending Institution.\n\nKamal Perera executed an Indenture of Lease and leased out a house owned by him situated in Nugegoda to Jayantha de Siva. Subsequently Kamal Perera mortgaged this house to a Lending Institution and obtained a loan but the Lending Institution informed him that they need their Mortgage Bond to get priority.",
+      "effective_background_normalized": "Kamal Perera obtained a loan of Rs.3,000,000/- from the Lending Institution.\n\nKamal Perera executed an Indenture of Lease and leased out a house owned by him situated in Nugegoda to Jayantha de Siva. Subsequently Kamal Perera mortgaged this house to a Lending Institution and obtained a loan but the Lending Institution informed him that they need their Mortgage Bond to get priority.",
+      "source_quote": "b) Who should pay the Stamp duty for this Mortgage Bond and to whom should it be paid?\nWhat is the procedure?\n(04 marks)",
+      "classification": {
+        "context_sources": [
+          "prior",
+          "group"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2020-04",
+  "exam_session": "APRIL 2020",
+  "matter_tier": "A",
+  "tier_a_question_count": 3
+}

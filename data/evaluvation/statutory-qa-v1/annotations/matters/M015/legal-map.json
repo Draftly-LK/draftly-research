@@ -1,0 +1,715 @@
+{
+  "benchmark_matter_id": "M015",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M015",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:04:51Z",
+    "verification_agent": "verifier-M015",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:12:25Z"
+  },
+  "matter_reference_date": "2025-10",
+  "matter_reference_date_basis": "matter_reference_date 2025-10 in candidates/matters/M015.json, corresponding to exam session OCTOBER 2025. Law is stated as at that date: the Registration of Documents (Amendment) Act No. 32 of 2022 is in force; Act No. 18 of 2024 is in force but does not touch section 32.",
+  "corpus_gaps": [
+    "The corpus copy of the Registration of Documents Ordinance is the 1990 consolidation, so section 32 still shows the pre-2022 text of subsections (1), (3), (4) and (5). The operative wording had to be reconstructed from the amending sections of Act No. 32 of 2022; no consolidated post-2022 section 32 exists in the corpus.",
+    "Form VIII of the Second Schedule as substituted by section 5(1) of Act No. 32 of 2022 is in the corpus, but the regulations prescribing the manner of lodging and the current caveat fee are not; the fee item (2,500 rupees for each land for each two-year period) is visible only through section 5 of Act No. 21 of 2013 and may have changed since.",
+    "The date of operation of Act No. 32 of 2022 is not stated in the corpus text of that Act (its section 1 gives only the short title), so commencement is inferred from the enactment year rather than read from an appointed-date provision.",
+    "The Registration of Documents (Amendment) Acts No. 27 of 1969, No. 19 of 1976, No. 50 of 1982 and No. 5 of 1990 carry 'amends None' in their corpus metadata, so the amendment chain for the Ordinance cannot be traced mechanically; none of them was found to touch section 32 on a text search for 'caveat'.",
+    "Verifier: the commencement gap is narrower than recorded. Section 1 of Act No. 32 of 2022 gives only a short title and carries no appointed-date provision, in contrast to section 1(2) of Act No. 18 of 2024, which postpones operation to a date the Minister appoints by Order published in the Gazette. On the corpus text the 2022 Act therefore operated on certification in 2022 and was in force at 2025-10, and the 2024 Act's own operation depends on an appointed date the corpus does not carry."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M015-001",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(1) (as originally enacted)",
+      "relevant_excerpt": "(1) Any person (in this Ordinance called a \"caveator\") may present for registration a caveat in the prescribed form requiring to be served with notice of the presentation for registration of any instrument affecting the land described in the caveat.",
+      "why_relevant": "The original test of standing: \"any person\" could lodge a caveat. It is the text the question contrasts with (\"the Registration of Documents Ordinance which is amended\"), and it shows what the 2022 substitution changed.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Repealed and substituted by section 2(1) of Act No. 32 of 2022. The corpus copy of the Ordinance is the 1990 consolidation and therefore still carries the pre-2022 wording. Not in force in this form at 2025-10; recorded as background contrast only.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M015-002",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(1) inserting section 32(1)(a) of the principal enactment",
+      "relevant_excerpt": "A person (hereinafter referred to as the \"caveator\") who (i) has a right, title or interest; or (ii) claims to have a right, title or interest, to a land, an undivided land, a land parcel or a condominium parcel (hereinafter in this section referred to as the \"land\") may present for registration a caveat substantially in Form VIII of the Second Schedule hereto requiring him to be served a notice of the presentation for registration of any instrument affecting such land.",
+      "why_relevant": "The operative substituted section 32(1)(a). It states who may present a caveat: a person who has, or claims to have, a right, title or interest in the land. Romani's entitlement stands or falls on this provision.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Act No. 32 of 2022 was enacted in 2022 and is in force at the matter reference date 2025-10. Corpus in_force_from_year = 2022; no later amendment to section 32 appears in the corpus (Act No. 18 of 2024 does not touch section 32).",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M015-003",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(1) inserting section 32(1)(c)(i) of the principal enactment",
+      "relevant_excerpt": "\"caveator\" includes a body of persons, a beneficiary under any trust affecting a land, the lawful guardian or the next friend of a minor or of a person of unsound mind or mentally deficient person, an attorney of a person, a judgement creditor, an executor or an administrator of an estate of a deceased, or a legal heir, or an intended purchaser who has entered into an agreement with the owner of a land or a developer of a land",
+      "why_relevant": "The extended definition of \"caveator\". It answers the second limb of the question directly by listing the classes of person who may lodge a caveat beyond the registered owner, and it covers an attorney acting for an owner who is abroad.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 32 of 2022, in force at 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M015-004",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(1) inserting section 32(1)(b)(i) of the principal enactment",
+      "relevant_excerpt": "Every caveat presented for registration shall- (i) be in duplicate and accompanied by an affidavit of the caveator together with a certificate issued by an Attorney-at-law substantiating the right, title or interest in the land or claims to a right, title or interest in the land of the caveator;",
+      "why_relevant": "Standing alone is not enough: the substituted section makes the caveat conditional on duplicate lodgement, an affidavit and an attorney-at-law's certificate substantiating the claimed right, title or interest. Removing it would leave the answer stating an unconditional right.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 32 of 2022, in force at 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M015-005",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(1) inserting section 32(1)(b)(iv) of the principal enactment",
+      "relevant_excerpt": "contain the name, signature and the National Identity Card number or the passport number or the driving licence number and address of the caveator in Sri Lanka at which notices relating to the caveat shall be served, the date of the caveat, the names and addresses of the persons to whom the notice of the caveat shall be sent where the caveator is not the owner, the right, title or interest in the land claimed by the caveator, grounds in support of the claim and the description of the land",
+      "why_relevant": "Prescribes the mandatory contents, including an address of the caveator in Sri Lanka for service. This is the condition that bites on a caveator who is leaving the country, so it is necessary to a complete answer for Romani.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 32 of 2022, in force at 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M015-006",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(1) inserting section 32(1)(c)(iii) of the principal enactment",
+      "relevant_excerpt": "\"interest\" includes an interest arising from an unregistered deed or instrument relating to a land which is incapable of immediate registration, a trust, an inheritance either by testate or intestate succession, instruments relating to a mortgage or an agreement to sell, co-ownership, an ownership arising from a condominium parcel or the estate of a minor, or of a person of unsound mind or mentally deficient person.",
+      "why_relevant": "Defines \"interest\" for the standing test, showing how far short of full ownership a caveator may be. It supports the second limb of the question but is not needed for Romani, who is an owner.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 32 of 2022, in force at 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M015-007",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(1) inserting section 32(1)(b)(iii) of the principal enactment",
+      "relevant_excerpt": "be accompanied by a certified copy of the original of the Power of Attorney duly registered with the Registrar General or the Registrar of the relevant Land Registry or the Registrar of Title (hereinafter in this section referred to as the \"Registrar\") where the caveator is a holder of a Power of Attorney",
+      "why_relevant": "Where the caveat is lodged by an attorney rather than the owner personally, a certified copy of a duly registered power of attorney must accompany it. Relevant because Romani proposes to act through an attorney once she is abroad.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 32 of 2022, in force at 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M015-008",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(3) substituting section 32(3) of the principal enactment",
+      "relevant_excerpt": "by the repeal of subsection (3) thereof and the substitution therefor of the following subsection: - (3) A caveat shall be in force for a maximum period of two years.",
+      "why_relevant": "Fixes the life of a caveat at two years. Material practical advice for a client who will be out of the country for longer, but not part of the standing test.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Act No. 32 of 2022; replaces the earlier period tied to the fee paid. In force at 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M015-009",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(2)",
+      "relevant_excerpt": "(2) The Registrar shall on receiving a caveat register it in the same manner as other instruments, but shall retain the caveat.",
+      "why_relevant": "The registration duty that follows a properly lodged caveat, and part of the surviving framework of section 32 that the 2022 Act left untouched. Explains what filing actually achieves.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Subsection (2) was not amended by Act No. 32 of 2022 and remains in force at 2025-10. Note that subsections (1), (3), (4) and (5) of the same corpus section carry pre-2022 text.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M015-010",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(5) substituting words in section 32(5) of the principal enactment",
+      "relevant_excerpt": "in subsection (5) thereof, by the substitution for the words \"a competent court within thirty days\" of the words \"a competent court within sixty days\".",
+      "why_relevant": "Extends to sixty days the window in which a caveator who receives notice must commence action to have the offending instrument rectified or cancelled. Explains the protective value of the caveat Romani wants.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Act No. 32 of 2022; the corpus consolidation of section 32(5) still shows 'thirty days'. In force at 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M015-011",
+      "section_id": "23-1927/s3",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "In this Ordinance, unless the context otherwise requires, \" land \" includes things attached to the earth or permanently fastened to anything attached to the earth and any estate or interest in land, and a mortgage of or charge on land.",
+      "why_relevant": "The Ordinance definition of \"land\", which brings Romani's Battaramulla allotment and the house on it within the subject matter of a caveat.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended since 1927 apart from the repeal of section 2A by Law No. 4 of 1974; in force at 2025-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and the section is in force, but the temporal note is wrong in form: the words about section 2A are a consolidation footnote carried in the body of section 3, not an amendment of section 3, which is itself unamended."
+    },
+    {
+      "provision_id": "PROV-M015-012",
+      "section_id": "23-1927/s26",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "26",
+      "subsection": "(1)(d)",
+      "relevant_excerpt": "(1) An instrument may be presented for registration by\" (a) any person executing the instrument; (b) any person claiming any interest or benefit thereunder; (c) any person having any interest in or charge on any property affected thereby; or (d) the agent of any such person or a attorney-at-law or notary acting on behalf of any such person.",
+      "why_relevant": "Confirms that a notary may present an instrument for registration on behalf of an entitled person, which is how the notary consulted by Romani would lodge the papers.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended in the corpus text; in force at 2025-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording verbatim, but the role is inferential rather than confirmatory: section 25 defines \"instrument\" for that Chapter as an instrument affecting land or a pledge, mortgage or bill of sale, which does not plainly cover a caveat, so the notary route is better supported by Form VIII as substituted by section 5(1) of Act No. 32 of 2022 (PROV-M015-901), which is signed by the caveator, his Attorney-at-Law or notary, or his attorney. Demoted to supporting weight."
+    },
+    {
+      "provision_id": "PROV-M015-013",
+      "section_id": "4-1902/s3",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance No. 4 of 1902",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3",
+      "subsection": "(a)",
+      "relevant_excerpt": "(a) Every power of attorney executed in Sri Lanka or any other country shall be registered with the Registrar General.",
+      "why_relevant": "A power of attorney relied on by an attorney-caveator must be registered. Supports the route open to Romani after she leaves the country.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 3 was repealed and substituted by section 3 of Act No. 28 of 2022; the substituted text is what the corpus carries and it is in force at 2025-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording verbatim and in force, but the citation should be section 3(1)(a): the corpus body of 4-1902/s3 drops the \"(1)\" marker while its subsection (2) refers back to the power of attorney referred to in subsection (1)."
+    },
+    {
+      "provision_id": "PROV-M015-014",
+      "section_id": "32-2022/s3",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "3",
+      "subsection": "(2) inserting section 33(1)(a) of the principal enactment",
+      "relevant_excerpt": "A caveat may be withdrawn or cancelled, as the case may be, at the request in writing - (i) by the caveator; (ii) by an attorney; (iii) upon the death of a caveator, by an executor, administrator, or a legal heir;",
+      "why_relevant": "Shows the mirror image of the standing question: who may take a caveat off the register. Context only for this question.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 32 of 2022, in force at 2025-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording verbatim, but the subsection label is wrong: section 3(2) of Act No. 32 of 2022 adds a new subsection immediately after section 33(1) whose paragraphs are lettered (a) and (b); it does not insert a \"section 33(1)(a)\". Section 3(1) of the same Act also deletes the word caveat from section 33(1), so withdrawal of a caveat now runs only through the new subsection."
+    },
+    {
+      "provision_id": "PROV-M015-901",
+      "section_id": "32-2022/s5",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "5",
+      "subsection": "(1) substituting Form VIII of the Second Schedule to the principal enactment",
+      "relevant_excerpt": "by the repeal of Form VIII thereof, and the substitution therefor, of the following new Form:- Take notice that, I, ............ (full name and the address of the caveator) bearing (NIC/passport/ driving licence) no.................. require to be served with notice of the presentation for registration of any instrument affecting land........ (owned by me / owned by other- specify the right/ title/ or interest) referred to in the Schedule hereto. And I further declare that I present this caveat in my behalf/ in behalf of ........................ (where the caveator is not the owner) on the following ground/s. Title under deed no............. Under the last will of............ Other (specify) ........................................... And I appoint (the address in Sri Lanka) as the place at which notices relating hereto shall be sent. ............................ (Signature of the caveator/his Attorney-at-Law or notary/attorney)",
+      "why_relevant": "Added by the verifier. Section 32(1)(a) as substituted requires the caveat to be substantially in Form VIII of the Second Schedule, and the gold answer's conclusion turns on lodging in Form VIII, but no provision in the map carried the Form. The substituted Form also shows on its face that it may be signed by the caveator's Attorney-at-Law or notary or attorney, which is the direct authority for the notary limb of the answer that PROV-M015-012 could only reach by inference.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by section 5(1) of Act No. 32 of 2022; in force at 2025-10. Act No. 18 of 2024 amends only the First Schedule (its section 8), not Form VIII.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim against 32-2022/s5."
+    },
+    {
+      "provision_id": "PROV-M015-902",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(2) inserting section 32(1A) of the principal enactment",
+      "relevant_excerpt": "(1A) The Registrar, on being satisfied that all required documents and information referred to in paragraph (b) of subsection (1) are provided by the caveator, shall acknowledge the receipt of such caveat and record the prescribed particulars referred to in subsection (1) of section 27.",
+      "why_relevant": "Added by the verifier. This is the provision that makes the paragraph (b) requirements operative: acceptance of the caveat depends on the Registrar being satisfied that all of them are met. The map relied on that step in the enrichment counterfactual for FACT-M015-Q01-002 and in CL-M015-Q01-010 without citing any provision for it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by section 2(2) of Act No. 32 of 2022; in force at 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim against 32-2022/s2."
+    },
+    {
+      "provision_id": "PROV-M015-903",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(5)",
+      "relevant_excerpt": "(5) If, while a caveat is in force, an instrument affecting the land described in the caveat is presented for registration, and in an action commenced by the caveator in a competent court within thirty days from posting of the notice required by subsection (4) it is proved to the satisfaction of the court that the instrument presented for registration is or was at the time of registration void or voidable by the caveator or fraudulent as against him or in derogation of his lawful rights the court may order the instrument to be rectified or cancelled as may be necessary to preserve the rights of the caveator, and may order the necessary correction to be made in the register.",
+      "why_relevant": "Added by the verifier. CL-M015-Q01-008 asserts a sixty-day window running from the posting of the notice, but PROV-M015-010 carries only the amending words substituting sixty days for thirty days and PROV-M015-009 quotes only subsection (2); nothing in the map carried the host subsection that supplies the trigger, the running point and the relief.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The corpus copy is the 1990 consolidation and still reads thirty days. Read with section 2(5) of Act No. 32 of 2022 (PROV-M015-010), the period is sixty days at 2025-10; the rest of the subsection is unamended.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim against 23-1927/s32. The quoted thirty days is superseded, see temporal_note."
+    },
+    {
+      "provision_id": "PROV-M015-904",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(1) inserting section 32(1)(b)(ii) of the principal enactment",
+      "relevant_excerpt": "be accompanied by such number of copies of the notice set out in Form X of the Second Schedule hereto together with stamped envelopes, to be served on the owners of the land whose names and addresses are given in the relevant volume and folio in which such land is registered, where the caveator is not the owner",
+      "why_relevant": "Added by the verifier. CL-M015-Q01-012 and the gold answer say the Form X notices to other owners do not arise because Romani is the owner, and the gold answer cites section 32(1)(b)(ii) by number, but no provision in the map carried it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by section 2(1) of Act No. 32 of 2022; in force at 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim against 32-2022/s2."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M015-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Both limbs are answered by the text of section 32 of the Registration of Documents Ordinance as substituted by section 2 of the Registration of Documents (Amendment) Act No. 32 of 2022. The first limb asks whether an owner falls within the substituted standing test, which the words of section 32(1)(a) resolve; the second limb asks who may file a caveat, which section 32(1)(a) together with the inclusive definitions in section 32(1)(c) answers on the face of the statute. No judicial gloss or Roman-Dutch doctrine is needed to reach a complete answer. Verified by the verifier: both limbs are decided on the face of section 32 as substituted, and no claim in the answer depends on a Roman-Dutch principle or on any decided case.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M015-Q01-01",
+          "issue": "Whether Romani, as the owner of the Battaramulla land who is about to leave the country, is a person entitled to present a caveat for registration, and what she must lodge with it.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M015-Q01-02",
+          "issue": "Who may file a caveat under the Registration of Documents Ordinance as amended by Act No. 32 of 2022, and how that differs from the pre-amendment position.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M015-002",
+        "PROV-M015-003",
+        "PROV-M015-004",
+        "PROV-M015-005",
+        "PROV-M015-901"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M015-006",
+        "PROV-M015-007",
+        "PROV-M015-008",
+        "PROV-M015-009",
+        "PROV-M015-010",
+        "PROV-M015-011",
+        "PROV-M015-012",
+        "PROV-M015-013",
+        "PROV-M015-902",
+        "PROV-M015-903",
+        "PROV-M015-904"
+      ],
+      "background_provision_ids": [
+        "PROV-M015-001",
+        "PROV-M015-014"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across two enactments: (1) section 32 of the Ordinance is the caveat provision but its subsection (1) is not the operative text, so one must move to the substituting provision in Act No. 32 of 2022; (2) the substituted section 32(1)(a) standing test must be read with the inclusive definition of caveator in section 32(1)(c)(i); (3) standing must then be read with the mandatory contents and accompaniments in section 32(1)(b), in particular the Sri Lanka address requirement that a departing caveator must satisfy. Verified by the verifier: the count stays at three. The four provisions the verifier added (Form VIII, section 32(1A), section 32(5) and section 32(1)(b)(ii)) all sit on the third step, the paragraph (b) conditions and their consequences, and add no further necessary link.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M015-002",
+          "to_provision_id": "PROV-M015-001",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M015-003",
+          "to_provision_id": "PROV-M015-002",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M015-006",
+          "to_provision_id": "PROV-M015-002",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M015-011",
+          "to_provision_id": "PROV-M015-002",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M015-004",
+          "to_provision_id": "PROV-M015-002",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M015-005",
+          "to_provision_id": "PROV-M015-002",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M015-007",
+          "to_provision_id": "PROV-M015-003",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M015-013",
+          "to_provision_id": "PROV-M015-007",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M015-008",
+          "to_provision_id": "PROV-M015-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M015-010",
+          "to_provision_id": "PROV-M015-009",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M015-012",
+          "to_provision_id": "PROV-M015-002",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M015-014",
+          "to_provision_id": "PROV-M015-003",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M015-901",
+          "to_provision_id": "PROV-M015-002",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M015-902",
+          "to_provision_id": "PROV-M015-004",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M015-904",
+          "to_provision_id": "PROV-M015-002",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M015-010",
+          "to_provision_id": "PROV-M015-903",
+          "relationship": "amends"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Romani who intends to go to New Zealand wants to file a caveat to her property situated in Battaramulla and meets you who are a Notary practising in Colombo.",
+        "enriched_background": "Romani, aged forty-one, is the sole owner of a fifteen-perch allotment of land with a two-storey house standing on it at No. 47/3, Pahalawela Road, Battaramulla, being Lot 12B in Plan No. 3126 dated 8 January 2016 made by K. Amarasiri, Licensed Surveyor. She bought the land from her uncle on Deed of Transfer No. 4821 dated 12 March 2016, attested by W. D. Silva, Notary Public of Colombo, and that deed is registered in Volume/Folio B 218/94 at the Delkanda-Nugegoda Land Registry. She holds the original deed and has obtained a certified copy of the folio; her attorney-at-law is willing to give a written certificate confirming her ownership, and she is ready to swear an affidavit and to lodge her papers in duplicate. Romani leaves for New Zealand on 20 November 2025 to work there for about three years, and no relative will be living in the house; she is afraid that someone may present a forged transfer of the land for registration while she is away. She has given her sister's address at No. 12, Kalapaluwawa Road, Rajagiriya as an address in Sri Lanka at which any notices about her land may be served on her. Before she leaves she also proposes to execute a power of attorney in favour of her brother Nihal, to be registered with the Registrar-General, so that he can act for her in matters concerning the land. Romani, who intends to go to New Zealand, wants to file a caveat to her property situated in Battaramulla and meets you who are a Notary practising in Colombo.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M015-Q01-001",
+            "fact": "Romani is the sole owner of the Battaramulla land (Lot 12B in Plan No. 3126 of 8 January 2016, fifteen perches with a two-storey house, No. 47/3 Pahalawela Road), having bought it on Deed of Transfer No. 4821 dated 12 March 2016, registered in Volume/Folio B 218/94 at the Delkanda-Nugegoda Land Registry.",
+            "origin": "synthetic_decisive",
+            "reason": "The substituted standing test turns on whether the applicant has, or claims to have, a right, title or interest in the land. The original background only says the property is hers, which is too loose to decide the point.",
+            "activates_provision_ids": [
+              "PROV-M015-002",
+              "PROV-M015-006",
+              "PROV-M015-011"
+            ],
+            "counterfactual_effect": "If Romani were only a person in occupation with no deed and no claim of title, she would fall outside the standing test and could not lodge a caveat.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M015-Q01-002",
+            "fact": "She holds the original deed and a certified copy of the folio, her attorney-at-law will issue a written certificate substantiating her ownership, and she is ready to swear an affidavit and lodge the caveat in duplicate.",
+            "origin": "synthetic_neutral",
+            "reason": "The amended section makes the caveat conditional on duplicate lodgement, an affidavit and an attorney-at-law's certificate; without these facts the scenario cannot be said to comply.",
+            "activates_provision_ids": [
+              "PROV-M015-004"
+            ],
+            "counterfactual_effect": "Without the attorney-at-law's certificate and affidavit the Registrar could not be satisfied that the required documents had been provided, and the caveat would not be accepted.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M015-Q01-003",
+            "fact": "Romani leaves for New Zealand on 20 November 2025 for about three years and nominates her sister's address at No. 12, Kalapaluwawa Road, Rajagiriya as the address in Sri Lanka at which notices about the caveat may be served on her.",
+            "origin": "synthetic_decisive",
+            "reason": "The prescribed contents require an address of the caveator in Sri Lanka for service. Departure abroad is the one fact the original background gives, and it makes this requirement the live issue.",
+            "activates_provision_ids": [
+              "PROV-M015-005",
+              "PROV-M015-010"
+            ],
+            "counterfactual_effect": "If she gave only a New Zealand address, the caveat would not contain the address in Sri Lanka the section requires and notice of a competing instrument could not be served on her there.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M015-Q01-004",
+            "fact": "Before leaving she proposes to execute a power of attorney in favour of her brother Nihal and to have it registered with the Registrar-General so that he can act for her in matters concerning the land.",
+            "origin": "synthetic_neutral",
+            "reason": "Makes concrete the alternative route of lodging or maintaining a caveat through an attorney, which the amended definition of caveator expressly allows.",
+            "activates_provision_ids": [
+              "PROV-M015-003",
+              "PROV-M015-007",
+              "PROV-M015-013",
+              "PROV-M015-014"
+            ],
+            "counterfactual_effect": "If the power of attorney were left unregistered, the attorney could not supply the certified copy of a duly registered power of attorney that must accompany a caveat lodged by an attorney.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M015-Q01-005",
+            "fact": "Romani's concern is that a forged transfer of the land may be presented for registration while she is out of the country and the house is unoccupied.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the purpose the caveat serves and connects the facts to the notice-and-action machinery of the section.",
+            "activates_provision_ids": [
+              "PROV-M015-009",
+              "PROV-M015-010"
+            ],
+            "counterfactual_effect": "Without any apprehension of a competing instrument the caveat would serve no protective purpose and could expose the caveator to a damages claim for registration without reasonable cause.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether Romani, the owner of a Battaramulla land who is leaving for New Zealand, may present a caveat for registration in respect of that land, and who is entitled to file a caveat under the Registration of Documents Ordinance as amended by Act No. 32 of 2022.",
+        "rule": "Section 32 of the Registration of Documents Ordinance (Chapter 117) provides for caveats. Its subsection (1) was repealed and substituted by section 2(1) of the Registration of Documents (Amendment) Act No. 32 of 2022. Before that amendment section 32(1) allowed any person to present a caveat for registration. Under the substituted section 32(1)(a) a person who has, or who claims to have, a right, title or interest to a land, an undivided land, a land parcel or a condominium parcel may present for registration a caveat substantially in Form VIII of the Second Schedule, requiring to be served with notice of the presentation for registration of any instrument affecting that land. Section 32(1)(c)(i) extends the term caveator to a body of persons, a beneficiary under any trust affecting a land, the lawful guardian or next friend of a minor or of a person of unsound mind or mentally deficient person, an attorney of a person, a judgement creditor, an executor or administrator of the estate of a deceased, a legal heir, and an intended purchaser who has entered into an agreement with the owner or a developer of a land. Section 32(1)(c)(iii) extends the term interest to interests arising from an unregistered deed incapable of immediate registration, a trust, testate or intestate inheritance, instruments relating to a mortgage or an agreement to sell, co-ownership, condominium ownership and the estate of a minor or of a person of unsound mind. Land itself is defined in section 3 of the Ordinance to include things attached to the earth and any estate or interest in land. Standing is not sufficient on its own: section 32(1)(b)(i) requires the caveat to be in duplicate with an affidavit of the caveator and a certificate of an Attorney-at-law substantiating the right, title or interest; section 32(1)(b)(iii) requires a certified copy of a duly registered power of attorney where the caveator is an attorney; and section 32(1)(b)(iv) requires the caveat to contain the caveator's name, signature, identity card, passport or driving licence number, an address of the caveator in Sri Lanka for service, the right, title or interest claimed, the grounds of the claim and the description of the land. Section 32(2) obliges the Registrar to register a caveat received and to retain it, and section 32(3) as substituted by section 2(3) of the 2022 Act limits a caveat to a maximum of two years. Section 2(5) of the 2022 Act substituted sixty days for thirty days in section 32(5), so a caveator served with notice of a competing instrument has sixty days from posting of the notice to sue. A power of attorney relied on must be registered with the Registrar-General under section 3 of the Powers of Attorney Ordinance, and by section 26(1)(d) of the Ordinance a notary may present an instrument for registration on behalf of an entitled person. Section 33(1)(a), inserted by section 3(2) of the 2022 Act, allows the caveator or an attorney to withdraw the caveat in writing.",
+        "application": "Romani is the sole owner of the Battaramulla allotment under registered Deed of Transfer No. 4821, so she has a right and title to a land within the meaning of the substituted section 32(1)(a), and the allotment with the house on it is land under section 3. She therefore does not need to rely on the extended meaning of interest in section 32(1)(c)(iii) or on any of the derivative classes of caveator in section 32(1)(c)(i). She can satisfy section 32(1)(b)(i), since she is ready to lodge in duplicate with her affidavit and an attorney-at-law's certificate substantiating her ownership. Her impending departure engages section 32(1)(b)(iv): the caveat must state an address in Sri Lanka at which notices are to be served, and her sister's Rajagiriya address answers that requirement, whereas a New Zealand address alone would not. Because she is the owner, the Form X notices to other owners under section 32(1)(b)(ii) do not arise. As the notary consulted, you may present the caveat on her behalf under section 26(1)(d). Two matters should be pointed out to her. First, under section 32(3) the caveat lasts a maximum of two years, which is shorter than her intended three-year absence, so it will have to be renewed. Second, if an instrument affecting the land is presented while the caveat is in force, notice will go to her Sri Lanka address and she must commence action in a competent court within sixty days under section 32(5) as amended; the registered power of attorney in favour of her brother would let him receive the notice and act, and under section 32(1)(b)(iii) a certified copy of that registered power of attorney must accompany any caveat he lodges as attorney, the registration being required by section 3 of the Powers of Attorney Ordinance.",
+        "conclusion": "Yes. Romani may file a caveat. As owner holding title under a registered deed she has a right, title and interest to the land and so falls squarely within section 32(1)(a) of the Registration of Documents Ordinance as substituted by section 2(1) of Act No. 32 of 2022, provided she lodges it in Form VIII in duplicate with her affidavit and an attorney-at-law's certificate under section 32(1)(b)(i) and gives an address in Sri Lanka for service under section 32(1)(b)(iv). More generally, a caveat may now be filed only by a person who has or claims to have a right, title or interest in the land, and not by any person at large as the section read before the amendment; by section 32(1)(c)(i) that includes a body of persons, a beneficiary under a trust affecting the land, the guardian or next friend of a minor or of a person of unsound mind or mentally deficient person, an attorney, a judgement creditor, an executor, administrator or legal heir of a deceased, and an intended purchaser under an agreement with the owner or developer. She should be advised that the caveat lasts a maximum of two years under section 32(3) and will need renewal during a three-year absence."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M015-Q01-001",
+          "claim_text": "Under section 32(1)(a) of the Registration of Documents Ordinance as substituted by section 2(1) of Act No. 32 of 2022, a person who has, or claims to have, a right, title or interest to a land, undivided land, land parcel or condominium parcel may present a caveat for registration in Form VIII of the Second Schedule.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M015-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-002",
+          "claim_text": "Before that substitution section 32(1) permitted any person to present a caveat, so the amendment narrowed standing to persons with, or claiming, a right, title or interest.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M015-001",
+            "PROV-M015-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-003",
+          "claim_text": "Section 32(1)(c)(i) extends the term caveator to a body of persons, a beneficiary under a trust affecting land, the lawful guardian or next friend of a minor or of a person of unsound mind or mentally deficient person, an attorney of a person, a judgement creditor, an executor or administrator of a deceased's estate, a legal heir, and an intended purchaser who has entered into an agreement with the owner or a developer.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M015-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-004",
+          "claim_text": "Section 32(1)(c)(iii) extends the term interest to interests under an unregistered deed incapable of immediate registration, a trust, testate or intestate inheritance, mortgage or agreement-to-sell instruments, co-ownership, condominium ownership and the estate of a minor or person of unsound mind.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M015-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-005",
+          "claim_text": "A caveat must be lodged in duplicate with an affidavit of the caveator and a certificate of an Attorney-at-law substantiating the right, title or interest claimed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M015-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-006",
+          "claim_text": "The caveat must contain the caveator's name, signature, identity card, passport or driving licence number and an address of the caveator in Sri Lanka at which notices relating to the caveat are to be served, together with the interest claimed, the grounds and the description of the land.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M015-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-007",
+          "claim_text": "Where the caveator is the holder of a power of attorney, a certified copy of the power of attorney duly registered with the Registrar-General or the relevant Registrar must accompany the caveat, and every power of attorney must be registered with the Registrar-General.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M015-007",
+            "PROV-M015-013"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-008",
+          "claim_text": "A caveat is in force for a maximum period of two years, the Registrar must register and retain a caveat received, and a caveator served with notice of a competing instrument must commence action in a competent court within sixty days of the posting of that notice.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M015-008",
+            "PROV-M015-009",
+            "PROV-M015-010",
+            "PROV-M015-903"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-009",
+          "claim_text": "Romani holds title to the Battaramulla allotment under a registered deed of transfer, so she has a right, title and interest to land and meets the standing test in section 32(1)(a); the allotment and the house on it are land under section 3 of the Ordinance.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M015-002",
+            "PROV-M015-011"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M015-Q01-001",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-010",
+          "claim_text": "Because she is ready to lodge in duplicate with her affidavit and her attorney-at-law's certificate of title, she can satisfy section 32(1)(b)(i).",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M015-004",
+            "PROV-M015-902"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M015-Q01-002"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-011",
+          "claim_text": "Her departure for New Zealand does not disqualify her, but she must give an address in Sri Lanka for service; her sister's Rajagiriya address satisfies section 32(1)(b)(iv).",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M015-005"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M015-Q01-003",
+            "BG-2"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-012",
+          "claim_text": "As she is the owner, she need not rely on the extended classes of caveator or the extended meaning of interest, and the notices to other owners required where the caveator is not the owner do not arise.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M015-003",
+            "PROV-M015-005",
+            "PROV-M015-006",
+            "PROV-M015-904"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M015-Q01-001"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-013",
+          "claim_text": "The notary consulted by Romani may present the caveat papers for registration on her behalf, and her brother, once his power of attorney is registered, may act for her as an attorney in relation to the caveat.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M015-012",
+            "PROV-M015-003",
+            "PROV-M015-013",
+            "PROV-M015-014",
+            "PROV-M015-901"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M015-Q01-004",
+            "BG-3"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M015-Q01-014",
+          "claim_text": "Since the caveat expires after two years and her absence is expected to last about three, it will have to be renewed during that period.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M015-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M015-Q01-003"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-015",
+          "claim_text": "Romani can file a caveat in respect of her Battaramulla property, provided the caveat is in the prescribed form with the affidavit, the attorney-at-law's certificate and an address in Sri Lanka for service.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M015-002",
+            "PROV-M015-004",
+            "PROV-M015-005",
+            "PROV-M015-901"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M015-Q01-001",
+            "FACT-M015-Q01-002",
+            "FACT-M015-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M015-Q01-016",
+          "claim_text": "Under the Ordinance as amended a caveat may be filed only by a person who has or claims to have a right, title or interest in the land, including the classes listed in the inclusive definition of caveator, and no longer by any person at large.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M015-001",
+            "PROV-M015-002",
+            "PROV-M015-003",
+            "PROV-M015-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

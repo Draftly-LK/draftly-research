@@ -1,0 +1,448 @@
+{
+  "benchmark_matter_id": "M073",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M073",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:48:30Z",
+    "verification_agent": "verifier-M073",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T23:00:19Z"
+  },
+  "matter_reference_date": "2020-04",
+  "matter_reference_date_basis": "exam_session APRIL 2020 recorded in candidates/matters/M073.json",
+  "corpus_gaps": [
+    "The corpus holds only the current consolidated text of the Prevention of Frauds Ordinance s.4, which carries the substitution made by the Prevention of Frauds (Amendment) Act No. 30 of 2022 (signature plus thumb impression before a notary public and two witnesses). The wording of s.4 as it stood in April 2020 is not in the corpus, so s.4 is recorded as background only and is marked not applicable to the matter date.",
+    "The corpus holds the 2024 consolidation of the Notaries Ordinance s.31. Rule (10), repealed by the Notaries (Amendment) Act No. 6 of 2024 s.3(4), was in force in April 2020 but its text is absent from the corpus, so it could not be read or relied on. Rule (9) was substituted by the Notaries (Amendment) Act No. 31 of 2022 s.16(6), so its corpus text is later than the matter date; rules (8) and (12), relied on here, are not touched by either amending Act.",
+    "No provision in the corpus states in terms that a notary must refuse an interested person as an attesting witness to a will. The practical advice to use disinterested witnesses is drawn from the avoidance worked by the Prevention of Frauds Ordinance s.11, not from a prohibition addressed to the notary.",
+    "Verifier confirmation: the corpus body of Notaries Ordinance s.31 runs from rule (9) straight to rule (11), so the rule (10) in force at the matter date is genuinely absent, and a corpus-wide search returns no provision forbidding a notary to accept an interested attesting witness."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M073-001",
+      "section_id": "7-1840/s11",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "11",
+      "subsection": null,
+      "relevant_excerpt": "to whom or to whose wife or husband any beneficial devise, legacy, estate, interest, gift, disposition, or appointment of or affecting any immovable or movable property (other than and except charges and directions for the payment of any debt or debts) shall be thereby given or made, such devise, legacy, estate, interest, gift, disposition, or appointment shall, so far only as concerns such person attesting the execution of such will, testament, or codicil, or the wife or husband of such person, or any person claiming under such person or wife or husband, be utterly null and void",
+      "why_relevant": "The operative provision. It avoids the beneficial gift taken by an attesting witness or that witness's spouse, preserves the witness's competence to prove the will, and carves out charges and directions for the payment of debts. Every limb of the advice turns on it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1840; the corpus records no amendment event for this section, so the text read is the text in force at 2020-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M073-002",
+      "section_id": "7-1840/s10",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "10",
+      "subsection": null,
+      "relevant_excerpt": "If any person who shall attest the execution of any will, testament, or codicil shall at the time of the execution thereof, or at any time afterwards, be incompetent to be admitted a witness to prove the execution thereof, such will, testament, or codicil shall not on that account be invalid.",
+      "why_relevant": "Fixes the first half of the answer: the will itself is not struck down because of a defect in an attesting witness. Without it the advice could wrongly be that the whole will fails.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1840; no amendment event recorded in the corpus, so the text applies at 2020-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M073-003",
+      "section_id": "7-1840/s12",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "12",
+      "subsection": null,
+      "relevant_excerpt": "any creditor, or the wife or husband of any creditor whose debt is so charged, shall attest the execution of such will, testament, or codicil, such creditor, notwithstanding such charge, shall be admitted a witness to prove the execution of such will, testament, or codicil, or to prove the validity or invalidity thereof.",
+      "why_relevant": "The added facts make the proposed witness both a devisee and a creditor whose debt is charged on the estate. Section 12 completes the exception already carved out in section 11 for charges and directions for the payment of debts: the charged debt survives the attestation and the creditor remains a competent witness.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1840; no amendment event recorded in the corpus, so the text applies at 2020-04.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording and temporal note confirmed verbatim against 7-1840/s12, but the role is overstated: the charge-for-debt exception is written into s.11 itself and s.12 adds only the attesting creditor's competence, so s.12 moves from indispensable to supporting."
+    },
+    {
+      "provision_id": "PROV-M073-004",
+      "section_id": "7-1840/s13",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "nor shall any executor or executrix, by reason of his or her attesting such will, forfeit the recompense or commission for his or her trouble payable by law, custom, or practice.",
+      "why_relevant": "The proposed witness is also named executor. Section 13 shows that the executorship and the commission attached to it are not lost by attesting, so the loss is confined to the beneficial gift.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1840; no amendment event recorded in the corpus, so the text applies at 2020-04.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim, but it quotes only the second limb of s.13 (no forfeiture of recompense or commission); claim CL-M073-Q01-005 also relies on the first limb, which turns on being an executor rather than on the act of attesting."
+    },
+    {
+      "provision_id": "PROV-M073-005",
+      "section_id": "7-1840/s4",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "4",
+      "subsection": "2",
+      "relevant_excerpt": "The testator shall - (a) sign; and (b) affix his left or right thumb impression, at the foot or end of the will, testament or codicil referred to in subsection (1), before a notary public and two witnesses who shall be present at the same time",
+      "why_relevant": "Context for why two attesting witnesses are needed at all and why the notary is involved. Background only, because the corpus text is the post-2022 wording.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus text carries the substitution made by the Prevention of Frauds (Amendment) Act No. 30 of 2022 s.3, which is after the matter date of 2020-04. The April 2020 wording is not in the corpus, so this provision is not indispensable and no claim rests on its detail.",
+      "verification_status": "unresolved",
+      "verifier_note": "The corpus body of 7-1840/s4 carries the substitution made by Act No. 30 of 2022 s.3 and the April 2020 wording is not in the corpus, so the section's content at the matter reference date cannot be checked; it is correctly confined to background and no claim rests on it."
+    },
+    {
+      "provision_id": "PROV-M073-006",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "8",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument to which at least two witnesses have not subscribed their signatures in letters.",
+      "why_relevant": "The notary's own duty: two subscribing witnesses are required, so the testator must find a second person in any event and there is room to choose two disinterested witnesses instead of the beneficiary.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 as a whole was amended in 2011, 2022 and 2024, but neither the Notaries (Amendment) Act No. 31 of 2022 s.16 nor the Notaries (Amendment) Act No. 6 of 2024 s.3 touches rule (8), so the corpus text of rule (8) is the text in force at 2020-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M073-007",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "12",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+      "why_relevant": "Sets out how the witnesses must sign, which is the mechanical duty engaged when the client proposes a particular person as a witness.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (12) is not amended by the Notaries (Amendment) Act No. 31 of 2022 s.16 or the Notaries (Amendment) Act No. 6 of 2024 s.3, so the corpus text is the text in force at 2020-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M073-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The consequence of a beneficiary attesting a will is settled expressly by the Prevention of Frauds Ordinance sections 10 to 13: section 11 avoids the gift to the attesting witness and to that witness's spouse while excepting charges for debts, section 10 preserves the will, section 12 preserves a charged debt owed to an attesting creditor, and section 13 preserves an executor's commission. The notary's own duties as to witnesses are in the Notaries Ordinance s.31. No judicial authority or Roman-Dutch common law rule is needed for a complete answer on these facts.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M073-Q01-01",
+          "issue": "Whether a will is invalid because one of its two attesting witnesses is a beneficiary named in it.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M073-Q01-02",
+          "issue": "Whether the beneficial devise and legacy given by the will to the attesting witness, and to the attesting witness's spouse, remain effective.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M073-Q01-03",
+          "issue": "Whether a debt owed by the testator to the proposed witness and charged on the estate, and the witness's appointment as executor with a commission, are affected by his attesting the will.",
+          "status": "disputed"
+        },
+        {
+          "issue_id": "ISS-M073-Q01-04",
+          "issue": "What the attesting notary should accordingly advise the testator about the choice of attesting witnesses.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M073-001",
+        "PROV-M073-002"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M073-003",
+        "PROV-M073-004",
+        "PROV-M073-006",
+        "PROV-M073-007"
+      ],
+      "background_provision_ids": [
+        "PROV-M073-005"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Two necessary linked steps, corrected by the verifier from three: the avoidance under section 11 of the beneficial devise to the attesting witness and of the legacy to his wife, and the preservation of the will itself under section 10. Section 12 was demoted because the charge-for-debt exception is written into section 11 itself and section 12 only confirms the attesting creditor's competence; removing section 12, like removing sections 13 and 31, would not change the conclusion.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M073-002",
+          "to_provision_id": "PROV-M073-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M073-003",
+          "to_provision_id": "PROV-M073-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M073-004",
+          "to_provision_id": "PROV-M073-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M073-006",
+          "to_provision_id": "PROV-M073-007",
+          "relationship": "jointly_required"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "The testator of a Will wants one of the beneficiaries in his Will to sign as an attesting witness of the Will.",
+        "enriched_background": "Mr. Ariyaratne Peiris, a retired schoolmaster aged 76, of No. 27, Hospital Road, Kalutara, is of sound mind and has instructed his notary in March 2020 to draw and attest his last will. The will bequeaths his house and premises at No. 27, Hospital Road, Kalutara to his nephew, Mr. Sunil Peiris of Panadura, and leaves a legacy of Rs. 500,000 to Mrs. Nilanthi Peiris, who is the wife of Sunil Peiris. It also directs that the estate be charged with, and that the estate pay, a sum of Rs. 400,000 which the testator owes to Sunil Peiris on a promissory note dated 4 February 2019, and it appoints Sunil Peiris as executor with the usual commission. The testator now tells the notary that he wants Sunil Peiris to sign the will as one of the two attesting witnesses, the other being Mr. Wimalasena, a neighbour who takes nothing under the will. The testator says he is willing to call in any other person the notary suggests, and asks the notary to advise him.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M073-Q01-001",
+            "fact": "The testator is Mr. Ariyaratne Peiris, a retired schoolmaster aged 76, of No. 27, Hospital Road, Kalutara, of sound mind, instructing his notary in March 2020.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the missing party identity and fixes the instructions before the April 2020 matter date; carries no legal weight of its own.",
+            "activates_provision_ids": [],
+            "counterfactual_effect": "None. Changing the name, age or town would not change any statutory consequence.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M073-Q01-002",
+            "fact": "The beneficiary whom the testator wants to sign as an attesting witness is his nephew, Mr. Sunil Peiris of Panadura, and the will bequeaths to him the testator's house and premises at No. 27, Hospital Road, Kalutara.",
+            "origin": "synthetic_decisive",
+            "reason": "Makes concrete that the proposed witness takes a beneficial devise of immovable property under the same will, which is the condition on which the avoidance operates.",
+            "activates_provision_ids": [
+              "PROV-M073-001"
+            ],
+            "counterfactual_effect": "If the proposed witness took nothing under the will, nothing would be avoided and the notary could simply accept him as a witness.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M073-Q01-003",
+            "fact": "The will also leaves a legacy of Rs. 500,000 to Mrs. Nilanthi Peiris, who is the wife of Sunil Peiris.",
+            "origin": "synthetic_decisive",
+            "reason": "Engages the spouse limb of the avoidance, so the loss is not confined to the witness himself.",
+            "activates_provision_ids": [
+              "PROV-M073-001"
+            ],
+            "counterfactual_effect": "If the witness were unmarried or his wife took nothing, the Rs. 500,000 legacy would stand and only the devise of the house would be avoided.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M073-Q01-004",
+            "fact": "The will directs that the estate be charged with, and that the estate pay, a sum of Rs. 400,000 which the testator owes to Sunil Peiris on a promissory note dated 4 February 2019.",
+            "origin": "synthetic_decisive",
+            "reason": "Brings in the express exception for charges and directions for the payment of debts and the creditor's competence as a witness, which separates the surviving entitlement from the avoided one.",
+            "activates_provision_ids": [
+              "PROV-M073-001",
+              "PROV-M073-003"
+            ],
+            "counterfactual_effect": "Without the charged debt, everything the proposed witness took under the will would be avoided and nothing would be left in his favour.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M073-Q01-005",
+            "fact": "The will appoints Sunil Peiris as its executor and provides for the usual executor's commission.",
+            "origin": "synthetic_decisive",
+            "reason": "Tests whether attesting also costs the proposed witness his office and his commission, which is a distinct statutory question from the avoidance of the gift.",
+            "activates_provision_ids": [
+              "PROV-M073-004"
+            ],
+            "counterfactual_effect": "If a stranger were appointed executor, the commission point would not arise and the advice would be confined to the avoided gifts.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M073-Q01-006",
+            "fact": "The second attesting witness is to be Mr. Wimalasena, a neighbour of the testator who takes nothing under the will, and the testator is willing to call in another person if the notary advises it.",
+            "origin": "synthetic_neutral",
+            "reason": "Fixes that the second witness is disinterested and that a substitute witness is practically available, so the notary's advice has something to bite on.",
+            "activates_provision_ids": [
+              "PROV-M073-006",
+              "PROV-M073-007"
+            ],
+            "counterfactual_effect": "If the second witness were also a beneficiary, the gift to that second witness would be avoided as well; if no substitute witness were available the advice would have to address that practical difficulty.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "The testator wishes his nephew, who takes a devise of a house under the will and whose wife takes a legacy under it, to sign the will as one of the two attesting witnesses. The notary must advise the client on the effect of that course on the validity of the will, on what the nephew and his wife would take, on the debt charged in the nephew's favour and on his office as executor, and on what the testator should do instead.",
+        "rule": "Prevention of Frauds Ordinance s.11 provides that where a person attests the execution of a will and any beneficial devise, legacy, estate, interest, gift, disposition or appointment of movable or immovable property is thereby given to that attesting witness or to that witness's wife or husband, the gift is utterly null and void so far as concerns the attesting witness, the spouse and any person claiming under either, while the attesting witness is still admitted as a witness to prove the execution or the validity of the will. Charges and directions for the payment of debts are expressly excepted from that avoidance, and Prevention of Frauds Ordinance s.12 confirms that a creditor whose debt is so charged is admitted as a witness notwithstanding the charge. Prevention of Frauds Ordinance s.10 provides that a will is not invalid merely because an attesting witness is, at the execution or afterwards, incompetent to be admitted a witness to prove it. Prevention of Frauds Ordinance s.13 provides that attesting does not make an executor incompetent as a witness and does not forfeit the recompense or commission payable for his trouble. Notaries Ordinance s.31(8) forbids the notary to attest an instrument to which at least two witnesses have not subscribed their signatures in letters, and Notaries Ordinance s.31(12) requires the executant and the witnesses to sign in the presence of the notary and of one another.",
+        "application": "The nephew is a person to whom a beneficial devise of immovable property, the house and premises at Kalutara, is given by the very will he is asked to attest, so under s.11 that devise would be utterly null and void so far as concerns him and anyone claiming under him. The legacy of Rs. 500,000 to his wife falls within the same provision, which reaches a gift to the wife or husband of the attesting witness, and would equally be void. The will would not itself fail: s.10 keeps the will valid despite any incompetency in an attesting witness, and s.11 in terms admits the attesting witness to prove the execution and validity of the will, so the second witness and the notary's attestation would still carry it. The direction that the estate be charged with and pay the Rs. 400,000 owed to the nephew on the promissory note is a charge and a direction for the payment of a debt, which s.11 expressly excepts from the avoidance, and s.12 confirms that he is admitted as a witness notwithstanding that charge, so that entitlement would survive. His appointment as executor and the commission for his trouble are preserved by s.13 and would not be forfeited by his attesting. On these facts the nephew would therefore keep only the charged debt and the executorship and would lose the house, and his wife would lose her legacy, for no gain; and since Notaries Ordinance s.31(8) requires two subscribing witnesses in any event and the testator is willing to call in another person, a disinterested witness to sign alongside the neighbour is readily available.",
+        "conclusion": "The notary should advise the testator not to have the nephew sign as an attesting witness. If he does so the will remains valid and the notary may still attest it, but the devise of the house to the nephew and the legacy to the nephew's wife would be utterly null and void so far as they are concerned, while the charged debt of Rs. 400,000 and the executorship with its commission would survive. The safe course, which the notary should press on the client, is to have the will attested by two witnesses who take no benefit under it, such as the neighbour and one other disinterested person of good repute, so that every disposition the testator intends takes effect. Who is in fact available to sign is a matter the notary must satisfy himself about at the execution."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M073-Q01-001",
+          "claim_text": "Where a person attests the execution of a will, a beneficial devise, legacy, estate, interest, gift, disposition or appointment of movable or immovable property given by that will to the attesting witness is utterly null and void so far as concerns that witness and any person claiming under him.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M073-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M073-Q01-002",
+          "claim_text": "The same avoidance applies to a gift given by the will to the wife or husband of the attesting witness.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M073-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M073-Q01-003",
+          "claim_text": "The will itself is not invalidated by the fact that an attesting witness is or becomes incompetent to be admitted a witness to prove its execution, and the attesting witness remains admissible to prove the execution or the validity of the will.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M073-002",
+            "PROV-M073-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M073-Q01-004",
+          "claim_text": "Charges and directions for the payment of debts are excepted from that avoidance, and a creditor whose debt is so charged is admitted as a witness notwithstanding the charge.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M073-001",
+            "PROV-M073-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M073-Q01-005",
+          "claim_text": "An executor is not rendered incompetent as a witness by attesting the will, and does not thereby forfeit the recompense or commission payable for his trouble.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M073-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M073-Q01-006",
+          "claim_text": "The notary may not attest an instrument to which at least two witnesses have not subscribed their signatures in letters, and the executant and the witnesses must sign in the presence of the notary and of one another.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M073-006",
+            "PROV-M073-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M073-Q01-007",
+          "claim_text": "If the nephew attests the will, the devise to him of the house and premises at Kalutara is avoided so far as concerns him and anyone claiming under him.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M073-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M073-Q01-002"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M073-Q01-008",
+          "claim_text": "The legacy of Rs. 500,000 to the nephew's wife is likewise avoided if the nephew attests the will, because she is the wife of the attesting witness.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M073-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M073-Q01-003"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M073-Q01-009",
+          "claim_text": "The will would still be valid and the notary could still attest it, with the neighbour as the second subscribing witness.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M073-002",
+            "PROV-M073-006"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M073-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M073-Q01-010",
+          "claim_text": "The direction charging the estate with the Rs. 400,000 owed to the nephew on the promissory note survives his attestation, and he remains a competent witness notwithstanding that charge.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M073-001",
+            "PROV-M073-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M073-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M073-Q01-011",
+          "claim_text": "The nephew's appointment as executor and the commission for his trouble are not lost by his attesting the will.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M073-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M073-Q01-005"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M073-Q01-012",
+          "claim_text": "The notary should advise the testator that the nephew should not sign as an attesting witness, and that the will should be attested by two witnesses who take no benefit under it, so that the devise to the nephew and the legacy to his wife take effect.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M073-001",
+            "PROV-M073-006"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M073-Q01-002",
+            "FACT-M073-Q01-003",
+            "FACT-M073-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M073-Q01-013",
+          "claim_text": "If the testator nevertheless insists, the notary may attest the will, which remains valid, but the nephew and his wife lose the devise and the legacy while the charged debt and the executorship with its commission survive.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M073-002",
+            "PROV-M073-001",
+            "PROV-M073-003",
+            "PROV-M073-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M073-Q01-002",
+            "FACT-M073-Q01-003",
+            "FACT-M073-Q01-004",
+            "FACT-M073-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Every provision the answer turns on was confirmed verbatim and the answer itself is sound, but two matters need a lawyer before this becomes gold. First, the enrichment adds a charged debt owed to the proposed witness (FACT-M073-Q01-004) and his appointment as executor (FACT-M073-Q01-005), which introduce two statutory issues under sections 12 and 13 that the original three-mark question did not contain; the verifier reads that as widening the legal issue rather than filling in missing facts. Second, rule (10) of Notaries Ordinance s.31 was in force in April 2020 and was repealed only by Act No. 6 of 2024 s.3(4), and its text is absent from the corpus, so it cannot be excluded as a duty bearing on the choice of attesting witnesses.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

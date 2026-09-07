@@ -1,0 +1,408 @@
+{
+ "benchmark_matter_id": "M058",
+ "run_id": "statutory-qa-v1",
+ "produced_by": {
+  "research_agent": "researcher-M058",
+  "research_model": "claude-opus-5 (Claude Code subagent)",
+  "research_completed": "2026-09-04T22:38:59Z",
+  "verification_agent": null,
+  "verification_model": null,
+  "verification_completed": null
+ },
+ "matter_reference_date": "2021-10",
+ "matter_reference_date_basis": "matter_reference_date in candidates/matters/M058.json, taken from the OCTOBER 2021 exam session.",
+ "corpus_gaps": [
+  "No stamp duty rate is in the corpus. Stamp Duty (Special Provisions) Act No. 12 of 2006 s.3(1) charges duty 'at such rate as the Minister may determine by Order published in the Gazette', and the Gazette Order fixing the rate for a bond or mortgage under s.4(g) has not been extracted. Without it the numerical stamp duty on a Rs.2,000,000 mortgage bond cannot be computed from the corpus.",
+  "No exemption Order made under Stamp Duty (Special Provisions) Act s.5 is in the corpus, so it cannot be checked whether a housing loan from the National Savings Bank, or a bank of that class, attracts an exemption or a concessionary rate at October 2021.",
+  "The National Savings Bank Act No. 30 of 1971 is not in the corpus. Any statutory stamp duty exemption or concession attaching to that bank's instruments cannot be sourced. (The corpus does hold Bank of Ceylon Ordinance, People's Bank Act and State Mortgage and Investment Bank Law, but none of these governs the National Savings Bank.)",
+  "Stamp Duty Act No. 43 of 1982 is in the corpus as sections only; its Schedule A of rates is not extracted, so the pre-2006 rate table is also unavailable.",
+  "No regulation prescribing a 'prescribed bank' under Stamp Duty (Special Provisions) Act s.8(2), and no form of the bank certificate, is in the corpus."
+ ],
+ "provisions": [
+  {
+   "provision_id": "PROV-M058-001",
+   "section_id": "12-2006/s3",
+   "act_id": "12-2006",
+   "formal_title": "Stamp Duty (Special Provisions) Act",
+   "number_and_year": "No. 12 of 2006",
+   "section": "3",
+   "subsection": "(1)",
+   "relevant_excerpt": "there shall be charged a duty (hereinafter to be called \"stamp duty\") at such rate as the Minister may determine by Order published in the Gazette on every \"specified instrument\"- (a) executed, drawn or presented in Sri Lanka",
+   "why_relevant": "This is the charging section for the stamp duty payable on a mortgage bond executed in Sri Lanka in 2021. It also shows why the calculation cannot be completed on the corpus alone: the rate is not in the Act but in a Ministerial Order published in the Gazette, which is not in the corpus.",
+   "applicable_to_matter_date": true,
+   "temporal_note": "In force from 2006, no amendment event recorded on this section; in force at 2021-10. The rate Order made under it may have been varied before October 2021, and the corpus does not record those Orders.",
+   "verification_status": "proposed",
+   "verifier_note": null
+  },
+  {
+   "provision_id": "PROV-M058-002",
+   "section_id": "12-2006/s4",
+   "act_id": "12-2006",
+   "formal_title": "Stamp Duty (Special Provisions) Act",
+   "number_and_year": "No. 12 of 2006",
+   "section": "4",
+   "subsection": "(g)",
+   "relevant_excerpt": "(g) a bond or mortgage for any definite and certain sum of money and affecting any property;",
+   "why_relevant": "Defines 'specified instrument' for section 3 and brings a mortgage bond for a definite sum, affecting the Rajagiriya land, within the charge. Without this paragraph the charging section does not reach the instrument at all.",
+   "applicable_to_matter_date": true,
+   "temporal_note": "In force from 2006, no amendment event recorded on this section; in force at 2021-10.",
+   "verification_status": "proposed",
+   "verifier_note": null
+  },
+  {
+   "provision_id": "PROV-M058-003",
+   "section_id": "12-2006/s6",
+   "act_id": "12-2006",
+   "formal_title": "Stamp Duty (Special Provisions) Act",
+   "number_and_year": "No. 12 of 2006",
+   "section": "6",
+   "subsection": "(e)",
+   "relevant_excerpt": "(e) in all other cases, by the person drawing, making or executing such instrument.",
+   "why_relevant": "A mortgage is not one of the listed cases in paragraphs (a) to (ddd), so the residual paragraph (e) applies and the duty falls on the mortgagor who executes the bond, subject to any agreement to the contrary with the lender.",
+   "applicable_to_matter_date": true,
+   "temporal_note": "Section 6 was amended by Act No. 10 of 2008, before the matter date; the consolidated text in the corpus is the text in force at 2021-10.",
+   "verification_status": "proposed",
+   "verifier_note": null
+  },
+  {
+   "provision_id": "PROV-M058-004",
+   "section_id": "12-2006/s8",
+   "act_id": "12-2006",
+   "formal_title": "Stamp Duty (Special Provisions) Act",
+   "number_and_year": "No. 12 of 2006",
+   "section": "8",
+   "subsection": "(2)",
+   "relevant_excerpt": "Stamp duty payable on any specified instrument relating to a mortgage or lease of any immovable property may be paid, prior to, or at the time of, the execution of the specified instrument, to a prescribed bank.",
+   "why_relevant": "Sets the manner and time of payment for a mortgage of immovable property: payment to a prescribed bank before or at execution, with a bank certificate affixed to the instrument. Relevant to how the calculated sum would be paid, not to the amount.",
+   "applicable_to_matter_date": true,
+   "temporal_note": "Section 8 was substituted by Act No. 10 of 2008, before the matter date; the consolidated text in the corpus is the text in force at 2021-10.",
+   "verification_status": "proposed",
+   "verifier_note": null
+  },
+  {
+   "provision_id": "PROV-M058-005",
+   "section_id": "12-2006/s5",
+   "act_id": "12-2006",
+   "formal_title": "Stamp Duty (Special Provisions) Act",
+   "number_and_year": "No. 12 of 2006",
+   "section": "5",
+   "subsection": null,
+   "relevant_excerpt": "the Minister may from time to time by Order published in the Gazette specify the instruments, which shall be exempt from the payment of stamp duty.",
+   "why_relevant": "Exemptions are also left to Gazette Order. Whether a mortgage bond securing a housing loan from the National Savings Bank was exempt or concessionary in October 2021 therefore cannot be settled on the corpus, which is a second reason the figure cannot be produced.",
+   "applicable_to_matter_date": true,
+   "temporal_note": "In force from 2006, no amendment event recorded; in force at 2021-10. The exemption Orders themselves are not in the corpus.",
+   "verification_status": "proposed",
+   "verifier_note": null
+  },
+  {
+   "provision_id": "PROV-M058-006",
+   "section_id": "12-2006/s13",
+   "act_id": "12-2006",
+   "formal_title": "Stamp Duty (Special Provisions) Act",
+   "number_and_year": "No. 12 of 2006",
+   "section": "13",
+   "subsection": null,
+   "relevant_excerpt": "the provisions of the Stamp Duty Act, No. 43 of 1982, relating to the Imposition of Stamp Duty (other than any instrument relating to the transfer of immovable property, the transfer of motor vehicles or documents filed in Court), Exemptions and any other provision in the aforesaid Act, shall, in so far as the same are inconsistent with the provisions of this Act, have no operation",
+   "why_relevant": "Explains why the 1982 Act is not the operative charging regime for a mortgage bond in 2021. The carve-out preserves the 1982 Act only for transfers of immovable property, motor vehicle transfers and court documents, none of which is a mortgage.",
+   "applicable_to_matter_date": true,
+   "temporal_note": "In force from 2006, no amendment event recorded; in force at 2021-10.",
+   "verification_status": "proposed",
+   "verifier_note": null
+  },
+  {
+   "provision_id": "PROV-M058-007",
+   "section_id": "12-2006/s9",
+   "act_id": "12-2006",
+   "formal_title": "Stamp Duty (Special Provisions) Act",
+   "number_and_year": "No. 12 of 2006",
+   "section": "9",
+   "subsection": null,
+   "relevant_excerpt": "All stamp duty payable to a Provincial Council in respect of documents and instruments referred to in List I of the Ninth Schedule to the Constitution, shall be paid to the respective Provincial Council within whose limits the instrument was executed or the property situated as the case may be",
+   "why_relevant": "Directs where duty is paid when the instrument falls within the provincial list. Recorded because the land is at Rajagiriya, in the Western Province, so a verifier will want to know whether the provincial or the central regime collects the duty on this bond.",
+   "applicable_to_matter_date": true,
+   "temporal_note": "In force from 2006, no amendment event recorded; in force at 2021-10.",
+   "verification_status": "proposed",
+   "verifier_note": null
+  },
+  {
+   "provision_id": "PROV-M058-008",
+   "section_id": "6-1990/s37",
+   "act_id": "6-1990",
+   "formal_title": "Western Province Financial Statute",
+   "number_and_year": "No. 6 of 1990",
+   "section": "37",
+   "subsection": null,
+   "relevant_excerpt": "There shall be charged on- (a) every instrument relating to a transfer of situated in the immovable property Western Province; (b) every document presented or filed, in proceedings instituted in any Court of law established by law, in the Western Province of Sri Lanka; (c) every transfer of a motor vehicle effected in Western Province. a stamp duty at the prescribed rate.",
+   "why_relevant": "The Western Province charging provision reaches only transfers of immovable property, court documents and motor vehicle transfers. A mortgage bond is none of these, so the provincial statute does not charge this instrument and the central Act of 2006 governs. The provincial rate is likewise only 'the prescribed rate' and is not in the corpus.",
+   "applicable_to_matter_date": true,
+   "temporal_note": "In force from 1990, no amendment event recorded on this section; in force at 2021-10.",
+   "verification_status": "proposed",
+   "verifier_note": null
+  },
+  {
+   "provision_id": "PROV-M058-009",
+   "section_id": "43-1982/s16",
+   "act_id": "43-1982",
+   "formal_title": "Stamp Duty Act",
+   "number_and_year": "No. 43 of 1982",
+   "section": "16",
+   "subsection": null,
+   "relevant_excerpt": "A bond or mortgage for the payment or repayment of money to be lent, advanced, or paid shall be charged, where the total amount secured or to be ultimately recoverable is in any way limited, with the same stamp duty as on a bond or mortgage for the amount so limited.",
+   "why_relevant": "Background only. It shows the classical base of assessment for a mortgage, the amount secured rather than the value of the land, which is why the Rs.14,000,000 purchase price of the Rajagiriya land is not the base. Its operative force in 2021 is displaced by s.13 of the 2006 Act so far as it is inconsistent, and the Schedule of rates it depends on is not in the corpus.",
+   "applicable_to_matter_date": true,
+   "temporal_note": "In force from 1982. Its imposition provisions are displaced for mortgages by Stamp Duty (Special Provisions) Act s.13 from 2006, so it is not treated as an operative rule at 2021-10.",
+   "verification_status": "proposed",
+   "verifier_note": null
+  }
+ ],
+ "questions": [
+  {
+   "benchmark_question_id": "M058-Q03",
+   "authority_requirement": "statute_only",
+   "authority_requirement_reason": "Stamp duty is wholly a creature of statute and subsidiary legislation made under it. No judicial authority or Roman-Dutch doctrine is needed to compute the duty on a mortgage bond. The answer is nevertheless not deliverable from the frozen corpus, because the operative rate is fixed by Ministerial Order in the Gazette under s.3(1) of the Stamp Duty (Special Provisions) Act and no such Order is in the corpus.",
+   "legal_issues": [
+    {
+     "issue_id": "ISS-M058-Q03-01",
+     "issue": "Which enactment charges stamp duty on a mortgage bond executed in Sri Lanka in October 2021, the Stamp Duty Act No. 43 of 1982, the Stamp Duty (Special Provisions) Act No. 12 of 2006 or the Western Province Financial Statute No. 6 of 1990.",
+     "status": "proposed"
+    },
+    {
+     "issue_id": "ISS-M058-Q03-02",
+     "issue": "Whether a mortgage bond securing a loan of Rs.2,000,000 over the Rajagiriya land is a 'specified instrument' chargeable with stamp duty.",
+     "status": "proposed"
+    },
+    {
+     "issue_id": "ISS-M058-Q03-03",
+     "issue": "What sum is taken as the base of assessment, the Rs.2,000,000 secured by the bond or the Rs.14,000,000 paid for the land in 2001.",
+     "status": "proposed"
+    },
+    {
+     "issue_id": "ISS-M058-Q03-04",
+     "issue": "What rate applies to that base at October 2021, and whether any exemption attaches to a housing loan from the National Savings Bank.",
+     "status": "proposed"
+    },
+    {
+     "issue_id": "ISS-M058-Q03-05",
+     "issue": "Who is liable to pay the duty and how it is to be paid on a mortgage of immovable property.",
+     "status": "proposed"
+    }
+   ],
+   "indispensable_provision_ids": [
+    "PROV-M058-001",
+    "PROV-M058-002"
+   ],
+   "supporting_provision_ids": [
+    "PROV-M058-003",
+    "PROV-M058-004",
+    "PROV-M058-005",
+    "PROV-M058-006",
+    "PROV-M058-007",
+    "PROV-M058-008"
+   ],
+   "background_provision_ids": [
+    "PROV-M058-009"
+   ],
+   "legal_hop_count": 2,
+   "hop_count_basis": "Two indispensable steps: the charging provision, s.3(1) of the 2006 Act, plus the definitional provision, s.4(g), which brings a bond or mortgage within 'specified instrument'. A third step, the Gazette rate Order, is required to reach a figure but is not in the corpus and is therefore not counted as a corpus hop.",
+   "reasoning_edges": [
+    {
+     "from_provision_id": "PROV-M058-002",
+     "to_provision_id": "PROV-M058-001",
+     "relationship": "defines"
+    },
+    {
+     "from_provision_id": "PROV-M058-005",
+     "to_provision_id": "PROV-M058-001",
+     "relationship": "excepts"
+    },
+    {
+     "from_provision_id": "PROV-M058-001",
+     "to_provision_id": "PROV-M058-003",
+     "relationship": "jointly_required"
+    },
+    {
+     "from_provision_id": "PROV-M058-001",
+     "to_provision_id": "PROV-M058-004",
+     "relationship": "procedurally_requires"
+    },
+    {
+     "from_provision_id": "PROV-M058-001",
+     "to_provision_id": "PROV-M058-007",
+     "relationship": "procedurally_requires"
+    },
+    {
+     "from_provision_id": "PROV-M058-006",
+     "to_provision_id": "PROV-M058-009",
+     "relationship": "qualifies"
+    },
+    {
+     "from_provision_id": "PROV-M058-008",
+     "to_provision_id": "PROV-M058-001",
+     "relationship": "qualifies"
+    }
+   ],
+   "enrichment": {
+    "applied": false,
+    "original_background": "Lihini Manapitiya, a lecturer of AVI University purchased a land situated in Rajagiriya in 2001 for Rs.14,000,000/-. She wishes to obtain a loan of Rupees Two Million (Rs.2,000,000/=) from National Savings Bank to build a house.",
+    "enriched_background": null,
+    "added_facts": []
+   },
+   "gold_answer_draft": {
+    "issue": "What stamp duty is payable on the mortgage bond by which Lihini mortgages her Rajagiriya land to the National Savings Bank to secure a loan of Rs.2,000,000, and can that figure be computed from the frozen corpus.",
+    "rule": "Stamp duty on a mortgage bond executed in Sri Lanka in 2021 is charged by the Stamp Duty (Special Provisions) Act No. 12 of 2006. Section 3(1) charges duty on every 'specified instrument' executed, drawn or presented in Sri Lanka at such rate as the Minister may determine by Order published in the Gazette, and section 3(2) allows different rates for different classes of instrument. Section 4(g) makes a bond or mortgage for any definite and certain sum of money and affecting any property a specified instrument. Section 13 provides that the imposition and exemption provisions of the Stamp Duty Act No. 43 of 1982 have no operation so far as they are inconsistent with the 2006 Act, save for transfers of immovable property, transfers of motor vehicles and documents filed in court, so the 1982 Act does not govern a mortgage. The Western Province Financial Statute No. 6 of 1990 s.37 charges provincial stamp duty only on transfers of immovable property in the Province, court documents and motor vehicle transfers, and so does not reach a mortgage bond either. Under s.6(e) of the 2006 Act, a mortgage falling in none of the listed cases, the duty is payable by the person drawing, making or executing the instrument, unless there is an agreement to the contrary. Section 8(2) allows the duty on a specified instrument relating to a mortgage of immovable property to be paid to a prescribed bank before or at execution, or within seven days afterwards where payment at execution was prevented by reasons beyond the payer's control, the bank then issuing a certificate to be affixed to the instrument. Exemptions are likewise made by Gazette Order under s.5. Section 16 of the 1982 Act shows the classical base of assessment for a bond or mortgage, the amount secured or ultimately recoverable where that amount is limited, not the value of the land mortgaged.",
+    "application": "Lihini will execute a bond mortgaging the Rajagiriya land to secure a definite and certain sum of Rs.2,000,000, so the instrument is a specified instrument within s.4(g) and is chargeable under s.3(1). The base of assessment is the Rs.2,000,000 secured, not the Rs.14,000,000 she paid for the land in 2001, since the charge on a bond or mortgage runs on the sum secured. As mortgagor she is the person executing the bond, so under s.6(e) the duty is hers unless she and the bank have agreed otherwise, and it may be paid to a prescribed bank at or before execution under s.8(2). The rate to be applied to the Rs.2,000,000 is fixed only by Ministerial Order in the Gazette under s.3(1); no such Order is in the corpus. Nor is any exemption Order under s.5, so it cannot be checked from the corpus whether a housing loan from the National Savings Bank attracts an exemption or a concessionary rate. The National Savings Bank's own constituting Act is also absent.",
+    "conclusion": "Blocked for missing authority. The corpus supports the chargeability of the bond, the base of assessment, the person liable and the manner of payment, but not the arithmetic the question asks for. The rate is delegated to a Gazette Order under s.3(1) of the Stamp Duty (Special Provisions) Act, and neither that Order nor any exemption Order under s.5 is in the corpus, so no figure is proposed and no rate is quoted from memory."
+   },
+   "answer_claims": [
+    {
+     "claim_id": "CL-M058-Q03-001",
+     "claim_text": "Stamp duty is charged on every specified instrument executed, drawn or presented in Sri Lanka at such rate as the Minister may determine by Order published in the Gazette (Stamp Duty (Special Provisions) Act s.3(1)).",
+     "claim_type": "rule",
+     "supporting_provision_ids": [
+      "PROV-M058-001"
+     ],
+     "supporting_fact_ids": [],
+     "support_strength": "direct",
+     "verification_status": "proposed"
+    },
+    {
+     "claim_id": "CL-M058-Q03-002",
+     "claim_text": "A bond or mortgage for any definite and certain sum of money and affecting any property is a specified instrument (Stamp Duty (Special Provisions) Act s.4(g)).",
+     "claim_type": "rule",
+     "supporting_provision_ids": [
+      "PROV-M058-002"
+     ],
+     "supporting_fact_ids": [],
+     "support_strength": "direct",
+     "verification_status": "proposed"
+    },
+    {
+     "claim_id": "CL-M058-Q03-003",
+     "claim_text": "The imposition and exemption provisions of the Stamp Duty Act No. 43 of 1982 have no operation so far as they are inconsistent with the 2006 Act, except for transfers of immovable property, transfers of motor vehicles and documents filed in court, so the 1982 Act is not the charging regime for a mortgage bond in 2021 (Stamp Duty (Special Provisions) Act s.13).",
+     "claim_type": "rule",
+     "supporting_provision_ids": [
+      "PROV-M058-006",
+      "PROV-M058-009"
+     ],
+     "supporting_fact_ids": [],
+     "support_strength": "combined",
+     "verification_status": "proposed"
+    },
+    {
+     "claim_id": "CL-M058-Q03-004",
+     "claim_text": "The Western Province charge extends only to instruments transferring immovable property in the Province, documents filed in court in the Province and transfers of motor vehicles, and so does not reach a mortgage bond (Western Province Financial Statute s.37).",
+     "claim_type": "rule",
+     "supporting_provision_ids": [
+      "PROV-M058-008"
+     ],
+     "supporting_fact_ids": [],
+     "support_strength": "direct",
+     "verification_status": "proposed"
+    },
+    {
+     "claim_id": "CL-M058-Q03-005",
+     "claim_text": "Where the total amount secured by a bond or mortgage is limited, the instrument is charged with the same duty as on a bond or mortgage for the amount so limited, so the base of assessment is the sum secured (Stamp Duty Act No. 43 of 1982 s.16).",
+     "claim_type": "rule",
+     "supporting_provision_ids": [
+      "PROV-M058-009"
+     ],
+     "supporting_fact_ids": [],
+     "support_strength": "direct",
+     "verification_status": "proposed"
+    },
+    {
+     "claim_id": "CL-M058-Q03-006",
+     "claim_text": "In a case not listed in paragraphs (a) to (ddd), the duty is payable by the person drawing, making or executing the instrument unless there is an agreement to the contrary (Stamp Duty (Special Provisions) Act s.6(e)).",
+     "claim_type": "rule",
+     "supporting_provision_ids": [
+      "PROV-M058-003"
+     ],
+     "supporting_fact_ids": [],
+     "support_strength": "direct",
+     "verification_status": "proposed"
+    },
+    {
+     "claim_id": "CL-M058-Q03-007",
+     "claim_text": "Duty on a specified instrument relating to a mortgage of immovable property may be paid to a prescribed bank prior to or at the time of execution, and the bank issues a certificate to be affixed to the instrument (Stamp Duty (Special Provisions) Act s.8(2)).",
+     "claim_type": "rule",
+     "supporting_provision_ids": [
+      "PROV-M058-004"
+     ],
+     "supporting_fact_ids": [],
+     "support_strength": "direct",
+     "verification_status": "proposed"
+    },
+    {
+     "claim_id": "CL-M058-Q03-008",
+     "claim_text": "Exemptions from stamp duty are specified by the Minister from time to time by Order published in the Gazette (Stamp Duty (Special Provisions) Act s.5).",
+     "claim_type": "rule",
+     "supporting_provision_ids": [
+      "PROV-M058-005"
+     ],
+     "supporting_fact_ids": [],
+     "support_strength": "direct",
+     "verification_status": "proposed"
+    },
+    {
+     "claim_id": "CL-M058-Q03-009",
+     "claim_text": "The bond Lihini will execute mortgages her Rajagiriya land to secure a definite sum of Rs.2,000,000 and is therefore a specified instrument chargeable with stamp duty.",
+     "claim_type": "application",
+     "supporting_provision_ids": [
+      "PROV-M058-001",
+      "PROV-M058-002"
+     ],
+     "supporting_fact_ids": [
+      "BG-1",
+      "BG-2"
+     ],
+     "support_strength": "combined",
+     "verification_status": "proposed"
+    },
+    {
+     "claim_id": "CL-M058-Q03-010",
+     "claim_text": "The base of assessment is the Rs.2,000,000 secured by the bond, not the Rs.14,000,000 paid for the land in 2001.",
+     "claim_type": "application",
+     "supporting_provision_ids": [
+      "PROV-M058-002",
+      "PROV-M058-009"
+     ],
+     "supporting_fact_ids": [
+      "BG-1",
+      "BG-2"
+     ],
+     "support_strength": "combined",
+     "verification_status": "proposed"
+    },
+    {
+     "claim_id": "CL-M058-Q03-011",
+     "claim_text": "As the mortgagor executing the bond, Lihini bears the duty unless she and the National Savings Bank agree otherwise, and it may be paid to a prescribed bank at or before execution.",
+     "claim_type": "application",
+     "supporting_provision_ids": [
+      "PROV-M058-003",
+      "PROV-M058-004"
+     ],
+     "supporting_fact_ids": [
+      "BG-2"
+     ],
+     "support_strength": "combined",
+     "verification_status": "proposed"
+    },
+    {
+     "claim_id": "CL-M058-Q03-012",
+     "claim_text": "The rate to be applied to the Rs.2,000,000, and any exemption for a housing loan from the National Savings Bank, are fixed by Gazette Orders under sections 3(1) and 5 which are not in the corpus, so the duty cannot be computed here.",
+     "claim_type": "conclusion",
+     "supporting_provision_ids": [
+      "PROV-M058-001",
+      "PROV-M058-005"
+     ],
+     "supporting_fact_ids": [],
+     "support_strength": "inferential",
+     "verification_status": "proposed"
+    }
+   ],
+   "research_status": "blocked_missing_authority",
+   "block_reason": "The question asks for a calculated figure. The Stamp Duty (Special Provisions) Act s.3(1) delegates the rate to a Ministerial Order published in the Gazette and s.5 delegates exemptions the same way; neither Order is in the corpus, and the Schedule of rates under the Stamp Duty Act No. 43 of 1982 is not extracted either. The National Savings Bank Act is also absent, so any bank-specific exemption cannot be checked. Quoting a rate from memory is not permitted, so the chargeability, base, liability and manner of payment are proposed but no amount is.",
+   "lawyer_validation_status": "pending"
+  }
+ ]
+}

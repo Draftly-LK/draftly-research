@@ -1,0 +1,803 @@
+{
+  "benchmark_matter_id": "M025",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M025",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:10:24Z",
+    "verification_agent": "verifier-M025",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:22:29Z"
+  },
+  "matter_reference_date": "2024-10",
+  "matter_reference_date_basis": "exam_session OCTOBER 2024 recorded in candidates/matters/M025.json; all deaths and deeds in the scenario fall between 2010 and 2018, so the law in force in October 2024 is also the law in force at each devolution event for the inheritance provisions relied on.",
+  "corpus_gaps": [
+    "The Partition Law No. 21 of 1977 is not in the corpus, so the conclusive effect of the final decree of 25 October 2010 in District Court of Pugoda Partition Case No. 582/P cannot be supported by a corpus provision. The allotment to Gamini Jayasinghe is therefore taken from the background as a given fact rather than derived from statute.",
+    "The corpus has no provision expressly governing an administrator's conveyance of immovable property to the heirs at the close of a testamentary proceeding. Civil Procedure Code ss.531 and 724B are the closest corpus support (identification of heirs and their shares, and discharge on full administration and distribution); the conveyancing step itself is unsupported by an express corpus section.",
+    "Roman-Dutch law, to which Matrimonial Rights and Inheritance Ordinance s.36 defers where the Ordinance is silent, is not in the corpus. It is not needed here because ss.22 to 25 and s.30 cover every devolution in this matter, but a verifier who disagrees with that reading has no corpus text to fall back on.",
+    "Marriage Registration Ordinance and divorce legislation are absent, so the status of Kamala Silva's first marriage (to Thilak) and of Thilak's marriage to Sumana is taken from the background wording alone."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M025-001",
+      "section_id": "15-1876/s21",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "21",
+      "subsection": "(1)",
+      "relevant_excerpt": "Inheritance ab interstate to the immovable property in Sri Lanka of a person deceased shall be governed and regulated by the following provisions of this Ordinance wherever such person may have or have had his actual or matrimonial domicile.",
+      "why_relevant": "The subject matter is immovable property in Sri Lanka (the land and premises bearing Assessment No.45, Colombo Road, Pugoda). This subsection is the gateway provision: it makes Part III of the Ordinance the governing law for every intestate devolution in the chain, irrespective of the domicile of Kasun, Thilak or Sarathi.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section, so the same text governed the deaths in 2013, 2017 and 2018 and is in force at 2024-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M025-002",
+      "section_id": "15-1876/s2",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "this Ordinance shall not apply to Kandyans or Muslims, or to Tamils of the Northern Province who are or may become subject to the Tesawalamai.",
+      "why_relevant": "Fixes the outer limit of the general law of inheritance. Nothing in the background places any of the parties within Kandyan law, Muslim law or the Thesawalamai, so the general law in Part III of this Ordinance applies rather than a special personal law. Recorded as background because the exclusion is not engaged on the facts as given.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M025-003",
+      "section_id": "15-1876/s22",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "22",
+      "subsection": null,
+      "relevant_excerpt": "When any person shall die intestate as to any of his or her property, leaving a spouse surviving, the surviving spouse shall inherit one-half of the property of such person.",
+      "why_relevant": "Governs the share of Sena, the surviving husband of Sarathi, who died intestate on 8 August 2018. It also explains why nothing passes to a spouse out of the estates of Kasun (who died unmarried) and Thilak (no surviving spouse disclosed).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus, so the same text applied at Sarathi's death in 2018 and at 2024-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M025-004",
+      "section_id": "15-1876/s23",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "23",
+      "subsection": null,
+      "relevant_excerpt": "Subject to the right of the surviving spouse in the preceding section mentioned, the right of inheritance is divided in the following order as respects (a) descendants, (b) ascendants, (c) collaterals.",
+      "why_relevant": "Sets the order in which the remaining half (or the whole, where there is no surviving spouse) is taken, and makes clear that the spouse's half under s.22 is carved out first. It is the ordering rule that sends each of the three intestate estates in this matter past the descendant class, which is empty in every case.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M025-005",
+      "section_id": "15-1876/s24",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "24",
+      "subsection": null,
+      "relevant_excerpt": "Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita, but the children or remoter issue of a deceased child take per stirpes or by representation.",
+      "why_relevant": "Governs the devolution of Thilak's half share on his intestate death on 3 March 2017: his surviving children Sunil and Lalith are preferent to all others and take equally per capita. It also shows that Kasun, who predeceased his father in 2013 without issue, leaves nobody to take by representation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus, so the same text applied at Thilak's death in 2017 and at 2024-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M025-006",
+      "section_id": "15-1876/s25",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "25",
+      "subsection": null,
+      "relevant_excerpt": "The children and remoter descendants failing, the inheritance of the deceased goes to his father and mother in case they are both alive; but if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half.",
+      "why_relevant": "The central operative rule. It governs Kasun's estate (no descendants; mother Kamala predeceased in 2011, father Thilak surviving, so Thilak takes half and the half-blood brothers and sisters on the deceased mother's side take the other half) and, on the footing that Namal Silva is Sarathi's father and survives her, the non-spousal half of Sarathi's estate. Its restriction of half-blood siblings to those related through the deceased parent is what excludes Sunil and Lalith, who are related to Kasun through his surviving father.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus, so the same text applied at Kasun's death in 2013, at Sarathi's death in 2018 and at 2024-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and the reading of \"by the side of the deceased parent\" is right, but the excerpt stops before the second sentence of s.25 (\"In case there is no full or half-brother or sister alive at the death of the deceased, the surviving parent inherits the whole, although there may be children or other issue of deceased brothers or sisters\"), which has to be read with the first: it is only because Sarathi and Amal were alive at Kasun's death that Thilak took a half and not the whole."
+    },
+    {
+      "provision_id": "PROV-M025-007",
+      "section_id": "15-1876/s30",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "30",
+      "subsection": null,
+      "relevant_excerpt": "Except when otherwise expressly provided, if all those who succeed to the inheritance are equally near in degree to the intestate, they take per capita, and not per stirpes.",
+      "why_relevant": "Supplies the mode of division within the sibling half of Kasun's estate: Sarathi and Amal are equally near in degree to Kasun (both half-sisters and half-brothers on the mother's side), so they take that half per capita, one-quarter of the land each.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verbatim, but s.30 opens \"Except when otherwise expressly provided\" and s.27 (added as PROV-M025-901) is the express provision on dividing among half-blood brothers and sisters; s.30 supplies the per capita division here only because s.25 confines the takers of the sibling half to the deceased mother's side, so no father's-side against mother's-side split under s.27 arises."
+    },
+    {
+      "provision_id": "PROV-M025-008",
+      "section_id": "15-1876/s3",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "means not having a husband or wife living",
+      "why_relevant": "Defines \"unmarried\" for the purposes of the Ordinance. The background records that Kasun died \"intestate and unmarried\", which on this definition means he left no surviving spouse, so s.22 gives no half share out of his estate and the whole of it falls to be divided under s.25.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus. The corpus text of this interpretation section has lost its defined-term lead-ins in extraction, so the excerpt reads as a bare definition body; the corpus row records \"unmarried\" among the section's defined terms.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The excerpt is a verbatim substring of s.3 but the corpus extraction has dropped the defined-term lead-ins, so the words \"means not having a husband or wife living\" cannot be tied to \"unmarried\" from the excerpt alone; defs 15-1876 unmarried confirms s.3 defines that term, and the provision should be cited as s.3 sv \"unmarried\"."
+    },
+    {
+      "provision_id": "PROV-M025-009",
+      "section_id": "15-1876/s20",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "20",
+      "subsection": null,
+      "relevant_excerpt": "The following sections of this Ordinance shall apply to the estates of such persons only as shall die after the proclamation of this Ordinance",
+      "why_relevant": "Temporal scope of Part III. Every death in this matter (2011, 2013, 2017, 2018) is long after the proclamation of the Ordinance, so the inheritance sections apply to each estate. Recorded as background because the condition is plainly satisfied.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verbatim but truncated: s.20 continues \"and shall be then unmarried or (if married) shall have been married after the proclamation of this Ordinance\", a second condition the map does not record; it is satisfied on these facts because every marriage and death in the chain is long after 1876."
+    },
+    {
+      "provision_id": "PROV-M025-010",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary",
+      "why_relevant": "Explains why the three notarially attested instruments in the chain (Deed of Transfer No.2778, Deed of Gift No.5634 and Administrator's Conveyance No.6231) are effective to move title in immovable property. Recorded as background: the background states that each was attested by a named notary, so the requirement is met and no issue turns on it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at 2024-10, but the corpus text is the version as amended by Act No. 30 of 2022 and Act No. 4 of 2024. The deeds in this matter were executed in 2011 and 2014, before those amendments, so the corpus wording (thumb impressions, transferee execution) is not the text that governed their execution. Used only as background for the general notarial-writing requirement, which predates the amendments.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verbatim, but the corpus holds only the text as amended by Act No. 30 of 2022 and Act No. 4 of 2024, so the version that governed Deed of Transfer No.2778 (2011), Deed of Gift No.5634 (2011) and Administrator's Conveyance No.6231 (2014) is not in the corpus; the provision can be relied on only for the notarial-writing requirement common to both versions, which is how the map uses it (background)."
+    },
+    {
+      "provision_id": "PROV-M025-011",
+      "section_id": "2-1889/s531",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "531",
+      "subsection": "(1)(b)",
+      "relevant_excerpt": "make order for the issue of a certificate of heir ship in form No. 87A in the First Schedule, to each of the heirs mentioned in the application, stating also the share of the estate which each heir is entitled to receive, if agreed to by the heirs",
+      "why_relevant": "Frames the testamentary proceeding No.1589/2013/T in the District Court of Pugoda: on an intestacy the court either grants letters of administration or issues certificates of heirship stating each heir's share. It supports the step in which Kasun's heirs and their shares were identified in that proceeding before the administrator conveyed the land to them.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1889, last changed in 1993 (Act No. 14 of 1993 s.4) per the corpus amendment events, so the corpus text was already in force when the testamentary proceeding ran in 2013 and 2014 and remains in force at 2024-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verbatim, but the subsection cited is the wrong limb: s.531(1)(b)(ii) is the certificate-of-heirship route, whereas the background says Kasun's estate was \"duly administered\" and Thilak executed the conveyance as Administrator, which is the grant of letters of administration under s.531(1)(b)(i); the section supports the identification of heirs in the testamentary proceeding, but not on the limb quoted."
+    },
+    {
+      "provision_id": "PROV-M025-012",
+      "section_id": "2-1889/s724B",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "724B",
+      "subsection": "(1)",
+      "relevant_excerpt": "establishing that the entire estate has been duly administered and distributed, the court may grant him a discharge and enter an order that the estate has been fully administered.",
+      "why_relevant": "Supports the statement in the background that the testamentary proceeding was terminated on 10 February 2014: termination follows distribution of the estate to those entitled. It anchors the Administrator's Conveyance No.6231 of 21 March 2014 as the distribution step rather than an independent disposition.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1889, last changed in 1977 (Act No. 20 of 1977 s.108) per the corpus amendment events, so the corpus text governed the 2014 termination and is in force at 2024-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verbatim but cut mid-sentence: it drops the antecedent condition in s.724B(1) (\"Where an executor or administrator files with his final account a receipt and discharge in the form No. 119A ... signed by the devisees, legatees, trustees, heirs, creditors or other persons entitled to or having an interest in the estate\"), so as quoted it does not itself show that discharge follows distribution to those entitled."
+    },
+    {
+      "provision_id": "PROV-M025-901",
+      "section_id": "15-1876/s27",
+      "section": "27",
+      "subsection": null,
+      "relevant_excerpt": "The division however in the case of half-brothers and sisters is as follows: - The inheritance is divided into two parts ; the one-half the full brothers and sisters and the issue of such as are deceased by representation divide with the half-brothers and sisters of the father's side and the issue of such as are deceased by representation ; and the other half they divide with those of the mother's side and the issue of such as are deceased by representation",
+      "why_relevant": "Added by the verifier. Section 27 is the express provision on how an inheritance is divided where half-blood brothers and sisters take, and s.30 applies only \"Except when otherwise expressly provided\", so s.27 has to be checked before s.30 is used on the sibling half of Kasun's estate. It does not change the result: s.25 admits only the half-blood brothers and sisters related to Kasun through his deceased mother, so there is no father's-side share to set against a mother's-side share and no full brother or sister to take a preferential half. Sarathi and Amal therefore divide the sibling half equally under s.30.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section, so the same text applied at Kasun's death in 2013 and is in force at 2024-10.",
+      "verification_status": "verified",
+      "verifier_note": null,
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876"
+    },
+    {
+      "provision_id": "PROV-M025-902",
+      "section_id": "15-1876/s26",
+      "section": "26",
+      "subsection": null,
+      "relevant_excerpt": "Father and mother both failing, the property of the intestate goes to his brothers and sisters, whether of the whole or balf-blood, and their children and other issue by representation.",
+      "why_relevant": "Added by the verifier. Both gold answers cite s.26 by number in their conclusions as the alternative outcome if no parent of Sarathi was alive on 8 August 2018, but the researcher's map carried no entry for it, so that citation was unanchored. On that alternative the non-spousal half of Sarathi's share goes to her brothers and sisters whether of the whole or half-blood, which on these facts is Amal alone, Kasun having predeceased her without issue.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus. The corpus body carries an OCR corruption, \"balf-blood\" for \"half-blood\"; the excerpt is quoted as the corpus holds it.",
+      "verification_status": "verified",
+      "verifier_note": null,
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876"
+    },
+    {
+      "provision_id": "PROV-M025-903",
+      "section_id": "15-1876/s36",
+      "section": "36",
+      "subsection": null,
+      "relevant_excerpt": "In all questions relating to the distribution of the property of an intestate, if the present Ordinance is silent, the rules of the Roman-Dutch law as it prevailed in North Holland are to govern and be followed.",
+      "why_relevant": "Added by the verifier. Both questions are classified statute_only on the footing that the Ordinance is not silent on any step in this chain; s.36 is the provision that makes that footing load-bearing, because it is the only route by which non-corpus Roman-Dutch law could be reached. Recorded as background: on these facts ss.20 to 30 cover every devolution, so s.36 is not engaged.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null,
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876"
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M025-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The chain of title moves by three notarial instruments and three intestate deaths. The instruments and the partition allotment are given as facts in the background, so no authority is needed to establish them. Every devolution is worked out from Part III of the Matrimonial Rights and Inheritance Ordinance, which codifies the general law of intestate succession to immovable property: s.21 makes the Ordinance the governing law, s.22 fixes the spouse's half, s.23 fixes the order of classes, s.24 governs children and s.25 governs the case where descendants fail. Section 36 defers to Roman-Dutch law only where the Ordinance is silent, and it is not silent on any step in this chain. No judicial authority or non-statutory doctrine is indispensable. Verified by the verifier: s.36 is now carried as PROV-M025-903 so the \"not silent\" footing rests on corpus text, and no claim in either answer depends on case law.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M025-Q01-01",
+          "issue": "Whether title passed out of Kamala Silva on the Deed of Gift to Kasun, so that her death on 7 July 2011 carried nothing in this land to her surviving husband Namal Silva or to her children Sarathi and Amal.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M025-Q01-02",
+          "issue": "On whom the land devolved when Kasun died intestate, unmarried and without issue on 3 May 2013, his mother having predeceased him and his father surviving, and whether his half-blood brothers and sisters on his father's side share with those on his mother's side.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M025-Q01-03",
+          "issue": "On whom Thilak's share devolved when he died intestate on 3 March 2017 leaving his children Sunil and Lalith, his son Kasun having predeceased him without issue.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M025-Q01-04",
+          "issue": "On whom Sarathi's share devolved when she died intestate and issueless on 8 August 2018 leaving her husband Sena.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M025-001",
+        "PROV-M025-003",
+        "PROV-M025-004",
+        "PROV-M025-005",
+        "PROV-M025-006",
+        "PROV-M025-008"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M025-007",
+        "PROV-M025-011",
+        "PROV-M025-012",
+        "PROV-M025-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M025-002",
+        "PROV-M025-009",
+        "PROV-M025-010",
+        "PROV-M025-902",
+        "PROV-M025-903"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four necessary linked steps: (1) s.21 makes Part III the governing law for this immovable property; (2) s.25, read with the s.3 definition of \"unmarried\" and with s.23, disposes of Kasun's estate; (3) s.24 disposes of Thilak's resulting share on his later intestacy; (4) s.22 read with s.25 disposes of Sarathi's resulting share on her later intestacy. Each step depends on the output of the one before it, so the chain cannot be shortened. Verified by the verifier: the four steps match the indispensable provisions and none can be collapsed. The additions of s.27 (PROV-M025-901) as a qualification on the s.30 step and s.26 (PROV-M025-902) as the express alternative named in the conclusion add no hop.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M025-001",
+          "to_provision_id": "PROV-M025-004",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M025-003",
+          "to_provision_id": "PROV-M025-004",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M025-008",
+          "to_provision_id": "PROV-M025-003",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M025-004",
+          "to_provision_id": "PROV-M025-005",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M025-005",
+          "to_provision_id": "PROV-M025-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M025-007",
+          "to_provision_id": "PROV-M025-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M025-011",
+          "to_provision_id": "PROV-M025-012",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M025-901",
+          "to_provision_id": "PROV-M025-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M025-006",
+          "to_provision_id": "PROV-M025-902",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a final decree dated 25th October 2010, entered in District Court of Pugoda Partition Case No. 582/P the land and premises bearing Assessment No.45, Colombo Road, Púgoda depicted as Lot 1 in Plan No.173 dated 27th February 2009 made by K.D. Silva Licensed Surveyor of the land called Annasiwatta in extent of 38 perches was allotted to one Gamini Jayasinghe. By Deed of Transfer No.2778 dated 10th March 2011 attested by A. Kamala Notary Public of Gampaha, the said Gamini Jayasinghe sold and conveyed the said land and premises bearing Assessment No.45, Colombo Road, Pugoda to one Kamala Silva. Kamala Silva upon Deed of Gift No.5634 dated 18th April 2011 attested by V. Gunatithilaka Notary Public of Gampaha gifted the said land and premises unto her only son Kasun from her ex-husband Thilak: Kamala died on 07th July 2011 leaving her second husband Namal Silva and two children namely Sarathi and Amal. Kasun died on 03rd May 2013 intestate and unmarried and his estate was duly administered in District Court of Pugoda in Testamentary Proceeding No.1589/2013/T. The said proceedings-were terminated on 10th February 2014 and the Administrator's Conveyance No.6231 dated 21st March 2014 attested by V. Gunathilaka Notary Public was executed by Thilak who was the Administrator of the estate of his late son Kasun. Thilak died on 03rd March 2017 intestate. Thilak was previously married to Sumana and had two children namely Sunil and Lalith. On 08th August 2018 Sarathi met with an accident and died interstate and issueless leaving her husband Sena.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "The question asks for the pedigree, that is the chain of devolution of title to the land and premises bearing Assessment No.45, Colombo Road, Pugoda (Lot 1 in Plan No.173, in extent 38 perches), from Gamini Jayasinghe to the persons who own it today. The chain runs through two inter vivos notarial dispositions, an administration of an intestate estate, and three intestate deaths, so the issues are the effect of the Deed of Gift on Kamala Silva's own estate, and then the devolution of the land on the successive intestacies of Kasun, Thilak and Sarathi.",
+        "rule": "Inheritance ab intestato to immovable property in Sri Lanka is governed by Part III of the Matrimonial Rights and Inheritance Ordinance (s.21(1)), which applies to the estate of any person dying after the proclamation of the Ordinance (s.20) and does not apply to Kandyans, Muslims or Tamils of the Northern Province subject to the Thesawalamai (s.2). A surviving spouse inherits one-half (s.22); subject to that, inheritance passes in the order descendants, ascendants, collaterals (s.23). Children and remoter descendants are preferent to all others and take equally per capita, the issue of a deceased child taking by representation (s.24). Where descendants fail, the estate goes to both parents if both are alive; if only one parent is alive, that parent takes half and the other half goes to the brothers and sisters of the full blood, the issue of deceased full-blood siblings by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent (s.25). A person is \"unmarried\" for the purposes of the Ordinance when he has no husband or wife living (s.3). Where those who succeed are equally near in degree they take per capita (s.30). Dispositions of immovable property must be by notarially attested writing (Prevention of Frauds Ordinance s.2), and on an intestacy the District Court identifies the heirs and their shares in a testamentary proceeding (Civil Procedure Code s.531) and discharges the administrator once the estate has been duly administered and distributed (Civil Procedure Code s.724B).",
+        "application": "Gamini Jayasinghe held the entirety under the final decree of 25 October 2010 in Partition Case No. 582/P. By Deed of Transfer No.2778 of 10 March 2011 he conveyed the entirety to Kamala Silva, and by Deed of Gift No.5634 of 18 April 2011 Kamala gifted the entirety to her only son Kasun. Kamala therefore held no interest in this land when she died on 7 July 2011, and nothing in it passed to her surviving husband Namal Silva or to her children Sarathi and Amal at that point. Kasun died on 3 May 2013 intestate and unmarried, that is without a spouse living within the meaning of s.3, and without issue, so no half share arises under s.22 and the descendant class in s.23 is empty. Under s.25 his mother Kamala had predeceased him and his father Thilak survived: Thilak took one-half, and the other half went to the brothers and sisters of the half-blood related to Kasun by the side of his deceased parent, namely his mother's other children Sarathi and Amal, who being equally near in degree took that half per capita under s.30, one-quarter each. Sunil and Lalith, Thilak's children by Sumana, are half-blood siblings on the side of the surviving parent and so take nothing out of Kasun's estate. That devolution was carried into effect in Testamentary Proceeding No.1589/2013/T, in which the heirs and their shares were determined (Civil Procedure Code s.531), and by the notarially attested Administrator's Conveyance No.6231 of 21 March 2014 executed by Thilak as administrator on the termination of the proceeding (Prevention of Frauds Ordinance s.2; Civil Procedure Code s.724B). Thilak then died intestate on 3 March 2017. No surviving spouse is disclosed, so s.22 is not engaged and under s.24 his children are preferent and take equally per capita; Kasun had predeceased him in 2013 without issue, so only Sunil and Lalith take, and Thilak's one-half share passed to them in equal parts. Sarathi died intestate and issueless on 8 August 2018 leaving her husband Sena. Under s.22 Sena took one-half of her one-quarter share. As to the balance, her descendants fail, so s.25 applies: her mother Kamala had predeceased her in 2011 and, on the footing that her father is Namal Silva and that he survives her, the surviving parent takes half of that balance and the other half goes to her full-blood brother Amal, her half-brother Kasun on the mother's side having predeceased her without issue.",
+        "conclusion": "The pedigree runs: Gamini Jayasinghe (entirety under the final decree of 25 October 2010) to Kamala Silva (Deed of Transfer No.2778 of 10 March 2011) to Kasun (Deed of Gift No.5634 of 18 April 2011). On Kasun's intestate death on 3 May 2013 the land devolved on his father Thilak as to one-half and on his half-brother and half-sister on the mother's side, Amal and Sarathi, as to one-quarter each, which is what Administrator's Conveyance No.6231 of 21 March 2014 gave effect to. On Thilak's intestate death on 3 March 2017 his one-half devolved on his surviving children Sunil and Lalith in equal shares, one-quarter of the land each. On Sarathi's intestate death on 8 August 2018 her one-quarter devolved as to one-half on her husband Sena and, on the footing stated above, as to one-quarter on her surviving father Namal Silva and as to one-quarter on her brother Amal. The present owners are therefore Amal, Sunil, Lalith, Sena and Namal Silva. Two facts are open on the background as given: it does not name the grantees in Administrator's Conveyance No.6231, and it does not state in terms that Namal Silva is the father of Sarathi and Amal or that he is still living. The pedigree above reads the conveyance as a distribution to Kasun's heirs and treats Namal Silva as the surviving father; if instead both of Sarathi's parents were dead at her death, her non-spousal half would pass wholly to Amal under s.26 of the Ordinance."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M025-Q01-001",
+          "claim_text": "Inheritance ab intestato to immovable property in Sri Lanka is governed by Part III of the Matrimonial Rights and Inheritance Ordinance, whatever the domicile of the deceased.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M025-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q01-002",
+          "claim_text": "Subject to the surviving spouse's one-half under s.22, the right of inheritance is divided in the order descendants, ascendants, collaterals.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M025-004",
+            "PROV-M025-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q01-003",
+          "claim_text": "Where a person dies intestate leaving no descendants and only one parent alive, that surviving parent takes one-half and the other half goes to the full-blood brothers and sisters and to the half-blood brothers and sisters related to the intestate by the side of the deceased parent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M025-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q01-004",
+          "claim_text": "A person is unmarried for the purposes of the Ordinance when he has no husband or wife living, so an intestate who dies unmarried leaves no spouse to take a half share under s.22.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M025-008",
+            "PROV-M025-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q01-005",
+          "claim_text": "Children and remoter descendants are preferent to all others in the estate of a parent and take equally per capita, the issue of a deceased child taking by representation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M025-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q01-006",
+          "claim_text": "Persons equally near in degree to the intestate take per capita and not per stirpes.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M025-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q01-007",
+          "claim_text": "Having conveyed the entirety to Kasun by Deed of Gift No.5634 of 18 April 2011, Kamala Silva held no interest in this land at her death on 7 July 2011, so nothing in it passed to Namal Silva, Sarathi or Amal on her death.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M025-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M025-Q01-008",
+          "claim_text": "Kasun died intestate, unmarried and without issue on 3 May 2013, so no spousal half arose and the descendant class was empty; his mother Kamala had predeceased him and his father Thilak survived, so Thilak took one-half of the land.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M025-006",
+            "PROV-M025-008",
+            "PROV-M025-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-5"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q01-009",
+          "claim_text": "The other half of Kasun's estate went to Sarathi and Amal as the half-blood brother and sister related to him by the side of his deceased mother, in equal shares, while Sunil and Lalith, related through his surviving father, took nothing.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M025-006",
+            "PROV-M025-007"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-4",
+            "BG-8"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q01-010",
+          "claim_text": "That devolution was carried into effect in Testamentary Proceeding No.1589/2013/T and by the notarially attested Administrator's Conveyance No.6231 of 21 March 2014 executed by Thilak as administrator on the termination of the proceeding.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M025-011",
+            "PROV-M025-012",
+            "PROV-M025-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M025-Q01-011",
+          "claim_text": "On Thilak's intestate death on 3 March 2017 with no surviving spouse disclosed, his surviving children Sunil and Lalith took his one-half in equal shares, Kasun having predeceased him without issue.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M025-005",
+            "PROV-M025-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-7",
+            "BG-8"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q01-012",
+          "claim_text": "On Sarathi's intestate and issueless death on 8 August 2018 her husband Sena took one-half of her share, and the balance devolved under s.25 on her surviving parent and her brother Amal, her mother having predeceased her and her half-brother Kasun having predeceased her without issue.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M025-003",
+            "PROV-M025-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-5",
+            "BG-9"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M025-Q01-013",
+          "claim_text": "The pedigree is Gamini Jayasinghe to Kamala Silva by Deed of Transfer No.2778, to Kasun by Deed of Gift No.5634, then on Kasun's intestacy to Thilak, Sarathi and Amal, then on Thilak's intestacy to Sunil and Lalith, and then on Sarathi's intestacy to Sena, Namal Silva and Amal, so that the present owners are Amal, Sunil, Lalith, Sena and Namal Silva.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M025-001",
+            "PROV-M025-003",
+            "PROV-M025-005",
+            "PROV-M025-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "BG-3",
+            "BG-5",
+            "BG-7",
+            "BG-9"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M025-Q01-014",
+          "claim_text": "The pedigree rests on two facts that the background leaves open: the grantees named in Administrator's Conveyance No.6231, and whether Namal Silva is the father of Sarathi and Amal and survives Sarathi.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-6",
+            "BG-9"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M025-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The shares are pure arithmetic on the fractions produced by the intestate succession rules already identified for M025-Q01. Sections 22, 24, 25 and 30 of the Matrimonial Rights and Inheritance Ordinance fix each fraction, s.21 makes the Ordinance the governing law, and s.3 supplies the definition of \"unmarried\" that keeps s.22 out of Kasun's estate. Roman-Dutch law is reached only where the Ordinance is silent (s.36) and it is not silent here, and no judicial authority is needed to compute the shares. Verified by the verifier: statute_only stands; the open point is one of fact (whether a parent of Sarathi survived her), not one of authority.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M025-Q02-01",
+          "issue": "What undivided share of the land each surviving heir now holds, after the successive intestacies of Kasun, Thilak and Sarathi.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M025-Q02-02",
+          "issue": "Whether the surviving husband of Sarathi takes a half of her share to the exclusion of her parent and sibling, or shares with them.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M025-001",
+        "PROV-M025-003",
+        "PROV-M025-004",
+        "PROV-M025-005",
+        "PROV-M025-006",
+        "PROV-M025-007",
+        "PROV-M025-008"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M025-011",
+        "PROV-M025-012",
+        "PROV-M025-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M025-002",
+        "PROV-M025-009",
+        "PROV-M025-010",
+        "PROV-M025-902",
+        "PROV-M025-903"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "The same four dependent steps as M025-Q01 (s.21 governing law; s.25 with s.3 and s.23 for Kasun's estate; s.24 for Thilak's share; s.22 with s.25 for Sarathi's share), with s.30 supplying the per capita division inside the sibling half. The fractions at each step are the input to the next, so no step can be dropped. Verified by the verifier: unchanged at four. The additions (s.27 qualifying s.30, s.26 as the named alternative, s.36 as the silence rule behind the statute_only classification) are qualifications on existing steps, not new ones.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M025-001",
+          "to_provision_id": "PROV-M025-004",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M025-003",
+          "to_provision_id": "PROV-M025-004",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M025-008",
+          "to_provision_id": "PROV-M025-003",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M025-004",
+          "to_provision_id": "PROV-M025-005",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M025-005",
+          "to_provision_id": "PROV-M025-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M025-007",
+          "to_provision_id": "PROV-M025-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M025-006",
+          "to_provision_id": "PROV-M025-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M025-901",
+          "to_provision_id": "PROV-M025-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M025-006",
+          "to_provision_id": "PROV-M025-902",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a final decree dated 25th October 2010, entered in District Court of Pugoda Partition Case No. 582/P the land and premises bearing Assessment No.45, Colombo Road, Púgoda depicted as Lot 1 in Plan No.173 dated 27th February 2009 made by K.D. Silva Licensed Surveyor of the land called Annasiwatta in extent of 38 perches was allotted to one Gamini Jayasinghe. By Deed of Transfer No.2778 dated 10th March 2011 attested by A. Kamala Notary Public of Gampaha, the said Gamini Jayasinghe sold and conveyed the said land and premises bearing Assessment No.45, Colombo Road, Pugoda to one Kamala Silva. Kamala Silva upon Deed of Gift No.5634 dated 18th April 2011 attested by V. Gunatithilaka Notary Public of Gampaha gifted the said land and premises unto her only son Kasun from her ex-husband Thilak: Kamala died on 07th July 2011 leaving her second husband Namal Silva and two children namely Sarathi and Amal. Kasun died on 03rd May 2013 intestate and unmarried and his estate was duly administered in District Court of Pugoda in Testamentary Proceeding No.1589/2013/T. The said proceedings-were terminated on 10th February 2014 and the Administrator's Conveyance No.6231 dated 21st March 2014 attested by V. Gunathilaka Notary Public was executed by Thilak who was the Administrator of the estate of his late son Kasun. Thilak died on 03rd March 2017 intestate. Thilak was previously married to Sumana and had two children namely Sunil and Lalith. On 08th August 2018 Sarathi met with an accident and died interstate and issueless leaving her husband Sena.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "The question asks what undivided share of the land and premises bearing Assessment No.45, Colombo Road, Pugoda each heir now holds. This turns on quantifying the three successive intestate devolutions: Kasun's estate in 2013, Thilak's share on his death in 2017, and Sarathi's share on her death in 2018.",
+        "rule": "A surviving spouse inherits one-half of the intestate's property (Matrimonial Rights and Inheritance Ordinance s.22), and the remainder passes in the order descendants, ascendants, collaterals (s.23). Children take equally per capita and are preferent to all others (s.24). Where descendants fail and only one parent survives, the surviving parent takes one-half and the other half goes to full-blood brothers and sisters and to half-blood brothers and sisters related to the intestate by the side of the deceased parent (s.25). Heirs equally near in degree take per capita (s.30). An intestate who dies unmarried, that is with no husband or wife living (s.3), leaves no spouse to take under s.22. The Ordinance governs inheritance to immovable property in Sri Lanka (s.21(1)).",
+        "application": "Kasun held the entirety when he died intestate, unmarried and issueless on 3 May 2013. No share passed under s.22. Under s.25 his surviving father Thilak took one-half, and Sarathi and Amal, the half-blood sister and brother related to him through his deceased mother Kamala, took the other half per capita under s.30, that is one-quarter of the land each. Thilak died intestate on 3 March 2017 with no surviving spouse disclosed; under s.24 his one-half passed equally to his surviving children Sunil and Lalith, giving each one-quarter of the land. Sarathi died intestate and issueless on 8 August 2018 holding one-quarter. Under s.22 her husband Sena took one-half of that quarter, namely one-eighth of the land. The remaining one-eighth fell under s.25: her descendants failed, her mother Kamala had predeceased her in 2011, and on the footing that her father is Namal Silva and that he survives her, he takes one-half of that eighth, namely one-sixteenth, while the other one-sixteenth goes to her full-blood brother Amal, her half-brother Kasun having predeceased her without issue. Amal therefore adds one-sixteenth to the one-quarter he took from Kasun's estate, giving him five-sixteenths.",
+        "conclusion": "On the footing set out above the present shares in the land and premises bearing Assessment No.45, Colombo Road, Pugoda are: Amal five-sixteenths; Sunil one-quarter (four-sixteenths); Lalith one-quarter (four-sixteenths); Sena one-eighth (two-sixteenths); and Namal Silva one-sixteenth. These add up to the entirety. The one-sixteenth attributed to Namal Silva depends on the reading that he is the father of Sarathi and Amal and was living at Sarathi's death, neither of which the background states in terms; if both of Sarathi's parents were dead when she died, her non-spousal one-eighth would pass wholly to Amal under s.26 of the Ordinance, giving Amal three-eighths and leaving Namal Silva with nothing."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M025-Q02-001",
+          "claim_text": "A surviving spouse inherits one-half of the property of a person who dies intestate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M025-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q02-002",
+          "claim_text": "Subject to the spouse's half, inheritance passes in the order descendants, ascendants, collaterals, and children take equally per capita in preference to all others.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M025-004",
+            "PROV-M025-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q02-003",
+          "claim_text": "Where descendants fail and only one parent survives, the surviving parent takes one-half and the other half goes to the full-blood siblings and to the half-blood siblings related to the intestate by the side of the deceased parent, those equally near in degree taking per capita.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M025-006",
+            "PROV-M025-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q02-004",
+          "claim_text": "The Ordinance governs inheritance to immovable property in Sri Lanka, and a person who dies unmarried has no husband or wife living and so leaves no spouse to take a half share.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M025-001",
+            "PROV-M025-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q02-005",
+          "claim_text": "On Kasun's intestate death Thilak took one-half of the land and Sarathi and Amal took one-quarter each.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M025-006",
+            "PROV-M025-007",
+            "PROV-M025-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-4",
+            "BG-5",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q02-006",
+          "claim_text": "On Thilak's intestate death his one-half passed equally to Sunil and Lalith, giving each one-quarter of the land.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M025-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-7",
+            "BG-8"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q02-007",
+          "claim_text": "On Sarathi's intestate death her husband Sena took one-half of her one-quarter, that is one-eighth of the land.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M025-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-9"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M025-Q02-008",
+          "claim_text": "The remaining one-eighth of Sarathi's share went one-sixteenth to her surviving father Namal Silva and one-sixteenth to her brother Amal, her mother having predeceased her and her half-brother Kasun having predeceased her without issue.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M025-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-5",
+            "BG-9"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M025-Q02-009",
+          "claim_text": "The present shares are Amal five-sixteenths, Sunil one-quarter, Lalith one-quarter, Sena one-eighth and Namal Silva one-sixteenth, together making up the entirety.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M025-003",
+            "PROV-M025-005",
+            "PROV-M025-006",
+            "PROV-M025-007"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-7",
+            "BG-9"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M025-Q02-010",
+          "claim_text": "The one-sixteenth attributed to Namal Silva depends on him being the father of Sarathi and Amal and being alive at Sarathi's death, neither of which the background states in terms.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M025-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-9"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

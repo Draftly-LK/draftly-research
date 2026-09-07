@@ -1,0 +1,894 @@
+{
+  "benchmark_matter_id": "M003",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M003",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T21:51:13Z",
+    "verification_agent": "verifier-M003",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:10:05Z"
+  },
+  "matter_reference_date": "2026-04",
+  "matter_reference_date_basis": "matter_reference_date field of candidates/matters/M003.json, which records the exam session APRIL 2026. Every provision was checked for being in force at April 2026 using in_force_from_year and amendment_events reported by the corpus tool.",
+  "corpus_gaps": [
+    "No Order made by the Minister under s.3 of the Stamp Duty (Special Provisions) Act No. 12 of 2006 is in the corpus, so the rate of stamp duty on a mortgage bond cannot be established and the amount payable on Rs. 10,000,000 cannot be calculated from corpus text.",
+    "The corpus edition of the Stamp Duty Act No. 43 of 1982 contains sections 1 to 71 but no rate schedule, so no fallback rate is available there either.",
+    "The Constitution, including List I of the Ninth Schedule referred to in s.9 of the 2006 Act, is not in the corpus, so whether a mortgage bond is an instrument on which duty is devolved to a Provincial Council cannot be confirmed.",
+    "The Banking Act, No. 30 of 1988, to which the Land Development Ordinance s.2 definition of 'licensed commercial bank' refers, is not in the corpus.",
+    "The Land Development (Amendment) Act No. 11 of 2022 is not in the corpus as a separate document; its effect is visible only through the amendment_events recorded on the consolidated Land Development Ordinance text.",
+    "The question cites the governing statute as 'Land Development Ordinance 27 of 1981'. The corpus holds the Land Development Ordinance No. 19 of 1935; Act No. 27 of 1981 appears in the corpus only as an amending enactment recorded in the amendment_events of ss.2, 19 and 43. The citation in the paper appears to be inaccurate.",
+    "Regulations prescribing banks for the purposes of s.8(2) of the 2006 Act, and regulations prescribing institutions for s.19(7) and s.43 of the Land Development Ordinance, are not in the corpus."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M003-001",
+      "section_id": "12-2006/s3",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "there shall be charged a duty (hereinafter to be called \"stamp duty\") at such rate as the Minister may determine by Order published in the Gazette on every \"specified instrument\"- (a) executed, drawn or presented in Sri Lanka",
+      "why_relevant": "The charging section. It imposes stamp duty on every specified instrument executed in Sri Lanka but fixes no rate in the Act itself: the rate is set by Ministerial Order published in the Gazette. Any calculation of the duty on the mortgage bond therefore depends on that Order.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1 April 2006 (s.1(2)) and unamended in the corpus edition; in force at 2026-04. The rate Order made under this section is subsidiary legislation and is not in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-002",
+      "section_id": "12-2006/s4",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "4",
+      "subsection": "(g)",
+      "relevant_excerpt": "(g) a bond or mortgage for any definite and certain sum of money and affecting any property;",
+      "why_relevant": "Brings the mortgage bond within the class of 'specified instrument' chargeable under s.3. The bond secures a definite and certain sum (Rs. 10,000,000) and affects immovable property, so it falls within paragraph (g).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1 April 2006; no amendment events recorded in the corpus; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-003",
+      "section_id": "12-2006/s6",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "6",
+      "subsection": "(e)",
+      "relevant_excerpt": "(e) in all other cases, by the person drawing, making or executing such instrument.",
+      "why_relevant": "Identifies the person liable. A mortgage bond is not within the specific paragraphs (a) to (ddd), so the residual paragraph (e) applies and the duty falls on the person executing the bond, that is the mortgagor Herath, unless there is an agreement to the contrary with the bank.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Amended by the Stamp Duty (Special Provisions) (Amendment) Act No. 10 of 2008 (paragraphs (dd) and (ddd) inserted). The consolidated text reflects that amendment and is in force at 2026-04; the residual paragraph (e) relied on here is original.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-004",
+      "section_id": "12-2006/s8",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "8",
+      "subsection": "(2)",
+      "relevant_excerpt": "Stamp duty payable on any specified instrument relating to a mortgage or lease of any immovable property may be paid, prior to, or at the time of, the execution of the specified instrument, to a prescribed bank.",
+      "why_relevant": "Answers the 'where do you pay' limb directly for a mortgage of immovable property: payment is made to a prescribed bank, before or at execution (or within seven days where payment beforehand was impossible), and the bank issues a certificate in the prescribed form which is affixed to the instrument.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 8 was replaced by Act No. 10 of 2008 s.3; the corpus consolidated text is the post-2008 text, in force well before and at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-005",
+      "section_id": "12-2006/s9",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "9",
+      "subsection": null,
+      "relevant_excerpt": "All stamp duty payable to a Provincial Council in respect of documents and instruments referred to in List I of the Ninth Schedule to the Constitution, shall be paid to the respective Provincial Council within whose limits the instrument was executed or the property situated as the case may be",
+      "why_relevant": "Directs where duty that is a devolved Provincial Council revenue must be paid: to the Provincial Council within whose limits the instrument was executed or the property is situated. The land is in Anuradhapura, so this points to the Provincial Council for the province in which Anuradhapura lies.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1 April 2006, no amendment events in the corpus; in force at 2026-04. Whether a mortgage bond is within List I of the Ninth Schedule cannot be checked here because the Constitution is not in the corpus.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording verbatim, but the section bites only on duty that is already payable to a Provincial Council in respect of instruments referred to in List I of the Ninth Schedule to the Constitution, and the Constitution is not in the corpus; role reduced from supporting to background for Q01, because on corpus text it is s.8(2) and not s.9 that answers the 'where do you pay' limb."
+    },
+    {
+      "provision_id": "PROV-M003-006",
+      "section_id": "43-1982/s16",
+      "act_id": "43-1982",
+      "formal_title": "Stamp Duty Act",
+      "number_and_year": "No. 43 of 1982",
+      "section": "16",
+      "subsection": null,
+      "relevant_excerpt": "A bond or mortgage for the payment or repayment of money to be lent, advanced, or paid shall be charged, where the total amount secured or to be ultimately recoverable is in any way limited, with the same stamp duty as on a bond or mortgage for the amount so limited.",
+      "why_relevant": "Supplies the measure of the charge for a mortgage: where the amount secured is limited, duty is charged on that limited amount. It supports computing the duty on the stated Rs. 10,000,000 rather than on some larger notional sum.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted 1982, no amendment events in the corpus. Its continued operation is qualified by s.13 of Act No. 12 of 2006, which displaces the imposition provisions of the 1982 Act so far as they are inconsistent with the 2006 Act. Treated as supporting, not indispensable, for that reason.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording verbatim, but s.13 of the 2006 Act disapplies the imposition provisions of the 1982 Act so far as inconsistent, and its carve-out covers transfers of immovable property, motor vehicles and documents filed in Court, not mortgages; s.16 therefore cannot be relied on for the measure of the charge on a mortgage bond and its role is reduced from supporting to background for Q01."
+    },
+    {
+      "provision_id": "PROV-M003-007",
+      "section_id": "12-2006/s13",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "the provisions of the Stamp Duty Act, No. 43 of 1982, relating to the Imposition of Stamp Duty (other than any instrument relating to the transfer of immovable property, the transfer of motor vehicles or documents filed in Court), Exemptions and any other provision in the aforesaid Act, shall, in so far as the same are inconsistent with the provisions of this Act, have no operation and the provisions of this Act shall prevail.",
+      "why_relevant": "Background on which enactment governs. It explains why the 2006 Act, not the 1982 Act, is the charging statute for a mortgage bond, and why s.16 of the 1982 Act can only be used so far as it is not inconsistent with the 2006 Act.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1 April 2006; no amendment events in the corpus; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-008",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (6)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless he has an assurance that the required stamp duty is provided.",
+      "why_relevant": "The notary attesting the mortgage bond may not attest it unless satisfied that the required stamp duty has been provided, which is why the duty must be settled before or at execution.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 was substituted in several respects by the Notaries (Amendment) Act No. 31 of 2022 and the Notaries (Amendment) Act No. 6 of 2024; the corpus consolidated text carries changes down to 2024 and is in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-009",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": null,
+      "relevant_excerpt": "Notwithstanding anything to the contrary in this Ordinance or any other written law, any stamp duty which is required to be paid in respect of every deed or instrument executed under any written law, shall be paid by the notary; (b) The stamps or the original receipt received from the relevant bank as proof of such payment shall be affixed to the duplicate of the deed or instrument by the notary;",
+      "why_relevant": "Puts the mechanics of payment on the notary: the notary pays the stamp duty and affixes the stamps, or the original bank receipt, to the duplicate of the instrument. It confirms the practical answer to 'where do you pay', namely at the relevant bank, with the receipt going onto the duplicate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "This lettered clause follows rule (7) in the corpus text of s.31 and carries no subsection number of its own in that text, so the subsection field is left null. Section 31 was amended down to 2024 and is in force at 2026-04. The verifier should confirm the correct rule number against the Government Printer text.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verbatim and the role is right, but the subsection field should read 'rule (7A)': Notaries (Amendment) Act No. 31 of 2022 s.16(5) inserted this rule immediately after rule (7) without numbering it, and Notaries (Amendment) Act No. 6 of 2024 s.3(2) names it 'rule (7A)'. That 2024 amendment also substituted 'every deed or instrument' for 'any deed or instrument relating to a transfer, a gift or an exchange', which is the only reason the rule reaches a mortgage bond at the matter date."
+    },
+    {
+      "provision_id": "PROV-M003-010",
+      "section_id": "19-1935/s19",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "19",
+      "subsection": "(6)(b) and (7)",
+      "relevant_excerpt": "(b) dispose of such holding except with the prior approval of the Government Agent. (7) Notwithstanding the provisions of paragraph (b) of subsection (6), the approval of the Divisional Secretary shall not be required when mortgaging such holding to a licenced commercial bank, the State Mortgage and Investment Bank, the Development Finance Corporation of Ceylon, the National Development Bank of Sri Lanka, the National Housing Development Authority, the Housing Development Finance Corporation Bank of Sri Lanka, any registered society or other prescribed institution.",
+      "why_relevant": "This is the provision the question turns on. Subsection (6)(b) makes every grant subject to a condition that the owner shall not dispose of the holding except with prior approval; subsection (7) then removes that approval requirement where the disposition is a mortgage in favour of a licensed commercial bank or another listed institution.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 19 carries amendment events down to the Land Development (Amendment) Act No. 11 of 2022, which is the amendment named in the question, so subsection (7) is in force at the matter date of 2026-04. The corpus edition is consolidated to 2022 and no later change is recorded.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verbatim and the role as the decisive provision is confirmed, but the temporal note overstates the corpus: both amendment events for Act No. 11 of 2022 on s.19 are recorded only as 'unknown', so the corpus does not show that the 2022 Act produced subsection (7). Separately, subsection (6)(b) requires the prior approval of the Government Agent while subsection (7) lifts the approval of the Divisional Secretary, and the Ordinance never reconciles the two offices."
+    },
+    {
+      "provision_id": "PROV-M003-011",
+      "section_id": "19-1935/s43",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "43",
+      "subsection": "(b)",
+      "relevant_excerpt": "The Owner of a holding- (a) shall not lease such holding to any other person except in such circumstances as may be prescribed; and (b) shall not mortgage such holding to any person other than a licensed commercial bank",
+      "why_relevant": "Sets the closed list of permissible mortgagees for the owner of a holding. It confirms that a mortgage to a licensed commercial bank is a permitted transaction under the Ordinance, which is the premise on which the exemption in s.19(7) operates.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in its present form from 1993 (insertion by Act No. 22 of 1993) as amended in 1996; both precede the matter date, so it is in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-012",
+      "section_id": "19-1935/s2",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "2",
+      "subsection": "definition of \"holding\"",
+      "relevant_excerpt": "means land alienated by grant under this Ordinance, and includes any part thereof or interest therein",
+      "why_relevant": "Defines 'holding' as land alienated by grant. Sections 19(6) to (7) and 43 speak of a 'holding', so they apply only if Herath holds under a grant rather than a permit. The definition is what makes the grant and permit distinction decisive.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 carries amendment events down to 2022. The definition relied on is long-standing and is in force at 2026-04. In the corpus text of s.2 the defined terms are listed separately from the bodies of the definitions, so this excerpt appears without its headword.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-013",
+      "section_id": "19-1935/s2",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "2",
+      "subsection": "definition of \"licensed commercial bank\"",
+      "relevant_excerpt": "means a licensed commercial bank within the meaning of the Banking Act, No. 30 of 1988",
+      "why_relevant": "Defines the class of mortgagee that triggers the exemption in s.19(7) and the permission in s.43(b). Whether the intended mortgagee is a licensed commercial bank under the banking legislation is what decides the question.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Definition introduced by amendment and reflected in the consolidated text; in force at 2026-04. The Banking Act, No. 30 of 1988 is not in the corpus, so the content of that external definition cannot be checked here.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-014",
+      "section_id": "19-1935/s2",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "2",
+      "subsection": "definition of \"disposition\"",
+      "relevant_excerpt": "'disposition' with its grammatical variations and cognate expressions means any transaction of whatever nature affecting land or the title thereto and includes any conveyance, devise, donation, exchange, lease, mortgage or transfer of land",
+      "why_relevant": "Confirms that a mortgage is a 'disposition', so the prohibition in s.19(6)(b) and the prohibition in s.46(1) both reach a mortgage. Without it the general approval condition would not obviously bite on a mortgage at all.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Long-standing definition in the consolidated text; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-015",
+      "section_id": "19-1935/s46",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "46",
+      "subsection": "(1) and (2)",
+      "relevant_excerpt": "(1) Subject to the provisions of subsection (2), no permit-holder shall execute or effect any disposition of the land alienated to him on the permit. (2) With the written consent of the Government Agent, a permit-holder may mortgage his interest in the land alienated to him on the permit to any registered society of which he is a member.",
+      "why_relevant": "The contrasting regime. If Herath held on a permit rather than a grant, he could not mortgage to a commercial bank at all: the only permitted mortgage would be to a registered society of which he is a member, and only with the written consent of the Government Agent. It marks the boundary of the answer.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Act No. 16 of 1969; unchanged since in the corpus edition and in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-016",
+      "section_id": "19-1935/s41A",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "41A",
+      "subsection": null,
+      "relevant_excerpt": "Nothing in the preceding provisions of this chapter shall be deemed to prohibit the seizure and sale, by a licensed commercial bank",
+      "why_relevant": "Context on why the Ordinance permits bank mortgages of a holding: the general bar on seizure and sale of alienated land does not prevent a licensed commercial bank enforcing a mortgage over land alienated on a grant. It shows the bank's security is enforceable, though it is not needed to answer the approval question.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force in its present form from 1993 as substituted in 1996; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M003-901",
+      "section_id": "19-1935/s2",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "2",
+      "subsection": "definition of \"owner\"",
+      "relevant_excerpt": "means the owner of a holding whose title thereto is derived from or under a grant issued under this Ordinance and includes a permit- holder who has paid all sums which he is required to pay under subsection (2) of section 19 and has complied with all the other conditions specified in the permit",
+      "why_relevant": "Sections 19(6), 19(7) and 43 all fasten their conditions on 'the owner' of a holding, so neither the approval condition nor its exemption can be applied to Herath without this definition. It also does independent work on these facts: it extends 'owner' to a permit-holder who has paid every sum due under s.19(2) and complied with the conditions of his permit, so Herath is within the class even on the footing that the grant had not yet issued to him.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Long-standing definition carried in the consolidated s.2 text, whose latest recorded change year is 2022; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier. Excerpt checked verbatim against 19-1935/s2."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M003-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Liability to stamp duty, the identity of the person liable, the measure of the charge and the place and manner of payment are all creatures of statute and subsidiary legislation. No judicial authority or common law doctrine is needed. The obstacle is not the kind of authority but its availability: the rate is fixed by Ministerial Order published in the Gazette under s.3 of the 2006 Act, and that Order is not in the frozen corpus, so the arithmetic cannot be completed from corpus text.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M003-Q01-01",
+          "issue": "Whether a mortgage bond over immovable property securing a definite sum is a specified instrument chargeable with stamp duty.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M003-Q01-02",
+          "issue": "On what amount, and at what rate, the stamp duty on a bond securing Rs. 10,000,000 is computed.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M003-Q01-03",
+          "issue": "Who is liable to pay the duty on the mortgage bond.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M003-Q01-04",
+          "issue": "Where and when the duty must be paid, and how payment is evidenced on the instrument.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M003-001",
+        "PROV-M003-002",
+        "PROV-M003-004"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M003-003",
+        "PROV-M003-008",
+        "PROV-M003-009"
+      ],
+      "background_provision_ids": [
+        "PROV-M003-007",
+        "PROV-M003-005",
+        "PROV-M003-006"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary steps: the charging provision (s.3), the definition of 'specified instrument' that brings a mortgage bond within it (s.4(g)), and the place-and-manner-of-payment provision for mortgages of immovable property (s.8(2)). The rate Order that would complete the computation would be a fourth step, but it is outside the corpus.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M003-001",
+          "to_provision_id": "PROV-M003-002",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M003-001",
+          "to_provision_id": "PROV-M003-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M003-004",
+          "to_provision_id": "PROV-M003-001",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M003-005",
+          "to_provision_id": "PROV-M003-004",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M003-009",
+          "to_provision_id": "PROV-M003-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M003-007",
+          "to_provision_id": "PROV-M003-006",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Herath intends to Mortgage his land situated in Anuradhapura which is under the Land Development Ordinance 27 of 1981 amended by the Land Development (Amendment) Act No. 11 of 2022 to a commercial Bank in Sri Lanka for Rupees Ten Million (RS. 10,000,000/).",
+        "enriched_background": "Herath Mudiyanselage Herath Banda of Thirappane intends to mortgage his land situated in Anuradhapura, which is under the Land Development Ordinance 27 of 1981 amended by the Land Development (Amendment) Act No. 11 of 2022, to a commercial Bank in Sri Lanka for Rupees Ten Million (Rs. 10,000,000/-). The land is Lot 12 in Plan No. 4471 dated 8 June 2012 made by K. Wijeratne, Licensed Surveyor, of the land called Kalugalayaya situated in Thirappane in the Anuradhapura District of the North Central Province, in extent two acres. Herath holds that land on a grant issued to him under the said Ordinance on 3 March 2014, having paid all the instalments and complied with all the conditions endorsed on his earlier permit; the grant is registered in the Anuradhapura land registry. The intended mortgagee is Ruhunu Commercial Bank PLC, a licensed commercial bank carrying on banking business in Sri Lanka, which has a branch in Anuradhapura town. The bond is to secure a single advance of Rupees Ten Million only, with no provision for further advances, so the total amount secured is a definite and certain sum. Herath alone will execute the bond, there is no agreement with the bank as to who is to bear the stamp duty, and the bond is to be attested by a notary public practising in Anuradhapura on 20 April 2026.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M003-Q01-001",
+            "fact": "The bond is to secure a single advance of Rupees Ten Million only, with no provision for further advances, so the total amount secured is a definite and certain sum.",
+            "origin": "synthetic_decisive",
+            "reason": "The charge under the 2006 Act attaches to 'a bond or mortgage for any definite and certain sum of money', and the measure of the duty depends on the amount secured being limited. The original background gives a figure but does not say whether the security is for a limited sum or open-ended.",
+            "activates_provision_ids": [
+              "PROV-M003-002",
+              "PROV-M003-006"
+            ],
+            "counterfactual_effect": "If the bond secured an unlimited or fluctuating amount, it would not be a bond for a definite and certain sum, and the measure of the duty and the recoverable amount would have to be worked out differently.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M003-Q01-002",
+            "fact": "The land mortgaged lies in the Anuradhapura District of the North Central Province, and the bond is to be executed and attested before a notary public practising in Anuradhapura on 20 April 2026.",
+            "origin": "synthetic_decisive",
+            "reason": "Where duty is payable turns on the place of execution and the place where the property is situated, and the instrument date is needed to fix which text of the law applies.",
+            "activates_provision_ids": [
+              "PROV-M003-005",
+              "PROV-M003-004",
+              "PROV-M003-008"
+            ],
+            "counterfactual_effect": "If the bond were executed in a different province from the one in which the land lies, the two limbs of the place-of-payment rule would point in different directions and the answer would have to choose between them.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M003-Q01-003",
+            "fact": "Herath alone executes the bond as mortgagor in favour of Ruhunu Commercial Bank PLC, and there is no agreement between him and the bank as to who bears the stamp duty.",
+            "origin": "synthetic_decisive",
+            "reason": "Liability for the duty falls on the person executing the instrument only in the absence of an agreement to the contrary, so the absence of such an agreement has to be stated.",
+            "activates_provision_ids": [
+              "PROV-M003-003"
+            ],
+            "counterfactual_effect": "If the loan agreement made the bank liable for the stamp duty, the person liable would be the bank and not Herath.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M003-Q01-004",
+            "fact": "Herath is Herath Mudiyanselage Herath Banda of Thirappane, and the land is Lot 12 in Plan No. 4471 dated 8 June 2012 made by K. Wijeratne, Licensed Surveyor, of the land called Kalugalayaya, in extent two acres.",
+            "origin": "synthetic_neutral",
+            "reason": "Party and property identity are needed to make the scenario a determinate conveyancing matter; they do not change the statutory analysis.",
+            "activates_provision_ids": [],
+            "counterfactual_effect": "None. Different names, plan numbers or extents would not alter the duty or the place of payment.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the proposed mortgage bond is chargeable with stamp duty, on what amount and at what rate the duty is calculated, who must pay it, and where and when payment is made.",
+        "rule": "Stamp duty is charged by Stamp Duty (Special Provisions) Act s.3 on every 'specified instrument' executed in Sri Lanka, at such rate as the Minister determines by Order published in the Gazette; the Act itself fixes no rate. Section 4(g) makes a bond or mortgage for any definite and certain sum of money affecting any property a specified instrument. Stamp Duty Act No. 43 of 1982 s.16 provides that where the total amount secured is in any way limited, the bond or mortgage is charged as on a bond for the amount so limited, and Stamp Duty (Special Provisions) Act s.13 leaves that measure standing only so far as it is not inconsistent with the 2006 Act. Under s.6(e), in the absence of an agreement to the contrary the duty is payable by the person drawing, making or executing the instrument. Section 8(1) requires payment before or at execution, and s.8(2) provides that duty on a specified instrument relating to a mortgage of immovable property may be paid to a prescribed bank before or at execution, or within seven days of execution where earlier payment was impossible, the bank issuing a certificate in the prescribed form which is affixed to the instrument. Section 9 requires stamp duty that is payable to a Provincial Council in respect of instruments in List I of the Ninth Schedule to the Constitution to be paid to the Provincial Council within whose limits the instrument was executed or the property is situated. Notaries Ordinance s.31 forbids a notary to attest an instrument without an assurance that the required stamp duty is provided, and requires the notary to pay the duty and to affix the stamps or the original bank receipt to the duplicate.",
+        "application": "The instrument Herath proposes to execute is a mortgage bond over land, securing one advance of Rupees Ten Million with no provision for further advances. It is therefore a bond or mortgage for a definite and certain sum of money affecting property, and a specified instrument. Because the amount secured is limited to Rs. 10,000,000, that is the amount on which the charge is measured. Herath alone executes the bond and there is no agreement putting the duty on the bank, so the duty is his liability, though in practice the notary pays it over and recovers it. The rate to be applied to Rs. 10,000,000 is fixed only by the Ministerial Order published in the Gazette under s.3, and no such Order is in this corpus, so the money figure cannot be stated from the material available. As to place, the bond relates to a mortgage of immovable property, so payment is made to a prescribed bank before or at the time of execution and the bank's certificate is affixed to the instrument; the land is in Anuradhapura and the bond is to be executed there, so both limbs of s.9 point to the Provincial Council for that province where the duty is a devolved one.",
+        "conclusion": "The mortgage bond is chargeable with stamp duty, measured on the limited sum of Rs. 10,000,000, and the duty is payable by Herath as the executant in the absence of contrary agreement. Payment is made to a prescribed bank in Anuradhapura prior to or at the time of execution, the bank's certificate or receipt being affixed to the instrument, and where the duty is one payable to a Provincial Council it goes to the Provincial Council within whose limits the bond is executed and the land lies. The rupee amount cannot be calculated on the corpus as frozen, because the Gazette Order under s.3 that fixes the rate for a mortgage bond is not in it. The question is therefore left blocked on that limb pending the rate Order."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M003-Q01-001",
+          "claim_text": "Stamp duty is charged on every specified instrument executed in Sri Lanka at such rate as the Minister determines by Order published in the Gazette.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q01-002",
+          "claim_text": "A bond or mortgage for any definite and certain sum of money affecting any property is a specified instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q01-003",
+          "claim_text": "Where the total amount secured by a bond or mortgage is in any way limited, it is charged with the same duty as a bond for the amount so limited, so far as that measure is not inconsistent with the 2006 Act.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-006",
+            "PROV-M003-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M003-Q01-004",
+          "claim_text": "In the absence of an agreement to the contrary the duty is payable by the person drawing, making or executing the instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q01-005",
+          "claim_text": "Duty on an instrument relating to a mortgage of immovable property may be paid to a prescribed bank before or at the time of execution, and the bank issues a certificate which is affixed to the instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q01-006",
+          "claim_text": "Stamp duty payable to a Provincial Council is paid to the Council within whose limits the instrument was executed or the property is situated.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q01-007",
+          "claim_text": "A notary may not attest the bond without an assurance that the required stamp duty is provided, and the notary pays the duty and affixes the stamps or the bank receipt to the duplicate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-008",
+            "PROV-M003-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q01-008",
+          "claim_text": "Herath's proposed bond secures one advance of Rs. 10,000,000 over land, so it is a specified instrument and the charge is measured on Rs. 10,000,000.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M003-002",
+            "PROV-M003-006"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M003-Q01-001",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M003-Q01-009",
+          "claim_text": "Herath, as the sole executant and in the absence of contrary agreement, is the person liable to pay the duty.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M003-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M003-Q01-003"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q01-010",
+          "claim_text": "Because the bond is to be executed in Anuradhapura over land in Anuradhapura, payment is made to a prescribed bank there prior to or at execution, and any Provincial Council share goes to the Council for that province.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M003-004",
+            "PROV-M003-005"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M003-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M003-Q01-011",
+          "claim_text": "The rupee amount of the duty cannot be computed from the corpus because the rate is fixed only by a Ministerial Order published in the Gazette, which is not in the corpus.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M003-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q01-012",
+          "claim_text": "The bond is chargeable and the duty is paid to a prescribed bank in Anuradhapura before or at execution, with the certificate or receipt affixed to the instrument.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M003-004",
+            "PROV-M003-009"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M003-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The rate of stamp duty on a mortgage bond is fixed by Order of the Minister published in the Gazette under s.3 of the Stamp Duty (Special Provisions) Act. No such Order, and no rate schedule, is in the frozen corpus, and the corpus edition of the Stamp Duty Act No. 43 of 1982 carries no schedule either. The 'calculate' limb of the question therefore cannot be answered from corpus text without quoting a rate from memory. The 'where do you pay' limb is fully supported by ss.8(2) and 9 and by Notaries Ordinance s.31, so the question could move to proposed_gold if the rate Order is added to the corpus. Verifier: the block stands and widens. The corpus holds no regulation prescribing a bank for s.8(2), so 'prescribed bank' has no identified referent, and s.9 cannot be applied without List I of the Ninth Schedule to the Constitution, which is not in the corpus. The 'where do you pay' limb is supported only at the level of s.8(2) read with Notaries Ordinance s.31 rule (7A), not down to a named place. Roles of PROV-M003-005 and PROV-M003-006 moved from supporting to background for the reasons in their verifier notes.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M003-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Whether official approval is needed to mortgage land held under the Land Development Ordinance is answered entirely by the Ordinance: the condition implied into every grant by s.19(6)(b), the express exemption in s.19(7), the closed list of permissible mortgagees in s.43, and the definitions in s.2. No judicial authority or common law doctrine is required.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M003-Q02-01",
+          "issue": "Whether Herath holds the land on a grant (as owner of a holding) or on a permit, since the two regimes differ.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M003-Q02-02",
+          "issue": "Whether a mortgage is a disposition to which the approval condition in the grant applies.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M003-Q02-03",
+          "issue": "Whether the exemption from approval for mortgages to a licensed commercial bank covers the proposed mortgage.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M003-Q02-04",
+          "issue": "Whether any other condition of the grant, such as the bar on disposing of a divided portion or undivided share, still restricts the transaction.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M003-010",
+        "PROV-M003-011",
+        "PROV-M003-012",
+        "PROV-M003-013",
+        "PROV-M003-901"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M003-014",
+        "PROV-M003-015"
+      ],
+      "background_provision_ids": [
+        "PROV-M003-016"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary steps: the approval condition and its exemption in s.19(6)(b) and (7); the definitions in s.2 of 'holding' and 'licensed commercial bank', without which neither the condition nor the exemption can be applied to Herath and his bank; and s.43(b), which independently fixes the class of permissible mortgagees and must be satisfied for the mortgage to be lawful at all. Verifier: the definitions step also carries the s.2 definition of 'owner' (PROV-M003-901), added on verification; it sits inside that same hop and does not raise the count.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M003-010",
+          "to_provision_id": "PROV-M003-012",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M003-010",
+          "to_provision_id": "PROV-M003-013",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M003-010",
+          "to_provision_id": "PROV-M003-014",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M003-010",
+          "to_provision_id": "PROV-M003-011",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M003-011",
+          "to_provision_id": "PROV-M003-013",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M003-015",
+          "to_provision_id": "PROV-M003-011",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M003-016",
+          "to_provision_id": "PROV-M003-011",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M003-010",
+          "to_provision_id": "PROV-M003-901",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M003-011",
+          "to_provision_id": "PROV-M003-901",
+          "relationship": "defines"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Herath intends to Mortgage his land situated in Anuradhapura which is under the Land Development Ordinance 27 of 1981 amended by the Land Development (Amendment) Act No. 11 of 2022 to a commercial Bank in Sri Lanka for Rupees Ten Million (RS. 10,000,000/).",
+        "enriched_background": "Herath Mudiyanselage Herath Banda of Thirappane intends to mortgage his land situated in Anuradhapura, which is under the Land Development Ordinance 27 of 1981 amended by the Land Development (Amendment) Act No. 11 of 2022, to a commercial Bank in Sri Lanka for Rupees Ten Million (Rs. 10,000,000/-). The land is Lot 12 in Plan No. 4471 dated 8 June 2012 made by K. Wijeratne, Licensed Surveyor, of the land called Kalugalayaya situated in Thirappane in the Anuradhapura District, in extent two acres. Herath was originally put into occupation of that land on a permit, but he paid the whole of the purchase amount in instalments, developed the land to the satisfaction of the Government Agent, and a grant of the land was issued to him under the said Ordinance on 3 March 2014 and duly registered; he has held under that grant ever since. The intended mortgagee is Ruhunu Commercial Bank PLC, a licensed commercial bank carrying on banking business in Sri Lanka under a licence issued by the Central Bank, and not a registered society. What Herath proposes to mortgage is the whole of the land comprised in the grant, not a divided portion or an undivided share of it, and the mortgage is to be executed on 20 April 2026.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M003-Q02-001",
+            "fact": "Herath was originally put into occupation on a permit, but he paid the whole purchase amount in instalments, developed the land to the satisfaction of the Government Agent, and a grant of the land was issued to him on 3 March 2014 and duly registered; he holds under that grant.",
+            "origin": "synthetic_decisive",
+            "reason": "The whole answer turns on whether Herath is the owner of a holding under a grant or still a permit-holder. The original background says only that the land is 'under' the Ordinance.",
+            "activates_provision_ids": [
+              "PROV-M003-010",
+              "PROV-M003-011",
+              "PROV-M003-012"
+            ],
+            "counterfactual_effect": "If Herath were still a permit-holder, he could not mortgage to a commercial bank at all; the only permitted mortgage would be to a registered society of which he is a member, and that would require the written consent of the Government Agent.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M003-Q02-002",
+            "fact": "The intended mortgagee, Ruhunu Commercial Bank PLC, is a licensed commercial bank carrying on banking business in Sri Lanka under a licence issued by the Central Bank, and is not a registered society.",
+            "origin": "synthetic_decisive",
+            "reason": "The exemption from approval and the permission to mortgage both depend on the mortgagee falling within the class of licensed commercial banks. The original background says only 'a commercial Bank'.",
+            "activates_provision_ids": [
+              "PROV-M003-013",
+              "PROV-M003-011",
+              "PROV-M003-010"
+            ],
+            "counterfactual_effect": "If the mortgagee were a private lender or a finance company outside the listed class, the mortgage would be prohibited outright and no approval could cure it.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M003-Q02-003",
+            "fact": "What Herath proposes to mortgage is the whole of the land comprised in the grant, not a divided portion or an undivided share of it.",
+            "origin": "synthetic_decisive",
+            "reason": "A separate condition in every grant bars the disposal of a divided portion or undivided share below the unit of subdivision or the minimum fraction, and that condition is not lifted by the exemption relied on.",
+            "activates_provision_ids": [
+              "PROV-M003-010"
+            ],
+            "counterfactual_effect": "If only a divided portion or a small undivided share were mortgaged, the subdivision condition in the grant would be engaged and the transaction could be bad on that separate ground.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M003-Q02-004",
+            "fact": "Herath is Herath Mudiyanselage Herath Banda of Thirappane, and the land is Lot 12 in Plan No. 4471 of the land called Kalugalayaya in the Anuradhapura District, in extent two acres.",
+            "origin": "synthetic_neutral",
+            "reason": "Party and property identity make the scenario determinate without affecting the approval analysis.",
+            "activates_provision_ids": [],
+            "counterfactual_effect": "None. Different names or a different plan number would not change the approval position.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether Herath must obtain the approval of the Divisional Secretary before mortgaging to a licensed commercial bank land that he holds on a grant issued under the Land Development Ordinance.",
+        "rule": "Land Development Ordinance s.2 defines a 'holding' as land alienated by grant under the Ordinance, defines 'disposition' to include a mortgage, and defines 'licensed commercial bank' by reference to the banking legislation. Section 19(6) requires every grant to contain conditions that the owner shall not dispose of a divided portion or undivided share smaller than the unit of subdivision or the minimum fraction, and shall not dispose of the holding except with the prior approval of the Government Agent. Section 19(7) then provides that notwithstanding paragraph (b) of subsection (6), the approval of the Divisional Secretary shall not be required when mortgaging such holding to a licenced commercial bank, the State Mortgage and Investment Bank, the Development Finance Corporation of Ceylon, the National Development Bank of Sri Lanka, the National Housing Development Authority, the Housing Development Finance Corporation Bank of Sri Lanka, any registered society or other prescribed institution. Section 43(b) independently provides that the owner of a holding shall not mortgage it to any person other than a licensed commercial bank or one of the same listed institutions. The position of a permit-holder is different: by s.46 no permit-holder may effect any disposition of the land alienated on the permit, except that with the written consent of the Government Agent he may mortgage his interest to a registered society of which he is a member, and any other disposition is null and void.",
+        "application": "Herath is not a permit-holder. He paid the whole purchase amount, complied with the conditions of his permit, and a registered grant of the land was issued to him, so the land is a 'holding' and he is its owner. A mortgage is a disposition, so the condition in his grant that he shall not dispose of the holding except with prior approval is engaged on its face. The proposed mortgagee is a licensed commercial bank, which is both within the class of permissible mortgagees under s.43(b) and within the class that triggers the exemption in s.19(7). That exemption is expressed to displace paragraph (b) of subsection (6), which is precisely the approval condition, and it applies to the whole of the holding, which is what Herath proposes to mortgage rather than a divided portion or an undivided share. Had Herath still been a permit-holder, no approval would have helped him, because a permit-holder may mortgage only to a registered society of which he is a member and then only with the written consent of the Government Agent, and any other disposition would be null and void.",
+        "conclusion": "No. Herath does not require the approval of the Divisional Secretary to mortgage the land. Because he holds under a grant and the mortgagee is a licensed commercial bank, Land Development Ordinance s.19(7) expressly removes the approval requirement that s.19(6)(b) would otherwise impose, and s.43(b) permits a mortgage to such a bank. The advice should be qualified in two ways: the exemption covers only the approval condition, so the other conditions of the grant, in particular the bar in s.19(6)(a) on disposing of a divided portion or an undivided share below the prescribed unit, continue to apply; and the exemption depends on the bank in fact falling within the definition of a licensed commercial bank, which should be confirmed before the bond is drawn."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M003-Q02-001",
+          "claim_text": "A 'holding' under the Land Development Ordinance is land alienated by grant under the Ordinance.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-002",
+          "claim_text": "A mortgage is a 'disposition' for the purposes of the Ordinance.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-003",
+          "claim_text": "Every grant contains a condition that the owner shall not dispose of the holding except with the prior approval of the Government Agent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-004",
+          "claim_text": "Notwithstanding that condition, the approval of the Divisional Secretary is not required when mortgaging the holding to a licensed commercial bank or another listed institution.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-005",
+          "claim_text": "The owner of a holding may not mortgage it to any person other than a licensed commercial bank or one of the other listed institutions.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-011",
+            "PROV-M003-901"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-006",
+          "claim_text": "'Licensed commercial bank' bears the meaning given to it by the banking legislation referred to in the Ordinance.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-013"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-007",
+          "claim_text": "A permit-holder, by contrast, may effect no disposition except a mortgage to a registered society of which he is a member, and then only with the written consent of the Government Agent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-015"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-008",
+          "claim_text": "The general bar on seizure and sale of alienated land does not prevent a licensed commercial bank enforcing a mortgage over land alienated on a grant.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M003-016"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-009",
+          "claim_text": "Herath holds the land under a registered grant issued after he paid the purchase amount in full, so the land is a holding and he is its owner rather than a permit-holder.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M003-012",
+            "PROV-M003-901"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M003-Q02-001"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-010",
+          "claim_text": "The proposed mortgage is a disposition of the holding, so the approval condition in the grant is engaged on its face.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M003-010",
+            "PROV-M003-014"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-011",
+          "claim_text": "The intended mortgagee is a licensed commercial bank, so it is a permissible mortgagee and falls within the class that triggers the exemption.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M003-011",
+            "PROV-M003-013"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M003-Q02-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-012",
+          "claim_text": "Because the whole holding and not a divided portion or undivided share is being mortgaged, the separate subdivision condition in the grant is not offended.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M003-010"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M003-Q02-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-013",
+          "claim_text": "Herath does not require the approval of the Divisional Secretary to mortgage the land to the bank.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M003-010",
+            "PROV-M003-011",
+            "PROV-M003-013"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M003-Q02-001",
+            "FACT-M003-Q02-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M003-Q02-014",
+          "claim_text": "The exemption removes only the approval condition, so the remaining conditions of the grant continue to bind Herath.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M003-010"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M003-Q02-003"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

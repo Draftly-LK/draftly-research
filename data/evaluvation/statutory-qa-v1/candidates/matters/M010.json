@@ -1,0 +1,105 @@
+{
+  "benchmark_matter_id": "M010",
+  "source_matter_id": "P01-Q09-M00",
+  "grouping_key": "P01-Q09-M00",
+  "paper_no": 1,
+  "question_no": 9,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Martin Perera wants to dispose his house after his death to Siripala who is his helper by a Last Will and appoints his driver Nihal as the executor of the said Last Will. He does not dispose anything to his children by the said Will.",
+    "normalized": "Martin Perera wants to dispose his house after his death to Siripala who is his helper by a Last Will and appoints his driver Nihal as the executor of the said Last Will. He does not dispose anything to his children by the said Will.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P01-Q09-P01",
+          "P01-Q09-P03"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M010-Q01",
+      "atomic_id": "P01-Q09-P01",
+      "part_uid": "paper-01/q9/i",
+      "part_id": "i",
+      "item_id": null,
+      "marks": 2,
+      "pdf_page": 4,
+      "question_original": "Can Martin Perera execute the said Will without assigning any reason? Discuss with provisions.",
+      "question_normalized": "Can Martin Perera execute the said Will without assigning any reason? Discuss with provisions.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Martin Perera wants to dispose his house after his death to Siripala who is his helper by a Last Will and appoints his driver Nihal as the executor of the said Last Will. He does not dispose anything to his children by the said Will.",
+      "effective_background_normalized": "Martin Perera wants to dispose his house after his death to Siripala who is his helper by a Last Will and appoints his driver Nihal as the executor of the said Last Will. He does not dispose anything to his children by the said Will.",
+      "source_quote": "Can Martin Perera execute the said Will without assigning any reason?\nDiscuss with provisions.\n(2 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.85,
+        "flags": [
+          "source_quote_missing_roman_label"
+        ]
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "party_legal_capacity",
+        "relationship_between_parties"
+      ]
+    },
+    {
+      "benchmark_question_id": "M010-Q02",
+      "atomic_id": "P01-Q09-P03",
+      "part_uid": "paper-01/q9/iii",
+      "part_id": "iii",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 4,
+      "question_original": "After the death of Martin Perera, what steps need to be taken by Nihal?",
+      "question_normalized": "After the death of Martin Perera, what steps need to be taken by Nihal?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Martin Perera wants to dispose his house after his death to Siripala who is his helper by a Last Will and appoints his driver Nihal as the executor of the said Last Will. He does not dispose anything to his children by the said Will.",
+      "effective_background_normalized": "Martin Perera wants to dispose his house after his death to Siripala who is his helper by a Last Will and appoints his driver Nihal as the executor of the said Last Will. He does not dispose anything to his children by the said Will.",
+      "source_quote": "(iii) After the death of Martin Perera, what steps need to be taken by Nihal?\n(3 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "property_identity",
+        "relevant_document",
+        "party_identity"
+      ]
+    }
+  ],
+  "matter_reference_date": "2026-04",
+  "exam_session": "APRIL 2026",
+  "matter_tier": "A",
+  "tier_a_question_count": 2
+}

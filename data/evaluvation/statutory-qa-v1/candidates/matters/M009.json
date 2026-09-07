@@ -1,0 +1,71 @@
+{
+  "benchmark_matter_id": "M009",
+  "source_matter_id": "P01-Q06-M01",
+  "grouping_key": "P01-Q06-M01",
+  "paper_no": 1,
+  "question_no": 6,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Kamal Perera is in occupation in a land situated in Homagama since 1980 by long and prescriptive rights. He wants to get a title certificate to his land under the Registration of Title Act No. 21 of 1998. Kamal Perera retained Sureka Pathirana as his Notary.\n\nKamal gifted the said land to his son Subash. The instrument was executed by Sureka on 2nd January 2026. Sureka failed to send the instrument for registration and she realised her failure on 12th January 2026.",
+    "normalized": "Kamal Perera is in occupation in a land situated in Homagama since 1980 by long and prescriptive rights. He wants to get a title certificate to his land under the Registration of Title Act No. 21 of 1998. Kamal Perera retained Sureka Pathirana as his Notary.\n\nKamal gifted the said land to his son Subash. The instrument was executed by Sureka on 2nd January 2026. Sureka failed to send the instrument for registration and she realised her failure on 12th January 2026.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P01-Q06-P03"
+        ]
+      },
+      {
+        "segment_index": 1,
+        "field": "own_background",
+        "atomic_ids": [
+          "P01-Q06-P03"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M009-Q01",
+      "atomic_id": "P01-Q06-P03",
+      "part_uid": "paper-01/q6/iii",
+      "part_id": "iii",
+      "item_id": null,
+      "marks": 4,
+      "pdf_page": 3,
+      "question_original": "Is it mandatory to register an instrument under the Registration of Title Act? Within how many days shall an instrument be forwarded for registration?",
+      "question_normalized": "Is it mandatory to register an instrument under the Registration of Title Act? Within how many days shall an instrument be forwarded for registration?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Kamal Perera is in occupation in a land situated in Homagama since 1980 by long and prescriptive rights. He wants to get a title certificate to his land under the Registration of Title Act No. 21 of 1998. Kamal Perera retained Sureka Pathirana as his Notary.\n\nKamal gifted the said land to his son Subash. The instrument was executed by Sureka on 2nd January 2026. Sureka failed to send the instrument for registration and she realised her failure on 12th January 2026.",
+      "effective_background_normalized": "Kamal Perera is in occupation in a land situated in Homagama since 1980 by long and prescriptive rights. He wants to get a title certificate to his land under the Registration of Title Act No. 21 of 1998. Kamal Perera retained Sureka Pathirana as his Notary.\n\nKamal gifted the said land to his son Subash. The instrument was executed by Sureka on 2nd January 2026. Sureka failed to send the instrument for registration and she realised her failure on 12th January 2026.",
+      "source_quote": "(iii) Kamal gifted the said land to his son Subash. The instrument was executed by Sureka on 2nd January\n2026. Sureka failed to send the instrument for registration and she realised her failure on 12th\nJanuary 2026.\nIs it mandatory to register an instrument under the Registration of Title Act? Within how many days\nshall an instrument be forwarded for registration?\n(4 marks)",
+      "classification": {
+        "context_sources": [
+          "shared",
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.82,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "property_identity",
+        "party_identity"
+      ]
+    }
+  ],
+  "matter_reference_date": "2026-04",
+  "exam_session": "APRIL 2026",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

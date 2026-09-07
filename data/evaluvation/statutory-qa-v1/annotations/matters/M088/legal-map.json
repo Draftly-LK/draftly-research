@@ -1,0 +1,653 @@
+{
+  "benchmark_matter_id": "M088",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M088",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T23:04:10Z",
+    "verification_agent": "verifier-M088",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T23:17:11Z"
+  },
+  "matter_reference_date": "2019-04",
+  "matter_reference_date_basis": "exam_session 'APRIL 2019' and matter_reference_date '2019-04' recorded in candidates/matters/M088.json; the lease agreement is to be executed at that session date.",
+  "corpus_gaps": [
+    "The rate of stamp duty on a lease is fixed by Order of the Minister published in the Gazette under s.3(1) of the Stamp Duty (Special Provisions) Act No. 12 of 2006. No such Order, and no rate schedule for leases, is in the frozen corpus, so the arithmetic asked for in M088-Q01 cannot be produced from corpus text.",
+    "The corpus holds no rule on what forms the chargeable amount of a lease, in particular whether an advance payment of rent and a refundable deposit are included in or excluded from the base on which lease duty is computed. That basis of computation comes from the same Gazette Order or from regulations, which are absent.",
+    "List I of the Ninth Schedule to the Constitution, referred to in s.9 of Act No. 12 of 2006, is not in the corpus, so the allocation of lease duty to a Provincial Council cannot be confirmed from corpus text alone.",
+    "The regulations prescribing banks and the form of certificate under s.8(2) and s.12 of Act No. 12 of 2006 are not in the corpus.",
+    "The corpus contains no source for the content of conveyancing clauses. Corpus-wide searches for 'reddendum', 'habendum' and 'covenant of the lessee' return no match. That material comes from the Roman-Dutch common law of lease and from conveyancing precedent, neither of which is in scope.",
+    "The text of s.2 of the Prevention of Frauds Ordinance in force at 2019-04 is not in the corpus: 30-2022 s.2 repealed everything from the words 'shall be of force' to the end of the section and 4-2024 s.2 substituted paragraph (a), and the corpus holds only the consolidated post-2024 text. The words quoted in PROV-M088-009 predate both amendments, but the execution and attestation requirement as it stood in April 2019 can only be reached indirectly, through 7-1840/s19 and 17-1852/s2.",
+    "No regulation made under s.12 of Act No. 12 of 2006 prescribing the banks for the purposes of s.8(2), or the form of the bank's certificate, is in the corpus, so the bank to which the duty on this lease is paid cannot be named from corpus text."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M088-001",
+      "section_id": "12-2006/s3",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "there shall be charged a duty (hereinafter to be called \"stamp duty\") at such rate as the Minister may determine by Order published in the Gazette on every \"specified instrument\"- (a) executed, drawn or presented in Sri Lanka",
+      "why_relevant": "The charging provision for stamp duty on the lease agreement, which is to be executed in Sri Lanka. It also shows that the rate is not fixed in the Act but by Ministerial Order in the Gazette, which is why the amount cannot be computed from the corpus.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; the corpus records no amendment to s.3, so the text applies at 2019-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M088-002",
+      "section_id": "12-2006/s4",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "4",
+      "subsection": "(i)",
+      "relevant_excerpt": "(h) a promissory note; (i) a lease or hire of any property; (j) a receipt or discharge given for any money or other property;",
+      "why_relevant": "Defines 'specified instrument' for s.3 and lists a lease of any property. It is what brings the two-year lease of the upstair floor at Nawala Road within the charge to stamp duty.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; the corpus records no amendment to s.4, so the text applies at 2019-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M088-003",
+      "section_id": "12-2006/s6",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "6",
+      "subsection": "(c)",
+      "relevant_excerpt": "Otherwise than in cases where there is an agreement to the contrary, stamp duty shall be payable:- (a) in the case of a policy of insurance, by the person effecting the insurance; (b) in the case of a transfer or assignment of any share, by the transferee or assignee of such share; (c) in the case of a lease, by the lessee;",
+      "why_relevant": "Fixes who bears the duty on a lease, namely the lessee, unless the parties agree otherwise. It identifies Ravi Perera as the person who must pay, subject to any contrary term the parties put in the lease.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; amended by Act No. 10 of 2008, which predates the matter date, so the consolidated text applies at 2019-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M088-004",
+      "section_id": "12-2006/s8",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "8",
+      "subsection": "(1)",
+      "relevant_excerpt": "the stamp duty payable on any specified instrument shall be paid by means of affixing adhesive stamps to the required value, prior to, or at the time of, the execution of the instrument. The value of the stamp duty so paid shall be specified on the face of the instrument so executed",
+      "why_relevant": "Gives the default manner and timing of payment: adhesive stamps to the required value, before or at execution, with the value stated on the face of the instrument. It is the fallback where the bank route in s.8(2) is not used.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; substituted by Act No. 10 of 2008, which predates the matter date, so the consolidated text applies at 2019-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M088-005",
+      "section_id": "12-2006/s8",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "8",
+      "subsection": "(2)",
+      "relevant_excerpt": "Stamp duty payable on any specified instrument relating to a mortgage or lease of any immovable property may be paid, prior to, or at the time of, the execution of the specified instrument, to a prescribed bank. Where however, the stamp duty cannot be so paid due to reasons beyond the control of the person by whom the stamp duty is payable, the stamp duty shall be paid to the prescribed bank within seven days from the date of such execution. The bank shall thereupon issue a certificate in the prescribed form certifying that the stamp duty has been duly paid",
+      "why_relevant": "This answers 'to whom do you pay' for a lease of immovable property: payment goes to a prescribed bank, which issues a certificate in the prescribed form to be affixed to the instrument. It also gives the seven-day outer limit where payment before execution is impossible.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; substituted by Act No. 10 of 2008, which predates the matter date, so the consolidated text applies at 2019-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M088-006",
+      "section_id": "12-2006/s9",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "9",
+      "subsection": null,
+      "relevant_excerpt": "All stamp duty payable to a Provincial Council in respect of documents and instruments referred to in List I of the Ninth Schedule to the Constitution, shall be paid to the respective Provincial Council within whose limits the instrument was executed or the property situated as the case may be",
+      "why_relevant": "Identifies the ultimate recipient where the duty is a Provincial Council duty: the Council within whose limits the instrument was executed or the property is situated. The demised premises are at Nawala Road, Rajagiriya, which points to the Western Provincial Council.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; the corpus records no amendment to s.9, so the text applies at 2019-04.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and unamended, but the role is overstated: s.9 reaches only duty payable to a Provincial Council in respect of List I documents, List I is outside the corpus, and the Western Province's own charging section (6-1990/s37) charges transfers, court documents and motor vehicle transfers but not leases, so this section is demoted to background for M088-Q02."
+    },
+    {
+      "provision_id": "PROV-M088-007",
+      "section_id": "12-2006/s13",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "the provisions of the Stamp Duty Act, No. 43 of 1982, relating to the Imposition of Stamp Duty (other than any instrument relating to the transfer of immovable property, the transfer of motor vehicles or documents filed in Court), Exemptions and any other provision in the aforesaid Act, shall, in so far as the same are inconsistent with the provisions of this Act, have no operation and the provisions of this Act shall prevail.",
+      "why_relevant": "Explains why the imposition provisions of the Stamp Duty Act No. 43 of 1982 cannot be used to compute duty on this lease: so far as they are inconsistent with Act No. 12 of 2006 they have no operation, and a lease is not one of the carved-out categories.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; the corpus records no amendment to s.13, so the text applies at 2019-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M088-008",
+      "section_id": "6-1990/s37",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "37",
+      "subsection": null,
+      "relevant_excerpt": "There shall be charged on- (a) every instrument relating to a transfer of situated in the immovable property Western Province; (b) every document presented or filed, in proceedings instituted in any Court of law established by law, in the Western Province of Sri Lanka; (c) every transfer of a motor vehicle effected in Western Province. a stamp duty at the prescribed rate.",
+      "why_relevant": "The premises are in the Western Province, so the provincial stamp duty statute was checked. Its charging section covers transfers of immovable property, documents filed in court and motor vehicle transfers, and does not list a lease, which is why the charge on this lease is looked for in Act No. 12 of 2006.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; the corpus records no amendment to s.37, so the text applies at 2019-04. The corpus text of paragraph (a) is visibly garbled ('a transfer of situated in the immovable property Western Province') and should be read against the Gazette.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is a verbatim copy of the corpus body, but paragraph (a) is visibly corrupted in the corpus text and must be read against the Gazette before the negative inference, that the Western Province statute does not charge leases, is relied on."
+    },
+    {
+      "provision_id": "PROV-M088-009",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month)",
+      "why_relevant": "A lease for two years is outside the exception for a lease at will or for a period not exceeding one month, so the instrument must be in writing and notarially executed and attested to be of force in law. This is the frame in which the lessee's covenants and the reddendum are drafted, but it says nothing about their content.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1840. The corpus text is consolidated to 2024, and its lettered paragraphs (a) and (b), including the thumb impression requirement, come from Act No. 30 of 2022 and Act No. 4 of 2024, both after 2019-04. The words quoted here, the scope of the section and the lease exception, predate those amendments and are unaffected by them. Used as background only.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The quoted words sit before the phrase from which 30-2022 s.2 repealed and substituted the rest of the section, so the excerpt itself is safe for 2019-04, but the execution requirement in force at that date is not in the corpus (only the post-2024 text is) and is corroborated only indirectly by 7-1840/s19 and 17-1852/s2."
+    },
+    {
+      "provision_id": "PROV-M088-901",
+      "section_id": "12-2006/s2",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "shall, be charged with the proper implementation and administration of this Act",
+      "why_relevant": "Added by the verifier. The Act is administered by the Commissioner-General, which is the statutory anchor for the answer to 'to whom do you pay': duty under Act No. 12 of 2006 is administered centrally and collected through the machinery in s.8, not paid to the lessor or to the notary.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; the corpus records no amendment to s.2, so the text applies at 2019-04.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim against 12-2006/s2."
+    },
+    {
+      "provision_id": "PROV-M088-902",
+      "section_id": "12-2006/s12",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "12",
+      "subsection": "(1)",
+      "relevant_excerpt": "The Minister may make regulations in respect of all matters which are required by this Act to be prescribed",
+      "why_relevant": "Added by the verifier. Section 8(2) routes payment to a 'prescribed bank' against a certificate 'in the prescribed form'; s.12 is the only source of that prescription, and no such regulation is in the corpus, so the bank cannot be named from corpus text.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; the corpus records no amendment to s.12, so the text applies at 2019-04.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim against 12-2006/s12."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M088-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The chargeability of a lease to stamp duty, the person liable and the machinery of payment are all statutory. The figure asked for turns on the rate and the chargeable amount, both set by subordinate legislation made under the Act rather than by judicial authority or common law. No case law or Roman-Dutch doctrine is needed.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M088-Q01-01",
+          "issue": "Whether a two-year lease of immovable property is an instrument chargeable with stamp duty.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M088-Q01-02",
+          "issue": "At what rate, and on what chargeable amount, stamp duty on this lease is computed, given a monthly rental of Rs. 75,000 for two years, one year's rent paid in advance and a refundable deposit of Rs. 200,000.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M088-001",
+        "PROV-M088-002"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M088-003",
+        "PROV-M088-007"
+      ],
+      "background_provision_ids": [
+        "PROV-M088-008"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Two indispensable steps: the charging provision (s.3) plus the provision that brings a lease within 'specified instrument' (s.4). The third step, the Gazette Order fixing the rate, is not in the corpus and is not counted.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M088-002",
+          "to_provision_id": "PROV-M088-001",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M088-007",
+          "to_provision_id": "PROV-M088-001",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kusum Jayawardana wishes to lease out the upstair of her house bearing assessment No. 30/1 situated at Nawala Road, Rajagiriya to Ravi Perera at a monthly rental of Rs. 75,000/- for a period of 2 years. She requests for a refundable deposit of Rs. 200,000/- and 1 year rent to be paid in advance to be set off against the rent payable in the 2nd Year at the execution of the Lease Agreement. Further she says that the lessee should bear the cost of repairs upto a sum of Rs. 10,000/- at any one time and that he should not do any structural repairs to the premises. Also without her consent he cannot assign, sublet or part with the possession of the demised premises. The Lessee should pay the water, electricity and telephone bills and that at the end of the term should hand over vacant possession in the same good order.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the proposed lease agreement is chargeable with stamp duty and, if so, what sum is payable on a two-year lease of the upstair floor at a monthly rental of Rs. 75,000, with one year's rent in advance and a refundable deposit of Rs. 200,000.",
+        "rule": "Stamp Duty (Special Provisions) Act No. 12 of 2006 s.3(1) charges stamp duty on every specified instrument executed, drawn or presented in Sri Lanka at such rate as the Minister determines by Order published in the Gazette, and s.3(2) allows different rates for different classes of instrument. Section 4(i) makes a lease or hire of any property a specified instrument. Section 6(c) makes the duty on a lease payable by the lessee unless the parties agree otherwise. Section 13 displaces the imposition provisions of the Stamp Duty Act No. 43 of 1982 so far as they are inconsistent with the 2006 Act, leases not being within the carved-out categories of transfers of immovable property, transfers of motor vehicles and documents filed in court.",
+        "application": "The instrument Kusum Jayawardana proposes to execute in favour of Ravi Perera is a lease of immovable property to be executed in Sri Lanka, so it is a specified instrument under s.4(i) and falls within the charge in s.3(1). The consideration disclosed is a monthly rental of Rs. 75,000 over a term of two years, one year's rent paid in advance at execution and set off against the rent for the second year, and a refundable deposit of Rs. 200,000. Converting those figures into a duty amount requires two things the frozen corpus does not contain: the rate determined by the Minister by Order under s.3(1) and in force in April 2019, and the rule fixing the chargeable amount, in particular whether the refundable deposit and the advance rent enter the computation or whether the base is the aggregate rent for the term. Neither can be supplied from the statute text and neither may be assumed.",
+        "conclusion": "The lease agreement is chargeable with stamp duty as a specified instrument, and the duty is prima facie the lessee's to pay. The calculation asked for cannot be completed on the corpus available, because the operative rate Order under s.3(1) and the basis of computation for lease duty lie outside it, so this question is recorded as blocked for missing authority rather than answered with a figure."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M088-Q01-001",
+          "claim_text": "Stamp duty is charged on every specified instrument executed, drawn or presented in Sri Lanka at the rate the Minister determines by Order published in the Gazette.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M088-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q01-002",
+          "claim_text": "A lease or hire of any property is a specified instrument for the purposes of the charging section.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M088-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q01-003",
+          "claim_text": "The imposition provisions of the Stamp Duty Act No. 43 of 1982 do not govern this lease so far as they are inconsistent with the 2006 Act, a lease not being a transfer of immovable property, a transfer of a motor vehicle or a document filed in court.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M088-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q01-004",
+          "claim_text": "The proposed two-year lease of the upstair floor at Nawala Road, Rajagiriya is a lease of property to be executed in Sri Lanka and is therefore a specified instrument within the charge to stamp duty.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M088-001",
+            "PROV-M088-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q01-005",
+          "claim_text": "The duty payable on the lease cannot be quantified from the corpus, because the rate Order made under s.3(1) and the rule fixing the chargeable amount for a lease are not part of the frozen corpus.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M088-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-3"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The question asks for a computed figure. Section 3(1) of Act No. 12 of 2006 leaves the rate to a Ministerial Order published in the Gazette, and no such Order, rate schedule or basis-of-computation rule for leases is in the frozen corpus. Chargeability and the person liable can be established from corpus text; the amount cannot, and inventing a rate is not permitted.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M088-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Who receives payment of stamp duty on a lease of immovable property, and in what manner, is set out in ss.6, 8 and 9 of the Stamp Duty (Special Provisions) Act No. 12 of 2006. No judicial authority or common law doctrine is needed.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M088-Q02-01",
+          "issue": "To whom stamp duty on a lease of immovable property is paid, and how payment is evidenced on the instrument.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M088-Q02-02",
+          "issue": "Who, as between lessor and lessee, bears the duty on this lease.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M088-003",
+        "PROV-M088-005"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M088-004",
+        "PROV-M088-902"
+      ],
+      "background_provision_ids": [
+        "PROV-M088-002",
+        "PROV-M088-006",
+        "PROV-M088-008",
+        "PROV-M088-901"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Two indispensable steps after verification: s.8(2), which routes payment on a lease of immovable property to a prescribed bank against a certificate, and s.6(c), which puts the duty on the lessee. Section 9 was demoted to background by the verifier because it bites only on duty payable to a Provincial Council under List I of the Ninth Schedule, which is not in the corpus.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M088-002",
+          "to_provision_id": "PROV-M088-005",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M088-003",
+          "to_provision_id": "PROV-M088-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M088-004",
+          "to_provision_id": "PROV-M088-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M088-902",
+          "to_provision_id": "PROV-M088-005",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kusum Jayawardana wishes to lease out the upstair of her house bearing assessment No. 30/1 situated at Nawala Road, Rajagiriya to Ravi Perera at a monthly rental of Rs. 75,000/- for a period of 2 years. She requests for a refundable deposit of Rs. 200,000/- and 1 year rent to be paid in advance to be set off against the rent payable in the 2nd Year at the execution of the Lease Agreement. Further she says that the lessee should bear the cost of repairs upto a sum of Rs. 10,000/- at any one time and that he should not do any structural repairs to the premises. Also without her consent he cannot assign, sublet or part with the possession of the demised premises. The Lessee should pay the water, electricity and telephone bills and that at the end of the term should hand over vacant possession in the same good order.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "To whom the stamp duty on this lease agreement is paid, in what manner and by when, and which party bears it.",
+        "rule": "Under the Stamp Duty (Special Provisions) Act No. 12 of 2006 s.6(c), stamp duty on a lease is payable by the lessee unless the parties agree otherwise. Section 8(1) provides that, where the duty is not compounded, it is paid by affixing adhesive stamps to the required value before or at the time of execution, with the value stated on the face of the instrument. Section 8(2) provides a distinct route for an instrument relating to a mortgage or lease of immovable property: the duty may be paid to a prescribed bank before or at the time of execution and, where that is impossible for reasons beyond the control of the person liable, within seven days of execution; the bank then issues a certificate in the prescribed form certifying that the duty has been duly paid. Section 9 provides that all stamp duty payable to a Provincial Council in respect of documents referred to in List I of the Ninth Schedule to the Constitution is paid to the Provincial Council within whose limits the instrument was executed or the property is situated.",
+        "application": "This is a lease of immovable property, the upstair floor of the house bearing assessment No. 30/1 at Nawala Road, Rajagiriya, so s.8(2) applies. Payment is made to a bank prescribed for the purpose, before or at the time the lease is executed, and the bank's certificate of payment is affixed to the instrument; only if payment before execution is prevented by reasons beyond the control of the person liable does the seven-day allowance apply. The money is not handed to the lessor and is not paid to the notary. As between the parties, s.6(c) puts the duty on Ravi Perera as lessee, so unless the lease provides otherwise he is the person who must make the payment. The premises are situated, and the lease would be executed, within the Western Province, so if lease duty falls within List I of the Ninth Schedule the Council entitled to it under s.9 is the Western Provincial Council. The Ninth Schedule itself is outside the corpus, so that last step is stated as a qualified proposition rather than a settled one.",
+        "conclusion": "The duty is paid to a prescribed bank, before or at the time of execution of the lease, and the bank's certificate in the prescribed form is affixed to the instrument; alternatively, in the general manner under s.8(1), by adhesive stamps of the required value affixed before or at execution and cancelled by the executant. The person who must pay is the lessee, Ravi Perera, absent agreement to the contrary. Where the duty is one payable to a Provincial Council, s.9 directs it to the Council within whose limits the instrument was executed or the property is situated, which on these facts points to the Western Provincial Council."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M088-Q02-001",
+          "claim_text": "Stamp duty on a lease is payable by the lessee unless there is an agreement to the contrary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M088-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q02-002",
+          "claim_text": "Stamp duty on an instrument relating to a lease of immovable property may be paid to a prescribed bank before or at the time of execution, and the bank issues a certificate in the prescribed form certifying that the duty has been duly paid.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M088-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q02-003",
+          "claim_text": "Where the duty cannot be paid before or at execution for reasons beyond the control of the person liable, it must be paid to the prescribed bank within seven days from the date of execution.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M088-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q02-004",
+          "claim_text": "Otherwise the duty is paid by affixing adhesive stamps to the required value before or at the time of execution, and the value paid is specified on the face of the instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M088-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q02-005",
+          "claim_text": "Stamp duty payable to a Provincial Council in respect of documents within List I of the Ninth Schedule to the Constitution is paid to the Council within whose limits the instrument was executed or the property is situated.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M088-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q02-006",
+          "claim_text": "Because the lease concerns immovable property, the duty on it is paid to a prescribed bank and the bank's certificate is affixed to the lease agreement.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M088-005",
+            "PROV-M088-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M088-Q02-007",
+          "claim_text": "The lessee, Ravi Perera, is the party who must pay the duty unless the lease agreement provides otherwise.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M088-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q02-008",
+          "claim_text": "The demised premises are at Nawala Road, Rajagiriya, within the Western Province, so any Provincial Council entitlement to this duty under s.9 would be that of the Western Provincial Council.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M088-006",
+            "PROV-M088-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "rejected"
+        },
+        {
+          "claim_id": "CL-M088-Q02-009",
+          "claim_text": "The stamp duty on this lease agreement is paid to a bank prescribed for that purpose, before or at the time of execution, by the lessee, and is evidenced on the instrument by the bank's certificate or, in the general case, by adhesive stamps.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M088-003",
+            "PROV-M088-004",
+            "PROV-M088-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "The statutory core is verified: s.8(2) allows the duty on a lease of immovable property to be paid to a prescribed bank before or at execution against a certificate in the prescribed form, s.8(1) gives the adhesive-stamp route, and s.6(c) puts the duty on the lessee. The verifier rejects the Provincial Council limb: claim CL-M088-Q02-008 and the closing sentence of the gold answer send this lease duty to the Western Provincial Council, but s.9 applies only to duty payable to a Provincial Council in respect of List I of the Ninth Schedule, List I is not in the corpus, and 6-1990/s37 charges only transfers of immovable property, documents filed in court and motor vehicle transfers, not leases, which points the other way. Claim CL-M088-Q02-006 also states the permissive 'may be paid' in s.8(2) as mandatory. The gold answer prose was left unchanged, so a lawyer must settle the Provincial Council limb and the permissive wording before this question becomes proposed gold.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M088-Q03",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The statutes in the corpus settle the form the instrument must take, namely that a lease for two years must be in writing and notarially executed, but nowhere prescribe or supply the covenants a lessee gives. The content of a lessee's covenants comes from the Roman-Dutch common law of lease and from settled conveyancing precedent, neither of them statutory, so a complete answer needs authority outside the statute book.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M088-Q03-01",
+          "issue": "What covenants on the part of the lessee should be inserted in a two-year lease of the upstair floor, given the lessor's stipulations on repairs, structural alterations, assignment and subletting, utility bills and redelivery of vacant possession.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M088-Q03-02",
+          "issue": "Whether any provision in the corpus prescribes the content of a lessee's covenants in a notarial lease.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [],
+      "supporting_provision_ids": [],
+      "background_provision_ids": [
+        "PROV-M088-009"
+      ],
+      "legal_hop_count": 0,
+      "hop_count_basis": "No indispensable statutory provision was identified. The only statutory input is the formal requirement of notarial execution, recorded as background, so the hop count is zero.",
+      "reasoning_edges": [],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kusum Jayawardana wishes to lease out the upstair of her house bearing assessment No. 30/1 situated at Nawala Road, Rajagiriya to Ravi Perera at a monthly rental of Rs. 75,000/- for a period of 2 years. She requests for a refundable deposit of Rs. 200,000/- and 1 year rent to be paid in advance to be set off against the rent payable in the 2nd Year at the execution of the Lease Agreement. Further she says that the lessee should bear the cost of repairs upto a sum of Rs. 10,000/- at any one time and that he should not do any structural repairs to the premises. Also without her consent he cannot assign, sublet or part with the possession of the demised premises. The Lessee should pay the water, electricity and telephone bills and that at the end of the term should hand over vacant possession in the same good order.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether five covenants of the lessee can be drafted for this lease on statutory authority available in the corpus.",
+        "rule": "The Prevention of Frauds Ordinance No. 7 of 1840 s.2 excepts only a lease at will or for a period not exceeding one month from the requirement of a written, notarially executed and attested instrument, so a two-year lease must be reduced to a notarial deed. Beyond that formal requirement, no provision in the corpus prescribes, names or supplies the covenants a lessee undertakes; corpus searches for 'reddendum', 'habendum' and 'covenant of the lessee' return no match.",
+        "application": "The lessor's stipulations, that the lessee bear repair costs up to Rs. 10,000 at any one time, do no structural repairs, not assign, sublet or part with possession without her consent, pay the water, electricity and telephone bills, and hand over vacant possession in the same good order at the end of the term, are the raw material of the five covenants sought. Turning them into covenants is a drafting exercise governed by the Roman-Dutch common law of lease and by conveyancing precedent, not by any section reachable in this corpus. Drafting them here would mean stating law from outside the frozen corpus, which the research protocol does not allow.",
+        "conclusion": "The question is reserved. The statutory frame, that the lease must be a notarially executed instrument, can be stated from the corpus, but the covenants themselves rest on non-statutory authority and must be settled by a lawyer or against a conveyancing source outside this corpus."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M088-Q03-001",
+          "claim_text": "A lease of immovable property for a period exceeding one month must be in writing and notarially executed and attested to be of force in law.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M088-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q03-002",
+          "claim_text": "The proposed lease is for two years and so falls outside the exception for a lease at will or for a period not exceeding one month, and must be embodied in a notarial instrument.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M088-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q03-003",
+          "claim_text": "The content of the lessee's covenants cannot be drawn from the corpus, so the drafting is reserved for authority outside it.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M088-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-5"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "A drafting question. No provision in the frozen corpus prescribes or supplies the covenants of a lessee; the corpus yields only the formal requirement of notarial execution under the Prevention of Frauds Ordinance s.2. The substance of the covenants comes from the Roman-Dutch common law of lease and conveyancing precedent, which are outside scope.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M088-Q04",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The reddendum is the clause by which rent is reserved in a lease. It is a creature of conveyancing form under the Roman-Dutch common law of lease; no statute in the corpus names it, defines it or prescribes its wording. The statutes reach only the form of the instrument, so a complete answer needs non-statutory authority.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M088-Q04-01",
+          "issue": "How the reddendum should reserve the rent of Rs. 75,000 per month over the two-year term, given that one year's rent is paid in advance at execution and set off against the rent for the second year, and that a refundable deposit of Rs. 200,000 is also taken.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M088-Q04-02",
+          "issue": "Whether any provision in the corpus governs the form or content of a reddendum clause.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [],
+      "supporting_provision_ids": [],
+      "background_provision_ids": [
+        "PROV-M088-009"
+      ],
+      "legal_hop_count": 0,
+      "hop_count_basis": "No indispensable statutory provision was identified. The corpus supplies only the requirement of notarial execution, recorded as background, so the hop count is zero.",
+      "reasoning_edges": [],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kusum Jayawardana wishes to lease out the upstair of her house bearing assessment No. 30/1 situated at Nawala Road, Rajagiriya to Ravi Perera at a monthly rental of Rs. 75,000/- for a period of 2 years. She requests for a refundable deposit of Rs. 200,000/- and 1 year rent to be paid in advance to be set off against the rent payable in the 2nd Year at the execution of the Lease Agreement. Further she says that the lessee should bear the cost of repairs upto a sum of Rs. 10,000/- at any one time and that he should not do any structural repairs to the premises. Also without her consent he cannot assign, sublet or part with the possession of the demised premises. The Lessee should pay the water, electricity and telephone bills and that at the end of the term should hand over vacant possession in the same good order.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the reddendum clause for this lease can be drafted on statutory authority available in the corpus.",
+        "rule": "The Prevention of Frauds Ordinance No. 7 of 1840 s.2 requires a lease for a period exceeding one month to be in writing and notarially executed and attested. No provision in the corpus names or regulates a reddendum, and a corpus-wide search for the term returns no match.",
+        "application": "The rent to be reserved is Rs. 75,000 per month for a term of two years, with one year's rent paid in advance at execution and set off against the rent falling due in the second year, alongside a refundable deposit of Rs. 200,000 that is not rent. Expressing that structure in a rent-reserving clause, including how the advance is appropriated and how the deposit is kept separate from rent, is a matter of conveyancing form under the common law of lease. The corpus contains no section against which such a clause could be drawn or checked.",
+        "conclusion": "The question is reserved. The requirement that the lease be a notarial instrument can be stated from the corpus, but the reddendum clause itself must be settled by a lawyer or against a conveyancing source outside this corpus."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M088-Q04-001",
+          "claim_text": "A lease of immovable property for a period exceeding one month must be in writing and notarially executed and attested to be of force in law.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M088-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q04-002",
+          "claim_text": "The rent to be reserved by the clause is Rs. 75,000 per month over a two-year term, with one year's rent paid in advance at execution and set off against the second year's rent, and a refundable deposit of Rs. 200,000 that is not rent.",
+          "claim_type": "application",
+          "supporting_provision_ids": [],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-4"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M088-Q04-003",
+          "claim_text": "The form and content of the reddendum cannot be drawn from the corpus, so the drafting is reserved for authority outside it.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M088-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-5"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "A drafting question. The reddendum is a conveyancing clause with no statutory source in the frozen corpus, and a corpus-wide search for the term returns no match. Only the formal requirement of notarial execution under the Prevention of Frauds Ordinance s.2 is available, and it does not govern the wording of the clause.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

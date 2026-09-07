@@ -1,0 +1,61 @@
+{
+  "status": "unverified",
+  "generated": "2026-09-04T21:42:48Z",
+  "corpus_fingerprint": "f119236b806f0ff2e3d905c120e3a7319a497e8b7eea085655ef17e34fce9d30",
+  "documents": {
+    "principal_enactments": 52,
+    "amending_acts": 60,
+    "total": 112
+  },
+  "sections": 4557,
+  "sections_in_principal_enactments": 4138,
+  "provisions": 17854,
+  "edges": {
+    "cross_references": 847,
+    "procedurally_requires": 1153,
+    "excepts": 106,
+    "qualifies": 131,
+    "defines": 3780,
+    "amends": 329
+  },
+  "edge_resolution": {
+    "cross_references": 847,
+    "procedurally_requires": 1153,
+    "excepts": 106,
+    "unresolved_no_section": 150,
+    "unresolved_section": 199,
+    "unresolved_external_document": 753,
+    "qualifies": 131,
+    "defines": 3780,
+    "amends": 329
+  },
+  "definitions": 535,
+  "sections_with_amendment_events": 954,
+  "sections_inserted_after_enactment": 69,
+  "edition_kinds": {
+    "consolidated": 47,
+    "as_enacted": 63,
+    "consolidated-2024": 1,
+    "original_or_unconfirmed_consolidation": 1
+  },
+  "skipped": [
+    {
+      "file": "data/legal-sources/library/finalized/11-1973-apartment-ownership-law/11-1973-apartment-ownership-law.json",
+      "reason": "superseded edition (kept 'consolidated')"
+    },
+    {
+      "file": "data/legal-sources/library/finalized/21-1844-wills-ordinance/21-1844-wills-ordinance-consolidated.json",
+      "reason": "superseded edition (kept 'consolidated-2024')"
+    },
+    {
+      "file": "data/legal-sources/library/finalized/23-1927-registration-of-documents-ordinance/23-1927-registration-of-documents-ordinance-consolidated.json",
+      "reason": "superseded edition (kept 'consolidated')"
+    }
+  ],
+  "files": {
+    "data/evaluvation/statutory-qa-v1/corpus/acts.jsonl": "a41e536c8676cf138d943f2bc029a70626897da470de3d854d501bff51bd77c2",
+    "data/evaluvation/statutory-qa-v1/corpus/sections.jsonl": "acc14fe68b2c59db6b18bc0f539910a74e7a61870a2d517f0c9b111e1be6bb03",
+    "data/evaluvation/statutory-qa-v1/corpus/provisions.jsonl": "5619ff8a978f50f8f5ca1a96b6a6927ccc6bea67a0b6fbc172a523373a53fed2",
+    "data/evaluvation/statutory-qa-v1/corpus/edges.jsonl": "a2dab2b2d64a1f3bef4c984c79450d53641280a38a0c45904472b837a51a4670"
+  }
+}

@@ -1,0 +1,858 @@
+{
+  "matter": "M001",
+  "verifier": {
+    "agent": "verifier-V2",
+    "run_id": "2026-09-05-pilot-01",
+    "verified_on": "2026-09-05",
+    "independence": "did not produce the candidate file; every check re-run against repository files; no web access; sha256 recomputed at verification time for every file cited (listed in hashes_recomputed)"
+  },
+  "summary": {
+    "authorities": 26,
+    "verified": 24,
+    "partially_verified": 1,
+    "unresolved": 1,
+    "rejected": 0,
+    "headline": "All 26 candidates were opened at their JSON pointers / markdown passages; every recorded sha256 matched a fresh recomputation; every excerpt is a whitespace-normalised substring of the file cited. 24 authorities verified (identity, text and proposition confirmed, limitations stated), AUTH-M001-025 partially verified (section renumbering unverifiable), AUTH-M001-026 unresolved (placeholder; verifier located Supreme Court dicta in SC Appeal 208/2017 that bears on it). Three points change the substantive picture: (1) Fernando v. Fernando is distinguishable, so the 'half freed on Gamini's death' step is not established; (2) MRIO s.27's application inside s.25 is open against the s.30 per capita default (s.30 not a candidate), so Q02 has two candidate numerical answers; (3) the s.3(1)(d) tree/PDF conflict is real, the PDF text layer is the fuller reading, and the conflict does not change the Q03 answer - but the schema/gate treat it as blocking. Matter status: needs_legal_review; the deterministic gate fails (6 errors, all status/conflict errors, none on traceability). The matter cannot advance to predicates_defined without a lawyer's decisions listed under lawyer_decisions_needed.",
+    "lawyer_decisions_needed": [
+      "Q01: accept the reclassification of CL-M001-Q01-006 (Vinitha's 1991 release of her life interest treated as a conveyancing fact whose effect is an inference; AUTH-M001-026 supporting/unresolved) or reinstate blocked_missing_authority.",
+      "Q01: rule on whether, after Gamini's death in 1990, Vinitha's reserved life interest burdened the whole of Lot A or only half (Fernando v. Fernando distinguishable).",
+      "Q02: decide whether MRIO s.27 governs the division of the sibling half under s.25 or the s.30 per capita default applies (Kanthi 123/192 vs 61/96; Samantha 53/192 vs 27/96; Ann 1/12 either way).",
+      "Q03: close the s.3(1)(d) tree-vs-PDF conflict (verifier: PDF reading correct, no effect on the answer) and the Act 21 of 2018 OCR defects (verifier read the scan), or have the canonical trees corrected.",
+      "All: accept that MRIO Part III is held only as current consolidated text with unknown amendment history at the 1995/2022/2023 deaths."
+    ]
+  },
+  "hashes_recomputed": {
+    "data/processed/canonical-statutes/SRC004-15-1876.json": "f46d137c514267f2b8cb730f2db3192e95d80807ed234e032eac71ebc53fbf0d",
+    "data/processed/canonical-statutes/SRC021-38-2014.json": "b52bd0df348f6d67d2da51f9e9a376d4f3c32faff66c836f106209438cb06f41",
+    "data/processed/canonical-statutes/SRC001-7-1840.json": "33e39fd241dee89b92e67268f9405c0fe8113599d35018f342e5d47d3fb5a604",
+    "data/processed/canonical-statutes/SRC024-21-1844.json": "0bb9d7642e254e3af1ce15fa09a1e4ba23a7542202482219a2972804aeac0bbe",
+    "data/processed/canonical-amendments/21-2018.json": "10594e46ae449691dc5153aea194987592e13366713956f7efde0b5cdcaa4dcd",
+    "data/processed/canonical-amendments/3-2017.json": "b40769606ad29fa144117b641c98fd5b3a9e580a07441ea3dad7f45401af409b",
+    "data/legal-sources/library/statutes/parsed/21-1977-partition-law.json": "7fcd1733973d809dbb25c9cfc8979dc3e13e35e6b2ef6cd69c708b985add6f50",
+    "data/legal-sources/library/statutes/21-1977-partition-law.pdf": "1fb6eff0e46372a5c6e0a62ef3c60e503848293e21c4c407d2e7037b3a932f4b",
+    "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/retrieval-logs/SRC021.pdftotext.txt": "9c711e030aa001d6683ef5c9a76bc876741eda9ecb2c43ad7b4e163e118dcbd4",
+    "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/retrieval-logs/SRC004.pdftotext.txt": "3e52099223444b7228b97604275758abb03f3f040387b477b8ba07d9084ce49f",
+    "data/legal-sources/library/statutes/38-2014-land-restrictions-on-alienation-act-consolidated-2024.pdf": "4a2ba74446d2130e0b7c6602b961d9d2f9db5b2ea1de09b59305502251e39dd4",
+    "data/legal-sources/library/statutes/15-1876-matrimonial-rights-and-inheritance-ordinance.pdf": "47c992a86d24a750501ea27ee8360576b83ed60fd9c43af1e58727e49bccdf34",
+    "data/legal-sources/library/statutes/HTML/15-1876-matrimonial-rights-and-inheritance-ordinance.html": "f457777cfa26d8edbf50289d3d18bfa3757c8c9b6a94de6acbd3db961c4d1e4d",
+    "data/legal-sources/library/statutes/HTML/7-1840-prevention-of-frauds-ordinance.html": "6ef80685d25307d0a315392ff6b6308082c359f19172a008582803189b99fa30",
+    "data/legal-sources/library/amendments/21-2018-land-restrictions-on-alienation-amendment-act.pdf": "00d6274e0c87d6e5512b4262aa27386f0c187527b91d0ec993f4e938f414aff6",
+    "data/legal-sources/library/amendments/ocr/21-2018-land-restrictions-on-alienation-amendment.txt": "75108b299e4787e2f89b3f4ea34f3be82da8bbd4bf95f4fae17741c8e3b87518",
+    "data/processed/docs/case-law/commonlii/LKCA/1922/75.md": "400b1c1aeaf1636e6f5b267490c1f196fab204780e3cc439a76a130361ad7444",
+    "data/processed/docs/case-law/commonlii/LKCA/1907/15.md": "6d30296e6753de529a3e3577117167b31d6f40fc6112cb2dd7d786e42ea04e88",
+    "data/processed/docs/case-law/commonlii/LKCA/1955/69.md": "eae5e991f1a056447bc5dd82ede1d3555b15fedbef3be133a1969f9e17968cdc",
+    "data/processed/docs/case-law/courts/sc/sc-appeal-208-2017-24d4123126.md": "7599271e9acc197bc3e189338d979aa993a9cb588b10ab86ecdcaca9f5ed9fc6",
+    "data/processed/section_versions.jsonl": "1604c26d139002f1ea5195adf445c59b6fb8b7d4b830bb3dbe0e4367bfc18c27",
+    "data/processed/amendment-chains.csv": "72ea4441a852069f46b10d3e0eb218d2eda49f25601c29ebd94f1b800929359a",
+    "data/processed/actions.csv": "7ecd5a41e090c481e377136031e3d4ba174d7f9e934a0326c2fc379508a8efb8",
+    "data/processed/statute_commencement.csv": "1ce7612fe4a14e7adda276b0142ef2b9ba2ad59884b022deb8368c943b0d49ff",
+    "data/legal-sources/manifests/source-registry.csv": "d4349bf242a84e290e9d86004960f9b2976f8e3cd3de4f46abbdc61b7fa946ee",
+    "data/legal-sources/library/finalized-sources/15-1876-matrimonial-rights-and-inheritance-ordinance/manifest.json": "5b77f16f2416b18f09eab918e6daac0d74802931a822a66a987569db6cdc663c",
+    "data/legal-sources/library/finalized-sources/38-2014-land-restrictions-on-alienation-act/manifest.json": "45870fef27e5fb726e6292efcdedbb02f1aeb23d95e92b34ed192abe07db9c67"
+  },
+  "pdf_text_layer_reextraction": {
+    "tool": "poppler pdftotext 25.07.0 (C:/Users/asus/AppData/Local/Microsoft/WinGet/Packages/oschwartz10612.Poppler_...) run from PowerShell, -layout",
+    "SRC004_pdf_sha256": "47c992a86d24a750501ea27ee8360576b83ed60fd9c43af1e58727e49bccdf34",
+    "SRC004_dump_sha256_fresh_vs_retrieval_logs": [
+      "3e52099223444b7228b97604275758abb03f3f040387b477b8ba07d9084ce49f",
+      "identical"
+    ],
+    "SRC021_pdf_sha256": "4a2ba74446d2130e0b7c6602b961d9d2f9db5b2ea1de09b59305502251e39dd4",
+    "SRC021_dump_sha256_fresh_vs_retrieval_logs": [
+      "9c711e030aa001d6683ef5c9a76bc876741eda9ecb2c43ad7b4e163e118dcbd4",
+      "identical"
+    ],
+    "note": "The retrieval-logs dumps are cited as source_path for AUTH-M001-011 and -012 because they are byte-identical to the verifier's fresh extraction and are text files the gate can check; they live in the run directory, which is untracked in git at verification time (git status '??' on data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/). Registry (data/legal-sources/manifests/source-registry.csv) sha256 for both PDFs matches the files on disk. Finalized-sources manifests: SRC021 PDF hash matches; SRC004 HTML manifest hash is a text-lf hash (dd35f368...) which the verifier recomputed and matched; the SRC004 PDF hash matches.",
+    "act_21_2018_scan": "Read visually via the Read tool (4 pages); registry SRC022 sha256 00d6274e0c87d6e5512b4262aa27386f0c187527b91d0ec993f4e938f414aff6 matches."
+  },
+  "per_authority": [
+    {
+      "authority_id": "AUTH-M001-001",
+      "cite": "Matrimonial Rights and Inheritance Ordinance Ordinance No. 15 of 1876 s.21 (1)",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC004-15-1876.json",
+      "sha256_recomputed_at_verification": "f46d137c514267f2b8cb730f2db3192e95d80807ed234e032eac71ebc53fbf0d",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 4 (IV/13)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "history_unknown",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: Ordinance No. 15 of 1876, Part III 'INHERITANCE', s.21 'Inheritance to immovable property in Sri Lanka to be governed by this Ordinance.', subsection (1). Excerpt is the tree raw_text verbatim. Tree reads 'ab interstate'; the PDF text layer (page 4) reads 'ab intestato' - a transcription error in the LankaLaw HTML/tree. The PDF is column-interleaved so the tree is quoted and the conflict kept open; no effect on the answer. Supports the proposition that Part III governs intestate succession to immovable property in Sri Lanka regardless of domicile."
+    },
+    {
+      "authority_id": "AUTH-M001-002",
+      "cite": "Matrimonial Rights and Inheritance Ordinance Ordinance No. 15 of 1876 s.22",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC004-15-1876.json",
+      "sha256_recomputed_at_verification": "f46d137c514267f2b8cb730f2db3192e95d80807ed234e032eac71ebc53fbf0d",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 4 (IV/13)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "indispensable",
+      "necessity_assessed": "indispensable",
+      "applicable_version_for_matter_date": "history_unknown",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.22 'Surviving spouse inherits one-half.'; tree words identical to the PDF text layer page 4 (PDF column-garbled). Supports the spouse's half for Kanthi (1995) and Ann (2022); that Rakitha died intestate is not stated in the facts and is an assumption."
+    },
+    {
+      "authority_id": "AUTH-M001-003",
+      "cite": "Matrimonial Rights and Inheritance Ordinance Ordinance No. 15 of 1876 s.23",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC004-15-1876.json",
+      "sha256_recomputed_at_verification": "f46d137c514267f2b8cb730f2db3192e95d80807ed234e032eac71ebc53fbf0d",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 5 (IV/14)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "history_unknown",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.23 'Order of devolution of property.'; PDF page 5 agrees (PDF prints 'divider' for 'divided'). Frames the descendants/ascendants/collaterals order."
+    },
+    {
+      "authority_id": "AUTH-M001-004",
+      "cite": "Matrimonial Rights and Inheritance Ordinance Ordinance No. 15 of 1876 s.24",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC004-15-1876.json",
+      "sha256_recomputed_at_verification": "f46d137c514267f2b8cb730f2db3192e95d80807ed234e032eac71ebc53fbf0d",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 5 (IV/14)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "indispensable",
+      "necessity_assessed": "indispensable",
+      "applicable_version_for_matter_date": "history_unknown",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.24 'Preferential right of children.'; PDF page 5 agrees verbatim. Supports per capita division among Rakitha, Muditha and Samantha and representation by issue of a deceased child."
+    },
+    {
+      "authority_id": "AUTH-M001-005",
+      "cite": "Matrimonial Rights and Inheritance Ordinance Ordinance No. 15 of 1876 s.25",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC004-15-1876.json",
+      "sha256_recomputed_at_verification": "f46d137c514267f2b8cb730f2db3192e95d80807ed234e032eac71ebc53fbf0d",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 5 (IV/14)",
+      "supports_claimed_proposition": "partially",
+      "necessity_claimed": "indispensable",
+      "necessity_assessed": "indispensable",
+      "applicable_version_for_matter_date": "history_unknown",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.25 'When descendants fail.'; PDF page 5 agrees verbatim. Supports: sole surviving parent takes half; full-blood siblings and half-blood siblings related through the deceased parent take the other half; a sole surviving sibling takes that half (Muditha's 2023 estate: Kanthi half, Samantha half). Limitation: s.25 does not say how full-blood and half-blood siblings divide the sibling half inter se (Rakitha's 2022 estate); that turns on whether s.27 applies within s.25 or the s.30 per capita default governs - open on the text, needs legal review. Omitted authority: MRIO s.30 (SRC004 tree /body/2/children/10: 'Except when otherwise expressly provided, if all those who succee"
+    },
+    {
+      "authority_id": "AUTH-M001-006",
+      "cite": "Matrimonial Rights and Inheritance Ordinance Ordinance No. 15 of 1876 s.26",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC004-15-1876.json",
+      "sha256_recomputed_at_verification": "f46d137c514267f2b8cb730f2db3192e95d80807ed234e032eac71ebc53fbf0d",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 5 (IV/14)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "history_unknown",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.26 (tree heading truncated to 'in case of'; PDF marginal note 'In case of parents failing'). Tree reads 'balf-blood'; PDF page 5 reads 'half-blood' - tree transcription error recorded as a source conflict; no effect on the answer. Supports the alternative branch if Kanthi had predeceased."
+    },
+    {
+      "authority_id": "AUTH-M001-007",
+      "cite": "Matrimonial Rights and Inheritance Ordinance Ordinance No. 15 of 1876 s.27",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC004-15-1876.json",
+      "sha256_recomputed_at_verification": "f46d137c514267f2b8cb730f2db3192e95d80807ed234e032eac71ebc53fbf0d",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 5 (IV/14)",
+      "supports_claimed_proposition": "partially",
+      "necessity_claimed": "indispensable",
+      "necessity_assessed": "indispensable",
+      "applicable_version_for_matter_date": "history_unknown",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.27 'Division in case of half-brothers and sisters.'; the excerpt is the closing_text node under s.27 and agrees verbatim with PDF page 5 (PDF 'as follows:-'). Supports the stated division rule where full and half-blood siblings concur. Limitation: s.27 follows s.26 (both parents failing) and its two-sided scheme presupposes both parental lines are open; whether it also governs the sibling half under s.25 (one parent surviving; only the deceased parent's half-bloods admitted) cannot be determined from the text, and s.30 supplies a competing per capita default. The Q02 arithmetic (Muditha 1/32 and Samantha 1/96, or 1/48 each) is therefore open; needs legal review. Omitted"
+    },
+    {
+      "authority_id": "AUTH-M001-008",
+      "cite": "Matrimonial Rights and Inheritance Ordinance Ordinance No. 15 of 1876 s.33",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC004-15-1876.json",
+      "sha256_recomputed_at_verification": "f46d137c514267f2b8cb730f2db3192e95d80807ed234e032eac71ebc53fbf0d",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF pages 5-6 (IV/14-15)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "history_unknown",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.33 'Illegitimate children.'; PDF pages 5-6 agree verbatim. Contingency only: the facts say Samantha is 'from his first marriage', which on its face indicates legitimacy; s.33 would exclude her from Suresh's estate only if she were illegitimate."
+    },
+    {
+      "authority_id": "AUTH-M001-009",
+      "cite": "Matrimonial Rights and Inheritance Ordinance Ordinance No. 15 of 1876 s.36",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC004-15-1876.json",
+      "sha256_recomputed_at_verification": "f46d137c514267f2b8cb730f2db3192e95d80807ed234e032eac71ebc53fbf0d",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 6 (IV/15)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "history_unknown",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.36; PDF page 6 agrees verbatim. Supports only the gateway proposition (Roman-Dutch law of North Holland governs intestate distribution where the Ordinance is silent); it supplies no rule on renunciation of a life interest (which is not a distribution question) or on a sibling's widow, so it cannot by itself verify CL-M001-Q01-006 or CL-M001-Q02-006."
+    },
+    {
+      "authority_id": "AUTH-M001-010",
+      "cite": "Matrimonial Rights and Inheritance Ordinance Ordinance No. 15 of 1876 s.2",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC004-15-1876.json",
+      "sha256_recomputed_at_verification": "f46d137c514267f2b8cb730f2db3192e95d80807ed234e032eac71ebc53fbf0d",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 1 (IV/10)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "history_unknown",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: Part I s.2; PDF page 1 agrees verbatim. Supports the scope limit (not Kandyans, Muslims or Tamils subject to Tesawalamai); the facts give no personal-law indicator, so the general law is an assumption to flag."
+    },
+    {
+      "authority_id": "AUTH-M001-011",
+      "cite": "Land (Restrictions on Alienation) Act Act No. 38 of 2014 s.2 (1)",
+      "verification_status": "verified",
+      "source_tier": 2,
+      "source_read": "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/retrieval-logs/SRC021.pdftotext.txt",
+      "sha256_recomputed_at_verification": "9c711e030aa001d6683ef5c9a76bc876741eda9ecb2c43ad7b4e163e118dcbd4",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 2 (pdftotext -layout dump, page 2 lines 4-7)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "indispensable",
+      "necessity_assessed": "indispensable",
+      "applicable_version_for_matter_date": "current_text_applicable",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: Act No. 38 of 2014, s.2 'Restriction on transfer of land', subsection (1) paragraph (a). Source cited is the PDF text layer of the registry-hashed consolidated PDF, re-extracted by the verifier with poppler pdftotext -layout from PowerShell; the dump under retrieval-logs/ is byte-identical to that re-extraction (sha256 9c711e030aa001d6683ef5c9a76bc876741eda9ecb2c43ad7b4e163e118dcbd4) and sits in this run's directory in the working tree (untracked in git at verification time). The PDF is cited because subsection (1) and paragraph (a) are separate tree nodes and cannot be quoted as one excerpt from the tree; tree nodes /body/1/children/0 and /body/1/children/0/children/0 (s"
+    },
+    {
+      "authority_id": "AUTH-M001-012",
+      "cite": "Land (Restrictions on Alienation) Act Act No. 38 of 2014 s.3 (1(d))",
+      "verification_status": "verified",
+      "source_tier": 2,
+      "source_read": "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/retrieval-logs/SRC021.pdftotext.txt",
+      "sha256_recomputed_at_verification": "9c711e030aa001d6683ef5c9a76bc876741eda9ecb2c43ad7b4e163e118dcbd4",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF pages 3-4 (last three lines of page 3, first two of page 4)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "indispensable",
+      "necessity_assessed": "indispensable",
+      "applicable_version_for_matter_date": "current_text_applicable",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.3 'Exemption from the application of the provisions of section 2.' subsection (1) paragraph (d); marginal marker '[2, 21 of 2018]' on s.3 refers to the 2018 amendment of paragraphs (b), (h), (i) only. SOURCE CONFLICT TESTED: the canonical tree node /body/2/children/0/children/3 reads '...(who is a foreigner) of the accordance with the applicable law...' - it drops 'the owner of such land, in' at the page 3/4 break. The PDF text layer (re-extracted by the verifier from PowerShell; byte-identical to the retrieval-logs dump) reads 'of the owner of such land, in accordance with'. The PDF is the fuller, grammatical reading, so the PDF text is cited and the excerpt is taken f"
+    },
+    {
+      "authority_id": "AUTH-M001-013",
+      "cite": "Land (Restrictions on Alienation) Act Act No. 38 of 2014 s.3 (1(e))",
+      "verification_status": "verified",
+      "source_tier": 3,
+      "source_read": "data/processed/canonical-statutes/SRC021-38-2014.json",
+      "sha256_recomputed_at_verification": "b52bd0df348f6d67d2da51f9e9a376d4f3c32faff66c836f106209438cb06f41",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 4",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "current_text_applicable",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.3(1)(e); tree agrees verbatim with PDF page 4. Supports the dual-citizen alternative; dual citizenship is not stated in the facts."
+    },
+    {
+      "authority_id": "AUTH-M001-014",
+      "cite": "Land (Restrictions on Alienation) Act Act No. 38 of 2014 s.25",
+      "verification_status": "verified",
+      "source_tier": 3,
+      "source_read": "data/processed/canonical-statutes/SRC021-38-2014.json",
+      "sha256_recomputed_at_verification": "b52bd0df348f6d67d2da51f9e9a376d4f3c32faff66c836f106209438cb06f41",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 15 ('foreigner'); page 14 ('alienation'); page 16 ('land', 'transfer')",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "indispensable",
+      "necessity_assessed": "indispensable",
+      "applicable_version_for_matter_date": "current_text_applicable",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.25 'Interpretation', definition node 'foreigner'; tree agrees verbatim with PDF page 15. The other definitions relied on were checked against PDF and tree: 'citizen of Sri Lanka' means a citizen of Sri Lanka in terms of Citizenship Act (page 15; /body/25/children/4); 'transfer' means any sale, donation, gift or any conveyance by or under which the title of such land passes to another person (page 16; /body/25/children/16); 'land' means any State or private land and includes- (a) any interest in the land (page 16; /body/25/children/14 and child (a)); 'alienation' means transfer, lease or mortgage of lands situated within Sri Lanka (page 14; /body/25/children/0). Only the"
+    },
+    {
+      "authority_id": "AUTH-M001-015",
+      "cite": "Land (Restrictions on Alienation) Act Act No. 38 of 2014 s.1 (2)",
+      "verification_status": "verified",
+      "source_tier": 3,
+      "source_read": "data/processed/canonical-statutes/SRC021-38-2014.json",
+      "sha256_recomputed_at_verification": "b52bd0df348f6d67d2da51f9e9a376d4f3c32faff66c836f106209438cb06f41",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF pages 1-2 (subsection begins at the foot of page 1, ends at the head of page 2)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "indispensable",
+      "necessity_assessed": "indispensable",
+      "applicable_version_for_matter_date": "current_text_applicable",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.1(2); tree agrees with PDF pages 1-2; statute_commencement.csv row SRC021 2013-01-01 agrees. Supports the temporal point: Suresh's 1995 death predates the Act; the 2022 and 2023 devolutions fall within it."
+    },
+    {
+      "authority_id": "AUTH-M001-016",
+      "cite": "Land (Restrictions on Alienation) Act Act No. 38 of 2014 s.18",
+      "verification_status": "verified",
+      "source_tier": 3,
+      "source_read": "data/processed/canonical-statutes/SRC021-38-2014.json",
+      "sha256_recomputed_at_verification": "b52bd0df348f6d67d2da51f9e9a376d4f3c32faff66c836f106209438cb06f41",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 13",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "current_text_applicable",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.18 'Alienation of land in contravention of this Act to be void'; tree agrees verbatim with PDF page 13. Supports the consequence if the prohibition applied without exemption."
+    },
+    {
+      "authority_id": "AUTH-M001-017",
+      "cite": "Land (Restrictions on Alienation) Act Act No. 38 of 2014 s.3 (4)",
+      "verification_status": "verified",
+      "source_tier": 3,
+      "source_read": "data/processed/canonical-statutes/SRC021-38-2014.json",
+      "sha256_recomputed_at_verification": "b52bd0df348f6d67d2da51f9e9a376d4f3c32faff66c836f106209438cb06f41",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 5",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "current_text_applicable",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.3(4); tree agrees verbatim with PDF page 5. Supports: a later transfer by Samantha of land taken under s.3 remains subject to the Act."
+    },
+    {
+      "authority_id": "AUTH-M001-018",
+      "cite": "Land (Restrictions on Alienation) Act Act No. 38 of 2014 s.2 (2(b)(ii))",
+      "verification_status": "verified",
+      "source_tier": 3,
+      "source_read": "data/processed/canonical-statutes/SRC021-38-2014.json",
+      "sha256_recomputed_at_verification": "b52bd0df348f6d67d2da51f9e9a376d4f3c32faff66c836f106209438cb06f41",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "PDF page 2",
+      "supports_claimed_proposition": "partially",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "current_text_applicable",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: s.2(2)(b)(ii); tree agrees verbatim with PDF page 2 (the raw_text carries the opening words of the proviso). Contextual support only: the Act contemplates devolution 'in accordance with the applicable laws of succession of Sri Lanka' on a foreigner next of kin in the company-shareholding context; it does not itself govern Samantha."
+    },
+    {
+      "authority_id": "AUTH-M001-019",
+      "cite": "Land (Restrictions on Alienation) (Amendment) Act Act No. 21 of 2018 s.1; 2",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-amendments/21-2018.json",
+      "sha256_recomputed_at_verification": "10594e46ae449691dc5153aea194987592e13366713956f7efde0b5cdcaa4dcd",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "RGD scan pages 2-3 (read visually by the verifier); OCR txt PAGE 2-3",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "indispensable",
+      "necessity_assessed": "indispensable",
+      "applicable_version_for_matter_date": "current_text_applicable",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: Land (Restrictions on Alienation) (Amendment) Act, No. 21 of 2018. The tree is parsed from an offline OCR of the registry's RGD scan (no text layer; OCR txt sha256 75108b299e4787e2f89b3f4ea34f3be82da8bbd4bf95f4fae17741c8e3b87518). The verifier read the scan itself (four pages rendered): s.1 short title and deemed operation 'April 1, 2018' (tree/OCR print 'April 1. 2018'); s.2 amends s.3(1) of Act 38 of 2014 by (a) repealing and substituting paragraph (b) (condominium parcel; upfront inward-remittance proviso), (b) substituting 'transfer of such land; and' in paragraph (h), (c) adding new paragraph (i) after paragraph (h) (land transferred on or after 1 April 2018 to a s.2"
+    },
+    {
+      "authority_id": "AUTH-M001-020",
+      "cite": "Partition Law Law No. 21 of 1977 s.48 (1)",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/legal-sources/library/statutes/parsed/21-1977-partition-law.json",
+      "sha256_recomputed_at_verification": "7fcd1733973d809dbb25c9cfc8979dc3e13e35e6b2ef6cd69c708b985add6f50",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": "parsed page_start 29 (registry PDF sha256 1fb6eff0e46372a5c6e0a62ef3c60e503848293e21c4c407d2e7037b3a932f4b)",
+      "supports_claimed_proposition": "yes",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "current_text_superseded_since_event",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: parsed section_number '48', heading 'Finality of interlocutory decrees of partition. [21, 17 of 1997]', subsection (1); the excerpt is the first sentence of the 'text' field verbatim, checked with the gate's whitespace-normalised substring test. The parsed file's top-level source_id/title fields are null; identity rests on registry row SRC027 (Partition Law, 21 of 1977) whose local_parsed_path is this file and whose PDF hash matches. Supports the root-of-title proposition (final decree conclusive evidence of title, free from encumbrances not specified). TEMPORAL FLAG: the 1985 decree was entered under the pre-1997 text of s.48, which is not held; the text quoted is as ame"
+    },
+    {
+      "authority_id": "AUTH-M001-021",
+      "cite": "Prevention of Frauds Ordinance Ordinance No. 7 of 1840 s.2",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC001-7-1840.json",
+      "sha256_recomputed_at_verification": "33e39fd241dee89b92e67268f9405c0fe8113599d35018f342e5d47d3fb5a604",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": null,
+      "supports_claimed_proposition": "partially",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "current_text_superseded_since_event",
+      "holding_classification": null,
+      "key_finding": "Identity confirmed: Prevention of Frauds Ordinance No. 7 of 1840, s.2 'Deeds affecting immovable properly to be executed before a notary and witnesses.' (heading typo in source). Excerpt is the tree raw_text verbatim ('mort gage' as printed). The tree header records that it was parsed from the consolidated 2024 PDF, not the HTML the candidate lists; the candidate's HTML hash (6ef80685d25307d0a315392ff6b6308082c359f19172a008582803189b99fa30) matches the file on disk but that file was not the tree's source. Supports partially: the section states the writing/notary/two-witness requirement; that Deeds 515 (1986) and 525 (1991) satisfied it is a scenario fact ('attested by ... Notary Public'). TE"
+    },
+    {
+      "authority_id": "AUTH-M001-022",
+      "cite": "Fernando v. Fernando (1922) 24 NLR 138; [1922] LKCA 75",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/docs/case-law/commonlii/LKCA/1922/75.md",
+      "sha256_recomputed_at_verification": "400b1c1aeaf1636e6f5b267490c1f196fab204780e3cc439a76a130361ad7444",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": null,
+      "supports_claimed_proposition": "partially",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "not_applicable_case",
+      "holding_classification": "holding",
+      "key_finding": "Identity confirmed: Fernando et al. v. Fernando, (1922) 24 NLR 138, [1922] LKCA 75, 3 February 1922, Ennis and Porter JJ., D.C. Negombo 14,501. CommonLII files it under 'Court of Appeal of Sri Lanka' (LKCA database label); in 1922 the court was the Supreme Court of Ceylon. Headnote quoted verbatim; the full judgment is present and the ratio (Ennis J.: no survivorship can be implied, citing 'section 20 of Ordinance No. 21 of 1844' - jointly held land deemed held in common) matches the headnote, so classified as holding rather than headnote-only. LIMITATION (adversarial): in Fernando the donors were husband and wife donating jointly and the court treated the reserved life interests as attachin"
+    },
+    {
+      "authority_id": "AUTH-M001-023",
+      "cite": "Uduma Levvai v. Mayatin Vava et al. (1907) 10 NLR 347; [1907] LKCA 15",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/docs/case-law/commonlii/LKCA/1907/15.md",
+      "sha256_recomputed_at_verification": "6d30296e6753de529a3e3577117167b31d6f40fc6112cb2dd7d786e42ea04e88",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": null,
+      "supports_claimed_proposition": "partially",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "not_applicable_case",
+      "holding_classification": "holding",
+      "key_finding": "Identity confirmed: Uduma Levvai v. Mayatin Vava et al., (1907) 10 NLR 347, [1907] LKCA 15, 15 October 1907, Middleton J. and Grenier A.J., D.C. Batticaloa 2,786. Passage quoted verbatim from Grenier A.J.'s judgment; it is the premise of the holding that an accepted donation inter vivos to take effect after death is irrevocable and not a testamentary disposition (Middleton J. agreeing, citing Voet 39.5.4). LIMITATION: the subject was cattle (movables) between Muslim parties; the principle is stated as general Roman-Dutch law. Acceptance by Suresh of Deed 515 is not stated in M001's facts. Supports the irrevocability step partially."
+    },
+    {
+      "authority_id": "AUTH-M001-024",
+      "cite": "Silva et al. v. Muniamma (1955) 56 NLR 357; [1955] LKCA 69",
+      "verification_status": "verified",
+      "source_tier": 4,
+      "source_read": "data/processed/docs/case-law/commonlii/LKCA/1955/69.md",
+      "sha256_recomputed_at_verification": "eae5e991f1a056447bc5dd82ede1d3555b15fedbef3be133a1969f9e17968cdc",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": null,
+      "supports_claimed_proposition": "partially",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "not_applicable_case",
+      "holding_classification": "holding",
+      "key_finding": "Identity confirmed: S. Silva et al. v. Muniamma, (1955) 56 NLR 357, [1955] LKCA 69, 24 January 1955, Sansoni J., S.C. 138 - C.R. Colombo 45,592 (Court of Requests appeal). Headnote quoted verbatim; the full (short) judgment is present and supports it ('Girigoris gifted these premises in 1946 to the plaintiffs subject to a life interest in his favour ... their right to claim possession did not accrue until Girigoris had died'), so not headnote-only. The facts parallel M001: Girigoris also derived title from a partition final decree (1939). LIMITATION: landlord-and-tenant context; supports the donee-as-owner-with-postponed-enjoyment step by analogy only."
+    },
+    {
+      "authority_id": "AUTH-M001-025",
+      "cite": "Wills Ordinance Ordinance No. 21 of 1844 s.7",
+      "verification_status": "partially_verified",
+      "source_tier": 4,
+      "source_read": "data/processed/canonical-statutes/SRC024-21-1844.json",
+      "sha256_recomputed_at_verification": "0bb9d7642e254e3af1ce15fa09a1e4ba23a7542202482219a2972804aeac0bbe",
+      "hash_matches_candidate": true,
+      "identity_confirmed": false,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": null,
+      "supports_claimed_proposition": "partially",
+      "necessity_claimed": "supporting",
+      "necessity_assessed": "not_needed",
+      "applicable_version_for_matter_date": "history_unknown",
+      "holding_classification": null,
+      "key_finding": "Identity: Wills Ordinance No. 21 of 1844, tree s.7 'No survivorship as to property undivided held in shares, unless expressly stipulated for.'; the full raw_text is carried (the candidate quoted a truncated form, which is a substring). The content matches Ennis J.'s description of 'section 20 of Ordinance No. 21 of 1844' in Fernando v. Fernando, but the s.20 -> s.7 renumbering cannot be verified from the corpus (the LankaLaw consolidated HTML is the tree's only source; registry SRC024 points to a different consolidated PDF). Necessity reassessed as not_needed: the co-ownership premise this rule addresses is absent in M001 (Gamini was sole owner), so it does not bear on the pedigree; retained"
+    },
+    {
+      "authority_id": "AUTH-M001-026",
+      "cite": "Roman-Dutch law: effect of a life-interest (usufruct) holder's renunciation or revocation on the dominus's ownership -- NOT LOCATED IN CORPUS",
+      "verification_status": "unresolved",
+      "source_tier": 4,
+      "source_read": "data/processed/docs/case-law/courts/sc/sc-appeal-208-2017-24d4123126.md",
+      "sha256_recomputed_at_verification": "7599271e9acc197bc3e189338d979aa993a9cb588b10ab86ecdcaca9f5ed9fc6",
+      "hash_matches_candidate": true,
+      "identity_confirmed": true,
+      "excerpt_verbatim_ws_normalised": true,
+      "pdf_page_checked": null,
+      "supports_claimed_proposition": "partially",
+      "necessity_claimed": "indispensable",
+      "necessity_assessed": "supporting",
+      "applicable_version_for_matter_date": "not_applicable_case",
+      "holding_classification": "dicta",
+      "key_finding": "Located by the verifier (the candidate had no source): Obawath Kankanamage Jinadasa v. Malwa Waduge Bandusoma and another, SC Appeal 208/2017 (SC/HCCA/LA 238/2016; WP/HCCA/GAM/153/2010(F); D.C. Gampaha 859/L), Supreme Court of Sri Lanka, Sisira J. de Abrew, Vijith K. Malalgoda PC and Gamini Amarasekara JJ., argued 21.7.2020, decided 9.9.2020, appeal dismissed. Repo file derived from https://supremecourt.lk/wp-content/uploads/judgements/sc_appeal_208_2017.pdf (documents.csv). Repo search (rules.csv 4161 rows; data/processed/docs/case-law/**; data/legal-sources/library/**): no statute states the renunciation rule; this Supreme Court observation is the closest material. It is expressly an 'obse"
+    }
+  ],
+  "source_conflicts_assessment": [
+    {
+      "authority_id": "AUTH-M001-012",
+      "conflict": "s.3(1)(d): tree 'of the accordance with' vs PDF 'of the owner of such land, in accordance with'",
+      "test": "PDF text layer re-extracted from PowerShell; pages 3-4 read; dump byte-identical to retrieval-logs/SRC021.pdftotext.txt",
+      "fuller_reading": "PDF text layer",
+      "action": "PDF text cited as source_path for AUTH-M001-012 and the exact_excerpt taken from it; both versions preserved in source_conflicts with the schema-mandated resolution",
+      "changes_answer": false,
+      "consequence": "Q03 set to blocked_source_conflict because the gate treats any conflict on an indispensable authority as blocking; the verifier's view is that the answer is unaffected and the canonical tree (being edited by another session) needs the five words restored."
+    },
+    {
+      "authority_id": "AUTH-M001-001",
+      "conflict": "s.21(1) 'ab interstate' (tree) vs 'ab intestato' (PDF page 4)",
+      "test": "PDF page 4 read",
+      "fuller_reading": "PDF",
+      "action": "tree quoted (PDF is column-interleaved); conflict kept open",
+      "changes_answer": false,
+      "consequence": "none (supporting authority)"
+    },
+    {
+      "authority_id": "AUTH-M001-001",
+      "conflict": "SRC004 amendment history: amendment-chains.csv (2 of 1889) vs tree header (18 of 1923)",
+      "test": "PDF page 1 header block read: lists 15 of 1876, 2 of 1889, '18 ol 1922'",
+      "fuller_reading": "PDF (both instruments)",
+      "action": "third version added to the conflict; amendment_chain on every MRIO authority lists both plus the Married Women's Property Ordinance partial repeal of ss.4-19 (PDF footnote)",
+      "changes_answer": false,
+      "consequence": "history_unknown retained for Part III; no recorded amendment touches ss.20-36"
+    },
+    {
+      "authority_id": "AUTH-M001-001",
+      "conflict": "commencement 1876-06-29 (statute_commencement.csv) vs 29 June 1877 (tree date_stated_in_source, PDF header)",
+      "test": "PDF page 1 and footnote read",
+      "fuller_reading": "source text (1877)",
+      "action": "new conflict recorded; effective_from states both",
+      "changes_answer": false,
+      "consequence": "none"
+    },
+    {
+      "authority_id": "AUTH-M001-006",
+      "conflict": "s.26 'balf-blood' (tree) vs 'half-blood' (PDF page 5)",
+      "test": "PDF page 5 read",
+      "fuller_reading": "PDF",
+      "action": "new conflict recorded; tree quoted",
+      "changes_answer": false,
+      "consequence": "none (supporting)"
+    },
+    {
+      "authority_id": "AUTH-M001-019",
+      "conflict": "Act 21 of 2018 OCR/tree defects ('April 1. 2018', '(ht)', '()', 'cnactment', 'listedin') vs RGD scan",
+      "test": "scan pages 1-4 read visually",
+      "fuller_reading": "scan",
+      "action": "new conflict recorded; s.1 sentence (no quotes) carried as exact_excerpt; s.2 operations recorded from the scan in notes",
+      "changes_answer": false,
+      "consequence": "gate error on an indispensable authority; substantively resolved by the verifier's reading of the scan but the schema allows no other resolution value"
+    }
+  ],
+  "temporal_conclusion": {
+    "reference_date": "2026-04 (exam session); devolutions 1995-12-10, 2022-07-02, 2023-06-05; deeds 1986-03-10, 1991-02-25; decree 1985-02-02; LRA deemed operation 2013-01-01",
+    "MRIO_SRC004": "history_unknown for all ten provisions: only the LankaLaw consolidated text is held; section_versions.jsonl has one version per section (amendment_history 'unknown'); actions.csv has no SRC004 rows; the PDF header lists Ordinances 2 of 1889 and 18 of 1922/1923 as amending and a footnote records the partial repeal of ss.4-19 by the Married Women's Property Ordinance - nothing recorded touches Part III (ss.20-36), but absence of amendment cannot be confirmed. s.20 (not a candidate) confirms Part III applies to persons dying after the proclamation and married after it.",
+    "LRA_SRC021": "current_text_applicable for ss.1(2), 2(1)(a), 2(2)(b)(ii), 3(1)(d), 3(1)(e), 3(4), 18 and 25: the only two amending Acts in the corpus (3 of 2017: inserted s.5A; 21 of 2018: s.3(1)(b),(h),(i) and s.5A) do not touch them, so the consolidated 2024 text is the text in force at the 2022 and 2023 deaths and at April 2026. Suresh's 1995 death predates the Act. Caveat: the as-enacted 2014 text is not held (RGD scan without text layer).",
+    "Act_21_2018": "deemed operative 2018-04-01; scope confirmed from the scan.",
+    "Partition_Law_s48": "current_text_superseded_since_event: the 1985 decree was entered under the pre-1997 text (SRC027:s48:v1, text not held); the quoted text is as amended by Act 17 of 1997 and is the present evidentiary rule.",
+    "PFO_s2": "current_text_superseded_since_event: s.2 amended 1947, 2022, 2024; only the 2024 text is held; the 1986/1991 wording is not confirmable.",
+    "Wills_Ordinance_s7": "history_unknown; not needed for the matter.",
+    "cases": "not_applicable_case; no later treatment recorded in the corpus for any of the four judgments."
+  },
+  "omitted_authorities": [
+    {
+      "what": "MRIO s.30 (per capita where equally near in degree)",
+      "where": "data/processed/canonical-statutes/SRC004-15-1876.json#/body/2/children/10 (in corpus, not a candidate)",
+      "why": "competes with s.27 for the inter se division of the sibling half under s.25; decisive for Q02's two candidate answers",
+      "recorded_on": [
+        "AUTH-M001-005",
+        "AUTH-M001-007"
+      ]
+    },
+    {
+      "what": "MRIO s.20 (Part III applies to persons dying after the proclamation and married after it)",
+      "where": "SRC004 tree /body/2/children/0",
+      "why": "threshold applicability; satisfied on the facts; minor",
+      "recorded_on": [
+        "notes on every SRC004 authority"
+      ]
+    },
+    {
+      "what": "Rule-stating authority that renunciation of a usufruct/life interest extinguishes it and merges it in the dominium",
+      "where": "not in the corpus (statutes, rules.csv, case-law markdown, legal-sources library searched); closest: SC Appeal 208/2017 (dicta, now the source on AUTH-M001-026), SC Appeal 169/2018 and Ferdinandus v. Fernando (1903) 6 NLR 328 (narrative only)",
+      "why": "would close CL-M001-Q01-006",
+      "recorded_on": [
+        "AUTH-M001-026"
+      ]
+    },
+    {
+      "what": "Roman-Dutch rule on a life interest/usufruct granted to two persons where one dies (accrual to the survivor or not)",
+      "where": "not in the corpus; Fernando v. Fernando addresses joint donors only",
+      "why": "would settle CL-M001-Q01-005 (whether Vinitha's interest burdened the whole after 1990)",
+      "recorded_on": [
+        "AUTH-M001-022 notes"
+      ]
+    }
+  ],
+  "claim_changes": [
+    {
+      "claim_id": "CL-M001-Q01-001",
+      "change": "scenario_fact -> verified: facts match source.json matter_background (allotment by final decree 111/P, 2 Feb 1985; Plan 2525, 10 perches, No 20 Flower Road)."
+    },
+    {
+      "claim_id": "CL-M001-Q01-002",
+      "change": "partially_verified: s.48(1) supports the rule, but the text held is as amended by Act 17 of 1997; the version in force at the 1985 decree is not held (temporal flag on AUTH-M001-020)."
+    },
+    {
+      "claim_id": "CL-M001-Q01-003",
+      "change": "partially_verified: PFO s.2 states the formal requirement; compliance of Deed 515 is a scenario fact; only the 2024 text of s.2 is held (amended 1947, 2022, 2024)."
+    },
+    {
+      "claim_id": "CL-M001-Q01-004",
+      "change": "partially_verified: both cases support the rule by analogy only (movables between Muslim parties; landlord-and-tenant); acceptance by Suresh is not stated in the facts."
+    },
+    {
+      "claim_id": "CL-M001-Q01-005",
+      "change": "text amended to record that Fernando v. Fernando is distinguishable (joint donors vs sole owner); the Ennis J. ratio excerpt dropped (separate span from the verified headnote excerpt); partially_verified."
+    },
+    {
+      "claim_id": "CL-M001-Q01-006",
+      "change": "reclassified from application/inferential to scenario_inference/scenario_fact with the legal effect flagged as an inference needing legal review; AUTH-M001-026 (now SC Appeal 208/2017 dicta, unresolved) kept as supporting; partially_verified. Lawyer to confirm or revert to blocked_missing_authority."
+    },
+    {
+      "claim_id": "CL-M001-Q01-007",
+      "change": "verified: s.21(1) (tree typo 'ab interstate' noted; PDF 'ab intestato') and s.2 support the scope; family facts match source.json."
+    },
+    {
+      "claim_id": "CL-M001-Q01-008",
+      "change": "verified against ss.22, 24, 33 (current text; history unknown)."
+    },
+    {
+      "claim_id": "CL-M001-Q01-009",
+      "change": "partially_verified: ss.22/24/25 support the structure; the Muditha/Samantha split of the sibling half (s.27 vs s.30) is open; Rakitha's intestacy and lack of issue are assumptions."
+    },
+    {
+      "claim_id": "CL-M001-Q01-010",
+      "change": "verified: s.25 directly gives the sole surviving parent half and the sole surviving sibling the other half; s.26 covers the alternative; Muditha's intestacy is an assumption ('unmarried and issueless' is stated, 'intestate' is not)."
+    },
+    {
+      "claim_id": "CL-M001-Q01-011",
+      "change": "partially_verified: aggregates the applications above and is conditional on the listed assumptions and on the open points in CL-005/006/009."
+    },
+    {
+      "claim_id": "CL-M001-Q02-001",
+      "change": "verified (s.22)."
+    },
+    {
+      "claim_id": "CL-M001-Q02-002",
+      "change": "verified (s.24 per capita); Samantha's legitimacy assumed."
+    },
+    {
+      "claim_id": "CL-M001-Q02-003",
+      "change": "verified (s.22) on the stated assumptions (intestacy, no children)."
+    },
+    {
+      "claim_id": "CL-M001-Q02-004",
+      "change": "partially_verified: Kanthi 1/24 follows from s.25; the Muditha 1/32 / Samantha 1/96 split rests on applying s.27 inside s.25, which the text does not settle (s.30 gives 1/48 each)."
+    },
+    {
+      "claim_id": "CL-M001-Q02-005",
+      "change": "partially_verified: the halving between Kanthi and Samantha follows from s.25; the 19/96 base inherits the open point in CL-004 (17/96 under the s.30 reading)."
+    },
+    {
+      "claim_id": "CL-M001-Q02-006",
+      "change": "partially_verified: s.25 admits only siblings and their issue by representation, which excludes a sibling's widow on its face; s.36 supplies no positive rule, so the negative (no Roman-Dutch extension) is inferential."
+    },
+    {
+      "claim_id": "CL-M001-Q02-007",
+      "change": "partially_verified: arithmetic checked (both readings sum to 1); the choice between the two readings is open."
+    },
+    {
+      "claim_id": "CL-M001-Q02-008",
+      "change": "verified: representation by issue (ss.24, 25) and the s.26 branch are stated in the text."
+    },
+    {
+      "claim_id": "CL-M001-Q03-001",
+      "change": "excerpt replaced with the contiguous PDF text-layer span (subsection (1) and paragraph (a) are separate tree nodes); verified."
+    },
+    {
+      "claim_id": "CL-M001-Q03-002",
+      "change": "'transfer' and 'land' excerpts removed (separate tree nodes; 'land' + (a) was not a substring of any single node) and recorded in AUTH-M001-014 notes instead; text amended; verified."
+    },
+    {
+      "claim_id": "CL-M001-Q03-003",
+      "change": "scenario_fact -> verified: 'who is a citizen of USA' is in source.json; dual citizenship not stated."
+    },
+    {
+      "claim_id": "CL-M001-Q03-004",
+      "change": "the garbled tree excerpt removed; the PDF text-layer reading (pages 3-4) is the single excerpt; verified (conflict recorded on the authority)."
+    },
+    {
+      "claim_id": "CL-M001-Q03-005",
+      "change": "verified."
+    },
+    {
+      "claim_id": "CL-M001-Q03-006",
+      "change": "the OCR-garbled s.2 excerpt of Act 21 of 2018 removed (JSON-escaped quotes defeat the substring test; wording recorded from the scan in AUTH-M001-019 notes); Act 3 of 2017 added to the text; verified."
+    },
+    {
+      "claim_id": "CL-M001-Q03-007",
+      "change": "excerpt for AUTH-M001-012 replaced with the PDF reading; verified."
+    },
+    {
+      "claim_id": "CL-M001-Q03-008",
+      "change": "partially_verified: heirship as a child (s.24) is conditional on legitimacy (s.33); s.3(1)(d) confirms the Act defers to the law of succession."
+    },
+    {
+      "claim_id": "CL-M001-Q03-009",
+      "change": "excerpt for AUTH-M001-012 replaced with the PDF reading; verified as a conclusion on the verified rule claims, subject to the conditions stated in Q03's blocking_reason."
+    }
+  ],
+  "authority_changes": [
+    {
+      "authority_id": "AUTH-M001-026",
+      "change": "necessity indispensable -> supporting; status unresolved; source located by verifier (SC Appeal 208/2017 dicta) and recorded"
+    },
+    {
+      "authority_id": "AUTH-M001-025",
+      "change": "necessity supporting -> not_needed; status partially_verified (s.20 -> s.7 renumbering unverifiable; co-ownership premise absent in M001)"
+    },
+    {
+      "authority_id": "AUTH-M001-022",
+      "change": "supports yes -> partially: distinguishable (joint donors vs sole owner reserving a life interest for a non-owner spouse)"
+    },
+    {
+      "authority_id": "AUTH-M001-005",
+      "change": "supports partially: inter se division of the sibling half not stated; s.30 flagged as omitted"
+    },
+    {
+      "authority_id": "AUTH-M001-007",
+      "change": "supports partially: applicability inside s.25 open; kept indispensable for Q02"
+    },
+    {
+      "authority_id": "AUTH-M001-011",
+      "change": "source_path moved from tree to the PDF text-layer dump (page 2) so subsection (1) and paragraph (a) can be quoted as one span; tier 2"
+    },
+    {
+      "authority_id": "AUTH-M001-012",
+      "change": "source_path moved to the PDF text-layer dump (pages 3-4); exact_excerpt is the fuller PDF reading; tier 2"
+    },
+    {
+      "authority_id": "AUTH-M001-019",
+      "change": "verified after visual reading of the RGD scan; exact_excerpt limited to s.1 (s.2 node contains JSON-escaped quotes); OCR defects recorded as a conflict"
+    },
+    {
+      "authority_id": "AUTH-M001-021",
+      "change": "noted that the tree was parsed from the consolidated PDF, not the HTML the candidate listed; temporal flag current_text_superseded_since_event"
+    },
+    {
+      "authority_id": "SRC021 authorities",
+      "change": "applicable_version_for_matter_date set to current_text_applicable on the strength of the two amendment trees (3 of 2017, 21 of 2018) rather than history_unknown"
+    }
+  ],
+  "q01_recommendation": {
+    "question": "Is the effect of Vinitha's registered Deed of revocation No. 525 (1991) a legal step that needs cited authority, or a scenario fact whose effect is an inference?",
+    "recommendation": "Reclassify CL-M001-Q01-006 as scenario_inference / scenario_fact with the legal effect flagged needs_legal_review; remove AUTH-M001-026 from Q01's indispensable list (kept as supporting, unresolved); set Q01 to needs_legal_review rather than blocked_missing_authority. Implemented in legal-map.json; a lawyer decides.",
+    "justification": [
+      "Q01 is a pedigree-drawing task (15 marks). In conveyancing practice a deed by which a life-interest holder releases or renounces the interest is recorded as a link in the chain of title on the strength of the instrument itself, exactly as a deed of transfer is recorded without citing authority that a transfer conveys title. The examiner's expected pedigree shows 'life interest of Vinitha released by Deed 525 (1991)'; no authority for the effect of a release is expected.",
+      "The corpus does contain Sri Lankan appellate material treating renunciation of a reserved life interest by deed as an ordinary, effective act: SC Appeal 208/2017 (Supreme Court, 9 September 2020) observes that acts done under a life interest 'come to an end ... when the life interest holder renounces the life interest to the property'; SC Appeal 169/2018 and Ferdinandus v. Fernando (1903) 6 NLR 328 narrate such renunciations as effective. None states the rule as a holding, so AUTH-M001-026 stays unresolved.",
+      "Nothing in the recorded facts casts doubt on the release: it is notarially attested (PFO s.2 formalities), executed by the holder herself, and no party disputes it. The only open legal question is characterisation (release/renunciation of a personal servitude), not validity.",
+      "Keeping Q01 at blocked_missing_authority would block the whole matter on a point the marking scheme does not test, while the genuinely open legal points (Fernando distinguishable; s.25/s.27/s.30 division; MRIO text history) are better surfaced as needs_legal_review items. If the lawyer disagrees, revert CL-M001-Q01-006 to application/inferential, restore AUTH-M001-026 to indispensable, and set Q01 to blocked_missing_authority."
+    ],
+    "alternative_not_chosen": "keep Q01 blocked_missing_authority pending an external Roman-Dutch authority (e.g. Voet 7.4) being added to the corpus by a researcher."
+  },
+  "gate_result": {
+    "command": "uv run python scripts/legal-qa-pipeline/validate_legal_maps.py --matter-dir data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001 --check all --report <tmp>/m001-vlm.json",
+    "passed": false,
+    "errors": [
+      "matter cannot advance: indispensable authority AUTH-M001-012 has an unresolved source conflict",
+      "matter cannot advance: indispensable authority AUTH-M001-019 has an unresolved source conflict",
+      "legal-map.json: status is 'needs_legal_review'; matter cannot advance",
+      "legal-map.json M001-Q01: status is 'needs_legal_review'; matter cannot advance",
+      "legal-map.json M001-Q02: status is 'needs_legal_review'; matter cannot advance",
+      "legal-map.json M001-Q03: status is 'blocked_source_conflict'; matter cannot advance"
+    ],
+    "error_assessment": "All six errors are status errors (matter/question status not authorities_verified) or the gate's rule that an unresolved source conflict on an indispensable authority blocks (AUTH-M001-012, AUTH-M001-019). There are no errors on source existence, hash, excerpt substring, claim-excerpt matching, unknown authority references, hop counts or question coverage. The bar was not lowered to clear these: the statuses reflect the verifier's assessment and the conflicts are real transcription defects in the canonical trees.",
+    "warnings_count": 22,
+    "temporal_warnings": [
+      "AUTH-M001-002: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M001-004: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M001-005: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M001-007: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review"
+    ],
+    "warnings": [
+      "AUTH-M001-005: verifier says the authority only partially supports the claimed proposition",
+      "AUTH-M001-007: verifier says the authority only partially supports the claimed proposition",
+      "AUTH-M001-025: supporting authority has verification_status partially_verified",
+      "AUTH-M001-026: supporting authority has verification_status unresolved",
+      "AUTH-M001-026: verifier notes a missing authority: A Roman-Dutch or Sri Lankan authority stating that a usufruct/life interest is extinguished by the holder's renunciation and merges in the dominium (e.g. a Voet 7.4 passage or a reported decision) is not in the corpus; SC Appeal 208/2017 (dicta) is the closest repo material.",
+      "source conflict recorded for AUTH-M001-012: Section 3(1)(d) wording: the canonical tree drops the words at the PDF page 3/4 break ('the owner of such land, in'), reading 'to a next of kin (who is a foreigner) of the accordance with'; the PDF text layer reads 'of the owner of such land, in accordance with'. Verifier re-extracted the PDF text layer from PowerShell (poppler 25.07) and confirmed the fuller reading; the dump is byte-identical (sha256 9c711e030aa001d6683ef5c9a76bc876741eda9ecb2c43ad7b4e163e118dcbd4). Assessment: does not change the answer; the tree needs correction.",
+      "source conflict recorded for AUTH-M001-001: Section 21(1): tree (from LankaLaw HTML) reads 'Inheritance ab interstate'; the LankaLaw PDF text layer (page 4) reads 'Inheritance ab intestato'. Typographical variance only, but the tree text is what is quoted.",
+      "source conflict recorded for AUTH-M001-001: Amendment history of SRC004: amendment-chains.csv lists 'Ordinance 2 of 1889' as the amending instrument; the canonical tree header lists 'Ordinance 18 of 1923'. Both unverified. Verifier: the PDF header block (page 1) lists 'Nos 15 of 1876, 2 of 1889, 18 ol 1922', so both instruments amended the Ordinance; the year of the second (1922 vs 1923) still differs between PDF and tree.",
+      "source conflict recorded for AUTH-M001-006: Section 26: tree reads 'whether of the whole or balf-blood'; PDF text layer page 5 reads 'half-blood'. Transcription error in the LankaLaw HTML/tree; no effect on the answer.",
+      "source conflict recorded for AUTH-M001-001: Commencement/proclamation date of Ordinance 15 of 1876: statute_commencement.csv (srilankalaw) records 1876-06-29; the tree header date_stated_in_source and the PDF header read 29th June 1877 (the PDF footnote also uses 'married on or after the 29th day of June, 1877'). Affects effective_from for every SRC004 authority; no effect on the answer (all deaths are 1990 or later).",
+      "source conflict recorded for AUTH-M001-019: Act 21 of 2018 tree/OCR text vs the RGD scan (read visually by the verifier): s.1 'April 1. 2018' vs scan 'April 1, 2018'; s.2(c) 'immediately after paragraph (ht)' vs scan '(h)'; new paragraph '()' vs scan '(i)'; 'listedin' vs 'listed in'; 'cnactment' vs 'enactment'. OCR defects only; the substance (which paragraphs were amended) is the same and does not change the answer.",
+      "legal-map.json M001-Q01 claim CL-M001-Q01-002: only partially verified",
+      "legal-map.json M001-Q01 claim CL-M001-Q01-003: only partially verified",
+      "legal-map.json M001-Q01 claim CL-M001-Q01-004: only partially verified",
+      "legal-map.json M001-Q01 claim CL-M001-Q01-005: only partially verified",
+      "legal-map.json M001-Q01 claim CL-M001-Q01-009: only partially verified",
+      "legal-map.json M001-Q02 claim CL-M001-Q02-006: only partially verified",
+      "legal-map.json M001-Q03 claim CL-M001-Q03-008: only partially verified",
+      "AUTH-M001-002: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M001-004: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M001-005: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M001-007: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review"
+    ],
+    "matter_can_advance": false,
+    "plain_statement": "The matter cannot advance past authorities_verified. Q01 and Q02 need a lawyer's decisions (Q01-006 reclassification; Fernando distinguishability; s.27 vs s.30). Q03 is blocked only by the s.3(1)(d) tree/PDF conflict and the Act 21 of 2018 OCR defects on indispensable authorities; on the verifier's reading neither changes the answer, and correcting the canonical trees would clear both."
+  },
+  "files_written": [
+    "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/verified-authorities.json",
+    "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/legal-map.json",
+    "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/verification-report.json"
+  ],
+  "status": "unverified"
+}

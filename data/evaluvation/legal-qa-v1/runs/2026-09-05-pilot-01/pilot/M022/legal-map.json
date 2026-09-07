@@ -1,0 +1,664 @@
+{
+  "benchmark_matter_id": "M022",
+  "run_id": "2026-09-05-pilot-01",
+  "produced_by_agent": "verifier-V1 (from research-agent-B draft)",
+  "status": "authorities_verified",
+  "questions": [
+    {
+      "benchmark_question_id": "M022-Q01",
+      "issues": [
+        "Formal requirement of notarial execution for a lease of immovable property",
+        "Execution of one deed before two notaries at different times and places",
+        "Territorial limit on each notary's power to attest",
+        "Identification of the executant unknown to the Colombo notary",
+        "Mode of execution by a private limited company",
+        "Certificate where the deed is drawn by another notary; numbering, protocol and duplicate duties; attorney alternative",
+        "Scenario ambiguity: the company 'wishes to lease out' the warehouse, yet the owner is stated to be Russel Perera. Either (i) the company is the lessee taking the warehouse from Russel Perera (the natural reading of 'the company wants Anil Fernando to attest its Lease Agreement' together with Russel Perera wanting his own notary), or (ii) the company already holds the warehouse from Russel Perera and is sub-letting, with Russel Perera joining to consent. The source does not say. The execution mechanics answered below do not depend on which party is lessor, but the description of the parties in the instrument does."
+      ],
+      "indispensable_authority_ids": [
+        "AUTH-M022-004",
+        "AUTH-M022-001",
+        "AUTH-M022-008",
+        "AUTH-M022-019",
+        "AUTH-M022-006"
+      ],
+      "supporting_authority_ids": [
+        "AUTH-M022-017",
+        "AUTH-M022-007",
+        "AUTH-M022-009",
+        "AUTH-M022-018",
+        "AUTH-M022-016",
+        "AUTH-M022-005",
+        "AUTH-M022-010",
+        "AUTH-M022-011",
+        "AUTH-M022-013",
+        "AUTH-M022-014"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "VERIFIER-V1 recount. Counted as indispensable hops: (1) the Ordinance permits parties to sign at different times and places (s.32(2), AUTH-004); (2) a deed may be executed before more than one notary, with duties allocated between first and other notary (s.31 r.25, AUTH-001); (3) each notary may attest only within his own area, which is why two notaries are needed (s.31 r.22, AUTH-008); (4) the company signs through two directors and the deed is notarially executed (Companies Act s.19(1)(a), AUTH-019). MOVED AUTH-017 (Prevention of Frauds s.2) from indispensable to supporting: the question presupposes a notarially attested lease ('wants Anil Fernando to attest its Lease Agreement'), so s.2 explains the premise rather than deciding the execution mechanics; it also carries a recorded version conflict (pre-2022 tree text vs 2024 PDF), which a lawyer should review. Hop count reduced 5 -> 4 accordingly. AUTH-006 (r.9, known to the notary) kept indispensable as the researcher had it: it is the legal reason Russel Perera signs before his own notary. AUTH-010 (r.23) added to supporting because reasoning step 5 cites it. AUTH-020/021 (2022 and 2024 amending Acts) removed from supporting: they post-date the matter and support no claim (necessity not_needed). r.2, r.12, r.28, r.29, r.30 and PoF s.16 remain supporting.",
+      "reasoning_chain": [
+        {
+          "step": 1,
+          "text": "The Lease Agreement over the Galle warehouse (assumed to exceed one month) must be in writing, signed before a licensed notary and two witnesses present at the same time, and attested.",
+          "authority_ids": [
+            "AUTH-M022-017"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "CL-M022-Q01-011"
+          ]
+        },
+        {
+          "step": 2,
+          "text": "The company can only sign through natural persons: two directors (or sole director / persons under the articles / attorneys) sign under the company's name and the deed is notarially executed.",
+          "authority_ids": [
+            "AUTH-M022-019"
+          ]
+        },
+        {
+          "step": 3,
+          "text": "Each notary may attest only within the area in which he is authorised to practise, so the Colombo notary attests the directors' signatures in Colombo and the Galle notary attests Russel Perera's signature in Galle.",
+          "authority_ids": [
+            "AUTH-M022-008"
+          ]
+        },
+        {
+          "step": 4,
+          "text": "Anil Fernando does not know Russel Perera; the 'known to the notary or to two witnesses' rule is met by Russel Perera signing before his own notary Ruwan Perera.",
+          "authority_ids": [
+            "AUTH-M022-006",
+            "AUTH-M022-007"
+          ]
+        },
+        {
+          "step": 5,
+          "text": "The Ordinance permits parties to sign at different times and places and the deed to be executed before more than one notary; rule (25) allocates the duties: first notary full attestation and protocol, second notary reduced attestation and certified copy, both number the deed.",
+          "authority_ids": [
+            "AUTH-M022-004",
+            "AUTH-M022-001",
+            "AUTH-M022-010",
+            "AUTH-M022-011"
+          ]
+        },
+        {
+          "step": 6,
+          "text": "Sequence: Ruwan Perera drafts (in duplicate) and endorses a certificate that he drew the deed; Russel Perera signs in Galle before Ruwan Perera and two witnesses, all in one another's presence, and Ruwan Perera attests first; the deed and duplicate are sent to Colombo; two directors sign before Anil Fernando and two witnesses; Anil Fernando attests second.",
+          "authority_ids": [
+            "AUTH-M022-016",
+            "AUTH-M022-009",
+            "AUTH-M022-018",
+            "AUTH-M022-001"
+          ]
+        },
+        {
+          "step": 7,
+          "text": "Ruwan Perera, as first notary, transmits the duplicate to the Registrar of Lands; since the land is in Galle no cross-district copy is needed from him, but rule (29) would apply if the Colombo notary were the transmitting notary.",
+          "authority_ids": [
+            "AUTH-M022-005",
+            "AUTH-M022-013"
+          ]
+        },
+        {
+          "step": 8,
+          "text": "Alternative (not preferred on the facts): Russel Perera appoints an attorney to sign before Anil Fernando in Colombo; the attesting notary keeps and forwards a copy of the power of attorney.",
+          "authority_ids": [
+            "AUTH-M022-014"
+          ]
+        }
+      ],
+      "gold_answer_draft": {
+        "issue": "How can a Lease Agreement over a warehouse in Galle be executed when the company (through its directors in Colombo) wants Anil Fernando, a Colombo notary, to attest, while the owner Russel Perera insists on his own Galle notary Ruwan Perera and will not travel to Colombo?",
+        "rule": "A lease of immovable property (other than a lease at will or for one month or less) must be in writing signed before a licensed notary public and two witnesses and attested (Prevention of Frauds Ordinance s.2). A company enters into such an obligation in writing signed under its name by two directors (or its sole director, persons authorised by the articles, or its attorneys) and notarially executed (Companies Act No. 7 of 2007 s.19(1)(a)). A notary may not attest outside the area in which he is authorised to practise (Notaries Ordinance s.31 r.22) and may not attest unless the executant is known to him or to two witnesses (r.9, r.10). The Ordinance allows a deed to be executed by two or more parties who do not sign at the same time and place (s.32(2)) and before more than one notary (s.31 r.25): the notary who first attests complies with all of r.20 and keeps the protocol; every other notary complies with r.20(a)-(e) and (g) and keeps a certified copy; each numbers the deed (r.23); the first notary transmits the duplicate (r.28). A notary may not attest a deed drawn by another unless a certificate that the drafter drew it is endorsed (r.2).",
+        "application": "Ruwan Perera drafts the Lease Agreement in duplicate (PoF s.16) and endorses his certificate that he drew it. Russel Perera signs in Galle before Ruwan Perera and two witnesses, all present together and signing in one another's presence (r.12); Ruwan Perera, who knows him, attests as first notary. The deed is then taken to Colombo, where two directors sign under the company's name before Anil Fernando (who knows the directors) and two witnesses, and Anil Fernando attests as second notary, stating the r.20(a)-(e) and (g) matters for the signatures he attests. Each notary gives the deed his own serial number; Ruwan Perera keeps the protocol and transmits the duplicate to the Registrar of Lands; Anil Fernando keeps a certified copy. Alternatively Russel Perera could sign through an attorney before Anil Fernando (r.30), but he wants his own notary.",
+        "conclusion": "The Lease Agreement can be executed as one deed before two notaries: Russel Perera executes before Ruwan Perera in Galle (first notary) and the company, by two directors, executes before Anil Fernando in Colombo (second notary), each notary attesting within his own area and complying with rule (25). All Notaries Ordinance excerpts are from the 1980-revision consolidation held in the repo; the October 2020 wording of the section 31 rules is recorded as history_unknown with low residual risk: the repo holds every later Notaries instrument it names (Acts 12 of 2005, 47 of 2011, 13 of 2013, 31 of 2022, 6 of 2024) and none of them touches rules 9, 22, 25 or 28 before October 2020; the one unexplained anomaly is the 2022 Act's description of rule 30 as reading 'registered power of attorney', and the 2022/2024 amendments are excluded as post-dating the matter. Prevention of Frauds Ordinance excerpts are the pre-2022 tree text, which differs from the 2024 consolidated PDF in the library."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M022-Q01-001",
+          "claim_text": "The Lease Agreement concerns a warehouse, i.e. immovable property, and (unless it is a lease at will or for a period not exceeding one month) it is an agreement establishing an interest affecting immovable property that must be in writing signed by the party before a licensed notary public and two or more witnesses present at the same time, and attested by them.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M022-017"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-017",
+              "excerpt": "No sale, purchase, transfer, assignment, or mort gage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month), nor any contract or agreement for the future sale or purchase of any land or other immovable property, and no notice, given under the provisions of the Thesawalamai Pre-emption Ordinance, of an intention or proposal to sell any undivided share or interest in land held in joint or common ownership, shall be of force or avail in law unless the same shall be in writing and signed by the party making the same, or by some person lawfully authorized by him or her in the presence of a licensed notary public and two or more witnesses present at the same time, and unless the execution of such writing, deed, or instrument be duly attested by such notary and witnesses.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC001-7-1840.json",
+                "json_pointer": "/body/1"
+              }
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q01-002",
+          "claim_text": "Because the parties are in different towns and Russel Perera will not travel, the deed cannot be signed by all parties at one time and place; the Ordinance expressly provides for a deed 'to be executed by two or more parties, both or all of whom ... do not sign the deed or instrument at the same time and place'.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M022-004"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-004",
+              "excerpt": "(2) In the case of any deed or instrument which is to be executed by two or more parties, both or all of whom, as the case may be, do not sign the deed or instrument at the same time and place-",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/31/children/1"
+              }
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q01-003",
+          "claim_text": "A deed may be executed or acknowledged before more than one notary; where it is, the notary who first attests complies with all of rule (20), every other attesting notary complies with paragraphs (a) to (e) and (g) of that rule, each notary numbers the deed, the first notary keeps the protocol and the other supplies himself with a certified copy as his protocol, and each complies as far as possible with the rest of section 31.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M022-001"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-001",
+              "excerpt": "(a) the notary who first attests such deed or instrument shall comply with all the requirements of rule (20), and every other notary attesting such deed or instrument shall comply with the requirements of paragraphs (a) to (e) of the aforesaid rule and the provisions of paragraph (g) in respect of erasures, alterations and interpolations made in the signatures attested by him or in his serial number;",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/24/children/0"
+              }
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q01-004",
+          "claim_text": "A notary may not attest a deed in any area other than that in which he is authorised to practise, so Anil Fernando (Colombo) cannot attest Russel Perera's signature in Galle and Ruwan Perera (Galle) cannot attest the directors' signatures in Colombo.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M022-008"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-008",
+              "excerpt": "(22) He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice nor authenticate or attest any deed or instrument drawn in any language other than that in which he is authorized to practice.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/21"
+              }
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q01-005",
+          "claim_text": "A notary may not attest a deed unless the executant is known to him or to at least two of the attesting witnesses; Anil Fernando does not know Russel Perera, whereas Ruwan Perera is Russel Perera's own notary, so the lessor's signature is appropriately attested by Ruwan Perera.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M022-006",
+            "AUTH-M022-007"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-006",
+              "excerpt": "(9) He shall not authenticate or attest any deed or instrument unless the person executing the same be known to him or to at least two of the attesting witnesses thereto;",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/8"
+              }
+            },
+            {
+              "authority_id": "AUTH-M022-007",
+              "excerpt": "(10) He shall not authenticate or attest any deed or instrument in any case in which both the person executing the same and the attesting witnesses thereto are unknown to him.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/9"
+              }
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q01-006",
+          "claim_text": "The company executes through natural persons: an obligation which a natural person must sign and have notarially attested may be entered into on behalf of the company in writing signed under the company's name by two directors (or the sole director, or persons authorised by the articles, or attorneys appointed by the company) and be notarially executed.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M022-019"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-019",
+              "excerpt": "(a) an obligation which, if entered into by a natural person is required by law to be in writing signed by that person and be notarially attested, may be entered into on behalf of the company in writing signed under the name of the company by -",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC031-7-2007.json",
+                "json_pointer": "/body/1/children/4/children/0/children/0/children/0"
+              }
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q01-007",
+          "claim_text": "Procedure: Ruwan Perera drafts the Lease Agreement (in duplicate); Russel Perera signs it in Galle before Ruwan Perera and two witnesses, all signing in one another's presence, and Ruwan Perera attests as the first notary; the deed then goes to Colombo where two directors sign under the company's name before Anil Fernando and two witnesses, and Anil Fernando attests as the second notary (complying with paragraphs (a)-(e) and (g) of rule (20)). Each notary numbers the deed in his own series; Ruwan Perera keeps the protocol and Anil Fernando a certified copy.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M022-001",
+            "AUTH-M022-004",
+            "AUTH-M022-009",
+            "AUTH-M022-018",
+            "AUTH-M022-019"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-001",
+              "excerpt": "(a) the notary who first attests such deed or instrument shall comply with all the requirements of rule (20), and every other notary attesting such deed or instrument shall comply with the requirements of paragraphs (a) to (e) of the aforesaid rule and the provisions of paragraph (g) in respect of erasures, alterations and interpolations made in the signatures attested by him or in his serial number;",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/24/children/0"
+              }
+            },
+            {
+              "authority_id": "AUTH-M022-009",
+              "excerpt": "(12) He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/11"
+              }
+            },
+            {
+              "authority_id": "AUTH-M022-018",
+              "excerpt": "16. Every deed or other instrument, except any will, testament, or codicil required by this Ordinance to be executed or acknowledged before or to be attested by a notary, shall be executed, acknowledged, or attested in duplicate.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC001-7-1840.json",
+                "json_pointer": "/body/15"
+              }
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q01-008",
+          "claim_text": "Because Ruwan Perera draws the deed and Anil Fernando also attests it, the deed should carry a certificate signed by Ruwan Perera that he drew it, since a notary may not attest a deed drawn in Sri Lanka by another person without such an endorsed certificate.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M022-016"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-016",
+              "excerpt": "(2) He shall not authenticate or attest a deed or instrument drawn in Sri Lanka by any other person, unless there shall be endorsed thereon a certificate signed by a notary certifying that such has been deed or drawn by himself.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/1"
+              }
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "partially_verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q01-009",
+          "claim_text": "Consequential duties: the duplicate is transmitted to the Registrar of Lands by the notary who first attests (Ruwan Perera), and the other notary need not transmit one; the first signing fixes the execution date for the stamping and numbering rules while each signing is a separate execution for the date/place and attestation rules.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M022-005",
+            "AUTH-M022-004"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-005",
+              "excerpt": "(28) Where any deed or instrument other than a will or codicil shall be executed or acknowledged by two or more parties before more than one notary, the duplicate of such deed or instrument shall be delivered or transmitted by the notary who first attests such deed or instrument to the Registrar of Lands of the district in which he resides; and it shall not be necessary for the other notary or notaries employed in the execution of such deed or instrument to deliver or transmit any duplicate thereof to such registrar.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/27"
+              }
+            },
+            {
+              "authority_id": "AUTH-M022-004",
+              "excerpt": "(2) In the case of any deed or instrument which is to be executed by two or more parties, both or all of whom, as the case may be, do not sign the deed or instrument at the same time and place-",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/31/children/1"
+              }
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q01-010",
+          "claim_text": "An alternative route exists: Russel Perera could appoint an attorney to sign in Colombo before Anil Fernando, in which case the attesting notary must preserve a copy of the power of attorney with his protocol and forward a like copy with the duplicate; but the scenario indicates he wants his own notary, so the two-notary route is the answer the question invites.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M022-014"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-014",
+              "excerpt": "(30) If he attest any deed or instrument executed before him by means of an attorney, he shall preserve a true copy of the power of attorney with his protocol, and shall forward a like copy with the duplicate to the Registrar of Lands.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/29"
+              }
+            }
+          ],
+          "support_strength": "inferential",
+          "verification_status": "partially_verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q01-011",
+          "claim_text": "The question presupposes a lease requiring notarial execution (i.e. not a lease at will or for one month or less) and that Russel Perera is the party executing in Galle while the company's directors execute in Colombo.",
+          "claim_type": "scenario_inference",
+          "supporting_authority_ids": [],
+          "supporting_excerpts": [],
+          "support_strength": "scenario_fact",
+          "verification_status": "verified",
+          "scenario_fact_basis": "Background: 'Lease Agreement' over a warehouse; 'The company wants Anil Fernando to attest its Lease Agreement'; 'Anil Fernando knows the directors'; 'Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest'; 'Russel Perera does not want to come to Colombo'. Term of lease not stated."
+        }
+      ],
+      "confidence": 0.6,
+      "status": "authorities_verified",
+      "blocking_reason": null
+    },
+    {
+      "benchmark_question_id": "M022-Q02",
+      "issues": [
+        "Which notary must give the full attestation where a deed is executed before more than one notary",
+        "The statutory list of matters the attestation must state (rule 20) and its prescribed form (rule 21 / Form E)",
+        "Application of those matters to a single-party signing in Galle (s.32(2)(ii))",
+        "Adjacent first-notary duties (numbering, protocol, duplicate)"
+      ],
+      "indispensable_authority_ids": [
+        "AUTH-M022-001",
+        "AUTH-M022-002"
+      ],
+      "supporting_authority_ids": [
+        "AUTH-M022-003",
+        "AUTH-M022-004",
+        "AUTH-M022-012",
+        "AUTH-M022-015",
+        "AUTH-M022-010",
+        "AUTH-M022-011",
+        "AUTH-M022-005",
+        "AUTH-M022-009",
+        "AUTH-M022-006",
+        "AUTH-M022-022",
+        "AUTH-M022-023",
+        "AUTH-M022-024"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Counted: (1) rule (25)(a) - the first notary must comply with all of rule (20); (2) rule (20) - the enumerated matters (a)-(g) plus signing and sealing; (3) s.32(2)(ii)/rule (21) - the attestation relates to the signing before him and must be substantially in Form E. Cases and rules 14/23/24/28 are supporting. VERIFIER-V1: hop count 3 confirmed. AUTH-011 (r.24) added to supporting because claim CL-M022-Q02-005 cites it; AUTH-020/021 removed from supporting (post-date the matter; support no claim; necessity not_needed). No authority moved between indispensable and supporting.",
+      "reasoning_chain": [
+        {
+          "step": 1,
+          "text": "Ruwan Perera is the first notary, so rule (25)(a) requires his attestation to comply with all the requirements of rule (20); the second notary's attestation is the reduced one.",
+          "authority_ids": [
+            "AUTH-M022-001"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "CL-M022-Q02-007"
+          ]
+        },
+        {
+          "step": 2,
+          "text": "Rule (20): attest without delay, sign and seal the attestation, and state matters (a) presence and mutual presence, (b) whether executant/witnesses known to him and which, (c) date, place, witnesses' full names and residences, (d) read over or read and explained, (e) consideration paid in his presence and amount, (f) stamps on deed and duplicate, (g) erasures, alterations and interpolations.",
+          "authority_ids": [
+            "AUTH-M022-002"
+          ]
+        },
+        {
+          "step": 3,
+          "text": "Because only Russel Perera signs before him, the deed is deemed executed before Ruwan Perera when Russel Perera signs (s.32(2)(ii)); the attestation is therefore about that signing in Galle, on that date, before those witnesses.",
+          "authority_ids": [
+            "AUTH-M022-004",
+            "AUTH-M022-012",
+            "AUTH-M022-009"
+          ]
+        },
+        {
+          "step": 4,
+          "text": "The attestation must be substantially in Form E and legibly signed in the language of the deed; alterations in the attestation are initialled. If Russel Perera's signature differs from his name, both names are given.",
+          "authority_ids": [
+            "AUTH-M022-003",
+            "AUTH-M022-015"
+          ]
+        },
+        {
+          "step": 5,
+          "text": "As first notary he also numbers the deed, preserves the protocol and transmits the duplicate - duties the examiner may expect to be mentioned alongside the attestation.",
+          "authority_ids": [
+            "AUTH-M022-010",
+            "AUTH-M022-001",
+            "AUTH-M022-005"
+          ]
+        },
+        {
+          "step": 6,
+          "text": "Case law confirms the attestation comprises the signature and the attestation clause (Edwin De Silva), that a knowingly false stamp statement in the attestation is an offence (Rex v. Seenytamby), and that the consideration statement is not proof of payment (Diyes Singho).",
+          "authority_ids": [
+            "AUTH-M022-022",
+            "AUTH-M022-023",
+            "AUTH-M022-024"
+          ]
+        }
+      ],
+      "gold_answer_draft": {
+        "issue": "If Ruwan Perera is the first notary to attest the Lease Agreement, what must he state in his attestation?",
+        "rule": "Where a deed is executed before more than one notary, the notary who first attests must comply with all the requirements of rule (20) of s.31 of the Notaries Ordinance (r.25(a)). Rule (20) requires him without delay to attest the deed, sign and seal the attestation, and state: (a) that the deed was signed by the party and the witnesses in his presence and in the presence of one another; (b) whether the executant or the attesting witnesses (specifying which witnesses) were known to him; (c) the day, month and year on which and the place where the deed was executed, and the full names and residences of the attesting witnesses; (d) whether the deed was read over by the executant, or read and explained by the notary to him in the presence of the witnesses; (e) whether any money was paid in his presence as the consideration or part of it and, if so, the actual amount in local currency; (f) the number and value of the adhesive stamps affixed to, or the value of the impressed stamps on, the deed and its duplicate; (g) specifically the erasures, alterations and interpolations in the deed, whether made before it was read over, and any made in the signatures, the serial number and the writing on the stamps. The attestation must be substantially in Form E of the Second Schedule and legibly signed in the language of the deed (r.21).",
+        "application": "Ruwan Perera's attestation, given in Galle, should therefore state that the Lease Agreement was signed by Russel Perera and the two witnesses in his presence and in the presence of one another; that Russel Perera is known to him (and whether the witnesses are known to him, naming which); the day, month, year and place (Galle) of the signing and the full names and residences of the two witnesses; that the deed was read over by Russel Perera, or read and explained by Ruwan Perera to him in the witnesses' presence; whether any rent, premium or other consideration was paid in his presence and, if so, how much in rupees (or that none was paid in his presence); the number and value of the stamps on the original and the duplicate; and any erasures, alterations or interpolations and whether they were made before reading over. He signs and seals the attestation in Form E, describing Russel Perera by both names if his signature differs from his name. As first notary he also gives the deed his serial number, preserves the protocol and transmits the duplicate to the Registrar of Lands; the second notary (Anil Fernando) will later state only the r.20(a)-(e) and (g) matters for the directors' signatures.",
+        "conclusion": "Ruwan Perera, as first notary, must give the full rule (20) attestation - items (a) to (g) above, signed and sealed, substantially in Form E - in respect of Russel Perera's execution before him in Galle. All Notaries Ordinance excerpts are from the 1980-revision consolidation held in the repo; the October 2020 wording of the section 31 rules is recorded as history_unknown with low residual risk: the repo holds every later Notaries instrument it names (Acts 12 of 2005, 47 of 2011, 13 of 2013, 31 of 2022, 6 of 2024) and none of them touches rules 20, 21 or 25 before October 2020; the one unexplained anomaly is the 2022 Act's description of rule 30, and the 2022/2024 amendments are excluded as post-dating the matter. Prevention of Frauds Ordinance excerpts are the pre-2022 tree text, which differs from the 2024 consolidated PDF in the library. Rule 20(b) and (e) were rewritten by the 2022 Act and 20(g) by the 2024 Act; those later versions must not be used for this October 2020 matter."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M022-Q02-001",
+          "claim_text": "Where a deed is executed before more than one notary, the notary who first attests must comply with ALL the requirements of rule (20) (the other notary only with paragraphs (a) to (e) and (g)).",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M022-001"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-001",
+              "excerpt": "(a) the notary who first attests such deed or instrument shall comply with all the requirements of rule (20), and every other notary attesting such deed or instrument shall comply with the requirements of paragraphs (a) to (e) of the aforesaid rule and the provisions of paragraph (g) in respect of erasures, alterations and interpolations made in the signatures attested by him or in his serial number;",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/24/children/0"
+              }
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q02-002",
+          "claim_text": "Rule (20) requires the notary without delay to attest every deed executed before him, to sign and seal the attestation, and to state in it: (a) that the deed was signed by the party and the witnesses in his presence and in the presence of one another; (b) whether the executant or the attesting witnesses (specifying which) were known to him; (c) the day, month and year on which and the place where it was executed, and the full names and residences of the attesting witnesses; (d) whether it was read over by the executant, or read and explained by the notary to him in the presence of the witnesses; (e) whether any money was paid in his presence as the consideration or part of it and, if so, the actual amount in local currency; (f) the number and value of the adhesive stamps affixed to, or the value of the impressed stamps on, the deed and its duplicate; (g) specifically the erasures, alterations and interpolations in the deed, whether made before it was read over, and any made in the signatures, the serial number or the writing on the stamps.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M022-002"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-002",
+              "excerpt": "(20) He shall without delay duly attest every deed or instrument which shall be executed or acknowledged before him, and shall sign and seal such attestation. In such attestation he shall state-",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/19"
+              }
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q02-003",
+          "claim_text": "The attestation must be substantially in Form E of the Second Schedule and legibly signed in the language of the deed (and with the notary's usual signature if different); every erasure, alteration or interpolation in the attestation itself must be authenticated with the notary's initials. (The 1980 revised-edition Form E, 'Form of Attestation [Section 31 (21)]', is printed in the registry RGD PDF of the Ordinance at pdftotext pages 19-20; it is not in the canonical tree. Form E was replaced by the Notaries (Amendment) Act No. 31 of 2022, after the matter date.)",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M022-003"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-003",
+              "excerpt": "(21) Every such attestation shall be substantially in the form E in the Second Schedule, and shall be legibly signed by him in the language in which the deed or instrument is written, and also with his usual signature if the language or form of that signature be different from that in which such deed or instrument is written. Every erasure, alteration, or interpolation in the attestation shall be authenticated by the notary With the initial letters of his name.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/20"
+              }
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q02-004",
+          "claim_text": "Because only Russel Perera signs before Ruwan Perera, the deed is deemed executed before Ruwan Perera when Russel Perera signs, and Ruwan Perera's attestation therefore records that signing: Russel Perera and the two witnesses signed in his presence and in one another's presence; whether Russel Perera and/or the witnesses (naming which) were known to him; the date and place (Galle) of that signing and the witnesses' full names and residences; whether Russel Perera read the deed himself or Ruwan Perera read and explained it to him in the witnesses' presence; whether any rent, premium or other consideration was paid in his presence and its amount in rupees; the stamps on the original and duplicate; and any erasures, alterations or interpolations and whether they were made before reading over.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M022-002",
+            "AUTH-M022-004",
+            "AUTH-M022-012"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-004",
+              "excerpt": "(2) In the case of any deed or instrument which is to be executed by two or more parties, both or all of whom, as the case may be, do not sign the deed or instrument at the same time and place-",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/31/children/1"
+              }
+            },
+            {
+              "authority_id": "AUTH-M022-012",
+              "excerpt": "(18) He shall correctly insert in letters in every deed or instrument executed before him the day, month, and year on which and the place where the same is executed, and shall sign the same.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/17"
+              }
+            },
+            {
+              "authority_id": "AUTH-M022-002",
+              "excerpt": "(20) He shall without delay duly attest every deed or instrument which shall be executed or acknowledged before him, and shall sign and seal such attestation. In such attestation he shall state-",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/19"
+              }
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q02-005",
+          "claim_text": "If Russel Perera's signature differs from the name he gives, the attestation must describe him by both names; and (as first notary) Ruwan Perera also numbers the deed in his own series, preserves the protocol, and transmits the duplicate to the Registrar of Lands - duties adjacent to, though not statements within, the attestation.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M022-015",
+            "AUTH-M022-010",
+            "AUTH-M022-011",
+            "AUTH-M022-005",
+            "AUTH-M022-001"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-015",
+              "excerpt": "(14) He shall before any party or witness signs any deed or instrument ascertain the full name of such party or witness, and if the signature of such party or witness differs from the name given by such party or witness, the notary shall, in his attestation of such deed or instrument, describe such party or witness by such name and by the name written in the signature.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/13"
+              }
+            },
+            {
+              "authority_id": "AUTH-M022-010",
+              "excerpt": "(23) He shall number with consecutive integral numbers the documents executed or acknowledged before him, including wills and codicils, according to the order in which they are executed or acknowledged before him. If he shall change his area, as provided by section 11 of this Ordinance, and if the new area be in a different zone from the old area, he shall number consecutively the documents attested by him in the new area,",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/22"
+              }
+            },
+            {
+              "authority_id": "AUTH-M022-011",
+              "excerpt": "(24) He shall carefully preserve as his protocol a draft or copy of every deed or instrument executed or acknowledged before him, to which shall be attached his signature and those of the party and witnesses to the original deed or instrument, and he shall keep a register thereof with a convenient index for the purpose of easy reference; and every such register shall be substantially in the form F in the Second Schedule, but in the case of wills and codicils only the number and date of the instrument shall be inserted in the register.",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/23"
+              }
+            },
+            {
+              "authority_id": "AUTH-M022-005",
+              "excerpt": "the duplicate of such deed or instrument shall be delivered or transmitted by the notary who first attests such deed or instrument to the Registrar of Lands of the district in which he resides;",
+              "locator": {
+                "source_path": "data/processed/canonical-statutes/SRC014-1-1907.json",
+                "json_pointer": "/body/30/children/27"
+              }
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q02-006",
+          "claim_text": "Case law on the attestation: (i) the 'attestation' comprises both the notary's signature and the attestation clause (Edwin De Silva v. Karunadasa De Silva, construing Land Development Ordinance s.162 with the Notaries Ordinance attestation rule, then s.30(20)-(21)); (ii) a notary who knowingly and wilfully states in the attestation that stamps of a value were affixed to the duplicate when they were not commits an offence under the Notaries Ordinance (Rex v. Seenytamby); and (iii) the notary's statement in the attestation that consideration was paid in his presence is not by itself proof that it was paid (Diyes Singho v. Herath).",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M022-022",
+            "AUTH-M022-023",
+            "AUTH-M022-024"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M022-022",
+              "excerpt": "It is for these reasons that I am of opinion, as I have already stated earlier, that the term \" attestation \" in Section 162 (1) must reasonably be taken to include both the subscription of the signature and the attestation clause.",
+              "locator": "data/processed/docs/case-law/commonlii/LKCA/1954/80.md (judgment of Rose C.J., 56 NLR 1 at 4)"
+            },
+            {
+              "authority_id": "AUTH-M022-023",
+              "excerpt": "Section 31 enacts that \" it is and shall be the duty of every notary strictly to observe and act in conformity with \"certain specified rules, one of which is (see section 31 (2) (e)) that he shall in the attestation of every deed or instrument state whether any money was paid or not in his presence as the consideration of the deed or instrument. I am unable to agree that proof of the existence of a statement in the deed or instrument by the notary that consideration was paid 495 is sufficient to establish the truth of the payment of such consideration.",
+              "locator": "data/processed/docs/case-law/commonlii/LKCA/1962/72.md (judgment of T. S. Fernando J., 64 NLR 492 at 494-495)"
+            },
+            {
+              "authority_id": "AUTH-M022-024",
+              "excerpt": "In the circumstances there can be no doubt that he made the false statement on the attestation in question \" knowingly and wilfully.\" I do not think that there is any room for the argument that his statement was made accidentally or through inadvertence. The accused is therefore guilty of the offence laid in the third count of the indictment.",
+              "locator": "data/processed/docs/case-law/commonlii/LKCA/1924/1.md (judgment of Jayewardene A.J., 26 NLR 367 at 370)"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "partially_verified",
+          "scenario_fact_basis": null
+        },
+        {
+          "claim_id": "CL-M022-Q02-007",
+          "claim_text": "The question stipulates that Ruwan Perera is the first notary, i.e. Russel Perera signs before him in Galle before the directors sign before Anil Fernando in Colombo.",
+          "claim_type": "scenario_inference",
+          "supporting_authority_ids": [],
+          "supporting_excerpts": [],
+          "support_strength": "scenario_fact",
+          "verification_status": "verified",
+          "scenario_fact_basis": "Question text: 'If Ruwan Perera is the first Notary'; background: Ruwan Perera practises in Galle and is to draft and attest; Russel Perera will not come to Colombo."
+        }
+      ],
+      "confidence": 0.65,
+      "status": "authorities_verified",
+      "blocking_reason": null
+    }
+  ]
+}

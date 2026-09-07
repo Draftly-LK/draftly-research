@@ -1,0 +1,85 @@
+{
+  "benchmark_matter_id": "M084",
+  "verifier": "verifier-M084",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:10:09Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M084-001",
+      "decision": "partially_verified",
+      "note": "check confirmed the excerpt verbatim in 31-2022/s16, and show 31-2022/s16 --full confirms subsection (6) recites the replaced rule (9) opening words 'He shall not authenticate or attest any deed or instrument unless the person executing the same be known to him or to at least two of the attesting witnesses thereto;'; the substantive rule relied on is therefore right for October 2019, but the entry carries applicable_to_matter_date true against a section_id in a 2022 amending Act that was not in force at the matter date, which is a device a lawyer should confirm against a pre-2022 edition."
+    },
+    {
+      "provision_id": "PROV-M084-002",
+      "decision": "verified",
+      "note": "Excerpt verbatim in 1-1907/s31 and correctly marked as not applicable at the matter reference date; it is the wording substituted by 31-2022 s.16(6)."
+    },
+    {
+      "provision_id": "PROV-M084-003",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim in the consolidated 1-1907/s31 and substantively in force in October 2019, but the quoted opening words are the post-2024 form; 6-2024/s3(3) shows the limb then read 'and in the latter case, he shall satisfy himself', which the map's temporal_note already records."
+    },
+    {
+      "provision_id": "PROV-M084-004",
+      "decision": "verified",
+      "note": "Rule (13) verbatim in 1-1907/s31; no amending section held in the corpus (20-1976 s.10, 47-2011 s.2 and s.3, 31-2022 s.16, 6-2024 s.3) touches it, so it stood unaltered in October 2019. Reading the whole of section 31 and grep over the corpus for brother, relative, relation, spouse and kindred confirms the researcher's negative finding that no rule disqualifies an attesting witness for kinship to the notary."
+    },
+    {
+      "provision_id": "PROV-M084-005",
+      "decision": "verified",
+      "note": "Rule (8) verbatim in 1-1907/s31 and untouched by any amending section held in the corpus."
+    },
+    {
+      "provision_id": "PROV-M084-006",
+      "decision": "verified",
+      "note": "Excerpt verbatim in 6-2024/s3; correctly marked as later than the matter date and used only as evidence of the pre-2024 wording of rule (9) and of the existence of a then rule (10)."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M084-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "Kept as proposed_gold. No indispensable provision was rejected or left unresolved; PROV-M084-001 and PROV-M084-003 are partially verified for wording-source reasons the map already states. The answer turns on rule (9) as it stood in October 2019, rule (8) and rule (13) of section 31, cites no case law, and needs no Roman-Dutch principle. All twelve claims were marked verified and the three legal issues verified. One reasoning edge was corrected: PROV-M084-003 to PROV-M084-005 was recorded as cross_references, but rule (9) contains no textual cross-reference to rule (8); the two rules are jointly required to establish that the acquaintance and declaration duty is owed as to at least two attesting witnesses, so the relationship was changed to jointly_required. Hop count of 3 was left unchanged and matches the indispensable steps."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "temporal_source_of_the_governing_text",
+      "researcher_position": "The rule (9) text in force in October 2019 can be taken from the words recited as replaced in 31-2022/s16(6), so that amending subsection is recorded as an applicable provision.",
+      "verifier_position": "The recital is reliable evidence of the replaced words and no intervening amendment held in the corpus touched rule (9), so the substance is right; but recording a 2022 amending subsection as applicable_to_matter_date true overstates the status of the instrument, and the map should be read as resting on the recited words alone until a lawyer checks a pre-2022 edition.",
+      "supporting_sources": ["31-2022/s16", "6-2024/s3", "1-1907/s31", "47-2011/s2", "47-2011/s3", "20-1976/s10"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [],
+    "temporal_issues": [
+      "PROV-M084-001 points at a 2022 amending section while asserting applicability in 2019; this is the single validator warning and is stated openly in the map.",
+      "PROV-M084-003 quotes the post-2024 wording of the acquaintance limb rather than the October 2019 wording, which differed by the introductory words 'and in the latter case,'.",
+      "Rule (10) of section 31 was in force in October 2019 and was repealed by 6-2024 s.3(4) without recital, so its content cannot be checked from the corpus and cannot be excluded as relevant.",
+      "Section 34 (penalty) and Prevention of Frauds Ordinance section 2 are held only in post-2019 forms; the researcher correctly declined to state their 2019 content."
+    ],
+    "missing_definitions_or_exceptions": [
+      "defs 1-1907 returned no definition of witness or instrument bearing on the point.",
+      "Section 32 was checked and does not disapply rules (8), (9) or (13) for any class of deed.",
+      "Section 33, which saves an instrument from invalidity for a notary's failure in a matter of form, is not in the map. It was not added because the question asks whether the notary may attest, not whether the resulting deed would be valid, but a lawyer may want it noted."
+    ],
+    "case_law_dependence": [
+      "None. The brother point rests on the absence of any disqualifying rule in section 31, which was confirmed by reading the whole section and by corpus-wide greps, not on judicial authority. Whether a non-statutory rule of professional practice bites is the open question."
+    ],
+    "enrichment_issues": [
+      "The added facts name no statute or section and do not state the conclusion. Two of them are phrased close to the statutory tests: 'produces no national identity card, passport or driving licence' tracks the post-2022 identification limb, and 'the notary is not a party to the deed' tracks rule (13). Neither leaks a citation, but both signal which rules to reach for.",
+      "FACT-M084-Q01-003, the only synthetic_decisive fact, explains why it is needed: the original scenario is silent about the second witness and the rule turns on knowledge by at least two of them.",
+      "FACT-M084-Q01-004 is recorded as synthetic_neutral and is neutral at the matter reference date, but it would be decisive under the current text of rule (9)."
+    ],
+    "duplicate_or_leak_issues": [
+      "PROV-M084-002 and PROV-M084-003 carry the same section_id (1-1907/s31) as different limbs of rule (9), and PROV-M084-004 and PROV-M084-005 likewise for rules (13) and (8); the subsection fields distinguish them and no excerpt is duplicated."
+    ]
+  },
+  "lawyer_questions": [
+    "Confirm from a pre-2022 edition of the Notaries Ordinance that rule (9) of section 31 in October 2019 read as recited in 31-2022 s.16(6), and confirm what rule (10) then provided, since the corpus holds neither and the whole answer rests on the recited words."
+  ]
+}

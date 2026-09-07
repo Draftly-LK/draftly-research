@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://draftly.lk/schemas/legal-qa-v1/run-manifest.schema.json",
+  "title": "Run manifest and per-matter state machine (runs/<run-id>/manifest.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["run_id", "created", "source_dataset", "schema_versions", "state_machine", "matters", "agents", "events"],
+  "properties": {
+    "run_id": { "type": "string", "minLength": 1 },
+    "created": { "type": "string" },
+    "description": { "type": "string" },
+    "source_dataset": {
+      "type": "object",
+      "required": ["selected_matters_path", "selected_questions_path", "selected_matters_sha256", "selected_questions_sha256"],
+      "properties": {
+        "selected_matters_path": { "type": "string" },
+        "selected_questions_path": { "type": "string" },
+        "selected_matters_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "selected_questions_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "matter_count": { "type": "integer" },
+        "question_count": { "type": "integer" }
+      }
+    },
+    "schema_versions": { "type": "object", "additionalProperties": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" } },
+    "state_machine": {
+      "type": "object",
+      "required": ["ordered_states", "failure_states"],
+      "properties": {
+        "ordered_states": { "type": "array", "items": { "type": "string" } },
+        "failure_states": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "matters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["benchmark_matter_id", "role", "state", "state_history", "owner_agents", "artifact_dir", "selection_reason"],
+        "properties": {
+          "benchmark_matter_id": { "type": "string", "pattern": "^M[0-9]{3}$" },
+          "role": { "enum": ["pilot", "full_run", "not_started"] },
+          "state": {
+            "enum": [
+              "selected", "issue_mapped", "authorities_candidate", "authorities_verified", "predicates_defined",
+              "documents_specified", "ledger_built", "synthetic_bundle_generated", "lawyer_review_pending", "lawyer_validated",
+              "blocked_missing_authority", "blocked_temporal_uncertainty", "blocked_source_conflict", "blocked_scenario_ambiguity", "needs_legal_review"
+            ]
+          },
+          "state_history": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["state", "at", "validated_by"],
+              "properties": {
+                "state": { "type": "string" },
+                "at": { "type": "string" },
+                "validated_by": { "type": "string", "description": "validator script or agent that passed the gate" },
+                "note": { "type": "string" }
+              }
+            }
+          },
+          "owner_agents": {
+            "type": "object",
+            "properties": {
+              "research": { "type": ["string", "null"] },
+              "verification": { "type": ["string", "null"] },
+              "document_design": { "type": ["string", "null"] },
+              "red_team": { "type": ["string", "null"] }
+            }
+          },
+          "artifact_dir": { "type": "string" },
+          "selection_reason": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "agents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["agent_id", "role", "model", "matters"],
+        "properties": {
+          "agent_id": { "type": "string" },
+          "role": { "type": "string" },
+          "model": { "type": "string" },
+          "matters": { "type": "array", "items": { "type": "string" } },
+          "outputs": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "description": "Append-only audit log: failures, retries, refinements, blocks.",
+      "items": {
+        "type": "object",
+        "required": ["at", "matter", "event", "detail"],
+        "properties": {
+          "at": { "type": "string" },
+          "matter": { "type": ["string", "null"] },
+          "event": { "type": "string" },
+          "detail": { "type": "string" }
+        }
+      }
+    }
+  }
+}

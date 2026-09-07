@@ -1,0 +1,717 @@
+{
+  "benchmark_matter_id": "M030",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M030",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:12:51Z",
+    "verification_agent": "verifier-M030",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:29:32Z"
+  },
+  "matter_reference_date": "2024-10",
+  "matter_reference_date_basis": "Exam session 'OCTOBER 2024' recorded as matter_reference_date 2024-10 in candidates/matters/M030.json; the law is stated as at that session.",
+  "corpus_gaps": [
+    "The interpretation sections in the corpus (Act No. 38 of 2014 s.25 and Apartment Ownership Law s.26) have lost their defined-term labels in extraction: the bodies read as a run of bare 'means ...' clauses. Excerpts are verbatim but the verifier must map each clause back to its term in the printed Act.",
+    "The corpus body of Act No. 38 of 2014 s.11 is corrupted by extraction ('shall not for any purpose be been mortgaged ... for leased to a foreign a period of five years'). The five-year mortgage bar is legible but should be confirmed against the printed Act.",
+    "The corpus body of the amending Act No. 21 of 2018 s.2 is truncated and does not show the substituted paragraph (b) or the added paragraph (i); the consolidated text of s.3 of Act No. 38 of 2014 was relied on instead.",
+    "Exchange-control law is outside the corpus. The inward remittance condition in s.3(1)(b) and the mechanics of remitting the purchase price or lease rental cannot be cited from this corpus.",
+    "The Strategic Development Projects Act, No. 14 of 2008, referred to in s.3(2), and the Board of Investment law are not in the corpus, so the discretionary exemption route can only be stated at the level of the referring provision.",
+    "No provision in the Notaries Ordinance as held in this corpus expressly requires a notary to refuse to attest an instrument that would be void; the advice that the notary should decline rests on s.18 and s.4(1) of Act No. 38 of 2014.",
+    "The Condominium Management Authority Law, No. 10 of 1973 is not in the corpus, so no advice is offered on the developer-side regulation of the apartment business itself."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M030-001",
+      "section_id": "38-2014/s2",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act, No. 38 of 2014",
+      "number_and_year": "No. 38 of 2014",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "Notwithstanding any provision to the contrary in any other written law, the transfer of title of any land situated in Sri Lanka, shall be prohibited if such transfer is- (a) to a foreigner; or (b) to a company incorporated in Sri Lanka under the Companies Act where any foreign shareholding in such company, either direct or indirect, is fifty per cent or above; or (c) to a foreign company, unless exempted as provided in section 3.",
+      "why_relevant": "This is the operative prohibition. It bars the very transaction the client proposes - the transfer of title of private land in Sri Lanka to a person who is not a citizen - and it is the provision on which the whole advice turns. It also fixes the alternative transferee route (a Sri Lankan company with less than fifty per cent foreign shareholding) and points to the section 3 exemptions.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 has been in force since the Act commenced in 2014 and carries no amendment event in the corpus consolidation, so the text applies at the matter reference date of October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M030-002",
+      "section_id": "38-2014/s25",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act, No. 38 of 2014",
+      "number_and_year": "No. 38 of 2014",
+      "section": "25",
+      "subsection": "definition of 'foreigner' and 'foreign company'",
+      "relevant_excerpt": "means a person who is not a citizen of Sri Lanka; means a company or a body of persons incorporated under the laws of any country other than Sri Lanka;",
+      "why_relevant": "The prohibition in section 2 operates on the defined term 'foreigner'. The definition is purely negative - anyone who is not a citizen of Sri Lanka - so the client's nationality, and not his residence, visa status or business purpose, decides whether section 2 catches him. Without this definition the prohibition cannot be applied to him.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 25 has been in force since 2014 with no amendment event recorded in the corpus, so it applies at October 2024. Caveat for the verifier: in the corpus text of section 25 the defined terms themselves have been dropped in extraction, so the excerpt reads as two bare 'means ...' clauses; in the printed Act these are the definitions of 'foreigner' and 'foreign company' respectively.",
+      "verification_status": "verified",
+      "verifier_note": "Verified: the corpus metadata for 38-2014/s25 lists twenty defined terms in the same order as the twenty 'means/includes' clauses in the body, and the ninth and tenth clauses are 'foreigner' and 'foreign company', so the label loss noted by the researcher does not affect the mapping."
+    },
+    {
+      "provision_id": "PROV-M030-003",
+      "section_id": "38-2014/s25",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act, No. 38 of 2014",
+      "number_and_year": "No. 38 of 2014",
+      "section": "25",
+      "subsection": "definitions of 'land', 'Minister' and 'transfer'",
+      "relevant_excerpt": "means any State or private land and includes- (a) any interest in the land; (b) any land covered with water; and (c) any house or building stands on that land; means the Minister to whom the subject of Finance has been assigned; means any sale, donation, gift or any conveyance by or under which the title of such land passes to another person;",
+      "why_relevant": "The two other defined terms the prohibition depends on. 'Land' covers private as well as State land and extends to any interest in the land and to buildings on it, so a private bare-land purchase for an apartment development is within the Act. 'Transfer' covers any sale or conveyance passing title, which is exactly the deed the client wants attested.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Same section and same commencement as PROV-M030-002; in force at October 2024. The extraction has again dropped the term labels, so the excerpt runs the definitions of 'land', 'Minister' and 'transfer' together.",
+      "verification_status": "verified",
+      "verifier_note": "Verified on the same clause-to-term alignment as PROV-M030-002: clauses fifteen, sixteen and seventeen of 38-2014/s25 are 'land', 'Minister' and 'transfer'."
+    },
+    {
+      "provision_id": "PROV-M030-004",
+      "section_id": "38-2014/s3",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act, No. 38 of 2014",
+      "number_and_year": "No. 38 of 2014",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) The provisions of section 2 shall not apply to- (a) any land the title of which is transferred to a Diplomatic Mission of another State within the meaning of the Diplomatic Privileges Act or to an International, Multilateral or Bilateral Organization recognized in terms of that Act; (b) a condominium parcel specified under the Apartment Ownership Law: Provided that, the entire value shall be paid upfront through an inward foreign remittance prior to the execution of the relevant deed of transfer;",
+      "why_relevant": "The exception the advice must be checked against. Paragraph (b) is the one route by which a foreigner may take freehold title in an apartment context - a condominium parcel under the Apartment Ownership Law, and then only if the entire value is remitted from abroad before the deed is executed. The remaining paragraphs (dual citizens, next of kin, banks, listed companies) are the exhaustive list against which the client's position must be tested before advising that section 2 bites.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 3(1) was amended by the Land (Restrictions on Alienation) (Amendment) Act, No. 21 of 2018, section 2, which substituted paragraph (b) and added paragraph (i). The corpus text is the consolidated post-2018 text, which is the text in force at October 2024. The verifier should note that the corpus body of 21-2018 section 2 is truncated and does not itself show the substituted paragraph (b).",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M030-005",
+      "section_id": "38-2014/s2",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act, No. 38 of 2014",
+      "number_and_year": "No. 38 of 2014",
+      "section": "2",
+      "subsection": "(2)(a)",
+      "relevant_excerpt": "(a) For the purpose of maintaining the legal validity of a transfer of land to a company incorporated in Sri Lanka under the Companies Act, with less than fifty per cent of foreign shareholding, the foreign shareholding of such company shall remain less than fifty per cent, for a minimum period of consecutive twenty (20) years from the date of such transfer.",
+      "why_relevant": "Qualifies the corporate route. If the client is advised to acquire through a Sri Lankan company, the sub-fifty per cent foreign shareholding is not a one-off test at the date of the deed; it must be held for twenty consecutive years, failing which the transfer becomes void. This is the most important warning to give a client who is told he may buy through a local company.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of section 2, in force from 2014, unamended in the corpus consolidation; applies at October 2024.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim, but two corrections: the corpus body of 38-2014/s2 carries no '(2)' subsection marker before this paragraph, and the voidness consequence relied on in why_relevant sits in paragraph (b), not paragraph (a), and is subject to provisos allowing a company to cure a breach within twelve months (listed) or six months (unlisted); no excerpt of paragraph (b) is in the map."
+    },
+    {
+      "provision_id": "PROV-M030-006",
+      "section_id": "38-2014/s5",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act, No. 38 of 2014",
+      "number_and_year": "No. 38 of 2014",
+      "section": "5",
+      "subsection": "(1)",
+      "relevant_excerpt": "Notwithstanding any provision to the contrary in any other written law, the leasing of a land- (a) to a foreigner; or (b) to a company incorporated in Sri Lanka under the Companies Act, where any foreign shareholding in such company, either direct or indirect, is fifty per cent or above; or (c) to a foreign company, shall be effected subject to the payment of the Land Lease Tax imposed under section 6: Provided however, the maximum tenure of any such lease shall not exceed ninety nine years.",
+      "why_relevant": "The principal lawful alternative. A foreigner who cannot take title may take a lease, capped at ninety-nine years, which is long enough to support an apartment development. This is the constructive half of the advice.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2014 and unamended in the corpus consolidation, but it must be read with section 5A, which has since removed the Land Lease Tax from leases executed on or after 1 January 2016.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M030-007",
+      "section_id": "38-2014/s5A",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act, No. 38 of 2014",
+      "number_and_year": "No. 38 of 2014",
+      "section": "5A",
+      "subsection": "",
+      "relevant_excerpt": "the provisions relating to the Land Lease Tax shall not apply to a lease of any land- (a) to a foreigner; or (b) to a company incorporated in Sri Lanka under the Companies Act, where any foreign shareholding in such company, either direct or indirect, is fifty per cent or above; or (c) to a foreign company, under and indenture of lease executed on or after January 1, 2016",
+      "why_relevant": "Removes the cost objection to the lease route. The Land Lease Tax referred to in section 5(1) is not charged on an indenture of lease executed on or after 1 January 2016, so a lease taken in 2024 attracts no Land Lease Tax.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 5A was inserted by the Land (Restrictions on Alienation) (Amendment) Act, No. 3 of 2017, section 2 and further amended by Act, No. 21 of 2018, section 3. It is in force from 2017, before the matter reference date of October 2024, and it operates on leases executed on or after 1 January 2016.",
+      "verification_status": "verified",
+      "verifier_note": "Verified including the temporal chain: section 5A was inserted by 3-2017 s.2 with effect from January 8, 2017 and that date was substituted by 21-2018 s.3 with January 1, 2016, so the corpus text is the text in force at October 2024."
+    },
+    {
+      "provision_id": "PROV-M030-008",
+      "section_id": "38-2014/s18",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act, No. 38 of 2014",
+      "number_and_year": "No. 38 of 2014",
+      "section": "18",
+      "subsection": "",
+      "relevant_excerpt": "Any alienation of land effected in contravention of the provisions of this Act, shall be void and shall have no effect in law.",
+      "why_relevant": "The consequence that makes the advice urgent. A deed of transfer taken in the teeth of section 2 is not merely unregistrable; it is void, so the client would pay the price and acquire nothing. This is what the attorney and notary must tell the client before any deed is drawn.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2014 and unamended in the corpus consolidation; applies at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M030-009",
+      "section_id": "38-2014/s4",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act, No. 38 of 2014",
+      "number_and_year": "No. 38 of 2014",
+      "section": "4",
+      "subsection": "(1)",
+      "relevant_excerpt": "The Registrar of Lands shall not register an instrument effecting any transfer of title referred to in section 2, under the provisions of the Registration of Documents Ordinance, unless such registrar of lands is satisfied that such transfer is in compliance with the provisions of this Act.",
+      "why_relevant": "The practical bar at the registry. Even if a deed were executed, the Registrar of Lands must refuse registration unless satisfied that the transfer complies with the Act, so the client would also be left with an unregistrable instrument.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2014 and unamended in the corpus consolidation; applies at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M030-010",
+      "section_id": "38-2014/s11",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act, No. 38 of 2014",
+      "number_and_year": "No. 38 of 2014",
+      "section": "11",
+      "subsection": "(1)",
+      "relevant_excerpt": "Any land transferred or leased to a person or a company referred to in section 2(1) or 5(1), after the date on which the certificate of the speaker is endorsed in respect of this Act, shall not for any purpose be been mortgaged or pledged to any bank licensed under the Banking Act",
+      "why_relevant": "A funding constraint the client must be warned about if he takes the lease route or acquires through a company with fifty per cent or more foreign shareholding: the land cannot be mortgaged or pledged to a licensed bank for five years from execution of the instrument, which matters to an apartment developer relying on construction finance.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2014 and unamended in the corpus consolidation; applies at October 2024. The corpus body of this section is visibly corrupted by extraction ('shall not for any purpose be been mortgaged ... for leased to a foreign a period of five years'); the excerpt has been kept short and the five-year period should be confirmed against the printed Act.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The five-year bar and its running from execution of the instrument are legible in the corrupted corpus body and the excerpt is verbatim, but the role is narrower than why_relevant states: section 11(1) bites only on land transferred or leased to a person or company 'referred to in section 2(1) or 5(1)', which does not include a Sri Lankan company whose foreign shareholding is below fifty per cent, so the bar does not reach the corporate route the map recommends."
+    },
+    {
+      "provision_id": "PROV-M030-011",
+      "section_id": "11-1973/s9",
+      "act_id": "11-1973",
+      "formal_title": "Apartment Ownership Law, No. 11 of 1973",
+      "number_and_year": "No. 11 of 1973",
+      "section": "9",
+      "subsection": "(4)",
+      "relevant_excerpt": "(4) Notwithstanding anything to the contrary in any other law but subject to the provisions of this Law, after the registration of a Condominium Plan, or Semi Condominium Plan, any condominium parcel depicted therein together with the common elements appurtenant thereto may be held and dealt with in the same manner and form as any land.",
+      "why_relevant": "Explains what the condominium exemption in section 3(1)(b) of the 2014 Act actually gives a foreign buyer: once a Condominium Plan is registered, each condominium parcel with its share of the common elements may be held and dealt with as land. It also shows why the exemption does not help a purchase of bare land over which no Condominium Plan has been registered.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 9 has been in force since 1973 and was last amended in 2003, before the matter reference date of October 2024.",
+      "verification_status": "verified",
+      "verifier_note": "Verified; role raised from supporting to indispensable, because ruling out the section 3(1)(b) condominium exemption is a necessary step in the answer rather than a supporting one."
+    },
+    {
+      "provision_id": "PROV-M030-012",
+      "section_id": "38-2014/s3",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act, No. 38 of 2014",
+      "number_and_year": "No. 38 of 2014",
+      "section": "3",
+      "subsection": "(2)",
+      "relevant_excerpt": "(2) The Minister may in consultation with the Minister to whom the subject of lands has been assigned and with the prior written approval of the Cabinet of Ministers, by Order published in the Gazette, exempt any foreign entity engaged in the banking, financial, insurance, maritime, aviation, advanced technology or infrastructure development project identified as a Strategic Development Project, in terms of the provisions of the Strategic Development Projects Act, No. 14 of 2008, from the application of the provisions of section 2.",
+      "why_relevant": "The discretionary exemption route. It is worth putting to the client, but it is confined to listed sectors and to a project identified as a Strategic Development Project, and it requires a Ministerial Order in the Gazette with prior Cabinet approval, so an ordinary private apartment venture cannot rely on it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Subsection (2) was not touched by the 2018 amendment, which amended subsection (1) only; in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": "Verified; note that section 3 also carries a third Ministerial exemption, in subsection (3), for a foreign company engaged in international commercial operations, which the map does not record."
+    },
+    {
+      "provision_id": "PROV-M030-901",
+      "section_id": "11-1973/s26",
+      "act_id": "11-1973",
+      "formal_title": "Apartment Ownership Law, No. 11 of 1973",
+      "number_and_year": "No. 11 of 1973",
+      "section": "26",
+      "subsection": "definition of 'condominium parcel'",
+      "relevant_excerpt": "means a defined space which is shown as an independent parcel on a condominium plan or semi condominium plan or provisional condominium plan and which is designed for independent use consisting of one or more rooms whether occupying the entirety or part of one or more storeys in a building of more than one storey and which is shown as a separate condominium parcel",
+      "why_relevant": "The exemption in section 3(1)(b) of Act, No. 38 of 2014 is expressed in the term 'condominium parcel specified under the Apartment Ownership Law', and this is the definition of that term. It is what makes the exclusion of bare land determinate: a condominium parcel is a defined space shown as an independent parcel on a condominium plan, semi condominium plan or provisional condominium plan, so an allotment of bare land over which no such plan has been registered cannot be a condominium parcel and the exemption cannot be reached.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 26 is the interpretation section of the Apartment Ownership Law; the corpus records it as in force from 1973 with its latest change in 2003, both before the matter reference date of October 2024.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier. The research notes rejected 11-1973 s.26 as garbled, but the clause the researcher read as the definition of 'condominium parcel' ('a parcel intended for separate ownership...') is in fact the definition of 'accessory parcel'; the corpus defined-term order places 'condominium parcel' immediately after 'Condominium Plan', and that clause is clean and verbatim."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M030-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The whole of the advice can be derived from statute. The Land (Restrictions on Alienation) Act, No. 38 of 2014 states the prohibition, defines every operative term ('foreigner', 'land', 'transfer'), lists the exemptions exhaustively, states the consequence of contravention, and supplies the lease and corporate alternatives; the Apartment Ownership Law, No. 11 of 1973 supplies the condominium concept the exemption relies on. No judicial gloss or Roman-Dutch doctrine is needed to reach a complete answer, and the corpus contains all of these provisions. The exchange-control formalities for the inward remittance are regulatory rather than judicial, and are recorded as a corpus gap rather than as a need for case law.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M030-Q01-01",
+          "issue": "Whether a person who is not a citizen of Sri Lanka may take a transfer of title to private land in Sri Lanka.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M030-Q01-02",
+          "issue": "Whether any statutory exemption, in particular the condominium parcel exemption or a Ministerial exemption for a Strategic Development Project, is available on these facts.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M030-Q01-03",
+          "issue": "What the legal effect is of a deed of transfer executed in contravention of the prohibition, and what the Registrar of Lands must do with it.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M030-Q01-04",
+          "issue": "What lawful alternatives (a lease of up to ninety-nine years, or acquisition through a Sri Lankan company with foreign shareholding below fifty per cent) are open, and on what conditions.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M030-Q01-05",
+          "issue": "Whether the land so acquired or leased can be mortgaged to a licensed bank to fund the apartment construction.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M030-001",
+        "PROV-M030-002",
+        "PROV-M030-003",
+        "PROV-M030-004",
+        "PROV-M030-008",
+        "PROV-M030-011",
+        "PROV-M030-901"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M030-005",
+        "PROV-M030-006",
+        "PROV-M030-007",
+        "PROV-M030-009",
+        "PROV-M030-010",
+        "PROV-M030-012"
+      ],
+      "background_provision_ids": [],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps over the indispensable provisions: (1) apply the prohibition in section 2(1)(a) of Act, No. 38 of 2014; (2) resolve the defined terms 'foreigner', 'land' and 'transfer' in section 25, without which the prohibition cannot be applied to this client and this land; (3) rule out the exemptions in section 3(1), including the condominium parcel exemption, which itself requires a cross-enactment reading of the Apartment Ownership Law. Section 18 is counted as the consequential limb of step (1) rather than a fourth hop, since it follows automatically once the transfer is shown to contravene the Act. The lease, corporate and mortgage provisions are supporting and are not counted. Verifier: the count of three is confirmed, but PROV-M030-011 has been moved from supporting to indispensable and PROV-M030-901 (the definition of 'condominium parcel' in section 26 of the Apartment Ownership Law) has been added as indispensable, because step (3), ruling out the section 3(1)(b) exemption on bare land, cannot be taken without them. Both sit inside step (3) and add no further hop.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M030-002",
+          "to_provision_id": "PROV-M030-001",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M030-003",
+          "to_provision_id": "PROV-M030-001",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M030-004",
+          "to_provision_id": "PROV-M030-001",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M030-012",
+          "to_provision_id": "PROV-M030-001",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M030-008",
+          "to_provision_id": "PROV-M030-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M030-009",
+          "to_provision_id": "PROV-M030-001",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M030-005",
+          "to_provision_id": "PROV-M030-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M030-011",
+          "to_provision_id": "PROV-M030-004",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M030-007",
+          "to_provision_id": "PROV-M030-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M030-010",
+          "to_provision_id": "PROV-M030-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M030-901",
+          "to_provision_id": "PROV-M030-004",
+          "relationship": "defines"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "A foreigner wishes to purchase a land in Sri Lanka for his Apartment business. You have been retained by him as his Attorney-at-Law and Notary.",
+        "enriched_background": "Mr. Anders Holmqvist, a citizen of Sweden holding a Swedish passport, wishes to purchase a land in Sri Lanka for his apartment business. He has never been a citizen of Sri Lanka, has not obtained dual citizenship, and is in Sri Lanka on a resident visa. You have been retained by him as his Attorney-at-Law and Notary.\n\nThe property he has selected is Lot 4 in Survey Plan No. 8172 dated 12 March 2019 made by K. A. Weerasooriya, Licensed Surveyor, an allotment of bare private land 38.5 perches in extent called 'Nelumwatta', bearing assessment No. 118/3, Hill Street, Dehiwala, in the District of Colombo, Western Province. It is held in freehold by Mrs. S. P. Dharmasiri, a citizen of Sri Lanka, who is willing to sell. The land is bare, with no building on it and no condominium plan of any kind registered over it. Mr. Holmqvist intends to construct a twelve-storey residential apartment building on it and to sell and rent out the apartments. The agreed price is Rs. 240,000,000, which he proposes to remit in full from his bank in Stockholm to a Sri Lankan bank before the deed is executed.\n\nHe instructs you on 2 September 2024 and wishes the deed of transfer to be drawn, executed and attested in October 2024. He also asks whether he can mortgage the property to a local bank to fund construction. He has not incorporated any company in Sri Lanka. He is not related to the owner, holds no approval of the Cabinet of Ministers and no project approval of any kind, is not a diplomatic mission or an international organisation, and is not a bank or a finance leasing institution. He tells you he is willing to restructure the transaction if that is what the law requires.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M030-Q01-001",
+            "fact": "The client is Mr. Anders Holmqvist, a citizen of Sweden holding a Swedish passport. He has never been a citizen of Sri Lanka, has not obtained dual citizenship, and is in Sri Lanka on a resident visa.",
+            "origin": "synthetic_decisive",
+            "reason": "The question says only 'a foreigner'. The prohibition operates on a defined term that turns solely on the absence of Sri Lankan citizenship, and one of the statutory exemptions is for dual citizens, so the client's citizenship status has to be pinned down before the answer is determinate.",
+            "activates_provision_ids": [
+              "PROV-M030-001",
+              "PROV-M030-002",
+              "PROV-M030-004"
+            ],
+            "counterfactual_effect": "Had he held dual Sri Lankan citizenship, the prohibition would not apply to him at all and the advice would be that he may take title outright.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M030-Q01-002",
+            "fact": "The property he has selected is Lot 4 in Survey Plan No. 8172 dated 12 March 2019 made by K. A. Weerasooriya, Licensed Surveyor, an allotment of bare private land 38.5 perches in extent called 'Nelumwatta', bearing assessment No. 118/3, Hill Street, Dehiwala, in the District of Colombo, Western Province. It is held in freehold by Mrs. S. P. Dharmasiri, a citizen of Sri Lanka, who is willing to sell.",
+            "origin": "synthetic_decisive",
+            "reason": "The question does not identify the land. The Act applies to land situated in Sri Lanka, distinguishes State from private land, and treats a condominium parcel differently from bare land, so the identity, location and character of the land are needed.",
+            "activates_provision_ids": [
+              "PROV-M030-001",
+              "PROV-M030-003"
+            ],
+            "counterfactual_effect": "Had the land been State land taken on lease, the re-vesting and sub-letting controls in section 5 would also have been engaged; had it been land outside Sri Lanka, the Act would not apply.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M030-Q01-003",
+            "fact": "The land is bare land with no building on it and no condominium plan of any kind registered over it. Mr. Holmqvist intends to construct a twelve-storey residential apartment building on it and to sell and rent out the apartments.",
+            "origin": "synthetic_decisive",
+            "reason": "'Apartment business' is ambiguous between buying finished apartments and buying land on which to develop them. Only the first can fall within the condominium exemption, so the distinction decides the outcome.",
+            "activates_provision_ids": [
+              "PROV-M030-004",
+              "PROV-M030-011"
+            ],
+            "counterfactual_effect": "Had he been buying an already registered condominium parcel and remitting the entire value from abroad before execution, the exemption would apply and he could take title in his own name.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M030-Q01-004",
+            "fact": "The agreed price is Rs. 240,000,000, which he proposes to remit in full from his bank in Stockholm to a Sri Lankan bank before the deed is executed.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the missing consideration and shows that the mode of payment is an inward foreign remittance, which is a condition of the condominium exemption and therefore has to appear on the facts so that it can be ruled out as a cure.",
+            "activates_provision_ids": [
+              "PROV-M030-004"
+            ],
+            "counterfactual_effect": "None on the outcome: an inward remittance of the full price does not cure a purchase of bare land, because the exemption it belongs to is confined to condominium parcels.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M030-Q01-005",
+            "fact": "He instructs you on 2 September 2024 and wishes the deed of transfer to be drawn, executed and attested in October 2024. He also asks whether he can mortgage the property to a local bank to fund construction.",
+            "origin": "synthetic_neutral",
+            "reason": "Fixes the time of the transaction, which the question leaves open, so that the version of the statute in force can be identified, and raises the funding point on which the five-year mortgage bar bites.",
+            "activates_provision_ids": [
+              "PROV-M030-001",
+              "PROV-M030-007",
+              "PROV-M030-010"
+            ],
+            "counterfactual_effect": "Had the deed been executed before 1 January 2013 the repealed Part VI regime would have governed it; had a lease been executed before 1 January 2016 the Land Lease Tax would still have been payable.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M030-Q01-006",
+            "fact": "Mr. Holmqvist has not incorporated any company in Sri Lanka. He is not related to the owner, holds no approval of the Cabinet of Ministers and no project approval of any kind, is not a diplomatic mission or an international organisation, and is not a bank or a finance leasing institution. He tells you he is willing to restructure the transaction if that is what the law requires.",
+            "origin": "synthetic_decisive",
+            "reason": "Closes off, on the facts, every exemption in the Act, so that the conclusion that the prohibition applies is determinate rather than merely probable, and opens the corporate and lease alternatives.",
+            "activates_provision_ids": [
+              "PROV-M030-004",
+              "PROV-M030-005",
+              "PROV-M030-006",
+              "PROV-M030-012"
+            ],
+            "counterfactual_effect": "Had his venture been identified as a Strategic Development Project in a listed sector and exempted by Ministerial Order, or had he already held shares in a Sri Lankan company with less than fifty per cent foreign shareholding, a purchase route would have been open.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether an Attorney-at-Law and Notary may lawfully draw and attest a deed transferring the freehold title of a private allotment of bare land in Dehiwala to a Swedish citizen who intends to develop and run an apartment business on it; if not, what consequences follow for such a deed and what lawful routes remain open to the client at October 2024.",
+        "rule": "Section 2(1) of the Land (Restrictions on Alienation) Act, No. 38 of 2014 prohibits the transfer of title of any land situated in Sri Lanka to a foreigner, to a Sri Lankan company in which direct or indirect foreign shareholding is fifty per cent or above, or to a foreign company, unless exempted under section 3. Section 25 defines a foreigner as a person who is not a citizen of Sri Lanka, defines land to include State and private land and any interest in it, and defines transfer as any sale or conveyance by which title passes. Section 3(1) lists the exemptions, of which the only one relevant to an apartment business is section 3(1)(b), a condominium parcel specified under the Apartment Ownership Law where the entire value is paid upfront by inward foreign remittance before the deed is executed; section 3(2) allows the Minister, with prior Cabinet approval, to exempt a foreign entity in listed sectors engaged in a Strategic Development Project. Under section 9(4) of the Apartment Ownership Law, No. 11 of 1973 a condominium parcel may be held and dealt with as land only after a Condominium Plan is registered. Section 18 of the 2014 Act makes any alienation in contravention of the Act void, and section 4(1) forbids the Registrar of Lands to register such a transfer. The lawful alternatives are a lease under section 5(1), which may not exceed ninety-nine years and on which, by section 5A, no Land Lease Tax is charged for an indenture executed on or after 1 January 2016, or acquisition through a company incorporated in Sri Lanka with less than fifty per cent foreign shareholding, which by section 2(2)(a) must stay below fifty per cent for twenty consecutive years. Section 11(1) bars mortgaging or pledging such land to a licensed bank for five years from execution of the instrument.",
+        "application": "Mr. Holmqvist is not a citizen of Sri Lanka and has no dual citizenship, so he is a foreigner within section 25 and the prohibition in section 2(1)(a) applies to him. The subject matter is a 38.5 perch allotment of private land at Hill Street, Dehiwala, which is land within section 25, and the proposed deed of transfer for Rs. 240,000,000 is a transfer within that section. None of the section 3(1) exemptions is available on these facts: he is not a diplomatic mission or an international organisation, not a dual citizen, not the next of kin of the owner, not a bank or a finance leasing institution, and the land is bare land over which no condominium plan has been registered, so there is no condominium parcel he could buy under section 3(1)(b). His willingness to remit the whole price from Stockholm does not assist, because that condition attaches only to the condominium exemption. He holds no Ministerial Order under section 3(2) and his venture has not been identified as a Strategic Development Project. A deed executed in October 2024 in his own name would therefore be void under section 18, and the Registrar of Lands would be bound by section 4(1) to refuse registration, so he would part with the price and acquire nothing. Because he is willing to restructure, two routes remain: a lease of the land to him for a term not exceeding ninety-nine years under section 5(1), on which no Land Lease Tax is payable because the indenture would be executed after 1 January 2016; or incorporation of a Sri Lankan company in which his shareholding stays below fifty per cent, subject to the twenty-year holding condition in section 2(2)(a), breach of which would render the transfer void. On his question about construction finance, section 11(1) prevents the land from being mortgaged or pledged to a licensed bank for five years from the execution of the transfer or lease. If instead his object is to own completed apartments rather than to develop the site, he could buy condominium parcels in a project whose Condominium Plan is already registered, paying the entire value upfront by inward foreign remittance before execution.",
+        "conclusion": "He must be advised that he cannot buy this land in his own name: a deed of transfer to him would be void under section 18 of Act, No. 38 of 2014 and would not be registered. As his Notary you should decline to draw or attest such a deed. He should be advised instead to take a lease of the land for a term not exceeding ninety-nine years, on which no Land Lease Tax is now chargeable, or to acquire through a company incorporated in Sri Lanka whose foreign shareholding is and remains below fifty per cent for twenty years, or, if what he wants is completed apartments, to purchase registered condominium parcels with the entire value remitted from abroad before execution. He should also be warned that the land cannot be mortgaged to a licensed bank for five years, which affects his construction funding."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M030-Q01-001",
+          "claim_text": "Section 2(1)(a) of the Land (Restrictions on Alienation) Act, No. 38 of 2014 prohibits the transfer of title of any land situated in Sri Lanka to a foreigner, unless exempted under section 3.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-002",
+          "claim_text": "For the purposes of that Act a foreigner is a person who is not a citizen of Sri Lanka.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-003",
+          "claim_text": "Land includes private as well as State land and any interest in it, and transfer means any sale or conveyance by which title passes to another person.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-004",
+          "claim_text": "The exemptions from section 2 are those set out in section 3(1), which include a condominium parcel specified under the Apartment Ownership Law where the entire value is paid upfront by inward foreign remittance before the deed of transfer is executed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M030-Q01-005",
+          "claim_text": "A condominium parcel may be held and dealt with in the same manner as land only after a Condominium Plan or Semi Condominium Plan has been registered under the Apartment Ownership Law, No. 11 of 1973.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-006",
+          "claim_text": "The Minister may, with prior Cabinet approval and by Order published in the Gazette, exempt a foreign entity in the listed sectors engaged in a project identified as a Strategic Development Project.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-007",
+          "claim_text": "Any alienation of land effected in contravention of the Act is void and of no effect in law.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-008",
+          "claim_text": "The Registrar of Lands must refuse to register an instrument effecting a transfer referred to in section 2 unless satisfied that it complies with the Act.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-009",
+          "claim_text": "A land may lawfully be leased to a foreigner, subject to the Land Lease Tax under section 6, for a maximum tenure of ninety-nine years.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-010",
+          "claim_text": "No Land Lease Tax is charged, levied or collected on a lease to a foreigner under an indenture of lease executed on or after 1 January 2016.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-011",
+          "claim_text": "Where land is transferred to a Sri Lankan company with less than fifty per cent foreign shareholding, that shareholding must remain below fifty per cent for twenty consecutive years from the date of transfer for the transfer to remain valid.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-012",
+          "claim_text": "Land transferred or leased to a person or company referred to in section 2(1) or 5(1) may not be mortgaged or pledged to a licensed bank for five years from execution of the instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M030-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-013",
+          "claim_text": "Mr. Holmqvist, being a Swedish citizen who has never been a citizen of Sri Lanka and holds no dual citizenship, is a foreigner for the purposes of the Act.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M030-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M030-Q01-001"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-014",
+          "claim_text": "The proposed acquisition of a 38.5 perch allotment of private land at Hill Street, Dehiwala by deed of transfer for Rs. 240,000,000 is a transfer of title of land situated in Sri Lanka and so falls within section 2(1)(a).",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M030-001",
+            "PROV-M030-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M030-Q01-002",
+            "FACT-M030-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-015",
+          "claim_text": "No section 3(1) exemption is available to him: he is not a diplomatic mission or international organisation, not a dual citizen, not the next of kin of the owner, and not a bank or finance leasing institution, and the subject land is bare land over which no condominium plan has been registered, so there is no condominium parcel for him to purchase.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M030-004",
+            "PROV-M030-011",
+            "PROV-M030-901"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M030-Q01-001",
+            "FACT-M030-Q01-003",
+            "FACT-M030-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-016",
+          "claim_text": "His proposal to remit the entire price of Rs. 240,000,000 from Stockholm before execution does not save the transaction, because the inward remittance condition attaches only to the condominium parcel exemption and not to a purchase of bare land.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M030-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M030-Q01-003",
+            "FACT-M030-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-017",
+          "claim_text": "He cannot rely on the Ministerial exemption either, because he holds no Order made with Cabinet approval and his private apartment venture has not been identified as a Strategic Development Project.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M030-012"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M030-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-018",
+          "claim_text": "A deed of transfer to him executed in October 2024 would therefore be void, and the Registrar of Lands would be bound to refuse its registration, leaving him with no title for the price he pays.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M030-008",
+            "PROV-M030-009"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M030-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-019",
+          "claim_text": "Since he is willing to restructure, a lease of the land to him for a term not exceeding ninety-nine years is lawful, and because the indenture would be executed well after 1 January 2016 no Land Lease Tax would be chargeable on it.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M030-006",
+            "PROV-M030-007"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M030-Q01-005",
+            "FACT-M030-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M030-Q01-020",
+          "claim_text": "Alternatively he may acquire through a company incorporated in Sri Lanka in which his foreign shareholding is less than fifty per cent, provided he is warned that it must stay below that level for twenty consecutive years or the transfer becomes void.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M030-001",
+            "PROV-M030-005"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M030-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M030-Q01-021",
+          "claim_text": "On his question about construction finance, whichever of those routes he takes, the land cannot be mortgaged or pledged to a licensed bank for five years from execution of the instrument.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M030-010"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M030-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "rejected"
+        },
+        {
+          "claim_id": "CL-M030-Q01-022",
+          "claim_text": "He must be advised that he cannot purchase this land in his own name, that a deed of transfer to him would be void and unregistrable, and that as his Notary you should decline to draw or attest it.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M030-001",
+            "PROV-M030-008",
+            "PROV-M030-009"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M030-Q01-001",
+            "FACT-M030-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M030-Q01-023",
+          "claim_text": "He should be advised to proceed instead by a lease not exceeding ninety-nine years, or through a Sri Lankan company with foreign shareholding kept below fifty per cent for twenty years, or, if his object is completed apartments, by purchasing registered condominium parcels with the entire value remitted from abroad before execution.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M030-006",
+            "PROV-M030-005",
+            "PROV-M030-004",
+            "PROV-M030-011"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M030-Q01-003",
+            "FACT-M030-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Verifier downgrade. Three claims in the gold answer do not stand as written, and the verifier may not rewrite the answer prose. (1) CL-M030-Q01-021 is rejected: section 11(1) of Act, No. 38 of 2014 bars mortgaging only land transferred or leased to a person or company referred to in section 2(1) or 5(1), so the five-year bar does not reach the corporate route with foreign shareholding below fifty per cent, yet the claim and the application paragraph state that it applies whichever route the client takes. (2) CL-M030-Q01-020 is disputed: the voidness of a transfer to a local company whose foreign shareholding later reaches fifty per cent comes from section 2(2)(b), which is not in the map, and it is subject to provisos allowing the breach to be cured within twelve months (listed company) or six months (any other). (3) CL-M030-Q01-022 is disputed: no provision in this corpus obliges a notary to decline to draw or attest an instrument void under another Act, so the notarial-refusal limb of the conclusion rests on professional duty rather than on cited statute. The rest of the map is verified; a lawyer should adjudicate these three points.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

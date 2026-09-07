@@ -1,0 +1,189 @@
+{
+  "benchmark_matter_id": "M003",
+  "verifier": "verifier-M003",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:10:05Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M003-001",
+      "decision": "verified",
+      "note": "12-2006/s3(1) confirmed verbatim; charging section fixes no rate, rate is set by Ministerial Order. Commencement 1 April 2006 confirmed against s.1(2); no amendment events."
+    },
+    {
+      "provision_id": "PROV-M003-002",
+      "decision": "verified",
+      "note": "12-2006/s4(g) confirmed verbatim; a bond or mortgage for a definite and certain sum affecting property is a specified instrument."
+    },
+    {
+      "provision_id": "PROV-M003-003",
+      "decision": "verified",
+      "note": "12-2006/s6(e) confirmed verbatim, including the opening words 'Otherwise than in cases where there is an agreement to the contrary'. The 2008 insertion of (dd) and (ddd) is recorded in the corpus amendment events as the researcher states."
+    },
+    {
+      "provision_id": "PROV-M003-004",
+      "decision": "verified",
+      "note": "12-2006/s8(2) confirmed verbatim, including the seven-day fallback and the bank certificate. Note that s.8(2) is permissive ('may be paid'); s.8(1) still makes adhesive stamps affixed before or at execution the general mode."
+    },
+    {
+      "provision_id": "PROV-M003-005",
+      "decision": "partially_verified",
+      "note": "Wording verbatim, but s.9 governs only duty already payable to a Provincial Council in respect of instruments in List I of the Ninth Schedule to the Constitution, which is not in the corpus. Role moved from supporting to background for Q01."
+    },
+    {
+      "provision_id": "PROV-M003-006",
+      "decision": "partially_verified",
+      "note": "43-1982/s16 verbatim, but s.13 of the 2006 Act disapplies the 1982 Act's imposition provisions so far as inconsistent, and its carve-out reaches transfers of immovable property, motor vehicles and documents filed in Court, not mortgages. Role moved from supporting to background for Q01."
+    },
+    {
+      "provision_id": "PROV-M003-007",
+      "decision": "verified",
+      "note": "12-2006/s13 confirmed verbatim; correctly used as background on which enactment governs."
+    },
+    {
+      "provision_id": "PROV-M003-008",
+      "decision": "verified",
+      "note": "Notaries Ordinance s.31 rule (6) confirmed verbatim and correctly numbered in the corpus text."
+    },
+    {
+      "provision_id": "PROV-M003-009",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim, role right, but the subsection field should read 'rule (7A)'. Act No. 31 of 2022 s.16(5) inserted the rule 'immediately after rule (7)' without a number; Act No. 6 of 2024 s.3(2) identifies it as rule (7A) and substituted 'every deed or instrument' for 'any deed or instrument relating to a transfer, a gift or an exchange'. Only that 2024 substitution brings a mortgage bond within the rule."
+    },
+    {
+      "provision_id": "PROV-M003-010",
+      "decision": "partially_verified",
+      "note": "19-1935/s19(6)(b) and (7) confirmed verbatim and indispensable, but the temporal note overstates what the corpus shows: both Act No. 11 of 2022 events on s.19 are typed 'unknown', so the corpus does not establish that the 2022 Act produced subsection (7). Also, (6)(b) requires the Government Agent's approval while (7) lifts the Divisional Secretary's."
+    },
+    {
+      "provision_id": "PROV-M003-011",
+      "decision": "verified",
+      "note": "19-1935/s43(b) confirmed verbatim; the excerpt truncates the list of permitted mortgagees but is an accurate substring and the list is not closed ('or other prescribed institution')."
+    },
+    {
+      "provision_id": "PROV-M003-012",
+      "decision": "verified",
+      "note": "19-1935/s2 definition of 'holding' confirmed verbatim; the corpus renders s.2 with headwords stripped, as the researcher notes."
+    },
+    {
+      "provision_id": "PROV-M003-013",
+      "decision": "verified",
+      "note": "19-1935/s2 definition of 'licensed commercial bank' confirmed verbatim. Its referent depends on the Banking Act, No. 30 of 1988, which is outside the corpus; that is already recorded as a corpus gap."
+    },
+    {
+      "provision_id": "PROV-M003-014",
+      "decision": "verified",
+      "note": "19-1935/s2 definition of 'disposition' confirmed verbatim; it does include 'mortgage'."
+    },
+    {
+      "provision_id": "PROV-M003-015",
+      "decision": "verified",
+      "note": "19-1935/s46(1) and (2) confirmed verbatim; s.46(3) (nullity of any other disposition) is also in the corpus text and is relied on correctly in the gold prose."
+    },
+    {
+      "provision_id": "PROV-M003-016",
+      "decision": "verified",
+      "note": "19-1935/s41A confirmed verbatim; correctly kept as background."
+    },
+    {
+      "provision_id": "PROV-M003-901",
+      "decision": "verified",
+      "note": "Added by the verifier. 19-1935/s2 definition of 'owner', checked verbatim."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M003-901",
+      "reason": "Sections 19(6), 19(7) and 43 all impose their conditions on 'the owner' of a holding, and Q02's claims CL-M003-Q02-005 and CL-M003-Q02-009 use that term, but the map defined only 'holding', 'disposition' and 'licensed commercial bank'. The definition also does independent work on these facts: it extends 'owner' to a permit-holder who has paid every sum due under s.19(2) and complied with the conditions of his permit, so the enrichment fact FACT-M003-Q02-001 puts Herath inside the class on either reading. Added as indispensable for Q02 and cited by CL-M003-Q02-005 and CL-M003-Q02-009; two 'defines' edges added from PROV-M003-010 and PROV-M003-011. It sits inside the existing definitions hop, so the hop count stays at 3."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M003-Q01",
+      "research_status_before": "blocked_missing_authority",
+      "research_status_after": "blocked_missing_authority",
+      "authority_requirement_after": "statute_only",
+      "note": "Block confirmed and widened. Independent greps for a rate ('rate of stamp duty', 'rupees for every one thousand') return nothing, and the corpus edition of Act No. 43 of 1982 stops at s.71 with no schedule, so the arithmetic on Rs. 10,000,000 cannot be done. Two further gaps: no regulation in the corpus prescribes a bank for s.8(2), so 'prescribed bank' has no referent; and s.9 cannot be applied without List I of the Ninth Schedule. PROV-M003-005 and PROV-M003-006 moved from supporting to background; four of twelve claims marked disputed."
+    },
+    {
+      "benchmark_question_id": "M003-Q02",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "Kept as proposed_gold. Every provision and every claim checks out against the corpus text; no indispensable provision is rejected or unresolved. The literal question ('approval from the Divisional Secretary') is answered head-on by s.19(7), which names that officer. PROV-M003-901 added as indispensable; PROV-M003-010 marked partially_verified on a temporal note only, which does not force a downgrade."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "role_of_provision",
+      "researcher_position": "Stamp Duty Act No. 43 of 1982 s.16 supplies the measure of the charge on a mortgage bond, kept as supporting authority subject to s.13 of the 2006 Act.",
+      "verifier_position": "s.13 of the 2006 Act carves out only transfers of immovable property, transfers of motor vehicles and documents filed in Court. A mortgage bond is none of these, so the 1982 Act's imposition provisions, including s.16, have no operation for it so far as inconsistent with the 2006 Act, under which the base and rate come from the Ministerial Order. s.16 should be background, not the source of the measure, and claims CL-M003-Q01-003 and CL-M003-Q01-008 should not rest on it.",
+      "supporting_sources": ["12-2006/s13", "12-2006/s3", "43-1982/s16"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "place_of_payment",
+      "researcher_position": "Payment is made to a prescribed bank in Anuradhapura, and any Provincial Council share goes to the Council for that province.",
+      "verifier_position": "s.8(2) says only 'to a prescribed bank' and imposes no geographic requirement; no regulation prescribing a bank is in the corpus. s.9 is conditional on the instrument being within List I of the Ninth Schedule, which cannot be checked. The only corpus text tying stamp duty to a Provincial Council account is the attestation form substituted by Act No. 31 of 2022 s.22, and that recital is expressly limited to 'the case of a transfer or a gift'. On corpus text the answer stops at 'a prescribed bank, before or at execution'.",
+      "supporting_sources": ["12-2006/s8", "12-2006/s9", "31-2022/s22"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "who_pays",
+      "researcher_position": "Herath, as executant, is liable under s.6(e), the notary paying in practice.",
+      "verifier_position": "Since Act No. 6 of 2024, Notaries Ordinance s.31 rule (7A)(a) says that notwithstanding any other written law the stamp duty on every deed or instrument shall be paid by the notary. Incidence under s.6(e) and the obligation to remit under rule (7A)(a) are reconcilable only through a recovery provision such as 43-1982 s.66, which the map does not cite. The gold prose's 'in practice the notary pays it over and recovers it' understates a statutory duty.",
+      "supporting_sources": ["12-2006/s6", "1-1907/s31", "6-2024/s3", "43-1982/s66"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "officer_named_by_the_exemption",
+      "researcher_position": "s.19(7) removes the approval requirement that s.19(6)(b) imposes.",
+      "verifier_position": "Textually s.19(6)(b) requires the prior approval of the Government Agent while s.19(7) lifts the approval of the Divisional Secretary. The Ordinance defines 'Government Agent' but never mentions the Divisional Secretary anywhere else, and the Transfer of Powers (Divisional Secretaries) Act, No. 58 of 1992 is not in the corpus. The 'Notwithstanding the provisions of paragraph (b) of subsection (6)' opening still disapplies (6)(b), so the conclusion holds, but the mismatch should be stated in the gold answer rather than glossed.",
+      "supporting_sources": ["19-1935/s19", "19-1935/s2"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M003-Q01-003 (disputed): the measure rule rests on 43-1982 s.16, whose operation for a mortgage bond is displaced by 12-2006 s.13.",
+      "CL-M003-Q01-008 (disputed): the second limb, that the charge is measured on Rs. 10,000,000, depends on the same displaced provision; the first limb, that the bond is a specified instrument, is sound on 12-2006 s.4(g).",
+      "CL-M003-Q01-010 (disputed): 'payment is made to a prescribed bank there' adds a geographic requirement that s.8(2) does not contain, and no prescribed bank is identified in the corpus.",
+      "CL-M003-Q01-012 (disputed): states bank payment as the route when s.8(2) is permissive and s.8(1) keeps adhesive stamps as the general mode; 'in Anuradhapura' is again unsupported.",
+      "Gold prose for Q01 says the notary 'recovers' the duty. Nothing in the map supports recovery; 43-1982 s.66 would, and is in the corpus, but is not cited."
+    ],
+    "temporal_issues": [
+      "PROV-M003-009: the notary-pays rule reached only transfers, gifts and exchanges from 2022 until Act No. 6 of 2024 s.3(2)(a) substituted 'every deed or instrument'. Its application to a mortgage bond is a 2024 change the map does not record. Its number is rule (7A), per 6-2024 s.3(2).",
+      "PROV-M003-010: both Land Development (Amendment) Act No. 11 of 2022 events on s.19 are typed 'unknown' in the corpus, so the researcher's statement that subsection (7) is the 2022 text is not established by corpus data. The corpus holds no Land Development amending Act as a separate document.",
+      "Q01 turns on a Ministerial Order under 12-2006 s.3 whose date and content are both unknown, so no temporal check on the operative rate is possible at all."
+    ],
+    "missing_definitions_or_exceptions": [
+      "19-1935/s2 definition of 'owner' was missing and has been added as PROV-M003-901; it also covers a paid-up permit-holder.",
+      "19-1935/s42 (owner may dispose except where prohibited, and a disposition in contravention is null and void) is not in the map. It is the nullity sanction for grant holders, matching s.46(3) for permit holders, and would strengthen the Q02 rule statement. Not added because it is not indispensable to the approval question.",
+      "'Prescribed bank' is used by 12-2006 s.8(2) but is defined nowhere in the corpus; 12-2006 s.14 defines only 'Assessor', 'Commissioner-General' and 'Inland Revenue Act'.",
+      "12-2006 s.5 lets the Minister exempt instruments by Order; no such Order is in the corpus, so no exemption check for a mortgage bond is possible.",
+      "19-1935 s.156(ha) allows regulations prescribing the procedure the owner must follow when mortgaging a holding; those regulations are not in the corpus, so a procedural step short of approval cannot be excluded.",
+      "19-1935 s.57 exempts only nominations and their cancellation from stamp duty, so no Land Development Ordinance exemption assists Q01."
+    ],
+    "case_law_dependence": [
+      "None. No case is cited in either gold answer, and both questions are answerable in kind from statute; Q01's obstacle is a missing Gazette Order, not a missing judicial gloss."
+    ],
+    "enrichment_issues": [
+      "FACT-M003-Q01-001 ends 'so the total amount secured is a definite and certain sum'. That is the operative phrase of 12-2006 s.4(g) and states the legal characterisation as if it were a fact; it should stop at the primary fact (a single advance, no further advances).",
+      "FACT-M003-Q02-002 calls the mortgagee 'a licensed commercial bank ... and not a registered society'. Both are statutory categories from s.19(7) and s.43(b); asserting them as facts telegraphs the answer. A bank licensed by the Central Bank to carry on banking business would carry the same work without the term of art.",
+      "FACT-M003-Q02-003 ('not a divided portion or an undivided share of it') tracks the wording of s.19(6)(a) closely.",
+      "No statute name, section number or conclusion is otherwise leaked; the Ordinance and the 2022 amending Act are named only because the original background names them.",
+      "Both enriched backgrounds are internally consistent with each other on party, land, bank, grant date (3 March 2014) and execution date (20 April 2026), and the execution date sits inside matter_reference_date 2026-04."
+    ],
+    "duplicate_or_leak_issues": [
+      "PROV-M003-008 and PROV-M003-009 are two entries on the same section_id (1-1907/s31). That is legitimate here because they are different rules, but the subsection fields must distinguish them, and PROV-M003-009's is currently null (should be 'rule (7A)').",
+      "PROV-M003-012, PROV-M003-013, PROV-M003-014 and the added PROV-M003-901 are four entries on 19-1935/s2. Each carries a distinct definition and a distinct subsection label, so no duplication.",
+      "The two enriched backgrounds repeat the same synthetic identity facts; if both questions are ever served under one background, FACT-M003-Q01-004 and FACT-M003-Q02-004 will duplicate."
+    ]
+  },
+  "lawyer_questions": [
+    "Q01 cannot be closed without the Gazette Order made under s.3 of the Stamp Duty (Special Provisions) Act, No. 12 of 2006 that fixes the rate for a bond or mortgage. Which Order is in force at April 2026, does it charge on the full secured sum, and should it be added to the corpus so the 'calculate' limb can be scored?",
+    "Should the benchmark keep the paper's citation 'Land Development Ordinance 27 of 1981'? The corpus statute is the Land Development Ordinance, No. 19 of 1935; Act No. 27 of 1981 appears only as an amending enactment in the s.2, s.19 and s.43 amendment events.",
+    "Does the Divisional Secretary exercise the Government Agent's power of approval under s.19(6)(b) by virtue of the Transfer of Powers (Divisional Secretaries) Act, No. 58 of 1992, which is not in the corpus? If not, s.19(6)(b) and s.19(7) name different officers.",
+    "Since the 2024 amendment, does Notaries Ordinance s.31 rule (7A)(a) make the notary, rather than the executant, the person who must pay stamp duty on a mortgage bond, with 43-1982 s.66 as the recovery route against Herath?",
+    "Is Q02's answer to be given on the grant footing that FACT-M003-Q02-001 supplies? On the permit footing the answer reverses through s.46: no mortgage to a commercial bank is possible at all, and any such disposition is null and void."
+  ]
+}

@@ -1,0 +1,375 @@
+{
+  "source_counts": {
+    "atomic_questions": 667,
+    "classifications": 667
+  },
+  "selection_predicate": {
+    "candidate_action": "keep",
+    "scenario_richness": "detailed",
+    "extraction_quality": "clean",
+    "confidence_min": 0.8,
+    "context_dependency": [
+      "required",
+      "partial"
+    ]
+  },
+  "expected_counts": {
+    "questions": null,
+    "matters": null
+  },
+  "selected_atomic_question_count": 192,
+  "selected_matter_count": 115,
+  "questions_per_matter_distribution": {
+    "1": 66,
+    "2": 29,
+    "3": 13,
+    "4": 6,
+    "5": 1
+  },
+  "questions_by_paper": {
+    "1": 18,
+    "2": 15,
+    "3": 4,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 7,
+    "8": 7,
+    "9": 8,
+    "10": 14,
+    "11": 10,
+    "12": 20,
+    "13": 11,
+    "14": 17,
+    "15": 15,
+    "16": 21
+  },
+  "context_source_distribution": {
+    "group": 11,
+    "group+local": 1,
+    "group+prior": 1,
+    "local": 55,
+    "prior": 6,
+    "prior+group": 2,
+    "prior+local": 7,
+    "shared": 96,
+    "shared+local": 13
+  },
+  "dependency_distribution": {
+    "partial": 57,
+    "required": 135
+  },
+  "confidence": {
+    "minimum": 0.65,
+    "maximum": 0.95,
+    "mean": 0.8301
+  },
+  "duplicate_atomic_ids": [],
+  "missing_join_ids": [],
+  "empty_background_ids": [],
+  "empty_question_ids": [],
+  "background_conflicts": [],
+  "normalization_changes": [],
+  "proposed_ocr_corrections": [
+    {
+      "atomic_id": "P02-Q02-P04",
+      "field": "own_background",
+      "snippet": "f Donor and his wife .Present Market value",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P03-Q01-P01",
+      "field": "shared_background",
+      "snippet": "s second wife Champa ,Kapila had three mor",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P03-Q01-P02",
+      "field": "shared_background",
+      "snippet": "s second wife Champa ,Kapila had three mor",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P03-Q04-P01-IA",
+      "field": "group_background",
+      "snippet": "racticing in Colombo .Her friend Rupa Pere",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P03-Q04-P01-IB",
+      "field": "group_background",
+      "snippet": "racticing in Colombo .Her friend Rupa Pere",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P13-Q01-P01",
+      "field": "shared_background",
+      "snippet": " Silva Notary Public .The husband of Mrs. ",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P13-Q01-P02",
+      "field": "shared_background",
+      "snippet": " Silva Notary Public .The husband of Mrs. ",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P13-Q01-P03",
+      "field": "shared_background",
+      "snippet": " Silva Notary Public .The husband of Mrs. ",
+      "issue": "space before punctuation glued to next word; not applied"
+    }
+  ],
+  "ocr_flag_review": [
+    {
+      "atomic_id": "P04-Q01-P02",
+      "matter": "M025",
+      "flag": "minor_ocr_corruption_in_shared_background"
+    },
+    {
+      "atomic_id": "P04-Q01-P03",
+      "matter": "M025",
+      "flag": "minor_ocr_corruption_in_shared_background"
+    },
+    {
+      "atomic_id": "P05-Q01-P01",
+      "matter": "M031",
+      "flag": "ocr_noise_in_names"
+    },
+    {
+      "atomic_id": "P05-Q01-P02",
+      "matter": "M031",
+      "flag": "ocr_noise_in_names"
+    },
+    {
+      "atomic_id": "P05-Q02-P01",
+      "matter": "M032",
+      "flag": "ocr_typo_Motary"
+    },
+    {
+      "atomic_id": "P05-Q02-P02",
+      "matter": "M032",
+      "flag": "ocr_typo_sald"
+    },
+    {
+      "atomic_id": "P12-Q06-P01",
+      "matter": "M074",
+      "flag": "OCR: 'fimits'; phrase 'had Lalith Perera by a Final Decree' appears garbled"
+    },
+    {
+      "atomic_id": "P12-Q06-P02",
+      "matter": "M074",
+      "flag": "OCR garbling in shared_background"
+    },
+    {
+      "atomic_id": "P15-Q01-P01",
+      "matter": "M096",
+      "flag": "ocr_corruption_in_background"
+    },
+    {
+      "atomic_id": "P15-Q01-P01",
+      "matter": "M096",
+      "flag": "ocr_typo_in_question"
+    },
+    {
+      "atomic_id": "P15-Q01-P02",
+      "matter": "M096",
+      "flag": "ocr_corruption_in_background"
+    },
+    {
+      "atomic_id": "P15-Q03-P05",
+      "matter": "M098",
+      "flag": "ocr_corruption_in_background"
+    },
+    {
+      "atomic_id": "P15-Q05-P04",
+      "matter": "M099",
+      "flag": "ocr_corruption_in_background"
+    },
+    {
+      "atomic_id": "P16-Q02-PC",
+      "matter": "M107",
+      "flag": "ocr_typo_in_question"
+    },
+    {
+      "atomic_id": "P16-Q09-P03",
+      "matter": "M115",
+      "flag": "ocr_corruption_in_background"
+    }
+  ],
+  "group_lead_factual_context_review": [],
+  "stem_factual_context_review": [],
+  "overlapping_context_segments": [
+    {
+      "atomic_id": "P04-Q04-P02-IC",
+      "matter": "M027",
+      "contains": "group_background",
+      "within": "prior_background[0]"
+    }
+  ],
+  "quarantined_records": [
+    {
+      "grouping_key": "atomic:P02-Q03-P03",
+      "atomic_ids": [
+        "P02-Q03-P03"
+      ],
+      "reason": [
+        "P02-Q03-P03: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P03-Q02-P01",
+      "atomic_ids": [
+        "P03-Q02-P01"
+      ],
+      "reason": [
+        "P03-Q02-P01: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P03-Q02-P03",
+      "atomic_ids": [
+        "P03-Q02-P03"
+      ],
+      "reason": [
+        "P03-Q02-P03: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P04-Q02-P02",
+      "atomic_ids": [
+        "P04-Q02-P02"
+      ],
+      "reason": [
+        "P04-Q02-P02: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P04-Q02-P04-I01",
+      "atomic_ids": [
+        "P04-Q02-P04-I01"
+      ],
+      "reason": [
+        "P04-Q02-P04-I01: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P04-Q02-P04-I02",
+      "atomic_ids": [
+        "P04-Q02-P04-I02"
+      ],
+      "reason": [
+        "P04-Q02-P04-I02: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P06-Q09-P03",
+      "atomic_ids": [
+        "P06-Q09-P03"
+      ],
+      "reason": [
+        "P06-Q09-P03: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P08-Q02-P01-I01",
+      "atomic_ids": [
+        "P08-Q02-P01-I01"
+      ],
+      "reason": [
+        "P08-Q02-P01-I01: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P08-Q02-P01-I02",
+      "atomic_ids": [
+        "P08-Q02-P01-I02"
+      ],
+      "reason": [
+        "P08-Q02-P01-I02: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P08-Q04-P04",
+      "atomic_ids": [
+        "P08-Q04-P04"
+      ],
+      "reason": [
+        "P08-Q04-P04: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P09-Q09-P02",
+      "atomic_ids": [
+        "P09-Q09-P02"
+      ],
+      "reason": [
+        "P09-Q09-P02: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P13-Q02-P01",
+      "atomic_ids": [
+        "P13-Q02-P01"
+      ],
+      "reason": [
+        "P13-Q02-P01: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P13-Q04-P04",
+      "atomic_ids": [
+        "P13-Q04-P04"
+      ],
+      "reason": [
+        "P13-Q04-P04: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P14-Q03-P05",
+      "atomic_ids": [
+        "P14-Q03-P05"
+      ],
+      "reason": [
+        "P14-Q03-P05: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P14-Q06-P04",
+      "atomic_ids": [
+        "P14-Q06-P04"
+      ],
+      "reason": [
+        "P14-Q06-P04: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P14-Q06-P05",
+      "atomic_ids": [
+        "P14-Q06-P05"
+      ],
+      "reason": [
+        "P14-Q06-P05: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P16-Q03-P03",
+      "atomic_ids": [
+        "P16-Q03-P03"
+      ],
+      "reason": [
+        "P16-Q03-P03: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P16-Q07-P04",
+      "atomic_ids": [
+        "P16-Q07-P04"
+      ],
+      "reason": [
+        "P16-Q07-P04: no factual context from []"
+      ]
+    }
+  ],
+  "validation_passed": true
+}

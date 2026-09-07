@@ -1,0 +1,561 @@
+{
+  "benchmark_matter_id": "M067",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M067",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:44:35Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2020-10",
+  "matter_reference_date_basis": "exam_session 'OCTOBER 2020' recorded in the matter file (paper 11, question 9, part 5).",
+  "corpus_gaps": [
+    "Section 584 of the Civil Procedure Code is absent from the corpus edition. The source JSON lists it under omitted_provisions as 'no repeal note in the HTML or the PDF; number simply absent between 583 and 585'. It sits inside the chapter on actions for the appointment of guardians that governs this answer, so the procedure described may be incomplete.",
+    "No statute in the corpus states that a father is the natural guardian of his minor child, or defines the powers of a natural guardian over the child's property. In Sri Lanka that comes from Roman-Dutch common law.",
+    "No provision in the corpus expressly forbids a natural guardian or a certified curator of a minor from selling the minor's immovable property without leave of court. Section 571 imposes exactly that restriction on the manager of the estate of a person of unsound mind, and there is no parallel provision for minors; the rule for minors rests on the court's role as upper guardian, which is judge-made.",
+    "The Age of Majority Ordinance is not in the corpus. Civil Procedure Code s.502 fixes eighteen as full age only 'for the purposes of this Chapter', so the corpus holds no general statutory definition of minority.",
+    "The corpus text of the Civil Procedure Code names the Family Court in ss.582, 583, 588, 591, 592 and 593, while s.752 names the District Court for security from a minor's curator. The corpus records no amendment resolving which court now exercises the jurisdiction.",
+    "Prevention of Frauds Ordinance s.2 is held only in its consolidated form after the amendments of 2022 and 2024, both later than the October 2020 matter date; the corpus does not hold the version in force at the matter date."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M067-001",
+      "section_id": "2-1889/s502",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "502",
+      "subsection": null,
+      "relevant_excerpt": "For the purposes of this Chapter, a minor shall be deemed to have attained majority or full age on his attaining the age of eighteen years, or on marriage, or on obtaining letters of venia aetatis.",
+      "why_relevant": "Fixes the age of majority used by the Code, so that a person under eighteen is a minor who cannot validly convey immovable property by his own act. It is expressly limited to Chapter XXXVII (actions by and against minors), so it supports rather than supplies a general definition of minority.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1889; the eighteen-year figure comes from Act No. 12 of 1996, well before the matter date of October 2020. The text as quoted was in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M067-002",
+      "section_id": "2-1889/s582",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "582",
+      "subsection": null,
+      "relevant_excerpt": "Every person who shall claim a right to have charge of property in trust for a minor, under a will or deed, or by reason of nearness of kin, or otherwise, may apply to the Family Court for a certificate of curatorship; and no person shall be entitled to institute or defend any action connected with the estate of a minor, of which he claims the charge, until he shall have obtained such certificate",
+      "why_relevant": "Entry point of the statutory route by which a father who wants to deal with his child's property gets recognised standing: he claims a right to have charge of the minor's property by nearness of kin and applies for a certificate of curatorship.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1889; last recorded change 1988 (Act No. 79 of 1988, s.41). The corpus text names the Family Court; the corpus records no amendment substituting the District Court, so the identity of the proper court cannot be settled from the corpus. The text as quoted was in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M067-003",
+      "section_id": "2-1889/s583",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "583",
+      "subsection": null,
+      "relevant_excerpt": "Any relative or friend of a minor, in respect of whose property such certificate has not been granted, may apply by petition in the way of summary procedure to the Family Court, to appoint a fit person to take charge of the property and person or of either property or person of such minor.",
+      "why_relevant": "Gives the form of the application the father must make, a petition by way of summary procedure, and confirms that a relative such as the father is a competent applicant where no certificate has yet been granted.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1889, no recorded amendment. Same Family Court naming point as s.582. The text as quoted was in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M067-004",
+      "section_id": "2-1889/s585",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "585",
+      "subsection": "(2), (3)",
+      "relevant_excerpt": "If there is no person so entitled, or if such person is unwilling to undertake the trust and there is any near relative of the minor who is willing and fit to be entrusted with the charge of his property, the court may grant a certificate to such relative. (3) The court may also, if it think fit (unless a guardian has been appointed by the father), appoint such person as aforesaid or such relative, or any other relative or friend of the minor, to be guardian of the person of the minor.",
+      "why_relevant": "Governs to whom the court may grant the certificate. Subsection (2) lets the court certify a near relative such as the father where no one is entitled under a will or deed; subsection (3) is the only place in the corpus that recognises a guardian appointed by the father.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1889, no recorded amendment. The text as quoted was in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M067-005",
+      "section_id": "2-1889/s586",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "586",
+      "subsection": null,
+      "relevant_excerpt": "If no title to a certificate is established to the satisfaction of the court by a person claiming under a will or deed, and if there is no near relative willing and to be entrusted with the charge of the property of the minor, and the court shall think it necessary for the interest of the minor that provision should be made by the court for the charge of the property and person of such minor, the court may grant a certificate to any fit person whom the court may appoint for the purpose.",
+      "why_relevant": "The fallback where the father is not found fit or willing, and the section that s.587 refers back to as the last section when the court's power to realise the corpus is engaged.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1889, no recorded amendment. The text as quoted was in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M067-006",
+      "section_id": "2-1889/s587",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "587",
+      "subsection": "(3), (4)",
+      "relevant_excerpt": "The court may also fix such allowance as it may think proper for the maintenance and education of the minor; and such allowance and the allowance of the guardian (if any) shall be paid to the guardian by the other person as aforesaid. (4) In any case in which the court is satisfied that it will be for the interest of the minor, it may direct the raising of such allowance out of the corpus of the estate, by mortgage or sale or such other mode of realization as it thinks fit.",
+      "why_relevant": "The only provision found in the corpus that expressly authorises the sale of a minor's property: the court, satisfied that it is in the minor's interest, may direct the maintenance and education allowance to be raised out of the corpus by sale. It is drafted as an incident of a curatorship granted under s.586 and of an allowance fixed under s.587(3), not as a free-standing power to sell whenever a good price is offered.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1889, no recorded amendment. The text as quoted was in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M067-007",
+      "section_id": "2-1889/s588",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "588",
+      "subsection": "(2)",
+      "relevant_excerpt": "Every curator other than one deriving title under a will or deed, to whom a certificate shall have been granted under this Chapter, shall, within a time to be fixed by the court, file in court an inventory of the property belonging to the minor, and shall also twice every year, namely, within one month from the first day of January and the first day of July, respectively, in each year, file an account of the property in his charge, exhibiting the amounts received and disbursed on account of the estate and the balance in hand.",
+      "why_relevant": "Part of the procedure the father would be subject to once certified: an inventory of the minor's property and half-yearly accounts, which is how the proceeds of any sale are accounted for.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1889, no recorded amendment. The text as quoted was in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M067-008",
+      "section_id": "2-1889/s752",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "752",
+      "subsection": null,
+      "relevant_excerpt": "The District Court shall have the like power to make the person appointed manager of the estate of a person of unsound mind, or mentally deficient person, or the person appointed curator of a minor's estate, give security for the due administration of the estate as it has in the case of administrators of deceased persons' estates.",
+      "why_relevant": "A further procedural step: the District Court may require the certified curator to give security for the due administration of the minor's estate. It is also the one place in the corpus that names the District Court, rather than the Family Court, as the court dealing with a minor's curator.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1889; last recorded change 1980 (Law No. 53 of 1980, s.18). The text as quoted was in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M067-009",
+      "section_id": "2-1889/s571",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "571",
+      "subsection": null,
+      "relevant_excerpt": "But no such manager shall have power to sell or mortgage the estate or any part thereof, or to grant a lease of any immovable property for any period exceeding five years, without an order of the District Court previously obtained.",
+      "why_relevant": "Background and contrast only. For a person of unsound mind the Code says in terms that the manager cannot sell without a prior District Court order. No equivalent express restriction on a curator or natural guardian of a minor appears in the corpus, which is why the corresponding rule for minors has to come from outside the statute.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1889, no recorded amendment. The text as quoted was in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M067-010",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "shall be in force or avail in law unless - (a) the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary",
+      "why_relevant": "The form the sale must take: whoever is authorised to convey the minor's land must do so by a written deed signed before and attested by a notary public, otherwise the sale has no effect in law.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The requirement of a notarially attested writing for a sale of land has stood since 1840 and was in force in October 2020. The wording quoted, however, is the consolidated text after the Prevention of Frauds (Amendment) Acts No. 30 of 2022 and No. 4 of 2024, both later than the matter date, and the corpus does not hold the pre-2022 text. Subsection (2), including the rule about a guardian acting for a minor transferee, was inserted by the 2022 amendment and was not in force in October 2020, so it is not relied on.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M067-011",
+      "section_id": "23-1927/s7",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "7",
+      "subsection": "(1)",
+      "relevant_excerpt": "An instrument executed or made on or after the 1st day of January, 1864, whether before or after the commencement of this Ordinance shall, unless it is duly registered under this Chapter, or, if the land has come within the operation of the Land Registration Ordinance, 1877f, in the books mentioned in section 26 of that Ordinance, be void as against all parties claiming an adverse interest thereto on valuable consideration by virtue of any subsequent instrument which is duly registered under this Chapter",
+      "why_relevant": "The last step of the conveyancing procedure: the deed of transfer should be registered in the land registry, failing which it is void against a later registered instrument taken for value.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1927; no amendment recorded in the corpus edition, which is consolidated to 1990. The text as quoted was in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M067-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The Code supplies the machinery (certificate of curatorship, summary-procedure petition, the court's power to realise the corpus for a maintenance allowance) and the Prevention of Frauds and Registration of Documents Ordinances supply the form of the conveyance. But the father's standing as natural guardian of his child, and the rule that a natural guardian or curator may not alienate a minor's immovable property without the sanction of the court acting as upper guardian, are Roman-Dutch common law propositions worked out in decided cases; no provision in this corpus states them. Section 571 shows the Code stating that restriction expressly for a person of unsound mind and saying nothing of the kind about a minor, which confirms the gap rather than filling it. A complete answer to whether the sale is possible, and to what the procedure is, therefore needs authority outside the statutes.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M067-Q01-01",
+          "issue": "Whether a father has, as father, any power to sell immovable property owned by his minor child.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M067-Q01-02",
+          "issue": "What court authority a father must obtain before a sale of the minor's land can be effective, and by what procedure that authority is obtained.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M067-Q01-03",
+          "issue": "What formalities the conveyance itself must satisfy once the sale is authorised, and what follows for the proceeds.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M067-002",
+        "PROV-M067-003",
+        "PROV-M067-004",
+        "PROV-M067-006",
+        "PROV-M067-010"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M067-001",
+        "PROV-M067-005",
+        "PROV-M067-007",
+        "PROV-M067-008",
+        "PROV-M067-011"
+      ],
+      "background_provision_ids": [
+        "PROV-M067-009"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four necessary linked steps across two enactments: minority under s.502 leads to the need for a certificate of curatorship (s.582, with the s.583 mode of application and the s.585 grant); the certificate is the precondition of the court's power under s.587(4) to direct a sale of the corpus in the minor's interest; only then does the conveyance itself have to satisfy the notarial form in Prevention of Frauds Ordinance s.2(1); registration under Registration of Documents Ordinance s.7(1) is a further cross-enactment step.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M067-001",
+          "to_provision_id": "PROV-M067-002",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M067-002",
+          "to_provision_id": "PROV-M067-003",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M067-003",
+          "to_provision_id": "PROV-M067-004",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M067-004",
+          "to_provision_id": "PROV-M067-005",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M067-005",
+          "to_provision_id": "PROV-M067-006",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M067-006",
+          "to_provision_id": "PROV-M067-010",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M067-010",
+          "to_provision_id": "PROV-M067-011",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M067-004",
+          "to_provision_id": "PROV-M067-007",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M067-004",
+          "to_provision_id": "PROV-M067-008",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "A minor owns a land.",
+        "enriched_background": "Nimal Perera is fourteen years old and lives at Kadawatha with his father, Sunil Perera, who is of full age and of sound mind. Nimal is the sole owner of an allotment of residential land of twenty perches at Kadawatha in the Gampaha District called Delgahawatta, which came to him under the last will of his late maternal grandmother and was conveyed to him by deed of transfer No. 4512 dated 3 March 2016 attested by a notary public and registered in the Gampaha land registry. Neither the will nor any deed named anybody to take charge of the boy's property, and no court has appointed anybody to look after either the boy or the land. A neighbour, Mr. Silva, has offered Rs. 6,500,000 for the land, which is about its market value, and the father wants to accept the offer and to apply the money to the boy's maintenance and education. The father has no interest of his own in the land and no interest adverse to his son.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M067-Q01-001",
+            "fact": "The minor is Nimal Perera, aged fourteen; his father is Sunil Perera, of full age and sound mind, with whom the boy lives.",
+            "origin": "synthetic_neutral",
+            "reason": "The question names only a minor and the father. Identities and the child's age are needed so that minority is determinate and the father can be identified as the near relative who would apply.",
+            "activates_provision_ids": [
+              "PROV-M067-001",
+              "PROV-M067-003",
+              "PROV-M067-004"
+            ],
+            "counterfactual_effect": "If the child were eighteen or over he could sell in his own name and no application would arise at all.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M067-Q01-002",
+            "fact": "The land is a twenty-perch residential allotment at Kadawatha in the Gampaha District called Delgahawatta, which the boy took under his late grandmother's last will by deed of transfer No. 4512 dated 3 March 2016, registered in the Gampaha land registry; the boy is its sole owner.",
+            "origin": "synthetic_neutral",
+            "reason": "Identifies the property and confirms sole ownership by the minor, so the sale is a sale of the minor's own immovable property rather than of an undivided share or of property held by someone else.",
+            "activates_provision_ids": [
+              "PROV-M067-010",
+              "PROV-M067-011"
+            ],
+            "counterfactual_effect": "If the boy held only an undivided share, or if the land were state land or a Land Development Ordinance holding, a different set of restrictions would have to be considered.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M067-Q01-003",
+            "fact": "No will or deed appointed anybody to take charge of the boy's property, no court has granted anybody charge of his property or person, and the father has no interest of his own in the land and none adverse to his son.",
+            "origin": "synthetic_decisive",
+            "reason": "The father's legal capacity to act is the point of the question. Whether a person is already entitled under a will or deed decides which limb of the certificate provisions applies, and the absence of an existing appointment is what makes an application necessary.",
+            "activates_provision_ids": [
+              "PROV-M067-002",
+              "PROV-M067-003",
+              "PROV-M067-004",
+              "PROV-M067-005"
+            ],
+            "counterfactual_effect": "If a curator had already been certified under the grandmother's will, the father would have no standing to apply and the certified curator would have to act instead.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M067-Q01-004",
+            "fact": "A neighbour, Mr. Silva, has offered Rs. 6,500,000 for the land, about its market value, and the father wishes to apply the proceeds to the boy's maintenance and education.",
+            "origin": "synthetic_decisive",
+            "reason": "Value and purpose decide the case. The certificate provisions treat property below twenty thousand rupees differently, and the only sale power found in the corpus is a sale directed to raise a maintenance and education allowance in the minor's interest.",
+            "activates_provision_ids": [
+              "PROV-M067-002",
+              "PROV-M067-006"
+            ],
+            "counterfactual_effect": "If the sale were to fund the father's own business, or at an undervalue, the court could not be satisfied that the realisation was in the minor's interest and the sale should not be sanctioned.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the father of a minor landowner may, by virtue of fatherhood alone, sell his child's immovable property, and if a sale is possible at all, what steps are required to make it effective in law.",
+        "rule": "A person under eighteen cannot bind himself by a conveyance of his own land; the Civil Procedure Code treats eighteen as full age (s.502). The Code confers no power of sale on a father as such. What it provides is a curatorship route: a person claiming charge of a minor's property by nearness of kin may apply for a certificate of curatorship (s.582), the application being by petition in the way of summary procedure (s.583); the court may grant the certificate to a near relative who is willing and fit (s.585(2)) and may appoint a guardian of the person unless the father has already appointed one (s.585(3)), or, failing a fit relative, to any fit person (s.586). Where a certificate has been granted the court may fix an allowance for the minor's maintenance and education and, if satisfied that it is in the minor's interest, direct that allowance to be raised out of the corpus of the estate by sale (s.587(4)). The curator files an inventory and half-yearly accounts (s.588(2)) and may be required to give security (s.752). Any sale that is sanctioned must be by a written deed signed before and attested by a notary public (Prevention of Frauds Ordinance s.2(1)) and should be registered, since an unregistered instrument is void against a later registered instrument taken for value (Registration of Documents Ordinance s.7(1)). By contrast, the Code says expressly of a person of unsound mind that the manager may not sell without a prior District Court order (s.571); it contains no such express words about a minor, and the corresponding restriction on a father or curator of a minor rests on the common law rather than on any provision in this corpus.",
+        "application": "Nimal is fourteen and so is a minor; he cannot execute a valid transfer himself. His father, Sunil, has not been appointed by any will, deed or court order, so on the statutory material he has no recorded authority to convey the land, and a deed of transfer signed by him simply as father would not carry the boy's title. Because nobody is entitled under the grandmother's will or a deed, the father is a near relative who may apply under s.582 by petition in the way of summary procedure under s.583, and the court may certify him under s.585(2) if it is satisfied he is willing and fit and has no adverse interest, which on these facts he does not. The land is worth about Rs. 6,500,000, far above the twenty thousand rupee figure in the proviso to s.582, so the relaxation in that proviso is of no help. The father's stated purpose, the boy's maintenance and education, is the purpose s.587(3) and (4) address, so the court could fix an allowance and direct that it be raised out of the corpus by sale if satisfied that this is in the boy's interest. Once sanctioned, the transfer to Mr. Silva must be executed as a notarial deed under Prevention of Frauds Ordinance s.2(1) and registered in the Gampaha land registry to be safe against a later registered purchaser under Registration of Documents Ordinance s.7(1). Whether the father may act at all short of that sanction, and on what footing he holds the boy's property in the meantime, are questions the statutes in this corpus do not answer.",
+        "conclusion": "On the statutes available, the father cannot sell the land on his own authority as father. A sale is possible only through the court: a petition by way of summary procedure for a certificate of curatorship over the boy's property, an order of court sanctioning the realisation of the corpus in the boy's interest, execution of a notarial deed of transfer, registration of that deed, and accounting to the court for the proceeds. The answer is incomplete as a statement of Sri Lankan law, because the father's position as natural guardian, and the rule that a natural guardian cannot alienate a minor's immovable property without the sanction of the court as upper guardian, come from Roman-Dutch common law and decided cases and not from any provision in this corpus; section 584 of the Code, which sits inside the very chapter relied on, is also missing from the corpus edition."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M067-Q01-001",
+          "claim_text": "A person who has not attained eighteen years is a minor for the purposes of the Code's provisions on minors and cannot give a valid conveyance by his own act.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M067-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "FACT-M067-Q01-001"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-002",
+          "claim_text": "The statutes in this corpus confer no power on a father, simply as father, to sell his minor child's immovable property.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M067-002",
+            "PROV-M067-004",
+            "PROV-M067-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-003",
+          "claim_text": "A person claiming charge of a minor's property by nearness of kin may apply for a certificate of curatorship, and until a certificate is obtained he cannot institute or defend an action connected with the minor's estate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M067-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-004",
+          "claim_text": "The application is made by petition in the way of summary procedure, asking the court to appoint a fit person to take charge of the minor's property or person or both.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M067-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-005",
+          "claim_text": "Where nobody is entitled under a will or deed, the court may grant the certificate to a near relative of the minor who is willing and fit to be entrusted with charge of the property, and may otherwise grant it to any fit person it appoints.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M067-004",
+            "PROV-M067-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-006",
+          "claim_text": "Where a certificate has been granted the court may fix an allowance for the minor's maintenance and education and, if satisfied that it is in the minor's interest, direct that allowance to be raised out of the corpus of the estate by sale or other realisation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M067-006",
+            "PROV-M067-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-007",
+          "claim_text": "A curator who does not derive title under a will or deed must file an inventory of the minor's property within a time fixed by the court and file accounts twice a year, and the District Court may require him to give security for the due administration of the estate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M067-007",
+            "PROV-M067-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-008",
+          "claim_text": "A sale of immovable property has no force in law unless it is effected by a written deed signed by the executant and the witnesses in the presence of a notary public and attested by that notary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M067-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-009",
+          "claim_text": "An unregistered instrument affecting land is void against a party claiming an adverse interest for valuable consideration under a later duly registered instrument, so the deed of transfer should be registered.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M067-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-010",
+          "claim_text": "Nimal, being fourteen, cannot execute a valid deed of transfer of Delgahawatta himself.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M067-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "FACT-M067-Q01-001",
+            "FACT-M067-Q01-002"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-011",
+          "claim_text": "Because no person is entitled under the grandmother's will or any deed and no court appointment has been made, the father is a near relative who may petition for a certificate of curatorship over the boy's property.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M067-002",
+            "PROV-M067-003",
+            "PROV-M067-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M067-Q01-001",
+            "FACT-M067-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-012",
+          "claim_text": "The land being worth about Rs. 6,500,000, the proviso to section 582 for property below twenty thousand rupees does not assist the father.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M067-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M067-Q01-004"
+          ],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-013",
+          "claim_text": "Since the father wants the proceeds applied to the boy's maintenance and education, the court could fix an allowance for that purpose and direct it to be raised out of the corpus by a sale, if satisfied the sale is in the boy's interest.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M067-006"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M067-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-014",
+          "claim_text": "Any transfer to Mr. Silva that the court sanctions must be executed as a notarially attested deed and then registered in the Gampaha land registry.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M067-010",
+            "PROV-M067-011"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M067-Q01-002",
+            "FACT-M067-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-015",
+          "claim_text": "The father cannot sell the land on his own authority as father; a sale is possible only with the sanction of the court, obtained on a summary-procedure petition, followed by a notarial deed of transfer, registration of that deed and accounting for the proceeds.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M067-002",
+            "PROV-M067-003",
+            "PROV-M067-004",
+            "PROV-M067-006",
+            "PROV-M067-007",
+            "PROV-M067-010",
+            "PROV-M067-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "FACT-M067-Q01-001",
+            "FACT-M067-Q01-003",
+            "FACT-M067-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M067-Q01-016",
+          "claim_text": "The statutory material alone does not settle the father's status as natural guardian or the precise sanction he must obtain before alienating the minor's land, so the answer is not complete on statute alone.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M067-009",
+            "PROV-M067-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "Two reasons. First, authority: the father's position as natural guardian, and the requirement of court sanction for alienating a minor's immovable property, are Roman-Dutch common law and case law, absent from this statutory corpus, so the answer cannot be completed on statute alone. Second, corpus and temporal: section 584 of the Civil Procedure Code is missing from the corpus edition with no repeal note, in the middle of the chapter relied on, and the only text of Prevention of Frauds Ordinance s.2 held by the corpus is the post-2022 consolidated text rather than the text in force in October 2020.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,730 @@
+{
+  "benchmark_matter_id": "M011",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M011",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:04:22Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2025-10",
+  "matter_reference_date_basis": "matter_reference_date 2025-10 in candidates/matters/M011.json, corresponding to exam session OCTOBER 2025. All four deaths in the scenario (2019, 2019, 2021, 2023) precede that date, so 'presently owned' is read as at October 2025.",
+  "corpus_gaps": [
+    "The Abolition of Fideicommissa and Entails Act No. 20 of 1972 is not in the corpus. It is named only obliquely, in an editorial note in Trusts Ordinance s 3(b) and in Land Reform Law ss 13(7) and 14. Whether Deed of Gift No 515 of 10 December 2018 could validly create a fideicommissum in favour of Subash, and what becomes of the gift over if it could not, cannot be decided from anything in this corpus. The whole devolution turns on that point.",
+    "The Roman-Dutch common law of fideicommissum, of the fiduciary and fideicommissary interest, and of usufruct or reserved life interest is not statute. Matrimonial Rights and Inheritance Ordinance s 36 refers questions the Ordinance is silent on out to that law, but the corpus contains no text of it.",
+    "No provision in the corpus governs the construction of a prohibition against alienation coupled with a gift over in a deed of gift, or when such a clause creates a fiduciary interest rather than a bare personal condition, or whether such a clause is void as a repugnant condition.",
+    "The Entail and Settlement Ordinance is absent from the corpus, as is any statute on the vesting of a fideicommissary interest on the death of the fiduciary."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M011-001",
+      "section_id": "15-1876/s3",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance No. 15 of 1876",
+      "number_and_year": "No. 15 of 1876",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "means not having a husband or wife living ; all words expressive of relationship shall apply to a child in the womb at the time in question who is afterwards born alive.",
+      "why_relevant": "Defines 'unmarried' for the Ordinance. Sunali is said to have died unmarried and issueless, so on this definition she left no surviving spouse able to take under s 22 and her share falls wholly to collaterals.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event on this section. In force at 2025-10 and at each death in the scenario.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-002",
+      "section_id": "15-1876/s20",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance No. 15 of 1876",
+      "number_and_year": "No. 15 of 1876",
+      "section": "20",
+      "subsection": null,
+      "relevant_excerpt": "The following sections of this Ordinance shall apply to the estates of such persons only as shall die after the proclamation of this Ordinance, and shall be then unmarried or (if married) shall have been married after the proclamation of this Ordinance.",
+      "why_relevant": "Gates the whole of Part III. Every death in the scenario and every marriage in it postdate the 1876 proclamation, so Part III applies to each of the three intestate estates.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event on this section.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-003",
+      "section_id": "15-1876/s21",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance No. 15 of 1876",
+      "number_and_year": "No. 15 of 1876",
+      "section": "21",
+      "subsection": "(1)",
+      "relevant_excerpt": "Inheritance ab interstate to the immovable property in Sri Lanka of a person deceased shall be governed and regulated by the following provisions of this Ordinance wherever such person may have or have had his actual or matrimonial domicile.",
+      "why_relevant": "The subject matter is a fifteen perch allotment at Nugegoda, immovable property in Sri Lanka. This is the choice of law hinge that makes the general law of intestate succession, and not a personal law, govern each devolution in the chain.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event. The corpus text reads 'ab interstate', an evident transcription of 'ab intestato'; quoted verbatim as it stands in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-004",
+      "section_id": "15-1876/s22",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance No. 15 of 1876",
+      "number_and_year": "No. 15 of 1876",
+      "section": "22",
+      "subsection": null,
+      "relevant_excerpt": "When any person shall die intestate as to any of his or her property, leaving a spouse surviving, the surviving spouse shall inherit one-half of the property of such person.",
+      "why_relevant": "Gives the surviving spouse one half off the top of each intestate estate. It is the first step in Prabash's intestacy, if Linda was his lawful surviving spouse, and in Brian's intestacy, where Sara survived him.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event on this section.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-005",
+      "section_id": "15-1876/s23",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance No. 15 of 1876",
+      "number_and_year": "No. 15 of 1876",
+      "section": "23",
+      "subsection": null,
+      "relevant_excerpt": "the right of inheritance is divided in the following order as respects (a) descendants, (b) ascendants, (c) collaterals.",
+      "why_relevant": "Sets the order of classes that decides which of ss 24 to 32 applies to each intestacy: descendants for Prabash, ascendants and collaterals for Brian, collaterals only for Sunali.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event on this section.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-006",
+      "section_id": "15-1876/s24",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance No. 15 of 1876",
+      "number_and_year": "No. 15 of 1876",
+      "section": "24",
+      "subsection": null,
+      "relevant_excerpt": "Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita, but the children or remoter issue of a deceased child take per stirpes or by representation.",
+      "why_relevant": "Governs the half of Prabash's intestate estate that does not pass to a surviving spouse: his four children Sunali, Bimali, Brian and Rian take that half equally per capita, with no distinction between the children of the first and of the second marriage.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event on this section.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-007",
+      "section_id": "15-1876/s25",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance No. 15 of 1876",
+      "number_and_year": "No. 15 of 1876",
+      "section": "25",
+      "subsection": null,
+      "relevant_excerpt": "The children and remoter descendants failing, the inheritance of the deceased goes to his father and mother in case they are both alive; but if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half.",
+      "why_relevant": "Governs Brian's intestacy. Brian died childless in 2021, his father Prabash having died in 2019 and his mother Linda surviving. After Sara's spousal half, the surviving parent Linda takes half of the residue and the balance goes to Brian's full brother Rian together with the half-blood siblings related through the deceased parent Prabash, namely Sunali and Bimali.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event on this section.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-008",
+      "section_id": "15-1876/s26",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance No. 15 of 1876",
+      "number_and_year": "No. 15 of 1876",
+      "section": "26",
+      "subsection": null,
+      "relevant_excerpt": "Father and mother both failing, the property of the intestate goes to his brothers and sisters, whether of the whole or balf-blood, and their children and other issue by representation.",
+      "why_relevant": "Governs Sunali's intestacy in 2023. Both her parents, Prabash and Sheela, had died by then, so her share passes to her siblings of the whole and of the half blood, that is Bimali and Rian, Brian having already died issueless.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event. The corpus text reads 'balf-blood' for 'half-blood'; quoted verbatim as it stands in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-009",
+      "section_id": "15-1876/s27",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance No. 15 of 1876",
+      "number_and_year": "No. 15 of 1876",
+      "section": "27",
+      "subsection": null,
+      "relevant_excerpt": "but if there are only half-brothers and sisters or such issue of one side, the full brothers and sisters and the issue of deceased full brothers and sisters by representation, take then in the first place one-half of the property, and divide the other half with the half-brothers and sisters and their issue by representation.",
+      "why_relevant": "Supplies the arithmetic wherever full and half siblings compete. In both Brian's and Sunali's estates the half-blood siblings stand on one side only, so the full sibling first takes one half and then shares the other half with the half-blood siblings.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event on this section.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-010",
+      "section_id": "15-1876/s30",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance No. 15 of 1876",
+      "number_and_year": "No. 15 of 1876",
+      "section": "30",
+      "subsection": null,
+      "relevant_excerpt": "if all those who succeed to the inheritance are equally near in degree to the intestate, they take per capita, and not per stirpes.",
+      "why_relevant": "Confirms that Prabash's four children, all in the same degree, take per capita, and that surviving siblings in the later intestacies take per capita except where s 27 expressly provides otherwise for the half blood.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event on this section.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-011",
+      "section_id": "15-1876/s36",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance No. 15 of 1876",
+      "number_and_year": "No. 15 of 1876",
+      "section": "36",
+      "subsection": null,
+      "relevant_excerpt": "In all questions relating to the distribution of the property of an intestate, if the present Ordinance is silent, the rules of the Roman-Dutch law as it prevailed in North Holland are to govern and be followed.",
+      "why_relevant": "The Ordinance says nothing about a reserved life interest or about a prohibition against alienation coupled with a gift over. Section 36 refers those questions out to Roman-Dutch common law, which is not in the corpus. It marks the point at which the statutory chain of reasoning runs out and is the textual basis for treating this matter as needing non-statutory authority.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event on this section.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-012",
+      "section_id": "9-1917/s3",
+      "act_id": "9-1917",
+      "formal_title": "Trusts Ordinance No. 9 of 1917",
+      "number_and_year": "No. 9 of 1917",
+      "section": "3",
+      "subsection": "(b)",
+      "relevant_excerpt": "a trust does not include a *fideicommissum;(* Abolished by Act No. 20 of 1972.)",
+      "why_relevant": "Recorded as background only. It is the clearest in-corpus signal that fideicommissa were dealt with by Act No. 20 of 1972, an enactment absent from this corpus. It shows the missing authority exists; it does not state its terms and cannot by itself decide the effect of the 2018 deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 3 in force from 1917 and repealed and substituted in part by Act No. 6 of 2018; the consolidated text is in force at 2025-10. The parenthetical referring to Act No. 20 of 1972 is an editorial footnote carried into the consolidated text, not operative language, and is not relied on as a rule.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M011-013",
+      "section_id": "1-1972/s13",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law No. 1 of 1972",
+      "number_and_year": "No. 1 of 1972",
+      "section": "13",
+      "subsection": "(7)",
+      "relevant_excerpt": "Nothing contained in the preceding provisions of this section shall affect or be deemed to affect any transfer made by a fiduciary of his interest in any agricultural land to a fideicommissary in accordance with the provisions of the Abolition of Fideicommissa and Entails Act.",
+      "why_relevant": "Background only, and on unrelated subject matter. It is recorded because it names the Abolition of Fideicommissa and Entails Act by title, which is the missing authority this matter turns on. Its own operation is confined to agricultural land ceilings and it has no application to a fifteen perch residential allotment at Nugegoda.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1972; the corpus records no amendment event on s 13.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M011-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The intestate steps in the chain are pure statute: Matrimonial Rights and Inheritance Ordinance ss 21 to 27 dispose of the deaths of Prabash in 2019, Brian in 2021 and Sunali in 2023. But the first and controlling step is not. Deed of Gift No 515 of 2018 reserved a life interest to the donor, prohibited Prabash from selling, mortgaging or otherwise dealing with the land, and provided that on Prabash's death the land should devolve free of all conditions on Subash. Whether that clause creates an operative fideicommissum in favour of Subash, or is inoperative so that Prabash took absolutely and his own intestacy governs, depends on the Abolition of Fideicommissa and Entails Act No. 20 of 1972 and on the Roman-Dutch law of fideicommissum. Neither is in the corpus. Section 36 of the Ordinance expressly sends questions on which the Ordinance is silent out to Roman-Dutch law. The two readings give completely different owners, so no statute-only answer is complete.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M011-Q01-01",
+          "issue": "What interest did Deed of Gift No 515 of 10 December 2018 vest in Prabash Silva, given the reserved life interest of the donor, the prohibition against selling, mortgaging or otherwise dealing with the land, and the gift over to Subash on Prabash's death.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M011-Q01-02",
+          "issue": "What was the effect on the title of Ajith Silva's death intestate on 2 March 2019, that is whether anything beyond the reserved life interest remained in him to devolve on his heirs Prabash, Subash, Shehani, Kushani and Yamuna.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M011-Q01-03",
+          "issue": "If Prabash took the land absolutely rather than as a fiduciary, how did his estate devolve on his death intestate on 2 June 2019 as between his surviving spouse and his four children by two marriages.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M011-Q01-04",
+          "issue": "How did Brian's share devolve on his death intestate and childless on 25 September 2021, leaving a widow Sara, a surviving mother Linda, a full brother Rian and two half-sisters Sunali and Bimali on the deceased father's side.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M011-Q01-05",
+          "issue": "How did Sunali's share devolve on her death on 10 October 2023 unmarried and issueless, both her parents having predeceased her, leaving a full sister Bimali and a half-brother Rian.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M011-003",
+        "PROV-M011-004",
+        "PROV-M011-006",
+        "PROV-M011-007",
+        "PROV-M011-008",
+        "PROV-M011-009",
+        "PROV-M011-011"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M011-001",
+        "PROV-M011-002",
+        "PROV-M011-005",
+        "PROV-M011-010"
+      ],
+      "background_provision_ids": [
+        "PROV-M011-012",
+        "PROV-M011-013"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four necessary linked steps, each of which changes the holders of the title: (1) the construction of the 2018 deed of gift, which s 36 refers out to non-statutory law; (2) Prabash's intestacy under ss 21, 22 and 24; (3) Brian's intestacy under ss 25 and 27; (4) Sunali's intestacy under ss 26 and 27. Only indispensable dependencies are counted; the definition in s 3 and the ordering rules in ss 23 and 30 are treated as supporting rather than as separate hops.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M011-003",
+          "to_provision_id": "PROV-M011-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M011-004",
+          "to_provision_id": "PROV-M011-006",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M011-006",
+          "to_provision_id": "PROV-M011-007",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M011-007",
+          "to_provision_id": "PROV-M011-009",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M011-008",
+          "to_provision_id": "PROV-M011-009",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M011-006",
+          "to_provision_id": "PROV-M011-001",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M011-003",
+          "to_provision_id": "PROV-M011-011",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a Final Decree dated 5th May 2018 entered in partition case bearing No 3535/P of the District Court of Nugegoda, Ajith Silva was allotted all that allotment of Land marked Lot 2 depicted in Plan No 1616 dated 2nd March 2010 made by A C Perera Licensed Surveyor of the land called Kahatagahawatte bearing assessment No 12 Temple Road, Nugegoda containing in extent 15 perches. Ajith Silva upon Deed of Gift No 515 dated 10th December 2018 attested by PC Nonis Notary Public gifted the said Lot 2 depicted in said Plan No 1616 to Prabash Silva who is the elder son of Ajith subject to life interest of the Donor and also subject to the condition that Prabash shall not sell, mortgage or otherwise deal with the land but enjoy the produce thereof during his lifetime and that on the death of Prabash the property shall devolve free of all conditions to Subash who is the younger son of Ajith Silva. Ajith had three children namely Prabash, Subash and Shehani by his second marriage to Yamuna. Ajith had another daughter named Kushani from his first marriage to Sumana. Ajith Silva died intestate on 2nd March 2019 and Prabash Silva died intestate on 2nd June 2019 by the Covid 19 Pandemic. Prabash had two daughters namely Sunali and Bimali by his first wife Sheela and two sons namely Brian and Rian by his second wife Linda. Sheela died on 5th August 2019 intestate. Brian married Sara and thereafter died by an accident on 25th September 2021 without having children. Sonali died on 10th October 2023 unmarried and issueless.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the devolution of title to Lot 2 in Plan No 1616 at assessment No 12 Temple Road, Nugegoda, from Ajith Silva to the persons who hold it in October 2025, can be traced on the statutory material available. The chain has four links: the interest passed by Deed of Gift No 515 of 10 December 2018, the death of Ajith intestate on 2 March 2019, the death of Prabash intestate on 2 June 2019, and the later intestate deaths of Brian in 2021 and Sunali in 2023.",
+        "rule": "Inheritance ab intestato to immovable property in Sri Lanka is governed by Part III of the Matrimonial Rights and Inheritance Ordinance s 21(1), and Part III applies to the estate of any person dying after the 1876 proclamation (s 20). A surviving spouse inherits one half (s 22). Subject to that, inheritance runs in the order descendants, ascendants, collaterals (s 23). Children take equally per capita and the issue of a deceased child take by representation (s 24). Where descendants fail and only one parent survives, that parent takes half and the full siblings, together with the half-blood siblings related through the deceased parent, take the other half (s 25). Where both parents have died, the estate goes to the siblings of the whole and of the half blood and their issue by representation (s 26). Where half siblings stand on one side only, the full siblings first take one half and then divide the other half with the half siblings (s 27). Persons equally near in degree take per capita (s 30). The Ordinance is silent on the effect of a reserved life interest and of a prohibition against alienation with a gift over; s 36 directs that on any question the Ordinance does not cover, the rules of Roman-Dutch law as it prevailed in North Holland govern.",
+        "application": "The Final Decree of 5 May 2018 vested Lot 2 in Ajith Silva. By Deed of Gift No 515 he gifted it to Prabash reserving a life interest to himself, prohibiting Prabash from selling, mortgaging or otherwise dealing with the land, and directing that on Prabash's death the land devolve free of all conditions on Subash. Ajith's reserved life interest ended on his death on 2 March 2019, so nothing in this land passed to his intestate heirs Yamuna, Subash, Shehani or Kushani in that capacity. The whole pedigree from that point depends on how the deed is construed, and the corpus cannot settle it. On one construction the clause creates a fideicommissum in which Prabash is fiduciary and Subash fideicommissary, so that on Prabash's death on 2 June 2019 the land vested in Subash free of all conditions and the descendants of Prabash take nothing. On the other construction the gift over is inoperative, Prabash held absolutely, and his death intestate opens the statutory chain: under ss 22 and 24 his surviving spouse takes one half and his four children Sunali, Bimali, Brian and Rian take one eighth each; on Brian's death childless in 2021 his widow Sara takes half of his eighth under s 22, his surviving mother Linda takes half of the residue under s 25, and the balance is divided under ss 25 and 27 between his full brother Rian and his half-sisters Sunali and Bimali; on Sunali's death unmarried and issueless in 2023, both her parents having died, her share passes under ss 26 and 27 to her full sister Bimali and her half-brother Rian. Choosing between the two constructions requires the Abolition of Fideicommissa and Entails Act No. 20 of 1972 and the Roman-Dutch law that s 36 points to, and neither is in this corpus. Two further matters are open on the facts: the background does not say how Prabash's marriage to Sheela ended, so it does not establish that Linda was his lawful surviving spouse at 2 June 2019, and the background names the same daughter as Sunali and then as Sonali.",
+        "conclusion": "No gold pedigree can be settled on the corpus alone. The statutory intestacy steps are fully supported by ss 21 to 27 and 30 of the Matrimonial Rights and Inheritance Ordinance, but the first and controlling step, the effect of the fideicommissary clause in Deed of Gift No 515, needs the Abolition of Fideicommissa and Entails Act No. 20 of 1972 and Roman-Dutch authority, neither of which is in the corpus. The question is therefore recorded as blocked for missing authority, with both candidate chains set out so that a lawyer can select one."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M011-Q01-001",
+          "claim_text": "Inheritance ab intestato to Lot 2, being immovable property in Sri Lanka, is governed by Part III of the Matrimonial Rights and Inheritance Ordinance.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M011-003",
+            "PROV-M011-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q01-002",
+          "claim_text": "A surviving spouse inherits one half of the intestate's property, and subject to that right inheritance runs in the order descendants, ascendants, collaterals.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M011-004",
+            "PROV-M011-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q01-003",
+          "claim_text": "Children take the estate of a parent equally per capita in preference to all others, and the issue of a deceased child take by representation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M011-006",
+            "PROV-M011-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q01-004",
+          "claim_text": "Where an intestate leaves no descendants and one parent survives, that parent takes half and the full siblings together with the half-blood siblings related through the deceased parent take the other half; where half siblings stand on one side only, the full siblings first take one half and then divide the other half with the half siblings.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M011-007",
+            "PROV-M011-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q01-005",
+          "claim_text": "Where both parents of the intestate have died, the estate passes to the siblings of the whole and of the half blood and their issue by representation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M011-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q01-006",
+          "claim_text": "On any question about the distribution of an intestate's property on which the Ordinance is silent, the rules of Roman-Dutch law as it prevailed in North Holland govern.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M011-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q01-007",
+          "claim_text": "The life interest Ajith Silva reserved to himself in Deed of Gift No 515 came to an end on his death on 2 March 2019, so no part of Lot 2 passed to Yamuna, Subash, Shehani or Kushani as his intestate heirs by virtue of that reservation.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M011-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-3",
+            "BG-8"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q01-008",
+          "claim_text": "If Prabash Silva held Lot 2 absolutely, then on his death intestate on 2 June 2019 his surviving spouse took one half and his four children Sunali, Bimali, Brian and Rian each took one eighth.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M011-004",
+            "PROV-M011-006",
+            "PROV-M011-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q01-009",
+          "claim_text": "On that same footing, Brian's one eighth devolved on his death in 2021 on his widow Sara as to one half, on his surviving mother Linda as to one half of the residue, and on his full brother Rian and half-sisters Sunali and Bimali as to the balance, Rian taking one half of that balance first and then sharing the rest with Sunali and Bimali.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M011-004",
+            "PROV-M011-007",
+            "PROV-M011-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q01-010",
+          "claim_text": "On that same footing, Sunali's share devolved on her death in 2023 on her full sister Bimali and her half-brother Rian, Bimali taking one half first and then sharing the other half with Rian, since Sunali left no spouse and no issue and both her parents had predeceased her.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M011-008",
+            "PROV-M011-009",
+            "PROV-M011-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q01-011",
+          "claim_text": "Whether that statutory chain operates at all turns on the construction of the fideicommissary clause in Deed of Gift No 515, a question the Ordinance does not answer and which requires the Abolition of Fideicommissa and Entails Act No. 20 of 1972 and Roman-Dutch authority, neither of which is in the corpus.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M011-011",
+            "PROV-M011-012",
+            "PROV-M011-013"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q01-012",
+          "claim_text": "The pedigree is therefore recorded as blocked for missing authority, with the fideicommissum chain ending in Subash and the intestacy chain ending in Linda, Sara, Rian and Bimali both set out for a lawyer to choose between.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M011-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-4",
+            "BG-6",
+            "BG-7"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The controlling first step, the effect of the prohibition against alienation and the gift over to Subash in Deed of Gift No 515 of 2018, cannot be decided from the corpus. The Abolition of Fideicommissa and Entails Act No. 20 of 1972 is absent, and the Roman-Dutch law of fideicommissum that s 36 of the Ordinance points to is not statute and is not in the corpus. The two available constructions give entirely different owners: Subash alone, or Linda, Sara, Rian and Bimali. A secondary, non-corpus problem is that the background does not say how Prabash's first marriage to Sheela ended, so it does not establish Linda as his lawful surviving spouse for s 22, and it names the same daughter Sunali and then Sonali.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M011-Q02",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The shares question is arithmetic performed on the pedigree in part (i) and inherits the same defect. Sections 22, 24, 25, 26, 27 and 30 of the Matrimonial Rights and Inheritance Ordinance fix every fraction once it is known what interest Prabash took under Deed of Gift No 515. That anterior question is governed by the Abolition of Fideicommissa and Entails Act No. 20 of 1972 and by the Roman-Dutch law of fideicommissum, to which s 36 of the Ordinance refers and which is not statute. Neither is in the corpus, so the fractions cannot be stated as gold on statute alone.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M011-Q02-01",
+          "issue": "Whether Lot 2 is presently held by Subash alone, as fideicommissary under Deed of Gift No 515, or by the intestate heirs of Prabash Silva and of those of his children who have since died.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M011-Q02-02",
+          "issue": "If the intestacy chain applies, what fractional share each of Linda, Sara, Rian and Bimali holds in Lot 2 as at October 2025, after the successive intestacies of Prabash in 2019, Brian in 2021 and Sunali in 2023.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M011-Q02-03",
+          "issue": "Whether the half-blood division in s 27 applies to the estates of Brian and of Sunali, given that in each the half-blood siblings stand on one side only.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M011-003",
+        "PROV-M011-004",
+        "PROV-M011-006",
+        "PROV-M011-007",
+        "PROV-M011-008",
+        "PROV-M011-009",
+        "PROV-M011-011"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M011-001",
+        "PROV-M011-002",
+        "PROV-M011-005",
+        "PROV-M011-010"
+      ],
+      "background_provision_ids": [
+        "PROV-M011-012",
+        "PROV-M011-013"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Same four linked steps as part (i): construction of the 2018 deed, then the intestacies of Prabash, of Brian and of Sunali. Each step changes the fractions, and each depends on the one before it, so the arithmetic cannot be shortened.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M011-003",
+          "to_provision_id": "PROV-M011-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M011-004",
+          "to_provision_id": "PROV-M011-006",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M011-006",
+          "to_provision_id": "PROV-M011-007",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M011-007",
+          "to_provision_id": "PROV-M011-009",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M011-008",
+          "to_provision_id": "PROV-M011-009",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M011-006",
+          "to_provision_id": "PROV-M011-010",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M011-003",
+          "to_provision_id": "PROV-M011-011",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a Final Decree dated 5th May 2018 entered in partition case bearing No 3535/P of the District Court of Nugegoda, Ajith Silva was allotted all that allotment of Land marked Lot 2 depicted in Plan No 1616 dated 2nd March 2010 made by A C Perera Licensed Surveyor of the land called Kahatagahawatte bearing assessment No 12 Temple Road, Nugegoda containing in extent 15 perches. Ajith Silva upon Deed of Gift No 515 dated 10th December 2018 attested by PC Nonis Notary Public gifted the said Lot 2 depicted in said Plan No 1616 to Prabash Silva who is the elder son of Ajith subject to life interest of the Donor and also subject to the condition that Prabash shall not sell, mortgage or otherwise deal with the land but enjoy the produce thereof during his lifetime and that on the death of Prabash the property shall devolve free of all conditions to Subash who is the younger son of Ajith Silva. Ajith had three children namely Prabash, Subash and Shehani by his second marriage to Yamuna. Ajith had another daughter named Kushani from his first marriage to Sumana. Ajith Silva died intestate on 2nd March 2019 and Prabash Silva died intestate on 2nd June 2019 by the Covid 19 Pandemic. Prabash had two daughters namely Sunali and Bimali by his first wife Sheela and two sons namely Brian and Rian by his second wife Linda. Sheela died on 5th August 2019 intestate. Brian married Sara and thereafter died by an accident on 25th September 2021 without having children. Sonali died on 10th October 2023 unmarried and issueless.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What fractional share of Lot 2 in Plan No 1616 each surviving heir holds as at October 2025, after the deaths of Ajith in 2019, Prabash in 2019, Brian in 2021 and Sunali in 2023.",
+        "rule": "The shares follow the same provisions as the pedigree. A surviving spouse takes one half (s 22). The children of the intestate then take the remaining half equally per capita (ss 24 and 30). Where an intestate leaves no descendants and one parent survives, that parent takes half of what remains after the spouse's half and the siblings take the other half, the half-blood siblings being confined to those related through the deceased parent (s 25). Where both parents are dead the siblings of the whole and of the half blood take (s 26). In either case, where half siblings stand on one side only, the full siblings first take one half and then divide the remaining half with the half siblings (s 27). All of this operates only on immovable property in Sri Lanka devolving ab intestato under s 21(1), and only where the Ordinance is not silent; s 36 sends anything it does not cover to Roman-Dutch law.",
+        "application": "If the gift over to Subash is an operative fideicommissum, Subash holds the entire fifteen perches and no other person named in the background has any share. If instead Prabash took absolutely, the arithmetic runs as follows. On Prabash's death, Linda takes one half and Sunali, Bimali, Brian and Rian take one eighth each. On Brian's death without issue, Sara takes one sixteenth as his widow; Linda as surviving parent takes one thirty-second; and the remaining one thirty-second is divided under s 27 by giving Rian, the full brother, one sixty-fourth first and then splitting the last one sixty-fourth three ways between Rian, Sunali and Bimali, so that Rian gains one forty-eighth and Sunali and Bimali one one-hundred-and-ninety-second each. That leaves Linda with seventeen thirty-seconds, Sara with one sixteenth, Rian with seven forty-eighths and Sunali and Bimali with twenty-five one-hundred-and-ninety-seconds each. On Sunali's death unmarried and issueless with both parents dead, her twenty-five one-hundred-and-ninety-seconds passes under ss 26 and 27 three quarters to her full sister Bimali and one quarter to her half-brother Rian. Expressed over a common denominator of 768, the resulting shares are Linda 408, Bimali 175, Rian 137 and Sara 48. Which of the two outcomes is correct cannot be decided from the corpus. The arithmetic also assumes Linda was Prabash's lawful surviving spouse, which the background does not establish.",
+        "conclusion": "The shares cannot be stated as gold on the corpus alone. Recorded as blocked for missing authority. Either Subash holds the whole, or, if the gift over is inoperative, the shares are Linda 408/768, Bimali 175/768, Rian 137/768 and Sara 48/768. Resolving the choice needs the Abolition of Fideicommissa and Entails Act No. 20 of 1972 and Roman-Dutch authority on fideicommissa, neither of which is in the corpus."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M011-Q02-001",
+          "claim_text": "The surviving spouse of an intestate takes one half of the property and the children then take the remaining half equally per capita.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M011-004",
+            "PROV-M011-006",
+            "PROV-M011-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q02-002",
+          "claim_text": "Where an intestate leaves no descendants and one parent survives, that parent takes half of the residue and the full siblings and the half-blood siblings related through the deceased parent take the other half.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M011-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q02-003",
+          "claim_text": "Where both parents of the intestate are dead the siblings of the whole and of the half blood take, and where the half siblings stand on one side only the full siblings first take one half and then divide the other half with the half siblings.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M011-008",
+            "PROV-M011-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q02-004",
+          "claim_text": "These rules apply because Lot 2 is immovable property in Sri Lanka devolving ab intestato, and Part III of the Ordinance applies to the estate of every person dying after the 1876 proclamation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M011-003",
+            "PROV-M011-002",
+            "PROV-M011-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q02-005",
+          "claim_text": "If the gift over in Deed of Gift No 515 is an operative fideicommissum, Subash holds the entire fifteen perches and no other person named in the background holds any share.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M011-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q02-006",
+          "claim_text": "If instead Prabash took absolutely, then on his death in 2019 Linda held one half and Sunali, Bimali, Brian and Rian one eighth each.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M011-004",
+            "PROV-M011-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q02-007",
+          "claim_text": "On Brian's death in 2021 his one eighth was divided as to one sixteenth to Sara, one thirty-second to Linda as surviving parent, one forty-eighth in total to Rian and one one-hundred-and-ninety-second each to Sunali and Bimali.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M011-004",
+            "PROV-M011-007",
+            "PROV-M011-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q02-008",
+          "claim_text": "On Sunali's death in 2023 unmarried, issueless and with both parents dead, her twenty-five one-hundred-and-ninety-seconds passed three quarters to Bimali as full sister and one quarter to Rian as half-brother.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M011-008",
+            "PROV-M011-009",
+            "PROV-M011-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q02-009",
+          "claim_text": "On the intestacy branch the shares as at October 2025 are Linda 408/768, Bimali 175/768, Rian 137/768 and Sara 48/768, which sum to unity.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M011-004",
+            "PROV-M011-006",
+            "PROV-M011-007",
+            "PROV-M011-008",
+            "PROV-M011-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-6",
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M011-Q02-010",
+          "claim_text": "The corpus cannot decide between the fideicommissum branch and the intestacy branch, so the shares are recorded as blocked for missing authority rather than as gold.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M011-011",
+            "PROV-M011-012",
+            "PROV-M011-013"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "Every fraction depends on the anterior question of what Prabash took under Deed of Gift No 515, which the corpus cannot answer: the Abolition of Fideicommissa and Entails Act No. 20 of 1972 is absent and the Roman-Dutch law of fideicommissum that s 36 of the Ordinance refers to is not statute. The two branches give Subash the whole, or give Linda 408/768, Bimali 175/768, Rian 137/768 and Sara 48/768. The intestacy branch further assumes Linda was Prabash's lawful surviving spouse, which the background does not establish.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

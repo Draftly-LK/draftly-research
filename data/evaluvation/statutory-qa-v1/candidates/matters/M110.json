@@ -1,0 +1,64 @@
+{
+  "benchmark_matter_id": "M110",
+  "source_matter_id": "P16-Q05-M01",
+  "grouping_key": "P16-Q05-M01",
+  "paper_no": 16,
+  "question_no": 5,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "The executant has signed in Japanese.",
+    "normalized": "The executant has signed in Japanese.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P16-Q05-PA-I05"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M110-Q01",
+      "atomic_id": "P16-Q05-PA-I05",
+      "part_uid": "paper-16/q5/A/5",
+      "part_id": "A",
+      "item_id": "5",
+      "marks": 1,
+      "pdf_page": 66,
+      "question_original": "What is the duty of the Notary in a situation like this?",
+      "question_normalized": "What is the duty of the Notary in a situation like this?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "The executant has signed in Japanese.",
+      "effective_background_normalized": "The executant has signed in Japanese.",
+      "source_quote": "5.The executant has signed in Japanese. What is the duty of the Notary in a situation like this? (1 mark)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.82,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "instrument_type",
+        "relevant_document"
+      ]
+    }
+  ],
+  "matter_reference_date": "2018-04",
+  "exam_session": "APRIL 2018",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

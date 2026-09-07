@@ -1,0 +1,933 @@
+{
+  "benchmark_matter_id": "M001",
+  "run_id": "2026-09-05-pilot-01",
+  "produced_by_agent": "verifier-V2",
+  "status": "needs_legal_review",
+  "questions": [
+    {
+      "benchmark_question_id": "M001-Q01",
+      "issues": [
+        "Root of title: conclusiveness of the 1985 partition final decree",
+        "Gift of dominium subject to two reserved life interests; irrevocability of an accepted donation",
+        "Effect of the death of one life-interest holder (1990)",
+        "Effect of the holder's revocation/renunciation of the remaining life interest (1991) -- authority not located",
+        "Intestate devolution on Suresh's death (1995): spouse and three children",
+        "Intestate devolution on Rakitha's death (2022)",
+        "Intestate devolution on Muditha's death (2023)",
+        "Applicability of the general law"
+      ],
+      "indispensable_authority_ids": [
+        "AUTH-M001-002",
+        "AUTH-M001-004",
+        "AUTH-M001-005"
+      ],
+      "supporting_authority_ids": [
+        "AUTH-M001-001",
+        "AUTH-M001-003",
+        "AUTH-M001-006",
+        "AUTH-M001-007",
+        "AUTH-M001-008",
+        "AUTH-M001-009",
+        "AUTH-M001-010",
+        "AUTH-M001-020",
+        "AUTH-M001-021",
+        "AUTH-M001-022",
+        "AUTH-M001-023",
+        "AUTH-M001-024",
+        "AUTH-M001-025",
+        "AUTH-M001-026"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Verifier V2 recount (conservative): (1) a notarially executed gift passes dominium to the donee subject to the reserved life interests (AUTH-021/023/024); (2) termination of the life interests - Gamini's by death (AUTH-022, distinguishable) and Vinitha's by her 1991 deed of revocation (legal effect treated as an inference from the deed; AUTH-026 is dicta only, unresolved) - counted as one composite step; (3) Suresh's intestacy: spouse one-half, children per capita (AUTH-002/004, with AUTH-001/008/010 as scope); (4) Rakitha's and Muditha's intestacies: spouse half, then parent half and siblings half (AUTH-002/005; AUTH-007 division open). The 1985 final decree as root of title is treated as a scenario fact supported by AUTH-020 and is not counted; the draft's 6 included the decree and split the life-interest terminations. AUTH-M001-026 was moved from indispensable to supporting for the reasons in the verification report (q01_recommendation); a lawyer decides.",
+      "reasoning_chain": [
+        {
+          "step": 1,
+          "text": "Gamini is root owner of Lot A under the 1985 final decree, which is conclusive evidence of title.",
+          "authority_ids": [
+            "AUTH-M001-020"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "final decree 111/P 1985-02-02"
+          ]
+        },
+        {
+          "step": 2,
+          "text": "Deed of Gift 515 (1986, notarially attested) passed dominium to Suresh, subject to the life interests of Gamini and Vinitha; an accepted donation is irrevocable.",
+          "authority_ids": [
+            "AUTH-M001-021",
+            "AUTH-M001-023",
+            "AUTH-M001-024"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "deed of gift 515 1986-03-10"
+          ]
+        },
+        {
+          "step": 3,
+          "text": "Gamini's death (1990) ended his own life interest. Fernando v. Fernando (donor spouses, life interest 'of us both donors', no survivorship implied) is only an analogy: there the donors were joint donors, whereas here Gamini alone owned Lot A and Vinitha's life interest was reserved over the whole for a non-owner; whether her interest then extended to the whole is open and needs legal review.",
+          "authority_ids": [
+            "AUTH-M001-022",
+            "AUTH-M001-025"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "death of Gamini 1990-06-12"
+          ]
+        },
+        {
+          "step": 4,
+          "text": "Vinitha's Deed of revocation 525 (1991, notarially attested) released her life interest. The effect - Suresh holding Lot A free of the life interest - is treated as an inference from the deed (a conveyancing fact in the pedigree); the only repo material on the point is a Supreme Court observation in SC Appeal 208/2017 that acts under a life interest end when the holder renounces it (AUTH-M001-026, dicta, unresolved). Needs legal review.",
+          "authority_ids": [
+            "AUTH-M001-026",
+            "AUTH-M001-021",
+            "AUTH-M001-009"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "deed of revocation 525 1991-02-25"
+          ]
+        },
+        {
+          "step": 5,
+          "text": "Suresh's intestacy (1995): Kanthi 1/2; Rakitha, Muditha, Samantha 1/6 each (Samantha as a child of the first marriage; general law assumed; MRIO text history unknown).",
+          "authority_ids": [
+            "AUTH-M001-001",
+            "AUTH-M001-002",
+            "AUTH-M001-004",
+            "AUTH-M001-008",
+            "AUTH-M001-010"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "death of Suresh intestate 1995-12-10",
+            "family relationships"
+          ]
+        },
+        {
+          "step": 6,
+          "text": "Rakitha's intestacy (2022, intestacy and absence of issue assumed): Ann 1/2 of his share; other half to Kanthi (half) and to siblings Muditha (full blood) and Samantha (half blood through Suresh) - the split between them under s.25/s.27/s.30 is open. Muditha's intestacy (2023): Kanthi half, Samantha half (s.25); Ann takes nothing.",
+          "authority_ids": [
+            "AUTH-M001-002",
+            "AUTH-M001-005",
+            "AUTH-M001-006",
+            "AUTH-M001-007"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "death of Rakitha 2022-07-02",
+            "death of Muditha 2023-06-05 unmarried and issueless"
+          ]
+        },
+        {
+          "step": 7,
+          "text": "Present owners at April 2026 (primary scenario): Kanthi, Ann, Samantha.",
+          "authority_ids": [],
+          "relies_on_scenario_fact_ids": [
+            "all of the above; conditional on unresolved facts"
+          ]
+        }
+      ],
+      "gold_answer_draft": {
+        "issue": "Trace the devolution of title to Lot A, No 20 Flower Road, Homagama, from Gamini Perera to the present owners.",
+        "rule": "A partition final decree is good and sufficient evidence of the allottee's title (Partition Law s.48(1), current text). A notarially executed gift of land passes the dominium to the donee and an accepted donation is irrevocable; where the donor reserves a life interest the donee's full enjoyment opens when the life interest ends (Uduma Levvai; Silva v. Muniamma). A donor's reserved life interest ends on that donor's death (Fernando v. Fernando, on distinguishable facts). A life-interest holder may release the interest by deed; the legal effect of such a release is not stated in any corpus authority beyond a Supreme Court observation (SC Appeal 208/2017) and needs legal review. On intestacy the surviving spouse takes one-half (MRIO s.22) and the children the other half per capita, issue of a deceased child by representation (s.24); where a person dies without spouse or descendants leaving one parent, that parent takes half and the full- and half-blood siblings (half-blood through the deceased parent) take the other half (s.25); the inter se division between full and half blood (s.27 or the s.30 per capita default) is open.",
+        "application": "Gamini (final decree 111/P, 1985) gifted Lot A to Suresh by Deed 515 (1986) subject to his and Vinitha's life interests. Gamini's death (1990) and Vinitha's revocation (1991) freed Suresh's title. Suresh died intestate (1995): Kanthi 1/2; Rakitha, Muditha and Samantha 1/6 each. Rakitha died (2022) leaving Ann: Ann 1/12; the other 1/12 to Kanthi (1/24) and to Muditha and Samantha. Muditha died (2023) unmarried and issueless: her holding to Kanthi (half) and Samantha (half).",
+        "conclusion": "Pedigree: Gamini Perera (final decree 111/P, 1985) -> Deed of Gift 515 (1986) -> Suresh Perera (life interest of Gamini ended by death 1990; life interest of Vinitha released by Deed 525, 1991) -> intestacy 1995: Kanthi, Rakitha, Muditha, Samantha -> Rakitha's intestacy 2022: Ann, Kanthi, Muditha, Samantha -> Muditha's intestacy 2023: Kanthi, Samantha. Present owners (April 2026): Kanthi, Ann and Samantha, subject to: whether Rakitha left children; whether Rakitha and Muditha died intestate; whether Kanthi is alive; whether Samantha is a legitimate child (stated as 'from his first marriage'); acceptance of the 1986 gift; the general law applying; the effect of the 1991 release of Vinitha's life interest; and the MRIO text history being unknown."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M001-Q01-001",
+          "claim_text": "Gamini Perera became owner of Lot A (Plan No 2525, No 20 Flower Road, Homagama, 10 perches) by the final decree in partition case No 111/P, DC Homagama, dated 2 February 1985.",
+          "claim_type": "scenario_inference",
+          "supporting_authority_ids": [],
+          "supporting_excerpts": [],
+          "support_strength": "scenario_fact",
+          "verification_status": "verified",
+          "scenario_fact_basis": "source.matter-record.json matter_background.normalized: first sentence (allotment by final decree)."
+        },
+        {
+          "claim_id": "CL-M001-Q01-002",
+          "claim_text": "A final decree of partition is good and sufficient evidence of the title of the person to whom a lot is awarded and is final and conclusive against all persons; the 1985 decree is therefore the root of title for the pedigree.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M001-020"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-020",
+              "excerpt": "(1) Save as provided in subsection (5) of this section, the interlocutory decree entered under section 26 and the final decree of partition entered under section 36 shall, subject to the decision on any appeal which may be preferred therefrom, and in the case of an interlocutory decree, subject also to the provisions of subsection (4) of this section, be good and sufficient evidence of the title of any person as to any right, share or interest awarded therein to him and be final and conclusive for all purposes against all persons whomsoever, whatever right, title or interest they have, or claim to have, to or in the land to which such decree relates and notwithstanding any omission or defect of procedure or in the proof of title adduced before the court or the fact that all persons concerned are not parties to the partition action; and the right, share or interest awarded by any such decree shall be free from all encumbrances whatsoever other than those specified in that decree.",
+              "locator": "data/legal-sources/library/statutes/parsed/21-1977-partition-law.json"
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "partially_verified"
+        },
+        {
+          "claim_id": "CL-M001-Q01-003",
+          "claim_text": "By Deed of Gift No. 515 of 10 March 1986 (R Liyanage NP) Gamini gifted Lot A absolutely and irrevocably to Suresh subject to the life interest of Gamini and his wife Vinitha; the deed being notarially attested satisfies the formal requirement for an instrument transferring land.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M001-021"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-021",
+              "excerpt": "2. No sale, purchase, transfer, assignment, or mort gage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month), nor any contract or agreement for the future sale or purchase of any land or other immovable property, and no notice, given under the provisions of the Thesawalamai Pre-emption Ordinance, of an intention or proposal to sell any undivided share or interest in land held in joint or common ownership, shall be of force or avail in law unless the same shall be in writing and signed by the party making the same, or by some person lawfully authorized by him or her in the presence of a licensed notary public and two or more witnesses present at the same time, and unless the execution of such writing, deed, or instrument be duly attested by such notary and witnesses.",
+              "locator": "data/processed/canonical-statutes/SRC001-7-1840.json"
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "partially_verified"
+        },
+        {
+          "claim_id": "CL-M001-Q01-004",
+          "claim_text": "An accepted donation inter vivos is irrevocable and gives the donee a present right to the property; a gift may validly be made subject to a reserved life interest, the donee becoming the owner whose full enjoyment opens when the life interest ends. Suresh therefore held the dominium of Lot A from 1986, burdened by the two life interests (acceptance by Suresh is assumed, not stated).",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M001-023",
+            "AUTH-M001-024"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-023",
+              "excerpt": "A donation inter vivos is in its nature irrevocable once it is accepted; and in that respect it differs from a last will, which the testator may revoke at any time he likes.",
+              "locator": "data/processed/docs/case-law/commonlii/LKCA/1907/15.md"
+            },
+            {
+              "authority_id": "AUTH-M001-024",
+              "excerpt": "Where a landlord donates the rented premises reserving a life-interest in his favour, the donee is entitled to claim the rent from the tenant on the death of the donor; it is not open to the tenant to continue to remain in possession and refuse to pay rent to the new owner on the pretext that he never attorned to the new owner.",
+              "locator": "data/processed/docs/case-law/commonlii/LKCA/1955/69.md"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "partially_verified"
+        },
+        {
+          "claim_id": "CL-M001-Q01-005",
+          "claim_text": "On Gamini's death on 12 June 1990 his own life interest ended. Fernando v. Fernando holds that where property is gifted by two donors 'subject to the life interest of us both donors', the death of one donor frees a half share absolutely in the donee and the survivor's life interest does not extend to that half; but that case concerned joint donors, whereas Gamini alone owned Lot A and Vinitha's life interest was reserved for a non-owner over the whole. Whether from 12 June 1990 Suresh held one half free and the other half subject to Vinitha's life interest, or the whole subject to it, cannot be settled on the corpus and needs legal review.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M001-022",
+            "AUTH-M001-025"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-022",
+              "excerpt": "Where a property was gifted by a father and mother to their child \" subject to the life interest of us both donors.\" Held , that on the death of the mother a half share of the property became the absolute property of the donee, and that the surviving parent was not entitled to take the life interest of the half share",
+              "locator": "data/processed/docs/case-law/commonlii/LKCA/1922/75.md"
+            },
+            {
+              "authority_id": "AUTH-M001-025",
+              "excerpt": "7. And for the avoiding of all doubts and questions as to the respective rights of persons jointly holding landed property situated within certain districts of Sri Lanka, it is further enacted and declared that all landed property situated in Sri Lanka which shall belong to two or more persons jointly, whether the same shall have come to them by grant, purchase, descent, or otherwise, is and shall be deemed and taken to be held by them in common, and upon the decease of any of such persons the said property so jointly possessed shall not remain or belong to the survivor, but all the right, share, and interest of the person so dying in and to the property so jointly possessed as aforesaid shall form part of his estate; and the person or persons to whom the same shall by him be devised or bequeathed, or to whom it shall devolve, shall thereupon become and be co-proprietors with the survivor in the said property, in the proportion and according to the share of such deceased person therein, unless the instrument under which the said property is jointly held and possessed, or any agreement mutually entered into between them, shall expressly provide that the survivor, upon such decease, shall become entitled to the whole estate.",
+              "locator": "data/processed/canonical-statutes/SRC024-21-1844.json"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "partially_verified"
+        },
+        {
+          "claim_id": "CL-M001-Q01-006",
+          "claim_text": "Vinitha released ('revoked') her life interest by Deed of revocation No. 525 of 25 February 1991 (S Sapumal NP), a notarially attested instrument. In the pedigree this is recorded as a conveyancing fact from the deed; its legal effect - that the life interest ceased to burden Suresh's title, leaving him owner of the whole free of encumbrance - is an inference for which no rule-stating authority is in the corpus. The closest repo material is the Supreme Court's observation in SC Appeal 208/2017 that acts done on the strength of a life interest come to an end when the holder renounces it. Needs legal review.",
+          "claim_type": "scenario_inference",
+          "supporting_authority_ids": [
+            "AUTH-M001-026",
+            "AUTH-M001-021",
+            "AUTH-M001-009"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-026",
+              "excerpt": "Any act performed, on the strength of life interest to a property, by the life interest holder such as leasing of the property comes to an end with the demise of the life interest holder or when the life interest holder renounces the life interest to the property.",
+              "locator": "data/processed/docs/case-law/courts/sc/sc-appeal-208-2017-24d4123126.md"
+            },
+            {
+              "authority_id": "AUTH-M001-021",
+              "excerpt": "2. No sale, purchase, transfer, assignment, or mort gage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month), nor any contract or agreement for the future sale or purchase of any land or other immovable property, and no notice, given under the provisions of the Thesawalamai Pre-emption Ordinance, of an intention or proposal to sell any undivided share or interest in land held in joint or common ownership, shall be of force or avail in law unless the same shall be in writing and signed by the party making the same, or by some person lawfully authorized by him or her in the presence of a licensed notary public and two or more witnesses present at the same time, and unless the execution of such writing, deed, or instrument be duly attested by such notary and witnesses.",
+              "locator": "data/processed/canonical-statutes/SRC001-7-1840.json"
+            }
+          ],
+          "support_strength": "scenario_fact",
+          "verification_status": "partially_verified",
+          "scenario_fact_basis": "source.json matter_background.normalized: 'Vinitha revoked her life interest over said Lot A depicted in Plan No. 2525 by Deed of revocation of life interest bearing No. 525 dated 25th February 1991 attested by S Sapumal Notary Public.' The effect stated is an inference from that fact, flagged for legal review."
+        },
+        {
+          "claim_id": "CL-M001-Q01-007",
+          "claim_text": "Suresh Perera died intestate on 10 December 1995 leaving (on the facts) his wife Kanthi and three children: Rakitha and Muditha (by Kanthi) and Samantha (by his first marriage). Intestate succession to immovable property in Sri Lanka is governed by Part III of the Matrimonial Rights and Inheritance Ordinance (general law assumed; not Kandyan, Muslim or Tesawalamai).",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M001-001",
+            "AUTH-M001-010"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-001",
+              "excerpt": "(1) Inheritance ab interstate to the immovable property in Sri Lanka of a person deceased shall be governed and regulated by the following provisions of this Ordinance wherever such person may have or have had his actual or matrimonial domicile. Inheritance to movable property to be governed by the law of domicile.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-010",
+              "excerpt": "2. Whenever a woman marries, after the proclamation of this Ordinance, a man of different race or nationality from her own, she shall be taken to be of the same race and nationality as her husband for all the purposes of this Ordinance, so long as the marriage subsists and until she marries again. Save as aforesaid, this Ordinance shall not apply to Kandyans or Muslims, or to Tamils of the Northern Province who are or may become subject to the Tesawalamai.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q01-008",
+          "claim_text": "On Suresh's intestacy the surviving spouse Kanthi inherited one-half of Lot A, and the children Rakitha, Muditha and Samantha took the other half equally per capita (one-sixth each), Samantha being an heir provided she is a legitimate child.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M001-002",
+            "AUTH-M001-004",
+            "AUTH-M001-008"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-002",
+              "excerpt": "22. When any person shall die intestate as to any of his or her property, leaving a spouse surviving, the surviving spouse shall inherit one-half of the property of such person.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-004",
+              "excerpt": "24. Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita, but the children or remoter issue of a deceased child take per stirpes or by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-008",
+              "excerpt": "33. Illegitimate children inherit the property of their intestate mother, but not that of their father or that of the relatives of their mother. Where an illegitimate person leaves no surviving spouse or descendants, his or her property will go to the heirs of the mother, so as to exclude the State.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q01-009",
+          "claim_text": "Rakitha died on 2 July 2022 (presumed intestate) leaving his wife Ann; if he left no children, Ann took one-half of his one-sixth and the other half passed, descendants failing, to his surviving parent Kanthi (one half) and to his full sister Muditha and half-sister Samantha (the other half). If Rakitha left children they take his whole non-spousal half by representation and the collateral branch does not arise.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M001-002",
+            "AUTH-M001-005",
+            "AUTH-M001-007",
+            "AUTH-M001-004"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-002",
+              "excerpt": "22. When any person shall die intestate as to any of his or her property, leaving a spouse surviving, the surviving spouse shall inherit one-half of the property of such person.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-005",
+              "excerpt": "25. The children and remoter descendants failing, the inheritance of the deceased goes to his father and mother in case they are both alive; but if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half. In case there is no full or half-brother or sister alive at the death of the deceased, the surviving parent inherits the whole, although there may be children or other issue of deceased brothers or sisters.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-007",
+              "excerpt": "The inheritance is divided into two parts ; the one-half the full brothers and sisters and the issue of such as are deceased by representation divide with the half-brothers and sisters of the father's side and the issue of such as are deceased by representation ; and the other half they divide with those of the mother's side and the issue of such as are deceased by representation ; but if there are only half-brothers and sisters or such issue of one side, the full brothers and sisters and the issue of deceased full brothers and sisters by representation, take then in the first place one-half of the property, and divide the other half with the half-brothers and sisters and their issue by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-004",
+              "excerpt": "24. Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita, but the children or remoter issue of a deceased child take per stirpes or by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "partially_verified"
+        },
+        {
+          "claim_id": "CL-M001-Q01-010",
+          "claim_text": "Muditha died on 5 June 2023 unmarried and issueless (presumed intestate); descendants and spouse failing, the surviving parent Kanthi took one half of Muditha's holding and the half-blood sister Samantha (related through the deceased parent Suresh) took the other half, Rakitha having predeceased without (known) issue. If Kanthi had predeceased, the whole would go to Samantha and any issue of Rakitha by representation.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M001-005",
+            "AUTH-M001-006",
+            "AUTH-M001-007"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-005",
+              "excerpt": "25. The children and remoter descendants failing, the inheritance of the deceased goes to his father and mother in case they are both alive; but if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half. In case there is no full or half-brother or sister alive at the death of the deceased, the surviving parent inherits the whole, although there may be children or other issue of deceased brothers or sisters.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-006",
+              "excerpt": "26. Father and mother both failing, the property of the intestate goes to his brothers and sisters, whether of the whole or balf-blood, and their children and other issue by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-007",
+              "excerpt": "The inheritance is divided into two parts ; the one-half the full brothers and sisters and the issue of such as are deceased by representation divide with the half-brothers and sisters of the father's side and the issue of such as are deceased by representation ; and the other half they divide with those of the mother's side and the issue of such as are deceased by representation ; but if there are only half-brothers and sisters or such issue of one side, the full brothers and sisters and the issue of deceased full brothers and sisters by representation, take then in the first place one-half of the property, and divide the other half with the half-brothers and sisters and their issue by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q01-011",
+          "claim_text": "Present owners at April 2026 (primary scenario: Kanthi alive; Rakitha left no children; Rakitha and Muditha died intestate; Samantha legitimate): Kanthi, Ann and Samantha. Pedigree: Gamini (final decree 111/P, 1985) -> Deed of Gift 515 (1986) -> Suresh (life interests of Gamini and Vinitha ended 1990 and 1991) -> intestacy 1995: Kanthi 1/2, Rakitha 1/6, Muditha 1/6, Samantha 1/6 -> Rakitha's intestacy 2022: Ann, Kanthi, Muditha, Samantha -> Muditha's intestacy 2023: Kanthi, Samantha.",
+          "claim_type": "conclusion",
+          "supporting_authority_ids": [],
+          "supporting_excerpts": [],
+          "support_strength": "scenario_fact",
+          "verification_status": "partially_verified",
+          "scenario_fact_basis": "source.matter-record.json matter_background.normalized: dates of death and family relationships; conclusion aggregates the applications above and is conditional on the listed unresolved facts."
+        }
+      ],
+      "confidence": 0.5,
+      "status": "needs_legal_review",
+      "blocking_reason": "Verifier V2: (a) the legal effect of Vinitha's 1991 deed of revocation (CL-M001-Q01-006) has no located rule-stating authority; the closest repo material is an obiter observation in SC Appeal 208/2017 (AUTH-M001-026, unresolved). The verifier recommends treating the release as a conveyancing fact in the pedigree whose effect is an inference, and has reclassified the claim accordingly and moved AUTH-M001-026 to supporting - a lawyer must confirm or reinstate blocked_missing_authority. (b) Fernando v. Fernando (AUTH-M001-022) is distinguishable (joint donors vs sole owner reserving a life interest for a non-owner spouse), so the 'half freed in 1990' step (CL-M001-Q01-005) is not established. (c) MRIO Part III is held only as current consolidated text with unknown amendment history (temporal warning on AUTH-002/004/005); Partition Law s.48 is held only in its post-1997 form. (d) Scenario ambiguities (Rakitha's issue, intestacy of Rakitha and Muditha, Kanthi alive, Samantha's legitimacy) are assumptions, not facts."
+    },
+    {
+      "benchmark_question_id": "M001-Q02",
+      "issues": [
+        "Spouse's half on Suresh's intestacy",
+        "Per capita division among three children incl. child of first marriage",
+        "Devolution of Rakitha's share: spouse half; descendants failing -> parent and siblings",
+        "Division between full-blood and half-blood siblings",
+        "Devolution of Muditha's share: parent and half-blood sister",
+        "Whether a predeceased sibling's widow (Ann) takes by representation",
+        "Aggregation of fractions"
+      ],
+      "indispensable_authority_ids": [
+        "AUTH-M001-002",
+        "AUTH-M001-004",
+        "AUTH-M001-005",
+        "AUTH-M001-007"
+      ],
+      "supporting_authority_ids": [
+        "AUTH-M001-001",
+        "AUTH-M001-003",
+        "AUTH-M001-006",
+        "AUTH-M001-008",
+        "AUTH-M001-009",
+        "AUTH-M001-010"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Verifier V2 confirmed 4: (1) spouse half (s.22), applied to Suresh's and Rakitha's estates; (2) children per capita (s.24); (3) descendants failing: sole surviving parent half, siblings half (s.25); (4) division between full and half blood (s.27 - applicability inside s.25 open against the s.30 per capita default). Arithmetic not counted.",
+      "reasoning_chain": [
+        {
+          "step": 1,
+          "text": "1995: Kanthi 1/2; Rakitha 1/6; Muditha 1/6; Samantha 1/6.",
+          "authority_ids": [
+            "AUTH-M001-002",
+            "AUTH-M001-004"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "Suresh died intestate 1995-12-10 leaving Kanthi and three children"
+          ]
+        },
+        {
+          "step": 2,
+          "text": "2022 (Rakitha, no issue assumed): Ann 1/12; Kanthi 1/24; sibling half 1/24 split Muditha 1/32, Samantha 1/96 on the literal s.27 reading (or 1/48 each).",
+          "authority_ids": [
+            "AUTH-M001-002",
+            "AUTH-M001-005",
+            "AUTH-M001-007"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "Rakitha married Ann; died 2022-07-02"
+          ]
+        },
+        {
+          "step": 3,
+          "text": "2023 (Muditha, unmarried, issueless): holding 19/96 -> Kanthi 19/192, Samantha 19/192; Ann takes nothing.",
+          "authority_ids": [
+            "AUTH-M001-005",
+            "AUTH-M001-007",
+            "AUTH-M001-009"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "Muditha died 2023-06-05 unmarried and issueless"
+          ]
+        },
+        {
+          "step": 4,
+          "text": "Totals: Kanthi 123/192 (41/64); Ann 16/192 (1/12); Samantha 53/192.",
+          "authority_ids": [
+            "AUTH-M001-002",
+            "AUTH-M001-004",
+            "AUTH-M001-005",
+            "AUTH-M001-007"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "primary scenario assumptions"
+          ]
+        }
+      ],
+      "gold_answer_draft": {
+        "issue": "What fractional share of Lot A does each heir presently own?",
+        "rule": "Surviving spouse inherits one-half (s.22); children take the balance equally per capita, issue of a deceased child by representation (s.24); descendants failing, a sole surviving parent takes half and full- and half-blood siblings (half-blood through the deceased parent) and issue of deceased siblings by representation take the other half (s.25); division between full and half blood per s.27; where the Ordinance is silent Roman-Dutch law governs (s.36). Where all who succeed are equally near in degree they take per capita unless otherwise expressly provided (s.30, not a candidate authority); whether s.27 is such an express provision for the s.25 case is open.",
+        "application": "Suresh (1995): Kanthi 1/2, Rakitha 1/6, Muditha 1/6, Samantha 1/6. Rakitha (2022, assumed intestate, no children): Ann 1/12; Kanthi 1/24; Muditha 1/32 and Samantha 1/96 (literal s.27) or 1/48 each. Muditha (2023): 19/96 -> Kanthi 19/192, Samantha 19/192.",
+        "conclusion": "Two candidate answers, both conditional on Rakitha having left no children, Rakitha and Muditha having died intestate, Kanthi being alive and Samantha being a legitimate child: (A) literal s.27 within s.25: Kanthi 123/192 (= 41/64), Ann 1/12 (= 16/192), Samantha 53/192; (B) s.30 per capita default for the sibling half: Kanthi 61/96, Ann 8/96 (= 1/12), Samantha 27/96. The choice between them needs legal review. If Rakitha left children the shares must be recomputed with them taking by representation."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M001-Q02-001",
+          "claim_text": "On Suresh's death (1995) Kanthi took 1/2 of Lot A as surviving spouse.",
+          "claim_type": "arithmetic",
+          "supporting_authority_ids": [
+            "AUTH-M001-002"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-002",
+              "excerpt": "22. When any person shall die intestate as to any of his or her property, leaving a spouse surviving, the surviving spouse shall inherit one-half of the property of such person.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "arithmetic_from_rule",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q02-002",
+          "claim_text": "The other 1/2 was divided per capita among the three children: Rakitha 1/6, Muditha 1/6, Samantha 1/6.",
+          "claim_type": "arithmetic",
+          "supporting_authority_ids": [
+            "AUTH-M001-004"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-004",
+              "excerpt": "24. Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita, but the children or remoter issue of a deceased child take per stirpes or by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "arithmetic_from_rule",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q02-003",
+          "claim_text": "On Rakitha's death (2022), assuming intestacy and no children: Ann (spouse) took 1/2 of 1/6 = 1/12.",
+          "claim_type": "arithmetic",
+          "supporting_authority_ids": [
+            "AUTH-M001-002"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-002",
+              "excerpt": "22. When any person shall die intestate as to any of his or her property, leaving a spouse surviving, the surviving spouse shall inherit one-half of the property of such person.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "arithmetic_from_rule",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q02-004",
+          "claim_text": "The remaining 1/12 of Rakitha's share passed, descendants failing and one parent surviving: Kanthi 1/2 of 1/12 = 1/24; the sibling half (1/24) between full sister Muditha and half-sister Samantha. On a literal reading of the half-blood division rule (full-blood sibling takes one half first and divides the other half with the half-blood), Muditha took 1/48 + 1/96 = 1/32 and Samantha 1/96. Alternative equal division would give 1/48 each; this point needs legal review.",
+          "claim_type": "arithmetic",
+          "supporting_authority_ids": [
+            "AUTH-M001-005",
+            "AUTH-M001-007"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-005",
+              "excerpt": "25. The children and remoter descendants failing, the inheritance of the deceased goes to his father and mother in case they are both alive; but if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half. In case there is no full or half-brother or sister alive at the death of the deceased, the surviving parent inherits the whole, although there may be children or other issue of deceased brothers or sisters.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-007",
+              "excerpt": "The inheritance is divided into two parts ; the one-half the full brothers and sisters and the issue of such as are deceased by representation divide with the half-brothers and sisters of the father's side and the issue of such as are deceased by representation ; and the other half they divide with those of the mother's side and the issue of such as are deceased by representation ; but if there are only half-brothers and sisters or such issue of one side, the full brothers and sisters and the issue of deceased full brothers and sisters by representation, take then in the first place one-half of the property, and divide the other half with the half-brothers and sisters and their issue by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "arithmetic_from_rule",
+          "verification_status": "partially_verified"
+        },
+        {
+          "claim_id": "CL-M001-Q02-005",
+          "claim_text": "Muditha's holding at death (2023) was 1/6 + 1/32 = 19/96. No spouse or descendants: Kanthi (surviving parent) took 1/2 = 19/192; the other 19/192 went to the surviving sibling Samantha (half-blood, through Suresh), Rakitha having predeceased without known issue.",
+          "claim_type": "arithmetic",
+          "supporting_authority_ids": [
+            "AUTH-M001-005",
+            "AUTH-M001-007"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-005",
+              "excerpt": "25. The children and remoter descendants failing, the inheritance of the deceased goes to his father and mother in case they are both alive; but if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half. In case there is no full or half-brother or sister alive at the death of the deceased, the surviving parent inherits the whole, although there may be children or other issue of deceased brothers or sisters.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-007",
+              "excerpt": "The inheritance is divided into two parts ; the one-half the full brothers and sisters and the issue of such as are deceased by representation divide with the half-brothers and sisters of the father's side and the issue of such as are deceased by representation ; and the other half they divide with those of the mother's side and the issue of such as are deceased by representation ; but if there are only half-brothers and sisters or such issue of one side, the full brothers and sisters and the issue of deceased full brothers and sisters by representation, take then in the first place one-half of the property, and divide the other half with the half-brothers and sisters and their issue by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "arithmetic_from_rule",
+          "verification_status": "partially_verified"
+        },
+        {
+          "claim_id": "CL-M001-Q02-006",
+          "claim_text": "Ann, as widow of the predeceased brother Rakitha, takes nothing from Muditha's estate: the Ordinance lets only the issue of a deceased sibling take by representation, and where it is silent Roman-Dutch law governs; no authority extending representation to a sibling's spouse was located.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M001-005",
+            "AUTH-M001-009"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-005",
+              "excerpt": "25. The children and remoter descendants failing, the inheritance of the deceased goes to his father and mother in case they are both alive; but if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half. In case there is no full or half-brother or sister alive at the death of the deceased, the surviving parent inherits the whole, although there may be children or other issue of deceased brothers or sisters.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-009",
+              "excerpt": "36. In all questions relating to the distribution of the property of an intestate, if the present Ordinance is silent, the rules of the Roman-Dutch law as it prevailed in North Holland are to govern and be followed.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "inferential",
+          "verification_status": "partially_verified"
+        },
+        {
+          "claim_id": "CL-M001-Q02-007",
+          "claim_text": "Present shares (primary scenario; fractions of Lot A): Kanthi 1/2 + 1/24 + 19/192 = 123/192 (= 41/64); Ann 1/12 (= 16/192); Samantha 1/6 + 1/96 + 19/192 = 53/192. Total 192/192. Under the alternative equal-division reading of the sibling half: Kanthi 61/96, Ann 8/96, Samantha 27/96.",
+          "claim_type": "arithmetic",
+          "supporting_authority_ids": [
+            "AUTH-M001-002",
+            "AUTH-M001-004",
+            "AUTH-M001-005",
+            "AUTH-M001-007"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-002",
+              "excerpt": "22. When any person shall die intestate as to any of his or her property, leaving a spouse surviving, the surviving spouse shall inherit one-half of the property of such person.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-004",
+              "excerpt": "24. Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita, but the children or remoter issue of a deceased child take per stirpes or by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-005",
+              "excerpt": "25. The children and remoter descendants failing, the inheritance of the deceased goes to his father and mother in case they are both alive; but if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half. In case there is no full or half-brother or sister alive at the death of the deceased, the surviving parent inherits the whole, although there may be children or other issue of deceased brothers or sisters.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-007",
+              "excerpt": "The inheritance is divided into two parts ; the one-half the full brothers and sisters and the issue of such as are deceased by representation divide with the half-brothers and sisters of the father's side and the issue of such as are deceased by representation ; and the other half they divide with those of the mother's side and the issue of such as are deceased by representation ; but if there are only half-brothers and sisters or such issue of one side, the full brothers and sisters and the issue of deceased full brothers and sisters by representation, take then in the first place one-half of the property, and divide the other half with the half-brothers and sisters and their issue by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "arithmetic_from_rule",
+          "verification_status": "partially_verified"
+        },
+        {
+          "claim_id": "CL-M001-Q02-008",
+          "claim_text": "If Rakitha left children, they take his non-spousal 1/12 by representation (Kanthi, Muditha and Samantha take nothing from him), and on Muditha's death they take Rakitha's place among the siblings by representation; the shares must then be recomputed. If Kanthi has died, her accumulated share passes on her own intestacy (outside the facts given).",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M001-004",
+            "AUTH-M001-005",
+            "AUTH-M001-006"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-004",
+              "excerpt": "24. Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita, but the children or remoter issue of a deceased child take per stirpes or by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-005",
+              "excerpt": "25. The children and remoter descendants failing, the inheritance of the deceased goes to his father and mother in case they are both alive; but if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half. In case there is no full or half-brother or sister alive at the death of the deceased, the surviving parent inherits the whole, although there may be children or other issue of deceased brothers or sisters.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-006",
+              "excerpt": "26. Father and mother both failing, the property of the intestate goes to his brothers and sisters, whether of the whole or balf-blood, and their children and other issue by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "confidence": 0.5,
+      "status": "needs_legal_review",
+      "blocking_reason": "Verifier V2: the shares depend on whether MRIO s.27 governs the division of the sibling half under s.25 (one parent surviving) or the s.30 per capita default applies; the text does not settle it and s.30 is not among the candidates. Two numerical answers result (Kanthi 123/192 or 61/96; Samantha 53/192 or 27/96; Ann 1/12 either way). Also: MRIO text history unknown at 1995/2022/2023; Rakitha's intestacy and lack of issue, Muditha's intestacy, Kanthi's survival and Samantha's legitimacy are assumptions."
+    },
+    {
+      "benchmark_question_id": "M001-Q03",
+      "issues": [
+        "Prohibition on transfer of land to a foreigner (s.2(1)(a))",
+        "Meaning of 'foreigner', 'transfer', 'land' (s.25)",
+        "Exemption for devolution by intestacy, gift or will to a foreigner next of kin (s.3(1)(d))",
+        "Dual-citizen exemption (s.3(1)(e))",
+        "Temporal scope: deemed operation 1 January 2013 vs death in 1995; 2022/2023 accretions",
+        "Effect of the 2018 amendment",
+        "Consequences: subsequent transfers (s.3(4)); void alienations (s.18)"
+      ],
+      "indispensable_authority_ids": [
+        "AUTH-M001-011",
+        "AUTH-M001-012",
+        "AUTH-M001-014",
+        "AUTH-M001-015",
+        "AUTH-M001-019"
+      ],
+      "supporting_authority_ids": [
+        "AUTH-M001-013",
+        "AUTH-M001-016",
+        "AUTH-M001-017",
+        "AUTH-M001-018",
+        "AUTH-M001-004",
+        "AUTH-M001-008"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Verifier V2 confirmed 4: (1) prohibition on transfer to a foreigner + definition of foreigner applied to a US citizen (AUTH-011/014); (2) exemption for title transferred by intestacy to a foreigner next of kin of the owner (AUTH-012, PDF reading); (3) temporal point: 1995 death predates the deemed operation; 2022/2023 accretions within the Act (AUTH-015); (4) the 2018 amendment left s.3(1)(d)/(e) and the definitions untouched (AUTH-019, scan read). Dual-citizen alternative and consequences are supporting.",
+      "reasoning_chain": [
+        {
+          "step": 1,
+          "text": "Samantha, a US citizen, is a 'foreigner' (unless also a Sri Lankan citizen); transfers of land to foreigners are prohibited by s.2(1)(a).",
+          "authority_ids": [
+            "AUTH-M001-011",
+            "AUTH-M001-014"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "Samantha is a citizen of USA"
+          ]
+        },
+        {
+          "step": 2,
+          "text": "Section 3(1)(d) exempts land whose title is transferred by intestacy, gift or testamentary disposition to a next of kin who is a foreigner, in accordance with Sri Lankan succession law.",
+          "authority_ids": [
+            "AUTH-M001-012"
+          ],
+          "relies_on_scenario_fact_ids": []
+        },
+        {
+          "step": 3,
+          "text": "Suresh died in 1995, before the Act's deemed operation (1 January 2013); the 2022 and 2023 accretions fall within the Act but are also intestate devolutions within s.3(1)(d).",
+          "authority_ids": [
+            "AUTH-M001-015",
+            "AUTH-M001-012"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "Suresh died 1995-12-10",
+            "Rakitha died 2022-07-02",
+            "Muditha died 2023-06-05"
+          ]
+        },
+        {
+          "step": 4,
+          "text": "Act 21 of 2018 (deemed operative 1 April 2018; verifier read the RGD scan) amended only s.3(1)(b), (h), (i) and s.5A; Act 3 of 2017 only inserted s.5A. Section 3(1)(d), (e), s.2(1)(a) and the s.25 definition of 'foreigner' are unchanged since 2014.",
+          "authority_ids": [
+            "AUTH-M001-019"
+          ],
+          "relies_on_scenario_fact_ids": []
+        },
+        {
+          "step": 5,
+          "text": "If Samantha is a dual citizen, s.3(1)(e) independently exempts her. Any later transfer by her remains subject to the Act (s.3(4)); a contravening alienation is void (s.18).",
+          "authority_ids": [
+            "AUTH-M001-013",
+            "AUTH-M001-017",
+            "AUTH-M001-016"
+          ],
+          "relies_on_scenario_fact_ids": [
+            "dual citizenship not stated"
+          ]
+        }
+      ],
+      "gold_answer_draft": {
+        "issue": "Can Samantha, a US citizen, become entitled to Suresh Perera's intestate estate having regard to the Land (Restrictions on Alienation) Act No. 38 of 2014 as amended by Act No. 21 of 2018?",
+        "rule": "Section 2(1)(a) prohibits the transfer of title of land in Sri Lanka to a foreigner, i.e. a person who is not a citizen of Sri Lanka (s.25; 'transfer' means any sale, donation, gift or any conveyance by or under which title passes; 'land' includes any interest in land). Section 3(1)(d) provides that s.2 does not apply to any land the title of which is transferred by intestacy, gift or testamentary disposition to a next of kin (who is a foreigner) of the owner of such land, in accordance with the applicable law of succession of Sri Lanka; s.3(1)(e) exempts transfers to dual citizens. The Act is deemed operative from 1 January 2013 (s.1(2)); Act 3 of 2017 inserted s.5A only and Act 21 of 2018 (deemed operative 1 April 2018) altered only s.3(1)(b), (h), (i) and s.5A.",
+        "application": "Samantha is a foreigner (absent dual citizenship). Her entitlement arises by intestacy as Suresh's child (per capita with the other children, if legitimate). That devolution falls squarely within s.3(1)(d); it also occurred in 1995, before the Act's deemed operation. Her further accretions on Rakitha's and Muditha's intestacies (2022, 2023) are equally devolutions by intestacy to a next of kin and are exempt. The 2018 amendment did not narrow the exemption.",
+        "conclusion": "Yes. Samantha can become entitled to her share of Suresh Perera's intestate estate; the Act's prohibition does not apply to land passing by intestacy to a foreigner next of kin (s.3(1)(d)), and alternatively she is exempt if a dual citizen (s.3(1)(e)). Any later voluntary transfer of that land by her would be subject to the Act (s.3(4)) and a contravening alienation would be void (s.18). Conditional on Samantha being a legitimate child (heirship) and on the current consolidated text matching the text in force at each event date."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M001-Q03-001",
+          "claim_text": "The Act prohibits the transfer of title of any land in Sri Lanka to a foreigner.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M001-011"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-011",
+              "excerpt": "the transfer of title of any land situated in Sri Lanka, shall be prohibited if such transfer is- (a) to a foreigner; or",
+              "locator": "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/retrieval-logs/SRC021.pdftotext.txt"
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q03-002",
+          "claim_text": "'Foreigner' means a person who is not a citizen of Sri Lanka (s.25). The same section defines 'transfer' as any sale, donation, gift or any conveyance by or under which the title of such land passes to another person, and 'land' as including any interest in the land (verified on PDF page 16 and tree nodes /body/25/children/16 and /14; carried in the notes to AUTH-M001-014).",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M001-014"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-014",
+              "excerpt": "'foreigner' means a person who is not a citizen of Sri Lanka;",
+              "locator": "data/processed/canonical-statutes/SRC021-38-2014.json"
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q03-003",
+          "claim_text": "Samantha, a citizen of the USA, is a 'foreigner' under the Act unless she is also a citizen of Sri Lanka (dual citizenship is not stated).",
+          "claim_type": "application",
+          "supporting_authority_ids": [],
+          "supporting_excerpts": [],
+          "support_strength": "scenario_fact",
+          "verification_status": "verified",
+          "scenario_fact_basis": "source.matter-record.json matter_background.normalized: 'Samantha ... who is a citizen of USA'; definition applied in CL-M001-Q03-002."
+        },
+        {
+          "claim_id": "CL-M001-Q03-004",
+          "claim_text": "Section 2 does not apply to any land the title of which is transferred by intestacy, gift or testamentary disposition to a next of kin (who is a foreigner) of the owner of such land, in accordance with the applicable law of succession of Sri Lanka.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M001-012"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-012",
+              "excerpt": "(d) any land the title of which is transferred by intestacy, gift or testamentary disposition to a next of kin (who is a foreigner) of the owner of such land, in accordance with the applicable law of succession of Sri Lanka;",
+              "locator": "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/retrieval-logs/SRC021.pdftotext.txt"
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q03-005",
+          "claim_text": "Section 2 also does not apply to land transferred to a dual citizen of Sri Lanka within the meaning of the Citizenship Act.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M001-013"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-013",
+              "excerpt": "(e) any land the title of which is transferred to a dual citizen of Sri Lanka within the meaning of the Citizenship Act;",
+              "locator": "data/processed/canonical-statutes/SRC021-38-2014.json"
+            }
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q03-006",
+          "claim_text": "The Act is deemed to have come into operation on 1 January 2013; the Amendment Act No. 21 of 2018 is deemed operative from 1 April 2018 and (as read from the RGD scan) amended only s.3(1)(b), (h) and (i) (condominium parcels and listed companies) and s.5A; Act No. 3 of 2017 only inserted s.5A. Neither altered the intestacy exemption in s.3(1)(d), the dual-citizen exemption in s.3(1)(e) or the definition of 'foreigner'.",
+          "claim_type": "rule",
+          "supporting_authority_ids": [
+            "AUTH-M001-015",
+            "AUTH-M001-019"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-015",
+              "excerpt": "(2) The provisions of this Act shall be deemed to have come into operation with effect from January 1, 2013.",
+              "locator": "data/processed/canonical-statutes/SRC021-38-2014.json"
+            },
+            {
+              "authority_id": "AUTH-M001-019",
+              "excerpt": "1. This Act may be cited as the Land (Restrictions on Alienation) (Amendment) Act, No. 21 of 2018 and shall be deemed to have come into operation on April 1. 2018.",
+              "locator": "data/processed/canonical-amendments/21-2018.json"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q03-007",
+          "claim_text": "Suresh died on 10 December 1995; Samantha's entitlement as a child arose then, before the Act existed, so the 1995 devolution is not caught by the prohibition on its own terms; the later accretions on Rakitha's (2022) and Muditha's (2023) intestacies occurred under the Act but are likewise devolutions 'by intestacy' to a next of kin within s.3(1)(d).",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M001-015",
+            "AUTH-M001-012"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-015",
+              "excerpt": "(2) The provisions of this Act shall be deemed to have come into operation with effect from January 1, 2013.",
+              "locator": "data/processed/canonical-statutes/SRC021-38-2014.json"
+            },
+            {
+              "authority_id": "AUTH-M001-012",
+              "excerpt": "(d) any land the title of which is transferred by intestacy, gift or testamentary disposition to a next of kin (who is a foreigner) of the owner of such land, in accordance with the applicable law of succession of Sri Lanka;",
+              "locator": "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/retrieval-logs/SRC021.pdftotext.txt"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M001-Q03-008",
+          "claim_text": "Whether Samantha is an heir at all is determined by the law of succession (a legitimate child takes per capita with the other children); the Act does not add a citizenship requirement to heirship.",
+          "claim_type": "application",
+          "supporting_authority_ids": [
+            "AUTH-M001-004",
+            "AUTH-M001-008",
+            "AUTH-M001-012"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-004",
+              "excerpt": "24. Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita, but the children or remoter issue of a deceased child take per stirpes or by representation.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-008",
+              "excerpt": "33. Illegitimate children inherit the property of their intestate mother, but not that of their father or that of the relatives of their mother. Where an illegitimate person leaves no surviving spouse or descendants, his or her property will go to the heirs of the mother, so as to exclude the State.",
+              "locator": "data/processed/canonical-statutes/SRC004-15-1876.json"
+            },
+            {
+              "authority_id": "AUTH-M001-012",
+              "excerpt": "(d) any land the title of which is transferred by intestacy, gift or testamentary disposition to a next of kin (who is a foreigner) of the owner of such land, in accordance with the applicable law of succession of Sri Lanka;",
+              "locator": "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/retrieval-logs/SRC021.pdftotext.txt"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "partially_verified"
+        },
+        {
+          "claim_id": "CL-M001-Q03-009",
+          "claim_text": "Yes: Samantha can become entitled to (her share of) Suresh Perera's intestate estate. The prohibition in s.2(1)(a) on transfers to foreigners does not defeat her because (i) the devolution by intestacy to a next of kin who is a foreigner is expressly exempted by s.3(1)(d), which the 2018 amendment left untouched; (ii) alternatively she is exempt under s.3(1)(e) if she is a dual citizen; and (iii) the 1995 devolution predates the Act's deemed operation. Any later transfer by her of that land remains subject to the Act (s.3(4)), and an alienation in contravention would be void (s.18).",
+          "claim_type": "conclusion",
+          "supporting_authority_ids": [
+            "AUTH-M001-011",
+            "AUTH-M001-012",
+            "AUTH-M001-013",
+            "AUTH-M001-015",
+            "AUTH-M001-019",
+            "AUTH-M001-017",
+            "AUTH-M001-016"
+          ],
+          "supporting_excerpts": [
+            {
+              "authority_id": "AUTH-M001-012",
+              "excerpt": "(d) any land the title of which is transferred by intestacy, gift or testamentary disposition to a next of kin (who is a foreigner) of the owner of such land, in accordance with the applicable law of succession of Sri Lanka;",
+              "locator": "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M001/retrieval-logs/SRC021.pdftotext.txt"
+            },
+            {
+              "authority_id": "AUTH-M001-017",
+              "excerpt": "(4) Where the transfer of title of a land is effected in terms of this section, the provisions of this Act shall also apply to every subsequent transfer of title of such land or part thereof.",
+              "locator": "data/processed/canonical-statutes/SRC021-38-2014.json"
+            },
+            {
+              "authority_id": "AUTH-M001-016",
+              "excerpt": "18. Any alienation of land effected in contravention of the provisions of this Act, shall be void and shall have no effect in law.",
+              "locator": "data/processed/canonical-statutes/SRC021-38-2014.json"
+            }
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "confidence": 0.7,
+      "status": "blocked_source_conflict",
+      "blocking_reason": "Verifier V2: the indispensable authority AUTH-M001-012 (s.3(1)(d)) carries an unresolved source conflict - the canonical tree drops 'the owner of such land, in' at the PDF page 3/4 break; the PDF text layer (re-extracted and cited here) has the full wording. The verifier's assessment is that the conflict does not change the answer (both readings exempt intestate devolution to a foreigner next of kin), but the schema allows no other resolution value and the deterministic gate treats any conflict on an indispensable authority as blocking; closing it needs either a lawyer's sign-off or a corrected canonical tree (outside this verifier's write scope). Lesser points: AUTH-M001-019 is an OCR-derived tree (verifier read the scan; defects recorded as a conflict); Samantha's heirship depends on legitimacy (s.33) and the MRIO text history is unknown."
+    }
+  ]
+}

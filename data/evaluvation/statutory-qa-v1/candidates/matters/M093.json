@@ -1,0 +1,68 @@
+{
+  "benchmark_matter_id": "M093",
+  "source_matter_id": "P14-Q06-M03",
+  "grouping_key": "P14-Q06-M03",
+  "paper_no": 14,
+  "question_no": 6,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Wimal wishes to purchase a portion of a Rubber Estate Situated in Ratnapura. He requests you to attest the Deed.",
+    "normalized": "Wimal wishes to purchase a portion of a Rubber Estate Situated in Ratnapura. He requests you to attest the Deed.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P14-Q06-P03"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M093-Q01",
+      "atomic_id": "P14-Q06-P03",
+      "part_uid": "paper-14/q6/3",
+      "part_id": "3",
+      "item_id": null,
+      "marks": 5,
+      "pdf_page": 58,
+      "question_original": "You are a Notary licensed to practice in Colombo. What steps should you take before drafting the Deed?",
+      "question_normalized": "You are a Notary licensed to practice in Colombo. What steps should you take before drafting the Deed?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Wimal wishes to purchase a portion of a Rubber Estate Situated in Ratnapura. He requests you to attest the Deed.",
+      "effective_background_normalized": "Wimal wishes to purchase a portion of a Rubber Estate Situated in Ratnapura. He requests you to attest the Deed.",
+      "source_quote": "3. Wimal wishes to purchase a portion of a Rubber Estate Situated in Ratnapura. He requests you to attest the Deed. You are a Notary licensed to practice in Colombo. What steps should you take before drafting the Deed?",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": [
+          "role_fact_in_question"
+        ]
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "consideration_or_value",
+        "registration_status",
+        "existing_encumbrance"
+      ]
+    }
+  ],
+  "matter_reference_date": "2019-04",
+  "exam_session": "APRIL 2019",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

@@ -1,0 +1,120 @@
+{
+  "benchmark_matter_id": "M055",
+  "verifier": "verifier-M055",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:49:53Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M055-001",
+      "decision": "verified",
+      "note": "s 39 checked verbatim; it is the gate that makes a non-compliant disposition void, as the map claims."
+    },
+    {
+      "provision_id": "PROV-M055-002",
+      "decision": "verified",
+      "note": "s 46 checked verbatim, proviso included; the proviso is unqualified as to who holds the life interest, so on its face it covers a life interest reserved by the donor."
+    },
+    {
+      "provision_id": "PROV-M055-003",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim but begins mid-sentence and drops the operative opening qualifier 'Except in accordance with the provisions of this Act,'; I checked that qualifier and it does not save this gift, because the only co-ownership the Act itself creates arises from a determination of the Commissioner of Title Settlement under s 14(d) at initial registration, with a Manager under ss 15 and 16, not from an instrument between parties."
+    },
+    {
+      "provision_id": "PROV-M055-004",
+      "decision": "verified",
+      "note": "s 47 checked verbatim; it does bar any dealing with part of a First Class Title parcel before a registered sub-division."
+    },
+    {
+      "provision_id": "PROV-M055-005",
+      "decision": "verified",
+      "note": "s 36(1) checked verbatim and the subsection is correctly recorded; ss 36(2) to (6) confirm the application, survey and registration steps the answer describes."
+    },
+    {
+      "provision_id": "PROV-M055-006",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim, but the corpus body of s 75 has lost the defined-term labels and carries an OCR error ('Jess' for 'less'), so the quoted text reads as two run-on definitions; attributing the first to 'instrument' and the second to 'interest in land parcel' is an inference from the section's recorded defined_terms order, corroborated by defs 21-1998 resolving both terms to s 75 and by the use of 'instrument' in ss 43, 46 and 48."
+    },
+    {
+      "provision_id": "PROV-M055-007",
+      "decision": "verified",
+      "note": "s 43(1) and (2) checked verbatim; the supporting role is right, since the form requirement goes to how the gift is executed rather than to whether it can be made."
+    },
+    {
+      "provision_id": "PROV-M055-008",
+      "decision": "verified",
+      "note": "s 49 checked verbatim."
+    },
+    {
+      "provision_id": "PROV-M055-009",
+      "decision": "verified",
+      "note": "s 38 checked verbatim."
+    },
+    {
+      "provision_id": "PROV-M055-010",
+      "decision": "verified",
+      "note": "s 45(3) checked verbatim and the subsection is correctly recorded."
+    },
+    {
+      "provision_id": "PROV-M055-011",
+      "decision": "verified",
+      "note": "s 4 checked verbatim; background role is right."
+    },
+    {
+      "provision_id": "PROV-M055-012",
+      "decision": "verified",
+      "note": "s 73 checked verbatim; the excerpt is the first limb of the section and the second limb is to the same effect."
+    },
+    {
+      "provision_id": "PROV-M055-013",
+      "decision": "verified",
+      "note": "s 54(2) checked verbatim; background role is right, and it is also the corpus source of the 'prescribed minimum extent' language the answer uses."
+    },
+    {
+      "provision_id": "PROV-M055-014",
+      "decision": "verified",
+      "note": "s 70(1) checked verbatim; the background caveat role is right."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M055-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "All fourteen excerpts pass check. No indispensable provision is rejected or unresolved, so the question stays proposed_gold; the two partially_verified entries (the truncated s 48 excerpt and the label-stripped s 75 definitions) are recording defects, not defects in the legal position, and the substance of each is confirmed elsewhere in the corpus. I ran edges on ss 36, 39, 46, 47 and 48 and defs on both defined terms: the only outgoing links are to the s 75 definitions and the only incoming links are from the Apartment Ownership Law, which these facts do not engage. Hunting for a missed route I read ss 14 to 16, 20, 24, 28, 32, 40, 42, 44, 56 and 63 and found none: s 63 disapplies the Partition Act, s 56 covers transmission by court order rather than by gift, and s 20 operates on the Commissioner's determination at initial registration. The hop count of 3 is left as proposed; the chain (s 39 with the s 75 definitions, then ss 46 and 48 applied to the single deed, then s 47 with s 36) is real, though a two-mark examiner answer would probably stop at ss 46 and 48. No case law is cited."
+    }
+  ],
+  "disagreements": [],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M055-Q01-012 attributes both limbs of its hedge, 'the prescribed extent' and the minimum economic unit declaration, to s 70 (PROV-M055-014). s 70 supports only the second limb; the 'prescribed minimum extent of a land parcel' wording is in s 54(2) (PROV-M055-013) and s 24(a). The claim reaches no conclusion, so it is left verified, but a lawyer may want PROV-M055-013 added to its supporting provisions.",
+      "CL-M055-Q01-002 reads the two s 75 definitions off a corpus body from which the defined-term labels have been stripped. The proposition is right on the face of the Act, but its support in this corpus is inferential rather than direct."
+    ],
+    "temporal_issues": [
+      "The corpus holds the Registration of Title Act only as edition original_or_unconfirmed_consolidation, in force from 1998, with no amendment_events, and no Registration of Title (Amendment) Act appears in acts. The whole answer depends on the 1998 wording of ss 36, 46, 47 and 48 still being the wording in force in October 2021, which cannot be confirmed from this corpus. The researcher recorded this as a corpus gap and I confirm it."
+    ],
+    "missing_definitions_or_exceptions": [
+      "The s 48 excerpt drops the opening exception 'Except in accordance with the provisions of this Act,'; recorded on PROV-M055-003. I tested the candidate exception the researcher flagged, registration as co-owners under s 14(d) with a Manager under ss 15 and 16, and it does not apply, because it turns on a determination of the Commissioner of Title Settlement during initial registration rather than on an instrument executed by a registered owner.",
+      "s 24(a) is a second corpus source for the prescribed minimum extent limit on divided portions and is absent from the map. It is not indispensable, since it governs District Court orders during initial registration, but it corroborates the s 70 caveat.",
+      "The prescribed form of instrument under s 43, the prescribed minimum extent under the s 67 regulations, and any s 70 Gazette notice are all outside the corpus, as the map's corpus_gaps state."
+    ],
+    "case_law_dependence": [
+      "None. The answer cites no case law and none is indispensable: ss 46 and 48 decide both halves of the question in terms, and s 73 displaces any competing written law. Roman-Dutch doctrine on donation and usufruct would only be reached if the Act were silent, and it is not."
+    ],
+    "enrichment_issues": [
+      "The enriched background uses the Act's own terms, 'First Class Title of Absolute Ownership' and 'the Registrar of Title', and states that no sub-division application has been made, which comes close to signposting ss 47 and 36. It names no section and states no conclusion, and the class of title is genuinely decisive for s 47, so I have not downgraded the question; a lawyer should decide whether to keep the statutory phrase or reword it as 'the register records him as sole absolute owner'.",
+      "FACT-M055-Q01-004 ('undivided equal half shares under one deed of gift') supplies the fact the answer turns on and tracks s 48's 'in common'. It is marked synthetic_decisive with a counterfactual, and the original two-mark question cannot be answered without resolving that ambiguity, so it reads as justified rather than as a leak.",
+      "All five added facts carry a reason and a counterfactual_effect, and the two synthetic_neutral facts (location and extent, the daughters' names and ages) do not change the legal issue."
+    ],
+    "duplicate_or_leak_issues": [
+      "No provision is listed in more than one role, the fourteen provision ids and fourteen claim ids are unique, and every id referenced in indispensable, supporting and background lists, reasoning_edges and activates_provision_ids exists in the provisions array."
+    ]
+  },
+  "lawyer_questions": [
+    "Was the Registration of Title Act No. 21 of 1998 amended between 1998 and October 2021 in any way touching ss 36, 46, 47 or 48? The corpus holds no amending Act and records no amendment events, and the entire answer rests on the 1998 wording of those four sections.",
+    "Does the proviso to s 46 cover a life interest reserved by the donor to himself as well as one granted to a third party? The map reads it as covering both, and the proviso is unqualified, but the Act does not spell the point out.",
+    "Would a gift to two donees expressed as a joint holding rather than a holding 'in common' be treated any differently? The heading of s 48, 'Instrument conferring co-ownership invalid', suggests not, but the operative words are limited to 'in common'.",
+    "Is a hop count of 3 right for a two-mark question, or should the map be trimmed to the ss 46 and 48 answer the examiner most likely wanted?"
+  ]
+}

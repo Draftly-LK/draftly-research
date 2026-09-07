@@ -1,0 +1,788 @@
+{
+  "benchmark_matter_id": "M043",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M043",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:25:57Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2022-10",
+  "matter_reference_date_basis": "exam_session 'OCTOBER 2022' recorded in candidates/matters/M043.json. The latest event in the scenario is Rikitha's death on 02.08.2016, so every provision relied on must be in force by October 2022 and, for each devolution, at the relevant date of death.",
+  "corpus_gaps": [
+    "No provision in the corpus states the effect of a deed of gift that conveys the dominium absolutely and irrevocably while reserving life interests to the donor and a third party, or the extinction of such a life interest on the life tenant's death. That is Roman-Dutch common law, reached through s.36 of the Ordinance but not itself in the corpus, and it is what makes Nihal's 2003 intestacy pass nothing in Lot 5.",
+    "The Partition Law No. 21 of 1977 is not in the corpus, so the conclusiveness of the final decree in Partition Case No. 516/P as the root of Nihal Gamage's title cannot be supported from a corpus provision.",
+    "Section 25 of the Ordinance says that the full siblings and the qualifying half-siblings take the other half but does not say in what proportions among themselves. The draft resolves this by s.30, per capita, all being equally near in degree; s.27 supplies a competing proportional rule and s.36 sends the residue to Roman-Dutch law. No corpus provision decides which controls.",
+    "Whether Anusha, the mother of Nikitha and Rikitha, survived Rikitha's death on 02.08.2016 is not stated. This is an open scenario fact rather than a corpus gap, but it selects between s.25 and ss.26-27 for Rikitha's estate and the verifier must resolve it.",
+    "Nothing was found in the corpus on the succession consequences of a testamentary case being terminated, as District Court of Kaduwela Case No. 1052/2006/T was on 27.11.2007. Civil Procedure Code s.526 is recorded as background only."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M043-001",
+      "section_id": "15-1876/s20",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "20",
+      "subsection": null,
+      "relevant_excerpt": "shall apply to the estates of such persons only as shall die after the proclamation of this Ordinance",
+      "why_relevant": "Fixes the temporal reach of Part III. Every death in this matter (2003, 2006, 2010, 2016) is long after the proclamation of the Ordinance, so the Part III intestacy rules govern each estate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1876 and no amendment event for this section; the text is therefore in force at the matter reference date 2022-10 and at every death in the scenario (2003, 2006, 2010, 2016).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M043-002",
+      "section_id": "15-1876/s21",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "21",
+      "subsection": "(1)",
+      "relevant_excerpt": "Inheritance ab interstate to the immovable property in Sri Lanka of a person deceased shall be governed and regulated by the following provisions of this Ordinance",
+      "why_relevant": "Lot 5 at Battaramulla is immovable property in Sri Lanka, so each intestate devolution of an interest in it is governed by Part III of this Ordinance rather than by the law of any domicile.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1876 and no amendment event for this section; the text is therefore in force at the matter reference date 2022-10 and at every death in the scenario (2003, 2006, 2010, 2016).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M043-003",
+      "section_id": "15-1876/s22",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "22",
+      "subsection": null,
+      "relevant_excerpt": "When any person shall die intestate as to any of his or her property, leaving a spouse surviving, the surviving spouse shall inherit one-half of the property of such person.",
+      "why_relevant": "Gives Sanatha one-half of Rikitha's interest on her intestate death in 2016. It also explains why no spouse share arises out of Piyal's estate (he died unmarried) or Kanthi's estate (her husband predeceased her).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1876 and no amendment event for this section; the text is therefore in force at the matter reference date 2022-10 and at every death in the scenario (2003, 2006, 2010, 2016).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M043-004",
+      "section_id": "15-1876/s23",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "23",
+      "subsection": null,
+      "relevant_excerpt": "the right of inheritance is divided in the following order as respects (a) descendants, (b) ascendants, (c) collaterals",
+      "why_relevant": "Sets the order in which each estate in the chain is worked out: descendants first, then ascendants, then collaterals, always subject to the surviving spouse's half.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1876 and no amendment event for this section; the text is therefore in force at the matter reference date 2022-10 and at every death in the scenario (2003, 2006, 2010, 2016).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M043-005",
+      "section_id": "15-1876/s24",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "24",
+      "subsection": null,
+      "relevant_excerpt": "Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita, but the children or remoter issue of a deceased child take per stirpes or by representation.",
+      "why_relevant": "Governs Kanthi Gamage's intestacy in 2010: her surviving children Aruna and Leela take her estate equally per capita, and Piyal leaves no issue to represent him. Nikitha and Rikitha are not her children and take nothing from her.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1876 and no amendment event for this section; the text is therefore in force at the matter reference date 2022-10 and at every death in the scenario (2003, 2006, 2010, 2016).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M043-006",
+      "section_id": "15-1876/s25",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "25",
+      "subsection": null,
+      "relevant_excerpt": "if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half.",
+      "why_relevant": "Governs Piyal Gamage's intestacy in 2006: he left no descendants, his father Nihal had predeceased him and his mother Kanthi survived, so Kanthi takes half and the other half goes to his full sisters Aruna and Leela together with his paternal half-sisters Nikitha and Rikitha, who are related to him through the deceased parent.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1876 and no amendment event for this section; the text is therefore in force at the matter reference date 2022-10 and at every death in the scenario (2003, 2006, 2010, 2016).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M043-007",
+      "section_id": "15-1876/s26",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "26",
+      "subsection": null,
+      "relevant_excerpt": "Father and mother both failing, the property of the intestate goes to his brothers and sisters, whether of the whole or balf-blood, and their children and other issue by representation.",
+      "why_relevant": "Governs the collateral half of Rikitha's intestacy in 2016 on the footing that neither of her parents survived her: her sister Nikitha and her paternal half-sisters Aruna and Leela take. The word 'balf-blood' is the corpus text and is plainly a rendering of 'half-blood'.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1876 and no amendment event for this section; the text is therefore in force at the matter reference date 2022-10 and at every death in the scenario (2003, 2006, 2010, 2016).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M043-008",
+      "section_id": "15-1876/s27",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "27",
+      "subsection": null,
+      "relevant_excerpt": "if there are only half-brothers and sisters or such issue of one side, the full brothers and sisters and the issue of deceased full brothers and sisters by representation, take then in the first place one-half of the property, and divide the other half with the half-brothers and sisters and their issue by representation.",
+      "why_relevant": "Fixes the proportions when Rikitha's collateral share is divided: her full sister Nikitha takes the first half of it and then shares the remaining half with the paternal half-sisters Aruna and Leela, there being half-blood on the father's side only.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1876 and no amendment event for this section; the text is therefore in force at the matter reference date 2022-10 and at every death in the scenario (2003, 2006, 2010, 2016).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M043-009",
+      "section_id": "15-1876/s30",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "30",
+      "subsection": null,
+      "relevant_excerpt": "if all those who succeed to the inheritance are equally near in degree to the intestate, they take per capita, and not per stirpes",
+      "why_relevant": "Supplies the mode of division of the sibling half under section 25, which section 25 itself leaves unallocated: Aruna, Leela, Nikitha and Rikitha are all in the same degree to Piyal and therefore take that half in equal per capita shares.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1876 and no amendment event for this section; the text is therefore in force at the matter reference date 2022-10 and at every death in the scenario (2003, 2006, 2010, 2016).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M043-010",
+      "section_id": "15-1876/s36",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "36",
+      "subsection": null,
+      "relevant_excerpt": "In all questions relating to the distribution of the property of an intestate, if the present Ordinance is silent, the rules of the Roman-Dutch law as it prevailed in North Holland are to govern and be followed.",
+      "why_relevant": "The Ordinance is the express route by which non-statutory Roman-Dutch law enters this matter. It is what carries the parts of the pedigree the corpus cannot supply: the effect of a donation reserving life interests, and the internal allocation of the sibling half under section 25 if section 30 is not accepted as the answer.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1876 and no amendment event for this section; the text is therefore in force at the matter reference date 2022-10 and at every death in the scenario (2003, 2006, 2010, 2016).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M043-011",
+      "section_id": "15-1876/s3",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "3",
+      "subsection": "definition of \"unmarried\"",
+      "relevant_excerpt": "means not having a husband or wife living",
+      "why_relevant": "Defines the term on which the absence of a spouse share out of Piyal's estate turns: he is stated to have died unmarried, so no one takes the surviving spouse's half under section 22 out of his estate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1876 and no amendment event for this section; the text is therefore in force at the matter reference date 2022-10 and at every death in the scenario (2003, 2006, 2010, 2016).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M043-012",
+      "section_id": "2-1889/s526",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "526",
+      "subsection": null,
+      "relevant_excerpt": "any heir of the deceased may apply for the issue of certificates of heir ship to each of the heirs entitled to succeed to the estate of the deceased",
+      "why_relevant": "Background only. It explains the testamentary proceedings in District Court of Kaduwela Case No. 1052/2006/T in which letters of administration to Piyal's estate issued to Kanthi. Administration does not alter who the heirs are; the shares are fixed by Part III of the Ordinance, not by the grant.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus records in_force_from_year 1889 with an amendment event in 1993 (Act No. 14 of 1993 s.4). The consolidated text is in force at the matter reference date 2022-10 and at the 2006 grant.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M043-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The three intestacies are governed by Part III of the Matrimonial Rights and Inheritance Ordinance, which is in the corpus. But the root of the pedigree is not. Two things the answer cannot do without are outside the corpus: (a) the effect of Deed of Gift No. 663, which conveyed the dominium of Lot 5 to Piyal absolutely and irrevocably while reserving life interests to Nihal and Kanthi, and the extinction of each life interest on the death of that life tenant, are matters of Roman-Dutch common law of donation and usufruct, on which no corpus provision speaks; and (b) the conclusiveness of the final decree in Partition Case No. 516/P as the root of Nihal's title rests on the Partition Law No. 21 of 1977, which is not in the corpus. Section 36 of the Ordinance itself directs such silences to Roman-Dutch law. The answer is therefore mixed_statute_and_case and cannot be offered as statute_only.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M043-Q01-01",
+          "issue": "Whether Nihal Gamage retained any inheritable interest in Lot 5 after Deed of Gift No. 663 of 21.11.2002, or only a life interest that ended with his death on 28.04.2003, so that his intestacy passes nothing in this land.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M043-Q01-02",
+          "issue": "How the dominium of Lot 5 held by Piyal Gamage, subject to the two life interests, devolved on his intestate death on 02.08.2006 unmarried and issueless, leaving a surviving mother, two full sisters and two paternal half-sisters.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M043-Q01-03",
+          "issue": "How the share Kanthi Gamage took out of Piyal's estate devolved on her intestate death on 17.03.2010, and the effect of the extinction of her reserved life interest on that date.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M043-Q01-04",
+          "issue": "How Rikitha's share devolved on her intestate death on 02.08.2016 leaving a husband, Sanatha, but no children, and whether her mother Anusha survived her.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M043-002",
+        "PROV-M043-003",
+        "PROV-M043-004",
+        "PROV-M043-005",
+        "PROV-M043-006",
+        "PROV-M043-007",
+        "PROV-M043-008",
+        "PROV-M043-009",
+        "PROV-M043-011"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M043-001",
+        "PROV-M043-010"
+      ],
+      "background_provision_ids": [
+        "PROV-M043-012"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four necessary linked steps, each an indispensable dependency and each written as a reasoning edge: s.21 with s.20 to bring the land under Part III; s.23 with s.24 to exclude the descendant class and, for Kanthi's estate, to distribute it; s.25 read with s.30 to split Piyal's estate between the surviving parent and the sibling class; and s.22 read with s.3, s.26 and s.27 to split Rikitha's estate between her husband and the full and half-blood collaterals. Counting only indispensable dependencies, this is a four-hop chain within one enactment.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M043-002",
+          "to_provision_id": "PROV-M043-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M043-004",
+          "to_provision_id": "PROV-M043-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M043-004",
+          "to_provision_id": "PROV-M043-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M043-009",
+          "to_provision_id": "PROV-M043-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M043-011",
+          "to_provision_id": "PROV-M043-003",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M043-003",
+          "to_provision_id": "PROV-M043-007",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M043-008",
+          "to_provision_id": "PROV-M043-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M043-001",
+          "to_provision_id": "PROV-M043-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M043-010",
+          "to_provision_id": "PROV-M043-006",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a Final Decree dated 07.09.1999 entered in the Partition Case bearing No. 516/P of the District Court of Kaduwela, all that allotment land marked Lot 5 depicted in Partition Plan No. 1100 dated 06.05.1997 made by W.P. Gunaratne Licensed Surveyor of the land called Delgahawatta bearing Assessment No. 3A, Sarasavi Lane situated at Battaramulla 30 perches in extent was allotted to one Nihal Gamage. The said Nihal Gamage upon Deed of Gift No. 663 dated 21.11.2002 attested by Athula De Silva Notary Public of Colombo, gifted the said Lot 5 in the said Plan No.1100 unto his son, Piyal Gamage as an absolute and irrevocable gift subject to the life interests of the Donor and his wife Kanthi Gamage. Thereafter, Nihal Gamage died intestate on 28.04.2003 leaving as his intestate legal heirs his wife Kanthi Gamage, his 3 children by their marriage, namely, Piyal, Aruna, Leela and 2 children by his previous marriage to Anusha, namely Nikitha and Rikitha. Piyal Gamage died intestate on 02.08.2006 unmarried and issueless and his estate was administered and letters of Administration was issued to his mother Kanthi Gamage in the District Court of Kaduwela Case No.1052/2006/T. The proceedings were terminated on 27.11.2007. Kanthi Gamage met with an accident and died intestate on 17.03.2010. Rikitha married to Sanatha and died intestate on 02.08.2016 without having children.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "The pedigree has to trace Lot 5 from Nihal Gamage, who took it under the final decree in Partition Case No. 516/P, through Deed of Gift No. 663 and then through three successive intestacies - Piyal in 2006, Kanthi in 2010 and Rikitha in 2016 - to the persons who hold the land today. The questions are what Nihal was left with after the gift, who took Piyal's dominium, who took Kanthi's share once her life interest fell in, and who took Rikitha's share.",
+        "rule": "Inheritance ab intestato to immovable property in Sri Lanka is governed by Part III of the Matrimonial Rights and Inheritance Ordinance, s.21(1), which applies to the estate of anyone dying after its proclamation, s.20. Subject to the surviving spouse's one-half under s.22, the order of succession is descendants, then ascendants, then collaterals, s.23. Children are preferent to all others and take equally per capita, with the issue of a deceased child taking per stirpes, s.24. Where descendants fail and only one parent survives, that parent takes half and the other half goes to the full brothers and sisters and to the half-brothers and sisters related to the intestate through the deceased parent, s.25; those siblings being equally near in degree take that half per capita, s.30. Where both parents fail, the estate goes to the brothers and sisters, whole or half-blood, s.26, and where the half-blood is on one side only the full siblings take the first half and share the remaining half with the half-blood, s.27. 'Unmarried' means not having a husband or wife living, s.3, so no s.22 share arises out of the estate of a person who dies unmarried. Where the Ordinance is silent the Roman-Dutch law of North Holland governs, s.36; that is the source of the rules on a donation reserving a life interest, which the statutes do not address.",
+        "application": "The final decree of 07.09.1999 vested Lot 5 in Nihal Gamage. By Deed of Gift No. 663 of 21.11.2002 he gifted the lot to his son Piyal absolutely and irrevocably, reserving life interests to himself and to his wife Kanthi. The dominium therefore passed to Piyal in 2002; what Nihal kept was a life interest, which is not an inheritable interest and fell in on his death on 28.04.2003. Nihal's intestacy in 2003 accordingly passes nothing in Lot 5, and his heirs take in this land only through the later intestacies. Kanthi's life interest continued after 2003 and burdened Piyal's dominium. Piyal died intestate on 02.08.2006 unmarried and issueless. Having no spouse (s.3, s.22) and no descendants (s.24), s.25 applies: his father Nihal had predeceased him, his mother Kanthi survived, so Kanthi takes half of the dominium and the other half goes to his full sisters Aruna and Leela and to his paternal half-sisters Nikitha and Rikitha, who are related to him through the deceased parent, in equal per capita shares under s.30. The letters of administration issued to Kanthi in District Court of Kaduwela Case No. 1052/2006/T, terminated on 27.11.2007, administered that estate but did not alter the devolution, Civil Procedure Code s.526. Kanthi died intestate on 17.03.2010; her life interest was extinguished on that date and the land became unencumbered, and the half she had inherited from Piyal passed under s.24 to her surviving children Aruna and Leela, Piyal having died before her without issue to represent him. Nikitha and Rikitha are not Kanthi's children and take nothing out of her estate. Rikitha married Sanatha and died intestate on 02.08.2016 without children. Her husband takes one-half of her share under s.22. The background does not say that Anusha survived; proceeding on the footing that neither parent survived Rikitha, the other half of her share goes under s.26 to her sister Nikitha and her paternal half-sisters Aruna and Leela, divided in the s.27 proportions because the half-blood is on the father's side only: Nikitha takes the first half of that collateral portion and shares the remainder with Aruna and Leela.",
+        "conclusion": "The pedigree runs: Nihal Gamage under the final decree of 07.09.1999; Deed of Gift No. 663 of 21.11.2002 to Piyal Gamage subject to the life interests of Nihal and Kanthi, so that Nihal's death on 28.04.2003 carried nothing in Lot 5; Piyal's intestate death on 02.08.2006 dividing his dominium as to one-half to his mother Kanthi and one-half equally among Aruna, Leela, Nikitha and Rikitha; Kanthi's intestate death on 17.03.2010 extinguishing her life interest and passing her half equally to Aruna and Leela; and Rikitha's intestate death on 02.08.2016 passing one-half of her share to her husband Sanatha and the other half to Nikitha, Aruna and Leela. The present owners are therefore Aruna, Leela, Nikitha and Sanatha. Two points remain open: whether Anusha survived Rikitha, and whether the sibling half under s.25 is divided per capita under s.30 or in the s.27 proportions."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M043-Q01-001",
+          "claim_text": "Intestate succession to Lot 5, being immovable property in Sri Lanka, is governed by Part III of the Matrimonial Rights and Inheritance Ordinance, which applies to the estate of any person dying after its proclamation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-002",
+            "PROV-M043-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-002",
+          "claim_text": "Subject to the surviving spouse's one-half, the right of inheritance devolves in the order descendants, ascendants, collaterals.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-004",
+            "PROV-M043-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-003",
+          "claim_text": "Where the Ordinance is silent on a question of distribution, the Roman-Dutch law of North Holland governs; the corpus contains no provision on the effect of a donation reserving a life interest.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-004",
+          "claim_text": "Under Deed of Gift No. 663 the dominium of Lot 5 passed to Piyal Gamage in 2002 and Nihal retained only a life interest, so Nihal's intestate death on 28.04.2003 devolved no interest in Lot 5 on his heirs.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M043-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "BG-3"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-005",
+          "claim_text": "Piyal died unmarried within the meaning of the Ordinance and left no descendants, so neither the surviving spouse's half nor the preferential right of children arises out of his estate.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M043-011",
+            "PROV-M043-003",
+            "PROV-M043-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-006",
+          "claim_text": "Where descendants fail and only one parent survives, the surviving parent takes half and the full siblings together with the half-siblings related through the deceased parent take the other half.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-007",
+          "claim_text": "Siblings who are all equally near in degree to the intestate take per capita and not per stirpes.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-008",
+          "claim_text": "On Piyal's death Kanthi took one-half of his dominium as surviving parent, and Aruna, Leela, Nikitha and Rikitha took the other half in equal per capita shares.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M043-006",
+            "PROV-M043-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-009",
+          "claim_text": "The grant of letters of administration to Kanthi in the testamentary case did not alter who succeeded to Piyal's estate.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M043-012"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-010",
+          "claim_text": "Children are preferent to all others in the estate of a parent and take equally per capita, the issue of a deceased child taking by representation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-011",
+          "claim_text": "On Kanthi's death her life interest was extinguished and the half she had inherited from Piyal passed equally to her surviving children Aruna and Leela, Piyal having predeceased her without issue and Nikitha and Rikitha not being her children.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M043-005",
+            "PROV-M043-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-5"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-012",
+          "claim_text": "A surviving spouse inherits one-half of the property of a person dying intestate, so Sanatha took one-half of Rikitha's share.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-6"
+          ],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-013",
+          "claim_text": "Both parents failing, the estate goes to the brothers and sisters of the whole or half-blood, and where the half-blood is on one side only the full siblings take the first half and share the remainder with the half-blood.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-007",
+            "PROV-M043-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-014",
+          "claim_text": "On the footing that neither of Rikitha's parents survived her, the other half of her share passed to her full sister Nikitha and her paternal half-sisters Aruna and Leela in the proportions fixed by section 27.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M043-007",
+            "PROV-M043-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q01-015",
+          "claim_text": "The pedigree therefore ends with Aruna, Leela, Nikitha and Sanatha as the present owners of Lot 5, the land being free of both reserved life interests since 17.03.2010.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M043-005",
+            "PROV-M043-006",
+            "PROV-M043-003",
+            "PROV-M043-007"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-4",
+            "BG-5",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "Reserved, not blocked on a defect in the research. Two reasons. First, authority: the effect of the deed of gift reserving life interests, and the conclusiveness of the partition final decree, are Roman-Dutch law and Partition Law points that the corpus does not carry, so the map is mixed_statute_and_case. Second, one open fact and one open construction. The background never says whether Anusha, the mother of Nikitha and Rikitha, survived Rikitha's death on 02.08.2016; the draft proceeds on the footing that she did not, which engages section 26 and section 27. If Anusha survived, section 25 applies to Rikitha's estate instead and Anusha takes 1/32 of the land, with Nikitha, Aruna and Leela taking 1/96 each. The construction point is how the sibling half under section 25 is divided among full and paternal half-siblings: the draft applies section 30 per capita; on the competing reading section 27 proportions apply to that half, which would give Aruna and Leela 3/16 each and Nikitha and Rikitha 1/16 each out of Piyal's estate and change every downstream figure. A lawyer should settle both before this is treated as gold.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M043-Q02",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The three intestacies are governed by Part III of the Matrimonial Rights and Inheritance Ordinance, which is in the corpus. But the root of the pedigree is not. Two things the answer cannot do without are outside the corpus: (a) the effect of Deed of Gift No. 663, which conveyed the dominium of Lot 5 to Piyal absolutely and irrevocably while reserving life interests to Nihal and Kanthi, and the extinction of each life interest on the death of that life tenant, are matters of Roman-Dutch common law of donation and usufruct, on which no corpus provision speaks; and (b) the conclusiveness of the final decree in Partition Case No. 516/P as the root of Nihal's title rests on the Partition Law No. 21 of 1977, which is not in the corpus. Section 36 of the Ordinance itself directs such silences to Roman-Dutch law. The answer is therefore mixed_statute_and_case and cannot be offered as statute_only.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M043-Q02-01",
+          "issue": "What fraction of Lot 5 each of Aruna, Leela, Nikitha and Sanatha holds today, after the intestacies of Piyal in 2006, Kanthi in 2010 and Rikitha in 2016.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M043-Q02-02",
+          "issue": "Whether the half of Piyal's estate that goes to his siblings under section 25 is divided per capita under section 30 or in the section 27 proportions between full and paternal half-blood.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M043-Q02-03",
+          "issue": "Whether Anusha survived Rikitha, which determines whether section 25 or sections 26 and 27 govern the collateral half of Rikitha's share.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M043-002",
+        "PROV-M043-003",
+        "PROV-M043-004",
+        "PROV-M043-005",
+        "PROV-M043-006",
+        "PROV-M043-007",
+        "PROV-M043-008",
+        "PROV-M043-009",
+        "PROV-M043-011"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M043-001",
+        "PROV-M043-010"
+      ],
+      "background_provision_ids": [
+        "PROV-M043-012"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four necessary linked steps, each an indispensable dependency and each written as a reasoning edge: s.21 with s.20 to bring the land under Part III; s.23 with s.24 to exclude the descendant class and, for Kanthi's estate, to distribute it; s.25 read with s.30 to split Piyal's estate between the surviving parent and the sibling class; and s.22 read with s.3, s.26 and s.27 to split Rikitha's estate between her husband and the full and half-blood collaterals. Counting only indispensable dependencies, this is a four-hop chain within one enactment.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M043-002",
+          "to_provision_id": "PROV-M043-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M043-004",
+          "to_provision_id": "PROV-M043-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M043-004",
+          "to_provision_id": "PROV-M043-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M043-009",
+          "to_provision_id": "PROV-M043-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M043-011",
+          "to_provision_id": "PROV-M043-003",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M043-003",
+          "to_provision_id": "PROV-M043-007",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M043-008",
+          "to_provision_id": "PROV-M043-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M043-001",
+          "to_provision_id": "PROV-M043-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M043-010",
+          "to_provision_id": "PROV-M043-006",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a Final Decree dated 07.09.1999 entered in the Partition Case bearing No. 516/P of the District Court of Kaduwela, all that allotment land marked Lot 5 depicted in Partition Plan No. 1100 dated 06.05.1997 made by W.P. Gunaratne Licensed Surveyor of the land called Delgahawatta bearing Assessment No. 3A, Sarasavi Lane situated at Battaramulla 30 perches in extent was allotted to one Nihal Gamage. The said Nihal Gamage upon Deed of Gift No. 663 dated 21.11.2002 attested by Athula De Silva Notary Public of Colombo, gifted the said Lot 5 in the said Plan No.1100 unto his son, Piyal Gamage as an absolute and irrevocable gift subject to the life interests of the Donor and his wife Kanthi Gamage. Thereafter, Nihal Gamage died intestate on 28.04.2003 leaving as his intestate legal heirs his wife Kanthi Gamage, his 3 children by their marriage, namely, Piyal, Aruna, Leela and 2 children by his previous marriage to Anusha, namely Nikitha and Rikitha. Piyal Gamage died intestate on 02.08.2006 unmarried and issueless and his estate was administered and letters of Administration was issued to his mother Kanthi Gamage in the District Court of Kaduwela Case No.1052/2006/T. The proceedings were terminated on 27.11.2007. Kanthi Gamage met with an accident and died intestate on 17.03.2010. Rikitha married to Sanatha and died intestate on 02.08.2016 without having children.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What fraction of Lot 5, 30 perches in extent, is presently owned by each heir, given that Nihal parted with the dominium by Deed of Gift No. 663 in 2002 and that Piyal, Kanthi and Rikitha each died intestate thereafter.",
+        "rule": "The same Part III rules govern each computation. Inheritance to immovable property in Sri Lanka is regulated by the Ordinance, s.21(1), for estates of persons dying after its proclamation, s.20. A surviving spouse takes one-half, s.22; 'unmarried' means not having a husband or wife living, s.3. Subject to that half the order is descendants, ascendants, collaterals, s.23. Children take equally per capita, issue of a deceased child by representation, s.24. Descendants failing and one parent surviving, that parent takes half and the full siblings and the half-siblings related through the deceased parent take the other half, s.25, which they take per capita being equally near in degree, s.30. Both parents failing, the siblings of whole and half-blood take, s.26; the half-blood being on one side only, the full siblings take the first half and divide the remainder with the half-blood, s.27. Where the Ordinance is silent the Roman-Dutch law of North Holland applies, s.36, which is what governs the reserved life interests.",
+        "application": "Take the whole of Lot 5 as 1. Piyal held the entire dominium from 21.11.2002, subject to the life interests. On his death on 02.08.2006 without spouse or descendants (s.3, s.22, s.24), s.25 gives Kanthi as surviving parent 1/2, and the remaining 1/2 is shared per capita under s.30 by Aruna, Leela, Nikitha and Rikitha, so each of the four takes 1/8. On Kanthi's death on 17.03.2010 her life interest ended and her 1/2 passed under s.24 to her surviving children Aruna and Leela, 1/4 each; Nikitha and Rikitha take nothing out of her estate. Holdings then stood at Aruna 3/8, Leela 3/8, Nikitha 1/8 and Rikitha 1/8. On Rikitha's death on 02.08.2016 her husband Sanatha took 1/2 of her 1/8, that is 1/16, under s.22. On the footing that neither of her parents survived her, the other 1/16 passed under s.26 to her full sister Nikitha and her paternal half-sisters Aruna and Leela, divided under s.27: Nikitha takes the first half of it, 1/32, and the remaining 1/32 is divided among Nikitha, Aruna and Leela, 1/96 each. Nikitha therefore adds 1/32 plus 1/96, which is 1/24, and Aruna and Leela add 1/96 each.",
+        "conclusion": "On the reading adopted, Aruna owns 37/96, Leela owns 37/96, Nikitha owns 1/6 or 16/96, and Sanatha owns 1/16 or 6/96, of Lot 5; the four fractions total 96/96. Against the 30 perch extent that is 11.5625 perches each to Aruna and Leela, 5 perches to Nikitha and 1.875 perches to Sanatha, and the land is free of both life interests since 17.03.2010. Two alternatives must be resolved before these figures are treated as settled: if the sibling half of Piyal's estate is divided in the section 27 proportions rather than per capita under section 30, every figure changes; and if Anusha survived Rikitha, section 25 applies to Rikitha's estate and Anusha takes 1/32 with Nikitha, Aruna and Leela taking 1/96 each."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M043-Q02-001",
+          "claim_text": "Inheritance ab intestato to Lot 5 is governed by Part III of the Ordinance, which applies to the estates of persons dying after its proclamation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-002",
+            "PROV-M043-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q02-002",
+          "claim_text": "Piyal held the entire dominium of Lot 5 from the date of Deed of Gift No. 663, subject only to the two reserved life interests, so it is his interest and not Nihal's that is distributed on the 2006 intestacy.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M043-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-3"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q02-003",
+          "claim_text": "Piyal died unmarried and issueless, so no spouse's half and no children's share arises out of his estate.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M043-011",
+            "PROV-M043-003",
+            "PROV-M043-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q02-004",
+          "claim_text": "Descendants failing and only the mother surviving, the surviving parent takes half and the full and paternal half-siblings take the other half.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-006",
+            "PROV-M043-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q02-005",
+          "claim_text": "Siblings equally near in degree take that half per capita and not per stirpes.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q02-006",
+          "claim_text": "Out of Piyal's estate Kanthi took 1/2 of Lot 5 and Aruna, Leela, Nikitha and Rikitha took 1/8 each.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M043-006",
+            "PROV-M043-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q02-007",
+          "claim_text": "Children are preferent in the estate of a parent and take equally per capita, the issue of a deceased child taking by representation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q02-008",
+          "claim_text": "Out of Kanthi's estate Aruna and Leela took 1/4 of Lot 5 each, bringing them to 3/8 each, while Nikitha and Rikitha remained at 1/8 each.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M043-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-5"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q02-009",
+          "claim_text": "A surviving spouse inherits one-half of the intestate's property.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q02-010",
+          "claim_text": "Both parents failing, the siblings of whole and half-blood take, and where the half-blood is on one side only the full siblings take the first half and divide the remainder with the half-blood.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M043-007",
+            "PROV-M043-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q02-011",
+          "claim_text": "Out of Rikitha's 1/8 her husband Sanatha took 1/16, her full sister Nikitha took 1/32 plus 1/96, and Aruna and Leela took 1/96 each.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M043-003",
+            "PROV-M043-007",
+            "PROV-M043-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M043-Q02-012",
+          "claim_text": "The present shares in Lot 5 are Aruna 37/96, Leela 37/96, Nikitha 16/96 and Sanatha 6/96.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M043-005",
+            "PROV-M043-006",
+            "PROV-M043-003",
+            "PROV-M043-007",
+            "PROV-M043-008",
+            "PROV-M043-009"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-4",
+            "BG-5",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "Reserved, not blocked on a defect in the research. Two reasons. First, authority: the effect of the deed of gift reserving life interests, and the conclusiveness of the partition final decree, are Roman-Dutch law and Partition Law points that the corpus does not carry, so the map is mixed_statute_and_case. Second, one open fact and one open construction. The background never says whether Anusha, the mother of Nikitha and Rikitha, survived Rikitha's death on 02.08.2016; the draft proceeds on the footing that she did not, which engages section 26 and section 27. If Anusha survived, section 25 applies to Rikitha's estate instead and Anusha takes 1/32 of the land, with Nikitha, Aruna and Leela taking 1/96 each. The construction point is how the sibling half under section 25 is divided among full and paternal half-siblings: the draft applies section 30 per capita; on the competing reading section 27 proportions apply to that half, which would give Aruna and Leela 3/16 each and Nikitha and Rikitha 1/16 each out of Piyal's estate and change every downstream figure. A lawyer should settle both before this is treated as gold.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

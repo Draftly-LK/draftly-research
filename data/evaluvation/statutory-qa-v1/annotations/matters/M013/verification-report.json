@@ -1,0 +1,153 @@
+{
+  "benchmark_matter_id": "M013",
+  "verifier": "verifier-M013",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:10:15Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M013-001",
+      "decision": "verified",
+      "note": "7-1840/s2(2) reads exactly as excerpted, including the proviso for a transferee unable to be present; amendment_events record the 2024 insertion."
+    },
+    {
+      "provision_id": "PROV-M013-002",
+      "decision": "partially_verified",
+      "note": "Verbatim, but the excerpt stops before \"shall be in force or avail in law unless\", the operative words the nullity claims depend on."
+    },
+    {
+      "provision_id": "PROV-M013-003",
+      "decision": "verified",
+      "note": "Paragraphs (a) and (b) of the renumbered subsection (1) match the corpus text word for word."
+    },
+    {
+      "provision_id": "PROV-M013-004",
+      "decision": "verified",
+      "note": "4-2024/s2 is the whole amending section; the renumbering, the new paragraph (a) and the new subsection (2) are all in it."
+    },
+    {
+      "provision_id": "PROV-M013-005",
+      "decision": "partially_verified",
+      "note": "Temporal note wrongly says the 2022 Act's own text was recast by Act No. 4 of 2024; the 2024 Act amends the principal Ordinance, not the 2022 Act. The background role is otherwise right."
+    },
+    {
+      "provision_id": "PROV-M013-006",
+      "decision": "verified",
+      "note": "Definition of \"power of attorney\", limb (b). Act No. 3 of 2024 s.2 removed the words \"two witnesses and\" from that limb, so the quoted text is the text at 2025-10."
+    },
+    {
+      "provision_id": "PROV-M013-007",
+      "decision": "verified",
+      "note": "The corpus graph carries the same link: 4-1902/s3A qualifies 7-1840/s2."
+    },
+    {
+      "provision_id": "PROV-M013-008",
+      "decision": "verified",
+      "note": "s.3A(3)(a) and (b) verbatim."
+    },
+    {
+      "provision_id": "PROV-M013-009",
+      "decision": "verified",
+      "note": "s.3A(3)(d) and (e) verbatim."
+    },
+    {
+      "provision_id": "PROV-M013-010",
+      "decision": "verified",
+      "note": "The corpus body of 4-1902/s3 prints no \"(1)\" marker before paragraph (a), but s.3(2) refers back to \"subsection (1)\", so the label holds."
+    },
+    {
+      "provision_id": "PROV-M013-011",
+      "decision": "verified",
+      "note": "s.3C verbatim; five-year default validity."
+    },
+    {
+      "provision_id": "PROV-M013-012",
+      "decision": "verified",
+      "note": "s.3B(1)(a) and (b) verbatim; s.3B(2) confirms that examining the volumes and folios is sufficient."
+    },
+    {
+      "provision_id": "PROV-M013-013",
+      "decision": "partially_verified",
+      "note": "Wording verbatim, but the block is rule (15A), not rule (16): Notaries (Amendment) Act No. 6 of 2024 s.3(5) amends \"rule (15A)\" paragraphs (b) and (d), which are the paragraphs of this block. The citation should read s.31, rule (15A)(c)."
+    },
+    {
+      "provision_id": "PROV-M013-014",
+      "decision": "verified",
+      "note": "Rule (30) is expressly numbered in the corpus text."
+    },
+    {
+      "provision_id": "PROV-M013-015",
+      "decision": "verified",
+      "note": "Read with 38-2014/s25, which defines \"foreigner\" as a person who is not a citizen of Sri Lanka."
+    },
+    {
+      "provision_id": "PROV-M013-901",
+      "decision": "verified",
+      "note": "Added by the verifier; excerpt checked verbatim against 1-1907/s31."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M013-901",
+      "reason": "The map and the gold answer both require the attorney to sign before the notary and \"the two witnesses\", but Prevention of Frauds Ordinance s.2(1)(a) as substituted in 2024 says only \"the witnesses\" and fixes no number, and Act No. 3 of 2024 s.2 removed \"two witnesses\" from the foreign limb of the Powers of Attorney Ordinance definition. Notaries Ordinance s.31 rule (8) is the provision that supplies the minimum of two witnesses; it is now cited by claim CL-M013-Q01-013 and carried as a supporting provision."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M013-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "Every claim is traceable to corpus text. No indispensable provision was rejected or left unresolved; the two partial verifications (PROV-M013-002 excerpt scope, PROV-M013-005 temporal note) and the mislabelled rule number in PROV-M013-013 are citation corrections, not corrections of the legal result, so the question stays proposed_gold. The hop count of 4 matches the indispensable chain: s.2(1) engages the transaction, s.2(2) requires the transferee's signature and gives the written-authorisation route, Powers of Attorney Ordinance s.3A(1) with s.3A(3) and the s.2(b) definition govern execution abroad, and s.3 requires registration."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "citation_label",
+      "researcher_position": "The attorney-affidavit requirement is Notaries Ordinance s.31, rule (16)(c).",
+      "verifier_position": "It is s.31, rule (15A)(c). The corpus body prints the block unnumbered between rules (15) and (18), but Notaries (Amendment) Act No. 6 of 2024 s.3(5) names it \"rule (15A)\", and the two later unnumbered blocks (land description, register search) are the long-standing rules (16) and (17).",
+      "supporting_sources": ["1-1907/s31", "6-2024/s3"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "characterisation_of_authority",
+      "researcher_position": "The written authorisation contemplated by Prevention of Frauds Ordinance s.2(2) is a power of attorney, so Powers of Attorney Ordinance s.3A and the registration duty in s.3 apply to it.",
+      "verifier_position": "That is the better reading on the corpus text - the s.2 definition covers \"any written power or authority ... given by one person to another, to represent him, to perform any work, do any act\", and s.3A(1) is expressed to catch instruments granted for a s.2 Prevention of Frauds transaction - but s.2(2) itself says only \"authorise in writing\" and never uses the words \"power of attorney\". The registration and notarial-search half of the answer rests entirely on that inference.",
+      "supporting_sources": ["7-1840/s2", "4-1902/s2", "4-1902/s3A"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M013-Q01-013 and the gold answer say the attorney must appear before the notary and \"the two witnesses\". No cited provision fixed the number until PROV-M013-901 (Notaries Ordinance s.31 rule (8)) was added; Prevention of Frauds Ordinance s.2(1)(a) says only \"the witnesses\".",
+      "CL-M013-Q01-001 asserts that a non-compliant deed is not in force and does not avail in law. That is right on the corpus text, but the words appear in neither excerpt of PROV-M013-002 nor PROV-M013-003 - hence the partial verification of PROV-M013-002."
+    ],
+    "temporal_issues": [
+      "Prevention of Frauds (Amendment) Act No. 4 of 2024 has only a short title, the amending section and a Sinhala-text section - no appointed-date clause - so it operates from certification in 2024. The corpus records the year alone, so the exact date is still unconfirmed, but it precedes October 2025 on any view.",
+      "The corpus does anchor the 2022 power-of-attorney regime: Act No. 3 of 2024 s.6 speaks of powers of attorney \"executed prior to October 25, 2022\" and of section 8 of Act No. 28 of 2022, which puts s.3, s.3A, s.3B and s.3C in operation well before the matter date. Added to corpus_gaps as a verifier note.",
+      "Closed-world limit unchanged: the corpus holds no Prevention of Frauds amendment after No. 4 of 2024 but cannot prove none was passed between 2024 and October 2025, and the question asks for the \"latest amendments\"."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Powers of Attorney Ordinance s.3D (a person other than a State institution shall not execute an irrevocable power of attorney) is absent from the map. Not indispensable, but it bears on the form of instrument Wimala would be advised to grant.",
+      "Consular Functions Act No. 4 of 1981 is outside the corpus, so \"Consular Officer\" in 4-1902/s2(b) cannot be checked beyond the words of s.2. Already recorded as a corpus gap.",
+      "Deeds and Documents (Execution before Public Officers) Ordinance No. 17 of 1852 s.2 is the one alternative route out of Prevention of Frauds s.2 that the corpus offers. The research notes considered and rejected it; I agree - it requires execution before a District Judge, Commissioner or authorised Justice of the Peace for the district in which the party resides, which is no use to a purchaser in Australia.",
+      "Prevention of Frauds Ordinance s.19 and s.3, and the corpus graph edges from 7-1840/s2, were checked and add nothing to this question."
+    ],
+    "case_law_dependence": [
+      "None. The answer cites no case law and every step is on the face of the four enactments."
+    ],
+    "enrichment_issues": [
+      "FACT-M013-Q01-004 has the client proposing to sign at the Sri Lanka High Commission in Canberra before a consular officer. That comes close to supplying the answer to one limb of the question: CL-M013-Q01-014 then only confirms the choice rather than deriving it. The fact is genuinely decisive for which limb of s.3A applies, so it has been left as it stands, but a lawyer may prefer the enrichment to say only that she is in Australia and can reach the High Commission.",
+      "The enrichment names no statute, no section and no conclusion, and each synthetic_decisive fact states why it is needed.",
+      "The enriched timeline (authority 12 November 2025, deed early December 2025) runs past the matter reference date of 2025-10. Prospective advice, so not a temporal defect, but the dates should be read as the law taken at October 2025."
+    ],
+    "duplicate_or_leak_issues": [
+      "Three provision entries share section_id 7-1840/s2, three share 4-1902/s3A and three now share 1-1907/s31. They are distinct subsections and the schema permits it, but a consumer keying on section_id will see duplicates."
+    ]
+  },
+  "lawyer_questions": [
+    "Is the \"written authorisation\" required by Prevention of Frauds Ordinance s.2(2)(a) necessarily a power of attorney, so that the whole of Powers of Attorney Ordinance s.3A (execution abroad, metes and bounds, volume and folio, passport pages) and the s.3 registration duty apply to it? The second half of the gold answer stands or falls on that.",
+    "Confirm the date of operation of the Prevention of Frauds (Amendment) Act No. 4 of 2024 and that no later amendment to the Ordinance was passed before the October 2025 session.",
+    "Confirm the rule number for the attorney-affidavit requirement in Notaries Ordinance s.31 - rule (15A)(c) on the verifier's reading, rule (16)(c) on the researcher's.",
+    "Must the power of attorney be registered before the deed is executed as a matter of law, or only in practice because Powers of Attorney Ordinance s.3B obliges the notary to search the register? The map states it as a practical point."
+  ]
+}

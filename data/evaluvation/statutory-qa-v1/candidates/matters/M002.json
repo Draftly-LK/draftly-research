@@ -1,0 +1,183 @@
+{
+  "benchmark_matter_id": "M002",
+  "source_matter_id": "P01-Q02-M00",
+  "grouping_key": "P01-Q02-M00",
+  "paper_no": 1,
+  "question_no": 2,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+    "normalized": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P01-Q02-P01",
+          "P01-Q02-P02",
+          "P01-Q02-P03",
+          "P01-Q02-P04"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M002-Q01",
+      "atomic_id": "P01-Q02-P01",
+      "part_uid": "paper-01/q2/i",
+      "part_id": "i",
+      "item_id": null,
+      "marks": 8,
+      "pdf_page": 2,
+      "question_original": "If you are retained by the said company as their Notary for the said purchase what are the documents you should check prior to purchasing the said land?",
+      "question_normalized": "If you are retained by the said company as their Notary for the said purchase what are the documents you should check prior to purchasing the said land?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+      "effective_background_normalized": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+      "source_quote": "(i) If you are retained by the said company as their Notary for the said purchase what are the documents\nyou should check prior to purchasing the said land?\n(8 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "property_identity",
+        "party_identity",
+        "relevant_document",
+        "consideration_or_value"
+      ]
+    },
+    {
+      "benchmark_question_id": "M002-Q02",
+      "atomic_id": "P01-Q02-P02",
+      "part_uid": "paper-01/q2/ii",
+      "part_id": "ii",
+      "item_id": null,
+      "marks": 2,
+      "pdf_page": 2,
+      "question_original": "If the company intends to carry out development within the coastal zone, what are the special approvals you shall obtain and from which authority shall you obtain those?",
+      "question_normalized": "If the company intends to carry out development within the coastal zone, what are the special approvals you shall obtain and from which authority shall you obtain those?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+      "effective_background_normalized": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+      "source_quote": "(ii) If the company intends to carry out development within the coastal zone, what are the special\napprovals you shall obtain and from which authority shall you obtain those?\n(2 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "property_identity",
+        "property_location",
+        "other"
+      ]
+    },
+    {
+      "benchmark_question_id": "M002-Q03",
+      "atomic_id": "P01-Q02-P03",
+      "part_uid": "paper-01/q2/iii",
+      "part_id": "iii",
+      "item_id": null,
+      "marks": 2,
+      "pdf_page": 2,
+      "question_original": "If the value of the said land is Hundred Million (Rs 100,000,000/) calculate the stamp duty that is payable on the Deed of Transfer.",
+      "question_normalized": "If the value of the said land is Hundred Million (Rs 100,000,000/) calculate the stamp duty that is payable on the Deed of Transfer.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+      "effective_background_normalized": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+      "source_quote": "(iii) If the value of the said land is Hundred Million (Rs 100,000,000/) calculate the stamp duty that is\npayable on the Deed of Transfer.\n(2 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "property_identity",
+        "party_identity",
+        "instrument_date"
+      ]
+    },
+    {
+      "benchmark_question_id": "M002-Q04",
+      "atomic_id": "P01-Q02-P04",
+      "part_uid": "paper-01/q2/iv",
+      "part_id": "iv",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 2,
+      "question_original": "Where do you pay the said stamp duty? What is the mode of payment? Within how many days should you pay?",
+      "question_normalized": "Where do you pay the said stamp duty? What is the mode of payment? Within how many days should you pay?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+      "effective_background_normalized": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+      "source_quote": "(iv) Where do you pay the said stamp duty? What is the mode of payment? Within how many days\nshould you pay?\n(3 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.75,
+        "flags": [
+          "refers_to_prior_subquestion_value_not_in_prior_background"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "confidence=0.75"
+      ],
+      "missing_fact_types": [
+        "property_identity",
+        "party_identity",
+        "instrument_date"
+      ]
+    }
+  ],
+  "matter_reference_date": "2026-04",
+  "exam_session": "APRIL 2026",
+  "matter_tier": "A",
+  "tier_a_question_count": 3
+}

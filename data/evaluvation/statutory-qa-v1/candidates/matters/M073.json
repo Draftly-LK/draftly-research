@@ -1,0 +1,65 @@
+{
+  "benchmark_matter_id": "M073",
+  "source_matter_id": "P12-Q04-M03",
+  "grouping_key": "P12-Q04-M03",
+  "paper_no": 12,
+  "question_no": 4,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "The testator of a Will wants one of the beneficiaries in his Will to sign as an attesting witness of the Will.",
+    "normalized": "The testator of a Will wants one of the beneficiaries in his Will to sign as an attesting witness of the Will.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P12-Q04-P05"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M073-Q01",
+      "atomic_id": "P12-Q04-P05",
+      "part_uid": "paper-12/q4/v",
+      "part_id": "v",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 50,
+      "question_original": "As the Notary attesting this Will advise your Client.",
+      "question_normalized": "As the Notary attesting this Will advise your Client.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "The testator of a Will wants one of the beneficiaries in his Will to sign as an attesting witness of the Will.",
+      "effective_background_normalized": "The testator of a Will wants one of the beneficiaries in his Will to sign as an attesting witness of the Will.",
+      "source_quote": "(v) The testator of a Will wants one of the beneficiaries in his Will to sign as an attesting witness of the Will. As the Notary attesting this Will advise your Client.\n(03 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "relationship_between_parties",
+        "relevant_document",
+        "other"
+      ]
+    }
+  ],
+  "matter_reference_date": "2020-04",
+  "exam_session": "APRIL 2020",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

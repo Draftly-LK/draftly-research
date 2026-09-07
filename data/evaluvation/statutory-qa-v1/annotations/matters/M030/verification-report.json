@@ -1,0 +1,153 @@
+{
+  "benchmark_matter_id": "M030",
+  "verifier": "verifier-M030",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:29:32Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M030-001",
+      "decision": "verified",
+      "note": "38-2014/s2(1) checked verbatim; the prohibition, the fifty per cent corporate limb and the reference to the section 3 exemptions all read as why_relevant states."
+    },
+    {
+      "provision_id": "PROV-M030-002",
+      "decision": "verified",
+      "note": "The corpus records twenty defined terms for 38-2014/s25 in the same order as the twenty bare clauses in the body; the ninth and tenth are 'foreigner' and 'foreign company'. The researcher's corpus gap on lost term labels is therefore resolved for this section."
+    },
+    {
+      "provision_id": "PROV-M030-003",
+      "decision": "verified",
+      "note": "Same alignment: clauses fifteen, sixteen and seventeen are 'land', 'Minister' and 'transfer'."
+    },
+    {
+      "provision_id": "PROV-M030-004",
+      "decision": "verified",
+      "note": "38-2014/s3(1)(a) and (b) checked verbatim against the consolidated post-2018 text; paragraphs (c) to (i), which the why_relevant relies on to close off the other exemptions, are present in the same corpus body."
+    },
+    {
+      "provision_id": "PROV-M030-005",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim, but the corpus body of section 2 shows no '(2)' marker, and the voidness the why_relevant asserts is in paragraph (b), not paragraph (a); paragraph (b) also carries cure provisos of twelve months for a listed company and six months for any other, which the map nowhere records."
+    },
+    {
+      "provision_id": "PROV-M030-006",
+      "decision": "verified",
+      "note": "38-2014/s5(1) checked verbatim, including the ninety-nine year proviso."
+    },
+    {
+      "provision_id": "PROV-M030-007",
+      "decision": "verified",
+      "note": "Temporal chain checked: 3-2017 s.2 inserted section 5A with effect from January 8, 2017 and 21-2018 s.3 substituted January 1, 2016 for that date, so the corpus text governs a lease executed in October 2024."
+    },
+    {
+      "provision_id": "PROV-M030-008",
+      "decision": "verified",
+      "note": "38-2014/s18 checked verbatim; the whole section is quoted."
+    },
+    {
+      "provision_id": "PROV-M030-009",
+      "decision": "verified",
+      "note": "38-2014/s4(1) checked verbatim."
+    },
+    {
+      "provision_id": "PROV-M030-010",
+      "decision": "partially_verified",
+      "note": "The excerpt is verbatim and the five-year period running from execution is legible despite the extraction damage, but the scope stated in why_relevant is too wide: section 11(1) reaches only a person or company referred to in section 2(1) or 5(1), which excludes a Sri Lankan company with foreign shareholding below fifty per cent."
+    },
+    {
+      "provision_id": "PROV-M030-011",
+      "decision": "verified",
+      "note": "11-1973/s9(4) checked verbatim; role raised from supporting to indispensable, since closing off the condominium exemption is a necessary step, not a supporting one."
+    },
+    {
+      "provision_id": "PROV-M030-012",
+      "decision": "verified",
+      "note": "38-2014/s3(2) checked verbatim; the map does not record the further Ministerial exemption in section 3(3) for a foreign company engaged in international commercial operations, which on these facts is also unavailable but should have been ruled out expressly."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M030-901",
+      "reason": "The definition of 'condominium parcel' in section 26 of the Apartment Ownership Law, No. 11 of 1973, is indispensable and was missing. The section 3(1)(b) exemption is expressed in that term, and it is the definition, not section 9(4), that makes the exclusion of bare land determinate: a condominium parcel is a defined space shown as an independent parcel on a condominium, semi condominium or provisional condominium plan. The research notes rejected section 26 as garbled, but the clause read there as the definition of 'condominium parcel' is in fact the definition of 'accessory parcel'; the corpus defined-term order puts 'condominium parcel' immediately after 'Condominium Plan', and that clause is clean. The excerpt was checked verbatim."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M030-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "The statutory spine of the advice holds: the client is a foreigner within section 25, the deed is a transfer of land within section 25, section 2(1)(a) prohibits it, no section 3 exemption is open on the facts, section 18 makes such a deed void and section 4(1) bars registration. Three claims do not stand as written, and because the verifier may not rewrite the answer prose the question is downgraded rather than passed: CL-M030-Q01-021 is rejected as overbroad on the section 11(1) mortgage bar, CL-M030-Q01-020 is disputed because the voidness limb comes from section 2(2)(b) and ignores the cure provisos, and CL-M030-Q01-022 is disputed because the notarial-refusal limb has no support in this corpus. The authority requirement stays statute_only: the disputed notarial-duty limb is professional conduct, not case law, and it is not needed to answer the question."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "provision_scope",
+      "researcher_position": "Section 11(1) of Act, No. 38 of 2014 prevents the land from being mortgaged or pledged to a licensed bank for five years whichever route the client takes, including acquisition through a Sri Lankan company with foreign shareholding below fifty per cent.",
+      "verifier_position": "Section 11(1) applies only to land transferred or leased to a person or a company 'referred to in section 2(1) or 5(1)'. A company with foreign shareholding below fifty per cent is not referred to in section 2(1), which speaks of shareholding of fifty per cent or above, so the five-year bar does not attach to the corporate route. It does attach to a lease to the client himself, who is a person referred to in section 5(1)(a).",
+      "supporting_sources": [
+        "38-2014/s11",
+        "38-2014/s2",
+        "38-2014/s5"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "missing_provision",
+      "researcher_position": "Section 2(2)(a) alone supports the advice that a transfer to a local company becomes void if foreign shareholding reaches fifty per cent within twenty years.",
+      "verifier_position": "Paragraph (a) states only the twenty-year condition. The voidness, and the provisos that let a listed company cure a breach within twelve months and any other company within six months, are in paragraph (b), which the map does not excerpt. As drafted the advice is harsher than the Act and would mislead a client about a curable breach.",
+      "supporting_sources": [
+        "38-2014/s2"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "definition_choice",
+      "researcher_position": "Section 26 of the Apartment Ownership Law was rejected as too garbled to excerpt, and section 9(4) was used to carry the condominium point instead.",
+      "verifier_position": "The garbled clause the researcher read is the definition of 'accessory parcel'. The definition of 'condominium parcel' is clean, verbatim and directly decisive, and has been added as PROV-M030-901.",
+      "supporting_sources": [
+        "11-1973/s26",
+        "11-1973/s9"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M030-Q01-021 (rejected): 'whichever of those routes he takes, the land cannot be mortgaged or pledged to a licensed bank for five years'. Section 11(1) does not reach a Sri Lankan company with foreign shareholding below fifty per cent. The lease-route limb of the claim is sound.",
+      "CL-M030-Q01-020 (disputed): the 'or the transfer becomes void' limb rests on section 2(2)(b), which is not a provision in the map, and omits the six and twelve month cure provisos.",
+      "CL-M030-Q01-022 (disputed): 'as his Notary you should decline to draw or attest it' is not supported by any provision in this corpus. Notaries Ordinance section 31 was read rule by rule; none of its thirty-six rules forbids attesting an instrument void under another Act. Section 39 covers only fraudulent deeds and section 38A only transfers that are in truth mortgages. Land Development Ordinance section 162 contains exactly such a prohibition, which shows the drafting device exists and was not used in Act, No. 38 of 2014.",
+      "CL-M030-Q01-004 (disputed): 'The exemptions from section 2 are those set out in section 3(1)' is not exhaustive; sections 3(2) and 3(3) both empower the Minister to exempt from section 2. CL-M030-Q01-006 covers section 3(2) but nothing covers section 3(3)."
+    ],
+    "temporal_issues": [
+      "None found that change the outcome. Section 1(2) puts the Act in operation from January 1, 2013; section 3(1) is the consolidated post-2018 text (21-2018 s.2, whose corpus body is truncated, substituted paragraph (b) and added paragraph (i), and the consolidated body carries both); section 5A was inserted by 3-2017 s.2 and its trigger date was moved back to January 1, 2016 by 21-2018 s.3. Every provision relied on is in force at October 2024 and no later amendment has been relied on prematurely.",
+      "The map's repeated phrase 'unamended in the corpus consolidation' is accurate for sections 2, 4, 5, 11, 18 and 25: the corpus records no amendment event against any of them."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Definition of 'condominium parcel' (11-1973/s26) was missing and has been added as PROV-M030-901.",
+      "Section 3(3) of Act, No. 38 of 2014, a second Ministerial exemption for a foreign company engaged in international commercial operations relocating or setting up a branch office, is not in the map. It is unavailable to an individual buying land for a domestic apartment venture, but it should have been ruled out.",
+      "Section 2(2)(b) of Act, No. 38 of 2014, the voidness rule and its cure provisos for the corporate route, is not in the map although the answer relies on its effect.",
+      "Section 8 of Act, No. 38 of 2014 (an indenture of lease is not registrable unless the Registrar of Lands is satisfied the Land Lease Tax has been paid) is not in the map. It is the lease-route counterpart of section 4(1) and is worth a supporting entry, though section 5A removes the tax for a 2024 lease.",
+      "The definition of 'alienation' in section 25 ('transfer, lease or mortgage of lands situated within Sri Lanka') is not excerpted, although section 18 turns on the word 'alienation'. The point is unaffected on these facts because a transfer is expressly within it."
+    ],
+    "case_law_dependence": [
+      "None. The answer cites no case and needs none: every operative term is statutorily defined and the exemptions are an exhaustive statutory list. The only limb that leaves the statute is the notarial duty to decline, which is professional conduct rather than judicial gloss, and it is not needed to answer 'how would you advise him'."
+    ],
+    "enrichment_issues": [
+      "The enriched facts do not change the legal issue and every synthetic_decisive fact carries a reason. No statute name and no section number appears in the enriched background, and the conclusion is not stated in it.",
+      "Leak risk, not a leak: FACT-M030-Q01-006 enumerates the negatives in almost the order of the section 3(1) list ('no approval of the Cabinet of Ministers and no project approval of any kind, not a diplomatic mission or an international organisation, not a bank or a finance leasing institution'), which telegraphs the exemption list an examinee would be expected to produce. FACT-M030-Q01-001 does the same for the dual-citizen exemption. Recommend the lawyer consider trimming these to the facts a client would volunteer.",
+      "FACT-M030-Q01-003 uses the phrase 'no condominium plan of any kind registered over it'. 'Condominium Plan' is a defined term of the Apartment Ownership Law, so the fact borrows statutory vocabulary, though it names no statute.",
+      "FACT-M030-Q01-002 places the land in Dehiwala, District of Colombo. The corpus was not searched for a local-authority overlay and none is relied on, so the location is neutral on the outcome, as the fact's counterfactual says."
+    ],
+    "duplicate_or_leak_issues": [
+      "PROV-M030-002 and PROV-M030-003 are two entries over the same section (38-2014/s25) and PROV-M030-001 and PROV-M030-005 over the same section (38-2014/s2). Both splits are on different defined terms or different subsections and are not duplicates, but PROV-M030-005 is the weaker of its pair because its subsection label does not appear in the corpus body.",
+      "No provision is duplicated across roles; the indispensable, supporting and background sets are disjoint after the role change to PROV-M030-011."
+    ]
+  },
+  "lawyer_questions": [
+    "Most important: does the five-year mortgage bar in section 11(1) of Act, No. 38 of 2014 reach land transferred to a Sri Lankan company whose foreign shareholding is below fifty per cent? The section refers only to persons and companies 'referred to in section 2(1) or 5(1)', which on its face excludes such a company, yet the gold answer warns the client that the bar applies whichever route he takes. The answer given decides whether the corporate route is materially better than the lease route for a developer who needs construction finance.",
+    "Should the corporate-route advice be qualified by the cure provisos in section 2(2)(b), so that a breach of the twenty-year condition is voidable-but-curable within six months (twelve for a listed company) rather than simply void?",
+    "Is the advice that the Notary should decline to draw or attest the deed properly a matter of professional duty rather than of Act, No. 38 of 2014, given that nothing in the Notaries Ordinance as held in this corpus forbids attesting an instrument void under another Act, and that the draftsman used an express prohibition of that kind in section 162 of the Land Development Ordinance?",
+    "Should the enrichment be softened so that it does not recite the section 3(1) exemption list back to the examinee as a set of agreed negative facts?"
+  ]
+}

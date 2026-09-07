@@ -1,0 +1,299 @@
+{
+  "run": "smoke2",
+  "split": "all",
+  "timestamp": "2026-09-04T22:46:01Z",
+  "git_commit": "e491f2d26f84163ff2a82a08e7f3619051b436bb",
+  "corpus_fingerprint": "f119236b806f0ff2e3d905c120e3a7319a497e8b7eea085655ef17e34fce9d30",
+  "corpus_manifest_sha256": "8e27dde52697da5e2b41b94d6fcdad4f2a966b9f5ede71072f26b62aa871b356",
+  "public_input_sha256": "29d31616f4f72299494483c1615c3c12d77d11539d744645fdbc7da093c760f5",
+  "split_file_sha256": null,
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "embedding_query_prefix": "Represent this sentence for searching relevant passages: ",
+  "chunking": {
+    "chars": 1500,
+    "stride": 1200,
+    "max_chunks": 12
+  },
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "reranker_max_length": 512,
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "tokenizer": "[0-9a-z]+ casefold, closed-class stopwords"
+  },
+  "query_format": "normalized background (enriched where applied) + ' ' + question",
+  "overrides": {},
+  "environment": {
+    "python": "3.12.12",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.13.0+cpu",
+    "transformers": "5.15.0",
+    "sentence_transformers": "6.0.0",
+    "device": "cpu"
+  },
+  "systems": [
+    {
+      "system": "S4_hybrid_rrf",
+      "config": {
+        "system": "hybrid",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 0.48,
+      "mean_latency_ms": 21.0
+    },
+    {
+      "system": "S5_hybrid_rerank",
+      "config": {
+        "system": "hybrid_rerank",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 392.94,
+      "mean_latency_ms": 17084.0
+    },
+    {
+      "system": "S6_hier",
+      "config": {
+        "system": "hier",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": false,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 1.58,
+      "mean_latency_ms": 68.6
+    },
+    {
+      "system": "S7_bundle",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 76.32,
+      "mean_latency_ms": 3317.8
+    },
+    {
+      "system": "A9_no_rerank",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": false,
+        "rerank_query": "question+bg",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 1.89,
+      "mean_latency_ms": 81.9
+    },
+    {
+      "system": "A10_no_expansion",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 2.0,
+          "part_heading": 1.0,
+          "heading": 3.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 23,
+      "seconds": 1.95,
+      "mean_latency_ms": 84.7
+    }
+  ]
+}

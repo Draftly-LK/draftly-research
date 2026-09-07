@@ -1,0 +1,179 @@
+{
+  "benchmark_matter_id": "M091",
+  "verifier": "verifier-M091",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:21:04Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M091-001",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M091-002",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M091-003",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim in the corpus and the duty is correctly stated, but two corrections stand: the words \"in the Form F 1\" were substituted for \"in the Form F\" by the Notaries (Amendment) Act, No. 6 of 2024 s.3(8), so the April 2019 text read \"Form F\"; and the rule label \"(26)\" is not printed in the corpus text, which runs straight from rule (25) into \"(i) He shall deliver or transmit\", the number being recoverable only from Act No. 47 of 2011 s.3, Act No. 6 of 2024 s.3(8) and sections 32(1) and 34(2)."
+    },
+    {
+      "provision_id": "PROV-M091-004",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim and rule (29) is the provision that decides the scenario, but \"in the Form F 1\" is the substitution made by the Notaries (Amendment) Act, No. 6 of 2024 s.3(9); in April 2019 rule (29) read \"in the Form F\"."
+    },
+    {
+      "provision_id": "PROV-M091-005",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M091-006",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M091-007",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M091-008",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M091-009",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M091-010",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M091-011",
+      "decision": "unresolved",
+      "note": "The corpus holds only the section 34 substituted by the Notaries (Amendment) Act, No. 31 of 2022 s.17, whose subsection (1)(b) itself refers to rule (30A), inserted in 2022; the penal and suspension provisions that governed breach of rules (24), (26) and (29) in April 2019 cannot be read off the corpus, so no consequence for the duplicate duties is verifiable at the matter date."
+    },
+    {
+      "provision_id": "PROV-M091-012",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M091-013",
+      "decision": "partially_verified",
+      "note": "Wording is verbatim and supports the saving, but the excerpt stops before the proviso, which preserves the invalidity of an instrument that fails to comply with any other written law; the conclusion drawn from section 33 has to be read subject to that proviso."
+    },
+    {
+      "provision_id": "PROV-M091-901",
+      "decision": "verified",
+      "note": "Excerpt checked verbatim against 23-1927/s26 by the verifier."
+    },
+    {
+      "provision_id": "PROV-M091-902",
+      "decision": "verified",
+      "note": "Excerpt checked verbatim against 23-1927/s28 by the verifier."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M091-901",
+      "reason": "Registration of Documents Ordinance s.26(1)(d) and (2). The map had no provision on who may present an instrument for registration or on what may be presented. Section 26(1)(d) makes the notary acting for a party a competent presenter, and section 26(2) permits either the original or a duly attested or certified copy to be presented. The second point contradicts the researcher's rule claim that the original is the instrument that goes forward for registration, so the map could not be verified without it. Excerpt checked verbatim."
+    },
+    {
+      "provision_id": "PROV-M091-902",
+      "reason": "Registration of Documents Ordinance s.28(1), added as background. It closes the account of the original: after registration the Registrar endorses the instrument and returns it on demand to the person who presented it or his agent, which is what distinguishes the fate of the original from that of the duplicate, which stays bound in the registrar's volumes under s.5(1). Excerpt checked verbatim."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M091-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "Authority requirement confirmed: the duties of a notary in respect of the original and the duplicate are laid down exhaustively by rules (20), (24), (26) and (29) of Notaries Ordinance s.31 with ss.32, 33, 37 and 42, read with Registration of Documents Ordinance ss.7, 14 and 26. No Roman-Dutch common law or case law is needed, and the answer cites none. The hop count of 3 matches the indispensable edges: rule (20) and rule (26)(a)(i) fix the base duties, rule (29) qualifies rule (26) once the land is shown to lie in another district, and s.37 becomes determinate only with s.14(1). Downgraded to needs_legal_review, not blocked: the two indispensable duplicate-transmission excerpts quote the post-2024 'Form F 1' wording for an April 2019 matter, the rule number (26) is inferred rather than printed in the corpus, the penalty provision in force at the matter date is not in the corpus, and the gold answer prose asserts that the original is the instrument that goes forward for registration, which s.26(2) contradicts. The verifier did not rewrite the prose."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "unsupported_statement_in_gold_answer",
+      "researcher_position": "The original is the instrument that goes forward for registration, and the notary must present the original at the land registry for the Nuwara Eliya division (gold_answer_draft rule and application; CL-M091-Q01-006 and CL-M091-Q01-013).",
+      "verifier_position": "The registry is correctly identified by Registration of Documents Ordinance s.14(1), but s.26(2) of the same Ordinance provides that either the original or a duly attested or certified copy of the instrument may be presented for registration, so it is wrong to say the original is the instrument that must go forward. Both claims marked disputed and PROV-M091-901 added.",
+      "supporting_sources": [
+        "23-1927/s26",
+        "23-1927/s14"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "temporal_version_of_excerpt",
+      "researcher_position": "The 'Form F 1' wording of rules (26)(a)(i) and (29) is quoted as the excerpt with the anachronism flagged only in the temporal_note and in the research notes; the question is still offered as proposed_gold.",
+      "verifier_position": "Two indispensable provisions carrying text that did not exist at the matter date is enough to keep the question out of gold until a lawyer either accepts the substitution as immaterial or supplies the April 2019 'Form F' wording. Marked partially_verified and the question downgraded.",
+      "supporting_sources": [
+        "6-2024/s3",
+        "1-1907/s31"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "consequences_of_default",
+      "researcher_position": "Neglect of these duties exposes the notary to prosecution (CL-M091-Q01-015), citing s.37 and s.33, with s.34 carried as supporting context marked not applicable to the matter date.",
+      "verifier_position": "Section 37 supports prosecution only for failure to register after instructions and funds. For breach of rules (24), (26) and (29) the penal provision in force in April 2019 is s.34 as it stood before the Notaries (Amendment) Act, No. 31 of 2022, which the corpus does not hold. PROV-M091-011 marked unresolved and the claim marked disputed.",
+      "supporting_sources": [
+        "1-1907/s34",
+        "1-1907/s37",
+        "31-2022/s17"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M091-Q01-006: the opening limb, that the original is the instrument that goes forward for registration, is contradicted by 23-1927/s26(2). Marked disputed.",
+      "CL-M091-Q01-013: 'present the original' overstates s.26(2) for the same reason. Marked disputed.",
+      "CL-M091-Q01-015: prosecution for breach of the duplicate duties is not supported by any provision in the corpus that was in force in April 2019. Marked disputed.",
+      "CL-M091-Q01-009: correct in result but cites only PROV-M091-012 (s.32(1)) for the application of rule (29); s.32(1) disapplies rules (20), (23), (24), (25) and (26) only and says nothing about rule (29), which applies on its own words. Left verified with a verifier_note."
+    ],
+    "temporal_issues": [
+      "PROV-M091-003 and PROV-M091-004 quote 'in the Form F 1', substituted by 6-2024 s.3(8) and s.3(9); in April 2019 both rules read 'in the Form F'. Both marked partially_verified.",
+      "PROV-M091-011 (1-1907/s34) is the replacement enacted by 31-2022 s.17 and refers to rule (30A), itself inserted in 2022. Marked unresolved; the pre-2022 s.34 is not in the corpus.",
+      "Correctly handled by the researcher and confirmed here: rule (30A) of s.31 (thirty days, sixty outside the notary's jurisdiction) was inserted by 31-2022 s.16(14) and is rightly excluded from an April 2019 answer, and rule (20)(b) and (g) as they now stand are the 2022 and 2024 substitutions, which the excerpt for PROV-M091-001 avoids by stopping at paragraph (a).",
+      "Checked and clean: 23-1927 ss.5, 7, 14, 26 and 28 are untouched by the Registration of Documents amending Acts in the corpus (Nos. 22 of 1958, 48 of 2011, 21 of 2013, 32 of 2022, 18 of 2024), and 1-1907 s.42 records no amendment, so those texts stood in April 2019.",
+      "Not previously noted by the researcher: Notaries (Amendment) Act, No. 13 of 2013 amends 1-1907 but touches only s.27 and Form D, so it does not disturb this map."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Registration of Documents Ordinance s.26 (who may present, and that a certified copy may be presented) was missing entirely. Added as PROV-M091-901.",
+      "Registration of Documents Ordinance s.28(1) (endorsement and return of the instrument after registration) was missing. Added as PROV-M091-902 as background.",
+      "The excerpt for PROV-M091-013 (s.33) stops before the proviso preserving invalidity for non-compliance with any other written law. Marked partially_verified.",
+      "The definitions of 'instrument' in 23-1927 s.6 (for ss.7 and 14) and s.25 (for the presentation provisions) are not in the map. Non-decisive here; recorded in corpus_gaps.",
+      "The stamp duty point that a notary is expected to make on a question about the original and the duplicate, that the duty is borne by the duplicate while the original bears a nominal stamp (Stamp Duty Act, No. 43 of 1982 s.12; Western Province Financial Statute, No. 6 of 1990 s.45), cannot be safely stated for Central Province land in 2019 given s.13 of the Stamp Duty (Special Provisions) Act, No. 12 of 2006. Recorded in corpus_gaps rather than added as a provision.",
+      "Rule (28) of s.31 (two or more notaries) and rule (30) (power of attorney) were rightly left out: the enrichment fixes a single attesting notary and no attorney."
+    ],
+    "case_law_dependence": [
+      "None. The gold answer cites no case and needs none; every step is statutory."
+    ],
+    "enrichment_issues": [
+      "Enrichment does not change the legal issue and leaks no statute name, section number or conclusion. Each synthetic_decisive fact carries a reason and a counterfactual.",
+      "FACT-M091-Q01-001 and FACT-M091-Q01-003 assert the land registration districts of Gangodawila and Nuwara Eliya. Nothing in the corpus establishes either, and the whole rule (29) analysis turns on them. The researcher recorded this in corpus_gaps; a lawyer must confirm the two districts before this becomes gold.",
+      "FACT-M091-Q01-004 (written instructions to register plus funds) tracks the trigger in s.37 closely. It does not name the section, so it is not a leak, but it is close to supplying the legal test as a fact.",
+      "FACT-M091-Q01-005 is marked synthetic_neutral yet activates PROV-M091-001 and PROV-M091-002; that is consistent, since it makes execution regular rather than changing the outcome."
+    ],
+    "duplicate_or_leak_issues": [
+      "No duplicated provision entries; all thirteen original provision ids are distinct and the two added ids do not collide.",
+      "PROV-M091-001 to PROV-M091-005 all point at 1-1907/s31 with different subsection labels, which is unavoidable because the corpus holds s.31 as one 25,684 character section.",
+      "The enriched background does not restate the conclusion or name any enactment."
+    ]
+  },
+  "lawyer_questions": [
+    "Most important: does the notary discharge his duty in respect of the original by presenting the original itself, or is Registration of Documents Ordinance s.26(2) (either the original or a duly attested or certified copy may be presented) the right statement for an examination answer? The gold answer as drafted says the original must go forward, and the verifier reads s.26(2) as contradicting that.",
+    "Was Gangodawila within the Colombo land registration district, and Nuwara Eliya town within the Nuwara Eliya land registration district, in March 2019? The entire rule (29) analysis and the 15 April 2019 deadlines depend on these two enriched facts, which no corpus provision supports.",
+    "Is the 2024 substitution of 'Form F 1' for 'Form F' in rules (26)(a)(i) and (29) immaterial enough that the current excerpts may stand for an April 2019 matter, or should the April 2019 wording be sourced before this is used as gold?",
+    "What was the penal consequence in April 2019 of failing to transmit the duplicate under rule (26) or the certified copy under rule (29)? The corpus holds only the section 34 substituted in 2022, so the map cannot state the sanction that then applied.",
+    "Should the answer also deal with stamp duty on the original as against the duplicate, and if so which enactment governed a Central Province land transfer in 2019?"
+  ]
+}

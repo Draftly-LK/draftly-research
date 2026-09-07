@@ -1,0 +1,99 @@
+{
+  "benchmark_matter_id": "M059",
+  "verifier": "verifier-M059",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:46:39Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M059-001",
+      "decision": "verified",
+      "note": "s.47A(1) opening words and paragraph (a) confirmed verbatim; in force from 1990, no later amendment event recorded, so applicable at 2021-10."
+    },
+    {
+      "provision_id": "PROV-M059-002",
+      "decision": "verified",
+      "note": "s.46 confirmed verbatim; substituted by Act No. 3 of 1990 and unchanged since, so the quoted text is the text in force in 2021."
+    },
+    {
+      "provision_id": "PROV-M059-003",
+      "decision": "verified",
+      "note": "s.47A(7)(a)-(d) confirmed verbatim; paragraph (d) names the National Savings Bank, and the footnote attached to paragraph (e) concerns DFCC Bank only."
+    },
+    {
+      "provision_id": "PROV-M059-004",
+      "decision": "verified",
+      "note": "Closing words of s.47A(1) confirmed verbatim, including the printed oddities 'subject To' and 'subsection(2)'."
+    },
+    {
+      "provision_id": "PROV-M059-005",
+      "decision": "verified",
+      "note": "s.47A(2) confirmed verbatim; correctly treated as a supporting qualification rather than an indispensable step."
+    },
+    {
+      "provision_id": "PROV-M059-006",
+      "decision": "verified",
+      "note": "s.47A(3) confirmed verbatim; supporting role is right, since the notary's duty explains the form of the instrument rather than the Bank's motive."
+    },
+    {
+      "provision_id": "PROV-M059-007",
+      "decision": "verified",
+      "note": "s.47 confirmed verbatim; the corpus graph records s.47 as excepting s.46, which matches the recorded reasoning edge."
+    },
+    {
+      "provision_id": "PROV-M059-008",
+      "decision": "partially_verified",
+      "note": "The CPC s.218 excerpt is verbatim and the background role is right, but it stops before the proviso, whose paragraph (n) exempts an unmortgaged house that is the judgment-debtor's actual residence; the extended remedy therefore does not reach every asset of the mortgagor."
+    },
+    {
+      "provision_id": "PROV-M059-901",
+      "decision": "verified",
+      "note": "Added by the verifier: s.47A(1)(b), the notary's signed endorsement, checked verbatim against the corpus."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M059-901",
+      "reason": "Claim CL-M059-Q01-003 and the rule part of the gold answer both assert that the separate instrument must carry the notary's signed endorsement, but the excerpt in PROV-M059-001 stops at the end of s.47A(1)(a). PROV-M059-901 supplies the verbatim text of s.47A(1)(b) and has been added to the question's supporting provisions, to CL-M059-Q01-003, and as a jointly_required reasoning edge from PROV-M059-001."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M059-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "The Bank's reason is on the face of the Act: s.46 confines a mortgage decree to the mortgaged property, s.47 blocks contracting out of it, and s.47A is the mechanism for renouncing it, with the National Savings Bank named in s.47A(7)(d) and the Rs.2,000,000 principal above the Rs.150,000 threshold. All eleven claims are supported by cited provisions, and the two application claims also rest on scenario facts, so all are marked verified. No indispensable provision is rejected or unresolved, so the status stands. Hop count kept at 3, with the reasoning recorded in hop_count_basis. Enrichment is correctly not applied for a keep question, and the answer cites no case law."
+    }
+  ],
+  "disagreements": [],
+  "red_team": {
+    "unsupported_claims": [
+      "gold_answer_draft.rule calls s.47A 'the single statutory exception' to s.46. That holds for an individual mortgagor, but Companies Act ss.437(4)(b) and 439(3)(b) disapply s.46 for the appointment of a receiver over company property, so the phrase is broader than the corpus supports. No answer_claim repeats it, and the gold prose has not been rewritten."
+    ],
+    "temporal_issues": [
+      "The answer depends on the Rs.150,000 threshold in s.47A(1) still being the figure in October 2021. The corpus records the section as inserted in 1990 with no later amendment event, and a grep for 'hundred and fifty thousand' returns only s.47A, but the Mortgage (Amendment) Act No. 3 of 1990 is not held as a separate document and no monetary-updating instrument is in the corpus, so a later revision cannot be positively excluded. The researcher flagged this and the flag is accurate.",
+      "s.47A(6) excludes mortgages created before the section came into force. The proposed bond would be created in 2021, so the exclusion does not bite; correctly noted by the researcher."
+    ],
+    "missing_definitions_or_exceptions": [
+      "s.47A(1)(b), the notary's signed endorsement, was asserted in the answer but covered by no cited excerpt. Added as PROV-M059-901.",
+      "The proviso to CPC s.218 exempts listed property from seizure and sale, notably paragraph (n) on an unmortgaged residence. Recorded against PROV-M059-008 rather than added as a provision, because the question carries 2 marks and asks only why the Bank wants the declaration.",
+      "'lending institution' is not defined in Mortgage Act s.2; the corpus confirms the definition is internal to s.47A(7), as the researcher recorded. s.2 defines 'mortgage', 'mortgagee', 'hypothecary action', 'land' and 'appointed date', none of which the answer turns on, and the s.2 body in the corpus is degraded because the defined terms have been stripped out of the running text.",
+      "s.47A(5) read with s.69 (bond attested by an officer of a lending institution) was rejected by the researcher. Confirmed: s.69 concerns a mortgage created by deposit of title deeds with an approved credit agency, and nothing in the facts says the bond will be attested by a bank officer."
+    ],
+    "case_law_dependence": [
+      "None. The reason for the declaration is stated in ss.46, 47 and 47A themselves; no Roman-Dutch doctrine or judicial gloss is needed for a complete 2-mark answer."
+    ],
+    "enrichment_issues": [
+      "None. M059-Q01 is a keep question and enrichment.applied is false, with no added facts."
+    ],
+    "duplicate_or_leak_issues": [
+      "PROV-M059-001, 003, 004, 005, 006 and the added 901 all carry section_id 6-1949/s47A. This is subsection-level splitting of one section rather than duplication, and each excerpt is a distinct passage; the subsection fields distinguish them.",
+      "The claims cite scenario facts as 'BG-1', 'BG-2' and 'BG-3'. Those identifiers are defined nowhere in the map, since no enrichment facts were added. The support is traceable to the matter background by reading, but the labels are opaque."
+    ]
+  },
+  "lawyer_questions": [
+    "Was the Rs.150,000 threshold in Mortgage Act s.47A(1) ever revised between 1990 and October 2021? The corpus holds only the consolidated Act and records no later amendment, and the gateway reasoning fails if the figure was raised above Rs.2,000,000.",
+    "Is it right to describe s.47A as the only route by which a mortgagor's other property becomes liable under a mortgage decree, given the receivership carve-outs in Companies Act ss.437 and 439 for company grantors?",
+    "For a 2-mark answer, should the proviso to CPC s.218, in particular the exemption of an unmortgaged residence, be mentioned as a limit on the extended remedy, or is that beyond what the question asks?"
+  ]
+}

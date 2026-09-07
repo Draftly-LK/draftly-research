@@ -1,0 +1,64 @@
+{
+  "benchmark_matter_id": "M044",
+  "source_matter_id": "P08-Q04-M01",
+  "grouping_key": "P08-Q04-M01",
+  "paper_no": 8,
+  "question_no": 4,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Nimal Jayakody is a Notary practicing in Colombo. His client Shehan De Silva wishes to buy a property situated in Matara. He wants Nimal Jayakody to attest his Transfer Deed but Nimal does not know the owner of the Property Mrs. Diana Kulathunga. She wants her Notary Ciryl Peiris who is practicing in Matara to draft and attest the Deed of Transfer. Diana Kulathunga does not want to come to Colombo.",
+    "normalized": "Nimal Jayakody is a Notary practicing in Colombo. His client Shehan De Silva wishes to buy a property situated in Matara. He wants Nimal Jayakody to attest his Transfer Deed but Nimal does not know the owner of the Property Mrs. Diana Kulathunga. She wants her Notary Ciryl Peiris who is practicing in Matara to draft and attest the Deed of Transfer. Diana Kulathunga does not want to come to Colombo.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P08-Q04-P01"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M044-Q01",
+      "atomic_id": "P08-Q04-P01",
+      "part_uid": "paper-08/q4/1",
+      "part_id": "1",
+      "item_id": null,
+      "marks": 6,
+      "pdf_page": 32,
+      "question_original": "How can they execute this Deed of Transfer? Explain the duties of both Notaries.",
+      "question_normalized": "How can they execute this Deed of Transfer? Explain the duties of both Notaries.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Nimal Jayakody is a Notary practicing in Colombo. His client Shehan De Silva wishes to buy a property situated in Matara. He wants Nimal Jayakody to attest his Transfer Deed but Nimal does not know the owner of the Property Mrs. Diana Kulathunga. She wants her Notary Ciryl Peiris who is practicing in Matara to draft and attest the Deed of Transfer. Diana Kulathunga does not want to come to Colombo.",
+      "effective_background_normalized": "Nimal Jayakody is a Notary practicing in Colombo. His client Shehan De Silva wishes to buy a property situated in Matara. He wants Nimal Jayakody to attest his Transfer Deed but Nimal does not know the owner of the Property Mrs. Diana Kulathunga. She wants her Notary Ciryl Peiris who is practicing in Matara to draft and attest the Deed of Transfer. Diana Kulathunga does not want to come to Colombo.",
+      "source_quote": "1. Nimal Jayakody is a Notary practicing in Colombo. His client Shehan De Silva wishes to\nbuy a property situated in Matara. He wants Nimal Jayakody to attest his Transfer Deed\nbut Nimal does not know the owner of the Property Mrs. Diana Kulathunga. She wants\nher Notary Ciryl Peiris who is practicing in Matara to draft and attest the Deed of\nTransfer. Diana Kulathunga does not want to come to Colombo. How can they execute\nthis Deed of Transfer? Explain the duties of both Notaries.\n(6 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.75,
+        "flags": [
+          "question combines two requests"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "confidence=0.75"
+      ],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2022-10",
+  "exam_session": "OCTOBER 2022",
+  "matter_tier": "B",
+  "tier_a_question_count": 0
+}

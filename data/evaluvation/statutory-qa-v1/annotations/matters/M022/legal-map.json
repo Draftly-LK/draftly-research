@@ -1,0 +1,334 @@
+{
+  "benchmark_matter_id": "M022",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M022",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:08:21Z",
+    "verification_agent": "verifier-M022",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:20:05Z"
+  },
+  "matter_reference_date": "2025-10",
+  "matter_reference_date_basis": "Exam session recorded in candidates/matters/M022.json ('OCTOBER 2025', matter_reference_date 2025-10); the law is taken as it stood in October 2025, i.e. including the Notaries (Amendment) Acts No. 31 of 2022 and No. 6 of 2024.",
+  "corpus_gaps": [
+    "Evidence Ordinance (No. 14 of 1895) is not in the frozen corpus, so the professional-communications privilege and the compellability of a notary as a witness could not be checked against the statute text.",
+    "No code or rules of professional conduct for attorneys-at-law and notaries is in the corpus; any duty of confidence resting on professional-conduct rules rather than on the Notaries Ordinance could not be verified.",
+    "Roman-Dutch common law and case law on confidence and testamentary secrecy are outside the corpus by design; they are not needed for the conclusion here, which rests wholly on Notaries Ordinance s.31 rule (1).",
+    "The Wills Ordinance No. 21 of 1844 in the corpus contains nothing on secrecy or disclosure by the attesting notary (checked by toc and grep)."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M022-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (1)",
+      "relevant_excerpt": "(1) He shall not divulge the secrets confided to him or of which he becomes possessed in the execution of his office, unless with the express permission of his employer or when required to do so by law.",
+      "why_relevant": "This is the notary's statutory duty of secrecy and the only provision that decides the question. It covers both secrets 'confided to him' and secrets 'of which he becomes possessed in the execution of his office', which is how a notary learns that a will exists and what it says. It also states the only two exceptions - the express permission of his employer (here the testator, who instructed and employed him) and a legal compulsion to disclose.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (1) is original 1907 text and is in force at 2025-10. Section 31 as a whole has been amended many times (latest change year 2024), but the corpus text of Notaries (Amendment) Act No. 31 of 2022 s.16 begins its substitutions at rule (3), and No. 6 of 2024 s.3 contains no reference to rule (1); neither touches rule (1). Section 34 as substituted in 2022 still lists rule (1), which confirms rule (1) survives in the consolidated text.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M022-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (24)",
+      "relevant_excerpt": "and he shall keep a register thereof with a convenient index for the purpose of easy reference; and every such register shall be substantially in the form F in the Second Schedule, but in the case of wills and codicils only the number and date of the instrument shall be inserted in the register.",
+      "why_relevant": "Shows that the Ordinance itself treats a will as confidential where the register of other instruments is fuller: for wills and codicils the notary records only the number and date, not the parties or the contents. Supports reading the existence and contents of a will as a secret within rule (1) rather than as ordinary notarial information.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at 2025-10. Rule (24) is listed in the 2022 substitution of section 34 as a rule still in existence; the corpus consolidated text carries the wills-and-codicils qualification.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and rule (24) is in force at 2025-10, but the inference in why_relevant that the Ordinance keeps the parties out of the notary's register no longer holds generally: rule (20)(h)(ii), inserted by Notaries (Amendment) Act No. 31 of 2022 s.16(11)(d), now requires the notary to enter in his deed register the number, the date and the name of the testator of a will; role remains supporting only."
+    },
+    {
+      "provision_id": "PROV-M022-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (27)(a)(i)",
+      "relevant_excerpt": "the duplicate of every deed or instrument (except wills and codicils) executed or acknowledged before or attested by him during the preceding month, together with a list in duplicate, signed by him, of all such deeds or instruments, which list shall be substantially in the Form F 1 in the Second Schedule: Provided, however, that in the case of wills and codicils only the number and date of the document shall be inserted in such list;",
+      "why_relevant": "A second indication of the same legislative policy: unlike other instruments, the duplicate of a will is not transmitted to the Registrar of Lands and only its number and date appear in the monthly list, so the contents of a will are not put into any public channel during the testator's lifetime.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at 2025-10; the corpus consolidated text of rule (27) carries the wills-and-codicils exception and the proviso.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and in force, but the subsection label is wrong: this text is rule (26)(a)(i) (47-2011 s.3 renumbered rule (26)(a) as (26)(a)(i) and inserted the (a)(ii) certified-copy paragraph that immediately follows it in the corpus text, and 6-2024 s.3(8) substituted 'Form F 1' in rule (26)(a)(i)); rule (27) was repealed outright by 31-2022 s.16(12) and no longer exists at 2025-10, so the citation in the map and in the gold answer prose must be corrected to rule (26)(a)(i)."
+    },
+    {
+      "provision_id": "PROV-M022-004",
+      "section_id": "1-1907/s34",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "34",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "(a) rules (1), (31) or (32) set out in section 31, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate, be liable to a fine not exceeding five thousand rupees, in addition to any civil liability he may incur thereby;",
+      "why_relevant": "Attaches the sanction to a breach of rule (1) and so answers the 'discuss' element: divulging is not merely improper, it is an offence triable summarily before a Magistrate, and the fine is expressly in addition to any civil liability the notary may incur.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 34 was substituted by Notaries (Amendment) Act No. 31 of 2022 s.17; the substituted text, in force well before 2025-10, is the text quoted and is the version applicable at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M022-005",
+      "section_id": "1-1907/s41",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "41",
+      "subsection": "(4)",
+      "relevant_excerpt": "the documents specified in paragraph (a) of subsection (1) (not being wills or codicils, or drafts, minutes, or copies of the same)",
+      "why_relevant": "Background only. Even when notarial records change hands on death, retirement or sale of a notarial practice, wills and codicils and their drafts and copies are carved out of what may be transferred. Context for the confidential status of a will; it does not itself bear on a request made during the testator's lifetime.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at 2025-10; section 41 was substituted by Notaries (Amendment) Act No. 31 of 2022 s.20 and the corpus consolidated text carries subsection (4) with the wills-and-codicils carve-out.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and subsection (4) is correct, but why_relevant overstates it: the wills-and-codicils carve-out appears only in s.41(4) (transfer to a notary who has purchased the goodwill of the practice); s.41(2) and s.41(3) let a continuing partner or a principal retain the same paragraph (1)(a) documents with no wills exception, so this is weaker evidence of a general legislative policy than stated; background role is correct."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M022-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The duty, its scope and its only two exceptions are stated in full in Notaries Ordinance s.31 rule (1), and the consequence of breach in s.34(1)(a). On the facts (testator alive, no permission, no legal compulsion) the answer follows from the statutory text alone; no judicial authority or common-law doctrine is needed to reach it. Case law and the Evidence Ordinance privilege would enrich a discussion of what counts as being 'required to do so by law', but they are not indispensable to the conclusion.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M022-Q01-01",
+          "issue": "Whether knowledge that a client has executed a last will, and knowledge of its contents, is a secret confided to the notary or one of which he became possessed in the execution of his office.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M022-Q01-02",
+          "issue": "Whether the testator's children can supply the 'express permission of his employer' that alone permits disclosure, or whether that permission must come from the testator who instructed the notary.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M022-Q01-03",
+          "issue": "Whether an informal request by the testator's children, made while he is alive and unaccompanied by any court order or lawful demand, brings the notary within the exception for disclosure 'required to do so by law'.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M022-Q01-04",
+          "issue": "What the notary is exposed to if she does divulge the information.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M022-001",
+        "PROV-M022-004"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M022-002",
+        "PROV-M022-003"
+      ],
+      "background_provision_ids": [
+        "PROV-M022-005"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Two necessary steps: (1) the prohibition and its two exceptions in s.31 rule (1), which decides that the notary must not disclose; and (2) the linked penal provision s.34(1)(a), needed to support the claim about the consequence of breach that the 'discuss' element of the question calls for. The wills-specific rules (24) and (27)(a)(i) reinforce the reading of rule (1) but the conclusion does not depend on them, so they are not counted. Verifier: hop count of 2 confirmed. s.34(1)(a) is kept indispensable because the 'Discuss' element of the question and claims CL-M022-Q01-004 and CL-M022-Q01-009 turn on the consequence of breach, and s.34(1)(a) is the only provision in the corpus that attaches a sanction to rule (1); the wills-specific rules (24) and (26)(a)(i) remain supporting and are not counted.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M022-004",
+          "to_provision_id": "PROV-M022-001",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M022-002",
+          "to_provision_id": "PROV-M022-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M022-003",
+          "to_provision_id": "PROV-M022-001",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Sunil who is a 20 year old boy is suffering from a non-curable chronic disease and intends to execute a Last Will.\n\nChildren of a Testator of a Last Will inquire from the Notary who attested the same as to whether their father has executed a Will. Testator is alive.",
+        "enriched_background": "Mr. Ranjith Bandara Weerasekara, a retired schoolmaster of Gampaha, instructed Mrs. K. A. Nirmali Perera, a notary practising in the Gampaha district, to draw his last will. The will was executed before her at her office on 12 March 2019 and bears number 1487 in the series of instruments attested by her. She retains the protocol of the will and has entered only its number and date in her register. Mr. Weerasekara is alive, lives in his own house at Gampaha and manages his own affairs, and he has never given the notary permission, orally or in writing, to tell anyone that he has made a will or what it contains.\n\nOn 4 August 2025 his two adult children, Dinesh Weerasekara and Shanika Weerasekara, called at the notary's office and asked her whether their father had executed a will before her and, if he had, who takes under it. They said they wished to know whether the family land at Yakkala had been left to them. They produced no authority from their father, and neither they nor anyone else has served on the notary any order, summons or written demand from a court or from any public officer touching the will.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M022-Q01-001",
+            "fact": "The testator is Mr. Ranjith Bandara Weerasekara, a retired schoolmaster of Gampaha; the notary who attested his will is Mrs. K. A. Nirmali Perera, practising in the Gampaha district; the enquirers are his two adult children, Dinesh Weerasekara and Shanika Weerasekara.",
+            "origin": "synthetic_neutral",
+            "reason": "The original scenario names nobody (missing_fact_types: party_identity). Named parties make it determinate who employed the notary and who is asking, without changing the legal analysis.",
+            "activates_provision_ids": [
+              "PROV-M022-001"
+            ],
+            "counterfactual_effect": "None on the outcome; the names are neutral. Had the enquirer been the testator himself, rule (1) would not be engaged at all.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M022-Q01-002",
+            "fact": "The will was drawn on the testator's instructions and executed before the notary at her office on 12 March 2019; it bears number 1487 in her series of attested instruments, she retains its protocol, and only the number and date of the will are entered in her register.",
+            "origin": "synthetic_neutral",
+            "reason": "The original scenario does not identify the instrument or how the notary holds it (missing_fact_types: relevant_document). This fixes that the notary learned of the will in the execution of her office and holds it under the wills-specific record-keeping regime.",
+            "activates_provision_ids": [
+              "PROV-M022-001",
+              "PROV-M022-002",
+              "PROV-M022-003"
+            ],
+            "counterfactual_effect": "If the notary had merely heard of the will socially and had not attested it, the information would not be a secret of which she became possessed in the execution of her office and rule (1) would not apply to her in that capacity.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M022-Q01-003",
+            "fact": "The testator is alive, competent and managing his own affairs, and he has never given the notary permission, orally or in writing, to disclose that he has made a will or what it contains.",
+            "origin": "synthetic_decisive",
+            "reason": "Rule (1) turns on whether the express permission of the notary's employer exists. The original scenario says only that the testator is alive; the absence of permission has to be stated for the question to have one answer.",
+            "activates_provision_ids": [
+              "PROV-M022-001"
+            ],
+            "counterfactual_effect": "If the testator had given the notary express permission to tell his children, the first exception in rule (1) would apply and the notary could disclose.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M022-Q01-004",
+            "fact": "The children produced no authority from their father, and no order, summons or written demand from a court or from any public officer relating to the will has been served on the notary.",
+            "origin": "synthetic_decisive",
+            "reason": "Rule (1) also permits disclosure where the notary is required to do so by law. The scenario must exclude any such compulsion for the answer to be determinate.",
+            "activates_provision_ids": [
+              "PROV-M022-001"
+            ],
+            "counterfactual_effect": "If a court had ordered production or a public officer had lawfully demanded the information, the second exception in rule (1) would apply and disclosure to that extent would not be a breach.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the notary who attested the will may tell the testator's children, during the testator's lifetime and without his permission, that he has executed a will and what it contains; and what the notary is exposed to if she does.",
+        "rule": "It is the duty of every notary, under Notaries Ordinance s.31 rule (1), not to divulge the secrets confided to him or of which he becomes possessed in the execution of his office. Rule (1) allows only two exceptions: the express permission of his employer, or a case where he is required to divulge by law. The Ordinance treats a will as confidential in its own record-keeping rules as well: under s.31 rule (24) the notary preserves the protocol of the will but enters only the number and date of the instrument in his register, and under s.31 rule (27)(a)(i) the duplicate of a will is not delivered to the Registrar of Lands and only the number and date of the document go into the monthly list. A notary who acts in violation of rule (1) is guilty of an offence under s.34(1)(a) and is liable, on conviction after summary trial before a Magistrate, to a fine not exceeding five thousand rupees, in addition to any civil liability he may incur.",
+        "application": "The notary learned that the will exists, and learned its contents, because the testator instructed her to draw it and executed it before her; that is information of which she became possessed in the execution of her office, and it is exactly the kind of information the Ordinance keeps out of her register and out of the monthly list. The employer for the purposes of rule (1) is the testator, who engaged her, and he is alive and has given no permission of any kind. His children are not her employers and cannot waive a secrecy owed to their father; while he lives they have no vested interest in his estate, only an expectation. Nor is she required by law to answer: no court order, summons or lawful demand by a public officer has been served on her, and an informal enquiry at her office is not legal compulsion. Neither exception in rule (1) is therefore satisfied, so the prohibition applies in full, and it applies to the bare fact that a will was executed as much as to its contents, since confirming the fact would itself divulge a secret.",
+        "conclusion": "No. The notary should not divulge the information. She should decline to say whether a will was executed before her or what it provides, and direct the children to their father, who alone can authorise disclosure while he lives. She may answer only if the testator gives express permission or if she is required by law to do so, for example under a court order. If she divulges without either, she commits an offence under s.34(1)(a) and is liable to a fine not exceeding five thousand rupees on summary trial before a Magistrate, in addition to any civil liability, and the breach may also be treated as misconduct in her office as a notary."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M022-Q01-001",
+          "claim_text": "A notary is under a statutory duty not to divulge secrets confided to him or of which he becomes possessed in the execution of his office.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M022-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M022-Q01-002",
+          "claim_text": "The duty of secrecy yields only in two cases: where the notary has the express permission of his employer, or where he is required to divulge by law.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M022-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M022-Q01-003",
+          "claim_text": "The Notaries Ordinance treats wills as specially confidential: only the number and date of a will go into the notary's register, and the duplicate of a will is not sent to the Registrar of Lands, only its number and date appearing in the monthly list.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M022-002",
+            "PROV-M022-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "rejected",
+          "verifier_note": "Rejected on two grounds: (a) the register limb is no longer an accurate statement of the law at 2025-10, because s.31 rule (20)(h)(ii) (inserted by 31-2022 s.16(11)(d)) requires the name of the testator, as well as the number and date, to be entered in the notary's deed register for a will; and (b) the monthly-list limb is sourced to PROV-M022-003, which cites the repealed rule (27) instead of rule (26)(a)(i). The claim is supporting only, so the conclusion is unaffected, but the gold answer's rule paragraph repeats both defects."
+        },
+        {
+          "claim_id": "CL-M022-Q01-004",
+          "claim_text": "A notary who acts in violation of the secrecy rule is guilty of an offence and is liable, on conviction after summary trial before a Magistrate, to a fine not exceeding five thousand rupees in addition to any civil liability.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M022-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M022-Q01-005",
+          "claim_text": "Both the existence of the will and its contents are information of which the notary became possessed in the execution of her office, because she drew and attested it on the testator's instructions.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M022-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M022-Q01-002",
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M022-Q01-006",
+          "claim_text": "The employer whose express permission could release the notary is the testator, who engaged her; he is alive and has given no such permission, and his children cannot give it in his place.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M022-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M022-Q01-003",
+            "BG-2"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "verifier_note": "Verified on the corpus text, but flagged for the lawyer: 'employer' in rule (1) is undefined in the Ordinance (s.43 defines only 'Council of Legal Education', 'High Court Judge' and 'Registrar-General') and the word appears nowhere else in 1-1907, so reading it as the testator who instructed the notary is an interpretation the statute does not itself state."
+        },
+        {
+          "claim_id": "CL-M022-Q01-007",
+          "claim_text": "The notary is not required by law to answer, because no court order, summons or lawful demand by a public officer has been served on her and an informal enquiry at her office is not legal compulsion.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M022-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M022-Q01-004"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M022-Q01-008",
+          "claim_text": "Neither exception being satisfied, the notary should not divulge the information, and should decline even to confirm whether a will was executed before her, referring the children to their father.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M022-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M022-Q01-003",
+            "FACT-M022-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M022-Q01-009",
+          "claim_text": "If she does divulge without permission or legal compulsion, she commits an offence punishable with a fine not exceeding five thousand rupees on summary trial before a Magistrate, in addition to any civil liability.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M022-004",
+            "PROV-M022-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Authority requirement (statute_only), the two indispensable provisions (s.31 rule (1), s.34(1)(a)) and the conclusion are all verified, so the substance of the answer stands. The question is held for legal review because the gold answer prose, which the verifier may not rewrite, cites 's.31 rule (27)(a)(i)' for the monthly-list point when that rule was repealed by Notaries (Amendment) Act No. 31 of 2022 s.16(12) and the text quoted is rule (26)(a)(i), and because the same paragraph states that only the number and date of a will go into the notary's register, which s.31 rule (20)(h)(ii) (inserted by 31-2022 s.16(11)(d)) contradicts from 2022 by also requiring the name of the testator. Claim CL-M022-Q01-003 is rejected for both reasons. Correct the citation and the register sentence in the rule paragraph and the question can return to proposed_gold at hop count 2.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

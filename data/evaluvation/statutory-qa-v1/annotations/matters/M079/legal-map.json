@@ -1,0 +1,992 @@
+{
+  "benchmark_matter_id": "M079",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M079",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T23:01:36Z",
+    "verification_agent": "verifier-M079",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T23:11:50Z"
+  },
+  "matter_reference_date": "2019-10",
+  "matter_reference_date_basis": "Exam session stated in the candidate matter file as OCTOBER 2019; every instrument in the scenario is dated between 2006 and 2018, so the law is taken as it stood in October 2019.",
+  "corpus_gaps": [
+    "Partition Law No. 21 of 1977 is absent from the corpus. The root of title is a Final Decree in DC Negambo Partition Action No. 321/P, and the provision making such a decree good against the world cannot be cited.",
+    "The Age of Majority Ordinance is absent. Civil Procedure Code s.502 fixes full age at eighteen only 'For the purposes of this Chapter', so the general age of majority governing Gayan Peiris in 2014 has no citable source here.",
+    "No statute in the corpus states the effect of a deed executed by a minor, or the requirement that a curator obtain District Court sanction before alienating a minor's immovable property. Both are Roman-Dutch common law worked out in judicial authority.",
+    "No statute in the corpus states the consequence of a Thesawalamai disposition made without the husband's written consent. Ordinance No. 1 of 1911 s.6 says 'but not otherwise' and no more; whether the deed is void or voidable at the husband's instance is a matter of case law.",
+    "The corpus text of Prevention of Frauds Ordinance s.2 is the version consolidated after Act No. 30 of 2022 and Act No. 4 of 2024. The wording in force for the 2008 to 2018 deeds is not separately available, so only the unamended opening words have been relied on.",
+    "The corpus text of Wills Ordinance s.2 is the version substituted by Act No. 29 of 2022, later than Last Will No. 980 of 2010 and later than the matter reference date. It is recorded as background only.",
+    "Nothing in the corpus governs an Executor's Conveyance or an Administrator's Conveyance as an instrument; the Civil Procedure Code testamentary sections reach only as far as the grant of probate or letters of administration.",
+    "The corpus holds no provision requiring a curator or guardian to be joined as an executant of a deed conveying a minor's immovable property. Civil Procedure Code s.582 reaches only the institution or defence of actions, so the conveyancing consequence of minority has no citable source here.",
+    "Jaffna Matrimonial Rights and Inheritance Ordinance s.6 states the written-consent rule for a wife's separate estate and s.19 defines thediatheddam, but no section in the corpus states whether a wife's thediatheddam acquired for valuable consideration is subject to the same consent requirement."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M079-001",
+      "section_id": "15-1876/s22",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "22",
+      "subsection": null,
+      "relevant_excerpt": "When any person shall die intestate as to any of his or her property, leaving a spouse surviving, the surviving spouse shall inherit one-half of the property of such person.",
+      "why_relevant": "Fixes the share of Kamani, the surviving spouse of Lalith Perera who died intestate on 2 March 2018, in Lot 5B (Assessment No. 3/2B) at one-half.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1876; the corpus records no amendment event for this section, so the text stood unchanged at the matter reference date of October 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M079-002",
+      "section_id": "15-1876/s24",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "24",
+      "subsection": null,
+      "relevant_excerpt": "Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita",
+      "why_relevant": "Gives the remaining one-half of Lalith Perera's estate to his children Hasini and Kushan in equal per capita shares, and excludes Ruvini, who is not his descendant.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1876; no amendment event is recorded in the corpus, so the text stood unchanged at October 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M079-003",
+      "section_id": "15-1876/s21",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "21",
+      "subsection": "(1)",
+      "relevant_excerpt": "Inheritance ab interstate to the immovable property in Sri Lanka of a person deceased shall be governed and regulated by the following provisions of this Ordinance wherever such person may have or have had his actual or matrimonial domicile.",
+      "why_relevant": "Establishes that intestate succession to Lot 5B, immovable property in Sri Lanka, is governed by Part III of this Ordinance rather than by any other regime.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1876; no amendment event is recorded in the corpus for this section.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M079-004",
+      "section_id": "15-1876/s20",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "20",
+      "subsection": null,
+      "relevant_excerpt": "The following sections of this Ordinance shall apply to the estates of such persons only as shall die after the proclamation of this Ordinance, and shall be then unmarried or (if married) shall have been married after the proclamation of this Ordinance.",
+      "why_relevant": "Threshold condition for applying Part III: Lalith Perera died in 2018 and was married long after the 1876 proclamation, so the inheritance sections apply to his estate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1876; no amendment event is recorded in the corpus for this section.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M079-005",
+      "section_id": "15-1876/s23",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "23",
+      "subsection": null,
+      "relevant_excerpt": "Subject to the right of the surviving spouse in the preceding section mentioned, the right of inheritance is divided in the following order as respects (a) descendants, (b) ascendants, (c) collaterals.",
+      "why_relevant": "Orders the classes of heirs and makes the children's entitlement expressly subject to the surviving spouse's one-half, linking section 22 to section 24.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1876; no amendment event is recorded in the corpus for this section.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M079-006",
+      "section_id": "1-1911/s6",
+      "act_id": "1-1911",
+      "formal_title": "Jaffna Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 1 of 1911",
+      "section": "6",
+      "subsection": null,
+      "relevant_excerpt": "Such woman shall, subject and without prejudice to any such trusts as aforesaid, have as full power of disposing of and dealing with such property by any lawful act inter vivos without the consent of the husband in case of movables, or with his written consent in the case of immovables, but not otherwise, or by last will without consent, as if she were unmarried.",
+      "why_relevant": "A married woman subject to the Thesawalamai may dispose of immovable property inter vivos only with her husband's written consent. Mala Nadaraja sold Lot 5A by Deed No. 456 of 3 February 2015 while Mohan Nadaraja was alive, so his written consent was required; by Deed No. 789 of 5 April 2017 she was a widow and no consent was needed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 6 was last amended by Ordinance No. 58 of 1947, well before the 2015 and 2017 deeds and before the matter reference date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording verbatim, but section 6 governs the wife's separate estate, that is property held at marriage or acquired during marriage by gift, inheritance or conversion, whereas this map characterises Lots 5A and 5B as thediatheddam bought for valuable consideration under section 19(a), so on the corpus text the written-consent rule does not plainly reach these lots."
+    },
+    {
+      "provision_id": "PROV-M079-007",
+      "section_id": "1-1911/s2",
+      "act_id": "1-1911",
+      "formal_title": "Jaffna Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 1 of 1911",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "This Ordinance shall apply only to those Tamils to whom the Tesawalamai applies, and it shall apply in respect of their movable and immovable property wherever situate.",
+      "why_relevant": "Application provision. It brings Mala Nadaraja, stated to be governed by the Thesawalamai, within the Ordinance and makes it bite on the Hendala land even though that land lies outside the Northern Province.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Last amended by Ordinance No. 58 of 1947; unchanged at the matter reference date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M079-008",
+      "section_id": "1-1911/s20",
+      "act_id": "1-1911",
+      "formal_title": "Jaffna Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 1 of 1911",
+      "section": "20",
+      "subsection": null,
+      "relevant_excerpt": "On the death of either spouse one-half of the thediatheddam which belonged to the deceased spouse, and has not been disposed of by last will or otherwise, shall devolve on the surviving spouse and the other half shall devolve on the heirs of the deceased spouse.",
+      "why_relevant": "Divides only the deceased spouse's thediatheddam. Lot 5B was Mala Nadaraja's own acquisition, not Mohan Nadaraja's, so on his death none of Lot 5B passed to his heirs and she remained sole owner when she sold to Lalith Perera in 2017.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Last amended by Ordinance No. 58 of 1947; unchanged at the matter reference date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M079-009",
+      "section_id": "1-1911/s19",
+      "act_id": "1-1911",
+      "formal_title": "Jaffna Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 1 of 1911",
+      "section": "19",
+      "subsection": "(a)",
+      "relevant_excerpt": "Property acquired by that spouse during the subsistence of the marriage for valuable consideration, such consideration not forming or representing any part of the separate estate of that spouse.",
+      "why_relevant": "Defines thediatheddam. Lots 5A and 5B were bought by Mala Nadaraja for value on 1 August 2014 during her marriage, so they answer this description and section 20 governs what happened on her husband's death.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Last amended by Ordinance No. 58 of 1947; unchanged at the matter reference date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The definition is quoted correctly, but section 19(a) excludes consideration drawn from the spouse's separate estate and the scenario says nothing about where Mala Nadaraja's purchase money came from, so the thediatheddam characterisation of Lots 5A and 5B is an inference rather than a finding on the text."
+    },
+    {
+      "provision_id": "PROV-M079-010",
+      "section_id": "1-1911/s8",
+      "act_id": "1-1911",
+      "formal_title": "Jaffna Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 1 of 1911",
+      "section": "8",
+      "subsection": null,
+      "relevant_excerpt": "it shall be lawful for the wife to apply by petition to the District Court of the district in which she resides or in which the property is situated for an order authorizing her to dispose of or deal with such property without her husband's consent",
+      "why_relevant": "The alternative to joining the husband in the deed: where consent cannot be had or is unreasonably withheld, a District Court order dispensing with it must be obtained before the wife executes the transfer.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1911; the corpus records no amendment event for this section.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Section 8 is not a free-standing alternative to consent: it operates only where the wife is deserted or separated, or the husband is imprisoned for over two years, of unsound mind, of unknown abode, unreasonably withholding consent, or where the interests of the wife or children require it, and no fact in the scenario brings Mala Nadaraja within any of those cases."
+    },
+    {
+      "provision_id": "PROV-M079-011",
+      "section_id": "2-1889/s582",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "582",
+      "subsection": null,
+      "relevant_excerpt": "Every person who shall claim a right to have charge of property in trust for a minor, under a will or deed, or by reason of nearness of kin, or otherwise, may apply to the Family Court for a certificate of curatorship; and no person shall be entitled to institute or defend any action connected with the estate of a minor, of which he claims the charge, until he shall have obtained such certificate",
+      "why_relevant": "The statutory route by which charge of a minor's property is taken. Gayan Peiris was 15 when Deed No. 1234 of 1 August 2014 purported to sell his Lot 5A, so a duly certificated curator, not the minor himself, had to deal with that property.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Last amended by Act No. 79 of 1988; the text stood as shown in 2014 and at the matter reference date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Section 582 says a claimant to charge of a minor's property 'may apply' for a certificate and bars an uncertificated person only from instituting or defending an action connected with the minor's estate; it does not say that a certificated curator must execute a conveyance of the minor's land, so the role assigned to it here is wider than the text supports."
+    },
+    {
+      "provision_id": "PROV-M079-012",
+      "section_id": "2-1889/s585",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "585",
+      "subsection": "(2)",
+      "relevant_excerpt": "If there is no person so entitled, or if such person is unwilling to undertake the trust and there is any near relative of the minor who is willing and fit to be entrusted with the charge of his property, the court may grant a certificate to such relative.",
+      "why_relevant": "Identifies who the court may certify as curator of the minor's property, and so who could lawfully have been joined in Deed No. 1234 on Gayan Peiris's behalf.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1889; the corpus records no amendment event for this section.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M079-013",
+      "section_id": "2-1889/s530",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "530",
+      "subsection": null,
+      "relevant_excerpt": "If any of the heirs, legatees or beneficiaries of the deceased is a minor without a natural guardian, or person of unsound mind, without a guardian, steps shall be taken for the appointment of a guardian or manager, upon the making of an application to the District Judge, which application shall be heard in Chambers.",
+      "why_relevant": "Gayan Peiris was a minor legatee in DC Negambo Case No. 456/DTS when the will was proved in 2013, so a guardian had to be appointed before the Executor's Conveyance was executed in his favour.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Last amended by Act No. 11 of 2010, before the 2013 testamentary proceedings and before the matter reference date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Section 530 requires steps to be taken to appoint a guardian for a minor heir or legatee, but says nothing about the timing relied on here, namely that this had to happen before the Executor's Conveyance was executed."
+    },
+    {
+      "provision_id": "PROV-M079-014",
+      "section_id": "2-1889/s502",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "502",
+      "subsection": null,
+      "relevant_excerpt": "a minor shall be deemed to have attained majority or full age on his attaining the age of eighteen years, or on marriage, or on obtaining letters of venia aetatis.",
+      "why_relevant": "Fixes eighteen as full age for the purposes of the Code's minors chapter. It confirms that Gayan Peiris at 15 was under disability in 2014 while Malika Peiris at 20 was not, though the general age of majority statute itself is not in this corpus.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Last amended by Act No. 12 of 1996; unchanged at the matter reference date. The section is expressed to apply 'For the purposes of this Chapter'.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Section 502 opens with 'For the purposes of this Chapter' and sits in the chapter on actions by and against minors, whereas sections 582 and 585 sit in the separate chapter on actions for the appointment of guardians, so section 502 does not supply the age threshold for those sections either, and the general age of majority remains uncited."
+    },
+    {
+      "provision_id": "PROV-M079-015",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "No sale, purchase, transfer, assignment, or mortgage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month)",
+      "why_relevant": "Every link in this pedigree that is a sale, gift or transfer had to be notarially executed. It is also the provision that makes the identity of the executants of each deed, and therefore who had to be joined, a question of validity rather than of form.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The opening words quoted here are the original 1840 wording and were in force in October 2019. The corpus text is the consolidated version: paragraphs (a) and (b) were substituted by Act No. 30 of 2022 and Act No. 4 of 2024, and subsection (2), including the rule that a guardian may act for a minor transferee, was added only by Act No. 4 of 2024. Neither applies to deeds executed between 2008 and 2018.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The excerpt is verbatim but stops before the operative words; the notarial-execution requirement now sits in paragraph (a) as substituted by Act No. 30 of 2022 and read with Act No. 4 of 2024, so the version in force for the 2008 to 2018 deeds is not available in the corpus, and section 2 does not name a gift in its list of dealings."
+    },
+    {
+      "provision_id": "PROV-M079-016",
+      "section_id": "21-1844/s2",
+      "act_id": "21-1844",
+      "formal_title": "Wills Ordinance",
+      "number_and_year": "No. 21 of 1844",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "It shall be lawful for any person who has reached the age of eighteen years and residing within or outside Sri Lanka to execute a will bequeathing and disposing any movable and immovable property",
+      "why_relevant": "Testamentary capacity for Last Will No. 980 of 6 April 2010 by Kusum Perera, the step in the pedigree that carried Lot 5A to Gayan Peiris and Lot 5B to Malika Peiris.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus carries the text as repealed and substituted by Act No. 29 of 2022, which is later than both the 2010 will and the October 2019 matter reference date. The provision in force in 2010 was the earlier section 2 read with section 3 as amended by Act No. 5 of 1993. Background only; not relied on as decisive.",
+      "verification_status": "unresolved",
+      "verifier_note": "The corpus holds only the text substituted by Act No. 29 of 2022, so the testamentary capacity provision in force when Last Will No. 980 was made in 2010 cannot be checked here; correctly confined to background."
+    },
+    {
+      "provision_id": "PROV-M079-017",
+      "section_id": "2-1889/s531",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "531",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "it shall make order declaring the will to be proved and if the applicant claims- (i) as the executor or one of the executors of the will, and asks that probate thereof be granted to him the order shall declare that he is executor, and shall direct the grant of probate to him accordingly",
+      "why_relevant": "The order proving Last Will No. 980 in DC Negambo Case No. 456/DTS on 10 March 2013 and appointing the executor whose conveyance is the next link in the pedigree.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Last amended by Act No. 14 of 1993, before the 2013 proceedings and before the matter reference date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M079-901",
+      "section_id": "1-1911/s5",
+      "act_id": "1-1911",
+      "formal_title": "Jaffna Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 1 of 1911",
+      "section": "5",
+      "subsection": null,
+      "relevant_excerpt": "The respective matrimonial rights of every husband and wife married after the commencement of this Ordinance",
+      "why_relevant": "Threshold provision for Part II. Section 6, on which the husband's written consent turns, applies only to a woman married after the commencement of the Ordinance, and section 5 is what carries the matrimonial rights of such a marriage into the Ordinance. The map relied on section 6 without citing the applicability provision that lets it bite.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1911; the corpus records no amendment event for this section, so it stood unchanged at the matter reference date of October 2019.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier as the missing Part II applicability provision for section 6."
+    },
+    {
+      "provision_id": "PROV-M079-902",
+      "section_id": "1-1911/s14",
+      "act_id": "1-1911",
+      "formal_title": "Jaffna Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 1 of 1911",
+      "section": "14",
+      "subsection": null,
+      "relevant_excerpt": "shall apply to the estate of such persons only as shall die after the commencement of this Ordinance, and shall be then unmarried, or if married, shall have been married after the commencement of this Ordinance.",
+      "why_relevant": "Threshold provision for Part III, the counterpart of Ordinance No. 15 of 1876 s.20 which the map did cite. Sections 19 and 20, on the meaning and devolution of thediatheddam, reach Mohan Nadaraja's estate only because he died after 1911 and married after it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1911; the corpus records no amendment event for this section, so it stood unchanged at the matter reference date of October 2019.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier as the missing Part III applicability provision for sections 19 and 20."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M079-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The devolution chain turns on three matters that statute in this corpus cannot settle. First, the root of title is a Final Decree in a partition action, and the Partition Law No. 21 of 1977, which makes such a decree good against the world, is not in the corpus. Second, the effect of Deed of Transfer No. 1234 of 2014 on Gayan Peiris's Lot 5A depends on the general age of majority, fixed by the Age of Majority Ordinance, which is not in the corpus, and on the Roman-Dutch common law governing a minor's contracts and restitutio in integrum. Third, the consequence of executing Deed No. 456 of 2015 without the husband's written consent, whether the deed is void or merely voidable at his instance, is worked out in judicial authority rather than in the text of the Ordinance.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M079-Q01-01",
+          "issue": "By what successive instruments and events did title to premises Assessment No. 3/2, later Lots 5A and 5B (Assessment Nos. 3/2A and 3/2B), pass from Albert Perera to the persons holding today?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M079-Q01-02",
+          "issue": "What is the effect on the pedigree of Deed of Transfer No. 1234 of 1 August 2014 so far as it purported to convey Lot 5A, which belonged to Gayan Peiris, then aged 15?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M079-Q01-03",
+          "issue": "What is the effect on the pedigree of Deed of Transfer No. 456 of 3 February 2015 by Mala Nadaraja, a woman governed by the Thesawalamai, executed while her husband was living and without his written consent?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M079-Q01-04",
+          "issue": "How did Lot 5B devolve on the intestacy of Lalith Perera and on Kamani's subsequent gift?",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M079-003",
+        "PROV-M079-001",
+        "PROV-M079-002",
+        "PROV-M079-006",
+        "PROV-M079-007",
+        "PROV-M079-011",
+        "PROV-M079-014"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M079-004",
+        "PROV-M079-005",
+        "PROV-M079-008",
+        "PROV-M079-009",
+        "PROV-M079-012",
+        "PROV-M079-013",
+        "PROV-M079-015",
+        "PROV-M079-901",
+        "PROV-M079-902"
+      ],
+      "background_provision_ids": [
+        "PROV-M079-010",
+        "PROV-M079-016",
+        "PROV-M079-017"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four necessary linked steps across enactments: the Thesawalamai application provision feeding the consent rule for the 2015 deed (Ordinance No. 1 of 1911 ss. 2 and 6); the thediatheddam definition feeding the devolution rule that left Lot 5B wholly with Mala Nadaraja (ss. 19 and 20); the minority of Gayan Peiris feeding the curatorship requirement for Lot 5A (Civil Procedure Code ss. 502, 582 and 585); and the applicability and governing-law provisions feeding the intestacy shares in Lot 5B (Ordinance No. 15 of 1876 ss. 20, 21, 22, 23 and 24).",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M079-007",
+          "to_provision_id": "PROV-M079-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M079-009",
+          "to_provision_id": "PROV-M079-008",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M079-006",
+          "to_provision_id": "PROV-M079-010",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M079-014",
+          "to_provision_id": "PROV-M079-011",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M079-011",
+          "to_provision_id": "PROV-M079-012",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M079-004",
+          "to_provision_id": "PROV-M079-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M079-003",
+          "to_provision_id": "PROV-M079-001",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M079-005",
+          "to_provision_id": "PROV-M079-002",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M079-017",
+          "to_provision_id": "PROV-M079-013",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M079-901",
+          "to_provision_id": "PROV-M079-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M079-902",
+          "to_provision_id": "PROV-M079-008",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a Final Decree dated 3rd September 2006 entered in DC Negambo Partition Action No. 321/P premises No. 3/2 Alwis Town, Hendala depicted as Lot 5 in Plan No. 213 dated 5th March 2006 made by H.S. Weerasena Licensed Surveyor in extent of 36 perches was allotted to one Albert Perera. By Deed of Gift No.675 dated 2nd June 2008 attested by G.N.de Silva Notary Public the said Albert Perera gifted the above Lot 5 in extent of 36 perches to his daughter Kusum Perera. The said Kusum Perera caused the said Lot 5 to be subdivided into. 2 Lots depicted as Lot 5A and 5B (bearing Assessment Nos. 3/2A and 3/2B) in Plan No. 225 dated 3rd June 2009 made by the same surveyor each containing 18 perches and executed a Last will No.980 dated 6th April 2010 attested by G.N.de Silva Notary Public. She died on 23rd May 2012 and her Will was proved in DC Negambo Case No. 456/DTS on 10th March 2013. By the said Last Will she left Lot 5A to her son Gayan Peiris and Lot 5B to her daughter Malika Peiris and an Executors Conveyance was executed by the Executor at the conclusion of the case. In 2014 Gayan Peiris was a minor who was 15 years old and his sister Malika Peiris was 20 years old decided to sell the property to Mrs. Mala Nadaraja and accordingly sold both lots 5A and 5B to her by Deed of Transfer No. 1234 dated 1st August 2014 attested by Alex Perera Notary Public. Mrs. Mala Nadaraja who was governed by the Law of Thesawalamai sold Lot 5A to Nihal & Company by Deed of Transfer 456 dated 3rd February 2015 attested by W.N. de Silva Notary Public .The husband of Mrs. Mala Nadaraja, Moahan Nadaraja was living at that time. After his death Mrs. Mala Nadarja sold lot 5B to Lalith Perera by Deed of Transfer No. 789 dated 5th April 2017 attested by Gamini Peiris Notary Public. The said Lalith Perera died intestate on 2nd March 2018 leaving as his intestate heirs his wife Kamani and two children Hasini and Kushan. The Estate was administered and letters of Administration was issued in DC Colombo Case No. 1579/DTS and an Administrators Conveyance was executed by the Administrator. Kamani was previously married and was having a daughter named Ruvini who was living with her. Kamani gifted her share to all three children.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "The pedigree of premises Assessment No. 3/2, Alwis Town, Hendala, being Lot 5 in Plan No. 213 in extent 36 perches, has to be traced from the Final Decree of 3 September 2006 down to the persons holding Lots 5A and 5B today, and two links in it are defective: the 2014 sale of the minor Gayan Peiris's Lot 5A and the 2015 sale by Mala Nadaraja without her husband's written consent. This draft is incomplete because the Partition Law and the Age of Majority Ordinance are outside the corpus.",
+        "rule": "Dealings with immovable property must be notarially executed (Prevention of Frauds Ordinance s.2). A will is carried into title by an order proving it and a grant of probate, and where a legatee is a minor a guardian must first be appointed (Civil Procedure Code ss.531 and 530). Full age for the purposes of the Code's minors chapter is eighteen (s.502), and charge of a minor's property is exercised by a curator certificated by the court (ss.582 and 585). A woman to whom the Thesawalamai applies is subject to Ordinance No. 1 of 1911 in respect of her property wherever situate (s.2), and during marriage she may dispose of immovables only with her husband's written consent (s.6) or under a District Court order dispensing with it (s.8). Property she buys for value during the marriage is her thediatheddam (s.19), and on her husband's death only his thediatheddam is divided, not hers (s.20). On intestacy the surviving spouse takes one-half (Ordinance No. 15 of 1876 s.22) and, subject to that half, the children take the rest equally per capita (ss.23 and 24), the Ordinance governing inheritance to immovable property in Sri Lanka (ss.20 and 21).",
+        "application": "Albert Perera took Lot 5 under the Final Decree of 3 September 2006 in DC Negambo Partition Action No. 321/P. He gifted it to his daughter Kusum Perera by Deed of Gift No. 675 of 2 June 2008. She subdivided it into Lots 5A and 5B by Plan No. 225 of 3 June 2009 and made Last Will No. 980 of 6 April 2010, leaving Lot 5A to her son Gayan Peiris and Lot 5B to her daughter Malika Peiris. She died on 23 May 2012, the will was proved in DC Negambo Case No. 456/DTS on 10 March 2013, and the Executor's Conveyance carried the two lots to the legatees; because Gayan Peiris was then a minor, a guardian ought to have been appointed for him in that case. In 2014 Gayan Peiris was 15 and Malika Peiris 20, and both lots were sold to Mrs Mala Nadaraja by Deed of Transfer No. 1234 of 1 August 2014. As to Lot 5B the deed is sound, because Malika Peiris was of full age. As to Lot 5A it is defective, because a minor could not convey his own land and no certificated curator acted for him. Mrs Nadaraja, governed by the Thesawalamai, sold Lot 5A to Nihal & Company by Deed of Transfer No. 456 of 3 February 2015 while Mohan Nadaraja was living and without his written consent, so that transfer is open to challenge as well. Lot 5B was her own thediatheddam and remained wholly hers on her husband's death, and as a widow she sold it to Lalith Perera by Deed of Transfer No. 789 of 5 April 2017. He died intestate on 2 March 2018 leaving Kamani, Hasini and Kushan; the estate was administered in DC Colombo Case No. 1579/DTS and an Administrator's Conveyance was executed. Kamani took one-half and each child one-fourth, and Kamani then gifted her half to Hasini, Kushan and her daughter Ruvini in equal parts.",
+        "conclusion": "Lot 5B, Assessment No. 3/2B, is now held by Hasini as to five-twelfths, Kushan as to five-twelfths and Ruvini as to one-sixth. Lot 5A, Assessment No. 3/2A, stands in the name of Nihal & Company but the chain to it is broken twice, at Deed No. 1234 for the minority of Gayan Peiris and at Deed No. 456 for want of the husband's written consent. Whether Gayan Peiris or Nihal & Company holds Lot 5A today cannot be settled on the statutes in this corpus, because the Partition Law No. 21 of 1977, the Age of Majority Ordinance and the common law on a minor's deeds are all outside it."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M079-Q01-001",
+          "claim_text": "Every sale, gift and transfer in this chain of title had to be executed before a notary to be of force in law.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-015"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M079-Q01-002",
+          "claim_text": "Where a legatee under a will being proved is a minor without a natural guardian, a guardian must be appointed by the District Judge before the estate is distributed to him.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-013",
+            "PROV-M079-017"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M079-Q01-003",
+          "claim_text": "Charge of a minor's property is exercised only by a person holding a certificate of curatorship from the court, full age being eighteen years.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-011",
+            "PROV-M079-012",
+            "PROV-M079-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "rejected"
+        },
+        {
+          "claim_id": "CL-M079-Q01-004",
+          "claim_text": "A woman subject to the Thesawalamai may dispose of immovable property during her marriage only with her husband's written consent, and the Ordinance reaches her property wherever it is situate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-006",
+            "PROV-M079-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M079-Q01-005",
+          "claim_text": "On the death of a spouse only the deceased spouse's thediatheddam is divided between the survivor and the deceased's heirs, so a survivor's own acquired property is untouched.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-008",
+            "PROV-M079-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M079-Q01-006",
+          "claim_text": "On an intestacy the surviving spouse takes one-half of the immovable property and the children take the remaining half equally per capita.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-001",
+            "PROV-M079-002",
+            "PROV-M079-003",
+            "PROV-M079-004",
+            "PROV-M079-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M079-Q01-007",
+          "claim_text": "Deed of Transfer No. 1234 of 1 August 2014 is sound as to Lot 5B, which belonged to Malika Peiris, aged 20, but defective as to Lot 5A, which belonged to Gayan Peiris, aged 15, and was conveyed without a certificated curator acting for him.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M079-011",
+            "PROV-M079-014"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "rejected"
+        },
+        {
+          "claim_id": "CL-M079-Q01-008",
+          "claim_text": "Deed of Transfer No. 456 of 3 February 2015 conveying Lot 5A to Nihal & Company was executed by Mala Nadaraja while Mohan Nadaraja was living and is open to challenge for want of his written consent.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M079-006",
+            "PROV-M079-007"
+          ],
+          "supporting_fact_ids": [
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M079-Q01-009",
+          "claim_text": "Lot 5B was Mala Nadaraja's own thediatheddam, remained wholly hers when Mohan Nadaraja died, and passed cleanly to Lalith Perera by Deed of Transfer No. 789 of 5 April 2017.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M079-008",
+            "PROV-M079-009",
+            "PROV-M079-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M079-Q01-010",
+          "claim_text": "Lot 5B, Assessment No. 3/2B, is presently held by Hasini as to five-twelfths, Kushan as to five-twelfths and Ruvini as to one-sixth.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M079-001",
+            "PROV-M079-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M079-Q01-011",
+          "claim_text": "Present ownership of Lot 5A cannot be stated on the statutes in this corpus, because the effect of a minor's deed and the conclusiveness of the partition Final Decree rest on enactments and common law that are not part of it.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M079-014"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The Partition Law No. 21 of 1977 and the Age of Majority Ordinance are absent from the frozen corpus, and the effect of a minor's deed of transfer and of a Thesawalamai disposition made without the husband's written consent turns on Roman-Dutch common law and judicial authority. The devolution of Lot 5A therefore cannot be settled on statute alone; the Lot 5B branch of the pedigree is complete and is set out in question M079-Q02. Verifier: the block stands and is wider than stated. Civil Procedure Code s.582 only bars an uncertificated person from instituting or defending an action connected with a minor's estate, so nothing in the corpus makes Deed of Transfer No. 1234 defective as to Lot 5A; and Jaffna Ordinance s.6 governs the wife's separate estate, so its written-consent rule does not plainly reach lots the same map treats as thediatheddam bought for value under s.19(a). Claims CL-M079-Q01-003 and CL-M079-Q01-007 are rejected on that footing.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M079-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Assessment No. 3/2B is Lot 5B. Its chain is free of the two defects that afflict Lot 5A: Malika Peiris was of full age when she sold in 2014, and Mala Nadaraja was a widow when she sold to Lalith Perera in 2017, so no husband's consent was in issue and, under Ordinance No. 1 of 1911 s.20, none of her own thediatheddam passed to her husband's heirs. What remains is a computation of intestate shares under Part III of the Matrimonial Rights and Inheritance Ordinance, followed by the effect of Kamani's gift, which is a given fact. No case law or common-law doctrine is needed.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M079-Q02-01",
+          "issue": "Which law governs intestate succession to Lot 5B, being immovable property in Sri Lanka left by Lalith Perera on his death on 2 March 2018?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M079-Q02-02",
+          "issue": "What shares did Kamani, Hasini and Kushan take in Lot 5B on that intestacy?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M079-Q02-03",
+          "issue": "What is the effect of Kamani's gift of her share to her three children, including Ruvini, who is her daughter by an earlier marriage and not an heir of Lalith Perera?",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M079-004",
+        "PROV-M079-003",
+        "PROV-M079-001",
+        "PROV-M079-002"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M079-005",
+        "PROV-M079-006",
+        "PROV-M079-008",
+        "PROV-M079-901",
+        "PROV-M079-902"
+      ],
+      "background_provision_ids": [],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps: the applicability and governing-law provisions (ss. 20 and 21) must be satisfied before Part III applies at all; s.22 then fixes the surviving spouse's one-half; and s.24, read with s.23, divides the remaining half between the children per capita. Removing any one of the three leaves the fractions unsupported.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M079-004",
+          "to_provision_id": "PROV-M079-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M079-003",
+          "to_provision_id": "PROV-M079-001",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M079-001",
+          "to_provision_id": "PROV-M079-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M079-005",
+          "to_provision_id": "PROV-M079-002",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M079-008",
+          "to_provision_id": "PROV-M079-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M079-901",
+          "to_provision_id": "PROV-M079-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M079-902",
+          "to_provision_id": "PROV-M079-008",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a Final Decree dated 3rd September 2006 entered in DC Negambo Partition Action No. 321/P premises No. 3/2 Alwis Town, Hendala depicted as Lot 5 in Plan No. 213 dated 5th March 2006 made by H.S. Weerasena Licensed Surveyor in extent of 36 perches was allotted to one Albert Perera. By Deed of Gift No.675 dated 2nd June 2008 attested by G.N.de Silva Notary Public the said Albert Perera gifted the above Lot 5 in extent of 36 perches to his daughter Kusum Perera. The said Kusum Perera caused the said Lot 5 to be subdivided into. 2 Lots depicted as Lot 5A and 5B (bearing Assessment Nos. 3/2A and 3/2B) in Plan No. 225 dated 3rd June 2009 made by the same surveyor each containing 18 perches and executed a Last will No.980 dated 6th April 2010 attested by G.N.de Silva Notary Public. She died on 23rd May 2012 and her Will was proved in DC Negambo Case No. 456/DTS on 10th March 2013. By the said Last Will she left Lot 5A to her son Gayan Peiris and Lot 5B to her daughter Malika Peiris and an Executors Conveyance was executed by the Executor at the conclusion of the case. In 2014 Gayan Peiris was a minor who was 15 years old and his sister Malika Peiris was 20 years old decided to sell the property to Mrs. Mala Nadaraja and accordingly sold both lots 5A and 5B to her by Deed of Transfer No. 1234 dated 1st August 2014 attested by Alex Perera Notary Public. Mrs. Mala Nadaraja who was governed by the Law of Thesawalamai sold Lot 5A to Nihal & Company by Deed of Transfer 456 dated 3rd February 2015 attested by W.N. de Silva Notary Public .The husband of Mrs. Mala Nadaraja, Moahan Nadaraja was living at that time. After his death Mrs. Mala Nadarja sold lot 5B to Lalith Perera by Deed of Transfer No. 789 dated 5th April 2017 attested by Gamini Peiris Notary Public. The said Lalith Perera died intestate on 2nd March 2018 leaving as his intestate heirs his wife Kamani and two children Hasini and Kushan. The Estate was administered and letters of Administration was issued in DC Colombo Case No. 1579/DTS and an Administrators Conveyance was executed by the Administrator. Kamani was previously married and was having a daughter named Ruvini who was living with her. Kamani gifted her share to all three children.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What fractions of premises Assessment No. 3/2B, being Lot 5B in Plan No. 225, are presently held by each of the persons who take through Lalith Perera, who died intestate on 2 March 2018 leaving his wife Kamani and his children Hasini and Kushan, Kamani having afterwards gifted her share to her three children including Ruvini, her daughter by an earlier marriage?",
+        "rule": "Inheritance ab intestato to immovable property in Sri Lanka is governed by Part III of the Matrimonial Rights and Inheritance Ordinance No. 15 of 1876 (s.21), which applies to the estate of a person who dies after the proclamation of the Ordinance and who, if married, married after it (s.20). A surviving spouse inherits one-half of the intestate's property (s.22). Subject to that half, descendants are preferent to all others and all the children take equally per capita (ss.23 and 24). A woman governed by the Thesawalamai needs her husband's written consent only for a disposition made during the marriage (Jaffna Matrimonial Rights and Inheritance Ordinance No. 1 of 1911 s.6), and on the death of a spouse only the deceased spouse's thediatheddam is divided, the survivor's own acquisition remaining hers (s.20).",
+        "application": "Mala Nadaraja bought Lot 5B for value on 1 August 2014 from Malika Peiris, who was then 20 years old, so that link is unaffected by the minority that spoils the Lot 5A branch. Lot 5B was Mala Nadaraja's own acquisition and none of it devolved on Mohan Nadaraja's heirs at his death, and when she executed Deed of Transfer No. 789 on 5 April 2017 she was a widow, so no written consent was required and Lalith Perera took the whole of Lot 5B. On his intestate death on 2 March 2018, Kamani as surviving spouse took one-half, and the remaining one-half went to Hasini and Kushan in equal shares, one-fourth each. Ruvini is Kamani's daughter by an earlier marriage and not a descendant of Lalith Perera, so she inherited nothing from him. Kamani then gifted her one-half to Hasini, Kushan and Ruvini, giving each of them a further one-sixth. Hasini's total is one-fourth plus one-sixth, that is five-twelfths, and Kushan's is the same; Ruvini holds one-sixth, or two-twelfths; and Kamani, having given away her whole half, retains nothing.",
+        "conclusion": "Premises Assessment No. 3/2B is presently owned as to five-twelfths by Hasini, five-twelfths by Kushan and one-sixth, that is two-twelfths, by Ruvini. Kamani retains no share. Ruvini's interest comes wholly from Kamani's gift and not from any right of inheritance in the estate of Lalith Perera."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M079-Q02-001",
+          "claim_text": "Intestate succession to Lot 5B, immovable property in Sri Lanka, is governed by Part III of the Matrimonial Rights and Inheritance Ordinance.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-003",
+            "PROV-M079-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M079-Q02-002",
+          "claim_text": "A surviving spouse inherits one-half of the property of a person who dies intestate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M079-Q02-003",
+          "claim_text": "Subject to the surviving spouse's half, the children are preferent to all others and take equally per capita.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-002",
+            "PROV-M079-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M079-Q02-004",
+          "claim_text": "Mala Nadaraja needed no consent for Deed of Transfer No. 789 of 5 April 2017 because her husband was already dead, and Lot 5B was her own thediatheddam, none of which had devolved on his heirs.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M079-006",
+            "PROV-M079-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M079-Q02-005",
+          "claim_text": "On Lalith Perera's intestacy Kamani took one-half of Lot 5B and Hasini and Kushan took one-fourth each.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M079-001",
+            "PROV-M079-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-5"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M079-Q02-006",
+          "claim_text": "Ruvini took nothing on the intestacy because she is Kamani's daughter by an earlier marriage and not a descendant of Lalith Perera.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M079-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-6"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M079-Q02-007",
+          "claim_text": "Kamani's gift of her one-half to her three children gave each of Hasini, Kushan and Ruvini a further one-sixth.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M079-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M079-Q02-008",
+          "claim_text": "Premises Assessment No. 3/2B is presently owned as to five-twelfths by Hasini, five-twelfths by Kushan and one-sixth by Ruvini, Kamani retaining no share.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M079-001",
+            "PROV-M079-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": "Verifier: research_status left at proposed_gold. The four indispensable provisions, Ordinance No. 15 of 1876 ss.20, 21, 22 and 24, verify verbatim and carry the fractions on their own, and the scenario's own facts, the grant of letters of administration in DC Colombo Case No. 1579/DTS and the Administrator's Conveyance, establish that Lot 5B formed part of Lalith Perera's estate without needing the Lot 5A branch of the pedigree. CL-M079-Q02-004 is disputed as over-specified: the thediatheddam characterisation is an inference and Lot 5B remained Mala Nadaraja's whether it was her separate estate or her own thediatheddam, so the conclusion is unaffected.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M079-Q03",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "Two of the three instances rest squarely on statute: the husband's written consent to a Thesawalamai wife's disposition (Ordinance No. 1 of 1911 s.6, with the District Court alternative in s.8) and the appointment of a guardian for a minor legatee in a testamentary action (Civil Procedure Code s.530). The third, the minority of Gayan Peiris in 2014, depends on the general age of majority, which is fixed by the Age of Majority Ordinance and not by anything in this corpus, and on the Roman-Dutch common law requirement that a curator obtain the sanction of the District Court before alienating a minor's immovable property. The Civil Procedure Code sections on curatorship say who takes charge of a minor's property but do not themselves prescribe that sanction, so the answer cannot be completed on statute alone.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M079-Q03-01",
+          "issue": "Did Deed of Transfer No. 1234 of 1 August 2014 require a party other than the two vendors to be joined, given that Gayan Peiris was then 15 years old?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M079-Q03-02",
+          "issue": "Did Deed of Transfer No. 456 of 3 February 2015 require Mohan Nadaraja to join or consent, his wife being governed by the Thesawalamai and he being alive at the date of the deed?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M079-Q03-03",
+          "issue": "Did the Executor's Conveyance in DC Negambo Case No. 456/DTS require a guardian to be appointed and joined for Gayan Peiris as a minor legatee?",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M079-006",
+        "PROV-M079-011",
+        "PROV-M079-013",
+        "PROV-M079-014"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M079-007",
+        "PROV-M079-010",
+        "PROV-M079-012",
+        "PROV-M079-015",
+        "PROV-M079-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M079-017"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three linked steps, one per instance: age plus curatorship for the 2014 deed (Civil Procedure Code ss. 502, 582 and 585); the Thesawalamai application provision plus the consent rule and its District Court alternative for the 2015 deed (Ordinance No. 1 of 1911 ss. 2, 6 and 8); and the testamentary order plus the guardianship requirement for the Executor's Conveyance (Civil Procedure Code ss. 531 and 530). Each instance needs at least two provisions read together.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M079-014",
+          "to_provision_id": "PROV-M079-011",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M079-011",
+          "to_provision_id": "PROV-M079-012",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M079-007",
+          "to_provision_id": "PROV-M079-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M079-006",
+          "to_provision_id": "PROV-M079-010",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M079-017",
+          "to_provision_id": "PROV-M079-013",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M079-015",
+          "to_provision_id": "PROV-M079-006",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M079-901",
+          "to_provision_id": "PROV-M079-006",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a Final Decree dated 3rd September 2006 entered in DC Negambo Partition Action No. 321/P premises No. 3/2 Alwis Town, Hendala depicted as Lot 5 in Plan No. 213 dated 5th March 2006 made by H.S. Weerasena Licensed Surveyor in extent of 36 perches was allotted to one Albert Perera. By Deed of Gift No.675 dated 2nd June 2008 attested by G.N.de Silva Notary Public the said Albert Perera gifted the above Lot 5 in extent of 36 perches to his daughter Kusum Perera. The said Kusum Perera caused the said Lot 5 to be subdivided into. 2 Lots depicted as Lot 5A and 5B (bearing Assessment Nos. 3/2A and 3/2B) in Plan No. 225 dated 3rd June 2009 made by the same surveyor each containing 18 perches and executed a Last will No.980 dated 6th April 2010 attested by G.N.de Silva Notary Public. She died on 23rd May 2012 and her Will was proved in DC Negambo Case No. 456/DTS on 10th March 2013. By the said Last Will she left Lot 5A to her son Gayan Peiris and Lot 5B to her daughter Malika Peiris and an Executors Conveyance was executed by the Executor at the conclusion of the case. In 2014 Gayan Peiris was a minor who was 15 years old and his sister Malika Peiris was 20 years old decided to sell the property to Mrs. Mala Nadaraja and accordingly sold both lots 5A and 5B to her by Deed of Transfer No. 1234 dated 1st August 2014 attested by Alex Perera Notary Public. Mrs. Mala Nadaraja who was governed by the Law of Thesawalamai sold Lot 5A to Nihal & Company by Deed of Transfer 456 dated 3rd February 2015 attested by W.N. de Silva Notary Public .The husband of Mrs. Mala Nadaraja, Moahan Nadaraja was living at that time. After his death Mrs. Mala Nadarja sold lot 5B to Lalith Perera by Deed of Transfer No. 789 dated 5th April 2017 attested by Gamini Peiris Notary Public. The said Lalith Perera died intestate on 2nd March 2018 leaving as his intestate heirs his wife Kamani and two children Hasini and Kushan. The Estate was administered and letters of Administration was issued in DC Colombo Case No. 1579/DTS and an Administrators Conveyance was executed by the Administrator. Kamani was previously married and was having a daughter named Ruvini who was living with her. Kamani gifted her share to all three children.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Three of the instruments in the pedigree could not properly have been executed by the named parties alone. The question is which they are, who else had to be brought in, and what step had to be taken first. This draft is incomplete on the 2014 deed because the general age of majority and the effect of a minor's deed lie outside the corpus.",
+        "rule": "Full age for the purposes of the Civil Procedure Code's minors chapter is eighteen years (s.502). A person claiming charge of a minor's property must obtain a certificate of curatorship from the court (s.582), which the court grants to the person entitled under a will or deed or to a fit near relative (s.585). Where an heir, legatee or beneficiary in a testamentary action is a minor without a natural guardian, steps must be taken to have a guardian appointed on application to the District Judge heard in Chambers (s.530), the will itself being carried into effect by the order proving it and the grant of probate (s.531). A woman to whom the Thesawalamai applies is subject to Ordinance No. 1 of 1911 in respect of her property wherever situate (s.2), and during marriage may dispose of immovables only with her husband's written consent (s.6); where that consent cannot be had, the District Court may authorise the disposition without it (s.8). All of these dealings are transfers of immovable property that must be notarially executed (Prevention of Frauds Ordinance s.2).",
+        "application": "The first instance is the Executor's Conveyance at the conclusion of DC Negambo Case No. 456/DTS. Last Will No. 980 was proved on 10 March 2013 and Lot 5A was left to Gayan Peiris, who was 15 in 2014 and therefore about 14 in 2013. He was a minor legatee, so a guardian had to be appointed for him in the testamentary case and had to be joined in the conveyance on his behalf. The second instance is Deed of Transfer No. 1234 of 1 August 2014. Malika Peiris, aged 20, could sell Lot 5B in her own right, but Gayan Peiris at 15 could not convey Lot 5A. A curator of his property, holding a certificate of curatorship from the District Court, had to be appointed and joined as an executant on his behalf, with the court's sanction to the sale. The third instance is Deed of Transfer No. 456 of 3 February 2015, by which Mrs Mala Nadaraja, governed by the Thesawalamai, sold Lot 5A to Nihal & Company while her husband Mohan Nadaraja was living. Her own signature was not enough: Mohan Nadaraja had to join the deed and give his written consent, or she had to obtain a District Court order dispensing with it before executing. By contrast Deed of Transfer No. 789 of 5 April 2017 needed no such joinder, because by then she was a widow.",
+        "conclusion": "Yes. Three instruments required a further party or a prior step: the Executor's Conveyance in DC Negambo Case No. 456/DTS, where a guardian had to be appointed for the minor legatee Gayan Peiris and joined; Deed of Transfer No. 1234 of 1 August 2014, where a certificated curator of Gayan Peiris's property had to be joined as executant with the sanction of the District Court; and Deed of Transfer No. 456 of 3 February 2015, where Mohan Nadaraja had to join and consent in writing, or a District Court order dispensing with his consent had to be obtained. The consequence of the omissions on the first two instruments is not settled by the statutes in this corpus."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M079-Q03-001",
+          "claim_text": "A person who is to have charge of a minor's property must hold a certificate of curatorship granted by the court, full age being eighteen years for the purposes of the Code's minors chapter.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-011",
+            "PROV-M079-012",
+            "PROV-M079-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "rejected"
+        },
+        {
+          "claim_id": "CL-M079-Q03-002",
+          "claim_text": "Where a legatee in a testamentary action is a minor without a natural guardian, a guardian must be appointed on application to the District Judge heard in Chambers.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-013",
+            "PROV-M079-017"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M079-Q03-003",
+          "claim_text": "A married woman subject to the Thesawalamai may dispose of immovable property only with her husband's written consent, or under a District Court order dispensing with that consent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M079-006",
+            "PROV-M079-007",
+            "PROV-M079-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M079-Q03-004",
+          "claim_text": "A guardian had to be appointed for Gayan Peiris, a minor legatee, in DC Negambo Case No. 456/DTS and joined in the Executor's Conveyance of Lot 5A.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M079-013"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M079-Q03-005",
+          "claim_text": "A certificated curator of Gayan Peiris's property, and not the 15 year old himself, had to be joined as executant of Deed of Transfer No. 1234 of 1 August 2014 so far as it conveyed Lot 5A.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M079-011",
+            "PROV-M079-012",
+            "PROV-M079-014",
+            "PROV-M079-015"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "rejected"
+        },
+        {
+          "claim_id": "CL-M079-Q03-006",
+          "claim_text": "Mohan Nadaraja had to join Deed of Transfer No. 456 of 3 February 2015 and give his written consent, or a District Court order dispensing with it had to be obtained first.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M079-006",
+            "PROV-M079-007",
+            "PROV-M079-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M079-Q03-007",
+          "claim_text": "Deed of Transfer No. 789 of 5 April 2017 required no additional party, Mala Nadaraja being a widow by then.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M079-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M079-Q03-008",
+          "claim_text": "The three instances are the Executor's Conveyance in DC Negambo Case No. 456/DTS, Deed of Transfer No. 1234 of 1 August 2014 and Deed of Transfer No. 456 of 3 February 2015.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M079-013",
+            "PROV-M079-011",
+            "PROV-M079-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-3",
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The Age of Majority Ordinance, which fixes the general age of majority, is not in the frozen corpus; Civil Procedure Code s.502 fixes full age at eighteen only for the purposes of its own chapter. The requirement that a curator obtain the District Court's sanction before alienating a minor's immovable property, and the effect of failing to do so, come from Roman-Dutch common law and judicial authority rather than from any section in this corpus. The second and third instances are fully supported by statute; the first is not. Verifier: the second and third instances are weaker than the map states. Civil Procedure Code s.582 says a claimant may apply for a certificate of curatorship and makes the certificate mandatory only for instituting or defending an action, so no section in this corpus requires a curator to be joined as executant of Deed of Transfer No. 1234; and Jaffna Ordinance s.6 reaches the wife's separate estate, while s.8 supplies a District Court order only in the enumerated cases, none of which is present. Claims CL-M079-Q03-001 and CL-M079-Q03-005 are rejected and the Executor's Conveyance instance under s.530 is the only one that stands on statute alone.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

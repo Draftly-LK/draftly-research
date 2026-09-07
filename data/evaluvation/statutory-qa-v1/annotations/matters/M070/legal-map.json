@@ -1,0 +1,276 @@
+{
+  "benchmark_matter_id": "M070",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M070",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:44:19Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2020-04",
+  "matter_reference_date_basis": "matter_reference_date from candidates/matters/M070.json; exam session APRIL 2020.",
+  "corpus_gaps": [
+    "The rate of stamp duty on a bond or mortgage is not in any Act in the corpus. Section 3(1) of the Stamp Duty (Special Provisions) Act, No. 12 of 2006 charges duty at such rate as the Minister may determine by Order published in the Gazette, and no such Gazette Order (nor any rates schedule) has been extracted into the frozen corpus. The arithmetic the question asks for therefore cannot be produced from the corpus.",
+    "No regulations or Orders made under section 12 of Act No. 12 of 2006 are in the corpus, including the identification of a prescribed bank and the prescribed certificate form for section 8(2).",
+    "Any Order made under section 5 of Act No. 12 of 2006 exempting instruments from stamp duty is not in the corpus, so an exemption applicable to a housing-loan mortgage bond cannot be ruled in or out from the corpus alone."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M070-001",
+      "section_id": "12-2006/s3",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act, No. 12 of 2006",
+      "number_and_year": "No. 12 of 2006",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "there shall be charged a duty (hereinafter to be called \"stamp duty\") at such rate as the Minister may determine by Order published in the Gazette on every \"specified instrument\"- (a) executed, drawn or presented in Sri Lanka",
+      "why_relevant": "The charging provision. It is the source of the liability to stamp duty on the mortgage bond and it is also the reason the quantum cannot be computed from the corpus: the rate is not in the Act but in a Ministerial Order published in the Gazette, which is not in the corpus.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; no amendment events recorded for this section. In force at 2020-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M070-002",
+      "section_id": "12-2006/s4",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act, No. 12 of 2006",
+      "number_and_year": "No. 12 of 2006",
+      "section": "4",
+      "subsection": "(g)",
+      "relevant_excerpt": "(g) a bond or mortgage for any definite and certain sum of money and affecting any property;",
+      "why_relevant": "Defines \"specified instrument\" for the purposes of section 3 and brings the mortgage bond within the charge. The bond secures a definite and certain sum (Rs. 3,000,000) and affects the Ratmalana property, so it falls within paragraph (g).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; no amendment events recorded for this section. In force at 2020-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M070-003",
+      "section_id": "12-2006/s6",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act, No. 12 of 2006",
+      "number_and_year": "No. 12 of 2006",
+      "section": "6",
+      "subsection": "(e)",
+      "relevant_excerpt": "(e) in all other cases, by the person drawing, making or executing such instrument.",
+      "why_relevant": "The question asks for the duty payable by him. A mortgage is not within paragraphs (a) to (ddd), so the residual paragraph (e) applies and the duty falls on the person executing the bond, that is the mortgagor Gamini Perera, subject to the opening words of the section allowing an agreement to the contrary.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; amended by Act No. 10 of 2008 s.2, which inserted paragraphs (dd) and (ddd). The corpus text is the consolidated post-2008 text, in force at 2020-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M070-004",
+      "section_id": "12-2006/s8",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act, No. 12 of 2006",
+      "number_and_year": "No. 12 of 2006",
+      "section": "8",
+      "subsection": "(2)",
+      "relevant_excerpt": "Stamp duty payable on any specified instrument relating to a mortgage or lease of any immovable property may be paid, prior to, or at the time of, the execution of the specified instrument, to a prescribed bank.",
+      "why_relevant": "Supporting: it governs how and when the computed duty on a mortgage of immovable property is to be paid, which matters because this bond is to be executed simultaneously with the transfer. It does not affect the amount.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; substituted by Act No. 10 of 2008 s.3. The corpus text is the consolidated post-2008 text, in force at 2020-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M070-005",
+      "section_id": "12-2006/s13",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act, No. 12 of 2006",
+      "number_and_year": "No. 12 of 2006",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "the provisions of the Stamp Duty Act, No. 43 of 1982, relating to the Imposition of Stamp Duty (other than any instrument relating to the transfer of immovable property, the transfer of motor vehicles or documents filed in Court), Exemptions and any other provision in the aforesaid Act, shall, in so far as the same are inconsistent with the provisions of this Act, have no operation and the provisions of this Act shall prevail.",
+      "why_relevant": "Fixes which of the two stamp duty statutes in the corpus governs a mortgage bond. A mortgage is not a transfer of immovable property, a motor vehicle transfer or a court document, so the imposition of duty on this bond is governed by Act No. 12 of 2006 wherever the 1982 Act is inconsistent with it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; no amendment events recorded. In force at 2020-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M070-006",
+      "section_id": "43-1982/s16",
+      "act_id": "43-1982",
+      "formal_title": "Stamp Duty Act, No. 43 of 1982",
+      "number_and_year": "No. 43 of 1982",
+      "section": "16",
+      "subsection": null,
+      "relevant_excerpt": "A bond or mortgage for the payment or repayment of money to be lent, advanced, or paid shall be charged, where the total amount secured or to be ultimately recoverable is in any way limited, with the same stamp duty as on a bond or mortgage for the amount so limited.",
+      "why_relevant": "Supporting only: it states the computation base for a bond securing money to be lent, namely the limited sum secured. It supports treating Rs. 3,000,000 as the base if it still operates, but its continued operation after section 13 of Act No. 12 of 2006 is not resolvable from the corpus, so nothing indispensable rests on it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1982; no amendment events recorded. Its operation at 2020-04 is qualified by section 13 of Act No. 12 of 2006, which disapplies provisions of the 1982 Act relating to the imposition of stamp duty in so far as they are inconsistent with the 2006 Act. Treated as supporting, not indispensable, for that reason.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M070-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Stamp duty on a mortgage bond is wholly a creature of statute and subordinate legislation: the charge, the class of chargeable instrument, the person liable and the rate all come from the Stamp Duty (Special Provisions) Act, No. 12 of 2006 and Orders made under it. No judicial authority, Roman-Dutch principle or other non-statutory doctrine is needed. The obstacle here is not the kind of authority required but that one instrument of that same statutory kind, the rate Order under section 3(1), is absent from the corpus.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M070-Q01-01",
+          "issue": "Whether a mortgage bond securing a bank loan of Rs. 3,000,000 over the Ratmalana property is a specified instrument chargeable with stamp duty.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M070-Q01-02",
+          "issue": "Which statute governs the imposition of stamp duty on that bond, given that both the Stamp Duty Act, No. 43 of 1982 and the Stamp Duty (Special Provisions) Act, No. 12 of 2006 are on the books.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M070-Q01-03",
+          "issue": "By whom the stamp duty on the mortgage bond is payable.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M070-Q01-04",
+          "issue": "What amount of stamp duty is payable, that is, the base on which duty is computed and the rate applicable in April 2020.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": ["PROV-M070-001", "PROV-M070-002", "PROV-M070-003"],
+      "supporting_provision_ids": ["PROV-M070-004", "PROV-M070-005", "PROV-M070-006"],
+      "background_provision_ids": [],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps: the charging provision (s.3(1)), the specified-instrument definition that brings a mortgage bond within it (s.4(g)), and the incidence provision fixing who pays (s.6(e)). A fourth step, the Gazette rate Order under s.3(1), is required to reach a figure but is not in the corpus and so is not counted as a provision.",
+      "reasoning_edges": [
+        {"from_provision_id": "PROV-M070-002", "to_provision_id": "PROV-M070-001", "relationship": "defines"},
+        {"from_provision_id": "PROV-M070-001", "to_provision_id": "PROV-M070-003", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M070-001", "to_provision_id": "PROV-M070-004", "relationship": "procedurally_requires"},
+        {"from_provision_id": "PROV-M070-005", "to_provision_id": "PROV-M070-006", "relationship": "qualifies"}
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Gamini Perera intends to purchase a house and property situated in Ratmalana bearing Assessment No. 23, 1st Lane, Ratmalana. He applied for a loan from the Mortgage Bank and the Bank approved his Loan and informed him to get a certain Notice registered in the Land Registry and submit together with the folio in order to release the Loan on the simultaneous execution of the Transfer Deed and the Mortgage Bond without awaiting the completion of registration formalities.\n\nGamini Perera is hoping to obtain a loan of Rupees 3 Million from the Bank.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the mortgage bond Gamini Perera is to execute in favour of the Bank over the Ratmalana property to secure a loan of Rs. 3,000,000 attracts stamp duty, who must bear it, on what amount it is computed, and what sum is payable in April 2020.",
+        "rule": "Section 3(1) of the Stamp Duty (Special Provisions) Act, No. 12 of 2006 charges stamp duty on every specified instrument executed, drawn or presented in Sri Lanka, at such rate as the Minister determines by Order published in the Gazette; section 3(2) permits different rates for different classes of instrument. Section 4(g) makes a bond or mortgage for any definite and certain sum of money and affecting any property a specified instrument. Section 6 allocates the burden: otherwise than where there is an agreement to the contrary, in cases not falling within paragraphs (a) to (ddd) the duty is payable under section 6(e) by the person drawing, making or executing the instrument. Section 13 provides that the imposition provisions of the Stamp Duty Act, No. 43 of 1982, other than those on transfers of immovable property, motor vehicle transfers and documents filed in court, have no operation in so far as they are inconsistent with the 2006 Act. Section 16 of the 1982 Act, so far as it still operates, charges a bond or mortgage for money to be lent with the duty appropriate to the limited sum secured. Section 8(2) of the 2006 Act allows the duty on an instrument relating to a mortgage of immovable property to be paid to a prescribed bank prior to or at the time of execution, with the bank's certificate affixed to the instrument.",
+        "application": "The instrument Gamini Perera will execute is a mortgage bond over the house and premises at Assessment No. 23, 1st Lane, Ratmalana, securing a definite and certain sum, the Rs. 3,000,000 loan approved by the Bank. It is therefore a specified instrument under section 4(g) and is charged with stamp duty under section 3(1). It is a mortgage, not a transfer of immovable property, a motor vehicle transfer or a court document, so by section 13 the 2006 Act governs the imposition. As mortgagor he is the person executing the bond and no paragraph of section 6 other than (e) covers a mortgage, so in the absence of an agreement to the contrary the duty is payable by him rather than by the Bank. The sum secured is limited to Rs. 3,000,000, so that is the base on which the ad valorem duty is computed. The rate, however, is not fixed by the Act: section 3(1) leaves it to the Minister's Order published in the Gazette, and no such Order is available in the corpus consulted. The duty can therefore be identified and its base stated, but the multiplication the question calls for cannot be carried out on the material available, and no figure is proposed. Payment would in practice be made to a prescribed bank under section 8(2) at or before execution, which fits the Bank's requirement that the transfer and the bond be executed simultaneously.",
+        "conclusion": "The mortgage bond is chargeable with stamp duty under section 3(1) read with section 4(g) of the Stamp Duty (Special Provisions) Act, No. 12 of 2006, the duty is payable by Gamini Perera as the person executing it under section 6(e), and it is computed ad valorem on the Rs. 3,000,000 secured. The actual amount depends on the rate determined by the Minister by Order under section 3(1) and in force in April 2020; that Order is not in the corpus, so no figure is stated here and the numerical part of the answer is left open pending the rate instrument."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M070-Q01-001",
+          "claim_text": "Stamp duty is charged on every specified instrument executed, drawn or presented in Sri Lanka at such rate as the Minister determines by Order published in the Gazette.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M070-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M070-Q01-002",
+          "claim_text": "A bond or mortgage for any definite and certain sum of money and affecting any property is a specified instrument for the purposes of the charging provision.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M070-002"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M070-Q01-003",
+          "claim_text": "Where no specific paragraph applies and there is no agreement to the contrary, stamp duty is payable by the person drawing, making or executing the instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M070-003"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M070-Q01-004",
+          "claim_text": "Imposition of stamp duty on an instrument that is not a transfer of immovable property, a motor vehicle transfer or a document filed in court is governed by the Stamp Duty (Special Provisions) Act, No. 12 of 2006 where the Stamp Duty Act, No. 43 of 1982 is inconsistent with it.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M070-005"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M070-Q01-005",
+          "claim_text": "A bond or mortgage for money to be lent, where the total amount secured is limited, is charged with the duty applicable to the amount so limited.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M070-006", "PROV-M070-005"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M070-Q01-006",
+          "claim_text": "Stamp duty on an instrument relating to a mortgage of immovable property may be paid to a prescribed bank prior to or at the time of execution.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M070-004"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M070-Q01-007",
+          "claim_text": "The bond Gamini Perera will execute over the Ratmalana premises to secure the approved loan is a bond or mortgage for a definite and certain sum affecting property, and so is a specified instrument chargeable with stamp duty.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M070-001", "PROV-M070-002"],
+          "supporting_fact_ids": ["BG-1", "BG-2", "BG-3"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M070-Q01-008",
+          "claim_text": "Because a mortgage bond is neither a transfer of immovable property nor a motor vehicle transfer nor a court document, the 2006 Act and not the 1982 Act governs the imposition of duty on it.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M070-005"],
+          "supporting_fact_ids": ["BG-2"],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M070-Q01-009",
+          "claim_text": "Gamini Perera, as the mortgagor executing the bond, is the person by whom the duty is payable in the absence of an agreement to the contrary with the Bank.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M070-003"],
+          "supporting_fact_ids": ["BG-2"],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M070-Q01-010",
+          "claim_text": "The sum secured being limited to Rs. 3,000,000, that amount is the base on which the ad valorem duty is computed.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M070-006"],
+          "supporting_fact_ids": ["BG-3"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M070-Q01-011",
+          "claim_text": "The rate applicable to a bond or mortgage in April 2020 is fixed by Ministerial Order under section 3(1) and that Order is not available in the corpus, so the arithmetic cannot be completed.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M070-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M070-Q01-012",
+          "claim_text": "The mortgage bond is chargeable with stamp duty payable by Gamini Perera, computed ad valorem on Rs. 3,000,000 at the rate determined by the Minister's Gazette Order in force in April 2020; no figure is stated because that Order is outside the corpus.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M070-001", "PROV-M070-002", "PROV-M070-003", "PROV-M070-006"],
+          "supporting_fact_ids": ["BG-2", "BG-3"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The question asks for a calculation. The liability, the class of instrument, the payer and the computation base are all established from the corpus, but the rate is not in any Act: section 3(1) of Act No. 12 of 2006 delegates it to an Order published in the Gazette, and no such Order or rates schedule is in the frozen corpus. A figure would have to be quoted from memory, so the numeric answer is withheld and the question is marked blocked_missing_authority rather than proposed_gold.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

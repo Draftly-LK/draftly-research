@@ -1,0 +1,417 @@
+{
+  "benchmark_matter_id": "M050",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M050",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:28:28Z",
+    "verification_agent": "verifier-M050",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:40:45Z"
+  },
+  "matter_reference_date": "2021-10",
+  "matter_reference_date_basis": "matter_reference_date field of candidates/matters/M050.json; exam session OCTOBER 2021 / APRIL 2022, paper 9 question 5.",
+  "corpus_gaps": [
+    "The corpus holds only the consolidated Notaries Ordinance as amended by the Notaries (Amendment) Acts No. 31 of 2022 and No. 6 of 2024. There is no edition of section 31 as it stood in October 2021, so the operative first limb of rule (9) at the matter date had to be recovered from the words quoted for substitution in 31-2022/s16(6).",
+    "The pre-2022 wording of rule (20)(b) of section 31 is not recoverable from the corpus: 31-2022 s.16(11)(a) repealed and replaced that paragraph without reproducing the repealed words.",
+    "The pre-2022 wording of section 2 of the Prevention of Frauds Ordinance is likewise not recoverable: 30-2022/s2 repeals 'all the words from \"shall be of force\" to the end of that section' without reproducing them.",
+    "Rule (10) of section 31 was repealed by 6-2024 s.3(4) and its text is not reproduced in the corpus; the consolidated body runs the 'good repute / declaration at the foot' limb on inside rule (9)."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M050-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (9), second limb",
+      "relevant_excerpt": "he shall satisfy himself, before accepting them as witnesses, that they are persons of good repute and that they are well acquainted with the executant and know his proper name, occupation, and residence, and the witnesses shall sign a declaration at the foot of the deed or instrument that they are well acquainted with the executant and know his proper name, occupation, and residence.",
+      "why_relevant": "Where the notary does not know the executant and must rely on the attesting witnesses, this limb sets the conditions the witnesses must satisfy before he may accept them: good repute, actual acquaintance with the executant, knowledge of his proper name, occupation and residence, and a signed declaration at the foot of the deed. It is the operative test in this scenario.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "This limb was in force in October 2021. At that date it was introduced by the words 'and in the latter case, he shall satisfy himself...'; 6-2024 s.3(3) later substituted 'he shall' for 'and in the latter case, he shall', and 6-2024 s.3(4) repealed rule (10). The quoted words themselves are unchanged, and the deleted phrase 'in the latter case' pointed at exactly the situation in this matter (reliance on the witnesses' knowledge of the executant).",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 1-1907/s31 and the limb sat inside rule (9) at the matter date, as 6-2024 s.3(3) confirms by substituting \"he shall\" for \"and in the latter case, he shall\" in rule (9); the quoted words are unchanged since before October 2021."
+    },
+    {
+      "provision_id": "PROV-M050-002",
+      "section_id": "31-2022/s16",
+      "act_id": "31-2022",
+      "formal_title": "Notaries (Amendment) Act, No. 31 of 2022",
+      "number_and_year": "No. 31 of 2022",
+      "section": "16",
+      "subsection": "(6)",
+      "relevant_excerpt": "in rule (9) thereof, by the substitution for the words, \"He shall not authenticate or attest any deed or instrument unless the person executing the same be known to him or to at least two of the attesting witnesses thereto;\"",
+      "why_relevant": "The amending provision quotes verbatim the words of rule (9) that it removed, and so is the corpus record of the first limb of rule (9) as it stood in October 2021: the notary may not attest unless the executant is known to him or to at least two of the attesting witnesses. That is the prohibition the question turns on.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The Notaries (Amendment) Act, No. 31 of 2022 post-dates the matter reference date, so this section was not itself in force in October 2021. It is recorded because the words it quotes for substitution are the rule (9) wording that WAS in force at that date; the substituted wording in the consolidated text (identity established by inspection of a national identity card, passport bio-page or driving licence) was not yet available to a notary in October 2021.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 31-2022/s16 and the words quoted for substitution are a reliable record of the rule (9) first limb in force in October 2021, so this provision is in substance indispensable to the answer; it has to stay in the supporting set only because the schema and validator forbid an indispensable provision marked applicable_to_matter_date=false, and that mismatch is recorded as a disagreement for the lawyer."
+    },
+    {
+      "provision_id": "PROV-M050-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (8)",
+      "relevant_excerpt": "(8) He shall not authenticate or attest any deed or instrument to which at least two witnesses have not subscribed their signatures in letters.",
+      "why_relevant": "Fixes the minimum of two attesting witnesses. It is what makes the 'at least two of the attesting witnesses' route in rule (9) workable and shows that the notary's acquaintance with a single witness cannot by itself carry the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (8) is not among the rules amended by 47-2011, 31-2022 or 6-2024, so the corpus text is the text in force in October 2021.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M050-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (12)",
+      "relevant_excerpt": "(12) He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+      "why_relevant": "Supplies the other standing condition of attestation: executant and both witnesses must sign before the notary and before one another. It is why the two witnesses relied on for identification must actually attend the execution rather than merely vouch for the executant.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (12) is not among the rules amended by 47-2011, 31-2022 or 6-2024, so the corpus text is the text in force in October 2021.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt verbatim and untouched by 20-1976 s.10, 47-2011 ss.2-3, 31-2022 s.16 or 6-2024 s.3, so the corpus text is the October 2021 text; role is supporting rather than indispensable, which is correct because rule (12) governs execution generally and not the identification question asked."
+    },
+    {
+      "provision_id": "PROV-M050-005",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20)(b)",
+      "relevant_excerpt": "(b) whether the executants of the said deed or instrument are known to him or whether he has identified them by the inspection of the national identity card, bio-page of the passport or the driving licence or whether the witnesses thereto are known to him and in the latter case he shall specify which of the executants or the person acknowledging are known to the said witness;",
+      "why_relevant": "Rule (20) requires the notary to state in the attestation whether the executants are known to him or whether the witnesses are known to him, and in the latter case to specify which executants are known to which witness. It is the disclosure step that follows once the notary attests on the strength of the witnesses rather than his own knowledge.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Paragraph (b) as quoted was substituted by 31-2022 s.16(11)(a), after the matter date, and it carries the post-2022 identity-document alternative. The corpus does not reproduce the repealed pre-2022 paragraph, so this provision is recorded as supporting context only and is not treated as indispensable.",
+      "verification_status": "unresolved",
+      "verifier_note": "Paragraph (b) as quoted was substituted by 31-2022 s.16(11)(a) after the matter date and that amendment does not reproduce the repealed words, so the attestation-disclosure duty as it stood in October 2021 cannot be established from the corpus."
+    },
+    {
+      "provision_id": "PROV-M050-006",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance No. 7 of 1840",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary",
+      "why_relevant": "Background: it is this Ordinance that makes notarial attestation before witnesses a condition of a valid transfer of immovable property, which is why the notary's ability to attest at all decides whether the transaction can go ahead.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus text of section 2 is the version produced by 30-2022 s.2 and 4-2024 s.2, both after the matter date, and the repealed pre-2022 words are not reproduced in the corpus. Recorded as background only; nothing in the answer depends on the post-2022 wording.",
+      "verification_status": "unresolved",
+      "verifier_note": "The corpus text of 7-1840/s2 is the version produced by 30-2022 s.2 and 4-2024 s.2 and neither amendment reproduces the repealed words, so the October 2021 wording of section 2 cannot be established from the corpus; it is background only and no claim relies on it."
+    },
+    {
+      "provision_id": "PROV-M050-901",
+      "section_id": "21-1998/s44",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "44",
+      "subsection": "(a)",
+      "relevant_excerpt": "A Notary Public attesting an instrument in terms of this Act shall- (a) satisfy himself regarding the identity of whosoever of the parties to the transaction and the witnesses, as are not known to him, by reference to their official identity cards or such other means as may reliably reveal their identity;",
+      "why_relevant": "Added by the verifier. For instruments executed under the Registration of Title Act a notary could, already in 1998 and so at the matter date, establish the identity of a party not known to him by reference to official identity cards. It does not govern an ordinary deed of transfer attested under the Notaries Ordinance and the Prevention of Frauds Ordinance, but it contradicts the unqualified statement in the draft answer that no identity-document route existed in October 2021, and it sets the boundary the answer should have drawn.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 44 is in force from 1998 and carries no amendment events in the corpus, so the corpus text is the October 2021 text.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier as supporting context for the temporal claim; excerpt checked verbatim against 21-1998/s44."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M050-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The circumstances in which a notary may attest a deed when the executant is a stranger to him are laid down exhaustively by the rules in section 31 of the Notaries Ordinance, in particular rules (8), (9) and (12). No judicial gloss or Roman-Dutch doctrine is needed to state the conditions; the only difficulty is temporal, because the corpus carries the post-2022 consolidated text and the wording in force at the matter date had to be taken from the words quoted for substitution in the 2022 amending Act.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M050-Q01-01",
+          "issue": "Whether a notary who does not personally know the executant may nevertheless attest the deed, and on what statutory footing.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M050-Q01-02",
+          "issue": "Whether the notary's acquaintance with one attesting witness satisfies the identification requirement, or whether the executant must be known to at least two attesting witnesses.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M050-Q01-03",
+          "issue": "What the notary must satisfy himself about before accepting the witnesses, and what the witnesses must do on the face of the deed.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M050-001",
+        "PROV-M050-003"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M050-002",
+        "PROV-M050-004",
+        "PROV-M050-005",
+        "PROV-M050-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M050-006"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Two necessary steps: the rule (9) prohibition on attesting unless the executant is known to the notary or to at least two attesting witnesses, and the qualifying limb of the same rule (read with the two-witness minimum in rule (8)) that governs when those witnesses may be accepted. The temporal recovery of the rule (9) wording from the 2022 amending Act is a sourcing step, not a further legal hop.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M050-002",
+          "to_provision_id": "PROV-M050-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M050-002",
+          "to_provision_id": "PROV-M050-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M050-001",
+          "to_provision_id": "PROV-M050-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M050-001",
+          "to_provision_id": "PROV-M050-005",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "The Notary does not know the executant but he knows one witness.",
+        "enriched_background": "Mr. Sarath Wickramaratne is a notary practising in the Gampaha judicial zone. In October 2021 he is instructed to draw and attest a deed of transfer of a house and land at Ja-Ela for a consideration of Rs. 4,500,000. The intended executant, Mr. Nimal Dharmasena of Ja-Ela, is a stranger to the notary: he has never appeared before him and the notary does not know him. Mr. Dharmasena brings with him the earlier deed by which he acquired the property, and the notary has searched the land registry folio for the land. Two persons are to sign as attesting witnesses. The first is Mr. Ranjith Silva, a schoolteacher of Ja-Ela whom the notary has known personally for many years. The second is Mr. Upali Fernando, a retired postmaster of the same village, whom the notary has never met. Both witnesses live in Mr. Dharmasena's village, have been acquainted with him for more than twenty years, and know his proper name, his occupation and where he lives. Both are persons of settled reputation in the village, and both are willing to sign a declaration at the foot of the deed that they are well acquainted with Mr. Dharmasena and know his proper name, occupation and residence. All three men are able to attend at the notary's office at the same time and to sign in one another's presence and in the presence of the notary.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M050-Q01-001",
+            "fact": "The parties and the instrument are identified: Mr. Sarath Wickramaratne, notary of the Gampaha judicial zone, is to attest a deed of transfer of a house and land at Ja-Ela for Rs. 4,500,000, executed in October 2021 by Mr. Nimal Dharmasena of Ja-Ela, who is a stranger to the notary.",
+            "origin": "synthetic_neutral",
+            "reason": "The original background names no party, no instrument and no date. Fixing an ordinary deed of transfer of immovable property executed at the matter reference date makes the scenario determinate without steering the outcome; the missing_fact_types for this question are party_identity and instrument_type.",
+            "activates_provision_ids": [
+              "PROV-M050-006"
+            ],
+            "counterfactual_effect": "If the instrument were a will or codicil, or an instrument not affecting immovable property, the attestation and witness formalities discussed would apply differently and the Prevention of Frauds requirement would not be engaged.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M050-Q01-002",
+            "fact": "Two persons are to sign as attesting witnesses: Mr. Ranjith Silva, whom the notary has known personally for many years, and Mr. Upali Fernando, whom the notary has never met.",
+            "origin": "synthetic_neutral",
+            "reason": "Makes explicit what the original background implies, that only one of the witnesses is known to the notary, and supplies the second witness the deed must carry.",
+            "activates_provision_ids": [
+              "PROV-M050-003"
+            ],
+            "counterfactual_effect": "If only one witness were available, the deed could not be attested at all, whatever the notary's knowledge of that witness.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M050-Q01-003",
+            "fact": "Both witnesses have been acquainted with the executant for more than twenty years and know his proper name, his occupation and where he lives.",
+            "origin": "synthetic_decisive",
+            "reason": "This is the fact that decides the question: the executant, unknown to the notary, is known to at least two attesting witnesses.",
+            "activates_provision_ids": [
+              "PROV-M050-002",
+              "PROV-M050-001"
+            ],
+            "counterfactual_effect": "If only one witness knew the executant, the notary could not attest the deed, because the executant would be known neither to him nor to at least two attesting witnesses.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M050-Q01-004",
+            "fact": "Both witnesses are persons of settled reputation in the village and are willing to sign a declaration at the foot of the deed that they are well acquainted with the executant and know his proper name, occupation and residence.",
+            "origin": "synthetic_decisive",
+            "reason": "Supplies the good repute of the witnesses and the declaration at the foot of the deed, both of which the notary must have before he may accept the witnesses in place of his own knowledge.",
+            "activates_provision_ids": [
+              "PROV-M050-001"
+            ],
+            "counterfactual_effect": "If a witness were of doubtful repute, or refused to sign the declaration at the foot of the deed, the notary could not accept him and the identification route through the witnesses would fail.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M050-Q01-005",
+            "fact": "The executant produces the earlier deed by which he acquired the property, the notary has searched the land registry folio, and executant and both witnesses can attend at the same time and sign in one another's presence and in the presence of the notary.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the relevant_document fact type and confirms that the ordinary execution formalities can be met, so that the answer turns only on the identification point.",
+            "activates_provision_ids": [
+              "PROV-M050-004"
+            ],
+            "counterfactual_effect": "If the executant and the witnesses could not sign together before the notary, the deed could not be attested even though the identification requirement was met.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "The notary is asked to attest a deed of transfer executed by a man he does not know, in circumstances where he knows one of the two attesting witnesses. The issue is whether, and on what conditions, the rules to be observed by notaries permit him to attest a deed when the executant is a stranger to him.",
+        "rule": "Notaries Ordinance s.31 rule (9), in the form in force in October 2021, provided that a notary shall not authenticate or attest any deed or instrument unless the person executing the same be known to him or to at least two of the attesting witnesses thereto. The statutory test therefore looks to the notary's knowledge of the executant, and failing that to the knowledge which at least two attesting witnesses have of the executant; the notary's acquaintance with a witness is not itself a substitute. Where the notary relies on the witnesses, the same rule requires that he satisfy himself, before accepting them as witnesses, that they are persons of good repute and that they are well acquainted with the executant and know his proper name, occupation, and residence, and that the witnesses sign a declaration at the foot of the deed to that effect. Section 31 rule (8) forbids attestation of a deed to which at least two witnesses have not subscribed their signatures in letters, and rule (12) forbids attestation unless the executant and the witnesses have signed in the notary's presence and in the presence of one another, the notary signing before them. Rule (20) then requires the attestation to state whether the executants are known to the notary or whether the witnesses are known to him, and in the latter case to specify which executant is known to which witness. Notarial attestation of this kind is what the Prevention of Frauds Ordinance s.2 makes a condition of a valid transfer of immovable property.",
+        "application": "The notary does not know Mr. Dharmasena, so the first branch of rule (9) is unavailable and he cannot attest on the strength of his own knowledge. That he has known Mr. Silva for years does not cure this: rule (9) asks whether the executant is known to at least two attesting witnesses, not whether a witness is known to the notary. Here the second branch is satisfied, because both Mr. Silva and Mr. Fernando have been acquainted with the executant for more than twenty years and know his proper name, occupation and residence, so the executant is known to at least two of the attesting witnesses even though one of them is a stranger to the notary. Before accepting them the notary must satisfy himself that they are of good repute and that their acquaintance with the executant is real; on the facts both are of settled reputation in the executant's village and both are willing to sign the declaration at the foot of the deed, which the rule requires them to sign. Two witnesses will subscribe their signatures in letters, as rule (8) requires, and executant and witnesses can sign together before the notary as rule (12) requires. Having attested on the strength of the witnesses rather than his own knowledge, the notary must say so in his attestation and specify which of the witnesses knows the executant.",
+        "conclusion": "The notary may attest the deed, but only in these circumstances: the executant, though unknown to him, must be known to at least two of the attesting witnesses; the notary must first satisfy himself that those witnesses are persons of good repute and are well acquainted with the executant and know his proper name, occupation and residence; the witnesses must sign the declaration to that effect at the foot of the deed; at least two witnesses must subscribe their signatures in letters, and executant, witnesses and notary must sign in one another's presence; and the attestation must record that the executant was not known to the notary and specify which witness knows him. Knowing one witness is not enough on its own. This states the position under section 31 as it stood at the October 2021 examination session; the rule was recast in 2022 to allow identity to be established by inspection of a national identity card, passport bio-page or driving licence, which was not an available route at that date."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M050-Q01-001",
+          "claim_text": "In October 2021 a notary could not authenticate or attest a deed unless the person executing it was known to him or to at least two of the attesting witnesses.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M050-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M050-Q01-002",
+          "claim_text": "Where the notary relies on the witnesses' knowledge, he must satisfy himself before accepting them that they are persons of good repute and well acquainted with the executant and know his proper name, occupation and residence, and the witnesses must sign a declaration to that effect at the foot of the deed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M050-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M050-Q01-003",
+          "claim_text": "A deed may not be attested unless at least two witnesses have subscribed their signatures in letters.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M050-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M050-Q01-004",
+          "claim_text": "The executant and the witnesses must sign in the notary's presence and in the presence of one another, and the notary must sign before them.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M050-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M050-Q01-005",
+          "claim_text": "The attestation must state whether the executants are known to the notary or whether the witnesses are known to him, and in the latter case specify which executant is known to which witness.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M050-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "rejected"
+        },
+        {
+          "claim_id": "CL-M050-Q01-006",
+          "claim_text": "Because the notary does not know the executant, he cannot attest on the first branch of the rule, and his acquaintance with one witness does not supply the missing knowledge, since the test is whether the executant is known to at least two attesting witnesses.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M050-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "FACT-M050-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M050-Q01-007",
+          "claim_text": "The second branch is satisfied on these facts, because both attesting witnesses have long been acquainted with the executant and know his proper name, occupation and residence.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M050-002",
+            "PROV-M050-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M050-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M050-Q01-008",
+          "claim_text": "The witnesses may be accepted because they are of good repute and are willing to sign the required declaration at the foot of the deed.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M050-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M050-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M050-Q01-009",
+          "claim_text": "Two witnesses will subscribe their signatures and executant, witnesses and notary can sign together, so the remaining execution formalities are met.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M050-003",
+            "PROV-M050-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M050-Q01-002",
+            "FACT-M050-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M050-Q01-010",
+          "claim_text": "The notary may attest the deed, but only where the executant is known to at least two attesting witnesses whom he has satisfied himself are of good repute and well acquainted with the executant, who sign the declaration at the foot of the deed, with at least two witnesses subscribing and all signing in one another's presence, and with the position recorded in the attestation.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M050-002",
+            "PROV-M050-001",
+            "PROV-M050-003",
+            "PROV-M050-004",
+            "PROV-M050-005"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M050-Q01-003",
+            "FACT-M050-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M050-Q01-011",
+          "claim_text": "The notary's acquaintance with one witness alone does not entitle him to attest the deed.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M050-002",
+            "PROV-M050-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M050-Q01-012",
+          "claim_text": "This states the position as at October 2021; the identification rule was recast in 2022 to allow identity to be established by inspection of a national identity card, passport bio-page or driving licence, which was not available at the matter date.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M050-002",
+            "PROV-M050-901"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Core reasoning verified: the rule (9) first limb in force in October 2021 is recoverable verbatim from 31-2022 s.16(6), and rules (8), (9) second limb and (12) carry their October 2021 text. Three defects stop the draft being gold as written. (1) Rule claim CL-M050-Q01-005 states the rule (20)(b) attestation-disclosure duty for the matter date, but 31-2022 s.16(11)(a) replaced that paragraph without reproducing the repealed words, so PROV-M050-005 is unresolved and the claim is rejected; the sentence also appears in the gold answer's rule and conclusion, which the verifier may not rewrite. (2) CL-M050-Q01-012 asserts without qualification that no identity-document route existed in October 2021, whereas 21-1998 s.44 (added as PROV-M050-901) gave exactly that route for instruments under the Registration of Title Act. (3) Rule (10) of section 31 was in force at the matter date and was repealed only by 6-2024 s.3(4), which does not reproduce its text, so the conclusion's exhaustive framing ('only in these circumstances') cannot be checked against the corpus. A lawyer need only trim or qualify the rule (20) sentence and the 2022 temporal sentence, and confirm rule (10) is immaterial, to restore this to proposed_gold.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

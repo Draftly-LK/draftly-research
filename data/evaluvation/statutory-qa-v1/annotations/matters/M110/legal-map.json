@@ -1,0 +1,358 @@
+{
+  "benchmark_matter_id": "M110",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M110",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T23:13:19Z",
+    "verification_agent": "verifier-M110",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-05T00:00:00Z"
+  },
+  "matter_reference_date": "2018-04",
+  "matter_reference_date_basis": "matter_reference_date field of candidates/matters/M110.json; exam session APRIL 2018. Provisions are read as they stood in April 2018, i.e. before the Notaries (Amendment) Acts No. 31 of 2022 and No. 6 of 2024.",
+  "corpus_gaps": [
+    "The corpus holds only the consolidated (post-2024) text of the Notaries Ordinance; there is no as-at-2018 snapshot. Rule (15), rule (22) and rule (11) of section 31 were not touched by Act No. 47 of 2011, Act No. 31 of 2022 or Act No. 6 of 2024 (checked against 47-2011/s2, 47-2011/s3, 31-2022/s16 and 6-2024/s3), so the printed text is taken to be the April 2018 text; the verifier should confirm this against a 2018 edition.",
+    "Section 34 (penalty for breach of the section 31 rules) was wholly substituted by Act No. 31 of 2022 s.17, so the corpus text is not the April 2018 text. It is therefore left out of the map and the gold answer says nothing about the penalty for breaching rule (15).",
+    "The corpus has no rule, regulation or Registrar-General circular on the use of interpreters or certified translations where an executant does not read the language of the deed, so the answer is confined to what section 31 itself requires."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M110-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(15)",
+      "relevant_excerpt": "(15) If any deed or instrument executed or acknowledged before him be signed by any of the parties or witnesses thereto with a mark, or with a signature in a language other than that in which the notary is authorized to practice, he shall write over such mark or signature in his own handwriting and at the time of execution the words \"This is the mark (or signature, as the case may be) of A. B.\" (here insert the name of the person signing with the mark or signature);",
+      "why_relevant": "This is the rule that governs the exact situation: an executant has signed in a language (Japanese) other than the language in which the notary is authorized to practise. It fixes the notary's positive duty - to write over the signature, in his own handwriting and at the time of execution, the words \"This is the signature of A. B.\", inserting the signatory's name.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (15) dates from the 1907 Ordinance. Neither Act No. 47 of 2011, nor Act No. 31 of 2022 s.16, nor Act No. 6 of 2024 s.3 substituted rule (15); Act No. 31 of 2022 s.16(8) only inserted a new rule (15A) immediately after it. Rule (15A) (compulsory thumb impression alongside the signature) came into force after April 2018 and is deliberately not relied on.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M110-002",
+      "section_id": "1-1907/s2",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "Every appointment to the office of notary shall be by warrant granted by the Minister, and shall specify the area within which, and the language or languages in which, the person appointed is authorized to practice.",
+      "why_relevant": "Rule (15) is triggered only by a signature \"in a language other than that in which the notary is authorized to practice\". Section 2 is what settles that authorized language: it is the language specified in the notary's warrant. Without it there is no way to say that a Japanese signature is in another language for this notary.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907; the corpus records no amendment event on section 2, so the text stood as printed in April 2018.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M110-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(22)",
+      "relevant_excerpt": "(22) He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice nor authenticate or attest any deed or instrument drawn in any language other than that in which he is authorized to practice.",
+      "why_relevant": "Marks the boundary of the problem. Rule (22) bars the notary from attesting a deed drawn in a language outside his warrant, but it says nothing about the language of a party's signature. So a Japanese signature on a deed drawn in the notary's own language does not disable him from attesting; it only brings rule (15) into play.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (22) is original to the 1907 Ordinance and was not among the rules substituted by Act No. 31 of 2022 s.16 or Act No. 6 of 2024 s.3.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M110-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(11)",
+      "relevant_excerpt": "(11) He shall not authenticate or attest any deed or instrument in any case in which the person executing or acknowledging the same shall be or profess to be unable to read the same, or in which such person shall require him to read over the same, unless and until he shall have read over and explained the same, or caused the same to be explained, in the presence and hearing of such person and, except in the case of wills and codicils, in the presence of the attesting witnesses.",
+      "why_relevant": "An executant who signs in Japanese will commonly not read the language of the deed. Where he is, or professes to be, unable to read it, rule (11) adds a second duty on the notary: read over and explain the deed, or cause it to be explained, in the executant's presence and hearing and in the presence of the attesting witnesses, before attesting.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (11) is original to the 1907 Ordinance and was not among the rules substituted by Act No. 31 of 2022 s.16 or Act No. 6 of 2024 s.3.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording and temporal note confirmed verbatim against 1-1907/s31 rule (11), which no post-2018 amendment touches; the role correction is that rule (11) is engaged only by synthetic decisive fact FACT-M110-Q01-005, so it is supporting to an enrichment-created issue rather than to the question as examined."
+    },
+    {
+      "provision_id": "PROV-M110-901",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(15), second limb",
+      "relevant_excerpt": "and in the case of a mark he shall besides require such person to affix to the deed or instrument the impression of his left thumb and shall write over such impression at the time and in the manner aforesaid the words \"This is the left thumb impression of A. B.\" (here insert the name of the person whose thumb impression it is).",
+      "why_relevant": "CL-M110-Q01-003 asserts that the left thumb impression limb of rule (15) applies to a mark and not to a signature. The excerpt in PROV-M110-001 stops before that limb, so the claim had no cited text behind it. This entry supplies the limb verbatim: it opens with \"and in the case of a mark\", which is what confines it to marks.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of rule (15) as it stood in 1907. Act No. 31 of 2022 s.16(8) inserted a new rule (15A) immediately after rule (15) but did not substitute rule (15) itself; Act No. 6 of 2024 s.3 amended rule (15A), not rule (15). The limb therefore read as printed in April 2018.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim with search_corpus.py check."
+    },
+    {
+      "provision_id": "PROV-M110-902",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(20)(d)",
+      "relevant_excerpt": "(d) whether the same was read over by the person executing the same, or read and explained by him, the said notary, to the said person in the presence of the attesting witnesses;",
+      "why_relevant": "Once rule (11) is engaged, the reading over and explanation is not the end of the notary's duty: rule (20)(d) requires him to state in the attestation itself whether the deed was read over by the executant or read and explained by the notary in the presence of the attesting witnesses. The map relies on rule (11) but stops short of the recording duty, so this completes the answer to \"what is the duty of the Notary\".",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (20) was amended after April 2018 by Act No. 31 of 2022 s.16(11) (paragraphs (b), (e), (g) and new (h)) and by Act No. 6 of 2024 s.3(7) (paragraph (g)). Paragraph (d) was not touched by either, so the printed text is the April 2018 text.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier as a supporting provision the researcher missed; excerpt checked verbatim."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M110-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks what a notary must do when an executant signs in a language other than the one in which the notary practises. Section 31 rule (15) of the Notaries Ordinance answers that in terms, and section 2 supplies the notion of the language the notary is authorized to practise in. No judicial gloss or Roman-Dutch doctrine is needed to state the duty.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M110-Q01-01",
+          "issue": "What must a notary do when an executant signs a deed before him with a signature in a language other than the language in which the notary is authorized to practise?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M110-Q01-02",
+          "issue": "Does a signature in such a language prevent the notary from attesting the deed at all?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M110-Q01-03",
+          "issue": "What further duty arises where the executant who signs in that language is unable to read the deed?",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M110-001",
+        "PROV-M110-002"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M110-003",
+        "PROV-M110-004",
+        "PROV-M110-901",
+        "PROV-M110-902"
+      ],
+      "background_provision_ids": [],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Two steps: rule (15) of section 31 states the duty, and section 2 is needed to establish that the signature is in a language other than the one the notary's warrant authorizes. Rules (22) and (11) are supporting and are not counted. Verifier: hop count of 2 confirmed - s.2 supplies the authorized language and rule (15) states the duty; the added provisions PROV-M110-901 (the mark limb of rule (15)) and PROV-M110-902 (rule (20)(d)) are supporting and are not counted.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M110-002",
+          "to_provision_id": "PROV-M110-001",
+          "relationship": "defines"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "The executant has signed in Japanese.",
+        "enriched_background": "Mr. Kenji Watanabe, a Japanese national resident in Colombo, wishes to transfer the house and premises bearing assessment number 42, Hill Street, Nugegoda, to Ms. Ayesha Fernando for a stated consideration of Rs. 18,500,000. The notary before whom the transfer is to be executed on 5 March 2018 holds a warrant authorising him to practise in the English language only, and the deed of transfer has been drawn in English. Mr. Watanabe produces his Japanese passport, from which the notary notes his full name as it appears there. He tells the notary that he cannot read English and asks that the contents of the document be explained to him. Two witnesses are present. When the document is signed, Mr. Watanabe writes his name in Japanese characters.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M110-Q01-001",
+            "fact": "The executant is Mr. Kenji Watanabe, a Japanese national resident in Colombo, and the other party is Ms. Ayesha Fernando.",
+            "origin": "synthetic_neutral",
+            "reason": "The matter file records party_identity as a missing fact type. Rule (15) requires the notary to insert the name of the person signing, so the scenario is indeterminate without a named executant.",
+            "activates_provision_ids": [
+              "PROV-M110-001"
+            ],
+            "counterfactual_effect": "None on the outcome; a different name changes only the words the notary writes over the signature.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M110-Q01-002",
+            "fact": "The instrument is a deed of transfer of the house and premises bearing assessment number 42, Hill Street, Nugegoda, for a stated consideration of Rs. 18,500,000, to be executed on 5 March 2018 before two witnesses.",
+            "origin": "synthetic_neutral",
+            "reason": "The matter file records instrument_type as a missing fact type. Rule (15) applies to any deed or instrument, so the type is neutral, but it is needed to make the scenario a concrete notarial execution and to fix a date before the matter reference date.",
+            "activates_provision_ids": [
+              "PROV-M110-001"
+            ],
+            "counterfactual_effect": "None on the outcome. Had the instrument been a will or codicil, the attesting-witness element of the reading-over duty would fall away, but the duty to write over the signature would be unchanged.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M110-Q01-003",
+            "fact": "The notary's warrant authorises him to practise in the English language only, and the deed has been drawn in English.",
+            "origin": "synthetic_decisive",
+            "reason": "Rule (15) bites only where the signature is in a language other than the one the notary is authorized to practise in, and that language comes from the warrant under section 2. Rule (22) also has to be cleared, which requires knowing the language the deed is drawn in.",
+            "activates_provision_ids": [
+              "PROV-M110-002",
+              "PROV-M110-001",
+              "PROV-M110-003"
+            ],
+            "counterfactual_effect": "If the warrant had authorised the notary to practise in Japanese, the signature would be in his own authorised language and rule (15) would not be engaged. If the deed itself had been drawn in Japanese, rule (22) would bar him from attesting it at all.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M110-Q01-004",
+            "fact": "The executant produces his Japanese passport, from which the notary notes his full name as it appears there.",
+            "origin": "synthetic_neutral",
+            "reason": "The matter file records relevant_document as a missing fact type. Rule (15) requires the notary to insert the signatory's name, so the scenario must show where that name comes from.",
+            "activates_provision_ids": [
+              "PROV-M110-001"
+            ],
+            "counterfactual_effect": "None on the outcome; without an identity document the notary would have to establish the full name by other means before the deed is signed.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M110-Q01-005",
+            "fact": "The executant states that he cannot read English and asks the notary to explain the contents of the document to him.",
+            "origin": "synthetic_decisive",
+            "reason": "Determines whether the second duty, to read over and explain before attesting, is engaged. Without it the scenario leaves open whether the executant could read the deed.",
+            "activates_provision_ids": [
+              "PROV-M110-004"
+            ],
+            "counterfactual_effect": "If the executant read the deed himself and did not profess inability to read it, the reading-over and explanation duty would not arise and only the writing-over duty would apply.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "The executant has signed the deed in Japanese, a language other than English, which is the only language the notary's warrant authorises him to practise in. The issue is what the Notaries Ordinance requires the notary to do about such a signature, whether it stops him from attesting the deed, and what follows from the executant's inability to read the deed.",
+        "rule": "A notary's warrant specifies the area and the language or languages in which he is authorized to practise (Notaries Ordinance s.2). Where a deed executed before him is signed by a party or a witness with a mark, or with a signature in a language other than that in which the notary is authorized to practise, s.31(15) requires the notary himself to write over that signature, in his own handwriting and at the time of execution, the words \"This is the signature of A. B.\", inserting the name of the person signing. Rule (15) attaches to the signature; it is rule (22) that deals with the language of the instrument, barring the notary from attesting a deed drawn in a language outside his warrant. Separately, s.31(11) forbids him from attesting where the executant is, or professes to be, unable to read the deed, or asks him to read it over, unless he has first read over and explained it, or caused it to be explained, in that person's presence and hearing and, except for wills and codicils, in the presence of the attesting witnesses.",
+        "application": "The deed is drawn in English, which is the language of the notary's warrant, so s.31(22) is satisfied and the Japanese signature does not disqualify him from attesting. Because the signature is in Japanese and his warrant is limited to English, s.31(15) is engaged. He must therefore write over the Japanese signature, in his own handwriting and at the time of execution rather than afterwards, the words \"This is the signature of Kenji Watanabe\", using the full name he has taken from the passport produced to him. The requirement of a left thumb impression in rule (15) applies to a mark and not to this signature. Since the executant says he cannot read English and asks for the document to be explained, s.31(11) also requires the notary to read over and explain the deed, or cause it to be explained, in the executant's presence and hearing and in the presence of the two attesting witnesses, before he attests it.",
+        "conclusion": "The notary may attest the deed, but he must write over the Japanese signature in his own handwriting at the time of execution the words \"This is the signature of Kenji Watanabe\" under s.31(15), and, because the executant cannot read English, he must first read over and explain the deed, or cause it to be explained, to the executant in the presence of the attesting witnesses under s.31(11)."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M110-Q01-001",
+          "claim_text": "The language in which a notary is authorized to practise is the language specified in the warrant of appointment granted by the Minister.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M110-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M110-Q01-002",
+          "claim_text": "Where a deed executed before a notary is signed by a party or witness with a signature in a language other than that in which the notary is authorized to practise, the notary must write over that signature, in his own handwriting and at the time of execution, the words \"This is the signature of A. B.\", inserting the name of the person signing.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M110-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M110-Q01-003",
+          "claim_text": "The additional requirement in rule (15) that the signatory affix his left thumb impression, over which the notary writes a corresponding endorsement, applies where the person signs with a mark, not where he signs with a signature.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M110-001",
+            "PROV-M110-901"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M110-Q01-004",
+          "claim_text": "A notary may not attest a deed drawn in a language other than the language in which he is authorized to practise; that prohibition is directed at the language of the instrument and not at the language of a party's signature.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M110-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M110-Q01-005",
+          "claim_text": "A notary must not attest a deed where the executant is, or professes to be, unable to read it, or asks him to read it over, unless he has read over and explained it, or caused it to be explained, in the executant's presence and hearing and, except for wills and codicils, in the presence of the attesting witnesses.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M110-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M110-Q01-006",
+          "claim_text": "Because the deed is drawn in English and the notary's warrant authorises English, the Japanese signature does not prevent him from attesting the deed.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M110-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M110-Q01-003"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M110-Q01-007",
+          "claim_text": "The signature is in Japanese while the notary's warrant is limited to English, so the signature is in a language other than that in which he is authorized to practise and rule (15) is engaged.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M110-001",
+            "PROV-M110-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M110-Q01-003",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M110-Q01-008",
+          "claim_text": "The notary must accordingly write over the Japanese signature, in his own handwriting and at the time of execution, the words \"This is the signature of Kenji Watanabe\", using the full name taken from the passport produced to him.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M110-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M110-Q01-001",
+            "FACT-M110-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M110-Q01-009",
+          "claim_text": "Because the executant states that he cannot read English and asks for the document to be explained, the notary must read over and explain the deed, or cause it to be explained, in his presence and hearing and in the presence of the two attesting witnesses before attesting it.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M110-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M110-Q01-005",
+            "FACT-M110-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M110-Q01-010",
+          "claim_text": "The notary may attest the deed, but only after writing over the Japanese signature at the time of execution the words \"This is the signature of Kenji Watanabe\" and after reading over and explaining the deed to the executant in the presence of the attesting witnesses.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M110-001",
+            "PROV-M110-003",
+            "PROV-M110-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M110-Q01-003",
+            "FACT-M110-Q01-005"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Verifier downgrade from proposed_gold. The core duty is sound: rule (15) of section 31 is verbatim, unamended at April 2018, and answers the question. Two enrichment-created problems need a lawyer. First, FACT-M110-Q01-004 has the executant identified by his Japanese passport and the gold answer takes his full name from it, but identification by the bio-page of a passport only entered rule (9) through Act No. 31 of 2022 s.16(6); the April 2018 rule (9) required the executant to be known to the notary or to at least two attesting witnesses, and the enriched facts do not say he was. The corpus holds only the post-2022 text of rule (9), so whether the notary could lawfully attest at all on these facts in April 2018 cannot be resolved here, and the conclusion \"the notary may attest the deed\" rests on that unresolved point. Second, FACT-M110-Q01-005 (the executant cannot read English) imports rule (11) and turns a one-mark question about a foreign-language signature into a two-duty answer; enrichment should not enlarge the legal issue. A lawyer should decide whether to drop that fact and confine the gold answer to rule (15).",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "benchmark_matter_id": "M007",
+  "source_matter_id": "P01-Q05-M02",
+  "grouping_key": "P01-Q05-M02",
+  "paper_no": 1,
+  "question_no": 5,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis.\n\nSaman failed to comply with rules set out in section 31 of the Notaries Ordinance when attesting the said Deed.",
+    "normalized": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis.\n\nSaman failed to comply with rules set out in section 31 of the Notaries Ordinance when attesting the said Deed.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P01-Q05-P03"
+        ]
+      },
+      {
+        "segment_index": 1,
+        "field": "own_background",
+        "atomic_ids": [
+          "P01-Q05-P03"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M007-Q01",
+      "atomic_id": "P01-Q05-P03",
+      "part_uid": "paper-01/q5/iii",
+      "part_id": "iii",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 3,
+      "question_original": "Could the Deed which is attested by him get invalidated? Explain.",
+      "question_normalized": "Could the Deed which is attested by him get invalidated? Explain.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis.\n\nSaman failed to comply with rules set out in section 31 of the Notaries Ordinance when attesting the said Deed.",
+      "effective_background_normalized": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis.\n\nSaman failed to comply with rules set out in section 31 of the Notaries Ordinance when attesting the said Deed.",
+      "source_quote": "(iii) Saman failed to comply with rules set out in section 31 of the Notaries Ordinance when attesting the\nsaid Deed. Could the Deed which is attested by him get invalidated? Explain.\n(3 marks)",
+      "classification": {
+        "context_sources": [
+          "shared",
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.82,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "default_or_breach",
+        "property_identity",
+        "party_identity"
+      ]
+    }
+  ],
+  "matter_reference_date": "2026-04",
+  "exam_session": "APRIL 2026",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

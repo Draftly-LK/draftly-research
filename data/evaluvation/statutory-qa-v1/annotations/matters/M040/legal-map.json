@@ -1,0 +1,867 @@
+{
+  "benchmark_matter_id": "M040",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M040",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:27:30Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2023-04",
+  "matter_reference_date_basis": "Taken from matter_reference_date in candidates/matters/M040.json, which records the exam session APRIL 2023. All three deaths in issue (2010, 2011, 2018) precede that date, and every Matrimonial Rights and Inheritance Ordinance section relied on has been in force since 1876 with no recorded amendment event.",
+  "corpus_gaps": [
+    "No statute in the corpus governs donations under the general law: there is no provision on the passing of dominium under a deed of gift, on acceptance by the donee, or on the effect of a gift expressed to be absolute and irrevocable. The only donation provisions found are Muslim Intestate Succession Ordinance ss.3 and 4, which do not apply here.",
+    "No statute in the corpus governs the creation, reservation or termination of a life interest or usufruct in immovable property. The only hits for 'life interest' are compensation and ceiling provisions in the Land Reform Law (ss.3, 12, 42F) and a registration proviso in the Registration of Title Act s.46, none of which states the substantive rule that the interest falls in on the holder's death.",
+    "The Partition Law No. 21 of 1977 is not in the corpus, so there is no authority for the conclusive effect of the final decree of 21/05/2000 in Partition Case No.7268/P on Kamal Gunatilleke's title.",
+    "The corpus text of Prevention of Frauds Ordinance s.2 is the consolidation as amended in 2022 and 2024; the wording in force when Deed of Gift No.232 was executed in 2002 is not available, and the current text does not use the word 'gift'.",
+    "Matrimonial Rights and Inheritance Ordinance s.36 refers questions on which the Ordinance is silent to the Roman-Dutch law of North Holland, which is by definition outside the statutory corpus. That referral is the formal reason both questions are reserved rather than proposed as gold.",
+    "Neither the corpus nor the background establishes the parties' personal law; s.2 of the Ordinance is the exclusion clause but nothing confirms that no party is Kandyan, Muslim or subject to the Tesawalamai.",
+    "The corpus gives no guidance, and s.27 no express words, on whether the full-blood preference in s.27 reaches the sibling portion created by s.25 where one parent still survives. That question is decided here by construction alone."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M040-001",
+      "section_id": "15-1876/s21",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "21",
+      "subsection": "(1)",
+      "relevant_excerpt": "Inheritance ab interstate to the immovable property in Sri Lanka of a person deceased shall be governed and regulated by the following provisions of this Ordinance wherever such person may have or have had his actual or matrimonial domicile.",
+      "why_relevant": "Fixes this Ordinance as the governing law for intestate succession to Lot 1, immovable property situated at Kandawatta Road, Nugegoda, on each of the three intestate deaths (Pethum 2010, Sadun 2011, Rohan 2018).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-002",
+      "section_id": "15-1876/s22",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "22",
+      "subsection": null,
+      "relevant_excerpt": "When any person shall die intestate as to any of his or her property, leaving a spouse surviving, the surviving spouse shall inherit one-half of the property of such person.",
+      "why_relevant": "Gives Sadana one-half of Pethum's interest and Roshini one-half of Sadun's interest. Rohan left no spouse, so the section is spent for his estate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-003",
+      "section_id": "15-1876/s23",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "23",
+      "subsection": null,
+      "relevant_excerpt": "Subject to the right of the surviving spouse in the preceding section mentioned, the right of inheritance is divided in the following order as respects (a) descendants, (b) ascendants, (c) collaterals.",
+      "why_relevant": "Sets the order in which the residue after the surviving spouse's half is offered to descendants, then ascendants, then collaterals; supplies the framework in which sections 24 and 25 operate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-004",
+      "section_id": "15-1876/s24",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "24",
+      "subsection": null,
+      "relevant_excerpt": "Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita, but the children or remoter issue of a deceased child take per stirpes or by representation.",
+      "why_relevant": "Gives Rohan, as Sadun's only child, the residue of Sadun's interest after Roshini's statutory half; and, because Pethum and Rohan each died issueless, exhausts the descendant class in their two estates and pushes each of those estates into section 25.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-005",
+      "section_id": "15-1876/s25",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "25",
+      "subsection": null,
+      "relevant_excerpt": "The children and remoter descendants failing, the inheritance of the deceased goes to his father and mother in case they are both alive; but if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half.",
+      "why_relevant": "Governs Pethum's estate: he died issueless, his father Kamal had predeceased him in 2005 and his mother Thilaka survived, so Thilaka takes half of the residue and the other half goes to his full siblings Kalum and Shanthi together with Sadun and Nadun, who are half-blood siblings related to Pethum by the side of the deceased parent, Kamal.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-006",
+      "section_id": "15-1876/s25",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "25",
+      "subsection": null,
+      "relevant_excerpt": "In case there is no full or half-brother or sister alive at the death of the deceased, the surviving parent inherits the whole, although there may be children or other issue of deceased brothers or sisters.",
+      "why_relevant": "Governs Rohan's estate: he died in 2018 unmarried, issueless and without any brother or sister, his father Sadun having predeceased him in 2011, so his surviving mother Roshini takes the whole of his interest.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-007",
+      "section_id": "15-1876/s27",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "27",
+      "subsection": null,
+      "relevant_excerpt": "but if there are only half-brothers and sisters or such issue of one side, the full brothers and sisters and the issue of deceased full brothers and sisters by representation, take then in the first place one-half of the property, and divide the other half with the half-brothers and sisters and their issue by representation.",
+      "why_relevant": "Supplies the full-blood preference inside the sibling portion of Pethum's estate. Pethum's half-blood siblings Sadun and Nadun are all on one side, the father's, so his full siblings Kalum and Shanthi first take one-half of that portion and then share the remaining half with Sadun and Nadun.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-008",
+      "section_id": "15-1876/s30",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "30",
+      "subsection": null,
+      "relevant_excerpt": "if all those who succeed to the inheritance are equally near in degree to the intestate, they take per capita, and not per stirpes.",
+      "why_relevant": "Supports the equal split inside each group under section 27: Kalum and Shanthi share the first half of the sibling portion equally, and the four siblings share the remaining half equally, none of them taking by representation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-009",
+      "section_id": "15-1876/s2",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "this Ordinance shall not apply to Kandyans or Muslims, or to Tamils of the Northern Province who are or may become subject to the Tesawalamai.",
+      "why_relevant": "Records the personal-law precondition. Nothing in the background states the parties' personal law; the answer proceeds on the general law and this section is what would exclude the Ordinance if any party were Kandyan, Muslim or subject to the Tesawalamai.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-010",
+      "section_id": "15-1876/s20",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "20",
+      "subsection": null,
+      "relevant_excerpt": "The following sections of this Ordinance shall apply to the estates of such persons only as shall die after the proclamation of this Ordinance",
+      "why_relevant": "Confirms that Part III applies to estates of persons dying after the Ordinance was proclaimed, which covers all three deaths in issue.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-011",
+      "section_id": "15-1876/s3",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "includes land, incorporeal tenements, and things attached to the earth or permanently fastened to anything which is attached to the earth, and any interest in land except that of a mortgagee",
+      "why_relevant": "Defines 'immovable property' for the Ordinance, so that Lot 1 and every undivided interest in it fall within section 21(1).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-012",
+      "section_id": "15-1876/s36",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "36",
+      "subsection": null,
+      "relevant_excerpt": "In all questions relating to the distribution of the property of an intestate, if the present Ordinance is silent, the rules of the Roman-Dutch law as it prevailed in North Holland are to govern and be followed.",
+      "why_relevant": "The Ordinance's own referral clause. It is the reason the non-statutory limbs of this matter, in particular the effect of an absolute and irrevocable deed of gift subject to a reserved life interest, are answered outside the corpus and cannot be closed on statute alone.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; the corpus records no amendment event for this section and latest_change_year is null. The text applies unchanged at the matter reference date 2023-04 and at each of the three deaths in issue (2010, 2011, 2018).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M040-013",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "No sale, purchase, transfer, assignment, or mortgage of land or other immovable property",
+      "why_relevant": "Background only: the notarial-execution requirement for dispositions of immovable property, which Deed of Gift No.232 attested by a Notary Public satisfies on its face. It is not relied on for any share calculation.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus text of this section is the consolidation as amended by Act No. 30 of 2022 and Act No. 4 of 2024, both later than the matter reference date 2023-04 and far later than the 2002 deed. The 1840 to 2002 wording is not in the corpus, so this provision is carried as background only and is marked not applicable to the matter date.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M040-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The three intestacies are answered entirely by the Matrimonial Rights and Inheritance Ordinance, but the answer cannot start without two propositions that no provision in the corpus supplies: that an absolute and irrevocable notarial deed of gift passes the dominium to the donee, so that the land leaves the donor's estate; and that a life interest reserved to the donor and to a named third party falls in as to each holder on that holder's death while the other's continues. Both belong to the Roman-Dutch common law of donation and usufruct, to which s.36 of the Ordinance itself refers when the Ordinance is silent. Neither is in the corpus, nor is the Partition Law under which the final decree of 21/05/2000 conferred title. A complete answer therefore needs non-statutory authority.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M040-Q01-01",
+          "issue": "Whether the general law of intestate succession in the Matrimonial Rights and Inheritance Ordinance governs devolution of Lot 1, no Kandyan, Muslim or Tesawalamai element being stated.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M040-Q01-02",
+          "issue": "What interest Pethum held at his death, given that Deed of Gift No.232 of 2002 was an absolute and irrevocable gift subject to the life interest of Kamal and Thilaka, and Kamal died in 2005.",
+          "status": "disputed"
+        },
+        {
+          "issue_id": "ISS-M040-Q01-03",
+          "issue": "How Pethum's interest devolved in 2010 on a widow, a surviving mother, two full siblings and two paternal half-siblings, his father having predeceased him, and whether the full-blood preference in s.27 applies inside the sibling portion given by s.25.",
+          "status": "disputed"
+        },
+        {
+          "issue_id": "ISS-M040-Q01-04",
+          "issue": "How Sadun's interest devolved in 2011 on a widow and one child.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M040-Q01-05",
+          "issue": "How Rohan's interest devolved in 2018, he having died unmarried, issueless and without brother or sister, his father having predeceased him.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M040-001",
+        "PROV-M040-002",
+        "PROV-M040-004",
+        "PROV-M040-005",
+        "PROV-M040-006"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M040-003",
+        "PROV-M040-007",
+        "PROV-M040-008",
+        "PROV-M040-012"
+      ],
+      "background_provision_ids": [
+        "PROV-M040-009",
+        "PROV-M040-010",
+        "PROV-M040-011",
+        "PROV-M040-013"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four indispensable linked steps: s.21(1) fixes the governing law; s.22 gives the surviving spouse a half in each of the two spousal intestacies; s.24 exhausts the descendant class in Pethum's and Rohan's estates while giving Rohan his share of Sadun's; and s.25 supplies both the surviving-parent-plus-siblings division for Pethum and the surviving-parent-takes-all rule for Rohan. Three successive intestacies must be resolved in sequence before the present owners can be named. s.27 and s.30 change the fractions but not the list of owners, so they are supporting here.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M040-011",
+          "to_provision_id": "PROV-M040-001",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M040-010",
+          "to_provision_id": "PROV-M040-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M040-009",
+          "to_provision_id": "PROV-M040-001",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M040-002",
+          "to_provision_id": "PROV-M040-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M040-003",
+          "to_provision_id": "PROV-M040-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M040-004",
+          "to_provision_id": "PROV-M040-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M040-005",
+          "to_provision_id": "PROV-M040-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M040-007",
+          "to_provision_id": "PROV-M040-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M040-007",
+          "to_provision_id": "PROV-M040-008",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M040-012",
+          "to_provision_id": "PROV-M040-001",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a final decree dated 21/05/2000, entered in Partition Case bearing No.7268/P of District Court of Nugegoda Kamal Gunatilleke was allotted all that allotment of land marked Lot 1 depicted in Partition Plan No.2372 dated 15/06/1998 made by.A.W. Silva Licensed Surveyor of land called Kandawatta bearing Assessment No.15, Kandawatta Road, Nugegoda containing in extent 14 Perches. He was married to Thilaka Gunatilleke and had 3 children namely Pethum, Kalum and Shanthi. Kamal Gunatilleke upon Deed of Gift No.232 dated 02/08/2002 attested by A.C. Sisira Notary Public gifted said Lot 1 depicted in the said Plan No.2372 unto to the eldest son Pethum as an absolute and irrevocable gift subject to life interest of him and his wife Thilaka. Kamal Gunatilleke died on 07/07/2005. Kamal had two children named Sadun and Nadun by his first wife Kanthi. Pethum died intestate and issueless on 08/06/2010 leaving his wife Sadana. Sadun married to Roshini and died intestate on 02/08/2011 leaving one child named Rohan. Rohan met with an accident and died on 03/10/2018 unmarried and issueless.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the devolution of title to the land and premises bearing Assessment No.15, Kandawatta Road, Nugegoda can be traced from Kamal Gunatilleke to the persons who presently own it, and who holds the outstanding life interest.",
+        "rule": "Intestate succession to immovable property in Sri Lanka is governed by the Matrimonial Rights and Inheritance Ordinance s.21(1), 'immovable property' being defined in s.3 to include any interest in land; Part III applies to the estate of anyone dying after the Ordinance was proclaimed (s.20), save that it does not apply to Kandyans, Muslims or Tamils subject to the Tesawalamai (s.2). A surviving spouse inherits one-half (s.22). Subject to that half, the residue goes to descendants, then ascendants, then collaterals (s.23). Children are preferent and take per capita, the issue of a deceased child taking per stirpes (s.24). Where descendants fail and only one parent survives, the surviving parent takes half of the residue and the other half goes to the full brothers and sisters and to the half-brothers and sisters related to the intestate by the side of the deceased parent (s.25). Where the half-blood are all on one side, s.27 gives the full blood a preference: the full brothers and sisters take one-half of that portion in the first place and divide the other half with the half-blood. Within each group those equally near in degree take per capita (s.30). Where descendants fail and no brother or sister is alive, the surviving parent takes the whole (s.25). Where the Ordinance is silent the Roman-Dutch law of North Holland applies (s.36); the Ordinance says nothing about the operation of a deed of gift or of a reserved life interest.",
+        "application": "Kamal Gunatilleke took Lot 1 under the final decree of 21/05/2000 in Partition Case No.7268/P. By Deed of Gift No.232 of 02/08/2002 he gifted Lot 1 absolutely and irrevocably to Pethum, reserving a life interest to himself and to Thilaka. The dominium therefore passed to Pethum in 2002, burdened by the two life interests, and Lot 1 formed no part of Kamal's estate when he died on 07/07/2005; Kamal's own life interest fell in on that date, leaving Thilaka's life interest running. Those two steps rest on the common law of donation and of life interests, to which s.36 refers, and not on any provision of the Ordinance. Pethum died intestate and issueless on 08/06/2010. Under s.22 his widow Sadana took one-half. The descendant class being empty (s.24), s.25 applies: his father Kamal had died in 2005 and his mother Thilaka survived, so Thilaka took half of the remaining half, that is 1/4 of Lot 1, and the other 1/4 formed the sibling portion. That portion is shared by his full brother and sister Kalum and Shanthi and by Sadun and Nadun, who are half-blood siblings related to Pethum by the side of the deceased parent Kamal. The half-blood are all on the father's side, so under s.27 Kalum and Shanthi first take one-half of the sibling portion, that is 1/8 shared equally at 1/16 each, and the remaining 1/8 is divided among all four of them per capita under s.30 at 1/32 each. Kalum and Shanthi therefore hold 3/32 each and Sadun and Nadun 1/32 each. Sadun died intestate on 02/08/2011 holding 1/32. Under s.22 his widow Roshini took 1/64 and under s.24 his only child Rohan took the other 1/64. Rohan died on 03/10/2018 unmarried, issueless and with no brother or sister; his father Sadun had predeceased him, so under the closing limb of s.25 his surviving mother Roshini took the whole 1/64, bringing Roshini to 1/32.",
+        "conclusion": "The pedigree runs: Kamal Gunatilleke (title under the final decree of 21/05/2000) gifts Lot 1 to Pethum by Deed of Gift No.232 of 02/08/2002, subject to the life interests of Kamal and Thilaka; Kamal dies 07/07/2005 and his life interest falls in; Pethum dies intestate and issueless on 08/06/2010, his interest passing to Sadana as widow, to Thilaka as surviving mother, and to Kalum, Shanthi, Sadun and Nadun as siblings; Sadun dies intestate on 02/08/2011, his interest passing to Roshini as widow and to Rohan as his only child; Rohan dies unmarried and issueless on 03/10/2018, his interest passing wholly to his mother Roshini. The present owners of Lot 1 are therefore Sadana, Thilaka, Kalum, Shanthi, Nadun and Roshini, the whole land remaining subject to the life interest of Thilaka reserved by Deed of Gift No.232. This devolution is proposed and unverified; the effect of the deed of gift and of the reserved life interest is not covered by any provision in the corpus."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M040-Q01-001",
+          "claim_text": "Intestate succession to immovable property situated in Sri Lanka, including any undivided interest in Lot 1, is governed by the Matrimonial Rights and Inheritance Ordinance.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-001",
+            "PROV-M040-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-002",
+          "claim_text": "Part III of the Ordinance applies to the estate of any person dying after its proclamation, and the Ordinance does not apply to Kandyans, Muslims or Tamils subject to the Tesawalamai.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-010",
+            "PROV-M040-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-003",
+          "claim_text": "A surviving spouse inherits one-half of the intestate's property.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-004",
+          "claim_text": "Subject to the surviving spouse's half, the inheritance passes first to descendants, then to ascendants, then to collaterals, children taking per capita and the issue of a deceased child by representation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-003",
+            "PROV-M040-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-005",
+          "claim_text": "Where descendants fail and only one parent survives, the surviving parent takes half and the other half goes to the full siblings and to the half-siblings related to the intestate by the side of the deceased parent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-006",
+          "claim_text": "Where the half-blood siblings are all on one side, the full siblings take one-half of the sibling portion in the first place and divide the other half with the half-blood, those equally near in degree taking per capita.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-007",
+            "PROV-M040-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-007",
+          "claim_text": "Where descendants fail and no brother or sister is alive at the death, the surviving parent inherits the whole.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-008",
+          "claim_text": "Where the Ordinance is silent on a question of intestate distribution, the Roman-Dutch law of North Holland governs, and the Ordinance is silent on the effect of a deed of gift and of a reserved life interest.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-009",
+          "claim_text": "Deed of Gift No.232 of 02/08/2002 passed the dominium in Lot 1 to Pethum subject to the life interests reserved to Kamal and Thilaka, so that Lot 1 did not form part of Kamal's intestate estate when he died on 07/07/2005, and Kamal's life interest fell in on that date while Thilaka's continued.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-012"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-4"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-010",
+          "claim_text": "On Pethum's intestate death on 08/06/2010 his widow Sadana took one-half of his interest.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-6"
+          ],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-011",
+          "claim_text": "Pethum left no descendants, so the residue passed under the ascendant and collateral rules; his father Kamal had died in 2005 and his mother Thilaka survived, so Thilaka took 1/4 of Lot 1 and the remaining 1/4 formed the sibling portion.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-003",
+            "PROV-M040-004",
+            "PROV-M040-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-4",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-012",
+          "claim_text": "Sadun and Nadun are half-blood siblings of Pethum on the side of his deceased father Kamal and there are no half-blood siblings on the mother's side, so Kalum and Shanthi take 1/16 each out of the first half of the sibling portion and all four take 1/32 each out of the second half, giving Kalum 3/32, Shanthi 3/32, Sadun 1/32 and Nadun 1/32.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-005",
+            "PROV-M040-007",
+            "PROV-M040-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-5",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-013",
+          "claim_text": "On Sadun's intestate death on 02/08/2011 his widow Roshini took 1/64 and his only child Rohan took 1/64.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-002",
+            "PROV-M040-004"
+          ],
+          "supporting_fact_ids": [
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-014",
+          "claim_text": "On Rohan's death on 03/10/2018 unmarried, issueless and without any brother or sister, his father having predeceased him, his surviving mother Roshini took his whole 1/64, so that Roshini holds 1/32 in all.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-7",
+            "BG-8"
+          ],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q01-015",
+          "claim_text": "The present owners of Lot 1 are Sadana, Thilaka, Kalum, Shanthi, Nadun and Roshini, the land remaining subject to Thilaka's reserved life interest; the chain of devolution runs Kamal to Pethum by Deed of Gift No.232, then Pethum's intestacy in 2010, Sadun's intestacy in 2011 and Rohan's intestacy in 2018.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M040-002",
+            "PROV-M040-004",
+            "PROV-M040-005",
+            "PROV-M040-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-6",
+            "BG-7",
+            "BG-8"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "Reserved because authority_requirement is mixed_statute_and_case. Two premises of the answer rest on Roman-Dutch common law that is not in the corpus: the passing of dominium under an absolute and irrevocable deed of gift, and the falling in of a life interest reserved to two holders while the survivor's continues. The Partition Law that gives the final decree of 21/05/2000 its conclusive effect on title is also absent from the corpus. A secondary open point of construction is whether s.27 reaches the sibling portion arising under s.25 where one parent survives; the map adopts the reading that it does, in line with matter M001, but if it does not the four siblings share that portion per capita at 1/16 each.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M040-Q02",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The three intestacies are answered entirely by the Matrimonial Rights and Inheritance Ordinance, but the answer cannot start without two propositions that no provision in the corpus supplies: that an absolute and irrevocable notarial deed of gift passes the dominium to the donee, so that the land leaves the donor's estate; and that a life interest reserved to the donor and to a named third party falls in as to each holder on that holder's death while the other's continues. Both belong to the Roman-Dutch common law of donation and usufruct, to which s.36 of the Ordinance itself refers when the Ordinance is silent. Neither is in the corpus, nor is the Partition Law under which the final decree of 21/05/2000 conferred title. A complete answer therefore needs non-statutory authority.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M040-Q02-01",
+          "issue": "Whether the general law of intestate succession in the Matrimonial Rights and Inheritance Ordinance governs devolution of Lot 1, no Kandyan, Muslim or Tesawalamai element being stated.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M040-Q02-02",
+          "issue": "What interest Pethum held at his death, given that Deed of Gift No.232 of 2002 was an absolute and irrevocable gift subject to the life interest of Kamal and Thilaka, and Kamal died in 2005.",
+          "status": "disputed"
+        },
+        {
+          "issue_id": "ISS-M040-Q02-03",
+          "issue": "How Pethum's interest devolved in 2010 on a widow, a surviving mother, two full siblings and two paternal half-siblings, his father having predeceased him, and whether the full-blood preference in s.27 applies inside the sibling portion given by s.25.",
+          "status": "disputed"
+        },
+        {
+          "issue_id": "ISS-M040-Q02-04",
+          "issue": "How Sadun's interest devolved in 2011 on a widow and one child.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M040-Q02-05",
+          "issue": "How Rohan's interest devolved in 2018, he having died unmarried, issueless and without brother or sister, his father having predeceased him.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M040-001",
+        "PROV-M040-002",
+        "PROV-M040-004",
+        "PROV-M040-005",
+        "PROV-M040-006",
+        "PROV-M040-007",
+        "PROV-M040-008"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M040-003",
+        "PROV-M040-012"
+      ],
+      "background_provision_ids": [
+        "PROV-M040-009",
+        "PROV-M040-010",
+        "PROV-M040-011",
+        "PROV-M040-013"
+      ],
+      "legal_hop_count": 5,
+      "hop_count_basis": "Five indispensable linked steps. The same four as the pedigree question, plus s.27 read with s.30, because the arithmetic of the sibling portion of Pethum's residue turns on the full-blood preference where the half-blood are all on one side and on per capita division inside each group. Removing s.27 changes the numbers for four of the six owners.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M040-011",
+          "to_provision_id": "PROV-M040-001",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M040-010",
+          "to_provision_id": "PROV-M040-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M040-009",
+          "to_provision_id": "PROV-M040-001",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M040-002",
+          "to_provision_id": "PROV-M040-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M040-003",
+          "to_provision_id": "PROV-M040-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M040-004",
+          "to_provision_id": "PROV-M040-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M040-005",
+          "to_provision_id": "PROV-M040-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M040-007",
+          "to_provision_id": "PROV-M040-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M040-007",
+          "to_provision_id": "PROV-M040-008",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M040-012",
+          "to_provision_id": "PROV-M040-001",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a final decree dated 21/05/2000, entered in Partition Case bearing No.7268/P of District Court of Nugegoda Kamal Gunatilleke was allotted all that allotment of land marked Lot 1 depicted in Partition Plan No.2372 dated 15/06/1998 made by.A.W. Silva Licensed Surveyor of land called Kandawatta bearing Assessment No.15, Kandawatta Road, Nugegoda containing in extent 14 Perches. He was married to Thilaka Gunatilleke and had 3 children namely Pethum, Kalum and Shanthi. Kamal Gunatilleke upon Deed of Gift No.232 dated 02/08/2002 attested by A.C. Sisira Notary Public gifted said Lot 1 depicted in the said Plan No.2372 unto to the eldest son Pethum as an absolute and irrevocable gift subject to life interest of him and his wife Thilaka. Kamal Gunatilleke died on 07/07/2005. Kamal had two children named Sadun and Nadun by his first wife Kanthi. Pethum died intestate and issueless on 08/06/2010 leaving his wife Sadana. Sadun married to Roshini and died intestate on 02/08/2011 leaving one child named Rohan. Rohan met with an accident and died on 03/10/2018 unmarried and issueless.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What undivided share in Lot 1 each surviving heir presently owns, after the three intestacies of Pethum, Sadun and Rohan, and subject to the life interest reserved by Deed of Gift No.232.",
+        "rule": "Intestate succession to immovable property in Sri Lanka is governed by the Matrimonial Rights and Inheritance Ordinance s.21(1), 'immovable property' being defined in s.3 to include any interest in land; Part III applies to the estate of anyone dying after the Ordinance was proclaimed (s.20), save that it does not apply to Kandyans, Muslims or Tamils subject to the Tesawalamai (s.2). A surviving spouse inherits one-half (s.22). Subject to that half, the residue goes to descendants, then ascendants, then collaterals (s.23). Children are preferent and take per capita, the issue of a deceased child taking per stirpes (s.24). Where descendants fail and only one parent survives, the surviving parent takes half of the residue and the other half goes to the full brothers and sisters and to the half-brothers and sisters related to the intestate by the side of the deceased parent (s.25). Where the half-blood are all on one side, s.27 gives the full blood a preference: the full brothers and sisters take one-half of that portion in the first place and divide the other half with the half-blood. Within each group those equally near in degree take per capita (s.30). Where descendants fail and no brother or sister is alive, the surviving parent takes the whole (s.25). Where the Ordinance is silent the Roman-Dutch law of North Holland applies (s.36); the Ordinance says nothing about the operation of a deed of gift or of a reserved life interest.",
+        "application": "Kamal Gunatilleke took Lot 1 under the final decree of 21/05/2000 in Partition Case No.7268/P. By Deed of Gift No.232 of 02/08/2002 he gifted Lot 1 absolutely and irrevocably to Pethum, reserving a life interest to himself and to Thilaka. The dominium therefore passed to Pethum in 2002, burdened by the two life interests, and Lot 1 formed no part of Kamal's estate when he died on 07/07/2005; Kamal's own life interest fell in on that date, leaving Thilaka's life interest running. Those two steps rest on the common law of donation and of life interests, to which s.36 refers, and not on any provision of the Ordinance. Pethum died intestate and issueless on 08/06/2010. Under s.22 his widow Sadana took one-half. The descendant class being empty (s.24), s.25 applies: his father Kamal had died in 2005 and his mother Thilaka survived, so Thilaka took half of the remaining half, that is 1/4 of Lot 1, and the other 1/4 formed the sibling portion. That portion is shared by his full brother and sister Kalum and Shanthi and by Sadun and Nadun, who are half-blood siblings related to Pethum by the side of the deceased parent Kamal. The half-blood are all on the father's side, so under s.27 Kalum and Shanthi first take one-half of the sibling portion, that is 1/8 shared equally at 1/16 each, and the remaining 1/8 is divided among all four of them per capita under s.30 at 1/32 each. Kalum and Shanthi therefore hold 3/32 each and Sadun and Nadun 1/32 each. Sadun died intestate on 02/08/2011 holding 1/32. Under s.22 his widow Roshini took 1/64 and under s.24 his only child Rohan took the other 1/64. Rohan died on 03/10/2018 unmarried, issueless and with no brother or sister; his father Sadun had predeceased him, so under the closing limb of s.25 his surviving mother Roshini took the whole 1/64, bringing Roshini to 1/32.",
+        "conclusion": "Subject to Thilaka's reserved life interest over the whole land, the shares presently owned in Lot 1 are: Sadana 1/2; Thilaka 1/4; Kalum 3/32; Shanthi 3/32; Nadun 1/32; and Roshini 1/32, being 1/64 as Sadun's widow and 1/64 inherited from Rohan. These add to unity. On the 14 perches that is 7 perches to Sadana, 3.5 perches to Thilaka, 1.3125 perches each to Kalum and Shanthi and 0.4375 perches each to Nadun and Roshini. The figures are proposed and unverified. If s.27 were held not to reach the sibling portion arising under s.25, the four siblings would instead share it per capita and the shares would be Kalum, Shanthi, Nadun and Roshini 1/16 each."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M040-Q02-001",
+          "claim_text": "Intestate succession to immovable property situated in Sri Lanka, including any undivided interest in Lot 1, is governed by the Matrimonial Rights and Inheritance Ordinance.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-001",
+            "PROV-M040-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-002",
+          "claim_text": "Part III of the Ordinance applies to the estate of any person dying after its proclamation, and the Ordinance does not apply to Kandyans, Muslims or Tamils subject to the Tesawalamai.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-010",
+            "PROV-M040-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-003",
+          "claim_text": "A surviving spouse inherits one-half of the intestate's property.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-004",
+          "claim_text": "Subject to the surviving spouse's half, the inheritance passes first to descendants, then to ascendants, then to collaterals, children taking per capita and the issue of a deceased child by representation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-003",
+            "PROV-M040-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-005",
+          "claim_text": "Where descendants fail and only one parent survives, the surviving parent takes half and the other half goes to the full siblings and to the half-siblings related to the intestate by the side of the deceased parent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-006",
+          "claim_text": "Where the half-blood siblings are all on one side, the full siblings take one-half of the sibling portion in the first place and divide the other half with the half-blood, those equally near in degree taking per capita.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-007",
+            "PROV-M040-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-007",
+          "claim_text": "Where descendants fail and no brother or sister is alive at the death, the surviving parent inherits the whole.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-008",
+          "claim_text": "Where the Ordinance is silent on a question of intestate distribution, the Roman-Dutch law of North Holland governs, and the Ordinance is silent on the effect of a deed of gift and of a reserved life interest.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M040-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-009",
+          "claim_text": "Deed of Gift No.232 of 02/08/2002 passed the dominium in Lot 1 to Pethum subject to the life interests reserved to Kamal and Thilaka, so that Lot 1 did not form part of Kamal's intestate estate when he died on 07/07/2005, and Kamal's life interest fell in on that date while Thilaka's continued.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-012"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "BG-4"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-010",
+          "claim_text": "On Pethum's intestate death on 08/06/2010 his widow Sadana took one-half of his interest.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-6"
+          ],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-011",
+          "claim_text": "Pethum left no descendants, so the residue passed under the ascendant and collateral rules; his father Kamal had died in 2005 and his mother Thilaka survived, so Thilaka took 1/4 of Lot 1 and the remaining 1/4 formed the sibling portion.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-003",
+            "PROV-M040-004",
+            "PROV-M040-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-4",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-012",
+          "claim_text": "Sadun and Nadun are half-blood siblings of Pethum on the side of his deceased father Kamal and there are no half-blood siblings on the mother's side, so Kalum and Shanthi take 1/16 each out of the first half of the sibling portion and all four take 1/32 each out of the second half, giving Kalum 3/32, Shanthi 3/32, Sadun 1/32 and Nadun 1/32.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-005",
+            "PROV-M040-007",
+            "PROV-M040-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-5",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-013",
+          "claim_text": "On Sadun's intestate death on 02/08/2011 his widow Roshini took 1/64 and his only child Rohan took 1/64.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-002",
+            "PROV-M040-004"
+          ],
+          "supporting_fact_ids": [
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-014",
+          "claim_text": "On Rohan's death on 03/10/2018 unmarried, issueless and without any brother or sister, his father having predeceased him, his surviving mother Roshini took his whole 1/64, so that Roshini holds 1/32 in all.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M040-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-7",
+            "BG-8"
+          ],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M040-Q02-015",
+          "claim_text": "Subject to Thilaka's life interest over the whole, the present shares are Sadana 1/2, Thilaka 1/4, Kalum 3/32, Shanthi 3/32, Nadun 1/32 and Roshini 1/32.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M040-002",
+            "PROV-M040-004",
+            "PROV-M040-005",
+            "PROV-M040-006",
+            "PROV-M040-007",
+            "PROV-M040-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-6",
+            "BG-7",
+            "BG-8"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "Reserved because authority_requirement is mixed_statute_and_case. Two premises of the answer rest on Roman-Dutch common law that is not in the corpus: the passing of dominium under an absolute and irrevocable deed of gift, and the falling in of a life interest reserved to two holders while the survivor's continues. The Partition Law that gives the final decree of 21/05/2000 its conclusive effect on title is also absent from the corpus. A secondary open point of construction is whether s.27 reaches the sibling portion arising under s.25 where one parent survives; the map adopts the reading that it does, in line with matter M001, but if it does not the four siblings share that portion per capita at 1/16 each.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

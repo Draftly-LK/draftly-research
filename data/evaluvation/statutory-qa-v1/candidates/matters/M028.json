@@ -1,0 +1,60 @@
+{
+  "benchmark_matter_id": "M028",
+  "source_matter_id": "P04-Q07-M01",
+  "grouping_key": "P04-Q07-M01",
+  "paper_no": 4,
+  "question_no": 7,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "In 1995 Shantha Silva purchased a land in extent of 10 perches situated in Kalutara for Rs.700,000/- and constructed a house on it. The cost of construction of the house was Rs.2,000,000/-. He wishes to gift this house and land to his daughter Sumana and he instructs you to prepare a Deed of Gift in this regard. The present market value of the house and property is Rs.10,400,000/-.",
+    "normalized": "In 1995 Shantha Silva purchased a land in extent of 10 perches situated in Kalutara for Rs.700,000/- and constructed a house on it. The cost of construction of the house was Rs.2,000,000/-. He wishes to gift this house and land to his daughter Sumana and he instructs you to prepare a Deed of Gift in this regard. The present market value of the house and property is Rs.10,400,000/-.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P04-Q07-P04"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M028-Q01",
+      "atomic_id": "P04-Q07-P04",
+      "part_uid": "paper-04/q7/4",
+      "part_id": "4",
+      "item_id": null,
+      "marks": 4,
+      "pdf_page": 16,
+      "question_original": "Calculate the stamp duty payable on this Deed of Gift and explain the procedure. You must show the method of calculating the stamp duty.",
+      "question_normalized": "Calculate the stamp duty payable on this Deed of Gift and explain the procedure. You must show the method of calculating the stamp duty.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "In 1995 Shantha Silva purchased a land in extent of 10 perches situated in Kalutara for Rs.700,000/- and constructed a house on it. The cost of construction of the house was Rs.2,000,000/-. He wishes to gift this house and land to his daughter Sumana and he instructs you to prepare a Deed of Gift in this regard. The present market value of the house and property is Rs.10,400,000/-.",
+      "effective_background_normalized": "In 1995 Shantha Silva purchased a land in extent of 10 perches situated in Kalutara for Rs.700,000/- and constructed a house on it. The cost of construction of the house was Rs.2,000,000/-. He wishes to gift this house and land to his daughter Sumana and he instructs you to prepare a Deed of Gift in this regard. The present market value of the house and property is Rs.10,400,000/-.",
+      "source_quote": "(4) In 1995 Shantha Silva purchased a land in extent of 10 perches situated in Kalutara\nfor Rs.700,000/- and constructed a house on it. The cost of construction of the\nhouse was Rs.2,000,000/-. He wishes to gift this house and land to his daughter\nSumana and he instructs you to prepare a Deed of Gift in this regard. The present\nmarket value of the house and property is Rs.10,400,000/-. Calculate the stamp\nduty payable on this Deed of Gift and explain the procedure. You must show the\nmethod of calculating the stamp duty.",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2024-10",
+  "exam_session": "OCTOBER 2024",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

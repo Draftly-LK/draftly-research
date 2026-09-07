@@ -1,0 +1,62 @@
+{
+  "benchmark_matter_id": "M064",
+  "verifier": "verifier-M064",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:46:48Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M064-001",
+      "decision": "verified",
+      "note": "1-1907/s31 rule (1) shown in full and the excerpt checked verbatim. Temporal position independently re-tested: every amending section the corpus records against s.31 was read in full (20-1976 s.10, 47-2011 s.2 and s.3, 31-2022 s.16, 6-2024 s.3) and none of them substitutes, amends or repeals rule (1), so the 1907 text stands at 2020-10. edges 1-1907/s31 shows no definition or procedural link the answer needs; defs 1-1907 returns nothing for \"employer\", \"secrets\" or \"notary\", so the reading of \"employer\" is interpretive and not corpus-defined. Correctly the single indispensable provision."
+    },
+    {
+      "provision_id": "PROV-M064-002",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim, but 31-2022 s.17 was read and it repeals s.34 outright and substitutes the whole section, so the corpus holds no s.34 text for 2020-10 and no penalty for breach of rule (1) can be stated at the matter date; applicable_to_matter_date: false and the supporting-only role are correct, and the provision is properly excluded from the indispensable set."
+    },
+    {
+      "provision_id": "PROV-M064-003",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim and 31-2022 s.11 was read and confirms it touches only subsection (1)(e) and the fine in subsection (4), leaving (1)(b) and (1)(c) intact at 2020-10; the temporal note is nevertheless incomplete because the corpus also records an unmapped event 'unknown by 12-2005 s.5 (2005)' on s.21 (12-2005 is the Increase of Fines Act, whose s.5 is in fact its Sinhala-text clause, so the mapping looks spurious), and it pre-dates the matter in any event."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M064-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "Rule (1) carries the duty and both exceptions in one sentence, so the enriched facts dispose of the question without case law or Roman-Dutch doctrine; statute_only confirmed. A corpus-wide grep for 'divulge|secrecy' and 'confidential|confided' turns up only banking, housing and provincial-council secrecy regimes and two Civil Procedure Code protective-order sections, none of which touches a notary, so no alternative Act was missed. legal_hop_count 1 matches the single indispensable edge and the empty reasoning_edges list is right for a one-hop map. Seven of eight claims verified; CL-M064-Q01-003 marked disputed because half of it rests on s.34, which the corpus holds only in its post-matter form. Status kept at proposed_gold: the indispensable provision is verified, and the disputed claim sits in the rule paragraph rather than in the conclusion."
+    }
+  ],
+  "disagreements": [],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M064-Q01-003 asserts that breach of the duty of secrecy exposes the notary to a criminal penalty in addition to civil liability. For the matter date of 2020-10 that half of the claim cannot be established from the corpus, because 31-2022 s.17 repealed and replaced the whole of s.34 and the earlier text is not held. The s.21(1)(b) and (1)(c) half of the claim is sound. Marked disputed rather than rejected."
+    ],
+    "temporal_issues": [
+      "1-1907/s34: corpus text is the 31-2022 s.17 substitution and post-dates the matter. The researcher identified this and did not rely on it for the conclusion, but the gold answer's rule paragraph still states the offence, with a parenthetical caveat. The 'five thousand rupees' figure in the excerpt is a 2022 figure and must not be read as the 2020 penalty.",
+      "1-1907/s21: an unmapped 12-2005 amendment event is not accounted for in the temporal note. It pre-dates the matter and does not reach subsections (1)(b) or (1)(c), so it does not affect the answer.",
+      "1-1907/s31: the amendment_events list is act-level rather than rule-level, so it cannot by itself show that rule (1) is unchanged. Reading each amending section in full is the only way to establish this, and it was done for all five."
+    ],
+    "missing_definitions_or_exceptions": [
+      "'employer' in rule (1) is undefined in the Ordinance (defs 1-1907 employer returns nothing; s.43 defines only 'Council of Legal Education', 'High Court Judge' and 'Registrar-General'). Reading it as the testator is the load-bearing interpretive step in the whole answer and rests on nothing in the corpus.",
+      "'secrets' is likewise undefined, so treating the bare fact of attestation, as distinct from the contents of the will, as a protected secret is an interpretive extension rather than a corpus-supported one.",
+      "Nothing was found missing. s.32 was read and does not disapply rule (1); s.33 saves only the validity of the instrument; s.42 and rule (24) show that wills are handled confidentially but impose no duty of secrecy."
+    ],
+    "case_law_dependence": [],
+    "enrichment_issues": [
+      "The enriched background names no statute, cites no section number and does not state the conclusion, so it passes the leak test. It does track the statutory elements closely, though: FACT-003 mirrors 'express permission of his employer' and FACT-004 mirrors 'required to do so by law' almost word for word, including the phrase 'any officer acting under any written law'. A candidate who spots the mirroring may be led to the rule by the facts rather than by knowing the Ordinance.",
+      "FACT-M064-Q01-005 is labelled synthetic_neutral yet carries activates_provision_ids for PROV-M064-001; its own reason and counterfactual say it does not change the outcome, so the activation entry overstates its role."
+    ],
+    "duplicate_or_leak_issues": [
+      "CL-M064-Q01-004 and CL-M064-Q01-007 cite a supporting fact id 'BG-1' that is not defined anywhere in the map's added_facts list. The validator does not flag it, but the reference resolves to nothing."
+    ]
+  },
+  "lawyer_questions": [
+    "Rule (1) forbids divulging 'secrets confided to him or of which he becomes possessed in the execution of his office' unless the 'employer' expressly permits. Neither 'employer' nor 'secrets' is defined in the Ordinance, and the gold answer turns entirely on reading 'employer' as the testator rather than the enquiring son, and on treating the bare fact of attestation, not just the contents, as a protected secret. Please confirm both readings for Sri Lankan practice before this is used as gold.",
+    "Should the gold answer's rule paragraph continue to state the s.34 offence when the corpus holds only the post-2022 text and the matter date is October 2020, or should the criminal-penalty sentence be dropped from the answer for this matter?",
+    "Would a notary in practice decline even to confirm or deny that he attested the will, as the conclusion advises, or is that stronger than the Ordinance requires?"
+  ]
+}

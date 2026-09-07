@@ -1,0 +1,68 @@
+{
+  "benchmark_matter_id": "M018",
+  "source_matter_id": "P02-Q05-M01",
+  "grouping_key": "P02-Q05-M01",
+  "paper_no": 2,
+  "question_no": 5,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Mala is living with her daughter in Kurunegala. She intends to lease out her own house in Colombo for a monthly rental of Rs. 100,000/ for two years to Sheela. The rentals of the house have to be paid on the 20th day of each month commencing from 2020. Mala obtained a refundable deposit of Rs. 300,000/ from Sheela. She also obtained an advance payment of Rs. 600,000/ and intends it to be set off against the 1st year's monthly rental.\n\nMala intends to visit her son in Australia. Mala has given a Special Power of Attorney to her daughter Visaka to sell the said house in Colombo in 2017.",
+    "normalized": "Mala is living with her daughter in Kurunegala. She intends to lease out her own house in Colombo for a monthly rental of Rs. 100,000/ for two years to Sheela. The rentals of the house have to be paid on the 20th day of each month commencing from 2020. Mala obtained a refundable deposit of Rs. 300,000/ from Sheela. She also obtained an advance payment of Rs. 600,000/ and intends it to be set off against the 1st year's monthly rental.\n\nMala intends to visit her son in Australia. Mala has given a Special Power of Attorney to her daughter Visaka to sell the said house in Colombo in 2017.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P02-Q05-P03"
+        ]
+      },
+      {
+        "segment_index": 1,
+        "field": "own_background",
+        "atomic_ids": [
+          "P02-Q05-P03"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M018-Q01",
+      "atomic_id": "P02-Q05-P03",
+      "part_uid": "paper-02/q5/iii",
+      "part_id": "iii",
+      "item_id": null,
+      "marks": 5,
+      "pdf_page": 7,
+      "question_original": "Can Visaka execute the said lease agreement with Sheela on behalf of Mala if Mala travels to Australia? Advise Mala as to how to execute the lease agreement in her absence.",
+      "question_normalized": "Can Visaka execute the said lease agreement with Sheela on behalf of Mala if Mala travels to Australia? Advise Mala as to how to execute the lease agreement in her absence.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Mala is living with her daughter in Kurunegala. She intends to lease out her own house in Colombo for a monthly rental of Rs. 100,000/ for two years to Sheela. The rentals of the house have to be paid on the 20th day of each month commencing from 2020. Mala obtained a refundable deposit of Rs. 300,000/ from Sheela. She also obtained an advance payment of Rs. 600,000/ and intends it to be set off against the 1st year's monthly rental.\n\nMala intends to visit her son in Australia. Mala has given a Special Power of Attorney to her daughter Visaka to sell the said house in Colombo in 2017.",
+      "effective_background_normalized": "Mala is living with her daughter in Kurunegala. She intends to lease out her own house in Colombo for a monthly rental of Rs. 100,000/ for two years to Sheela. The rentals of the house have to be paid on the 20th day of each month commencing from 2020. Mala obtained a refundable deposit of Rs. 300,000/ from Sheela. She also obtained an advance payment of Rs. 600,000/ and intends it to be set off against the 1st year's monthly rental.\n\nMala intends to visit her son in Australia. Mala has given a Special Power of Attorney to her daughter Visaka to sell the said house in Colombo in 2017.",
+      "source_quote": "(iii) Mala intends to visit her son in Australia. Mala has given a Special Power of Attorney to\nher daughter Visaka to sell the said house in Colombo in 2017. Can Visaka execute the\nsaid lease agreement with Sheela on behalf of Mala if Mala travels to Australia? Advise\nMala as to how to execute the lease agreement in her absence.",
+      "classification": {
+        "context_sources": [
+          "shared",
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.88,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2025-10",
+  "exam_session": "OCTOBER 2025",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

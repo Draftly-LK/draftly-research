@@ -1,0 +1,1125 @@
+{
+  "run_id": "2026-09-05-pilot-01",
+  "created": "2026-09-05T00:00:00Z",
+  "description": "legal-qa-v1 benchmark run; all artifacts status=unverified until lawyer sign-off",
+  "source_dataset": {
+    "selected_matters_path": "data/evaluvation/parsed-pastpapers/benchmark/selected-matters.jsonl",
+    "selected_questions_path": "data/evaluvation/parsed-pastpapers/benchmark/selected-questions.jsonl",
+    "selected_matters_sha256": "a2634a24297f493ea47b9ef4d04be037c6da76c5e6b8206ad14ab921b3e2af95",
+    "selected_questions_sha256": "7c7ca55c651ab4e260a3b3a06ffdfc9ea7bfd0168fabf0e1c4e4ed036c4a4611",
+    "matter_count": 44,
+    "question_count": 84
+  },
+  "schema_versions": {
+    "authority": "sha256:69a1f167dbae81fb1497695755320c8131f57e17b0e3ad972a69c9648fb61af1",
+    "document-spec": "sha256:8fd4dbd284179e65146c668195e3ea6c467e124ba0435b190eac61dffb5a589a",
+    "gold-question": "sha256:bb043e926e88a9e9bc27ba3bf66f3b85717975d3334de7f4bf0ce256d46e4703",
+    "issue-map": "sha256:d87a4106c0e8812129adb438153c4e379eae97e28f040fdedeedaaf79519915a",
+    "lawyer-review": "sha256:75cac54dbc9bdaf1349c982fa40e26a95024df898b2a55cb5afa3c4c037c1db6",
+    "legal-map": "sha256:e65912df732e276bf3a85d217482415157677cbeb6ce7e0766c2c4eeb920428c",
+    "matter-ledger": "sha256:312bdf2507e0b0ac762c4d89266fa999e2cc90adbc4dac1afc61da856e370607",
+    "predicate": "sha256:1a2dcf2b3aaf38b7f11343aff49b26e54f6105d0ea52ccf0b7e5148f9afcad76",
+    "run-manifest": "sha256:462c72b03f75fcd5df7a46d6e4824b43e9f894e308d9e5728aded4b833b0cd6e",
+    "synthetic-document": "sha256:d3aa9a290df955746b11723b6f48357191cc93d23363e17fdcf4dd5212f48bb0"
+  },
+  "state_machine": {
+    "ordered_states": [
+      "selected",
+      "issue_mapped",
+      "authorities_candidate",
+      "authorities_verified",
+      "predicates_defined",
+      "documents_specified",
+      "ledger_built",
+      "synthetic_bundle_generated",
+      "lawyer_review_pending",
+      "lawyer_validated"
+    ],
+    "failure_states": [
+      "blocked_missing_authority",
+      "blocked_temporal_uncertainty",
+      "blocked_source_conflict",
+      "blocked_scenario_ambiguity",
+      "needs_legal_review"
+    ]
+  },
+  "matters": [
+    {
+      "benchmark_matter_id": "M001",
+      "role": "pilot",
+      "state": "needs_legal_review",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        },
+        {
+          "state": "issue_mapped",
+          "at": "2026-09-05T01:20:00Z",
+          "validated_by": "validate_legal_maps.py",
+          "note": "0 warning(s)"
+        },
+        {
+          "state": "authorities_candidate",
+          "at": "2026-09-05T01:20:00Z",
+          "validated_by": "validate_legal_maps.py",
+          "note": "0 warning(s)"
+        },
+        {
+          "state": "needs_legal_review",
+          "at": "2026-09-05T02:40:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "verifier-V2: 26/26 hash+excerpt confirmed, 24 verified, 1 partially_verified, 1 unresolved (Roman-Dutch life-interest renunciation; SC Appeal 208/2017 dicta only). Gate failed on status: indispensable AUTH-012 (LRA s.3(1)(d), tree drops 5 words at page break vs PDF) and AUTH-019 (Act 21/2018 OCR defects) carry unresolved source conflicts; Q01 relies on reclassified scenario inference CL-Q01-006; Q02 has two candidate splits (MRIO s.27 vs s.30); Fernando v Fernando distinguishable. Lawyer decisions required before predicates."
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "pilot/M001",
+      "selection_reason": "Complex pilot: partition decree, gift subject to life interest, revocation, three deaths, intestate shares, foreign-citizen heir under Land (Restrictions on Alienation) Act 38/2014; multiple provisions and instruments; exam April 2026"
+    },
+    {
+      "benchmark_matter_id": "M002",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M002",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M003",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M003",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M004",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M004",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M005",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M005",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M006",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M006",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M007",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M007",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M008",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M008",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M009",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M009",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M010",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M010",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M011",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M011",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M012",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M012",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M013",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M013",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M014",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M014",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M015",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M015",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M016",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M016",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M017",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M017",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M018",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M018",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M019",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M019",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M020",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M020",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M021",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M021",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M022",
+      "role": "pilot",
+      "state": "predicates_defined",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        },
+        {
+          "state": "issue_mapped",
+          "at": "2026-09-05T01:00:00Z",
+          "validated_by": "validate_legal_maps.py",
+          "note": "0 warning(s)"
+        },
+        {
+          "state": "authorities_candidate",
+          "at": "2026-09-05T01:00:00Z",
+          "validated_by": "validate_legal_maps.py",
+          "note": "0 warning(s)"
+        },
+        {
+          "state": "authorities_verified",
+          "at": "2026-09-05T02:00:00Z",
+          "validated_by": "validate_legal_maps.py",
+          "note": "16 warning(s)"
+        },
+        {
+          "state": "predicates_defined",
+          "at": "2026-09-05T02:30:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "1 warning(s)"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "pilot/M022",
+      "selection_reason": "Statute-driven pilot: two-notary execution of a company lease and contents of the first notary's attestation under the Notaries Ordinance; single enactment with live temporal question (2022/2024 amendments post-date the October 2020 exam)"
+    },
+    {
+      "benchmark_matter_id": "M023",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M023",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M024",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M024",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M025",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M025",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M026",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M026",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M027",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M027",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M028",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M028",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M029",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M029",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M030",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M030",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M031",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M031",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M032",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M032",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M033",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M033",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M034",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M034",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M035",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M035",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M036",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M036",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M037",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M037",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M038",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M038",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M039",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M039",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M040",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M040",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M041",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M041",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M042",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M042",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M043",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M043",
+      "selection_reason": null
+    },
+    {
+      "benchmark_matter_id": "M044",
+      "role": "not_started",
+      "state": "selected",
+      "state_history": [
+        {
+          "state": "selected",
+          "at": "2026-09-05T00:00:00Z",
+          "validated_by": "run_legal_qa_pipeline.py",
+          "note": "init"
+        }
+      ],
+      "owner_agents": {
+        "research": null,
+        "verification": null,
+        "document_design": null,
+        "red_team": null
+      },
+      "artifact_dir": "full/M044",
+      "selection_reason": null
+    }
+  ],
+  "agents": [],
+  "events": [
+    {
+      "at": "2026-09-05T00:00:00Z",
+      "matter": null,
+      "event": "init",
+      "detail": "run initialised with pilots M001,M022"
+    },
+    {
+      "at": "2026-09-05T01:00:00Z",
+      "matter": "M022",
+      "event": "advanced",
+      "detail": "issue_mapped via validate_legal_maps.py; warnings=0"
+    },
+    {
+      "at": "2026-09-05T01:00:00Z",
+      "matter": "M022",
+      "event": "advanced",
+      "detail": "authorities_candidate via validate_legal_maps.py; warnings=0"
+    },
+    {
+      "at": "2026-09-05T00:40:00Z",
+      "matter": "M001",
+      "event": "agent_assigned",
+      "detail": "research-agent-A (Claude, strongest available) owns M001 issue-map, candidate-authorities, legal-map.draft"
+    },
+    {
+      "at": "2026-09-05T00:40:00Z",
+      "matter": "M022",
+      "event": "agent_assigned",
+      "detail": "research-agent-B owns M022 issue-map, candidate-authorities, legal-map.draft"
+    },
+    {
+      "at": "2026-09-05T01:05:00Z",
+      "matter": "M022",
+      "event": "agent_assigned",
+      "detail": "verifier-V1 (independent; did not research M022) verifies all 24 candidates; temporal finding to test: SRC014 tree is 1980 revised text, Oct-2020 wording unconfirmed"
+    },
+    {
+      "at": "2026-09-05T01:05:00Z",
+      "matter": "M022",
+      "event": "negative_retrieval",
+      "detail": "retrieval engine never surfaced s.31 rules 20/25/28 across five queries; located by tree browsing; no case on a single deed attested by two notaries; Form E (2020) not in repo"
+    },
+    {
+      "at": "2026-09-05T01:20:00Z",
+      "matter": "M001",
+      "event": "advanced",
+      "detail": "issue_mapped via validate_legal_maps.py; warnings=0"
+    },
+    {
+      "at": "2026-09-05T01:20:00Z",
+      "matter": "M001",
+      "event": "advanced",
+      "detail": "authorities_candidate via validate_legal_maps.py; warnings=0"
+    },
+    {
+      "at": "2026-09-05T01:20:00Z",
+      "matter": "M001",
+      "event": "agent_assigned",
+      "detail": "verifier-V2 (independent; did not research M001) verifies 26 candidates; AUTH-M001-026 (Roman-Dutch life-interest renunciation) has no located source"
+    },
+    {
+      "at": "2026-09-05T01:40:00Z",
+      "matter": "M001",
+      "event": "agent_failure",
+      "detail": "verifier-V2 terminated early: API server unreachable (ENOTFOUND) after hash checks; infrastructure failure, resumed once with same evidence"
+    },
+    {
+      "at": "2026-09-05T01:40:00Z",
+      "matter": "M022",
+      "event": "agent_failure",
+      "detail": "verifier-V1 terminated early: API server unreachable (ENOTFOUND) before any output; infrastructure failure, resumed once with same evidence"
+    },
+    {
+      "at": "2026-09-05T02:00:00Z",
+      "matter": "M022",
+      "event": "advanced",
+      "detail": "authorities_verified via validate_legal_maps.py; warnings=16"
+    },
+    {
+      "at": "2026-09-05T02:00:00Z",
+      "matter": "M022",
+      "event": "verification_complete",
+      "detail": "verifier-V1: 24/24 hash+excerpt confirmed; 19 verified, 5 partially_verified (all supporting); temporal: tree = 1980 Rev. Ed. = RGD PDF; missed amendments 47/2011 and 13/2013 located, neither touches cited rules; s.31 rules recorded history_unknown (residual r.30 anomaly), s.32 current_text_applicable; AUTH-017 PoF s.2 moved to supporting; 16 warnings surfaced for lawyer"
+    },
+    {
+      "at": "2026-09-05T02:30:00Z",
+      "matter": "M022",
+      "event": "advanced",
+      "detail": "predicates_defined via run_legal_qa_pipeline.py; warnings=1"
+    },
+    {
+      "at": "2026-09-05T02:40:00Z",
+      "matter": "M001",
+      "event": "blocked",
+      "detail": "needs_legal_review: verifier-V2: 26/26 hash+excerpt confirmed, 24 verified, 1 partially_verified, 1 unresolved (Roman-Dutch life-interest renunciation; SC Appeal 208/2017 dicta only). Gate failed on status: indispensable AUTH-012 (LRA s.3(1)(d), tree drops 5 words at page break vs PDF) and AUTH-019 (Act 21/2018 OCR defects) carry unresolved source conflicts; Q01 relies on reclassified scenario inference CL-Q01-006; Q02 has two candidate splits (MRIO s.27 vs s.30); Fernando v Fernando distinguishable. Lawyer decisions required before predicates."
+    },
+    {
+      "at": "2026-09-05T02:40:00Z",
+      "matter": "M001",
+      "event": "verification_complete",
+      "detail": "verifier-V2: 26/26 hash+excerpt confirmed; 24 verified, 1 partially_verified (AUTH-025 Wills s.7 renumbering unverifiable), 1 unresolved (AUTH-026); new conflicts recorded (s.26 'balf-blood', MRIO commencement 1876 vs 1877, Act 21/2018 OCR); Fernando v Fernando distinguishable; MRIO s.30 competes with s.27 for Q02 split; gate failed 6 status errors, 0 provenance errors; 24 warnings"
+    },
+    {
+      "at": "2026-09-05T02:30:00Z",
+      "matter": "M022",
+      "event": "predicates_derived",
+      "detail": "predicate agent: 47 predicates (24 indispensable, 23 supporting; 13 observed, 26 inferred, 7 unresolved, 1 synthetic_needed PR-002 lease term, decisive, lawyer review flagged); gate passed 0 errors 1 warning"
+    }
+  ]
+}

@@ -1,0 +1,1386 @@
+{
+  "benchmark_matter_id": "M036",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M036",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:30:00Z",
+    "verification_agent": "verifier-M036",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-05T00:00:00Z"
+  },
+  "matter_reference_date": "2023-10",
+  "matter_reference_date_basis": "matter_reference_date field of candidates/matters/M036.json; exam session OCTOBER 2023 (paper 6, question 2).",
+  "corpus_gaps": [
+    "The Rubber Control Act, which supplies the registration limb of the definition of 'rubber estate' in the Tea and Rubber Estates (Control of Fragmentation) Act s.25, is not in the corpus; the estate's registration status had to be supplied as an added scenario fact.",
+    "The corpus edition of the Tea and Rubber Estates (Control of Fragmentation) Act is 'as_enacted'; the substitution of 'twenty hectares' for 'forty hectares' in the definitions of 'rubber estate' and 'tea estate' by Act No. 20 of 2005 s.10(b) and (c) is recorded in the corpus as substitute_not_applied, so the s.25 body still reads 'one hundred acres'. The 41-acre (about 16.6 hectare) estate falls below both the 1958 and the 2005 threshold, so the outcome is the same on either text, but a verifier should confirm the 2005 wording against the Government Printer edition.",
+    "Prevention of Frauds Ordinance s.2 in the corpus is consolidated to 2024. Subsection (2) (transferor and transferee both to sign a transfer deed) was inserted by Act No. 4 of 2024 and was not in force at the matter date, so the in-force text at October 2023 is cited from Prevention of Frauds (Amendment) Act No. 30 of 2022 s.2.",
+    "Notaries Ordinance s.31 in the corpus is consolidated to 2024. Only rules that were already in their present form before 2024 are relied on here: (6), (14), (16)(a), (17)(a), (17)(b)(i), (17)(d) and (30A). Rules (5), (7A), (9), (17)(b)(iii), (17)(c), (20)(g), (26), (29) and (30) carry post-matter-date text and are not used.",
+    "Local-authority conveyancing certificates (street line and building line certificates, non-vesting certificates, assessment rates receipts, approved building plans and certificates of conformity) rest on the Pradeshiya Sabhas Act, No. 15 of 1987 and local by-laws, which are not in the corpus. They are therefore not asserted in the gold answers even though a practitioner would call for them.",
+    "The Partition Act and the Stamp Duty Order fixing conveyance rates are not in the corpus; stamp duty is treated only as a step the notary must provide for under Notaries Ordinance s.31(6), not as a computed amount.",
+    "Roman-Dutch common law and judicial authority on investigation of title (the thirty-year root of title convention, the position of a bona fide purchaser for value) are outside the corpus. The gold answers are confined to steps and documents that have a statutory anchor.",
+    "Verifier: the corpus edition of the Registration of Documents Ordinance is consolidated to 1990, so the body of section 32 (caveats) is the pre-2022 text. Subsection (1) was repealed and substituted, and subsection (3) replaced with a two-year maximum, by the Registration of Documents (Amendment) Act, No. 32 of 2022 s.2, which was in force at the matter date. The corpus records no amendment edge from 32-2022/s2 to 23-1927/s32, so the amendment_events flag on that section cannot be relied on as a completeness check."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M036-001",
+      "section_id": "2-1958/s25",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act",
+      "number_and_year": "No. 2 of 1958",
+      "section": "25",
+      "subsection": "definition of 'rubber estate'",
+      "relevant_excerpt": "means a rubber estate of not less than one hundred acres in extent which, under the Rubber Control Act is or is deemed to be an estate registered under that Act",
+      "why_relevant": "The consent machinery of the Act bites only on a 'rubber estate' as defined. The definition has two limbs, an extent threshold and registration under the rubber control legislation, so the first step in a rubber estate purchase is to test the subject land against both limbs.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus edition is as_enacted (1958). Act No. 20 of 2005 s.10(b) substituted 'twenty hectares' for 'forty hectares' in this definition, and the corpus records that substitution as not applied to the body text. A 41-acre (about 16.6 hectare) estate is below the threshold on either version, so the classification of the subject land is unaffected at the matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim, but the corpus body is the as-enacted 1958 text ('one hundred acres'); the text in force at October 2023 reads 'twenty hectares', substituted by Act No. 20 of 2005 s.10(b) for 'forty hectares', and the 16.6-hectare estate falls below either threshold so the classification is unchanged."
+    },
+    {
+      "provision_id": "PROV-M036-002",
+      "section_id": "2-1958/s3",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act",
+      "number_and_year": "No. 2 of 1958",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "The transfer of ownership of a tea or rubber estate on or after the appointed day shall, subject to the provisions of subsections (2) and (3), be null and void unless- (a) a certificate of consent of the Board to such transfer has been previously obtained by the transferor, and (b) such transfer is effected in accordance with the conditions, if any, subject to which such consent has been granted.",
+      "why_relevant": "If the land answers the statutory description of a rubber estate, a transfer without the Board's prior certificate of consent is null and void, so the certificate must be obtained by the transferor before the deed is drawn.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1958; no amendment recorded against s.3 in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-003",
+      "section_id": "1-1972/s3",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "3",
+      "subsection": "(1)(b)",
+      "relevant_excerpt": "if such land does not consist exclusively of paddy land, be fifty acres, so however that the total extent of any paddy land, if any, comprised in such fifty acres shall not exceed the ceiling on paddy land specified in paragraph (a)",
+      "why_relevant": "Fixes the ceiling of fifty acres of non-paddy agricultural land per person, against which any proposed acquisition of a rubber estate has to be measured.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus edition is consolidated; the only amendment event recorded against s.3 is Act No. 39 of 1981 s.2 (1981), long before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-004",
+      "section_id": "1-1972/s8",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "8",
+      "subsection": null,
+      "relevant_excerpt": "where any agricultural land is owned by a private company or co-operative society, the shareholders of such company, or society, as the case may be, shall be deemed to own such land for the purposes of section 3, in proportion to the shares held by each shareholder",
+      "why_relevant": "A private company cannot be used to escape the ceiling. Agricultural land bought by a private company is attributed to its shareholders in proportion to their shareholdings, so the ceiling has to be checked shareholder by shareholder, not against the company.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1972; no amendment event recorded against s.8 in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-005",
+      "section_id": "1-1972/s5",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "5",
+      "subsection": "(1)",
+      "relevant_excerpt": "Where after the date of commencement of this Law any person becomes the owner of agricultural land in excess of the ceiling, any such land owned by such person in excess of the ceiling shall as from that date- (a) be deemed to vest in the Commission; and (b) be deemed to be held by that person under a statutory lease from the Commission.",
+      "why_relevant": "This is the sanction that makes the ceiling check a real pre-purchase step: any excess created by the purchase vests in the Commission automatically, so the company would pay for land it could not keep.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Amendment events recorded against s.5 are Act No. 39 of 1981 s.3 and Act No. 14 of 1986 s.2, both long before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-006",
+      "section_id": "1-1972/s66",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "66",
+      "subsection": "definition of 'agricultural land'",
+      "relevant_excerpt": "means land used or capable of being used for agriculture within the meaning given in this Law and shall include private lands",
+      "why_relevant": "Establishes that a privately owned rubber-planted estate is agricultural land, which is what brings the ceiling provisions into play at all.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Amendment event recorded is Act No. 39 of 1981 s.15 (1981), before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-007",
+      "section_id": "38-2014/s2",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "the transfer of title of any land situated in Sri Lanka, shall be prohibited if such transfer is- (a) to a foreigner; or (b) to a company incorporated in Sri Lanka under the Companies Act where any foreign shareholding in such company, either direct or indirect, is fifty per cent or above; or (c) to a foreign company, unless exempted as provided in section 3.",
+      "why_relevant": "Because the purchaser is a company, the shareholding of the purchaser must be examined before the deed is drawn: at fifty per cent or more foreign shareholding, direct or indirect, the transfer is prohibited outright.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus edition is consolidated (includes Act No. 3 of 2017 and Act No. 21 of 2018). No amendment event is recorded against s.2 after 2014.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-008",
+      "section_id": "38-2014/s4",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "4",
+      "subsection": "(3)",
+      "relevant_excerpt": "Where the title of a land is transferred to a company incorporated in Sri Lanka under the Companies Act, with less than fifty per cent of foreign shareholding, it shall be the duty of the Registrar of Lands to confirm himself whether the foreign shareholding of such company is less than fifty per cent, by requiring the secretary of such company to submit documentary proof",
+      "why_relevant": "Converts the shareholding question into a registration requirement: the company secretary must be in a position to give the Registrar of Lands documentary proof, and there is a continuing six-monthly reporting duty after registration.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2014; no later amendment event recorded against s.4.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-009",
+      "section_id": "38-2014/s18",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "18",
+      "subsection": null,
+      "relevant_excerpt": "Any alienation of land effected in contravention of the provisions of this Act, shall be void and shall have no effect in law.",
+      "why_relevant": "Supplies the consequence of getting the shareholding check wrong, which is why it is a pre-contract step rather than a post-completion formality.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2014; no later amendment event recorded.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-010",
+      "section_id": "7-2007/s185",
+      "act_id": "7-2007",
+      "formal_title": "Companies Act",
+      "number_and_year": "No. 7 of 2007",
+      "section": "185",
+      "subsection": "(1)",
+      "relevant_excerpt": "A company shall not enter into any major transaction, unless such transaction is- (a) approved by special resolution; (b) contingent on approval by special resolution; (c) consented to in writing by all the shareholders of the company; or (d) a transaction which the company is expressly authorised to enter into by a provision in its articles, which was included in it at the time the company was incorporated.",
+      "why_relevant": "Where the purchase amounts to a major transaction, shareholder approval by special resolution (or unanimous written consent, or express authority in the original articles) must be secured before the company binds itself.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2007; Companies (Amendment) Act No. 13 of 2019 records no change to s.185 in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-011",
+      "section_id": "7-2007/s185",
+      "act_id": "7-2007",
+      "formal_title": "Companies Act",
+      "number_and_year": "No. 7 of 2007",
+      "section": "185",
+      "subsection": "(2)",
+      "relevant_excerpt": "(a) the acquisition of or an agreement to acquire whether contingent or not, assets of a value which is greater than half the value of the assets of the company before the acquisition",
+      "why_relevant": "Gives the arithmetical test for a major transaction, so the value of the estate has to be compared with the company's asset base before advising on the resolution required.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2007; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-012",
+      "section_id": "7-2007/s19",
+      "act_id": "7-2007",
+      "formal_title": "Companies Act",
+      "number_and_year": "No. 7 of 2007",
+      "section": "19",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "an obligation which, if entered into by a natural person is required by law to be in writing signed by that person and be notarially attested, may be entered into on behalf of the company in writing signed under the name of the company by - (i) two directors of the company",
+      "why_relevant": "Prescribes how the company itself signs a notarially attested obligation such as an agreement to sell, and therefore who must be produced before the notary on the company's side.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2007; no amendment event recorded in the corpus.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Section 19(1)(a) offers four alternative modes of execution (two directors; a sole director; any other person or class of persons if the articles so provide; or one or more attorneys appointed by the company), so the statement that the company signs 'by two directors' is only one permitted route and should be stated as such."
+    },
+    {
+      "provision_id": "PROV-M036-013",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1) opening words",
+      "relevant_excerpt": "No sale, purchase, transfer, assignment, or mortgage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month)",
+      "why_relevant": "Fixes the form requirement that governs both the agreement to sell and the transfer itself, and is the reason every link in the vendor's chain has to be a notarially executed instrument.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The corpus body is consolidated to 2024. The words quoted here are the opening words of the section and were not touched by Act No. 30 of 2022 or Act No. 4 of 2024. The operative conditions in force at October 2023 are those substituted by Act No. 30 of 2022 s.2, cited separately as PROV-M036-014; subsection (2), which requires the transferee also to sign, was added by Act No. 4 of 2024 and was not in force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-014",
+      "section_id": "30-2022/s2",
+      "act_id": "30-2022",
+      "formal_title": "Prevention of Frauds (Amendment) Act",
+      "number_and_year": "No. 30 of 2022",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "shall be in force or avail in law unless – (a) the relevant deed or instrument shall be in writing, signed by every executant and attested by a notary public before two witnesses present at the same time",
+      "why_relevant": "This is the text of the execution requirement that was in force in October 2023: writing, signature by every executant, attestation by a notary before two witnesses present at the same time, and thumb impressions on original, duplicate and protocol.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted and in force in 2022, and still the operative text at the matter date. It was itself superseded by Act No. 4 of 2024, after the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-015",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(a)",
+      "relevant_excerpt": "Before any deed or instrument (other than a will or codicil) affecting any interest in land or other immovable property is drawn by him, he shall search or cause to be searched the registers in the land registry to ascertain the state of the title in regard to such land and whether any prior deed affecting any interest in such land has been registered",
+      "why_relevant": "The statutory duty to search the land registry before the deed is drawn. It is the source of the title investigation step and of the requirement to call for the registry material.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "This paragraph is original text; neither Act No. 31 of 2022 s.16(10) nor Act No. 6 of 2024 s.3(6) altered rule (17)(a). In force at the matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Rule (17)(a) is correctly quoted, but it is subject to the proviso at the end of rule (17) permitting the parties to authorise the notary in writing to dispense with the search; that proviso is added as PROV-M036-902 and should be stated alongside the search duty."
+    },
+    {
+      "provision_id": "PROV-M036-016",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(b)(i)",
+      "relevant_excerpt": "he shall obtain from the Registrar of the relevant Land Registry the certified extract of the folio containing the last entry pertaining to such land or immovable property containing the ownership and the registered encumbrances relating to such land or immovable property",
+      "why_relevant": "Names the specific document that must be obtained from the Land Registry: the certified folio extract showing ownership and registered encumbrances. It is the first document to call for on any examination of title.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Notaries (Amendment) Act No. 31 of 2022 s.16(10)(a), in force from 2022 and unchanged by Act No. 6 of 2024, which altered only sub-paragraph (iii) of the same rule. In force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-017",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(d)",
+      "relevant_excerpt": "if a party to any deed or instrument is a corporate body he shall retain a certified copy of the certificate of incorporation or other instrument establishing such corporate entity and details of board of directors",
+      "why_relevant": "Because a company is a party, the certificate of incorporation and the details of the board must be produced to the notary. This is a document to be called for on both a purchase and a title examination where a company appears in the chain.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Added by Notaries (Amendment) Act No. 31 of 2022 s.16(10)(b), in force from 2022 and not altered by Act No. 6 of 2024. In force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-018",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (14)",
+      "relevant_excerpt": "if an executant to any deed or instrument is a corporate body, cause to be affixed the seal of the corporate body and obtain the signatures of the board of directors or any person authorized by the board by resolution to sign such deed or instrument",
+      "why_relevant": "Where a corporate body executes, the seal and the signatures of the board or of a person authorised by board resolution are required, and a copy of the resolution goes on the protocol. This governs the mechanics of execution wherever a company is an executant in the chain.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Notaries (Amendment) Act No. 31 of 2022 s.16(7), in force from 2022 and not altered by Act No. 6 of 2024. In force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-019",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (16)(a)",
+      "relevant_excerpt": "an accurate and clear description of the said land or other property affected thereby, showing its boundaries, extent, situation specifying the district, pattu, korale, Divisional Secretary's Division, local authority division and the Grama Niladari Division",
+      "why_relevant": "The deed cannot be drawn without an accurate description showing boundaries, extent and situation, which is why a survey plan or figure of survey and the schedule of the vendor's deed must be called for.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Amended by Notaries (Amendment) Act No. 31 of 2022 s.16(9)(a) (condominium wording), in force from 2022; the words quoted here are unchanged by that amendment and by Act No. 6 of 2024. In force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-020",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (6)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless he has an assurance that the required stamp duty is provided.",
+      "why_relevant": "Makes provision for stamp duty a precondition of attestation, so funds for duty must be arranged as part of the pre-completion steps.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Notaries (Amendment) Act No. 31 of 2022 s.16(4), in force from 2022 and not altered by Act No. 6 of 2024. In force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-021",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (30A)",
+      "relevant_excerpt": "It shall be the duty of every notary to submit for registration to the Registrar, every deed or instrument attested by him before the expiry of thirty days from the date of attestation thereof",
+      "why_relevant": "Fixes the outer limit for lodging the transfer for registration, which is the step that secures the company's priority once the deed is executed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Notaries (Amendment) Act No. 31 of 2022 s.16(14), in force from 2022 and not altered by Act No. 6 of 2024. In force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-022",
+      "section_id": "23-1927/s7",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "7",
+      "subsection": "(1)",
+      "relevant_excerpt": "be void as against all parties claiming an adverse interest thereto on valuable consideration by virtue of any subsequent instrument which is duly registered under this Chapter",
+      "why_relevant": "The priority rule of the deeds registration system. It is why the registry folio has to be searched, why registered encumbrances bind a later purchaser, and why the company's own deed must be registered promptly.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus edition is consolidated to 1990; no amendment event is recorded against s.7. In force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-023",
+      "section_id": "23-1927/s42",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "42",
+      "subsection": null,
+      "relevant_excerpt": "all duplicates and copies and all books and indexes kept under this Ordinance may be searched and examined by any person claiming to be interested therein or by his attorney-at-law or agent duly authorized thereto in writing, and certified copies of or extracts from any such duplicate, copy, or book may be obtained if required",
+      "why_relevant": "Gives the attorney-at-law acting for an intending purchaser the statutory right to search the registry books and to take certified copies and extracts, which is the mechanism by which the documents called for are actually obtained.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment event recorded against s.42; in force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-024",
+      "section_id": "23-1927/s11",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "11",
+      "subsection": "(1)",
+      "relevant_excerpt": "No Us pendens affecting or relating to land instituted on or after the 9th day of November, 1917, shall bind a purchaser, unless and until the lis pendens is duly registered under this Chapter.",
+      "why_relevant": "A registered lis pendens binds a purchaser, so the folio extract must be read for pending actions as well as for deeds, and any lis pendens disclosed must be investigated before the purchase proceeds.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment event recorded against s.11; in force at the matter date. The corpus text reproduces the source transcription, which renders 'lis pendens' as 'Us pendens' in places.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-025",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(1)",
+      "relevant_excerpt": "Any person (in this Ordinance called a \"caveator\") may present for registration a caveat in the prescribed form requiring to be served with notice of the presentation for registration of any instrument affecting the land described in the caveat.",
+      "why_relevant": "A registered caveat is a warning on the folio that a third party asserts rights and will be noticed on any dealing; it is one of the entries the title examiner is looking for in the registry extract.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment event recorded against s.32; in force at the matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The excerpt is verbatim of the corpus body, but that body is the pre-2022 text: section 32(1) was repealed and substituted by the Registration of Documents (Amendment) Act, No. 32 of 2022 s.2(1), in force at the matter date, so the operative caveat text at October 2023 is PROV-M036-904; the substance relied on (a registered caveat entitles the caveator to notice of any instrument presented for registration) survives the substitution."
+    },
+    {
+      "provision_id": "PROV-M036-026",
+      "section_id": "22-1871/s3",
+      "act_id": "22-1871",
+      "formal_title": "Prescription Ordinance",
+      "number_and_year": "No. 22 of 1871",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "Proof of the undisturbed and uninterrupted possession by a defendant in any action, or by those under whom he claims, of lands or immovable property, by a title adverse to or independent of that of the claimant or plaintiff in such action",
+      "why_relevant": "Ten years of adverse possession can defeat a paper title, so an examination of title cannot stop at the deeds: possession has to be traced, and documents evidencing the vendor's possession must be called for.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus edition is consolidated; Prescription (Amendment) Act No. 26 of 2014 records no change to s.3 in the corpus. In force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-027",
+      "section_id": "21-1998/s37",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act",
+      "number_and_year": "No. 21 of 1998",
+      "section": "37",
+      "subsection": null,
+      "relevant_excerpt": "Any person, having a Title of Ownership or other interest in a land parcel registered under this Act, may on payment of the prescribed fee, obtain a Certificate of Title in respect of such Ownership or interest, from the appropriate Registrar of Title.",
+      "why_relevant": "Where the land parcel has been brought under title registration, the document to call for is the Certificate of Title, which is conclusive evidence of the interest, rather than a chain of deeds. The examiner must first establish which registration system applies to the parcel.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998; no amendment event recorded against s.37. Whether a particular parcel is registered under the Act depends on declarations made for the area, which are not in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M036-901",
+      "section_id": "38-2014/s2",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "2",
+      "subsection": "(2)(a) and (b)",
+      "relevant_excerpt": "For the purpose of maintaining the legal validity of a transfer of land to a company incorporated in Sri Lanka under the Companies Act, with less than fifty per cent of foreign shareholding, the foreign shareholding of such company shall remain less than fifty per cent, for a minimum period of consecutive twenty (20) years from the date of such transfer.",
+      "why_relevant": "The shareholding test is not spent on completion. A Sri Lankan company that takes a transfer on the footing of less than fifty per cent foreign shareholding must keep it below fifty per cent for twenty consecutive years; if it reaches or exceeds fifty per cent the transfer of land becomes void with effect from the date of the increase, subject to a six or twelve month window to restore the position. Advising the company of that continuing condition is a step the research map omitted.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of section 2 of the consolidated corpus edition of the 2014 Act (which includes Act No. 3 of 2017 and Act No. 21 of 2018). In force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim against 38-2014/s2."
+    },
+    {
+      "provision_id": "PROV-M036-902",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "proviso to rule (17)",
+      "relevant_excerpt": "Provided that if the parties to the transaction authorize the notary in writing to dispense with the search, the search shall not be compulsory, but he shall before the deed or instrument is tendered for registration write at the head thereof the reference to the previous registration, if any.",
+      "why_relevant": "The search duty in rule (17)(a) is not absolute. The parties may authorise the notary in writing to dispense with the search, in which case he must instead endorse the reference to the previous registration before the deed is tendered for registration. Any statement of the search obligation has to be qualified by this proviso.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The proviso stands at the end of rule (17) in the corpus body of section 31 and is not touched by Notaries (Amendment) Act No. 31 of 2022 s.16(10) or Notaries (Amendment) Act No. 6 of 2024 s.3(6). In force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier as the missing exception to PROV-M036-015; excerpt checked verbatim against 1-1907/s31."
+    },
+    {
+      "provision_id": "PROV-M036-903",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (33)",
+      "relevant_excerpt": "When a deed transferring any immovable property is executed or acknowledged before a notary, he shall use his best endeavours to obtain the title deed, if any, of such property, and make an endorsement thereon stating the number and date of the deed executed before him and the nature of the transaction and attach his signature thereto",
+      "why_relevant": "This is the statutory duty that most directly answers a question about what documents must be called for: the notary must use his best endeavours to obtain the vendor's title deed itself and endorse the new transaction on it. It anchors the call for the originals of the chain of deeds independently of the search and folio-extract duties in rule (17).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (33) stands in the corpus body of section 31; no amendment event in the corpus is attributed to it by Act No. 31 of 2022 or Act No. 6 of 2024. In force at the matter date.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier as a missing document-production duty for M036-Q02; excerpt checked verbatim against 1-1907/s31."
+    },
+    {
+      "provision_id": "PROV-M036-904",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "A person (hereinafter referred to as the \"caveator\") who (i) has a right, title or interest; or (ii) claims to have a right, title or interest, to a land, an undivided land, a land parcel or a condominium parcel (hereinafter in this section referred to as the \"land\") may present for registration a caveat substantially in Form VIII of the Second Schedule hereto requiring him to be served a notice of the presentation for registration of any instrument affecting such land.",
+      "why_relevant": "This is the caveat text in force at October 2023. It replaced section 32(1) of the Registration of Documents Ordinance, narrows the class of caveators to persons who have or claim a right, title or interest, prescribes Form VIII with a supporting affidavit and an attorney-at-law certificate, and (by section 2(3)) limits a caveat to a maximum of two years. A title examiner reading a caveat on the folio must apply this text, not the 1927 text carried in the corpus body of 23-1927/s32.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted in 2022 with no separate date-of-operation clause; in force at the matter date and not superseded before October 2023. The corpus edition of the Registration of Documents Ordinance is consolidated to 1990 and does not carry this substitution.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier to supply the in-force text behind PROV-M036-025; excerpt checked verbatim against 32-2022/s2."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M036-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Every step that determines whether the company can get a good and registrable title to this estate is fixed by statute: whether a fragmentation consent is needed turns on the definition and prohibition in the Tea and Rubber Estates (Control of Fragmentation) Act; whether the company or its shareholders would exceed the agricultural land ceiling turns on the Land Reform Law; whether the transfer is prohibited at all turns on the shareholding test in the Land (Restrictions on Alienation) Act; the company's own authority to buy turns on the Companies Act; and the investigation, execution and registration steps are the notary's statutory duties under the Notaries Ordinance read with the Prevention of Frauds Ordinance and the Registration of Documents Ordinance. No judicial authority or Roman-Dutch doctrine is needed to state those steps. Practice items with no statutory anchor in this corpus (local-authority certificates, the thirty-year root convention, physical inspection) are deliberately left out of the gold answer and recorded as corpus gaps.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M036-Q01-01",
+          "issue": "Whether the subject land answers the statutory description of a rubber estate, so that a prior certificate of consent of the Tea and Rubber Estates (Control of Fragmentation) Board is a condition of a valid transfer.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M036-Q01-02",
+          "issue": "Whether the purchase would put any shareholder of the purchasing private company over the ceiling on agricultural land, so that the excess would vest in the Land Reform Commission.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M036-Q01-03",
+          "issue": "Whether the transfer of title to this company is prohibited by the restriction on transfers to companies with foreign shareholding of fifty per cent or above, and what proof the Registrar of Lands will require.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M036-Q01-04",
+          "issue": "What internal company authority is required before the company binds itself to the acquisition, and how the company contracts and executes.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M036-Q01-05",
+          "issue": "What investigation of the vendor's title, execution formalities and registration steps are required to secure the company's title and priority.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M036-001",
+        "PROV-M036-002",
+        "PROV-M036-003",
+        "PROV-M036-004",
+        "PROV-M036-005",
+        "PROV-M036-007",
+        "PROV-M036-010",
+        "PROV-M036-011",
+        "PROV-M036-013",
+        "PROV-M036-014",
+        "PROV-M036-015",
+        "PROV-M036-022"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M036-006",
+        "PROV-M036-008",
+        "PROV-M036-009",
+        "PROV-M036-012",
+        "PROV-M036-016",
+        "PROV-M036-017",
+        "PROV-M036-018",
+        "PROV-M036-019",
+        "PROV-M036-020",
+        "PROV-M036-021",
+        "PROV-M036-901",
+        "PROV-M036-902",
+        "PROV-M036-903"
+      ],
+      "background_provision_ids": [
+        "PROV-M036-023"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four necessary linked steps across enactments: (1) classify the land against the definition of 'rubber estate' (PROV-M036-001) to decide whether the consent prohibition (PROV-M036-002) applies; (2) classify the land as agricultural land (PROV-M036-006), attribute it to the shareholders of the private company (PROV-M036-004) and measure that against the ceiling (PROV-M036-003) to see whether the vesting sanction (PROV-M036-005) bites; (3) apply the major transaction test (PROV-M036-011) to decide whether a special resolution is required (PROV-M036-010) and how the company contracts (PROV-M036-012); (4) apply the shareholding prohibition (PROV-M036-007) and then the execution, search and registration duties (PROV-M036-013, PROV-M036-014, PROV-M036-015, PROV-M036-022). Verifier: the hop count of 4 is confirmed. The added provisions PROV-M036-901 (the continuing foreign-shareholding condition), PROV-M036-902 (the proviso allowing the search to be dispensed with) and PROV-M036-903 (the duty to obtain the title deed) qualify existing steps rather than adding a further indispensable link, so they are recorded as supporting and the count is unchanged. The Prevention of Frauds reasoning edge was reversed: the amending provision PROV-M036-014 amends the principal section PROV-M036-013, not the other way round.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M036-002",
+          "to_provision_id": "PROV-M036-001",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M036-003",
+          "to_provision_id": "PROV-M036-006",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M036-003",
+          "to_provision_id": "PROV-M036-004",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M036-005",
+          "to_provision_id": "PROV-M036-003",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M036-010",
+          "to_provision_id": "PROV-M036-011",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M036-007",
+          "to_provision_id": "PROV-M036-008",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M036-007",
+          "to_provision_id": "PROV-M036-009",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M036-014",
+          "to_provision_id": "PROV-M036-013",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M036-015",
+          "to_provision_id": "PROV-M036-016",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M036-022",
+          "to_provision_id": "PROV-M036-021",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M036-012",
+          "to_provision_id": "PROV-M036-018",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M036-017",
+          "to_provision_id": "PROV-M036-018",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M036-902",
+          "to_provision_id": "PROV-M036-015",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M036-901",
+          "to_provision_id": "PROV-M036-007",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.",
+        "enriched_background": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.\n\nThe company was incorporated in Sri Lanka on 12 March 2015 under registration number PV 91234. It has five shareholders, each holding twenty per cent of the issued shares. All five are citizens of Sri Lanka resident in Galle, no share is held directly or indirectly by any person or body outside Sri Lanka, and none of the five owns any other land that is used or is capable of being used for agriculture. The company owns no land other than its registered office premises at No. 14, Wackwella Road, Galle. As at its last audited balance sheet dated 31 March 2023 the total value of the company's assets was Rs. 60,000,000, and the price agreed with the vendor for the estate is Rs. 41,000,000. The articles adopted when the company was incorporated contain no provision expressly authorising the acquisition of estate property.\n\nThe estate, known as Mahagoda Estate, is planted with mature rubber and is 16.6 hectares in extent. It has never been registered, and is not deemed to be registered, as an estate in the statutory register of rubber estates. The vendor is Mr. D. P. Wickramasinghe, a citizen of Sri Lanka, who says he has held the estate since Deed of Transfer No. 1420 dated 12 June 1998 attested by A. B. Silva, Notary Public of Galle, and that the estate is registered in the Galle Land Registry in volume and folio E 214/86. He has disclosed that a mortgage bond he granted to a commercial bank in 2019 is registered in that folio and has not been discharged, and he has so far produced only a photocopy of his own deed. Your instructions were received on 5 September 2023 and the parties wish to complete in October 2023.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M036-Q01-001",
+            "fact": "The company was incorporated in Sri Lanka on 12 March 2015 under registration number PV 91234; it has five shareholders holding twenty per cent each, all citizens of Sri Lanka, and no share is held directly or indirectly by any person or body outside Sri Lanka.",
+            "origin": "synthetic_decisive",
+            "reason": "The prohibition on transfers of land to a Sri Lankan company turns entirely on the level of direct or indirect foreign shareholding, and the original background says nothing about who owns the company. Without this the question cannot be answered determinately.",
+            "activates_provision_ids": [
+              "PROV-M036-007",
+              "PROV-M036-008",
+              "PROV-M036-009"
+            ],
+            "counterfactual_effect": "If fifty per cent or more of the shares were held directly or indirectly by foreigners, the transfer of title would be prohibited outright and any deed would be void, so the advice would be that the purchase cannot proceed in this form at all.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M036-Q01-002",
+            "fact": "None of the five shareholders owns any other land that is used or is capable of being used for agriculture, and the company owns no land other than its registered office premises at No. 14, Wackwella Road, Galle.",
+            "origin": "synthetic_decisive",
+            "reason": "Agricultural land bought by a private company is attributed to the shareholders in proportion to their shareholdings, so the ceiling has to be tested against each shareholder's existing agricultural holding, which the original background does not give.",
+            "activates_provision_ids": [
+              "PROV-M036-003",
+              "PROV-M036-004",
+              "PROV-M036-005",
+              "PROV-M036-006"
+            ],
+            "counterfactual_effect": "If a shareholder already owned, say, forty-five acres of agricultural land, his deemed 8.2-acre share of the estate would take him over the fifty-acre ceiling and the excess would vest in the Land Reform Commission on the purchase, so the shareholding structure would have to be restructured before the transfer.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M036-Q01-003",
+            "fact": "The total value of the company's assets as at its last audited balance sheet dated 31 March 2023 was Rs. 60,000,000; the agreed price for the estate is Rs. 41,000,000; and the articles adopted at incorporation contain no provision expressly authorising the acquisition of estate property.",
+            "origin": "synthetic_decisive",
+            "reason": "Whether shareholder approval is needed depends on comparing the value of the assets to be acquired with the value of the company's assets before the acquisition, and on whether the original articles gave express authority. Neither figure is in the original background.",
+            "activates_provision_ids": [
+              "PROV-M036-010",
+              "PROV-M036-011"
+            ],
+            "counterfactual_effect": "If the company's assets before the acquisition were, say, Rs. 350,000,000, the acquisition would not be greater than half the asset value, it would not be a major transaction, and a board resolution alone would suffice without a special resolution of shareholders.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M036-Q01-004",
+            "fact": "The estate, known as Mahagoda Estate, is 16.6 hectares in extent and has never been registered, and is not deemed to be registered, as an estate in the statutory register of rubber estates.",
+            "origin": "synthetic_decisive",
+            "reason": "The fragmentation consent regime applies only to land that satisfies both limbs of the statutory definition, an extent threshold and registration under the rubber control legislation. The original background gives only the extent in acres and says nothing about registration.",
+            "activates_provision_ids": [
+              "PROV-M036-001",
+              "PROV-M036-002"
+            ],
+            "counterfactual_effect": "If the land were above the statutory extent threshold and registered as an estate, a certificate of consent of the Board would have to be obtained by the vendor before the transfer, failing which the transfer would be null and void.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M036-Q01-005",
+            "fact": "The vendor is Mr. D. P. Wickramasinghe, a citizen of Sri Lanka, who claims title on Deed of Transfer No. 1420 dated 12 June 1998 attested by A. B. Silva, Notary Public of Galle; the land is registered in the Galle Land Registry in volume and folio E 214/86; a mortgage bond granted by him to a commercial bank in 2019 is registered in that folio and remains undischarged; and he has so far produced only a photocopy of his own deed.",
+            "origin": "synthetic_decisive",
+            "reason": "The steps of investigation of title, of calling for the originals of the chain of deeds and of clearing encumbrances only become determinate once the identity of the vendor, the registry folio and the state of the encumbrances are known.",
+            "activates_provision_ids": [
+              "PROV-M036-015",
+              "PROV-M036-016",
+              "PROV-M036-022",
+              "PROV-M036-023"
+            ],
+            "counterfactual_effect": "If the folio disclosed no registered encumbrance, no discharge would need to be arranged and the purchase money could be paid over in full to the vendor at execution.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M036-Q01-006",
+            "fact": "Instructions were received on 5 September 2023 and the parties wish to complete the transaction in October 2023.",
+            "origin": "synthetic_neutral",
+            "reason": "Fixes the transaction to the matter reference date so that the execution formalities in force at that time, and not the later amendments, are the ones applied.",
+            "activates_provision_ids": [
+              "PROV-M036-013",
+              "PROV-M036-014",
+              "PROV-M036-021"
+            ],
+            "counterfactual_effect": "If the deed were executed after the 2024 amendment came into force, the transferee company would itself have to sign the transfer deed, or authorise a signatory in writing, in addition to the vendor.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "The company has retained you on a purchase of a 41-acre rubber-planted estate in Galle. The question is what steps you must take, before the deed is drawn, at execution and after execution, so that the company acquires a title that is valid, unencumbered and registrable, and so that no statutory prohibition or consent requirement is overlooked.",
+        "rule": "Several statutes bear on a purchase of this kind. First, the transfer of ownership of a rubber estate is null and void unless a certificate of consent of the Board has previously been obtained by the transferor and the transfer complies with any conditions of that consent (Tea and Rubber Estates (Control of Fragmentation) Act s.3(1)), but the Act bites only where the land answers the definition of 'rubber estate', which requires both a minimum extent and registration as an estate under the rubber control legislation (s.25). Secondly, rubber land is agricultural land (Land Reform Law s.66); the ceiling on non-paddy agricultural land is fifty acres per person (s.3(1)(b)); where agricultural land is owned by a private company its shareholders are deemed to own it for the purpose of the ceiling in proportion to their shareholdings (s.8); and where a person becomes the owner of agricultural land in excess of the ceiling after the commencement of the Law, the excess vests in the Commission and is held on a statutory lease (s.5(1)). Thirdly, a transfer of title to a company incorporated in Sri Lanka is prohibited where foreign shareholding in it, direct or indirect, is fifty per cent or above (Land (Restrictions on Alienation) Act s.2(1)(b)); an alienation in contravention of the Act is void (s.18); and the Registrar of Lands must satisfy himself on this point by requiring documentary proof from the company secretary (s.4(3)). Fourthly, the company cannot enter into a major transaction, which includes an acquisition of assets worth more than half the value of its assets before the acquisition, unless it is approved by special resolution, made contingent on one, consented to in writing by all shareholders, or expressly authorised by the original articles (Companies Act s.185(1) and (2)); and an obligation which a natural person would have to execute notarially is entered into by the company in writing signed under its name by two directors (s.19(1)(a)). Fifthly, no sale, purchase or transfer of immovable property avails in law unless it is in writing, signed by every executant and attested by a notary before two witnesses present at the same time, with the prescribed thumb impressions (Prevention of Frauds Ordinance s.2, in the form substituted by the Prevention of Frauds (Amendment) Act No. 30 of 2022 s.2). Sixthly, before drawing the deed the notary must search the land registry to ascertain the state of the title and whether any prior deed has been registered (Notaries Ordinance s.31(17)(a)) and must obtain the certified extract of the folio showing ownership and registered encumbrances (s.31(17)(b)(i)); where a company is a party he must retain a certified copy of the certificate of incorporation and the details of the board (s.31(17)(d)); where a corporate body executes he must obtain the seal and the signatures of the board or of a person authorised by board resolution (s.31(14)); the deed must contain an accurate description showing boundaries, extent and situation (s.31(16)(a)); attestation requires an assurance that stamp duty is provided (s.31(6)); and the deed must be submitted for registration within thirty days of attestation (s.31(30A)). Finally, an unregistered instrument is void against a party claiming an adverse interest for valuable consideration under a subsequent duly registered instrument (Registration of Documents Ordinance s.7(1)), and the registry books may be searched and certified extracts obtained by an intending purchaser's attorney-at-law (s.42).",
+        "application": "Take the statutory checks in order. The estate is 16.6 hectares and has never been registered as an estate in the statutory register of rubber estates, so it does not answer the definition in s.25 and the prohibition in s.3(1) is not engaged; you should nonetheless obtain written confirmation of the registration position, because if the land were a rubber estate as defined the vendor would first have to obtain the Board's certificate of consent and a transfer without it would be null and void. The estate is planted with rubber and is therefore agricultural land within s.66. Because the purchaser is a private company, s.8 attributes the estate to the five shareholders in proportion to their shares, so each is deemed to acquire one fifth of 41 acres, that is 8.2 acres; since none of them owns any other agricultural land, no shareholder comes near the fifty-acre ceiling in s.3(1)(b) and the vesting sanction in s.5(1) will not operate. Had any shareholder been near the ceiling, the excess created by the purchase would have vested in the Commission, so the shareholders' existing agricultural holdings must be verified in writing before you advise the company to commit. All five shareholders are citizens of Sri Lanka and no share is held directly or indirectly by a foreigner, so the transfer is not prohibited by s.2(1)(b) and s.18 does not avoid it; but you should have the company secretary prepare the documentary proof of the shareholding that the Registrar of Lands will require under s.4(3), and advise the company of the continuing obligation to report on its foreign shareholding after registration. On the company's authority, the assets to be acquired are worth Rs. 41,000,000 against an asset base of Rs. 60,000,000, so the acquisition is greater than half the value of the company's assets before the acquisition and is a major transaction within s.185(2)(a); as the original articles contain no express authorisation, a special resolution under s.185(1), or the written consent of all five shareholders, must be obtained before the company binds itself, and any agreement to sell must be signed under the company's name by two directors and notarially executed as required by s.19(1)(a) read with s.2 of the Prevention of Frauds Ordinance. On title, exercise the right of search under s.42, examine the Galle Land Registry folio E 214/86 as required by s.31(17)(a) and obtain the certified folio extract under s.31(17)(b)(i); call for the original of Deed No. 1420 of 1998 and the earlier deeds in the chain, since a photocopy proves nothing and only notarially executed instruments pass title under s.2 of the Prevention of Frauds Ordinance. The 2019 mortgage bond is registered in the folio, so by force of the priority rule in s.7(1) the company's later deed would take subject to it; you must therefore arrange for the bank's discharge to be executed and registered, or for the redemption amount to be paid out of the purchase money at completion against delivery of the discharge. Furnish the notary with a certified copy of the certificate of incorporation and the details of the directors under s.31(17)(d), and with the board resolution and seal if the company is to execute anything under s.31(14); settle a schedule with an accurate description of boundaries, extent and situation as s.31(16)(a) requires, if necessary on a fresh survey; provide funds for stamp duty so that the notary has the assurance s.31(6) requires; and see that the executed transfer is submitted for registration within thirty days of attestation under s.31(30A), which is what secures the company's priority under s.7(1).",
+        "conclusion": "You should advise the company that the purchase can proceed, but only after the following steps. Verify in writing that the estate is not registered as an estate for the purposes of the fragmentation legislation, and if it is, require the vendor to obtain the Board's certificate of consent first. Verify the existing agricultural holdings of all five shareholders so that no one is taken over the fifty-acre ceiling by the deemed proportionate ownership. Confirm and document that there is no direct or indirect foreign shareholding, and have the secretary ready to prove it to the Registrar of Lands. Obtain a special resolution, or the written consent of all shareholders, before the company commits itself, since the acquisition is a major transaction. Search the Galle Land Registry, take the certified folio extract, call for the originals of the chain of notarially executed deeds and satisfy yourself on the vendor's title and possession. Have the registered mortgage discharged, or redeemed out of the purchase money at completion. Furnish the notary with the certificate of incorporation, the details of the board and any board resolution, settle an accurate schedule of the land, provide for stamp duty, have the deed executed by the vendor before a notary and two witnesses in the form then required, and see that it is lodged for registration within thirty days of attestation."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M036-Q01-001",
+          "claim_text": "A transfer of ownership of a rubber estate is null and void unless the transferor has previously obtained a certificate of consent of the Board and the transfer complies with any conditions of that consent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-002",
+          "claim_text": "That prohibition applies only where the land answers the statutory definition of a rubber estate, which requires both a minimum extent and registration as an estate under the rubber control legislation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-003",
+          "claim_text": "Because the estate is 16.6 hectares and has never been registered as an estate in the statutory register of rubber estates, it falls outside the definition, so no certificate of consent is required; the registration position should still be confirmed in writing.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-001",
+            "PROV-M036-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q01-004",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-004",
+          "claim_text": "Land planted with rubber is agricultural land, the ceiling on non-paddy agricultural land is fifty acres per person, and where agricultural land is owned by a private company its shareholders are deemed to own it for the purposes of the ceiling in proportion to their shareholdings.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-006",
+            "PROV-M036-003",
+            "PROV-M036-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-005",
+          "claim_text": "Where a person becomes the owner of agricultural land in excess of the ceiling after the commencement of the Law, the excess is deemed to vest in the Commission and to be held by that person on a statutory lease.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-006",
+          "claim_text": "Each of the five shareholders is deemed to acquire one fifth of the 41 acres, that is 8.2 acres, and since none owns other agricultural land no shareholder exceeds the fifty-acre ceiling, so no part of the estate would vest in the Commission on this purchase.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-003",
+            "PROV-M036-004",
+            "PROV-M036-005"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q01-001",
+            "FACT-M036-Q01-002",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-007",
+          "claim_text": "A transfer of title of land to a company incorporated in Sri Lanka is prohibited where foreign shareholding in that company, direct or indirect, is fifty per cent or above, and an alienation in contravention of the Act is void.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-007",
+            "PROV-M036-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-008",
+          "claim_text": "Since all five shareholders are citizens of Sri Lanka and no share is held directly or indirectly by any person or body outside Sri Lanka, the transfer is not prohibited, but the company secretary must be ready to give the Registrar of Lands documentary proof that foreign shareholding is below fifty per cent.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-007",
+            "PROV-M036-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q01-001"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-009",
+          "claim_text": "A company may not enter into a major transaction, which includes the acquisition of assets worth more than half the value of the company's assets before the acquisition, unless it is approved by special resolution, made contingent on one, consented to in writing by all shareholders, or expressly authorised by a provision in the articles included at incorporation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-010",
+            "PROV-M036-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-010",
+          "claim_text": "An acquisition of Rs. 41,000,000 against an asset base of Rs. 60,000,000 is greater than half the value of the company's assets before the acquisition, so it is a major transaction and, the original articles containing no express authority, a special resolution or the written consent of all five shareholders must be obtained before the company commits itself.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-010",
+            "PROV-M036-011"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-011",
+          "claim_text": "No sale, purchase or transfer of immovable property, and no agreement for such a purpose, avails in law unless the deed is in writing, signed by every executant and attested by a notary before two witnesses present at the same time, with the prescribed thumb impressions; and an obligation of that kind is entered into on behalf of a company in writing signed under the company's name by two directors.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-013",
+            "PROV-M036-014",
+            "PROV-M036-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M036-Q01-012",
+          "claim_text": "Before the deed is drawn the notary must search the land registry to ascertain the state of the title and whether any prior deed has been registered, and must obtain the certified extract of the folio showing ownership and registered encumbrances; an intending purchaser's attorney-at-law may himself search the registry books and take certified extracts.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-015",
+            "PROV-M036-016",
+            "PROV-M036-023"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-013",
+          "claim_text": "You must therefore search folio E 214/86 of the Galle Land Registry, take the certified extract, and call for the original of Deed No. 1420 of 1998 and the earlier deeds in the chain rather than accept the photocopy the vendor has produced.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-015",
+            "PROV-M036-016",
+            "PROV-M036-013"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-014",
+          "claim_text": "Because the 2019 mortgage bond is registered in the folio, the priority rule protecting a subsequent registered instrument taken for valuable consideration cannot be used to defeat it, so a registered discharge must be obtained, or the redemption amount paid out of the purchase money at completion against delivery of the discharge.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-022"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q01-005"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-015",
+          "claim_text": "The notary must be furnished with a certified copy of the company's certificate of incorporation and the details of its board, and with the seal and board resolution if the company is itself to execute; the deed must carry an accurate description showing boundaries, extent and situation; funds must be provided so that the notary has an assurance that stamp duty is met.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-017",
+            "PROV-M036-018",
+            "PROV-M036-019",
+            "PROV-M036-020"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-016",
+          "claim_text": "The executed transfer must be submitted for registration within thirty days of attestation, and prompt registration is what protects the company against a competing instrument registered earlier.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-021",
+            "PROV-M036-022"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q01-017",
+          "claim_text": "The purchase may proceed once the registration position of the estate, the shareholders' agricultural holdings and the absence of foreign shareholding have been verified, a special resolution or unanimous written consent obtained, the title investigated and the registered mortgage cleared, the deed notarially executed by the vendor and lodged for registration within thirty days.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M036-001",
+            "PROV-M036-003",
+            "PROV-M036-004",
+            "PROV-M036-007",
+            "PROV-M036-010",
+            "PROV-M036-014",
+            "PROV-M036-015",
+            "PROV-M036-021",
+            "PROV-M036-022"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q01-001",
+            "FACT-M036-Q01-002",
+            "FACT-M036-Q01-003",
+            "FACT-M036-Q01-004",
+            "FACT-M036-Q01-005",
+            "FACT-M036-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M036-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks which documents must be called for and why. Each document in the gold answer is called for because a statute makes it necessary: the certified folio extract and the registry search are the notary's express duties; the priority rule, the lis pendens rule and the caveat rule explain what the folio must be read for; only notarially executed instruments pass title, which is why the originals of the chain of deeds must be produced; the description requirement is why a survey plan is needed; the corporate-party rule is why the certificate of incorporation and board details are needed; and where a parcel is under title registration, the Certificate of Title replaces the chain of deeds. Possession has to be investigated because of the statutory prescriptive period. No case law is required to identify the documents or the reasons. Documents that a practitioner would also call for but which rest on legislation outside the corpus (local-authority rates receipts, street line and non-vesting certificates, approved building plans) are excluded and recorded as corpus gaps.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M036-Q02-01",
+          "issue": "Which registration system governs the parcel, and therefore whether the documents to be called for are a chain of deeds and folio extracts or a Certificate of Title.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M036-Q02-02",
+          "issue": "What documentary evidence of the vendor's paper title must be produced, and in what form, for the purchaser to be satisfied that title can pass.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M036-Q02-03",
+          "issue": "What registry material must be obtained to disclose prior registered instruments, encumbrances, pending actions and caveats affecting the parcel.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M036-Q02-04",
+          "issue": "What evidence of identity of the parcel and of possession must be called for, given that adverse possession can defeat a paper title.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M036-Q02-05",
+          "issue": "What documents are required because the intending purchaser is a company.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M036-013",
+        "PROV-M036-015",
+        "PROV-M036-016",
+        "PROV-M036-022",
+        "PROV-M036-026"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M036-014",
+        "PROV-M036-017",
+        "PROV-M036-019",
+        "PROV-M036-023",
+        "PROV-M036-024",
+        "PROV-M036-025",
+        "PROV-M036-027",
+        "PROV-M036-902",
+        "PROV-M036-903",
+        "PROV-M036-904"
+      ],
+      "background_provision_ids": [
+        "PROV-M036-021"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps: (1) the notary's search duty (PROV-M036-015) leads to the specific document, the certified folio extract (PROV-M036-016); (2) that document matters because of the registration priority rule (PROV-M036-022), which is also what makes registered encumbrances, a registered lis pendens (PROV-M036-024) and a caveat (PROV-M036-025) relevant; (3) the deeds themselves must be produced in original because only notarially executed instruments avail in law (PROV-M036-013 with PROV-M036-014), and the chain must be traced far enough back and tested against possession because of the prescriptive period (PROV-M036-026). Verifier: the hop count of 3 is confirmed. PROV-M036-903 (the notary's duty to use his best endeavours to obtain the title deed) reinforces step (3) and PROV-M036-904 supplies the caveat text in force at the matter date behind PROV-M036-025, so neither adds an independent reasoning edge. The Prevention of Frauds reasoning edge was reversed for the same reason as in M036-Q01.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M036-015",
+          "to_provision_id": "PROV-M036-016",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M036-016",
+          "to_provision_id": "PROV-M036-022",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M036-022",
+          "to_provision_id": "PROV-M036-024",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M036-022",
+          "to_provision_id": "PROV-M036-025",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M036-014",
+          "to_provision_id": "PROV-M036-013",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M036-026",
+          "to_provision_id": "PROV-M036-013",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M036-015",
+          "to_provision_id": "PROV-M036-023",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M036-019",
+          "to_provision_id": "PROV-M036-016",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M036-017",
+          "to_provision_id": "PROV-M036-016",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M036-027",
+          "to_provision_id": "PROV-M036-022",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M036-902",
+          "to_provision_id": "PROV-M036-015",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M036-903",
+          "to_provision_id": "PROV-M036-013",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M036-904",
+          "to_provision_id": "PROV-M036-025",
+          "relationship": "amends"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.\n\nThe said Ceylon Rubber Company (Private) Limited instructs you to examine the title of a residential premises situated next to said Rubber Estate, Forty Perches (AO, RO, P40) in extent.",
+        "enriched_background": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.\n\nThe said Ceylon Rubber Company (Private) Limited instructs you to examine the title of a residential premises situated next to said Rubber Estate, Forty Perches (AO, RO, P40) in extent.\n\nThe premises, known as \"Nelumwatta\" and bearing assessment number 22, Wakwella Road, are Lot A depicted in Plan No. 2456 dated 3 March 1996 made by K. Perera, Licensed Surveyor. They lie within the Akmeemana Divisional Secretary's Division in the District of Galle and adjoin the eastern boundary of the Rubber Estate. A single-storey dwelling house built in about 1998 stands on the land. The parcel has not been brought within any area declared for the purposes of the title registration scheme, so the Galle Land Registry folio remains the only public record of dealings with it.\n\nThe vendor is Mrs. S. K. Amarasuriya, a citizen of Sri Lanka, who says she bought the premises on Deed of Transfer No. 3120 dated 8 July 2004 attested by L. Jayasinghe, Notary Public of Galle, and that her predecessors held on a deed of 1985 and a deed of 1972. She has so far produced only a photocopy of the 2004 deed, no earlier deed and no registry extract. She mentions that a loan she took in 2016 was secured on the premises, and that a relative lodged some document at the Land Registry in 2022 objecting to any dealing with the property.\n\nA shed and a well at the southern end of the premises have been occupied since about 2010 by a neighbour, Mr. W. Gunaratne, who claims that strip as his own and pays no rent and renders no service to the vendor. Your firm was instructed on 20 September 2023 and the company wishes to complete before the end of the year.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M036-Q02-001",
+            "fact": "The premises are Lot A in Plan No. 2456 dated 3 March 1996 made by K. Perera, Licensed Surveyor, known as \"Nelumwatta\", assessment number 22, Wakwella Road, in the Akmeemana Divisional Secretary's Division in the District of Galle, with a single-storey dwelling house built in about 1998.",
+            "origin": "synthetic_neutral",
+            "reason": "The original background identifies the property only by extent and by its position next to the estate. A deed cannot be drawn, and a title cannot be examined, without an identified parcel, so the survey plan and situation particulars are needed to make the scenario determinate.",
+            "activates_provision_ids": [
+              "PROV-M036-019"
+            ],
+            "counterfactual_effect": "If no survey plan existed and the parcel were described only by reference to old boundaries, a fresh survey would have to be called for before the deed could be drawn.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M036-Q02-002",
+            "fact": "The parcel has not been brought within any area declared for the purposes of the title registration scheme, and the Galle Land Registry folio remains the only public record of dealings with it.",
+            "origin": "synthetic_decisive",
+            "reason": "Which documents must be called for depends on which registration system governs the parcel: a chain of deeds and folio extracts under the deeds system, or a Certificate of Title under the title registration system.",
+            "activates_provision_ids": [
+              "PROV-M036-027",
+              "PROV-M036-022"
+            ],
+            "counterfactual_effect": "If the parcel had been registered under the title registration scheme, the document to call for would be the Certificate of Title, which is conclusive evidence of the interest, and the chain of prior deeds would cease to be the primary evidence of title.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M036-Q02-003",
+            "fact": "The vendor is Mrs. S. K. Amarasuriya, a citizen of Sri Lanka, who claims on Deed of Transfer No. 3120 dated 8 July 2004 attested by L. Jayasinghe, Notary Public of Galle, with predecessors holding on a deed of 1985 and a deed of 1972; she has produced only a photocopy of the 2004 deed, no earlier deed and no registry extract.",
+            "origin": "synthetic_decisive",
+            "reason": "The question is what documents to call for, which only becomes determinate once it is known what the vendor has and has not produced and how far back the chain is said to run.",
+            "activates_provision_ids": [
+              "PROV-M036-013",
+              "PROV-M036-014",
+              "PROV-M036-015",
+              "PROV-M036-016"
+            ],
+            "counterfactual_effect": "If the vendor had already produced the originals of the whole chain together with a current certified folio extract, the examination would be confined to verifying those instruments rather than calling for them.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M036-Q02-004",
+            "fact": "A loan taken by the vendor in 2016 was secured on the premises, and a relative lodged a document at the Land Registry in 2022 objecting to any dealing with the property.",
+            "origin": "synthetic_decisive",
+            "reason": "Encumbrances and third-party warnings registered against the folio are the principal thing an examination of title is looking for, and the original background discloses none.",
+            "activates_provision_ids": [
+              "PROV-M036-016",
+              "PROV-M036-022",
+              "PROV-M036-024",
+              "PROV-M036-025"
+            ],
+            "counterfactual_effect": "If the folio disclosed no security and no caveat or pending action, the examination would produce a clear title and no discharge or clearance document would need to be called for.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M036-Q02-005",
+            "fact": "A shed and a well at the southern end of the premises have been occupied since about 2010 by a neighbour, Mr. W. Gunaratne, who claims that strip as his own and pays no rent and renders no service to the vendor.",
+            "origin": "synthetic_decisive",
+            "reason": "A paper title can be defeated by long adverse possession, so the examination has to extend to possession and to documents evidencing it; the original background is silent on who is in occupation.",
+            "activates_provision_ids": [
+              "PROV-M036-026"
+            ],
+            "counterfactual_effect": "If the vendor and her predecessors had been in sole undisturbed possession of the whole parcel, no separate enquiry into a prescriptive claim over part of the land would be needed and the deeds alone would settle the title.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M036-Q02-006",
+            "fact": "The intending purchaser is the same company, Ceylon Rubber Company (Private) Limited, and instructions were received on 20 September 2023 with completion sought before the end of that year.",
+            "origin": "synthetic_neutral",
+            "reason": "Links the title examination to a corporate purchaser and to the matter reference date, so that the corporate-party documents and the execution formalities then in force are the ones in issue.",
+            "activates_provision_ids": [
+              "PROV-M036-017",
+              "PROV-M036-014"
+            ],
+            "counterfactual_effect": "If the purchaser were a natural person, no certificate of incorporation or board details would have to be produced to the notary.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "The company has instructed you to examine the title to a forty-perch residential premises adjoining the rubber estate. The question is which documents you must call for in order to carry out that examination, and what makes each of them necessary.",
+        "rule": "The starting point is that only a notarially executed instrument passes title to immovable property: no sale, purchase or transfer of land avails in law unless it is in writing, signed by every executant and attested by a notary before two witnesses present at the same time (Prevention of Frauds Ordinance s.2, in the form substituted by the Prevention of Frauds (Amendment) Act No. 30 of 2022 s.2). Next, before any deed affecting an interest in land is drawn, the notary must search or cause to be searched the registers in the land registry to ascertain the state of the title and whether any prior deed affecting the land has been registered (Notaries Ordinance s.31(17)(a)), and he must obtain from the Registrar of the relevant Land Registry the certified extract of the folio containing the last entry, showing the ownership and the registered encumbrances (s.31(17)(b)(i)). An intending purchaser's attorney-at-law may himself search the registry books and indexes and take certified copies and extracts (Registration of Documents Ordinance s.42). What the folio must be read for is fixed by the priority rule: an unregistered instrument is void against a party claiming an adverse interest for valuable consideration under a subsequent duly registered instrument (s.7(1)); a lis pendens does not bind a purchaser unless registered (s.11(1)); and a caveat registered by a third party requires notice to be given to him of any instrument presented for registration (s.32(1)). A deed cannot be drawn unless it embodies an accurate and clear description of the land showing boundaries, extent and situation (Notaries Ordinance s.31(16)(a)), which is why a plan is needed. Where a party to the deed is a corporate body, the notary must retain a certified copy of the certificate of incorporation or other instrument establishing it, and the details of the board (s.31(17)(d)). Documentary title is not conclusive: undisturbed and uninterrupted possession by a title adverse to or independent of the owner's, unaccompanied by rent or service, for ten years founds a prescriptive claim (Prescription Ordinance s.3). Finally, where a parcel has been registered under the title registration scheme the owner may obtain a Certificate of Title which is conclusive evidence of that interest (Registration of Title Act s.37), so the first question is which system governs the parcel.",
+        "application": "Since the parcel is not within any declared title registration area, the Certificate of Title route under s.37 is unavailable and the title has to be proved by the deeds and the deeds register, which fixes the documents you must call for. First, call for the original of Deed of Transfer No. 3120 of 8 July 2004 and the originals, or certified copies from the notarial protocols or the Registrar's duplicates, of the 1985 and 1972 deeds and of every other instrument in the chain, together with any instrument by which title devolved otherwise than by deed. The photocopy the vendor has produced proves nothing, and by force of s.2 of the Prevention of Frauds Ordinance an instrument that was not notarially executed in the required form did not pass title at all, so each link has to be inspected and its attestation checked. Trace the chain back far enough to be safe against the ten-year prescriptive period in s.3 of the Prescription Ordinance and to see that no link is missing. Secondly, call for the certified extract of the relevant folio of the Galle Land Registry, which s.31(17)(b)(i) requires the notary to obtain and which s.42 entitles you to take: it will show the registered ownership and the registered encumbrances, and it is the only way to find out whether some instrument registered earlier would, under s.7(1), prevail over the company's deed. Thirdly, read the folio for the two matters the vendor has already hinted at: the security given for the 2016 loan, for which you must call for the instrument creating it and, before completion, an executed and registrable discharge; and the document lodged by the relative in 2022, which if it is a caveat under s.32(1) means that notice of any instrument presented for registration will go to the caveator, and if it is a registered lis pendens under s.11(1) means the company would take subject to the pending action, so the pleadings and the state of that action must be called for. Fourthly, call for Plan No. 2456 of 3 March 1996 and, since the parcel is to be conveyed to a company that has never seen it, a current figure of survey superimposed on the earlier plan, because s.31(16)(a) requires the deed to carry an accurate description showing boundaries, extent and situation, and because the occupied strip must be located on the ground. Fifthly, because a neighbour has occupied the shed and well since about 2010 without paying rent or rendering service, call for whatever documents the vendor has to rebut a prescriptive claim to that strip, such as a written permission, a tenancy or licence agreement, receipts for rent or acknowledgment of the vendor's title, and evidence of the vendor's own possession such as assessment and rates receipts. Sixthly, since the purchaser is a corporate body, the company's certified certificate of incorporation and the details of its board must be produced for the notary under s.31(17)(d), together with the board resolution authorising the purchase. You should also call for the local authority certificates and receipts that a purchaser of built-up residential property would ordinarily require, although these arise under legislation outside the statutes considered here.",
+        "conclusion": "Call for the originals or certified copies of the whole chain of notarially executed deeds beginning with Deed No. 3120 of 2004 and running back through the 1985 and 1972 deeds; the certified extract of the relevant Galle Land Registry folio showing ownership and registered encumbrances, together with a search of the registers for prior instruments, pending actions and caveats; the instrument securing the 2016 loan and a registrable discharge of it; the document lodged in 2022 and, if it evidences a pending action, the record of that action; Plan No. 2456 of 1996 with a current figure of survey; documents evidencing the vendor's possession and any permission given to the occupier of the shed and well; and the company's certificate of incorporation, details of its board and the resolution authorising the purchase. Each of these is called for because title passes only by notarially executed deeds, because priority depends on registration, because a registered pending action or caveat binds or warns a purchaser, because the deed must describe the land accurately, because ten years of adverse possession can defeat the paper title, and because the notary must have the corporate documents of a company that is a party."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M036-Q02-001",
+          "claim_text": "No sale, purchase or transfer of immovable property avails in law unless the deed is in writing, signed by every executant and attested by a notary before two witnesses present at the same time, so only notarially executed instruments can pass title in the chain.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-013",
+            "PROV-M036-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-002",
+          "claim_text": "Before a deed affecting an interest in land is drawn, the registers in the land registry must be searched to ascertain the state of the title and whether any prior deed has been registered, and the certified extract of the folio showing ownership and registered encumbrances must be obtained from the Registrar.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-015",
+            "PROV-M036-016"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-003",
+          "claim_text": "An intending purchaser's attorney-at-law may search the registry duplicates, books and indexes and obtain certified copies or extracts.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-023"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-004",
+          "claim_text": "An unregistered instrument is void against a party claiming an adverse interest for valuable consideration under a subsequent duly registered instrument, which is why the folio has to be examined before the purchase.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-022"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-005",
+          "claim_text": "A registered lis pendens binds a purchaser, and a registered caveat requires notice to be given to the caveator of any instrument presented for registration, so the folio must be read for both.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-024",
+            "PROV-M036-025"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-006",
+          "claim_text": "Undisturbed and uninterrupted possession by a title adverse to or independent of the owner's, unaccompanied by rent or service, for ten years founds a prescriptive claim, so an examination of title cannot stop at the deeds.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-026"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-007",
+          "claim_text": "A deed cannot be drawn unless it embodies an accurate and clear description of the land showing boundaries, extent and situation, and where a party is a corporate body the notary must retain a certified copy of its certificate of incorporation and the details of its board.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M036-019",
+            "PROV-M036-017"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-008",
+          "claim_text": "Because the parcel is not within any declared title registration area, no Certificate of Title is available and title must be proved by the chain of deeds and the deeds register.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-027",
+            "PROV-M036-022"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q02-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-009",
+          "claim_text": "You must call for the original of Deed of Transfer No. 3120 of 2004 and the originals or certified copies of the 1985 and 1972 deeds and every other link in the chain, because the photocopy produced proves nothing and each link must be shown to have been notarially executed.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-013",
+            "PROV-M036-014",
+            "PROV-M036-015"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q02-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-010",
+          "claim_text": "You must call for the certified extract of the relevant Galle Land Registry folio, since it is the only way to establish the registered ownership and the registered encumbrances and to find any earlier registered instrument that would prevail over the company's deed.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-016",
+            "PROV-M036-022",
+            "PROV-M036-023"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q02-003",
+            "FACT-M036-Q02-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-011",
+          "claim_text": "You must call for the instrument securing the 2016 loan and a registrable discharge of it, and for the document lodged by the relative in 2022 together with the record of any action it evidences, because a registered security binds a later purchaser and a registered pending action or caveat affects any dealing.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-022",
+            "PROV-M036-024",
+            "PROV-M036-025"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q02-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-012",
+          "claim_text": "You must call for Plan No. 2456 of 1996 and a current figure of survey, because the deed must carry an accurate description showing boundaries, extent and situation and because the occupied strip has to be located on the ground.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-019"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q02-001",
+            "FACT-M036-Q02-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-013",
+          "claim_text": "You must call for whatever documents rebut a prescriptive claim to the strip occupied since about 2010, such as a written permission, a tenancy or licence, receipts for rent or an acknowledgment of the vendor's title, together with evidence of the vendor's own possession.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-026"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q02-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-014",
+          "claim_text": "You must call for the purchasing company's certified certificate of incorporation, the details of its board and the resolution authorising the purchase, because the notary must retain those documents where a party to the deed is a corporate body and because a corporate executant signs through its board or an authorised person.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M036-017",
+            "PROV-M036-018"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q02-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M036-Q02-015",
+          "claim_text": "The documents to be called for are therefore the whole chain of notarially executed deeds, the certified folio extract and a registry search, the security instrument and its discharge, the document lodged in 2022 and any related record, the survey plan and a current figure of survey, evidence of possession and of any permission given to the occupier, and the company's corporate documents.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M036-013",
+            "PROV-M036-015",
+            "PROV-M036-016",
+            "PROV-M036-019",
+            "PROV-M036-022",
+            "PROV-M036-024",
+            "PROV-M036-025",
+            "PROV-M036-026",
+            "PROV-M036-017"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M036-Q02-001",
+            "FACT-M036-Q02-002",
+            "FACT-M036-Q02-003",
+            "FACT-M036-Q02-004",
+            "FACT-M036-Q02-005",
+            "FACT-M036-Q02-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

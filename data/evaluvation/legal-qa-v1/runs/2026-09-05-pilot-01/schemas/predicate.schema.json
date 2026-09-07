@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://draftly.lk/schemas/legal-qa-v1/predicate.schema.json",
+  "title": "Per-matter legal predicates (predicates.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["benchmark_matter_id", "run_id", "produced_by_agent", "predicates"],
+  "properties": {
+    "benchmark_matter_id": { "type": "string", "pattern": "^M[0-9]{3}$" },
+    "run_id": { "type": "string" },
+    "produced_by_agent": { "type": "string" },
+    "predicates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "predicate_id", "benchmark_question_ids", "predicate", "description", "expected_value", "predicate_type",
+          "necessity", "authority_ids", "supporting_fact_ids", "evidence_document_ids", "status",
+          "counterfactual_effect", "potentially_decisive", "polarity"
+        ],
+        "properties": {
+          "predicate_id": { "type": "string", "pattern": "^PR-M[0-9]{3}-[0-9]{3}$" },
+          "benchmark_question_ids": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^M[0-9]{3}-Q[0-9]{2}$" } },
+          "predicate": { "type": "string", "pattern": "^[a-z0-9_]+$", "description": "snake_case name, e.g. required_notice_was_served" },
+          "description": { "type": "string", "minLength": 1 },
+          "expected_value": { "type": ["boolean", "null"], "description": "null = unresolved in the scenario" },
+          "predicate_type": { "enum": ["fact", "legal_status", "procedural_condition"] },
+          "necessity": { "enum": ["indispensable", "supporting"] },
+          "polarity": { "enum": ["positive", "negative"], "description": "negative = the absence of something matters (no_prior_registered_encumbrance)." },
+          "authority_ids": { "type": "array", "items": { "type": "string", "pattern": "^AUTH-M[0-9]{3}-[0-9]{3}$" } },
+          "supporting_fact_ids": { "type": "array", "items": { "type": "string", "pattern": "^FACT-M[0-9]{3}-[0-9]{3}$" } },
+          "evidence_document_ids": { "type": "array", "items": { "type": "string", "pattern": "^DOC-M[0-9]{3}-[0-9]{3}$" } },
+          "status": { "enum": ["observed", "inferred", "synthetic_needed", "unresolved"] },
+          "counterfactual_effect": { "type": "string", "minLength": 1 },
+          "potentially_decisive": { "type": "boolean" },
+          "notes": { "type": ["string", "null"] }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "necessity": { "const": "indispensable" } } },
+            "then": { "properties": { "authority_ids": { "minItems": 1 } } }
+          }
+        ]
+      }
+    }
+  }
+}

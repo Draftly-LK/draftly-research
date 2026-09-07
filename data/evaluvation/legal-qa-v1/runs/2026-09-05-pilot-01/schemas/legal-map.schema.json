@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://draftly.lk/schemas/legal-qa-v1/legal-map.schema.json",
+  "title": "Per-matter gold legal map (legal-map.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["benchmark_matter_id", "run_id", "produced_by_agent", "status", "questions"],
+  "properties": {
+    "benchmark_matter_id": { "type": "string", "pattern": "^M[0-9]{3}$" },
+    "run_id": { "type": "string" },
+    "produced_by_agent": { "type": "string" },
+    "status": {
+      "enum": ["authorities_verified", "blocked_missing_authority", "blocked_temporal_uncertainty", "blocked_source_conflict", "blocked_scenario_ambiguity", "needs_legal_review"]
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/question_map" }
+    }
+  },
+  "$defs": {
+    "authority_id": { "type": "string", "pattern": "^AUTH-M[0-9]{3}-[0-9]{3}$" },
+    "question_map": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "benchmark_question_id", "issues", "indispensable_authority_ids", "supporting_authority_ids",
+        "legal_hop_count", "reasoning_chain", "gold_answer_draft", "answer_claims", "confidence", "status"
+      ],
+      "properties": {
+        "benchmark_question_id": { "type": "string", "pattern": "^M[0-9]{3}-Q[0-9]{2}$" },
+        "issues": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "indispensable_authority_ids": { "type": "array", "items": { "$ref": "#/$defs/authority_id" } },
+        "supporting_authority_ids": { "type": "array", "items": { "$ref": "#/$defs/authority_id" } },
+        "legal_hop_count": { "type": "integer", "minimum": 0, "maximum": 8 },
+        "hop_count_basis": { "type": "string", "description": "Which indispensable reasoning steps were counted." },
+        "reasoning_chain": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["step", "text", "authority_ids"],
+            "properties": {
+              "step": { "type": "integer", "minimum": 1 },
+              "text": { "type": "string" },
+              "authority_ids": { "type": "array", "items": { "$ref": "#/$defs/authority_id" } },
+              "relies_on_scenario_fact_ids": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "gold_answer_draft": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["issue", "rule", "application", "conclusion"],
+          "properties": {
+            "issue": { "type": "string" },
+            "rule": { "type": "string" },
+            "application": { "type": "string" },
+            "conclusion": { "type": "string" }
+          }
+        },
+        "answer_claims": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/claim" }
+        },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "status": {
+          "enum": ["authorities_verified", "blocked_missing_authority", "blocked_temporal_uncertainty", "blocked_source_conflict", "blocked_scenario_ambiguity", "needs_legal_review"]
+        },
+        "blocking_reason": { "type": ["string", "null"] }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_id", "claim_text", "claim_type", "supporting_authority_ids", "supporting_excerpts", "support_strength", "verification_status"],
+      "properties": {
+        "claim_id": { "type": "string", "pattern": "^CL-M[0-9]{3}-Q[0-9]{2}-[0-9]{3}$" },
+        "claim_text": { "type": "string", "minLength": 1 },
+        "claim_type": { "enum": ["rule", "application", "conclusion", "scenario_inference", "arithmetic"] },
+        "supporting_authority_ids": { "type": "array", "items": { "$ref": "#/$defs/authority_id" } },
+        "supporting_excerpts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["authority_id", "excerpt"],
+            "properties": {
+              "authority_id": { "$ref": "#/$defs/authority_id" },
+              "excerpt": { "type": "string", "minLength": 1 },
+              "locator": { "type": ["string", "object", "null"] }
+            }
+          }
+        },
+        "support_strength": {
+          "enum": ["direct", "combined", "inferential", "scenario_fact", "arithmetic_from_rule"],
+          "description": "scenario_fact = the claim restates or infers from the past-paper facts and needs no authority; arithmetic_from_rule = a computation whose rule claim is separately supported."
+        },
+        "scenario_fact_basis": { "type": ["string", "null"], "description": "Required when support_strength is scenario_fact: which facts." },
+        "verification_status": { "enum": ["verified", "partially_verified", "unverified", "rejected"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "support_strength": { "enum": ["direct", "combined", "inferential"] } } },
+          "then": { "properties": { "supporting_authority_ids": { "minItems": 1 }, "supporting_excerpts": { "minItems": 1 } } }
+        },
+        {
+          "if": { "properties": { "support_strength": { "const": "scenario_fact" } } },
+          "then": { "required": ["scenario_fact_basis"], "properties": { "scenario_fact_basis": { "type": "string", "minLength": 1 } } }
+        }
+      ]
+    }
+  }
+}

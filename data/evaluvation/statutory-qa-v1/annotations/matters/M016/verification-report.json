@@ -1,0 +1,99 @@
+{
+  "benchmark_matter_id": "M016",
+  "verifier": "verifier-M016",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:10:59Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M016-001",
+      "decision": "verified",
+      "note": "show 23-1927/s32 --full and check both pass: subsection (5) reads exactly as excerpted, including the words within thirty days from posting of the notice required by subsection (4). The temporal note correctly identifies the corpus text as the 1990 consolidation, superseded on the figure by 32-2022/s2(5)."
+    },
+    {
+      "provision_id": "PROV-M016-002",
+      "decision": "partially_verified",
+      "note": "The substitution of sixty days for thirty days is verbatim in 32-2022/s2, but toc 32-2022 shows s 1 is Short title with no date-of-operation clause and s 6 is the Sinhala-text clause, so the corpus cannot prove the amendment was in operation on 12 June 2025; the inference rests on the corpus in_force_from_year of 2022 and on the contrast with 21-2013/s1 and 18-2024/s1, both headed Short title and date of operation."
+    },
+    {
+      "provision_id": "PROV-M016-003",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim in the 1990 consolidation but is the superseded opening wording; 32-2022/s2(4) replaced the words The notice to be given to the caveator shall be in the prescribed form, leaving only and shall be sent by registered letter to the address mentioned in the caveat as the text in force at the matter date that supports the posting rule."
+    },
+    {
+      "provision_id": "PROV-M016-004",
+      "decision": "verified",
+      "note": "Excerpt verbatim; the recast subsection (4) does describe the notice as the one given where an instrument affecting the same land described in the caveat is subsequently presented for registration, which is the trigger in the scenario."
+    },
+    {
+      "provision_id": "PROV-M016-005",
+      "decision": "verified",
+      "note": "Excerpt verbatim; correctly placed as background only, since the two-year maximum does not decide the time limit the question asks about."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M016-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "Kept as proposed_gold: no indispensable provision is rejected or unresolved, the answer follows from section 32(5) read with 32-2022/s2(5) without case law or Roman-Dutch doctrine, and independent searches (acts, grep caveat, grep sixty days) found no alternative statutory route - the Registration of Title Act No. 21 of 1998 has no caveat provision in the corpus and Civil Procedure Code s 536 is the testamentary caveat. Three of ten claims moved to disputed. The status turns on the commencement point in PROV-M016-002: if Act No. 32 of 2022 was not in operation on 12 June 2025 the gold conclusion of sixty days is wrong and the question should become blocked_temporal_uncertainty."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "provision_role_and_hop_count",
+      "researcher_position": "PROV-M016-003 (section 32(4)) is indispensable and the hop count is 3, because the period has no starting point without it.",
+      "verifier_position": "On the question as asked - within how many days has an action to be commenced - the bare number follows from section 32(5) plus the 2022 substitution alone, and section 32(5) already carries the words from posting of the notice required by subsection (4) internally, so section 32(4) is arguably supporting and the hop count 2. Left unchanged because the gold answer issue statement expressly asks from what date the period runs, which does require section 32(4).",
+      "supporting_sources": [
+        "23-1927/s32",
+        "32-2022/s2"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "reckoning_of_the_period",
+      "researcher_position": "Sixty days from 12 June 2025 expires on or about 11 August 2025, counting from the day after posting.",
+      "verifier_position": "The arithmetic is right on that convention, but no corpus provision says whether the day of posting is excluded and the Interpretation Ordinance is not in the corpus, so the worked date should not be scored as a statute-supported claim.",
+      "supporting_sources": [
+        "23-1927/s32"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M016-Q01-005 marked disputed: section 32(3) as substituted fixes a maximum currency of two years but does not establish that the caveat was still in force in June 2025; that rests entirely on the synthetic fact FACT-M016-Q01-002, and the connective so in the claim overstates what the provision does.",
+      "CL-M016-Q01-010 marked disputed: the 11 August 2025 date is arithmetic on an assumed reckoning convention, not a corpus-supported claim; support_strength is already flagged inferential."
+    ],
+    "temporal_issues": [
+      "CL-M016-Q01-008 marked disputed: the whole sixty-day answer depends on Act No. 32 of 2022 being in operation on 12 June 2025, which the corpus copy cannot establish because that Act has no date-of-operation clause.",
+      "PROV-M016-003 quotes the pre-2022 text of section 32(4) as if current; the opening words were replaced by 32-2022/s2(4).",
+      "PROV-M016-001 quotes thirty days, the figure superseded at the matter date; flagged in its temporal_note, but a reader of the excerpt alone would take the wrong number.",
+      "Checked forward for a later change: 18-2024, the only post-2022 Registration of Documents amendment in the corpus, amends ss 8, 25, 29, 41, Chapter IV and the First Schedule and does not touch section 32, so sixty days is the last figure stated in the corpus."
+    ],
+    "missing_definitions_or_exceptions": [
+      "defs 23-1927 returns no definition of caveat, instrument or competent court; only caveator, inside section 32(1) itself. 23-1927/s3 defines land but is not needed for the time limit.",
+      "edges 23-1927/s32 and edges 32-2022/s2 return no typed links in either direction, so the principal-to-amendment relation in the map was established from the text, not from the corpus graph.",
+      "Form XI as inserted by 32-2022/s5 was read in full: it notifies the caveator that an instrument is pending registration but states no period, so no provision stating the days is missing from the map.",
+      "Sections 33 and 34 of the Ordinance (cancellation, damages for a caveat without reasonable cause) and 32-2022/s3 were read and are correctly excluded as answering a different question."
+    ],
+    "case_law_dependence": [
+      "None. The gold answer cites no case and needs none; the period and its starting point are both stated in the statute."
+    ],
+    "enrichment_issues": [
+      "FACT-M016-Q01-001 and FACT-M016-Q01-002 are labelled origin synthetic_neutral, but each carries a counterfactual_effect that would remove the time limit entirely (no time limit would run; the sixty-day period would never begin) and each activates provisions, so on their own stated effect they behave as decisive facts and the origin label understates them. Origin labels are outside what the verifier may change.",
+      "No leak found: the enriched background names no statute, no section number and no number of days, and the posting date is given as a bare fact.",
+      "The enriched facts are consistent with the amended section: the address for service is a Colombo address and 32-2022/s2(1)(b)(iv) requires an address in Sri Lanka, and the unregistered deed of transfer falls within interest as defined in 32-2022/s2(1)(c)(iii)."
+    ],
+    "duplicate_or_leak_issues": [
+      "Single question in the matter, so no duplication. The enriched background repeats the two original paragraphs verbatim with additions, so the original scenario is preserved."
+    ]
+  },
+  "lawyer_questions": [
+    "Was the Registration of Documents (Amendment) Act, No. 32 of 2022 in operation on 12 June 2025, and does the substituted sixty-day period in section 32(5) apply to a caveat registered before that Act came into force? If it was not in operation, the gold answer of sixty days is wrong and reverts to thirty.",
+    "Is the sixty days reckoned from the day of posting or from the day after, and does any general rule of reckoning displace the 11 August 2025 date in the draft conclusion?",
+    "Is section 32(4) indispensable to a one-mark answer to within how many days, or is the correct hop count 2 rather than 3?",
+    "Does the period run from posting even where the caveator is abroad, as the draft answer states, with no allowance for actual receipt?"
+  ]
+}

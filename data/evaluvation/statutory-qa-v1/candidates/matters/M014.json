@@ -1,0 +1,64 @@
+{
+  "benchmark_matter_id": "M014",
+  "source_matter_id": "P02-Q03-M02",
+  "grouping_key": "P02-Q03-M02",
+  "paper_no": 2,
+  "question_no": 3,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Sarath wishes to purchase a portion of a coconut estate situated in Kurunegala. He requests you to attest the Deed.",
+    "normalized": "Sarath wishes to purchase a portion of a coconut estate situated in Kurunegala. He requests you to attest the Deed.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P02-Q03-P02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M014-Q01",
+      "atomic_id": "P02-Q03-P02",
+      "part_uid": "paper-02/q3/ii",
+      "part_id": "ii",
+      "item_id": null,
+      "marks": 5,
+      "pdf_page": 6,
+      "question_original": "You are a Notary Licensed to Practise in Colombo. What steps should you take before drafting the Deed?",
+      "question_normalized": "You are a Notary Licensed to Practise in Colombo. What steps should you take before drafting the Deed?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Sarath wishes to purchase a portion of a coconut estate situated in Kurunegala. He requests you to attest the Deed.",
+      "effective_background_normalized": "Sarath wishes to purchase a portion of a coconut estate situated in Kurunegala. He requests you to attest the Deed.",
+      "source_quote": "(ii) Sarath wishes to purchase a portion of a coconut estate situated in Kurunegala. He requests\nyou to attest the Deed. You are a Notary Licensed to Practise in Colombo. What steps should\nyou take before drafting the Deed?",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "property_identity",
+        "party_identity",
+        "consideration_or_value"
+      ]
+    }
+  ],
+  "matter_reference_date": "2025-10",
+  "exam_session": "OCTOBER 2025",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

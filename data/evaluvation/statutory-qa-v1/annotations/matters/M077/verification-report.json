@@ -1,0 +1,117 @@
+{
+  "benchmark_matter_id": "M077",
+  "verifier": "verifier-M077",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:03:39Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M077-001",
+      "decision": "verified",
+      "note": "Rule (16)(a) excerpt is verbatim in 1-1907/s31 and applied in April 2020; the excerpt stops before the municipality and assessment number clause, which is now carried by PROV-M077-901."
+    },
+    {
+      "provision_id": "PROV-M077-002",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim, but the April 2020 text of rule (16)(b) ended with a proviso that Act No. 31 of 2022, s.16(9)(b) removed; the corpus holds only the post-2022 text, so the proviso in force at the matter date cannot be read."
+    },
+    {
+      "provision_id": "PROV-M077-003",
+      "decision": "verified",
+      "note": "Subsections (2) and (3) are verbatim and untouched by Act No. 50 of 1982, Act No. 48 of 2011 (which replaced only subsection (1)) or Act No. 21 of 2013 (subsection (6) only)."
+    },
+    {
+      "provision_id": "PROV-M077-004",
+      "decision": "partially_verified",
+      "note": "Subsection (5) is the text substituted by Act No. 50 of 1982, s.2(a), not untouched 1927 text as the temporal note asserts; applicability in April 2020 is unaffected."
+    },
+    {
+      "provision_id": "PROV-M077-005",
+      "decision": "verified",
+      "note": "Verbatim in 48-2011/s2 and in force from 2011, so it gives the s.13(1) standard applicable in April 2020."
+    },
+    {
+      "provision_id": "PROV-M077-006",
+      "decision": "partially_verified",
+      "note": "The excerpt is only the amending formula, not the substituted paragraph; the substituted paragraph in the corpus body also breaks off at \"section 2 of the Pradeshiya Sabha number\", so the 2011 wording of the municipality clause is only partly legible."
+    },
+    {
+      "provision_id": "PROV-M077-007",
+      "decision": "verified",
+      "note": "Rule (17)(a) is verbatim and was not amended by Act No. 31 of 2022 or Act No. 6 of 2024, both of which touch rule (17)(b) and (c) only."
+    },
+    {
+      "provision_id": "PROV-M077-901",
+      "decision": "verified",
+      "note": "Added by the verifier; excerpt checked verbatim and confirmed pre-2022 by the words Act No. 31 of 2022, s.16(9)(a) substituted."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M077-901",
+      "reason": "CL-M077-Q01-002 and the rule paragraph of the gold answer rely on the assessment number and street name requirement, which falls outside the excerpt quoted at PROV-M077-001. The clause is quoted here verbatim from 1-1907/s31 and confirmed to have stood in that form in April 2020."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M077-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "The provisions and the rule statement hold up, but the answer's primary application reads the facts against the question's own words (\"Anuk's divided block of land\"), and the indispensable rule (16)(b) is held in the corpus only in its post-2022 form, without the proviso in force in April 2020."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "scenario_reading",
+      "researcher_position": "On the stated facts the brothers still hold undivided one third shares of the 45 perch portion, so the Schedule must describe the whole portion and the deed convey an undivided one third; the divided block description is the alternative.",
+      "verifier_position": "Part (iii) as set describes the subject as \"Anuk's divided block of land\", so the description the question asks for is more likely the divided block defined by its own particular boundaries and extent under rule (16)(b) and s.13(2), with the undivided share as the alternative. The order of the two limbs in the gold answer may be inverted.",
+      "supporting_sources": [
+        "data/evaluvation/statutory-qa-v1/candidates/matters/M077.json (question_original and matter_background)",
+        "1-1907/s31 rule (16)(b)",
+        "23-1927/s13(2) and (3)"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "temporal_coverage",
+      "researcher_position": "No amendment event touches paragraph (b) of rule (16), so the corpus text is the April 2020 text.",
+      "verifier_position": "Act No. 31 of 2022, s.16(9)(b) substituted the words from \"which it is a share: Provided, however\" to the end of paragraph (b), so the April 2020 paragraph contained a proviso the corpus does not reproduce and whose effect on a post-partition description is unknown.",
+      "supporting_sources": [
+        "31-2022/s16",
+        "1-1907/s31"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M077-Q01-003 marked disputed: the rule it states is verbatim in the corpus, but the corpus holds only the post-2022 form of rule (16)(b), so the statement may be incomplete for April 2020.",
+      "CL-M077-Q01-009 marked disputed: the finding that Anuk can convey only an undivided one third is an inference from the background that conflicts with the question's description of \"Anuk's divided block of land\"."
+    ],
+    "temporal_issues": [
+      "Rule (16)(b) proviso removed by Act No. 31 of 2022, s.16(9)(b) and not held in the corpus (PROV-M077-002).",
+      "Registration of Documents Ordinance s.13(5) is the Act No. 50 of 1982 text, not untouched 1927 text (PROV-M077-004); this does not change the April 2020 position.",
+      "Act No. 21 of 2013, s.2 amends s.13(6) only (registration fee) and does not bear on the description requirement.",
+      "The corpus text of the 2011 substituted paragraph in 47-2011/s2 is truncated at \"section 2 of the Pradeshiya Sabha number\" (PROV-M077-006)."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Neither 1-1907 nor 23-1927 defines \"land\", \"deed\" or \"share\" in the corpus, so no definition section is indispensable; confirmed with defs.",
+      "The municipality, town and development area limb of rule (16)(a) was missing from the quoted excerpts and has been added as PROV-M077-901.",
+      "The proviso formerly closing rule (16)(b) is an exception that cannot be read from the corpus."
+    ],
+    "case_law_dependence": [
+      "None. The gold answer cites no case and the description requirement is wholly statutory."
+    ],
+    "enrichment_issues": [
+      "None. The question is a keep question and enrichment.applied is false."
+    ],
+    "duplicate_or_leak_issues": [
+      "None. Background is unchanged from the candidate file and no statute name, section number or conclusion is leaked into the facts."
+    ]
+  },
+  "lawyer_questions": [
+    "Does part (iii) presuppose that a divided block has already been allotted to Anuk, so that the Schedule should describe that block by its own boundaries and extent (and by its lot in the partition plan), rather than the whole 45 perch portion with an undivided one third conveyed?",
+    "What did the proviso at the end of Notaries Ordinance rule (16)(b), as it stood before Act No. 31 of 2022, s.16(9)(b), provide, and does it change how a post-partition block must be described?",
+    "Should the Schedule identify the block by the lot number and plan referred to in the final decree in D.C. Ratnapura 345/P, given that the Partition Law No. 21 of 1977 is outside the corpus?"
+  ]
+}

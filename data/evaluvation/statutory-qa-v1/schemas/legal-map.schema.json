@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://draftly.lk/schemas/statutory-qa-v1/legal-map.schema.json",
+  "title": "Per-matter legal map (statutory-qa-v1)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["benchmark_matter_id", "run_id", "produced_by", "matter_reference_date",
+               "matter_reference_date_basis", "provisions", "questions", "corpus_gaps"],
+  "properties": {
+    "benchmark_matter_id": {"type": "string", "pattern": "^M[0-9]{3}$"},
+    "run_id": {"type": "string"},
+    "produced_by": {
+      "type": "object",
+      "required": ["research_agent", "research_model"],
+      "properties": {
+        "research_agent": {"type": "string"},
+        "research_model": {"type": "string"},
+        "research_completed": {"type": ["string", "null"]},
+        "verification_agent": {"type": ["string", "null"]},
+        "verification_model": {"type": ["string", "null"]},
+        "verification_completed": {"type": ["string", "null"]}
+      }
+    },
+    "matter_reference_date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$"},
+    "matter_reference_date_basis": {"type": "string"},
+    "corpus_gaps": {"type": "array", "items": {"type": "string"}},
+    "provisions": {"type": "array", "items": {"$ref": "#/$defs/provision"}},
+    "questions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/question"}}
+  },
+  "$defs": {
+    "provision_id": {"type": "string", "pattern": "^PROV-M[0-9]{3}-[0-9]{3}$"},
+    "fact_id": {"type": "string", "pattern": "^FACT-M[0-9]{3}-Q[0-9]{2}-[0-9]{3}$"},
+    "provision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provision_id", "section_id", "act_id", "formal_title", "number_and_year",
+                   "section", "subsection", "relevant_excerpt", "why_relevant",
+                   "applicable_to_matter_date", "temporal_note", "verification_status"],
+      "properties": {
+        "provision_id": {"$ref": "#/$defs/provision_id"},
+        "section_id": {"type": "string", "description": "section_id from corpus/sections.jsonl"},
+        "act_id": {"type": "string"},
+        "formal_title": {"type": "string"},
+        "number_and_year": {"type": "string"},
+        "section": {"type": "string"},
+        "subsection": {"type": ["string", "null"]},
+        "relevant_excerpt": {"type": "string", "minLength": 20,
+                             "description": "verbatim substring of the corpus section body"},
+        "why_relevant": {"type": "string"},
+        "applicable_to_matter_date": {"type": "boolean"},
+        "temporal_note": {"type": "string"},
+        "verification_status": {"enum": ["proposed", "verified", "partially_verified", "rejected", "unresolved"]},
+        "verifier_note": {"type": ["string", "null"]}
+      }
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["benchmark_question_id", "authority_requirement", "authority_requirement_reason",
+                   "legal_issues", "indispensable_provision_ids", "supporting_provision_ids",
+                   "background_provision_ids", "legal_hop_count", "hop_count_basis", "reasoning_edges",
+                   "enrichment", "gold_answer_draft", "answer_claims", "research_status",
+                   "block_reason", "lawyer_validation_status"],
+      "properties": {
+        "benchmark_question_id": {"type": "string", "pattern": "^M[0-9]{3}-Q[0-9]{2}$"},
+        "authority_requirement": {"enum": ["statute_only", "mixed_statute_and_case", "case_only", "unclear"]},
+        "authority_requirement_reason": {"type": "string"},
+        "legal_issues": {
+          "type": "array", "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["issue_id", "issue", "status"],
+            "properties": {
+              "issue_id": {"type": "string", "pattern": "^ISS-M[0-9]{3}-Q[0-9]{2}-[0-9]{2}$"},
+              "issue": {"type": "string"},
+              "status": {"enum": ["proposed", "verified", "disputed"]}
+            }
+          }
+        },
+        "indispensable_provision_ids": {"type": "array", "items": {"$ref": "#/$defs/provision_id"}},
+        "supporting_provision_ids": {"type": "array", "items": {"$ref": "#/$defs/provision_id"}},
+        "background_provision_ids": {"type": "array", "items": {"$ref": "#/$defs/provision_id"}},
+        "legal_hop_count": {"type": "integer", "minimum": 0, "maximum": 8},
+        "hop_count_basis": {"type": "string"},
+        "reasoning_edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["from_provision_id", "to_provision_id", "relationship"],
+            "properties": {
+              "from_provision_id": {"$ref": "#/$defs/provision_id"},
+              "to_provision_id": {"$ref": "#/$defs/provision_id"},
+              "relationship": {"enum": ["defines", "qualifies", "excepts", "amends", "cross_references", "jointly_required", "procedurally_requires"]}
+            }
+          }
+        },
+        "enrichment": {
+          "type": "object",
+          "required": ["applied", "original_background", "enriched_background", "added_facts"],
+          "properties": {
+            "applied": {"type": "boolean"},
+            "original_background": {"type": "string"},
+            "enriched_background": {"type": ["string", "null"]},
+            "added_facts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["fact_id", "fact", "origin", "reason", "activates_provision_ids", "counterfactual_effect", "approval_status"],
+                "properties": {
+                  "fact_id": {"$ref": "#/$defs/fact_id"},
+                  "fact": {"type": "string"},
+                  "origin": {"enum": ["synthetic_neutral", "synthetic_decisive"]},
+                  "reason": {"type": "string"},
+                  "activates_provision_ids": {"type": "array", "items": {"$ref": "#/$defs/provision_id"}},
+                  "counterfactual_effect": {"type": "string"},
+                  "approval_status": {"const": "pending"}
+                }
+              }
+            }
+          }
+        },
+        "gold_answer_draft": {
+          "type": "object",
+          "required": ["issue", "rule", "application", "conclusion"],
+          "properties": {
+            "issue": {"type": "string"}, "rule": {"type": "string"},
+            "application": {"type": "string"}, "conclusion": {"type": "string"}
+          }
+        },
+        "answer_claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["claim_id", "claim_text", "claim_type", "supporting_provision_ids", "supporting_fact_ids", "support_strength", "verification_status"],
+            "properties": {
+              "claim_id": {"type": "string", "pattern": "^CL-M[0-9]{3}-Q[0-9]{2}-[0-9]{3}$"},
+              "claim_text": {"type": "string"},
+              "claim_type": {"enum": ["rule", "application", "conclusion"]},
+              "supporting_provision_ids": {"type": "array", "items": {"$ref": "#/$defs/provision_id"}},
+              "supporting_fact_ids": {"type": "array", "items": {"type": "string"}},
+              "support_strength": {"enum": ["direct", "combined", "inferential"]},
+              "verification_status": {"enum": ["proposed", "verified", "disputed", "rejected"]}
+            }
+          }
+        },
+        "research_status": {"enum": ["proposed_gold", "blocked_missing_authority", "blocked_temporal_uncertainty", "blocked_scenario_ambiguity", "reserved", "needs_legal_review"]},
+        "block_reason": {"type": ["string", "null"]},
+        "lawyer_validation_status": {"const": "pending"}
+      }
+    }
+  }
+}

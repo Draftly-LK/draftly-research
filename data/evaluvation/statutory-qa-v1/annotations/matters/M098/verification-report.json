@@ -1,0 +1,188 @@
+{
+  "benchmark_matter_id": "M098",
+  "verifier": "verifier-M098",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:24:05Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M098-001",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-002",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-003",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-004",
+      "decision": "partially_verified",
+      "note": "Wording, role and 1974 dating confirmed, but the excerpt carries a stray '1974]' marker from the consolidated source that is absent from the substituting text in 14-1974/s.2, so the excerpt should not be reproduced as the clean statutory wording."
+    },
+    {
+      "provision_id": "PROV-M098-005",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-006",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-007",
+      "decision": "partially_verified",
+      "note": "Section 2(6) is verbatim and does allow the Registrar-General to exercise a Registrar's powers, but it is section 2(2), not 2(6), that constitutes the offices of Registrar-General and Registrar; the why_relevant over-reads the subsection."
+    },
+    {
+      "provision_id": "PROV-M098-008",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-009",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-010",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-011",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim and the charge on transfers of Western Province immovable property is legible, but the corpus text is OCR-scrambled ('a transfer of situated in the immovable property Western Province') and nothing in the corpus records the section 1 Ministerial Order bringing the stamp duty Part into operation, so applicable_to_matter_date rests on an assumption."
+    },
+    {
+      "provision_id": "PROV-M098-012",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-013",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim, but section 106 says 'in the opinion of the Assessor', defined in the same section as a Provincial Assessor of Revenue; the why_relevant's 'the revenue officer' blurs that. The Commissioner's opinion reaches the definition only through section 104(4), added as PROV-M098-901."
+    },
+    {
+      "provision_id": "PROV-M098-014",
+      "decision": "verified",
+      "note": "Verbatim and correctly identifies the Commissioner. The question it leaves open - whether a Commissioner's opinion of valuation counts for the section 106 definition of 'value' - is answered by section 104(4), added as PROV-M098-901."
+    },
+    {
+      "provision_id": "PROV-M098-015",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-016",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-017",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-018",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M098-901",
+      "decision": "verified",
+      "note": "Added by the verifier. Excerpt checked verbatim against 6-1990/s104."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M098-901",
+      "reason": "Section 104(4) of the Western Province Financial Statute lets a Commissioner discharge any function assigned to an Assessor. It is indispensable to M098-Q03: section 48(1) charges duty on the value of the property conveyed, the section 106 definition of value is the price in the opinion of the Assessor, and the facts supply only the Commissioner of Revenue's opinion of valuation. Without section 104(4) the step from Rs. 7,500,000 to the statutory base is unsupported. Excerpt checked verbatim."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M098-Q02",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "Sections 14 and 35 of the Registration of Documents Ordinance were confirmed word for word, including that section 35(1) is the text substituted by section 3 of Act No. 50 of 1982 and that section 14(1) is the text substituted by section 2 of Law No. 14 of 1974. The tables of contents of every Registration of Documents amendment in the corpus, including the three the researcher did not list (Nos. 4 of 1974, 14 of 1974 and 48 of 2011), show no later amendment touching either section, so both were in force in October 2018. Eleven of the twelve claims verified; CL-M098-Q02-009 marked disputed. Hop count of 2 confirmed."
+    },
+    {
+      "benchmark_question_id": "M098-Q03",
+      "research_status_before": "blocked_missing_authority",
+      "research_status_after": "blocked_missing_authority",
+      "authority_requirement_after": "statute_only",
+      "note": "The block is confirmed. No ad valorem rate exists anywhere in the corpus: a grep for 'per centum' across 6-1990, 43-1982 and 12-2006 returns only penalty and refund percentages, and a grep for 'hundred thousand' in 6-1990 returns nothing. The base and the payer are now fully supported after adding PROV-M098-901. Hop count raised from 3 to 4. Ten of eleven claims verified; CL-M098-Q03-003 marked disputed for wording."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "omitted_alternative_remedy",
+      "researcher_position": "Section 39 (District Court power to cancel or rectify a registration) was considered and rejected in the research notes as confined to forgery and registration without authority, and it was left out of the legal map altogether.",
+      "verifier_position": "Section 39 also reaches an instrument registered in contravention of any provision of the Ordinance, and by section 14(2) a mis-folioed registration is not duly registered under Chapter III. The court route is therefore at least arguable and should appear as a background provision so that the gold answer's statement that no court order is required is a reasoned choice rather than a silent one.",
+      "supporting_sources": [
+        "23-1927/s39",
+        "23-1927/s14"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "claim_over_specification",
+      "researcher_position": "CL-M098-Q02-009 states that the applicant must produce Deed No. 351, Plan No. 251, Plan No. 255 and an extract of Vol/Folio A 350/25.",
+      "verifier_position": "Section 35(1) requires only that the error be shown to the satisfaction of the Registrar-General. The particular list of documents is Land Registry practice and is supported by no provision in the corpus; the claim is marked disputed rather than deleted.",
+      "supporting_sources": [
+        "23-1927/s35"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "definition_paraphrase",
+      "researcher_position": "CL-M098-Q03-003 renders the section 106 definition of value as the price in the opinion of the revenue officer.",
+      "verifier_position": "Section 106 says in the opinion of the Assessor, and defines Assessor as a Provincial Assessor of Revenue, a different office from the Commissioner. A gold claim should say Assessor and reach the Commissioner through section 104(4).",
+      "supporting_sources": [
+        "6-1990/s106",
+        "6-1990/s104"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M098-Q02-009: the list of documents to be produced to the Registrar-General is not required by section 35(1) or any other provision in the corpus.",
+      "CL-M098-Q03-003: 'revenue officer' is not the statutory term; section 106 says Assessor."
+    ],
+    "temporal_issues": [
+      "Section 1 of the Western Province Financial Statute leaves commencement to Ministerial Order made Part by Part and no Order is in the corpus, so applicable_to_matter_date=true for every 6-1990 provision (PROV-M098-011 to 016, 018 and 901) rests on an assumption rather than a corpus finding. Recorded on PROV-M098-011.",
+      "No temporal error was found in the Registration of Documents chain: section 35(1) has been in its 1982 form since Act No. 50 of 1982 and section 14(1) in its 1974 form since Law No. 14 of 1974; Acts Nos. 5 of 1990, 48 of 2011, 21 of 2013, 32 of 2022 and 18 of 2024 touch other sections only. Section 5 of Act No. 32 of 2022 amends the Second Schedule and post-dates the matter, which PROV-M098-009 correctly excludes.",
+      "The researcher's amendment sweep missed Laws Nos. 4 of 1974 and 14 of 1974 and Act No. 48 of 2011; the verifier checked all three and none disturbs the conclusion."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Section 104(4) of the Western Province Financial Statute was missing and has been added as PROV-M098-901.",
+      "Section 25 of the Registration of Documents Ordinance defines instrument for Chapter V, which contains section 35. It is confirmatory here because Deed No. 351 plainly affects land, so it was not added.",
+      "Section 15 of the Registration of Documents Ordinance (registration is effected by entering the prescribed particulars in the proper folio) reinforces the proper-folio rule and is a candidate supporting provision for M098-Q02.",
+      "Sections 62 and 79 of the Western Province Financial Statute (adjudication on the opinion of the Assessor, and appeal to the Commissioner against that opinion) are the statutory routes by which an opinion of valuation is given and challenged; neither is in the map."
+    ],
+    "case_law_dependence": [
+      "None. Neither gold answer cites or needs case law; both turn on the text of the statutes."
+    ],
+    "enrichment_issues": [
+      "None. enrichment.applied is false for both questions and no facts were added."
+    ],
+    "duplicate_or_leak_issues": [
+      "None. No question text or background was altered, and no statute name, section number or conclusion has been leaked into the background."
+    ]
+  },
+  "lawyer_questions": [
+    "Is section 104(4) of the Western Province Financial Statute the right bridge from the Commissioner of Revenue's opinion of valuation to the opinion of the Assessor in the section 106 definition of value, or does provincial practice treat the Commissioner's opinion of valuation for stamp duty as resting on some other footing?",
+    "Should the folio error be corrected under section 35 alone, or is section 39 (District Court rectification of a registration made in contravention of the Ordinance) an available alternative that the gold answer must acknowledge?",
+    "What was the stamp duty rate in force in the Western Province in October 2018 for a transfer of immovable property, and under which Gazette Order, so that M098-Q03 can be unblocked?",
+    "Does section 35(1) require the applicant to produce any particular documents, or is the list in CL-M098-Q02-009 practice only?"
+  ]
+}

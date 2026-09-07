@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://draftly.lk/schemas/legal-qa-v1/authority.schema.json",
+  "title": "Per-matter authority file (candidate-authorities.json / verified-authorities.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["benchmark_matter_id", "run_id", "stage", "produced_by_agent", "authorities", "negative_retrieval"],
+  "properties": {
+    "benchmark_matter_id": { "$ref": "#/$defs/matter_id" },
+    "run_id": { "type": "string", "minLength": 1 },
+    "stage": { "enum": ["authorities_candidate", "authorities_verified"] },
+    "produced_by_agent": { "type": "string", "minLength": 1 },
+    "matter_reference_date": {
+      "type": ["string", "null"],
+      "description": "The date the matter's law must be assessed at (ISO date or year), with a note on how it was derived. Null when the scenario is undated."
+    },
+    "matter_reference_date_basis": { "type": ["string", "null"] },
+    "authorities": { "type": "array", "items": { "$ref": "#/$defs/authority" } },
+    "negative_retrieval": {
+      "type": "array",
+      "description": "Searches that returned nothing usable. Never omit failed searches.",
+      "items": {
+        "type": "object",
+        "required": ["query", "method", "result"],
+        "properties": {
+          "query": { "type": "string" },
+          "method": { "type": "string" },
+          "corpus": { "type": "string" },
+          "result": { "type": "string" },
+          "benchmark_question_ids": { "type": "array", "items": { "$ref": "#/$defs/question_id" } }
+        }
+      }
+    },
+    "source_conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["authority_id", "description", "versions"],
+        "properties": {
+          "authority_id": { "$ref": "#/$defs/authority_id" },
+          "description": { "type": "string" },
+          "versions": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": ["source_path", "excerpt"],
+              "properties": {
+                "source_path": { "type": "string" },
+                "source_hash": { "type": ["string", "null"] },
+                "excerpt": { "type": "string" }
+              }
+            }
+          },
+          "resolution": { "const": "unresolved_requires_legal_review" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "matter_id": { "type": "string", "pattern": "^M[0-9]{3}$" },
+    "question_id": { "type": "string", "pattern": "^M[0-9]{3}-Q[0-9]{2}$" },
+    "authority_id": { "type": "string", "pattern": "^AUTH-M[0-9]{3}-[0-9]{3}$" },
+    "source_tier": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "1 official Gazette/legislative source; 2 repository source package traceable to an authoritative text; 3 structurally verified finalized tree; 4 other local parsed source; 5 secondary website (candidate only)."
+    },
+    "verification_status": {
+      "enum": ["candidate", "verified", "partially_verified", "rejected", "unresolved", "original_judgment_required"]
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authority_id", "authority_type", "title", "section", "subsection", "case_citation",
+        "candidate_source_paths", "retrieval_methods", "retrieval_scores", "candidate_reason",
+        "proposed_by_agent", "benchmark_question_ids", "verification_status", "verification"
+      ],
+      "properties": {
+        "authority_id": { "$ref": "#/$defs/authority_id" },
+        "authority_type": {
+          "enum": ["statute_provision", "statute_definition", "statute_schedule", "amendment", "subsidiary_legislation", "case", "common_law_principle"]
+        },
+        "title": { "type": "string", "minLength": 1, "description": "Formal enactment title or formal case name." },
+        "enactment_number": { "type": ["string", "null"], "description": "e.g. 'Ordinance No. 1 of 1907', 'Act No. 43 of 1982'." },
+        "section": { "type": ["string", "null"] },
+        "subsection": { "type": ["string", "null"] },
+        "case_citation": { "type": ["string", "null"] },
+        "court": { "type": ["string", "null"] },
+        "decision_date": { "type": ["string", "null"] },
+        "candidate_source_paths": { "type": "array", "items": { "type": "string" } },
+        "retrieval_methods": {
+          "type": "array",
+          "items": {
+            "enum": ["direct_citation_lookup", "bm25", "dense", "graph_expansion", "hierarchical_act_section", "amendment_metadata", "case_title_search", "case_fulltext_search", "extracted_holding", "case_statute_link", "manual_corpus_browse", "named_in_question"]
+          }
+        },
+        "retrieval_scores": { "type": "object", "additionalProperties": { "type": ["number", "string", "null"] } },
+        "candidate_reason": { "type": "string", "minLength": 1 },
+        "proposed_by_agent": { "type": "string", "minLength": 1 },
+        "benchmark_question_ids": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/question_id" } },
+        "necessity_claimed": { "enum": ["indispensable", "supporting", "undetermined"] },
+        "verification_status": { "$ref": "#/$defs/verification_status" },
+        "verification": {
+          "type": ["object", "null"],
+          "description": "Null until an independent verifier has examined the authority. Must be filled when verification_status != candidate.",
+          "additionalProperties": false,
+          "required": [
+            "verifying_agent", "source_tier", "source_path", "source_hash", "locator", "exact_excerpt",
+            "effective_from", "effective_to", "applicable_version_for_matter_date", "amendment_chain",
+            "source_status", "structural_verification_status", "legal_verification_status",
+            "supports_claimed_proposition", "necessity_assessed", "notes"
+          ],
+          "properties": {
+            "verifying_agent": { "type": "string", "minLength": 1 },
+            "source_tier": { "$ref": "#/$defs/source_tier" },
+            "source_path": { "type": "string", "minLength": 1, "description": "Repo-relative path or URL of the text actually read." },
+            "source_hash": { "type": ["string", "null"], "description": "sha256 of the local source file, null for a URL." },
+            "locator": {
+              "type": "object",
+              "description": "Where in the source the excerpt sits: page, node id, paragraph, line range.",
+              "properties": {
+                "page": { "type": ["integer", "string", "null"] },
+                "node_id": { "type": ["string", "null"] },
+                "paragraph": { "type": ["string", "integer", "null"] },
+                "line_range": { "type": ["string", "null"] },
+                "json_pointer": { "type": ["string", "null"] }
+              }
+            },
+            "exact_excerpt": { "type": "string", "minLength": 1, "description": "Verbatim text copied from the source at the locator." },
+            "excerpt_is_verbatim_substring_of_source": { "type": "boolean" },
+            "effective_from": { "type": ["string", "null"] },
+            "effective_to": { "type": ["string", "null"], "description": "Null when still in force or unknown; say which in notes." },
+            "applicable_version_for_matter_date": {
+              "enum": ["current_text_applicable", "current_text_superseded_since_event", "history_unknown", "not_applicable_case"]
+            },
+            "amendment_chain": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["amending_act", "year"],
+                "properties": {
+                  "amending_act": { "type": "string" },
+                  "year": { "type": ["integer", "string"] },
+                  "operation": { "type": ["string", "null"] },
+                  "source_path": { "type": ["string", "null"] }
+                }
+              }
+            },
+            "source_status": { "type": ["string", "null"], "description": "Copied from the source package/registry; never invented." },
+            "structural_verification_status": { "type": ["string", "null"] },
+            "legal_verification_status": { "type": ["string", "null"] },
+            "supports_claimed_proposition": { "enum": ["yes", "partially", "no", "cannot_determine"] },
+            "holding_classification": {
+              "type": ["string", "null"],
+              "enum": ["holding", "dicta", "party_argument", "background", "not_a_case", null]
+            },
+            "case_still_applicable": { "type": ["string", "null"] },
+            "necessity_assessed": { "enum": ["indispensable", "supporting", "not_needed", "undetermined"] },
+            "omitted_authority_needed": { "type": ["string", "null"], "description": "Any authority the verifier thinks is missing." },
+            "notes": { "type": "string" }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "verification_status": { "const": "candidate" } } },
+          "then": { "properties": { "verification": { "type": "null" } } },
+          "else": { "properties": { "verification": { "type": "object" } } }
+        },
+        {
+          "if": { "properties": { "authority_type": { "const": "case" } } },
+          "then": { "required": ["case_citation"], "properties": { "case_citation": { "type": "string", "minLength": 1 } } }
+        }
+      ]
+    }
+  }
+}

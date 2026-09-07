@@ -1,0 +1,66 @@
+{
+  "benchmark_matter_id": "M111",
+  "source_matter_id": "P16-Q05-M02",
+  "grouping_key": "P16-Q05-M02",
+  "paper_no": 16,
+  "question_no": 5,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "A Deed of Partition has been executed before 2 Notaries. The land is situated in Kurunegala and the Deed was prepared by Nimal Perera a Notary practicing in Kurunegala. Two parties to the deed executed the deed before him. The 3rd party was residing in Kandy and wanted the Deed to be sent to Notary Kamal Guneratne a Notary practicing in Kandy. The 3rd party executed the Deed in Kandy.",
+    "normalized": "A Deed of Partition has been executed before 2 Notaries. The land is situated in Kurunegala and the Deed was prepared by Nimal Perera a Notary practicing in Kurunegala. Two parties to the deed executed the deed before him. The 3rd party was residing in Kandy and wanted the Deed to be sent to Notary Kamal Guneratne a Notary practicing in Kandy. The 3rd party executed the Deed in Kandy.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P16-Q05-PB"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M111-Q01",
+      "atomic_id": "P16-Q05-PB",
+      "part_uid": "paper-16/q5/B",
+      "part_id": "B",
+      "item_id": null,
+      "marks": 5,
+      "pdf_page": 66,
+      "question_original": "What are the duties of Nimal Perera and Kamal Guneratne regarding the deed executed before them?",
+      "question_normalized": "What are the duties of Nimal Perera and Kamal Guneratne regarding the deed executed before them?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "A Deed of Partition has been executed before 2 Notaries. The land is situated in Kurunegala and the Deed was prepared by Nimal Perera a Notary practicing in Kurunegala. Two parties to the deed executed the deed before him. The 3rd party was residing in Kandy and wanted the Deed to be sent to Notary Kamal Guneratne a Notary practicing in Kandy. The 3rd party executed the Deed in Kandy.",
+      "effective_background_normalized": "A Deed of Partition has been executed before 2 Notaries. The land is situated in Kurunegala and the Deed was prepared by Nimal Perera a Notary practicing in Kurunegala. Two parties to the deed executed the deed before him. The 3rd party was residing in Kandy and wanted the Deed to be sent to Notary Kamal Guneratne a Notary practicing in Kandy. The 3rd party executed the Deed in Kandy.",
+      "source_quote": "B. A Deed of Partition has been executed before 2 Notaries. The land is situated in Kurunegala and the Deed was prepared by Nimal Perera a Notary practicing in Kurunegala. Two parties to the deed executed the deed before him. The 3rd party was residing in Kandy and wanted the Deed to be sent to Notary Kamal Guneratne a Notary practicing in Kandy. The 3rd party executed the Deed in Kandy. What are the duties of Nimal Perera and Kamal Guneratne regarding the deed executed before them? (5 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "review",
+        "candidate_action": "keep",
+        "confidence": 0.78,
+        "flags": [
+          "lead_in_recovered_from_quote",
+          "stem_mismatch_short_notes"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "extraction_quality=review",
+        "confidence=0.78"
+      ],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2018-04",
+  "exam_session": "APRIL 2018",
+  "matter_tier": "B",
+  "tier_a_question_count": 0
+}

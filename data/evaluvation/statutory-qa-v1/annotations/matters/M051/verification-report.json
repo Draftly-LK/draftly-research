@@ -1,0 +1,161 @@
+{
+  "benchmark_matter_id": "M051",
+  "verifier": "verifier-M051",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:51:47Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M051-001",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M051-002",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M051-003",
+      "decision": "verified",
+      "note": "Checked against 6-1990/s106: the head-word \"value\" and paragraph (c) are present and the excerpt is verbatim; OCR drops the \"(i)\" enumerator of the first limb, but the two-limb structure and \"whichever price is the lower\" are confirmed by the parallel wording of paragraph (b), and the January 1978 acquisition puts this gift in paragraph (c) rather than (b)."
+    },
+    {
+      "provision_id": "PROV-M051-004",
+      "decision": "verified",
+      "note": "Head-word confirmed: the corpus defined_terms index for 6-1990/s106 lists \"Transfer\", and 6-1990/s37 carries a defines edge to s106, so the researcher's inference from alphabetical position is correct."
+    },
+    {
+      "provision_id": "PROV-M051-005",
+      "decision": "verified",
+      "note": "Head-word confirmed: the corpus defined_terms index for 6-1990/s106 lists \"gift\", and 6-1990/s48 carries a defines edge to s106 for that term."
+    },
+    {
+      "provision_id": "PROV-M051-006",
+      "decision": "partially_verified",
+      "note": "Correction: the head-word was not lost - the body of s106 reads 'Assessor\" means a Provincial Assessor of Revenue appointed for the purposes of and includes a Senior Assessor of Revenue appointed for the purposes of this statute'; words are dropped after \"for the purposes of\", and s106 separately defines \"Provincial Assessor\" as an Assessor of Revenue appointed for the purposes of this Statute, so the excerpt is sound for background use only."
+    },
+    {
+      "provision_id": "PROV-M051-007",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M051-008",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M051-009",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M051-010",
+      "decision": "partially_verified",
+      "note": "Role corrected to primary incidence only: s52(1) makes every person executing an instrument chargeable with duty and not duly stamped liable to the Commissioner, and s52(3) gives that effect notwithstanding s51, with a right of recovery under s52(2) against the person liable under s51, so s51(a) does not exhaust who can be made to pay. Added PROV-M051-901 for s52."
+    },
+    {
+      "provision_id": "PROV-M051-011",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M051-012",
+      "decision": "partially_verified",
+      "note": "The excerpt quotes only paragraph (1) of s39. I read the whole of s39 in the corpus (Government instruments, listed court documents, wills) and confirm it contains no exemption for a gift between family members, so the negative proposition rests on the section as a whole rather than on the quoted words."
+    },
+    {
+      "provision_id": "PROV-M051-013",
+      "decision": "verified",
+      "note": "Confirmed against 12-2006 s3 and s4: duty under that Act is charged only on a \"specified instrument\", and the s4 list (affidavit, insurance policy, notarial warrant, licence, credit-card claim, share certificate, bond or mortgage, promissory note, lease or hire, receipt or discharge) contains no conveyance or gift of land, which matches the s13 carve-out."
+    },
+    {
+      "provision_id": "PROV-M051-901",
+      "decision": "verified",
+      "note": "Added by the verifier; excerpt checked verbatim against 6-1990/s52."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M051-901",
+      "reason": "6-1990/s52(1) and (3). The map's account of who pays rested on s51(a) alone. Section 52(1) makes every person executing an instrument chargeable with duty and not duly stamped liable to the Commissioner for the duty and any penalty, and s52(3) gives that effect notwithstanding s51, with a right of recovery under s52(2). Added as a supporting provision on M051-Q02 and as an 'excepts' edge from PROV-M051-010, so that the statement that the donee alone bears the duty is read subject to it."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M051-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "Both indispensable provisions (s48(1) and the definition of 'value' in s106) verify verbatim and the chain holds. Section 48(1) sends the Assessor to 'value'; paragraph (c) of the s106 definition applies because the donor acquired in January 1978, after March 31, 1977, and requires the lower of the open-market price at acquisition plus post-acquisition improvements and the open-market price at the date of the gift. The Rs.1,060,000 result follows on the stated facts, and the draft correctly treats the scenario figures as evidence of the Assessor's opinion rather than as binding on him. Hop count of 2 confirmed. No case law is needed or cited."
+    },
+    {
+      "benchmark_question_id": "M051-Q02",
+      "research_status_before": "blocked_missing_authority",
+      "research_status_after": "blocked_missing_authority",
+      "authority_requirement_after": "statute_only",
+      "note": "The block is well founded and I re-tested it independently: s37 charges duty 'at the prescribed rate', s77(1)(a) leaves the rate to Gazette regulations, s76 covers only stamp descriptions and reciprocal exemptions, and no rate for the Western Province appears anywhere in the corpus. The chargeable value of Rs.1,060,000 and the mode of calculation are verified; only the percentage is missing. One claim (CL-M051-Q02-006) was downgraded to disputed for its slab-by-slab assumption."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "scope_of_authority_for_banded_calculation",
+      "researcher_position": "The duty is the chargeable value multiplied by the prescribed rate, 'applied slab by slab where the Order prescribes different rates for successive bands of value' (CL-M051-Q02-006), presented as an application of s37.",
+      "verifier_position": "Section 37 authorises only that 'Different rates may be prescribed in respect of different classes or categories of instruments'. A banded structure across successive slabs of the value of one instrument is not authorised by the corpus text; it is an assumption about the Gazette Order that is absent from the corpus. Claim marked disputed; the gold prose already states the assumption conditionally, so no prose was rewritten.",
+      "supporting_sources": [
+        "6-1990/s37",
+        "6-1990/s77"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "completeness_of_incidence_of_duty",
+      "researcher_position": "Section 51(a) settles who must find the money: on a Deed of Gift the duty falls on the grantee, that is the daughter as donee, unless the deed provides otherwise.",
+      "verifier_position": "Section 51(a) fixes primary incidence only. Section 52(1) makes every person executing an unstamped instrument, the donor included, liable to the Commissioner for the duty and any penalty, and s52(3) applies notwithstanding s51. PROV-M051-010 marked partially_verified and s52 added as PROV-M051-901.",
+      "supporting_sources": [
+        "6-1990/s51",
+        "6-1990/s52"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "corpus_gap_overstated",
+      "researcher_position": "corpus_gaps entry 2 states that the head-words of the definitions of 'transfer', 'gift' and 'Assessor' in s106 were lost in extraction and had to be inferred from alphabetical position.",
+      "verifier_position": "The corpus carries a defined_terms index on 6-1990/s106 that lists 'Transfer' and 'gift' explicitly, and the body of s106 retains the head-word before the Assessor definition. The researcher's inference was correct and the gap is narrower than stated: only the words after 'appointed for the purposes of' in the Assessor definition are actually missing. The corpus_gaps text was left as the researcher wrote it.",
+      "supporting_sources": [
+        "6-1990/s106"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M051-Q02-006: the slab-by-slab mode of calculation is not supported by s37, which permits different rates by class or category of instrument, not by band of value. Marked disputed rather than rejected because the claim is framed conditionally on the terms of an Order that is not in the corpus."
+    ],
+    "temporal_issues": [
+      "None found. Every provision relied on comes from Statute No. 6 of 1990 or Act No. 12 of 2006, both in force well before 2021-10, and the corpus records latest_change_year as null for each section used. No later amendment was wrongly relied on and no earlier version was needed.",
+      "Residual risk the corpus cannot close: it holds no Western Province amending statute at all, so a provincial amendment to ss 37, 48 or 106 between 1990 and 2021 could not be ruled out. The March 31, 1977 cut-off inside the s106 definition of 'value' is a fixed statutory date, not a commencement date, and was applied correctly."
+    ],
+    "missing_definitions_or_exceptions": [
+      "6-1990/s52 (liability of other parties) was missing and has been added as PROV-M051-901.",
+      "6-1990/s48(3), under which property gifted subject to a reservation is valued as if gifted without it, is discussed in the M051-Q01 gold prose but not recorded as a provision entry. It sits inside the same section id as PROV-M051-002 and does not bite on these facts, so no entry was added; a lawyer may want it recorded if the reservation point stays in the answer.",
+      "6-1990/s79 gives an appeal to the Provincial Commissioner against an opinion given under s62, within thirty days. Not indispensable to how the Assessor arrives at the value, but it is the remedy if his opinion is disputed and it is absent from the map.",
+      "The exemption claim CL-M051-Q02-003 rests on the whole of s39, not on the single paragraph quoted in PROV-M051-012. I read the full section and confirm it contains no family-gift exemption; the provision is marked partially_verified for that reason."
+    ],
+    "case_law_dependence": [
+      "None. Neither answer needs judicial authority: the valuation test, the base, the incidence and the time and mode of payment are all statutory. The only non-statutory element is the appraisal technique by which the Assessor forms his opinion of an open-market price, and the draft correctly treats that as administrative practice rather than supplying a rule the corpus does not contain."
+    ],
+    "enrichment_issues": [
+      "None. Both questions are 'keep' in the candidate file and carry enrichment.applied = false with no added facts, which matches."
+    ],
+    "duplicate_or_leak_issues": [
+      "None. The two questions are distinct (valuation method versus computation of duty), the background is unchanged from the candidate file, and no statute name, section number or conclusion is leaked into any background text."
+    ]
+  },
+  "lawyer_questions": [
+    "Which stamp-duty rate Order or regulation made under s37 read with s77 of the Western Province Financial Statute No. 6 of 1990 was in force in October 2021, and is it banded by value? This is the only thing standing between M051-Q02 and a complete answer, and the examiner plainly expected candidates to apply it to Rs.1,060,000.",
+    "Confirm against the printed Statute that paragraph (c) of the s106 definition of 'value' has two numbered limbs: (i) the price at acquisition increased by post-acquisition improvements, and (ii) the price at the date of the gift, whichever is lower. The corpus copy has lost the '(i)' enumerator, and the whole Rs.1,060,000 figure turns on that structure.",
+    "Confirm that no Western Province amending statute between 1990 and 2021 touched ss 37, 48 or 106. The corpus holds no provincial amending enactment at all, so this could not be checked from corpus text.",
+    "Is it right to treat the Rs.160,000 paid in January 1978 as the Assessor's opinion of the open-market price at that date, or would an Assessor in practice value the land afresh as at January 1978 and reach a different first limb?"
+  ]
+}

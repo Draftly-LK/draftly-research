@@ -1,0 +1,767 @@
+{
+  "benchmark_matter_id": "M071",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M071",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:46:14Z",
+    "verification_agent": "verifier-M071",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:58:08Z"
+  },
+  "matter_reference_date": "2020-04",
+  "matter_reference_date_basis": "exam_session APRIL 2020 recorded in candidates/matters/M071.json",
+  "corpus_gaps": [
+    "The corpus holds the Notaries Ordinance in a consolidated edition that already carries Notaries (Amendment) Act No. 31 of 2022 and No. 6 of 2024. There is no April 2020 snapshot, so every rule relied on was checked individually against 31-2022 s.16 and 6-2024 s.3: rules (8), (12), (18), (20)(a), (20)(c), (22), (23), (24), (25), (26)(c), (28) and (29) and sections 4A, 9, 32 and 33 were not altered by those Acts.",
+    "Section 34 in the corpus is the text substituted by Notaries (Amendment) Act No. 31 of 2022 s.17, so the penalty figures do not represent April 2020 law, and the fine levels set by the Increase of Fines Act No. 12 of 2005 are not separately available as an as-at-2020 text. PROV-M071-019 is therefore supporting only and is marked not applicable to the matter date.",
+    "The corpus has no rules or regulations made under section 36 of the Notaries Ordinance and no searchable Second Schedule, so the prescribed attestation Form E and list Form F 1 referred to in rules (21) and (26) could not be quoted.",
+    "Partition-specific law outside the Notaries Ordinance was not relied on: the Partition Law is absent from the corpus, and the Prevention of Frauds Ordinance section 2 in the corpus is the text as amended in 2022 and 2024, not the April 2020 text. The question is expressly confined to the Notaries Ordinance, so this does not block the answer."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M071-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (12)",
+      "relevant_excerpt": "(12) He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+      "why_relevant": "The core rule. A notary may attest only signatures placed before him: the executant and the witnesses must sign in his presence and in the presence of one another, and he must sign in their presence. Nimal Perera therefore cannot attest the bedridden father's signature placed in Kandy before another notary.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (22)",
+      "relevant_excerpt": "(22) He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice nor authenticate or attest any deed or instrument drawn in any language other than that in which he is authorized to practice.",
+      "why_relevant": "Territorial limit on attestation. A notary authorised for Colombo cannot attest in Kandy, so Nimal Perera cannot cure the problem by travelling to the father.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (25)(a)",
+      "relevant_excerpt": "(25) Where any deed or instrument is executed or acknowledged before more than one notary- (a) the notary who first attests such deed or instrument shall comply with all the requirements of rule (20), and every other notary attesting such deed or instrument shall comply with the requirements of paragraphs (a) to (e) of the aforesaid rule and the provisions of paragraph (g) in respect of erasures, alterations and interpolations made in the signatures attested by him or in his serial number;",
+      "why_relevant": "The Ordinance expressly contemplates one deed executed before more than one notary, and allocates the attestation duties between the notary who first attests and every other attesting notary. This is the mechanism that makes the proposed two-notary execution lawful.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (25)(b)",
+      "relevant_excerpt": "(b) every notary attesting the deed or instrument shall number such deed or instrument in accordance with the provisions of rule (23);",
+      "why_relevant": "Each attesting notary must give the deed a number in his own consecutive series, so the deed will bear two numbers, one from the Colombo notary and one from the Kandy notary.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-005",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (25)(c)-(d)",
+      "relevant_excerpt": "(c) the notary who first attests such deed or instrument shall preserve as his protocol the draft or copy referred to in rule (24), and shall comply with the requirements of that rule, and every other notary attesting such deed or instrument shall supply himself with a certified copy of the deed or instrument, which shall be deemed to be his protocol for the purposes of that rule; and (d) every notary attesting such deed shall, in addition, as far as possible, comply with the other provisions of section 31.",
+      "why_relevant": "Allocates the protocol: the notary who first attests keeps the protocol under rule (24); the other notary must supply himself with a certified copy which is deemed his protocol. Both must otherwise comply with section 31 as far as possible.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-006",
+      "section_id": "1-1907/s32",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "32",
+      "subsection": "(2) chapeau and (i)",
+      "relevant_excerpt": "(2) In the case of any deed or instrument which is to be executed by two or more parties, both or all of whom, as the case may be, do not sign the deed or instrument at the same time and place- (i) the deed or instrument shall, for the purposes of the application of rules (6), (7), (23) and (25) set out in section 31, be deemed to be executed or acknowledged at the time when it is first signed by a party, or by two or more parties at the same time and place;",
+      "why_relevant": "The special-case provision for exactly this fact pattern: parties who do not sign at the same time and place. It fixes the time of execution for rules (6), (7), (23) and (25) at the first signing.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section unamended since enactment (no amendment events in the corpus); in force at April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-007",
+      "section_id": "1-1907/s32",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "32",
+      "subsection": "(2)(ii)-(iii)",
+      "relevant_excerpt": "(ii) the deed or instrument shall, for the purposes of the application of rules (18) and (20) set out in section 31, be deemed to be executed or acknowledged whenever it is signed by a party, or by two or more parties at the same time and place; and (iii) the provisions of rule (19) set out in section 31, shall apply after the deed or instrument is first signed by a party, or by two or more parties at the same time and place.",
+      "why_relevant": "For the date and place rule (18) and the attestation rule (20) the deed is deemed executed on each occasion of signing, so each notary dates and attests his own execution; rule (19), which bars alteration after signature, bites from the first signing.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section unamended since enactment (no amendment events in the corpus); in force at April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-008",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (28)",
+      "relevant_excerpt": "(28) Where any deed or instrument other than a will or codicil shall be executed or acknowledged by two or more parties before more than one notary, the duplicate of such deed or instrument shall be delivered or transmitted by the notary who first attests such deed or instrument to the Registrar of Lands of the district in which he resides; and it shall not be necessary for the other notary or notaries employed in the execution of such deed or instrument to deliver or transmit any duplicate thereof to such registrar.",
+      "why_relevant": "Where two or more parties execute before more than one notary, only the notary who first attests transmits the duplicate to his district Registrar of Lands; the other notary need not.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-009",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (26)(c)(i)",
+      "relevant_excerpt": "(i) where any deed or instrument which is to be executed or acknowledged by two or more parties is signed during any month by one or more, as the case may be, of such parties, the notary shall, notwithstanding that the deed or instrument has not been signed by all such-parties, include such deed or instrument in the list required to be delivered or transmitted under paragraph (a)",
+      "why_relevant": "A part-executed deed must still be included in the monthly list, and the duplicate produced for inspection if the Registrar of Lands calls for it. Relevant because the deed will be incomplete between the two executions.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim, but the corpus consolidated text of section 31 has lost the \"(26)\" and paragraph \"(a)/(c)\" markers (the passage runs straight on after rule (25)(d)), so the subsection label \"rule (26)(c)(i)\" is reconstructed from the cross-references in 6-2024 s.3(8) and section 34(2) rather than read off the corpus; the excerpt also stops before the words \"and shall, if called upon so to do ... produce the duplicate ... for inspection\", which claim CL-M071-Q01-009 relies on and which are present in the corpus body."
+    },
+    {
+      "provision_id": "PROV-M071-010",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (26)(c)(ii)",
+      "relevant_excerpt": "(ii) where any such deed or instrument is not signed by all the parties thereto before the expiry of a period of three months from the date on which it is first signed by one of such parties, the notary shall, if called upon so to do by written notice served on him personally or by registered post and signed by the Registrar of Lands of the district in which the notary resides, deliver or transmit to the registrar the duplicate of such deed or instrument;",
+      "why_relevant": "Sets the outer limit for completing a split execution: if all parties have not signed within three months of the first signature, the notary may be called on to deliver the duplicate to the registrar.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and unaffected by 31-2022 s.16 or 6-2024 s.3, but the subsection label \"rule (26)(c)(ii)\" is reconstructed: the corpus consolidated text does not print the \"(26)\" or \"(c)\" markers."
+    },
+    {
+      "provision_id": "PROV-M071-011",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (18)",
+      "relevant_excerpt": "(18) He shall correctly insert in letters in every deed or instrument executed before him the day, month, and year on which and the place where the same is executed, and shall sign the same.",
+      "why_relevant": "Each notary must insert in letters the day, month and year and the place of execution, so the Colombo and Kandy executions must be separately and correctly dated and located on the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-012",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20) chapeau and (a)",
+      "relevant_excerpt": "(20) He shall without delay duly attest every deed or instrument which shall be executed or acknowledged before him, and shall sign and seal such attestation. In such attestation he shall state- (a) that the said deed or instrument was signed by the party and the witnesses thereto in his presence and in the presence of one another;",
+      "why_relevant": "Each notary must attest without delay, sign and seal, and state that the party and the witnesses signed in his presence and in the presence of one another. Each notary can only certify the execution he actually witnessed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-013",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20)(c)",
+      "relevant_excerpt": "(c) the day, month, and year on which and the place where the said deed or instrument was executed or acknowledged, and the full names of the attesting witnesses and their residences;",
+      "why_relevant": "The attestation must record the date and place of the execution and the attesting witnesses, which is what keeps the two separate executions distinguishable on the face of the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-014",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (8)",
+      "relevant_excerpt": "(8) He shall not authenticate or attest any deed or instrument to which at least two witnesses have not subscribed their signatures in letters.",
+      "why_relevant": "At least two witnesses must subscribe. Each of the two executions, in Kandy and in Colombo, needs its own two attesting witnesses signing in the presence of the notary attesting it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-015",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (23)",
+      "relevant_excerpt": "(23) He shall number with consecutive integral numbers the documents executed or acknowledged before him, including wills and codicils, according to the order in which they are executed or acknowledged before him.",
+      "why_relevant": "The numbering rule that rule (25)(b) applies to each attesting notary separately.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-016",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (24)",
+      "relevant_excerpt": "(24) He shall carefully preserve as his protocol a draft or copy of every deed or instrument executed or acknowledged before him, to which shall be attached his signature and those of the party and witnesses to the original deed or instrument, and he shall keep a register thereof with a convenient index for the purpose of easy reference;",
+      "why_relevant": "The protocol and register obligation that rule (25)(c) splits between the first attesting notary and the other notary.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-017",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (29)",
+      "relevant_excerpt": "(29) If a deed or instrument other than a will or codicil affects a land situated in a district other than that in which the notary before whom it is signed, and by whom it is attested, 'shall reside, such notary, or in case such deed or instrument is attested by two or more notaries, then the notary upon whom is cast the duty of transmitting to the Registrar of Lands the duplicate of such deed or instrument, shall on or before the fifteenth day of the month next following that in which the same was executed (besides transmitting the duplicate in manner aforesaid) deliver or transmit to the Registrar of Lands of the district in which such land shall be situated a copy thereof certified by him as correct",
+      "why_relevant": "If the land partitioned lies in a district other than that in which the transmitting notary resides, a certified copy must also go to the Registrar of Lands of the district where the land is situated. Background here because the location of the land is not stated in the facts.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is held in the corpus as a consolidated text carrying later amendments, but this rule was not touched by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3; the wording relied on was in force in April 2020.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and the quoted words were unchanged at April 2020, but the temporal note is wrong to say rule (29) was not touched by 6-2024 s.3: s.3(9) substituted \"in the Form F 1\" for \"in the Form F\" in that rule, in the part of it that falls after the end of this excerpt."
+    },
+    {
+      "provision_id": "PROV-M071-018",
+      "section_id": "1-1907/s33",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "33",
+      "subsection": null,
+      "relevant_excerpt": "No instrument shall be deemed to be invalid by reason only of the failure of any notary to observe any provision of any rule set out in section 31 in respect of any matter of form:",
+      "why_relevant": "Non-compliance with a rule in section 31 that is a matter of form does not by itself invalidate the instrument. Background: it does not save a breach of rule (12), which goes to the fact of execution and not to form.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section unamended since enactment (no amendment events in the corpus); in force at April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-019",
+      "section_id": "1-1907/s34",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "34",
+      "subsection": "(1)(c)",
+      "relevant_excerpt": "(c) any other rule set out in section 31, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate, be liable to a fine not exceeding fifty thousand rupees, in addition to any civil liability he may incur thereby.",
+      "why_relevant": "Breach of a section 31 rule other than those separately listed is an offence punishable on summary trial, in addition to civil liability. Shows the consequence for Nimal Perera if he attested a signature not made before him.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Section 34 was replaced by Notaries (Amendment) Act No. 31 of 2022 s.17, so the fine levels in the corpus text post-date April 2020. The shape of the offence, that breach of a section 31 rule is punishable on summary trial in addition to civil liability, predates the matter, but the quoted penalty figure does not. Treated as supporting only and marked not applicable to the matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and the researcher is right to mark it inapplicable at the matter date, but the corpus holds only the text substituted by 31-2022 s.17, so nothing in the corpus establishes the April 2020 shape of the offence or its penalty; treat it as supporting background only."
+    },
+    {
+      "provision_id": "PROV-M071-020",
+      "section_id": "1-1907/s9",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "9",
+      "subsection": null,
+      "relevant_excerpt": "Every notary shall be bound to have his office within the area specified in his warrant; and any notary infringing this provision shall be liable to have his warrant withdrawn by the Minister.",
+      "why_relevant": "Background to rule (22): a notary is tied to the area specified in his warrant.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section unamended since enactment (no amendment events in the corpus); in force at April 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M071-021",
+      "section_id": "1-1907/s4A",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "4A",
+      "subsection": null,
+      "relevant_excerpt": "Every warrant issued to a notary under the provisions of section 3* or section 4* authorizing him to practice as a notary in any judicial division in which he resides, shall be deemed to authorize him to practice as a notary in the judicial zone in which he resides.",
+      "why_relevant": "Background: a warrant for a judicial division is deemed to authorise practice in the judicial zone in which the notary resides, which fixes the outer reach of the area referred to in rule (22).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section unamended since enactment (no amendment events in the corpus); in force at April 2020.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Text and 2020 applicability are right, but the temporal note is wrong to say there are no amendment events: section 4A was inserted by Notaries (Amendment) Law No. 20 of 1976 s.4 and has been in force since 1976."
+    },
+    {
+      "provision_id": "PROV-M071-901",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (19)",
+      "relevant_excerpt": "(19) He shall not make any erasure, alteration, or interpolation in any deed or instrument after the same has been signed by the executing party or parties.",
+      "why_relevant": "Added by the verifier. Section 32(2)(iii) only names rule (19); the map's claims that nothing may be altered after the first signature depend on what rule (19) actually says, so the rule itself has to be on the map.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (19) was not amended by Notaries (Amendment) Act No. 31 of 2022 s.16 or No. 6 of 2024 s.3 (neither Act lists rule (19)); the wording was in force in April 2020.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim against 1-1907/s31."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M071-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks in terms what rules the Notaries Ordinance lays down for this situation. Sections 31, 32, 33 and 34 of the Notaries Ordinance supply a complete answer: rule (12) on execution in the notary's presence, rule (22) on the area of practice, and rules (25), (26)(c), (28) with section 32(2) on a deed executed before more than one notary and signed at different times and places. No judicial authority and no non-statutory doctrine is needed either to state those rules or to apply them to these facts.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M071-Q01-01",
+          "issue": "Whether a Colombo notary may attest a partition deed in respect of a signature placed in Kandy before a different notary, given the requirement that the executant and witnesses sign in the attesting notary's presence.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M071-Q01-02",
+          "issue": "Whether the Notaries Ordinance permits one deed to be executed before two notaries at different times and places, and how the attestation, dating, numbering, protocol and duplicate duties are then divided.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M071-Q01-03",
+          "issue": "Whether the Colombo notary could instead travel to Kandy and attest the bedridden father's execution there.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M071-001",
+        "PROV-M071-002",
+        "PROV-M071-003",
+        "PROV-M071-005",
+        "PROV-M071-006",
+        "PROV-M071-007",
+        "PROV-M071-012"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M071-004",
+        "PROV-M071-008",
+        "PROV-M071-009",
+        "PROV-M071-010",
+        "PROV-M071-011",
+        "PROV-M071-013",
+        "PROV-M071-014",
+        "PROV-M071-015",
+        "PROV-M071-016",
+        "PROV-M071-019",
+        "PROV-M071-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M071-017",
+        "PROV-M071-018",
+        "PROV-M071-020",
+        "PROV-M071-021"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps. First, rule 31(12) forbids attesting a signature not made in the notary's presence, with rule 31(22) closing the alternative of travelling to Kandy. Second, rules 31(25)(a) and 31(25)(c)-(d) qualify that by allowing one deed to be attested by more than one notary, each for the execution before him, which pulls in rule 31(20). Third, section 32(2) supplies the timing and dating consequences for rules (18), (20), (23) and (25) where the parties do not sign at the same time and place.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M071-003",
+          "to_provision_id": "PROV-M071-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M071-005",
+          "to_provision_id": "PROV-M071-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M071-006",
+          "to_provision_id": "PROV-M071-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M071-007",
+          "to_provision_id": "PROV-M071-012",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M071-002",
+          "to_provision_id": "PROV-M071-001",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M071-003",
+          "to_provision_id": "PROV-M071-012",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M071-005",
+          "to_provision_id": "PROV-M071-016",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M071-004",
+          "to_provision_id": "PROV-M071-015",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M071-012",
+          "to_provision_id": "PROV-M071-013",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M071-021",
+          "to_provision_id": "PROV-M071-002",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M071-020",
+          "to_provision_id": "PROV-M071-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M071-019",
+          "to_provision_id": "PROV-M071-001",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M071-018",
+          "to_provision_id": "PROV-M071-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M071-008",
+          "to_provision_id": "PROV-M071-003",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M071-010",
+          "to_provision_id": "PROV-M071-009",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M071-014",
+          "to_provision_id": "PROV-M071-001",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M071-011",
+          "to_provision_id": "PROV-M071-007",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M071-017",
+          "to_provision_id": "PROV-M071-008",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M071-901",
+          "to_provision_id": "PROV-M071-007",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Nimal Perera is a Notary practicing in Colombo. Waruna Liyanage a client of his said that his father who is very sick and bed ridden living in Kandy wishes to execute a Partition Deed by himself together with his two brothers and wanted Nimal Perera to attest it. A Notary in Kandy is willing to visit the bed ridden father and get it executed by him. The other two brothers are willing to come to Colombo to execute it before Nimal Perera.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What does the Notaries Ordinance require where one partition deed is to be signed by a bedridden executant in Kandy before a Kandy notary and by his two brothers in Colombo before Nimal Perera, and may Nimal Perera attest the whole deed?",
+        "rule": "Notaries Ordinance rule 31(12) forbids a notary to authenticate or attest any deed unless the person executing it and the witnesses signed it in his presence and in the presence of one another and he signed it in their presence, so a notary can attest only the execution that took place before him; rule 31(8) requires at least two witnesses to subscribe their signatures in letters. Rule 31(22), read with s.9 and s.4A, forbids a notary to attest in any area other than the area in which he is authorised to practise. Rule 31(25) expressly allows one deed to be executed or acknowledged before more than one notary: under 31(25)(a) the notary who first attests must comply with the whole of rule 31(20) and every other attesting notary with paragraphs (a) to (e) of that rule and with paragraph (g) for erasures in the signatures he attested; under 31(25)(b), read with rule 31(23), each notary numbers the deed in his own consecutive series; under 31(25)(c) the first attesting notary preserves the protocol required by rule 31(24) and the other notary supplies himself with a certified copy which is deemed his protocol; and under 31(25)(d) every attesting notary must, as far as possible, comply with the other provisions of s.31. Section 32(2) governs a deed executed by two or more parties who do not sign at the same time and place: for rules (6), (7), (23) and (25) it is deemed executed when first signed, and for rules (18) and (20) it is deemed executed whenever it is signed, while rule (19), which forbids erasure, alteration or interpolation after signature, applies from the first signing. Rule 31(18) requires each notary to insert in letters the day, month, year and place of the execution before him, and rule 31(20)(a) and (c) require each attestation to state that the party and witnesses signed in his presence and in the presence of one another and to give the date, the place and the attesting witnesses. Rule 31(28) puts the duty to transmit the duplicate to the Registrar of Lands on the notary who first attests and relieves the other notary of it; rule 31(29) adds a certified copy to the Registrar of Lands of the district where the land lies if that is a different district. Rule 31(26)(c) requires a part-executed deed to be included in the monthly list and allows the Registrar of Lands to call for the duplicate, and if the deed is not signed by all parties within three months of the first signature the notary may be required to deliver the duplicate to the registrar. Section 33 saves an instrument from invalidity for a failure in a matter of form only, and s.34(1)(c) makes breach of a s.31 rule an offence triable summarily, in addition to civil liability.",
+        "application": "The father cannot come to Colombo and the brothers will sign before Nimal Perera in Colombo, so the three executants will not sign at the same time and place. Rule 31(12) means Nimal Perera cannot attest the father's signature, which will be made in Kandy before another notary and outside his sight, and he cannot sign the attestation in the father's presence. He also cannot travel to Kandy and attest there, because rule 31(22) confines him to the area in which he is authorised to practise, and s.9 and s.4A tie that area to his warrant and to the judicial zone in which he resides. The lawful course is the one the facts already suggest: the Kandy notary attests the father's execution in Kandy, with two witnesses who sign in that notary's presence and in the presence of one another, and Nimal Perera attests the two brothers' execution in Colombo with two witnesses signing before him. Rule 31(25) then divides the duties. Whichever of the two attests first must comply with the whole of rule 31(20), keep the protocol under rules 31(24) and 31(25)(c) and transmit the duplicate under rule 31(28); the other confines his attestation to paragraphs (a) to (e) of rule 31(20) and keeps a certified copy as his protocol. Each numbers the deed in his own series under rules 31(23) and 31(25)(b), and each states the true date and place of the execution before him under rules 31(18) and 31(20)(c). Section 32(2) makes the two dates workable: the deed counts as executed at the first signing for numbering and for the multi-notary rule, and as executed on each occasion for the dating and attestation rules, and nothing may be altered after the first signature. Because the executions may fall in different months, rule 31(26)(c) requires the part-executed deed to be listed, and the execution should be completed within three months of the first signature. The facts do not say where the land subject to the partition lies or which notary will attest first, so rule 31(29) and the allocation of the first-attesting notary's duties can only be stated conditionally.",
+        "conclusion": "Nimal Perera may not attest the whole partition deed, and may not go to Kandy to attest the father's execution. Under the Notaries Ordinance the deed may lawfully be executed before two notaries: the Kandy notary attesting the bedridden father's execution in Kandy and Nimal Perera attesting the two brothers' execution in Colombo, each with two witnesses signing in his presence, each dating and numbering his own execution and each attesting only what he witnessed, with the notary who attests first holding the protocol and transmitting the duplicate under rules 31(25), 31(24) and 31(28), and s.32(2) supplying the timing rules. If Nimal Perera instead attested the father's signature he would breach rule 31(12) and commit an offence under s.34."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M071-Q01-001",
+          "claim_text": "A notary may not authenticate or attest a deed unless the executant and the witnesses signed it in his presence and in the presence of one another and he signed it in their presence.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M071-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-002",
+          "claim_text": "At least two witnesses must subscribe their signatures in letters to a deed the notary attests.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M071-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-003",
+          "claim_text": "A notary may not attest a deed in any area other than the area in which he is authorised to practise, that area being fixed by his warrant and extending to the judicial zone in which he resides.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M071-002",
+            "PROV-M071-020",
+            "PROV-M071-021"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-004",
+          "claim_text": "The Ordinance permits one deed to be executed or acknowledged before more than one notary, and allocates the attestation duties between the notary who first attests and every other attesting notary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M071-003",
+            "PROV-M071-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-005",
+          "claim_text": "Each attesting notary numbers the deed in his own consecutive series, the first attesting notary keeps the protocol and the other notary supplies himself with a certified copy which is deemed his protocol, and every attesting notary must otherwise comply with section 31 as far as possible.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M071-004",
+            "PROV-M071-005",
+            "PROV-M071-015",
+            "PROV-M071-016"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-006",
+          "claim_text": "Where two or more parties do not sign at the same time and place, the deed is deemed executed at the first signing for rules (6), (7), (23) and (25), is deemed executed on each occasion of signing for rules (18) and (20), and the bar on erasure, alteration or interpolation applies from the first signing.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M071-006",
+            "PROV-M071-007",
+            "PROV-M071-901"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-007",
+          "claim_text": "Each notary must insert in letters the day, month and year and the place of the execution before him, and must state in his attestation that the party and the witnesses signed in his presence and in the presence of one another, together with the date, the place and the attesting witnesses.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M071-011",
+            "PROV-M071-012",
+            "PROV-M071-013"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-008",
+          "claim_text": "Where a deed is executed by two or more parties before more than one notary the duplicate is transmitted to the Registrar of Lands by the notary who first attests it and the other notary need not transmit one, and a certified copy must also go to the Registrar of Lands of the district in which the land lies if that is a different district.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M071-008",
+            "PROV-M071-017"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-009",
+          "claim_text": "A deed signed by only some of the parties must still be included in the notary's monthly list and produced if the Registrar of Lands calls for it, and if all parties have not signed within three months of the first signature the notary may be required to deliver the duplicate to the registrar.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M071-009",
+            "PROV-M071-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-010",
+          "claim_text": "Nimal Perera cannot attest the bedridden father's signature, because that signature will be placed in Kandy before another notary and not in Nimal Perera's presence.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M071-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "BG-3"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-011",
+          "claim_text": "Nimal Perera cannot cure this by travelling to Kandy himself, because he practises in Colombo and may not attest outside the area in which he is authorised to practise.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M071-002",
+            "PROV-M071-020",
+            "PROV-M071-021"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-012",
+          "claim_text": "The deed may be attested by the Kandy notary as to the father's execution in Kandy and by Nimal Perera as to the two brothers' execution in Colombo, each with two witnesses signing in the presence of the attesting notary and of one another.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M071-003",
+            "PROV-M071-001",
+            "PROV-M071-014"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-3",
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-013",
+          "claim_text": "Because the three executants will sign at different times and places, each notary dates and attests only the execution before him, each numbers the deed in his own series, the notary attesting first keeps the protocol and transmits the duplicate, and nothing may be altered after the first signature.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M071-005",
+            "PROV-M071-006",
+            "PROV-M071-007",
+            "PROV-M071-004",
+            "PROV-M071-008",
+            "PROV-M071-011",
+            "PROV-M071-013",
+            "PROV-M071-901"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-014",
+          "claim_text": "The execution should be completed within three months of the first signature, failing which the notary who holds the duplicate may be called on to deliver it to the Registrar of Lands.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M071-009",
+            "PROV-M071-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "BG-4"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-015",
+          "claim_text": "The facts do not state where the partitioned land lies or which notary will attest first, so the destination of the certified copy and the allocation of the first-attesting notary's duties can only be stated conditionally.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M071-017",
+            "PROV-M071-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-5"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-016",
+          "claim_text": "Nimal Perera may not attest the whole partition deed and may not attest in Kandy; the deed may lawfully be executed before the two notaries, each attesting only the execution that took place before him.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M071-001",
+            "PROV-M071-002",
+            "PROV-M071-003",
+            "PROV-M071-005",
+            "PROV-M071-006",
+            "PROV-M071-007",
+            "PROV-M071-012"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "BG-3",
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M071-Q01-017",
+          "claim_text": "If Nimal Perera attested the father's signature without the father having signed before him he would breach rule 31(12) and commit an offence punishable on summary trial in addition to any civil liability, and section 33 would not save the position because the breach is not a matter of form.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M071-001",
+            "PROV-M071-019",
+            "PROV-M071-018"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

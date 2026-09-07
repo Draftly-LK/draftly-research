@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://draftly.lk/schemas/legal-qa-v1/issue-map.schema.json",
+  "title": "Per-matter issue map (issue-map.json). Identifies legal issues only; names no authorities.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["benchmark_matter_id", "run_id", "produced_by_agent", "matter_summary", "parties", "relevant_dates", "questions"],
+  "properties": {
+    "benchmark_matter_id": { "type": "string", "pattern": "^M[0-9]{3}$" },
+    "run_id": { "type": "string" },
+    "produced_by_agent": { "type": "string" },
+    "matter_summary": { "type": "string", "description": "Neutral restatement of the facts; no legal conclusions." },
+    "parties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["party_ref", "name_as_in_source", "role", "legal_capacity"],
+        "properties": {
+          "party_ref": { "type": "string", "pattern": "^PTY[0-9]{2}$" },
+          "name_as_in_source": { "type": "string" },
+          "role": { "type": "string" },
+          "legal_capacity": { "type": "string" },
+          "capacity_uncertainties": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "relevant_dates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date_as_in_source", "event", "legal_significance"],
+        "properties": {
+          "date_as_in_source": { "type": "string" },
+          "iso_date": { "type": ["string", "null"] },
+          "event": { "type": "string" },
+          "legal_significance": { "type": "string" }
+        }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "benchmark_question_id", "primary_issue", "secondary_issues", "legal_domain", "required_legal_conclusion",
+          "relevant_transaction_or_event", "relevant_dates", "authority_type_expected", "answer_depends_on_unresolved_facts",
+          "unresolved_fact_dependencies", "research_queries", "status"
+        ],
+        "properties": {
+          "benchmark_question_id": { "type": "string", "pattern": "^M[0-9]{3}-Q[0-9]{2}$" },
+          "primary_issue": { "type": "string", "minLength": 10 },
+          "secondary_issues": { "type": "array", "items": { "type": "string" } },
+          "legal_domain": {
+            "enum": [
+              "intestate_succession", "testate_succession", "deeds_of_gift_and_revocation", "partition_and_co_ownership",
+              "lease", "mortgage_and_security", "sale_and_transfer", "notarial_execution_and_attestation",
+              "powers_of_attorney", "registration_of_documents", "title_registration", "stamp_duty",
+              "prescription", "servitudes_and_rights_of_way", "restriction_on_alienation", "apartment_ownership",
+              "trusts_and_life_interest", "title_examination_and_pedigree", "drafting", "local_government_vesting", "other"
+            ]
+          },
+          "required_legal_conclusion": { "type": "string", "description": "What kind of conclusion the answer must reach (e.g. a share fraction; yes/no with reasons; a procedure; a drafted clause)." },
+          "answer_format": { "enum": ["pedigree_diagram", "share_computation", "yes_no_reasoned", "procedure", "computation", "drafted_clause", "drafted_instrument", "advice", "explanation", "list"] },
+          "relevant_transaction_or_event": { "type": "string" },
+          "relevant_dates": { "type": "array", "items": { "type": "string" } },
+          "authority_type_expected": { "enum": ["statute", "case", "mixed", "drafting_convention", "arithmetic_from_law"] },
+          "answer_depends_on_unresolved_facts": { "type": "boolean" },
+          "unresolved_fact_dependencies": { "type": "array", "items": { "type": "string" } },
+          "research_queries": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["query", "corpus"],
+              "properties": {
+                "query": { "type": "string" },
+                "corpus": { "enum": ["statutes", "cases", "both"] },
+                "named_in_question": { "type": "boolean", "description": "True when the question itself names the enactment or section." }
+              }
+            }
+          },
+          "status": { "const": "issue_mapped" }
+        }
+      }
+    }
+  }
+}

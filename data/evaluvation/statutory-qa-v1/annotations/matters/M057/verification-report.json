@@ -1,0 +1,93 @@
+{
+  "benchmark_matter_id": "M057",
+  "verifier": "verifier-M057",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:47:58Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M057-001",
+      "decision": "partially_verified",
+      "note": "1-1907/s30 excerpt confirmed verbatim by check and by show --full; the offence bites 'for or in respect of every deed' and the Rs. 5,000-25,000 range is the as-at-2021 text (the only recorded amendment event is 12-2005, pre-matter). Correction: the temporal note credits the increase to Increase of Fines Act No. 12 of 2005 s.5, but s.5 of that Act is the Sinhala-text-prevails clause; the increase is made by s.2 read with the First and Second Schedules. Outcome unchanged."
+    },
+    {
+      "provision_id": "PROV-M057-002",
+      "decision": "partially_verified",
+      "note": "1-1907/s27 excerpt confirmed verbatim, and s.27 is what s.30's 'such certificate as aforesaid' refers back to. Two stated corrections: the excerpt shows 'April', which is post-matter wording introduced by 31-2022 s.14 (at 2021-10 the deadline was the first day of March, and no as-at-2021 snapshot exists in the corpus); and the excerpt covers subsection (2) only, whereas CL-M057-Q01-001 also relies on the subsection (1) duty of the Registrar of the High Court to issue the certificate. Neither affects the conclusion, since no certificate was obtained at all."
+    },
+    {
+      "provision_id": "PROV-M057-003",
+      "decision": "verified",
+      "note": "1-1907/s35(1) confirmed verbatim; it expressly names section 30 among the compoundable offences and bars proceedings once a sum is accepted. No amendment events recorded, so the text is as-at-2021."
+    },
+    {
+      "provision_id": "PROV-M057-004",
+      "decision": "verified",
+      "note": "The researcher left open whether 31-2022 s.11 touched the quoted words. It did not: s.11(a) substitutes 'incompetence' for 'incompetence, age' in s.21(1)(e) and s.11(b) raises the s.21(4) fine. Subsection (2) is unamended, so the excerpt is the as-at-2021 text. Supporting role retained, because s.21(2) operates only on a High Court Judge's report under s.21(1) and is contingent on his opinion of unfitness."
+    },
+    {
+      "provision_id": "PROV-M057-005",
+      "decision": "partially_verified",
+      "note": "7-1840/s2 excerpt confirmed verbatim and the carve-out is unaffected by the later amendments: 30-2022 s.2 repealed only the words from 'shall be of force' to the end, and 4-2024 s.2 edited paragraphs (a) and (b). Correction: the recorded subsection '1' is anachronistic, since the renumbering of s.2 as subsection (1) was made by 4-2024 s.2; at 2021-10 s.2 was undivided. The proposition relied on (a four-year lease is outside the one-month carve-out and so needed notarial execution) holds on both the 2021 and the current wording."
+    },
+    {
+      "provision_id": "PROV-M057-006",
+      "decision": "partially_verified",
+      "note": "1-1907/s13 excerpt confirmed verbatim against the consolidated text, but that text is post-matter for the quoted words: 31-2022 s.4 substituted 'given such bond' for 'given such bond and security', so at 2021-10 the section read 'given such bond and security as aforesaid'. Immaterial, as s.13 is recorded only as the excluded alternative and the exclusion turns on the notary holding a warrant, not on the bond wording."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M057-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "The liability follows from the Notaries Ordinance alone: s.27 creates the yearly certificate and its one-year currency, s.30 makes acting without it an offence per deed and fixes the fine, s.35(1) allows composition, s.21(2) supplies the disciplinary exposure. No indispensable provision is rejected or unresolved, so the status stands. The hop count of 2 (s.30 read with s.27) matches the indispensable edges and is confirmed. The answer cites no case law and enrichment was not applied. One application claim (CL-M057-Q01-008) is marked disputed; all other claims verified. One reasoning edge relabelled: PROV-M057-005 to PROV-M057-001 was 'jointly_required', which contradicts that provision's supporting rather than indispensable role, and is now 'procedurally_requires', which is what Prevention of Frauds s.2 does to the lease."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "unsupported_inference_from_statutory_silence",
+      "researcher_position": "The proviso to s.27(2) relief 'goes to obtaining the certificate late and does not undo an offence already committed by attesting while uncertificated' (claim CL-M057-Q01-008 and the corresponding sentence in the gold answer's application).",
+      "verifier_position": "The first half is supported: the proviso lets the High Court Judge direct the Registrar to issue the certificate notwithstanding delay. The second half is not stated anywhere in the corpus. Section 27(2) does not say whether a certificate so directed operates from the date fixed by the section or only from issue, and no provision addresses the effect of late issue on an offence already committed under s.30. The proposition may well be right, but it is an inference from silence, not a statutory rule, so the claim now reads 'disputed'.",
+      "supporting_sources": ["1-1907/s27", "1-1907/s30", "1-1907/s29"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "scope_of_the_question",
+      "researcher_position": "The liabilities asked about are confined to the want of the yearly certificate.",
+      "verifier_position": "The effective background carried into this question also states that the lessor Sudath Gunawardana is illiterate, and the source quote numbers this as part 4 of a multi-part question. If 'the liabilities of Notary Kamal Ratnayake' is read across the whole background rather than only the sentence immediately preceding it, the s.31 duties owed where an executant cannot read would also be in issue. The researcher's narrower reading matches the part's own wording and the 2-mark allocation, and the verifier does not disturb it, but a lawyer should confirm the intended scope before this is used as gold.",
+      "supporting_sources": ["1-1907/s31"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M057-Q01-008: the assertion that relief under the proviso to s.27(2) does not undo an offence already committed rests on statutory silence, not on any provision. Marked disputed rather than rejected, because the first half of the claim (the relief exists and is conditioned on accident, misfortune or other unavoidable cause) is directly supported."
+    ],
+    "temporal_issues": [
+      "1-1907/s27(2): corpus shows 'April'; at 2021-10 it read 'March' (31-2022 s.14). Immaterial here because no certificate was obtained at all.",
+      "1-1907/s13: corpus shows 'given such bond'; at 2021-10 it read 'given such bond and security' (31-2022 s.4). Immaterial, background provision only.",
+      "7-1840/s2: recorded as subsection (1), but the renumbering post-dates the matter (4-2024 s.2); the carve-out relied on is itself untouched by 30-2022 and 4-2024.",
+      "1-1907/s30: no post-2021 amendment event, so the fine range is the as-at-matter-date text. The attribution of the increase to 12-2005 s.5 is wrong (it is s.2 with the Schedules), but the date is right and the range stands.",
+      "1-1907/s21(2): checked directly against 31-2022 s.11 and confirmed unamended at the matter date; the researcher's open flag is resolved."
+    ],
+    "missing_definitions_or_exceptions": [
+      "None indispensable. 'High Court Judge' and 'Registrar-General' are defined in 1-1907/s43 (edges confirm), but nothing in the answer turns on either definition.",
+      "1-1907/s29 (appeal on refusal, and appeal against a refusal to direct issue under the proviso to s.27(2)) is not in the map. It is correctly omitted: the Registrar never refused, because no application was made.",
+      "1-1907/s33 does not save a deed for want of a certificate; it saves only breaches of the form rules in s.31. The researcher's decision to leave the validity of the lease out of the gold answer is right on the corpus as held.",
+      "1-1907/s19 (suspension pending trial on indictment) is not engaged and is correctly absent.",
+      "1-1907/s28(1A) requires the certificate application to be accompanied by an affidavit that any sum imposed under s.35 has been paid, which links a compounded s.30 offence to the next year's certificate. Not indispensable, and s.28 carries a post-matter substitution (6-2024 s.2), so it is not added."
+    ],
+    "case_law_dependence": [
+      "None in the answer as drafted. The one point that would need judicial authority, whether the lease itself survives the notary's want of a certificate, was deliberately excluded by the researcher and should stay excluded."
+    ],
+    "enrichment_issues": [],
+    "duplicate_or_leak_issues": []
+  },
+  "lawyer_questions": [
+    "Where a High Court Judge directs the Registrar under the proviso to s.27(2) to issue the yearly certificate notwithstanding the notary's delay, does that certificate cure the notary's position for deeds attested before it was issued, or does the s.30 offence stand regardless? The gold answer currently asserts the latter without statutory support.",
+    "Is 'What are the liabilities of Notary Kamal Ratnayake?' in part 4 confined to the missing yearly certificate, or does it also pick up the illiterate executant fact carried in the shared background, and with it the s.31 duties?",
+    "Does the corpus attribution of the Notaries Ordinance fine increases to Increase of Fines Act No. 12 of 2005 s.5 need correcting to s.2 and the Schedules across the benchmark, not just in this matter?"
+  ]
+}

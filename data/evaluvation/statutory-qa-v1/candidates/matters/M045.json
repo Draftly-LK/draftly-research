@@ -1,0 +1,62 @@
+{
+  "benchmark_matter_id": "M045",
+  "source_matter_id": "P08-Q05-M01",
+  "grouping_key": "P08-Q05-M01",
+  "paper_no": 8,
+  "question_no": 5,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Sylvester Perera who is living with his son in Canada wishes to remain there for some time. He wants to sell a divided 10 perches out a 40 Perch land owned by him situated in Kaduwela within the limits of the Kaduwela Municipal Council. Ms. Priyani Abeyweera Attorney at Law and Notary Public is acting for the Purchaser in this transaction.",
+    "normalized": "Sylvester Perera who is living with his son in Canada wishes to remain there for some time. He wants to sell a divided 10 perches out a 40 Perch land owned by him situated in Kaduwela within the limits of the Kaduwela Municipal Council. Ms. Priyani Abeyweera Attorney at Law and Notary Public is acting for the Purchaser in this transaction.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P08-Q05-P01"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M045-Q01",
+      "atomic_id": "P08-Q05-P01",
+      "part_uid": "paper-08/q5/1",
+      "part_id": "1",
+      "item_id": null,
+      "marks": 7,
+      "pdf_page": 32,
+      "question_original": "What investigations and precautions should she take prior to the execution of the Deed of Transfer on behalf of her client? Write 14 points.",
+      "question_normalized": "What investigations and precautions should she take prior to the execution of the Deed of Transfer on behalf of her client? Write 14 points.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Sylvester Perera who is living with his son in Canada wishes to remain there for some time. He wants to sell a divided 10 perches out a 40 Perch land owned by him situated in Kaduwela within the limits of the Kaduwela Municipal Council. Ms. Priyani Abeyweera Attorney at Law and Notary Public is acting for the Purchaser in this transaction.",
+      "effective_background_normalized": "Sylvester Perera who is living with his son in Canada wishes to remain there for some time. He wants to sell a divided 10 perches out a 40 Perch land owned by him situated in Kaduwela within the limits of the Kaduwela Municipal Council. Ms. Priyani Abeyweera Attorney at Law and Notary Public is acting for the Purchaser in this transaction.",
+      "source_quote": "1. Sylvester Perera who is living with his son in Canada wishes to remain there for some\ntime. He wants to sell a divided 10 perches out a 40 Perch land owned by him situated\nin Kaduwela within the limits of the Kaduwela Municipal Council. Ms. Priyani Abeyweera\nAttorney at Law and Notary Public is acting for the Purchaser in this transaction.\nWhat investigations and precautions should she take prior to the execution of the Deed\nof Transfer on behalf of her client? Write 14 points.\n(7 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.75,
+        "flags": []
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "confidence=0.75"
+      ],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2022-10",
+  "exam_session": "OCTOBER 2022",
+  "matter_tier": "B",
+  "tier_a_question_count": 0
+}

@@ -1,0 +1,779 @@
+{
+  "benchmark_matter_id": "M061",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M061",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:39:49Z",
+    "verification_agent": "verifier-M061",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-05T09:12:00Z"
+  },
+  "matter_reference_date": "2020-10",
+  "matter_reference_date_basis": "exam_session OCTOBER 2020 recorded in candidates/matters/M061.json; the last event in the scenario is a death on 5 July 2015, so the whole devolution is complete before the reference date",
+  "corpus_gaps": [
+    "The effect of an irrevocable deed of gift that reserves a life interest to the donor (bare dominium passing to the donee at execution, the life interest determining on the donor's death) has no statutory source in the corpus; it rests on the terms of the instrument as stated in the background and on Roman-Dutch principles of donation and usufruct. Matrimonial Rights and Inheritance Ordinance s.36 expressly refers such silences back to Roman-Dutch law, which is outside the corpus.",
+    "The corpus contains no provision stating that the general law (rather than Kandyan law, Muslim law or the Thesawalamai) applies to a particular family; s.2 of the Ordinance only carves those systems out. The background gives no personal-law facts, so the answer proceeds on the stated assumption that the general law applies.",
+    "Nothing in the corpus supplies the fact base for the ascendant proviso in s.29 (whether any maternal grandparent of Neesha Gamage was alive on 20 May 2012); the background is silent and the answer records the assumption."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M061-001",
+      "section_id": "15-1876/s2",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "Save as aforesaid, this Ordinance shall not apply to Kandyans or Muslims, or to Tamils of the Northern Province who are or may become subject to the Tesawalamai.",
+      "why_relevant": "Fixes the scope of the general law of intestate succession relied on throughout. The devolution proposed here holds only if none of the deceased persons was governed by Kandyan law, Muslim law or the Thesawalamai; the background gives no facts either way, and the answer states that assumption.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus. In force at 2020-10 and at every death in the scenario (2007, 2009, 2012, 2015).",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M061-002",
+      "section_id": "15-1876/s3",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "includes land, incorporeal tenements, and things attached to the earth or permanently fastened to anything which is attached to the earth, and any interest in land except that of a mortgagee",
+      "why_relevant": "Defines \"immovable property\" for the Ordinance. Lot A with the house at Assessment No.12 is land with a building attached to it, so the inheritance rules in s.21 onwards, not the movable-property conflict rule, govern its devolution.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim, but the corpus body of s.3 has lost the defined-term labels, so the excerpt does not itself say which term it defines; the link to \"immovable property\" is confirmed only by the corpus definition index (defs 15-1876 \"immovable property\" and edges 15-1876/s21 both return 15-1876/s3), and the provision is supporting rather than decisive."
+    },
+    {
+      "provision_id": "PROV-M061-003",
+      "section_id": "15-1876/s20",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "20",
+      "subsection": null,
+      "relevant_excerpt": "The following sections of this Ordinance shall apply to the estates of such persons only as shall die after the proclamation of this Ordinance",
+      "why_relevant": "Temporal gate on Part III. Every death in the scenario (2007, 2009, 2012, 2015) is long after the proclamation of the Ordinance, so the inheritance sections apply to each estate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The excerpt stops before the second condition in s.20, that the deceased must have been unmarried at death or, if married, married after the proclamation of the Ordinance; the condition is satisfied on these facts but the temporal note should say so rather than resting on the date of death alone."
+    },
+    {
+      "provision_id": "PROV-M061-004",
+      "section_id": "15-1876/s21",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "21",
+      "subsection": "(1)",
+      "relevant_excerpt": "Inheritance ab interstate to the immovable property in Sri Lanka of a person deceased shall be governed and regulated by the following provisions of this Ordinance wherever such person may have or have had his actual or matrimonial domicile.",
+      "why_relevant": "Makes the Ordinance the governing law for intestate succession to Lot A, immovable property in Sri Lanka, for each of the three intestacies in the chain.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M061-005",
+      "section_id": "15-1876/s22",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "22",
+      "subsection": null,
+      "relevant_excerpt": "When any person shall die intestate as to any of his or her property, leaving a spouse surviving, the surviving spouse shall inherit one-half of the property of such person.",
+      "why_relevant": "Gives Lochana one-half of Dinesh's estate on 23 November 2009 and Rohan Jayaweera one-half of Neesha's estate on 20 May 2012. Removing it changes both the pedigree and every share.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M061-006",
+      "section_id": "15-1876/s23",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "23",
+      "subsection": null,
+      "relevant_excerpt": "Subject to the right of the surviving spouse in the preceding section mentioned, the right of inheritance is divided in the following order as respects (a) descendants, (b) ascendants, (c) collaterals.",
+      "why_relevant": "Sets the order in which the half not taken by the surviving spouse is distributed, and confirms that the spouse's half is carved out first. It is the link between s.22 and ss.24 to 29.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M061-007",
+      "section_id": "15-1876/s24",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "24",
+      "subsection": null,
+      "relevant_excerpt": "Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita, but the children or remoter issue of a deceased child take per stirpes or by representation.",
+      "why_relevant": "Divides the other half of Dinesh's estate equally among his four surviving children (Neesha, Kasun, Kavindu and Piyumi), and excludes his brother Iresh and any ascendant. Neesha, a child of the first marriage, takes on the same footing as the children of the second marriage.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M061-008",
+      "section_id": "15-1876/s25",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "25",
+      "subsection": null,
+      "relevant_excerpt": "if only one of the parents be alive, the surviving parent takes half, and the brothers and sisters of the deceased of the full blood, and the issue of any deceased brother or sister of the full blood, by representation, and the brothers and sisters of the half-blood who are related to the intestate by the side of the deceased parent, and the issue of any such deceased brother or sister of the half-blood, by representation, take the other half.",
+      "why_relevant": "Governs Kasun's estate on 5 July 2015: he died unmarried and issueless, his father Dinesh had predeceased him and his mother Lochana survived, so Lochana takes half of his share and his full brother and sister, Kavindu and Piyumi, take the other half.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording and role for Kasun's 2015 intestacy are confirmed, but the excerpt omits the closing sentence of s.25 (\"In case there is no full or half-brother or sister alive at the death of the deceased, the surviving parent inherits the whole\"), which is the exception that has to be checked before the half/half split is applied and which is not triggered here because Kavindu and Piyumi survived."
+    },
+    {
+      "provision_id": "PROV-M061-009",
+      "section_id": "15-1876/s26",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "26",
+      "subsection": null,
+      "relevant_excerpt": "Father and mother both failing, the property of the intestate goes to his brothers and sisters, whether of the whole or balf-blood, and their children and other issue by representation.",
+      "why_relevant": "Governs Neesha's estate on 20 May 2012: she left no descendants and both her parents had predeceased her (Dinesh in 2009, Nimali in 2010), so the collateral half of her share passes to her half-blood brothers and sister.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus. The corpus text spells half-blood as \"balf-blood\", an artefact of the source scan; the excerpt is reproduced as it stands in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M061-010",
+      "section_id": "15-1876/s29",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "29",
+      "subsection": null,
+      "relevant_excerpt": "In case all the half-brothers and sisters, their children and remoter issue, are related to the intestate on one side only, they take the whole of the inheritance, unless there be a grandfather or grandmother or higher ascendant yet alive, related to the intestate on the other side",
+      "why_relevant": "Neesha's only collaterals were half-siblings on her father's side. This section lets them take the whole of the collateral portion rather than the divided share that s.27 and s.28 would produce, subject to the proviso about a surviving ascendant on the mother's side, on which the background is silent.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and the section is correctly reached, but the excerpt stops before the operative consequence of the proviso (\"take one-half only, and the next ascendants per capita the other half\"), and the corpus supplies no fact about whether a maternal grandparent or higher maternal ascendant of Neesha Gamage was alive on 20 May 2012, so the whole-taking result is an assumption rather than a verified outcome."
+    },
+    {
+      "provision_id": "PROV-M061-011",
+      "section_id": "15-1876/s30",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "30",
+      "subsection": null,
+      "relevant_excerpt": "if all those who succeed to the inheritance are equally near in degree to the intestate, they take per capita, and not per stirpes.",
+      "why_relevant": "Confirms equal per capita division among the four children of Dinesh, among Neesha's three half-siblings, and between Kasun's two full siblings, since in each case the takers are equally near in degree.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The excerpt omits the opening words \"Except when otherwise expressly provided\", which matter because ss.24 and 25 do expressly provide for the mode of division in two of the three steps where s.30 is invoked; s.30 is therefore confirmatory rather than the operative rule for those steps."
+    },
+    {
+      "provision_id": "PROV-M061-012",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "shall be in force or avail in law unless - (a) the relevant deed or instrument shall be in writing, signed by every executant",
+      "why_relevant": "Background only: it explains why the transfer of Lot A to Dinesh had to be, and was, effected by a notarially attested deed (Deed of Gift No.1100 attested by Asanka Silva, Notary Public). It does not decide any share.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1840; the corpus records amendment events in 1947, 2022 and 2024. The text shown is the consolidated text including changes made after the deed was executed in 2006, so it is used for background only and is not relied on as the operative text at the date of the deed.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The section is real and the excerpt verbatim, but the corpus holds only the consolidated text carrying amendment events of 1947, 2022 and 2024, not the version in force when Deed of Gift No.1100 was executed on 12 January 2006; and s.2(1) enumerates sale, purchase, transfer, assignment and mortgage without naming a gift, so a deed of gift is covered only as a \"transfer\". Background role only; no share in the answer depends on it."
+    },
+    {
+      "provision_id": "PROV-M061-901",
+      "section_id": "15-1876/s36",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "36",
+      "subsection": null,
+      "relevant_excerpt": "In all questions relating to the distribution of the property of an intestate, if the present Ordinance is silent, the rules of the Roman-Dutch law as it prevailed in North Holland are to govern and be followed.",
+      "why_relevant": "The one step in the chain that Part III does not regulate is the effect of Deed of Gift No.1100, an irrevocable gift reserving a life interest to the donor. Section 36 is the provision that tells the reader where that question goes: to Roman-Dutch law, which is outside the corpus. Adding it makes the boundary of the statutory answer explicit instead of leaving it in a prose note, and it is the authority for treating the deed step as governed by law the corpus does not hold.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1876; no amendment event recorded in the corpus. In force at 2020-10 and at every death in the scenario.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier. Excerpt checked verbatim against 15-1876/s36."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M061-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Every disputed step is a step of intestate succession to immovable property, which Part III of the Matrimonial Rights and Inheritance Ordinance regulates exhaustively (s.21 with ss.22 to 30). The one non-statutory element, the effect of the life interest reserved to the donor in Deed of Gift No.1100, is supplied by the terms of the instrument as recited in the background rather than by any rule of law that has to be proved: the deed is stated to be an absolute and irrevocable gift subject to the donor's life interest, and the donor died. No judicial authority is needed to trace the pedigree once that is taken as given.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M061-Q01-01",
+          "issue": "What interest did Deed of Gift No.1100 of 12 January 2006 vest in Dinesh Gamage, and what was the effect of the death of Sujeewa Jayamini on 21 April 2007 on the life interest she reserved?",
+          "status": "disputed"
+        },
+        {
+          "issue_id": "ISS-M061-Q01-02",
+          "issue": "On the intestacy of Dinesh Gamage on 23 November 2009, who inherits Lot A and in what proportions, and does Neesha, his daughter by his first marriage, share equally with the three children of the second marriage?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M061-Q01-03",
+          "issue": "On the intestacy of Neesha Gamage on 20 May 2012, she leaving a husband but no descendants and both her parents having predeceased her, to whom does her share devolve?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M061-Q01-04",
+          "issue": "On the intestacy of Kasun Gamage on 5 July 2015, he being unmarried and issueless with his father dead and his mother living, to whom does his share devolve?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M061-Q01-05",
+          "issue": "Which system of personal law governs these intestacies, and is the general law in the Ordinance applicable?",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M061-004",
+        "PROV-M061-005",
+        "PROV-M061-007",
+        "PROV-M061-008",
+        "PROV-M061-009",
+        "PROV-M061-010"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M061-001",
+        "PROV-M061-002",
+        "PROV-M061-003",
+        "PROV-M061-006",
+        "PROV-M061-011",
+        "PROV-M061-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M061-012"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four necessary linked steps of statutory reasoning, each depending on the one before: s.21 fixes the Ordinance as the governing law for Lot A; s.22 with s.24 divides Dinesh's estate between widow and children; s.26 with s.29 then redistributes Neesha's derived share; s.25 then redistributes Kasun's accumulated share. Only these dependencies are counted; s.2, s.3, s.20, s.23 and s.30 confirm scope and mode of division rather than adding a hop. Verifier: the 2012 step and the 2015 step were asserted as dependent in this basis but no edge connected them, so an edge PROV-M061-010 -> PROV-M061-008 (jointly_required) has been added; Kasun's holding at his death in 2015 is 7/48 only because s.29 gave him a 1/48 share of Neesha's estate in 2012. The hop count of 4 is unchanged and is confirmed.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M061-002",
+          "to_provision_id": "PROV-M061-004",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M061-001",
+          "to_provision_id": "PROV-M061-004",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-003",
+          "to_provision_id": "PROV-M061-004",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-004",
+          "to_provision_id": "PROV-M061-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M061-005",
+          "to_provision_id": "PROV-M061-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-006",
+          "to_provision_id": "PROV-M061-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-007",
+          "to_provision_id": "PROV-M061-009",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M061-009",
+          "to_provision_id": "PROV-M061-010",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-011",
+          "to_provision_id": "PROV-M061-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-011",
+          "to_provision_id": "PROV-M061-010",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-008",
+          "to_provision_id": "PROV-M061-007",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M061-010",
+          "to_provision_id": "PROV-M061-008",
+          "relationship": "jointly_required"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a final decree dated 20th October 2001 entered in the District Court of Homagama Partition Case No.2026/P land and premises bearing Assessment No.12, Rajamalwatta Road, Panagoda depicted as Lot A in Partition Plan No.2111 dated 23rd May 2001 made by A.L. Jayaweera Licensed Surveyor in extent 20 perches was allotted to Sujeewa Jayamini. She was married to Thilak Gamage and had 2 children namely Dinesh and Iresh. By Deed of Gift No.1100 dated 12th January 2006 attested by Asanka Silva Notary Public, the said Lot A was gifted to her son Dinesh Gamage as an absolute and irrevocable gift subject to life interest of the said Donor Sujeewa Jayamini. Sujeewa Jayamini died on 21 April 2007. Dinesh had a daughter named Neesha by his first wife Nimali. Nimali died on 15th July 2010. Dinesh died intestate on 23rd November 2009 leaving his second wife Lochana and three children namely Kasun, Kavindu and Piyumi. Neesha Gamage married Rohan Jayaweera and died intestate on 20th May 2012 without leaving children. Kasun Gamage died of cancer on 5th July 2015 unmarried and issueless.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "The question is how title to Lot A, allotted to Sujeewa Jayamini by the final decree of 20 October 2001, passed by Deed of Gift No.1100 and then through three successive intestacies (Dinesh Gamage in 2009, Neesha Gamage in 2012 and Kasun Gamage in 2015) to the persons who now own the land and house, and how that chain is set out as a pedigree. A subsidiary issue is whether the general law of intestate succession applies to this family.",
+        "rule": "Inheritance ab intestato to immovable property in Sri Lanka is governed by Part III of the Matrimonial Rights and Inheritance Ordinance No. 15 of 1876 (s.21), \"immovable property\" including land and things attached to the earth (s.3), and Part III applying to the estate of anyone dying after the proclamation of the Ordinance (s.20). The Ordinance does not apply to Kandyans, Muslims or Tamils of the Northern Province subject to the Thesawalamai (s.2); nothing in the facts brings any of these persons within those systems, and the analysis proceeds on the general law. A surviving spouse inherits one-half of the estate of the intestate (s.22), and the remaining half devolves in the order descendants, ascendants, collaterals (s.23). Children and remoter descendants are preferent to all others, all children taking equally per capita and the issue of a predeceased child taking per stirpes by representation (s.24). Where descendants fail and only one parent is alive, the surviving parent takes half and the full brothers and sisters, together with the half-brothers and sisters related through the deceased parent and the issue of any of them by representation, take the other half (s.25). Where descendants fail and both parents have failed, the estate goes to the brothers and sisters, whether of the whole or half blood, and their issue by representation (s.26); and where all the half-brothers and sisters are related to the intestate on one side only, they take the whole, unless a grandparent or higher ascendant on the other side is alive (s.29). Persons equally near in degree take per capita and not per stirpes (s.30). A deed transferring an interest in immovable property must be notarially executed to avail in law (Prevention of Frauds Ordinance s.2).",
+        "application": "Sujeewa Jayamini became sole owner of Lot A under the final decree of 20 October 2001. By Deed of Gift No.1100 of 12 January 2006, notarially attested as the Prevention of Frauds Ordinance s.2 requires, she gifted Lot A to her son Dinesh Gamage absolutely and irrevocably, reserving a life interest to herself; the gift therefore vested ownership in Dinesh at once, burdened only by that life interest, and her husband Thilak Gamage and her other son Iresh took no interest in Lot A. On her death on 21 April 2007 the reserved life interest came to an end and Dinesh held the entirety free of it. Dinesh died intestate on 23 November 2009 owning the whole of Lot A, which is immovable property within Matrimonial Rights and Inheritance Ordinance s.3, so ss.21 to 30 govern. His widow Lochana took one-half under s.22. Under s.23 and s.24 the other half went to his descendants, who at that date were four children, Neesha (his daughter by his first wife Nimali), Kasun, Kavindu and Piyumi; being equally near in degree they took per capita under s.30, that is one-quarter of the half, or one-eighth of the land, each. Neesha died intestate on 20 May 2012 leaving her husband Rohan Jayaweera but no children. Under s.22 Rohan took one-half of her one-eighth. Her descendants having failed and both her parents having predeceased her (Dinesh on 23 November 2009 and Nimali on 15 July 2010), the other half of her share passed under s.26 to her brothers and sisters. Her only collaterals were Kasun, Kavindu and Piyumi, half-siblings related to her on her father's side alone, so under s.29 they took the whole of that collateral half, per capita under s.30, no grandparent or higher ascendant on the mother's side being disclosed by the facts. Kasun Gamage died on 5 July 2015 unmarried and issueless, holding his original one-eighth together with the share he had taken from Neesha. He left neither spouse nor descendants; his father Dinesh had predeceased him and his mother Lochana survived him. Under s.25 Lochana as the surviving parent took half of his share, and the other half went to his full brother Kavindu and his full sister Piyumi, equally under s.30. Neesha, who would otherwise have been a half-sister on the father's side, had already died in 2012 without issue, so no share fell to her or to anyone representing her.",
+        "conclusion": "The pedigree runs: Sujeewa Jayamini (owner under the final decree of 20 October 2001, married to Thilak Gamage, children Dinesh and Iresh) gifted Lot A by Deed of Gift No.1100 of 12 January 2006 to Dinesh Gamage subject to her life interest, which determined on her death on 21 April 2007, leaving Dinesh sole owner. Dinesh died intestate on 23 November 2009, and Lot A devolved on his widow Lochana and his four children Neesha, Kasun, Kavindu and Piyumi. Neesha died intestate on 20 May 2012 without children, and her interest devolved on her husband Rohan Jayaweera and on her half-siblings Kasun, Kavindu and Piyumi. Kasun died intestate on 5 July 2015 unmarried and issueless, and his interest devolved on his mother Lochana and his full siblings Kavindu and Piyumi. The present owners are therefore Lochana Gamage, Kavindu Gamage, Piyumi Gamage and Rohan Jayaweera. This devolution assumes that the general law of the Ordinance, and not Kandyan law, Muslim law or the Thesawalamai, governs the family, and that no maternal grandparent of Neesha survived her for the purposes of the proviso to s.29."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M061-Q01-001",
+          "claim_text": "Inheritance ab intestato to immovable property in Sri Lanka is governed by the Matrimonial Rights and Inheritance Ordinance, whatever the deceased person's domicile, and land with a house on it is immovable property for that purpose.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M061-004",
+            "PROV-M061-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q01-002",
+          "claim_text": "Part III of the Ordinance applies to the estate of any person dying after the proclamation of the Ordinance, but the Ordinance does not apply to Kandyans, Muslims or Tamils of the Northern Province subject to the Thesawalamai.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M061-003",
+            "PROV-M061-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q01-003",
+          "claim_text": "A surviving spouse inherits one-half of the intestate's property, and the remaining half devolves in the order descendants, ascendants, collaterals.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M061-005",
+            "PROV-M061-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q01-004",
+          "claim_text": "Children are preferent to all others in the estate of a parent and take equally per capita, the issue of a predeceased child taking by representation; persons equally near in degree take per capita.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M061-007",
+            "PROV-M061-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q01-005",
+          "claim_text": "Where descendants fail and both parents have failed, the estate goes to the brothers and sisters of the whole or half blood and their issue by representation, and where all the half-siblings are related on one side only they take the whole, subject to a surviving ascendant on the other side.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M061-009",
+            "PROV-M061-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q01-006",
+          "claim_text": "Where descendants fail and only one parent survives, the surviving parent takes half and the full brothers and sisters, with the half-siblings related through the deceased parent and their issue by representation, take the other half.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M061-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q01-007",
+          "claim_text": "Deed of Gift No.1100 of 12 January 2006, being a notarially attested deed, vested ownership of Lot A in Dinesh Gamage subject to the life interest reserved to Sujeewa Jayamini, and that life interest determined on her death on 21 April 2007, leaving Dinesh sole owner.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M061-012",
+            "PROV-M061-901"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "BG-3"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M061-Q01-008",
+          "claim_text": "On the intestacy of Dinesh Gamage on 23 November 2009, Lot A devolved on his widow Lochana as to one-half and on his four children Neesha, Kasun, Kavindu and Piyumi as to the other half in equal per capita shares, his brother Iresh taking nothing.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M061-005",
+            "PROV-M061-006",
+            "PROV-M061-007",
+            "PROV-M061-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-5"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q01-009",
+          "claim_text": "On the intestacy of Neesha Gamage on 20 May 2012, her husband Rohan Jayaweera took one-half of her share, and because she left no descendants and both her parents had predeceased her, the other half passed to her half-siblings Kasun, Kavindu and Piyumi, who as half-siblings on the father's side alone took the whole of that portion in equal shares.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M061-005",
+            "PROV-M061-009",
+            "PROV-M061-010",
+            "PROV-M061-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-6",
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q01-010",
+          "claim_text": "On the intestacy of Kasun Gamage on 5 July 2015, he leaving no spouse and no issue, his surviving mother Lochana took half of his accumulated share and his full siblings Kavindu and Piyumi took the other half in equal shares, Neesha having already died without issue in 2012.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M061-008",
+            "PROV-M061-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-7",
+            "BG-8"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q01-011",
+          "claim_text": "The present owners of the land and house are Lochana Gamage, Kavindu Gamage, Piyumi Gamage and Rohan Jayaweera.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M061-005",
+            "PROV-M061-007",
+            "PROV-M061-008",
+            "PROV-M061-009",
+            "PROV-M061-010",
+            "PROV-M061-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "BG-3",
+            "BG-4",
+            "BG-5",
+            "BG-6",
+            "BG-7",
+            "BG-8"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q01-012",
+          "claim_text": "The pedigree is stated on the assumption that the general law and not Kandyan law, Muslim law or the Thesawalamai governs this family, and that no maternal grandparent of Neesha survived her.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M061-001",
+            "PROV-M061-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M061-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The shares are the arithmetic consequence of the same statutory rules: the surviving spouse's half under s.22, equal per capita division among children under ss.23, 24 and 30, the collateral rules in ss.26 and 29 for Neesha's share, and the surviving-parent rule in s.25 for Kasun's share. No judicial authority or non-statutory doctrine is needed once the deed of gift is taken at its recited terms.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M061-Q02-01",
+          "issue": "What fraction of Lot A does the widow Lochana Gamage presently hold, taking her half of Dinesh's estate together with her share of Kasun's estate?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M061-Q02-02",
+          "issue": "What fractions do Kavindu Gamage and Piyumi Gamage presently hold, taking their original shares in Dinesh's estate together with their shares of Neesha's and Kasun's estates?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M061-Q02-03",
+          "issue": "What fraction does Rohan Jayaweera, the widower of Neesha Gamage, presently hold?",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M061-005",
+        "PROV-M061-007",
+        "PROV-M061-008",
+        "PROV-M061-009",
+        "PROV-M061-010",
+        "PROV-M061-011"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M061-001",
+        "PROV-M061-002",
+        "PROV-M061-003",
+        "PROV-M061-004",
+        "PROV-M061-006",
+        "PROV-M061-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M061-012"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "The same four dependent steps as Q01 (governing law, then the 2009 intestacy, then the 2012 intestacy, then the 2015 intestacy), with the shares carried forward from each step into the next; the arithmetic adds no further legal hop. Verifier: the 2012 step and the 2015 step were asserted as dependent in this basis but no edge connected them, so an edge PROV-M061-010 -> PROV-M061-008 (jointly_required) has been added; Kasun's holding at his death in 2015 is 7/48 only because s.29 gave him a 1/48 share of Neesha's estate in 2012. The hop count of 4 is unchanged and is confirmed.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M061-004",
+          "to_provision_id": "PROV-M061-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M061-005",
+          "to_provision_id": "PROV-M061-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-006",
+          "to_provision_id": "PROV-M061-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-011",
+          "to_provision_id": "PROV-M061-007",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-007",
+          "to_provision_id": "PROV-M061-009",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M061-009",
+          "to_provision_id": "PROV-M061-010",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-011",
+          "to_provision_id": "PROV-M061-010",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M061-008",
+          "to_provision_id": "PROV-M061-011",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M061-010",
+          "to_provision_id": "PROV-M061-008",
+          "relationship": "jointly_required"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "By a final decree dated 20th October 2001 entered in the District Court of Homagama Partition Case No.2026/P land and premises bearing Assessment No.12, Rajamalwatta Road, Panagoda depicted as Lot A in Partition Plan No.2111 dated 23rd May 2001 made by A.L. Jayaweera Licensed Surveyor in extent 20 perches was allotted to Sujeewa Jayamini. She was married to Thilak Gamage and had 2 children namely Dinesh and Iresh. By Deed of Gift No.1100 dated 12th January 2006 attested by Asanka Silva Notary Public, the said Lot A was gifted to her son Dinesh Gamage as an absolute and irrevocable gift subject to life interest of the said Donor Sujeewa Jayamini. Sujeewa Jayamini died on 21 April 2007. Dinesh had a daughter named Neesha by his first wife Nimali. Nimali died on 15th July 2010. Dinesh died intestate on 23rd November 2009 leaving his second wife Lochana and three children namely Kasun, Kavindu and Piyumi. Neesha Gamage married Rohan Jayaweera and died intestate on 20th May 2012 without leaving children. Kasun Gamage died of cancer on 5th July 2015 unmarried and issueless.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "The question is what undivided fraction of Lot A, the land and premises at Assessment No.12, Rajamalwatta Road, Panagoda, in extent 20 perches, each surviving heir presently owns after the three intestacies of Dinesh Gamage, Neesha Gamage and Kasun Gamage.",
+        "rule": "A surviving spouse inherits one-half of the intestate's property (Matrimonial Rights and Inheritance Ordinance s.22) and, subject to that half, the estate devolves first on descendants (s.23). Children take equally per capita (s.24), and persons equally near in degree take per capita and not per stirpes (s.30). Where descendants fail and both parents have failed, the estate goes to brothers and sisters of the whole or half blood and their issue by representation (s.26); where all the half-siblings are related to the intestate on one side only they take the whole, unless an ascendant on the other side survives (s.29). Where descendants fail and only one parent survives, that parent takes half and the full brothers and sisters, together with the half-siblings related through the deceased parent and their issue by representation, take the other half (s.25). The Ordinance governs intestate succession to immovable property in Sri Lanka (s.21, s.3) and does not apply to Kandyans, Muslims or Tamils of the Northern Province subject to the Thesawalamai (s.2).",
+        "application": "Dinesh Gamage owned the whole of Lot A when he died intestate on 23 November 2009. His widow Lochana took one-half under s.22. The other half went under ss.23, 24 and 30 to his four children then living, Neesha, Kasun, Kavindu and Piyumi, that is one-eighth of the land each. On Neesha's intestacy on 20 May 2012 her one-eighth split under s.22 as to one-half, namely one-sixteenth of the land, to her husband Rohan Jayaweera; the balance one-sixteenth passed under s.26 to her collaterals, who were only her paternal half-siblings, so under s.29 they took that whole one-sixteenth and under s.30 divided it equally, one forty-eighth each to Kasun, Kavindu and Piyumi. Each of the three then held one-eighth plus one forty-eighth, that is seven forty-eighths. Kasun died on 5 July 2015 unmarried and issueless holding seven forty-eighths. His father having predeceased him and his mother surviving, s.25 gave Lochana half of seven forty-eighths, namely seven ninety-sixths, and gave his full siblings Kavindu and Piyumi the other half in equal shares, namely seven one hundred and ninety-seconds each. Lochana therefore holds one-half plus seven ninety-sixths. Kavindu and Piyumi each hold seven forty-eighths plus seven one hundred and ninety-seconds. Rohan Jayaweera holds the one-sixteenth he took in 2012. Expressed over a common denominator of 192, Lochana holds 110/192, Kavindu 35/192, Piyumi 35/192 and Rohan 12/192, which together account for the whole.",
+        "conclusion": "The present shares in Lot A are: Lochana Gamage 55/96 (110/192); Kavindu Gamage 35/192; Piyumi Gamage 35/192; and Rohan Jayaweera 1/16 (12/192). These fractions total unity. They assume that the general law applies to this family rather than Kandyan law, Muslim law or the Thesawalamai, and that no maternal grandparent or higher maternal ascendant of Neesha Gamage was alive on 20 May 2012, since the proviso to s.29 would otherwise halve the portion taken by her paternal half-siblings."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M061-Q02-001",
+          "claim_text": "A surviving spouse inherits one-half of the intestate's property and the remaining half devolves first on descendants, who take equally per capita when equally near in degree.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M061-005",
+            "PROV-M061-006",
+            "PROV-M061-007",
+            "PROV-M061-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q02-002",
+          "claim_text": "Where an intestate leaves no descendants and both parents have failed, the collateral portion goes to brothers and sisters of the whole or half blood, and half-siblings related on one side only take the whole of it subject to a surviving ascendant on the other side.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M061-009",
+            "PROV-M061-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q02-003",
+          "claim_text": "Where an intestate leaves no descendants and one parent survives, that parent takes half and the full brothers and sisters take the other half.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M061-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q02-004",
+          "claim_text": "On the intestacy of Dinesh Gamage in 2009 Lochana took 1/2 of Lot A and Neesha, Kasun, Kavindu and Piyumi took 1/8 each.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M061-005",
+            "PROV-M061-007",
+            "PROV-M061-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-5"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q02-005",
+          "claim_text": "On the intestacy of Neesha Gamage in 2012 her husband Rohan Jayaweera took 1/16 of Lot A and her paternal half-siblings Kasun, Kavindu and Piyumi took 1/48 each, so that each of the three then held 7/48.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M061-005",
+            "PROV-M061-009",
+            "PROV-M061-010",
+            "PROV-M061-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-6",
+            "BG-7"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q02-006",
+          "claim_text": "On the intestacy of Kasun Gamage in 2015 his mother Lochana took 7/96 of Lot A and his full siblings Kavindu and Piyumi took 7/192 each.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M061-008",
+            "PROV-M061-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-8"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q02-007",
+          "claim_text": "Lochana Gamage presently owns 55/96, that is 110/192, of Lot A.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M061-005",
+            "PROV-M061-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-8"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q02-008",
+          "claim_text": "Kavindu Gamage and Piyumi Gamage each presently own 35/192 of Lot A.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M061-007",
+            "PROV-M061-008",
+            "PROV-M061-009",
+            "PROV-M061-010",
+            "PROV-M061-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-4",
+            "BG-7",
+            "BG-8"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q02-009",
+          "claim_text": "Rohan Jayaweera presently owns 1/16, that is 12/192, of Lot A.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M061-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-7"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M061-Q02-010",
+          "claim_text": "The four shares of 110/192, 35/192, 35/192 and 12/192 exhaust the whole of Lot A, and they assume that the general law applies and that no maternal ascendant of Neesha Gamage survived her.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M061-001",
+            "PROV-M061-010"
+          ],
+          "supporting_fact_ids": [
+            "BG-7"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

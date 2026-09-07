@@ -1,0 +1,590 @@
+{
+  "benchmark_matter_id": "M009",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M009",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:10:00Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2026-04",
+  "matter_reference_date_basis": "exam_session APRIL 2026 as recorded in candidates/matters/M009.json; the scenario events are dated January 2026, which is earlier, so the same body of law applies on either date.",
+  "corpus_gaps": [
+    "Registration of Title Act s.45(1)(a): the numeral fixing the forwarding period is missing from the extracted body ('by the Attestor working days of such attestation'). The same gap is present in the source JSON at data/legal-sources/library/finalized/21-1998-registration-of-title-act/21-1998-registration-of-title-act.json. Only the section heading ('within seven days') carries the number. Needs re-extraction from a Government Printer edition.",
+    "Registration of Title Act s.75: the run-on rendering of the interpretation section has dropped the defined terms themselves, leaving only the 'means ...' clauses, so a definition can be matched to its term only through the corpus defined_terms list and the order of the clauses.",
+    "The 'prescribed penalty' for the offence in s.45(1)(b) sits in regulations made under s.67; no Registration of Title regulations are in the corpus, so the amount of the penalty cannot be stated.",
+    "The corpus edition of the Registration of Title Act is flagged 'original_or_unconfirmed_consolidation' from a private republisher, so any amendment to the Act made after 1998 would not show in the section metadata."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M009-001",
+      "section_id": "21-1998/s45",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "45",
+      "subsection": "1(a)",
+      "relevant_excerpt": "Any instrument attested in terms of section 44 together with the Certificate of Title pertaining to the title of the vendor shall be forwarded by the Attestor working days of such attestation to the Registrar of Title within whose area of jurisdiction the land parcel dealt with in such instrument is situate.",
+      "why_relevant": "This is the provision that fixes the period within which an attesting notary must forward an attested instrument, with the vendor's Certificate of Title, to the Registrar of Title. It answers the second limb of the question. The corpus body is defective: the numeral before 'working days' is missing from the extracted text, so the period is recoverable only from the section heading in the corpus record, 'Attestor to forward instruments attested within seven days.'",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded for this section; in force at 2026-04. The gap in the extracted text is an extraction defect, not an amendment.",
+      "verification_status": "proposed",
+      "verifier_note": "Re-extract section 45(1)(a) from a Government Printer edition and confirm the missing numeral before 'working days' before this question can be released as gold."
+    },
+    {
+      "provision_id": "PROV-M009-002",
+      "section_id": "21-1998/s45",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "45",
+      "subsection": "1(b)",
+      "relevant_excerpt": "Failure to forward the attested instrument within the stipulated period shall be an offence punishable with the prescribed penalty.",
+      "why_relevant": "Makes the forwarding duty in subsection (1)(a) mandatory rather than directory, and is the provision under which the notary's default is penalised.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded; in force at 2026-04. The 'prescribed penalty' depends on regulations made under section 67, which are not in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M009-003",
+      "section_id": "21-1998/s38",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "38",
+      "subsection": null,
+      "relevant_excerpt": "No person acquiring an interest in any land parcel registered under the provisions of this Act shall be entitled to such title or interest unless such title or interest is registered under the provisions of this Act.",
+      "why_relevant": "First limb of the question: registration is not optional. A donee of a registered land parcel gets no title unless the interest is registered.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded; in force at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M009-004",
+      "section_id": "21-1998/s39",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "39",
+      "subsection": null,
+      "relevant_excerpt": "No land parcel, title to which has been registered under this Act, or any interest therein shall be transferred or dealt with except in accordance with the provisions of this Act, and every disposition otherwise effected shall be void.",
+      "why_relevant": "Supplies the sanction for the mandatory character of registration: a disposition of a registered parcel made otherwise than under the Act is void.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded; in force at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M009-005",
+      "section_id": "21-1998/s49",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "49",
+      "subsection": null,
+      "relevant_excerpt": "An instrument pertaining to land executed in accordance with the provisions of this Act shall take effect on registration, of such instrument under the provisions of this Act.",
+      "why_relevant": "Registration is constitutive: until the gift instrument is registered it has no operative effect, which is the practical reason registration is mandatory.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded; in force at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M009-006",
+      "section_id": "21-1998/s44",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "44",
+      "subsection": null,
+      "relevant_excerpt": "A Notary Public attesting an instrument in terms of this Act shall- (a) satisfy himself regarding the identity of whosoever of the parties to the transaction and the witnesses, as are not known to him, by reference to their official identity cards or such other means as may reliably reveal their identity;",
+      "why_relevant": "Section 45(1)(a) is triggered only by an instrument 'attested in terms of section 44', so this section is the condition precedent to the forwarding duty and identifies the notary as the Attestor on whom the duty falls.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded; in force at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M009-007",
+      "section_id": "21-1998/s75",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "75",
+      "subsection": "definition of \"instrument\"",
+      "relevant_excerpt": "means a document having the effect of conveying title to and interest in any land parcel in the prescribed form",
+      "why_relevant": "The answer turns on the defined term 'instrument'; the deed of gift is an instrument only if it conveys title to a land parcel in the prescribed form, which is what brings sections 38, 39, 45 and 49 into play.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded; in force at 2026-04. The corpus rendering of section 75 has lost the defined terms from the run of text, but the corpus records 'instrument' among the section's defined_terms.",
+      "verification_status": "proposed",
+      "verifier_note": "Confirm that the quoted words are the definition of 'instrument' and not of an adjacent term; the extracted body drops the term labels."
+    },
+    {
+      "provision_id": "PROV-M009-008",
+      "section_id": "21-1998/s43",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "43",
+      "subsection": "2",
+      "relevant_excerpt": "Instruments prepared under the provisions of subsection (1) shall be signed by the parties to the transaction and two witnesses and attested by a Notary Public",
+      "why_relevant": "Explains why a notary is involved at all and why the gift deed had to be attested before the forwarding duty could arise.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded; in force at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M009-009",
+      "section_id": "21-1998/s40",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "40",
+      "subsection": "1",
+      "relevant_excerpt": "An instrument for conveying interest in a land parcel may be presented for title registration under this Act to the Registrar of Title by- (a) any person claiming any interest or benefit thereunder;",
+      "why_relevant": "Shows that presentation for registration is not confined to the notary: the donee may also present, which matters when the notary has defaulted.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded; in force at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M009-010",
+      "section_id": "21-1998/s41",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "41",
+      "subsection": "1",
+      "relevant_excerpt": "for the purpose of priority the time of presentation shall be taken as the time of registration",
+      "why_relevant": "Gives the practical consequence of delay in forwarding: priority runs from presentation, so every day of a notary's delay exposes the donee to a competing instrument.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded; in force at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M009-011",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "30A",
+      "relevant_excerpt": "It shall be the duty of every notary to submit for registration to the Registrar, every deed or instrument attested by him before the expiry of thirty days from the date of attestation thereof",
+      "why_relevant": "The general notarial registration duty under the deeds system, offered as a contrast: the period there is thirty days, which is not the period that applies to a land parcel registered under the Registration of Title Act. A candidate who answers 'thirty days' has applied the wrong enactment.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 shows latest_change_year 2024; subsection (30A) appears in the consolidated text and is reproduced in Notaries (Amendment) Act No. 31 of 2022 s.16. In force at 2026-04. The verifier should confirm that Act No. 6 of 2024 did not touch (30A).",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M009-012",
+      "section_id": "21-1998/s28",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "28",
+      "subsection": null,
+      "relevant_excerpt": "no entries shall be made in respect of transactions relating to land parcels registered under this Act in the Land Registers maintained under the Registration of Documents Ordinance",
+      "why_relevant": "Context: once a parcel is on the Title Register the deeds registers are closed to it, so registration under this Act is the only route available for the gift.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded; in force at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M009-013",
+      "section_id": "21-1998/s37",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "37",
+      "subsection": "2",
+      "relevant_excerpt": "such Certificate of Title shall form conclusive evidence of the title to such interest",
+      "why_relevant": "Context for the Certificate of Title that must accompany the instrument when it is forwarded, and for the title certificate Kamal wanted.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "in_force_from_year 1998, no amendment_events recorded; in force at 2026-04.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M009-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Both limbs are answered by the Registration of Title Act itself: sections 38, 39 and 49 for whether registration is mandatory, and section 45(1)(a) read with section 44 for the period within which the attestor must forward the instrument. No judicial authority or Roman-Dutch doctrine is needed. The obstacle is not the kind of authority required but the state of the corpus text of section 45(1)(a), which has lost the numeral fixing the period.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M009-Q01-01",
+          "issue": "Whether registration of an instrument affecting a land parcel whose title is registered under the Registration of Title Act is mandatory, and what follows if it is not registered.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M009-Q01-02",
+          "issue": "Within what period, and by whom, an attested instrument must be forwarded to the Registrar of Title.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M009-Q01-03",
+          "issue": "Whether the notary's failure to forward the instrument within that period carries a sanction, and how that period differs from the thirty day duty under the Notaries Ordinance.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M009-001",
+        "PROV-M009-002",
+        "PROV-M009-003",
+        "PROV-M009-004",
+        "PROV-M009-005",
+        "PROV-M009-006",
+        "PROV-M009-007"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M009-008",
+        "PROV-M009-009",
+        "PROV-M009-010",
+        "PROV-M009-011"
+      ],
+      "background_provision_ids": [
+        "PROV-M009-012",
+        "PROV-M009-013"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps: the deed of gift must first qualify as an 'instrument' as defined in section 75 and be attested under sections 43(2) and 44; that attestation is what triggers the forwarding duty in section 45(1)(a) and the offence in section 45(1)(b); and the mandatory character of registration comes from the separate but jointly required chain of sections 38, 39 and 49.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M009-001",
+          "to_provision_id": "PROV-M009-006",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M009-001",
+          "to_provision_id": "PROV-M009-007",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M009-002",
+          "to_provision_id": "PROV-M009-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M009-006",
+          "to_provision_id": "PROV-M009-008",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M009-003",
+          "to_provision_id": "PROV-M009-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M009-004",
+          "to_provision_id": "PROV-M009-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M009-003",
+          "to_provision_id": "PROV-M009-007",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M009-005",
+          "to_provision_id": "PROV-M009-010",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M009-012",
+          "to_provision_id": "PROV-M009-011",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Kamal Perera is in occupation in a land situated in Homagama since 1980 by long and prescriptive rights. He wants to get a title certificate to his land under the Registration of Title Act No. 21 of 1998. Kamal Perera retained Sureka Pathirana as his Notary.\n\nKamal gifted the said land to his son Subash. The instrument was executed by Sureka on 2nd January 2026. Sureka failed to send the instrument for registration and she realised her failure on 12th January 2026.",
+        "enriched_background": "Kamal Perera, aged 71, of No. 44/2, Panagoda Road, Homagama, was in occupation of a land of 32 perches situated in Homagama since 1980 by long and prescriptive rights. He wanted to get a title certificate to his land under the Registration of Title Act No. 21 of 1998. Homagama had been declared an area for title registration, a cadastral map had been prepared for the area, and Kamal's land had been surveyed as land parcel No. HOM/CM/04/117 on that map. Following the title settlement investigation, Kamal was entered on the Title Register for that parcel as owner with a first class title of absolute ownership, and Certificate of Title No. TC/HOM/2019/0842 was issued to him. Kamal Perera retained Sureka Pathirana, a notary practising in the judicial zone in which Homagama is situated, as his Notary.\n\nKamal gifted the said land to his son Subash Perera, aged 34, of the same address. The gift was unconditional. The instrument was drawn in the form prescribed for a transaction relating to a land parcel, was signed by Kamal, by Subash and by two witnesses, and was executed by Sureka on 2nd January 2026. Before attesting, Sureka checked the identity of the parties and the witnesses against their identity cards, checked Kamal's capacity against the entries in the Title Registry, and checked the identity of the land and the state of the title against Certificate of Title No. TC/HOM/2019/0842. Kamal handed his Certificate of Title to Sureka on the day of execution. Between 2nd January 2026 and 12th January 2026 the Title Registry for the area was open for eight working days; there were no public holidays in that period other than the intervening Saturdays and Sundays. Sureka failed to send the instrument to the Registrar of Title for the area in which the land parcel is situated, and she realised her failure on 12th January 2026. As at that date the instrument had not been presented to the Registrar of Title by any person, no entry relating to it had been made in the day book, and no other instrument affecting the parcel had been presented.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M009-Q01-001",
+            "fact": "Homagama had been declared an area for title registration, a cadastral map had been prepared for the area, and Kamal's land had been surveyed as land parcel No. HOM/CM/04/117 on that map.",
+            "origin": "synthetic_decisive",
+            "reason": "The original background only says Kamal 'wants' a title certificate, which leaves it open whether the land is on the Title Register at all. The Act's transaction rules bite only on a registered land parcel, so the scenario is indeterminate without this fact.",
+            "activates_provision_ids": [
+              "PROV-M009-003",
+              "PROV-M009-004",
+              "PROV-M009-001"
+            ],
+            "counterfactual_effect": "If the parcel were not yet registered, the gift would fall outside the Act's transaction provisions and the notary's registration duty would be the general thirty day duty under the Notaries Ordinance instead.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M009-Q01-002",
+            "fact": "Kamal was entered on the Title Register for that parcel as owner with a first class title of absolute ownership, Certificate of Title No. TC/HOM/2019/0842 was issued to him, and he handed that Certificate to Sureka on the day of execution.",
+            "origin": "synthetic_decisive",
+            "reason": "Section 45(1)(a) requires the Certificate of Title of the transferor to be forwarded with the instrument, so the answer needs a Certificate of Title in existence and in the notary's hands.",
+            "activates_provision_ids": [
+              "PROV-M009-001",
+              "PROV-M009-013"
+            ],
+            "counterfactual_effect": "Without an issued Certificate of Title the notary could not comply with the forwarding requirement in the form the section lays down.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M009-Q01-003",
+            "fact": "The gift instrument was drawn in the form prescribed for a transaction relating to a land parcel and was signed by Kamal, by Subash and by two witnesses before Sureka attested it on 2nd January 2026.",
+            "origin": "synthetic_neutral",
+            "reason": "Fills in the formal requirements the instrument must satisfy before it counts as an instrument under the Act; does not change the outcome.",
+            "activates_provision_ids": [
+              "PROV-M009-008",
+              "PROV-M009-007"
+            ],
+            "counterfactual_effect": "A gift deed not in the prescribed form would raise a different question, about the validity of the instrument rather than about the time for forwarding it.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M009-Q01-004",
+            "fact": "Before attesting, Sureka checked the identity of the parties and witnesses against their identity cards, checked Kamal's capacity against the entries in the Title Registry, and checked the identity of the land and the state of the title against the Certificate of Title.",
+            "origin": "synthetic_neutral",
+            "reason": "Establishes that the instrument was attested in the manner the Act requires of an attestor, which is the condition that triggers the forwarding duty.",
+            "activates_provision_ids": [
+              "PROV-M009-006",
+              "PROV-M009-001"
+            ],
+            "counterfactual_effect": "If the attestation were not in accordance with the attestor's duties the instrument would be open to challenge on a separate ground, but the forwarding duty would still be engaged once attested.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M009-Q01-005",
+            "fact": "Between 2nd January 2026 and 12th January 2026 the Title Registry for the area was open for eight working days, there being no public holidays in that period other than the intervening Saturdays and Sundays.",
+            "origin": "synthetic_decisive",
+            "reason": "The statutory period is expressed in working days, so the elapsed calendar period of ten days in the original facts does not by itself show whether the period had expired.",
+            "activates_provision_ids": [
+              "PROV-M009-001",
+              "PROV-M009-002"
+            ],
+            "counterfactual_effect": "If public holidays had reduced the interval to fewer working days than the statutory period, Sureka would still have been in time on 12th January 2026 and no offence would have been committed.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M009-Q01-006",
+            "fact": "Sureka did not send the instrument to the Registrar of Title for the area at any time before 12th January 2026; as at that date no person had presented it to the Registrar of Title, no entry relating to it had been made in the day book, and no other instrument affecting the parcel had been presented.",
+            "origin": "synthetic_decisive",
+            "reason": "Makes the default complete and rules out the possibility that the donee or another person cured it by presenting the instrument, and fixes the priority position.",
+            "activates_provision_ids": [
+              "PROV-M009-002",
+              "PROV-M009-005",
+              "PROV-M009-009",
+              "PROV-M009-010"
+            ],
+            "counterfactual_effect": "If Subash had presented the instrument himself within the period, the instrument would have been in for registration in time and the notary's default would not have prejudiced the gift.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M009-Q01-007",
+            "fact": "Subash Perera, aged 34, of No. 44/2, Panagoda Road, Homagama, is Kamal's son, and the gift to him was unconditional.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the party identity the question left open and excludes conditions or reservations that would raise separate issues.",
+            "activates_provision_ids": [
+              "PROV-M009-003"
+            ],
+            "counterfactual_effect": "A conditional gift or a gift reserving rights would raise further registration questions not asked here.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the deed of gift by which Kamal conveyed the Homagama land parcel to Subash must be registered under the Registration of Title Act, and within what period the attesting notary, Sureka, had to forward that instrument to the Registrar of Title.",
+        "rule": "Once the title to a land parcel is registered under the Registration of Title Act, registration of dealings is compulsory. A person acquiring an interest in such a parcel is not entitled to that title or interest unless it is registered (s.38), the parcel may not be transferred or dealt with except in accordance with the Act and every disposition otherwise effected is void (s.39), and an instrument executed under the Act takes effect only on registration (s.49). An 'instrument' is a document conveying title to or an interest in a land parcel in the prescribed form (s.75); it must be signed by the parties and two witnesses and attested by a Notary Public (s.43(2)), the notary attesting it being subject to the identity, capacity and title checks in s.44. An instrument so attested must then be forwarded by the attestor, with the transferor's Certificate of Title, to the Registrar of Title for the area in which the parcel lies, within the period fixed by s.45(1)(a); the heading of that section states seven days and the text expresses the period in working days, but the numeral is missing from the corpus text of the subsection, so the exact period is not confirmable from the corpus and is flagged for the verifier. Failure to forward within the stipulated period is an offence punishable with the prescribed penalty (s.45(1)(b)). The instrument may also be presented by the donee or any person claiming a benefit under it (s.40(1)), and priority runs from the time of presentation (s.41(1)). The thirty day duty in s.31(30A) of the Notaries Ordinance governs the deeds system and is not the period applicable here, the deeds registers being closed to registered parcels (s.28).",
+        "application": "The Homagama land is a land parcel on the Title Register with Kamal as registered owner holding a Certificate of Title, so the gift to Subash could be effected only under the Act and had to be registered. The deed was drawn in the prescribed form, signed by the parties and two witnesses, and attested by Sureka on 2 January 2026 after she made the s.44 checks; the duty to forward it with Kamal's Certificate of Title therefore fell on her from that date. Eight working days of the Registry had passed by 12 January 2026 and nothing had been sent or presented, so on the seven day reading of s.45(1)(a) the period had run out before she noticed the omission. Until the instrument is registered the gift takes no effect and Subash holds no interest in the parcel, and the gift has no priority position, since priority would date from presentation.",
+        "conclusion": "Registration is mandatory: an unregistered gift of a registered land parcel conveys nothing and is void as a disposition outside the Act. The attested instrument had to be forwarded by Sureka, with the Certificate of Title, to the Registrar of Title for the Homagama area within the period in s.45(1)(a), stated in the section heading as seven days and expressed in the section text in working days, and not within the thirty days allowed for deeds under the Notaries Ordinance. She is in breach and exposed to the offence in s.45(1)(b), and the instrument should be presented to the Registrar of Title at once. This answer is withheld from gold status because the numeral in s.45(1)(a) is missing from the corpus text."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M009-Q01-001",
+          "claim_text": "Where the title to a land parcel is registered under the Registration of Title Act, no person acquiring an interest in that parcel is entitled to the title or interest unless it is registered under the Act (Registration of Title Act s.38).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M009-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-002",
+          "claim_text": "A registered land parcel or any interest in it may not be transferred or dealt with except in accordance with the Act, and every disposition otherwise effected is void (Registration of Title Act s.39).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M009-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-003",
+          "claim_text": "An instrument pertaining to land executed under the Act takes effect only on registration, so registration is constitutive and not merely evidential (Registration of Title Act s.49).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M009-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-004",
+          "claim_text": "An 'instrument' for these purposes is a document having the effect of conveying title to or an interest in a land parcel in the prescribed form, and such an instrument must be signed by the parties and two witnesses and attested by a Notary Public (Registration of Title Act ss.75 and 43(2)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M009-007",
+            "PROV-M009-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-005",
+          "claim_text": "An instrument attested in terms of section 44 must be forwarded by the attestor, together with the transferor's Certificate of Title, to the Registrar of Title within whose jurisdiction the land parcel is situated, within the number of working days fixed by section 45(1)(a); the heading of that section in the corpus states seven days, but the numeral is missing from the extracted text of the subsection, so the period cannot be confirmed verbatim from the corpus (Registration of Title Act ss.44 and 45(1)(a)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M009-001",
+            "PROV-M009-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-006",
+          "claim_text": "Failure to forward the attested instrument within the stipulated period is an offence punishable with the prescribed penalty (Registration of Title Act s.45(1)(b)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M009-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-007",
+          "claim_text": "The thirty day period for submitting a deed for registration under the Notaries Ordinance belongs to the deeds registration system and is not the period that governs an instrument affecting a land parcel registered under the Registration of Title Act (Notaries Ordinance s.31(30A); Registration of Title Act s.28).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M009-011",
+            "PROV-M009-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-008",
+          "claim_text": "The Homagama land is a land parcel whose title is registered under the Act with Kamal as registered owner, so the gift to Subash is a transaction that had to be effected and registered under the Act.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M009-003",
+            "PROV-M009-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M009-Q01-001",
+            "FACT-M009-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-009",
+          "claim_text": "Sureka attested the gift instrument on 2nd January 2026 after carrying out the attestor's checks, so from that date she was the attestor on whom the duty to forward the instrument with Kamal's Certificate of Title lay.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M009-006",
+            "PROV-M009-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M009-Q01-003",
+            "FACT-M009-Q01-004",
+            "FACT-M009-Q01-002",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-010",
+          "claim_text": "Eight working days had passed by 12th January 2026 and the instrument had still not been sent to the Registrar of Title, so on the seven working day reading of section 45(1)(a) the period had expired and the default was complete.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M009-001",
+            "PROV-M009-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M009-Q01-005",
+            "FACT-M009-Q01-006",
+            "BG-2"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-011",
+          "claim_text": "Because the instrument has not been presented, the gift has not yet taken effect and Subash has acquired no interest in the parcel; the delay also leaves the gift without priority against any instrument presented in the meantime, though Subash may himself present the instrument for registration.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M009-005",
+            "PROV-M009-003",
+            "PROV-M009-010",
+            "PROV-M009-009"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M009-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-012",
+          "claim_text": "Registration of an instrument affecting a land parcel registered under the Registration of Title Act is mandatory, and the attesting notary must forward the instrument with the Certificate of Title to the Registrar of Title within the period fixed by section 45(1)(a), which the section heading gives as seven days and which the section text expresses in working days.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M009-003",
+            "PROV-M009-004",
+            "PROV-M009-005",
+            "PROV-M009-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M009-Q01-001",
+            "FACT-M009-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M009-Q01-013",
+          "claim_text": "Sureka is in breach of that duty and exposed to the offence created by section 45(1)(b); the immediate step is to have the instrument, with the Certificate of Title, presented to the Registrar of Title without further delay.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M009-002",
+            "PROV-M009-009"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M009-Q01-005",
+            "FACT-M009-Q01-006",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The operative numeral in Registration of Title Act s.45(1)(a) is absent from the corpus text: the body reads 'shall be forwarded by the Attestor working days of such attestation', with no number before 'working days'. The source JSON carries the same gap, so it is an extraction or transcription defect in the LankaLaw edition, not an amendment. The only in-corpus support for the number of days is the section heading, 'Attestor to forward instruments attested within seven days.' Since the second limb of the question asks precisely for the number of days, the answer is not released as gold until s.45(1)(a) is re-extracted from a Government Printer edition and the numeral confirmed. The first limb, that registration is mandatory, is fully supported by ss.38, 39 and 49 and is unaffected.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "benchmark_matter_id": "M022",
+  "verifier": "verifier-M022",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:20:05Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M022-001",
+      "decision": "verified",
+      "note": "s.31 rule (1) confirmed verbatim by check and by show 1-1907/s31 --full; it is the opening rule of s.31 and is original 1907 text. 31-2022 s.16 and 6-2024 s.3 were read in full and neither mentions rule (1) (31-2022 s.16 begins its substitutions at rule (3)); 20-1976 s.10, 47-2011 s.2 and s.3, 13-2013 and 12-2005 do not touch it either. s.34(1)(a) as substituted in 2022 still refers to rule (1). Applicable at 2025-10 and correctly marked indispensable: it alone decides the question."
+    },
+    {
+      "provision_id": "PROV-M022-002",
+      "decision": "partially_verified",
+      "note": "Rule (24) excerpt is verbatim, the section and the rule number are right and it is in force at 2025-10. The reasoning attached to it is now too strong: s.31 rule (20)(h)(ii), inserted by 31-2022 s.16(11)(d), requires the notary to enter in his deed register the number, the date and the name of the testator of a will, so from 2022 the register is not confined to number and date. Supporting role is correct."
+    },
+    {
+      "provision_id": "PROV-M022-003",
+      "decision": "partially_verified",
+      "note": "Wrong rule number. The quoted text is s.31 rule (26)(a)(i), not rule (27)(a)(i). Two independent confirmations: 47-2011 s.3 amends rule (26) by renumbering its paragraph (a) as (a)(i) and inserting the (a)(ii) certified-copy-to-the-local-authority paragraph, and that (a)(ii) text sits immediately after the quoted passage in the consolidated body; and 6-2024 s.3(8) substitutes the words and figures 'Form F 1' for 'in the Form F' in subparagraph (i) of paragraph (a) of rule (26), which is exactly the wording of the excerpt. Rule (27) was repealed by 31-2022 s.16(12) and is absent from the consolidated text, which runs (25), then an unnumbered block, then (28). The excerpt itself is verbatim and in force, so this is a citation and temporal-note correction rather than a rejection of the text."
+    },
+    {
+      "provision_id": "PROV-M022-004",
+      "decision": "verified",
+      "note": "s.34(1)(a) confirmed verbatim and the whole of s.34 as substituted by 31-2022 s.17 was read. Rule (1) falls in the five-thousand-rupee band in paragraph (a) and the fine is expressly in addition to civil liability. Applicable at 2025-10. Kept indispensable: the 'Discuss' element and claims CL-M022-Q01-004 and CL-M022-Q01-009 depend on it, and it is the only provision in the corpus attaching a sanction to rule (1)."
+    },
+    {
+      "provision_id": "PROV-M022-005",
+      "decision": "partially_verified",
+      "note": "s.41(4) excerpt is verbatim and the subsection is right, but why_relevant generalises it. The wills-and-codicils carve-out is confined to s.41(4), which applies only where the Registrar-General empowers a transfer to a notary who has purchased the goodwill of the practice; s.41(2) (continuing partner) and s.41(3) (principal retaining an assistant's records) permit retention of the same paragraph (1)(a) documents with no wills exception. Background role is correct and the conclusion does not rest on it."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M022-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "Authority requirement confirmed as statute_only. A corpus-wide grep for 'divulg' and a grep for 'secre' within 1-1907 return s.31 rule (1) as the only notarial secrecy provision; the other hits (17-2002/s58, 6-1990/s102, 7-2007/s180) are unrelated official-secrecy clauses. The Wills Ordinance 21-1844 has seven sections and none touches disclosure by the attesting notary. The prohibition, its two exceptions and the penalty are all on the face of the statute, so the conclusion follows without case law. Hop count of 2 confirmed and the conclusion is verified. The question is downgraded to needs_legal_review only because the gold answer prose, which the verifier may not rewrite, carries a repealed rule number and a register statement that s.31 rule (20)(h)(ii) has contradicted since 2022. Both defects sit in the rule paragraph and touch only the supporting wills-record point; once corrected the question returns to proposed_gold."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "provision_identification",
+      "researcher_position": "The monthly-duplicates-and-list provision quoted in PROV-M022-003 is s.31 rule (27)(a)(i) and is in force at 2025-10.",
+      "verifier_position": "It is s.31 rule (26)(a)(i). Rule (27) was repealed by 31-2022 s.16(12); 47-2011 s.3 and 6-2024 s.3(8) both identify the quoted structure as rule (26)(a)(i). The consolidated corpus text has lost the rule number for this block, which is what misled the researcher.",
+      "supporting_sources": ["1-1907/s31", "47-2011/s3", "6-2024/s3", "31-2022/s16", "1-1907/s32"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "scope_of_supporting_reasoning",
+      "researcher_position": "The Ordinance shows a legislative policy of keeping a will confidential, because only the number and date of a will go into the notary's register under rule (24) and into the monthly list.",
+      "verifier_position": "That reading has been weakened since 2022. Rule (20)(h)(ii), inserted by 31-2022 s.16(11)(d), requires the name of the testator to be entered in the deed register for a will, and the s.41 wills carve-out exists only in subsection (4). The point survives as a weaker inference but must not be stated as an unqualified rule of law at the 2025-10 reference date.",
+      "supporting_sources": ["1-1907/s31", "31-2022/s16", "1-1907/s41"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M022-Q01-003 rejected: both limbs are defective at 2025-10. The register limb is contradicted by s.31 rule (20)(h)(ii) and the monthly-list limb is sourced to a repealed rule number.",
+      "The gold answer's application paragraph asserts that while the testator lives his children 'have no vested interest in his estate, only an expectation'. Nothing in the corpus supports this; it is a Roman-Dutch succession proposition. It carries no provision citation and appears in no answer_claim. It is not needed for the conclusion, which rests on 'his employer' in rule (1), but it should be struck or attributed before the answer is used as gold.",
+      "The gold answer's conclusion adds that a breach 'may also be treated as misconduct in her office as a notary'. s.21(1)(b) and (c) would support that, but no provision is cited and it appears in no answer_claim. It is hedged as a possibility, so it is noted rather than rejected."
+    ],
+    "temporal_issues": [
+      "s.31 rule (27) was repealed by 31-2022 s.16(12) before the 2025-10 reference date, yet PROV-M022-003 and the gold answer cite it as in force. The consolidated corpus text of s.31 has lost the rule number for the rule (26) block, so the error is invisible from show alone and only surfaces on reading 31-2022 s.16 and 47-2011 s.3.",
+      "s.31 rule (20)(h)(ii), inserted by 31-2022 s.16(11)(d), post-dates the researcher's register reasoning and cuts against it.",
+      "Rule (1) is temporally clean. 20-1976 s.10, 47-2011 s.2 and s.3, 13-2013, 12-2005, 31-2022 s.16 and 6-2024 s.3 were all read and none amends it.",
+      "s.34 was substituted by 31-2022 s.17 and the quoted five-thousand-rupee band is the current text; the earlier Increase of Fines Act No. 12 of 2005 is spent as to this section because the 2022 substitution is later."
+    ],
+    "missing_definitions_or_exceptions": [
+      "'employer' in rule (1) is undefined. defs 1-1907 returns only 'Council of Legal Education', 'High Court Judge' and 'Registrar-General', all in s.43, and a grep shows the word 'employer' appears exactly once in the whole Ordinance, in rule (1) itself. Reading it as the testator who instructed the notary is the load-bearing interpretive step and cannot be settled from the corpus.",
+      "'secret' is likewise undefined, so whether the bare fact that a will exists is a secret is an inference from rule (1) rather than a statutory statement.",
+      "s.32 was checked as a possible disapplication of the s.31 rules. It disapplies rules (20), (23), (24), (25), (26) and part of (16) for five classes of instrument, none of which is a will, and it does not touch rule (1).",
+      "Two in-corpus illustrations of 'required to do so by law' were located and are correctly outside the map on these facts: s.31 rule (34), a written explanation to the Registrar-General, and s.31 rule (36)(b), inspection of records by named officials, the latter binding only on a notary who is not an attorney-at-law.",
+      "edges 1-1907/s31 shows s.21, s.32, s.33 and s.42 pointing at s.31. None of them creates a right in a third party to be told about a will, and no provision in the corpus entitles any person to a copy of or information about a notarial instrument on request."
+    ],
+    "case_law_dependence": [
+      "No case law is cited and the validator's case-law regex is clean. Case law and the Evidence Ordinance professional-communications privilege would enrich the 'required to do so by law' limb, but the added facts exclude any compulsion, so nothing outside the statute is indispensable. The researcher's statute_only classification is upheld."
+    ],
+    "enrichment_issues": [
+      "FACT-M022-Q01-002 is labelled synthetic_neutral, but its own counterfactual_effect states that without it rule (1) would not bite on the notary in that capacity, which is the test for synthetic_decisive. The underlying fact that the notary attested the will is already in the original background, so this is a labelling point rather than a fabricated decisive fact.",
+      "The enriched background states that only the number and date of the will are in the notary's register. That is consistent with the stated execution date of 12 March 2019, which pre-dates rule (20)(h)(ii), but it embeds a contested legal proposition in the facts and should be either tied explicitly to the 2019 date or dropped.",
+      "enriched_background silently drops the first paragraph of the original shared background about Sunil. The candidate file flags that paragraph inherited_shared_background_irrelevant and the full original is preserved in enrichment.original_background, so this is defensible, but the enriched scenario is not a superset of the original.",
+      "No statute name, section number or conclusion is leaked into the enriched background, and both synthetic_decisive facts explain why they are needed."
+    ],
+    "duplicate_or_leak_issues": [
+      "No leakage of the answer into the facts. All five provisions sit in one Act and three of them in one section, 1-1907/s31, so a retrieval system that finds s.31 gets most of the map at once. That is a property of the scenario, not a defect in the map.",
+      "PROV-M022-002 and PROV-M022-003 are near-duplicates in function, both being wills-record-keeping points supporting the same inference, and both are now qualified. A lawyer may prefer to keep only one."
+    ]
+  },
+  "lawyer_questions": [
+    "Does 'the express permission of his employer' in s.31 rule (1) mean the client who instructed the notary, so that the testator alone can release her and his children cannot? The word is undefined in the Ordinance and appears nowhere else in it, yet the whole answer turns on this reading.",
+    "Confirm the renumbering: is the monthly-duplicates-and-list provision in the current Notaries Ordinance rule (26), with rule (27) repealed by 31-2022 s.16(12)? The consolidated corpus text has lost the rule number for that block.",
+    "Given s.31 rule (20)(h)(ii), is it still right to say the Ordinance treats a will as specially confidential in the notary's records, and should that supporting line stay in the gold answer at all?",
+    "Should s.34(1)(a) remain indispensable, giving a hop count of 2, because the question says 'Discuss', or is the consequence of breach outside what the question asks, which would drop the hop count to 1?",
+    "Does the duty extend to refusing to confirm the bare fact that a will was executed, as the answer states, or only to its contents?"
+  ]
+}

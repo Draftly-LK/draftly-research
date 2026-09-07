@@ -1,0 +1,156 @@
+{
+  "benchmark_matter_id": "M082",
+  "verifier": "verifier-M082",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:11:08Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M082-001",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M082-002",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M082-003",
+      "decision": "partially_verified",
+      "note": "Wording confirmed verbatim, but s.32(4) is passive and by itself neither names the Registrar as the officer bound to give the notice nor states the event that triggers it; both come from s.32(1) and the opening words of s.32(5), so this provision cannot carry the notice duty on its own."
+    },
+    {
+      "provision_id": "PROV-M082-004",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim but begins mid-subsection and omits both the opening condition of s.32(5) (\"If, while a caveat is in force, an instrument affecting the land described in the caveat is presented for registration, and\") and the closing limb (\"and may order the necessary correction to be made in the register\"), each of which the gold answer relies on."
+    },
+    {
+      "provision_id": "PROV-M082-005",
+      "decision": "verified",
+      "note": "Confirmed verbatim and promoted from supporting to indispensable, because s.32(5) operates only \"while a caveat is in force\" and the duration rule in s.32(3) is therefore a necessary condition of the remedy the answer states."
+    },
+    {
+      "provision_id": "PROV-M082-006",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M082-007",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M082-008",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M082-009",
+      "decision": "partially_verified",
+      "note": "Excerpt of s.8(b) is verbatim but omits the eleven-limb proviso to s.8 that excludes certain instruments from the deeming provision; none of the exclusions covers a deed of transfer, so the answer is unaffected, but the exception should be recorded."
+    },
+    {
+      "provision_id": "PROV-M082-010",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M082-011",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M082-012",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M082-013",
+      "decision": "partially_verified",
+      "note": "Verbatim, but s.50 only says the Second Schedule forms are to be used; the Schedule is not in the corpus, so it cannot be confirmed which form is the October 2019 caveat form, and the map does not record s.49, which is what makes \"prescribed\" mean prescribed by regulation."
+    },
+    {
+      "provision_id": "PROV-M082-014",
+      "decision": "verified",
+      "note": "Commencement confirmed from 21-2013 s.1, which deems the Act to have come into operation on 1 January 2013, so the substituted fee item was in force at the matter date."
+    },
+    {
+      "provision_id": "PROV-M082-015",
+      "decision": "partially_verified",
+      "note": "Correctly excluded as post-dating the matter, but the subsection field claims \"(3) and (5)\" while the excerpt quotes only the new subsection (3); the thirty-to-sixty-day change made by 32-2022 s.2(5) is not in the quoted text."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M082-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "The identification of the document (a caveat under Registration of Documents Ordinance s.32(1)), the recipient (the Registrar of Lands, s.32(2) with s.2(2) and s.14(1)) and the effect (s.32(3) to (6) with s.33, s.34 and s.43(2)) all hold on the corpus text at October 2019, and all fifteen excerpts are verbatim. authority_requirement stays statute_only: no Roman-Dutch doctrine or judicial gloss is needed to state what the document is, to whom it goes, or what follows from registering it. The question is downgraded because the Application paragraph of the gold prose imports a 2022 form-content requirement into a 2019 answer, and two claims cannot be settled from the corpus. s.32(3) was promoted from supporting to indispensable; hop count stays at 2."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "temporal_scope_of_gold_prose",
+      "researcher_position": "The Application paragraph advises that the caveat should describe the land, with its boundaries and the volume and folio, presented as the October 2019 position.",
+      "verifier_position": "No corpus text in force at October 2019 imposes that content requirement. s.32(1) requires only a caveat in the prescribed form, and the Second Schedule that would fix the form's content is not in the corpus. The boundaries-and-volume-and-folio requirement is the language of Registration of Documents (Amendment) Act No. 32 of 2022 s.2(1)(b)(iv), which the map itself correctly excludes as post-dating the matter. The sentence should be struck or resourced by a lawyer; the verifier may not rewrite gold prose.",
+      "supporting_sources": [
+        "23-1927/s32",
+        "23-1927/s50",
+        "32-2022/s2"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "identification_of_the_prescribed_form",
+      "researcher_position": "CL-M082-Q01-002 states as a direct rule that the prescribed caveat form is a form of the Second Schedule.",
+      "verifier_position": "s.50 says only that the forms contained in the Second Schedule are to be used and may be altered by regulation, and s.49 makes prescribed mean prescribed by regulation. The Second Schedule is absent from the corpus, so that the caveat form sits in it rather than in a regulation made under s.49 is an inference. It is a plausible one, since 32-2022 s.2 places the caveat in Form VIII of that Schedule, but that is 2022 evidence for a 2019 proposition. Claim marked disputed.",
+      "supporting_sources": [
+        "23-1927/s49",
+        "23-1927/s50",
+        "32-2022/s2",
+        "32-2022/s5"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M082-Q01-016 concludes that the apprehension arising from the revoked power of attorney gives reasonable cause for the caveat, so that the s.34 compensation exposure does not arise. Reasonable cause is an undefined statutory standard and nothing in the corpus lets that conclusion be drawn from the facts. Marked disputed.",
+      "CL-M082-Q01-002, marked disputed: see disagreements.",
+      "CL-M082-Q01-013 and the Rule paragraph say that presentation of an instrument obliges the Registrar to post the notice. s.32(4) is passive and no corpus provision names the officer bound to give the notice; the duty is inferred from s.32(1) and s.32(2). The claim is left verified because the inference is near-inevitable on the section read as a whole, but PROV-M082-003 is partially_verified for it and the gap is recorded in corpus_gaps."
+    ],
+    "temporal_issues": [
+      "Checked and cleared: the s.32 header in the corpus carries the part marker for section 4 of Act No. 22 of 1958, which could suggest that Act amended s.32. It did not. 22-1958 s.3 and s.4 substitute the headings of Chapters IV and V of the principal enactment only, so the marker is a chapter-heading artefact. The researcher's statement that s.32 was unamended at October 2019 stands.",
+      "Checked and cleared: every Registration of Documents amending Act in the corpus that predates the matter (22-1958, 27-1969, 19-1976, 50-1982, 5-1990, 21-2013) was read. None touches s.32; they reach ss.13, 21, 22, 35, 40, 48, the new s.2A and the First Schedule. 32-2022 and 18-2024 post-date the matter.",
+      "Checked and cleared: 21-2013 s.1 deems that Act to have come into operation on 1 January 2013, so the substituted caveat fee item relied on for duration was in force at October 2019.",
+      "Open: the 2022 form-content requirement carried into the gold Application paragraph. See disagreements.",
+      "PROV-M082-015 is labelled subsection (3) and (5) but quotes only the new subsection (3); the thirty-to-sixty-day extension is not in the excerpt. Marked partially_verified."
+    ],
+    "missing_definitions_or_exceptions": [
+      "s.8 proviso: the excerpt of s.8(b) omits the eleven-limb proviso that removes certain instruments from the deeming provision. None of the exclusions covers a deed of transfer, so the answer is unaffected, but the exception is recorded nowhere in the map. PROV-M082-009 marked partially_verified.",
+      "s.49 (power to make regulations) is not in the map, although it is what gives prescribed form, prescribed particulars and prescribed manner their meaning throughout the answer.",
+      "The corpus holds no definition of caveat, land or prescribed reachable through defs for 23-1927, and edges for 23-1927/s32 return no outgoing or incoming links at all, including no amends edge from 32-2022/s2. The graph could not be used to find omissions here, so every check was made by reading the sections.",
+      "Not added, deliberately: s.44 (destruction of retained documents two years after expiry of registration) mentions caveats but adds nothing the question asks about.",
+      "No alternative Act was missed. The Registration of Title Act No. 21 of 1998 contains no caveat provision in this corpus, and the priority notice in s.30 of the Ordinance serves a different purpose, so the caveat is the only answer available."
+    ],
+    "case_law_dependence": [
+      "None. The answer cites no case. Case law would be needed to decide whether a particular instrument was in fact void or voidable, but the question asks only what the document is, to whom it goes and what its effect is, so statute_only is correct."
+    ],
+    "enrichment_issues": [
+      "FACT-M082-Q01-004 and FACT-M082-Q01-005 pre-supply the machinery the answer must identify: an address in Sri Lanka at which anything may be posted, and an ability to pay whatever fee is charged. Neither names a statute or a section, so they are not literal leaks, but they telegraph s.32(4) and s.32(3) and make the question easier than the original. A lawyer should decide whether they are acceptable.",
+      "FACT-M082-Q01-005 is labelled synthetic_neutral, yet its counterfactual_effect describes an outcome change (a shorter period would let the caveat lapse and s.32(5) would not operate). The counterfactual is about a different fact rather than about the absence of this one, so the label is defensible, but it reads as decisive.",
+      "FACT-M082-Q01-003's counterfactual_effect asserts the same reasonable-cause conclusion for which CL-M082-Q01-016 was marked disputed."
+    ],
+    "duplicate_or_leak_issues": [
+      "The enriched background does not use the words caveat, Registrar or Ordinance, gives no section number and does not state the conclusion. Duplication against other matters was not checked, since the verifier may not read other matters' directories."
+    ]
+  },
+  "lawyer_questions": [
+    "Should the sentence in the Application paragraph requiring the caveat to describe the land with its boundaries and the volume and folio be struck from the October 2019 answer, given that it is the requirement introduced by Act No. 32 of 2022 s.2(1)(b)(iv) and the 1927 Second Schedule form is not in the corpus?",
+    "At October 2019, was the prescribed caveat form a form of the Second Schedule, or a form prescribed by regulation under s.49?",
+    "Should the gold answer assert that reasonable cause exists on these facts, or state only that the caveator is exposed under s.34 if reasonable cause is absent?",
+    "Are the enrichment facts about the postal address and the ability to pay the fee acceptable, or do they give away too much of the s.32(3) and s.32(4) machinery?"
+  ]
+}

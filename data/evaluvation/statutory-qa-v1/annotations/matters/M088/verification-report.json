@@ -1,0 +1,163 @@
+{
+  "benchmark_matter_id": "M088",
+  "verifier": "verifier-M088",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:17:11Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M088-001",
+      "decision": "verified",
+      "note": "12-2006/s3(1) shown in full and checked verbatim; charges duty on every specified instrument executed, drawn or presented in Sri Lanka at the rate the Minister determines by Gazette Order. in_force_from_year 2006, no amendment_events, so the text applies at 2019-04."
+    },
+    {
+      "provision_id": "PROV-M088-002",
+      "decision": "verified",
+      "note": "12-2006/s4 checked verbatim; paragraph (i) 'a lease or hire of any property' is a specified instrument for the purposes of s.3. No amendment events."
+    },
+    {
+      "provision_id": "PROV-M088-003",
+      "decision": "verified",
+      "note": "12-2006/s6(c) checked verbatim; the amendment_events on s.6 are all 10-2008 s.2, which predates 2019-04, so the consolidated text is the right version."
+    },
+    {
+      "provision_id": "PROV-M088-004",
+      "decision": "verified",
+      "note": "12-2006/s8(1) checked verbatim; substituted by 10-2008 s.3, which predates the matter date. The excerpt omits the opening words 'Otherwise than, when stamp duty is compounded in terms of section 7', but the why_relevant correctly records that s.8(1) is the fallback route."
+    },
+    {
+      "provision_id": "PROV-M088-005",
+      "decision": "verified",
+      "note": "12-2006/s8(2) checked verbatim; substituted by 10-2008 s.3, which predates the matter date. This is the provision that actually answers M088-Q02."
+    },
+    {
+      "provision_id": "PROV-M088-006",
+      "decision": "partially_verified",
+      "note": "Wording verbatim and unamended, but the role is overstated. Section 9 reaches only duty payable to a Provincial Council in respect of List I of the Ninth Schedule, which is not in the corpus, and 6-1990/s37 charges only transfers, court documents and motor vehicle transfers, not leases. Demoted from indispensable to background for M088-Q02."
+    },
+    {
+      "provision_id": "PROV-M088-007",
+      "decision": "verified",
+      "note": "12-2006/s13 checked verbatim; a lease is none of the three carved-out categories, so the researcher's reason for setting Act No. 43 of 1982 aside holds. A confirming search found no lease rate schedule in 43-1982 either (s.71 is the interpretation section; s.19 and s.24 are the only lease-facing sections and neither fixes a rate)."
+    },
+    {
+      "provision_id": "PROV-M088-008",
+      "decision": "partially_verified",
+      "note": "Excerpt is a verbatim copy of the corpus body, but paragraph (a) is corrupted in the corpus ('a transfer of situated in the immovable property Western Province'). The negative inference drawn from it, that the Western Province statute does not charge leases, is the load-bearing use here, so the Gazette text should be checked before a lawyer relies on it."
+    },
+    {
+      "provision_id": "PROV-M088-009",
+      "decision": "partially_verified",
+      "note": "The quoted words precede 'shall be of force', the point from which 30-2022 s.2 repealed and substituted the rest of the section, so the excerpt is temporally safe for 2019-04. The execution and attestation requirement in force at April 2019 is not itself in the corpus, which holds only the post-4-2024 text; it is reachable indirectly through 7-1840/s19 and 17-1852/s2, both of which recite that s.2 requires notarial execution."
+    },
+    {
+      "provision_id": "PROV-M088-901",
+      "decision": "verified",
+      "note": "Added by the verifier. 12-2006/s2, Commissioner-General charged with implementation and administration of the Act; excerpt checked verbatim."
+    },
+    {
+      "provision_id": "PROV-M088-902",
+      "decision": "verified",
+      "note": "Added by the verifier. 12-2006/s12, regulation-making power; excerpt checked verbatim. This is the missing link behind the words 'prescribed bank' and 'prescribed form' in s.8(2), which s.14 does not define."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M088-901",
+      "reason": "The researcher's map answered 'to whom do you pay' without any provision showing who administers the Act. Section 2 puts implementation and administration on the Commissioner-General, which anchors the point that duty under Act No. 12 of 2006 is a centrally administered duty collected through s.8 machinery, and it is part of why the Provincial Council limb needed testing. Recorded as background for M088-Q02."
+    },
+    {
+      "provision_id": "PROV-M088-902",
+      "reason": "Section 8(2) turns on 'a prescribed bank' and a certificate 'in the prescribed form'. Section 14, the interpretation section, defines only 'Assessor', 'Commissioner-General' and 'Inland Revenue Act', and 'defs 12-2006 prescribed' returns nothing, so the prescription can only come from regulations under s.12. Adding s.12 makes the corpus gap traceable to a section rather than left as a bare assertion. Recorded as supporting for M088-Q02."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M088-Q01",
+      "research_status_before": "blocked_missing_authority",
+      "research_status_after": "blocked_missing_authority",
+      "authority_requirement_after": "statute_only",
+      "note": "Upheld. Section 3(1) leaves the rate to a Gazette Order and no Order, rate schedule or basis-of-computation rule for leases is in the corpus; independent searches ('rate of stamp duty payable on a lease of immovable property', grep 'lease' over 43-1982, grep 'stamp duty' over 6-1990) found nothing that fixes a lease rate. All five claims verified; the block is correctly placed on the arithmetic, not on chargeability."
+    },
+    {
+      "benchmark_question_id": "M088-Q02",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "Downgraded. The prescribed-bank answer under s.8(2), the adhesive-stamp fallback under s.8(1) and the lessee's liability under s.6(c) are all verified. The Provincial Council limb is not: claim CL-M088-Q02-008 is rejected and the closing sentence of the gold answer carries the same proposition. Since the verifier may not rewrite the gold prose, the question cannot stand as proposed gold. Provision roles were also corrected: s.9 demoted to background, s.6(c) promoted to indispensable, s.12 added as supporting, s.2 added as background; hop count stays at 2 with a rewritten basis."
+    },
+    {
+      "benchmark_question_id": "M088-Q03",
+      "research_status_before": "reserved",
+      "research_status_after": "reserved",
+      "authority_requirement_after": "mixed_statute_and_case",
+      "note": "Upheld. An independent corpus-wide grep for 'lessee' returns only the Land Reform Law statutory-lease regime, the Notaries (Amendment) attestation form of 2022 and incidental references; nothing supplies the covenants of a lessee in a private lease. The corpus reaches only the form of the instrument, so 'mixed_statute_and_case' is right and a statute-only gold answer is not available."
+    },
+    {
+      "benchmark_question_id": "M088-Q04",
+      "research_status_before": "reserved",
+      "research_status_after": "reserved",
+      "authority_requirement_after": "mixed_statute_and_case",
+      "note": "Upheld on the same footing. No corpus provision names or regulates a reddendum, and none governs how an advance of rent or a refundable deposit is to be expressed in a rent-reserving clause. Claim CL-M088-Q04-002 carries no provision, correctly, because it is a restatement of scenario facts."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "provision_role_and_unsupported_conclusion",
+      "researcher_position": "Section 9 of Act No. 12 of 2006 is indispensable to M088-Q02, and because the premises are at Nawala Road, Rajagiriya, the Provincial Council entitled to this lease duty under s.9 is the Western Provincial Council.",
+      "verifier_position": "Section 9 is background only. It operates on duty 'payable to a Provincial Council in respect of documents and instruments referred to in List I of the Ninth Schedule to the Constitution'. Whether lease duty is such a duty cannot be established from the corpus, and the one provincial instrument in the corpus points the other way: 6-1990/s37 charges instruments of transfer of immovable property, documents filed in court and motor vehicle transfers in the Western Province, and does not charge leases. The verified answer to 'to whom do you pay' on these facts is the prescribed bank under s.8(2), with the Act administered by the Commissioner-General under s.2.",
+      "supporting_sources": ["12-2006/s9", "12-2006/s8", "12-2006/s2", "6-1990/s37", "6-1990/s39", "6-1990/s51"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "permissive_stated_as_mandatory",
+      "researcher_position": "Claim CL-M088-Q02-006: because the lease concerns immovable property, the duty on it is paid to a prescribed bank and the bank's certificate is affixed to the lease agreement.",
+      "verifier_position": "Section 8(2) says the duty 'may be paid' to a prescribed bank; it is an alternative to the general adhesive-stamp route in s.8(1), not the only lawful route. The claim as drafted states a permissive provision as mandatory and is marked disputed.",
+      "supporting_sources": ["12-2006/s8"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "temporal_source_of_notarial_requirement",
+      "researcher_position": "PROV-M088-009 records that the quoted words of 7-1840/s2 predate the 2022 and 2024 amendments and are unaffected by them.",
+      "verifier_position": "Agreed as to the quoted words: 30-2022 s.2 repealed only from 'shall be of force' onwards, and the excerpt stops before that phrase. But the consequence the claims draw, that the deed must be in writing and notarially executed and attested, sits in the repealed-and-substituted part, so the April 2019 wording of that requirement is not in the corpus at all. The claims are left verified because 7-1840/s19 and 17-1852/s2 both recite the requirement and are unamended, but the primary text for the matter date is missing.",
+      "supporting_sources": ["7-1840/s2", "7-1840/s19", "17-1852/s2", "30-2022/s2", "4-2024/s2"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M088-Q02-008 rejected: s.9 plus the location of the premises does not establish that duty on a lease is a Provincial Council duty, and the second cited provision, 6-1990/s37, contradicts rather than supports the step.",
+      "CL-M088-Q02-006 disputed: states the permissive 'may be paid' of s.8(2) as a mandatory route.",
+      "Not a claim, but noted: the gold answer for M088-Q02 asserts in prose that the duty 'is not paid to the notary'. No corpus provision was found either way; nothing in Act No. 12 of 2006 mentions a notary as a collector."
+    ],
+    "temporal_issues": [
+      "7-1840/s2: the corpus holds the post-4-2024 consolidated text. 30-2022 s.2 repealed everything from 'shall be of force' to the end of the section, so the execution requirement in force in April 2019 is not in the corpus. The excerpt quoted in PROV-M088-009 is before that cut and is unaffected.",
+      "12-2006 ss.6 and 8 both carry 10-2008 amendment events only, all before 2019-04, so the consolidated text is the right version. Sections 3, 4, 9, 13, 2 and 12 record no amendment events.",
+      "6-1990/s37 records no amendment events, so the 1990 text stands for 2019-04. Whether the Western Province statute was in fact amended after 1990 cannot be tested inside the corpus."
+    ],
+    "missing_definitions_or_exceptions": [
+      "'Prescribed bank' and 'prescribed form' in s.8(2) are undefined. 12-2006/s14 defines only 'Assessor', 'Commissioner-General' and 'Inland Revenue Act'; 'defs 12-2006 prescribed' and 'defs 12-2006 lease' both return nothing. Added PROV-M088-902 (s.12, regulations) to make the gap traceable.",
+      "Section 8(1) is expressly subject to compounding under s.7. Section 7 does not extend to leases on its face (its categories are insurers, licensing authorities, service providers, large employers and Ministerially specified categories), so the omission does not change the answer, but the exception was checked.",
+      "Section 5 allows the Minister to exempt instruments by Gazette Order. No such Order is in the corpus, so no exemption for a residential lease could be ruled in or out.",
+      "'Specified instrument' is defined in s.4 and correctly cited. No definition of 'lease' exists anywhere in Act No. 12 of 2006."
+    ],
+    "case_law_dependence": [
+      "M088-Q03 and M088-Q04 are correctly classified mixed_statute_and_case. Corpus-wide searches for 'reddendum', 'habendum' and 'covenant of the lessee' were re-run in substance via a corpus-wide grep for 'lessee'; nothing in the corpus supplies the content of a lessee's covenant or a rent-reserving clause for a private lease.",
+      "M088-Q01 and M088-Q02 need no case law. M088-Q01 is blocked by absent subordinate legislation, not by absent judicial authority, so statute_only is the right classification even though the answer cannot be completed."
+    ],
+    "enrichment_issues": [
+      "None. All four questions are candidate_action 'keep' and enrichment.applied is false on each, as required."
+    ],
+    "duplicate_or_leak_issues": [
+      "No duplicate provision ids and no overlapping role sets after the M088-Q02 reassignment.",
+      "No enriched background exists, so no leak of statute names, section numbers or conclusions into the facts.",
+      "PROV-M088-004 and PROV-M088-005 are two subsections of the same section (12-2006/s8) carried as separate provisions. That is not a duplicate: they are different routes of payment and the map uses them differently."
+    ]
+  },
+  "lawyer_questions": [
+    "Is stamp duty on a lease of immovable property in the Western Province a duty payable to the Provincial Council under List I of the Ninth Schedule, or is it a national duty under Act No. 12 of 2006 payable to a prescribed bank under s.8(2)? The Western Province Financial Statute charges only transfers, court documents and motor vehicle transfers, which suggests the latter, and the gold answer for M088-Q02 currently says the former.",
+    "Which bank, or class of bank, was prescribed under s.8(2) of Act No. 12 of 2006 and in force in April 2019, and what is the prescribed form of the certificate? The regulations are outside the corpus and the answer cannot name the payee without them.",
+    "What rate Order under s.3(1) applied to a lease in April 2019, and does the chargeable amount for a lease include the year's rent paid in advance and the refundable deposit of Rs. 200,000, or only the aggregate rent for the term? Without both, M088-Q01 cannot be turned into a number.",
+    "Should the benchmark hold the April 2019 text of s.2 of the Prevention of Frauds Ordinance as a separate corpus entry? The corpus carries only the post-2024 consolidation, and the 2019 execution requirement is currently reachable only through 7-1840/s19 and 17-1852/s2.",
+    "Paragraph (a) of 6-1990/s37 is garbled in the corpus. Should the Gazette text be substituted before any inference is drawn from what that section does or does not charge?"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "benchmark_matter_id": "M094",
+  "source_matter_id": "P14-Q07-M01",
+  "grouping_key": "P14-Q07-M01",
+  "paper_no": 14,
+  "question_no": 7,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Sarth Perera of No.14, Saranankara Mawatha, Dehiwala gives you a copy of his Last Will bearing No.3250 dated 8th August 2009 attested by Peter Perera Notary Public and states that he wants to change clause 5 in the Last Will such that he would give his House and property called Malwatta at Moratuwa to his Daughter Himali and his house at No.14, Dammadara Mawatha, Ratmalana to his son Hemal both subject to life interest of his wife Kumudu. He also wishes to add to the Last Will a clause thereby that he would give Rs.250, 000/- in cash to his driver Bandula and a sum of Rs.50, 000/- to his servant Karunadasa. All other clauses in the Last Will would remain unchanged.",
+    "normalized": "Sarth Perera of No.14, Saranankara Mawatha, Dehiwala gives you a copy of his Last Will bearing No.3250 dated 8th August 2009 attested by Peter Perera Notary Public and states that he wants to change clause 5 in the Last Will such that he would give his House and property called Malwatta at Moratuwa to his Daughter Himali and his house at No.14, Dammadara Mawatha, Ratmalana to his son Hemal both subject to life interest of his wife Kumudu. He also wishes to add to the Last Will a clause thereby that he would give Rs.250, 000/- in cash to his driver Bandula and a sum of Rs.50, 000/- to his servant Karunadasa. All other clauses in the Last Will would remain unchanged.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P14-Q07-P03"
+        ]
+      },
+      {
+        "segment_index": 0,
+        "field": "prior_background",
+        "atomic_ids": [
+          "P14-Q07-P04"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M094-Q01",
+      "atomic_id": "P14-Q07-P03",
+      "part_uid": "paper-14/q7/3",
+      "part_id": "3",
+      "item_id": null,
+      "marks": 4,
+      "pdf_page": 58,
+      "question_original": "Draft the Codicil to Last Will No.3250",
+      "question_normalized": "Draft the Codicil to Last Will No.3250",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Sarth Perera of No.14, Saranankara Mawatha, Dehiwala gives you a copy of his Last Will bearing No.3250 dated 8th August 2009 attested by Peter Perera Notary Public and states that he wants to change clause 5 in the Last Will such that he would give his House and property called Malwatta at Moratuwa to his Daughter Himali and his house at No.14, Dammadara Mawatha, Ratmalana to his son Hemal both subject to life interest of his wife Kumudu. He also wishes to add to the Last Will a clause thereby that he would give Rs.250, 000/- in cash to his driver Bandula and a sum of Rs.50, 000/- to his servant Karunadasa. All other clauses in the Last Will would remain unchanged.",
+      "effective_background_normalized": "Sarth Perera of No.14, Saranankara Mawatha, Dehiwala gives you a copy of his Last Will bearing No.3250 dated 8th August 2009 attested by Peter Perera Notary Public and states that he wants to change clause 5 in the Last Will such that he would give his House and property called Malwatta at Moratuwa to his Daughter Himali and his house at No.14, Dammadara Mawatha, Ratmalana to his son Hemal both subject to life interest of his wife Kumudu. He also wishes to add to the Last Will a clause thereby that he would give Rs.250, 000/- in cash to his driver Bandula and a sum of Rs.50, 000/- to his servant Karunadasa. All other clauses in the Last Will would remain unchanged.",
+      "source_quote": "3. Sarth Perera of No.14, Saranankara Mawatha, Dehiwala gives you a copy of his Last Will bearing No.3250 dated 8th August 2009 attested by Peter Perera Notary Public and states that he wants to change clause 5 in the Last Will such that he would give his House and property called Malwatta at Moratuwa to his Daughter Himali and his house at No.14, Dammadara Mawatha, Ratmalana to his son Hemal both subject to life interest of his wife Kumudu. He also wishes to add to the Last Will a clause thereby that he would give Rs.250, 000/- in cash to his driver Bandula and a sum of Rs.50, 000/- to his servant Karunadasa. All other clauses in the Last Will would remain unchanged. Draft the Codicil to Last Will No.3250",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.9,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    },
+    {
+      "benchmark_question_id": "M094-Q02",
+      "atomic_id": "P14-Q07-P04",
+      "part_uid": "paper-14/q7/4",
+      "part_id": "4",
+      "item_id": null,
+      "marks": 4,
+      "pdf_page": 59,
+      "question_original": "You are a Notary Licensed to practice in Sinhala. Draft the Attestation of the said Codicil",
+      "question_normalized": "You are a Notary Licensed to practice in Sinhala. Draft the Attestation of the said Codicil",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": "Sarath Perera is not known to you. He signs in sinhala as \"S. Perera\". He has brought 2 friends namely Ranjith De Silva and Kamani De Silva both of No.20, Sri Saranankara Rd, Dehiwala who are known to you and who sign in English characters."
+      },
+      "effective_background_original": "Sarth Perera of No.14, Saranankara Mawatha, Dehiwala gives you a copy of his Last Will bearing No.3250 dated 8th August 2009 attested by Peter Perera Notary Public and states that he wants to change clause 5 in the Last Will such that he would give his House and property called Malwatta at Moratuwa to his Daughter Himali and his house at No.14, Dammadara Mawatha, Ratmalana to his son Hemal both subject to life interest of his wife Kumudu. He also wishes to add to the Last Will a clause thereby that he would give Rs.250, 000/- in cash to his driver Bandula and a sum of Rs.50, 000/- to his servant Karunadasa. All other clauses in the Last Will would remain unchanged.\n\nSarath Perera is not known to you. He signs in sinhala as \"S. Perera\". He has brought 2 friends namely Ranjith De Silva and Kamani De Silva both of No.20, Sri Saranankara Rd, Dehiwala who are known to you and who sign in English characters.",
+      "effective_background_normalized": "Sarth Perera of No.14, Saranankara Mawatha, Dehiwala gives you a copy of his Last Will bearing No.3250 dated 8th August 2009 attested by Peter Perera Notary Public and states that he wants to change clause 5 in the Last Will such that he would give his House and property called Malwatta at Moratuwa to his Daughter Himali and his house at No.14, Dammadara Mawatha, Ratmalana to his son Hemal both subject to life interest of his wife Kumudu. He also wishes to add to the Last Will a clause thereby that he would give Rs.250, 000/- in cash to his driver Bandula and a sum of Rs.50, 000/- to his servant Karunadasa. All other clauses in the Last Will would remain unchanged.\n\nSarath Perera is not known to you. He signs in sinhala as \"S. Perera\". He has brought 2 friends namely Ranjith De Silva and Kamani De Silva both of No.20, Sri Saranankara Rd, Dehiwala who are known to you and who sign in English characters.",
+      "source_quote": "4. Sarath Perera is not known to you. He signs in sinhala as \"S. Perera\". He has brought 2 friends namely Ranjith De Silva and Kamani De Silva both of No.20, Sri Saranankara Rd, Dehiwala who are known to you and who sign in English characters. You are a Notary Licensed to practice in Sinhala. Draft the Attestation of the said Codicil",
+      "classification": {
+        "context_sources": [
+          "prior",
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.85,
+        "flags": [
+          "role_fact_in_question"
+        ]
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2019-04",
+  "exam_session": "APRIL 2019",
+  "matter_tier": "A",
+  "tier_a_question_count": 2
+}

@@ -1,0 +1,102 @@
+{
+  "benchmark_matter_id": "M047",
+  "source_matter_id": "P08-Q07-M01",
+  "grouping_key": "P08-Q07-M01",
+  "paper_no": 8,
+  "question_no": 7,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Rohan Perera purchased a house and property in December 1977 for Rs.250,000/-, and done improvements to the house to the value of Rs.800,000/-. The property is presently valued at Rs.6,500,000/-. He wishes to gift the said property to his son Wasantha.",
+    "normalized": "Rohan Perera purchased a house and property in December 1977 for Rs.250,000/-, and done improvements to the house to the value of Rs.800,000/-. The property is presently valued at Rs.6,500,000/-. He wishes to gift the said property to his son Wasantha.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "group_background",
+        "atomic_ids": [
+          "P08-Q07-P01-I01",
+          "P08-Q07-P01-I02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M047-Q01",
+      "atomic_id": "P08-Q07-P01-I01",
+      "part_uid": "paper-08/q7/1/i",
+      "part_id": "1",
+      "item_id": "i",
+      "marks": null,
+      "pdf_page": 34,
+      "question_original": "What is the value you would mention in the Deed of Gift for stamp duty purpose?",
+      "question_normalized": "What is the value you would mention in the Deed of Gift for stamp duty purpose?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Rohan Perera purchased a house and property in December 1977 for Rs.250,000/-, and done improvements to the house to the value of Rs.800,000/-. The property is presently valued at Rs.6,500,000/-. He wishes to gift the said property to his son Wasantha.",
+      "effective_background_normalized": "Rohan Perera purchased a house and property in December 1977 for Rs.250,000/-, and done improvements to the house to the value of Rs.800,000/-. The property is presently valued at Rs.6,500,000/-. He wishes to gift the said property to his son Wasantha.",
+      "source_quote": "i. What is the value you would mention in the Deed of Gift for stamp duty purpose?",
+      "classification": {
+        "context_sources": [
+          "group"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "property_identity",
+        "property_location",
+        "instrument_date"
+      ]
+    },
+    {
+      "benchmark_question_id": "M047-Q02",
+      "atomic_id": "P08-Q07-P01-I02",
+      "part_uid": "paper-08/q7/1/ii",
+      "part_id": "1",
+      "item_id": "ii",
+      "marks": null,
+      "pdf_page": 34,
+      "question_original": "What is the stamp duty payable on the Deed of Gift?",
+      "question_normalized": "What is the stamp duty payable on the Deed of Gift?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Rohan Perera purchased a house and property in December 1977 for Rs.250,000/-, and done improvements to the house to the value of Rs.800,000/-. The property is presently valued at Rs.6,500,000/-. He wishes to gift the said property to his son Wasantha.",
+      "effective_background_normalized": "Rohan Perera purchased a house and property in December 1977 for Rs.250,000/-, and done improvements to the house to the value of Rs.800,000/-. The property is presently valued at Rs.6,500,000/-. He wishes to gift the said property to his son Wasantha.",
+      "source_quote": "ii. What is the stamp duty payable on the Deed of Gift?",
+      "classification": {
+        "context_sources": [
+          "group"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "property_location",
+        "instrument_date",
+        "property_identity"
+      ]
+    }
+  ],
+  "matter_reference_date": "2022-10",
+  "exam_session": "OCTOBER 2022",
+  "matter_tier": "A",
+  "tier_a_question_count": 2
+}

@@ -1,0 +1,600 @@
+{
+  "benchmark_matter_id": "M066",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M066",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:42:35Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2020-10",
+  "matter_reference_date_basis": "exam_session OCTOBER 2020 recorded in candidates/matters/M066.json; the law is taken as it stood in October 2020, so the Prevention of Frauds (Amendment) Acts No. 30 of 2022 and No. 4 of 2024 and the Notaries (Amendment) Acts No. 31 of 2022 and No. 6 of 2024 are all post-dated and are not applied.",
+  "corpus_gaps": [
+    "No rate of stamp duty is in the corpus. Western Province Financial Statute No. 6 of 1990 s.37 charges duty on a transfer of immovable property in the Province 'at the prescribed rate', and s.77 leaves the rate to regulations published in the Gazette. Neither the regulations nor any rate schedule has been extracted, so the arithmetic answer to Q02 cannot be produced from the corpus.",
+    "The corpus holds only the consolidated (post-2024) text of Prevention of Frauds Ordinance s.2 and Notaries Ordinance s.31. The October 2020 wording of Prevention of Frauds Ordinance s.2 (writing signed by the party in the presence of a licensed notary and two or more witnesses, duly attested) is not available anywhere in the corpus; it can only be reconstructed from the amending Acts 30-2022 s.2 and 4-2024 s.2.",
+    "The Schedules to the Notaries Ordinance are not extracted as corpus sections. Form E (attestation) and Form F (protocol register) referred to in s.31(21) and s.31(24) exist only as references inside the section bodies.",
+    "No statute in the corpus prescribes the form or the operative clauses of a conveyance (recitals of the transferor's title, words of transfer, receipt of consideration, habendum, covenant against eviction). Those come from Roman-Dutch common law and notarial precedent, which are outside a statute-only corpus."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M066-001",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "2(1) opening words",
+      "relevant_excerpt": "No sale, purchase, transfer, assignment, or mortgage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month)",
+      "why_relevant": "Brings the proposed sale of the shop premises within the notarial-execution rule: a transfer of immovable property has no force in law unless it is in writing and notarially executed, which is why the transaction must be carried out by a Deed of Transfer drawn and attested by a notary at all.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "These opening words are the 1840 text as amended in 1947 and were unchanged in October 2020. The words that follow them in the corpus body were substituted by Act No. 30 of 2022 and again by Act No. 4 of 2024; see PROV-M066-002.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-002",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "2(1)(a)",
+      "relevant_excerpt": "the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary",
+      "why_relevant": "States the execution formality that the deed must satisfy. Recorded so the verifier can see the exact corpus text, but the matter is dated October 2020 and this wording is later law.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "This paragraph was inserted by Prevention of Frauds (Amendment) Act No. 30 of 2022 s.2 and substituted by Act No. 4 of 2024 s.2, both after the matter date. In October 2020 s.2 required the writing to be signed by the party making it in the presence of a licensed notary public and two or more witnesses present at the same time, and to be duly attested by the notary and witnesses. Not treated as indispensable.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-003",
+      "section_id": "7-1840/s16",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "16",
+      "subsection": null,
+      "relevant_excerpt": "Every deed or other instrument, except any will, testament, or codicil required by this Ordinance to be executed or acknowledged before or to be attested by a notary, shall be executed, acknowledged, or attested in triplicate.",
+      "why_relevant": "The Deed of Transfer must be executed in triplicate (original, duplicate and protocol), which is why the draft has to be prepared in that form.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 16 was amended by Act No. 30 of 2022 s.5, after the matter date; the requirement of execution in triplicate itself is long-standing and was in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "31(2)",
+      "relevant_excerpt": "He shall not authenticate or attest a deed or instrument drawn in Sri Lanka by any other person, unless there shall be endorsed thereon a certificate signed by a notary certifying that such deed or instrument has been drawn by himself.",
+      "why_relevant": "The notary retained by the purchaser is expected to draw the deed himself; if it is drawn by another person the drawer's certificate must be endorsed on it before the attesting notary may attest it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (2) was not touched by the 2011, 2022 or 2024 amending Acts and stood in this form in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-005",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "31(16)(a)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument, other than a will or codicil, affecting land or other immovable property, unless the deed or instrument embodies therin or in a Schedule annexed therto an accurate and clear description of the said land or other property affected thereby, showing its boundaries, extent, situation specifying the district, pattu, korale, Divisional Secretary's Division, local authority division and the Grama Niladari Division, and the village within the District in which the land is situated",
+      "why_relevant": "Fixes what the deed must say about the shop premises at Assessment No. 2, Galle Road, Kollupitiya: boundaries, extent, situation and, for property inside a municipality, the assessment number and street name. It is also the provision that makes the omitted Schedule the ordinary place for that description.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Notaries (Amendment) Act No. 31 of 2022 s.16(9)(a) added the condominium wording at the end of paragraph (a); the words quoted here precede that insertion and were in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-006",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "31(17)(a)",
+      "relevant_excerpt": "Before any deed or instrument (other than a will or codicil) affecting any interest in land or other immovable property is drawn by him, he shall search or cause to be searched the registers in the land registry to ascertain the state of the title in regard to such land and whether any prior deed affecting any interest in such land has been registered",
+      "why_relevant": "The notary must search the land registry before drawing the deed. On these facts the search establishes that the vendor's title rests on Deed of Transfer No. 27 of 27 May 1994, and supplies the prior registration reference that has to be written on the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Paragraph (a) of rule (17) was not altered by the 2022 or 2024 amending Acts (those changed paragraph (b) and added paragraphs (c) to (e)); it stood in this form in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-007",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "31(18)",
+      "relevant_excerpt": "He shall correctly insert in letters in every deed or instrument executed before him the day, month, and year on which and the place where the same is executed, and shall sign the same.",
+      "why_relevant": "Requires the date and place of execution to be written in letters in the deed itself, which is a mandatory element of the draft even though the attestation is not asked for.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (18) is the original 1907 text and was untouched by the 2011, 2022 and 2024 amending Acts.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-008",
+      "section_id": "1-1907/s38",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "38",
+      "subsection": "38(1)",
+      "relevant_excerpt": "It shall be the duty of every notary to endeavour to ascertain the true and full consideration for the execution of any deed, and to insert and set forth the same in such deed.",
+      "why_relevant": "The full consideration of Rs. 30,000,000 must be ascertained and set out in the body of the deed; understating it is an offence under s.38(2).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1907; the fine in subsection (2) reflects the increase made by Act No. 12 of 2005, which predates the matter.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-009",
+      "section_id": "6-1990/s78",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "78",
+      "subsection": "78(1)",
+      "relevant_excerpt": "Every person drawing, making, executing or of attesting any instrument chargeable with stamp duty shall set out therein, the full names and addresses of the parties ofs such instrument, the consideration, the date and manner of payment and all other facts and circumstances affecting the chargeability of such instrument with stamp duty and the amount of the stamp duty with which it is chargeable.",
+      "why_relevant": "Independently requires the deed to state the full names and addresses of Aruna Silva and Amara Perera, the consideration, the date and manner of payment and the amount of stamp duty chargeable. It links the drafting question to the stamp duty question.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of the Statute as enacted in 1990; no amendment recorded in the corpus. Corpus text carries OCR noise ('or of attesting', 'ofs such instrument').",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-010",
+      "section_id": "6-1990/s37",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "37",
+      "subsection": "37(a)",
+      "relevant_excerpt": "There shall be charged on- (a) every instrument relating to a transfer of situated in the immovable property Western Province;",
+      "why_relevant": "The charging provision. The shop at Galle Road, Kollupitiya is immovable property in the Western Province, so the Deed of Transfer is the instrument on which provincial stamp duty is charged.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since the Statute was brought into operation under s.1; no amendment recorded in the corpus. The corpus text has transposed words ('a transfer of situated in the immovable property Western Province').",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-011",
+      "section_id": "6-1990/s37",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "37",
+      "subsection": "37 closing words",
+      "relevant_excerpt": "a stamp duty at the prescribed rate. Different rates may be prescribed in respect of different classes or categories of instruments.",
+      "why_relevant": "This is the point at which the calculation asked for in Q02 leaves the corpus: the rate is not stated in the Statute, only 'prescribed'. Without the prescribing regulation no figure can be produced.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended in the corpus. The rate actually in force in October 2020 is contained in subsidiary legislation that is not part of this corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-012",
+      "section_id": "6-1990/s77",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "77",
+      "subsection": "77(1)(a)",
+      "relevant_excerpt": "The Minister may make regulations in respect of all or any of the following matters: (a) any matter which is required or authorized by this Statute to be prescribed;",
+      "why_relevant": "Identifies where the missing rate lives: it is prescribed by regulation published in the Gazette under s.77, not by the Statute itself.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-013",
+      "section_id": "6-1990/s48",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "48",
+      "subsection": "48(1)",
+      "relevant_excerpt": "Where any property is conveyed by an instrument, the stamp duty with which such instrument is chargeable shall be calculated on the value of the property conveyed.",
+      "why_relevant": "Fixes the base of the calculation: duty runs on the value of the shop premises conveyed, not simply on the sum named as consideration.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-014",
+      "section_id": "6-1990/s106",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "106",
+      "subsection": "definition of \"value\"",
+      "relevant_excerpt": "\"value\" with reference - (a) to any property (other than immovable property which is gifted) and to any date, means the price which in the opinion of the Assessor, that property would have fetched in the open market on that date",
+      "why_relevant": "Defines the base in s.48. Because the transaction is a sale and not a gift, paragraph (a) applies and the duty base is the open-market price in the opinion of the Assessor, which the stated consideration of Rs. 30,000,000 is taken to represent unless the Assessor differs.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-015",
+      "section_id": "6-1990/s51",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "51",
+      "subsection": "51(a)",
+      "relevant_excerpt": "Except where there is an agreement to the contrary stamp duty shall be payable; (a) in the case of an instrument of transfer by the grantee;",
+      "why_relevant": "Answers the 'by whom' half of the stamp duty question: absent contrary agreement the duty falls on the grantee, that is the purchaser Amara Perera.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-016",
+      "section_id": "6-1990/s40",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "40",
+      "subsection": "40(1)",
+      "relevant_excerpt": "The stamp duty with which any instrument is chargeable shall be paid before or at the time of execution of the instrument except as otherwise permitted in this Statute and such payment shall be indicated on such instrument by means of adhesive stamps or impressed stamps or a Certificate of payment referred to in subsection (2) hereof.",
+      "why_relevant": "Sets when and how the duty is to be paid, and subsection (2) allows payment to a prescribed bank against a certificate affixed to the instrument. Relevant to advising the purchaser what he must do about the duty.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-017",
+      "section_id": "12-2006/s13",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "the provisions of the Stamp Duty Act, No. 43 of 1982, relating to the Imposition of Stamp Duty (other than any instrument relating to the transfer of immovable property, the transfer of motor vehicles or documents filed in Court), Exemptions and any other provision in the aforesaid Act, shall, in so far as the same are inconsistent with the provisions of this Act, have no operation",
+      "why_relevant": "Confirms that instruments relating to the transfer of immovable property are carved out of the national stamp duty regime, which is why the charge on this deed is looked for in the Western Province Statute rather than in the 2006 Act.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; unamended in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-018",
+      "section_id": "12-2006/s4",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "4",
+      "subsection": null,
+      "relevant_excerpt": "For the purposes of section 3, \"specified instrument\" means- (a) an affidavit; (b) a policy of insurance; (c) a warrant to act as Notary Public;",
+      "why_relevant": "Background only. The closed list of specified instruments chargeable under the 2006 Act contains no conveyance or transfer of immovable property, which corroborates that the deed in this matter is not charged under that Act.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; the excerpt reproduces the opening of the list only.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M066-019",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "31(6)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless he has an assurance that the required stamp duty is provided.",
+      "why_relevant": "Ties the notary's duty to the stamp duty answer: he may not attest the Deed of Transfer until he is satisfied that the duty has been provided for.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (6) was re-enacted in identical terms by Notaries (Amendment) Act No. 31 of 2022 s.16(4); the same words were in force in October 2020.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M066-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "Statute fixes a good deal of what must appear in a Deed of Transfer of immovable property: notarial execution in writing (Prevention of Frauds Ordinance s.2), execution in triplicate (s.16), an accurate description of the land (Notaries Ordinance s.31(16)(a)), the date and place in letters (s.31(18)), the true consideration (s.38), and the parties' names, addresses, consideration and duty (Western Province Financial Statute s.78(1)). But the exercise asks for a draft, and the skeleton of a conveyance in Sri Lanka - the recital of the transferor's derivative title, the operative words of transfer, the receipt clause, the habendum and the covenant against eviction - is Roman-Dutch common law and notarial precedent, not statute. No statute in the corpus prescribes a form for a transfer deed, and the Notaries Ordinance Schedules (Form E and Form F) are not extracted. A complete model answer therefore needs non-statutory authority.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M066-Q01-01",
+          "issue": "What instrument is required in law to pass title to the shop premises from Aruna Silva to Amara Perera, and must it be notarially executed?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M066-Q01-02",
+          "issue": "What content must the Deed of Transfer carry as a matter of statute: description of the property, parties, consideration, date and place, and the prior registration reference?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M066-Q01-03",
+          "issue": "What must the notary do before the deed is drawn, and in how many parts must it be executed?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M066-Q01-04",
+          "issue": "What form and operative clauses should the body of the deed take, given that no statute in the corpus prescribes a conveyancing precedent?",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": ["PROV-M066-001", "PROV-M066-005", "PROV-M066-007", "PROV-M066-008"],
+      "supporting_provision_ids": ["PROV-M066-002", "PROV-M066-003", "PROV-M066-004", "PROV-M066-006", "PROV-M066-009"],
+      "background_provision_ids": [],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Prevention of Frauds Ordinance s.2 makes a notarial deed necessary; that leads to the Notaries Ordinance s.31 rules that fix the deed's content, in particular rule (16)(a) on the description of the land and rule (18) on the date and place; and from there to s.38 on setting out the true consideration. Three necessary linked steps across two enactments.",
+      "reasoning_edges": [
+        {"from_provision_id": "PROV-M066-001", "to_provision_id": "PROV-M066-005", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M066-005", "to_provision_id": "PROV-M066-007", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M066-001", "to_provision_id": "PROV-M066-008", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M066-001", "to_provision_id": "PROV-M066-003", "relationship": "procedurally_requires"},
+        {"from_provision_id": "PROV-M066-001", "to_provision_id": "PROV-M066-004", "relationship": "procedurally_requires"},
+        {"from_provision_id": "PROV-M066-001", "to_provision_id": "PROV-M066-006", "relationship": "procedurally_requires"},
+        {"from_provision_id": "PROV-M066-008", "to_provision_id": "PROV-M066-009", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M066-001", "to_provision_id": "PROV-M066-002", "relationship": "qualifies"}
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Amara Perera of No. 3, Old Road, Pannipitiya wishes to retain you as his Notary for the purpose of purchasing a shop bearing Assessment No. 2, Galle Road, Kollupitiya for a sum of Rupees Thirty Million (Rs.30,000,000/=) from Aruna Silva of No.2, Nawala Road, Nawala who held and possessed the said shop premises by virtue of Deed of Transfer No.27 dated 27/05/1994 attested by A. Silva Notary Public of Colombo.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the sale of the shop premises at Assessment No. 2, Galle Road, Kollupitiya by Aruna Silva to Amara Perera for Rs. 30,000,000 must be effected by a notarially executed Deed of Transfer, and what that deed must contain when it is drawn (attestation and Schedule being excluded from the answer).",
+        "rule": "A sale or transfer of immovable property has no force or effect in law unless it is in writing and notarially executed: Prevention of Frauds Ordinance s.2. Such a deed must be executed in triplicate: s.16 of the same Ordinance. Before drawing a deed affecting an interest in land the notary must search the land registry to ascertain the state of the title and whether any prior deed has been registered: Notaries Ordinance s.31(17)(a). The deed must embody, in the deed itself or in an annexed Schedule, an accurate and clear description of the property showing its boundaries, extent and situation, and, for property inside a municipality, the assessment number and street name: s.31(16)(a). The day, month, year and place of execution must be inserted in letters: s.31(18). The notary must ascertain the true and full consideration and set it forth in the deed: s.38. Where the notary attests a deed drawn by another, that other's certificate must be endorsed on it: s.31(2). For an instrument chargeable with stamp duty, the full names and addresses of the parties, the consideration, the date and manner of payment and the amount of duty chargeable must be set out in the instrument: Western Province Financial Statute s.78(1). Beyond these statutory requirements the shape of the instrument - the recital of the transferor's title, the operative words of transfer, the receipt of consideration, the habendum and the covenant against eviction - rests on Roman-Dutch common law and notarial practice rather than on any statute in this corpus.",
+        "application": "The subject is a shop, that is immovable property, and the transaction is a sale for Rs. 30,000,000, so s.2 of the Prevention of Frauds Ordinance applies and nothing short of a notarial Deed of Transfer will pass title. Before drawing it the notary must search the Colombo land registry against the folio on which Deed of Transfer No. 27 of 27 May 1994 attested by A. Silva, Notary Public, is registered, to confirm that Aruna Silva holds the premises and to see what encumbrances stand registered; the volume and folio reference then goes on the face of the deed. The deed is drawn between Aruna Silva of No. 2, Nawala Road, Nawala as vendor and Amara Perera of No. 3, Old Road, Pannipitiya as purchaser, with both addresses stated as s.78(1) requires. It recites how the vendor came by the premises under the 1994 deed, states the consideration of Rupees Thirty Million (Rs. 30,000,000) truly and in full as s.38 requires together with the vendor's acknowledgement of receipt, and carries the operative words by which the vendor transfers, assigns, sets over and conveys the premises unto the purchaser, his heirs, executors, administrators and assigns. The premises must be identified by assessment number, street and boundaries as s.31(16)(a) requires; the question dispenses with the Schedule, so that description is to be shown in the body or referred to as being in the Schedule. The date and place of execution are written in letters under s.31(18), and the deed is prepared in triplicate under s.16. The habendum, the vendor's covenant that he is lawfully entitled and that the purchaser shall peaceably hold the premises free from eviction, and the concluding testimonium follow the ordinary conveyancing precedent rather than any statutory form.",
+        "conclusion": "The transaction can only be carried through by a notarially executed Deed of Transfer, prepared in triplicate, which names and addresses both parties, recites the vendor's title under Deed No. 27 of 27 May 1994, states the full consideration of Rs. 30,000,000 and its receipt, identifies the shop at Assessment No. 2, Galle Road, Kollupitiya with its boundaries and extent, carries the operative words of transfer, the habendum and the covenant against eviction, and bears the date and place of execution in letters. The statutory content requirements are settled, but the drafting form itself is not laid down by any statute in the corpus, so this question is reserved for authority beyond the statute book."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M066-Q01-001",
+          "claim_text": "A sale or transfer of immovable property is of no force in law unless it is in writing and notarially executed, so the purchase must be carried out by a Deed of Transfer.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M066-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q01-002",
+          "claim_text": "The deed must be executed in triplicate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M066-003"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q01-003",
+          "claim_text": "Before drawing a deed affecting an interest in land the notary must search the land registry to ascertain the state of the title and whether any prior deed has been registered.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M066-006"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q01-004",
+          "claim_text": "The deed must contain an accurate and clear description of the property showing its boundaries, extent and situation, and, where the land lies in a municipality, the assessment number and street name.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M066-005"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q01-005",
+          "claim_text": "The day, month and year of execution and the place of execution must be inserted in the deed in letters.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M066-007"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q01-006",
+          "claim_text": "The true and full consideration must be ascertained by the notary and set forth in the deed, and the parties' full names and addresses, the consideration and the manner of payment must also be set out.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M066-008", "PROV-M066-009"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q01-007",
+          "claim_text": "On these facts the deed is between Aruna Silva of No. 2, Nawala Road, Nawala as vendor and Amara Perera of No. 3, Old Road, Pannipitiya as purchaser, and must recite the vendor's title under Deed of Transfer No. 27 dated 27 May 1994 attested by A. Silva, Notary Public of Colombo, which the registry search will confirm.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M066-006", "PROV-M066-009"],
+          "supporting_fact_ids": ["BG-1", "BG-2"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q01-008",
+          "claim_text": "The consideration to be stated in the deed is Rupees Thirty Million (Rs. 30,000,000), with the vendor's acknowledgement of receipt.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M066-008"],
+          "supporting_fact_ids": ["BG-4"],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q01-009",
+          "claim_text": "The property must be identified in the deed as the shop bearing Assessment No. 2, Galle Road, Kollupitiya, with its boundaries and extent, the assessment number and street name being required because the premises lie within a municipality.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M066-005"],
+          "supporting_fact_ids": ["BG-3"],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q01-010",
+          "claim_text": "The operative words of transfer, the habendum and the covenant against eviction that the draft must carry are drawn from Roman-Dutch common law and notarial precedent, and are not prescribed by any statute in the corpus, so a complete model draft cannot be produced on statutory authority alone.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M066-001"],
+          "supporting_fact_ids": ["BG-1", "BG-2", "BG-3", "BG-4"],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "The question asks for a draft. The mandatory statutory content of a Deed of Transfer is fully traceable to the corpus, but the conveyancing form that the marks are awarded for - recital of derivative title, operative words of transfer, receipt clause, habendum, covenant against eviction - comes from Roman-Dutch common law and notarial precedent, and no statute in the corpus prescribes a form for a transfer deed. The Notaries Ordinance Schedules, including Form E, are also not extracted. Reserved as mixed_statute_and_case.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M066-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Every step of the calculation is statutory: the charge on an instrument transferring immovable property in the Western Province (Western Province Financial Statute s.37), the base on which duty is computed (s.48(1) read with the definition of 'value' in s.106), the person liable (s.51(a)) and the time and mode of payment (s.40). No case law or common law doctrine is needed. The obstacle is not the kind of authority but its availability: the operative rate is prescribed by regulation under s.77 and no such regulation or rate schedule is in the corpus.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M066-Q02-01",
+          "issue": "Under which enactment is stamp duty charged on a deed transferring immovable property situated in Kollupitiya, given that the Stamp Duty (Special Provisions) Act No. 12 of 2006 carves out transfers of immovable property?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M066-Q02-02",
+          "issue": "On what amount is the duty computed - the stated consideration of Rs. 30,000,000 or the value of the property conveyed?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M066-Q02-03",
+          "issue": "What rate applies, and can the figure be produced from the corpus?",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M066-Q02-04",
+          "issue": "Who must pay the duty and when?",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": ["PROV-M066-010", "PROV-M066-011", "PROV-M066-013", "PROV-M066-014", "PROV-M066-015"],
+      "supporting_provision_ids": ["PROV-M066-012", "PROV-M066-016", "PROV-M066-017", "PROV-M066-019", "PROV-M066-009"],
+      "background_provision_ids": ["PROV-M066-018"],
+      "legal_hop_count": 4,
+      "hop_count_basis": "s.37 charges the duty at a prescribed rate; s.48(1) fixes the base as the value of the property conveyed; s.106 defines 'value' as the open-market price; s.51(a) puts the liability on the grantee. Four necessary linked steps, with the rate itself hanging off s.77 outside the corpus.",
+      "reasoning_edges": [
+        {"from_provision_id": "PROV-M066-010", "to_provision_id": "PROV-M066-013", "relationship": "qualifies"},
+        {"from_provision_id": "PROV-M066-013", "to_provision_id": "PROV-M066-014", "relationship": "defines"},
+        {"from_provision_id": "PROV-M066-010", "to_provision_id": "PROV-M066-011", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M066-011", "to_provision_id": "PROV-M066-012", "relationship": "cross_references"},
+        {"from_provision_id": "PROV-M066-010", "to_provision_id": "PROV-M066-015", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M066-010", "to_provision_id": "PROV-M066-016", "relationship": "procedurally_requires"},
+        {"from_provision_id": "PROV-M066-017", "to_provision_id": "PROV-M066-010", "relationship": "qualifies"},
+        {"from_provision_id": "PROV-M066-018", "to_provision_id": "PROV-M066-017", "relationship": "cross_references"},
+        {"from_provision_id": "PROV-M066-016", "to_provision_id": "PROV-M066-019", "relationship": "procedurally_requires"},
+        {"from_provision_id": "PROV-M066-010", "to_provision_id": "PROV-M066-009", "relationship": "procedurally_requires"}
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Amara Perera of No. 3, Old Road, Pannipitiya wishes to retain you as his Notary for the purpose of purchasing a shop bearing Assessment No. 2, Galle Road, Kollupitiya for a sum of Rupees Thirty Million (Rs.30,000,000/=) from Aruna Silva of No.2, Nawala Road, Nawala who held and possessed the said shop premises by virtue of Deed of Transfer No.27 dated 27/05/1994 attested by A. Silva Notary Public of Colombo.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What stamp duty is payable on the Deed of Transfer of the shop at Assessment No. 2, Galle Road, Kollupitiya for a consideration of Rs. 30,000,000, on what amount is it computed, and who must pay it.",
+        "rule": "Stamp duty on an instrument relating to a transfer of immovable property situated in the Western Province is charged by the Western Province Financial Statute s.37, at the rate prescribed; the Statute itself fixes no rate and s.77(1)(a) leaves it to regulations published in the Gazette. Duty on a conveyance is calculated on the value of the property conveyed: s.48(1). 'Value', for property other than immovable property which is gifted, means the price the property would have fetched in the open market on that date in the opinion of the Assessor: s.106. Unless there is agreement to the contrary the duty on an instrument of transfer is payable by the grantee: s.51(a). It must be paid before or at the time of execution and evidenced by stamps or by a bank certificate of payment affixed to the instrument: s.40. The instrument itself must state the consideration and the amount of duty chargeable: s.78(1). The notary may not attest the deed unless he has an assurance that the required duty is provided: Notaries Ordinance s.31(6). The national regime does not apply: the Stamp Duty (Special Provisions) Act No. 12 of 2006 excludes instruments relating to the transfer of immovable property (s.13), and its list of specified instruments in s.4 contains no conveyance of land.",
+        "application": "The shop at Galle Road, Kollupitiya is immovable property situated in the Western Province, so the Deed of Transfer is an instrument chargeable under s.37 of the Western Province Financial Statute and not under the 2006 Act. The duty is computed under s.48(1) on the value of the premises conveyed, and since this is a sale and not a gift the relevant value under s.106 is the open-market price in the opinion of the Assessor; on the facts given, the consideration of Rs. 30,000,000 is the figure to be used unless the Assessor puts a higher open-market value on the premises. The purchaser Amara Perera is the grantee and therefore bears the duty under s.51(a), no contrary agreement being mentioned. Payment falls due before or at the time of execution under s.40 and, in practice, is made to a prescribed bank whose certificate is affixed to the deed. The rate to be applied to Rs. 30,000,000 is the one prescribed by regulation under s.77; that regulation is not in the corpus, so the multiplication cannot be carried out here and no figure is offered.",
+        "conclusion": "The Deed of Transfer is chargeable with provincial stamp duty under the Western Province Financial Statute s.37, computed on the value of the premises conveyed, which on these facts is Rs. 30,000,000, and payable by the purchaser Amara Perera before or at the time of execution. The arithmetic answer cannot be given from this corpus because the prescribed rate is in subsidiary legislation made under s.77 that has not been extracted; the question is therefore blocked for missing authority."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M066-Q02-001",
+          "claim_text": "Stamp duty is charged on every instrument relating to a transfer of immovable property situated in the Western Province, at the prescribed rate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M066-010", "PROV-M066-011"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q02-002",
+          "claim_text": "Instruments relating to the transfer of immovable property are outside the national stamp duty regime of the Stamp Duty (Special Provisions) Act No. 12 of 2006.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M066-017", "PROV-M066-018"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q02-003",
+          "claim_text": "Duty on a conveyance is calculated on the value of the property conveyed, and value for a sale means the open-market price of the property in the opinion of the Assessor.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M066-013", "PROV-M066-014"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q02-004",
+          "claim_text": "Absent agreement to the contrary, the duty on an instrument of transfer is payable by the grantee, and it must be paid before or at the time of execution.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M066-015", "PROV-M066-016"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q02-005",
+          "claim_text": "The rate is not stated in the Statute; it is prescribed by regulation made under s.77 and published in the Gazette.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M066-011", "PROV-M066-012"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q02-006",
+          "claim_text": "The shop at Assessment No. 2, Galle Road, Kollupitiya is immovable property in the Western Province, so the Deed of Transfer is chargeable under s.37 of the Western Province Financial Statute.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M066-010"],
+          "supporting_fact_ids": ["BG-3"],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q02-007",
+          "claim_text": "The base of the computation is the value of the premises conveyed, taken on these facts as the stated consideration of Rs. 30,000,000 unless the Assessor puts a higher open-market value on them.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M066-013", "PROV-M066-014"],
+          "supporting_fact_ids": ["BG-4"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q02-008",
+          "claim_text": "Amara Perera, as grantee under the transfer, is the person liable to pay the duty, and the notary may not attest the deed without an assurance that it has been provided.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M066-015", "PROV-M066-019"],
+          "supporting_fact_ids": ["BG-1"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M066-Q02-009",
+          "claim_text": "The amount of duty cannot be calculated from the corpus, because the rate prescribed under s.77 is contained in subsidiary legislation that has not been extracted.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M066-011", "PROV-M066-012"],
+          "supporting_fact_ids": ["BG-4"],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The question asks for a figure. The whole statutory chain is in the corpus - charge (s.37), base (s.48(1) with the s.106 definition of value), payer (s.51(a)) and time of payment (s.40) - but the rate is 'prescribed' under s.77 by regulation published in the Gazette and no such regulation, order or rate schedule exists in the corpus. Producing a number would mean quoting a rate from memory, which is not permitted. Blocked pending the addition of the Western Province stamp duty rate instrument in force in October 2020.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

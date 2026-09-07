@@ -1,0 +1,467 @@
+{
+  "benchmark_matter_id": "M114",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M114",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T23:15:48Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2018-04",
+  "matter_reference_date_basis": "Exam session recorded in the candidate matter file as APRIL 2018 (matter_reference_date 2018-04). The scenario itself refers to rent commencing January 2017, so every provision was checked for force as at April 2018.",
+  "corpus_gaps": [
+    "The Order made by the Minister under section 3 of the Stamp Duty (Special Provisions) Act, No. 12 of 2006 that fixes the rate of stamp duty on a lease or hire of property is not in the corpus. Section 3 charges the duty but leaves the rate to Gazette Order, so no figure can be computed from the corpus for M114-Q02.",
+    "The rates prescribed under section 37 of the Western Province Financial Statute, No. 6 of 1990 are likewise absent; section 37 charges duty at the prescribed rate and no schedule or regulation is in the corpus. Dehiwala is in the Western Province, so the verifier should also settle whether the provincial charge or the national Act governs a lease of a house.",
+    "The corpus contains no rate schedule at all: searches for 'rate of stamp duty' and 'every one thousand rupees', and a scan of the Stamp Duty Act, No. 43 of 1982, returned no rate table.",
+    "No statute in the corpus prescribes the substantive terms of a lease of private residential premises. The mutual covenants of lessor and lessee (warranty of undisturbed possession, payment of rent, use as a prudent occupier, repair, sub-letting, re-entry, refund of deposit) are matters of Roman-Dutch common law and conveyancing precedent, neither of which is in this statute-only corpus. This blocks M114-Q01.",
+    "The word 'reddendum' does not occur anywhere in the corpus, and no provision prescribes the form or content of a rent-reservation clause. This blocks M114-Q03.",
+    "The consolidated texts of Prevention of Frauds Ordinance section 2 and Notaries Ordinance section 31 in the corpus carry amendments made by Acts Nos. 30 of 2022 and 4 of 2024, and Nos. 31 of 2022 and 6 of 2024 respectively. The corpus does not expose a point-in-time text as at April 2018, so the pre-2018 wording of those sections could not be reconstructed from the corpus alone."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M114-001",
+      "section_id": "12-2006/s3",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "there shall be charged a duty (hereinafter to be called \"stamp duty\") at such rate as the Minister may determine by Order published in the Gazette on every \"specified instrument\"- (a) executed, drawn or presented in Sri Lanka",
+      "why_relevant": "This is the charging provision for stamp duty on the lease to be executed in Sri Lanka. It is also the reason the sum cannot be computed from the corpus: the rate is not in the Act but in a Ministerial Order published in the Gazette, which the corpus does not hold.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; the corpus records no amendment to section 3, so the text applies as at April 2018.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M114-002",
+      "section_id": "12-2006/s4",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "4",
+      "subsection": "(i)",
+      "relevant_excerpt": "(i) a lease or hire of any property;",
+      "why_relevant": "Brings the lease agreement within the definition of specified instrument for the purposes of the section 3 charge. Without this paragraph nothing in the Act would attach duty to a lease.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; the corpus records no amendment to section 4, so the text applies as at April 2018.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M114-003",
+      "section_id": "12-2006/s6",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "6",
+      "subsection": "(c)",
+      "relevant_excerpt": "(c) in the case of a lease, by the lessee;",
+      "why_relevant": "Fixes the lessee, not Mr Perera as lessor, as the person liable for stamp duty on the lease, subject to the opening words of the section which allow the parties to agree otherwise. Those opening words are what make the incidence of stamp duty a proper subject for a mutual covenant in the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; amended by Act No. 10 of 2008, which is before the matter date of April 2018. The consolidated text therefore applies.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M114-004",
+      "section_id": "12-2006/s8",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "8",
+      "subsection": "(2)",
+      "relevant_excerpt": "Stamp duty payable on any specified instrument relating to a mortgage or lease of any immovable property may be paid, prior to, or at the time of, the execution of the specified instrument, to a prescribed bank.",
+      "why_relevant": "Governs when and how the duty on this lease is to be paid, and so bears on the notary's practical steps once the amount is known.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; substituted by Act No. 10 of 2008, which is before the matter date of April 2018.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M114-005",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month)",
+      "why_relevant": "A lease of the Dehiwala house for two years is outside the carve-out for a lease at will or for a period not exceeding one month, so the instrument must be notarially executed to be of force in law. This is why the client needs a notary and why a notarially attested deed, not a mere signed agreement, is the operative document.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1840. The corpus text is consolidated to 2024 and carries amendments by Act No. 30 of 2022 and Act No. 4 of 2024, both after the matter date. The quoted words are the carve-out for short leases, which long predates 2018, but the verifier should confirm the April 2018 wording against a point-in-time text before treating any part of section 2 as indispensable.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M114-006",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "shall be in force or avail in law unless - (a) the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary",
+      "why_relevant": "States the form the lease deed must take: writing, signature by both lessor and lessee and the witnesses in the presence of a licensed notary and of one another, and notarial attestation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The paragraph (a) and (b) structure quoted here was introduced by the Prevention of Frauds (Amendment) Act, No. 30 of 2022, which is after the matter date. The substance of the writing, witnesses and notarial attestation requirement was in section 2 well before April 2018, but this precise wording was not. Held as background only for that reason.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M114-007",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (6)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless he has an assurance that the required stamp duty is provided.",
+      "why_relevant": "Ties the stamp duty question to the drafting question: the notary retained by Mr Perera may not attest the lease until he is satisfied that the duty has been provided for, which is why the amount has to be worked out before execution.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 has been in force since 1907. The corpus text is consolidated to 2024 and carries amendments by Acts Nos. 47 of 2011, 31 of 2022 and 6 of 2024. Rule (6) is not among the rules the corpus records as substituted in 2022 or 2024, but the verifier should confirm the April 2018 wording. Held as supporting, not indispensable.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M114-008",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (16)(a)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument, other than a will or codicil, affecting land or other immovable property, unless the deed or instrument embodies therin or in a Schedule annexed therto an accurate and clear description of the said land or other property affected thereby, showing its boundaries, extent, situation",
+      "why_relevant": "Requires the lease deed for No. 96, Quarry Road, Dehiwala to carry, in the body or in an annexed schedule, an accurate description of the premises with boundaries, extent and situation. This is the one drafting requirement for this lease that the corpus does state.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The consolidated wording of rule (16) refers to Divisional Secretary's and Grama Niladari Divisions and to condominium parcels, features the corpus attributes to the 2022 and 2024 amendment Acts. The core duty to describe the land accurately in the deed or an annexed schedule predates 2018. Held as background pending a point-in-time check.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M114-009",
+      "section_id": "23-1927/s8",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "8",
+      "subsection": "proviso (xi)",
+      "relevant_excerpt": "(xi) any instrument if the only interest in land created or dealt with thereby is a tenancy at will or for a period not exceeding one month or determinable by the landlord by not more than one month's notice.",
+      "why_relevant": "A two-year lease falls outside this exclusion, so the lease is an instrument deemed to affect land for the purposes of the Ordinance and is registrable. That in turn is why the deed needs the description required by the Notaries Ordinance and why the parties commonly covenant about who bears the cost of registration.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927; the corpus records no later change to section 8, so the text applies as at April 2018.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M114-010",
+      "section_id": "12-2006/s13",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "the provisions of the Stamp Duty Act, No. 43 of 1982, relating to the Imposition of Stamp Duty (other than any instrument relating to the transfer of immovable property, the transfer of motor vehicles or documents filed in Court)",
+      "why_relevant": "Settles which enactment governs. A lease is not a transfer of immovable property, a motor vehicle transfer or a court document, so the carve-out in section 13 does not apply and the 1982 Act gives way to Act No. 12 of 2006 to the extent of any inconsistency.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; the corpus records no amendment to section 13, so the text applies as at April 2018.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M114-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "Statute settles the form of the instrument, who bears stamp duty in default of agreement, and the description of the property, but it does not supply the mutual covenants themselves. The lessor's warranty of undisturbed possession and the lessee's obligations to pay rent, to use the premises as a prudent occupier, to keep and yield up the premises, and the consequences of breach are drawn from the Roman-Dutch common law of lease and from conveyancing precedent. Neither is in this statute-only corpus, so a complete answer cannot be built from the provisions alone.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M114-Q01-01",
+          "issue": "What mutual covenants between lessor and lessee a notary should include in a two-year lease of a dwelling house at a monthly rent, with a refundable deposit and an advance payment to be set off against the second year's rent.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M114-Q01-02",
+          "issue": "What formal requirements the law imposes on the instrument itself, given that the term exceeds one month.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M114-Q01-03",
+          "issue": "Whether the incidence of stamp duty is a matter the parties may deal with by covenant.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [],
+      "supporting_provision_ids": ["PROV-M114-003", "PROV-M114-005"],
+      "background_provision_ids": ["PROV-M114-006", "PROV-M114-008", "PROV-M114-009"],
+      "legal_hop_count": 0,
+      "hop_count_basis": "No indispensable provision was identified, because the corpus supplies none of the covenant content the question asks for. The statutory material found goes to form and to incidence of duty only, so it is recorded as supporting or background and the hop count is zero.",
+      "reasoning_edges": [
+        {"from_provision_id": "PROV-M114-005", "to_provision_id": "PROV-M114-006", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M114-005", "to_provision_id": "PROV-M114-009", "relationship": "cross_references"},
+        {"from_provision_id": "PROV-M114-009", "to_provision_id": "PROV-M114-008", "relationship": "procedurally_requires"}
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kapila Perera is the owner of house and property situated at No.96, Quarry Road, Dehiwala. At present he is living with his daughter in Maharagama. Therefore he advertised to Lease his house to a suitable Lessee at a monthly rental of Rs.75,000/- for two years which rent should be paid on the 20th day of each and every month commencing from January 2017. He wants a refundable deposit of Rs. 300,000/- and an advance payment of Rs 900,000/- to be set off against the 2nd year rental. He wants to retain you as his Lawyer and Notary to prepare the Lease document.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Mr Perera asks his notary what mutual covenants to put into a two-year lease of his house at No. 96, Quarry Road, Dehiwala at a monthly rent of Rs. 75,000 payable on the 20th of each month from January 2017, with a refundable deposit of Rs. 300,000 and an advance of Rs. 900,000 to be set off against the second year's rent. Two things have to be separated: the form the law requires of the instrument, and the covenant content the parties are to agree.",
+        "rule": "Because the term is two years and not a lease at will or a lease for a period not exceeding one month, the lease falls outside the carve-out in Prevention of Frauds Ordinance s.2(1) and is of no force in law unless it is in writing and notarially attested. For the same reason it is not within proviso (xi) to Registration of Documents Ordinance s.8 and is an instrument deemed to affect land, so it is registrable. Notaries Ordinance s.31 rule (16)(a) forbids the notary to attest an instrument affecting immovable property unless the deed or a schedule to it describes the property accurately, with boundaries, extent and situation. On stamp duty, Stamp Duty (Special Provisions) Act s.6 makes the duty on a lease payable by the lessee, but only otherwise than in cases where there is an agreement to the contrary, so the incidence of duty is itself something the parties may fix by covenant. The corpus does not go further than this: it contains no provision prescribing the substantive covenants of a lease of private residential premises.",
+        "application": "The statutory material shapes the shell of the deed rather than its bargain. The instrument must be a notarially attested deed; it should carry a schedule describing the Dehiwala premises by boundaries, extent and situation so that it can be attested and registered; and the parties should state expressly which of them bears the stamp duty and the registration cost, since s.6 lets them displace the default that the lessee pays. The commercial terms the question is really aimed at, being the reservation of the Rs. 75,000 monthly rent payable on the 20th of each month, the treatment of the Rs. 300,000 refundable deposit and of the Rs. 900,000 advance set off against the second year, the permitted use of the house, repairs and outgoings, sub-letting, the lessor's assurance of the lessee's undisturbed possession, and the right to re-enter on default, have no statutory source in this corpus.",
+        "conclusion": "Reserved. The form, description, registrability and stamp-duty-incidence points can be stated on the corpus, but the covenant content that carries the five marks rests on the Roman-Dutch law of lease and on conveyancing precedent, neither of which is available here. A complete gold answer needs that non-statutory authority."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M114-Q01-001",
+          "claim_text": "A lease of immovable property for a term exceeding one month is outside the carve-out in Prevention of Frauds Ordinance s.2(1) and so must be notarially executed to be of force in law.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M114-005", "PROV-M114-006"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q01-002",
+          "claim_text": "A two-year lease of the Dehiwala house is not within proviso (xi) to Registration of Documents Ordinance s.8, so it is an instrument deemed to affect land and is registrable.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M114-009"],
+          "supporting_fact_ids": ["BG-1"],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q01-003",
+          "claim_text": "The notary may not attest a deed affecting immovable property unless the deed or a schedule annexed to it describes the property accurately, with its boundaries, extent and situation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M114-008"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q01-004",
+          "claim_text": "Stamp duty on a lease falls on the lessee unless the parties agree otherwise, so the allocation of stamp duty is a proper subject for a mutual covenant in this lease.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M114-003"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q01-005",
+          "claim_text": "The substantive mutual covenants of lessor and lessee cannot be derived from the corpus, which contains no provision prescribing the terms of a lease of private residential premises.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [],
+          "supporting_fact_ids": ["BG-2"],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "The question asks for the mutual covenants of a residential lease. No statute in the corpus prescribes them; they come from the Roman-Dutch common law of lease and from conveyancing precedent, which are outside a statute-only corpus. Only the form, description, registrability and stamp-duty-incidence points are statutorily supported, and those alone do not answer the question.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M114-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The charge, the classification of the lease as a specified instrument, the identity of the payer and the time and manner of payment are all statutory, and no judicial or common-law authority is needed. The only missing element is delegated legislation, namely the Gazette Order under section 3 that fixes the rate, which is itself statutory in character rather than judicial.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M114-Q02-01",
+          "issue": "Whether the lease agreement is an instrument chargeable with stamp duty, and under which enactment.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M114-Q02-02",
+          "issue": "What rate applies to a lease of a house and on what base it is computed, given a monthly rent of Rs. 75,000 for two years, a refundable deposit of Rs. 300,000 and an advance of Rs. 900,000 set off against the second year's rent.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M114-Q02-03",
+          "issue": "Who is liable to pay the duty, and when and how it must be paid.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": ["PROV-M114-001", "PROV-M114-002", "PROV-M114-003"],
+      "supporting_provision_ids": ["PROV-M114-004", "PROV-M114-007", "PROV-M114-010"],
+      "background_provision_ids": ["PROV-M114-005"],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps within the corpus: s.4(i) classifies the lease as a specified instrument, s.3 charges duty on a specified instrument at the Gazette rate, and s.6(c) fixes the lessee as payer. A fourth step, applying the rate set by the Order under s.3, cannot be taken because that Order is not in the corpus.",
+      "reasoning_edges": [
+        {"from_provision_id": "PROV-M114-002", "to_provision_id": "PROV-M114-001", "relationship": "defines"},
+        {"from_provision_id": "PROV-M114-001", "to_provision_id": "PROV-M114-003", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M114-001", "to_provision_id": "PROV-M114-004", "relationship": "procedurally_requires"},
+        {"from_provision_id": "PROV-M114-010", "to_provision_id": "PROV-M114-001", "relationship": "qualifies"},
+        {"from_provision_id": "PROV-M114-007", "to_provision_id": "PROV-M114-001", "relationship": "procedurally_requires"}
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kapila Perera is the owner of house and property situated at No.96, Quarry Road, Dehiwala. At present he is living with his daughter in Maharagama. Therefore he advertised to Lease his house to a suitable Lessee at a monthly rental of Rs.75,000/- for two years which rent should be paid on the 20th day of each and every month commencing from January 2017. He wants a refundable deposit of Rs. 300,000/- and an advance payment of Rs 900,000/- to be set off against the 2nd year rental. He wants to retain you as his Lawyer and Notary to prepare the Lease document.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What stamp duty is payable on a two-year lease of a house at No. 96, Quarry Road, Dehiwala at Rs. 75,000 a month, with a refundable deposit of Rs. 300,000 and an advance of Rs. 900,000 set off against the second year's rent, and by whom.",
+        "rule": "Stamp Duty (Special Provisions) Act s.4(i) lists a lease or hire of any property as a specified instrument. Section 3(1) charges stamp duty on every specified instrument executed, drawn or presented in Sri Lanka, at such rate as the Minister may determine by Order published in the Gazette, and s.3(2) allows different rates for different classes of instrument. Section 13 leaves the imposition provisions of the Stamp Duty Act, No. 43 of 1982 without operation to the extent of any inconsistency, except for transfers of immovable property, transfers of motor vehicles and documents filed in court, none of which covers a lease. Section 6(c) makes the duty on a lease payable by the lessee unless there is an agreement to the contrary. Section 8(2) allows the duty on a lease of immovable property to be paid to a prescribed bank prior to or at the time of execution, and Notaries Ordinance s.31 rule (6) forbids the notary to attest until he has an assurance that the required duty is provided.",
+        "application": "The instrument Mr Perera wants drawn is a lease of property to be executed in Sri Lanka, so it is a specified instrument within s.4(i) and is charged under s.3(1) rather than under the 1982 Act. The rent reserved is Rs. 75,000 a month for twenty-four months. The refundable deposit of Rs. 300,000 and the advance of Rs. 900,000 raise a further question about the base, since the advance is stated to be set off against the second year's rent and the deposit is refundable, but whether either enters the chargeable base depends on how the rate Order defines the value of a lease. The rate itself and that definition are set by Gazette Order under s.3, and no such Order is in the corpus. No figure can therefore be computed from the corpus, and none should be supplied from memory. What can be stated is that the lessee bears the duty in the absence of a contrary agreement, that it must be provided for before or at execution, and that the notary cannot attest without an assurance that it has been.",
+        "conclusion": "Blocked for want of authority. Chargeability, the payer and the timing are settled on the corpus, but the arithmetic the question asks for depends on a Ministerial Order under s.3 of Act No. 12 of 2006 that the corpus does not hold, and on whether the Western Province Financial Statute rates apply to a Dehiwala lease at all. The verifier should source the rate Order in force in April 2018 before this question is treated as gold."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M114-Q02-001",
+          "claim_text": "A lease or hire of any property is a specified instrument for the purposes of s.3 of the Stamp Duty (Special Provisions) Act, No. 12 of 2006.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M114-002"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q02-002",
+          "claim_text": "Stamp duty is charged on every specified instrument executed, drawn or presented in Sri Lanka at such rate as the Minister determines by Order published in the Gazette.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M114-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q02-003",
+          "claim_text": "Because a lease is not a transfer of immovable property, a transfer of a motor vehicle or a document filed in court, the imposition provisions of the Stamp Duty Act, No. 43 of 1982 give way to Act No. 12 of 2006 to the extent of any inconsistency.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M114-010"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q02-004",
+          "claim_text": "The lease Mr Perera proposes to grant over his Dehiwala house is to be executed in Sri Lanka and is therefore a chargeable specified instrument.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M114-001", "PROV-M114-002"],
+          "supporting_fact_ids": ["BG-1", "BG-3"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q02-005",
+          "claim_text": "The duty on this lease is payable by the lessee unless the lease provides otherwise.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M114-003"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q02-006",
+          "claim_text": "The duty may be paid to a prescribed bank prior to or at the time of execution, and the notary may not attest the lease without an assurance that the required duty is provided.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M114-004", "PROV-M114-007"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q02-007",
+          "claim_text": "The amount of duty cannot be computed from the corpus, because the rate and the chargeable base for a lease are fixed by a Gazette Order under s.3 that the corpus does not contain.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M114-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "Section 3 of Act No. 12 of 2006 leaves the rate of stamp duty to an Order published in the Gazette. That Order, and any Western Province prescribed rate under s.37 of Statute No. 6 of 1990, are absent from the corpus, so the figure the question asks for cannot be derived without quoting a rate from outside the corpus. Whether the refundable deposit and the advance rent enter the chargeable base likewise turns on the missing Order.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M114-Q03",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The reddendum is the clause by which rent is reserved out of the lease. Its form and content are a matter of conveyancing precedent resting on the Roman-Dutch law of lease; the word does not appear anywhere in the corpus and no provision prescribes how rent is to be reserved. Statute contributes only the surrounding requirements of notarial form, description of the premises and stamping, which do not by themselves produce a draft clause.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M114-Q03-01",
+          "issue": "How the rent of Rs. 75,000 a month, payable on the 20th of each month from January 2017 for two years, should be reserved in the lease.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M114-Q03-02",
+          "issue": "How the refundable deposit of Rs. 300,000 and the advance of Rs. 900,000 to be set off against the second year's rent should be reflected in or alongside the reservation of rent.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M114-Q03-03",
+          "issue": "Whether any statutory source governs the form of a rent-reservation clause.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [],
+      "supporting_provision_ids": ["PROV-M114-003"],
+      "background_provision_ids": ["PROV-M114-005", "PROV-M114-008"],
+      "legal_hop_count": 0,
+      "hop_count_basis": "No indispensable provision. The corpus has nothing on the reddendum, so the statutory material recorded here is context for the instrument in which the clause sits, not authority for the clause itself.",
+      "reasoning_edges": [
+        {"from_provision_id": "PROV-M114-005", "to_provision_id": "PROV-M114-008", "relationship": "procedurally_requires"}
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kapila Perera is the owner of house and property situated at No.96, Quarry Road, Dehiwala. At present he is living with his daughter in Maharagama. Therefore he advertised to Lease his house to a suitable Lessee at a monthly rental of Rs.75,000/- for two years which rent should be paid on the 20th day of each and every month commencing from January 2017. He wants a refundable deposit of Rs. 300,000/- and an advance payment of Rs 900,000/- to be set off against the 2nd year rental. He wants to retain you as his Lawyer and Notary to prepare the Lease document.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Whether a reddendum clause reserving rent of Rs. 75,000 a month, payable on the 20th of each month for two years from January 2017, can be drafted on statutory authority drawn from this corpus, and what statute contributes to the instrument in which it sits.",
+        "rule": "Nothing in the corpus uses the word reddendum or prescribes the form of a clause reserving rent. What statute does supply is the surrounding frame. A two-year lease is outside the short-lease carve-out in Prevention of Frauds Ordinance s.2(1), so the instrument in which the clause appears must be a notarially attested deed. Notaries Ordinance s.31 rule (16)(a) requires the deed or an annexed schedule to describe the premises accurately, which is the description the reddendum will refer back to. Stamp Duty (Special Provisions) Act s.6 makes the lessee liable for the duty otherwise than in cases where there is an agreement to the contrary, so any allocation of duty stated near the reservation of rent operates as such an agreement.",
+        "application": "The facts fix everything the clause must express: premises at No. 96, Quarry Road, Dehiwala, a term of two years, rent of Rs. 75,000 per month payable on the 20th day of each month commencing January 2017, a refundable deposit of Rs. 300,000 and an advance of Rs. 900,000 to be set off against the second year's rental. Those are scenario facts, not statutory conditions. The wording that turns them into a reservation of rent, and the conventional incidents of such a clause, come from conveyancing precedent and the common law of lease, which are outside the corpus. Drafting the clause here would mean supplying that form from memory rather than from authority.",
+        "conclusion": "Reserved. The question is a drafting exercise whose authority is non-statutory. The corpus supports only the statements about notarial form, description of the premises and the incidence of stamp duty, and those do not amount to the clause the question asks for."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M114-Q03-001",
+          "claim_text": "A lease for a term of two years falls outside the carve-out for a lease at will or a lease not exceeding one month, so the deed containing the reddendum must be notarially attested.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M114-005"],
+          "supporting_fact_ids": ["BG-1"],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q03-002",
+          "claim_text": "The deed or a schedule annexed to it must describe the Dehiwala premises accurately, with boundaries, extent and situation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M114-008"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q03-003",
+          "claim_text": "Any term allocating stamp duty between lessor and lessee takes effect as an agreement to the contrary displacing the lessee's default liability.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M114-003"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M114-Q03-004",
+          "claim_text": "No provision in the corpus prescribes the form or content of a reddendum, so the clause cannot be drafted on statutory authority alone.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [],
+          "supporting_fact_ids": ["BG-2"],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "Drafting a reddendum is a conveyancing exercise governed by precedent and by the Roman-Dutch law of lease, not by any statute in the corpus. A search of the corpus for 'reddendum' returns no match and no provision prescribes how rent is to be reserved, so a gold answer would have to be written from non-statutory sources.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

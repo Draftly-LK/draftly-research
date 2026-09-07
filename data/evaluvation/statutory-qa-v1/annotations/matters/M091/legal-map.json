@@ -1,0 +1,667 @@
+{
+  "benchmark_matter_id": "M091",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M091",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T23:11:53Z",
+    "verification_agent": "verifier-M091",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T23:21:04Z"
+  },
+  "matter_reference_date": "2019-04",
+  "matter_reference_date_basis": "Taken from matter_reference_date in the candidate file, which records the examination session (APRIL 2019). The duties are tested as at the date of attestation, fixed by the enrichment at 8 March 2019, within the same statutory state of the law. Rule (30A) of section 31 (thirty days to submit a deed for registration) and the present section 34 were both introduced by the Notaries (Amendment) Act, No. 31 of 2022 and are therefore excluded from the gold answer.",
+  "corpus_gaps": [
+    "The consolidated text of Notaries Ordinance s.31 in the corpus has lost several rule numbers: rules (7A), (15A), (16), (17) and (26) appear without their labels, so the duplicate-transmission rule reads as an unlabelled '(i) He shall deliver or transmit ...'. The number (26) was recovered from the amending Acts, which refer to it as rule (26) (Notaries (Amendment) Act, No. 47 of 2011 s.3 and Notaries (Amendment) Act, No. 6 of 2024 s.3(8)), and from Notaries Ordinance s.32(1) and s.34(2).",
+    "The corpus holds only the current consolidated edition of Notaries Ordinance s.31 and the post-2022 replacement of s.34. The wording in force in April 2019 cannot be read off the corpus directly; it was inferred by subtracting the changes recorded in the 2011, 2022 and 2024 amending Acts, which are themselves in the corpus.",
+    "Forms E, F and F 1 of the Second Schedule to the Notaries Ordinance are not in the corpus, so the contents of the lists and of the attestation form cannot be quoted or checked.",
+    "No Notaries Rules, Registrar-General's circulars or land registry regulations are in the corpus, so the practical steps of presenting the original for registration (fees, day book entry) are covered only so far as the Registration of Documents Ordinance states them.",
+    "Nothing in the corpus fixes which land registration district Gangodawila or Nuwara Eliya town falls within; Registration of Documents Ordinance s.2 provides for land registries without listing divisions. The districts are supplied as enriched facts, not as corpus law.",
+    "Verifier addition: nothing in the corpus settles which stamp duty regime governed a 2019 transfer of Nuwara Eliya land, so the classic notarial point that the stamp duty is borne by the duplicate while the original bears a nominal stamp cannot be stated safely. Section 12 of the Stamp Duty Act, No. 43 of 1982 says exactly that, but section 13 of the Stamp Duty (Special Provisions) Act, No. 12 of 2006 displaces the 1982 Act's imposition provisions except for instruments relating to the transfer of immovable property, and section 45 of the Western Province Financial Statute, No. 6 of 1990 makes the same provision only for that Province, while the land here is in the Central Province, for which the corpus holds no statute.",
+    "Verifier addition: the term \"instrument\" for the purposes of sections 7 and 14 is defined in section 6 of the Registration of Documents Ordinance as an instrument affecting land, and separately in section 25 for the presentation provisions; neither definition is carried in the map. Nothing turns on it here, because a deed of transfer plainly affects land."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M091-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907 (Chapter 107)",
+      "section": "31",
+      "subsection": "rule (20)",
+      "relevant_excerpt": "(20) He shall without delay duly attest every deed or instrument which shall be executed or acknowledged before him, and shall sign and seal such attestation. In such attestation he shall state- (a) that the said deed or instrument was signed by the party and the witnesses thereto in his presence and in the presence of one another;",
+      "why_relevant": "The primary duty owed in respect of the original: the notary must without delay duly attest the deed executed before him, sign and seal the attestation, and set out in it the prescribed particulars.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (20) has stood since 1907. Paragraph (b) was substituted by the Notaries (Amendment) Act, No. 31 of 2022 (identification by national identity card, passport or driving licence) and paragraph (g) by the Notaries (Amendment) Act, No. 6 of 2024; the excerpt taken here stops at paragraph (a) and so is text that was in force in April 2019. The corpus holds only the consolidated post-2024 edition, so the April 2019 wording of the later paragraphs cannot be quoted from it.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M091-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907 (Chapter 107)",
+      "section": "31",
+      "subsection": "rule (20)(f)",
+      "relevant_excerpt": "(f) the number and value of the adhesive stamps affixed to or the value of the impressed stamps on such deed or instrument and the duplicate thereof;",
+      "why_relevant": "Ties the original and the duplicate together in the attestation: the notary must state the number and value of the stamps affixed to the deed and to its duplicate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Paragraph (f) of rule (20) was not touched by the 2011, 2022 or 2024 amending Acts, so this wording was in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M091-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907 (Chapter 107)",
+      "section": "31",
+      "subsection": "rule (26)(a)(i)",
+      "relevant_excerpt": "(i) He shall deliver or transmit to the Registrar of Lands of the district in which he resides the following documents, so that they shall reach the registrar on or before the fifteenth day of every month, namely, the duplicate of every deed or instrument (except wills and codicils) executed or acknowledged before or attested by him during the preceding month, together with a list in duplicate, signed by him, of all such deeds or instruments, which list shall be substantially in the Form F 1 in the Second Schedule:",
+      "why_relevant": "The central duty in respect of the duplicate: it must be delivered or transmitted to the Registrar of Lands of the district in which the notary resides, so as to reach the registrar on or before the fifteenth day of the month following execution, with a signed list in duplicate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The duty itself long predates the matter date. Paragraph (a) was renumbered as sub-paragraph (i) and sub-paragraph (ii) inserted by the Notaries (Amendment) Act, No. 47 of 2011, so the paragraph structure quoted here was in force in April 2019. One later change: the words 'in the Form F' were replaced by 'in the Form F 1' by the Notaries (Amendment) Act, No. 6 of 2024, s. 3(8); in April 2019 the list was in Form F. That affects the form reference only, not the duty.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim in the corpus and the duty is correctly stated, but two corrections stand: the words \"in the Form F 1\" were substituted for \"in the Form F\" by the Notaries (Amendment) Act, No. 6 of 2024 s.3(8), so the April 2019 text read \"Form F\"; and the rule label \"(26)\" is not printed in the corpus text, which runs straight from rule (25) into \"(i) He shall deliver or transmit\", the number being recoverable only from Act No. 47 of 2011 s.3, Act No. 6 of 2024 s.3(8) and sections 32(1) and 34(2)."
+    },
+    {
+      "provision_id": "PROV-M091-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907 (Chapter 107)",
+      "section": "31",
+      "subsection": "rule (29)",
+      "relevant_excerpt": "(29) If a deed or instrument other than a will or codicil affects a land situated in a district other than that in which the notary before whom it is signed, and by whom it is attested, 'shall reside, such notary, or in case such deed or instrument is attested by two or more notaries, then the notary upon whom is cast the duty of transmitting to the Registrar of Lands the duplicate of such deed or instrument, shall on or before the fifteenth day of the month next following that in which the same was executed (besides transmitting the duplicate in manner aforesaid) deliver or transmit to the Registrar of Lands of the district in which such land shall be situated a copy thereof certified by him as correct,",
+      "why_relevant": "The rule that decides this scenario: where the land lies in a district other than the notary's district of residence, he must, in addition to transmitting the duplicate, send a certified copy of the deed with a list in duplicate to the Registrar of Lands of the district in which the land is situated, by the fifteenth of the following month.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (29) was in force in April 2019. The only later change is the substitution of 'in the Form F 1' for 'in the Form F' by the Notaries (Amendment) Act, No. 6 of 2024, s. 3(9); in April 2019 the list was in Form F. The duty is unchanged.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and rule (29) is the provision that decides the scenario, but \"in the Form F 1\" is the substitution made by the Notaries (Amendment) Act, No. 6 of 2024 s.3(9); in April 2019 rule (29) read \"in the Form F\"."
+    },
+    {
+      "provision_id": "PROV-M091-005",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907 (Chapter 107)",
+      "section": "31",
+      "subsection": "rule (24)",
+      "relevant_excerpt": "(24) He shall carefully preserve as his protocol a draft or copy of every deed or instrument executed or acknowledged before him, to which shall be attached his signature and those of the party and witnesses to the original deed or instrument, and he shall keep a register thereof with a convenient index for the purpose of easy reference;",
+      "why_relevant": "Completes the picture of what the notary keeps: the protocol, a draft or copy of the deed signed by the parties and witnesses to the original, and a register of protocols. It distinguishes the protocol from the original and the duplicate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (24) was not amended by the 2011, 2022 or 2024 Acts and was in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M091-006",
+      "section_id": "1-1907/s37",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907 (Chapter 107)",
+      "section": "37",
+      "subsection": null,
+      "relevant_excerpt": "Whenever a notary has received instructions to register, and a sufficient sum to meet the necessary expense of registering, any deed drawn or attested by him, and shall in such case fail to use due diligence in effecting such registration, he shall be guilty of an offence",
+      "why_relevant": "Fixes the notary's duty in respect of the original once the parties instruct him to register it and put him in funds: he must use due diligence in effecting registration.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 37 was in force in April 2019; the only change recorded in the corpus is the increase of the fine by the Increase of Fines Act, No. 12 of 2005, which predates the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M091-007",
+      "section_id": "1-1907/s42",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907 (Chapter 107)",
+      "section": "42",
+      "subsection": null,
+      "relevant_excerpt": "Whenever the duplicate of any deed shall be transmitted to the registrar by any notary under any rule in section 31 of this Ordinance, or whenever any document shall be delivered up to any registrar under section 41, such notary or other person transmitting or delivering the same shall tender to the registrar two lists thereof, and the said registrar shall, after ascertaining the correctness thereof, sign the said lists, and return one of them to the said notary or other party, and file the remaining list,",
+      "why_relevant": "The mechanics of transmitting the duplicate: the notary tenders two lists to the registrar, who signs and returns one and files the other, keeping it with the duplicate among the records of his office.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment to section 42 is recorded in the corpus; the text was in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M091-008",
+      "section_id": "23-1927/s14",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "14",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) Every instrument presented for registration shall be registered in the book allotted to the division in which the land affected by the instrument is situated",
+      "why_relevant": "Explains where the original has to be taken for registration: an instrument is registered in the book allotted to the division in which the land affected is situated, which for this deed is the Nuwara Eliya division and not the notary's own district.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The latest change recorded for section 14 is 1974, well before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M091-009",
+      "section_id": "23-1927/s5",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "5",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) Every Registrar shall from time to time cause all duplicates and copies transmitted or delivered to him under the preceding section or any other written law, or by any notary under the provisions of the Notaries Ordinance, to be bound in convenient volumes",
+      "why_relevant": "Background: what becomes of the duplicate once the notary transmits it. The Registrar binds the duplicates delivered by a notary under the Notaries Ordinance into volumes and preserves them in his office.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment to section 5 is recorded in the corpus; the text was in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M091-010",
+      "section_id": "23-1927/s7",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "7",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) An instrument executed or made on or after the 1st day of January, 1864, whether before or after the commencement of this Ordinance shall, unless it is duly registered under this Chapter, or, if the land has come within the operation of the Land Registration Ordinance, 1877f, in the books mentioned in section 26 of that Ordinance, be void as against all parties claiming an adverse interest thereto on valuable consideration by virtue of any subsequent instrument which is duly registered under this Chapter,",
+      "why_relevant": "Background on why prompt registration of the original matters: an unregistered instrument is void against a later instrument taken for value and duly registered.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment to section 7 is recorded in the corpus; the text was in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M091-011",
+      "section_id": "1-1907/s34",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907 (Chapter 107)",
+      "section": "34",
+      "subsection": "(2)",
+      "relevant_excerpt": "(2) Where a notary acts in violation of or disregards or neglects to observe the provisions of rule (26) set out in section 31 the Registrar-General may, by a written notice served on him personally or sent by registered post, call upon such notary to comply with the requirements of the said rule within such further period of time as he may specify in such notice for such purpose.",
+      "why_relevant": "Consequence of neglecting the duplicate rule: the Registrar-General may call on the notary to comply within a further period and, on default, the Minister may suspend him from office.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Section 34 as it stands in the corpus is the replacement enacted by the Notaries (Amendment) Act, No. 31 of 2022, s. 17, which postdates April 2019; it also refers to rule (30A), itself only inserted in 2022. The corpus does not hold the pre-2022 section 34, so the enforcement provision in force in April 2019 cannot be quoted. Recorded as context for the verifier only and not relied on by any claim.",
+      "verification_status": "unresolved",
+      "verifier_note": "The corpus holds only the section 34 substituted by the Notaries (Amendment) Act, No. 31 of 2022 s.17, whose subsection (1)(b) itself refers to rule (30A), inserted in 2022; the penal and suspension provisions that governed breach of rules (24), (26) and (29) in April 2019 cannot be read off the corpus, so no consequence for the duplicate duties is verifiable at the matter date."
+    },
+    {
+      "provision_id": "PROV-M091-012",
+      "section_id": "1-1907/s32",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907 (Chapter 107)",
+      "section": "32",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) The provisions of rules (20), (23), (24), (25), and (26) set out in section 31, and of rule (16) as to the statement of the boundaries, shall not apply to any of the following deeds or instruments:-",
+      "why_relevant": "The exception that has to be cleared before rules (20), (24) and (26) are applied: they do not apply to the listed classes of deeds, none of which covers a deed of transfer of land in Sri Lanka.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment to section 32 is recorded in the corpus; the text was in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M091-013",
+      "section_id": "1-1907/s33",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907 (Chapter 107)",
+      "section": "33",
+      "subsection": null,
+      "relevant_excerpt": "No instrument shall be deemed to be invalid by reason only of the failure of any notary to observe any provision of any rule set out in section 31 in respect of any matter of form",
+      "why_relevant": "Qualifies the consequences of default: breach of a rule in section 31 in a matter of form does not by itself invalidate the instrument, so the sanction falls on the notary rather than on the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment to section 33 is recorded in the corpus; the text was in force in April 2019.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and supports the saving, but the excerpt stops before the proviso, which preserves the invalidity of an instrument that fails to comply with any other written law; the conclusion drawn from section 33 has to be read subject to that proviso."
+    },
+    {
+      "provision_id": "PROV-M091-901",
+      "section_id": "23-1927/s26",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "26",
+      "subsection": "(1)(d) and (2)",
+      "relevant_excerpt": "(d) the agent of any such person or a attorney-at-law or notary acting on behalf of any such person. (2) Either the original or a duly attested or certified copy of the instrument may be presented for registration",
+      "why_relevant": "Added by the verifier. It governs what the notary actually does with the original when he registers it: a notary acting on behalf of a party is a person who may present the instrument for registration, and the thing presented need not be the original, because a duly attested or certified copy may be presented instead. It is the provision the researcher's rule claim on the original had to clear.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 26 stands in the corpus in the 1990 consolidated edition with in_force_from_year 1927 and no recorded later change; none of the amending Acts in the corpus (Nos. 22 of 1958, 48 of 2011, 21 of 2013, 32 of 2022, 18 of 2024) touches it, so this was the text in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt checked verbatim against 23-1927/s26 by the verifier."
+    },
+    {
+      "provision_id": "PROV-M091-902",
+      "section_id": "23-1927/s28",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "28",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) After registration, the Registrar shall endorse the instrument in the prescribed manner and return it on demand to the person who presented it for registration or his agent.",
+      "why_relevant": "Added by the verifier as background. It completes the account of the original: once registration is effected the Registrar endorses the instrument and returns it on demand to the person who presented it or his agent, so the original comes back to the notary who presented it and is then handed to the client, unlike the duplicate, which stays with the registrar.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 28 stands in the corpus in the 1990 consolidated edition with in_force_from_year 1927 and no recorded later change; none of the Registration of Documents amending Acts in the corpus touches it, so this was the text in force in April 2019.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt checked verbatim against 23-1927/s28 by the verifier."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M091-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "What a notary must do with the original and the duplicate of a deed is laid down exhaustively by the rules in section 31 of the Notaries Ordinance and by sections 32, 33, 37 and 42 of that Ordinance, read with the registration provisions of the Registration of Documents Ordinance. Every step of the answer, including the extra duty that arises because the land lies outside the notary's district of residence, is supplied by the text of those provisions; no judicial authority and no rule of Roman-Dutch common law is needed to complete it.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M091-Q01-01",
+          "issue": "What duties does the attesting notary owe in respect of the original of the deed: attestation, retention of the protocol, and registration.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M091-Q01-02",
+          "issue": "What duties does he owe in respect of the duplicate: to whom, in what form and by what date it must be delivered or transmitted.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M091-Q01-03",
+          "issue": "Whether the land being in Nuwara Eliya while the notary resides at Gangodawila alters those duties, and in particular whether a further document must go to a second Registrar of Lands.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M091-Q01-04",
+          "issue": "What follows if the notary fails in these duties, and whether such a failure affects the validity of the deed.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M091-001",
+        "PROV-M091-003",
+        "PROV-M091-004",
+        "PROV-M091-006",
+        "PROV-M091-008"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M091-002",
+        "PROV-M091-005",
+        "PROV-M091-007",
+        "PROV-M091-011",
+        "PROV-M091-012",
+        "PROV-M091-013",
+        "PROV-M091-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M091-009",
+        "PROV-M091-010",
+        "PROV-M091-902"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps, one of them across enactments. Step one: rule (20) of section 31 fixes the duty on the original and rule (26)(a)(i) the duty to transmit the duplicate to the Registrar of Lands of the district of residence. Step two: rule (29) qualifies rule (26) once the land is shown to lie in another district, adding the certified copy to the registrar of the district in which the land is situated. Step three: the duty to register the original under section 37 of the Notaries Ordinance becomes determinate only when read with section 14(1) of the Registration of Documents Ordinance, which fixes the registry by the situation of the land. The exception in section 32(1) and the saving in section 33 are counted with these steps rather than as further hops.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M091-001",
+          "to_provision_id": "PROV-M091-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M091-001",
+          "to_provision_id": "PROV-M091-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M091-003",
+          "to_provision_id": "PROV-M091-004",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M091-003",
+          "to_provision_id": "PROV-M091-007",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M091-003",
+          "to_provision_id": "PROV-M091-012",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M091-001",
+          "to_provision_id": "PROV-M091-012",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M091-006",
+          "to_provision_id": "PROV-M091-008",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M091-008",
+          "to_provision_id": "PROV-M091-010",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M091-003",
+          "to_provision_id": "PROV-M091-009",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M091-001",
+          "to_provision_id": "PROV-M091-013",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M091-003",
+          "to_provision_id": "PROV-M091-011",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M091-008",
+          "to_provision_id": "PROV-M091-901",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M091-901",
+          "to_provision_id": "PROV-M091-902",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "The Notary resides in Gangodawila. He attests a Deed affecting a property in Nuwara Eliya.",
+        "enriched_background": "Mr. K. A. Dharmasena is a notary who holds a warrant to practise in the Sinhala language. He resides at Gangodawila, which lies within the Colombo land registration district, and his only office is at that address. On 8 March 2019, acting alone, he drew and attested a deed of transfer of a house and land, which he numbered 4127 in the order of documents attested by him; the instrument is not a will or a codicil. The property is Lot B of the land called Rosemead Estate at Nuwara Eliya town, which lies within the Nuwara Eliya land registration division, and both parties live there. The deed was written on three sheets of blue paper, each numbered and signed by the parties and by the notary, and it was signed by the vendor, Mrs. S. Wijeratne, the purchaser, Mr. T. Perera, and two attesting witnesses in his presence and in the presence of one another. Stamps to the value of the duty payable were affixed to the original and to the duplicate. On the day of execution the parties instructed him in writing to attend to the registration of the deed and paid him a sum sufficient to cover the registration charges.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M091-Q01-001",
+            "fact": "The notary is Mr. K. A. Dharmasena, who holds a notarial warrant to practise in the Sinhala language and whose only office is at his residence at Gangodawila, which lies within the Colombo land registration district.",
+            "origin": "synthetic_decisive",
+            "reason": "The background says only that the notary resides in Gangodawila. The destination of the duplicate turns on the land registration district in which he resides, so that district has to be stated for the question to have a determinate answer.",
+            "activates_provision_ids": [
+              "PROV-M091-003",
+              "PROV-M091-004"
+            ],
+            "counterfactual_effect": "If his residence were within the Nuwara Eliya district, the duplicate would go to the Nuwara Eliya Registrar of Lands and no certified copy would have to be sent to a second registrar.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M091-Q01-002",
+            "fact": "On 8 March 2019 he alone drew and attested a deed of transfer of a house and land, which he numbered 4127 in the order of documents attested by him; the instrument is not a will or a codicil.",
+            "origin": "synthetic_decisive",
+            "reason": "The background gives no instrument type and no date. Both are needed: the monthly transmission deadline runs from the month of execution, and wills and codicils are carved out of the duplicate rule.",
+            "activates_provision_ids": [
+              "PROV-M091-003",
+              "PROV-M091-004",
+              "PROV-M091-005",
+              "PROV-M091-012"
+            ],
+            "counterfactual_effect": "If the instrument were a will or a codicil no duplicate would have to be transmitted and only its number and date would go into the list; if it had been executed in April 2019 the deadline would fall on 15 May 2019.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M091-Q01-003",
+            "fact": "The property is Lot B of the land called Rosemead Estate at Nuwara Eliya town, which lies within the Nuwara Eliya land registration division, and both parties live there.",
+            "origin": "synthetic_decisive",
+            "reason": "The background says only that the property is in Nuwara Eliya. Identifying the land registration division fixes both the second registrar to whom a certified copy must go and the registry in which the original is to be registered.",
+            "activates_provision_ids": [
+              "PROV-M091-004",
+              "PROV-M091-008"
+            ],
+            "counterfactual_effect": "If the land lay within the notary's own district there would be no duty to send a certified copy to a second registrar, and the original would be registered in his own district registry.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M091-Q01-004",
+            "fact": "On the day of execution the vendor, Mrs. S. Wijeratne, and the purchaser, Mr. T. Perera, instructed the notary in writing to attend to the registration of the deed and paid him a sum sufficient to cover the registration charges.",
+            "origin": "synthetic_decisive",
+            "reason": "The background names no parties and says nothing about instructions to register. The notary's duty of diligence in registering the original arises only where he has been instructed and put in funds.",
+            "activates_provision_ids": [
+              "PROV-M091-006"
+            ],
+            "counterfactual_effect": "Without instructions and funds the notary would owe no duty to effect registration of the original, and his obligations would be limited to attestation, the protocol, and transmission of the duplicate and the certified copy.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M091-Q01-005",
+            "fact": "The deed was written on three sheets of blue paper, each numbered and signed by the parties and by the notary, it was signed by the two parties and two attesting witnesses in the notary's presence and in the presence of one another, and stamps to the value of the duty payable were affixed to the original and to the duplicate.",
+            "origin": "synthetic_neutral",
+            "reason": "Makes the execution regular so that the discussion can concentrate on what the notary must do with the original and the duplicate after attestation rather than on defects in execution.",
+            "activates_provision_ids": [
+              "PROV-M091-001",
+              "PROV-M091-002"
+            ],
+            "counterfactual_effect": "None on the outcome; had execution been irregular, further duties and defaults would arise before the question of transmission was reached.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "The question is what the notary must do with the original of the deed he has attested and with its duplicate, given that he resides and practises at Gangodawila in the Colombo district while the land the deed affects lies at Nuwara Eliya, in a different land registration district.",
+        "rule": "By rule (20) of section 31 of the Notaries Ordinance the notary must without delay duly attest the deed executed before him, sign and seal the attestation and state in it the prescribed particulars, among them the number and value of the stamps affixed to the deed and to the duplicate (rule (20)(f)). By rule (24) he must carefully preserve as his protocol a draft or copy of the deed signed by the parties and witnesses to the original, and keep an indexed register of protocols. By rule (26)(a)(i) he must deliver or transmit the duplicate of every deed other than a will or codicil attested by him in a month to the Registrar of Lands of the district in which he resides, so that it reaches the registrar on or before the fifteenth day of the following month, together with a signed list in duplicate in the prescribed form; on transmission he tenders two lists, one of which the registrar signs and returns, the other being filed and kept with the duplicate (Notaries Ordinance s.42; Registration of Documents Ordinance s.5(1)). Rule (29) adds a further duty where the deed affects land in a district other than the one in which the attesting notary resides: by the fifteenth day of the month next following execution he must also deliver or transmit to the Registrar of Lands of the district in which the land is situated a copy of the deed certified by him as correct, with a list in duplicate of the deeds relating to lands in that district. The original goes forward for registration, and by section 14(1) of the Registration of Documents Ordinance an instrument is registered in the book allotted to the division in which the land affected is situated; an instrument not duly registered is void against a later instrument duly registered for value (s.7(1)). Where the notary has been instructed to register the deed and given a sufficient sum for that purpose, section 37 of the Notaries Ordinance makes it an offence for him to fail to use due diligence in effecting registration. Section 32(1) exempts certain classes of instrument from rules (20), (24) and (26), and section 33 provides that non-observance of a rule of section 31 in a matter of form does not by itself invalidate the instrument.",
+        "application": "The instrument is a deed of transfer of land in Sri Lanka, executed on 8 March 2019 before this notary alone; it is not a will or codicil and falls within none of the classes exempted by section 32(1), so rules (20), (24), (26) and (29) apply to it in full. On the original, the notary must complete his attestation at once, stating the matters required by rule (20), including the stamps borne by the original and by the duplicate, and must retain the signed protocol under rule (24). On the duplicate, because he resides at Gangodawila, within the Colombo land registration district, rule (26)(a)(i) requires the duplicate to reach the Registrar of Lands of the Colombo district on or before 15 April 2019, with the list in duplicate signed by him and two lists tendered to the registrar under section 42. Because the land is at Nuwara Eliya, in a different district, rule (29) is engaged: by the same date, 15 April 2019, he must deliver or transmit to the Registrar of Lands of the Nuwara Eliya district a copy of the deed certified by him as correct, with a list in duplicate of the deeds he attested relating to lands in that district. As the parties instructed him in writing to register the deed and paid him the registration charges, section 37 obliges him to use due diligence in effecting registration, and section 14(1) of the Registration of Documents Ordinance means that the original must be presented at the land registry for the Nuwara Eliya division, not at the registry of his own district; delay in registering the original carries the risk under section 7(1) that a later registered instrument taken for value will gain priority.",
+        "conclusion": "The notary's duties divide between the two documents. On the original he must attest it fully and without delay, keep his protocol of it, and, having been instructed and put in funds, use due diligence to have it registered in the land registry of the Nuwara Eliya division where the land lies. On the duplicate he must transmit it, with the lists in duplicate, to the Registrar of Lands of the Colombo district, the district in which he resides, so that it reaches that registrar by 15 April 2019; and because the land lies in another district he must in addition send to the Registrar of Lands of the Nuwara Eliya district, by the same date, a copy of the deed certified by him as correct with a like list. Failure in these duties exposes him to prosecution, but where the default is one of form it does not of itself make the deed invalid."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M091-Q01-001",
+          "claim_text": "A notary must without delay duly attest every deed executed or acknowledged before him, sign and seal that attestation, and state in it the matters set out in rule (20) of section 31 of the Notaries Ordinance, including the number and value of the stamps affixed to the deed and to its duplicate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M091-001",
+            "PROV-M091-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "verifier_note": null
+        },
+        {
+          "claim_id": "CL-M091-Q01-002",
+          "claim_text": "He must carefully preserve as his protocol a draft or copy of every deed executed before him, carrying his signature and the signatures of the parties and witnesses to the original, and keep an indexed register of protocols, so that the protocol is a third document distinct from the original and the duplicate (Notaries Ordinance s.31 rule (24)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M091-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "verifier_note": null
+        },
+        {
+          "claim_id": "CL-M091-Q01-003",
+          "claim_text": "He must deliver or transmit the duplicate of every deed other than a will or codicil attested by him during a month to the Registrar of Lands of the district in which he resides, so that it reaches the registrar on or before the fifteenth day of the following month, together with a list in duplicate signed by him in the prescribed form (Notaries Ordinance s.31 rule (26)(a)(i)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M091-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "verifier_note": "Supported by the text of rule (26)(a)(i); note only that the prescribed form was \"Form F\" in April 2019 and became \"Form F 1\" in 2024."
+        },
+        {
+          "claim_id": "CL-M091-Q01-004",
+          "claim_text": "When the duplicate is transmitted the notary must tender two lists to the registrar, who signs the lists, returns one to the notary and files and preserves the other with the duplicate among the records of his office, the duplicates being bound into volumes (Notaries Ordinance s.42; Registration of Documents Ordinance s.5(1)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M091-007",
+            "PROV-M091-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "verifier_note": null
+        },
+        {
+          "claim_id": "CL-M091-Q01-005",
+          "claim_text": "Where the deed affects land situated in a district other than the district in which the attesting notary resides, he must, besides transmitting the duplicate, deliver or transmit to the Registrar of Lands of the district in which the land is situated a copy of the deed certified by him as correct, together with a list in duplicate signed by him, on or before the fifteenth day of the month next following that in which the deed was executed (Notaries Ordinance s.31 rule (29)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M091-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "verifier_note": "Supported by the text of rule (29); the form was \"Form F\" at the matter date."
+        },
+        {
+          "claim_id": "CL-M091-Q01-006",
+          "claim_text": "The original is the instrument that goes forward for registration, and it must be registered in the book allotted to the division in which the land affected by it is situated (Registration of Documents Ordinance s.14(1)); an instrument that is not duly registered is void against a later instrument duly registered for value (s.7(1)).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M091-008",
+            "PROV-M091-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed",
+          "verifier_note": "The section 7(1) limb and the registration-in-the-proper-book limb from section 14(1) are supported, but the opening assertion that the original is the instrument that goes forward for registration is contradicted by section 26(2) of the same Ordinance (PROV-M091-901), under which either the original or a duly attested or certified copy may be presented for registration."
+        },
+        {
+          "claim_id": "CL-M091-Q01-007",
+          "claim_text": "A notary who has received instructions to register a deed drawn or attested by him, and a sum sufficient to meet the expense of registration, commits an offence if he fails to use due diligence in effecting that registration (Notaries Ordinance s.37).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M091-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified",
+          "verifier_note": null
+        },
+        {
+          "claim_id": "CL-M091-Q01-008",
+          "claim_text": "Rules (20), (24) and (26) of section 31 do not apply to the classes of instrument listed in section 32(1) of the Notaries Ordinance, and non-observance of a rule of section 31 in a matter of form does not by itself render the instrument invalid (s.33).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M091-012",
+            "PROV-M091-013"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "verifier_note": "Accurate on its own terms. Note that section 32(1) disapplies rules (20), (23), (24), (25) and (26) only; rule (29) is not among them."
+        },
+        {
+          "claim_id": "CL-M091-Q01-009",
+          "claim_text": "This deed of transfer of land in Sri Lanka is neither a will nor a codicil and falls within none of the excluded classes, so rules (20), (24), (26) and (29) apply to it in full.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M091-012"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M091-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "verifier_note": "Correct in result, but the citation is incomplete: section 32(1) says nothing about rule (29), so the application of rule (29) rests on rule (29)'s own words, which exclude only wills and codicils, not on the section 32(1) exception."
+        },
+        {
+          "claim_id": "CL-M091-Q01-010",
+          "claim_text": "Having attested the deed on 8 March 2019, the notary must complete the attestation on the original at once, stating among other things the stamps borne by the original and by the duplicate, and must retain his signed protocol of it.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M091-001",
+            "PROV-M091-002",
+            "PROV-M091-005"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M091-Q01-002",
+            "FACT-M091-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "verifier_note": null
+        },
+        {
+          "claim_id": "CL-M091-Q01-011",
+          "claim_text": "Because the notary resides at Gangodawila, within the Colombo land registration district, the duplicate of the deed executed in March 2019 must reach the Registrar of Lands of the Colombo district on or before 15 April 2019, with the signed list in duplicate and against two lists tendered to the registrar.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M091-003",
+            "PROV-M091-007"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "FACT-M091-Q01-001",
+            "FACT-M091-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "verifier_note": "Turns on the enriched fact that Gangodawila lies within the Colombo land registration district; nothing in the corpus fixes that, as corpus_gaps already records."
+        },
+        {
+          "claim_id": "CL-M091-Q01-012",
+          "claim_text": "Because the land is at Nuwara Eliya, in a district other than the district in which he resides, the notary must in addition deliver or transmit to the Registrar of Lands of the Nuwara Eliya district, on or before 15 April 2019, a copy of the deed certified by him as correct together with a list in duplicate of the deeds he attested that relate to lands in that district.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M091-004"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "FACT-M091-Q01-001",
+            "FACT-M091-Q01-002",
+            "FACT-M091-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "verifier_note": null
+        },
+        {
+          "claim_id": "CL-M091-Q01-013",
+          "claim_text": "Since the parties instructed him to register the deed and put him in funds, he must use due diligence to present the original for registration in the land registry for the division in which the Nuwara Eliya land lies, and not in the registry of his own district.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M091-006",
+            "PROV-M091-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M091-Q01-004",
+            "FACT-M091-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed",
+          "verifier_note": "The registry is right, since section 14(1) fixes it by the situation of the land, and the section 37 duty of diligence is right, but \"present the original\" overstates section 26(2), which permits a duly attested or certified copy to be presented instead."
+        },
+        {
+          "claim_id": "CL-M091-Q01-014",
+          "claim_text": "The notary's duties therefore divide between the two documents: on the original, to attest it fully and without delay, to keep his protocol of it, and to have it registered with due diligence in the Nuwara Eliya land registry; on the duplicate, to transmit it to the Registrar of Lands of the Colombo district by 15 April 2019 with the lists in duplicate, and, because the land lies elsewhere, to send a copy certified by him as correct with a like list to the Registrar of Lands of the Nuwara Eliya district by the same date.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M091-001",
+            "PROV-M091-003",
+            "PROV-M091-004",
+            "PROV-M091-005",
+            "PROV-M091-006",
+            "PROV-M091-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "FACT-M091-Q01-001",
+            "FACT-M091-Q01-002",
+            "FACT-M091-Q01-003",
+            "FACT-M091-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified",
+          "verifier_note": "Subject to the same qualification on the original as CL-M091-Q01-006 and CL-M091-Q01-013."
+        },
+        {
+          "claim_id": "CL-M091-Q01-015",
+          "claim_text": "Neglect of these duties exposes the notary to prosecution, but where the default is one of form it does not of itself invalidate the deed.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M091-013",
+            "PROV-M091-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "disputed",
+          "verifier_note": "Prosecution is verifiable only for failure to register under section 37; for breach of rules (24), (26) and (29) the penal provision in force in April 2019, section 34 before its replacement in 2022, is not in the corpus. The section 33 saving is also subject to a proviso the map does not quote."
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Downgraded from proposed_gold by the verifier. Four things need a lawyer before this is gold. (1) Two indispensable provisions, PROV-M091-003 (rule (26)(a)(i)) and PROV-M091-004 (rule (29)), quote the current consolidated text, which reads \"Form F 1\"; that substitution was made by the Notaries (Amendment) Act, No. 6 of 2024, and in April 2019 both rules read \"Form F\". The duties are unchanged but the excerpts are anachronistic for the matter date. (2) The rule number (26) is not printed in the corpus text of section 31 and has been inferred from the amending Acts and from sections 32(1) and 34(2). (3) The gold answer states that the original is the instrument that goes forward for registration and that the notary must present the original; section 26(2) of the Registration of Documents Ordinance (PROV-M091-901, added by the verifier) permits either the original or a duly attested or certified copy to be presented, so that part of the answer prose is wrong as written and the verifier has not rewritten it. (4) The consequence of neglecting the duplicate duties cannot be stated from the corpus at the matter date: section 34 is held only in its 2022 replacement (PROV-M091-011, unresolved).",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

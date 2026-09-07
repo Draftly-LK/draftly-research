@@ -1,0 +1,104 @@
+{
+  "benchmark_matter_id": "M074",
+  "source_matter_id": "P12-Q06-M00",
+  "grouping_key": "P12-Q06-M00",
+  "paper_no": 12,
+  "question_no": 6,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Your client wishes to purchase a house and property situated at Station Road Dehiwala within the fimits of Dehiwala Mount Lavinia Municipal Council. Examination of encumbrance sheets at the Delkanda Land Registry showed that Lot 3 of Kajugahawatta in Final Partition Plan No.1232 made by Ajith Perera Licensed Surveyor had Lalith Perera by a Final Decree of Partition and that Lalith Perera had thereafter gifted the property to his daughter Ruvini. Ruvini has negotiated to sell the property to your client and has given a copy of the Deed of Gift and a copy of the Final Partition Plan.",
+    "normalized": "Your client wishes to purchase a house and property situated at Station Road Dehiwala within the fimits of Dehiwala Mount Lavinia Municipal Council. Examination of encumbrance sheets at the Delkanda Land Registry showed that Lot 3 of Kajugahawatta in Final Partition Plan No.1232 made by Ajith Perera Licensed Surveyor had Lalith Perera by a Final Decree of Partition and that Lalith Perera had thereafter gifted the property to his daughter Ruvini. Ruvini has negotiated to sell the property to your client and has given a copy of the Deed of Gift and a copy of the Final Partition Plan.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P12-Q06-P01",
+          "P12-Q06-P02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M074-Q01",
+      "atomic_id": "P12-Q06-P01",
+      "part_uid": "paper-12/q6/i",
+      "part_id": "i",
+      "item_id": null,
+      "marks": 6,
+      "pdf_page": 50,
+      "question_original": "What further investigations on Title would you make prior to giving your opinion to your client whether he should purchase the property? In your answer you have to discuss the importance of these investigations.",
+      "question_normalized": "What further investigations on Title would you make prior to giving your opinion to your client whether he should purchase the property? In your answer you have to discuss the importance of these investigations.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Your client wishes to purchase a house and property situated at Station Road Dehiwala within the fimits of Dehiwala Mount Lavinia Municipal Council. Examination of encumbrance sheets at the Delkanda Land Registry showed that Lot 3 of Kajugahawatta in Final Partition Plan No.1232 made by Ajith Perera Licensed Surveyor had Lalith Perera by a Final Decree of Partition and that Lalith Perera had thereafter gifted the property to his daughter Ruvini. Ruvini has negotiated to sell the property to your client and has given a copy of the Deed of Gift and a copy of the Final Partition Plan.",
+      "effective_background_normalized": "Your client wishes to purchase a house and property situated at Station Road Dehiwala within the fimits of Dehiwala Mount Lavinia Municipal Council. Examination of encumbrance sheets at the Delkanda Land Registry showed that Lot 3 of Kajugahawatta in Final Partition Plan No.1232 made by Ajith Perera Licensed Surveyor had Lalith Perera by a Final Decree of Partition and that Lalith Perera had thereafter gifted the property to his daughter Ruvini. Ruvini has negotiated to sell the property to your client and has given a copy of the Deed of Gift and a copy of the Final Partition Plan.",
+      "source_quote": "(i) What further investigations on Title would you make prior to giving your opinion to your client whether he should purchase the property? In your answer you have to discuss the importance of these investigations.\n(06 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "review",
+        "candidate_action": "keep",
+        "confidence": 0.75,
+        "flags": [
+          "OCR: 'fimits'; phrase 'had Lalith Perera by a Final Decree' appears garbled"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "extraction_quality=review",
+        "confidence=0.75"
+      ],
+      "missing_fact_types": []
+    },
+    {
+      "benchmark_question_id": "M074-Q02",
+      "atomic_id": "P12-Q06-P02",
+      "part_uid": "paper-12/q6/ii",
+      "part_id": "ii",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 50,
+      "question_original": "What further documents are required by you from any other institution before you express your opinion?",
+      "question_normalized": "What further documents are required by you from any other institution before you express your opinion?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Your client wishes to purchase a house and property situated at Station Road Dehiwala within the fimits of Dehiwala Mount Lavinia Municipal Council. Examination of encumbrance sheets at the Delkanda Land Registry showed that Lot 3 of Kajugahawatta in Final Partition Plan No.1232 made by Ajith Perera Licensed Surveyor had Lalith Perera by a Final Decree of Partition and that Lalith Perera had thereafter gifted the property to his daughter Ruvini. Ruvini has negotiated to sell the property to your client and has given a copy of the Deed of Gift and a copy of the Final Partition Plan.",
+      "effective_background_normalized": "Your client wishes to purchase a house and property situated at Station Road Dehiwala within the fimits of Dehiwala Mount Lavinia Municipal Council. Examination of encumbrance sheets at the Delkanda Land Registry showed that Lot 3 of Kajugahawatta in Final Partition Plan No.1232 made by Ajith Perera Licensed Surveyor had Lalith Perera by a Final Decree of Partition and that Lalith Perera had thereafter gifted the property to his daughter Ruvini. Ruvini has negotiated to sell the property to your client and has given a copy of the Deed of Gift and a copy of the Final Partition Plan.",
+      "source_quote": "(ii) What further documents are required by you from any other institution before you express your opinion?\n(03 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "review",
+        "candidate_action": "keep",
+        "confidence": 0.72,
+        "flags": [
+          "OCR garbling in shared_background"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "extraction_quality=review",
+        "confidence=0.72"
+      ],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2020-04",
+  "exam_session": "APRIL 2020",
+  "matter_tier": "B",
+  "tier_a_question_count": 0
+}

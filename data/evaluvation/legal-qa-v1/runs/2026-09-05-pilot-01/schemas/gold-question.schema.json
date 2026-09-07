@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://draftly.lk/schemas/legal-qa-v1/gold-question.schema.json",
+  "title": "Merged per-question benchmark record (coordinator-only merge output). public_input is what an evaluated system sees; private_gold never leaves private/.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["benchmark_question_id", "benchmark_matter_id", "run_id", "atomic_id", "public_input", "private_gold", "pipeline_state", "lawyer_validation_status"],
+  "properties": {
+    "benchmark_question_id": { "type": "string", "pattern": "^M[0-9]{3}-Q[0-9]{2}$" },
+    "benchmark_matter_id": { "type": "string", "pattern": "^M[0-9]{3}$" },
+    "run_id": { "type": "string" },
+    "atomic_id": { "type": "string", "minLength": 1 },
+    "public_input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["background", "question", "document_filenames", "matter_group"],
+      "properties": {
+        "background": { "type": "string", "minLength": 1 },
+        "question": { "type": "string", "minLength": 1 },
+        "document_filenames": { "type": "array", "items": { "type": "string", "pattern": "^(?!.*(gold|relevant|distractor|decisive|indispensable|answer)).+$" } },
+        "matter_group": { "type": "string", "pattern": "^M[0-9]{3}$", "description": "Questions of one matter are evaluated together." }
+      }
+    },
+    "private_gold": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["issue_map", "legal_map", "authority_ids", "predicate_ids", "indispensable_document_ids", "provenance"],
+      "properties": {
+        "issue_map": { "type": "object" },
+        "legal_map": { "type": "object" },
+        "authority_ids": { "type": "array", "items": { "type": "string", "pattern": "^AUTH-M[0-9]{3}-[0-9]{3}$" } },
+        "predicate_ids": { "type": "array", "items": { "type": "string", "pattern": "^PR-M[0-9]{3}-[0-9]{3}$" } },
+        "indispensable_document_ids": { "type": "array", "items": { "type": "string", "pattern": "^DOC-M[0-9]{3}-[0-9]{3}$" } },
+        "provenance": {
+          "type": "object",
+          "required": ["source_matter_id", "part_uid", "pdf_page", "source_quote", "selected_questions_path"],
+          "properties": {
+            "source_matter_id": { "type": ["string", "null"] },
+            "part_uid": { "type": "string" },
+            "pdf_page": { "type": ["integer", "null"] },
+            "source_quote": { "type": "string" },
+            "selected_questions_path": { "type": "string" }
+          }
+        }
+      }
+    },
+    "pipeline_state": {
+      "enum": [
+        "selected", "issue_mapped", "authorities_candidate", "authorities_verified", "predicates_defined",
+        "documents_specified", "ledger_built", "synthetic_bundle_generated", "lawyer_review_pending", "lawyer_validated",
+        "blocked_missing_authority", "blocked_temporal_uncertainty", "blocked_source_conflict", "blocked_scenario_ambiguity", "needs_legal_review"
+      ]
+    },
+    "lawyer_validation_status": { "enum": ["pending", "validated", "corrections_required"] }
+  }
+}

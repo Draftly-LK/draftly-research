@@ -1,0 +1,160 @@
+{
+  "benchmark_matter_id": "M008",
+  "verifier": "verifier-M008",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:06:18Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M008-001",
+      "decision": "verified",
+      "note": "Registration of Title Act s.13 quoted verbatim, including the corpus spelling 'genuinness'. The investigation stage is described correctly."
+    },
+    {
+      "provision_id": "PROV-M008-002",
+      "decision": "verified",
+      "note": "s.14(a) verbatim. The condition 'has a title of Absolute Ownership' is stated correctly; whether Kamal meets it is the disputed point, not the wording."
+    },
+    {
+      "provision_id": "PROV-M008-003",
+      "decision": "verified",
+      "note": "s.14(b) verbatim, including the permissive 'may' and the ten-year conversion right."
+    },
+    {
+      "provision_id": "PROV-M008-004",
+      "decision": "verified",
+      "note": "s.31(1) verbatim; the no-s.29-action condition is on the face of the subsection."
+    },
+    {
+      "provision_id": "PROV-M008-005",
+      "decision": "partially_verified",
+      "note": "Prescription Ordinance s.3 excerpt is verbatim, but the temporal note was wrong at Act level (the Prescription (Amendment) Act No. 26 of 2014 is in the corpus and replaces s.15 only; s.3 stands) and the quoted limb omits 'by a title adverse to or independent of that of the claimant', wording that describes the possessor as holding a title and so cuts against the use made of the section. Temporal note corrected and the provision demoted from indispensable to supporting for Q01."
+    },
+    {
+      "provision_id": "PROV-M008-006",
+      "decision": "verified",
+      "note": "s.57 verbatim; correctly treated as a consequence of registration, not as a step in choosing the class."
+    },
+    {
+      "provision_id": "PROV-M008-007",
+      "decision": "verified",
+      "note": "s.29(1) verbatim, including the corpus typo 'with in'."
+    },
+    {
+      "provision_id": "PROV-M008-008",
+      "decision": "verified",
+      "note": "s.34(1) verbatim; the right is conferred on 'any person' and the only conditions are the prescribed form, the prescribed fee and office hours."
+    },
+    {
+      "provision_id": "PROV-M008-009",
+      "decision": "verified",
+      "note": "s.34(2) verbatim, including the corpus comma in 'Any, person'. The entitlement wording ('shall ... be entitled') is confirmed."
+    },
+    {
+      "provision_id": "PROV-M008-010",
+      "decision": "verified",
+      "note": "s.34(3) is verbatim in the corpus text, so it is not a transcription artefact as research-notes.md risk 3 asked. The Superintendent of Surveys / Surveyor-General split is on the face of the subsection."
+    },
+    {
+      "provision_id": "PROV-M008-011",
+      "decision": "verified",
+      "note": "'Registrar of Title' and 'registered land' both appear in the s.75 defined_terms list and the excerpt is a verbatim substring; the stripped-lemma rendering caveat in the temporal note is accurate."
+    },
+    {
+      "provision_id": "PROV-M008-012",
+      "decision": "partially_verified",
+      "note": "s.35(1) verbatim, but incomplete for the use made of it: s.35(2) gives the same prima facie status to a cadastral map extract certified by or on behalf of the Surveyor-General, and the gold answer covers certified copies of both documents. Subsection field corrected to '(1), (2)'."
+    },
+    {
+      "provision_id": "PROV-M008-013",
+      "decision": "verified",
+      "note": "s.67(2)(g) and (h) verbatim. s.66 ('Fees specified in regulations made under this Act shall be payable for the matters to which they relate') would be an equally apt citation for the fee point but adds nothing the map needs."
+    },
+    {
+      "provision_id": "PROV-M008-014",
+      "decision": "verified",
+      "note": "'Superintendent of Surveys' and 'Title Register' both appear in the s.75 defined_terms list; excerpt verbatim."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M008-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "reserved",
+      "authority_requirement_after": "mixed_statute_and_case",
+      "note": "The statutory frame is sound and every excerpt is verbatim, but the decisive step is not statutory. Section 14(a) turns on whether the claimant 'has a title of Absolute Ownership'; s.75 defines neither that phrase nor 'bonafide possession', and Prescription Ordinance s.3 does not fill the gap. Read in full, s.3 speaks of possession 'by a title adverse to or independent of that of the claimant' and tells you how such a possessor obtains a decree, not when title vests. Registration of Title Act s.57, which disapplies the Prescription Ordinance only once a parcel is registered, is consistent with prescriptive rights existing before registration. Whether forty-six years of adverse possession without a decree amounts to a title of Absolute Ownership is governed by Sri Lankan case law outside this corpus. Q01 is reserved and the three claims carrying the inference are marked disputed. PROV-M008-005 moved from indispensable to supporting; hop count left at 3 with the change of basis recorded."
+    },
+    {
+      "benchmark_question_id": "M008-Q02",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "Confirmed. All three limbs of s.34 confer the right on 'any person', so the Notary's want of written authority is beside the point and no agency doctrine is engaged. The two-officer split (Registrar of Title for the register extract, Superintendent of Surveys certifying on behalf of the Surveyor-General for the map extract) is on the face of ss.34(2) and 34(3), and the s.75 definitions confirm both officers. One completeness point recorded rather than blocking: the gold answer attributes prima facie status only to the Registrar-certified document, whereas s.35(2) gives the map extract the same status."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "authority_requirement",
+      "researcher_position": "Q01 is answerable from statute alone: Registration of Title Act s.14 sets out the classes exhaustively and Prescription Ordinance s.3 supplies the effect of prescriptive possession, so with the enrichment fixing that Kamal holds no deed and no decree the choice between s.14(a) and s.14(b) follows from the text.",
+      "verifier_position": "Q01 is mixed_statute_and_case and must be reserved. Nothing in the corpus says that a possessor without a decree lacks a title of Absolute Ownership. Section 3 of the Prescription Ordinance describes possession held 'by a title adverse to or independent of that of the claimant' and provides a remedy in an action; it does not state when prescriptive title vests, and on its own words it points the other way. The Registration of Title Act leaves 'title of Absolute Ownership' undefined. The exclusion of s.14(a) therefore rests on case law that is not in this corpus.",
+      "supporting_sources": [
+        "21-1998/s14",
+        "21-1998/s75",
+        "21-1998/s57",
+        "22-1871/s3"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "provision_completeness",
+      "researcher_position": "The evidential value of a certified copy is covered by s.35(1) alone (PROV-M008-012).",
+      "verifier_position": "Section 35(2) is needed as well, because the answer promises certified copies of two documents and only the register extract falls under s.35(1); the cadastral map extract certified on behalf of the Surveyor-General is covered by s.35(2). Recorded as partially_verified and the subsection field corrected.",
+      "supporting_sources": [
+        "21-1998/s35"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M008-Q01-004: the first half restates Prescription Ordinance s.3, but the added gloss 'the Ordinance provides for a decree rather than a self-executing documentary title' is the researcher's inference, not the section's words. Marked disputed.",
+      "CL-M008-Q01-007: the exclusion of s.14(a) is drawn from PROV-M008-002 and PROV-M008-005, neither of which says that possession without a decree is not a title of Absolute Ownership. Marked disputed.",
+      "CL-M008-Q01-009: the conclusion inherits the same gap. Marked disputed.",
+      "Checked and found supported: CL-M008-Q01-001, -002, -003, -005, -006, -008, -010, -011 and all ten Q02 claims. All 14 excerpts returned OK verbatim from the corpus check command."
+    ],
+    "temporal_issues": [
+      "PROV-M008-005 asserted that no amendment events are recorded for the Prescription Ordinance. The corpus does hold the Prescription (Amendment) Act No. 26 of 2014 (26-2014) as an amending Act of 22-1871. Its s.2 replaces s.15 of the Ordinance only, so the s.3 text applicable at 2026-04 is the text quoted. Temporal note corrected.",
+      "The Registration of Title Act is held as edition original_or_unconfirmed_consolidation with no amending Act listed and no amendment events, so any post-1998 amendment to ss.13, 14, 29, 31, 34, 35, 57, 67 or 75 would be invisible here. Confirmed against the acts listing; the researcher's corpus_gaps entry stands and is a live risk for an April 2026 reference date.",
+      "No other temporal problem found: every provision is in force from 1998 (or 1871) and applicable at the reference date."
+    ],
+    "missing_definitions_or_exceptions": [
+      "'Title of Absolute Ownership' and 'bonafide possession' are undefined: the s.75 defined_terms list is instrument, interest in land parcel, land, licensed auctioneer, Minister, owner, Land parcel, Registrar-General of Title, Registrar of Title, registered land, servitude, Surveyor-General, Superintendent of Surveys, Title Register. This is the root of the Q01 reservation.",
+      "'Cadastral map' is likewise undefined in s.75, although s.34 and the Q02 answer both turn on it; s.11 (preparation of cadastral maps) is the only statutory anchor. Added to corpus_gaps.",
+      "Section 35(2) is missing from the Q02 map (see disagreements).",
+      "Section 14 limbs (c) and (d) were not cited. They are correctly omitted: no divided-portion or co-ownership issue arises on the enriched facts, where no competing claim to Lot 42 was submitted.",
+      "Alternatives searched and agreed as correctly excluded: s.20 (declaration of eligibility as owner) is displaced by s.14 for the class question; ss.32-33 answer what registration confers rather than which class; s.66 duplicates the fee point already carried by s.67(2)(h). Section 37 (Certificate of Title on payment of the prescribed fee, from the appropriate Registrar of Title) matches the background phrase 'title certificate' but neither part asks about it, so leaving it out is right; a lawyer may still want it as a background provision."
+    ],
+    "case_law_dependence": [
+      "Q01: whether prescriptive title vests by operation of law on completion of the prescriptive period or only on a decree in an action is a case-law question. It is indispensable to the exclusion of s.14(a) and it is the reason Q01 is reserved.",
+      "Q02: none. Section 34 confers the rights on 'any person', so nothing turns on agency or on any non-statutory doctrine.",
+      "Neither gold answer cites any case."
+    ],
+    "enrichment_issues": [
+      "Both enrichments name no statute section, no class of title and no conclusion, and each synthetic_decisive fact carries a reason and a counterfactual. No leak found.",
+      "FACT-M008-Q01-002 (no deed, no decree, no action ever filed) is properly labelled synthetic_decisive, but it does not make the question statutory: even on those facts the s.14(a) question stays open for the reason given in the disagreement. research-notes.md risk 1 asked whether this fact closes the gap; it does not.",
+      "The two enriched backgrounds are mutually inconsistent in procedural posture. Q01 has the Commissioner concluding his inquiry in February 2026 with registration still to come; Q02 assumes a title register for Homagama is already kept by a Registrar of Title, which presupposes registration has happened. Each question stands alone so neither answer is wrong, but a reader taking the two as one matter will notice."
+    ],
+    "duplicate_or_leak_issues": [
+      "PROV-M008-011 and PROV-M008-014 both cite 21-1998/s75 but quote different, non-overlapping definition clauses; not duplicates.",
+      "PROV-M008-008, -009 and -010 split s.34 by subsection, which is right because the three limbs have different addressees.",
+      "The s.75 excerpts read as bare 'means ...' clauses because the corpus rendering strips the defined lemma out of the body. The researcher flagged this in the temporal notes; the defs command confirms every term relied on is in fact defined there."
+    ]
+  },
+  "lawyer_questions": [
+    "Q01, decisive: does uninterrupted adverse possession since 1980 without any deed and without a court decree amount to a 'title of Absolute Ownership' for section 14(a) of the Registration of Title Act, so that the Commissioner should declare Kamal eligible for a First Class Title rather than a Second Class Title under section 14(b)? The corpus cannot settle this and the whole Q01 gold answer turns on it.",
+    "Q01: if prescriptive title does need a decree, is Prescription Ordinance section 3 an adequate citation for that proposition, given that its own words describe the possessor as holding 'a title adverse to or independent of that of the claimant'?",
+    "Q01: should the permissive 'may' in section 14(b) be reflected as a qualification on the gold conclusion, or is eligibility for a Second Class Title treated in practice as the settled outcome for a bona fide possessor?",
+    "Q02: should the gold answer be extended to section 35(2), so that the cadastral map extract is also stated to be prima facie evidence?",
+    "Both: the Registration of Title Act is held in an unconfirmed consolidation with no amendment history. Is any of sections 13, 14, 29, 31, 34, 35 or 57 amended as at April 2026?"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "benchmark_matter_id": "M060",
+  "source_matter_id": "P10-Q08-M00",
+  "grouping_key": "P10-Q08-M00",
+  "paper_no": 10,
+  "question_no": 8,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Shantha Perera wishes to purchase a house for a sum of Rupees Thirty Million (Rs. 30,000,000/-) situated in Ratmalana. He wants to employ you as his Notary. The owner of the property died during the pandemic in 2020. The widow of the owner and his two children are prepared to sign the Deed of Transfer.",
+    "normalized": "Shantha Perera wishes to purchase a house for a sum of Rupees Thirty Million (Rs. 30,000,000/-) situated in Ratmalana. He wants to employ you as his Notary. The owner of the property died during the pandemic in 2020. The widow of the owner and his two children are prepared to sign the Deed of Transfer.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P10-Q08-P01",
+          "P10-Q08-P02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M060-Q01",
+      "atomic_id": "P10-Q08-P01",
+      "part_uid": "paper-10/q8/1",
+      "part_id": "1",
+      "item_id": null,
+      "marks": 5,
+      "pdf_page": 43,
+      "question_original": "What documents would you call for the purpose of examining title?",
+      "question_normalized": "What documents would you call for the purpose of examining title?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Shantha Perera wishes to purchase a house for a sum of Rupees Thirty Million (Rs. 30,000,000/-) situated in Ratmalana. He wants to employ you as his Notary. The owner of the property died during the pandemic in 2020. The widow of the owner and his two children are prepared to sign the Deed of Transfer.",
+      "effective_background_normalized": "Shantha Perera wishes to purchase a house for a sum of Rupees Thirty Million (Rs. 30,000,000/-) situated in Ratmalana. He wants to employ you as his Notary. The owner of the property died during the pandemic in 2020. The widow of the owner and his two children are prepared to sign the Deed of Transfer.",
+      "source_quote": "1. What documents would you call for the purpose of examining title?\n(5 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.75,
+        "flags": []
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "confidence=0.75"
+      ],
+      "missing_fact_types": []
+    },
+    {
+      "benchmark_question_id": "M060-Q02",
+      "atomic_id": "P10-Q08-P02",
+      "part_uid": "paper-10/q8/2",
+      "part_id": "2",
+      "item_id": null,
+      "marks": 10,
+      "pdf_page": 43,
+      "question_original": "Explain why you would call for such documents.",
+      "question_normalized": "Explain why you would call for such documents.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Shantha Perera wishes to purchase a house for a sum of Rupees Thirty Million (Rs. 30,000,000/-) situated in Ratmalana. He wants to employ you as his Notary. The owner of the property died during the pandemic in 2020. The widow of the owner and his two children are prepared to sign the Deed of Transfer.",
+      "effective_background_normalized": "Shantha Perera wishes to purchase a house for a sum of Rupees Thirty Million (Rs. 30,000,000/-) situated in Ratmalana. He wants to employ you as his Notary. The owner of the property died during the pandemic in 2020. The widow of the owner and his two children are prepared to sign the Deed of Transfer.",
+      "source_quote": "2. Explain why you would call for such documents.\n(10 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "detailed",
+        "extraction_quality": "review",
+        "candidate_action": "keep",
+        "confidence": 0.7,
+        "flags": [
+          "depends_on_prior_answer"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "extraction_quality=review",
+        "confidence=0.7"
+      ],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2021-10",
+  "exam_session": "OCTOBER 2021",
+  "matter_tier": "B",
+  "tier_a_question_count": 0
+}

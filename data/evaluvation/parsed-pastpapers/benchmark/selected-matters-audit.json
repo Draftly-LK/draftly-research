@@ -1,0 +1,145 @@
+{
+  "source_counts": {
+    "atomic_questions": 667,
+    "classifications": 667
+  },
+  "selection_predicate": {
+    "candidate_action": "keep",
+    "scenario_richness": "detailed",
+    "extraction_quality": "clean",
+    "confidence_min": 0.8,
+    "context_dependency": [
+      "required",
+      "partial"
+    ]
+  },
+  "expected_counts": {
+    "questions": 84,
+    "matters": 44
+  },
+  "selected_atomic_question_count": 84,
+  "selected_matter_count": 44,
+  "questions_per_matter_distribution": {
+    "1": 15,
+    "2": 19,
+    "3": 9,
+    "4": 1
+  },
+  "questions_by_paper": {
+    "1": 3,
+    "2": 6,
+    "3": 4,
+    "4": 6,
+    "5": 2,
+    "6": 3,
+    "7": 2,
+    "8": 2,
+    "9": 4,
+    "10": 5,
+    "11": 6,
+    "12": 13,
+    "13": 6,
+    "14": 12,
+    "15": 3,
+    "16": 7
+  },
+  "context_source_distribution": {
+    "group": 5,
+    "group+local": 1,
+    "group+prior": 1,
+    "local": 10,
+    "prior": 4,
+    "prior+group": 2,
+    "prior+local": 2,
+    "shared": 53,
+    "shared+local": 6
+  },
+  "dependency_distribution": {
+    "partial": 6,
+    "required": 78
+  },
+  "confidence": {
+    "minimum": 0.8,
+    "maximum": 0.95,
+    "mean": 0.8729
+  },
+  "duplicate_atomic_ids": [],
+  "missing_join_ids": [],
+  "empty_background_ids": [],
+  "empty_question_ids": [],
+  "background_conflicts": [],
+  "normalization_changes": [],
+  "proposed_ocr_corrections": [
+    {
+      "atomic_id": "P03-Q01-P01",
+      "field": "shared_background",
+      "snippet": "s second wife Champa ,Kapila had three mor",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P03-Q01-P02",
+      "field": "shared_background",
+      "snippet": "s second wife Champa ,Kapila had three mor",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P03-Q04-P01-IA",
+      "field": "group_background",
+      "snippet": "racticing in Colombo .Her friend Rupa Pere",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P03-Q04-P01-IB",
+      "field": "group_background",
+      "snippet": "racticing in Colombo .Her friend Rupa Pere",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P13-Q01-P01",
+      "field": "shared_background",
+      "snippet": " Silva Notary Public .The husband of Mrs. ",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P13-Q01-P02",
+      "field": "shared_background",
+      "snippet": " Silva Notary Public .The husband of Mrs. ",
+      "issue": "space before punctuation glued to next word; not applied"
+    },
+    {
+      "atomic_id": "P13-Q01-P03",
+      "field": "shared_background",
+      "snippet": " Silva Notary Public .The husband of Mrs. ",
+      "issue": "space before punctuation glued to next word; not applied"
+    }
+  ],
+  "ocr_flag_review": [
+    {
+      "atomic_id": "P04-Q01-P02",
+      "matter": "M007",
+      "flag": "minor_ocr_corruption_in_shared_background"
+    },
+    {
+      "atomic_id": "P04-Q01-P03",
+      "matter": "M007",
+      "flag": "minor_ocr_corruption_in_shared_background"
+    },
+    {
+      "atomic_id": "P16-Q02-PC",
+      "matter": "M043",
+      "flag": "ocr_typo_in_question"
+    }
+  ],
+  "group_lead_factual_context_review": [],
+  "stem_factual_context_review": [],
+  "overlapping_context_segments": [
+    {
+      "atomic_id": "P04-Q04-P02-IC",
+      "matter": "M008",
+      "contains": "group_background",
+      "within": "prior_background[0]"
+    }
+  ],
+  "quarantined_records": [],
+  "validation_passed": true
+}

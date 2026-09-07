@@ -1,0 +1,610 @@
+{
+  "benchmark_matter_id": "M055",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M055",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:39:28Z",
+    "verification_agent": "verifier-M055",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:49:53Z"
+  },
+  "matter_reference_date": "2021-10",
+  "matter_reference_date_basis": "exam session OCTOBER 2021 recorded in candidates/matters/M055.json (exam_session, matter_reference_date)",
+  "corpus_gaps": [
+    "The corpus holds the Registration of Title Act No. 21 of 1998 as an original or unconfirmed consolidation with no amendment events recorded, and no Registration of Title (Amendment) Act is in the corpus, so the 2021 text of sections 36, 46, 47 and 48 could not be confirmed against a later edition.",
+    "The regulations and prescribed forms made under section 67 (the prescribed form of instruments for section 43, the prescribed minimum extent of a land parcel, the procedure for sub-division) are not in the corpus, so the exact form the deed of gift and the sub-division application must take cannot be stated from the corpus.",
+    "No Gazette notice under section 70 declaring an area subject to the minimum economic unit principle is in the corpus, so whether this parcel may lawfully be sub-divided into two parcels cannot be confirmed."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M055-001",
+      "section_id": "21-1998/s39",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "39",
+      "subsection": null,
+      "relevant_excerpt": "No land parcel, title to which has been registered under this Act, or any interest therein shall be transferred or dealt with except in accordance with the provisions of this Act, and every disposition otherwise effected shall be void.",
+      "why_relevant": "The gate for the whole question. Because the land is registered under the Act, any gift of it, or of an interest in it, is valid only if it complies with the Act, and any other form of disposition is void. This is what turns the registrability rules in sections 46, 47 and 48 into conditions of validity rather than mere registry practice.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded, so the text is treated as in force at 2021-10. The corpus edition is flagged original_or_unconfirmed_consolidation.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M055-002",
+      "section_id": "21-1998/s46",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "46",
+      "subsection": null,
+      "relevant_excerpt": "The Registrar of Title shall not register any instrument which purports to convey any title or interest to a land parcel on the happening of any event, or the fulfilment of any condition at any future time: Provided however, that a conveyance of title subject to life interest shall be acceptable for registration.",
+      "why_relevant": "Answers the life-interest half of the question directly. A gift that reserves a life interest to the donor postpones the donees' full enjoyment, which would otherwise run into the bar on instruments conveying title on a future event or condition; the express proviso saves it and makes a conveyance subject to a life interest registrable.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded, so the text is treated as in force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M055-003",
+      "section_id": "21-1998/s48",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "48",
+      "subsection": null,
+      "relevant_excerpt": "an instrument pertaining to the ownership of a land parcel registered under this Act, made in favour of two or more persons in common shall be void and shall not be registered under this Act.",
+      "why_relevant": "Answers the two-donees half of the question directly. A single deed of gift of one registered land parcel to two daughters in common is an instrument in favour of two or more persons in common, so it is void and unregistrable. The opening words, 'Except in accordance with the provisions of this Act', are what leave the sub-division route in sections 36 and 47 open.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded, so the text is treated as in force at 2021-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording confirmed verbatim, but the excerpt begins mid-sentence and drops the operative opening qualifier 'Except in accordance with the provisions of this Act,' on which the why_relevant relies; I checked that qualifier and it opens no route here, because the only co-ownership the Act itself creates arises from a declaration of the Commissioner of Title Settlement under section 14(d) on initial registration (sections 15 and 16), not from an instrument between parties."
+    },
+    {
+      "provision_id": "PROV-M055-004",
+      "section_id": "21-1998/s47",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "47",
+      "subsection": null,
+      "relevant_excerpt": "No part of a land parcel registered with a First Class Title of Absolute Ownership or a Second Class Title of Ownership under the provisions of this Act shall be transferred or otherwise dealt with unless the registered owner has first sub-divided such land parcel and the land parcel so subdivided has been registered under the provisions of this Act.",
+      "why_relevant": "Closes the obvious workaround of gifting a divided half to each daughter out of the existing parcel. No part of the registered parcel may be dealt with until the owner has sub-divided it and the sub-divided parcels are themselves registered, so sub-division must precede the gifts.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded, so the text is treated as in force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M055-005",
+      "section_id": "21-1998/s36",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "36",
+      "subsection": "1",
+      "relevant_excerpt": "Any owner or owners of any land parcel or land parcels whose title to which has been registered under this Act, may amalgamate or sub-divide his or their land parcel by registering a plan of redivision or amalgamation or sub-division relating to such land parcels in accordance with the provisions of this Act.",
+      "why_relevant": "Supplies the only route by which the donor's wish can be carried out. As registered owner he may sub-divide the parcel by registering a sub-division plan, after which each resulting land parcel is a separate unit of record that can be gifted to one daughter without offending the co-ownership bar.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded, so the text is treated as in force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M055-006",
+      "section_id": "21-1998/s75",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "75",
+      "subsection": null,
+      "relevant_excerpt": "means a document having the effect of conveying title to and interest in any land parcel in the prescribed form, means an interest Jess than full ownership of the land parcel and includes any Servitudes or encumbrance over such land parcel",
+      "why_relevant": "Defines the two terms the answer turns on. A deed of gift is an 'instrument', a document having the effect of conveying title to and interest in a land parcel in the prescribed form, which is what brings it within sections 43, 46 and 48; and a reserved life interest is an 'interest in land parcel', an interest less than full ownership, which is what makes it a registrable interest rather than a bare condition.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded. The corpus body of section 75 has lost the defined-term labels, so the excerpt reads as two run-on definitions; on the face of the Act these are the definitions of 'instrument' and of 'interest in land parcel', both listed in the corpus defined_terms for this section.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The quoted text is verbatim, but the corpus body of section 75 has lost the defined-term labels and carries an OCR error ('Jess' for 'less'), so the excerpt is two run-on definitions; that the first is 'instrument' and the second 'interest in land parcel' follows from the section's recorded defined_terms order and from the use of 'instrument' in sections 43, 46 and 48, and is an inference from the corpus rather than something the corpus text states."
+    },
+    {
+      "provision_id": "PROV-M055-007",
+      "section_id": "21-1998/s43",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "43",
+      "subsection": null,
+      "relevant_excerpt": "Every instrument conveying title or any interest in a land parcel presented for registration under this Act shall be effected in the form prescribed for that purpose. (2) Instruments prepared under the provisions of subsection (1) shall be signed by the parties to the transaction and two witnesses and attested by a Notary Public",
+      "why_relevant": "Fixes the form the deeds of gift must take: the prescribed form, signed by the parties and two witnesses and attested by a Notary Public. Goes to how the donor's wish is executed rather than to whether it can be achieved.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded. The prescribed form itself is made by regulation under section 67 and is not in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M055-008",
+      "section_id": "21-1998/s49",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "49",
+      "subsection": null,
+      "relevant_excerpt": "An instrument pertaining to land executed in accordance with the provisions of this Act shall take effect on registration, of such instrument under the provisions of this Act.",
+      "why_relevant": "Timing rule: each deed of gift operates only when it is registered, not on execution or delivery, so the donor's wish is not fulfilled until registration is effected.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M055-009",
+      "section_id": "21-1998/s38",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "38",
+      "subsection": null,
+      "relevant_excerpt": "No person acquiring an interest in any land parcel registered under the provisions of this Act shall be entitled to such title or interest unless such title or interest is registered under the provisions of this Act.",
+      "why_relevant": "Makes the same point from the donees' side: neither daughter is entitled to anything until her title is registered, and the donor's reserved life interest likewise has to appear on the register.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M055-010",
+      "section_id": "21-1998/s45",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "45",
+      "subsection": "3",
+      "relevant_excerpt": "If the Registrar of Title is of the opinion that all requirements for registration under this Act are complied with, he shall register such title or interest in the prescribed manner",
+      "why_relevant": "Shows registration is not automatic: the Registrar registers only if satisfied that the requirements of the Act are met, which is the practical checkpoint at which a single gift to two donees in common would be refused.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M055-011",
+      "section_id": "21-1998/s4",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "4",
+      "subsection": null,
+      "relevant_excerpt": "The unit of record in a Title Register maintained under section 3 shall be a land parcel shown on the cadastral map.",
+      "why_relevant": "Background: explains why the Act deals in whole parcels, and hence why undivided shares and part-parcel dealings are resisted throughout the Act.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M055-012",
+      "section_id": "21-1998/s73",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "73",
+      "subsection": null,
+      "relevant_excerpt": "The provisions of this Act shall have effect notwithstanding anything to the contrary contained in any other written law",
+      "why_relevant": "Background: forecloses an argument that the general law of gifts and notarial execution lets the donor do what this Act forbids. Where the two conflict, this Act prevails.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M055-013",
+      "section_id": "21-1998/s54",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "54",
+      "subsection": "2",
+      "relevant_excerpt": "Any provision of a will that makes a person owner of an undivided share or of a divided share smaller in extent than the prescribed minimum extent of a land parcel that may be registered under this Act shall have no legal effect.",
+      "why_relevant": "Background: the same policy applied to testamentary disposition, confirming that the bar on creating undivided shares is a general feature of the Act and not confined to instruments inter vivos. It also warns that leaving the land by will would not achieve the donor's aim either.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M055-014",
+      "section_id": "21-1998/s70",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "70",
+      "subsection": "1",
+      "relevant_excerpt": "The Minister may by Notice published in the Gazette declare any area for which Registers of Title have, been compiled, as an area in which the principle of minimum economic units of land parcels shall apply.",
+      "why_relevant": "Background caveat on the sub-division route: if the land lies in an area declared subject to the minimum economic unit principle, a sub-division leaving either resulting parcel below the prescribed extent may not be registrable.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998 per the corpus; no amendment events recorded. Whether any notice covering this area has been published cannot be checked from the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M055-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The Registration of Title Act No. 21 of 1998 governs the question on its own face. Section 39 makes the Act the exclusive channel for dealings with a registered land parcel, section 46 expressly permits a conveyance subject to a life interest, section 48 expressly voids an instrument of ownership in favour of two or more persons in common, and sections 47 and 36 supply the sub-division route. Section 73 displaces any competing written law. No judicial authority or Roman-Dutch doctrine is needed for a complete answer; the remaining open points are matters of regulation and of fact, not of case law.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M055-Q01-01",
+          "issue": "Whether a gift of a land parcel registered under the Registration of Title Act may reserve a life interest to the donor and still be registrable.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M055-Q01-02",
+          "issue": "Whether one registered land parcel may be gifted by a single instrument to two donees in common.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M055-Q01-03",
+          "issue": "Whether the donor may instead gift a divided portion of the parcel to each daughter, and what he must do first.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M055-Q01-04",
+          "issue": "What form the gift must take and when it takes effect.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M055-001",
+        "PROV-M055-002",
+        "PROV-M055-003",
+        "PROV-M055-004",
+        "PROV-M055-005",
+        "PROV-M055-006"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M055-007",
+        "PROV-M055-008",
+        "PROV-M055-009",
+        "PROV-M055-010"
+      ],
+      "background_provision_ids": [
+        "PROV-M055-011",
+        "PROV-M055-012",
+        "PROV-M055-013",
+        "PROV-M055-014"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps. One: section 39 makes the Act the exclusive and mandatory channel for any dealing with this registered parcel, read with the section 75 definitions of 'instrument' and 'interest in land parcel'. Two: applying section 46 (the proviso saves the life interest) and section 48 (which voids a gift to two donees in common) to the proposed single deed. Three: section 47 read with section 36, which requires a registered sub-division before any divided portion can be gifted. Counting only these indispensable dependencies gives a hop count of 3.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M055-001",
+          "to_provision_id": "PROV-M055-006",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M055-002",
+          "to_provision_id": "PROV-M055-006",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M055-003",
+          "to_provision_id": "PROV-M055-006",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M055-001",
+          "to_provision_id": "PROV-M055-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M055-001",
+          "to_provision_id": "PROV-M055-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M055-002",
+          "to_provision_id": "PROV-M055-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M055-003",
+          "to_provision_id": "PROV-M055-005",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M055-004",
+          "to_provision_id": "PROV-M055-005",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M055-001",
+          "to_provision_id": "PROV-M055-007",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M055-002",
+          "to_provision_id": "PROV-M055-008",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Nimal Siriwardhana wishes to gift his property registered under the Registration Title Act No.21 of 1998 to his two daughters subject to life interest of him.",
+        "enriched_background": "Nimal Siriwardhana wishes to gift his property registered under the Registration Title Act No.21 of 1998 to his two daughters subject to life interest of him. The property is a single land parcel of about forty perches at Meegoda, in the Homagama Divisional Secretary's Division of the Colombo District, separately delineated as Parcel No. 214 on the cadastral map for that area and entered in the Title Register kept at the Homagama Title Registry, where Nimal is recorded as the sole owner with a First Class Title of Absolute Ownership and no encumbrance stands registered against the parcel. His daughters, Kanchana Siriwardhana and Dilini Siriwardhana, are both over eighteen years of age. Nimal wants the two of them to take the whole parcel together, in undivided equal half shares, under one deed of gift, and he intends to keep for himself, for the rest of his life, the right to live on the land and to take its produce. The parcel has never been sub-divided; no sub-division plan of it has been surveyed or registered, and Nimal has made no application to the Registrar of Title to sub-divide it. He proposes to have the deed drawn and attested by a notary public in October 2021.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M055-Q01-001",
+            "fact": "The property is one land parcel, separately delineated as Parcel No. 214 on the cadastral map for the area, and Nimal is recorded in the Title Register at the Homagama Title Registry as its sole owner with a First Class Title of Absolute Ownership, with no encumbrance registered against it.",
+            "origin": "synthetic_decisive",
+            "reason": "The question says only that the property is registered under the Act. Whether it is one parcel or several, and whether the title is a First Class Title of Absolute Ownership, decides whether the co-ownership bar and the part-parcel bar bite at all. Naming the parcel and the registry also settles the property identity the classification flagged as missing.",
+            "activates_provision_ids": [
+              "PROV-M055-001",
+              "PROV-M055-003",
+              "PROV-M055-004",
+              "PROV-M055-011"
+            ],
+            "counterfactual_effect": "If the property were already two separate registered parcels he could simply gift one parcel to each daughter subject to his life interest and the co-ownership bar would never be engaged. If it were not registered under this Act at all, the question would fall to be answered under the general law of gifts instead.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M055-Q01-002",
+            "fact": "The parcel is about forty perches in extent and lies at Meegoda, in the Homagama Divisional Secretary's Division of the Colombo District.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the property location the classification flagged as missing and gives the parcel an extent, so the sub-division route can be discussed as a realistic option rather than in the abstract.",
+            "activates_provision_ids": [
+              "PROV-M055-005",
+              "PROV-M055-014"
+            ],
+            "counterfactual_effect": "A much smaller extent, or an area declared subject to the minimum economic unit principle, could make a two-way sub-division unregistrable and leave the donor with no lawful way to benefit both daughters in his lifetime.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M055-Q01-003",
+            "fact": "The two daughters are Kanchana Siriwardhana and Dilini Siriwardhana, both over eighteen years of age.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the party identity the classification flagged as missing and removes any minority or capacity side-issue, so the answer turns on the registration rules alone.",
+            "activates_provision_ids": [
+              "PROV-M055-007"
+            ],
+            "counterfactual_effect": "If a daughter were a minor, questions of capacity and of who accepts and presents the instrument would arise alongside the registration rules; the co-ownership bar would still apply.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M055-Q01-004",
+            "fact": "Nimal wants both daughters to take the whole parcel together in undivided equal half shares under one deed of gift; the parcel has never been sub-divided, no sub-division plan has been surveyed or registered, and he has made no application to the Registrar of Title to sub-divide it.",
+            "origin": "synthetic_decisive",
+            "reason": "The question does not say whether the daughters are to take jointly in undivided shares or a divided portion each. That is the fact the answer turns on, and the absence of any sub-division is what makes the divided-portion alternative unavailable as things stand.",
+            "activates_provision_ids": [
+              "PROV-M055-003",
+              "PROV-M055-004",
+              "PROV-M055-005"
+            ],
+            "counterfactual_effect": "Had he already sub-divided the parcel into two registered parcels, a separate gift of one parcel to each daughter subject to his life interest would be registrable and his wish could be carried out at once.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M055-Q01-005",
+            "fact": "Nimal intends to keep for himself, for the rest of his life, the right to live on the land and to take its produce, and proposes to have the deed drawn and attested by a notary public in October 2021.",
+            "origin": "synthetic_decisive",
+            "reason": "Spells out that the reservation is a life interest in the donor and not a condition or a gift taking effect on a future event, which is the distinction the rule on future conveyances turns on. It also fixes the date of the intended transaction at the matter reference date.",
+            "activates_provision_ids": [
+              "PROV-M055-002",
+              "PROV-M055-006",
+              "PROV-M055-007"
+            ],
+            "counterfactual_effect": "If the deed were framed so that title passed to the daughters only on the donor's death or on some other future event, it could not be registered at all, and the proviso saving conveyances subject to a life interest would not help him.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether Nimal Siriwardhana can carry out his wish to gift his land, registered under the Registration of Title Act No. 21 of 1998, to his two daughters while reserving a life interest to himself: that is, whether a deed of gift of the registered parcel to both daughters in common, subject to his life interest, can validly be made and registered, and if not, what he must do instead.",
+        "rule": "The land is a land parcel registered under the Registration of Title Act No. 21 of 1998, so section 39 applies: no registered land parcel or interest in it may be transferred or dealt with except in accordance with the Act, and every disposition otherwise effected is void. A deed of gift is an 'instrument' within section 75, a document having the effect of conveying title to and interest in a land parcel in the prescribed form, and a life interest is an 'interest in land parcel' under the same section, being an interest less than full ownership. On the life interest, section 46 forbids the Registrar of Title to register any instrument purporting to convey title or an interest on the happening of any event or the fulfilment of any condition at a future time, but the proviso to section 46 makes a conveyance of title subject to life interest acceptable for registration. On the two donees, section 48 provides that, except in accordance with the provisions of the Act, an instrument pertaining to the ownership of a registered land parcel made in favour of two or more persons in common is void and shall not be registered. Section 47 adds that no part of a parcel registered with a First Class Title of Absolute Ownership or a Second Class Title of Ownership may be transferred or otherwise dealt with unless the registered owner has first sub-divided it and the sub-divided parcel has itself been registered, and section 36(1) allows a registered owner to sub-divide by registering a sub-division plan in accordance with the Act. Any instrument must be in the prescribed form, signed by the parties and two witnesses and attested by a Notary Public under section 43; it is registered only if the Registrar of Title is satisfied that the requirements of the Act are met under section 45(3); it takes effect only on registration under section 49; and under section 38 no donee is entitled to any title or interest until it is registered.",
+        "application": "Nimal is the registered sole owner of a single land parcel with a First Class Title of Absolute Ownership, so section 39 governs everything he proposes to do with it. The reservation to himself of the right to live on the land and take its produce for the rest of his life is a life interest, an interest less than full ownership within section 75, and not a conveyance postponed to a future event or condition; a gift of the parcel subject to that reservation therefore falls within the proviso to section 46 and is acceptable for registration on that ground. The difficulty lies in the other half of the plan. He wants both daughters to take the whole parcel together in undivided equal half shares under one deed, which is an instrument pertaining to the ownership of a registered land parcel made in favour of two persons in common. Section 48 makes such an instrument void and directs that it shall not be registered, and under section 45(3) the Registrar of Title would refuse it; by section 49 it would in any event take effect only on registration, and by section 38 neither daughter would acquire anything. Nor can he sidestep this by gifting a divided half of the existing parcel to each daughter, because section 47 bars any dealing with part of a registered parcel until the owner has first sub-divided it and the sub-divided parcels have been registered, and on these facts the parcel has never been sub-divided and no sub-division plan has been surveyed or registered. What he can do is proceed under section 36(1): as registered owner he may apply to sub-divide the parcel and register a sub-division plan, and once each of the two resulting land parcels is registered he may execute a separate deed of gift of one parcel to each daughter, each gift reserving his life interest under the proviso to section 46, each in the prescribed form and attested by a Notary Public under section 43, and each taking effect on registration under section 49. Whether the forty-perch parcel can in fact be divided in two depends on the prescribed extent and on whether the area has been declared one in which the minimum economic unit principle applies under section 70, which cannot be determined on the facts given.",
+        "conclusion": "Only in part, and not in the form he proposes. The life interest is no obstacle, because the proviso to section 46 expressly allows a conveyance of title subject to a life interest to be registered. But a single deed of gift of the one registered parcel to both daughters in common would be void and unregistrable under section 48, and a gift of a divided portion to each is barred by section 47 while the parcel remains unsub-divided. Nimal can achieve substantially what he wants only if he first sub-divides the parcel under section 36 and registers the sub-division, and then gifts one resulting parcel to each daughter by a separate instrument reserving his life interest, subject to the sub-division being permissible under the prescribed minimum extent for the area."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M055-Q01-001",
+          "claim_text": "Because the land is a land parcel registered under the Registration of Title Act, it may be transferred or dealt with only in accordance with that Act, and any disposition otherwise effected is void.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M055-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-002",
+          "claim_text": "A deed of gift is an 'instrument' under the Act, and a life interest is an 'interest in land parcel', being an interest less than full ownership.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M055-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-003",
+          "claim_text": "The Registrar of Title may not register an instrument purporting to convey title or an interest on a future event or condition, but a conveyance of title subject to a life interest is expressly acceptable for registration.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M055-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-004",
+          "claim_text": "An instrument pertaining to the ownership of a registered land parcel made in favour of two or more persons in common is void and shall not be registered, except in accordance with the provisions of the Act.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M055-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-005",
+          "claim_text": "No part of a parcel registered with a First Class Title of Absolute Ownership may be transferred or otherwise dealt with unless the registered owner has first sub-divided it and the sub-divided parcel has been registered.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M055-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-006",
+          "claim_text": "A registered owner may sub-divide his land parcel by registering a sub-division plan in accordance with the Act.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M055-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-007",
+          "claim_text": "Any such instrument must be in the prescribed form, signed by the parties and two witnesses and attested by a Notary Public; it is registered only if the Registrar of Title is satisfied that the Act's requirements are met, takes effect only on registration, and until registration confers no title or interest on the donees.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M055-007",
+            "PROV-M055-010",
+            "PROV-M055-008",
+            "PROV-M055-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-008",
+          "claim_text": "The right Nimal wishes to keep for the rest of his life, to live on the land and take its produce, is a life interest, so a gift of the parcel reserving it falls within the proviso to section 46 and is acceptable for registration on that ground.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M055-002",
+            "PROV-M055-006"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M055-Q01-005",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-009",
+          "claim_text": "A single deed of gift of the one registered parcel to both daughters in undivided equal half shares is an instrument in favour of two persons in common, so it would be void under section 48 and the Registrar of Title would refuse to register it.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M055-003",
+            "PROV-M055-010"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M055-Q01-001",
+            "FACT-M055-Q01-004",
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-010",
+          "claim_text": "Because the parcel has never been sub-divided and no sub-division plan has been registered, he cannot instead gift a divided half of the existing parcel to each daughter.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M055-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M055-Q01-001",
+            "FACT-M055-Q01-004"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-011",
+          "claim_text": "He may first apply to sub-divide the parcel and register a sub-division plan, and once each resulting land parcel is registered he may gift one parcel to each daughter by a separate notarially attested instrument reserving his life interest, each gift taking effect on registration.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M055-005",
+            "PROV-M055-002",
+            "PROV-M055-007",
+            "PROV-M055-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M055-Q01-001",
+            "FACT-M055-Q01-003",
+            "FACT-M055-Q01-004",
+            "FACT-M055-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-012",
+          "claim_text": "Whether the forty-perch parcel can in fact be divided in two depends on the prescribed extent and on whether the area has been declared one in which the minimum economic unit principle applies, which cannot be determined on the facts given.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M055-014"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M055-Q01-002"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-013",
+          "claim_text": "Nimal cannot fulfil his desire in the form he proposes: the reservation of a life interest is permissible, but a single gift of the registered parcel to both daughters in common is void and unregistrable, and a gift of divided portions is barred while the parcel remains unsub-divided.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M055-002",
+            "PROV-M055-003",
+            "PROV-M055-004",
+            "PROV-M055-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M055-Q01-001",
+            "FACT-M055-Q01-004",
+            "FACT-M055-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M055-Q01-014",
+          "claim_text": "He can achieve substantially what he wants by first sub-dividing the parcel and registering the sub-division, and then gifting one resulting parcel to each daughter subject to his life interest, provided the sub-division is permissible under the prescribed minimum extent for the area.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M055-005",
+            "PROV-M055-004",
+            "PROV-M055-002",
+            "PROV-M055-014"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M055-Q01-002",
+            "FACT-M055-Q01-003",
+            "FACT-M055-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

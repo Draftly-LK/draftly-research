@@ -1,0 +1,13 @@
+\begin{tabular}{lccccccc}
+\toprule
+System & R@10 & R@20 & C@10 & C@20 & MRR & nDCG@10 & Act@10 \\
+\midrule
+BM25 & 0.477 & 0.521 & 0.262 & 0.295 & 0.569 & 0.374 & 0.713 \\
+Field-weighted BM25 & 0.487 & 0.520 & 0.279 & 0.295 & 0.598 & 0.391 & 0.697 \\
+Dense (bge-base) & 0.273 & 0.396 & 0.131 & 0.197 & 0.255 & 0.162 & 0.500 \\
+BM25F + dense (RRF) & 0.470 & 0.540 & 0.270 & 0.328 & 0.562 & 0.383 & 0.680 \\
+Hybrid + cross-encoder & 0.308 & 0.474 & 0.172 & 0.279 & 0.251 & 0.209 & 0.574 \\
+Hierarchical Act$\rightarrow$section & 0.435 & 0.502 & 0.270 & 0.344 & 0.523 & 0.360 & 0.500 \\
+Hierarchical + bundle (ours) & 0.474 & 0.502 & 0.295 & 0.328 & 0.510 & 0.348 & 0.516 \\
+\bottomrule
+\end{tabular}

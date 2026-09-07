@@ -1,0 +1,96 @@
+{
+  "benchmark_matter_id": "M080",
+  "verifier": "verifier-M080",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:00:55Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M080-001",
+      "decision": "verified",
+      "note": "5-2017/s2 checked verbatim; in force from 2017, no amendment_events recorded, applicable at October 2019 and to a deed executed in March 2018."
+    },
+    {
+      "provision_id": "PROV-M080-002",
+      "decision": "verified",
+      "note": "5-2017/s3 checked verbatim; both limbs of the time bar are in the text and the section is applicable at the matter date."
+    },
+    {
+      "provision_id": "PROV-M080-003",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim but truncated at the lead-in of s.4(1); paragraphs (a) and (b), which supply the addressee rule the claims rely on, fall outside the quoted words although they are present in the corpus body."
+    },
+    {
+      "provision_id": "PROV-M080-004",
+      "decision": "verified",
+      "note": "5-2017/s5 checked verbatim."
+    },
+    {
+      "provision_id": "PROV-M080-005",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim in the corpus but begins mid-sentence because extraction stripped the defined term, and the definition keys the Registrar of Lands to the district where the land lies rather than the s.4(1)(a) district of registration, so it cannot carry the addressee rule."
+    },
+    {
+      "provision_id": "PROV-M080-006",
+      "decision": "verified",
+      "note": "23-1927/s11(6) checked verbatim and is free of the OCR damage in the neighbouring subsections; latest recorded change 1947, well before October 2019."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M080-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "Both indispensable provisions (ss.2 and 3 of Act No. 5 of 2017) verified verbatim and applicable at the matter date, and hop count 2 matches the two indispensable steps. A corpus-wide grep for revocation, deed of gift, donation, donor and donee turns up no other statute governing revocation of a gift, so the statutory route and the time bar are determinate and the answer expressly leaves the grading of the conduct to the court. statute_only upheld, with the exhaustiveness reading in the gold prose recorded as a disagreement for the lawyer."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "statutory_interpretation",
+      "researcher_position": "Section 2 of Act No. 5 of 2017 is exhaustive both as to the ground (gross ingratitude) and as to the mode (an order of a competent court), so no other route to revocation survives.",
+      "verifier_position": "The word only in s.2 attaches grammatically to the mode, only on an Order made by a competent court. The section states the ground for which the remedy is given but does not in terms say that no other ground exists. That gross ingratitude is the only statutory ground follows from the corpus sweep, not from the wording of s.2; whether the Act also ousts the Roman-Dutch grounds for revoking a donation is outside the corpus.",
+      "supporting_sources": ["5-2017/s2", "5-2017/s1"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "statutory_interpretation",
+      "researcher_position": "Section 6 defines Registrar of Lands and so fixes the officer to whom the s.4(1) lis pendens application is addressed.",
+      "verifier_position": "Section 6 keys the Registrar of Lands to the district in which the land forming the subject matter of the deed is situated, while s.4(1)(a) directs the application to the Registrar of the district in which the deed is registered. The two tests diverge where a deed was registered in a district other than the one in which the land lies. On these enriched facts both are Gampaha, so the answer is unaffected, but the definition should not be cited as the source of the addressee rule.",
+      "supporting_sources": ["5-2017/s4", "5-2017/s6"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M080-Q01-008 marked disputed. Its premise, that a consensual cancellation of the deed by donor and donee would have been an available alternative to the statutory action, has no support in the corpus and sits uneasily with the words only on an Order made by a competent court in 5-2017/s2. The remainder of the claim, that the donor must proceed by the statutory action, is sound.",
+      "The gold prose sentence stating that section 2 is exhaustive both as to the ground and as to the mode overstates the text; see disagreements. The gold answer was not rewritten."
+    ],
+    "temporal_issues": [
+      "None found for the answer as given. Act No. 5 of 2017 is held only in its as_enacted edition with no amending Act in the corpus, so the assumption that the enacted text stood unamended at October 2019 cannot be confirmed from the corpus and is correctly declared as a corpus gap.",
+      "The enrichment dates the deed 12 March 2018, after the Act, which avoids the retrospectivity question the corpus cannot answer. The arithmetic in CL-M080-Q01-010 checks out: about nineteen months from execution against a ten-year limit, and about five months from the 20 May 2019 cause of action against a two-year limit."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Gross ingratitude is undefined in the Act and nothing in the corpus supplies content for it. Correctly declared as a gap and left open in the answer.",
+      "Competent court is undefined in the Act and the corpus does not fix which court has jurisdiction over the revocation action. The answer names no court, so nothing turns on it.",
+      "Muslim Intestate Succession Ordinance 10-1931/s3 carries a proviso that no deed of donation is irrevocable unless the deed says so. It applies only to donations by Muslims and the enriched facts raise no personal-law issue, so the decision to leave it out is upheld.",
+      "A corpus-wide grep for revocab|revocation|revoke and for deed of gift|donation|donee|donor surfaced no other statute bearing on revocation of a gift, and edges on 5-2017/s2, s3, s4 and s6 surfaced no cross-reference the map omits. No alternative Act was missed."
+    ],
+    "case_law_dependence": [
+      "The answer cites no case law and the validator's case-citation check is clean. The residual dependence is real but handled correctly: the content of gross ingratitude comes from Roman-Dutch law and decided cases, and the answer declines to grade the donee's conduct rather than deciding it on unstated authority."
+    ],
+    "enrichment_issues": [
+      "The counterfactual on FACT-M080-Q01-005 states that if the donee agreed to a cancellation the parties could deal with the matter by a further notarial instrument and no court order would be needed. That proposition has no corpus support and is in tension with the word only in 5-2017/s2. It should be struck or rewritten before lawyer approval.",
+      "FACT-M080-Q01-002 is labelled synthetic_neutral but it is what fixes Gampaha as the district for the lis pendens application. The label is defensible because the fact is neutral as to whether the gift can be revoked, but a lawyer may prefer synthetic_decisive.",
+      "No leak found: the enriched background names no statute, no section number and no ground, and does not state the conclusion. The added facts do not change the legal issue."
+    ],
+    "duplicate_or_leak_issues": [
+      "None. Single Tier A question, question ids match candidates/matters/M080.json, provision role sets are disjoint and every provision is used by the question."
+    ]
+  },
+  "lawyer_questions": [
+    "Does s.2 of Act No. 5 of 2017 oust the Roman-Dutch grounds on which a donation could be revoked, so that gross ingratitude is now the only ground and a court order the only mode, or does it merely add a statutory route? The gold answer treats s.2 as exhaustive on both points.",
+    "Where a deed of gift is registered in one district but the land lies in another, does the s.4(1)(a) lis pendens application follow the district of registration or the s.6 definition, which points to the district in which the land is situated?",
+    "Is it acceptable for a proposed_gold answer to state the statutory route and both time limbs as determinate while expressly leaving the grading of the donee's conduct to the court, or does that residual case-law dependence make the question mixed_statute_and_case and therefore reserved?"
+  ]
+}

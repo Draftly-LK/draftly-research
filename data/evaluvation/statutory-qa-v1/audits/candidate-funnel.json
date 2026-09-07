@@ -1,0 +1,274 @@
+{
+  "status": "unverified",
+  "generated": "2026-09-04T21:40:23Z",
+  "inputs": {
+    "atomic_questions": {
+      "path": "data/evaluvation/parsed-pastpapers/atomic/atomic-questions.jsonl",
+      "sha256": "b932e50f0a6023b4e18b684c7b232f406103af16dcc96515636934675c510f30",
+      "rows": 667
+    },
+    "atomic_classifications": {
+      "path": "data/evaluvation/parsed-pastpapers/atomic/atomic-classifications.jsonl",
+      "sha256": "3d4a27b74efbedaa4c383aaf354760646da66019a960f99b671e1155de2b4886",
+      "rows": 667
+    }
+  },
+  "classification_actions": {
+    "keep": 119,
+    "review": 50,
+    "enrich": 91,
+    "drop_candidate": 399,
+    "repair": 8
+  },
+  "candidate_predicate": {
+    "candidate_action": [
+      "enrich",
+      "keep"
+    ]
+  },
+  "tier_a_predicate": {
+    "candidate_action": [
+      "enrich",
+      "keep"
+    ],
+    "extraction_quality": "clean",
+    "confidence_min": 0.8,
+    "context_dependency": [
+      "required",
+      "partial"
+    ]
+  },
+  "funnel": {
+    "source_questions": 667,
+    "keep_enrich_candidates": 210,
+    "quarantined_background_boundary_questions": 18,
+    "quarantined_matters": 18,
+    "buildable_candidates": 192,
+    "candidate_matters": 115,
+    "tier_a_questions": 144,
+    "tier_a_matters": 92,
+    "tier_b_questions": 66,
+    "matters_with_only_tier_b": 23
+  },
+  "tier_a_by_action": {
+    "keep": 84,
+    "enrich": 60
+  },
+  "tier_b_reasons": {
+    "confidence=0.75": 14,
+    "confidence=0.78": 12,
+    "extraction_quality=review": 31,
+    "confidence=0.7": 8,
+    "confidence=0.65": 1,
+    "confidence=0.72": 3,
+    "quarantined_background_boundary: P02-Q03-P03: no factual context from []": 1,
+    "quarantined_background_boundary: P03-Q02-P01: no factual context from []": 1,
+    "quarantined_background_boundary: P03-Q02-P03: no factual context from []": 1,
+    "quarantined_background_boundary: P04-Q02-P02: no factual context from []": 1,
+    "quarantined_background_boundary: P04-Q02-P04-I01: no factual context from []": 1,
+    "quarantined_background_boundary: P04-Q02-P04-I02: no factual context from []": 1,
+    "quarantined_background_boundary: P06-Q09-P03: no factual context from []": 1,
+    "quarantined_background_boundary: P08-Q02-P01-I01: no factual context from []": 1,
+    "quarantined_background_boundary: P08-Q02-P01-I02: no factual context from []": 1,
+    "quarantined_background_boundary: P08-Q04-P04: no factual context from []": 1,
+    "quarantined_background_boundary: P09-Q09-P02: no factual context from []": 1,
+    "quarantined_background_boundary: P13-Q02-P01: no factual context from []": 1,
+    "quarantined_background_boundary: P13-Q04-P04: no factual context from []": 1,
+    "quarantined_background_boundary: P14-Q03-P05: no factual context from []": 1,
+    "quarantined_background_boundary: P14-Q06-P04: no factual context from []": 1,
+    "quarantined_background_boundary: P14-Q06-P05: no factual context from []": 1,
+    "quarantined_background_boundary: P16-Q03-P03: no factual context from []": 1,
+    "quarantined_background_boundary: P16-Q07-P04: no factual context from []": 1
+  },
+  "questions_per_matter": {
+    "1": 66,
+    "2": 29,
+    "3": 13,
+    "4": 6,
+    "5": 1
+  },
+  "questions_by_paper": {
+    "1": 18,
+    "2": 15,
+    "3": 4,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 7,
+    "8": 7,
+    "9": 8,
+    "10": 14,
+    "11": 10,
+    "12": 20,
+    "13": 11,
+    "14": 17,
+    "15": 15,
+    "16": 21
+  },
+  "background_conflicts": [],
+  "quarantined_records": [
+    {
+      "grouping_key": "atomic:P02-Q03-P03",
+      "atomic_ids": [
+        "P02-Q03-P03"
+      ],
+      "reason": [
+        "P02-Q03-P03: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P03-Q02-P01",
+      "atomic_ids": [
+        "P03-Q02-P01"
+      ],
+      "reason": [
+        "P03-Q02-P01: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P03-Q02-P03",
+      "atomic_ids": [
+        "P03-Q02-P03"
+      ],
+      "reason": [
+        "P03-Q02-P03: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P04-Q02-P02",
+      "atomic_ids": [
+        "P04-Q02-P02"
+      ],
+      "reason": [
+        "P04-Q02-P02: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P04-Q02-P04-I01",
+      "atomic_ids": [
+        "P04-Q02-P04-I01"
+      ],
+      "reason": [
+        "P04-Q02-P04-I01: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P04-Q02-P04-I02",
+      "atomic_ids": [
+        "P04-Q02-P04-I02"
+      ],
+      "reason": [
+        "P04-Q02-P04-I02: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P06-Q09-P03",
+      "atomic_ids": [
+        "P06-Q09-P03"
+      ],
+      "reason": [
+        "P06-Q09-P03: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P08-Q02-P01-I01",
+      "atomic_ids": [
+        "P08-Q02-P01-I01"
+      ],
+      "reason": [
+        "P08-Q02-P01-I01: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P08-Q02-P01-I02",
+      "atomic_ids": [
+        "P08-Q02-P01-I02"
+      ],
+      "reason": [
+        "P08-Q02-P01-I02: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P08-Q04-P04",
+      "atomic_ids": [
+        "P08-Q04-P04"
+      ],
+      "reason": [
+        "P08-Q04-P04: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P09-Q09-P02",
+      "atomic_ids": [
+        "P09-Q09-P02"
+      ],
+      "reason": [
+        "P09-Q09-P02: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P13-Q02-P01",
+      "atomic_ids": [
+        "P13-Q02-P01"
+      ],
+      "reason": [
+        "P13-Q02-P01: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P13-Q04-P04",
+      "atomic_ids": [
+        "P13-Q04-P04"
+      ],
+      "reason": [
+        "P13-Q04-P04: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P14-Q03-P05",
+      "atomic_ids": [
+        "P14-Q03-P05"
+      ],
+      "reason": [
+        "P14-Q03-P05: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P14-Q06-P04",
+      "atomic_ids": [
+        "P14-Q06-P04"
+      ],
+      "reason": [
+        "P14-Q06-P04: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P14-Q06-P05",
+      "atomic_ids": [
+        "P14-Q06-P05"
+      ],
+      "reason": [
+        "P14-Q06-P05: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P16-Q03-P03",
+      "atomic_ids": [
+        "P16-Q03-P03"
+      ],
+      "reason": [
+        "P16-Q03-P03: no factual context from []"
+      ]
+    },
+    {
+      "grouping_key": "atomic:P16-Q07-P04",
+      "atomic_ids": [
+        "P16-Q07-P04"
+      ],
+      "reason": [
+        "P16-Q07-P04: no factual context from []"
+      ]
+    }
+  ],
+  "normalization_changes": 0
+}

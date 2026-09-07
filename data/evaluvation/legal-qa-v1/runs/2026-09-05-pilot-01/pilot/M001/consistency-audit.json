@@ -1,0 +1,109 @@
+{
+  "matter": "M001",
+  "run_id": "2026-09-05-pilot-01",
+  "passed": false,
+  "status": "unverified",
+  "produced_by": "run_legal_qa_pipeline.py",
+  "error_count": 13,
+  "warning_count": 22,
+  "temporal_warnings": [
+    "AUTH-M001-002: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+    "AUTH-M001-004: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+    "AUTH-M001-005: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+    "AUTH-M001-007: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review"
+  ],
+  "reports": {
+    "legal_maps": {
+      "matter": "M001",
+      "passed": false,
+      "status": "unverified",
+      "errors": [
+        "matter cannot advance: indispensable authority AUTH-M001-012 has an unresolved source conflict",
+        "matter cannot advance: indispensable authority AUTH-M001-019 has an unresolved source conflict",
+        "legal-map.json: status is 'needs_legal_review'; matter cannot advance",
+        "legal-map.json M001-Q01: status is 'needs_legal_review'; matter cannot advance",
+        "legal-map.json M001-Q02: status is 'needs_legal_review'; matter cannot advance",
+        "legal-map.json M001-Q03: status is 'blocked_source_conflict'; matter cannot advance"
+      ],
+      "warnings": [
+        "AUTH-M001-005: verifier says the authority only partially supports the claimed proposition",
+        "AUTH-M001-007: verifier says the authority only partially supports the claimed proposition",
+        "AUTH-M001-025: supporting authority has verification_status partially_verified",
+        "AUTH-M001-026: supporting authority has verification_status unresolved",
+        "AUTH-M001-026: verifier notes a missing authority: A Roman-Dutch or Sri Lankan authority stating that a usufruct/life interest is extinguished by the holder's renunciation and merges in the dominium (e.g. a Voet 7.4 passage or a reported decision) is not in the corpus; SC Appeal 208/2017 (dicta) is the closest repo material.",
+        "source conflict recorded for AUTH-M001-012: Section 3(1)(d) wording: the canonical tree drops the words at the PDF page 3/4 break ('the owner of such land, in'), reading 'to a next of kin (who is a foreigner) of the accordance with'; the PDF text layer reads 'of the owner of such land, in accordance with'. Verifier re-extracted the PDF text layer from PowerShell (poppler 25.07) and confirmed the fuller reading; the dump is byte-identical (sha256 9c711e030aa001d6683ef5c9a76bc876741eda9ecb2c43ad7b4e163e118dcbd4). Assessment: does not change the answer; the tree needs correction.",
+        "source conflict recorded for AUTH-M001-001: Section 21(1): tree (from LankaLaw HTML) reads 'Inheritance ab interstate'; the LankaLaw PDF text layer (page 4) reads 'Inheritance ab intestato'. Typographical variance only, but the tree text is what is quoted.",
+        "source conflict recorded for AUTH-M001-001: Amendment history of SRC004: amendment-chains.csv lists 'Ordinance 2 of 1889' as the amending instrument; the canonical tree header lists 'Ordinance 18 of 1923'. Both unverified. Verifier: the PDF header block (page 1) lists 'Nos 15 of 1876, 2 of 1889, 18 ol 1922', so both instruments amended the Ordinance; the year of the second (1922 vs 1923) still differs between PDF and tree.",
+        "source conflict recorded for AUTH-M001-006: Section 26: tree reads 'whether of the whole or balf-blood'; PDF text layer page 5 reads 'half-blood'. Transcription error in the LankaLaw HTML/tree; no effect on the answer.",
+        "source conflict recorded for AUTH-M001-001: Commencement/proclamation date of Ordinance 15 of 1876: statute_commencement.csv (srilankalaw) records 1876-06-29; the tree header date_stated_in_source and the PDF header read 29th June 1877 (the PDF footnote also uses 'married on or after the 29th day of June, 1877'). Affects effective_from for every SRC004 authority; no effect on the answer (all deaths are 1990 or later).",
+        "source conflict recorded for AUTH-M001-019: Act 21 of 2018 tree/OCR text vs the RGD scan (read visually by the verifier): s.1 'April 1. 2018' vs scan 'April 1, 2018'; s.2(c) 'immediately after paragraph (ht)' vs scan '(h)'; new paragraph '()' vs scan '(i)'; 'listedin' vs 'listed in'; 'cnactment' vs 'enactment'. OCR defects only; the substance (which paragraphs were amended) is the same and does not change the answer.",
+        "legal-map.json M001-Q01 claim CL-M001-Q01-002: only partially verified",
+        "legal-map.json M001-Q01 claim CL-M001-Q01-003: only partially verified",
+        "legal-map.json M001-Q01 claim CL-M001-Q01-004: only partially verified",
+        "legal-map.json M001-Q01 claim CL-M001-Q01-005: only partially verified",
+        "legal-map.json M001-Q01 claim CL-M001-Q01-009: only partially verified",
+        "legal-map.json M001-Q02 claim CL-M001-Q02-006: only partially verified",
+        "legal-map.json M001-Q03 claim CL-M001-Q03-008: only partially verified",
+        "AUTH-M001-002: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+        "AUTH-M001-004: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+        "AUTH-M001-005: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+        "AUTH-M001-007: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review"
+      ],
+      "temporal_warnings": [
+        "AUTH-M001-002: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+        "AUTH-M001-004: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+        "AUTH-M001-005: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+        "AUTH-M001-007: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review"
+      ],
+      "validator": "validate_legal_maps.py",
+      "stage": "authorities_verified"
+    },
+    "matter_ledger": {
+      "matter": "M001",
+      "passed": false,
+      "status": "unverified",
+      "errors": [
+        "matter-ledger.json: file missing"
+      ],
+      "warnings": [],
+      "validator": "validate_matter_ledgers.py",
+      "stage": "ledger_built"
+    },
+    "document_bundle": {
+      "matter": "M001",
+      "passed": false,
+      "status": "unverified",
+      "errors": [
+        "document-specs.json: file missing",
+        "predicates.json: file missing",
+        "matter-ledger.json: file missing",
+        "synthetic-documents/: no documents found"
+      ],
+      "warnings": [],
+      "validator": "validate_document_bundles.py",
+      "stage": "synthetic_bundle_generated"
+    },
+    "predicates": {
+      "matter": "M001",
+      "passed": false,
+      "status": "unverified",
+      "errors": [
+        "predicates.json: file missing"
+      ],
+      "warnings": [],
+      "validator": "run_legal_qa_pipeline.py",
+      "stage": "predicates_defined"
+    },
+    "document_specs": {
+      "matter": "M001",
+      "passed": false,
+      "status": "unverified",
+      "errors": [
+        "document-specs.json: file missing"
+      ],
+      "warnings": [],
+      "validator": "run_legal_qa_pipeline.py",
+      "stage": "documents_specified"
+    }
+  }
+}

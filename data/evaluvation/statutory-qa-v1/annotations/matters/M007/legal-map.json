@@ -1,0 +1,428 @@
+{
+  "benchmark_matter_id": "M007",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M007",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T21:49:49Z",
+    "verification_agent": "verifier-M007",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:00:19Z"
+  },
+  "matter_reference_date": "2026-04",
+  "matter_reference_date_basis": "matter_reference_date and exam_session (\"APRIL 2026\") stated in candidates/matters/M007.json; the consolidated Notaries Ordinance and Prevention of Frauds Ordinance texts in the corpus already carry the 2022 and 2024 amendments, all of which commenced before this date.",
+  "corpus_gaps": [
+    "The Notaries Ordinance does not define \"matter of form\" in s.33, and the corpus holds no judicial authority, so the general form/substance boundary cannot be drawn from statute alone. The enrichment was drafted so that the decisive defect is also an express non-compliance with the Prevention of Frauds Ordinance s.2(1)(a), which the proviso to s.33 reaches on its own words; a marker who expects the candidate to argue the form/substance line from decided cases should treat this map as covering only the statutory half of that discussion.",
+    "The corpus has no rule of court, Registrar-General circular or practice direction on the consequences of a defective notarial attestation, and no provision on the position of a bona fide purchaser who relies on such a deed."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M007-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (12)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+      "why_relevant": "This is the section 31 rule that the enriched facts show Saman broke. It is the rule whose subject matter is duplicated by the Prevention of Frauds Ordinance s.2(1)(a), so breaking it is not merely a notarial default but also non-compliance with another written law, which is what takes the deed outside the protection of s.33.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (12) is part of the original 1907 text of s.31 and is not among the rules substituted or inserted by Acts No. 47 of 2011, No. 31 of 2022 or No. 6 of 2024; it was in force at the matter reference date of 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M007-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(c)",
+      "relevant_excerpt": "he shall write on the front page of the deed his name with initials, number assigned to the notary, address of his office and telephone number.",
+      "why_relevant": "Supplies the contrasting defect: a section 31 requirement about how the face of the deed is to be completed, unconnected with any other written law. It is what allows the answer to show that some section 31 breaches leave the deed intact, which is the first half of the required explanation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (17) was restructured by Act No. 47 of 2011 and paragraph (c) reflects the substitutions made by Acts No. 31 of 2022 and No. 6 of 2024, including the sentence requiring a notary who is a legal officer of an organisation to give that organisation's registered address. All of those changes commenced before 2026-04, so the consolidated text applies to a deed attested in 2026.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and the paragraph is correctly identified as rule (17)(c) (inserted by Notaries (Amendment) Act No. 31 of 2022 s.16(10)(b) and amended by Act No. 6 of 2024 s.3(6)(b), which substituted \"name with initials\" for \"full name\"), but the temporal note is wrong to say rule (17) was restructured by Act No. 47 of 2011: that Act amended only rules (16) and (26); the excerpt also stops before the sentence on a notary who is a legal officer of an organisation, on which claim CL-M007-Q01-005 relies."
+    },
+    {
+      "provision_id": "PROV-M007-003",
+      "section_id": "1-1907/s33",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "33",
+      "subsection": null,
+      "relevant_excerpt": "No instrument shall be deemed to be invalid by reason only of the failure of any notary to observe any provision of any rule set out in section 31 in respect of any matter of form: Provided that nothing hereinbefore contained shall be deemed to give validity to any instrument which may be invalid by reason of non-compliance with the provisions of any other written law.",
+      "why_relevant": "The provision that answers the question directly. Its main limb denies invalidity where the notary's default is a matter of form only; its proviso withholds that protection where the instrument is invalid under some other written law. Both limbs are needed, because the enriched facts contain one defect of each kind.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 33 carries in_force_from_year 1907 and no amendment events in the corpus; it stands in its original form at the matter reference date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M007-004",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "2(1)(a)",
+      "relevant_excerpt": "shall be in force or avail in law unless - (a) the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary",
+      "why_relevant": "This is the \"other written law\" that the proviso to Notaries Ordinance s.33 preserves. It makes the same simultaneous-presence requirement a condition of the deed of transfer having any force in law, so the defect in Saman's attestation attacks the deed itself and not merely his conduct.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 was renumbered as subsection (1) and paragraph (a) was substituted by the Prevention of Frauds (Amendment) Act No. 4 of 2024 s.2; the corpus body is the post-2024 consolidated text, which is the text in force in April 2026. The earlier changes recorded are by Act No. 60 of 1947 and Act No. 30 of 2022.",
+      "verification_status": "verified",
+      "verifier_note": "Verbatim and temporally correct; note only that the excerpt begins mid-sentence, so the opening words of s.2(1) that confine the provision to land and other immovable property - the words claims CL-M007-Q01-004 and CL-M007-Q01-010 depend on - sit outside the quoted text."
+    },
+    {
+      "provision_id": "PROV-M007-005",
+      "section_id": "1-1907/s34",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "34",
+      "subsection": "34(1)(c)",
+      "relevant_excerpt": "any other rule set out in section 31, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate, be liable to a fine not exceeding fifty thousand rupees, in addition to any civil liability he may incur thereby.",
+      "why_relevant": "Shows that the sanction the Ordinance itself attaches to a breach of section 31 is penal and personal to the notary, with civil liability preserved, and says nothing about the standing of the instrument. It supports the point that breach of section 31 and invalidity of the deed are separate questions, but the answer to the question asked does not depend on it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 34 was substituted by the Notaries (Amendment) Act No. 31 of 2022 s.17, which commenced before the matter reference date; the fine levels quoted are those of the 2022 text.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M007-006",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (22)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice",
+      "why_relevant": "Context only. The background states that Saman's licence is for the Judicial Zone of Colombo, and the added facts place the execution at his Colombo office, so this rule is satisfied and no question of invalidity arises from the place of attestation. Recorded so that the verifier can see the point was considered and closed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (22) is part of the original 1907 text of s.31 and is not among the rules substituted by the 2011, 2022 or 2024 amendments; read with s.4A, a licence for a judicial division is a licence for the corresponding judicial zone.",
+      "verification_status": "verified",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M007-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The Notaries Ordinance itself supplies the rule of decision. Section 33 states when a section 31 default does and does not affect an instrument, and its proviso points to any other written law, which here is the Prevention of Frauds Ordinance s.2(1)(a). With the scenario enriched so that one defect is confined to the face of the deed and the other is an express failure of the simultaneous-presence requirement imposed by that other written law, a complete answer can be given from the statutory text without judicial authority or Roman-Dutch common law. Case law would be needed only to draw the general boundary of \"matter of form\" for defects that do not also breach another enactment, and the answer is framed so that it does not turn on that boundary.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M007-Q01-01",
+          "issue": "Whether a deed of transfer is invalidated by the notary's failure to observe rules set out in section 31 of the Notaries Ordinance.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M007-Q01-02",
+          "issue": "Whether the defect on the face of the deed (the notary's own particulars omitted from the front page) is a matter of form within the protection of section 33 of the Notaries Ordinance.",
+          "status": "disputed"
+        },
+        {
+          "issue_id": "ISS-M007-Q01-03",
+          "issue": "Whether obtaining the second attesting witness's signature on a later day, away from the executant and the other witness, breaches a requirement imposed by another written law so as to fall within the proviso to section 33.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M007-Q01-04",
+          "issue": "Whether the notary's exposure to punishment under section 34 of the Notaries Ordinance is a separate question from the standing of the deed.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M007-001",
+        "PROV-M007-002",
+        "PROV-M007-003",
+        "PROV-M007-004"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M007-005"
+      ],
+      "background_provision_ids": [
+        "PROV-M007-006"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across two enactments: identify the section 31 rule broken (rule (12) and rule (17)(c)); apply the general immunity in Notaries Ordinance s.33 for matters of form; then follow the proviso to s.33 out to the Prevention of Frauds Ordinance s.2(1)(a), which independently denies force in law to a transfer not signed in the simultaneous presence of the notary and the witnesses. Section 34 and rule (22) are not counted, being supporting and background only.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M007-003",
+          "to_provision_id": "PROV-M007-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M007-003",
+          "to_provision_id": "PROV-M007-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M007-004",
+          "to_provision_id": "PROV-M007-003",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M007-001",
+          "to_provision_id": "PROV-M007-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M007-005",
+          "to_provision_id": "PROV-M007-001",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis.\n\nSaman failed to comply with rules set out in section 31 of the Notaries Ordinance when attesting the said Deed.",
+        "enriched_background": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. His employer is Metro Homes Realty (Private) Limited, a company with its registered office at Colombo 03. Saman's employer instructs him to execute a Deed of Transfer on urgent basis. By that deed Nimal Perera transfers to Metro Homes Realty (Private) Limited a house and premises bearing assessment No. 42/7, Kirula Road, Colombo 05, within the administrative limits of the Colombo Municipal Council, for a consideration of Rs. 18,500,000. The deed was drawn by Saman and signed on 12 January 2026 at his notarial office at Colombo 07.\n\nSaman failed to comply with rules set out in section 31 of the Notaries Ordinance when attesting the said Deed. Nimal Perera signed the deed at that office in Saman's presence and in the presence of one attesting witness, Kamala Silva, who also signed there. The second attesting witness, Ruwan Fernando, did not come to the office. On 13 January 2026 Saman took the deed to Ruwan Fernando's house and obtained his signature there, in the absence of Nimal Perera and of Kamala Silva, and then attested the deed as though the executant and both witnesses had signed in his presence and in the presence of one another. Saman also left the front page of the deed blank of his own name and initials, the number assigned to him as a notary, the address and telephone number of his office, and the registered address of the company employing him.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M007-Q01-001",
+            "fact": "The employer and transferee is Metro Homes Realty (Private) Limited, a company with its registered office at Colombo 03; the transferor is Nimal Perera and the attesting witnesses are Kamala Silva and Ruwan Fernando.",
+            "origin": "synthetic_neutral",
+            "reason": "The question supplies no party names, so the deed cannot be described as a transfer between identified persons or the front-page particulars requirement applied to a notary who is a legal officer of a named organisation.",
+            "activates_provision_ids": [
+              "PROV-M007-002"
+            ],
+            "counterfactual_effect": "None on the outcome. Naming the parties only makes the narrative determinate; the analysis of validity would be identical for any transferor and corporate transferee.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M007-Q01-002",
+            "fact": "The subject matter is a house and premises bearing assessment No. 42/7, Kirula Road, Colombo 05, within the Colombo Municipal Council limits, sold for Rs. 18,500,000, and the deed was signed at Saman's notarial office at Colombo 07 on 12 January 2026.",
+            "origin": "synthetic_neutral",
+            "reason": "The question does not identify the property or the place of attestation. Fixing them establishes that the deed affects immovable property, which is what brings the Prevention of Frauds Ordinance into play, and that Saman attested within the area he is licensed for, which closes off a competing objection.",
+            "activates_provision_ids": [
+              "PROV-M007-006",
+              "PROV-M007-004"
+            ],
+            "counterfactual_effect": "Had the attestation taken place outside the Judicial Zone of Colombo, a further and different objection would arise under the area rule; had the deed concerned movable property, the Prevention of Frauds Ordinance requirement relied on would not apply at all and the deed would survive on the section 33 immunity.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M007-Q01-003",
+            "fact": "The second attesting witness, Ruwan Fernando, signed the deed on the following day at his own house, in the absence of the executant and of the other witness, and Saman nevertheless attested that the executant and both witnesses had signed in his presence and in the presence of one another.",
+            "origin": "synthetic_decisive",
+            "reason": "The question states only that section 31 rules were broken, without saying which. This fact makes the breach determinate and gives the scenario a defect that is simultaneously a breach of the notarial rule and a failure of a condition imposed by another written law.",
+            "activates_provision_ids": [
+              "PROV-M007-001",
+              "PROV-M007-003",
+              "PROV-M007-004",
+              "PROV-M007-005"
+            ],
+            "counterfactual_effect": "If the executant and both witnesses had signed together in Saman's presence, the simultaneous-presence condition of the other written law would be satisfied, the proviso to section 33 would not be engaged, and the deed would not be invalidated by the remaining defect.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M007-Q01-004",
+            "fact": "Saman omitted from the front page of the deed his own name and initials, the number assigned to him as a notary, the address and telephone number of his office, and the registered address of the company employing him.",
+            "origin": "synthetic_decisive",
+            "reason": "Gives the scenario a second, contrasting section 31 breach that touches only the completion of the face of the instrument, so that the answer can show which defaults leave the deed standing and why.",
+            "activates_provision_ids": [
+              "PROV-M007-002",
+              "PROV-M007-003",
+              "PROV-M007-005"
+            ],
+            "counterfactual_effect": "If this were the only default, the deed would not be invalidated: it is a matter of form within the main limb of section 33, and Saman's exposure would be limited to the penalty for breach of the rule.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M007-Q01-005",
+            "fact": "The deed was executed in January 2026.",
+            "origin": "synthetic_neutral",
+            "reason": "Fixes the date of attestation shortly before the exam session so that the amended texts of section 31 of the Notaries Ordinance and section 2 of the Prevention of Frauds Ordinance, as they stood after the 2022 and 2024 amendments, are the texts to be applied.",
+            "activates_provision_ids": [
+              "PROV-M007-001",
+              "PROV-M007-002",
+              "PROV-M007-004"
+            ],
+            "counterfactual_effect": "For a deed attested before the 2024 amendment the wording of the presence requirement in the other written law would be the earlier wording; the outcome on these facts would be the same, since the simultaneous-presence condition is common to both texts.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the Deed of Transfer attested by Saman can be invalidated because he failed to comply with rules set out in section 31 of the Notaries Ordinance, and whether the answer depends on which rule he broke.",
+        "rule": "Breach of a rule in section 31 does not of itself destroy the instrument. Notaries Ordinance s.33 provides that no instrument shall be deemed to be invalid by reason only of the failure of any notary to observe any provision of any rule set out in section 31 in respect of any matter of form. The protection is expressly limited by the proviso to s.33, which states that nothing in the section gives validity to any instrument that may be invalid by reason of non-compliance with the provisions of any other written law. Two of the rules in section 31 are engaged here. Rule (17)(c) requires the notary to write on the front page of the deed his name with initials, the number assigned to him, his office address and telephone number, and, if he is a legal officer working in an organisation, the registered address of that organisation; that requirement goes to how the face of the instrument is completed. Rule (12) forbids a notary to attest any deed unless the executant and the witnesses have signed in his presence and in the presence of one another and he has signed in their presence; the same requirement is imposed independently, and as a condition of the deed having any legal force, by the Prevention of Frauds Ordinance s.2(1)(a), under which no transfer of immovable property shall be in force or avail in law unless the deed is in writing and is signed by every executant and the witnesses in the presence of a licensed notary public present at the same time and in the presence of one another and is attested by that notary. Notaries Ordinance s.34(1)(c) makes a breach of a rule in section 31 an offence punishable on summary trial before a Magistrate by a fine, in addition to any civil liability the notary may incur; it says nothing about the validity of the instrument, so the notary's liability and the standing of the deed are separate questions.",
+        "application": "Saman's omission of his name, notary number, office address and telephone number, and of his employer's registered address, from the front page is a failure to observe rule (17)(c). It concerns the completion of the face of the instrument and not the manner in which the parties bound themselves, and no other written law makes those particulars a condition of a valid transfer. On that default alone the deed would be protected by the main limb of s.33. The second default is of a different character. The executant Nimal Perera and one witness signed at Saman's office, but the second witness signed at his own house on the following day, in the absence of the executant and of the other witness, and Saman attested that all had signed in his presence and in the presence of one another. That is a breach of rule (12); more importantly, it means the deed was not signed by the executant and the witnesses in the presence of a licensed notary present at the same time and in the presence of one another, which the Prevention of Frauds Ordinance s.2(1)(a) makes a condition of a transfer of immovable property being in force or availing in law. Because the deed affects a house and premises at Colombo 05, that Ordinance applies, and the proviso to s.33 withholds from this deed the protection the section would otherwise give. Saman attested at his own office at Colombo 07, within the Judicial Zone of Colombo for which he is licensed, so no separate objection arises under section 31 rule (22) as to the area of attestation. Independently of the fate of the deed, Saman remains exposed to prosecution and a fine under s.34 of the Notaries Ordinance, together with any civil liability towards the parties, and the urgency of his employer's instruction is no answer to either.",
+        "conclusion": "The Deed can be invalidated, but not simply because rules in section 31 of the Notaries Ordinance were broken. Defaults that are matters of form, such as the omission of the notary's particulars from the front page, do not by themselves affect the instrument, because of Notaries Ordinance s.33. The deed is at risk here because the failure to have the executant and both witnesses sign in Saman's presence and in the presence of one another is also non-compliance with the Prevention of Frauds Ordinance s.2(1)(a); on the terms of that provision the transfer is not in force and does not avail in law, and by the proviso to s.33 the Notaries Ordinance does not cure it. Saman is in addition liable to be punished under Notaries Ordinance s.34 and to answer civilly to the parties for the loss."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M007-Q01-001",
+          "claim_text": "No instrument is to be deemed invalid by reason only of a notary's failure to observe a rule set out in section 31 of the Notaries Ordinance in respect of a matter of form.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M007-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M007-Q01-002",
+          "claim_text": "The proviso to section 33 of the Notaries Ordinance withholds that protection where the instrument may be invalid by reason of non-compliance with the provisions of any other written law.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M007-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M007-Q01-003",
+          "claim_text": "Notaries Ordinance section 31 rule (12) forbids a notary to attest a deed unless the executant and the witnesses have signed in his presence and in the presence of one another and he has signed in the presence of the executant and the attesting witnesses.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M007-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M007-Q01-004",
+          "claim_text": "Under the Prevention of Frauds Ordinance section 2(1)(a) a transfer of immovable property is not in force and does not avail in law unless the deed is in writing and signed by every executant and the witnesses in the presence of a licensed notary public present at the same time and in the presence of one another, and is attested by that notary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M007-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M007-Q01-005",
+          "claim_text": "Notaries Ordinance section 31 rule (17)(c) requires the notary to write on the front page of the deed his name with initials, the number assigned to him, his office address and telephone number, and, where he is a legal officer of an organisation, that organisation's registered address.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M007-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M007-Q01-006",
+          "claim_text": "Breach of a rule in section 31 is an offence under Notaries Ordinance section 34(1)(c), punishable on summary trial before a Magistrate by a fine in addition to any civil liability the notary may incur, and that section attaches no consequence to the instrument itself.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M007-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M007-Q01-007",
+          "claim_text": "A notary may not attest a deed in any area other than that in which he is authorised to practise.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M007-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M007-Q01-008",
+          "claim_text": "Saman's omission of his own particulars and his employer's registered address from the front page of the deed is a breach of rule (17)(c) which concerns a matter of form, so it does not of itself invalidate the deed.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M007-002",
+            "PROV-M007-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M007-Q01-004",
+            "FACT-M007-Q01-001"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M007-Q01-009",
+          "claim_text": "Because the second attesting witness signed on the following day at his own house, away from the executant and the other witness, the deed was not signed by the executant and both witnesses in the presence of the notary present at the same time and in the presence of one another, so both rule (12) and the condition in the Prevention of Frauds Ordinance section 2(1)(a) were left unsatisfied.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M007-001",
+            "PROV-M007-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M007-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M007-Q01-010",
+          "claim_text": "Since the deed affects immovable property at Colombo 05, the Prevention of Frauds Ordinance applies to it and the proviso to section 33 of the Notaries Ordinance prevents that section from saving the deed from the consequence of that non-compliance.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M007-003",
+            "PROV-M007-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M007-Q01-002",
+            "FACT-M007-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M007-Q01-011",
+          "claim_text": "Saman attested at his own office at Colombo 07, within the Judicial Zone of Colombo for which he holds his licence, so no objection arises from the area of attestation.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M007-006"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M007-Q01-002",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M007-Q01-012",
+          "claim_text": "Whatever happens to the deed, Saman remains liable to be tried and fined for the breaches of section 31 and to answer civilly, and his employer's instruction to act urgently is no defence.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M007-005"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M007-Q01-003",
+            "FACT-M007-Q01-004",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M007-Q01-013",
+          "claim_text": "The deed can be invalidated: not on account of the formal defect on its front page, which section 33 of the Notaries Ordinance protects, but because the signing was not carried out in the simultaneous presence required by the Prevention of Frauds Ordinance section 2(1)(a), so the transfer is not in force and does not avail in law.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M007-003",
+            "PROV-M007-004",
+            "PROV-M007-001",
+            "PROV-M007-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M007-Q01-003",
+            "FACT-M007-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Verified on the decisive chain: the failure of simultaneous presence breaches Notaries Ordinance s.31 rule (12) and, independently, the condition in Prevention of Frauds Ordinance s.2(1)(a), which the proviso to s.33 preserves, so the deed can be invalidated on statute alone. Held for lawyer review on one point: \"matter of form\" is undefined in s.33 and the corpus holds no judicial authority, so the classification of the rule (17)(c) front-page default as a matter of form (CL-M007-Q01-008, and the subordinate clause of CL-M007-Q01-013) cannot be confirmed from the corpus. A lawyer should either confirm that classification or the question should move to mixed_statute_and_case.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

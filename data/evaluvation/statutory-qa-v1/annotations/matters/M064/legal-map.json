@@ -1,0 +1,232 @@
+{
+  "benchmark_matter_id": "M064",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M064",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:39:25Z",
+    "verification_agent": "verifier-M064",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:46:48Z"
+  },
+  "matter_reference_date": "2020-10",
+  "matter_reference_date_basis": "exam_session \"OCTOBER 2020\" and matter_reference_date \"2020-10\" in candidates/matters/M064.json (paper 11, question 4).",
+  "corpus_gaps": [
+    "The corpus carries only the consolidated (post-2022) text of Notaries Ordinance s.34; the penalty text in force in October 2020 (before the substitution by Notaries (Amendment) Act No. 31 of 2022 s.17) is not in the corpus, so the exact fine applicable at the matter date cannot be stated from the corpus.",
+    "Rules of professional conduct for attorneys-at-law (Supreme Court Rules on conduct and etiquette) are not in the corpus; they would be a second, non-statutory source of the same confidentiality duty where the notary is also an attorney-at-law.",
+    "No provision in the corpus addresses whether or how a notary's duty of secrecy under s.31 rule (1) is affected by the death of the testator or by a claim made by an heir or executor; that question would need authority outside the corpus.",
+    "The amendment_events list printed for 1-1907/s31 is not mapped to individual rules; rule (1) was checked directly against the texts of 31-2022 s.16 and 47-2011, neither of which touches rule (1)."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M064-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (1)",
+      "relevant_excerpt": "He shall not divulge the secrets confided to him or of which he becomes possessed in the execution of his office, unless with the express permission of his employer or when required to do so by law.",
+      "why_relevant": "This is the statutory duty of secrecy of a notary. It settles the question directly: a notary may not disclose what he learned in the execution of his office, and the only two gateways to disclosure are the express permission of his employer (here, the testator who instructed and executed the will before him) or a legal requirement to disclose. Whether the notary attested a particular will, and what that will contains, is a secret of exactly this kind.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (1) has stood since the Ordinance came into force in 1907 and is in force at 2020-10. The section as a whole shows amendment events for 2011, 2022 and 2024, but Notaries (Amendment) Act No. 31 of 2022 s.16 and Notaries (Amendment) Act No. 47 of 2011 were read and neither substitutes, amends or repeals rule (1); the 2024 amendment (6-2024 s.3) is in any event after the matter date and so cannot bear on the October 2020 text.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M064-002",
+      "section_id": "1-1907/s34",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "34",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "Every notary who acts in violation of or disregards or neglects to observe- (a) rules (1), (31) or (32) set out in section 31, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate, be liable to a fine not exceeding five thousand rupees, in addition to any civil liability he may incur thereby",
+      "why_relevant": "Shows that breach of the duty of secrecy in rule (1) is not merely a matter of etiquette but a criminal offence, and that criminal liability is in addition to any civil liability. It supports the strength of the advice but is not needed to reach the answer.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "The corpus text of s.34 is the section substituted by Notaries (Amendment) Act No. 31 of 2022 s.17, which post-dates the matter reference date of 2020-10. A penal provision for breach of the s.31 rules existed before 2022, but its text and the fine then applicable are not in the corpus, so this provision is recorded as supporting only and is not relied on for the conclusion.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim, but the corpus text of s.34 is the whole section repealed and substituted by Notaries (Amendment) Act No. 31 of 2022 s.17, so no penalty for breach of rule (1) can be stated from the corpus as at 2020-10; correctly held to supporting only and not relied on for the conclusion."
+    },
+    {
+      "provision_id": "PROV-M064-003",
+      "section_id": "1-1907/s21",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "21",
+      "subsection": "(1)(b) and (1)(c)",
+      "relevant_excerpt": "has grossly misconducted himself in the discharge of the duties of his office; or (c) has so conducted himself by repeated breaches of any of the rules made by or under this Ordinance that he ought not to be any longer entrusted with the performance of the said duties",
+      "why_relevant": "Gives the disciplinary consequence of breaching the notarial rules: gross misconduct in the discharge of the office, or repeated breaches of the rules, can lead to an inquiry and to cancellation or suspension of the warrant. Supporting context for why the duty must be observed; not a step in the reasoning.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 21 dates from 1907. The only later changes recorded are Notaries (Amendment) Act No. 31 of 2022 s.11, which alters wording in subsection (1)(e) and raises the fine in subsection (4); neither touches subsection (1)(b) or (1)(c), which are the parts relied on here.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and subsections (1)(b) and (1)(c) are untouched at the matter date, but the temporal note is incomplete: the corpus also records an unmapped amendment event 'unknown by 12-2005 s.5 (2005)' on s.21, which is not mentioned."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M064-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The Notaries Ordinance states the duty and its exhaustive exceptions in one rule: a notary shall not divulge secrets acquired in the execution of his office unless the employer expressly permits it or the law requires it. On the enriched facts (testator alive, no permission given, no legal compulsion) the rule disposes of the question without needing judicial authority or common-law doctrine. Professional conduct rules for attorneys-at-law would say the same thing but add nothing the statute does not already decide.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M064-Q01-01",
+          "issue": "Whether knowledge that a notary attested a particular will, and knowledge of its contents, is a secret which he became possessed of in the execution of his office.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M064-Q01-02",
+          "issue": "Who the notary's \"employer\" is for the purposes of the duty of secrecy where a will was drawn and attested on the testator's instructions, and whether express permission to disclose has been given.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M064-Q01-03",
+          "issue": "Whether disclosure to the testator's son is \"required to do so by law\" so as to fall within the second exception.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": ["PROV-M064-001"],
+      "supporting_provision_ids": ["PROV-M064-002", "PROV-M064-003"],
+      "background_provision_ids": [],
+      "legal_hop_count": 1,
+      "hop_count_basis": "One directly applicable provision. Notaries Ordinance s.31 rule (1) carries both the duty and its two exceptions in the same rule, so no definition, exception or linked provision outside it is needed to reach the answer. Sections 34 and 21 add only consequences of breach and are not counted.",
+      "reasoning_edges": [],
+      "enrichment": {
+        "applied": true,
+        "original_background": "A client asks whether you have attested his father's will.",
+        "enriched_background": "Ranjith Perera, a businessman of Nugegoda, calls at your office and tells you that he believes his father made a will some years ago. You did in fact draw and attest that will as a notary public on 12 October 2018, and the protocol of it remains in your custody. His father, Sarath Perera, aged 78, is alive, lives on his own and is of sound mind. When he gave you his instructions he asked you to keep the will and its contents to yourself, and he has since neither withdrawn that instruction nor given you permission, in writing or otherwise, to speak about the will to anyone. Ranjith is not an executant of that will and is not named in it as an executor. No court, and no officer acting under any written law, has called on you to produce the will or to disclose what it contains. Ranjith now asks you to confirm whether you attested his father's will and to tell him what it says.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M064-Q01-001",
+            "fact": "You yourself drew and attested the will as a notary public on 12 October 2018 and the protocol remains in your custody.",
+            "origin": "synthetic_decisive",
+            "reason": "The duty of secrecy bites only on what the notary came to know \"in the execution of his office\". The original background implies but does not state that the notary acted; making it explicit fixes the source of the knowledge.",
+            "activates_provision_ids": ["PROV-M064-001"],
+            "counterfactual_effect": "If the notary had never attested the will and knew nothing of it, there would be no secret acquired in the execution of his office and rule (1) would not engage; he could simply say he has no knowledge of the matter.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M064-Q01-002",
+            "fact": "The father, Sarath Perera, aged 78, is alive and of sound mind.",
+            "origin": "synthetic_decisive",
+            "reason": "Identifies a living principal who can still give or refuse the express permission that the first exception requires, and keeps the question inside the statute rather than raising the untreated problem of a notary's duty after the testator's death.",
+            "activates_provision_ids": ["PROV-M064-001"],
+            "counterfactual_effect": "If the father were dead, the availability of his express permission would fall away and the position of an heir or executor seeking the will would raise questions the corpus does not answer; the question would then be blocked for missing authority rather than answerable on the statute alone.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M064-Q01-003",
+            "fact": "The father instructed you to keep the will and its contents to yourself and has never given you permission, in writing or otherwise, to disclose them to anyone.",
+            "origin": "synthetic_decisive",
+            "reason": "Closes the first statutory exception, which turns on the express permission of the employer.",
+            "activates_provision_ids": ["PROV-M064-001"],
+            "counterfactual_effect": "If the father had expressly authorised you to tell his son about the will, the exception would apply and disclosure within the terms of that permission would be lawful.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M064-Q01-004",
+            "fact": "No court and no officer acting under any written law has required you to produce the will or to disclose its contents.",
+            "origin": "synthetic_decisive",
+            "reason": "Closes the second statutory exception, which turns on disclosure being required by law.",
+            "activates_provision_ids": ["PROV-M064-001"],
+            "counterfactual_effect": "If a court had ordered production of the will or of your protocol, disclosure to that extent would be required by law and the duty of secrecy would yield to it.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M064-Q01-005",
+            "fact": "The client, Ranjith Perera, is the testator's son; he is not an executant of the will and is not named in it as an executor.",
+            "origin": "synthetic_neutral",
+            "reason": "Fixes the identity of the enquirer and his relationship to the instrument. It does not change the outcome, because the rule looks to the employer's permission rather than to the enquirer's status.",
+            "activates_provision_ids": ["PROV-M064-001"],
+            "counterfactual_effect": "Even if the client had been an executant of the will, disclosure would still require the employer's express permission or a legal requirement, so the conclusion would not change on this fact alone.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether a notary may confirm to the son of a living testator that he attested the father's will, and tell him what the will contains, when the father has given no permission to disclose and no law requires disclosure.",
+        "rule": "Notaries Ordinance s.31 rule (1) makes it the duty of every notary not to divulge the secrets confided to him, or of which he becomes possessed in the execution of his office, unless with the express permission of his employer or when required to do so by law. The duty covers everything learned by reason of the office, and the two exceptions are the only gateways to disclosure. Breach of the rule is treated seriously by the Ordinance: it is made a punishable offence, in addition to any civil liability (s.34, the text of which in the corpus is the version substituted in 2022), and gross misconduct in the discharge of the office or repeated breaches of the rules can lead to an inquiry and to suspension or cancellation of the warrant (s.21(1)(b) and (c)).",
+        "application": "The instructions for the will, the fact that you attested it and the contents of the instrument all came to you in the execution of your notarial office, so they are secrets within rule (1); the protocol you hold is itself a product of that office. Your employer for this purpose is the testator, the father, on whose instructions the will was drawn and executed, not his son. The father is alive, of sound mind, has asked you to keep the matter to yourself and has given no express permission for disclosure, so the first exception is not open. No court or officer has called for the will or its contents, so nothing requires disclosure by law and the second exception is not open either. The son's relationship to the testator does not put him in the place of the employer, and he is neither an executant nor a named executor of the instrument; confirming even that a will exists and that you attested it would divulge part of what the rule protects. If the son wants to know about the will, the proper course is for him to ask his father, or for the father to authorise you expressly.",
+        "conclusion": "No. You should not tell the client about his father's will, and you should not confirm or deny that you attested it. You should decline politely, explain that a notary is bound to keep secret what he learns in the execution of his office, and tell him that you can speak about the will only if his father expressly permits it or if the law requires you to do so."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M064-Q01-001",
+          "claim_text": "A notary is under a statutory duty not to divulge the secrets confided to him or of which he becomes possessed in the execution of his office.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M064-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M064-Q01-002",
+          "claim_text": "That duty admits only two exceptions: the express permission of the notary's employer, or a legal requirement to disclose.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M064-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M064-Q01-003",
+          "claim_text": "Breach of the duty of secrecy exposes the notary to a criminal penalty in addition to civil liability, and gross or repeated breach of the notarial rules can ground an inquiry leading to suspension or cancellation of his warrant.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M064-002", "PROV-M064-003"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M064-Q01-004",
+          "claim_text": "The fact that you attested the father's will and the contents of that will are secrets you became possessed of in the execution of your office.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M064-001"],
+          "supporting_fact_ids": ["FACT-M064-Q01-001", "BG-1"],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M064-Q01-005",
+          "claim_text": "The employer whose express permission could release you is the testator, the father on whose instructions the will was drawn and executed, and he is alive, of sound mind and has given no such permission.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M064-001"],
+          "supporting_fact_ids": ["FACT-M064-Q01-002", "FACT-M064-Q01-003"],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M064-Q01-006",
+          "claim_text": "Nothing requires you by law to disclose the will or its contents to the son, because no court or officer acting under any written law has called for them.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M064-001"],
+          "supporting_fact_ids": ["FACT-M064-Q01-004"],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M064-Q01-007",
+          "claim_text": "Being the testator's son does not put the client in the position of the employer, and he is neither an executant nor a named executor of the will, so his relationship gives him no claim on the information.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M064-001"],
+          "supporting_fact_ids": ["FACT-M064-Q01-005", "BG-1"],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M064-Q01-008",
+          "claim_text": "You should not tell the client about the will, and you should not confirm or deny that you attested it; you may speak about it only if the father expressly permits it or the law requires it.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M064-001"],
+          "supporting_fact_ids": ["FACT-M064-Q01-001", "FACT-M064-Q01-003", "FACT-M064-Q01-004"],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "benchmark_matter_id": "M006",
+  "verifier": "verifier-M006",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:02:00Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M006-001",
+      "decision": "verified",
+      "note": "1-1907/s3(1) read in full; excerpt verbatim; substitutions by 20-1976 s.3 and 31-2022 s.2 both precede 2026-04, and 31-2022/s2 was read directly, so the consolidated text is the operative text."
+    },
+    {
+      "provision_id": "PROV-M006-002",
+      "decision": "verified",
+      "note": "Rule (22) of s.31 is verbatim and is the operative prohibition; no amendment event in 31-2022 s.16 or 6-2024 s.3 touches it. Rule (23) of the same section treats 'area' and 'zone' as capable of differing, so the area-equals-zone step runs through s.9 and s.3(1), not through a defined term."
+    },
+    {
+      "provision_id": "PROV-M006-003",
+      "decision": "verified",
+      "note": "Rule (29) is verbatim and carries the weight placed on it; its trigger is the district in which the notary resides, and the enriched facts fix only the district of his office."
+    },
+    {
+      "provision_id": "PROV-M006-004",
+      "decision": "verified",
+      "note": "Rule (30A) was inserted by 31-2022 s.16(14), read directly, rather than merely sitting within s.31 as the temporal note says; s.34(1)(b) lists rule (30A), confirming it was in force well before 2026-04."
+    },
+    {
+      "provision_id": "PROV-M006-005",
+      "decision": "verified",
+      "note": "s.9 read in full, unamended, excerpt verbatim; the supporting role is correct - it goes to where the notary is based, not to the situs of the land."
+    },
+    {
+      "provision_id": "PROV-M006-006",
+      "decision": "verified",
+      "note": "s.34(1) as substituted by 31-2022 s.17 read in full; rule (22) appears in neither paragraph (a) nor paragraph (b), so the residual paragraph (c) and the fifty-thousand-rupee ceiling are correctly identified."
+    },
+    {
+      "provision_id": "PROV-M006-007",
+      "decision": "verified",
+      "note": "The sentence sits in paragraph (c) of the rule (17) block of s.31 as the map states; the background role is right."
+    },
+    {
+      "provision_id": "PROV-M006-008",
+      "decision": "verified",
+      "note": "s.11 as substituted by 20-1976 s.5, verbatim; it is the only route in the Ordinance to practise in another judicial zone."
+    },
+    {
+      "provision_id": "PROV-M006-009",
+      "decision": "verified",
+      "note": "23-1927/s14(1) verbatim; the background role is right - it explains the registry, not the notary's competence."
+    },
+    {
+      "provision_id": "PROV-M006-010",
+      "decision": "verified",
+      "note": "Rule (13) of s.31 verbatim and unamended; correctly recorded as the disqualification the employment facts must be tested against."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M006-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "The Notaries Ordinance answers the question on its own text: rule (22) of s.31 fixes the prohibition by reference to the area of attestation, s.3(1) and s.9 supply the area, and rule (29) of s.31 presupposes that a notary may attest a deed affecting land in another district. No case law or Roman-Dutch doctrine is needed and none is cited. All ten provisions verified, all fourteen claims verified; the hop count of 3 matches the indispensable chain s.3(1) to rule (22) to rule (29). Roles left as the researcher set them: rule (30A) and s.11 support consequential duties and the closing caveat, and removing either would not change the answer to the question asked."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "corpus_gap_recorded_in_error",
+      "researcher_position": "Corpus gap 3 states that the Notaries (Amendment) Act No. 6 of 2024 is not in the corpus as a separate Act, so the amending text could not be read independently of the consolidation.",
+      "verifier_position": "Act No. 6 of 2024 is in the corpus as act 6-2024 with eight sections. 6-2024/s3 was read in full: it amends only rules (5), (7A), (9), (10), (15A), (17), (20), (26), (29) and (30) of s.31, none of the rules the answer turns on, apart from a Form F to Form F 1 change in rule (29) that the consolidated text already carries. The gap should be struck. corpus_gaps is not a field this prompt lets the verifier edit, so the correction is recorded here and in the verifier_note on PROV-M006-002.",
+      "supporting_sources": [
+        "6-2024/s3",
+        "1-1907/s31"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "scope_of_the_word_area_in_rule_22",
+      "researcher_position": "The area in rule (22) of s.31 is the judicial zone named in the warrant, linked textually through s.3(1) and s.9.",
+      "verifier_position": "The step is sound for Saman but is not a defined-term link and is not free from doubt. Rule (23) of the same section reads 'If he shall change his area, as provided by section 11 of this Ordinance, and if the new area be in a different zone from the old area', which treats area and zone as capable of differing, and s.4A speaks of warrants for a judicial division deemed to extend to the zone. On any of these readings Saman's Hulftsdorp office is within his authorised area, so the conclusion is unaffected, but the map should not present area and zone as synonyms.",
+      "supporting_sources": [
+        "1-1907/s31",
+        "1-1907/s9",
+        "1-1907/s3",
+        "1-1907/s4A"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "None rejected. CL-M006-Q01-001 adds the word 'only' to s.3(1), which the section does not itself use; the restrictive sense comes from rule (22) of s.31, which that claim does not cite. Left verified because the neighbouring claim CL-M006-Q01-002 states rule (22) directly.",
+      "CL-M006-Q01-003 is the load-bearing inference of the whole answer, and its negative half (that the restriction does not attach to the situation of the land) is drawn from the existence of rule (29) rather than from express words. The inference is sound, but it is an inference, and the claim is marked support_strength 'combined' rather than 'inferential'."
+    ],
+    "temporal_issues": [
+      "None that change the answer. All ten provisions are in force at 2026-04. The 2022 and 2024 amending Acts were read directly (31-2022/s2, 31-2022/s16, 6-2024/s3) rather than taken from the consolidation, and none touches rules (13), (22) or (30A); 6-2024 s.3(9) alters only the Form reference in rule (29), which the consolidated text already reflects.",
+      "PROV-M006-004's temporal note understates the position: rule (30A) was inserted by 31-2022 s.16(14) and did not exist before 2022. Immaterial here because the matter date is 2026-04."
+    ],
+    "missing_definitions_or_exceptions": [
+      "s.43 (Interpretation) defines only 'Council of Legal Education', 'High Court Judge' and 'Registrar-General'; the researcher's second corpus gap is accurate, and defs 1-1907 returns nothing for area, zone or division.",
+      "Rule (29) of s.31 is triggered by the district in which the notary resides. The enrichment fixes Saman's office at Hulftsdorp, Colombo 12, but never states where he resides, so the duty to send a certified copy to the Kurunegala Registrar of Lands is reached by inference from s.3(1) ('the judicial zone in which he resides') and s.9 rather than from a stated fact. A one-clause addition to the enriched background would close this.",
+      "s.4A (division warrants deemed to authorise practice in the zone) and rule (23) of s.31 (renumbering on a change of area into a different zone) were both considered and neither is indispensable. s.32 does not exclude rules (22) or (29) from any of the deeds it lists, and s.33 saves instruments only for defects of form, so neither alters the answer. No provision was added."
+    ],
+    "case_law_dependence": [
+      "None. The gold answer cites no case and needs none; every step is on the face of the Notaries Ordinance and the Registration of Documents Ordinance."
+    ],
+    "enrichment_issues": [
+      "FACT-M006-Q01-004 introduces the language limb of rule (22), which the original background did not raise at all. It does not change the answer, but it widens the question beyond the territorial point the examiner asked, and should be confirmed as intended.",
+      "FACT-M006-Q01-003 supplies the place of attestation, which is the fact the answer turns on. That is what a synthetic_decisive fact is for and the reason field says so, but the lawyer should confirm the original question was not meant to be answered conditionally. The enriched background itself does not characterise the Hulftsdorp office as inside the Judicial Zone of Colombo; that characterisation appears only in the fact metadata, so nothing is handed to the answerer.",
+      "All five added facts remain approval_status 'pending'; the verifier has not approved them."
+    ],
+    "duplicate_or_leak_issues": [
+      "The enriched background names no Act, no section and no rule number, and does not state the conclusion. The only occurrence of 'Judicial Zone of Colombo' is carried over from the original background, where it is a fact about the licence."
+    ]
+  },
+  "lawyer_questions": [
+    "Is the territorial limit in rule (22) of s.31 confined to the place at which the notary attests, so that a Colombo-zone notary may attest at his Colombo office a transfer of land in Kurunegala? The corpus supports the answer given, but the proposition that the Judicial Zone of Colombo excludes the Kurunegala District is nowhere in the corpus (the Judicature Act and the zone orders are absent), so the scenario rests on a fact the benchmark cannot cite.",
+    "Should the enrichment state where Saman resides, not only where his office is? Rule (29) of s.31 turns on the notary's district of residence.",
+    "Is 'area' in rule (22) the judicial zone, given that rule (23) of the same section contemplates a change of area within or between zones and s.4A speaks of judicial divisions?",
+    "Was the language limb of rule (22) within the scope of the original examination question, or does FACT-M006-Q01-004 broaden it?"
+  ]
+}

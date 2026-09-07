@@ -1,0 +1,192 @@
+{
+  "benchmark_matter_id": "M022",
+  "run_id": "2026-09-05-pilot-01",
+  "produced_by_agent": "research-agent-B",
+  "matter_summary": "Two notaries practise in different towns: Anil Fernando in Colombo and Ruwan Perera in Galle. A private company, Cyril & Cyril (Private) Limited, wants a Lease Agreement over a warehouse in Galle attested by Anil Fernando, who knows the company's directors but not the warehouse owner, Russel Perera. Russel Perera wants his own notary, Ruwan Perera of Galle, to draft and attest the Lease Agreement and will not travel to Colombo. The questions ask how the Lease Agreement can be executed in these circumstances, and, if Ruwan Perera is the first notary, what his attestation must state. Scenario ambiguity: the company 'wishes to lease out' the warehouse, yet the owner is stated to be Russel Perera. Either (i) the company is the lessee taking the warehouse from Russel Perera (the natural reading of 'the company wants Anil Fernando to attest its Lease Agreement' together with Russel Perera wanting his own notary), or (ii) the company already holds the warehouse from Russel Perera and is sub-letting, with Russel Perera joining to consent. The source does not say. The execution mechanics answered below do not depend on which party is lessor, but the description of the parties in the instrument does.",
+  "parties": [
+    {
+      "party_ref": "PTY01",
+      "name_as_in_source": "Anil Fernando",
+      "role": "Notary practising in Colombo; asked by the company to attest its Lease Agreement",
+      "legal_capacity": "notary public (natural person)",
+      "capacity_uncertainties": [
+        "Area/judicial zone in which he is authorised to practise is stated only as 'Colombo'.",
+        "He knows the company's directors but not Russel Perera."
+      ]
+    },
+    {
+      "party_ref": "PTY02",
+      "name_as_in_source": "Ruwan Perera",
+      "role": "Notary practising in Galle; Russel Perera's notary, to draft and attest the Lease Agreement",
+      "legal_capacity": "notary public (natural person)",
+      "capacity_uncertainties": [
+        "Area/judicial zone stated only as 'Galle'.",
+        "Whether he knows the company's directors is not stated."
+      ]
+    },
+    {
+      "party_ref": "PTY03",
+      "name_as_in_source": "Cyril & Cyril (Private) Limited",
+      "role": "Company that 'wishes to lease out' the warehouse and wants Anil Fernando to attest its Lease Agreement",
+      "legal_capacity": "private limited company (body corporate); contracts through its directors or authorised persons",
+      "capacity_uncertainties": [
+        "Whether the company is lessee or (sub-)lessor is unresolved (see matter_summary).",
+        "Number of directors and any article-based signing authority not stated.",
+        "The directors are unnamed; they are the natural persons who would sign for the company."
+      ]
+    },
+    {
+      "party_ref": "PTY04",
+      "name_as_in_source": "the directors of the said company",
+      "role": "Persons who would sign the Lease Agreement on the company's behalf; known to Anil Fernando",
+      "legal_capacity": "directors of PTY03 (natural persons, unnamed, number unknown)",
+      "capacity_uncertainties": [
+        "Number of directors not stated."
+      ]
+    },
+    {
+      "party_ref": "PTY05",
+      "name_as_in_source": "Mr. Russel Perera",
+      "role": "Owner of the warehouse in Galle; wants his own notary Ruwan Perera; will not come to Colombo",
+      "legal_capacity": "natural person, owner of immovable property; presumptively lessor",
+      "capacity_uncertainties": [
+        "Whether he is lessor to the company or a head-lessor consenting to a sub-lease is unresolved.",
+        "Whether he is literate / able to read the deed is not stated (relevant to what the attestation must say about reading over)."
+      ]
+    }
+  ],
+  "relevant_dates": [
+    {
+      "date_as_in_source": "(none stated)",
+      "iso_date": null,
+      "event": "The scenario gives no dates. Matter reference date taken from the exam session: Sri Lanka Law College Conveyancing LW 307, October 2020.",
+      "legal_significance": "Law must be assessed as at October 2020. The Notaries (Amendment) Acts No. 31 of 2022 and No. 6 of 2024 and the Prevention of Frauds (Amendment) Acts of 2022 and 2024 post-date the matter and must be excluded."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M022-Q01",
+      "primary_issue": "How a notarially executed Lease Agreement over immovable property in Galle can be validly executed when one party (the company, acting through directors in Colombo) wants a Colombo notary and the other party (the owner in Galle) wants his own Galle notary and will not travel: whether the deed may be executed before two notaries at different times and places, and how the company itself executes.",
+      "secondary_issues": [
+        "Whether a lease of a warehouse must be notarially executed at all (formal requirements for leases of immovable property).",
+        "How a private limited company signs a notarially executed instrument (who signs under the company's name).",
+        "Whether a notary may attest outside the area in which he is authorised to practise (why Anil Fernando cannot simply attest in Galle).",
+        "The 'known to the notary' requirement given that Anil Fernando does not know Russel Perera.",
+        "Whether a notary may attest a deed drawn by another notary (Ruwan Perera drafts, Anil Fernando also attests).",
+        "Consequential duties when two notaries attest: numbering, protocol, which notary transmits the duplicate, and the land being in a different district from the Colombo notary.",
+        "Alternative: execution by the owner through an attorney under a power of attorney."
+      ],
+      "legal_domain": "notarial_execution_and_attestation",
+      "required_legal_conclusion": "A procedure: the sequence by which the lessor's signature is taken and attested in Galle and the company's signatures are taken and attested in Colombo, identifying the statutory basis for executing one deed before two notaries and the company's mode of execution.",
+      "answer_format": "procedure",
+      "relevant_transaction_or_event": "Execution and notarial attestation of a Lease Agreement (immovable property: warehouse in Galle) between a company and an individual owner, with the parties in different towns.",
+      "relevant_dates": [
+        "October 2020 (exam session; scenario undated)"
+      ],
+      "authority_type_expected": "statute",
+      "answer_depends_on_unresolved_facts": true,
+      "unresolved_fact_dependencies": [
+        "Term of the lease: if it is a lease at will or for a period not exceeding one month, notarial execution is not required at all; the question presupposes a notarially attested lease.",
+        "Whether the company is lessee or sub-lessor (affects the parties' descriptions, not the mechanics).",
+        "Number of directors / any article-based signing authority (affects who signs for the company).",
+        "Whether Russel Perera would be willing to execute through an attorney instead of before Ruwan Perera."
+      ],
+      "research_queries": [
+        {
+          "query": "Notaries Ordinance rules where a deed is executed or acknowledged before more than one notary",
+          "corpus": "statutes",
+          "named_in_question": false
+        },
+        {
+          "query": "Notaries Ordinance deed executed by two or more parties who do not sign at the same time and place",
+          "corpus": "statutes",
+          "named_in_question": false
+        },
+        {
+          "query": "Notaries Ordinance notary not to attest outside the area in which he is authorised to practise",
+          "corpus": "statutes",
+          "named_in_question": false
+        },
+        {
+          "query": "Notaries Ordinance executant must be known to the notary or to two witnesses",
+          "corpus": "statutes",
+          "named_in_question": false
+        },
+        {
+          "query": "Prevention of Frauds Ordinance lease of immovable property executed before notary and two witnesses; lease not exceeding one month exception",
+          "corpus": "statutes",
+          "named_in_question": false
+        },
+        {
+          "query": "Companies Act method of contracting: obligations requiring notarial attestation signed by two directors",
+          "corpus": "statutes",
+          "named_in_question": false
+        },
+        {
+          "query": "Notaries Ordinance duplicate transmitted by the notary who first attests; land situated in another district",
+          "corpus": "statutes",
+          "named_in_question": false
+        },
+        {
+          "query": "case law on a deed attested by two notaries / execution before more than one notary",
+          "corpus": "cases",
+          "named_in_question": false
+        },
+        {
+          "query": "case law on execution of a lease by a company before a notary",
+          "corpus": "cases",
+          "named_in_question": false
+        }
+      ],
+      "status": "issue_mapped"
+    },
+    {
+      "benchmark_question_id": "M022-Q02",
+      "primary_issue": "The statutory contents of the attestation of the notary who first attests a deed executed before more than one notary: what Ruwan Perera, as first notary, must state in his attestation of the Lease Agreement.",
+      "secondary_issues": [
+        "Whether the first notary's attestation must satisfy the full list of attestation particulars or only the reduced list that applies to the other notary.",
+        "The prescribed form of attestation and the language/signature requirements.",
+        "How the attestation particulars (date, place, presence, witnesses, reading over, consideration, stamps, alterations) apply when only one party signs before that notary.",
+        "First-notary duties adjacent to the attestation (numbering, protocol, transmitting the duplicate) that the examiner may expect to be mentioned."
+      ],
+      "legal_domain": "notarial_execution_and_attestation",
+      "required_legal_conclusion": "A list: the items the first notary must state in his attestation, drawn from the statutory attestation rule and the multi-notary rule, applied to a lessor signing alone in Galle.",
+      "answer_format": "list",
+      "relevant_transaction_or_event": "Attestation by the first of two notaries of a Lease Agreement executed by the lessor in Galle.",
+      "relevant_dates": [
+        "October 2020 (exam session; scenario undated)"
+      ],
+      "authority_type_expected": "statute",
+      "answer_depends_on_unresolved_facts": true,
+      "unresolved_fact_dependencies": [
+        "Whether Russel Perera is literate / requires the deed to be read over (affects the 'read over or read and explained' statement).",
+        "Whether any rent or premium is paid in the notary's presence (affects the consideration statement).",
+        "Whether the deed bears adhesive or impressed stamps and their value (affects the stamp statement).",
+        "Whether Russel Perera signs with a mark or in a language other than the notary's (affects additional statements)."
+      ],
+      "research_queries": [
+        {
+          "query": "Notaries Ordinance what the notary shall state in his attestation",
+          "corpus": "statutes",
+          "named_in_question": false
+        },
+        {
+          "query": "Notaries Ordinance first notary to comply with all requirements of the attestation rule where deed executed before more than one notary",
+          "corpus": "statutes",
+          "named_in_question": false
+        },
+        {
+          "query": "Notaries Ordinance form of attestation Second Schedule Form E",
+          "corpus": "statutes",
+          "named_in_question": false
+        },
+        {
+          "query": "case law on contents of a notary's attestation clause (known to notary, consideration paid in presence, stamps, alterations)",
+          "corpus": "cases",
+          "named_in_question": false
+        }
+      ],
+      "status": "issue_mapped"
+    }
+  ]
+}

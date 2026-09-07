@@ -1,0 +1,177 @@
+{
+  "benchmark_matter_id": "M107",
+  "verifier": "verifier-M107",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-05T00:00:00Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M107-001",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim from the 1990 consolidation, but section 13(1) was repealed and substituted by the Registration of Documents (Amendment) Act, No. 48 of 2011, s.2, which was in force at the April 2018 reference date; the researcher's temporal note that 'the consolidated corpus text is the text in force at the matter date' is wrong for this subsection. Moved from indispensable to supporting and replaced by PROV-M107-901."
+    },
+    {
+      "provision_id": "PROV-M107-002",
+      "decision": "verified",
+      "note": "Section 13(2) unamended at the reference date: 50-1982 s.2 touched only (5), (5A)-(5B) and (6); 48-2011 s.2 only (1); 21-2013 s.2 only (6). Indispensable role confirmed, Lot C4 being a divided portion of Lot C."
+    },
+    {
+      "provision_id": "PROV-M107-003",
+      "decision": "verified",
+      "note": "Verbatim; the contrast role (undivided share not engaged) is right. 'staled' is a scanning artefact."
+    },
+    {
+      "provision_id": "PROV-M107-004",
+      "decision": "verified",
+      "note": "Verbatim; 50-1982/s2 in the corpus independently confirms the insertion of (5A) and (5B) and shows the true word is 'does', the consolidated 'docs' being a scanning artefact."
+    },
+    {
+      "provision_id": "PROV-M107-005",
+      "decision": "partially_verified",
+      "note": "The excerpt stops at 'is registered' and drops the condition that follows in the corpus body: the volume and folio reference is required only if it is known to the notary who prepared the instrument, or to the person presenting it. The duty stated is therefore narrower than the map and claims CL-M107-Q04-006 and CL-M107-Q04-013 assert."
+    },
+    {
+      "provision_id": "PROV-M107-006",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M107-007",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim, but the recorded corpus gap is wrong: the April 2018 wording of Notaries Ordinance s.31 rule (16)(a) is in the corpus, as enacted by the Notaries (Amendment) Act, No. 47 of 2011, s.2 (added as PROV-M107-902). The consolidated wording quoted carries later additions (assessment number, Pradeshiya Sabha Act No. 15 of 1987, condominium parcel) that were not in force in April 2018."
+    },
+    {
+      "provision_id": "PROV-M107-008",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim. 47-2011 s.2 substituted only paragraph (a) of rule (16), so paragraph (b) was untouched in 2011; the corpus cannot attribute the 2022 and 2024 amendment events on section 31 to particular paragraphs, so the April 2018 wording of paragraph (b) is unconfirmed and it remains supporting only."
+    },
+    {
+      "provision_id": "PROV-M107-009",
+      "decision": "verified",
+      "note": "The excerpt is a verbatim mid-sentence fragment; read against the full subsection (1) the reading is right, and 23-1927/s7 records no amendment, so it stood in this form both in 2001 and in April 2018. The point that neither donee takes on valuable consideration is sound on the corpus text."
+    },
+    {
+      "provision_id": "PROV-M107-010",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M107-011",
+      "decision": "verified",
+      "note": "Verbatim from s.8(b); none of the eleven provisos excludes a deed of gift."
+    },
+    {
+      "provision_id": "PROV-M107-012",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M107-901",
+      "decision": "verified",
+      "note": "Added by the verifier: section 13(1) as substituted in 2011, the text in force at the reference date. Indispensable for M107-Q04."
+    },
+    {
+      "provision_id": "PROV-M107-902",
+      "decision": "verified",
+      "note": "Added by the verifier: rule (16)(a) of Notaries Ordinance s.31 as substituted in 2011, the text in force at the reference date. Supporting for M107-Q04."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M107-901",
+      "reason": "48-2011/s2 substitutes section 13(1) of the Registration of Documents Ordinance and is the version in force at the April 2018 reference date. Without it the map's indispensable provision for a section 13 drafting question is the superseded 1927 text, which omits the Divisional Secretary's Division, the local authority division, the Grama Niladari Division and, for land in a municipality, town or developed area, the number as well as the street name. Excerpt checked verbatim against 48-2011/s2."
+    },
+    {
+      "provision_id": "PROV-M107-902",
+      "reason": "47-2011/s2 substitutes paragraph (a) of rule (16) of Notaries Ordinance s.31 and supplies the April 2018 wording of the notarial description duty, which the researcher recorded as a corpus gap. Excerpt checked verbatim against 47-2011/s2."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M107-Q03",
+      "research_status_before": "reserved",
+      "research_status_after": "reserved",
+      "authority_requirement_after": "mixed_statute_and_case",
+      "note": "Confirmed. The verifier independently searched the corpus for a statutory rule of construction of deeds (grep on 'rule of construction', 'falsa', 'repugnan', 'operative clause', 'recital') and for nemo dat quod non habet ('no better title', 'greater interest'); nothing responsive exists, so the decisive steps really are non-statutory. The statutory contribution recorded (s.8(b), s.3, s.7(1), s.7(4), s.14(2)) is accurate and all eight claims are verified against the corpus text."
+    },
+    {
+      "benchmark_question_id": "M107-Q04",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "The authority requirement is unchanged, but the gold answer's rule statement and claim CL-M107-Q04-001 recite section 13(1) as it stood before the Registration of Documents (Amendment) Act, No. 48 of 2011, so the stated list of particulars is not the law at the April 2018 reference date. Indispensable set changed to PROV-M107-901 and PROV-M107-002; PROV-M107-001 kept as supporting historical wording; PROV-M107-902 added as supporting; three reasoning edges added (901 amends 001, 002 qualifies 901, 902 cross_references 901). Hop count stays 2. The gold prose is not rewritten."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "temporal_version_of_indispensable_provision",
+      "researcher_position": "Section 13 was last amended in 1982, so the consolidated corpus text of section 13(1) is the text in force at the April 2018 reference date, and the schedule requirements are the district, the village/pattu/korale or other division, and, for land in a town, the street name.",
+      "verifier_position": "Section 13(1) was repealed and substituted by Act No. 48 of 2011, s.2, in force at the reference date. The list is wider: District, Pattu, Korale, Divisional Secretary's Division, local authority division, Grama Niladari Division and village, and for land in a municipality, town or developed area the number as well as the street name. The corpus edition of the principal Ordinance is a 1990 consolidation, which is why the 2011 substitution is not reflected in it; the amending Act is in the corpus and section 13 shows latest_change_year 1982, which is what led the researcher astray.",
+      "supporting_sources": [
+        "48-2011/s2",
+        "23-1927/s13",
+        "21-2013/s2",
+        "50-1982/s2"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "recorded_corpus_gap_is_not_a_gap",
+      "researcher_position": "The corpus does not expose the wording of Notaries Ordinance s.31 rule (16) as it stood in April 2018, so the rule is supporting only and not applicable to the matter date.",
+      "verifier_position": "The corpus does expose it. Act No. 47 of 2011, s.2 substituted paragraph (a) of rule (16) and its as-enacted text is in the corpus; the next changes to section 31 are 2022 and 2024. Paragraph (a) as at April 2018 is therefore available. Only paragraph (b), which the 2011 Act did not touch, remains unconfirmable for the reference date.",
+      "supporting_sources": [
+        "47-2011/s2",
+        "47-2011/s3",
+        "1-1907/s31"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "scope_of_a_stated_duty",
+      "researcher_position": "Section 13(7) requires a reference to the volume and folio of an earlier instrument relating to the same land to be written at the head of the deed presented for registration.",
+      "verifier_position": "The duty is conditional. The corpus body continues 'if such reference is known to the notary who prepared the instrument, or, if the instrument was not prepared by a notary, if such reference is known to the person presenting the instrument for registration'. The excerpt was cut before the condition, and claims CL-M107-Q04-006 and CL-M107-Q04-013 state the duty unconditionally.",
+      "supporting_sources": [
+        "23-1927/s13"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M107-Q04-001 (rejected): states the pre-2011 section 13(1) list as the requirement at the April 2018 reference date; superseded by 48-2011/s2.",
+      "CL-M107-Q04-006 (disputed): states the section 13(7) volume-and-folio duty without the statutory condition that the reference be known to the notary or to the person presenting the instrument.",
+      "CL-M107-Q04-009 (disputed): says the schedule must give the street name, the district and the division of the district; under the 2011 text it must also specify the Divisional Secretary's Division, the local authority division and the Grama Niladari Division, and, the land being in a town, the number.",
+      "CL-M107-Q04-012 (disputed): concludes that the drafted schedule states the particulars required by section 13(1) and 13(2); measured against the 2011 text it carries no assessment number for Lot C4, and the administrative divisions it does carry were taken from the notarial rule rather than from section 13.",
+      "CL-M107-Q04-013 (disputed): repeats the unconditional reading of section 13(7)."
+    ],
+    "temporal_issues": [
+      "Section 13(1): the map relies on the 1990-consolidation wording; the operative text at April 2018 is the substitution by Act No. 48 of 2011, s.2. This is the material defect in the matter.",
+      "Notaries Ordinance s.31 rule (16)(a): the map relies on the post-2022 consolidation and records the 2018 wording as unavailable; it is available at 47-2011/s2.",
+      "Notaries Ordinance s.31 rule (16)(b): genuinely unconfirmable for April 2018, because the corpus cannot attribute the 2022 and 2024 events on section 31 to particular paragraphs. Left supporting and not applicable to the matter date.",
+      "Sections 3, 7, 8 and 14 of the Registration of Documents Ordinance: no post-1982 amendment in the corpus touches them; 18-2024/s2 amends section 8 but postdates the reference date. Their temporal notes hold."
+    ],
+    "missing_definitions_or_exceptions": [
+      "The 2011 substitution itself (48-2011/s2), now added as PROV-M107-901.",
+      "The 2011 substitution of Notaries rule (16)(a) (47-2011/s2), now added as PROV-M107-902.",
+      "None of the eleven provisos to section 8 excludes a deed of gift, so no exception was missed there; edges on 23-1927/s13 and 23-1927/s7 (Land Settlement Ordinance s.9, Registration of Old Deeds Ordinance ss.7 and 9, Trusts Ordinance ss.75, 76 and 112) were checked and none bears on the drafting or priority points."
+    ],
+    "case_law_dependence": [
+      "M107-Q03 genuinely depends on non-statutory authority: no rule of construction of deeds and no nemo dat rule exists anywhere in the corpus on the verifier's own searches. Reserved status confirmed.",
+      "M107-Q04 does not depend on case law; it remains statute_only and is downgraded only because the wrong statutory version was used."
+    ],
+    "enrichment_issues": [
+      "Both questions carry candidate_action=keep and enrichment.applied=false with no added facts. Correct; no leak of statute names, section numbers or conclusions into the background."
+    ],
+    "duplicate_or_leak_issues": [
+      "Provisions 001 to 005 are five subsections of a single section, each carrying a distinct role; that is legitimate granularity rather than duplication.",
+      "The question text itself names section 13 of the Registration of Documents Ordinance, so the statute reference in M107-Q04 comes from the paper and is not a leak introduced by the researcher.",
+      "The drafted schedule in the gold answer uses bracketed blanks rather than invented boundaries, districts or folio numbers, so no facts were fabricated."
+    ]
+  },
+  "lawyer_questions": [
+    "Section 13(1) of the Registration of Documents Ordinance was substituted by Act No. 48 of 2011: should the gold answer and the drafted schedule for M107-Q04 be restated on the 2011 list (Divisional Secretary's Division, local authority division, Grama Niladari Division, and the assessment number as well as the street name for land in a municipality, town or developed area), and does an April 2018 examiner's expected answer follow the 2011 text or the older textbook formulation?",
+    "Is Battaramulla, at the reference date, within a municipality, town or developed area declared under section 2 of the Municipal Councils Ordinance, the Urban Councils Ordinance or the Pradeshiya Sabha Act, so that the number and street name limb of section 13(1) is engaged for Lot C4?",
+    "Should the schedule to Deed No. 429 recite an assessment number for Lot C4 at all, given that the facts locate buildings Nos. 400 and 400A on Lot C but do not say whether either stands within the 10 perches?",
+    "Is the researcher's reading of section 7(1), that neither donee claims 'on valuable consideration' so registration order between Deeds Nos. 409 and 429 decides nothing, correct as a matter of Sri Lankan practice?",
+    "For M107-Q03, confirm that the conflict between the recital, the operative clause and the schedule of Deed No. 409, and the nemo dat consequence, are properly reserved for non-statutory authority rather than answerable from the corpus."
+  ]
+}

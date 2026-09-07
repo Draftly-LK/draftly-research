@@ -1,0 +1,201 @@
+{
+  "benchmark_matter_id": "M024",
+  "verifier": "verifier-M024",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:25:11Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M024-001",
+      "decision": "verified",
+      "note": "Carve-out quoted exactly from 7-1840/s2(1); a two-year lease is inside section 2."
+    },
+    {
+      "provision_id": "PROV-M024-002",
+      "decision": "verified",
+      "note": "Execution formality quoted exactly from 7-1840/s2(1)(a), including the \"person duly authorised\" limb."
+    },
+    {
+      "provision_id": "PROV-M024-003",
+      "decision": "verified",
+      "note": "Rule (12) quoted exactly and correctly described as the notary-side duty."
+    },
+    {
+      "provision_id": "PROV-M024-004",
+      "decision": "verified",
+      "note": "Rule (22) quoted exactly; it also restricts language, which does not bear on this matter."
+    },
+    {
+      "provision_id": "PROV-M024-005",
+      "decision": "partially_verified",
+      "note": "Section 4A ties the zone to residence, not to place of practice; the map infers Colombo residence from Colombo practice."
+    },
+    {
+      "provision_id": "PROV-M024-006",
+      "decision": "verified",
+      "note": "Section 32(2) quoted exactly; the rules it adjusts, (6), (7), (18), (19), (20), (23) and (25), match the corpus text."
+    },
+    {
+      "provision_id": "PROV-M024-007",
+      "decision": "verified",
+      "note": "Rule (25)(a) quoted exactly; the allocation between first and later attesting notaries is as described."
+    },
+    {
+      "provision_id": "PROV-M024-008",
+      "decision": "partially_verified",
+      "note": "Verbatim and supporting, but the corpus prints this paragraph without the \"(27)\" or \"(c)\" labels, so the subsection reference is reconstructed."
+    },
+    {
+      "provision_id": "PROV-M024-009",
+      "decision": "verified",
+      "note": "Definition of \"power of attorney\" quoted exactly from 4-1902/s2; the corpus strips the defined-term headword but \"defs 4-1902 power of attorney\" confirms the section defines it."
+    },
+    {
+      "provision_id": "PROV-M024-010",
+      "decision": "verified",
+      "note": "Section 3A(1) and (2)(a) quoted exactly; the trigger is a transaction within Prevention of Frauds Ordinance s.2, which this lease is."
+    },
+    {
+      "provision_id": "PROV-M024-011",
+      "decision": "verified",
+      "note": "Section 3 quoted exactly; paragraph (b) does set one month for a power executed in Sri Lanka."
+    },
+    {
+      "provision_id": "PROV-M024-012",
+      "decision": "verified",
+      "note": "Rule (30) quoted exactly."
+    },
+    {
+      "provision_id": "PROV-M024-013",
+      "decision": "verified",
+      "note": "Section 4(i) quoted exactly; a lease of any property is a specified instrument."
+    },
+    {
+      "provision_id": "PROV-M024-014",
+      "decision": "verified",
+      "note": "Section 3(1) quoted exactly; the rate is left to Ministerial Order, which is what blocks Q02."
+    },
+    {
+      "provision_id": "PROV-M024-015",
+      "decision": "verified",
+      "note": "Section 6(c) quoted exactly; lessee liable absent agreement to the contrary."
+    },
+    {
+      "provision_id": "PROV-M024-016",
+      "decision": "verified",
+      "note": "Section 8(2) quoted exactly; payment to a prescribed bank prior to or at execution, bank certificate affixed."
+    },
+    {
+      "provision_id": "PROV-M024-017",
+      "decision": "verified",
+      "note": "Rule (6) quoted exactly."
+    },
+    {
+      "provision_id": "PROV-M024-018",
+      "decision": "verified",
+      "note": "Rule (7)(a) and (b) quoted exactly; inserted by the 2022 and 2024 amendments, both before April 2025."
+    },
+    {
+      "provision_id": "PROV-M024-901",
+      "decision": "verified",
+      "note": "Added by the verifier: a third statutory mode of execution the map omitted."
+    },
+    {
+      "provision_id": "PROV-M024-902",
+      "decision": "verified",
+      "note": "Added by the verifier: supplies the two-witness figure the answer asserts."
+    },
+    {
+      "provision_id": "PROV-M024-903",
+      "decision": "verified",
+      "note": "Added by the verifier: the attorney affidavit condition on the power of attorney route."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M024-901",
+      "reason": "Deeds and Documents (Execution before Public Officers) Ordinance No. 17 of 1852 s.2 lets an instrument caught by Prevention of Frauds Ordinance s.2 be executed before a District Judge, or a specially authorised Justice of the Peace, for the district in which the party resides, with two or more witnesses present at the same time. The researcher flagged it and left it out. Without it the answer's conclusion that signature outside the presence of a notary is not open to the parties is wrong, so the provision is indispensable to Q01."
+    },
+    {
+      "provision_id": "PROV-M024-902",
+      "reason": "Notaries Ordinance s.31 rule (8) is the only provision in the corpus that fixes at least two attesting witnesses. The answer asserts signature before two witnesses in the application, citing only s.32(2) and rule (25), neither of which mentions a number."
+    },
+    {
+      "provision_id": "PROV-M024-903",
+      "reason": "Notaries Ordinance s.31 rule (15)(c) requires an attorney signing a deed to give the notary an affidavit that the power is genuine and in force and the grantor alive. The map covered the notary's protocol duty under rule (30) but not this condition, which a complete statement of the attorney route needs."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M024-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "Authority requirement stands: the permitted modes of execution are all statutory and no case law is needed. The downgrade is on completeness and on one wrong conclusion. The 1852 Ordinance route makes CL-M024-Q01-017 wrong as stated and CL-M024-Q01-012 and CL-M024-Q01-016 overbroad; CL-M024-Q01-002 omits the s.2(1)(b) thumb impression; CL-M024-Q01-013 assumes residence in the Colombo zone from practice in Colombo. Hop count left at three and the reason recorded in hop_count_basis. PROV-M024-009 and PROV-M024-010 moved from supporting to indispensable."
+    },
+    {
+      "benchmark_question_id": "M024-Q02",
+      "research_status_before": "blocked_missing_authority",
+      "research_status_after": "blocked_missing_authority",
+      "authority_requirement_after": "statute_only",
+      "note": "Block confirmed independently. Section 3(1) leaves the rate to Ministerial Order, section 5 leaves exemptions to the same mechanism, section 13 carries over no rate from Act No. 43 of 1982, and a grep of 43-1982 for \"lease\" returns only sections 19, 24 and 46 with no rate schedule. All eight claims verified, including the conclusion that the money value cannot be derived from the corpus."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "missing_alternative_route",
+      "researcher_position": "Notarial execution is the only lawful form, so the lease can be signed only by split execution before two notaries or by an attorney under a power of attorney; signature outside the presence of a notary and the witnesses is not open to the parties.",
+      "verifier_position": "Section 2 of the Deeds and Documents (Execution before Public Officers) Ordinance No. 17 of 1852 is in the corpus, unamended and unrepealed, and expressly validates an instrument caught by Prevention of Frauds Ordinance s.2 if it is signed before two or more witnesses in the presence of a District Judge, or a specially authorised Justice of the Peace, for the district in which the party resides, and certified by that officer. On these facts that is a third route, and the answer's exclusion of non-notarial execution is wrong as stated.",
+      "supporting_sources": [
+        "17-1852/s2",
+        "17-1852/s3",
+        "17-1852/s4",
+        "7-1840/s2"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "provision_role",
+      "researcher_position": "The power of attorney provisions (4-1902/s2 and s.3A) are supporting, because the question asks how the agreement can be signed rather than how it must be.",
+      "verifier_position": "On facts whose whole difficulty is that the lessor cannot attend the notary, the attorney route is one of the answers the question is asking for. PROV-M024-009 and PROV-M024-010 have been moved to indispensable; PROV-M024-011 (registration) and PROV-M024-012 (rule (30)) remain supporting as downstream steps.",
+      "supporting_sources": [
+        "7-1840/s2",
+        "4-1902/s2",
+        "4-1902/s3A"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M024-Q01-014 asserted signature before two witnesses with no provision fixing the number; PROV-M024-902 (s.31 rule (8)) added and cited.",
+      "CL-M024-Q01-013 moves from \"practising in Colombo\" to the Colombo judicial zone, but s.4A keys the zone to where the notary resides and the facts do not state her residence.",
+      "CL-M024-Q01-017 states an exclusion the corpus contradicts; marked rejected."
+    ],
+    "temporal_issues": [
+      "No temporal error found. The 2022 and 2024 amendments to 7-1840/s2, 1-1907/s31 and 4-1902 all precede April 2025 and the corpus holds consolidated text, so the map relies on no later amendment.",
+      "PROV-M024-008 attaches a rule number and paragraph letter, (27)(c)(ii), that the corpus text does not print; the label is a reconstruction, not a temporal problem but a citation risk."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Prevention of Frauds Ordinance s.2(1)(b): the thumb impression of every executant, on original, duplicate and protocol, in the presence of the notary and witnesses, is part of the same conditional and is not stated in CL-M024-Q01-002.",
+      "Powers of Attorney Ordinance s.3B: the attesting notary must examine the Registrar General's volumes and folios, be satisfied the power has not been revoked or cancelled, and say so in the attestation. Omitted from the map; not added because it is downstream of the route the question asks about.",
+      "Notaries Ordinance s.31 rule (28): where a deed is executed by two or more parties before more than one notary, only the first attesting notary transmits the duplicate. Omitted; supporting detail on the split-execution route.",
+      "Notaries Ordinance s.31 rule (15)(a) requires an attorney executing a deed on immovable property to affix a thumb impression, and rule (30A) sets thirty days for submitting the attested deed for registration. Neither is in the map.",
+      "Stamp Duty (Special Provisions) Act: \"prescribed bank\" in s.8(2) is not defined in s.14 or anywhere else in the corpus."
+    ],
+    "case_law_dependence": [
+      "None. Neither gold answer cites a case, and the permitted modes of execution and the stamp duty framework are both fixed by statute. The only non-statutory dependence on Q02 is subordinate legislation, a Gazette Order under s.3(1), which is a corpus gap and not case law."
+    ],
+    "enrichment_issues": [
+      "No enrichment applied to either question; enrichment.applied is false and added_facts is empty on both, consistent with both questions being tier A keep."
+    ],
+    "duplicate_or_leak_issues": [
+      "Seven provision entries share section_id 1-1907/s31 and two share 7-1840/s2, with the rule or subsection carried in the subsection field. The verifier's two additions bring the s.31 count to nine. This is a corpus-granularity artefact rather than duplication: each entry quotes a different, non-overlapping passage, and each excerpt was independently confirmed verbatim.",
+      "No statute name, section number or conclusion leaks into the background text of either question; the background is the unedited exam scenario."
+    ]
+  },
+  "lawyer_questions": [
+    "Is execution before a District Judge or a specially authorised Justice of the Peace under section 2 of the Deeds and Documents (Execution before Public Officers) Ordinance No. 17 of 1852 still a route a Sri Lankan practitioner would advise, or is it dead in practice? The answer decides whether M024-Q01's conclusion has to be rewritten or whether the omission is defensible for a three-mark answer.",
+    "Does section 2(1)(a) of the Prevention of Frauds Ordinance, read with Notaries Ordinance s.32(2), permit the two parties to sign the one instrument before different notaries at different places, or does \"present at the same time and in the presence of one another\" require each executant and that executant's own witnesses to be together only among themselves?",
+    "Should the model answer to M024-Q02 be expected to state a money figure from the Gazette Order in force in April 2025, in which case the benchmark needs the Order added to the corpus, or is \"chargeable, lessee liable, rate fixed by Order\" the full statutory answer?"
+  ]
+}

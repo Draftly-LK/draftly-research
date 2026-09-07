@@ -1,0 +1,160 @@
+{
+  "benchmark_matter_id": "M036",
+  "source_matter_id": "P06-Q02-M01",
+  "grouping_key": "P06-Q02-M01",
+  "paper_no": 6,
+  "question_no": 2,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.",
+    "normalized": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P06-Q02-P01"
+        ]
+      },
+      {
+        "segment_index": 0,
+        "field": "prior_background",
+        "atomic_ids": [
+          "P06-Q02-P02",
+          "P06-Q02-P03"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M036-Q01",
+      "atomic_id": "P06-Q02-P01",
+      "part_uid": "paper-06/q2/1",
+      "part_id": "1",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 23,
+      "question_original": "If you are retained by the company for the said purchase, what steps should you take?",
+      "question_normalized": "If you are retained by the company for the said purchase, what steps should you take?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.",
+      "effective_background_normalized": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.",
+      "source_quote": "1. Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent. If you are retained by the company for the said purchase, what steps should you take?",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.82,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "relevant_document",
+        "transaction_sequence",
+        "consideration_or_value",
+        "existing_encumbrance"
+      ]
+    },
+    {
+      "benchmark_question_id": "M036-Q02",
+      "atomic_id": "P06-Q02-P02",
+      "part_uid": "paper-06/q2/2",
+      "part_id": "2",
+      "item_id": null,
+      "marks": 8,
+      "pdf_page": 23,
+      "question_original": "What documents would you call for the examination of the title and why?",
+      "question_normalized": "What documents would you call for the examination of the title and why?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": "The said Ceylon Rubber Company (Private) Limited instructs you to examine the title of a residential premises situated next to said Rubber Estate, Forty Perches (AO, RO, P40) in extent."
+      },
+      "effective_background_original": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.\n\nThe said Ceylon Rubber Company (Private) Limited instructs you to examine the title of a residential premises situated next to said Rubber Estate, Forty Perches (AO, RO, P40) in extent.",
+      "effective_background_normalized": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.\n\nThe said Ceylon Rubber Company (Private) Limited instructs you to examine the title of a residential premises situated next to said Rubber Estate, Forty Perches (AO, RO, P40) in extent.",
+      "source_quote": "2. The said Ceylon Rubber Company (Private) Limited instructs you to examine the title of a residential premises situated next to said Rubber Estate, Forty Perches (AO, RO, P40) in extent. What documents would you call for the examination of the title and why?",
+      "classification": {
+        "context_sources": [
+          "prior",
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "relevant_document",
+        "transaction_sequence",
+        "existing_encumbrance",
+        "registration_status"
+      ]
+    },
+    {
+      "benchmark_question_id": "M036-Q03",
+      "atomic_id": "P06-Q02-P03",
+      "part_uid": "paper-06/q2/3",
+      "part_id": "3",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 23,
+      "question_original": "If the purchase price of the said Rubber Estate is Rs. 41,000,000/=, calculate the stamp duty payable on the Deed of Transfer.",
+      "question_normalized": "If the purchase price of the said Rubber Estate is Rs. 41,000,000/=, calculate the stamp duty payable on the Deed of Transfer.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [
+          "The said Ceylon Rubber Company (Private) Limited instructs you to examine the title of a residential premises situated next to said Rubber Estate, Forty Perches (AO, RO, P40) in extent."
+        ],
+        "own_background": null
+      },
+      "effective_background_original": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.\n\nThe said Ceylon Rubber Company (Private) Limited instructs you to examine the title of a residential premises situated next to said Rubber Estate, Forty Perches (AO, RO, P40) in extent.",
+      "effective_background_normalized": "Ceylon Rubber Company (Private) Limited wishes to purchase a Rubber Estate situated in Galle, Forty One Acres (A41, RO, PO) in extent.\n\nThe said Ceylon Rubber Company (Private) Limited instructs you to examine the title of a residential premises situated next to said Rubber Estate, Forty Perches (AO, RO, P40) in extent.",
+      "source_quote": "3. If the purchase price of the said Rubber Estate is Rs. 41,000,000/=, calculate the stamp duty payable on the Deed of Transfer.",
+      "classification": {
+        "context_sources": [
+          "prior"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.78,
+        "flags": [
+          "fact_embedded_in_question"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "confidence=0.78"
+      ],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "instrument_date",
+        "applicable_time"
+      ]
+    }
+  ],
+  "matter_reference_date": "2023-10",
+  "exam_session": "OCTOBER 2023",
+  "matter_tier": "A",
+  "tier_a_question_count": 2
+}

@@ -1,0 +1,68 @@
+{
+  "benchmark_matter_id": "M070",
+  "source_matter_id": "P12-Q02-M01",
+  "grouping_key": "P12-Q02-M01",
+  "paper_no": 12,
+  "question_no": 2,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Gamini Perera intends to purchase a house and property situated in Ratmalana bearing Assessment No. 23, 1st Lane, Ratmalana. He applied for a loan from the Mortgage Bank and the Bank approved his Loan and informed him to get a certain Notice registered in the Land Registry and submit together with the folio in order to release the Loan on the simultaneous execution of the Transfer Deed and the Mortgage Bond without awaiting the completion of registration formalities.\n\nGamini Perera is hoping to obtain a loan of Rupees 3 Million from the Bank.",
+    "normalized": "Gamini Perera intends to purchase a house and property situated in Ratmalana bearing Assessment No. 23, 1st Lane, Ratmalana. He applied for a loan from the Mortgage Bank and the Bank approved his Loan and informed him to get a certain Notice registered in the Land Registry and submit together with the folio in order to release the Loan on the simultaneous execution of the Transfer Deed and the Mortgage Bond without awaiting the completion of registration formalities.\n\nGamini Perera is hoping to obtain a loan of Rupees 3 Million from the Bank.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P12-Q02-P04"
+        ]
+      },
+      {
+        "segment_index": 1,
+        "field": "own_background",
+        "atomic_ids": [
+          "P12-Q02-P04"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M070-Q01",
+      "atomic_id": "P12-Q02-P04",
+      "part_uid": "paper-12/q2/iv",
+      "part_id": "iv",
+      "item_id": null,
+      "marks": 2,
+      "pdf_page": 49,
+      "question_original": "Calculate the stamp duty payable by him on the Mortgage Bond.",
+      "question_normalized": "Calculate the stamp duty payable by him on the Mortgage Bond.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Gamini Perera intends to purchase a house and property situated in Ratmalana bearing Assessment No. 23, 1st Lane, Ratmalana. He applied for a loan from the Mortgage Bank and the Bank approved his Loan and informed him to get a certain Notice registered in the Land Registry and submit together with the folio in order to release the Loan on the simultaneous execution of the Transfer Deed and the Mortgage Bond without awaiting the completion of registration formalities.\n\nGamini Perera is hoping to obtain a loan of Rupees 3 Million from the Bank.",
+      "effective_background_normalized": "Gamini Perera intends to purchase a house and property situated in Ratmalana bearing Assessment No. 23, 1st Lane, Ratmalana. He applied for a loan from the Mortgage Bank and the Bank approved his Loan and informed him to get a certain Notice registered in the Land Registry and submit together with the folio in order to release the Loan on the simultaneous execution of the Transfer Deed and the Mortgage Bond without awaiting the completion of registration formalities.\n\nGamini Perera is hoping to obtain a loan of Rupees 3 Million from the Bank.",
+      "source_quote": "(iv) Gamini Perera is hoping to obtain a loan of Rupees 3 Million from the Bank. Calculate the stamp duty payable by him on the Mortgage Bond.\n(02 marks)",
+      "classification": {
+        "context_sources": [
+          "shared",
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.9,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2020-04",
+  "exam_session": "APRIL 2020",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

@@ -1,0 +1,97 @@
+{
+  "benchmark_matter_id": "M103",
+  "verifier": "verifier-M103",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:17:23Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M103-001",
+      "decision": "verified",
+      "note": "check confirmed the excerpt verbatim in 1-1907/s31. Read against the full text of s.31 and of every amending section the corpus holds for it (20-1976 s.10, 47-2011 ss.2 and 3, 31-2022 s.16, 6-2024 s.3): none touches rule (1), so the corpus wording is the 1907 wording and was in force at 2018-10. A grep for secre and confiden across the whole corpus turns up no other secrecy or privilege provision, so this is the only rule that answers the question, and it carries both exceptions in one sentence."
+    },
+    {
+      "provision_id": "PROV-M103-002",
+      "decision": "verified",
+      "note": "Verbatim in 1-1907/s31. Rule (24) is untouched by 20-1976 s.10, 47-2011, 31-2022 s.16 and 6-2024 s.3 (6-2024 s.3(8) substitutes Form F 1 only in rule (26)(a)(i), and s.3(9) only in rule (29)), so the reference to form F in rule (24) is right at 2018-10. Supporting is the correct role; removing it leaves every claim still supported."
+    },
+    {
+      "provision_id": "PROV-M103-003",
+      "decision": "verified",
+      "note": "Verbatim. 47-2011 s.3 confirms the paragraph is (26)(a)(i) as renumbered, and neither 47-2011 s.3(2) nor 6-2024 s.3(8) touches the wills proviso, so the excerpt was in force at 2018-10. Stopping the excerpt short of the Form reference was the right call."
+    },
+    {
+      "provision_id": "PROV-M103-004",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim and s.34(1)(a) does name rule (1), but 31-2022 s.17 repealed and substituted the whole of s.34, so the corpus holds no text of the penalty section as it stood in October 2018. The researcher flagged this on the provision, but the gold answer prose still asserts the penalty under s.34(1)(a) as part of the applicable rule and repeats it in the conclusion, which the corpus cannot support at the matter date."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M103-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "Authority requirement confirmed: s.31 rule (1) states the prohibition and both exceptions in one sentence, and applying them to a living testator who has given no permission, to children who are not the notary's employer, and to the absence of any legal compulsion disposes of the question without case law or Roman-Dutch doctrine. The hop count of 1 is confirmed. Downgraded only because two statements in the gold prose cannot be verified from the corpus at 2018-10: the s.34(1)(a) penalty, whose corpus text post-dates the matter, and the succession propositions behind the employer identification and the children's lack of a present interest. Nine of twelve claims verified; CL-M103-Q01-005, -007 and -011 marked disputed."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "temporal_applicability_of_cited_penalty",
+      "researcher_position": "s.34 may be cited as supporting authority, marked applicable_to_matter_date false, because the answer does not turn on the size of the fine; the gold prose accordingly says that breach of rule (1) is an offence punishable on summary trial under s.34(1)(a).",
+      "verifier_position": "A provision marked inapplicable at the matter date should not appear in the rule statement of the gold answer as though it were the law in October 2018. 31-2022 s.17 repealed the whole of the old s.34, so neither the framing of the offence nor the paragraph lettering used in the prose can be sourced to the corpus for 2018. Either the pre-2022 s.34 is added to the corpus or the two sentences resting on it come out of the prose.",
+      "supporting_sources": [
+        "1-1907/s34",
+        "31-2022/s17",
+        "12-2005/s2"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "meaning_of_employer_in_s31_rule_1",
+      "researcher_position": "The testator is the notary's employer for the permission exception, on the ordinary meaning of the word plus the added facts.",
+      "verifier_position": "Probably right in practice, but employer is undefined in the Ordinance (defs 1-1907 returns only Council of Legal Education, High Court Judge and Registrar-General), so the identification cannot be verified from the corpus. The conclusion does not depend on it: the children plainly are not the notary's employer and nobody has given permission, so the exception fails on any reading. The claim should not be presented as a verified statutory application.",
+      "supporting_sources": [
+        "1-1907/s31",
+        "1-1907/s43"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M103-Q01-007: the testator, and not his children, is the notary's employer. No definition of employer anywhere in the Notaries Ordinance; ordinary meaning only.",
+      "Gold answer application paragraph: nothing passes under a will until the testator's death. Not carried by any answer_claim and not supported by any provision in the corpus; the Wills Ordinance No. 21 of 1844 as held here (7 sections) says nothing about revocability or the ambulatory character of a will.",
+      "CL-M103-Q01-005 and CL-M103-Q01-011: the offence and the civil liability for breach of rule (1) rest solely on a post-2022 text of s.34."
+    ],
+    "temporal_issues": [
+      "s.34 in the corpus is the section substituted by 31-2022 s.17, checked against 31-2022/s17 directly; no part of the 2018 text survives in the corpus. The researcher flagged this on the provision but the gold prose still relies on it.",
+      "Rules (1), (24) and the rule (26)(a)(i) proviso were each checked against all five amending sections the corpus holds for s.31; none is touched, so all three are correctly treated as in force at 2018-10.",
+      "Rule (20)(h)(ii), inserted by 31-2022 s.16(11)(d), now requires the testator's name in the deed register. It post-dates the matter and was correctly excluded; had it applied it would have cut against CL-M103-Q01-003.",
+      "Notaries (Amendment) Act No. 13 of 2013, which the research notes do not mention, was checked: it amends only s.27 and Form D, so it does not disturb the map."
+    ],
+    "missing_definitions_or_exceptions": [
+      "employer in rule (1) is undefined; confirmed by defs 1-1907.",
+      "s.31 rule (36)(b) and (d) (inspection of a notary's records by the Registrar-General, the Government Agent and named judges) is the nearest corpus anchor for the required by law limb and for the counterfactual in FACT-M103-Q01-004, but it binds only notaries who are not attorneys-at-law and the corpus list of officers differs from the version substituted by 20-1976 s.10(2), so its text at 2018-10 could not be pinned down. Not added as a provision for that reason, and it is not indispensable.",
+      "edges 1-1907/s31 shows incoming cross-references from s.21, s.32, s.33 and s.42. s.32 was read in full: it disapplies rules (20) and (23) to (26) for certain foreign and stock instruments, none of which covers a will, so it does not qualify the map. None of the others bears on rule (1)."
+    ],
+    "case_law_dependence": [
+      "No case law is cited, and none is needed for the operative reasoning. The only common-law-flavoured propositions are the employer reading and the ambulatory nature of a will, and the conclusion can do without both."
+    ],
+    "enrichment_issues": [
+      "FACT-M103-Q01-003 and FACT-M103-Q01-004 are close paraphrases of the two exceptions in rule (1) (has given the notary no permission of any kind; no order of court and no notice or demand from any officer requiring the notary to disclose). No statute name, section number or conclusion is leaked, so the letter of the rule is met, but the facts telegraph the legal test and leave the exceptions almost self-answering. A lawyer should decide whether that is acceptable for a 3-mark question.",
+      "FACT-M103-Q01-002 uses the statutory term protocol, which points at rules (1) and (24). Ordinary notarial vocabulary rather than a leak, but worth noting.",
+      "The enriched background otherwise preserves the legal issue: living testator, children inquiring, no permission, no compulsion."
+    ],
+    "duplicate_or_leak_issues": [
+      "No section numbers, Act names or conclusion appear in the enriched background.",
+      "All four provisions sit in the Notaries Ordinance and three are different rules of the same section. That is correct here rather than duplicative, since s.31 is one section made up of separately numbered rules."
+    ]
+  },
+  "lawyer_questions": [
+    "Should the gold answer keep the penalty point at all? The corpus holds only the s.34 substituted by 31-2022, so at October 2018 neither the offence nor its lettering can be stated from the corpus; the choice is to source the pre-2022 s.34 or to drop the two sentences that rely on it.",
+    "Is the testator the notary's employer within rule (1), given that the Ordinance does not define the word, and does anything turn on it when neither the testator nor anyone else has given permission?",
+    "Do the children's expectation of inheriting and the fact that the testator is alive need authority beyond rule (1), or is the ambulatory character of a will safe to assume as background?",
+    "Are added facts that mirror the statutory exceptions this closely acceptable enrichment for a 3-mark question, or should FACT-M103-Q01-003 and FACT-M103-Q01-004 be stated more neutrally?"
+  ]
+}

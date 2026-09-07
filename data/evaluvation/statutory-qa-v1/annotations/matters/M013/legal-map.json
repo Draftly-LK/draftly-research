@@ -1,0 +1,725 @@
+{
+  "benchmark_matter_id": "M013",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M013",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T21:57:23Z",
+    "verification_agent": "verifier-M013",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:10:15Z"
+  },
+  "matter_reference_date": "2025-10",
+  "matter_reference_date_basis": "exam_session OCTOBER 2025 recorded in candidates/matters/M013.json; the law is taken as it stood at that session.",
+  "corpus_gaps": [
+    "The corpus records only a year (in_force_from_year / latest_change_year) for each section, not the date of operation of an amending Act. The Prevention of Frauds (Amendment) Act No. 4 of 2024 and the Powers of Attorney (Amendment) Act No. 3 of 2024 are therefore treated as in force at 2025-10 on the strength of the year alone; a verifier should confirm the commencement dates.",
+    "The corpus holds only two amendments to the Prevention of Frauds Ordinance (No. 30 of 2022 and No. 4 of 2024). It cannot be confirmed from inside the corpus that no later amendment exists between 2024 and the October 2025 session, which matters because the question asks for the 'latest amendments'.",
+    "No stamp duty rate schedule is in the corpus, so the amount of stamp duty payable on the transfer cannot be stated; only the notary's duty to pay it (Notaries Ordinance s.31(7)) is available.",
+    "Consular Functions Act No. 4 of 1981, referred to in Powers of Attorney Ordinance s.2(b), is not in the corpus, so the class of officers who may attest a power of attorney abroad cannot be checked beyond the words of s.2 itself.",
+    "Verifier note: the corpus does fix one commencement date indirectly - Powers of Attorney (Amendment) Act No. 3 of 2024 s.6 refers to powers of attorney \"executed prior to October 25, 2022\" and to section 8 of Act No. 28 of 2022, which places the 2022 power-of-attorney regime in operation from 25 October 2022. No equivalent anchor exists for the Prevention of Frauds (Amendment) Act No. 4 of 2024, whose only other sections are a short title and a Sinhala-text clause, so its date of operation still has to be confirmed off-corpus."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M013-001",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(2)",
+      "relevant_excerpt": "In relation to a transfer deed - (a) both the transferor and the transferee shall affix their signatures and thumb impressions as required by subsection (1): Provided however, where the transferee is unable to be present and execute the deed or instrument, he shall authorise in writing, any other person to sign such deed or instrument on his behalf, who shall comply with the requirements set out in subsection (1)",
+      "why_relevant": "This is the subsection inserted by the latest amendment (Act No. 4 of 2024). It is the provision the question turns on: it now requires the transferee, as well as the transferor, to sign and place a thumb impression on a transfer deed, and it gives the transferee who cannot be present the one statutory escape route - a written authorisation to another person to sign on her behalf. Wimala is the transferee and cannot be present.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Subsection (2) was added to section 2 by the Prevention of Frauds (Amendment) Act No. 4 of 2024 (corpus amendment_events for 7-1840/s2 record 'unknown by 4-2024 s.2 (2024)'). 2024 precedes the matter date of 2025-10, so the subsection applies. The corpus records the year only, not the date of operation.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-002",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "No sale, purchase, transfer, assignment, or mortgage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month), nor any contract or agreement for the future sale or purchase of any land or other immovable property",
+      "why_relevant": "Fixes the transaction Wimala proposes - a purchase and transfer of land - inside section 2, so that the formality requirements and the subsection (2) route for an absent transferee apply to her deed at all.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 has stood since 1840 and was last recast in 2022 and 2024; the opening words quoted here are the operative text at 2025-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim but stops short of the operative words \"shall be in force or avail in law unless\", which are the very words claim CL-M013-Q01-001 and the conclusion rest on; the excerpt should be extended to carry them."
+    },
+    {
+      "provision_id": "PROV-M013-003",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)(a)-(b)",
+      "relevant_excerpt": "the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary; and (b) the left or right thumb impression of every such executant or where both thumbs of such executant are missing, the impression of any other finger or the toe impression as the case may be, is affixed above or besides the signature to the original, duplicate and the protocol of the relevant deed or instrument, in the presence of such notary public and the witnesses",
+      "why_relevant": "States the formalities the authorised signatory must satisfy, because subsection (2) sends the transferee's nominee back to subsection (1). Paragraph (a), as substituted in 2024, is also the provision that expressly recognises signature 'by any person duly authorised by such executant', which is what makes the attorney route effective rather than a nullity.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Paragraph (a) was substituted and paragraph (b) amended by the Prevention of Frauds (Amendment) Act No. 4 of 2024, on the base text substituted by Act No. 30 of 2022. Both precede 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-004",
+      "section_id": "4-2024/s2",
+      "act_id": "4-2024",
+      "formal_title": "Prevention of Frauds (Amendment) Act",
+      "number_and_year": "No. 4 of 2024",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "Section 2 of the Prevention of Frauds Ordinance (Chapter 70) is hereby amended as follows: - (1) by the renumbering of that section as subsection (1); (2) in the renumbered subsection (1) thereof- (a) by the repeal of paragraph (a), and the substitution therefor of the following:- \"(a) the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary; and\"",
+      "why_relevant": "The amending Act itself. The question asks for advice 'according to the latest amendments', so the answer has to identify Act No. 4 of 2024 as the source of the renumbering, of the 'duly authorised' wording in paragraph (a), and of the new subsection (2) that governs an absent transferee.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted 2024, before the matter date of 2025-10. The corpus records no date of operation, only the year.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-005",
+      "section_id": "30-2022/s2",
+      "act_id": "30-2022",
+      "formal_title": "Prevention of Frauds (Amendment) Act",
+      "number_and_year": "No. 30 of 2022",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "Section 2 of the Prevention of Frauds Ordinance (Chapter 70) (hereinafter referred to as the \"principal enactment\") is hereby amended by the repeal of all the words from \"shall be of force\" to the end of that section",
+      "why_relevant": "Background only. Act No. 30 of 2022 is the amendment immediately preceding the 2024 Act; it introduced the thumb impression requirement into section 2 but said nothing about an absent transferee. It explains why the 2024 Act, not the 2022 Act, is the operative 'latest amendment' for Wimala's problem.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted 2022; its text was itself partly recast by Act No. 4 of 2024, so it is cited for the history of section 2 rather than as operative law.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and the background role is right, but the temporal note is wrong to say the 2022 Act's own text was recast by Act No. 4 of 2024: the 2024 Act amends section 2 of the principal Ordinance, not Act No. 30 of 2022."
+    },
+    {
+      "provision_id": "PROV-M013-006",
+      "section_id": "4-1902/s2",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "2",
+      "subsection": "definition of \"power of attorney\"",
+      "relevant_excerpt": "(a) if it is executed in Sri Lanka, executed before two witnesses and attested by a notary public; or (b) if it is executed outside Sri Lanka, executed before an Ambassador, or a High Commissioner, or a Diplomatic Officer or a Consular Officer within the meaning of the Consular Functions Act, No. 4 of 1981 or a person who is authorized to attest such power of attorney according to the law of that country",
+      "why_relevant": "Defines how the written authorisation contemplated by Prevention of Frauds Ordinance s.2(2) must itself be executed. Because Wimala is outside Sri Lanka, paragraph (b) tells her before whom she may sign - a diplomatic or consular officer of Sri Lanka, or a person competent to attest under the law of the country she is in.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The definition was substituted by the Powers of Attorney (Amendment) Act No. 28 of 2022 and further amended by Act No. 3 of 2024; both precede 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-007",
+      "section_id": "4-1902/s3A",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3A",
+      "subsection": "(1)",
+      "relevant_excerpt": "A power of attorney granted to be used for the purpose of a transaction which falls within the scope of section 2 of the Prevention of Frauds Ordinance (Chapter 70) shall be executed subject to the provisions specified in subsection (2) or (3), as the case may be.",
+      "why_relevant": "Links the two enactments. Wimala's authorisation is granted for a transaction inside Prevention of Frauds Ordinance s.2, so the ordinary form of power of attorney is not enough; the special requirements of s.3A(2) or (3) are engaged.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 3A was inserted by the Powers of Attorney (Amendment) Act No. 28 of 2022, before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-008",
+      "section_id": "4-1902/s3A",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3A",
+      "subsection": "(3)",
+      "relevant_excerpt": "If a power of attorney specified in subsection (1) is executed outside Sri Lanka, it shall - (a) be duly executed before a person authorized under section 2 of this Act; (b) contain a description of the land or land parcel as the case may be with metes and bounds and the extent in the case of a land or land parcel;",
+      "why_relevant": "The operative checklist for Wimala, who will sign abroad: execution before a s.2 officer, a metes-and-bounds description of the Galle land, the volume and folio of its prior registration, and the certified passport and identity copies. If the instrument omits these the notary in Galle cannot safely act on it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 28 of 2022; in force well before 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-009",
+      "section_id": "4-1902/s3A",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3A",
+      "subsection": "(3)(d)-(e)",
+      "relevant_excerpt": "contain a reference to the volume and folio in which the land or land parcel or condominium parcel relating to the transaction, is registered, in the case of a land or land parcel or condominium parcel with prior registration; and (e) be accompanied with a copy of the bio page of the passport of the grantor signed by such grantor and a copy of the bio page of the passport, National Identity Card or driving license of the attorney of such power of attorney certified by a notary public.",
+      "why_relevant": "The remaining two requirements for a power of attorney executed abroad: the prior registration reference for the Galle land, and the signed passport bio page of the grantor together with certified identity documents of the attorney.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 28 of 2022; in force before 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-010",
+      "section_id": "4-1902/s3",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "(a) Every power of attorney executed in Sri Lanka or any other country shall be registered with the Registrar General. (b) Every power of attorney holder (hereinafter referred to as the \"attorney\") shall submit his power of attorney for registration, if it is executed in Sri Lanka within one month and if it is executed outside Sri Lanka within three months, from the date of execution of the power of attorney together with – (i) a copy thereof certified by a notary public to be a true copy; and (ii) an affidavit made as specified in Schedule I hereto.",
+      "why_relevant": "Registration is compulsory and time-limited. Wimala's power of attorney will be executed outside Sri Lanka, so her attorney must lodge it with the Registrar-General within three months of execution, with a notarially certified copy and the Schedule I affidavit. This also creates the register the attesting notary must search.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 3 was replaced by the Powers of Attorney (Amendment) Act No. 28 of 2022; the replacement text is the law at 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-011",
+      "section_id": "4-1902/s3C",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3C",
+      "subsection": null,
+      "relevant_excerpt": "A power of attorney other than a power of attorney executed by a State institution shall be valid, only for a period of five years from the date of execution, unless the period of validity of such power of attorney is specified in such power of attorney or until such power of attorney is revoked or cancelled in accordance with the provisions of section 4.",
+      "why_relevant": "Practical advice point: the authorisation Wimala grants will lapse five years from execution unless it states its own period, so the deed must be executed while it is still current.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 28 of 2022; in force before 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-012",
+      "section_id": "4-1902/s3B",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3B",
+      "subsection": "(1)",
+      "relevant_excerpt": "Every notary public who attests a deed or instrument in terms of the Notaries Ordinance in respect of a transaction referred to in section 3A of this Act, shall – (a) examine the relevant volumes and folios in the Registrar General's department; (b) be satisfied that the power of attorney has not been revoked or cancelled and shall state such fact in his attestation",
+      "why_relevant": "Explains what the notary in Galle must do before attesting a deed signed by Wimala's attorney, and why the power of attorney must be registered first - the notary has to be able to find it and certify in the attestation that it is unrevoked.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 28 of 2022; in force before 2025-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-013",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (16)(c)",
+      "relevant_excerpt": "where a deed or instrument is signed by an attorney, such attorney shall submit to the notary an affidavit affirming that the Power of Attorney is genuine and in force and the grantor is alive when executing such deed or instrument;",
+      "why_relevant": "A further condition on the attorney route: the person signing for Wimala must give the notary an affidavit that the power is genuine, in force, and that Wimala is alive at the date of the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "This rule was inserted into section 31 by the Notaries (Amendment) Act No. 31 of 2022 and section 31 was further amended by the Notaries (Amendment) Act No. 6 of 2024; both precede 2025-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim, but the label \"rule (16)(c)\" is wrong: Notaries (Amendment) Act No. 6 of 2024 s.3(5) refers to this block as \"rule (15A)\", so the citation is Notaries Ordinance s.31, rule (15A)(c)."
+    },
+    {
+      "provision_id": "PROV-M013-014",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (30)",
+      "relevant_excerpt": "If he attest any deed or instrument executed before him by means of an attorney, he shall preserve a true copy of the power of attorney with his protocol, and shall forward a like copy with the duplicate to the Registrar of Lands.",
+      "why_relevant": "Completes the paper trail: the notary keeps a true copy of the power of attorney with the protocol and sends a copy with the duplicate to the Land Registry, so Wimala should expect to supply an additional certified copy.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Long-standing rule in section 31; not affected by the 2022 or 2024 amendments in a way the corpus records.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-015",
+      "section_id": "38-2014/s2",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "Notwithstanding any provision to the contrary in any other written law, the transfer of title of any land situated in Sri Lanka, shall be prohibited if such transfer is- (a) to a foreigner;",
+      "why_relevant": "Background. A purchaser who is living abroad raises the question whether the transfer is prohibited at all. Because Wimala is a Sri Lankan citizen, the prohibition does not bite and the advice can rest on the execution formalities alone; the provision is recorded so the verifier can see the point was considered rather than missed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2014; unaffected by any amendment recorded in the corpus for this section.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M013-901",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (8)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument to which at least two witnesses have not subscribed their signatures in letters.",
+      "why_relevant": "Added by the verifier. The map and the gold answer both say the attorney must sign before the notary and \"the two witnesses\", but Prevention of Frauds Ordinance s.2(1)(a) as substituted in 2024 speaks only of \"the witnesses\" and fixes no number. Rule (8) of Notaries Ordinance s.31 is the provision that supplies the minimum of two witnesses.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (8) of section 31 stands in the consolidated text at 2025-10; the corpus records no amendment to this rule by Act No. 31 of 2022 or Act No. 6 of 2024. Excerpt checked verbatim against 1-1907/s31.",
+      "verification_status": "verified",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M013-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks how a purchaser who cannot attend to sign a transfer deed should proceed under the latest amendments to the Prevention of Frauds Ordinance. Both the problem and its solution are wholly statutory: section 2(2) of the Ordinance, as inserted by Act No. 4 of 2024, states the requirement that the transferee sign and gives the written-authorisation escape; the Powers of Attorney Ordinance as amended in 2022 and 2024 states how that authorisation must be executed abroad, what it must contain and when it must be registered; and the Notaries Ordinance states the attesting notary's duties. No judicial authority or Roman-Dutch doctrine is needed to reach a complete answer.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M013-Q01-01",
+          "issue": "Whether, after the Prevention of Frauds (Amendment) Act No. 4 of 2024, a transferee (purchaser) must herself sign and place a thumb impression on the deed of transfer.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M013-Q01-02",
+          "issue": "What a transferee who is unable to be present in Sri Lanka must do so that the deed of transfer is nevertheless in force and avails in law.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M013-Q01-03",
+          "issue": "How a written authorisation granted from abroad for such a transaction must be executed, what it must contain, and whether and when it must be registered.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M013-Q01-04",
+          "issue": "What the attesting notary must verify and record when a deed of transfer is signed by an authorised person rather than by the transferee.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M013-001",
+        "PROV-M013-002",
+        "PROV-M013-003",
+        "PROV-M013-006",
+        "PROV-M013-007",
+        "PROV-M013-008",
+        "PROV-M013-010"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M013-004",
+        "PROV-M013-009",
+        "PROV-M013-011",
+        "PROV-M013-012",
+        "PROV-M013-013",
+        "PROV-M013-014",
+        "PROV-M013-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M013-005",
+        "PROV-M013-015"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four necessary linked steps across two enactments: (1) the transaction falls within Prevention of Frauds Ordinance s.2(1); (2) s.2(2), inserted by Act No. 4 of 2024, requires the transferee to sign and, if she cannot be present, to authorise another in writing; (3) that authorisation is a power of attorney, which - being for a s.2 transaction and executed outside Sri Lanka - must satisfy Powers of Attorney Ordinance s.3A(1) and (3) read with the definition in s.2(b); (4) it must then be registered with the Registrar-General under s.3 within three months before the attorney can safely execute the deed.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M013-002",
+          "to_provision_id": "PROV-M013-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M013-001",
+          "to_provision_id": "PROV-M013-003",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M013-004",
+          "to_provision_id": "PROV-M013-001",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M013-005",
+          "to_provision_id": "PROV-M013-002",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M013-007",
+          "to_provision_id": "PROV-M013-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M013-007",
+          "to_provision_id": "PROV-M013-008",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M013-008",
+          "to_provision_id": "PROV-M013-006",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M013-008",
+          "to_provision_id": "PROV-M013-009",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M013-007",
+          "to_provision_id": "PROV-M013-010",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M013-010",
+          "to_provision_id": "PROV-M013-012",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M013-001",
+          "to_provision_id": "PROV-M013-013",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M013-001",
+          "to_provision_id": "PROV-M013-014",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M013-007",
+          "to_provision_id": "PROV-M013-011",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M013-003",
+          "to_provision_id": "PROV-M013-901",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Wimala intends to purchase a land in Galle. However, Wimala is unable to come to Sri Lanka to sign the Deed of Transfer.",
+        "enriched_background": "Wimala Gunasekara is a citizen of Sri Lanka who holds a Sri Lankan passport and has lived and worked in Melbourne, Australia for the past nine years. She has agreed to buy from Nihal Weerakoon an allotment of land called Kahatagahawatta, in extent eighteen decimal five perches, situated at Dangedara in the Municipal Council limits of Galle, in the District of Galle, bounded on the North by Lot 3 in Plan No. 2114, on the East by the property of D. Somapala, on the South by Dangedara Road and on the West by a drain, the whole of which was last registered in Volume 214 Folio 85 of the Galle Land Registry. The agreed price is Rs. 14,500,000, and the parties have fixed the first week of December 2025 for the execution of the deed. Wimala's employment contract does not allow her to take leave before March 2026, so she cannot be in Sri Lanka on the execution date. Her brother, Sunil Gunasekara, who lives at Dangedara, Galle, is willing to act for her. On 12 November 2025 Wimala proposes to sign, at the Sri Lanka High Commission in Canberra and before a consular officer there, a written instrument appointing Sunil to act for her in the purchase. She has asked a notary practising in Galle what she must do so that the deed she cannot sign will still be good in law.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M013-Q01-001",
+            "fact": "Wimala Gunasekara is a citizen of Sri Lanka holding a Sri Lankan passport, resident and employed in Melbourne, Australia.",
+            "origin": "synthetic_neutral",
+            "reason": "The original background gives no party identity and does not say whether the absent purchaser is a foreigner. Fixing her as a Sri Lankan citizen keeps the answer on the execution formalities and stops the scenario collapsing into a prohibited-transfer question.",
+            "activates_provision_ids": [
+              "PROV-M013-015"
+            ],
+            "counterfactual_effect": "If Wimala were a foreigner, the transfer of title would be prohibited under Land (Restrictions on Alienation) Act s.2(1)(a) unless an exemption applied, and the advice would be that no amount of correct execution can save the deed.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M013-Q01-002",
+            "fact": "The property is an allotment called Kahatagahawatta, eighteen decimal five perches in extent, at Dangedara within the Galle Municipal Council limits, with stated boundaries on all four sides, last registered in Volume 214 Folio 85 of the Galle Land Registry.",
+            "origin": "synthetic_neutral",
+            "reason": "The original says only 'a land in Galle'. A metes-and-bounds description and a prior registration reference are conditions the written authorisation must satisfy, so without them it cannot be tested against the statute.",
+            "activates_provision_ids": [
+              "PROV-M013-008",
+              "PROV-M013-009"
+            ],
+            "counterfactual_effect": "Without an identified land and volume and folio, the instrument would fail Powers of Attorney Ordinance s.3A(3)(b) and (d) and the notary could not act on it.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M013-Q01-003",
+            "fact": "Wimala's brother, Sunil Gunasekara, of Dangedara, Galle, is willing to act for her in the purchase, and she proposes to appoint him in writing.",
+            "origin": "synthetic_decisive",
+            "reason": "Section 2(2) of the Prevention of Frauds Ordinance requires the absent transferee to authorise 'any other person' in writing. The scenario is indeterminate until there is a person available in Sri Lanka to be authorised.",
+            "activates_provision_ids": [
+              "PROV-M013-001",
+              "PROV-M013-003"
+            ],
+            "counterfactual_effect": "If nobody could be authorised, Wimala would have no way of completing the purchase in her absence and the deed could not be validly executed at all.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M013-Q01-004",
+            "fact": "Wimala proposes to sign the instrument of authority on 12 November 2025 at the Sri Lanka High Commission in Canberra, before a consular officer there.",
+            "origin": "synthetic_decisive",
+            "reason": "The place and the attesting officer are what determine which limb of the Powers of Attorney Ordinance applies. Signing abroad before a consular officer engages s.2(b) and s.3A(3) rather than the domestic notarial route.",
+            "activates_provision_ids": [
+              "PROV-M013-006",
+              "PROV-M013-008",
+              "PROV-M013-010"
+            ],
+            "counterfactual_effect": "If she signed abroad before an ordinary local witness with no authority to attest under the law of that country or under s.2(b), the instrument would not be a power of attorney for the purposes of the Ordinance and the deed signed on its strength would not avail in law.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M013-Q01-005",
+            "fact": "The deed of transfer is to be executed in Galle in the first week of December 2025, and the agreed price is Rs. 14,500,000 payable by the purchaser.",
+            "origin": "synthetic_neutral",
+            "reason": "Dates are needed to test the registration window that runs from the date of execution of the authority, and to show the authority is still current when the deed is signed.",
+            "activates_provision_ids": [
+              "PROV-M013-010",
+              "PROV-M013-011"
+            ],
+            "counterfactual_effect": "If the deed were executed more than three months after the authority without it having been lodged for registration, or after the authority had lapsed, the attorney's signature would be open to challenge.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M013-Q01-006",
+            "fact": "The vendor is Nihal Weerakoon, who is in Sri Lanka and able to attend before the notary.",
+            "origin": "synthetic_neutral",
+            "reason": "Section 2(2)(a) now requires signatures and thumb impressions from both transferor and transferee. Naming an available vendor confines the difficulty to the transferee's side.",
+            "activates_provision_ids": [
+              "PROV-M013-001"
+            ],
+            "counterfactual_effect": "If the vendor were also absent, the same written-authorisation requirement would have to be satisfied for him, since the proviso in s.2(2)(a) is expressed only for the transferee.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Wimala is the purchaser, and therefore the transferee, under a proposed deed of transfer of land at Galle. She cannot be in Sri Lanka when the deed is executed. The issues are whether a transferee must now sign the deed at all, what she must do if she cannot be present, how the instrument by which she authorises another person must be executed abroad and what it must contain, whether that instrument must be registered, and what the attesting notary must satisfy himself of.",
+        "rule": "Prevention of Frauds Ordinance s.2(1) requires that no sale, purchase or transfer of immovable property is in force or avails in law unless the deed is in writing, signed by every executant or by any person duly authorised by such executant and by the witnesses in the presence of a licensed notary public, all present at the same time and in the presence of one another, and attested by that notary, and unless the thumb impression of every executant is affixed beside the signature on the original, duplicate and protocol in the presence of the notary and the witnesses. Section 2(2), added by the Prevention of Frauds (Amendment) Act No. 4 of 2024, provides that in relation to a transfer deed both the transferor and the transferee must affix their signatures and thumb impressions as required by subsection (1), but that where the transferee is unable to be present and execute the deed she shall authorise in writing any other person to sign on her behalf, that person complying with the requirements of subsection (1). Where such an authorisation is granted for a transaction within s.2 of the Prevention of Frauds Ordinance, Powers of Attorney Ordinance s.3A(1) requires it to be executed subject to s.3A(2) or (3). If it is executed outside Sri Lanka, s.3A(3) requires that it be executed before a person authorised under s.2 of that Ordinance, that it describe the land by metes and bounds and extent, that it refer to the volume and folio of any prior registration, and that it be accompanied by a copy of the bio page of the grantor's passport signed by the grantor and by notarially certified identity documents of the attorney. Powers of Attorney Ordinance s.2 defines a power of attorney executed outside Sri Lanka as one executed before an Ambassador, a High Commissioner, a Diplomatic Officer or a Consular Officer within the meaning of the Consular Functions Act, or a person authorised to attest such an instrument under the law of that country. Section 3 requires every power of attorney to be registered with the Registrar-General, the holder submitting it within three months of execution where it was executed outside Sri Lanka, with a notarially certified copy and the affidavit in Schedule I. Section 3C limits validity to five years from execution unless the instrument states its own period or it is earlier revoked. Section 3B requires the notary attesting the deed to examine the relevant volumes and folios at the Registrar-General's department, to satisfy himself that the power has not been revoked or cancelled and to state that in his attestation. Notaries Ordinance s.31, rule (16)(c), requires the attorney signing a deed to give the notary an affidavit that the power of attorney is genuine and in force and that the grantor is alive at execution, and rule (30) requires the notary to keep a true copy of the power with his protocol and to forward a copy with the duplicate to the Registrar of Lands.",
+        "application": "Wimala's purchase of the Galle land is a purchase and transfer of immovable property and so falls squarely within Prevention of Frauds Ordinance s.2(1). Since the 2024 amendment she cannot simply leave the deed to the vendor: s.2(2)(a) makes her, as transferee, a signatory who must also place a thumb impression, and the vendor Nihal Weerakoon, being in Sri Lanka, can attend and comply for his part. Because her employment prevents her from travelling before March 2026, she is a transferee 'unable to be present and execute the deed' and the proviso to s.2(2)(a) applies: she must authorise her brother Sunil in writing to sign for her, and it will be Sunil who signs, gives his thumb impression and appears before the notary and the two witnesses as s.2(1) requires. That written authority is a power of attorney granted for a s.2 transaction, so s.3A(1) of the Powers of Attorney Ordinance applies, and because she will sign it in Canberra, s.3A(3) governs. Signing at the Sri Lanka High Commission before a consular officer satisfies s.3A(3)(a) read with s.2(b). The instrument must set out Kahatagahawatta by its four boundaries and its extent of eighteen decimal five perches, must refer to Volume 214 Folio 85 of the Galle Land Registry as the prior registration, and must be accompanied by the bio page of her passport signed by her and by a notarially certified copy of Sunil's identity document. Once executed on 12 November 2025 it must be lodged by Sunil with the Registrar-General within three months, that is by 12 February 2026, together with a certified true copy and the Schedule I affidavit; since the deed is to be executed in the first week of December 2025 the authority should in practice be registered before then, because the notary must be able to examine the volumes and folios and certify under s.3B that it has not been revoked. The authority will still be current at that date, being well within the five-year period allowed by s.3C. At execution Sunil must give the notary the affidavit required by Notaries Ordinance s.31 rule (16)(c) confirming that the power is genuine and in force and that Wimala is alive, and the notary will keep a true copy of the power with his protocol and send a copy with the duplicate to the Registrar of Lands under rule (30). Wimala being a citizen of Sri Lanka, nothing in Land (Restrictions on Alienation) Act s.2(1) stands in the way of the transfer.",
+        "conclusion": "Wimala can complete the purchase without travelling. She should execute, before a consular officer at the Sri Lanka High Commission in Canberra, a written power of attorney appointing her brother Sunil to sign the deed of transfer for her, drawn so as to describe the Galle land by metes and bounds and extent and to refer to Volume 214 Folio 85, and accompanied by her signed passport bio page and Sunil's certified identity document. Sunil must register it with the Registrar-General within three months of execution, and in practice before the deed is executed, and must then sign the deed, affix his thumb impression and appear with the two witnesses before the notary, giving the notary the affidavit that the power is genuine, in force and that Wimala is alive. A deed executed in that way is in force and avails in law under Prevention of Frauds Ordinance s.2 as amended by Act No. 4 of 2024. If instead she simply stays away and lets the vendor alone sign, the deed will not satisfy s.2(2)(a) and will not avail in law. The precise date of operation of the 2024 amendment should be confirmed before the advice is acted on."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M013-Q01-001",
+          "claim_text": "A purchase or transfer of immovable property is not in force and does not avail in law unless the deed is in writing, signed by every executant or by a person duly authorised by the executant and by the witnesses before a licensed notary all present together, attested by that notary, and bearing the thumb impression of every executant on the original, duplicate and protocol.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M013-002",
+            "PROV-M013-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-002",
+          "claim_text": "Since the Prevention of Frauds (Amendment) Act No. 4 of 2024, section 2(2)(a) requires both the transferor and the transferee of a transfer deed to affix their signatures and thumb impressions as required by section 2(1).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M013-001",
+            "PROV-M013-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-003",
+          "claim_text": "Where the transferee is unable to be present and execute the deed, she must authorise another person in writing to sign on her behalf, and that person must comply with the requirements of section 2(1).",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M013-001",
+            "PROV-M013-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-004",
+          "claim_text": "A power of attorney granted for a transaction within section 2 of the Prevention of Frauds Ordinance must be executed subject to section 3A(2) or (3) of the Powers of Attorney Ordinance, according to whether it is executed in or outside Sri Lanka.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M013-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-005",
+          "claim_text": "A power of attorney executed outside Sri Lanka must be executed before an Ambassador, High Commissioner, Diplomatic Officer or Consular Officer, or a person authorised to attest it under the law of that country.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M013-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-006",
+          "claim_text": "Such a power of attorney executed outside Sri Lanka must describe the land by metes and bounds and extent, refer to the volume and folio of any prior registration, and be accompanied by the grantor's signed passport bio page and notarially certified identity documents of the attorney.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M013-008",
+            "PROV-M013-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-007",
+          "claim_text": "Every power of attorney must be registered with the Registrar-General, and one executed outside Sri Lanka must be submitted for registration within three months of execution with a notarially certified copy and the affidavit in Schedule I.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M013-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-008",
+          "claim_text": "The notary attesting the deed must examine the relevant volumes and folios at the Registrar-General's department, satisfy himself that the power of attorney has not been revoked or cancelled, and state that in his attestation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M013-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-009",
+          "claim_text": "An attorney signing a deed must give the notary an affidavit that the power of attorney is genuine and in force and that the grantor is alive at execution, and the notary must keep a true copy of the power with his protocol and forward a copy with the duplicate to the Registrar of Lands.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M013-013",
+            "PROV-M013-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-010",
+          "claim_text": "A power of attorney is valid for only five years from execution unless it states its own period or is earlier revoked or cancelled.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M013-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-011",
+          "claim_text": "Wimala's purchase of the Galle land is a purchase and transfer of immovable property within section 2(1), so the section 2 formalities govern her deed.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M013-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "FACT-M013-Q01-002"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-012",
+          "claim_text": "As transferee Wimala is now required to sign and place her thumb impression on the deed, and because her employment prevents her from travelling before March 2026 she is a transferee unable to be present within the proviso to section 2(2)(a).",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M013-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "FACT-M013-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-013",
+          "claim_text": "Wimala must therefore authorise her brother Sunil in writing to sign the deed for her, and it is Sunil who must sign, give his thumb impression and appear before the notary and the two witnesses.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M013-001",
+            "PROV-M013-003",
+            "PROV-M013-901"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M013-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-014",
+          "claim_text": "Signing the instrument at the Sri Lanka High Commission in Canberra before a consular officer satisfies the requirement of execution before an authorised person for a power of attorney executed outside Sri Lanka.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M013-006",
+            "PROV-M013-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M013-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-015",
+          "claim_text": "The instrument must set out Kahatagahawatta by its four boundaries and its extent of eighteen decimal five perches and refer to Volume 214 Folio 85 of the Galle Land Registry, and be accompanied by Wimala's signed passport bio page and a certified copy of Sunil's identity document.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M013-008",
+            "PROV-M013-009"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M013-Q01-002",
+            "FACT-M013-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-016",
+          "claim_text": "Executed on 12 November 2025, the instrument must be lodged with the Registrar-General by 12 February 2026, and in practice before the deed is executed in the first week of December 2025 so that the notary can examine the volumes and folios and certify that it is unrevoked; it remains within the five-year validity period at that date.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M013-010",
+            "PROV-M013-011",
+            "PROV-M013-012"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M013-Q01-004",
+            "FACT-M013-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-017",
+          "claim_text": "Wimala being a citizen of Sri Lanka, the prohibition on transfers of land to a foreigner does not apply to this purchase.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M013-015"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M013-Q01-001"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-018",
+          "claim_text": "A deed of transfer signed by Sunil under a power of attorney executed and registered as described, with the affidavit given to the notary, is in force and avails in law under section 2 of the Prevention of Frauds Ordinance as amended by Act No. 4 of 2024.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M013-001",
+            "PROV-M013-003",
+            "PROV-M013-008",
+            "PROV-M013-010",
+            "PROV-M013-013"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M013-Q01-003",
+            "FACT-M013-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M013-Q01-019",
+          "claim_text": "If Wimala neither attends nor authorises anyone in writing and the vendor alone signs, the deed will not satisfy section 2(2)(a) and will not avail in law.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M013-001",
+            "PROV-M013-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "benchmark_matter_id": "M030",
+  "source_matter_id": "P04-Q09-M01",
+  "grouping_key": "P04-Q09-M01",
+  "paper_no": 4,
+  "question_no": 9,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "A foreigner wishes to purchase a land in Sri Lanka for his Apartment business. You have been retained by him as his Attorney-at-Law and Notary.",
+    "normalized": "A foreigner wishes to purchase a land in Sri Lanka for his Apartment business. You have been retained by him as his Attorney-at-Law and Notary.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P04-Q09-P01"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M030-Q01",
+      "atomic_id": "P04-Q09-P01",
+      "part_uid": "paper-04/q9/1",
+      "part_id": "1",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 17,
+      "question_original": "How would you advise him?",
+      "question_normalized": "How would you advise him?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "A foreigner wishes to purchase a land in Sri Lanka for his Apartment business. You have been retained by him as his Attorney-at-Law and Notary.",
+      "effective_background_normalized": "A foreigner wishes to purchase a land in Sri Lanka for his Apartment business. You have been retained by him as his Attorney-at-Law and Notary.",
+      "source_quote": "(1) A foreigner wishes to purchase a land in Sri Lanka for his Apartment business. You\nhave been retained by him as his Attorney-at-Law and Notary. How would you\nadvise him?",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "party_legal_capacity",
+        "property_identity",
+        "property_location",
+        "consideration_or_value",
+        "applicable_time"
+      ]
+    }
+  ],
+  "matter_reference_date": "2024-10",
+  "exam_session": "OCTOBER 2024",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

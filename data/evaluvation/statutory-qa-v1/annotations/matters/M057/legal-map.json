@@ -1,0 +1,328 @@
+{
+  "benchmark_matter_id": "M057",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M057",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:39:16Z",
+    "verification_agent": "verifier-M057",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:47:58Z"
+  },
+  "matter_reference_date": "2021-10",
+  "matter_reference_date_basis": "exam_session OCTOBER 2021 recorded in candidates/matters/M057.json",
+  "corpus_gaps": [
+    "The corpus text of Notaries Ordinance s.27 is the consolidated version carrying the substitution made by Notaries (Amendment) Act No. 31 of 2022 s.14 (\"March\" -> \"April\" in subsection (2)). At the matter date (2021-10) the deadline read the first day of March. The excerpt recorded for PROV-M057-002 therefore reproduces the post-matter wording of that one word; the corpus holds no as-at-2021 snapshot of s.27.",
+    "Prevention of Frauds Ordinance s.2 is likewise only held in a consolidated form carrying later amendments (Act No. 30 of 2022 and Act No. 4 of 2024). Only the long-standing carve-out for leases not exceeding one month is relied on, but no as-at-2021 text of s.2 is in the corpus.",
+    "The corpus contains no rules, regulations or Registrar-General circulars made under the Notaries Ordinance, so any administrative consequence of a lapsed yearly certificate beyond the Ordinance itself cannot be checked here.",
+    "Whether the lease itself remains valid despite the notary's want of a yearly certificate is not resolved by any provision in the corpus (s.33 saves only breaches of the form rules in s.31); that point would need judicial authority and is deliberately left out of the gold answer."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M057-001",
+      "section_id": "1-1907/s30",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "30",
+      "subsection": null,
+      "relevant_excerpt": "If any person shall act as a notary without having obtained such certificate as aforesaid, he shall for or in respect of every deed executed or acknowledged before him as such notary, whilst he shall have been without such certificate, be guilty of an offence and be liable to a fine not less than five thousand rupees and not exceeding twenty five thousand rupees.",
+      "why_relevant": "This is the operative penal provision. It makes acting as a notary without the yearly certificate an offence, and it makes the offence bite in respect of every deed executed or acknowledged before the notary while he was uncertificated, which is exactly the lease Kamal Ratnayake attested.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907. The only recorded change is the fine increase by the Increase of Fines Act No. 12 of 2005, which is in force well before 2021-10; the Rs. 5,000 to Rs. 25,000 range therefore applies at the matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording verified verbatim against 1-1907/s30 and the Rs. 5,000-25,000 range does apply at 2021-10, but the temporal note misattributes the increase: Increase of Fines Act No. 12 of 2005 s.5 is the Sinhala-text clause, the operative amending provision being s.2 read with the Schedules; s.30 carries no post-2021 amendment event, so the corpus text is the as-at-matter-date text."
+    },
+    {
+      "provision_id": "PROV-M057-002",
+      "section_id": "1-1907/s27",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "27",
+      "subsection": "2",
+      "relevant_excerpt": "All such certificates shall be applied for and granted on or before the first day of April in every year, and shall be in force for one year and no longer: Provided, however, that if such certificate shall not be applied for within the time limited, and it shall be shown to the satisfaction of the High Court Judge that the delay was due to accident, misfortune or other unavoidable cause, the High Court Judge may direct the Registrar to issue the required certificate notwithstanding such delay as aforesaid.",
+      "why_relevant": "Section 30 punishes acting without \"such certificate as aforesaid\"; s.27 is what that phrase refers to. It creates the yearly certificate issued by the Registrar of the High Court of the zone, fixes the annual application deadline, limits the certificate to one year, and supplies the only statutory relief for a notary who missed the deadline through accident, misfortune or other unavoidable cause.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907. Subsection (3) was substituted by Notaries (Amendment) Act No. 13 of 2013 s.2 (before the matter date). Subsection (2) was later amended by Notaries (Amendment) Act No. 31 of 2022 s.14, which substituted \"April\" for \"March\"; that change post-dates 2021-10, so at the matter date the deadline was the first day of March. The excerpt is taken from the consolidated corpus text and so shows \"April\". Nothing in the answer turns on which month it was: the notary obtained no certificate at all for the year.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verified verbatim, but it reproduces the post-matter wording: 31-2022 s.14 substituted \"April\" for \"March\" in subsection (2), so at 2021-10 the deadline read the first day of March, and the corpus holds no as-at-2021 snapshot; the excerpt also covers subsection (2) only, while claim CL-M057-Q01-001 additionally rests on the subsection (1) duty of the Registrar of the High Court to issue the certificate."
+    },
+    {
+      "provision_id": "PROV-M057-003",
+      "section_id": "1-1907/s35",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "35",
+      "subsection": "1",
+      "relevant_excerpt": "the Registrar-General may, if he thinks fit, instead of instituting criminal proceedings against such notary, accept from him such sum of money as he may consider proper in composition of the offence",
+      "why_relevant": "Section 35(1) names s.30 among the compoundable offences, so the liability is not necessarily a prosecution: the Registrar-General may accept a sum in composition, after which criminal proceedings shall not be taken or continued. It qualifies how the s.30 liability may be discharged.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907 with no recorded amendment events, so the text applies unchanged at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M057-004",
+      "section_id": "1-1907/s21",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "21",
+      "subsection": "2",
+      "relevant_excerpt": "Where the report is to the effect that the notary has been guilty of any such offence or misconduct as is mentioned in clauses (a), (b), (c), or (d) of the last preceding subsection, the Minister may cancel the warrant of such notary, or may suspend him from office for such period as may appear just.",
+      "why_relevant": "Beyond the fine, an offence committed in the capacity of a notary opens the disciplinary route: on a report by the High Court Judge after inquiry under s.21(1), the Minister may cancel the warrant or suspend the notary. This is a possible further liability, not an automatic one, so it is supporting rather than indispensable.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907. Notaries (Amendment) Act No. 31 of 2022 s.11 substituted parts of the section after the matter date; the subsection (2) power to cancel or suspend relied on here is long-standing, but a verifier should confirm the 2022 substitution did not touch the quoted words before treating the excerpt as the as-at-2021 text. Marked supporting for that reason.",
+      "verification_status": "verified",
+      "verifier_note": "Verifier resolved the researcher's open point: 31-2022 s.11 amends only s.21(1)(e) (\"incompetence, age\" to \"incompetence\") and s.21(4) (fine), so the quoted subsection (2) is unchanged as-at-2021 text; the supporting rather than indispensable role is nonetheless correct, since s.21(2) bites only on a High Court Judge's report under s.21(1)."
+    },
+    {
+      "provision_id": "PROV-M057-005",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance No. 7 of 1840",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "1",
+      "relevant_excerpt": "no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month)",
+      "why_relevant": "A lease of a commercial building for four years falls outside the carve-out for leases at will or for periods not exceeding one month, so it had to be executed before and attested by a notary. That is why Kamal Ratnayake was acting in his capacity as a notary when he attested it, which is the condition s.30 attaches its per-deed penalty to.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The requirement of notarial execution for leases exceeding one month dates from 1840. The corpus text is consolidated and carries amendments by Act No. 30 of 2022 and Act No. 4 of 2024, both after the matter date; only the carve-out wording, which predates them, is relied on. Kept supporting rather than indispensable for that reason.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verified verbatim and the carve-out survives untouched at the matter date (30-2022 s.2 repealed only the words from \"shall be of force\" onward; 4-2024 s.2 edited paragraphs (a) and (b)), but the recorded subsection \"1\" is anachronistic: the renumbering of s.2 as subsection (1) was made by 4-2024 s.2, so at 2021-10 s.2 was undivided."
+    },
+    {
+      "provision_id": "PROV-M057-006",
+      "section_id": "1-1907/s13",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "If any person shall practice or act as or exercise the office or functions of a notary without having obtained such warrant as aforesaid, or without having made and signed such declaration and given such bond as aforesaid, or without having filed an attested copy of his warrant, every such person shall be guilty of an offence",
+      "why_relevant": "Recorded to mark the boundary of the answer. Section 13 is the heavier offence of practising without a warrant, declaration, bond or filed copy of the warrant. Kamal Ratnayake holds a warrant and is missing only the yearly certificate, so s.13 does not apply and s.30 is the correct penal provision. Context only.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907; fine increased by Act No. 12 of 2005 and the section substituted in part by Act No. 31 of 2022 after the matter date. Nothing turns on the text because the section is recorded only as an excluded alternative.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt verified verbatim against the consolidated text but is post-matter wording: 31-2022 s.4 substituted \"given such bond\" for \"given such bond and security\", so at 2021-10 s.13 read \"given such bond and security as aforesaid\"; nothing turns on it because s.13 is recorded only as an excluded alternative."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M057-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks what liabilities the notary incurs for attesting a deed while he had not obtained the yearly certificate. The Notaries Ordinance answers that directly and exhaustively: s.27 creates the yearly certificate, s.30 makes acting without it an offence in respect of every deed and fixes the fine, s.35 allows composition, and s.21 supplies the disciplinary consequence. No judicial authority or Roman-Dutch doctrine is needed to state the liability. Case law would only be needed for the separate question, not asked here, of whether the lease itself is affected.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M057-Q01-01",
+          "issue": "Whether a notary who attests a deed during a year for which he has not obtained the certificate issued yearly by the Registrar of the High Court commits an offence, and what penalty attaches.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M057-Q01-02",
+          "issue": "Whether the penalty runs per deed attested while uncertificated, and whether the offence can be compounded instead of prosecuted.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M057-Q01-03",
+          "issue": "Whether any relief remains open to the notary for the missed certificate, and what further professional consequence the lapse may carry.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M057-001",
+        "PROV-M057-002"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M057-003",
+        "PROV-M057-004",
+        "PROV-M057-005"
+      ],
+      "background_provision_ids": [
+        "PROV-M057-006"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Two necessary steps: s.30 creates the offence, but its words \"such certificate as aforesaid\" only have content through s.27, which creates the yearly certificate and its one-year currency. Removing either leaves the liability unstated. The remaining provisions add or bound consequences without being required to reach the conclusion.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M057-001",
+          "to_provision_id": "PROV-M057-002",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M057-003",
+          "to_provision_id": "PROV-M057-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M057-004",
+          "to_provision_id": "PROV-M057-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M057-005",
+          "to_provision_id": "PROV-M057-001",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kamal Rathnayaka is a Notary practicing in Galle. Sudath Gunawardana is a neighbour of Kamal Ratnayake and the owner of a commercial building in Colombo. He is an illiterate individual. Sudath wishes to lease out his commercial building for 4 years at a monthly rental of Rs. 60,000/- and Kapila Warnakulasooriya is ready to take on lease in accordance with the said terms.\n\nAfter the execution of the Lease Agreement, the Notary Kamal Ratnayake remembered that he could not obtain the Yearly Certificate from the Registrar of High Court for the current year.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What liability does Kamal Ratnayake incur for having attested the four-year lease of Sudath Gunawardana's commercial building at a time when he had not obtained, for the current year, the certificate issued to notaries by the Registrar of the High Court?",
+        "rule": "Notaries Ordinance s.27 requires every notary to apply for and obtain from the Registrar of the High Court of his zone a certificate that he is a notary duly authorised to practise there. Such certificates must be applied for and granted on or before the annual date fixed by s.27(2) and are in force for one year and no longer, so a fresh certificate is needed each year. Where the application was not made within the time limited, s.27(2) allows the High Court Judge, if satisfied that the delay was due to accident, misfortune or other unavoidable cause, to direct the Registrar to issue the certificate notwithstanding the delay. Section 30 provides that any person who acts as a notary without having obtained such certificate is guilty of an offence in respect of every deed executed or acknowledged before him as such notary while he was without the certificate, and is liable to a fine of not less than Rs. 5,000 and not exceeding Rs. 25,000. Under s.35(1) the offence under s.30 is compoundable: the Registrar-General may, instead of instituting criminal proceedings, accept such sum as he considers proper in composition, after which criminal proceedings shall not be taken or continued. Separately, where the High Court Judge reports after inquiry under s.21 that a notary has been guilty of an offence rendering him unfit, or of gross misconduct in the discharge of his duties, s.21(2) empowers the Minister to cancel his warrant or suspend him from office. Section 13, the offence of practising without a warrant, declaration, bond or filed copy of the warrant, is a different matter and is not engaged where the notary holds a warrant.",
+        "application": "The lease is of a commercial building for four years, well outside the Prevention of Frauds Ordinance s.2 exception for a lease at will or for a period not exceeding one month, so it had to be executed before and attested by a notary; Kamal Ratnayake was accordingly acting in his capacity as a notary when he attested it. On his own recollection he had not obtained the yearly certificate under s.27 for the current year, and a certificate for an earlier year would in any event have expired, being in force for one year and no longer. He therefore acted as a notary without having obtained such certificate, and the lease is a deed executed before him as such notary while he was uncertificated, which is precisely what s.30 penalises. The penalty attaches in respect of every such deed, so the lease attracts one offence and any other deed he attested during the uncertificated period attracts its own. Whether the Registrar-General prosecutes or instead accepts a sum in composition under s.35(1) is a matter for the Registrar-General's discretion. If Kamal Ratnayake can show that his failure to apply in time was due to accident, misfortune or other unavoidable cause he may still ask the High Court Judge under the proviso to s.27(2) to direct the Registrar to issue the certificate, but that relief goes to obtaining the certificate late and does not undo an offence already committed by attesting while uncertificated. On the facts given, mere forgetfulness is not stated to be accident, misfortune or unavoidable cause, so the availability of that relief is open.",
+        "conclusion": "Kamal Ratnayake is guilty of an offence under s.30 of the Notaries Ordinance in respect of the lease he attested while without the yearly certificate required by s.27, and is liable to a fine of not less than Rs. 5,000 and not exceeding Rs. 25,000 for that deed, with a further such liability for each other deed attested during the uncertificated period. The Registrar-General may compound the offence under s.35(1) instead of prosecuting. He may apply under the proviso to s.27(2) for the certificate to be issued despite his delay if the delay was due to accident, misfortune or other unavoidable cause. He also stands exposed, on a s.21 inquiry and report, to cancellation of his warrant or suspension from office by the Minister. He is not liable under s.13, which addresses practising without a warrant."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M057-Q01-001",
+          "claim_text": "Every notary must obtain from the Registrar of the High Court a yearly certificate, applied for and granted by the annual date fixed by s.27(2), which is in force for one year and no longer.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M057-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M057-Q01-002",
+          "claim_text": "A person who acts as a notary without having obtained that certificate is guilty of an offence in respect of every deed executed or acknowledged before him as such notary while he was without it, and is liable to a fine of not less than Rs. 5,000 and not exceeding Rs. 25,000.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M057-001",
+            "PROV-M057-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M057-Q01-003",
+          "claim_text": "The Registrar-General may, instead of instituting criminal proceedings for an offence under s.30, accept a sum in composition, after which criminal proceedings shall not be taken or continued.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M057-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M057-Q01-004",
+          "claim_text": "Where the High Court Judge reports after inquiry that a notary has been guilty of an offence or misconduct within s.21(1)(a) to (d), the Minister may cancel his warrant or suspend him from office.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M057-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M057-Q01-005",
+          "claim_text": "A lease of immovable property for four years is not within the exception for a lease at will or for a period not exceeding one month, so it had to be executed before and attested by a notary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M057-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M057-Q01-006",
+          "claim_text": "Kamal Ratnayake attested the four-year lease in his capacity as a notary at a time when he had not obtained the yearly certificate for the current year.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M057-002",
+            "PROV-M057-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M057-Q01-007",
+          "claim_text": "The lease is therefore a deed executed before him as a notary while he was without the certificate, which is the conduct s.30 penalises, and the penalty runs separately in respect of each such deed.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M057-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M057-Q01-008",
+          "claim_text": "The proviso to s.27(2) may still allow him to obtain the certificate late if the delay was due to accident, misfortune or other unavoidable cause, but that relief does not undo an offence already committed by attesting while uncertificated, and the background states only that he forgot.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M057-002",
+            "PROV-M057-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M057-Q01-009",
+          "claim_text": "He is not liable under s.13, which penalises practising without a warrant, declaration, bond or filed copy of the warrant, since he holds a warrant and lacks only the yearly certificate.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M057-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M057-Q01-010",
+          "claim_text": "Kamal Ratnayake is guilty of an offence under s.30 of the Notaries Ordinance and liable to a fine of not less than Rs. 5,000 and not exceeding Rs. 25,000 in respect of the lease, with a further such liability for each other deed attested during the uncertificated period.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M057-001",
+            "PROV-M057-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M057-Q01-011",
+          "claim_text": "That liability may be discharged by composition accepted by the Registrar-General rather than by prosecution, and he additionally risks cancellation of his warrant or suspension from office by the Minister following a s.21 inquiry and report.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M057-003",
+            "PROV-M057-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "benchmark_matter_id": "M039",
+  "verifier": "verifier-M039",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-05T00:00:00Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M039-001",
+      "decision": "verified",
+      "note": "5-2017/s2 shown in full and the excerpt checked verbatim. The section says what why_relevant claims: an irrevocable deed of gift may be revoked on the ground of gross ingratitude, only on an order of a competent court, in an action by the donor against the donee. In force from 2017, no amendment events, applicable at 2023-10. Indispensable; remove it and there is no answer."
+    },
+    {
+      "provision_id": "PROV-M039-002",
+      "decision": "verified",
+      "note": "5-2017/s3 shown in full and the excerpt checked verbatim. Two cumulative limits (ten years from execution, two years from the cause of action) and a bar on the court entertaining the action. Indispensable once the enrichment fixes the dates. In force at 2023-10."
+    },
+    {
+      "provision_id": "PROV-M039-003",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim and the supporting (not indispensable) role is right, but it stops at \"an application for registration of lis pendens\" and omits section 4(1)(a) and (b), which are the words claim CL-M039-Q01-005 and the gold application actually rely on. The words \"addressed to the Registrar of Lands of the district in which the deed which is sought to be revoked is registered\" were checked verbatim against 5-2017/s4, so the claim is supported by the section even though the quoted excerpt does not carry it."
+    },
+    {
+      "provision_id": "PROV-M039-004",
+      "decision": "verified",
+      "note": "5-2017/s5 excerpt verbatim; supporting role correct. The corpus edge table confirms the cross-reference to 2-1889 (Civil Procedure Code)."
+    },
+    {
+      "provision_id": "PROV-M039-901",
+      "decision": "verified",
+      "note": "Added on verification. 5-2017/s6 interpretation, excerpt checked verbatim; recorded as a background provision with a defines edge from PROV-M039-003, matching the corpus edge 5-2017/s4 -> defines -> 5-2017/s6 for the term \"Registrar of Lands\"."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M039-901",
+      "reason": "The researcher left the interpretation section out on the ground that the answer does not turn on it. \"Registrar of Lands\" is a term the section 4(1) step turns on, and the corpus graph records an explicit defines edge from s 4 to s 6, so the definition was a genuine omission from the map. It also exposes a latent tension worth putting to the lawyer: s 6 identifies the officer by the district in which the land is situated, while s 4(1)(a) directs the application to the Registrar of the district in which the deed is registered. On these facts both are Kalutara, so the gold answer is unaffected; it is recorded as background, not as a hop."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M039-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "The statute_only call, which the researcher flagged for a second look, is sustained. Section 2 by itself answers the question asked (whether a deed reciting that it is absolute and irrevocable can be revoked, on what ground, at whose suit and by what mode), and section 3 supplies the time bar; the gold answer stops short of finding gross ingratitude and leaves that to the court, so no common-law content is load-bearing. I searched independently: acts, and grep over \"gift\", \"donation\", \"ingratitude\", \"revoke\", \"revocation of a deed\", \"Kandyan\" and \"lis pendens\". Act No. 5 of 2017 is the only route to revoking a deed of gift anywhere in the corpus and no other Act in the list supplies one. All twelve answer claims are marked verified; the dates hold (deed 12 March 2019, conduct June 2023, consultation October 2023 falls inside both the ten-year and the two-year limit). The hop count of 2 and the reasoning edges are confirmed against the corpus edge table, which records only s 3 procedurally_requires s 2 within the Act. No indispensable provision is rejected or unresolved, so no downgrade is triggered; PROV-M039-003 is partially_verified but only supporting."
+    }
+  ],
+  "disagreements": [],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M039-Q01-003 (\"gross ingratitude is the only ground on which such an action may be founded\") holds as written, because it is confined to an action under this Act, which supplies no other ground. Worth noting that the word \"only\" in section 2 sits before \"on an Order made by a competent court\", so textually the section makes the mode exclusive rather than the ground; exclusivity of the ground is an inference from the scheme and title of the Act, and the researcher correctly marked the claim inferential. The why_relevant for PROV-M039-001 puts the point more flatly (\"fixes the only ground\") than the section's grammar does.",
+      "CL-M039-Q01-005 is supported by section 4(1)(a) but not by the excerpt quoted in PROV-M039-003; see that provision decision."
+    ],
+    "temporal_issues": [
+      "None found. Every section of 5-2017 carries in_force_from_year 2017 and latest_change_year None, and no amending Act for 5-2017 appears in the corpus act list, so the as-enacted text is the text in force at 2023-10. The enrichment dates the deed 12 March 2019, after commencement, which keeps the untested retrospectivity question (the Act as extracted has no transitional provision) out of the scenario. Nothing later than 2023-10 is relied on."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Section 6 (definition of \"Registrar of Lands\") was missing from the map and has been added as PROV-M039-901.",
+      "Section 4(2) (application in triplicate, form under the Registration of Documents Ordinance) is not relied on and need not be; sections 1 and 7 are formal.",
+      "edges run on all seven sections of 5-2017 turned up no exception, proviso or amending provision that the map misses. The only outward links are s 4 and s 6 to 23-1927/s1 and s 5 to 2-1889/s1, both procedural."
+    ],
+    "case_law_dependence": [
+      "The Act does not define gross ingratitude and the corpus holds no definition of it. The gold answer stays on the right side of the line by identifying the conduct the donor would put before the court and leaving the finding to the court. If the marker expects the answer to state what gross ingratitude means, the question would have to become mixed_statute_and_case and be reserved; on the question as asked it does not.",
+      "Whether Act No. 5 of 2017 is the exclusive route to unwinding an irrevocable gift, or whether some residual Roman-Dutch ground survives it, cannot be settled from the corpus. The conclusion (\"nothing short of a court order will undo the gift\") is safe as a statement about revocation, and the researcher recorded the point in corpus_gaps."
+    ],
+    "enrichment_issues": [
+      "No leak: the enriched background names no Act, no section number and no conclusion; it ends with the donor asking whether he can get the property back.",
+      "Each synthetic_decisive fact (003, 004, 005) states why it is needed and what changes without it, and none of them changes the legal issue.",
+      "Minor: FACT-M039-Q01-002 is labelled synthetic_neutral yet it fixes the registry district, which is what makes the section 4(1) step determinate. It is neutral to the outcome, so the label is defensible, but it is doing more work than the other neutral facts.",
+      "Stating that the parties are low-country Sinhalese governed by the general law is a fair way to keep Kandyan law (Ordinance No. 39 of 1938, absent from the corpus) out of the scenario, though it does hint to a candidate that personal law is a live variable."
+    ],
+    "duplicate_or_leak_issues": [
+      "No case law is cited anywhere in the map or the gold answer draft.",
+      "All five provisions come from a single Act; no duplicate section ids, and no provision is cited for a proposition it does not carry.",
+      "Claim ids, fact ids and issue ids are unique and match the schema patterns."
+    ]
+  },
+  "lawyer_questions": [
+    "Is section 2 of Act No. 5 of 2017 exhaustive, so that gross ingratitude is now the only ground on which an irrevocable deed of gift can be revoked and a court order the only mode, or does some residual Roman-Dutch ground of revocation survive the Act? The gold rule and conclusion both assume exhaustivity, the corpus cannot settle it, and this is the one point on which the model answer could be marked wrong.",
+    "Does the answer expected at this exam require the candidate to state what gross ingratitude means, or is it enough to identify the ground and leave the finding to the court? The statute_only classification depends on the latter.",
+    "Where a deed is registered in one district and the land lies in another, does the lis pendens application go to the Registrar named in section 4(1)(a) (district of registration) or the one described in the section 6 definition (district where the land is situated)? Not live on these facts, but it affects how narrowly the section 4 point should be marked."
+  ]
+}

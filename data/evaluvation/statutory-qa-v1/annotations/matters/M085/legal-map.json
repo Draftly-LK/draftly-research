@@ -1,0 +1,354 @@
+{
+  "benchmark_matter_id": "M085",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M085",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:58:13Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2019-10",
+  "matter_reference_date_basis": "exam_session OCTOBER 2019 recorded in candidates/matters/M085.json",
+  "corpus_gaps": [
+    "The rate of stamp duty on a transfer of immovable property in the Western Province is not in the corpus. Section 37 of the Western Province Financial Statute charges duty 'at the prescribed rate' and s.77(1)(a) leaves the rate to regulations; the Gazetted rate order in force in October 2019 is subsidiary legislation and is not part of the frozen corpus, so the rupee figure cannot be computed from verified statutory text.",
+    "No amending statute or later consolidated reprint of the Western Province Financial Statute No. 6 of 1990 is in the corpus; every section carries in_force_from_year 1990 and an empty amendment_events list, so amendments made between 1990 and 2019, if any, cannot be checked here.",
+    "The corpus text of s.106 of the Western Province Financial Statute has lost most of its defined-term headwords in extraction (the definitions of 'conveyance' and 'Transfer' appear as bare 'means ...' clauses); the definition of 'value' is one of the few that survives with its headword intact.",
+    "The Stamp Duty Act No. 43 of 1982 in the corpus likewise fixes no rate for conveyances (s.2 charges 'a stamp duty at the prescribed rate') and carries no rate schedule."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M085-001",
+      "section_id": "6-1990/s37",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "37",
+      "subsection": "(a)",
+      "relevant_excerpt": "every instrument relating to a transfer of situated in the immovable property Western Province; (b) every document presented or filed, in proceedings instituted in any Court of law established by law, in the Western Province of Sri Lanka; (c) every transfer of a motor vehicle effected in Western Province. a stamp duty at the prescribed rate.",
+      "why_relevant": "This is the charging provision for the transaction in the matter: stamp duty on an instrument transferring immovable property situated in the Western Province is a provincial charge levied by this Statute. Rajagiriya is in the Colombo District, Western Province, so a deed of transfer of that property is chargeable under paragraph (a). The provision also shows why the amount cannot be computed from the Statute alone: it charges duty only at the prescribed rate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus in_force_from_year 1990, amendment_events empty; no amending Western Province statute is in the corpus, so the text is treated as in force at 2019-10 on the corpus record. The word order of the extracted text is garbled ('a transfer of situated in the immovable property Western Province') but the sense of the paragraph is not in doubt.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M085-002",
+      "section_id": "6-1990/s48",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "48",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) Where any property is conveyed by an instrument, the stamp duty with which such instrument is chargeable shall be calculated on the value of the property conveyed.",
+      "why_relevant": "Fixes the base on which the duty is computed. It directs the calculation to the value of the property conveyed, which is why the Rs. 3 million market value in the scenario, and not some lower stated consideration, is the figure the rate is applied to.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus in_force_from_year 1990, amendment_events empty; treated as in force at 2019-10.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M085-003",
+      "section_id": "6-1990/s106",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "106",
+      "subsection": null,
+      "relevant_excerpt": "\"value\" with reference - (a) to any property (other than immovable property which is gifted) and to any date, means the price which in the opinion of the Assessor, that property would have fetched in the open market on that date",
+      "why_relevant": "Defines the term on which s.48(1) turns. For a transfer that is not a gift, 'value' is the open market price at the relevant date, which is what the scenario supplies as the market value of Rs. 3 million. Without this definition the s.48(1) base is undetermined.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus in_force_from_year 1990, amendment_events empty; treated as in force at 2019-10. Most defined-term headwords in this section were lost in extraction; the 'value' definition retains its headword.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M085-004",
+      "section_id": "6-1990/s51",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "51",
+      "subsection": "(a)",
+      "relevant_excerpt": "Except where there is an agreement to the contrary stamp duty shall be payable; (a) in the case of an instrument of transfer by the grantee;",
+      "why_relevant": "Identifies the person liable. The question asks for the duty payable on the deed of transfer; on an instrument of transfer the grantee bears it unless the parties agree otherwise. It affects who pays rather than how much, so it supports the calculation without driving it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus in_force_from_year 1990, amendment_events empty; treated as in force at 2019-10.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M085-005",
+      "section_id": "6-1990/s77",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "77",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "(1) The Minister may make regulations in respect of all or any of the following matters: (a) any matter which is required or authorized by this Statute to be prescribed;",
+      "why_relevant": "Locates the missing authority precisely. The rate that s.37 calls prescribed is set by regulation under this section and published in the Gazette. That regulation, not the Statute, carries the percentages needed to turn Rs. 3 million into a rupee figure, and it is not in the corpus.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus in_force_from_year 1990, amendment_events empty; treated as in force at 2019-10.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M085-006",
+      "section_id": "12-2006/s4",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "4",
+      "subsection": null,
+      "relevant_excerpt": "For the purposes of section 3, \"specified instrument\" means- (a) an affidavit; (b) a policy of insurance; (c) a warrant to act as Notary Public;",
+      "why_relevant": "Background: it rules out the national charging regime as the source of the answer. The closed list of specified instruments chargeable under s.3 of the 2006 Act does not include a deed transferring immovable property, so the duty on this deed is not levied under that Act.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus in_force_from_year 2006, amendment_events empty; in force well before 2019-10.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M085-007",
+      "section_id": "12-2006/s13",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "the provisions of the Stamp Duty Act, No. 43 of 1982, relating to the Imposition of Stamp Duty (other than any instrument relating to the transfer of immovable property, the transfer of motor vehicles or documents filed in Court)",
+      "why_relevant": "Background: the express carve-out confirms that instruments relating to the transfer of immovable property were deliberately left outside the 2006 Act's displacement of the earlier national regime, which is consistent with duty on such transfers being a provincial charge under the Western Province Financial Statute.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus in_force_from_year 2006, amendment_events empty; in force well before 2019-10.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M085-008",
+      "section_id": "6-1990/s39",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "39",
+      "subsection": null,
+      "relevant_excerpt": "The following instruments and documents shall be exempted from the payment of stamp duty:- (1) bail bond in criminal proceedings; conveyance or transfer of any immovable L vehicle by the Government property or motor or by a person for or on behalf of the 5 Government;",
+      "why_relevant": "The exemption list has to be checked before duty is charged. None of the listed exemptions covers a private sale between two private persons, so the charge under s.37(a) is not displaced. Included because the answer turns in part on the exemption section not applying.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus in_force_from_year 1990, amendment_events empty; treated as in force at 2019-10. The extracted text of paragraph (2) is garbled but plainly concerns Government transfers.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M085-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "No judicial authority or Roman-Dutch doctrine is needed. The charge, the base, the valuation rule and the person liable all come from the Western Province Financial Statute, and the only further step is arithmetic on a rate fixed by subsidiary legislation made under that Statute. The question is therefore statute-only in kind, but it cannot be answered completely from the frozen corpus because the prescribed rate order is not in it.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M085-Q01-01",
+          "issue": "Whether a deed transferring immovable property situated at Rajagiriya is chargeable with stamp duty, and under which enactment - the provincial Western Province Financial Statute or the national Stamp Duty (Special Provisions) Act.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M085-Q01-02",
+          "issue": "What figure the duty is calculated on, and whether the Rs. 3 million market value is the correct base.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M085-Q01-03",
+          "issue": "What rate applies to that base at the date of execution, and whether the rate can be established from the corpus.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M085-Q01-04",
+          "issue": "Who is liable to pay the duty on the deed of transfer.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": ["PROV-M085-001", "PROV-M085-002", "PROV-M085-003"],
+      "supporting_provision_ids": ["PROV-M085-004", "PROV-M085-005", "PROV-M085-008"],
+      "background_provision_ids": ["PROV-M085-006", "PROV-M085-007"],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps among the indispensable provisions: the charging provision (s.37(a)) leads to the computation rule (s.48(1)), which in turn depends on the definition of 'value' in s.106. A fourth step, the prescribed rate made by regulation under s.77, is required to reach a rupee figure but is outside the corpus, so it is recorded as a gap rather than counted as an indispensable provision.",
+      "reasoning_edges": [
+        {"from_provision_id": "PROV-M085-001", "to_provision_id": "PROV-M085-002", "relationship": "qualifies"},
+        {"from_provision_id": "PROV-M085-002", "to_provision_id": "PROV-M085-003", "relationship": "defines"},
+        {"from_provision_id": "PROV-M085-001", "to_provision_id": "PROV-M085-008", "relationship": "excepts"},
+        {"from_provision_id": "PROV-M085-001", "to_provision_id": "PROV-M085-005", "relationship": "cross_references"},
+        {"from_provision_id": "PROV-M085-001", "to_provision_id": "PROV-M085-004", "relationship": "jointly_required"}
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "The market value of a property situated in Rajagiriya is Rs. 3 million.",
+        "enriched_background": "Mr. Sunil Perera of Nugegoda is the owner of Lot B of Kotuwegoda Watta, an allotment of land of 12.5 perches with a dwelling house bearing assessment No. 148/3, Nawala Road, Rajagiriya, in the Grama Niladhari Division of Rajagiriya, within the Divisional Secretary's Division of Sri Jayawardenapura Kotte in the District of Colombo. The market value of the property situated in Rajagiriya is Rs. 3 million. He has agreed to sell and transfer the entire property outright to Ms. Dilhani Fernando of Battaramulla for a consideration of Rs. 3 million, being the same as its market value, and the deed of transfer is to be executed before a notary public at Colombo on 12 September 2019. The property is held free of any mortgage, lease, encumbrance or reservation of interest, no part of it is being retained by the seller, and neither party is the Government or a person acting for or on behalf of the Government. The parties have made no agreement about which of them is to bear the duty on the deed.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M085-Q01-001",
+            "fact": "The transferor is Mr. Sunil Perera of Nugegoda and the transferee is Ms. Dilhani Fernando of Battaramulla; both are private individuals.",
+            "origin": "synthetic_neutral",
+            "reason": "The question names no parties, so the deed has no identifiable grantor or grantee. Fictional private individuals make the instrument determinate without changing any statutory condition.",
+            "activates_provision_ids": ["PROV-M085-004"],
+            "counterfactual_effect": "None on the amount. Different private parties would give the same result; the identities only give the liability rule someone to attach to.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M085-Q01-002",
+            "fact": "The property is Lot B of Kotuwegoda Watta, 12.5 perches with a dwelling house at No. 148/3, Nawala Road, Rajagiriya, in the Divisional Secretary's Division of Sri Jayawardenapura Kotte, District of Colombo.",
+            "origin": "synthetic_decisive",
+            "reason": "The charge attaches only to instruments relating to immovable property situated in the Western Province. Placing the land in the Colombo District settles that territorial condition, which the bare word Rajagiriya leaves to inference, and confirms the subject matter is immovable property rather than, say, a motor vehicle.",
+            "activates_provision_ids": ["PROV-M085-001", "PROV-M085-002"],
+            "counterfactual_effect": "If the land lay outside the Western Province the provincial charge would not apply and the duty would fall to be worked out under another province's statute, producing a different figure.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M085-Q01-003",
+            "fact": "The deed of transfer is to be executed before a notary public at Colombo on 12 September 2019.",
+            "origin": "synthetic_decisive",
+            "reason": "The rate is prescribed by regulation and can change from time to time, so a calculation is only determinate once the date of execution is fixed. The date chosen sits inside the October 2019 exam session's reference period.",
+            "activates_provision_ids": ["PROV-M085-001", "PROV-M085-005"],
+            "counterfactual_effect": "An execution date falling under a different prescribed rate order would change the rupee amount even though the Rs. 3 million base stayed the same.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M085-Q01-004",
+            "fact": "The whole property is transferred outright for a consideration of Rs. 3 million, equal to its market value, and it is free of any mortgage, lease, encumbrance or reservation of interest in favour of the seller or anyone else.",
+            "origin": "synthetic_decisive",
+            "reason": "The computation rule fixes the base as the value of the property conveyed, and separate rules apply where the property is subject to a mortgage or encumbrance or where a gift is made subject to a reservation. Stating that none of these applies makes Rs. 3 million the whole base and rules out an apportionment for a part share.",
+            "activates_provision_ids": ["PROV-M085-002", "PROV-M085-003"],
+            "counterfactual_effect": "If only an undivided share were conveyed, the base would be the value of that share and the duty proportionately less; a gift subject to a reservation would be valued under a different limb of the definition of value.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M085-Q01-005",
+            "fact": "Neither party is the Government or a person acting for or on behalf of the Government, and the parties have made no agreement about which of them is to bear the duty.",
+            "origin": "synthetic_decisive",
+            "reason": "The exemption list removes Government transfers from the charge, and the liability rule applies only where there is no agreement to the contrary. Closing both points makes the charge and the payer determinate.",
+            "activates_provision_ids": ["PROV-M085-008", "PROV-M085-004"],
+            "counterfactual_effect": "A transfer by or in favour of the Government would be exempt and no duty payable; an agreement to the contrary would shift the burden from the transferee to the transferor.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether the deed transferring the Rajagiriya property is chargeable with stamp duty, on what amount the duty is calculated, at what rate, and by whom it is payable; and whether a rupee figure can be arrived at on verified statutory material.",
+        "rule": "Stamp duty on an instrument transferring immovable property situated in the Western Province is a provincial charge. Western Province Financial Statute s.37(a) charges duty on every instrument relating to a transfer of immovable property situated in the Western Province at the prescribed rate, and allows different rates for different classes of instruments. Section 48(1) requires the duty to be calculated on the value of the property conveyed, and s.106 defines value, for property other than gifted immovable property, as the price the property would have fetched in the open market at the relevant date in the opinion of the Assessor. Section 39 exempts a closed list of instruments, including transfers by or in favour of the Government, and s.51(a) makes the duty on an instrument of transfer payable by the grantee unless there is an agreement to the contrary. The Statute itself sets no percentage: the rate is prescribed, and s.77(1)(a) empowers the Minister to make regulations for any matter the Statute requires to be prescribed, so the rate is found in a Gazetted regulation rather than in the Statute. The national regime does not apply to this instrument: Stamp Duty (Special Provisions) Act s.4 lists the specified instruments chargeable under s.3 and a deed transferring immovable property is not among them, and s.13 expressly carves instruments relating to the transfer of immovable property out of that Act's displacement of the Stamp Duty Act No. 43 of 1982.",
+        "application": "The land is at Rajagiriya, in the District of Colombo within the Western Province, so a deed transferring it is an instrument relating to a transfer of immovable property situated in the Western Province and falls within s.37(a). It is a sale between two private persons, and none of the exemptions in s.39, which turn on Government involvement, court documents or testamentary instruments, covers it, so the charge stands. Under s.48(1) the duty is calculated on the value of the property conveyed, and since the whole property is transferred outright, free of mortgage, encumbrance or reservation, that value is the open market price of the property as a whole. Applying the s.106 definition of value, the market value of Rs. 3 million given in the scenario is the base, and the consideration equalling the market value means no question arises of duty being computed on a lower stated price. Under s.51(a), with no agreement to the contrary, the transferee is the person liable to pay. The final step is to apply the prescribed rate in force at the date of execution to the Rs. 3 million base. That rate is fixed by regulation under s.77(1)(a) and published in the Gazette; the regulation is subsidiary legislation and is not in the corpus, so the rate cannot be verified here and the arithmetic cannot be completed on verified statutory text.",
+        "conclusion": "The deed of transfer is chargeable with stamp duty under s.37(a) of the Western Province Financial Statute, the duty is to be calculated on the Rs. 3 million market value of the property under s.48(1) read with the definition of value in s.106, and it is payable by the transferee under s.51(a). The rupee amount cannot be stated on the material available, because the prescribed rate under s.37, made by regulation under s.77(1)(a), is not in the corpus. The question is accordingly recorded as blocked for missing authority rather than answered with a figure."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M085-Q01-001",
+          "claim_text": "Stamp duty is charged on every instrument relating to a transfer of immovable property situated in the Western Province, at the rate prescribed for that class of instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M085-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M085-Q01-002",
+          "claim_text": "Where property is conveyed by an instrument, the duty is calculated on the value of the property conveyed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M085-002"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M085-Q01-003",
+          "claim_text": "For property other than gifted immovable property, value means the price the property would have fetched in the open market at the relevant date in the opinion of the Assessor, that is, its market value.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M085-003"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M085-Q01-004",
+          "claim_text": "On an instrument of transfer the duty is payable by the grantee unless the parties have agreed otherwise.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M085-004"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M085-Q01-005",
+          "claim_text": "The rate is not set by the Statute itself; it is prescribed by regulation made by the Minister and published in the Gazette.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M085-001", "PROV-M085-005"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M085-Q01-006",
+          "claim_text": "A deed transferring immovable property is not a specified instrument chargeable under the national Stamp Duty (Special Provisions) Act, which expressly leaves instruments relating to the transfer of immovable property outside its displacement of the Stamp Duty Act No. 43 of 1982.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M085-006", "PROV-M085-007"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M085-Q01-007",
+          "claim_text": "The Rajagiriya property lies in the District of Colombo within the Western Province, so the deed transferring it falls within the provincial charging provision.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M085-001"],
+          "supporting_fact_ids": ["FACT-M085-Q01-002", "BG-1"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M085-Q01-008",
+          "claim_text": "None of the statutory exemptions applies, because the transfer is a sale between two private persons and neither party is the Government or acting on its behalf.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M085-008"],
+          "supporting_fact_ids": ["FACT-M085-Q01-001", "FACT-M085-Q01-005"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M085-Q01-009",
+          "claim_text": "The base for the calculation is the market value of Rs. 3 million, since the whole property is conveyed outright, free of mortgage, encumbrance or reservation, and the consideration equals that market value.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M085-002", "PROV-M085-003"],
+          "supporting_fact_ids": ["BG-1", "FACT-M085-Q01-004"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M085-Q01-010",
+          "claim_text": "The transferee is the person liable to pay the duty, there being no agreement to the contrary.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M085-004"],
+          "supporting_fact_ids": ["FACT-M085-Q01-001", "FACT-M085-Q01-005"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M085-Q01-011",
+          "claim_text": "The rupee amount of the duty cannot be computed on verified statutory material, because the prescribed rate applicable at the date of execution is contained in a Gazetted regulation that is not in the corpus.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M085-001", "PROV-M085-005"],
+          "supporting_fact_ids": ["FACT-M085-Q01-003"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M085-Q01-012",
+          "claim_text": "Subject to that gap, the deed is chargeable with stamp duty computed on Rs. 3 million and payable by the transferee.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M085-001", "PROV-M085-002", "PROV-M085-003", "PROV-M085-004"],
+          "supporting_fact_ids": ["BG-1", "FACT-M085-Q01-004"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The question asks for a calculated figure. The charge, the base, the valuation rule and the payer are all established from the Western Province Financial Statute, but the rate is prescribed by regulation under s.77(1)(a) and the Gazetted rate order in force in October 2019 is not in the frozen corpus. Producing a rupee amount would mean quoting a rate from memory, which the corpus rule forbids. The map is complete on everything except the final arithmetic step; a verifier or lawyer supplying the rate order in force in September and October 2019 would let it be promoted to proposed_gold.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

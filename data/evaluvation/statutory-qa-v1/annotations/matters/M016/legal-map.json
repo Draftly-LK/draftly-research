@@ -1,0 +1,347 @@
+{
+  "benchmark_matter_id": "M016",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M016",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:01:32Z",
+    "verification_agent": "verifier-M016",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:10:59Z"
+  },
+  "matter_reference_date": "2025-10",
+  "matter_reference_date_basis": "Exam session OCTOBER 2025 recorded as matter_reference_date 2025-10 in candidates/matters/M016.json; the law is taken as it stood at that session.",
+  "corpus_gaps": [
+    "The corpus copy of the Registration of Documents Ordinance is the 1990 consolidation, so section 32(5) still reads 'thirty days'. The operative sixty-day period at the matter date has to be assembled from the principal section plus Registration of Documents (Amendment) Act No. 32 of 2022, s.2(5); no post-2022 consolidated text of section 32 is in the corpus.",
+    "Act No. 32 of 2022 in the corpus has only a short-title section (32-2022/s1) and no commencement provision, so its exact date of operation cannot be confirmed from the corpus. The reasoning assumes it was in operation by October 2025, three years after enactment.",
+    "The rules, prescribed forms (Forms VIII, X and XI of the Second Schedule) and fees made under the Ordinance are not extracted as separate corpus sections, so the content of the notice form cannot be checked.",
+    "The corpus has no provision on how the sixty days is reckoned (whether the day of posting is excluded); the Interpretation Ordinance is not in the corpus, so the worked date in the draft answer is arithmetic, not a corpus-supported claim.",
+    "Verifier check: no other Registration of Documents amending Act in the corpus touches section 32 after 2022 (18-2024 amends ss 8, 25, 29, 41, Chapter IV and the First Schedule only), and Form XI as inserted by 32-2022/s2(5)-schedule does not itself state the period, so the sixty-day figure rests on 32-2022/s2(5) alone."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M016-001",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(5)",
+      "relevant_excerpt": "If, while a caveat is in force, an instrument affecting the land described in the caveat is presented for registration, and in an action commenced by the caveator in a competent court within thirty days from posting of the notice required by subsection (4) it is proved to the satisfaction of the court that the instrument presented for registration is or was at the time of registration void or voidable by the caveator or fraudulent as against him or in derogation of his lawful rights the court may order the instrument to be rectified or cancelled",
+      "why_relevant": "This is the provision that fixes the time limit the question asks about: the caveator must commence the action in a competent court within the stated number of days from the posting of the notice of presentation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1927. The corpus text is the 1990 consolidation and still reads 'thirty days'; that figure was replaced by 'sixty days' by Act No. 32 of 2022, s.2(5), so at the matter date (2025-10) subsection (5) must be read with sixty days substituted. The rest of the subsection is unchanged.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M016-002",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(5)",
+      "relevant_excerpt": "(5) in subsection (5) thereof, by the substitution for the words \"a competent court within thirty days\" of the words \"a competent court within sixty days\".",
+      "why_relevant": "Supplies the number the question asks for. It substitutes sixty days for thirty days in section 32(5) of the Ordinance, so a caveator notified in 2025 has sixty days, not thirty.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted 2022, before the October 2025 matter date. The corpus copy carries no commencement section (32-2022/s1 is the short title only), so the amendment is taken to operate from certification in 2022; see corpus_gaps.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim in 32-2022/s2 and the substitution of sixty for thirty days is exactly as stated, but the corpus copy of Act No. 32 of 2022 has no date-of-operation clause (s 1 is short title only, unlike 21-2013/s1 and 18-2024/s1 which are headed 'Short title and date of operation'), so operation before June 2025 is inferred from the absence of a deferred-commencement clause and the corpus in_force_from_year of 2022, not proved from the corpus."
+    },
+    {
+      "provision_id": "PROV-M016-003",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(4)",
+      "relevant_excerpt": "(4) The notice to be given to the caveator shall be in the prescribed form and shall be sent by registered letter to the address mentioned in the caveat.",
+      "why_relevant": "Identifies the notice from whose posting the period runs. Without it the time limit in subsection (5) has no starting point, so the answer cannot be stated without it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1927; the opening words were replaced by Act No. 32 of 2022, s.2(4), which changed the description of the notice but not the fact that a notice is given to the caveator and posted to the address in the caveat.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim in the 1990 consolidation but is the pre-2022 text: 32-2022/s2(4) replaced the opening words 'The notice to be given to the caveator shall be in the prescribed form', so only the surviving tail 'and shall be sent by registered letter to the address mentioned in the caveat' is the operative support at the matter date."
+    },
+    {
+      "provision_id": "PROV-M016-004",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(4)",
+      "relevant_excerpt": "(4) in subsection (4) thereof, by the substitution for the words \"The notice to be given to the caveator shall be in the prescribed form\", of the words and figures \"Where an instrument affecting the same land described in the caveat has been subsequently presented for registration, a notice shall be given to the caveator in Form XI of the Second Schedule hereto\"",
+      "why_relevant": "Gives the current form of the notice under section 32(4) and confirms that the notice is the one issued when an instrument affecting the same land is subsequently presented for registration, which is the trigger event in the scenario.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted 2022, before the matter date; same commencement caveat as PROV-M016-002.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M016-005",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act No. 32 of 2022",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(3)",
+      "relevant_excerpt": "(3) by the repeal of subsection (3) thereof and the substitution therefor of the following subsection: - (3) A caveat shall be in force for a maximum period of two years.",
+      "why_relevant": "Background only: it fixes the maximum currency of a caveat, which is what makes the scenario premise that the caveat was still in force when the instrument was presented a coherent one.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted 2022, before the matter date; replaces the earlier rule that the caveat ran for the period specified in it.",
+      "verification_status": "verified",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M016-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks for a statutory time limit. Section 32(5) of the Registration of Documents Ordinance states the period and its starting point, and Act No. 32 of 2022 s.2(5) supplies the current figure. No judicial authority or Roman-Dutch doctrine is needed to state the number of days.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M016-Q01-01",
+          "issue": "Within what period, and from what event, must a caveator commence an action in a competent court after being notified that an instrument affecting the land described in the caveat has been presented for registration?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M016-Q01-02",
+          "issue": "Which version of section 32(5) applies to a caveator notified in 2025, given the 2022 substitution of sixty days for thirty days?",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M016-001",
+        "PROV-M016-002",
+        "PROV-M016-003"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M016-004"
+      ],
+      "background_provision_ids": [
+        "PROV-M016-005"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary steps: the time limit in section 32(5); the 2022 amendment that replaces thirty days with sixty days; and section 32(4), which identifies the notice whose posting starts the period. Removing any one leaves the number of days or its starting point unstated.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M016-002",
+          "to_provision_id": "PROV-M016-001",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M016-001",
+          "to_provision_id": "PROV-M016-003",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M016-004",
+          "to_provision_id": "PROV-M016-003",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M016-005",
+          "to_provision_id": "PROV-M016-001",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Romani who intends to go to New Zealand wants to file a caveat to her property situated in Battaramulla and meets you who are a Notary practising in Colombo.\n\nWhile the caveat is in force Romani is notified by the Registrar of Lands that a document affecting the land is presented for registration.",
+        "enriched_background": "Romani, who intends to go to New Zealand, wants to file a caveat to her property situated in Battaramulla and meets you who are a Notary practising in Colombo. The property is an allotment of land of eighteen perches called Kahatagahawatta, at No. 42/7, Pelawatta Road, Battaramulla, registered in Volume 214 Folio 88 of the Battaramulla Land Registry, which Romani bought on a deed of transfer that she has not yet been able to have registered.\n\nActing on your advice Romani presents a caveat for registration on 3 March 2025, describing that land and giving her Colombo address as the address at which notices are to be served on her, and the Registrar acknowledges receipt and registers it. Romani leaves for New Zealand shortly afterwards.\n\nWhile the caveat is in force Romani is notified by the Registrar of Lands that a document affecting the land is presented for registration. The document is a deed of transfer of the same allotment of land, executed by a person other than Romani in favour of a purchaser. The Registrar posts the notice to Romani by registered letter to the Colombo address given in her caveat on 12 June 2025.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M016-Q01-001",
+            "fact": "The property is an allotment of eighteen perches called Kahatagahawatta at No. 42/7, Pelawatta Road, Battaramulla, registered in Volume 214 Folio 88 of the Battaramulla Land Registry, held by Romani on an unregistered deed of transfer.",
+            "origin": "synthetic_neutral",
+            "reason": "The original background gives only 'her property situated in Battaramulla'. A described, registered land is needed so that the land described in the caveat and the land affected by the presented instrument can be identified as the same land.",
+            "activates_provision_ids": [
+              "PROV-M016-001"
+            ],
+            "counterfactual_effect": "If the land in the caveat were a different land from the one affected by the presented instrument, subsection (5) would not be engaged at all and no time limit would run.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M016-Q01-002",
+            "fact": "Romani presented the caveat for registration on 3 March 2025, giving her Colombo address as the address for service, and the Registrar acknowledged receipt and registered it; it was still current when the later document was presented.",
+            "origin": "synthetic_neutral",
+            "reason": "Fixes the caveat as registered and current, which the original background asserts only as 'while the caveat is in force', and supplies the address to which the notice is posted.",
+            "activates_provision_ids": [
+              "PROV-M016-003",
+              "PROV-M016-005"
+            ],
+            "counterfactual_effect": "If the caveat had lapsed before the document was presented, no notice would be due and the sixty-day period would never begin.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M016-Q01-003",
+            "fact": "The document presented for registration is a deed of transfer of the same allotment of land, executed by a person other than Romani in favour of a purchaser.",
+            "origin": "synthetic_decisive",
+            "reason": "The original background says only 'a document affecting the land'. Identifying it as a deed of transfer of the same land by a stranger makes it an instrument affecting the land described in the caveat and one Romani would say is in derogation of her rights.",
+            "activates_provision_ids": [
+              "PROV-M016-001",
+              "PROV-M016-004"
+            ],
+            "counterfactual_effect": "If the presented document did not affect the land described in the caveat, the caveator would have no action under subsection (5) and the question of a time limit would not arise.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M016-Q01-004",
+            "fact": "The Registrar posted the notice to Romani by registered letter to the Colombo address given in her caveat on 12 June 2025.",
+            "origin": "synthetic_decisive",
+            "reason": "The original background gives no date and no mode of notice. The period runs from the posting of the notice, so a posting date is needed to make the answer determinate, and a 2025 date places the matter under the amended text.",
+            "activates_provision_ids": [
+              "PROV-M016-001",
+              "PROV-M016-002",
+              "PROV-M016-003"
+            ],
+            "counterfactual_effect": "Without a posting date the period has no starting point; had the notice been posted before the 2022 amendment came into operation, the period would have been thirty days rather than sixty.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "How long does Romani, as a registered caveator who has been notified that an instrument affecting the land described in her caveat has been presented for registration, have to commence her action in a competent court, and from what date does that period run?",
+        "rule": "Under section 32(5) of the Registration of Documents Ordinance, where an instrument affecting the land described in a caveat is presented for registration while the caveat is in force, the caveator's remedy is an action commenced in a competent court within the period fixed by that subsection, running from the posting of the notice required by section 32(4). Section 32(4) is the notice given to the caveator when an instrument affecting the same land is subsequently presented, sent by registered letter to the address given in the caveat; the Registration of Documents (Amendment) Act No. 32 of 2022 s.2(4) recast it as a notice in Form XI of the Second Schedule. As originally enacted section 32(5) allowed thirty days, but s.2(5) of the same 2022 Act substituted 'a competent court within sixty days' for 'a competent court within thirty days'. In that action the caveator must prove that the instrument presented is or was void or voidable by her, or fraudulent as against her, or in derogation of her lawful rights, and the court may then order it to be rectified or cancelled and the register corrected. A caveat itself lasts a maximum of two years under section 32(3) as substituted by s.2(3) of the 2022 Act.",
+        "application": "Romani's caveat over the Battaramulla land was registered on 3 March 2025 and was still current in June 2025, so the caveat was in force. The document presented is a deed of transfer of the same allotment of land by a stranger, which is an instrument affecting the land described in her caveat, so section 32(5) is engaged. The Registrar posted the notice by registered letter to the Colombo address given in the caveat on 12 June 2025, and it is that posting, not Romani's receipt of the letter in New Zealand, that starts the period. Because the notice was posted in 2025, well after the 2022 amendment, the applicable period is sixty days and not the original thirty. Whether Romani can in fact obtain rectification or cancellation depends on proof that the transfer is void, voidable or fraudulent as against her, which the facts do not settle; the time limit applies regardless.",
+        "conclusion": "Romani must commence her action in a competent court within sixty days from the posting of the Registrar's notice, that is by about 11 August 2025 on a notice posted on 12 June 2025. She should be advised to instruct an attorney in Sri Lanka before she leaves, since the period runs from posting and not from her actual receipt of the letter abroad."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M016-Q01-001",
+          "claim_text": "Where an instrument affecting the land described in a caveat is presented for registration while the caveat is in force, the caveator's statutory remedy is an action commenced in a competent court within the period fixed by section 32(5) of the Registration of Documents Ordinance.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M016-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M016-Q01-002",
+          "claim_text": "That period runs from the posting of the notice required by section 32(4), which is sent to the caveator by registered letter at the address given in the caveat.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M016-001",
+            "PROV-M016-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M016-Q01-003",
+          "claim_text": "As originally enacted section 32(5) required the action to be commenced within thirty days, but the Registration of Documents (Amendment) Act No. 32 of 2022 s.2(5) substituted sixty days for thirty days, so the current period is sixty days.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M016-001",
+            "PROV-M016-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M016-Q01-004",
+          "claim_text": "The notice under section 32(4) is the notice given to the caveator when an instrument affecting the same land described in the caveat is subsequently presented for registration, now in Form XI of the Second Schedule.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M016-003",
+            "PROV-M016-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M016-Q01-005",
+          "claim_text": "A caveat is in force for a maximum of two years, so Romani's caveat registered on 3 March 2025 was still in force when the deed of transfer was presented in June 2025.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M016-005"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M016-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M016-Q01-006",
+          "claim_text": "The deed of transfer of the same allotment of land executed by a stranger is an instrument affecting the land described in Romani's caveat, so section 32(5) is engaged.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M016-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M016-Q01-001",
+            "FACT-M016-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M016-Q01-007",
+          "claim_text": "Time began to run when the Registrar posted the notice by registered letter to the Colombo address in the caveat on 12 June 2025, not when Romani received it abroad.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M016-001",
+            "PROV-M016-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M016-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M016-Q01-008",
+          "claim_text": "Because the notice was posted in 2025, after the 2022 amendment, the sixty-day period applies rather than the original thirty days.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M016-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M016-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M016-Q01-009",
+          "claim_text": "Romani must commence her action in a competent court within sixty days from the posting of the notice.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M016-001",
+            "PROV-M016-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M016-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M016-Q01-010",
+          "claim_text": "On a notice posted on 12 June 2025 that gives her until about 11 August 2025, counting sixty days from the day after posting.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M016-001",
+            "PROV-M016-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M016-Q01-004"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

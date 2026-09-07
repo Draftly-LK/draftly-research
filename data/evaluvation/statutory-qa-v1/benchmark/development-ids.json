@@ -1,0 +1,35 @@
+{
+  "matters": [
+    "M001",
+    "M008",
+    "M016",
+    "M027",
+    "M032",
+    "M057",
+    "M078",
+    "M108"
+  ],
+  "questions": [
+    "M001-Q03",
+    "M008-Q02",
+    "M016-Q01",
+    "M027-Q01",
+    "M027-Q02",
+    "M032-Q01",
+    "M057-Q01",
+    "M078-Q01",
+    "M078-Q04",
+    "M108-Q01"
+  ],
+  "seed": 13,
+  "dev_fraction": 0.17,
+  "strata": {
+    "hop1-enrich": 1,
+    "hop2-enrich": 5,
+    "hop2-keep": 3,
+    "hop3+-enrich": 16,
+    "hop3+-keep": 15
+  },
+  "gold_sha256": "79d1b83384c668de3fe4993285d6d2e2bfff3d701a2da574add77bc2e2ae88a5",
+  "limitation": "small development set; parameters tuned on it are reported but their variance is not estimated"
+}

@@ -1,0 +1,997 @@
+{
+  "benchmark_matter_id": "M010",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M010",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T21:58:14Z",
+    "verification_agent": "verifier-M010",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-05T00:00:00Z"
+  },
+  "matter_reference_date": "2026-04",
+  "matter_reference_date_basis": "matter_reference_date 2026-04 in candidates/matters/M010.json (exam session APRIL 2026); the law is stated as in force at that date, so Wills Ordinance section 2 as substituted by Act No. 29 of 2022 and Prevention of Frauds Ordinance section 4 as amended by Act No. 30 of 2022 govern.",
+  "corpus_gaps": [
+    "The Notaries Ordinance duties of a notary attesting a last will were not brought into this map; the execution formality was answered from Prevention of Frauds Ordinance section 4 alone. A verifier may wish to check whether Notaries Ordinance No. 1 of 1907 section 31 adds attestation duties that belong in Q01.",
+    "Roman-Dutch common law on freedom of testation and on the abolition of the legitime is not in the corpus; the map relies only on the express words of Wills Ordinance section 2(2), which are sufficient on their own for Q01.",
+    "Estate duty and stamp duty rates payable in testamentary proceedings are not in the corpus as a schedule, so the Q02 answer states no figure for duty.",
+    "District Court testamentary rules of practice, and the practice on distribution and closing the case, exist in the corpus only as the general words of Civil Procedure Code sections 529, 531 and 551."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M010-001",
+      "section_id": "21-1844/s2",
+      "act_id": "21-1844",
+      "formal_title": "Wills Ordinance",
+      "number_and_year": "No. 21 of 1844",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "It shall be lawful for any person who has reached the age of eighteen years and residing within or outside Sri Lanka to execute a will bequeathing and disposing any movable and immovable property and all and every estate, right, share or interest in any property which belong to him at the time of death",
+      "why_relevant": "Gives Martin Perera, an adult resident in Sri Lanka, the statutory power to execute a will disposing of his house, which is immovable property belonging to him at the time of death.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 was repealed and substituted by Wills Ordinance (Amendment) Act No. 29 of 2022 (corpus amendment_events: repeal_and_substitute by 29-2022 s.2). The substituted text is in force well before 2026-04 and is the text applied here.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-002",
+      "section_id": "21-1844/s2",
+      "act_id": "21-1844",
+      "formal_title": "Wills Ordinance",
+      "number_and_year": "No. 21 of 1844",
+      "section": "2",
+      "subsection": "(2)",
+      "relevant_excerpt": "Every testator shall have full power to make such testamentary disposition as he shall feel disposed, and in the exercise of such right to exclude any child, parent, relative, or descendant, or to disinherit or omit to mention any such person, without assigning any reason for such exclusion, disinheritance, or omission",
+      "why_relevant": "This is the direct answer to Q01: the testator may exclude or omit a child without assigning any reason, and no contrary law, usage or custom can be set up against him.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Act No. 29 of 2022; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-003",
+      "section_id": "7-1840/s4",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "4",
+      "subsection": "(1) and (2)",
+      "relevant_excerpt": "No will, testament, or codicil containing any devise of land or other immovable property, or any bequest of movable property, or for any other purpose whatsoever, shall be valid unless it shall be in writing and executed subject to the provisions specified in subsection (2); (2) The testator shall - (a) sign; and (b) affix his left or right thumb impression, at the foot or end of the will, testament or codicil referred to in subsection (1), before a notary public and two witnesses who shall be present at the same time",
+      "why_relevant": "Freedom of testation is exercisable only through a formally valid will. The devise of Martin's house is valid only if the will is in writing and he signs and places his thumb impression at the end of it before a notary public and two witnesses present at the same time.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 4 was amended by Prevention of Frauds (Amendment) Act No. 30 of 2022 (corpus amendment_events: 30-2022 s.3), the source of the present thumb-impression and notary-plus-two-witnesses wording. It is in force before 2026-04 and applies to a will executed in 2024.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim and the amendment trail is right (corpus edge 30-2022/s3 -> 7-1840/s4); the excerpt stops before the proviso allowing another finger or toe impression where the thumb impression cannot be obtained, which does not affect the claims drawn from it."
+    },
+    {
+      "provision_id": "PROV-M010-004",
+      "section_id": "7-1840/s11",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "11",
+      "subsection": null,
+      "relevant_excerpt": "such devise, legacy, estate, interest, gift, disposition, or appointment shall, so far only as concerns such person attesting the execution of such will, testament, or codicil, or the wife or husband of such person, or any person claiming under such person or wife or husband, be utterly null and void",
+      "why_relevant": "Qualifies the way the will must be attested: if Siripala or his spouse were to attest the will, the bequest of the house to him would be void although the will itself would stand. It matters here because the beneficiary is a member of the household.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment event recorded in the corpus; in force since 1840 and at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-005",
+      "section_id": "15-1876/s24",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "24",
+      "subsection": null,
+      "relevant_excerpt": "Children, grandchildren, and remoter descendants are preferent to all others in the estate of the parents; all the children take equally per capita",
+      "why_relevant": "Context only: the preferential right of children on which the children might rely sits in Part III, which governs inheritance ab intestato. It shows their claim arises only over property not validly disposed of by will.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment event recorded in the corpus; in force at 2026-04.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and the background role is right, but section 24 does not itself confine the children's preferential right to intestacy; that limitation is in section 21(1) of the same Part, now added as PROV-M010-901, and the claims drawn from section 24 have been re-cited to it."
+    },
+    {
+      "provision_id": "PROV-M010-006",
+      "section_id": "21-1844/s9",
+      "act_id": "21-1844",
+      "formal_title": "Wills Ordinance",
+      "number_and_year": "No. 21 of 1844",
+      "section": "9",
+      "subsection": null,
+      "relevant_excerpt": "whenever the words 'landed property' are used they shall be construed to extend to houses and buildings erected on the same, condominium parcel or any land parcel",
+      "why_relevant": "Background: confirms that a house is within the property the Ordinance contemplates being disposed of by will.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Amended by Act No. 29 of 2022 (corpus amendment_events: 29-2022 s.6); the amended text is in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-007",
+      "section_id": "7-1840/s9",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "9",
+      "subsection": null,
+      "relevant_excerpt": "every such will, testament, or codicil shall, after the decease of the testator or testatrix, be duly proved and recorded in the District Court empowered by law to grant probate or administration in such case",
+      "why_relevant": "States the general obligation that follows Martin's death: the will has to be proved and recorded in the District Court before it can operate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment event recorded in the corpus; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-008",
+      "section_id": "2-1889/s516",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "516",
+      "subsection": null,
+      "relevant_excerpt": "the person in of whose keeping or custody it shall have been deposited, or who shall find such will after the testator's death, shall produce the same to the District Court of the district in which such depository or finder resides, or to the District Court of the district in which the testator shall have died, as soon as reasonably may be after the testator's death",
+      "why_relevant": "First step for Nihal: as the person who finds and holds the will he must produce it to the District Court as soon as reasonably possible after the death, with an affidavit verifying the time and place of death and the property left.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Chapter XXXVIII was replaced by Act No. 14 of 1993 (corpus amendment_events: 14-1993 s.4); the current text is in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-009",
+      "section_id": "2-1889/s517",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "517",
+      "subsection": "(1)",
+      "relevant_excerpt": "any person appointed executor therein may apply to the District Court of the district within which he resides, or within which the testator resided at the time of his death, or within which any land belonging to the testator's estate is situate, within the time limit and in the manner specified in section 524, to have the will proved and to have probate thereof granted to him",
+      "why_relevant": "Nihal's standing and forum: as the executor named in the will he may apply to the District Court of his own residence, of the testator's residence, or where the land lies, to have the will proved and probate granted to him.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Current text from Act No. 14 of 1993; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-010",
+      "section_id": "2-1889/s518",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "518",
+      "subsection": null,
+      "relevant_excerpt": "In every case where a will is deposited in court after the coming into operation of this Chapter, and no application has been made by any person to have the will proved and probate granted in respect thereof, the court shall in accordance with the procedure set out in respect of the grant of probate or letters of administration on application made thereto, proceed to grant probate of the will, to the executor or executors named in such will",
+      "why_relevant": "Shows that proving the will is not optional once it is deposited: if Nihal does not apply, the court itself proceeds to grant probate to the named executor or administration to another person.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Current text from Act No. 14 of 1993; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-011",
+      "section_id": "2-1889/s524",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "524",
+      "subsection": "(1)",
+      "relevant_excerpt": "Every application to the District Court to have the will of a deceased person proved, shall be made within a period of three months from the date of finding of the will, and shall be made by way of petition and affidavit and such petition shall set out in numbered paragraphs- (a) the fact of the making of the will; (b) the details and the situation of the deceased's property; (bb) the heirs of the deceased to the best of the petitioner's knowledge; (c) the grounds upon which the petitioner is entitled to have the will proved",
+      "why_relevant": "Fixes the form, contents and three-month time limit of Nihal's petition, including naming the heirs (Martin's children) though they take nothing, producing the will, proving due execution and tendering the charges for the section 529 notice.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Act No. 11 of 2010 (corpus amendment_events: substitute by 11-2010 s.4, and earlier 14-1993 s.4, 38-1998 s.2); the substituted text is in force at 2026-04 and governs a death in 2026.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-012",
+      "section_id": "2-1889/s529",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "529",
+      "subsection": "(3)",
+      "relevant_excerpt": "The notice published under subsection (2), shall call upon persons having objections to the making of an order declaring any will proved, or the grant of probate or of letters of administration with or without the will annexed, or the issue of certificates of heir ship to any person specified in the application made under section 524 or 528, to submit their written objections, if any, supported by affidavit",
+      "why_relevant": "Explains what happens to Nihal's petition after filing: the Probate Officer publishes notice in Sinhala, Tamil and English and objectors, who could include Martin's children, may file written objections supported by affidavit.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Amended by Act No. 11 of 2010 (corpus amendment_events: 11-2010 s.8(1) and s.8(2)); in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-013",
+      "section_id": "2-1889/s531",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "531",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "if the court is satisfied that the evidence adduced is sufficient to afford prima facie proof as to the due making of the will and the character of the petitioner, it shall make order declaring the will to be proved and if the applicant claims- (i) as the executor or one of the executors of the will, and asks that probate thereof be granted to him the order shall declare that he is executor, and shall direct the grant of probate to him accordingly",
+      "why_relevant": "The order Nihal is working towards where no objection is filed: a declaration that the will is proved and a direction that probate issue to him as executor.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Current text from Act No. 14 of 1993; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-014",
+      "section_id": "2-1889/s534",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "534",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "that the prima facie proof of the material averments in the application have not been rebutted, the court shall forthwith make order for the grant of probate or letters of administration with the will annexed or grant of administration only subject to the conditions hereinafter prescribed",
+      "why_relevant": "Covers the alternative route if Martin's children object: issues are framed, the matter goes to a final hearing, and probate is granted if the prima facie proof is not rebutted.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Current text from Act No. 14 of 1993; in force at 2026-04.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim, but section 534 presupposes rather than creates the contested route: section 532(1) is what sends an opposed application to a final hearing and section 533 what provides for framing issues. PROV-M010-903 (section 532) has been added and the claims about the contested route re-cited to it."
+    },
+    {
+      "provision_id": "PROV-M010-015",
+      "section_id": "2-1889/s539",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "539",
+      "subsection": "(1)",
+      "relevant_excerpt": "it shall be the duty of the said person, executor or administrator, in whose favour such order is made, to take within fifteen days of the making of such order, the oath of an executor or administrator as set out in form No. 92 in the First Schedule, and thereafter to file in court within a period of one month from the date of taking of the oath, an inventory of the deceased person's property and effects, with a valuation of the same",
+      "why_relevant": "The steps between the order and the actual grant: Nihal must take the executor's oath within fifteen days of the order and file an inventory and valuation within one month of the oath, after which the court grants probate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Current text from Act No. 14 of 1993; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-016",
+      "section_id": "2-1889/s542",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "542",
+      "subsection": null,
+      "relevant_excerpt": "the power of administration, which is authenticated by the grant of probate, or is conveyed by the grant of letters of administration, extends to every portion of the deceased person's property, movable and immovable, within Sri Lanka",
+      "why_relevant": "Background: once probate issues without limitation, Nihal's authority covers the house and the bank balance until the estate is fully administered.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Current text from Act No. 14 of 1993; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-017",
+      "section_id": "2-1889/s551",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "551",
+      "subsection": null,
+      "relevant_excerpt": "Every executor and administrator shall file in the District Court, on or before the expiration of twelve months from the date upon which probate or grant of administration issued to him, or within such further time as the court may allow, a true and final account of his executor ship or administration, as the case may be, verified on oath or affirmation, with all receipts and vouchers attached",
+      "why_relevant": "The closing step Nihal must take: a true and final account verified on oath, with receipts and vouchers, within twelve months of the issue of probate unless the court extends the time or the parties consent to dispense with it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Current text from Act No. 14 of 1993; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-018",
+      "section_id": "2-1889/s552",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "552",
+      "subsection": null,
+      "relevant_excerpt": "If any executor or administrator shall fail to pay over to the creditors, heirs, legatees, or other persons the sums of money to which they are respectively entitled within one year after probate or administration is granted, such executor or administrator shall be liable to pay interest out of his own funds",
+      "why_relevant": "Puts a personal sanction on delay, which is why the distribution to Siripala should be completed within a year of the grant.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Current text from Act No. 14 of 1993; in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M010-901",
+      "section_id": "15-1876/s21",
+      "act_id": "15-1876",
+      "formal_title": "Matrimonial Rights and Inheritance Ordinance",
+      "number_and_year": "No. 15 of 1876",
+      "section": "21",
+      "subsection": "(1)",
+      "relevant_excerpt": "Inheritance ab interstate to the immovable property in Sri Lanka of a person deceased shall be governed and regulated by the following provisions of this Ordinance",
+      "why_relevant": "Added by the verifier. It is section 21(1), not section 24, that confines Part III of the Ordinance to inheritance ab intestato. Without it the claim that the children's preferential right cannot defeat a valid will rests on no provision that says so, because the text of section 24 is unqualified on its face.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment event recorded in the corpus; in force since 1876 and at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt checked verbatim against 15-1876/s21 by the verifier; section 21 sits in the same Part III INHERITANCE as section 24."
+    },
+    {
+      "provision_id": "PROV-M010-902",
+      "section_id": "2-1889/s545",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "545",
+      "subsection": null,
+      "relevant_excerpt": "No person shall effect any transfer of any property movable or immovable, in Sri Lanka, belonging to or included in, the estate or effects of any person dying testate or intestate in or out of Sri Lanka within five years prior to the effecting of the transfer, unless grant of probate has been issued in the case of a person dying testate",
+      "why_relevant": "Added by the verifier. The answer to Q02 has Nihal transferring the house to Siripala in terms of the will, but no provision the researcher cited makes the grant of probate a condition of that transfer. Section 545 does, and it is what makes the probate sequence a necessary step for Siripala to get the house rather than a formality.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Act No. 11 of 2010 (corpus amendment_events: substitute by 11-2010 s.11, and earlier 14-1993 s.4); the substituted text is in force at 2026-04 and governs a death on 14 February 2026.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt checked verbatim against 2-1889/s545 by the verifier."
+    },
+    {
+      "provision_id": "PROV-M010-903",
+      "section_id": "2-1889/s532",
+      "act_id": "2-1889",
+      "formal_title": "Civil Procedure Code",
+      "number_and_year": "No. 2 of 1889",
+      "section": "532",
+      "subsection": "(1)",
+      "relevant_excerpt": "If any objections are received in relation to any application under section 524 or 528 in response to a notice published under section 529, on or before the date specified in such notice in respect of such application, the court shall proceed to hear, try and determine such application in accordance with the procedure herein provided and may for such purpose name a day for final hearing and disposal of such application",
+      "why_relevant": "Added by the verifier. Section 532(1) is the provision that turns objections filed in answer to the section 529 notice into a final hearing; the researcher's claims about the contested route rested on section 534, which only states the orders that may be made once that hearing has happened.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Current text from Act No. 14 of 1993 (corpus amendment_events: unknown by 14-1993 s.4); in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt checked verbatim against 2-1889/s532 by the verifier; corpus edges show 2-1889/s532 procedurally_requires 2-1889/s524, on the same footing as section 531."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M010-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Wills Ordinance section 2(2) answers the question in express words: a testator may exclude or disinherit a child without assigning any reason, notwithstanding any contrary law, usage or custom. The conditions on which that power is exercised (age and capacity under section 2(1), form of execution under Prevention of Frauds Ordinance section 4) are also statutory. No judicial authority or Roman-Dutch doctrine is needed to complete the answer, because the closing words of section 2(2) displace any contrary common law rule.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M010-Q01-01",
+          "issue": "Whether Martin Perera has capacity and statutory power to dispose of his house by last will to a person who is not an heir.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M010-Q01-02",
+          "issue": "Whether he may exclude his children from the will without stating any reason, and whether the children have any statutory claim against a valid will.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M010-Q01-03",
+          "issue": "What formalities the will must satisfy for that disposition to be valid, including who may attest it.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M010-001",
+        "PROV-M010-002",
+        "PROV-M010-003"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M010-004",
+        "PROV-M010-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M010-005",
+        "PROV-M010-006"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "One directly applicable provision (Wills Ordinance section 2(2) on disinheritance without reason) plus a second layer of necessary conditions: the age and capacity rule in section 2(1) of the same section and the cross-enactment formality requirement in Prevention of Frauds Ordinance section 4, without which the disposition is not valid. Verifier: the hop count of 2 is confirmed against the indispensable set (PROV-M010-002 with PROV-M010-001, then PROV-M010-003); PROV-M010-901 was added as a supporting provision and adds no hop because it only qualifies a background provision.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M010-002",
+          "to_provision_id": "PROV-M010-001",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M010-003",
+          "to_provision_id": "PROV-M010-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M010-004",
+          "to_provision_id": "PROV-M010-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M010-005",
+          "to_provision_id": "PROV-M010-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M010-901",
+          "to_provision_id": "PROV-M010-005",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Martin Perera wants to dispose his house after his death to Siripala who is his helper by a Last Will and appoints his driver Nihal as the executor of the said Last Will. He does not dispose anything to his children by the said Will.",
+        "enriched_background": "Martin Perera wants to dispose his house after his death to Siripala who is his helper by a Last Will and appoints his driver Nihal as the executor of the said Last Will. He does not dispose anything to his children by the said Will. Martin Perera is seventy-two years old, of sound mind and under no legal disability. He is a low-country Sinhalese Buddhist who has lived all his life in Nugegoda within the Colombo district, and he is not governed by Kandyan law, by Thesawalamai or by Muslim law. His wife died in 2018 and he has not remarried. The house is the two-storey dwelling at No. 47/3, Temple Lane, Nugegoda, standing on Lot A in Plan No. 2214, which he bought in 2009 and holds as sole owner on a notarially attested transfer deed; it is his only immovable property and is worth about Rs. 28 million. Siripala Gunasekara, aged forty-five, has worked as Martin's live-in domestic helper for twenty years and is not related to him. Martin's children are two adults, Anusha aged forty and Dinesh aged thirty-seven, both in employment, neither a minor nor dependent on him. Martin has told his lawyer that he does not wish to put into the will any explanation of why he is leaving his children nothing. He proposes to sign the will and to place his thumb impression at the end of it before a notary public and two witnesses, both of them neighbours who take no benefit under the will and neither of whom is married to anyone who does.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M010-Q01-001",
+            "fact": "Martin Perera is seventy-two years old, of sound mind and under no legal disability.",
+            "origin": "synthetic_decisive",
+            "reason": "The power to execute a will is given to a person who has reached eighteen years; without an age and a statement of sound mind the capacity condition cannot be tested.",
+            "activates_provision_ids": [
+              "PROV-M010-001"
+            ],
+            "counterfactual_effect": "If Martin were under eighteen or lacked capacity he could not lawfully execute the will at all, and the disposition would fail whatever his reasons.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M010-Q01-002",
+            "fact": "He is a low-country Sinhalese Buddhist resident in Nugegoda in the Colombo district and is not governed by Kandyan law, Thesawalamai or Muslim law.",
+            "origin": "synthetic_decisive",
+            "reason": "Sri Lanka applies different personal laws to succession; the general-law statutes relied on here apply only once the personal law is settled.",
+            "activates_provision_ids": [
+              "PROV-M010-001",
+              "PROV-M010-002"
+            ],
+            "counterfactual_effect": "If Martin were a Kandyan Sinhalese or a Muslim a different succession regime would have to be considered and the answer on unrestricted freedom of testation could change.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M010-Q01-003",
+            "fact": "The house is the dwelling at No. 47/3, Temple Lane, Nugegoda on Lot A in Plan No. 2214, bought by Martin in 2009 and held by him as sole owner on a notarially attested transfer deed; it is worth about Rs. 28 million.",
+            "origin": "synthetic_neutral",
+            "reason": "Identifies the subject matter of the devise and confirms it is immovable property belonging to the testator that would otherwise devolve on his heirs.",
+            "activates_provision_ids": [
+              "PROV-M010-001",
+              "PROV-M010-006"
+            ],
+            "counterfactual_effect": "If the house were co-owned or already settled on the children, Martin could dispose only of his own share.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M010-Q01-004",
+            "fact": "Martin's wife died in 2018 and he has not remarried; his children are two adults, Anusha aged forty and Dinesh aged thirty-seven, both employed and neither a minor nor dependent.",
+            "origin": "synthetic_neutral",
+            "reason": "Fixes who the excluded heirs are and removes any surviving-spouse question, leaving the exclusion issue as the only one.",
+            "activates_provision_ids": [
+              "PROV-M010-002",
+              "PROV-M010-005"
+            ],
+            "counterfactual_effect": "If a spouse survived, her separate matrimonial and intestate rights would have to be considered alongside the will.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M010-Q01-005",
+            "fact": "Siripala Gunasekara, aged forty-five, has been Martin's live-in domestic helper for twenty years and is not related to him.",
+            "origin": "synthetic_neutral",
+            "reason": "Establishes that the beneficiary is a stranger to the blood, which is the case in which the statutory power to prefer a non-heir is in issue.",
+            "activates_provision_ids": [
+              "PROV-M010-002"
+            ],
+            "counterfactual_effect": "None on the outcome; the power to devise to a stranger is the same whoever the legatee is, provided he is not legally incapacitated from taking.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M010-Q01-006",
+            "fact": "Martin proposes to sign the will and place his thumb impression at the end of it before a notary public and two witnesses present at the same time; both witnesses are neighbours who take no benefit under the will and neither is married to anyone who does. He does not wish to state in the will any reason for leaving his children nothing.",
+            "origin": "synthetic_decisive",
+            "reason": "The formality of execution and the identity of the attesting witnesses decide whether the will and the devise to Siripala are valid.",
+            "activates_provision_ids": [
+              "PROV-M010-003",
+              "PROV-M010-004"
+            ],
+            "counterfactual_effect": "If the will were signed without a notary and two witnesses present together it would be invalid; if Siripala or his spouse attested it, the devise of the house to him would be null and void although the will would stand.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether Martin Perera may execute a last will devising his house to his helper Siripala while leaving nothing to his two adult children, without stating any reason for excluding them, and on what statutory conditions the validity of such a will depends.",
+        "rule": "Wills Ordinance s.2(1) makes it lawful for any person who has reached the age of eighteen years and is residing within or outside Sri Lanka to execute a will disposing of movable and immovable property belonging to him at the time of death which would otherwise devolve on his heirs, in favour of a person not legally incapacitated from taking. Wills Ordinance s.2(2) gives every testator full power to make such testamentary disposition as he feels disposed and, in the exercise of that right, to exclude any child, parent, relative or descendant, or to disinherit or omit to mention any such person, without assigning any reason, notwithstanding any law, usage or custom to the contrary. The preferential right of children in Matrimonial Rights and Inheritance Ordinance s.24 sits in the Part of that Ordinance dealing with inheritance ab intestato and so operates only over property not validly disposed of by will. Freedom of testation must, however, be exercised in the prescribed form: under Prevention of Frauds Ordinance s.4 no will containing a devise of immovable property or a bequest of movable property is valid unless it is in writing and the testator signs it and affixes his thumb impression at the foot or end before a notary public and two witnesses present at the same time. Under Prevention of Frauds Ordinance s.11 a benefit given by the will to a person who attests it, or to that person's spouse, is null and void so far as concerns that attesting witness, although the will itself remains valid. Wills Ordinance s.9 confirms that landed property in the Ordinance extends to houses and buildings.",
+        "application": "Martin is seventy-two, of sound mind and under no disability, so he satisfies the age and capacity condition in s.2(1), and he is governed by the general law rather than by Kandyan law, Thesawalamai or Muslim law. The house at No. 47/3, Temple Lane, Nugegoda is his own immovable property, held as sole owner, and it would devolve on Anusha and Dinesh if he did not dispose of it; Siripala, an unrelated domestic helper, is not legally incapacitated from taking it. His decision to leave the children nothing, and to give no explanation for that in the will, falls squarely within the words of s.2(2), and because the children's preferential right in Matrimonial Rights and Inheritance Ordinance s.24 applies only on intestacy, they have no statutory claim against a will that disposes of the house. Two conditions must nevertheless be met. The will must be in writing and Martin must sign it and place his thumb impression at the end of it before a notary public and two witnesses present at the same time, as Prevention of Frauds Ordinance s.4 requires. The attesting witnesses must not be beneficiaries or the spouses of beneficiaries, which the proposed neighbours are not; had Siripala or his wife attested the will, Prevention of Frauds Ordinance s.11 would render the devise of the house to him null and void. Nothing in the facts shows whether the children are in need of support, and no maintenance claim against the estate arises from the provisions relied on here.",
+        "conclusion": "Yes. Martin Perera may execute the last will leaving the house to Siripala and giving his children nothing, and he need not assign any reason for excluding them, because Wills Ordinance s.2(2) confers that power in terms and notwithstanding any contrary law, usage or custom. The exclusion cannot be attacked merely because no reason is given. The advice is qualified only by the requirement that the will be executed in the manner required by Prevention of Frauds Ordinance s.4 and that neither Siripala nor his spouse attest it, failing which the will or the devise to him would fail on grounds unconnected with the absence of reasons."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M010-Q01-001",
+          "claim_text": "A person who has reached eighteen years and is residing in or outside Sri Lanka may execute a will disposing of movable and immovable property belonging to him at death which would otherwise devolve on his heirs, in favour of a person not legally incapacitated from taking.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q01-002",
+          "claim_text": "Every testator has full power to exclude, disinherit or omit to mention any child without assigning any reason, notwithstanding any law, usage or custom to the contrary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q01-003",
+          "claim_text": "The preferential right of children to a parent's estate operates in inheritance ab intestato and therefore does not defeat a valid testamentary disposition.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-005",
+            "PROV-M010-002",
+            "PROV-M010-901"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q01-004",
+          "claim_text": "A will containing a devise of immovable property or a bequest of movable property is valid only if it is in writing and the testator signs it and affixes his thumb impression at the foot or end before a notary public and two witnesses present at the same time.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q01-005",
+          "claim_text": "A benefit given by a will to a person who attests it, or to that person's spouse, is null and void so far as concerns that attesting witness.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q01-006",
+          "claim_text": "Martin Perera, aged seventy-two, of sound mind and governed by the general law, satisfies the statutory age and capacity condition for executing a will.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M010-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M010-Q01-001",
+            "FACT-M010-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q01-007",
+          "claim_text": "The house at Nugegoda is Martin's own immovable property which would otherwise devolve on his two adult children, and Siripala, an unrelated helper, is not legally incapacitated from taking it under the will.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M010-001",
+            "PROV-M010-006"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M010-Q01-003",
+            "FACT-M010-Q01-005",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q01-008",
+          "claim_text": "Because Martin's children take only on intestacy, they acquire no claim to the house against a valid will and cannot attack the exclusion on the ground that the will gives no reason for it.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M010-002",
+            "PROV-M010-005",
+            "PROV-M010-901"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M010-Q01-004",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q01-009",
+          "claim_text": "The proposed execution before a notary public and two disinterested neighbours, with Martin's signature and thumb impression at the end of the will, meets the statutory form, and since neither witness benefits under the will the devise to Siripala is not avoided.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M010-003",
+            "PROV-M010-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M010-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q01-010",
+          "claim_text": "Martin Perera may execute the will leaving his house to Siripala and nothing to his children without assigning any reason, provided the will is executed in the prescribed form and no beneficiary or beneficiary's spouse attests it.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M010-002",
+            "PROV-M010-001",
+            "PROV-M010-003",
+            "PROV-M010-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M010-Q01-001",
+            "FACT-M010-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M010-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The steps an executor must take after the testator's death are set out as a closed statutory sequence in Chapter XXXVIII of the Civil Procedure Code, read with Prevention of Frauds Ordinance section 9. Production of the will, the petition for probate, publication of notice, the order declaring the will proved, the oath, the inventory and the final account are all express statutory duties with express time limits, so no judicial authority is needed to state them.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M010-Q02-01",
+          "issue": "What Nihal, as the executor holding the will, must do with the will immediately after Martin's death and in which court.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M010-Q02-02",
+          "issue": "How and within what time he must apply to have the will proved and probate granted to him, and what the application must contain.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M010-Q02-03",
+          "issue": "What steps follow the court's order, namely the oath, the inventory and valuation, the administration of the estate and the final account.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M010-008",
+        "PROV-M010-009",
+        "PROV-M010-011",
+        "PROV-M010-013",
+        "PROV-M010-015",
+        "PROV-M010-017"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M010-007",
+        "PROV-M010-010",
+        "PROV-M010-012",
+        "PROV-M010-014",
+        "PROV-M010-018",
+        "PROV-M010-902",
+        "PROV-M010-903"
+      ],
+      "background_provision_ids": [
+        "PROV-M010-016"
+      ],
+      "legal_hop_count": 5,
+      "hop_count_basis": "Verifier correction from 4 to 5. The indispensable set is a chain of six provisions and so of five edges: production of the will under Civil Procedure Code s.516, which Prevention of Frauds Ordinance s.9 requires; the executor's application under s.517; the form and three-month limit in s.524 that s.517 incorporates; the order declaring the will proved and directing the grant under s.531; the oath and inventory under s.539, on which probate issues; and the final account under s.551. The researcher's basis collapsed s.539 and s.551 into a single step, but the duty to account runs from the issue of probate, which s.539 is a separate condition of.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M010-009",
+          "to_provision_id": "PROV-M010-008",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M010-009",
+          "to_provision_id": "PROV-M010-011",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M010-013",
+          "to_provision_id": "PROV-M010-011",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M010-013",
+          "to_provision_id": "PROV-M010-012",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M010-015",
+          "to_provision_id": "PROV-M010-013",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M010-017",
+          "to_provision_id": "PROV-M010-015",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M010-008",
+          "to_provision_id": "PROV-M010-007",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M010-902",
+          "to_provision_id": "PROV-M010-015",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M010-014",
+          "to_provision_id": "PROV-M010-903",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Martin Perera wants to dispose his house after his death to Siripala who is his helper by a Last Will and appoints his driver Nihal as the executor of the said Last Will. He does not dispose anything to his children by the said Will.",
+        "enriched_background": "Martin Perera wants to dispose his house after his death to Siripala who is his helper by a Last Will and appoints his driver Nihal as the executor of the said Last Will. He does not dispose anything to his children by the said Will. Martin executed that last will on 20 August 2024 at his home at No. 47/3, Temple Lane, Nugegoda, in the Colombo district, signing it and placing his thumb impression at the end before a notary public and two witnesses who were present together; the will was numbered 812 in the notary's protocol and Martin kept the original in a steel safe in his bedroom. He died at that house on 14 February 2026. He left the house at No. 47/3, standing on Lot A in Plan No. 2214 and worth about Rs. 28 million, as his only immovable property, together with about Rs. 1.2 million in a savings account, and he owed a hospital bill of about Rs. 350,000 as well as the funeral expenses. Nihal Silva, aged fifty-two, who had been Martin's driver for eleven years and who lives at Pita Kotte in the same district, opened the safe on 17 February 2026 and found the original will there; he is willing to act as executor. Siripala Gunasekara, the helper named in the will, and Martin's two adult children, Anusha and Dinesh, all survive Martin.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M010-Q02-001",
+            "fact": "Martin died on 14 February 2026 at his house at No. 47/3, Temple Lane, Nugegoda, within the Colombo district.",
+            "origin": "synthetic_decisive",
+            "reason": "The date and place of death fix the court in which the will must be produced and start the time within which the executor must act.",
+            "activates_provision_ids": [
+              "PROV-M010-008",
+              "PROV-M010-009"
+            ],
+            "counterfactual_effect": "If Martin had died outside the district in which the will was held, the will could be produced instead to the District Court of the district where the finder resides.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M010-Q02-002",
+            "fact": "The last will was executed on 20 August 2024 before a notary public and two witnesses present together, was numbered 812 in the notary's protocol, and the original was kept by Martin in a steel safe at his house.",
+            "origin": "synthetic_neutral",
+            "reason": "Identifies the instrument that has to be produced and proved and supplies the evidence of due execution the petition must establish.",
+            "activates_provision_ids": [
+              "PROV-M010-008",
+              "PROV-M010-011"
+            ],
+            "counterfactual_effect": "If no original will could be produced, probate of the will in this form could not be sought.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M010-Q02-003",
+            "fact": "Nihal Silva, aged fifty-two, who lives at Pita Kotte in the Colombo district, found the original will in the safe on 17 February 2026 and is willing to act as executor.",
+            "origin": "synthetic_decisive",
+            "reason": "He is both the finder of the will and the named executor, which is what makes the production duty and the three-month period for the petition run against him, and his residence fixes an alternative competent court.",
+            "activates_provision_ids": [
+              "PROV-M010-008",
+              "PROV-M010-009",
+              "PROV-M010-011"
+            ],
+            "counterfactual_effect": "If Nihal declined to act or did not apply, the court would itself proceed to grant probate to a named executor or letters of administration to another competent person.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M010-Q02-004",
+            "fact": "The estate consists of the house at No. 47/3 on Lot A in Plan No. 2214, worth about Rs. 28 million, and about Rs. 1.2 million in a savings account; the liabilities are a hospital bill of about Rs. 350,000 and the funeral expenses.",
+            "origin": "synthetic_neutral",
+            "reason": "The petition must state the details and situation of the deceased's property, and the inventory and valuation and the final account are drawn from it.",
+            "activates_provision_ids": [
+              "PROV-M010-011",
+              "PROV-M010-015",
+              "PROV-M010-016",
+              "PROV-M010-017"
+            ],
+            "counterfactual_effect": "If the liabilities exceeded the assets the estate would have to be dealt with as an insolvent testamentary estate instead.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M010-Q02-005",
+            "fact": "Siripala Gunasekara and Martin's two adult children, Anusha and Dinesh, all survive Martin.",
+            "origin": "synthetic_neutral",
+            "reason": "The petition must name the heirs to the best of the petitioner's knowledge, and the published notice gives them the opportunity to object.",
+            "activates_provision_ids": [
+              "PROV-M010-011",
+              "PROV-M010-012",
+              "PROV-M010-014"
+            ],
+            "counterfactual_effect": "If the children filed objections, the application would go to a final hearing on framed issues instead of being decided on the papers.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "What steps Nihal, as the executor named in Martin Perera's last will and the person who found the original will, is required to take after Martin's death in order to obtain probate and to administer and wind up the estate.",
+        "rule": "Prevention of Frauds Ordinance s.9 requires that a will be duly proved and recorded after the testator's death in the District Court empowered to grant probate. Civil Procedure Code s.516 requires the person in whose custody the will was, or who finds it after the death, to produce it to the District Court of the district in which he resides or in which the testator died, as soon as reasonably may be, with an affidavit verifying the time and place of death and the nature and value of the property left. Under s.517 the person appointed executor may apply to the District Court of the district in which he resides, in which the testator resided at death, or in which land of the estate is situate, within the time limit and in the manner specified in s.524, to have the will proved and probate granted to him; s.518 shows the process is not optional, since if no application is made the court itself proceeds to grant probate to the named executor or administration to another competent person. Section 524 requires the application to be made within three months of the finding of the will, by petition and affidavit setting out in numbered paragraphs the making of the will, the details and situation of the property, the heirs to the best of the petitioner's knowledge, the grounds of entitlement and the character claimed, with the will annexed or brought into court, evidence proving due execution, and the charges for the notice under s.529. Section 529 requires the Probate Officer to publish notice in Sinhala, Tamil and English calling for written objections supported by affidavit. If no objection is filed, s.531(1)(a)(i) requires the court, on prima facie proof of the due making of the will and the petitioner's character, to declare the will proved, declare the applicant executor and direct the grant of probate; if objections are filed, issues are framed and under s.534 probate is granted if the prima facie proof is not rebutted. Section 539 then requires the executor to take the oath of an executor within fifteen days of the order and to file an inventory and valuation within one month of the oath, whereupon probate issues. By s.542 an unlimited grant carries power over the whole of the deceased's movable and immovable property in Sri Lanka. Section 551 requires a true and final account of the executorship, verified on oath with receipts and vouchers, within twelve months of the issue of probate or such further time as the court allows, and s.552 makes an executor who fails to pay over what is due within a year of the grant personally liable for interest.",
+        "application": "Nihal found the original will in Martin's safe on 17 February 2026, three days after the death, so he is the finder within the meaning of s.516 and must produce the will to the District Court of Colombo, being both the district in which Martin died and the district in which Nihal resides, as soon as reasonably may be, supporting it with an affidavit of the time and place of death and of the house and bank balance left within that jurisdiction. As the executor named in the will he should then petition the same court under ss.517 and 524 by 17 May 2026, within three months of finding the will, setting out the making of the will of 20 August 2024, the details of the house at No. 47/3 on Lot A in Plan No. 2214 and of the savings account, the heirs Anusha and Dinesh as well as the legatee Siripala, the ground on which he claims and his character as executor, annexing the will and affidavit evidence of the notary and attesting witnesses to prove due execution, and tendering the charges for publication. The Probate Officer will publish the notice under s.529 and the children may file written objections supported by affidavit within the period stated in it. If they do not, the court will declare the will proved and direct that probate issue to Nihal under s.531; if they do object, the matter goes to a final hearing on framed issues and probate follows under s.534 unless the prima facie proof is rebutted. Within fifteen days of that order Nihal must take the executor's oath, and within one month of the oath file the inventory and valuation of the house, the bank balance and the debts under s.539, on which probate will be issued to him. Holding an unlimited grant he may then get in the bank balance, pay the funeral expenses and the hospital bill of about Rs. 350,000, transfer the house at No. 47/3 to Siripala in terms of the will, and file his final account within twelve months of the grant under s.551, remembering that under s.552 delay beyond a year in paying over what is due exposes him to interest out of his own funds. Whether an extension of time will be needed, and what duty is payable on the estate, cannot be settled on the facts given.",
+        "conclusion": "Nihal must produce the will to the District Court of Colombo with the prescribed affidavit as soon as reasonably may be after the death, and within three months of finding it petition that court by petition and affidavit to have the will proved and probate granted to him, allow the Probate Officer's notice to be published and any objections to be dealt with, and on the order declaring the will proved take the executor's oath within fifteen days and file the inventory and valuation within a month of the oath. Once probate issues he must administer the estate, pay the debts, give Siripala the house devised to him and file a final account within twelve months, failing which he risks personal liability for interest."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M010-Q02-001",
+          "claim_text": "After the testator's death the will must be duly proved and recorded in the District Court empowered to grant probate or administration.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-002",
+          "claim_text": "The person who held or who finds the will after the death must produce it, as soon as reasonably may be, to the District Court of the district in which he resides or in which the testator died, with an affidavit verifying the time and place of death and the property left.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-003",
+          "claim_text": "The executor named in the will may apply to the District Court of the district of his residence, of the testator's residence at death, or where land of the estate lies, in the manner and within the time specified in section 524, to have the will proved and probate granted to him; and if no one applies the court itself proceeds to grant probate to the named executor.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-009",
+            "PROV-M010-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-004",
+          "claim_text": "The application must be made within three months of the finding of the will, by petition and affidavit setting out in numbered paragraphs the making of the will, the details and situation of the property, the heirs to the best of the petitioner's knowledge, the grounds of entitlement and the character claimed, with the will produced, proof of due execution and the charges for publication.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-005",
+          "claim_text": "Notice of the application is published by the Probate Officer calling on persons with objections to file them in writing supported by affidavit before the date stated in the notice.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-006",
+          "claim_text": "Where no objection is filed and the court is satisfied of prima facie proof of the due making of the will and the character of the petitioner, it declares the will proved, declares the applicant executor and directs the grant of probate to him; where objections are filed, probate is granted after the final hearing unless the prima facie proof is rebutted.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-013",
+            "PROV-M010-014",
+            "PROV-M010-903"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-007",
+          "claim_text": "The executor in whose favour the order is made must take the executor's oath within fifteen days of the order and file an inventory of the property with a valuation within one month of the oath, whereupon the court grants probate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-015"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-008",
+          "claim_text": "An unlimited grant of probate carries power over every portion of the deceased's movable and immovable property in Sri Lanka until the administration is complete, and the executor must file a true and final account verified on oath within twelve months of the grant or such further time as the court allows.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-016",
+            "PROV-M010-017"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-009",
+          "claim_text": "An executor who fails within one year of the grant to pay over the sums due to creditors, heirs or legatees is liable to pay interest out of his own funds unless he shows good and sufficient cause.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M010-018"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-010",
+          "claim_text": "Nihal, having found the original will in Martin's safe on 17 February 2026, must produce it with the verifying affidavit to the District Court of Colombo, which is both the district where Martin died and the district where Nihal resides.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M010-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M010-Q02-001",
+            "FACT-M010-Q02-002",
+            "FACT-M010-Q02-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-011",
+          "claim_text": "As the executor named in the will Nihal must petition that court to have the will proved and probate granted to him by 17 May 2026, within three months of finding the will, naming Anusha and Dinesh as heirs and Siripala as legatee and describing the house and the savings account.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M010-009",
+            "PROV-M010-011"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M010-Q02-003",
+            "FACT-M010-Q02-004",
+            "FACT-M010-Q02-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-012",
+          "claim_text": "Martin's children may use the published notice to object, in which case the application proceeds to a final hearing on framed issues rather than being allowed on the papers.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M010-012",
+            "PROV-M010-014",
+            "PROV-M010-903"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M010-Q02-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-013",
+          "claim_text": "On the order declaring the will proved Nihal must take the executor's oath within fifteen days and file within a month of the oath an inventory and valuation covering the house at No. 47/3, the savings account and the debts.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M010-013",
+            "PROV-M010-015"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M010-Q02-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-014",
+          "claim_text": "Under the grant Nihal must get in the assets, pay the funeral expenses and the hospital bill, transfer the house to Siripala in terms of the will, and file his final account within twelve months of the grant.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M010-016",
+            "PROV-M010-017",
+            "PROV-M010-018",
+            "PROV-M010-902"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M010-Q02-004",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M010-Q02-015",
+          "claim_text": "Nihal's required steps are therefore production of the will with an affidavit, a petition within three months for proof of the will and probate, publication and disposal of objections, the executor's oath within fifteen days of the order and the inventory within a month of the oath, then administration of the estate and a final account within twelve months of the grant.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M010-008",
+            "PROV-M010-009",
+            "PROV-M010-011",
+            "PROV-M010-013",
+            "PROV-M010-015",
+            "PROV-M010-017"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M010-Q02-001",
+            "FACT-M010-Q02-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

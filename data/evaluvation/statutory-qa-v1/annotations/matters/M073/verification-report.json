@@ -1,0 +1,121 @@
+{
+  "benchmark_matter_id": "M073",
+  "verifier": "verifier-M073",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:00:19Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M073-001",
+      "decision": "verified",
+      "note": "7-1840/s11 checked verbatim; heading is Gifts to an attesting witness to be void; no amendment event recorded and latest_change_year is None, so the 1840 text stands at 2020-04. The excerpt carries the spouse limb, the utterly null and void limb, the persons-claiming-under limb and the charges-and-directions exception, which is what why_relevant asserts."
+    },
+    {
+      "provision_id": "PROV-M073-002",
+      "decision": "verified",
+      "note": "7-1840/s10 checked verbatim and quoted in full; no amendment event, so it applies at 2020-04. It is indispensable: without it the advice could wrongly be that the whole will fails."
+    },
+    {
+      "provision_id": "PROV-M073-003",
+      "decision": "partially_verified",
+      "note": "Wording of 7-1840/s12 confirmed verbatim and temporally sound, but the role is corrected: the charge-for-debt exception sits inside s.11 and s.12 adds only the attesting creditor's competence, so it moves to supporting and the hop count falls from 3 to 2."
+    },
+    {
+      "provision_id": "PROV-M073-004",
+      "decision": "partially_verified",
+      "note": "7-1840/s13 checked verbatim, but the excerpt quotes only the second limb about the recompense or commission; the first limb, which addresses incompetence on account of being an executor rather than on account of attesting, is relied on by CL-M073-Q01-005 without being quoted."
+    },
+    {
+      "provision_id": "PROV-M073-005",
+      "decision": "unresolved",
+      "note": "7-1840/s4 in the corpus carries the substitution made by Prevention of Frauds (Amendment) Act No. 30 of 2022 s.3, so its wording at 2020-04 cannot be checked; correctly held as background with applicable_to_matter_date false, and no claim rests on it."
+    },
+    {
+      "provision_id": "PROV-M073-006",
+      "decision": "verified",
+      "note": "1-1907/s31 rule (8) checked verbatim. 31-2022/s16 and 6-2024/s3 were read in full: neither touches rule (8), so the corpus text is the text in force at 2020-04."
+    },
+    {
+      "provision_id": "PROV-M073-007",
+      "decision": "verified",
+      "note": "1-1907/s31 rule (12) checked verbatim; likewise untouched by 31-2022 s.16 and 6-2024 s.3, so it applies at 2020-04."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M073-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "The authority requirement is upheld: Prevention of Frauds Ordinance ss.10 to 13 settle the consequence of a beneficiary attesting, and Notaries Ordinance s.31(8) and (12) supply the notary's duties, so no case law or Roman-Dutch rule is needed. Section 12 was demoted to supporting and the hop count corrected to 2. The question still goes to legal review because the enrichment widens the legal issue and because Notaries Ordinance s.31 rule (10), in force at the matter date, is missing from the corpus."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "provision_role_and_hop_count",
+      "researcher_position": "Prevention of Frauds Ordinance s.12 is indispensable and the question is a three-hop question.",
+      "verifier_position": "The charge-for-debt exception is expressed in s.11 itself, in the words other than and except charges and directions for the payment of any debt or debts, and s.11 already admits the attesting witness to prove execution and validity. Section 12 therefore confirms an attesting creditor's competence and adds nothing the conclusion depends on; it is supporting, and the hop count is 2.",
+      "supporting_sources": [
+        "7-1840/s11",
+        "7-1840/s12"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "enrichment_scope",
+      "researcher_position": "The charged debt and the executor's commission are legitimate enrichment facts that make the scenario concrete.",
+      "verifier_position": "They introduce two statutory issues, under ss.12 and 13, that the original three-mark question did not raise, so the enrichment widens the legal issue rather than supplying the missing party, relationship and document facts. Sections 10 and 11 alone answer what was asked.",
+      "supporting_sources": [
+        "7-1840/s11",
+        "7-1840/s12",
+        "7-1840/s13"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "claim_wording",
+      "researcher_position": "Section 13 provides that attesting does not make an executor incompetent as a witness.",
+      "verifier_position": "The first limb of s.13 makes a person competent notwithstanding that he is an executor; it does not make the competence turn on the act of attesting. Only the second limb, on the recompense or commission, is tied to attesting.",
+      "supporting_sources": [
+        "7-1840/s13"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M073-Q01-005 marked disputed: its second limb, that attesting forfeits no recompense or commission, is directly supported by the quoted excerpt of 7-1840/s13, but its first limb restates the competence rule as turning on attesting when the section makes it turn on being an executor. The same slip is carried into the rule paragraph of the gold answer draft.",
+      "The conclusion that the notary should advise against the beneficiary signing, CL-M073-Q01-012, is an inference from the avoidance worked by s.11, not from any duty addressed to the notary. Corpus searches for a rule requiring a notary to refuse an interested witness returned nothing, which the researcher had already recorded."
+    ],
+    "temporal_issues": [
+      "7-1840/s4 in the corpus is the post-2022 text, signature plus thumb impression before a notary public and two witnesses; the April 2020 wording is absent. It is correctly confined to background, and the two-witness requirement the answer needs comes independently from Notaries Ordinance s.31(8), which is temporally clean.",
+      "Notaries Ordinance s.31 rule (10) was in force at 2020-04 and was repealed by Act No. 6 of 2024 s.3(4); the corpus body runs from rule (9) to rule (11), so the repealed rule can neither be read nor ruled out.",
+      "Notaries Ordinance s.31 rule (9), on witnesses of good repute acquainted with the executant, exists in the corpus only as substituted by Act No. 31 of 2022 s.16(6), which is later than the matter date. The researcher was right not to rely on it.",
+      "Rules (8) and (12) were verified clean by reading 31-2022/s16 and 6-2024/s3 in full; the pre-2020 amendments, 20-1976 s.10 and 47-2011 ss.2 and 3, are already absorbed into the text in force at 2020-04."
+    ],
+    "missing_definitions_or_exceptions": [
+      "edges 7-1840/s11 returns nothing in either direction, and the same for ss.10, 12 and 13, so the links among them in the map are the researcher's reading rather than recorded corpus edges. The reading is sound on the face of the sections.",
+      "defs 7-1840 will, defs 21-1844 will and defs 1-1907 witness all return nothing; Wills Ordinance s.9 defines will only for that Ordinance, which the map does not use, so no definition is missing.",
+      "Wills Ordinance No. 21 of 1844 was re-checked as the alternative Act: s.2, as substituted by Act No. 29 of 2022, is about capacity and freedom of disposition, and ss.5 to 9 cover foreign wills, re-execution, survivorship, settlements and interpretation. Nothing there bears on attesting witnesses, so the researcher's rejection of it stands.",
+      "The charge-for-debt exception inside s.11 is the only exception engaged; no proviso to ss.10 to 13 is unaccounted for."
+    ],
+    "case_law_dependence": [
+      "None. The answer cites no case law and none is needed: ss.10 to 13 dispose of the validity of the will, the avoidance of the gifts, the charged debt and the executor's commission on their own terms."
+    ],
+    "enrichment_issues": [
+      "FACT-M073-Q01-004, the charged debt, and FACT-M073-Q01-005, the executorship and commission, add legal issues rather than facts. ISS-M073-Q01-03 is marked disputed for that reason and the question is sent for legal review.",
+      "FACT-M073-Q01-006 is labelled synthetic_neutral but activates PROV-M073-006 and PROV-M073-007, and its own counterfactual_effect describes an outcome change if the second witness were also a beneficiary; on the map's own test it is decisive, not neutral.",
+      "The closing words of FACT-M073-Q01-006, that the testator is willing to call in any other person the notary suggests, steer the candidate toward the recommended course. They do not state the conclusion, but a lawyer may wish them trimmed."
+    ],
+    "duplicate_or_leak_issues": [
+      "The enriched background names no statute, no section number and no outcome. The names, addresses, promissory note and sums are invented and carry no client data.",
+      "PROV-M073-006 and PROV-M073-007 both carry section_id 1-1907/s31 and are distinguished only by the subsection field, 8 and 12. That is correct on this corpus, where s.31 is a single section node, but it means the two entries share a section id."
+    ]
+  },
+  "lawyer_questions": [
+    "Notaries Ordinance s.31 rule (10) was in force in April 2020 and its text is not in the corpus. If it imposed any duty about who may be accepted as an attesting witness, the notary's advice on these facts may rest on a duty this map cannot see. Can the pre-2024 text be supplied and the map re-checked against it?",
+    "Should the enrichment be cut back to the avoidance point alone, dropping the charged debt and the executorship, so that the question stays within the three marks the original carries?",
+    "Is Prevention of Frauds Ordinance s.12 indispensable to this answer, or, as the verifier reads it, a confirmation of a competence that s.11 already supplies?",
+    "The corpus holds no provision requiring a notary to refuse an interested attesting witness. Is the advice not to let the beneficiary sign a matter of professional practice rather than statute, and if so does that keep the question inside statute_only?"
+  ]
+}

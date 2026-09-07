@@ -1,0 +1,136 @@
+{
+  "benchmark_matter_id": "M027",
+  "source_matter_id": "P04-Q04-M01",
+  "grouping_key": "P04-Q04-M01",
+  "paper_no": 4,
+  "question_no": 4,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement.",
+    "normalized": "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "group_background",
+        "atomic_ids": [
+          "P04-Q04-P02-IA",
+          "P04-Q04-P02-IB",
+          "P04-Q04-P02-IC"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M027-Q01",
+      "atomic_id": "P04-Q04-P02-IA",
+      "part_uid": "paper-04/q4/2/a",
+      "part_id": "2",
+      "item_id": "a",
+      "marks": 3,
+      "pdf_page": 15,
+      "question_original": "How can this Agreement be signed by both parties and what steps should Kanthi follow with regard to the registration of this Agreement?",
+      "question_normalized": "How can this Agreement be signed by both parties and what steps should Kanthi follow with regard to the registration of this Agreement?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement.",
+      "effective_background_normalized": "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement.",
+      "source_quote": "(a)\nHow can this Agreement be signed by both parties and what steps should\nKanthi follow with regard to the registration of this Agreement?",
+      "classification": {
+        "context_sources": [
+          "group"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.8,
+        "flags": [
+          "question_combines_two_requests"
+        ]
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    },
+    {
+      "benchmark_question_id": "M027-Q02",
+      "atomic_id": "P04-Q04-P02-IB",
+      "part_uid": "paper-04/q4/2/b",
+      "part_id": "2",
+      "item_id": "b",
+      "marks": 2,
+      "pdf_page": 15,
+      "question_original": "What are her liabilities in this regard?",
+      "question_normalized": "What are her liabilities in this regard?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": "After the execution of the Lease Agreement, the Notary Kanthi Peiris remembered that she could not obtain the Yearly Certificate from the Registrar of High Court for the current year."
+      },
+      "effective_background_original": "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement.\n\nAfter the execution of the Lease Agreement, the Notary Kanthi Peiris remembered that she could not obtain the Yearly Certificate from the Registrar of High Court for the current year.",
+      "effective_background_normalized": "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement.\n\nAfter the execution of the Lease Agreement, the Notary Kanthi Peiris remembered that she could not obtain the Yearly Certificate from the Registrar of High Court for the current year.",
+      "source_quote": "(b)\nAfter the execution of the Lease Agreement, the Notary Kanthi Peiris\nremembered that she could not obtain the Yearly Certificate from the\nRegistrar of High Court for the current year. What are her liabilities in this\nregard?",
+      "classification": {
+        "context_sources": [
+          "group",
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    },
+    {
+      "benchmark_question_id": "M027-Q03",
+      "atomic_id": "P04-Q04-P02-IC",
+      "part_uid": "paper-04/q4/2/c",
+      "part_id": "2",
+      "item_id": "c",
+      "marks": 2,
+      "pdf_page": 15,
+      "question_original": "What is the value of stamp duty payable on this Agreement?",
+      "question_normalized": "What is the value of stamp duty payable on this Agreement?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [
+          "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement. After the execution of the Lease Agreement, the Notary Kanthi Peiris remembered that she could not obtain the Yearly Certificate from the Registrar of High Court for the current year."
+        ],
+        "own_background": null
+      },
+      "effective_background_original": "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement.\n\nKanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement. After the execution of the Lease Agreement, the Notary Kanthi Peiris remembered that she could not obtain the Yearly Certificate from the Registrar of High Court for the current year.",
+      "effective_background_normalized": "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement.\n\nKanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement. After the execution of the Lease Agreement, the Notary Kanthi Peiris remembered that she could not obtain the Yearly Certificate from the Registrar of High Court for the current year.",
+      "source_quote": "(c)\nWhat is the value of stamp duty payable on this Agreement?",
+      "classification": {
+        "context_sources": [
+          "group",
+          "prior"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.85,
+        "flags": [
+          "prior_background_duplicates_group_background"
+        ]
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2024-10",
+  "exam_session": "OCTOBER 2024",
+  "matter_tier": "A",
+  "tier_a_question_count": 3
+}

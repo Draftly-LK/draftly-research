@@ -1,0 +1,104 @@
+{
+  "benchmark_matter_id": "M049",
+  "verifier": "verifier-M049",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:39:19Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M049-001",
+      "decision": "verified",
+      "note": "22-1871/s3 shown in full and the excerpt checked verbatim; the heading is 'Term of prescription for lands or immovable property' and the ten-year rule and the acknowledgment gloss read as quoted. Prescription (Amendment) Act No. 26 of 2014 was read in the corpus: its only substantive section replaces section 15 of Chapter 68, so section 3 is untouched at 2021-10."
+    },
+    {
+      "provision_id": "PROV-M049-002",
+      "decision": "verified",
+      "note": "21-1998/s57, heading 'Prescription'; the excerpt is verbatim and is the whole section. A grep for 'rescription' across 21-1998 returns this section alone, so it is the only prescription provision in the Act."
+    },
+    {
+      "provision_id": "PROV-M049-003",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim but reproduces limb (b) only. The full section 14 (heading 'Order of Declaration') carries the First Class Title of Absolute Ownership in limb (a), which is the limb this matter turns on; the subsection field should read '(a) and (b)' and the excerpt should include limb (a). The role is also queried - see disagreements."
+    },
+    {
+      "provision_id": "PROV-M049-004",
+      "decision": "verified",
+      "note": "21-1998/s33(1) verbatim. The 'except as provided for in this Act' carve-out was traced: sections 29-30 (challenge to a Second Class Title registration within ten years) and sections 58-59 (rectification for error or fraud) are what the Act provides, and none opens a prescription claim, so the why_relevant reading holds."
+    },
+    {
+      "provision_id": "PROV-M049-005",
+      "decision": "verified",
+      "note": "21-1998/s31(1) verbatim; the conversion right is expressly confined to a person already registered with a Second Class Title of Ownership."
+    },
+    {
+      "provision_id": "PROV-M049-006",
+      "decision": "verified",
+      "note": "21-1998/s38 verbatim and is the whole section."
+    },
+    {
+      "provision_id": "PROV-M049-007",
+      "decision": "verified",
+      "note": "21-1998/s73 excerpt is the opening clause of a longer section; verbatim and not misleading, since the remainder ('the provisions of this Act shall prevail over such other law') runs the same way."
+    },
+    {
+      "provision_id": "PROV-M049-008",
+      "decision": "verified",
+      "note": "21-1998/s1 verbatim; correctly treated as background, and the temporal note already records that the declaring Orders lie outside the corpus."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M049-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "statute_only survives. The bar is stated in terms in 21-1998 s.57 and needs no judicial gloss; the one point that would need judicial authority, possession begun before first registration, is confined to a caveat and on the enriched facts does not arise, because Somapala's registration in March 2009 predates Nimal's entry in January 2011. No indispensable provision is rejected or unresolved, so no downgrade. Every cited section was read in full and the gold reasoning holds; the prose was not altered."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "provision_role_and_hop_count",
+      "researcher_position": "21-1998 s.14 is indispensable, giving a three-hop chain: Prescription Ordinance s.3 as the rule, 21-1998 s.57 as the exception, and 21-1998 s.14 as the source of the classes of title by reference to which s.57 is drawn.",
+      "verifier_position": "On the enriched facts, which state that Somapala is registered with a First Class Title of Absolute Ownership, s.57 applies on its own terms and removing s.14 would not change the answer, which makes s.14 supporting and the chain two hops. Against that, the enriched fact uses that phrase only because s.14 supplies it, and 21-1998 s.32(1), which says registration with a First Class Title vests absolute ownership, is arguably the better provision for what the class means. The map was left as written rather than restructured on a judgement call of this kind.",
+      "supporting_sources": ["21-1998/s14", "21-1998/s57", "21-1998/s32"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "claim_support",
+      "researcher_position": "CL-M049-Q01-013, the caveat that the conclusion assumes the parcel was on the Title Register throughout the period of possession relied on, is a supported inferential conclusion resting on s.57 and s.1.",
+      "verifier_position": "Marked disputed. Neither s.57 nor s.1 says anything about possession predating first registration, so the caveat is not entailed by the provisions cited for it, and on the enriched facts it is counterfactual, since registration in March 2009 precedes entry in January 2011. It reads as a prudent hedge rather than a claim the corpus supports, and if it stays it belongs in corpus_gaps rather than in the claim set.",
+      "supporting_sources": ["21-1998/s57", "21-1998/s1", "FACT-M049-Q01-002", "FACT-M049-Q01-003"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M049-Q01-013, now disputed: the pre-registration-possession caveat is not entailed by 21-1998 s.57 or s.1, the two provisions cited for it, and does not arise on the enriched facts. All twelve other claims were checked against the full section text and are supported."
+    ],
+    "temporal_issues": [
+      "Everything but the Prescription Ordinance limb rests on an 'original_or_unconfirmed_consolidation' edition of Act No. 21 of 1998 with no amendment_events in the corpus. Sections 1, 14, 31, 33, 38, 57 and 73 all show in_force_from_year 1998 and latest_change_year None. Nothing in the corpus can confirm these are the 2021-10 texts, so the temporal position is asserted from a 1998 text rather than verified. The researcher recorded this as a corpus gap; it is the principal residual risk on this matter.",
+      "No temporal defect on the Prescription Ordinance limb: 26-2014 was read and replaces section 15 only."
+    ],
+    "missing_definitions_or_exceptions": [
+      "21-1998 s.75 defines 'registered land' as a land parcel the title to which is registered under this Act, and 'owner' as the person named in the Title Register. Both feed the s.57 trigger and CL-M049-Q01-010, and s.75 is the target of the corpus edges out of s.57 and s.38, yet it appears nowhere in the map. Not indispensable, so no provision was added, but it would be a sound background entry.",
+      "The 'except as provided for in this Act' exception in s.33(1) is left unpacked. Sections 29-30 and 58-59 are what the Act in fact provides; naming them would tighten the foreclosure argument. Checked: none is a route to prescriptive title.",
+      "21-1998 s.32(1), the effect of registration with a First Class Title, was consciously dropped in favour of s.33. Defensible, but s.32 is the provision that says what a First Class Title confers."
+    ],
+    "case_law_dependence": [
+      "None. The answer cites no case law, and no step needs Roman-Dutch common law: s.57 is an express statutory disapplication."
+    ],
+    "enrichment_issues": [
+      "FACT-M049-Q01-003 tracks Prescription Ordinance s.3 closely ('doing nothing from which an acknowledgment of a right in Somapala could fairly be inferred'). It puts the statutory test into the facts and makes the s.3 limb self-proving. It does not leak the decisive provision or the conclusion, which turn on s.57, so this is a drafting weakness rather than a spoiler.",
+      "FACT-M049-Q01-001 borrows the s.1 formula 'declared by Order of the Minister published in the Gazette'. Milder: the Act's name was already in the original background and no section number is disclosed.",
+      "Otherwise sound. No statute name or section number is introduced that the original background did not already carry, the conclusion is not leaked, the legal issue is unchanged, and both synthetic_decisive facts carry a reason explaining why they are needed."
+    ],
+    "duplicate_or_leak_issues": [
+      "None. The eight provisions are distinct sections, the claim set has no duplicates, and no provision appears in more than one of the indispensable, supporting and background arrays."
+    ]
+  },
+  "lawyer_questions": [
+    "Is the corpus text of the Registration of Title Act No. 21 of 1998 still the text in force at October 2021? The corpus edition is an unconfirmed consolidation with no amendment events, and the whole answer bar the Prescription Ordinance limb depends on ss.1, 14, 31, 33, 38, 57 and 73 reading in 2021 as they read in 1998. This cannot be settled from the corpus.",
+    "Is s.14 indispensable to the chain, or supporting, with s.32(1) the better provision for what a First Class Title of Absolute Ownership confers? The hop count of 3 stands or falls with the answer.",
+    "Should the pre-registration-possession caveat (CL-M049-Q01-013) remain in the gold answer, given it is not entailed by the provisions cited, does not arise on these facts, and would need case law to answer properly?"
+  ]
+}

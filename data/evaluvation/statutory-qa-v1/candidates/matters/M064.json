@@ -1,0 +1,65 @@
+{
+  "benchmark_matter_id": "M064",
+  "source_matter_id": "P11-Q04-M01",
+  "grouping_key": "P11-Q04-M01",
+  "paper_no": 11,
+  "question_no": 4,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "A client asks whether you have attested his father's will.",
+    "normalized": "A client asks whether you have attested his father's will.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P11-Q04-P01"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M064-Q01",
+      "atomic_id": "P11-Q04-P01",
+      "part_uid": "paper-11/q4/1",
+      "part_id": "1",
+      "item_id": null,
+      "marks": 1,
+      "pdf_page": 45,
+      "question_original": "Should you tell your client about his father's will?",
+      "question_normalized": "Should you tell your client about his father's will?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "A client asks whether you have attested his father's will.",
+      "effective_background_normalized": "A client asks whether you have attested his father's will.",
+      "source_quote": "1) A client asks whether you have attested his father's will. Should you tell your client about his\nfather's will?\n(1 mark)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "relationship_between_parties",
+        "relevant_document",
+        "other"
+      ]
+    }
+  ],
+  "matter_reference_date": "2020-10",
+  "exam_session": "OCTOBER 2020",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

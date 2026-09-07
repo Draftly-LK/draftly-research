@@ -1,0 +1,664 @@
+{
+  "matter": "M022",
+  "verifier": "verifier-V1",
+  "run_id": "2026-09-05-pilot-01",
+  "matter_reference_date": "2020-10",
+  "summary": {
+    "counts": {
+      "verified": 20,
+      "partially_verified": 4,
+      "rejected": 0,
+      "unresolved": 0,
+      "original_judgment_required": 0
+    },
+    "indispensable": {
+      "M022-Q01": [
+        "AUTH-M022-004",
+        "AUTH-M022-001",
+        "AUTH-M022-008",
+        "AUTH-M022-019",
+        "AUTH-M022-006"
+      ],
+      "M022-Q02": [
+        "AUTH-M022-001",
+        "AUTH-M022-002"
+      ]
+    },
+    "temporal_conclusion": "Decision: authorities_verified WITH temporal warnings, not blocked_temporal_uncertainty. Evidence: (1) the canonical tree (lankalaw HTML) and the registry RGD PDF (official, sha256 363103b9...) are both the 1980 Revised Edition of the Notaries Ordinance (Cap. 110, header ends at Law 20 of 1976); every cited rule was read on the PDF page and matches the tree text (rule 2 excepted: tree scrambled). (2) The researcher believed a pre-2022 amendment was missing from the tree. Tested: the 2022 Act's quotation of rule 16(a) ('the assessment number and the name, if any, of the street') is the wording inserted by Notaries (Amendment) Act No. 47 of 2011, whose text IS in the repo (data/legal-sources/library/finalized/1-1907-notaries-ordinance/47-2011-notaries-ordinance-amendment.json, from the Government Printer PDF under amendments/incoming/); the researcher missed it, together with Act No. 13 of 2013 (s.27(3), Form D) and the Increase of Fines Act 12 of 2005. So the tree is indeed the 1980 text and omits the 2011 and 2013 changes, but neither of those touches any rule cited here. (3) The 2022 Act's other non-matching quotation (rule 30 'registered power of attorney') remains unexplained by any instrument in the repo; rule 30 is supporting only (attorney alternative) and its conflict is kept unresolved. (4) Quotations of pre-existing words in the 2022/2024 Acts for rules 9, 20(g) and 29 match the 1980 text verbatim, and neither Act mentions rules 12, 18, 21, 22, 23, 24, 25, 28 or s.32. (5) Prevention of Frauds s.2/s.16: tree = pre-2022 text (chain 1947 -> 2022 -> 2024 complete in the PDF header); recorded current_text_superseded_since_event; demoted to supporting. Companies Act s.19: the only Companies amendment in the registry (Act 13 of 2019, SRC032) amends s.5 -> current_text_applicable. Result: s.32(2) current_text_applicable; s.31 rules history_unknown (because the rule-30 anomaly sits in the same section) but with no instrument in the repo touching them between 1980 and October 2020; the answers to Q01/Q02 would not change on any reading the repo supports. Flagged for legal review via the validator's temporal_warnings.",
+    "researcher_claims_tested": [
+      "'Tree is the 1980 revised edition' -> CONFIRMED (RGD PDF is the same edition).",
+      "'A pre-2022 amendment is missing from the tree' -> CONFIRMED and IDENTIFIED: Acts 47 of 2011 and 13 of 2013 (both in the repo, not cited by the researcher); they do not affect the cited rules. Rule 30 anomaly remains.",
+      "'Form E as in force in 2020 not located' -> WRONG: 1980 Form E is in the RGD PDF pp.19-20.",
+      "'Registry 2022 PDF is image-only' -> CONFIRMED (pdftotext returns nothing); OCR markdown used and marked as OCR.",
+      "'2024 PDF' -> has a text layer; read directly and matches the markdown."
+    ],
+    "tree_metadata_issue": "SRC001-7-1840.json: overrides_applied says the body was parsed from the 2024 consolidated PDF, but the body text of s.2/s.16 is the pre-2022 HTML text with a single 1947 marker -- the tree's metadata and body disagree. Reported, not edited."
+  },
+  "per_authority": [
+    {
+      "authority_id": "AUTH-M022-001",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(25)",
+      "verification_status": "verified",
+      "necessity_assessed": "indispensable",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.9-10",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: Notaries Ordinance No. 1 of 1907, s.31 rule (25), RGD PDF marginal note 'Deeds executed before more than one notary.' Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise. Supports the proposition exactly: first attesting notary complies with all of rule (20); other notaries with (a)-(e) and (g); each numbers (rule 23); first keeps protocol (rule 24), others a certified copy; all comply as far as possible with s.31. Not mentioned in the 2011, 2013, 2022 or 2024 amending Acts. The ca"
+    },
+    {
+      "authority_id": "AUTH-M022-002",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(20)",
+      "verification_status": "verified",
+      "necessity_assessed": "indispensable",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.8-9",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (20), RGD PDF marginal note 'Attestation.', paragraphs (a)-(g) read on pages 8-9. Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise (tree has 'f)' for '(f)'). Supports the proposition: the enumerated attestation contents. Paragraphs (b) and (e) were rewritten in 2022 without quoting the old words, so their October 2020 text rests on the 1980 edition alone (no 1980-2020 instrument in the repo touches them); (g)'s 1980 ending is quoted verbatim by the 2022 Act. The canoni"
+    },
+    {
+      "authority_id": "AUTH-M022-003",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(21)",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.9 (Form E p.19-20)",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (21), RGD PDF marginal 'Form of attestation.' Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise (both carry the stray capital in 'With'). Supports the proposition. NOTE: the researcher said Form E as in force in 2020 was not located; the 1980 Form E ('FORM OF ATTESTATION [Section 31 (21)]') IS printed in the RGD PDF, pdftotext pages 19-20 (Second Schedule, 'Form E'); it is not in the tree (schedules: []). effective_to null = still in force per repo records (no repeal re"
+    },
+    {
+      "authority_id": "AUTH-M022-004",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.32(2)",
+      "verification_status": "verified",
+      "necessity_assessed": "indispensable",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.12",
+        "temporal": "current_text_applicable"
+      },
+      "notes": "Identity confirmed: s.32(2) with sub-paragraphs (i)-(iii), RGD PDF page 12 (marginal 'Provisions as to application of rules in section 31 in special cases.'). Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise. Supports the proposition that a deed may be signed by parties at different times and places and how rules (6),(7),(23),(25),(18),(20),(19) then apply. s.32(1) (exclusions) checked: leases of Sri Lankan land are not excluded. Section 32 is not mentioned by any amending instrument held in the re"
+    },
+    {
+      "authority_id": "AUTH-M022-005",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(28)",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.10-11",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (28), RGD PDF marginal 'Transmission to the Registrar of Lands of deeds executed before different notaries.' Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise. Tree node carries amendment_event '[10, Law 20 of 1976]'. Supports: duplicate transmitted by the notary who first attests; other notaries need not. effective_to null = still in force per repo records (no repeal recorded). TEMPORAL: tree and RGD PDF are both the 1980 Revised Edition (Cap. 110; header amendments en"
+    },
+    {
+      "authority_id": "AUTH-M022-006",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(9)",
+      "verification_status": "verified",
+      "necessity_assessed": "indispensable",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.7",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (9), RGD PDF page 7 marginal 'Party executing the deed should be known to notary or to two attesting witnesses.' Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise. Supports the proposition (executant known to the notary or to two witnesses). Both later Acts quote the 1980 wording verbatim, which is positive evidence this rule stood unchanged until 2022. effective_to null = still in force per repo records (no repeal recorded). TEMPORAL: tree and RGD PDF are both the 1980"
+    },
+    {
+      "authority_id": "AUTH-M022-007",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(10)",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.7",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (10), RGD PDF page 7. Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise. Supports the proposition. Repealed only in 2024, after the matter date. effective_to null = still in force per repo records (no repeal recorded). TEMPORAL: tree and RGD PDF are both the 1980 Revised Edition (Cap. 110; header amendments end at Law 20 of 1976). section_versions.jsonl gives SRC014 s31/s32 one version (valid_from 1907-03-27, amendment_history 'unknown'); actions.csv has no SRC014 rows;"
+    },
+    {
+      "authority_id": "AUTH-M022-008",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(22)",
+      "verification_status": "verified",
+      "necessity_assessed": "indispensable",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.9",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (22), RGD PDF page 9 marginal 'Deed not to be attested outside notary's jurisdiction or in language other than that in which he is authorized to practise.' RGD PDF spells 'practise', tree 'practice' (transcription variance only). Supports the proposition: no attestation outside the area of authorisation. effective_to null = still in force per repo records (no repeal recorded). TEMPORAL: tree and RGD PDF are both the 1980 Revised Edition (Cap. 110; header amendments end at Law 20 of 1976). section_versions.jsonl gives SRC014 s31/s32 one version (valid_from 1907-03-"
+    },
+    {
+      "authority_id": "AUTH-M022-009",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(12)",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.7",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (12), RGD PDF page 7 marginal 'When may the deed be attested.' Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise. Supports the proposition (executant and witnesses sign in the notary's presence and in one another's presence). effective_to null = still in force per repo records (no repeal recorded). TEMPORAL: tree and RGD PDF are both the 1980 Revised Edition (Cap. 110; header amendments end at Law 20 of 1976). section_versions.jsonl gives SRC014 s31/s32 one version (val"
+    },
+    {
+      "authority_id": "AUTH-M022-010",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(23)",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.9",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (23), RGD PDF page 9 marginal 'Deeds to be numbered.' Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise. Supports the numbering proposition. effective_to null = still in force per repo records (no repeal recorded). TEMPORAL: tree and RGD PDF are both the 1980 Revised Edition (Cap. 110; header amendments end at Law 20 of 1976). section_versions.jsonl gives SRC014 s31/s32 one version (valid_from 1907-03-27, amendment_history 'unknown'); actions.csv has no SRC014 rows; the"
+    },
+    {
+      "authority_id": "AUTH-M022-011",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(24)",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.9",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (24), RGD PDF page 9 marginal 'Protocol to be preserved by notary.' Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise. Supports the protocol proposition. effective_to null = still in force per repo records (no repeal recorded). TEMPORAL: tree and RGD PDF are both the 1980 Revised Edition (Cap. 110; header amendments end at Law 20 of 1976). section_versions.jsonl gives SRC014 s31/s32 one version (valid_from 1907-03-27, amendment_history 'unknown'); actions.csv has no SRC"
+    },
+    {
+      "authority_id": "AUTH-M022-012",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(18)",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.8",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (18), RGD PDF page 8 marginal 'Date of execution of deed to be inserted.' Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise. Supports the proposition. effective_to null = still in force per repo records (no repeal recorded). TEMPORAL: tree and RGD PDF are both the 1980 Revised Edition (Cap. 110; header amendments end at Law 20 of 1976). section_versions.jsonl gives SRC014 s31/s32 one version (valid_from 1907-03-27, amendment_history 'unknown'); actions.csv has no SRC014"
+    },
+    {
+      "authority_id": "AUTH-M022-013",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(29)",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.11",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (29), RGD PDF page 11 marginal 'Transmission to the Registrar of Lands of deeds affecting lands situated outside district in which notary resides. [s.10, Law 20 of 1976]'. Both texts carry the stray apostrophe in \"'shall reside\". Supports the proposition (cross-district copy by the transmitting notary). effective_to null = still in force per repo records (no repeal recorded). TEMPORAL: tree and RGD PDF are both the 1980 Revised Edition (Cap. 110; header amendments end at Law 20 of 1976). section_versions.jsonl gives SRC014 s31/s32 one version (valid_from 1907-03-2"
+    },
+    {
+      "authority_id": "AUTH-M022-014",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(30)",
+      "verification_status": "partially_verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "partially",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.11",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (30), RGD PDF page 11 marginal 'Procedure in regard to deed executed by an attorney.'; RGD PDF text = tree text. Supports the alternative-route proposition only in part: the tree/RGD 1980 text is confirmed, but the 2022 Act describes the immediately pre-2022 rule as reading 'registered power of attorney'; none of the 2005, 2011 or 2013 instruments held in the repo inserted that word, so the October 2020 wording of this rule is positively uncertain (source conflict kept, unresolved). effective_to null = still in force per repo records (no repeal recorded). TEMPORAL"
+    },
+    {
+      "authority_id": "AUTH-M022-015",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(14)",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.7",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (14), RGD PDF page 7 marginal 'Full names of parties and witnesses to be ascertained.' Registry RGD PDF opened with poppler pdftotext -layout (PowerShell); wording on the cited page is identical to the tree text apart from OCR noise. Supports the proposition (describe party by both names if the signature differs). effective_to null = still in force per repo records (no repeal recorded). TEMPORAL: tree and RGD PDF are both the 1980 Revised Edition (Cap. 110; header amendments end at Law 20 of 1976). section_versions.jsonl gives SRC014 s31/s32 one version (valid_fro"
+    },
+    {
+      "authority_id": "AUTH-M022-016",
+      "title": "Notaries Ordinance Ordinance No. 1 of 1907 s.31(2)",
+      "verification_status": "partially_verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "partially",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "RGD PDF p.6 (tree text scrambled vs PDF)",
+        "temporal": "history_unknown"
+      },
+      "notes": "Identity confirmed: s.31 rule (2), RGD PDF page 6 marginal 'Attestation of documents drawn by any other person.' TEXT DEFECT: the tree reads 'certifying that such has been deed or drawn by himself' (scrambled); the RGD PDF reads 'certifying that such deed or instrument has been drawn by himself'. The excerpt is verbatim to the tree but not to the official PDF; recorded as a source conflict. The legal proposition (certificate of the drafting notary must be endorsed) is supported by both texts. effective_to null = still in force per repo records (no repeal recorded). TEMPORAL: tree and RGD PDF a"
+    },
+    {
+      "authority_id": "AUTH-M022-017",
+      "title": "Prevention of Frauds Ordinance Ordinance No. 7 of 1840 s.2",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "registry PDF p.1-2 carries the post-2022/2024 text; pre-2022 wording only in tree",
+        "temporal": "current_text_superseded_since_event"
+      },
+      "notes": "Identity confirmed: Prevention of Frauds Ordinance No. 7 of 1840, s.2, heading 'Deeds affecting immovable properly [sic] to be executed before a notary and witnesses.' Excerpt is verbatim to the tree. Registry PDF opened (pdftotext, PowerShell): s.2 there is the 2022/2024 text ('2. (1) ... unless - (a) ... (b) the left or right thumb impression ...'), which post-dates the matter; both versions keep the lease-at-will / one-month exception and the notary-plus-two-witnesses requirement. Supports the proposition. Necessity reassessed to supporting: the question presupposes a notarially attested le"
+    },
+    {
+      "authority_id": "AUTH-M022-018",
+      "title": "Prevention of Frauds Ordinance Ordinance No. 7 of 1840 s.16",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "registry PDF p.6 reads 'triplicate' (2022); tree = pre-2022 'duplicate'",
+        "temporal": "current_text_superseded_since_event"
+      },
+      "notes": "Identity confirmed: s.16 'Deeds to be executed in duplicate.' Tree = pre-2022 text ('in duplicate'); registry PDF page 6 reads 'in triplicate' with marginal [5, 30 of 2022] (post-matter). section_versions: s16 v1 valid 1840-2022. Supports the proposition that in October 2020 the deed was executed in duplicate. effective_to null: the excerpted wording was replaced by Act 30 of 2022 (date of commencement not held in the repo). TEMPORAL: the tree body is the pre-2022 text (single paragraph, marker [2, 60 of 1947] only) although its overrides_applied note claims a parse of the 2024 consolidated PD"
+    },
+    {
+      "authority_id": "AUTH-M022-019",
+      "title": "Companies Act Act No. 7 of 2007 s.19(1(a))",
+      "verification_status": "verified",
+      "necessity_assessed": "indispensable",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "DRC PDF p.42-43",
+        "temporal": "current_text_applicable"
+      },
+      "notes": "Identity confirmed: Companies Act No. 7 of 2007, Part I, crossheading 'COMPANY CONTRACTS ETC.', s.19 'Method of contracting.' Tree text (structurally_verified) matches the official DRC PDF pages 42-43 word for word. The canonical tree stores the rule's introductory words and each paragraph as separate JSON strings, so the text-checkable exact_excerpt is a single field; the remaining fields were each verified against the tree and the RGD PDF and are reproduced here verbatim: (i) two directors of the company; | (ii) if there be only one director, by that director; | (iii) if the articles of the "
+    },
+    {
+      "authority_id": "AUTH-M022-020",
+      "title": "Notaries (Amendment) Act Act No. 31 of 2022 s.16(11)",
+      "verification_status": "verified",
+      "necessity_assessed": "not_needed",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "registry PDF is image-only (pdftotext empty); OCR markdown used",
+        "temporal": "current_text_applicable"
+      },
+      "notes": "OCR TEXT (docling+rapidocr; visible OCR errors such as 'theretor ot the tollowing'). Identity confirmed from the md header: Notaries (Amendment) Act No. 31 of 2022, certified 31 Oct 2022, s.16 amends s.31 of the principal enactment; item (11) rewrites rule 20(b) and 20(e), amends (g), adds (h); s.22(2) replaces Form E. The Act is NOT law at the matter date (October 2020): effective_from = certification date, after the matter. 'current_text_applicable' here means only that this is the Act's own current text; it is recorded for temporal context (which rules changed after the matter), not as auth"
+    },
+    {
+      "authority_id": "AUTH-M022-021",
+      "title": "Notaries (Amendment) Act Act No. 6 of 2024 s.3(7)",
+      "verification_status": "verified",
+      "necessity_assessed": "not_needed",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "registry PDF text layer, printed p.3-4",
+        "temporal": "current_text_applicable"
+      },
+      "notes": "Identity confirmed: Notaries (Amendment) Act No. 6 of 2024, certified 31 Jan 2024; s.3 amends s.31 (items (1)-(10)): (3) rule 9, (4) repeals rule 10, (7) substitutes rule 20(g), (9) rule 29, (10) rule 30. The excerpt (md) contains a running page header and one replacement character; the PDF text layer reads identically. NOT law at the matter date; recorded for temporal context only (not_needed). Also read for the temporal test: its quotations of pre-existing words in rules 9, 29 and 30 are compared with the 1980 text in the SRC014 notes."
+    },
+    {
+      "authority_id": "AUTH-M022-022",
+      "title": "Edwin De Silva v. Karunadasa De Silva (1954) 56 NLR 1 s.None",
+      "verification_status": "partially_verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "partially",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "n/a (CommonLII markdown; body passage found)",
+        "temporal": "not_applicable_case"
+      },
+      "notes": "cases.jsonl: commonlii-LKCA-1954-80, 56 NLR 1, Rose C.J. and Sansoni J., 4 Aug 1954, status unverified. The researcher's excerpt was the headnote sentence; the equivalent passage exists in the body (Rose C.J.) and is used here. Holding on Land Development Ordinance s.162(1), reached by reading 'attestation' with Notaries Ordinance (then Cap. 91) s.30(20)-(21) (the current s.31 rules (20)-(21)); the mapping to s.31 is an inference, the judgment uses the older numbering. Supports 'attestation = signature + attestation clause' only as a construction of s.162 informed by the Notaries Ordinance, he"
+    },
+    {
+      "authority_id": "AUTH-M022-023",
+      "title": "Diyes Singho v. Herath (1962) 64 NLR 492 s.None",
+      "verification_status": "partially_verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "partially",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "n/a (CommonLII markdown; body passage found, NLR 494-495)",
+        "temporal": "not_applicable_case"
+      },
+      "notes": "cases.jsonl: commonlii-LKCA-1962-72, 64 NLR 492 (title spelt 'Hearath' in cases.jsonl, 'Herath' in the judgment), T. S. Fernando J. and Abeyesundere J., 21 Jun 1962, status unverified. Passage found in the body at NLR pp.494-495 ('495' inside the excerpt is the page break). The first sentence recites the s.31 consideration rule (cited as 's.31 (2) (e)', evidently rule 20(e)); the second is the holding: the notary's attestation statement that consideration was paid is not proof of payment. The researcher's claim that the case 'applied the attestation rules strictly' is NOT what it holds; it sup"
+    },
+    {
+      "authority_id": "AUTH-M022-024",
+      "title": "Rex v. Seenytamby (1924) 26 NLR 367 s.None",
+      "verification_status": "verified",
+      "necessity_assessed": "supporting",
+      "supports_claimed_proposition": "yes",
+      "checks": {
+        "file_exists": true,
+        "hash_match": true,
+        "excerpt_verbatim": true,
+        "identity_confirmed": true,
+        "pdf_page_confirmed": "n/a (CommonLII markdown; body passage found, NLR 370)",
+        "temporal": "not_applicable_case"
+      },
+      "notes": "cases.jsonl: commonlii-LKCA-1924-1, 26 NLR 367, Jayewardene A.J., 17 Dec 1924, status unverified. Researcher's excerpt was the headnote; the holding is in the body and is used here. The body also recites the then rule (s.29(19)(f), 1907 numbering) requiring the attestation to state 'the number and value of the stamps affixed to such deed or instrument and to the duplicate thereof and the name of the person by whom the stamps were supplied' -- a wording that differs from the 1980 rule 20(f), showing the rule was re-worded between 1924 and 1980. Supports: a knowingly false stamp statement in the"
+    }
+  ],
+  "omitted_authorities": [
+    {
+      "description": "Notaries Ordinance, Second Schedule, Form E (Form of Attestation) as in the 1980 revised edition",
+      "where_found": "data/legal-sources/library/statutes/1-1907-notaries-ordinance.pdf, pdftotext -layout pages 19-20 ('FormE / FORM OF ATTESTATION [Section 31 (21).]')",
+      "why_not_added": "Not present in the canonical tree (schedules: []) and the PDF is not text-checkable by the validator; recorded on AUTH-M022-003.omitted_authority_needed. Supporting, not indispensable: rule 21 already states the form requirement.",
+      "necessity": "supporting"
+    },
+    {
+      "description": "Notaries (Amendment) Act No. 47 of 2011 and No. 13 of 2013 (temporal context)",
+      "where_found": "data/legal-sources/library/finalized/1-1907-notaries-ordinance/47-2011-notaries-ordinance-amendment.json; 13-2013-notaries-ordinance-amendment.json",
+      "why_not_added": "Cannot add new authority ids; recorded in every SRC014 amendment_chain and in negative_retrieval. They amend rule 16(a), rule 26, Form F, s.27(3), Form D only.",
+      "necessity": "not_needed (context)"
+    },
+    {
+      "description": "Notaries Ordinance s.31 rule 26(c) (deed signed by parties in different months to be included in the monthly list)",
+      "where_found": "SRC014-1-1907.json /body/30/children/25; RGD PDF p.10",
+      "why_not_added": "Supporting colour for the two-notary procedure; not needed for the answer.",
+      "necessity": "not_needed"
+    },
+    {
+      "description": "Powers of Attorney Ordinance No. 4 of 1902 (SRC017) for the attorney alternative",
+      "where_found": "registry SRC017; not opened",
+      "why_not_added": "The attorney route is an inferential alternative only; researcher did not open it and neither did the verifier.",
+      "necessity": "not_needed"
+    }
+  ],
+  "claim_changes": [
+    {
+      "claim_id": "CL-M022-Q01-001",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": false,
+      "note": "Excerpt verbatim to tree /body/1; identity confirmed. Version: pre-2022 text (v2 1947-2022 per section_versions); current PDF text differs (2022/2024) but keeps the lease exception and notary+witness requirement. Authority reassessed as supporting."
+    },
+    {
+      "claim_id": "CL-M022-Q01-002",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": false,
+      "note": "s.32(2) verbatim; RGD PDF p.12 identical. Not mentioned by any amending instrument in the repo (2005, 2011, 2013, 2022, 2024): current_text_applicable."
+    },
+    {
+      "claim_id": "CL-M022-Q01-003",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": true,
+      "note": "r.25 verified paragraph by paragraph; RGD PDF pp.9-10 identical; not mentioned in the 2011/2013/2022/2024 Acts. Excerpt narrowed to paragraph (a) (single tree field) so that it is machine-checkable; the full rule is reproduced in the verifier notes."
+    },
+    {
+      "claim_id": "CL-M022-Q01-004",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": false,
+      "note": "r.22 verbatim (practice/practise spelling variance vs PDF); not amended 2022/2024."
+    },
+    {
+      "claim_id": "CL-M022-Q01-005",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": false,
+      "note": "r.9 and r.10 verbatim; RGD PDF p.7 identical. r.9 opening words quoted verbatim by the 2022 Act (evidence of no 1980-2022 change). r.10 repealed only in 2024."
+    },
+    {
+      "claim_id": "CL-M022-Q01-006",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": true,
+      "note": "Companies Act s.19(1)(a) verified with sub-paragraphs (i)-(iv) and closing words; DRC PDF pp.42-43 identical; the only registry amendment (Act 13 of 2019) touches s.5 only. Excerpt narrowed to the paragraph (a) lead-in (single tree field); (i)-(iv) reproduced in verifier notes."
+    },
+    {
+      "claim_id": "CL-M022-Q01-007",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": false,
+      "note": "Combined: r.25(a), r.12, PoF s.16 excerpts all substrings of verifier excerpts. 'In duplicate' is the pre-2022 s.16 text (triplicate only from Act 30 of 2022, post-matter)."
+    },
+    {
+      "claim_id": "CL-M022-Q01-008",
+      "from": "unverified",
+      "to": "partially_verified",
+      "text_changed": false,
+      "excerpts_changed": false,
+      "note": "r.2: tree text scrambled ('such has been deed or drawn') vs RGD PDF ('such deed or instrument has been drawn'); source conflict added. Proposition supported by both readings, but the quoted text is defective."
+    },
+    {
+      "claim_id": "CL-M022-Q01-009",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": true,
+      "note": "r.28 and s.32(2)(i)-(ii) verified; RGD PDF pp.10-12 identical; neither touched by any amending instrument in the repo. s.32(2) excerpt replaced by the subsection lead-in (single tree field); (i)-(iii) reproduced in verifier notes."
+    },
+    {
+      "claim_id": "CL-M022-Q01-010",
+      "from": "unverified",
+      "to": "partially_verified",
+      "text_changed": false,
+      "excerpts_changed": false,
+      "note": "r.30: tree = RGD 1980 text, but the 2022 Act describes the pre-2022 rule as 'registered power of attorney' -- October 2020 wording uncertain (source conflict kept). Inferential alternative only."
+    },
+    {
+      "claim_id": "CL-M022-Q01-011",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": false,
+      "note": "Scenario inference consistent with source.json background and question text."
+    },
+    {
+      "claim_id": "CL-M022-Q02-001",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": true,
+      "note": "r.25(a) verbatim; RGD PDF p.9 identical; not mentioned in the 2011/2013/2022/2024 Acts. Excerpt narrowed to paragraph (a)."
+    },
+    {
+      "claim_id": "CL-M022-Q02-002",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": true,
+      "note": "r.20 verified paragraph by paragraph; RGD PDF pp.8-9 identical. Paragraphs (b) and (e) rewritten by the 2022 Act (post-matter) without quoting the old words; no 1980-2020 instrument in the repo touches them (history_unknown flagged, low residual risk). Excerpt narrowed to the rule's lead-in (single tree field); (a)-(g) reproduced verbatim in verifier notes."
+    },
+    {
+      "claim_id": "CL-M022-Q02-003",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": true,
+      "excerpts_changed": false,
+      "note": "r.21 verbatim. Claim text corrected: the 1980 Form E is printed in the registry RGD PDF pp.19-20 (not in the tree); the researcher's statement that it was not located is withdrawn."
+    },
+    {
+      "claim_id": "CL-M022-Q02-004",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": true,
+      "note": "Combined: s.32(2)(ii), r.18, r.20(a)-(b) all verified against tree and RGD PDF. The s.32(2) and r.20 excerpts are replaced by the lead-in fields (single tree fields); sub-paragraphs reproduced in verifier notes."
+    },
+    {
+      "claim_id": "CL-M022-Q02-005",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": true,
+      "note": "Combined: r.14, r.25(b)-(c), r.28 verified; RGD PDF identical. The r.25(b)-(c) excerpt (two tree fields) is replaced by r.23 (AUTH-010) and r.24 (AUTH-011) excerpts, which the claim already cites, so every excerpt is a single checkable field; r.25(b)-(c) text is in the AUTH-001 verifier notes."
+    },
+    {
+      "claim_id": "CL-M022-Q02-006",
+      "from": "unverified",
+      "to": "partially_verified",
+      "text_changed": true,
+      "excerpts_changed": true,
+      "note": "Claim text corrected to what the three judgments actually hold. Edwin De Silva construes Land Development Ordinance s.162 using the Notaries Ordinance attestation rule; Diyes Singho holds the notary's consideration statement is not proof of payment (not 'strict application'); Rex v. Seenytamby holds a knowingly false stamp statement an offence. Excerpts replaced with body passages (holdings). All three use pre-1980 section numbering; mapping to the current s.31 rules is an inference."
+    },
+    {
+      "claim_id": "CL-M022-Q02-007",
+      "from": "unverified",
+      "to": "verified",
+      "text_changed": false,
+      "excerpts_changed": false,
+      "note": "Scenario inference consistent with the question text 'If Ruwan Perera is the first Notary'."
+    }
+  ],
+  "authority_moves": [
+    {
+      "authority_id": "AUTH-M022-017",
+      "question": "M022-Q01",
+      "from": "indispensable",
+      "to": "supporting",
+      "reason": "Question presupposes a notarially attested lease; s.2 explains the premise, not the mechanics; version conflict recorded. Hop count 5 -> 4."
+    },
+    {
+      "authority_id": "AUTH-M022-010",
+      "question": "M022-Q01",
+      "from": "(not listed)",
+      "to": "supporting",
+      "reason": "cited in reasoning step 5"
+    },
+    {
+      "authority_id": "AUTH-M022-011",
+      "question": "M022-Q02",
+      "from": "(not listed)",
+      "to": "supporting",
+      "reason": "cited in claim CL-M022-Q02-005"
+    },
+    {
+      "authority_id": "AUTH-M022-020 / AUTH-M022-021",
+      "question": "both",
+      "from": "supporting",
+      "to": "removed (necessity not_needed)",
+      "reason": "post-date the matter; support no claim; kept in verified-authorities.json for temporal context"
+    }
+  ],
+  "excerpt_field_constraint": "The validator checks exact_excerpt against json.dumps of the tree, so an excerpt must sit inside one JSON string. Rules 25, 20, s.32(2) and Companies Act s.19 are stored as lead-in + child paragraphs; exact_excerpt was set to one field (r.25(a); r.20 lead-in; s.32(2) lead-in; s.19(1)(a) lead-in) and the other fields were verified and reproduced verbatim in verification.notes. Rule 23's excerpt stops before the quoted number for the same reason (JSON-escaped quotation marks).",
+  "gate_result": {
+    "matter": "M022",
+    "passed": true,
+    "status": "unverified",
+    "errors": [],
+    "warnings": [
+      "AUTH-M022-003: verifier notes a missing authority: Notaries Ordinance Second Schedule, Form E (Form of Attestation), 1980 revised edition: located in the registry RGD PDF data/legal-sources/library/statutes/1-1907-notaries-ordinance.pdf pdftotext pages 19-20 but absent from the canonical tree, so it could not be added as a text-checkable authority. The 2022 Act (s.22(2)) replaced Form E after the matter date.",
+      "AUTH-M022-014: supporting authority has verification_status partially_verified",
+      "AUTH-M022-016: supporting authority has verification_status partially_verified",
+      "AUTH-M022-022: supporting authority has verification_status partially_verified",
+      "AUTH-M022-023: supporting authority has verification_status partially_verified",
+      "source conflict recorded for AUTH-M022-017: Prevention of Frauds Ordinance s.2: the canonical tree (1980 revision, last event 60 of 1947) and the registry PDF (LankaLaw consolidated 2024, incorporating Acts 30 of 2022 and 4 of 2024) carry different texts. The tree text is the candidate October 2020 wording; the PDF is post-matter. VERIFIER-V1: confirmed both texts (tree /body/1 vs registry PDF pdftotext pages 1-2, markers [2, 30 of 2022] [2, 4 of 2024]). These are successive versions rather than competing readings of one version; the tree text is the only pre-2022 wording held in the repo. Kept unresolved for legal review; authority reassessed as supporting.",
+      "source conflict recorded for AUTH-M022-018: Prevention of Frauds Ordinance s.16: tree says 'in duplicate'; registry PDF page 6 (as amended by Act 30 of 2022, marginal [5, 30 of 2022]) says 'in triplicate'. Tree = candidate pre-2022 wording. VERIFIER-V1: confirmed (PDF page 6, marginal 'Triplicate. [5, 30 of 2022]'). Successive versions; tree = pre-2022 wording.",
+      "source conflict recorded for AUTH-M022-014: Notaries Ordinance s.31 rule (30): tree reads 'he shall preserve a true copy of the power of attorney with his protocol'; the 2022 amending Act (s.16(13)) describes the words it replaces as 'he shall preserve a true copy of the registered power of attorney with his protocol'. The tree therefore does not reflect the immediately pre-2022 text; which text applied in October 2020 is unknown. VERIFIER-V1: confirmed. The registry RGD PDF (1980 edition, page 11) reads exactly as the tree ('true copy of the power of attorney'), so the mismatch is between the 1980 edition and the 2022 Act's description of the pre-2022 rule, not a transcription error in the tree. The intervening instruments held in the repo (Acts 12 of 2005, 47 of 2011, 13 of 2013) do not touch rule 30, so the source of the word 'registered' is unaccounted for.",
+      "source conflict recorded for AUTH-M022-016: Notaries Ordinance s.31 rule (2): the canonical tree text is scrambled ('certifying that such has been deed or drawn by himself'); the registry RGD PDF (1980 edition, pdftotext page 6) reads 'certifying that such deed or instrument has been drawn by himself'. Transcription defect in the tree; meaning unaffected. Added by verifier-V1.",
+      "legal-map.json M022-Q01 claim CL-M022-Q01-008: only partially verified",
+      "legal-map.json M022-Q01 claim CL-M022-Q01-010: only partially verified",
+      "legal-map.json M022-Q02 claim CL-M022-Q02-006: only partially verified",
+      "AUTH-M022-001: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M022-002: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M022-006: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M022-008: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review"
+    ],
+    "temporal_warnings": [
+      "AUTH-M022-001: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M022-002: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M022-006: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review",
+      "AUTH-M022-008: applicable_version_for_matter_date=history_unknown on an indispensable authority; needs legal review"
+    ],
+    "validator": "validate_legal_maps.py",
+    "stage": "authorities_verified"
+  },
+  "files_written": [
+    "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M022/verified-authorities.json",
+    "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M022/legal-map.json",
+    "data/evaluvation/legal-qa-v1/runs/2026-09-05-pilot-01/pilot/M022/verification-report.json"
+  ],
+  "status": "unverified"
+}

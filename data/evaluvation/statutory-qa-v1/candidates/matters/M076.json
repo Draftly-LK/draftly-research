@@ -1,0 +1,68 @@
+{
+  "benchmark_matter_id": "M076",
+  "source_matter_id": "P12-Q07-M01",
+  "grouping_key": "P12-Q07-M01",
+  "paper_no": 12,
+  "question_no": 7,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Anuk de Silva, Pramuk de Silva and Dinuk de Silva are three brothers and they own equal undivided shares of a divided portion of a land in extent of 45 perches as per a Partition Decree in the District Court of Ratnapura in case No. 345/P. Anuk wishes to sell his entitlement of the land. Pramuk wishes to construct a house on his share of the land having mortgaged it to a Bank. Dinuk wants to Lease his share of land to a Company for a commercial purpose. The Bank informed Pramuk that he should have a divided and defined block of land in order to enable them to grant him a loan. Therefore, he informs his brothers that they should file a Partition Action for the division of the property. Anuk has approached you for Legal advice.\n\nDinuk has requested you to draft an Indenture, of Lease to lease out his block of land after the division of property. The Lessee is OMEGA (Private) Ltd.",
+    "normalized": "Anuk de Silva, Pramuk de Silva and Dinuk de Silva are three brothers and they own equal undivided shares of a divided portion of a land in extent of 45 perches as per a Partition Decree in the District Court of Ratnapura in case No. 345/P. Anuk wishes to sell his entitlement of the land. Pramuk wishes to construct a house on his share of the land having mortgaged it to a Bank. Dinuk wants to Lease his share of land to a Company for a commercial purpose. The Bank informed Pramuk that he should have a divided and defined block of land in order to enable them to grant him a loan. Therefore, he informs his brothers that they should file a Partition Action for the division of the property. Anuk has approached you for Legal advice.\n\nDinuk has requested you to draft an Indenture, of Lease to lease out his block of land after the division of property. The Lessee is OMEGA (Private) Ltd.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P12-Q07-P02"
+        ]
+      },
+      {
+        "segment_index": 1,
+        "field": "own_background",
+        "atomic_ids": [
+          "P12-Q07-P02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M076-Q01",
+      "atomic_id": "P12-Q07-P02",
+      "part_uid": "paper-12/q7/ii",
+      "part_id": "ii",
+      "item_id": null,
+      "marks": 2,
+      "pdf_page": 51,
+      "question_original": "Draft the Testimonium clause of the Indenture of Lease.",
+      "question_normalized": "Draft the Testimonium clause of the Indenture of Lease.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Anuk de Silva, Pramuk de Silva and Dinuk de Silva are three brothers and they own equal undivided shares of a divided portion of a land in extent of 45 perches as per a Partition Decree in the District Court of Ratnapura in case No. 345/P. Anuk wishes to sell his entitlement of the land. Pramuk wishes to construct a house on his share of the land having mortgaged it to a Bank. Dinuk wants to Lease his share of land to a Company for a commercial purpose. The Bank informed Pramuk that he should have a divided and defined block of land in order to enable them to grant him a loan. Therefore, he informs his brothers that they should file a Partition Action for the division of the property. Anuk has approached you for Legal advice.\n\nDinuk has requested you to draft an Indenture, of Lease to lease out his block of land after the division of property. The Lessee is OMEGA (Private) Ltd.",
+      "effective_background_normalized": "Anuk de Silva, Pramuk de Silva and Dinuk de Silva are three brothers and they own equal undivided shares of a divided portion of a land in extent of 45 perches as per a Partition Decree in the District Court of Ratnapura in case No. 345/P. Anuk wishes to sell his entitlement of the land. Pramuk wishes to construct a house on his share of the land having mortgaged it to a Bank. Dinuk wants to Lease his share of land to a Company for a commercial purpose. The Bank informed Pramuk that he should have a divided and defined block of land in order to enable them to grant him a loan. Therefore, he informs his brothers that they should file a Partition Action for the division of the property. Anuk has approached you for Legal advice.\n\nDinuk has requested you to draft an Indenture, of Lease to lease out his block of land after the division of property. The Lessee is OMEGA (Private) Ltd.",
+      "source_quote": "(ii)\nDinuk has requested you to draft an Indenture, of Lease to lease out his block of land after\nthe division of property. The Lessee is OMEGA (Private) Ltd. Draft the Testimonium clause\nof the Indenture of Lease.\n(02 marks)",
+      "classification": {
+        "context_sources": [
+          "shared",
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2020-04",
+  "exam_session": "APRIL 2020",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

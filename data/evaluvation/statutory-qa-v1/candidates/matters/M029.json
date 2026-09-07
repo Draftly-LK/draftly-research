@@ -1,0 +1,66 @@
+{
+  "benchmark_matter_id": "M029",
+  "source_matter_id": "P04-Q08-M01",
+  "grouping_key": "P04-Q08-M01",
+  "paper_no": 4,
+  "question_no": 8,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "A father intends to revoke a gift granted upon a Deed of Gift.",
+    "normalized": "A father intends to revoke a gift granted upon a Deed of Gift.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P04-Q08-P02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M029-Q01",
+      "atomic_id": "P04-Q08-P02",
+      "part_uid": "paper-04/q8/2",
+      "part_id": "2",
+      "item_id": null,
+      "marks": 3,
+      "pdf_page": 17,
+      "question_original": "Discuss the grounds on which he can do so.",
+      "question_normalized": "Discuss the grounds on which he can do so.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "A father intends to revoke a gift granted upon a Deed of Gift.",
+      "effective_background_normalized": "A father intends to revoke a gift granted upon a Deed of Gift.",
+      "source_quote": "(2) A father intends to revoke a gift granted upon a Deed of Gift. Discuss the grounds\non which he can do so.",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "instrument_date",
+        "property_identity",
+        "default_or_breach",
+        "registration_status"
+      ]
+    }
+  ],
+  "matter_reference_date": "2024-10",
+  "exam_session": "OCTOBER 2024",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

@@ -1,0 +1,96 @@
+{
+  "benchmark_matter_id": "M083",
+  "verifier": "verifier-M083",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-05T00:00:00Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M083-001",
+      "decision": "verified",
+      "note": "check confirms the excerpt is verbatim in 1-1907/s31 and show --full confirms it is rule (1). Reading 31-2022 s.16, 6-2024 s.3, 47-2011 ss.2-3 and 20-1976 s.10 in full confirms none of them touches rule (1): the 2022 substitutions start at rule (3), the 2024 amendments at rule (5). The rule as quoted stood in October 2019 and is properly the single indispensable provision."
+    },
+    {
+      "provision_id": "PROV-M083-002",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim and temporally safe, but rule (24) is a protocol-register content rule, not a rule about disclosure; it supports the answer only by analogy, so the role was moved from supporting to background. Note also that rule (20)(h)(ii), inserted by 31-2022 s.16(11)(d), now requires the testator's name to be entered in the notary's deed register, which weakens the reading that the Ordinance keeps wills confidential under the current consolidated text, though it did not exist in October 2019 and so does not affect the matter date."
+    },
+    {
+      "provision_id": "PROV-M083-003",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim, but 31-2022 s.17 repeals and replaces the whole of s.34 and the corpus body matches that replacement word for word, so nothing in this section can be attributed to October 2019. The researcher flagged the fine figure; the paragraph structure of s.34(1)(a) is equally post-2019. Correctly kept out of the indispensable set."
+    },
+    {
+      "provision_id": "PROV-M083-004",
+      "decision": "partially_verified",
+      "note": "The proviso is verbatim and unamended, so it applied in October 2019, but the temporal note misstates the history: 20-1976 s.10 amended rules (29) and (36), not rule (26); 47-2011 s.3 renumbered rule (26)(a) as (26)(a)(i); and 6-2024 s.3(8) substituted Form F 1 for Form F in that subparagraph, so the surrounding corpus text is post-2019."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M083-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "The conclusion (the notary must not divulge) follows from rule (1) of s.31 alone and that provision is fully verified at the matter date, so the authority requirement stays statute_only and the hop count stays 1. The status was downgraded because three strands of the drafted answer are not supported by the frozen corpus: the penalty sentence rests on the 2022 text of s.34; the assertion that the children have no interest in the estate at all while the testator lives is succession law with no corpus provision behind it; and rules (24) and (26) are described as confidentiality provisions when they are record-keeping provisions. A lawyer should either approve those strands from outside the corpus or have the prose trimmed to rule (1)."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "role_of_provision",
+      "researcher_position": "Rule (24) of s.31 is a supporting provision that shows the Ordinance itself protects the confidentiality of a will.",
+      "verifier_position": "Rule (24) prescribes what a notary enters in his own protocol register and says nothing about disclosure to third parties; it is background reinforcement at best, and rule (20)(h)(ii), inserted in 2022 and requiring the testator's name in the deed register, shows the Ordinance does not treat every will detail as secret in the notary's own records.",
+      "supporting_sources": ["1-1907/s31", "31-2022/s16"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "claim_support",
+      "researcher_position": "The children's status as prospective heirs gives them no entitlement to the information because while the testator lives they have no interest in his estate at all (CL-M083-Q01-006, and the same sentence in the gold answer).",
+      "verifier_position": "The first half follows from rule (1), since the children are not the employer, but the proposition that a prospective heir has no interest in a living testator's estate is a rule of succession law and no provision in the corpus states it; it should not appear in a statute-only gold answer without a lawyer's authority.",
+      "supporting_sources": ["1-1907/s31"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "temporal_reliance",
+      "researcher_position": "Section 34 can be cited as supporting authority for the penal enforcement of rule (1), with a caveat that the fine figures come from a 2022 amendment.",
+      "verifier_position": "The entire section in the corpus is the 2022 replacement, so the corpus supports no statement at all about the penalty in force in October 2019; a caveat inside the gold answer prose about which corpus text is being used is also out of place in a model answer.",
+      "supporting_sources": ["1-1907/s34", "31-2022/s17"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M083-Q01-006: the succession-law limb (no interest in the estate at all while the testator lives) has no corpus provision behind it; the employer limb is sound.",
+      "CL-M083-Q01-002: the assertion that the Ordinance treats a will attested by a notary as confidential is an inference from two record-keeping rules; the second half of the claim is verbatim-accurate.",
+      "CL-M083-Q01-010: the second limb (risk of prosecution) depends on PROV-M083-003, which is not the version in force at the matter date."
+    ],
+    "temporal_issues": [
+      "s.34 exists in the corpus only as substituted by 31-2022 s.17; the October 2019 penalty provision is absent. CL-M083-Q01-003 and CL-M083-Q01-010 were marked disputed for this reason.",
+      "The corpus body of rule (26)(a)(i) carries the 2024 wording (Form F 1, 6-2024 s.3(8)) and the 2011 renumbering (47-2011 s.3); only the proviso relied on is unchanged since before the matter date.",
+      "Rule (1) of s.31 itself is clean: no amendment Act in the corpus touches it, so the indispensable authority is safe at October 2019."
+    ],
+    "missing_definitions_or_exceptions": [
+      "employer in rule (1) is undefined; defs 1-1907 employer returns nothing and s.43 defines only three unrelated terms. Reading it as the testator who instructed the notary is ordinary-language construction, and the enrichment makes the instructing party determinate, but nothing in the corpus states it.",
+      "required to do so by law is undefined. A corpus-wide grep for divulge, secrecy and confidential, and a read of ss.21, 32, 33, 41 and 42, found no provision obliging a notary to disclose a will to private inquirers; the only compelled-disclosure duties are to officers (rule (36)(b) and (d), inspection of records) and none is engaged. The second exception is therefore closed by the corpus as well as by the added fact.",
+      "No definition or exception was found missing from the map. edges 1-1907/s31 returns only s.11 (change of zone), s.43 (definition of High Court Judge) and the amending Acts, none of which bears on disclosure."
+    ],
+    "case_law_dependence": [
+      "None in the drafted answer; the validator's case-citation check passes. The only extra-statutory proposition is the succession-law sentence in CL-M083-Q01-006, which would in practice rest on common law rather than statute."
+    ],
+    "enrichment_issues": [
+      "Scope: the original question asks only whether the notary should say that he attested a Will. The enriched background adds that the children also ask in whose favour it is drawn, which enlarges the issue to disclosure of contents. It does not change the answer, since rule (1) covers both, but it is a widening a lawyer should sign off.",
+      "FACT-M083-Q01-004 paraphrases the second exception in rule (1) fairly closely (no court order, summons or other legal process; no public officer requiring the information). It closes a statutory exception rather than assuming the conclusion, which is legitimate, but it comes near to restating the legal test in factual dress.",
+      "No statute name, section number or conclusion is leaked in the enriched background, and each synthetic_decisive fact states why it is needed. The three decisive facts each close a route to lawful disclosure rather than deciding the question by assumption."
+    ],
+    "duplicate_or_leak_issues": [
+      "No leak of statute names or section numbers into the background. Party names, address and register number are invented and carry no client data.",
+      "PROV-M083-001, -002 and -004 are three different rules of the same corpus section (1-1907/s31); they are distinct rules, not duplicates, but any downstream scoring that keys on section_id will see one section cited three times."
+    ]
+  },
+  "lawyer_questions": [
+    "Is his employer in rule (1) of section 31 to be read as the testator who instructed the notary, so that only he can give the express permission? Nothing in the corpus defines the word and the whole answer turns on it.",
+    "May the answer state that prospective heirs have no interest in a living testator's estate, given that no provision in the frozen corpus says so?",
+    "Should the gold answer keep the section 34 penalty sentence at all, when the corpus holds only the 2022 replacement and the October 2019 penalty text is unavailable?",
+    "Is the enrichment's added question about the contents of the Will (in whose favour it is drawn) an acceptable widening of a question that originally asked only about the fact of attestation?"
+  ]
+}

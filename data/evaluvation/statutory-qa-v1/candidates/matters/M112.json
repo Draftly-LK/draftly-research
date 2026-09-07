@@ -1,0 +1,178 @@
+{
+  "benchmark_matter_id": "M112",
+  "source_matter_id": "P16-Q05-M03",
+  "grouping_key": "P16-Q05-M03",
+  "paper_no": 16,
+  "question_no": 5,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Lal Peiris is a Notary practicing in Colombo. Waruna Liyanage a friend of Lal Peiris wishes to purchase a house and property in Matara and wants it to be attested by Lal Peiris. The market value of the property is Rs.1,000,000/-",
+    "normalized": "Lal Peiris is a Notary practicing in Colombo. Waruna Liyanage a friend of Lal Peiris wishes to purchase a house and property in Matara and wants it to be attested by Lal Peiris. The market value of the property is Rs.1,000,000/-",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "group_background",
+        "atomic_ids": [
+          "P16-Q05-PC-I01",
+          "P16-Q05-PC-I02",
+          "P16-Q05-PC-I03",
+          "P16-Q05-PC-I04"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M112-Q01",
+      "atomic_id": "P16-Q05-PC-I01",
+      "part_uid": "paper-16/q5/C/1",
+      "part_id": "C",
+      "item_id": "1",
+      "marks": 1,
+      "pdf_page": 66,
+      "question_original": "How can Lal Peiris attest this Deed?",
+      "question_normalized": "How can Lal Peiris attest this Deed?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Lal Peiris is a Notary practicing in Colombo. Waruna Liyanage a friend of Lal Peiris wishes to purchase a house and property in Matara and wants it to be attested by Lal Peiris. The market value of the property is Rs.1,000,000/-",
+      "effective_background_normalized": "Lal Peiris is a Notary practicing in Colombo. Waruna Liyanage a friend of Lal Peiris wishes to purchase a house and property in Matara and wants it to be attested by Lal Peiris. The market value of the property is Rs.1,000,000/-",
+      "source_quote": "1.How can Lal Peiris attest this Deed? (1 mark)",
+      "classification": {
+        "context_sources": [
+          "group"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "instrument_date"
+      ]
+    },
+    {
+      "benchmark_question_id": "M112-Q02",
+      "atomic_id": "P16-Q05-PC-I02",
+      "part_uid": "paper-16/q5/C/2",
+      "part_id": "C",
+      "item_id": "2",
+      "marks": 2,
+      "pdf_page": 66,
+      "question_original": "What is the duty cast on Lal Peiris regarding this Deed as the land is situated outside the District in which he resides?",
+      "question_normalized": "What is the duty cast on Lal Peiris regarding this Deed as the land is situated outside the District in which he resides?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Lal Peiris is a Notary practicing in Colombo. Waruna Liyanage a friend of Lal Peiris wishes to purchase a house and property in Matara and wants it to be attested by Lal Peiris. The market value of the property is Rs.1,000,000/-",
+      "effective_background_normalized": "Lal Peiris is a Notary practicing in Colombo. Waruna Liyanage a friend of Lal Peiris wishes to purchase a house and property in Matara and wants it to be attested by Lal Peiris. The market value of the property is Rs.1,000,000/-",
+      "source_quote": "2.What is the duty cast on Lal Peiris regarding this Deed as the land is situated outside the District in which he resides? (2.marks)",
+      "classification": {
+        "context_sources": [
+          "group"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "instrument_date"
+      ]
+    },
+    {
+      "benchmark_question_id": "M112-Q03",
+      "atomic_id": "P16-Q05-PC-I03",
+      "part_uid": "paper-16/q5/C/3",
+      "part_id": "C",
+      "item_id": "3",
+      "marks": 1,
+      "pdf_page": 66,
+      "question_original": "What is the value of stamp duty payable on this?",
+      "question_normalized": "What is the value of stamp duty payable on this?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Lal Peiris is a Notary practicing in Colombo. Waruna Liyanage a friend of Lal Peiris wishes to purchase a house and property in Matara and wants it to be attested by Lal Peiris. The market value of the property is Rs.1,000,000/-",
+      "effective_background_normalized": "Lal Peiris is a Notary practicing in Colombo. Waruna Liyanage a friend of Lal Peiris wishes to purchase a house and property in Matara and wants it to be attested by Lal Peiris. The market value of the property is Rs.1,000,000/-",
+      "source_quote": "3. What is the value of stamp duty payable on this? (1 mark)",
+      "classification": {
+        "context_sources": [
+          "group"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "property_identity",
+        "instrument_date",
+        "consideration_or_value"
+      ]
+    },
+    {
+      "benchmark_question_id": "M112-Q04",
+      "atomic_id": "P16-Q05-PC-I04",
+      "part_uid": "paper-16/q5/C/4",
+      "part_id": "C",
+      "item_id": "4",
+      "marks": 1,
+      "pdf_page": 66,
+      "question_original": "Where should Lal Peiris pay stamp duty for this Deed?",
+      "question_normalized": "Where should Lal Peiris pay stamp duty for this Deed?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Lal Peiris is a Notary practicing in Colombo. Waruna Liyanage a friend of Lal Peiris wishes to purchase a house and property in Matara and wants it to be attested by Lal Peiris. The market value of the property is Rs.1,000,000/-",
+      "effective_background_normalized": "Lal Peiris is a Notary practicing in Colombo. Waruna Liyanage a friend of Lal Peiris wishes to purchase a house and property in Matara and wants it to be attested by Lal Peiris. The market value of the property is Rs.1,000,000/-",
+      "source_quote": "4.Where should Lal Peiris pay stamp duty for this Deed? (1 mark)",
+      "classification": {
+        "context_sources": [
+          "group"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "instrument_date"
+      ]
+    }
+  ],
+  "matter_reference_date": "2018-04",
+  "exam_session": "APRIL 2018",
+  "matter_tier": "A",
+  "tier_a_question_count": 4
+}

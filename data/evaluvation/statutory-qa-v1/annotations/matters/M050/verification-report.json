@@ -1,0 +1,112 @@
+{
+  "benchmark_matter_id": "M050",
+  "verifier": "verifier-M050",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:40:45Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M050-001",
+      "decision": "verified",
+      "note": "Second limb of rule (9) checked verbatim in 1-1907/s31. 6-2024 s.3(3) substituted \"he shall\" for \"and in the latter case, he shall\" in rule (9), which proves the limb sat inside rule (9) at the matter date and was then keyed to reliance on the witnesses; the quoted words themselves are unchanged."
+    },
+    {
+      "provision_id": "PROV-M050-002",
+      "decision": "verified",
+      "note": "Checked verbatim in 31-2022/s16(6). The words quoted for substitution are the rule (9) first limb in force in October 2021. In substance this is the indispensable provision for the answer, but it cannot be moved into indispensable_provision_ids because the validator errors on an indispensable provision with applicable_to_matter_date=false; recorded as a disagreement instead."
+    },
+    {
+      "provision_id": "PROV-M050-003",
+      "decision": "verified",
+      "note": "Rule (8) checked verbatim; not touched by 20-1976 s.10, 47-2011 ss.2-3, 31-2022 s.16 or 6-2024 s.3, so the corpus text is the October 2021 text."
+    },
+    {
+      "provision_id": "PROV-M050-004",
+      "decision": "verified",
+      "note": "Rule (12) checked verbatim and likewise unamended; supporting role is right, since it governs execution generally rather than the identification point the question asks about."
+    },
+    {
+      "provision_id": "PROV-M050-005",
+      "decision": "unresolved",
+      "note": "Rule (20)(b) as held in the corpus was substituted by 31-2022 s.16(11)(a) after the matter date and the repealed words are not reproduced anywhere in the corpus, so the October 2021 attestation-disclosure duty cannot be established."
+    },
+    {
+      "provision_id": "PROV-M050-006",
+      "decision": "unresolved",
+      "note": "The corpus text of Prevention of Frauds Ordinance s.2 is the 30-2022 / 4-2024 version and neither amending Act reproduces the repealed words; background only, and no claim relies on it."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M050-901",
+      "reason": "Registration of Title Act, No. 21 of 1998, s.44(a) requires a notary attesting an instrument under that Act to satisfy himself of the identity of parties not known to him by reference to their official identity cards. It is in force from 1998 with no amendment events, so it was available in October 2021. It does not govern an ordinary deed of transfer under the Notaries Ordinance, but it falsifies the draft answer's unqualified statement that no identity-document route existed at the matter date, so it is added as a supporting provision and cited by CL-M050-Q01-012."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M050-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "The identification reasoning is verified end to end: rule (9) first limb as at October 2021 (recovered verbatim from 31-2022 s.16(6)), the good-repute and declaration limb of rule (9), the two-witness minimum in rule (8) and the joint-signature requirement in rule (12). The question is downgraded because the gold answer prose, which the verifier may not rewrite, contains one rule statement that cannot be supported at the matter date (rule (20)(b)) and one temporal statement that is too broad (no identity-document route in 2021), and because repealed rule (10) was in force at the matter date with its text unrecoverable, which leaves the conclusion's exhaustive framing unchecked."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "provision_role",
+      "researcher_position": "PROV-M050-002 (31-2022 s.16(6)) is supporting, because the amending Act post-dates the matter; the indispensable set is PROV-M050-001 and PROV-M050-003.",
+      "verifier_position": "The operative prohibition the whole answer turns on exists in the corpus only inside PROV-M050-002, so it is indispensable in substance. The schema's applicable_to_matter_date rule makes that unrecordable, so the map understates which provision carries the load. Either the map needs a way to mark a post-dating amendment as the record of earlier in-force text, or a pre-2022 edition of the Notaries Ordinance has to be added to the corpus.",
+      "supporting_sources": [
+        "31-2022/s16",
+        "1-1907/s31",
+        "6-2024/s3"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "temporal_scope_of_conclusion",
+      "researcher_position": "The identity-document route (national identity card, passport bio-page, driving licence) was not available to a notary in October 2021.",
+      "verifier_position": "True for a deed attested under the Notaries Ordinance, but not without qualification: Registration of Title Act s.44(a), in force since 1998, already required identity of persons not known to the notary to be established by official identity cards for instruments under that Act.",
+      "supporting_sources": [
+        "21-1998/s44",
+        "31-2022/s16"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M050-Q01-005 (rejected): states the rule (20)(b) attestation-disclosure duty as law at the matter date, but its only support, PROV-M050-005, is the post-2022 substituted paragraph and the repealed wording is not in the corpus.",
+      "CL-M050-Q01-010 (disputed): the conclusion is sound on the identification limbs but includes the attestation-recording requirement that rests on the rejected CL-M050-Q01-005, and its 'only in these circumstances' framing cannot be verified while rule (10) is unrecoverable.",
+      "CL-M050-Q01-012 (disputed): the no-identity-document-route statement is too broad, see 21-1998/s44."
+    ],
+    "temporal_issues": [
+      "The corpus holds no pre-2022 edition of the Notaries Ordinance. The rule (9) first limb in force in October 2021 is recoverable, but only because 31-2022 s.16(6) quotes the words it removed; the reconstruction was re-checked and is sound. 17-1852/s4 (Deeds and Documents (Execution before Public Officers) Ordinance), unamended since 1852, carries the same formula (party 'known to ... or to at least two of the attesting witnesses thereto, who shall make a declaration to that effect'), which independently corroborates the reconstructed wording.",
+      "Rule (10) of section 31 was repealed by 6-2024 s.3(4), so it was in force in October 2021, and neither the amending Act nor the consolidated text reproduces it. A rule sitting immediately after the identification rule and in force at the matter date is unreadable, so no answer to 'under what circumstances can the notary attest' can be treated as exhaustive on this corpus.",
+      "Rule (20)(b) pre-2022 wording and Prevention of Frauds Ordinance s.2 pre-2022 wording are both unrecoverable, as the researcher recorded in corpus_gaps.",
+      "Rules (8) and (12) were re-checked against every amending Act touching section 31 (20-1976 s.10, 47-2011 ss.2 and 3, 31-2022 s.16, 6-2024 s.3); none of them touches either rule, so the researcher's temporal notes hold."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Section 32 disapplies rules (20), (23) to (26) and part of rule (16) for certain instruments, and never rule (8), (9) or (12); the researcher's exclusion of it is correct.",
+      "Section 33 (no invalidity for non-compliance in a matter of form) is not in the map. It is not needed for a question about the circumstances of attestation, but a lawyer may want it noted, since it bears on the consequence of getting the identification wrong.",
+      "1-1907/s43 defines only 'Council of Legal Education', 'High Court Judge' and 'Registrar-General'; nothing the answer turns on is a defined term, so no definition is missing.",
+      "Registration of Title Act s.44 was the one alternative attestation regime the researcher missed; added as PROV-M050-901."
+    ],
+    "case_law_dependence": [
+      "None. The circumstances are set out exhaustively in the rules of section 31, and the answer cites no case."
+    ],
+    "enrichment_issues": [
+      "FACT-M050-Q01-004 and, to a lesser extent, FACT-M050-Q01-003 restate the statutory test almost word for word ('persons of settled reputation', 'willing to sign a declaration at the foot of the deed that they are well acquainted with ... and know his proper name, occupation and residence'). No statute name or section number is leaked, but the conditions of rule (9) are handed to the answerer as facts, so a model can reproduce the conclusion without knowing the rule. The facts should be restated in lay terms before this is used as a benchmark item.",
+      "The enriched background otherwise keeps the original legal issue intact: the executant is still unknown to the notary, one witness is known to him, and the outcome still turns on the two-witness limb."
+    ],
+    "duplicate_or_leak_issues": [
+      "The enriched background does not name any statute or section and does not state the conclusion in terms; the leak is limited to the statutory wording noted above.",
+      "No real names, NICs or addresses are used; the parties are plainly invented."
+    ]
+  },
+  "lawyer_questions": [
+    "Repealed rule (10) of section 31 of the Notaries Ordinance was in force in October 2021 and its text is nowhere in the corpus: can you supply the pre-2024 wording and confirm it adds no further condition on a notary attesting for an executant he does not know, so that the conclusion's 'only in these circumstances' framing can stand?",
+    "Do you accept sourcing the October 2021 wording of rule (9) from the words quoted for substitution in 31-2022 s.16(6), or should a pre-2022 edition of the Notaries Ordinance be added to the corpus before this matter is used as gold?",
+    "Should the rule (20)(b) sentence be dropped from the gold answer, or can you supply the pre-2022 wording of that paragraph?",
+    "Should the closing sentence about the 2022 identity-document reform be qualified to deeds under the Notaries Ordinance, given Registration of Title Act s.44(a)?"
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "benchmark_matter_id": "M018",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M018",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:02:26Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2025-10",
+  "matter_reference_date_basis": "exam_session OCTOBER 2025 recorded in candidates/matters/M018.json; the law is stated as at that session, while the scenario facts are dated 2017 (grant of the Special Power of Attorney) and 2020 (commencement of the rentals).",
+  "corpus_gaps": [
+    "The corpus contains no provision governing the construction of the scope of an attorney's mandate. Whether a Special Power of Attorney authorising the attorney 'to sell' also authorises her to grant a lease is a question of the Roman-Dutch law of mandate/agency and of judicial authority on the strict construction of special powers, neither of which is in the frozen statutory corpus.",
+    "The corpus has no statutory rule on whether an act done by an attorney in excess of her authority can be ratified by the principal, or on the effect of such an act against a third party such as Sheela.",
+    "The text of the 2017 instrument itself is not available, so it cannot be established from the corpus whether that Special Power of Attorney specified its own period of validity (which is what section 3C of the Powers of Attorney Ordinance turns on) or whether it was registered before the Powers of Attorney (Amendment) Act No. 28 of 2022 came into force (which is what section 8 of that Act turns on).",
+    "The corpus does not resolve whether section 3C, inserted in 2022, applies to a power of attorney executed in 2017; section 8 of Act No. 28 of 2022 deals with registration and continued validity but does not state in terms how the five-year period is computed for pre-commencement instruments."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M018-001",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "2(1) (opening words)",
+      "relevant_excerpt": "No sale, purchase, transfer, assignment, or mortgage of land or other immovable property, and no promise, bargain, contract, or agreement for effecting any such object, or for establishing any security, interest, or incumbrance affecting land or other immovable property (other than a lease at will, or for any period not exceeding one month)",
+      "why_relevant": "Fixes the scope question. A two-year lease of the Colombo house is an agreement establishing an interest affecting immovable property, and the only leases carved out are a lease at will or a lease for a period not exceeding one month. The proposed lease therefore falls inside section 2 and cannot be made by an informal writing.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 has been in force since 1840; the consolidated text carries amendment events by Act No. 60 of 1947, Act No. 30 of 2022 and Act No. 4 of 2024, all before the October 2025 reference date. The lease is still only intended, so no earlier version can be in issue.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M018-002",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "2(1)(a)",
+      "relevant_excerpt": "the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary",
+      "why_relevant": "This is the provision that makes execution by an attorney possible at all: the deed may be signed either by the executant herself or by 'any person duly authorised by such executant'. It also states the formality that any route Mala chooses must satisfy, namely signature before two witnesses and a licensed notary, all present together, and notarial attestation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Present text is the consolidated text as at 2024, in force at the October 2025 reference date.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M018-003",
+      "section_id": "4-1902/s2",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "2",
+      "subsection": "definition of \"power of attorney\", paragraph (a)",
+      "relevant_excerpt": "means any written power or authority other than that given to an attorney at law for the purpose of appearing as an attorney at law on behalf of such person, given by one person to another, to represent him, to perform any work, do any act, or carry on any trade or business, and - (a) if it is executed in Sri Lanka, executed before two witnesses and attested by a notary public",
+      "why_relevant": "Defines the instrument by which one person may be 'duly authorised' under Prevention of Frauds Ordinance s.2(1)(a). It also shows that a power of attorney is an authority to do the acts it specifies, which is why the acts covered by the 2017 instrument matter, and it sets the execution formality for a fresh power granted by Mala while she is still in Sri Lanka.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The definition was repealed and substituted by Act No. 28 of 2022 s.2 and further amended by Act No. 3 of 2024 s.2. The text quoted is the version in force at October 2025. The 2017 instrument was executed under the earlier definition, which is not in the corpus, so its formal validity cannot be tested against the text quoted here.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M018-004",
+      "section_id": "4-1902/s2",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "2",
+      "subsection": "definition of \"power of attorney\", paragraph (b)",
+      "relevant_excerpt": "(b) if it is executed outside Sri Lanka, executed before an Ambassador, or a High Commissioner, or a Diplomatic Officer or a Consular Officer within the meaning of the Consular Functions Act, No. 4 of 1981 or a person who is authorized to attest such power of attorney according to the law of that country",
+      "why_relevant": "Gives Mala a route if she has already left for Australia: she can execute a power of attorney there before the Sri Lankan High Commission or a consular officer, or before a person authorised to attest such a power under Australian law.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Paragraph (b) as substituted by Act No. 3 of 2024 s.2, in force before the October 2025 reference date.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M018-005",
+      "section_id": "4-1902/s3A",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3A",
+      "subsection": "3A(1)",
+      "relevant_excerpt": "(1) A power of attorney granted to be used for the purpose of a transaction which falls within the scope of section 2 of the Prevention of Frauds Ordinance (Chapter 70) shall be executed subject to the provisions specified in subsection (2) or (3), as the case may be.",
+      "why_relevant": "Links the two enactments. Because the two-year lease falls within Prevention of Frauds Ordinance s.2, any power of attorney used to execute it must satisfy the additional requirements of s.3A(2) if granted in Sri Lanka, or s.3A(3) if granted abroad, including a description of the land by metes and bounds, the volume and folio of prior registration, the grantor's thumb impression, and certified copies of the identity documents of grantor and attorney.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 28 of 2022 s.4, in force from 2022 and so applicable at the October 2025 reference date. It was not in force in 2017 when the Special Power of Attorney to sell was granted, so the 2017 instrument cannot have been drawn to comply with it.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M018-006",
+      "section_id": "4-1902/s3",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3",
+      "subsection": "3(1)",
+      "relevant_excerpt": "(a) Every power of attorney executed in Sri Lanka or any other country shall be registered with the Registrar General. (b) Every power of attorney holder (hereinafter referred to as the \"attorney\") shall submit his power of attorney for registration, if it is executed in Sri Lanka within one month and if it is executed outside Sri Lanka within three months, from the date of execution of the power of attorney",
+      "why_relevant": "Any power of attorney Mala grants, whether here or in Australia, must be registered with the Registrar General, and the attorney must submit it within one month of execution in Sri Lanka or three months if executed abroad, with a notary-certified copy and the Schedule I affidavit. This is a step in the advice on how to execute the lease in Mala's absence.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 3 was repealed and substituted by Act No. 28 of 2022 s.3; the substituted text is in force at October 2025.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M018-007",
+      "section_id": "4-1902/s3C",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3C",
+      "subsection": null,
+      "relevant_excerpt": "A power of attorney other than a power of attorney executed by a State institution shall be valid, only for a period of five years from the date of execution, unless the period of validity of such power of attorney is specified in such power of attorney or until such power of attorney is revoked or cancelled in accordance with the provisions of section 4.",
+      "why_relevant": "Raises a second and independent obstacle to using the 2017 instrument in or after October 2025: unless that instrument specified its own period of validity, a five-year limit measured from the date of execution would have run out in 2022. It also tells Mala that a fresh power will itself lapse after five years unless it states a period.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 28 of 2022 s.4, in force from 2022. Whether it applies to an instrument executed in 2017, and if so from what date the five years run, is not settled by anything in the corpus; see corpus_gaps.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M018-008",
+      "section_id": "28-2022/s8",
+      "act_id": "28-2022",
+      "formal_title": "Powers of Attorney (Amendment) Act",
+      "number_and_year": "No. 28 of 2022",
+      "section": "8",
+      "subsection": "8(1)(b) and 8(2)",
+      "relevant_excerpt": "every power of attorney executed prior to the date of commencement of this Act which has been registered under the provisions of section 3 of the principal enactment and has not been revoked or cancelled on or prior to the date of commencement of this Act, shall, continue to be valid and effectual until revoked or cancelled under section 4 of this Act",
+      "why_relevant": "The transitional rule for instruments granted before the 2022 amendment, which is the class the 2017 Special Power of Attorney falls into. A pre-2022 power that was already registered continues to be valid and effectual until revoked or cancelled; one that was not registered had to be submitted within six months of commencement and is deemed null and void if it was not. Whether the 2017 instrument survives therefore depends on facts about its registration that the scenario does not give.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted 2022; the six-month window it opens closed in 2023, well before the October 2025 reference date.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M018-009",
+      "section_id": "4-1902/s3B",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3B",
+      "subsection": "3B(1)",
+      "relevant_excerpt": "Every notary public who attests a deed or instrument in terms of the Notaries Ordinance in respect of a transaction referred to in section 3A of this Act, shall",
+      "why_relevant": "The attesting notary must examine the relevant volumes and folios at the Registrar General's department, satisfy himself that the power of attorney has not been revoked or cancelled, state that fact in the attestation, and retain identity documents and a copy of the power. This is a practical check the notary will apply to whichever power Visaka produces.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 28 of 2022 s.4, in force from 2022 and applicable at October 2025.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M018-010",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (16)(c)",
+      "relevant_excerpt": "where a deed or instrument is signed by an attorney, such attorney shall submit to the notary an affidavit affirming that the Power of Attorney is genuine and in force and the grantor is alive when executing such deed or instrument",
+      "why_relevant": "If Visaka signs the lease as attorney she must give the notary an affidavit that the power is genuine and in force and that Mala is alive at the time of execution. She cannot swear that the power is 'in force' for a leasing transaction if the power on its face authorises only a sale, which is why this rule bears directly on the first limb of the question.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (16) as inserted or substituted by the Notaries (Amendment) Act No. 31 of 2022 and further amended by Act No. 6 of 2024; the quoted text is in force at October 2025.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M018-011",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (30)",
+      "relevant_excerpt": "If he attest any deed or instrument executed before him by means of an attorney, he shall preserve a true copy of the power of attorney with his protocol, and shall forward a like copy with the duplicate to the Registrar of Lands.",
+      "why_relevant": "Completes the procedural picture for execution by an attorney: the notary keeps a certified copy of the power with his protocol and sends a copy with the duplicate to the Registrar of Lands, so the power itself becomes part of the notarial and registry record of the lease.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (30) as amended by the Notaries (Amendment) Act No. 6 of 2024 s.3, in force at October 2025.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M018-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The second limb of the question, how to execute the lease in Mala's absence, can be answered from the corpus alone: Prevention of Frauds Ordinance s.2 and the Powers of Attorney Ordinance together supply the whole procedure. The first limb cannot. Whether a Special Power of Attorney 'to sell' the house authorises the attorney to grant a two-year lease of it turns on the scope of the mandate, and no provision in the corpus tells one how to construe an attorney's authority; that is governed by the Roman-Dutch law of mandate and by judicial authority on the strict construction of special powers. The corpus is likewise silent on ratification of an unauthorised act. The statutes reached here presuppose an attorney who is authorised and regulate only the form in which she acts.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M018-Q01-01",
+          "issue": "Whether the two-year lease at Rs. 100,000 a month falls within section 2 of the Prevention of Frauds Ordinance, so that it must be executed as a notarially attested deed rather than by informal writing.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M018-Q01-02",
+          "issue": "Whether a Special Power of Attorney granted in 2017 authorising Visaka to sell the Colombo house extends to granting a lease of the same house, an act of administration rather than of alienation.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M018-Q01-03",
+          "issue": "Whether the 2017 instrument is still valid and effectual at the October 2025 reference date, given the five-year limit in section 3C of the Powers of Attorney Ordinance and the registration requirements and transitional provisions introduced by Act No. 28 of 2022.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M018-Q01-04",
+          "issue": "What Mala must do so that a valid lease can be executed on her behalf while she is out of the country: the form of a fresh power of attorney, its registration, and the notarial steps required when a deed is signed by an attorney.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M018-001",
+        "PROV-M018-002",
+        "PROV-M018-003",
+        "PROV-M018-004",
+        "PROV-M018-005",
+        "PROV-M018-006",
+        "PROV-M018-007"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M018-008",
+        "PROV-M018-009",
+        "PROV-M018-010"
+      ],
+      "background_provision_ids": [
+        "PROV-M018-011"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four necessary linked steps across two enactments. (1) Prevention of Frauds Ordinance s.2(1) brings a two-year lease within its scope, the exception being confined to a lease at will or one not exceeding a month. (2) s.2(1)(a) permits signature by a person duly authorised by the executant and requires notarial attestation. (3) The Powers of Attorney Ordinance s.2 supplies the definition and execution formality of the instrument that makes a person so authorised, in Sri Lanka under paragraph (a) or abroad under paragraph (b). (4) Because the transaction falls within Prevention of Frauds Ordinance s.2, s.3A imposes further formalities on the power, s.3 requires its registration, and s.3C limits its life to five years. Steps 3 and 4 are cross-enactment.",
+      "reasoning_edges": [
+        {"from_provision_id": "PROV-M018-001", "to_provision_id": "PROV-M018-002", "relationship": "jointly_required"},
+        {"from_provision_id": "PROV-M018-002", "to_provision_id": "PROV-M018-003", "relationship": "defines"},
+        {"from_provision_id": "PROV-M018-003", "to_provision_id": "PROV-M018-004", "relationship": "qualifies"},
+        {"from_provision_id": "PROV-M018-005", "to_provision_id": "PROV-M018-001", "relationship": "cross_references"},
+        {"from_provision_id": "PROV-M018-005", "to_provision_id": "PROV-M018-003", "relationship": "qualifies"},
+        {"from_provision_id": "PROV-M018-006", "to_provision_id": "PROV-M018-003", "relationship": "procedurally_requires"},
+        {"from_provision_id": "PROV-M018-007", "to_provision_id": "PROV-M018-003", "relationship": "qualifies"},
+        {"from_provision_id": "PROV-M018-008", "to_provision_id": "PROV-M018-006", "relationship": "qualifies"},
+        {"from_provision_id": "PROV-M018-009", "to_provision_id": "PROV-M018-005", "relationship": "procedurally_requires"},
+        {"from_provision_id": "PROV-M018-010", "to_provision_id": "PROV-M018-002", "relationship": "procedurally_requires"},
+        {"from_provision_id": "PROV-M018-011", "to_provision_id": "PROV-M018-002", "relationship": "procedurally_requires"}
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Mala is living with her daughter in Kurunegala. She intends to lease out her own house in Colombo for a monthly rental of Rs. 100,000/ for two years to Sheela. The rentals of the house have to be paid on the 20th day of each month commencing from 2020. Mala obtained a refundable deposit of Rs. 300,000/ from Sheela. She also obtained an advance payment of Rs. 600,000/ and intends it to be set off against the 1st year's monthly rental.\n\nMala intends to visit her son in Australia. Mala has given a Special Power of Attorney to her daughter Visaka to sell the said house in Colombo in 2017.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Two questions arise. First, whether Visaka can execute the two-year lease to Sheela on Mala's behalf under a Special Power of Attorney granted in 2017 that authorises her to sell the Colombo house. Second, what Mala must do so that the lease can validly be executed while she is in Australia.",
+        "rule": "A lease of immovable property for two years is an agreement establishing an interest affecting immovable property and so falls within section 2 of the Prevention of Frauds Ordinance, the only leases excepted being a lease at will or one for a period not exceeding one month. Such an instrument is of no force in law unless it is in writing, signed by every executant or by any person duly authorised by such executant, signed together with the witnesses in the presence of a licensed notary all present at the same time and in the presence of one another, and attested by that notary. A person is duly authorised by a power of attorney within the definition in section 2 of the Powers of Attorney Ordinance, that is a written authority to represent the grantor or do the acts specified, executed in Sri Lanka before two witnesses and attested by a notary, or executed outside Sri Lanka before an Ambassador, High Commissioner, Diplomatic or Consular Officer, or a person authorised to attest such a power under the law of that country. Because a lease falls within Prevention of Frauds Ordinance section 2, section 3A of the Powers of Attorney Ordinance requires the power itself to describe the land by metes and bounds and extent, to give the volume and folio of any prior registration, to carry the grantor's thumb impression beside the signature, and to be accompanied by certified copies of the identity documents of grantor and attorney. Section 3 requires every power of attorney to be registered with the Registrar General, the attorney submitting it within one month of execution in Sri Lanka or three months if executed abroad, with a notary-certified copy and the Schedule I affidavit. Section 3C limits a private power to five years from the date of execution unless the instrument specifies its own period of validity or it is earlier revoked under section 4. Where a deed is signed by an attorney, rule (16)(c) of section 31 of the Notaries Ordinance requires the attorney to give the notary an affidavit that the power is genuine and in force and that the grantor is alive at execution, section 3B of the Powers of Attorney Ordinance requires the notary to examine the Registrar General's volumes and folios and to state in the attestation that the power has not been revoked or cancelled, and rule (30) of section 31 requires the notary to keep a true copy of the power with his protocol and to send a like copy with the duplicate to the Registrar of Lands. What none of these provisions supplies is the rule that fixes how far an attorney's mandate extends; the scope of a special power is a matter of the general law of mandate and of judicial authority, outside the statutory corpus.",
+        "application": "The proposed lease is for two years at Rs. 100,000 a month, far outside the one-month exception, so it must be a notarially attested deed under Prevention of Frauds Ordinance s.2. Mala herself need not sign if the deed is signed by a person duly authorised by her, so execution in her absence is possible in principle. The difficulty is the instrument she has. The 2017 grant is a Special Power of Attorney authorising Visaka to sell the house. A sale alienates the property; a lease for a term does not, and a special power is confined to the acts it names. On the statutory material alone one cannot conclude that a power to sell carries a power to lease, and Visaka could not honestly swear the affidavit required by Notaries Ordinance s.31 rule (16)(c) that the power is in force for a transaction it does not cover. There are two further difficulties even if scope were not in issue. The instrument was executed in 2017 and, unless it specifies its own period of validity, s.3C would put its life at five years from execution, which would have expired well before October 2025; and under s.8 of the Powers of Attorney (Amendment) Act No. 28 of 2022 a pre-2022 power survives only if it was registered, an unregistered one having had to be submitted within six months of commencement on pain of being deemed null and void. The scenario does not say whether the 2017 power specified a period or was ever registered, so neither point can be resolved on the facts given. As to what Mala should do, the safe course is a fresh power of attorney expressly authorising Visaka to lease the Colombo house and to sign the lease. If Mala grants it before she leaves it must be executed before two witnesses and attested by a notary under s.2(a); if she has already gone, she may execute it in Australia before the Sri Lankan High Commission or a consular officer, or before a person authorised to attest such a power under Australian law, under s.2(b). Because the lease falls within Prevention of Frauds Ordinance s.2, the power must satisfy s.3A, describing the Colombo house by metes and bounds and extent with the volume and folio of prior registration and carrying Mala's thumb impression and the certified identity documents. Visaka must then register it with the Registrar General under s.3, within one month if executed here or three months if executed in Australia, and should give the power its own stated period so that it is not cut short by s.3C. At execution of the lease Visaka signs as attorney, gives the notary the s.31 rule (16)(c) affidavit, the notary checks the Registrar General's folios under s.3B and says so in the attestation, and keeps and forwards copies of the power under rule (30). The alternative, if Mala is still in the country, is simply for her to sign the lease deed herself before the notary and witnesses before she travels.",
+        "conclusion": "On the statutory material Visaka cannot safely execute the lease under the 2017 Special Power of Attorney: that power on its face authorises a sale, and its continued validity at October 2025 is doubtful under s.3C and under the transitional rule in s.8 of Act No. 28 of 2022. A firm answer on whether a power to sell can be read as covering a lease requires the law of mandate and judicial authority, which the corpus does not contain, so this part is reserved. The advice that does follow from the corpus is that Mala should either sign the lease deed herself before a notary and two witnesses before she leaves, or grant a fresh power of attorney that expressly authorises Visaka to lease the Colombo house, executed under Powers of Attorney Ordinance s.2(a) here or s.2(b) in Australia, complying with s.3A, registered under s.3 within the prescribed time and stating its period of validity; Visaka may then execute the lease as a notarially attested deed under Prevention of Frauds Ordinance s.2, with the s.31 rule (16)(c) affidavit and the s.3B notarial verification."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M018-Q01-001",
+          "claim_text": "A lease of immovable property for two years falls within section 2 of the Prevention of Frauds Ordinance, because the only leases excepted are a lease at will and a lease for a period not exceeding one month.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M018-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-002",
+          "claim_text": "An instrument within section 2 has no force in law unless it is in writing, signed by every executant or by any person duly authorised by the executant together with the witnesses, in the presence of a licensed notary and of one another, and attested by that notary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M018-002"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-003",
+          "claim_text": "A person is duly authorised to sign for another by a power of attorney, that is a written authority to represent the grantor or do the acts specified, executed in Sri Lanka before two witnesses and attested by a notary public.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M018-003"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-004",
+          "claim_text": "A power of attorney executed outside Sri Lanka must be executed before an Ambassador, a High Commissioner, a Diplomatic Officer or a Consular Officer within the meaning of the Consular Functions Act, or a person authorised to attest such a power under the law of that country.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M018-004"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-005",
+          "claim_text": "A power of attorney granted for use in a transaction falling within section 2 of the Prevention of Frauds Ordinance must additionally comply with section 3A of the Powers of Attorney Ordinance, including a description of the land by metes and bounds and extent, the volume and folio of prior registration, the grantor's thumb impression, and certified copies of the identity documents of grantor and attorney.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M018-005", "PROV-M018-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-006",
+          "claim_text": "Every power of attorney must be registered with the Registrar General, and the attorney must submit it for registration within one month if executed in Sri Lanka or three months if executed outside Sri Lanka.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M018-006"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-007",
+          "claim_text": "A power of attorney other than one executed by a State institution is valid only for five years from the date of execution unless the instrument specifies its own period of validity or it is earlier revoked or cancelled under section 4.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M018-007"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-008",
+          "claim_text": "A power of attorney executed before the 2022 amendment and already registered continues to be valid and effectual until revoked or cancelled, while an unregistered one had to be submitted for registration within six months of commencement and is otherwise deemed null and void.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M018-008"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-009",
+          "claim_text": "Where a deed is signed by an attorney, the attorney must give the notary an affidavit affirming that the power of attorney is genuine and in force and that the grantor is alive at the time of execution, and the notary must satisfy himself from the Registrar General's volumes and folios that the power has not been revoked or cancelled and state that in the attestation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M018-010", "PROV-M018-009"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-010",
+          "claim_text": "A notary attesting a deed executed by means of an attorney must keep a true copy of the power with his protocol and forward a like copy with the duplicate to the Registrar of Lands.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M018-011"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-011",
+          "claim_text": "The proposed lease to Sheela, being for two years at Rs. 100,000 a month, is well outside the one-month exception and must therefore be executed as a notarially attested deed.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M018-001", "PROV-M018-002"],
+          "supporting_fact_ids": ["BG-1"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-012",
+          "claim_text": "Execution in Mala's absence is possible in principle, because the deed may be signed by a person duly authorised by her rather than by Mala herself.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M018-002", "PROV-M018-003"],
+          "supporting_fact_ids": ["BG-2"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-013",
+          "claim_text": "The instrument Visaka holds is a Special Power of Attorney to sell the house, and whether an authority to sell extends to granting a lease is not answered by any provision of the statutory corpus, so this limb cannot be resolved on statute alone.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M018-003"],
+          "supporting_fact_ids": ["BG-3"],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-014",
+          "claim_text": "If the power does not cover a lease, Visaka could not truthfully give the notary the affidavit that the power of attorney is in force for this transaction, so the notary should decline to attest a lease signed by her under it.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M018-010", "PROV-M018-009"],
+          "supporting_fact_ids": ["BG-3"],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-015",
+          "claim_text": "Independently of scope, the 2017 instrument's continued validity at the October 2025 reference date is doubtful: unless it specifies a period of validity the five-year limit would have run out, and if it was never registered the transitional rule would have rendered it null and void, and the scenario states neither fact.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M018-007", "PROV-M018-008"],
+          "supporting_fact_ids": ["BG-3"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-016",
+          "claim_text": "The course open to Mala is to sign the lease deed herself before a notary and two witnesses before she travels, or to grant a fresh power of attorney expressly authorising Visaka to lease the Colombo house, executed before two witnesses and a notary in Sri Lanka or before a High Commission or consular officer or other authorised person in Australia.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M018-002", "PROV-M018-003", "PROV-M018-004"],
+          "supporting_fact_ids": ["BG-2"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-017",
+          "claim_text": "That fresh power must comply with section 3A, be registered with the Registrar General within one month of execution in Sri Lanka or three months if executed in Australia, and should state its own period of validity so that it is not cut short by the five-year limit.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M018-005", "PROV-M018-006", "PROV-M018-007"],
+          "supporting_fact_ids": ["BG-1", "BG-2"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-018",
+          "claim_text": "Visaka cannot safely execute the lease under the 2017 Special Power of Attorney to sell, and a definitive answer on the scope of that power needs authority outside the statutory corpus.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M018-003", "PROV-M018-007", "PROV-M018-008", "PROV-M018-010"],
+          "supporting_fact_ids": ["BG-3"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M018-Q01-019",
+          "claim_text": "The lease can validly be executed in Mala's absence if she grants a fresh, properly executed and registered power of attorney that expressly authorises the leasing of the Colombo house, whereupon Visaka may sign the notarially attested lease deed on her behalf.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M018-002", "PROV-M018-003", "PROV-M018-004", "PROV-M018-005", "PROV-M018-006"],
+          "supporting_fact_ids": ["BG-2"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "The first limb of the question turns on the scope of a special mandate, that is whether an authority to sell extends to granting a lease. The frozen statutory corpus contains no provision on the construction of an attorney's authority or on ratification of an unauthorised act; that is Roman-Dutch law of mandate plus judicial authority. Two further points are open on the facts: the scenario does not state whether the 2017 instrument specified its own period of validity (Powers of Attorney Ordinance s.3C) or whether it was registered before the 2022 amendment (s.8 of Act No. 28 of 2022), and both bear on whether it survives at the October 2025 reference date. The second limb, how to execute the lease in Mala's absence, is fully supported by the provisions recorded here and can be released once the mandate-scope point is settled by a lawyer.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

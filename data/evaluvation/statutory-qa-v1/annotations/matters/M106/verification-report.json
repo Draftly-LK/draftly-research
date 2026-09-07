@@ -1,0 +1,170 @@
+{
+  "benchmark_matter_id": "M106",
+  "verifier": "verifier-M106",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:20:15Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M106-001",
+      "decision": "verified",
+      "note": "15-1876 s.2. Excerpt verbatim; the exclusion of Kandyans, Muslims and Tamils of the Northern Province subject to the Tesawalamai is the second sentence of the body and nothing in the facts triggers it."
+    },
+    {
+      "provision_id": "PROV-M106-002",
+      "decision": "verified",
+      "note": "15-1876 s.20. Excerpt is the whole body; every death (2008, 2009, 2010) and every marriage in the scenario post-dates the 1876 proclamation."
+    },
+    {
+      "provision_id": "PROV-M106-003",
+      "decision": "verified",
+      "note": "15-1876 s.21(1). Excerpt verbatim and correctly confined to subsection (1); subsection (2) on movable property is not relied on and is not needed."
+    },
+    {
+      "provision_id": "PROV-M106-004",
+      "decision": "verified",
+      "note": "15-1876 s.22. Excerpt is the whole body and states the surviving spouse's half without qualification, as the answer uses it for both Nalini and Amali."
+    },
+    {
+      "provision_id": "PROV-M106-005",
+      "decision": "verified",
+      "note": "15-1876 s.23. Excerpt is the whole body; the descendants / ascendants / collaterals order is as claimed."
+    },
+    {
+      "provision_id": "PROV-M106-006",
+      "decision": "verified",
+      "note": "15-1876 s.24. Excerpt is the whole body; children take equally per capita, which is the basis for the 1/16 and 1/12 steps."
+    },
+    {
+      "provision_id": "PROV-M106-007",
+      "decision": "verified",
+      "note": "15-1876 s.25. Excerpt verbatim. The excerpt stops before the surviving-parent limb, which is correct because both of Bimal's parents had died and only the failure of descendants and of parents is being used."
+    },
+    {
+      "provision_id": "PROV-M106-008",
+      "decision": "verified",
+      "note": "15-1876 s.26. Wording and role confirmed; note that the corpus body carries the OCR form \"balf-blood\" where the Ordinance reads \"half-blood\", so the excerpt reproduces a corpus artefact rather than a drafting variant."
+    },
+    {
+      "provision_id": "PROV-M106-009",
+      "decision": "partially_verified",
+      "note": "15-1876 s.27. Excerpt is verbatim and the final limb is the right one for a half-sibling on one side only, but it starts mid-sentence and omits the opening words that supply the condition, and s.27 does not itself say how \"the other half\" is shared between the full and half blood - that per capita step comes from s.30, so s.27 alone does not carry claim CL-M106-Q02-015."
+    },
+    {
+      "provision_id": "PROV-M106-010",
+      "decision": "partially_verified",
+      "note": "15-1876 s.30. Excerpt drops the governing opening words \"Except when otherwise expressly provided,\", which matter here because s.27 does expressly provide otherwise for the first half of the sibling portion; s.30 supports only the per capita division of the four children, the three children of Nalini and the second half of the sibling portion."
+    },
+    {
+      "provision_id": "PROV-M106-011",
+      "decision": "partially_verified",
+      "note": "15-1876 s.3. Excerpt is verbatim, but the corpus body of s.3 has lost the defined-term labels, so the attribution of these words to \"immovable property\" rests on the corpus defined_terms list and the s.21 defines edge, not on the section text as it stands in the corpus."
+    },
+    {
+      "provision_id": "PROV-M106-012",
+      "decision": "verified",
+      "note": "15-1876 s.36. Excerpt is the whole body and the background-only role is right: the Ordinance is not silent on any step the answer takes, so the residual Roman-Dutch rule is not reached."
+    },
+    {
+      "provision_id": "PROV-M106-013",
+      "decision": "partially_verified",
+      "note": "7-1840 s.2. Excerpt verbatim and the background-only treatment is right, but the temporal note is incomplete: the corpus records three amendment events on 7-1840/s2 (No. 60 of 1947, No. 30 of 2022, No. 4 of 2024), not two, so the 1947 change is also outside the note."
+    },
+    {
+      "provision_id": "PROV-M106-901",
+      "decision": "verified",
+      "note": "Added by the verifier; excerpt is the whole body of 15-1876/s7 and was checked verbatim."
+    },
+    {
+      "provision_id": "PROV-M106-902",
+      "decision": "verified",
+      "note": "Added by the verifier; excerpt is the first sentence of 15-1876/s33 and was checked verbatim. It is background, not authority for Achini's status, which the corpus cannot supply."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M106-901",
+      "reason": "15-1876 s.7 (no community of goods). The map applies s.22 to the whole of Nimal's 6/12 without saying why Nalini held no part of it already by virtue of the marriage. Section 7 supplies that step. Added as a supporting provision for both questions with a qualifies edge onto s.22."
+    },
+    {
+      "provision_id": "PROV-M106-902",
+      "reason": "15-1876 s.33 (illegitimate children take from the mother only). This is the exception that would exclude Achini from Nimal's estate. The researcher rejected it in the notes only; it is now on the face of the map as background with an excepts edge onto s.24, so the exception the answer depends on being switched off is visible to the lawyer."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M106-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "The pedigree is carried end to end by 15-1876 ss.21(1), 22, 23, 24, 25, 26, 27 and 30, all held in the corpus without amendment events and all in force at each of the three deaths. Every rule claim is supported by the section it cites and every application and conclusion claim rests on a cited provision or on a scenario fact. No case law is cited. Kept as proposed_gold because no indispensable provision is rejected or unresolved. CL-M106-Q01-015 is marked disputed: it is an assumption disclosure that 15-1876 s.21(1) does not support."
+    },
+    {
+      "benchmark_question_id": "M106-Q02",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "The arithmetic was recomputed independently and is right on the researcher's reading of s.27: Nimal 6/12; Nalini 1/4 and each of four children 1/16; Nalini's 1/4 split three ways gives Amal, Bimal and Krishni 7/48 each and leaves Achini at 1/16; of Bimal's 7/48, Amali takes 7/96, Amal and Krishni 7/384 each from the first half of the sibling portion and 7/576 each from the second, Achini 7/576. Totals Amal 203/1152, Krishni 203/1152, Achini 86/1152, Amali 84/1152, which with Sunil 480/1152 and Kusum 96/1152 sum to 1152/1152. CL-M106-Q02-018 marked disputed for the same reason as CL-M106-Q01-015."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "omitted_exception",
+      "researcher_position": "15-1876 s.33 (illegitimate children) was rejected in the research notes and left out of the map, on the ground that Achini is described as a daughter by a first wife and is therefore a lawful child of Nimal.",
+      "verifier_position": "The conclusion is probably right, but s.33 is the operative exception to the children's preferent right in s.24 and belongs in the map as background, so a lawyer can see that Achini's whole 86/1152 depends on s.33 not biting. Added as PROV-M106-902.",
+      "supporting_sources": ["15-1876/s33", "15-1876/s24"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "provision_scope",
+      "researcher_position": "15-1876 s.30 is cited for per capita division at every step, including the division of the second half of Bimal's sibling portion among Amal, Krishni and Achini.",
+      "verifier_position": "The excerpt omits s.30's opening words \"Except when otherwise expressly provided,\". Section 27 does expressly provide otherwise for the first half of the sibling portion, so s.30 can carry only the divisions s.27 leaves open. The figures are unchanged but the reasoning as written overstates s.30.",
+      "supporting_sources": ["15-1876/s30", "15-1876/s27"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "interpretation",
+      "researcher_position": "Under the final limb of s.27 the second half of Bimal's sibling portion is divided per capita among Amal, Krishni and Achini, giving 7/576 each.",
+      "verifier_position": "Section 27 says only that the full siblings \"divide the other half with the half-brothers and sisters\" and does not state the proportion. The per capita reading is the natural one on s.30 and is what the corpus supports, but a split between the full-blood group and the half-blood group would give different figures and nothing in the corpus forecloses it. This is the single point on which the 203/203/86/84 answer could move.",
+      "supporting_sources": ["15-1876/s27", "15-1876/s30"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M106-Q01-015 and CL-M106-Q02-018 cite PROV-M106-003 (15-1876 s.21(1)) for the statements that Bimal is assumed to have died intestate and that Achini is assumed legitimate. Section 21(1) is about which law governs inheritance ab intestato to immovable property and says nothing about either assumption. Both marked disputed and left in place.",
+      "CL-M106-Q01-008 and CL-M106-Q02-008 (Nimal held 6/12) rest on scenario facts alone, which is right given that the Partition Law No. 21 of 1977 is not in the corpus, but the map recorded no provision fixing that the whole 6/12 was his separate estate. PROV-M106-901 (15-1876 s.7) now does.",
+      "No other rule, application or conclusion claim was found without support; all thirteen original excerpts passed the corpus check command verbatim."
+    ],
+    "temporal_issues": [
+      "Confirmed: the corpus holds no amending enactment for 15-1876 at all, and every section relied on records in_force_from_year 1876 with no amendment events and no latest_change_year. On the corpus the 1876 text stood at the 2008, 2009 and 2010 deaths and at the matter reference date 2018-04.",
+      "Whether amending enactments to 15-1876 exist outside the corpus could not be checked from inside the repository. The researcher's corpus gap on this point is accurate and remains open.",
+      "PROV-M106-013 (7-1840/s2): the temporal note names the 2022 and 2024 amendments but the corpus also records an amendment event by No. 60 of 1947. Downgraded to partially_verified. Nothing in the answer turns on it, since the provision is background and applicable_to_matter_date is already false.",
+      "15-1876 s.20 is satisfied on the facts: every death falls in 2008-2010 and every marriage necessarily post-dates the 1876 proclamation. No later amendment was wrongly relied on anywhere in the map."
+    ],
+    "missing_definitions_or_exceptions": [
+      "15-1876 s.33 (illegitimate children) - the exception to s.24 that would exclude Achini from Nimal's estate. Added as PROV-M106-902.",
+      "15-1876 s.7 (no community of goods) - fixes the estate on which s.22 operates. Added as PROV-M106-901.",
+      "15-1876 s.30's opening qualifier \"Except when otherwise expressly provided,\" is missing from the PROV-M106-010 excerpt. Recorded in the verifier note rather than by rewriting the excerpt.",
+      "The definition edge for \"immovable property\" is real (edges on 15-1876/s21 show a defines link to 15-1876/s3), but the corpus body of s.3 has lost its defined-term labels, so the words in the PROV-M106-011 excerpt cannot be tied to the term from the section text alone.",
+      "Checked and correctly absent: 15-1876 s.28 and s.29 (s.28 needs full siblings to have failed, s.29 needs half-siblings on one side with full siblings gone - neither holds), s.31 and s.32 (not reached, siblings survive) and s.35 (collation is not raised by any fact).",
+      "Alternative regimes checked directly in the corpus: 23-1917 (Kandyan Succession Ordinance) s.2, 10-1931 (Muslim Intestate Succession Ordinance) s.2 and 1-1911 s.2 (\"This Ordinance shall apply only to those Tamils to whom the Tesawalamai applies\"). Nothing in the facts triggers any of them, so 15-1876 s.2 leaves the general law in place. The research notes named the Kandyan and Muslim Ordinances but not the Jaffna Matrimonial Rights and Inheritance Ordinance No. 1 of 1911, which is the Thesawalamai counterpart actually held in the corpus."
+    ],
+    "case_law_dependence": [
+      "None found. Both gold answers cite only sections of 15-1876 and no judgment, and the validator's case-law regex is clean. The s.27 apportionment is the one place a lawyer might reach for authority, but 15-1876 s.36 sends to Roman-Dutch law only where the Ordinance is silent and s.27 read with s.30 is not silent, so statute_only stands for both questions."
+    ],
+    "enrichment_issues": [
+      "Neither question is an enrich question; both are candidate_action=keep and both carry enrichment.applied=false with no added facts, which matches. Nothing to check."
+    ],
+    "duplicate_or_leak_issues": [
+      "M106-Q01 and M106-Q02 share one scenario and one provision set by design, and their rule paragraphs are word for word identical. That is defensible here, but the two are not independent test items: a model that answers Q01 gets Q02's rule statement for free, and Q02 adds only the arithmetic.",
+      "No statute name, section number or conclusion is leaked into the background, which is unmodified past-paper text."
+    ]
+  },
+  "lawyer_questions": [
+    "Bimal's death is described only as an accident and the scenario never says he died intestate, yet the whole last step (Amali's 84/1152 and the s.26-27 sibling split) depends on it. Should M106 stand as proposed_gold on a stated intestacy assumption, or move to blocked_scenario_ambiguity?",
+    "Under the final limb of 15-1876 s.27, is the second half of the sibling portion divided per capita among the two full siblings and the half-sister (giving Achini 7/576), or between the full-blood group and the half-blood group? The 203/203/86/84 figures turn on this.",
+    "Does the scenario's description of Malini as Nimal's \"first wife\" suffice to disapply 15-1876 s.33, or must Achini's legitimacy be pleaded and proved before she is admitted to Nimal's estate?",
+    "Do amending enactments to the Matrimonial Rights and Inheritance Ordinance exist outside this corpus that touch ss.22 to 27 or s.30 as at 2008-2010? The corpus holds no amendment for 15-1876 and this could not be checked from inside the repository.",
+    "The corpus body of 15-1876 s.26 reads \"balf-blood\" for \"half-blood\" and s.3 has lost its defined-term labels. Should the corpus text be corrected before these excerpts are used as gold citations?"
+  ]
+}

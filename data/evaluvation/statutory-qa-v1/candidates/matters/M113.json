@@ -1,0 +1,116 @@
+{
+  "benchmark_matter_id": "M113",
+  "source_matter_id": "P16-Q06-M01",
+  "grouping_key": "P16-Q06-M01",
+  "paper_no": 16,
+  "question_no": 6,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Mallika De Silva met with an accident and was seriously injured. She is warded in the accident ward in the Colombo National Hospital and shown her desire to write her Last Will.",
+    "normalized": "Mallika De Silva met with an accident and was seriously injured. She is warded in the accident ward in the Colombo National Hospital and shown her desire to write her Last Will.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P16-Q06-P01"
+        ]
+      },
+      {
+        "segment_index": 0,
+        "field": "prior_background",
+        "atomic_ids": [
+          "P16-Q06-P02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M113-Q01",
+      "atomic_id": "P16-Q06-P01",
+      "part_uid": "paper-16/q6/1",
+      "part_id": "1",
+      "item_id": null,
+      "marks": 5,
+      "pdf_page": 66,
+      "question_original": "Is it possible for a Notary to execute her Last Will? Write a full note as to how it could be done. Mallika is from Homagama. When answering must consider the requirements in Rule 31 of the Notaries Ordinance and Sec. 4 of the Prevention of Frauds Ordinance.",
+      "question_normalized": "Is it possible for a Notary to execute her Last Will? Write a full note as to how it could be done. Mallika is from Homagama. When answering must consider the requirements in Rule 31 of the Notaries Ordinance and Sec. 4 of the Prevention of Frauds Ordinance.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Mallika De Silva met with an accident and was seriously injured. She is warded in the accident ward in the Colombo National Hospital and shown her desire to write her Last Will.",
+      "effective_background_normalized": "Mallika De Silva met with an accident and was seriously injured. She is warded in the accident ward in the Colombo National Hospital and shown her desire to write her Last Will.",
+      "source_quote": "1. Mallika De Silva met with an accident and was seriously injured. She is warded in the accident ward in the Colombo National Hospital and shown her desire to write her Last Will. Is it possible for a Notary to execute her Last Will? Write a full note as to how it could be done. Mallika is from Homagama. When answering must consider the requirements in Rule 31 of the Notaries Ordinance and Sec. 4 of the Prevention of Frauds Ordinance. (5 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "review",
+        "candidate_action": "enrich",
+        "confidence": 0.7,
+        "flags": [
+          "facts_in_question_field",
+          "question_combines_multiple_requests"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "extraction_quality=review",
+        "confidence=0.7"
+      ],
+      "missing_fact_types": [
+        "party_legal_capacity",
+        "property_identity",
+        "relationship_between_parties"
+      ]
+    },
+    {
+      "benchmark_question_id": "M113-Q02",
+      "atomic_id": "P16-Q06-P02",
+      "part_uid": "paper-16/q6/2",
+      "part_id": "2",
+      "item_id": null,
+      "marks": 10,
+      "pdf_page": 66,
+      "question_original": "Draft the Last Will of Mallika De Silva. She wants to appoint her eldest son Kasun the Executor of her Last Will. She wants to give all the monies in her Bank Accounts to her husband Gamini De Silva and a sum of Rs. 100,000/- to her faithful servant Baby Nona.",
+      "question_normalized": "Draft the Last Will of Mallika De Silva. She wants to appoint her eldest son Kasun the Executor of her Last Will. She wants to give all the monies in her Bank Accounts to her husband Gamini De Silva and a sum of Rs. 100,000/- to her faithful servant Baby Nona.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": "She desires to give all her properties to her 3 children Kasun, Vikum and Amali in equal shares subject to life interest of her husband Gamini De Silva."
+      },
+      "effective_background_original": "Mallika De Silva met with an accident and was seriously injured. She is warded in the accident ward in the Colombo National Hospital and shown her desire to write her Last Will.\n\nShe desires to give all her properties to her 3 children Kasun, Vikum and Amali in equal shares subject to life interest of her husband Gamini De Silva.",
+      "effective_background_normalized": "Mallika De Silva met with an accident and was seriously injured. She is warded in the accident ward in the Colombo National Hospital and shown her desire to write her Last Will.\n\nShe desires to give all her properties to her 3 children Kasun, Vikum and Amali in equal shares subject to life interest of her husband Gamini De Silva.",
+      "source_quote": "2. She desires to give all her properties to her 3 children Kasun, Vikum and Amali in equal shares subject to life interest of her husband Gamini De Silva. Draft the Last Will of Mallika De Silva. She wants to appoint her eldest son Kasun the Executor of her Last Will. She wants to give all the monies in her Bank Accounts to her husband Gamini De Silva and a sum of Rs. 100,000/- to her faithful servant Baby Nona. (attestation not required) (10 marks)",
+      "classification": {
+        "context_sources": [
+          "prior",
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "review",
+        "candidate_action": "keep",
+        "confidence": 0.8,
+        "flags": [
+          "facts_in_question_field",
+          "attestation_note_dropped_from_question"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "extraction_quality=review"
+      ],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2018-04",
+  "exam_session": "APRIL 2018",
+  "matter_tier": "B",
+  "tier_a_question_count": 0
+}

@@ -1,0 +1,141 @@
+{
+  "tune_run": "tune-dev",
+  "criterion": "complete@20, then recall@20, then complete@10 (matter macro on the development split)",
+  "selected": {
+    "field_weights": {
+      "heading": 4.0,
+      "act_title": 3.0
+    },
+    "rrf_k": 60,
+    "acts_retained": 3,
+    "seeds": 15,
+    "graph_support_weight": 0.3
+  },
+  "best_bundle_configs": [
+    {
+      "name": "tune_bundle_h4.0_t3.0_k60_a3",
+      "complete@20": 0.375,
+      "recall@20": 0.5104,
+      "complete@10": 0.25
+    },
+    {
+      "name": "tune_bundle_h4.0_t2.0_k60_a3",
+      "complete@20": 0.375,
+      "recall@20": 0.5104,
+      "complete@10": 0.25
+    },
+    {
+      "name": "tune_bundle_h4.0_t1.0_k60_a3",
+      "complete@20": 0.375,
+      "recall@20": 0.5104,
+      "complete@10": 0.25
+    },
+    {
+      "name": "tune_bundle_h3.0_t3.0_k60_a3",
+      "complete@20": 0.375,
+      "recall@20": 0.5104,
+      "complete@10": 0.25
+    },
+    {
+      "name": "tune_bundle_h3.0_t2.0_k60_a3",
+      "complete@20": 0.375,
+      "recall@20": 0.5104,
+      "complete@10": 0.25
+    },
+    {
+      "name": "tune_bundle_h3.0_t1.0_k60_a3",
+      "complete@20": 0.375,
+      "recall@20": 0.5104,
+      "complete@10": 0.25
+    },
+    {
+      "name": "tune_bundle_h2.0_t3.0_k60_a3",
+      "complete@20": 0.375,
+      "recall@20": 0.5104,
+      "complete@10": 0.25
+    },
+    {
+      "name": "tune_bundle_h2.0_t2.0_k60_a3",
+      "complete@20": 0.375,
+      "recall@20": 0.5104,
+      "complete@10": 0.25
+    }
+  ],
+  "best_hybrid_configs": [
+    {
+      "name": "tune_hybrid_h4.0_t3.0_k60",
+      "complete@20": 0.25,
+      "recall@20": 0.4583,
+      "complete@10": 0.25
+    },
+    {
+      "name": "tune_hybrid_h4.0_t3.0_k20",
+      "complete@20": 0.25,
+      "recall@20": 0.4583,
+      "complete@10": 0.25
+    },
+    {
+      "name": "tune_hybrid_h4.0_t2.0_k20",
+      "complete@20": 0.25,
+      "recall@20": 0.4583,
+      "complete@10": 0.25
+    },
+    {
+      "name": "tune_hybrid_h4.0_t1.0_k20",
+      "complete@20": 0.25,
+      "recall@20": 0.4583,
+      "complete@10": 0.25
+    },
+    {
+      "name": "tune_hybrid_h3.0_t3.0_k20",
+      "complete@20": 0.25,
+      "recall@20": 0.4583,
+      "complete@10": 0.25
+    }
+  ],
+  "seeds": [
+    {
+      "name": "tune_bundle_seeds15",
+      "complete@20": 0.375,
+      "recall@20": 0.5104
+    },
+    {
+      "name": "tune_bundle_seeds20",
+      "complete@20": 0.375,
+      "recall@20": 0.5
+    },
+    {
+      "name": "tune_bundle_seeds30",
+      "complete@20": 0.375,
+      "recall@20": 0.4896
+    },
+    {
+      "name": "tune_bundle_seeds10",
+      "complete@20": 0.25,
+      "recall@20": 0.4479
+    }
+  ],
+  "graph_support_weight": [
+    {
+      "name": "tune_bundle_gsw0.3",
+      "complete@20": 0.375,
+      "recall@20": 0.5104
+    },
+    {
+      "name": "tune_bundle_gsw0.15",
+      "complete@20": 0.375,
+      "recall@20": 0.5104
+    },
+    {
+      "name": "tune_bundle_gsw0.1",
+      "complete@20": 0.375,
+      "recall@20": 0.5104
+    },
+    {
+      "name": "tune_bundle_gsw0.0",
+      "complete@20": 0.375,
+      "recall@20": 0.5104
+    }
+  ],
+  "dev_size_warning": "the development split is small; differences between neighbouring settings are within noise"
+}

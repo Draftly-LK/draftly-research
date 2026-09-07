@@ -1,0 +1,115 @@
+{
+  "benchmark_matter_id": "M032",
+  "source_matter_id": "P05-Q02-M00",
+  "grouping_key": "P05-Q02-M00",
+  "paper_no": 5,
+  "question_no": 2,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Mr. Ranasinghe is your client and he intends to buy a coconut estate with a bungalow situated in Kurunegala thirty acres (A30, RO, PO) in extent.",
+    "normalized": "Mr. Ranasinghe is your client and he intends to buy a coconut estate with a bungalow situated in Kurunegala thirty acres (A30, RO, PO) in extent.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P05-Q02-P01",
+          "P05-Q02-P02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M032-Q01",
+      "atomic_id": "P05-Q02-P01",
+      "part_uid": "paper-05/q2/1",
+      "part_id": "1",
+      "item_id": null,
+      "marks": 6,
+      "pdf_page": 18,
+      "question_original": "If you are retained by him, what steps should you take as the Motary on behalf of Mr. Ranasinghe?",
+      "question_normalized": "If you are retained by him, what steps should you take as the Motary on behalf of Mr. Ranasinghe?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Mr. Ranasinghe is your client and he intends to buy a coconut estate with a bungalow situated in Kurunegala thirty acres (A30, RO, PO) in extent.",
+      "effective_background_normalized": "Mr. Ranasinghe is your client and he intends to buy a coconut estate with a bungalow situated in Kurunegala thirty acres (A30, RO, PO) in extent.",
+      "source_quote": "1) Mr. Ranasinghe is your client and he intends to buy a coconut estate with a bungalow\nsituated in Kurunegala thirty acres (A30, RO, PO) in extent. If you are retained by him,\nwhat steps should you take as the Motary on behalf of Mr. Ranasinghe? (6 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": [
+          "ocr_typo_Motary"
+        ]
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "relevant_document",
+        "transaction_sequence",
+        "consideration_or_value",
+        "existing_encumbrance"
+      ]
+    },
+    {
+      "benchmark_question_id": "M032-Q02",
+      "atomic_id": "P05-Q02-P02",
+      "part_uid": "paper-05/q2/2",
+      "part_id": "2",
+      "item_id": null,
+      "marks": 10,
+      "pdf_page": 19,
+      "question_original": "What documents would you call for the examination of title of sald estate and the sald bungalow? And why would you call for same?",
+      "question_normalized": "What documents would you call for the examination of title of sald estate and the sald bungalow? And why would you call for same?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Mr. Ranasinghe is your client and he intends to buy a coconut estate with a bungalow situated in Kurunegala thirty acres (A30, RO, PO) in extent.",
+      "effective_background_normalized": "Mr. Ranasinghe is your client and he intends to buy a coconut estate with a bungalow situated in Kurunegala thirty acres (A30, RO, PO) in extent.",
+      "source_quote": "2) What documents would you call for the examination of title of sald estate and the sald\nbungalow? And why would you call for same?\n(10 marks)",
+      "classification": {
+        "context_sources": [
+          "shared"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "review",
+        "candidate_action": "enrich",
+        "confidence": 0.78,
+        "flags": [
+          "ocr_typo_sald"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "extraction_quality=review",
+        "confidence=0.78"
+      ],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "relevant_document",
+        "transaction_sequence",
+        "existing_encumbrance",
+        "registration_status"
+      ]
+    }
+  ],
+  "matter_reference_date": "2024-04",
+  "exam_session": "APRIL 2024",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

@@ -1,0 +1,1207 @@
+{
+  "benchmark_matter_id": "M002",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M002",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T21:59:41Z",
+    "verification_agent": "verifier-M002",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:14:24Z"
+  },
+  "matter_reference_date": "2026-04",
+  "matter_reference_date_basis": "matter_reference_date in candidates/matters/M002.json, taken from the APRIL 2026 exam session.",
+  "corpus_gaps": [
+    "No Act governing the coastal zone or coast conservation is in the corpus, so the special approval and issuing authority asked about in M002-Q02 cannot be sourced. Searches for 'coast' and 'coastal zone' return only incidental references in the Town and Country Planning Ordinance, the Municipal Councils Ordinance and the Urban Councils Ordinance.",
+    "No stamp duty rate schedule or Gazette Order is in the corpus. Stamp Duty Act No. 43 of 1982 s.2 charges duty at 'the prescribed rate' and Stamp Duty (Special Provisions) Act No. 12 of 2006 s.3 leaves the rate to a Ministerial Order; neither is extracted, so M002-Q03 cannot be computed.",
+    "Only the Western Province Financial Statute No. 6 of 1990 is in the corpus. Stamp duty on transfers of immovable property is collected provincially, and the Southern Province instrument that would apply to land in Galle is absent.",
+    "No planning, environmental or tourism enactment beyond the Urban Development Authority Law and the Town and Country Planning Ordinance is in the corpus, so approvals such as an environmental protection licence or a tourism development approval cannot be sourced.",
+    "The Housing and Town Improvement Ordinance, referred to in Urban Councils Ordinance s.74 for street lines, is not in the corpus, so street line and building line certificates cannot be grounded in a corpus provision.",
+    "The corpus text of Notaries Ordinance section 31 renders the rule numbers of rules (16), (17) and (26) as bare paragraph letters. The subsection labels used in the provisions here follow the conventional numbering of the Ordinance and should be checked by the verifier against the printed text.",
+    "Verifier: the corpus edition of the Registration of Documents Ordinance is the 1990 consolidation, while the corpus separately holds Acts No. 48 of 2011, No. 21 of 2013, No. 32 of 2022 and No. 18 of 2024, which amend sections 13 and 32 among others. Section-level text for that Ordinance is therefore not the text in force at April 2026 and has to be read with the amending Acts."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M002-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(a)",
+      "relevant_excerpt": "Before any deed or instrument (other than a will or codicil) affecting any interest in land or other immovable property is drawn by him, he shall search or cause to be searched the registers in the land registry to ascertain the state of the title in regard to such land and whether any prior deed affecting any interest in such land has been registered",
+      "why_relevant": "This is the primary statutory source of the notary's pre-purchase document check: before drawing the deed of transfer the notary must search the land registry registers to establish the vendor's title and any prior registered deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 stands as substituted and amended by Act No. 47 of 2011, Act No. 31 of 2022 and Act No. 6 of 2024, all before the April 2026 matter date, so the consolidated text is the text in force.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and the rule is correctly stated, but the corpus body of section 31 prints this rule without its number, so the subsection label follows conventional numbering and cannot be confirmed against the corpus text. The excerpt also omits the proviso at the end of the rule, under which the search is not compulsory if the parties authorise the notary in writing to dispense with it; that proviso is added as PROV-M002-901."
+    },
+    {
+      "provision_id": "PROV-M002-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(b)(i)",
+      "relevant_excerpt": "he shall obtain from the Registrar of the relevant Land Registry the certified extract of the folio containing the last entry pertaining to such land or immovable property containing the ownership and the registered encumbrances relating to such land or immovable property",
+      "why_relevant": "Names the specific document the notary must obtain: the certified folio extract showing ownership and registered encumbrances of the Galle land.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by the 2011, 2022 and 2024 amendments to section 31; in force well before April 2026.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and the rule is correctly stated, but the corpus body of section 31 prints this rule without its number, so the subsection label follows conventional numbering and cannot be confirmed against the corpus text."
+    },
+    {
+      "provision_id": "PROV-M002-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(d)",
+      "relevant_excerpt": "if a party to any deed or instrument is a corporate body he shall retain a certified copy of the certificate of incorporation or other instrument establishing such corporate entity and details of board of directors",
+      "why_relevant": "The purchaser is a private limited company, so the notary must call for and retain a certified copy of its certificate of incorporation and the particulars of its board of directors.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of the amended section 31 text in force at April 2026.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and the rule is correctly stated, but the corpus body of section 31 prints this rule without its number, so the subsection label follows conventional numbering and cannot be confirmed against the corpus text."
+    },
+    {
+      "provision_id": "PROV-M002-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (14)",
+      "relevant_excerpt": "Where the executant is a body corporate, he shall attach a copy of the board resolution authorizing the executant to sign such deed or instrument to the protocol of such deed or instrument.",
+      "why_relevant": "Requires the notary to obtain the board resolution authorising the person who signs for the company, and to attach a copy to the protocol.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Act No. 6 of 2024; in force before April 2026.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-005",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (33)",
+      "relevant_excerpt": "When a deed transferring any immovable property is executed or acknowledged before a notary, he shall use his best endeavours to obtain the title deed, if any, of such property",
+      "why_relevant": "Obliges the notary to obtain the vendor's title deed itself, not merely the registry extract, and to endorse the new transaction on it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Long-standing rule; unaffected on this point by the 2011 to 2024 amendments.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-006",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (16)(a)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument, other than a will or codicil, affecting land or other immovable property, unless the deed or instrument embodies therin or in a Schedule annexed therto an accurate and clear description of the said land or other property affected thereby, showing its boundaries, extent, situation",
+      "why_relevant": "The notary can only produce the required accurate description by checking the survey plan and the descriptions in the prior deeds, which makes the plan and the prior deeds documents he must call for.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Text as amended before April 2026.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and the rule is correctly stated, but the corpus body of section 31 prints this rule without its number, so the subsection label follows conventional numbering and cannot be confirmed against the corpus text."
+    },
+    {
+      "provision_id": "PROV-M002-007",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (30)",
+      "relevant_excerpt": "If he attest any deed or instrument executed before him by means of an attorney, he shall preserve a true copy of the power of attorney with his protocol, and shall forward a like copy with the duplicate to the Registrar of Lands.",
+      "why_relevant": "Where the vendor signs through an attorney, the power of attorney becomes a document the notary must obtain, copy and forward.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Long-standing rule in force at April 2026.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-008",
+      "section_id": "23-1927/s7",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "7",
+      "subsection": "(1)",
+      "relevant_excerpt": "An instrument executed or made on or after the 1st day of January, 1864, whether before or after the commencement of this Ordinance shall, unless it is duly registered under this Chapter",
+      "why_relevant": "Explains why the registry search matters: priority between competing deeds turns on registration, so the purchaser must see the registered chain before paying.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended since 1927.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-009",
+      "section_id": "23-1927/s42",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "42",
+      "subsection": null,
+      "relevant_excerpt": "all duplicates and copies and all books and indexes kept under this Ordinance may be searched and examined by any person claiming to be interested therein or by his attorney-at-law or agent duly authorized thereto in writing, and certified copies of or extracts from any such duplicate, copy, or book may be obtained if required",
+      "why_relevant": "Gives the notary the statutory right of access to the registry books and to certified copies and extracts, which is the mechanism by which the section 31 search is carried out.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended since 1927.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-010",
+      "section_id": "23-1927/s11",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "11",
+      "subsection": "(1)",
+      "relevant_excerpt": "shall bind a purchaser, unless and until the lis pendens is duly registered under this Chapter.",
+      "why_relevant": "A registered lis pendens binds the purchaser, so the search must extend to registered lis pendens entries against the land.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The 1947 amendment predates the matter date. The corpus text of subsection (1) carries an OCR artefact, rendering the opening words as 'No Us pendens'.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim but the excerpt begins mid-sentence and drops the opening negative (no lis pendens shall bind a purchaser unless registered), so read alone it inverts the rule; the claim built on it states the rule correctly."
+    },
+    {
+      "provision_id": "PROV-M002-011",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(1)",
+      "relevant_excerpt": "may present for registration a caveat in the prescribed form requiring to be served with notice of the presentation for registration of any instrument affecting the land described in the caveat.",
+      "why_relevant": "Registered caveats are a further class of registry entry the notary must look for, because a caveator can move to have the transfer rectified or cancelled.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended since 1927.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim but the temporal note is wrong: the corpus edition is the 1990 consolidation, and Registration of Documents (Amendment) Act No. 32 of 2022 s.2(1) repealed and substituted subsection (1) (and s.2(5) substituted sixty days for thirty in subsection (5)), so this is not the text in force at April 2026, although the caveat mechanism it describes survives."
+    },
+    {
+      "provision_id": "PROV-M002-012",
+      "section_id": "23-1927/s13",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "13",
+      "subsection": "(1)",
+      "relevant_excerpt": "Every instrument (except a will) presented for registration shall contain embodied therein, or in a schedule annexed thereto, an accurate and clear description of the land affected thereby, its boundaries, extent, and situation",
+      "why_relevant": "Registration will be refused unless the description is accurate, which is a second reason to obtain the survey plan and the prior deeds before drafting.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Subsections (5A) and (5B) were added before the matter date and do not affect subsection (1).",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim but the temporal note is wrong: subsection (1) was repealed and substituted by Registration of Documents (Amendment) Act No. 48 of 2011 s.2, which is in the corpus; the 1990 consolidation held here is the superseded text, although the description requirement it states survives the substitution."
+    },
+    {
+      "provision_id": "PROV-M002-013",
+      "section_id": "38-2014/s2",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "the transfer of title of any land situated in Sri Lanka, shall be prohibited if such transfer is- (a) to a foreigner; or (b) to a company incorporated in Sri Lanka under the Companies Act where any foreign shareholding in such company, either direct or indirect, is fifty per cent or above; or (c) to a foreign company, unless exempted as provided in section 3.",
+      "why_relevant": "The purchaser is a Sri Lankan incorporated company, so the notary must establish from the company's own records what proportion of its shares is held directly or indirectly by foreigners.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 as amended by Act No. 3 of 2017 and Act No. 21 of 2018, both before April 2026.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim but the temporal note misattributes the amendment history: in the corpus, Act No. 3 of 2017 inserts section 5A and Act No. 21 of 2018 amends sections 3 and 5A, and the corpus row for section 2 records no amendment events, so section 2 is not shown to have been amended by either Act."
+    },
+    {
+      "provision_id": "PROV-M002-014",
+      "section_id": "38-2014/s4",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "4",
+      "subsection": "(3)",
+      "relevant_excerpt": "Where the title of a land is transferred to a company incorporated in Sri Lanka under the Companies Act, with less than fifty per cent of foreign shareholding, it shall be the duty of the Registrar of Lands to confirm himself whether the foreign shareholding of such company is less than fifty per cent, by requiring the secretary of such company to submit documentary proof to the effect that the foreign shareholding of such company is less than fifty per cent of the total number of shares issued for the time being.",
+      "why_relevant": "Identifies the exact document the notary must have ready before registration: the company secretary's documentary proof of the foreign shareholding percentage.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2014 and unaffected on this point by the 2017 and 2018 amendments.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-015",
+      "section_id": "38-2014/s18",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "18",
+      "subsection": null,
+      "relevant_excerpt": "Any alienation of land effected in contravention of the provisions of this Act, shall be void and shall have no effect in law.",
+      "why_relevant": "Sets the consequence that makes the shareholding check indispensable rather than merely prudent.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended and in force at April 2026.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-016",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(2)",
+      "relevant_excerpt": "Provided further, where the transferee is a corporate body and where the Board of Directors of such corporate body is unable to be present and execute the deed or instrument, such Board shall authorise in writing, any other person to sign such deed or instrument on his behalf, who shall comply with the requirements set out in subsection (1).",
+      "why_relevant": "The transferee company must itself execute the deed, so the notary must hold the board's written authorisation for whoever signs for the company.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 as amended by Act No. 30 of 2022 and Act No. 4 of 2024, both before April 2026.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim but the subsection label should be (2)(a): the excerpt is the second proviso to paragraph (a) of subsection (2), not free-standing text of subsection (2)."
+    },
+    {
+      "provision_id": "PROV-M002-017",
+      "section_id": "4-1902/s3",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "Every power of attorney executed in Sri Lanka or any other country shall be registered with the Registrar General.",
+      "why_relevant": "If the vendor signs through an attorney, the notary must see that the power of attorney is one registered with the Registrar-General.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 3 as substituted by Act No. 28 of 2022; in force before April 2026.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-018",
+      "section_id": "4-1902/s3B",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3B",
+      "subsection": "(1)",
+      "relevant_excerpt": "(a) examine the relevant volumes and folios in the Registrar General's department; (b) be satisfied that the power of attorney has not been revoked or cancelled and shall state such fact in his attestation: and (c) retain the copies of the National Identity Card or the driving license or the bio page of the passport, as the case may be, of the grantor and the attorney, and a copy of the power of attorney.",
+      "why_relevant": "Where the transfer is signed under a power of attorney the notary must check the Registrar-General's volumes and folios for a revocation, and retain identity documents of grantor and attorney.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 28 of 2022, in force before the April 2026 matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim, but the duty in section 3B(1) applies only to a transaction referred to in section 3A; that gateway is missing from the map and is added as PROV-M002-902."
+    },
+    {
+      "provision_id": "PROV-M002-019",
+      "section_id": "7-2007/s5",
+      "act_id": "7-2007",
+      "formal_title": "Companies Act",
+      "number_and_year": "No. 7 of 2007",
+      "section": "5",
+      "subsection": "(3)",
+      "relevant_excerpt": "A certificate of incorporation issued under this section in-respect of any company, shall be conclusive evidence of the fact that- (a) all the requirements under this Act relating to the incorporation of a company have been complied with; and (b) the company has been incorporated under this Act on the date specified in such certificate of incorporation.",
+      "why_relevant": "Explains what the certificate of incorporation the notary retains actually proves about the purchaser's existence and capacity to hold land.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The 2019 amendment does not touch section 5(3).",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-020",
+      "section_id": "22-1871/s3",
+      "act_id": "22-1871",
+      "formal_title": "Prescription Ordinance",
+      "number_and_year": "No. 22 of 1871",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "Proof of the undisturbed and uninterrupted possession by a defendant in any action, or by those under whom he claims, of lands or immovable property, by a title adverse to or independent of that of the claimant or plaintiff in such action",
+      "why_relevant": "Paper title alone is not enough: ten years of adverse possession can defeat it, so the notary must also examine possession on the ground and not rely on the deeds in isolation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 3 unamended; Act No. 26 of 2014 did not alter it.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-021",
+      "section_id": "9-1950/s2",
+      "act_id": "9-1950",
+      "formal_title": "Land Acquisition Act",
+      "number_and_year": "No. 9 of 1950",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "Where the Minister decides that land in any area is needed for any public purpose, he may direct the acquiring officer of the district in which that area lies to cause a notice in accordance with subsection (2) to be exhibited in some conspicuous places in that area.",
+      "why_relevant": "Background for the check on whether an acquisition notice affects the area, since land under acquisition is of no use to the company for a hotel.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at April 2026; the 1969, 1979 and 1986 amendments do not affect section 2(1).",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and the background role is right, but section 2 concerns a preliminary investigation notice exhibited in the area; it creates nothing registrable, so it does not support a check made through registry entries."
+    },
+    {
+      "provision_id": "PROV-M002-022",
+      "section_id": "19-1935/s46",
+      "act_id": "19-1935",
+      "formal_title": "Land Development Ordinance",
+      "number_and_year": "No. 19 of 1935",
+      "section": "46",
+      "subsection": "(1)",
+      "relevant_excerpt": "Subject to the provisions of subsection (2), no permit-holder shall execute or effect any disposition of the land alienated to him on the permit.",
+      "why_relevant": "Background for tracing the root of title back to any State grant or permit, because a disposition by a permit-holder is null and void.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at April 2026.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim, but the nullity relied on in why_relevant is in subsection (3), not the excerpted subsection (1)."
+    },
+    {
+      "provision_id": "PROV-M002-023",
+      "section_id": "41-1978/s8J",
+      "act_id": "41-1978",
+      "formal_title": "Urban Development Authority Law",
+      "number_and_year": "No. 41 of 1978",
+      "section": "8J",
+      "subsection": "(1)",
+      "relevant_excerpt": "no Government agency or any other person shall carry out or engage in any development activity in any development area or part thereof, except under the authority, and in accordance with the terms and conditions, of a permit issued in that behalf by the Authority",
+      "why_relevant": "The only development-permit regime in this corpus. It is recorded as background context for the coastal-zone question; it is not the coastal-zone approval the question asks about, and whether the Galle land lies in a declared development area is not stated.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at April 2026.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-024",
+      "section_id": "12-2006/s13",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "the provisions of the Stamp Duty Act, No. 43 of 1982, relating to the Imposition of Stamp Duty (other than any instrument relating to the transfer of immovable property, the transfer of motor vehicles or documents filed in Court), Exemptions and any other provision in the aforesaid Act, shall, in so far as the same are inconsistent with the provisions of this Act, have no operation and the provisions of this Act shall prevail.",
+      "why_relevant": "Places the deed of transfer of immovable property outside the 2006 Act's displacement of the 1982 Act, so the 1982 regime is the one to look to for a deed of transfer.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at April 2026.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-025",
+      "section_id": "43-1982/s2",
+      "act_id": "43-1982",
+      "formal_title": "Stamp Duty Act",
+      "number_and_year": "No. 43 of 1982",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "a stamp duty at the prescribed rate. Different rates may be prescribed in respect of different classes or categories of instruments.",
+      "why_relevant": "Shows that the charging provision fixes no figure: the rate is prescribed elsewhere, which is precisely what this corpus does not contain.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at April 2026.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-026",
+      "section_id": "43-1982/s15",
+      "act_id": "43-1982",
+      "formal_title": "Stamp Duty Act",
+      "number_and_year": "No. 43 of 1982",
+      "section": "15",
+      "subsection": "(1)",
+      "relevant_excerpt": "Where any property is conveyed by an instrument, the stamp duty with which such instrument is chargeable shall be calculated on the value of the property conveyed.",
+      "why_relevant": "Establishes the base on which any rate would be applied, namely the value of the property conveyed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at April 2026.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-027",
+      "section_id": "43-1982/s24",
+      "act_id": "43-1982",
+      "formal_title": "Stamp Duty Act",
+      "number_and_year": "No. 43 of 1982",
+      "section": "24",
+      "subsection": "(b)",
+      "relevant_excerpt": "in the case of a conveyance or agreement to convey, by the grantee, or intended grantee;",
+      "why_relevant": "Identifies the purchasing company as the party liable for the duty, which is the part of the stamp duty question this corpus can answer.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at April 2026.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M002-901",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "proviso to rule (17)",
+      "relevant_excerpt": "Provided that if the parties to the transaction authorize the notary in writing to dispense with the search, the search shall not be compulsory, but he shall before the deed or instrument is tendered for registration write at the head thereof the reference to the previous registration, if any.",
+      "why_relevant": "The exception to the search duty relied on in PROV-M002-001: the parties may authorise the notary in writing to dispense with the search, in which case he must still write the reference to the previous registration at the head of the deed. A checklist that states the search duty without its statutory exception is incomplete.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of the section 31 text as amended by Acts No. 47 of 2011, No. 31 of 2022 and No. 6 of 2024, all before April 2026.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier: proviso missing from the researcher's map."
+    },
+    {
+      "provision_id": "PROV-M002-902",
+      "section_id": "4-1902/s3A",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3A",
+      "subsection": "(3)",
+      "relevant_excerpt": "If a power of attorney specified in subsection (1) is executed outside Sri Lanka, it shall - (a) be duly executed before a person authorized under section 2 of this Act; (b) contain a description of the land or land parcel as the case may be with metes and bounds and the extent in the case of a land or land parcel;",
+      "why_relevant": "A power of attorney granted abroad for a transaction within section 2 of the Prevention of Frauds Ordinance must satisfy these execution and content requirements. It is the gateway that makes the section 3B duty in PROV-M002-018 apply, and it fixes what the notary must look for on the face of a power of attorney executed in Melbourne.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Powers of Attorney (Amendment) Act No. 28 of 2022; not touched by Act No. 3 of 2024, which amends sections 2, 3D and 4. In force at April 2026.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier: indispensable cross-reference from section 3B, and directly engaged by the enrichment fact that the power of attorney was granted in Melbourne."
+    },
+    {
+      "provision_id": "PROV-M002-903",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (15A)(c)",
+      "relevant_excerpt": "where a deed or instrument is signed by an attorney, such attorney shall submit to the notary an affidavit affirming that the Power of Attorney is genuine and in force and the grantor is alive when executing such deed or instrument",
+      "why_relevant": "Names a further document the notary must obtain where the vendor signs through an attorney: the attorney's affidavit that the power is genuine and in force and that the grantor is alive. The researcher's attorney limb stops at the power of attorney and the revocation search.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of the section 31 text as amended before April 2026. The corpus body prints this rule without its number, so the label follows conventional numbering and is not confirmable from the corpus text.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier: missing document requirement on the attorney limb."
+    },
+    {
+      "provision_id": "PROV-M002-904",
+      "section_id": "23-1927/s13",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "13",
+      "subsection": "(5)",
+      "relevant_excerpt": "Every Registrar shall refuse to register an instrument, other than a will, which docs not state the particulars required by the foregoing provisions of this section.",
+      "why_relevant": "Supplies the refusal consequence that claim CL-M002-Q01-007 asserts. The researcher cited only subsection (1), which states the description requirement but not the sanction.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at April 2026. The corpus edition is the 1990 consolidation; Acts No. 48 of 2011 and No. 21 of 2013 amend subsections (1) and (6) of this section and leave subsection (5) untouched. The word 'docs' is an OCR artefact for 'does'.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier so that the refusal limb of CL-M002-Q01-007 rests on a cited provision."
+    },
+    {
+      "provision_id": "PROV-M002-905",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(5)",
+      "relevant_excerpt": "it is proved to the satisfaction of the court that the instrument presented for registration is or was at the time of registration void or voidable by the caveator or fraudulent as against him or in derogation of his lawful rights the court may order the instrument to be rectified or cancelled as may be necessary to preserve the rights of the caveator",
+      "why_relevant": "Supplies the rectification or cancellation consequence that claim CL-M002-Q01-005 asserts. The researcher cited only subsection (1), which creates the caveat but says nothing about the caveator's remedy.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The corpus edition is the 1990 consolidation. Registration of Documents (Amendment) Act No. 32 of 2022 s.2(5) substituted sixty days for the thirty days in this subsection, so the time limit in the corpus text is superseded; the rectification power itself is unchanged.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier so that the rectification limb of CL-M002-Q01-005 rests on a cited provision."
+    },
+    {
+      "provision_id": "PROV-M002-906",
+      "section_id": "4-1902/s3C",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3C",
+      "subsection": null,
+      "relevant_excerpt": "A power of attorney other than a power of attorney executed by a State institution shall be valid, only for a period of five years from the date of execution, unless the period of validity of such power of attorney is specified in such power of attorney or until such power of attorney is revoked or cancelled in accordance with the provisions of section 4.",
+      "why_relevant": "The notary must check the age of the power of attorney, not only whether it has been revoked: a power is valid for five years from execution unless it states its own period. On the enriched facts the March 2024 power is still within that period, but the check belongs on the checklist.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Powers of Attorney (Amendment) Act No. 28 of 2022; in force at April 2026.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier: validity period check missing from the attorney limb."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M002-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks what a notary retained for the purchase must check before the transfer. The duty to search, the documents to be obtained and retained, and the consequences of not doing so are all laid down in the Notaries Ordinance, the Registration of Documents Ordinance, the Land (Restrictions on Alienation) Act, the Prevention of Frauds Ordinance, the Powers of Attorney Ordinance and the Companies Act. A complete checklist follows from those provisions without judicial authority. Conveyancing practice adds conventions such as tracing thirty years of title, but those are refinements of the statutory search duty rather than a separate source of law.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M002-Q01-01",
+          "issue": "What searches and registry documents must the notary obtain before drawing a deed of transfer of the Galle land?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M002-Q01-02",
+          "issue": "What documents establish that the vendor holds a good and complete title, including the prior deeds and the survey plan?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M002-Q01-03",
+          "issue": "What documents must the notary obtain from the purchasing company, given that a company incorporated in Sri Lanka with foreign shareholding of fifty per cent or above cannot take title to land?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M002-Q01-04",
+          "issue": "What documents are required where the vendor executes through an attorney rather than in person?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M002-Q01-05",
+          "issue": "What must be looked at outside the deeds, given adverse possession of part of the land and the risk of a State interest or acquisition?",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M002-001",
+        "PROV-M002-002",
+        "PROV-M002-003",
+        "PROV-M002-004",
+        "PROV-M002-005",
+        "PROV-M002-007",
+        "PROV-M002-013",
+        "PROV-M002-014",
+        "PROV-M002-015",
+        "PROV-M002-016",
+        "PROV-M002-017",
+        "PROV-M002-018",
+        "PROV-M002-902",
+        "PROV-M002-903"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M002-006",
+        "PROV-M002-008",
+        "PROV-M002-009",
+        "PROV-M002-010",
+        "PROV-M002-011",
+        "PROV-M002-012",
+        "PROV-M002-019",
+        "PROV-M002-020",
+        "PROV-M002-901",
+        "PROV-M002-904",
+        "PROV-M002-905",
+        "PROV-M002-906"
+      ],
+      "background_provision_ids": [
+        "PROV-M002-021",
+        "PROV-M002-022"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across enactments: the notary's search and document-retention duties under section 31 of the Notaries Ordinance; the registration and priority regime of the Registration of Documents Ordinance that gives the search its point; and the separate transfer prohibition in the Land (Restrictions on Alienation) Act, which requires the shareholding proof under section 4(3) and carries the nullity in section 18. Execution by an attorney adds a parallel two-step chain under the Powers of Attorney Ordinance. Verifier: the count stays at three. The provisions added on verification (the proviso to rule (17), Powers of Attorney Ordinance sections 3A(3) and 3C, Notaries Ordinance rule (15A)(c), and Registration of Documents Ordinance sections 13(5) and 32(5)) sit inside the chains already counted and add no new step across enactments.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M002-001",
+          "to_provision_id": "PROV-M002-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M002-001",
+          "to_provision_id": "PROV-M002-009",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M002-001",
+          "to_provision_id": "PROV-M002-008",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M002-008",
+          "to_provision_id": "PROV-M002-010",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M002-008",
+          "to_provision_id": "PROV-M002-011",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M002-006",
+          "to_provision_id": "PROV-M002-012",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M002-013",
+          "to_provision_id": "PROV-M002-014",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M002-013",
+          "to_provision_id": "PROV-M002-015",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M002-003",
+          "to_provision_id": "PROV-M002-019",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M002-004",
+          "to_provision_id": "PROV-M002-016",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M002-017",
+          "to_provision_id": "PROV-M002-018",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M002-018",
+          "to_provision_id": "PROV-M002-007",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M002-005",
+          "to_provision_id": "PROV-M002-020",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M002-001",
+          "to_provision_id": "PROV-M002-901",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M002-902",
+          "to_provision_id": "PROV-M002-018",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M002-007",
+          "to_provision_id": "PROV-M002-903",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M002-017",
+          "to_provision_id": "PROV-M002-906",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M002-012",
+          "to_provision_id": "PROV-M002-904",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M002-011",
+          "to_provision_id": "PROV-M002-905",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+        "enriched_background": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel. The company was incorporated in Sri Lanka in 2019 and holds a certificate of incorporation numbered PV 00218347. Of its 10,000,000 issued shares, 6,500,000 are held by three Sri Lankan citizens resident in Galle and 3,500,000 are held by Ocean Crest Holdings Pte Ltd, a company incorporated in Singapore. The board has resolved to acquire the property and has authorised its managing director, Ms. Ranmali Fernando, to sign on the company's behalf. The property offered to the company is Lot A depicted in Plan No. 2184 dated 12 January 2021 made by K. A. Wijeratne, Licensed Surveyor, in extent one acre two roods and ten perches, situated at Dadalla within the Galle Municipal Council limits and bounded on the south by the sea. The person offering the land as owner is Mr. D. P. Amarasuriya, who now lives in Melbourne and proposes to sign the transfer through his brother, Mr. L. K. Amarasuriya, acting under a power of attorney granted in Melbourne on 3 March 2024. Mr. D. P. Amarasuriya has produced only Deed of Transfer No. 4712 dated 8 August 2011 attested by S. Perera, Notary Public, and says the earlier deeds in the chain are with his family and can be produced later. A neighbouring family has fenced off and cultivated the northern portion of the land since 2009 and pays nothing to Mr. Amarasuriya. The price agreed between the parties is Rs 100,000,000, and the deed is to be signed at Galle.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M002-Q01-001",
+            "fact": "Sea View Company (Pvt) Ltd is incorporated in Sri Lanka under certificate of incorporation PV 00218347, and 3,500,000 of its 10,000,000 issued shares are held by Ocean Crest Holdings Pte Ltd, a company incorporated in Singapore.",
+            "origin": "synthetic_decisive",
+            "reason": "The scenario says only that the purchaser is a private company. Whether the purchaser may take title at all turns on its foreign shareholding, so the shareholding must be fixed to make the question determinate.",
+            "activates_provision_ids": [
+              "PROV-M002-013",
+              "PROV-M002-014",
+              "PROV-M002-015",
+              "PROV-M002-019",
+              "PROV-M002-003"
+            ],
+            "counterfactual_effect": "If the Singapore holding were fifty per cent or more, the transfer of title would be prohibited outright and void, and the notary's advice would be that the purchase cannot proceed in this form.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M002-Q01-002",
+            "fact": "The board of Sea View Company (Pvt) Ltd has resolved to acquire the property and has authorised its managing director, Ms. Ranmali Fernando, to sign the deed on the company's behalf.",
+            "origin": "synthetic_neutral",
+            "reason": "A company can only execute through an authorised natural person; without this the execution side of the file has no facts at all.",
+            "activates_provision_ids": [
+              "PROV-M002-004",
+              "PROV-M002-016"
+            ],
+            "counterfactual_effect": "Without a board resolution the notary could not attest the deed for the company at all.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M002-Q01-003",
+            "fact": "The land is Lot A in Plan No. 2184 dated 12 January 2021 made by K. A. Wijeratne, Licensed Surveyor, in extent one acre two roods and ten perches, at Dadalla within the Galle Municipal Council limits, bounded on the south by the sea.",
+            "origin": "synthetic_neutral",
+            "reason": "The background gives no property identity, and the statutory description duty cannot be applied to an unidentified land.",
+            "activates_provision_ids": [
+              "PROV-M002-006",
+              "PROV-M002-012"
+            ],
+            "counterfactual_effect": "Without an identified surveyed lot the notary could not frame the schedule or search the correct folio.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M002-Q01-004",
+            "fact": "Mr. D. P. Amarasuriya, who offers the land, has produced only Deed of Transfer No. 4712 dated 8 August 2011 attested by S. Perera, Notary Public, and has not produced the earlier deeds in the chain.",
+            "origin": "synthetic_decisive",
+            "reason": "The question asks which documents must be checked; an incomplete chain of title is what makes the registry search and the call for prior title deeds operative rather than formal.",
+            "activates_provision_ids": [
+              "PROV-M002-001",
+              "PROV-M002-002",
+              "PROV-M002-005",
+              "PROV-M002-008",
+              "PROV-M002-009",
+              "PROV-M002-022"
+            ],
+            "counterfactual_effect": "If a complete registered chain had been produced the search would confirm title rather than expose a gap, and the call for further deeds would be a formality.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M002-Q01-005",
+            "fact": "Mr. D. P. Amarasuriya lives in Melbourne and proposes to sign through his brother, Mr. L. K. Amarasuriya, under a power of attorney granted in Melbourne on 3 March 2024.",
+            "origin": "synthetic_decisive",
+            "reason": "Execution by an attorney brings a distinct set of documents into the checklist that the bare background does not raise.",
+            "activates_provision_ids": [
+              "PROV-M002-007",
+              "PROV-M002-017",
+              "PROV-M002-018"
+            ],
+            "counterfactual_effect": "If the owner signed in person, the power of attorney, its registration and the revocation search would drop out of the checklist.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M002-Q01-006",
+            "fact": "A neighbouring family has fenced off and cultivated the northern portion of the land since 2009 and pays nothing to Mr. Amarasuriya.",
+            "origin": "synthetic_decisive",
+            "reason": "Makes the possession limb of the investigation determinate rather than hypothetical.",
+            "activates_provision_ids": [
+              "PROV-M002-020"
+            ],
+            "counterfactual_effect": "If the owner were in undisturbed possession of the whole land, the deeds alone would settle the position and no possession enquiry would be needed.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M002-Q01-007",
+            "fact": "The price agreed between the parties is Rs 100,000,000 and the deed is to be signed at Galle.",
+            "origin": "synthetic_neutral",
+            "reason": "Fixes the consideration, which the original background leaves open for this part, and locates the execution.",
+            "activates_provision_ids": [
+              "PROV-M002-008"
+            ],
+            "counterfactual_effect": "None on the checklist; it makes the transaction concrete and ties this part to the value used elsewhere in the matter.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "What documents must the notary retained by Sea View Company (Pvt) Ltd examine before the company buys the Galle land: the documents that prove the vendor's title, the documents that show whether the land is encumbered or affected by a claim, the documents that establish the purchasing company's capacity to take title, and the documents needed because the vendor proposes to sign through an attorney.",
+        "rule": "Notaries Ordinance s.31 rule (17)(a) requires the notary, before drawing any deed affecting an interest in land, to search or cause to be searched the registers in the land registry to ascertain the state of the title and whether any prior deed has been registered, and rule (17)(b)(i) requires him to obtain from the Registrar of the relevant Land Registry the certified extract of the folio showing ownership and registered encumbrances. Registration of Documents Ordinance s.42 gives the right to search the registry books and take certified copies and extracts. The search matters because under s.7 of that Ordinance an unregistered instrument is void against a later duly registered instrument taken for valuable consideration, because s.11 makes a registered lis pendens bind a purchaser, and because s.32 lets a caveator have a later instrument rectified or cancelled. Notaries Ordinance s.31 rule (33) requires the notary to use his best endeavours to obtain the title deed of the property, and rule (16)(a), read with s.13(1) of the Registration of Documents Ordinance, requires an accurate description of boundaries, extent and situation, which can only come from the survey plan and the prior deeds. For the purchaser, Notaries Ordinance s.31 rule (17)(d) requires the notary to retain a certified copy of the certificate of incorporation and details of the board of directors, and rule (14) requires a copy of the board resolution authorising the signatory to be attached to the protocol; Prevention of Frauds Ordinance s.2(2) requires that written board authorisation where the directors cannot attend. Companies Act s.5(3) makes the certificate of incorporation conclusive evidence of incorporation. Land (Restrictions on Alienation) Act s.2(1)(b) prohibits transfer of title to a Sri Lankan company whose direct or indirect foreign shareholding is fifty per cent or above, s.4(3) requires the company secretary to furnish documentary proof of the foreign shareholding before the Registrar of Lands registers the transfer, and s.18 makes any alienation in contravention void. Where the vendor signs by attorney, Powers of Attorney Ordinance s.3(1)(a) requires the power to be registered with the Registrar-General, s.3B(1) requires the notary to examine the relevant volumes and folios in the Registrar-General's department, to be satisfied that the power has not been revoked or cancelled and to say so in the attestation, and to retain identity documents of grantor and attorney, and Notaries Ordinance s.31 rule (30) requires a true copy of the power to be kept with the protocol and forwarded to the Registrar of Lands. Prescription Ordinance s.3 shows that ten years of possession adverse to the owner can defeat a paper title, so possession must be looked at alongside the deeds.",
+        "application": "The notary should first search the Galle land registry folio for Lot A in Plan No. 2184 and obtain the certified folio extract showing the current ownership and every registered encumbrance, mortgage, lease, lis pendens, seizure notice and caveat. Because Mr. Amarasuriya has produced only Deed of Transfer No. 4712 of 2011, the notary must call for the earlier deeds in the chain and for the title deed itself so that it can be endorsed, and must check that each link is registered, since an unregistered link can be defeated by a later registered instrument. The survey plan of 2021 and the descriptions in the prior deeds must be compared so that the schedule states the boundaries, extent and situation accurately and matches the folio. On the purchaser's side the notary must take a certified copy of the certificate of incorporation PV 00218347, the particulars of the directors and the board resolution authorising Ms. Fernando to sign, and must obtain from the company secretary documentary proof that the Singapore holding of 3,500,000 out of 10,000,000 shares leaves the foreign shareholding below fifty per cent, since the Registrar of Lands will require that proof and a transfer in breach would be void. Because Mr. Amarasuriya will sign through his brother, the notary must see the original power of attorney of 3 March 2024, confirm that it is registered with the Registrar-General, examine the relevant volumes and folios there for any revocation or cancellation, take copies of the identity documents of both grantor and attorney and keep a copy of the power with the protocol. The fenced and cultivated northern portion held by the neighbours since 2009 must be investigated on the ground, because possession adverse to the owner for ten years can defeat the paper title to that portion. Since the company is buying for hotel construction at a price of Rs 100,000,000, the notary should also confirm from the registry entries and the root of title that no State grant or permit condition and no acquisition notice affects the land.",
+        "conclusion": "Before the purchase the notary should check, at a minimum: the certified extract of the relevant folio of the Galle land registry showing ownership and registered encumbrances, including any lis pendens, seizure notice or caveat; the vendor's title deed and the earlier deeds forming the chain of title; the survey plan and the descriptions in the prior deeds; the certificate of incorporation, the particulars of directors and the board resolution of the purchasing company together with the company secretary's documentary proof that its foreign shareholding is below fifty per cent; and the registered power of attorney with a Registrar-General's search confirming it has not been revoked, along with the identity documents of grantor and attorney. He should also satisfy himself about possession on the ground and about the absence of any State grant condition or acquisition affecting the land."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M002-Q01-001",
+          "claim_text": "Before drawing a deed affecting an interest in land the notary must search or cause to be searched the registers in the land registry to ascertain the state of the title and whether any prior deed has been registered.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-002",
+          "claim_text": "The notary must obtain from the Registrar of the relevant Land Registry a certified extract of the folio containing the last entry, showing the ownership and the registered encumbrances of the land.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-003",
+          "claim_text": "The registry books and indexes may be searched, and certified copies or extracts obtained, by a person interested or by his attorney-at-law or authorised agent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-004",
+          "claim_text": "The search matters because an instrument that is not duly registered is void against a subsequent duly registered instrument taken for valuable consideration.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-005",
+          "claim_text": "The search must extend to a registered lis pendens, which binds a purchaser, and to registered caveats, which allow a caveator to have a later instrument rectified or cancelled.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-010",
+            "PROV-M002-011",
+            "PROV-M002-905"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-006",
+          "claim_text": "The notary must use his best endeavours to obtain the title deed of the property being transferred.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-007",
+          "claim_text": "The deed must embody an accurate and clear description of the land with its boundaries, extent and situation, and registration will be refused if the instrument does not state those particulars.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-006",
+            "PROV-M002-012",
+            "PROV-M002-904"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-008",
+          "claim_text": "Where a party is a corporate body the notary must retain a certified copy of its certificate of incorporation and the details of its board of directors, and must attach to the protocol a copy of the board resolution authorising the signatory.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-003",
+            "PROV-M002-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-009",
+          "claim_text": "Where the transferee is a corporate body whose board cannot be present, the board must authorise in writing the person who signs the deed on its behalf.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-016"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-010",
+          "claim_text": "A certificate of incorporation is conclusive evidence that the company has been incorporated on the date it specifies and that the incorporation requirements were complied with.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-019"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-011",
+          "claim_text": "Transfer of title of land to a company incorporated in Sri Lanka is prohibited where its direct or indirect foreign shareholding is fifty per cent or above, and any alienation in contravention of the Act is void.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-013",
+            "PROV-M002-015"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-012",
+          "claim_text": "Where the transferee company has less than fifty per cent foreign shareholding, the Registrar of Lands must require the company secretary to submit documentary proof of that shareholding before registering the transfer.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-013",
+          "claim_text": "Every power of attorney, whether executed in Sri Lanka or abroad, must be registered with the Registrar-General.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-017"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-014",
+          "claim_text": "A notary attesting a deed signed under a power of attorney must examine the relevant volumes and folios in the Registrar-General's department, be satisfied that the power has not been revoked or cancelled and state that in his attestation, retain the identity documents of grantor and attorney and a copy of the power, and keep a true copy of the power with his protocol.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-018",
+            "PROV-M002-007",
+            "PROV-M002-902",
+            "PROV-M002-903"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-015",
+          "claim_text": "Ten years of undisturbed possession adverse to the owner can defeat the paper title, so the deeds alone are not conclusive.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M002-020"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-016",
+          "claim_text": "Because the vendor has produced only the 2011 deed, the notary must call for the earlier deeds in the chain and obtain the title deed itself, and must check from the folio extract that each link is registered.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M002-001",
+            "PROV-M002-002",
+            "PROV-M002-005",
+            "PROV-M002-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M002-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-017",
+          "claim_text": "The 2021 survey plan and the prior deed descriptions must be compared so that the schedule of the transfer states the boundaries, extent and situation of Lot A accurately and matches the folio.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M002-006",
+            "PROV-M002-012"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M002-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-018",
+          "claim_text": "The notary must take the purchasing company's certificate of incorporation, the particulars of its directors and the board resolution authorising its managing director to sign.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M002-003",
+            "PROV-M002-004",
+            "PROV-M002-016",
+            "PROV-M002-019"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M002-Q01-001",
+            "FACT-M002-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-019",
+          "claim_text": "The notary must obtain from the company secretary documentary proof that the Singapore company's 3,500,000 of 10,000,000 shares leave the foreign shareholding below fifty per cent, because the Registrar of Lands will require it and a transfer in breach would be void.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M002-013",
+            "PROV-M002-014",
+            "PROV-M002-015"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M002-Q01-001"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-020",
+          "claim_text": "Because the vendor will sign through his brother, the notary must see the original power of attorney of 3 March 2024, confirm its registration with the Registrar-General, search the volumes and folios there for a revocation, and take copies of the identity documents of grantor and attorney.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M002-017",
+            "PROV-M002-018",
+            "PROV-M002-007",
+            "PROV-M002-902",
+            "PROV-M002-906"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M002-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-021",
+          "claim_text": "The northern portion fenced and cultivated by the neighbours since 2009 must be investigated on the ground, because possession adverse to the owner for ten years can defeat the paper title to that portion.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M002-020"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M002-Q01-006"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-022",
+          "claim_text": "The notary should check five groups of documents before the company buys: the certified folio extract with all registered encumbrances, lis pendens and caveats; the vendor's title deed and the prior deeds in the chain together with the survey plan; the certificate of incorporation, directors' particulars and board resolution of the purchaser; the company secretary's proof of foreign shareholding; and the registered power of attorney with a revocation search and the identity documents of grantor and attorney.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M002-001",
+            "PROV-M002-002",
+            "PROV-M002-003",
+            "PROV-M002-004",
+            "PROV-M002-005",
+            "PROV-M002-007",
+            "PROV-M002-013",
+            "PROV-M002-014",
+            "PROV-M002-017",
+            "PROV-M002-018"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M002-Q01-001",
+            "FACT-M002-Q01-003",
+            "FACT-M002-Q01-004",
+            "FACT-M002-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M002-Q01-023",
+          "claim_text": "He should also satisfy himself about possession on the ground and, from the root of title and the registry entries, that no State grant condition or acquisition affects the land.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M002-020",
+            "PROV-M002-021",
+            "PROV-M002-022"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M002-Q01-006"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M002-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Special approvals for development inside the coastal zone, and the authority that issues them, are creatures of statute, so a complete answer would be statutory. The governing enactment is not in this corpus, so the answer cannot be produced from the frozen corpus.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M002-Q02-01",
+          "issue": "What special approval is required before development is carried out within the coastal zone, and which authority issues it?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M002-Q02-02",
+          "issue": "Whether any development-control regime present in this corpus supplies that approval.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [],
+      "supporting_provision_ids": [],
+      "background_provision_ids": [
+        "PROV-M002-023"
+      ],
+      "legal_hop_count": 0,
+      "hop_count_basis": "No provision in the corpus answers the question, so no hop chain can be counted.",
+      "reasoning_edges": [],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Which special approval must be obtained before the company carries out development within the coastal zone, and from which authority.",
+        "rule": "No Act in the frozen corpus creates a coastal zone or a coastal-zone approval. Searches for 'coast', 'coastal zone' and 'development permit' return only incidental references, such as the seat on the National Physical Planning Council for the Minister in charge of Coast Conservation under the Town and Country Planning Ordinance. The only development-permit regime in the corpus is Urban Development Authority Law s.8J, which requires a permit from the Authority for development activity in a declared development area; that is a different regime from the coastal-zone approval the question asks about.",
+        "application": "Whether the Galle land falls inside a declared development area is not stated in the scenario, and in any event the coastal-zone approval and its issuing authority cannot be identified from any provision in this corpus.",
+        "conclusion": "Blocked for missing authority. The answer requires the coastal-zone enactment, which is absent from the corpus, so no gold answer is proposed."
+      },
+      "answer_claims": [],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The corpus holds no Act regulating development in the coastal zone. The approval and the issuing authority the question asks about are created by an enactment outside the corpus, and quoting it from memory is not permitted. Urban Development Authority Law s.8J is recorded as background only.",
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M002-Q03",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Stamp duty is wholly statutory and the calculation depends on a rate fixed under statute. The charging, valuation and liability provisions are in the corpus, but the rate itself is prescribed by subsidiary legislation that the corpus does not hold, so the arithmetic cannot be done from the corpus.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M002-Q03-01",
+          "issue": "Which stamp duty regime applies to a deed of transfer of immovable property executed in Galle.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M002-Q03-02",
+          "issue": "On what base is the duty calculated and who is liable for it.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M002-Q03-03",
+          "issue": "What rate applies to a transfer valued at Rs 100,000,000, so that the duty can be computed.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [],
+      "supporting_provision_ids": [
+        "PROV-M002-024",
+        "PROV-M002-025",
+        "PROV-M002-026",
+        "PROV-M002-027"
+      ],
+      "background_provision_ids": [],
+      "legal_hop_count": 0,
+      "hop_count_basis": "The chain stops at the rate. Without the prescribed rate no computation is possible, so no complete hop chain is recorded.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M002-024",
+          "to_provision_id": "PROV-M002-025",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M002-025",
+          "to_provision_id": "PROV-M002-026",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M002-025",
+          "to_provision_id": "PROV-M002-027",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Sea View Company (Pvt) Ltd wants to purchase a land in Galle facing the sea to construct a hotel.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What stamp duty is payable on a deed of transfer of the Galle land where the value is Rs 100,000,000.",
+        "rule": "Stamp Duty (Special Provisions) Act s.13 leaves instruments relating to the transfer of immovable property outside the displacement of the Stamp Duty Act No. 43 of 1982, so the 1982 Act remains the reference point for a deed of transfer. Under s.2 of that Act duty is charged at the prescribed rate, with different rates capable of being prescribed for different classes of instrument. Section 15(1) provides that where property is conveyed the duty is calculated on the value of the property conveyed, and s.24(b) makes the duty on a conveyance payable by the grantee.",
+        "application": "The base would be the value of Rs 100,000,000 and the liable party would be the purchasing company as grantee. The rate, however, is not stated in any Act in the corpus: it is prescribed by subsidiary legislation, and stamp duty on transfers of immovable property is collected provincially, of which only the Western Province Financial Statute is in the corpus while the land is in Galle in the Southern Province.",
+        "conclusion": "Blocked for missing authority. The corpus contains no rate schedule or Order fixing the rate on a deed of transfer of immovable property, so the figure cannot be computed without inventing a rate."
+      },
+      "answer_claims": [],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The rate of stamp duty on a deed of transfer of immovable property is prescribed by subsidiary legislation. Neither a rate schedule nor any Order under Stamp Duty Act s.2 or Stamp Duty (Special Provisions) Act s.3 is in the corpus, and the only provincial statute in the corpus is the Western Province Financial Statute while this land is in the Southern Province. The base and the liable party can be stated; the arithmetic cannot.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

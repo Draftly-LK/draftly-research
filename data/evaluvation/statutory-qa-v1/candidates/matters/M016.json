@@ -1,0 +1,72 @@
+{
+  "benchmark_matter_id": "M016",
+  "source_matter_id": "P02-Q04-M01",
+  "grouping_key": "P02-Q04-M01",
+  "paper_no": 2,
+  "question_no": 4,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Romani who intends to go to New Zealand wants to file a caveat to her property situated in Battaramulla and meets you who are a Notary practising in Colombo.\n\nWhile the caveat is in force Romani is notified by the Registrar of Lands that a document affecting the land is presented for registration.",
+    "normalized": "Romani who intends to go to New Zealand wants to file a caveat to her property situated in Battaramulla and meets you who are a Notary practising in Colombo.\n\nWhile the caveat is in force Romani is notified by the Registrar of Lands that a document affecting the land is presented for registration.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P02-Q04-P06"
+        ]
+      },
+      {
+        "segment_index": 1,
+        "field": "own_background",
+        "atomic_ids": [
+          "P02-Q04-P06"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M016-Q01",
+      "atomic_id": "P02-Q04-P06",
+      "part_uid": "paper-02/q4/vi",
+      "part_id": "vi",
+      "item_id": null,
+      "marks": 1,
+      "pdf_page": 7,
+      "question_original": "Within how many days has an action to be commenced by Romani?",
+      "question_normalized": "Within how many days has an action to be commenced by Romani?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Romani who intends to go to New Zealand wants to file a caveat to her property situated in Battaramulla and meets you who are a Notary practising in Colombo.\n\nWhile the caveat is in force Romani is notified by the Registrar of Lands that a document affecting the land is presented for registration.",
+      "effective_background_normalized": "Romani who intends to go to New Zealand wants to file a caveat to her property situated in Battaramulla and meets you who are a Notary practising in Colombo.\n\nWhile the caveat is in force Romani is notified by the Registrar of Lands that a document affecting the land is presented for registration.",
+      "source_quote": "(vi) While the caveat is in force Romani is notified by the Registrar of Lands that a document\naffecting the land is presented for registration. Within how many days has an action to be\ncommenced by Romani?",
+      "classification": {
+        "context_sources": [
+          "shared",
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "property_identity",
+        "instrument_type",
+        "applicable_time"
+      ]
+    }
+  ],
+  "matter_reference_date": "2025-10",
+  "exam_session": "OCTOBER 2025",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

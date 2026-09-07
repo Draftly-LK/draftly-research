@@ -1,0 +1,70 @@
+{
+  "benchmark_matter_id": "M063",
+  "source_matter_id": "P11-Q02-M02",
+  "grouping_key": "P11-Q02-M02",
+  "paper_no": 11,
+  "question_no": 2,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "The said company instructs you to examine the title of a land and house situated next to the said tea estate twenty perches in extent (A.0 R.0 P.20).",
+    "normalized": "The said company instructs you to examine the title of a land and house situated next to the said tea estate twenty perches in extent (A.0 R.0 P.20).",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P11-Q02-P02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M063-Q01",
+      "atomic_id": "P11-Q02-P02",
+      "part_uid": "paper-11/q2/2",
+      "part_id": "2",
+      "item_id": null,
+      "marks": 9,
+      "pdf_page": 44,
+      "question_original": "What documents would you call for the examination of title of the land and house?",
+      "question_normalized": "What documents would you call for the examination of title of the land and house?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "The said company instructs you to examine the title of a land and house situated next to the said tea estate twenty perches in extent (A.0 R.0 P.20).",
+      "effective_background_normalized": "The said company instructs you to examine the title of a land and house situated next to the said tea estate twenty perches in extent (A.0 R.0 P.20).",
+      "source_quote": "2) The said company instructs you to examine the title of a land and house situated next to the\nsaid tea estate twenty perches in extent (A.0 R.0 P.20).\nWhat documents would you call for the examination of title of the land and house? (9 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "review",
+        "candidate_action": "enrich",
+        "confidence": 0.75,
+        "flags": [
+          "own_background references 'said company' from P01 but prior_background is empty"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "extraction_quality=review",
+        "confidence=0.75"
+      ],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "relevant_document",
+        "transaction_sequence"
+      ]
+    }
+  ],
+  "matter_reference_date": "2020-10",
+  "exam_session": "OCTOBER 2020",
+  "matter_tier": "B",
+  "tier_a_question_count": 0
+}

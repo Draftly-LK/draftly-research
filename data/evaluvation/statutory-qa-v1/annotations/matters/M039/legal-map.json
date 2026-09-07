@@ -1,0 +1,384 @@
+{
+  "benchmark_matter_id": "M039",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M039",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:18:53Z",
+    "verification_agent": "verifier-M039",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-05T00:00:00Z"
+  },
+  "matter_reference_date": "2023-10",
+  "matter_reference_date_basis": "Exam session stated in the candidate matter file (OCTOBER 2023); the law is stated as at that session.",
+  "corpus_gaps": [
+    "The Act does not define \"gross ingratitude\". Its content is Roman-Dutch common law developed by the courts and is not in the statutory corpus, so the gold answer treats the existence of gross ingratitude on given facts as a question for the court rather than asserting it.",
+    "The Roman-Dutch common law rule that governed revocation of donations before 2017, and the position of deeds of gift executed before the Act, are not in the corpus; the Act as extracted contains no transitional provision, so the enrichment fixes the deed date after the Act's commencement to avoid a retrospectivity question.",
+    "The Kandyan Law Declaration and Amendment Ordinance, No. 39 of 1938 (revocability of Kandyan deeds of gift) is not in the corpus, so any Kandyan-law route to revocation could not be checked; the enrichment places the parties outside Kandyan law.",
+    "No provision in the corpus deals with revocation of a deed of gift by consent of donor and donee; the Prevention of Frauds Ordinance, s 2 lists sale, purchase, transfer, assignment and mortgage and does not name gifts, so it was not relied on."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M039-001",
+      "section_id": "5-2017/s2",
+      "act_id": "5-2017",
+      "formal_title": "Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act",
+      "number_and_year": "No. 5 of 2017",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "An irrevocable deed of gift may be revoked on the ground of gross ingratitude, only on an Order made by a competent court, in an action filed by the donor of such deed against the donee to have the said deed revoked.",
+      "why_relevant": "Directly answers the question. It establishes that a deed of gift expressed to be irrevocable is nevertheless capable of revocation, and fixes the only ground (gross ingratitude), the only mode (an order of a competent court) and the only parties (donor as plaintiff, donee as defendant). The word \"only\" also excludes unilateral revocation by the donor's own act or deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2017 per the corpus (in_force_from_year 2017); no amendment events recorded. In force at 2023-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M039-002",
+      "section_id": "5-2017/s3",
+      "act_id": "5-2017",
+      "formal_title": "Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act",
+      "number_and_year": "No. 5 of 2017",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "Court shall not entertain an action referred to in section 2, unless it is filed within a period of ten years from the date of the execution of such deed of gift and within two years from the date on which the cause of action arose.",
+      "why_relevant": "A necessary statutory condition on the section 2 remedy. Even where the ground exists, the court cannot entertain the action outside the two cumulative time limits, so whether the deed could be revoked on the facts turns on the date of execution of the deed and the date the cause of action arose.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2017 per the corpus; no amendment events recorded. In force at 2023-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M039-003",
+      "section_id": "5-2017/s4",
+      "act_id": "5-2017",
+      "formal_title": "Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act",
+      "number_and_year": "No. 5 of 2017",
+      "section": "4",
+      "subsection": "(1)",
+      "relevant_excerpt": "The plaintiff in an action instituted under the provisions of this Act shall file or cause to be filed in court with the plaint, an application for registration of lis pendens",
+      "why_relevant": "Explains what the donor must do when instituting the action. It is a filing requirement rather than a condition of the right, so it supports the practical answer without changing whether revocation is available.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2017 per the corpus; no amendment events recorded. In force at 2023-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording confirmed verbatim and the supporting role is right, but the excerpt stops at \"an application for registration of lis pendens\" and omits paragraphs (a) and (b) of section 4(1), which are the words the answer actually relies on for addressing the application to the Registrar of Lands of the district in which the deed is registered (or, if unregistered, in which the land lies); the full section text supports the claim."
+    },
+    {
+      "provision_id": "PROV-M039-004",
+      "section_id": "5-2017/s5",
+      "act_id": "5-2017",
+      "formal_title": "Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act",
+      "number_and_year": "No. 5 of 2017",
+      "section": "5",
+      "subsection": null,
+      "relevant_excerpt": "Every action filed under the provisions of this Act shall be proceeded with and regulated by the procedure provided for in the Civil Procedure Code (Chapter 101).",
+      "why_relevant": "Identifies the procedure the revocation action follows. Supporting context for the mode of revocation; it does not affect whether the deed can be revoked.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2017 per the corpus; no amendment events recorded. In force at 2023-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M039-901",
+      "section_id": "5-2017/s6",
+      "act_id": "5-2017",
+      "formal_title": "Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act",
+      "number_and_year": "No. 5 of 2017",
+      "section": "6",
+      "subsection": null,
+      "relevant_excerpt": "means the Registrar of Lands appointed under the Registration of Documents Ordinance (Chapter 117) and having jurisdiction over the district in which the land which forms the subject matter of an irrevocable deed of gift which is sought to be revoked is situated",
+      "why_relevant": "Added by the verifier. Section 6 is the interpretation section and defines \"Registrar of Lands\", the term section 4(1) turns on. It is background rather than operative, but it matters because it identifies that officer by the district in which the land is situated, whereas section 4(1)(a) directs the lis pendens application to the Registrar of the district in which the deed is registered. On these facts the land and the registry are both in the Kalutara district, so the two coincide and the answer is unaffected.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2017 per the corpus (in_force_from_year 2017); no amendment events recorded. In force at 2023-10.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt checked verbatim against 5-2017/s6. Note that the corpus body of section 6 has the defined terms stripped out of the running text, so the excerpt begins at \"means\"."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M039-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The operative answer comes from the Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act, No. 5 of 2017: section 2 supplies the ground, the forum, the parties and the exclusive mode of revocation, and section 3 the time limits. Section 2 also settles, by its own terms, that revocation cannot be achieved by the donor's unilateral act, so the pre-2017 common law is not needed to answer the question asked. The Act does not define \"gross ingratitude\", and the content of that term is judicial and Roman-Dutch; the gold answer therefore stops short of holding that the conduct is gross ingratitude and leaves that finding to the court, which keeps the answer within the statute.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M039-Q01-01",
+          "issue": "Whether a deed of gift that declares itself absolute and irrevocable can be revoked at all, notwithstanding those words.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M039-Q01-02",
+          "issue": "If it can be revoked, on what ground, by whom, against whom and by what mode revocation must be effected, and whether the donor can revoke by his own act.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M039-Q01-03",
+          "issue": "Whether the statutory time limits for filing the revocation action are satisfied on the date of execution of the deed and the date the cause of action arose.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M039-001",
+        "PROV-M039-002"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M039-003",
+        "PROV-M039-004"
+      ],
+      "background_provision_ids": [
+        "PROV-M039-901"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Two indispensable steps: section 2 as the directly applicable provision creating the remedy, plus section 3, which qualifies it with cumulative time limits that must be satisfied before the court may entertain the action. Sections 4 and 5 add procedure only and are not counted. Verifier: hop count of 2 confirmed. The provision added on verification (section 6, the definition of \"Registrar of Lands\") is background to the section 4(1) step and adds no reasoning hop.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M039-002",
+          "to_provision_id": "PROV-M039-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M039-001",
+          "to_provision_id": "PROV-M039-003",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M039-001",
+          "to_provision_id": "PROV-M039-004",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M039-003",
+          "to_provision_id": "PROV-M039-901",
+          "relationship": "defines"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "A deed of gift states that it is absolute and irrevocable.",
+        "enriched_background": "Wimalasena Perera, aged 74, a retired schoolmaster of Panadura, gifted the land called Kahatagahawatta, thirty-two perches in extent with the house standing on it, at Panadura in the District of Kalutara, to his nephew Chaminda Perera. The parties are low-country Sinhalese governed by the general law. The gift was made by deed No. 4417 dated 12 March 2019, attested by a notary public and registered in the Kalutara land registry, and the deed states that the gift is absolute and irrevocable. The donee took possession, and the donor went on living in an annexe of the same house as the deed allowed him to. In June 2023 the donee assaulted the donor during a quarrel over the property, causing injuries for which the donor was treated in hospital, and then locked the annexe and put the donor out of the premises; the donor has since been living with a daughter. The donee does not deny the assault or the eviction and refuses to reconvey the property. The donor consults you in October 2023 and asks whether he can get the property back.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M039-Q01-001",
+            "fact": "The donor is Wimalasena Perera, aged 74, of Panadura, and the donee is his nephew Chaminda Perera; the parties are low-country Sinhalese governed by the general law.",
+            "origin": "synthetic_neutral",
+            "reason": "The question gives no party identity or relationship. The remedy works through the donor and donee as plaintiff and defendant, so both must be identified. Stating that the general law applies keeps the special personal laws out of the scenario.",
+            "activates_provision_ids": [
+              "PROV-M039-001"
+            ],
+            "counterfactual_effect": "If the parties were Kandyan, a further question about the revocability of a Kandyan deed of gift would arise under legislation that is not in this corpus, and the answer could not rest on this Act alone.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M039-Q01-002",
+            "fact": "The subject matter is the land called Kahatagahawatta, thirty-two perches with the house on it, at Panadura in the District of Kalutara, registered in the Kalutara land registry; the donee took possession and the donor retained the right to live in an annexe.",
+            "origin": "synthetic_neutral",
+            "reason": "The question names no property. Immovable property in an identified district is needed to work out the lis pendens step, which is addressed to the Registrar of Lands of the district where the deed is registered.",
+            "activates_provision_ids": [
+              "PROV-M039-003"
+            ],
+            "counterfactual_effect": "If the subject of the gift were movable property, or the district unknown, the lis pendens step could not be worked out on the facts.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M039-Q01-003",
+            "fact": "The gift was made by deed No. 4417 dated 12 March 2019, attested by a notary public and registered.",
+            "origin": "synthetic_decisive",
+            "reason": "The question gives no instrument date. The ten-year limit runs from the date of execution of the deed, and a date after the commencement of the Act avoids any question whether the Act reaches deeds executed before it.",
+            "activates_provision_ids": [
+              "PROV-M039-002"
+            ],
+            "counterfactual_effect": "If the deed had been executed more than ten years before the action, the court could not entertain it and the answer would be that revocation is time barred. If it had been executed before 2017, the separate and unresolved question whether the Act applies to earlier deeds would arise.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M039-Q01-004",
+            "fact": "In June 2023 the donee assaulted the donor, causing injuries for which the donor was treated in hospital, and then locked the annexe and put the donor out of the premises; the donee does not deny the assault or the eviction.",
+            "origin": "synthetic_decisive",
+            "reason": "The question states no default or misconduct. Revocation lies on one ground only, so conduct capable of being put to the court as gross ingratitude, and a date from which the cause of action runs, are needed for the scenario to be determinate.",
+            "activates_provision_ids": [
+              "PROV-M039-001",
+              "PROV-M039-002"
+            ],
+            "counterfactual_effect": "Without misconduct by the donee there is no ground on which the action could be founded, and the answer would be that the deed stands.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M039-Q01-005",
+            "fact": "The donor consults his lawyer in October 2023, wishing to recover the property; the donee refuses to reconvey it.",
+            "origin": "synthetic_decisive",
+            "reason": "Fixes the date from which the two-year limit is measured against the June 2023 cause of action, and shows that the donor, not a third party, is the person seeking revocation.",
+            "activates_provision_ids": [
+              "PROV-M039-001",
+              "PROV-M039-002"
+            ],
+            "counterfactual_effect": "If the donor delayed beyond two years from June 2023, the court could not entertain the action even though the ten-year limit was still open.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether a deed of gift which states on its face that it is absolute and irrevocable can nevertheless be revoked, and if so on what ground, by whom and in what manner; and whether the donor here is within the time allowed for seeking revocation of the 2019 deed after the donee's conduct in June 2023.",
+        "rule": "The words \"absolute and irrevocable\" in the deed do not put the gift beyond recall. Section 2 of the Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act, No. 5 of 2017 provides that an irrevocable deed of gift may be revoked on the ground of gross ingratitude, only on an order made by a competent court, in an action filed by the donor against the donee. Three limits follow from the section itself: gross ingratitude is the only ground; an order of a competent court is the only mode, so the donor cannot revoke by his own act or by executing a deed of revocation; and the action lies at the suit of the donor against the donee. Section 3 adds that the court shall not entertain such an action unless it is filed within ten years from the date of execution of the deed of gift and within two years from the date on which the cause of action arose, and both limits must be satisfied. Under section 4(1) the plaintiff must file with the plaint an application for registration of the action as a lis pendens, addressed to the Registrar of Lands of the district in which the deed is registered or, where it is unregistered, in which the land lies. Under section 5 the action is proceeded with and regulated by the procedure of the Civil Procedure Code. The Act does not define gross ingratitude, so whether particular conduct amounts to it is for the court to decide on the evidence.",
+        "application": "The deed of gift of Kahatagahawatta was executed on 12 March 2019 and declares the gift absolute and irrevocable. That wording is no answer to a claim under section 2. The donor, Wimalasena Perera, is the proper plaintiff and the donee, his nephew Chaminda Perera, the proper defendant. The conduct relied on is the assault in June 2023 and the donor's eviction from the annexe of the very house he gave away, neither of which the donee denies; that is the material the donor would place before the court as gross ingratitude, though the finding is for the court and cannot be assumed. On the dates, an action filed in or shortly after October 2023 is within ten years of 12 March 2019 and within two years of the June 2023 conduct, so section 3 does not shut the donor out. Because the land is registered in the Kalutara land registry, the lis pendens application under section 4(1) goes to the Registrar of Lands of that district and must be filed with the plaint, and the action proceeds under the Civil Procedure Code. What the donor cannot do is execute a deed cancelling the gift and treat the property as his own again; nothing short of a court order will undo the gift.",
+        "conclusion": "Yes, it could be revoked, but only in one way. Despite the recital that it is absolute and irrevocable, the deed can be revoked on the ground of gross ingratitude by order of a competent court in an action filed by the donor against the donee under section 2 of Act No. 5 of 2017, and on these dates such an action is within both the ten-year and the two-year limits in section 3. The donor should be advised to sue promptly, filing the lis pendens application with the plaint; whether the donee's conduct amounts to gross ingratitude is a matter for the court on the evidence, and the donor has no power to revoke the deed himself."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M039-Q01-001",
+          "claim_text": "A recital that a deed of gift is absolute and irrevocable does not prevent its revocation; an irrevocable deed of gift may be revoked on the ground of gross ingratitude.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M039-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M039-Q01-002",
+          "claim_text": "Revocation may be effected only on an order made by a competent court, in an action filed by the donor against the donee, so the donor cannot revoke the gift by his own act or deed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M039-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M039-Q01-003",
+          "claim_text": "Gross ingratitude is the only ground on which such an action may be founded, and the Act does not define the term, so whether given conduct amounts to gross ingratitude is for the court to decide.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M039-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M039-Q01-004",
+          "claim_text": "The court shall not entertain the action unless it is filed within ten years from the date of execution of the deed of gift and within two years from the date on which the cause of action arose.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M039-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M039-Q01-005",
+          "claim_text": "The plaintiff must file with the plaint an application for registration of the action as a lis pendens, addressed to the Registrar of Lands of the district in which the deed is registered.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M039-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M039-Q01-006",
+          "claim_text": "The revocation action is proceeded with and regulated by the procedure of the Civil Procedure Code.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M039-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M039-Q01-007",
+          "claim_text": "The donor is the proper plaintiff and the donee, his nephew, the proper defendant in the revocation action.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M039-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M039-Q01-001",
+            "FACT-M039-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M039-Q01-008",
+          "claim_text": "The assault in June 2023 and the eviction of the donor from the annexe, neither of which the donee denies, are the matters the donor would place before the court as gross ingratitude; the finding remains for the court.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M039-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M039-Q01-004"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M039-Q01-009",
+          "claim_text": "An action filed in or shortly after October 2023 is within ten years of the execution of the deed on 12 March 2019 and within two years of the June 2023 cause of action, so the time limits do not bar the donor.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M039-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M039-Q01-003",
+            "FACT-M039-Q01-004",
+            "FACT-M039-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M039-Q01-010",
+          "claim_text": "Because the land is registered in the Kalutara land registry, the lis pendens application is addressed to the Registrar of Lands of that district and must be filed with the plaint.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M039-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M039-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M039-Q01-011",
+          "claim_text": "The deed can be revoked, but only by order of a competent court on the ground of gross ingratitude in an action by the donor against the donee, and on these dates such an action is within both statutory time limits.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M039-001",
+            "PROV-M039-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "FACT-M039-Q01-003",
+            "FACT-M039-Q01-004",
+            "FACT-M039-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M039-Q01-012",
+          "claim_text": "The donor cannot undo the gift by executing a deed of revocation himself; without a court order the gift stands.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M039-001"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

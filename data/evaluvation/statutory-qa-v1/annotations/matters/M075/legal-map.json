@@ -1,0 +1,410 @@
+{
+  "benchmark_matter_id": "M075",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M075",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:54:36Z",
+    "verification_agent": null,
+    "verification_model": null,
+    "verification_completed": null
+  },
+  "matter_reference_date": "2020-04",
+  "matter_reference_date_basis": "exam_session 'APRIL 2020' recorded in candidates/matters/M075.json; matter_reference_date field of the same file.",
+  "corpus_gaps": [
+    "The Partition Act, No. 21 of 1977 is not in the frozen corpus, so the comparator the question asks about (a partition action) cannot be described from any corpus provision.",
+    "The Roman-Dutch common law of co-ownership - the source of a co-owner's entitlement to demand partition and of the right of co-owners to partition amicably by agreement - is not in the corpus. No corpus provision confers or regulates that entitlement; the corpus statutes only presuppose that a deed of partition exists (see PROV-M075-010).",
+    "The Mortgage Act, No. 6 of 1949 in the corpus contains no provision on the effect of a voluntary partition on a mortgage already granted over an undivided share, so the position of Pramuk's mortgagee bank cannot be settled from the corpus.",
+    "Stamp duty treatment of a deed of partition at 2020-04 cannot be settled from the corpus: Stamp Duty Act, No. 43 of 1982 s.5(11) exempts a 'deed of partition of any land held in common', but Stamp Duty (Special Provisions) Act, No. 12 of 2006 s.5 makes exemptions depend on Ministerial Orders published in the Gazette, and those Orders are not in the corpus.",
+    "The Notaries Ordinance and the Prevention of Frauds Ordinance are held in the corpus as consolidated editions carrying amendments of 2011, 2022 and 2024. The text in force at 2020-04 had to be reconstructed by reading the amending sections (47-2011/s2, 47-2011/s3, 31-2022/s16, 6-2024/s3); every excerpt below was chosen so that it is unaffected by the post-2020 amendments, except PROV-M075-001, which is flagged.",
+    "No corpus provision requires a survey plan for a private deed of partition. Survey Act, No. 17 of 2002 s.13 governs only admissibility of plans in court; the practical need for a licensed surveyor's plan is inferred from the description requirements in the Notaries Ordinance and the Registration of Documents Ordinance."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M075-001",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance No. 7 of 1840",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "shall be in force or avail in law unless - (a) the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary",
+      "why_relevant": "A deed of partition transfers and extinguishes interests in land between the co-owners, so it falls within the transactions that s.2 renders of no force in law unless the instrument is in writing and notarially attested. This is the provision that makes 'execute a notarially attested deed' a legal requirement rather than a matter of practice, and it is the core of the alternative route the question asks about.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 has required notarial execution of instruments affecting land since 1840 and was in force at 2020-04. The corpus holds the consolidated edition; amendment_events record changes by Act No. 60 of 1947, Act No. 30 of 2022 and Act No. 4 of 2024, and the quoted paragraph (a) wording ('signed by every executant or by any person duly authorised by such executant') is post-2020. The pre-2022 text required signature by the party making the instrument in the presence of a licensed notary and two or more witnesses. The requirement relied on here - writing plus notarial attestation - is common to both texts, but the verifier should confirm the 2020 wording against a pre-2022 edition before treating the excerpt as the operative text.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M075-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (16)(a)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument, other than a will or codicil, affecting land or other immovable property, unless the deed or instrument embodies therin or in a Schedule annexed therto an accurate and clear description of the said land or other property affected thereby, showing its boundaries, extent, situation",
+      "why_relevant": "The notary may not attest the deed of partition unless it carries a schedule describing each allotment with its boundaries, extent and situation. This is what forces the co-owners to have the 45 perches surveyed and blocked out into three defined lots before the deed can be drawn, and it is therefore the first practical step in the alternative route.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (16)(a) in this form was substituted by Notaries (Amendment) Act, No. 47 of 2011 s.2 and so was in force at 2020-04. Act No. 31 of 2022 s.16(9)(a) added condominium wording at the end of the paragraph only; the excerpt stops before that addition and matches the 2011 text.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M075-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (16)(b)",
+      "relevant_excerpt": "if such property consist of a share of a land or other property, the deed shall state whether it is a divided or undivided share, and the fractional part which it is of the whole. If it be a divided share, such share shall be clearly and accurately defined by its particular boundaries and extent; if it be an undivided share, the boundaries and extent shall be stated of the land of which it is a share.",
+      "why_relevant": "The brothers presently hold undivided one-third shares. Rule (16)(b) is the provision that distinguishes the two states and requires that once the shares are converted into divided shares each allotment be defined by its particular boundaries and extent in the deed. It is the statutory expression of the difference between the co-owners' present position and the 'divided and defined block' the Bank wants.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at 2020-04. Act No. 31 of 2022 s.16(9)(b) deleted a proviso at the end of paragraph (b); the excerpt is drawn from the opening of the paragraph and is unaffected by that deletion.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M075-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(a)",
+      "relevant_excerpt": "Before any deed or instrument (other than a will or codicil) affecting any interest in land or other immovable property is drawn by him, he shall search or cause to be searched the registers in the land registry to ascertain the state of the title in regard to such land and whether any prior deed affecting any interest in such land has been registered",
+      "why_relevant": "Fixes the title-search step. Before drawing the deed of partition the notary must search the Land Registry folio for the land to establish the state of title and to pick up registered encumbrances - here the Bank's mortgage over Pramuk's undivided share, and the registration of the partition decree in D.C. Ratnapura case No. 345/P through which the brothers derive title.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (17)(a) is long-standing and was in force at 2020-04. Act No. 31 of 2022 s.16(10) repealed and replaced paragraph (b) of rule (17) and added new paragraphs (c) to (e); paragraph (a) was not touched by the 2022 or 2024 amendments.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M075-005",
+      "section_id": "23-1927/s13",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "13",
+      "subsection": "(2)-(3)",
+      "relevant_excerpt": "(2) If the land consists of a divided portion of a land or allotment, such portion shall be clearly and accurately defined by its particular boundaries and extent. (3) If the land consists of an undivided share in a land, the proportion which the share bears to the entire land shall be staled, and a description of the entire land shall be given as required by subsection (1).",
+      "why_relevant": "Repeats the description requirement on the registration side and, by s.13(5), obliges the Registrar to refuse registration of an instrument that does not carry the required particulars. It confirms that the survey and the schedule of boundaries are not optional if the deed of partition is to be registered.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at 2020-04; last amended in 1982 by Act No. 50 of 1982, well before the matter date. 'staled' is an OCR artefact for 'stated' in the corpus text and is reproduced verbatim.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M075-006",
+      "section_id": "23-1927/s7",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "7",
+      "subsection": "(1)",
+      "relevant_excerpt": "be void as against all parties claiming an adverse interest thereto on valuable consideration by virtue of any subsequent instrument which is duly registered under this Chapter",
+      "why_relevant": "Registration is the final step and it is not merely administrative: an unregistered deed of partition is void against a later registered instrument taken for valuable consideration. Anuk's intended sale, Pramuk's mortgage and Dinuk's lease all depend on the partition deed holding priority, so registration in the Ratnapura Land Registry folio is indispensable to the alternative route.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at 2020-04; no amendment events recorded for this section in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M075-007",
+      "section_id": "23-1927/s8",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "8",
+      "subsection": "(b)",
+      "relevant_excerpt": "all instruments, including wills, decrees and orders of any court or authority, and awards, which purport or operate to create, confer, declare, limit, assign, transfer, charge, incumber, release, or extinguish any right, title, or interest, whether vested or contingent, past, present, or future, to, in or over land",
+      "why_relevant": "Establishes that a deed of partition is an instrument 'affecting land' for the purposes of Chapter II, because it declares and transfers interests in the land and extinguishes each brother's undivided interest in the other two allotments. Without this the priority rule in s.7 would not reach the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at 2020-04; no amendment events recorded for this section in the corpus.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M075-008",
+      "section_id": "1-1907/s37",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance No. 1 of 1907",
+      "number_and_year": "No. 1 of 1907",
+      "section": "37",
+      "subsection": null,
+      "relevant_excerpt": "Whenever a notary has received instructions to register, and a sufficient sum to meet the necessary expense of registering, any deed drawn or attested by him, and shall in such case fail to use due diligence in effecting such registration, he shall be guilty of an offence",
+      "why_relevant": "Supports the advice that the co-owners should instruct and fund the notary to register the deed of partition promptly: once instructed and put in funds the notary is under a penal duty to use due diligence in effecting registration.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at 2020-04; the only recorded change is the fine increase by the Increase of Fines Act, No. 12 of 2005 s.5, which predates the matter date.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M075-009",
+      "section_id": "17-2002/s13",
+      "act_id": "17-2002",
+      "formal_title": "Survey Act No. 17 of 2002",
+      "number_and_year": "No. 17 of 2002",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "No plan or map or copy or tracing of a plan or map shall be receivable in evidence in any court in Sri Lanka unless such plan or map has been prepared",
+      "why_relevant": "Supports the advice that the blocking-out survey be done by a registered licensed surveyor rather than informally: only a plan prepared and certified as this section requires will be receivable in evidence if the allotments are later disputed. It is supporting, not indispensable - no corpus provision makes a survey plan a condition of validity of a deed of partition.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2002 and applicable at 2020-04; no amendment events recorded. The corpus text of this section duplicates paragraph (a), which appears to be an extraction artefact; the excerpt is taken from the opening words only.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M075-010",
+      "section_id": "2-1958/s4",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act No. 2 of 1958",
+      "number_and_year": "No. 2 of 1958",
+      "section": "4",
+      "subsection": "(1)",
+      "relevant_excerpt": "The partition of a tea or rubber estate effected on or after the appointed day by deed by agreement of the co-owners of such estate shall, subject to the provisions of subsection (2), be null and void unless",
+      "why_relevant": "Background only. It is the clearest corpus recognition that partition of land held in common may be 'effected by deed by agreement of the co-owners' as an alternative to a partition action, which the same Act treats separately in s.6. It does not apply to this matter - a 45-perch allotment in Ratnapura is not a tea or rubber estate - and it does not confer the right to partition amicably; it presupposes it.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1958; no amendment events recorded for this section in the corpus. Carried as background because the Act's subject matter does not cover this land.",
+      "verification_status": "proposed",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M075-Q01",
+      "authority_requirement": "mixed_statute_and_case",
+      "authority_requirement_reason": "The steps of the alternative route are statutory and can be sourced entirely to the corpus: notarial execution (Prevention of Frauds Ordinance s.2), the description and title-search duties of the notary (Notaries Ordinance s.31 rules (16) and (17)), the description and priority rules on registration (Registration of Documents Ordinance ss.7, 8 and 13) and the notary's duty to register (s.37). The identification of the alternative itself is not. A co-owner's entitlement to hold in common, to demand partition and, by agreement with the other co-owners, to effect a voluntary partition without recourse to court is Roman-Dutch common law developed by judicial authority; no provision in the frozen corpus confers or regulates it. The Partition Act, No. 21 of 1977, the comparator the question is framed against, is also absent from the corpus, so the corpus cannot show what a partition action requires or that a deed of partition is a lawful substitute for one. The corpus statutes only presuppose the instrument (see PROV-M075-010). A complete answer therefore needs authority outside the corpus.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M075-Q01-01",
+          "issue": "Whether the three brothers, who hold equal undivided shares in a single divided allotment of 45 perches, can obtain divided and defined blocks otherwise than by instituting a partition action - that is, by a voluntary partition effected by a deed of partition executed by all the co-owners.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M075-Q01-02",
+          "issue": "What formal and procedural steps a deed of partition requires: survey and blocking out of the 45 perches into three defined lots, search of title at the Land Registry, drawing of the deed with a schedule describing each lot by boundaries and extent, notarial execution by all three co-owners, and registration.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M075-Q01-03",
+          "issue": "What the Bank's registered mortgage over Pramuk's undivided share means for the alternative route - whether the mortgage must be discharged or the Bank joined in or made to concur in the deed before the shares are converted into divided lots.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M075-001",
+        "PROV-M075-002",
+        "PROV-M075-003",
+        "PROV-M075-006"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M075-004",
+        "PROV-M075-005",
+        "PROV-M075-007",
+        "PROV-M075-008",
+        "PROV-M075-009"
+      ],
+      "background_provision_ids": [
+        "PROV-M075-010"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across three enactments. Step one: the instrument must be a notarially attested deed to have force in law (Prevention of Frauds Ordinance s.2). Step two: the notary may not attest it unless it describes the land and defines each divided share by boundaries and extent (Notaries Ordinance s.31 rules (16)(a) and (16)(b)), which is what makes the survey necessary. Step three: the deed, being an instrument affecting land, must be registered or it is void against a later registered instrument for value (Registration of Documents Ordinance ss.8 and 7). Only these dependencies are counted.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M075-001",
+          "to_provision_id": "PROV-M075-002",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M075-002",
+          "to_provision_id": "PROV-M075-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M075-002",
+          "to_provision_id": "PROV-M075-004",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M075-001",
+          "to_provision_id": "PROV-M075-006",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M075-006",
+          "to_provision_id": "PROV-M075-007",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M075-006",
+          "to_provision_id": "PROV-M075-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M075-006",
+          "to_provision_id": "PROV-M075-008",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M075-003",
+          "to_provision_id": "PROV-M075-009",
+          "relationship": "jointly_required"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Anuk de Silva, Pramuk de Silva and Dinuk de Silva are three brothers and they own equal undivided shares of a divided portion of a land in extent of 45 perches as per a Partition Decree in the District Court of Ratnapura in case No. 345/P. Anuk wishes to sell his entitlement of the land. Pramuk wishes to construct a house on his share of the land having mortgaged it to a Bank. Dinuk wants to Lease his share of land to a Company for a commercial purpose. The Bank informed Pramuk that he should have a divided and defined block of land in order to enable them to grant him a loan. Therefore, he informs his brothers that they should file a Partition Action for the division of the property. Anuk has approached you for Legal advice.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "Anuk asks whether the brothers must file a partition action to give each of them a divided and defined block of the 45-perch allotment they hold in equal undivided shares under the decree in D.C. Ratnapura case No. 345/P, or whether there is an alternative, and what that alternative requires. The issues are whether a voluntary partition effected by a deed of partition executed by all three co-owners is available, what steps it involves, and how the Bank's mortgage over Pramuk's undivided share affects it.",
+        "rule": "A deed of partition among co-owners is an instrument affecting land. It has no force in law unless it is in writing and attested by a notary in the presence of witnesses (Prevention of Frauds Ordinance s.2). The notary may not attest a deed affecting land unless the deed itself, or a schedule annexed to it, carries an accurate and clear description of the land showing its boundaries, extent and situation (Notaries Ordinance s.31(16)(a)), and where the property is a share the deed must state whether the share is divided or undivided, state the fraction it bears to the whole, and, if it is a divided share, define it clearly and accurately by its particular boundaries and extent (Notaries Ordinance s.31(16)(b)). Before drawing such a deed the notary must search the Land Registry to ascertain the state of the title and whether any prior deed has been registered (Notaries Ordinance s.31(17)(a)). An instrument that purports or operates to create, declare, transfer, release or extinguish any interest in land is an instrument affecting land for registration purposes (Registration of Documents Ordinance s.8(b)); a divided portion presented for registration must be clearly and accurately defined by its particular boundaries and extent, failing which the Registrar must refuse registration (Registration of Documents Ordinance s.13(2) and (5)); and an unregistered instrument is void against a party claiming an adverse interest for valuable consideration under a later registered instrument (Registration of Documents Ordinance s.7(1)). Once instructed and put in funds, the notary must use due diligence to register the deed (Notaries Ordinance s.37). A plan is receivable in evidence only if prepared and certified as the Survey Act s.13 requires, which is why the blocking-out survey should be entrusted to a registered licensed surveyor. The corpus consulted for this map does not contain the Partition Act or the common law of co-ownership, so the entitlement of co-owners to partition by agreement rather than by action is not stated here on statutory authority.",
+        "application": "The three brothers are the only co-owners and their shares are equal and undisputed, having been fixed by the decree in case No. 345/P; the subject is a single divided allotment of 45 perches. Where all co-owners are ascertained and in agreement, the object the Bank has stated - a divided and defined block for Pramuk - can be reached by a deed of partition instead of a fresh partition action. The steps follow from the provisions above. First, the title should be examined and the Ratnapura Land Registry folio searched, which the notary must in any event do before drawing the deed (Notaries Ordinance s.31(17)(a)); that search will disclose the registration of the earlier partition decree and the Bank's mortgage over Pramuk's undivided share. Secondly, a registered licensed surveyor should survey the 45 perches and prepare a plan blocking it out into three lots of equal value, so that each lot can be described by its particular boundaries and extent as s.31(16)(b) of the Notaries Ordinance and s.13(2) of the Registration of Documents Ordinance require, and so that the plan will stand as evidence if the allotments are later questioned (Survey Act s.13). Thirdly, the deed of partition should be drawn allotting one defined lot to each brother, reciting the plan and carrying a schedule with the description required by s.31(16)(a) of the Notaries Ordinance. Fourthly, all three brothers must execute the deed before a notary with witnesses, since without notarial attestation the deed is of no force (Prevention of Frauds Ordinance s.2). Fifthly, the deed must be registered in the Land Registry for the district, because it is an instrument affecting land (Registration of Documents Ordinance s.8(b)) and would otherwise be void against a subsequent registered instrument taken for value (s.7(1)); the notary should be instructed and put in funds to attend to registration promptly (Notaries Ordinance s.37). The Bank's position is the open point. Its mortgage is over Pramuk's undivided one-third, and once the shares are converted into divided lots the security no longer answers the description under which it was granted. The prudent course is to have the Bank concur in the deed or to settle the mortgage before execution, but no provision in the corpus consulted determines the effect of a voluntary partition on an existing mortgage of an undivided share, so this should be confirmed on the Mortgage Act and the case law before the advice is finalised. Once each brother holds a divided lot, Anuk may sell his lot, Pramuk may offer his as security for the Bank's loan and build on it, and Dinuk may lease his to the company, each dealing with a defined block rather than an undivided share.",
+        "conclusion": "The alternative to a partition action is a voluntary or amicable partition effected by a deed of partition executed by all three brothers. The steps are: examine title and search the Land Registry folio; have a registered licensed surveyor survey and block out the 45 perches into three lots; settle the allotment of the lots among the brothers and deal with the Bank's mortgage over Pramuk's undivided share by obtaining its concurrence or discharging the mortgage; draw the deed of partition with a schedule describing each lot by boundaries and extent and referring to the survey plan; execute it before a notary with witnesses; and register it in the Land Registry for the district. This map is unverified and, because the entitlement to partition by agreement and the effect of the partition on the Bank's mortgage rest on authority outside the frozen statutory corpus, the question is reserved rather than proposed as gold."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M075-Q01-001",
+          "claim_text": "A deed of partition, being an instrument transferring and extinguishing interests in land, has no force in law unless it is in writing and attested by a notary in the presence of witnesses.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M075-001"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-002",
+          "claim_text": "A notary may not attest a deed affecting land unless the deed or a schedule annexed to it carries an accurate and clear description of the land showing its boundaries, extent and situation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M075-002"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-003",
+          "claim_text": "Where the property is a share, the deed must state whether the share is divided or undivided and the fraction it bears to the whole, and a divided share must be clearly and accurately defined by its particular boundaries and extent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M075-003"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-004",
+          "claim_text": "Before drawing a deed affecting an interest in land the notary must search, or cause to be searched, the Land Registry registers to ascertain the state of the title and whether any prior deed affecting the land has been registered.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M075-004"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-005",
+          "claim_text": "An instrument that purports or operates to create, declare, transfer, release or extinguish any interest in land is an instrument affecting land for the purposes of registration, and a divided portion presented for registration must be defined by its particular boundaries and extent.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M075-007", "PROV-M075-005"],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-006",
+          "claim_text": "An unregistered instrument affecting land is void as against a party claiming an adverse interest for valuable consideration under a subsequent duly registered instrument, so the deed of partition must be registered.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M075-006"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-007",
+          "claim_text": "A notary who has been instructed and put in funds to register a deed he drew or attested commits an offence if he fails to use due diligence in effecting registration.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M075-008"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-008",
+          "claim_text": "A plan is receivable in evidence in a Sri Lankan court only if it has been prepared and certified in the manner the Survey Act requires, so the blocking-out survey should be entrusted to a registered licensed surveyor.",
+          "claim_type": "rule",
+          "supporting_provision_ids": ["PROV-M075-009"],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-009",
+          "claim_text": "The brothers hold equal undivided one-third shares in one divided allotment of 45 perches fixed by the decree in D.C. Ratnapura case No. 345/P, so all co-owners are ascertained and their shares are not in dispute.",
+          "claim_type": "application",
+          "supporting_provision_ids": [],
+          "supporting_fact_ids": ["BG-1", "BG-2"],
+          "support_strength": "direct",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-010",
+          "claim_text": "Because each brother's share must become a divided share defined by particular boundaries and extent before it can be described in a deed, the 45 perches must first be surveyed and blocked out into three lots by a registered licensed surveyor.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M075-003", "PROV-M075-005", "PROV-M075-009"],
+          "supporting_fact_ids": ["BG-2"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-011",
+          "claim_text": "The notary's search of the Ratnapura Land Registry folio will disclose the registration of the earlier partition decree and the Bank's registered mortgage over Pramuk's undivided share.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M075-004"],
+          "supporting_fact_ids": ["BG-2", "BG-3"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-012",
+          "claim_text": "The deed of partition must then be executed by all three brothers before a notary with witnesses and registered in the Land Registry for the district, failing which it is of no force or is liable to be defeated by a later registered instrument for value.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M075-001", "PROV-M075-006", "PROV-M075-007", "PROV-M075-008"],
+          "supporting_fact_ids": ["BG-1"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-013",
+          "claim_text": "The effect of the partition on the Bank's mortgage over Pramuk's undivided share is not settled by any provision in the frozen corpus, so the Bank's concurrence should be obtained or the mortgage discharged, and the point confirmed on authority outside the corpus.",
+          "claim_type": "application",
+          "supporting_provision_ids": ["PROV-M075-004"],
+          "supporting_fact_ids": ["BG-3", "BG-4"],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-014",
+          "claim_text": "The alternative to be advised is a voluntary partition by a notarially executed and registered deed of partition among the three brothers, preceded by a title search and a licensed surveyor's blocking-out plan, after which each brother may sell, mortgage, build on or lease his own defined lot.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M075-001", "PROV-M075-002", "PROV-M075-003", "PROV-M075-004", "PROV-M075-006"],
+          "supporting_fact_ids": ["BG-1", "BG-2", "BG-5"],
+          "support_strength": "combined",
+          "verification_status": "proposed"
+        },
+        {
+          "claim_id": "CL-M075-Q01-015",
+          "claim_text": "The availability of a voluntary partition as an alternative to a partition action rests on the common law of co-ownership and on the Partition Act, neither of which is in the frozen corpus, so the answer cannot be completed on statutory authority alone.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": ["PROV-M075-010"],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "proposed"
+        }
+      ],
+      "research_status": "reserved",
+      "block_reason": "The question asks for an alternative to a partition action. The corpus supplies every formal and procedural step of the alternative (notarial execution, description and title-search duties, registration and priority), but it does not contain the Partition Act, No. 21 of 1977 or the Roman-Dutch common law of co-ownership from which a co-owner's right to partition, and the right of co-owners to partition amicably by agreement instead of by action, are derived. The effect of the voluntary partition on the Bank's existing mortgage over Pramuk's undivided share is likewise not resolved by any corpus provision. The answer therefore requires authority beyond the statutory corpus and is reserved rather than proposed as gold.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

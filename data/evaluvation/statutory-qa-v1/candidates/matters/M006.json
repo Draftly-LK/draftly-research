@@ -1,0 +1,72 @@
+{
+  "benchmark_matter_id": "M006",
+  "source_matter_id": "P01-Q05-M01",
+  "grouping_key": "P01-Q05-M01",
+  "paper_no": 1,
+  "question_no": 5,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis.\n\nThe said land is situated in Kurunegala.",
+    "normalized": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis.\n\nThe said land is situated in Kurunegala.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "shared_background",
+        "atomic_ids": [
+          "P01-Q05-P02"
+        ]
+      },
+      {
+        "segment_index": 1,
+        "field": "own_background",
+        "atomic_ids": [
+          "P01-Q05-P02"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M006-Q01",
+      "atomic_id": "P01-Q05-P02",
+      "part_uid": "paper-01/q5/ii",
+      "part_id": "ii",
+      "item_id": null,
+      "marks": 4,
+      "pdf_page": 3,
+      "question_original": "Can Saman attest the said Deed? Explain.",
+      "question_normalized": "Can Saman attest the said Deed? Explain.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis.\n\nThe said land is situated in Kurunegala.",
+      "effective_background_normalized": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis.\n\nThe said land is situated in Kurunegala.",
+      "source_quote": "(ii) The said land is situated in Kurunegala. Can Saman attest the said Deed? Explain.\n(4 marks)",
+      "classification": {
+        "context_sources": [
+          "shared",
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.88,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "property_identity",
+        "party_identity",
+        "relevant_document"
+      ]
+    }
+  ],
+  "matter_reference_date": "2026-04",
+  "exam_session": "APRIL 2026",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

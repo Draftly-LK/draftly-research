@@ -1,0 +1,146 @@
+{
+  "benchmark_matter_id": "M101",
+  "verifier": "verifier-M101",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:18:03Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M101-001",
+      "decision": "verified",
+      "note": "Notaries Ordinance s.31 rule (22); excerpt verbatim; not touched by 20-1976 s.10, 47-2011 s.2/s.3, 31-2022 s.16 or 6-2024 s.3, so it is October 2018 text."
+    },
+    {
+      "provision_id": "PROV-M101-002",
+      "decision": "verified",
+      "note": "Rule (11); excerpt verbatim; untouched by every amending provision in the corpus."
+    },
+    {
+      "provision_id": "PROV-M101-003",
+      "decision": "verified",
+      "note": "Rule (12); excerpt verbatim; untouched by every amending provision in the corpus."
+    },
+    {
+      "provision_id": "PROV-M101-004",
+      "decision": "verified",
+      "note": "Rule (15) first limb; excerpt verbatim. 31-2022 s.16(8) inserted rule (15A) after it but did not alter rule (15); 6-2024 s.3(5) touches only rule (15A)."
+    },
+    {
+      "provision_id": "PROV-M101-005",
+      "decision": "verified",
+      "note": "Rule (15) second limb; excerpt verbatim and contiguous with the first limb; the left thumb impression duty is confined to a mark, as the researcher reads it."
+    },
+    {
+      "provision_id": "PROV-M101-006",
+      "decision": "partially_verified",
+      "note": "Rule (20) opening words and paragraph (a); excerpt verbatim and 2018 text, but the subsection label reads '(20)(a) and (20)(d)' while the excerpt contains no paragraph (d); (d) is carried separately by PROV-M101-007."
+    },
+    {
+      "provision_id": "PROV-M101-007",
+      "decision": "verified",
+      "note": "Rule (20)(d); excerpt verbatim; 31-2022 s.16(11) substitutes only (b), (e) and (g) and adds (h), and 6-2024 s.3(7) substitutes only (g)."
+    },
+    {
+      "provision_id": "PROV-M101-008",
+      "decision": "verified",
+      "note": "Rule (21); excerpt verbatim and 2018 text. Form E itself is not in the corpus, which the map already records as a gap."
+    },
+    {
+      "provision_id": "PROV-M101-009",
+      "decision": "verified",
+      "note": "Rule (8); excerpt verbatim. Contrary to the researcher's own gap note, rule (8) is not amended by 31-2022 s.16 or 6-2024 s.3 (the 2022 amendment reaches rule (9), not rule (8)), so this is 2018 text and the supporting role is sound."
+    },
+    {
+      "provision_id": "PROV-M101-010",
+      "decision": "verified",
+      "note": "Rule (18); excerpt verbatim and untouched by any amending provision in the corpus."
+    },
+    {
+      "provision_id": "PROV-M101-011",
+      "decision": "partially_verified",
+      "note": "Rule (14); excerpt verbatim but the corpus text is the wording substituted by 31-2022 s.16(7), so it is not shown to be October 2018 law. Supporting role accepted; nothing in the answer may rest on it, and the gold answer's rule paragraph does rest on it."
+    },
+    {
+      "provision_id": "PROV-M101-012",
+      "decision": "partially_verified",
+      "note": "Prevention of Frauds Ordinance s.2; excerpt verbatim but post-2022 text, confirmed by reading 30-2022 s.2. Background-only role and applicable_to_matter_date=false are correct."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M101-901",
+      "reason": "Notaries Ordinance s.31 rule (24). The gold answer instructs the executant who cannot sign to make his mark on the deed, the duplicate and the protocol, but once rule (15A) was correctly excluded as post-2018 no provision in the map supported execution beyond the deed itself. Rule (24) is untouched by 20-1976 s.10, 47-2011, 31-2022 s.16 and 6-2024 s.3 and requires the protocol to carry the signatures of the party and the witnesses. Excerpt checked verbatim; added as supporting."
+    },
+    {
+      "provision_id": "PROV-M101-902",
+      "reason": "Notaries (Amendment) Act No. 31 of 2022 s.16(8), the provision that inserted rule (15A). Claim CL-M101-Q01-016 concludes that the brother signing in Sinhala owed no thumb impression duty in October 2018; that negative conclusion turned on a temporal note rather than on any cited provision. Added as supporting with applicable_to_matter_date=false and cited by CL-M101-Q01-016. Excerpt checked verbatim."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M101-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "Authority requirement confirmed as statute_only: both limbs of the question are answered by the express words of s.31 rules (22), (11), (12), (15), (20) and (21), and no Roman-Dutch or case-law gloss is needed. All eight indispensable provisions verified against the corpus text. Downgraded nonetheless for two reasons: the gold answer's rule paragraph states s.31(14) as law applicable in October 2018 when the corpus holds only the 31-2022 s.16(7) wording (CL-M101-Q01-008 marked disputed), and the enriched background leaks two operative answer elements (the left thumb being intact, and the witnesses being able to write their names). Hop count of 3 and the reasoning edges were checked and left unchanged."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "temporal_applicability_of_rule_14",
+      "researcher_position": "Rule (14) of s.31 is carried as supporting only, on the footing that a duty in similar terms to ascertain full names before signing existed before 2022, and the gold answer's rule paragraph states s.31(14) as part of the law the notary must follow.",
+      "verifier_position": "The corpus holds only the 31-2022 s.16(7) text of rule (14). The map cannot both disclaim its temporal applicability and state it in the gold answer's rule paragraph as applicable law. Either the pre-2022 wording is obtained from outside the corpus, or the rule (14) sentence comes out of the answer and CL-M101-Q01-008 is reduced to rule (18).",
+      "supporting_sources": [
+        "1-1907/s31",
+        "31-2022/s16"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "enrichment_leak_left_thumb",
+      "researcher_position": "FACT-M101-Q01-008 ('Ranjith's left thumb is intact and an impression of it can be taken') is a synthetic_decisive fact needed because rule (15) specifies the left thumb.",
+      "verifier_position": "Naming the left thumb in the scenario hands the candidate the distinctive step of rule (15). A neutral formulation ('both his hands are uninjured') would supply the same fact without leaking the answer. The same objection applies more weakly to FACT-M101-Q01-007's 'can write their names', which telegraphs rule (8).",
+      "supporting_sources": [
+        "1-1907/s31"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M101-Q01-008: the second half (ascertain full names before any signature or mark) rests only on PROV-M101-011, whose corpus text is post-2018. Marked disputed rather than rejected because the first half is fully supported by rule (18).",
+      "Gold answer application: 'nothing is to be signed until the deed has been fully engrossed' is an instruction under rule (3), which is not a provision entry in the map and whose corpus text is the 31-2022 s.16(1) substitution. Prose left unchanged; recorded as a corpus gap.",
+      "Gold answer application: 'make his mark on the deed, the duplicate and the protocol'. The protocol element is now supported by PROV-M101-901 (rule (24)); the duplicate element has no October 2018 basis in the corpus, since the 'original, duplicate and the protocol' formula appears only in rule (15A) (2022) and Prevention of Frauds Ordinance s.2(1)(b) (2022)."
+    ],
+    "temporal_issues": [
+      "The researcher's central temporal claim was re-checked line by line and holds: 31-2022 s.16 reaches rules (3), (4), (5), (6), (7A), (9), (14), (15A), (16), (17), (20)(b)(e)(g)(h), (27), (30), (30A) only; 6-2024 s.3 reaches rules (5), (7A), (9), (10 repeal), (15A), (17), (20)(g), (26), (29), (30) only; 47-2011 s.2 and s.3 reach rules (16)(a) and (26); 20-1976 s.10 reaches rules (29) and (36)(b). Rules (8), (11), (12), (15), (18), (20) opening/(a)/(c)/(d)/(f), (21), (22) and (24) are therefore October 2018 text.",
+      "The map's own gap note lists rule (8) among 'later text'. That is wrong on the corpus evidence: 31-2022 s.16(6) amends rule (9), not rule (8). The error is conservative (it understates the map's support) and PROV-M101-009 is verified.",
+      "Rule (10) of s.31 was repealed by 6-2024 s.3(4) and is absent from the consolidated body, yet was in force in October 2018. Unresolvable inside the corpus; correctly flagged by the researcher and left open for the lawyer.",
+      "PROV-M101-012 (Prevention of Frauds Ordinance s.2) is post-2022 text, verified as such against 30-2022 s.2, and correctly confined to background."
+    ],
+    "missing_definitions_or_exceptions": [
+      "edges 1-1907/s31 returns only s.11, s.21, s.32, s.33, s.42 and s.43 plus the amending Acts. s.32 (rules disapplied in special cases) and s.33 (no invalidity for defects of form) were re-read and are correctly dropped: s.32(1) disapplies rules (20), (23)-(26) only for powers of attorney for use abroad, foreign property, stock and share transfers and ships' protests, and s.32(2) deals with execution at different times and places, none of which is engaged. s.5 (second-language warrant) is correctly dropped.",
+      "Rule (9) (witnesses of good repute well acquainted with the executant, and the witnesses' declaration) underlies FACT-M101-Q01-007's 'well acquainted with the brothers' but is not a provision entry, because the corpus holds only its 2022/2024 wording. The fact should either drop that phrase or the gap should be stated.",
+      "Rule (20)(c) (date, place, and the full names and residences of the attesting witnesses) is original 2018 text and is part of the required attestation content, but is not in the map. Not indispensable to these facts; noted for completeness.",
+      "Form E of the Second Schedule is not in the corpus, so the form of attestation required by rule (21) can only be described, not reproduced. Confirmed by toc 1-1907, which holds no schedule sections."
+    ],
+    "case_law_dependence": [
+      "None. The answer cites no case, no report series and no Roman-Dutch authority; the prescribed certification words are set out verbatim in rule (15), so statute alone yields a complete answer. authority_requirement=statute_only upheld."
+    ],
+    "enrichment_issues": [
+      "FACT-M101-Q01-008 names the left thumb, which is the distinctive element of the rule (15) answer. Answer leak.",
+      "FACT-M101-Q01-007 states the witnesses 'can write their names', which telegraphs rule (8)'s requirement that witnesses subscribe their signatures in letters, and 'well acquainted with the brothers', which is the language of rule (9).",
+      "FACT-M101-Q01-006 fixes execution at 12 March 2018. This is sound and necessary, but its counterfactual_effect is stated as 'a date after 2022 would bring the amended rules into play', which is a temporal hint rather than a leak of the answer; acceptable.",
+      "No statute name, section number or conclusion appears in the enriched background itself, and the added facts do not change the legal issue."
+    ],
+    "duplicate_or_leak_issues": [
+      "No duplicated provision entries; the twelve original entries are distinct subsections. PROV-M101-006 and PROV-M101-007 overlap only in that (006) quotes the opening words of rule (20) that (007)'s paragraph depends on, which is why (006) was marked partially_verified rather than rejected.",
+      "Role sets are disjoint and every indispensable provision is cited by at least one claim."
+    ]
+  },
+  "lawyer_questions": [
+    "Was the pre-2022 rule (14) of section 31 in substantially the terms now in the corpus, so that the notary was already bound in October 2018 to ascertain the executants' full names before any signature or mark? If not, the rule (14) sentence must leave the gold answer and CL-M101-Q01-008 must be cut back to rule (18).",
+    "Does the repealed rule (10) of section 31, in force in October 2018 but absent from the corpus, add anything to the instructions this notary had to give?",
+    "Is it right that a signature in Sinhala by an executant who can write is certified under rule (15) in the same words as a mark, with the left thumb impression required only for the mark?",
+    "Should the enriched background be reworded to remove the left thumb and 'can write their names' leaks before this question is used in the benchmark?"
+  ]
+}

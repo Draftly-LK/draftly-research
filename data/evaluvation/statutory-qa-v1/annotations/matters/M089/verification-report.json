@@ -1,0 +1,134 @@
+{
+  "benchmark_matter_id": "M089",
+  "verifier": "verifier-M089",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-05T00:00:00Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M089-001",
+      "decision": "verified",
+      "note": "29-1947/s37(1)(b) shown in full and the excerpt checked verbatim; in force from 1947 with no amendment event, so applicable at 2019-04. Role as an indispensable provision for M089-Q03 is right."
+    },
+    {
+      "provision_id": "PROV-M089-002",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim and temporally sound, but the s.327 definition of \"street\" is inclusive and states a public right of way as a criterion of street status, not as a consequence of vesting; the answer must therefore assume that Lot R1 was vested as a street under s.37(1)(b)."
+    },
+    {
+      "provision_id": "PROV-M089-003",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim, but it is the \"premises\" interpretation clause of the Municipal Councils Ordinance and cannot carry a general rule of servitude law; demoted from supporting to background in M089-Q02 (already background in M089-Q01)."
+    },
+    {
+      "provision_id": "PROV-M089-004",
+      "decision": "verified",
+      "note": "29-1947/s46(a) verbatim; supporting role is correct. Note that the duty attaches to \"public streets ... vested in the Council\", which does not itself establish that every vested street is a public street."
+    },
+    {
+      "provision_id": "PROV-M089-005",
+      "decision": "verified",
+      "note": "29-1947/s50 verbatim; supporting role correct."
+    },
+    {
+      "provision_id": "PROV-M089-006",
+      "decision": "verified",
+      "note": "29-1947/s77(1) verbatim; supporting role correct, but the reasoning edge to PROV-M089-001 was relabelled from procedurally_requires to cross_references because s.77 is enforcement over an already vested street."
+    },
+    {
+      "provision_id": "PROV-M089-007",
+      "decision": "verified",
+      "note": "29-1947/s65 verbatim; background role correct, and the map is right that s.65 is only one of the routes to vesting."
+    },
+    {
+      "provision_id": "PROV-M089-008",
+      "decision": "partially_verified",
+      "note": "7-1840/s2(1) excerpt verbatim only in the post-2022/2024 consolidated text; the April 2019 text is not in the corpus. Correctly flagged applicable_to_matter_date=false, but it cannot give direct support to a rule claim at the matter date, so it was demoted to background in M089-Q01."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M089-901",
+      "reason": "29-1947/s71(6) extends \"street\", for that section only, to access roads \"whether the public have a right of way there over or not\". That extension is only needed because the general s.327 definition requires a public right of way, which is the point on which M089-Q03 turns. Added as a background provision for M089-Q03 with an excerpt checked verbatim."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M089-Q01",
+      "research_status_before": "reserved",
+      "research_status_after": "reserved",
+      "authority_requirement_after": "mixed_statute_and_case",
+      "note": "Agreed. The corpus has no enactment on praedial servitudes; the answer turns on the Roman-Dutch rules about appurtenance and the effect of subdividing the dominant tenement. Both statutory provisions were demoted to background and two of the three claims marked disputed."
+    },
+    {
+      "benchmark_question_id": "M089-Q02",
+      "research_status_before": "reserved",
+      "research_status_after": "reserved",
+      "authority_requirement_after": "mixed_statute_and_case",
+      "note": "Agreed. PROV-M089-003 demoted from supporting to background and CL-M089-Q02-001 marked disputed, because an interpretation clause of one Ordinance cannot state the general rule that a servitude cannot be alienated apart from its dominant tenement. The researcher's issue ISS-M089-Q02-03 (statutory alternatives) missed Prescription Ordinance s.3 with the s.2 definition of immovable property; it does not change the answer, since Kapila Fernando has no user of Lot R1."
+    },
+    {
+      "benchmark_question_id": "M089-Q03",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "Downgraded. The chain s.37(1)(b) -> s.327 \"street\" -> public right of way is statutory and needs no case law, but it runs backwards from an inclusive definition, and the question does not say by what route Lot R1 came to be vested. CL-M089-Q03-006, -007 and -008 marked disputed; the other six claims verified."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "inference_direction",
+      "researcher_position": "Municipal Councils Ordinance s.37(1)(b) read with the s.327 definition of \"street\" establishes that once Lot R1 is vested in the Council the public have a right of way over it, so M089-Q03 is answerable from statute alone and can be a proposed_gold item.",
+      "verifier_position": "Section 327 makes a public right of way a criterion of being a \"street\", and the definition is inclusive (\"includes\"), so vesting does not itself confer the public right of way. Section 71(6) has to extend the word for its own section precisely because the general definition carries that requirement. The conclusion is probably correct as a matter of law, but it rests on an assumed premise that Lot R1 was vested as a street, which no corpus provision supplies.",
+      "supporting_sources": [
+        "29-1947/s37",
+        "29-1947/s327",
+        "29-1947/s71",
+        "29-1947/s65"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "provision_role",
+      "researcher_position": "The s.327 definition of \"premises\" is a supporting provision for M089-Q02, giving statutory recognition that a servitude is part of the property to which it appertains.",
+      "verifier_position": "It is an interpretation clause opening with \"In this Ordinance, unless the context otherwise requires\", so it cannot support a general proposition of servitude law between private parties. Its role is background only.",
+      "supporting_sources": [
+        "29-1947/s327"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M089-Q01-002 and CL-M089-Q02-001 state a general rule of servitude law on the strength of the \"premises\" interpretation clause in 29-1947/s327; both marked disputed.",
+      "CL-M089-Q03-003 says a street vested in a Municipal Council is a public street the Council must maintain. Section 46(a) imposes the duty for \"public streets ... vested in the Council\"; it does not make every vested street a public street. Marked disputed.",
+      "CL-M089-Q03-006 infers from the stipulated vesting that Lot R1 is a \"street vested in that Council\"; the question stipulates only vesting, not the route. Marked disputed, as are the claims that depend on it (CL-M089-Q03-007, CL-M089-Q03-008)."
+    ],
+    "temporal_issues": [
+      "PROV-M089-008 (7-1840/s2) exists in the corpus only as the consolidated text after Act No. 30 of 2022 and Act No. 4 of 2024. The April 2019 text is not held, so CL-M089-Q01-001 was marked disputed and the provision demoted to background.",
+      "No other temporal problem found: 29-1947 ss.37, 46, 50, 65, 77 record no amendment event; s.327's last recorded change is 1987 and s.71's is 1975, both before the 2019-04 matter date."
+    ],
+    "missing_definitions_or_exceptions": [
+      "29-1947/s71(6), a competing section-specific definition of \"street\", was missing from the map. Added as PROV-M089-901.",
+      "Prescription Ordinance 22-1871/s3 read with the s.2 definition of \"immovable property\" (which includes servitudes appertaining to the property) is the only statutory route in the corpus to a right of way otherwise than by grant; the map does not mention it. Recorded as a corpus gap rather than added, because Kapila Fernando has never used Lot R1.",
+      "The map has no provision on how a private road reservation on a subdivision plan becomes a street or comes to be vested; searches of 8-1947 (State Lands), 13-1946 (Town and Country Planning) and 41-1978 (Urban Development Authority) produced nothing that fills it. Recorded as a corpus gap."
+    ],
+    "case_law_dependence": [
+      "M089-Q01 and M089-Q02 depend on the Roman-Dutch law of praedial servitudes, which is absent from the corpus; both correctly reserved as mixed_statute_and_case.",
+      "M089-Q03 does not depend on case law, so it stays statute_only; the downgrade is for the inferential gap, not for case-law dependence.",
+      "No gold answer draft cites a case; the validator's case-law regex is clean."
+    ],
+    "enrichment_issues": [
+      "None. All three parts are candidate_action=keep and enrichment.applied is false, as required."
+    ],
+    "duplicate_or_leak_issues": [
+      "PROV-M089-002 and PROV-M089-003 are two definitions from the same section (29-1947/s327) entered as separate provisions. That is a legitimate split by defined term, not a duplicate; both were checked separately.",
+      "No background text leaks a statute name, section number or the conclusion, since no enrichment was applied."
+    ]
+  },
+  "lawyer_questions": [
+    "M089-Q03: is it right to read Municipal Councils Ordinance s.37(1)(b) with the s.327 definition of \"street\" so that a road reservation vested in a Municipal Council is necessarily one over which the public have a right of way, given that the definition is inclusive and states the public right of way as a criterion of street status rather than a consequence of vesting? If yes, the question can go back to proposed_gold as it stands.",
+    "Should the expected answer to M089-Q03 instead be routed through the dedication of the road reservation to the public on approval of the subdivision plan, which no enactment in the corpus covers?",
+    "M089-Q01 and M089-Q02: does the Faculty's expected answer rest solely on the Roman-Dutch rules of appurtenance, division of the dominant tenement and non-alienation apart from the dominant tenement, so that both parts are correctly kept out of a statute-only benchmark?",
+    "Is Prescription Ordinance s.3, read with the s.2 definition of \"immovable property\", the accepted statutory basis for acquiring a right of way by prescription in Sri Lanka, or is that also treated as common law?"
+  ]
+}

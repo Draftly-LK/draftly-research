@@ -1,0 +1,66 @@
+{
+  "benchmark_matter_id": "M115",
+  "source_matter_id": "P16-Q09-M01",
+  "grouping_key": "P16-Q09-M01",
+  "paper_no": 16,
+  "question_no": 9,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Anura De Silva entered into a Lease Agreement which was Notarially attested on 1st March 2016 with Sunil Peiris to lease out his house situated in Dehiwala for a monthly rental of Rs. 50,000/- for 2 years. In 2017 March he discussed with the Bank to mortgage this property and obtain a loan of R$ 1,000,000/",
+    "normalized": "Anura De Silva entered into a Lease Agreement which was Notarially attested on 1st March 2016 with Sunil Peiris to lease out his house situated in Dehiwala for a monthly rental of Rs. 50,000/- for 2 years. In 2017 March he discussed with the Bank to mortgage this property and obtain a loan of R$ 1,000,000/",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P16-Q09-P03"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M115-Q01",
+      "atomic_id": "P16-Q09-P03",
+      "part_uid": "paper-16/q9/3",
+      "part_id": "3",
+      "item_id": null,
+      "marks": 4,
+      "pdf_page": 67,
+      "question_original": "What precautionary action the Bank would take if they decide to grant the loan to Anura De Silva?",
+      "question_normalized": "What precautionary action the Bank would take if they decide to grant the loan to Anura De Silva?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Anura De Silva entered into a Lease Agreement which was Notarially attested on 1st March 2016 with Sunil Peiris to lease out his house situated in Dehiwala for a monthly rental of Rs. 50,000/- for 2 years. In 2017 March he discussed with the Bank to mortgage this property and obtain a loan of R$ 1,000,000/",
+      "effective_background_normalized": "Anura De Silva entered into a Lease Agreement which was Notarially attested on 1st March 2016 with Sunil Peiris to lease out his house situated in Dehiwala for a monthly rental of Rs. 50,000/- for 2 years. In 2017 March he discussed with the Bank to mortgage this property and obtain a loan of R$ 1,000,000/",
+      "source_quote": "3.Anura De Silva entered into a Lease Agreement which was Notarially attested on 1st March 2016 with Sunil Peiris to lease out his house situated in Dehiwala for a monthly rental of Rs. 50,000/- for 2 years. In 2017 March he discussed with the Bank to mortgage this property and obtain a loan of R$ 1,000,000/ What precautionary action the Bank would take if they decide to grant the loan to Anura De Silva? (4 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "review",
+        "candidate_action": "keep",
+        "confidence": 0.78,
+        "flags": [
+          "ocr_corruption_in_background",
+          "needs_review_split_checked"
+        ]
+      },
+      "tier": "B",
+      "tier_b_reasons": [
+        "extraction_quality=review",
+        "confidence=0.78"
+      ],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2018-04",
+  "exam_session": "APRIL 2018",
+  "matter_tier": "B",
+  "tier_a_question_count": 0
+}

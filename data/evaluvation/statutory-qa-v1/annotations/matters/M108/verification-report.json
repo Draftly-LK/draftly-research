@@ -1,0 +1,152 @@
+{
+  "benchmark_matter_id": "M108",
+  "verifier": "verifier-M108",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T23:26:00Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M108-001",
+      "decision": "verified",
+      "note": "11-1973/s9(1). Excerpt verbatim; the section makes the common elements the property of the parcel owners as tenants in common on registration, which is what why_relevant claims. Amendment events 1982 and 2003 only, so the consolidated text is the April 2018 text."
+    },
+    {
+      "provision_id": "PROV-M108-002",
+      "decision": "verified",
+      "note": "11-1973/s9(5). Excerpt verbatim. The omitted tail saves mortgagees' rights and compensation claims and does not qualify the deeming of absolute ownership relied on."
+    },
+    {
+      "provision_id": "PROV-M108-003",
+      "decision": "partially_verified",
+      "note": "11-1973/s11. Wording verbatim, but the section governs dealings with a share in the common elements that exists; a declaration by a man who holds no share takes nothing under s.9(1) and s.9(5) independently of s.11, so calling s.11 'the central prohibition' overstates its role."
+    },
+    {
+      "provision_id": "PROV-M108-004",
+      "decision": "verified",
+      "note": "23-1927/s7(4). Excerpt verbatim. Temporal check extended beyond the researcher's: the corpus edition is the 1990 consolidation, and the two pre-2018 amending Acts in the corpus (Nos. 48 of 2011 and 21 of 2013) amend ss.13, 22, 48 and the First Schedule only."
+    },
+    {
+      "provision_id": "PROV-M108-005",
+      "decision": "partially_verified",
+      "note": "11-1973/s25. Wording verbatim, but s.25 bites only on a conflict or inconsistency and there is none: s.7(4) of the Ordinance itself withholds effect from the deed. Role corrected from indispensable to supporting and the hop_count_basis amended to record it; hop count stays at 4."
+    },
+    {
+      "provision_id": "PROV-M108-006",
+      "decision": "verified",
+      "note": "23-1927/s8(b). Excerpt verbatim; none of the eleven provisos to paragraph (b) excludes a deed of declaration."
+    },
+    {
+      "provision_id": "PROV-M108-007",
+      "decision": "verified",
+      "note": "23-1927/s26(1). Excerpt verbatim; paragraphs (a) and (b) cover an executant claiming a benefit under the instrument."
+    },
+    {
+      "provision_id": "PROV-M108-008",
+      "decision": "verified",
+      "note": "23-1927/s36. Excerpt verbatim but confined to s.36(1)(a); the why_relevant reasons from the whole section, including (1)(b) on form and mode of execution and (2) on stamp duty and fees. The reading is right on the full text."
+    },
+    {
+      "provision_id": "PROV-M108-009",
+      "decision": "verified",
+      "note": "11-1973/s16(1). Excerpt verbatim; subsections (2) to (4) confirm that the management corporation executes the instrument."
+    },
+    {
+      "provision_id": "PROV-M108-010",
+      "decision": "verified",
+      "note": "11-1973/s23. Excerpt verbatim. The Partition Law is not in the corpus, so the scope of the exclusion cannot be checked from within it; already recorded as a corpus gap."
+    },
+    {
+      "provision_id": "PROV-M108-011",
+      "decision": "partially_verified",
+      "note": "11-1973/s26. Excerpt verbatim, and the clause is the definition of 'common elements': every other body in the section maps to a term in the corpus row's defined_terms list, this one does not, that list omits 'common elements', and paragraphs (b)(vi) and (b)(vii) of the same clause speak of facilities as common elements. The excerpt quotes limb (a) only; limb (b) adds the built parts and shared installations."
+    },
+    {
+      "provision_id": "PROV-M108-012",
+      "decision": "verified",
+      "note": "11-1973/s10(1). Excerpt verbatim; correctly treated as background because its operation depends on an order extending the Registration of Title Act to the division."
+    },
+    {
+      "provision_id": "PROV-M108-013",
+      "decision": "verified",
+      "note": "39-2003/s44. Excerpt verbatim; the list is confined to condominium plans and plans of amendment, re-division or amalgamation, as why_relevant says."
+    },
+    {
+      "provision_id": "PROV-M108-901",
+      "decision": "verified",
+      "note": "23-1927/s39, added by the verifier. Excerpt checked verbatim; supplies the authority the gold conclusion's District Court sentence was missing."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M108-901",
+      "reason": "The last sentence of the gold conclusion says the registration would be open to challenge by an interested party in the District Court, but no provision in the map supported it. Registration of Documents Ordinance s.39 gives the District Court power to cancel or rectify the registration of an instrument registered without due authority or in contravention of the Ordinance. Added as a supporting provision for M108-Q01 so that the conclusion is not resting on an uncited proposition. The researcher had already flagged s.39 as a candidate in the corpus_gaps list."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M108-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "All thirteen proposed excerpts are verbatim in the corpus and all are applicable at 2018-04. No provision is rejected or unresolved, so the question stays proposed_gold. Three corrections were recorded: s.25 moved from indispensable to supporting, s.11's role qualified, and s.39 added as supporting. Two application claims were marked disputed. The authority requirement holds: ownership is settled by the Apartment Ownership Law and the effect of registration by s.7(4) of the Ordinance in terms, so no case law or Roman-Dutch doctrine is indispensable, and the hop count of 4 still matches the reasoning edges after the s.25 correction."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "conclusion_scope",
+      "researcher_position": "The answer is in two parts: Gihan may have the deed drawn and attested and it may well be accepted for registration, but he takes nothing by it.",
+      "verifier_position": "The first half is a prediction about registry practice rather than a statutory consequence. Nothing in the Ordinance obliges a Registrar to accept the deed either; s.36(1) is permissive ('may, if he thinks fit') and s.36(1)(b) lets him refuse an instrument that does not comply with any written law affecting its form or mode of execution. For a 2-mark question the safer gold is a flat 'no, he cannot lawfully acquire or register such an interest', with the registrability point kept as supporting nuance. The prose was left unchanged and the two claims that carry the prediction were marked disputed.",
+      "supporting_sources": ["23-1927/s36", "23-1927/s7", "23-1927/s39"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "provision_role",
+      "researcher_position": "Apartment Ownership Law s.25 is indispensable because it resolves the conflict between that Law and the Registration of Documents Ordinance.",
+      "verifier_position": "There is no conflict to resolve. The Ordinance does not purport to confer title, and s.7(4) denies the registration any effect on its own terms, so s.25 is a fallback rather than a step in the reasoning. Moved to supporting; hop count unchanged at 4.",
+      "supporting_sources": ["11-1973/s25", "23-1927/s7"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "provision_role",
+      "researcher_position": "Apartment Ownership Law s.11 is the central prohibition that defeats the Deed of Declaration.",
+      "verifier_position": "s.11 restricts dealings with an existing share in the common elements. Gihan has no share, so the deed fails first under s.9(1) and s.9(5), which vest the common elements in the parcel owners and deem the person named in the registered plan the absolute owner. s.11 answers the further point that a half share of the land could never be held severed from a parcel. Kept as indispensable but the role is qualified.",
+      "supporting_sources": ["11-1973/s11", "11-1973/s9"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M108-Q01-012, marked disputed. The statement that the deed 'may well be accepted and entered in the register' is a prediction about registry practice, not a consequence of any cited section; s.36(1) is discretionary in both directions. The rest of the claim is supported by ss.7(4), 8(b), 26(1) and 36.",
+      "CL-M108-Q01-010, marked disputed. It rests the failure of the deed on s.11 alone; the cited section governs dealings with a share that exists, so on these facts the claim needs s.9(1) and s.9(5) alongside it.",
+      "The final sentence of gold_answer_draft.conclusion (District Court challenge) had no provision behind it. Resolved by adding PROV-M108-901 (23-1927/s39) rather than by editing the prose."
+    ],
+    "temporal_issues": [
+      "Checked and cleared: the Registration of Documents Ordinance in the corpus is the 1990 consolidation, so ss.7, 8, 26, 36 and 39 could in principle be stale. The two pre-2018 amending Acts in the corpus, Nos. 48 of 2011 and 21 of 2013, amend ss.13, 22 and 48 and the First Schedule only; Nos. 32 of 2022 and 18 of 2024 post-date the matter. The researcher's provisions said only 'no recorded amendment event in the corpus', which is a weaker check than the one now recorded.",
+      "Checked and cleared: the Apartment Ownership Law text is the consolidation carrying Acts No. 45 of 1982, No. 4 of 1999 and No. 39 of 2003, all before 2018-04, and the corpus holds no later amendment to it.",
+      "Agreed with the researcher's exclusion of Prevention of Frauds Ordinance s.2: the corpus text carries the 2022 and 2024 amendments (thumb impressions, transferee execution) and is therefore not the April 2018 text, quite apart from a declaration not being a sale, transfer or mortgage."
+    ],
+    "missing_definitions_or_exceptions": [
+      "None that changes the answer. 'condominium parcel', 'land parcel' and 'share parcel' are all defined in 11-1973/s26 and resolve as the map assumes; edges on ss.9, 11, 25 and on 23-1927 ss.7, 8, 36 surfaced nothing indispensable that the map omits.",
+      "11-1973/s7A(2), which deems the owner of a parcel to be owner of his share in the common elements subject to registered encumbrances, duplicates the work of s.9(5) and was not added.",
+      "11-1973/s4 (a Condominium Plan is deemed an instrument affecting land for the Registration of Documents Ordinance) was rightly excluded: it is about plans, not about a stranger's deed."
+    ],
+    "case_law_dependence": [
+      "None. The gold answer cites no case and no reported series. The nemo dat point is doctrinally present in the reasoning but every step of it is carried by statute here: s.9(1) and s.9(5) on who owns the common elements and s.7(4) on what registration adds."
+    ],
+    "enrichment_issues": [
+      "FACT-M108-Q01-003 states that Gihan 'holds no deed, decree or other instrument of title to any part of the land parcel'. That is close to handing over the answer to the ownership half of the question. It is a fact rather than a legal conclusion and the candidate record does ask for the missing relevant document, so it was left in place, but a lawyer may want it trimmed to the positive fact of what Gihan holds.",
+      "FACT-M108-Q01-004 is labelled synthetic_neutral, yet its counterfactual_effect says that had the special resolution been passed part of the shared areas could lawfully have moved out of common ownership. On its own reasoning it is decisive rather than neutral, and it also signposts the s.16 route.",
+      "The enriched background places both of Rehan's units in one Nugegoda building, while the unannotated Tier B question M108-Q02 describes one of his condominium properties as situated in Colombo. Nugegoda is within the Colombo District so the two are reconcilable, but the enrichment narrows a scenario that the second part of the same exam question leaves open.",
+      "No statute name, section number or conclusion is leaked by the enrichment, and 'Condominium Plan' and 'Registration of Documents Ordinance' were already in the original background."
+    ],
+    "duplicate_or_leak_issues": [
+      "PROV-M108-001 and PROV-M108-002 share section_id 11-1973/s9 and differ only by subsection. The schema and validator allow it and the two subsections do different work, so it was left as it is; if a one-provision-per-section convention is settled elsewhere in the run, these two should be merged.",
+      "No other duplication found across the fourteen provisions."
+    ]
+  },
+  "lawyer_questions": [
+    "Is the split conclusion right? The map says Gihan may have the deed drawn and may even get it registered, but takes nothing by it. Section 36(1) of the Registration of Documents Ordinance is permissive, so a Registrar who saw the condominium folio might refuse; if the expected answer to a 2-mark question is a flat 'no', the gold answer needs re-framing rather than re-citing.",
+    "Should Apartment Ownership Law s.11 or ss.9(1) and 9(5) be treated as the operative bar on a stranger's declaration of a half share in the land under a registered condominium?",
+    "The corpus text of Apartment Ownership Law s.26 has lost its defined-term lead-ins. The clause quoted as the definition of 'common elements' was identified by elimination against the corpus row's own list of defined terms, which omits that term; please confirm it against the Government Printer text before the map is signed off.",
+    "Whether the Registration of Documents Ordinance register is even available for this land in 2018 depends on whether an order under s.1 of the Registration of Title Act had extended that Act to the Delkanda-Nugegoda division. That fact is outside the frozen corpus and the map treats it as background."
+  ]
+}

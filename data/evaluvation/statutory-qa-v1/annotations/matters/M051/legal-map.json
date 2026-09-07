@@ -1,0 +1,647 @@
+{
+  "benchmark_matter_id": "M051",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M051",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:39:30Z",
+    "verification_agent": "verifier-M051",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:51:47Z"
+  },
+  "matter_reference_date": "2021-10",
+  "matter_reference_date_basis": "matter_reference_date from candidates/matters/M051.json (exam session OCTOBER 2021 / APRIL 2022); the law is taken as it stood in October 2021.",
+  "corpus_gaps": [
+    "The rate of stamp duty is not in the corpus. Section 37 of the Western Province Financial Statute No. 6 of 1990 charges duty 'at the prescribed rate' and section 77(1)(a) leaves the rate to be prescribed by regulation published in the Gazette. No rate Order or regulation for the Western Province is in the corpus, so the money amount of duty on this Deed of Gift cannot be computed from corpus text alone (M051-Q02).",
+    "Section 106 of Statute No. 6 of 1990 is in the corpus as a consolidated interpretation section whose defined terms have lost their quoted head-words in extraction (for example the definitions of 'transfer', 'gift' and 'Assessor' appear as bare 'means ...' clauses). The head-words were inferred from the alphabetical order of the list and from the use of the terms in sections 37, 48 and 51; a verifier should confirm them against the printed Statute.",
+    "No valuation methodology (comparable sales, rating assessment, Government Valuer practice) is prescribed in the corpus. Section 106 fixes only the test - the price the property would have fetched in the open market in the opinion of the Assessor - not the appraisal technique.",
+    "No Provincial Council enactment other than Statute No. 6 of 1990 is in the corpus, so any later Western Province amending statute affecting valuation or rates could not be checked."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M051-001",
+      "section_id": "6-1990/s37",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "37",
+      "subsection": "(a)",
+      "relevant_excerpt": "There shall be charged on- (a) every instrument relating to a transfer of situated in the immovable property Western Province; (b) every document presented or filed, in proceedings instituted in any Court of law established by law, in the Western Province of Sri Lanka; (c) every transfer of a motor vehicle effected in Western Province. a stamp duty at the prescribed rate.",
+      "why_relevant": "The charging provision. A Deed of Gift of land at Pannipitiya is an instrument relating to a transfer of immovable property situated in the Western Province, so stamp duty is chargeable on it under the Western Province Financial Statute and is administered by the Provincial Council's revenue officers. It also shows that the rate itself is 'prescribed', not stated in the Statute.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change (latest_change_year null). In force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M051-002",
+      "section_id": "6-1990/s48",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "48",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) Where any property is conveyed by an instrument, the stamp duty with which such instrument is chargeable shall be calculated on the value of the property conveyed.",
+      "why_relevant": "Fixes the base on which duty is calculated: the 'value' of the property conveyed. This is what sends the Assessor to the statutory definition of 'value' rather than to the consideration, the cost of construction or the current market price.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change. In force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M051-003",
+      "section_id": "6-1990/s106",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "106",
+      "subsection": "definition of \"value\", paragraph (c)",
+      "relevant_excerpt": "(c) any immovable property which is gifted, being immovable property which was acquired by the donor after March 31, 1977 means - the price which, in the opinion ofthe Assessor, such property would have fetched if sold in the open market on the date which such on property was acquired by the donor, increased by an amount equal to the cost of the improvements, alterations and additions, if any, made to such property after the date on which the property was acquired by the donor, and prior to the date of the instrument by which such property is gifted ; or (ii) the price which, in the opinion of the assessor, that property would have: fetched, if sold in the open market on the date of the instrument by which such property was gifted. whichever price is the lower.",
+      "why_relevant": "The operative definition. The donor acquired the Pannipitiya land in January 1978, that is after March 31, 1977, so paragraph (c) governs: the Assessor takes the lower of (i) the open-market price at the date of acquisition plus the cost of improvements made before the gift, and (ii) the open-market price at the date of the Deed of Gift. Paragraphs (a) and (b) are displaced - (a) excludes gifted immovable property, (b) applies only to property acquired on or before March 31, 1977.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Interpretation section in force from 1990; corpus records no later change. In force at 2021-10. The March 31, 1977 cut-off inside the definition is a fixed statutory date, not a commencement issue.",
+      "verification_status": "verified",
+      "verifier_note": "Checked against 6-1990/s106: the head-word \"value\" and paragraph (c) are present and the excerpt is verbatim; OCR drops the \"(i)\" enumerator of the first limb, but the two-limb structure and \"whichever price is the lower\" are confirmed by the parallel wording of paragraph (b), and the January 1978 acquisition puts this gift in paragraph (c) rather than (b)."
+    },
+    {
+      "provision_id": "PROV-M051-004",
+      "section_id": "6-1990/s106",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "106",
+      "subsection": "definition of \"transfer\"",
+      "relevant_excerpt": "means a sale and shall include a gift or exchange or a conveyance, without consideration, by an executor or administrators of an estate of a deceased to a person beneficially entitled to such property",
+      "why_relevant": "Brings a Deed of Gift within the word 'transfer' in section 37(a), so the charging provision bites on this instrument even though no consideration passes.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change. In force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": "Head-word confirmed: the corpus defined_terms index for 6-1990/s106 lists \"Transfer\", and 6-1990/s37 carries a defines edge to s106, so the researcher's inference from alphabetical position is correct."
+    },
+    {
+      "provision_id": "PROV-M051-005",
+      "section_id": "6-1990/s106",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "106",
+      "subsection": "definition of \"gift\"",
+      "relevant_excerpt": "means a transfer by one person to another ofany movable or immovable property made voluntarily and without consideration in money or money's worth",
+      "why_relevant": "Confirms that the intended instrument is a gift for the purposes of the Statute, which is what makes paragraph (c) of the definition of 'value' apply instead of paragraph (a).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change. In force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": "Head-word confirmed: the corpus defined_terms index for 6-1990/s106 lists \"gift\", and 6-1990/s48 carries a defines edge to s106 for that term."
+    },
+    {
+      "provision_id": "PROV-M051-006",
+      "section_id": "6-1990/s106",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "106",
+      "subsection": "definition of \"Assessor\"",
+      "relevant_excerpt": "Assessor\" means a Provincial Assessor of Revenue appointed for the purposes of and includes a Senior Assessor of Revenue appointed for the purposes of this statute",
+      "why_relevant": "Identifies the officer the question calls 'an Assessor attached to the Western Provincial Council': a Provincial Assessor of Revenue appointed under this Statute, whose opinion the definition of 'value' makes decisive.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change. In force at 2021-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Correction: the head-word was not lost - the body of s106 reads 'Assessor\" means a Provincial Assessor of Revenue appointed for the purposes of and includes a Senior Assessor of Revenue appointed for the purposes of this statute'; words are dropped after \"for the purposes of\", and s106 separately defines \"Provincial Assessor\" as an Assessor of Revenue appointed for the purposes of this Statute, so the excerpt is sound for background use only."
+    },
+    {
+      "provision_id": "PROV-M051-007",
+      "section_id": "6-1990/s62",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "62",
+      "subsection": null,
+      "relevant_excerpt": "brought to an Assessor together with a copy thereof and the person bringing it applies to have the opinion of the Assessor as to the stamp duty, if any, with which it is chargeable, and pays a fee of two hundred and fifty rupees the Assessor shall determine the stamp duty, if any with which in his opinion the instrument is chargeable and shall notify his determination to such person in writing.",
+      "why_relevant": "The procedural route by which an Assessor is asked to value the property and fix the duty on a Deed of Gift (adjudication), and the source of his duty to notify the determination in writing.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change. In force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M051-008",
+      "section_id": "6-1990/s63",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "63",
+      "subsection": null,
+      "relevant_excerpt": "For the purpose of giving his opinion under section 62 the Assessor may require the person bringing the instrument to produce any such document or other evidence as is necessary to prove the facts relating to the chargeability of the instrument with stamp duty or the amount of the stamp duty with which it is chargeable",
+      "why_relevant": "Supplies the evidential mechanism: the Assessor may call for the 1978 deed of purchase, building plans, contractors' bills and receipts for the Rs.900,000 spent on construction, and any valuation, in order to establish the two competing prices under the definition of 'value'.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change. In force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M051-009",
+      "section_id": "6-1990/s78",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "78",
+      "subsection": "(2)",
+      "relevant_excerpt": "(2) Every notary public who attests an instrument of conveyance shall before doing SO take all reasonable steps to satisfy himself that the value on which the stamp duty is paid represents the value of the property conveyed.",
+      "why_relevant": "Shows that the value put before the Assessor is not simply taken on trust: the attesting notary must independently satisfy himself that the value on which duty is paid represents the value of the property conveyed, and section 78(1) requires the facts affecting chargeability to be set out in the instrument.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change. In force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M051-010",
+      "section_id": "6-1990/s51",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "51",
+      "subsection": "(a)",
+      "relevant_excerpt": "Except where there is an agreement to the contrary stamp duty shall be payable; (a) in the case of an instrument of transfer by the grantee;",
+      "why_relevant": "Identifies who must find the money: on a Deed of Gift the duty falls on the grantee, that is the daughter as donee, unless the deed provides otherwise.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change. In force at 2021-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Role corrected to primary incidence only: s52(1) makes every person executing an instrument chargeable with duty and not duly stamped liable to the Commissioner, and s52(3) gives that effect notwithstanding s51, with a right of recovery under s52(2) against the person liable under s51, so s51(a) does not exhaust who can be made to pay. Added PROV-M051-901 for s52."
+    },
+    {
+      "provision_id": "PROV-M051-011",
+      "section_id": "6-1990/s40",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "40",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) The stamp duty with which any instrument is chargeable shall be paid before or at the time of execution of the instrument except as otherwise permitted in this Statute and such payment shall be indicated on such instrument by means of adhesive stamps or impressed stamps or a Certificate of payment referred to in subsection (2) hereof.",
+      "why_relevant": "Fixes when and how the calculated duty is paid on a Deed of Gift: before or at execution, by stamps or by payment to a prescribed bank against a certificate of payment affixed to the instrument.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change. In force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M051-012",
+      "section_id": "6-1990/s39",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "39",
+      "subsection": null,
+      "relevant_excerpt": "The following instruments and documents shall be exempted from the payment of stamp duty:- (1) bail bond in criminal proceedings;",
+      "why_relevant": "The exemption list is exhaustive and contains no exemption for a gift between family members, so nothing removes this Deed of Gift from charge.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change. In force at 2021-10.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The excerpt quotes only paragraph (1) of s39. I read the whole of s39 in the corpus (Government instruments, listed court documents, wills) and confirm it contains no exemption for a gift between family members, so the negative proposition rests on the section as a whole rather than on the quoted words."
+    },
+    {
+      "provision_id": "PROV-M051-013",
+      "section_id": "12-2006/s13",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "the provisions of the Stamp Duty Act, No. 43 of 1982, relating to the Imposition of Stamp Duty (other than any instrument relating to the transfer of immovable property, the transfer of motor vehicles or documents filed in Court), Exemptions and any other provision in the aforesaid Act, shall, in so far as the same are inconsistent with the provisions of this Act, have no operation",
+      "why_relevant": "Confirms that the national stamp duty regime is not the operative one here: instruments relating to the transfer of immovable property are expressly carved out, and the list of 'specified instruments' in section 4 of that Act does not include a conveyance or gift of land. The Provincial Council Statute therefore governs this Deed of Gift.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006; corpus records no later change. In force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": "Confirmed against 12-2006 s3 and s4: duty under that Act is charged only on a \"specified instrument\", and the s4 list (affidavit, insurance policy, notarial warrant, licence, credit-card claim, share certificate, bond or mortgage, promissory note, lease or hire, receipt or discharge) contains no conveyance or gift of land, which matches the s13 carve-out."
+    },
+    {
+      "provision_id": "PROV-M051-901",
+      "section_id": "6-1990/s52",
+      "act_id": "6-1990",
+      "formal_title": "Western Province Financial Statute",
+      "number_and_year": "No. 6 of 1990",
+      "section": "52",
+      "subsection": "(1) and (3)",
+      "relevant_excerpt": "(1) If any instrument chargeable with stamp duty, is executed in the Province or is in respect of immovable property situated in the Province and is not duly stamped, then, every person executing such instrument shall be liable to pay to the Commissioner the amount of such duty and any penalty attached to the non-payment of such duty.",
+      "why_relevant": "Qualifies s51(a). If the Deed of Gift is not duly stamped, every person executing it - the donor as well as the donee - is liable to the Commissioner for the duty and any penalty, and s52(3) gives that liability effect notwithstanding s51, with a right of recovery under s52(2) against the person primarily liable. Added by the verifier because the map's statement of who pays rested on s51(a) alone.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1990; corpus records no later change (latest_change_year null). In force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim against 6-1990/s52."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M051-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The route from the instrument to the figure the Assessor must adopt is entirely statutory: section 48(1) of the Western Province Financial Statute directs that duty is calculated on the 'value' of the property conveyed, and the definition of 'value' in section 106 prescribes, for gifted immovable property acquired after March 31, 1977, exactly which two prices are compared and that the lower is taken. No judicial authority or common-law doctrine is engaged. The appraisal technique by which the Assessor forms his opinion of an open-market price is administrative practice rather than law, and the answer says so instead of supplying a rule the corpus does not contain.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M051-Q01-01",
+          "issue": "Whether a Deed of Gift of land at Pannipitiya is chargeable with stamp duty under the Western Province Financial Statute No. 6 of 1990, and on what base the duty is calculated.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M051-Q01-02",
+          "issue": "Which limb of the definition of 'value' in section 106 applies where the donor acquired the immovable property in January 1978, and what the Assessor must compare under that limb.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M051-Q01-03",
+          "issue": "What evidence the Assessor may call for, and by what procedure he determines and notifies the value and the duty.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M051-002",
+        "PROV-M051-003"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M051-001",
+        "PROV-M051-004",
+        "PROV-M051-005",
+        "PROV-M051-007",
+        "PROV-M051-008",
+        "PROV-M051-009"
+      ],
+      "background_provision_ids": [
+        "PROV-M051-006",
+        "PROV-M051-013"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Two indispensable steps: section 48(1) makes 'value' the base, and the definition of 'value' in section 106 paragraph (c) supplies the content of that term for gifted immovable property acquired after March 31, 1977. The charging section, the definitions of 'transfer' and 'gift' and the adjudication sections support the chain, but removing any one of them would not change the figure the Assessor arrives at. Verifier: confirmed. s 37 is properly supporting rather than indispensable for this question, which asks only how the Assessor reaches the value, and the definitions of 'transfer' and 'gift' do not change that figure on these facts.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M051-002",
+          "to_provision_id": "PROV-M051-003",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M051-001",
+          "to_provision_id": "PROV-M051-002",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M051-001",
+          "to_provision_id": "PROV-M051-004",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M051-003",
+          "to_provision_id": "PROV-M051-005",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M051-007",
+          "to_provision_id": "PROV-M051-008",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Mr. Alfred Perera purchased a property in Pannipitiya in January 1978 for Rs.160,000/-. He constructed a house on the property spending Rs.900,000/- and now the property is valued at Rs.9,000,000/-. He intends to gift this property to his daughter Himall.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "How an Assessor of Revenue of the Western Provincial Council arrives at the value of the Pannipitiya property for stamp duty on the proposed Deed of Gift, where the donor bought the land in January 1978 for Rs.160,000, spent Rs.900,000 building a house on it, and the property is now worth Rs.9,000,000.",
+        "rule": "Stamp duty is charged on every instrument relating to a transfer of immovable property situated in the Western Province (Western Province Financial Statute No. 6 of 1990 s.37(a)), and 'transfer' is defined in s.106 to include a gift, so a Deed of Gift is chargeable. Section 48(1) provides that where property is conveyed by an instrument the duty is calculated on the value of the property conveyed. 'Value' is neither the consideration nor simply today's market price: under the definition in s.106, where the property gifted is immovable property acquired by the donor after March 31, 1977, value means the lower of (i) the price the property would have fetched, in the opinion of the Assessor, if sold in the open market on the date the donor acquired it, increased by the cost of improvements, alterations and additions made after acquisition and before the date of the deed, and (ii) the price it would have fetched, in the opinion of the Assessor, if sold in the open market on the date of the instrument of gift. Had the donor acquired the property on or before March 31, 1977, the first figure would instead be built on the open-market price on March 31, 1977. To obtain the determination the deed, with a copy, is brought to the Assessor under s.62 with the prescribed fee of Rs.250; the Assessor determines the duty in his opinion chargeable and notifies it in writing, and under s.63 he may require the applicant to produce documents and other evidence proving the facts relevant to chargeability and amount. Under s.78(2) the attesting notary must separately take all reasonable steps to satisfy himself that the value on which duty is paid represents the value of the property conveyed.",
+        "application": "The gift is of immovable property at Pannipitiya, which lies in the Western Province, so s.37(a) applies and the valuing officer is the Provincial Assessor of Revenue. Mr. Perera acquired the property in January 1978, after March 31, 1977, so paragraph (c) of the definition of 'value' governs and the March 31, 1977 valuation date in paragraph (b) is irrelevant. The Assessor therefore builds two figures. For the first, he forms an opinion of the open-market price of the property as at January 1978; the Rs.160,000 paid on that purchase is evidence of that price, and he may call for the 1978 deed under s.63, though the statutory test is his opinion of the open-market price at that date rather than the price recited in the deed. To that he adds the cost of the improvements made after acquisition and before the deed of gift, which on the facts is the Rs.900,000 spent on constructing the house, supported by plans, bills and receipts he may call for. That gives Rs.160,000 + Rs.900,000 = Rs.1,060,000. For the second, he forms an opinion of the open-market price at the date of the Deed of Gift, which on the facts as stated is Rs.9,000,000. He then takes the lower of the two. Nothing is deducted because the donee is the donor's daughter, and no exemption in s.39 covers a family gift. If the gift were made subject to a reservation in favour of the donor, s.48(3) would require the value to be taken as if no reservation had been made; no reservation appears on these facts.",
+        "conclusion": "The Assessor takes the lower of Rs.1,060,000 (open-market price at acquisition in January 1978, evidenced by the Rs.160,000 purchase price, plus the Rs.900,000 cost of the house built afterwards) and Rs.9,000,000 (open-market price at the date of the deed), and so arrives at a value of Rs.1,060,000 for the purpose of stamp duty on this Deed of Gift. Both amounts remain the Assessor's opinion of the open-market price at each date under s.106, so the figures given in the scenario are evidence of value rather than binding on him, and the amounts actually adopted turn on the evidence produced under s.63."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M051-Q01-001",
+          "claim_text": "Stamp duty is charged on every instrument relating to a transfer of immovable property situated in the Western Province, at the prescribed rate.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M051-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q01-002",
+          "claim_text": "A gift is a transfer for the purposes of the Statute, so a Deed of Gift is an instrument relating to a transfer of immovable property.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M051-004",
+            "PROV-M051-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q01-003",
+          "claim_text": "Where property is conveyed by an instrument the stamp duty is calculated on the value of the property conveyed, not on the consideration.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M051-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q01-004",
+          "claim_text": "For immovable property that is gifted and was acquired by the donor after March 31, 1977, 'value' means the lower of the Assessor's opinion of the open-market price at the date of acquisition increased by the cost of improvements made before the deed, and his opinion of the open-market price at the date of the deed of gift.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M051-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q01-005",
+          "claim_text": "On an application under section 62 with a copy of the instrument and a fee of two hundred and fifty rupees, the Assessor determines the duty chargeable in his opinion and notifies the determination in writing, and may require production of documents and other evidence proving the facts relevant to the amount.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M051-007",
+            "PROV-M051-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q01-006",
+          "claim_text": "The attesting notary must take all reasonable steps to satisfy himself that the value on which the stamp duty is paid represents the value of the property conveyed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M051-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q01-007",
+          "claim_text": "Because the donor acquired the Pannipitiya property in January 1978, that is after March 31, 1977, paragraph (c) of the definition of 'value' applies rather than the March 31, 1977 comparison in paragraph (b).",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M051-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q01-008",
+          "claim_text": "The first comparison figure is the Assessor's opinion of the open-market price of the property in January 1978, for which the Rs.160,000 purchase price is evidence, increased by the Rs.900,000 cost of constructing the house after acquisition and before the deed, giving Rs.1,060,000.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M051-003",
+            "PROV-M051-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q01-009",
+          "claim_text": "The second comparison figure is the Assessor's opinion of the open-market price at the date of the Deed of Gift, which on the facts as given is Rs.9,000,000.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M051-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-3"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q01-010",
+          "claim_text": "Taking the lower of Rs.1,060,000 and Rs.9,000,000, the Assessor arrives at a value of Rs.1,060,000 for the purpose of stamp duty on this Deed of Gift.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M051-002",
+            "PROV-M051-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q01-011",
+          "claim_text": "The value so arrived at remains the Assessor's opinion of the open-market price at each date, so the figures in the scenario are evidence of value rather than binding on him.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M051-003",
+            "PROV-M051-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M051-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Everything the question needs is statutory rather than judicial: the charge (s.37), the base (s.48(1) with the definition of 'value' in s.106), who pays (s.51(a)) and when and how (s.40). No case law or Roman-Dutch doctrine is engaged. The one missing element is the rate, which s.37 leaves to be 'prescribed' and s.77(1)(a) leaves to regulations published in the Gazette; that is subsidiary legislation under the same Statute rather than a different kind of authority, but it is absent from the corpus, so the money figure cannot be produced from corpus text.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M051-Q02-01",
+          "issue": "The chargeable value on which stamp duty for the Deed of Gift is computed.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M051-Q02-02",
+          "issue": "The rate of stamp duty applicable to an instrument transferring immovable property in the Western Province in October 2021, and the arithmetic of applying it to the chargeable value.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M051-Q02-03",
+          "issue": "By whom, when and in what manner the duty so calculated is payable.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M051-001",
+        "PROV-M051-002",
+        "PROV-M051-003",
+        "PROV-M051-004"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M051-010",
+        "PROV-M051-011",
+        "PROV-M051-012",
+        "PROV-M051-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M051-013"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps: s.37(a) read with the definition of 'transfer' makes the Deed of Gift chargeable at the prescribed rate; s.48(1) makes the base the value of the property conveyed; the definition of 'value' in s.106 paragraph (c) fixes that value at Rs.1,060,000. A fourth step, the prescribed rate, is required to complete the calculation but is not in the corpus. Verifier: hop count of 3 confirmed; the missing rate is the fourth step and is why the question stays blocked.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M051-001",
+          "to_provision_id": "PROV-M051-004",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M051-001",
+          "to_provision_id": "PROV-M051-002",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M051-002",
+          "to_provision_id": "PROV-M051-003",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M051-001",
+          "to_provision_id": "PROV-M051-012",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M051-001",
+          "to_provision_id": "PROV-M051-010",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M051-001",
+          "to_provision_id": "PROV-M051-011",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M051-010",
+          "to_provision_id": "PROV-M051-901",
+          "relationship": "excepts"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Mr. Alfred Perera purchased a property in Pannipitiya in January 1978 for Rs.160,000/-. He constructed a house on the property spending Rs.900,000/- and now the property is valued at Rs.9,000,000/-. He intends to gift this property to his daughter Himall.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What stamp duty is payable on the proposed Deed of Gift of the Pannipitiya property, and how that duty is calculated.",
+        "rule": "Under s.37(a) of the Western Province Financial Statute No. 6 of 1990, stamp duty at the prescribed rate is charged on every instrument relating to a transfer of immovable property situated in the Western Province, and 'transfer' in s.106 includes a gift. Section 48(1) directs that the duty be calculated on the value of the property conveyed, and the definition of 'value' in s.106 fixes that value, for gifted immovable property acquired by the donor after March 31, 1977, as the lower of the Assessor's opinion of the open-market price at acquisition plus the cost of later improvements made before the deed, and his opinion of the open-market price at the date of the deed. Section 39 exempts certain instruments, but nothing in that list covers a gift between family members. The rate is not stated in the Statute: s.37 charges duty 'at the prescribed rate' and allows different rates for different classes of instrument, and s.77(1)(a) empowers regulations to prescribe what the Statute requires to be prescribed, such regulations operating from publication in the Gazette. The duty is payable by the grantee under s.51(a) unless the deed provides otherwise, and under s.40(1) must be paid before or at the time of execution by adhesive or impressed stamps or by a certificate of payment issued by a prescribed bank and affixed to the instrument.",
+        "application": "The chargeable value is settled first. The donor acquired the property in January 1978, so the comparison is between Rs.160,000 as the open-market price at acquisition plus the Rs.900,000 spent on the house built afterwards, which is Rs.1,060,000, and Rs.9,000,000 as the open-market price at the date of the deed; the lower, Rs.1,060,000, is the chargeable value. No exemption applies. The duty is then that chargeable value multiplied by the prescribed rate, applied band by band if the Gazette Order in force in October 2021 prescribes different rates for successive slabs of value, so that the mode of calculation is: duty = (rate for the first slab x that part of Rs.1,060,000) + (rate for the next slab x the balance), continuing until the whole of Rs.1,060,000 is exhausted. The Order that would supply those percentages and slab thresholds is not part of the frozen corpus, so the money amount cannot be stated here without assuming a rate. Whatever the figure, it falls on the daughter as grantee unless the deed provides otherwise, and must be met before or at execution in one of the modes allowed by s.40.",
+        "conclusion": "The mode of calculation is to identify the chargeable value under s.48(1) read with the definition of 'value' in s.106, which is Rs.1,060,000, and then apply to it the rate prescribed by Order under s.37, slab by slab if the Order is banded. The money amount of duty cannot be stated on the material available, because the Western Province rate Order in force in October 2021 is not in the corpus. The question is therefore left blocked for want of that subsidiary legislation rather than answered with an assumed percentage."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M051-Q02-001",
+          "claim_text": "A Deed of Gift of immovable property in the Western Province is chargeable with stamp duty at the prescribed rate, because 'transfer' in the Statute includes a gift.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M051-001",
+            "PROV-M051-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q02-002",
+          "claim_text": "The duty is calculated on the value of the property conveyed, which for gifted immovable property acquired after March 31, 1977 is the lower of the open-market price at acquisition plus the cost of later improvements and the open-market price at the date of the deed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M051-002",
+            "PROV-M051-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q02-003",
+          "claim_text": "No exemption in the Statute covers a gift of land between family members.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M051-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q02-004",
+          "claim_text": "The duty on an instrument of transfer is payable by the grantee unless there is an agreement to the contrary, and must be paid before or at the time of execution by stamps or by a bank certificate of payment affixed to the instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M051-010",
+            "PROV-M051-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q02-005",
+          "claim_text": "The chargeable value on these facts is Rs.1,060,000, being Rs.160,000 as the price at acquisition in January 1978 plus Rs.900,000 spent on constructing the house, that sum being lower than the Rs.9,000,000 value at the date of the deed.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M051-002",
+            "PROV-M051-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q02-006",
+          "claim_text": "The duty is that chargeable value multiplied by the rate prescribed by Order, applied slab by slab where the Order prescribes different rates for successive bands of value.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M051-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M051-Q02-007",
+          "claim_text": "The money amount of duty cannot be stated from the corpus, because the rate is left to be prescribed under section 37 and no Western Province rate Order in force in October 2021 is in the corpus.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M051-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M051-Q02-008",
+          "claim_text": "Whatever the rate, the duty falls on the donee as grantee unless the deed provides otherwise, and must be met before or at execution of the Deed of Gift.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M051-010",
+            "PROV-M051-011"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The rate of stamp duty is not in the corpus. Section 37 charges duty 'at the prescribed rate' and section 77(1)(a) leaves the rate to regulations published in the Gazette; no Western Province rate Order or regulation is in the frozen corpus, so the money amount of duty on a chargeable value of Rs.1,060,000 cannot be computed without inventing a percentage. The chargeable value and the mode of calculation are settled; only the rate is missing. Verified: the corpus holds no rate for this charge - s 37 charges 'at the prescribed rate', s 77(1)(a) leaves it to Gazette regulations, s 76 covers only the description of stamps and reciprocal exemptions, and a grep for 'per centum' and 'prescribed rate' across the corpus returns no stamp-duty rate for the Western Province. The verifier also notes that s 37 authorises different rates for different classes or categories of instruments, not for successive bands of value, so the banded mode of calculation in the draft is an assumption about the missing Order (claim CL-M051-Q02-006 marked disputed).",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

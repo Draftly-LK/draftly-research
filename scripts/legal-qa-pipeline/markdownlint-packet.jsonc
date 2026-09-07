@@ -1,0 +1,9 @@
+{
+  // Lint rules for generated lawyer-review packets. Mirrors the repo's
+  // .markdownlint-cli2.jsonc rules without its globs, so a packet written to
+  // any directory is judged the same way.
+  "config": {
+    "MD013": false,
+    "MD024": { "siblings_only": true }
+  }
+}

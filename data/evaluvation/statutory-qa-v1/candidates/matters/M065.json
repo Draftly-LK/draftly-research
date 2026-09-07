@@ -1,0 +1,100 @@
+{
+  "benchmark_matter_id": "M065",
+  "source_matter_id": "P11-Q04-M02",
+  "grouping_key": "P11-Q04-M02",
+  "paper_no": 11,
+  "question_no": 4,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+    "normalized": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P11-Q04-P02"
+        ]
+      },
+      {
+        "segment_index": 0,
+        "field": "prior_background",
+        "atomic_ids": [
+          "P11-Q04-P03"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M065-Q01",
+      "atomic_id": "P11-Q04-P02",
+      "part_uid": "paper-11/q4/2",
+      "part_id": "2",
+      "item_id": null,
+      "marks": 4,
+      "pdf_page": 45,
+      "question_original": "How can they execute this Lease Agreement?",
+      "question_normalized": "How can they execute this Lease Agreement?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "effective_background_normalized": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "source_quote": "2) Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private)\nLimited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to\nattest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not\nknow the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary\nRuwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera\ndoes not want to come to Colombo. How can they execute this Lease Agreement?\n(4 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    },
+    {
+      "benchmark_question_id": "M065-Q02",
+      "atomic_id": "P11-Q04-P03",
+      "part_uid": "paper-11/q4/3",
+      "part_id": "3",
+      "item_id": null,
+      "marks": 7,
+      "pdf_page": 45,
+      "question_original": "If Ruwan Perera is the first Notary what are the things that he should mention in his attestation?",
+      "question_normalized": "If Ruwan Perera is the first Notary what are the things that he should mention in his attestation?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "effective_background_normalized": "Anil Fernando is a Notary practising in Colombo. A company named Cyril & Cyril (Private) Limited wishes to lease out a warehouse situated in Galle. The company wants Anil Fernando to attest its Lease Agreement. Anil Fernando knows the directors of the said company but he does not know the owner of the warehouse, namely Mr. Russel Perera. Mr.Russel Perera wants his Notary Ruwan Perera who is practising in Galle to draft and attest the Lease Agreement. Russel Perera does not want to come to Colombo.",
+      "source_quote": "3) If Ruwan Perera is the first Notary what are the things that he should mention in his attestation?\n(7 marks)",
+      "classification": {
+        "context_sources": [
+          "prior"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "detailed",
+        "extraction_quality": "clean",
+        "candidate_action": "keep",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": []
+    }
+  ],
+  "matter_reference_date": "2020-10",
+  "exam_session": "OCTOBER 2020",
+  "matter_tier": "A",
+  "tier_a_question_count": 2
+}

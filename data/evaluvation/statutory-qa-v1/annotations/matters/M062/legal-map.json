@@ -1,0 +1,1072 @@
+{
+  "benchmark_matter_id": "M062",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M062",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:49:14Z",
+    "verification_agent": "verifier-M062",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T23:06:20Z"
+  },
+  "matter_reference_date": "2020-10",
+  "matter_reference_date_basis": "exam_session field of the candidate matter file (OCTOBER 2020); the law is stated as at the October 2020 sitting.",
+  "corpus_gaps": [
+    "No stamp duty rate instrument for a conveyance of land is in the corpus. The Stamp Duty (Special Provisions) Act, No. 12 of 2006 s.4 does not list a deed of transfer of immovable property as a specified instrument; conveyance stamp duty is a provincial council levy and only the Western Province Financial Statute, No. 6 of 1990 is in the corpus, whereas Bandarawela is in the Uva Province. The rate and the charging provincial statute therefore cannot be cited.",
+    "The Notaries Ordinance in the corpus is a consolidated edition carrying the Notaries (Amendment) Act, No. 31 of 2022 and No. 6 of 2024 changes, and the corpus amendment_events for s.31 are not mapped to individual rules. Rule (6) (stamp duty assurance), rule (9) (identification of executants), rule (14) (corporate seal and board resolution) and rule (17)(b)-(e) (certified folio extract, certificate of incorporation, photographs) are all in their post-2020 substituted or inserted form and the wording in force in October 2020 cannot be reconstructed from the corpus.",
+    "The Prevention of Frauds Ordinance s.2 in the corpus is the form amended by Act No. 30 of 2022 and Act No. 4 of 2024 (thumb impressions, transferee execution). The corpus does not hold the pre-2022 text, although the requirement of a notarially attested writing with two witnesses long predates the matter date.",
+    "The Tea Control Act, the Rubber Control Act and any registration made under them are not in the corpus, so whether a particular property is a registered estate for the purposes of the Tea and Rubber Estates (Control of Fragmentation) Act can only be tested through the extent limb of the definition in s.25 of that Act.",
+    "The customary conveyancing practice of tracing title for a fixed period (commonly thirty years) has no statutory source in the corpus; the Notaries Ordinance s.31 rule (17)(a) fixes the duty to search but not its period.",
+    "No enactment in the corpus imposes a foreign exchange, Board of Investment or Inland Revenue clearance on this purchase; those regimes are outside the frozen corpus and were not relied on."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M062-001",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (17)(a)",
+      "relevant_excerpt": "Before any deed or instrument (other than a will or codicil) affecting any interest in land or other immovable property is drawn by him, he shall search or cause to be searched the registers in the land registry to ascertain the state of the title in regard to such land and whether any prior deed affecting any interest in such land has been registered",
+      "why_relevant": "This is the notary's own statutory duty to investigate title. It requires the search to be made before the deed is drawn, and it is the source of the first step in advising the purchasing company.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (17)(a) was not touched by the Notaries (Amendment) Act, No. 31 of 2022 (which repealed and replaced paragraph (b) of rule (17) and added paragraphs (c) to (e)) and was in force in October 2020. The corpus does not label rule numbers inside the section body; the number (17) is taken from its position between rules (16) and (18).",
+      "verification_status": "partially_verified",
+      "verifier_note": "Rule (17)(a) is verbatim and was untouched by the 2022 and 2024 amendments (Act No. 31 of 2022 s.16(10) replaced only paragraph (b) and added (c) to (e)), but the excerpt stops before the proviso to rule (17), under which the search is not compulsory if the parties authorise the notary in writing to dispense with it; the duty must be stated subject to that proviso."
+    },
+    {
+      "provision_id": "PROV-M062-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (16)(a)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument, other than a will or codicil, affecting land or other immovable property, unless the deed or instrument embodies therin or in a Schedule annexed therto an accurate and clear description of the said land or other property affected thereby, showing its boundaries, extent, situation specifying the district, pattu, korale, Divisional Secretary's Division, local authority division and the Grama Niladari Division, and the village within the District in which the land is situated",
+      "why_relevant": "Fixes what the schedule to the deed must contain. It is the reason the notary must obtain a survey plan and an accurate description of the twenty acres before drawing the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The Notaries (Amendment) Act, No. 31 of 2022 s.16(9)(a) substituted only the closing words of rule (16)(a) about assessment numbers and condominium parcels. The excerpt stops before that substituted tail, so it reflects the text in force in October 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (6)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless he has an assurance that the required stamp duty is provided.",
+      "why_relevant": "Grounds the step of satisfying himself that stamp duty on the conveyance has been provided before attestation.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Rule (6) as it stands in the corpus was substituted by the Notaries (Amendment) Act, No. 31 of 2022 s.16(4), after the matter date. A stamp duty rule stood in rule (6) before 2022 but the corpus does not hold its wording, so this provision is carried as supporting only and is not treated as indispensable.",
+      "verification_status": "unresolved",
+      "verifier_note": "Rule (6) as held in the corpus is the text substituted by Act No. 31 of 2022 s.16(4), which took effect after the matter date, and the amending Act does not quote the wording it replaced, so the October 2020 form of the stamp duty rule cannot be checked from the corpus; the matter-date stamp duty duty on the notary is carried instead by the added PROV-M062-902."
+    },
+    {
+      "provision_id": "PROV-M062-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (20)",
+      "relevant_excerpt": "He shall without delay duly attest every deed or instrument which shall be executed or acknowledged before him, and shall sign and seal such attestation.",
+      "why_relevant": "The attestation step itself. The opening words of rule (20) impose the duty to attest without delay and to sign and seal the attestation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The Notaries (Amendment) Act, No. 31 of 2022 s.16(11) replaced paragraphs (b) and (h) of rule (20) and added paragraph (d) matter; the opening words quoted here were not among the substituted text and were in force in October 2020.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The opening words of rule (20) are verbatim and were not substituted, so the attestation duty stands at the matter date, but the temporal note misdescribes the amendment: Act No. 31 of 2022 s.16(11) replaced paragraphs (b) and (e), amended paragraph (g) and added paragraph (h), and Act No. 6 of 2024 s.3(7) later replaced paragraph (g)."
+    },
+    {
+      "provision_id": "PROV-M062-005",
+      "section_id": "1-1907/s37",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "37",
+      "subsection": null,
+      "relevant_excerpt": "Whenever a notary has received instructions to register, and a sufficient sum to meet the necessary expense of registering, any deed drawn or attested by him, and shall in such case fail to use due diligence in effecting such registration, he shall be guilty of an offence",
+      "why_relevant": "Once the company instructs registration and puts the notary in funds, prompt registration of the deed becomes a duty enforceable against the notary personally.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Last changed in 2005 by the Increase of Fines Act, No. 12 of 2005 (fine levels only). In force in October 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-006",
+      "section_id": "1-1907/s38",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "38",
+      "subsection": "(1)",
+      "relevant_excerpt": "It shall be the duty of every notary to endeavour to ascertain the true and full consideration for the execution of any deed, and to insert and set forth the same in such deed.",
+      "why_relevant": "The notary must ascertain and state the true price actually agreed for the estate rather than an understated figure.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The Notaries (Amendment) Act, No. 31 of 2022 s.18 amended only the fine in subsection (2). Subsection (1), quoted here, was in force in October 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-007",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "shall be in force or avail in law unless - (a) the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary",
+      "why_relevant": "The purchase of the estate can only take effect through a notarially executed and attested writing, which is why the company needs a notary at all and why the formalities below matter.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The corpus text is the form produced by the Prevention of Frauds (Amendment) Acts No. 30 of 2022 and No. 4 of 2024, both after the matter date. The requirement that a sale of immovable property be in writing, executed before a notary and two witnesses and attested by the notary has stood since 1840; the pre-2022 wording is not in the corpus and the verifier should confirm the October 2020 wording before this excerpt is treated as the operative text.",
+      "verification_status": "unresolved",
+      "verifier_note": "The whole operative clause of section 2 in the corpus is the text substituted by Act No. 30 of 2022 s.2 and re-cast by Act No. 4 of 2024 s.2; the 2022 Act repealed all the words from 'shall be of force' to the end without quoting them, so the wording in force in October 2020 cannot be reconstructed from the corpus, and the corpus text of paragraph (a) does not itself say 'two witnesses' (see the added PROV-M062-901 and PROV-M062-904)."
+    },
+    {
+      "provision_id": "PROV-M062-008",
+      "section_id": "7-2007/s19",
+      "act_id": "7-2007",
+      "formal_title": "Companies Act",
+      "number_and_year": "No. 7 of 2007",
+      "section": "19",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "an obligation which, if entered into by a natural person is required by law to be in writing signed by that person and be notarially attested, may be entered into on behalf of the company in writing signed under the name of the company by - (i) two directors of the company; (ii) if there be only one director, by that director; (iii) if the articles of the company so provide, by any other person or class of persons; or (iv) one or more attorneys appointed by the company, and be notarially executed",
+      "why_relevant": "Tells the notary who may sign the deed of transfer for the purchasing company: two directors, a sole director, a person permitted by the articles, or an attorney appointed by the company, signing under the company's name.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2007 with no recorded amendment; the Companies (Amendment) Act, No. 13 of 2019 in the corpus does not touch s.19.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-009",
+      "section_id": "7-2007/s185",
+      "act_id": "7-2007",
+      "formal_title": "Companies Act",
+      "number_and_year": "No. 7 of 2007",
+      "section": "185",
+      "subsection": "(1)",
+      "relevant_excerpt": "A company shall not enter into any major transaction, unless such transaction is- (a) approved by special resolution; (b) contingent on approval by special resolution; (c) consented to in writing by all the shareholders of the company; or (d) a transaction which the company is expressly authorised to enter into by a provision in its articles, which was included in it at the time the company was incorporated.",
+      "why_relevant": "If the purchase is a major transaction the notary must see shareholder approval in one of these four forms before the deed is executed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2007 with no recorded amendment.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-010",
+      "section_id": "7-2007/s185",
+      "act_id": "7-2007",
+      "formal_title": "Companies Act",
+      "number_and_year": "No. 7 of 2007",
+      "section": "185",
+      "subsection": "(2)(a)",
+      "relevant_excerpt": "the acquisition of or an agreement to acquire whether contingent or not, assets of a value which is greater than half the value of the assets of the company before the acquisition",
+      "why_relevant": "Supplies the test that turns this purchase into a major transaction, so the notary must obtain the value of the company's assets before the acquisition and compare it with the price of the estate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2007 with no recorded amendment.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-011",
+      "section_id": "7-2007/s17",
+      "act_id": "7-2007",
+      "formal_title": "Companies Act",
+      "number_and_year": "No. 7 of 2007",
+      "section": "17",
+      "subsection": "(1)",
+      "relevant_excerpt": "Where the articles of a company sets-out the objects of the company, there shall be deemed to be a restriction placed by the articles in carrying on any business or activity that is not within those objects, unless the articles expressly provide otherwise.",
+      "why_relevant": "Explains why the notary reads the articles: objects stated in them operate as a restriction, and the articles are also where any express authority for a major transaction under s.185(1)(d) would be found.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2007 with no recorded amendment.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-012",
+      "section_id": "1-1972/s3",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "the maximum extent of agricultural land which may be owned by any person, in this Law referred to as the \" ceiling \", shall (a) if such land consists exclusively of paddy land, be twenty-five acres; or (b) if such land does not consist exclusively of paddy land, be fifty acres",
+      "why_relevant": "Sets the fifty acre ceiling on non-paddy agricultural land that the notary must apply to the tea estate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Last amended by the Land Reform (Amendment) Act, No. 39 of 1981 s.2, long before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-013",
+      "section_id": "1-1972/s8",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "8",
+      "subsection": null,
+      "relevant_excerpt": "For the purposes of this Law, where any agricultural land is owned by a private company or co-operative society, the shareholders of such company, or society, as the case may be, shall be deemed to own such land for the purposes of section 3, in proportion to the shares held by each shareholder of such company",
+      "why_relevant": "Because the purchaser is a private company, the ceiling bites on the shareholders. The notary must look through the company and test each shareholder's holding, not the company's.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1972 with no recorded amendment.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-014",
+      "section_id": "1-1972/s66",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "66",
+      "subsection": "definition of \"agricultural land\"",
+      "relevant_excerpt": "means land used or capable of being used for agriculture within the meaning given in this Law and shall include private lands, lands alienated under the Land Development Ordinance or the State Lands Ordinance or any other enactment",
+      "why_relevant": "Brings a private tea property within \"agricultural land\", since \"agriculture\" in the same section includes the growing of industrial crops. Without this the ceiling would not apply at all.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Last amended by the Land Reform (Amendment) Act, No. 39 of 1981 s.15. The exclusion in paragraph (a) of the definition is confined to land owned or possessed by a public company on 29 May 1971 and does not reach this purchaser.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-015",
+      "section_id": "1-1972/s66",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "66",
+      "subsection": "definition of \"private company\"",
+      "relevant_excerpt": "means a private company within the meaning of the Companies Ordinance",
+      "why_relevant": "Confirms that a company such as the purchaser, styled \"(Private) Limited\", is the kind of company caught by s.8.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The definition points to the Companies Ordinance, which was repealed and replaced by the Companies Act, No. 17 of 1982 and in turn by the Companies Act, No. 7 of 2007. The corpus preserves the original reference and a footnote to the 1982 replacement; the reader has to carry the reference forward to the 2007 Act in force in October 2020.",
+      "verification_status": "partially_verified",
+      "verifier_note": "The excerpt is verbatim, but the definition points to the repealed Companies Ordinance and the corpus holds no transitional provision equating a company incorporated under the Companies Act, No. 7 of 2007 with a 'private company within the meaning of the Companies Ordinance'; the carry-forward is an inference and is properly supporting only."
+    },
+    {
+      "provision_id": "PROV-M062-016",
+      "section_id": "1-1972/s5",
+      "act_id": "1-1972",
+      "formal_title": "Land Reform Law",
+      "number_and_year": "No. 1 of 1972",
+      "section": "5",
+      "subsection": "(1)",
+      "relevant_excerpt": "Where after the date of commencement of this Law any person becomes the owner of agricultural land in excess of the ceiling, any such land owned by such person in excess of the ceiling shall as from that date- (a) be deemed to vest in the Commission; and (b) be deemed to be held by that person under a statutory lease from the Commission.",
+      "why_relevant": "Supplies the consequence the notary is guarding against: any excess over the ceiling created by this purchase vests automatically in the Land Reform Commission, so part of what the company pays for would be lost.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Amended by the Land Reform (Amendment) Act, No. 39 of 1981 s.3 and the Land Reform (Special Provisions) Act, No. 14 of 1986 s.2, both well before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-017",
+      "section_id": "2-1958/s3",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act",
+      "number_and_year": "No. 2 of 1958",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "The transfer of ownership of a tea or rubber estate on or after the appointed day shall, subject to the provisions of subsections (2) and (3), be null and void unless- (a) a certificate of consent of the Board to such transfer has been previously obtained by the transferor",
+      "why_relevant": "The property is planted in tea, so the notary must ask whether a certificate of consent of the Fragmentation Board is a precondition of a valid transfer.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The corpus holds the Act as enacted. No amendment to s.3 is recorded before the matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Section 3(1) is verbatim and no amendment to it is recorded, but the corpus edition is the Act as enacted and the renaming worked by Act No. 20 of 2005 s.3 is recorded as not applied, so at the matter date the Act and the Board are the Tea, Rubber and Coconut Estates (Control of Fragmentation) Act and Board; the answer uses the 1958 names."
+    },
+    {
+      "provision_id": "PROV-M062-018",
+      "section_id": "2-1958/s25",
+      "act_id": "2-1958",
+      "formal_title": "Tea and Rubber Estates (Control of Fragmentation) Act",
+      "number_and_year": "No. 2 of 1958",
+      "section": "25",
+      "subsection": "definition of \"tea estate\"",
+      "relevant_excerpt": "means a tea estate of not less than one hundred acres in extent which, under the Tea Control Act*, is or is deemed to be an estate registered under that Act",
+      "why_relevant": "The extent limb of this definition decides the fragmentation question. A twenty acre tea property is below the hundred acre floor and so is not a \"tea estate\" for the purposes of s.3.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The corpus records amendments to s.25 by Act No. 20 of 2005, including two entries marked substitute_not_applied. The verifier should confirm that the hundred acre extent in the \"tea estate\" definition was not altered by that Act before the matter date.",
+      "verification_status": "unresolved",
+      "verifier_note": "The 'one hundred acres' figure cannot be relied on at the matter date: the corpus records that Act No. 20 of 2005 s.10(c) substitutes 'twenty hectares' for 'forty hectares' in this definition and that the substitution could not be applied because the as-enacted baseline reads 'one hundred acres', the intervening metricating instrument being neither in the chain nor held; the extent threshold in force in October 2020 therefore cannot be established from the corpus, although twenty acres (about 8.1 hectares) falls below the threshold on any of the readings."
+    },
+    {
+      "provision_id": "PROV-M062-019",
+      "section_id": "38-2014/s2",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "Notwithstanding any provision to the contrary in any other written law, the transfer of title of any land situated in Sri Lanka, shall be prohibited if such transfer is- (a) to a foreigner; or (b) to a company incorporated in Sri Lanka under the Companies Act where any foreign shareholding in such company, either direct or indirect, is fifty per cent or above; or (c) to a foreign company, unless exempted as provided in section 3.",
+      "why_relevant": "Because the transferee is a company, the notary must establish the level of direct and indirect foreign shareholding before the deed is drawn; at fifty per cent or above the transfer of title is prohibited.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Deemed to have come into operation on 1 January 2013 (s.1(2)) and amended by Act No. 3 of 2017 and Act No. 21 of 2018, all before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-020",
+      "section_id": "38-2014/s2",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "2",
+      "subsection": "(2)(a)",
+      "relevant_excerpt": "For the purpose of maintaining the legal validity of a transfer of land to a company incorporated in Sri Lanka under the Companies Act, with less than fifty per cent of foreign shareholding, the foreign shareholding of such company shall remain less than fifty per cent, for a minimum period of consecutive twenty (20) years from the date of such transfer.",
+      "why_relevant": "A continuing condition the notary should warn the company about: the transfer stays valid only while foreign shareholding is kept below half for twenty years from the transfer.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Introduced into s.2 before the matter date; in force in October 2020.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-021",
+      "section_id": "38-2014/s4",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "4",
+      "subsection": "(3)",
+      "relevant_excerpt": "it shall be the duty of the Registrar of Lands to confirm himself whether the foreign shareholding of such company is less than fifty per cent, by requiring the secretary of such company to submit documentary proof",
+      "why_relevant": "Registration will be held up unless the company secretary's documentary proof of shareholding is ready, so the notary should collect it as part of the registration step.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-022",
+      "section_id": "38-2014/s25",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "25",
+      "subsection": "definition of \"foreigner\"",
+      "relevant_excerpt": "means a person who is not a citizen of Sri Lanka",
+      "why_relevant": "Fixes the test the notary applies to the shareholders when measuring foreign shareholding under s.2(1)(b).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2014; no amendment recorded.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-023",
+      "section_id": "38-2014/s18",
+      "act_id": "38-2014",
+      "formal_title": "Land (Restrictions on Alienation) Act",
+      "number_and_year": "No. 38 of 2014",
+      "section": "18",
+      "subsection": null,
+      "relevant_excerpt": "Any alienation of land effected in contravention of the provisions of this Act, shall be void and shall have no effect in law.",
+      "why_relevant": "Shows the cost of getting the shareholding question wrong, and so why the check has to be made before rather than after execution.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2014; no amendment recorded.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-024",
+      "section_id": "23-1927/s7",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "7",
+      "subsection": "(1)",
+      "relevant_excerpt": "unless it is duly registered under this Chapter, or, if the land has come within the operation of the Land Registration Ordinance, 1877f, in the books mentioned in section 26 of that Ordinance, be void as against all parties claiming an adverse interest thereto on valuable consideration by virtue of any subsequent instrument which is duly registered under this Chapter",
+      "why_relevant": "Registration decides priority between competing deeds. It is why the notary searches the folio before drawing the deed and why he must register the company's deed promptly after attestation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927; no amendment to s.7 recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M062-901",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (8)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument to which at least two witnesses have not subscribed their signatures in letters.",
+      "why_relevant": "This is the corpus source for the two witnesses the answer requires. The excerpt of Prevention of Frauds Ordinance s.2 relied on by the researcher says only 'the witnesses'; rule (8) supplies the number.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (8) is untouched by the Notaries (Amendment) Acts No. 47 of 2011, No. 31 of 2022 and No. 6 of 2024, none of which lists rule (8) among the rules it amends, so it stood in this form in October 2020.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier: the answer's two-witness requirement had no supporting provision in force at the matter date."
+    },
+    {
+      "provision_id": "PROV-M062-904",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (12)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+      "why_relevant": "Supplies the manner of execution the answer describes - executants and witnesses signing before the notary and in one another's presence - from a rule that was in force at the matter date, which the post-2022 text of Prevention of Frauds Ordinance s.2 cannot.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (12) is not among the rules amended by the Notaries (Amendment) Acts No. 47 of 2011, No. 31 of 2022 or No. 6 of 2024, so it stood in this form in October 2020.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier as the matter-date source for the execution formality otherwise resting on the post-2022 text of PROV-M062-007."
+    },
+    {
+      "provision_id": "PROV-M062-902",
+      "section_id": "43-1982/s22",
+      "act_id": "43-1982",
+      "formal_title": "Stamp Duty Act",
+      "number_and_year": "No. 43 of 1982",
+      "section": "22",
+      "subsection": "(2)",
+      "relevant_excerpt": "Every notary public who attests an instrument of conveyance shall before doing so take all reasonable steps to satisfy himself that the value on which the stamp duty is paid represents the value of the property conveyed.",
+      "why_relevant": "A statutory duty on this notary in this transaction that the research map missed: before attesting the conveyance he must take all reasonable steps to satisfy himself that the value on which stamp duty is paid is the value of the property. It does not depend on the rate, which is not in the corpus.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "The Stamp Duty Act, No. 43 of 1982 is in the corpus as a consolidated principal enactment with no recorded amendment to s.22, and s.13 of the Stamp Duty (Special Provisions) Act, No. 12 of 2006 (PROV-M062-903) leaves its provisions operative for instruments relating to the transfer of immovable property.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier. The map recorded stamp duty as a corpus gap and cited only Notaries Ordinance rule (6), whose matter-date wording is unresolved; this section is in the corpus and imposes a duty on the notary directly."
+    },
+    {
+      "provision_id": "PROV-M062-903",
+      "section_id": "12-2006/s13",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "13",
+      "subsection": null,
+      "relevant_excerpt": "the provisions of the Stamp Duty Act, No. 43 of 1982, relating to the Imposition of Stamp Duty (other than any instrument relating to the transfer of immovable property, the transfer of motor vehicles or documents filed in Court), Exemptions and any other provision in the aforesaid Act, shall, in so far as the same are inconsistent with the provisions of this Act, have no operation",
+      "why_relevant": "Carves instruments relating to the transfer of immovable property out of the displacement of the 1982 Act, which is why the notary's duty in PROV-M062-902 still applies to a deed of transfer at the matter date.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2006 with no recorded amendment to s.13.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier to carry the temporal chain for PROV-M062-902."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M062-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks what a notary must do when a private company buys a planted twenty acre property. Every step in the answer comes from a statutory duty or restriction in the corpus: the search, description, consideration, attestation and registration duties in the Notaries Ordinance ss.31, 37 and 38; the form of the transaction under the Prevention of Frauds Ordinance s.2; the mode of execution and shareholder approval under the Companies Act ss.19 and 185; the agricultural land ceiling under the Land Reform Law ss.3, 5, 8 and 66; the fragmentation consent question under the Tea and Rubber Estates (Control of Fragmentation) Act ss.3 and 25; the foreign shareholding restriction under the Land (Restrictions on Alienation) Act ss.2, 4, 18 and 25; and priority of registration under the Registration of Documents Ordinance s.7. No judicial authority or Roman-Dutch doctrine is needed to state the steps. The conventional period over which title is traced in practice, and the stamp duty rate, are matters of practice and of a provincial instrument outside the corpus, and are recorded as corpus gaps rather than treated as part of the gold answer.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M062-Q01-01",
+          "issue": "What investigation of title the notary must carry out in the land registry before drawing the deed of transfer, and what he must do to secure the company's priority after execution.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M062-Q01-02",
+          "issue": "Whether the consent of the Tea and Rubber Estates (Control of Fragmentation) Board is a precondition of a valid transfer of a twenty acre tea property.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M062-Q01-03",
+          "issue": "Whether the acquisition offends the agricultural land ceiling, given that the shareholders of a private company are deemed to own the company's agricultural land in proportion to their shares.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M062-Q01-04",
+          "issue": "Whether the transfer of title to a company incorporated in Sri Lanka is prohibited or conditioned by the level of direct or indirect foreign shareholding in it.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M062-Q01-05",
+          "issue": "What company law authority the notary must see before execution, and who may lawfully sign the deed on behalf of the purchasing company.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M062-Q01-06",
+          "issue": "What the deed itself must contain and what the notary must do at and after execution as to description of the land, true consideration, attestation, stamp duty and registration.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M062-001",
+        "PROV-M062-002",
+        "PROV-M062-005",
+        "PROV-M062-007",
+        "PROV-M062-008",
+        "PROV-M062-009",
+        "PROV-M062-010",
+        "PROV-M062-012",
+        "PROV-M062-013",
+        "PROV-M062-014",
+        "PROV-M062-016",
+        "PROV-M062-017",
+        "PROV-M062-018",
+        "PROV-M062-019",
+        "PROV-M062-024",
+        "PROV-M062-901",
+        "PROV-M062-902",
+        "PROV-M062-904"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M062-003",
+        "PROV-M062-004",
+        "PROV-M062-006",
+        "PROV-M062-011",
+        "PROV-M062-015",
+        "PROV-M062-020",
+        "PROV-M062-021",
+        "PROV-M062-022",
+        "PROV-M062-023",
+        "PROV-M062-903"
+      ],
+      "background_provision_ids": [],
+      "legal_hop_count": 4,
+      "hop_count_basis": "The longest necessary chain runs through four linked steps in the ceiling issue: the definition of \"agricultural land\" in the Land Reform Law s.66 brings a planted tea property within the Law; s.3(1)(b) sets the fifty acre ceiling on a person; s.8 looks through the private company and deems each shareholder to own the land in proportion to his shares; and s.5(1) supplies the vesting consequence if a shareholder's deemed holding exceeds the ceiling. The answer also needs cross-enactment reasoning of the same depth in the fragmentation issue (s.3 read with the extent limb of the \"tea estate\" definition in s.25) and in the company issue (Prevention of Frauds Ordinance s.2 read with Companies Act s.19(1)(a), and s.185(1) read with the definition of major transaction in s.185(2)(a)).",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M062-014",
+          "to_provision_id": "PROV-M062-012",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M062-015",
+          "to_provision_id": "PROV-M062-013",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M062-013",
+          "to_provision_id": "PROV-M062-012",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M062-012",
+          "to_provision_id": "PROV-M062-016",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M062-018",
+          "to_provision_id": "PROV-M062-017",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M062-022",
+          "to_provision_id": "PROV-M062-019",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M062-019",
+          "to_provision_id": "PROV-M062-023",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M062-019",
+          "to_provision_id": "PROV-M062-020",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M062-019",
+          "to_provision_id": "PROV-M062-021",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M062-010",
+          "to_provision_id": "PROV-M062-009",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M062-011",
+          "to_provision_id": "PROV-M062-009",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M062-007",
+          "to_provision_id": "PROV-M062-008",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M062-024",
+          "to_provision_id": "PROV-M062-001",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M062-005",
+          "to_provision_id": "PROV-M062-024",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M062-002",
+          "to_provision_id": "PROV-M062-001",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M062-004",
+          "to_provision_id": "PROV-M062-006",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M062-003",
+          "to_provision_id": "PROV-M062-004",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M062-901",
+          "to_provision_id": "PROV-M062-007",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M062-904",
+          "to_provision_id": "PROV-M062-007",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M062-903",
+          "to_provision_id": "PROV-M062-902",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M062-902",
+          "to_provision_id": "PROV-M062-004",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Exotic Tea Trading (Private) Limited intends to purchase a tea estate situated in Bandarawela, twenty acres in extent (A.20 R.O P.0).",
+        "enriched_background": "Exotic Tea Trading (Private) Limited intends to purchase a tea estate situated in Bandarawela, twenty acres in extent (A.20 R.O P.0). The company was incorporated in Sri Lanka in 2015, has its registered office at No. 42, Perahera Mawatha, Colombo 3, and has three directors, Mr. K. A. Ranjith Perera, Mrs. S. N. Wijeratne and Mr. D. M. Fernando. Its articles state its objects as the growing, manufacture and export of tea, and they contain no provision authorising the acquisition of assets of the value in question. All 1,000,000 issued shares are held by four shareholders, every one of whom is a citizen of Sri Lanka, and no share is held, directly or indirectly, by any person who is not a citizen of Sri Lanka. Mr. Perera holds 600,000 of those shares; he already owns in his own name a cultivated tea property of eighteen acres at Yatiyantota, and none of the other three shareholders owns any other agricultural land. The property to be bought is called \"Meepilimana Watta\", depicted as Lot 1 in Plan No. 1147 dated 12 March 2016 made by W. G. Amarasinghe, Licensed Surveyor, and lies in the village of Bindunuwewa in Udukinda Korale within the Bandarawela Divisional Secretary's Division, the Bandarawela Urban Council limits and the District of Badulla. The whole twenty acres is under mature tea in bearing, it is separately assessed, and it is not part of any larger planted property. The seller is Mrs. L. M. Dias of No. 10, Welimada Road, Bandarawela, who says she became owner on Deed of Transfer No. 2104 dated 8 June 2003 attested by A. B. Silva, Notary Public; she has handed over a photocopy of that deed but no extract of the land registry folio and no receipt for any encumbrance. The price agreed between the parties is Rs. 96,000,000, and the audited value of all the company's assets immediately before the acquisition is Rs. 150,000,000. In October 2020 the board instructed you to investigate title, draw the deed of transfer, attest it and attend to its registration, and placed you in funds for the registration charges.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M062-Q01-001",
+            "fact": "The company was incorporated in Sri Lanka in 2015, has its registered office at No. 42, Perahera Mawatha, Colombo 3, and has three directors, Mr. K. A. Ranjith Perera, Mrs. S. N. Wijeratne and Mr. D. M. Fernando.",
+            "origin": "synthetic_neutral",
+            "reason": "The original background names the purchaser only as a private limited company. Identifying the directors makes the mode of execution determinate without changing any outcome.",
+            "activates_provision_ids": [
+              "PROV-M062-008"
+            ],
+            "counterfactual_effect": "With a single director the deed could be signed by that one director under s.19(1)(a)(ii) instead of two; with no identified directors the execution step could not be stated at all.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M062-Q01-002",
+            "fact": "All 1,000,000 issued shares are held by four shareholders, every one of whom is a citizen of Sri Lanka, and no share is held directly or indirectly by any person who is not a citizen of Sri Lanka.",
+            "origin": "synthetic_decisive",
+            "reason": "The transfer of title to a company is prohibited outright where direct or indirect foreign shareholding reaches fifty per cent, so the shareholding has to be pinned down before any advice on the transfer can be given.",
+            "activates_provision_ids": [
+              "PROV-M062-019",
+              "PROV-M062-021",
+              "PROV-M062-022",
+              "PROV-M062-023"
+            ],
+            "counterfactual_effect": "If half or more of the shares were held directly or indirectly by persons who are not citizens, the transfer of title would be prohibited and any deed would be void, and the notary would have to advise a long lease or an exemption instead of a purchase.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M062-Q01-003",
+            "fact": "Mr. Perera holds 600,000 of the 1,000,000 issued shares, he already owns in his own name a cultivated tea property of eighteen acres at Yatiyantota, and none of the other three shareholders owns any other agricultural land.",
+            "origin": "synthetic_decisive",
+            "reason": "Because the shareholders of a private company are deemed to own the company's agricultural land in proportion to their shares, the ceiling can only be tested once each shareholder's existing agricultural holding and share proportion are known.",
+            "activates_provision_ids": [
+              "PROV-M062-012",
+              "PROV-M062-013",
+              "PROV-M062-014",
+              "PROV-M062-016"
+            ],
+            "counterfactual_effect": "If the majority shareholder already held, say, forty-five acres of agricultural land, his deemed share of the twenty acres would push him past the fifty acre ceiling and the excess would vest in the Land Reform Commission, so the notary would have to advise a different shareholding or a smaller purchase.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M062-Q01-004",
+            "fact": "The property is called \"Meepilimana Watta\", is depicted as Lot 1 in Plan No. 1147 dated 12 March 2016 made by W. G. Amarasinghe, Licensed Surveyor, lies in the village of Bindunuwewa in Udukinda Korale within the Bandarawela Divisional Secretary's Division, the Bandarawela Urban Council limits and the District of Badulla, is wholly under mature tea in bearing, is separately assessed, and is not part of any larger planted property.",
+            "origin": "synthetic_decisive",
+            "reason": "The schedule to a deed affecting land must give boundaries, extent, situation, district, korale, Divisional Secretary's Division, local authority division and village, and the extent of the planted property also decides the fragmentation question.",
+            "activates_provision_ids": [
+              "PROV-M062-002",
+              "PROV-M062-014",
+              "PROV-M062-017",
+              "PROV-M062-018"
+            ],
+            "counterfactual_effect": "If the twenty acres were a divided part of a planted property of a hundred acres or more, the transfer would be a fragmentation of a tea estate and a certificate of consent of the Board would be needed before the deed could validly be executed.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M062-Q01-005",
+            "fact": "The seller is Mrs. L. M. Dias of No. 10, Welimada Road, Bandarawela, who says she became owner on Deed of Transfer No. 2104 dated 8 June 2003 attested by A. B. Silva, Notary Public, and who has produced only a photocopy of that deed, with no extract of the land registry folio and no receipt for any encumbrance.",
+            "origin": "synthetic_neutral",
+            "reason": "The question is about steps, so the scenario needs a starting point for the title investigation and a reason why the notary cannot simply accept what the seller says.",
+            "activates_provision_ids": [
+              "PROV-M062-001",
+              "PROV-M062-024"
+            ],
+            "counterfactual_effect": "If the seller had produced a current folio extract showing an unencumbered title, the search step would be one of confirmation rather than of discovery, but it would still have to be made.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M062-Q01-006",
+            "fact": "The price agreed between the parties is Rs. 96,000,000, and the audited value of all the company's assets immediately before the acquisition is Rs. 150,000,000.",
+            "origin": "synthetic_decisive",
+            "reason": "Whether the purchase is a major transaction turns on comparing the value of the assets acquired with half the value of the company's assets before the acquisition, and the notary must also state the true consideration in the deed.",
+            "activates_provision_ids": [
+              "PROV-M062-009",
+              "PROV-M062-010",
+              "PROV-M062-006"
+            ],
+            "counterfactual_effect": "At a price of, say, Rs. 40,000,000 against the same asset base the acquisition would fall below half the value of the company's assets, would not be a major transaction, and no special resolution or unanimous shareholder consent would be needed.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M062-Q01-007",
+            "fact": "The company's articles state its objects as the growing, manufacture and export of tea and contain no provision expressly authorising the acquisition of assets of this value.",
+            "origin": "synthetic_decisive",
+            "reason": "Closes off the fourth route to a major transaction, which is express authority in articles adopted at incorporation, and makes the objects question determinate.",
+            "activates_provision_ids": [
+              "PROV-M062-011",
+              "PROV-M062-009"
+            ],
+            "counterfactual_effect": "If the articles as adopted at incorporation had expressly authorised the company to enter into a transaction of this kind, no special resolution or written consent of all the shareholders would be required.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M062-Q01-008",
+            "fact": "In October 2020 the board instructed you to investigate title, draw the deed of transfer, attest it and attend to its registration, and placed you in funds for the registration charges.",
+            "origin": "synthetic_decisive",
+            "reason": "The duty to register with due diligence arises only once the notary has instructions to register and money to meet the expense, so the instruction and the funds have to be stated.",
+            "activates_provision_ids": [
+              "PROV-M062-005",
+              "PROV-M062-001"
+            ],
+            "counterfactual_effect": "Without instructions to register and funds for the expense, the notary would owe no statutory duty of diligence in registering, although the deed would then remain vulnerable to a later registered instrument.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "What must a notary retained by Exotic Tea Trading (Private) Limited do, before, at and after execution, to carry through the purchase of a twenty acre planted property at Bandarawela from Mrs. Dias, given that the buyer is a private company and the land is under tea?",
+        "rule": "The transaction can take effect only through a writing executed before a notary and attested by him (Prevention of Frauds Ordinance s.2). Before drawing such a deed the notary must search, or cause to be searched, the registers in the land registry to ascertain the state of the title and whether any prior deed has been registered (Notaries Ordinance s.31 rule (17)(a)); registration matters because an unregistered instrument is void against a party claiming an adverse interest for valuable consideration under a later registered instrument (Registration of Documents Ordinance s.7(1)). The deed must carry an accurate and clear description of the land showing boundaries, extent, situation, district, korale, Divisional Secretary's Division, local authority division, Grama Niladhari Division and village (Notaries Ordinance s.31 rule (16)(a)), and the notary must ascertain and set forth the true and full consideration (Notaries Ordinance s.38(1)), be assured that the required stamp duty is provided (Notaries Ordinance s.31 rule (6)), attest without delay and sign and seal the attestation (Notaries Ordinance s.31 rule (20)), and, having instructions and funds, use due diligence in registering the deed (Notaries Ordinance s.37). Where the buyer is a company, an obligation that a natural person would have to make in a notarially attested writing may be entered into on behalf of the company by two directors, by a sole director, by a person allowed by the articles or by an attorney appointed by the company, signing under the company's name and notarially executed (Companies Act s.19(1)(a)); the company may not enter into a major transaction unless it is approved by special resolution, made contingent on one, consented to in writing by all shareholders, or expressly authorised by articles adopted at incorporation (Companies Act s.185(1)), a major transaction including the acquisition of assets worth more than half the value of the company's assets before the acquisition (Companies Act s.185(2)(a)); and objects stated in the articles operate as a restriction on the company's business (Companies Act s.17(1)). Land that is used or capable of being used for agriculture is agricultural land (Land Reform Law s.66), the ceiling on non-paddy agricultural land owned by any person is fifty acres (Land Reform Law s.3(1)(b)), the shareholders of a private company are deemed to own the company's agricultural land in proportion to their shares (Land Reform Law s.8), and land acquired in excess of the ceiling after the commencement of that Law vests in the Land Reform Commission and is held under a statutory lease (Land Reform Law s.5(1)). A transfer of ownership of a tea estate without a prior certificate of consent of the Board is null and void (Tea and Rubber Estates (Control of Fragmentation) Act s.3(1)), but a tea estate for that purpose is one of not less than one hundred acres registered or deemed registered under the Tea Control Act (s.25). Finally, transfer of title of land to a company incorporated in Sri Lanka is prohibited where direct or indirect foreign shareholding is fifty per cent or above (Land (Restrictions on Alienation) Act s.2(1)(b)), a foreigner being a person who is not a citizen of Sri Lanka (s.25); an alienation in contravention of that Act is void (s.18); the foreign shareholding must be kept below half for twenty years from the transfer (s.2(2)(a)); and the Registrar of Lands must satisfy himself of the shareholding on documentary proof from the company secretary (s.4(3)).",
+        "application": "Take the steps in that order. First, obtain from the company its certificate of incorporation, its articles and the register of shareholders, and establish that all four shareholders are citizens, so that foreign shareholding is nil and s.2(1)(b) of the Land (Restrictions on Alienation) Act does not prohibit the transfer; keep the company secretary's documentary proof of shareholding for the Registrar under s.4(3), and warn the board that under s.2(2)(a) foreign shareholding must stay below half for twenty years or the transfer becomes void. Second, apply the ceiling. The twenty acres under mature tea is agricultural land within Land Reform Law s.66, and because the buyer is a private company s.8 deems each shareholder to own it in proportion to his shares, so Mr. Perera, holding sixty per cent, will be deemed to own twelve of the twenty acres; added to his existing eighteen acres at Yatiyantota that is thirty acres, below the fifty acre ceiling in s.3(1)(b), and no part of the land will vest under s.5(1). Confirm the same for the other three shareholders. Third, on fragmentation, the property is twenty acres and is not part of any larger planted property, so it is not a tea estate of not less than one hundred acres within s.25, and no certificate of consent under s.3(1) is required; had it been a divided part of a larger estate, consent would have had to be obtained first. Fourth, search the land registry folio for the land yourself rather than relying on the photocopy of Deed No. 2104 produced by the seller, trace the seller's title and any mortgages, leases, life interests or other encumbrances, and check the plan and the survey against the folio. Fifth, before execution obtain from the board a resolution authorising the purchase and authorising named directors to sign; because the price of Rs. 96,000,000 exceeds half the Rs. 150,000,000 value of the company's assets before the acquisition, the purchase is a major transaction under s.185(2)(a), and the articles adopted at incorporation give no express authority, so a special resolution of shareholders, or written consent of all of them, must be obtained and retained under s.185(1). Sixth, draw the deed with a schedule giving the name, boundaries, extent, plan number, village, korale, Divisional Secretary's Division, Urban Council limits and District as required by rule (16)(a), state the true price of Rs. 96,000,000 as required by s.38(1), see that stamp duty is provided, and have the deed signed under the company's name by two of the three directors in the manner allowed by s.19(1)(a) and by the seller, before you and two witnesses. Seventh, attest without delay, sign and seal the attestation, and then, having been instructed and put in funds, register the deed promptly in the Bandarawela land registry so that the company takes priority under s.7(1) of the Registration of Documents Ordinance and you do not fall foul of s.37.",
+        "conclusion": "The notary should investigate the shareholding of the purchasing company and confirm that no foreign shareholding brings the transfer within the prohibition, apply the fifty acre agricultural ceiling through the shareholders of the private company and satisfy himself that no shareholder's deemed holding exceeds it, satisfy himself that a twenty acre property is not a tea estate needing a fragmentation certificate, search the land registry and investigate the seller's title and encumbrances before drawing the deed, obtain the board resolution and, this being a major transaction, the special resolution or unanimous written consent of shareholders, draw the deed with a proper schedule and the true consideration, see to stamp duty, have it executed under the company's name by two directors before himself and two witnesses, attest it without delay and register it promptly. On the facts as stated none of the statutory prohibitions bars this purchase, so the notary may proceed once those checks and authorities are in hand."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M062-Q01-001",
+          "claim_text": "A purchase of immovable property is of no force in law unless it is made by a writing executed in the presence of a notary and two witnesses and attested by the notary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-007",
+            "PROV-M062-901",
+            "PROV-M062-904"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M062-Q01-002",
+          "claim_text": "Before drawing a deed affecting any interest in land the notary must search, or cause to be searched, the registers in the land registry to ascertain the state of the title and whether any prior deed affecting the land has been registered.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-003",
+          "claim_text": "An instrument that is not duly registered is void against a party claiming an adverse interest for valuable consideration under a later instrument that is duly registered.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-024"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-004",
+          "claim_text": "The deed must embody, in itself or in an annexed schedule, an accurate and clear description of the land showing its boundaries, extent and situation, specifying the district, korale, Divisional Secretary's Division, local authority division, Grama Niladhari Division and village.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-005",
+          "claim_text": "The notary must endeavour to ascertain the true and full consideration for the deed and set it forth in the deed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-006",
+          "claim_text": "The notary must not attest the deed unless he has an assurance that the required stamp duty is provided, and he must attest without delay and sign and seal the attestation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-003",
+            "PROV-M062-004",
+            "PROV-M062-902",
+            "PROV-M062-903"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M062-Q01-007",
+          "claim_text": "A notary who has instructions to register a deed he attested and a sufficient sum to meet the expense must use due diligence in effecting registration.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-008",
+          "claim_text": "An obligation that a natural person would have to enter into by notarially attested writing may be entered into for a company by two directors, a sole director, a person allowed by the articles, or an attorney appointed by the company, signing under the company's name, and must be notarially executed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-009",
+          "claim_text": "A company may not enter into a major transaction unless it is approved by special resolution, contingent on such approval, consented to in writing by all shareholders, or expressly authorised by a provision included in its articles at incorporation; an acquisition of assets worth more than half the value of the company's assets before the acquisition is a major transaction.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-009",
+            "PROV-M062-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-010",
+          "claim_text": "Land used or capable of being used for agriculture is agricultural land, the ceiling on agricultural land that is not exclusively paddy is fifty acres for any person, and the shareholders of a private company are deemed to own the company's agricultural land in proportion to their shares.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-014",
+            "PROV-M062-012",
+            "PROV-M062-013",
+            "PROV-M062-015"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-011",
+          "claim_text": "Where a person becomes owner of agricultural land in excess of the ceiling after the commencement of the Land Reform Law, the excess vests in the Land Reform Commission and is held by that person under a statutory lease.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-016"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-012",
+          "claim_text": "A transfer of ownership of a tea estate is null and void unless a certificate of consent of the Board was previously obtained by the transferor, and a tea estate for this purpose is one of not less than one hundred acres in extent registered or deemed registered under the Tea Control Act.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-017",
+            "PROV-M062-018"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M062-Q01-013",
+          "claim_text": "Transfer of title of land to a company incorporated in Sri Lanka is prohibited where direct or indirect foreign shareholding in it is fifty per cent or above, a foreigner being a person who is not a citizen of Sri Lanka, and an alienation in contravention of that Act is void.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-019",
+            "PROV-M062-022",
+            "PROV-M062-023"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-014",
+          "claim_text": "Where title passes to a company with less than fifty per cent foreign shareholding, that shareholding must remain below half for twenty years from the transfer, and the Registrar of Lands must confirm the position on documentary proof furnished by the company secretary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M062-020",
+            "PROV-M062-021"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-015",
+          "claim_text": "The notary must first call for the company's certificate of incorporation, articles and share register; here all four shareholders are citizens of Sri Lanka and no share is held directly or indirectly by a person who is not a citizen, so the transfer of title to the company is not prohibited.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M062-019",
+            "PROV-M062-022"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M062-Q01-002",
+            "FACT-M062-Q01-001"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-016",
+          "claim_text": "The notary should keep the company secretary's documentary proof of shareholding for production at registration and warn the board that foreign shareholding must be kept below half for twenty years from the transfer.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M062-020",
+            "PROV-M062-021"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M062-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-017",
+          "claim_text": "The twenty acres under mature tea is agricultural land, and since the buyer is a private company the ceiling is tested against each shareholder: Mr. Perera's sixty per cent shareholding makes him the deemed owner of twelve of the twenty acres, which with his existing eighteen acres comes to thirty acres, below the fifty acre ceiling, so no part of the land vests in the Commission.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M062-014",
+            "PROV-M062-012",
+            "PROV-M062-013",
+            "PROV-M062-016"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M062-Q01-003",
+            "FACT-M062-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-018",
+          "claim_text": "The property is twenty acres and is not part of any larger planted property, so it is not a tea estate of not less than one hundred acres and no certificate of consent of the Fragmentation Board is needed for the transfer.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M062-018",
+            "PROV-M062-017"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M062-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M062-Q01-019",
+          "claim_text": "The notary must search the land registry folio himself rather than rely on the photocopy of Deed No. 2104 produced by the seller, and must trace the seller's title and any registered encumbrances before the deed is drawn.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M062-001",
+            "PROV-M062-024"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M062-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-020",
+          "claim_text": "At Rs. 96,000,000 the price exceeds half of the Rs. 150,000,000 value of the company's assets before the acquisition, so the purchase is a major transaction, and since the articles adopted at incorporation give no express authority the notary must see a special resolution or the written consent of all the shareholders in addition to the board resolution authorising the signatories.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M062-010",
+            "PROV-M062-009",
+            "PROV-M062-011"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M062-Q01-006",
+            "FACT-M062-Q01-007"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M062-Q01-021",
+          "claim_text": "The deed should be drawn with a schedule giving the name of the land, its boundaries, extent, plan number, village, korale, Divisional Secretary's Division, Urban Council limits and District, and should state the true price of Rs. 96,000,000.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M062-002",
+            "PROV-M062-006"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M062-Q01-004",
+            "FACT-M062-Q01-006"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-022",
+          "claim_text": "The deed should be signed under the company's name by two of the three directors, together with the seller, in the presence of the notary and two witnesses, and the notary must then attest it without delay and sign and seal the attestation.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M062-008",
+            "PROV-M062-007",
+            "PROV-M062-004",
+            "PROV-M062-901",
+            "PROV-M062-904"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M062-Q01-001"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-023",
+          "claim_text": "Having been instructed to register and placed in funds, the notary must register the deed promptly in the Bandarawela land registry to secure the company's priority.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M062-005",
+            "PROV-M062-024"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M062-Q01-008"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M062-Q01-024",
+          "claim_text": "On the facts stated none of the statutory prohibitions bars the purchase, so the notary may proceed once the shareholding check, the ceiling check, the title search and the company authorities are in hand, and must then draw, execute, attest and register the deed in the manner required.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M062-019",
+            "PROV-M062-012",
+            "PROV-M062-013",
+            "PROV-M062-018",
+            "PROV-M062-001",
+            "PROV-M062-009",
+            "PROV-M062-008",
+            "PROV-M062-005"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M062-Q01-002",
+            "FACT-M062-Q01-003",
+            "FACT-M062-Q01-004",
+            "FACT-M062-Q01-006",
+            "FACT-M062-Q01-008"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Two indispensable provisions are unresolved on the corpus. (1) The 'tea estate' definition in Tea and Rubber Estates (Control of Fragmentation) Act s.25 (PROV-M062-018) is held only in its as-enacted 'one hundred acres' form; the corpus records that Act No. 20 of 2005 s.10(c) substitutes 'twenty hectares' for 'forty hectares' and that the substitution could not be applied, so the extent threshold in force in October 2020 cannot be stated and the fragmentation limb of the answer rests on a superseded figure (the outcome, that twenty acres is below the threshold, holds on any reading). (2) Prevention of Frauds Ordinance s.2 (PROV-M062-007) is held only in the form given by Act No. 30 of 2022 and Act No. 4 of 2024, and the pre-2022 wording is not recoverable from the corpus. Notaries Ordinance rule (6) (PROV-M062-003) is in the same position for stamp duty, and the answer's board-resolution step rests on rule (14) in its post-2022 form, which is not cited. A lawyer must settle the October 2020 texts and the fragmentation threshold before this can become gold.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

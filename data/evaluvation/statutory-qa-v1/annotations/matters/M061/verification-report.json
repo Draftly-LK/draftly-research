@@ -1,0 +1,163 @@
+{
+  "benchmark_matter_id": "M061",
+  "verifier": "verifier-M061",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-05T09:12:00Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M061-001",
+      "decision": "verified",
+      "note": "15-1876/s2 checked verbatim. The carve-out for Kandyans, Muslims and Tamils of the Northern Province subject to the Tesawalamai is stated correctly and the supporting role is right."
+    },
+    {
+      "provision_id": "PROV-M061-002",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim, but the corpus body of s.3 has lost the defined-term labels, so the excerpt does not itself say which term it defines; the link to \"immovable property\" is confirmed by the corpus definition index (defs 15-1876 and edges 15-1876/s21 both return 15-1876/s3), not by the excerpt."
+    },
+    {
+      "provision_id": "PROV-M061-003",
+      "decision": "partially_verified",
+      "note": "The excerpt and the why_relevant both stop at the death condition and omit the second limb of s.20, that the deceased must have been unmarried at death or, if married, married after the proclamation. Satisfied on these facts but it should be stated."
+    },
+    {
+      "provision_id": "PROV-M061-004",
+      "decision": "verified",
+      "note": "s.21(1) checked verbatim; it governs inheritance ab intestato to immovable property in Sri Lanka irrespective of domicile, which is the role claimed."
+    },
+    {
+      "provision_id": "PROV-M061-005",
+      "decision": "verified",
+      "note": "s.22 checked verbatim; the one-half to the surviving spouse is unqualified, so Lochana in 2009 and Rohan Jayaweera in 2012 each take a half."
+    },
+    {
+      "provision_id": "PROV-M061-006",
+      "decision": "verified",
+      "note": "s.23 checked verbatim; the spouse's half is carved out first and the order is descendants, ascendants, collaterals."
+    },
+    {
+      "provision_id": "PROV-M061-007",
+      "decision": "verified",
+      "note": "s.24 checked verbatim. Nothing in the section distinguishes a child of a first marriage, so Neesha shares equally with Kasun, Kavindu and Piyumi."
+    },
+    {
+      "provision_id": "PROV-M061-008",
+      "decision": "partially_verified",
+      "note": "Correct section for Kasun's 2015 intestacy, but the excerpt omits the closing sentence of s.25 (the surviving parent takes the whole if no full or half brother or sister is alive at the death), which is the exception that has to be checked before the half and half split is applied. It is not triggered, because Kavindu and Piyumi survived."
+    },
+    {
+      "provision_id": "PROV-M061-009",
+      "decision": "verified",
+      "note": "s.26 checked verbatim including the \"balf-blood\" scan artefact, which the researcher flagged rather than silently corrected."
+    },
+    {
+      "provision_id": "PROV-M061-010",
+      "decision": "partially_verified",
+      "note": "Excerpt verbatim but truncated before the operative consequence of the proviso (half only to the half-siblings, the other half per capita to the next ascendants), and neither the corpus nor the background says whether a maternal ascendant of Neesha was alive on 20 May 2012, so the whole-taking result is an assumption rather than a verified outcome."
+    },
+    {
+      "provision_id": "PROV-M061-011",
+      "decision": "partially_verified",
+      "note": "The excerpt drops the opening words \"Except when otherwise expressly provided\". Sections 24 and 25 do expressly provide for two of the three divisions where s.30 is invoked, so s.30 is confirmatory there rather than operative."
+    },
+    {
+      "provision_id": "PROV-M061-012",
+      "decision": "partially_verified",
+      "note": "The corpus holds only the consolidated 7-1840/s2 carrying amendment events of 1947, 2022 and 2024, not the text in force on 12 January 2006; and s.2(1) names sale, purchase, transfer, assignment and mortgage without naming a gift, so the deed is caught only as a \"transfer\". Background role only, and no share in the answer turns on it."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M061-901",
+      "reason": "15-1876/s36, that silences in the Ordinance are governed by the rules of Roman-Dutch law as it prevailed in North Holland; excerpt checked verbatim. The one link in the chain that Part III does not regulate is the effect of Deed of Gift No.1100, an irrevocable gift reserving a life interest to the donor. The researcher recorded that gap in prose only. Section 36 is the provision that identifies where the question goes and marks the boundary of the statutory answer, so it has been added and referenced as a supporting provision on both questions and on claim CL-M061-Q01-007."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M061-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "Kept. Every step of the devolution after 2007 is governed by MRIO ss.20 to 30, all checked verbatim, and the pedigree follows from them. The one non-statutory link, the effect of the reserved life interest, is outcome-neutral on these facts: Sujeewa Jayamini died on 21 April 2007, before Dinesh, so on either view of when dominium passed he held the entirety at his death on 23 November 2009. That is recorded as a disagreement for the lawyer rather than treated as settled. Issue ISS-M061-Q01-01 moved to disputed and claim CL-M061-Q01-007 to disputed. A reasoning edge PROV-M061-010 to PROV-M061-008 was added because the hop basis asserted a dependency between the 2012 and 2015 steps that no edge expressed. Hop count of 4 confirmed."
+    },
+    {
+      "benchmark_question_id": "M061-Q02",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "Kept. The arithmetic was recomputed independently and agrees: Dinesh 2009, Lochana one-half and four children one-eighth each; Neesha 2012, Rohan one-sixteenth and the three paternal half-siblings one forty-eighth each, so each held seven forty-eighths; Kasun 2015 holding seven forty-eighths, Lochana seven ninety-sixths and Kavindu and Piyumi seven one hundred and ninety-seconds each. The four shares 110/192, 35/192, 35/192 and 12/192 sum to 192/192. The order of deaths was re-checked: Nimali died on 15 July 2010, after Dinesh on 23 November 2009, so both of Neesha's parents had failed by 20 May 2012 and s.26 rather than s.25 governs her estate. Same edge addition and hop count as Q01."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "authority_requirement",
+      "researcher_position": "Q01 and Q02 are statute_only because the effect of Deed of Gift No.1100 is supplied by the recited terms of the instrument rather than by a rule of law that has to be proved.",
+      "verifier_position": "That an irrevocable gift reserving a life interest vests dominium in the donee at execution, and that the life interest determines on the donor's death, is a rule of Roman-Dutch law, and MRIO s.36 expressly sends the Ordinance's silences there. On these facts it changes nothing, because Sujeewa died before Dinesh and he held the entirety at his death on either view, so statute_only has been left in place. If the lawyer holds that a gold answer may not rest on any unstated non-statutory rule, both questions should be reclassified mixed_statute_and_case and reserved.",
+      "supporting_sources": [
+        "15-1876/s36",
+        "7-1840/s2"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "unresolved_fact_base_for_indispensable_provision",
+      "researcher_position": "The s.29 proviso is recorded as an assumption in the gold answer and the half-siblings take the whole collateral portion.",
+      "verifier_position": "Section 29 is indispensable to both questions and its proviso turns on a fact the corpus and the background are both silent about. If any maternal grandparent or higher maternal ascendant of Neesha Gamage was alive on 20 May 2012, her half-siblings take one-half of the collateral portion only and the ascendants take the other half per capita, which changes Kavindu's, Piyumi's and Lochana's fractions and adds a taker to the pedigree. The provision is marked partially_verified for that reason.",
+      "supporting_sources": [
+        "15-1876/s29",
+        "15-1876/s31"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "personal_law_assumption",
+      "researcher_position": "The general law applies because nothing in the facts brings the family within Kandyan law, Muslim law or the Thesawalamai.",
+      "verifier_position": "Confirmed that 15-1876/s2 only carves those systems out and that the corpus holds no provision positively applying the general law to a given family. The Kandyan Succession Ordinance 23-1917 and the Muslim Intestate Succession Ordinance 10-1931 are both in the corpus and either would displace the map end to end. Stating the assumption in the gold answer is the right handling, but every share depends on it.",
+      "supporting_sources": [
+        "15-1876/s2",
+        "23-1917",
+        "10-1931"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M061-Q01-007, marked disputed: 7-1840/s2 goes to the form of the deed only. It does not say what interest a gift passes, nor that a reserved life interest determines on the donor's death. That part of the claim rests on the recited terms of the instrument and, through MRIO s.36, on Roman-Dutch law outside the corpus. Left in place rather than rejected because it is outcome-neutral on these facts.",
+      "Every other claim in both questions was traced to its cited provisions and holds. The conclusion claims CL-M061-Q01-011 and CL-M061-Q02-007 to 009 were re-derived from the section texts and the background dates independently of the researcher's working."
+    ],
+    "temporal_issues": [
+      "PROV-M061-012: the corpus text of 7-1840/s2 is the consolidated version carrying the 2022 and 2024 amendments, including the thumb-impression requirement that did not exist when Deed of Gift No.1100 was executed on 12 January 2006. The corpus does not hold the 2006 version. The researcher flagged this; it is confirmed and is why the provision is partially_verified.",
+      "MRIO ss.2, 3 and 20 to 36 all show in_force_from_year 1876 and no amendment event, so the same text applies at each of the four deaths in 2007, 2009, 2012 and 2015 and at the reference date of 2020-10. No later amendment was wrongly relied on and no earlier version is needed.",
+      "Order of deaths re-checked independently: Nimali died on 15 July 2010, after Dinesh on 23 November 2009, so at Neesha's death on 20 May 2012 both her parents had failed and s.26 applies rather than s.25. The researcher's sequencing is right.",
+      "The Revocation of Irrevocable Deeds of Gift on the Ground of Gross Ingratitude Act No. 5 of 2017 is in the corpus and post-dates the 2006 deed. The researcher rejected it; that is right, and no ingratitude is alleged."
+    ],
+    "missing_definitions_or_exceptions": [
+      "The s.20 second limb, unmarried at death or married after the proclamation, is omitted from the excerpt and from claim CL-M061-Q01-002. Satisfied on these facts.",
+      "The closing sentence of s.25, that the surviving parent takes the whole if no full or half brother or sister is alive at the death, is omitted from the excerpt. Not triggered, because Kavindu and Piyumi survived Kasun.",
+      "The consequence of the s.29 proviso, half only with the other half per capita to the next ascendants, is omitted from the excerpt.",
+      "The opening qualification of s.30, \"Except when otherwise expressly provided\", is omitted from the excerpt.",
+      "Claim CL-M061-Q02-003 states s.25 without the half-blood siblings on the deceased parent's side. Immaterial here, because Neesha, the only such half-sibling of Kasun, died in 2012 without issue.",
+      "Sections 27 and 28 were read and are correctly not reached: Neesha left no full siblings and her half-siblings were all on the father's side, which is the case s.29 covers. Section 31 was read and is not reached because siblings survived. Section 35 on collation was read and does not bite, because Sujeewa Jayamini's own estate is not in issue and she had gifted Lot A away in 2006.",
+      "The edges command returns nothing in either direction for 15-1876/s22, s24, s25, s26, s29 and s30, so the statute graph offers no cross-reference the researcher could have missed. The only edge in Part III is s.21 to s.3 defining \"immovable property\", which the map already carries.",
+      "Corpus gap the researcher did not record: no partition statute appears in the acts listing, so the Partition Law No. 21 of 1977 is not in this corpus and the conclusiveness of the final decree of 20 October 2001 that vested Lot A in Sujeewa Jayamini has no statutory source here. The answer takes it from the background, which is acceptable, but it is a second non-statutory link alongside the deed of gift."
+    ],
+    "case_law_dependence": [
+      "No case is cited anywhere in either gold answer, in any claim, or in the research notes. Both gold_answer_draft blocks were read in full to confirm this.",
+      "The latent non-statutory dependence is Roman-Dutch rather than case law: the effect of a donation reserving a usufruct. MRIO s.36 has been added as PROV-M061-901 to make that boundary explicit on the face of the map."
+    ],
+    "enrichment_issues": [
+      "enrichment.applied is false for both questions, enriched_background is null and added_facts is empty, so there is no synthetic fact to justify and nothing to leak.",
+      "original_background in both questions matches effective_background_normalized in candidates/matters/M061.json word for word."
+    ],
+    "duplicate_or_leak_issues": [
+      "The two questions share one background and divide cleanly: Q01 asks for the pedigree, Q02 for the fractions. They rest on the same provisions but the answers are not duplicates.",
+      "Neither question text names a statute, a section number or the conclusion."
+    ]
+  },
+  "lawyer_questions": [
+    "May a gold answer rest on the Roman-Dutch effect of an irrevocable deed of gift reserving a life interest to the donor, which no provision in the corpus supplies and which MRIO s.36 expressly refers out to Roman-Dutch law? If not, both M061-Q01 and M061-Q02 must be reclassified mixed_statute_and_case and reserved, and the matter yields nothing. If so, please confirm the reasoning relied on here, that the point is outcome-neutral because Sujeewa Jayamini died on 21 April 2007 and Dinesh therefore held the entirety at his death in 2009 on either view of when dominium passed.",
+    "Should the s.29 proviso be answered on the stated assumption that no maternal ascendant of Neesha Gamage survived her on 20 May 2012, or should the shares be given in the alternative? The proviso changes three of the four final fractions.",
+    "Is the assumption that the general law and not Kandyan law, Muslim law or the Thesawalamai governs this family acceptable in a gold answer where the background gives no personal-law facts at all?",
+    "Does the final decree of 20 October 2001 need a statutory anchor for the pedigree, given that the Partition Law No. 21 of 1977 is not in this corpus?"
+  ]
+}

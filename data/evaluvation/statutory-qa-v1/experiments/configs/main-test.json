@@ -1,0 +1,815 @@
+{
+  "run": "main-test",
+  "split": "test",
+  "gold_set": "main",
+  "timestamp": "2026-09-04T23:49:25Z",
+  "git_commit": "e491f2d26f84163ff2a82a08e7f3619051b436bb",
+  "corpus_fingerprint": "f119236b806f0ff2e3d905c120e3a7319a497e8b7eea085655ef17e34fce9d30",
+  "corpus_manifest_sha256": "8e27dde52697da5e2b41b94d6fcdad4f2a966b9f5ede71072f26b62aa871b356",
+  "public_input_sha256": "0bd0fc84691a6ab70ba64aa10af940b3fb7ed0390c20b6b801b75962a4b3a981",
+  "split_file_sha256": "097ef264b3a54ab054c06a64b450e143696caa7043bbe7d5df69e3ba959513bc",
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "embedding_query_prefix": "Represent this sentence for searching relevant passages: ",
+  "chunking": {
+    "chars": 1500,
+    "stride": 1200,
+    "max_chunks": 12
+  },
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "reranker_max_length": 512,
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "tokenizer": "[0-9a-z]+ casefold, closed-class stopwords"
+  },
+  "query_format": "normalized background (enriched where applied) + ' ' + question",
+  "overrides": {
+    "field_weights": {
+      "heading": 4.0,
+      "act_title": 3.0
+    },
+    "rrf_k": 60,
+    "acts_retained": 3,
+    "seeds": 15,
+    "graph_support_weight": 0.15
+  },
+  "environment": {
+    "python": "3.12.12",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.13.0+cpu",
+    "transformers": "5.15.0",
+    "sentence_transformers": "6.0.0",
+    "device": "cpu"
+  },
+  "systems": [
+    {
+      "system": "S1_bm25",
+      "config": {
+        "system": "bm25",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": false,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 0.63,
+      "mean_latency_ms": 15.6
+    },
+    {
+      "system": "S2_bm25f",
+      "config": {
+        "system": "bm25f",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 0.56,
+      "mean_latency_ms": 14.0
+    },
+    {
+      "system": "S3_dense",
+      "config": {
+        "system": "dense",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 28.25,
+      "mean_latency_ms": 706.2
+    },
+    {
+      "system": "S4_hybrid_rrf",
+      "config": {
+        "system": "hybrid",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 0.67,
+      "mean_latency_ms": 16.7
+    },
+    {
+      "system": "S5_hybrid_rerank",
+      "config": {
+        "system": "hybrid_rerank",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 276.36,
+      "mean_latency_ms": 6908.8
+    },
+    {
+      "system": "S6_hier",
+      "config": {
+        "system": "hier",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": false,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 1.43,
+      "mean_latency_ms": 34.7
+    },
+    {
+      "system": "S7_bundle",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 37.28,
+      "mean_latency_ms": 931.6
+    },
+    {
+      "system": "A1_no_act_routing",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": false,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 43.74,
+      "mean_latency_ms": 1093.1
+    },
+    {
+      "system": "A2_no_field_weights",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": false,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 5.35,
+      "mean_latency_ms": 133.4
+    },
+    {
+      "system": "A3_no_dense",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": false,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 34.07,
+      "mean_latency_ms": 851.4
+    },
+    {
+      "system": "A4_no_temporal",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": false,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 2.87,
+      "mean_latency_ms": 71.5
+    },
+    {
+      "system": "A5_no_defines",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 1.28,
+      "mean_latency_ms": 31.9
+    },
+    {
+      "system": "A6_no_excepts_qualifies",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 1.16,
+      "mean_latency_ms": 29.0
+    },
+    {
+      "system": "A7_no_xref_procedural",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 1.19,
+      "mean_latency_ms": 29.6
+    },
+    {
+      "system": "A8_no_amends",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires"
+        ],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 1.27,
+      "mean_latency_ms": 31.7
+    },
+    {
+      "system": "A9_no_rerank",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [
+          "defines",
+          "excepts",
+          "qualifies",
+          "cross_references",
+          "procedurally_requires",
+          "amends"
+        ],
+        "temporal_filter": true,
+        "rerank": false,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 1.23,
+      "mean_latency_ms": 30.7
+    },
+    {
+      "system": "A10_no_expansion",
+      "config": {
+        "system": "bundle",
+        "top_k": 20,
+        "field_weights": {
+          "act_title": 3.0,
+          "part_heading": 1.0,
+          "heading": 4.0,
+          "body": 1.0,
+          "defined_terms": 2.0,
+          "xref_text": 0.5
+        },
+        "rrf_k": 60,
+        "rrf_weights": [
+          1.0,
+          1.0
+        ],
+        "candidate_depth": 100,
+        "use_dense": true,
+        "use_field_weights": true,
+        "acts_retained": 3,
+        "act_routing": true,
+        "act_score_from_sections": 5,
+        "seeds": 15,
+        "expansion_relations": [],
+        "temporal_filter": true,
+        "rerank": true,
+        "rerank_query": "question+bg",
+        "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "rerank_bg_chars": 400,
+        "graph_support_weight": 0.15,
+        "expansion_decay": 0.6,
+        "subqueries": null
+      },
+      "queries": 40,
+      "seconds": 1.36,
+      "mean_latency_ms": 33.9
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "benchmark_matter_id": "M062",
+  "source_matter_id": "P11-Q02-M01",
+  "grouping_key": "P11-Q02-M01",
+  "paper_no": 11,
+  "question_no": 2,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "Exotic Tea Trading (Private) Limited intends to purchase a tea estate situated in Bandarawela, twenty acres in extent (A.20 R.O P.0).",
+    "normalized": "Exotic Tea Trading (Private) Limited intends to purchase a tea estate situated in Bandarawela, twenty acres in extent (A.20 R.O P.0).",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P11-Q02-P01"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M062-Q01",
+      "atomic_id": "P11-Q02-P01",
+      "part_uid": "paper-11/q2/1",
+      "part_id": "1",
+      "item_id": null,
+      "marks": 6,
+      "pdf_page": 44,
+      "question_original": "What steps should you take as the Notary on behalf of the said company?",
+      "question_normalized": "What steps should you take as the Notary on behalf of the said company?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "Exotic Tea Trading (Private) Limited intends to purchase a tea estate situated in Bandarawela, twenty acres in extent (A.20 R.O P.0).",
+      "effective_background_normalized": "Exotic Tea Trading (Private) Limited intends to purchase a tea estate situated in Bandarawela, twenty acres in extent (A.20 R.O P.0).",
+      "source_quote": "1) Exotic Tea Trading (Private) Limited intends to purchase a tea estate situated in Bandarawela,\ntwenty acres in extent (A.20 R.O P.0). What steps should you take as the Notary on behalf of\nthe said company?\n(6 marks)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "property_identity",
+        "relevant_document",
+        "transaction_sequence",
+        "consideration_or_value"
+      ]
+    }
+  ],
+  "matter_reference_date": "2020-10",
+  "exam_session": "OCTOBER 2020",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

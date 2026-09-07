@@ -1,0 +1,580 @@
+{
+  "benchmark_matter_id": "M108",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M108",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T23:17:20Z",
+    "verification_agent": "verifier-M108",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T23:26:00Z"
+  },
+  "matter_reference_date": "2018-04",
+  "matter_reference_date_basis": "exam_session 'APRIL 2018' recorded in candidates/matters/M108.json; every provision relied on was in force well before that date.",
+  "corpus_gaps": [
+    "The corpus text of Apartment Ownership Law s.26 (interpretation) has lost the defined-term lead-ins, so each definition appears as a bare 'means ...' or 'includes ...' clause with no term attached. The excerpt cited as the definition of 'common elements' was identified from its position and content and should be confirmed against the source.",
+    "Registration of Documents Ordinance s.39 (District Court power to cancel a registration made without due authority) is in the corpus but is not recorded as a provision, because no party in this scenario has yet sought that remedy; a verifier may prefer it added as supporting.",
+    "The Partition Law referred to in Apartment Ownership Law s.23 is not itself in the corpus, so the scope of what s.23 excludes cannot be checked from within the corpus.",
+    "The Condominium Management Authority Law No. 10 of 1973 and the regulations under the Apartment Ownership Law are not in the corpus, so any procedural detail about how the Registrar or the Condominium Management Authority would treat such a deed lies outside the frozen corpus.",
+    "No case law and no Roman-Dutch authority is reachable through the corpus tool, so the answer rests on statutory text alone.",
+    "Verifier note: the corpus edition of the Registration of Documents Ordinance is the 1990 consolidation. The two pre-2018 amending Acts held in the corpus, Nos. 48 of 2011 and 21 of 2013, amend sections 13, 22 and 48 and the First Schedule only, so sections 7, 8, 26, 36 and 39 as relied on here are the April 2018 text; any amendment made between 1990 and 2011 would not be visible in the corpus."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M108-001",
+      "section_id": "11-1973/s9",
+      "act_id": "11-1973",
+      "formal_title": "Apartment Ownership Law No. 11 of 1973",
+      "number_and_year": "No. 11 of 1973",
+      "section": "9",
+      "subsection": "(1)",
+      "relevant_excerpt": "the common elements shall be held by the owners of all the condominium parcels as tenants in common proportional to their respective share parcels",
+      "why_relevant": "Fixes who owns the land on which a registered condominium stands: once the Condominium Plan is registered the land parcel outside the condominium parcels becomes common elements held by the parcel owners as tenants in common in proportion to their share parcels. Gihan owns no condominium parcel, so he can hold no share in that land.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1973; last amended by Act No. 39 of 2003 s.13, some fifteen years before the matter reference date of 2018-04. The consolidated text used here is the text in force in April 2018.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 11-1973/s9(1) and states what why_relevant claims; the section is in force from 1973 with amendment events in 1982 and 2003 only, so the consolidated text is the text in force in April 2018."
+    },
+    {
+      "provision_id": "PROV-M108-002",
+      "section_id": "11-1973/s9",
+      "act_id": "11-1973",
+      "formal_title": "Apartment Ownership Law No. 11 of 1973",
+      "number_and_year": "No. 11 of 1973",
+      "section": "9",
+      "subsection": "(5)",
+      "relevant_excerpt": "each condominium parcel depicted therein together with the common elements appurtenant thereto shall be deemed to be absolutely owned by the person or persons described in the relevant plan as the owner or owners of the Condominium Property",
+      "why_relevant": "Confirms that on registration of the Condominium Plan absolute ownership vests in the person described in the plan as owner. Rehan, being so described, is the absolute owner; a stranger's declaration cannot displace that deemed ownership.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1973; subsection (5) in its present form comes from Act No. 39 of 2003 s.13, well before 2018-04.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 11-1973/s9(5); the omitted tail, which saves the rights of mortgagees and compensation claimants, does not qualify the deeming of absolute ownership relied on here."
+    },
+    {
+      "provision_id": "PROV-M108-003",
+      "section_id": "11-1973/s11",
+      "act_id": "11-1973",
+      "formal_title": "Apartment Ownership Law No. 11 of 1973",
+      "number_and_year": "No. 11 of 1973",
+      "section": "11",
+      "subsection": null,
+      "relevant_excerpt": "No share in the common elements of a registered, Condominium Property or of a registered Semi Condominium Property shall be disposed of or otherwise dealt with except as appurtenant to a condominium parcel of such property",
+      "why_relevant": "The central prohibition. A Deed of Declaration claiming a half share of the land on which the condominium stands is a dealing with a share in the common elements otherwise than as appurtenant to a condominium parcel, which this section forbids outright.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1973; last amended by Act No. 39 of 2003 s.16, before the matter reference date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim and s.11 does bar a share in the common elements from being held otherwise than as appurtenant to a condominium parcel, but it regulates dealings with a share that exists, so on these facts it reinforces rather than supplies the answer, which turns first on s.9(1) and s.9(5) leaving Gihan with no share at all."
+    },
+    {
+      "provision_id": "PROV-M108-004",
+      "section_id": "23-1927/s7",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "7",
+      "subsection": "(4)",
+      "relevant_excerpt": "Registration of an instrument under this Chapter shall not cure any defect in the instrument or confer upon it any effect or validity which it would not otherwise have except the priority conferred on it by this section.",
+      "why_relevant": "Answers the second half of the question. Even if the Registrar accepts the Deed of Declaration and enters it in the register, registration gives the deed no validity it does not already have; it cannot manufacture a half share for a person who has none.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 with no recorded amendment event in the corpus; applicable at 2018-04.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 23-1927/s7(4); the corpus edition is the 1990 consolidation, and the only pre-2018 amending Acts in the corpus, Nos. 48 of 2011 and 21 of 2013, amend ss.13, 22, 48 and the First Schedule rather than s.7, so the text is applicable at 2018-04."
+    },
+    {
+      "provision_id": "PROV-M108-005",
+      "section_id": "11-1973/s25",
+      "act_id": "11-1973",
+      "formal_title": "Apartment Ownership Law No. 11 of 1973",
+      "number_and_year": "No. 11 of 1973",
+      "section": "25",
+      "subsection": null,
+      "relevant_excerpt": "The provisions of this Law shall have effect notwithstanding anything to the contrary contained in any other written law, and where there is any conflict or inconsistency between the provisions of this Law and such other law the provisions of this Law shall prevail over such other law.",
+      "why_relevant": "Resolves the clash the question sets up. Gihan wants to use the Registration of Documents Ordinance to achieve something the Apartment Ownership Law prohibits; this section makes the Apartment Ownership Law prevail over the Ordinance.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1973 with no recorded amendment event; applicable at 2018-04.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim, but s.25 operates only where there is a conflict or inconsistency and there is none on these facts, because s.7(4) of the Ordinance itself denies the registration any curative effect, so the role is corrected from indispensable to supporting."
+    },
+    {
+      "provision_id": "PROV-M108-006",
+      "section_id": "23-1927/s8",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "8",
+      "subsection": "(b)",
+      "relevant_excerpt": "all instruments, including wills, decrees and orders of any court or authority, and awards, which purport or operate to create, confer, declare, limit, assign, transfer, charge, incumber, release, or extinguish any right, title, or interest, whether vested or contingent, past, present, or future, to, in or over land",
+      "why_relevant": "Shows that a Deed of Declaration asserting a half share is on its face an instrument affecting land, so it falls within the class of documents the Ordinance accepts for registration. This is why the deed can be lodged at all, and why the answer has to turn on effect rather than on registrability.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 with no recorded amendment event; applicable at 2018-04.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 23-1927/s8(b) and a deed declaring an interest in land falls within it; none of the eleven provisos to paragraph (b) excludes such a deed."
+    },
+    {
+      "provision_id": "PROV-M108-007",
+      "section_id": "23-1927/s26",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "26",
+      "subsection": "(1)",
+      "relevant_excerpt": "any person executing the instrument; (b) any person claiming any interest or benefit thereunder; (c) any person having any interest in or charge on any property affected thereby",
+      "why_relevant": "Gihan, as executant of the deed and as a person claiming a benefit under it, is a person who may present it for registration. The Ordinance does not require the presenter to prove title first.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 with no recorded amendment event; applicable at 2018-04.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 23-1927/s26(1), whose paragraphs (a) and (b) cover an executant claiming a benefit under the instrument."
+    },
+    {
+      "provision_id": "PROV-M108-008",
+      "section_id": "23-1927/s36",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "36",
+      "subsection": "(1)",
+      "relevant_excerpt": "A Registrar may, if he thinks fit, refuse to register an instrument- (a) where he has reason to suspect that the person presenting the instrument for registration is not a person who is authorized by this Ordinance to present it for registration",
+      "why_relevant": "Sets out the grounds on which a Registrar may refuse registration. They are directed at authority to present, form and mode of execution, stamp duty and fees, not at the truth of the claim of title asserted in the deed, which confirms that acceptance for registration says nothing about the deed's validity.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 with no recorded amendment event; applicable at 2018-04.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 23-1927/s36(1)(a), but the why_relevant reasons from the whole of s.36, including s.36(1)(b) on form and mode of execution and s.36(2) on stamp duty and fees, which the quoted fragment does not itself set out."
+    },
+    {
+      "provision_id": "PROV-M108-009",
+      "section_id": "11-1973/s16",
+      "act_id": "11-1973",
+      "formal_title": "Apartment Ownership Law No. 11 of 1973",
+      "number_and_year": "No. 11 of 1973",
+      "section": "16",
+      "subsection": "(1)",
+      "relevant_excerpt": "The owners of all the parcels may by a special resolution at a meeting convened by the management corporation direct the management corporation to transfer a part of the common elements.",
+      "why_relevant": "Gives the only lawful route by which part of the common elements can pass to anyone: a special resolution of the owners of all the parcels, executed by the management corporation. A unilateral deed by an outsider is not that route.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1973; last amended by Act No. 39 of 2003 s.21, before the matter reference date.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 11-1973/s16(1), and subsections (2) to (4) confirm that the management corporation executes the instrument, so the route described is the statutory one."
+    },
+    {
+      "provision_id": "PROV-M108-010",
+      "section_id": "11-1973/s23",
+      "act_id": "11-1973",
+      "formal_title": "Apartment Ownership Law No. 11 of 1973",
+      "number_and_year": "No. 11 of 1973",
+      "section": "23",
+      "subsection": null,
+      "relevant_excerpt": "The Partition Law shall not apply to any land or building comprised in any registered Condominium Plan.",
+      "why_relevant": "Closes off the obvious fallback. Having declared himself entitled to a half share, Gihan could not follow it with a partition action over the condominium land, because the Partition Law does not apply to land comprised in a registered Condominium Plan.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1973 with no recorded amendment event; applicable at 2018-04.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 11-1973/s23; the Partition Law itself is not in the corpus, so what it would otherwise have permitted cannot be checked from within the corpus, as the recorded corpus gap says."
+    },
+    {
+      "provision_id": "PROV-M108-011",
+      "section_id": "11-1973/s26",
+      "act_id": "11-1973",
+      "formal_title": "Apartment Ownership Law No. 11 of 1973",
+      "number_and_year": "No. 11 of 1973",
+      "section": "26",
+      "subsection": null,
+      "relevant_excerpt": "means so much of the land parcel for the time being not comprised in any condominium parcel shown in a Condominium Plan or Semi Condominium or Provisional Condominium Plan",
+      "why_relevant": "The interpretation section's definition of 'common elements'. It is what makes the land on which the condominium stands, as distinct from the individual units, common elements, and so brings sections 9 and 11 to bear on Gihan's claim.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1973; last amended by Act No. 39 of 2003 s.41, before the matter reference date. The corpus text of this interpretation section has lost the defined-term lead-ins, so the excerpt reads as a bare 'means ...' clause; the verifier should confirm against the source that this clause is the definition of 'common elements'.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and the clause is the definition of common elements: every other body in s.26 maps to a term in the corpus row's defined_terms list, this one does not, that list omits common elements, and paragraphs (b)(vi) and (b)(vii) of the same clause describe facilities as common elements; but the excerpt quotes only limb (a), limb (b) adding the built parts and shared installations."
+    },
+    {
+      "provision_id": "PROV-M108-012",
+      "section_id": "11-1973/s10",
+      "act_id": "11-1973",
+      "formal_title": "Apartment Ownership Law No. 11 of 1973",
+      "number_and_year": "No. 11 of 1973",
+      "section": "10",
+      "subsection": "(1)",
+      "relevant_excerpt": "No person acquiring an title or interest or benefit in any condominium parcel of a registered Condominium Property or of a registered Semi Condominium Property shall be entitled to such title or interest, or benefit, unless such title, or interest or benefit is registered under the provisions of Registration of Title Act. No. 21 of 1998.",
+      "why_relevant": "Background on which register governs interests in a registered condominium. Interests in a condominium parcel take effect through registration under the Registration of Title Act, not through the Registration of Documents Ordinance register Gihan proposes to use.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1973; replaced by Act No. 39 of 2003 s.15, before the matter reference date. Its practical operation depends on an order under section 1 of the Registration of Title Act extending that Act to the relevant division, which is why it is treated as background rather than as a load-bearing step.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 11-1973/s10(1), and the temporal_note correctly records that its practical operation depends on an order extending the Registration of Title Act to the relevant division, which is why it is background."
+    },
+    {
+      "provision_id": "PROV-M108-013",
+      "section_id": "39-2003/s44",
+      "act_id": "39-2003",
+      "formal_title": "Apartment Ownership (Amendment) Act No. 39 of 2003",
+      "number_and_year": "No. 39 of 2003",
+      "section": "44",
+      "subsection": null,
+      "relevant_excerpt": "the Registration of Documents Ordinance (Chapter 117) shall continue to apply to and in relation to, the registration in accordance with the provisions of this Act- (a) of a Condominium Plan, a Provisional Condominium Plan or a Semi Condominium Plan",
+      "why_relevant": "Background on the residual role of the Registration of Documents Ordinance in condominium matters. Where the Registration of Title Act has not yet been extended, the Ordinance continues to apply to the registration of condominium plans and plans of amendment, re-division or amalgamation, a list that does not include a stranger's declaration of title.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 2003, before the matter reference date of 2018-04.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is verbatim in 39-2003/s44 and the list it introduces is confined to condominium plans and plans of amendment, re-division or amalgamation."
+    },
+    {
+      "provision_id": "PROV-M108-901",
+      "section_id": "23-1927/s39",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance No. 23 of 1927",
+      "number_and_year": "No. 23 of 1927",
+      "section": "39",
+      "subsection": null,
+      "relevant_excerpt": "any instrument registered under Chapters IE or IV is a forgery, or has been registered without due authority or in contravention of any provision of this Ordinance, or where any instrument registered as aforesaid is rectified or set aside by a competent court, the District Court may order the registration of the instrument to be cancelled or to be rectified in such manner as the circumstances may require",
+      "why_relevant": "Supplies the authority for the last sentence of the gold conclusion, which says the registration would be open to challenge in the District Court. Where an instrument has been registered without due authority, the District Court may order the registration cancelled or rectified, so an interested party is not left without a remedy if the deed is entered in the register.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927; the corpus edition is the 1990 consolidation and neither pre-2018 amending Act in the corpus, Nos. 48 of 2011 and 21 of 2013, touches s.39, so the text is applicable at 2018-04.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier because the gold conclusion asserted a District Court challenge with no provision behind it; the excerpt is verbatim, and 'Chapters IE or IV' is a transcription artefact for Chapters III or IV in the corpus text."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M108-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Both halves of the question are answered by statute. Whether Gihan can acquire a half share of the land under the condominium is settled by the Apartment Ownership Law (sections 9, 11, 16, 23 and the definition of common elements in section 26), and whether registration can help him is settled by the Registration of Documents Ordinance itself, whose section 7(4) says in terms that registration confers no validity an instrument does not otherwise have. Section 25 of the Apartment Ownership Law resolves the conflict between the two enactments. No judicial authority or Roman-Dutch doctrine is needed for a complete answer; the nemo dat principle would only restate what section 7(4) already provides.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M108-Q01-01",
+          "issue": "Whether a person who owns no condominium parcel can, by a unilateral Deed of Declaration, acquire or assert an undivided half share in the land parcel on which a registered condominium stands, that land being common elements.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M108-Q01-02",
+          "issue": "Whether such a Deed of Declaration is an instrument that may be executed and presented for registration under the Registration of Documents Ordinance, and what registration would achieve if it were accepted.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M108-Q01-03",
+          "issue": "Whether the Apartment Ownership Law or the Registration of Documents Ordinance governs where the two conflict.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M108-001",
+        "PROV-M108-002",
+        "PROV-M108-003",
+        "PROV-M108-004"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M108-006",
+        "PROV-M108-007",
+        "PROV-M108-008",
+        "PROV-M108-009",
+        "PROV-M108-010",
+        "PROV-M108-011",
+        "PROV-M108-005",
+        "PROV-M108-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M108-012",
+        "PROV-M108-013"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Four necessary steps across two enactments. One: the definition of common elements in section 26 with section 9(1) makes the land under the building common elements held by the parcel owners. Two: section 9(5) fixes absolute ownership in the person named in the registered plan. Three: section 11 forbids any dealing with a share in the common elements except as appurtenant to a condominium parcel. Four: crossing into the Registration of Documents Ordinance, section 7(4) denies registration any curative effect. Verifier correction: section 25 of the Apartment Ownership Law is not a necessary step, because section 7(4) withholds effect from the instrument without any conflict between the two enactments having to be resolved, so section 25 has been moved to a supporting role and the count of four steps is unchanged.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M108-011",
+          "to_provision_id": "PROV-M108-001",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M108-001",
+          "to_provision_id": "PROV-M108-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M108-002",
+          "to_provision_id": "PROV-M108-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M108-003",
+          "to_provision_id": "PROV-M108-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M108-005",
+          "to_provision_id": "PROV-M108-004",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M108-009",
+          "to_provision_id": "PROV-M108-003",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M108-010",
+          "to_provision_id": "PROV-M108-003",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M108-006",
+          "to_provision_id": "PROV-M108-004",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M108-007",
+          "to_provision_id": "PROV-M108-008",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Rehan de Silva is the owner of 2 Condominium properties. His brother Gihan de Silva intends to prepare a Deed of Declaration claiming 1/2 of the property, where the Condominium is situated and register the Deed under the Registration of Documents Ordinance.",
+        "enriched_background": "Rehan de Silva is the owner of 2 Condominium properties. His brother Gihan de Silva intends to prepare a Deed of Declaration claiming 1/2 of the property, where the Condominium is situated and register the Deed under the Registration of Documents Ordinance.\n\nThe property Gihan has in mind is Nelum Residencies, a completed four-storey building at No. 118, Sri Sumangala Mawatha, Nugegoda, standing on a single land parcel of 32.5 perches. Condominium Plan No. 4127 for that land and building was registered on 5 May 2011 and has never been amended. Rehan de Silva is named in that registered plan as the owner of the whole land parcel and of the two condominium parcels he holds, Units 2B and 4A, and no share of the land parcel has at any time been transferred to Gihan. A management corporation for the building was constituted when the plan was registered, and it has passed no resolution about transferring any part of the land or of the shared areas to anyone.\n\nGihan de Silva owns no condominium parcel in the building and holds no deed, decree or other instrument of title to any part of the land parcel. The only document he proposes to rely on is a Deed of Declaration he intends to have attested by a notary in February 2018 and lodged at the Delkanda-Nugegoda Land Registry.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M108-Q01-001",
+            "fact": "The property Gihan has in mind is Nelum Residencies, a completed four-storey building at No. 118, Sri Sumangala Mawatha, Nugegoda, standing on a single land parcel of 32.5 perches; Condominium Plan No. 4127 for that land and building was registered on 5 May 2011 and has never been amended.",
+            "origin": "synthetic_decisive",
+            "reason": "The question does not say whether the Condominium Plan was ever registered, yet almost every consequence in the scenario follows from registration. Naming the property, its land parcel and the date of registration makes the scenario determinate.",
+            "activates_provision_ids": [
+              "PROV-M108-001",
+              "PROV-M108-002",
+              "PROV-M108-003",
+              "PROV-M108-010",
+              "PROV-M108-011"
+            ],
+            "counterfactual_effect": "If no Condominium Plan had been registered, the land would remain ordinary land, the common-elements rules would not bite and the answer would turn on ordinary conveyancing rules instead.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M108-Q01-002",
+            "fact": "Rehan de Silva is named in that registered plan as the owner of the whole land parcel and of the two condominium parcels he holds, Units 2B and 4A, and no share of the land parcel has at any time been transferred to Gihan de Silva.",
+            "origin": "synthetic_decisive",
+            "reason": "The background asserts Rehan's ownership but not how it appears on the plan, and says nothing about whether Gihan ever held a share. Both are needed before the claim to a half share can be assessed.",
+            "activates_provision_ids": [
+              "PROV-M108-002",
+              "PROV-M108-003"
+            ],
+            "counterfactual_effect": "If Gihan were himself named on the plan as an owner of a condominium parcel, he would hold an undivided share in the common elements appurtenant to that parcel and the analysis would change.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M108-Q01-003",
+            "fact": "Gihan de Silva owns no condominium parcel in the building and holds no deed, decree or other instrument of title to any part of the land parcel; the only document he proposes to rely on is a Deed of Declaration he intends to have attested by a notary in February 2018 and lodged at the Delkanda-Nugegoda Land Registry.",
+            "origin": "synthetic_decisive",
+            "reason": "The candidate record flags a missing relevant document and missing registration status. Fixing what Gihan has, what he does not have, and when and where he proposes to lodge it removes the ambiguity.",
+            "activates_provision_ids": [
+              "PROV-M108-003",
+              "PROV-M108-004",
+              "PROV-M108-006",
+              "PROV-M108-007",
+              "PROV-M108-008"
+            ],
+            "counterfactual_effect": "If Gihan held a prior registered deed to an undivided half of the land predating the Condominium Plan, the question would become one of the effect of registration of the plan on an existing registered interest rather than of a bare declaration.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M108-Q01-004",
+            "fact": "A management corporation for the building was constituted when the plan was registered and it has passed no resolution about transferring any part of the land or of the shared areas to anyone.",
+            "origin": "synthetic_neutral",
+            "reason": "Rules out the one lawful route by which part of the common elements could have passed to Gihan, so the reader does not have to speculate about it.",
+            "activates_provision_ids": [
+              "PROV-M108-009"
+            ],
+            "counterfactual_effect": "If the owners had passed such a special resolution and the management corporation had executed a transfer, part of the shared areas could lawfully have moved out of common ownership.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether Gihan de Silva, who owns no condominium parcel in the building, can execute a Deed of Declaration claiming an undivided half share of the land on which Rehan's registered condominium stands, and register it under the Registration of Documents Ordinance, and what such a deed and its registration would achieve.",
+        "rule": "Once a Condominium Plan is registered, so much of the land parcel as is not comprised in any condominium parcel is common elements (Apartment Ownership Law s.26), and the common elements are held by the owners of all the condominium parcels as tenants in common in proportion to their share parcels (s.9(1)); each parcel with its appurtenant common elements is deemed absolutely owned by the person described in the registered plan as owner (s.9(5)). Section 11 forbids any share in the common elements being disposed of or otherwise dealt with except as appurtenant to a condominium parcel of that property, and s.16 gives the only route by which part of the common elements may pass, namely a special resolution of the owners of all the parcels directing the management corporation to transfer it. The Partition Law does not apply to land comprised in a registered Condominium Plan (s.23). On the registration side, a deed purporting to declare an interest in land is an instrument affecting land (Registration of Documents Ordinance s.8(b)) which its executant may present for registration (s.26(1)), and the Registrar's grounds of refusal (s.36) go to authority to present, form of execution, stamp duty and fees rather than to the truth of the title asserted; but s.7(4) provides that registration cures no defect and confers no effect or validity the instrument would not otherwise have, beyond priority. Where the two enactments conflict, the Apartment Ownership Law prevails (s.25).",
+        "application": "Condominium Plan No. 4127 for Nelum Residencies was registered in 2011, so the 32.5 perch land parcel under the building, apart from the condominium parcels themselves, is common elements held by the owners of the parcels shown in that plan, and Rehan, named in the plan as owner, is deemed to own his parcels with their appurtenant common elements absolutely. Gihan owns no condominium parcel and holds no instrument of title to any part of the land, so there is no parcel in his hands to which a share in the common elements could be appurtenant; a deed claiming a half share of that land is exactly the dealing s.11 forbids. The owners have passed no special resolution and the management corporation has executed no transfer, so the s.16 route has not been used. As a matter of form the deed can be drawn and attested, and because the Registrar is not required to adjudicate title before accepting an instrument affecting land, it may well be accepted and entered in the register; but by s.7(4) that entry adds nothing to a deed that conveys nothing, and to the extent the Ordinance is invoked to defeat the Apartment Ownership Law, s.25 makes that Law prevail. Nor could Gihan follow the declaration with a partition action, since s.23 excludes the Partition Law. Whether the Registrar would in fact accept the deed is for the Registrar in the individual case; the point is that acceptance would not assist Gihan.",
+        "conclusion": "Gihan may have such a Deed of Declaration prepared and attested, and it may physically be lodged and even accepted for registration under the Registration of Documents Ordinance, but he cannot lawfully acquire what he claims. A half share of the land on which the registered condominium stands is a share in the common elements, and s.11 of the Apartment Ownership Law bars any dealing with it except as appurtenant to a condominium parcel, which Gihan does not own. Registration would give him nothing, because under s.7(4) of the Ordinance it cures no defect and confers no validity, and under s.25 the Apartment Ownership Law prevails over the Ordinance. The deed would be of no legal effect against Rehan, and its registration would be open to challenge by an interested party in the District Court."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M108-Q01-001",
+          "claim_text": "Once a Condominium Plan is registered, so much of the land parcel as is not comprised in any condominium parcel is common elements, and the common elements are held by the owners of all the condominium parcels as tenants in common in proportion to their share parcels.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M108-001",
+            "PROV-M108-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M108-Q01-002",
+          "claim_text": "On registration each condominium parcel together with the common elements appurtenant to it is deemed to be absolutely owned by the person described in the registered plan as owner.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M108-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M108-Q01-003",
+          "claim_text": "No share in the common elements of a registered Condominium Property may be disposed of or otherwise dealt with except as appurtenant to a condominium parcel of that property, and part of the common elements can pass only on a special resolution of the owners of all the parcels directing the management corporation to transfer it.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M108-003",
+            "PROV-M108-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M108-Q01-004",
+          "claim_text": "A deed that purports to declare a right, title or interest in land is an instrument affecting land for the purposes of the Registration of Documents Ordinance, and its executant or a person claiming a benefit under it may present it for registration.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M108-006",
+            "PROV-M108-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M108-Q01-005",
+          "claim_text": "The grounds on which a Registrar may or must refuse registration go to authority to present, form and mode of execution, stamp duty and fees, and not to whether the title asserted in the instrument is good.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M108-008"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M108-Q01-006",
+          "claim_text": "Registration under the Registration of Documents Ordinance cures no defect in an instrument and confers on it no effect or validity it would not otherwise have, apart from priority.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M108-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M108-Q01-007",
+          "claim_text": "Where the Apartment Ownership Law conflicts with another written law, including the Registration of Documents Ordinance, the Apartment Ownership Law prevails.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M108-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M108-Q01-008",
+          "claim_text": "The Partition Law does not apply to land or a building comprised in a registered Condominium Plan.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M108-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M108-Q01-009",
+          "claim_text": "Because Condominium Plan No. 4127 was registered in 2011, the 32.5 perch land parcel on which the building stands is, apart from the condominium parcels themselves, common elements held by the owners of the parcels shown in that plan.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M108-001",
+            "PROV-M108-011"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M108-Q01-001"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M108-Q01-010",
+          "claim_text": "Gihan owns no condominium parcel in the building, so there is no parcel to which a share in the common elements could be appurtenant in his hands, and his Deed of Declaration is a dealing with a share in the common elements that section 11 forbids.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M108-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M108-Q01-002",
+            "FACT-M108-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M108-Q01-011",
+          "claim_text": "No special resolution of the owners and no transfer by the management corporation has been made, so the only lawful route by which part of the common elements could have reached Gihan has not been used.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M108-009"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M108-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M108-Q01-012",
+          "claim_text": "Nothing in the Registration of Documents Ordinance obliges the Registrar to test Gihan's title before accepting the deed, so the deed may well be accepted and entered in the register, but that entry gives it no validity it lacks, and the prohibition in the Apartment Ownership Law prevails over the Ordinance in any event.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M108-004",
+            "PROV-M108-005",
+            "PROV-M108-006",
+            "PROV-M108-007",
+            "PROV-M108-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M108-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M108-Q01-013",
+          "claim_text": "Gihan cannot follow the declaration with a partition action over the condominium land, because the Partition Law does not apply to land comprised in a registered Condominium Plan.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M108-010"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M108-Q01-001"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M108-Q01-014",
+          "claim_text": "Gihan may have such a deed drawn and attested, and it may physically be accepted for registration under the Registration of Documents Ordinance, but it is of no legal effect: he acquires no half share in the land on which the condominium stands, and registration does not improve his position.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M108-001",
+            "PROV-M108-002",
+            "PROV-M108-003",
+            "PROV-M108-004",
+            "PROV-M108-005"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M108-Q01-002",
+            "FACT-M108-Q01-003",
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

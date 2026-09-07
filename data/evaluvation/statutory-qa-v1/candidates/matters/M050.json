@@ -1,0 +1,64 @@
+{
+  "benchmark_matter_id": "M050",
+  "source_matter_id": "P09-Q05-M01",
+  "grouping_key": "P09-Q05-M01",
+  "paper_no": 9,
+  "question_no": 5,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "The Notary does not know the executant but he knows one witness.",
+    "normalized": "The Notary does not know the executant but he knows one witness.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P09-Q05-P04"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M050-Q01",
+      "atomic_id": "P09-Q05-P04",
+      "part_uid": "paper-09/q5/04",
+      "part_id": "04",
+      "item_id": null,
+      "marks": 2,
+      "pdf_page": 38,
+      "question_original": "Under what circumstances, can the Notary attest the deed?",
+      "question_normalized": "Under what circumstances, can the Notary attest the deed?",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "The Notary does not know the executant but he knows one witness.",
+      "effective_background_normalized": "The Notary does not know the executant but he knows one witness.",
+      "source_quote": "04. The Notary does not know the executant but he knows one witness. Under what circumstances,\ncan the Notary attest the deed?",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "required",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.85,
+        "flags": []
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "instrument_type",
+        "relevant_document"
+      ]
+    }
+  ],
+  "matter_reference_date": "2021-10",
+  "exam_session": "OCTOBER 2021 / APRIL 2022",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

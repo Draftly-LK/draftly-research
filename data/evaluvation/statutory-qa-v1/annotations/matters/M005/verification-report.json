@@ -1,0 +1,111 @@
+{
+  "benchmark_matter_id": "M005",
+  "verifier": "verifier-M005",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:00:59Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M005-001",
+      "decision": "verified",
+      "note": "Chapeau of 1-1907/s31 confirmed verbatim by check; imposes a strict duty to observe the rules and is unaffected by the 2011, 2022 and 2024 amendment events."
+    },
+    {
+      "provision_id": "PROV-M005-002",
+      "decision": "partially_verified",
+      "note": "Wording verbatim and correctly identified as rule (17)(a) via 1-1907/s31/sub-17/par-a; temporal note corrected because neither 31-2022 s.16(10) nor 6-2024 s.3(6) amended paragraph (a)."
+    },
+    {
+      "provision_id": "PROV-M005-003",
+      "decision": "partially_verified",
+      "note": "Verbatim and correctly attached to rule (17) as a whole (1-1907/s31/sub-17/pro-39); temporal note corrected, and the proviso in terms dispenses only with the search, not with rule (17)(b)(i)."
+    },
+    {
+      "provision_id": "PROV-M005-004",
+      "decision": "partially_verified",
+      "note": "Verbatim; role promoted to indispensable because the gold conclusion requires the certified folio extract, and the amendment source corrected to 31-2022 s.16(10)(a)."
+    },
+    {
+      "provision_id": "PROV-M005-005",
+      "decision": "verified",
+      "note": "Rule (33) verbatim and untouched by 47-2011, 31-2022 or 6-2024; supporting role is right, since it concerns obtaining the title deed and not a land registry search."
+    },
+    {
+      "provision_id": "PROV-M005-006",
+      "decision": "verified",
+      "note": "The residual reading is confirmed against the full text of 1-1907/s34: rule (17) appears in neither the s.34(1)(a) list (rules (1), (31), (32)) nor the s.34(1)(b) list (rules (2), (3), (6), (7), (11), (18), (21), (23), (24), (30A)), so s.34(1)(c) and the fifty thousand rupee maximum apply. Section 34 was substituted by 31-2022 s.17, which precedes the matter date."
+    },
+    {
+      "provision_id": "PROV-M005-007",
+      "decision": "verified",
+      "note": "Verbatim and correctly treated as background; the excerpt stops before the s.33 proviso, which does not affect the claim made from it."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M005-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "The question expressly asks for Notaries Ordinance provisions and the answer is reached from s.31 rule (17) with its proviso plus s.34(1)(c); no case law or Roman-Dutch doctrine is needed, so statute_only stands. No indispensable provision was rejected or left unresolved, so proposed_gold is retained. Role of PROV-M005-004 promoted to indispensable, hop count kept at 2, one conclusion claim (CL-M005-Q01-014) marked disputed."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "scope_of_the_proviso_to_rule_17",
+      "researcher_position": "Written authority from the parties makes the search non-compulsory, so on that footing Saman could draw the deed subject only to writing the reference to the previous registration at the head of the deed (CL-M005-Q01-014 and the last sentence of the gold conclusion).",
+      "verifier_position": "The proviso dispenses only with the search. Rule (17)(b)(i), which requires the certified extract of the folio from the Registrar of the relevant Land Registry, was substituted into rule (17) by Act No. 31 of 2022 s.16(10)(a) after the proviso was enacted and is not in terms covered by it. If the folio-extract duty survives written authority, the researcher's alternative course is incomplete and the gold conclusion overstates it.",
+      "supporting_sources": [
+        "1-1907/s31/sub-17/par-a",
+        "1-1907/s31/sub-17/par-b/sub-i",
+        "1-1907/s31/sub-17/pro-39",
+        "31-2022/s16",
+        "6-2024/s3"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "corpus_gap_stated_in_the_map_is_wrong",
+      "researcher_position": "corpus_gaps entry 2 states that Notaries (Amendment) Act No. 6 of 2024 is not listed as an Act in the corpus, so the wording it substituted into rule (17) could not be read against its own text.",
+      "verifier_position": "Act No. 6 of 2024 is in the corpus as 6-2024 with eight sections, and 6-2024/s3 is readable in full. Reading it shows that s.3(6) altered only rule (17)(b)(iii) and rule (17)(c), so the temporal position of rule (17)(a), (b)(i) and the proviso can be settled from the corpus. corpus_gaps entry 2 should be deleted, but corpus_gaps is outside what the verifier may edit.",
+      "supporting_sources": [
+        "6-2024/s3",
+        "31-2022/s16"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M005-Q01-014: marked disputed. It states that written authority from both parties would make the search non-compulsory, without addressing whether the certified folio extract required by rule (17)(b)(i) would still be owed. The proviso speaks only of the search."
+    ],
+    "temporal_issues": [
+      "PROV-M005-002 and PROV-M005-003: the temporal notes attributed the current wording of rule (17)(a) and of the proviso to the 2022 and 2024 amendments. Neither paragraph was amended; both stand in their pre-2022 form and are in force at 2026-04. Notes corrected on the provisions.",
+      "PROV-M005-004: rule (17)(b) was repealed and substituted by 31-2022 s.16(10)(a); 6-2024 s.3(6)(a) replaced only sub-paragraph (iii). The note said only that it was inserted by the amendments consolidated up to 2024. Corrected.",
+      "Neither 31-2022 nor 6-2024 carries a separate date-of-operation section in the corpus; both are taken to operate from certification, well before 2026-04. No amendment later than 2024 touches s.31 or s.34 in the corpus."
+    ],
+    "missing_definitions_or_exceptions": [
+      "defs 1-1907 returns only Council of Legal Education, High Court Judge and Registrar-General at s.43. No term the answer turns on is defined, so nothing is missing on that head.",
+      "1-1907/s32 was checked and does not disapply rule (17) in any special case; it lists rules (20), (23), (24), (25), (26) and part of rule (16) only. Correctly omitted.",
+      "1-1907/s21(1)(c) allows cancellation or suspension of the warrant for repeated breaches of the rules. It needs more than the single breach in this scenario, so it is correctly outside the map, but it is the second consequence a lawyer may want stated."
+    ],
+    "case_law_dependence": [
+      "None. The gold answer cites no case and the validator case-law regex is clean. The one point the researcher left open, whether omitting a title search is a matter of form under s.33, is properly left open rather than answered from case law."
+    ],
+    "enrichment_issues": [
+      "FACT-M005-Q01-004 tracks the language of the proviso closely (written authority dispensing with an examination of the land registry). It does not name the Ordinance or the section, so it is not a leak on the stated test, but it hands the candidate the decisive exception. A neutral phrasing such as neither party has signed anything authorising him to proceed without examining the registry records would carry the same fact with less signal.",
+      "The closing clause of the enriched background, that no extract of the land registry folio for the land has been obtained by anyone, similarly pre-performs part of the analysis under rule (17)(b)(i).",
+      "The enrichment does not say whether the land is registered under the Registration of Title Act, No. 21 of 1998. See the entry under duplicate_or_leak_issues."
+    ],
+    "duplicate_or_leak_issues": [
+      "Registration of Title Act, No. 21 of 1998, s.44 imposes a different set of duties on a notary attesting an instrument in respect of land on the title register, including satisfying himself about the state of the title from the Certificate of Title and the Title Registry. The researcher did not consider it. On these facts the deeds regime applies, because the vendor's title is a deed of transfer registered in the land registry, so rule (17) governs; but a fact placing the land outside the Registration of Title Act would close the gap.",
+      "No duplicate provisions and no duplicate facts. All five added facts are distinct and none repeats the original background."
+    ]
+  },
+  "lawyer_questions": [
+    "Does written authority under the proviso to s.31 rule (17) dispense only with the search of the registers, leaving the notary still bound by rule (17)(b)(i) to obtain the certified folio extract? The alternative course offered in the gold conclusion depends on the answer.",
+    "Is the omission of a title search a failure in respect of any matter of form within s.33, so that the deed would survive, or does the deed's validity remain unaffected for a different reason?",
+    "Should the map be extended to record cancellation or suspension of the warrant under s.21(1)(c) as a further consequence, on the footing that repeated breaches would be needed?",
+    "Should the enrichment state that the land has not been brought under the Registration of Title Act, No. 21 of 1998, to keep s.44 of that Act out of the picture?"
+  ]
+}

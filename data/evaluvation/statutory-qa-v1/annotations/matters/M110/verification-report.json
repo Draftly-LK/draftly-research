@@ -1,0 +1,109 @@
+{
+  "benchmark_matter_id": "M110",
+  "verifier": "verifier-M110",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-05T00:00:00Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M110-001",
+      "decision": "verified",
+      "note": "1-1907/s31 rule (15) excerpt is verbatim (checked) and says exactly what why_relevant claims: a signature in a language other than that in which the notary is authorized to practice obliges him to write over it, in his own handwriting and at the time of execution, \"This is the mark (or signature, as the case may be) of A. B.\" with the signatory's name inserted. Rule (15) is not among the rules substituted by 47-2011 s.2/s.3, 31-2022 s.16 or 6-2024 s.3, all of which I read; 31-2022 s.16(8) only inserts rule (15A) immediately after it. Indispensable role confirmed."
+    },
+    {
+      "provision_id": "PROV-M110-002",
+      "decision": "verified",
+      "note": "1-1907/s2 excerpt verbatim; no post-2018 amending section touches section 2 (the section lists of 31-2022 and 6-2024 were checked one by one). Genuinely indispensable: rule (15) is triggered by reference to the language the notary is authorized to practise in, and only section 2 supplies that."
+    },
+    {
+      "provision_id": "PROV-M110-003",
+      "decision": "verified",
+      "note": "Rule (22) excerpt verbatim and untouched by 31-2022 s.16 or 6-2024 s.3. Supporting role correct. The map draws a negative inference from it (see the disputed claims below), but the excerpt itself is accurate."
+    },
+    {
+      "provision_id": "PROV-M110-004",
+      "decision": "partially_verified",
+      "note": "Rule (11) excerpt verbatim and unamended post-2018, but its role needs correcting: it is engaged only by synthetic decisive fact FACT-M110-Q01-005, not by the examined question, which asks only about the Japanese signature."
+    },
+    {
+      "provision_id": "PROV-M110-901",
+      "decision": "verified",
+      "note": "Added by the verifier; excerpt checked verbatim."
+    },
+    {
+      "provision_id": "PROV-M110-902",
+      "decision": "verified",
+      "note": "Added by the verifier; excerpt checked verbatim."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M110-901",
+      "reason": "CL-M110-Q01-003 asserts that the left thumb impression requirement in rule (15) is confined to marks, but the excerpt in PROV-M110-001 stops at \"(here insert the name of the person signing with the mark or signature);\" and does not contain the limb relied on. PROV-M110-901 carries that limb verbatim (\"and in the case of a mark he shall besides require such person to affix ... the impression of his left thumb ...\"), whose opening words are what confine it to marks. CL-M110-Q01-003 now cites it and is verified."
+    },
+    {
+      "provision_id": "PROV-M110-902",
+      "reason": "Rule (20)(d) of section 31 requires the notary to state in the attestation whether the deed was read over by the executant or read and explained by him in the presence of the attesting witnesses. Once the map relies on rule (11), that recording duty is part of the answer to \"what is the duty of the Notary\" and was missing. Paragraph (d) survives both 31-2022 s.16(11) (which replaced (b), (e) and (g) and added (h)) and 6-2024 s.3(7) (paragraph (g)), so it is the April 2018 text. Added as a supporting provision only; the gold answer prose was not rewritten."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M110-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "Authority requirement confirmed as statute_only: section 31 rule (15) answers the question in terms and no case law or Roman-Dutch doctrine is needed. Hop count of 2 confirmed. The downgrade is not about the core duty, which is verified, but about the enrichment: it imports passport identification, which was not the statutory identification method in April 2018, and a second duty under rule (11) that the one-mark question did not raise."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "scenario_temporal_validity",
+      "researcher_position": "The enriched scenario, in which the notary identifies a Japanese national by his passport and notes his full name from it, is a neutral concretisation of the facts, and the notary may attest the deed.",
+      "verifier_position": "In April 2018 rule (9) of section 31 read \"He shall not authenticate or attest any deed or instrument unless the person executing the same be known to him or to at least two of the attesting witnesses thereto\" - the words the 2022 Act replaced. Identification by the bio-page of a passport entered rule (9) only through Act No. 31 of 2022 s.16(6). The enriched facts do not say the executant was known to the notary or to the two witnesses, so on the April 2018 law the premise that he could attest at all is doubtful, and the fact is anachronistic.",
+      "supporting_sources": ["1-1907/s31", "31-2022/s16"],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "scope_of_enrichment",
+      "researcher_position": "FACT-M110-Q01-005 (the executant cannot read English) is a decisive fact that properly brings rule (11) into the answer.",
+      "verifier_position": "The examined question is worth one mark and asks only about a signature in Japanese. Adding inability to read English creates a second, separate duty and enlarges the legal issue, which enrichment is not supposed to do. Rule (15) is the answer; rule (11) belongs to a different question.",
+      "supporting_sources": ["1-1907/s31"],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M110-Q01-004 - disputed. The first half (a notary may not attest a deed drawn in a language outside his warrant) is directly in rule (22). The second half (the prohibition is not directed at the language of a party's signature) is a negative implication from the text, not something rule (22) states; support_strength changed from direct to inferential.",
+      "CL-M110-Q01-006 - disputed. \"Does not prevent him from attesting\" is an absence-of-prohibition inference. The better textual basis is rule (15) itself, which presupposes that such a deed is attested, but the claim cites only PROV-M110-003. support_strength changed to inferential.",
+      "CL-M110-Q01-008 - disputed. Rule (15) requires only \"the name of the person signing\". Neither \"full name\" nor \"taken from the passport produced to him\" comes from rule (15). The full-names duty is rule (14), which the researcher rightly excluded because its text was wholly substituted by 31-2022 s.16(7), and passport identification is post-2022 rule (9).",
+      "CL-M110-Q01-010 - disputed. The conclusion that the notary may attest inherits the weakness in CL-M110-Q01-006 and, on the April 2018 rule (9), may be wrong on these enriched facts. support_strength changed to inferential."
+    ],
+    "temporal_issues": [
+      "The corpus holds only the consolidated post-2024 Notaries Ordinance. The researcher's method was re-run: 47-2011 s.2 touches rule (16)(a) and s.3 touches rule (26); 31-2022 s.16 touches rules (3), (4), (5), (6), a new rule after (7), (9), (14), a new rule after (15), (16), (17), (20)(b)(e)(g) plus new (h), (27), (30) and new (30A); 6-2024 s.3 touches rules (5), (7A), (9), (10), (15A), (17), (20)(g), (26), (29), (30). Rules (11), (15), (20)(d) and (22) and section 2 appear in none of them, so those texts stood as printed in April 2018.",
+      "Rule (9) is a live temporal problem the map does not mention. Its April 2018 text is recoverable only from the words quoted inside 31-2022 s.16(6); the corpus itself holds only the post-2022 text. Any answer relying on passport identification in an April 2018 scenario relies on law not yet in force.",
+      "Rule (15A) (thumb impression beside the signature) is post-2018 and is correctly excluded."
+    ],
+    "missing_definitions_or_exceptions": [
+      "The mark limb of rule (15) was relied on but not excerpted - added as PROV-M110-901.",
+      "Rule (20)(d), the duty to record in the attestation whether the deed was read over or read and explained in the presence of the attesting witnesses - added as PROV-M110-902.",
+      "The researcher's third corpus gap is confirmed: grep for \"interpret\" and \"translat\" over 1-1907 returns nothing, so the corpus carries no rule on interpreters or certified translations. defs 1-1907 language returns only s.43 (the interpretation section, which does not define the language of practice) and s.23."
+    ],
+    "case_law_dependence": [
+      "None. Rule (15) is self-executing and the gold answer cites no case."
+    ],
+    "enrichment_issues": [
+      "FACT-M110-Q01-005 changes the legal issue by adding a second duty under rule (11) to a one-mark question about a foreign-language signature.",
+      "FACT-M110-Q01-004 (passport) is anachronistic for April 2018 identification and feeds an unsupported premise into CL-M110-Q01-008.",
+      "FACT-M110-Q01-003 (warrant limited to English, deed drawn in English) is correctly flagged synthetic_decisive with a reason that explains why it is needed. It comes close to signposting rules (15) and (22) but names no statute, section number or conclusion, so it passes the leak test.",
+      "The enriched background leaks no statute name, section number or conclusion. Names, address and consideration are fictional, as the research notes state."
+    ],
+    "duplicate_or_leak_issues": [
+      "PROV-M110-001, PROV-M110-003, PROV-M110-004 and both added provisions carry section_id 1-1907/s31 with different subsection labels. The corpus exposes only the parent section id, so this is forced, but five provision entries now share one section id and a consumer keying on section_id alone will see duplicates."
+    ]
+  },
+  "lawyer_questions": [
+    "Under the April 2018 rule (9) of section 31, could the notary attest at all where a Japanese executant is identified only by his passport and is not shown to be known to the notary or to the two attesting witnesses? If not, the enriched facts must change or the gold answer's conclusion that he may attest is wrong.",
+    "Should FACT-M110-Q01-005 be dropped so the gold answer is confined to the rule (15) duty the one-mark question actually asks about?",
+    "Does rule (15) reach a signature written in a foreign script, on the footing that Japanese characters are \"a signature in a language other than that in which the notary is authorized to practice\"? The text supports it, but the point is not tested anywhere in the corpus.",
+    "Should the gold answer also state the rule (20)(d) attestation duty now recorded as PROV-M110-902?"
+  ]
+}

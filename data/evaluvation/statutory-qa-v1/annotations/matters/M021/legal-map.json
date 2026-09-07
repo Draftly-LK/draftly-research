@@ -1,0 +1,681 @@
+{
+  "benchmark_matter_id": "M021",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M021",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-05T00:00:00Z",
+    "verification_agent": "verifier-M021",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:24:13Z"
+  },
+  "matter_reference_date": "2025-10",
+  "matter_reference_date_basis": "exam_session 'OCTOBER 2025' recorded in candidates/matters/M021.json; the law is stated as at October 2025.",
+  "corpus_gaps": [
+    "The pre-2022 text of Wills Ordinance ss.3 and 4 is not in the corpus. Only the repealing provisions (29-2022 ss.3 and 4) and the 1993 amending words (5-1993 s.2) are available, so the former age rule can be described only through the amending enactments, not quoted from the principal Ordinance.",
+    "The substantive test of testamentary capacity (a sound and disposing mind) beyond the statutory age threshold rests on Roman-Dutch common law and judicial authority, neither of which is in the frozen statutory corpus. Only the notary's statutory duty to state in the attestation that the testator was of good and sound mind (Notaries Ordinance s.31(20)(h)) is captured.",
+    "No statutory form of a last will exists in the corpus. Notaries Ordinance s.31(21) points to Form E of the Second Schedule for the attestation, but the Schedule forms were not extracted as separate sections, so the attestation wording itself cannot be quoted.",
+    "Stamp duty treatment of a last will could not be established from the corpus. Notaries Ordinance s.31(6) and (7) require the notary to see to stamp duty generally, but no rate or exemption specific to wills was located."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M021-001",
+      "section_id": "21-1844/s2",
+      "act_id": "21-1844",
+      "formal_title": "Wills Ordinance",
+      "number_and_year": "No. 21 of 1844",
+      "section": "2",
+      "subsection": "(1)",
+      "relevant_excerpt": "It shall be lawful for any person who has reached the age of eighteen years and residing within or outside Sri Lanka to execute a will bequeathing and disposing any movable and immovable property",
+      "why_relevant": "This is the operative age rule. As substituted in 2022 it fixes eighteen completed years as the age at which a person becomes competent to execute a will, and it covers persons residing within or outside Sri Lanka and both movable and immovable property.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1844; the present text was substituted by Act No. 29 of 2022 (latest_change_year 2022), so it was in force well before the matter reference date of October 2025.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M021-002",
+      "section_id": "29-2022/s2",
+      "act_id": "29-2022",
+      "formal_title": "Wills Ordinance (Amendment) Act",
+      "number_and_year": "No. 29 of 2022",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "Section 2 of the Wills Ordinance (Chapter 60) (hereinafter referred to as the \"principal enactment\") is hereby repealed and the following section is substituted therefor",
+      "why_relevant": "The question asks for the age limit according to the latest amendments. This is the amending provision that repealed and replaced section 2 of the Wills Ordinance with the present eighteen-year rule, and Act No. 29 of 2022 is the most recent amendment to that Ordinance in the corpus.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted in 2022, before the October 2025 matter reference date. No later amendment to the Wills Ordinance appears in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M021-003",
+      "section_id": "29-2022/s3",
+      "act_id": "29-2022",
+      "formal_title": "Wills Ordinance (Amendment) Act",
+      "number_and_year": "No. 29 of 2022",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "Section 3 of the principal enactment is hereby repealed.",
+      "why_relevant": "Section 3 of the Wills Ordinance was the provision that invalidated wills made by persons below the prescribed age. Its repeal in 2022 means the age question is now answered solely by the substituted section 2, with no separate invalidating provision surviving in the Ordinance.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted 2022, in force before October 2025. The corpus table of sections for the Wills Ordinance confirms the effect: it runs s.1, s.2, then s.5 to s.9, with ss.3 and 4 absent.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt and effect confirmed; the description of what the repealed s.3 said is carried by PROV-M021-004, since the pre-2022 text of s.3 is not in the corpus."
+    },
+    {
+      "provision_id": "PROV-M021-004",
+      "section_id": "5-1993/s2",
+      "act_id": "5-1993",
+      "formal_title": "Wills (Amendment)",
+      "number_and_year": "No. 5 of 1993",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "Section 3 of the Wills Ordinance is hereby amended by the substitution for the words \" No will made by any male under the age of twenty-one years, or by any female under the age of eighteen years,\", of the words \"No will made by any person under the age of eighteen years,\"",
+      "why_relevant": "Background only. It records the earlier statutory position, twenty-one years for males and eighteen for females, equalised at eighteen in 1993, which the 2022 amendment has now superseded, and it shows where the old age rule sat in the Ordinance.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Enacted 1993. It amended section 3 of the Wills Ordinance, which was repealed outright by Act No. 29 of 2022, so it has no operative effect at the October 2025 matter date and is used here only to explain the history.",
+      "verification_status": "verified",
+      "verifier_note": "Correctly recorded as historical background with applicable_to_matter_date false; the amended s.3 was itself repealed by 29-2022 s.3."
+    },
+    {
+      "provision_id": "PROV-M021-005",
+      "section_id": "7-1840/s4",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "4",
+      "subsection": "(1) and (2)",
+      "relevant_excerpt": "No will, testament, or codicil containing any devise of land or other immovable property, or any bequest of movable property, or for any other purpose whatsoever, shall be valid unless it shall be in writing and executed subject to the provisions specified in subsection (2); (2) The testator shall - (a) sign; and (b) affix his left or right thumb impression, at the foot or end of the will, testament or codicil referred to in subsection (1), before a notary public and two witnesses who shall be present at the same time",
+      "why_relevant": "This is the core of the procedure the testator must follow. The will must be in writing; the testator must sign and affix his thumb impression at the foot or end of the instrument, and must do so before a notary public and two witnesses all present at the same time. The proviso allows another finger impression or a toe impression where the thumb impression cannot be obtained.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 4 was renumbered and expanded by the Prevention of Frauds (Amendment) Act No. 30 of 2022 (latest_change_year 2022), so this text was in force before October 2025.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording and role are right, but the proviso permitting another finger impression or a toe impression, which the gold answer and CL-M021-Q01-005 rely on, sits in 7-1840/s4 outside the recorded relevant_excerpt; the excerpt should be extended to the end of subsection (2) so the quoted text carries the whole rule relied on."
+    },
+    {
+      "provision_id": "PROV-M021-006",
+      "section_id": "30-2022/s3",
+      "act_id": "30-2022",
+      "formal_title": "Prevention of Frauds (Amendment) Act",
+      "number_and_year": "No. 30 of 2022",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "by the addition immediately after subsection (1) of that section, the following new subsection: - \"(2) The testator shall – (a) sign; and (b) affix his left or right thumb impression, at the foot or end of the will, testament or codicil referred to in subsection (1), before a notary public and two witnesses who shall be present at the same time",
+      "why_relevant": "Shows that the thumb impression requirement for wills is itself a recent statutory change, introduced in 2022 alongside the Wills Ordinance amendment. It supports the temporal claim that the execution formalities stated in the answer are the current ones.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted 2022, in force before the October 2025 matter date.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt is a verbatim substring of 30-2022/s3; note that search_corpus.py check reports FAIL for it from a Windows console because the en dash in 'The testator shall -' is mangled in argv, not because the text differs."
+    },
+    {
+      "provision_id": "PROV-M021-007",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(20)(h)",
+      "relevant_excerpt": "in the case of a will- (i) set out in the attestation of the will that the testator was in good and sound mind to execute the will; and (ii) enter in the deed register maintained by him, the number assigned to such will, the date and the name of the testator.",
+      "why_relevant": "This is the will-specific notarial duty and the point at which the chronic illness in the scenario bites procedurally: the attesting notary must state in the attestation that the testator was of good and sound mind when he executed the will, and must enter the will's number, its date and the testator's name in his deed register.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (20)(h) was added to section 31 by the Notaries (Amendment) Act No. 31 of 2022; section 31 was further amended by Act No. 6 of 2024, which did not disturb paragraph (h). Both changes precede October 2025.",
+      "verification_status": "verified",
+      "verifier_note": "Rule (20)(h) confirmed as inserted by 31-2022 s.16(11)(d) and untouched by 6-2024 s.3(7), which reached only paragraph (g)."
+    },
+    {
+      "provision_id": "PROV-M021-008",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(12)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+      "why_relevant": "Reinforces the simultaneous-presence requirement from the notary's side: the testator and the witnesses must sign in the notary's presence and in the presence of one another, and the notary must sign in their presence.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Long-standing rule in section 31, not altered by the 2022 or 2024 amending Acts. In force at October 2025.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M021-009",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(8)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument to which at least two witnesses have not subscribed their signatures in letters.",
+      "why_relevant": "Fixes the minimum of two attesting witnesses subscribing in letters, matching the two witnesses the Prevention of Frauds Ordinance requires for a will.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force at October 2025; not amended by Act No. 31 of 2022 or Act No. 6 of 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M021-010",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(17)(b)(iii)",
+      "relevant_excerpt": "in the case of a deed of transfer or a deed of gift, or deed of exchange or a will, he shall affix to the protocol of such instrument passport size photographs of the signatories, other than the witnesses, to which the notary has affixed his seal and shall keep copies of national identity card, passport or driving licence of such signatories attached to the protocol",
+      "why_relevant": "A current, will-specific step in the notarial procedure: the notary must attach a sealed passport size photograph of the testator and a copy of his identity document to the protocol of the will.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "This text of rule (17)(b)(iii) was substituted by the Notaries (Amendment) Act No. 6 of 2024, in force before October 2025.",
+      "verification_status": "verified",
+      "verifier_note": "Subsection label (17)(b)(iii) confirmed against 6-2024 s.3(6)(a), which substituted that sub paragraph and moved the photographs from the original to the protocol."
+    },
+    {
+      "provision_id": "PROV-M021-011",
+      "section_id": "7-1840/s11",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "11",
+      "subsection": null,
+      "relevant_excerpt": "If any person shall attest the execution of any will, testament, or codicil to whom or to whose wife or husband any beneficial devise, legacy, estate, interest, gift, disposition, or appointment of or affecting any immovable or movable property",
+      "why_relevant": "A practical constraint on the choice of the two witnesses: a benefit given by the will to an attesting witness, or to that witness's spouse, is void so far as that witness is concerned, although the witness remains competent to prove the will.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1840, with no amendment recorded in the corpus. Applicable at October 2025.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M021-012",
+      "section_id": "7-1840/s16",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "16",
+      "subsection": null,
+      "relevant_excerpt": "Every deed or other instrument, except any will, testament, or codicil required by this Ordinance to be executed or acknowledged before or to be attested by a notary, shall be executed, acknowledged, or attested in triplicate.",
+      "why_relevant": "Wills are expressly excepted from the triplicate execution rule that applies to other notarially attested instruments, so the procedure for this will does not include execution in triplicate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 16 carries a 2022 change made through the Prevention of Frauds (Amendment) Act No. 30 of 2022; the text relied on was in force at October 2025.",
+      "verification_status": "verified",
+      "verifier_note": "Confirmed, including that the word triplicate in the excerpt is the text as substituted by 30-2022 s.5 for the former word duplicate."
+    },
+    {
+      "provision_id": "PROV-M021-013",
+      "section_id": "7-1840/s9",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "9",
+      "subsection": null,
+      "relevant_excerpt": "Every will, testament, or codicil executed in manner herein before required shall be valid without any other publication thereof: Provided always that every such will, testament, or codicil shall, after the decease of the testator or testatrix, be duly proved and recorded in the District Court empowered by law to grant probate or administration",
+      "why_relevant": "Background. Once executed in the required manner the will needs no further publication during the testator's lifetime; proof of the will is a step for the District Court after his death, not part of what the testator must do now.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force since 1840 with no recorded amendment. Applicable at October 2025.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M021-014",
+      "section_id": "21-1844/s9",
+      "act_id": "21-1844",
+      "formal_title": "Wills Ordinance",
+      "number_and_year": "No. 21 of 1844",
+      "section": "9",
+      "subsection": null,
+      "relevant_excerpt": "Whenever in this Ordinance the word 'will' is used it shall be construed to extend to a testament and to a codicil, and to any other testamentary disposition",
+      "why_relevant": "The interpretation section. It fixes the meaning of 'will' in the Ordinance, so the eighteen-year rule in section 2 governs codicils and other testamentary dispositions as well as the will itself.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Amended by Act No. 29 of 2022, which extended the definition of 'landed property' to condominium and land parcels. The definition of 'will' relied on here is unchanged and in force at October 2025.",
+      "verification_status": "verified",
+      "verifier_note": "Confirmed; the 2022 change made by 29-2022 s.6 touched only the 'landed property' limb, not the definition of 'will' relied on."
+    },
+    {
+      "provision_id": "PROV-M021-901",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "(9)",
+      "relevant_excerpt": "he shall satisfy himself, before accepting them as witnesses, that they are persons of good repute and that they are well acquainted with the executant and know his proper name, occupation, and residence, and the witnesses shall sign a declaration at the foot of the deed or instrument that they are well acquainted with the executant and know his proper name, occupation, and residence.",
+      "why_relevant": "Added by the verifier. Rule (9) is a mandatory step in the execution procedure that the map omitted: the notary must establish the identity of the executant (by acquaintance or by inspecting the national identity card, passport bio page or driving licence), must satisfy himself that the two witnesses are of good repute and well acquainted with the testator, and the witnesses must sign a declaration to that effect at the foot of the instrument. The enriched facts put two neighbours forward as witnesses, so the rule is squarely engaged.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (9) in its present form was substituted by the Notaries (Amendment) Act No. 31 of 2022 s.16(6) and further amended by the Notaries (Amendment) Act No. 6 of 2024 s.3(3); both precede the October 2025 matter reference date.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier; excerpt checked verbatim against 1-1907/s31."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M021-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Both limbs of the question are statutory. The age at which a person may execute a will is fixed by Wills Ordinance s.2 as substituted by Act No. 29 of 2022, read with the repeal of the old s.3 by the same Act. The procedure is fixed by Prevention of Frauds Ordinance s.4 as amended in 2022 and by the notarial rules in Notaries Ordinance s.31, including the will-specific rule (20)(h). No part of the answer needs judicial authority. The chronic illness raises the common-law question of a sound and disposing mind, but that is not what is asked; it is handled here only through the notary's statutory duty to certify sound mind, and the common-law dimension is recorded in corpus_gaps for the verifier.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M021-Q01-01",
+          "issue": "What is the minimum age at which a person may lawfully execute a last will under the Wills Ordinance as most recently amended, and is a person of twenty competent?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M021-Q01-02",
+          "issue": "What formalities must be observed for the will to be valid: writing, signature, thumb impression, and the presence of a notary public and two witnesses at the same time.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M021-Q01-03",
+          "issue": "What duties fall on the attesting notary in the case of a will, in particular the statement of the testator's sound mind in the attestation, the deed register entry and the protocol requirements.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M021-Q01-04",
+          "issue": "What practical constraints govern the choice of attesting witnesses and the number of copies to be executed.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M021-001",
+        "PROV-M021-002",
+        "PROV-M021-005",
+        "PROV-M021-007"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M021-003",
+        "PROV-M021-006",
+        "PROV-M021-008",
+        "PROV-M021-009",
+        "PROV-M021-010",
+        "PROV-M021-011",
+        "PROV-M021-012",
+        "PROV-M021-901"
+      ],
+      "background_provision_ids": [
+        "PROV-M021-004",
+        "PROV-M021-013",
+        "PROV-M021-014"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps across enactments: (1) Wills Ordinance s.2 as substituted, which yields the current age rule only when read with the amending provision in Act No. 29 of 2022; (2) from capacity to the execution formalities in Prevention of Frauds Ordinance s.4, a second enactment; (3) from those formalities to the notary's will-specific attestation duty in Notaries Ordinance s.31(20)(h), a third enactment.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M021-002",
+          "to_provision_id": "PROV-M021-001",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M021-003",
+          "to_provision_id": "PROV-M021-001",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M021-001",
+          "to_provision_id": "PROV-M021-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M021-006",
+          "to_provision_id": "PROV-M021-005",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M021-005",
+          "to_provision_id": "PROV-M021-007",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M021-005",
+          "to_provision_id": "PROV-M021-008",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M021-005",
+          "to_provision_id": "PROV-M021-009",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M021-007",
+          "to_provision_id": "PROV-M021-010",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M021-012",
+          "to_provision_id": "PROV-M021-005",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M021-011",
+          "to_provision_id": "PROV-M021-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M021-014",
+          "to_provision_id": "PROV-M021-001",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M021-004",
+          "to_provision_id": "PROV-M021-003",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M021-005",
+          "to_provision_id": "PROV-M021-901",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Sunil who is a 20 year old boy is suffering from a non-curable chronic disease and intends to execute a Last Will.",
+        "enriched_background": "Sunil Bandara Weerakoon, who was born on 14 March 2005 and is therefore 20 years old, lives at No. 27/3, Temple Lane, Nugegoda. He is suffering from a non-curable chronic disease and intends to execute a Last Will. He is unmarried and has no children. His treating consultant physician recorded on 2 September 2025 that although his physical condition is deteriorating he remains fully lucid, understands his affairs, and is able to sign his name and to place a thumb impression without assistance. Sunil wishes to dispose of two assets: a two-storey house standing on the land called Millagahawatta, Lot B in Survey Plan No. 4521 dated 12 June 2018 made by S. Ranaweera, Licensed Surveyor, situated at Pelawatta in the District of Colombo, which came to him under Deed of Gift No. 1120 dated 3 May 2019 from his grandmother; and a fixed deposit of Rs. 2,500,000 held in his own name. He wishes to leave the house to his sister Nayana and the deposit to his mother, and to appoint his uncle Mr. D. B. Weerakoon as executor. He has instructed Mr. K. Perera, a notary public practising in the Colombo District in the Sinhala language, to draw a last will for him alone and not a joint will, and Mr. Perera proposes to attend at Sunil's residence on 20 October 2025 for the execution. The two persons Sunil proposes to have as witnesses are his neighbours Mr. A. Silva and Mrs. R. Fernando, neither of whom, nor either of their spouses, takes any benefit under the intended will.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M021-Q01-001",
+            "fact": "Sunil's full name is Sunil Bandara Weerakoon, he was born on 14 March 2005, he lives at No. 27/3, Temple Lane, Nugegoda, and he is unmarried with no children.",
+            "origin": "synthetic_decisive",
+            "reason": "The background gives an age but no date of birth or identity. Fixing the date of birth makes it determinate that he had completed eighteen years before the intended execution date, which is the condition in the age provision.",
+            "activates_provision_ids": [
+              "PROV-M021-001",
+              "PROV-M021-002"
+            ],
+            "counterfactual_effect": "If his date of birth put him under eighteen years at the date of execution he would not be competent to execute a will and the will would be invalid.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M021-Q01-002",
+            "fact": "A consultant physician recorded on 2 September 2025 that Sunil remains fully lucid, understands his affairs, and can sign his name and place a thumb impression without assistance despite his deteriorating physical condition.",
+            "origin": "synthetic_decisive",
+            "reason": "The chronic illness in the original background leaves it open whether the testator can satisfy the signature and thumb impression requirement and whether the notary can properly certify sound mind. This fact closes both gaps.",
+            "activates_provision_ids": [
+              "PROV-M021-005",
+              "PROV-M021-007"
+            ],
+            "counterfactual_effect": "If he could not place a thumb impression the proviso allowing another finger impression or a toe impression would be engaged; if he were not of sound mind the notary could not make the statement the attestation requires.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M021-Q01-003",
+            "fact": "The property to be disposed of is a two-storey house on the land called Millagahawatta, Lot B in Survey Plan No. 4521 dated 12 June 2018 made by S. Ranaweera, Licensed Surveyor, at Pelawatta in the District of Colombo, held by Sunil under Deed of Gift No. 1120 dated 3 May 2019, together with a fixed deposit of Rs. 2,500,000 in his own name; the house is to go to his sister Nayana and the deposit to his mother, with his uncle Mr. D. B. Weerakoon as executor.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the missing property and party identity so that the disposition is determinate. It shows the estate comprises both immovable and movable property, which is the scope of the age provision, but it does not change the outcome.",
+            "activates_provision_ids": [
+              "PROV-M021-001",
+              "PROV-M021-014"
+            ],
+            "counterfactual_effect": "None on validity. If the estate were purely movable the same age rule and the same execution formalities would still apply.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M021-Q01-004",
+            "fact": "The instrument to be executed is a last will for Sunil alone and not a joint will, drawn by Mr. K. Perera, a notary public practising in the Colombo District in the Sinhala language, who will attend at Sunil's residence on 20 October 2025 for the execution.",
+            "origin": "synthetic_decisive",
+            "reason": "The original background does not identify the instrument or say whether a notary is involved, yet the whole procedure turns on execution before a notary public. Naming the notary and the date also fixes the law to be applied as at the matter reference date.",
+            "activates_provision_ids": [
+              "PROV-M021-005",
+              "PROV-M021-007",
+              "PROV-M021-008",
+              "PROV-M021-010"
+            ],
+            "counterfactual_effect": "If the will were executed without a notary public present it would not be valid; if it were a joint will, testamentary proceedings on the death of one testator would take a further prescribed course.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M021-Q01-005",
+            "fact": "The two proposed attesting witnesses are Sunil's neighbours Mr. A. Silva and Mrs. R. Fernando, and neither they nor their spouses take any benefit under the intended will.",
+            "origin": "synthetic_decisive",
+            "reason": "Two witnesses present at the same time are required, and a benefit to an attesting witness or that witness's spouse is void. Naming disinterested witnesses makes the scenario determinate on both points.",
+            "activates_provision_ids": [
+              "PROV-M021-005",
+              "PROV-M021-009",
+              "PROV-M021-011"
+            ],
+            "counterfactual_effect": "If a witness or a witness's spouse were a beneficiary, the gift to that person would be void so far as that witness is concerned, although the will itself would stand and the witness could still prove it.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Two issues arise. First, what is the minimum age for executing a last will under the Wills Ordinance as most recently amended, and whether Sunil, who is 20, meets it. Second, what procedure Sunil must follow to execute a valid last will, given that he is seriously ill and wishes to dispose of both a house and a fixed deposit.",
+        "rule": "The latest amendment to the Wills Ordinance is the Wills Ordinance (Amendment) Act No. 29 of 2022. Section 2 of that Act repealed section 2 of the Ordinance and substituted a new section under which it is lawful for any person who has reached the age of eighteen years, residing within or outside Sri Lanka, to execute a will disposing of movable and immovable property (Wills Ordinance s.2(1)). Section 3 of the amending Act repealed section 3 of the Ordinance, the provision that had invalidated wills made below the prescribed age and that had earlier been amended by Act No. 5 of 1993 to replace twenty-one years for males and eighteen years for females with a uniform eighteen years. The age limit is therefore eighteen completed years. The word will in the Ordinance extends to a testament, a codicil and any other testamentary disposition (Wills Ordinance s.9). As to form, no will is valid unless it is in writing and executed as prescribed, and the testator must sign and affix his left or right thumb impression at the foot or end of the will before a notary public and two witnesses who are present at the same time; if the thumb impression cannot be obtained, another finger impression or the toe impression is to be affixed (Prevention of Frauds Ordinance s.4(1) and (2), as amended by Act No. 30 of 2022). The notary must not attest unless at least two witnesses have subscribed their signatures in letters (Notaries Ordinance s.31(8)) and unless the executant and the witnesses have signed in his presence and in the presence of one another, he himself signing in their presence (Notaries Ordinance s.31(12)). In the case of a will the notary must set out in the attestation that the testator was in good and sound mind to execute the will, and must enter in his deed register the number assigned to the will, its date and the name of the testator (Notaries Ordinance s.31(20)(h)). For a will the notary must also affix to the protocol a sealed passport size photograph of the signatory and keep a copy of his identity document with the protocol (Notaries Ordinance s.31(17)(b)(iii)). A will is excepted from the requirement that notarial instruments be executed in triplicate (Prevention of Frauds Ordinance s.16). A benefit given by the will to an attesting witness or to that witness's spouse is void so far as that witness is concerned, though the witness remains competent to prove the will (Prevention of Frauds Ordinance s.11). A will duly executed needs no other publication; it is proved in the District Court after the testator's death (Prevention of Frauds Ordinance s.9).",
+        "application": "Sunil was born on 14 March 2005 and is 20 years old at the intended date of execution, so he has reached the age of eighteen years and is competent under Wills Ordinance s.2(1) as substituted in 2022. His estate consists of an immovable property held on a deed of gift and a fixed deposit, both of which fall within the movable and immovable property that s.2(1) permits him to dispose of, and s.9 of the Ordinance means the same rule would govern any codicil he later makes. His illness does not by itself affect competence under the Ordinance; his physician's record that he remains lucid and able to sign and place a thumb impression means the notary can properly make the statement of good and sound mind that Notaries Ordinance s.31(20)(h) requires, and that the signature and thumb impression required by Prevention of Frauds Ordinance s.4(2) can be obtained. Had the thumb impression been unobtainable, the proviso permitting another finger impression or a toe impression would apply. The procedure he should follow is therefore to have the notary draw the will in writing; to assemble the notary and his two neighbours as witnesses at his residence at the one time; to sign and affix his thumb impression at the foot or end of the will in the presence of all of them, with the two witnesses subscribing their signatures in letters in his presence and in the presence of one another and of the notary, and the notary signing in their presence, as s.4(2) and Notaries Ordinance s.31(8) and (12) require; and to allow the notary to complete the attestation stating the sound mind of the testator, to make the deed register entry, and to attach the photograph and the copy of the identity document to the protocol. Because his chosen witnesses take no benefit under the will, Prevention of Frauds Ordinance s.11 does not cut down any of the gifts. Only one instrument need be executed, s.16 excepting wills from the triplicate rule, and no publication is needed during his lifetime, the will being proved in the District Court after his death under s.9.",
+        "conclusion": "The age limit for executing a last will is eighteen years, fixed by Wills Ordinance s.2(1) as substituted by the Wills Ordinance (Amendment) Act No. 29 of 2022, the former section 3 having been repealed by the same Act. Sunil, at 20, is competent to make a will disposing of both his house and his fixed deposit. To make it valid he must execute it in writing and sign it, together with his thumb impression, at the foot or end of the will before a notary public and two witnesses all present at the same time, the notary attesting it, stating in the attestation that Sunil was of good and sound mind, entering the will in his deed register and attaching Sunil's photograph and a copy of his identity document to the protocol. His illness is no bar so long as he is of sound mind at execution, and if his thumb impression cannot be taken another finger impression or a toe impression may be used instead."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M021-Q01-001",
+          "claim_text": "The most recent amendment to the Wills Ordinance is the Wills Ordinance (Amendment) Act No. 29 of 2022, which repealed and substituted section 2 of the Ordinance.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M021-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-002",
+          "claim_text": "Under the substituted section 2(1) it is lawful for any person who has reached the age of eighteen years, residing within or outside Sri Lanka, to execute a will disposing of movable and immovable property, so the age limit is eighteen completed years.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M021-001",
+            "PROV-M021-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-003",
+          "claim_text": "Section 3 of the Wills Ordinance, which formerly invalidated wills made below the prescribed age and had been amended in 1993 to set a uniform age of eighteen years for males and females, was repealed by the 2022 amending Act, so the age question is now answered solely by section 2.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M021-003",
+            "PROV-M021-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-004",
+          "claim_text": "The word will in the Wills Ordinance extends to a testament, a codicil and any other testamentary disposition.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M021-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-005",
+          "claim_text": "A will is not valid unless it is in writing and the testator signs and affixes his left or right thumb impression at the foot or end of the will before a notary public and two witnesses who are present at the same time, another finger impression or the toe impression being permitted where the thumb impression cannot be obtained.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M021-005",
+            "PROV-M021-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-006",
+          "claim_text": "The notary may not attest unless at least two witnesses have subscribed their signatures in letters and unless the executant and the witnesses have signed in his presence and in the presence of one another, the notary signing in their presence.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M021-008",
+            "PROV-M021-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-007",
+          "claim_text": "In the case of a will the notary must state in the attestation that the testator was in good and sound mind to execute the will and must enter the number assigned to the will, its date and the testator's name in his deed register.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M021-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-008",
+          "claim_text": "For a will the notary must also affix to the protocol a sealed passport size photograph of the signatory and keep a copy of his national identity card, passport or driving licence attached to the protocol.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M021-010"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-009",
+          "claim_text": "A benefit given by the will to an attesting witness or to that witness's spouse is void so far as that witness is concerned, although the witness remains competent to prove the will.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M021-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-010",
+          "claim_text": "A will is excepted from the rule that notarially attested instruments be executed in triplicate, and once duly executed it needs no other publication, being proved in the District Court after the testator's death.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M021-012",
+            "PROV-M021-013"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-011",
+          "claim_text": "Sunil, born on 14 March 2005 and aged 20 at the intended date of execution, has reached the age of eighteen years and is competent to execute a will.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M021-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M021-Q01-001",
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-012",
+          "claim_text": "The house held on the deed of gift and the fixed deposit are respectively immovable and movable property within what section 2(1) permits a testator to dispose of.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M021-001",
+            "PROV-M021-014"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M021-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-013",
+          "claim_text": "Sunil's chronic illness does not affect his competence under the Ordinance, and because he remains lucid and able to sign and place a thumb impression, the notary can properly certify his good and sound mind and the signature and thumb impression required at execution can be obtained.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M021-005",
+            "PROV-M021-007"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M021-Q01-002",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M021-Q01-014",
+          "claim_text": "The steps Sunil should follow are to have the will drawn in writing, to sign it and affix his thumb impression at its foot or end before the notary and his two witnesses all present at the same time, with the witnesses subscribing in letters in the presence of each other and of the notary, and to let the notary complete the attestation, the deed register entry and the protocol requirements.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M021-005",
+            "PROV-M021-007",
+            "PROV-M021-008",
+            "PROV-M021-009",
+            "PROV-M021-010"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M021-Q01-004",
+            "FACT-M021-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-015",
+          "claim_text": "Because the two proposed witnesses and their spouses take no benefit under the will, no gift in the will is cut down on account of the attestation.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M021-011"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M021-Q01-005"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-016",
+          "claim_text": "Only one instrument need be executed and no publication is required during Sunil's lifetime.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M021-012",
+            "PROV-M021-013"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M021-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M021-Q01-017",
+          "claim_text": "The age limit is eighteen years and Sunil, at 20, may lawfully execute a last will disposing of his house and his fixed deposit.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M021-001",
+            "PROV-M021-002"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M021-Q01-001",
+            "FACT-M021-Q01-003",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M021-Q01-018",
+          "claim_text": "To be valid the will must be in writing and signed by Sunil, with his thumb impression, at the foot or end before a notary public and two witnesses present at the same time, the notary attesting it, stating his good and sound mind, entering it in the deed register and attaching his photograph and a copy of his identity document to the protocol.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M021-005",
+            "PROV-M021-007",
+            "PROV-M021-010"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M021-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

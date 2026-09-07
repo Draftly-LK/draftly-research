@@ -1,0 +1,67 @@
+{
+  "benchmark_matter_id": "M067",
+  "source_matter_id": "P11-Q09-M01",
+  "grouping_key": "P11-Q09-M01",
+  "paper_no": 11,
+  "question_no": 9,
+  "selection_status": "candidate",
+  "matter_background": {
+    "original": "A minor owns a land.",
+    "normalized": "A minor owns a land.",
+    "source_fields": [
+      {
+        "segment_index": 0,
+        "field": "own_background",
+        "atomic_ids": [
+          "P11-Q09-P05"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "benchmark_question_id": "M067-Q01",
+      "atomic_id": "P11-Q09-P05",
+      "part_uid": "paper-11/q9/5",
+      "part_id": "5",
+      "item_id": null,
+      "marks": 1,
+      "pdf_page": 47,
+      "question_original": "Is it possible for the father of the child to sell the property? If so, explain the procedure.",
+      "question_normalized": "Is it possible for the father of the child to sell the property? If so, explain the procedure.",
+      "question_specific_context": {
+        "group_background": null,
+        "prior_background": [],
+        "own_background": null
+      },
+      "effective_background_original": "A minor owns a land.",
+      "effective_background_normalized": "A minor owns a land.",
+      "source_quote": "5. A minor owns a land. Is it possible for the father of the child to sell the property?\nIf so, explain the procedure.\n(1 mark)",
+      "classification": {
+        "context_sources": [
+          "local"
+        ],
+        "context_dependency": "partial",
+        "scenario_richness": "minimal",
+        "extraction_quality": "clean",
+        "candidate_action": "enrich",
+        "confidence": 0.8,
+        "flags": [
+          "needs_review: very short own_background"
+        ]
+      },
+      "tier": "A",
+      "tier_b_reasons": [],
+      "missing_fact_types": [
+        "party_identity",
+        "party_legal_capacity",
+        "property_identity",
+        "consideration_or_value"
+      ]
+    }
+  ],
+  "matter_reference_date": "2020-10",
+  "exam_session": "OCTOBER 2020",
+  "matter_tier": "A",
+  "tier_a_question_count": 1
+}

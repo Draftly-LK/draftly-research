@@ -1,0 +1,193 @@
+{
+  "benchmark_matter_id": "M071",
+  "verifier": "verifier-M071",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:58:08Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M071-001",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-002",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-003",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-004",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-005",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-006",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-007",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-008",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-009",
+      "decision": "partially_verified",
+      "note": "Wording is verbatim, but the corpus consolidated text of section 31 has lost the \"(26)\" and paragraph \"(a)/(c)\" markers (the passage runs straight on after rule (25)(d)), so the subsection label \"rule (26)(c)(i)\" is reconstructed from the cross-references in 6-2024 s.3(8) and section 34(2) rather than read off the corpus; the excerpt also stops before the words \"and shall, if called upon so to do ... produce the duplicate ... for inspection\", which claim CL-M071-Q01-009 relies on and which are present in the corpus body."
+    },
+    {
+      "provision_id": "PROV-M071-010",
+      "decision": "partially_verified",
+      "note": "Wording is verbatim and unaffected by 31-2022 s.16 or 6-2024 s.3, but the subsection label \"rule (26)(c)(ii)\" is reconstructed: the corpus consolidated text does not print the \"(26)\" or \"(c)\" markers."
+    },
+    {
+      "provision_id": "PROV-M071-011",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-012",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-013",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-014",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-015",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-016",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-017",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim and the quoted words were unchanged at April 2020, but the temporal note is wrong to say rule (29) was not touched by 6-2024 s.3: s.3(9) substituted \"in the Form F 1\" for \"in the Form F\" in that rule, in the part of it that falls after the end of this excerpt."
+    },
+    {
+      "provision_id": "PROV-M071-018",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-019",
+      "decision": "partially_verified",
+      "note": "Excerpt is verbatim and the researcher is right to mark it inapplicable at the matter date, but the corpus holds only the text substituted by 31-2022 s.17, so nothing in the corpus establishes the April 2020 shape of the offence or its penalty; treat it as supporting background only."
+    },
+    {
+      "provision_id": "PROV-M071-020",
+      "decision": "verified",
+      "note": ""
+    },
+    {
+      "provision_id": "PROV-M071-021",
+      "decision": "partially_verified",
+      "note": "Text and 2020 applicability are right, but the temporal note is wrong to say there are no amendment events: section 4A was inserted by Notaries (Amendment) Law No. 20 of 1976 s.4 and has been in force since 1976."
+    },
+    {
+      "provision_id": "PROV-M071-901",
+      "decision": "verified",
+      "note": "Added by the verifier; excerpt checked verbatim against 1-1907/s31."
+    }
+  ],
+  "added_provisions": [
+    {
+      "provision_id": "PROV-M071-901",
+      "reason": "Section 32(2)(iii) only names rule (19); claims CL-M071-Q01-006 and CL-M071-Q01-013 assert what rule (19) forbids (erasure, alteration or interpolation after signature), so the rule itself had to be quoted. Excerpt checked verbatim against 1-1907/s31 and confirmed untouched by 31-2022 s.16 and 6-2024 s.3."
+    }
+  ],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M071-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "proposed_gold",
+      "authority_requirement_after": "statute_only",
+      "note": "The question is expressly confined to the Notaries Ordinance and rules 31(8), (12), (18), (19), (20), (22)-(26), (28), (29) with sections 32(2) and 33 answer it without common law or case law, so statute_only stands. Seventeen of 22 provisions verified outright; the five partially verified ones are all supporting or background, none indispensable, so the question is not downgraded. One conclusion claim (CL-M071-Q01-017) is marked disputed because its s.34 limb cannot be dated to April 2020 from the corpus."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "temporal_note_accuracy",
+      "researcher_position": "Rule 31(29) and section 4A carry no amendment events relevant to the matter, so both temporal notes say the provisions were untouched.",
+      "verifier_position": "Rule 31(29) was amended by Notaries (Amendment) Act No. 6 of 2024 s.3(9) (Form F to Form F 1), and section 4A was inserted by Notaries (Amendment) Law No. 20 of 1976 s.4. Neither changes the April 2020 position of the words actually relied on, but the notes as written overstate the position, and the first corpus_gaps entry repeats the rule (29) error.",
+      "supporting_sources": [
+        "6-2024/s3",
+        "20-1976/s4",
+        "1-1907/s31",
+        "1-1907/s4A"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "scope_of_rule_31(22)",
+      "researcher_position": "Rule 31(22) bars Nimal Perera from attesting the father's execution in Kandy because Colombo and Kandy are different areas of authorised practice.",
+      "verifier_position": "The corpus supports the rule but not the geography: nothing in the Notaries Ordinance as held here defines the judicial zones, so the step from 'practising in Colombo' to 'not authorised in Kandy' rests on facts outside the corpus. The conclusion is very likely right, but a lawyer should confirm the zone boundaries as at April 2020.",
+      "supporting_sources": [
+        "1-1907/s31",
+        "1-1907/s4A",
+        "1-1907/s9",
+        "1-1907/s3",
+        "1-1907/s4"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M071-Q01-017: the limb asserting an offence under section 34 is not datable to April 2020 from the corpus, which holds only the text substituted by 31-2022 s.17; marked disputed rather than rejected because the rule 31(12) breach and the section 33 limb are sound.",
+      "CL-M071-Q01-009: the phrase 'produced if the Registrar of Lands calls for it' is in the corpus body of rule (26)(c)(i) but falls outside the quoted excerpt in PROV-M071-009, which stops at 'under paragraph (a)'.",
+      "CL-M071-Q01-014: 'the execution should be completed within three months' is a practical gloss; rule (26)(c)(ii) imposes no completion deadline, only a power in the Registrar of Lands to call for the duplicate after three months. Left verified because the second half of the claim states the rule correctly."
+    ],
+    "temporal_issues": [
+      "Rule 31(29): amended by 6-2024 s.3(9) after the matter date; the amendment falls after the end of the quoted excerpt, so reliance holds. PROV-M071-017 marked partially_verified.",
+      "Section 4A: inserted by 20-1976 s.4, so the temporal note's 'no amendment events in the corpus' is wrong; in force since 1976 and applicable at April 2020. PROV-M071-021 marked partially_verified.",
+      "Section 34: corpus holds only the post-2022 substituted text. Researcher correctly set applicable_to_matter_date=false and kept it supporting. PROV-M071-019 marked partially_verified.",
+      "Confirmed against 31-2022 s.16 and 6-2024 s.3 that rules (8), (12), (18), (19), (20) chapeau/(a)/(c), (22), (23), (24), (25) and (28) and sections 9, 32 and 33 were untouched by both Acts, so the researcher's rule-by-rule temporal reasoning holds for every indispensable provision. Rules (9), (20)(b), (20)(e), (20)(g), (30A) in the corpus are post-2020 text and were correctly left out."
+    ],
+    "missing_definitions_or_exceptions": [
+      "Rule 31(19) was named through section 32(2)(iii) but never quoted; added as PROV-M071-901.",
+      "The corpus has no definition of 'area' or 'judicial zone' (defs on 1-1907 returns nothing; section 43 defines only 'Council of Legal Education', 'High Court Judge' and 'Registrar-General'), so the reach of rule 31(22) is fixed only by sections 3, 4 and 4A.",
+      "Rule 31(21) (attestation substantially in Form E of the Second Schedule) and rule 31(26)(a)(i) (Form F 1 monthly list) are in the corpus body but not on the map; the Schedule forms themselves are not searchable, which the researcher recorded as a corpus gap.",
+      "Section 33's proviso (no validity given to an instrument invalid under any other written law) is outside the PROV-M071-018 excerpt; it matters because a partition deed also has to satisfy the Prevention of Frauds Ordinance, which the researcher deliberately did not cite."
+    ],
+    "case_law_dependence": [
+      "None. Every step, including the two-notary mechanism, comes from the text of section 31 rules (25), (28) and section 32(2); no judicial gloss is needed."
+    ],
+    "enrichment_issues": [
+      "None. enrichment.applied is false and the question is a keep, which matches the candidate file."
+    ],
+    "duplicate_or_leak_issues": [
+      "None. The background is the unmodified exam background; indispensable, supporting and background provision sets are disjoint and every referenced provision exists."
+    ]
+  },
+  "lawyer_questions": [
+    "Does rule 31(22), read with sections 3, 4 and 4A, bar a Colombo-warranted notary from attesting anywhere in the Kandy judicial zone as at April 2020, and were Colombo and Kandy separate judicial zones at that date? The whole 'he cannot travel to Kandy' limb turns on this and the corpus does not define the zones.",
+    "Was section 34 in its April 2020 form (before the substitution by Notaries (Amendment) Act No. 31 of 2022 s.17) an offence provision covering breach of rule 31(12), and at what fine level after the Increase of Fines Act No. 12 of 2005? The corpus holds only the post-2022 text.",
+    "Should the gold answer also flag the Prevention of Frauds Ordinance and the Partition Law, or is confining it to the Notaries Ordinance the right reading of a three-mark question that asks only about that Ordinance?"
+  ]
+}

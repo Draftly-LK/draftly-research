@@ -1,0 +1,392 @@
+{
+  "generated": "2026-09-04T23:39:29Z",
+  "candidate_funnel": {
+    "source_questions": 667,
+    "keep_enrich_candidates": 210,
+    "quarantined_background_boundary_questions": 18,
+    "quarantined_matters": 18,
+    "buildable_candidates": 192,
+    "candidate_matters": 115,
+    "tier_a_questions": 144,
+    "tier_a_matters": 92,
+    "tier_b_questions": 66,
+    "matters_with_only_tier_b": 23
+  },
+  "annotation": {
+    "matters_annotated": 92,
+    "questions_annotated": 144,
+    "authority_mixed_statute_and_case": 36,
+    "authority_statute_only": 106,
+    "extended_needs_legal_review_with_verified_provisions": 23,
+    "statute_only_proposed_gold": 50,
+    "eligible": 50,
+    "authority_unclear": 2
+  },
+  "eligible_gold_questions": 50,
+  "eligible_gold_matters": 40,
+  "extended_gold_questions": 73,
+  "extended_gold_matters": 61,
+  "reserved": {
+    "mixed-statute-case": 36,
+    "unclear-authority": 2
+  },
+  "excluded": [
+    {
+      "question": "M001-Q01",
+      "reason": "reserved",
+      "detail": "A complete pedigree has to state why Suresh held Lot A free of both life interests from 1991. The corpus contains no provision on the creation, extinction or renunciation of a life interest or usufruct over land; section 36 of the Ordinance sends those questions to Roman-Dutch law, which is outside the frozen corpus. The intestacy arithmetic is statute-sourced and can be verified, but the question as asked is mixed_statute_and_case and is therefore reserved rather than proposed as gold."
+    },
+    {
+      "question": "M002-Q02",
+      "reason": "blocked_missing_authority",
+      "detail": "The corpus holds no Act regulating development in the coastal zone. The approval and the issuing authority the question asks about are created by an enactment outside the corpus, and quoting it from memory is not permitted. Urban Development Authority Law s.8J is recorded as background only."
+    },
+    {
+      "question": "M002-Q03",
+      "reason": "blocked_missing_authority",
+      "detail": "The rate of stamp duty on a deed of transfer of immovable property is prescribed by subsidiary legislation. Neither a rate schedule nor any Order under Stamp Duty Act s.2 or Stamp Duty (Special Provisions) Act s.3 is in the corpus, and the only provincial statute in the corpus is the Western Province Financial Statute while this land is in the Southern Province. The base and the liable party can be stated; the arithmetic cannot."
+    },
+    {
+      "question": "M003-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The rate of stamp duty on a mortgage bond is fixed by Order of the Minister published in the Gazette under s.3 of the Stamp Duty (Special Provisions) Act. No such Order, and no rate schedule, is in the frozen corpus, and the corpus edition of the Stamp Duty Act No. 43 of 1982 carries no schedule either. The 'calculate' limb of the question therefore cannot be answered from corpus text without quoting a rate from memory. The 'where do you pay' limb is fully supported by ss.8(2) and 9 and by Notaries Ordinance s.31, so the question could move to proposed_gold if the rate Order is added to the corpus. Verifier: the block stands and widens. The corpus holds no regulation prescribing a bank for s.8(2), so 'prescribed bank' has no identified referent, and s.9 cannot be applied without List I of the Ninth Schedule to the Constitution, which is not in the corpus. The 'where do you pay' limb is supported only at the level of s.8(2) read with Notaries Ordinance s.31 rule (7A), not down to a named place. Roles of PROV-M003-005 and PROV-M003-006 moved from supporting to background for the reasons in their verifier notes."
+    },
+    {
+      "question": "M004-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "Rule 1 of the Third Schedule to the Land Development Ordinance, the only provision that enumerates the groups of relatives the question asks about, is not in the frozen corpus. The extracted consolidated Ordinance records an empty schedules list and carries no schedule text, and the Land Development (Amendment) Act No. 11 of 2022 named in the question is not in the corpus as a separate instrument. The route to the Schedule (ss.170, 49, 51, 48B, 72, 73) is fully supported, but the list itself cannot be produced without inventing it."
+    },
+    {
+      "question": "M008-Q01",
+      "reason": "reserved",
+      "detail": "Reserved by the verifier. The conclusion that Kamal falls outside section 14(a) and inside section 14(b) rests on an inference about the effect of prescriptive possession that no provision in the corpus states, and that Prescription Ordinance section 3 arguably contradicts on its own words. PROV-M008-005 is partially_verified for that reason and CL-M008-Q01-004, -007 and -009 are disputed. A lawyer must decide whether the exclusion of section 14(a) is sound before this becomes a gold answer."
+    },
+    {
+      "question": "M009-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The operative numeral in Registration of Title Act s.45(1)(a) is absent from the corpus text: the body reads 'shall be forwarded by the Attestor working days of such attestation', with no number before 'working days'. The source JSON carries the same gap, so it is an extraction or transcription defect in the LankaLaw edition, not an amendment. The only in-corpus support for the number of days is the section heading, 'Attestor to forward instruments attested within seven days.' Since the second limb of the question asks precisely for the number of days, the answer is not released as gold until s.45(1)(a) is re-extracted from a Government Printer edition and the numeral confirmed. The first limb, that registration is mandatory, is fully supported by ss.38, 39 and 49 and is unaffected."
+    },
+    {
+      "question": "M011-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The controlling first step, the effect of the prohibition against alienation and the gift over to Subash in Deed of Gift No 515 of 2018, cannot be decided from the corpus. The Abolition of Fideicommissa and Entails Act No. 20 of 1972 is absent, and the Roman-Dutch law of fideicommissum that s 36 of the Ordinance points to is not statute and is not in the corpus. The two available constructions give entirely different owners: Subash alone, or Linda, Sara, Rian and Bimali. A secondary, non-corpus problem is that the background does not say how Prabash's first marriage to Sheela ended, so it does not establish Linda as his lawful surviving spouse for s 22, and it names the same daughter Sunali and then Sonali."
+    },
+    {
+      "question": "M011-Q02",
+      "reason": "blocked_missing_authority",
+      "detail": "Every fraction depends on the anterior question of what Prabash took under Deed of Gift No 515, which the corpus cannot answer: the Abolition of Fideicommissa and Entails Act No. 20 of 1972 is absent and the Roman-Dutch law of fideicommissum that s 36 of the Ordinance refers to is not statute. The two branches give Subash the whole, or give Linda 408/768, Bimali 175/768, Rian 137/768 and Sara 48/768. The intestacy branch further assumes Linda was Prabash's lawful surviving spouse, which the background does not establish."
+    },
+    {
+      "question": "M014-Q01",
+      "reason": "needs_legal_review",
+      "detail": "The fragmentation limb, which the map itself treats as indispensable and load-bearing, cannot be closed from the corpus: the coconut estate definition in s.25 of Act No. 2 of 1958 turns on registration under the Coconut Development Act, No. 46 of 1971, which is absent from the corpus, and the enrichment fact asserts registration with the Coconut Cultivation Board, which is not the statutory limb. PROV-M014-020 is therefore unresolved and a lawyer must decide whether the consent requirement bites before this can be gold. The notarial steps in the answer are separately verified."
+    },
+    {
+      "question": "M017-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The question asks for a calculation. The Stamp Duty (Special Provisions) Act No. 12 of 2006 imposes the charge but delegates the rate to a Ministerial Order published in the Gazette under s.3(1), and no such Order is in the frozen corpus; the Stamp Duty Act No. 43 of 1982 as extracted carries no Schedule of rates either. Whether the refundable deposit enters the base is likewise a matter for the Order. A number cannot be given without quoting a rate from outside the corpus."
+    },
+    {
+      "question": "M017-Q02",
+      "reason": "reserved",
+      "detail": "Not a statutory question. The answer is arithmetic on the parties' agreed terms, and how the advance is appropriated depends on the construction of the lease and on Roman-Dutch common law, neither of which is in the corpus. The candidate classification already flags the part as arithmetic rather than legal analysis."
+    },
+    {
+      "question": "M017-Q03",
+      "reason": "reserved",
+      "detail": "A drafting question. The statutory element is limited to the form of the instrument under Prevention of Frauds Ordinance s.2(1) and the default allocation of stamp duty under Stamp Duty (Special Provisions) Act s.6(c). The substance of the covenants comes from the Roman-Dutch common law of lease and from conveyancing practice, which are outside the frozen statutory corpus, so this cannot be marked statute-only gold."
+    },
+    {
+      "question": "M018-Q01",
+      "reason": "reserved",
+      "detail": "The first limb of the question turns on the scope of a special mandate, that is whether an authority to sell extends to granting a lease. The frozen statutory corpus contains no provision on the construction of an attorney's authority or on ratification of an unauthorised act; that is Roman-Dutch law of mandate plus judicial authority. Two further points are open on the facts: the scenario does not state whether the 2017 instrument specified its own period of validity (Powers of Attorney Ordinance s.3C) or whether it was registered before the 2022 amendment (s.8 of Act No. 28 of 2022), and both bear on whether it survives at the October 2025 reference date. The second limb, how to execute the lease in Mala's absence, is fully supported by the provisions recorded here and can be released once the mandate-scope point is settled by a lawyer."
+    },
+    {
+      "question": "M020-Q01",
+      "reason": "needs_legal_review",
+      "detail": "Two points need a lawyer before this becomes gold. First, PROV-M020-017 (Ordinance No. 17 of 1852 s.2), an indispensable provision behind the third route in the answer, is unresolved: the corpus records no repeal, but the section is keyed to a District Judge or Commissioner of a Court of Requests, an office abolished outside this corpus, and it does not address one party of four executing before the officer while the others execute before notaries. Second, CL-M020-Q01-001 assumes a deed of partition falls within section 2 of the Prevention of Frauds Ordinance, which lists sales, transfers, assignments, mortgages and agreements affecting land but not partition, while Stamp Duty Act s.5(11) and Western Province Financial Statute s.106 treat a deed of partition as distinct from a transfer. The two-notary route and the attorney route are verified and the answer stands on them, so this is a review, not a rejection."
+    },
+    {
+      "question": "M023-Q01",
+      "reason": "reserved",
+      "detail": "A pedigree of title must state the legal effect of the Final Decree in Partition Case No 2525/P and of Deed of Gift No 925 with its reserved life interest. The Partition Law is not in the corpus and the corpus has no provision on the creation or termination of a reserved life interest; s.36 of the Ordinance remits that silence to Roman-Dutch common law. The succession portion of the pedigree is recorded here and is fully answered in M023-Q02."
+    },
+    {
+      "question": "M024-Q02",
+      "reason": "blocked_missing_authority",
+      "detail": "The rate of stamp duty on a lease is not in the Stamp Duty (Special Provisions) Act No. 12 of 2006 itself. Section 3(1) fixes it by Ministerial Order published in the Gazette, and no such rate Order, and no rate schedule under the Stamp Duty Act No. 43 of 1982, is present in the frozen corpus. Chargeability, the person liable and the manner of payment can all be established, but the money value the question asks for cannot be given without quoting a rate from outside the corpus. Verifier: the block is confirmed. Section 3(1) fixes the rate only by Ministerial Order, section 5 leaves exemptions to the same mechanism, and section 13 carries over no rate from Act No. 43 of 1982; a grep of 43-1982 for \"lease\" returns only sections 19, 24 and 46 and no rate schedule. Everything else the answer states is verified: chargeability under section 4(i), the lessee's liability under section 6(c), payment to a prescribed bank under section 8(2), and the notary's duties under section 31 rules (6) and (7). The term \"prescribed bank\" is itself defined nowhere in the corpus, a further gap on the manner of payment."
+    },
+    {
+      "question": "M027-Q03",
+      "reason": "blocked_missing_authority",
+      "detail": "The rate of stamp duty is fixed by Order published in the Gazette under section 3(1) of the Stamp Duty (Special Provisions) Act. No such Order, and no lease rate schedule, is in the frozen corpus, so the value of the duty payable on this three-year lease at Rs.120,000 a month cannot be stated without inventing a figure."
+    },
+    {
+      "question": "M028-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The question requires the stamp duty to be calculated. The charging provision, s.37 of the Financial Statute of the Western Province, No. 6 of 1990, charges duty at the prescribed rate, and s.77(1)(a) leaves the rate to a regulation published in the Gazette. No rate regulation or rate schedule for instruments of transfer is present in the frozen corpus, and no rate table appears in the Stamp Duty Act, No. 43 of 1982 or the Stamp Duty (Special Provisions) Act, No. 12 of 2006 as extracted. The chargeable value of Rs.2,700,000 and the whole method of computation are supported by corpus provisions, but the final money figure cannot be produced without quoting a rate from outside the corpus, which the researcher must not do."
+    },
+    {
+      "question": "M029-Q01",
+      "reason": "reserved",
+      "detail": "The statutory corpus gives the route but not the substance of the ground. Act No. 5 of 2017 names gross ingratitude and defines it nowhere, so whether the son's assault and refusal of maintenance qualify has to be settled on Roman-Dutch common law and judicial authority that is not in this corpus. The corpus also holds nothing on revocable deeds of gift, where the donor reserves a power of revocation, which a full answer to 'the grounds on which he can do so' should cover. The authority requirement is mixed_statute_and_case, so this question cannot be proposed_gold."
+    },
+    {
+      "question": "M034-Q01",
+      "reason": "reserved",
+      "detail": "The rule requiring acceptance of a donation, and the form of an acceptance clause, come from Roman-Dutch common law and conveyancing practice. Neither is in the statutory corpus, so a statute-only gold answer would misstate the source of the law."
+    },
+    {
+      "question": "M034-Q02",
+      "reason": "blocked_missing_authority",
+      "detail": "The chargeable value can be worked out from the Statute, but the rate of stamp duty on a transfer of immovable property in the Western Province is prescribed by subordinate legislation under s.37 of the Western Province Financial Statute, and no such order, regulation or rate schedule is in the corpus. Without it the calculation the question asks for cannot be completed without inventing a rate."
+    },
+    {
+      "question": "M035-Q01",
+      "reason": "reserved",
+      "detail": "Reserved as mixed_statute_and_case. Three things a complete answer needs are outside the frozen corpus: (1) the Roman-Dutch rule that a life interest reserved in a deed of gift is extinguished at the death of the life holder and does not devolve on that holder's heirs; (2) the conclusiveness of a partition final decree, the Partition Law No. 21 of 1977 being absent from the corpus; (3) authority on whether the half-blood proviso in s.27 applies to the sibling half created by s.25. This map assumes it does; if it does not, the sibling half of Suneth's estate is divided equally in thirds and every later figure changes. A fourth, factual, gap: the background does not name the grantee of Administrator's Conveyance No. 2635, and the map assumes it conveyed to Suneth's intestate heirs in their statutory shares."
+    },
+    {
+      "question": "M035-Q02",
+      "reason": "reserved",
+      "detail": "Reserved as mixed_statute_and_case. Three things a complete answer needs are outside the frozen corpus: (1) the Roman-Dutch rule that a life interest reserved in a deed of gift is extinguished at the death of the life holder and does not devolve on that holder's heirs; (2) the conclusiveness of a partition final decree, the Partition Law No. 21 of 1977 being absent from the corpus; (3) authority on whether the half-blood proviso in s.27 applies to the sibling half created by s.25. This map assumes it does; if it does not, the sibling half of Suneth's estate is divided equally in thirds and every later figure changes. A fourth, factual, gap: the background does not name the grantee of Administrator's Conveyance No. 2635, and the map assumes it conveyed to Suneth's intestate heirs in their statutory shares."
+    },
+    {
+      "question": "M038-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The question demands a calculated figure and a shown method. The method is fully supported by the corpus and yields a chargeable value of Rs. 3,500,000, but section 37 of the Financial Statute fixes no rate: it charges duty at the prescribed rate, and the Order prescribing the rate for transfers of immovable property in the Western Province is not in the frozen corpus. The final rupee amount therefore cannot be derived from any provision in the corpus and has not been supplied from memory."
+    },
+    {
+      "question": "M040-Q01",
+      "reason": "reserved",
+      "detail": "Reserved because authority_requirement is mixed_statute_and_case. Two premises of the answer rest on Roman-Dutch common law that is not in the corpus: the passing of dominium under an absolute and irrevocable deed of gift, and the falling in of a life interest reserved to two holders while the survivor's continues. The Partition Law that gives the final decree of 21/05/2000 its conclusive effect on title is also absent from the corpus. A secondary open point of construction is whether s.27 reaches the sibling portion arising under s.25 where one parent survives; the map adopts the reading that it does, in line with matter M001, but if it does not the four siblings share that portion per capita at 1/16 each."
+    },
+    {
+      "question": "M040-Q02",
+      "reason": "reserved",
+      "detail": "Reserved because authority_requirement is mixed_statute_and_case. Two premises of the answer rest on Roman-Dutch common law that is not in the corpus: the passing of dominium under an absolute and irrevocable deed of gift, and the falling in of a life interest reserved to two holders while the survivor's continues. The Partition Law that gives the final decree of 21/05/2000 its conclusive effect on title is also absent from the corpus. A secondary open point of construction is whether s.27 reaches the sibling portion arising under s.25 where one parent survives; the map adopts the reading that it does, in line with matter M001, but if it does not the four siblings share that portion per capita at 1/16 each."
+    },
+    {
+      "question": "M042-Q01",
+      "reason": "reserved",
+      "detail": "The substance of the question, the parts of a deed of lease and the contents of each, is conveyancing doctrine drawn from Roman-Dutch law and settled precedent, not from any provision in the corpus. Statutory provisions cover only fragments of the content, so a statute-only gold answer would be incomplete and misleading."
+    },
+    {
+      "question": "M042-Q02",
+      "reason": "blocked_missing_authority",
+      "detail": "Section 3 of the Stamp Duty (Special Provisions) Act, No. 12 of 2006 fixes no rate; duty is charged at the rate determined by Ministerial Order published in the Gazette. No such Order, and no exemption Order under section 5, is in the corpus, so the amount of duty payable on this lease in April 2023 cannot be computed without inventing a rate."
+    },
+    {
+      "question": "M042-Q03",
+      "reason": "blocked_missing_authority",
+      "detail": "The rate of stamp duty on a mortgage bond is fixed by Ministerial Order under section 3 of the Stamp Duty (Special Provisions) Act, No. 12 of 2006, and no such Order is in the corpus. The Act itself gives only the charge, the classification and the incidence, so the rupee value asked for cannot be produced without inventing a rate."
+    },
+    {
+      "question": "M043-Q01",
+      "reason": "reserved",
+      "detail": "Reserved, not blocked on a defect in the research. Two reasons. First, authority: the effect of the deed of gift reserving life interests, and the conclusiveness of the partition final decree, are Roman-Dutch law and Partition Law points that the corpus does not carry, so the map is mixed_statute_and_case. Second, one open fact and one open construction. The background never says whether Anusha, the mother of Nikitha and Rikitha, survived Rikitha's death on 02.08.2016; the draft proceeds on the footing that she did not, which engages section 26 and section 27. If Anusha survived, section 25 applies to Rikitha's estate instead and Anusha takes 1/32 of the land, with Nikitha, Aruna and Leela taking 1/96 each. The construction point is how the sibling half under section 25 is divided among full and paternal half-siblings: the draft applies section 30 per capita; on the competing reading section 27 proportions apply to that half, which would give Aruna and Leela 3/16 each and Nikitha and Rikitha 1/16 each out of Piyal's estate and change every downstream figure. A lawyer should settle both before this is treated as gold."
+    },
+    {
+      "question": "M043-Q02",
+      "reason": "reserved",
+      "detail": "Reserved, not blocked on a defect in the research. Two reasons. First, authority: the effect of the deed of gift reserving life interests, and the conclusiveness of the partition final decree, are Roman-Dutch law and Partition Law points that the corpus does not carry, so the map is mixed_statute_and_case. Second, one open fact and one open construction. The background never says whether Anusha, the mother of Nikitha and Rikitha, survived Rikitha's death on 02.08.2016; the draft proceeds on the footing that she did not, which engages section 26 and section 27. If Anusha survived, section 25 applies to Rikitha's estate instead and Anusha takes 1/32 of the land, with Nikitha, Aruna and Leela taking 1/96 each. The construction point is how the sibling half under section 25 is divided among full and paternal half-siblings: the draft applies section 30 per capita; on the competing reading section 27 proportions apply to that half, which would give Aruna and Leela 3/16 each and Nikitha and Rikitha 1/16 each out of Piyal's estate and change every downstream figure. A lawyer should settle both before this is treated as gold."
+    },
+    {
+      "question": "M046-Q01",
+      "reason": "blocked_scenario_ambiguity",
+      "detail": "'How can she decide the value of the property?' does not say which value is meant. Read as the share value of the condominium parcel, which is how the rest of this examination question reads because every other part of it is on the Apartment Ownership Law, the map below is complete and statute only: sections 5(1)(h) and (m), 9(3), 9(4), 11, 20A and the section 26 definition of 'share parcel' fix the value, its measure and the document that records it. Read as the open market price she should pay, the corpus has nothing: no statute in it tells a purchaser how to obtain a valuation, and the answer would rest on a valuer's report and market evidence. This is an ambiguity in the question rather than a gap in the facts, so enrichment cannot cure it. A lawyer should choose the reading. If the share value reading is confirmed, this question can be promoted to statute_only and proposed_gold on the provisions and claims already recorded, dropping claim CL-M046-Q01-018 and the market value sentences at the end of the application and conclusion."
+    },
+    {
+      "question": "M047-Q02",
+      "reason": "blocked_missing_authority",
+      "detail": "The rate of duty is prescribed by an Order or regulation made under Western Province Financial Statute s.37 (and, for the national Act, under Stamp Duty Act s.2), and no such rate instrument, schedule or Gazette Order is in the corpus. Grep over the corpus for rate language returns only the words at the prescribed rate. The base is established at Rs.1,050,000/-, but supplying a percentage would mean quoting a rates schedule that was never extracted."
+    },
+    {
+      "question": "M048-Q01",
+      "reason": "reserved",
+      "detail": "The devolution chain has a link that no provision in the frozen corpus supports. Whether the reserved life interest left Lalantha with the ownership from 12.08.2002 and freed it on the donor's death, and whether the commercial building passed with the land, are Roman-Dutch questions that s 36 of the Ordinance refers outside this Ordinance and outside this corpus. The statutory links from Lalantha's and Harsha's intestacies are set out and can be verified, but the pedigree as a whole is not statute only. Two further open points, the personal law of the family under s 2 and whether Minoli was living at each relevant death, are recorded as assumptions rather than findings."
+    },
+    {
+      "question": "M048-Q02",
+      "reason": "reserved",
+      "detail": "Two things stop this from being a statute only answer. The whole calculation begins from Lalantha owning the entirety of Lot A on 04.10.2009, which depends on the Roman-Dutch effect of the life interest reserved on Deed of Gift No. 1012 and on the building acceding to the land, neither of which any corpus provision governs and both of which s 36 of the Ordinance refers to Roman-Dutch law. Separately, the Ordinance does not settle whether the collateral half under s 25 divides per capita under s 30 or with a full-blood preference under s 27, and the two readings give different fractions to Dushani and Minoli. The fractions stated are the per capita reading and are offered for the verifier and the lawyer to test, not as a settled result."
+    },
+    {
+      "question": "M051-Q02",
+      "reason": "blocked_missing_authority",
+      "detail": "The rate of stamp duty is not in the corpus. Section 37 charges duty 'at the prescribed rate' and section 77(1)(a) leaves the rate to regulations published in the Gazette; no Western Province rate Order or regulation is in the frozen corpus, so the money amount of duty on a chargeable value of Rs.1,060,000 cannot be computed without inventing a percentage. The chargeable value and the mode of calculation are settled; only the rate is missing. Verified: the corpus holds no rate for this charge - s 37 charges 'at the prescribed rate', s 77(1)(a) leaves it to Gazette regulations, s 76 covers only the description of stamps and reciprocal exemptions, and a grep for 'per centum' and 'prescribed rate' across the corpus returns no stamp-duty rate for the Western Province. The verifier also notes that s 37 authorises different rates for different classes or categories of instruments, not for successive bands of value, so the banded mode of calculation in the draft is an assumption about the missing Order (claim CL-M051-Q02-006 marked disputed)."
+    },
+    {
+      "question": "M058-Q03",
+      "reason": "blocked_missing_authority",
+      "detail": "The question asks for a calculated figure. The Stamp Duty (Special Provisions) Act s.3(1) delegates the rate to a Ministerial Order published in the Gazette and s.5 delegates exemptions the same way; neither Order is in the corpus, and the Schedule of rates under the Stamp Duty Act No. 43 of 1982 is not extracted either. The National Savings Bank Act is also absent, so any bank-specific exemption cannot be checked. Quoting a rate from memory is not permitted, so the chargeability, base, liability and manner of payment are proposed but no amount is."
+    },
+    {
+      "question": "M062-Q01",
+      "reason": "needs_legal_review",
+      "detail": "Two indispensable provisions are unresolved on the corpus. (1) The 'tea estate' definition in Tea and Rubber Estates (Control of Fragmentation) Act s.25 (PROV-M062-018) is held only in its as-enacted 'one hundred acres' form; the corpus records that Act No. 20 of 2005 s.10(c) substitutes 'twenty hectares' for 'forty hectares' and that the substitution could not be applied, so the extent threshold in force in October 2020 cannot be stated and the fragmentation limb of the answer rests on a superseded figure (the outcome, that twenty acres is below the threshold, holds on any reading). (2) Prevention of Frauds Ordinance s.2 (PROV-M062-007) is held only in the form given by Act No. 30 of 2022 and Act No. 4 of 2024, and the pre-2022 wording is not recoverable from the corpus. Notaries Ordinance rule (6) (PROV-M062-003) is in the same position for stamp duty, and the answer's board-resolution step rests on rule (14) in its post-2022 form, which is not cited. A lawyer must settle the October 2020 texts and the fragmentation threshold before this can become gold."
+    },
+    {
+      "question": "M065-Q02",
+      "reason": "blocked_temporal_uncertainty",
+      "detail": "The answer is a list of the contents of an attestation, so its completeness depends on the exact text of section 31 rule (20) at the matter reference date of October 2020. The corpus carries only the consolidated Notaries Ordinance: rule (20)(b) and (e) are the paragraphs substituted by the Notaries (Amendment) Act No. 31 of 2022 s.16(11)(a) and (b), and rule (20)(h) was inserted by s.16(11)(d) of the same Act. None of the repealed wording is recited in the amending Act, so the October 2020 text of the identification and consideration items is not recoverable from this corpus. The remaining items (the opening words and paragraphs (a), (c), (d), (f) and (g)) and rule (21) are unamended and are proposed with confidence; a point-in-time 2020 edition of the Ordinance is needed to complete the list. Verified: Notaries (Amendment) Act No. 31 of 2022 s.16(11)(a) and (b) repeal and substitute paragraphs (b) and (e) without reciting the repealed words, and s.16(11)(d) adds paragraph (h), so the block is correctly stated and stands. The remaining items were separately confirmed unamended at the matter date."
+    },
+    {
+      "question": "M066-Q01",
+      "reason": "reserved",
+      "detail": "The question asks for a draft. The mandatory statutory content of a Deed of Transfer is fully traceable to the corpus, but the conveyancing form that the marks are awarded for - recital of derivative title, operative words of transfer, receipt clause, habendum, covenant against eviction - comes from Roman-Dutch common law and notarial precedent, and no statute in the corpus prescribes a form for a transfer deed. The Notaries Ordinance Schedules, including Form E, are also not extracted. Reserved as mixed_statute_and_case."
+    },
+    {
+      "question": "M066-Q02",
+      "reason": "blocked_missing_authority",
+      "detail": "The question asks for a figure. The whole statutory chain is in the corpus - charge (s.37), base (s.48(1) with the s.106 definition of value), payer (s.51(a)) and time of payment (s.40) - but the rate is 'prescribed' under s.77 by regulation published in the Gazette and no such regulation, order or rate schedule exists in the corpus. Producing a number would mean quoting a rate from memory, which is not permitted. Blocked pending the addition of the Western Province stamp duty rate instrument in force in October 2020."
+    },
+    {
+      "question": "M067-Q01",
+      "reason": "reserved",
+      "detail": "Two reasons. First, authority: the father's position as natural guardian, and the requirement of court sanction for alienating a minor's immovable property, are Roman-Dutch common law and case law, absent from this statutory corpus, so the answer cannot be completed on statute alone. Second, corpus and temporal: section 584 of the Civil Procedure Code is missing from the corpus edition with no repeal note, in the middle of the chapter relied on, and the only text of Prevention of Frauds Ordinance s.2 held by the corpus is the post-2022 consolidated text rather than the text in force in October 2020."
+    },
+    {
+      "question": "M068-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The question asks for the pedigree to be drawn from a good root of title. The root here is the final decree in District Court of Colombo Partition Case No. 1256/P, and the authority that makes a partition final decree conclusive and therefore a good root is the Partition Law No. 21 of 1977, which is not in the frozen corpus. The good root of title standard itself is conveyancing practice and judicial authority, not statute. The devolution limb of the answer is fully supported by the Matrimonial Rights and Inheritance Ordinance and is recorded above, but the question as a whole cannot be answered from statute in the corpus alone. Verification adds two points. First, PROV-M068-019 (Civil Procedure Code s.554X) was removed from the supporting set as a foreign-probate provision that does not apply to a Sri Lankan grant. Second, the nearest thing the corpus holds to conclusiveness of a decree is Civil Procedure Code s.207, which makes matters decided res adjudicata between the same parties only; it does not make a partition decree conclusive against the world, so it does not close the gap and was deliberately not added as a provision."
+    },
+    {
+      "question": "M069-Q03",
+      "reason": "blocked_missing_authority",
+      "detail": "The question asks for a drafted document, and section 50 of the Registration of Documents Ordinance requires the form in the Second Schedule to be used with such variations as circumstances may require. That Second Schedule is not in the frozen corpus (the only Schedule form text present is the caveat form substituted by Act No. 32 of 2022 s.5, which both post-dates April 2020 and concerns caveats), nor are the section 49 regulations prescribing the manner of presentation and the Registrar's endorsement form. The substantive content of the notice is fully recoverable from sections 30(1), 30(4), 30(5), 13(1), 13(7), 26(1) and 43(2) and is drafted above, but the prescribed wording cannot be verified. A second, smaller obstacle: the background says only that the Bank told Gamini Perera to register 'a certain Notice', so whether the required draft is the purchaser's notice against his vendor or the Bank's notice against the purchaser in respect of the mortgage bond is not settled by the facts, and this is a 'keep' question so the facts were not enriched to settle it."
+    },
+    {
+      "question": "M070-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The question asks for a calculation. The liability, the class of instrument, the payer and the computation base are all established from the corpus, but the rate is not in any Act: section 3(1) of Act No. 12 of 2006 delegates it to an Order published in the Gazette, and no such Order or rates schedule is in the frozen corpus. A figure would have to be quoted from memory, so the numeric answer is withheld and the question is marked blocked_missing_authority rather than proposed_gold."
+    },
+    {
+      "question": "M072-Q01",
+      "reason": "needs_legal_review",
+      "detail": "Verifier downgrade. Two provisions the power-of-attorney method rests on are unresolved on the corpus: the definition of 'power of attorney' in 4-1902/s2 (PROV-M072-004, indispensable) and the registration duty in 4-1902/s3 (PROV-M072-008) were each repealed and substituted by Act No. 28 of 2022 and the corpus holds no April-2020 text. The quoted wording of 7-1840/s2 is the 2024 text, and the corpus copy of Act No. 30 of 2022 shows the authorised-signatory limb was absent from the section between 2022 and 2024, so the researcher's long-standing-content reasoning does not hold as written. The territorial half of the answer (Notaries Ordinance s.2, s.4A and s.31 rules (12), (22) and (29)) is verified and unaffected. A lawyer needs to supply the April-2020 editions of Powers of Attorney Ordinance ss.2 and 3 and Prevention of Frauds Ordinance s.2 before this becomes gold."
+    },
+    {
+      "question": "M075-Q01",
+      "reason": "reserved",
+      "detail": "The question asks for an alternative to a partition action. The corpus supplies every formal and procedural step of the alternative (notarial execution, description and title-search duties, registration and priority), but it does not contain the Partition Act, No. 21 of 1977 or the Roman-Dutch common law of co-ownership from which a co-owner's right to partition, and the right of co-owners to partition amicably by agreement instead of by action, are derived. The effect of the voluntary partition on the Bank's existing mortgage over Pramuk's undivided share is likewise not resolved by any corpus provision. The answer therefore requires authority beyond the statutory corpus and is reserved rather than proposed as gold."
+    },
+    {
+      "question": "M076-Q01",
+      "reason": "reserved",
+      "detail": "Drafting question whose marks turn on a form of words that no statute in the corpus supplies. The corpus fixes the required content of the clause (place and date in letters under Notaries Ordinance s.31(18); execution before the notary and witnesses under s.31(12) and s.31(8); the original, duplicate and protocol behind the counterpart recital under s.31(24) and s.31(26); corporate execution under Companies Act s.19(1)(a)), but the settled precedent wording of a testimonium comes from non-statutory conveyancing and notarial practice. Reserved as mixed_statute_and_case rather than proposed_gold so a lawyer reviews the drafted wording against a recognised precedent book before it is treated as gold. A secondary open point: the term of the lease is not stated, so the Prevention of Frauds Ordinance s.2 one-month exclusion cannot be ruled out on the facts as given."
+    },
+    {
+      "question": "M078-Q03",
+      "reason": "blocked_missing_authority",
+      "detail": "The rate of stamp duty on a bond or mortgage is set by Order of the Minister published in the Gazette under s.3(1) of the Stamp Duty (Special Provisions) Act, No. 12 of 2006. No such Order or rate schedule is in the frozen corpus, so the figure and the mode of calculation the question asks for cannot be derived without going outside the corpus. The charging provision, the classification of the bond as a specified instrument and the exclusion of the provincial charge are all established."
+    },
+    {
+      "question": "M079-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The Partition Law No. 21 of 1977 and the Age of Majority Ordinance are absent from the frozen corpus, and the effect of a minor's deed of transfer and of a Thesawalamai disposition made without the husband's written consent turns on Roman-Dutch common law and judicial authority. The devolution of Lot 5A therefore cannot be settled on statute alone; the Lot 5B branch of the pedigree is complete and is set out in question M079-Q02. Verifier: the block stands and is wider than stated. Civil Procedure Code s.582 only bars an uncertificated person from instituting or defending an action connected with a minor's estate, so nothing in the corpus makes Deed of Transfer No. 1234 defective as to Lot 5A; and Jaffna Ordinance s.6 governs the wife's separate estate, so its written-consent rule does not plainly reach lots the same map treats as thediatheddam bought for value under s.19(a). Claims CL-M079-Q01-003 and CL-M079-Q01-007 are rejected on that footing."
+    },
+    {
+      "question": "M079-Q03",
+      "reason": "blocked_missing_authority",
+      "detail": "The Age of Majority Ordinance, which fixes the general age of majority, is not in the frozen corpus; Civil Procedure Code s.502 fixes full age at eighteen only for the purposes of its own chapter. The requirement that a curator obtain the District Court's sanction before alienating a minor's immovable property, and the effect of failing to do so, come from Roman-Dutch common law and judicial authority rather than from any section in this corpus. The second and third instances are fully supported by statute; the first is not. Verifier: the second and third instances are weaker than the map states. Civil Procedure Code s.582 says a claimant may apply for a certificate of curatorship and makes the certificate mandatory only for instituting or defending an action, so no section in this corpus requires a curator to be joined as executant of Deed of Transfer No. 1234; and Jaffna Ordinance s.6 reaches the wife's separate estate, while s.8 supplies a District Court order only in the enumerated cases, none of which is present. Claims CL-M079-Q03-001 and CL-M079-Q03-005 are rejected and the Executor's Conveyance instance under s.530 is the only one that stands on statute alone."
+    },
+    {
+      "question": "M081-Q02",
+      "reason": "blocked_missing_authority",
+      "detail": "The rate of stamp duty is not in the corpus. Section 37 of the Western Province Financial Statute No. 6 of 1990 charges duty 'at the prescribed rate' and leaves the rate to be prescribed by regulation under s.77(1)(a) and published in the Gazette (s.76 deals with the description of stamps to be used and with reciprocal exemptions, not with rates). No Western Province stamp duty rate Order or rate schedule in force in October 2019 exists in the frozen corpus, and searches for rate language across the corpus return nothing. The chargeable value of Rs.3,020,000 and the liability of the grantee are supportable from the corpus, but the money amount of duty the question asks for cannot be computed without inventing or recalling a rate, which this task forbids."
+    },
+    {
+      "question": "M085-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The question asks for a calculated figure. The charge, the base, the valuation rule and the payer are all established from the Western Province Financial Statute, but the rate is prescribed by regulation under s.77(1)(a) and the Gazetted rate order in force in October 2019 is not in the frozen corpus. Producing a rupee amount would mean quoting a rate from memory, which the corpus rule forbids. The map is complete on everything except the final arithmetic step; a verifier or lawyer supplying the rate order in force in September and October 2019 would let it be promoted to proposed_gold."
+    },
+    {
+      "question": "M086-Q01",
+      "reason": "reserved",
+      "detail": "The question asks which type of deed to draw, and no provision in the frozen corpus names a deed of declaration or prescribes its form. The corpus reaches the instrument only obliquely, through section 8(b) of the Registration of Documents Ordinance, which deems an instrument that declares a right, title or interest in land to be registrable. A second indispensable step is also outside the corpus: section 3 of the Prescription Ordinance is expressed as a rule of proof entitling a party to a decree in an action, and nothing in the corpus states that prescriptive title vests without a decree so that the possessor may declare it by deed. Both steps rest on conveyancing practice and judicial authority, so the question is mixed_statute_and_case and cannot be proposed_gold. The statutory scaffolding recorded above is complete and can be verified as it stands."
+    },
+    {
+      "question": "M087-Q02",
+      "reason": "reserved",
+      "detail": "A complete answer needs non-statutory authority. The capacity of a sixteen-year-old donee and acceptance of a gift on her behalf rest on the Age of Majority Ordinance, which is not in the corpus, and on Roman-Dutch donation rules to which Matrimonial Rights and Inheritance Ordinance s.36 defers. The joining of the owner subject to a reserved life interest in the 2013 sale has no statutory basis in the corpus. The only corpus provision naming a guardian as competent to act for a minor transferee, Prevention of Frauds Ordinance s.2(2)(b), comes from an amendment made after the matter reference date and long after the 2005 deed. Verifier: the s.8 consent point is unresolved rather than merely unlikely, because the corpus holds no repealing or amending instrument for s.8 and the related s.11 dispensation procedure was not recorded; the question stays reserved."
+    },
+    {
+      "question": "M088-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The question asks for a computed figure. Section 3(1) of Act No. 12 of 2006 leaves the rate to a Ministerial Order published in the Gazette, and no such Order, rate schedule or basis-of-computation rule for leases is in the frozen corpus. Chargeability and the person liable can be established from corpus text; the amount cannot, and inventing a rate is not permitted."
+    },
+    {
+      "question": "M088-Q03",
+      "reason": "reserved",
+      "detail": "A drafting question. No provision in the frozen corpus prescribes or supplies the covenants of a lessee; the corpus yields only the formal requirement of notarial execution under the Prevention of Frauds Ordinance s.2. The substance of the covenants comes from the Roman-Dutch common law of lease and conveyancing precedent, which are outside scope."
+    },
+    {
+      "question": "M088-Q04",
+      "reason": "reserved",
+      "detail": "A drafting question. The reddendum is a conveyancing clause with no statutory source in the frozen corpus, and a corpus-wide search for the term returns no match. Only the formal requirement of notarial execution under the Prevention of Frauds Ordinance s.2 is available, and it does not govern the wording of the clause."
+    },
+    {
+      "question": "M089-Q01",
+      "reason": "reserved",
+      "detail": "The controlling law is the Roman-Dutch common law of praedial servitudes (appurtenance to the dominant tenement, effect of subdivision of the dominant tenement, aggravation of the servient burden), which is not in the frozen corpus. The terms of the original grant of the right of way are also not stated in the scenario. Only the notarial form requirement can be sourced to statute, so the question cannot be a statute-only gold item. Verifier: agreed. Both statutory provisions are demoted to background - Prevention of Frauds Ordinance s.2 is held only in its post-2022/2024 form, and Municipal Councils Ordinance s.327 is an interpretation clause of that Ordinance alone."
+    },
+    {
+      "question": "M089-Q02",
+      "reason": "reserved",
+      "detail": "The rule that a praedial servitude cannot be alienated apart from its dominant tenement, and cannot be extended to a tenement that was never dominant, comes from the Roman-Dutch common law and is absent from the frozen corpus. Only the deed-form requirement is statutory, so the question cannot be answered completely from statute. Verifier: agreed, and PROV-M089-003 is demoted from supporting to background because an interpretation clause of the Municipal Councils Ordinance cannot state the general rule. The corpus does hold one statutory route to a right of way that the map does not mention - Prescription Ordinance s.3 read with the s.2 definition of immovable property, which includes servitudes appertaining to it - but on these facts Kapila Fernando has no user of Lot R1 at all, so it does not answer the question."
+    },
+    {
+      "question": "M094-Q01",
+      "reason": "reserved",
+      "detail": "Reserved because the question asks for a drafted instrument. The corpus supplies the statutory requirements for making, revoking and republishing a testamentary disposition, but not the notarial precedent form of a codicil and not the Roman-Dutch law of the life interest (usufruct) the testator wishes to reserve to his wife, so a statute-only answer would be incomplete. The corpus also holds only the post-2022 text of Prevention of Frauds Ordinance s.4, so the execution formality in force in April 2019 cannot be quoted verbatim."
+    },
+    {
+      "question": "M094-Q02",
+      "reason": "blocked_temporal_uncertainty",
+      "detail": "The authority requirement is statute_only, but the corpus carries only the consolidated post-2022 and post-2024 text of section 31 of the Notaries Ordinance. Two of the rules that decide this question changed after the April 2019 matter date: rule (9) was substituted in 2022 and again in 2024, and rule (20)(b), the paragraph that carries the 'not known to me but known to the witnesses' recital, was substituted in 2022 with wording that adds identification by national identity card, passport or driving licence. Rule (20)(h), requiring the attestation of a will to state that the testator was of sound mind, was only inserted in 2022. Form E of the Second Schedule, prescribed by rule (21), is absent from the corpus, and the only Form E text available is the 2022 replacement. The April 2019 wording of rule (9) survives verbatim only in the recital in section 16(6) of Act No. 31 of 2022. The draft attestation is therefore proposed subject to confirmation against the 2019 edition of the Ordinance and Form E as it then stood."
+    },
+    {
+      "question": "M097-Q01",
+      "reason": "blocked_missing_authority",
+      "detail": "The decisive authority is not in the frozen corpus. Advising on the most appropriate route for three co-owners of a 30-perch Battaramulla land held subject to their donor father's reserved life interest requires the Partition Law No. 21 of 1977 (absent), the Roman-Dutch common law of usufruct and of co-ownership (non-statutory, absent), and the Urban Development Authority and local authority subdivision controls for Battaramulla (absent). The corpus supports only the form and registration of the instruments and the apartment-ownership limb, so no indispensable statutory chain can be asserted and the question cannot be proposed as statute-only gold."
+    },
+    {
+      "question": "M098-Q03",
+      "reason": "blocked_missing_authority",
+      "detail": "The question asks for a calculation. Section 37 of the Western Province Financial Statute charges the duty at the prescribed rate and section 77(1) leaves that rate to regulations made by the Minister and published in the Gazette. No rate schedule or Order fixing the ad valorem rate for transfers of immovable property in the Western Province as at October 2018 is present in the frozen corpus, and the Stamp Duty Act, No. 43 of 1982 likewise charges duty at the prescribed rate in section 2 without stating one. The base of the calculation (Rs. 7,500,000) and the payer are established on statutory authority, but the rupee figure cannot be produced without inventing a rate, so the question is recorded as blocked rather than answered. Verifier: the block is confirmed. grep of 6-1990, 43-1982 and 12-2006 for 'per centum' and 'hundred thousand' returns only penalty and refund percentages, and no rate order is in the corpus. The base of Rs. 7,500,000 is now fully supported following the addition of PROV-M098-901 (section 104(4)), so the only missing element is the rate."
+    },
+    {
+      "question": "M107-Q03",
+      "reason": "reserved",
+      "detail": "The answer turns on the construction of Deed of Gift No. 409 (recital versus operative clause versus schedule) and on the common-law principle that a donor cannot convey what he has already parted with. Neither rule is statutory and neither is in the frozen corpus; the only statutory priority rule, Registration of Documents Ordinance s.7, does not apply because both competing instruments are gifts rather than dispositions for valuable consideration. Reserved for a source of non-statutory authority."
+    },
+    {
+      "question": "M112-Q03",
+      "reason": "blocked_missing_authority",
+      "detail": "The rate of duty is not in the corpus. Stamp Duty Act No. 43 of 1982 s.2 charges duty \"at the prescribed rate\" and s.69 leaves rates to regulations; Stamp Duty (Special Provisions) Act No. 12 of 2006 s.3 leaves rates to a Ministerial Order in the Gazette. No rate order, regulation or rate schedule has been extracted. Stamp duty on transfers of immovable property is also a devolved provincial levy, and the Southern Province finance statute governing a Matara land is absent; the only provincial finance statute in the corpus, the Western Province Financial Statute No. 6 of 1990, charges duty by its s.37 only on transfers of property situated in the Western Province. The base (Rs.1,000,000, the value of the property conveyed) and the payer (the grantee) are established, but the money figure cannot be derived without inventing a rate, which this map will not do."
+    },
+    {
+      "question": "M112-Q04",
+      "reason": "blocked_missing_authority",
+      "detail": "Section 9 of the Stamp Duty (Special Provisions) Act No. 12 of 2006 offers two limbs, the Provincial Council within whose limits the instrument was executed and the Council within whose limits the property is situated, and leaves the choice to be made \"as the case may be\" by reference to List I of the Ninth Schedule to the Constitution. The Constitution is not in the corpus, so the devolved item that would select the limb cannot be read. The finance statute of the Southern Province, in which the Matara land lies and which would identify the receiving office or prescribed bank, is also absent; the only provincial finance statute in the corpus, the Western Province Financial Statute No. 6 of 1990, charges duty by its s.37 only on transfers of property situated in the Western Province and cannot be applied here. The manner and time of payment are established from the corpus, but the identity of the recipient is not."
+    },
+    {
+      "question": "M114-Q01",
+      "reason": "reserved",
+      "detail": "The question asks for the mutual covenants of a residential lease. No statute in the corpus prescribes them; they come from the Roman-Dutch common law of lease and from conveyancing precedent, which are outside a statute-only corpus. Only the form, description, registrability and stamp-duty-incidence points are statutorily supported, and those alone do not answer the question."
+    },
+    {
+      "question": "M114-Q02",
+      "reason": "blocked_missing_authority",
+      "detail": "Section 3 of Act No. 12 of 2006 leaves the rate of stamp duty to an Order published in the Gazette. That Order, and any Western Province prescribed rate under s.37 of Statute No. 6 of 1990, are absent from the corpus, so the figure the question asks for cannot be derived without quoting a rate from outside the corpus. Whether the refundable deposit and the advance rent enter the chargeable base likewise turns on the missing Order."
+    },
+    {
+      "question": "M114-Q03",
+      "reason": "reserved",
+      "detail": "Drafting a reddendum is a conveyancing exercise governed by precedent and by the Roman-Dutch law of lease, not by any statute in the corpus. A search of the corpus for 'reddendum' returns no match and no provision prescribes how rent is to be reserved, so a gold answer would have to be written from non-statutory sources."
+    }
+  ],
+  "lawyer_approved": 0,
+  "allow_unverified": false
+}

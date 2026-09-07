@@ -1,0 +1,693 @@
+{
+  "benchmark_matter_id": "M082",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M082",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:54:33Z",
+    "verification_agent": "verifier-M082",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T23:11:08Z"
+  },
+  "matter_reference_date": "2019-10",
+  "matter_reference_date_basis": "exam_session OCTOBER 2019 recorded in candidates/matters/M082.json; the law is taken as it stood in October 2019.",
+  "corpus_gaps": [
+    "The Second Schedule to the Registration of Documents Ordinance is not in the corpus, so the prescribed caveat form and the prescribed notice form (required by s.32(1) and s.32(4) and authorised by s.50) cannot be quoted or numbered from the corpus.",
+    "The First Schedule of fees is not in the corpus as a section; the caveat fee is reachable only through the amending text of Registration of Documents (Amendment) Act No. 21 of 2013 s.5, which substitutes item 6 of Part I.",
+    "No regulations made under s.49 are in the corpus, so 'prescribed form', 'prescribed particulars' and 'prescribed manner' cannot be resolved to their actual content.",
+    "The corpus text of the principal Ordinance is a consolidated 1990 edition. Amendments between 1990 and October 2019 that are not separately in the corpus cannot be checked, although none of the corpus amendments touch s.32 before 2022.",
+    "Verifier: no provision in the corpus text of s.32 expressly names the Registrar as the officer who must give the s.32(4) notice; the duty is inferred from s.32(1) and s.32(2). The s.8 proviso exclusions and s.49 (power to make regulations, which is what makes \"prescribed\" mean prescribed by regulation) are also not recorded as provisions in this map."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M082-001",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(1)",
+      "relevant_excerpt": "Any person (in this Ordinance called a \"caveator\") may present for registration a caveat in the prescribed form requiring to be served with notice of the presentation for registration of any instrument affecting the land described in the caveat.",
+      "why_relevant": "Identifies the document that may be presented (a caveat in the prescribed form), who may present it (any person, who thereby becomes the caveator) and the entitlement it creates (service of notice of the presentation for registration of any instrument affecting the land described in the caveat). This is the direct answer to what document may be presented.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 and unamended in the corpus text at October 2019; the corpus records no amendment event on s.32 before Act No. 32 of 2022, which is after the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M082-002",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(2)",
+      "relevant_excerpt": "The Registrar shall on receiving a caveat register it in the same manner as other instruments, but shall retain the caveat.",
+      "why_relevant": "Answers to whom the document goes: the caveat is presented for registration to the Registrar, who must register it in the same manner as other instruments and retain the caveat itself rather than return it. It also establishes that registration by the Registrar, not any court order, is what brings the caveat into operation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 and unamended at October 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M082-003",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(4)",
+      "relevant_excerpt": "The notice to be given to the caveator shall be in the prescribed form and shall be sent by registered letter to the address mentioned in the caveat.",
+      "why_relevant": "Fixes the first limb of the effect of the document: how the caveator is warned. The notice is in the prescribed form and is posted by registered letter to the address stated in the caveat, which is why the caveat must state an address for service.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927; the wording was replaced only by Act No. 32 of 2022 s.2(4), which is after the matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording confirmed verbatim, but s.32(4) is passive and by itself neither names the Registrar as the officer bound to give the notice nor states the event that triggers it; both come from s.32(1) and the opening words of s.32(5), so this provision cannot carry the notice duty on its own."
+    },
+    {
+      "provision_id": "PROV-M082-004",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(5)",
+      "relevant_excerpt": "in an action commenced by the caveator in a competent court within thirty days from posting of the notice required by subsection (4) it is proved to the satisfaction of the court that the instrument presented for registration is or was at the time of registration void or voidable by the caveator or fraudulent as against him or in derogation of his lawful rights the court may order the instrument to be rectified or cancelled as may be necessary to preserve the rights of the caveator",
+      "why_relevant": "The second and decisive limb of the effect. It supplies the thirty-day time limit running from the posting of the notice, the grounds the caveator must prove (void, voidable, fraudulent as against him, or in derogation of his lawful rights) and the relief the court may give (rectification or cancellation of the instrument and correction of the register). It matches the wording of the background almost exactly.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 with the thirty-day period intact at October 2019; the period was extended to sixty days only by Act No. 32 of 2022 s.2(5), after the matter date.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim but begins mid-subsection and omits both the opening condition of s.32(5) (\"If, while a caveat is in force, an instrument affecting the land described in the caveat is presented for registration, and\") and the closing limb (\"and may order the necessary correction to be made in the register\"), each of which the gold answer relies on."
+    },
+    {
+      "provision_id": "PROV-M082-005",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(3)",
+      "relevant_excerpt": "A caveat shall be in force for such period as may be specified therein, not being longer than the period covered by the fee paid on the caveat.",
+      "why_relevant": "Limits how long the protection lasts and ties duration to the fee paid, which matters because s.32(5) operates only while a caveat is in force.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 at the matter date; replaced by a flat two-year maximum only by Act No. 32 of 2022 s.2(3).",
+      "verification_status": "verified",
+      "verifier_note": "Confirmed verbatim and promoted from supporting to indispensable, because s.32(5) operates only \"while a caveat is in force\" and the duration rule in s.32(3) is therefore a necessary condition of the remedy the answer states."
+    },
+    {
+      "provision_id": "PROV-M082-006",
+      "section_id": "23-1927/s32",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "32",
+      "subsection": "(6)",
+      "relevant_excerpt": "Nothing in this section shall affect any other power which may be possessed by any court of ordering any instrument to be rectified or cancelled.",
+      "why_relevant": "Keeps the answer accurate about the limits of the caveat: the thirty-day route is additional to, and does not displace, any other power of a court to rectify or cancel an instrument.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 and untouched at October 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M082-007",
+      "section_id": "23-1927/s2",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "2",
+      "subsection": "(2)",
+      "relevant_excerpt": "The business of the land register office and branch offices shall be conducted by a Registrar-General of Lands (in this Ordinance called the \"Registrar-General\"), a Deputy Registrar-General of Lands and such number of Assistant Registrars-General (in this Ordinance called \"Assistant Registrars-General\") and Registrars of Lands (in this Ordinance called \"Registrars\")",
+      "why_relevant": "Identifies the office to which the caveat goes. Registrar in s.32 means a Registrar of Lands appointed under this subsection, working in the land register office or a branch office, so the caveat is presented at a land registry and not to a court.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927; the corpus records no amendment event on s.2, so it stands as printed at October 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M082-008",
+      "section_id": "23-1927/s14",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "14",
+      "subsection": "(1)",
+      "relevant_excerpt": "Every instrument presented for registration shall be registered in the book allotted to the division in which the land affected by the instrument is situated",
+      "why_relevant": "Explains which Registrar. Since s.32(2) directs the Registrar to register a caveat in the same manner as other instruments, the caveat belongs in the book of the division in which the land is situated, so it is presented at the land registry serving the division that covers the Colombo 5 property.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 with an amendment recorded in 1974 (Act No. 14 of 1974 s.2); the corpus text is the amended text and predates October 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M082-009",
+      "section_id": "23-1927/s8",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "8",
+      "subsection": "(b)",
+      "relevant_excerpt": "all instruments, including wills, decrees and orders of any court or authority, and awards, which purport or operate to create, confer, declare, limit, assign, transfer, charge, incumber, release, or extinguish any right, title, or interest, whether vested or contingent, past, present, or future, to, in or over land",
+      "why_relevant": "Fixes the trigger for the notice. The caveator is entitled to notice only of an instrument affecting the land, and this section says which instruments are deemed to affect land, so it determines whether a purported transfer of the Colombo 5 property would set the caveat working.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927; no amendment event recorded in the corpus, so applicable at October 2019.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt of s.8(b) is verbatim but omits the eleven-limb proviso to s.8 that excludes certain instruments from the deeming provision; none of the exclusions covers a deed of transfer, so the answer is unaffected, but the exception should be recorded."
+    },
+    {
+      "provision_id": "PROV-M082-010",
+      "section_id": "23-1927/s33",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "33",
+      "subsection": "(1) and (2)",
+      "relevant_excerpt": "Registration of a priority notice, seizure notice, seizure priority notice, caveat, or lis pendens may be cancelled at the request in writing of the person by whom or on whose behalf it was presented for registration. (2) A District Court may, on the application of any person interested in any property affected by registration of a priority notice, seizure notice, seizure priority notice, caveat, or lis pendens, if it is satisfied that the registration was or has become unnecessary, order that the registration be cancelled.",
+      "why_relevant": "Completes the description of the effect by showing that it is neither permanent nor unilateral: the caveator may have the registration cancelled on written request, and any person interested in the property may ask a District Court to cancel it as unnecessary.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 at the matter date; the references to a caveat were removed from s.33(1) only by Act No. 32 of 2022 s.3, after the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M082-011",
+      "section_id": "23-1927/s34",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "34",
+      "subsection": null,
+      "relevant_excerpt": "Any person injured by reason of the registration or renewal of a priority notice, seizure priority notice, caveat, or Us pendens without reasonable cause, or by unreasonable failure to request cancellation of registration of a priority notice, seizure priority notice, caveat, or lis pendens may recover compensation from the person who applied for such registration or renewal.",
+      "why_relevant": "The counterweight to the remedy: registering a caveat without reasonable cause, or unreasonably refusing to have it cancelled, exposes the caveator to a claim for compensation. It is part of a complete statement of the effect of presenting the document.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 with no amendment event recorded in the corpus. The corpus text carries a scanning error, 'Us pendens' for 'lis pendens', which is reproduced verbatim in the excerpt.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M082-012",
+      "section_id": "23-1927/s43",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "43",
+      "subsection": "(2)",
+      "relevant_excerpt": "An endorsement by the Registrar in the prescribed form on a duplicate of an application for registration of a lis pendens, or on a duplicate of a priority notice or seizure priority notice or an application for renewal of such a notice, or on a duplicate of a caveat shall be admissible in evidence without proof of the signature or appointment of the Registrar, and shall be prima facie evidence of registration",
+      "why_relevant": "Gives the caveator his proof. The Registrar's endorsement on the duplicate caveat is admissible without further proof and is prima facie evidence that the caveat was registered, which is what the caveator will produce in the s.32(5) action.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 with no amendment event recorded in the corpus, so applicable at October 2019.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M082-013",
+      "section_id": "23-1927/s50",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "50",
+      "subsection": null,
+      "relevant_excerpt": "The forms contained in the Second Schedule shall be used with such variations as circumstances may require, but such Schedule may be altered or added to by regulation.",
+      "why_relevant": "Locates the prescribed form that s.32(1) and s.32(4) require: the forms in the Second Schedule, as altered by regulation made under s.49.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927 with no amendment event recorded in the corpus.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Verbatim, but s.50 only says the Second Schedule forms are to be used; the Schedule is not in the corpus, so it cannot be confirmed which form is the October 2019 caveat form, and the map does not record s.49, which is what makes \"prescribed\" mean prescribed by regulation."
+    },
+    {
+      "provision_id": "PROV-M082-014",
+      "section_id": "21-2013/s5",
+      "act_id": "21-2013",
+      "formal_title": "Registration of Documents (Amendment) Act",
+      "number_and_year": "No. 21 of 2013",
+      "section": "5",
+      "subsection": "(1)(i)",
+      "relevant_excerpt": "(6) For each land described in the Caveat, for each Land Registry in which each caveat in respect of each such land is registered and for each period of two years, a fee of 2500.00",
+      "why_relevant": "Supplies the fee that governs duration under s.32(3): the fee is charged per land described in the caveat, per land registry in which it is registered, and per two-year period, so the practical unit of protection at the matter date was two years per fee paid.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Enacted in 2013 and therefore in force at October 2019. It amends the First Schedule of the principal enactment, which is itself not in the corpus, so only the amending text can be quoted.",
+      "verification_status": "verified",
+      "verifier_note": "Commencement confirmed from 21-2013 s.1, which deems the Act to have come into operation on 1 January 2013, so the substituted fee item was in force at the matter date."
+    },
+    {
+      "provision_id": "PROV-M082-015",
+      "section_id": "32-2022/s2",
+      "act_id": "32-2022",
+      "formal_title": "Registration of Documents (Amendment) Act",
+      "number_and_year": "No. 32 of 2022",
+      "section": "2",
+      "subsection": "(3) and (5)",
+      "relevant_excerpt": "(3) A caveat shall be in force for a maximum period of two years.",
+      "why_relevant": "Recorded only to mark the temporal boundary. This Act rewrote s.32 by restricting caveators to persons who have or claim a right, title or interest, requiring an affidavit and an attorney-at-law certificate, capping the caveat at two years and extending the time to sue from thirty days to sixty. None of that governs an October 2019 answer, and an answer keyed to the current text would be wrong for this matter.",
+      "applicable_to_matter_date": false,
+      "temporal_note": "Enacted in 2022, about three years after the matter reference date of October 2019. It must not be applied to this answer; it is listed as background so the verifier can see that the post-2019 change was checked and excluded.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Correctly excluded as post-dating the matter, but the subsection field claims \"(3) and (5)\" while the excerpt quotes only the new subsection (3); the thirty-to-sixty-day change made by 32-2022 s.2(5) is not in the quoted text."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M082-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks what document may be presented, to whom, and with what effect. Each limb is answered on the face of the Registration of Documents Ordinance: s.32(1) names the document and the entitlement, s.32(2) read with s.2(2) and s.14(1) identifies the Registrar and the registry, and s.32(3) to (6) with s.33, s.34 and s.43(2) give the effect, the duration, the cancellation route and the evidentiary value. No judicial gloss or Roman-Dutch doctrine is needed to state any of that. Case law would be needed only to decide whether some particular instrument was in fact void or voidable, which this question does not ask.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M082-Q01-01",
+          "issue": "What document may a person present for registration in order to be served with notice of the presentation for registration of any instrument affecting his land?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M082-Q01-02",
+          "issue": "To whom, and at which office, must that document be presented?",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M082-Q01-03",
+          "issue": "What is the legal effect of registering that document, including the notice it produces, the time limit and grounds for challenging the instrument, the relief available, the duration of the protection and its cancellation?",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M082-001",
+        "PROV-M082-002",
+        "PROV-M082-003",
+        "PROV-M082-004",
+        "PROV-M082-005"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M082-006",
+        "PROV-M082-007",
+        "PROV-M082-008",
+        "PROV-M082-009",
+        "PROV-M082-010",
+        "PROV-M082-011",
+        "PROV-M082-012",
+        "PROV-M082-013",
+        "PROV-M082-014"
+      ],
+      "background_provision_ids": [
+        "PROV-M082-015"
+      ],
+      "legal_hop_count": 2,
+      "hop_count_basis": "One directly applicable provision, s.32(1), which names the document, plus required linked provisions in the same section that cannot be dropped without leaving the answer incomplete: s.32(2) for the recipient and the act of registration, s.32(4) for the notice and s.32(5) for the consequence. Nothing outside s.32 is indispensable, so the chain is a provision plus its required linked provisions rather than a three-step or cross-enactment chain. Verifier: hop count of 2 confirmed - every indispensable provision sits inside s.32, so this is a provision plus its required linked provisions and not a cross-enactment chain. s.32(3) (PROV-M082-005) has been moved from supporting to indispensable because s.32(5) operates only while a caveat is in force, and an edge s.32(3) -> s.32(5) has been added; this adds no hop.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M082-001",
+          "to_provision_id": "PROV-M082-002",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M082-002",
+          "to_provision_id": "PROV-M082-003",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M082-003",
+          "to_provision_id": "PROV-M082-004",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M082-001",
+          "to_provision_id": "PROV-M082-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M082-004",
+          "to_provision_id": "PROV-M082-006",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M082-002",
+          "to_provision_id": "PROV-M082-007",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M082-002",
+          "to_provision_id": "PROV-M082-008",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M082-001",
+          "to_provision_id": "PROV-M082-009",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M082-001",
+          "to_provision_id": "PROV-M082-010",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M082-001",
+          "to_provision_id": "PROV-M082-011",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M082-002",
+          "to_provision_id": "PROV-M082-012",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M082-001",
+          "to_provision_id": "PROV-M082-013",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M082-005",
+          "to_provision_id": "PROV-M082-014",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M082-015",
+          "to_provision_id": "PROV-M082-001",
+          "relationship": "amends"
+        },
+        {
+          "from_provision_id": "PROV-M082-005",
+          "to_provision_id": "PROV-M082-004",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "You wish to have, notice of the presentation of any documents affecting your property situated at No.10, Polhengoda Road, Colombo 5, so that you may take steps to have the document declared void or voidable or in derogation of your lawful rights.",
+        "enriched_background": "You are Ranjith Wijeratne of No. 10, Polhengoda Road, Colombo 5. You bought that house and premises on a deed of transfer executed in March 2011, and your title stands registered in the Colombo land registry in the folio opened for the land. The property is subject to a bond for four million rupees in favour of a licensed commercial bank, registered in the same folio in 2015, and no other document affecting the land has been presented for registration since then. Your younger brother, Sunil Wijeratne, has occupied an annexe of the house since 2016. In 2014 you gave him a power of attorney to manage the property while you were working abroad, and you revoked that power in June 2018. You have now been told that he is showing prospective buyers through the house and describing himself as entitled to sell it. You are leaving Sri Lanka again in November 2019 and expect to be away for about two years, and you are able to pay whatever fee is charged for the protection you want. You instructed an attorney-at-law in Colombo on 2 September 2019, and you can give a Colombo address at which anything may be posted to you while you are abroad. You wish to have, notice of the presentation of any documents affecting your property situated at No.10, Polhengoda Road, Colombo 5, so that you may take steps to have the document declared void or voidable or in derogation of your lawful rights.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M082-Q01-001",
+            "fact": "You are Ranjith Wijeratne, and you bought the house and premises at No. 10, Polhengoda Road, Colombo 5 on a deed of transfer executed in March 2011, your title being registered in the Colombo land registry in the folio opened for that land.",
+            "origin": "synthetic_neutral",
+            "reason": "The background gives no party identity and does not say in what capacity the writer holds the property. Naming the owner and the registered title makes the scenario determinate and fixes which land registry division is concerned, without changing the outcome: at the matter date any person may present a caveat, so ownership is not a condition of the right.",
+            "activates_provision_ids": [
+              "PROV-M082-001",
+              "PROV-M082-008"
+            ],
+            "counterfactual_effect": "If the writer were a stranger with no interest in the land, the answer under the October 2019 text would be the same, because s.32(1) allows any person to present a caveat. The fact would become decisive only under the post-2022 text, which is why the temporal boundary matters.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M082-Q01-002",
+            "fact": "The property is subject to a bond for four million rupees in favour of a licensed commercial bank, registered in the same folio in 2015, and no other document affecting the land has been presented for registration since then.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the missing existing encumbrance and confirms that the folio is live and that nothing else is pending. It gives the scenario a concrete registration history without deciding anything.",
+            "activates_provision_ids": [
+              "PROV-M082-009",
+              "PROV-M082-008"
+            ],
+            "counterfactual_effect": "If the land were unencumbered the answer would be unchanged; the encumbrance only illustrates the kind of instrument that is deemed to affect land.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M082-Q01-003",
+            "fact": "Your younger brother Sunil Wijeratne, who has occupied an annexe of the house since 2016, held a power of attorney from you given in 2014 which you revoked in June 2018, and he is now showing prospective buyers through the house and describing himself as entitled to sell it.",
+            "origin": "synthetic_decisive",
+            "reason": "The background asserts a wish to challenge a document as void, voidable or in derogation of lawful rights but gives no reason to expect any such document. This fact supplies the apprehended instrument and the relationship between the parties, so that the grounds in s.32(5) have something to bite on and the caveat has reasonable cause behind it for the purposes of s.34.",
+            "activates_provision_ids": [
+              "PROV-M082-004",
+              "PROV-M082-009",
+              "PROV-M082-011"
+            ],
+            "counterfactual_effect": "Without any apprehended dealing, a caveat could still be presented and registered, but there would be no reasonable cause for it, exposing the caveator to a compensation claim under s.34, and the s.32(5) remedy would remain purely hypothetical.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M082-Q01-004",
+            "fact": "You instructed an attorney-at-law in Colombo on 2 September 2019, and you can give a Colombo address at which anything may be posted to you while you are abroad.",
+            "origin": "synthetic_decisive",
+            "reason": "The notice machinery turns on an address stated in the caveat, because s.32(4) requires the notice to be sent by registered letter to that address, and the thirty-day period in s.32(5) runs from the posting of that notice. Without a usable local address the protection would be illusory for a client who is abroad.",
+            "activates_provision_ids": [
+              "PROV-M082-003",
+              "PROV-M082-004"
+            ],
+            "counterfactual_effect": "If no address were given, or an address at which the caveator could not be reached, the notice would still be posted and the thirty-day period would still run from posting, so the caveator could lose the s.32(5) remedy without ever learning of the instrument.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M082-Q01-005",
+            "fact": "You are leaving Sri Lanka in November 2019 and expect to be away for about two years, and you are able to pay whatever fee is charged for the protection you want.",
+            "origin": "synthetic_neutral",
+            "reason": "Duration under s.32(3) is capped by the period covered by the fee paid, and the fee item substituted in 2013 is charged for each two-year period. Fixing the period of absence makes the advice on the period to be specified determinate.",
+            "activates_provision_ids": [
+              "PROV-M082-005",
+              "PROV-M082-014"
+            ],
+            "counterfactual_effect": "If a shorter period were specified, or a smaller fee paid, the caveat would lapse earlier and s.32(5) would not operate against an instrument presented after it ceased to be in force.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "The issue is what document may be presented for registration so that the owner of the Colombo 5 property is told whenever a document affecting that land is presented for registration, to whom that document must be presented, and what legal consequences follow from its registration, including what the owner must then do to have the offending document set aside.",
+        "rule": "The document is a caveat. Under the Registration of Documents Ordinance s.32(1) any person, called in the Ordinance a caveator, may present for registration a caveat in the prescribed form requiring to be served with notice of the presentation for registration of any instrument affecting the land described in the caveat. The prescribed form is the relevant form in the Second Schedule, which s.50 directs is to be used with such variations as circumstances require. The caveat is presented for registration to the Registrar: s.32(2) obliges the Registrar on receiving a caveat to register it in the same manner as other instruments but to retain the caveat itself. The Registrar meant is a Registrar of Lands, since s.2(2) provides that the business of the land register office and its branch offices is conducted by the Registrar-General of Lands and Registrars of Lands; and because s.32(2) directs registration in the same manner as other instruments, s.14(1) places the caveat in the book allotted to the division in which the land is situated, that is, at the land registry serving the division in which the property lies. What counts as an instrument affecting the land is fixed by s.8, which deems every instrument that purports or operates to create, transfer, charge or extinguish any right, title or interest in land to affect it. The effect of registration is threefold. First, duration: by s.32(3) the caveat is in force for the period specified in it, which cannot exceed the period covered by the fee paid, and the fee item substituted by the Registration of Documents (Amendment) Act No. 21 of 2013 s.5 is charged for each land described in the caveat, for each land registry in which it is registered, and for each period of two years. Second, warning: by s.32(4) the notice to the caveator is in the prescribed form and is sent by registered letter to the address mentioned in the caveat, and by s.43(2) the Registrar's endorsement on the duplicate caveat is admissible without proof of his signature or appointment and is prima facie evidence of registration. Third, remedy: by s.32(5), if while the caveat is in force an instrument affecting the land described in it is presented for registration, and the caveator commences an action in a competent court within thirty days from the posting of that notice and proves that the instrument is or was at the time of registration void or voidable by him, fraudulent as against him, or in derogation of his lawful rights, the court may order the instrument rectified or cancelled as necessary to preserve his rights and may order the register corrected. Two limits complete the picture. A caveat does not block registration and is not permanent: under s.33 its registration may be cancelled at the written request of the person who presented it, and a District Court may on the application of any person interested in the property cancel the registration if satisfied that it was or has become unnecessary. By s.34 a person injured by registration of a caveat without reasonable cause, or by unreasonable failure to ask for its cancellation, may recover compensation from the caveator. By s.32(6) the section does not affect any other power a court may possess to order an instrument rectified or cancelled.",
+        "application": "The property at No. 10, Polhengoda Road, Colombo 5 is land within the Ordinance, registered in a folio in the Colombo land registry, so a caveat describing it can be lodged in the book of the division in which it is situated as s.14(1) requires. Ranjith Wijeratne is a person within s.32(1), and indeed the registered owner, so he plainly may present a caveat; at the October 2019 date the subsection does not confine the right to persons with an interest in the land. The caveat should describe the land, with its boundaries and the volume and folio, and must state the Colombo address he has given, because s.32(4) requires the notice to be posted by registered letter to the address mentioned in the caveat and he will be out of the country. A transfer purporting to be executed by his brother under the power of attorney revoked in June 2018 would be an instrument that purports to transfer an interest in the land, and so an instrument affecting the land under s.8, which is precisely the event that triggers the notice under s.32(4). Because he expects to be away about two years, and the fee item substituted in 2013 is charged for each two-year period, he should specify a period and pay a fee that keep the caveat in force for the whole of his absence, since s.32(5) operates only while the caveat is in force. If a transfer is then presented, he must act quickly: the thirty days in s.32(5) run from the posting of the notice, not from his receipt of it, and within that period he must commence an action in a competent court and prove the instrument void or voidable by him, fraudulent as against him, or in derogation of his lawful rights, upon which the court may order it cancelled and the register corrected. His apprehension arises from the revoked power of attorney and his brother's conduct, so there is reasonable cause for the caveat and the exposure under s.34 does not arise on these facts; equally, his brother or the bank could apply to the District Court under s.33(2) to cancel the registration if it became unnecessary. It remains open on the facts whether any instrument will in fact be presented, and whether any such instrument would be void or merely voidable is a matter for the evidence in the action.",
+        "conclusion": "The document to be presented is a caveat in the prescribed form under s.32(1) of the Registration of Documents Ordinance, presented for registration to the Registrar of Lands of the land registry in whose division the Colombo 5 property is situated, who must register it in the same manner as other instruments and retain the caveat. Its effect is that while it remains in force, for the period specified in it and covered by the fee paid under s.32(3), the presentation for registration of any instrument affecting the land obliges the Registrar to send notice in the prescribed form by registered letter to the address given in the caveat under s.32(4), and that notice opens a window of thirty days from its posting within which the caveator may sue in a competent court under s.32(5) and, on proof that the instrument is void or voidable by him, fraudulent as against him or in derogation of his lawful rights, obtain an order rectifying or cancelling it and correcting the register. The caveat therefore gives warning and a time-limited right of action; it does not prevent the instrument from being registered, it may be cancelled under s.33, and an unfounded caveat carries the compensation liability in s.34. This states the law as at the matter reference date and does not take account of the later rewriting of s.32."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M082-Q01-001",
+          "claim_text": "The document that may be presented is a caveat in the prescribed form, and s.32(1) allows any person, thereby called a caveator, to present it for registration requiring to be served with notice of the presentation for registration of any instrument affecting the land described in it.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M082-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-002",
+          "claim_text": "The prescribed form is a form of the Second Schedule, which is to be used with such variations as circumstances may require and may be altered or added to by regulation.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M082-013"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M082-Q01-003",
+          "claim_text": "The caveat is presented for registration to the Registrar, who must on receiving it register it in the same manner as other instruments and must retain the caveat.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M082-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-004",
+          "claim_text": "The Registrar concerned is a Registrar of Lands conducting the business of the land register office or a branch office, and the caveat belongs in the book allotted to the division in which the land is situated.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M082-007",
+            "PROV-M082-008",
+            "PROV-M082-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-005",
+          "claim_text": "A caveat is in force only for the period specified in it, which cannot exceed the period covered by the fee paid, and the caveat fee is charged for each land described, for each land registry and for each period of two years.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M082-005",
+            "PROV-M082-014"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-006",
+          "claim_text": "Where an instrument affecting the land is presented for registration, the notice to the caveator is in the prescribed form and is sent by registered letter to the address mentioned in the caveat, and the Registrar's endorsement on the duplicate caveat is prima facie evidence of registration.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M082-003",
+            "PROV-M082-012"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-007",
+          "claim_text": "If the caveator commences an action in a competent court within thirty days from the posting of that notice and proves that the instrument is or was at the time of registration void or voidable by him, fraudulent as against him or in derogation of his lawful rights, the court may order the instrument rectified or cancelled and the register corrected.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M082-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-008",
+          "claim_text": "The instruments that trigger the notice are those deemed to affect land, namely instruments that purport or operate to create, transfer, charge or extinguish any right, title or interest in land.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M082-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-009",
+          "claim_text": "Registration of a caveat may be cancelled at the written request of the person who presented it, or by a District Court on the application of any person interested in the property if satisfied that the registration was or has become unnecessary, and the section does not affect any other power of a court to order an instrument rectified or cancelled.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M082-010",
+            "PROV-M082-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-010",
+          "claim_text": "A person injured by the registration of a caveat without reasonable cause, or by unreasonable failure to request its cancellation, may recover compensation from the person who applied for the registration.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M082-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-011",
+          "claim_text": "The Colombo 5 premises are land registered in a folio of the Colombo land registry, so a caveat describing that land is registrable in the book of the division in which it is situated.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M082-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M082-Q01-001",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-012",
+          "claim_text": "The registered owner is a person entitled to present a caveat under the text in force at the matter date, which imposes no requirement of an interest in the land.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M082-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M082-Q01-001"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-013",
+          "claim_text": "A transfer purporting to be executed under the power of attorney revoked in June 2018 would be an instrument affecting the land, so its presentation for registration while the caveat is in force would oblige the Registrar to post notice to the caveator.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M082-009",
+            "PROV-M082-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M082-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-014",
+          "claim_text": "The caveat must state the Colombo address given for service, because the notice is posted to the address mentioned in the caveat and the thirty days run from posting rather than from receipt, which matters for a caveator who is abroad.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M082-003",
+            "PROV-M082-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M082-Q01-004",
+            "FACT-M082-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-015",
+          "claim_text": "Because the absence is expected to last about two years, the period specified in the caveat and the fee paid should cover the whole of that absence, since the remedy operates only while the caveat is in force.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M082-005",
+            "PROV-M082-014",
+            "PROV-M082-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M082-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-016",
+          "claim_text": "The apprehension arising from the revoked power of attorney and the brother's conduct gives reasonable cause for the caveat, so the compensation exposure for an unfounded caveat does not arise on these facts.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M082-011"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M082-Q01-003"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M082-Q01-017",
+          "claim_text": "The document to be presented is a caveat in the prescribed form, presented for registration to the Registrar of Lands of the land registry in whose division the Colombo 5 property is situated.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M082-001",
+            "PROV-M082-002",
+            "PROV-M082-007",
+            "PROV-M082-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-018",
+          "claim_text": "Its effect is that while it is in force the presentation of any instrument affecting the land brings a posted notice to the caveator and opens a thirty-day window in which he may sue and obtain rectification or cancellation of the instrument and correction of the register; it does not prevent registration, it may be cancelled, and an unfounded caveat carries a liability to compensate.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M082-003",
+            "PROV-M082-004",
+            "PROV-M082-005",
+            "PROV-M082-010",
+            "PROV-M082-011"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M082-Q01-019",
+          "claim_text": "The answer states the law as it stood at the matter reference date and does not apply the later re-enactment of the caveat provisions.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M082-015",
+            "PROV-M082-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "needs_legal_review",
+      "block_reason": "Verifier downgrade. Two defects a lawyer must resolve before this becomes gold. (1) The Application paragraph of the gold answer states that the caveat \"should describe the land, with its boundaries and the volume and folio\". No corpus text in force at October 2019 imposes that content requirement; it is the requirement introduced by Registration of Documents (Amendment) Act No. 32 of 2022 s.2(1)(b)(iv), and the Second Schedule form that would settle the point for 2019 is not in the corpus. The verifier may not rewrite the prose. (2) Claim CL-M082-Q01-016 asserts that reasonable cause exists for the caveat, and claim CL-M082-Q01-002 identifies the prescribed form as a Second Schedule form; both are marked disputed and neither can be settled from the corpus alone.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

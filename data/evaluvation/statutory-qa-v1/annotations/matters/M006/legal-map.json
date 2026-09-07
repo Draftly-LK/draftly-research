@@ -1,0 +1,528 @@
+{
+  "benchmark_matter_id": "M006",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M006",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T21:49:46Z",
+    "verification_agent": "verifier-M006",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:02:00Z"
+  },
+  "matter_reference_date": "2026-04",
+  "matter_reference_date_basis": "exam_session APRIL 2026 recorded in candidates/matters/M006.json",
+  "corpus_gaps": [
+    "The corpus has no instrument defining the territorial extent of a judicial zone (the Judicature Act and the orders made under it are absent), so the proposition that the Judicial Zone of Colombo does not include the Kurunegala District rests on the scenario facts rather than on a corpus provision.",
+    "Section 43 (Interpretation) of the Notaries Ordinance does not define 'area', 'judicial zone' or 'judicial division'; the link between the warrant's 'judicial zone' in section 3 and the 'area' in rule (22) of section 31 is textual, not a defined-term link.",
+    "The Notaries (Amendment) Act No. 6 of 2024, which the consolidated edition records as substituting parts of section 31, is not in the corpus as a separate Act, so the amending text could not be read independently of the consolidation.",
+    "Rule (26) of section 31 is not rendered with its rule number in the corpus body (the paragraph beginning 'He shall deliver or transmit to the Registrar of Lands of the district in which he resides' appears unnumbered), so the monthly duplicate-transmission duty was cited through rule (29) instead."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M006-001",
+      "section_id": "1-1907/s3",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "3",
+      "subsection": "3(1)",
+      "relevant_excerpt": "shall be entitled, on an application to a warrant authorizing him to practice as notary in the language in which he has passed the examination in conveyancing, within the judicial zone in which he resides.",
+      "why_relevant": "Fixes what a notary's warrant authorises: practice in a stated language and within the judicial zone in which he resides. This is the source of the two limits (area and language) that rule (22) of section 31 enforces, and it identifies Saman's authorised area as the Judicial Zone of Colombo.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907; the consolidated text records substitution by Act No. 20 of 1976 s.3 and by Act No. 31 of 2022 s.2, both before the matter date of 2026-04, so the text relied on is the operative text at that date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M006-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "31(22)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice nor authenticate or attest any deed or instrument drawn in any language other than that in which he is authorized to practice.",
+      "why_relevant": "The operative prohibition. It restricts the area in which the notary may perform the act of attestation and the language of the instrument. It says nothing about where the land affected by the deed is situated, which is the point of the question.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 31 is in force from 1907 and the corpus edition is consolidated to 2024 (amendment events recorded for 1976, 2011, 2022 and 2024). No amendment event is recorded against the text of rule (22) itself; treated as in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": "Excerpt and role confirmed against 1-1907/s31 rule (22); read Act No. 6 of 2024 s.3 directly in the corpus (it is present as act 6-2024, contrary to the third recorded corpus gap) and it does not touch rule (22), so the consolidated text is the text in force at 2026-04; note that rule (23) of the same section treats \"area\" and \"zone\" as capable of differing, so the equation of Saman's \"area\" with the Judicial Zone of Colombo runs through s.9 (\"the area specified in his warrant\") and s.3(1) rather than through a defined term."
+    },
+    {
+      "provision_id": "PROV-M006-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "31(29)",
+      "relevant_excerpt": "shall on or before the fifteenth day of the month next following that in which the same was executed (besides transmitting the duplicate in manner aforesaid) deliver or transmit to the Registrar of Lands of the district in which such land shall be situated a copy thereof certified by him as correct",
+      "why_relevant": "Shows on the face of the Ordinance that a notary may lawfully attest a deed affecting land in a district other than his own: the statute does not forbid it, it regulates it by adding a duty to transmit a certified copy and a list to the Registrar of Lands of the district where the land is situated. This is the provision that answers the Kurunegala point.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of section 31, in force from 1907; the consolidated edition carries amendments to 2024 and records no amendment event for rule (29). Treated as in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": "Verified; note that the trigger for rule (29) is the district in which the notary resides, whereas the enriched facts fix only the district of his office, so the duty is engaged by inference from s.3(1) and s.9 rather than by a stated fact."
+    },
+    {
+      "provision_id": "PROV-M006-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "31(30A)",
+      "relevant_excerpt": "Provided that, where such deed or instrument is required to be registered outside the jurisdiction in which he is practicing, he shall submit such deed or instrument for registration before the expiry of sixty days from the date of attestation.",
+      "why_relevant": "Confirms again that attesting a deed registrable outside the notary's own jurisdiction is contemplated and permitted, and sets the longer sixty-day registration deadline that applies to Saman if he attests this deed in Colombo for registration in Kurunegala.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Rule (30A) sits within section 31 of the consolidated edition (consolidated to 2024) and is referred to in section 34(1)(b) as substituted by Act No. 31 of 2022. In force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": "Verified; the temporal note is imprecise in saying only that rule (30A) \"sits within\" section 31 - it was inserted by Notaries (Amendment) Act No. 31 of 2022 s.16(14), and section 34(1)(b) lists rule (30A), both confirmed in the corpus."
+    },
+    {
+      "provision_id": "PROV-M006-005",
+      "section_id": "1-1907/s9",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "9",
+      "subsection": null,
+      "relevant_excerpt": "Every notary shall be bound to have his office within the area specified in his warrant; and any notary infringing this provision shall be liable to have his warrant withdrawn by the Minister.",
+      "why_relevant": "Supports the reading that the Ordinance regulates where the notary is based and operates, not where the subject land lies. Saman's office must be in the Colombo zone, which is where he proposes to attest the deed.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1907 with no amendment event recorded in the consolidated edition. In force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M006-006",
+      "section_id": "1-1907/s34",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "34",
+      "subsection": "34(1)(c)",
+      "relevant_excerpt": "any other rule set out in section 31, shall be guilty of an offence, and shall, on conviction after summary trial before a Magistrate, be liable to a fine not exceeding fifty thousand rupees, in addition to any civil liability he may incur thereby.",
+      "why_relevant": "Gives the consequence if Saman were to attest the deed outside his zone: rule (22) is not listed in paragraph (a) or (b) of section 34(1), so a breach falls within the residual paragraph (c). It shows the territorial limit is penal, not merely directory.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Notaries (Amendment) Act No. 31 of 2022 s.17; the substituted text is the operative text at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M006-007",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "31(17)(c)",
+      "relevant_excerpt": "If he is a legal officer working in any organization, entity or company, he shall specify the registered address of such organization, entity or company",
+      "why_relevant": "Background: the Ordinance expressly contemplates a notary who is a legal officer of a company and regulates that position by a disclosure requirement on the face of the deed rather than by disqualification. It is why Saman's employment does not by itself bar him from attesting.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of the rule (17) block of section 31 as restructured by Act No. 47 of 2011 s.3 and amended by Acts No. 31 of 2022 and No. 6 of 2024, all before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M006-008",
+      "section_id": "1-1907/s11",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "11",
+      "subsection": null,
+      "relevant_excerpt": "The Minister may on application made in that behalf grant to a notary, having a warrant authorizing him to practice within a judicial zone, a fresh warrant authorizing him to practice within another judicial zone.",
+      "why_relevant": "Identifies the only route by which Saman could lawfully attest the deed in Kurunegala itself: a fresh warrant for that judicial zone. It also confirms that the zone limit attaches to the warrant and is changed only by the Minister.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Substituted by Act No. 20 of 1976 s.5; that text stands in the consolidated edition and is in force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M006-009",
+      "section_id": "23-1927/s14",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "14",
+      "subsection": "14(1)",
+      "relevant_excerpt": "Every instrument presented for registration shall be registered in the book allotted to the division in which the land affected by the instrument is situated",
+      "why_relevant": "Background: registration follows the situation of the land, not the zone of the attesting notary. It explains why the deed, though attested in Colombo, must be registered in the Kurunegala land registry division, and so why the extra duties in rules (29) and (30A) exist.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1927, last recorded change 1974. In force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M006-010",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "31(13)",
+      "relevant_excerpt": "He shall not authenticate or attest any deed or instrument to which he is a party.",
+      "why_relevant": "The one disqualification that Saman's employment could have triggered. On the enriched facts he is not a party to the deed, so it is not engaged; it is recorded because it is the rule a verifier should test the employment fact against.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Part of section 31, in force from 1907, no amendment event recorded for rule (13). In force at 2026-04.",
+      "verification_status": "verified",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M006-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question is whether a notary whose warrant is limited to one judicial zone may attest a deed affecting land in another district. The Notaries Ordinance answers it on its own text: section 3(1) fixes the scope of the warrant, rule (22) of section 31 states the prohibition in terms of the area of attestation and the language, and rule (29) of section 31 expressly regulates the case of a deed affecting land in a district other than the notary's, which would be incoherent if such attestation were forbidden. No judicial gloss or Roman-Dutch doctrine is needed to reach the answer or its conditions.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M006-Q01-01",
+          "issue": "Whether the territorial limit in a notary's warrant restricts the place at which he may attest a deed, or the situation of the land that the deed affects.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M006-Q01-02",
+          "issue": "Whether a notary authorised to practise in the Judicial Zone of Colombo may attest a Deed of Transfer of land situated in the Kurunegala District, and on what conditions as to place of attestation and language.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M006-Q01-03",
+          "issue": "What additional statutory duties fall on the attesting notary because the land is in a district other than the one in which he resides and practises.",
+          "status": "proposed"
+        },
+        {
+          "issue_id": "ISS-M006-Q01-04",
+          "issue": "Whether Saman's position as legal officer of the company that is the purchaser disqualifies him from attesting the deed.",
+          "status": "proposed"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M006-001",
+        "PROV-M006-002",
+        "PROV-M006-003"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M006-004",
+        "PROV-M006-005",
+        "PROV-M006-006",
+        "PROV-M006-008",
+        "PROV-M006-010"
+      ],
+      "background_provision_ids": [
+        "PROV-M006-007",
+        "PROV-M006-009"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary linked steps: (1) rule (22) of section 31 prohibits attestation outside the area in which the notary is authorised to practise; (2) section 3(1) supplies what that area is, namely the judicial zone stated in the warrant, so the prohibition bites on the place of attestation; (3) rule (29) of section 31 shows that the situation of the land in another district falls outside that prohibition and instead triggers a separate transmission duty. Removing any one of the three leaves the conclusion unsupported.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M006-001",
+          "to_provision_id": "PROV-M006-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M006-002",
+          "to_provision_id": "PROV-M006-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M006-003",
+          "to_provision_id": "PROV-M006-004",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M006-002",
+          "to_provision_id": "PROV-M006-006",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M006-001",
+          "to_provision_id": "PROV-M006-005",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M006-001",
+          "to_provision_id": "PROV-M006-008",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M006-003",
+          "to_provision_id": "PROV-M006-009",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Saman who is a Notary having Notary License to practise in the Judicial Zone of Colombo is employed as a legal officer at a Real estate company in Colombo. Saman's employer instructs him to execute a Deed of Transfer on urgent basis.\n\nThe said land is situated in Kurunegala.",
+        "enriched_background": "Saman, who is a Notary having a Notary License to practise in the Judicial Zone of Colombo, is employed as a legal officer at a real estate company in Colombo. His warrant authorises him to practise in the Sinhala language, and his notarial office, where he keeps his records, is at No. 25, Hulftsdorp Street, Colombo 12.\n\nSaman's employer, Sethsiri Realty (Private) Limited of No. 140, Ward Place, Colombo 07, has agreed to buy an allotment of land from Mr. Nimal Perera. The company instructs Saman to execute a Deed of Transfer on an urgent basis. Saman is not a party to the deed, holds no shares in the company and is not one of its directors.\n\nThe said land is situated in Kurunegala. It is the allotment called \"Kurunduwatta\", 0.2023 hectares in extent, at Malkaduwawa village in the Kurunegala Divisional Secretary's Division of the Kurunegala District. Before drawing the deed Saman obtained Mr. Perera's title deed and a certified extract of the relevant folio from the Kurunegala Land Registry, and he intends to tender the completed deed for registration at that registry.\n\nThe draft deed is written in Sinhala. Saman proposes that Mr. Perera and the company's authorised signatory sign it before two witnesses on 20 April 2026 at his Hulftsdorp office in Colombo, and that he attest it there.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M006-Q01-001",
+            "fact": "The purchaser under the Deed of Transfer is Saman's employer, Sethsiri Realty (Private) Limited of No. 140, Ward Place, Colombo 07, and the vendor is Mr. Nimal Perera. Saman is not himself a party to the deed, holds no shares in the company and is not one of its directors.",
+            "origin": "synthetic_neutral",
+            "reason": "The original background names no parties, so the only disqualification the employment could trigger cannot be tested. Fixing the parties makes the scenario determinate without changing the answer.",
+            "activates_provision_ids": [
+              "PROV-M006-010",
+              "PROV-M006-007"
+            ],
+            "counterfactual_effect": "If Saman were himself an executant or grantee, rule (13) of section 31 would bar him from attesting the deed whatever the position on territory.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M006-Q01-002",
+            "fact": "The land is the allotment called \"Kurunduwatta\", 0.2023 hectares in extent, at Malkaduwawa village in the Kurunegala Divisional Secretary's Division of the Kurunegala District.",
+            "origin": "synthetic_neutral",
+            "reason": "The original says only that the land is situated in Kurunegala. Naming the district makes explicit that the land lies outside the district in which the notary resides, which is the condition the transmission duty turns on.",
+            "activates_provision_ids": [
+              "PROV-M006-003",
+              "PROV-M006-009"
+            ],
+            "counterfactual_effect": "If the land were in the Colombo District, the duty to send a certified copy and list to the Registrar of Lands of another district would not arise and the longer registration period would not apply.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M006-Q01-003",
+            "fact": "The parties and the two witnesses are to sign the deed, and Saman is to attest it, on 20 April 2026 at his notarial office at No. 25, Hulftsdorp Street, Colombo 12, which is within the Judicial Zone of Colombo.",
+            "origin": "synthetic_decisive",
+            "reason": "The original does not say where the attestation is to take place, yet that is the fact the territorial prohibition turns on. Without it the question cannot be answered either way.",
+            "activates_provision_ids": [
+              "PROV-M006-002",
+              "PROV-M006-001",
+              "PROV-M006-005"
+            ],
+            "counterfactual_effect": "If Saman travelled to Kurunegala and attested the deed there, he would attest in an area other than that in which he is authorised to practise, breaching rule (22) of section 31 and exposing himself to the fine under section 34(1)(c); the answer would become no.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M006-Q01-004",
+            "fact": "Saman's warrant authorises him to practise in the Sinhala language, and the Deed of Transfer is drawn in Sinhala.",
+            "origin": "synthetic_decisive",
+            "reason": "Rule (22) of section 31 imposes a language limit alongside the area limit, so a complete answer needs the language of the warrant and of the deed to be determinate.",
+            "activates_provision_ids": [
+              "PROV-M006-002",
+              "PROV-M006-001"
+            ],
+            "counterfactual_effect": "If the deed were drawn in a language other than the one in which he is authorised to practise, rule (22) would bar him from attesting it even inside the Colombo zone.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M006-Q01-005",
+            "fact": "Before drawing the deed Saman obtained the vendor's title deed and a certified extract of the relevant folio from the Kurunegala Land Registry, and he intends to tender the completed deed for registration at that registry.",
+            "origin": "synthetic_neutral",
+            "reason": "The classification flags a missing relevant document. Naming the registry from which the extract was taken and where the deed will be registered makes the post-attestation duties concrete.",
+            "activates_provision_ids": [
+              "PROV-M006-004",
+              "PROV-M006-009",
+              "PROV-M006-003"
+            ],
+            "counterfactual_effect": "If the deed were registrable within the jurisdiction in which he practises, the thirty-day rather than the sixty-day period for submitting it for registration would apply.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether Saman, whose notarial warrant authorises him to practise within the Judicial Zone of Colombo and who is employed as a legal officer of the purchasing company, may attest a Deed of Transfer of land situated in the Kurunegala District, and if so on what conditions and with what consequential duties.",
+        "rule": "A notary's warrant entitles him to practise as a notary in the language in which he passed the conveyancing examination and within the judicial zone in which he resides (Notaries Ordinance s.3(1)), and s.9 binds him to keep his office within the area specified in that warrant. Rule (22) of s.31 provides that he shall not authenticate or attest any deed in any area other than that in which he is authorised to practise, nor in any language other than that in which he is authorised to practise, nor attest a deed drawn in such another language. The prohibition is expressed in terms of the area in which the notary attests and the language of the instrument; it says nothing about where the land affected by the deed is situated. That the situation of the land is not a bar appears from rule (29) of s.31, which deals expressly with a deed affecting land in a district other than that in which the attesting notary resides and requires him, besides transmitting the duplicate in the ordinary way, to deliver or transmit to the Registrar of Lands of the district in which the land is situated a copy certified by him as correct, with a list in duplicate, on or before the fifteenth day of the month following execution. Rule (30A) of s.31 allows sixty days instead of thirty for submitting for registration a deed required to be registered outside the jurisdiction in which the notary practises, and Registration of Documents Ordinance s.14(1) requires the instrument to be registered in the book allotted to the division in which the land lies. Attesting outside the authorised area is an offence: rule (22) is not among the rules listed in s.34(1)(a) or (b), so a breach attracts s.34(1)(c), a fine not exceeding fifty thousand rupees in addition to any civil liability. The zone may be changed only by a fresh warrant granted by the Minister under s.11. Employment as a legal officer is not a disqualification; rule (17)(c) of s.31 assumes a notary may be a legal officer of a company and requires him to state the company's registered address on the front page of the deed. The related disqualification is rule (13) of s.31, which bars a notary from attesting a deed to which he is a party.",
+        "application": "Saman's licence is for the Judicial Zone of Colombo, so by s.3(1) and s.9 his authorised area is Colombo and his office at Hulftsdorp is within it. The deed is to be signed by Mr. Perera and the company's authorised signatory before two witnesses, and attested by Saman, at that Colombo office on 20 April 2026; the attestation therefore takes place inside the area in which he is authorised to practise. The deed is drawn in Sinhala, the language of his warrant. Both limbs of rule (22) of s.31 are thus satisfied. The fact that the land, Kurunduwatta at Malkaduwawa, lies in the Kurunegala District does not put the attestation outside his area, because rule (22) looks to where the notary attests and not to where the land lies, and rule (29) of s.31 proceeds on the footing that a notary may attest a deed affecting land in a district other than his own. Saman is not a party to the deed and holds no shares or directorship in the purchasing company, so rule (13) of s.31 is not engaged; because he is a legal officer of that company, rule (17)(c) of s.31 requires the company's registered address to be stated on the front page of the deed. Because the land is in another district, he must, in addition to the duplicate he transmits to the Registrar of Lands of his own district, deliver or transmit a certified copy of the deed with a list in duplicate to the Registrar of Lands at Kurunegala on or before 15 May 2026, and, since the deed must be registered in the Kurunegala division under s.14(1) of the Registration of Documents Ordinance, he has sixty days from attestation to submit it for registration under rule (30A) of s.31. If instead he yielded to the urgency and travelled to Kurunegala to attest the deed there, he would attest in an area other than that in which he is authorised to practise, contrary to rule (22) of s.31 and punishable under s.34(1)(c).",
+        "conclusion": "Yes. Saman can attest the Deed of Transfer even though the land is situated in Kurunegala, provided he attests it within the Judicial Zone of Colombo, in which his warrant authorises him to practise, and in the language of that warrant. His territorial limitation restricts where he may attest, not where the land the deed affects may be situated. He must then discharge the extra duties that follow from the land lying in another district: a certified copy and list to the Registrar of Lands of Kurunegala by the fifteenth day of the following month under rule (29) of s.31, and submission of the deed for registration at the Kurunegala land registry within sixty days of attestation under rule (30A) of s.31. He cannot attest the deed in Kurunegala itself unless the Minister first grants him a fresh warrant for that zone under s.11 of the Notaries Ordinance."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M006-Q01-001",
+          "claim_text": "A notary's warrant authorises him to practise only in the language in which he passed the conveyancing examination and within the judicial zone in which he resides.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M006-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-002",
+          "claim_text": "A notary must not authenticate or attest a deed in any area other than that in which he is authorised to practise, nor in a language, or on a deed drawn in a language, other than that in which he is authorised to practise.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M006-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-003",
+          "claim_text": "The territorial restriction attaches to the place where the notary attests and to the location of his office, not to the situation of the land affected by the deed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M006-002",
+            "PROV-M006-005",
+            "PROV-M006-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-004",
+          "claim_text": "The Ordinance contemplates a notary attesting a deed affecting land in a district other than the one in which he resides, and in that case requires him to deliver or transmit a certified copy of the deed, with a list in duplicate, to the Registrar of Lands of the district in which the land is situated on or before the fifteenth day of the following month.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M006-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-005",
+          "claim_text": "Where the deed has to be registered outside the jurisdiction in which the notary practises he has sixty days rather than thirty from attestation to submit it for registration, and the deed is registrable in the division in which the land is situated.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M006-004",
+            "PROV-M006-009"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-006",
+          "claim_text": "Attesting a deed outside the area in which the notary is authorised to practise is an offence punishable, on summary trial before a Magistrate, by a fine not exceeding fifty thousand rupees in addition to any civil liability.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M006-006",
+            "PROV-M006-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-007",
+          "claim_text": "Being a legal officer of a company is not a disqualification from attesting; the disqualification is being a party to the deed, and a notary who is a legal officer must state the company's registered address on the front page of the deed.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M006-010",
+            "PROV-M006-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-008",
+          "claim_text": "Saman's authorised area is the Judicial Zone of Colombo and he proposes to have the deed signed and to attest it at his Hulftsdorp office in Colombo, which is inside that zone.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M006-001",
+            "PROV-M006-002",
+            "PROV-M006-005"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "FACT-M006-Q01-003"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-009",
+          "claim_text": "The deed is drawn in Sinhala, the language in which Saman's warrant authorises him to practise, so the language limb of the restriction is also satisfied.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M006-002",
+            "PROV-M006-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M006-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-010",
+          "claim_text": "That the land lies at Malkaduwawa in the Kurunegala District does not take the attestation outside Saman's authorised area, because the restriction turns on where he attests and the Ordinance separately regulates deeds affecting land in another district.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M006-002",
+            "PROV-M006-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-2",
+            "FACT-M006-Q01-002"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-011",
+          "claim_text": "Saman is not a party to the deed and holds no shares or directorship in the purchasing company, so the bar on attesting a deed to which the notary is a party does not apply; as its legal officer he must state the company's registered address on the front page of the deed.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M006-010",
+            "PROV-M006-007"
+          ],
+          "supporting_fact_ids": [
+            "BG-3",
+            "FACT-M006-Q01-001"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-012",
+          "claim_text": "Because the land is in the Kurunegala District, Saman must send a certified copy of the deed and a list in duplicate to the Registrar of Lands at Kurunegala by 15 May 2026 and must submit the deed for registration at the Kurunegala land registry within sixty days of attestation.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M006-003",
+            "PROV-M006-004",
+            "PROV-M006-009"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M006-Q01-002",
+            "FACT-M006-Q01-003",
+            "FACT-M006-Q01-005"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-013",
+          "claim_text": "Saman can attest the Deed of Transfer notwithstanding that the land is in Kurunegala, provided the attestation takes place within the Judicial Zone of Colombo and the deed is in the language of his warrant.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M006-001",
+            "PROV-M006-002",
+            "PROV-M006-003"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2",
+            "FACT-M006-Q01-003",
+            "FACT-M006-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M006-Q01-014",
+          "claim_text": "He could not lawfully attest the deed in Kurunegala itself unless the Minister first granted him a fresh warrant authorising practice in that judicial zone.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M006-002",
+            "PROV-M006-008",
+            "PROV-M006-006"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

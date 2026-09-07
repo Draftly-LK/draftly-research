@@ -1,0 +1,1275 @@
+{
+  "benchmark_matter_id": "M027",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M027",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:20:41Z",
+    "verification_agent": "verifier-M027",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:30:15Z"
+  },
+  "matter_reference_date": "2024-10",
+  "matter_reference_date_basis": "matter_reference_date in candidates/matters/M027.json, corresponding to the OCTOBER 2024 examination session.",
+  "corpus_gaps": [
+    "No Ministerial Order under section 3(1) of the Stamp Duty (Special Provisions) Act No. 12 of 2006 fixing stamp duty rates is in the corpus, and the rate schedules of the Stamp Duty Act No. 43 of 1982 were not extracted, so the amount of duty on the lease (M027-Q03) cannot be computed.",
+    "No corpus source states which judicial zone Colombo or Negombo falls in, so the application of section 31 rule (22) of the Notaries Ordinance to a Colombo notary and a Negombo executant is stated conditionally.",
+    "Commencement dates of the Notaries (Amendment) Act No. 6 of 2024, the Prevention of Frauds (Amendment) Act No. 4 of 2024 and the Powers of Attorney (Amendment) Act No. 3 of 2024 are not in the corpus; only the year is recorded, so their being in force by October 2024 is assumed and flagged in each temporal_note.",
+    "The corpus text of section 31 of the Notaries Ordinance has lost some rule numbers around rules (15) to (17); PROV-M027-007 is therefore identified by its opening words rather than by a rule number.",
+    "No corpus provision settles whether a deed attested by a notary who holds no current yearly certificate is void; section 33 does not reach a section 30 default, and the point would need judicial authority (M027-Q02)."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M027-001",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)(a)",
+      "relevant_excerpt": "shall be in force or avail in law unless - (a) the relevant deed or instrument shall be in writing, signed by every executant or by any person duly authorised by such executant and the witnesses in the presence of a licenced notary public present at the same time and in the presence of one another, and the same shall be attested by such notary;",
+      "why_relevant": "A lease of an apartment for three years is an agreement affecting immovable property outside the 'lease at will or for any period not exceeding one month' exclusion, so it is of no force in law unless it is in writing, signed by every executant or by a person duly authorised by the executant, together with the witnesses, in the presence of a licenced notary and attested by that notary. This both compels notarial execution and supplies the route by which Shantha may sign through an authorised person.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 was last amended in 2024 (Act No. 4 of 2024) and in 2022 (Act No. 30 of 2022); the corpus text is the consolidated version. Commencement dates are not in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-002",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (12)",
+      "relevant_excerpt": "(12) He shall not authenticate or attest any deed or instrument unless the person executing the same and the witnesses shall have signed the same in his presence and in the presence of one another, and unless he shall have signed the same in the presence of the executant and of the attesting witnesses.",
+      "why_relevant": "Fixes the core execution requirement: the executant and the witnesses must sign in the notary's presence and in the presence of one another. This is why Shantha cannot simply post a signed agreement to Kanthi.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section in the consolidated Notaries Ordinance text; the corpus records the latest change as 2024 (Notaries (Amendment) Act No. 6 of 2024). The corpus carries years only, not commencement dates, so the verifier should confirm that the 2024 text was in force by October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-003",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (22)",
+      "relevant_excerpt": "(22) He shall not authenticate or attest any deed or instrument in any area other than that in which he is authorized to practice, nor in any language other than that in which he is authorized to practice nor authenticate or attest any deed or instrument drawn in any language other than that in which he is authorized to practice.",
+      "why_relevant": "A notary may not attest a deed in any area other than the area in which she is authorised to practise. Kanthi practises in Colombo, so if the Negombo area lies outside her authorised area she cannot travel to Negombo and attest Shantha's signature there.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section in the consolidated Notaries Ordinance text; the corpus records the latest change as 2024 (Notaries (Amendment) Act No. 6 of 2024). The corpus carries years only, not commencement dates, so the verifier should confirm that the 2024 text was in force by October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-004",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (25)",
+      "relevant_excerpt": "(25) Where any deed or instrument is executed or acknowledged before more than one notary- (a) the notary who first attests such deed or instrument shall comply with all the requirements of rule (20), and every other notary attesting such deed or instrument shall comply with the requirements of paragraphs (a) to (e) of the aforesaid rule",
+      "why_relevant": "Expressly contemplates a deed or instrument executed or acknowledged before more than one notary and allocates the attestation duties between the first attesting notary and every other attesting notary. This is the statutory basis for Shantha signing before a notary where he is and Ananda signing before Kanthi in Colombo.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section in the consolidated Notaries Ordinance text; the corpus records the latest change as 2024 (Notaries (Amendment) Act No. 6 of 2024). The corpus carries years only, not commencement dates, so the verifier should confirm that the 2024 text was in force by October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-005",
+      "section_id": "1-1907/s32",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "32",
+      "subsection": "(2)(i)",
+      "relevant_excerpt": "(2) In the case of any deed or instrument which is to be executed by two or more parties, both or all of whom, as the case may be, do not sign the deed or instrument at the same time and place- (i) the deed or instrument shall, for the purposes of the application of rules (6), (7), (23) and (25) set out in section 31, be deemed to be executed or acknowledged at the time when it is first signed by a party, or by two or more parties at the same time and place;",
+      "why_relevant": "Deals in terms with a deed to be executed by two or more parties who do not sign at the same time and place, and fixes when the instrument is deemed executed for the purposes of rules (6), (7), (23) and (25). It confirms that split execution is lawful and tells Kanthi which date governs stamping and numbering.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended 1907 text in the corpus; no amendment event recorded, so in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-006",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (30)",
+      "relevant_excerpt": "(30) If he attest any deed or instrument executed before him by means of an attorney, he shall preserve a true copy of the power of attorney with his protocol, and shall forward a like copy with the duplicate to the Registrar of Lands.",
+      "why_relevant": "If the agreement is executed by an attorney under a power of attorney, the attesting notary must keep a true copy of the power with her protocol and forward a like copy with the duplicate to the Registrar of Lands.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section in the consolidated Notaries Ordinance text; the corpus records the latest change as 2024 (Notaries (Amendment) Act No. 6 of 2024). The corpus carries years only, not commencement dates, so the verifier should confirm that the 2024 text was in force by October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-007",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (15A), paragraph (c) (inserted by Act No. 31 of 2022; rule number taken from the corpus provision ids for section 31, which label this block sub-15A)",
+      "relevant_excerpt": "(c) where a deed or instrument is signed by an attorney, such attorney shall submit to the notary an affidavit affirming that the Power of Attorney is genuine and in force and the grantor is alive when executing such deed or instrument;",
+      "why_relevant": "Where an attorney signs, that attorney must give the notary an affidavit that the power of attorney is genuine and in force and that the grantor is alive at the time of execution. A step Kanthi must take if the power-of-attorney route is used.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Consolidated Notaries Ordinance text; latest recorded change 2022 (Act No. 31 of 2022), before the October 2024 matter date. The corpus carries years only, not commencement dates.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and the substance is right, but the rule number is recoverable after all: the corpus provision ids for section 31 label this block 1-1907/s31/sub-15A/sub-1/par-c, and section 32(1) independently identifies rule (16) as the boundaries rule, so this is rule (15A), paragraph (c), not an unnumbered rule."
+    },
+    {
+      "provision_id": "PROV-M027-008",
+      "section_id": "4-1902/s2",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "2",
+      "subsection": "definition of \"power of attorney\"",
+      "relevant_excerpt": "means any written power or authority other than that given to an attorney at law for the purpose of appearing as an attorney at law on behalf of such person, given by one person to another, to represent him, to perform any work, do any act, or carry on any trade or business, and - (a) if it is executed in Sri Lanka, executed before two witnesses and attested by a notary public;",
+      "why_relevant": "Defines the instrument by which Shantha can authorise another person to sign for him, and requires that a power executed in Sri Lanka be executed before two witnesses and attested by a notary public.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Definition substituted by Act No. 28 of 2022 and amended by Act No. 3 of 2024; the corpus text is the consolidated version. Commencement dates are not in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-009",
+      "section_id": "4-1902/s3",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3",
+      "subsection": "(1)(b)",
+      "relevant_excerpt": "(b) Every power of attorney holder (hereinafter referred to as the \"attorney\") shall submit his power of attorney for registration, if it is executed in Sri Lanka within one month and if it is executed outside Sri Lanka within three months, from the date of execution of the power of attorney",
+      "why_relevant": "A power of attorney executed in Sri Lanka must be submitted to the Registrar-General for registration within one month of execution, with a notarially certified copy and an affidavit. A dated step in the power-of-attorney route.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 3 was repealed and substituted by Act No. 28 of 2022, before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-010",
+      "section_id": "4-1902/s3A",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3A",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) A power of attorney granted to be used for the purpose of a transaction which falls within the scope of section 2 of the Prevention of Frauds Ordinance (Chapter 70) shall be executed subject to the provisions specified in subsection (2) or (3), as the case may be.",
+      "why_relevant": "A power of attorney granted for a transaction within section 2 of the Prevention of Frauds Ordinance - which this three-year lease is - must satisfy the additional formal requirements in section 3A(2) or (3), including a description of the condominium parcel and the prior registration reference.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 28 of 2022, before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-011",
+      "section_id": "4-1902/s3B",
+      "act_id": "4-1902",
+      "formal_title": "Powers of Attorney Ordinance",
+      "number_and_year": "No. 4 of 1902",
+      "section": "3B",
+      "subsection": "(1)(a)-(b)",
+      "relevant_excerpt": "(a) examine the relevant volumes and folios in the Registrar General's department; (b) be satisfied that the power of attorney has not been revoked or cancelled and shall state such fact in his attestation:",
+      "why_relevant": "Puts a personal duty on the attesting notary to examine the Registrar-General's volumes and folios, to satisfy herself that the power of attorney has not been revoked or cancelled, and to say so in the attestation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Inserted by Act No. 28 of 2022, before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-012",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (30A)",
+      "relevant_excerpt": "(30A) It shall be the duty of every notary to submit for registration to the Registrar, every deed or instrument attested by him before the expiry of thirty days from the date of attestation thereof: Provided that, where such deed or instrument is required to be registered outside the jurisdiction in which he is practicing, he shall submit such deed or instrument for registration before the expiry of sixty days from the date of attestation.",
+      "why_relevant": "The registration deadline: every deed attested must be submitted for registration within thirty days of attestation, or sixty days where it has to be registered outside the jurisdiction in which the notary practises. The apartment is in Negombo and Kanthi practises in Colombo, so the sixty-day limb is the one in issue.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Consolidated Notaries Ordinance text; latest recorded change 2022 (Act No. 31 of 2022), before the October 2024 matter date. The corpus carries years only, not commencement dates.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-013",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (26)(a)(i)",
+      "relevant_excerpt": "(i) He shall deliver or transmit to the Registrar of Lands of the district in which he resides the following documents, so that they shall reach the registrar on or before the fifteenth day of every month, namely, the duplicate of every deed or instrument (except wills and codicils) executed or acknowledged before or attested by him during the preceding month, together with a list in duplicate, signed by him, of all such deeds or instruments, which list shall be substantially in the Form F 1 in the Second Schedule",
+      "why_relevant": "Requires the duplicate of every deed attested during a month, with a signed list in duplicate in Form F1, to reach the Registrar of Lands of the district in which the notary resides on or before the fifteenth day of the following month. Rule (26) is identified by number in section 21(1)(d) and section 34(2).",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section in the consolidated Notaries Ordinance text; the corpus records the latest change as 2024 (Notaries (Amendment) Act No. 6 of 2024). The corpus carries years only, not commencement dates, so the verifier should confirm that the 2024 text was in force by October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-014",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (29)",
+      "relevant_excerpt": "such notary, or in case such deed or instrument is attested by two or more notaries, then the notary upon whom is cast the duty of transmitting to the Registrar of Lands the duplicate of such deed or instrument, shall on or before the fifteenth day of the month next following that in which the same was executed (besides transmitting the duplicate in manner aforesaid) deliver or transmit to the Registrar of Lands of the district in which such land shall be situated a copy thereof certified by him as correct",
+      "why_relevant": "Where the deed affects land in a district other than the district in which the attesting notary resides, a certified copy must also be sent to the Registrar of Lands of the district where the land is situated by the fifteenth of the following month. Kanthi resides and practises in Colombo; the apartment is in Negombo.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended 1907 text in the corpus; no amendment event recorded, so in force at October 2024.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording is verbatim but the excerpt begins mid-sentence and drops the operative condition (If a deed or instrument ... affects a land situated in a district other than that in which the notary ... shall reside); the rule also turns on the district in which the notary resides, and the matter states only that Kanthi practises in Colombo, not where she resides."
+    },
+    {
+      "provision_id": "PROV-M027-015",
+      "section_id": "23-1927/s8",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "8",
+      "subsection": "(b)",
+      "relevant_excerpt": "(b) if executed or made after the commencement of this Ordinance, all instruments, including wills, decrees and orders of any court or authority, and awards, which purport or operate to create, confer, declare, limit, assign, transfer, charge, incumber, release, or extinguish any right, title, or interest, whether vested or contingent, past, present, or future, to, in or over land, or which create or record or are evidence of any contract for effecting any such object",
+      "why_relevant": "A three-year lease is an instrument that creates an interest in land, so it is deemed to affect land and falls within the registration chapter. The proviso excludes only tenancies at will or for a period not exceeding one month, which this is not.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus text is the 1990 consolidation of the Ordinance. Section 8 was later amended by the Registration of Documents (Amendment) Act, No. 18 of 2024, s.2 (new subparagraph (xii) in the proviso to paragraph (b)), which does not affect a lease; that Act comes into operation on a date appointed by the Minister and the corpus records no commencement date. Paragraph (b) as relied on here was in force at October 2024.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording and role confirmed, but the temporal note is wrong: section 8 was amended by the Registration of Documents (Amendment) Act, No. 18 of 2024, s.2, which adds subparagraph (xii) to the proviso to paragraph (b); the corpus text is the 1990 consolidation and does not carry it. The new subparagraph excludes agreements under the Secured Transactions law and does not affect a lease, and Act No. 18 of 2024 comes into operation on a date appointed by the Minister, which the corpus does not record."
+    },
+    {
+      "provision_id": "PROV-M027-016",
+      "section_id": "23-1927/s7",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "7",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) An instrument executed or made on or after the 1st day of January, 1864, whether before or after the commencement of this Ordinance shall, unless it is duly registered under this Chapter, or, if the land has come within the operation of the Land Registration Ordinance, 1877f, in the books mentioned in section 26 of that Ordinance, be void as against all parties claiming an adverse interest thereto on valuable consideration by virtue of any subsequent instrument which is duly registered under this Chapter",
+      "why_relevant": "Supplies the consequence of failing to register: the lease would be void against a person who later acquires an adverse interest for value under a duly registered instrument. This is why registration matters to Ananda.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended 1927 text in the corpus; in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-017",
+      "section_id": "23-1927/s14",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "14",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) Every instrument presented for registration shall be registered in the book allotted to the division in which the land affected by the instrument is situated",
+      "why_relevant": "Fixes the place of registration: the book allotted to the division in which the land affected is situated - here the land registry for the division covering the Negombo apartment, not Colombo.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Corpus text carries a 1974 editorial marker; no amendment event is recorded against the operative words relied on here. In force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-018",
+      "section_id": "23-1927/s26",
+      "act_id": "23-1927",
+      "formal_title": "Registration of Documents Ordinance",
+      "number_and_year": "No. 23 of 1927",
+      "section": "26",
+      "subsection": "(1)(a)-(d)",
+      "relevant_excerpt": "(a) any person executing the instrument; (b) any person claiming any interest or benefit thereunder; (c) any person having any interest in or charge on any property affected thereby; or (d) the agent of any such person or a attorney-at-law or notary acting on behalf of any such person.",
+      "why_relevant": "Confirms that Kanthi, as the notary acting on behalf of a party, may herself present the agreement for registration.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Chapter inserted by Act No. 22 of 1958; no later amendment recorded. In force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-019",
+      "section_id": "1-1907/s37",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "37",
+      "subsection": null,
+      "relevant_excerpt": "Whenever a notary has received instructions to register, and a sufficient sum to meet the necessary expense of registering, any deed drawn or attested by him, and shall in such case fail to use due diligence in effecting such registration, he shall be guilty of an offence, and liable on conviction to a fine not less than seven thousand five hundred rupees and not exceeding twenty five thousand rupees, in addition to any civil liability which he may incur by reason of his default.",
+      "why_relevant": "Where the notary has instructions and funds to register, failure to use due diligence in registering is an offence carrying a fine of Rs. 7,500 to Rs. 25,000 in addition to civil liability. It disciplines the registration steps Kanthi must take.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Fine levels set by the Increase of Fines Act No. 12 of 2005; in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-020",
+      "section_id": "11-1973/s10",
+      "act_id": "11-1973",
+      "formal_title": "Apartment Ownership Law",
+      "number_and_year": "No. 11 of 1973",
+      "section": "10",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) No person acquiring an title or interest or benefit in any condominium parcel of a registered Condominium Property or of a registered Semi Condominium Property shall be entitled to such title or interest, or benefit, unless such title, or interest or benefit is registered under the provisions of Registration of Title Act.",
+      "why_relevant": "If the apartment is a condominium parcel in a registered Condominium Property, an interest in it is not acquired unless registered under the Registration of Title Act, which changes the register in which the lease must be entered. The matter file does not say whether this apartment is registered condominium property, so this is context Kanthi must check rather than an established step.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section amended by Apartment Ownership (Amendment) Act No. 39 of 2003; in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-021",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (6)",
+      "relevant_excerpt": "(6) He shall not authenticate or attest any deed or instrument unless he has an assurance that the required stamp duty is provided.",
+      "why_relevant": "A notary must not attest any deed unless she has an assurance that the required stamp duty is provided, which makes the stamp duty question a precondition of attestation.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended 1907 text in the corpus; no amendment event recorded, so in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-022",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (7A)(a) (rule number taken from the corpus provision ids for section 31; the printed number is not in the section body)",
+      "relevant_excerpt": "(a) Notwithstanding anything to the contrary in this Ordinance or any other written law, any stamp duty which is required to be paid in respect of every deed or instrument executed under any written law, shall be paid by the notary;",
+      "why_relevant": "Places the payment of stamp duty required on a deed executed under any written law on the notary herself, so the amount of duty is Kanthi's own exposure and not only the lessee's.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section in the consolidated Notaries Ordinance text; the corpus records the latest change as 2024 (Notaries (Amendment) Act No. 6 of 2024). The corpus carries years only, not commencement dates, so the verifier should confirm that the 2024 text was in force by October 2024.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Excerpt is verbatim and the substance is right, but the label is wrong: the corpus provision ids for section 31 label this block 1-1907/s31/sub-7A/par-a, so it is rule (7A)(a), a rule in its own right, not paragraph (a) of rule (7). The distinction matters because section 34(1)(b) fixes the penalty for a breach of rule (7) and says nothing about rule (7A), which therefore falls under section 34(1)(c)."
+    },
+    {
+      "provision_id": "PROV-M027-023",
+      "section_id": "1-1907/s27",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "27",
+      "subsection": "(2)",
+      "relevant_excerpt": "(2) All such certificates shall be applied for and granted on or before the first day of April in every year, and shall be in force for one year and no longer:",
+      "why_relevant": "The yearly certificate from the Registrar of the High Court must be applied for and granted on or before 1 April each year and lasts one year and no longer. Kanthi did not obtain the certificate for the current year, so she held no certificate when she attested the lease.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 27 was substituted by Act No. 13 of 2013 and again by Act No. 31 of 2022, before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-024",
+      "section_id": "1-1907/s27",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "27",
+      "subsection": "(2), proviso",
+      "relevant_excerpt": "Provided, however, that if such certificate shall not be applied for within the time limited, and it shall be shown to the satisfaction of the High Court Judge that the delay was due to accident, misfortune or other unavoidable cause, the High Court Judge may direct the Registrar to issue the required certificate notwithstanding such delay as aforesaid.",
+      "why_relevant": "A late application may still be allowed if the High Court Judge is satisfied that the delay was due to accident, misfortune or other unavoidable cause. It is the remedial step open to Kanthi, though it does not undo an attestation already made without a certificate.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Proviso is part of section 27 as substituted by Act No. 31 of 2022, before the matter date.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-025",
+      "section_id": "1-1907/s30",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "30",
+      "subsection": null,
+      "relevant_excerpt": "If any person shall act as a notary without having obtained such certificate as aforesaid, he shall for or in respect of every deed executed or acknowledged before him as such notary, whilst he shall have been without such certificate, be guilty of an offence and be liable to a fine not less than five thousand rupees and not exceeding twenty five thousand rupees.",
+      "why_relevant": "Direct penal provision: acting as a notary without having obtained the certificate is an offence in respect of every deed executed or acknowledged before her while uncertificated, punishable by a fine of not less than Rs. 5,000 and not exceeding Rs. 25,000.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Fine levels set by the Increase of Fines Act No. 12 of 2005; in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-026",
+      "section_id": "1-1907/s35",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "35",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) In any case where the Registrar-General has reasonable grounds for believing that any notary has committed any offence referred to in section 28 (3), section 30, section 34, section 37 or section 41, the Registrar-General may, if he thinks fit, instead of instituting criminal proceedings against such notary, accept from him such sum of money as he may consider proper in composition of the offence;",
+      "why_relevant": "The Registrar-General may compound a section 30 offence by accepting a sum of money instead of prosecuting, so Kanthi's exposure may be resolved administratively.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended 1907 text in the corpus; no amendment event recorded, so in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-027",
+      "section_id": "1-1907/s21",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "21",
+      "subsection": "(2)",
+      "relevant_excerpt": "(2) Where the report is to the effect that the notary has been guilty of any such offence or misconduct as is mentioned in clauses (a), (b), (c), or (d) of the last preceding subsection, the Minister may cancel the warrant of such notary, or may suspend him from office for such period as may appear just.",
+      "why_relevant": "On a High Court Judge's report of an offence or misconduct, the Minister may cancel the notary's warrant or suspend her from office. This is the professional, as opposed to criminal, limb of Kanthi's liability.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 21 substituted in part by Act No. 31 of 2022; fines updated by Act No. 12 of 2005. In force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-028",
+      "section_id": "1-1907/s33",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "33",
+      "subsection": null,
+      "relevant_excerpt": "No instrument shall be deemed to be invalid by reason only of the failure of any notary to observe any provision of any rule set out in section 31 in respect of any matter of form:",
+      "why_relevant": "Saves an instrument from invalidity for a notary's failure to observe a section 31 rule in a matter of form, but expressly does not validate an instrument invalid under any other written law. Background: it does not answer whether a deed attested by an uncertificated notary is good, because section 30 is not a section 31 rule.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended 1907 text in the corpus; no amendment event recorded, so in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-029",
+      "section_id": "12-2006/s3",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "3",
+      "subsection": "(1)",
+      "relevant_excerpt": "(1) From and after the date of the coming into operation of this Act, there shall be charged a duty (hereinafter to be called \"stamp duty\") at such rate as the Minister may determine by Order published in the Gazette on every \"specified instrument\"- (a) executed, drawn or presented in Sri Lanka; or (b) executed outside Sri Lanka being an instrument which relates to property situated in Sri Lanka, at the time such instrument was presented in Sri Lanka.",
+      "why_relevant": "The charging provision. Stamp duty is charged at such rate as the Minister may determine by Order published in the Gazette; the Act itself fixes no rate, so the amount payable on this lease cannot be computed from the statute alone.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment event recorded against section 3; in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-030",
+      "section_id": "12-2006/s4",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "4",
+      "subsection": "(i)",
+      "relevant_excerpt": "(g) a bond or mortgage for any definite and certain sum of money and affecting any property; (h) a promissory note; (i) a lease or hire of any property;",
+      "why_relevant": "A lease of any property is a 'specified instrument' for the purposes of section 3, so this three-year lease of the apartment is chargeable with stamp duty.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment event recorded against section 4; in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-031",
+      "section_id": "12-2006/s6",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "6",
+      "subsection": "(c)",
+      "relevant_excerpt": "Otherwise than in cases where there is an agreement to the contrary, stamp duty shall be payable:- (a) in the case of a policy of insurance, by the person effecting the insurance; (b) in the case of a transfer or assignment of any share, by the transferee or assignee of such share; (c) in the case of a lease, by the lessee;",
+      "why_relevant": "Unless the parties agree otherwise, stamp duty on a lease is payable by the lessee - here Ananda Gamage.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 6 amended by Act No. 10 of 2008; in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-032",
+      "section_id": "12-2006/s8",
+      "act_id": "12-2006",
+      "formal_title": "Stamp Duty (Special Provisions) Act",
+      "number_and_year": "No. 12 of 2006",
+      "section": "8",
+      "subsection": "(2)",
+      "relevant_excerpt": "(2) Stamp duty payable on any specified instrument relating to a mortgage or lease of any immovable property may be paid, prior to, or at the time of, the execution of the specified instrument, to a prescribed bank. Where however, the stamp duty cannot be so paid due to reasons beyond the control of the person by whom the stamp duty is payable, the stamp duty shall be paid to the prescribed bank within seven days from the date of such execution.",
+      "why_relevant": "Duty on a lease of immovable property may be paid to a prescribed bank before or at the time of execution, or within seven days where payment beforehand was impossible; the bank's certificate is then affixed to the instrument.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "No amendment event recorded against section 8; in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-033",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (13)",
+      "relevant_excerpt": "(13) He shall not authenticate or attest any deed or instrument to which he is a party.",
+      "why_relevant": "The only relationship bar in the rules is on attesting a deed to which the notary herself is a party. Kanthi is not a party to the lease, so the fact that the lessor is her brother-in-law does not of itself disqualify her.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended 1907 text in the corpus; no amendment event recorded, so in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M027-901",
+      "section_id": "1-1907/s2",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "2",
+      "subsection": null,
+      "relevant_excerpt": "Every appointment to the office of notary shall be by warrant granted by the Minister, and shall specify the area within which, and the language or languages in which, the person appointed is authorized to practice.",
+      "why_relevant": "Supplies the referent for the words the area in which he is authorized to practice in section 31 rule (22): that area is the one specified in the notary's warrant. Without it rule (22) cannot be applied to Kanthi at all, and the answer's step from practising in Colombo to may not attest in Negombo has no statutory anchor.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended 1907 text in the corpus; no amendment event recorded against section 2, so in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier. Excerpt checked verbatim against 1-1907/s2. Section 4A (a warrant for a judicial division is deemed to authorise practice in the judicial zone in which the notary resides) and section 11 (Minister may grant a fresh warrant for another judicial zone) qualify the area but were left out because the corpus holds no list of judicial zones."
+    },
+    {
+      "provision_id": "PROV-M027-902",
+      "section_id": "1-1907/s31",
+      "act_id": "1-1907",
+      "formal_title": "Notaries Ordinance",
+      "number_and_year": "No. 1 of 1907",
+      "section": "31",
+      "subsection": "rule (8)",
+      "relevant_excerpt": "(8) He shall not authenticate or attest any deed or instrument to which at least two witnesses have not subscribed their signatures in letters.",
+      "why_relevant": "The question asks how the agreement can be signed by both parties. Rule (8) fixes the minimum number of witnesses: the notary may not attest unless at least two witnesses have subscribed their signatures in letters. The gold answer has Ananda signing with two witnesses but the map cited no provision for the number.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Unamended 1907 text in the corpus; no amendment event recorded against this rule, so in force at October 2024.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier. Excerpt checked verbatim against 1-1907/s31."
+    },
+    {
+      "provision_id": "PROV-M027-903",
+      "section_id": "7-1840/s2",
+      "act_id": "7-1840",
+      "formal_title": "Prevention of Frauds Ordinance",
+      "number_and_year": "No. 7 of 1840",
+      "section": "2",
+      "subsection": "(1)(b)",
+      "relevant_excerpt": "(b) the left or right thumb impression of every such executant or where both thumbs of such executant are missing, the impression of any other finger or the toe impression as the case may be, is affixed above or besides the signature to the original, duplicate and the protocol of the relevant deed or instrument, in the presence of such notary public and the witnesses",
+      "why_relevant": "Paragraph (b) is a second, cumulative condition of validity alongside paragraph (a): the lease is of no force in law unless every executant also affixes a thumb impression above or beside the signature on the original, duplicate and protocol, in the presence of the notary and the witnesses. It is part of the answer to how the agreement must be signed, and it binds each notary separately in a two-notary execution.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "Section 2 was amended in 2024 (Act No. 4 of 2024) and in 2022 (Act No. 30 of 2022); the corpus text is the consolidated version. Commencement dates are not in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": "Added by the verifier. Excerpt checked verbatim against 7-1840/s2. Section 31 rule (15A)(a) of the Notaries Ordinance imposes the matching duty on the notary."
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M027-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Both limbs of the question are governed by provisions in the corpus. How the agreement may be signed is answered by section 2 of the Prevention of Frauds Ordinance together with rules (12), (22), (25) and (30) of section 31 and section 32(2) of the Notaries Ordinance, and by the Powers of Attorney Ordinance if Shantha signs through an attorney. The registration steps are answered by rules (26), (29) and (30A) of section 31 and sections 7, 8, 14 and 26 of the Registration of Documents Ordinance. No judicial authority or Roman-Dutch doctrine is needed to state the procedure.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M027-Q01-01",
+          "issue": "Whether a three-year lease of an apartment must be executed notarially, and in whose presence the lessor and lessee must sign.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M027-Q01-02",
+          "issue": "How the agreement can be validly signed when the lessor cannot attend before the Colombo notary - execution before more than one notary at different times and places, or execution by a duly authorised attorney under a registered power of attorney.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M027-Q01-03",
+          "issue": "What registration steps the notary must take for a lease of land situated in a district other than the one in which she resides and practises, and within what time.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M027-001",
+        "PROV-M027-002",
+        "PROV-M027-003",
+        "PROV-M027-004",
+        "PROV-M027-005",
+        "PROV-M027-012",
+        "PROV-M027-015",
+        "PROV-M027-017",
+        "PROV-M027-901"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M027-006",
+        "PROV-M027-007",
+        "PROV-M027-008",
+        "PROV-M027-009",
+        "PROV-M027-010",
+        "PROV-M027-011",
+        "PROV-M027-013",
+        "PROV-M027-014",
+        "PROV-M027-016",
+        "PROV-M027-018",
+        "PROV-M027-019",
+        "PROV-M027-021",
+        "PROV-M027-902",
+        "PROV-M027-903"
+      ],
+      "background_provision_ids": [
+        "PROV-M027-020",
+        "PROV-M027-033"
+      ],
+      "legal_hop_count": 4,
+      "hop_count_basis": "Prevention of Frauds Ordinance s.2 (notarial execution required) -> Notaries Ordinance s.31 rules (12) and (22) (signature in the notary's presence, within her area) -> s.31 rule (25) with s.32(2) (execution before more than one notary, at different times and places) -> registration chain: Registration of Documents Ordinance s.8 and s.14 with Notaries Ordinance s.31 rule (30A). Four necessary linked steps across three enactments. Verifier: the step to rule (22) also needs section 2 of the Notaries Ordinance (the warrant specifies the area), but that is a link inside the same hop, so the count of four stands.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M027-001",
+          "to_provision_id": "PROV-M027-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M027-002",
+          "to_provision_id": "PROV-M027-003",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M027-002",
+          "to_provision_id": "PROV-M027-004",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M027-004",
+          "to_provision_id": "PROV-M027-005",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M027-001",
+          "to_provision_id": "PROV-M027-006",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M027-006",
+          "to_provision_id": "PROV-M027-008",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M027-010",
+          "to_provision_id": "PROV-M027-001",
+          "relationship": "cross_references"
+        },
+        {
+          "from_provision_id": "PROV-M027-015",
+          "to_provision_id": "PROV-M027-017",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M027-012",
+          "to_provision_id": "PROV-M027-017",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M027-015",
+          "to_provision_id": "PROV-M027-016",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M027-901",
+          "to_provision_id": "PROV-M027-003",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M027-001",
+          "to_provision_id": "PROV-M027-903",
+          "relationship": "jointly_required"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "How a three-year lease of a Negombo apartment at Rs.120,000 a month can be signed by a lessor who cannot come to Colombo and by a lessee who can, and what a Colombo notary must then do to register the instrument.",
+        "rule": "A lease of immovable property for a period exceeding one month is of no force in law unless it is in writing, signed by every executant, or by a person duly authorised by the executant, and by the witnesses in the presence of a licenced notary present at the same time and in the presence of one another, and attested by that notary (Prevention of Frauds Ordinance s.2(1)(a)). The notary may not attest unless the executant and the witnesses signed in her presence and in the presence of one another (Notaries Ordinance s.31 rule (12)), and she may not attest in any area other than the area in which she is authorised to practise (s.31 rule (22)). The Ordinance nevertheless contemplates a deed executed or acknowledged before more than one notary and divides the attestation duties between the first attesting notary and every other attesting notary (s.31 rule (25)), and s.32(2) provides for parties who do not sign at the same time and place, deeming the instrument executed for the purposes of rules (6), (7), (23) and (25) when it is first signed. Alternatively the lessor may authorise an attorney: a power of attorney executed in Sri Lanka must be executed before two witnesses and attested by a notary (Powers of Attorney Ordinance s.2), must meet the additional requirements of s.3A where the transaction falls within s.2 of the Prevention of Frauds Ordinance, must be submitted for registration with the Registrar-General within one month (s.3(1)(b)), and the attesting notary must check the Registrar-General's volumes and folios and state in her attestation that it has not been revoked (s.3B), keep a true copy with her protocol and forward a copy with the duplicate (Notaries Ordinance s.31 rule (30)), and take the attorney's affidavit that the power is genuine, in force and the grantor alive. As to registration, an instrument creating an interest in land is deemed to affect land and so is registrable (Registration of Documents Ordinance s.8(b)), an unregistered instrument is void against a subsequent duly registered instrument taken for value (s.7(1)), registration must be effected in the book allotted to the division in which the land is situated (s.14(1)), and the notary acting for a party may present it (s.26(1)(d)). The notary must submit the deed for registration within thirty days of attestation, or sixty days where it is to be registered outside the jurisdiction in which she practises (Notaries Ordinance s.31 rule (30A)), send the duplicate and Form F1 list to the Registrar of Lands of her own district by the fifteenth of the following month (rule (26)), send a certified copy to the Registrar of Lands of the district where the land lies (rule (29)), and use due diligence in registering where she has instructions and funds (s.37).",
+        "application": "The lease is for three years, well outside the one-month exclusion, so notarial execution is compulsory and Shantha cannot simply sign at home and send the paper to Colombo. Kanthi practises in Colombo and the apartment and Shantha are in Negombo, so rule (22) prevents her attesting Shantha's signature outside the area she is authorised for. Two lawful routes remain. First, execution before more than one notary under rule (25): Ananda Gamage signs the agreement before Kanthi in Colombo with two witnesses, and Shantha signs the same instrument before a notary authorised to practise where he is, each notary attesting the signatures taken before her or him, each numbering the instrument in his or her own protocol register, and s.32(2) accommodating the fact that the parties sign at different times and places. Second, Shantha grants a power of attorney, attested by a notary before two witnesses and complying with s.3A because the lease falls within s.2 of the Prevention of Frauds Ordinance, registers it with the Registrar-General within one month, and his attorney then signs before Kanthi in Colombo along with Ananda; Kanthi must satisfy herself from the Registrar-General's volumes and folios that the power stands unrevoked and say so in her attestation, take the attorney's affidavit, and keep and forward copies of the power. Either way she must have an assurance that the stamp duty is provided before attesting. On registration, the lease creates an interest in land and is registrable; it must go to the land registry for the division in which the Negombo apartment is situated, not Colombo. Because that registration is outside the jurisdiction in which Kanthi practises, she has sixty days from attestation to submit it, she must transmit the duplicate and Form F1 list to the Registrar of Lands of her own district by the fifteenth of the following month, and she must send a certified copy to the Registrar of Lands of the district in which the apartment lies. If the apartment forms part of a registered Condominium Property, she should also check whether the interest has to be registered under the Registration of Title Act rather than in the ordinary land register. The scenario does not state Shantha's judicial zone, whether the apartment is registered condominium property, or whether the parties have instructed and funded Kanthi to register, so those points are stated conditionally.",
+        "conclusion": "The agreement can be signed either before two notaries at different times and places, Ananda before Kanthi in Colombo and Shantha before a notary where he is, or by an attorney holding a duly attested and registered power of attorney signing for Shantha before Kanthi. Kanthi must then have the duty stamped, submit the instrument for registration in the land registry division covering the Negombo apartment within sixty days of attestation, transmit the duplicate with the Form F1 list to the Registrar of Lands of her own district by the fifteenth of the following month, and send a certified copy to the Registrar of Lands of the district where the apartment is situated."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M027-Q01-001",
+          "claim_text": "A lease of immovable property for a period exceeding one month is of no force in law unless it is in writing, signed by every executant or a person duly authorised by the executant and by the witnesses in the presence of a licenced notary, and attested by that notary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-001",
+            "PROV-M027-902",
+            "PROV-M027-903"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-002",
+          "claim_text": "A notary may not attest a deed unless the executant and the witnesses signed it in her presence and in the presence of one another.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-003",
+          "claim_text": "A notary may not attest a deed in any area other than the area in which she is authorised to practise.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-003",
+            "PROV-M027-901"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-004",
+          "claim_text": "The Notaries Ordinance permits a deed to be executed or acknowledged before more than one notary and allocates the attestation duties between the first attesting notary and every other attesting notary, and it provides for parties who do not sign at the same time and place.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-004",
+            "PROV-M027-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-005",
+          "claim_text": "An executant may instead sign through a duly authorised attorney under a power of attorney attested by a notary before two witnesses, which for a transaction within section 2 of the Prevention of Frauds Ordinance must comply with section 3A and be submitted for registration within one month, and the attesting notary must verify from the Registrar-General's records that the power is unrevoked, state that in her attestation, take the attorney's affidavit and keep and forward copies of the power.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-008",
+            "PROV-M027-009",
+            "PROV-M027-010",
+            "PROV-M027-011",
+            "PROV-M027-006",
+            "PROV-M027-007"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-006",
+          "claim_text": "An instrument that creates an interest in land is deemed to affect land and is registrable, and an unregistered instrument is void against a subsequent duly registered instrument taken for value.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-015",
+            "PROV-M027-016"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-007",
+          "claim_text": "Registration must be effected in the book allotted to the division in which the land affected is situated, and the notary acting on behalf of a party may present the instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-017",
+            "PROV-M027-018"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-008",
+          "claim_text": "A notary must submit a deed she has attested for registration within thirty days of attestation, or within sixty days where it is to be registered outside the jurisdiction in which she practises, must transmit the duplicate and the Form F1 list to the Registrar of Lands of her own district by the fifteenth of the following month, must send a certified copy to the Registrar of Lands of the district in which the land is situated, and is liable to a fine if, having instructions and funds, she fails to use due diligence in registering.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-012",
+            "PROV-M027-013",
+            "PROV-M027-014",
+            "PROV-M027-019"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-009",
+          "claim_text": "Because the lease runs for three years it is outside the one-month exclusion, so notarial execution before Kanthi or another notary is compulsory and Shantha cannot sign it in Negombo and send it to Colombo.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M027-001",
+            "PROV-M027-002"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-010",
+          "claim_text": "Since Kanthi is authorised to practise in Colombo and Shantha is in Negombo, she cannot attest his signature there, so the agreement must be executed either before two notaries or through an attorney who signs before her in Colombo.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M027-003",
+            "PROV-M027-004",
+            "PROV-M027-005",
+            "PROV-M027-008",
+            "PROV-M027-901"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-3"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M027-Q01-011",
+          "claim_text": "The fact that the lessor is Kanthi's brother-in-law does not disqualify her, because the rule bars only the attestation of a deed to which the notary herself is a party.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M027-033"
+          ],
+          "supporting_fact_ids": [
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-012",
+          "claim_text": "Because the apartment is in Negombo while Kanthi practises and resides in Colombo, the lease must be registered in the land registry division covering the apartment, the sixty-day limb of the registration deadline applies, and a certified copy must go to the Registrar of Lands of the district where the apartment lies.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M027-015",
+            "PROV-M027-017",
+            "PROV-M027-012",
+            "PROV-M027-014"
+          ],
+          "supporting_fact_ids": [
+            "BG-1",
+            "BG-2"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        },
+        {
+          "claim_id": "CL-M027-Q01-013",
+          "claim_text": "Kanthi must not attest the agreement until she has an assurance that the required stamp duty is provided.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M027-021"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-014",
+          "claim_text": "If the apartment forms part of a registered Condominium Property, Kanthi must also check whether the lessee's interest has to be registered under the Registration of Title Act rather than in the ordinary land register.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M027-020"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-015",
+          "claim_text": "The agreement can therefore be signed either before two notaries at different times and places or by an attorney holding a duly attested and registered power of attorney signing for Shantha before Kanthi in Colombo.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M027-001",
+            "PROV-M027-004",
+            "PROV-M027-005",
+            "PROV-M027-008"
+          ],
+          "supporting_fact_ids": [
+            "BG-3"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q01-016",
+          "claim_text": "Kanthi must then have the duty stamped, submit the instrument for registration in the land registry division covering the Negombo apartment within sixty days of attestation, transmit the duplicate with the Form F1 list to the Registrar of Lands of her own district by the fifteenth of the following month, and send a certified copy to the Registrar of Lands of the district where the apartment is situated.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M027-012",
+            "PROV-M027-013",
+            "PROV-M027-014",
+            "PROV-M027-017",
+            "PROV-M027-021"
+          ],
+          "supporting_fact_ids": [
+            "BG-2"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M027-Q02",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "The question asks what Kanthi's liabilities are for attesting a deed without the yearly certificate. Sections 27, 30, 35 and 21 of the Notaries Ordinance state the duty, the offence, the fine, the power to compound and the professional consequence. The separate question whether the lease itself is thereby invalidated is not asked and is not answered by the corpus; the answer is confined to liabilities.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M027-Q02-01",
+          "issue": "Whether a notary who has not obtained the yearly certificate from the Registrar of the High Court may lawfully attest a deed.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M027-Q02-02",
+          "issue": "What criminal and professional liability follows from attesting the lease while uncertificated, and whether the liability is per deed.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M027-Q02-03",
+          "issue": "Whether the failure can still be cured by a late application for the certificate.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M027-023",
+        "PROV-M027-025"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M027-024",
+        "PROV-M027-026",
+        "PROV-M027-027"
+      ],
+      "background_provision_ids": [
+        "PROV-M027-028"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Notaries Ordinance s.27(2) (the yearly certificate must be applied for and granted by 1 April and lasts one year only) -> s.30 (acting as a notary without such a certificate is an offence in respect of every deed) -> the consequences: s.35(1) compounding by the Registrar-General and s.21(2) cancellation or suspension of the warrant. Three necessary linked steps within one enactment.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M027-023",
+          "to_provision_id": "PROV-M027-025",
+          "relationship": "procedurally_requires"
+        },
+        {
+          "from_provision_id": "PROV-M027-023",
+          "to_provision_id": "PROV-M027-024",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M027-025",
+          "to_provision_id": "PROV-M027-026",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M027-025",
+          "to_provision_id": "PROV-M027-027",
+          "relationship": "qualifies"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement.\n\nAfter the execution of the Lease Agreement, the Notary Kanthi Peiris remembered that she could not obtain the Yearly Certificate from the Registrar of High Court for the current year.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What liability a notary incurs by attesting a lease agreement in a year for which she did not obtain the yearly certificate from the Registrar of the High Court.",
+        "rule": "The certificate that a person is a notary duly authorised to practise is issued yearly by the Registrar of the High Court; it must be applied for and granted on or before 1 April in every year and is in force for one year and no longer (Notaries Ordinance s.27(2)). Where the certificate was not applied for within that time, the High Court Judge may, if satisfied that the delay was due to accident, misfortune or other unavoidable cause, direct the Registrar to issue it notwithstanding the delay (s.27(2), proviso). A person who acts as a notary without having obtained such a certificate is guilty of an offence for or in respect of every deed executed or acknowledged before him while he was without it, and is liable to a fine of not less than five thousand rupees and not exceeding twenty five thousand rupees (s.30). The Registrar-General may, instead of prosecuting, accept from the notary such sum as he considers proper in composition of a section 30 offence (s.35(1)). Separately, on a High Court Judge's report of an offence or of misconduct, the Minister may cancel the notary's warrant or suspend her from office for such period as appears just (s.21(2)).",
+        "application": "Kanthi attested the lease agreement in a year for which she had not obtained the yearly certificate, so at the moment of attestation she was acting as a notary without the certificate required by s.27. That engages s.30 directly, and because the offence is framed 'for or in respect of every deed executed or acknowledged before him', her exposure is counted per deed: the lease agreement is one such deed, and any other deed she attested while uncertificated attracts its own fine of between Rs.5,000 and Rs.25,000. The Registrar-General may take the matter administratively and accept a composition sum instead of prosecuting her. Beyond the fine, a conviction or a finding of misconduct reported by the High Court Judge exposes her to cancellation of her warrant or to suspension. She should apply at once for the certificate and, since the 1 April date has passed, ask the High Court Judge to direct the Registrar to issue it on the ground that the delay was due to accident, misfortune or other unavoidable cause, but that relief operates on the issue of the certificate and does not erase the attestation already made without one. Whether the lease agreement itself is invalid is not settled by these provisions: s.33 saves an instrument only from a notary's failure in a matter of form under a s.31 rule and expressly does not validate an instrument invalid under any other written law, and s.30 is not a s.31 rule.",
+        "conclusion": "Kanthi is criminally liable under s.30 of the Notaries Ordinance for having acted as a notary without the yearly certificate, to a fine of not less than Rs.5,000 and not more than Rs.25,000 in respect of every deed she attested while uncertificated, including this lease agreement; the Registrar-General may compound the offence instead of prosecuting; and she is additionally exposed to suspension or cancellation of her warrant by the Minister on a report by the High Court Judge. She should immediately seek the certificate, relying on the proviso to s.27(2) if the delay was due to accident, misfortune or other unavoidable cause."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M027-Q02-001",
+          "claim_text": "A notary's yearly certificate must be applied for and granted on or before 1 April in every year and is in force for one year and no longer.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-023"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q02-002",
+          "claim_text": "A person who acts as a notary without having obtained the certificate is guilty of an offence in respect of every deed executed or acknowledged before him while he was without it, and is liable to a fine of not less than five thousand rupees and not exceeding twenty five thousand rupees.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-025"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q02-003",
+          "claim_text": "The Registrar-General may accept a sum of money in composition of a section 30 offence instead of instituting criminal proceedings.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-026"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q02-004",
+          "claim_text": "On a High Court Judge's report of an offence or misconduct the Minister may cancel the notary's warrant or suspend her from office for such period as appears just.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-027"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q02-005",
+          "claim_text": "A late application for the certificate may still be allowed if the High Court Judge is satisfied that the delay was due to accident, misfortune or other unavoidable cause.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-024"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q02-006",
+          "claim_text": "Kanthi attested the lease agreement without having obtained the yearly certificate for the current year, so she acted as a notary while uncertificated.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M027-023",
+            "PROV-M027-025"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q02-007",
+          "claim_text": "Because the offence is framed in respect of every deed executed or acknowledged before her while uncertificated, her fine exposure runs per deed and covers this lease agreement and any other deed she attested in the same period.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M027-025"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q02-008",
+          "claim_text": "She should apply at once for the certificate and, the 1 April date having passed, ask the High Court Judge to direct its issue on the ground of accident, misfortune or other unavoidable cause, which does not undo the attestation already made.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M027-024",
+            "PROV-M027-023"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q02-009",
+          "claim_text": "Whether the lease agreement itself is invalidated is not resolved by these provisions, because section 33 saves an instrument only from a failure in a matter of form under a section 31 rule and section 30 is not a section 31 rule.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M027-028"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q02-010",
+          "claim_text": "Kanthi is liable under section 30 of the Notaries Ordinance to a fine of not less than Rs.5,000 and not more than Rs.25,000 in respect of every deed attested while uncertificated, including this lease agreement, subject to the Registrar-General's power to compound, and is additionally exposed to suspension or cancellation of her warrant.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M027-025",
+            "PROV-M027-026",
+            "PROV-M027-027"
+          ],
+          "supporting_fact_ids": [
+            "BG-4"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    },
+    {
+      "benchmark_question_id": "M027-Q03",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Stamp duty on a lease is imposed and allocated wholly by statute - the Stamp Duty (Special Provisions) Act charges the duty, lists a lease as a specified instrument and makes the lessee liable - so no judicial or common-law authority is needed. The numeric rate, however, is fixed by Ministerial Order published in the Gazette under section 3(1), and no such Order is in the frozen corpus.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M027-Q03-01",
+          "issue": "Whether a three-year lease of an apartment is an instrument chargeable with stamp duty and who bears it.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M027-Q03-02",
+          "issue": "What the value of the stamp duty payable on this lease is at the October 2024 reference date.",
+          "status": "disputed"
+        },
+        {
+          "issue_id": "ISS-M027-Q03-03",
+          "issue": "How and when the duty must be paid and evidenced on the instrument.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M027-029",
+        "PROV-M027-030",
+        "PROV-M027-031"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M027-032",
+        "PROV-M027-021",
+        "PROV-M027-022"
+      ],
+      "background_provision_ids": [],
+      "legal_hop_count": 2,
+      "hop_count_basis": "Stamp Duty (Special Provisions) Act s.3(1) (charge at the rate determined by Ministerial Order) plus s.4(i) (a lease is a specified instrument) and s.6(c) (the lessee pays). A third hop to the rate-fixing Order cannot be taken because that Order is not in the corpus.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M027-030",
+          "to_provision_id": "PROV-M027-029",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M027-029",
+          "to_provision_id": "PROV-M027-031",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M027-029",
+          "to_provision_id": "PROV-M027-032",
+          "relationship": "procedurally_requires"
+        }
+      ],
+      "enrichment": {
+        "applied": false,
+        "original_background": "Kanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement.\n\nKanthi Peiris is a Notary practicing in Colombo. Shantha Ratnayake is her brother-in-law and is the owner of an apartment in Negambo. Shantha wishes to lease out his apartment for 3 years at a monthly rental of Rs.120,000/= to one Ananda Gamage who is willing to take on lease in accordance with the said terms. However, Shantha who lives in Negambo is unable to come to Colombo to sign the Agreement. After the execution of the Lease Agreement, the Notary Kanthi Peiris remembered that she could not obtain the Yearly Certificate from the Registrar of High Court for the current year.",
+        "enriched_background": null,
+        "added_facts": []
+      },
+      "gold_answer_draft": {
+        "issue": "What value of stamp duty is payable on a three-year lease of an apartment at a monthly rental of Rs.120,000, and by whom.",
+        "rule": "Stamp duty is charged on every specified instrument executed, drawn or presented in Sri Lanka at such rate as the Minister may determine by Order published in the Gazette (Stamp Duty (Special Provisions) Act s.3(1)). A lease or hire of any property is a specified instrument (s.4(i)). Unless the parties agree otherwise, the duty on a lease is payable by the lessee (s.6(c)). Duty on an instrument relating to a lease of immovable property may be paid to a prescribed bank before or at the time of execution, or within seven days of execution where it could not be paid earlier for reasons beyond the payer's control, and the bank's certificate is affixed to the instrument (s.8(2)). A notary must not attest a deed unless she has an assurance that the required stamp duty is provided (Notaries Ordinance s.31 rule (6)), and the stamp duty required on a deed executed under any written law is to be paid by the notary (s.31 rule (7)(a)).",
+        "application": "The lease agreement between Shantha Ratnayake and Ananda Gamage is a lease of property and so a specified instrument chargeable under s.3(1). Absent an agreement to the contrary, Ananda as lessee bears the duty, and it should be paid to a prescribed bank before or at the time of execution, with the bank's certificate affixed. Kanthi cannot attest the agreement until she is assured the duty is provided, and the rules place the actual payment on her. The numerical value of the duty, however, depends on the rate that the Minister has determined by Order published in the Gazette for leases, and on how that Order measures the chargeable amount for a three-year lease at Rs.120,000 a month. No such Order, and no rate schedule for leases, is present in the frozen corpus, so the figure cannot be computed from the statutory material available.",
+        "conclusion": "The lease is chargeable with stamp duty as a specified instrument and, failing agreement to the contrary, the lessee Ananda Gamage is the person liable, with payment to a prescribed bank before or at execution and the certificate affixed to the instrument. The value of the duty cannot be stated from the corpus, because the rate is set by a Ministerial Order under section 3(1) which is not among the frozen sources; the question is blocked for missing subsidiary legislation rather than answered."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M027-Q03-001",
+          "claim_text": "Stamp duty is charged on every specified instrument at such rate as the Minister may determine by Order published in the Gazette.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-029"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q03-002",
+          "claim_text": "A lease or hire of any property is a specified instrument for the purposes of the charge.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-030"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q03-003",
+          "claim_text": "Otherwise than where there is an agreement to the contrary, stamp duty on a lease is payable by the lessee.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-031"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q03-004",
+          "claim_text": "Duty on an instrument relating to a lease of immovable property may be paid to a prescribed bank before or at the time of execution, or within seven days where earlier payment was impossible, with the bank's certificate affixed to the instrument.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-032"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q03-005",
+          "claim_text": "The notary must not attest until assured the duty is provided, and the duty required on a deed executed under any written law is to be paid by the notary.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M027-021",
+            "PROV-M027-022"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q03-006",
+          "claim_text": "This three-year lease of the Negombo apartment is a specified instrument, and failing agreement to the contrary Ananda Gamage as lessee bears the duty.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M027-030",
+            "PROV-M027-031"
+          ],
+          "supporting_fact_ids": [
+            "BG-5",
+            "BG-6"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M027-Q03-007",
+          "claim_text": "The numerical value of the duty depends on the Ministerial Order made under section 3(1), which is not in the frozen corpus, so it cannot be computed here.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M027-029"
+          ],
+          "supporting_fact_ids": [
+            "BG-6"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        }
+      ],
+      "research_status": "blocked_missing_authority",
+      "block_reason": "The rate of stamp duty is fixed by Order published in the Gazette under section 3(1) of the Stamp Duty (Special Provisions) Act. No such Order, and no lease rate schedule, is in the frozen corpus, so the value of the duty payable on this three-year lease at Rs.120,000 a month cannot be stated without inventing a figure.",
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}

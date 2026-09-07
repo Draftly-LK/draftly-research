@@ -1,0 +1,105 @@
+{
+  "benchmark_matter_id": "M007",
+  "verifier": "verifier-M007",
+  "model": "claude-opus-5 (Claude Code subagent)",
+  "completed": "2026-09-04T22:00:19Z",
+  "provision_decisions": [
+    {
+      "provision_id": "PROV-M007-001",
+      "decision": "verified",
+      "note": "1-1907/s31 rule (12) confirmed verbatim and by its position in the consolidated body; it is not among the rules touched by Acts No. 47 of 2011, No. 31 of 2022 or No. 6 of 2024, so it stood in this form in January 2026."
+    },
+    {
+      "provision_id": "PROV-M007-002",
+      "decision": "partially_verified",
+      "note": "Wording verbatim and the paragraph is rule (17)(c), confirmed from 31-2022 s.16(10)(b), which inserted it, and 6-2024 s.3(6)(b), which substituted \"name with initials\" for \"full name\"; but the temporal note wrongly credits Act No. 47 of 2011 with restructuring rule (17), when that Act amended rules (16) and (26) only, and the excerpt stops before the legal-officer sentence that CL-M007-Q01-005 relies on."
+    },
+    {
+      "provision_id": "PROV-M007-003",
+      "decision": "verified",
+      "note": "1-1907/s33 is quoted in full, carries in_force_from_year 1907 with no amendment events, and both limbs read as the map describes them."
+    },
+    {
+      "provision_id": "PROV-M007-004",
+      "decision": "verified",
+      "note": "7-1840/s2(1)(a) is verbatim in the post-2024 consolidated body, and the renumbering and substitution by Act No. 4 of 2024 s.2 check out against the amending Act. The excerpt begins mid-sentence, so the immovable-property scope that CL-M007-Q01-004 and CL-M007-Q01-010 depend on sits in the unquoted opening words of s.2(1)."
+    },
+    {
+      "provision_id": "PROV-M007-005",
+      "decision": "verified",
+      "note": "1-1907/s34(1)(c) is verbatim, and rules (12) and (17) appear in neither the s.34(1)(a) list (rules 1, 31, 32) nor the s.34(1)(b) list (rules 2, 3, 6, 7, 11, 18, 21, 23, 24, 30A), so the residual paragraph (c) and its fifty-thousand-rupee ceiling are the right ones. The supporting role is right: removing it would not change the answer."
+    },
+    {
+      "provision_id": "PROV-M007-006",
+      "decision": "verified",
+      "note": "1-1907/s31 rule (22) is verbatim and numbered (22) in the consolidated body, and s.4A, inserted by Act No. 20 of 1976 s.4, does deem a judicial-division warrant to authorise practice in the corresponding judicial zone, as the temporal note asserts. Background role is right."
+    }
+  ],
+  "added_provisions": [],
+  "question_decisions": [
+    {
+      "benchmark_question_id": "M007-Q01",
+      "research_status_before": "proposed_gold",
+      "research_status_after": "needs_legal_review",
+      "authority_requirement_after": "statute_only",
+      "note": "The operative answer, that the deed can be invalidated because the signing failed the simultaneous-presence condition in Prevention of Frauds Ordinance s.2(1)(a) which the proviso to Notaries Ordinance s.33 preserves, follows from the corpus text alone, so statute_only is retained. The question is held for lawyer review because the answer's contrasting limb turns on calling the rule (17)(c) default a matter of form, a term s.33 leaves undefined and that no corpus provision explains. Hop count 3 and the indispensable set (PROV-001, -002, -003, -004) are accepted; one reasoning edge was corrected."
+    }
+  ],
+  "disagreements": [
+    {
+      "disagreement_type": "authority_requirement_scope",
+      "researcher_position": "The whole answer, including the holding that the front-page default is a matter of form protected by s.33, can be given from statute alone, so the question is statute_only proposed_gold.",
+      "verifier_position": "Only the invalidating limb is statute-only. \"Matter of form\" is undefined in s.33, a grep over the corpus returns the phrase in s.33 and nowhere else, and no definition or exception supplies the boundary, so classifying a rule (17)(c) breach as a matter of form is a question for judicial authority. The question is kept at statute_only but downgraded to needs_legal_review, and CL-M007-Q01-008 and CL-M007-Q01-013 are marked disputed.",
+      "supporting_sources": [
+        "1-1907/s33",
+        "1-1907/s31 rule (17)(c)",
+        "grep \"matter of form\" over the frozen corpus"
+      ],
+      "status": "lawyer_adjudication_required"
+    },
+    {
+      "disagreement_type": "reasoning_edge_characterisation",
+      "researcher_position": "PROV-M007-003 cross_references PROV-M007-004, on the footing that s.33 points to the Prevention of Frauds Ordinance.",
+      "verifier_position": "The proviso to s.33 refers generically to any other written law and names no enactment; edges 1-1907/s33 returns a single link, to s.31, and the corpus graph carries no edge to 7-1840/s2. The edge was rewritten as PROV-M007-004 excepts PROV-M007-003.",
+      "supporting_sources": [
+        "1-1907/s33",
+        "edges 1-1907/s33",
+        "edges 7-1840/s2"
+      ],
+      "status": "lawyer_adjudication_required"
+    }
+  ],
+  "red_team": {
+    "unsupported_claims": [
+      "CL-M007-Q01-008, that the omission of the notary's particulars from the front page is a matter of form. Rule (17)(c) and s.33 are both quoted correctly, but nothing in the corpus classifies the default, so the step is inference rather than statute. Marked disputed.",
+      "CL-M007-Q01-013. Its operative half, that the deed can be invalidated for want of simultaneous presence, is made out; the subordinate clause carrying the s.33 protection for the front-page defect inherits the CL-008 dispute. Marked disputed for that clause alone.",
+      "CL-M007-Q01-012. The words \"his employer's instruction to act urgently is no defence\" rest on the silence of s.34 rather than on any provision. Left verified because s.34(1) admits no such qualification, but a lawyer may want the sentence softened."
+    ],
+    "temporal_issues": [
+      "PROV-M007-002's temporal note attributes a restructuring of rule (17) to Act No. 47 of 2011. That Act's s.2 amended rule (16)(a) and its s.3 amended rule (26). Paragraph (c) was inserted by 31-2022 s.16(10)(b) and amended by 6-2024 s.3(6)(b).",
+      "The corpus records amendment events by year only and holds no commencement dates or Gazette notices, so the map's assumption that the 2022 and 2024 amendments were all in operation by January 2026 can be checked from the corpus only to the year. Nothing to the contrary was found."
+    ],
+    "missing_definitions_or_exceptions": [
+      "\"Matter of form\" in s.33 is undefined, and defs 1-1907 returns nothing for it or for \"written law\".",
+      "Notaries Ordinance s.32(2) was not considered. It contemplates a deed executed by two or more parties who do not sign at the same time and place, and adjusts rules (6), (7), (18), (19), (20), (23) and (25) accordingly. It does not reach rule (12) and cannot displace the Prevention of Frauds Ordinance condition, so the conclusion is unaffected, but a candidate may raise it and the map should show the point was closed.",
+      "Prevention of Frauds Ordinance s.2(1)(b), on the thumb impression of every executant in the presence of the notary and the witnesses, and s.2(2)(a), which requires both transferor and transferee to sign and affix thumb impressions with a proviso for a corporate transferee, are not addressed. The enrichment gives the deed a corporate transferee and says nothing about the transferee signing, which leaves a second possible ground of invalidity open on the facts as drafted."
+    ],
+    "case_law_dependence": [
+      "The gold answer cites no case law and quotes none. The only place where judicial authority would ordinarily be expected is the form and substance boundary under s.33; see the first disagreement."
+    ],
+    "enrichment_issues": [
+      "FACT-M007-Q01-005, that the deed was executed in January 2026, repeats a fact already fixed by FACT-M007-Q01-002, which dates the signing 12 January 2026. It adds nothing and should be merged or dropped.",
+      "FACT-M007-Q01-003 does more than break rule (12): it has Saman attest that all signed in his presence when they did not, which is a false attestation and opens a separate line about the contents and truth of the attestation under rule (20) and about liability outside the corpus. That extra element is not needed for the question asked.",
+      "The enriched background makes the transferee a private limited company but never says whether it signed the deed, which under the post-2024 s.2(2)(a) is itself a condition. The facts are incomplete on their own terms, even though the drafted conclusion does not depend on the point."
+    ],
+    "duplicate_or_leak_issues": [
+      "No leak. The added sentences name no statute, section or rule, and the only statutory reference in the enriched background, section 31 of the Notaries Ordinance, is carried over verbatim from the original question text. The conclusion is not disclosed.",
+      "FACT-M007-Q01-005 duplicates FACT-M007-Q01-002, as noted above."
+    ]
+  },
+  "lawyer_questions": [
+    "Can the omission of the notary's own particulars and his employer's registered address from the front page of a deed be treated as a failure in respect of a matter of form within Notaries Ordinance s.33 without relying on decided cases? If it cannot, the question should be reclassified mixed_statute_and_case and the contrasting limb of the gold answer removed.",
+    "Should the consequence under Prevention of Frauds Ordinance s.2(1)(a) be stated in the statutory words, that the transfer is not in force and does not avail in law, rather than as the deed being invalidated, which is the word the exam question uses?",
+    "Does the corporate transferee's position under the post-2024 s.2(2)(a) need to be settled in the facts before this matter is used as gold?"
+  ]
+}

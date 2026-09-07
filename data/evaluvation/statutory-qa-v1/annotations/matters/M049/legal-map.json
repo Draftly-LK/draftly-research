@@ -1,0 +1,449 @@
+{
+  "benchmark_matter_id": "M049",
+  "run_id": "statutory-qa-v1",
+  "produced_by": {
+    "research_agent": "researcher-M049",
+    "research_model": "claude-opus-5 (Claude Code subagent)",
+    "research_completed": "2026-09-04T22:29:29Z",
+    "verification_agent": "verifier-M049",
+    "verification_model": "claude-opus-5 (Claude Code subagent)",
+    "verification_completed": "2026-09-04T22:39:19Z"
+  },
+  "matter_reference_date": "2021-10",
+  "matter_reference_date_basis": "matter_reference_date field of candidates/matters/M049.json; exam session OCTOBER 2021 / APRIL 2022, paper 9 question 3.",
+  "corpus_gaps": [
+    "The corpus holds the Registration of Title Act No. 21 of 1998 in an 'original_or_unconfirmed_consolidation' edition with no amendment_events recorded, so any post-1998 amendment to sections 14, 31, 33, 38, 57 or 73 would not be visible here; the temporal position at 2021-10 rests on the 1998 text as extracted.",
+    "The Orders made by the Minister under section 1 of the Registration of Title Act declaring the areas to which the Act applies are subsidiary legislation and are not in the corpus, so whether a given land is in fact within a declared area cannot be checked against the corpus.",
+    "Judicial authority on whether possession begun before a land parcel was brought on to the Title Register can ripen into prescriptive title lies outside a statute-only corpus; the answer here is confined to the statutory bar."
+  ],
+  "provisions": [
+    {
+      "provision_id": "PROV-M049-001",
+      "section_id": "22-1871/s3",
+      "act_id": "22-1871",
+      "formal_title": "Prescription Ordinance, No. 22 of 1871",
+      "number_and_year": "No. 22 of 1871",
+      "section": "3",
+      "subsection": null,
+      "relevant_excerpt": "by a title adverse to or independent of that of the claimant or plaintiff in such action (that is to say, a possession unaccompanied by payment of rent or produce, or performance of service or duty, or by any other act by the possessor, from which an acknowledgment of a right existing in another person would fairly and naturally be inferred) for ten years previous to the bringing of such action, shall entitle the defendant to a decree in his favour with costs.",
+      "why_relevant": "This is the only source of prescriptive title to land in the corpus and the provision Nimal would have to invoke: ten years' undisturbed and uninterrupted possession by a title adverse to or independent of the owner's. Its conditions are the ones the facts must meet, and it is the enactment that section 57 of the Registration of Title Act disapplies.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1871; the corpus records no amendment event on section 3. The Prescription (Amendment) Act No. 26 of 2014 in the corpus replaces only section 15 (State and matrimonial causes), not section 3, so this is the text in force at 2021-10.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M049-002",
+      "section_id": "21-1998/s57",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "57",
+      "subsection": null,
+      "relevant_excerpt": "The Prescription Ordinance (Chapter 68) shall not apply to lands or interests in land registered under this Act with a First Class Title of Absolute Ownership or a Second Class Title of Ownership.",
+      "why_relevant": "The decisive provision. It removes the Prescription Ordinance altogether from land registered under the Registration of Title Act with either class of title, so no length of adverse possession of such a parcel can generate prescriptive title.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998; no amendment event recorded in the corpus. The possession relied on runs entirely after the section came into force.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M049-003",
+      "section_id": "21-1998/s14",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "14",
+      "subsection": "(b)",
+      "relevant_excerpt": "(b) where the Commissioner of Title Settlement is of the view that a claimant does not qualify for a First Class Title of Absolute Ownership but the claimant is in bonafide possession of the land parcel, he may declare the claimant eligible to be registered with a Second Class Title of Ownership",
+      "why_relevant": "Section 57 is expressed by reference to the two classes of title, and section 14 is where those classes come from: registration on initial compilation is either with a First Class Title of Absolute Ownership or with a Second Class Title of Ownership. Without it the phrase in section 57 has no content and one cannot show that a parcel registered under the Act falls inside the exclusion.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998; no amendment event recorded in the corpus.",
+      "verification_status": "partially_verified",
+      "verifier_note": "Wording verified verbatim and the section is the right home for the two classes, but the excerpt reproduces only limb (b); the First Class Title of Absolute Ownership on which this matter turns comes from limb (a) of the same section, so the subsection field should read \"(a) and (b)\" and the excerpt should carry limb (a) as well."
+    },
+    {
+      "provision_id": "PROV-M049-004",
+      "section_id": "21-1998/s33",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "33",
+      "subsection": "(1)",
+      "relevant_excerpt": "Entries in the Title Register maintained under the provisions of this Act, shall be conclusive evidence of the existence of the ownership or interest specified in such entries and shall not be questioned in a Court of law except as provided for in this Act.",
+      "why_relevant": "Reinforces the bar: the registered owner's title is conclusive and may not be questioned in court except as the Act itself allows, which forecloses an action asserting a better, unregistered, prescriptive title.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M049-005",
+      "section_id": "21-1998/s31",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "31",
+      "subsection": "(1)",
+      "relevant_excerpt": "A person registered with a Second Class Title of Ownership or a person claiming title through him shall at the end of a period of ten years from such registration, and if there has been no action under section 29 against such registration during the intervening period, be eligible for the conversion of his registration to one of First Class Title of Absolute Ownership.",
+      "why_relevant": "Explains the only route under the Act by which ten years of possession improves a person's position, and shows it is not prescription: it is open to a person already registered with a Second Class Title, not to a stranger in possession, and it works by conversion of an existing registration.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M049-006",
+      "section_id": "21-1998/s38",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "38",
+      "subsection": null,
+      "relevant_excerpt": "No person acquiring an interest in any land parcel registered under the provisions of this Act shall be entitled to such title or interest unless such title or interest is registered under the provisions of this Act.",
+      "why_relevant": "Independently blocks an unregistered claim: even if some interest were said to have accrued to Nimal, he is not entitled to it while it is unregistered, and the Act provides no machinery for registering an interest acquired by adverse possession.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M049-007",
+      "section_id": "21-1998/s73",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "73",
+      "subsection": null,
+      "relevant_excerpt": "The provisions of this Act shall have effect notwithstanding anything to the contrary contained in any other written law",
+      "why_relevant": "Resolves the conflict of enactments in favour of the Registration of Title Act, so the Prescription Ordinance cannot be read as surviving section 57.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998; no amendment event recorded in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    },
+    {
+      "provision_id": "PROV-M049-008",
+      "section_id": "21-1998/s1",
+      "act_id": "21-1998",
+      "formal_title": "Registration of Title Act, No. 21 of 1998",
+      "number_and_year": "No. 21 of 1998",
+      "section": "1",
+      "subsection": null,
+      "relevant_excerpt": "shall apply to such Province, Administrative District or Administrative Division as the Minister may from time to time, by Order published in the Gazette, specify as an area to which this Act shall apply.",
+      "why_relevant": "Context: the Act, and with it the section 57 exclusion, bites only in areas declared by Order of the Minister. It bounds the answer but adds no condition once the parcel is accepted as registered under the Act.",
+      "applicable_to_matter_date": true,
+      "temporal_note": "In force from 1998; no amendment event recorded in the corpus. The declaring Orders themselves are not in the corpus.",
+      "verification_status": "verified",
+      "verifier_note": null
+    }
+  ],
+  "questions": [
+    {
+      "benchmark_question_id": "M049-Q01",
+      "authority_requirement": "statute_only",
+      "authority_requirement_reason": "Prescriptive title to land is statutory here: section 3 of the Prescription Ordinance supplies the ten-year rule, and section 57 of the Registration of Title Act expressly withdraws that Ordinance from land registered under the latter Act with a First Class or Second Class Title. The bar is stated in terms and does not depend on judicial gloss or on Roman-Dutch common law, and sections 33, 38 and 73 close the remaining statutory routes. A complete answer to whether Nimal can claim prescriptive title therefore follows from the provisions alone.",
+      "legal_issues": [
+        {
+          "issue_id": "ISS-M049-Q01-01",
+          "issue": "Whether ten years' undisturbed and uninterrupted adverse possession would satisfy the statutory conditions for prescriptive title to land.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M049-Q01-02",
+          "issue": "Whether the Prescription Ordinance applies at all to a land parcel registered under the Registration of Title Act with a First Class Title of Absolute Ownership.",
+          "status": "verified"
+        },
+        {
+          "issue_id": "ISS-M049-Q01-03",
+          "issue": "Whether a person not named in the Title Register can assert an unregistered title against the registered owner, and whether the ten-year conversion route under the Registration of Title Act is open to such a person.",
+          "status": "verified"
+        }
+      ],
+      "indispensable_provision_ids": [
+        "PROV-M049-001",
+        "PROV-M049-002",
+        "PROV-M049-003"
+      ],
+      "supporting_provision_ids": [
+        "PROV-M049-004",
+        "PROV-M049-005",
+        "PROV-M049-006",
+        "PROV-M049-007"
+      ],
+      "background_provision_ids": [
+        "PROV-M049-008"
+      ],
+      "legal_hop_count": 3,
+      "hop_count_basis": "Three necessary steps across two enactments: (1) section 3 of the Prescription Ordinance as the rule Nimal invokes; (2) section 57 of the Registration of Title Act, which excepts that rule for land registered under that Act; (3) section 14, which supplies the classes of title by reference to which section 57 is drawn and so shows the exception covers this parcel. Only these three are counted; sections 31, 33, 38 and 73 reinforce the same conclusion without being needed to reach it.",
+      "reasoning_edges": [
+        {
+          "from_provision_id": "PROV-M049-002",
+          "to_provision_id": "PROV-M049-001",
+          "relationship": "excepts"
+        },
+        {
+          "from_provision_id": "PROV-M049-003",
+          "to_provision_id": "PROV-M049-002",
+          "relationship": "defines"
+        },
+        {
+          "from_provision_id": "PROV-M049-007",
+          "to_provision_id": "PROV-M049-002",
+          "relationship": "qualifies"
+        },
+        {
+          "from_provision_id": "PROV-M049-004",
+          "to_provision_id": "PROV-M049-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M049-006",
+          "to_provision_id": "PROV-M049-002",
+          "relationship": "jointly_required"
+        },
+        {
+          "from_provision_id": "PROV-M049-005",
+          "to_provision_id": "PROV-M049-003",
+          "relationship": "cross_references"
+        }
+      ],
+      "enrichment": {
+        "applied": true,
+        "original_background": "Nimal has been in possession of a land registered under Registration of Title Act for more than 10 years.",
+        "enriched_background": "Nimal, a retired schoolteacher of Pelawatta, has been in possession of a land registered under Registration of Title Act for more than 10 years. The land is Land Parcel No. 214 delineated on Cadastral Map No. 520150 for the village of Pelawatta in the Homagama Divisional Secretary's Division, an area the Minister declared by Order published in the Gazette to be an area to which the Registration of Title Act applies. The Title Register for that parcel records Somapala as the registered owner, registered with a First Class Title of Absolute Ownership on 3 March 2009. Nimal's name appears nowhere in the Title Register, either as owner or under any registered interest, and he holds no deed, lease or grant in respect of the parcel. He entered into occupation of the parcel in January 2011 and has occupied it continuously and without interruption since then, paying no rent or produce to Somapala and doing nothing from which an acknowledgment of a right in Somapala could fairly be inferred. In October 2021 he wishes to assert ownership of the parcel against Somapala.",
+        "added_facts": [
+          {
+            "fact_id": "FACT-M049-Q01-001",
+            "fact": "The land is Land Parcel No. 214 delineated on Cadastral Map No. 520150 for the village of Pelawatta in the Homagama Divisional Secretary's Division, an area declared by Order of the Minister published in the Gazette to be an area to which the Registration of Title Act applies.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the missing property identity and location and confirms the parcel lies in a declared area, so the Act, and with it the section 57 exclusion, is engaged rather than assumed.",
+            "activates_provision_ids": [
+              "PROV-M049-008",
+              "PROV-M049-002"
+            ],
+            "counterfactual_effect": "If the land lay outside any declared area it could not be registered under the Act at all, section 57 would not be engaged, and the ordinary ten-year prescription rule would govern.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M049-Q01-002",
+            "fact": "The Title Register records Somapala as the registered owner of the parcel, registered with a First Class Title of Absolute Ownership on 3 March 2009, and Nimal's name appears nowhere in the Title Register as owner or as the holder of any registered interest.",
+            "origin": "synthetic_decisive",
+            "reason": "The original background says only that the land is registered, without saying with what class of title or in whose name. Section 57 is drawn by reference to the class of title, and sections 33 and 38 turn on who is on the register, so the scenario is indeterminate without this.",
+            "activates_provision_ids": [
+              "PROV-M049-002",
+              "PROV-M049-003",
+              "PROV-M049-004",
+              "PROV-M049-006"
+            ],
+            "counterfactual_effect": "Were Nimal himself the person registered with a Second Class Title of Ownership, he would not need prescription at all: after ten years he would be eligible for conversion to a First Class Title of Absolute Ownership under section 31.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M049-Q01-003",
+            "fact": "Nimal entered into occupation of the parcel in January 2011 and has occupied it continuously and without interruption to October 2021, paying no rent or produce to Somapala and doing nothing from which an acknowledgment of a right in Somapala could fairly be inferred.",
+            "origin": "synthetic_decisive",
+            "reason": "Fixes the missing applicable time and makes the possession answer the description in section 3 of the Prescription Ordinance, so the question is squarely whether that section is available rather than whether its conditions are met.",
+            "activates_provision_ids": [
+              "PROV-M049-001"
+            ],
+            "counterfactual_effect": "If the possession had been permissive, or accompanied by payment of rent or any acknowledgment, it would fail section 3 on its own terms and the section 57 point would never be reached.",
+            "approval_status": "pending"
+          },
+          {
+            "fact_id": "FACT-M049-Q01-004",
+            "fact": "Nimal is a retired schoolteacher of Pelawatta who is not a co-owner, lessee, manager or beneficiary in respect of the parcel and holds no deed, lease or grant to it.",
+            "origin": "synthetic_neutral",
+            "reason": "Supplies the missing party identity and rules out the alternative capacities in which a person may appear on the Title Register, so his position is that of a stranger in possession.",
+            "activates_provision_ids": [
+              "PROV-M049-006",
+              "PROV-M049-005"
+            ],
+            "counterfactual_effect": "If he held a registered interest such as a lease or a servitude, his rights would flow from that registered interest and the prescription question would not arise in this form.",
+            "approval_status": "pending"
+          }
+        ]
+      },
+      "gold_answer_draft": {
+        "issue": "Whether Nimal, a stranger in undisturbed and uninterrupted possession for more than ten years of a land parcel registered under the Registration of Title Act No. 21 of 1998 in another person's name with a First Class Title of Absolute Ownership, can claim prescriptive title to that parcel.",
+        "rule": "Prescriptive title to land rests on Prescription Ordinance s.3, which entitles a person to a decree on proof of ten years' undisturbed and uninterrupted possession by a title adverse to or independent of the owner's, unaccompanied by payment of rent or produce or by any act from which an acknowledgment of another's right would fairly be inferred. That Ordinance is withdrawn from land brought on to the Title Register: Registration of Title Act s.57 provides that the Prescription Ordinance shall not apply to lands or interests in land registered under that Act with a First Class Title of Absolute Ownership or a Second Class Title of Ownership, and s.14 shows that these are the classes with which a claimant is declared eligible to be registered on initial compilation. Registration of Title Act s.73 gives that Act effect notwithstanding anything to the contrary in any other written law, so the Prescription Ordinance cannot survive s.57 in this field. Alongside the exclusion, Registration of Title Act s.33(1) makes entries in the Title Register conclusive evidence of the ownership recorded and provides that they shall not be questioned in a court of law except as the Act provides, and s.38 denies entitlement to any title or interest in a registered land parcel unless that title or interest is itself registered. The only route by which ten years' possession improves a position under the Act is s.31(1), and it belongs to a person already registered with a Second Class Title of Ownership, who becomes eligible at the end of ten years from registration, absent an action under s.29, for conversion to a First Class Title of Absolute Ownership.",
+        "application": "The parcel Nimal occupies lies in a declared area and is registered under the Registration of Title Act, with Somapala entered in the Title Register as owner with a First Class Title of Absolute Ownership since March 2009. Nimal's occupation from January 2011 to October 2021 is continuous, unaccompanied by rent or produce and free of any act of acknowledgment, so on its own terms it would answer the description in Prescription Ordinance s.3 and exceed the ten-year term. That does not assist him, because the parcel is land registered with a First Class Title of Absolute Ownership and Registration of Title Act s.57 makes the Prescription Ordinance inapplicable to it; the rule he would invoke is simply not available for this land. Nor can he reach the same result by another statutory route. He is not named in the Title Register in any capacity, so under s.38 he is not entitled to any title or interest in the parcel, and under s.33(1) Somapala's registered ownership is conclusive and cannot be questioned in court except as the Act allows, which does not extend to a claim founded on adverse possession. The conversion right in s.31(1) is closed to him as well, since it presupposes registration with a Second Class Title of Ownership and Nimal has no registration at all.",
+        "conclusion": "No. Nimal cannot claim prescriptive title. Because the parcel is registered under the Registration of Title Act with a First Class Title of Absolute Ownership, s.57 puts the Prescription Ordinance out of play, so no period of adverse possession, however long or however undisturbed, can ripen into title to it, and s.38 leaves him without entitlement while he remains off the register. This assumes the parcel was on the Title Register throughout the period relied on; if part of that possession ran before the land was brought under the Act, the position for that earlier period would need separate consideration."
+      },
+      "answer_claims": [
+        {
+          "claim_id": "CL-M049-Q01-001",
+          "claim_text": "Section 3 of the Prescription Ordinance entitles a person to a decree on proof of ten years' undisturbed and uninterrupted possession of land by a title adverse to or independent of the owner's, unaccompanied by rent, produce, service or any act from which an acknowledgment of another's right would fairly be inferred.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M049-001"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-002",
+          "claim_text": "On initial compilation under the Registration of Title Act a claimant is declared eligible for registration either with a First Class Title of Absolute Ownership or, where he does not so qualify but is in bonafide possession, with a Second Class Title of Ownership.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M049-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-003",
+          "claim_text": "Registration of Title Act s.57 provides that the Prescription Ordinance shall not apply to lands or interests in land registered under that Act with a First Class Title of Absolute Ownership or a Second Class Title of Ownership.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M049-002",
+            "PROV-M049-003"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-004",
+          "claim_text": "The Registration of Title Act has effect notwithstanding anything to the contrary in any other written law, so the Prescription Ordinance cannot operate against s.57.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M049-007",
+            "PROV-M049-002"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-005",
+          "claim_text": "Entries in the Title Register are conclusive evidence of the ownership specified in them and shall not be questioned in a court of law except as provided for in the Registration of Title Act.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M049-004"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-006",
+          "claim_text": "No person acquiring an interest in a land parcel registered under the Registration of Title Act is entitled to that title or interest unless it is itself registered under the Act.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M049-006"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-007",
+          "claim_text": "A person registered with a Second Class Title of Ownership becomes eligible, at the end of ten years from that registration and absent an action under s.29, for conversion of his registration to a First Class Title of Absolute Ownership.",
+          "claim_type": "rule",
+          "supporting_provision_ids": [
+            "PROV-M049-005"
+          ],
+          "supporting_fact_ids": [],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-008",
+          "claim_text": "Nimal's occupation from January 2011 to October 2021 was continuous, without payment of rent or produce and without any act of acknowledgment, so it would answer the description of adverse possession in Prescription Ordinance s.3 and exceed the ten-year term.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M049-001"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M049-Q01-003",
+            "BG-1"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-009",
+          "claim_text": "The parcel is land registered under the Registration of Title Act with a First Class Title of Absolute Ownership in Somapala's name, so it falls within the exclusion in s.57 and the Prescription Ordinance does not apply to it.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M049-002",
+            "PROV-M049-003"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M049-Q01-001",
+            "FACT-M049-Q01-002",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-010",
+          "claim_text": "Because Nimal is not named in the Title Register in any capacity, he is not entitled to any title or interest in the parcel, and Somapala's registered ownership is conclusive and not open to challenge in court on a ground the Act does not provide for.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M049-006",
+            "PROV-M049-004"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M049-Q01-002",
+            "FACT-M049-Q01-004"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-011",
+          "claim_text": "The ten-year conversion right is not open to Nimal, because it presupposes an existing registration with a Second Class Title of Ownership and he holds no registration at all.",
+          "claim_type": "application",
+          "supporting_provision_ids": [
+            "PROV-M049-005"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M049-Q01-002",
+            "FACT-M049-Q01-004"
+          ],
+          "support_strength": "direct",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-012",
+          "claim_text": "Nimal cannot claim prescriptive title to the parcel; no length of adverse possession of land registered under the Registration of Title Act with a First Class Title of Absolute Ownership can ripen into title, and he remains without entitlement while he is off the register.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M049-002",
+            "PROV-M049-006"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M049-Q01-002",
+            "FACT-M049-Q01-003",
+            "BG-1"
+          ],
+          "support_strength": "combined",
+          "verification_status": "verified"
+        },
+        {
+          "claim_id": "CL-M049-Q01-013",
+          "claim_text": "The conclusion assumes the parcel was on the Title Register throughout the period of possession relied on; possession running before the land was brought under the Act would need separate consideration.",
+          "claim_type": "conclusion",
+          "supporting_provision_ids": [
+            "PROV-M049-002",
+            "PROV-M049-008"
+          ],
+          "supporting_fact_ids": [
+            "FACT-M049-Q01-001",
+            "FACT-M049-Q01-002"
+          ],
+          "support_strength": "inferential",
+          "verification_status": "disputed"
+        }
+      ],
+      "research_status": "proposed_gold",
+      "block_reason": null,
+      "lawyer_validation_status": "pending"
+    }
+  ]
+}
