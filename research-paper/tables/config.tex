@@ -1,0 +1,11 @@
+\small
+All runs: corpus fingerprint \texttt{f119236b806f}, run \texttt{main-test}, git commit \texttt{e491f2d26f}, CPU only.
+\begin{itemize}\setlength{\itemsep}{0pt}
+\item BM25: $k_1=1.2$, $b=0.75$, tokenizer \texttt{[0-9a-z]+} after case folding, closed-class stopword list. Field weights (S2, S4--S7): act title 3.0, part heading 1.0, section heading 4.0, body 1.0, defined terms 2.0, cross-reference text 0.5.
+\item Dense: \texttt{BAAI/bge-base-en-v1.5}, cosine similarity, query prefix ``Represent this sentence for searching relevant passages:'', windows of 1500 characters with stride 1200, at most 12 windows per section, section score = max over windows.
+\item Fusion: reciprocal rank fusion with $k=60$, equal channel weights, candidate depth 100.
+\item Reranker: \texttt{cross-encoder/ms-marco-MiniLM-L-6-v2}, max length 512, passage = act title, heading and the first 2000 characters of the section.
+\item Routing (S6, S7): Acts scored by the sum of the top 5 fused section scores; 3 Acts retained; amending Acts folded into their principal enactment.
+\item Bundle (S7): 15 seeds; expansion over defines, excepts, qualifies, cross\_references, procedurally\_requires, amends; temporal filter on; graph-support weight $\gamma=0.15$; seed bonus 0.05.
+\item Query: normalised background (enriched where enrichment applied) followed by the question. Split seed 13, development fraction 0.17. Bootstrap: 2,000 matter-level resamples, seed 13.
+\end{itemize}

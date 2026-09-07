@@ -123,3 +123,26 @@ probe.pdf
 probe-out.pdf
 probe.txt
 tmp-alt.html
+
+# PaperBanana intermediate runs (raster candidates, prompts); final figure is figures/architecture.{svg,pdf}
+research-paper/figures/runs/
+research-paper/figures/architecture-preview.png
+research-paper/figures/benchmark-construction-preview.png
+research-paper/figures/corpus-retrieval-preview.png
+research-paper/neurips_2026.before-submission-edit.*
+research-paper/figures/pagecheck*.png
+
+# LaTeX build artifacts for the research paper (source .tex/.bib and final .pdf are tracked)
+research-paper/*.aux
+research-paper/*.bbl
+research-paper/*.blg
+research-paper/*.fdb_latexmk
+research-paper/*.fls
+research-paper/*.log
+research-paper/*.out
+research-paper/*.synctex.gz
+latexmk.log
+
+# Rebuildable retrieval caches for the statutory-qa-v1 experiments
+data/evaluvation/statutory-qa-v1/experiments/cache/
+data/evaluvation/statutory-qa-v1/corpus/.search_cache.pkl
