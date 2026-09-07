@@ -4,7 +4,8 @@
         "Only for facts that cannot be read from the statute's own page and were",
         "checked against another edition. Every entry records what was checked and",
         "against what, so the correction can be re-tested rather than trusted.",
-        "The original wording is always kept alongside as heading_raw."
+        "The original wording is always kept alongside as heading_raw.",
+        "2026-09-05 finalization pass: entries carry last_pass; quality_notes items with a 'pass' key were added from worker handoffs; section_headings with status verified_against_alternate_edition were settled by a second held edition."
     ],
     "SRC053": {
         "checked_against": "data/legal-sources/library/statutes/1-1844-definition-of-boundaries-ordinance.pdf",
@@ -94,7 +95,25 @@
                 "source_status": "verified_against_alternate_consolidated_edition"
             }
         ],
-        "verification_status": "structurally_verified"
+        "verification_status": "structurally_verified",
+        "quality_notes": [
+            {
+                "code": "s4_heading_verified",
+                "issue": "1980 revised edition Cap. 72 (vol. 3, PDF p. 735) confirms the corrected s.4 heading",
+                "status": "verified_against_alternate_edition",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "4"
+                ]
+            },
+            {
+                "code": "curriculum_citation_discrepancy",
+                "issue": "Curriculum 'Act No. 33 of 1939' unsupported by any file",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC047": {
         "checked_against": "data/legal-sources/library/statutes/HTML/Kandyan Succession Ordinance.html",
@@ -135,12 +154,54 @@
                 "status": "verified_against_alternate_edition",
                 "reason": "The parsed 2001 edition prints \"16 M L. R.. 117-120\"; the 1956 edition has \"16 N L. R.\", N for New Law Reports."
             }
-        }
+        },
+        "quality_notes": [
+            {
+                "code": "also_checked_1980_edition",
+                "issue": "1980 revised edition Cap. 133 (vol. 3, PDF pp. 217-218) prints '16 M L. R..' as well; only the 1956 edition has 'N'",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "curriculum_citation_discrepancy",
+                "issue": "Curriculum '32 of 1971' unsupported by any file",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC031": {
         "checked_against": "https://lankalaw.net/wp-content/uploads/2025/02/2007Y0V0C7A.html",
         "note": "Structure reviewed against the source page: 23 Parts, 106 crossheadings, 3 subheadings, 534 sections and 13 referenced schedules, all confirmed. Section 1 sits outside Part I in the source, so it is a top-level node.",
-        "verification_status": "structurally_verified"
+        "verification_status": "structurally_verified",
+        "section_headings": {
+            "211": {
+                "heading": "Age limit not to apply if company so resolves",
+                "status": "verified_against_alternate_edition",
+                "reason": "GP PDF table of sections; HTML prints no heading"
+            },
+            "212": {
+                "heading": "Duty of directors to disclose age",
+                "status": "verified_against_alternate_edition",
+                "reason": "GP PDF table of sections; HTML prints no heading"
+            }
+        },
+        "quality_notes": [
+            {
+                "code": "missing_schedules",
+                "issue": "13 Schedules referenced, none in the HTML; present in the GP PDF",
+                "status": "known_gap",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "post_baseline_act_applied",
+                "issue": "Companies (Amendment) Act, No. 13 of 2019 applied in finalized/ (ss.5(1), 9, 10(1)); logged in applied_amendments_log",
+                "status": "pipeline_consolidation",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC011": {
         "checked_against": "https://lankalaw.net/wp-content/uploads/2025/02/1998Y0V0C21A.html",
@@ -167,8 +228,18 @@
             {
                 "code": "unextracted_references",
                 "detail": "Not captured: s.5(8) to Chapter XVII of the Civil Procedure Code, s.7(7) to ss.7(2) to 7(5), and s.11 to s.8(a) of the Registration of Documents Ordinance at paragraph level."
+            },
+            {
+                "code": "compendium_checked",
+                "issue": "1980 revised edition Cap. 137 text layer shows the same s.12(1) structure and damage; an image reading is needed",
+                "status": "unresolved",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "12"
+                ]
             }
-        ]
+        ],
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC072": {
         "checked_against": "https://lankalaw.net/wp-content/uploads/2025/02/1981Y11V301C-1.html",
@@ -219,9 +290,28 @@
             {
                 "code": "appointed_date_variants",
                 "detail": "The notes for ss.6 and 25 give the same Order with different readings: \"Gazette No. 14.884- died 13th December. 1969\" and \"Gazette No. 14,884 dated 12th December, 1969\". The second is the cleaner reading. The appointed date of 3 January 1970 is for those sections, not the Act as a whole."
+            },
+            {
+                "code": "schedule_recoverable",
+                "issue": "s.26 Schedule (nine items) printed at Cap. 301 p. XI/440 in legislative-enactments-1980-volume-4.pdf",
+                "status": "known_gap",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "compendium_same_ocr_lineage",
+                "issue": "compendium text layer shares the HTML's OCR corruption; cannot settle the inferred headings",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "curriculum_citation_discrepancy",
+                "issue": "Curriculum '30 of 1986' unsupported",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
-        "content_completeness": "incomplete: the Schedule referenced by s.26(2)(b) has not been located"
+        "content_completeness": "incomplete: the Schedule referenced by s.26(2)(b) has not been located",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC043": {
         "checked_against": "https://survey.gov.lk/sdweb/pdf/surveydocuments/Survey%20Act/Survey%20Act%20English.pdf",
@@ -358,13 +448,43 @@
             {
                 "kind": "amendment-history-not-established",
                 "detail": "No amending Act is recorded for this Act in this corpus and the parsed page carries no amendment chain in its header. That is the absence of a finding, not a finding of no amendments: nothing here has checked the Gazette."
+            },
+            {
+                "code": "edition_kind_as_enacted",
+                "issue": "GP header '[Certified on 04th October, 2002] ... Supplement to Part II of the Gazette ... of October 04, 2002'; no chain, no markers",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "section_text_repeats_first_child",
+                "issue": "parser convention",
+                "status": "known_parser_limitation",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "13",
+                    "14",
+                    "44"
+                ]
+            },
+            {
+                "code": "duplicates",
+                "issue": "amendments/17-2002-survey.pdf == statutes/17-2002-survey-act.pdf; amendments/html/17-2002-survey-act.html == statutes/HTML/17-2002-survey-act.html; canonical-amendments/17-2002.json is the principal misfiled",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "index_noise",
+                "issue": "index has 5 legacy body-fragment entries; the Act has 67 sections",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
             }
-        ]
+        ],
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC021": {
         "checked_against": "Consolidated PDF of the Land (Restrictions on Alienation) Act, No. 38 of 2014 as amended to 2024, read page by page; the two amending Acts checked against their Government Printer PDFs.",
         "note": "The marginal note of section 11 wraps across six printed lines whose note column overruns the body column on some of them. The column split recovers the provisions intact but clips two words of that note, so it is corrected here rather than by loosening the split, which would cost words out of the provisions themselves.",
-        "publisher": "Government Printer, Sri Lanka (consolidated reprint, 2024)",
+        "publisher": "not stated (no imprint; Apple Pages PDF titled 'Land (Restrictions on Alienation) - Consolidated 2024')",
         "section_headings": {
             "11": {
                 "heading": "Restrictions on mortgaging lands of which title has passed or has been leased to a foreign national.",
@@ -388,13 +508,26 @@
         ],
         "quality_notes": [
             "Parsed from a consolidated reprint, not from the Act as enacted. The registry's Government Printer PDF of the original has no text layer.",
-            "Section 5A and the amendments to sections 3 and 5A are carried in this text as consolidated; the inline markers name the amending provisions and the operations are resolved from the amending Acts' own instructions."
+            "Section 5A and the amendments to sections 3 and 5A are carried in this text as consolidated; the inline markers name the amending provisions and the operations are resolved from the amending Acts' own instructions.",
+            {
+                "code": "publisher_unsupported",
+                "issue": "Earlier value 'Government Printer, Sri Lanka (consolidated reprint, 2024)' is unsupported by the document",
+                "status": "corrected",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "21_2018_reread",
+                "issue": "finalized 21-2018 tree re-read against pp. 2-3 of the scan on 2026-09-05 with no disagreement; ss. 3 and 4 have no second printed source",
+                "status": "reviewed",
+                "pass": "2026-09-05 finalization pass"
+            }
         ],
-        "verification_status": "structurally_verified"
+        "verification_status": "structurally_verified",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC039": {
         "checked_against": "data/legal-sources/library/statutes/41-1978-urban-development-authority-act.pdf, pages 30-32 (consolidated PDF text layer)",
-        "note": "Schedule replaced 2026-08-26: the prior entry was OCR'd from the 4-of-1982 amendment PDF (which has no text layer at all, so the OCR reading was a single, unverified pass) and was missing the 2007 amendment to item 4(e) entirely. The consolidated statute PDF held in the registry carries the Schedule as real embedded text and reflects current law, so it replaces the OCR reading.",
+        "note": "Schedule replaced 2026-08-26: the prior entry was OCR'd from the 4-of-1982 amendment PDF (which has no text layer at all, so the OCR reading was a single, unverified pass) and was missing the 2007 amendment to item 4(e) entirely. The consolidated statute PDF held in the registry carries the Schedule as real embedded text and reflects current law, so it replaces the OCR reading. | 2026-09-05 finalization pass: Schedule replaced 2026-08-26 from the consolidated PDF text layer. 2026-09-05: finalized tree hand-corrected: 26B split from 26A; Act No. 36 of 2007 s.2 applied (s.8(cc)); s.8 heading Gazette number removed; title set to 'Urban Development Authority Law'.",
         "text_corrections": [
             {
                 "section": "19F",
@@ -434,6 +567,47 @@
                 ],
                 "issue": "s.19G(2) reads 'Sections 321, 322 (1), 322 (2), 324, 325, 326, 328 (c), 329 and 330 of the Code of Criminal Procedure Act, No. 15 of 1979' -- all nine are external to this Act. Only '321' was captured, and as an internal cross-reference (this Act has no section 321); 322-330 are dropped entirely. The external-reference regex does not handle a comma-separated run of section/subsection pairs this long before the enactment name.",
                 "status": "known_parser_limitation"
+            },
+            {
+                "code": "section_26b_missing",
+                "issue": "26B split out of 26A",
+                "status": "resolved_by_hand_in_finalized_tree",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "26A",
+                    "26B"
+                ]
+            },
+            {
+                "code": "marker_misprint_28D",
+                "issue": "'[ 9,4 of 1984]' should read 44 of 1984; left as printed",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "28D"
+                ]
+            },
+            {
+                "code": "first_child_repeated",
+                "issue": "parser convention",
+                "status": "known_parser_limitation",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "8G",
+                    "19A",
+                    "28C",
+                    "28D"
+                ]
+            },
+            {
+                "code": "amendment_36_2007_applied",
+                "issue": "s.8(cc) inserted; Schedule 4(e) already substituted",
+                "status": "applied_from_held_source",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "8",
+                    "Schedule"
+                ]
             }
         ],
         "verification_status": "unverified",
@@ -446,7 +620,24 @@
                 "quality_notes": "Recovered from the consolidated statute PDF (data/legal-sources/library/statutes/41-1978-urban-development-authority-act.pdf, pages 30-32), not the LankaLaw HTML, which never carries the Schedule's text. Includes the amendment by Act 36 of 2007 to item 4(e) that the prior OCR-sourced version was missing. The source itself skips item 15 and prints item 16 twice ('16. The redistribution...' followed immediately by '16. The demarcation...'); confirmed identical under both naive and layout-preserving (pdftotext -layout) extraction, so this is a defect in the consolidated PDF's own typesetting, not an extraction artifact, and is left as printed rather than renumbered.",
                 "text": "1. The manner in which the land and buildings in the development area shall be used.\n\n2. The allotment, reservation or zoning of land for different purposes.\n\n3. The provision for regulating the uses of land and buildings in different zones such as residential, commercial, industrial and imposition of conditions and restrictions in regard to the floor area ratio, density, location, and height, number of storey and size of building and structures, the size of plots, yards and open spaces, set backs from street, building lines and the use and maintenance of buildings, structures and appurtenant land.\n\n4. The requirements for buildings in respect of -\n\n(a) stability of different parts of buildings foundations and super-structure;\n\n(b) area and height, levels of floors, standards of accommodation for rooms, location and standards for staircases and exits;\n\n(c) lighting and ventilation;\n\n(d) fire protection;\n\n(e) drainage of site and roof including measures necessary for rainwater harvesting; [3,36 of 2007]\n\n(f) specifications for materials of construction and code of practice;\n\n(g) standards and materials for plumbing and waste disposal, electrical wiring and installation such as pumps and lifts;\n\n(h) regulations regarding clear distances of buildings from electrical, telephone, telegraph and microwave and other lines.\n\n(i) regulations in respect of unsafe buildings and prescribing standards of fitness for buildings and other matters incidental to the ensuring of stability, safety and amenity of buildings.\n\n5. The control of architectural features, elevation and frontage of buildings and regulations for attaining urban design objectives.\n\n6. The provision for preserving and promoting landscaping including preservation and planting of woodlands, trees and preservation of views and prospects, places of historical, architectural interest and scenic beauty.\n\n7. The control of pollution, environmental quality and advertisement.\n\n8. The provision for car parking facilities, parking, loading and service bays for all types of vehicles.\n\n9. The provisions for matters concerning and incidental to- (a) traffic and transport facilities including special facilities for pedestrians and cyclists; (b) water supply, sewerage and drainage and waste disposal facilities; (c) power supply; (d) telecommunication.\n\n10. The provision for laying out of land for building purposes including minimum standards for access ways and roads, reservation of parks, play grounds and open spaces for other amenities and the imposition of conditions requiring the amount of land to construct or improve roads, and provide amenities or to contribute to the cost of such construction or improvement.\n\n11. Provisions for reclamation of land.\n\n12. The laying out and relaying out of land either vacant or already built upon, as building sites.\n\n13. The construction, diversion, extension, alteration, improvement or closure of lanes, streets, roads and communications.\n\n14. The construction, alteration, removal or demolition of buildings, bridges and other structures.\n\n16. The redistribution of boundaries and the reconstitution of plots belonging to owners of property.\n\n16. The demarcation of areas for special treatment and their detailed planning, development and redevelopment.\n\n17. The stages by which the development plan shall be carried out.\n\n18. The levy of fees and service charges in respect of different categories of developments."
             }
-        ]
+        ],
+        "section_headings": {
+            "8": {
+                "heading": "Powers and functions of the Authority.",
+                "status": "corrected_by_hand",
+                "reason": "Gazette numbers removed",
+                "heading_raw": "Powers and functions of the Authority. 392-9-1986 392-9-1986"
+            },
+            "26B": {
+                "heading": "Fines when recovered to be credited to the Fund of the Authority.",
+                "status": "corrected_by_hand",
+                "reason": "consolidated PDF p.26"
+            }
+        },
+        "alternate_titles": [
+            "Urban Development Authority Act"
+        ],
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC076": {
         "checked_against": "data/legal-sources/library/statutes/HTML/37-1954-national-housing-act.html",
@@ -471,22 +662,45 @@
                 ],
                 "issue": "Both Acts are named in the amendment-chain header but neither has a corresponding bracketed inline marker anywhere in the body text (checked by direct search of the source HTML), unlike the other four chain entries (42 of 1958, 36 of 1966, 9 of 1978, 49 of 1981), which are all marked. Consistent with either the chain-marking scheme genuinely omitting these two, or their changes having been fully superseded by later amendments to the same provisions.",
                 "status": "unresolved_no_second_source"
+            },
+            {
+                "code": "external_refs_s56",
+                "issue": "external refs to Land Development Ordinance ss.120-127",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "56"
+                ]
+            },
+            {
+                "code": "index_noise",
+                "issue": "index sections 26A and 58A are legacy-only noise; not in the source",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC049": {
         "checked_against": "data/legal-sources/library/statutes/19-1931-buddhist-temporalities-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
-        "note": "Parsed from the 2024 consolidated PDF rather than the older (1981 revised-edition) LankaLaw HTML also held for this source, since the PDF is the more current edition.",
-        "publisher": "LankaLaw (private republisher, consolidated to 2024)",
+        "note": "Parsed from the 2024 consolidated PDF rather than the older (1981 revised-edition) LankaLaw HTML also held for this source, since the PDF is the more current edition. | 2026-09-05 finalization pass: Chain ends Act No. 3 of 1992; Act No. 34 of 2013 applied from the held Government Printer PDF (68 substitutions, one definition inserted, one repealed). The earlier 'Parsed from the 2024 consolidated PDF' description was wrong about the cutoff.",
+        "publisher": "LankaLaw (private republisher); file titled 'Consolidated (2024)' but chain header ends Act No. 3 of 1992",
         "quality_notes": [
             {
                 "code": "schedule_not_extracted",
                 "detail": "The PDF's Schedules (Forms A/B, declarations for registering a bhikkhu/samanera under section 41) print their own numbered items ('1. Place of Birth', '2. Lay Name in Full', ...), which the section-number pattern cannot tell apart from a real section restarting at 1 -- three such runs (1-44 correct, then two bogus 1-N runs with no headings) were produced before scripts/parse_consolidated_pdf.py was given a boundary cut at the 'Schedules' heading. The tree now stops at section 44 and holds no schedule content; coverage against the full PDF text is 5.51% unmatched as a result, all of it schedule/form vocabulary (checked by hand against the missing-word list).",
                 "status": "known_scope_limitation"
+            },
+            {
+                "code": "amendment_34_2013_applied",
+                "issue": "68-node 'Commissioner-General of Buddhist Affairs' substitution has no post-2013 consolidated text to check against",
+                "status": "pipeline_consolidation",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "needs_structural_review",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC017": {
         "checked_against": "data/legal-sources/library/statutes/4-1902-powers-of-attorney-ordinance.pdf",
@@ -512,6 +726,24 @@
                 "issue": "schedules_referenced correctly lists 'the Schedule' (sections 3 and 5 both say 'in the form prescribed in the Schedule'), and schedules is empty ([]), which build_canonical_statutes.py's own comment says is because 'their bodies are not on these pages' -- that assumption does not hold here. Confirmed directly by rendering PDF page 2 at 300dpi (data/legal-sources/library/statutes/4-1902-powers-of-attorney-ordinance.pdf): the Schedule is on that same page, immediately after section 9's fee table, headed 'SCHEDULE [Sections 3 and 5.]', a blank pro-forma 12-column register form with no filled-in data rows: Serial No. | Date of Registration | Description of Power of Attorney (whether Notarial Deed, Letter, Telegram, &c.) | Grantor | Grantee | Date of Powers | By whom produced for Registration | Volume and Folio where Copy is filed | Date of Notification of Cancellation or Revocation | Notification by whom given | Date of Registration of Notification | Volume and Folio where Notification is filed.",
                 "status": "content_not_yet_recovered",
                 "recommendation": "Add a schedules entry with these column headers (recovered_from the same PDF, not an alternate edition) -- deferred pending a decision to actually add it"
+            },
+            {
+                "code": "schedule_recorded",
+                "issue": "original Schedule recorded in schedules_before_amendment from the RGD page-2 render; repealed by Act 28 of 2022 s.7",
+                "status": "resolved",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "post_baseline_acts_applied",
+                "issue": "Acts 14 of 2013, 28 of 2022, 3 of 2024 applied in finalized/ from held texts; canonical HTML parse remains at 1939; 2022 wording rests on one OCR reading proof-read by eye",
+                "status": "pipeline_consolidation",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "curriculum_citation_discrepancy",
+                "issue": "Curriculum 'No. 21 of 1844' is the Wills Ordinance's number",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
         "fixed_in_parser": [
@@ -522,7 +754,8 @@
                 "note": "Fixed at the source (date-parsing step in build_canonical_statutes.py), not just for SRC017: the same artifact was present in 44 other statutes' date_stated_in_source and is now corrected across all of them."
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC071": {
         "checked_against": "data/legal-sources/library/statutes/HTML/22-1871-prescription-ordinance.html",
@@ -535,16 +768,73 @@
                 "note": "Made the inner <font> wrapper optional with a bare leading-number fallback. Checked against all other 51 statute HTML files in the corpus with old vs. new regex; none of their section counts changed, so the fallback is not known to fire spuriously elsewhere in this corpus."
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "quality_notes": [
+            {
+                "code": "post_baseline_act_applied",
+                "issue": "Act No. 26 of 2014 s.2 (repeal and substitute s.15) applied in finalized/ from the GP PDF; baseline wording in text_before_amendment",
+                "status": "pipeline_consolidation",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "15"
+                ]
+            },
+            {
+                "code": "hereinbefore",
+                "issue": "HTML 'herein before' vs Cap. 81 'hereinbefore' left as HTML",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC001": {
         "checked_against": "data/legal-sources/library/statutes/7-1840-prevention-of-frauds-ordinance.pdf (consolidated to 2024, per the registry's preferred_source_url)",
         "note": "Parsed from the consolidated PDF via scripts/parse_consolidated_pdf.py rather than the older LankaLaw HTML also held for this source (data/legal-sources/library/statutes/HTML/7-1840-prevention-of-frauds-ordinance.html). The HTML-based tree was flat -- 19 sections, no subsection/paragraph/proviso structure -- and did not reflect the 2022 or 2024 amendments; the PDF is consolidated to 2024 and its two-column layout carries real subsection structure. Same 19 sections resolve either way; the PDF parse adds 6 subsections, 9 paragraphs and 7 provisos, and the amendment chain (16 of 1852, 11 of 1896, 60 of 1947, 30 of 2022, 4 of 2024). Inline [section, Act of Year] markers were confirmed by direct search of the PDF text for sections 2 (three markers: 60 of 1947, 30 of 2022, 4 of 2024), 3, 4 and 5 (one marker each, 30 of 2022); the two oldest chain entries (16 of 1852, 11 of 1896) have no corresponding inline marker anywhere in the body text, the same unresolved-marker shape already recorded for SRC076.",
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "section_headings": {
+            "5": {
+                "heading": "Appointments by will to be executed like other wills, and to be valid although other required solemnities are not observed.",
+                "status": "corrected_by_hand",
+                "reason": "PDF marginal note"
+            },
+            "8": {
+                "heading": "No will revoked to be revived otherwise than by re-execution, or a codicil to revive it.",
+                "status": "corrected_by_hand",
+                "reason": "PDF marginal note"
+            }
+        },
+        "quality_notes": [
+            {
+                "code": "s5_sense_reversing_bleed",
+                "issue": "s.5 body: 'expressly required' (parser had 'expressly not required' from marginal-note bleed)",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "5"
+                ]
+            },
+            {
+                "code": "s8_note_word",
+                "issue": "'any will, testament, or codicil' (parser had 'testament, it. or codicil')",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "8"
+                ]
+            },
+            {
+                "code": "curriculum_11_1856",
+                "issue": "11 of 1856 (curriculum) appears in no chain",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC044": {
         "checked_against": "data/legal-sources/library/statutes/HTML/53-1938-bank-of-ceylon-ordinance.html, cross-read against the official Bank of Ceylon PDF at data/legal-sources/library/statutes/53-1938-bank-of-ceylon-ordinance.pdf",
-        "note": "The registry's own official Bank of Ceylon PDF (Chapter 397 Government Printer format) prints its marginal note in the RIGHT column with the operative text on the left -- the opposite convention from every other Government Printer PDF handled so far -- and scripts/parse_consolidated_pdf.py has no reliable way yet to tell a genuine right-hand note from a short one-line provision (e.g. 'Repealed (\u00a714,10 of 1974)') that happens to leave enough trailing whitespace to look like one. Parsed from the LankaLaw consolidated HTML instead, which reads cleanly (0.05% unmatched) and carries the identical amendment chain through Act No. 54 of 2000.",
+        "note": "The registry's own official Bank of Ceylon PDF (Chapter 397 Government Printer format) prints its marginal note in the RIGHT column with the operative text on the left -- the opposite convention from every other Government Printer PDF handled so far -- and scripts/parse_consolidated_pdf.py has no reliable way yet to tell a genuine right-hand note from a short one-line provision (e.g. 'Repealed (§14,10 of 1974)') that happens to leave enough trailing whitespace to look like one. Parsed from the LankaLaw consolidated HTML instead, which reads cleanly (0.05% unmatched) and carries the identical amendment chain through Act No. 54 of 2000.",
         "publisher": "LankaLaw (private republisher)",
         "quality_notes": [
             {
@@ -555,16 +845,54 @@
                     "66-67",
                     "73"
                 ],
-                "issue": "The official PDF marks these numbers 'Repealed (\u00a7N, 10 of 1974)' explicitly; the LankaLaw HTML this tree is built from omits them from its numbering entirely rather than printing a stub. Confirmed genuine (not a parsing gap) by checking every missing number against the official PDF's own repeal markers.",
+                "issue": "The official PDF marks these numbers 'Repealed (§N, 10 of 1974)' explicitly; the LankaLaw HTML this tree is built from omits them from its numbering entirely rather than printing a stub. Confirmed genuine (not a parsing gap) by checking every missing number against the official PDF's own repeal markers.",
                 "status": "source_omission_confirmed_genuine"
             },
             {
                 "code": "pdf_reversed_column_layout",
                 "detail": "Left as future work: a general fix would need to distinguish a genuine right-hand marginal note from a short body line with trailing whitespace, e.g. by tracking the note column's horizontal position from confirmed multi-word notes and requiring a candidate note to start near it, the way body_column already does for the normal orientation.",
                 "status": "known_parser_limitation"
+            },
+            {
+                "code": "repealed_sections_omitted",
+                "issue": "34-40, 45-55, 66-67, 73, 75 repealed by Law 10 of 1974; 75 added to the earlier list; each in omitted_provisions",
+                "status": "documented",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "34-40",
+                    "45-55",
+                    "66-67",
+                    "73",
+                    "75"
+                ]
+            },
+            {
+                "code": "section_index_count_82_vs_59",
+                "issue": "23 legacy-only index rows = 22 repealed stubs + phantom 'section 279'",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "pre_1974_markers_absent_in_html",
+                "issue": "pre-1974 amendments attributable only via chain header",
+                "status": "known_source_limitation",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "schedules_not_transcribed",
+                "issue": "official PDF pp.19-30",
+                "status": "known_gap",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "amendment_chains_csv_incomplete",
+                "issue": "omits 45 of 1939 and 60 of 1980 though in the PDF header",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC034": {
         "checked_against": "data/legal-sources/library/statutes/43-1982-stamp-duty-act.pdf (official Inland Revenue Department PDF)",
@@ -617,9 +945,125 @@
                 ],
                 "issue": "Section 40(10) drops the word 'in' from '...the amount specified in the notice appealed against...' at a line wrap, and the following bare crossheading 'APPEAL TO THE BOARD OF REVIEW' (no 'CHAPTER'/'PART' label, so the existing heading filter does not catch it) glues onto its own end. A fix was attempted (treating any full-width wrapped line with no sentence-closing punctuation before it as more body text) and reverted: it corrected this case but scrambled word order in three other already-parsed statutes, including the already-finalized Buddhist Temporalities Ordinance, by misreading genuine wrapped marginal notes as body text. The general problem -- telling a wrapped note from a wrapped body line apart using only layout, with no reliable column-position signal in this particular document -- was not solved in the time available.",
                 "status": "known_parser_limitation"
+            },
+            {
+                "code": "floating_marginal_notes",
+                "issue": "IRD print places notes above the provision they belong to; parser attaches them to the preceding section",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "margin_marker_anomalies",
+                "issue": "61/1996, 71/1998, 24/1993 read as misprints for 6/1996, 71/1988, 29/1993",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "chain",
+                "issue": "HTML header: 71 of 1988 ... 12 of 2006; print demonstrates up to 27 of 2000; 12 of 2006 held_but_not_applied (no textual operation)",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "structurally_verified",
+        "section_headings": {
+            "13": {
+                "heading": "Composition of Stamp Duty payable on certain instruments",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "20": {
+                "heading": "Drawing several instruments to avoid duty",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "21": {
+                "heading": "Certain agreements to be chargeable with same ad valorem duty",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "29": {
+                "heading": "Instruments not duly stamped by accident produced voluntarily",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "30": {
+                "heading": "The Commissioner General to deal with impounded instruments",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "32": {
+                "heading": "Non-liability for loss of instruments sent.",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "33": {
+                "heading": "Admissibility of instruments",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "34": {
+                "heading": "Effect of non-compliance with this Act in case of certain bills of exchange",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "35": {
+                "heading": "One bill only of a set need be stamped",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "36": {
+                "heading": "Admissibility of receipts in certain cases",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "37": {
+                "heading": "Power of payer to stamp bills, promissory notes, cheques received by him unstamped",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "38": {
+                "heading": "Adjudication as to proper stamp duty",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "39": {
+                "heading": "Endorsement by Assessor",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "40": {
+                "heading": "Appeals to the Commissioner General",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "41": {
+                "heading": "Appeal to the Board of Review",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "42": {
+                "heading": "Amount when final",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "43": {
+                "heading": "Appeal on a question of law to the Court of Appeal and to the Supreme Court",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "44": {
+                "heading": "Duty to include penalties, fines &c.",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            },
+            "68": {
+                "heading": "Stamp Ordinance (Chapter 247) not to apply to instruments executed on or after the appointed date.",
+                "status": "corrected_by_hand",
+                "reason": "IRD print marginal note; assignment confirmed against HTML"
+            }
+        },
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC056": {
         "checked_against": "data/legal-sources/library/statutes/HTML/8-1947-state-lands-ordinance.html",
@@ -663,9 +1107,31 @@
                 ],
                 "issue": "Section 86's second reference to the Civil Procedure Code ('sections 703 and 829A* of the Code shall have effect...') uses the bare phrase 'the Code' rather than repeating the full name or using 'that Code'/'the said Code', which neither EXTERNAL_REF nor THAT_ENACTMENT recognises as continuing the earlier-named enactment; recorded as internal to this Ordinance. The section's first, fuller reference ('...of the Civil Procedure Code') is correctly external. Section 86's footnote ('[* Section 829A is repealed by Law No. 20 of 1977]') has the same gap in isolation, with no enactment name in the footnote itself to resolve from.",
                 "status": "known_parser_limitation"
+            },
+            {
+                "code": "commencement_from_head_date",
+                "issue": "1949-09-01 from head date in HTML and FAOLEX Cap. 286 and s.2; CSV has no row",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "schedules_recovered",
+                "issue": "First [s.48] and Second [s.54] Schedules transcribed from FAOLEX pp. XI/314-315 with two OCR corrections",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "external_refs_s89",
+                "issue": "ss.120-127 of the Land Development Ordinance",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "89"
+                ]
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC035": {
         "checked_against": "data/legal-sources/library/statutes/ocr/6-1990-western-province-financial-statute.txt (offline doctr OCR of the registry's scanned Government Printer PDF, which has no text layer)",
@@ -703,13 +1169,82 @@
                 "code": "long_title_ocr_tail_noise",
                 "detail": "long_title correctly starts 'A STATUTE TO PROVIDE FOR THE IMPOSITION AND COLLECTION OF TAXES AND FEES FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO' but runs on into an OCR-interleaved marginal note about this Statute's relationship to other tax Acts before the real stop point (the enacting formula) is reached. The genuine title is the first sentence; everything after 'INCIDENTAL THERETO' is the same column-interleaving artifact as the ocr_word_order_scramble note above.",
                 "status": "known_ocr_limitation"
+            },
+            {
+                "code": "second_43_is_43a",
+                "issue": "scan p.33 prints '43.(a)' with a closing quotation mark and no marginal note; renumbered 43(a); the OCR heading 'e' is a stray mark",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "43"
+                ]
+            },
+            {
+                "code": "no_marginal_note_in_print",
+                "issue": "confirmed on rendered pages; Table of Sections prints '- do -'",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "9",
+                    "15",
+                    "49",
+                    "63",
+                    "66",
+                    "69",
+                    "83",
+                    "86",
+                    "87",
+                    "88",
+                    "90",
+                    "105"
+                ]
+            },
+            {
+                "code": "printed_statement_below_long_title",
+                "issue": "'This Statute is Inconsistant with certain Provision...' is a separate printed statement, not the long title",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "single_ocr_reading_partially_proofread",
+                "issue": "16 of 84 scan pages read against the image (pp. 1-3, 9, 13, 18, 33, 36, 43, 45, 47, 57, 62, 63, 67, 77); 12 corrections in the tree",
+                "status": "partial_review",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "held_amendments_not_applied",
+                "issue": "Statutes 4 of 2014 and 1 of 2016 held; both depend on unheld intervening instruments",
+                "status": "held_but_not_applied",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
-        "verification_status": "unverified",
+        "verification_status": "needs_structural_review",
         "fixed_after_first_review": [
             "Section 5(2) and 85(4) were fused into the subsection before them where a literal '===== PAGE N =====' marker (inserted by ocr_scanned_act.py at every page break) broke provision continuity the same way a bare page number does elsewhere in the corpus; now filtered before block accumulation.",
             "Section 88(4)'s 'sections 226 to 297 ofthe Civil Procedure Code' was recorded as internal because the OCR merged 'of' and 'the' together with no space; EXTERNAL_REF now tolerates that gap being absent."
-        ]
+        ],
+        "long_title": "A STATUTE TO PROVIDE FOR THE IMPOSITION AND COLLECTION OF TAXES AND FEES FOR MATTERS CONNECTED THEREWITH OR INCIDENTAL THERETO",
+        "section_headings": {
+            "1": {
+                "heading": "Short title and date of.",
+                "status": "verified_against_scan_page",
+                "reason": "scan p.9",
+                "heading_raw": "of"
+            },
+            "2": {
+                "heading": "Appointment of officers.",
+                "status": "verified_against_scan_page",
+                "reason": "scan p.9",
+                "heading_raw": "Appointment officers"
+            },
+            "43": {
+                "heading": "How instruments effecting exchange are to be stamped.",
+                "status": "verified_against_scan_page",
+                "reason": "scan p.33",
+                "heading_raw": "How instruments effecting exchange to be stamped. are"
+            }
+        },
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC064": {
         "checked_against": "data/legal-sources/library/statutes/6-1949-mortgage-act.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
@@ -753,6 +1288,12 @@
                 "code": "edition_switch_recovers_section_89",
                 "issue": "This statute's canonical tree moved from the two-column PDF parser to the HTML edition (data/legal-sources/library/statutes/HTML/6-1949-mortgage-act.html), which does not have the section_88_89_heading_bleed defect noted above -- section 89 ('Meaning of \"book debt\".') is a proper node in the HTML parse. Verified: the HTML-derived tree's only content difference from the prior PDF-derived tree is gaining section 89 (previously swallowed into section 88's heading) and losing section 68A, which the HTML edition's underlying consolidation predates -- restored below via inserted_sections. Every other section number is identical between the two editions.",
                 "status": "resolved_by_edition_switch"
+            },
+            {
+                "code": "commencement",
+                "issue": "Both editions: appointed date 16 January 1950; statute_commencement.csv says 1949-01-16",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
         "text_corrections": [
@@ -803,7 +1344,27 @@
                 "reason": "Section 68A is absent from the HTML edition entirely (that consolidation predates the amendment that inserted it) but is present, with this exact text and its own inline amendment marker '[2, 20 of 2024]', in the registry's own consolidated PDF for this statute (data/legal-sources/library/statutes/6-1949-mortgage-act.pdf). The amending instrument itself (Act No. 20 of 2024) is not present anywhere in this corpus, so this section could not be produced via parse_amendment_pdf.py and an --amendment flag the normal way; it is inserted directly from the PDF's own text instead. amendment_history_status for this instrument stays unverified against the amending Act's own document."
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "section_headings": {
+            "29": {
+                "heading": "Estate to be bound if notices issued as provided in section 28.",
+                "status": "corrected_by_hand",
+                "reason": "PDF p.14",
+                "heading_raw": "Estate to be bound if notices issued as provided in section"
+            },
+            "88": {
+                "heading": "Damages for wrongful sale of mortgaged property.",
+                "status": "corrected_by_hand",
+                "reason": "PDF p.52",
+                "heading_raw": "Damages for wrongful sale of mortgaged property. Meaning of \"book 89. debt\""
+            },
+            "89": {
+                "heading": "Meaning of \"book debt\".",
+                "status": "corrected_by_hand",
+                "reason": "PDF p.52"
+            }
+        },
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC050": {
         "checked_against": "data/legal-sources/library/statutes/19-1935-land-development-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
@@ -820,24 +1381,67 @@
                     "159B",
                     "possibly_others"
                 ],
-                "issue": "parse_consolidated_pdf.py's block-opening detection (blocks_from) only starts a new block at an enumerator when the accumulated text so far already ends in ';:.-\u2013\u2014' or 'or'/'and' -- the signal it uses to tell a genuine new list item from a cross-reference that happens to land beside a bracketed letter mid-sentence. The FIRST item after an intro clause that ends in ordinary words ('...the Government Agent shall cause to be prepared (a) a scheme...') doesn't satisfy that, so it stays fused into the section/subsection's own text; whichever item comes next (here, (b)) DOES split correctly, because by then the accumulated text ends in a semicolon from the fused-in first item. The same shape recurs with the SECOND item missing in section 2's 'land' definition (paragraph (a)'s raw_text swallows (b)'s content instead of the reverse) -- it is not specific to which letter, only to whichever item follows non-punctuated lead-in text. This is the same general class of gap already documented as 'inline_enumerator_not_split' for the Stamp Duty Act's section 14, here recurring at scale across a whole statute. A general fix (giving parse_consolidated_pdf.py an equivalent of build_canonical_statutes.py's split_enumerated, which scans a whole accumulated text for enumerator tokens rather than relying on line-by-line continuity signals) is real future work, not attempted here given two other general fixes in this same area regressed already-finalized statutes earlier in this session.",
+                "issue": "parse_consolidated_pdf.py's block-opening detection (blocks_from) only starts a new block at an enumerator when the accumulated text so far already ends in ';:.-–—' or 'or'/'and' -- the signal it uses to tell a genuine new list item from a cross-reference that happens to land beside a bracketed letter mid-sentence. The FIRST item after an intro clause that ends in ordinary words ('...the Government Agent shall cause to be prepared (a) a scheme...') doesn't satisfy that, so it stays fused into the section/subsection's own text; whichever item comes next (here, (b)) DOES split correctly, because by then the accumulated text ends in a semicolon from the fused-in first item. The same shape recurs with the SECOND item missing in section 2's 'land' definition (paragraph (a)'s raw_text swallows (b)'s content instead of the reverse) -- it is not specific to which letter, only to whichever item follows non-punctuated lead-in text. This is the same general class of gap already documented as 'inline_enumerator_not_split' for the Stamp Duty Act's section 14, here recurring at scale across a whole statute. A general fix (giving parse_consolidated_pdf.py an equivalent of build_canonical_statutes.py's split_enumerated, which scans a whole accumulated text for enumerator tokens rather than relying on line-by-line continuity signals) is real future work, not attempted here given two other general fixes in this same area regressed already-finalized statutes earlier in this session.",
                 "status": "known_parser_limitation"
+            },
+            {
+                "code": "repeal_note_parsed_as_section_38",
+                "issue": "'Section 38 is repealed by Act No. 4, 27 of 1981' became a section node; removed in finalized/ (tree 144 -> 143)",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "38"
+                ]
+            },
+            {
+                "code": "gap_88_103_absent_without_note",
+                "issue": "PDF prints no marker; HTML marker and Act 16/1969 s.52 confirm repeal",
+                "status": "documented",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "repeal_footnotes_in_body_text",
+                "issue": "bracketed footnotes swept into text by the two-column parse; lifted out in finalized/",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "2",
+                    "25",
+                    "27",
+                    "35",
+                    "37",
+                    "41",
+                    "46",
+                    "48A",
+                    "49",
+                    "51",
+                    "68",
+                    "72",
+                    "84",
+                    "105",
+                    "118A",
+                    "125",
+                    "152",
+                    "172"
+                ]
+            },
+            {
+                "code": "marker_13_of_1975_unresolved",
+                "issue": "'[89, 13 of 1975]' on s.2; not in chain; held SMIB Law HTML has no s.89",
+                "status": "unresolved",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "2"
+                ]
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "needs_structural_review",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC061": {
-        "checked_against": "data/legal-sources/library/statutes/HTML/29-1947-municipal-councils-ordinance.html, cross-read against the registry's own preferred_source_url PDF",
-        "note": "349 sections (39-Act amendment chain), coverage 0.02% unmatched against the rendered HTML. Sections 6, 12, 15, 285 confirmed genuinely absent from this consolidated numbering, consistent with the registry's existing note.",
+        "checked_against": "HTML edition (baseline, chain to 35 of 1987); LankaLaw consolidated-2024 PDF (chain to 20 of 2017) via pdftotext -layout and parse_consolidated_pdf.py; GP PDFs of Acts 21/2012, 34/2014, 20/2017",
+        "note": "349 sections (39-Act amendment chain), coverage 0.02% unmatched against the rendered HTML. Sections 6, 12, 15, 285 confirmed genuinely absent from this consolidated numbering, consistent with the registry's existing note. | 2026-09-05 finalization pass: Accepted tree is hand-finished: baseline HTML tree + Acts 21/2012 (Part I), 34/2014, 20/2017 applied from GP text; see finalized tree provenance.what_changed (36 entries).",
         "quality_notes": [
-            {
-                "code": "source_duplicate_section_136B",
-                "sections_affected": [
-                    "136B"
-                ],
-                "issue": "Section 136B is printed twice in the source HTML, verbatim (same heading, same two-subsection body, checked byte-for-byte against the raw markup at both locations) -- a LankaLaw transcription duplicate, not a parser artifact. Recorded as two separate but identical section nodes rather than merged or dropped.",
-                "status": "source_as_printed"
-            },
             {
                 "code": "long_title_reads_as_amending_act",
                 "detail": "The source's own <meta name=\"description\"> states the long title as 'AN ACT TO AMEND THE MUNICIPAL COUNCILS ORDINANCE.' -- phrasing that reads like an amending Act's title rather than the principal 1947 Ordinance's own long title, but there is no other long-title text anywhere else on the page to prefer over it. Recorded as printed.",
@@ -850,12 +1454,107 @@
                 ],
                 "issue": "Section 183(2)'s footnote reads '[*Repealed by Act No. 18 of 1969, itself repealed by Law No. 16 of 1974]' -- both instruments confirmed present verbatim in the source. Neither Act 18 of 1969 nor Law 16 of 1974 appears in the amendments list (which has 39 entries, including the similarly-numbered Act 18 of 1979 and Law 8 of 1974, both different instruments). This is expected, not a transcription error: the amendments list is the chain of instruments whose provisions are currently incorporated in this consolidated text, while the footnote is historical color describing an earlier repeal-of-a-repeal for a provision now itself struck from the numbering -- there is nothing left of either 1969 or 1974 instrument's own text for the chain to incorporate.",
                 "status": "source_as_printed"
+            },
+            {
+                "code": "source_duplicate_section_136B",
+                "issue": "HTML prints 136B twice; copies are NOT identical (first, before 136A: no marker, stray closing quote in (2); second, after 136A: [39, 39 of 1986]). PDF prints it once after 136A. First copy removed; kept in provenance.removed_nodes.",
+                "status": "corrected_by_hand",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "136B"
+                ]
+            },
+            {
+                "code": "long_title_reads_as_amending_act",
+                "issue": "Both editions print 'AN ACT TO AMEND THE MUNICIPAL COUNCILS ORDINANCE.'; no held source prints the Ordinance's own long title.",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "displaced_marginal_note",
+                "issue": "s.19 heading 'Notice of meetings.' run into s.18's text in both editions; restored",
+                "status": "corrected_by_hand",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "18",
+                    "19"
+                ]
+            },
+            {
+                "code": "roman_I_for_1_in_subsection_labels",
+                "issue": "(IA)/(IAA)/(IAB)/(IB)/(IC) retyped as subsections 1A..1C; print kept in number_as_printed",
+                "status": "corrected_by_hand",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "184",
+                    "230",
+                    "277"
+                ]
+            },
+            {
+                "code": "html_transcription_slips_corrected_against_pdf",
+                "issue": "13 slips (lime/time, tease/lease, alt/all, suck/such, he/be ...) corrected to the PDF reading",
+                "status": "corrected_by_hand",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "16",
+                    "22",
+                    "40A",
+                    "98",
+                    "125",
+                    "157",
+                    "190",
+                    "263",
+                    "286",
+                    "321",
+                    "325"
+                ]
+            },
+            {
+                "code": "amendments_applied_by_hand",
+                "issue": "Acts 21/2012, 34/2014, 20/2017 applied from GP text; 215B inserted",
+                "status": "applied_from_held_source",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "5",
+                    "13",
+                    "14",
+                    "26",
+                    "189",
+                    "215A",
+                    "215B"
+                ]
+            },
+            {
+                "code": "footnote_cites_superseded_amendments_not_in_chain",
+                "issue": "s.183 footnote",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "183"
+                ]
+            },
+            {
+                "code": "schedules_not_published",
+                "issue": "12 Schedules referenced, none printed in any held edition",
+                "status": "source_limitation",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "pdf_parse_rejected",
+                "issue": "parse_consolidated_pdf.py on the 2024 PDF: 0.06% unmatched but 348 sections (323A lost), no Part nodes, 22 truncated notes; discarded",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC042": {
-        "checked_against": "data/legal-sources/library/statutes/61-1939-urban-councils-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
+        "checked_against": [
+            "data/legal-sources/library/statutes/61-1939-urban-councils-ordinance.pdf (LankaLaw consolidated-2024 edition, per the registry's preferred_source_url)",
+            "2026-09-05: HTML edition (chain to 18 of 1987) for verification; GP PDFs of Acts 21/2012, 35/2014, 21/2017; reviewer subagent against the poppler rendering"
+        ],
         "note": "Re-parsed from the 2024 consolidated PDF, replacing an earlier tree built from a stale pre-2012 LankaLaw HTML edition (that tree's own quality_notes recorded section 5 showing 1939-era wording superseded by amendments through Act 21 of 2017; this PDF-sourced tree shows the current text). 264 sections, coverage 0.79% unmatched (Part headings and front matter). Sections 6, 15, 17, 18, 20, 21, 22, 246 confirmed genuinely absent from this consolidated numbering, consistent with the registry's existing note. Amendment chain corrected from 26 to the full 48 instruments: extract_amendment_chains.py only read PDF page 1, but this statute's own chain header wraps onto page 2; see the script fix and the amendment-chains.csv correction committed alongside this tree.",
         "publisher": "LankaLaw (private republisher, consolidated to 2024)",
         "quality_notes": [
@@ -866,7 +1565,7 @@
                     "78",
                     "possibly_65_others"
                 ],
-                "issue": "The same class of gap already documented for the Land Development Ordinance and Stamp Duty Act, at unusually large scale in this statute: parse_consolidated_pdf.py's block-opening detection only starts a new list item when the accumulated text so far already ends in ';:.-\u2013\u2014' or 'or'/'and'. The FIRST item after an intro clause ending in ordinary words fuses into the parent's own text; whichever item follows DOES split correctly, since the fused-in first item usually ends the text in a semicolon. A programmatic scan for section/subsection text containing a mid-string ' (x) ' pattern flags roughly 65 locations across this statute -- not all necessarily genuine instances (some may be legitimate cross-references landing beside a bracketed letter), but the true count is large. Section 74's paragraph (a) and section 78's paragraph (a) were spot-checked and confirmed as genuine instances of the pattern. Not fixed here: three separate attempts at a general fix for this exact defect class, made earlier in this session while working the Land Development Ordinance and Mortgage Act, each regressed content in other already-finalized statutes and were reverted. A proper fix needs parse_consolidated_pdf.py to gain something like build_canonical_statutes.py's split_enumerated -- a full-text scan for enumerator tokens rather than a line-by-line continuity heuristic -- which is real, non-trivial future work, not attempted under this session's time constraints.",
+                "issue": "The same class of gap already documented for the Land Development Ordinance and Stamp Duty Act, at unusually large scale in this statute: parse_consolidated_pdf.py's block-opening detection only starts a new list item when the accumulated text so far already ends in ';:.-–—' or 'or'/'and'. The FIRST item after an intro clause ending in ordinary words fuses into the parent's own text; whichever item follows DOES split correctly, since the fused-in first item usually ends the text in a semicolon. A programmatic scan for section/subsection text containing a mid-string ' (x) ' pattern flags roughly 65 locations across this statute -- not all necessarily genuine instances (some may be legitimate cross-references landing beside a bracketed letter), but the true count is large. Section 74's paragraph (a) and section 78's paragraph (a) were spot-checked and confirmed as genuine instances of the pattern. Not fixed here: three separate attempts at a general fix for this exact defect class, made earlier in this session while working the Land Development Ordinance and Mortgage Act, each regressed content in other already-finalized statutes and were reverted. A proper fix needs parse_consolidated_pdf.py to gain something like build_canonical_statutes.py's split_enumerated -- a full-text scan for enumerator tokens rather than a line-by-line continuity heuristic -- which is real, non-trivial future work, not attempted under this session's time constraints.",
                 "status": "known_parser_limitation"
             },
             {
@@ -912,14 +1611,65 @@
                 ],
                 "issue": "Section 5(1)(c) reads \"...determined by the Commissioner under paragraph (a) of subsection (4) of section 65B of the Local Authorities Elections Ordinance\" -- BARE_SUBSECTION/SUBSECTION_REF read \"subsection (4) of section 65B\" as an internal self-reference (this Ordinance has no section 65B of its own) even though the same clause also correctly produces a second, external cross-reference for the fuller phrase \"section 65B of the Local Authorities Elections Ordinance\". Both entries are recorded on the same node; the internal one is spurious.",
                 "status": "known_parser_limitation"
+            },
+            {
+                "code": "section_174_merged_into_173",
+                "issue": "split 2026-09-05 from the PDF (marginal note and '174.' share a line with (1))",
+                "status": "corrected_by_hand",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "173",
+                    "174"
+                ]
+            },
+            {
+                "code": "phantom_section_13",
+                "issue": "PDF prints a bare '13.'; HTML prints no s.13 and marker [§ 121, Law 24 of 1977]. Crossheading wrongly parsed as its text; node removed.",
+                "status": "corrected_by_hand",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "13"
+                ]
+            },
+            {
+                "code": "no_marginal_note_in_source",
+                "issue": "s.94 has no marginal note in either edition",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "94"
+                ]
+            },
+            {
+                "code": "text_lost_at_body_column_shifts",
+                "issue": "parse_consolidated_pdf.py drops the opening words of lines where the body column shifts to the left margin; nine passages restored from the print (36, 78, 90, 157, 165B, 183, 184, 249), extent elsewhere unmeasured. Parser fix needed.",
+                "status": "partially_corrected",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "36",
+                    "78",
+                    "90",
+                    "157",
+                    "165B",
+                    "183",
+                    "184",
+                    "249"
+                ]
+            },
+            {
+                "code": "crossheadings_appended_to_text",
+                "issue": "15 Part/crossheadings removed from preceding provisions' text; listed in the tree's crossheadings_not_modelled",
+                "status": "corrected_by_hand",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "needs_structural_review",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC075": {
         "checked_against": "data/legal-sources/library/statutes/HTML/17-1979-national-housing-development-authority-act.html",
         "note": "92 sections, coverage 0.40% unmatched. The registry has no PDF for this source at all (status 'indexed-html', local_pdf_path blank, sha256 blank) -- the earlier finalized National Housing Act's LankaLaw fetch pass also happened to pull this statute's page, since both are hosted by the same republisher. This is the only text of the Act held in the corpus beyond a 133-word indexed markdown snippet from the registry's own preferred_source_url.",
-        "verification_status": "unverified",
+        "verification_status": "needs_structural_review",
         "quality_notes": [
             {
                 "code": "source_lowercase_letter_suffix",
@@ -937,8 +1687,39 @@
                 ],
                 "issue": "The source HTML itself carries pre-existing OCR/transcription damage in a small number of places (section 4: \"shall Up-\" mid-sentence; section 7 similarly garbled), confirmed identical in both the rendered source and the parsed tree -- not introduced by anything in this repository's own code. Kept as printed.",
                 "status": "source_as_printed"
+            },
+            {
+                "code": "section_without_heading_as_printed",
+                "issue": "10 (repealed) and 69G",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "10",
+                    "69G"
+                ]
+            },
+            {
+                "code": "section_text_repeats_first_child",
+                "issue": "parser convention",
+                "status": "known_parser_limitation",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "5",
+                    "36",
+                    "37",
+                    "49",
+                    "57",
+                    "73A"
+                ]
+            },
+            {
+                "code": "schedule_bodies_not_in_source",
+                "issue": "First Schedule held nowhere; Second Schedule only in GP PDF of Act 30/1999 pp.11-12, untranscribed",
+                "status": "known_gap",
+                "pass": "2026-09-05 finalization pass"
             }
-        ]
+        ],
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC059": {
         "checked_against": "data/legal-sources/library/statutes/HTML/9-1917-trusts-ordinance.html",
@@ -957,9 +1738,25 @@
                 ],
                 "issue": "Section 3(b) reads \"...a trust does not include a fideicommissum;(* Abolished by Act No. 20 of 1972.)\" -- a footnote-style citation, not the bracketed \"[N, Act of Year]\" inline marker format the parser recognises, and Act 20 of 1972 does not appear anywhere in the amendment chain header. Present verbatim in raw_text/text; not extracted into amendment_events.",
                 "status": "source_as_printed"
+            },
+            {
+                "code": "s21_wording_corrected_from_amending_act",
+                "issue": "HTML 'a deposit of that money' corrected to 'trust money' per Act 30 of 1971 s.89(1) (GP scan p.48) and Act 7 of 1968 s.2; HTML reading kept in text_raw_html",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "21"
+                ]
+            },
+            {
+                "code": "post_baseline_act_applied",
+                "issue": "Act 6 of 2018 applied in finalized/ (3(e), 3(p)-(q), 6A, 6B, 19A-19C, 72, 75(1), 115A); canonical HTML parse remains at 1971",
+                "status": "pipeline_consolidation",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC079": {
         "checked_against": "data/legal-sources/library/statutes/HTML/4-1887-lands-resumption-ordinance.html",
@@ -969,9 +1766,33 @@
                 "code": "source_date_typo",
                 "detail": "date_stated_in_source reads \"24th January, 1987\" -- the source HTML itself prints \"1987\", a hundred-year typo (the Ordinance is No. 4 of 1887, confirmed correctly elsewhere on the same page and in the citation/amendment-chain header). The separately-sourced commencement field (1887-01-24, from statute_commencement.csv) is correct and unaffected. Kept as printed rather than silently corrected.",
                 "status": "source_as_printed"
+            },
+            {
+                "code": "date_stated_in_source",
+                "issue": "'24th January, 1987' corrected to 1887 from Cap. 290 print p. 398",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "wilfully",
+                "issue": "ss. 11, 12, 14: 'willfully' -> 'wilfully' as Cap. 290 prints",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "11",
+                    "12",
+                    "14"
+                ]
+            },
+            {
+                "code": "administrative_districts_act",
+                "issue": "22 of 1955 title page confirmed; Second Schedule does not name this Ordinance (effect via s.7)",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC073": {
         "checked_against": "data/legal-sources/library/statutes/HTML/14-1964-local-authorities-housing-act.html",
@@ -999,13 +1820,61 @@
                 ],
                 "issue": "Section 3(3)(b)'s amendment marker is corrupted in the source itself -- body text is interleaved word-for-word inside the bracket: \"[section 2, 63 of is given by that local authority to 1979]\" instead of the normal \"[2, 63 of 1979]\". Confirmed against the raw HTML; not something any reasonable marker regex could parse. Left unextracted rather than guessed at.",
                 "status": "source_as_printed"
+            },
+            {
+                "code": "commencement_corrected_from_held_prints",
+                "issue": "s.1 as enacted: operation from the appointed date; s.12 and both head dates: 1st April 1975 (was 1964-04-01; the earlier 'appointed_date_distinct_from_commencement' note was wrong)",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "marker_3_3_b",
+                "issue": "3(3)(b) corrupted marker resolved from Act 63/1979 s.2",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "3"
+                ]
+            },
+            {
+                "code": "5A_3_hi",
+                "issue": "5A(3) '(hi)' -> '(iii)' per GP print",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "5A"
+                ]
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "unverified",
+        "section_headings": {
+            "4": {
+                "heading": "Special provisions regarding value of house for the purposes of determining rent.",
+                "status": "corrected_by_hand",
+                "reason": "marginal note",
+                "heading_raw": "Special provisions of regarding value house for the purposes of determining rent"
+            },
+            "10": {
+                "heading": "Signing of documents on behalf of local authority.",
+                "status": "corrected_by_hand",
+                "reason": "marginal note",
+                "heading_raw": "Signing of documents on behalf of"
+            },
+            "11A": {
+                "heading": "This Act not to apply to houses to which this Act applies let to officers or servants of local authorities.",
+                "status": "corrected_by_hand",
+                "reason": "marginal note",
+                "heading_raw": "This Act not to apply to houses to officers or servants of local authorities."
+            }
+        },
+        "last_pass": "2026-09-05 finalization pass"
     },
     "SRC030": {
-        "checked_against": "data/legal-sources/library/statutes/HTML/2-1889-civil-procedure-code.html (LankaLaw consolidated through Act No. 43 of 2024)",
-        "note": "831 leaf section nodes, coverage 2.41% unmatched against 102,904 words -- the largest and oldest statute finalized in this corpus (135 years of amendment history, 46-instrument chain). This document is CLAUDE.md's documented weak point for a DIFFERENT parser (src/draftly/retrieval/section_parser.py, the retrieval-engine section index, not the finalization pipeline used here); the tree here is built by build_canonical_statutes.py against LankaLaw's consolidated HTML and was checked by sampling given the statute's size, not exhaustively. 71 numeric gaps in the section-number sequence; a sample of 5 (31/32, 56-58, 74, 201, 257, 441-455) checked directly against the source and confirmed genuinely repealed by explicit bracketed markers, not a parsing miss.",
+        "checked_against": [
+            "data/legal-sources/library/statutes/HTML/2-1889-civil-procedure-code.html (LankaLaw consolidated through Act No. 43 of 2024)",
+            "statutes/HTML/2-1889-civil-procedure-code.html (LankaLaw, chain ends 4 of 2005) and statutes/2-1889-civil-procedure-code.pdf (LankaLaw, chain ends 43 of 2024); held Acts 11/2010, 8/2017, 5/2022, 17/2022, 36/2022, 20/2023, 29/2023, 43/2024"
+        ],
+        "note": "831 leaf section nodes, coverage 2.41% unmatched against 102,904 words -- the largest and oldest statute finalized in this corpus (135 years of amendment history, 46-instrument chain). This document is CLAUDE.md's documented weak point for a DIFFERENT parser (src/draftly/retrieval/section_parser.py, the retrieval-engine section index, not the finalization pipeline used here); the tree here is built by build_canonical_statutes.py against LankaLaw's consolidated HTML and was checked by sampling given the statute's size, not exhaustively. 71 numeric gaps in the section-number sequence; a sample of 5 (31/32, 56-58, 74, 201, 257, 441-455) checked directly against the source and confirmed genuinely repealed by explicit bracketed markers, not a parsing miss. | 2026-09-05 finalization pass: Baseline HTML cutoff is Act No. 4 of 2005, not 43 of 2024. Post-2005 instruments applied from the PDF, cross-checked against the held Acts; 7/2023 not held (s.431A absent). Exhaustive two-lens review over six section ranges on 2026-09-05; see finalized tree provenance.what_changed (143 entries).",
         "quality_notes": [
             {
                 "code": "source_duplicate_section_808",
@@ -1024,11 +1893,970 @@
                 "status": "source_as_printed"
             },
             {
-                "code": "sampled_review_not_exhaustive",
-                "detail": "Given the statute size (831 leaf sections), the 5-lens review was sampled rather than exhaustive: completeness checked 20 sections spread across the numeric range plus 5 of the 71 numbering gaps; text fidelity checked the 8 longest sections; structure checked all section numbers programmatically (for duplicates/ordering) plus 15 sections sampled for proviso attachment; references checked all cross_references programmatically for implausible targets plus 25 sampled for classification; metadata checked all fields plus 20 of 46 amendment-chain entries. A section not covered by this sampling could still carry an undiscovered defect of the kinds already found and fixed elsewhere in this statute (list-splitting, proviso attachment, cross-reference misclassification).",
-                "status": "known_review_scope_limitation"
+                "code": "review_scope_2026_09_05",
+                "issue": "Six read-only reviewers covered 1-150, 151-300, 301-450, 451-600, 601-750, 751-840 (full word-diff vs HTML, last provision of every section, PDF for presence/markers); supersedes the earlier sampled review",
+                "status": "reviewed",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "section_105_vs_105A",
+                "issue": "PDF prints 105A where the tree has 105",
+                "status": "unresolved",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "105"
+                ]
+            },
+            {
+                "code": "section_431A_not_held",
+                "issue": "Act 7 of 2023 inserts s.431A; the Act is not held; absent from the tree",
+                "status": "known_gap",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "431A"
+                ]
+            },
+            {
+                "code": "section_544_restored_from_pdf",
+                "issue": "s.544(1) nominee clause restored from PDF p.165 alone (Act 20/2002 is a scan)",
+                "status": "single_source",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "544"
+                ]
             }
         ],
-        "verification_status": "unverified"
+        "verification_status": "needs_structural_review",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC037": {
+        "checked_against": "Government Printer PDF statutes/5-2017-revocation-of-irrevocable-deeds-of-gift-on-the-ground-of-gross-ingratitude-act.pdf read directly (all 7 sections); paralegal.lk page text (statutes/HTML/Revocation Of ... Act.txt) as second reading",
+        "note": "Finalized tree transcribed by hand: parse_consolidated_pdf.py splits this single-column Government Printer Act at the wrong column. Package with --package-only.",
+        "publisher": "Department of Government Printing, Sri Lanka",
+        "section_headings": {
+            "1": {
+                "heading": "Short title.",
+                "status": "corrected_by_hand",
+                "reason": "GP print"
+            },
+            "2": {
+                "heading": "Revocation of an irrevocable deed of gift by a competent court.",
+                "status": "corrected_by_hand",
+                "reason": "GP print"
+            },
+            "3": {
+                "heading": "Time period within which action shall be filed.",
+                "status": "corrected_by_hand",
+                "reason": "GP print"
+            },
+            "4": {
+                "heading": "Plaintiff to apply for registration of the action as a lis pendens in courts.",
+                "status": "corrected_by_hand",
+                "reason": "GP print"
+            },
+            "5": {
+                "heading": "Application of the Civil Procedure Code.",
+                "status": "corrected_by_hand",
+                "reason": "GP print"
+            },
+            "6": {
+                "heading": "Interpretation.",
+                "status": "corrected_by_hand",
+                "reason": "GP print"
+            },
+            "7": {
+                "heading": "Sinhala text to prevail in case of inconsistency.",
+                "status": "corrected_by_hand",
+                "reason": "GP print"
+            }
+        },
+        "quality_notes": [
+            {
+                "code": "parser_column_split_single_column_act",
+                "issue": "parse_consolidated_pdf.py places marginal notes inside operative text on this single-column GP Act; accepted tree is hand-transcribed with parser_reading kept per section",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "curriculum_citation_discrepancy",
+                "issue": "Curriculum cites No. 7 of 2017; the Act and s.1 say No. 5 of 2017",
+                "status": "recorded",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "structurally_verified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC051": {
+        "checked_against": "FAOLEX Cap. 295 PDF statutes/9-1950-land-acquisition-act.pdf (chain to 8 of 1979): all 73 section numbers located; s.45 in full; headings 41, 43, 53, 54, 65",
+        "note": "Baseline LankaLaw HTML (chain to 13 of 1986). Index 68 lacks 11, 20, 41, 62, 38A, all present in HTML and print.",
+        "section_headings": {
+            "41": {
+                "heading": "Provisions for application of Act where Order under proviso to section 38 is made.",
+                "status": "corrected_by_hand",
+                "reason": "FAOLEX marginal note"
+            },
+            "43": {
+                "heading": "Access to unacquired portion of land.",
+                "status": "corrected_by_hand",
+                "reason": "FAOLEX marginal note"
+            },
+            "53": {
+                "heading": "Informality or irregularity.",
+                "status": "corrected_by_hand",
+                "reason": "FAOLEX marginal note"
+            },
+            "54": {
+                "heading": "Limitation of doctrine of res adjudicata.",
+                "status": "corrected_by_hand",
+                "reason": "FAOLEX marginal note"
+            },
+            "65": {
+                "heading": "Interpretation.",
+                "status": "corrected_by_hand",
+                "reason": "FAOLEX marginal note"
+            }
+        },
+        "editorial_notes": [
+            "Marker '[ 7, 28 of 1961]' on section 21(3A) is a misprint for 28 of 1964 (no Act 28 of 1961 in the chain; section 7 of Act 28 of 1964 marks 21(1) and 21(3))."
+        ],
+        "quality_notes": [
+            {
+                "code": "index_missing_sections",
+                "issue": "Legacy index holds 68 sections; lacks 11, 20, 41, 62 and 38A",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "amendment_16_1986_is_another_act",
+                "issue": "amendments/html/16-1986-vidyaranya-vinayakrama-sabhawa-incorporation.html is an incorporation Act; excluded",
+                "status": "excluded",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC033": {
+        "checked_against": "legislative-enactments-1980-volume-3.pdf pp. 401-423 (Cap. 297, chain to 39 of 1975); every section number except post-1975 insertions located",
+        "note": "Baseline LankaLaw HTML (chain to 18 of 1986).",
+        "section_headings": {
+            "26": {
+                "heading": "Applications for alienation of agricultural land by the Commission.",
+                "status": "corrected_by_hand",
+                "reason": "compendium marginal note",
+                "heading_raw": "Applications for alienatid of agriculture land by the Commission."
+            },
+            "43": {
+                "heading": "Establishment of Land Reform Commission.",
+                "status": "corrected_by_hand",
+                "reason": "compendium marginal note"
+            }
+        },
+        "quality_notes": [
+            {
+                "code": "head_date_conflict",
+                "issue": "HTML and statute_commencement.csv give 22 August 1972; the 1980 revised edition (vol. 3, PDF p. 401) prints 26 August 1972. Unresolved.",
+                "status": "unresolved",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "suspected_misprint_28A",
+                "issue": "Section 28A heading 'viewer' suspected misprint for 'waiver'; no held source proves it",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "28A"
+                ]
+            }
+        ],
+        "verification_status": "needs_structural_review",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC005": {
+        "checked_against": "LankaLaw consolidated PDF statutes/23-1927-registration-of-documents-ordinance.pdf (cutoff 18 of 2024) cross-read against LankaLaw HTML (cutoff 5 of 1990); four post-1990 Acts' own texts",
+        "note": "Principal re-based on the 2024 PDF (Option A); HTML tree kept as -consolidated-1990.json. 42 sections; s.16 repeal stub; 17-24 not printed.",
+        "publisher": "LankaLaw (private republisher)",
+        "section_headings": {
+            "33": {
+                "heading": "Cancellation of priority notices, seizure notices, seizure priority notices, caveats, and lis pendens.",
+                "status": "corrected_by_hand",
+                "reason": "PDF marginal note"
+            },
+            "46": {
+                "heading": "Costs in suits against Registrar-General.",
+                "status": "corrected_by_hand",
+                "reason": "PDF marginal note"
+            }
+        },
+        "editorial_notes": [
+            "Section 12 not marked repealed despite Partition Act 16 of 1951 s.85(1) (Cap. 101 numbering); the 2024 consolidation prints it live; unresolved.",
+            "Act 18 of 2024 incorporated although its s.1(2) appointed date is unconfirmed."
+        ],
+        "quality_notes": [
+            {
+                "code": "pdf_parser_structure",
+                "issue": "parse_consolidated_pdf.py emits no chapter crossheadings and mis-nests roman lists across page breaks (s.8, s.33(1A)); paragraph (a) printed on the subsection's line is absorbed (ss.26(1), 28(2), 35(1), 32(1)(a)(i)); corrected by hand in finalized/",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC068": {
+        "checked_against": "IRD consolidated PDF pp. 4-9; GP as-enacted PDF amendments/incoming/12-2006-stamp-duty-act-amendment.pdf; LankaLaw HTML; Act 10 of 2008 GP text",
+        "note": "Accepted tree hand-built in finalized/ from the HTML skeleton reconciled against the IRD text; the parser output for SRC068 is 32 phantom sections.",
+        "publisher": "Inland Revenue Department (consolidation 'cannot be regarded as a statutory copy')",
+        "quality_notes": [
+            {
+                "code": "parser_layout_mismatch",
+                "issue": "parse_consolidated_pdf.py cannot read the IRD layout (left-gutter numbers, right-column notes, no chain header)",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "appended_gazette_material",
+                "issue": "IRD PDF pp. 10-26 are Gazette Orders, not the Act",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "index_count_not_sections",
+                "issue": "statute-section-index.json lists 37 'sections'; they are table-of-contents and Gazette schedule lines; the Act has 16",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "structurally_verified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC014": {
+        "checked_against": "statutes/1-1907-notaries-ordinance.pdf (RGD, chain to Law 20 of 1976; pdftotext -layout, poppler); amending Acts 47/2011, 13/2013, 6/2024 text layers; 31/2022 scan rendered and read",
+        "note": "Baseline LankaLaw HTML (cutoff 12 of 2005). Acts 47/2011, 13/2013, 31/2022, 6/2024 applied in finalized/ (63 operations, 7 not applied, 2 no-ops; see applied_amendments_log). Schedules not transcribed.",
+        "publisher": "LankaLaw (private republisher); RGD PDF used for verification",
+        "section_headings": {
+            "3": {
+                "heading": "Attorneys-at-law, qualified for admission as notaries.",
+                "status": "corrected_by_hand",
+                "reason": "RGD print",
+                "heading_raw": "Attorneys-at-law, qualified for admission as notaries-"
+            },
+            "13": {
+                "heading": "Penalty for practicing as notary without warrant, &c.",
+                "status": "corrected_by_hand",
+                "reason": "RGD print",
+                "heading_raw": "Penalty for practicing as notary with out warrant, &c."
+            },
+            "14": {
+                "heading": "Discharge of Insurance Corporation.",
+                "status": "corrected_by_hand",
+                "reason": "RGD print",
+                "heading_raw": "Discharge of Insurance corporation."
+            },
+            "18": {
+                "heading": "List of notaries to be posted in the courts.",
+                "status": "corrected_by_hand",
+                "reason": "RGD print",
+                "heading_raw": "List of notaries lo be posted in the courts."
+            },
+            "20": {
+                "heading": "Cancellation of notary's warrant.",
+                "status": "corrected_by_hand",
+                "reason": "RGD print",
+                "heading_raw": "Cancellation of notary s warrant."
+            },
+            "21": {
+                "heading": "Inquiry into notary's misconduct or incapacity.",
+                "status": "corrected_by_hand",
+                "reason": "RGD print",
+                "heading_raw": "Inquiry into notary & &c misconduct or incapacity."
+            },
+            "23": {
+                "heading": "Certificate of cancellation or suspension of warrant to be transmitted to and posted in the local courts.",
+                "status": "corrected_by_hand",
+                "reason": "marker removed from heading"
+            },
+            "29": {
+                "heading": "On refusal by Registrar to grant any certificate, application to be made to the High Court.",
+                "status": "corrected_by_hand",
+                "reason": "RGD print",
+                "heading_raw": "On refusal by Registrar to grant any certificate, application lo be made to the High Court."
+            },
+            "36": {
+                "heading": "Power to make rules.",
+                "status": "corrected_by_hand",
+                "reason": "RGD print",
+                "heading_raw": "Powers to make rules."
+            },
+            "38": {
+                "heading": "Notary to try to ascertain true consideration.",
+                "status": "corrected_by_hand",
+                "reason": "RGD print",
+                "heading_raw": "Notary to try ascertain true consideration."
+            },
+            "43": {
+                "heading": "Interpretation.",
+                "status": "corrected_by_hand",
+                "reason": "marker removed from heading",
+                "heading_raw": "Interpretation. [ 2 3, Law 23 of 1978]"
+            }
+        },
+        "editorial_notes": [
+            "Marginal notes glued into body text in ss.22(1), 29(1), 31 opening, rules (2), (16)(b), (36), (36)(a) and 40(3); removed against the RGD PDF.",
+            "s.28(1)(b) printed as '(b3)'.",
+            "s.43 marker '[2 3, Law 23 of 1978]' corroborated by the RGD PDF; Law 23 of 1978 is in neither chain header and is not held.",
+            "Schedules referenced but not published in the HTML; RGD PDF pp. VI/19-VI/26 hold them at the Law 20 of 1976 cutoff."
+        ],
+        "quality_notes": [
+            {
+                "code": "html_spelling_modernised",
+                "issue": "HTML spelling modernised relative to the RGD PDF (practice/practise, willfully/wilfully, enroll/enrol)",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "post_baseline_acts_applied",
+                "issue": "Acts 47/2011, 13/2013, 31/2022, 6/2024 applied in finalized/ with text_before_amendment; 31/2022 rests on one OCR reading",
+                "status": "pipeline_consolidation",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "needs_structural_review",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC055": {
+        "checked_against": "legislative-enactments-1980-volume-3.pdf pp. 427-428 (Cap. 293), text layer and rendered pages",
+        "note": "Repealed by the Survey Act, No. 17 of 2002 (HTML banner; Survey Act long title). HTML chain lists the repealing Act and omits Ordinance 2 of 1917, which the compendium names. Text identical word for word.",
+        "section_headings": {
+            "2": {
+                "heading": "Surveyor-General, &c., may demand production of deeds.",
+                "status": "verified_against_alternate_edition",
+                "reason": "compendium marginal note prints '&c.,'; HTML '& c,'"
+            }
+        },
+        "quality_notes": [
+            {
+                "code": "marginal_note_ac",
+                "issue": "s.5 marginal note ends 'Ac.' in both held copies; '&c.' suspected, unprovable",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "5"
+                ]
+            },
+            {
+                "code": "repealed_statute",
+                "issue": "Repeal recorded under repeal_status in the finalized tree",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "structurally_verified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC078": {
+        "checked_against": "legislative-enactments-1980-volume-5.pdf pp. 110-111 (Cap. 136), text layer and rendered pages",
+        "note": "HTML and compendium share chain and head date. Compendium settled a dropped word in s.3, four 'saunas'/'sannas' readings in s.7 and the marginal note on the s.2 proviso.",
+        "section_headings": {
+            "2": {
+                "heading": "Deeds, &c., bearing date on or before 1st February, 1840,to be registered within a certain time.",
+                "status": "verified_against_alternate_edition",
+                "reason": "HTML '& c,'"
+            },
+            "4": {
+                "heading": "Monthly lists of such deeds, &c., to be made.",
+                "status": "verified_against_alternate_edition",
+                "reason": "HTML '& c.,'"
+            },
+            "6": {
+                "heading": "Process where persons claiming interest under deeds, &c., are unable to produce the same.",
+                "status": "verified_against_alternate_edition",
+                "reason": "HTML '& c,'"
+            },
+            "7": {
+                "heading": "No deed, saunas, ola, or other instrument executed before 1st February, 1840,shall be received in evidence unless registered.",
+                "status": "verified_against_alternate_edition",
+                "reason": "HTML lacks final period; 'saunas' printed in both copies"
+            },
+            "10": {
+                "heading": "Deeds, &c., annexed to others, &c., not affected.",
+                "status": "verified_against_alternate_edition",
+                "reason": "HTML 'Deeds, & c, annexed to others,; & c not affected.'"
+            }
+        },
+        "text_corrections": [
+            {
+                "section": "3",
+                "find": "received the same, the Registrar's endorsement written",
+                "replace": "received the same, with the Registrar's endorsement written",
+                "reason": "HTML drops 'with'; compendium p. 110 prints it."
+            },
+            {
+                "section": "7",
+                "find": "unless such deed, saunas, ola, or other instrument shall have been previously registered",
+                "replace": "unless such deed, sannas, ola, or other instrument shall have been previously registered",
+                "reason": "compendium p. 111 'sannas'."
+            },
+            {
+                "section": "7",
+                "find": "any such deed, saunas, ola, or other instrument is produced",
+                "replace": "any such deed, sannas, ola, or other instrument is produced",
+                "reason": "compendium p. 111 'sannas'."
+            },
+            {
+                "section": "7",
+                "find": "production of such deed, saunas, ola, or instrument",
+                "replace": "production of such deed, sannas, ola, or instrument",
+                "reason": "compendium p. 111 'sannas'."
+            },
+            {
+                "section": "7",
+                "find": "questioning any deed, saunas, ola, or other instrument",
+                "replace": "questioning any deed, sannas, ola, or other instrument",
+                "reason": "compendium p. 111 'sannas'."
+            }
+        ],
+        "quality_notes": [
+            {
+                "code": "shared_source_errors",
+                "issue": "s.4 'alt' (for 'all'), s.7 note 'saunas', s.10 'saunas': printed in both held copies; kept and flagged",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "proviso_marginal_note_and_footnote",
+                "issue": "s.2 proviso marginal note dropped by the parser; footnote '* Extended to 1st February, 1875.' belongs in footnotes, not text",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "structurally_verified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC058": {
+        "checked_against": "legislative-enactments-1980-volume-5.pdf pp. 170-171 (Cap. 288), text layer and rendered pages",
+        "note": "Amendment chain conflict: HTML '22 of 1931, 8 of 1847, Act Nos 8 of 1854' against compendium '22 of 1931, 8 of 1947, Act No. 8 of 1954'. No inline markers in either copy; unresolved. Section text identical apart from wilful/willful.",
+        "section_headings": {
+            "3": {
+                "heading": "Subsequent proceeding by ordinary course of law.",
+                "status": "verified_against_alternate_edition",
+                "reason": "HTML lacks the final period"
+            }
+        },
+        "text_corrections": [
+            {
+                "section": "2",
+                "find": "in case of willful absence",
+                "replace": "in case of wilful absence",
+                "reason": "compendium p. 170 'wilful'."
+            },
+            {
+                "section": "9",
+                "find": "who shall willfully or knowingly refuse",
+                "replace": "who shall wilfully or knowingly refuse",
+                "reason": "compendium p. 171 'wilfully'."
+            }
+        ],
+        "quality_notes": [
+            {
+                "code": "damaged_chain_header",
+                "issue": "HTML chain block duplicates '12 of 1840'",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "chain_year_conflict",
+                "issue": "Compendium reading (1947/1954) is to prefer if a third source agrees; an 'Act' of 1854 is anachronistic, but that is inference",
+                "status": "unresolved",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "needs_structural_review",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC070": {
+        "checked_against": "legislative-enactments-1980-volume-2.pdf pp. 215-216 (Cap. 85) read in full against the HTML tree",
+        "note": "Two held editions disagree on wording in ss.2, 4, 5.",
+        "quality_notes": [
+            {
+                "code": "edition_wording_conflict_ss2_4_5",
+                "issue": "HTML: 'District Judge or Commissioner of a Court of Requests' / 'Minister of Justice' / 'Judge, Commissioner, or Justice'; 1980 print: 'District Judge or Judge of a Primary Court' / 'Minister in charge of the subject of Justice' / 'Judge or Justice'",
+                "status": "unresolved",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "2",
+                    "4",
+                    "5"
+                ]
+            },
+            {
+                "code": "prescribed_form_recoverable",
+                "issue": "s.5 form of certificate printed in the 1980 edition pp. 215-216, absent from the HTML",
+                "status": "known_gap",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "5"
+                ]
+            }
+        ],
+        "verification_status": "needs_structural_review",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC046": {
+        "checked_against": "legislative-enactments-1980-volume-5.pdf (Cap. 74, Vol. IV pp. 46-48), all 14 sections read",
+        "quality_notes": [
+            {
+                "code": "corrections_now_second_sourced",
+                "issue": "1980 print confirms 'Thesawalamai', the s.13 'section 3' source error, and that four normalisations are HTML artefacts",
+                "status": "verified_against_alternate_edition",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "curriculum_citation_discrepancy",
+                "issue": "Curriculum '1 of 1911' is the Jaffna Matrimonial Rights and Inheritance Ordinance",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "note": "2026-09-05 finalization pass",
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC057": {
+        "checked_against": "legislative-enactments-1980-volume-5.pdf (Cap. 294, Vol. XI pp. 341-342) incl. Schedule",
+        "quality_notes": [
+            {
+                "code": "schedule_corroborated",
+                "issue": "20-40 acre row reads '12 00' in the held compendium, corroborating the Rs. 12.00 reading; still OCR-based",
+                "status": "verified_against_alternate_edition",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "registry_title",
+                "issue": "Registry 'State Lands (Claims)'; sources 'State Land (Claims)'",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "note": "2026-09-05 finalization pass",
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC038": {
+        "checked_against": "statutes/18-1945-land-registers-reconstructed-folios-act.pdf (Cap. 138) read in full",
+        "quality_notes": [
+            {
+                "code": "source_error_confirmed_s7_1",
+                "issue": "'renders of necessary' in both editions",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "7"
+                ]
+            },
+            {
+                "code": "registry_type",
+                "issue": "Registry says Act; both sources and s.1 say Ordinance",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "marker_law_23_1978",
+                "issue": "s.9(3) marker for Law 23 of 1978 in both copies, in neither chain; not held",
+                "status": "ambiguous",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "note": "2026-09-05 finalization pass",
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC052": {
+        "checked_against": "statutes/43-1979-land-grants-special-provisions-act.pdf (Cap. 287): header, ss.1-3, 9-20, Schedule",
+        "quality_notes": [
+            {
+                "code": "schedule_recoverable",
+                "issue": "Form printed at Cap. 287 p. XI/320; tree records it as referenced_not_held",
+                "status": "known_gap",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "s9_4_reading",
+                "issue": "both held consolidated editions read Agrarian Services Act; as-passed text only in the untranscribed parliament scan",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "9"
+                ]
+            }
+        ],
+        "note": "2026-09-05 finalization pass",
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC054": {
+        "checked_against": "statutes/20-1931-land-settlement-ordinance.pdf (Cap. 299, chain to 22 of 1955): all 32 pre-1996 numbers; every marginal note; last provision of ss.6, 4, 11, 24, 5(7)",
+        "note": "Baseline LankaLaw HTML (chain to 23 of 1996).",
+        "section_headings": {
+            "4": {
+                "heading": "Settlement Officer may by notice call for claims. Publication and form of notice.",
+                "status": "corrected_by_hand",
+                "reason": "PDF marginal notes",
+                "heading_raw": "Settlement officer may by notice call for claims Publication and form of notice."
+            },
+            "5": {
+                "heading": "Powers and duties of Settlement Officer when claim is or is not made.",
+                "status": "corrected_by_hand",
+                "reason": "PDF marginal note",
+                "heading_raw": "Powers and duties of Settlement Officer claim is or is not made."
+            },
+            "6": {
+                "heading": "Offers by way of compromise.",
+                "status": "corrected_by_hand",
+                "reason": "PDF marginal note",
+                "heading_raw": "Offers by way thereof of compromise."
+            }
+        },
+        "quality_notes": [
+            {
+                "code": "s5_7_damaged_in_both_editions",
+                "issue": "Section 5(7) damaged identically in both held editions; true wording of 'subsection', 'reading', 'lime', 'livery' unknown",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "5"
+                ]
+            },
+            {
+                "code": "proviso_nesting_changed_by_parser",
+                "issue": "Parser now emits later provisos as sibling proviso nodes",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC080": {
+        "checked_against": "statutes/29-1961-peoples-bank-act.pdf (CBSL appendix, as enacted, ss.2-48); 1986 scan pp. 3-10; 16/2019 GP text",
+        "note": "Baseline LankaLaw HTML (chain to 32 of 1986); Act 16 of 2019 applied in finalized/.",
+        "section_headings": {
+            "29A": {
+                "heading": "Action by Board where default is made.",
+                "status": "corrected_by_hand",
+                "reason": "1986 scan p.9",
+                "heading_raw": "Action by Board here default is made."
+            },
+            "41": {
+                "heading": "Exemption from income tax and stamp duty.",
+                "status": "corrected_by_hand",
+                "reason": "marker removed from heading",
+                "heading_raw": "Exemption from income tax and stamp duty. [57(1), 18 of 1965]"
+            }
+        },
+        "quality_notes": [
+            {
+                "code": "section_31_absent_from_html",
+                "issue": "Section 31 present in the 1961 print, absent from the HTML with no marker",
+                "status": "unresolved",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "31"
+                ]
+            },
+            {
+                "code": "section_34_6_differs",
+                "issue": "Section 34(6) wording differs from the 1961 print with no marker",
+                "status": "unresolved",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "34"
+                ]
+            },
+            {
+                "code": "section_29D_typo",
+                "issue": "'section 291' probably 29L",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "29D"
+                ]
+            },
+            {
+                "code": "footer_glued",
+                "issue": "HTML footer on ss.46-47 glued to the last definition of s.48 by the parser",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "curriculum_citation_discrepancy",
+                "issue": "Curriculum 'People's Bank Act No. 43 of 1973' is the Sale of State Lands (Special Provisions) Law",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "needs_structural_review",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC074": {
+        "checked_against": "CBSL 1975 appendix (as enacted) and amendments/html/13-1975-state-mortgage-and-investment-bank-law.html (as enacted, marginal notes)",
+        "note": "Baseline LankaLaw HTML (chain to 10 of 1994).",
+        "section_headings": {
+            "29": {
+                "heading": "Declaration of secrecy.",
+                "status": "corrected_by_hand",
+                "reason": "as-enacted marginal note",
+                "heading_raw": "Declaration of auditor,"
+            },
+            "31A": {
+                "heading": "Nomination by persons having term deposit.",
+                "status": "corrected_by_hand",
+                "reason": "stray apostrophe",
+                "heading_raw": "'Nomination by persons having term deposit."
+            },
+            "82": {
+                "heading": "Liability of directors and valuers for participating in the sanctioning of certain loans.",
+                "status": "corrected_by_hand",
+                "reason": "as-enacted marginal note",
+                "heading_raw": "Liability of directors and values for participating in the scanciiuning of certain loans."
+            }
+        },
+        "editorial_notes": [
+            "Section 29 opening list on the LankaLaw page reads 'Every director General Manager, secretary, adviser, employee, secrecy member of agency'; both as-enacted sources read 'Every director, General Manager, auditor, secretary, adviser, employee, member of agency'."
+        ],
+        "quality_notes": [
+            {
+                "code": "misfiled_principal_html",
+                "issue": "amendments/html/13-1975-state-mortgage-and-investment-bank-law.html is a principal text, not an amendment",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC041": {
+        "checked_against": "statutes/13-1946-town-and-country-planning-ordinance.pdf (FAOLEX Cap. 605, chain to 22 of 1955): all 87 pre-2000 numbers; every heading; last provision of ss.66, 85, 54, 81",
+        "note": "Baseline LankaLaw HTML (chain to 49 of 2000).",
+        "section_headings": {
+            "5": {
+                "heading": "Appointment of Director-General, National Physical Planning, &c.",
+                "status": "corrected_by_hand",
+                "reason": "print '&c.'",
+                "heading_raw": "Appointment of Director-General, National Physical Planning, Act."
+            },
+            "36": {
+                "heading": "Preparation of new plan to modify or revoke plan.",
+                "status": "corrected_by_hand",
+                "reason": "print",
+                "heading_raw": "Preparation of new plan 10 modify or revoke plan."
+            },
+            "39": {
+                "heading": "Plans for trunk road development areas.",
+                "status": "corrected_by_hand",
+                "reason": "pre-2000 print; moderate confidence",
+                "heading_raw": "plans for trunk road development ."
+            },
+            "40": {
+                "heading": "Provisions in outline physical plans.",
+                "status": "corrected_by_hand",
+                "reason": "glued 'Second Schedule.' removed",
+                "heading_raw": "Second Schedule. Provisions in outline physical plans."
+            },
+            "51": {
+                "heading": "Duty of executive authority to execute provisions in plans.",
+                "status": "corrected_by_hand",
+                "reason": "print",
+                "heading_raw": "Duty of executive authority to executive provisions in plans."
+            }
+        },
+        "quality_notes": [
+            {
+                "code": "marker_law_37_1973",
+                "issue": "Print marker '[§ 6, Law 37 of 1973]' beside pre-2000 s.3(1)(h); instrument in neither chain header, not held",
+                "status": "ambiguous",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "3"
+                ]
+            },
+            {
+                "code": "html_81_1",
+                "issue": "HTML prints '(I)' for 81(1)",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "81"
+                ]
+            },
+            {
+                "code": "repeal_stubs_12",
+                "issue": "Repealed 12(3)-(4) appear as 'Repealed by [ 8,49 of 2000]' plus a bare number",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "12"
+                ]
+            },
+            {
+                "code": "commencement_csv_conflict",
+                "issue": "statute_commencement.csv 1946-01-01 contradicts both editions' 1st January, 1947",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC012": {
+        "checked_against": "LankaLaw HTML (markers, headings, section list); statutes/sandbox/apartment-ownership-law-11-1973.pdf (as enacted) for the original tree; Act 23 of 2018 GP text",
+        "note": "Two principal trees: consolidated (50 s., chain to 39 of 2003) and as-enacted (26 s.).",
+        "omitted_provisions": [
+            {
+                "section": "22",
+                "status": "omitted_by_source_edition",
+                "source_note": "(*Section 22, repealing the Condominium Property Act, No. 12 of 1970, is omitted from this Edition.)"
+            }
+        ],
+        "quality_notes": [
+            {
+                "code": "20M_paragraph_run_in",
+                "issue": "20M runs paragraph (a) into section text",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "20M"
+                ]
+            },
+            {
+                "code": "schedules_not_printed",
+                "issue": "Schedules referenced, bodies not printed in the HTML edition",
+                "status": "known_gap",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "act_23_2018",
+                "issue": "Apartment Ownership (Special Provisions) Act, No. 23 of 2018 held; 0 textual operations on the Law; held_but_not_applied",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "as_enacted_tree_hand_corrected",
+                "issue": "17 truncated headings transcribed from the PDF marginal notes; marginal-note words removed from ss.3, 7, 14, 15, 16, 23; publisher not stated",
+                "status": "hand_corrected_in_finalized",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC023": {
+        "checked_against": "amendments/incoming/20-2005-tea-and-rubber-estate-control-of-fragmentation-act-amendment.pdf (GP text) for the applied operations; CommonLII HTML baseline",
+        "note": "As enacted 1958 (CommonLII); Act 20 of 2005 applied in finalized/ except its body-wide renaming (s.3) and the hectares substitution (baseline reads acres).",
+        "alternate_titles": [
+            "Tea, Rubber and Coconut Estates (Control of Fragmentation) Act"
+        ],
+        "editorial_notes": [
+            "s.21 references ss.38, 39 of the Land Acquisition Act."
+        ],
+        "quality_notes": [
+            {
+                "code": "amendment_20_2005_partially_applied",
+                "issue": "applied: long title, s.9(3), s.10, s.16, s.17, 12A, 12B, 23A, two definitions; not applied: s.3 renaming, s.10 hectares",
+                "status": "pipeline_consolidation",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "structurally_verified",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC004": {
+        "checked_against": "statutes/15-1876-matrimonial-rights-and-inheritance-ordinance.pdf (LankaLaw Cap. 69, poor OCR text layer) spot-checked against the HTML",
+        "quality_notes": [
+            {
+                "code": "chain_conflict",
+                "issue": "HTML '18 of 1923'; PDF '2 of 1889 18 ol 1922'",
+                "status": "unresolved",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "commencement",
+                "issue": "both copies print 29 June 1877; statute_commencement.csv 1876-06-29 is wrong",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "structurally_verified",
+        "note": "2026-09-05 finalization pass",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC045": {
+        "checked_against": "statutes/58-1947-matrimonial-rights-and-inheritance-jaffna-ordinance.pdf (LankaLaw Chapter 70, poor OCR text layer) spot-checked against the HTML",
+        "quality_notes": [
+            {
+                "code": "registry_discrepancy",
+                "issue": "Registry/RUBRIK/folder say No. 58 of 1947 amended by 1 of 1911; both sources say the principal is 1 of 1911 amended by 58 of 1947",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "curriculum_crossed_numbers",
+                "issue": "Curriculum attaches '1 of 1911' to the Thesawalamai Pre-emption Ordinance (59 of 1947)",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "structurally_verified",
+        "note": "2026-09-05 finalization pass",
+        "last_pass": "2026-09-05 finalization pass"
+    },
+    "SRC040": {
+        "checked_against": "statutes/15-1889-surveyors-ordinance.pdf (pdftotext -layout/-tsv, pdftoppm pages 2 and 4)",
+        "note": "Only copy held; two body columns with outer marginal-note columns; tree built from a one-column re-layout of the pdftotext -tsv word coordinates, then hand-corrected. Repealed by the Survey Act, No. 17 of 2002 (s.25); tree is pre-repeal text.",
+        "publisher": "LankaLaw (private republisher); not stated on the document",
+        "long_title": "AN ORDINANCE TO PROVIDE FOR THE LICENSING OF SURVEYORS.",
+        "section_headings": {
+            "8": {
+                "heading": "Power of Surveyor-General to cancel or refuse renewal of licence",
+                "status": "corrected_by_hand",
+                "reason": "print"
+            },
+            "12": {
+                "heading": "Surveyor-General may authorize any person to practise as a draughtsman",
+                "status": "corrected_by_hand",
+                "reason": "print"
+            },
+            "18": {
+                "heading": "Government surveyors and Surveyor-General",
+                "status": "corrected_by_hand",
+                "reason": "print"
+            }
+        },
+        "quality_notes": [
+            {
+                "code": "two_column_page_layout",
+                "issue": "parse_consolidated_pdf.py interleaves body and note columns on this document",
+                "status": "known_parser_limitation",
+                "pass": "2026-09-05 finalization pass"
+            },
+            {
+                "code": "section_17_omitted_by_republisher",
+                "issue": "Footnote: '* Section 17 is omitted, as the references therein are to lapsed or repealed enactments.'",
+                "status": "source_as_printed",
+                "pass": "2026-09-05 finalization pass",
+                "sections_affected": [
+                    "17"
+                ]
+            },
+            {
+                "code": "repealed_statute",
+                "issue": "Repealed by the Survey Act, No. 17 of 2002 (s.25)",
+                "status": "informational",
+                "pass": "2026-09-05 finalization pass"
+            }
+        ],
+        "verification_status": "unverified",
+        "last_pass": "2026-09-05 finalization pass"
     }
 }

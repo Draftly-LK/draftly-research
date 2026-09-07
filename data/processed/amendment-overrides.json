@@ -121,14 +121,18 @@
   "verification_status": "unverified"
  },
  "32-2022": {
-  "checked_against": "Government Printer PDF, Registration of Documents (Amendment) Act, No. 32 of 2022, certified 31st October 2022",
+  "checked_against": [
+   "Government Printer PDF, Registration of Documents (Amendment) Act, No. 32 of 2022, certified 31st October 2022",
+   "scan pages rendered with pdftoppm and read; 31 corrections listed in the finalized tree"
+  ],
   "long_title": "AN ACT TO AMEND THE REGISTRATION OF DOCUMENTS ORDINANCE (CHAPTER 117)",
   "quality_notes": [
    "The Government Printer PDF is an 11-page scan with no text layer, so this tree is parsed from an offline OCR reading. Wording has not been proof-read against the scan.",
    "This tree is the least reliable of the six in the package and should not be relied on before it is proof-read. The damage is structural, not just spelling: see known_ocr_defects.",
    "The body carries duplicate section numbers. Two further nodes numbered 1 and 2 appear after section 5, produced by the Form VIII / Form X specimen text of the Second Schedule being read as numbered sections. They are schedule forms, not sections of the Act.",
    "Several section headings have swallowed whole runs of body text where the marginal-note column was not separated cleanly. Section 2's heading in particular runs to roughly a page of the substituted section 32(1).",
-   "Common letter substitutions through the body: 'thc' for 'the', 'thercof' for 'thereof', 'repcal' for 'repeal', 'scction' for 'section', 'hcreinafter' for 'hereinafter', 'Attomey' for 'Attorney', 'wiuness' for 'witness', 'LO' for 'to', 'Actmayl' for 'Act may', 'isnott' for 'is not'."
+   "Common letter substitutions through the body: 'thc' for 'the', 'thercof' for 'thereof', 'repcal' for 'repeal', 'scction' for 'section', 'hcreinafter' for 'hereinafter', 'Attomey' for 'Attorney', 'wiuness' for 'witness', 'LO' for 'to', 'Actmayl' for 'Act may', 'isnott' for 'is not'.",
+   "heading/body separation fails on this scan; Forms VIII/X/XI parsed as sections 1 and 2 (rebuilt in finalized/ with form nodes)"
   ],
   "known_ocr_defects": [
    {
@@ -173,7 +177,8 @@
     "effect": "amendment_instructions[0] records its first operation with an empty target and an empty target_label. The section amends section 32 of the principal enactment, which the body text states."
    }
   ],
-  "verification_status": "unverified"
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
  },
  "21-2013": {
   "checked_against": "Government Printer PDF, Registration of Documents (Amendment) Act, No. 21 of 2013, certified 24th April 2013",
@@ -183,7 +188,8 @@
    "The body carries duplicate section numbers. Three nodes numbered 1, 2 and 3 appear after section 4; they are the numbered fee items of the Part III table that section 5 substitutes into the First Schedule, not sections of the Act.",
    "Because section 5 is not a node, no amendment instruction is recorded for the First Schedule. The Act does amend it. Read section 4's text, not the instruction list, for that change.",
    "Section 7's text runs on into the back-cover imprint of the printed pamphlet ('Payable to the SUPERINTENDENT, GOVERNMENT PUBLICATIONS BUREAU ...'). That is page furniture, not part of the provision.",
-   "This tree was first built through Git Bash, where pdftotext resolves to an Xpdf 4.00 build that ignores '-enc UTF-8'; the result lost every curly quote and em dash to U+FFFD and dropped three further sections. It was rebuilt through PowerShell, where pdftotext resolves to poppler 25.07. Rebuild this tree from PowerShell."
+   "This tree was first built through Git Bash, where pdftotext resolves to an Xpdf 4.00 build that ignores '-enc UTF-8'; the result lost every curly quote and em dash to U+FFFD and dropped three further sections. It was rebuilt through PowerShell, where pdftotext resolves to poppler 25.07. Rebuild this tree from PowerShell.",
+   "page 2 marginal note on the left column: s.5 read into s.4; Part III items read as sections 1-3 (fixed in finalized/)"
   ],
   "known_ocr_defects": [
    {
@@ -199,7 +205,8 @@
     "effect": "a fragment of the Part III fee table read as a section heading."
    }
   ],
-  "verification_status": "unverified"
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
  },
  "18-2024": {
   "checked_against": "Government Printer PDF, Registration of Documents (Amendment) Act, No. 18 of 2024, certified 1st April 2024, retrieved from https://lankalaw.net/wp-content/uploads/2025/03/18-2024_E.pdf",
@@ -207,7 +214,8 @@
    "Parsed from the Government Printer PDF's own text layer, not from OCR. Every word of the source is accounted for in the tree (0.00% unmatched by scripts/check_parse_coverage.py). All ten sections are present and correctly numbered.",
    "Two marginal notes have absorbed a tail of the provision's quoted wording where the two columns run level. See known_ocr_defects. The wording is not lost; it also appears in the section's own text.",
    "This is the newest instrument in the chain and it is not reflected in the principal statute's tree: the LankaLaw consolidated HTML that SRC005 is parsed from prints an amendment chain ending at Act No. 5 of 1990.",
-   "Build this tree from PowerShell, not Git Bash. Git Bash resolves pdftotext to an Xpdf 4.00 build that ignores '-enc UTF-8' and loses every curly quote and em dash to U+FFFD."
+   "Build this tree from PowerShell, not Git Bash. Git Bash resolves pdftotext to an Xpdf 4.00 build that ignores '-enc UTF-8' and loses every curly quote and em dash to U+FFFD.",
+   "marginal notes of ss.4,7,8,9,10 absorb body text; s.9(2)-(3) lose words at column boundaries (fixed in finalized/)"
   ],
   "known_ocr_defects": [
    {
@@ -223,6 +231,462 @@
     "effect": "the word 'hereby' from the provision and the opening of the quoted substitution were read into the note."
    }
   ],
-  "verification_status": "unverified"
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "13-1986": {
+  "amends": {
+   "source_id": "SRC051",
+   "title": "Land Acquisition Act",
+   "number": 9,
+   "year": 1950
+  },
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "20-1969": {
+  "amends": {
+   "source_id": "SRC051",
+   "title": "Land Acquisition Act",
+   "number": 9,
+   "year": 1950
+  },
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "8-1979": {
+  "amends": {
+   "source_id": "SRC051",
+   "title": "Land Acquisition Act",
+   "number": 9,
+   "year": 1950
+  },
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "14-1981": {
+  "amends": {
+   "source_id": "SRC033",
+   "title": "Land Reform Law",
+   "number": 1,
+   "year": 1972
+  },
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "39-1981": {
+  "amends": {
+   "source_id": "SRC033",
+   "title": "Land Reform Law",
+   "number": 1,
+   "year": 1972
+  },
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "14-1986": {
+  "amends": {
+   "source_id": "SRC033",
+   "title": "Land Reform Law",
+   "number": 1,
+   "year": 1972
+  },
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "18-1986": {
+  "amends": {
+   "title": "Land Reform (Special Provisions) Act",
+   "number": 39,
+   "year": 1981
+  },
+  "editorial_notes": [
+   "Long title names Act 39 of 1981; the consolidated Law applies it to s.42J."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "39-1975": {
+  "verification_status": "needs_structural_review",
+  "quality_notes": [
+   "Sections 2 and 42A run into section 1; 42D missing as a node (HTML parse)."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "10-2008": {
+  "section_headings": {
+   "3": "Replacement of section 8 of the principal enactment.",
+   "4": "Sinhala text to prevail in case of inconsistency."
+  },
+  "quality_notes": [
+   "inserted s.8 text and heading scrambled across columns and a page break; corrected by hand in finalized/"
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "20-1976": {
+  "editorial_notes": [
+   "s.1 as republished reads 'Law, No. 20 of 1970'; the instrument is Law No. 20 of 1976 (chain headers and every marker)."
+  ],
+  "quality_notes": [
+   "Inserted principal sections 3, 4A, 11, 18, 19 parsed as body sections."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "12-2005": {
+  "editorial_notes": [
+   "Omnibus Act; held HTML omits its Schedules, so the Notaries Ordinance entry is not readable; amends set to SRC014 on the strength of the consolidated HTML's markers."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "47-2011": {
+  "editorial_notes": [
+   "s.2 prints 'therin' and 'therto'; kept as printed."
+  ],
+  "quality_notes": [
+   "parse_amendment_pdf.py dropped the s.1 citation words and appended the imprint to s.5; corrected by hand."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "13-2013": {
+  "quality_notes": [
+   "parse_amendment_pdf.py dropped the s.1 citation and commencement words and mis-assigned marginal notes; corrected by hand."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "31-2022": {
+  "editorial_notes": [
+   "OCR single reading; 51 corrections listed in the tree; Form E low confidence ('as Juvanis' unresolved).",
+   "s.3(3) repeals a s.12(3) neither held edition prints.",
+   "s.16(13) quotes rule (30) as containing 'registered'; both held editions lack the word."
+  ],
+  "verification_status": "unverified",
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "6-2024": {
+  "editorial_notes": [
+   "s.3(5)(a) substitutes identical words as printed.",
+   "s.5 closes with a doubled quotation mark as printed."
+  ],
+  "quality_notes": [
+   "parse_amendment_pdf.py interleaved marginal notes with inserted rules; body re-transcribed by hand from the text layer."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "23-1996": {
+  "amends": {
+   "source_id": "SRC054",
+   "number": 20,
+   "year": 1931
+  },
+  "quality_notes": [
+   "Parser drops the quoted body of inserted section 5A although the page carries it."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "61-1980": {
+  "amends": {
+   "source_id": "SRC080",
+   "number": 29,
+   "year": 1961
+  },
+  "long_title": "AN ACT TO AMEND THE PEOPLE'S BANK ACT, No. 29 OF 1961.",
+  "quality_notes": [
+   "HTML long title reads 'NO, 29 OF 1981'; scan reads 1961.",
+   "Linear parser yields 2 nodes for a 4-section Act; rebuilt by hand in finalized/."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "32-1986": {
+  "amends": {
+   "source_id": "SRC080"
+  },
+  "quality_notes": [
+   "Inserted 29A-29T bodies dropped by the parser."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "16-2019": {
+  "quality_notes": [
+   "parse_amendment_pdf.py merges sections 4-6 into section 3 when marginal notes are in the left margin on page 2; rebuilt in finalized/."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "62-1981": {
+  "amends": {
+   "source_id": "SRC074",
+   "type": "Law",
+   "number": 13,
+   "year": 1975
+  },
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "29-1984": {
+  "amends": {
+   "source_id": "SRC074",
+   "type": "Law",
+   "number": 13,
+   "year": 1975
+  },
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "10-1994": {
+  "amends": {
+   "source_id": "SRC074",
+   "type": "Law",
+   "number": 13,
+   "year": 1975
+  },
+  "title": "State Mortgage and Investment Bank (Amendment) Act",
+  "quality_notes": [
+   "Page filed as '(Implementation)'; s.1 reads '(Amendment)'."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "49-2000": {
+  "amends": {
+   "source_id": "SRC041",
+   "type": "Ordinance",
+   "number": 13,
+   "year": 1946
+  },
+  "quality_notes": [
+   "Section 4's inserted 4A and 4B bodies dropped by the parser; sections 3, 7, 15 keep theirs."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "27-2002": {
+  "amends": {
+   "type": "Act",
+   "title": "Apartment Ownership (Special Provisions) Act",
+   "number": 4,
+   "year": 1999
+  },
+  "quality_notes": [
+   "Amends Act No. 4 of 1999 s.3 (Part I sunset to 31 Dec 2003, retrospective to 10 Mar 2001); no operation on Law 11 of 1973 although the consolidated Law's chain lists it."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "4-1999": {
+  "checked_against": "data/legal-sources/library/amendments/incoming/4-1999-apartment-ownership-law-amendment.pdf",
+  "quality_notes": [
+   "LankaLaw HTML prints s.3 as substituted by Act 27 of 2002 (marker [2,27 of 2002]); as-enacted s.3 reads 'The provisions of this Part of this Act, shall be in operation for a period of two years from the date of commencement of this Act.' (GP PDF, certified 10 March 1999)."
+  ],
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "45-1982": {
+  "amends": {
+   "title": "APARTMENT OWNERSHIP LAW",
+   "number": 11,
+   "year": 1973
+  },
+  "quality_notes": [
+   "ss.11 and 13 refer to ss.15-20 and 26 of the Law, not of this Act."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "23-2018": {
+  "quality_notes": [
+   "Standalone Act (registry SRC013): no amendment to Law 11 of 1973; parser bleeds marginal notes into ss.1, 2, 4, 5."
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "30-2022": {
+  "section_headings": {
+   "1": "Short title"
+  },
+  "quality_notes": [
+   "marginal note 'Short title' bled into s.1 body (fixed in finalized/)"
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "4-2024": {
+  "section_headings": {
+   "1": "Short title"
+  },
+  "quality_notes": [
+   "marginal note 'Short title' bled into s.1 body (fixed in finalized/)"
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "20-2005": {
+  "checked_against": "amendments/incoming/20-2005-tea-and-rubber-estate-control-of-fragmentation-act-amendment.pdf",
+  "quality_notes": [
+   "Board's new name printed two ways: s.3(1)(b) 'Tea, Rubber and Coconut Estates (Control of Fragmentation) Board'; s.3(2)/marginal note 'Tea, Rubber and Coconut (Control of Fragmentation) Board'",
+   "s.9 refers to the inserted s.23A"
+  ],
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "34-2013": {
+  "amends": {
+   "source_id": "SRC049"
+  },
+  "editorial_notes": [
+   "s.2 prints 'experssion'; kept",
+   "s.3(a) prints 'bhikku' for the Ordinance's 'bhikkhu'"
+  ],
+  "quality_notes": [
+   "parser defects hand corrected: marginal note in s.1 text, U+FFFD quotes, page header in s.4, imprint in s.5"
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "26-2014": {
+  "checked_against": "Government Printer PDF, Prescription (Amendment) Act, No. 26 of 2014, certified 08th August 2014, page 2 text layer",
+  "quality_notes": [
+   "Parser left s.1 with no heading and folded 'Short title.' into its text; s.3 heading read as 'of inconsistency.' with the imprint appended. Corrected in finalized/.",
+   "Long title cites 'Chapter 68' (1956 revision); 1980 revision is Cap. 81."
+  ],
+  "verification_status": "structurally_verified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "63-1979": {
+  "checked_against": "Government Printer scan (5 pp, no text layer) rendered and read; LankaLaw HTML complete",
+  "quality_notes": [
+   "HTML parse folded s.2 into s.1 and placed inserted 5A/11A as top-level sections; rebuilt by hand in finalized/ with 5A structured (1)-(6).",
+   "HTML 'Is situated', 'Is provided', 'In respect', 'other- wise', 'sub- section', 'final: and' corrected from the scan."
+  ],
+  "verification_status": "structurally_verified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "49-1981": {
+  "amends": {
+   "title": "NATIONAL HOUSING ACT",
+   "number": 37,
+   "year": 1954
+  },
+  "editorial_notes": [
+   "basis: principal chain header; the Act's text names only 'Chapter 401'"
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "23-2002": {
+  "amends": {
+   "title": "NATIONAL HOUSING DEVELOPMENT AUTHORITY ACT",
+   "number": 17,
+   "year": 1979
+  },
+  "editorial_notes": [
+   "basis: its own s.2 and GP PDF"
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "30-1999": {
+  "quality_notes": [
+   "HTML ends at 'Schedules'; GP PDF prints the Second Schedule pp.11-12; 26.39% unmatched; schedule untranscribed"
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "32-2002": {
+  "editorial_notes": [
+   "Monetary Law (Amendment) Act; amends Monetary Law Act (Cap. 422), not SRC075; curriculum row probably meant 32 of 2003"
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "43-1973": {
+  "editorial_notes": [
+   "Sale of State Lands (Special Provisions) Law; amends Land Development Ordinance / People's Bank Act, not SRC056"
+  ],
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "28-2022": {
+  "checked_against": "pdftoppm renders pp.2-12 of data/legal-sources/library/amendments/28-2022-powers-of-attorney-amendment-act.pdf",
+  "quality_notes": [
+   "13-page RGD scan, no text layer; OCR proof-read by eye; 36 corrections in the finalized tree",
+   "OCR 'No. 40 of 1981' corrected to 'No. 4 of 1981' (Consular Functions Act)"
+  ],
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "14-2013": {
+  "quality_notes": [
+   "parse_amendment_pdf.py interleaved marginal notes and folded ss.3-5 into s.2/s.10; rebuilt by hand"
+  ],
+  "verification_status": "unverified",
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "3-2024": {
+  "quality_notes": [
+   "parser read the 12 Schedule II items as sections; s.3 substitutes identical English words in 3D"
+  ],
+  "verification_status": "unverified",
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "6-2018": {
+  "checked_against": "pdftotext -layout of data/legal-sources/library/amendments/6-2018-trusts-amendment-act.pdf",
+  "quality_notes": [
+   "parse_amendment_pdf.py attached inserted ss.6A/6B and 19A-19C to s.8 and fused 6B into 6A, 19B/19C into 19A; rebuilt by hand"
+  ],
+  "verification_status": "unverified",
+  "last_pass": "2026-09-05 finalization pass"
+ },
+ "13-2019": {
+  "quality_notes": [
+   "parser glued paragraphs, invented a (d) in s.4, dropped 'and' in s.5, pulled running headers in; rebuilt by hand in finalized/"
+  ],
+  "verification_status": "unverified",
+  "checked_against": "see finalized tree provenance (2026-09-05 finalization pass)",
+  "last_pass": "2026-09-05 finalization pass"
  }
 }

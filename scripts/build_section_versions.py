@@ -189,6 +189,11 @@ def main() -> int:
 
     # --- link alignment -------------------------------------------------------
     rows, tally = [], collections.Counter()
+    if not LINKS.exists():
+        # The links file is a gitignored evaluation output. Without it the
+        # alignment section below is empty, which used to happen silently.
+        print(f"warning: {LINKS.relative_to(ROOT)} not found; link alignment skipped, "
+              "temporal-alignment-report.md will carry no link rows", file=sys.stderr)
     if LINKS.exists():
         with LINKS.open(encoding="utf-8", newline="") as f:
             for r in csv.DictReader(f):
