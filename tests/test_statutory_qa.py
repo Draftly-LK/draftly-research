@@ -133,5 +133,37 @@ class GuardTests(unittest.TestCase):
         self.assertEqual(schema["$defs"]["question"]["properties"]["lawyer_validation_status"], {"const": "pending"})
 
 
+class LawyerWorkbookTests(unittest.TestCase):
+    """The exported workbook must carry every gold question and leave every lawyer cell empty."""
+
+    def test_export_matches_gold_and_leaves_lawyer_columns_blank(self):
+        import tempfile
+        import export_lawyer_workbook as X  # noqa: E402
+
+        gold_file = C.BENCHMARK_DIR / "private-gold.jsonl"
+        if not (X.TEMPLATE.exists() and gold_file.exists()):
+            self.skipTest("template workbook or gold file not present")
+        import openpyxl
+        gold = C.read_jsonl(gold_file)
+        with tempfile.TemporaryDirectory() as td:
+            out = Path(td) / "wb.xlsx"
+            self.assertEqual(X.main(["--out", str(out)]), 0)
+            wb = openpyxl.load_workbook(out)
+            qs = wb["Questions"]
+            ids = [qs.cell(r, 2).value for r in range(X.FIRST_DATA_ROW, qs.max_row + 1) if qs.cell(r, 2).value]
+            self.assertEqual(sorted(ids), sorted(g["benchmark_question_id"] for g in gold))
+            for sheet, cols in (("Questions", X.QUESTIONS_COLS), ("Provisions", X.PROVISIONS_COLS),
+                                ("Claims", X.CLAIMS_COLS), ("Missing provisions", X.MISSING_COLS)):
+                ws = wb[sheet]
+                self.assertEqual([c.value for c in ws[X.HEADER_ROW]][: len(cols)], [h for h, _ in cols])
+                lawyer_cols = [i + 1 for i, (_, role) in enumerate(cols) if role == "lawyer"]
+                for r in range(X.FIRST_DATA_ROW, ws.max_row + 1):
+                    for ci in lawyer_cols:
+                        self.assertIsNone(ws.cell(r, ci).value, f"{sheet}!{ws.cell(r, ci).coordinate} pre-filled")
+            provs = wb["Provisions"]
+            n_ind = sum(1 for r in range(X.FIRST_DATA_ROW, provs.max_row + 1) if provs.cell(r, 9).value == "Indispensable")
+            self.assertEqual(n_ind, sum(len(g["indispensable_provisions"]) for g in gold))
+
+
 if __name__ == "__main__":
     unittest.main()
