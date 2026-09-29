@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from .answering import answer
+from .embeddings import build_embeddings
 from .evaluation import run_evaluation
 from .index import build_index
 from .lsr_evaluation import run_lsr_evaluation
@@ -18,8 +19,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(prog="python -m draftly.retrieval")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    build_parser = subparsers.add_parser("build", help="Build or refresh the statutes-only BM25 index.")
+    build_parser = subparsers.add_parser("build", help="Build or refresh the statutes index.")
     build_parser.add_argument("--force", action="store_true", help="Rebuild even if the corpus fingerprint matches.")
+    build_parser.add_argument("--with-embeddings", action="store_true", help="Also build the dense embedding cache.")
 
     search_parser = subparsers.add_parser("search", help="Search statutes and amendments.")
     search_parser.add_argument("query", help="Question or legal lookup query.")
@@ -66,6 +68,8 @@ def main() -> None:
     args = parser.parse_args()
     if args.command == "build":
         print(json.dumps(build_index(force=args.force).to_dict(), indent=2))
+        if args.with_embeddings:
+            print(json.dumps({"sections_embedded": build_embeddings(force=args.force)}, indent=2))
     elif args.command == "search":
         hits = search(
             StatuteQuery(
