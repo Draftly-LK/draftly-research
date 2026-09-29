@@ -1,0 +1,45 @@
+# Hosted System
+
+Detailed Mermaid view of the VPS. Solid paths represent the documented host; dashed MinIO is planned.
+
+```mermaid
+%%{init: {"themeVariables": {"fontSize": "20px"}}}%%
+flowchart LR
+  browser["Lawyer or clerk browser"]
+  clerk["Clerk sign-in"]
+  gemini["Gemini research composition"]
+
+  subgraph vps["Single VPS / Docker Compose"]
+    caddy["Caddy TLS and routing"]
+    landing["Landing page"]
+    web["Next.js workbench"]
+    api["FastAPI domain services"]
+    worker["Outbox worker"]
+    retrieval["Internal statutory retrieval / BM25 index"]
+    pg[("Self-hosted PostgreSQL 18")]
+    files[("Source files / VPS volume")]
+    minio[("MinIO object storage / planned")]
+  end
+
+  browser -->|HTTPS| caddy
+  caddy --> landing
+  caddy --> web
+  caddy -->|/api| api
+  web -->|matter and research requests| api
+  api --> pg
+  worker --> pg
+  api --> files
+  api --> retrieval
+  api -.->|planned storage adapter| minio
+  api -.->|verify session| clerk
+  api -.->|cited research answer| gemini
+
+  classDef current fill:#eaf2fb,stroke:#356a9a,color:#102b40
+  classDef data fill:#e8f5e9,stroke:#39844a,color:#173b1e
+  classDef planned fill:#fff4d6,stroke:#bc8b21,color:#543d0c,stroke-dasharray: 5 5
+  classDef external fill:#f1e8f7,stroke:#8a5ba8,color:#3b2450
+  class caddy,landing,web,api,worker,retrieval current
+  class pg,files data
+  class minio planned
+  class clerk,gemini external
+```

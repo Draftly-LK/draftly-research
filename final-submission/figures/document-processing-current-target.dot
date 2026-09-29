@@ -1,0 +1,21 @@
+digraph DraftlyDocuments {
+  graph [rankdir=TB, bgcolor="white", pad="0.18", nodesep="0.42", ranksep="0.48", fontname="Arial", fontsize=15, label="Document intake and review", labelloc=t];
+  node [shape=box, style="rounded,filled", fillcolor="#EAF2FB", color="#356A9A", fontname="Arial", fontsize=14, margin="0.12,0.09"];
+  edge [color="#324A5E", arrowsize=0.65, fontname="Arial", fontsize=11];
+
+  upload [label="Upload and hash\nsource document"];
+  source [label="VPS source-file\nvolume", shape=cylinder, fillcolor="#E8F5E9", color="#39844A"];
+  run [label="Processing run\nstub candidates on host"];
+  review [label="Lawyer review\nand correction"];
+  pg [label="Self-hosted\nPostgreSQL", shape=cylinder, fillcolor="#E8F5E9", color="#39844A"];
+
+  minio [label="MinIO object store\nplanned", shape=cylinder, style="rounded,dashed", color="#B6821E"];
+  ocr [label="OCR and document\nclassification design", style="rounded,dashed", color="#B6821E"];
+  laya [label="Laya text classifier\nevaluation candidate", style="rounded,dashed", color="#B6821E"];
+
+  upload -> source -> run -> review -> pg;
+  source -> minio [style=dashed, label="planned"];
+  run -> ocr [style=dashed, label="designed path"];
+  ocr -> laya [style=dashed];
+  ocr -> review [style=dashed];
+}

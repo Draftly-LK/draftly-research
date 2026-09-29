@@ -149,3 +149,24 @@ latexmk.log
 # Rebuildable retrieval caches for the statutory-qa-v1 experiments
 data/evaluvation/statutory-qa-v1/experiments/cache/
 data/evaluvation/statutory-qa-v1/corpus/.search_cache.pkl
+
+# Local ARIS checkout and machine-specific linked skills.
+.aris/
+.claude/skills/*/
+
+# Final report and scratch paper LaTeX build artifacts.
+final-submission/*.aux
+final-submission/*.fdb_latexmk
+final-submission/*.fls
+final-submission/*.log
+final-submission/*.out
+final-submission/*.toc
+final-submission/*.xdv
+final-submission/report-contact-sheet.png
+paper/*.aux
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.synctex.gz

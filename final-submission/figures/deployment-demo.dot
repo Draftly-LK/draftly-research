@@ -1,0 +1,35 @@
+digraph DraftlyDemo {
+  graph [rankdir=LR, bgcolor="white", pad="0.15", nodesep="0.32", ranksep="0.45", fontname="Arial", fontsize=12, label="Draftly hosted pilot deployment", labelloc=t];
+  node [shape=box, style="rounded", color="#324A5E", fontname="Arial", fontsize=10, margin="0.09,0.07"];
+  edge [color="#324A5E", arrowsize=0.65, fontname="Arial", fontsize=8];
+
+  lawyer [label="Lawyer / clerk\nweb browser"];
+  clerk [label="Clerk\nauthentication", style="rounded,dashed"];
+  gemini [label="Gemini API\ngrounded composition", style="rounded,dashed"];
+
+  subgraph cluster_vps {
+    label="Single VPS: Docker Compose";
+    color="#8EA1AF";
+    style="rounded";
+    caddy [label="Caddy\nTLS + reverse proxy"];
+    web [label="Next.js\nEnglish / Sinhala UI"];
+    api [label="FastAPI\nmatter + research services\ndocument extraction: stub"];
+    worker [label="Outbox worker\nleases + retries"];
+    pg [label="Self-hosted PostgreSQL 18\nauthoritative matter data", shape=cylinder];
+    files [label="VPS source-file volume\ncurrent evidence storage", shape=cylinder];
+    minio [label="MinIO object storage\nplanned", shape=cylinder, style="rounded,dashed", color="#B6821E"];
+    retrieval [label="Internal retrieval service\nBM25 lexical index"];
+    caddy -> web;
+    caddy -> api [label="/api"];
+    web -> api [label="matter and research calls"];
+    api -> pg;
+    api -> files;
+    api -> minio [style=dashed, label="planned adapter"];
+    worker -> pg;
+    api -> retrieval [label="statutory passages"];
+  }
+
+  lawyer -> caddy [label="HTTPS"];
+  api -> clerk [label="verify session", style=dashed];
+  api -> gemini [label="compose cited answer", style=dashed];
+}

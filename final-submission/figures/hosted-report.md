@@ -1,0 +1,28 @@
+# Hosted Deployment Report View
+
+Condensed report figure source for the VPS deployment with PostgreSQL and planned MinIO.
+
+```mermaid
+%%{init: {"themeVariables": {"fontSize": "22px"}}}%%
+flowchart TB
+  browser["Lawyer or clerk browser"] -->|HTTPS| caddy["Caddy TLS / routing"]
+  subgraph vps["Draftly VPS / Docker Compose"]
+    caddy --> web["Next.js workbench"]
+    web --> api["FastAPI services and outbox worker"]
+    api --> pg[("Self-hosted PostgreSQL 18")]
+    api --> retrieval["Internal legal retrieval / BM25"]
+    api --> files[("Source-file volume")]
+    api -.-> minio[("MinIO / planned")]
+  end
+  api -.-> clerk["Clerk sign-in"]
+  api -.-> gemini["Gemini research composition"]
+
+  classDef service fill:#eaf2fb,stroke:#356a9a,color:#102b40
+  classDef data fill:#e8f5e9,stroke:#39844a,color:#173b1e
+  classDef planned fill:#fff4d6,stroke:#bc8b21,color:#543d0c,stroke-dasharray: 5 5
+  classDef external fill:#f1e8f7,stroke:#8a5ba8,color:#3b2450
+  class browser,caddy,web,api,retrieval service
+  class pg,files data
+  class minio planned
+  class clerk,gemini external
+```

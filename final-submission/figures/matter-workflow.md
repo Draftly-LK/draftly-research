@@ -1,0 +1,42 @@
+# Matter Workflow
+
+A lawyer-controlled route from intake through evidence, checks, draft review, approval records, and audit.
+
+```mermaid
+%%{init: {"themeVariables": {"fontSize": "20px"}}}%%
+flowchart LR
+  subgraph intake["1. Matter and evidence"]
+    direction TB
+    matter["Create and classify matter"] --> upload["Upload source documents"]
+    upload --> candidates["Record candidate facts and evidence"]
+  end
+
+  subgraph review["2. Lawyer-controlled review"]
+    direction TB
+    verify["Verify or correct facts"] --> checks["Run checklist and checks"]
+    checks --> finding{"Finding needs action?"}
+    finding -->|yes| resolve["Resolve, request evidence, or record permitted waiver"]
+    resolve --> checks
+    finding -->|no| research["Review cited legal research"]
+  end
+
+  subgraph draft["3. Draft and record"]
+    direction TB
+    form["Prepare form draft"] --> preflight["Check prerequisites"]
+    preflight --> lawyer["Lawyer reviews draft"]
+    lawyer --> decision{"Approve?"}
+    decision -->|approve| record["Record approval and export event"]
+    record --> audit["Append audit history"]
+  end
+
+  candidates --> verify
+  research --> form
+  decision -->|revise| verify
+
+  classDef task fill:#eaf2fb,stroke:#356a9a,color:#102b40
+  classDef human fill:#e8f5e9,stroke:#39844a,color:#173b1e
+  classDef gate fill:#fff4d6,stroke:#bc8b21,color:#543d0c
+  class matter,upload,candidates,checks,research,form,preflight,record,audit task
+  class verify,resolve,lawyer human
+  class finding,decision gate
+```

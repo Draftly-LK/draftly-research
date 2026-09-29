@@ -1,0 +1,46 @@
+# Document Processing
+
+Detailed design. The hosted run uses stub extraction; OCR, Laya classification, and MinIO are marked as design or evaluation candidates.
+
+```mermaid
+%%{init: {"themeVariables": {"fontSize": "20px"}}}%%
+flowchart LR
+  subgraph intake["1. Intake and storage"]
+    direction TB
+    upload["Upload source document"] --> original["Store immutable file and hash"]
+    original --> run["Create processing run"]
+    original --> files[("VPS source-file volume")]
+    original -.-> minio[("MinIO object store / planned")]
+  end
+
+  subgraph processing["2. Candidate processing"]
+    direction TB
+    mode{"Extraction mode"}
+    mode -->|hosted setting| stub["Stub candidate output"]
+    mode -.->|designed provider path| quality["Page quality and orientation"]
+    quality --> ocr["OCR with page anchors"]
+    ocr --> boundaries["Document boundaries and type candidates"]
+    boundaries --> fields["Candidate fields and evidence spans"]
+    ocr -.-> laya["Laya text classifier / evaluation candidate"]
+    laya -.-> boundaries
+  end
+
+  subgraph decisions["3. Lawyer review"]
+    direction TB
+    review["Review or correct candidates"] --> facts["Versioned verified facts"]
+    facts --> checks["Rule-pack checks and drafting inputs"]
+    facts --> pg[("VPS PostgreSQL")]
+  end
+
+  run --> mode
+  stub --> review
+  fields --> review
+  run --> pg
+
+  classDef current fill:#eaf2fb,stroke:#356a9a,color:#102b40
+  classDef data fill:#e8f5e9,stroke:#39844a,color:#173b1e
+  classDef planned fill:#fff4d6,stroke:#bc8b21,color:#543d0c,stroke-dasharray: 5 5
+  class upload,original,run,mode,stub,review,facts,checks current
+  class pg,files data
+  class quality,ocr,boundaries,fields,laya,minio planned
+```

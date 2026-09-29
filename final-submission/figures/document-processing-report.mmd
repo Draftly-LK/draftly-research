@@ -1,0 +1,16 @@
+%%{init: {"themeVariables": {"fontSize": "26px"}}}%%
+flowchart TB
+  upload["Upload and hash source file"] --> files[("VPS source-file volume")]
+  files --> run["Processing run: stub candidates on hosted system"]
+  run --> review["Lawyer reviews evidence and candidate facts"]
+  review --> pg[("VPS PostgreSQL")]
+  files -.-> minio[("MinIO object store / planned")]
+  run -.-> ocr["OCR and document classification / designed path"]
+  ocr -.-> laya["Laya text classifier / evaluation candidate"]
+
+  classDef current fill:#eaf2fb,stroke:#356a9a,color:#102b40
+  classDef data fill:#e8f5e9,stroke:#39844a,color:#173b1e
+  classDef planned fill:#fff4d6,stroke:#bc8b21,color:#543d0c,stroke-dasharray: 5 5
+  class upload,run,review current
+  class files,pg data
+  class minio,ocr,laya planned

@@ -12,7 +12,86 @@ finish a chunk of work, update it with the `update-context` skill
 
 ## Current State
 
-Last updated: 2026-08-25 · by: Codex · draftly-research @ 47643044
+Last updated: 2026-09-30 · by: Codex · draftly-research @ f330dabc
+
+The final academic presentation now has a Phase 1 story treatment and
+claim-first, 20-slide outline in `final-submission/presentation/STORY.md` and
+`SLIDE_OUTLINE.md`, plus `DEMO_RUNBOOK.md`. It assumes a 20-minute slot with 18 minutes of speech, including 2:30 for a synthetic-matter demonstration, and
+separates the offline retrieval study from the deployed RTA workbench. The two
+user-requested platform figures are older design references with obsolete
+storage labels; the outline uses cropped process/decision portions and pairs
+them with current deployment and intake figures. The Google Slides draft was
+inaccessible through the available browser/web tools. Per `paper-talk`'s Phase
+1 checkpoint, the actual deck and script await review of this story. Confirm
+the presentation slot length, demo format, final individual work allocation,
+and speaker handoffs before slide construction. The user provided seven
+10-point assessment criteria; `STORY.md` maps each criterion to slide evidence.
+
+The `draw-io-diagram-generator` skill from `github/awesome-copilot` is installed
+in the user's Codex skills directory. Eight paired Mermaid `.mmd` and Markdown
+previews now document the current hosted system, document intake, matter
+workflow, use cases, domain, and data model in `final-submission/figures/`.
+The report deployment and document-processing figures were replaced with
+corrected Graphviz renders. The live VPS has self-hosted PostgreSQL 18 and a
+source-file volume; MinIO is planned, with no adapter in the checked platform
+code. Laya is an evaluation candidate for classifying extracted text, not a
+deployed model or OCR engine.
+The `guizang-ppt-skill` is already installed globally in the Codex skills
+directory. Its skill file, templates, and validators match the user's local
+`skill-translation` copy; the latter also holds two localization build helpers.
+
+The current implemented platform snapshot is documented in
+`final-submission/current-platform-system.md`, based on the sibling
+`draftly-platform` repository at `a116a59` and its deployment and September
+test records. It covers the deployed topology, backend and frontend modules,
+lawyer verification and approval gates, tests, and limits. The hosted app uses
+API-backed persistent matters rather than frontend fixtures. Its documented
+operating policy limits use to synthetic data, extraction is stubbed, retrieval
+is lexical only, and unverified form wording blocks registration-ready export.
+The same document now includes a dated related-systems review. Orbital is the
+closest property-workflow comparator; Clio Draft, Harvey, and Lanka Law cover
+adjacent drafting, assistant, and local research functions. Its paper table
+distinguishes peer-reviewed work from preprints and avoids transferring
+foreign-jurisdiction results to Draftly.
+
+The official PaperBanana repo is installed locally at
+`third_party/PaperBanana/` (commit `8364555`, ignored), with an isolated
+Python 3.12 environment. `scripts/paperbanana_local.py` reads `GEMINI_API_KEY`
+from the ignored root `.env` and offers `check`, `serve`, and `generate`.
+`docs/paperbanana-local.md` has commands. A Gemini-backed `vanilla` run saved a
+2752 x 1536 test PNG in ignored `tmp/`, and the Gradio UI returned HTTP 200 on
+localhost:7860. More elaborate planner and critic modes remain untested.
+
+The revised university report is `final-submission/final-report.tex`, compiled
+with XeLaTeX to `final-submission/final-report.pdf` (23 pages). It now describes
+the hosted platform's persistent API-backed workflow, includes the document
+processing and planned lawyer annotation figures, and cites product and
+research comparators. The report still states the documented live settings:
+BM25 retrieval, stub extraction, and no approved real-client use. The report
+source was user-edited; do not regenerate it from an older Markdown source.
+The user requested a final-report voice that leads with completed work rather
+than repeated statements about unverified form wording or unavailable exports.
+The report describes form bindings, preflight checks, lawyer review, and
+approval records without claiming that a legal instrument was validated.
+Table 4 now has a companion C@20 comparison figure (Fig. 13) built by
+`final-submission/figures/build-retrieval-c20.py`; a slide-ready PNG and
+editable SVG are in `final-submission/presentation/`. The figure shows four
+methods, keeps the provisional-label and uncertainty caveats, and states that
+all scores are offline while hosted search uses BM25. Its report and slide
+versions now use pastel rounded process cards and annotated result panels to
+match the user's two reference diagrams.
+Harvey was added to the comparative literature review from its official
+product documentation. Retain factual distinctions between implemented
+services, evaluated research, and documented live provider settings.
+
+Hybrid deployment needs a research engine change because the platform image
+build passes `--with-embeddings` to the statute CLI. Research PR
+https://github.com/Draftly-LK/draftly-research/pull/24 adds that flag and fails
+partial statute or case embedding builds. Five focused tests pass. The PR is
+open; no live server setting was changed. After merge, an operator needs to
+set `RETRIEVAL_WITH_EMBEDDINGS=1`, rebuild the retrieval image with the approved
+Gemini key, and verify dense availability. Direct SSH from this session to the
+VPS was unavailable.
 
 ### What Draftly is
 
@@ -57,7 +136,133 @@ parcel, parties, current instrument, interests or encumbrances, and supporting
 evidence before generation. It does not reconstruct historical deed pedigrees
 or old title chains; that belongs to a later RDO or cross-regime module.
 
+### Final project report draft
+
+`final-submission/Draftly_Final_Project_Report.docx` and the supplied
+`final-submission/Template for Final Report.docx` were read on 2026-09-29. The
+draft covers the template's major sections and combines the retrieval research,
+case-law and document-processing work, platform implementation, testing, and
+limitations. It has unresolved `VERIFY` and appendix placeholders, a table of
+contents with no visible entries or page numbers in extracted text, and a
+results inconsistency: Table 4 gives hierarchical C@20 as 0.375, above hybrid
+fusion's 0.344, while the prose calls hybrid strongest on complete recall.
+The abstract and design describe the deployed engine as hybrid, while the
+conclusion says the production index is currently lexical only. The cover is
+dated October 2026, so completion claims and dates after 2026-09-29 need
+rechecking before submission. The DOCX itself was not edited during this read.
+The user emphasized that the sibling `draftly-platform` repository is a major
+part of the project. Its backend, frontend, deployment, and test reports must
+be treated as primary evidence for the final report. Its deployment record
+says the live system is a synthetic-data demo with stub document extraction
+and a lexical-only retrieval index. Its September test report says unverified
+form wording blocks the full approved-export path, though the relevant
+refusals are tested. The final report should distinguish implemented services,
+deployed demo behaviour, and capabilities awaiting legal or provider approval.
+The 30-slide `proj-docs/mid-presentation/Draftly - Mid Evaluation.pptx` was read
+on 2026-09-29. Its visuals are native editable PowerPoint shapes, with no
+embedded media files. Slides 4, 10–11, 19–20, 22–23, and 25–26 are useful
+design sources for the final report's domain, authority, scope, rule-pack,
+architecture, workflow, and lawyer-gate figures. Mid-evaluation metrics and
+status (especially slides 13–16, 24, and 27–29) are time-bound and must be
+updated against current platform/research evidence before reuse.
+Two matching generated diagrams were located in
+`proj-docs/project Management/`: `document-processing-v1-pipeline.png` and
+`matter-agent-service-architecture.png` (both dated 2026-09-04). A separate
+Paperbanana-labelled retrieval image is
+`research-paper/figures/corpus-retrieval-paperbanana.png`. The first two use
+older infrastructure labels and should be updated before being presented as
+the currently deployed architecture.
+`final-submission/figures/` now contains 24 copied, verified PNG assets from
+project diagrams, research figures, main-test charts, historical progress,
+branding, and real diagrams extracted from the draft report. Its `README.md`
+maps each filename to its source and flags draft or historical assets. The
+draft report's Fig. 7–8 are 1-by-1-pixel placeholders and Fig. 9–12 are
+labelled screenshot placeholders; they were excluded. Two dated synthetic UI
+captures and two in-document pseudocode figures were created for the new report.
+The user changed the requested final format to LaTeX and edited the source at
+`final-submission/final-report.tex`, which is now authoritative. Its compiled
+`final-submission/final-report.pdf` has 21 pages including cover, abstract, contents, and
+references. It follows the supplied university report sections and centres
+legal retrieval plus a lawyer-controlled conveyancing matter workflow. It
+now includes the document-processing design diagram and the benchmark's
+planned lawyer-annotation diagram, both captioned with their current status.
+The PDF was recompiled successfully after these additions.
+It
+states that the demo uses lexical retrieval and stub extraction, and that
+form wording, benchmark labels, case-law rules, and document-field accuracy
+still need validation. The older draft DOCX remains untouched. The report's
+reviewed prose source is `final-submission/report-source.md`, and the figure
+provenance is listed in `final-submission/figures/README.md`.
+
 ### Academic context
+
+The user reports that `research-paper/neurips_2026.tex` and its submitted PDF
+were accepted to the NeurIPS 2026 GlobalSouthAI workshop; the camera-ready
+deadline is 2026-09-29. The submitted source is already tracked on local
+`main`. Its style option has been changed to `dblblindworkshop,final` and a
+forced LaTeX build succeeds with embedded fonts. The four authors and their
+emails were added in the order supplied by the user; Himath's email was later
+corrected to `himathd.23@cse.mrt.ac.lk`. The author block now uses a compact
+shared-affiliation layout, with "Himath Dhanapala" as shown in the user's
+example image. The user then requested all four names on one bold line; they
+fit without changing the style parameters. The camera-ready abstract,
+discussion, limitations, conclusion and benchmark appendix now bound claims
+to the proposed labels and tested retrieval systems. The abstract links the
+versioned Hugging Face release and states that its labels are provisional;
+appendix B also prints the repository URL and version tag so the address
+survives systems that strip abstract links. Figure 3's recall curve and the S7 ablation table
+are separate, each at text width, in appendix E. The rebuilt PDF has all main
+text on four pages, with references starting on page 5. Venue-specific
+camera-ready instructions beyond the public call remain unknown.
+The bibliography keeps arXiv records for LegalBench-RAG, GreekBarRetrieval,
+and Asking For An Old Friend because no official proceedings version was found
+as of 2026-09-29. The latter two entries note author-reported venue acceptance.
+
+`research-paper/peer-reviews.md` now contains one review. A focused response
+plan is in `research-paper/peer-review-fix-plan.md`; it proposes bounded
+camera-ready wording for the unvalidated labels, small test set, excluded
+question types, explicit-edge graph and off-the-shelf reranker. These wording
+fixes are now applied in the manuscript. The public dataset release happened
+after the plan was drafted, so its earlier release warning is superseded.
+The accepted paper's conclusion no longer lists LLM query rewriting as an
+untried future alternative: a separate `A5_rewrite` research pilot had already
+tested it. That pilot was outside the accepted paper's seven-system comparison;
+its documented results use provisional labels and should not be folded into
+this manuscript without a scoped analysis.
+
+The public release proposal for the paper's data is in
+`research-paper/dataset-release-plan.md`. It calls for an open 50-question
+statutory retrieval benchmark with proposed development and test gold, plus
+a separate source collection from 16 structured past-paper JSON files and
+667 atomic questions. All gold still awaits lawyer validation, and the wider
+question collection is not a scored benchmark. A separate, broader Act
+source index would publish metadata and URLs without PDFs or extracted Act
+text. The frozen corpus has 112 Acts and amendments; currently mapped source
+metadata supplies URLs for 52, so more matching and link checks are needed.
+The first Act index release is limited to those 112 documents; wider coverage
+is deferred. The benchmark plan adds a small evaluation package (prediction
+schema, C@20, Indispensable Recall@20, split validator and examples), while
+retrieval implementations remain private. Open provisional reference labels
+allow evaluation and inspection but do not by themselves reproduce the paper's
+retrieval experiments. Planned immutable versions are
+`v1.0-paper-provisional`, `v1.1-corrections` and `v2.0-lawyer-validated`.
+The user reports that Law College question-text redistribution permission has
+been obtained. The two packages were uploaded to public Hugging Face repos
+under `lanka-legal-nlp`: `draftly-statutory-retrieval` and
+`draftly-sri-lanka-act-sources`. They are tagged `v1.0-paper-provisional` and
+`v1.0-paper-corpus-links`, respectively. Remote file hashes match local files.
+The user created the `lanka-legal-nlp` organization, and both public datasets
+were transferred there. Their original commit IDs and public visibility were
+verified after transfer; old personal-account URLs redirect to the new URLs.
+The release builder and evaluator now live under `scripts/dataset-release/`.
+They stage two local, Git-ignored packages under `tmp/hf-release/`: 50 scored
+questions, 16 structured papers, 667 atomic questions, a small evaluator and
+112 Act metadata rows. The index has 52 recorded source URLs, 16 registry
+candidates and 44 missing URLs. An HTTP check found 58 reachable and 10
+unreachable linked rows; edition identity is unverified. Tests match the
+paper's S5 C@20 and R@20 matter-macro scores. The packages are public on
+the Hub, and all four configurations load through the Hugging Face `datasets`
+library. The Hub dataset viewer was still processing when checked.
 
 - University of Moratuwa, Dept. of Computer Science & Engineering.
 - Module `In23-S5-CS3501`; Project Idea submitted ~8 July 2026.
@@ -1236,6 +1441,295 @@ in the old `contxt.md` were deliberately left out of this file for that reason.)
 ---
 
 ## Log
+
+### 2026-09-30 · Codex (presentation rubric and demo plan)
+
+- Revised the 20-slide story against the user's seven 10-point marking
+  criteria, making the problem/objectives, results, innovation, technology,
+  presentation, final-product demonstration, and allocated tasks visible.
+- Added `final-submission/presentation/DEMO_RUNBOOK.md` for a 2:30 synthetic
+  RTA-matter walkthrough with live or recorded fallback. It distinguishes
+  hosted stub extraction and BM25 from the offline research configurations.
+- The closing slide uses the documented Himath/Lahiru/Praveen workstream split
+  from this context as provisional ownership; exact final allocation and demo
+  format were requested from the user. The 20 slide times still total 18:00;
+  Markdown lint passed.
+
+### 2026-09-30 · Codex (final presentation story)
+
+- Wrote `final-submission/presentation/STORY.md` and `SLIDE_OUTLINE.md` for an
+  academic 20-slide Draftly talk. The narrative moves from practitioner risk
+  and RTA scope through the implemented matter workflow, the complete-bundle
+  retrieval experiment, its measured failure modes, platform test evidence,
+  and the attorney-validation gates still ahead. Slide timing totals 18:00.
+- Checked both requested platform figures against the figure inventory and
+  final report. They are historical design references, so the plan crops their
+  useful process/agent portions and marks their status while showing the
+  current VPS/document-processing figures for deployment claims.
+- Reviewed the 30-slide mid-evaluation deck and final report. The supplied
+  Google Slides URL could not be opened with available tools, so its copy was
+  not used. Markdown lint passed. The deck remains unbuilt at the requested
+  story-first / `paper-talk` Phase 1 checkpoint.
+
+### 2026-09-30 · Codex (retrieval figure visual style)
+
+- Restyled the C@20 report figure and slide image to match the user's pastel
+  process and service diagrams. Kept exact Table 4 values, provisional-label
+  and uncertainty notes, and the offline versus hosted distinction. Rebuilt
+  the report and visually checked the figure on the PDF page.
+
+### 2026-09-30 · Codex (current-system diagram refresh)
+
+- Added eight editable Mermaid diagrams with matching Markdown previews and
+  rendered PNGs for the hosted architecture, document processing, matter
+  workflow, use cases, domain, data model, and condensed report views. Updated
+  the final report's deployment and intake figures to show self-hosted
+  PostgreSQL and the current VPS source-file volume. MinIO and OCR/classification
+  are marked as planned; Laya is only a candidate to evaluate on extracted text.
+- Updated the platform snapshot and figure index, linted the Markdown, and
+  compiled and visually checked the 23-page final report PDF.
+
+### 2026-09-30 · Codex (retrieval results figure)
+
+- Added a vector C@20 comparison after Table 4 in the final report and exported
+  a presentation-sized PNG and SVG. Values are read from the report table; the
+  chart identifies BM25 as the hosted method while stating all scores are from
+  the offline benchmark. It also states that
+  none of the 20 hardest questions was completed. Recompiled the 22-page PDF.
+
+### 2026-09-30 · Codex (global PPT skill verification)
+
+- Compared the user's `skill-translation` folder with the global
+  `guizang-ppt-skill` installation. The skill instructions, templates, and
+  validators match exactly; only two local translation build helpers are
+  absent globally, and the skill does not call them. No installation was needed.
+
+### 2026-09-30 · Codex (draw.io skill installation)
+
+- Installed the user-linked `draw-io-diagram-generator` skill from
+  `github/awesome-copilot` into the Codex skills directory and verified its
+  templates and validator. Current-system diagram revisions are the next task.
+
+### 2026-09-29 · Codex (final-report wording and Harvey comparison)
+
+- Revised the final report's abstract, scope, drafting sections, figures,
+  testing narrative, and conclusion to foreground the implemented workflow.
+  Removed repetitive form-approval and registration-ready-export caveats
+  without asserting legal validation that has not occurred.
+- Added Harvey to the comparative literature review using its official
+  documentation, renumbered references, and rebuilt the XeLaTeX PDF.
+
+### 2026-09-29 · Codex (official PaperBanana local setup)
+
+- Cloned the official PaperBanana repository into ignored
+  `third_party/PaperBanana/` and installed its requirements in an isolated
+  Python 3.12 environment. Added a tracked launcher that reads the existing
+  ignored Gemini key at runtime, plus local usage instructions.
+- Verified a real image-generation call through PaperBanana's `vanilla` mode
+  and a successful HTTP response from its local Gradio app. The sample stays
+  in ignored `tmp/`; no private legal document or API key was committed.
+
+### 2026-09-29 · Codex (abstract dataset link restored)
+
+- Restored the versioned Hugging Face hyperlink in the camera-ready abstract
+  at the user's request. Kept the printed repository URL and tag in appendix B
+  for systems that strip abstract links. Rebuilt the PDF and verified the main
+  text still ends on page 4, with references starting on page 5.
+
+### 2026-09-29 · Codex (report literature and hybrid build fix)
+
+- Reframed the final report around the hosted, persistent API-backed workbench
+  while keeping the documented BM25, stub extraction, and legal-approval limits.
+  Added seven verified product and research references and rebuilt the 21-page
+  XeLaTeX PDF.
+- Opened research PR #24 to align the statute CLI with the platform Docker
+  build flag and fail incomplete statute or case embedding caches. Five focused
+  tests pass; live hybrid retrieval remains pending PR merge and server access.
+
+### 2026-09-29 · Codex (camera-ready figure, URL, and reference pass)
+
+- Split the cramped side-by-side Figure 3 into a text-width recall-curve figure
+  and a separate text-width ablation table in appendix E. Their captions now
+  describe the correct single item.
+- Removed the live dataset link from the abstract and printed the full public
+  Hugging Face URL plus provisional version tag in appendix B. This remains
+  usable when abstract links are stripped.
+- Checked cited arXiv-only records against arXiv and venue/author records. No
+  official proceedings version was found for LegalBench-RAG,
+  GreekBarRetrieval, or Asking For An Old Friend. Kept their preprint records
+  and noted reported acceptances for the latter two. Rebuilt the PDF with the
+  main text ending on page 4 and references beginning on page 5.
+
+### 2026-09-29 · Codex (related systems review)
+
+- Extended `final-submission/current-platform-system.md` with cited product
+  comparisons and seven academic works on extraction, evidence, retrieval, and
+  legal workflows. Orbital is recorded as a close property-law comparator, so
+  future novelty claims should focus on the validated Sri Lankan RTA workflow
+  rather than the generic idea of document-driven legal drafting.
+
+### 2026-09-29 · Codex (current platform system write-up)
+
+- Inspected the sibling platform's API routers, frontend screens, deployment
+  record, and September test report. Wrote
+  `final-submission/current-platform-system.md` as a dated description of the
+  implemented system. It distinguishes live demo behavior from legal and
+  provider approval gates so the final report can cite the platform accurately.
+
+### 2026-09-29 · Codex (report figures)
+
+- Added the document-processing pipeline and proposed lawyer-annotation
+  visuals to the user's edited `final-report.tex`. Their captions distinguish
+  earlier design choices and pending legal validation from the live demo.
+- Recompiled `final-report.pdf`; both figures render, figure references align,
+  and the PDF remains 21 pages.
+
+### 2026-09-29 · Codex (LaTeX final report)
+
+- Wrote the university-format final report from the research and platform
+  evidence, with corrected retrieval comparisons, implementation boundaries,
+  11 figures, and 25 numbered references. A fresh acceptance-contract review
+  accepted the outline before drafting.
+- Switched the deliverable to LaTeX at the user's request, compiled the user's
+  edited `final-report.tex` directly with XeLaTeX, inspected the PDF layout,
+  and verified embedded fonts. The report
+  treats the draft/export feature as incomplete until form wording is legally
+  verified and distinguishes the synthetic demo from research configurations.
+
+### 2026-09-29 · Codex (final report reading)
+
+- Read the complete final report draft and supplied template. Identified
+  template compliance and internal consistency items to resolve before a
+  submission edit; left the Word documents unchanged.
+- Inspected the sibling platform repository after the user clarified its
+  importance. Its test and deployment records show a substantial product
+  implementation, with a synthetic-data demo and specific approval gates that
+  the final report must describe accurately.
+- Read the 30-slide mid-evaluation deck and identified editable diagrams that
+  can support the final report, separating reusable design assets from
+  superseded mid-project numbers and status claims.
+- Located and visually checked the two generated platform diagrams the user
+  could not find, plus the separate Paperbanana retrieval figure.
+- Collected 24 valid project-created PNGs in `final-submission/figures/` with
+  source and status notes. Excluded report placeholders and private document
+  renders; identified the remaining figure gaps.
+
+### 2026-09-28 · Codex (data-link presentation correction)
+
+- Removed the floating emoji-and-bullet link below the abstract after the user
+  rejected its appearance. Kept the inline Hugging Face link in the abstract
+  and presented the versioned benchmark in a standard appendix B "Data
+  availability" paragraph. Deleted the unused cropped emoji asset. Rebuilt and
+  visually checked pages 1 and 6; the main text remains four pages.
+
+### 2026-09-28 · Codex (first-page data link visibility)
+
+- Moved the hugging-face-icon data link from appendix page 6 to immediately
+  below the abstract on page 1 and enlarged the icon so it is visible on first
+  view. Rebuilt and visually inspected page 1; references still begin on page 5.
+
+### 2026-09-28 · Codex (visible data link)
+
+- Added a small hugging-face-icon “Data and evaluation code” bullet in the
+  benchmark appendix, linking to the versioned public release. Set PDF links
+  to blue text without border boxes while citations remain black. The PDF
+  rebuilt successfully; main text still fits four pages.
+
+### 2026-09-28 · Codex (query rewriting correction)
+
+- Removed LLM query rewriting and generic query expansion from the accepted
+  paper's future-work list after confirming a separate `A5_rewrite` LLM pilot
+  is documented in `docs/retrieval/HYBRID_QUERY_REWRITE_IMPLEMENTATION.md`.
+  Kept the accepted paper's seven-system results unchanged. Rebuilt the PDF;
+  main text still ends on page 4 and references start on page 5.
+
+### 2026-09-28 · Codex (camera-ready review fixes and dataset link)
+
+- Applied the peer-review fix plan to the accepted workshop manuscript,
+  qualifying results against provisional agent-produced labels and the tested
+  graph, benchmark scope and generic reranker. Corrected the appendix to state
+  that attorney review packets are local and the public dataset supports
+  scoring but does not include the frozen corpus or retrieval implementations.
+- Added the versioned public Hugging Face benchmark link in the abstract and
+  appendix. Rebuilt the PDF and verified the conclusion ends on page 4,
+  references start on page 5, and both links are embedded in the PDF.
+
+### 2026-09-28 · Codex (Hugging Face organization transfer)
+
+- Moved both public dataset repositories from `himath-nimpura` to the user's
+  `lanka-legal-nlp` organization. Verified the new repositories are public,
+  retain their original commit IDs, and receive redirects from the old URLs.
+  Updated the dataset release plan and current context with the canonical URLs.
+
+### 2026-09-28 · Codex (public Hugging Face release)
+
+- Made both `himath-nimpura` dataset repos public after checking staged files
+  for NIC-like numbers, email addresses, mobile numbers and `data/raw/`
+  paths. Verified all four public configurations load through the Hugging Face
+  `datasets` library with the intended row counts. New organization ownership
+  remains pending because its web form needs a signed-in browser session.
+
+### 2026-09-28 · Codex (private Hugging Face upload)
+
+- Uploaded both release packages to private `himath-nimpura` dataset repos,
+  created version tags and verified remote file hashes. The user reports
+  Law College redistribution permission. Act URL checks found 58 reachable
+  and 10 unreachable linked rows, with 44 rows still unlinked. Organization
+  creation needs the signed-in Hugging Face web form; transfer and public
+  visibility remain pending until the new organization exists.
+
+### 2026-09-28 · Codex (local Hugging Face release staging)
+
+- Implemented a deterministic local builder for the benchmark, source papers,
+  atomic question pool, provisional section labels, lineage and Act source
+  index. Added dataset-card drafts, SHA-256 manifests, prediction schema and
+  a standalone C@20/R@20 evaluator. Its scores match the paper's recorded
+  S5 test results. Staged files are Git-ignored and have not been uploaded;
+  question-text rights, record review and Act-link checks remain pending.
+
+### 2026-09-28 · Codex (peer-review fix plan)
+
+- Read the single review against the accepted workshop manuscript and wrote
+  `research-paper/peer-review-fix-plan.md`. The plan maps every criticism to
+  proposed camera-ready wording and defers attorney validation, new models and
+  public release until there is actual evidence. It flags the existing release
+  status claim for correction. The paper body was left untouched.
+
+### 2026-09-28 · Codex (dataset release reproducibility correction)
+
+- Corrected the public plan's scientific claim: open test labels support
+  transparent evaluation and inspection, while full score reproduction also
+  needs the frozen corpus and equivalent retrievers. Added provisional label
+  terminology, a small evaluation package, immutable release versions and a
+  112-document first scope for the Act index. The benchmark stays private
+  until Law College redistribution rights and record review are settled.
+
+### 2026-09-28 · Codex (open benchmark scope)
+
+- Expanded the public dataset plan to include reviewed exports of the 16
+  structured past-paper JSON files and lineage from the 50 scored questions
+  to the 667-question atomic collection. The 50-question proposed gold is
+  planned as open, with lawyer validation still pending. The Act link index
+  will extend beyond the paper corpus while reporting coverage separately.
+  The plan notes that links alone do not reproduce the frozen retrieval corpus.
+
+### 2026-09-28 · Codex (public dataset release plan)
+
+- Planned separate Hugging Face releases for the statutory retrieval benchmark
+  and a link-only Act source index. The plan records the proposed-gold status,
+  current 52-of-112 URL coverage, rights and privacy checks, and versioned
+  release gates. No data was uploaded or made public.
+
+### 2026-09-28 · Codex (GlobalSouthAI camera-ready preparation)
+
+- Confirmed the accepted manuscript source is already tracked on local `main`.
+  Enabled the NeurIPS workshop `final` style, added the four user-supplied
+  authors, corrected Himath's email to his institutional address, and rebuilt
+  the PDF successfully. The submitted abstract and conclusion were restored
+  at the user's request. A later compact shared-affiliation author block,
+  modeled on the user's example, fits the complete main text on four pages
+  without shortening the prose. Citations and references resolve, and fonts
+  embed. Venue acceptance instructions and reviewer requests remain unknown.
 
 ### 2026-08-27 · Claude (HiREC baseline on the 21-Act corpus)
 
