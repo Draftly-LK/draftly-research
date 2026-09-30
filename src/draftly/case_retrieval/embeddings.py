@@ -98,7 +98,7 @@ def build_embeddings(force: bool = False) -> int:
     stats = build_index(force=False)
     client = _client()
     if client is None:
-        return 0
+        raise RuntimeError("Gemini embedding client is unavailable")
 
     EMBED_DB.parent.mkdir(parents=True, exist_ok=True)
     store = sqlite3.connect(EMBED_DB)
@@ -118,17 +118,20 @@ def build_embeddings(force: bool = False) -> int:
                 for key, text in _case_chunks(row):
                     if key not in have:
                         pending.append((key, text))
+        expected = len(have) + len(pending)
         for start in range(0, len(pending), BATCH_SIZE):
             batch = pending[start : start + BATCH_SIZE]
             vectors = _embed_batch(client, [text for _, text in batch], task_type="RETRIEVAL_DOCUMENT")
-            if vectors is None:
-                break
+            if vectors is None or len(vectors) != len(batch):
+                raise RuntimeError(f"Case embedding batch failed at offset {start}")
             store.executemany(
                 "INSERT OR REPLACE INTO embeddings (fingerprint, case_id, vector) VALUES (?, ?, ?)",
                 [(stats.fingerprint, key, vector.tobytes()) for (key, _), vector in zip(batch, vectors)],
             )
             store.commit()
         total = store.execute("SELECT COUNT(*) FROM embeddings WHERE fingerprint = ?", (stats.fingerprint,)).fetchone()[0]
+        if total != expected:
+            raise RuntimeError(f"Incomplete case embedding index: {total}/{expected} vectors")
         return int(total)
     finally:
         store.close()
