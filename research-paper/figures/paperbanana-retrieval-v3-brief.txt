@@ -1,0 +1,32 @@
+Draw a precise academic diagram, landscape 16:9, white background, navy text and connectors, pale blue cards, pale gold graph/reference cards, rounded corners, clean sans-serif type. No gradients, shadows, decorative icons, logos, or additional text. Use exactly the following labels. Accuracy takes priority over decoration.
+
+THREE COLUMNS. Left 23% = inputs; middle 47% = three independent method families; right 24% = output, metric, reference. Use open gutters between columns for connector buses.
+
+LEFT: heading "Shared inputs". Top card contains "Scenario query", subtitle "Facts + legal question", and "Section index", subtitle "Title, heading, text". Its outgoing connector labelled "query + index" branches independently to all three method cards. Separate bottom card "Typed statutory graph" at the height of S7 edge expansion. Only one outgoing graph arrow, labelled "typed edges", points directly to S7 "Typed-edge expansion". Do not connect graph to any other method or stage.
+
+MIDDLE TOP card "S1-S5 Flat baselines". Exactly FIVE rows, each appearing ONCE:
+S1 BM25
+S2 Field-weighted BM25
+S3 Dense retrieval
+S4 Hybrid RRF
+S5 Hybrid + cross-encoder
+Never duplicate S3 or any other row.
+
+MIDDLE CENTER small card "S6 Hierarchical retrieval", subtitle "Act routing, then scoped hybrid search".
+
+MIDDLE BOTTOM large card "S7 Structure-aware retrieval". Inside it draw exactly FIVE slim rounded stage blocks in a VERTICAL TOP-TO-BOTTOM chain:
+Hybrid ranking
+Act routing
+Scoped search + seeds
+Typed-edge expansion
+Date filter + rerank
+Use four downward arrows between adjacent stages. Never omit Act routing. Never put seeds before Act routing. The graph arrow enters the FOURTH stage, Typed-edge expansion, from its left side.
+
+The S1-S5 card, S6 card, and the final S7 stage each have INDEPENDENT outputs routed into a common output gutter on their right. The gutter is labelled "separate rankings" and ends in the right-top output card. No method card connects to another method card. The output represents the same type of artifact for each method, not fusion across methods.
+
+RIGHT TOP: blue output card "Each system's top-k", showing a simple ranked list labelled 1, 2, 3 with generic bars.
+RIGHT MIDDLE: metric card "Complete recall C@k", exact rule "1 only when every indispensable section is in top k".
+RIGHT BOTTOM: gold reference card "Proposed indispensable bundle", subtitle "Attorney validation pending", with three empty abstract section chips.
+Two arrows ONLY within this column: the top-k card points DOWN into the metric card, labelled "retrieved sections"; the reference card points UP into the metric card, labelled "reference bundle". The metric is BETWEEN output and reference. No arrow may connect output directly to reference. No arrow goes out of the metric card.
+
+Footer sentence, once: "Offline evaluation on the frozen corpus; reference labels are provisional." No literal Footer label. Ensure all arrowheads and all five S7 stages are visible. Readability, exact wording, and correct connectivity are mandatory. No scores, legal section names, or invented counts.
