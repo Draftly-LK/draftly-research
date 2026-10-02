@@ -1,0 +1,26 @@
+Recreate a precise academic pipeline diagram, landscape 16:9, 4K, pure white background. Match the reviewed Draftly corpus/retrieval figures: dark navy outlines, arrows and text; restrained pale blue rounded query/search/process cards; warm cream only for graph expansion and the answer gate. Sans-serif type, clear hierarchy, ample spacing, no decorative icons, gradients, shadows, photos, logos, scores, provider names, or title banner. The presentation already provides its title. Do not add any large heading above the diagram.
+
+This is a TARGET design in progress, not the deployed system and not the paper's evaluated S7 configuration. Render exactly this simplified core-channel topology from LEFT TO RIGHT. It must be clear that the original query is retained and that graph candidates supplement the fused list.
+
+LEFT INPUT: a compact card "Lawyer question". Fork into TWO independent paths, vertically separated.
+
+UPPER PATH: one card "Original query". Its output forks to TWO parallel pale-blue search cards: "BM25 lexical" and "Dense embeddings".
+
+LOWER PATH: "Bounded query rewrite" points right to "Sanitized rewrite". Directly beneath the sanitized card, plain-text note on two lines: "Search terms only" and "No new citations". The sanitized rewrite forks to TWO parallel search cards: "BM25 lexical" and "Dense embeddings". Thus there are exactly FOUR search cards total: two for the original and two for the rewrite. Never merge the queries before the search cards.
+
+All FOUR search cards point into ONE compact card "RRF fusion". Use an output bus labelled "ranked lists". This bus combines only retrieval lists; do not route it into the rewrite block.
+
+The RRF fusion output splits into TWO candidate paths:
+1. A direct horizontal path into "Final RRF", labelled "fused results".
+2. A lower path into a cream card "Typed graph expansion", then upwards/rightwards into the SAME "Final RRF" card, labelled "graph candidates". A short subtitle under graph expansion reads "From fused section seeds".
+Both arrowheads must visibly ENTER Final RRF. Do not draw a direct graph-to-answer arrow. Do not discard the direct fused list.
+
+Final RRF points to a compact pale-blue card "Retrieved sections", subtitle "Source-linked evidence". This points to a compact cream card "Answer generation + gate", subtitle "Citations + claim checks". The gate then forks to TWO small outcome cards: "Grounded answer" and "Insufficient authority". If needed, stack the evidence and gate vertically on the right, then place the two outcomes beside them. The arrows must still clearly flow from evidence INTO the gate and FROM the gate INTO each outcome. Do not jump straight from retrieval to an answer.
+
+Use compact cards rather than tall mostly-empty vertical panels. Keep the two query paths and four search channels at the same visual scale. No crossing connectors, no back arrows, no connector through text, and no detached label cards. All connectors are dark navy with clear substantial arrowheads.
+
+Two small bottom notes, separate from the pipeline:
+"Core query channels shown; original query retained if rewrite is unavailable."
+"TARGET INTEGRATION · IN PROGRESS"
+
+Spell every supplied label exactly, including "No new citations". Do not add statements that this combined target was deployed, legally validated, or benchmarked. Do not depict the Matter Agent, cases, dense-model names, scores, new storage services, Act names, or invented legal citations.
