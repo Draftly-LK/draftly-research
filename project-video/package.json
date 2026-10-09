@@ -4,8 +4,14 @@
   "version": "1.0.0",
   "description": "Draftly product demo video (Remotion). Outside the product repos on purpose.",
   "scripts": {
-    "studio": "remotion studio",
-    "render": "remotion render src/index.ts DraftlyDemo out/draftly-demo.mp4 --codec h264 --crf 18",
+    "studio": "remotion studio src/index.ts",
+    "check": "tsc --noEmit && node scripts/check-assets.cjs",
+    "render:opening": "remotion render src/index.ts DraftlyOpening out/draftly-opening.mp4 --codec h264 --crf 18 --concurrency 3",
+    "render:review": "remotion render src/index.ts DraftlyDemo out/draftly-review.mp4 --codec h264 --crf 20 --scale 0.666667 --concurrency 3",
+    "render:final": "node scripts/check-assets.cjs --final && remotion render src/index.ts DraftlyDemo out/draftly-demo.mp4 --codec h264 --crf 18 --concurrency 3",
+    "import:footage": "node scripts/import-footage.cjs",
+    "script": "node scripts/export-script.cjs",
+    "render": "npm run render:review",
     "still": "remotion still src/index.ts DraftlyDemo out/still.png"
   },
   "dependencies": {
