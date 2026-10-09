@@ -1,8 +1,3 @@
-# Target hybrid retrieval pipeline
-
-This diagram shows the planned statutory retriever. The original query remains available while a bounded rewrite adds search terms. Both paths use BM25 and dense embeddings, with ranked results fused before and after graph expansion. This exact combination has not yet been evaluated as a deployed system.
-
-```mermaid
 flowchart LR
     Q["Lawyer question"] --> O["Original query"]
     Q --> RW["Bounded query rewrite"]
@@ -37,4 +32,3 @@ flowchart LR
     class OB,OD,RB,RD search
     class F1,G,F2,C,AG process
     class A,X output
-```
