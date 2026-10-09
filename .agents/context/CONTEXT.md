@@ -16,36 +16,56 @@ The pending research work was saved on `docs/research-paper-user-updates` in
 five separate local commits: retrieval figures (`a4381296`), academic
 presentation materials (`ac0cb338`), individual contributions (`d1d9269a`),
 video capture tools (`02e2a8d5`), and workflow video scenes (`23638ee0`).
-The user is continuing video edits; changes arriving after those commits stay
-uncommitted. No push was requested or performed. LaTeX intermediates in the
-individual-contribution folder are now ignored; source and final PDF are tracked.
+The user has now requested that all pending work be committed and integrated
+into `main`. The completed ten-minute film changes are being verified for that
+integration. LaTeX intermediates in the individual-contribution folder are
+ignored; source and final PDF are tracked. Client media, render outputs, and
+the private scratch screenshot `project-video/image.png` remain local.
 
-The active short film is now `DraftlyWorkflowFilm`: the preserved 45-second
-opening plus a 60-second continuation in `project-video/src/continuation/`.
-It uses the same owner-approved case-001 bundle, four supplied portraits,
-actual source-review approvals and a working Form 8 draft. Voiceover remains
-off. Twenty populated draft fields were checked against accepted facts,
-versions and source references. Actual field confirmation is captured;
-unresolved fields, final approval and export remain distinct.
+The active video composition is now `DraftlyFullFilm`, a 600-second edit in
+`project-video/src/long-film/`. It follows all eleven chapter boundaries in the
+user-edited `SCRIPT.md`, while preserving the user's later instructions to use
+the owner-approved case with no voiceover or masking. The earlier 105-second
+`DraftlyWorkflowFilm` and its render remain separate.
 
-The proposed six-group checklist, agent task suggestion, illustrative progress
-and source-change review state remain explicitly labelled workflow concepts.
-The actual extent discrepancy stays open. Originals match the saved source
-hashes, and private media stays ignored by Git. Chrome DevTools could not
-attach to the existing profile; the fresh hosted session required sign-in.
-Captures use the real application in an isolated local film database instead.
+The source-to-fact-to-draft journey uses actual local application captures:
+Approve fact, populate a Form 8 working draft, Confirm selected draft fields,
+inspect unresolved particulars and preflight blockers, and create an internal
+working-draft manifest. Twenty populated fields were checked against accepted
+facts and source references. Final approval and registration remain blocked;
+the actual extent discrepancy remains open. Prepared extraction is labelled.
 
-The full 105-second MP4 is rendered at
-`project-video/out/draftly-workflow-film.mp4` (1920 x 1080, 30 fps, 3,150 frames,
-H.264/AAC, 15.8 MB). TypeScript, required-asset checks and Markdown lint passed.
-Exported scene boundaries and source/approval/draft/concept frames were
-inspected. A clipped catalogue heading was corrected. Audio decoded correctly
-with a -10.5 dBFS peak and no clipping; no narration was requested. Preview and render commands are in
-`project-video/README.md`. The active files are in the root research workspace;
-the sibling `draftly-film-continuation` worktree is stale. The initial capture
-and continuation code is committed locally; newer video edits remain in progress.
-The older 600-second `DraftlyDemo` is a separate unfinished edit; its guarded
-final-render command still reports its missing recordings.
+The ID display raster is now upright (90 degrees counterclockwise), and its
+regenerator records that rotation. The opening paper is aligned within the
+folder. All seven original PDFs match the recorded upload hashes. The supplied
+lawyer screenshot establishes the four portrait captions, including the latest
+Aruni Gunarathne spelling. Practitioner roles imply no certification.
+The opening certificate and instrument pages now fit their full height, with
+room for the entrance movement; their lower stamps and signatures are visible.
+The full MP4 and both opening exports include the correction. The 16-second
+replacement preserves timing and byte-identical audio; complete decoding passed.
+
+The dedicated Research workspace, scope controls and 57-statute/18-amendment
+catalogue are captured. The local matter assistant and answer composer are
+unavailable, so this edit shows their actual availability state and an official
+source lead. It does not replay the old supporting-passage clip. The supplied
+research-paper title is shown without numerical results, and date-sensitive
+source inspection remains visibly Planned. The paper and lawyer reference
+images have separate saved copies; do not regenerate them from `image.png`.
+
+Chrome DevTools could not attach to the existing profile and a fresh hosted
+session needed sign-in. Captures use an isolated local database and the actual
+application; production records were preserved. Private media remains ignored.
+The fast exporter uses owned Chrome on port 9223 and cached Remotion scene
+exports. All 45 shots and 47 required local assets pass validation. The picture
+assembly and final MP4 have 18,000 frames at 1920 x 1080/30 fps, with H.264
+video and 48 kHz AAC audio. The output is 600.000 seconds and 34,332,185 bytes:
+`project-video/out/draftly-full-film.mp4`. Full audio/video decoding passed, with
+a -10.5 dBFS audio peak and no clipping. Representative evidence, approval,
+draft, research, closing and chapter-boundary frames were inspected. A corrected
+45-second opening is also saved as `project-video/out/draftly-opening-aligned.mp4`.
+Preview: `http://localhost:3010/DraftlyFullFilm`. Commands: `npm run check:full`,
+`npm run render:full`; direct Remotion fallback: `npm run render:full:standalone`.
 
 On 9 October 2026, the latest `origin/main` (`fa83da4c`) was pulled and merged
 into `docs/research-paper-user-updates` as `acd50c2a`. The branch now includes
@@ -62,7 +82,7 @@ The Google Sheet required sign-in; it was not modified. Week 9's supplied
 text overlaps with four commits dated 7 September, so the draft flags the
 date correction. Actual meeting dates were not supplied.
 
-_Last updated: 2026-10-09 · by: Codex · repo @ 23638ee0_
+Last updated: 2026-10-09 · by: Codex · repo @ 5f7b8e75
 
 The compact Moodle contribution entry for Himath Dhanapala (230139N) is in
 `final-submission/individual-contribution/contribution.txt` as an HTML fragment.
@@ -1674,6 +1694,26 @@ in the old `contxt.md` were deliberately left out of this file for that reason.)
 ---
 
 ## Log
+
+### 2026-10-09 · Codex: document bottom crop
+
+- Fixed the opening source viewer: natural-height pages exceeded its clipped
+  frame. Pages now use proportional containment with room for their entrance.
+- Inspected both pages and the entrance frame, then replaced the two affected
+  shots in the full MP4 and opening exports. Duration remains 600 seconds and
+  18,000 frames; audio is byte-identical. Complete decoding and TypeScript passed.
+
+### 2026-10-09 · Codex: ten-minute film and ID correction
+
+- Implemented the full eleven-chapter film with the approved case, actual fact
+  approval and working-draft actions, and the separate Research workspace.
+- Corrected the sideways ID display, aligned the opening paper, and used the
+  supplied lawyer names and roles. Original PDFs and portraits remain intact.
+- Preserved real service gaps and unresolved legal questions. Prepared extraction
+  and planned source inspection have explicit labels; no voiceover is connected.
+- Added editable shot timings, fast cached export and full-film asset checks.
+  Final MP4 is 600.000 seconds, 18,000 frames, 1080p H.264/AAC. Full decoding,
+  representative-frame review and Markdown lint passed; audio peak is -10.5 dBFS.
 
 ### 2026-10-09 | Codex | Separate commits for pending research work
 

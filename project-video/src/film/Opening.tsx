@@ -11,7 +11,7 @@ export const FolderArrival: React.FC = () => {
   return <AbsoluteFill><Desk/>
     <div style={{position:'absolute',left:480,top:220,width:960,height:650,transform:`translateY(${interpolate(frame,[0,19,24],[-880,8,0],{...clamp,easing:ease})}px) rotate(-3deg)`,boxShadow:'0 22px 42px rgba(0,0,0,.28)',background:'#AE9874',borderRadius:'3px 3px 7px 7px'}}>
       <div style={{position:'absolute',left:0,top:-45,width:280,height:60,background:'#AE9874',borderRadius:'14px 18px 0 0'}}/>
-      <div style={{position:'absolute',inset:28,overflow:'hidden'}}><SourcePage id="title" style={{width:700,position:'absolute',left:100,top:12,rotate:'2deg'}}/></div>
+      <div style={{position:'absolute',inset:28,overflow:'hidden'}}><SourcePage id="title" style={{width:700,position:'absolute',left:102,top:14,rotate:'0deg'}}/></div>
       <div style={{position:'absolute',inset:0,background:'#B6A17D',borderTop:'1px solid #C8B691',transformOrigin:'left center',transform:`perspective(1800px) rotateY(${interpolate(frame,[76,136],[0,-135],{...clamp,easing:ease})}deg)`,backfaceVisibility:'hidden',boxShadow:'-4px 0 8px rgba(0,0,0,.08)'}}>
         <div style={{position:'absolute',left:80,top:100,width:570,padding:28,border:'1px solid #5F553F',color:palette.ink}}><div style={{fontSize:21,letterSpacing:3}}>CLIENT FILE</div><div style={{fontFamily:type.display,fontSize:60,marginTop:14}}>One property transfer.</div></div>
         <div style={{position:'absolute',left:80,bottom:62,fontSize:26,color:palette.ink}}>Follow the evidence.</div>
@@ -26,7 +26,7 @@ export const ExtentInspection: React.FC<{document: 'title'|'instrument'; compare
   const {fps}=useVideoConfig();
   return <AbsoluteFill style={{background:'#F2EFE9',color:palette.ink}}>
     <Stamp text={compare?'Compare the records':'Read the source'} dark/>
-    <div style={{position:'absolute',left:96,top:150,width:610,height:748,overflow:'hidden'}}><SourcePage id={document} style={{width:610,translate:`0 ${interpolate(frame,[0,1.1*fps],[28,0],{...clamp,easing:ease})}px`}}/></div>
+    <div style={{position:'absolute',left:96,top:150,width:610,height:808,overflow:'hidden'}}><SourcePage id={document} style={{width:'100%',height:780,objectFit:'contain',objectPosition:'left top',boxShadow:'none',filter:'drop-shadow(0 12px 18px rgba(15,27,46,.18))',translate:`0 ${interpolate(frame,[0,1.1*fps],[28,0],{...clamp,easing:ease})}px`}}/></div>
     <div style={{position:'absolute',left:800,top:190,right:96}}>
       <div style={{fontSize:26,letterSpacing:2,color:'#566377'}}>{document==='title'?'TITLE CERTIFICATE':'TRANSFER INSTRUMENT · PAGE 2'}</div>
       <div style={{fontFamily:type.display,fontSize:76,lineHeight:1.07,marginTop:26}}>One detail.<br/>Read in context.</div>

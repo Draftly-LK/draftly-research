@@ -70,7 +70,7 @@ const Portrait: React.FC<PortraitProps> = ({
       <div style={{fontFamily: type.display, fontSize: 34, lineHeight: 1.15, marginTop: 21, color: palette.cream}}>
         {name}
       </div>
-      {children ? <div style={{fontSize: 23, lineHeight: 1.45, color: palette.muted, marginTop: 12}}>{children}</div> : null}
+      {children ? <div style={{fontSize: 28, lineHeight: 1.25, color: palette.muted, marginTop: 12}}>{children}</div> : null}
     </div>
   );
 };
@@ -115,12 +115,19 @@ export const PeopleSection: React.FC = () => {
       />
 
       <Portrait name="Anura Dhanaratna" file="people/anura-dhanaratna.jpeg" left={96} revealAt={0.12} objectPosition="50% 38%">
-        Lawyer · Notary<br />
-        Law College conveyancing lecturer
+        Attorney-at-Law &amp;<br />
+        Notary Public;<br />
+        Lecturer, SLLC
       </Portrait>
-      <Portrait name="Aruni Gunarathna" file="people/aruni-gunarathna.jpeg" left={539} revealAt={0.22} objectPosition="50% 0%" />
-      <Portrait name="Priyal Wijayaweera" file="people/priyal-wijayaweera.jpeg" left={982} revealAt={0.32} />
-      <Portrait name="Ishan Rathnapala" file="people/ishan-rathnapala.jpeg" left={1425} revealAt={0.42} />
+      <Portrait name="Aruni Gunarathne" file="people/aruni-gunarathna.jpeg" left={539} revealAt={0.22} objectPosition="50% 0%">
+        Attorney-at-Law &amp;<br />Notary Public
+      </Portrait>
+      <Portrait name="Priyal Wijayaweera, PC" file="people/priyal-wijayaweera.jpeg" left={982} revealAt={0.32}>
+        President’s Counsel,<br />Attorney-at-Law
+      </Portrait>
+      <Portrait name="Ishan Rathnapala" file="people/ishan-rathnapala.jpeg" left={1425} revealAt={0.42}>
+        Senior State Counsel,<br />Attorney General’s Dept.
+      </Portrait>
 
       <div
         style={{

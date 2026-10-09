@@ -37,7 +37,7 @@ export const ResearchScene: React.FC = () => {
   const {fps}=useVideoConfig();
   return <AbsoluteFill>
     <Heading label="CASE-001 · RESEARCH" headline="Follow the evidence. Inspect the authority." note="Registration of Title Act · supporting passage for lawyer inspection"/>
-    <Sequence durationInFrames={1.6*fps}><RecordedCrop file="footage/17-legal-sources.mp4" trim={2} crop={{x:300,y:15,width:1560,height:647}} settle={.45}/></Sequence>
+    <Sequence durationInFrames={1.6*fps}><RecordedCrop file="footage/17-legal-sources.mp4" trim={2} crop={{x:260,y:15,width:1580,height:656}} settle={.45}/></Sequence>
     <Sequence from={1.6*fps} durationInFrames={1.4*fps}><RecordedCrop file="footage/18-research-scope.mp4" trim={5} crop={{x:550,y:115,width:1250,height:518}} settle={.4}/></Sequence>
     <Sequence from={3*fps} durationInFrames={4*fps}><RecordedCrop file="footage/19-citation.mp4" trim={28} crop={{x:686,y:505,width:844,height:350}} settle={.6}/></Sequence>
     <div style={{position:'absolute',right:96,top:55,fontSize:24,color:palette.muted}}>Before drafting: inspect registration requirements.</div>

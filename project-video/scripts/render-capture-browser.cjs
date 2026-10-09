@@ -28,8 +28,10 @@ const {NodeWebSocketTransport}=internal('NodeWebSocketTransport');
    }
   }else{
    if(!preview)require('./check-workflow.cjs');
+   const rangeArg=process.argv.find(a=>a.startsWith('--range='));
+   const frameRange=rangeArg?rangeArg.slice(8).split('-').map(Number):undefined;
    let lastProgress=-1;
-   await renderMedia({serveUrl,composition,browserInstance:browser,outputLocation:path.join(root,preview?'out/draftly-continuation-preview.mp4':'out/draftly-workflow-film.mp4'),codec:'h264',crf:18,concurrency:2,onProgress:p=>{const pct=Math.floor(p.progress*100/5)*5;if(pct!==lastProgress){lastProgress=pct;console.log(`Render ${pct}%`);}}});
+   await renderMedia({serveUrl,composition,browserInstance:browser,frameRange,outputLocation:path.join(root,frameRange?'out/workflow-patch.mp4':preview?'out/draftly-continuation-preview.mp4':'out/draftly-workflow-film.mp4'),codec:'h264',crf:18,concurrency:2,onProgress:p=>{const pct=Math.floor(p.progress*100/5)*5;if(pct!==lastProgress){lastProgress=pct;console.log(`Render ${pct}%`);}}});
    console.log('Render complete.');
   }
  }finally{browser.disconnect();}
