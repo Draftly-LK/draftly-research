@@ -1,59 +1,96 @@
-# Draftly demo video
+# Draftly product film
 
-A 9-minute product demo, built with Remotion around real recordings of the
-Draftly app. This folder sits outside the product repositories on purpose:
-it holds rendered footage and team media, not product code.
+“One property transfer. Follow the evidence.” The active edit is 10 minutes,
+with a separate 45-second opening. It uses the approved case-001 source scans,
+current Draftly interface recordings, original sound effects and music.
+Voiceover and speech captions are off, as requested.
 
-## What is here
+## Preview and render
 
-| Path | What it is |
-| --- | --- |
-| `src/script.ts` | The narration, section by section (source of truth) |
-| `SCRIPT.md` | The narration sheet each member reads from (generated) |
-| `src/media.ts` | Where you list your audio, camera clips and the case-law clip |
-| `src/Demo.tsx` | The edit: which footage goes in which section |
-| `public/footage/` | App recordings, made by `capture/record.cjs` |
-| `capture/` | The recording scripts and the synthetic documents they upload |
-| `out/` | Rendered video and stills |
-
-## Finish the video
-
-1. **Record narration.** Each member reads their sections from `SCRIPT.md`
-   and saves one file per section into `public/audio/`, named as the sheet
-   shows. Then set each `audio` entry in `src/media.ts`.
-2. **Record a camera clip** of each member (5 to 8 seconds, looking at the
-   camera, square or 16:9). Save as `public/camera/<name>.mp4` and set
-   `CAMERA` in `src/media.ts`. They appear picture-in-picture at the start of
-   each member's part and in the closing credits.
-3. **Record the case-law clip** on the hosted site with OBS (about 12 s):
-   Legal sources, Case law, "Find similar cases", show the results and the
-   "unverified" mark. Save as `public/footage/case-law-live.mp4` and set
-   `CASE_LAW_CLIP`.
-4. If a narration runs longer than its section, raise that section's
-   `seconds` in `src/script.ts`; the footage refits automatically.
-5. Preview with `npm run studio`, then render with `npm run render`.
-
-## Re-recording the app footage
-
-The servers must be running locally with the demo settings
-(`ENVIRONMENT=local`, `USE_STUB_IDENTITY=true`, `EXTRACTION_PROVIDER=vision-stub`,
-`DEMO_RELAXED_GATES=true` in `backend/.env`; `AUTH_BYPASS=true` and
-`NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000` in `frontend/.env.local`).
+Open PowerShell and run:
 
 ```powershell
-cd capture
-python make_docs.py                     # the four synthetic documents
-$env:MATTER_REF = "RTA-2026-DEMO-SALE-04"; node record.cjs   # a new reference each run
-cd ..; node scripts/probe-footage.cjs   # refresh clip lengths
+cd D:\projects\Draftly-Project\draftly-research\project-video
+npm ci
+npm run studio
 ```
 
-Every run creates a new matter, so use a new reference each time.
+Choose **DraftlyOpening** for the opening or **DraftlyDemo** for the complete
+edit. Studio also opens at <http://localhost:3000/DraftlyDemo> when port 3000
+is available.
 
-## Honesty rules for this video
+```powershell
+npm run check
+npm run render:opening
+npm run render:review
+```
 
-- Every document and value is synthetic. Never record real client files.
-- The extraction in this footage is the demonstration reader, not live OCR;
-  the video says so on screen.
-- The form template is a transcription that the legal team has not
-  validated; the video says so. Do not describe exports as filed documents.
-- Two matter-wide approval rules are relaxed for the demo; the video says so.
+The opening is saved to `out/draftly-opening.mp4` at 1080p. The complete
+review cut is saved to `out/draftly-review.mp4` at 720p. A review cut can contain
+clearly labelled editorial sequences where a recording is still required;
+it must not be described as the finished film.
+
+For the final 1080p render, once every recording is supplied:
+
+```powershell
+npm run render:final
+```
+
+This command checks required recordings before writing `out/draftly-demo.mp4`.
+No speech is generated during preview or rendering.
+
+## Change the edit
+
+- `src/film/edit.ts`: chapters, shot lengths, source choices and footage crops.
+- `src/film/Opening.tsx`: folder arrival, readable extent crops and viewer handoff.
+- `src/film/Scenes.tsx`: document comparisons and editorial sequences.
+- `src/film/media.json`: imported recording paths and measured durations.
+- `SCRIPT.md`: the visual script; refresh it with `npm run script`.
+
+The current compositions use `src/film/`. Previous sequences are retained
+outside the active compositions.
+
+## Recordings still needed
+
+The current edit has 10 imported, checked product recordings. Nine recording
+slots remain open, including the working instrument, review record and research
+answer journey. The attempted draft recording did not reach the instrument and
+is excluded from the edit. A complete final film has not been rendered.
+
+Run `npm run check` for the exact current list. Put recordings in
+`public/footage/`. The remaining research recordings must show the current
+product, its actual answer and source passages, without claiming an unresolved
+question was answered or a research lead was legally verified.
+
+Client originals remain in `draftly-platform/inputs/case-001`. Display copies
+and recordings show them without masking under the user's confirmed owner
+approval. These local assets are ignored by Git. Do not commit or publish them
+as part of routine code work.
+
+After a fresh checkout, prepare the display copies from the approved local
+bundle before previewing. With PyMuPDF and Pillow installed in the repository's
+Python environment, run these commands from `project-video`:
+
+```powershell
+..\.venv\Scripts\python.exe scripts/prepare-evidence.py
+..\.venv\Scripts\python.exe scripts/make-sound.py
+```
+
+The checked recordings must also be restored locally at the paths listed in
+`src/film/media.json`. Their measured durations are recorded there. Missing
+local files cause `npm run check` to fail rather than silently substituting
+older footage.
+
+## Recording method
+
+The local capture harness uses an isolated database and a copy of the current
+frontend. It reads source PDFs unchanged, performs local English OCR, and
+supplies prepared structured candidates from the bundle's `expected-fields.json`.
+Remote extraction keys are disabled. Review and draft actions use the actual
+backend services; approval rules remain enforced. Film labels identify the
+prepared extraction and review demonstration. No real-case legal certification
+or successful registration is claimed.
+
+See [ASSETS.md](ASSETS.md) for asset provenance and
+[src/film/evidence-sources.json](src/film/evidence-sources.json) for original
+source checksums.

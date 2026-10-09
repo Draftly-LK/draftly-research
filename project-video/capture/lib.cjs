@@ -80,6 +80,7 @@ class Recorder {
 
   async start(name) {
     const dir = path.join(FRAMES, name);
+    if (!dir.startsWith(path.resolve(FRAMES) + path.sep)) throw new Error('Capture path outside frames workspace');
     fs.rmSync(dir, { recursive: true, force: true });
     fs.mkdirSync(dir, { recursive: true });
     this.clip = { name, dir, frames: [], startedAt: Date.now() / 1000 };
