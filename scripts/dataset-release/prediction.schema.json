@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Statutory section ranking prediction",
+  "type": "object",
+  "required": ["benchmark_question_id", "ranked_section_ids"],
+  "additionalProperties": false,
+  "properties": {
+    "benchmark_question_id": {"type": "string", "minLength": 1},
+    "ranked_section_ids": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+  }
+}

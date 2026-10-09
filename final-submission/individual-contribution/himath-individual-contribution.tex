@@ -1,0 +1,174 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setmonofont{Consolas}
+\usepackage[a4paper,margin=0.8in]{geometry}
+\usepackage{graphicx,booktabs,tabularx,array,enumitem,setspace,fancyhdr,titlesec,xurl,hyperref,microtype,xcolor}
+\definecolor{draftlyblue}{HTML}{173F75}
+\hypersetup{hidelinks,pdftitle={Draftly Individual Contribution Report — Himath Dhanapala},pdfauthor={D. H. N. Dhanapala}}
+\setstretch{1.08}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\setlength{\headheight}{15pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=3pt,topsep=3pt}
+\titleformat{\section}{\large\bfseries\color{draftlyblue}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\titlespacing*{\subsection}{0pt}{8pt}{3pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Draftly | Individual Contribution}
+\fancyhead[R]{\small 230139N}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\newcommand{\evidence}[1]{\par{\small\textbf{Selected evidence:} #1}\par}
+\newcommand{\repo}[1]{\texttt{\nolinkurl{#1}}}
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\includegraphics[width=1.15in]{../figures/brand-draftly-logo-blue.png}\\[8pt]
+{\LARGE\bfseries Individual Contribution Report}\\[5pt]
+{\large Draftly: Legal Retrieval and Conveyancing Matter Workflow}\\[9pt]
+\textbf{D. H. N. Dhanapala (Himath Dhanapala)}\\
+Index Number: 230139N \quad | \quad Group 06\\
+In23-S5-CS3501 Data Science and Engineering Project\\
+Department of Computer Science and Engineering, University of Moratuwa\\[5pt]
+Supervisor: Dr. Nisansa de Silva\\
+Prepared: 2 October 2026
+\end{center}
+
+\section{Contribution overview}
+My work connected the legal-data research with the implementation of the Draftly workbench. I established the research repository and source registry, developed statutory and case-law processing pipelines, built retrieval and OCR experiments, and prepared evaluation datasets and the research-paper draft. In the platform repository, I implemented the initial frontend foundation, contributed backend services and safeguards, built the V1 document-processing pipeline, and implemented the matter-scoped assistant.
+
+I also translated practitioner discussions into scope and workflow decisions, documented the software architecture, and prepared schedules, reports, figures, and presentation material. This report groups those activities by workstream so that the deliverables and their purpose can be assessed together.
+
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{0.25\linewidth}X@{}}
+\toprule
+Workstream & Main contribution \\
+\midrule
+Legal corpus & Source governance, harvesting, canonical statutes, amendments, citation links, and corpus regression checks. \\
+Retrieval and evaluation & BM25 and hierarchy experiments, grounded multi-hop smoke tests, atomic questions, statutory QA benchmarks, and lawyer annotation exports. \\
+Case law and OCR & Judgment crawlers, layout parsers, evidence-linked rule extraction, quality pipelines, and document/past-paper OCR tooling. \\
+Platform engineering & M2 frontend, RTA services and review gates, document-processing orchestration, and matter-agent sessions and memory isolation. \\
+Architecture and delivery & Service designs, Software Architecture Document, practitioner notes, Gantt schedule, paper draft, final-report material, and presentation assets. \\
+\bottomrule
+\end{tabularx}
+
+\subsection{Basis and scope of this account}
+The account combines my supplied activity record with commit history and project artifacts in \repo{draftly-research} and \repo{draftly-platform}. The repositories contain collaborative work; the activities below describe my contribution without assigning the entire system or its aggregate test results to me. Corpus counts refer to identified snapshots. Research labels and extracted legal rules remain subject to lawyer validation. Implementation of a processing provider does not imply that the provider was enabled in the hosted deployment.
+
+\newpage
+\section{Legal-source corpus and case-law processing}
+\subsection{Research foundation and source governance}
+I established the Python project and workflow documentation, then converted the practitioner-provided conveyancing curriculum into a 20-topic legal-source registry. I collected and indexed the initial statutory library, including key statutes, amendments, regulations, and approximately 40 legal-source PDFs at that early stage. I documented source availability and acquisition decisions so that missing material could be distinguished from material already held under another name.
+
+I developed a deterministic relevance gate over 127 recurring statute names. It identified 30 in-scope acquisition candidates and recorded aliases and exclusions. The accompanying structural sweep indexed 39 enactments into 3,269 sections and recorded 872 amendment markers/actions. It resolved 700 of 810 previously failing pinpoint statute links (86.4\%). The recovered links included 370/452 Civil Procedure Code references, 125/136 Prescription Ordinance references, 100/102 Trusts Ordinance references, and 33/33 Prevention of Frauds references. This measured link resolution; it did not establish that every linked provision was legally applicable or that every amendment operation was fully parsed.
+
+\subsection{Canonical statute and amendment pipelines}
+I built harvesting and normalization tools for consolidated HTML and PDF sources, an interactive statute browser, and an amendment-chain pipeline. I improved canonical PDF parsing, parsed CommonLII primary legislation, added OCR evidence for scanned Acts, and merged supplemental HTML section text where it improved source coverage.
+
+On 24 August, I added source-finalization workflows, QA rounds, canonical amendment operations, coverage documentation, and corpus regression checks. I subsequently finalized Registration of Documents sources and contributed the finalized statute packages, consolidated JSON trees, canonical amendments, and refreshed section versions used by the September experiments. The final research snapshot contained 52 principal enactments, 60 amending Acts, 4,557 sections, 17,854 provisions, and 6,346 typed statutory edges.
+
+\subsection{Judgment acquisition, parsing, and rule extraction}
+I harvested and indexed conveyancing case-law sources, normalized records, and created citation relationships. I developed a deterministic recovery crawler, a resumable judgment downloader, year-indexed Supreme Court decisions, and an audit archive. Layout exploration and fingerprinting informed evidence-linked parsers for different judgment formats; I also improved the CommonLII report parser.
+
+I implemented early case-rule extraction, validation, cleaning, quality assessment, and headnote recovery experiments. I preserved Court of Appeal and Supreme Court extraction caches, reference outputs, relevance-gate labels, and Track B run logs, while archiving superseded extraction scripts. These artifacts made failures traceable to source passages and allowed later runs to reuse completed extraction work. Extracted rules were research candidates requiring lawyer review.
+
+\evidence{Research commits \repo{c3f7aa10}, \repo{217616d9}, \repo{7b2d04a4}, \repo{f28efb02}, \repo{fdd046fe}, \repo{88d9492e}, \repo{9a2bd9b7}, and \repo{3e5a13c1}; source registry, finalization tooling, layout notebooks, and corpus outputs.}
+
+\newpage
+\section{Retrieval research, benchmarks, and OCR}
+\subsection{Retrieval experiments}
+I built an early statute BM25 baseline, a retrieval inspection interface, and QA evaluation artifacts. I developed feasibility and corpus-analysis notebooks and strengthened the headnote rule-recovery notebook. I documented retrieval approaches and their fit to Sri Lankan statutes before adding further experiments.
+
+On 25 August, I set up the KoBLEx experiment with its reference implementation, a Sri Lankan statute smoke corpus, a local BM25 comparison, and a grounded multi-hop smoke pipeline. I published smoke evaluation evidence and refreshed corpus metrics. I added a HiREC-inspired hierarchy experiment on 28 August and reran it on the 21-Act corpus on 4 September, with reference papers and experiment documentation. I also retired the Graphiti memory prototype as the architecture evolved.
+
+\subsection{Question preparation and evaluation artifacts}
+I processed the Law College past-paper material into atomic questions with separate shared backgrounds and classified questions by structure and scenario quality. I contributed the \repo{legal-qa-v1} and \repo{statutory-qa-v1} benchmark packages and their pipelines, followed by lawyer annotation templates, generated workbooks, and the exporter that turns proposed provision labels into a reviewable workbook.
+
+The final statutory study evaluated seven systems on a held-out split of 40 questions grouped into 32 matters. I prepared the paper's method description, figures, tables, and bibliography around the benchmark. The evaluation measured whether retrieval recovered the complete proposed bundle of indispensable provisions, rather than merely returning one relevant passage. The labels were provisional, and the leading pairwise intervals included zero; I kept those limits in the report and paper wording.
+
+\subsection{OCR and document-reading research}
+I created the document OCR benchmark harness, expanded model tooling and notebooks, and produced overlays for visual inspection. The matter-document inventory contained four matters, 38 documents, and 282 pages. I treated returned text and model confidence as different from verified field accuracy, and documented that confidence generated by a vision-language model should not be treated as calibrated evidence of correctness.
+
+For the separate past-paper workflow, I implemented orientation correction and deskewing with tests, ran Document AI extraction across all 67 pages of the scan bundle, added an extraction validator, and repaired quotations against the source text. I documented the deskew-then-OCR process and retained page-index and extraction artifacts for reproducibility. These 67 pages belong to the question-preparation workflow, not the 282-page matter-document inventory.
+
+\evidence{Research commits \repo{09326434}, \repo{419e5286}, \repo{47643044}, \repo{b889b88e}, \repo{3b1ad064}, \repo{e606254d}, \repo{9840f755}, \repo{89fdc608}, \repo{77e31d00}, and \repo{e971c234}; \repo{ocr-benchmark/}, evaluation run records, and benchmark pipelines.}
+
+\newpage
+\section{Frontend, architecture, and governed workflows}
+\subsection{M2 frontend foundation}
+I implemented the initial M2 engineering and domain foundations, including the app shell, command palette, deterministic demo state machine, role-aware matters ledger, and matter overview. I built document intake and evidence review, the five-state fact-verification workbench, checks and resolution screens, workflow catalogue and guided runs, and the early grounded legal-assistant interface.
+
+I added the Tiptap editor with FactChip support, versioned editing, and a verified-fact draft-generation gate. I also built activity and resumable history views, settings, help, a governed source library, onboarding, and a Sinhala locale scaffold. This created a consistent interface foundation that the team later connected to persistent services and refined.
+
+I rebuilt an early demo state around a supplied RTA transfer example, with 38 facts, nine documents, and seven checks, and connected drafting readiness to one deterministic gate. I corrected related state-management defects. The implementation work used document-derived material for development; this contribution report contains no client names, identifiers, addresses, or source text. I also audited 20 previously unmerged Tiptap statutory forms and five custom nodes and recorded discrepancies for legal review.
+
+\subsection{Architecture and scope decisions}
+I prepared the Software Architecture Document and the backend implementation design baseline. The designs covered infrastructure, authentication, matters, document processing, verification, checks, research, memory, voice, governed content, workflows, drafting, approvals, export, obligations, and audit. Design coverage records intended service boundaries; individual features such as voice were not thereby completed.
+
+I documented the RTA-first product boundary, immutable-source evidence review, reproducible checklist and matter runs, and LibreChat's limited role as an assistant-interface reference. Practitioner and supervisor meeting notes supplied the reasoning behind the scope and interface plan. I prepared the conveyancing roadmap, legal-corpus snapshot, and member-owned Gantt schedule.
+
+\subsection{Backend workflow implementation and integration}
+Beyond the designs, I contributed the modular backend foundation and RTA workflow implementation: immutable document ingestion, evidence-linked fact verification, governed checklists, deterministic checks, safeguarded draft generation, and approval/registration gates. I added associated contract and policy tests and helped compose the services and align frontend contracts with the RTA state model.
+
+I also worked on identity provisioning, migration integration, API clients, and review automation. Later fixes addressed processing insert order, redaction of database error parameters, tenant-scoped fact reads, and matters sorted by recent activity. These changes supported predictable workflow transitions and reviewable service behavior.
+
+\evidence{Platform commits \repo{0f021cd}, \repo{9a8f235}, \repo{e3946c9}, \repo{c287c53}, \repo{4495dea}, \repo{dea56de}, \repo{712d702}, \repo{4295ac5}, and \repo{bc6cdfc}; architecture designs and \repo{proj-docs/Software Architecture/Draftly_SAD_v1.0.pdf}.}
+
+\newpage
+\section{V1 document pipeline and matter assistant}
+\subsection{Document-processing implementation}
+On 29 August, I specified and implemented the V1 document-processing pipeline in \repo{draftly-platform}. The work connected source storage, OCR, classification, extraction, persistence, and evidence review:
+\begin{itemize}
+\item Added GCS and Vision dependencies and immutable source-object handling, with generation-pinned immutability tests.
+\item Modelled OCR rotation and page grouping, implemented multilingual Vision OCR, and added batched governed Gemini classification.
+\item Built the pipeline orchestrator and persisted processing and review records, with private GCS ingestion wiring.
+\item Added evidence-backed approval of extracted candidates and the frontend document-review workspace.
+\item Added a privacy-safe live-case runner, corrected the extraction schema for the Developer API, and fixed processing insert order.
+\end{itemize}
+The pipeline preserves the source document as evidence while recording processing outputs and lawyer decisions separately. This was an implementation contribution with provider adapters and review flows. The documented hosted configuration later used stub extraction, so the report distinguishes this completed engineering work from enabled production processing.
+
+\subsection{Matter-scoped master agent}
+On 31 August, I designed and implemented the matter-scoped master agent. I first wrote its plan, service boundaries, security requirements, and memory contracts. I then implemented guarded foundations, matter-scoped orchestration, persisted sessions with isolated memory, API job wiring and contract coverage, and the frontend matter-assistant workspace.
+
+The service uses the active matter as its context boundary. Administrative checklist writes are guarded, and conversation state is persisted within the relevant session and matter scope. My contribution included both the orchestration service and the user interface needed to inspect and continue the conversation.
+
+The Matter Agent can discuss matter state. The documented deployment exposes cited statutory research through a separate research workspace; direct legal-research calling from the Matter Agent was not connected in the checked snapshot. That boundary is retained in the final report and presentation.
+
+\subsection{Engineering safeguards and verification}
+I added focused verification alongside these implementations, including storage immutability, ingestion safeguards, check runners and policies, draft-generation restrictions, approval policies, and agent API contracts. I also addressed privacy and isolation issues such as database error redaction and tenant-scoped reads.
+
+The project's later backend, frontend, and browser test totals reflect the team's combined testing work. My contribution is the specific implementation, tests, fixes, and review artifacts identified here; software test results do not establish legal correctness of extracted facts, statutory labels, or form wording.
+
+\evidence{Platform commits \repo{e75b7e9}, \repo{0db0720}, \repo{22ee26a}, \repo{95e491c}, \repo{37c4071}, \repo{0bf20c2}, \repo{a39e3ad}, \repo{243b297}, \repo{439269f}, \repo{18ec865}, \repo{b751df8}, \repo{38249ab}, and \repo{8f729c1}.}
+
+\newpage
+\section{Academic deliverables and milestone record}
+\subsection{Research paper and final submission}
+I wrote and revised the first full research-paper draft, assembled the method and experimental descriptions, and prepared figures, result tables, bibliography, and the submission PDF. The September rewrite integrated the finalized statutory corpus and benchmark evidence. The team subsequently reported acceptance to the NeurIPS 2026 GlobalSouthAI workshop.
+
+I also prepared final-report material, current-system documentation, diagrams, presentation structure, speaking notes, and visual assets. These deliverables explain the connection between the statutory research and the lawyer-controlled matter workflow while preserving the limits of the experiments and deployed configuration. I installed an official local PaperBanana launcher to support academic illustration work and prepared figure-generation briefs and corrected publication assets.
+
+\subsection{Milestones}
+\begin{tabularx}{\linewidth}{@{}p{0.19\linewidth}X@{}}
+\toprule
+Period in 2026 & Contribution completed \\
+\midrule
+10--19 July & Established research tooling and the source registry; acquired initial statutes and case law; added retrieval baselines, rule extraction/validation, and practitioner meeting documentation. \\
+22--31 July & Implemented the M2 frontend; prepared feasibility notebooks, corpus snapshot, schedule, roadmap, Software Architecture Document, and backend service designs. \\
+1--16 August & Reworked the RTA demo and review gates; developed statute relevance/link recovery; built judgment acquisition and layout parsing, rule caches, and OCR benchmark tooling. \\
+17--23 August & Contributed RTA backend services and frontend integration; processed the 67-page past-paper bundle; built statute harvesting, normalization, browser, and amendment-chain tooling. \\
+24--30 August & Finalized statute sources and amendments; added KoBLEx and hierarchy experiments; expanded OCR evaluation; implemented the V1 document pipeline and review workspace. \\
+31 August & Implemented matter-agent service boundaries, orchestration, isolated sessions, API jobs, and the assistant workspace; fixed document-processing and privacy issues. \\
+4--10 September & Prepared atomic questions and scenario classifications, reran hierarchy retrieval, finalized corpus/benchmark packages, rewrote the paper, and exported lawyer annotation workbooks. \\
+Late September & Prepared final-report and current-system material, presentation assets, and local academic-figure generation tooling. \\
+\bottomrule
+\end{tabularx}
+
+\subsection{Evidence and attribution}
+The selected commits throughout this report are locators for representative work, rather than a measure of contribution by commit count. Research commits use the author identity \textit{Himath Nimpura}; the submitted student identity is D. H. N. Dhanapala, 230139N. The records can be inspected in the two local repositories together with the source registry, notebooks, evaluation runs, architecture documents, platform tests, and \repo{research-paper/neurips_2026.tex}.
+
+My contribution established the legal-data and evaluation foundation and implemented substantial parts of the matter workflow, document review, and assistant experience. The final system and publication remain collaborative deliverables with shared integration, review, and validation responsibilities.
+\end{document}

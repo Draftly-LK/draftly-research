@@ -43,8 +43,17 @@ OCR text. Neither is represented as a live service.
 
 ## Retrieval research and evaluation
 
+The two `reviewed` PNGs below are the accepted 2 October recreations. Their
+originals remain in `research-paper/figures/`; the review records both factual
+and visual checks in `research-paper/figures/figure-review-2026-10-02.md`.
+
 | File | Source | Status |
 | --- | --- | --- |
+| `research-syllabus-guided-corpus-reviewed.png` | `research-paper/figures/syllabus-guided-corpus-paperbanana-v3.png` | Reviewed corpus-construction figure; 5,504 × 3,072 pixels. |
+| `research-retrieval-evaluation-reviewed.png` | `research-paper/figures/retrieval-evaluation-paperbanana-v3.png` | Reviewed independent S1–S7 methods and provisional-label scoring; 5,504 × 3,072 pixels. |
+| `research-case-law-retrieval-v3.png` | `final-submission/presentation/case-law/Draftly-Case-Law-Retrieval-PaperBanana-v3.png` | Reviewed case-law pipeline with a regular dense branch, corroboration, and two proxy pilot snapshots; 5,504 × 3,072 pixels. |
+| `research-target-hybrid-retrieval-v3.png` | `final-submission/presentation/target-retrieval-pipeline/Draftly-Target-Hybrid-Retrieval-PaperBanana-v3.png` | Reviewed target integration with four query channels, graph supplementation, and an explicit answer gate; marked in progress. |
+| `research-target-hybrid-retrieval-polished-v4.png` | `final-submission/presentation/target-retrieval-pipeline/Draftly-Target-Hybrid-Retrieval-Polished-v4.png` | Polished editable redraw; 4,800 × 2,700 pixels, with clearer stages and the outcome label “Not enough legal evidence”. |
 | `research-architecture-preview.png` | `research-paper/figures/architecture-preview.png` | Preview; a vector source also exists in the research folder. |
 | `research-benchmark-construction-preview.png` | `research-paper/figures/benchmark-construction-preview.png` | Preview; a vector source also exists in the research folder. |
 | `research-corpus-retrieval-preview.png` | `research-paper/figures/corpus-retrieval-preview.png` | Earlier preview of the corpus and retrieval diagram. |

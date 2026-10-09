@@ -1,7 +1,8 @@
 \documentclass{article}
 
-% NeurIPS 2026 GlobalSouthAI workshop, short paper: 4 pages excluding references and appendices, double-blind.
-\usepackage[dblblindworkshop]{neurips_2026}
+% NeurIPS 2026 GlobalSouthAI workshop camera-ready short paper:
+% 4 pages excluding references and appendices.
+\usepackage[dblblindworkshop,final]{neurips_2026}
 \workshoptitle{GlobalSouthAI}
 
 \usepackage[utf8]{inputenc}
@@ -15,8 +16,10 @@
 \usepackage{microtype}
 \usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{multirow}
 \usepackage{longtable}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black,citecolor=black}
 
 \graphicspath{{figures/}}
 
@@ -26,9 +29,9 @@
 \title{Does Statutory Structure Help? Retrieving Every Indispensable Provision for Sri Lankan Conveyancing Scenarios}
 
 \author{%
-  Anonymous Author(s)\\
-  Affiliation\\
-  \texttt{email}\\
+  \textbf{Himath Dhanapala, Lahiru Dilshan, Praveen de Silva, Nisansa de Silva}\\
+  Dept. of Computer Science \& Engineering, University of Moratuwa, Sri Lanka\\
+  \texttt{\{himathd.23, lahirud.23, praveend.23, nisansadds\}@cse.mrt.ac.lk}
 }
 
 \begin{document}
@@ -49,16 +52,18 @@ each mapped to the sections indispensable to a complete answer with verbatim
 provenance; and seven retrievers, from BM25 to a hierarchical system that
 routes to Acts, retrieves seed sections and expands them along the typed
 edges. The principal metric, complete-indispensable recall, credits a question
-only when every indispensable section is retrieved. Structure does not help:
-complete recall at 20 is \cAtTwentyRef{} for hybrid BM25 and dense fusion and
-\cAtTwentyOurs{} for the structure-aware retriever, with a paired
-matter-level bootstrap interval that includes zero. No system completes a
+only when every indispensable section is retrieved. Against proposed labels,
+this explicit graph shows no complete-recall gain at 20 on the test split:
+\cAtTwentyRef{} for hybrid BM25 and dense fusion versus \cAtTwentyOurs{} for
+the structure-aware retriever; the paired matter-level bootstrap interval
+includes zero. No system completes a
 question needing four or more sections, and only two of the sections the
 structure-aware retriever missed were reachable by any typed edge from a
-retrieved seed: the gold dependencies are jointly required provisions that no
-cross-reference wording connects. Gold labels are agent-produced and
-agent-verified and are released as proposed gold pending a three-attorney
-validation whose protocol we specify.
+retrieved seed: most proposed dependencies lack an explicit edge from a seed.
+The agent-produced labels are released on
+\href{https://huggingface.co/datasets/lanka-legal-nlp/draftly-statutory-retrieval/tree/v1.0-paper-provisional}{Hugging Face}
+as provisional reference labels and await three-attorney validation
+(Appendix~\ref{app:bench}).
 \end{abstract}
 
 \section{Introduction}
@@ -94,16 +99,15 @@ indispensable provision for scenario questions in a low-resource jurisdiction?
 We contribute (1) an expert-informed corpus of Sri Lankan conveyancing and
 notarial legislation linking enactments, sections, amending Acts and typed
 relationships; (2) a benchmark from sixteen Law College examination papers
-whose gold maps separate indispensable, supporting and background provisions
+whose proposed labels separate indispensable, supporting and background provisions
 and tie answer claims to verbatim statutory text (\S\ref{sec:data}); and (3)
 an evaluation of lexical, dense, hybrid, hierarchical and provision-bundle
 retrievers under complete-indispensable recall with matched ablations and
-matter-level uncertainty (\S\ref{sec:method}, \S\ref{sec:results}). The
-extracted structure does not beat strong hybrid retrieval, because
-indispensable provisions are jointly required without any cross-reference
-wording connecting them. The gold is agent-produced and agent-verified;
-attorney validation has not run, so every number here is a measurement
-against proposed gold (\S\ref{sec:limits}).
+matter-level uncertainty (\S\ref{sec:method}, \S\ref{sec:results}). The tested
+edge graph does not demonstrate a gain over strong hybrid retrieval: most
+missed indispensable sections lack a one-hop edge from retrieved seeds.
+Attorney validation has not run, so every number here is measured against
+agent-produced proposed labels (\S\ref{sec:limits}).
 
 \section{Corpus and benchmark}
 \label{sec:data}
@@ -225,11 +229,11 @@ were chosen on the development split; Table~\ref{tab:main} is the test split.
 \end{table}
 
 \paragraph{Main result.} Fusing field-weighted BM25 with dense retrieval (S4)
-is the strongest system on R@20 (\rAtTwentyRef{}) and on Act identification,
-and it ties the hierarchical systems on complete recall: S6 reaches C@20 of
+is the strongest system on R@20 (\rAtTwentyRef{}) and on Act identification;
+C@20 differences among S4, S6 and S7 are uncertain: S6 reaches C@20 of
 0.375 and S7 \cAtTwentyOurs{}, against \cAtTwentyRef{} for S4, and every
 pairwise difference among S4, S6 and S7 has a bootstrap interval that includes
-zero (Appendix~\ref{app:ci}). Two components hurt. The web-trained
+zero (Appendix~\ref{app:ci}). In this test, two components hurt. The MS MARCO
 cross-encoder (S5) drops MRR from 0.543 to 0.223 and C@10 to 0.125. Act
 routing with three retained Acts contains every gold Act on only 44\% of test
 questions (12 of 40 need two or more Acts), so Act identification falls from
@@ -251,47 +255,57 @@ section, 0.25 to 0.67 on the twelve with two, 0.2 to 0.4 on the five with
 three, and 0.0 on all twenty with four or more. Of the 114 indispensable
 sections S7 left outside its top 20, two were reachable by a single typed edge
 from any retrieved seed: the graph is dominated by term-matching definition
-edges (\nEdgesDefines{} of \nEdges{}), while the gold dependencies are jointly
-required provisions that no cross-reference string connects. Enriched
+edges (\nEdgesDefines{} of \nEdges{}); most proposed-gold dependencies lack a
+one-edge path from retrieved seeds. Enriched
 scenarios, whose added facts name the conditions the provisions test, are
 easier than the originals (C@20 0.43 against 0.11 for S7).
 
 \section{Limitations}
 \label{sec:limits}
 
-The gold is proposed, not validated. \nBlocked{} Tier A questions were blocked
-because the governing text (schedules, stamp duty orders, Roman-Dutch
-principles) is not in the corpus and \nReserved{} case-law questions were
-reserved, so the benchmark under-represents the hardest questions; the test
-split has \nTestM{} matters, so intervals are wide. Edge typing is an
-unmeasured cue-word heuristic, temporal filtering uses insertion years rather
-than version histories, and answer generation is not scored. The benchmark
-measures retrievers, not legal advice: anything scored on it returns
-unverified statutory text that a lawyer must check.
+The labels are proposed, not attorney-validated. Legal review may add, remove
+or relabel indispensable provisions, changing recall values and possibly
+system rankings. Only statute-only questions with governing text in the frozen
+corpus are scored: \nBlocked{} Tier A questions lack governing text or doctrine,
+and \nReserved{} questions need case law. The test has \nTestQ{} questions in
+\nTestM{} matters, so intervals are wide. Edge typing uses cue words and
+temporal filtering uses insertion years rather than version histories; richer
+relations and legal-domain rerankers are untested. Answer generation is not
+scored, and retrieved statutory text still requires lawyer review.
 
 \section{Conclusion and future work}
 \label{sec:conclusion}
 
-On this benchmark, Act routing and typed-edge expansion as extracted here do
-not improve complete recall over hybrid BM25 and dense fusion, and no system
-completes a question that needs four or more sections. The gap is coverage,
-not ranking: jointly required provisions are rarely joined by cross-reference
-wording. Three steps follow. First, complete the three-attorney validation
-(Appendix~\ref{app:bench}) and release validated gold with agreement
-statistics, so every number here can be re-measured against lawyer-approved
-labels. Second, fine-tune the dense retriever and cross-encoder on Sri Lankan
-statutory text, since the web-trained reranker halved MRR. Third, widen the
-benchmark to the reserved case-law questions, more matters and Acts, and more
-systems: query expansion, SPLADE and LLM query rewriting, which the enriched
-scenarios suggest matter most.
+Against proposed labels on \nTestQ{} test questions, the tested Act routing
+and explicit-edge expansion do not demonstrate a complete-recall gain over
+hybrid BM25 and dense fusion. No system completes a question needing four or
+more sections. The one-hop graph leaves most jointly required provisions
+unreachable; richer legal relations remain untested. Future work starts with
+three-attorney validation (Appendix~\ref{app:bench}) and release of validated
+gold with agreement statistics, so every result can be re-measured against
+lawyer-approved labels. Other steps are domain adaptation of the dense
+retriever and cross-encoder, and a wider benchmark covering reserved case-law
+questions, more matters and Acts.
 
 \bibliographystyle{plainnat}
 \bibliography{references}
 
+\clearpage
 \appendix
 
 \section{Corpus construction}
 \label{app:corpus}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{syllabus-guided-corpus-paper-ready.png}
+  \caption{Syllabus-guided corpus construction. Law College conveyancing course
+  tables identify the principal enactments; amending Acts remain separate
+  source documents. A deterministic build yields the section index and a
+  heuristically typed statutory graph. The graph is structurally checked, not
+  lawyer-validated for legal indispensability.}
+  \label{fig:corpus-overview}
+\end{figure}
 
 Cross-references are typed by the wording around them: ``within the meaning
 of'' becomes \textsc{defines}, ``notwithstanding'' and ``shall not apply''
@@ -338,8 +352,17 @@ background sets are disjoint; a proposed-gold question has at least one
 indispensable provision, a hop count of at least one, and no case-law
 citation in its answer; enrich questions carry labelled synthetic facts and
 keep questions carry none. A verification report and a disagreement log are
-written per matter. Review packets and empty approval forms ship with the
-data.
+written per matter. Review packets and empty approval forms are prepared
+locally for attorneys and excluded from the public benchmark release.
+
+\paragraph{Data availability.} The provisional benchmark and evaluation code
+are available from the public Hugging Face repository under tag
+\texttt{v1.0-paper-provisional}. Its address is:
+\par\noindent
+\url{https://huggingface.co/datasets/lanka-legal-nlp/draftly-statutory-retrieval}
+\par\noindent
+The release supports inspection and scoring predictions, but excludes the
+frozen Act text and retrieval systems needed to reproduce the paper's runs.
 
 \paragraph{Legal validation protocol.} The validation follows the human stage
 of KoBLEX \citep{lee2025koblex}, adapted to the provision as the unit. Three
@@ -365,6 +388,18 @@ Appendix~\ref{app:bench}.
 
 \section{Configuration and compute}
 \label{app:config}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{retrieval-evaluation-paper-ready.pdf}
+  \caption{Offline retrieval and evaluation overview. S1--S5 are flat
+  baselines; S6 routes the query to Acts before section retrieval; S7 adds
+  typed-edge expansion and temporal filtering. The same scenario question and
+  section index are used throughout, while typed graph edges enter S7's
+  expansion stage only. Returned top-$k$ sections are compared with a proposed
+  indispensable bundle, pending attorney validation.}
+  \label{fig:retrieval-overview}
+\end{figure}
+
 \input{tables/config}
 
 \smallskip
@@ -379,18 +414,21 @@ tuning and smoke runs used the same machine.
 \section{Ablations and recall curves}
 \label{app:ablations}
 
-\begin{figure}[h]
+\begin{table}[htbp]
   \centering
-  \begin{minipage}[c]{0.46\linewidth}
-    \centering
-    \includegraphics[width=\linewidth]{complete_at_k}
-  \end{minipage}\hfill
-  \begin{minipage}[c]{0.52\linewidth}
-    \centering
-    \scriptsize
-    \input{tables/ablations}
-  \end{minipage}
-  \caption{Left: complete-indispensable recall against the cutoff $k$ on the test split. The curves of the hybrid and hierarchical systems cross repeatedly and none clears 0.4 at $k=20$. Right: ablations of S7 (matter-macro means); no removal changes C@20 by more than one question in 32 matters.}
+  \caption{Ablations of S7 (matter-macro means). No removal changes C@20 by
+  more than one question in 32 matters.}
+  \label{tab:ablations}
+  \small
+  \input{tables/ablations}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth]{complete_at_k}
+  \caption{Complete-indispensable recall against the cutoff $k$ on the test
+  split. The curves of the hybrid and hierarchical systems cross repeatedly;
+  none clears 0.4 at $k=20$.}
   \label{fig:curve}
 \end{figure}
 

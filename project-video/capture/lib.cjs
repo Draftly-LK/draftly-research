@@ -115,7 +115,7 @@ class Recorder {
     execFileSync(FFMPEG, [
       "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", "list.txt",
       "-vf", "scale=1920:1080:flags=lanczos,format=yuv420p", "-r", "30", "-fps_mode", "cfr",
-      "-c:v", "libx264", "-preset", "slow", "-crf", "16", "-movflags", "+faststart", out,
+      "-c:v", "libx264", "-preset", process.env.DRAFTLY_CAPTURE_PRESET || "slow", "-crf", "16", "-movflags", "+faststart", out,
     ], { cwd: clip.dir, stdio: "inherit" });
     const secs = clip.frames[clip.frames.length - 1].t - clip.frames[0].t;
     console.log(`[clip] saved ${clip.name}.mp4 (${clip.frames.length} frames, ~${secs.toFixed(1)}s)`);

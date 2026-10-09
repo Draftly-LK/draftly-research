@@ -1,0 +1,13 @@
+Create a clean 16:9 academic pipeline figure for a university presentation. This is a VISUAL REFERENCE for a planned Draftly statutory retrieval integration, not a screenshot of deployed software. Use a Swiss-style visual language: white background, International Klein Blue (#002FA7), dark text, pale blue grouping panels, thin straight connectors, no gradients, no shadows, no 3D, no photos, no people, no decorative AI imagery. Leave ample margins and make all labels readable from a projector. ABSOLUTELY NO TITLE, HEADING, LOGO, OR LARGE TEXT ABOVE THE DIAGRAM. Start the flow near the top margin. The PowerPoint slide already supplies its own title and logo.
+
+The architecture must be technically exact. Show LEFT TO RIGHT flow:
+
+1. "Lawyer question".
+2. Split into two query paths. The first keeps the "Original query" exactly. The second goes through "Bounded query rewrite" and yields a "Sanitized rewrite". The rewrite is a search string only, and must not introduce invented citations. It adds a path; it does not replace the original query.
+3. In PARALLEL, each query path searches TWO channels: "BM25 lexical" and "Dense embeddings". Thus show four retrieval channels total: original/BM25, original/dense, rewrite/BM25, rewrite/dense. Use arrows so this parallel structure is unmistakable.
+4. All four ranked lists converge at "RRF fusion".
+5. The output of "RRF fusion" SPLITS into two paths. One path goes directly to "Final RRF". The other goes through "Typed graph expansion" from fused statutory-section seeds and then to "Final RRF". Show both arrows entering Final RRF; the original fused results must not disappear when graph candidates are added.
+6. "Final RRF" combines the direct fused list and graph-expanded candidates.
+7. End at "Cited sections" and a small outcome fork: "Grounded answer" or "Insufficient authority".
+
+Put a small restrained status tag reading "TARGET INTEGRATION · IN PROGRESS" at the bottom. Do not show metrics, test scores, model/provider names, or claim that this exact combined pipeline is deployed or evaluated. Do not show the Matter Agent as directly connected to statutory search. Make every arrow directional, with no backward or ambiguous routing. Use only the exact labels above, with no speculative additional components. In particular, do not invent a title. If a label will not fit, enlarge the panel rather than abbreviating it.

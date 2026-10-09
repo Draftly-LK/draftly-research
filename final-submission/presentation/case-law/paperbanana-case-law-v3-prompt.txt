@@ -1,0 +1,78 @@
+Create a polished 16:9 academic presentation illustration for Draftly, titled
+"Finding analogous conveyancing cases". Recreate the content of the supplied
+case-law slide as a clear, spacious, carefully aligned scientific pipeline.
+This is a SEPARATE CASE-LAW RETRIEVER, not the statutory retrieval architecture.
+Do not add rewriting, statutory section retrieval, answer generation, or an LLM.
+
+VISUAL STYLE
+White background. Navy text and arrows (#183B63), pale blue search cards,
+very pale cream fusion/gate cards, muted green result card, white or light grey
+dense card matching the other retrieval cards. Consistent rounded corners, thin borders, no heavy shadows,
+no decorative icons. Use large readable sans-serif typography, generous margins,
+equal-sized retrieval cards, crisp orthogonal connectors with filled arrowheads.
+Use clean spelling and wrap complete words. Do not split "corroboration".
+Use all the available space without making labels tiny.
+
+TOP AREA
+Small heading: "PART I · LEGAL INFORMATION RETRIEVAL".
+Title: "Finding analogous conveyancing cases".
+Compact corpus strip below the title, exact text:
+"5,121 conveyancing-flagged cases / 9,177 collected".
+
+CENTRAL PIPELINE
+Layout flows left to right, vertically centered. The first two cards are
+"Fact pattern" -> "Case index". The case index fans out into three parallel
+retrieval cards stacked vertically; their output joins one fusion card.
+
+TOP retrieval card (active, pale blue):
+"BM25 lexical search"
+smaller text: "Judgment text + rule statements + catchwords".
+MIDDLE retrieval card (active, pale blue):
+"Case graph"
+smaller text: "Shared statutes + curriculum topics"
+small second line: "Seeded graph expansion".
+BOTTOM retrieval card (pale blue, solid border and solid navy connections):
+"Dense embeddings"
+smaller text: "Semantic similarity".
+
+All three cards point into "RRF rank fusion".
+Fusion points into a separate "Corroboration gate" card.
+Gate subtitle, EXACT: "Lexical or graph support required".
+Gate branches to TWO distinct output cards stacked vertically:
+upper: "Cited similar cases"
+lower: "No similar cases".
+Do not use "insufficient authority" or "not enough legal evidence" here.
+
+CONNECTIONS - EVERY ARROW MUST HAVE THE CORRECT DIRECTION
+Fact pattern -> Case index.
+Case index -> BM25 lexical search (solid navy).
+Case index -> Case graph (solid navy).
+Case index -> Dense embeddings (solid navy).
+BM25 lexical search -> RRF rank fusion (solid navy).
+Case graph -> RRF rank fusion (solid navy).
+Dense embeddings -> RRF rank fusion (solid navy).
+RRF rank fusion -> Corroboration gate (solid navy).
+Corroboration gate -> Cited similar cases (solid navy).
+Corroboration gate -> No similar cases (solid navy).
+Keep all connectors outside cards and text; no crossings or accidental arrows
+between the search cards. No optional-channel legend or optional label.
+
+BOTTOM EVIDENCE PANEL
+One wide light panel titled "20-query proxy pilot".
+Inside it, two equal cards side by side, with no arrow between them:
+LEFT: big "14 / 20", small "Initial corpus snapshot".
+RIGHT: big "10 / 20", small "Rebaselined corpus snapshot".
+Below both, readable single-line note:
+"Different corpus snapshots · LLM proxy judgements · Dense inactive".
+Do not call these lawyer-validated accuracy, and do not imply an improvement or
+controlled before/after treatment comparison. Do not add percentage metrics.
+
+CONTENT ACCURACY
+The code implements BM25 judgment/rule/catchword search, a case graph seeded by
+statute mentions and lexical hits, a dense channel, RRF fusion, and a
+corroboration filter. Dense-only hits cannot establish returned similar cases.
+Statute and topic links rank candidates; they do not establish legal holdings.
+This figure presents architecture and two exploratory proxy pilot snapshots.
+No invented citations, examples, case details, or implementation-status badges.
+
+Output one sharp, publication-quality landscape figure suitable for a slide.

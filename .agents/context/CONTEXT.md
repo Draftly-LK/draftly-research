@@ -12,33 +12,268 @@ finish a chunk of work, update it with the `update-context` skill
 
 ## Current State
 
-The Draftly product film now uses an editable 600-second evidence-led edit and
-a separate 45-second opening in `project-video`. The user approved local use
-of the owner's case-001 bundle, requested full unmasked display, and disabled
-voiceover. Originals remain unchanged. Client scans, recordings, capture state
-and rendered videos stay out of Git. The active edit cannot fall back to older
-case footage. It uses ten checked current product recordings, prepared
-extraction labels, original cached sound and the repository's brand assets.
-Nine working-instrument, review-record and research recording slots remain
-open; the failed draft capture is excluded. The full final film is unfinished.
-Preview, review and guarded final-render commands are in `project-video/README.md`.
-The user requested that this film work be pushed to main. Unrelated dirty
-research and presentation work must remain untouched.
+The user requested that all pending work be committed and integrated into
+`main`. Film commit `3b1367be` contains the complete ten-minute edit and framing
+corrections. The integration includes the existing research, presentation,
+contribution and capture-tool commits. Conflicts with the earlier film version
+on main were resolved in favour of the completed implementation, with handoff
+history retained. Private media, rendered MP4s and `project-video/image.png`
+remain local and ignored. The merge is ready for the requested main push.
 
-Last updated: 2026-10-09 | by: Codex | repo @ 452cdc7a
+The active video composition is now `DraftlyFullFilm`, a 600-second edit in
+`project-video/src/long-film/`. It follows all eleven chapter boundaries in the
+user-edited `SCRIPT.md`, while preserving the user's later instructions to use
+the owner-approved case with no voiceover or masking. The earlier 105-second
+`DraftlyWorkflowFilm` and its render remain separate.
 
-The final academic presentation now has a Phase 1 story treatment and
-claim-first, 20-slide outline in `final-submission/presentation/STORY.md` and
-`SLIDE_OUTLINE.md`, plus `DEMO_RUNBOOK.md`. It assumes a 20-minute slot with 18 minutes of speech, including 2:30 for a synthetic-matter demonstration, and
-separates the offline retrieval study from the deployed RTA workbench. The two
-user-requested platform figures are older design references with obsolete
-storage labels; the outline uses cropped process/decision portions and pairs
-them with current deployment and intake figures. The Google Slides draft was
-inaccessible through the available browser/web tools. Per `paper-talk`'s Phase
-1 checkpoint, the actual deck and script await review of this story. Confirm
-the presentation slot length, demo format, final individual work allocation,
-and speaker handoffs before slide construction. The user provided seven
-10-point assessment criteria; `STORY.md` maps each criterion to slide evidence.
+The source-to-fact-to-draft journey uses actual local application captures:
+Approve fact, populate a Form 8 working draft, Confirm selected draft fields,
+inspect unresolved particulars and preflight blockers, and create an internal
+working-draft manifest. Twenty populated fields were checked against accepted
+facts and source references. Final approval and registration remain blocked;
+the actual extent discrepancy remains open. Prepared extraction is labelled.
+
+The ID display raster is now upright (90 degrees counterclockwise), and its
+regenerator records that rotation. The opening paper is aligned within the
+folder. All seven original PDFs match the recorded upload hashes. The supplied
+lawyer screenshot establishes the four portrait captions, including the latest
+Aruni Gunarathne spelling. Practitioner roles imply no certification.
+The opening certificate and instrument pages now fit their full height, with
+room for the entrance movement; their lower stamps and signatures are visible.
+The full MP4 and both opening exports include the correction. The 16-second
+replacement preserves timing and byte-identical audio; complete decoding passed.
+
+The dedicated Research workspace, scope controls and 57-statute/18-amendment
+catalogue are captured. The local matter assistant and answer composer are
+unavailable, so this edit shows their actual availability state and an official
+source lead. It does not replay the old supporting-passage clip. The supplied
+research-paper title is shown without numerical results, and date-sensitive
+source inspection remains visibly Planned. The paper and lawyer reference
+images have separate saved copies; do not regenerate them from `image.png`.
+
+Chrome DevTools could not attach to the existing profile and a fresh hosted
+session needed sign-in. Captures use an isolated local database and the actual
+application; production records were preserved. Private media remains ignored.
+The fast exporter uses owned Chrome on port 9223 and cached Remotion scene
+exports. All 45 shots and 47 required local assets pass validation. The picture
+assembly and final MP4 have 18,000 frames at 1920 x 1080/30 fps, with H.264
+video and 48 kHz AAC audio. The output is 600.000 seconds and 34,332,185 bytes:
+`project-video/out/draftly-full-film.mp4`. Full audio/video decoding passed, with
+a -10.5 dBFS audio peak and no clipping. Representative evidence, approval,
+draft, research, closing and chapter-boundary frames were inspected. A corrected
+45-second opening is also saved as `project-video/out/draftly-opening-aligned.mp4`.
+Preview: `http://localhost:3010/DraftlyFullFilm`. Commands: `npm run check:full`,
+`npm run render:full`; direct Remotion fallback: `npm run render:full:standalone`.
+
+On 9 October 2026, the latest `origin/main` (`fa83da4c`) was pulled and merged
+into `docs/research-paper-user-updates` as `acd50c2a`. The branch now includes
+the merged embedding-build fix (PR 24) and the Remotion demo-video project
+(PR 26). Existing branch commits were retained. All 81 locally changed or
+untracked paths matched their pre-pull checksums before this handoff update;
+there were no merge conflicts. That earlier merge is retained in this integration.
+
+Weekly contribution drafts for Himath, weeks 10–13 (7 September–4 October
+2026), are in `final-submission/individual-contribution/weekly-contributions-weeks-10-13.md`
+and a companion TSV. They compare research and platform author-date history
+with dated workspace records and the user's pasted contribution-sheet rows.
+The Google Sheet required sign-in; it was not modified. Week 9's supplied
+text overlaps with four commits dated 7 September, so the draft flags the
+date correction. Actual meeting dates were not supplied.
+
+Last updated: 2026-10-09 · by: Codex · repo @ 3b1367be
+
+The compact Moodle contribution entry for Himath Dhanapala (230139N) is in
+`final-submission/individual-contribution/contribution.txt` as an HTML fragment.
+It condenses the LaTeX report into nine workstream bullets, covering the
+research, platform, architecture, and academic deliverables with a short
+validation/deployment boundary note.
+
+The user redirected figure work to the case-law slide. Reviewed PaperBanana
+v3 is `final-submission/presentation/case-law/Draftly-Case-Law-Retrieval-PaperBanana-v3.png`
+(5,504 × 3,072 pixels), with a normalized copy in `final-submission/figures/`.
+It shows lexical, graph, and dense paths as regular architecture branches,
+RRF and a separate corroboration gate, and both result outcomes. The user
+corrected the optional dense label; the card now says Semantic similarity
+with solid borders/arrows. Dense-inactive status appears only in the
+recorded pilot-results note. Color, grayscale, and library copies match.
+The 14/20 and 10/20 pilot figures remain labelled as LLM proxy judgements
+on different corpus snapshots. Color and reduced grayscale reviews passed.
+Original `case-law/image.png` is retained. Main deck integration is pending.
+The earlier target-pipeline polish was stopped at the user's instruction;
+its local v4 files are not the focus of the current delivery.
+
+Target-retrieval presentation work is isolated in
+`final-submission/presentation/target-retrieval-pipeline/` at the user's
+request. It contains the standalone one-slide PPTX/PDF, a Mermaid pipeline
+source and render under `figures/`, and a PaperBanana-generated 16:9 reference
+image. The preferred review copy is
+`Draftly-Target-Hybrid-Retrieval-PaperBanana-v3.png`; earlier candidates remain
+in the same folder. The graph
+preserves original and rewritten BM25/dense paths, initial RRF, graph
+expansion plus a direct bypass into final RRF, and cited answers or
+insufficient authority. The main deck was not changed. Await user review
+before integrating the generated image.
+
+Last updated: 2026-10-02 · by: Codex · draftly-research @ 56295cfe
+
+The target hybrid retrieval figure now has a reviewed v3 at
+`final-submission/presentation/target-retrieval-pipeline/Draftly-Target-Hybrid-Retrieval-PaperBanana-v3.png`
+(5,504 × 3,072 pixels), with a copy in the final figure library. It keeps four
+core query channels, preserves fused results beside graph candidates, and
+adds an explicit answer-generation and citation/claim gate. The original is
+retained. The exact combined target remains in progress and is not a deployed
+or measured result. Both the research figure work and target v3 are pushed on
+`docs/research-paper-user-updates`; PR 25 is open:
+<https://github.com/Draftly-LK/draftly-research/pull/25>. Main already contains
+the report and system-diagram commit `2e05e5f8`. Newer presentation and
+individual-contribution deliverables outside these reviewed figures remain
+local and were not included in that PR.
+
+The corpus and retrieval PaperBanana figures were reviewed in two passes,
+recreated, and checked again for content and reduced grayscale readability.
+Accepted images are `research-paper/figures/syllabus-guided-corpus-paperbanana-v3.png`
+and `retrieval-evaluation-paperbanana-v3.png` (5,504 × 3,072 pixels each).
+Originals are retained; rejected v2 candidates stay local. The review record is
+`research-paper/figures/figure-review-2026-10-02.md`. Reviewed copies are in
+`final-submission/figures/`. The editable retrieval redraw now places hybrid
+ranking before routing and seed selection. Main contains report commit
+`2e05e5f8`; the separate research-change branch is
+`docs/research-paper-user-updates`, commit `1eaf53de`. Newer presentation and
+individual-contribution files remain local and were not included in that PR.
+
+The individual contribution report for D. H. N. Dhanapala, 230139N, is in
+`final-submission/individual-contribution/himath-individual-contribution.tex`
+with its compiled six-page A4 PDF and build README. It organizes the supplied
+activity account into corpus/case-law work, retrieval and OCR, frontend and
+backend workflows, architecture, V1 processing, the matter assistant, and
+academic deliverables. Representative commits from both repositories support
+the attribution. It preserves provisional-label and hosted-configuration
+boundaries and contains no private client details. The PDF was visually
+reviewed; its fonts are embedded and no overfull boxes were reported.
+
+The latest presentation review produced
+`final-submission/presentation/Draftly-Final-Academic-Presentation-Reviewed.pptx`
+and a matching PDF, while retaining the preceding deck for comparison. The
+22-slide revision clarifies the two project problems, the syllabus-guided
+corpus selection, parallel lexical and graph case retrieval, provisional
+statutory benchmark labels, RTA scope, the Matter Agent conversation and
+separate cited-research view, OCR benchmark units, and the hosted-versus-
+research processing boundary. The source figures remain in the deck; denser
+figures were cropped or paired with larger explanatory text for projection.
+The reviewed PowerPoint and PDF each have 22 slides/pages; all slides have
+notes, and both Hugging Face badge links are present. Remaining delivery
+checks are a live synthetic demo rehearsal, final contribution wording with
+the team, and confirmation of speaker handoffs and slot length.
+`final-submission/presentation/SIMPLE_SPEAKING_SCRIPT.md` now provides a
+short, slide-by-slide spoken script for the reviewed deck. It follows the
+current slide order and leaves the demonstration as a rehearsed cue sequence.
+Slide 02's script and PPTX notes now use a statute-grounded, illustrative
+partial-parcel sale under the Registration of Title Act No. 21 of 1998,
+ss. 44, 45(1)(a), and 47. It is not presented as a scored benchmark question.
+
+The final academic presentation now has an editable 22-slide PowerPoint
+`final-submission/presentation/Draftly-Final-Academic-Presentation.pptx`, a PDF
+preview, the Python rebuild script `build_ppt.py`, a Phase 1 story, one
+consolidated `PPT_BUILD_GUIDE.md` with exact slide copy and speaker notes, and
+a synthetic demo runbook in `final-submission/presentation/`. The separate
+`SLIDE_OUTLINE.md` was removed after its content was merged into the guide.
+The user chose a two-section structure:
+**Part I, legal information retrieval (slides 04–11), then Part II, software
+engineering and document-bound matter information (slides 12–20)**. Slide 02
+names those two problems in the same order. The retrieval section now leads
+with data: slide 04 statutory corpus, 05 case-law collection and rule
+extraction, 06 separate analogous-case retrieval, 07 Law College QA benchmark
+construction and Hugging Face release, 08 complete-bundle metric, 09
+seven-system research figure, 10 results and hard failures, and 11 the
+accepted NeurIPS 2026 GlobalSouthAI workshop paper. An official Hugging Face
+mark appears beside the public Act source index and provisional QA benchmark;
+neither badge implies the full parsed corpus or lawyer-validated gold is public.
+The software
+section now opens with the reason for post-certificate RTA scope: a bounded
+title-and-parcel workflow using title certificates, cadastral/survey-plan
+information, and transaction evidence. Handwritten pattiru/folio OCR,
+AT-form extraction, historical title reconstruction, and initial title
+settlement are deferred project tasks, not claims that such records are absent
+from all RTA-related work. Slide 12 states the team-reported supervisor
+discussion as a scope decision. After the matter route on slide 13, slide 14
+pairs the OCR benchmark setup and results with a redacted real region overlay.
+Slide 15 gives the complete nine-stage document-processing design its own
+image and states the hosted stub and lawyer-review boundary. Slide 16 shows the
+shipped BM25 retrieval path. The remaining section covers the Draftly Matter
+Agent, review gates, a synthetic demo, and verification. Slide 21 now credits
+the three student contributors; slide 22 closes the project. The guide gives exact on-slide copy,
+speaker notes, figures, and QA instructions; the story uses the same order.
+The 22 slides total 19:15 of planned speech in an assumed 20-minute
+slot, including 2:30 for the slide 19 demonstration. Slide 20 gives a
+five-track rundown of statutory retrieval, similar-case retrieval, case-law
+rules, document reading, and platform testing.
+The contribution slide credits Himath with leading the statutory benchmark,
+High Court case-law work, and the research-paper first draft; Lahiru with
+case-law collection/retrieval and OCR/extraction research; and Praveen with
+BM25 search, templates, outputs, and the lawyer-facing interface. The
+presenter's linked Google contribution spreadsheet required sign-in during
+this edit, and the exact continuation of “Praveen did common law —” is still
+unknown. Verify the wording with the team before presenting.
+`final-submission/presentation/TESTING_EVIDENCE.md`
+holds the methods, dates, numbers, and limits behind that slide.
+
+Slide 11 uses a crop rendered from the accepted paper PDF. Slides 04 and 09
+use enlarged halves of the existing corpus/retrieval figure so its text can
+be read. The case-law data slide reports 3,703 reported conveyancing judgments,
+5,474 official-court judgment documents, and provisional rule extraction;
+case-law ranking remains outside the scored statutory benchmark. The hosted
+retrieval upgrade stays labelled in progress in the software section and in
+the paper slide's notes. Slide 16 now gives the shipped legal-research path its
+own main visual: research question through the workbench, FastAPI, internal
+BM25 index, and cited passages or insufficient authority. The existing
+deployment diagram is a small topology inset. The guide includes a Hugging
+Face image-generation brief for an unlabeled academic diagram; exact labels
+are added as editable PPT text. A newer live configuration must be verified
+before the solid path is changed to embeddings and query rewriting.
+
+The original case-law corpus slide remains slide 05. A new slide 06 covers the
+separate analogous-case retriever, whose 20-query pilot used lexical and graph
+channels while dense embeddings were inactive. The PPTX uses an editable native
+pipeline diagram; a team image may replace it after review.
+The user described an “IL Parser” inspiration, but its exact paper title is
+still awaiting clarification; the guide does not assert a specific borrowing.
+
+Cropped transparent blue and white Draftly logos are in
+`final-submission/presentation/assets/`; the guide requires a logo on every
+slide. The two user-requested platform figures are older design references
+with obsolete storage labels, so the guide crops their process/decision
+portions and pairs them with current deployment and intake figures. Hosted
+retrieval remains BM25; a teammate's embedding and query-rewriting upgrade is
+marked **in progress**, not deployed or measured. The Matter Agent can discuss
+matter state, while direct legal-research calling is not connected; the
+separate research workspace retrieves cited statutes. The Google Slides draft
+was inaccessible through the available browser/web tools. The PPTX uses
+Guizang Swiss Style B with the International Klein Blue palette and native
+editable diagrams where a raster source was too soft. All 22 slides render in
+PowerPoint, have a Draftly logo, and have speaker notes from the guide. Slide
+19 is a route card for a live synthetic-matter demo; the actual live app or a
+verified recording still needs rehearsal. Confirm the presentation slot
+length, final individual work allocation, and speaker handoffs before delivery.
+The user's seven assessment criteria are mapped to slide evidence in
+`STORY.md`.
+
+Slide 03 now names the three in-person practitioner consultations and shows
+Anura Dhanaratna's supplied portrait. His signed notarial-practice curriculum
+in `proj-docs/project Management/Proposed Curriculum Conveyancing Course.md`
+supports his name spelling and role as a Law College conveyancing lecturer.
+The curriculum helped organize topic coverage; the Acts were collected from
+legal source publications. The user confirmed that he supplied sample matter
+documents used in document-reading trials. The guide links these inputs to
+the corpus, OCR design, and lawyer-review gates without claiming scored
+field-level accuracy. Three further supplied portraits are in
+`presentation/assets/consultations/`; the guide uses them as an uncaptioned
+additional-stakeholder row because their roles and meeting attribution need
+confirmation before individual captions are placed in the final deck. A
+redacted crop of one real OCR benchmark page is now in presentation assets
+with the user's consent; its text is blurred while region boxes remain visible.
+The guide states that these boxes are not verified fields. The OCR benchmark
+inventory is four matters, 38 documents, and 282 pages. A Vision pilot returned
+text on 26/26 pages in one matter; field-level extraction accuracy is unscored.
 
 The `draw-io-diagram-generator` skill from `github/awesome-copilot` is installed
 in the user's Codex skills directory. Eight paired Mermaid `.mmd` and Markdown
@@ -223,9 +458,12 @@ discussion, limitations, conclusion and benchmark appendix now bound claims
 to the proposed labels and tested retrieval systems. The abstract links the
 versioned Hugging Face release and states that its labels are provisional;
 appendix B also prints the repository URL and version tag so the address
-survives systems that strip abstract links. Figure 3's recall curve and the S7 ablation table
-are separate, each at text width, in appendix E. The rebuilt PDF has all main
-text on four pages, with references starting on page 5. Venue-specific
+survives systems that strip abstract links. Figure 4's recall curve and the S7 ablation table
+are separate, each at text width, in appendix E. A PaperBanana-generated
+syllabus-to-corpus overview is Figure 3 in Appendix A; its exact generation
+brief, original PNG, cleaned paper PNG, and cleanup script are in
+`research-paper/figures/`. The rebuilt 13-page PDF keeps all main text on four
+pages, with references starting on page 5. Venue-specific
 camera-ready instructions beyond the public call remain unknown.
 The bibliography keeps arXiv records for LegalBench-RAG, GreekBarRetrieval,
 and Asking For An Old Friend because no official proceedings version was found
@@ -1455,6 +1693,79 @@ in the old `contxt.md` were deliberately left out of this file for that reason.)
 
 ## Log
 
+### 2026-10-09 | Codex | Commit all work to main
+
+- Committed the full film as `3b1367be` and integrated the pending branch into
+  main at the user's request. Preserved newer film sources and both histories.
+- Video TypeScript, 45-shot/47-asset validation, workflow checks, Markdown lint,
+  and syntax checks for 19 Python and nine JavaScript files passed.
+- The focused research run recorded 108 passes and two corpus failures:
+  source-text provenance and deterministic rebuild. Their implementation,
+  tests and corpus files match origin/main; this integration does not fix them.
+  The broader research run was interrupted after failures, so it is not a pass.
+- Client documents, footage, portraits and MP4s remain ignored and unchanged.
+  Main push follows the final merged-source check.
+
+### 2026-10-09 · Codex: document bottom crop
+
+- Fixed the opening source viewer: natural-height pages exceeded its clipped
+  frame. Pages now use proportional containment with room for their entrance.
+- Inspected both pages and the entrance frame, then replaced the two affected
+  shots in the full MP4 and opening exports. Duration remains 600 seconds and
+  18,000 frames; audio is byte-identical. Complete decoding and TypeScript passed.
+
+### 2026-10-09 · Codex: ten-minute film and ID correction
+
+- Implemented the full eleven-chapter film with the approved case, actual fact
+  approval and working-draft actions, and the separate Research workspace.
+- Corrected the sideways ID display, aligned the opening paper, and used the
+  supplied lawyer names and roles. Original PDFs and portraits remain intact.
+- Preserved real service gaps and unresolved legal questions. Prepared extraction
+  and planned source inspection have explicit labels; no voiceover is connected.
+- Added editable shot timings, fast cached export and full-film asset checks.
+  Final MP4 is 600.000 seconds, 18,000 frames, 1080p H.264/AAC. Full decoding,
+  representative-frame review and Markdown lint passed; audio peak is -10.5 dBFS.
+
+### 2026-10-09 | Codex | Separate commits for pending research work
+
+- Saved retrieval figures, presentation deliverables, contribution records,
+  capture tools, and workflow scenes in five commits on the existing branch.
+- Kept private client media and credentials excluded. Added a local ignore
+  file for contribution-report LaTeX intermediates and removed one extra
+  blank line at the end of the weekly-contribution TSV.
+- Markdown lint, 13 Python syntax checks, JavaScript syntax checks, and the
+  workflow TypeScript/asset checks passed for the reviewed snapshot. The
+  credential-pattern scan found no matches in the new text/source files.
+- The user requested that commit housekeeping continue while they edit the
+  video. Later video changes remain uncommitted; no push was performed.
+
+### 2026-10-09 | Codex | Real-case workflow continuation
+
+- Preserved the 45-second intro and implemented a 60-second continuation using
+  the approved case, supplied portraits and matching visual treatment.
+- Recorded actual fact approval, draft population from accepted facts and
+  persisted draft-field confirmation in the isolated local app copy.
+- Kept unsupported checklist behavior visibly labelled as a concept and left
+  the source discrepancy and working-draft unresolved items open.
+- Delivered the 105-second 1080p H.264/AAC MP4. Source hashes, TypeScript,
+  asset checks, Markdown lint and decoded-export checks passed. Inspected
+  scene boundaries, approval and draft confirmation; fixed the catalogue
+  heading crop. Audio peak is -10.5 dBFS. No new push was performed.
+
+### 2026-10-09 | Codex | Rendered opening review
+
+- Reviewed 28 frames extracted from the current opening MP4, source crops,
+  transition boundaries and 720p viewing examples. Saved the local report and
+  inspection files under the ignored `project-video/out/review/` folder.
+- Prioritised the unestablished parcel relationship in the area comparison,
+  repeated layouts and long static holds, the hard viewer handoff, small review
+  fields and the measured 20.1-second silent interval.
+- Audited the full timeline separately: nine recording gaps occupy 135 seconds;
+  the same review clip is reused three times with no separate replacement ranges.
+  The generated visual script also needs refreshing from the active edit.
+- Decoded audio peaked at -10.50 dBFS with no samples at the clipping limit.
+  Subjective listening was not completed. No film implementation was changed.
+
 ### 2026-10-09 | Codex | Draftly product film wrap-up
 
 - Replaced repeated presentation scenes with source inspection, document
@@ -1470,6 +1781,278 @@ in the old `contxt.md` were deliberately left out of this file for that reason.)
   Readable source and final viewer frames were inspected; decoded audio peaked
   at -10.50 dBFS with no samples at the clipping limit.
 - The complete 600-second final film remains unfinished.
+
+### 2026-10-09 · Codex (pull latest main)
+
+- Fetched origin and merged its latest main into the existing research-paper
+  branch, retaining its two branch-specific commits and all uncommitted work.
+  The incoming changes add the demo-video project and embedding-build checks.
+- Verified that main has no commits missing from HEAD, the index has no
+  unmerged paths, and all 81 pre-existing changed/untracked paths were
+  preserved byte-for-byte. No push or application test run was performed.
+
+### 2026-10-04 · Codex (weekly contribution drafts)
+
+- Compared Himath-authored research and platform commits for weeks 10–13,
+  treating cherry-picked duplicates as the same work. Prepared paste-ready
+  personal entries and overall-progress summaries with evidence locators.
+- Used the user's pasted sheet structure after the linked Google Sheet
+  required sign-in. Flagged the week 9/10 date overlap and retained the
+  distinction between integrated team work, provisional benchmark labels,
+  dated uncommitted deliverables, and pending live hybrid retrieval.
+
+### 2026-10-02 · Codex (Moodle contribution entry)
+
+- Replaced the empty HTML placeholder in `individual-contribution/contribution.txt`
+  with a compact contribution entry covering all main workstreams from the
+  six-page report. Used simple paragraph/list markup for Moodle pasting.
+
+### 2026-10-02 · Codex (dense branch label correction)
+
+- Corrected case-law v3 per the user: dense retrieval is a regular branch,
+  with solid borders/arrows and the subtitle Semantic similarity.
+- Removed the optional-channel legend; retained the factual dense-inactive
+  note only for recorded pilot results. Updated all image copies and prompt.
+
+### 2026-10-02 · Codex (case-law figure v3)
+
+- Followed the user's correction to focus on `presentation/case-law/`.
+- Generated the case-law v3 with PaperBanana and reviewed content, arrows,
+  text fitting, and reduced grayscale readability against implementation.
+- Preserved corpus counts and proxy snapshot boundaries; saved prompt,
+  review, original image, and normalized figure-library copy.
+
+### 2026-10-02 · Codex (target pipeline v3)
+
+- Recreated the target query-rewrite and hybrid retrieval diagram through
+  PaperBanana, then checked every path and reduced grayscale readability.
+  Added the previously missing answer gate and one precise graph-input
+  arrowhead. Preserved the original, generation brief, and review record.
+- Committed and pushed the target figure as `56295cfe`; opened research-change
+  PR 25 with the paper revisions, dataset-release tools, and reviewed research
+  figures. Main's report commit remains separate. No live configuration changed.
+
+### 2026-10-02 · Codex (target retrieval figure for review)
+
+- Moved the standalone target-retrieval slide and builder into a dedicated
+  presentation subfolder so the user's edited deck stays separate.
+- Generated and rendered a Mermaid version, then used the installed official
+  PaperBanana pipeline for a 16:9 reference image. A further reviewed v3 image
+  added the answer gate and clearer card layout. No image was inserted into
+  the main deck; user review is pending.
+
+### 2026-10-02 · Codex (figure review and research-change PR)
+
+- Reviewed both original corpus and retrieval images for content and layout.
+  Rejected a first regeneration with duplicate/missing method labels and wrong
+  metric arrows. Accepted the second regeneration after color and grayscale
+  checks; preserved original images and saved generation briefs and review notes.
+- Committed the research-paper revisions, dataset-release tools, retrieval
+  planning note, and reviewed assets separately from the report on main.
+  Dataset-release tests passed (2), Markdown lint passed, and whitespace checks
+  passed. The PR branch is `docs/research-paper-user-updates` at `1eaf53de`.
+
+### 2026-10-02 · Codex (individual contribution report)
+
+- Created a structured first-person LaTeX contribution report for Himath
+  Dhanapala, 230139N, from the supplied activity history and repository evidence.
+  Added verified RTA backend work and lawyer annotation exports to the account.
+- Compiled and visually checked all six A4 pages, including the overview,
+  workstream sections, milestone table, and representative commit references.
+  Added a build README in the individual-contribution directory.
+
+### 2026-09-30 · Codex (PaperBanana corpus figure)
+
+- Generated a syllabus-guided statutory-corpus overview with the official
+  local PaperBanana pipeline. Verified 52 principal enactments, 60 amending
+  Acts, 4,557 sections, 17,854 provisions, 6,346 edges, and six edge labels.
+  Removed redundant AI-added headings and footer text, kept the original, and
+  included the cleaned figure in Appendix A of the research paper. The PDF
+  compiles at 13 pages with its four-page main text intact.
+
+### 2026-09-30 · Codex (real statute example for slide 02)
+
+- Replaced the generic multi-provision example in the simple script and
+  reviewed PPTX notes with an illustrative First Class Title partial-parcel
+  sale, verified against the Registrar General's Department Act text. Section
+  44 covers notarial checks, section 47 the prior subdivision and registration,
+  and section 45(1)(a) forwarding after attestation.
+
+### 2026-09-30 · Codex (simple speaking script)
+
+- Added a plain-language script for all 22 reviewed slides, preserving the
+  research results, provisional-label limits, hosted-versus-research status,
+  and synthetic-demo boundary. The fuller notes remain in the PPTX and guide.
+
+### 2026-09-30 · Codex (presentation clarity review)
+
+- Reviewed the built deck slide by slide and produced a revised PowerPoint
+  and PDF with clearer retrieval, scope, workflow, and document-processing
+  visuals. Kept the previous deck for comparison.
+- Preserved measured results and deployment limits in speaker notes while
+  shortening projector-facing qualifiers. Verified 22 slides/pages, 22 notes
+  sections, both Hugging Face links, and a valid PowerPoint archive.
+
+### 2026-09-30 · Codex (editable final PowerPoint)
+
+- Built `Draftly-Final-Academic-Presentation.pptx` and a PDF preview from the 22-slide guide using a reproducible Python script and the selected Guizang Swiss blue visual system. Embedded the existing research, paper, OCR, and platform figures; added the transparent logo and speaker notes to every slide; and linked the two public Hugging Face dataset badges. Replaced the low-resolution matter-workflow image with a readable native PowerPoint diagram after visual QA. The demo remains a live route card because no verified recording or capture was supplied.
+
+### 2026-09-30 · Codex (individual contribution slide)
+
+- Added a dedicated slide 21 for Himath, Lahiru, and Praveen's specific research and engineering contributions. Moved the takeaway to slide 22 and changed the planned talk to 19:15 in the assumed 20-minute slot. The linked contribution sheet required Google sign-in, so the slide uses the presenter's account and documented workstreams while the missing Praveen case-law detail remains to be confirmed.
+
+### 2026-09-30 · Codex (separate case-retrieval slide)
+
+- Restored the original case-law corpus and rule-extraction slide after the user clarified that it should remain. Inserted a distinct case-retrieval slide immediately after it, reserved an image slot for the team's pipeline figure, and renumbered the remaining slides and demo runbook. The 21-slide plan takes 18:55 in the assumed 20-minute slot. The exact “IL Parser” citation remains to be confirmed.
+
+### 2026-09-30 · Codex (project-wide testing rundown)
+
+- Replaced slide 19's future-gates layout with a four-track test summary covering statutory retrieval, held-out case-law rules, OCR text coverage, and platform software. Added a separate testing evidence map so the PPT builder can trace the numbers and distinguish measured results from attorney validation or incomplete browser and extraction tests.
+
+### 2026-09-30 · Codex (separate OCR test and full-pipeline slides)
+
+- Split the document story into two distinct slides: slide 13 shows real OCR boxes and verified benchmark counts; slide 14 gives the full nine-stage process image its own space. Cropped obsolete storage lanes from the historical figure and retained a hosted-stub status note.
+
+### 2026-09-30 · Codex (document pipeline and OCR evidence slides)
+
+- Reordered slides 13–15 so document processing follows the matter route, then a real redacted OCR region overlay explains the candidate-to-reviewed-fact boundary, and the shipped BM25 research path follows.
+- Added verified OCR setup counts to the slide guide: four matters, 38 documents, 282 pages in the inventory; text returned on 26/26 pages in one Vision pilot. Field-level extraction accuracy remains unscored. The page overlay retains detection boxes but blurs the source text.
+
+### 2026-09-30 · Codex (RTA pilot rationale on slide 11)
+
+- Rewrote slide 11 to explain why the project began with post-certificate RTA
+  transactions: a more structured title, parcel, and prescribed-requirement
+  workflow for document review. Marked handwritten pattiru/folio OCR,
+  AT-form extraction, historical title tracing, and initial settlement as
+  deferred project scope after the team-reported supervisor discussion.
+  Moved the detailed Matter Agent route to slide 12, where it already appears,
+  and shifted 15 seconds between slides 11 and 12 to preserve 18:00 total.
+
+### 2026-09-30 · Codex (shipped retrieval slide visual brief)
+
+- Reworked slide 14 as the dedicated shipped legal-retrieval slide, with the
+  documented BM25 research path as the solid diagram and the deployment figure
+  as a small inset. Added a text-free Hugging Face image-generation brief so
+  the team can supply a polished visual while PPT labels remain editable and
+  factually checked. Kept embeddings and query rewriting dashed as in progress
+  pending newer deployment and smoke-test evidence.
+
+### 2026-09-30 · Codex (data-first legal IR presentation section)
+
+- Rebuilt slides 04–10 in the single PPT guide around statutory data, case-law
+  data, QA benchmark construction, complete-bundle metric, seven offline
+  systems, results, and a dedicated accepted-paper slide. Reused the existing
+  benchmark figure and enlarged crop of the corpus/retrieval paper figure;
+  added a rendered paper-title crop and the official Hugging Face icon beside
+  the two specific public dataset resources. Kept 20 slides and 18:00 planned
+  speech. Updated the story, figure map, and source/status cautions.
+
+### 2026-09-30 · Codex (consultation evidence and portraits)
+
+- Revised slide 03 to show how three in-person practitioner discussions,
+  Anura Dhanaratna's notarial curriculum, and supplied sample matter documents
+  informed statutory coverage and the document-review workflow. Added his
+  portrait plus three additional supplied portrait assets; the guide uses
+  these as an uncaptioned stakeholder row pending name/meeting confirmation. Linked the
+  consultation to the RTA scope and document-processing speaker notes, while
+  retaining the report's boundary that field-level extraction accuracy was
+  not established.
+
+### 2026-09-30 · Codex (one presentation slide guide)
+
+- Merged the redundant slide outline into `PPT_BUILD_GUIDE.md` as the single
+  slide-by-slide source for the PPT build. The guide retains all 20 slide IDs,
+  order, timing, visuals, projected copy, speaker notes, and evidence. Removed
+  `SLIDE_OUTLINE.md` and updated the story checkpoint reference so the PPT
+  builder has one slide plan to follow.
+
+### 2026-09-30 · Codex (two-section final presentation)
+
+- Reordered the 20-slide story, outline, and PPT build guide around the user's
+  chosen sequence: legal information retrieval first, then software engineering
+  and information in documents. Slide 02 presents the two problems in that
+  order; slides 04–10 form the legal IR section and slides 11–19 form the
+  software section. Added a dedicated case-law evidence slide and an explicit
+  bridge from offline retrieval findings to the hosted BM25 system and the
+  embedding/query-rewriting work in progress. Kept slide 18 as the 2:30
+  synthetic demo and the total speaking plan at 18:00.
+
+### 2026-09-30 · Codex (transparent presentation logo)
+
+- Inspected the existing transparent blue and white typewriter-logo PNGs and
+  verified their compositing on light and dark backgrounds. Saved cropped
+  alpha-preserving copies in `final-submission/presentation/assets/`.
+- Updated the PPT build guide and story so every slide uses the transparent
+  blue mark on light backgrounds or transparent white on dark backgrounds,
+  with no white rectangle and a consistent visible size.
+
+### 2026-09-30 · Codex (retrieval upgrade presentation status)
+
+- Incorporated the user's update that a teammate is developing an
+  embedding-enabled retrieval system with query rewriting. Slide 09 now shows
+  the documented hosted BM25 configuration alongside a separate **in progress**
+  retrieval-upgrade callout; slide 19 includes its future evaluation gate.
+- Kept the paper's seven offline systems and scenario-fact enrichment distinct
+  from the new combined workstream. No deployed or measured gain is claimed for
+  the query-rewriting/embedding combination. Updated the story, outline, PPT
+  guide, and figure treatment accordingly.
+
+### 2026-09-30 · Codex (slide 09 deployment claim check)
+
+- Checked the platform `deploy/PRODUCTION.md`, example deployment settings,
+  retrieval Docker build, and backend HTTP retrieval adapter against the paper.
+  The documented hosted index remains BM25 with embeddings disabled
+  (`RETRIEVAL_WITH_EMBEDDINGS=0`). The paper's enriched questions are an offline
+  scenario-fact probe, not a deployed query-rewriting service; hierarchical
+  leads observed C@20 while hybrid leads R@20. Kept slide 09's deployment
+  statement and added a presenter accuracy note to the PPT build guide.
+- Repaired the current-state paragraph after an interrupted context edit.
+
+### 2026-09-30 · Codex (matter-agent innovation slide)
+
+- Revised slide 05 in the build guide, outline, and story so the Draftly Matter
+  Agent is a prominent conversational coordination point, not omitted behind
+  retrieval, extraction, and templates. The visible copy says the lawyer can
+  ask about the matter, inspect evidence/checks, and confirm next actions.
+- Retained the tested implementation boundary: cited statutory answers are in
+  the separate research workspace today; direct agent-to-research calling is
+  planned. The existing 20-slide timing is unchanged.
+
+### 2026-09-30 · Codex (matter-agent presentation flow)
+
+- Revised slide 04's visible workflow to include a lawyer conversation with
+  the **Draftly Matter Agent** after evidence checks, then cited statutory
+  research, draft review, and lawyer decision. Updated slides 07, 11, and 18,
+  the story, and demo runbook to use the same flow.
+- Checked the sibling platform's `matter_agent/application/turn_runner.py` and
+  tool allowlist. Direct agent-to-statute search is not implemented; legal
+  questions to that agent abstain. The separate research workspace already
+  retrieves cited statutory passages. The slides mark the direct link as a
+  planned integration rather than a deployed feature. The 20-slide timing
+  remains 18:00; Markdown lint passed.
+
+### 2026-09-30 · Codex (presentation problem framing)
+
+- Revised slide 02 in the story, outline, and full build guide to show two
+  distinct, visible problems: labour-intensive reading of matter PDFs/scans,
+  and the accepted research paper's complete-indispensable-provision retrieval
+  problem. Updated speaker notes and the two-column visual instruction while
+  keeping the 20-slide timing unchanged.
+
+### 2026-09-30 · Codex (slide copy and speaker notes)
+
+- Added `final-submission/presentation/PPT_BUILD_GUIDE.md` with exact on-slide
+  words, full presenter notes, timing, transitions, evidence references, and
+  asset treatment for all 20 slides. It covers the statutory benchmark,
+  case-law extraction, multilingual document reading, platform, tests,
+  limitations, and the rubric-mapped synthetic demonstration.
+- Created `presentation/assets/draftly-logo-on-white.png` from the existing
+  blue-on-white typewriter logo. The guide requires it on all 20 slides and
+  treats the two user-named platform diagrams as earlier designs. Updated the
+  story and outline to align with the guide.
+- Verified 20 slide sections, 18:00 total timing, all local image links, and
+  Markdown lint. PPT/HTML slides are not yet built; presentation duration,
+  demo format, speaker handoffs, and final team ownership remain open.
 
 ### 2026-09-30 · Codex (presentation rubric and demo plan)
 

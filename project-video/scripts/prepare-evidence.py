@@ -14,9 +14,9 @@ def render(number,page=0,rotate=0):
   im=Image.frombytes('RGB',(px.width,px.height),px.samples)
  if rotate:im=im.rotate(rotate,expand=True)
  return f,im
-for name,number,page,rotate in [('title',3,0,0),('instrument',4,1,0),('instrument-cover',4,0,0),('survey',2,0,90),('identity',1,0,0),('resolution',6,0,0),('payment',7,0,0)]:
+for name,number,page,rotate in [('title',3,0,0),('instrument',4,1,0),('instrument-cover',4,0,0),('survey',2,0,90),('identity',1,0,90),('resolution',6,0,0),('payment',7,0,0)]:
  f,im=render(number,page,rotate);im.save(OUT/(name+'.png'))
- records.append({'id':name,'sourceNumber':number,'page':page+1,'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'method':'Full source raster; no blur or masking. Owner approval confirmed by user.'})
+ records.append({'id':name,'sourceNumber':number,'page':page+1,'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'displayRotationDegreesCounterclockwise':rotate,'method':'Full source raster; no blur or masking. Owner approval confirmed by user.'})
 for number,page,rotate,box,name in [(3,0,0,(.565,.316,.9,.335),'title-extent'),(4,1,0,(.19,.348,.735,.375),'instrument-extent'),(2,0,90,(.09,.638,.147,.686),'survey-extent')]:
  f,im=render(number,page,rotate);w,h=im.size
  b=tuple(round(x*(w if i%2==0 else h)) for i,x in enumerate(box))

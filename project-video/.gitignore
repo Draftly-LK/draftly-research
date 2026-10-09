@@ -6,6 +6,8 @@ capture/*.png
 capture/state.json
 # Photos of the lawyers consulted: add locally, do not commit without their agreement.
 public/lawyers/
+# Supplied stakeholder portraits stay local to the film.
+public/people/
 # Owner-approved material is local to the film; never stage it by accident.
 public/evidence/
 public/footage/case-001-*.mp4
@@ -13,4 +15,8 @@ public/footage/matter-conversation.mp4
 public/footage/research-answer-current.mp4
 public/footage/case-law-live.mp4
 public/audio/
+public/footage/workflow-demo-*.mp4
 capture/case-state.json
+/public/demo-docs/
+# User-supplied scratch screenshot can contain private client documents.
+/image.png
