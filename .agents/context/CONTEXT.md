@@ -12,7 +12,20 @@ finish a chunk of work, update it with the `update-context` skill
 
 ## Current State
 
-Last updated: 2026-09-30 · by: Codex · draftly-research @ f330dabc
+The Draftly product film now uses an editable 600-second evidence-led edit and
+a separate 45-second opening in `project-video`. The user approved local use
+of the owner's case-001 bundle, requested full unmasked display, and disabled
+voiceover. Originals remain unchanged. Client scans, recordings, capture state
+and rendered videos stay out of Git. The active edit cannot fall back to older
+case footage. It uses ten checked current product recordings, prepared
+extraction labels, original cached sound and the repository's brand assets.
+Nine working-instrument, review-record and research recording slots remain
+open; the failed draft capture is excluded. The full final film is unfinished.
+Preview, review and guarded final-render commands are in `project-video/README.md`.
+The user requested that this film work be pushed to main. Unrelated dirty
+research and presentation work must remain untouched.
+
+Last updated: 2026-10-09 | by: Codex | repo @ 452cdc7a
 
 The final academic presentation now has a Phase 1 story treatment and
 claim-first, 20-slide outline in `final-submission/presentation/STORY.md` and
@@ -86,7 +99,7 @@ services, evaluated research, and documented live provider settings.
 
 Hybrid deployment needs a research engine change because the platform image
 build passes `--with-embeddings` to the statute CLI. Research PR
-https://github.com/Draftly-LK/draftly-research/pull/24 adds that flag and fails
+<https://github.com/Draftly-LK/draftly-research/pull/24> adds that flag and fails
 partial statute or case embedding builds. Five focused tests pass. The PR is
 open; no live server setting was changed. After merge, an operator needs to
 set `RETRIEVAL_WITH_EMBEDDINGS=1`, rebuild the retrieval image with the approved
@@ -1441,6 +1454,22 @@ in the old `contxt.md` were deliberately left out of this file for that reason.)
 ---
 
 ## Log
+
+### 2026-10-09 | Codex | Draftly product film wrap-up
+
+- Replaced repeated presentation scenes with source inspection, document
+  comparisons, current interface recordings and a recurring property detail.
+- Kept client originals unchanged and private media local. Full display follows
+  the user's confirmed owner approval. Narration and speech captions are off.
+- Measured and imported ten checked product clips; excluded the failed draft
+  recording and blocked automatic use of older case footage.
+- Added original cached sound, asset provenance and beginner preview/render
+  commands. The final render gate reports nine required recordings.
+- TypeScript, source checksums, active display-label checks and Markdown lint
+  passed. The corrected 45-second opening rendered at 1080p with AAC sound.
+  Readable source and final viewer frames were inspected; decoded audio peaked
+  at -10.50 dBFS with no samples at the clipping limit.
+- The complete 600-second final film remains unfinished.
 
 ### 2026-09-30 · Codex (presentation rubric and demo plan)
 
