@@ -18,7 +18,8 @@ corrections. The integration includes the existing research, presentation,
 contribution and capture-tool commits. Conflicts with the earlier film version
 on main were resolved in favour of the completed implementation, with handoff
 history retained. Private media, rendered MP4s and `project-video/image.png`
-remain local and ignored. The merge is ready for the requested main push.
+remain local and ignored. Merge commit `fb2db023` was pushed to `origin/main`;
+the remote SHA was verified and the working tree was clean.
 
 The active video composition is now `DraftlyFullFilm`, a 600-second edit in
 `project-video/src/long-film/`. It follows all eleven chapter boundaries in the
@@ -80,7 +81,7 @@ The Google Sheet required sign-in; it was not modified. Week 9's supplied
 text overlaps with four commits dated 7 September, so the draft flags the
 date correction. Actual meeting dates were not supplied.
 
-Last updated: 2026-10-09 · by: Codex · repo @ 3b1367be
+Last updated: 2026-10-09 · by: Codex · repo @ fb2db023
 
 The compact Moodle contribution entry for Himath Dhanapala (230139N) is in
 `final-submission/individual-contribution/contribution.txt` as an HTML fragment.
@@ -1692,6 +1693,14 @@ in the old `contxt.md` were deliberately left out of this file for that reason.)
 ---
 
 ## Log
+
+### 2026-10-09 | Codex | Push and render handoff verified
+
+- Verified `origin/main` at merge commit `fb2db023` after the requested push.
+- Rechecked the delivered MP4: 600 seconds, 1920 x 1080, 30 fps, H.264/AAC.
+  Its SHA-256 matches the file checked before integration; the video is unchanged.
+- The user asked to continue after completion. Asked whether the next task is
+  video review or the existing research-corpus test failures; no choice yet.
 
 ### 2026-10-09 | Codex | Commit all work to main
 
