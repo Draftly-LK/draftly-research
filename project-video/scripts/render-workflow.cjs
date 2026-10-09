@@ -1,0 +1,10 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const {execFileSync}=require('node:child_process');
+const root=path.resolve(__dirname,'..');
+const preview=process.argv.includes('--preview');
+if(!preview)require('./check-workflow.cjs');
+const args=[path.join(root,'node_modules/@remotion/cli/remotion-cli.js'),'render','src/index.ts',preview?'DraftlyContinuationReview':'DraftlyWorkflowFilm',preview?'out/draftly-continuation-preview.mp4':'out/draftly-workflow-film.mp4','--codec=h264','--crf=18','--concurrency=2'];
+const chrome=path.join(process.env.LOCALAPPDATA??'', 'Google/Chrome/Application/chrome.exe');
+if(process.platform==='win32'&&fs.existsSync(chrome))args.push('--browser-executable='+chrome,'--chrome-mode=chrome-for-testing');
+execFileSync(process.execPath,args,{cwd:root,stdio:'inherit'});
