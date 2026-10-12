@@ -1,0 +1,7 @@
+/* Web-only adjustments for the existing figure viewer. */
+#figure-viewer[open]{display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;gap:8px;height:100dvh;padding:20px;overflow:hidden}
+.gallery-tabs{flex-wrap:nowrap;overflow-x:auto;min-height:44px;margin:0;padding-bottom:4px}
+.gallery-tab{white-space:nowrap;flex:none;min-height:40px}
+.viewer-image{height:100%;min-height:0;object-fit:contain}
+.viewer-note{margin:0;max-height:24vh;overflow:auto}
+@media(max-width:600px){#figure-viewer[open]{padding:12px}.viewer-head{gap:10px;min-height:44px}.viewer-head h2{font-size:19px}.viewer-close{min-height:44px;white-space:nowrap}.viewer-note{font-size:14px}.gallery-tab{font-size:12px}}
