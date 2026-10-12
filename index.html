@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore Draftly: the project website, research paper, open code, statutory retrieval benchmark and Sri Lankan Act source index.">
+  <meta name="theme-color" content="#0a1f3d">
+  <title>Explore Draftly · Project links</title>
+  <style>
+    :root{color-scheme:light;--ink:#0a1f3d;--paper:#f1f3f5;--line:#cbd2db;--muted:#52627a}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    main{max-width:700px;margin:auto;padding:42px 24px 32px}.brand{display:flex;align-items:center;gap:16px}.brand img{width:68px;height:58px;object-fit:contain}h1{font:normal 58px/.95 Georgia,"Times New Roman",serif;letter-spacing:-2px;margin:0}.eyebrow{font-size:12px;letter-spacing:1.7px;text-transform:uppercase;font-weight:650;margin:22px 0 10px}.intro{font-size:20px;line-height:1.4;max-width:600px;margin:0}.affiliation{font-size:13px;color:var(--muted);line-height:1.45;margin:13px 0 25px}
+    nav{display:grid;gap:11px}.link{display:grid;grid-template-columns:minmax(0,1fr) 22px;gap:14px;align-items:center;padding:18px 20px;border:1px solid var(--line);background:#fff;color:inherit;text-decoration:none;border-radius:8px;transition:background .15s,border-color .15s}.link:hover{background:#e8edf4;border-color:#8296b1}.link:focus-visible{outline:3px solid #4679bf;outline-offset:3px}.link strong{display:block;font-size:19px;line-height:1.25;font-weight:650}.link .description{display:block;font-size:14px;line-height:1.4;margin-top:5px;color:var(--muted)}.link .arrow{font-size:23px;text-align:right}.primary{background:var(--ink);color:#fff;border-color:var(--ink)}.primary .description{color:#cdd8e8}.primary:hover{background:#183559;border-color:#183559}.code-links{display:grid;grid-template-columns:1fr 1fr;gap:11px}.code-links .link{padding:17px 18px}.code-links strong{font-size:17px}.label-note{color:#806009!important;font-size:13px!important}
+    footer{border-top:1px solid var(--line);padding-top:17px;margin-top:24px;font-size:13px;line-height:1.5;color:var(--muted)}footer a{color:var(--ink);text-underline-offset:3px}.footer-title{font-weight:650;color:var(--ink);margin:0 0 5px}footer p{margin:0 0 8px}.footer-links{display:flex;flex-wrap:wrap;gap:7px 17px}
+    @media(max-width:480px){main{padding:27px 18px 25px}h1{font-size:52px}.brand img{width:62px;height:50px}.intro{font-size:18px}.link{padding:16px}.link strong{font-size:18px}.code-links{grid-template-columns:1fr}.code-links .link{padding:16px}.affiliation{margin-bottom:22px}}
+    @media(prefers-reduced-motion:reduce){.link{transition:none}}
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand"><img src="draftly-logo.png" alt=""><h1>Draftly</h1></div>
+      <p class="eyebrow">Explore the project</p>
+      <p class="intro">Evidence-linked legal work.<br>A workflow prototype and a study of complete statutory retrieval in Sri Lanka.</p>
+      <p class="affiliation">Department of Computer Science &amp; Engineering<br>Faculty of Engineering · University of Moratuwa</p>
+    </header>
+    <nav aria-label="Draftly project resources">
+      <a class="link primary" href="https://draftly.adlahiru.com/">
+        <span><strong>Visit the project website</strong><span class="description">Explore Draftly and its legal-workflow focus.</span></span><span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link" href="https://github.com/Draftly-LK/draftly-research/blob/main/research-paper/neurips_2026.pdf">
+        <span><strong>Read the research paper</strong><span class="description">Accepted at the NeurIPS 2026 GlobalSouthAI workshop · PDF</span></span><span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link" href="https://huggingface.co/datasets/lanka-legal-nlp/draftly-statutory-retrieval/tree/v1.0-paper-provisional">
+        <span><strong>Explore the retrieval benchmark</strong><span class="description">50 questions across 40 matters, proposed section labels and tools to score retrieval predictions.</span><span class="description label-note">Provisional labels · lawyer validation pending</span></span><span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link" href="https://huggingface.co/datasets/lanka-legal-nlp/draftly-sri-lanka-act-sources/tree/v1.0-paper-corpus-links">
+        <span><strong>Browse the Act source index</strong><span class="description">Enactment metadata and source links for the paper corpus.</span></span><span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <div class="code-links">
+        <a class="link" href="https://github.com/Draftly-LK/draftly-research"><span><strong>Research code</strong><span class="description">Public GitHub repository</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="link" href="https://github.com/Draftly-LK/draftly-platform"><span><strong>Platform code</strong><span class="description">Public GitHub repository</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+    <footer>
+      <p class="footer-title">Meet the team</p>
+      <div class="footer-links"><a href="mailto:himathd.23@cse.mrt.ac.lk">Himath Dhanapala</a><a href="mailto:lahirud.23@cse.mrt.ac.lk">Lahiru Dilshan</a><a href="mailto:praveend.23@cse.mrt.ac.lk">Praveen de Silva</a></div>
+      <p style="margin-top:9px">Supervisor: <a href="mailto:nisansadds@cse.mrt.ac.lk">Dr. Nisansa de Silva</a></p>
+    </footer>
+  </main>
+</body>
+</html>
