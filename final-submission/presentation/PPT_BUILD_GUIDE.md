@@ -32,7 +32,7 @@ All paths are relative to this guide. Keep evidence figures uncropped unless the
 | 07 | [`QA benchmark-construction figure`](../figures/research-benchmark-construction-preview.png) | Fit across the slide at text width; the dashed three-attorney stage is **planned**, not completed. |
 | 09 | [`retrieval-system crop`](assets/research-retrieval-system-crop.png) | Enlarged retrieval/evaluation half of the existing paper figure, fitted by height in the left two-thirds of the slide. Cover the figure's “Gold Indispensable Bundle” label with a small **proposed reference labels; lawyer validation pending** annotation. Offline research system, not the deployed index. |
 | 10 | [`retrieval-c20-results-slide.png`](retrieval-c20-results-slide.png) | Primary result chart; fit without trimming labels. Pair with compact hard-question and one-hop-edge callouts. Offline benchmark, provisional labels. An editable [`SVG`](retrieval-c20-results-slide.svg) is available. |
-| 11 | [`accepted paper title and authors`](assets/accepted-paper-title-authors.png) | Crop rendered from [`neurips_2026.pdf`](../../research-paper/neurips_2026.pdf). Show the full title and author line; caption **accepted, NeurIPS 2026 GlobalSouthAI workshop**, not the main conference. |
+| 11 | [`accepted paper title and authors`](assets/accepted-paper-title-authors.png) | Crop rendered from [`draftly-globalsouthai-2026-workshop-paper.pdf`](../../research-paper/draftly-globalsouthai-2026-workshop-paper.pdf). Show the full title and author line; caption **accepted, NeurIPS 2026 GlobalSouthAI workshop**, not the main conference. |
 | 13 | [`../figures/matter-workflow.png`](../figures/matter-workflow.png) | Fit within slide; conceptual lawyer-controlled workflow. |
 | 14 | [`real OCR region overlay, redacted`](assets/redacted-real-ocr-boxed-page.png) | Main image beside the evaluation counts. Actual benchmark page with text blurred and region outlines retained; detection boxes are not field-accuracy evidence. |
 | 15 | [`complete processing sequence`](assets/document-processing-research-pipeline-crop.png) | Main image across the slide. All nine process stages and human review are visible; obsolete storage lanes are cropped away. Label as a research design reference. |
@@ -197,7 +197,7 @@ All paths are relative to this guide. Keep evidence figures uncropped unless the
 
 ## Slide 11 — `accepted-research-paper` — The accepted paper reports the complete-bundle retrieval result
 
-**Time:** 0:45. **Visual:** display the [paper title and author crop](assets/accepted-paper-title-authors.png) large enough to read. Caption **Accepted for presentation · NeurIPS 2026 GlobalSouthAI workshop**. At right, three short contribution lines. Use the actual [camera-ready PDF](../../research-paper/neurips_2026.pdf) as the source, not a generic paper mock-up. Keep the Part I label.
+**Time:** 0:45. **Visual:** display the [paper title and author crop](assets/accepted-paper-title-authors.png) large enough to read. Caption **Accepted for presentation · NeurIPS 2026 GlobalSouthAI workshop**. At right, three short contribution lines. Use the actual [camera-ready PDF](../../research-paper/draftly-globalsouthai-2026-workshop-paper.pdf) as the source, not a generic paper mock-up. Keep the Part I label.
 
 ### On-slide copy
 
@@ -208,7 +208,7 @@ All paths are relative to this guide. Keep evidence figures uncropped unless the
 
 **Speaker notes:** “This paper is accepted for presentation at the NeurIPS 2026 GlobalSouthAI workshop. It contributes the structured Sri Lankan statutory corpus, a scenario QA benchmark with proposed indispensable sections, and a matched seven-system retrieval evaluation. The tested typed-edge expansion did not demonstrate a gain over strong hybrid retrieval. The paper also reports the hard multi-provision failure and limited one-hop reachability of missed sections. Labels need attorney validation before we can claim legal gold. Our hosted search is currently BM25; a teammate is developing embedding-enabled retrieval with query rewriting, which the paper did not evaluate. That integration must be scored on the same complete-bundle question. We now move to the software workbench that uses legal research and document evidence in a lawyer-owned matter.”
 
-**Evidence:** [Accepted paper PDF](../../research-paper/neurips_2026.pdf), title page, abstract, §§2–5; final report §§1.3 and 5.4; documented hosted deployment and user-reported upgrade workstream.
+**Evidence:** [Accepted paper PDF](../../research-paper/draftly-globalsouthai-2026-workshop-paper.pdf), title page, abstract, §§2–5; final report §§1.3 and 5.4; documented hosted deployment and user-reported upgrade workstream.
 
 ## Slide 12 — `rta-scope` — Post-certificate RTA gives the first workflow a bounded scope
 
